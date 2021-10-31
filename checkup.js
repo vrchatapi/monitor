@@ -14,7 +14,7 @@ const fetchCss = () => fetch(`${VRCHAT_API_URL}/css/app.css`).then(r => r.text()
     const jsRaw = await fetchJs();
     await fs.writeFile("./dist/raw/app.js", jsRaw);
 
-    const jsPretty = beautify.js(jsRaw, {});
+    const jsPretty = beautify.js(jsRaw, { unescape_strings: true });
     await fs.writeFile("./dist/app.js", jsPretty);
 
     /* Fetch and beautify the current css bundle. */
