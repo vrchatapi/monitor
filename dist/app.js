@@ -37233,8 +37233,10 @@
                                 "'": "'",
                                 "\n": "n",
                                 "\r": "r",
-                                "\u2028": "u2028",
-                                "\u2029": "u2029"
+                                "
+": "u2028",
+                                "
+": "u2029"
                             },
                             ct = parseFloat,
                             ut = parseInt,
@@ -53596,9 +53598,17 @@
                     throw new TypeError("Invalid attempt to destructure non-iterable instance")
                 };
                 const n = "[][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-PRZcf-nqry=><]",
-                    r = new RegExp("(?:" + n + ")|[" + "\0-\b\v-­​\u2028\u2029\ufeff︀-️]", "g"),
-                    a = new RegExp("(?:" + n + ")|[" + "\n\0-\b\v-­​\u2028\u2029\ufeff︀-️]", "g"),
-                    o = new RegExp("((?:" + n + ")|[\t" + "\n\0-\b\v-­​\u2028\u2029\ufeff︀-️])?([^\t" + "\n\0-\b\v-­​\u2028\u2029\ufeff︀-️]*)", "g");
+                    r = new RegExp("(?:" + n + ")|[" + "\0-\b\v-­​
+
+﻿︀-️]", "g"),
+                    a = new RegExp("(?:" + n + ")|[" + "\n\0-\b\v-­​
+
+﻿︀-️]", "g"),
+                    o = new RegExp("((?:" + n + ")|[\t" + "\n\0-\b\v-­​
+
+﻿︀-️])?([^\t" + "\n\0-\b\v-­​
+
+﻿︀-️]*)", "g");
                 e.exports = {
                     zeroWidthCharacters: a,
                     ansiEscapeCodes: new RegExp(n, "g"),
