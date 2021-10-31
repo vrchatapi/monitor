@@ -3,9 +3,9 @@
     var e = {
             2122: (e, t, n) => {
                 "use strict";
-                // debug: attempt to show github diffing works.
+
                 function r() {
-                    return (r = /* test */ Object.assign || function(e) {
+                    return (r = Object.assign || function(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var n = arguments[t];
                             for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -79,7 +79,7 @@
                 }
 
                 function s(e, t) {
-                    if (!(e instanceof t)) throw new /* test */TypeError("Cannot call a class as a function")
+                    if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                 }
 
                 function l(e, t) {
@@ -116,7 +116,7 @@
                         },
                         set: function(n, r) {
                             e = n, t.forEach((function(t) {
-                                return t(e, /* test */r)
+                                return t(e, r)
                             }))
                         }
                     }
@@ -197,7 +197,7 @@
             3790: function(e, t, n) {
                 e.exports = function() {
                     "use strict";
-                    var e = "undefined" != typeof /* test */window ? window : void 0 !== n.g ? n.g : "undefined" != typeof self ? self : {};
+                    var e = "undefined" != typeof window ? window : void 0 !== n.g ? n.g : "undefined" != typeof self ? self : {};
 
                     function t(e, t) {
                         return e(t = {
@@ -262,7 +262,7 @@
                                             if ("function" == typeof u) try {
                                                 if (0 === u("0") && !u(!1)) {
                                                     var d = 5 == (o = u(i)).a.length && 1 === o.a[0];
-                                                    if (d/* test */) {
+                                                    if (d) {
                                                         try {
                                                             d = !u('"\t"')
                                                         } catch (e) {}
@@ -357,7 +357,7 @@
                                                         default:
                                                             if (i < 32) {
                                                                 t += N + A(2, i.toString(16));
-                                                                break/* test */
+                                                                break
                                                             }
                                                             t += a ? o[n] : e.charAt(n)
                                                     }
@@ -409,7 +409,7 @@
                                                     if ((n -= n % 1) > 0)
                                                         for (r = "", n > 10 && (n = 10); r.length < n; r += " ");
                                                 } else s == k && (r = n.length <= 10 ? n : n.slice(0, 10));
-                                            return I("", ((l = {}/* test */)[""] = e, l), o, i, r, "", [])
+                                            return I("", ((l = {})[""] = e, l), o, i, r, "", [])
                                         }
                                     }
                                     if (!_("json-parse")) {
@@ -499,7 +499,7 @@
                                                         return t
                                                     }
                                                     if ("{" == e) {
-                                                        for (/* test */t = {};
+                                                        for (t = {};
                                                             "}" != (e = H()); n || (n = !0)) n && ("," == e ? "}" == (e = H()) && F() : F()), "," != e && "string" == typeof e && "@" == (S ? e.charAt(0) : e[0]) && ":" == H() || F(), t[e.slice(1)] = z(H());
                                                         return t
                                                     }
