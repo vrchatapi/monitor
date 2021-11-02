@@ -6470,7 +6470,7 @@
                     yr = "idfk",
                     gr = "idfk";
                 try {
-                    hr = "12345", yr = "2021-10-29t21-30-19-the-abscond-of-goro", gr = "production"
+                    hr = "12345", yr = "2021-11-01t21-49-50-the-ting-of-terra", gr = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -9363,16 +9363,20 @@
                         releaseStatus: "public"
                     },
                     ya = function(e) {
-                        var t = {},
-                            n = e.query,
-                            r = n.match(/&sort=(\w+)[^&]*/);
-                        r && (t.sort = r[1], n = n.replace(/&sort=[^&]*/, ""));
-                        var a = n.match(/&field=(\w+)[^&]*/);
-                        a && (t.customFields = a[1], n = n.replace(/&field=[^&]*/, ""));
-                        var o = n.match(/&order=(\w+)[^&]*/);
-                        o && (t.order = o[1], n = n.replace(/&order=[^&]*/, ""));
-                        var i = n.match(/&fuzzy=(\w+)[^&]*/);
-                        return i && (t.fuzzy = i[1], n = n.replace(/&fuzzy=[^&]*/, "")), n = n.replace(/%20/g, " "), t.search = n, t
+                        var t = e.query,
+                            n = {};
+                        if (!t) return {
+                            search: ""
+                        };
+                        var r = t,
+                            a = r.match(/&sort=(\w+)[^&]*/);
+                        a && (n.sort = a[1], r = r.replace(/&sort=[^&]*/, ""));
+                        var o = r.match(/&field=(\w+)[^&]*/);
+                        o && (n.customFields = o[1], r = r.replace(/&field=[^&]*/, ""));
+                        var i = r.match(/&order=(\w+)[^&]*/);
+                        i && (n.order = i[1], r = r.replace(/&order=[^&]*/, ""));
+                        var s = r.match(/&fuzzy=(\w+)[^&]*/);
+                        return s && (n.fuzzy = s[1], r = r.replace(/&fuzzy=[^&]*/, "")), r = r.replace(/%20/g, " "), n.search = r, n
                     },
                     ga = function(e) {
                         var t, n = e.query,
@@ -9392,28 +9396,34 @@
                     va = function(e) {
                         var t = e.query,
                             n = e.n,
-                            r = fa(fa({}, pa), {}, {
-                                search: t,
+                            r = e.isMod,
+                            a = fa(fa({}, pa), {}, {
+                                search: r ? ya({
+                                    query: t
+                                }).search : t,
                                 n
                             });
                         return {
                             type: "SEARCH_WORLDS",
                             payload: je().get(window.apiUrl("/api/1/worlds"), {
-                                params: r
+                                params: a
                             })
                         }
                     },
                     _a = function(e) {
                         var t = e.query,
                             n = e.n,
-                            r = fa(fa({}, ha), {}, {
-                                search: t,
+                            r = e.isMod,
+                            a = fa(fa({}, ha), {}, {
+                                search: r ? ya({
+                                    query: t
+                                }).search : t,
                                 n
                             });
                         return {
                             type: "SEARCH_AVATARS",
                             payload: je().get(window.apiUrl("/api/1/avatars"), {
-                                params: r
+                                params: a
                             })
                         }
                     },
@@ -9437,10 +9447,12 @@
                                         isMod: a
                                     })), o.push(va({
                                         query: t,
-                                        n
+                                        n,
+                                        isMod: a
                                     })), r && o.push(_a({
                                         query: t,
-                                        n
+                                        n,
+                                        isMod: a
                                     })), o
                                 }({
                                     query: i,
@@ -25110,10 +25122,11 @@
                         }, {
                             key: "onDeleteClick",
                             value: function() {
-                                var e = !this.state.inConfirmDeleteStage;
-                                this.setState({
-                                    inConfirmDeleteStage: !e
-                                })
+                                this.setState((function(e) {
+                                    return {
+                                        inConfirmDeleteStage: !e.inConfirmDeleteStage
+                                    }
+                                }))
                             }
                         }, {
                             key: "onMouseEnterConfirmDelete",
@@ -25133,7 +25146,7 @@
                             key: "onClickConfirmDelete",
                             value: function() {
                                 var e = this.props,
-                                    t = e.onDeleteClick,
+                                    t = e.onDeleteClicked,
                                     n = e.tag;
                                 t && t(n)
                             }
@@ -27423,21 +27436,25 @@
                                 var t = e.query,
                                     n = e.n,
                                     r = e.offset,
-                                    a = fa(fa({}, pa), {}, {
-                                        search: t,
+                                    a = e.isMod,
+                                    o = fa(fa({}, pa), {}, {
+                                        search: a ? ya({
+                                            query: t
+                                        }).search : t,
                                         n,
                                         offset: r
                                     });
                                 return {
                                     type: "LOAD_MORE_WORLDS",
                                     payload: je().get(window.apiUrl("/api/1/worlds"), {
-                                        params: a
+                                        params: o
                                     })
                                 }
                             }({
                                 query: this.props.query,
                                 n: Pn,
-                                offset: t
+                                offset: t,
+                                isMod: !1
                             })), e.preventDefault()
                         }
                     }, {
@@ -27448,21 +27465,25 @@
                                 var t = e.query,
                                     n = e.n,
                                     r = e.offset,
-                                    a = fa(fa({}, ha), {}, {
-                                        search: t,
+                                    a = e.isMod,
+                                    o = fa(fa({}, ha), {}, {
+                                        search: a ? ya({
+                                            query: t
+                                        }).search : t,
                                         n,
                                         offset: r
                                     });
                                 return {
                                     type: "LOAD_MORE_AVATARS",
                                     payload: je().get(window.apiUrl("/api/1/avatars"), {
-                                        params: a
+                                        params: o
                                     })
                                 }
                             }({
                                 query: this.props.query,
                                 n: Pn,
-                                offset: t
+                                offset: t,
+                                isMod: !1
                             })), e.preventDefault()
                         }
                     }, {
