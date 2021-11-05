@@ -6477,7 +6477,7 @@
                     gr = "idfk",
                     vr = "idfk";
                 try {
-                    yr = "12345", gr = "2021-11-04t00-20-41-the-tomato-of-seph", vr = "production"
+                    yr = "12345", gr = "2021-11-05t00-44-10-the-copter-of-elizabreth", vr = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -8059,9 +8059,14 @@
                                     })
                                 });
                             case "RUN_MERGE_DIAGNOSTIC_PENDING":
+                                var o = t.meta.autoRefresh,
+                                    i = e.mergeRepair.complete;
                                 return qn(qn({}, e), {}, {
                                     mergeDiagnostic: qn(qn({}, Zn.mergeDiagnostic), {}, {
                                         loading: !0
+                                    }),
+                                    mergeRepair: qn(qn({}, e.mergeRepair), {}, {
+                                        complete: !!o && i
                                     })
                                 });
                             case "RUN_MERGE_DIAGNOSTIC_REJECTED":
@@ -8113,65 +8118,65 @@
                                     error: jn(t.payload)
                                 });
                             case "ADMIN_LOAD_FAVORITE_GROUPS_FOR_USER_FULFILLED":
-                                var o = t.payload.data;
+                                var s = t.payload.data;
                                 return qn(qn({}, e), {}, {
                                     favorites: qn(qn({}, e.favorites), {}, {
                                         groups: {
-                                            avatar: o.filter((function(e) {
+                                            avatar: s.filter((function(e) {
                                                 return "avatar" === e.type
                                             })),
-                                            world: o.filter((function(e) {
+                                            world: s.filter((function(e) {
                                                 return "world" === e.type
                                             }))
                                         }
                                     })
                                 });
                             case "ADMIN_LOAD_FAVORITE_GROUP_TYPE_FOR_USER_PENDING":
-                                var i = t.meta.type;
+                                var l = t.meta.type;
                                 return qn(qn({}, e), {}, {
                                     favorites: qn(qn({}, e.favorites), {}, {
-                                        groups: qn(qn({}, e.favorites.groups), {}, an({}, i, []))
+                                        groups: qn(qn({}, e.favorites.groups), {}, an({}, l, []))
                                     })
                                 });
                             case "ADMIN_LOAD_FAVORITE_GROUP_TYPE_FOR_USER_FULFILLED":
-                                var s = t.payload.data,
-                                    l = t.meta.type;
+                                var c = t.payload.data,
+                                    u = t.meta.type;
                                 return qn(qn({}, e), {}, {
                                     favorites: qn(qn({}, e.favorites), {}, {
-                                        groups: qn(qn({}, e.favorites.groups), {}, an({}, l, s))
+                                        groups: qn(qn({}, e.favorites.groups), {}, an({}, u, c))
                                     })
                                 });
                             case "ADMIN_LOAD_FAVORITE_AVATARS_FOR_USER_FULFILLED":
-                                var c = t.meta.group,
-                                    u = t.payload.data;
-                                return qn(qn({}, e), {}, {
-                                    favorites: {
-                                        groups: qn(qn({}, e.favorites.groups), {}, {
-                                            avatar: e.favorites.groups.avatar.map((function(e) {
-                                                return e.name === c ? qn(qn({}, e), {}, {
-                                                    total: u.length
-                                                }) : e
-                                            }))
-                                        }),
-                                        assets: qn(qn({}, e.favorites.assets), {}, {
-                                            avatar: qn(qn({}, e.favorites.assets.avatar), {}, an({}, c, u))
-                                        })
-                                    }
-                                });
-                            case "ADMIN_LOAD_FAVORITE_WORLDS_FOR_USER_FULFILLED":
                                 var d = t.meta.group,
                                     f = t.payload.data;
                                 return qn(qn({}, e), {}, {
                                     favorites: {
                                         groups: qn(qn({}, e.favorites.groups), {}, {
-                                            world: e.favorites.groups.world.map((function(e) {
+                                            avatar: e.favorites.groups.avatar.map((function(e) {
                                                 return e.name === d ? qn(qn({}, e), {}, {
                                                     total: f.length
                                                 }) : e
                                             }))
                                         }),
                                         assets: qn(qn({}, e.favorites.assets), {}, {
-                                            world: qn(qn({}, e.favorites.assets.world), {}, an({}, d, f))
+                                            avatar: qn(qn({}, e.favorites.assets.avatar), {}, an({}, d, f))
+                                        })
+                                    }
+                                });
+                            case "ADMIN_LOAD_FAVORITE_WORLDS_FOR_USER_FULFILLED":
+                                var p = t.meta.group,
+                                    m = t.payload.data;
+                                return qn(qn({}, e), {}, {
+                                    favorites: {
+                                        groups: qn(qn({}, e.favorites.groups), {}, {
+                                            world: e.favorites.groups.world.map((function(e) {
+                                                return e.name === p ? qn(qn({}, e), {}, {
+                                                    total: m.length
+                                                }) : e
+                                            }))
+                                        }),
+                                        assets: qn(qn({}, e.favorites.assets), {}, {
+                                            world: qn(qn({}, e.favorites.assets.world), {}, an({}, p, m))
                                         })
                                     }
                                 });
@@ -9332,10 +9337,15 @@
                         }
                     },
                     ua = function(e) {
-                        var t = e.userId;
+                        var t = e.userId,
+                            n = e.autoRefresh,
+                            r = void 0 !== n && n;
                         return {
                             type: "RUN_MERGE_DIAGNOSTIC",
-                            payload: je().get(window.apiUrl("/api/1/admin/merge/diagnose/".concat(t)))
+                            payload: je().get(window.apiUrl("/api/1/admin/merge/diagnose/".concat(t))),
+                            meta: {
+                                autoRefresh: r
+                            }
                         }
                     },
                     da = function(e, t, n) {
@@ -30090,7 +30100,8 @@
                                         }));
                                     case 2:
                                         return e.next = 4, this.props.dispatch(ua({
-                                            userId: this.props.userId
+                                            userId: this.props.userId,
+                                            autoRefresh: !0
                                         }));
                                     case 4:
                                     case "end":
@@ -30172,13 +30183,11 @@
                                     className: "text-danger"
                                 }, "Merge errors detected!"), u && l.createElement("h4", {
                                     className: "text-danger"
-                                }, "It looks like the repair didn't work ", l.createElement(qt(), {
-                                    name: "poo"
-                                }))), l.createElement(qi, null, l.createElement("ul", null, r.map((function(e, t) {
+                                }, "If you just repaired, we might not be done yet! ", l.createElement("br", null), "Please wait a few minutes and run the diagnostic again")), l.createElement(qi, null, l.createElement("ul", null, r.map((function(e, t) {
                                     return l.createElement("li", {
                                         key: "".concat(o, "-error-").concat(t)
                                     }, e)
-                                })))), !d && l.createElement(qi, {
+                                })))), !u && !d && l.createElement(qi, {
                                     className: "center-block text-center justify-content-center"
                                 }, l.createElement(Ki, {
                                     color: "danger",
