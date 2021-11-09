@@ -4207,7 +4207,7 @@
                     apiUrl: window.apiUrl
                 }
             },
-            8062: (e, t, n) => {
+            629: (e, t, n) => {
                 "use strict";
                 var r = {};
 
@@ -6477,7 +6477,7 @@
                     gr = "idfk",
                     vr = "idfk";
                 try {
-                    yr = "12345", gr = "2021-11-05t21-23-48-the-omoto-of-tokyo", vr = "production"
+                    yr = "12345", gr = "2021-11-09t00-34-56-the-malarkey-of-levi", vr = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -8346,7 +8346,9 @@
                                 loading: !1,
                                 statusCode: null,
                                 error: null,
-                                fixedFile: {}
+                                fixedFile: {},
+                                queryTxnResponse: {},
+                                agreementInfoResponse: {}
                             },
                             t = arguments.length > 1 ? arguments[1] : void 0,
                             n = JSON.parse(JSON.stringify(e));
@@ -8361,6 +8363,28 @@
                                 break;
                             case "FIX_FILE_FULFILLED":
                                 n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.fixedFile = t.payload.data;
+                                break;
+                            case "QUERY_TXN_PENDING":
+                                n.error = null, n.statusCode = null, n.loading = !0, n.queryTxnResponse = null;
+                                break;
+                            case "QUERY_TXN_REJECTED":
+                                n.statusCode = Rn(t.payload), n.error = {
+                                    error: jn(t.payload)
+                                }, n.loading = !1, n.queryTxnResponse = null;
+                                break;
+                            case "QUERY_TXN_FULFILLED":
+                                n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.queryTxnResponse = t.payload.data;
+                                break;
+                            case "GET_AGREEMENT_INFO_PENDING":
+                                n.error = null, n.statusCode = null, n.loading = !0, n.agreementInfoResponse = null;
+                                break;
+                            case "GET_AGREEMENT_INFO_REJECTED":
+                                n.statusCode = Rn(t.payload), n.error = {
+                                    error: jn(t.payload)
+                                }, n.loading = !1, n.agreementInfoResponse = null;
+                                break;
+                            case "GET_AGREEMENT_INFO_FULFILLED":
+                                n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.agreementInfoResponse = t.payload.data;
                                 break;
                             default:
                                 return n
@@ -29165,8 +29189,16 @@
                     ZE = function() {
                         return []
                     };
+                var JE = function(e) {
+                    var t = e.params,
+                        n = "";
+                    return t.orderId && (n = "orderId=".concat(t.orderId)), t.transId && (n = "transId=".concat(t.transId)), {
+                        type: "QUERY_TXN",
+                        payload: je().get(window.apiUrl("/api/1/steam/transaction/queryTransaction?".concat(n)), t)
+                    }
+                };
 
-                function JE(e) {
+                function KE(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29186,9 +29218,9 @@
                         return qe(this, n)
                     }
                 }
-                const KE = function(e) {
+                const QE = function(e) {
                     Ge(r, e);
-                    var t, n = JE(r);
+                    var t, n = KE(r);
 
                     function r(e) {
                         var t;
@@ -29243,7 +29275,7 @@
                     }]), r
                 }(l.Component);
 
-                function QE(e) {
+                function XE(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29263,9 +29295,9 @@
                         return qe(this, n)
                     }
                 }
-                const XE = function(e) {
+                const ek = function(e) {
                     Ge(n, e);
-                    var t = QE(n);
+                    var t = XE(n);
 
                     function n(e) {
                         var r;
@@ -29313,7 +29345,7 @@
                     }]), n
                 }(l.Component);
 
-                function ek(e) {
+                function tk(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29333,9 +29365,9 @@
                         return qe(this, n)
                     }
                 }
-                var tk = function(e) {
+                var nk = function(e) {
                     Ge(n, e);
-                    var t = ek(n);
+                    var t = tk(n);
 
                     function n(e) {
                         var r;
@@ -29399,9 +29431,9 @@
                                 i = "" !== this.state.timespan && "" !== this.state.subscriptionId;
                             return n ? l.createElement("div", null, " loading ... ") : o ? l.createElement("div", null, " ", "u did it ", l.createElement(qt(), {
                                 name: "thumbs-up"
-                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(KE, {
+                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(QE, {
                                 onChange: this.changeSubscription
-                            }), l.createElement("br", null), l.createElement(XE, {
+                            }), l.createElement("br", null), l.createElement(ek, {
                                 onChange: this.changeTimespan
                             }), l.createElement("br", null), l.createElement(Ki, {
                                 onClick: this.createAdminSubscription,
@@ -29419,9 +29451,9 @@
                         error: e.createAdminSubscription.error,
                         complete: e.createAdminSubscription.complete
                     }
-                }))(tk);
+                }))(nk);
 
-                function nk(e, t) {
+                function rk(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -29432,18 +29464,18 @@
                     return n
                 }
 
-                function rk(e) {
+                function ak(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? nk(Object(n), !0).forEach((function(t) {
+                        t % 2 ? rk(Object(n), !0).forEach((function(t) {
                             an(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : nk(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : rk(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                var ak = {
+                var ok = {
                         children: d().oneOfType([d().node, d().func]).isRequired,
                         popperClassName: d().string,
                         placement: d().string,
@@ -29465,7 +29497,7 @@
                         fade: d().bool,
                         transition: d().shape(Ks.propTypes)
                     },
-                    ok = {
+                    ik = {
                         boundariesElement: "scrollParent",
                         placement: "auto",
                         hideArrow: !1,
@@ -29477,9 +29509,9 @@
                         modifiers: {},
                         onClosed: function() {},
                         fade: !0,
-                        transition: rk({}, Ks.defaultProps)
+                        transition: ak({}, Ks.defaultProps)
                     },
-                    ik = function(e) {
+                    sk = function(e) {
                         function t(t) {
                             var n;
                             return (n = e.call(this, t) || this).setTargetNode = n.setTargetNode.bind(Be(n)), n.getTargetNode = n.getTargetNode.bind(Be(n)), n.getRef = n.getRef.bind(Be(n)), n.onClosed = n.onClosed.bind(Be(n)), n.state = {
@@ -29527,7 +29559,7 @@
                                 w = (0, b.Z)(e, ["cssModule", "children", "isOpen", "flip", "target", "offset", "fallbackPlacement", "placementPrefix", "arrowClassName", "hideArrow", "popperClassName", "tag", "container", "modifiers", "positionFixed", "boundariesElement", "onClosed", "fade", "transition", "placement"]),
                                 E = tt(Qe()("arrow", c), t),
                                 k = tt(Qe()(d, s ? s + "-auto" : ""), this.props.cssModule),
-                                M = rk({
+                                M = ak({
                                     offset: {
                                         offset: o
                                     },
@@ -29539,7 +29571,7 @@
                                         boundariesElement: h
                                     }
                                 }, p),
-                                L = rk(rk(rk({}, Ks.defaultProps), g), {}, {
+                                L = ak(ak(ak({}, Ks.defaultProps), g), {}, {
                                     baseClass: y ? g.baseClass : "",
                                     timeout: y ? g.timeout : 0
                                 });
@@ -29579,9 +29611,9 @@
                             }, this.renderChildren()), this.getContainerNode()) : null
                         }, t
                     }(l.Component);
-                ik.propTypes = ak, ik.defaultProps = ok;
-                const sk = ik;
-                var lk = {
+                sk.propTypes = ok, sk.defaultProps = ik;
+                const lk = sk;
+                var ck = {
                         children: d().oneOfType([d().node, d().func]),
                         placement: d().oneOf(["auto-start", "auto", "auto-end", "top-start", "top", "top-end", "right-start", "right", "right-end", "bottom-end", "bottom", "bottom-start", "left-end", "left", "left-start"]),
                         target: lt.isRequired,
@@ -29610,30 +29642,30 @@
                         fade: d().bool,
                         flip: d().bool
                     },
-                    ck = {
+                    uk = {
                         show: 0,
                         hide: 50
                     },
-                    uk = {
+                    dk = {
                         isOpen: !1,
                         hideArrow: !1,
                         autohide: !1,
-                        delay: ck,
+                        delay: uk,
                         toggle: function() {},
                         trigger: "click",
                         fade: !0
                     };
 
-                function dk(e, t) {
+                function fk(e, t) {
                     return t && (e === t || t.contains(e))
                 }
 
-                function fk(e, t) {
+                function pk(e, t) {
                     return void 0 === t && (t = []), t && t.length && t.filter((function(t) {
-                        return dk(e, t)
+                        return fk(e, t)
                     }))[0]
                 }
-                var pk = function(e) {
+                var mk = function(e) {
                     function t(t) {
                         var n;
                         return (n = e.call(this, t) || this)._targets = [], n.currentTargetElement = null, n.addTargetEvents = n.addTargetEvents.bind(Be(n)), n.handleDocumentClick = n.handleDocumentClick.bind(Be(n)), n.removeTargetEvents = n.removeTargetEvents.bind(Be(n)), n.toggle = n.toggle.bind(Be(n)), n.showWithDelay = n.showWithDelay.bind(Be(n)), n.hideWithDelay = n.hideWithDelay.bind(Be(n)), n.onMouseOverTooltipContent = n.onMouseOverTooltipContent.bind(Be(n)), n.onMouseLeaveTooltipContent = n.onMouseLeaveTooltipContent.bind(Be(n)), n.show = n.show.bind(Be(n)), n.hide = n.hide.bind(Be(n)), n.onEscKeyDown = n.onEscKeyDown.bind(Be(n)), n.getRef = n.getRef.bind(Be(n)), n.state = {
@@ -29660,7 +29692,7 @@
                         t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e)), this._popover = e
                     }, n.getDelay = function(e) {
                         var t = this.props.delay;
-                        return "object" == typeof t ? isNaN(t[e]) ? ck[e] : t[e] : t
+                        return "object" == typeof t ? isNaN(t[e]) ? uk[e] : t[e] : t
                     }, n.getCurrentTarget = function(e) {
                         if (!e) return null;
                         var t = this._targets.indexOf(e);
@@ -29685,7 +29717,7 @@
                         clearTimeout(this._hideTimeout), this._hideTimeout = void 0
                     }, n.handleDocumentClick = function(e) {
                         var t = this.props.trigger.split(" ");
-                        t.indexOf("legacy") > -1 && (this.props.isOpen || fk(e.target, this._targets)) ? (this._hideTimeout && this.clearHideTimeout(), this.props.isOpen && !dk(e.target, this._popover) ? this.hideWithDelay(e) : this.props.isOpen || this.showWithDelay(e)) : t.indexOf("click") > -1 && fk(e.target, this._targets) && (this._hideTimeout && this.clearHideTimeout(), this.props.isOpen ? this.hideWithDelay(e) : this.showWithDelay(e))
+                        t.indexOf("legacy") > -1 && (this.props.isOpen || pk(e.target, this._targets)) ? (this._hideTimeout && this.clearHideTimeout(), this.props.isOpen && !fk(e.target, this._popover) ? this.hideWithDelay(e) : this.props.isOpen || this.showWithDelay(e)) : t.indexOf("click") > -1 && pk(e.target, this._targets) && (this._hideTimeout && this.clearHideTimeout(), this.props.isOpen ? this.hideWithDelay(e) : this.showWithDelay(e))
                     }, n.addEventOnTargets = function(e, t, n) {
                         this._targets.forEach((function(r) {
                             r.addEventListener(e, t, n)
@@ -29728,10 +29760,10 @@
                             v = n.fade,
                             b = n.flip,
                             w = n.children,
-                            E = nt(this.props, Object.keys(lk)),
+                            E = nt(this.props, Object.keys(ck)),
                             k = tt(p, a),
                             M = tt(o, a);
-                        return l.createElement(sk, {
+                        return l.createElement(lk, {
                             className: r,
                             target: t,
                             isOpen: i,
@@ -29763,26 +29795,26 @@
                         }))
                     }, t
                 }(l.Component);
-                pk.propTypes = lk, pk.defaultProps = uk;
-                const mk = pk;
-                var hk = function(e) {
+                mk.propTypes = ck, mk.defaultProps = dk;
+                const hk = mk;
+                var yk = function(e) {
                     var t = Qe()("tooltip", "show", e.popperClassName),
                         n = Qe()("tooltip-inner", e.innerClassName);
-                    return l.createElement(mk, (0, _.Z)({}, e, {
+                    return l.createElement(hk, (0, _.Z)({}, e, {
                         popperClassName: t,
                         innerClassName: n
                     }))
                 };
-                hk.propTypes = lk, hk.defaultProps = {
+                yk.propTypes = ck, yk.defaultProps = {
                     placement: "top",
                     autohide: !0,
                     placementPrefix: "bs-tooltip",
                     trigger: "hover focus"
                 };
-                const yk = hk;
-                var gk;
+                const gk = yk;
+                var vk;
 
-                function vk(e) {
+                function _k(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29802,9 +29834,9 @@
                         return qe(this, n)
                     }
                 }
-                var _k = function(e) {
+                var bk = function(e) {
                     Ge(r, e);
-                    var t, n = vk(r);
+                    var t, n = _k(r);
 
                     function r(e) {
                         var t;
@@ -29878,7 +29910,7 @@
                             }, l.createElement(qt(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(yk, {
+                            }), l.createElement(gk, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_3,
                                 target: "tooltip-3",
@@ -29919,7 +29951,7 @@
                             }, l.createElement(qt(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(yk, {
+                            }), l.createElement(gk, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_1,
                                 target: "tooltip-1",
@@ -29965,7 +29997,7 @@
                             }, l.createElement(qt(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(yk, {
+                            }), l.createElement(gk, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_2,
                                 target: "tooltip-2",
@@ -29978,7 +30010,7 @@
                                     a = n && r;
                                 return l.createElement("div", {
                                     key: "txn-".concat(t),
-                                    className: Wi(gk || (gk = ko(["\n                         {\n                          border-bottom: 1px dotted;\n                          margin-bottom: 1em;\n                          padding-bottom: 0.2em;\n                        }\n                      "])))
+                                    className: Wi(vk || (vk = ko(["\n                         {\n                          border-bottom: 1px dotted;\n                          margin-bottom: 1em;\n                          padding-bottom: 0.2em;\n                        }\n                      "])))
                                 }, l.createElement(qi, null, l.createElement(It, null, l.createElement("h6", null, e.id)), l.createElement(It, {
                                     xs: "1"
                                 }, " ", l.createElement(qt(), {
@@ -30032,11 +30064,11 @@
                         diagnostic: e.user.steamDiagnostic.data,
                         subscriptions: e.user.subscriptions
                     }
-                }))(_k);
-                var bk = n(5780),
-                    wk = n.n(bk);
+                }))(bk);
+                var wk = n(5780),
+                    Ek = n.n(wk);
 
-                function Ek(e) {
+                function kk(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30056,9 +30088,9 @@
                         return qe(this, n)
                     }
                 }
-                var kk = function(e) {
+                var Mk = function(e) {
                     Ge(a, e);
-                    var t, n, r = Ek(a);
+                    var t, n, r = kk(a);
 
                     function a(e) {
                         var t;
@@ -30101,7 +30133,7 @@
                                             })
                                         }));
                                     case 2:
-                                        return e.next = 4, wk()(1e3);
+                                        return e.next = 4, Ek()(1e3);
                                     case 4:
                                         return e.next = 6, this.props.dispatch(ua({
                                             userId: this.props.userId,
@@ -30146,7 +30178,7 @@
                                 id: "diagnosticTooltip"
                             }, l.createElement(qt(), {
                                 name: "info"
-                            }), l.createElement(yk, {
+                            }), l.createElement(gk, {
                                 placement: "right",
                                 isOpen: this.state.diagnosticTooltipOpen,
                                 target: "diagnosticTooltip",
@@ -30206,7 +30238,7 @@
                                     id: "repairTooltip"
                                 }, l.createElement(qt(), {
                                     name: "info"
-                                }), l.createElement(yk, {
+                                }), l.createElement(gk, {
                                     placement: "right",
                                     isOpen: e.state.repairTooltipOpen,
                                     target: "repairTooltip",
@@ -30238,14 +30270,14 @@
                         repairComplete: e.user.mergeRepair.complete,
                         loading: e.user.mergeDiagnostic.loading || e.user.mergeRepair.loading
                     }
-                }))(kk);
-                var Mk = {
+                }))(Mk);
+                var Lk = {
                         tag: ct,
                         size: d().string,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Lk = function(e) {
+                    Sk = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.tag,
@@ -30256,16 +30288,16 @@
                             className: i
                         }))
                     };
-                Lk.propTypes = Mk, Lk.defaultProps = {
+                Sk.propTypes = Lk, Sk.defaultProps = {
                     tag: "div"
                 };
-                const Sk = Lk;
-                var xk = {
+                const xk = Sk;
+                var Ok = {
                         tag: ct,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Ok = function(e) {
+                    Dk = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.tag,
@@ -30275,18 +30307,18 @@
                             className: o
                         }))
                     };
-                Ok.propTypes = xk, Ok.defaultProps = {
+                Dk.propTypes = Ok, Dk.defaultProps = {
                     tag: "span"
                 };
-                const Dk = Ok;
-                var Tk = {
+                const Tk = Dk;
+                var Ck = {
                         tag: ct,
                         addonType: d().oneOf(["prepend", "append"]).isRequired,
                         children: d().node,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Ck = function(e) {
+                    Ak = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.tag,
@@ -30296,19 +30328,19 @@
                             s = tt(Qe()(t, "input-group-" + a), n);
                         return "string" == typeof o ? l.createElement(r, (0, _.Z)({}, i, {
                             className: s
-                        }), l.createElement(Dk, {
+                        }), l.createElement(Tk, {
                             children: o
                         })) : l.createElement(r, (0, _.Z)({}, i, {
                             className: s,
                             children: o
                         }))
                     };
-                Ck.propTypes = Tk, Ck.defaultProps = {
+                Ak.propTypes = Ck, Ak.defaultProps = {
                     tag: "div"
                 };
-                const Ak = Ck;
+                const Nk = Ak;
 
-                function Nk(e) {
+                function Pk(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30328,9 +30360,9 @@
                         return qe(this, n)
                     }
                 }
-                var Pk = function(e) {
+                var Ik = function(e) {
                     Ge(n, e);
-                    var t = Nk(n);
+                    var t = Pk(n);
 
                     function n(e) {
                         var r;
@@ -30394,9 +30426,9 @@
                         }
                     }]), n
                 }(l.Component);
-                const Ik = (0, le.withRouter)(Pk);
+                const Rk = (0, le.withRouter)(Ik);
 
-                function Rk(e) {
+                function Yk(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30416,9 +30448,9 @@
                         return qe(this, n)
                     }
                 }
-                var Yk = function(e) {
+                var jk = function(e) {
                     Ge(n, e);
-                    var t = Rk(n);
+                    var t = Yk(n);
 
                     function n(e) {
                         var r;
@@ -30616,7 +30648,7 @@
                             var e = this.props.currentUser,
                                 t = (e = void 0 === e ? {} : e).friends,
                                 n = this.state.friends.map((function(e) {
-                                    return l.createElement(Ik, {
+                                    return l.createElement(Rk, {
                                         user: e,
                                         key: e.id
                                     })
@@ -30634,11 +30666,11 @@
                                 className: "px-1"
                             }, l.createElement(qi, {
                                 className: "mb-2 mx-0"
-                            }, l.createElement(Sk, null, l.createElement(pg, {
+                            }, l.createElement(xk, null, l.createElement(pg, {
                                 placeholder: "User ID",
                                 value: this.state.search,
                                 onChange: this.handleSearchChange
-                            }), l.createElement(Ak, {
+                            }), l.createElement(Nk, {
                                 addonType: "append"
                             }, l.createElement(Ki, {
                                 onClick: this.handleSearchClick
@@ -30646,7 +30678,7 @@
                                 name: "search"
                             }))))), this.state.search.length > 0 && null === this.state.foundFriend && l.createElement(qi, {
                                 className: "mx-0"
-                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(Ik, {
+                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(Rk, {
                                 user: this.state.foundFriend
                             }), 0 === this.state.search.length && l.createElement(l.Fragment, null, l.createElement(It, {
                                 className: "px-0"
@@ -30666,15 +30698,15 @@
                     return {
                         currentUser: e.user.databaseUser
                     }
-                }))(Yk);
-                var jk = {
+                }))(jk);
+                var Uk = {
                         tag: ct,
                         top: d().bool,
                         bottom: d().bool,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Uk = function(e) {
+                    Fk = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.top,
@@ -30688,11 +30720,11 @@
                             className: c
                         }))
                     };
-                Uk.propTypes = jk, Uk.defaultProps = {
+                Fk.propTypes = Uk, Fk.defaultProps = {
                     tag: "img"
                 };
-                const Fk = Uk;
-                var Hk = {
+                const Hk = Fk;
+                var zk = {
                         tabs: d().bool,
                         pills: d().bool,
                         vertical: d().oneOfType([d().bool, d().string]),
@@ -30705,7 +30737,7 @@
                         className: d().string,
                         cssModule: d().object
                     },
-                    zk = function(e) {
+                    Wk = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.tabs,
@@ -30732,18 +30764,18 @@
                             className: m
                         }))
                     };
-                zk.propTypes = Hk, zk.defaultProps = {
+                Wk.propTypes = zk, Wk.defaultProps = {
                     tag: "ul",
                     vertical: !1
                 };
-                const Wk = zk;
-                var Bk = {
+                const Bk = Wk;
+                var Vk = {
                         tag: ct,
                         active: d().bool,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Vk = function(e) {
+                    Gk = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.active,
@@ -30754,11 +30786,11 @@
                             className: i
                         }))
                     };
-                Vk.propTypes = Bk, Vk.defaultProps = {
+                Gk.propTypes = Vk, Gk.defaultProps = {
                     tag: "li"
                 };
-                const Gk = Vk;
-                var $k = {
+                const $k = Gk;
+                var qk = {
                         tag: ct,
                         innerRef: d().oneOfType([d().object, d().func, d().string]),
                         disabled: d().bool,
@@ -30768,7 +30800,7 @@
                         onClick: d().func,
                         href: d().any
                     },
-                    qk = function(e) {
+                    Zk = function(e) {
                         function t(t) {
                             var n;
                             return (n = e.call(this, t) || this).onClick = n.onClick.bind(Be(n)), n
@@ -30795,18 +30827,18 @@
                             }))
                         }, t
                     }(l.Component);
-                qk.propTypes = $k, qk.defaultProps = {
+                Zk.propTypes = qk, Zk.defaultProps = {
                     tag: "a"
                 };
-                const Zk = qk;
-                var Jk = l.createContext({}),
-                    Kk = {
+                const Jk = Zk;
+                var Kk = l.createContext({}),
+                    Qk = {
                         tag: ct,
                         activeTab: d().any,
                         className: d().string,
                         cssModule: d().object
                     },
-                    Qk = function(e) {
+                    Xk = function(e) {
                         function t(t) {
                             var n;
                             return (n = e.call(this, t) || this).state = {
@@ -30822,9 +30854,9 @@
                                 t = e.className,
                                 n = e.cssModule,
                                 r = e.tag,
-                                a = nt(this.props, Object.keys(Kk)),
+                                a = nt(this.props, Object.keys(Qk)),
                                 o = tt(Qe()("tab-content", t), n);
-                            return l.createElement(Jk.Provider, {
+                            return l.createElement(Kk.Provider, {
                                 value: {
                                     activeTabId: this.state.activeTab
                                 }
@@ -30833,18 +30865,18 @@
                             })))
                         }, t
                     }(l.Component);
-                const Xk = Qk;
-                Qk.propTypes = Kk, Qk.defaultProps = {
+                const eM = Xk;
+                Xk.propTypes = Qk, Xk.defaultProps = {
                     tag: "div"
                 };
-                var eM = {
+                var tM = {
                     tag: ct,
                     className: d().string,
                     cssModule: d().object,
                     tabId: d().any
                 };
 
-                function tM(e) {
+                function nM(e) {
                     var t = e.className,
                         n = e.cssModule,
                         r = e.tabId,
@@ -30855,17 +30887,17 @@
                                 active: r === e
                             }), n)
                         };
-                    return l.createElement(Jk.Consumer, null, (function(e) {
+                    return l.createElement(Kk.Consumer, null, (function(e) {
                         var t = e.activeTabId;
                         return l.createElement(a, (0, _.Z)({}, o, {
                             className: i(t)
                         }))
                     }))
                 }
-                tM.propTypes = eM, tM.defaultProps = {
+                nM.propTypes = tM, nM.defaultProps = {
                     tag: "div"
                 };
-                var nM = {
+                var rM = {
                         className: d().string,
                         cssModule: d().object,
                         size: d().string,
@@ -30879,7 +30911,7 @@
                         responsiveTag: ct,
                         innerRef: d().oneOfType([d().func, d().string, d().object])
                     },
-                    rM = function(e) {
+                    aM = function(e) {
                         var t = e.className,
                             n = e.cssModule,
                             r = e.size,
@@ -30906,13 +30938,13 @@
                         }
                         return y
                     };
-                rM.propTypes = nM, rM.defaultProps = {
+                aM.propTypes = rM, aM.defaultProps = {
                     tag: "table",
                     responsiveTag: "div"
                 };
-                const aM = rM;
+                const oM = aM;
 
-                function oM(e) {
+                function iM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30932,9 +30964,9 @@
                         return qe(this, n)
                     }
                 }
-                var iM = function(e) {
+                var sM = function(e) {
                     Ge(n, e);
-                    var t = oM(n);
+                    var t = iM(n);
 
                     function n(e) {
                         var r;
@@ -31002,16 +31034,16 @@
                                 style: {
                                     width: "18rem"
                                 }
-                            }, l.createElement(Fk, {
+                            }, l.createElement(Hk, {
                                 top: !0,
                                 className: "mt-4 ml-3 mb-1",
                                 src: "https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
                             }), l.createElement(Fm, {
                                 className: "p-3 steam-gradient"
-                            }, l.createElement(Wk, {
+                            }, l.createElement(Bk, {
                                 className: "mb-3",
                                 tabs: !0
-                            }, l.createElement(Gk, null, l.createElement(Zk, {
+                            }, l.createElement($k, null, l.createElement(Jk, {
                                 className: zi({
                                     active: "1" === this.state.activeTab
                                 }),
@@ -31021,9 +31053,9 @@
                                     });
                                     var t
                                 }
-                            }, "Subscription")), !1, !1), l.createElement(Xk, {
+                            }, "Subscription")), !1, !1), l.createElement(eM, {
                                 activeTab: this.state.activeTab
-                            }, l.createElement(tM, {
+                            }, l.createElement(nM, {
                                 tabId: "1"
                             }, l.createElement("h6", null, " ", f && l.createElement(qt(), {
                                 name: "gift"
@@ -31032,7 +31064,7 @@
                             }, l.createElement("br", null), l.createElement("h5", null, " Gift Recipient "), l.createElement(qi, null, l.createElement(It, null, l.createElement(cp, {
                                 userId: p,
                                 size: "wide"
-                            }))))), l.createElement(tM, {
+                            }))))), l.createElement(nM, {
                                 tabId: "2"
                             }, l.createElement("div", null, l.createElement(qi, null, l.createElement(It, null, l.createElement("small", null, c))), l.createElement("br", null), l.createElement("h6", null, " Steam Agreement Info"), y && l.createElement(qi, null, l.createElement(It, {
                                 xs: "4"
@@ -31060,9 +31092,9 @@
                                 name: "thumbs-up"
                             }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, i)), l.createElement("pre", null, l.createElement("code", null, a))), !o && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", c), l.createElement("br", null), l.createElement("div", null, "Are you sure you want to fail this Steam transaction? Doing so will enable the user to make new purchases."), l.createElement("br", null), l.createElement(Ki, {
                                 onClick: this.deleteSubscription(c)
-                            }, "Confirm Chargeback Clear"))))))), l.createElement(tM, {
+                            }, "Confirm Chargeback Clear"))))))), l.createElement(nM, {
                                 tabId: "3"
-                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(aM, {
+                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(oM, {
                                 borderless: !0,
                                 striped: !0,
                                 size: "sm"
@@ -31077,7 +31109,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const sM = Q((function(e) {
+                const lM = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         error: e.user.transactions.error,
@@ -31086,10 +31118,10 @@
                         updateError: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(iM);
-                var lM;
+                }))(sM);
+                var cM;
 
-                function cM(e) {
+                function uM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31109,9 +31141,9 @@
                         return qe(this, n)
                     }
                 }
-                var uM = function(e) {
+                var dM = function(e) {
                     Ge(n, e);
-                    var t = cM(n);
+                    var t = uM(n);
 
                     function n(e) {
                         var r;
@@ -31148,10 +31180,10 @@
                                 "failed" !== e.status && "expired" !== e.status && (e.isGift ? o.push(e) : (a.includes(e.id) || "chargeback" === e.status) && i.push(e))
                             })), n ? l.createElement("div", null, "loading...") : r ? l.createElement("div", null, "there has been an error: ", r) : l.createElement(Ot, an({
                                 className: "mt-2"
-                            }, "className", Wi(lM || (lM = ko(["\n          & .location-card {\n            margin: 5px;\n            padding: 10px;\n            text-align: left;\n          }\n          & .location-img {\n            float: left;\n            margin-right: 10px;\n            width: 90px;\n            height: calc(90px * 0.75);\n          }\n          & .size-wide .user-img {\n            margin-left: 5px;\n          }\n          & .steam-card {\n            background-color: #171a21;\n            background-image: linear-gradient(50deg, #184053, #1b2838, #000000f5);\n          }\n          & .card-img-top {\n            height: 52px;\n          }\n          & .nav-link:hover {\n            cursor: pointer;\n          }\n          & .table-striped tbody tr:nth-of-type(odd) {\n            background-color: rgba(0, 0, 0, 0.5);\n          }\n        "])))), l.createElement(qi, null, l.createElement("h4", null, "Steam Recurring Subs")), l.createElement("div", {
+                            }, "className", Wi(cM || (cM = ko(["\n          & .location-card {\n            margin: 5px;\n            padding: 10px;\n            text-align: left;\n          }\n          & .location-img {\n            float: left;\n            margin-right: 10px;\n            width: 90px;\n            height: calc(90px * 0.75);\n          }\n          & .size-wide .user-img {\n            margin-left: 5px;\n          }\n          & .steam-card {\n            background-color: #171a21;\n            background-image: linear-gradient(50deg, #184053, #1b2838, #000000f5);\n          }\n          & .card-img-top {\n            height: 52px;\n          }\n          & .nav-link:hover {\n            cursor: pointer;\n          }\n          & .table-striped tbody tr:nth-of-type(odd) {\n            background-color: rgba(0, 0, 0, 0.5);\n          }\n        "])))), l.createElement(qi, null, l.createElement("h4", null, "Steam Recurring Subs")), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, 0 === i.length ? l.createElement("div", null, "None ._.") : i.map((function(e, t) {
-                                return l.createElement(sM, {
+                                return l.createElement(lM, {
                                     transaction: e,
                                     index: t,
                                     key: "recur-card-".concat(t)
@@ -31163,7 +31195,7 @@
                             }))), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, 0 === o.length ? l.createElement("div", null, "None ._.") : o.map((function(e, t) {
-                                return l.createElement(sM, {
+                                return l.createElement(lM, {
                                     transaction: e,
                                     index: t,
                                     key: "gift-card-".concat(t)
@@ -31181,10 +31213,10 @@
                         statusCode: e.user.transactions.statusCode,
                         loading: e.user.transactions.loading
                     }
-                }))(uM);
-                var dM;
+                }))(dM);
+                var fM;
 
-                function fM(e) {
+                function pM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31204,15 +31236,15 @@
                         return qe(this, n)
                     }
                 }
-                var pM = {
+                var mM = {
                         Admin: ["hour", "day", "week", "month", "year"],
                         Steam: ["day", "week", "month", "year"]
                     },
-                    mM = ["Admin", "Steam"],
                     hM = ["Admin", "Steam"],
-                    yM = function(e) {
+                    yM = ["Admin", "Steam"],
+                    gM = function(e) {
                         Ge(c, e);
-                        var t, n, r, a, i = fM(c);
+                        var t, n, r, a, i = pM(c);
 
                         function c(e) {
                             var t;
@@ -31316,25 +31348,25 @@
                                     n = e.complete,
                                     r = e.statusCode,
                                     a = e.error,
-                                    o = pM[this.state.transactionType],
+                                    o = mM[this.state.transactionType],
                                     i = "Admin" === this.props.transactionType ? "Remove Subscription" : "Cancel Subscription",
                                     s = "" !== this.state.timespan && "" !== this.state.transactionId;
                                 return l.createElement("div", {
-                                    className: Wi(dM || (dM = ko(["\n          .modal-button {\n            max-width: 13em;\n            margin-top: 0.5em;\n          }\n\n          button {\n            width: 100%;\n          }\n        "])))
-                                }, this.state.isActive && mM.includes(this.state.transactionType) && l.createElement(Jf, {
+                                    className: Wi(fM || (fM = ko(["\n          .modal-button {\n            max-width: 13em;\n            margin-top: 0.5em;\n          }\n\n          button {\n            width: 100%;\n          }\n        "])))
+                                }, this.state.isActive && hM.includes(this.state.transactionType) && l.createElement(Jf, {
                                     className: "modal-button",
                                     icon: "far fa-clock",
                                     title: "Add Time To Subscription",
                                     clearModal: this.clearAddSubModal
                                 }, n && l.createElement("div", null, "Time Successfully Added ", l.createElement(qt(), {
                                     name: "thumbs-up"
-                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(XE, {
+                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(ek, {
                                     timeOptions: o,
                                     onChange: this.changeTimespan
                                 }), l.createElement("br", null), l.createElement(Ki, {
                                     onClick: this.addTime,
                                     disabled: !s
-                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && hM.includes(this.props.transactionType) && l.createElement(Jf, {
+                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && yM.includes(this.props.transactionType) && l.createElement(Jf, {
                                     className: "modal-button",
                                     icon: "far fa-times",
                                     title: i,
@@ -31348,7 +31380,7 @@
                             }
                         }]), c
                     }(l.Component);
-                const gM = Q((function(e) {
+                const vM = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions,
@@ -31356,10 +31388,10 @@
                         error: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(yM);
-                var vM, _M;
+                }))(gM);
+                var _M, bM;
 
-                function bM(e) {
+                function wM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31379,9 +31411,9 @@
                         return qe(this, n)
                     }
                 }
-                var wM = function(e) {
+                var EM = function(e) {
                     Ge(r, e);
-                    var t, n = bM(r);
+                    var t, n = wM(r);
 
                     function r(e) {
                         var t;
@@ -31428,16 +31460,16 @@
                                 return l.createElement(qi, {
                                     key: h
                                 }, l.createElement(Ot, {
-                                    className: Wi(vM || (vM = ko(["\n                       {\n                        border-bottom: 1px dotted;\n                        margin-bottom: 0.5em;\n                      }\n                    "])))
+                                    className: Wi(_M || (_M = ko(["\n                       {\n                        border-bottom: 1px dotted;\n                        margin-bottom: 0.5em;\n                      }\n                    "])))
                                 }, l.createElement(qi, null, l.createElement(It, {
                                     xs: "9"
                                 }, l.createElement("strong", null, a), " — ", o, l.createElement("span", {
-                                    className: Wi(_M || (_M = ko(["\n                             {\n                              border: 1px solid grey;\n                              border-radius: 0.25rem;\n                              padding: 0.25rem;\n                              margin-left: 2em;\n                            }\n                          "])))
+                                    className: Wi(bM || (bM = ko(["\n                             {\n                              border: 1px solid grey;\n                              border-radius: 0.25rem;\n                              padding: 0.25rem;\n                              margin-left: 2em;\n                            }\n                          "])))
                                 }, l.createElement(qt(), {
                                     name: i ? "check" : "times"
                                 }), " ", i ? "Active" : "Inactive")), l.createElement(It, {
                                     xs: "3"
-                                }, l.createElement(gM, {
+                                }, l.createElement(vM, {
                                     transactionId: r,
                                     transactionType: n,
                                     active: i,
@@ -31476,9 +31508,9 @@
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions
                     }
-                }))(wM);
+                }))(EM);
 
-                function EM(e, t) {
+                function kM(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -31489,19 +31521,19 @@
                     return n
                 }
 
-                function kM(e) {
+                function MM(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? EM(Object(n), !0).forEach((function(t) {
+                        t % 2 ? kM(Object(n), !0).forEach((function(t) {
                             an(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : EM(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : kM(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
 
-                function MM(e) {
+                function LM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31523,7 +31555,7 @@
                 }
                 l.Component;
 
-                function LM(e, t) {
+                function SM(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -31534,18 +31566,18 @@
                     return n
                 }
 
-                function SM(e) {
+                function xM(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? LM(Object(n), !0).forEach((function(t) {
+                        t % 2 ? SM(Object(n), !0).forEach((function(t) {
                             an(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : LM(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : SM(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                var xM = (0, Na.debounce)((function(e, t, n, r) {
+                var OM = (0, Na.debounce)((function(e, t, n, r) {
                     je().get(window.apiUrl("/api/1/auth/exists?username=".concat(encodeURIComponent(e), "&displayName=").concat(encodeURIComponent(t), "&excludeUserId=").concat(n))).then((function(e) {
                         r(e.data.userExists)
                     }))
@@ -31553,7 +31585,7 @@
                     leading: !1,
                     trailing: !0
                 });
-                const OM = function() {
+                const DM = function() {
                     var e = se((function(e) {
                             return e.user.databaseUser
                         })),
@@ -31581,11 +31613,11 @@
                         u = i[1],
                         d = re();
                     l.useEffect((function() {
-                        a(SM(SM({}, r), {}, {
+                        a(xM(xM({}, r), {}, {
                             displayName: e.displayName
                         }))
                     }), [e.displayName]), l.useEffect((function() {
-                        u(SM(SM({}, c), {}, {
+                        u(xM(xM({}, c), {}, {
                             username: e.username
                         }))
                     }), [e.username]);
@@ -31605,7 +31637,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            a(SM(SM({}, r), {}, {
+                                            a(xM(xM({}, r), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -31647,7 +31679,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            u(SM(SM({}, c), {}, {
+                                            u(xM(xM({}, c), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -31698,10 +31730,10 @@
                                 ready: !1
                             });
                             var i = Gl(Ql(o));
-                            xM(i, i, e.id, (function(e) {
+                            OM(i, i, e.id, (function(e) {
                                 var t = Bm(o),
                                     n = !e;
-                                a(SM(SM({}, r), {}, {
+                                a(xM(xM({}, r), {}, {
                                     displayName: i,
                                     available: !e,
                                     error: t,
@@ -31729,7 +31761,7 @@
                         defaultChecked: r.lock,
                         onChange: function(e) {
                             var t = e.target.checked;
-                            a(SM(SM({}, r), {}, {
+                            a(xM(xM({}, r), {}, {
                                 lock: t
                             }))
                         }
@@ -31787,10 +31819,10 @@
                                 ready: !1
                             });
                             var o = Gl(Ql(a));
-                            xM(o, r.displayName, e.id, (function(e) {
+                            OM(o, r.displayName, e.id, (function(e) {
                                 var t = Bm(a),
                                     n = !e;
-                                u(SM(SM({}, c), {}, {
+                                u(xM(xM({}, c), {}, {
                                     username: o,
                                     available: !e,
                                     error: t,
@@ -31834,7 +31866,7 @@
                     })))))
                 };
 
-                function DM(e) {
+                function TM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31854,14 +31886,14 @@
                         return qe(this, n)
                     }
                 }
-                var TM = (0, Na.debounce)((function(e, t, n) {
+                var CM = (0, Na.debounce)((function(e, t, n) {
                         je().get(window.apiUrl("/api/1/auth/exists?email=".concat(encodeURIComponent(e), "&excludeUserId=").concat(t))).then((function(e) {
                             n(e.data.userExists)
                         }))
                     }), 1e3),
-                    CM = function(e) {
+                    AM = function(e) {
                         Ge(n, e);
-                        var t = DM(n);
+                        var t = TM(n);
 
                         function n(e) {
                             var r;
@@ -31886,7 +31918,7 @@
                                     emailTaken: null,
                                     emailError: !1,
                                     ready: !1
-                                }), TM(n, this.props.user.id, (function(e) {
+                                }), CM(n, this.props.user.id, (function(e) {
                                     var r = Bs().isEmail(n) && !sl(n),
                                         a = (null == n || "" === n || !r) && "That's an invalid email";
                                     t.setState({
@@ -32052,34 +32084,12 @@
                             }
                         }]), n
                     }(l.Component);
-                const AM = Q((function(e) {
+                const NM = Q((function(e) {
                     return {
                         email: e.user.email,
                         user: e.user.databaseUser
                     }
-                }))(CM);
-
-                function NM(e) {
-                    var t = function() {
-                        if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
-                        if (Reflect.construct.sham) return !1;
-                        if ("function" == typeof Proxy) return !0;
-                        try {
-                            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {}))), !0
-                        } catch (e) {
-                            return !1
-                        }
-                    }();
-                    return function() {
-                        var n, r = Ze(e);
-                        if (t) {
-                            var a = Ze(this).constructor;
-                            n = Reflect.construct(r, arguments, a)
-                        } else n = r.apply(this, arguments);
-                        return qe(this, n)
-                    }
-                }
-                l.Component;
+                }))(AM);
 
                 function PM(e) {
                     var t = function() {
@@ -32101,9 +32111,31 @@
                         return qe(this, n)
                     }
                 }
-                var IM = function(e) {
+                l.Component;
+
+                function IM(e) {
+                    var t = function() {
+                        if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
+                        if (Reflect.construct.sham) return !1;
+                        if ("function" == typeof Proxy) return !0;
+                        try {
+                            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {}))), !0
+                        } catch (e) {
+                            return !1
+                        }
+                    }();
+                    return function() {
+                        var n, r = Ze(e);
+                        if (t) {
+                            var a = Ze(this).constructor;
+                            n = Reflect.construct(r, arguments, a)
+                        } else n = r.apply(this, arguments);
+                        return qe(this, n)
+                    }
+                }
+                var RM = function(e) {
                     Ge(n, e);
-                    var t = PM(n);
+                    var t = IM(n);
 
                     function n(e) {
                         var r;
@@ -32129,7 +32161,7 @@
                             this.props.dispatch(na({
                                 userId: this.props.user.id,
                                 message: this.state.message
-                            })), wk()(500).then((function() {
+                            })), Ek()(500).then((function() {
                                 t.props.dispatch(me("/home/user/".concat(t.props.user.id)))
                             })), e.preventDefault()
                         }
@@ -32185,15 +32217,15 @@
                         }
                     }]), n
                 }(l.Component);
-                const RM = Q((function(e) {
+                const YM = Q((function(e) {
                     return {
                         isMod: e.currentUser.isMod,
                         user: e.user.databaseUser
                     }
-                }))(IM);
-                var YM, jM, UM;
+                }))(RM);
+                var jM, UM, FM;
 
-                function FM(e) {
+                function HM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -32213,9 +32245,9 @@
                         return qe(this, n)
                     }
                 }
-                var HM = function(e) {
+                var zM = function(e) {
                     Ge(u, e);
-                    var t, n, r, a, i, c = FM(u);
+                    var t, n, r, a, i, c = HM(u);
 
                     function u(e) {
                         var t;
@@ -32699,14 +32731,14 @@
                             return l.createElement(al, {
                                 loading: f
                             }, l.createElement("div", {
-                                className: Wi(YM || (YM = ko(["\n            & ul {\n              list-style-type: none;\n              padding: 0;\n              margin: 0;\n            }\n            & ul li {\n            }\n            & .higher-element {\n              z-index: 1;\n              position: relative;\n            }\n            &. lower-element {\n              z-index: 0;\n              position: relative;\n            }\n          "])))
+                                className: Wi(jM || (jM = ko(["\n            & ul {\n              list-style-type: none;\n              padding: 0;\n              margin: 0;\n            }\n            & ul li {\n            }\n            & .higher-element {\n              z-index: 1;\n              position: relative;\n            }\n            &. lower-element {\n              z-index: 0;\n              position: relative;\n            }\n          "])))
                             }, p, !1, !1, !1, !1, !1, !1, this.state.unfriending && l.createElement(Vm, {
                                 prompt: "Are you sure you want to remove ".concat(o.displayName, " as your friend?"),
                                 confirmLink: this.confirmUnfriendUser,
                                 cancelLink: this.cancelUnfriendUser
                             }), !1, l.createElement(le.Route, {
                                 path: "/home/user/:userId/message",
-                                component: RM
+                                component: YM
                             }), !1, l.createElement(qi, {
                                 className: "mb-4"
                             }, l.createElement(It, {
@@ -32719,14 +32751,14 @@
                                 className: "mb-4 higher-element"
                             }, l.createElement(It, {
                                 md: "9",
-                                className: Wi(jM || (jM = ko(["\n                padding-right: 0;\n              "])))
+                                className: Wi(UM || (UM = ko(["\n                padding-right: 0;\n              "])))
                             }, l.createElement(cp, {
                                 userId: o.id,
                                 showLocation: !0,
                                 size: "huge"
                             })), l.createElement(It, {
                                 md: "3",
-                                className: Wi(UM || (UM = ko(["\n                padding-left: 1em;\n\n                .btn-group-vertical .btn:first-of-type {\n                  border-radius: 5px 5px 0 0;\n                }\n                .btn-group-vertical .btn:last-of-type {\n                  border-radius: 0 0 5px 5px;\n                }\n                .btn {\n                  text-align: left;\n                }\n                .fa {\n                  width: 1.5em;\n                }\n              "])))
+                                className: Wi(FM || (FM = ko(["\n                padding-left: 1em;\n\n                .btn-group-vertical .btn:first-of-type {\n                  border-radius: 5px 5px 0 0;\n                }\n                .btn-group-vertical .btn:last-of-type {\n                  border-radius: 0 0 5px 5px;\n                }\n                .btn {\n                  text-align: left;\n                }\n                .fa {\n                  width: 1.5em;\n                }\n              "])))
                             }, l.createElement(le.Route, {
                                 exact: !0,
                                 path: "/home/user/:userId",
@@ -32795,7 +32827,7 @@
                         }
                     }]), u
                 }(l.Component);
-                const zM = (0, le.withRouter)(Q((function(e, t) {
+                const WM = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         userId: t.match.params.userId,
                         path: e.router.location.pathname,
@@ -32822,9 +32854,9 @@
                         worldInfo: e.user.worldInfo,
                         isLoaded: e.user.isLoaded
                     }
-                }))(HM));
+                }))(zM));
 
-                function WM(e) {
+                function BM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -32844,9 +32876,9 @@
                         return qe(this, n)
                     }
                 }
-                var BM = function(e) {
+                var VM = function(e) {
                     Ge(n, e);
-                    var t = WM(n);
+                    var t = BM(n);
 
                     function n(e) {
                         var r;
@@ -32977,7 +33009,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const VM = (0, le.withRouter)(Q((function(e, t) {
+                const GM = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         avatarId: t.match.params.avatarId,
                         avatarError: e.avatar.errorMessage,
@@ -32988,9 +33020,9 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         loadingAvatar: e.avatar.loadingAvatar
                     }
-                }))(BM));
+                }))(VM));
 
-                function GM(e) {
+                function $M(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -33010,19 +33042,19 @@
                         return qe(this, n)
                     }
                 }
-                var $M = function(e) {
-                    Ge(r, e);
-                    var t, n = GM(r);
+                var qM = function(e) {
+                    Ge(i, e);
+                    var t, n, r, a = $M(i);
 
-                    function r(e) {
+                    function i(e) {
                         var t;
-                        return He(this, r), (t = n.call(this, e)).state = {
+                        return He(this, i), (t = a.call(this, e)).state = {
                             fileId: ""
-                        }, t.loadFileFix = t.loadFileFix.bind(Be(t)), t
+                        }, t.loadFileFix = t.loadFileFix.bind(Be(t)), t.queryTxnSteam = t.queryTxnSteam.bind(Be(t)), t.getAgreementInfoSteam = t.getAgreementInfoSteam.bind(Be(t)), t
                     }
-                    return We(r, [{
+                    return We(i, [{
                         key: "loadFileFix",
-                        value: (t = o(s().mark((function e() {
+                        value: (r = o(s().mark((function e() {
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -33031,6 +33063,49 @@
                                         }, n = void 0, n = t.fileId, {
                                             type: "FIX_FILE",
                                             payload: je().get(window.apiUrl("/api/1/restoredFile?fileId=".concat(n)), {})
+                                        }));
+                                    case 2:
+                                        return e.abrupt("return", e.sent);
+                                    case 3:
+                                    case "end":
+                                        return e.stop()
+                                }
+                                var t, n
+                            }), e, this)
+                        }))), function() {
+                            return r.apply(this, arguments)
+                        })
+                    }, {
+                        key: "queryTxnSteam",
+                        value: (n = o(s().mark((function e() {
+                            var t;
+                            return s().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return (t = {})[this.state.queryType] = this.state.queryValue, e.next = 4, this.props.dispatch(JE({
+                                            params: t
+                                        }));
+                                    case 4:
+                                        return e.abrupt("return", e.sent);
+                                    case 5:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, this)
+                        }))), function() {
+                            return n.apply(this, arguments)
+                        })
+                    }, {
+                        key: "getAgreementInfoSteam",
+                        value: (t = o(s().mark((function e() {
+                            return s().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.next = 2, this.props.dispatch((t = {
+                                            steamId: this.state.steamId
+                                        }, n = void 0, n = t.steamId, {
+                                            type: "GET_AGREEMENT_INFO",
+                                            payload: je().get(window.apiUrl("/api/1/steam/transaction/getUserAgreementInfo?steamId=".concat(n)), {})
                                         }));
                                     case 2:
                                         return e.abrupt("return", e.sent);
@@ -33122,7 +33197,7 @@
                                 name: "warning"
                             }), l.createElement("p", null, "You're not supposed to be here! INTERLOPER!")))
                         }
-                    }]), r
+                    }]), i
                 }(l.Component);
                 (0, le.withRouter)(Q((function(e) {
                     return {
@@ -33130,10 +33205,10 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         miscellaneous: e.miscellaneous
                     }
-                }))($M));
-                var qM;
+                }))(qM));
+                var ZM;
 
-                function ZM(e) {
+                function JM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -33153,9 +33228,9 @@
                         return qe(this, n)
                     }
                 }
-                var JM = function(e) {
+                var KM = function(e) {
                     Ge(n, e);
-                    var t = ZM(n);
+                    var t = JM(n);
 
                     function n(e) {
                         var r;
@@ -33173,7 +33248,7 @@
                         key: "render",
                         value: function() {
                             return l.createElement("div", {
-                                className: Wi(qM || (qM = ko(["\n          & .leftbar {\n            padding: 20px 3px 3px 3px;\n            z-index: 5;\n            top: 80px;\n            width: 290px;\n            min-width: 290px;\n            height: calc(100% - 80px);\n            position: absolute;\n            overflow-y: auto;\n          }\n          & .rightbar {\n            padding: 0;\n            top: 80px;\n            width: 410px;\n            min-width: 410px;\n            z-index: 5;\n            height: calc(100% - 80px);\n            margin-left: calc(100% - 410px);\n            position: absolute;\n          }\n          & .content-scroll {\n            top: 80px;\n            padding-top: 20px;\n            left: 290px;\n            position: absolute;\n            overflow-y: auto;\n            width: calc(100% - 700px);\n            height: calc(100% - 80px);\n            & .home-content {\n              max-width: 2000px;\n              margin: 0 auto;\n            }\n          }\n          @media (max-width: 992px) {\n            & .leftbar,\n            .rightbar {\n              top: 60px;\n              display: none;\n            }\n            & .content-scroll {\n              top: 60px;\n              left: 0;\n              width: 100%;\n              height: calc(100% - 60px);\n            }\n          }\n        "])))
+                                className: Wi(ZM || (ZM = ko(["\n          & .leftbar {\n            padding: 20px 3px 3px 3px;\n            z-index: 5;\n            top: 80px;\n            width: 290px;\n            min-width: 290px;\n            height: calc(100% - 80px);\n            position: absolute;\n            overflow-y: auto;\n          }\n          & .rightbar {\n            padding: 0;\n            top: 80px;\n            width: 410px;\n            min-width: 410px;\n            z-index: 5;\n            height: calc(100% - 80px);\n            margin-left: calc(100% - 410px);\n            position: absolute;\n          }\n          & .content-scroll {\n            top: 80px;\n            padding-top: 20px;\n            left: 290px;\n            position: absolute;\n            overflow-y: auto;\n            width: calc(100% - 700px);\n            height: calc(100% - 80px);\n            & .home-content {\n              max-width: 2000px;\n              margin: 0 auto;\n            }\n          }\n          @media (max-width: 992px) {\n            & .leftbar,\n            .rightbar {\n              top: 60px;\n              display: none;\n            }\n            & .content-scroll {\n              top: 60px;\n              left: 0;\n              width: 100%;\n              height: calc(100% - 60px);\n            }\n          }\n        "])))
                             }, l.createElement(Wp, null), l.createElement(Jp, null), l.createElement(Ot, {
                                 fluid: !0
                             }, l.createElement(qi, null, l.createElement(It, {
@@ -33214,7 +33289,7 @@
                                 component: ug
                             }), l.createElement(le.Route, {
                                 path: "/home/user/:userId",
-                                component: zM
+                                component: WM
                             }), l.createElement(le.Route, {
                                 path: "/home/locations",
                                 component: Qv
@@ -33232,7 +33307,7 @@
                                 component: iy
                             }), l.createElement(le.Route, {
                                 path: "/home/avatar/:avatarId",
-                                component: VM
+                                component: GM
                             }), l.createElement(le.Route, {
                                 path: "/home/messages",
                                 component: FE
@@ -33261,7 +33336,7 @@
                     }]), n
                 }(l.Component);
 
-                function KM(e) {
+                function QM(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -33281,9 +33356,9 @@
                         return qe(this, n)
                     }
                 }
-                var QM = function(e) {
+                var XM = function(e) {
                     Ge(n, e);
-                    var t = KM(n);
+                    var t = QM(n);
 
                     function n() {
                         return He(this, n), t.apply(this, arguments)
@@ -33341,14 +33416,14 @@
                                 component: Lp
                             }), l.createElement(le.Route, {
                                 path: "/home",
-                                component: JM
+                                component: KM
                             }), l.createElement(le.Route, {
-                                component: JM
+                                component: KM
                             })))
                         }
                     }]), n
                 }(l.Component);
-                const XM = function(e) {
+                const eL = function(e) {
                     var t = e.store,
                         n = t.getState().currentUser.databaseUser.id;
                     return console.log("Creating pipeline router for ".concat(n)),
@@ -33454,8 +33529,8 @@
                             } else console.error("Socket event without type!")
                         }
                 };
-                var eL = document.getElementById("app"),
-                    tL = function() {
+                var tL = document.getElementById("app"),
+                    nL = function() {
                         String.prototype.toTitleCase = function() {
                             var e, t, n, r, a;
                             for (n = this.replace(/([^\W_]+[^\s-]*) */g, (function(e) {
@@ -33504,8 +33579,8 @@
                             history: wo
                         }, l.createElement("div", null, l.createElement(le.Route, {
                             path: "/",
-                            component: QM
-                        })))), eL);
+                            component: XM
+                        })))), tL);
                         var e = 500,
                             t = !1,
                             r = function() {
@@ -33514,7 +33589,7 @@
                                     return s().wrap((function(n) {
                                         for (;;) switch (n.prev = n.next) {
                                             case 0:
-                                                return r = XM({
+                                                return r = eL({
                                                     store: Eo
                                                 }), n.next = 3, je().get("".concat(window.endpoint, "/api/1/auth?apiKey=").concat(window.apiKey));
                                             case 3:
@@ -33580,7 +33655,7 @@
                                     Eo.dispatch({
                                         type: "LOGIN_FULFILLED",
                                         payload: t
-                                    }), tL();
+                                    }), nL();
                                 case 2:
                                 case "end":
                                     return e.stop()
@@ -33591,16 +33666,16 @@
                         return e.apply(this, arguments)
                     }
                 }()).catch((function(e) {
-                    e.message.indexOf("403") > -1 ? c.render(l.createElement(nn, null), eL) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (Sa.has(window.location.pathname) || (console.warn("".concat(Array.from(Sa), " didn't contain ").concat(window.location.pathname)), Eo.dispatch({
+                    e.message.indexOf("403") > -1 ? c.render(l.createElement(nn, null), tL) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (Sa.has(window.location.pathname) || (console.warn("".concat(Array.from(Sa), " didn't contain ").concat(window.location.pathname)), Eo.dispatch({
                         type: "CLEAR_STATUS_CODE"
                     }), Eo.dispatch(Kt()), Eo.dispatch(Ma({
                         targetPath: window.location.pathname + window.location.search
-                    })), Eo.dispatch(me("/home/login"))), tL()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(rn, {
+                    })), Eo.dispatch(me("/home/login"))), nL()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(rn, {
                         error: e,
                         statusCode: 500
-                    }), eL) : c.render(l.createElement(rn, {
+                    }), tL) : c.render(l.createElement(rn, {
                         error: e
-                    }), eL)
+                    }), tL)
                 }))
             },
             2945: (e, t, n) => {
@@ -36517,7 +36592,7 @@
                     65374: "~"
                 }
             },
-            629: e => {
+            7376: e => {
                 e.exports = function(e, t) {
                     "use strict";
                     t = t || 0;
@@ -36530,7 +36605,7 @@
                 }
             },
             6125: (e, t, n) => {
-                var r = n(629),
+                var r = n(7376),
                     a = n(4542),
                     o = function(e, t, n) {
                         var r = a[e];
@@ -69478,6 +69553,6 @@
         }), Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(8062);
+    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(629);
     n(4565)
 })();
