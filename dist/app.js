@@ -6305,7 +6305,7 @@
                     An = "idfk",
                     Pn = "idfk";
                 try {
-                    Nn = "12345", An = "2021-11-10t00-18-14-the-wide-of-trent", Pn = "production"
+                    Nn = "12345", An = "2021-11-12t23-39-35-the-fluid-of-sepia", Pn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -24466,6 +24466,7 @@
                     return l.createElement(Ke.Z, {
                         className: "mx-0 px-3 mb-3"
                     }, l.createElement(bg, {
+                        "data-testid": "profile-pic",
                         to: "/home/user/".concat(r.id),
                         url: x,
                         level: tn(r.tags)
@@ -24487,7 +24488,8 @@
                         title: (0, Kr.startCase)(r.status),
                         statusColor: gg[r.status]
                     }), l.createElement(it, {
-                        to: "/home/user/".concat(r.id)
+                        to: "/home/user/".concat(r.id),
+                        "data-testid": "display-name"
                     }, r.displayName)), l.createElement(Ng, {
                         className: "mx-0 my-1",
                         onClick: function(e) {
@@ -24497,7 +24499,8 @@
                         },
                         role: "button",
                         title: "Edit Status",
-                        tabIndex: 0
+                        tabIndex: 0,
+                        "data-testid": "status-block"
                     }, p ? l.createElement(Ag, {
                         ref: E,
                         value: y,
@@ -24509,10 +24512,16 @@
                         onKeyPress: function(e) {
                             "Enter" === e.key && M(e)
                         },
-                        placeholder: "Set a new status!"
-                    }) : l.createElement("div", null, y.length > 0 ? y : l.createElement(Pg, null, "Set a status")), l.createElement(Cg, {
+                        placeholder: "Set a new status!",
+                        "data-testid": "status-field"
+                    }) : l.createElement("div", {
+                        "data-testid": "status-text"
+                    }, y.length > 0 ? y : l.createElement(Pg, {
+                        "data-testid": "status-placeholder"
+                    }, "Set a status")), l.createElement(Cg, {
                         onClick: M,
-                        name: p ? "check" : "pen"
+                        name: p ? "check" : "pen",
+                        "data-testid": "status-submit"
                     })), S && i && l.createElement(Ig, {
                         className: "mx-0"
                     }, l.createElement(Dc, {
@@ -24526,10 +24535,11 @@
                     }, l.createElement(ut(), {
                         name: "cog"
                     }), "  Profile")), c && l.createElement(Yg, null, l.createElement(ui.Z, {
-                        outline: !0,
                         color: "warning",
                         onClick: L,
-                        className: "w-100"
+                        className: "w-100",
+                        "data-testid": "mod-user-json",
+                        outline: !0
                     }, l.createElement(ut(), {
                         name: "info"
                     }), "  Show JSON"), l.createElement(Uc.Z, {
@@ -24553,7 +24563,9 @@
                         href: window.apiUrl("/api/1/auth/user"),
                         target: "_blank",
                         rel: "noreferrer"
-                    }, "/api/v1/auth/user")), l.createElement(Fc.Z, null, l.createElement(Zc, {
+                    }, "/api/v1/auth/user")), l.createElement(Fc.Z, {
+                        "data-testid": "mod-user-json-modal"
+                    }, l.createElement(Zc, {
                         src: r
                     }))))))
                 };
@@ -26651,7 +26663,9 @@
                     }, {
                         key: "render",
                         value: function() {
-                            return l.createElement("div", null, this.state.subscriptions && l.createElement("div", null, l.createElement("select", {
+                            return l.createElement("div", {
+                                "data-testid": "SubscriptionSelector"
+                            }, this.state.subscriptions && l.createElement("div", null, l.createElement("select", {
                                 className: "custom-select",
                                 onChange: this.changeSubscription
                             }, this.state.subscriptions.map((function(e) {
