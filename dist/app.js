@@ -4233,7 +4233,7 @@
                     apiUrl: window.apiUrl
                 }
             },
-            62611: (e, t, n) => {
+            28370: (e, t, n) => {
                 "use strict";
                 var r = {};
 
@@ -6305,7 +6305,7 @@
                     An = "idfk",
                     Pn = "idfk";
                 try {
-                    Nn = "12345", An = "2021-11-15t21-31-36-the-static-of-eartha", Pn = "production"
+                    Nn = "12345", An = "2021-11-16t21-59-51-the-clash-of-dutch", Pn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -8201,9 +8201,13 @@
                                 loading: !1,
                                 statusCode: null,
                                 error: null,
+                                complete: null,
                                 fixedFile: {},
                                 queryTxnResponse: {},
-                                agreementInfoResponse: {}
+                                agreementInfoResponse: {},
+                                licenseGrantResponse: {},
+                                licenseGroups: [],
+                                permissions: []
                             },
                             t = arguments.length > 1 ? arguments[1] : void 0,
                             n = JSON.parse(JSON.stringify(e));
@@ -8240,6 +8244,39 @@
                                 break;
                             case "GET_AGREEMENT_INFO_FULFILLED":
                                 n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.agreementInfoResponse = t.payload.data;
+                                break;
+                            case "LOAD_PERMISSIONS_PENDING":
+                                n.error = null, n.statusCode = null, n.loading = !0, n.permissions = [];
+                                break;
+                            case "LOAD_PERMISSIONS_REJECTED":
+                                n.statusCode = Kt(t.payload), n.error = {
+                                    error: Xt(t.payload)
+                                }, n.loading = !1, n.permissions = [];
+                                break;
+                            case "LOAD_PERMISSIONS_FULFILLED":
+                                n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.permissions = t.payload.data;
+                                break;
+                            case "LOAD_LICENSEGROUPS_PENDING":
+                                n.error = null, n.statusCode = null, n.loading = !0, n.licenseGroups = [];
+                                break;
+                            case "LOAD_LICENSEGROUPS_REJECTED":
+                                n.statusCode = Kt(t.payload), n.error = {
+                                    error: Xt(t.payload)
+                                }, n.loading = !1, n.licenseGroups = [];
+                                break;
+                            case "LOAD_LICENSEGROUPS_FULFILLED":
+                                n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.licenseGroups = t.payload.data;
+                                break;
+                            case "GRANT_LICENSE_PENDING":
+                                n.error = null, n.statusCode = null, n.loading = !0, n.complete = !1, n.licenseGrantResponse = null;
+                                break;
+                            case "GRANT_LICENSE_REJECTED":
+                                n.statusCode = Kt(t.payload), n.error = {
+                                    error: Xt(t.payload)
+                                }, n.loading = !1, n.complete = !1, n.licenseGrantResponse = null;
+                                break;
+                            case "GRANT_LICENSE_FULFILLED":
+                                n.statusCode = t.payload.status, n.loading = !1, n.error = null, n.complete = !0, n.licenseGrantResponse = t.payload.data;
                                 break;
                             default:
                                 return n
@@ -26520,6 +26557,14 @@
                     }
                 }))(n_);
                 var a_ = function(e) {
+                    var t = e.params,
+                        n = "";
+                    return t.orderId && (n = "orderId=".concat(t.orderId)), t.transId && (n = "transId=".concat(t.transId)), {
+                        type: "QUERY_TXN",
+                        payload: je().get(window.apiUrl("/api/1/steam/transaction/queryTransaction?".concat(n)), t)
+                    }
+                };
+                var o_ = function(e) {
                         var t = e.visible,
                             n = e.friendship,
                             r = e.friendLink,
@@ -26560,9 +26605,6 @@
                             name: "star"
                         }), " Add Friend")
                     },
-                    o_ = function() {
-                        return []
-                    },
                     i_ = function() {
                         return []
                     },
@@ -26583,15 +26625,10 @@
                     },
                     f_ = function() {
                         return []
+                    },
+                    p_ = function() {
+                        return []
                     };
-                var p_ = function(e) {
-                    var t = e.params,
-                        n = "";
-                    return t.orderId && (n = "orderId=".concat(t.orderId)), t.transId && (n = "transId=".concat(t.transId)), {
-                        type: "QUERY_TXN",
-                        payload: je().get(window.apiUrl("/api/1/steam/transaction/queryTransaction?".concat(n)), t)
-                    }
-                };
 
                 function m_(e) {
                     var t = function() {
@@ -29505,34 +29542,34 @@
                                         vertical: !0,
                                         size: "lg",
                                         className: "w-100"
-                                    }, l.createElement(a_, {
+                                    }, l.createElement(o_, {
                                         visible: !a,
                                         friendship: i,
                                         friendLink: e.friendUser,
                                         cancelFriendRequestLink: e.cancelFriendRequest,
                                         unfriendLink: e.unfriendUser
-                                    }), l.createElement(o_, {
-                                        visible: n,
-                                        onClick: e.editUser
                                     }), l.createElement(i_, {
                                         visible: n,
-                                        onClick: e.moderateUser
+                                        onClick: e.editUser
                                     }), l.createElement(s_, {
                                         visible: n,
-                                        onClick: e.unmoderateUser
-                                    }), l.createElement(u_, {
-                                        visible: n,
-                                        onClick: e.resetUserHome
+                                        onClick: e.moderateUser
                                     }), l.createElement(l_, {
                                         visible: n,
-                                        onClick: e.resetUserAvatar
+                                        onClick: e.unmoderateUser
+                                    }), l.createElement(d_, {
+                                        visible: n,
+                                        onClick: e.resetUserHome
                                     }), l.createElement(c_, {
                                         visible: n,
+                                        onClick: e.resetUserAvatar
+                                    }), l.createElement(u_, {
+                                        visible: n,
                                         onClick: e.resetUserProfile
-                                    }), l.createElement(d_, {
+                                    }), l.createElement(f_, {
                                         visible: n && m,
                                         onClick: e.removeUser2fa
-                                    }), l.createElement(f_, {
+                                    }), l.createElement(p_, {
                                         visible: n,
                                         onClick: function() {
                                             return e.confirmForceLogout(!0)
@@ -30308,7 +30345,7 @@
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return (t = {})[this.state.queryType] = this.state.queryValue, e.next = 4, this.props.dispatch(p_({
+                                        return (t = {})[this.state.queryType] = this.state.queryValue, e.next = 4, this.props.dispatch(a_({
                                             params: t
                                         }));
                                     case 4:
@@ -73046,6 +73083,6 @@
         }), Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(62611);
+    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(28370);
     n(74565)
 })();
