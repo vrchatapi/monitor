@@ -6305,7 +6305,7 @@
                     An = "idfk",
                     Pn = "idfk";
                 try {
-                    Nn = "12345", An = "2021-11-16t21-59-51-the-clash-of-dutch", Pn = "production"
+                    Nn = "12345", An = "2021-11-17t19-49-03-the-bobble-of-craig", Pn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -17008,7 +17008,7 @@
                                 s = a || [],
                                 c = s.includes("permission-user-icons"),
                                 u = s.includes("permission-user-gallery"),
-                                d = s.includes("permission-can-sell-products"),
+                                d = s.includes("CAN_SELL_PRODUCTS"),
                                 f = n.length,
                                 p = l.createElement("span", null);
                             if (f > 0 && (p = l.createElement("span", null, l.createElement(Bl.Z, {
