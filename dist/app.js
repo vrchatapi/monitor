@@ -6456,7 +6456,7 @@
                     Gn = "idfk",
                     $n = "idfk";
                 try {
-                    Vn = "12345", Gn = "2021-12-01t00-56-14-the-bulgur-of-shorley", $n = "production"
+                    Vn = "12345", Gn = "2021-12-01t21-24-24-the-shovel-of-lauren", $n = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -6647,8 +6647,7 @@
                                 });
                                 var a = t.payload.data;
                                 return a.forEach((function(r) {
-                                    var a = null;
-                                    null != e.users[r.id] && (a = e.users[r.id].state), n.users[r.id] = tr(tr({}, e.users[r.id]), r), null != a ? n.users[r.id].state = a : new Set(e.onlineFriendIds).has(t.payload.data.id) || r.location && "offline" !== r.location ? n.users[r.id].state = "online" : new Set(e.offlineFriendIds).has(t.payload.data.id) ? n.users[r.id].state = "offline" : new Set(e.activeFriendIds).has(t.payload.data.id) || r.isFriend && "offline" !== r.status ? n.users[r.id].state = "active" : n.users[r.id].state = "offline"
+                                    n.users[r.id] = tr(tr({}, e.users[r.id]), r), new Set(e.onlineFriendIds).has(t.payload.data.id) || r.location && "offline" !== r.location ? n.users[r.id].state = "online" : new Set(e.offlineFriendIds).has(t.payload.data.id) ? n.users[r.id].state = "offline" : new Set(e.activeFriendIds).has(t.payload.data.id) || r.isFriend && "offline" !== r.status ? n.users[r.id].state = "active" : n.users[r.id].state = "offline"
                                 })), n;
                             case "LOGOUT":
                                 return ir;
@@ -15594,7 +15593,7 @@
                 const hc = function(e) {
                     var t = e.region,
                         n = e.imageSize,
-                        r = void 0 === n ? bi("", "") : n,
+                        r = void 0 === n ? "25px" : n,
                         a = e.borderColor,
                         o = (t || "us").toLowerCase(),
                         i = {
@@ -25102,13 +25101,14 @@
                             return e.friends.users
                         }))) && void 0 !== t ? t : {},
                         i = l.useMemo((function() {
-                            return (0, ua.values)((0, ua.pickBy)(o, (function(e) {
+                            var e;
+                            return null !== (e = (0, ua.values)((0, ua.pickBy)(o, (function(e) {
                                 return "online" === e.state && r.includes(e.id)
                             }))).map((function(e) {
                                 return vm(vm({}, e), {}, {
                                     location: n.isMod && hn(e, n.databaseUser, e.location) ? "private" : e.location
                                 })
-                            }))
+                            }))) && void 0 !== e ? e : []
                         }), [r, o]),
                         s = l.useMemo((function() {
                             return i.map((function(e) {
@@ -25116,9 +25116,10 @@
                             })).filter(Boolean)
                         }), [i]),
                         c = l.useMemo((function() {
-                            return (0, ua.values)((0, ua.pickBy)(o, (function(e) {
+                            var e;
+                            return null !== (e = (0, ua.values)((0, ua.pickBy)(o, (function(e) {
                                 return "offline" === e.state && r.includes(e.id)
-                            })))
+                            })))) && void 0 !== e ? e : []
                         }), [r, o]),
                         u = l.useMemo((function() {
                             return c.map((function(e) {
@@ -25560,7 +25561,7 @@
                             statusColor: O
                         }), l.createElement(oh, {
                             to: "/home/user/".concat(f.id)
-                        }, f.displayName)), E && w && l.createElement(rh, null, "In a private world"), w && !f.statusDescription && l.createElement(ah, null, " "), !!f.statusDescription && !S && l.createElement(ah, null, f.statusDescription), S && l.createElement(l.Fragment, null, l.createElement(nh, null, "Offline"), f.last_login && l.createElement(nh, null, ur()(f.last_login).fromNow())))), E && !w && !!M && l.createElement(ih, null, l.createElement(sh, null, l.createElement(ch, {
+                        }, f.displayName)), E && w && l.createElement(rh, null, "In a private world"), w && !f.statusDescription && !S && l.createElement(ah, null, " "), !!f.statusDescription && !S && l.createElement(ah, null, f.statusDescription), S && l.createElement(l.Fragment, null, l.createElement(nh, null, "Offline"), f.last_login && l.createElement(nh, null, ur()(f.last_login).fromNow())))), E && !w && !!M && l.createElement(ih, null, l.createElement(sh, null, l.createElement(ch, {
                             url: null == h ? void 0 : h.thumbnailImageUrl,
                             to: "/home/launch?worldId=".concat(null == h ? void 0 : h.id, "&instanceId=").concat(M),
                             target: "_blank"
