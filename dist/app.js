@@ -6457,7 +6457,7 @@
                     Gn = "idfk",
                     $n = "idfk";
                 try {
-                    Vn = "12345", Gn = "2021-12-15t00-41-58-the-round-of-han", $n = "production"
+                    Vn = "12345", Gn = "2021-12-25t21-17-53-the-mumps-of-erwin", $n = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -13818,6 +13818,10 @@
                                         var e = t.props.loginPath || "/";
                                         t.props.dispatch(me(e))
                                     } else console.error("somehow we're not logged in after all that")
+                                })).finally((function() {
+                                    t.handleRecaptchaExpired().then((function() {
+                                        window.grecaptcha && window.grecaptcha.reset && window.grecaptcha.reset()
+                                    }))
                                 }))
                             }
                         }, {
