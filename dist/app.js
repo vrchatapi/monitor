@@ -4233,7 +4233,7 @@
                     apiUrl: window.apiUrl
                 }
             },
-            74960: (e, t, n) => {
+            27499: (e, t, n) => {
                 "use strict";
                 var r = {};
 
@@ -6457,7 +6457,7 @@
                     Gn = "idfk",
                     $n = "idfk";
                 try {
-                    Vn = "12345", Gn = "2021-12-25t21-17-53-the-mumps-of-erwin", $n = "production"
+                    Vn = "12345", Gn = "2022-01-04t19-09-13-the-lavender-of-gennennifer", $n = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -27909,9 +27909,15 @@
                     },
                     Zy = function() {
                         return []
+                    },
+                    Uy = function() {
+                        return []
+                    },
+                    Fy = function() {
+                        return []
                     };
 
-                function Uy(e) {
+                function zy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27931,9 +27937,9 @@
                         return $e(this, n)
                     }
                 }
-                const Fy = function(e) {
+                const Hy = function(e) {
                     Ve(r, e);
-                    var t, n = Uy(r);
+                    var t, n = zy(r);
 
                     function r(e) {
                         var t;
@@ -27988,7 +27994,7 @@
                     }]), r
                 }(l.Component);
 
-                function zy(e) {
+                function Wy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28008,9 +28014,9 @@
                         return $e(this, n)
                     }
                 }
-                const Hy = function(e) {
+                const By = function(e) {
                     Ve(n, e);
-                    var t = zy(n);
+                    var t = Wy(n);
 
                     function n(e) {
                         var r;
@@ -28058,7 +28064,7 @@
                     }]), n
                 }(l.Component);
 
-                function Wy(e) {
+                function Vy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28078,9 +28084,9 @@
                         return $e(this, n)
                     }
                 }
-                var By = function(e) {
+                var Gy = function(e) {
                     Ve(n, e);
-                    var t = Wy(n);
+                    var t = Vy(n);
 
                     function n(e) {
                         var r;
@@ -28148,9 +28154,9 @@
                                 i = "" !== this.state.timespan && "" !== this.state.subscriptionId;
                             return n ? l.createElement("div", null, " loading ... ") : o ? l.createElement("div", null, " ", "u did it ", l.createElement(ut(), {
                                 name: "thumbs-up"
-                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(Fy, {
+                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(Hy, {
                                 onChange: this.changeSubscription
-                            }), l.createElement("br", null), l.createElement(Hy, {
+                            }), l.createElement("br", null), l.createElement(By, {
                                 onChange: this.changeTimespan
                             }), l.createElement("br", null), l.createElement(Mi.Z, {
                                 onClick: this.createAdminSubscription,
@@ -28168,10 +28174,10 @@
                         error: e.createAdminSubscription.error,
                         complete: e.createAdminSubscription.complete
                     }
-                }))(By);
-                var Vy = n(97394);
+                }))(Gy);
+                var $y = n(97394);
 
-                function Gy(e) {
+                function qy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28191,9 +28197,9 @@
                         return $e(this, n)
                     }
                 }
-                var $y = function(e) {
+                var Jy = function(e) {
                     Ve(r, e);
-                    var t, n = Gy(r);
+                    var t, n = qy(r);
 
                     function r(e) {
                         var t;
@@ -28267,7 +28273,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(Vy.Z, {
+                            }), l.createElement($y.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_3,
                                 target: "tooltip-3",
@@ -28308,7 +28314,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(Vy.Z, {
+                            }), l.createElement($y.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_1,
                                 target: "tooltip-1",
@@ -28354,7 +28360,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(Vy.Z, {
+                            }), l.createElement($y.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_2,
                                 target: "tooltip-2",
@@ -28424,11 +28430,11 @@
                         diagnostic: e.user.steamDiagnostic.data,
                         subscriptions: e.user.subscriptions
                     }
-                }))($y);
-                var qy = n(65780),
-                    Jy = n.n(qy);
+                }))(Jy);
+                var Ky = n(65780),
+                    Qy = n.n(Ky);
 
-                function Ky(e) {
+                function Xy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28448,9 +28454,9 @@
                         return $e(this, n)
                     }
                 }
-                var Qy = function(e) {
+                var eg = function(e) {
                     Ve(a, e);
-                    var t, n, r = Ky(a);
+                    var t, n, r = Xy(a);
 
                     function a(e) {
                         var t;
@@ -28493,7 +28499,7 @@
                                             })
                                         }));
                                     case 2:
-                                        return e.next = 4, Jy()(1e3);
+                                        return e.next = 4, Qy()(1e3);
                                     case 4:
                                         return e.next = 6, this.props.dispatch(Fr({
                                             userId: this.props.userId,
@@ -28538,7 +28544,7 @@
                                 id: "diagnosticTooltip"
                             }, l.createElement(ut(), {
                                 name: "info"
-                            }), l.createElement(Vy.Z, {
+                            }), l.createElement($y.Z, {
                                 placement: "right",
                                 isOpen: this.state.diagnosticTooltipOpen,
                                 target: "diagnosticTooltip",
@@ -28598,7 +28604,7 @@
                                     id: "repairTooltip"
                                 }, l.createElement(ut(), {
                                     name: "info"
-                                }), l.createElement(Vy.Z, {
+                                }), l.createElement($y.Z, {
                                     placement: "right",
                                     isOpen: e.state.repairTooltipOpen,
                                     target: "repairTooltip",
@@ -28630,11 +28636,11 @@
                         repairComplete: e.user.mergeRepair.complete,
                         loading: e.user.mergeDiagnostic.loading || e.user.mergeRepair.loading
                     }
-                }))(Qy);
-                var Xy = n(69618),
-                    eg = n(88822);
+                }))(eg);
+                var tg = n(69618),
+                    ng = n(88822);
 
-                function tg(e) {
+                function rg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28654,9 +28660,9 @@
                         return $e(this, n)
                     }
                 }
-                var ng = function(e) {
+                var ag = function(e) {
                     Ve(n, e);
-                    var t = tg(n);
+                    var t = rg(n);
 
                     function n(e) {
                         var r;
@@ -28720,9 +28726,9 @@
                         }
                     }]), n
                 }(l.Component);
-                const rg = (0, le.withRouter)(ng);
+                const og = (0, le.withRouter)(ag);
 
-                function ag(e) {
+                function ig(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28742,9 +28748,9 @@
                         return $e(this, n)
                     }
                 }
-                var og = function(e) {
+                var sg = function(e) {
                     Ve(n, e);
-                    var t = ag(n);
+                    var t = ig(n);
 
                     function n(e) {
                         var r;
@@ -28942,7 +28948,7 @@
                             var e = this.props.currentUser,
                                 t = (e = void 0 === e ? {} : e).friends,
                                 n = this.state.friends.map((function(e) {
-                                    return l.createElement(rg, {
+                                    return l.createElement(og, {
                                         user: e,
                                         key: e.id
                                     })
@@ -28960,11 +28966,11 @@
                                 className: "px-1"
                             }, l.createElement(ki.Z, {
                                 className: "mb-2 mx-0"
-                            }, l.createElement(Xy.Z, null, l.createElement(Zd.Z, {
+                            }, l.createElement(tg.Z, null, l.createElement(Zd.Z, {
                                 placeholder: "User ID",
                                 value: this.state.search,
                                 onChange: this.handleSearchChange
-                            }), l.createElement(eg.Z, {
+                            }), l.createElement(ng.Z, {
                                 addonType: "append"
                             }, l.createElement(Mi.Z, {
                                 onClick: this.handleSearchClick
@@ -28972,7 +28978,7 @@
                                 name: "search"
                             }))))), this.state.search.length > 0 && null === this.state.foundFriend && l.createElement(ki.Z, {
                                 className: "mx-0"
-                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(rg, {
+                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(og, {
                                 user: this.state.foundFriend
                             }), 0 === this.state.search.length && l.createElement(l.Fragment, null, l.createElement(Ke.Z, {
                                 className: "px-0"
@@ -28992,16 +28998,16 @@
                     return {
                         currentUser: e.user.databaseUser
                     }
-                }))(og);
-                var ig = n(90442),
-                    sg = n(77243),
-                    lg = n(53999),
-                    cg = n(98008),
-                    ug = n(9393),
-                    dg = n(18829),
-                    fg = n(36595);
+                }))(sg);
+                var lg = n(90442),
+                    cg = n(77243),
+                    ug = n(53999),
+                    dg = n(98008),
+                    fg = n(9393),
+                    pg = n(18829),
+                    mg = n(36595);
 
-                function pg(e) {
+                function hg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29021,9 +29027,9 @@
                         return $e(this, n)
                     }
                 }
-                var mg = function(e) {
+                var yg = function(e) {
                     Ve(n, e);
-                    var t = pg(n);
+                    var t = hg(n);
 
                     function n(e) {
                         var r;
@@ -29091,16 +29097,16 @@
                                 style: {
                                     width: "18rem"
                                 }
-                            }, l.createElement(ig.Z, {
+                            }, l.createElement(lg.Z, {
                                 top: !0,
                                 className: "mt-4 mb-1",
                                 src: "https://s3.amazonaws.com/assets.vrchat.com/misc/steam_logo.svg"
                             }), l.createElement(gu.Z, {
                                 className: "p-3"
-                            }, l.createElement(sg.Z, {
+                            }, l.createElement(cg.Z, {
                                 className: "mb-3",
                                 tabs: !0
-                            }, l.createElement(lg.Z, null, l.createElement(cg.Z, {
+                            }, l.createElement(ug.Z, null, l.createElement(dg.Z, {
                                 className: Ei({
                                     active: "1" === this.state.activeTab
                                 }),
@@ -29110,9 +29116,9 @@
                                     });
                                     var t
                                 }
-                            }, "Subscription")), !1, !1), l.createElement(ug.Z, {
+                            }, "Subscription")), !1, !1), l.createElement(fg.Z, {
                                 activeTab: this.state.activeTab
-                            }, l.createElement(dg.Z, {
+                            }, l.createElement(pg.Z, {
                                 tabId: "1"
                             }, l.createElement("h6", null, " ", f && l.createElement(ut(), {
                                 name: "gift"
@@ -29121,7 +29127,7 @@
                             }, l.createElement("br", null), l.createElement("h5", null, " Gift Recipient "), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(Ic, {
                                 userId: p,
                                 size: "wide"
-                            }))))), l.createElement(dg.Z, {
+                            }))))), l.createElement(pg.Z, {
                                 tabId: "2"
                             }, l.createElement("div", null, l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement("small", null, c))), l.createElement("br", null), l.createElement("h6", null, " Steam Agreement Info"), y && l.createElement(ki.Z, null, l.createElement(Ke.Z, {
                                 xs: "4"
@@ -29149,9 +29155,9 @@
                                 name: "thumbs-up"
                             }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, i)), l.createElement("pre", null, l.createElement("code", null, a))), !o && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", c), l.createElement("br", null), l.createElement("div", null, "Are you sure you want to fail this Steam transaction? Doing so will enable the user to make new purchases."), l.createElement("br", null), l.createElement(Mi.Z, {
                                 onClick: this.deleteSubscription(c)
-                            }, "Confirm Chargeback Clear"))))))), l.createElement(dg.Z, {
+                            }, "Confirm Chargeback Clear"))))))), l.createElement(pg.Z, {
                                 tabId: "3"
-                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(fg.Z, {
+                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(mg.Z, {
                                 borderless: !0,
                                 striped: !0,
                                 size: "sm"
@@ -29166,7 +29172,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const hg = Q((function(e) {
+                const gg = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         error: e.user.transactions.error,
@@ -29175,8 +29181,8 @@
                         updateError: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(mg);
-                const yg = function(e) {
+                }))(yg);
+                const vg = function(e) {
                     var t, n, r = e.transaction,
                         a = Jt((0, l.useState)("1"), 2),
                         o = a[0],
@@ -29201,16 +29207,16 @@
                         style: {
                             width: "18rem"
                         }
-                    }, l.createElement(ig.Z, {
+                    }, l.createElement(lg.Z, {
                         top: !0,
                         className: "ml-3 oculus-img",
                         src: "https://s3.amazonaws.com/assets.vrchat.com/misc/oculus-logo.png"
                     }), l.createElement(gu.Z, {
                         className: "p-3"
-                    }, l.createElement(sg.Z, {
+                    }, l.createElement(cg.Z, {
                         className: "mb-3",
                         tabs: !0
-                    }, l.createElement(lg.Z, null, l.createElement(cg.Z, {
+                    }, l.createElement(ug.Z, null, l.createElement(dg.Z, {
                         className: Ei({
                             active: "1" === o
                         }),
@@ -29221,9 +29227,9 @@
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Occurred"), l.createElement("hr", null), "This subscription is prematurely expired. Please grant the user an Admin sub through ", s(ur()(n)), " while Oculus resolves the issue."), l.createElement(ug.Z, {
+                    }, " An Error Occurred"), l.createElement("hr", null), "This subscription is prematurely expired. Please grant the user an Admin sub through ", s(ur()(n)), " while Oculus resolves the issue."), l.createElement(fg.Z, {
                         activeTab: o
-                    }, l.createElement(dg.Z, {
+                    }, l.createElement(pg.Z, {
                         tabId: "1"
                     }, l.createElement("h6", null, " ", d && l.createElement(ut(), {
                         name: "gift"
@@ -29234,7 +29240,7 @@
                     }, l.createElement("br", null), l.createElement("h5", null, " Gift Recipient "), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(Ic, {
                         userId: f,
                         size: "wide"
-                    }))))), l.createElement(dg.Z, {
+                    }))))), l.createElement(pg.Z, {
                         tabId: "2"
                     }, l.createElement("div", null, l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement("small", null, c))), l.createElement("br", null), l.createElement("h6", null, " Oculus Info"), l.createElement(ki.Z, null, l.createElement(Ke.Z, {
                         xs: "4"
@@ -29250,9 +29256,9 @@
                         xs: "4"
                     }, "Ends"), l.createElement(Ke.Z, null, s(m.period_end_time))), l.createElement(ki.Z, null, l.createElement(Ke.Z, {
                         xs: "4"
-                    }, "Canceled"), l.createElement(Ke.Z, null, s(m.period_start_time))))), l.createElement(dg.Z, {
+                    }, "Canceled"), l.createElement(Ke.Z, null, s(m.period_start_time))))), l.createElement(pg.Z, {
                         tabId: "3"
-                    }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), h && l.createElement(fg.Z, {
+                    }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), h && l.createElement(mg.Z, {
                         borderless: !0,
                         striped: !0,
                         size: "sm"
@@ -29269,7 +29275,7 @@
                         }(e, t)
                     }))))))))))
                 };
-                const gg = function(e) {
+                const _g = function(e) {
                     var t = e.transaction,
                         n = Jt((0, l.useState)("1"), 2),
                         r = n[0],
@@ -29282,30 +29288,30 @@
                         style: {
                             width: "18rem"
                         }
-                    }, l.createElement(ig.Z, {
+                    }, l.createElement(lg.Z, {
                         top: !0,
                         className: "ml-3 vrchat-img",
                         src: "https://s3.amazonaws.com/assets.vrchat.com/www/brand/vrchat-logo-white-transparent-background.png"
                     }), l.createElement(gu.Z, {
                         className: "p-3"
-                    }, l.createElement(sg.Z, {
+                    }, l.createElement(cg.Z, {
                         className: "mb-3",
                         tabs: !0
-                    }, l.createElement(lg.Z, null, l.createElement(cg.Z, {
+                    }, l.createElement(ug.Z, null, l.createElement(dg.Z, {
                         className: Ei({
                             active: "1" === r
                         }),
                         onClick: function() {
                             return a("1")
                         }
-                    }, "Subscription"))), l.createElement(ug.Z, {
+                    }, "Subscription"))), l.createElement(fg.Z, {
                         activeTab: r
-                    }, l.createElement(dg.Z, {
+                    }, l.createElement(pg.Z, {
                         tabId: "1"
                     }, l.createElement("h6", null, " ", i.description), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, "Period:"), l.createElement(Ke.Z, null, i.period)), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, "Price:"), l.createElement(Ke.Z, null, "$ ", i.amount / 100, " USD")), l.createElement("br", null), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, "Expires:"), l.createElement(Ke.Z, null, ur()(o).fromNow())))))))
                 };
 
-                function vg(e) {
+                function bg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29325,9 +29331,9 @@
                         return $e(this, n)
                     }
                 }
-                var _g = function(e) {
+                var Eg = function(e) {
                     Ve(n, e);
-                    var t = vg(n);
+                    var t = bg(n);
 
                     function n(e) {
                         var r;
@@ -29398,14 +29404,14 @@
                             })), p && l.createElement("div", null, "there has been an error loading the Oculus transactions= ", s), i && l.createElement("div", null, "there has been an error loading the subscription info: ", i), l.createElement(ki.Z, null, l.createElement("h4", null, "Recurring Subs")), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, 0 === f.length && !u && 0 === (null == a ? void 0 : a.length) && l.createElement("div", null, "None ._."), a && a.map((function(e, t) {
-                                return l.createElement(gg, {
+                                return l.createElement(_g, {
                                     transaction: e,
                                     key: "recur-card-".concat(t)
                                 })
                             })), f.map((function(e, t) {
-                                return e.oculus ? l.createElement(yg, {
+                                return e.oculus ? l.createElement(vg, {
                                     transaction: e
-                                }) : l.createElement(hg, {
+                                }) : l.createElement(gg, {
                                     transaction: e,
                                     index: t,
                                     key: "recur-card-".concat(t)
@@ -29417,9 +29423,9 @@
                             }))), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, d.map((function(e, t) {
-                                return e.oculus ? l.createElement(yg, {
+                                return e.oculus ? l.createElement(vg, {
                                     transaction: e
-                                }) : l.createElement(hg, {
+                                }) : l.createElement(gg, {
                                     transaction: e,
                                     index: t,
                                     key: "gift-card-".concat(t)
@@ -29439,8 +29445,8 @@
                         statusCode: e.user.transactions.statusCode,
                         loading: e.user.transactions.loading
                     }
-                }))(_g);
-                var bg = function(e) {
+                }))(Eg);
+                var wg = function(e) {
                         var t = e.userId;
                         return {
                             type: "ADMIN_LOAD_MODERATIONS",
@@ -29450,7 +29456,7 @@
                             }
                         }
                     },
-                    Eg = function(e) {
+                    kg = function(e) {
                         var t = e.userId,
                             n = e.moderationId;
                         return {
@@ -29459,7 +29465,7 @@
                         }
                     };
 
-                function wg(e) {
+                function Mg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29479,16 +29485,16 @@
                         return $e(this, n)
                     }
                 }
-                var kg = {
+                var Sg = {
                         Admin: ["hour", "day", "week", "month", "year"],
                         Steam: ["day", "week", "month", "year"]
                     },
-                    Mg = ["Admin", "Steam"],
-                    Sg = ["Admin", "Steam"],
-                    Lg = ["Oculus", "Steam"],
-                    xg = function(e) {
+                    Lg = ["Admin", "Steam"],
+                    xg = ["Admin", "Steam"],
+                    Og = ["Oculus", "Steam"],
+                    Tg = function(e) {
                         Ve(c, e);
-                        var t, n, r, a, i = wg(c);
+                        var t, n, r, a, i = Mg(c);
 
                         function c(e) {
                             var t;
@@ -29592,8 +29598,8 @@
                                     n = e.complete,
                                     r = e.statusCode,
                                     a = e.error,
-                                    o = kg[this.state.transactionType],
-                                    i = Lg.includes(this.props.transactionType) && this.props.isGift,
+                                    o = Sg[this.state.transactionType],
+                                    i = Og.includes(this.props.transactionType) && this.props.isGift,
                                     s = "Admin" === this.props.transactionType ? "Remove Subscription" : "Cancel Subscription";
                                 i && (s = "Delete Gift Subscription");
                                 var c = "" !== this.state.timespan && "" !== this.state.transactionId;
@@ -29602,20 +29608,20 @@
                                         name: "1yyg8et",
                                         styles: ".modal-button{max-width:13em;margin-top:0.5em;}button{width:100%;}"
                                     })
-                                }, this.state.isActive && Mg.includes(this.state.transactionType) && l.createElement(xc, {
+                                }, this.state.isActive && Lg.includes(this.state.transactionType) && l.createElement(xc, {
                                     className: "modal-button",
                                     icon: "far fa-clock",
                                     title: "Add Time To Subscription",
                                     clearModal: this.clearAddSubModal
                                 }, n && l.createElement("div", null, "Time Successfully Added ", l.createElement(ut(), {
                                     name: "thumbs-up"
-                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(Hy, {
+                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(By, {
                                     timeOptions: o,
                                     onChange: this.changeTimespan
                                 }), l.createElement("br", null), l.createElement(Mi.Z, {
                                     onClick: this.addTime,
                                     disabled: !c
-                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && (Sg.includes(this.props.transactionType) || i) && l.createElement(xc, {
+                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && (xg.includes(this.props.transactionType) || i) && l.createElement(xc, {
                                     className: "modal-button",
                                     icon: "far fa-times",
                                     title: s,
@@ -29629,7 +29635,7 @@
                             }
                         }]), c
                     }(l.Component);
-                const Og = Q((function(e) {
+                const Dg = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions,
@@ -29637,9 +29643,9 @@
                         error: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(xg);
+                }))(Tg);
 
-                function Tg(e) {
+                function Cg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29659,9 +29665,9 @@
                         return $e(this, n)
                     }
                 }
-                var Dg = function(e) {
+                var Ng = function(e) {
                     Ve(r, e);
-                    var t, n = Tg(r);
+                    var t, n = Cg(r);
 
                     function r(e) {
                         var t;
@@ -29723,7 +29729,7 @@
                                     name: i ? "check" : "times"
                                 }), " ", i ? "Active" : "Inactive")), l.createElement(Ke.Z, {
                                     xs: "3"
-                                }, l.createElement(Og, {
+                                }, l.createElement(Dg, {
                                     transactionId: r,
                                     transactionType: n,
                                     active: i,
@@ -29763,9 +29769,9 @@
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions
                     }
-                }))(Dg);
+                }))(Ng);
 
-                function Cg(e, t) {
+                function Ag(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -29776,19 +29782,19 @@
                     return n
                 }
 
-                function Ng(e) {
+                function Pg(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? Cg(Object(n), !0).forEach((function(t) {
+                        t % 2 ? Ag(Object(n), !0).forEach((function(t) {
                             (0, Et.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Cg(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ag(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
 
-                function Ag(e) {
+                function Ig(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29810,7 +29816,7 @@
                 }
                 l.Component;
 
-                function Pg(e, t) {
+                function Rg(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -29821,18 +29827,18 @@
                     return n
                 }
 
-                function Ig(e) {
+                function jg(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? Pg(Object(n), !0).forEach((function(t) {
+                        t % 2 ? Rg(Object(n), !0).forEach((function(t) {
                             (0, Et.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Pg(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Rg(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                var Rg = (0, ua.debounce)((function(e, t, n, r) {
+                var Yg = (0, ua.debounce)((function(e, t, n, r) {
                     Ye().get(window.apiUrl("/api/1/auth/exists?username=".concat(encodeURIComponent(e), "&displayName=").concat(encodeURIComponent(t), "&excludeUserId=").concat(n))).then((function(e) {
                         r(e.data.userExists)
                     }))
@@ -29840,7 +29846,7 @@
                     leading: !1,
                     trailing: !0
                 });
-                const jg = function() {
+                const Zg = function() {
                     var e = se((function(e) {
                             return e.user.databaseUser
                         })),
@@ -29868,11 +29874,11 @@
                         u = i[1],
                         d = re();
                     l.useEffect((function() {
-                        a(Ig(Ig({}, r), {}, {
+                        a(jg(jg({}, r), {}, {
                             displayName: e.displayName
                         }))
                     }), [e.displayName]), l.useEffect((function() {
-                        u(Ig(Ig({}, c), {}, {
+                        u(jg(jg({}, c), {}, {
                             username: e.username
                         }))
                     }), [e.username]);
@@ -29892,7 +29898,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            a(Ig(Ig({}, r), {}, {
+                                            a(jg(jg({}, r), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -29934,7 +29940,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            u(Ig(Ig({}, c), {}, {
+                                            u(jg(jg({}, c), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -29985,10 +29991,10 @@
                                 ready: !1
                             });
                             var i = il(fl(o));
-                            Rg(i, i, e.id, (function(e) {
+                            Yg(i, i, e.id, (function(e) {
                                 var t = Eu(o),
                                     n = !e;
-                                a(Ig(Ig({}, r), {}, {
+                                a(jg(jg({}, r), {}, {
                                     displayName: i,
                                     available: !e,
                                     error: t,
@@ -30016,7 +30022,7 @@
                         defaultChecked: r.lock,
                         onChange: function(e) {
                             var t = e.target.checked;
-                            a(Ig(Ig({}, r), {}, {
+                            a(jg(jg({}, r), {}, {
                                 lock: t
                             }))
                         }
@@ -30074,10 +30080,10 @@
                                 ready: !1
                             });
                             var o = il(fl(a));
-                            Rg(o, r.displayName, e.id, (function(e) {
+                            Yg(o, r.displayName, e.id, (function(e) {
                                 var t = Eu(a),
                                     n = !e;
-                                u(Ig(Ig({}, c), {}, {
+                                u(jg(jg({}, c), {}, {
                                     username: o,
                                     available: !e,
                                     error: t,
@@ -30121,7 +30127,7 @@
                     })))))
                 };
 
-                function Yg(e) {
+                function Ug(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30141,14 +30147,14 @@
                         return $e(this, n)
                     }
                 }
-                var Zg = (0, ua.debounce)((function(e, t, n) {
+                var Fg = (0, ua.debounce)((function(e, t, n) {
                         Ye().get(window.apiUrl("/api/1/auth/exists?email=".concat(encodeURIComponent(e), "&excludeUserId=").concat(t))).then((function(e) {
                             n(e.data.userExists)
                         }))
                     }), 1e3),
-                    Ug = function(e) {
+                    zg = function(e) {
                         Ve(n, e);
-                        var t = Yg(n);
+                        var t = Ug(n);
 
                         function n(e) {
                             var r;
@@ -30173,7 +30179,7 @@
                                     emailTaken: null,
                                     emailError: !1,
                                     ready: !1
-                                }), Zg(n, this.props.user.id, (function(e) {
+                                }), Fg(n, this.props.user.id, (function(e) {
                                     var r = gs().isEmail(n) && !ws(n),
                                         a = (null == n || "" === n || !r) && "That's an invalid email";
                                     t.setState({
@@ -30339,14 +30345,14 @@
                             }
                         }]), n
                     }(l.Component);
-                const Fg = Q((function(e) {
+                const Hg = Q((function(e) {
                     return {
                         email: e.user.email,
                         user: e.user.databaseUser
                     }
-                }))(Ug);
+                }))(zg);
 
-                function zg(e) {
+                function Wg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30368,7 +30374,7 @@
                 }
                 l.Component;
 
-                function Hg(e) {
+                function Bg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30388,9 +30394,9 @@
                         return $e(this, n)
                     }
                 }
-                var Wg = function(e) {
+                var Vg = function(e) {
                     Ve(n, e);
-                    var t = Hg(n);
+                    var t = Bg(n);
 
                     function n(e) {
                         var r;
@@ -30416,7 +30422,7 @@
                             this.props.dispatch(Ar({
                                 userId: this.props.user.id,
                                 message: this.state.message
-                            })), Jy()(500).then((function() {
+                            })), Qy()(500).then((function() {
                                 t.props.dispatch(me("/home/user/".concat(t.props.user.id)))
                             })), e.preventDefault()
                         }
@@ -30472,20 +30478,20 @@
                         }
                     }]), n
                 }(l.Component);
-                const Bg = Q((function(e) {
+                const Gg = Q((function(e) {
                     return {
                         isMod: e.currentUser.isMod,
                         user: e.user.databaseUser
                     }
-                }))(Wg);
-                var Vg = function(e) {
+                }))(Vg);
+                var $g = function(e) {
                     var t = re();
                     return {
                         activeModerations: se((function(e) {
                             return e.moderation.activeModerations
                         })) || [],
                         fetchModerations: l.useCallback((function() {
-                            t(bg({
+                            t(wg({
                                 userId: e
                             }))
                         }), [e]),
@@ -30494,12 +30500,12 @@
                                 return s().wrap((function(n) {
                                     for (;;) switch (n.prev = n.next) {
                                         case 0:
-                                            return n.next = 2, t(Eg({
+                                            return n.next = 2, t(kg({
                                                 userId: e,
                                                 moderationId: r
                                             }));
                                         case 2:
-                                            return n.next = 4, t(bg({
+                                            return n.next = 4, t(wg({
                                                 userId: e
                                             }));
                                         case 4:
@@ -30550,7 +30556,7 @@
                     name: "zjik7",
                     styles: "display:flex"
                 });
-                var Gg = {
+                var qg = {
                         hardban: "red",
                         ban: "red",
                         banpubliconly: "red",
@@ -30559,7 +30565,7 @@
                         warn: "yellow",
                         hardNotice: "yellow"
                     },
-                    $g = {
+                    Jg = {
                         hardban: "ban",
                         ban: "ban",
                         banpubliconly: "ban",
@@ -30568,32 +30574,32 @@
                         warn: "exclamation-circle",
                         hardNotice: "exclamation"
                     };
-                const qg = function(e) {
+                const Kg = function(e) {
                     var t = e.moderation,
                         n = e.deleteModeration,
                         r = t.active && ur()(t.expires).isAfter(ur()()) || t.isPermanent;
-                    return l.createElement(Kg, {
+                    return l.createElement(Xg, {
                         key: t.id,
                         className: "w-100 mb-1"
                     }, l.createElement(Hl.Z, {
                         className: "w-100"
-                    }, l.createElement(ev, {
-                        color: Gg[t.type],
+                    }, l.createElement(nv, {
+                        color: qg[t.type],
                         active: r
                     }), l.createElement(gu.Z, {
                         className: "p-2 pl-3 d-flex align-items-center"
-                    }, l.createElement(Kg, {
+                    }, l.createElement(Xg, {
                         className: Ei("flex-grow-1", r && "pr-5")
-                    }, l.createElement(Jg, {
+                    }, l.createElement(Qg, {
                         className: "flex-grow-1"
-                    }, l.createElement(Kg, {
+                    }, l.createElement(Xg, {
                         className: "w-100 justify-content-between"
-                    }, l.createElement(Kg, {
+                    }, l.createElement(Xg, {
                         className: "align-items-center"
                     }, l.createElement(ut(), {
-                        name: $g[t.type],
+                        name: Jg[t.type],
                         className: "pr-2"
-                    }), l.createElement("div", null, (0, ua.startCase)(t.type)), l.createElement(Qg, {
+                    }), l.createElement("div", null, (0, ua.startCase)(t.type)), l.createElement(ev, {
                         name: r ? "check" : "clock-o",
                         active: r,
                         className: "pl-2 pr-3",
@@ -30601,7 +30607,7 @@
                     }), l.createElement("div", null, "by"), l.createElement(it, {
                         to: "/home/user/".concat(t.moderatorUserId),
                         className: "mx-1"
-                    }, t.moderatorDisplayName)), l.createElement(Kg, {
+                    }, t.moderatorDisplayName)), l.createElement(Xg, {
                         className: "align-items-center"
                     }, l.createElement("div", {
                         title: ur().utc(t.created).format("ddd, MMM DD YYYY, hh:mm:ss a"),
@@ -30609,14 +30615,14 @@
                     }, ur().utc(t.created).format("MMM DD YYYY"), " -"), t.isPermanent ? l.createElement("div", null, "Forever") : l.createElement("div", {
                         title: ur().utc(t.expires).format("ddd, MMM DD YYYY, hh:mm:ss a"),
                         className: "pr-2"
-                    }, ur().utc(t.expires).format("MMM DD YYYY")))), "N/A" !== t.reason && l.createElement(Kg, {
+                    }, ur().utc(t.expires).format("MMM DD YYYY")))), "N/A" !== t.reason && l.createElement(Xg, {
                         className: "align-items-center mt-1"
-                    }, l.createElement(Kg, {
-                        className: "mr-2 align-items-center"
                     }, l.createElement(Xg, {
+                        className: "mr-2 align-items-center"
+                    }, l.createElement(tv, {
                         name: "info-circle",
                         className: "pr-2"
-                    }), l.createElement("div", null, "Reason:")), l.createElement(tv, null, t.reason))), r && l.createElement(nv, {
+                    }), l.createElement("div", null, "Reason:")), l.createElement(rv, null, t.reason))), r && l.createElement(av, {
                         onClick: function() {
                             return n(t.id)
                         },
@@ -30625,51 +30631,51 @@
                         name: "times"
                     }))))))
                 };
-                var Jg = fm("div", {
+                var Qg = fm("div", {
                         target: "exts1av6"
                     })({
                         name: "1fttcpj",
                         styles: "display:flex;flex-direction:column"
                     }),
-                    Kg = fm("div", {
+                    Xg = fm("div", {
                         target: "exts1av5"
                     })({
                         name: "zjik7",
                         styles: "display:flex"
                     }),
-                    Qg = fm(ut(), {
+                    ev = fm(ut(), {
                         target: "exts1av4"
                     })("color:var(--", (function(e) {
                         return e.active ? "success" : "gray"
                     }), ");"),
-                    Xg = fm(ut(), {
+                    tv = fm(ut(), {
                         target: "exts1av3"
                     })({
                         name: "1e7xyj5",
                         styles: "color:var(--gray)"
                     }),
-                    ev = fm("div", {
+                    nv = fm("div", {
                         target: "exts1av2"
                     })("position:absolute;left:0;top:0;width:4px;height:100%;background-color:var(--", (function(e) {
                         return e.color
                     }), ");opacity:", (function(e) {
                         return e.active ? 1 : .5
                     }), ";border-top-left-radius:4px;border-bottom-left-radius:4px;"),
-                    tv = fm("div", {
+                    rv = fm("div", {
                         target: "exts1av1"
                     })({
                         name: "1u7pwvo",
                         styles: "font-size:0.9rem"
                     }),
-                    nv = fm("button", {
+                    av = fm("button", {
                         target: "exts1av0"
                     })({
                         name: "j7l6bz",
                         styles: "display:flex;align-items:center;justify-content:center;position:absolute;right:0;top:0;width:40px;height:100%;border:none;color:white;border-top-right-radius:4px;border-bottom-right-radius:4px;background-color:var(--secondary);transition:background-color 0.2s ease-in-out;outline:none!important;&:hover{background-color:var(--red);}&:active{background-color:var(--dark);}"
                     }),
-                    rv = l.memo((function(e) {
+                    ov = l.memo((function(e) {
                         var t = e.userId,
-                            n = Vg(t),
+                            n = $g(t),
                             r = n.activeModerations,
                             a = r.list,
                             o = r.loading,
@@ -30730,16 +30736,16 @@
                             },
                             className: "mb-2"
                         }), m && E.map((function(e) {
-                            return l.createElement(qg, {
+                            return l.createElement(Kg, {
                                 moderation: e,
                                 key: e.id,
                                 deleteModeration: b
                             })
                         }))))
                     }));
-                rv.displayName = "CurrentModerations";
+                ov.displayName = "CurrentModerations";
 
-                function av(e) {
+                function iv(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30759,9 +30765,9 @@
                         return $e(this, n)
                     }
                 }
-                var ov = function(e) {
+                var sv = function(e) {
                     Ve(u, e);
-                    var t, n, r, a, i, c = av(u);
+                    var t, n, r, a, i, c = iv(u);
 
                     function u(e) {
                         var t;
@@ -30769,7 +30775,7 @@
                             unmoderating: !1,
                             unfriending: !1,
                             favoriteGroups: e.favoriteGroups || []
-                        }, t.editUser = t.editUser.bind((0, We.Z)(t)), t.moderateUser = t.moderateUser.bind((0, We.Z)(t)), t.messageUser = t.messageUser.bind((0, We.Z)(t)), t.unmoderateUser = t.unmoderateUser.bind((0, We.Z)(t)), t.confirmUnmoderateUser = t.confirmUnmoderateUser.bind((0, We.Z)(t)), t.cancelUnmoderateUser = t.cancelUnmoderateUser.bind((0, We.Z)(t)), t.friendUser = t.friendUser.bind((0, We.Z)(t)), t.cancelFriendRequest = t.cancelFriendRequest.bind((0, We.Z)(t)), t.unfriendUser = t.unfriendUser.bind((0, We.Z)(t)), t.confirmUnfriendUser = t.confirmUnfriendUser.bind((0, We.Z)(t)), t.cancelUnfriendUser = t.cancelUnfriendUser.bind((0, We.Z)(t)), t.loadMoreAliases = t.loadMoreAliases.bind((0, We.Z)(t)), t.handleCancelAccountDeletion = t.handleCancelAccountDeletion.bind((0, We.Z)(t)), t.resetUserHome = t.resetUserHome.bind((0, We.Z)(t)), t.confirmResetUserHome = t.confirmResetUserHome.bind((0, We.Z)(t)), t.cancelResetUserHome = t.cancelResetUserHome.bind((0, We.Z)(t)), t.resetUserAvatar = t.resetUserAvatar.bind((0, We.Z)(t)), t.confirmResetUserAvatar = t.confirmResetUserAvatar.bind((0, We.Z)(t)), t.cancelResetUserAvatar = t.cancelResetUserAvatar.bind((0, We.Z)(t)), t.resetUserProfile = t.resetUserProfile.bind((0, We.Z)(t)), t.confirmResetUserProfile = t.confirmResetUserProfile.bind((0, We.Z)(t)), t.cancelResetUserProfile = t.cancelResetUserProfile.bind((0, We.Z)(t)), t.refreshUser = t.refreshUser.bind((0, We.Z)(t)), t.handleTagDelete = t.handleTagDelete.bind((0, We.Z)(t)), t.handleTagAdd = t.handleTagAdd.bind((0, We.Z)(t)), t.confirmForceLogout = t.confirmForceLogout.bind((0, We.Z)(t)), t.forceLogout = t.forceLogout.bind((0, We.Z)(t)), t.removeUser2fa = t.removeUser2fa.bind((0, We.Z)(t)), t.confirmRemove2fa = t.confirmRemove2fa.bind((0, We.Z)(t)), t.cancelRemove2fa = t.cancelRemove2fa.bind((0, We.Z)(t)), t.dispatchPrivateAllAvatars = t.dispatchPrivateAllAvatars.bind((0, We.Z)(t)), t.dispatchHideAllAvatars = t.dispatchHideAllAvatars.bind((0, We.Z)(t)), t.dispatchPrivateAllWorlds = t.dispatchPrivateAllWorlds.bind((0, We.Z)(t)), t.dispatchHideAllWorlds = t.dispatchHideAllWorlds.bind((0, We.Z)(t)), t
+                        }, t.editUser = t.editUser.bind((0, We.Z)(t)), t.moderateUser = t.moderateUser.bind((0, We.Z)(t)), t.messageUser = t.messageUser.bind((0, We.Z)(t)), t.unmoderateUser = t.unmoderateUser.bind((0, We.Z)(t)), t.confirmUnmoderateUser = t.confirmUnmoderateUser.bind((0, We.Z)(t)), t.cancelUnmoderateUser = t.cancelUnmoderateUser.bind((0, We.Z)(t)), t.friendUser = t.friendUser.bind((0, We.Z)(t)), t.cancelFriendRequest = t.cancelFriendRequest.bind((0, We.Z)(t)), t.unfriendUser = t.unfriendUser.bind((0, We.Z)(t)), t.confirmUnfriendUser = t.confirmUnfriendUser.bind((0, We.Z)(t)), t.cancelUnfriendUser = t.cancelUnfriendUser.bind((0, We.Z)(t)), t.loadMoreAliases = t.loadMoreAliases.bind((0, We.Z)(t)), t.handleCancelAccountDeletion = t.handleCancelAccountDeletion.bind((0, We.Z)(t)), t.resetUserHome = t.resetUserHome.bind((0, We.Z)(t)), t.confirmResetUserHome = t.confirmResetUserHome.bind((0, We.Z)(t)), t.cancelResetUserHome = t.cancelResetUserHome.bind((0, We.Z)(t)), t.resetUserAvatar = t.resetUserAvatar.bind((0, We.Z)(t)), t.confirmResetUserAvatar = t.confirmResetUserAvatar.bind((0, We.Z)(t)), t.cancelResetUserAvatar = t.cancelResetUserAvatar.bind((0, We.Z)(t)), t.resetUserProfile = t.resetUserProfile.bind((0, We.Z)(t)), t.confirmResetUserProfile = t.confirmResetUserProfile.bind((0, We.Z)(t)), t.cancelResetUserProfile = t.cancelResetUserProfile.bind((0, We.Z)(t)), t.refreshUser = t.refreshUser.bind((0, We.Z)(t)), t.handleTagDelete = t.handleTagDelete.bind((0, We.Z)(t)), t.handleTagAdd = t.handleTagAdd.bind((0, We.Z)(t)), t.confirmForceLogout = t.confirmForceLogout.bind((0, We.Z)(t)), t.forceLogout = t.forceLogout.bind((0, We.Z)(t)), t.removeUser2fa = t.removeUser2fa.bind((0, We.Z)(t)), t.confirmRemove2fa = t.confirmRemove2fa.bind((0, We.Z)(t)), t.cancelRemove2fa = t.cancelRemove2fa.bind((0, We.Z)(t)), t.flagCaptcha = t.flagCaptcha.bind((0, We.Z)(t)), t.unflagCaptcha = t.unflagCaptcha.bind((0, We.Z)(t)), t.dispatchPrivateAllAvatars = t.dispatchPrivateAllAvatars.bind((0, We.Z)(t)), t.dispatchHideAllAvatars = t.dispatchHideAllAvatars.bind((0, We.Z)(t)), t.dispatchPrivateAllWorlds = t.dispatchPrivateAllWorlds.bind((0, We.Z)(t)), t.dispatchHideAllWorlds = t.dispatchHideAllWorlds.bind((0, We.Z)(t)), t
                     }
                     return He(u, [{
                         key: "componentDidMount",
@@ -30830,7 +30836,7 @@
                                 type: "CLEAR_MODERATIONS",
                                 payload: Ye().delete(window.apiUrl("/api/1/user/".concat(n, "/moderations")))
                             })).then((function() {
-                                r.props.dispatch(bg({
+                                r.props.dispatch(wg({
                                     userId: r.props.userId
                                 })), r.setState({
                                     unmoderating: !1
@@ -31196,6 +31202,27 @@
                             }))
                         }
                     }, {
+                        key: "flagCaptcha",
+                        value: function() {
+                            this.props.dispatch(function(e) {
+                                var t = e.userId;
+                                return {
+                                    type: "CAPTCHA_FLAG_USER",
+                                    payload: Ye().put(window.apiUrl("/api/1/captcha/flag/".concat(t)))
+                                }
+                            }({
+                                userId: this.props.userId
+                            }))
+                        }
+                    }, {
+                        key: "unflagCaptcha",
+                        value: function() {
+                            this.props.dispatch(Ir({
+                                userId: this.props.userId,
+                                tagList: "admin_no_captcha"
+                            }))
+                        }
+                    }, {
                         key: "render",
                         value: function() {
                             var e = this,
@@ -31234,7 +31261,7 @@
                                 cancelLink: this.cancelUnfriendUser
                             }), !1, l.createElement(le.Route, {
                                 path: "/home/user/:userId/message",
-                                component: Bg
+                                component: Gg
                             }), !1, l.createElement(ki.Z, {
                                 className: "mb-4"
                             }, l.createElement(Ke.Z, {
@@ -31301,6 +31328,16 @@
                                         onClick: function() {
                                             return e.confirmForceLogout(!0)
                                         }
+                                    }), l.createElement(Uy, {
+                                        visible: n,
+                                        onClick: function() {
+                                            return e.flagCaptcha()
+                                        }
+                                    }), l.createElement(Fy, {
+                                        visible: n,
+                                        onClick: function() {
+                                            return e.unflagCaptcha()
+                                        }
                                     }), l.createElement($l, {
                                         visible: !n && !a && !r,
                                         showText: !0,
@@ -31329,7 +31366,7 @@
                         }
                     }]), u
                 }(l.Component);
-                const iv = (0, le.withRouter)(Q((function(e, t) {
+                const lv = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         userId: t.match.params.userId,
                         path: e.router.location.pathname,
@@ -31355,9 +31392,9 @@
                         worldInfo: e.user.worldInfo,
                         isLoaded: e.user.isLoaded
                     }
-                }))(ov));
+                }))(sv));
 
-                function sv(e) {
+                function cv(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31377,9 +31414,9 @@
                         return $e(this, n)
                     }
                 }
-                var lv = function(e) {
+                var uv = function(e) {
                     Ve(n, e);
-                    var t = sv(n);
+                    var t = cv(n);
 
                     function n(e) {
                         var r;
@@ -31512,7 +31549,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const cv = (0, le.withRouter)(Q((function(e, t) {
+                const dv = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         avatarId: t.match.params.avatarId,
                         avatarError: e.avatar.errorMessage,
@@ -31523,8 +31560,8 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         loadingAvatar: e.avatar.loadingAvatar
                     }
-                }))(lv));
-                var uv = function(e) {
+                }))(uv));
+                var fv = function(e) {
                         var t = e.sellerId,
                             n = e.n,
                             r = void 0 === n ? 100 : n,
@@ -31538,12 +31575,12 @@
                             })
                         }
                     },
-                    dv = n(82669),
-                    fv = n(16792),
-                    pv = n(70474),
-                    mv = ["seconds", "minutes", "hours", "days", "months", "years", "forevers"];
+                    pv = n(82669),
+                    mv = n(16792),
+                    hv = n(70474),
+                    yv = ["seconds", "minutes", "hours", "days", "months", "years", "forevers"];
 
-                function hv(e) {
+                function gv(e) {
                     var t = e.addProduct,
                         n = e.disableForm,
                         r = Jt((0, l.useState)(""), 2),
@@ -31602,7 +31639,7 @@
                         disabled: n
                     }, l.createElement("fieldset", {
                         disabled: !0
-                    }, l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "fileImage"
                     }, "Product Image"), l.createElement(Zd.Z, {
                         type: "file",
@@ -31611,11 +31648,11 @@
                         onChange: function(e) {
                             return o(e.target.value)
                         }
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: "muted"
-                    }, "image uploads are not yet supported")), l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, "image uploads are not yet supported")), l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "fileImage"
-                    }, "Store/Collection"), l.createElement(fv.Z, null, "Select which store(s) this item belongs in?"), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(Zd.Z, {
+                    }, "Store/Collection"), l.createElement(mv.Z, null, "Select which store(s) this item belongs in?"), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(Zd.Z, {
                         type: "text",
                         name: "newStore",
                         value: s,
@@ -31623,7 +31660,7 @@
                         onChange: function(e) {
                             return c(e.target.value)
                         }
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: "muted"
                     }, "Create New")), l.createElement(Ke.Z, null, l.createElement(Zd.Z, {
                         type: "select",
@@ -31633,11 +31670,11 @@
                         onChange: function(e) {
                             return c(e.target.value)
                         }
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: "muted"
                     }, "Select Existing"))))), l.createElement(ki.Z, null, l.createElement(Ke.Z, {
                         xs: "9"
-                    }, l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "udonName"
                     }, "Udon Name"), l.createElement(Zd.Z, {
                         size: "8",
@@ -31651,13 +31688,13 @@
                         },
                         required: !0,
                         invalid: !b
-                    }), l.createElement(pv.Z, {
+                    }), l.createElement(hv.Z, {
                         invalid: !0
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: b ? "muted" : "danger"
                     }, "A unique name between 1 and max 64 characters: ", g.length, "/64"))), l.createElement(Ke.Z, {
                         xs: "3"
-                    }, l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "priceTokens"
                     }, "Price"), l.createElement(Zd.Z, {
                         size: "4",
@@ -31669,11 +31706,11 @@
                             return t = e.target.value, B(t, "priceTokens"), void f(t);
                             var t
                         }
-                    }), l.createElement(pv.Z, {
+                    }), l.createElement(hv.Z, {
                         invalid: !0
-                    }, "Must be a positive number."), l.createElement(fv.Z, {
+                    }, "Must be a positive number."), l.createElement(mv.Z, {
                         color: m ? "muted" : "danger"
-                    }, "Price of this item in tokens")))), l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, "Price of this item in tokens")))), l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "displayName"
                     }, "Display Name"), l.createElement(Zd.Z, {
                         type: "text",
@@ -31685,11 +31722,11 @@
                             return t = e.target.value, B(t, "displayName"), void M(t);
                             var t
                         }
-                    }), l.createElement(pv.Z, {
+                    }), l.createElement(hv.Z, {
                         invalid: !0
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: L ? "muted" : "danger"
-                    }, k.length, "/64")), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, k.length, "/64")), l.createElement(ki.Z, null, l.createElement(Ke.Z, null, l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "duration"
                     }, "Duration"), l.createElement(Zd.Z, {
                         type: "text",
@@ -31702,11 +31739,11 @@
                             return t = e.target.value, B(t, "duration"), void R(t);
                             var t
                         }
-                    }), l.createElement(pv.Z, {
+                    }), l.createElement(hv.Z, {
                         invalid: !0
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: Y ? "muted" : "danger"
-                    }, "Must be a positive number"))), l.createElement(Ke.Z, null, l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    }, "Must be a positive number"))), l.createElement(Ke.Z, null, l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "durationType"
                     }, "Duration Type"), l.createElement(Zd.Z, {
                         type: "select",
@@ -31716,11 +31753,11 @@
                         onChange: function(e) {
                             return z(e.target.value)
                         }
-                    }, mv.map((function(e, t) {
+                    }, yv.map((function(e, t) {
                         return l.createElement("option", {
                             key: "durationType-".concat(t)
                         }, e)
-                    })))))), l.createElement(dv.Z, null, l.createElement(Zh.Z, {
+                    })))))), l.createElement(pv.Z, null, l.createElement(Zh.Z, {
                         for: "description"
                     }, "Description"), l.createElement(Zd.Z, {
                         type: "textarea",
@@ -31731,9 +31768,9 @@
                             return t = e.target.value, B(t, "description"), void D(t);
                             var t
                         }
-                    }), l.createElement(fv.Z, {
+                    }), l.createElement(mv.Z, {
                         color: N ? "muted" : "danger"
-                    }, T.length, "/200 characters"), l.createElement(pv.Z, {
+                    }, T.length, "/200 characters"), l.createElement(hv.Z, {
                         invalid: !0
                     })), l.createElement(Mi.Z, {
                         onClick: function() {
@@ -31742,11 +31779,11 @@
                         disabled: !W
                     }, "Submit")))
                 }
-                var yv = n(54218),
-                    gv = n(59465);
-                var vv = n(75980);
+                var vv = n(54218),
+                    _v = n(59465);
+                var bv = n(75980);
 
-                function _v(e) {
+                function Ev(e) {
                     var t = e.product,
                         n = e.index,
                         r = e.deleteProduct,
@@ -31835,10 +31872,10 @@
                         className: "text-right"
                     }, l.createElement("small", null, "Licenses")), l.createElement(Ke.Z, {
                         className: "text-left"
-                    }, l.createElement("p", null, "[ ", O, " ]"), O > 0 && l.createElement(yv.Z, null, b.map((function(e) {
-                        return l.createElement(gv.Z, null, " ", e, " ", l.createElement(Ql.Z, null, "permanent"))
+                    }, l.createElement("p", null, "[ ", O, " ]"), O > 0 && l.createElement(vv.Z, null, b.map((function(e) {
+                        return l.createElement(_v.Z, null, " ", e, " ", l.createElement(Ql.Z, null, "permanent"))
                     })), E.map((function(e) {
-                        return l.createElement(gv.Z, null, " ", e, " ")
+                        return l.createElement(_v.Z, null, " ", e, " ")
                     }))))), l.createElement(ki.Z, {
                         className: "mt-2 light-background"
                     }, l.createElement(Ke.Z, null, l.createElement("small", null, "Description:"))), l.createElement(ki.Z, {
@@ -31859,12 +31896,12 @@
                             name: "7yp9nl",
                             styles: "display:flex;flex-direction:column;.fa:last-child{margin-top:0.4em;}"
                         })
-                    }, l.createElement(vv, {
+                    }, l.createElement(bv, {
                         name: c ? "times" : "trash",
                         onClick: function() {
                             return u(!c)
                         }
-                    }), l.createElement(vv, {
+                    }), l.createElement(bv, {
                         name: "trash",
                         hidden: !c,
                         onClick: function() {
@@ -31878,14 +31915,14 @@
                         }
                     }))))
                 }
-                var bv = n(57925),
-                    Ev = bv.Row,
-                    wv = bv.Button,
-                    kv = bv.Col,
-                    Mv = bv.Input,
-                    Sv = bv.Alert,
-                    Lv = n(75980);
-                const xv = function() {
+                var wv = n(57925),
+                    kv = wv.Row,
+                    Mv = wv.Button,
+                    Sv = wv.Col,
+                    Lv = wv.Input,
+                    xv = wv.Alert,
+                    Ov = n(75980);
+                const Tv = function() {
                     var e = re(),
                         t = se((function(e) {
                             return e.currentUser.permissions
@@ -31914,7 +31951,7 @@
                             return e.shop.deleteProduct
                         }));
                     l.useEffect((function() {
-                        t.includes("CAN_SELL_PRODUCTS") ? e(uv({
+                        t.includes("CAN_SELL_PRODUCTS") ? e(fv({
                             sellerId: n
                         })) : e(me("/home"))
                     }), []);
@@ -31932,25 +31969,25 @@
                             productId: t
                         }))
                     };
-                    return l.createElement("div", null, l.createElement("h1", null, "My Shop"), l.createElement("br", null), l.createElement("br", null), l.createElement(Ev, null, l.createElement(kv, {
+                    return l.createElement("div", null, l.createElement("h1", null, "My Shop"), l.createElement("br", null), l.createElement("br", null), l.createElement(kv, null, l.createElement(Sv, {
                         className: "text-center"
                     }, l.createElement("div", null, l.createElement("img", {
                         src: "https://images.neopets.com/new_shopkeepers/750.gif"
-                    })))), l.createElement(Ev, null, l.createElement(kv, {
+                    })))), l.createElement(kv, null, l.createElement(Sv, {
                         className: "text-center"
-                    }, l.createElement("h2", null, " Welcome to My Shop"))), l.createElement("br", null), (a || c.loading) && l.createElement(is, null), r && l.createElement(Sv, {
+                    }, l.createElement("h2", null, " Welcome to My Shop"))), l.createElement("br", null), (a || c.loading) && l.createElement(is, null), r && l.createElement(xv, {
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Loading Your Product List"), l.createElement("hr", null), l.createElement("strong", null, o), "  ", r), l.createElement(Ev, {
+                    }, " An Error Loading Your Product List"), l.createElement("hr", null), l.createElement("strong", null, o), "  ", r), l.createElement(kv, {
                         className: "pl-3 pr-3"
-                    }, l.createElement(kv, {
+                    }, l.createElement(Sv, {
                         xs: "6"
-                    }, i && i.length > 0 && l.createElement(Mv, {
+                    }, i && i.length > 0 && l.createElement(Lv, {
                         type: "text",
                         id: "search-product-list",
                         placeholder: "Search product list"
-                    })), l.createElement(kv, {
+                    })), l.createElement(Sv, {
                         xs: "5"
                     }, l.createElement(xc, {
                         title: "Create Product",
@@ -31961,18 +31998,18 @@
                                 type: "CLEAR_PRODUCT_MODAL"
                             })
                         }
-                    }, s.error && l.createElement(Sv, {
+                    }, s.error && l.createElement(xv, {
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Occurred"), l.createElement("hr", null), l.createElement("strong", null, s.statusCode), "  ", s.error), s.complete && l.createElement(Sv, {
+                    }, " An Error Occurred"), l.createElement("hr", null), l.createElement("strong", null, s.statusCode), "  ", s.error), s.complete && l.createElement(xv, {
                         className: "alert-success"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, "Success!"), l.createElement("hr", null), "New Product Created! ", l.createElement(Lv, {
+                    }, "Success!"), l.createElement("hr", null), "New Product Created! ", l.createElement(Ov, {
                         name: "thumbs-up",
                         color: "success"
-                    })), l.createElement(hv, {
+                    })), l.createElement(gv, {
                         addProduct: function(t) {
                             e(function(e) {
                                 var t = e.priceTokens,
@@ -31995,16 +32032,16 @@
                             }(t))
                         },
                         disableForm: s.loading
-                    }))), l.createElement(kv, {
+                    }))), l.createElement(Sv, {
                         xs: "1",
                         className: "text-right"
-                    }, l.createElement(wv, {
+                    }, l.createElement(Mv, {
                         onClick: function() {
-                            e(uv({
+                            e(fv({
                                 sellerId: n
                             }))
                         }
-                    }, l.createElement(Lv, {
+                    }, l.createElement(Ov, {
                         name: "refresh"
                     })))), !a && (null == i ? void 0 : i.length) > 0 && l.createElement("div", (0, Et.Z)({
                         className: "p-3"
@@ -32013,12 +32050,12 @@
                         styles: "& .table-container{margin:15px;}& .product-table-header{padding:10px;font-weight:bolder;}& .product-table-row{padding:10px;}& .row-dark{background-color:rgba(0, 0, 0, 0.2);}& .product-table-row:hover{background-color:rgba(0, 0, 0, 0.4);}& .expanded{margin-left:100px;margin-right:150px;padding-top:10px;}& .description-box{overflow-wrap:break-word;height:150px;padding-top:10px;}& .drop-shadow{background-color:darkgray;padding:5px;border-radius:7px;z-index:3!important;height:210px;width:210px;margin:auto;}& .light-background{background-color:rgba(1, 1, 1, 0.2);}.tremor{animation:tremor 180ms infinite;animation-timing-function:linear;}@keyframes tremor{0%{transform:rotate(0.2deg);}50%{transform:rotate(-0.2deg);}100%{transform:rotate(0.2deg);}}& .margin-slide-out{animation:margin-slide-out 0.4s ease-out;animation-timing-function:ease-out;animation-fill-mode:forwards;}@keyframes margin-slide-out{0%{width:10%;}100%{width:100%;}}"
                     })), l.createElement("div", {
                         className: "table-container"
-                    }, l.createElement(Ev, {
+                    }, l.createElement(kv, {
                         className: "product-table-header"
-                    }, l.createElement(kv, null, "udonName"), l.createElement(kv, null, "displayName"), l.createElement(kv, null, "priceTokens"), l.createElement(kv, null, "duration"), l.createElement(kv, null, "durationType"), l.createElement(kv, null, "created"), l.createElement(kv, {
+                    }, l.createElement(Sv, null, "udonName"), l.createElement(Sv, null, "displayName"), l.createElement(Sv, null, "priceTokens"), l.createElement(Sv, null, "duration"), l.createElement(Sv, null, "durationType"), l.createElement(Sv, null, "created"), l.createElement(Sv, {
                         xs: "1"
                     })), i.map((function(e, t) {
-                        return l.createElement(_v, {
+                        return l.createElement(Ev, {
                             product: e,
                             index: t,
                             deleteProduct: u
@@ -32026,7 +32063,7 @@
                     })))), !a && 0 === i.length && l.createElement("div", null, "No products found ._."))
                 };
 
-                function Ov(e) {
+                function Dv(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -32046,9 +32083,9 @@
                         return $e(this, n)
                     }
                 }
-                var Tv = function(e) {
+                var Cv = function(e) {
                     Ve(i, e);
-                    var t, n, r, a = Ov(i);
+                    var t, n, r, a = Dv(i);
 
                     function i(e) {
                         var t;
@@ -32205,9 +32242,9 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         miscellaneous: e.miscellaneous
                     }
-                }))(Tv));
+                }))(Cv));
 
-                function Dv(e) {
+                function Nv(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -32227,9 +32264,9 @@
                         return $e(this, n)
                     }
                 }
-                var Cv = function(e) {
+                var Av = function(e) {
                     Ve(n, e);
-                    var t = Dv(n);
+                    var t = Nv(n);
 
                     function n(e) {
                         var r;
@@ -32288,10 +32325,10 @@
                                 component: Yd
                             }), l.createElement(le.Route, {
                                 path: "/home/shop",
-                                component: xv
+                                component: Tv
                             }), l.createElement(le.Route, {
                                 path: "/home/user/:userId",
-                                component: iv
+                                component: lv
                             }), l.createElement(le.Route, {
                                 path: "/home/locations",
                                 component: xf
@@ -32309,7 +32346,7 @@
                                 component: wd
                             }), l.createElement(le.Route, {
                                 path: "/home/avatar/:avatarId",
-                                component: cv
+                                component: dv
                             }), l.createElement(le.Route, {
                                 path: "/home/messages",
                                 component: Oy
@@ -32338,7 +32375,7 @@
                     }]), n
                 }(l.Component);
 
-                function Nv(e) {
+                function Pv(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -32358,9 +32395,9 @@
                         return $e(this, n)
                     }
                 }
-                var Av = function(e) {
+                var Iv = function(e) {
                     Ve(n, e);
-                    var t = Nv(n);
+                    var t = Pv(n);
 
                     function n() {
                         return Fe(this, n), t.apply(this, arguments)
@@ -32418,14 +32455,14 @@
                                 component: Hc
                             }), l.createElement(le.Route, {
                                 path: "/home",
-                                component: Cv
+                                component: Av
                             }), l.createElement(le.Route, {
-                                component: Cv
+                                component: Av
                             })))
                         }
                     }]), n
                 }(l.Component);
-                const Pv = function(e) {
+                const Rv = function(e) {
                     var t = e.store,
                         n = t.getState().currentUser.databaseUser.id;
                     return console.log("Creating pipeline router for ".concat(n)),
@@ -32531,8 +32568,8 @@
                             } else console.error("Socket event without type!")
                         }
                 };
-                var Iv = document.getElementById("app"),
-                    Rv = function() {
+                var jv = document.getElementById("app"),
+                    Yv = function() {
                         String.prototype.toTitleCase = function() {
                             var e, t, n, r, a;
                             for (n = this.replace(/([^\W_]+[^\s-]*) */g, (function(e) {
@@ -32581,8 +32618,8 @@
                             history: Qa
                         }, l.createElement("div", null, l.createElement(le.Route, {
                             path: "/",
-                            component: Av
-                        })))), Iv);
+                            component: Iv
+                        })))), jv);
                         var e = 500,
                             t = !1,
                             r = function() {
@@ -32591,7 +32628,7 @@
                                     return s().wrap((function(n) {
                                         for (;;) switch (n.prev = n.next) {
                                             case 0:
-                                                return r = Pv({
+                                                return r = Rv({
                                                     store: Xa
                                                 }), n.next = 3, Ye().get("".concat(window.endpoint, "/api/1/auth?apiKey=").concat(window.apiKey));
                                             case 3:
@@ -32657,7 +32694,7 @@
                                     Xa.dispatch({
                                         type: "LOGIN_FULFILLED",
                                         payload: t
-                                    }), Rv();
+                                    }), Yv();
                                 case 2:
                                 case "end":
                                     return e.stop()
@@ -32668,16 +32705,16 @@
                         return e.apply(this, arguments)
                     }
                 }()).catch((function(e) {
-                    e.message.indexOf("403") > -1 ? c.render(l.createElement(_t, null), Iv) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (ra.has(window.location.pathname) || (console.warn("".concat(Array.from(ra), " didn't contain ").concat(window.location.pathname)), Xa.dispatch({
+                    e.message.indexOf("403") > -1 ? c.render(l.createElement(_t, null), jv) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (ra.has(window.location.pathname) || (console.warn("".concat(Array.from(ra), " didn't contain ").concat(window.location.pathname)), Xa.dispatch({
                         type: "CLEAR_STATUS_CODE"
                     }), Xa.dispatch(mt()), Xa.dispatch(ta({
                         targetPath: window.location.pathname + window.location.search
-                    })), Xa.dispatch(me("/home/login"))), Rv()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(bt, {
+                    })), Xa.dispatch(me("/home/login"))), Yv()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(bt, {
                         error: e,
                         statusCode: 500
-                    }), Iv) : c.render(l.createElement(bt, {
+                    }), jv) : c.render(l.createElement(bt, {
                         error: e
-                    }), Iv)
+                    }), jv)
                 }))
             },
             52945: (e, t, n) => {
@@ -74822,6 +74859,6 @@
         }), Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(74960);
+    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(27499);
     n(74565)
 })();
