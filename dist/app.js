@@ -6457,7 +6457,7 @@
                     Gn = "idfk",
                     $n = "idfk";
                 try {
-                    Vn = "12345", Gn = "2022-01-12t00-26-30-the-sausage-of-marge", $n = "production"
+                    Vn = "12345", Gn = "2022-01-13t00-29-35-the-fuego-of-chanel", $n = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -11604,13 +11604,19 @@
                                                         console.error(t), e.setState({
                                                             error: t
                                                         })
-                                                    })), null == e.state.shortName && null != e.state.worldId && null != e.state.instanceId && Ye().get(window.apiUrl("/api/1/instances/".concat(e.state.worldId, ":").concat(e.state.instanceId, "/shortName"))).then((function(t) {
+                                                    })), null != e.state.worldId && null != e.state.instanceId && Ye().get(window.apiUrl("/api/1/instances/".concat(e.state.worldId, ":").concat(e.state.instanceId, "/shortName")), e.state.shortName ? {
+                                                        params: {
+                                                            shortName: e.state.shortName
+                                                        }
+                                                    } : {}).then((function(t) {
                                                         e.setState({
                                                             shortName: t.data
                                                         })
                                                     })).catch((function(t) {
-                                                        console.error(t), e.setState({
+                                                        403 !== t.response.status ? (console.error(t), e.setState({
                                                             error: t
+                                                        })) : e.setState({
+                                                            shortName: null
                                                         })
                                                     })), Ye().get(window.apiUrl("/api/1/auth/user")).then((function(t) {
                                                         e.setState({
@@ -11775,7 +11781,7 @@
                                         href: "".concat(window.endpoint, "/home/user/").concat(this.state.data.authorId),
                                         target: "_blank",
                                         rel: "noreferrer"
-                                    }, this.state.data.authorName), l.createElement("br", null), void 0 !== t && l.createElement("div", null, l.createElement("span", {
+                                    }, this.state.data.authorName), l.createElement("br", null), void 0 !== t && this.state.shortName && l.createElement("div", null, l.createElement("span", {
                                         className: "card-text font-weight-normal"
                                     }, "Share: "), l.createElement("a", {
                                         className: "font-weight-normal creator-link",
@@ -11809,7 +11815,7 @@
                                         href: "".concat(window.endpoint, "/home/user/").concat(this.state.data.authorId),
                                         target: "_blank",
                                         rel: "noreferrer"
-                                    }, this.state.data.authorName), void 0 !== t && l.createElement("div", null, l.createElement("span", {
+                                    }, this.state.data.authorName), void 0 !== t && this.state.shortName && l.createElement("div", null, l.createElement("span", {
                                         className: "card-text font-weight-normal"
                                     }, "Share: "), l.createElement("a", {
                                         className: "font-weight-normal creator-link",
