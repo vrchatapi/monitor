@@ -4233,7 +4233,7 @@
                     apiUrl: window.apiUrl
                 }
             },
-            31999: (e, t, n) => {
+            29827: (e, t, n) => {
                 "use strict";
                 var r = {};
 
@@ -6473,7 +6473,7 @@
                     $n = "idfk",
                     qn = "idfk";
                 try {
-                    Gn = "12345", $n = "2022-01-20t00-35-44-the-nega-of-benson", qn = "production"
+                    Gn = "12345", $n = "2022-01-20t02-25-26-the-empty-of-hokkaido", qn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -24771,13 +24771,57 @@
                     }
                 };
                 var Pp = {
+                        "/home": "Home",
+                        "/home/login": "Login",
+                        "/home/register": "Register",
+                        "/home/worlds": "Worlds",
+                        "/home/avatars": "My Avatars",
+                        "/home/download": "Download",
+                        "/home/locations": "Friend Locations",
+                        "/home/messages": "Messages",
+                        "/home/friends": "Friends",
+                        "/home/accountlink": "Account Link",
+                        "/home/playermoderations": "Blocks & Mutes",
+                        "/home/gallery": "Gallery"
+                    },
+                    Ip = " - VRChat";
+                const Rp = function() {
+                    var e = (0, le.useLocation)(),
+                        t = se((function(e) {
+                            return e.user.databaseUser
+                        })),
+                        n = se((function(e) {
+                            return e.world.databaseWorld
+                        })),
+                        r = se((function(e) {
+                            return e.avatar.avatars
+                        }));
+                    l.useEffect((function() {
+                        var a = e.pathname,
+                            o = Pp[a];
+                        if (o) document.title = "".concat(o).concat(Ip);
+                        else if (a.startsWith("/home/user/")) {
+                            var i = t.displayName;
+                            document.title = "".concat(null != i ? i : "User").concat(Ip)
+                        } else if (a.startsWith("/home/world/")) {
+                            var s = n.name;
+                            document.title = "".concat(null != s ? s : "World").concat(Ip)
+                        } else if (a.startsWith("/home/launch")) document.title = "Launch Instance".concat(Ip);
+                        else if (a.startsWith("/home/avatar/")) {
+                            var l, c = a.substr(a.indexOf("avtr_"), 41),
+                                u = null == r || null === (l = r[c]) || void 0 === l ? void 0 : l.name;
+                            document.title = "".concat(null != u ? u : "Avatar").concat(Ip)
+                        } else document.title = "VRChat"
+                    }), [e, t, n, r])
+                };
+                var jp = {
                     active: "var(--status-online)",
                     "join me": "var(--status-joinme)",
                     busy: "var(--status-busy)",
                     "ask me": "var(--status-askme)",
                     offline: "gray"
                 };
-                const Ip = function() {
+                const Yp = function() {
                     var e, t, n = xp(),
                         r = n.user,
                         a = n.fetchUser,
@@ -24850,30 +24894,30 @@
                         x = (null === (t = r.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? r.profilePicOverride : r.currentAvatarThumbnailImageUrl;
                     return l.createElement(Ke.Z, {
                         className: "mx-0 px-3 mb-3"
-                    }, l.createElement(Rp, {
+                    }, l.createElement(Zp, {
                         to: "/home/user/".concat(r.id),
                         url: x,
                         level: pn(r.tags)
-                    }, l.createElement(jp, {
+                    }, l.createElement(Up, {
                         className: "mx-0"
-                    }, l.createElement(Zp, null, "Go To Profile")), r.userIcon && l.createElement(Up, {
+                    }, l.createElement(Hp, null, "Go To Profile")), r.userIcon && l.createElement(zp, {
                         onClick: function(e) {
                             e.stopPropagation(), e.preventDefault(), (null != u && u.includes("permission-user-icons") || null != u && u.includes("permissions-user-gallery")) && w.push("/home/gallery")
                         }
-                    }, l.createElement(Fp, {
+                    }, l.createElement(Wp, {
                         url: r.userIcon
-                    }, l.createElement(Hp, {
-                        name: "camera"
-                    })), l.createElement(zp, null, "Change Icon")), l.createElement(Yp, null)), l.createElement(Wp, {
-                        className: "px-2 pt-1 pb-2 mx-0"
                     }, l.createElement(Bp, {
+                        name: "camera"
+                    })), l.createElement(Vp, null, "Change Icon")), l.createElement(Fp, null)), l.createElement(Gp, {
+                        className: "px-2 pt-1 pb-2 mx-0"
+                    }, l.createElement($p, {
                         className: "d-flex mx-0 align-items-center"
-                    }, l.createElement(Vp, {
+                    }, l.createElement(qp, {
                         title: (0, da.startCase)(r.status),
-                        statusColor: Pp[r.status]
+                        statusColor: jp[r.status]
                     }), l.createElement(it, {
                         to: "/home/user/".concat(r.id)
-                    }, r.displayName)), l.createElement($p, {
+                    }, r.displayName)), l.createElement(Kp, {
                         className: "mx-0 my-1",
                         onClick: function(e) {
                             p || (e.stopPropagation(), m(!0), setTimeout((function() {
@@ -24883,7 +24927,7 @@
                         role: "button",
                         title: "Edit Status",
                         tabIndex: 0
-                    }, p ? l.createElement(qp, {
+                    }, p ? l.createElement(Qp, {
                         ref: E,
                         value: g,
                         onChange: function(e) {
@@ -24895,22 +24939,22 @@
                             "Enter" === e.key && M(e)
                         },
                         placeholder: "Set a new status!"
-                    }) : l.createElement("div", null, g.length > 0 ? g : l.createElement(Jp, null, "Set a status")), l.createElement(Gp, {
+                    }) : l.createElement("div", null, g.length > 0 ? g : l.createElement(Xp, null, "Set a status")), l.createElement(Jp, {
                         onClick: M,
                         name: p ? "check" : "pen"
-                    })), S && i && l.createElement(Kp, {
+                    })), S && i && l.createElement(em, {
                         className: "mx-0"
                     }, l.createElement(wc, {
                         location: i,
                         userId: r.id,
                         currentUser: r,
                         size: "normal"
-                    })), l.createElement(Qp, null, l.createElement(it, {
+                    })), l.createElement(tm, null, l.createElement(it, {
                         to: "/home/profile",
                         className: "btn btn-outline-primary d-block"
                     }, l.createElement(ut(), {
                         name: "cog"
-                    }), "  Profile")), c && l.createElement(Xp, null, l.createElement(Li.Z, {
+                    }), "  Profile")), c && l.createElement(nm, null, l.createElement(Li.Z, {
                         color: "warning",
                         onClick: L,
                         className: "w-100",
@@ -24942,7 +24986,7 @@
                         src: r
                     }))))))
                 };
-                var Rp = iu(it, {
+                var Zp = iu(it, {
                         target: "esgak1l17"
                     })("display:flex;height:0;padding-top:56.25%;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                         return e.url
@@ -24950,120 +24994,120 @@
                         var t = e.level;
                         return "moderator" === t ? "var(--developer);" : "var(--level-".concat(t, ")")
                     }), ";cursor:pointer;&:hover{&>div:last-child{opacity:1;}}"),
-                    jp = iu(Mi.Z, {
+                    Up = iu(Mi.Z, {
                         target: "esgak1l16"
                     })({
                         name: "1dnyrdp",
                         styles: "display:flex;align-items:center;justify-content:center;transition:bottom 0.2s ease;position:absolute;top:0;left:0;width:100%;height:100%;display:flex;z-index:2;opacity:0;transition:opacity 0.2s ease;color:white;text-decoration:none!important;&:hover{opacity:1;}"
                     }),
-                    Yp = iu("div", {
+                    Fp = iu("div", {
                         target: "esgak1l15"
                     })({
                         name: "1t7q23s",
                         styles: "position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 0.2s ease;background-color:rgba(0, 0, 0, 0.7);z-index:1"
                     }),
-                    Zp = iu("div", {
+                    Hp = iu("div", {
                         target: "esgak1l14"
                     })({
                         name: "iu2xal",
                         styles: "font-weight:600;color:white!important"
                     }),
-                    Up = iu("div", {
+                    zp = iu("div", {
                         target: "esgak1l13"
                     })({
                         name: "1ou9w6e",
                         styles: "display:flex;position:absolute;bottom:7px;left:10px;align-items:center;z-index:3;color:white;&:hover{div:last-child{opacity:1;}span{opacity:1;}}"
                     }),
-                    Fp = iu("div", {
+                    Wp = iu("div", {
                         target: "esgak1l12"
                     })("border-radius:100%;width:40px;height:40px;border:3px solid white;box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.3);box-sizing:border-box;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                         return e.url
                     }), ");display:flex;justify-content:center;align-items:center;"),
-                    Hp = iu(ut(), {
+                    Bp = iu(ut(), {
                         target: "esgak1l11"
                     })({
                         name: "1ub0yd7",
                         styles: "opacity:0;transition:opacity 0.2s ease;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.7);border-radius:100%;display:flex;justify-content:center;align-items:center"
                     }),
-                    zp = iu("div", {
+                    Vp = iu("div", {
                         target: "esgak1l10"
                     })({
                         name: "ndq0w9",
                         styles: "opacity:0;margin-left:10px;font-weight:600;transition:opacity 0.2s ease"
                     }),
-                    Wp = iu(Ke.Z, {
+                    Gp = iu(Ke.Z, {
                         target: "esgak1l9"
                     })({
                         name: "9ikhbi",
                         styles: "background-color:#404c58;border-bottom-right-radius:4px;border-bottom-left-radius:4px"
                     }),
-                    Bp = iu(Mi.Z, {
+                    $p = iu(Mi.Z, {
                         target: "esgak1l8"
                     })({
                         name: "1ymtng8",
                         styles: "font-weight:600;a{color:var(--primary);}"
                     }),
-                    Vp = iu("div", {
+                    qp = iu("div", {
                         target: "esgak1l7"
                     })("width:20px;height:20px;border-radius:100%;background-color:", (function(e) {
                         return e.statusColor
                     }), ";margin-right:10px;"),
-                    Gp = iu(ut(), {
+                    Jp = iu(ut(), {
                         target: "esgak1l6"
                     })("position:relative;right:-100px;transition:all 0.2s ease-in-out;color:white;&:hover{color:", (function(e) {
                         return "check" === e.name ? "var(--status-online)" : "var(--cyan)"
                     }), ";}"),
-                    $p = iu(Mi.Z, {
+                    Kp = iu(Mi.Z, {
                         target: "esgak1l5"
                     })({
                         name: "1h72598",
                         styles: "display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;background-color:#798897;border-radius:3px;padding:0.3rem 2rem 0.3rem 0.5rem;margin-top:2px;transition:background-color 0.2s ease-in-out;cursor:pointer;overflow-x:hidden;font-size:13px;&:hover{background-color:#1a2026;input{color:var(--primary);}span{right:-1.5rem;}}"
                     }),
-                    qp = iu("input", {
+                    Qp = iu("input", {
                         target: "esgak1l4"
                     })({
                         name: "1so83ik",
                         styles: "background:transparent;padding:0;margin:0;border:none;outline:none!important;color:#fff;display:flex;flex-grow:1;border-bottom:1px solid rgba(255, 255, 255, 0.5)"
                     }),
-                    Jp = iu("span", {
+                    Xp = iu("span", {
                         target: "esgak1l3"
                     })({
                         name: "1n4zmb4",
                         styles: "color:rgba(255, 255, 255, 0.5)"
                     }),
-                    Kp = iu(Mi.Z, {
+                    em = iu(Mi.Z, {
                         target: "esgak1l2"
                     })({
                         name: "k44tzi",
                         styles: "margin-top:0.5rem;div:first-child{flex-grow:1;margin:0 0;}"
                     }),
-                    Qp = iu("div", {
+                    tm = iu("div", {
                         target: "esgak1l1"
                     })({
                         name: "2b3uh9",
                         styles: "display:flex;align-items:center;margin-top:0.5rem;a{width:100%;}"
                     }),
-                    Xp = iu(Qp, {
+                    nm = iu(tm, {
                         target: "esgak1l0"
                     })("");
 
-                function em() {
+                function rm() {
                     for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
                     return jc(t)
                 }
-                var tm = {
+                var am = {
                         active: "var(--status-online)",
                         "join me": "var(--status-joinme)",
                         busy: "var(--status-busy)",
                         "ask me": "var(--status-askme)",
                         offline: "gray"
                     },
-                    nm = {
+                    om = {
                         active: "var(--yellow)",
                         online: "var(--green)",
                         offline: "gray"
                     },
-                    rm = l.memo((function(e) {
+                    im = l.memo((function(e) {
                         var t, n, r, a, i, c, u = e.userId,
                             d = xp(u),
                             f = d.user,
@@ -25091,7 +25135,7 @@
                                 return t && t.length > 1 && (n = t[1]), n
                             }(M),
                             x = "offline" === f.state || "unknown" === f.state,
-                            O = x ? tm.offline : tm[f.status],
+                            O = x ? am.offline : am[f.status],
                             T = function() {
                                 var e = o(s().mark((function e() {
                                     return s().wrap((function(e) {
@@ -25118,65 +25162,65 @@
                                     return e.apply(this, arguments)
                                 }
                             }();
-                        return l.createElement(sm, {
+                        return l.createElement(um, {
                             level: pn(f.tags),
                             offline: x
-                        }, !1, l.createElement(lm, null, l.createElement(um, {
+                        }, !1, l.createElement(dm, null, l.createElement(pm, {
                             to: "/home/user/".concat(f.id),
-                            statusColor: nm[f.state]
-                        }, l.createElement(cm, null, "Go To Profile"), l.createElement(dm, {
+                            statusColor: om[f.state]
+                        }, l.createElement(fm, null, "Go To Profile"), l.createElement(mm, {
                             url: k
-                        }), l.createElement(fm, {
+                        }), l.createElement(hm, {
                             url: k
-                        })), l.createElement(pm, {
+                        })), l.createElement(gm, {
                             className: "flex-grow-1 justify-content-between"
-                        }, l.createElement(im, {
+                        }, l.createElement(cm, {
                             className: "align-items-center"
-                        }, l.createElement(mm, {
+                        }, l.createElement(ym, {
                             statusColor: O
-                        }), l.createElement(vm, {
+                        }), l.createElement(Em, {
                             to: "/home/user/".concat(f.id)
-                        }, f.displayName)), E && w && l.createElement(gm, null, "In a private world"), w && !f.statusDescription && !x && l.createElement(ym, null, " "), !!f.statusDescription && !x && l.createElement(ym, null, f.statusDescription), x && l.createElement(l.Fragment, null, l.createElement(hm, null, "Offline"), f.last_login && l.createElement(hm, null, dr()(f.last_login).fromNow())))), E && !w && !!M && l.createElement(_m, null, l.createElement(bm, null, l.createElement(wm, {
+                        }, f.displayName)), E && w && l.createElement(_m, null, "In a private world"), w && !f.statusDescription && !x && l.createElement(bm, null, " "), !!f.statusDescription && !x && l.createElement(bm, null, f.statusDescription), x && l.createElement(l.Fragment, null, l.createElement(vm, null, "Offline"), f.last_login && l.createElement(vm, null, dr()(f.last_login).fromNow())))), E && !w && !!M && l.createElement(wm, null, l.createElement(km, null, l.createElement(Lm, {
                             url: null == h ? void 0 : h.thumbnailImageUrl,
                             to: "/home/launch?worldId=".concat(null == h ? void 0 : h.id, "&instanceId=").concat(M),
                             target: "_blank"
-                        }, l.createElement(Em, null, "Open Instance")), l.createElement(km, {
+                        }, l.createElement(Mm, null, "Open Instance")), l.createElement(Sm, {
                             className: "flex-grow-1 justify-content-between"
-                        }, l.createElement(im, {
+                        }, l.createElement(cm, {
                             className: "align-items-start"
                         }, l.createElement(ec.Z, {
                             className: " mt-1"
                         }, null == g ? void 0 : g.users.length, " ", l.createElement(ut(), {
                             name: "users",
                             title: "Number of friends in instance"
-                        }), " "), l.createElement(Mm, {
+                        }), " "), l.createElement(xm, {
                             to: "/home/launch?worldId=".concat(null == h ? void 0 : h.id, "&instanceId=").concat(M),
                             title: null == h || null === (i = h.name) || void 0 === i ? void 0 : i.substr(0, 300),
                             target: "_blank"
-                        }, null == h || null === (c = h.name) || void 0 === c ? void 0 : c.substr(0, 300))), l.createElement(Lm, {
+                        }, null == h || null === (c = h.name) || void 0 === c ? void 0 : c.substr(0, 300))), l.createElement(Om, {
                             className: "align-items-center"
                         }, l.createElement(_c, {
                             region: S,
                             imageSize: "16px"
-                        }), l.createElement("div", null, L), l.createElement(Sm, {
+                        }), l.createElement("div", null, L), l.createElement(Tm, {
                             onClick: T
                         }, _))))))
                     }));
-                rm.displayName = "FriendSidebarComponent";
-                const am = rm;
-                var om = iu("div", {
+                im.displayName = "FriendSidebarComponent";
+                const sm = im;
+                var lm = iu("div", {
                         target: "e176ivn222"
                     })({
                         name: "1fttcpj",
                         styles: "display:flex;flex-direction:column"
                     }),
-                    im = iu("div", {
+                    cm = iu("div", {
                         target: "e176ivn221"
                     })({
                         name: "ho1qnd",
                         styles: "display:flex;flex-direction:row"
                     }),
-                    sm = iu(om, {
+                    um = iu(lm, {
                         target: "e176ivn220"
                     })("margin:0 1.3rem 0.5rem 1.3rem;border:2px solid;border-radius:4px;border-color:", (function(e) {
                         var t = e.level;
@@ -25184,41 +25228,41 @@
                     }), ";position:relative;background-color:#404c58;padding:15px;opacity:", (function(e) {
                         return e.offline ? .7 : 1
                     }), ";"),
-                    lm = iu(im, {
+                    dm = iu(cm, {
                         target: "e176ivn219"
                     })({
                         name: "bjn8wh",
                         styles: "position:relative"
                     }),
-                    cm = iu("div", {
+                    fm = iu("div", {
                         target: "e176ivn218"
                     })({
                         name: "106697k",
                         styles: "width:100%;height:100%;top:0;left:0;position:absolute;z-index:3;opacity:0;transition:opacity 0.2s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;background-color:rgba(0, 0, 0, 0.7)"
                     }),
-                    um = iu(it, {
+                    pm = iu(it, {
                         target: "e176ivn217"
                     })("display:flex;cursor:pointer;width:128px;height:74px;overflow:hidden;position:relative;border-radius:4px;border:2px solid ", (function(e) {
                         return e.statusColor
-                    }), ";box-sizing:border-box;&:hover ", cm, "{opacity:1;}"),
-                    dm = iu("div", {
+                    }), ";box-sizing:border-box;&:hover ", fm, "{opacity:1;}"),
+                    mm = iu("div", {
                         target: "e176ivn216"
                     })("position:absolute;background-position:center center;background-size:contain;background-repeat:no-repeat;background-image:url(", (function(e) {
                         return e.url
                     }), ");width:124px;height:70px;top:0;left:0;z-index:2;"),
-                    fm = iu(dm, {
+                    hm = iu(mm, {
                         target: "e176ivn215"
                     })({
                         name: "1gxenc0",
                         styles: "z-index:1;background-size:cover;filter:blur(20px);width:164px;height:110px;top:-20px;left:-20px"
                     }),
-                    pm = iu(om, {
+                    gm = iu(lm, {
                         target: "e176ivn214"
                     })({
                         name: "iy775z",
                         styles: "margin:5px 10px;max-width:189px;position:relative;z-index:1"
                     }),
-                    mm = (iu("div", {
+                    ym = (iu("div", {
                         target: "e176ivn213"
                     })({
                         name: "1bft911",
@@ -25228,78 +25272,78 @@
                     })("width:15px;height:15px;border-radius:100%;background-color:", (function(e) {
                         return e.statusColor
                     }), ";margin-right:10px;")),
-                    hm = iu(im, {
+                    vm = iu(cm, {
                         target: "e176ivn211"
                     })({
                         name: "1u7pwvo",
                         styles: "font-size:0.9rem"
                     }),
-                    gm = iu(hm, {
+                    _m = iu(vm, {
                         target: "e176ivn210"
                     })(""),
-                    ym = iu(hm, {
+                    bm = iu(vm, {
                         target: "e176ivn29"
                     })(""),
-                    vm = iu(it, {
+                    Em = iu(it, {
                         target: "e176ivn28"
                     })({
                         name: "1u1s9ta",
                         styles: "font-weight:900"
                     }),
-                    _m = iu(im, {
+                    wm = iu(cm, {
                         target: "e176ivn27"
                     })({
                         name: "rejjtt",
                         styles: "flex-grow:1;border:1px solid rgba(10, 10, 13, 0.125);margin-top:10px;border-radius:4px;overflow:hidden;position:relative;z-index:1;min-height:77px"
                     }),
-                    bm = iu(im, {
+                    km = iu(cm, {
                         target: "e176ivn26"
                     })({
                         name: "mczqin",
                         styles: "position:relative;z-index:2;padding:10px;flex-wrap:nowrap"
                     }),
-                    Em = iu("div", {
+                    Mm = iu("div", {
                         target: "e176ivn25"
                     })({
                         name: "19w2cfh",
                         styles: "position:absolute;z-index:3;width:100%;height:100%;top:0;left:0;background-color:rgba(0, 0, 0, 0.7);border-radius:4px;color:white;font-weight:700;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transition:opacity 0.2s ease-in-out;font-size:0.7rem"
                     }),
-                    wm = iu(it, {
+                    Lm = iu(it, {
                         target: "e176ivn24"
                     })("display:flex;position:relative;width:80px;height:57px;display:flex;flex-shrink:0;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                         return e.url
-                    }), ");border-radius:4px;&:hover ", Em, "{opacity:1;}"),
-                    km = iu(om, {
+                    }), ");border-radius:4px;&:hover ", Mm, "{opacity:1;}"),
+                    Sm = iu(lm, {
                         target: "e176ivn23"
                     })({
                         name: "1a2afmv",
                         styles: "margin-left:10px"
                     }),
-                    Mm = iu(it, {
+                    xm = iu(it, {
                         target: "e176ivn22"
                     })({
                         name: "1hyjd8g",
                         styles: "display:flex;color:white;font-weight:900;margin-left:10px;&:hover{color:white;}"
                     }),
-                    Lm = iu(im, {
+                    Om = iu(cm, {
                         target: "e176ivn21"
                     })({
                         name: "1k16hbx",
                         styles: "margin-top:5px;&>div{margin-right:5px;line-height:16px;}"
                     }),
-                    Sm = iu("button", {
+                    Tm = iu("button", {
                         target: "e176ivn20"
                     })({
                         name: "xf6jmh",
                         styles: "display:flex;outline:none!important;border:1px solid var(--primary);border-radius:4px;background-color:rgba(31, 209, 237, 0);color:var(--primary);padding:1px 10px;margin:0 10px;transition:background-color 0.2s ease-in-out;font-size:0.7rem;&:hover{background-color:rgba(31, 209, 237, 0.3);}"
                     });
-                var xm = function(e, t) {
+                var Dm = function(e, t) {
                         return function(n) {
                             var r;
                             return n.id === e || (null !== (r = null == n ? void 0 : n.displayName) && void 0 !== r ? r : "").toLowerCase().includes(t) || (null == n ? void 0 : n.state) === t
                         }
                     },
-                    Om = l.memo((function() {
+                    Cm = l.memo((function() {
                         var e = Np(),
                             t = e.onlineAndJoinableFriends,
                             n = e.privateFriends,
@@ -25336,10 +25380,10 @@
                                 };
                                 var e = c.toLowerCase();
                                 return {
-                                    joinable: t.filter(xm(c, e)),
-                                    private: n.filter(xm(c, e)),
-                                    active: r.filter(xm(c, e)),
-                                    offline: a.filter(xm(c, e))
+                                    joinable: t.filter(Dm(c, e)),
+                                    private: n.filter(Dm(c, e)),
+                                    active: r.filter(Dm(c, e)),
+                                    offline: a.filter(Dm(c, e))
                                 }
                             }), [c, o, t, n, r, a]),
                             b = l.useMemo((function() {
@@ -25350,11 +25394,11 @@
                                     offline: _.offline.slice(0, Math.max(0, h - _.joinable.length - _.private.length - _.active.length))
                                 }
                             }), [_, h]);
-                        return l.createElement(Nm, null, l.createElement(Pm, {
+                        return l.createElement(Im, null, l.createElement(jm, {
                             showShadow: f
-                        }, l.createElement(Im, {
+                        }, l.createElement(Ym, {
                             className: "justify-content-between mb-3"
-                        }, l.createElement("div", null, "Friends"), l.createElement(Cm, {
+                        }, l.createElement("div", null, "Friends"), l.createElement(Pm, {
                             className: "align-items-center"
                         }, !o && l.createElement(ut(), {
                             name: "spinner",
@@ -25366,7 +25410,7 @@
                         }, i.online, " /"), l.createElement("div", {
                             title: "Friends Total",
                             className: "pl-1"
-                        }, i.total))), l.createElement(Rm, {
+                        }, i.total))), l.createElement(Zm, {
                             type: "text",
                             onChange: function(e) {
                                 var t = e.target.value;
@@ -25374,9 +25418,9 @@
                             },
                             value: c,
                             placeholder: "Search Friends"
-                        })), l.createElement(Um, null, l.createElement(jm, {
+                        })), l.createElement(zm, null, l.createElement(Um, {
                             ref: v
-                        }, l.createElement(Ym, {
+                        }, l.createElement(Fm, {
                             className: "pt-1",
                             onScroll: function(e) {
                                 var t = e.target,
@@ -25386,108 +25430,108 @@
                                     s = void 0 === a ? 0 : a;
                                 r > 0 && !f ? p(!0) : 0 === r && f && p(!1), o && r + s >= y.current.scrollHeight - 200 && h <= i.total && g(Math.min(h + 10, i.total))
                             }
-                        }, l.createElement(Zm, {
+                        }, l.createElement(Hm, {
                             ref: y
-                        }, o && b.joinable.length > 0 && l.createElement(Hm, null, l.createElement(Fm, {
+                        }, o && b.joinable.length > 0 && l.createElement(Bm, null, l.createElement(Wm, {
                             first: !0
                         }, "Online Friends")), b.joinable.map((function(e) {
-                            return l.createElement(Hm, {
+                            return l.createElement(Bm, {
                                 key: e.id
-                            }, l.createElement(am, {
+                            }, l.createElement(sm, {
                                 userId: e.id
                             }))
-                        })), o && b.private.length > 0 && l.createElement(Hm, null, l.createElement(Fm, null, "Friends in Private Worlds")), b.private.map((function(e) {
-                            return l.createElement(Hm, {
+                        })), o && b.private.length > 0 && l.createElement(Bm, null, l.createElement(Wm, null, "Friends in Private Worlds")), b.private.map((function(e) {
+                            return l.createElement(Bm, {
                                 key: e.id
-                            }, l.createElement(am, {
+                            }, l.createElement(sm, {
                                 userId: e.id
                             }))
-                        })), o && b.active.length > 0 && l.createElement(Hm, null, l.createElement(Fm, null, "Friends Active on the Website")), b.active.map((function(e) {
-                            return l.createElement(Hm, {
+                        })), o && b.active.length > 0 && l.createElement(Bm, null, l.createElement(Wm, null, "Friends Active on the Website")), b.active.map((function(e) {
+                            return l.createElement(Bm, {
                                 key: e.id
-                            }, l.createElement(am, {
+                            }, l.createElement(sm, {
                                 userId: e.id
                             }))
-                        })), o && b.offline.length > 0 && l.createElement(Hm, null, l.createElement(Fm, null, "Offline Friends")), b.offline.map((function(e) {
-                            return l.createElement(Hm, {
+                        })), o && b.offline.length > 0 && l.createElement(Bm, null, l.createElement(Wm, null, "Offline Friends")), b.offline.map((function(e) {
+                            return l.createElement(Bm, {
                                 key: e.id
-                            }, l.createElement(am, {
+                            }, l.createElement(sm, {
                                 userId: e.id
                             }))
                         })))))))
                     }));
-                Om.displayName = "FriendsComponent";
-                const Tm = Om;
-                var Dm = iu("div", {
+                Cm.displayName = "FriendsComponent";
+                const Nm = Cm;
+                var Am = iu("div", {
                         target: "e1oqhh5q11"
                     })({
                         name: "1fttcpj",
                         styles: "display:flex;flex-direction:column"
                     }),
-                    Cm = iu("div", {
+                    Pm = iu("div", {
                         target: "e1oqhh5q10"
                     })({
                         name: "zjik7",
                         styles: "display:flex"
                     }),
-                    Nm = iu(Dm, {
+                    Im = iu(Am, {
                         target: "e1oqhh5q9"
                     })({
                         name: "1pixy9s",
                         styles: "min-height:100%;flex-grow:1;background-color:#6e7b89;overflow-x:hidden"
                     }),
-                    Am = {
+                    Rm = {
                         name: "125sl10",
                         styles: "box-shadow:0 20px 90px -2px rgba(0, 0, 0, 0.3)"
                     },
-                    Pm = iu(Dm, {
+                    jm = iu(Am, {
                         target: "e1oqhh5q8"
                     })("padding:1.3rem;z-index:10;", (function(e) {
-                        return e.showShadow ? Am : em("", "")
+                        return e.showShadow ? Rm : rm("", "")
                     }), " transition:box-shadow 0.3s ease-in-out;"),
-                    Im = iu(Cm, {
+                    Ym = iu(Pm, {
                         target: "e1oqhh5q7"
                     })({
                         name: "v3kifn",
                         styles: "font-weight:300;font-size:1.75rem;line-height:1.75rem;align-items:center"
                     }),
-                    Rm = iu("input", {
+                    Zm = iu("input", {
                         target: "e1oqhh5q6"
                     })({
                         name: "733nux",
                         styles: "border-radius:4px;border:none;padding:2px 10px;outline:none"
                     }),
-                    jm = iu(Dm, {
+                    Um = iu(Am, {
                         target: "e1oqhh5q5"
                     })({
                         name: "wsam0j",
                         styles: "flex-grow:1;position:absolute;width:100%;height:100%"
                     }),
-                    Ym = iu(Dm, {
+                    Fm = iu(Am, {
                         target: "e1oqhh5q4"
                     })({
                         name: "m0i35i",
                         styles: "overflow-y:scroll;overflow-x:hidden;margin-right:-20px;transition:margin-right 250ms ease-in-out"
                     }),
-                    Zm = iu(Dm, {
+                    Hm = iu(Am, {
                         target: "e1oqhh5q3"
                     })({
                         name: "y5x0dx",
                         styles: "margin-right:0px;transition:margin-right 250ms ease-in-out"
                     }),
-                    Um = iu("div", {
+                    zm = iu("div", {
                         target: "e1oqhh5q2"
-                    })("position:relative;height:100%;flex-grow:1;&:hover{", Ym, "{margin-right:0px;}", Zm, "{margin-right:-20px;}}"),
-                    Fm = iu("div", {
+                    })("position:relative;height:100%;flex-grow:1;&:hover{", Fm, "{margin-right:0px;}", Hm, "{margin-right:-20px;}}"),
+                    Wm = iu("div", {
                         target: "e1oqhh5q1"
                     })("display:flex;flex-grow:1;align-items:center;text-align:center;margin:0 1.3rem 0.5rem 1.3rem;margin-top:", (function(e) {
                         return e.first ? "0" : "0.5rem"
                     }), ";font-size:1.1rem;font-weight:700;"),
-                    Hm = iu("div", {
+                    Bm = iu("div", {
                         target: "e1oqhh5q0"
                     })("");
 
-                function zm(e, t) {
+                function Vm(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -25498,18 +25542,18 @@
                     return n
                 }
 
-                function Wm(e) {
+                function Gm(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? zm(Object(n), !0).forEach((function(t) {
+                        t % 2 ? Vm(Object(n), !0).forEach((function(t) {
                             (0, Et.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : zm(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Vm(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                const Bm = function() {
+                const $m = function() {
                     var e, t, n = re(),
                         a = Tp().playerModerations,
                         o = Jt(l.useState(Object.fromEntries(Object.values(r).map((function(e) {
@@ -25541,7 +25585,7 @@
                         className: "center-block text-center"
                     }, l.createElement("h2", null, "No Player Moderations To Show"));
                     var f = 12 / Math.round((null !== (e = null === (t = c.current) || void 0 === t ? void 0 : t.offsetWidth) && void 0 !== e ? e : 500) / 500);
-                    return l.createElement(Vm, {
+                    return l.createElement(qm, {
                         ref: c
                     }, d.map((function(e) {
                         var t;
@@ -25550,7 +25594,7 @@
                         }, l.createElement("h3", null, l.createElement(Li.Z, {
                             size: "sm",
                             onClick: function() {
-                                return t = e, void s(Wm(Wm({}, i), {}, (0, Et.Z)({}, t, !i[t])));
+                                return t = e, void s(Gm(Gm({}, i), {}, (0, Et.Z)({}, t, !i[t])));
                                 var t
                             },
                             color: i[e] ? "primary" : "secondary",
@@ -25603,18 +25647,18 @@
                         }), " More", " ")))
                     })))
                 };
-                var Vm = iu("div", {
+                var qm = iu("div", {
                         target: "e10fzxzn0"
                     })({
                         name: "5kov97",
                         styles: "display:flex;flex-wrap:wrap"
                     }),
-                    Gm = n(42317),
-                    $m = n.n(Gm),
-                    qm = n(15538),
-                    Jm = n(67954);
+                    Jm = n(42317),
+                    Km = n.n(Jm),
+                    Qm = n(15538),
+                    Xm = n(67954);
 
-                function Km(e) {
+                function eh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -25634,9 +25678,9 @@
                         return $e(this, n)
                     }
                 }
-                const Qm = function(e) {
+                const th = function(e) {
                     Ve(n, e);
-                    var t = Km(n);
+                    var t = eh(n);
 
                     function n(e) {
                         var r;
@@ -25672,7 +25716,7 @@
                     }]), n
                 }(l.Component);
 
-                function Xm(e) {
+                function nh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -25692,9 +25736,9 @@
                         return $e(this, n)
                     }
                 }
-                var eh = function(e) {
+                var rh = function(e) {
                     Ve(n, e);
-                    var t = Xm(n);
+                    var t = nh(n);
 
                     function n(e) {
                         var r;
@@ -25790,7 +25834,7 @@
                                 t = (this.state.region || "us").toLowerCase();
                             return l.createElement(Bl.Z, null, l.createElement(cd.Z, {
                                 tag: "h3"
-                            }, "New Instance"), l.createElement(ud.Z, null, l.createElement(qm.Z, {
+                            }, "New Instance"), l.createElement(ud.Z, null, l.createElement(Qm.Z, {
                                 onSubmit: this.handleSubmit,
                                 className: "p-2 ".concat(ki({
                                     name: "k2zgss",
@@ -25808,7 +25852,7 @@
                                 value: "public",
                                 defaultChecked: !0,
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "public"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25818,7 +25862,7 @@
                                 id: "friends+",
                                 value: "hidden",
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "friends+"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25829,7 +25873,7 @@
                                 value: "hidden",
                                 defaultChecked: !0,
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "friends+"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25839,7 +25883,7 @@
                                 id: "friends",
                                 value: "friends",
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "friends"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25849,7 +25893,7 @@
                                 id: "invite+",
                                 value: "private",
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "invite+"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25859,7 +25903,7 @@
                                 id: "invite",
                                 value: "private",
                                 onClick: this.handleType
-                            }), l.createElement(Jm.Z, {
+                            }), l.createElement(Xm.Z, {
                                 for: "invite"
                             }, "  ", l.createElement("strong", {
                                 className: "instance-access-type"
@@ -25873,19 +25917,19 @@
                                     name: "g8jywq",
                                     styles: "&{list-style-type:none;padding:0;margin-left:-1.4rem;}& li{display:inline-block;margin-right:2em;& label{display:inline;margin-left:0.4em;vertical-align:top;}}"
                                 })
-                            }, l.createElement("li", null, l.createElement(Qm, {
+                            }, l.createElement("li", null, l.createElement(th, {
                                 isSelected: "us" === t,
                                 region: "us",
                                 onClick: this.handleRegion
-                            })), l.createElement("li", null, l.createElement(Qm, {
+                            })), l.createElement("li", null, l.createElement(th, {
                                 isSelected: "use" === t,
                                 region: "use",
                                 onClick: this.handleRegion
-                            })), l.createElement("li", null, l.createElement(Qm, {
+                            })), l.createElement("li", null, l.createElement(th, {
                                 isSelected: "eu" === t,
                                 region: "eu",
                                 onClick: this.handleRegion
-                            })), l.createElement("li", null, l.createElement(Qm, {
+                            })), l.createElement("li", null, l.createElement(th, {
                                 isSelected: "jp" === t,
                                 region: "jp",
                                 onClick: this.handleRegion
@@ -25901,14 +25945,14 @@
                         }
                     }]), n
                 }(l.Component);
-                const th = Q((function(e) {
+                const ah = Q((function(e) {
                     return {
                         databaseWorld: e.world.databaseWorld,
                         currentUser: e.currentUser.databaseUser
                     }
-                }))(eh);
+                }))(rh);
 
-                function nh(e) {
+                function oh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -25928,9 +25972,9 @@
                         return $e(this, n)
                     }
                 }
-                var rh = function(e) {
+                var ih = function(e) {
                     Ve(n, e);
-                    var t = nh(n);
+                    var t = oh(n);
 
                     function n(e) {
                         var r;
@@ -26050,7 +26094,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const ah = (0, le.withRouter)(Q((function(e, t) {
+                const sh = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         onCancel: t.onCancel,
                         publish: t.publish,
@@ -26063,9 +26107,9 @@
                         loading: null != e.publish.worlds[t.worldId] && e.publish.worlds[t.worldId].loading,
                         canPublish: null != e.publish.worlds[t.worldId] && e.publish.worlds[t.worldId].canPublish
                     }
-                }))(rh));
+                }))(ih));
 
-                function oh(e) {
+                function lh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -26085,9 +26129,9 @@
                         return $e(this, n)
                     }
                 }
-                var ih = function(e) {
+                var ch = function(e) {
                     Ve(n, e);
-                    var t = oh(n);
+                    var t = lh(n);
 
                     function n(e) {
                         var r;
@@ -26119,7 +26163,7 @@
                                 }, l.createElement(vu.Z, null, l.createElement(Gu, {
                                     onClick: this.closeModal,
                                     className: "float-right"
-                                }), l.createElement(ah, {
+                                }), l.createElement(sh, {
                                     publish: "publish",
                                     onCancel: this.closeModal,
                                     worldId: this.props.worldId,
@@ -26138,7 +26182,7 @@
                                 }, l.createElement(vu.Z, null, l.createElement(Gu, {
                                     onClick: this.closeModal,
                                     className: "float-right"
-                                }), l.createElement(ah, {
+                                }), l.createElement(sh, {
                                     publish: "unpublish",
                                     onCancel: this.closeModal,
                                     worldId: this.props.worldId,
@@ -26258,7 +26302,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const sh = (0, le.withRouter)(Q((function(e, t) {
+                const uh = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         worldId: t.worldId,
                         worldTags: t.worldTags,
@@ -26269,8 +26313,8 @@
                         isMod: t.isMod,
                         canPublish: e.publish.worlds[t.worldId]
                     }
-                }))(ih));
-                const lh = function(e) {
+                }))(ch));
+                const dh = function(e) {
                     var t = e.instance,
                         n = e.world,
                         r = e.title;
@@ -26296,7 +26340,7 @@
                     }, u)
                 };
 
-                function ch(e) {
+                function fh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -26318,7 +26362,7 @@
                 }
                 l.Component;
 
-                function uh(e) {
+                function ph(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -26338,11 +26382,11 @@
                         return $e(this, n)
                     }
                 }
-                var dh = {
+                var mh = {
                         width: "100%",
                         height: "100%"
                     },
-                    fh = function(e) {
+                    hh = function(e) {
                         var t = e.releaseStatus;
                         return "public" === t ? l.createElement("span", null, l.createElement(ec.Z, null, l.createElement(ut(), {
                             name: "check"
@@ -26350,48 +26394,48 @@
                             name: "exclamation"
                         }), t))
                     },
-                    ph = function(e) {
+                    gh = function(e) {
                         return e.featured ? l.createElement("span", null, l.createElement(ec.Z, null, l.createElement(ut(), {
                             name: "thumbs-up",
                             title: "Featured"
                         }), " Featured")) : null
                     },
-                    mh = function(e) {
+                    yh = function(e) {
                         var t = e.fileSize;
                         return "" !== t ? l.createElement("span", null, l.createElement(ec.Z, null, l.createElement(ut(), {
                             name: "stats",
                             title: "File Size"
-                        }), " ", $m()(t))) : null
+                        }), " ", Km()(t))) : null
                     },
-                    hh = function(e) {
+                    vh = function(e) {
                         var t = e.version;
                         return l.createElement("li", null, t)
                     },
-                    gh = function(e) {
+                    _h = function(e) {
                         var t = e.versions;
                         return l.createElement("ul", null, t.map((function(e, t) {
-                            return l.createElement(hh, {
+                            return l.createElement(vh, {
                                 key: e + t,
                                 version: e
                             })
                         })))
                     },
-                    yh = function(e) {
+                    bh = function(e) {
                         var t = e.platform;
                         return l.createElement("li", null, t)
                     },
-                    vh = function(e) {
+                    Eh = function(e) {
                         var t = e.platforms;
                         return l.createElement("ul", null, t.map((function(e, t) {
-                            return l.createElement(yh, {
+                            return l.createElement(bh, {
                                 key: e + t,
                                 platform: e
                             })
                         })))
                     },
-                    _h = function(e) {
+                    wh = function(e) {
                         Ve(n, e);
-                        var t = uh(n);
+                        var t = ph(n);
 
                         function n(e) {
                             var r;
@@ -26501,11 +26545,11 @@
                                     md: "12"
                                 }, l.createElement("h3", null, n.name, " ", l.createElement("small", null, "— by ", l.createElement(it, {
                                     to: m
-                                }, n.authorName)), " ", l.createElement("small", null, l.createElement(fh, {
+                                }, n.authorName)), " ", l.createElement("small", null, l.createElement(hh, {
                                     releaseStatus: n.releaseStatus
-                                }), " ", l.createElement(ph, {
+                                }), " ", l.createElement(gh, {
                                     featured: n.featured
-                                }), " ", l.createElement(mh, {
+                                }), " ", l.createElement(yh, {
                                     fileSize: o
                                 }))))), n.previewYoutubeId && l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                                     md: "12"
@@ -26514,7 +26558,7 @@
                                 }, l.createElement(os, {
                                     className: "previewYoutube",
                                     videoId: this.props.databaseWorld.previewYoutubeId,
-                                    opts: dh
+                                    opts: mh
                                 })))), l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                                     md: "8"
                                 }, l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
@@ -26564,10 +26608,10 @@
                                     capacity: n.capacity,
                                     worldUpdated: this.refreshWorld,
                                     editableTags: !0
-                                }), l.createElement("hr", null), !1, !1, l.createElement("h3", null, "Instances"), l.createElement("div", null, l.createElement(th, null)), null != n.instances && n.instances.length > 0 && l.createElement("div", null, n.instances.filter((function(e) {
+                                }), l.createElement("hr", null), !1, !1, l.createElement("h3", null, "Instances"), l.createElement("div", null, l.createElement(ah, null)), null != n.instances && n.instances.length > 0 && l.createElement("div", null, n.instances.filter((function(e) {
                                     return !s || e[1] > 0
                                 })).map((function(e, t) {
-                                    return l.createElement(lh, {
+                                    return l.createElement(dh, {
                                         key: e[0] + t,
                                         instance: e,
                                         world: n
@@ -26577,7 +26621,7 @@
                                 }, l.createElement(Vl.Z, {
                                     className: "w-100 flex-column",
                                     "vertical-size": "lg"
-                                }, null != n.instances && l.createElement(lh, {
+                                }, null != n.instances && l.createElement(dh, {
                                     title: "Launch",
                                     world: n,
                                     instance: n.instances.length > 0 ? n.instances[0] : [0, "1"]
@@ -26595,7 +26639,7 @@
                                     style: {
                                         borderRadius: "0"
                                     }
-                                }, "Edit"), l.createElement(sh, {
+                                }, "Edit"), l.createElement(uh, {
                                     worldId: n.id,
                                     hasTrustKnown: new Set(u.tags).has("system_trust_known"),
                                     releaseStatus: n.releaseStatus,
@@ -26605,15 +26649,15 @@
                                     worldTags: n.tags
                                 }), s && l.createElement(Li.Z, {
                                     onClick: this.showDeleteAllFeedbackModal
-                                }, "Clear All Feedback")), l.createElement("br", null), l.createElement("br", null), !1, l.createElement("hr", null), l.createElement("div", null, (s || c) && l.createElement("div", null, l.createElement("h3", null, "Unity Versions"), l.createElement(gh, {
+                                }, "Clear All Feedback")), l.createElement("br", null), l.createElement("br", null), !1, l.createElement("hr", null), l.createElement("div", null, (s || c) && l.createElement("div", null, l.createElement("h3", null, "Unity Versions"), l.createElement(_h, {
                                     versions: r
-                                })), l.createElement("h3", null, "Platforms"), l.createElement(vh, {
+                                })), l.createElement("h3", null, "Platforms"), l.createElement(Eh, {
                                     platforms: a
                                 }))))))
                             }
                         }]), n
                     }(l.Component);
-                const bh = (0, le.withRouter)(Q((function(e, t) {
+                const kh = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         worldId: t.match.params.worldId,
                         config: e.config.config,
@@ -26634,8 +26678,8 @@
                         currentUser: null != e.currentUser && e.currentUser.databaseUser,
                         reports: e.world.reports
                     }
-                }))(_h));
-                const Eh = function(e) {
+                }))(wh));
+                const Mh = function(e) {
                     var t = e.user;
                     return l.createElement(Ke.Z, {
                         xs: 12
@@ -26647,7 +26691,7 @@
                     })))
                 };
 
-                function wh(e) {
+                function Lh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -26667,9 +26711,9 @@
                         return $e(this, n)
                     }
                 }
-                var kh = function(e) {
+                var Sh = function(e) {
                     Ve(n, e);
-                    var t = wh(n);
+                    var t = Lh(n);
 
                     function n(e) {
                         var r;
@@ -26791,7 +26835,7 @@
                             }, l.createElement("h3", null, "Users"), l.createElement(Mi.Z, {
                                 className: "justify-content-center"
                             }, i && 0 === a.length && l.createElement("p", null, "None Found"), a.map((function(e, t) {
-                                return l.createElement(Eh, {
+                                return l.createElement(Mh, {
                                     key: e.id + t,
                                     user: e
                                 })
@@ -26827,7 +26871,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const Mh = (0, le.withRouter)(Q((function(e, t) {
+                const xh = (0, le.withRouter)(Q((function(e, t) {
                         return {
                             query: t.match.params.query,
                             isMod: e.currentUser.isMod,
@@ -26843,8 +26887,8 @@
                             endOfAvatarResults: e.search.endOfAvatarResults,
                             reducer: e.search
                         }
-                    }))(kh)),
-                    Lh = function(e) {
+                    }))(Sh)),
+                    Oh = function(e) {
                         var t = e.location,
                             n = e.worldName,
                             r = t.split(":"),
@@ -26860,7 +26904,7 @@
                         }, s)
                     };
 
-                function Sh(e) {
+                function Th(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -26880,16 +26924,16 @@
                         return $e(this, n)
                     }
                 }
-                var xh = new Set(["friend-active", "friend-add", "friend-online"]),
-                    Oh = ["Cool", "Neat", "Sure", "Thanks", "Affirmative", "Gotcha", "Okay", "Yep", "Cool cool cool", "Great", "Awesome", "Wonderful", "Wow", "Nice", "Yep", "Sweet"],
-                    Th = function(e) {
+                var Dh = new Set(["friend-active", "friend-add", "friend-online"]),
+                    Ch = ["Cool", "Neat", "Sure", "Thanks", "Affirmative", "Gotcha", "Okay", "Yep", "Cool cool cool", "Great", "Awesome", "Wonderful", "Wow", "Nice", "Yep", "Sweet"],
+                    Nh = function(e) {
                         Ve(n, e);
-                        var t = Sh(n);
+                        var t = Th(n);
 
                         function n(e) {
                             var r;
                             return Fe(this, n), (r = t.call(this, e)).state = {
-                                affirmative: Oh.selectRandomItem()
+                                affirmative: Ch.selectRandomItem()
                             }, r.hide = r.hide.bind((0, We.Z)(r)), r.destroy = r.destroy.bind((0, We.Z)(r)), r.see = r.see.bind((0, We.Z)(r)), r.accept = r.accept.bind((0, We.Z)(r)), r.pushNotification = r.pushNotification.bind((0, We.Z)(r)), r
                         }
                         return ze(n, [{
@@ -26936,7 +26980,7 @@
                             value: function() {
                                 this.props.dispatch(Ra({
                                     notificationId: this.props.notification.id,
-                                    withServer: !xh.has(this.props.notification.type)
+                                    withServer: !Dh.has(this.props.notification.type)
                                 }))
                             }
                         }, {
@@ -26963,7 +27007,7 @@
                                     return t.id === e.props.notification.id
                                 })).length && this.props.dispatch(ja({
                                     notificationId: this.props.notification.id,
-                                    withServer: !xh.has(this.props.notification.type)
+                                    withServer: !Dh.has(this.props.notification.type)
                                 }))
                             }
                         }, {
@@ -26997,7 +27041,7 @@
                                         onClick: this.hide
                                     }, this.state.affirmative),
                                     u = null;
-                                t.details && (u = l.createElement("div", null, l.createElement("hr", null), l.createElement(Lh, {
+                                t.details && (u = l.createElement("div", null, l.createElement("hr", null), l.createElement(Oh, {
                                     location: t.details.worldId,
                                     worldName: t.details.worldName
                                 }))), "friendRequest" === t.type && (a = l.createElement("div", null, n && l.createElement("strong", null, t.senderUsername, " "), "would like to be your friend!", l.createElement("hr", null), l.createElement("div", null, "friendRequest" === t.type && l.createElement("div", null, l.createElement(Li.Z, {
@@ -27015,7 +27059,7 @@
                                         name: "1qz1pef",
                                         styles: "height:100%;display:table-cell;vertical-align:middle"
                                     }) : ""
-                                }, l.createElement("p", null, n && l.createElement("strong", null, t.senderUsername, " "), "has invited you to ", l.createElement("strong", null, t.details.worldName), t.details.inviteMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.inviteMessage, '"')))), s = !0) : "inviteResponse" === t.type ? null == t.details || null == t.details.responseMessage ? a = "".concat(t.senderUsername, " has responded to your invite, but we're unable to properly display it. :(") : (a = l.createElement("div", null, l.createElement("p", null, n && l.createElement("strong", null, t.senderUsername, " "), " has responded to your invite!", t.details.responseMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.responseMessage, '"')))), i = !0) : "requestInvite" === t.type && (a = null == t.details ? "".concat(t.senderUsername, " has requested an invite to your instance, but we're unable to properly display it. :(") : l.createElement("div", null, l.createElement("p", null, !t.details.requestMessage && l.createElement("span", null, l.createElement("i", null, t.senderUsername, " has requested an invite to your world!")), t.details.requestMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.requestMessage, '"'))))), xh.has(t.type) && (a = l.createElement("div", null, l.createElement("p", null, t.message), l.createElement(Li.Z, {
+                                }, l.createElement("p", null, n && l.createElement("strong", null, t.senderUsername, " "), "has invited you to ", l.createElement("strong", null, t.details.worldName), t.details.inviteMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.inviteMessage, '"')))), s = !0) : "inviteResponse" === t.type ? null == t.details || null == t.details.responseMessage ? a = "".concat(t.senderUsername, " has responded to your invite, but we're unable to properly display it. :(") : (a = l.createElement("div", null, l.createElement("p", null, n && l.createElement("strong", null, t.senderUsername, " "), " has responded to your invite!", t.details.responseMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.responseMessage, '"')))), i = !0) : "requestInvite" === t.type && (a = null == t.details ? "".concat(t.senderUsername, " has requested an invite to your instance, but we're unable to properly display it. :(") : l.createElement("div", null, l.createElement("p", null, !t.details.requestMessage && l.createElement("span", null, l.createElement("i", null, t.senderUsername, " has requested an invite to your world!")), t.details.requestMessage && l.createElement("span", null, l.createElement("br", null), l.createElement("i", null, '"', t.details.requestMessage, '"'))))), Dh.has(t.type) && (a = l.createElement("div", null, l.createElement("p", null, t.message), l.createElement(Li.Z, {
                                     onClick: this.hide
                                 }, this.state.affirmative)));
                                 var d = [t.type, "seen-".concat(t.seen || "false")];
@@ -27081,15 +27125,15 @@
                             }
                         }]), n
                     }(l.Component);
-                const Dh = Q((function(e) {
+                const Ah = Q((function(e) {
                     return {
                         notifications: e.notifications.notifications,
                         pushNotifications: e.notifications.pushNotifications,
                         users: e.friends.users
                     }
-                }))(Th);
+                }))(Nh);
 
-                function Ch(e) {
+                function Ph(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27109,9 +27153,9 @@
                         return $e(this, n)
                     }
                 }
-                var Nh = function(e) {
+                var Ih = function(e) {
                     Ve(n, e);
-                    var t = Ch(n);
+                    var t = Ph(n);
 
                     function n(e) {
                         var r;
@@ -27144,7 +27188,7 @@
                                 return e.type == r
                             })));
                             var i = (o = o.slice(0, this.state.visibleNotifications)).map((function(e) {
-                                return l.createElement(Dh, {
+                                return l.createElement(Ah, {
                                     notification: e,
                                     key: e.id,
                                     popIn: !0,
@@ -27175,14 +27219,14 @@
                         }
                     }]), n
                 }(l.Component);
-                const Ah = Q((function(e) {
+                const Rh = Q((function(e) {
                     return {
                         pushNotifications: e.notifications.pushNotifications,
                         notifications: e.notifications.notifications
                     }
-                }))(Nh);
+                }))(Ih);
 
-                function Ph(e) {
+                function jh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27202,9 +27246,9 @@
                         return $e(this, n)
                     }
                 }
-                var Ih = function(e) {
+                var Yh = function(e) {
                     Ve(n, e);
-                    var t = Ph(n);
+                    var t = jh(n);
 
                     function n(e) {
                         var r;
@@ -27236,7 +27280,7 @@
                                 t = e.ignoredFriendRequests,
                                 n = (e.ignoredFriendRequestsOffset, e.ignoredFriendRequestsLoading),
                                 r = t.map((function(e) {
-                                    return l.createElement(Dh, {
+                                    return l.createElement(Ah, {
                                         notification: e,
                                         key: e.id,
                                         ignored: !0
@@ -27253,15 +27297,15 @@
                         }
                     }]), n
                 }(l.Component);
-                const Rh = Q((function(e) {
+                const Zh = Q((function(e) {
                     return {
                         ignoredFriendRequests: e.notifications.ignoredFriendRequests,
                         ignoredFriendRequestsOffset: e.notifications.ignoredFriendRequestsOffset,
                         ignoredFriendRequestsLoading: e.notifications.ignoredFriendRequestsLoading
                     }
-                }))(Ih);
+                }))(Yh);
 
-                function jh(e) {
+                function Uh(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27281,9 +27325,9 @@
                         return $e(this, n)
                     }
                 }
-                var Yh = function(e) {
+                var Fh = function(e) {
                     Ve(n, e);
-                    var t = jh(n);
+                    var t = Uh(n);
 
                     function n(e) {
                         var r;
@@ -27359,26 +27403,26 @@
                                 onClick: this.clearAllNotifications
                             }, l.createElement(ut(), {
                                 name: "fire"
-                            }), " Clear All Messages", " ")), l.createElement(Ah, {
+                            }), " Clear All Messages", " ")), l.createElement(Rh, {
                                 type: this.state.type,
                                 n: 20
-                            })), 0 === e.length && l.createElement("div", null, " No messages for you right now! "), l.createElement("br", null), l.createElement(Rh, null))
+                            })), 0 === e.length && l.createElement("div", null, " No messages for you right now! "), l.createElement("br", null), l.createElement(Zh, null))
                         }
                     }]), n
                 }(l.Component);
-                const Zh = Q((function(e) {
+                const Hh = Q((function(e) {
                     return {
                         notifications: e.notifications.notifications
                     }
-                }))(Yh);
-                var Uh = function(e) {
+                }))(Fh);
+                var zh = function(e) {
                         var t = e.fileId;
                         return {
                             type: "FIX_FILE",
                             payload: Ye().get(window.apiUrl("/api/1/restoredFile?fileId=".concat(t)), {})
                         }
                     },
-                    Fh = function(e) {
+                    Wh = function(e) {
                         var t = e.params,
                             n = "";
                         return t.orderId && (n = "orderId=".concat(t.orderId)), t.transId && (n = "transId=".concat(t.transId)), {
@@ -27386,7 +27430,7 @@
                             payload: Ye().get(window.apiUrl("/api/1/steam/transaction/queryTransaction?".concat(n)), t)
                         }
                     };
-                var Hh = function(e) {
+                var Bh = function(e) {
                         var t = e.visible,
                             n = e.friendship,
                             r = e.friendLink,
@@ -27427,15 +27471,6 @@
                             name: "star"
                         }), " Add Friend")
                     },
-                    zh = function() {
-                        return []
-                    },
-                    Wh = function() {
-                        return []
-                    },
-                    Bh = function() {
-                        return []
-                    },
                     Vh = function() {
                         return []
                     },
@@ -27456,9 +27491,18 @@
                     },
                     Qh = function() {
                         return []
+                    },
+                    Xh = function() {
+                        return []
+                    },
+                    eg = function() {
+                        return []
+                    },
+                    tg = function() {
+                        return []
                     };
 
-                function Xh(e) {
+                function ng(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27478,9 +27522,9 @@
                         return $e(this, n)
                     }
                 }
-                const eg = function(e) {
+                const rg = function(e) {
                     Ve(r, e);
-                    var t, n = Xh(r);
+                    var t, n = ng(r);
 
                     function r(e) {
                         var t;
@@ -27535,7 +27579,7 @@
                     }]), r
                 }(l.Component);
 
-                function tg(e) {
+                function ag(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27555,9 +27599,9 @@
                         return $e(this, n)
                     }
                 }
-                const ng = function(e) {
+                const og = function(e) {
                     Ve(n, e);
-                    var t = tg(n);
+                    var t = ag(n);
 
                     function n(e) {
                         var r;
@@ -27605,7 +27649,7 @@
                     }]), n
                 }(l.Component);
 
-                function rg(e) {
+                function ig(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27625,9 +27669,9 @@
                         return $e(this, n)
                     }
                 }
-                var ag = function(e) {
+                var sg = function(e) {
                     Ve(n, e);
-                    var t = rg(n);
+                    var t = ig(n);
 
                     function n(e) {
                         var r;
@@ -27695,9 +27739,9 @@
                                 i = "" !== this.state.timespan && "" !== this.state.subscriptionId;
                             return n ? l.createElement("div", null, " loading ... ") : o ? l.createElement("div", null, " ", "u did it ", l.createElement(ut(), {
                                 name: "thumbs-up"
-                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(eg, {
+                            })) : a ? l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))) : l.createElement("div", null, l.createElement("div", null, t), l.createElement("br", null), l.createElement(rg, {
                                 onChange: this.changeSubscription
-                            }), l.createElement("br", null), l.createElement(ng, {
+                            }), l.createElement("br", null), l.createElement(og, {
                                 onChange: this.changeTimespan
                             }), l.createElement("br", null), l.createElement(Li.Z, {
                                 onClick: this.createAdminSubscription,
@@ -27715,10 +27759,10 @@
                         error: e.createAdminSubscription.error,
                         complete: e.createAdminSubscription.complete
                     }
-                }))(ag);
-                var og = n(97394);
+                }))(sg);
+                var lg = n(97394);
 
-                function ig(e) {
+                function cg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27738,9 +27782,9 @@
                         return $e(this, n)
                     }
                 }
-                var sg = function(e) {
+                var ug = function(e) {
                     Ve(r, e);
-                    var t, n = ig(r);
+                    var t, n = cg(r);
 
                     function r(e) {
                         var t;
@@ -27814,7 +27858,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(og.Z, {
+                            }), l.createElement(lg.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_3,
                                 target: "tooltip-3",
@@ -27855,7 +27899,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(og.Z, {
+                            }), l.createElement(lg.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_1,
                                 target: "tooltip-1",
@@ -27901,7 +27945,7 @@
                             }, l.createElement(ut(), {
                                 name: "info",
                                 size: "xs"
-                            }), l.createElement(og.Z, {
+                            }), l.createElement(lg.Z, {
                                 placement: "right",
                                 isOpen: this.state.tooltipOpen_2,
                                 target: "tooltip-2",
@@ -27971,11 +28015,11 @@
                         diagnostic: e.user.steamDiagnostic.data,
                         subscriptions: e.user.subscriptions
                     }
-                }))(sg);
-                var lg = n(65780),
-                    cg = n.n(lg);
+                }))(ug);
+                var dg = n(65780),
+                    fg = n.n(dg);
 
-                function ug(e) {
+                function pg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -27995,9 +28039,9 @@
                         return $e(this, n)
                     }
                 }
-                var dg = function(e) {
+                var mg = function(e) {
                     Ve(a, e);
-                    var t, n, r = ug(a);
+                    var t, n, r = pg(a);
 
                     function a(e) {
                         var t;
@@ -28040,7 +28084,7 @@
                                             })
                                         }));
                                     case 2:
-                                        return e.next = 4, cg()(1e3);
+                                        return e.next = 4, fg()(1e3);
                                     case 4:
                                         return e.next = 6, this.props.dispatch(Hr({
                                             userId: this.props.userId,
@@ -28085,7 +28129,7 @@
                                 id: "diagnosticTooltip"
                             }, l.createElement(ut(), {
                                 name: "info"
-                            }), l.createElement(og.Z, {
+                            }), l.createElement(lg.Z, {
                                 placement: "right",
                                 isOpen: this.state.diagnosticTooltipOpen,
                                 target: "diagnosticTooltip",
@@ -28145,7 +28189,7 @@
                                     id: "repairTooltip"
                                 }, l.createElement(ut(), {
                                     name: "info"
-                                }), l.createElement(og.Z, {
+                                }), l.createElement(lg.Z, {
                                     placement: "right",
                                     isOpen: e.state.repairTooltipOpen,
                                     target: "repairTooltip",
@@ -28177,11 +28221,11 @@
                         repairComplete: e.user.mergeRepair.complete,
                         loading: e.user.mergeDiagnostic.loading || e.user.mergeRepair.loading
                     }
-                }))(dg);
-                var fg = n(69618),
-                    pg = n(88822);
+                }))(mg);
+                var hg = n(69618),
+                    gg = n(88822);
 
-                function mg(e) {
+                function yg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28201,9 +28245,9 @@
                         return $e(this, n)
                     }
                 }
-                var hg = function(e) {
+                var vg = function(e) {
                     Ve(n, e);
-                    var t = mg(n);
+                    var t = yg(n);
 
                     function n(e) {
                         var r;
@@ -28267,9 +28311,9 @@
                         }
                     }]), n
                 }(l.Component);
-                const gg = (0, le.withRouter)(hg);
+                const _g = (0, le.withRouter)(vg);
 
-                function yg(e) {
+                function bg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28289,9 +28333,9 @@
                         return $e(this, n)
                     }
                 }
-                var vg = function(e) {
+                var Eg = function(e) {
                     Ve(n, e);
-                    var t = yg(n);
+                    var t = bg(n);
 
                     function n(e) {
                         var r;
@@ -28489,7 +28533,7 @@
                             var e = this.props.currentUser,
                                 t = (e = void 0 === e ? {} : e).friends,
                                 n = this.state.friends.map((function(e) {
-                                    return l.createElement(gg, {
+                                    return l.createElement(_g, {
                                         user: e,
                                         key: e.id
                                     })
@@ -28507,11 +28551,11 @@
                                 className: "px-1"
                             }, l.createElement(Mi.Z, {
                                 className: "mb-2 mx-0"
-                            }, l.createElement(fg.Z, null, l.createElement(Af.Z, {
+                            }, l.createElement(hg.Z, null, l.createElement(Af.Z, {
                                 placeholder: "User ID",
                                 value: this.state.search,
                                 onChange: this.handleSearchChange
-                            }), l.createElement(pg.Z, {
+                            }), l.createElement(gg.Z, {
                                 addonType: "append"
                             }, l.createElement(Li.Z, {
                                 onClick: this.handleSearchClick
@@ -28519,7 +28563,7 @@
                                 name: "search"
                             }))))), this.state.search.length > 0 && null === this.state.foundFriend && l.createElement(Mi.Z, {
                                 className: "mx-0"
-                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(gg, {
+                            }, "UserID ", this.state.search, " is not in the friends list"), this.state.foundFriend && l.createElement(_g, {
                                 user: this.state.foundFriend
                             }), 0 === this.state.search.length && l.createElement(l.Fragment, null, l.createElement(Ke.Z, {
                                 className: "px-0"
@@ -28539,16 +28583,16 @@
                     return {
                         currentUser: e.user.databaseUser
                     }
-                }))(vg);
-                var _g = n(90442),
-                    bg = n(77243),
-                    Eg = n(53999),
-                    wg = n(98008),
-                    kg = n(9393),
-                    Mg = n(18829),
-                    Lg = n(36595);
+                }))(Eg);
+                var wg = n(90442),
+                    kg = n(77243),
+                    Mg = n(53999),
+                    Lg = n(98008),
+                    Sg = n(9393),
+                    xg = n(18829),
+                    Og = n(36595);
 
-                function Sg(e) {
+                function Tg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28568,9 +28612,9 @@
                         return $e(this, n)
                     }
                 }
-                var xg = function(e) {
+                var Dg = function(e) {
                     Ve(n, e);
-                    var t = Sg(n);
+                    var t = Tg(n);
 
                     function n(e) {
                         var r;
@@ -28638,16 +28682,16 @@
                                 style: {
                                     width: "18rem"
                                 }
-                            }, l.createElement(_g.Z, {
+                            }, l.createElement(wg.Z, {
                                 top: !0,
                                 className: "mt-4 mb-1",
                                 src: "https://s3.amazonaws.com/assets.vrchat.com/misc/steam_logo.svg"
                             }), l.createElement(ud.Z, {
                                 className: "p-3"
-                            }, l.createElement(bg.Z, {
+                            }, l.createElement(kg.Z, {
                                 className: "mb-3",
                                 tabs: !0
-                            }, l.createElement(Eg.Z, null, l.createElement(wg.Z, {
+                            }, l.createElement(Mg.Z, null, l.createElement(Lg.Z, {
                                 className: wi({
                                     active: "1" === this.state.activeTab
                                 }),
@@ -28657,9 +28701,9 @@
                                     });
                                     var t
                                 }
-                            }, "Subscription")), !1, !1), l.createElement(kg.Z, {
+                            }, "Subscription")), !1, !1), l.createElement(Sg.Z, {
                                 activeTab: this.state.activeTab
-                            }, l.createElement(Mg.Z, {
+                            }, l.createElement(xg.Z, {
                                 tabId: "1"
                             }, l.createElement("h6", null, " ", f && l.createElement(ut(), {
                                 name: "gift"
@@ -28668,7 +28712,7 @@
                             }, l.createElement("br", null), l.createElement("h5", null, " Gift Recipient "), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(Ou, {
                                 userId: p,
                                 size: "wide"
-                            }))))), l.createElement(Mg.Z, {
+                            }))))), l.createElement(xg.Z, {
                                 tabId: "2"
                             }, l.createElement("div", null, l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement("small", null, c))), l.createElement("br", null), l.createElement("h6", null, " Steam Agreement Info"), g && l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                                 xs: "4"
@@ -28696,9 +28740,9 @@
                                 name: "thumbs-up"
                             }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, i)), l.createElement("pre", null, l.createElement("code", null, a))), !o && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", c), l.createElement("br", null), l.createElement("div", null, "Are you sure you want to fail this Steam transaction? Doing so will enable the user to make new purchases."), l.createElement("br", null), l.createElement(Li.Z, {
                                 onClick: this.deleteSubscription(c)
-                            }, "Confirm Chargeback Clear"))))))), l.createElement(Mg.Z, {
+                            }, "Confirm Chargeback Clear"))))))), l.createElement(xg.Z, {
                                 tabId: "3"
-                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(Lg.Z, {
+                            }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), v && l.createElement(Og.Z, {
                                 borderless: !0,
                                 striped: !0,
                                 size: "sm"
@@ -28713,7 +28757,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const Og = Q((function(e) {
+                const Cg = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         error: e.user.transactions.error,
@@ -28722,8 +28766,8 @@
                         updateError: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(xg);
-                const Tg = function(e) {
+                }))(Dg);
+                const Ng = function(e) {
                     var t, n, r = e.transaction,
                         a = Jt((0, l.useState)("1"), 2),
                         o = a[0],
@@ -28748,16 +28792,16 @@
                         style: {
                             width: "18rem"
                         }
-                    }, l.createElement(_g.Z, {
+                    }, l.createElement(wg.Z, {
                         top: !0,
                         className: "ml-3 oculus-img",
                         src: "https://s3.amazonaws.com/assets.vrchat.com/misc/oculus-logo.png"
                     }), l.createElement(ud.Z, {
                         className: "p-3"
-                    }, l.createElement(bg.Z, {
+                    }, l.createElement(kg.Z, {
                         className: "mb-3",
                         tabs: !0
-                    }, l.createElement(Eg.Z, null, l.createElement(wg.Z, {
+                    }, l.createElement(Mg.Z, null, l.createElement(Lg.Z, {
                         className: wi({
                             active: "1" === o
                         }),
@@ -28768,9 +28812,9 @@
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Occurred"), l.createElement("hr", null), "This subscription is prematurely expired. Please grant the user an Admin sub through ", s(dr()(n)), " while Oculus resolves the issue."), l.createElement(kg.Z, {
+                    }, " An Error Occurred"), l.createElement("hr", null), "This subscription is prematurely expired. Please grant the user an Admin sub through ", s(dr()(n)), " while Oculus resolves the issue."), l.createElement(Sg.Z, {
                         activeTab: o
-                    }, l.createElement(Mg.Z, {
+                    }, l.createElement(xg.Z, {
                         tabId: "1"
                     }, l.createElement("h6", null, " ", d && l.createElement(ut(), {
                         name: "gift"
@@ -28781,7 +28825,7 @@
                     }, l.createElement("br", null), l.createElement("h5", null, " Gift Recipient "), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(Ou, {
                         userId: f,
                         size: "wide"
-                    }))))), l.createElement(Mg.Z, {
+                    }))))), l.createElement(xg.Z, {
                         tabId: "2"
                     }, l.createElement("div", null, l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement("small", null, c))), l.createElement("br", null), l.createElement("h6", null, " Oculus Info"), l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                         xs: "4"
@@ -28797,9 +28841,9 @@
                         xs: "4"
                     }, "Ends"), l.createElement(Ke.Z, null, s(m.period_end_time))), l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                         xs: "4"
-                    }, "Canceled"), l.createElement(Ke.Z, null, s(m.period_start_time))))), l.createElement(Mg.Z, {
+                    }, "Canceled"), l.createElement(Ke.Z, null, s(m.period_start_time))))), l.createElement(xg.Z, {
                         tabId: "3"
-                    }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), h && l.createElement(Lg.Z, {
+                    }, l.createElement("div", null, l.createElement("h6", null, "Logs And Payment History "), l.createElement("br", null), h && l.createElement(Og.Z, {
                         borderless: !0,
                         striped: !0,
                         size: "sm"
@@ -28816,7 +28860,7 @@
                         }(e, t)
                     }))))))))))
                 };
-                const Dg = function(e) {
+                const Ag = function(e) {
                     var t = e.transaction,
                         n = Jt((0, l.useState)("1"), 2),
                         r = n[0],
@@ -28829,30 +28873,30 @@
                         style: {
                             width: "18rem"
                         }
-                    }, l.createElement(_g.Z, {
+                    }, l.createElement(wg.Z, {
                         top: !0,
                         className: "ml-3 vrchat-img",
                         src: "https://s3.amazonaws.com/assets.vrchat.com/www/brand/vrchat-logo-white-transparent-background.png"
                     }), l.createElement(ud.Z, {
                         className: "p-3"
-                    }, l.createElement(bg.Z, {
+                    }, l.createElement(kg.Z, {
                         className: "mb-3",
                         tabs: !0
-                    }, l.createElement(Eg.Z, null, l.createElement(wg.Z, {
+                    }, l.createElement(Mg.Z, null, l.createElement(Lg.Z, {
                         className: wi({
                             active: "1" === r
                         }),
                         onClick: function() {
                             return a("1")
                         }
-                    }, "Subscription"))), l.createElement(kg.Z, {
+                    }, "Subscription"))), l.createElement(Sg.Z, {
                         activeTab: r
-                    }, l.createElement(Mg.Z, {
+                    }, l.createElement(xg.Z, {
                         tabId: "1"
                     }, l.createElement("h6", null, " ", i.description), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, "Period:"), l.createElement(Ke.Z, null, i.period)), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, "Price:"), l.createElement(Ke.Z, null, "$ ", i.amount / 100, " USD")), l.createElement("br", null), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, "Expires:"), l.createElement(Ke.Z, null, dr()(o).fromNow())))))))
                 };
 
-                function Cg(e) {
+                function Pg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -28872,9 +28916,9 @@
                         return $e(this, n)
                     }
                 }
-                var Ng = function(e) {
+                var Ig = function(e) {
                     Ve(n, e);
-                    var t = Cg(n);
+                    var t = Pg(n);
 
                     function n(e) {
                         var r;
@@ -28945,14 +28989,14 @@
                             })), p && l.createElement("div", null, "there has been an error loading the Oculus transactions= ", s), i && l.createElement("div", null, "there has been an error loading the subscription info: ", i), l.createElement(Mi.Z, null, l.createElement("h4", null, "Recurring Subs")), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, 0 === f.length && !u && 0 === (null == a ? void 0 : a.length) && l.createElement("div", null, "None ._."), a && a.map((function(e, t) {
-                                return l.createElement(Dg, {
+                                return l.createElement(Ag, {
                                     transaction: e,
                                     key: "recur-card-".concat(t)
                                 })
                             })), f.map((function(e, t) {
-                                return e.oculus ? l.createElement(Tg, {
+                                return e.oculus ? l.createElement(Ng, {
                                     transaction: e
-                                }) : l.createElement(Og, {
+                                }) : l.createElement(Cg, {
                                     transaction: e,
                                     index: t,
                                     key: "recur-card-".concat(t)
@@ -28964,9 +29008,9 @@
                             }))), l.createElement("div", {
                                 className: "card-container d-flex flex-wrap"
                             }, d.map((function(e, t) {
-                                return e.oculus ? l.createElement(Tg, {
+                                return e.oculus ? l.createElement(Ng, {
                                     transaction: e
-                                }) : l.createElement(Og, {
+                                }) : l.createElement(Cg, {
                                     transaction: e,
                                     index: t,
                                     key: "gift-card-".concat(t)
@@ -28986,8 +29030,8 @@
                         statusCode: e.user.transactions.statusCode,
                         loading: e.user.transactions.loading
                     }
-                }))(Ng);
-                var Ag = function(e) {
+                }))(Ig);
+                var Rg = function(e) {
                         var t = e.userId;
                         return {
                             type: "ADMIN_LOAD_MODERATIONS",
@@ -28997,7 +29041,7 @@
                             }
                         }
                     },
-                    Pg = function(e) {
+                    jg = function(e) {
                         var t = e.userId,
                             n = e.moderationId;
                         return {
@@ -29006,7 +29050,7 @@
                         }
                     };
 
-                function Ig(e) {
+                function Yg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29026,16 +29070,16 @@
                         return $e(this, n)
                     }
                 }
-                var Rg = {
+                var Zg = {
                         Admin: ["hour", "day", "week", "month", "year"],
                         Steam: ["day", "week", "month", "year"]
                     },
-                    jg = ["Admin", "Steam"],
-                    Yg = ["Admin", "Steam"],
-                    Zg = ["Oculus", "Steam"],
-                    Ug = function(e) {
+                    Ug = ["Admin", "Steam"],
+                    Fg = ["Admin", "Steam"],
+                    Hg = ["Oculus", "Steam"],
+                    zg = function(e) {
                         Ve(c, e);
-                        var t, n, r, a, i = Ig(c);
+                        var t, n, r, a, i = Yg(c);
 
                         function c(e) {
                             var t;
@@ -29139,8 +29183,8 @@
                                     n = e.complete,
                                     r = e.statusCode,
                                     a = e.error,
-                                    o = Rg[this.state.transactionType],
-                                    i = Zg.includes(this.props.transactionType) && this.props.isGift,
+                                    o = Zg[this.state.transactionType],
+                                    i = Hg.includes(this.props.transactionType) && this.props.isGift,
                                     s = "Admin" === this.props.transactionType ? "Remove Subscription" : "Cancel Subscription";
                                 i && (s = "Delete Gift Subscription");
                                 var c = "" !== this.state.timespan && "" !== this.state.transactionId;
@@ -29149,20 +29193,20 @@
                                         name: "1yyg8et",
                                         styles: ".modal-button{max-width:13em;margin-top:0.5em;}button{width:100%;}"
                                     })
-                                }, this.state.isActive && jg.includes(this.state.transactionType) && l.createElement(bu, {
+                                }, this.state.isActive && Ug.includes(this.state.transactionType) && l.createElement(bu, {
                                     className: "modal-button",
                                     icon: "far fa-clock",
                                     title: "Add Time To Subscription",
                                     clearModal: this.clearAddSubModal
                                 }, n && l.createElement("div", null, "Time Successfully Added ", l.createElement(ut(), {
                                     name: "thumbs-up"
-                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(ng, {
+                                }), l.createElement("br", null), l.createElement("br", null), l.createElement("br", null)), a && l.createElement("div", null, l.createElement("h6", null, l.createElement("strong", null, r), " oh no"), l.createElement("pre", null, l.createElement("code", null, a))), !n && !a && l.createElement("div", null, l.createElement("div", null, "For subscription: ", t), l.createElement("br", null), l.createElement(og, {
                                     timeOptions: o,
                                     onChange: this.changeTimespan
                                 }), l.createElement("br", null), l.createElement(Li.Z, {
                                     onClick: this.addTime,
                                     disabled: !c
-                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && (Yg.includes(this.props.transactionType) || i) && l.createElement(bu, {
+                                }, "Extend"))), this.state.isActive && "canceled" !== this.props.status && (Fg.includes(this.props.transactionType) || i) && l.createElement(bu, {
                                     className: "modal-button",
                                     icon: "far fa-times",
                                     title: s,
@@ -29176,7 +29220,7 @@
                             }
                         }]), c
                     }(l.Component);
-                const Fg = Q((function(e) {
+                const Wg = Q((function(e) {
                     return {
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions,
@@ -29184,9 +29228,9 @@
                         error: e.user.updatedSubscriptionError,
                         complete: e.user.updatedSubscription
                     }
-                }))(Ug);
+                }))(zg);
 
-                function Hg(e) {
+                function Bg(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29206,9 +29250,9 @@
                         return $e(this, n)
                     }
                 }
-                var zg = function(e) {
+                var Vg = function(e) {
                     Ve(r, e);
-                    var t, n = Hg(r);
+                    var t, n = Bg(r);
 
                     function r(e) {
                         var t;
@@ -29270,7 +29314,7 @@
                                     name: i ? "check" : "times"
                                 }), " ", i ? "Active" : "Inactive")), l.createElement(Ke.Z, {
                                     xs: "3"
-                                }, l.createElement(Fg, {
+                                }, l.createElement(Wg, {
                                     transactionId: r,
                                     transactionType: n,
                                     active: i,
@@ -29310,52 +29354,7 @@
                         user: e.user.databaseUser,
                         subscriptions: e.user.subscriptions
                     }
-                }))(zg);
-
-                function Wg(e, t) {
-                    var n = Object.keys(e);
-                    if (Object.getOwnPropertySymbols) {
-                        var r = Object.getOwnPropertySymbols(e);
-                        t && (r = r.filter((function(t) {
-                            return Object.getOwnPropertyDescriptor(e, t).enumerable
-                        }))), n.push.apply(n, r)
-                    }
-                    return n
-                }
-
-                function Bg(e) {
-                    for (var t = 1; t < arguments.length; t++) {
-                        var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? Wg(Object(n), !0).forEach((function(t) {
-                            (0, Et.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Wg(Object(n)).forEach((function(t) {
-                            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                        }))
-                    }
-                    return e
-                }
-
-                function Vg(e) {
-                    var t = function() {
-                        if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
-                        if (Reflect.construct.sham) return !1;
-                        if ("function" == typeof Proxy) return !0;
-                        try {
-                            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {}))), !0
-                        } catch (e) {
-                            return !1
-                        }
-                    }();
-                    return function() {
-                        var n, r = qe(e);
-                        if (t) {
-                            var a = qe(this).constructor;
-                            n = Reflect.construct(r, arguments, a)
-                        } else n = r.apply(this, arguments);
-                        return $e(this, n)
-                    }
-                }
-                l.Component;
+                }))(Vg);
 
                 function Gg(e, t) {
                     var n = Object.keys(e);
@@ -29379,7 +29378,52 @@
                     }
                     return e
                 }
-                var qg = (0, da.debounce)((function(e, t, n, r) {
+
+                function qg(e) {
+                    var t = function() {
+                        if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
+                        if (Reflect.construct.sham) return !1;
+                        if ("function" == typeof Proxy) return !0;
+                        try {
+                            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {}))), !0
+                        } catch (e) {
+                            return !1
+                        }
+                    }();
+                    return function() {
+                        var n, r = qe(e);
+                        if (t) {
+                            var a = qe(this).constructor;
+                            n = Reflect.construct(r, arguments, a)
+                        } else n = r.apply(this, arguments);
+                        return $e(this, n)
+                    }
+                }
+                l.Component;
+
+                function Jg(e, t) {
+                    var n = Object.keys(e);
+                    if (Object.getOwnPropertySymbols) {
+                        var r = Object.getOwnPropertySymbols(e);
+                        t && (r = r.filter((function(t) {
+                            return Object.getOwnPropertyDescriptor(e, t).enumerable
+                        }))), n.push.apply(n, r)
+                    }
+                    return n
+                }
+
+                function Kg(e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                        var n = null != arguments[t] ? arguments[t] : {};
+                        t % 2 ? Jg(Object(n), !0).forEach((function(t) {
+                            (0, Et.Z)(e, t, n[t])
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Jg(Object(n)).forEach((function(t) {
+                            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                        }))
+                    }
+                    return e
+                }
+                var Qg = (0, da.debounce)((function(e, t, n, r) {
                     Ye().get(window.apiUrl("/api/1/auth/exists?username=".concat(encodeURIComponent(e), "&displayName=").concat(encodeURIComponent(t), "&excludeUserId=").concat(n))).then((function(e) {
                         r(e.data.userExists)
                     }))
@@ -29387,7 +29431,7 @@
                     leading: !1,
                     trailing: !0
                 });
-                const Jg = function() {
+                const Xg = function() {
                     var e = se((function(e) {
                             return e.user.databaseUser
                         })),
@@ -29415,11 +29459,11 @@
                         u = i[1],
                         d = re();
                     l.useEffect((function() {
-                        a($g($g({}, r), {}, {
+                        a(Kg(Kg({}, r), {}, {
                             displayName: e.displayName
                         }))
                     }), [e.displayName]), l.useEffect((function() {
-                        u($g($g({}, c), {}, {
+                        u(Kg(Kg({}, c), {}, {
                             username: e.username
                         }))
                     }), [e.username]);
@@ -29439,7 +29483,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            a($g($g({}, r), {}, {
+                                            a(Kg(Kg({}, r), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -29481,7 +29525,7 @@
                                         case 6:
                                             return t.prev = 6, t.t0 = t.catch(1), console.error(t.t0), t.abrupt("return");
                                         case 10:
-                                            u($g($g({}, c), {}, {
+                                            u(Kg(Kg({}, c), {}, {
                                                 ok: null,
                                                 available: !0,
                                                 error: !1,
@@ -29532,10 +29576,10 @@
                                 ready: !1
                             });
                             var i = ll(ml(o));
-                            qg(i, i, e.id, (function(e) {
+                            Qg(i, i, e.id, (function(e) {
                                 var t = md(o),
                                     n = !e;
-                                a($g($g({}, r), {}, {
+                                a(Kg(Kg({}, r), {}, {
                                     displayName: i,
                                     available: !e,
                                     error: t,
@@ -29559,7 +29603,7 @@
                         defaultChecked: r.lock,
                         onChange: function(e) {
                             var t = e.target.checked;
-                            a($g($g({}, r), {}, {
+                            a(Kg(Kg({}, r), {}, {
                                 lock: t
                             }))
                         },
@@ -29616,10 +29660,10 @@
                                 ready: !1
                             });
                             var o = ll(ml(a));
-                            qg(o, r.displayName, e.id, (function(e) {
+                            Qg(o, r.displayName, e.id, (function(e) {
                                 var t = md(a),
                                     n = !e;
-                                u($g($g({}, c), {}, {
+                                u(Kg(Kg({}, c), {}, {
                                     username: o,
                                     available: !e,
                                     error: t,
@@ -29663,7 +29707,7 @@
                     })))))
                 };
 
-                function Kg(e) {
+                function ey(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29683,14 +29727,14 @@
                         return $e(this, n)
                     }
                 }
-                var Qg = (0, da.debounce)((function(e, t, n) {
+                var ty = (0, da.debounce)((function(e, t, n) {
                         Ye().get(window.apiUrl("/api/1/auth/exists?email=".concat(encodeURIComponent(e), "&excludeUserId=").concat(t))).then((function(e) {
                             n(e.data.userExists)
                         }))
                     }), 1e3),
-                    Xg = function(e) {
+                    ny = function(e) {
                         Ve(n, e);
-                        var t = Kg(n);
+                        var t = ey(n);
 
                         function n(e) {
                             var r;
@@ -29715,7 +29759,7 @@
                                     emailTaken: null,
                                     emailError: !1,
                                     ready: !1
-                                }), Qg(n, this.props.user.id, (function(e) {
+                                }), ty(n, this.props.user.id, (function(e) {
                                     var r = vs().isEmail(n) && !ks(n),
                                         a = (null == n || "" === n || !r) && "That's an invalid email";
                                     t.setState({
@@ -29871,14 +29915,14 @@
                             }
                         }]), n
                     }(l.Component);
-                const ey = Q((function(e) {
+                const ry = Q((function(e) {
                     return {
                         email: e.user.email,
                         user: e.user.databaseUser
                     }
-                }))(Xg);
+                }))(ny);
 
-                function ty(e) {
+                function ay(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29900,7 +29944,7 @@
                 }
                 l.Component;
 
-                function ny(e) {
+                function oy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -29920,9 +29964,9 @@
                         return $e(this, n)
                     }
                 }
-                var ry = function(e) {
+                var iy = function(e) {
                     Ve(n, e);
-                    var t = ny(n);
+                    var t = oy(n);
 
                     function n(e) {
                         var r;
@@ -29948,7 +29992,7 @@
                             this.props.dispatch(Pr({
                                 userId: this.props.user.id,
                                 message: this.state.message
-                            })), cg()(500).then((function() {
+                            })), fg()(500).then((function() {
                                 t.props.dispatch(me("/home/user/".concat(t.props.user.id)))
                             })), e.preventDefault()
                         }
@@ -30004,20 +30048,20 @@
                         }
                     }]), n
                 }(l.Component);
-                const ay = Q((function(e) {
+                const sy = Q((function(e) {
                     return {
                         isMod: e.currentUser.isMod,
                         user: e.user.databaseUser
                     }
-                }))(ry);
-                var oy = function(e) {
+                }))(iy);
+                var ly = function(e) {
                     var t = re();
                     return {
                         activeModerations: se((function(e) {
                             return e.moderation.activeModerations
                         })) || [],
                         fetchModerations: l.useCallback((function() {
-                            t(Ag({
+                            t(Rg({
                                 userId: e
                             }))
                         }), [e]),
@@ -30026,12 +30070,12 @@
                                 return s().wrap((function(n) {
                                     for (;;) switch (n.prev = n.next) {
                                         case 0:
-                                            return n.next = 2, t(Pg({
+                                            return n.next = 2, t(jg({
                                                 userId: e,
                                                 moderationId: r
                                             }));
                                         case 2:
-                                            return n.next = 4, t(Ag({
+                                            return n.next = 4, t(Rg({
                                                 userId: e
                                             }));
                                         case 4:
@@ -30082,7 +30126,7 @@
                     name: "zjik7",
                     styles: "display:flex"
                 });
-                var iy = {
+                var cy = {
                         hardban: "red",
                         ban: "red",
                         banpubliconly: "red",
@@ -30091,7 +30135,7 @@
                         warn: "yellow",
                         hardNotice: "yellow"
                     },
-                    sy = {
+                    uy = {
                         hardban: "ban",
                         ban: "ban",
                         banpubliconly: "ban",
@@ -30100,32 +30144,32 @@
                         warn: "exclamation-circle",
                         hardNotice: "exclamation"
                     };
-                const ly = function(e) {
+                const dy = function(e) {
                     var t = e.moderation,
                         n = e.deleteModeration,
                         r = t.active && dr()(t.expires).isAfter(dr()()) || t.isPermanent;
-                    return l.createElement(uy, {
+                    return l.createElement(py, {
                         key: t.id,
                         className: "w-100 mb-1"
                     }, l.createElement(Bl.Z, {
                         className: "w-100"
-                    }, l.createElement(py, {
-                        color: iy[t.type],
+                    }, l.createElement(gy, {
+                        color: cy[t.type],
                         active: r
                     }), l.createElement(ud.Z, {
                         className: "p-2 pl-3 d-flex align-items-center"
-                    }, l.createElement(uy, {
+                    }, l.createElement(py, {
                         className: wi("flex-grow-1", r && "pr-5")
-                    }, l.createElement(cy, {
+                    }, l.createElement(fy, {
                         className: "flex-grow-1"
-                    }, l.createElement(uy, {
+                    }, l.createElement(py, {
                         className: "w-100 justify-content-between"
-                    }, l.createElement(uy, {
+                    }, l.createElement(py, {
                         className: "align-items-center"
                     }, l.createElement(ut(), {
-                        name: sy[t.type],
+                        name: uy[t.type],
                         className: "pr-2"
-                    }), l.createElement("div", null, (0, da.startCase)(t.type)), l.createElement(dy, {
+                    }), l.createElement("div", null, (0, da.startCase)(t.type)), l.createElement(my, {
                         name: r ? "check" : "clock-o",
                         active: r,
                         className: "pl-2 pr-3",
@@ -30133,7 +30177,7 @@
                     }), l.createElement("div", null, "by"), l.createElement(it, {
                         to: "/home/user/".concat(t.moderatorUserId),
                         className: "mx-1"
-                    }, t.moderatorDisplayName)), l.createElement(uy, {
+                    }, t.moderatorDisplayName)), l.createElement(py, {
                         className: "align-items-center"
                     }, l.createElement("div", {
                         title: dr().utc(t.created).format("ddd, MMM DD YYYY, hh:mm:ss a"),
@@ -30141,14 +30185,14 @@
                     }, dr().utc(t.created).format("MMM DD YYYY"), " -"), t.isPermanent ? l.createElement("div", null, "Forever") : l.createElement("div", {
                         title: dr().utc(t.expires).format("ddd, MMM DD YYYY, hh:mm:ss a"),
                         className: "pr-2"
-                    }, dr().utc(t.expires).format("MMM DD YYYY")))), "N/A" !== t.reason && l.createElement(uy, {
+                    }, dr().utc(t.expires).format("MMM DD YYYY")))), "N/A" !== t.reason && l.createElement(py, {
                         className: "align-items-center mt-1"
-                    }, l.createElement(uy, {
+                    }, l.createElement(py, {
                         className: "mr-2 align-items-center"
-                    }, l.createElement(fy, {
+                    }, l.createElement(hy, {
                         name: "info-circle",
                         className: "pr-2"
-                    }), l.createElement("div", null, "Reason:")), l.createElement(my, null, t.reason))), r && l.createElement(hy, {
+                    }), l.createElement("div", null, "Reason:")), l.createElement(yy, null, t.reason))), r && l.createElement(vy, {
                         onClick: function() {
                             return n(t.id)
                         },
@@ -30157,51 +30201,51 @@
                         name: "times"
                     }))))))
                 };
-                var cy = iu("div", {
+                var fy = iu("div", {
                         target: "exts1av6"
                     })({
                         name: "1fttcpj",
                         styles: "display:flex;flex-direction:column"
                     }),
-                    uy = iu("div", {
+                    py = iu("div", {
                         target: "exts1av5"
                     })({
                         name: "zjik7",
                         styles: "display:flex"
                     }),
-                    dy = iu(ut(), {
+                    my = iu(ut(), {
                         target: "exts1av4"
                     })("color:var(--", (function(e) {
                         return e.active ? "success" : "gray"
                     }), ");"),
-                    fy = iu(ut(), {
+                    hy = iu(ut(), {
                         target: "exts1av3"
                     })({
                         name: "1e7xyj5",
                         styles: "color:var(--gray)"
                     }),
-                    py = iu("div", {
+                    gy = iu("div", {
                         target: "exts1av2"
                     })("position:absolute;left:0;top:0;width:4px;height:100%;background-color:var(--", (function(e) {
                         return e.color
                     }), ");opacity:", (function(e) {
                         return e.active ? 1 : .5
                     }), ";border-top-left-radius:4px;border-bottom-left-radius:4px;"),
-                    my = iu("div", {
+                    yy = iu("div", {
                         target: "exts1av1"
                     })({
                         name: "1u7pwvo",
                         styles: "font-size:0.9rem"
                     }),
-                    hy = iu("button", {
+                    vy = iu("button", {
                         target: "exts1av0"
                     })({
                         name: "j7l6bz",
                         styles: "display:flex;align-items:center;justify-content:center;position:absolute;right:0;top:0;width:40px;height:100%;border:none;color:white;border-top-right-radius:4px;border-bottom-right-radius:4px;background-color:var(--secondary);transition:background-color 0.2s ease-in-out;outline:none!important;&:hover{background-color:var(--red);}&:active{background-color:var(--dark);}"
                     }),
-                    gy = l.memo((function(e) {
+                    _y = l.memo((function(e) {
                         var t = e.userId,
-                            n = oy(t),
+                            n = ly(t),
                             r = n.activeModerations,
                             a = r.list,
                             o = r.loading,
@@ -30262,16 +30306,16 @@
                             },
                             className: "mb-2"
                         }), m && E.map((function(e) {
-                            return l.createElement(ly, {
+                            return l.createElement(dy, {
                                 moderation: e,
                                 key: e.id,
                                 deleteModeration: b
                             })
                         }))))
                     }));
-                gy.displayName = "CurrentModerations";
+                _y.displayName = "CurrentModerations";
 
-                function yy(e) {
+                function by(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30291,9 +30335,9 @@
                         return $e(this, n)
                     }
                 }
-                var vy = function(e) {
+                var Ey = function(e) {
                     Ve(u, e);
-                    var t, n, r, a, i, c = yy(u);
+                    var t, n, r, a, i, c = by(u);
 
                     function u(e) {
                         var t;
@@ -30362,7 +30406,7 @@
                                 type: "CLEAR_MODERATIONS",
                                 payload: Ye().delete(window.apiUrl("/api/1/user/".concat(n, "/moderations")))
                             })).then((function() {
-                                r.props.dispatch(Ag({
+                                r.props.dispatch(Rg({
                                     userId: r.props.userId
                                 })), r.setState({
                                     unmoderating: !1
@@ -30787,7 +30831,7 @@
                                 cancelLink: this.cancelUnfriendUser
                             }), !1, l.createElement(le.Route, {
                                 path: "/home/user/:userId/message",
-                                component: ay
+                                component: sy
                             }), !1, l.createElement(Mi.Z, {
                                 className: "mb-4"
                             }, l.createElement(Ke.Z, {
@@ -30822,7 +30866,7 @@
                                         vertical: !0,
                                         size: "lg",
                                         className: "w-100"
-                                    }, l.createElement(Hh, {
+                                    }, l.createElement(Bh, {
                                         visible: !a,
                                         friendship: i,
                                         friendLink: e.friendUser,
@@ -30833,38 +30877,38 @@
                                             name: "ytokg",
                                             styles: "height:15px"
                                         })
-                                    }), l.createElement(zh, {
-                                        visible: n,
-                                        onClick: e.editUser
-                                    }), l.createElement(Wh, {
-                                        visible: n,
-                                        onClick: e.moderateUser
-                                    }), l.createElement(Bh, {
-                                        visible: n,
-                                        onClick: e.unmoderateUser
-                                    }), l.createElement($h, {
-                                        visible: n,
-                                        onClick: e.resetUserHome
                                     }), l.createElement(Vh, {
                                         visible: n,
-                                        onClick: e.resetUserAvatar
+                                        onClick: e.editUser
                                     }), l.createElement(Gh, {
                                         visible: n,
-                                        onClick: e.resetUserProfile
+                                        onClick: e.moderateUser
+                                    }), l.createElement($h, {
+                                        visible: n,
+                                        onClick: e.unmoderateUser
+                                    }), l.createElement(Kh, {
+                                        visible: n,
+                                        onClick: e.resetUserHome
                                     }), l.createElement(qh, {
+                                        visible: n,
+                                        onClick: e.resetUserAvatar
+                                    }), l.createElement(Jh, {
+                                        visible: n,
+                                        onClick: e.resetUserProfile
+                                    }), l.createElement(Qh, {
                                         visible: n && m,
                                         onClick: e.removeUser2fa
-                                    }), l.createElement(Jh, {
+                                    }), l.createElement(Xh, {
                                         visible: n,
                                         onClick: function() {
                                             return e.confirmForceLogout(!0)
                                         }
-                                    }), l.createElement(Kh, {
+                                    }), l.createElement(eg, {
                                         visible: n,
                                         onClick: function() {
                                             return e.flagCaptcha()
                                         }
-                                    }), l.createElement(Qh, {
+                                    }), l.createElement(tg, {
                                         visible: n,
                                         onClick: function() {
                                             return e.unflagCaptcha()
@@ -30897,7 +30941,7 @@
                         }
                     }]), u
                 }(l.Component);
-                const _y = (0, le.withRouter)(Q((function(e, t) {
+                const wy = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         userId: t.match.params.userId,
                         path: e.router.location.pathname,
@@ -30923,9 +30967,9 @@
                         worldInfo: e.user.worldInfo,
                         isLoaded: e.user.isLoaded
                     }
-                }))(vy));
+                }))(Ey));
 
-                function by(e) {
+                function ky(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -30945,9 +30989,9 @@
                         return $e(this, n)
                     }
                 }
-                var Ey = function(e) {
+                var My = function(e) {
                     Ve(n, e);
-                    var t = by(n);
+                    var t = ky(n);
 
                     function n(e) {
                         var r;
@@ -31080,7 +31124,7 @@
                         }
                     }]), n
                 }(l.Component);
-                const wy = (0, le.withRouter)(Q((function(e, t) {
+                const Ly = (0, le.withRouter)(Q((function(e, t) {
                     return {
                         avatarId: t.match.params.avatarId,
                         avatarError: e.avatar.errorMessage,
@@ -31091,8 +31135,8 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         loadingAvatar: e.avatar.loadingAvatar
                     }
-                }))(Ey));
-                var ky = function(e) {
+                }))(My));
+                var Sy = function(e) {
                         var t = e.sellerId,
                             n = e.n,
                             r = void 0 === n ? 100 : n,
@@ -31106,12 +31150,12 @@
                             })
                         }
                     },
-                    My = n(82669),
-                    Ly = n(16792),
-                    Sy = n(70474),
-                    xy = ["seconds", "minutes", "hours", "days", "months", "years", "forevers"];
+                    xy = n(82669),
+                    Oy = n(16792),
+                    Ty = n(70474),
+                    Dy = ["seconds", "minutes", "hours", "days", "months", "years", "forevers"];
 
-                function Oy(e) {
+                function Cy(e) {
                     var t = e.addProduct,
                         n = e.disableForm,
                         r = Jt((0, l.useState)(""), 2),
@@ -31166,11 +31210,11 @@
                         B = function(e, t) {
                             "priceTokens" === t && h(e > 0), "udonName" === t && E(e.length < 64), "displayName" === t && x(e.length < 64), "description" === t && A(e.length < 200), "duration" === t && Z(e > 0)
                         };
-                    return l.createElement(qm.Z, null, l.createElement("fieldset", {
+                    return l.createElement(Qm.Z, null, l.createElement("fieldset", {
                         disabled: n
                     }, l.createElement("fieldset", {
                         disabled: !0
-                    }, l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "fileImage"
                     }, "Product Image"), l.createElement(Af.Z, {
                         type: "file",
@@ -31179,11 +31223,11 @@
                         onChange: function(e) {
                             return o(e.target.value)
                         }
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: "muted"
-                    }, "image uploads are not yet supported")), l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, "image uploads are not yet supported")), l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "fileImage"
-                    }, "Store/Collection"), l.createElement(Ly.Z, null, "Select which store(s) this item belongs in?"), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(Af.Z, {
+                    }, "Store/Collection"), l.createElement(Oy.Z, null, "Select which store(s) this item belongs in?"), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(Af.Z, {
                         type: "text",
                         name: "newStore",
                         value: s,
@@ -31191,7 +31235,7 @@
                         onChange: function(e) {
                             return c(e.target.value)
                         }
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: "muted"
                     }, "Create New")), l.createElement(Ke.Z, null, l.createElement(Af.Z, {
                         type: "select",
@@ -31201,11 +31245,11 @@
                         onChange: function(e) {
                             return c(e.target.value)
                         }
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: "muted"
                     }, "Select Existing"))))), l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                         xs: "9"
-                    }, l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "udonName"
                     }, "Udon Name"), l.createElement(Af.Z, {
                         size: "8",
@@ -31219,13 +31263,13 @@
                         },
                         required: !0,
                         invalid: !b
-                    }), l.createElement(Sy.Z, {
+                    }), l.createElement(Ty.Z, {
                         invalid: !0
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: b ? "muted" : "danger"
                     }, "A unique name between 1 and max 64 characters: ", y.length, "/64"))), l.createElement(Ke.Z, {
                         xs: "3"
-                    }, l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "priceTokens"
                     }, "Price"), l.createElement(Af.Z, {
                         size: "4",
@@ -31237,11 +31281,11 @@
                             return t = e.target.value, B(t, "priceTokens"), void f(t);
                             var t
                         }
-                    }), l.createElement(Sy.Z, {
+                    }), l.createElement(Ty.Z, {
                         invalid: !0
-                    }, "Must be a positive number."), l.createElement(Ly.Z, {
+                    }, "Must be a positive number."), l.createElement(Oy.Z, {
                         color: m ? "muted" : "danger"
-                    }, "Price of this item in tokens")))), l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, "Price of this item in tokens")))), l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "displayName"
                     }, "Display Name"), l.createElement(Af.Z, {
                         type: "text",
@@ -31253,11 +31297,11 @@
                             return t = e.target.value, B(t, "displayName"), void M(t);
                             var t
                         }
-                    }), l.createElement(Sy.Z, {
+                    }), l.createElement(Ty.Z, {
                         invalid: !0
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: S ? "muted" : "danger"
-                    }, k.length, "/64")), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, k.length, "/64")), l.createElement(Mi.Z, null, l.createElement(Ke.Z, null, l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "duration"
                     }, "Duration"), l.createElement(Af.Z, {
                         type: "text",
@@ -31270,11 +31314,11 @@
                             return t = e.target.value, B(t, "duration"), void R(t);
                             var t
                         }
-                    }), l.createElement(Sy.Z, {
+                    }), l.createElement(Ty.Z, {
                         invalid: !0
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: Y ? "muted" : "danger"
-                    }, "Must be a positive number"))), l.createElement(Ke.Z, null, l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    }, "Must be a positive number"))), l.createElement(Ke.Z, null, l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "durationType"
                     }, "Duration Type"), l.createElement(Af.Z, {
                         type: "select",
@@ -31284,11 +31328,11 @@
                         onChange: function(e) {
                             return H(e.target.value)
                         }
-                    }, xy.map((function(e, t) {
+                    }, Dy.map((function(e, t) {
                         return l.createElement("option", {
                             key: "durationType-".concat(t)
                         }, e)
-                    })))))), l.createElement(My.Z, null, l.createElement(Jm.Z, {
+                    })))))), l.createElement(xy.Z, null, l.createElement(Xm.Z, {
                         for: "description"
                     }, "Description"), l.createElement(Af.Z, {
                         type: "textarea",
@@ -31299,9 +31343,9 @@
                             return t = e.target.value, B(t, "description"), void D(t);
                             var t
                         }
-                    }), l.createElement(Ly.Z, {
+                    }), l.createElement(Oy.Z, {
                         color: N ? "muted" : "danger"
-                    }, T.length, "/200 characters"), l.createElement(Sy.Z, {
+                    }, T.length, "/200 characters"), l.createElement(Ty.Z, {
                         invalid: !0
                     })), l.createElement(Li.Z, {
                         onClick: function() {
@@ -31310,11 +31354,11 @@
                         disabled: !W
                     }, "Submit")))
                 }
-                var Ty = n(54218),
-                    Dy = n(59465);
-                var Cy = n(75980);
+                var Ny = n(54218),
+                    Ay = n(59465);
+                var Py = n(75980);
 
-                function Ny(e) {
+                function Iy(e) {
                     var t = e.product,
                         n = e.index,
                         r = e.deleteProduct,
@@ -31403,10 +31447,10 @@
                         className: "text-right"
                     }, l.createElement("small", null, "Licenses")), l.createElement(Ke.Z, {
                         className: "text-left"
-                    }, l.createElement("p", null, "[ ", O, " ]"), O > 0 && l.createElement(Ty.Z, null, b.map((function(e) {
-                        return l.createElement(Dy.Z, null, " ", e, " ", l.createElement(ec.Z, null, "permanent"))
+                    }, l.createElement("p", null, "[ ", O, " ]"), O > 0 && l.createElement(Ny.Z, null, b.map((function(e) {
+                        return l.createElement(Ay.Z, null, " ", e, " ", l.createElement(ec.Z, null, "permanent"))
                     })), E.map((function(e) {
-                        return l.createElement(Dy.Z, null, " ", e, " ")
+                        return l.createElement(Ay.Z, null, " ", e, " ")
                     }))))), l.createElement(Mi.Z, {
                         className: "mt-2 light-background"
                     }, l.createElement(Ke.Z, null, l.createElement("small", null, "Description:"))), l.createElement(Mi.Z, {
@@ -31427,12 +31471,12 @@
                             name: "7yp9nl",
                             styles: "display:flex;flex-direction:column;.fa:last-child{margin-top:0.4em;}"
                         })
-                    }, l.createElement(Cy, {
+                    }, l.createElement(Py, {
                         name: c ? "times" : "trash",
                         onClick: function() {
                             return u(!c)
                         }
-                    }), l.createElement(Cy, {
+                    }), l.createElement(Py, {
                         name: "trash",
                         hidden: !c,
                         onClick: function() {
@@ -31446,14 +31490,14 @@
                         }
                     }))))
                 }
-                var Ay = n(57925),
-                    Py = Ay.Row,
-                    Iy = Ay.Button,
-                    Ry = Ay.Col,
-                    jy = Ay.Input,
-                    Yy = Ay.Alert,
-                    Zy = n(75980);
-                const Uy = function() {
+                var Ry = n(57925),
+                    jy = Ry.Row,
+                    Yy = Ry.Button,
+                    Zy = Ry.Col,
+                    Uy = Ry.Input,
+                    Fy = Ry.Alert,
+                    Hy = n(75980);
+                const zy = function() {
                     var e = re(),
                         t = se((function(e) {
                             return e.currentUser.permissions
@@ -31482,7 +31526,7 @@
                             return e.shop.deleteProduct
                         }));
                     l.useEffect((function() {
-                        t.includes("CAN_SELL_PRODUCTS") ? e(ky({
+                        t.includes("CAN_SELL_PRODUCTS") ? e(Sy({
                             sellerId: n
                         })) : e(me("/home"))
                     }), []);
@@ -31500,25 +31544,25 @@
                             productId: t
                         }))
                     };
-                    return l.createElement("div", null, l.createElement("h1", null, "My Shop"), l.createElement("br", null), l.createElement("br", null), l.createElement(Py, null, l.createElement(Ry, {
+                    return l.createElement("div", null, l.createElement("h1", null, "My Shop"), l.createElement("br", null), l.createElement("br", null), l.createElement(jy, null, l.createElement(Zy, {
                         className: "text-center"
                     }, l.createElement("div", null, l.createElement("img", {
                         src: "https://images.neopets.com/new_shopkeepers/750.gif"
-                    })))), l.createElement(Py, null, l.createElement(Ry, {
+                    })))), l.createElement(jy, null, l.createElement(Zy, {
                         className: "text-center"
-                    }, l.createElement("h2", null, " Welcome to My Shop"))), l.createElement("br", null), (a || c.loading) && l.createElement(ss, null), r && l.createElement(Yy, {
+                    }, l.createElement("h2", null, " Welcome to My Shop"))), l.createElement("br", null), (a || c.loading) && l.createElement(ss, null), r && l.createElement(Fy, {
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Loading Your Product List"), l.createElement("hr", null), l.createElement("strong", null, o), "  ", r), l.createElement(Py, {
+                    }, " An Error Loading Your Product List"), l.createElement("hr", null), l.createElement("strong", null, o), "  ", r), l.createElement(jy, {
                         className: "pl-3 pr-3"
-                    }, l.createElement(Ry, {
+                    }, l.createElement(Zy, {
                         xs: "6"
-                    }, i && i.length > 0 && l.createElement(jy, {
+                    }, i && i.length > 0 && l.createElement(Uy, {
                         type: "text",
                         id: "search-product-list",
                         placeholder: "Search product list"
-                    })), l.createElement(Ry, {
+                    })), l.createElement(Zy, {
                         xs: "5"
                     }, l.createElement(bu, {
                         title: "Create Product",
@@ -31529,18 +31573,18 @@
                                 type: "CLEAR_PRODUCT_MODAL"
                             })
                         }
-                    }, s.error && l.createElement(Yy, {
+                    }, s.error && l.createElement(Fy, {
                         className: "alert-danger"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, " An Error Occurred"), l.createElement("hr", null), l.createElement("strong", null, s.statusCode), "  ", s.error), s.complete && l.createElement(Yy, {
+                    }, " An Error Occurred"), l.createElement("hr", null), l.createElement("strong", null, s.statusCode), "  ", s.error), s.complete && l.createElement(Fy, {
                         className: "alert-success"
                     }, l.createElement("h6", {
                         className: "alert-heading"
-                    }, "Success!"), l.createElement("hr", null), "New Product Created! ", l.createElement(Zy, {
+                    }, "Success!"), l.createElement("hr", null), "New Product Created! ", l.createElement(Hy, {
                         name: "thumbs-up",
                         color: "success"
-                    })), l.createElement(Oy, {
+                    })), l.createElement(Cy, {
                         addProduct: function(t) {
                             e(function(e) {
                                 var t = e.priceTokens,
@@ -31563,16 +31607,16 @@
                             }(t))
                         },
                         disableForm: s.loading
-                    }))), l.createElement(Ry, {
+                    }))), l.createElement(Zy, {
                         xs: "1",
                         className: "text-right"
-                    }, l.createElement(Iy, {
+                    }, l.createElement(Yy, {
                         onClick: function() {
-                            e(ky({
+                            e(Sy({
                                 sellerId: n
                             }))
                         }
-                    }, l.createElement(Zy, {
+                    }, l.createElement(Hy, {
                         name: "refresh"
                     })))), !a && (null == i ? void 0 : i.length) > 0 && l.createElement("div", (0, Et.Z)({
                         className: "p-3"
@@ -31581,12 +31625,12 @@
                         styles: "& .table-container{margin:15px;}& .product-table-header{padding:10px;font-weight:bolder;}& .product-table-row{padding:10px;}& .row-dark{background-color:rgba(0, 0, 0, 0.2);}& .product-table-row:hover{background-color:rgba(0, 0, 0, 0.4);}& .expanded{margin-left:100px;margin-right:150px;padding-top:10px;}& .description-box{overflow-wrap:break-word;height:150px;padding-top:10px;}& .drop-shadow{background-color:darkgray;padding:5px;border-radius:7px;z-index:3!important;height:210px;width:210px;margin:auto;}& .light-background{background-color:rgba(1, 1, 1, 0.2);}.tremor{animation:tremor 180ms infinite;animation-timing-function:linear;}@keyframes tremor{0%{transform:rotate(0.2deg);}50%{transform:rotate(-0.2deg);}100%{transform:rotate(0.2deg);}}& .margin-slide-out{animation:margin-slide-out 0.4s ease-out;animation-timing-function:ease-out;animation-fill-mode:forwards;}@keyframes margin-slide-out{0%{width:10%;}100%{width:100%;}}"
                     })), l.createElement("div", {
                         className: "table-container"
-                    }, l.createElement(Py, {
+                    }, l.createElement(jy, {
                         className: "product-table-header"
-                    }, l.createElement(Ry, null, "udonName"), l.createElement(Ry, null, "displayName"), l.createElement(Ry, null, "priceTokens"), l.createElement(Ry, null, "duration"), l.createElement(Ry, null, "durationType"), l.createElement(Ry, null, "created"), l.createElement(Ry, {
+                    }, l.createElement(Zy, null, "udonName"), l.createElement(Zy, null, "displayName"), l.createElement(Zy, null, "priceTokens"), l.createElement(Zy, null, "duration"), l.createElement(Zy, null, "durationType"), l.createElement(Zy, null, "created"), l.createElement(Zy, {
                         xs: "1"
                     })), i.map((function(e, t) {
-                        return l.createElement(Ny, {
+                        return l.createElement(Iy, {
                             product: e,
                             index: t,
                             deleteProduct: u
@@ -31594,7 +31638,7 @@
                     })))), !a && 0 === i.length && l.createElement("div", null, "No products found ._."))
                 };
 
-                function Fy(e) {
+                function Wy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31614,9 +31658,9 @@
                         return $e(this, n)
                     }
                 }
-                var Hy = function(e) {
+                var By = function(e) {
                     Ve(i, e);
-                    var t, n, r, a = Fy(i);
+                    var t, n, r, a = Wy(i);
 
                     function i(e) {
                         var t;
@@ -31630,7 +31674,7 @@
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, this.props.dispatch(Uh({
+                                        return e.next = 2, this.props.dispatch(zh({
                                             fileId: this.state.fileId
                                         }));
                                     case 2:
@@ -31650,7 +31694,7 @@
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return (t = {})[this.state.queryType] = this.state.queryValue, e.next = 4, this.props.dispatch(Fh({
+                                        return (t = {})[this.state.queryType] = this.state.queryValue, e.next = 4, this.props.dispatch(Wh({
                                             params: t
                                         }));
                                     case 4:
@@ -31775,9 +31819,9 @@
                         unityVersion: e.config.config.sdkUnityVersion,
                         miscellaneous: e.miscellaneous
                     }
-                }))(Hy));
+                }))(By));
 
-                function zy(e) {
+                function Vy(e) {
                     var t = function() {
                         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                         if (Reflect.construct.sham) return !1;
@@ -31797,9 +31841,9 @@
                         return $e(this, n)
                     }
                 }
-                var Wy = function(e) {
+                var Gy = function(e) {
                     Ve(n, e);
-                    var t = zy(n);
+                    var t = Vy(n);
 
                     function n(e) {
                         var r;
@@ -31824,9 +31868,9 @@
                             }, l.createElement(Mi.Z, null, l.createElement(Ke.Z, {
                                 xs: "2",
                                 className: "fixed-top bg-gradient-secondary leftbar"
-                            }, l.createElement(Ip, null), l.createElement(Bu, {
+                            }, l.createElement(Yp, null), l.createElement(Bu, {
                                 horizontal: !0
-                            }), l.createElement(Ah, {
+                            }), l.createElement(Rh, {
                                 n: 1,
                                 slim: !0
                             })), l.createElement(Ke.Z, {
@@ -31836,14 +31880,14 @@
                             }, l.createElement(le.Switch, null, l.createElement(le.Route, {
                                 exact: !0,
                                 path: "/home/search",
-                                component: Mh
+                                component: xh
                             }), l.createElement(le.Route, {
                                 path: "/home/search/:query",
-                                component: Mh
+                                component: xh
                             }), l.createElement(le.Route, {
                                 exact: !0,
                                 path: "/home/user",
-                                component: Ip
+                                component: Yp
                             }), l.createElement(le.Route, {
                                 path: "/home/profile",
                                 component: Pd
@@ -31858,10 +31902,10 @@
                                 component: Nf
                             }), l.createElement(le.Route, {
                                 path: "/home/shop",
-                                component: Uy
+                                component: zy
                             }), l.createElement(le.Route, {
                                 path: "/home/user/:userId",
-                                component: _y
+                                component: wy
                             }), l.createElement(le.Route, {
                                 path: "/home/locations",
                                 component: bp
@@ -31873,22 +31917,22 @@
                                 component: Wd
                             }), l.createElement(le.Route, {
                                 path: "/home/world/:worldId",
-                                component: bh
+                                component: kh
                             }), l.createElement(le.Route, {
                                 path: "/home/avatars",
                                 component: gf
                             }), l.createElement(le.Route, {
                                 path: "/home/avatar/:avatarId",
-                                component: wy
+                                component: Ly
                             }), l.createElement(le.Route, {
                                 path: "/home/messages",
-                                component: Zh
+                                component: Hh
                             }), l.createElement(le.Route, {
                                 path: "/home/friends",
-                                component: Tm
+                                component: Nm
                             }), l.createElement(le.Route, {
                                 path: "/home/playermoderations",
-                                component: Bm
+                                component: $m
                             }), l.createElement(le.Route, {
                                 path: "/home/download",
                                 component: od
@@ -31903,99 +31947,67 @@
                                     offset: 9
                                 },
                                 className: "fixed-top bg-gradient-secondary rightbar"
-                            }, l.createElement(Tm, null)))), !1)
+                            }, l.createElement(Nm, null)))), !1)
                         }
                     }]), n
                 }(l.Component);
-
-                function By(e) {
-                    var t = function() {
-                        if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
-                        if (Reflect.construct.sham) return !1;
-                        if ("function" == typeof Proxy) return !0;
-                        try {
-                            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], (function() {}))), !0
-                        } catch (e) {
-                            return !1
-                        }
-                    }();
-                    return function() {
-                        var n, r = qe(e);
-                        if (t) {
-                            var a = qe(this).constructor;
-                            n = Reflect.construct(r, arguments, a)
-                        } else n = r.apply(this, arguments);
-                        return $e(this, n)
-                    }
-                }
-                var Vy = function(e) {
-                    Ve(n, e);
-                    var t = By(n);
-
-                    function n() {
-                        return Fe(this, n), t.apply(this, arguments)
-                    }
-                    return ze(n, [{
-                        key: "render",
-                        value: function() {
-                            return l.createElement("main", null, l.createElement(le.Switch, null, l.createElement(le.Route, {
-                                path: "/home/launch",
-                                component: hs
-                            }), l.createElement(le.Route, {
-                                path: "/home/verify",
-                                component: Cs
-                            }), l.createElement(le.Route, {
-                                path: "/home/failedverify",
-                                component: Ps
-                            }), l.createElement(le.Route, {
-                                path: "/home/failedverifyloginplace",
-                                component: js
-                            }), l.createElement(le.Route, {
-                                path: "/home/succeedverifyloginplace",
-                                component: Us
-                            }), l.createElement(le.Route, {
-                                path: "/home/critical",
-                                component: zs
-                            }), l.createElement(le.Route, {
-                                path: "/home/unverified",
-                                component: _t
-                            }), l.createElement(le.Route, {
-                                path: "/home/login",
-                                component: Vs
-                            }), l.createElement(le.Route, {
-                                path: "/home/register",
-                                component: Cl
-                            }), l.createElement(le.Route, {
-                                path: "/home/twofactorauth",
-                                component: Yl
-                            }), l.createElement(le.Route, {
-                                path: "/home/twofactorauthrecovery",
-                                component: Fl
-                            }), l.createElement(le.Route, {
-                                path: "/home/tosupdated",
-                                component: Wl
-                            }), l.createElement(le.Route, {
-                                path: "/home/password",
-                                component: Pl
-                            }), l.createElement(le.Route, {
-                                path: "/home/oauth",
-                                component: Cu
-                            }), l.createElement(le.Route, {
-                                path: "/home/sso/canny",
-                                component: Au
-                            }), l.createElement(le.Route, {
-                                path: "/home/sso/furality",
-                                component: Ru
-                            }), l.createElement(le.Route, {
-                                path: "/home",
-                                component: Wy
-                            }), l.createElement(le.Route, {
-                                component: Wy
-                            })))
-                        }
-                    }]), n
-                }(l.Component);
-                const Gy = function(e) {
+                const $y = function() {
+                    return Rp(), l.createElement("main", null, l.createElement(le.Switch, null, l.createElement(le.Route, {
+                        path: "/home/launch",
+                        component: hs
+                    }), l.createElement(le.Route, {
+                        path: "/home/verify",
+                        component: Cs
+                    }), l.createElement(le.Route, {
+                        path: "/home/failedverify",
+                        component: Ps
+                    }), l.createElement(le.Route, {
+                        path: "/home/failedverifyloginplace",
+                        component: js
+                    }), l.createElement(le.Route, {
+                        path: "/home/succeedverifyloginplace",
+                        component: Us
+                    }), l.createElement(le.Route, {
+                        path: "/home/critical",
+                        component: zs
+                    }), l.createElement(le.Route, {
+                        path: "/home/unverified",
+                        component: _t
+                    }), l.createElement(le.Route, {
+                        path: "/home/login",
+                        component: Vs
+                    }), l.createElement(le.Route, {
+                        path: "/home/register",
+                        component: Cl
+                    }), l.createElement(le.Route, {
+                        path: "/home/twofactorauth",
+                        component: Yl
+                    }), l.createElement(le.Route, {
+                        path: "/home/twofactorauthrecovery",
+                        component: Fl
+                    }), l.createElement(le.Route, {
+                        path: "/home/tosupdated",
+                        component: Wl
+                    }), l.createElement(le.Route, {
+                        path: "/home/password",
+                        component: Pl
+                    }), l.createElement(le.Route, {
+                        path: "/home/oauth",
+                        component: Cu
+                    }), l.createElement(le.Route, {
+                        path: "/home/sso/canny",
+                        component: Au
+                    }), l.createElement(le.Route, {
+                        path: "/home/sso/furality",
+                        component: Ru
+                    }), l.createElement(le.Route, {
+                        path: "/home",
+                        component: Gy
+                    }), l.createElement(le.Route, {
+                        component: Gy
+                    })))
+                };
+                const qy = function(e) {
                     var t = e.store,
                         n = t.getState().currentUser.databaseUser.id;
                     return console.log("Creating pipeline router for ".concat(n)),
@@ -32101,8 +32113,8 @@
                             } else console.error("Socket event without type!")
                         }
                 };
-                var $y = document.getElementById("app"),
-                    qy = function() {
+                var Jy = document.getElementById("app"),
+                    Ky = function() {
                         String.prototype.toTitleCase = function() {
                             var e, t, n, r, a;
                             for (n = this.replace(/([^\W_]+[^\s-]*) */g, (function(e) {
@@ -32151,8 +32163,8 @@
                             history: Xa
                         }, l.createElement("div", null, l.createElement(le.Route, {
                             path: "/",
-                            component: Vy
-                        })))), $y);
+                            component: $y
+                        })))), Jy);
                         var e = 500,
                             t = !1,
                             r = function() {
@@ -32161,7 +32173,7 @@
                                     return s().wrap((function(n) {
                                         for (;;) switch (n.prev = n.next) {
                                             case 0:
-                                                return r = Gy({
+                                                return r = qy({
                                                     store: eo
                                                 }), n.next = 3, Ye().get("".concat(window.endpoint, "/api/1/auth?apiKey=").concat(window.apiKey));
                                             case 3:
@@ -32227,7 +32239,7 @@
                                     eo.dispatch({
                                         type: "LOGIN_FULFILLED",
                                         payload: t
-                                    }), qy();
+                                    }), Ky();
                                 case 2:
                                 case "end":
                                     return e.stop()
@@ -32238,16 +32250,16 @@
                         return e.apply(this, arguments)
                     }
                 }()).catch((function(e) {
-                    e.message.indexOf("403") > -1 ? c.render(l.createElement(_t, null), $y) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (aa.has(window.location.pathname) || (console.warn("".concat(Array.from(aa), " didn't contain ").concat(window.location.pathname)), eo.dispatch({
+                    e.message.indexOf("403") > -1 ? c.render(l.createElement(_t, null), Jy) : e.message.indexOf("401") > -1 || e.message.indexOf("429") > -1 ? (aa.has(window.location.pathname) || (console.warn("".concat(Array.from(aa), " didn't contain ").concat(window.location.pathname)), eo.dispatch({
                         type: "CLEAR_STATUS_CODE"
                     }), eo.dispatch(mt()), eo.dispatch(na({
                         targetPath: window.location.pathname + window.location.search
-                    })), eo.dispatch(me("/home/login"))), qy()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(bt, {
+                    })), eo.dispatch(me("/home/login"))), Ky()) : e.message.indexOf("500") > -1 ? c.render(l.createElement(bt, {
                         error: e,
                         statusCode: 500
-                    }), $y) : c.render(l.createElement(bt, {
+                    }), Jy) : c.render(l.createElement(bt, {
                         error: e
-                    }), $y)
+                    }), Jy)
                 }))
             },
             52945: (e, t, n) => {
@@ -74399,6 +74411,6 @@
         }), Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(31999);
+    }, n.nmd = e => (e.paths = [], e.children || (e.children = []), e), n(29827);
     n(74565)
 })();
