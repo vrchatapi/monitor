@@ -6473,7 +6473,7 @@
                     $n = "idfk",
                     qn = "idfk";
                 try {
-                    Gn = "12345", $n = "2022-01-20t02-25-26-the-empty-of-hokkaido", qn = "production"
+                    Gn = "12345", $n = "2022-01-21t22-40-47-the-book-of-sans", qn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -17653,19 +17653,20 @@
                             var e = this.props,
                                 t = e.horizontal,
                                 n = e.notifications,
-                                r = (e.currentUser, e.currentUserDetails),
-                                a = e.currentUserPermissions,
-                                o = e.numberOfActiveLocations,
-                                i = e.config,
-                                s = a || [],
-                                c = s.includes("permission-user-icons"),
-                                u = s.includes("permission-user-gallery"),
-                                d = s.includes("CAN_SELL_PRODUCTS"),
-                                f = n.length,
-                                p = l.createElement("span", null);
-                            if (f > 0 && (p = l.createElement("span", null, l.createElement(ec.Z, {
+                                r = e.currentUser,
+                                a = e.currentUserDetails,
+                                o = e.currentUserPermissions,
+                                i = e.numberOfActiveLocations,
+                                s = e.config,
+                                c = o || [],
+                                u = c.includes("permission-user-icons"),
+                                d = c.includes("permission-user-gallery"),
+                                f = c.includes("CAN_SELL_PRODUCTS"),
+                                p = n.length,
+                                m = l.createElement("span", null);
+                            if (p > 0 && (m = l.createElement("span", null, l.createElement(ec.Z, {
                                     color: "primary"
-                                }, f))), null == t || !1 === t) {
+                                }, p))), null == t || !1 === t) {
                                 return l.createElement("div", {
                                     className: ki({
                                         name: "1m5benx",
@@ -17679,7 +17680,7 @@
                                 }, l.createElement("div", {
                                     className: "container-fluid"
                                 }, l.createElement("div", {
-                                    className: "navbar-header d-none d-lg-block"
+                                    className: "navbar-header"
                                 }, l.createElement(it, {
                                     to: "/home",
                                     title: "home",
@@ -17696,7 +17697,7 @@
                                 }), "  Logout")), l.createElement("div", {
                                     className: "d-none d-lg-block search"
                                 }, l.createElement(Zu, null)), l.createElement("nav", {
-                                    className: "d-inline d-lg-none"
+                                    className: "d-inline d-lg-none float-right"
                                 }, l.createElement(cc.Z, {
                                     isOpen: this.state.dropdownOpen,
                                     toggle: this.toggleDropdown
@@ -17704,7 +17705,9 @@
                                     caret: !0
                                 }, l.createElement(ut(), {
                                     name: "user"
-                                })), l.createElement(dc.Z, null, l.createElement(Vl.Z, {
+                                }), "  Menu"), l.createElement(dc.Z, {
+                                    className: "p-2 mt-1"
+                                }, l.createElement(Vl.Z, {
                                     vertical: !0
                                 }, l.createElement(it, {
                                     to: "/home",
@@ -17716,16 +17719,16 @@
                                     to: "/home/locations",
                                     title: "locations",
                                     className: "btn btn-secondary text-left",
-                                    hidden: 0 === o
+                                    hidden: 0 === i
                                 }, l.createElement(ut(), {
                                     name: "ticket-alt"
-                                }), "  Active Friends ", l.createElement(ec.Z, null, o)), l.createElement(it, {
+                                }), "  Active Friends ", l.createElement(ec.Z, null, i)), l.createElement(it, {
                                     to: "/home/messages",
                                     title: "messages",
                                     className: "btn btn-secondary text-left"
                                 }, l.createElement(ut(), {
                                     name: "envelope"
-                                }), "  Messages ", p), l.createElement(it, {
+                                }), "  Messages ", m), l.createElement(it, {
                                     to: "/home/search",
                                     title: "search",
                                     className: "btn btn-secondary text-left"
@@ -17749,7 +17752,7 @@
                                     className: "btn btn-secondary text-left"
                                 }, l.createElement(ut(), {
                                     name: "user-secret"
-                                }), "  Avatars"), (c || u) && l.createElement(it, {
+                                }), "  Avatars"), (u || d) && l.createElement(it, {
                                     to: "/home/gallery",
                                     title: "gallery",
                                     className: "btn btn-secondary text-left"
@@ -17765,7 +17768,7 @@
                                     to: "/home/accountlink",
                                     title: "accountlink",
                                     className: "btn btn-secondary text-left",
-                                    hidden: i.disableUpgradeAccount
+                                    hidden: s.disableUpgradeAccount
                                 }, l.createElement(ut(), {
                                     name: "shipping-fast"
                                 }), "  Account Link"), !1, l.createElement("hr", null), l.createElement(Li.Z, {
@@ -17774,64 +17777,7 @@
                                     className: "btn btn-danger text-left"
                                 }, l.createElement(ut(), {
                                     name: "fa fa-door-open"
-                                }), "  Logout")))), " ", l.createElement(Vl.Z, {
-                                    size: "md"
-                                }, l.createElement(it, {
-                                    to: "/home",
-                                    title: "home",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "home"
-                                })), l.createElement(it, {
-                                    to: "/home/locations",
-                                    title: "locations",
-                                    className: "btn btn-secondary",
-                                    hidden: 0 === o
-                                }, l.createElement(ut(), {
-                                    name: "ticket-alt"
-                                }), l.createElement(ec.Z, null, o)), l.createElement(it, {
-                                    to: "/home/messages",
-                                    title: "messages",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "envelope"
-                                }), "  ", p), l.createElement(it, {
-                                    to: "/home/worlds",
-                                    title: "worlds",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "globe"
-                                })), l.createElement(it, {
-                                    to: "/home/avatars",
-                                    title: "avatars",
-                                    className: "btn btn-secondary text-left"
-                                }, l.createElement(ut(), {
-                                    name: "user-secret"
-                                })), (c || u) && l.createElement(it, {
-                                    to: "/home/gallery",
-                                    title: "gallery",
-                                    className: "btn btn-secondary text-left"
-                                }, l.createElement(ut(), {
-                                    name: "camera"
-                                })), l.createElement(it, {
-                                    to: "/home/user",
-                                    title: "profile",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "user"
-                                })), l.createElement(it, {
-                                    to: "/home/search",
-                                    title: "search",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "search"
-                                })), l.createElement(it, {
-                                    to: "/home/friends",
-                                    title: "friends",
-                                    className: "btn btn-secondary"
-                                }, l.createElement(ut(), {
-                                    name: "user-friends"
-                                })))), l.createElement("div", {
+                                }), "  Logout"))))), r.isMod && l.createElement("div", {
                                     className: "d-none d-md-block"
                                 }, l.createElement(Hu, null)))))
                             }
@@ -17851,10 +17797,10 @@
                                 to: "/home/locations",
                                 title: "locations",
                                 className: "btn btn-secondary text-left",
-                                hidden: 0 === o
+                                hidden: 0 === i
                             }, l.createElement(ut(), {
                                 name: "ticket-alt"
-                            }), "  Friend Locations ", l.createElement(ec.Z, null, o)), l.createElement(it, {
+                            }), "  Friend Locations ", l.createElement(ec.Z, null, i)), l.createElement(it, {
                                 to: "/home/download",
                                 title: "download",
                                 className: "btn btn-secondary text-left"
@@ -17872,13 +17818,13 @@
                                 className: "btn btn-secondary text-left"
                             }, l.createElement(ut(), {
                                 name: "user-secret"
-                            }), "  Avatars"), (c || u) && l.createElement(it, {
+                            }), "  Avatars"), (u || d) && l.createElement(it, {
                                 to: "/home/gallery",
                                 title: "gallery",
                                 className: "btn btn-secondary text-left"
                             }, l.createElement(ut(), {
                                 name: "camera"
-                            }), "  Gallery"), d && l.createElement(it, {
+                            }), "  Gallery"), f && l.createElement(it, {
                                 to: "/home/shop",
                                 title: "shop",
                                 className: "btn btn-secondary text-left"
@@ -17888,7 +17834,7 @@
                                 to: "/home/accountlink",
                                 title: "accountlink",
                                 className: "btn btn-secondary text-left",
-                                hidden: i.disableUpgradeAccount || r.steamId && r.oculusId
+                                hidden: s.disableUpgradeAccount || a.steamId && a.oculusId
                             }, l.createElement(ut(), {
                                 name: "shipping-fast"
                             }), "  Account Link"), l.createElement(it, {
