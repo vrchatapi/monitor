@@ -250,7 +250,7 @@
     "moderationEmail": "moderation@vrchat.com",
     "disableEmail": false,
     "appName": "VrChat",
-    "deploymentGroup": "green",
-    "buildVersionTag": "master-build-2022-01-26-rosalind-celeryforgettable",
+    "deploymentGroup": "blue",
+    "buildVersionTag": "master-build-2022-01-27-zuko-quaffice",
     "apiKey": "JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26"
 }
