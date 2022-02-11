@@ -2,20 +2,43 @@
     "VoiceEnableDegradation": false,
     "VoiceEnableReceiverLimiting": true,
     "address": "1062 Folsom St., Suite 200, San Francisco, CA, 94103",
+    "analyticsPlus": 0,
     "announcements": [
         {
             "name": "220121a_modified_clients",
             "text": "As part of our continued commitment to improve\nsafety and awareness, we want to remind you that\n<color='red'>modified clients of any kind are not allowed\non VRChat</color>, for any reason, and are prohibited\nby the Terms of Service.\n\nThere is no such thing as an 'approved'\nmodification, nor do we permit the use of\nany modification, for any purpose, ever.\n<color='red'>Using them can and will result in your\naccount being banned!</color>\n\nIn addition, modified clients are the single\ngreatest source of <color='red'>compromised and stolen\naccounts</color>-- so please, do not use them!"
         }
     ],
-    "apiAnimator": "hashArrayBoneHoist",
     "apiKey": "JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26",
+    "apiVoice": [
+        1,
+        0,
+        {
+            "attachmentEmbed": 1,
+            "tagSyncBuildSystemLatency": 1
+        },
+        [
+            "worldVoiceReferenceBoneHash",
+            [
+                {
+                    "appendHeadpat": true
+                },
+                0.7886164038098467,
+                [
+                    0.952611258917536,
+                    [
+                        true,
+                        63752,
+                        "blinkReceiveListener"
+                    ]
+                ]
+            ]
+        ]
+    ],
     "appName": "VrChat",
-    "attributeBounceRate": {
-        "eventsMap": 1
-    },
-    "boneKeyword": 0.27990595972364596,
-    "buildVersionTag": "master-build-2022-02-09-buck-whothreat",
+    "attributeBuildTag": 0,
+    "buildVersionTag": "master-build-2022-02-10-bailey-s-ookshallot",
+    "burritoPrototypeGroupReference": 0.26337939662574383,
     "captchaPercentage": 100,
     "clientApiKey": "JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26",
     "clientBPSCeiling": 18432,
@@ -23,11 +46,11 @@
     "clientReservedPlayerBPS": 7168,
     "clientSentCountAllowance": 15,
     "contactEmail": "hello@vrchat.com",
+    "contentMobileGenerator": 0,
     "copyrightEmail": "copyright@vrchat.com",
     "currentTOSVersion": 7,
-    "debounceReliable": true,
     "defaultAvatar": "avtr_c38a1615-5bf5-42b4-84eb-a8b6c37cbd11",
-    "deploymentGroup": "green",
+    "deploymentGroup": "blue",
     "devAppVersionStandalone": "0.12.0p3",
     "devDownloadLinkWindows": "www.vrchat.net",
     "devSdkUrl": "https://vrchat.com/home/download",
@@ -186,37 +209,35 @@
         "slowUpdateFactorThreshold": 25,
         "viewSegmentLength": 5
     },
+    "formatObjectAvatarOnly": true,
     "gearDemoRoomId": "2282253502",
     "homeWorldId": "wrld_4432ea9b-729c-46e3-8eaf-846aa0a37fdd",
     "homepageRedirectTarget": "https://hello.vrchat.com",
     "hubWorldId": "wrld_ba913a96-fac4-4048-a062-9aa5db092812",
-    "instanceBytes": true,
+    "ipv6Mobile": 0.7513054429587496,
     "jobsEmail": "jobs@vrchat.com",
-    "jumpEvent": true,
+    "listSecurityDynamic": 379,
+    "mentionEmbedLengthStroopwafelCheck": 1,
     "messageOfTheDay": "hello world",
     "moderationEmail": "moderation@vrchat.com",
     "moderationQueryPeriod": 60,
     "notAllowedToSelectAvatarInPrivateWorldMessage": "For security reasons, you're not yet allowed to select avatars in private worlds or upload content. Please continue to enjoy VRChat and we'll message you when you've been unlocked. Thanks and have fun!",
     "plugin": "no_kick_unlisted",
-    "readerSlicingDetection": false,
+    "randomDisableSdkGroup": false,
     "releaseAppVersionStandalone": "0.12.0p3",
     "releaseSdkUrl": "http://files.vrchat.cloud/sdk/VRCSDK-2019.09.18.12.05_Public.unitypackage",
     "releaseSdkVersion": "VRCSDK-2019.09.18.12.05_Public",
     "releaseServerVersionStandalone": "public_server_01",
-    "requestApiRumor": [
-        1,
-        64484
-    ],
-    "requestHeadpat": 24550,
-    "scrollVersionTag": "securityTimeReachabilityReserved",
+    "rotationRateVoice": 0.05377873566230562,
     "sdkDeveloperFaqUrl": "https://docs.vrchat.com/docs/frequently-asked-questions#section-why-can-t-i-upload-content-yet-",
     "sdkDiscordUrl": "https://discord.gg/vrchat",
     "sdkNotAllowedToPublishMessage": "Welcome the VRChat SDK!\r\n\r\nBefore you can upload avatars or worlds to VRChat, you'll need to spend more time enjoying the app. We do this for security reasons, and so you can learn more about us.\r\n\r\nWhen you get the ability to upload, we will notify you via email and in VRChat. For now, you can learn and test on your own device.\r\n\r\nTo get started, check out the resources below.\r\n\r\nThank you for your patience, we can't wait to see what you'll build!",
     "sdkUnityVersion": "2019.4.31f1",
     "supportEmail": "support@vrchat.com",
-    "systemPlus": 1,
     "timeOutWorldId": "wrld_5b89c79e-c340-4510-be1b-476e9fcdedcc",
+    "trustedFrameHeightRegionRotation": "heightThroughputSlicing",
     "tutorialWorldId": "wld_7d3d25ec-663e-406e-96a3-e2c4fc0d8104",
+    "typeKeyFilterApi": 0.5949191025237834,
     "updateRateMsMaximum": 1000,
     "updateRateMsMinimum": 50,
     "updateRateMsNormal": 200,
@@ -258,6 +279,7 @@
     "userVerificationRetry": 30,
     "userVerificationTimeout": 60,
     "viveWindowsUrl": "http://store.steampowered.com/app/438100/",
+    "wafflePlusGroup": true,
     "whiteListedAssetUrls": [
         "http://dbinj8iahsbec.cloudfront.net/plugins",
         "http://dbinj8iahsbec.cloudfront.net/",
@@ -266,7 +288,6 @@
         "https://api.vrchat.cloud/api/1/file/",
         "https://files.vrchat.cloud/unmanaged/"
     ],
-    "worldBoneFarPipeline": "alignmentFavoriteNetwork",
     "worldUpdatePeriod": 60,
     "youtubedl-hash": "1A-D7-9C-BF-F5-13-3F-A2-E8-81-A9-06-3F-59-41-37-42-B8-66-6D-88-6C-50-F6-69-1C-48-93-BB-16-CA-7D",
     "youtubedl-version": "2021-10-12"
