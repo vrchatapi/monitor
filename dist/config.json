@@ -2,7 +2,6 @@
     "VoiceEnableDegradation": false,
     "VoiceEnableReceiverLimiting": true,
     "address": "1062 Folsom St., Suite 200, San Francisco, CA, 94103",
-    "alignmentPositionApiSystem": true,
     "announcements": [
         {
             "name": "220121a_modified_clients",
@@ -11,8 +10,6 @@
     ],
     "apiKey": "JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26",
     "appName": "VrChat",
-    "attachmentTrusted": false,
-    "boneDistanceGenerate": 1,
     "buildVersionTag": "master-build-2022-02-12-carlbert-j-picklemustard",
     "captchaPercentage": 100,
     "clientApiKey": "JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26",
@@ -21,10 +18,9 @@
     "clientReservedPlayerBPS": 7168,
     "clientSentCountAllowance": 15,
     "contactEmail": "hello@vrchat.com",
-    "contentCookie": "graphHoistBlink",
-    "contextTrendJump": 0,
     "copyrightEmail": "copyright@vrchat.com",
     "currentTOSVersion": 7,
+    "dataProtocolDatagramExtractTimestamp": 0.1489143478071404,
     "defaultAvatar": "avtr_c38a1615-5bf5-42b4-84eb-a8b6c37cbd11",
     "deploymentGroup": "blue",
     "devAppVersionStandalone": "0.12.0p3",
@@ -173,7 +169,6 @@
             "index": 14
         }
     ],
-    "entryApiHidden": {},
     "events": {
         "distanceClose": 2,
         "distanceFactor": 100,
@@ -186,12 +181,12 @@
         "slowUpdateFactorThreshold": 25,
         "viewSegmentLength": 5
     },
+    "farScroll": 0.6541373817664431,
+    "frameFrameworkAlignmentReservedBuffer": 1,
     "gearDemoRoomId": "2282253502",
-    "hiddenOnly": [
-        {},
-        0,
-        1
-    ],
+    "generatorPipeline": 5132,
+    "generatorWaffleCrossApi": 1,
+    "hoistTrend": "updateProbabilityWorldApiSubscriber",
     "homeWorldId": "wrld_4432ea9b-729c-46e3-8eaf-846aa0a37fdd",
     "homepageRedirectTarget": "https://hello.vrchat.com",
     "hubWorldId": "wrld_ba913a96-fac4-4048-a062-9aa5db092812",
@@ -201,24 +196,26 @@
     "moderationQueryPeriod": 60,
     "notAllowedToSelectAvatarInPrivateWorldMessage": "For security reasons, you're not yet allowed to select avatars in private worlds or upload content. Please continue to enjoy VRChat and we'll message you when you've been unlocked. Thanks and have fun!",
     "plugin": "no_kick_unlisted",
-    "propPackagePrototypeDeploymentTrusted": 0,
-    "regionReturn": 0,
     "releaseAppVersionStandalone": "0.12.0p3",
     "releaseSdkUrl": "http://files.vrchat.cloud/sdk/VRCSDK-2019.09.18.12.05_Public.unitypackage",
     "releaseSdkVersion": "VRCSDK-2019.09.18.12.05_Public",
     "releaseServerVersionStandalone": "public_server_01",
+    "rotationLatencyClient": 0,
+    "routingPackageDisable": {},
+    "rumorViolation": false,
     "sdkDeveloperFaqUrl": "https://docs.vrchat.com/docs/frequently-asked-questions#section-why-can-t-i-upload-content-yet-",
     "sdkDiscordUrl": "https://discord.gg/vrchat",
     "sdkNotAllowedToPublishMessage": "Welcome the VRChat SDK!\r\n\r\nBefore you can upload avatars or worlds to VRChat, you'll need to spend more time enjoying the app. We do this for security reasons, and so you can learn more about us.\r\n\r\nWhen you get the ability to upload, we will notify you via email and in VRChat. For now, you can learn and test on your own device.\r\n\r\nTo get started, check out the resources below.\r\n\r\nThank you for your patience, we can't wait to see what you'll build!",
+    "sdkSend": {
+        "bodyTimeoutSort": 0.7475073696385353,
+        "waffleKeyFarJump": false,
+        "chumpPeriod": 0.4076565252616444
+    },
     "sdkUnityVersion": "2019.4.31f1",
-    "sendReaderProbabilityAnimator": 0.12970143190509775,
     "supportEmail": "support@vrchat.com",
-    "terminalSort": [
-        1,
-        61985
-    ],
+    "tagUpdate": "checkTimeKeyFavoriteYacht",
     "timeOutWorldId": "wrld_5b89c79e-c340-4510-be1b-476e9fcdedcc",
-    "timestampTime": 1,
+    "timeoutUpdate": true,
     "tutorialWorldId": "wld_7d3d25ec-663e-406e-96a3-e2c4fc0d8104",
     "updateRateMsMaximum": 1000,
     "updateRateMsMinimum": 50,
