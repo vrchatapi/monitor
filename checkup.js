@@ -8,7 +8,7 @@ const VRCHAT_API_URL = "https://vrchat.com/api/1"
 
 const fetchJs = () => fetch(`${VRCHAT_API_URL}/js/app.js`).then(r => r.text());
 const fetchCss = () => fetch(`${VRCHAT_API_URL}/css/app.css`).then(r => r.text());
-const fetchConfig = () => fetch(`${VRCHAT_API_URL}/config`).then(r => r.json());
+//const fetchConfig = () => fetch(`${VRCHAT_API_URL}/config`).then(r => r.json());
 
 (async () => {
     // Fetch and beautify the JavaScript bundle
@@ -26,7 +26,7 @@ const fetchConfig = () => fetch(`${VRCHAT_API_URL}/config`).then(r => r.json());
     await fs.writeFile("./dist/app.css", cssPretty);
 
     // Fetch config
-    const config = await fetchConfig();
-    delete config.serverName; // This is different for each request
-    await fs.writeFile("./dist/config.json", JSON.stringify(config, null, 4));
+    //const config = await fetchConfig();
+    //delete config.serverName; // This is different for each request
+    //await fs.writeFile("./dist/config.json", JSON.stringify(config, null, 4));
 })()
