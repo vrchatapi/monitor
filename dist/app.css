@@ -6050,17 +6050,17 @@ fieldset:disabled .btn {
 
 @keyframes progress-bar-stripes {
     0% {
-        background-position-x: 1rem
+        background-position-x: 2rem
     }
 }
 
 .progress {
     display: flex;
-    height: 1rem;
+    height: 2rem;
     overflow: hidden;
     font-size: 0.75rem;
-    background-color: #d9e5f1;
-    border-radius: .25rem
+    background-color: #121212;
+    border-radius: 4px
 }
 
 .progress-bar {
@@ -6068,10 +6068,10 @@ fieldset:disabled .btn {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    color: #fff;
+    color: #1fd1ed;
     text-align: center;
     white-space: nowrap;
-    background-color: #1fd1ed;
+    background-color: #064b5c;
     transition: width .6s ease
 }
 
@@ -6083,11 +6083,11 @@ fieldset:disabled .btn {
 
 .progress-bar-striped {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 1rem 1rem
+    background-size: 2rem 2rem
 }
 
 .progress-bar-animated {
-    animation: 1s linear infinite progress-bar-stripes
+    animation: .5s linear infinite progress-bar-stripes
 }
 
 @media(prefers-reduced-motion: reduce) {
