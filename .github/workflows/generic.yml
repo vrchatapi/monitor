@@ -15,7 +15,7 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: run checkup
-        run: node ./checkup.js
+        run: node ./scripts/checkup.js
       - name: publish changes
         run: |
           git config --global user.name "github-actions[bot]"
