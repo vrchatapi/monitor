@@ -50,6 +50,12 @@
     color-scheme: dark
 }
 
+@font-face {
+    font-family: "VRCCustom";
+    src: url(https://dtuitjyhwcl5y.cloudfront.net/3052f554a7abd6d0986a.woff2) format("woff2"), url(https://dtuitjyhwcl5y.cloudfront.net/53f8e81d731918b12154.woff) format("woff"), url(https://dtuitjyhwcl5y.cloudfront.net/d881327d87b8c7eb2125.otf) format("opentype");
+    unicode-range: U+E000-E0FF
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -121,10 +127,10 @@
     --bs-dark-border-subtle: #9baaba;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 10, 10, 13;
-    --bs-font-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --bs-font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-font-sans-serif: VRCCustom, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --bs-font-monospace: VRCCustom, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --bs-body-font-family: VRCCustom, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: normal;
     --bs-body-line-height: 1.5;
@@ -6881,7 +6887,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-tooltip-zindex);
     display: block;
     margin: var(--bs-tooltip-margin);
-    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: VRCCustom, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1.5;
@@ -7002,7 +7008,7 @@ fieldset:disabled .btn {
     z-index: var(--bs-popover-zindex);
     display: block;
     max-width: var(--bs-popover-max-width);
-    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: VRCCustom, "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1.5;
