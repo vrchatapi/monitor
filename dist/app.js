@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-04-29t22-11-58-the-butt-of-puerto", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-04-30t18-01-08-the-tape-of-alberni", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41817,7 +41817,7 @@
         6488: "6966c9b96c27af0208192764036dad0ca863599efbe00eaafb501622c4985687",
         6627: "0d1154ce1ba3c5d3c321dddd2feb48c1c85d0fea06c3d25d17c88808775b71a2",
         6681: "f31b7a2d0b84c9c59ad65ef4800d1c80965a097ad6bcd6ff84f46e674c8379c4",
-        6716: "7e80d839fb594df4535e3f4c8d4b8c8cfe12c295ac106dd8eda89db760a2064d",
+        6716: "7a9eb56a761c935da11fcb152bbaf3e089622c57f46ea3f13873cf36fb0ce30a",
         6826: "6c20485ec854fd230e1e0fbdbc1bfb76d65b47d47b0dba2eed0a0e74ddb6cb22",
         6841: "324cbfdfa8d98a8757f5d1a9dc95d005456b634d4ea90899057cd5b0f023195d",
         7047: "0ee34bd8dc934138ccb4dddbce9c5cf8fc6635aed414e3a92140288e6de9bea9",
@@ -41927,9 +41927,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-04-29t22-11-58-the-butt-of-puerto"
+        id: "2024-04-30t18-01-08-the-tape-of-alberni"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-04-29t22-11-58-the-butt-of-puerto"
+        id: "2024-04-30t18-01-08-the-tape-of-alberni"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43471,7 +43471,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-04-29t22-11-58-the-butt-of-puerto",
+                release: "2024-04-30t18-01-08-the-tape-of-alberni",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
