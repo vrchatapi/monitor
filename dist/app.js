@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-04-30t18-01-08-the-tape-of-alberni", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-02t17-16-55-the-icon-of-burton", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41752,10 +41752,10 @@
         229: "76b90a53178bd01e68b151a7fb32c5b5f6cf0ddf7940d19bcf4aeaab64e69d24",
         314: "42697dab4ae03af545e6b59f5f694fff9cc160642702e97a95a1abeaf452ef2b",
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
-        396: "952f86d3827b48ae484546e738ac4842be2d700579cec4389ccfa7169c7414dd",
+        396: "9439c9f1bd1fd5e5024d5c926140647790803f674fb64bdaf4e81ca6edc1e752",
         422: "6ed53df837c3201053528757f8c7ef5850747919e059c64be519857442e82e56",
         430: "461d950466db6156ea1fb3e84aabd6485d877d5902a98ed291cf92e40166c5e0",
-        647: "ea8d945da25eeee0edcf09830630a4e9707b18846de6c3cf3770bd0cd29558a3",
+        647: "49cb5cb1949c04f59191a9f890fb64676621146832ab14cceec27828b18adeb2",
         715: "b0ef1c57064ccd9525fb72b89f2a0c182bdba9e0089a8bc1b5a1f06b0a89a11a",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
         975: "466ab47f082a2903ba76ec357dd2e9e8ea27435ff7d481b0e2e02dde3a4fdc95",
@@ -41835,7 +41835,7 @@
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
         8710: "38bfc2adda4ae878b24345991daf88a0dfbc28a329b1fa7a47847916b8e91f75",
         8744: "6c24872c75229a62e1c9fb16947c3f348d6087393a38044ee6a7e31025fda3b7",
-        8755: "5a10984759ddacea9576b72183075ad4de664c7282f42751619b6443ff2e3d21",
+        8755: "b3cdac205cd3f870e5d786c56831b17da33f7f4337ae4c1f0e1a7a8cd9f88d46",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "94f702b36f1fe82ac9296f638536226110148e99bb4e56042a1360ddbeb7f47f",
@@ -41927,9 +41927,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-04-30t18-01-08-the-tape-of-alberni"
+        id: "2024-05-02t17-16-55-the-icon-of-burton"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-04-30t18-01-08-the-tape-of-alberni"
+        id: "2024-05-02t17-16-55-the-icon-of-burton"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43471,7 +43471,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-04-30t18-01-08-the-tape-of-alberni",
+                release: "2024-05-02t17-16-55-the-icon-of-burton",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
