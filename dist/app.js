@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-02t17-16-55-the-icon-of-burton", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-03t23-59-23-the-python-of-yuffie", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41810,7 +41810,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         6077: "c0d94657a096e3f25baabf04491fe67f6517595348d04b664f9380db40f0f3df",
         6182: "b8829bfe9fa1714cb1c7aa201020d64d0219cbb9b9b2626a6351fc10399cdb51",
-        6231: "4489c1eb2e4a3e40f5f129e90f8e857c0524b3c50952b5076f741476828ca930",
+        6231: "3d3071f8d7bbcadac60c37337ba8a27965711334de7baafad3fbd38f1e90913f",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "5c2576991d0220017f28d2f0f7b07dad9d50e7a38f1c81a8749609aacbe0f556",
         6432: "dd886d397940f8c74ca02d387a740fc4253470444613599986c3b1f19704174d",
@@ -41927,9 +41927,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-05-02t17-16-55-the-icon-of-burton"
+        id: "2024-05-03t23-59-23-the-python-of-yuffie"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-05-02t17-16-55-the-icon-of-burton"
+        id: "2024-05-03t23-59-23-the-python-of-yuffie"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43471,7 +43471,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-05-02t17-16-55-the-icon-of-burton",
+                release: "2024-05-03t23-59-23-the-python-of-yuffie",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
