@@ -1,4 +1,4 @@
-/*! For license information please see "2024-05-08t00-21-53-the-devil-of-kendra--main-prod-public-2b4b3355-a9b1-4e08-9370-adb39e50781b--app.js.LICENSE.txt" */
+/*! For license information please see "2024-05-09t23-18-54-the-woof-of-naples--main-prod-public-fd90757f-c71d-4c9b-813b-10697f28dd6e--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-08t00-21-53-the-devil-of-kendra", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-09t23-18-54-the-woof-of-naples", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41758,7 +41758,7 @@
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "9439c9f1bd1fd5e5024d5c926140647790803f674fb64bdaf4e81ca6edc1e752",
         422: "6ed53df837c3201053528757f8c7ef5850747919e059c64be519857442e82e56",
-        430: "aada3806f41c5ddc09e09a98711901d49014abbf2fc05e8a7d45646b5a0654cc",
+        430: "be698ae2ddb0708b3851d0cb23cd5fd6fca43bc31fa1d36168be62f0c70946a5",
         647: "49cb5cb1949c04f59191a9f890fb64676621146832ab14cceec27828b18adeb2",
         715: "b0ef1c57064ccd9525fb72b89f2a0c182bdba9e0089a8bc1b5a1f06b0a89a11a",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
@@ -41793,12 +41793,12 @@
         3488: "90c4a5b8dcb1fa9ad3d56acb84472be279e54a751af93cc7741067c19548c175",
         3594: "2b7bc2497c62cca81855e98381d302096e17d4f539156809b602932b12eb68ab",
         3609: "64162542599acdf2ab6ed24d2616377d4faccd7d398a01de43547a6762214563",
-        3825: "c019fb3941b8446733afc7e43d4048d1c5e10fcc36eb9e4ffb9ddefb58d1a399",
+        3825: "bf9b305426a28a5a2bf70f83ba73501be391bef68184511ac42d2438e8d37221",
         4058: "0815a7eda6c4c4b9c1d78c5eaafd8171f56cf2bc052fb0b73f2d20092b1484cc",
         4061: "5c4285f9e25f5a0e8a3a85997b93fe51d823dee0610b10bf223e4fe69929021c",
         4157: "e5971191f087a5e928051601c5aa7dc87f9a53ba0a900d9a5ba1bd3a6675feb5",
         4353: "5f855d058c90dadd60e76e13a38b4afabe64aaf95ada4215be0b54f5c4c999ee",
-        4376: "f7c4edafba4498f3f57ccb6f17d3240b9a0e5ec278bfaeba2ed68631d6390fa9",
+        4376: "ceb6fa85ba07882d6f49dd4cc53ca2f285fd36d589831dc6b4622cc5ed00f616",
         4444: "f6b772416dd86e9039b5a40748428c49549f1c430aaa1affca143e754e473c2a",
         4673: "8fddf1921b0f15d05d03d0f7f7ea524e6449968a3238bbee75a5cc1707860760",
         4896: "a3db1b14de55be4f18bb78779149378769b18ae7e78e7d39bc43800c27677e2c",
@@ -41806,7 +41806,7 @@
         5039: "41361273dbb0d66c99b5f9c412cdc0ca38afec1af7262131db64d142637f2043",
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5132: "c12d8134e327e32a24b767a0e263a2bc630465b15206e91da83f7a30d0f05ba4",
-        5142: "919d7ca9e180e08b7b4c44d8ef5fd4eb0e5591a4fcbf99bbe94605f7152cdf52",
+        5142: "eb6170c90b7d2ce946308ec8999b347465e879968f8035a7da8b4a4efd85435f",
         5147: "77b562eb77ed3f77a8ddf7d72f4fa1c69ce6668304b679a57d1242d002a3dce2",
         5391: "83ee96233841d64abd933d6a2c1c34a15ee326a0fd8cdb3af912ac6989780eb1",
         5460: "21c5136c10bc18e65bf0ac3e04835ec4102ad70bffe8410eaa1b0c443a8f27db",
@@ -41814,7 +41814,7 @@
         5737: "2adefb704cdf27519db5913c9eb89d5a893939a4fb76797dca7478dd9029d314",
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         6077: "c0d94657a096e3f25baabf04491fe67f6517595348d04b664f9380db40f0f3df",
-        6182: "d89a028d3ffd1597f080db78f7b48cab69e5f1f8d4cf55da15ae9f6ddf51502e",
+        6182: "df328c77bfa010454eb79e9012dc187a6af6834acec60d09f8c592e9874a1bf3",
         6231: "3d3071f8d7bbcadac60c37337ba8a27965711334de7baafad3fbd38f1e90913f",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "5c2576991d0220017f28d2f0f7b07dad9d50e7a38f1c81a8749609aacbe0f556",
@@ -41831,22 +41831,22 @@
         7556: "e1156f416f8762cbe3db2cd8d06292c41d6c6b8e20619bf7f957baddc3595700",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a05612c19f1ebf5aff18dc47b59f258719e20115b149f5c6335c0564c95f65c1",
-        7850: "018205f02c5c290099425a3f109bd4d5a3c88b8ea9aa043ba0dcf5342a09a559",
+        7850: "2d02ca7385f844b1a8cd27fadf4fc3458c34793572e785bc9aa2c7bfdea046aa",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "35cd5b7e4dedd07953b715b701ab1202eaa279f2f5e6fd98ce4f637fa0fa2547",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "7ade5da00aadf73bce11d94888e6934b8efe5ec3888e24798d47bd710edbb8e3",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "6fbacce058ae373ee1e0121d28571bc117a11ebf04cd4d77a2cfa9528e64b8cb",
-        8744: "aed28711c865f9430a90da28e36f79beb98cc8cb3f1eb357677cf3c9ef1353bf",
+        8710: "0ceb92c41e787e17781c06840f400ad4e97e0d1dab27b3e4879ca0892ffedcee",
+        8744: "f753e41d9d04a7f2713ce4340295a068bd70b92166e59bb1c39b42112814b07b",
         8755: "b3cdac205cd3f870e5d786c56831b17da33f7f4337ae4c1f0e1a7a8cd9f88d46",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "94f702b36f1fe82ac9296f638536226110148e99bb4e56042a1360ddbeb7f47f",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "c02b399773ebd51195ac68f979b824d7b158fe24fe8406823f7ad6db727f0f5e",
-        9323: "0c76effa7b989dfd76c124640fe2259db6f54a73699a68450f5c4bfbb4436b22",
+        9323: "aa4348ff97fc8114b340c43ff5239abefb49a86a3cbb278aa3adddb8c345f599",
         9395: "61e2fc80341089a906cb3e7a8ac912b8f4090f2f950174fcb6b6d88ce5a805ef",
         9435: "f0e8ca908f135c42aae0c22746e5aff273b2e3ffca6f730443d952a85e629b4b",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
@@ -41932,9 +41932,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-05-08t00-21-53-the-devil-of-kendra"
+        id: "2024-05-09t23-18-54-the-woof-of-naples"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-05-08t00-21-53-the-devil-of-kendra"
+        id: "2024-05-09t23-18-54-the-woof-of-naples"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43476,7 +43476,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-05-08t00-21-53-the-devil-of-kendra",
+                release: "2024-05-09t23-18-54-the-woof-of-naples",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
