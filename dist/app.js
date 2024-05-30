@@ -1,4 +1,4 @@
-/*! For license information please see "2024-05-23t17-56-15-the-tastic-of-croft--main-prod-public-3a9f3a62-3bfb-4730-8043-b3328c55fd34--app.js.LICENSE.txt" */
+/*! For license information please see "2024-05-29t18-35-00-the-efficient-of-jacob--main-prod-public-c44f9d9b-a4a7-40eb-abc7-2e15d39b7285--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-23t17-56-15-the-tastic-of-croft", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-29t18-35-00-the-efficient-of-jacob", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41758,7 +41758,7 @@
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "e4b2a97c370886e463c561a72b0465f4864781b1f8e21b583bfdb7789e654a51",
         422: "6ed53df837c3201053528757f8c7ef5850747919e059c64be519857442e82e56",
-        430: "3d8b6140b8b7da3affd87b30a6fdf7ccbbc07ac0be50957d414cf0c6ce28015e",
+        430: "8e0d9faecdd720f9d89b7ac369c3f9ac0313810750cf69123d798c9d8ded49dd",
         625: "35c9ec0c2d21ff795380fd8a602e4fc21c6e207bebfe6b69f25e70d466a19053",
         647: "49cb5cb1949c04f59191a9f890fb64676621146832ab14cceec27828b18adeb2",
         715: "b0ef1c57064ccd9525fb72b89f2a0c182bdba9e0089a8bc1b5a1f06b0a89a11a",
@@ -41767,7 +41767,7 @@
         989: "a98ef5167c5f1dfac950337fe2923627d3fc53a6a8f6d88610e54a4ad8f22b66",
         997: "47b79912a0c1c60af9507b22aa1f91860894e4dc4f175a7c017aa88d40506938",
         1211: "b85d7f8dfd56edcffa8ca9dd207dd601094e54aee982902aa40ab3e320c74b2d",
-        1264: "7a9b96b810d49e87de0884e759360480b3ca30131f4a596eaa9513005dfeace7",
+        1264: "db94588a90fb152369fc0f5c2f6d84562846a4c3ece4469c255d61551f03ffe0",
         1285: "a456f14a5169277580623a48ff6bf642cfc89f215bc7506c7a0bef212335e1cc",
         1310: "02480f75df565a8d010e10b10e755cf01fad4229901b33fa548f863a9eca8a74",
         1395: "3dfade616b06344e16a0c0ec73562a998318202ed88ec21a9e40bab23795a25b",
@@ -41812,7 +41812,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         6077: "c0d94657a096e3f25baabf04491fe67f6517595348d04b664f9380db40f0f3df",
         6113: "82262620c1199c2f0388dcd5080d228ee5c523f3b1e64feabe1e998b22c6e064",
-        6182: "c480821d666220b4cb2c593029d2768fbf9b68c2a9916fb3062207ee75d50ecd",
+        6182: "1e8ea0a7c79c63451fede65f62b1035a409e096cf4095d5a661ca3454838ea35",
         6231: "3d3071f8d7bbcadac60c37337ba8a27965711334de7baafad3fbd38f1e90913f",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "5c2576991d0220017f28d2f0f7b07dad9d50e7a38f1c81a8749609aacbe0f556",
@@ -41831,22 +41831,22 @@
         7556: "e1156f416f8762cbe3db2cd8d06292c41d6c6b8e20619bf7f957baddc3595700",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a05612c19f1ebf5aff18dc47b59f258719e20115b149f5c6335c0564c95f65c1",
-        7850: "45d3d3fcbe82b0e1a49a3b17b585746df1985d720d07aac51fc014f19cb060d1",
+        7850: "470c88550f09d4cd949324f95d499e874f3655160d5a0101f850d22c31582ae6",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "35cd5b7e4dedd07953b715b701ab1202eaa279f2f5e6fd98ce4f637fa0fa2547",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "7ade5da00aadf73bce11d94888e6934b8efe5ec3888e24798d47bd710edbb8e3",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "49abbb346d43f2421f26b9e9ffcf104f637e54ccf7c1458c979ed85dc88b8635",
-        8744: "60a6daa04c05f8d391bee2f927c1f1420addd1d48e5586535fd1e71c1640a58a",
+        8710: "0f8dfa77ed3c6acdeffdae8e67251eb944b2b45e1109bfe5ad7eb225c1654ebe",
+        8744: "8876e47854a30accf1617757efcebdf5fdfe40b40a05db7c1dc357459f30df7b",
         8755: "b3cdac205cd3f870e5d786c56831b17da33f7f4337ae4c1f0e1a7a8cd9f88d46",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "94f702b36f1fe82ac9296f638536226110148e99bb4e56042a1360ddbeb7f47f",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "c02b399773ebd51195ac68f979b824d7b158fe24fe8406823f7ad6db727f0f5e",
-        9323: "5b512f091fb8a13edb07d063c7052a7a9498944bcc94597cd298a395ae4a4106",
+        9323: "6febabd8a998f6d57790b69d186aea9595a226df986a88b6af1d7e57a77c6970",
         9395: "61e2fc80341089a906cb3e7a8ac912b8f4090f2f950174fcb6b6d88ce5a805ef",
         9435: "f0e8ca908f135c42aae0c22746e5aff273b2e3ffca6f730443d952a85e629b4b",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
@@ -41932,9 +41932,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-05-23t17-56-15-the-tastic-of-croft"
+        id: "2024-05-29t18-35-00-the-efficient-of-jacob"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-05-23t17-56-15-the-tastic-of-croft"
+        id: "2024-05-29t18-35-00-the-efficient-of-jacob"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43476,7 +43476,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-05-23t17-56-15-the-tastic-of-croft",
+                release: "2024-05-29t18-35-00-the-efficient-of-jacob",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
