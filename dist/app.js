@@ -1,4 +1,4 @@
-/*! For license information please see "2024-05-30t21-45-28-the-aggrieve-of-tim--main-prod-public-13a117ea-228e-4f54-9425-da8746e44f0a--app.js.LICENSE.txt" */
+/*! For license information please see "2024-06-11t19-19-40-the-ship-of-goro--main-prod-public-908fadf5-e128-4764-99c0-8c4549542d01--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-05-30t21-45-28-the-aggrieve-of-tim", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-06-11t19-19-40-the-ship-of-goro", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -41758,7 +41758,7 @@
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "e4b2a97c370886e463c561a72b0465f4864781b1f8e21b583bfdb7789e654a51",
         422: "6ed53df837c3201053528757f8c7ef5850747919e059c64be519857442e82e56",
-        430: "720e6f61af0a5c14b3564f3215bc7de404ed68be945f830a5a3c6e836201ef2d",
+        430: "6544c6baa087f15a596f9ce45f1f9c165d681f1bf0f69d0914adfeb11b92c921",
         625: "f505683894a2258b49b3dcf9accdaa5c82e76d5fe23ea74d6fc07dae84be0479",
         715: "b0ef1c57064ccd9525fb72b89f2a0c182bdba9e0089a8bc1b5a1f06b0a89a11a",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
@@ -41773,7 +41773,7 @@
         1400: "2034b7a7e85cd0c1ff9804fad23e4be4eb6f645321a99f55b935281ee329f060",
         1792: "214f4d815bc57301a564e47a4af2ba44600d5590f3c1ba78d402a0639dc8e1ec",
         1810: "0ce44cac8a4f8f7bef86dd925e18bee1455802a428248ef2219c96ad5efe8c47",
-        1941: "ab15165d812e65f87c5e7a3fd0c24d5c43752057f4a5e89892778be83aaf8d4d",
+        1941: "5367f60254118b21298df0eeb6d11e563767d7fece6a32bfdb0ab0567aaf0c70",
         1952: "21fa49563a2fb4fc9afc07683e9a885d616eb7a14595a64507671d517ca14637",
         1968: "a8c17a95285667e3131ab9618e2d871ddb6b325c3e83f03f0729dea088b06a4f",
         2295: "e2e1cd409472afb457e50058537a485560f3f3731c293b176f8265ebc60354fd",
@@ -41812,7 +41812,7 @@
         5939: "fca3b8af775b86d1b161609f5eb418519ddb30788efeda71c358bca3ef70da70",
         6077: "c0d94657a096e3f25baabf04491fe67f6517595348d04b664f9380db40f0f3df",
         6113: "82262620c1199c2f0388dcd5080d228ee5c523f3b1e64feabe1e998b22c6e064",
-        6182: "f294de725a7772937073f2ae65ee8465db4abcc0248e029bc2852bdc788aa09e",
+        6182: "c5c196c3fc2161c231a3909c0bd0c08b9e619d2ace03e60aed76add6430b4905",
         6231: "3d3071f8d7bbcadac60c37337ba8a27965711334de7baafad3fbd38f1e90913f",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "5c2576991d0220017f28d2f0f7b07dad9d50e7a38f1c81a8749609aacbe0f556",
@@ -41831,22 +41831,22 @@
         7556: "e1156f416f8762cbe3db2cd8d06292c41d6c6b8e20619bf7f957baddc3595700",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a05612c19f1ebf5aff18dc47b59f258719e20115b149f5c6335c0564c95f65c1",
-        7850: "7de44a07af3371508cd8746f65d558dc700affa95158ee3e75deae08cdd59197",
+        7850: "7669880342488cf5c05c142817398de29287139de92f43200192b255583706b1",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "35cd5b7e4dedd07953b715b701ab1202eaa279f2f5e6fd98ce4f637fa0fa2547",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "7ade5da00aadf73bce11d94888e6934b8efe5ec3888e24798d47bd710edbb8e3",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "418895201e62ce600aca8bac02bdeefe59e2a35af6b34bb9ee4db4f9c1b05f9a",
-        8744: "c47066b2bcc2675a2cccf035c27d1641b2744237394482ab538f2f03ec8878bf",
+        8710: "2d2006b66e7aee6414769005e9c328544a929ca36203f28049f4f06f29af3fe1",
+        8744: "37f988c39a9e9487d60844fd24c4fcc99648fd5f6e1878204909af10657e9a5e",
         8755: "b3cdac205cd3f870e5d786c56831b17da33f7f4337ae4c1f0e1a7a8cd9f88d46",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "94f702b36f1fe82ac9296f638536226110148e99bb4e56042a1360ddbeb7f47f",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "c02b399773ebd51195ac68f979b824d7b158fe24fe8406823f7ad6db727f0f5e",
-        9323: "3ac9cb15509868d82349d5b3a1a27d8273921727efab3b16d92e4251ff32b559",
+        9323: "b48de221b722d72b02dff5219a6a18ca250bf0639388717986c5989ec9f711e9",
         9395: "61e2fc80341089a906cb3e7a8ac912b8f4090f2f950174fcb6b6d88ce5a805ef",
         9435: "f0e8ca908f135c42aae0c22746e5aff273b2e3ffca6f730443d952a85e629b4b",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
@@ -41932,9 +41932,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-05-30t21-45-28-the-aggrieve-of-tim"
+        id: "2024-06-11t19-19-40-the-ship-of-goro"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-05-30t21-45-28-the-aggrieve-of-tim"
+        id: "2024-06-11t19-19-40-the-ship-of-goro"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43476,7 +43476,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-05-30t21-45-28-the-aggrieve-of-tim",
+                release: "2024-06-11t19-19-40-the-ship-of-goro",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
