@@ -1,4 +1,4 @@
-/*! For license information please see "2024-06-20t19-06-29-the-gem-of-mackenzie--main-prod-public-793bf585-792d-4606-b56d-393042bcfd54--app.js.LICENSE.txt" */
+/*! For license information please see "2024-06-21t23-14-26-the-world-of-miyoshi--main-prod-public-4d8063d7-bc7a-4e59-92bd-58aed6dfdf75--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-06-20t19-06-29-the-gem-of-mackenzie", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-06-21t23-14-26-the-world-of-miyoshi", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -22792,9 +22792,9 @@
                     l = n.n(c),
                     u = n(27484),
                     d = n.n(u),
-                    f = n(84110),
+                    f = n(56176),
                     p = n.n(f),
-                    m = n(56176),
+                    m = n(84110),
                     h = n.n(m),
                     A = n(12227),
                     g = ["width"];
@@ -22821,7 +22821,7 @@
                     }
                     return e
                 }
-                d().extend(p(), {
+                d().extend(h(), {
                     thresholds: [{
                         l: "s",
                         r: 59,
@@ -22861,7 +22861,7 @@
                         l: "yy",
                         d: "year"
                     }]
-                }), d().extend(h());
+                }), d().extend(p());
                 var b = function(e) {
                         return (0, s.Z)(l().mark((function t() {
                             var n;
@@ -22889,13 +22889,12 @@
                         return e
                     },
                     E = function(e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "0.0.0f1",
-                            n = new RegExp("(\\d+)(?:\\.)(\\d+)(?:\\.)(\\d+)(?:f)(\\d*)").exec(t),
-                            r = n[1] * Math.pow(10, 7);
-                        return r += n[2] * Math.pow(10, 5), r += n[3] * Math.pow(10, 3), {
-                            isSupported: e === (r += n[4] - 1),
-                            isUnsupported: e > r,
-                            isOld: e < r
+                        var t = /(\d+)(?:\.)(\d+)(?:\.)(\d+)(?:f)(\d*)/.exec(arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "0.0.0f1"),
+                            n = t[1] * Math.pow(10, 7);
+                        return n += t[2] * Math.pow(10, 5), n += t[3] * Math.pow(10, 3), {
+                            isSupported: e === (n += t[4] - 1),
+                            isUnsupported: e > n,
+                            isOld: e < n
                         }
                     },
                     I = function(e) {
@@ -23053,12 +23052,13 @@
                             n = e.currentUser;
                         return null !== n && ("private" === t.location || "private" === t.worldId || (0, A.tz)(t, n, t.location))
                     },
-                    G = function(e) {
-                        var t, n = e.thumbnailImageUrl,
+                    G = function() {
+                        var e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+                            n = t.thumbnailImageUrl,
                             r = void 0 === n ? null : n,
-                            o = e.imageUrl,
+                            o = t.imageUrl,
                             a = void 0 === o ? null : o;
-                        return null != r && r.includes("_thumb") && a ? a : null !== (t = null != r ? r : a) && void 0 !== t ? t : null
+                        return null != r && r.includes("_thumb") && a ? a : null !== (e = null != r ? r : a) && void 0 !== e ? e : null
                     },
                     q = function(e) {
                         if (!e) return !1;
@@ -41758,7 +41758,7 @@
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "e4b2a97c370886e463c561a72b0465f4864781b1f8e21b583bfdb7789e654a51",
         422: "6ed53df837c3201053528757f8c7ef5850747919e059c64be519857442e82e56",
-        430: "789f6ad07501c61fff928ad738e535fc6e98a6ed9dff539b835a58d6ebb374c8",
+        430: "b5ffac7c589301224a47d89b5771c4e6d5cf307d9e8873d9110734d261327dd3",
         625: "f505683894a2258b49b3dcf9accdaa5c82e76d5fe23ea74d6fc07dae84be0479",
         715: "eab70727da484007bf1442e0838f6bf1f8c1bd8df178c30a87a074c9f3ae1b9c",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
@@ -41809,10 +41809,10 @@
         5508: "de1296cfb05381b01b737094c13c7ab0dcc803fc26eaeb8975d2b8c2ad038bc4",
         5737: "2adefb704cdf27519db5913c9eb89d5a893939a4fb76797dca7478dd9029d314",
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
-        5939: "883e46d409089651959a3a0f753653ef41df70c0a1c5a5ce152201a16f9e00cb",
+        5939: "8de6e1214ddcf67b0c770f5771d373b02b88a4a7d3b62c8deceace591b228a35",
         6077: "c0d94657a096e3f25baabf04491fe67f6517595348d04b664f9380db40f0f3df",
         6113: "82262620c1199c2f0388dcd5080d228ee5c523f3b1e64feabe1e998b22c6e064",
-        6182: "3bcb9ab8f6db2d9abcd3f27a069d75b944090164788e411d5a411689dfff0934",
+        6182: "620282deeb4586150c6c3574abea27093dc29282752581858127dd6509fe70e7",
         6231: "3d3071f8d7bbcadac60c37337ba8a27965711334de7baafad3fbd38f1e90913f",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "5c2576991d0220017f28d2f0f7b07dad9d50e7a38f1c81a8749609aacbe0f556",
@@ -41831,22 +41831,22 @@
         7556: "e1156f416f8762cbe3db2cd8d06292c41d6c6b8e20619bf7f957baddc3595700",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a05612c19f1ebf5aff18dc47b59f258719e20115b149f5c6335c0564c95f65c1",
-        7850: "8ec191ce7f1cf2b6dba028705da414161a46dccc9f0d2b10028f6af68dfd08db",
+        7850: "e42f3b4c2b4e6eda60f7a73e6bcc92c0fc547c3d510a4a638d1cdb7f43566007",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "35cd5b7e4dedd07953b715b701ab1202eaa279f2f5e6fd98ce4f637fa0fa2547",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "7ade5da00aadf73bce11d94888e6934b8efe5ec3888e24798d47bd710edbb8e3",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "9648d02e3989651acee3ee19cf722332e4bcc3a28a51c7edda637e9d78662780",
-        8744: "a26d082f70b3b6ab58531d0bb19a98cc4a370fc1bb5542aeb9c5028fb15385a2",
+        8710: "b61f64a064cbb925ce66fbc539add8cd6b548c3c2889c1a909f780afe0d71506",
+        8744: "fdd7467df2586c13c4b9d527ec8520b77d7749c4f484a240618eb3397c9f3f1f",
         8755: "b3cdac205cd3f870e5d786c56831b17da33f7f4337ae4c1f0e1a7a8cd9f88d46",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "94f702b36f1fe82ac9296f638536226110148e99bb4e56042a1360ddbeb7f47f",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "c02b399773ebd51195ac68f979b824d7b158fe24fe8406823f7ad6db727f0f5e",
-        9323: "2a91cf3038f59f73ebfd752c01eae4e745fffca0e9f462e02eb1c7dacd7928f6",
+        9323: "7b4984fcb03d280c6ee1a9804dbffd9f05028f2644d1101f954a9a1f48cfe18f",
         9395: "61e2fc80341089a906cb3e7a8ac912b8f4090f2f950174fcb6b6d88ce5a805ef",
         9435: "f0e8ca908f135c42aae0c22746e5aff273b2e3ffca6f730443d952a85e629b4b",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
@@ -41932,9 +41932,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-06-20t19-06-29-the-gem-of-mackenzie"
+        id: "2024-06-21t23-14-26-the-world-of-miyoshi"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-06-20t19-06-29-the-gem-of-mackenzie"
+        id: "2024-06-21t23-14-26-the-world-of-miyoshi"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43476,7 +43476,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-06-20t19-06-29-the-gem-of-mackenzie",
+                release: "2024-06-21t23-14-26-the-world-of-miyoshi",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
