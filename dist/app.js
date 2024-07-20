@@ -1,4 +1,4 @@
-/*! For license information please see "2024-07-11t17-53-14-the-plan-of-buck--main-prod-public-081bcc24-d2b9-4007-b6f6-790dc8cc2dcc--app.js.LICENSE.txt" */
+/*! For license information please see "2024-07-19t01-28-14-the-byte-of-willow--main-prod-public-82fab2d6-6437-4042-a45b-b79696d9d3ac--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-07-11t17-53-14-the-plan-of-buck", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-07-19t01-28-14-the-byte-of-willow", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42311,13 +42311,13 @@
             get: t[n]
         })
     }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((t, n) => (s.f[n](e, t), t)), [])), s.u = e => ({
-        229: "76b90a53178bd01e68b151a7fb32c5b5f6cf0ddf7940d19bcf4aeaab64e69d24",
+        229: "2858cfcea6030f0a767e000d13696790218704df1d950b41fa704f3876972a5e",
         314: "49afbe5e4d0e151e592c09e396cf602709f7596c2af1b9ceaf1046ed122be7a7",
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "2f27efb1f59a50174e18cb7a5828a61193c12dbc348e51e862e6cadbd6678cae",
         422: "02a0d0017e2b055152b6f5874c489a02acb248bac231eefc16c7732a7033f74f",
-        430: "0a433456e8d8a40cd4c48ec5ceae1a06c3e29e94735868fa571801daee4f1977",
-        715: "b5e93c8054a8b06a9ac1e5efb8294c8aee08d9bff758311974ab357267a43ef1",
+        430: "67c03d7b90061f686d260786a1a041771de80dca5da7d9b58be732031a8673ce",
+        715: "888b1e9cdb2cba6b911119ec906e1cb2a486244d02a2fb88cd9d4a5b8ef3356a",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
         975: "2bf34488b047e54530a5ea543790bc2941fa6acef4b1a1d25146f387f9c637ac",
         989: "18303975bce51e29969a28618348266c3fade5f095196e4710d516e0b82c1842",
@@ -42350,9 +42350,9 @@
         4058: "b5404246c867444c1c34738eeecc11a66b4e5f93bd402aaecfe02e8650a5acb5",
         4061: "23f3ca2a2f463d015ee7dc7f21a5a3f8ff7ee331c3e9c69ff78e70a020840488",
         4157: "b49aca8507661d776ccc7cb2844484f66d2412e959c3086e5ac3c2ab8da47040",
-        4353: "163289a1809b1cf09c307e0e8c80b3f270b749cc22e112f6dca31adf4962734d",
+        4353: "9a1ee0772777dca887e56eb153c3faed80a287ad4dce48d13874c8aca0649176",
         4376: "1193e23e9ca8de524da6effa22b29f97ec062254009f7d661cc661519f900ae1",
-        4444: "f6b772416dd86e9039b5a40748428c49549f1c430aaa1affca143e754e473c2a",
+        4444: "e1e81ca8eee390e3f53d2d8aedaa3d11589674d5821b8396561e32cb212b738b",
         4673: "e13e67035c5232b0145354bbafcc1cbe5118fd013089dd62b34190a2bf62bc36",
         4896: "a3db1b14de55be4f18bb78779149378769b18ae7e78e7d39bc43800c27677e2c",
         4945: "83f4443ba792b6d4129dbec0c3a45918ac37836c8c44b7fc42b45cc6d5db9d82",
@@ -42361,7 +42361,7 @@
         5132: "b653fab58310cf7f3dfc7e6f17e37b76c8036942319274304d282eb02e7e96c7",
         5142: "e742d745e8ba0adf7954637501205b8d4819f51af669f5376e4d92ea4ee25d7e",
         5147: "77b562eb77ed3f77a8ddf7d72f4fa1c69ce6668304b679a57d1242d002a3dce2",
-        5171: "e458a4cfc5f91915a159ce3b786b1fabb090100477100c691b3d2aad0dee0cb8",
+        5171: "cd18c4ca6dd3855fc6d6f3976d39da0fe78b446e1bb1ccac04eac3054d0c3519",
         5391: "83ee96233841d64abd933d6a2c1c34a15ee326a0fd8cdb3af912ac6989780eb1",
         5460: "e4368433e073e699a7a35b1313423ba887e60f898455eebca6900ff798660f2f",
         5508: "62ed81525f08a70602a8ff716740a3564dcff5e53d54485c220968c96eace876",
@@ -42370,7 +42370,7 @@
         5939: "2e65b60c224ec829562b584708391cf024c2af2cb1852dee01343a9836e58d7f",
         6077: "500b10062ed7c086f057735c6d1412122cbfa069495828fe4440c2333058980b",
         6113: "82262620c1199c2f0388dcd5080d228ee5c523f3b1e64feabe1e998b22c6e064",
-        6182: "3042ce233a548ae02fa880d97f948f52cd0610a0c3ed527752f7ab73e65d1953",
+        6182: "b26b50410741df2318bb159a6e75a5ce33b1d41d428f49970271e30e6fba6e56",
         6231: "44fa0a0c2482eab8828977e6ee5a42a92ec3f7af3bb53cf88ef28a7dc305d256",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "19aa06cdda777d20eef45b2119a794480b1c2488cde4e7f30b947aeb6de9ad6e",
@@ -42389,29 +42389,29 @@
         7556: "543e9eaf33f434606b1f689b3572e0c09974510c671b6d7d37a72ed634c6f57f",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a6f727824f8886762f4eb795092244a3933431b1ced14a09afd2583a2b45d969",
-        7850: "513d6a5335a1e1cb30d9874b87f2499a71d064895f21ed93b6554f3ebce9e748",
+        7850: "bf81c0b6f4835db456f43d2494c8250da8945e46f8312c388fd8b801951f3f06",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "4ed6736994b31b08fca81dfeae9a87b5de0a5edf7e72104ed05ff2e19553b678",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "215c22e6e2cb482216a12c004fe41f4a9272db8c6a37b78be7407cb518735368",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "0f90c7167add75f1972be4f63dd160e42bd4f76db2342b9d8b8d61e3c52a4c65",
-        8744: "37d951fd367ab2bf57995309af36188d26da568fab4f31da8f61e881789ce45a",
+        8710: "eb192b8c04a4dbeebcefb59b02b3f872f4eaefb28b35389736d392aba6e1f500",
+        8744: "efcb001574a6a92e52cc3233e761df5323465607e1a56b457a92fa20ec0656dd",
         8755: "5d5dee99c372a76c302a26e6fb33614369cdc9b8a7f7e7f116c88d1b12d19be6",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "56572f52903ae50dd796408a51ca9239fc86359231ba5b6b3a464496ae038113",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "b5f8ecda3b98096e13bedf3fa02becbbd81a2fc727c9bcb86106c5446f1ed173",
-        9323: "7019cc90a86b1fff1b527896f0e682585ae12133586025abd2fd3753eb39c99e",
+        9323: "fad28d1a5ed6fde597d2de4cc157990e5cd7ac9a1275fb9c01609a076e47d46c",
         9395: "801499d4419cbfa554a77de131bedc62ee77bba5078370ab94fce602e8eddb8b",
         9435: "6c45377971118ec52172c43fd81768e0378155177245d49c0abdf52c3a991ce7",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
         9690: "79f4e1949178f01941d4d14980e60ee07b4d7ab675799f7f8d17cbffb7a11bdf",
         9714: "a0bf77cc140ab69a9553b0716f4d6598f3c8dfac4fe678e345adf51c579c059b",
         9847: "bf7023a5e0d87881d7afd54e697624a71fac6a760b9170d7c7c212e9919a85a3",
-        9908: "f66fc25d9b65494d5171ea29463287a71e1528a25f9418e443491d7b0ed82437",
+        9908: "58b9215afcaed00a76c84b1432c365885ba2e9f7196734732d6687ee25b22573",
         9923: "17e4fe11866b28e98b15810d484770059211c14fe552ba634eeb9e0601eb6afc",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
@@ -42490,9 +42490,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-07-11t17-53-14-the-plan-of-buck"
+        id: "2024-07-19t01-28-14-the-byte-of-willow"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-07-11t17-53-14-the-plan-of-buck"
+        id: "2024-07-19t01-28-14-the-byte-of-willow"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44034,7 +44034,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-07-11t17-53-14-the-plan-of-buck",
+                release: "2024-07-19t01-28-14-the-byte-of-willow",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
