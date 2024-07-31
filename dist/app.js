@@ -1,4 +1,4 @@
-/*! For license information please see "2024-07-19t01-28-14-the-byte-of-willow--main-prod-public-82fab2d6-6437-4042-a45b-b79696d9d3ac--app.js.LICENSE.txt" */
+/*! For license information please see "2024-07-30t20-34-17-the-clash-of-hardy--main-prod-public-e5a32721-e3dc-41e5-891f-035bba0bb8e0--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15736,7 +15736,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-07-19t01-28-14-the-byte-of-willow", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-07-30t20-34-17-the-clash-of-hardy", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -18709,34 +18709,35 @@
             80873: (e, t, n) => {
                 "use strict";
                 n.d(t, {
-                    CM: () => m,
-                    Tu: () => f,
-                    Nr: () => A,
-                    Tb: () => g,
-                    sc: () => _,
-                    Pt: () => I,
-                    t4: () => E.Z,
-                    Mp: () => T,
-                    CZ: () => D.Z,
-                    Yz: () => N,
-                    Kz: () => P,
-                    dD: () => F,
-                    pc: () => k,
-                    Kk: () => j,
-                    JZ: () => q,
-                    BT: () => V,
-                    v$: () => J,
-                    T: () => te
+                    CM: () => y,
+                    Tu: () => p,
+                    Nr: () => v,
+                    Tb: () => b,
+                    sc: () => O,
+                    Pt: () => k,
+                    t4: () => S.Z,
+                    Mp: () => R,
+                    CZ: () => P.Z,
+                    Yz: () => F,
+                    Kz: () => j,
+                    dD: () => U,
+                    pc: () => C,
+                    Kk: () => q,
+                    JZ: () => Y,
+                    BT: () => J,
+                    v$: () => ee,
+                    T: () => oe
                 });
                 var r = n(4942),
-                    o = n(67294),
-                    a = n(89250),
-                    i = n(72562),
-                    s = n(32981),
-                    c = n(22202),
-                    l = n(62437);
+                    o = n(54546),
+                    a = n(67294),
+                    i = n(89250),
+                    s = n(72562),
+                    c = n(32981),
+                    l = n(22202),
+                    u = n(62437);
 
-                function u(e, t) {
+                function d(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -18747,30 +18748,30 @@
                     return n
                 }
 
-                function d(e) {
+                function f(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? u(Object(n), !0).forEach((function(t) {
+                        t % 2 ? d(Object(n), !0).forEach((function(t) {
                             (0, r.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : u(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : d(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                const f = function() {
-                    var e, t = (0, s.I0)(),
-                        n = (0, c.XC)(),
+                const p = function() {
+                    var e, t = (0, c.I0)(),
+                        n = (0, l.XC)(),
                         r = n.data,
-                        a = n.isLoading,
+                        o = n.isLoading,
                         i = n.isFetching,
-                        u = n.isError,
-                        f = n.error,
+                        s = n.isError,
+                        d = n.error,
                         p = n.refetch,
-                        m = (0, l.GR)(null == r ? void 0 : r.id, {
+                        m = (0, u.GR)(null == r ? void 0 : r.id, {
                             skip: !(null != r && r.id)
                         }).data;
-                    o.useEffect((function() {
+                    a.useEffect((function() {
                         r && t({
                             type: "LOAD_CURRENT_USER_FULFILLED",
                             payload: {
@@ -18778,7 +18779,7 @@
                             }
                         })
                     }), [r]);
-                    var h = o.useMemo((function() {
+                    var h = a.useMemo((function() {
                         var e, t = new Set(null !== (e = null == r ? void 0 : r.tags) && void 0 !== e ? e : []);
                         return {
                             visitor: t.has("system_probable_troll"),
@@ -18789,20 +18790,20 @@
                         }
                     }), [null == r ? void 0 : r.tags]);
                     return {
-                        user: d(d({}, null != r ? r : {}), m ? {
+                        user: f(f({}, null != r ? r : {}), m ? {
                             location: null !== (e = m.location) && void 0 !== e ? e : "private",
                             state: m.state
                         } : {}),
                         trustLevel: h,
                         isFetching: i,
-                        isLoading: a,
-                        isError: u,
-                        error: f,
+                        isLoading: o,
+                        isError: s,
+                        error: d,
                         fetchUser: p
                     }
                 };
 
-                function p(e, t) {
+                function m(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -18812,26 +18813,106 @@
                     }
                     return n
                 }
-                const m = function() {
-                    var e = (0, a.TH)(),
-                        t = f(),
+
+                function h(e, t) {
+                    var n = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
+                    if (!n) {
+                        if (Array.isArray(e) || (n = function(e, t) {
+                                if (!e) return;
+                                if ("string" == typeof e) return A(e, t);
+                                var n = Object.prototype.toString.call(e).slice(8, -1);
+                                "Object" === n && e.constructor && (n = e.constructor.name);
+                                if ("Map" === n || "Set" === n) return Array.from(e);
+                                if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return A(e, t)
+                            }(e)) || t && e && "number" == typeof e.length) {
+                            n && (e = n);
+                            var r = 0,
+                                o = function() {};
+                            return {
+                                s: o,
+                                n: function() {
+                                    return r >= e.length ? {
+                                        done: !0
+                                    } : {
+                                        done: !1,
+                                        value: e[r++]
+                                    }
+                                },
+                                e: function(e) {
+                                    throw e
+                                },
+                                f: o
+                            }
+                        }
+                        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+                    }
+                    var a, i = !0,
+                        s = !1;
+                    return {
+                        s: function() {
+                            n = n.call(e)
+                        },
+                        n: function() {
+                            var e = n.next();
+                            return i = e.done, e
+                        },
+                        e: function(e) {
+                            s = !0, a = e
+                        },
+                        f: function() {
+                            try {
+                                i || null == n.return || n.return()
+                            } finally {
+                                if (s) throw a
+                            }
+                        }
+                    }
+                }
+
+                function A(e, t) {
+                    (null == t || t > e.length) && (t = e.length);
+                    for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
+                    return r
+                }
+                var g = new Set(["utm_campaign", "utm_content", "utm_id", "utm_medium", "utm_source", "utm_term", "utm-campaign", "utm-content", "utm-id", "utm-medium", "utm-source", "utm-term"]);
+                const y = function() {
+                    var e = (0, i.TH)(),
+                        t = p(),
                         n = t.user,
-                        s = t.error;
-                    o.useEffect((function() {
-                        null != n && n.id && (0, i.Iv)(n.id)
-                    }), [null == n ? void 0 : n.id]), o.useEffect((function() {
-                        403 === (null == s ? void 0 : s.status) && (0, i.Kz)("Login_ModerationCheckFailed")
-                    }), [s]), o.useEffect((function() {
-                        e.pathname.startsWith("/home/user/") && (0, i.Kz)("UserProfile_View", {
+                        c = t.error;
+                    a.useEffect((function() {
+                        null != n && n.id && (0, s.Iv)(n.id)
+                    }), [null == n ? void 0 : n.id]), a.useEffect((function() {
+                        403 === (null == c ? void 0 : c.status) && (0, s.Kz)("Login_ModerationCheckFailed")
+                    }), [c]), a.useEffect((function() {
+                        e.pathname.startsWith("/home/user/") && (0, s.Kz)("UserProfile_View", {
                             user: e.pathname.replace("/home/user/", "")
                         })
-                    }), [e]), o.useEffect((function() {
-                        (0, i.Kz)("Web_PageView", function(e) {
+                    }), [e]), a.useEffect((function() {
+                        var t = function(e) {
+                            if (null == e || !e.search) return {};
+                            var t, n = {},
+                                r = h(new URLSearchParams(e.search).entries());
+                            try {
+                                for (r.s(); !(t = r.n()).done;) {
+                                    var a = (0, o.Z)(t.value, 2),
+                                        i = a[0],
+                                        s = a[1];
+                                    g.has(i) && s && (n[i] = s)
+                                }
+                            } catch (e) {
+                                r.e(e)
+                            } finally {
+                                r.f()
+                            }
+                            return n
+                        }(e);
+                        (0, s.Kz)("Web_PageView", function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? p(Object(n), !0).forEach((function(t) {
+                                t % 2 ? m(Object(n), !0).forEach((function(t) {
                                     (0, r.Z)(e, t, n[t])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : p(Object(n)).forEach((function(t) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : m(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
                             }
@@ -18839,51 +18920,50 @@
                         }({
                             url: e.pathname,
                             referrer: document.referrer
-                        }, null != e && e.search ? Object.fromEntries(new URLSearchParams(e.search).entries()) : {}))
+                        }, t))
                     }), [e])
                 };
-                var h = n(54546);
-                const A = function(e) {
+                const v = function(e) {
                     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 500,
-                        n = o.useState(e),
-                        r = (0, h.Z)(n, 2),
-                        a = r[0],
-                        i = r[1];
-                    return o.useEffect((function() {
+                        n = a.useState(e),
+                        r = (0, o.Z)(n, 2),
+                        i = r[0],
+                        s = r[1];
+                    return a.useEffect((function() {
                         var n = setTimeout((function() {
-                            i(e)
+                            s(e)
                         }), t);
                         return function() {
                             clearTimeout(n)
                         }
-                    }), [e, t]), a
+                    }), [e, t]), i
                 };
-                const g = function(e) {
+                const b = function(e) {
                     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 500;
                     e = !!e;
-                    var n = (0, o.useState)(!1),
-                        r = (0, h.Z)(n, 2),
-                        a = r[0],
-                        i = r[1];
-                    return (0, o.useEffect)((function() {
-                        if (e && !a) {
+                    var n = (0, a.useState)(!1),
+                        r = (0, o.Z)(n, 2),
+                        i = r[0],
+                        s = r[1];
+                    return (0, a.useEffect)((function() {
+                        if (e && !i) {
                             var n = setTimeout((function() {
-                                i(!0)
+                                s(!0)
                             }), t);
                             return function() {
                                 clearTimeout(n)
                             }
                         }
-                        e || i(!1)
-                    }), [e, t]), a
+                        e || s(!1)
+                    }), [e, t]), i
                 };
-                var y = n(23279),
-                    v = n.n(y),
-                    b = n(9669),
-                    w = n.n(b);
-                const _ = function() {
-                    var e = v()((function(e, t, n) {
-                            return w().get(window.apiUrl("/api/1/auth/exists"), {
+                var w = n(23279),
+                    _ = n.n(w),
+                    E = n(9669),
+                    I = n.n(E);
+                const O = function() {
+                    var e = _()((function(e, t, n) {
+                            return I().get(window.apiUrl("/api/1/auth/exists"), {
                                 params: {
                                     email: e,
                                     excludeUserId: null != t ? t : void 0
@@ -18895,13 +18975,13 @@
                             leading: !1,
                             trailing: !0
                         }),
-                        t = o.useCallback((function(t, n) {
+                        t = a.useCallback((function(t, n) {
                             return new Promise((function(r) {
                                 e(t, n, r)
                             }))
                         }), []),
-                        n = v()((function(e, t, n) {
-                            w().get(window.apiUrl("/api/1/auth/exists"), {
+                        n = _()((function(e, t, n) {
+                            I().get(window.apiUrl("/api/1/auth/exists"), {
                                 params: {
                                     username: e,
                                     displayName: e,
@@ -18916,45 +18996,45 @@
                         });
                     return {
                         emailTaken: t,
-                        nameTaken: o.useCallback((function(e, t) {
+                        nameTaken: a.useCallback((function(e, t) {
                             return new Promise((function(r) {
                                 n(e, t, r)
                             }))
                         }), [])
                     }
                 };
-                var E = n(54864);
-                const I = function() {
-                    var e = (0, c.XC)().data,
-                        t = (0, E.Z)(),
+                var S = n(54864);
+                const k = function() {
+                    var e = (0, l.XC)().data,
+                        t = (0, S.Z)(),
                         n = t.friends,
                         r = t.loading,
-                        a = e.friends;
+                        o = e.friends;
                     if (null == e || !e.id) return null;
-                    var i = o.useMemo((function() {
+                    var i = a.useMemo((function() {
                             var t;
                             return null !== (t = null == n ? void 0 : n.filter((function(t) {
                                 return t && "online" === t.state && t.id !== (null == e ? void 0 : e.id)
                             }))) && void 0 !== t ? t : []
                         }), [n, null == e ? void 0 : e.id]),
-                        s = o.useMemo((function() {
+                        s = a.useMemo((function() {
                             var t;
                             return null !== (t = null == n ? void 0 : n.filter((function(t) {
                                 return t && "offline" === t.state && t.id !== (null == e ? void 0 : e.id)
                             }))) && void 0 !== t ? t : []
                         }), [n, null == e ? void 0 : e.id]),
-                        l = o.useMemo((function() {
+                        c = a.useMemo((function() {
                             var t;
                             return null !== (t = null == n ? void 0 : n.filter((function(t) {
                                 return t && "active" === t.state && t.id !== (null == e ? void 0 : e.id)
                             }))) && void 0 !== t ? t : []
                         }), [n, null == e ? void 0 : e.id]),
-                        u = o.useMemo((function() {
+                        u = a.useMemo((function() {
                             return i.filter((function(e) {
                                 return "private" !== e.location
                             }))
                         }), [i]),
-                        d = o.useMemo((function() {
+                        d = a.useMemo((function() {
                             return i.filter((function(e) {
                                 return "private" === e.location
                             }))
@@ -18965,35 +19045,35 @@
                             joinable: u.length,
                             private: d.length,
                             offline: s.length,
-                            active: l.length
+                            active: c.length
                         };
                     return {
                         friends: null != n ? n : [],
-                        friendIds: a,
+                        friendIds: o,
                         onlineFriends: i,
                         onlineAndJoinableFriends: u,
                         privateFriends: d,
                         offlineFriends: s,
-                        activeFriends: l,
+                        activeFriends: c,
                         loaded: !r,
                         counts: f
                     }
                 };
-                var O = n(54681),
-                    S = n(12227);
-                const k = function() {
-                    var e = (0, c.XC)().data;
-                    return o.useMemo((function() {
+                var B = n(54681),
+                    x = n(12227);
+                const C = function() {
+                    var e = (0, l.XC)().data;
+                    return a.useMemo((function() {
                         return !(null == e || !e.tagsSet) && new Set(null == e ? void 0 : e.tagsSet).has("admin_moderator")
                     }), [null == e ? void 0 : e.tags])
                 };
-                const B = function() {
-                    return (0, s.v9)((function(e) {
+                const T = function() {
+                    return (0, c.v9)((function(e) {
                         return e.vrcApi.config.online
                     }))
                 };
 
-                function x(e, t) {
+                function D(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -19004,85 +19084,85 @@
                     return n
                 }
 
-                function C(e) {
+                function N(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? x(Object(n), !0).forEach((function(t) {
+                        t % 2 ? D(Object(n), !0).forEach((function(t) {
                             (0, r.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : x(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : D(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                const T = function() {
-                    var e = (0, c.IB)().data,
-                        t = k(),
-                        n = (0, s.I0)(),
-                        r = o.useState(null == e ? void 0 : e.id),
-                        a = (0, h.Z)(r, 2),
-                        i = a[0],
-                        l = a[1],
-                        u = (0, s.v9)((function(e) {
+                const R = function() {
+                    var e = (0, l.IB)().data,
+                        t = C(),
+                        n = (0, c.I0)(),
+                        r = a.useState(null == e ? void 0 : e.id),
+                        i = (0, o.Z)(r, 2),
+                        s = i[0],
+                        u = i[1],
+                        d = (0, c.v9)((function(e) {
                             return e.friendsSlice.allLoaded
                         })),
-                        d = o.useState(0),
-                        f = (0, h.Z)(d, 2),
-                        p = f[0],
-                        m = f[1],
-                        A = o.useState(!1),
-                        g = (0, h.Z)(A, 2),
+                        f = a.useState(0),
+                        p = (0, o.Z)(f, 2),
+                        m = p[0],
+                        h = p[1],
+                        A = a.useState(!1),
+                        g = (0, o.Z)(A, 2),
                         y = g[0],
                         v = g[1],
-                        b = B(),
-                        w = (0, c.nT)(),
-                        _ = (0, h.Z)(w, 1)[0],
-                        E = (0, c.kk)({
+                        b = T(),
+                        w = (0, l.nT)(),
+                        _ = (0, o.Z)(w, 1)[0],
+                        E = (0, l.kk)({
                             offline: y,
-                            offset: p
+                            offset: m
                         }, {
                             skip: !e
                         }).data;
-                    o.useEffect((function() {
+                    a.useEffect((function() {
                         if (E) {
                             if (!1 === y && E.length > 0) {
                                 var r = E.map((function(n) {
-                                    return C(C({}, n), {}, {
+                                    return N(N({}, n), {}, {
                                         state: e.onlineFriends.includes(n.id) ? "online" : "active",
-                                        location: t && (0, S.tz)(n, e, n.location) ? "private" : n.location
+                                        location: t && (0, x.tz)(n, e, n.location) ? "private" : n.location
                                     })
                                 }));
-                                n((0, O.OC)(r)), 0 !== r.length ? m(p + 50) : (n((0, O.yE)(!0)), v(!0), m(0))
-                            }!1 === y && 0 === E.length && (n((0, O.yE)(!0)), v(!0), m(0))
+                                n((0, B.OC)(r)), 0 !== r.length ? h(m + 50) : (n((0, B.yE)(!0)), v(!0), h(0))
+                            }!1 === y && 0 === E.length && (n((0, B.yE)(!0)), v(!0), h(0))
                         }
-                    }), [E]), o.useEffect((function() {
+                    }), [E]), a.useEffect((function() {
                         if (E) {
                             if (!0 === y && E.length > 0) {
                                 var r = E.map((function(n) {
-                                    return C(C({}, n), {}, {
-                                        state: (0, S.V_)(n),
-                                        location: t && (0, S.tz)(n, e, n.location) ? "private" : n.location
+                                    return N(N({}, n), {}, {
+                                        state: (0, x.V_)(n),
+                                        location: t && (0, x.tz)(n, e, n.location) ? "private" : n.location
                                     })
                                 }));
-                                n((0, O.OC)(r)), 0 !== r.length ? m(p + 50) : n((0, O.ZX)(!0))
-                            }!0 === y && 0 === E.length && n((0, O.ZX)(!0))
+                                n((0, B.OC)(r)), 0 !== r.length ? h(m + 50) : n((0, B.ZX)(!0))
+                            }!0 === y && 0 === E.length && n((0, B.ZX)(!0))
                         }
                     }), [E]);
                     var I = function() {
-                        l(e.id), m(0), v(!1), n((0, O.yE)(!1)), n((0, O.ZX)(!1)), n((0, O._W)()), _()
+                        u(e.id), h(0), v(!1), n((0, B.yE)(!1)), n((0, B.ZX)(!1)), n((0, B._W)()), _()
                     };
-                    o.useEffect((function() {
-                        null != e && e.id && e.id !== i && I()
-                    }), [null == e ? void 0 : e.id]), o.useEffect((function() {
-                        null != e && e.id && b && u && I()
+                    a.useEffect((function() {
+                        null != e && e.id && e.id !== s && I()
+                    }), [null == e ? void 0 : e.id]), a.useEffect((function() {
+                        null != e && e.id && b && d && I()
                     }), [b])
                 };
-                var D = n(9186);
-                const N = function(e, t) {
-                    var n = (0, o.useRef)();
-                    (0, o.useEffect)((function() {
+                var P = n(9186);
+                const F = function(e, t) {
+                    var n = (0, a.useRef)();
+                    (0, a.useEffect)((function() {
                         n.current = e
-                    }), [e]), (0, o.useEffect)((function() {
+                    }), [e]), (0, a.useEffect)((function() {
                         if (null !== t) {
                             var e = setInterval((function() {
                                 n.current()
@@ -19093,67 +19173,67 @@
                         }
                     }), [t])
                 };
-                var R = n(16278);
-                const P = function() {
-                    var e = (0, R.g)();
-                    return (0, h.Z)(e, 1)[0]
+                var L = n(16278);
+                const j = function() {
+                    var e = (0, L.g)();
+                    return (0, o.Z)(e, 1)[0]
                 };
-                const F = function() {
-                    var e = o.useState(window.innerWidth < 576),
-                        t = (0, h.Z)(e, 2),
+                const U = function() {
+                    var e = a.useState(window.innerWidth < 576),
+                        t = (0, o.Z)(e, 2),
                         n = t[0],
                         r = t[1],
-                        a = function() {
+                        i = function() {
                             r(window.innerWidth < 576)
                         };
-                    return o.useEffect((function() {
-                        return window.addEventListener("resize", a),
+                    return a.useEffect((function() {
+                        return window.addEventListener("resize", i),
                             function() {
-                                return window.removeEventListener("resize", a)
+                                return window.removeEventListener("resize", i)
                             }
                     }), []), n
                 };
-                var L = n(1208);
-                const j = function() {
+                var M = n(1208);
+                const q = function() {
                     var e, t, n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
                         r = null !== (e = null == n || null === (t = n.split(":")) || void 0 === t ? void 0 : t[0]) && void 0 !== e ? e : "",
                         o = !r || "private" === r || "offline" === r || "traveling" === r,
-                        a = (0, L.Vw)({
+                        a = (0, M.Vw)({
                             worldId: r
                         }, {
                             skip: o
                         }).data,
-                        i = (0, D.Z)().locations;
+                        i = (0, P.Z)().locations;
                     return {
                         world: a,
                         location: null == i ? void 0 : i[n]
                     }
                 };
-                var U = n(96212),
-                    M = n(68800);
-                const q = function() {
-                    var e, t = (0, s.I0)(),
-                        n = null !== (e = (0, s.v9)((function(e) {
+                var G = n(96212),
+                    z = n(68800);
+                const Y = function() {
+                    var e, t = (0, c.I0)(),
+                        n = null !== (e = (0, c.v9)((function(e) {
                             return e.playerModerations
                         }))) && void 0 !== e ? e : {},
-                        r = (0, c.IB)().data,
-                        a = (0, M.hN)(void 0, {
+                        r = (0, l.IB)().data,
+                        o = (0, z.hN)(void 0, {
                             skip: !r
                         }),
-                        i = a.data,
-                        l = void 0 === i ? [] : i,
-                        u = a.isSuccess,
-                        d = a.isLoading,
-                        f = a.isUninitialized,
-                        p = a.refetch;
-                    return o.useEffect((function() {
+                        i = o.data,
+                        s = void 0 === i ? [] : i,
+                        u = o.isSuccess,
+                        d = o.isLoading,
+                        f = o.isUninitialized,
+                        p = o.refetch;
+                    return a.useEffect((function() {
                         (null == r ? void 0 : r.id) !== n.loadedForUser && p()
-                    }), [null == r ? void 0 : r.id]), o.useEffect((function() {
-                        l.length > 0 && null != r && r.id && t((0, U.G7)({
-                            moderations: l,
+                    }), [null == r ? void 0 : r.id]), a.useEffect((function() {
+                        s.length > 0 && null != r && r.id && t((0, G.G7)({
+                            moderations: s,
                             userId: null == r ? void 0 : r.id
                         }))
-                    }), [l]), {
+                    }), [s]), {
                         playerModerations: n,
                         fetchModerations: p,
                         loading: d,
@@ -19161,11 +19241,11 @@
                         isLoaded: n || f
                     }
                 };
-                var G = n(42317),
-                    z = n.n(G),
-                    Y = n(41255);
+                var W = n(42317),
+                    $ = n.n(W),
+                    Z = n(41255);
 
-                function W(e, t) {
+                function V(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -19176,88 +19256,88 @@
                     return n
                 }
 
-                function $(e) {
+                function H(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? W(Object(n), !0).forEach((function(t) {
+                        t % 2 ? V(Object(n), !0).forEach((function(t) {
                             (0, r.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : W(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : V(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                var Z = "489e00bf-06c5-43ff-b3a6-a119435a78e9";
-                const V = function(e) {
-                    var t, n, r, a = e.worldId,
-                        i = e.userId,
-                        s = e.includeInstances,
-                        c = e.isMod,
-                        l = e.noCache,
-                        u = (0, L.Vw)({
-                            worldId: a,
-                            noCache: l,
-                            includeInstances: s
+                var Q = "489e00bf-06c5-43ff-b3a6-a119435a78e9";
+                const J = function(e) {
+                    var t, n, r, i = e.worldId,
+                        s = e.userId,
+                        c = e.includeInstances,
+                        l = e.isMod,
+                        u = e.noCache,
+                        d = (0, M.Vw)({
+                            worldId: i,
+                            noCache: u,
+                            includeInstances: c
                         }),
-                        d = u.data,
-                        f = u.error,
-                        p = u.isError,
-                        m = u.isFetching,
-                        A = i === (null == d ? void 0 : d.authorId),
-                        g = !(null != d && d.id) || !c && !A,
-                        y = (0, L.qr)({
-                            worldId: a,
-                            version: null == d ? void 0 : d.version
+                        f = d.data,
+                        p = d.error,
+                        m = d.isError,
+                        h = d.isFetching,
+                        A = s === (null == f ? void 0 : f.authorId),
+                        g = !(null != f && f.id) || !l && !A,
+                        y = (0, M.qr)({
+                            worldId: i,
+                            version: null == f ? void 0 : f.version
                         }, {
                             skip: g
                         }),
                         v = y.data,
                         b = y.isFetching,
-                        w = (0, Y.Ko)(null == d ? void 0 : d.fileId, {
-                            skip: !(null != d && d.id && null != d && d.fileId)
+                        w = (0, Z.Ko)(null == f ? void 0 : f.fileId, {
+                            skip: !(null != f && f.id && null != f && f.fileId)
                         }),
                         _ = w.data,
                         E = w.isFetching,
-                        I = (0, L.w7)({
-                            worldId: a,
-                            metricId: Z
+                        I = (0, M.w7)({
+                            worldId: i,
+                            metricId: Q
                         }, {
-                            skip: !(null != d && d.id && null != d && null !== (t = d.tags) && void 0 !== t && t.includes("admin_filter_Jam") && (A || c))
+                            skip: !(null != f && f.id && null != f && null !== (t = f.tags) && void 0 !== t && t.includes("admin_filter_Jam") && (A || l))
                         }),
                         O = I.data,
-                        S = (I.isFetching, (0, L.AP)()),
-                        k = (0, h.Z)(S, 1)[0],
-                        B = (0, Y.DR)(),
-                        x = (0, h.Z)(B, 1)[0],
-                        C = o.useMemo((function() {
+                        S = (I.isFetching, (0, M.AP)()),
+                        k = (0, o.Z)(S, 1)[0],
+                        B = (0, Z.DR)(),
+                        x = (0, o.Z)(B, 1)[0],
+                        C = a.useMemo((function() {
                             var e, t, n, r;
-                            if (!_ || !d) return null;
+                            if (!_ || !f) return null;
                             var o = _.versions.filter((function(e) {
-                                return e.version === d.fileVersion
+                                return e.version === f.fileVersion
                             }));
-                            return o.length ? $($({}, null !== (e = null === (t = o.slice(-1)) || void 0 === t || null === (t = t[0]) || void 0 === t ? void 0 : t.file) && void 0 !== e ? e : {}), {}, {
-                                fileSize: z()(null !== (n = null === (r = o.slice(-1)) || void 0 === r || null === (r = r[0]) || void 0 === r || null === (r = r.file) || void 0 === r ? void 0 : r.sizeInBytes) && void 0 !== n ? n : 0)
+                            return o.length ? H(H({}, null !== (e = null === (t = o.slice(-1)) || void 0 === t || null === (t = t[0]) || void 0 === t ? void 0 : t.file) && void 0 !== e ? e : {}), {}, {
+                                fileSize: $()(null !== (n = null === (r = o.slice(-1)) || void 0 === r || null === (r = r[0]) || void 0 === r || null === (r = r.file) || void 0 === r ? void 0 : r.sizeInBytes) && void 0 !== n ? n : 0)
                             }) : null
-                        }), [d, _]),
-                        T = o.useCallback((function() {
+                        }), [f, _]),
+                        T = a.useCallback((function() {
                             k({
-                                worldId: a,
-                                metricId: Z
-                            }), x(null == d ? void 0 : d.fileId)
-                        }), [a, d]);
+                                worldId: i,
+                                metricId: Q
+                            }), x(null == f ? void 0 : f.fileId)
+                        }), [i, f]);
                     return {
-                        data: d,
+                        data: f,
                         reports: v,
                         file: C,
                         bops: O,
-                        error: p,
-                        errorMessage: null !== (n = null == f || null === (r = f.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Failed to load world",
-                        loading: m || b || E,
+                        error: m,
+                        errorMessage: null !== (n = null == p || null === (r = p.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Failed to load world",
+                        loading: h || b || E,
                         refreshWorld: T
                     }
                 };
 
-                function H(e, t) {
+                function K(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -19268,33 +19348,33 @@
                     return n
                 }
 
-                function Q(e) {
+                function X(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? H(Object(n), !0).forEach((function(t) {
+                        t % 2 ? K(Object(n), !0).forEach((function(t) {
                             (0, r.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : H(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : K(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                const J = function(e) {
-                    var t = k(),
-                        n = (0, c.XC)().data,
-                        r = (0, l.GR)(e, {
+                const ee = function(e) {
+                    var t = C(),
+                        n = (0, l.XC)().data,
+                        r = (0, u.GR)(e, {
                             skip: !e
                         }),
-                        a = r.data,
+                        o = r.data,
                         i = r.refetch,
-                        s = !a || (0, S.tz)(a, n, a.location),
-                        u = Q(Q({}, null != a ? a : {}), {}, {
-                            location: t && s ? "private" : null == a ? void 0 : a.location
+                        s = !o || (0, x.tz)(o, n, o.location),
+                        c = X(X({}, null != o ? o : {}), {}, {
+                            location: t && s ? "private" : null == o ? void 0 : o.location
                         });
                     return {
-                        user: u,
-                        trustLevel: o.useMemo((function() {
-                            var e, t = new Set(null !== (e = null == a ? void 0 : a.tags) && void 0 !== e ? e : []);
+                        user: c,
+                        trustLevel: a.useMemo((function() {
+                            var e, t = new Set(null !== (e = null == o ? void 0 : o.tags) && void 0 !== e ? e : []);
                             return {
                                 visitor: t.has("system_probable_troll"),
                                 newUser: t.has("system_trust_basic"),
@@ -19302,15 +19382,15 @@
                                 known: t.has("system_trust_trusted"),
                                 trusted: t.has("system_trust_veteran")
                             }
-                        }), [null == u ? void 0 : u.tags, e]),
+                        }), [null == c ? void 0 : c.tags, e]),
                         fetchUser: i
                     }
                 };
                 n(34984);
                 n(64687);
-                var K = n(67947);
+                var te = n(67947);
 
-                function X(e, t) {
+                function ne(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -19321,21 +19401,21 @@
                     return n
                 }
 
-                function ee(e) {
+                function re(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? X(Object(n), !0).forEach((function(t) {
+                        t % 2 ? ne(Object(n), !0).forEach((function(t) {
                             (0, r.Z)(e, t, n[t])
-                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : X(Object(n)).forEach((function(t) {
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ne(Object(n)).forEach((function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         }))
                     }
                     return e
                 }
-                const te = function(e) {
+                const oe = function(e) {
                     var t = e.worldId,
-                        n = (0, s.I0)(),
-                        r = (0, s.v9)((function(e) {
+                        n = (0, c.I0)(),
+                        r = (0, c.v9)((function(e) {
                             var n, r;
                             return null !== (n = null === (r = e.publish.worlds) || void 0 === r ? void 0 : r[t]) && void 0 !== n ? n : {
                                 canPublish: !1,
@@ -19345,40 +19425,40 @@
                                 action: "publish"
                             }
                         })),
-                        a = o.useCallback((function() {
-                            n((0, K.zB)({
+                        o = a.useCallback((function() {
+                            n((0, te.zB)({
                                 worldId: t
                             }))
                         }), [t]),
-                        i = o.useCallback((function() {
-                            n((0, K.nY)({
+                        i = a.useCallback((function() {
+                            n((0, te.nY)({
                                 worldId: t
                             }))
                         }), [t]),
-                        c = o.useCallback((function() {
-                            n((0, K.Ed)({
+                        s = a.useCallback((function() {
+                            n((0, te.Ed)({
                                 worldId: t
                             }))
                         }), [t]),
-                        l = o.useCallback((function() {
-                            n((0, K.jM)({
+                        l = a.useCallback((function() {
+                            n((0, te.jM)({
                                 worldId: t
                             }))
                         }), [t]),
-                        u = o.useCallback((function(e) {
-                            n((0, K.VV)({
+                        u = a.useCallback((function(e) {
+                            n((0, te.VV)({
                                 worldId: t,
                                 platform: e
                             }))
                         }), [t]);
-                    return o.useEffect((function() {
-                        a()
-                    }), [t]), ee(ee({}, r), {}, {
-                        checkIfCanPublish: a,
+                    return a.useEffect((function() {
+                        o()
+                    }), [t]), re(re({}, r), {}, {
+                        checkIfCanPublish: o,
                         deleteWorld: l,
                         deleteWorldPlatform: u,
                         publishWorld: i,
-                        unpublishWorld: c
+                        unpublishWorld: s
                     })
                 }
             },
@@ -42316,7 +42396,7 @@
         347: "0596529894d0004e53accdd4738cd8eb92f3cabaeeb47f2b5acf51e94c89499e",
         396: "2f27efb1f59a50174e18cb7a5828a61193c12dbc348e51e862e6cadbd6678cae",
         422: "02a0d0017e2b055152b6f5874c489a02acb248bac231eefc16c7732a7033f74f",
-        430: "67c03d7b90061f686d260786a1a041771de80dca5da7d9b58be732031a8673ce",
+        430: "5fe11185a4768b04bfe3c35c5c5390a3a2a19fa809ff90315a773602b4ce14ed",
         715: "888b1e9cdb2cba6b911119ec906e1cb2a486244d02a2fb88cd9d4a5b8ef3356a",
         889: "19f869595f413a1960ec62478cc400256e91bb06279a7dc89de56ef0c80db565",
         975: "2bf34488b047e54530a5ea543790bc2941fa6acef4b1a1d25146f387f9c637ac",
@@ -42370,7 +42450,7 @@
         5939: "2e65b60c224ec829562b584708391cf024c2af2cb1852dee01343a9836e58d7f",
         6077: "500b10062ed7c086f057735c6d1412122cbfa069495828fe4440c2333058980b",
         6113: "82262620c1199c2f0388dcd5080d228ee5c523f3b1e64feabe1e998b22c6e064",
-        6182: "b26b50410741df2318bb159a6e75a5ce33b1d41d428f49970271e30e6fba6e56",
+        6182: "1545b63e98ddbdf7f90a6237183d9a1288101c69a799d9e5c4421be52d31bd40",
         6231: "44fa0a0c2482eab8828977e6ee5a42a92ec3f7af3bb53cf88ef28a7dc305d256",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "19aa06cdda777d20eef45b2119a794480b1c2488cde4e7f30b947aeb6de9ad6e",
@@ -42389,22 +42469,22 @@
         7556: "543e9eaf33f434606b1f689b3572e0c09974510c671b6d7d37a72ed634c6f57f",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
         7817: "a6f727824f8886762f4eb795092244a3933431b1ced14a09afd2583a2b45d969",
-        7850: "bf81c0b6f4835db456f43d2494c8250da8945e46f8312c388fd8b801951f3f06",
+        7850: "4f12cf509ac9504cb8e7651896ccc5e8039023aa9f80fe689e1dabbbf7736b3d",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "4ed6736994b31b08fca81dfeae9a87b5de0a5edf7e72104ed05ff2e19553b678",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
         8393: "215c22e6e2cb482216a12c004fe41f4a9272db8c6a37b78be7407cb518735368",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4cedbf53ad474f1f5af6af2537242ebb0f4ef2aeaa3d51cabbe38e8aad7b4fec",
-        8710: "eb192b8c04a4dbeebcefb59b02b3f872f4eaefb28b35389736d392aba6e1f500",
-        8744: "efcb001574a6a92e52cc3233e761df5323465607e1a56b457a92fa20ec0656dd",
+        8710: "c73b9704d0d7e7526155c4b977e4a7b39aa7dd69019f07853d9514133d13771d",
+        8744: "53ceaa440d23dc27633b8a09a84415b8f1c21b2ac6b94ab4ed4089875426fe05",
         8755: "5d5dee99c372a76c302a26e6fb33614369cdc9b8a7f7e7f116c88d1b12d19be6",
         8874: "bfe3455a572a8e2bcbbd82626c6ccc03d4a9f1796b78b5c88c138370d5f254b9",
         8888: "b91f995cb8ac7783f062ba30b1b450e999e7182c31c4a3abc79ba118fb4eef36",
         8971: "56572f52903ae50dd796408a51ca9239fc86359231ba5b6b3a464496ae038113",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "b5f8ecda3b98096e13bedf3fa02becbbd81a2fc727c9bcb86106c5446f1ed173",
-        9323: "fad28d1a5ed6fde597d2de4cc157990e5cd7ac9a1275fb9c01609a076e47d46c",
+        9323: "d71b46c613d87ab452c63b440a81aa3e2a73aaa4907a3c173927ced5e2437a7c",
         9395: "801499d4419cbfa554a77de131bedc62ee77bba5078370ab94fce602e8eddb8b",
         9435: "6c45377971118ec52172c43fd81768e0378155177245d49c0abdf52c3a991ce7",
         9449: "1f694da06e9b52b341e8dabf9fc264250c1c48a5f1a3ec480b0c5ba07c62dd7f",
@@ -42490,9 +42570,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-07-19t01-28-14-the-byte-of-willow"
+        id: "2024-07-30t20-34-17-the-clash-of-hardy"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-07-19t01-28-14-the-byte-of-willow"
+        id: "2024-07-30t20-34-17-the-clash-of-hardy"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44034,7 +44114,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-07-19t01-28-14-the-byte-of-willow",
+                release: "2024-07-30t20-34-17-the-clash-of-hardy",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
