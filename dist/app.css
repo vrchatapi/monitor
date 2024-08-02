@@ -1,9 +1,9 @@
 :root {
-    --status-online: #51e57e;
-    --status-joinme: #42caff;
-    --status-busy: #5b0b0b;
-    --status-askme: #e88134;
-    --status-offline: gray;
+    --status-online: #2ED319;
+    --status-joinme: #00B8FF;
+    --status-busy: #C80928;
+    --status-askme: #E97C03;
+    --status-offline: #737F8D;
     --level-visitor: #CCCCCC;
     --level-new: #1778FF;
     --level-user: #2BCF5C;
