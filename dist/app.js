@@ -1,4 +1,4 @@
-/*! For license information please see "2024-08-03t00-00-18-the-erlang-of-theodore--main-prod-public-1faf9117-33e5-4c37-a30a-085cb35b1b7b--app.js.LICENSE.txt" */
+/*! For license information please see "2024-08-07t18-01-06-the-demo-of-bronald--main-prod-public-79744ef1-67d1-4213-a4bd-e46bbc19597d--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15786,7 +15786,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-03t00-00-18-the-erlang-of-theodore", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-07t18-01-06-the-demo-of-bronald", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -20040,14 +20040,15 @@
             22202: (e, t, n) => {
                 "use strict";
                 n.d(t, {
-                    D5: () => S,
+                    D5: () => B,
                     Fe: () => v,
-                    IB: () => O,
+                    Gf: () => O,
+                    IB: () => k,
                     SU: () => _,
                     Sq: () => y,
                     XC: () => p,
                     YA: () => h,
-                    ZP: () => k,
+                    ZP: () => x,
                     _y: () => A,
                     c$: () => I,
                     hd: () => w,
@@ -20056,6 +20057,7 @@
                     l4: () => g,
                     nT: () => u,
                     q7: () => f,
+                    s2: () => S,
                     v1: () => E,
                     vO: () => b
                 });
@@ -20338,6 +20340,30 @@
                                             }
                                         }
                                     }
+                                }),
+                                getAccountUpgradeDetails: e.query({
+                                    query: function(e) {
+                                        return {
+                                            url: "account/upgrade/verify",
+                                            params: {
+                                                emailToken: e.emailToken
+                                            }
+                                        }
+                                    }
+                                }),
+                                finalizeAccountUpgrade: e.mutation({
+                                    query: function(e) {
+                                        return {
+                                            url: "account/upgrade/finalize",
+                                            method: "POST",
+                                            body: {
+                                                displayName: e.displayName,
+                                                emailToken: e.emailToken,
+                                                password: e.password
+                                            }
+                                        }
+                                    },
+                                    invalidatesTags: ["CurrentUser", "Friends"]
                                 })
                             }
                         },
@@ -20360,9 +20386,11 @@
                     _ = l.useRemovePlayerModerationMutation,
                     E = l.useSendAccountRecoveryEmailMutation,
                     I = l.useSetNewPasswordViaEmailMutation,
-                    O = (l.endpoints.getCurrentUserFriends.useQueryState, l.endpoints.getCurrentUser.useQueryState),
-                    S = l.util;
-                const k = l
+                    O = l.useGetAccountUpgradeDetailsQuery,
+                    S = l.useFinalizeAccountUpgradeMutation,
+                    k = (l.endpoints.getCurrentUserFriends.useQueryState, l.endpoints.getCurrentUser.useQueryState),
+                    B = l.util;
+                const x = l
             },
             17219: (e, t, n) => {
                 "use strict";
@@ -43198,8 +43226,8 @@
         347: "afa8fa83b32436a8a29b8f0adabf9b627332ffd72e1d3e5a347d55b88f4cc595",
         396: "35232938a2e10e983bb15cced436bbce2d1510142dde860dd5edd1ab0f3650c5",
         422: "23f1cb2aebda51350dae164fa4a2d6eb77fbd68496cbb6cdae68a442e640ad52",
-        430: "fb70c3cca5579ca7c358760b1269a6eaf04f5abdcbf0441dffcfbf2342b6083d",
-        603: "6bd7fb869028c7642a45bd02d4c61097de4781b0c65c8353acc03ac3f898abbf",
+        430: "c8f7d4109ad1b67ec72911a7000f261e7cf99965fefd94a18c9503fdd2b4f4b2",
+        603: "bf3168ab18538f1895dfb5011ba32df55421b6c2d81d1c6d13d03309dd4ff269",
         715: "f9840c60d53f33c78f86d3cfd2e3faf0f0c9e77451dece74888cc2df991f3634",
         889: "1d29ee13b8249b14003067ecbfd8389f0f9177b5ce0e3e64cf8b410d33fde9dc",
         975: "5f3da615b55b48e63b084079d10c5b4937061b053827e5bc9d5a457c697cb6f3",
@@ -43212,7 +43240,7 @@
         1395: "acd3ea9e6d3b6c1816cf9655bd36374d00c8d20cabf8bc8116c504af8c09cc89",
         1400: "4ee8badd490c2199b2ae8f8dbff69ed37f62cfa5227e50e6fedc80333c2f09e1",
         1477: "105e585590a17b9393141fdabae4583133fe1c2f5a9f0535d357ece6fceaa39d",
-        1792: "214f4d815bc57301a564e47a4af2ba44600d5590f3c1ba78d402a0639dc8e1ec",
+        1792: "f49d2917020ecfa7a807fdb66f8a227df604413daa18791322b3e548e9ff7bed",
         1810: "3ae53dae1c5062ba2e4084308c9c46ce7153e370655970a8ade15d8d69cbcc13",
         1941: "6649ce460a29070c12998471b6a6b89da50ac72cf883420a63b6ca0d1aebe877",
         1952: "042c33442303de86c1e41126a252d0229e2911a0b9c2bfbaf8ee88baad26cb72",
@@ -43253,7 +43281,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         5939: "bc3ebf923d21435ba7c900c7c01d3b5ca35288e75f0142b21dfdf1c3c4a808ec",
         6077: "c92e0f1c1489982beaaa74309d6d39ba9c98ab6bd8437586502c9ffe37cda4f4",
-        6182: "4fa3b1cac7557d21f9f01879cb95c1264777a05179ac9f1cd19f3a4dbd32d1d1",
+        6182: "00e43c9f8eeb7d0d4602e148fc78e954e5cfcae802d47f776cbd36305d459249",
         6231: "e3d3bac4dc4b59432a084a061a333b7a9e85b06f3941a04e13357c66fb988bd7",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "d62e9d6446b5ce96bf9841bf7fcd593a042f9e6f3e8d5ac7ed5fca26e855eb87",
@@ -43267,10 +43295,12 @@
         7024: "5e6c758625cfa2c2e38ab26e61cabf0caee0deaf53053f31245bcd3f6f46501f",
         7047: "0ee34bd8dc934138ccb4dddbce9c5cf8fc6635aed414e3a92140288e6de9bea9",
         7070: "a6f72a3e7480a6d73d41aa07e36511ef2e40c6427710511f38148c2e7479329f",
+        7071: "d7d7e28424785d54ccd5c9dfe7255db0fef9c9c55648e625e616f11b580eaec7",
         7378: "b94384af2a321f940f590a991f6a343aca420d84ddb4b57dd7f0935b4fb9cc43",
+        7508: "03e85b69ef9e7180ca148f0efb41cdcbc2624dea5653022f79b898d4600aa6b9",
         7556: "37d9fc1506b3f15e67134b05e651cd04d40618dd0741c9e4c1cd60c03e5cdb27",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
-        7850: "ae98de42e7e6429c51f17a5b4c2af3d8f231d50bcfc1f01a21886d0b6b4a60fe",
+        7850: "253f18a554778b0adf508e2f2573bb9a51c5403aefb4ce0729a3138337a3cbfe",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "ef6467d3c80a80f3f0c8efc3e14013b48101ddf04e28a17583805f0fe6d5c83e",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -43278,14 +43308,13 @@
         8393: "6d926ff87ab307a2de5a04dea4c072090a7daea244eba66c5dd5453037bd6fa2",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "37ce5e96f2b2e5d355987db785766e14055d6d6db668bf1f87330e41ddab1752",
-        8710: "f731df306029b4a7f246665ecfc53973d8fb9c5194a095a40e25fb9fecdb64d0",
-        8744: "0afbd44bb926f43bf60814eabed0ee682b98a0333ff41ed53cf3c2d4b5ecd47e",
+        8744: "60851609bf1b0f18ea1a1038204d17723d854ce176e5c3ce9cd19bab10e998b6",
         8755: "acd287089bbdf3e29a9d554adb56cad416b226ddaf1ef44b7fc81ea141915d97",
         8874: "8992bed11457f41f572bb8eee6f6a619b9dc4ef6bbe84b9872922893c0920e77",
         8971: "ce31dd434c5dfb9dfe41066c8b729380fbc169c6e28ba1675c76796f151ccaf6",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "40d214677266e6d8e555828a74954b2a15fd526e42a7bb7b22f6f9cb7d317af2",
-        9323: "186e0d8bfdd356dea2a77ee4502d1d510f6a4998359c16ffa3f1d0cd8fba63a8",
+        9323: "2eff2659c099e5ba125697251cc3f7e09780ada307f8f1f0a14e78ac200baf89",
         9395: "0e11cb8964d433e9c85afe7542cd16efbba8d13c6a2c49ac203969d093b321a9",
         9435: "3ad24ccf7f9d2ea82930a6f1c609d2c9932f2fa1328969442a7dea097fb773e1",
         9449: "b6bce710b6433e1c92d931814e250127144abf61f2f056d1d8283e99544079dd",
@@ -43294,7 +43323,8 @@
         9847: "ad8a90e3daa751628e8350674ec1bb52dd1621c65e0f35b8000e26735ed32435",
         9908: "b73c3a9ee74872d7a53cd52af6e8dbbd6e6c345cecb96d7eb5c06124ffa9fe65",
         9923: "8086ceca71693009cf19849097f88e8d1137a04e73e9511be106891d6a68e1e7",
-        9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9"
+        9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
+        9989: "8d04817329159c40e9897d59cb74b8657039e118857c155313b62c6a44a3b782"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -43371,9 +43401,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-08-03t00-00-18-the-erlang-of-theodore"
+        id: "2024-08-07t18-01-06-the-demo-of-bronald"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-08-03t00-00-18-the-erlang-of-theodore"
+        id: "2024-08-07t18-01-06-the-demo-of-bronald"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44918,7 +44948,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-08-03t00-00-18-the-erlang-of-theodore",
+                release: "2024-08-07t18-01-06-the-demo-of-bronald",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -49057,61 +49087,64 @@
                 return Promise.all([s.e(9323), s.e(4058)]).then(s.bind(s, 94058))
             })),
             Ir = r.lazy((function() {
-                return Promise.all([s.e(5737), s.e(1400), s.e(2295)]).then(s.bind(s, 42295))
+                return Promise.all([s.e(9989), s.e(7071), s.e(1400), s.e(7508)]).then(s.bind(s, 7508))
             })),
             Or = r.lazy((function() {
-                return s.e(3424).then(s.bind(s, 13424))
+                return Promise.all([s.e(5737), s.e(1400), s.e(2295)]).then(s.bind(s, 42295))
             })),
             Sr = r.lazy((function() {
-                return s.e(3171).then(s.bind(s, 53171))
+                return s.e(3424).then(s.bind(s, 13424))
             })),
             kr = r.lazy((function() {
-                return s.e(6841).then(s.bind(s, 56841))
+                return s.e(3171).then(s.bind(s, 53171))
             })),
             Br = r.lazy((function() {
-                return s.e(2315).then(s.bind(s, 22315))
+                return s.e(6841).then(s.bind(s, 56841))
             })),
             xr = r.lazy((function() {
-                return Promise.all([s.e(8710), s.e(1792), s.e(1400), s.e(9690), s.e(6627)]).then(s.bind(s, 66627))
+                return s.e(2315).then(s.bind(s, 22315))
             })),
             Cr = r.lazy((function() {
-                return s.e(4673).then(s.bind(s, 94673))
+                return Promise.all([s.e(9989), s.e(1792), s.e(1400), s.e(9690), s.e(6627)]).then(s.bind(s, 66627))
             })),
             Tr = r.lazy((function() {
-                return s.e(6826).then(s.bind(s, 16826))
+                return s.e(4673).then(s.bind(s, 94673))
             })),
             Dr = r.lazy((function() {
-                return Promise.all([s.e(1400), s.e(5391), s.e(8116)]).then(s.bind(s, 68116))
+                return s.e(6826).then(s.bind(s, 16826))
             })),
             Nr = r.lazy((function() {
-                return Promise.all([s.e(1400), s.e(5391), s.e(6077)]).then(s.bind(s, 46077))
+                return Promise.all([s.e(1400), s.e(5391), s.e(8116)]).then(s.bind(s, 68116))
             })),
             Rr = r.lazy((function() {
-                return s.e(422).then(s.bind(s, 70422))
+                return Promise.all([s.e(1400), s.e(5391), s.e(6077)]).then(s.bind(s, 46077))
             })),
             Pr = r.lazy((function() {
-                return s.e(1810).then(s.bind(s, 81810))
+                return s.e(422).then(s.bind(s, 70422))
             })),
             Fr = r.lazy((function() {
-                return Promise.all([s.e(8710), s.e(603), s.e(1400), s.e(7556), s.e(8971)]).then(s.bind(s, 76939))
+                return s.e(1810).then(s.bind(s, 81810))
             })),
             Lr = r.lazy((function() {
-                return Promise.all([s.e(8710), s.e(603), s.e(1400), s.e(7556), s.e(3609), s.e(7070)]).then(s.bind(s, 27070))
+                return Promise.all([s.e(9989), s.e(603), s.e(1400), s.e(7556), s.e(8971)]).then(s.bind(s, 76939))
             })),
             jr = r.lazy((function() {
-                return Promise.all([s.e(8710), s.e(603), s.e(1400), s.e(7556), s.e(3609), s.e(1310)]).then(s.bind(s, 81310))
+                return Promise.all([s.e(9989), s.e(603), s.e(1400), s.e(7556), s.e(3609), s.e(7070)]).then(s.bind(s, 27070))
             })),
             Ur = r.lazy((function() {
-                return Promise.all([s.e(8710), s.e(603), s.e(1477), s.e(7556), s.e(5171)]).then(s.bind(s, 78006))
+                return Promise.all([s.e(9989), s.e(603), s.e(1400), s.e(7556), s.e(3609), s.e(1310)]).then(s.bind(s, 81310))
+            })),
+            Mr = r.lazy((function() {
+                return Promise.all([s.e(9989), s.e(603), s.e(1477), s.e(7556), s.e(5171)]).then(s.bind(s, 78006))
             }));
-        const Mr = function() {
+        const qr = function() {
             return (0, Cn.CM)(), r.createElement("main", null, r.createElement(In.SV, {
                 fallback: Sn.Z
             }, r.createElement(En.B6, null, r.createElement(On.Z, null), r.createElement(r.Suspense, {
                 fallback: r.createElement(kn.Z, null)
             }, r.createElement(wr, null), r.createElement(Tn, null), r.createElement(c.Z5, null, r.createElement(c.AW, {
                 path: "/home/instance-not-found",
-                element: r.createElement(Pr, null)
+                element: r.createElement(Fr, null)
             }), r.createElement(c.AW, {
                 path: "/home/launch",
                 element: r.createElement(Er, null)
@@ -49120,62 +49153,65 @@
                 element: r.createElement(Er, null)
             }), r.createElement(c.AW, {
                 path: "/home/failedverify",
-                element: r.createElement(Or, null)
-            }), r.createElement(c.AW, {
-                path: "/home/failedverifyloginplace",
-                element: r.createElement(Or, null)
-            }), r.createElement(c.AW, {
-                path: "/home/succeedverifyloginplace",
                 element: r.createElement(Sr, null)
             }), r.createElement(c.AW, {
-                path: "/home/critical",
+                path: "/home/failedverifyloginplace",
+                element: r.createElement(Sr, null)
+            }), r.createElement(c.AW, {
+                path: "/home/succeedverifyloginplace",
                 element: r.createElement(kr, null)
             }), r.createElement(c.AW, {
-                path: "/home/unverified",
+                path: "/home/critical",
                 element: r.createElement(Br, null)
+            }), r.createElement(c.AW, {
+                path: "/home/unverified",
+                element: r.createElement(xr, null)
             }), r.createElement(c.AW, {
                 path: "/home/login",
                 element: r.createElement(_r, null)
             }), r.createElement(c.AW, {
                 path: "/home/register",
-                element: r.createElement(xr, null)
+                element: r.createElement(Cr, null)
             }), r.createElement(c.AW, {
                 path: "/home/twofactorauth",
-                element: r.createElement(Dr, null)
+                element: r.createElement(Nr, null)
             }), r.createElement(c.AW, {
                 path: "/home/emailtwofactorauth",
-                element: r.createElement(Dr, {
+                element: r.createElement(Nr, {
                     isEmailOTP: !0
                 })
             }), r.createElement(c.AW, {
                 path: "/home/twofactorauthrecovery",
-                element: r.createElement(Nr, null)
+                element: r.createElement(Rr, null)
             }), r.createElement(c.AW, {
                 path: "/home/verify",
-                element: r.createElement(Ir, null)
+                element: r.createElement(Or, null)
             }), r.createElement(c.AW, {
                 path: "/home/password",
-                element: r.createElement(Tr, null)
+                element: r.createElement(Dr, null)
+            }), r.createElement(c.AW, {
+                path: "/home/account-upgrade",
+                element: r.createElement(Ir, null)
             }), r.createElement(c.AW, {
                 path: "/home/forgot-email",
-                element: r.createElement(Cr, null)
+                element: r.createElement(Tr, null)
             }), r.createElement(c.AW, {
                 path: "/home/*",
                 element: r.createElement(xn, null, r.createElement(c.Z5, null, r.createElement(c.AW, {
                     path: "/tosupdated",
-                    element: r.createElement(Rr, null)
+                    element: r.createElement(Pr, null)
                 }), r.createElement(c.AW, {
                     path: "/oauth",
-                    element: r.createElement(Fr, null)
-                }), r.createElement(c.AW, {
-                    path: "/sso/canny",
                     element: r.createElement(Lr, null)
                 }), r.createElement(c.AW, {
-                    path: "/sso/furality",
+                    path: "/sso/canny",
                     element: r.createElement(jr, null)
                 }), r.createElement(c.AW, {
-                    path: "/*",
+                    path: "/sso/furality",
                     element: r.createElement(Ur, null)
+                }), r.createElement(c.AW, {
+                    path: "/*",
+                    element: r.createElement(Mr, null)
                 })))
             }), r.createElement(c.AW, {
                 path: "*",
@@ -49185,28 +49221,28 @@
                 })
             }))))))
         };
-        var qr = s(93379),
-            Gr = s.n(qr),
-            zr = s(7795),
-            Yr = s.n(zr),
-            Wr = s(90569),
-            $r = s.n(Wr),
-            Zr = s(3565),
-            Vr = s.n(Zr),
-            Hr = s(19216),
-            Qr = s.n(Hr),
-            Jr = s(44589),
-            Kr = s.n(Jr),
-            Xr = s(12576),
-            eo = {};
-        eo.styleTagTransform = Kr(), eo.setAttributes = Vr(), eo.insert = $r().bind(null, "head"), eo.domAPI = Yr(), eo.insertStyleElement = Qr();
-        Gr()(Xr.Z, eo);
-        Xr.Z && Xr.Z.locals && Xr.Z.locals;
+        var Gr = s(93379),
+            zr = s.n(Gr),
+            Yr = s(7795),
+            Wr = s.n(Yr),
+            $r = s(90569),
+            Zr = s.n($r),
+            Vr = s(3565),
+            Hr = s.n(Vr),
+            Qr = s(19216),
+            Jr = s.n(Qr),
+            Kr = s(44589),
+            Xr = s.n(Kr),
+            eo = s(12576),
+            to = {};
+        to.styleTagTransform = Xr(), to.setAttributes = Hr(), to.insert = Zr().bind(null, "head"), to.domAPI = Wr(), to.insertStyleElement = Jr();
+        zr()(eo.Z, to);
+        eo.Z && eo.Z.locals && eo.Z.locals;
         u().initialize({
             gtmId: "GTM-K7M6N24J"
         });
-        var to = document.getElementById("app"),
-            no = function() {
+        var no = document.getElementById("app"),
+            ro = function() {
                 Ve(), String.prototype.toTitleCase = function() {
                         var e, t, n, r, o;
                         for (n = this.replace(/([^\W_]+[^\s-]*) */g, (function(e) {
@@ -49245,13 +49281,13 @@
                         return function(e) {
                             return t.apply(this, arguments)
                         }
-                    }(), (0, o.s)(to).render(r.createElement(a.zt, {
+                    }(), (0, o.s)(no).render(r.createElement(a.zt, {
                         store: _n
                     }, r.createElement(i.VK, {
                         basename: "/"
                     }, r.createElement(c.Z5, null, r.createElement(c.AW, {
                         path: "*",
-                        element: r.createElement(Mr, null)
+                        element: r.createElement(qr, null)
                     }))))),
                     function(t) {
                         var r = 500,
@@ -49313,7 +49349,7 @@
             return n().wrap((function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), no();
+                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), ro();
                     case 3:
                     case "end":
                         return e.stop()
