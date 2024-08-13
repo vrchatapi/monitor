@@ -1,4 +1,4 @@
-/*! For license information please see "2024-08-10t01-06-58-the-mazing-of-hodor--main-prod-public-afbcd733-0e34-4a57-84f3-12125597ebaf--app.js.LICENSE.txt" */
+/*! For license information please see "2024-08-13t00-29-18-the-ship-of-gerty--main-prod-public-958d5f1e-721a-480f-a388-8f860832e4ce--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15786,7 +15786,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-10t01-06-58-the-mazing-of-hodor", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-13t00-29-18-the-ship-of-gerty", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -43260,7 +43260,7 @@
         347: "afa8fa83b32436a8a29b8f0adabf9b627332ffd72e1d3e5a347d55b88f4cc595",
         396: "35232938a2e10e983bb15cced436bbce2d1510142dde860dd5edd1ab0f3650c5",
         422: "23f1cb2aebda51350dae164fa4a2d6eb77fbd68496cbb6cdae68a442e640ad52",
-        430: "cdbd59bdda2731f5cdcfc84fbe102ffaa20bb8d5acaa2eab623874ecc3555684",
+        430: "49bf4fea75685343ed6c751b1d77b1148454ff16fd16ce7a6166f57813e0e0c4",
         603: "bf3168ab18538f1895dfb5011ba32df55421b6c2d81d1c6d13d03309dd4ff269",
         715: "f9840c60d53f33c78f86d3cfd2e3faf0f0c9e77451dece74888cc2df991f3634",
         889: "1d29ee13b8249b14003067ecbfd8389f0f9177b5ce0e3e64cf8b410d33fde9dc",
@@ -43307,7 +43307,7 @@
         5132: "c3d96a8d152e32f9539a475cd9030706d4d2c83ff0cb6724bf086efb4dc1af1a",
         5142: "8faaa01f95ef18dd631ab1407553177550e2602f1bc68f51d0af106355837d62",
         5147: "77b562eb77ed3f77a8ddf7d72f4fa1c69ce6668304b679a57d1242d002a3dce2",
-        5171: "6a5f74cbacc94fa22b9277baff5d1d67954cea68327fe1ae133955a890a38590",
+        5171: "361bcc59685592042475589ab0911242d5754e867f86dbbc15748369e32a87b8",
         5391: "3b294b819b34fb7f24805b0ba5b10854a5eface74450db61b537ea6162ca2069",
         5460: "a7891a0e27a0248015d3b14624e1310a0b09c34b92b08887a13e2bed026db791",
         5508: "d9e4bf24c42eec5e0cfcdaba2a2fdf5bbff228b08ffd14cf3340d6fec3cf985c",
@@ -43315,7 +43315,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         5939: "bc3ebf923d21435ba7c900c7c01d3b5ca35288e75f0142b21dfdf1c3c4a808ec",
         6077: "c92e0f1c1489982beaaa74309d6d39ba9c98ab6bd8437586502c9ffe37cda4f4",
-        6182: "7d4471ea1701bfe6a584c8859fd6e6305bfcf3eb9ccbceea1039b5799bf4e138",
+        6182: "861b7841f31aef02d22c10dae3a938ad362a472091817add48a4a8ed32aba0f4",
         6231: "e3d3bac4dc4b59432a084a061a333b7a9e85b06f3941a04e13357c66fb988bd7",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "d62e9d6446b5ce96bf9841bf7fcd593a042f9e6f3e8d5ac7ed5fca26e855eb87",
@@ -43334,7 +43334,7 @@
         7508: "03e85b69ef9e7180ca148f0efb41cdcbc2624dea5653022f79b898d4600aa6b9",
         7556: "37d9fc1506b3f15e67134b05e651cd04d40618dd0741c9e4c1cd60c03e5cdb27",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
-        7850: "86f331aa4ba4d4ac9bf725ed857ec41c4242091bf6ddfa446cc656fecfc4e21d",
+        7850: "5c1696c41d2f6ec74e91677f973627670e8d4c75c1f869031fc0be680dddb5c3",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "ef6467d3c80a80f3f0c8efc3e14013b48101ddf04e28a17583805f0fe6d5c83e",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -43342,13 +43342,13 @@
         8393: "6d926ff87ab307a2de5a04dea4c072090a7daea244eba66c5dd5453037bd6fa2",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "37ce5e96f2b2e5d355987db785766e14055d6d6db668bf1f87330e41ddab1752",
-        8744: "7985dde41e6c1dbe1083f3be18e755a288845b0d08c544b00f60dd9d9db126ca",
+        8744: "e5b3a4e7cf5f2fe57defff2a638ca8b962dfb123b89e6d07c0eaa23f4044c593",
         8755: "acd287089bbdf3e29a9d554adb56cad416b226ddaf1ef44b7fc81ea141915d97",
         8874: "8992bed11457f41f572bb8eee6f6a619b9dc4ef6bbe84b9872922893c0920e77",
         8971: "ce31dd434c5dfb9dfe41066c8b729380fbc169c6e28ba1675c76796f151ccaf6",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "40d214677266e6d8e555828a74954b2a15fd526e42a7bb7b22f6f9cb7d317af2",
-        9323: "62a5ee4def9f3569a27f3fad8eb883cd733d5893c1901ac4598213743a9957a9",
+        9323: "6b5031fa61e10bfe44b128f7d86a7b841164609c33c25ade4818e43bad6313a2",
         9395: "0e11cb8964d433e9c85afe7542cd16efbba8d13c6a2c49ac203969d093b321a9",
         9435: "3ad24ccf7f9d2ea82930a6f1c609d2c9932f2fa1328969442a7dea097fb773e1",
         9449: "b6bce710b6433e1c92d931814e250127144abf61f2f056d1d8283e99544079dd",
@@ -43358,7 +43358,7 @@
         9908: "b73c3a9ee74872d7a53cd52af6e8dbbd6e6c345cecb96d7eb5c06124ffa9fe65",
         9923: "8086ceca71693009cf19849097f88e8d1137a04e73e9511be106891d6a68e1e7",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "7f7cf7706b80a642d9c3884323987e17067427b69f96ec0e521767e3887c933e"
+        9989: "123751cccf0b6cfdf5164685a315a6100bb83df706d5a78443e9f722fe4a9578"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -43435,9 +43435,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-08-10t01-06-58-the-mazing-of-hodor"
+        id: "2024-08-13t00-29-18-the-ship-of-gerty"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-08-10t01-06-58-the-mazing-of-hodor"
+        id: "2024-08-13t00-29-18-the-ship-of-gerty"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44982,7 +44982,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-08-10t01-06-58-the-mazing-of-hodor",
+                release: "2024-08-13t00-29-18-the-ship-of-gerty",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
