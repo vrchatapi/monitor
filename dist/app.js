@@ -1,4 +1,4 @@
-/*! For license information please see "2024-08-13t00-29-18-the-ship-of-gerty--main-prod-public-958d5f1e-721a-480f-a388-8f860832e4ce--app.js.LICENSE.txt" */
+/*! For license information please see "2024-08-15t00-21-07-the-tragedy-of-honeydew--main-prod-public-942a1342-38b3-4167-9878-9b0010580857--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -15786,7 +15786,7 @@
                     In = "idfk",
                     On = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-13t00-29-18-the-ship-of-gerty", On = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-15t00-21-07-the-tragedy-of-honeydew", On = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -23906,10 +23906,10 @@
                         return c && u ? "".concat(L, "/").concat(c, "/").concat(u, "/").concat(a) : null !== (n = i.fileUrl) && void 0 !== n ? n : null
                     },
                     M = function(e) {
-                        return e.split("/")[6] || null
+                        return (null == e ? void 0 : e.split("/")[6]) || null
                     },
                     q = function(e) {
-                        return e.split("/")[7] || null
+                        return (null == e ? void 0 : e.split("/")[7]) || null
                     },
                     G = function() {
                         var e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -43260,7 +43260,7 @@
         347: "afa8fa83b32436a8a29b8f0adabf9b627332ffd72e1d3e5a347d55b88f4cc595",
         396: "35232938a2e10e983bb15cced436bbce2d1510142dde860dd5edd1ab0f3650c5",
         422: "23f1cb2aebda51350dae164fa4a2d6eb77fbd68496cbb6cdae68a442e640ad52",
-        430: "49bf4fea75685343ed6c751b1d77b1148454ff16fd16ce7a6166f57813e0e0c4",
+        430: "dfbcf76748dd64197122d16920fad5a9d2d0da3372e197c00004b003cc1c82e5",
         603: "bf3168ab18538f1895dfb5011ba32df55421b6c2d81d1c6d13d03309dd4ff269",
         715: "f9840c60d53f33c78f86d3cfd2e3faf0f0c9e77451dece74888cc2df991f3634",
         889: "1d29ee13b8249b14003067ecbfd8389f0f9177b5ce0e3e64cf8b410d33fde9dc",
@@ -43315,7 +43315,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         5939: "bc3ebf923d21435ba7c900c7c01d3b5ca35288e75f0142b21dfdf1c3c4a808ec",
         6077: "c92e0f1c1489982beaaa74309d6d39ba9c98ab6bd8437586502c9ffe37cda4f4",
-        6182: "861b7841f31aef02d22c10dae3a938ad362a472091817add48a4a8ed32aba0f4",
+        6182: "e153c0910d72710848258bdde7f7cdd02c8aa316b9aa82c94f6a1cf899a9310e",
         6231: "e3d3bac4dc4b59432a084a061a333b7a9e85b06f3941a04e13357c66fb988bd7",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "d62e9d6446b5ce96bf9841bf7fcd593a042f9e6f3e8d5ac7ed5fca26e855eb87",
@@ -43334,7 +43334,7 @@
         7508: "03e85b69ef9e7180ca148f0efb41cdcbc2624dea5653022f79b898d4600aa6b9",
         7556: "37d9fc1506b3f15e67134b05e651cd04d40618dd0741c9e4c1cd60c03e5cdb27",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
-        7850: "5c1696c41d2f6ec74e91677f973627670e8d4c75c1f869031fc0be680dddb5c3",
+        7850: "d59651c90c7b4e6645518ab6fb09493cf798bcb3f14d9b61c02bac5e0a8754a2",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "ef6467d3c80a80f3f0c8efc3e14013b48101ddf04e28a17583805f0fe6d5c83e",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -43342,13 +43342,13 @@
         8393: "6d926ff87ab307a2de5a04dea4c072090a7daea244eba66c5dd5453037bd6fa2",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "37ce5e96f2b2e5d355987db785766e14055d6d6db668bf1f87330e41ddab1752",
-        8744: "e5b3a4e7cf5f2fe57defff2a638ca8b962dfb123b89e6d07c0eaa23f4044c593",
+        8744: "8b8e65aab53e12359b0acd2aba41a719532f5e872f4b64515cd91abfd247dcfe",
         8755: "acd287089bbdf3e29a9d554adb56cad416b226ddaf1ef44b7fc81ea141915d97",
         8874: "8992bed11457f41f572bb8eee6f6a619b9dc4ef6bbe84b9872922893c0920e77",
         8971: "ce31dd434c5dfb9dfe41066c8b729380fbc169c6e28ba1675c76796f151ccaf6",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "40d214677266e6d8e555828a74954b2a15fd526e42a7bb7b22f6f9cb7d317af2",
-        9323: "6b5031fa61e10bfe44b128f7d86a7b841164609c33c25ade4818e43bad6313a2",
+        9323: "70470a77c8bd9f3736a1f42aa46d5dc87c847f7a2a00c4971f5e1a757ec9883f",
         9395: "0e11cb8964d433e9c85afe7542cd16efbba8d13c6a2c49ac203969d093b321a9",
         9435: "3ad24ccf7f9d2ea82930a6f1c609d2c9932f2fa1328969442a7dea097fb773e1",
         9449: "b6bce710b6433e1c92d931814e250127144abf61f2f056d1d8283e99544079dd",
@@ -43358,7 +43358,7 @@
         9908: "b73c3a9ee74872d7a53cd52af6e8dbbd6e6c345cecb96d7eb5c06124ffa9fe65",
         9923: "8086ceca71693009cf19849097f88e8d1137a04e73e9511be106891d6a68e1e7",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "123751cccf0b6cfdf5164685a315a6100bb83df706d5a78443e9f722fe4a9578"
+        9989: "3b909eb644311a059a574e02304a0de19da71a57118895263f0e1d91f391a748"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -43435,9 +43435,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-08-13t00-29-18-the-ship-of-gerty"
+        id: "2024-08-15t00-21-07-the-tragedy-of-honeydew"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-08-13t00-29-18-the-ship-of-gerty"
+        id: "2024-08-15t00-21-07-the-tragedy-of-honeydew"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44982,7 +44982,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-08-13t00-29-18-the-ship-of-gerty",
+                release: "2024-08-15t00-21-07-the-tragedy-of-honeydew",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
