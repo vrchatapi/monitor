@@ -7,7 +7,7 @@ const system = new SystemApi({
     basePath: "https://vrchat.com/api/1",
     baseOptions: {
         headers: {
-            "User-Agent": "vrchat-monitor/1 me@ariesclark.com"
+            "User-Agent": "vrchat-monitor/1 vrchatapi.lpv0t@aries.fyi"
         }
     }
 });
