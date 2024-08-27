@@ -1,4 +1,4 @@
-/*! For license information please see "2024-08-23t19-29-14-the-sock-of-endor--main-prod-public-c286537f-42ab-47d2-99b6-13f75831deca--app.js.LICENSE.txt" */
+/*! For license information please see "2024-08-26t18-31-30-the-prestige-of-chalmers--main-prod-public-d9da587a-689c-4506-a029-854b5fe3517c--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13177,7 +13177,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-23t19-29-14-the-sock-of-endor", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-08-26t18-31-30-the-prestige-of-chalmers", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42535,7 +42535,7 @@
         347: "afa8fa83b32436a8a29b8f0adabf9b627332ffd72e1d3e5a347d55b88f4cc595",
         396: "2887cb6c8f428bccdd2ba176874118c3255dc50836b8767e318ac538d104cc90",
         422: "23f1cb2aebda51350dae164fa4a2d6eb77fbd68496cbb6cdae68a442e640ad52",
-        430: "a4e1f797176aa08ec035c80b870dce2c7efc0af186d81c52720797f347a68abe",
+        430: "7c2293211444284b9528dc09a3d5ab52ebcdfb7b077d5d91754e24d860107ff0",
         603: "bf3168ab18538f1895dfb5011ba32df55421b6c2d81d1c6d13d03309dd4ff269",
         715: "f9840c60d53f33c78f86d3cfd2e3faf0f0c9e77451dece74888cc2df991f3634",
         889: "75352f2002df445ed07d3a05144dbd564e06921255242db5c86833f107f6cad5",
@@ -42560,7 +42560,7 @@
         2432: "34520f84d671827eaa7a3773bd7993cec6d977160483ef772af99f55fef076d5",
         2595: "315ccea6134f03b029d2ea32bee890d7e0e12c1f7fbf54eb9dc8a761ee33dc89",
         2874: "4bf34055db48e775fca2eb7d25ca1b2d624a1c009aee3acf94bb24b48c0600f9",
-        2998: "0a1672b2232a3b5629d1ef4db3e1eab284f2bf80559fde6a59337e1b1d23ca00",
+        2998: "103b8a1902326e035b16b1186b89ac0a2a2c814d3f285783f2d8f7a7fd428685",
         3171: "b4c14aa256485ff7d664be825114e30c38be7de68deb7c53e507c630ffe031bf",
         3261: "83d8a60417c7ac3a5fd8415a8b008500a1193b652072599ae0d6f7d28b4b46c0",
         3424: "3a9f52313563dd319d5d8f3001236072b43529609305bddd838377c96eb56d70",
@@ -42590,7 +42590,7 @@
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         5939: "dd27cb6bc2e5aa4334c354f972e0a55254d0975198abd7cd91f7a83e3980f92f",
         6077: "c92e0f1c1489982beaaa74309d6d39ba9c98ab6bd8437586502c9ffe37cda4f4",
-        6182: "3fc5e8d5ce18849cf5dd30cab5267e6884cd48ce7dbfc75cec04f2337564e9ee",
+        6182: "995fb40dea9308713a6626fe0877582ec911735b6f6e4f94770ba9a8c2ab388e",
         6231: "e3d3bac4dc4b59432a084a061a333b7a9e85b06f3941a04e13357c66fb988bd7",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "a6343cb6460aeee86b488c562b38f8f0f68d61e5d915e43a4c135e2680d03c8b",
@@ -42609,7 +42609,7 @@
         7508: "03e85b69ef9e7180ca148f0efb41cdcbc2624dea5653022f79b898d4600aa6b9",
         7556: "37d9fc1506b3f15e67134b05e651cd04d40618dd0741c9e4c1cd60c03e5cdb27",
         7698: "493ca3f56bc59ec14b8968ce3286795d4810058e3ea18d17b9c5681ebe2a380b",
-        7850: "8cdf9fab602eee855144a3c3b429e6981cb14b9ee8bdec317558258919c5cd38",
+        7850: "6f24900b6d025f74c051189f77ade0e7b94cadf83eb92454721e64d8c2403e30",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "ef6467d3c80a80f3f0c8efc3e14013b48101ddf04e28a17583805f0fe6d5c83e",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -42617,13 +42617,13 @@
         8393: "6d926ff87ab307a2de5a04dea4c072090a7daea244eba66c5dd5453037bd6fa2",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "37ce5e96f2b2e5d355987db785766e14055d6d6db668bf1f87330e41ddab1752",
-        8744: "fa93f811a095bcbf46dc5f977bdd23f55294c6237080ebd5a345be98bc109d1e",
+        8744: "5f5b69fd960d03369eea603dd6f8f52b127f11d6bf5f7562c3c1240e620ac20a",
         8755: "cc944531f80840bdbcf574a1e1a8c96ede2f3a0f126da4b21fa899b3dd044247",
         8874: "8992bed11457f41f572bb8eee6f6a619b9dc4ef6bbe84b9872922893c0920e77",
         8971: "2932aa6725c6f596ae37ca148e74d44e8e1e949cd649e124f54fb1dcf7538104",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "30d4f8d0e989dd12f908b3f3821fc568e7253525216302fa2a12ac8257796f23",
-        9323: "c540bdfd85384c34057343b59a8d30cdba7daa3d93a2407632b80ea6e62dcbb6",
+        9323: "5aeddec357566c71983e4b77c36150dbc725950918cb405ad2ec98e4b00c0a21",
         9395: "e914ca086c442182ddeb66234a036f631e84da7b7af6033a20e7687f46176b7d",
         9435: "3ad24ccf7f9d2ea82930a6f1c609d2c9932f2fa1328969442a7dea097fb773e1",
         9449: "b6bce710b6433e1c92d931814e250127144abf61f2f056d1d8283e99544079dd",
@@ -42633,7 +42633,7 @@
         9908: "b73c3a9ee74872d7a53cd52af6e8dbbd6e6c345cecb96d7eb5c06124ffa9fe65",
         9923: "a15d51f2604a492f143dcebe2942de32dc82f31ebb5952d9360b215d25451222",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "26e53baa3f1b432f6a1ba1d83dc8e7b765ceb5de13a81b3b8ae92d241d4ba876"
+        9989: "a6ec38b779a2c3cc2d220778c934004fd278b68c20772d15e16b0f4138e400c0"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42710,9 +42710,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-08-23t19-29-14-the-sock-of-endor"
+        id: "2024-08-26t18-31-30-the-prestige-of-chalmers"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-08-23t19-29-14-the-sock-of-endor"
+        id: "2024-08-26t18-31-30-the-prestige-of-chalmers"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44257,7 +44257,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-08-23t19-29-14-the-sock-of-endor",
+                release: "2024-08-26t18-31-30-the-prestige-of-chalmers",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
