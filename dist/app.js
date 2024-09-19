@@ -1,4 +1,4 @@
-/*! For license information please see "2024-09-17t21-33-52-the-brand-of-slorg--main-prod-public-a17cd08f-297e-4bfc-adb8-b6837e813610--app.js.LICENSE.txt" */
+/*! For license information please see "2024-09-18t23-07-22-the-lucky-of-noelle--main-prod-public-63e45c8f-821f-4c21-8261-a521f08fee19--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-17t21-33-52-the-brand-of-slorg", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-18t23-07-22-the-lucky-of-noelle", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -16549,6 +16549,7 @@
                     INTERACTION_OFF: () => l,
                     INTERACTION_ON: () => c,
                     MUTE: () => o,
+                    MUTE_CHAT: () => u,
                     SHOWAVATAR: () => s,
                     UNMUTE: () => a
                 });
@@ -16558,7 +16559,8 @@
                     i = "hideAvatar",
                     s = "showAvatar",
                     c = "interactOn",
-                    l = "interactOff"
+                    l = "interactOff",
+                    u = "muteChat"
             },
             21464: (e, t, n) => {
                 "use strict";
@@ -20950,7 +20952,7 @@
                                 try {
                                     for (f.s(); !(p = f.n()).done;) {
                                         var m = p.value;
-                                        e[m.type].total += 1, e[m.type].moderations.push(m), e[m.type].users.push(m.targetUserId)
+                                        e[m.type] ? (e[m.type].total += 1, e[m.type].moderations.push(m), e[m.type].users.push(m.targetUserId)) : console.error("Unknown moderation type: ".concat(m.type))
                                     }
                                 } catch (e) {
                                     f.e(e)
@@ -42706,7 +42708,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "787ca0f0c5e59dc676626433ba96ae566b1309f393bb1f22844daddede84b890",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "0b1c0536c50893d7820e2c129a7d0611049806f77dde4b4d65e40d97c71958d7",
+        430: "273469fb67b9c5c65292c56684bee96ecb78a956e7095ad8ae635bf17e20a766",
         587: "22741cbe8191b53745613f874ebd5b25dff04b138deea9a8629f39b809a43a01",
         877: "994cb93a57b20bb96b20f6e628806b2f541270270c294c489485e6aea828101d",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
@@ -42718,10 +42720,10 @@
         1364: "97d6ac3a69a9ed29e41b2151c86dfe5d320f65fc476b95c9440c8a862a399391",
         1395: "1a13998e4cf8c4cdf54c50ee3ac7aff759aacd36c2a8dd412ea60ef1f32de786",
         1400: "01a186e3b4828249e1acf1ced8502b1dac99cc4bb63f46aaa4c03bd8f0ca4e40",
-        1572: "b598f9d8d3a4fc987abfe964550fa54d87e5173c4d3a07cf37daac47a8594a0e",
+        1572: "5c4f0ac1cf3bcc308e129c5b633ddee64375f09c28a331797acc6f8d78f60b5c",
         1792: "2cdad40124d5a4e738d20324f5ef9b8bc5491c25ec1b3a42c533d3a94367756d",
         1810: "3ae53dae1c5062ba2e4084308c9c46ce7153e370655970a8ade15d8d69cbcc13",
-        1941: "312b379355463b8d3fadb15cc6b41b6c7e543c4d553484b4b012e31f42181a95",
+        1941: "5fa3b07c39c033543782277fc40211efac922b6fb7cb75c9ce8a5abdb7a136aa",
         1952: "1a391cc23affc4c6bef3ca93492da6b1c59fdc11bedee416919948e96603d591",
         1968: "d92700102f48d6f745410d7266f021db88ba7441927b0a45643904c4b49a5702",
         2295: "fbca317f85f130a5634e42967595752a459786c9e1c0423ceb3257407737b6d0",
@@ -42769,7 +42771,7 @@
         6627: "43dfc4635020b22ace62e8af017f05b25538b69106ff722c1920f6e8a206f967",
         6681: "adc0de51c9936347622180af2a8fe1ee0359fc2c05e16c91134e60b4719a895e",
         6736: "eea514dd208b3e7946c00185d57794fb04a5cf9a752f7288323ff2e8f483c8eb",
-        6780: "9fd90bbc71667dda57069f18a017cfbdfaf0378e6f2b195742e12bff23b55463",
+        6780: "2e16a252e65e01978e5089152bbf5f45fa8d3c4aa6f720874ed3d2398fcca943",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
@@ -42780,7 +42782,7 @@
         7378: "f135b9d6044bd45decadfe5d1da2d9bbd9b492d9970bd3185556fbb592e0e291",
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "044466b35da79be545daa9be0b7edd1718a9188264b295cf94d991473908e62b",
-        7850: "ef028b0f99613e0e83d27f60f7b6e803ec5bdf078511aa6f1d27c4fb740fbd29",
+        7850: "35e545adac0e33292b66a4fb7744d7838281ca1a21acb224355bfa62e1a54d7d",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42788,14 +42790,14 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "40ec08665cb413758ae81d953620379b373c6f932a3e83fd15f3f9dea6639cea",
-        8755: "be05a8d0d58c6cfd3c14607d8fdce801a43e3e87ec51e60a194cd455f259c793",
+        8744: "47c4620d806cb76f58fd481aaa266d5c3a11b35f9c909f0026603e8f5f2a3b12",
+        8755: "7649e9573e635d0525ca2c0b76ddaa852af6dc45482a31ab2209c6532c769d8f",
         8874: "448fb93333f707ddd7f6665a41247c1e60b0520289bb2f4d0bc4809cf8745dcb",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
-        9037: "995442d3bff92b81ce29087013d3f8613fd23a80cf27aa44aa1f7b17bd018846",
+        9037: "7ca70af80d9610c012ceb7b7cf59d48787ec53caf1217c320f3bbe8b8228be5c",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "2846430b886d365c725c3dc35c7b3966347a2352184c0bcf364ff822bea741a8",
+        9323: "f716207069e5133729567af27b95894f532019a7d30c4ef59d8853a4322566d4",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9449: "75b3de3e79b6c339e4d9dfc22aa66a7338cff3edbe17acf570fa9701a57ff9bb",
@@ -42806,7 +42808,7 @@
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "d7ebd3744399c6c79db0614bb5e3aa0e5e4233bcfe204471800ee0755a548cbd"
+        9989: "616b797e45616caca84ca38c23c40eb24d83fe8ac6bc0150eb0ed33c11e77bfb"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42883,9 +42885,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-09-17t21-33-52-the-brand-of-slorg"
+        id: "2024-09-18t23-07-22-the-lucky-of-noelle"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-09-17t21-33-52-the-brand-of-slorg"
+        id: "2024-09-18t23-07-22-the-lucky-of-noelle"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44430,7 +44432,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-09-17t21-33-52-the-brand-of-slorg",
+                release: "2024-09-18t23-07-22-the-lucky-of-noelle",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
