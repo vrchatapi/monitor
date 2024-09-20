@@ -1,4 +1,4 @@
-/*! For license information please see "2024-09-18t23-07-22-the-lucky-of-noelle--main-prod-public-63e45c8f-821f-4c21-8261-a521f08fee19--app.js.LICENSE.txt" */
+/*! For license information please see "2024-09-19t17-14-24-the-wump-of-grand--main-prod-public-ad9dbfc3-f821-462b-9adb-0fd256917253--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-18t23-07-22-the-lucky-of-noelle", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-19t17-14-24-the-wump-of-grand", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -17593,7 +17593,7 @@
                             try {
                                 for (a.s(); !(t = a.n()).done;) {
                                     var i = t.value;
-                                    if ("offline" !== i.state && "active" !== i.state && (null != i.location && "private" !== i.location && "traveling" !== i.location))
+                                    if ("offline" !== i.state && "active" !== i.state && (null != i.location && "private" !== i.location && "traveling" !== i.location && "offline" !== i.location))
                                         if (o.has(i.location)) n[i.location].users.push(i.id);
                                         else {
                                             o.add(i.location);
@@ -42708,7 +42708,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "787ca0f0c5e59dc676626433ba96ae566b1309f393bb1f22844daddede84b890",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "273469fb67b9c5c65292c56684bee96ecb78a956e7095ad8ae635bf17e20a766",
+        430: "c95304d20609088f00f12e3b772b109497af0c380999452843cef662e1ec7cf6",
         587: "22741cbe8191b53745613f874ebd5b25dff04b138deea9a8629f39b809a43a01",
         877: "994cb93a57b20bb96b20f6e628806b2f541270270c294c489485e6aea828101d",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
@@ -42782,7 +42782,7 @@
         7378: "f135b9d6044bd45decadfe5d1da2d9bbd9b492d9970bd3185556fbb592e0e291",
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "044466b35da79be545daa9be0b7edd1718a9188264b295cf94d991473908e62b",
-        7850: "35e545adac0e33292b66a4fb7744d7838281ca1a21acb224355bfa62e1a54d7d",
+        7850: "e34db0c933c3101ea9fc0076ce560beb3ccaa729ffdd7a1dfbc093be9e3fd957",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42790,14 +42790,14 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "47c4620d806cb76f58fd481aaa266d5c3a11b35f9c909f0026603e8f5f2a3b12",
+        8744: "b71ad15dad964bf4e92dda3bccda1366b9b74cb47b3d0344c480acbd4ab9325f",
         8755: "7649e9573e635d0525ca2c0b76ddaa852af6dc45482a31ab2209c6532c769d8f",
         8874: "448fb93333f707ddd7f6665a41247c1e60b0520289bb2f4d0bc4809cf8745dcb",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
-        9037: "7ca70af80d9610c012ceb7b7cf59d48787ec53caf1217c320f3bbe8b8228be5c",
+        9037: "2152eb11e9c14bddfcd00d4d2f3c1e8c0edd7666278a0d63fffac4682107f13d",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "f716207069e5133729567af27b95894f532019a7d30c4ef59d8853a4322566d4",
+        9323: "ba747acc4e5298b761cb6e9348707e51cdf81a3e381499a53a25c4da6445a080",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9449: "75b3de3e79b6c339e4d9dfc22aa66a7338cff3edbe17acf570fa9701a57ff9bb",
@@ -42808,7 +42808,7 @@
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
         9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "616b797e45616caca84ca38c23c40eb24d83fe8ac6bc0150eb0ed33c11e77bfb"
+        9989: "dfe8ce9462eba0b8dd0ecb3657c400ee33711531733d54e438d444ff4aaf8b97"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42885,9 +42885,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-09-18t23-07-22-the-lucky-of-noelle"
+        id: "2024-09-19t17-14-24-the-wump-of-grand"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-09-18t23-07-22-the-lucky-of-noelle"
+        id: "2024-09-19t17-14-24-the-wump-of-grand"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44432,7 +44432,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-09-18t23-07-22-the-lucky-of-noelle",
+                release: "2024-09-19t17-14-24-the-wump-of-grand",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
