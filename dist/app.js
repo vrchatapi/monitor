@@ -1,4 +1,4 @@
-/*! For license information please see "2024-09-19t17-14-24-the-wump-of-grand--main-prod-public-ad9dbfc3-f821-462b-9adb-0fd256917253--app.js.LICENSE.txt" */
+/*! For license information please see "2024-09-20t21-43-00-the-basic-of-cersei--main-prod-public-5f619080-32d9-4e93-83bd-3880566d54b3--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-19t17-14-24-the-wump-of-grand", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-20t21-43-00-the-basic-of-cersei", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42708,10 +42708,11 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "787ca0f0c5e59dc676626433ba96ae566b1309f393bb1f22844daddede84b890",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "c95304d20609088f00f12e3b772b109497af0c380999452843cef662e1ec7cf6",
+        430: "085438c2bd3cba1b155e67b5d6d0b428bf9e32ca73ec416eb6f9d2bb3c410701",
         587: "22741cbe8191b53745613f874ebd5b25dff04b138deea9a8629f39b809a43a01",
         877: "994cb93a57b20bb96b20f6e628806b2f541270270c294c489485e6aea828101d",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
+        919: "002c4522f6ed839b211d6500035948cbd25f59773d2fab22fb1ef49564594993",
         989: "e05edcd7827ff022a2e901fa0ff48503b4cf47e7a4faa867a7634880659ee8af",
         997: "d5c2089e944b4c0764a1f5f61c88518a5e75bbf5c168c7b85693376c16c6b9e7",
         1264: "821111c1b35010955d4ff1a2f806bcc15c443d0038ce4d4c70e04cdf1aa01084",
@@ -42723,7 +42724,6 @@
         1572: "5c4f0ac1cf3bcc308e129c5b633ddee64375f09c28a331797acc6f8d78f60b5c",
         1792: "2cdad40124d5a4e738d20324f5ef9b8bc5491c25ec1b3a42c533d3a94367756d",
         1810: "3ae53dae1c5062ba2e4084308c9c46ce7153e370655970a8ade15d8d69cbcc13",
-        1941: "5fa3b07c39c033543782277fc40211efac922b6fb7cb75c9ce8a5abdb7a136aa",
         1952: "1a391cc23affc4c6bef3ca93492da6b1c59fdc11bedee416919948e96603d591",
         1968: "d92700102f48d6f745410d7266f021db88ba7441927b0a45643904c4b49a5702",
         2295: "fbca317f85f130a5634e42967595752a459786c9e1c0423ceb3257407737b6d0",
@@ -42749,13 +42749,14 @@
         4376: "fca4fdf671f6a3f9451877fad67b50346ed1795a943e752ea56f22f8f4b0192c",
         4444: "e7a9550df2eff49c883bef3e3daadff0baf499e2482227087dcad62c11974e1f",
         4673: "c5653321f3d7a63a67d8e503d642b02b6f9c2a652038076dd915413a3cd1b830",
+        4734: "acd869d42a3c91b40db4c8d0c4727690e8e1e832822960d609f34efe59f247a6",
         4896: "606ceffae4331b6b7da1b733618815ff645088410b425a6bc20c21093b41cea2",
         4945: "679fc54342d5eedca79e1d7cef5eb9803ec5ab7845ae45674e9912a6dc1aa0f0",
         5039: "4676759170c85863f99532eba98f9d32b5c138e4c115a537eb9be8ec724b228b",
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5142: "ba706cc9e2b927d547444b111b42cf23aa5e1dabf51ece32d53731c4e78bcf04",
         5147: "7a9cf4b058e7890d933344e2deedda6bba54f296db44859bee372161a2c00265",
-        5171: "608fa574e35555e6a60de7d9af0154e5b6411fb5fecf6a440975b026d95656b9",
+        5171: "8daa3578c4de4633dd37b8cb65bbe55b97d22232afa521f9542c1d7026fbdff8",
         5391: "52e61d6e3f53f454c826e413dff8aa1bf3a9fc3266a5cec2460fc799a3f5ae53",
         5460: "78a5cccdf8d475066bcc770b80a6e81852e1bf09c5aa542d5f17f080774a823c",
         5508: "26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa",
@@ -42782,7 +42783,7 @@
         7378: "f135b9d6044bd45decadfe5d1da2d9bbd9b492d9970bd3185556fbb592e0e291",
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "044466b35da79be545daa9be0b7edd1718a9188264b295cf94d991473908e62b",
-        7850: "e34db0c933c3101ea9fc0076ce560beb3ccaa729ffdd7a1dfbc093be9e3fd957",
+        7850: "1ee8d6fec02e77f2daaa4af2ba63e5d6f524c92442abe9259757fc39ab72468b",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42790,14 +42791,14 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "b71ad15dad964bf4e92dda3bccda1366b9b74cb47b3d0344c480acbd4ab9325f",
+        8744: "5f1ed1d0d157294e6defc098e0c2a8399a5cb5c71b63baf8ff6270c977c3a8ea",
         8755: "7649e9573e635d0525ca2c0b76ddaa852af6dc45482a31ab2209c6532c769d8f",
         8874: "448fb93333f707ddd7f6665a41247c1e60b0520289bb2f4d0bc4809cf8745dcb",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
-        9037: "2152eb11e9c14bddfcd00d4d2f3c1e8c0edd7666278a0d63fffac4682107f13d",
+        9037: "7e9b1ac84fa05a9e2c17f5de56acc157e939ce33353b5c0fe0ccde08dda748cc",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "ba747acc4e5298b761cb6e9348707e51cdf81a3e381499a53a25c4da6445a080",
+        9323: "49d4279b01470e1784b1d5052d0e739de7f38aff376547dace64df5d0de07aa0",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9449: "75b3de3e79b6c339e4d9dfc22aa66a7338cff3edbe17acf570fa9701a57ff9bb",
@@ -42807,8 +42808,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9965: "ba5c9f940f6526d19949531c1850cc00caa98b60c03a16711df3cfda908be6d9",
-        9989: "dfe8ce9462eba0b8dd0ecb3657c400ee33711531733d54e438d444ff4aaf8b97"
+        9989: "33d1552a5946c06f1efc2ae76335ea4b9842b4c864470e874ae5e08e55a3076a"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42885,9 +42885,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-09-19t17-14-24-the-wump-of-grand"
+        id: "2024-09-20t21-43-00-the-basic-of-cersei"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-09-19t17-14-24-the-wump-of-grand"
+        id: "2024-09-20t21-43-00-the-basic-of-cersei"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44432,7 +44432,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-09-19t17-14-24-the-wump-of-grand",
+                release: "2024-09-20t21-43-00-the-basic-of-cersei",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
