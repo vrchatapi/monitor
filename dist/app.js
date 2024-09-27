@@ -1,4 +1,4 @@
-/*! For license information please see "2024-09-24t17-53-56-the-zipper-of-samuel--main-prod-public-4c111b27-4419-4aab-aee7-5c39e5ae7993--app.js.LICENSE.txt" */
+/*! For license information please see "2024-09-26t22-57-06-the-zinger-of-duncan--main-prod-public-bb4224ad-440e-40ab-883f-9d3b8409d4ef--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-24t17-53-56-the-zipper-of-samuel", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-09-26t22-57-06-the-zinger-of-duncan", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -18640,6 +18640,7 @@
                     FQ: () => g,
                     Ko: () => p,
                     Yh: () => m,
+                    _h: () => v,
                     eV: () => y,
                     g3: () => h,
                     sR: () => A
@@ -18753,6 +18754,25 @@
                                         }]
                                     }
                                 }),
+                                getStickerByUserId: e.query({
+                                    query: function(e) {
+                                        return {
+                                            url: "files",
+                                            params: {
+                                                n: 100,
+                                                offset: 0,
+                                                tag: "sticker",
+                                                userId: e.userId
+                                            }
+                                        }
+                                    },
+                                    providesTags: function(e, t, n) {
+                                        return [{
+                                            type: "UserStickers",
+                                            id: n.userId
+                                        }]
+                                    }
+                                }),
                                 getFile: e.query({
                                     query: function(e) {
                                         return "file/".concat(e)
@@ -18843,6 +18863,9 @@
                                         }, {
                                             type: "UserEmoji",
                                             id: a
+                                        }, {
+                                            type: "UserStickers",
+                                            id: a
                                         }].concat((0, o.Z)(e ? [{
                                             type: "File",
                                             id: e.id
@@ -18876,6 +18899,9 @@
                                         }, {
                                             type: "UserIcons",
                                             id: a
+                                        }, {
+                                            type: "UserStickers",
+                                            id: a
                                         }]
                                     }
                                 })
@@ -18891,7 +18917,8 @@
                     h = (d.useGetFilesQuery, d.useDeleteFileMutation),
                     A = d.useGetIconsByUserIdQuery,
                     g = d.useGetGalleryPicturesByUserIdQuery,
-                    y = d.useGetEmojiByUserIdQuery
+                    y = d.useGetEmojiByUserIdQuery,
+                    v = d.useGetStickerByUserIdQuery
             },
             86791: (e, t, n) => {
                 "use strict";
@@ -42763,9 +42790,9 @@
     }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((t, n) => (s.f[n](e, t), t)), [])), s.u = e => ({
         147: "359f15b13cc30051744d04c6754970581dafd2bb1ce71c891b5d4b0ab3ec3093",
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
-        347: "787ca0f0c5e59dc676626433ba96ae566b1309f393bb1f22844daddede84b890",
+        347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "965f3f6bf619860cb14ccef373f44a287ce36f221917bf992140e027a3056bc7",
+        430: "e340dc8871b21fd66c4819058efaebdb82f5c599712cf0c3cf6314c3173d5843",
         587: "22741cbe8191b53745613f874ebd5b25dff04b138deea9a8629f39b809a43a01",
         877: "994cb93a57b20bb96b20f6e628806b2f541270270c294c489485e6aea828101d",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
@@ -42773,7 +42800,6 @@
         989: "e05edcd7827ff022a2e901fa0ff48503b4cf47e7a4faa867a7634880659ee8af",
         997: "d5c2089e944b4c0764a1f5f61c88518a5e75bbf5c168c7b85693376c16c6b9e7",
         1264: "821111c1b35010955d4ff1a2f806bcc15c443d0038ce4d4c70e04cdf1aa01084",
-        1285: "93c2922b8b9a708c6742d3daf8e6b047b56c0e208e651be30f26a80b433cf2a6",
         1310: "02480f75df565a8d010e10b10e755cf01fad4229901b33fa548f863a9eca8a74",
         1364: "97d6ac3a69a9ed29e41b2151c86dfe5d320f65fc476b95c9440c8a862a399391",
         1395: "b83d81144cb37066d16b05c74b14b1867b51897a4226f95e69825995191c5501",
@@ -42802,10 +42828,11 @@
         4058: "57a7128b367dbd58a02205b8375f14208eca1f094908343e374dba1ab3f23d29",
         4061: "fe5735343cdc466de973bc5f6022da622943a522cee6db2efbc952361117ad85",
         4157: "eb7ac6b4399fee9ce5f3ac6fd47cc7db01e39c940e33109aa0bf9c0abdad8264",
-        4353: "9a1ee0772777dca887e56eb153c3faed80a287ad4dce48d13874c8aca0649176",
+        4353: "9adc0592f52c05567d51ec4a49c7795ac8251f6b360056573ffdc53c22c776b5",
         4376: "fca4fdf671f6a3f9451877fad67b50346ed1795a943e752ea56f22f8f4b0192c",
         4444: "e7a9550df2eff49c883bef3e3daadff0baf499e2482227087dcad62c11974e1f",
         4673: "c5653321f3d7a63a67d8e503d642b02b6f9c2a652038076dd915413a3cd1b830",
+        4715: "dfe83a81cb640fb9ae26df1240b059ce879ab69dfb8dc4fc5d8824fd6ff8410c",
         4734: "acd869d42a3c91b40db4c8d0c4727690e8e1e832822960d609f34efe59f247a6",
         4896: "606ceffae4331b6b7da1b733618815ff645088410b425a6bc20c21093b41cea2",
         4945: "679fc54342d5eedca79e1d7cef5eb9803ec5ab7845ae45674e9912a6dc1aa0f0",
@@ -42813,23 +42840,23 @@
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5142: "ba706cc9e2b927d547444b111b42cf23aa5e1dabf51ece32d53731c4e78bcf04",
         5147: "7a9cf4b058e7890d933344e2deedda6bba54f296db44859bee372161a2c00265",
-        5171: "96a3a9a4ef6d26d488a1b70679b283a6cd7a75bbfa6e73c701ea6044e04e8f65",
+        5171: "429d417d55cb4ada1bf0653b8c59430a0b265307dbb4fc67e1ebdd90adb8018f",
         5391: "52e61d6e3f53f454c826e413dff8aa1bf3a9fc3266a5cec2460fc799a3f5ae53",
         5460: "78a5cccdf8d475066bcc770b80a6e81852e1bf09c5aa542d5f17f080774a823c",
         5508: "26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa",
         5737: "54719bdbd729f8c67ba424a31f547eab7e4fbf4c3bd965a4531ab8ebe24b322f",
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
-        5939: "2fe7a66ae000cc717fee189d724ea75d097dd86538d468aa5442c9e657b37222",
+        5939: "10e0515a298c48987bd360ad1f07dc54be9bc85e7c5dc62674f478913ddd0bfb",
         6077: "0c2a837e2698407ed05e820af3c2194b16fee10af73ababe3ce56bd0691d2b19",
         6231: "fe9e34c4b87399840cf4e5d2c5a790376d38925cbf832226cca914a8f01b0c94",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6418: "a0bd0847f4000dc4a5d4fa9439894909c85a0647b330db8871638385dd713a00",
-        6488: "8e43802a86de45b338c83d4f708cd365b59b459b6258efb9b0e5103275a98632",
+        6488: "0f9b626bb1f8e3bff8c871dd5077c7017761bffb742f262554a66fc5657e3f71",
         6572: "d10c7dcbc3329c383bd7c2e4ba198cf0da2ce025320d51f1004e71bd5e1c7e91",
         6627: "43dfc4635020b22ace62e8af017f05b25538b69106ff722c1920f6e8a206f967",
         6681: "adc0de51c9936347622180af2a8fe1ee0359fc2c05e16c91134e60b4719a895e",
         6736: "eea514dd208b3e7946c00185d57794fb04a5cf9a752f7288323ff2e8f483c8eb",
-        6780: "2e16a252e65e01978e5089152bbf5f45fa8d3c4aa6f720874ed3d2398fcca943",
+        6780: "b18ba50182c7fe21ea54d8f009fac9a00d1f298dd514946a6ad37a29c50cfce0",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
@@ -42840,7 +42867,7 @@
         7378: "f135b9d6044bd45decadfe5d1da2d9bbd9b492d9970bd3185556fbb592e0e291",
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "044466b35da79be545daa9be0b7edd1718a9188264b295cf94d991473908e62b",
-        7850: "f9fff97761f141816654b224d062c21811f262a88abb04ea462b4397391760be",
+        7850: "eec8bc6b1eb4fd3d96e127aff88850ba320eef6ec05ad3281a819766520b354a",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42848,14 +42875,14 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "3bf3af1e1517f177afc8e3349b8da23bb728c72a24b90674c89489d304e0bd18",
+        8744: "244b58608e64ac4256fdee080a70014201e7ee13bb27bf5f7bc29d486b5c2b46",
         8755: "7649e9573e635d0525ca2c0b76ddaa852af6dc45482a31ab2209c6532c769d8f",
         8874: "448fb93333f707ddd7f6665a41247c1e60b0520289bb2f4d0bc4809cf8745dcb",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
-        9037: "7d2cada7ee6ac316cade67a6ba0afd64761e0444bc68b0f9fa3204197a07a43c",
+        9037: "56d43d63bc8534ff70efd80a3f6a953bc5f191fdf4c853c32124e2f7d070edf0",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "ffc878187fab6302b338c4cae7915c6ff43a9ba25b0583c8666de61634de3b28",
+        9323: "5b32fa7f4bff52f4f54ed1719a03d600afe577e3463f4f13081a78c1d35e8383",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9449: "75b3de3e79b6c339e4d9dfc22aa66a7338cff3edbe17acf570fa9701a57ff9bb",
@@ -42865,7 +42892,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "c5b442b5f4b643135e1ff183bb7208c6abcc8524b199ce2317721f1266bca338"
+        9989: "420de2ae2144e3eb402f81bcc035779438a7eda3709f96c4f4343575b1f0a2de"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42942,9 +42969,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-09-24t17-53-56-the-zipper-of-samuel"
+        id: "2024-09-26t22-57-06-the-zinger-of-duncan"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-09-24t17-53-56-the-zipper-of-samuel"
+        id: "2024-09-26t22-57-06-the-zinger-of-duncan"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44489,7 +44516,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-09-24t17-53-56-the-zipper-of-samuel",
+                release: "2024-09-26t22-57-06-the-zinger-of-duncan",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
