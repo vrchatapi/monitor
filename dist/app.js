@@ -1,4 +1,4 @@
-/*! For license information please see "2024-10-04t18-33-28-the-initiative-of-bologna--main-prod-public-07518830-b03e-4211-8406-5478112dd75d--app.js.LICENSE.txt" */
+/*! For license information please see "2024-10-09t23-46-58-the-bass-of-brincely--main-prod-public-b66dec36-feea-41bd-afb2-368feb9a7ca5--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-04t18-33-28-the-initiative-of-bologna", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-09t23-46-58-the-bass-of-brincely", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42792,7 +42792,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "2482cd503e64adda10d520aaa9470fa169c514aba0f9d7606570eb093f7110e7",
+        430: "9fd22a5118090e0ee6835df03879567d7ae0c00e3c05bc09963f2ae74583b665",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
@@ -42809,6 +42809,7 @@
         1810: "3ae53dae1c5062ba2e4084308c9c46ce7153e370655970a8ade15d8d69cbcc13",
         1952: "1a391cc23affc4c6bef3ca93492da6b1c59fdc11bedee416919948e96603d591",
         1968: "d92700102f48d6f745410d7266f021db88ba7441927b0a45643904c4b49a5702",
+        2045: "78ed7267c7f8017851f9bd86501d5659b080dde2ed64d91e714131e82a30da33",
         2295: "fbca317f85f130a5634e42967595752a459786c9e1c0423ceb3257407737b6d0",
         2315: "7ff3530fcb4acbb31badd0efcb146da467b7922b0e4166dadb1cf966a51944dc",
         2432: "34520f84d671827eaa7a3773bd7993cec6d977160483ef772af99f55fef076d5",
@@ -42828,29 +42829,28 @@
         4058: "57a7128b367dbd58a02205b8375f14208eca1f094908343e374dba1ab3f23d29",
         4061: "fe5735343cdc466de973bc5f6022da622943a522cee6db2efbc952361117ad85",
         4157: "eb7ac6b4399fee9ce5f3ac6fd47cc7db01e39c940e33109aa0bf9c0abdad8264",
-        4353: "9adc0592f52c05567d51ec4a49c7795ac8251f6b360056573ffdc53c22c776b5",
+        4353: "ff854b32eded6257175c0967606175a53fbc851c7ae9ed407c2c5cbc42a6fa40",
         4376: "fca4fdf671f6a3f9451877fad67b50346ed1795a943e752ea56f22f8f4b0192c",
         4444: "e7a9550df2eff49c883bef3e3daadff0baf499e2482227087dcad62c11974e1f",
         4673: "c5653321f3d7a63a67d8e503d642b02b6f9c2a652038076dd915413a3cd1b830",
-        4715: "dfe83a81cb640fb9ae26df1240b059ce879ab69dfb8dc4fc5d8824fd6ff8410c",
-        4734: "ccb5abdf61ae4a204792be15f65f6ea05c65a278332ab37b0cecd562ddbbdc23",
+        4734: "4ab3c9d61c3ddfa8493283089a8d23a6f7b25c2d535ae1c5f98e0f113a580148",
         4896: "606ceffae4331b6b7da1b733618815ff645088410b425a6bc20c21093b41cea2",
         4945: "679fc54342d5eedca79e1d7cef5eb9803ec5ab7845ae45674e9912a6dc1aa0f0",
         5039: "f9d60fd4b64f38de71d5f4fbada789d8e07dee288f314f407c474b6b7c7080d9",
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5142: "ba706cc9e2b927d547444b111b42cf23aa5e1dabf51ece32d53731c4e78bcf04",
         5147: "7a9cf4b058e7890d933344e2deedda6bba54f296db44859bee372161a2c00265",
-        5171: "f02539a70bdb756d4ee9161482d114cda242a3f2d3422cd82d7f11b9df82ad22",
+        5171: "c430303de32a241a9b093bc3b19b6da74269327dbcfb4430175a3be17dcd5508",
         5391: "52e61d6e3f53f454c826e413dff8aa1bf3a9fc3266a5cec2460fc799a3f5ae53",
         5460: "78a5cccdf8d475066bcc770b80a6e81852e1bf09c5aa542d5f17f080774a823c",
         5508: "26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa",
         5737: "54719bdbd729f8c67ba424a31f547eab7e4fbf4c3bd965a4531ab8ebe24b322f",
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
-        5939: "10e0515a298c48987bd360ad1f07dc54be9bc85e7c5dc62674f478913ddd0bfb",
+        5939: "981e8a8da2fb3bd9c78419d687ca7560ea5418c1a4dd014c55fa45e668a8b794",
         6077: "0c2a837e2698407ed05e820af3c2194b16fee10af73ababe3ce56bd0691d2b19",
         6231: "fe9e34c4b87399840cf4e5d2c5a790376d38925cbf832226cca914a8f01b0c94",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
-        6488: "0f9b626bb1f8e3bff8c871dd5077c7017761bffb742f262554a66fc5657e3f71",
+        6488: "5c319314e3301f44e8fd37671cd827962e3d77ba773ffff8799330fcae19a1cd",
         6572: "d10c7dcbc3329c383bd7c2e4ba198cf0da2ce025320d51f1004e71bd5e1c7e91",
         6627: "43dfc4635020b22ace62e8af017f05b25538b69106ff722c1920f6e8a206f967",
         6681: "adc0de51c9936347622180af2a8fe1ee0359fc2c05e16c91134e60b4719a895e",
@@ -42867,7 +42867,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "044466b35da79be545daa9be0b7edd1718a9188264b295cf94d991473908e62b",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "f6df00ef6965690a5da164267bad8e0be52368b062b0e95830bd75042df3421a",
+        7850: "cbf6727d851d2bc9e8fb16ec11fe0034a911fb2d9ad83ed59cb54ba43183d31a",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42875,15 +42875,15 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "710ac7a316b184be390ce46d6bfb9b6575c66243322394454cb145e6cbc53f7e",
+        8744: "4f34a7bea586093f98be19775c31020d0e4cb9e0b9bf1ca68501ee3de42fa926",
         8755: "7649e9573e635d0525ca2c0b76ddaa852af6dc45482a31ab2209c6532c769d8f",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "4435e01634a4db9c89c476e2f8d526e26ad9d82677abf498eb0e9a8d461dd08f",
+        9037: "e672685ea553a0eec184e1f9687e18dd64fd9c727409a5d53c3937e6a7409a62",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "236f3dc1307bc1965b3a1247c2710b392501a54865c471a89a1e9771373ac4d1",
+        9323: "7621fc9b4903fc25004c6c03ab2ffef5087391b4a6583afe7cae916a666b2969",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9690: "79f4e1949178f01941d4d14980e60ee07b4d7ab675799f7f8d17cbffb7a11bdf",
@@ -42892,7 +42892,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "78a4f8cd6dedddfe533c1b6967b0229964bde76ec001b8236726c5be04a3c6d7"
+        9989: "da85e78660269fec8446bba497f30d60a3bb64d4c732dc0384237575df7865fa"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42969,9 +42969,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-10-04t18-33-28-the-initiative-of-bologna"
+        id: "2024-10-09t23-46-58-the-bass-of-brincely"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-10-04t18-33-28-the-initiative-of-bologna"
+        id: "2024-10-09t23-46-58-the-bass-of-brincely"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44516,7 +44516,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-10-04t18-33-28-the-initiative-of-bologna",
+                release: "2024-10-09t23-46-58-the-bass-of-brincely",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
