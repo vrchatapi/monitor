@@ -1,4 +1,4 @@
-/*! For license information please see "2024-10-23t23-51-16-the-pound-of-pogo--main-prod-public-d7730188-62b4-4a93-929f-b1b5c5a885aa--app.js.LICENSE.txt" */
+/*! For license information please see "2024-10-24t18-41-20-the-juggle-of-morbo--main-prod-public-8751f563-e296-4efd-91d8-b69c35d623b5--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-23t23-51-16-the-pound-of-pogo", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-24t18-41-20-the-juggle-of-morbo", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42792,7 +42792,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "5c3d1d5808684efe563babe963a665063c205ec117c87dfd865f7688be18bf64",
+        430: "4bd08e212de75c210750f00641bde50e3f73c541a306af3cf65ef4365da61bec",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
@@ -42840,7 +42840,7 @@
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5142: "ba706cc9e2b927d547444b111b42cf23aa5e1dabf51ece32d53731c4e78bcf04",
         5147: "7a9cf4b058e7890d933344e2deedda6bba54f296db44859bee372161a2c00265",
-        5171: "5503e8937a8808550091d461a1212c25a16847b2f48905ae0ed5c6c06b8d740e",
+        5171: "ba8f097ace8b11104c5f37e3bcb693fd2e67628e72a05397c4a1c28d15f51cdf",
         5391: "52e61d6e3f53f454c826e413dff8aa1bf3a9fc3266a5cec2460fc799a3f5ae53",
         5460: "78a5cccdf8d475066bcc770b80a6e81852e1bf09c5aa542d5f17f080774a823c",
         5508: "26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa",
@@ -42867,7 +42867,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "f25cefa05a3ae67dbb1a8fdcf11824f57feaf7105a38afc5dc51a580d214ff31",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "b64b5dfc6bf5cd43d8667f68bdde7dfff5fbd009209294d6df425decc100f41b",
+        7850: "1905225673a25af550f9629193a22c30bf6b67d4cb0bf9a8dc93ece7f9e7b80d",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42875,15 +42875,15 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "90246b10135ef5890cc03d91370612c27c3843b20d34d551ca2c1838206b5483",
+        8744: "74e10930b817944c7d6d76f605798283dda2e53ad55dec321e24627241b03ce1",
         8755: "e7f70c10cef8ffef89a10b5d57334ef6afa3dfd5461057ce3eed0780876826da",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "a468780fe104c851273bdbb4c54ac9d213cada9c6216e56a8eb00be139b199b8",
+        9037: "ee7b8bbc0e69061f617803f11692e3717846b0b93d8bd628682c047d7ecd2b88",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "fbeede2273c163b99a8a8039efd991e5c1f24c19f5c13c78c50076f31f516595",
+        9323: "76ecf447cb9b8394519d466bf8e3ceef6989913903e8eda0b57a21b606583de5",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9690: "79f4e1949178f01941d4d14980e60ee07b4d7ab675799f7f8d17cbffb7a11bdf",
@@ -42892,7 +42892,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "cafe16e9c474739fd0416f3bcdeece0988e68e522b8fa74565646dd422fe665c"
+        9989: "2e80cb5be096184340aacb25641d209a68f94e2a432888ddcbe02bfe47300131"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42969,9 +42969,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-10-23t23-51-16-the-pound-of-pogo"
+        id: "2024-10-24t18-41-20-the-juggle-of-morbo"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-10-23t23-51-16-the-pound-of-pogo"
+        id: "2024-10-24t18-41-20-the-juggle-of-morbo"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -43191,27 +43191,37 @@
                         t.dispatch((0, E.kO)(j));
                         var U = null == j ? void 0 : j.userId;
                         if (!U || U !== (null == o ? void 0 : o.id)) break;
+                        var M = function(e) {
+                            switch (e) {
+                                case "offline:offline":
+                                    return "offline";
+                                case "traveling:traveling":
+                                    return "traveling";
+                                default:
+                                    return e
+                            }
+                        }(j.location);
                         t.dispatch(A.D5.updateQueryData("getCurrentUser", void 0, (function(e) {
                             var t;
-                            e.state = "offline" === j.location ? "active" : "online", e.location = j.location, e.worldId = null === (t = j.world) || void 0 === t ? void 0 : t.id
+                            e.state = "offline" === M ? "active" : "online", e.location = M, e.worldId = null === (t = j.world) || void 0 === t ? void 0 : t.id
                         }))), t.dispatch(k.ZP.util.updateQueryData("getUser", U, (function(e) {
                             var t;
-                            e.state = "offline" === j.location ? "active" : "online", e.location = j.location, e.worldId = null === (t = j.world) || void 0 === t ? void 0 : t.id
+                            e.state = "offline" === M ? "active" : "online", e.location = M, e.worldId = null === (t = j.world) || void 0 === t ? void 0 : t.id
                         })));
                         break;
                     case "user-badge-assigned":
-                        var M = JSON.parse(e.content),
-                            q = null == M ? void 0 : M.badge;
+                        var q = JSON.parse(e.content),
+                            G = null == q ? void 0 : q.badge;
                         t.dispatch(A.D5.updateQueryData("getCurrentUser", void 0, (function(e) {
-                            e.badges.push(q)
+                            e.badges.push(G)
                         })));
                         break;
                     case "user-badge-unassigned":
-                        var G = JSON.parse(e.content),
-                            z = null == G ? void 0 : G.badgeId;
+                        var z = JSON.parse(e.content),
+                            Y = null == z ? void 0 : z.badgeId;
                         t.dispatch(A.D5.updateQueryData("getCurrentUser", void 0, (function(e) {
                             e.badges = e.badges.filter((function(e) {
-                                return e.badgeId !== z
+                                return e.badgeId !== Y
                             }))
                         })));
                         break;
@@ -44516,7 +44526,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-10-23t23-51-16-the-pound-of-pogo",
+                release: "2024-10-24t18-41-20-the-juggle-of-morbo",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
