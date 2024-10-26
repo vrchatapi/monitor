@@ -1,4 +1,4 @@
-/*! For license information please see "2024-10-24t18-41-20-the-juggle-of-morbo--main-prod-public-8751f563-e296-4efd-91d8-b69c35d623b5--app.js.LICENSE.txt" */
+/*! For license information please see "2024-10-25t21-18-04-the-claw-of-prince--main-prod-public-2f031f76-cf2a-4c80-96b8-3169bf971468--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-24t18-41-20-the-juggle-of-morbo", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-25t21-18-04-the-claw-of-prince", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -13449,8 +13449,8 @@
             50048: (e, t, n) => {
                 "use strict";
                 n.d(t, {
-                    Mt: () => d,
-                    Sn: () => g,
+                    Mt: () => p,
+                    Sn: () => v,
                     ZP: () => l
                 });
                 var r = n(87462),
@@ -13458,80 +13458,95 @@
                     a = n(4965),
                     i = n(83505),
                     s = n(67294),
-                    c = ["loading", "neutral", "danger", "warning", "positive", "accent", "expand", "containerStyles"];
+                    c = ["loading", "neutral", "danger", "warning", "positive", "accent", "transparent", "expand", "containerStyles"];
                 const l = (0, s.forwardRef)((function(e, t) {
                     var n = e.loading,
                         a = e.neutral,
                         i = e.danger,
                         l = e.warning,
                         u = e.positive,
-                        p = e.accent,
-                        f = e.expand,
-                        m = e.containerStyles,
-                        h = (0, o.Z)(e, c);
-                    return s.createElement(d, {
-                        styleOverrides: m,
-                        expand: f
-                    }, s.createElement(g, (0, r.Z)({}, h, {
+                        d = e.accent,
+                        f = e.transparent,
+                        m = e.expand,
+                        h = e.containerStyles,
+                        A = (0, o.Z)(e, c);
+                    return s.createElement(p, {
+                        styleOverrides: h,
+                        expand: m,
+                        transparent: f
+                    }, s.createElement(v, (0, r.Z)({}, A, {
                         ref: t,
                         neutral: a,
                         danger: i,
                         positive: u,
                         warning: l,
-                        accent: p
-                    })), n && s.createElement(v, null))
+                        accent: d,
+                        transparent: f
+                    })), n && s.createElement(w, null))
                 }));
                 var u = {
+                        name: "1cmd5h4",
+                        styles: "margin:-5px"
+                    },
+                    d = {
                         name: "1ff36h2",
                         styles: "flex-grow:1"
                     },
-                    d = (0, a.Z)("div", {
+                    p = (0, a.Z)("div", {
                         target: "e7cdgnz2"
                     })("position:relative;overflow:hidden;border-radius:4px;display:flex;", (function(e) {
-                        return e.expand ? u : ""
+                        return e.expand ? d : ""
+                    }), " ", (function(e) {
+                        return e.transparent ? u : ""
                     }), " ", (function(e) {
                         return e.styleOverrides
                     }), ";"),
-                    p = {
+                    f = {
+                        name: "1bmp4fd",
+                        styles: "background:transparent;border-color:transparent"
+                    },
+                    m = {
                         name: "1vpfjah",
                         styles: "background:#064b5c;color:#6ae3f9;&:hover,&:active,&:focus{border:#032b35 solid 2px;}"
                     },
-                    f = {
+                    h = {
                         name: "mdb93m",
                         styles: "border:#2fb81d07 solid 2px;background:#2fb81d3f;color:white;&:hover,&:active,&:focus{border-color:green;}"
                     },
-                    m = {
+                    A = {
                         name: "1p2awra",
                         styles: "border:#a8342e solid 2px;background:#a8342e;color:#fff;&:hover,&:active,&:focus{border-color:red;}"
                     },
-                    h = {
+                    g = {
                         name: "o3gnh8",
                         styles: "border:#a8592e solid 2px;background:#a8652e;color:#fff;&:hover,&:active,&:focus{border-color:#f16814;}"
                     },
-                    A = {
+                    y = {
                         name: "1untqw2",
                         styles: "border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:#fff;&:hover,&:active,&:focus{border-color:hsl(0, 0%, 40%);}"
                     },
-                    g = (0, a.Z)("button", {
+                    v = (0, a.Z)("button", {
                         target: "e7cdgnz1"
                     })("border:#064b5c solid 2px;border-radius:4px;background:#064b5c;color:#6ae3f9;padding:5px 5px;box-sizing:border-box;outline:none!important;flex:1;&:hover,&:active,&:focus{border-color:#086c84;}", (function(e) {
-                        return e.neutral ? A : ""
+                        return e.neutral ? y : ""
                     }), " ", (function(e) {
-                        return e.warning ? h : ""
+                        return e.warning ? g : ""
                     }), " ", (function(e) {
-                        return e.danger ? m : ""
+                        return e.danger ? A : ""
                     }), " ", (function(e) {
-                        return e.positive ? f : ""
+                        return e.positive ? h : ""
                     }), " ", (function(e) {
-                        return e.accent ? p : ""
+                        return e.accent ? m : ""
+                    }), " ", (function(e) {
+                        return e.transparent ? f : ""
                     }), " &:disabled{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);&:hover{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);}}"),
-                    y = (0, i.F4)({
+                    b = (0, i.F4)({
                         name: "1tmxvmc",
                         styles: "0%{left:-100%;width:80%;}100%{left:100%;width:40%;}"
                     }),
-                    v = (0, a.Z)("div", {
+                    w = (0, a.Z)("div", {
                         target: "e7cdgnz0"
-                    })("position:absolute;z-index:10;bottom:0;height:2px;background-color:var(--bs-success);animation-name:", y, ";animation-iteration-count:infinite;animation-duration:1.5s;animation-timing-function:ease-in-out;")
+                    })("position:absolute;z-index:10;bottom:0;height:2px;background-color:var(--bs-success);animation-name:", b, ";animation-iteration-count:infinite;animation-duration:1.5s;animation-timing-function:ease-in-out;")
             },
             18461: (e, t, n) => {
                 "use strict";
@@ -42792,13 +42807,13 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "4bd08e212de75c210750f00641bde50e3f73c541a306af3cf65ef4365da61bec",
+        430: "9c418802accb133c7c160f2dbc09a6896045f8ea6a5e3ca24505114ac98b3b0b",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
         989: "e05edcd7827ff022a2e901fa0ff48503b4cf47e7a4faa867a7634880659ee8af",
         997: "d5c2089e944b4c0764a1f5f61c88518a5e75bbf5c168c7b85693376c16c6b9e7",
-        1202: "9b73060e1c44725761d7148531537fcddbace47f87af9a967938c1e0999def4b",
+        1259: "4147fd4cc2aa806ed4268edaef41c5aaad96cc467522e97d3dc6c3e00a59db71",
         1264: "821111c1b35010955d4ff1a2f806bcc15c443d0038ce4d4c70e04cdf1aa01084",
         1310: "02480f75df565a8d010e10b10e755cf01fad4229901b33fa548f863a9eca8a74",
         1364: "97d6ac3a69a9ed29e41b2151c86dfe5d320f65fc476b95c9440c8a862a399391",
@@ -42826,38 +42841,39 @@
         3825: "37a1cf6b9054ac05fec52f7eb2e289487d589f18345da1c9519a99a731457578",
         3929: "cbf7ca32d5de7abb9ad741b37e97823428160589541561b04cc7a79267dface0",
         4004: "d4adf164bac4298eae75f68270990973cbb6ed4c14a725f18c69fa231c71fdc4",
-        4058: "57a7128b367dbd58a02205b8375f14208eca1f094908343e374dba1ab3f23d29",
+        4058: "d49222e48d69130d5ab5d07d40ce455f64410efecf581b37075a2476f3764e3c",
         4061: "fe5735343cdc466de973bc5f6022da622943a522cee6db2efbc952361117ad85",
         4157: "eb7ac6b4399fee9ce5f3ac6fd47cc7db01e39c940e33109aa0bf9c0abdad8264",
         4353: "ff854b32eded6257175c0967606175a53fbc851c7ae9ed407c2c5cbc42a6fa40",
         4376: "fca4fdf671f6a3f9451877fad67b50346ed1795a943e752ea56f22f8f4b0192c",
         4444: "e7a9550df2eff49c883bef3e3daadff0baf499e2482227087dcad62c11974e1f",
         4673: "c5653321f3d7a63a67d8e503d642b02b6f9c2a652038076dd915413a3cd1b830",
-        4734: "4ab3c9d61c3ddfa8493283089a8d23a6f7b25c2d535ae1c5f98e0f113a580148",
+        4734: "d3d7936fbce4003eb0fe4caeb7b1ef3c5d10bdc493d97c6632f6ca693ed2fb32",
         4896: "606ceffae4331b6b7da1b733618815ff645088410b425a6bc20c21093b41cea2",
         4945: "679fc54342d5eedca79e1d7cef5eb9803ec5ab7845ae45674e9912a6dc1aa0f0",
         5039: "f9d60fd4b64f38de71d5f4fbada789d8e07dee288f314f407c474b6b7c7080d9",
         5082: "97110b643bcb7d60c7527abadd9ef1907a2969a4fd378efbf245f0bd0ba788f7",
         5142: "ba706cc9e2b927d547444b111b42cf23aa5e1dabf51ece32d53731c4e78bcf04",
         5147: "7a9cf4b058e7890d933344e2deedda6bba54f296db44859bee372161a2c00265",
-        5171: "ba8f097ace8b11104c5f37e3bcb693fd2e67628e72a05397c4a1c28d15f51cdf",
+        5171: "dae0b8b975212656198625b08b1f589485f3975605416ce9bd8a991c4a997dd0",
         5391: "52e61d6e3f53f454c826e413dff8aa1bf3a9fc3266a5cec2460fc799a3f5ae53",
         5460: "78a5cccdf8d475066bcc770b80a6e81852e1bf09c5aa542d5f17f080774a823c",
         5508: "26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa",
         5737: "54719bdbd729f8c67ba424a31f547eab7e4fbf4c3bd965a4531ab8ebe24b322f",
+        5778: "faf5760ba6fc3dcde41c9f531f499d790814b8d32b29e043ebb13fbc804c84e3",
         5909: "e6e1ec99a5a27171e1e1f7bb973b18507e12480fa44c3e4bc5103ce9b9fdd632",
         5939: "981e8a8da2fb3bd9c78419d687ca7560ea5418c1a4dd014c55fa45e668a8b794",
         6077: "0c2a837e2698407ed05e820af3c2194b16fee10af73ababe3ce56bd0691d2b19",
         6231: "fe9e34c4b87399840cf4e5d2c5a790376d38925cbf832226cca914a8f01b0c94",
         6394: "2c6b30fdf6c2fa004f4a288d92312c7529fb133a905addce68b8566ace765287",
         6488: "5c319314e3301f44e8fd37671cd827962e3d77ba773ffff8799330fcae19a1cd",
-        6572: "d10c7dcbc3329c383bd7c2e4ba198cf0da2ce025320d51f1004e71bd5e1c7e91",
         6627: "43dfc4635020b22ace62e8af017f05b25538b69106ff722c1920f6e8a206f967",
         6681: "adc0de51c9936347622180af2a8fe1ee0359fc2c05e16c91134e60b4719a895e",
         6736: "eea514dd208b3e7946c00185d57794fb04a5cf9a752f7288323ff2e8f483c8eb",
         6780: "57e53af541ebaafd2589a760b4b36eeb085a0b9701eae52fa0851b0d67d498db",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
+        6883: "e3bcb6e99f3d53ff560be699d64f27c9169de528fcee47208f3cb63d60f8ef54",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
         7047: "9abb7d3876c0c3871c128bf7fe95a1a5db67c70cd69f00eac0e119a615a6e062",
         7063: "bff163ab1515a8081544d6bc1a55a7be177a6db6a0d0e7ea1663ac009ac6b2d0",
@@ -42867,7 +42883,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "f25cefa05a3ae67dbb1a8fdcf11824f57feaf7105a38afc5dc51a580d214ff31",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "1905225673a25af550f9629193a22c30bf6b67d4cb0bf9a8dc93ece7f9e7b80d",
+        7850: "23415ef32f1f8b51599f75b9ec931c2417cb10ca7a8c1afafa8f30eb51379584",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8306: "c7d7631c881b98d0b2458de76f2090354038835c84a5e15af6b528d61f881f1c",
@@ -42875,15 +42891,13 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "74e10930b817944c7d6d76f605798283dda2e53ad55dec321e24627241b03ce1",
-        8755: "e7f70c10cef8ffef89a10b5d57334ef6afa3dfd5461057ce3eed0780876826da",
+        8744: "87d38b430bc616342be264c6d48955ebf1df21aceed0f1462c5bef9d43cc4200",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "ee7b8bbc0e69061f617803f11692e3717846b0b93d8bd628682c047d7ecd2b88",
+        9037: "2f6b2e68b856996733b67b04bd3961981fa5531d99fbc7423ad6a669b4e23481",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
-        9288: "73844184c6f42ee8977ce44939271c5199af043aa3f901ad7032520d2e7c359a",
-        9323: "76ecf447cb9b8394519d466bf8e3ceef6989913903e8eda0b57a21b606583de5",
+        9327: "482a3672714b416e783635e22560a092ed8bb523747f4c8f737b0987ac74aef9",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
         9435: "cabf5082b3a2b2e6765ac3fb5e258f6b24a49559c304a9e43f01f4e3fd6f74fa",
         9690: "79f4e1949178f01941d4d14980e60ee07b4d7ab675799f7f8d17cbffb7a11bdf",
@@ -42892,7 +42906,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "2e80cb5be096184340aacb25641d209a68f94e2a432888ddcbe02bfe47300131"
+        9989: "736de8ce97e5205094f50484d2e52ac62fd24ffece9c44ce50ed4e6101608fcc"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42969,9 +42983,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-10-24t18-41-20-the-juggle-of-morbo"
+        id: "2024-10-25t21-18-04-the-claw-of-prince"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-10-24t18-41-20-the-juggle-of-morbo"
+        id: "2024-10-25t21-18-04-the-claw-of-prince"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44526,7 +44540,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-10-24t18-41-20-the-juggle-of-morbo",
+                release: "2024-10-25t21-18-04-the-claw-of-prince",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -49269,7 +49283,7 @@
                 return Promise.all([s.e(5147), s.e(1400), s.e(9395)]).then(s.bind(s, 99395))
             })),
             Io = r.lazy((function() {
-                return Promise.all([s.e(9323), s.e(4058)]).then(s.bind(s, 94058))
+                return Promise.all([s.e(6883), s.e(4058)]).then(s.bind(s, 94058))
             })),
             So = r.lazy((function() {
                 return Promise.all([s.e(9989), s.e(7071), s.e(1400), s.e(7508)]).then(s.bind(s, 7508))
