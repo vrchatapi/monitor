@@ -41679,7 +41679,8 @@
                                                 const r = n(e, t);
                                                 return void 0 === r ? e : r
                                             }
-                                            if ((0, s.o$)(e)) return (0, s.Uy)(e, (e => n(e, t))); {
+                                            if ((0, s.o$)(e)) return (0, s.Uy)(e, (e => n(e, t)));
+                                            {
                                                 const r = n(e, t);
                                                 if (void 0 === r) {
                                                     if (null === e) return e;
