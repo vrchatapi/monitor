@@ -11,15 +11,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@ariesclark/eslint-config": "^1.5.0",
-    "@types/node": "^18.15.13",
-    "eslint": "^8.39.0",
-    "js-beautify": "^1.14.7",
-    "node-fetch": "^3.3.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "@ariesclark/eslint-config": "^3.0.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "js-beautify": "^1.15.1",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
-    "vrchat": "^1.11.1"
+    "@babel/parser": "^7.26.2",
+    "@babel/traverse": "^7.25.9",
+    "vrchat": "^1.18.6"
   }
 }
