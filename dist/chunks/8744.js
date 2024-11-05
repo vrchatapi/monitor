@@ -1,4 +1,4 @@
-/*! For license information please see "2024-10-31t23-00-48-the-mayonnaise-of-prince--main-prod-public-cc836ac8-77e8-47ff-bd1f-b6c4c79211ab--a8c3020803b7862068cdef1400b4e24976412e76442b74db9728cfca499048b9.js.LICENSE.txt" */
+/*! For license information please see "2024-11-05t22-13-40-the-vim-of-january--main-prod-public-fd6fa097-9323-42b3-a77e-9dd8086ff6dc--5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560.js.LICENSE.txt" */
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [8744], {
         44814: (e, t) => {
@@ -658,4 +658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a8c3020803b7862068cdef1400b4e24976412e76442b74db9728cfca499048b9.js.map
+//# sourceMappingURL=5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560.js.map

@@ -1,4 +1,4 @@
-/*! For license information please see "2024-10-31t23-00-48-the-mayonnaise-of-prince--main-prod-public-cc836ac8-77e8-47ff-bd1f-b6c4c79211ab--app.js.LICENSE.txt" */
+/*! For license information please see "2024-11-05t22-13-40-the-vim-of-january--main-prod-public-fd6fa097-9323-42b3-a77e-9dd8086ff6dc--app.js.LICENSE.txt" */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-10-31t23-00-48-the-mayonnaise-of-prince", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-11-05t22-13-40-the-vim-of-january", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -17129,16 +17129,18 @@
                             }
                         }), [g, t]),
                         b = a.useMemo((function() {
-                            return m ? {
-                                inWorldFriends: y.inWorldFriends.filter(N(m, h)).slice(0, o),
-                                activeFriends: y.activeFriends.filter(N(m, h)).slice(0, o),
-                                offlineFriends: y.offlineFriends.filter(N(m, h)).slice(0, o)
-                            } : {
-                                inWorldFriends: y.inWorldFriends.slice(0, o),
-                                activeFriends: y.activeFriends.slice(0, o),
-                                offlineFriends: y.offlineFriends.slice(0, o)
-                            }
-                        }), [y, o, m]);
+                            var e = m ? y.inWorldFriends.filter(N(m, h)) : y.inWorldFriends,
+                                t = m ? y.activeFriends.filter(N(m, h)) : y.activeFriends,
+                                r = m ? y.offlineFriends.filter(N(m, h)) : y.offlineFriends,
+                                a = {
+                                    inWorldFriends: [],
+                                    activeFriends: [],
+                                    offlineFriends: []
+                                };
+                            if (!n.has("inWorld") && !n.has("active") && !n.has("offline")) return a;
+                            var i = o;
+                            return n.has("inWorld") && (a.inWorldFriends = e.slice(0, i), i -= a.inWorldFriends.length), n.has("active") && i > 0 && (a.activeFriends = t.slice(0, i), i -= a.activeFriends.length), n.has("offline") && i > 0 && (a.offlineFriends = r.slice(0, i)), a
+                        }), [y, o, m, n]);
                     return {
                         inWorldFriends: b.inWorldFriends,
                         activeFriends: b.activeFriends,
@@ -42808,7 +42810,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "e8c8b2e94b777c9f3f8102f8c50474efee8e226759507d9916e1ac8b41523ea0",
+        430: "e89821ad89bd6f0ed4cbbaf032899fd857fccd69634f57f70ca7f85597f141c6",
         443: "31620318307abd97935b3154892ed0a901f7f415384994b11ed3d7a286c0d718",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
@@ -42873,7 +42875,7 @@
         6780: "df0432dad6f96713c90c9fac8f8b2c9c1a9264b0a84f341a2e80484afc414cf6",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
-        6883: "4526d34f7f1ad04d9c3c2ce1880f8a7a26e8332e1c210f1e40a13291d2f7b195",
+        6883: "80902ae272be80296bb28aa7c1e0eee7161471534c0d8ca81af2f117c8bc6b94",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
         7047: "9abb7d3876c0c3871c128bf7fe95a1a5db67c70cd69f00eac0e119a615a6e062",
         7063: "bff163ab1515a8081544d6bc1a55a7be177a6db6a0d0e7ea1663ac009ac6b2d0",
@@ -42883,7 +42885,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "f25cefa05a3ae67dbb1a8fdcf11824f57feaf7105a38afc5dc51a580d214ff31",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "405336eff882b1d9f0d50cfb5eab4d43e709c0cd94a7a8ca8c8eb77f3955a8c8",
+        7850: "b41f4361510488110f712eda810c3b19cbb3392589dfb3c269e6504b1a8db991",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -42891,11 +42893,11 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "a8c3020803b7862068cdef1400b4e24976412e76442b74db9728cfca499048b9",
+        8744: "5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "961d5775a42d33b361f8f3310403fcb51c6a47e7dc87d5a1b479f2d03f9160ed",
+        9037: "6eee79a27d18a1c6b39808eb3e709c8cf8b12c6a004c1b151a06355f3f43f5b2",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9327: "482a3672714b416e783635e22560a092ed8bb523747f4c8f737b0987ac74aef9",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
@@ -42906,7 +42908,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "f211a0087eba1b7bdb54e1dd95c0b5a0f03731ea7a4941bcbb9b24026358a7dc"
+        9989: "27790fc8e1cd0f426904878052bc5adaa0013d57b0b840e27c320f806bcdac0b"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42983,9 +42985,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-10-31t23-00-48-the-mayonnaise-of-prince"
+        id: "2024-11-05t22-13-40-the-vim-of-january"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-10-31t23-00-48-the-mayonnaise-of-prince"
+        id: "2024-11-05t22-13-40-the-vim-of-january"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44540,7 +44542,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-10-31t23-00-48-the-mayonnaise-of-prince",
+                release: "2024-11-05t22-13-40-the-vim-of-january",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
