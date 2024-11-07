@@ -3,13 +3,16 @@ import fs from "node:fs/promises";
 import { parse } from "@babel/parser";
 import traverse from "@babel/traverse";
 import beautify from "js-beautify";
+import UserAgent from "user-agents";
 import { SystemApi } from "vrchat";
+
+const userAgent = new UserAgent();
 
 const system = new SystemApi({
 	basePath: "https://vrchat.com/api/1",
 	baseOptions: {
 		headers: {
-			"User-Agent": "vrchat-monitor/1 vrchatapi.lpv0t@aries.fyi"
+			"User-Agent": userAgent.toString()
 		}
 	}
 });
