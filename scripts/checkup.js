@@ -1,10 +1,15 @@
 import fs from "node:fs/promises";
+import { env } from "node:process";
 
 import { parse } from "@babel/parser";
 import traverse from "@babel/traverse";
 import beautify from "js-beautify";
+import { ProxyAgent } from "undici";
 import UserAgent from "user-agents";
 import { SystemApi } from "vrchat";
+
+const proxyUrl = env.PROXY_URL;
+const dispatcher = proxyUrl ? new ProxyAgent(proxyUrl) : undefined;
 
 const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
 const cdnUrl = "https://dtuitjyhwcl5y.cloudfront.net";
@@ -23,10 +28,11 @@ const system = new SystemApi({
 
 async function getAppSource() {
 	const response = await fetch("https://vrchat.com/api/1/js/app.js", {
+		dispatcher,
 		headers: {
 			"user-agent": uniqueAgent
 		}
-	}).catch(() => null);
+	});
 
 	if (!response || !response.ok) {
 		const source = await response.text();

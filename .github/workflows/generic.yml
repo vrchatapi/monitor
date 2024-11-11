@@ -16,6 +16,8 @@ jobs:
         run: npm install
       - name: run checkup
         run: node ./scripts/checkup.js
+        env:
+          PROXY_URL: ${{ secrets.PROXY_URL }}
       - name: publish changes
         run: |
           git config --global user.name "github-actions[bot]"

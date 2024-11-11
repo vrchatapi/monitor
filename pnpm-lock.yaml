@@ -14,6 +14,9 @@ importers:
       '@babel/traverse':
         specifier: ^7.25.9
         version: 7.25.9
+      undici:
+        specifier: ^6.20.1
+        version: 6.20.1
       user-agents:
         specifier: ^1.1.350
         version: 1.1.350
@@ -2274,6 +2277,10 @@ packages:
 
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
+  undici@6.20.1:
+    resolution: {integrity: sha512-AjQF1QsmqfJys+LXfGTNum+qw4S88CojRInG/6t31W/1fk6G59s92bnAvGz5Cmur+kQv2SURXEvvudLmbrE8QA==}
+    engines: {node: '>=18.17'}
 
   unist-util-is@6.0.0:
     resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
@@ -4752,6 +4759,8 @@ snapshots:
   ufo@1.5.4: {}
 
   undici-types@6.19.8: {}
+
+  undici@6.20.1: {}
 
   unist-util-is@6.0.0:
     dependencies:
