@@ -6,6 +6,9 @@ import beautify from "js-beautify";
 import UserAgent from "user-agents";
 import { SystemApi } from "vrchat";
 
+const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
+const cdnUrl = "https://dtuitjyhwcl5y.cloudfront.net";
+
 const userAgent = new UserAgent();
 
 const system = new SystemApi({
@@ -28,6 +31,8 @@ function parseChunk(source) {
 	const identifiers = new Set();
 	const literals = new Set();
 	const probableChunks = new Map();
+
+	source = source.replaceAll(/(For license information please see) "(.+)"/gi, "$1 <unstable>");
 
 	try {
 		const ast = parse(source, {});
@@ -56,32 +61,50 @@ function parseChunk(source) {
 	return { source, pretty, identifiers, literals, probableChunks };
 }
 
-const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
+async function getLicense(pathname) {
+	const url = `${cdnUrl}/${pathname}.LICENSE.txt`;
+	console.log("fetching license", url);
+
+	const response = await fetch(url).catch(() => null);
+	if (!response || !response.ok) return null;
+
+	const text = await response.text();
+	return text;
+}
 
 (async () => {
 	await fs.rm("./dist/chunks", { recursive: true }).catch(() => { });
 	await fs.mkdir("./dist/chunks");
 
 	await fs.rm("./dist/raw/chunks", { recursive: true }).catch(() => { });
-	await fs.mkdir("./dist/raw/chunks");
+	// await fs.mkdir("./dist/raw/chunks");
 
 	// Fetch and beautify the JavaScript bundle
-	const { data: jsRaw } = await system.getJavaScript("public", "main");
-	await fs.writeFile("./dist/raw/app.js", jsRaw);
+	const { data: jsRaw, request } = await system.getJavaScript("public", "main");
+	const license = await getLicense(request.path);
 
-	const { identifiers: _identifiers, literals: _literals, probableChunks, pretty } = parseChunk(jsRaw);
+	const { source, identifiers: _identifiers, literals: _literals, probableChunks, pretty } = parseChunk(jsRaw);
+
+	// await fs.writeFile("./dist/raw/app.js", source);
 	await fs.writeFile("./dist/app.js", pretty);
+	if (license) await fs.writeFile("./dist/app.js.LICENSE.txt", license);
 
 	console.log(probableChunks);
 
 	const chunks = (await Promise.all([...probableChunks.entries()].map(async ([id, hash]) => {
 		try {
-			const response = await fetch(`https://dtuitjyhwcl5y.cloudfront.net/${hash}.js`);
+			const pathname = `${hash}.js`;
+			const [response, license] = await Promise.all([
+				fetch(`${cdnUrl}/${pathname}`),
+				getLicense(pathname)
+			]);
+
 			const source = await response.text();
 
 			const chunk = parseChunk(source);
-			await fs.writeFile(`./dist/raw/chunks/${id}.js`, source);
+			// await fs.writeFile(`./dist/raw/chunks/${id}.js`, source);
 			await fs.writeFile(`./dist/chunks/${id}.js`, chunk.pretty);
+			if (license) await fs.writeFile(`./dist/chunks/${id}.js.LICENSE.txt`, license);
 
 			return chunk;
 		}
@@ -129,7 +152,7 @@ const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
 
 	// Fetch and beautify the CSS bundle
 	const { data: cssRaw } = await system.getCSS();
-	await fs.writeFile("./dist/raw/app.css", cssRaw);
+	// await fs.writeFile("./dist/raw/app.css", cssRaw);
 
 	const cssPretty = beautify.css(cssRaw, {});
 	await fs.writeFile("./dist/app.css", cssPretty);

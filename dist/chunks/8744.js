@@ -1,4 +1,4 @@
-/*! For license information please see "2024-11-05t22-13-40-the-vim-of-january--main-prod-public-fd6fa097-9323-42b3-a77e-9dd8086ff6dc--5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560.js.LICENSE.txt" */
+/*! For license information please see <unstable> */
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [8744], {
         44814: (e, t) => {
@@ -658,4 +658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560.js.map
+//# sourceMappingURL=d83a0bcbb7a10977a752f1cb8c3002a7f5820f4a0749a36419848c3859a6e3e9.js.map

@@ -13,7 +13,7 @@
                     var t = e.userId;
                     return {
                         type: "MAKE_ALL_AVATARS_PRIVATE",
-                        payload: a().put(window.apiUrl("/api/1/avatars/all"), {
+                        payload: a().put(window.apiUrl("/api/1/admin/avatars/all"), {
                             userId: t,
                             query: {
                                 releaseStatus: "public"
@@ -28,7 +28,7 @@
                     var t = e.userId;
                     return {
                         type: "MAKE_ALL_AVATARS_HIDDEN",
-                        payload: a().delete(window.apiUrl("/api/1/avatars/all?userId=".concat(t)))
+                        payload: a().delete(window.apiUrl("/api/1/admin/avatars/all?userId=".concat(t)))
                     }
                 },
                 l = function(e) {
@@ -587,4 +587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e05edcd7827ff022a2e901fa0ff48503b4cf47e7a4faa867a7634880659ee8af.js.map
+//# sourceMappingURL=b0e32f687cfdd58414a13da5f0e61d22eb34a251471c8b13db18e56350942afd.js.map

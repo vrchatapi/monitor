@@ -1,4 +1,4 @@
-/*! For license information please see "2024-11-05t22-13-40-the-vim-of-january--main-prod-public-fd6fa097-9323-42b3-a77e-9dd8086ff6dc--app.js.LICENSE.txt" */
+/*! For license information please see <unstable> */
 (() => {
     var e, t, n, r, o, a = {
             29293: function(e, t, n) {
@@ -13224,7 +13224,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-11-05t22-13-40-the-vim-of-january", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-11-07t19-02-25-the-cough-of-grandma", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -42810,12 +42810,12 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "e89821ad89bd6f0ed4cbbaf032899fd857fccd69634f57f70ca7f85597f141c6",
+        430: "eddab2fa1a62df38ce9f5ecdd0458547c8334420d0814cbc0dbd4c872b1cd01b",
         443: "31620318307abd97935b3154892ed0a901f7f415384994b11ed3d7a286c0d718",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
         889: "a8b3977595f678ccacf12f063d585a9823d7ae2a578c8593b2bf27816b11ab44",
-        989: "e05edcd7827ff022a2e901fa0ff48503b4cf47e7a4faa867a7634880659ee8af",
+        989: "b0e32f687cfdd58414a13da5f0e61d22eb34a251471c8b13db18e56350942afd",
         997: "d5c2089e944b4c0764a1f5f61c88518a5e75bbf5c168c7b85693376c16c6b9e7",
         1259: "4147fd4cc2aa806ed4268edaef41c5aaad96cc467522e97d3dc6c3e00a59db71",
         1264: "821111c1b35010955d4ff1a2f806bcc15c443d0038ce4d4c70e04cdf1aa01084",
@@ -42875,7 +42875,7 @@
         6780: "df0432dad6f96713c90c9fac8f8b2c9c1a9264b0a84f341a2e80484afc414cf6",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
-        6883: "80902ae272be80296bb28aa7c1e0eee7161471534c0d8ca81af2f117c8bc6b94",
+        6883: "66cdea119b6413e3f3468b16ce69d228b7322c7ce28ec297df05e0d07ccbd0a6",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
         7047: "9abb7d3876c0c3871c128bf7fe95a1a5db67c70cd69f00eac0e119a615a6e062",
         7063: "bff163ab1515a8081544d6bc1a55a7be177a6db6a0d0e7ea1663ac009ac6b2d0",
@@ -42885,7 +42885,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "f25cefa05a3ae67dbb1a8fdcf11824f57feaf7105a38afc5dc51a580d214ff31",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "b41f4361510488110f712eda810c3b19cbb3392589dfb3c269e6504b1a8db991",
+        7850: "480b530e37ad5c36d12462aaaa9b8519ad61061b67a8c082c7914155f16220c3",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -42893,11 +42893,11 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "5043a341b5c5c73be7b7afeaae67ef9f9c27789d8b34230b4cc52d5ec3d4b560",
+        8744: "d83a0bcbb7a10977a752f1cb8c3002a7f5820f4a0749a36419848c3859a6e3e9",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "6eee79a27d18a1c6b39808eb3e709c8cf8b12c6a004c1b151a06355f3f43f5b2",
+        9037: "90b2bb4d9e8498f884995fdffb1b19fbd24f68964a6469373b5ae29a008f2f50",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9327: "482a3672714b416e783635e22560a092ed8bb523747f4c8f737b0987ac74aef9",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
@@ -42908,7 +42908,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "27790fc8e1cd0f426904878052bc5adaa0013d57b0b840e27c320f806bcdac0b"
+        9989: "d2db4ec020e89c5299f3433e06c61612679b76f15b5d0b7513c00643cb90ab7e"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42985,9 +42985,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-11-05t22-13-40-the-vim-of-january"
+        id: "2024-11-07t19-02-25-the-cough-of-grandma"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-11-05t22-13-40-the-vim-of-january"
+        id: "2024-11-07t19-02-25-the-cough-of-grandma"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44542,7 +44542,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-11-05t22-13-40-the-vim-of-january",
+                release: "2024-11-07t19-02-25-the-cough-of-grandma",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
