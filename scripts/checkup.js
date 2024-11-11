@@ -6,7 +6,6 @@ import traverse from "@babel/traverse";
 import beautify from "js-beautify";
 import { ProxyAgent } from "undici";
 import UserAgent from "user-agents";
-import { SystemApi } from "vrchat";
 
 const proxyUrl = env.PROXY_URL;
 const dispatcher = proxyUrl ? new ProxyAgent(proxyUrl) : undefined;
@@ -16,15 +15,6 @@ const cdnUrl = "https://dtuitjyhwcl5y.cloudfront.net";
 
 const userAgent = new UserAgent();
 const uniqueAgent = userAgent.toString();
-
-const system = new SystemApi({
-	basePath: "https://vrchat.com/api/1",
-	baseOptions: {
-		headers: {
-			"User-Agent": uniqueAgent
-		}
-	}
-});
 
 async function getAppSource() {
 	const response = await fetch("https://vrchat.com/api/1/js/app.js", {
@@ -45,6 +35,27 @@ async function getAppSource() {
 	const source = await response.text();
 
 	return { url, source };
+}
+
+async function getAppStyles() {
+	const response = await fetch("https://vrchat.com/api/1/css/app.css", {
+		dispatcher,
+		headers: {
+			"user-agent": uniqueAgent
+		}
+	});
+
+	if (!response || !response.ok) {
+		const styles = await response.text();
+		console.warn("failed to fetch app.css", styles);
+
+		return null;
+	}
+
+	const url = new URL(response.url);
+	const styles = await response.text();
+
+	return { url, styles };
 }
 
 function trim(value) {
@@ -173,7 +184,7 @@ async function getLicense(pathname) {
 	await fs.writeFile(`./dist/urls.json`, JSON.stringify(urls.sort(), null, 2));
 
 	// Fetch and beautify the CSS bundle
-	const { data: cssRaw } = await system.getCSS();
+	const { styles: cssRaw } = await getAppStyles();
 	// await fs.writeFile("./dist/raw/app.css", cssRaw);
 
 	const cssPretty = beautify.css(cssRaw, {});
