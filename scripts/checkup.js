@@ -10,15 +10,36 @@ const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
 const cdnUrl = "https://dtuitjyhwcl5y.cloudfront.net";
 
 const userAgent = new UserAgent();
+const uniqueAgent = userAgent.toString();
 
 const system = new SystemApi({
 	basePath: "https://vrchat.com/api/1",
 	baseOptions: {
 		headers: {
-			"User-Agent": userAgent.toString()
+			"User-Agent": uniqueAgent
 		}
 	}
 });
+
+async function getAppSource() {
+	const response = await fetch("https://vrchat.com/api/1/js/app.js", {
+		headers: {
+			"user-agent": uniqueAgent
+		}
+	}).catch(() => null);
+
+	if (!response || !response.ok) {
+		const source = await response.text();
+		console.warn("failed to fetch app.js", source);
+
+		return null;
+	}
+
+	const url = new URL(response.url);
+	const source = await response.text();
+
+	return { url, source };
+}
 
 function trim(value) {
 	if (!value || typeof value !== "string")
@@ -63,7 +84,7 @@ function parseChunk(source) {
 
 async function getLicense(pathname) {
 	const url = `${cdnUrl}/${pathname}.LICENSE.txt`;
-	console.log("fetching license", url);
+	// console.log("fetching license", url);
 
 	const response = await fetch(url).catch(() => null);
 	if (!response || !response.ok) return null;
@@ -76,20 +97,16 @@ async function getLicense(pathname) {
 	await fs.rm("./dist/chunks", { recursive: true }).catch(() => { });
 	await fs.mkdir("./dist/chunks");
 
-	await fs.rm("./dist/raw/chunks", { recursive: true }).catch(() => { });
-	// await fs.mkdir("./dist/raw/chunks");
+	const app = await getAppSource();
+	if (!app) return;
 
-	// Fetch and beautify the JavaScript bundle
-	const { data: jsRaw, request } = await system.getJavaScript("public", "main");
-	const license = await getLicense(request.path);
+	const { url: request, source: jsRaw } = app;
+	const license = await getLicense(request.pathname.replace(/^\//, ""));
 
-	const { source, identifiers: _identifiers, literals: _literals, probableChunks, pretty } = parseChunk(jsRaw);
+	const { identifiers: _identifiers, literals: _literals, probableChunks, pretty } = parseChunk(jsRaw);
 
-	// await fs.writeFile("./dist/raw/app.js", source);
 	await fs.writeFile("./dist/app.js", pretty);
 	if (license) await fs.writeFile("./dist/app.js.LICENSE.txt", license);
-
-	console.log(probableChunks);
 
 	const chunks = (await Promise.all([...probableChunks.entries()].map(async ([id, hash]) => {
 		try {
@@ -102,7 +119,6 @@ async function getLicense(pathname) {
 			const source = await response.text();
 
 			const chunk = parseChunk(source);
-			// await fs.writeFile(`./dist/raw/chunks/${id}.js`, source);
 			await fs.writeFile(`./dist/chunks/${id}.js`, chunk.pretty);
 			if (license) await fs.writeFile(`./dist/chunks/${id}.js.LICENSE.txt`, license);
 
