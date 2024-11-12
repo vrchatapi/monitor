@@ -18,11 +18,13 @@ const uniqueAgent = userAgent.toString();
 
 async function getAppSource() {
 	const response = await fetch("https://vrchat.com/api/1/js/app.js", {
-		dispatcher,
+		// dispatcher,
 		headers: {
 			"user-agent": uniqueAgent
 		}
 	});
+
+	console.log(Object.fromEntries(response.headers.entries()));
 
 	if (!response || !response.ok) {
 		const source = await response.text();
