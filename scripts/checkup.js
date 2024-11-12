@@ -1,26 +1,18 @@
 import fs from "node:fs/promises";
-import { env } from "node:process";
 
 import { parse } from "@babel/parser";
 import traverse from "@babel/traverse";
 import beautify from "js-beautify";
-import { ProxyAgent } from "undici";
-import UserAgent from "user-agents";
-
-const proxyUrl = env.PROXY_URL;
-const dispatcher = proxyUrl ? new ProxyAgent(proxyUrl) : undefined;
 
 const protocols = ["http:", "https:", "ws:", "wss:", "vrchat:"];
 const cdnUrl = "https://dtuitjyhwcl5y.cloudfront.net";
 
-const userAgent = new UserAgent();
-const uniqueAgent = userAgent.toString();
+const userAgent = "monitor/1 https://github.com/vrchatapi/monitor/issues/new";
 
 async function getAppSource() {
-	const response = await fetch("https://vrchat.com/api/1/js/app.js", {
-		dispatcher,
+	const response = await fetch("https://api.vrchat.cloud/api/1/js/app.js", {
 		headers: {
-			"user-agent": uniqueAgent
+			"user-agent": userAgent
 		}
 	});
 
@@ -38,10 +30,9 @@ async function getAppSource() {
 }
 
 async function getAppStyles() {
-	const response = await fetch("https://vrchat.com/api/1/css/app.css", {
-		dispatcher,
+	const response = await fetch("https://api.vrchat.cloud/api/1/css/app.css", {
 		headers: {
-			"user-agent": uniqueAgent
+			"user-agent": userAgent
 		}
 	});
 
