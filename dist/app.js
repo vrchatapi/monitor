@@ -10919,7 +10919,8 @@
                             i = e.recommendedCapacity,
                             s = e.releaseStatus,
                             c = e.worldId,
-                            l = e.tags;
+                            l = e.tags,
+                            u = e.urlList;
                         return {
                             type: "UPDATE_WORLD",
                             payload: o().put(window.apiUrl("/api/1/worlds/".concat(c)), {
@@ -10929,7 +10930,8 @@
                                 previewYoutubeId: a,
                                 recommendedCapacity: i,
                                 releaseStatus: s,
-                                tags: l
+                                tags: l,
+                                urlList: u
                             })
                         }
                     },
@@ -13224,7 +13226,7 @@
                     In = "idfk",
                     Sn = "idfk";
                 try {
-                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-11-07t19-02-25-the-cough-of-grandma", Sn = "production"
+                    En = "a750df50d11f21f712262cbd4c0bab37", In = "2024-11-15t03-23-33-the-ingest-of-leela", Sn = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -15251,21 +15253,22 @@
                             l = e.value,
                             u = e.validator,
                             d = e.onChange,
-                            p = (0, s.useState)(0 === (null == l ? void 0 : l.length) ? [""] : null != l ? l : [""]),
-                            f = (0, A.Z)(p, 2),
-                            m = f[0],
-                            h = f[1],
-                            g = (0, s.useState)(!1),
-                            y = (0, A.Z)(g, 2),
-                            v = y[0],
-                            b = y[1],
-                            w = (0, s.useState)(!1),
-                            _ = (0, A.Z)(w, 2),
-                            E = _[0],
-                            I = _[1];
+                            p = e.children,
+                            f = (0, s.useState)(0 === (null == l ? void 0 : l.length) ? [""] : null != l ? l : [""]),
+                            m = (0, A.Z)(f, 2),
+                            h = m[0],
+                            g = m[1],
+                            y = (0, s.useState)(!1),
+                            v = (0, A.Z)(y, 2),
+                            b = v[0],
+                            w = v[1],
+                            _ = (0, s.useState)(!1),
+                            E = (0, A.Z)(_, 2),
+                            I = E[0],
+                            S = E[1];
                         return (0, s.useEffect)((function() {
-                            E ? d(m) : I(!0)
-                        }), [m]), s.createElement(s.Fragment, null, null == m ? void 0 : m.map((function(e, l) {
+                            I ? d(h) : S(!0)
+                        }), [h]), s.createElement(s.Fragment, null, null == h ? void 0 : h.map((function(e, l) {
                             return s.createElement("div", {
                                 className: "tw-flex align-items-center w-100 mt-2 flex-column flex-sm-row"
                             }, s.createElement(Je, {
@@ -15276,31 +15279,31 @@
                                 value: e,
                                 isError: !(!u || !e) && !u(e),
                                 onChange: function(e) {
-                                    return h((function(t) {
+                                    return g((function(t) {
                                         return t.map((function(t, n) {
                                             return n === l ? e.target.value : t
                                         }))
                                     }))
                                 }
-                            }), a && s.createElement(o.ZP, {
+                            }), (a || p) && s.createElement(o.ZP, {
                                 role: "checkbox",
-                                "aria-checked": v,
-                                "aria-label": v ? "Hide ".concat(t, " Help") : "Show ".concat(t, " Help"),
+                                "aria-checked": b,
+                                "aria-label": b ? "Hide ".concat(t, " Help") : "Show ".concat(t, " Help"),
                                 onClick: function() {
-                                    return b(!v)
+                                    return w(!b)
                                 },
                                 className: "px-2 py-1 mt-2 mt-sm-0 me-0 me-sm-2",
                                 containerStyles: ft,
                                 neutral: !0
                             }, s.createElement(r.Z, {
                                 icon: lt.sp,
-                                disabled: !v
-                            })), l === m.length - 1 ? s.createElement(o.ZP, {
+                                disabled: !b
+                            })), l === h.length - 1 ? s.createElement(o.ZP, {
                                 "aria-label": "Add another item",
                                 className: "px-2 py-1 mt-2 mt-sm-0",
                                 containerStyles: pt,
                                 onClick: function() {
-                                    (!n || m.length < n) && h((function(e) {
+                                    (!n || h.length < n) && g((function(e) {
                                         return [].concat((0, it.Z)(e), [""])
                                     }))
                                 }
@@ -15312,7 +15315,7 @@
                                 containerStyles: dt,
                                 neutral: !0,
                                 onClick: function() {
-                                    return h((function(e) {
+                                    return g((function(e) {
                                         return e.filter((function(e, t) {
                                             return t !== l
                                         }))
@@ -15321,11 +15324,10 @@
                             }, s.createElement(r.Z, {
                                 icon: st.$
                             })))
-                        })), v && s.createElement(ut.Z, {
+                        })), b && s.createElement(ut.Z, {
                             type: "info",
-                            title: t,
-                            message: a
-                        }))
+                            title: t
+                        }, a || p))
                     };
                 mt.propTypes = {
                     name: l().string,
@@ -42810,7 +42812,7 @@
         229: "56772fc09e957fb435fc2d4b4a0e85fd2e862083e7a526577e85982ad0ca7563",
         347: "166c260be985bec6391cfaea9c8241bea273058c6d3ba5e9bc61dfd7c72e70e0",
         422: "c93a364ae994717a3c92a57417225044a150192d07557d2d54e7c72df3477b66",
-        430: "eddab2fa1a62df38ce9f5ecdd0458547c8334420d0814cbc0dbd4c872b1cd01b",
+        430: "85d0046ba01fdd8517a831d89bfcaa979ede98787cf01dea36fa074f972e4b93",
         443: "31620318307abd97935b3154892ed0a901f7f415384994b11ed3d7a286c0d718",
         587: "1dd4912dcc15ca483d7173ab5ea682a8a8ff7d77c7c29c5fd6550485c562c805",
         852: "16ff709d3b2b1f0101e6d5d7bc90f8b91e3bbf154ecde13968ed5b4fdca45fe8",
@@ -42872,10 +42874,10 @@
         6627: "43dfc4635020b22ace62e8af017f05b25538b69106ff722c1920f6e8a206f967",
         6681: "adc0de51c9936347622180af2a8fe1ee0359fc2c05e16c91134e60b4719a895e",
         6736: "eea514dd208b3e7946c00185d57794fb04a5cf9a752f7288323ff2e8f483c8eb",
-        6780: "df0432dad6f96713c90c9fac8f8b2c9c1a9264b0a84f341a2e80484afc414cf6",
+        6780: "5bf5208bff7beab45b3024834b4ad18c35ed3fa5970a7495b1e57d0d5fd4544d",
         6826: "4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7",
         6841: "2c3a008196be8af05eb028d74dfa50dafdbac18a5a8519d990325d510638db77",
-        6883: "66cdea119b6413e3f3468b16ce69d228b7322c7ce28ec297df05e0d07ccbd0a6",
+        6883: "165dd11b7724b070a8d10b724f18fa42ad9770e7a335d79e8ddf430265017ff3",
         7024: "996d5dbde28458136f28f805c7c392512dbe5df025a25d6778cc47e394f3f460",
         7047: "9abb7d3876c0c3871c128bf7fe95a1a5db67c70cd69f00eac0e119a615a6e062",
         7063: "bff163ab1515a8081544d6bc1a55a7be177a6db6a0d0e7ea1663ac009ac6b2d0",
@@ -42885,7 +42887,7 @@
         7508: "dc14c8ace95b6f8b63f11bbc99f22f65c054b043856b513cf4cbf5d13009d094",
         7556: "f25cefa05a3ae67dbb1a8fdcf11824f57feaf7105a38afc5dc51a580d214ff31",
         7826: "356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55",
-        7850: "480b530e37ad5c36d12462aaaa9b8519ad61061b67a8c082c7914155f16220c3",
+        7850: "700924e50d54a55bbb74e6de8b621c418791dd5613d46e4dca2deb5ee2addedd",
         8005: "489fefd737763140566233203c71f771d8a6ca07a9587fad0227eb6d47a5cc6f",
         8116: "76cb7c4a2d6809e9ca5b5cb65be8e5b41f030f3a9eb821d24cfc5ef3070d4618",
         8170: "a3b24158eeb36a42440423232dbde11df885368e58f2249ef1fe000c3f317247",
@@ -42893,11 +42895,11 @@
         8393: "1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212",
         8598: "f38bf41c634f71d32ae8650b3ed097abcc6d05e7c2f09fd148ed3cc0d45e4183",
         8666: "4410d35f08df6924e8587c0dc279157f06f3be1f490dabebbddaed7844042870",
-        8744: "d83a0bcbb7a10977a752f1cb8c3002a7f5820f4a0749a36419848c3859a6e3e9",
+        8744: "249f9cbf1b30d3f3b999899c2ad7b9088b8d319dd24a02fe1327260e0bf662e9",
         8874: "7bc2fdd5d548978f9f491a53587de121b8c89ae18d478e9272cf1f69bef6e1c9",
         8971: "27b6fd6820e38a5d5d8e1d0b566a640f240b2f2c5c28ed18d262fa88dd277a00",
         8972: "dc4e0ee9d5047440f0e5dd17fcb795571843fc01fe239f3ff6d7359f5e4a58a9",
-        9037: "90b2bb4d9e8498f884995fdffb1b19fbd24f68964a6469373b5ae29a008f2f50",
+        9037: "a45da949994e88649643cd8cb2b5639adde7e05dde728c2b5e5ad94e0f5cb598",
         9255: "5fa6fceec052f01b7d23f4e17ed54b7b638b7aaf56ef05a4d4c783e6968a6e25",
         9327: "482a3672714b416e783635e22560a092ed8bb523747f4c8f737b0987ac74aef9",
         9395: "3dbec88d39f19c5d2b1322b1155d32e61bf2b9af49470a6ac0c7b9d14215f311",
@@ -42908,7 +42910,7 @@
         9847: "8aed1c4fef523a1af6723d83c9d1ee79420e4ddbbd12b7f92db079b0d41158f9",
         9908: "e1c25d5ecfd224c44f451cb3db4089f6f31a0e61045e4674948025c952253b7d",
         9923: "b301a2dbbe76b7a4a58aedb789b97c56afbe5b5873cfb6aff30d13a2c60de28f",
-        9989: "d2db4ec020e89c5299f3433e06c61612679b76f15b5d0b7513c00643cb90ab7e"
+        9989: "55b1a2af2ac0e254e6b9bcca56d772983e8a0e1346de14af7674496d26ed6c6b"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -42985,9 +42987,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2024-11-07t19-02-25-the-cough-of-grandma"
+        id: "2024-11-15t03-23-33-the-ingest-of-leela"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2024-11-07t19-02-25-the-cough-of-grandma"
+        id: "2024-11-15t03-23-33-the-ingest-of-leela"
     }, (() => {
         "use strict";
         var e = s(15861),
@@ -44542,7 +44544,7 @@
                 dsn: "https://5fc01f3e0d764ff79d7d5990a40c36eb@o1125869.ingest.sentry.io/6166335",
                 integrations: [new Ze.BrowserTracing],
                 tracesSampleRate: .05,
-                release: "2024-11-07t19-02-25-the-cough-of-grandma",
+                release: "2024-11-15t03-23-33-the-ingest-of-leela",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
