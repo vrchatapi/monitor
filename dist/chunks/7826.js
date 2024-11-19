@@ -24,7 +24,7 @@
                 E = a(65706),
                 A = a(35773),
                 b = a(95305),
-                Z = a(34226),
+                Z = a(14411),
                 x = a(29449),
                 k = a(12611),
                 w = a(11e3);
@@ -314,7 +314,7 @@
                 y = a.n(g),
                 E = a(55694),
                 A = a(64358),
-                b = a(34226);
+                b = a(14411);
             const Z = function(e) {
                 var t = e.avatar,
                     a = e.slim,
@@ -482,4 +482,4 @@
         }
     }
 ]);
-//# sourceMappingURL=356fc985c2a4f0d7663203a11b29c6bd160796db2d68c841d633f50a2da04c55.js.map
+//# sourceMappingURL=cb84236a6d65b85741e6cac1a53480ed3ef81d14634fed3a2cb1c2355a7483a6.js.map

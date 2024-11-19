@@ -16,7 +16,7 @@
             var r = "grip",
                 n = ["grip-horizontal"],
                 a = "f58d",
-                o = "M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40H40c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40H200c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40H360c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328z";
+                o = "M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm32-192l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm32-192l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48z";
             t.DF = {
                 prefix: "fas",
                 iconName: r,
@@ -27,7 +27,7 @@
             var r = "list",
                 n = ["list-squares"],
                 a = "f03a",
-                o = "M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z";
+                o = "M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z";
             t.DF = {
                 prefix: "fas",
                 iconName: r,
@@ -41,7 +41,7 @@
             var r = "pencil",
                 n = [9999, 61504, "pencil-alt"],
                 a = "f303",
-                o = "M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z";
+                o = "M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z";
             t.definition = {
                 prefix: "fas",
                 iconName: r,
@@ -56,7 +56,7 @@
                 a = r(67294),
                 o = r(45697),
                 i = r.n(o),
-                l = r(34226),
+                l = r(14411),
                 u = function(e) {
                     var t;
                     return a.createElement(l.uW, (0, n.Z)({
@@ -101,7 +101,7 @@
                 v = r(45697),
                 m = r.n(v),
                 y = r(67294),
-                g = r(34226),
+                g = r(14411),
                 b = function(e) {
                     return y.createElement(g.uW, (0, p.Z)({
                         fieldsList: [],
@@ -116,7 +116,7 @@
                 }).isRequired
             };
             const h = b;
-            var w = r(80873),
+            var w = r(12752),
                 x = r(22202),
                 E = r(21538),
                 S = r(13271),
@@ -138,7 +138,7 @@
                 R = r.n(z),
                 D = r(32981),
                 G = r(64258);
-            var V = y.memo((function(e) {
+            var X = y.memo((function(e) {
                 var t = e.onSelect,
                     r = e.type,
                     n = e.isSelected,
@@ -165,16 +165,16 @@
                     j = A[0],
                     C = A[1],
                     z = y.useState(!1),
-                    V = (0, o.Z)(z, 2),
-                    X = V[0],
-                    $ = V[1],
-                    W = y.useMemo((function() {
+                    X = (0, o.Z)(z, 2),
+                    V = X[0],
+                    B = X[1],
+                    H = y.useMemo((function() {
                         var e;
                         return null !== (e = null == i ? void 0 : i.map((function(e) {
                             return {
                                 label: y.createElement(g.X2, {
                                     className: "justify-content-between align-items-center"
-                                }, y.createElement(Q, null, e.displayName), y.createElement("div", null, e.count, " / ", e.limit)),
+                                }, y.createElement($, null, e.displayName), y.createElement("div", null, e.count, " / ", e.limit)),
                                 selectedLabel: e.displayName,
                                 value: e.name
                             }
@@ -264,7 +264,7 @@
                                             icon: q.f8,
                                             color: "success",
                                             timeout: 3e3
-                                        })), $(!1);
+                                        })), B(!1);
                                     case 6:
                                     case "end":
                                         return e.stop()
@@ -280,17 +280,17 @@
                     "aria-label": "Select Move Target",
                     role: "group",
                     onClick: Y
-                }, y.createElement(H, {
+                }, y.createElement(_, {
                     className: "me-1"
                 }, y.createElement(g.Lt, {
-                    options: W,
+                    options: H,
                     className: "flex-grow-1 tw-z-50",
                     value: F,
                     onChange: function(e) {
                         T(e)
                     },
                     trimToLength: !0
-                })), y.createElement(_, {
+                })), y.createElement(Q, {
                     className: "justify-content-end"
                 }, y.createElement(g.zx, {
                     title: "Confirm",
@@ -322,7 +322,7 @@
                     loading: !0,
                     disabled: !0,
                     expand: !0
-                }, "Moving...")) : X && !S ? y.createElement(g.X2, {
+                }, "Moving...")) : V && !S ? y.createElement(g.X2, {
                     className: "align-items-center justify-content-between",
                     "aria-label": "Favorite Deletion Confirmation",
                     role: "group",
@@ -336,12 +336,12 @@
                 }, "Delete"), y.createElement(g.zx, {
                     title: "Cancel",
                     onClick: function(e) {
-                        Y(e), $(!1)
+                        Y(e), B(!1)
                     },
                     className: "px-2",
                     neutral: !0,
                     expand: !0
-                }, "Cancel")) : X && S ? y.createElement(g.X2, {
+                }, "Cancel")) : V && S ? y.createElement(g.X2, {
                     className: "align-items-center justify-content-between",
                     onClick: Y
                 }, y.createElement(g.zx, {
@@ -360,7 +360,7 @@
                     role: "checkbox",
                     "aria-checked": n,
                     className: "align-items-center"
-                }, y.createElement(B, {
+                }, y.createElement(W, {
                     isSelected: n
                 }, y.createElement(g.$1, {
                     icon: f.LE,
@@ -373,7 +373,7 @@
                 }, y.createElement(g.zx, {
                     title: "Unfavorite",
                     onClick: function(e) {
-                        Y(e), $(!0)
+                        Y(e), B(!0)
                     },
                     className: "px-2 me-1",
                     id: "Tooltip-Unfavorite-".concat(u),
@@ -399,7 +399,7 @@
                     target: "Tooltip-Move-".concat(u)
                 }, "Move"))))
             }));
-            V.propTypes = {
+            X.propTypes = {
                 contentId: m().string.isRequired,
                 currentGroup: m().string.isRequired,
                 favoriteGroups: m().arrayOf(m().shape({
@@ -414,36 +414,36 @@
                 type: m().oneOf(["world", "avatar", "friend"]).isRequired,
                 noMoveButton: m().bool
             };
-            const X = V;
+            const V = X;
             var U = (0, i.Z)(g.X2, {
                     target: "e10vjnwi5"
                 })({
                     name: "17xzav4",
                     styles: "flex-grow:1;align-items:center;justify-content:space-between;padding:0 0.5rem;input{margin-top:0!important;}"
                 }),
-                H = (0, i.Z)(g.X2, {
+                _ = (0, i.Z)(g.X2, {
                     target: "e10vjnwi4"
                 })({
                     name: "3q9szp",
                     styles: "width:70%;max-width:70%;align-items:center"
                 }),
-                _ = (0, i.Z)(g.X2, {
+                Q = (0, i.Z)(g.X2, {
                     target: "e10vjnwi3"
                 })({
                     name: "b4p1ds",
                     styles: "width:28%;max-width:28%;align-items:center"
                 }),
-                Q = (0, i.Z)("div", {
+                $ = (0, i.Z)("div", {
                     target: "e10vjnwi2"
                 })({
                     name: "p7lob9",
                     styles: "padding-right:0.4rem;overflow:hidden;text-overflow:ellipsis"
                 }),
-                $ = {
+                B = {
                     name: "3ix1vd",
                     styles: "opacity:1"
                 },
-                B = (0, i.Z)((0, i.Z)("div", {
+                W = (0, i.Z)((0, i.Z)("div", {
                     target: "e10vjnwi0"
                 })(""), {
                     shouldForwardProp: function(e) {
@@ -453,10 +453,10 @@
                 })("display:flex;align-items:center;justify-content:center;width:20px;height:20px;background-color:hsl(0, 0%, 30%);border:2px solid;border-color:", (function(e) {
                     return e.isSelected ? "var(--bs-primary)" : "var(--bs-gray)"
                 }), ";transition:border-color 150 ease-in-out;border-radius:4px;&:hover{border-color:var(--bs-primary);}svg{opacity:0;transition:opacity 150 ease-in-out;", (function(e) {
-                    return e.isSelected ? $ : ""
+                    return e.isSelected ? B : ""
                 }), ";}"),
-                W = r(94184),
-                Y = r.n(W),
+                H = r(94184),
+                Y = r.n(H),
                 J = r(22040),
                 K = ["children", "className", "barClassName", "cssModule", "value", "min", "max", "animated", "striped", "color", "bar", "multi", "tag", "style", "barStyle", "barAriaValueText", "barAriaLabelledBy"];
 
@@ -903,13 +903,13 @@
                     C = Z[1],
                     P = y.useState(0),
                     z = (0, o.Z)(P, 2),
-                    V = z[0],
-                    X = z[1],
+                    X = z[0],
+                    V = z[1],
                     U = y.useRef(!0);
                 y.useEffect((function() {
                     O(s), n && n(!1), w(!1), U.current = !0
                 }), [s]);
-                var H = y.useMemo((function() {
+                var _ = y.useMemo((function() {
                         var e;
                         return null !== (e = null == u ? void 0 : u.map((function(e) {
                             return {
@@ -921,7 +921,7 @@
                             }
                         }))) && void 0 !== e ? e : []
                     }), [u]),
-                    _ = y.useMemo((function() {
+                    Q = y.useMemo((function() {
                         var e = null == u ? void 0 : u.find((function(e) {
                             return e.name === S
                         }));
@@ -930,13 +930,13 @@
                 y.useEffect((function() {
                     w(r), !r && T && (U.current = !0)
                 }), [r]);
-                var Q = function() {
+                var $ = function() {
                     var e = (0, M.Z)(R().mark((function e() {
                         var r, o, s, d, p, m, y, g, b;
                         return R().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    if (!_) {
+                                    if (!Q) {
                                         e.next = 3;
                                         break
                                     }
@@ -948,7 +948,7 @@
                                         timeout: 7e3
                                     })), e.abrupt("return");
                                 case 3:
-                                    w(!1), N(!0), a && a(), r = 1, C(1), X(l.length), U.current = !1, o = document.title, s = ve(l), e.prev = 12, s.s();
+                                    w(!1), N(!0), a && a(), r = 1, C(1), V(l.length), U.current = !1, o = document.title, s = ve(l), e.prev = 12, s.s();
                                 case 14:
                                     if ((d = s.n()).done) {
                                         e.next = 38;
@@ -1041,12 +1041,12 @@
                 }, y.createElement(g.X2, {
                     className: "mb-1"
                 }, "Select a collection to move to"), y.createElement(g.Lt, {
-                    options: H,
+                    options: _,
                     value: S,
                     onChange: function(e) {
                         O(e)
                     }
-                }), _ && y.createElement(g.qX, {
+                }), Q && y.createElement(g.qX, {
                     type: "warn",
                     title: "Collection Full",
                     message: "That collection will not fit all of the items to be moved",
@@ -1054,26 +1054,26 @@
                 }), y.createElement(g.X2, {
                     className: "mt-2"
                 }, y.createElement(g.zx, {
-                    onClick: Q,
+                    onClick: $,
                     className: "me-0 me-sm-2",
                     positive: !0,
                     expand: !0,
-                    disabled: _
+                    disabled: Q
                 }, "Move Favorites"), y.createElement(g.zx, {
                     onClick: function() {
                         n && n(!1), w(!1), O(s)
                     },
                     neutral: !0,
                     expand: !0,
-                    disabled: _
+                    disabled: Q
                 }, "Cancel"))) : T ? y.createElement(g.qX, {
                     type: "dark",
                     title: "Moving Favorites",
                     hideIcon: !0
                 }, y.createElement(be, {
                     value: j,
-                    max: V
-                }, "Moving ", j, " of ", V), y.createElement(g.zx, {
+                    max: X
+                }, "Moving ", j, " of ", X), y.createElement(g.zx, {
                     className: "mt-2",
                     onClick: function() {
                         U.current = !0
@@ -1145,23 +1145,23 @@
                     value: "updated"
                 }];
             const ke = function() {
-                var e, t, r, a, i, p, v, m, b, T, M, P, q, L, z, R, D, G, V = (0, A.s0)(),
+                var e, t, r, a, i, p, v, m, b, T, M, P, q, L, z, R, D, G, X = (0, A.s0)(),
                     U = (0, w.dD)(),
-                    H = (0, A.UO)(),
-                    _ = H.type,
-                    Q = void 0 === _ ? "world" : _,
-                    $ = H.name,
-                    B = (0, w.Tu)().user,
-                    W = (0, S.S)({
-                        type: Q
+                    _ = (0, A.UO)(),
+                    Q = _.type,
+                    $ = void 0 === Q ? "world" : Q,
+                    B = _.name,
+                    W = (0, w.Tu)().user,
+                    H = (0, S.S)({
+                        type: $
                     }, {
-                        skip: !Ee.includes(Q)
+                        skip: !Ee.includes($)
                     }),
-                    Y = W.data,
-                    J = W.isLoading,
+                    Y = H.data,
+                    J = H.isLoading,
                     K = (0, S.C)(),
                     ee = (0, o.Z)(K, 1)[0],
-                    te = y.useState(null != $ ? $ : null),
+                    te = y.useState(null != B ? B : null),
                     re = (0, o.Z)(te, 2),
                     ne = re[0],
                     ae = re[1],
@@ -1170,13 +1170,13 @@
                     le = (0, w.t4)(),
                     se = le.friends,
                     ce = le.loading,
-                    de = null !== (e = null == B || null === (t = B.tagsSet) || void 0 === t ? void 0 : t.has("system_supporter")) && void 0 !== e && e,
+                    de = null !== (e = null == W || null === (t = W.tagsSet) || void 0 === t ? void 0 : t.has("system_supporter")) && void 0 !== e && e,
                     pe = y.useMemo((function() {
                         var e, t;
                         if (!oe) return [];
                         var r = [],
-                            n = null !== (e = null === (t = oe.maxFavoriteGroups) || void 0 === t ? void 0 : t[Q]) && void 0 !== e ? e : oe.defaultMaxFavoriteGroups;
-                        if ("avatar" !== Q || de || (n = 1), "friend" === Q) return Y.map((function(e) {
+                            n = null !== (e = null === (t = oe.maxFavoriteGroups) || void 0 === t ? void 0 : t[$]) && void 0 !== e ? e : oe.defaultMaxFavoriteGroups;
+                        if ("avatar" !== $ || de || (n = 1), "friend" === $) return Y.map((function(e) {
                             return xe(xe({}, e), {}, {
                                 displayName: (0, F.N4)(e)
                             })
@@ -1190,18 +1190,18 @@
                                         l = u, a.push(u);
                                         break
                                     } r.push({
-                                    name: "".concat(Q, "s").concat(l),
-                                    displayName: "".concat(Q, "s").concat(l),
+                                    name: "".concat($, "s").concat(l),
+                                    displayName: "".concat($, "s").concat(l),
                                     visibility: "private",
-                                    id: "".concat(Q).concat(l),
-                                    type: Q
+                                    id: "".concat($).concat(l),
+                                    type: $
                                 })
                             }
                         }
                         return r
-                    }), [Y, oe, Q]),
+                    }), [Y, oe, $]),
                     ve = (0, k.wu)({
-                        type: Q
+                        type: $
                     }),
                     me = ve.data,
                     ye = ve.isSuccess,
@@ -1213,31 +1213,31 @@
                     Re = (0, o.Z)(ze, 2),
                     De = Re[0],
                     Ge = Re[1],
-                    Ve = y.useState(De),
-                    Xe = (0, o.Z)(Ve, 2),
-                    Ue = Xe[0],
-                    He = Xe[1],
-                    _e = Ue.length > 1 ? {
+                    Xe = y.useState(De),
+                    Ve = (0, o.Z)(Xe, 2),
+                    Ue = Ve[0],
+                    _e = Ve[1],
+                    Qe = Ue.length > 1 ? {
                         groups: null == pe ? void 0 : pe.map((function(e) {
                             return e.name
                         }))
                     } : {
                         tag: ne
                     },
-                    Qe = (0, I.km)(_e, {
-                        skip: !pe.length || "world" !== Q
+                    $e = (0, I.km)(Qe, {
+                        skip: !pe.length || "world" !== $
                     }),
-                    $e = Qe.data,
-                    Be = Qe.isLoading,
-                    We = Qe.isFetching,
-                    Ye = (0, E.lx)(_e, {
-                        skip: !pe.length || "avatar" !== Q
+                    Be = $e.data,
+                    We = $e.isLoading,
+                    He = $e.isFetching,
+                    Ye = (0, E.lx)(Qe, {
+                        skip: !pe.length || "avatar" !== $
                     }),
                     Je = Ye.data,
                     Ke = Ye.isLoading,
                     et = Ye.isFetching,
-                    tt = (0, O.G)(_e, {
-                        skip: !pe.length || "friend" !== Q
+                    tt = (0, O.G)(Qe, {
+                        skip: !pe.length || "friend" !== $
                     }),
                     rt = tt.data,
                     nt = tt.isLoading,
@@ -1281,10 +1281,10 @@
                     Lt = qt[0],
                     zt = qt[1],
                     Rt = null !== (r = null === (a = {
-                        world: $e,
+                        world: Be,
                         avatar: Je,
                         friend: y.useMemo((function() {
-                            if ("friend" === Q) return !ce && se && rt ? rt.reduce((function(e, t) {
+                            if ("friend" === $) return !ce && se && rt ? rt.reduce((function(e, t) {
                                 var r = se.find((function(e) {
                                     return e.id === t.favoriteId
                                 }));
@@ -1293,71 +1293,71 @@
                                 })), e
                             }), []) : []
                         }), [se, rt, ce])
-                    }) || void 0 === a ? void 0 : a[Q]) && void 0 !== r ? r : [],
+                    }) || void 0 === a ? void 0 : a[$]) && void 0 !== r ? r : [],
                     Dt = null !== (i = null === (p = {
-                        world: Be,
+                        world: We,
                         avatar: Ke,
                         friend: nt
-                    }) || void 0 === p ? void 0 : p[Q]) && void 0 !== i && i,
+                    }) || void 0 === p ? void 0 : p[$]) && void 0 !== i && i,
                     Gt = null !== (v = null === (m = {
-                        world: We,
+                        world: He,
                         avatar: et,
                         friend: at
-                    }) || void 0 === m ? void 0 : m[Q]) && void 0 !== v && v,
-                    Vt = null !== (b = null === (T = {
+                    }) || void 0 === m ? void 0 : m[$]) && void 0 !== v && v,
+                    Xt = null !== (b = null === (T = {
                         friend: h,
                         world: C.Z,
                         avatar: j.Z
-                    }) || void 0 === T ? void 0 : T[Q]) && void 0 !== b ? b : y.createElement("div", null),
-                    Xt = null !== (M = null !== (P = null == oe || null === (q = oe.maxFavoritesPerGroup) || void 0 === q ? void 0 : q[Q]) && void 0 !== P ? P : null == oe ? void 0 : oe.defaultMaxFavoritesPerGroup) && void 0 !== M ? M : 50;
+                    }) || void 0 === T ? void 0 : T[$]) && void 0 !== b ? b : y.createElement("div", null),
+                    Vt = null !== (M = null !== (P = null == oe || null === (q = oe.maxFavoritesPerGroup) || void 0 === q ? void 0 : q[$]) && void 0 !== P ? P : null == oe ? void 0 : oe.defaultMaxFavoritesPerGroup) && void 0 !== M ? M : 50;
                 y.useEffect((function() {
-                    !((null == pe ? void 0 : pe.length) > 0) || $ && null != pe && pe.find((function(e) {
-                        return e.name === $
-                    })) || (V("/home/favorites/".concat(Q, "/").concat(pe[0].name), {
+                    !((null == pe ? void 0 : pe.length) > 0) || B && null != pe && pe.find((function(e) {
+                        return e.name === B
+                    })) || (X("/home/favorites/".concat($, "/").concat(pe[0].name), {
                         replace: !0
                     }), ae(pe[0].name))
-                }), [pe, Q]), y.useEffect((function() {
+                }), [pe, $]), y.useEffect((function() {
                     null != ne && (Ge(""), y.startTransition((function() {
-                        He(""), Ot(!1), Nt(!1), xt([]), gt(!1)
+                        _e(""), Ot(!1), Nt(!1), xt([]), gt(!1)
                     })))
-                }), [ne, Q]);
+                }), [ne, $]);
                 var Ut = function(e) {
                         var t;
-                        null !== (t = ie.current) && void 0 !== t && t.contains(e.target) || Ht()
+                        null !== (t = ie.current) && void 0 !== t && t.contains(e.target) || _t()
                     },
-                    Ht = function() {
+                    _t = function() {
                         st((function(e) {
                             return e ? (pt(ot.displayName), !1) : e
                         })), window.removeEventListener("click", Ut)
                     },
-                    _t = function() {
+                    Qt = function() {
                         st(!ut), 0 !== ft.trim().length && ee({
-                            type: Q,
+                            type: $,
                             name: ne,
-                            userId: B.id,
+                            userId: W.id,
                             displayName: ft.trim()
                         })
                     },
-                    Qt = function(e) {
+                    $t = function(e) {
                         wt.includes(e) ? xt(wt.filter((function(t) {
                             return t !== e
                         }))) : xt([].concat((0, n.Z)(wt), [e]))
                     },
-                    $t = function() {
+                    Bt = function() {
                         Ct(!0)
                     },
-                    Bt = function() {
+                    Wt = function() {
                         Ct(!1), xt([])
                     },
-                    Wt = y.useMemo((function() {
+                    Ht = y.useMemo((function() {
                         return null == pe ? void 0 : pe.map((function(e) {
                             var t, r, n, a;
                             return xe(xe({}, e), {}, {
-                                limit: null !== (t = null !== (r = null == oe || null === (n = oe.maxFavoritesPerGroup) || void 0 === n ? void 0 : n[Q]) && void 0 !== r ? r : null == oe ? void 0 : oe.defaultMaxFavoritesPerGroup) && void 0 !== t ? t : 50,
+                                limit: null !== (t = null !== (r = null == oe || null === (n = oe.maxFavoritesPerGroup) || void 0 === n ? void 0 : n[$]) && void 0 !== r ? r : null == oe ? void 0 : oe.defaultMaxFavoritesPerGroup) && void 0 !== t ? t : 50,
                                 count: null !== (a = null == me ? void 0 : me[e.name]) && void 0 !== a ? a : 0
                             })
                         }))
-                    }), [pe, oe, me, Q]),
+                    }), [pe, oe, me, $]),
                     Yt = y.useMemo((function() {
                         if (0 === Rt.length) return [];
                         var e = (0, n.Z)(Rt.filter((function(e) {
@@ -1374,10 +1374,10 @@
                                 r = e.id;
                             return "private" === t || r === ue
                         })))), e
-                    }), [Rt, we, Q]),
+                    }), [Rt, we, $]),
                     Jt = y.useMemo((function() {
                         var e, t;
-                        return "friend" === Q ? null !== (t = null == Yt ? void 0 : Yt.filter((function(e) {
+                        return "friend" === $ ? null !== (t = null == Yt ? void 0 : Yt.filter((function(e) {
                             return e.tags.includes(ne)
                         }))) && void 0 !== t ? t : [] : null !== (e = null == Yt ? void 0 : Yt.filter((function(e) {
                             return e.favoriteGroup === ne
@@ -1388,7 +1388,7 @@
                         try {
                             var e = new RegExp(Ue, "i");
                             return Yt.filter((function(t) {
-                                var r, n = "friend" === Q ? null == t || null === (r = t.user) || void 0 === r ? void 0 : r.displayName : null == t ? void 0 : t.name;
+                                var r, n = "friend" === $ ? null == t || null === (r = t.user) || void 0 === r ? void 0 : r.displayName : null == t ? void 0 : t.name;
                                 return e.test(n)
                             }))
                         } catch (e) {
@@ -1403,33 +1403,33 @@
                             return r.includes(e)
                         }));
                     xt(n)
-                }), [ne, Ue, null == Kt ? void 0 : Kt.length, null == Jt ? void 0 : Jt.length, Q]);
+                }), [ne, Ue, null == Kt ? void 0 : Kt.length, null == Jt ? void 0 : Jt.length, $]);
                 var er = y.useMemo((function() {
                         var e;
                         return null !== (e = Kt.map((function(e) {
-                            var t = e.authorId === (null == B ? void 0 : B.id),
+                            var t = e.authorId === (null == W ? void 0 : W.id),
                                 r = "public" !== e.releaseStatus && t || e.id === ue,
-                                n = "friend" === Q ? e.tags[0] : e.favoriteGroup;
-                            return y.createElement(Vt, {
+                                n = "friend" === $ ? e.tags[0] : e.favoriteGroup;
+                            return y.createElement(Xt, {
                                 key: e.favoriteId,
                                 className: "mb-0",
                                 data: e,
                                 world: e,
                                 editMode: yt,
-                                editModeContent: y.createElement(X, {
+                                editModeContent: y.createElement(V, {
                                     contentId: e.id,
                                     currentGroup: n,
-                                    favoriteGroups: Wt,
+                                    favoriteGroups: Ht,
                                     favoriteId: e.favoriteId,
                                     isSelected: wt.includes(e.favoriteId),
-                                    onSelect: Qt,
-                                    type: Q,
+                                    onSelect: $t,
+                                    type: $,
                                     noMoveButton: r
                                 }),
                                 compact: Lt
                             })
                         }))) && void 0 !== e ? e : null
-                    }), [Kt, yt, Lt, ne, wt, Wt, Q, null == B ? void 0 : B.id]),
+                    }), [Kt, yt, Lt, ne, wt, Ht, $, null == W ? void 0 : W.id]),
                     tr = y.useMemo((function() {
                         return wt.map((function(e) {
                             var t = null == Rt ? void 0 : Rt.find((function(t) {
@@ -1444,7 +1444,7 @@
                     }), [wt, Rt]),
                     rr = y.useMemo((function() {
                         var e;
-                        return null !== (e = null == Wt ? void 0 : Wt.map((function(e) {
+                        return null !== (e = null == Ht ? void 0 : Ht.map((function(e) {
                             return {
                                 label: y.createElement(g.X2, {
                                     className: "justify-content-between align-items-center"
@@ -1453,24 +1453,24 @@
                                 value: e.name
                             }
                         }))) && void 0 !== e ? e : []
-                    }), [Wt]),
+                    }), [Ht]),
                     nr = ye && 0 === (null !== (L = null == me ? void 0 : me[ne]) && void 0 !== L ? L : 0),
                     ar = Ue.length > 1,
-                    or = ce && "friend" === Q,
-                    ir = J || (null == Y || null === (z = Y[0]) || void 0 === z ? void 0 : z.type) !== Q || 0 === pe.length || Dt || or || (null == Jt || null === (R = Jt[0]) || void 0 === R ? void 0 : R.favoriteGroup) !== ne && 0 === Jt.length && !nr || jt || ar && Gt,
+                    or = ce && "friend" === $,
+                    ir = J || (null == Y || null === (z = Y[0]) || void 0 === z ? void 0 : z.type) !== $ || 0 === pe.length || Dt || or || (null == Jt || null === (R = Jt[0]) || void 0 === R ? void 0 : R.favoriteGroup) !== ne && 0 === Jt.length && !nr || jt || ar && Gt,
                     lr = wt.length === Kt.length ? "Deselect All" : "Select All",
                     ur = ar && 0 === Kt.length && !ir,
                     sr = null !== (D = null == ot ? void 0 : ot.displayName) && void 0 !== D ? D : "Group",
                     cr = sr.length > 20 ? "".concat(sr.substring(0, 20), "...") : sr;
-                if (!Ee.includes(Q)) return y.createElement(g.qX, {
+                if (!Ee.includes($)) return y.createElement(g.qX, {
                     type: "warn",
                     title: "Failed to load favorites"
-                }, '"', Q, '" is not a valid favorites type');
+                }, '"', $, '" is not a valid favorites type');
                 if (!J && 0 === (null == Y ? void 0 : Y.length)) return y.createElement(g.JX, null, y.createElement(g.qX, {
                     type: "dark",
                     title: "You don't have any favorite groups"
-                }, "Explore VRChat and add some ", Q, " to favorites to get started!"));
-                var dr = "Favorite ".concat(Q.slice(0, 1).toUpperCase()).concat(Q.slice(1), "s");
+                }, "Explore VRChat and add some ", $, " to favorites to get started!"));
+                var dr = "Favorite ".concat($.slice(0, 1).toUpperCase()).concat($.slice(1), "s");
                 return y.createElement(g.JX, {
                     className: "pb-5"
                 }, y.createElement(g.$4, null, dr), y.createElement(g.X2, null, y.createElement(Fe, null, dr)), y.createElement(g.X2, {
@@ -1480,17 +1480,17 @@
                 }, y.createElement(Ae, {
                     type: "text",
                     "aria-label": "Search Favorites",
-                    placeholder: "Search all ".concat(Q, " favorites"),
+                    placeholder: "Search all ".concat($, " favorites"),
                     className: "mb-2 mb-sm-0 me-md-1",
                     value: De,
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
                         Ge(r), st(!1), y.startTransition((function() {
-                            He(r)
+                            _e(r)
                         }))
                     }
-                }), "friend" !== Q && y.createElement(Ce, {
+                }), "friend" !== $ && y.createElement(Ce, {
                     className: "mb-2 mb-sm-0 me-md-1",
                     label: "Sort",
                     value: we,
@@ -1501,7 +1501,7 @@
                     value: null != ne ? ne : "",
                     "aria-label": "Favorite Collection Selector",
                     onChange: function(e) {
-                        e !== ne && (V("/home/favorites/".concat(Q, "/").concat(e), {
+                        e !== ne && (X("/home/favorites/".concat($, "/").concat(e), {
                             replace: !0
                         }), ae(e))
                     },
@@ -1529,14 +1529,14 @@
                     },
                     onKeyDown: function(e) {
                         var t = e.key;
-                        "escape" === t.toLowerCase() && Ht(), "enter" === t.toLowerCase() && _t()
+                        "escape" === t.toLowerCase() && _t(), "enter" === t.toLowerCase() && Qt()
                     }
                 }), !ar && y.createElement(y.Fragment, null, y.createElement(qe, {
                     className: "ms-2",
                     "aria-label": "Rename Collection",
                     onClick: function() {
                         if (window.addEventListener("click", Ut), ut) {
-                            if (ft !== ot.displayName) return void _t()
+                            if (ft !== ot.displayName) return void Qt()
                         } else Mt.current ? null == Mt || Mt.current.focus() : setTimeout((function() {
                             var e;
                             return null == Mt || null === (e = Mt.current) || void 0 === e ? void 0 : e.focus()
@@ -1550,7 +1550,7 @@
                     className: "ms-2"
                 }, y.createElement("div", null, null !== (G = null == Jt ? void 0 : Jt.length) && void 0 !== G ? G : 0), y.createElement("div", {
                     className: "mx-1"
-                }, "/"), y.createElement("div", null, Xt)))), y.createElement(g.X2, {
+                }, "/"), y.createElement("div", null, Vt)))), y.createElement(g.X2, {
                     className: "align-items-center justify-content-center justify-content-md-end flex-column flex-md-row flex-1"
                 }, wt.length > 0 && y.createElement(Ie, {
                     className: "me-0 me-md-1 mt-3 mt-md-0 order-2 order-md-0"
@@ -1618,24 +1618,24 @@
                     placement: "bottom",
                     target: "Tooltip-Compact"
                 }, Lt ? "Switch To Grid View" : "Switch To List View"))), y.createElement(fe, {
-                    type: Q,
+                    type: $,
                     isVisible: kt,
                     onVisibilityChange: function(e) {
                         Ot(e)
                     },
-                    onDeleteStart: $t,
-                    onDeleteEnd: Bt,
+                    onDeleteStart: Bt,
+                    onDeleteEnd: Wt,
                     selectedItems: tr
                 }), y.createElement(ge, {
-                    type: Q,
+                    type: $,
                     isVisible: Tt,
                     onVisibilityChange: function(e) {
                         Nt(e)
                     },
-                    onMoveStart: $t,
-                    onMoveEnd: Bt,
+                    onMoveStart: Bt,
+                    onMoveEnd: Wt,
                     selectedItems: tr,
-                    favoriteGroups: Wt,
+                    favoriteGroups: Ht,
                     currentGroup: ne
                 }), ir && y.createElement(g.UU, {
                     width: "100%",
@@ -1644,11 +1644,11 @@
                     radius: 4
                 }), ne && !ir && y.createElement("div", {
                     className: "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-3 3xl:tw-grid-cols-4 tw-grid-flow-row tw-gap-4"
-                }, er), ur && y.createElement(Me, null, "No favorite ", Q, 's matching "', Ue, '"'), !ir && !ar && nr && y.createElement(Pe, null, "There are no ", Q, "s in this collection"), ir && y.createElement("div", {
+                }, er), ur && y.createElement(Me, null, "No favorite ", $, 's matching "', Ue, '"'), !ir && !ar && nr && y.createElement(Pe, null, "There are no ", $, "s in this collection"), ir && y.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-center tw-w-full tw-mt-5"
                 }, y.createElement("p", {
                     className: "tw-text-center"
-                }, "This may take a moment depending on the number of ", Q, "s in your favorites.")))
+                }, "This may take a moment depending on the number of ", $, "s in your favorites.")))
             };
             var Oe = (0, i.Z)(g.X2, {
                     target: "ehpw5k312"
@@ -1731,7 +1731,7 @@
                 a = r(45697),
                 o = r.n(a),
                 i = r(67294),
-                l = r(34226),
+                l = r(14411),
                 u = function(e) {
                     var t;
                     return i.createElement(l.uW, (0, n.Z)({
@@ -2799,4 +2799,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2d178be82ae88f64388b70b9301119f12088c4839d934568182b39985b89d743.js.map
+//# sourceMappingURL=8ae3927a91d9819a74fce0541241139c0c4198e53c9b357e60c334701cbafa7e.js.map

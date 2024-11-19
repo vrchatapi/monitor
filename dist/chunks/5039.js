@@ -102,8 +102,8 @@
                 Z: () => s
             });
             var r = n(67294),
-                a = n(43862),
-                l = n(81362);
+                a = n(81362),
+                l = n(43862);
             const s = function(e) {
                 var t = e.reducer,
                     n = e.loading,
@@ -111,20 +111,25 @@
                     c = e.error,
                     i = e.statusCode,
                     o = e.children,
-                    u = !1;
+                    u = e.className,
+                    m = !1;
                 return s && s.forEach((function(e) {
-                    e && (u = !0)
-                })), null != i && 200 !== i && "200" !== i ? r.createElement(l.Z, {
+                    e && (m = !0)
+                })), null != i && 200 !== i && "200" !== i ? r.createElement(a.Z, {
                     error: c,
                     statusCode: i
-                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? r.createElement(l.Z, {
+                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? r.createElement(a.Z, {
                     error: t.error,
                     statusCode: t.statusCode
-                }) : c ? r.createElement(l.Z, {
+                }) : c ? r.createElement(a.Z, {
                     error: c
-                }) : null != t && t.error ? r.createElement(l.Z, {
+                }) : null != t && t.error ? r.createElement(a.Z, {
                     error: t.error
-                }) : n || u || null != t && t.fetching || null != t && t.loading ? r.createElement(a.Z, null) : r.createElement("div", null, o)
+                }) : n || m || null != t && t.fetching || null != t && t.loading ? r.createElement(l.Z, {
+                    className: "tw-mx-auto"
+                }) : r.createElement("div", {
+                    className: u
+                }, o)
             }
         },
         65039: (e, t, n) => {
@@ -150,7 +155,7 @@
                 v = n(85533),
                 b = n(17228),
                 y = (n(12227), n(17219)),
-                x = (n(7826), n(34226)),
+                x = (n(7826), n(14411)),
                 w = n(37599),
                 k = (n(40902), n(49567), n(98185)),
                 S = n(43862),
@@ -1256,7 +1261,7 @@
             }))(Xe));
             var et = n(42138),
                 tt = (n(2723), n(76553), new RegExp("^/api/\\d+/(?<fileType>file|image)/(?<fileId>file_".concat("[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}", ")/(?<versionNumber>\\d+)")), n(5513), n(22202)),
-                nt = (n(23797), n(80873));
+                nt = (n(23797), n(12752));
             n(39908);
             n(67947);
             var rt = n(62437),
@@ -2742,7 +2747,7 @@
                 a = n(45697),
                 l = n.n(a),
                 s = n(67294),
-                c = n(34226),
+                c = n(14411),
                 i = function(e) {
                     var t;
                     return s.createElement(c.uW, (0, r.Z)({
@@ -2840,4 +2845,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f9d60fd4b64f38de71d5f4fbada789d8e07dee288f314f407c474b6b7c7080d9.js.map
+//# sourceMappingURL=809ae8c54a503196de768455a096df36303ec2f4b6f4669dcc95dc2eaa99a358.js.map

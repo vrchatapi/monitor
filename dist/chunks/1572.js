@@ -29,51 +29,6 @@
                 }, d))
             }
         },
-        29104: (e, t, n) => {
-            n.d(t, {
-                Z: () => s
-            });
-            var a = n(67294),
-                r = n(45697),
-                l = n.n(r),
-                o = n(60006),
-                i = function(e) {
-                    var t = e.label,
-                        n = e.value,
-                        r = e.onChangeCallback,
-                        l = void 0 === r ? function() {} : r,
-                        i = e.defaultChecked,
-                        s = void 0 !== i && i,
-                        c = e.className,
-                        u = e.disabled;
-                    return a.createElement(o.W7, {
-                        htmlFor: n,
-                        className: c
-                    }, a.createElement("span", null, t), a.createElement(o.D4, {
-                        id: n,
-                        name: n,
-                        type: "checkbox",
-                        onChange: function(e) {
-                            return function(e) {
-                                l({
-                                    value: n,
-                                    checked: e.target.checked
-                                })
-                            }(e)
-                        },
-                        checked: s,
-                        disabled: u
-                    }), a.createElement(o.Tg, null))
-                };
-            i.propTypes = {
-                className: l().string,
-                label: l().string,
-                onChangeCallback: l().func,
-                value: l().string,
-                disabled: l().bool
-            };
-            const s = i
-        },
         81362: (e, t, n) => {
             n.d(t, {
                 Z: () => o
@@ -136,8 +91,8 @@
                 Z: () => o
             });
             var a = n(67294),
-                r = n(43862),
-                l = n(81362);
+                r = n(81362),
+                l = n(43862);
             const o = function(e) {
                 var t = e.reducer,
                     n = e.loading,
@@ -145,20 +100,25 @@
                     i = e.error,
                     s = e.statusCode,
                     c = e.children,
-                    u = !1;
+                    u = e.className,
+                    m = !1;
                 return o && o.forEach((function(e) {
-                    e && (u = !0)
-                })), null != s && 200 !== s && "200" !== s ? a.createElement(l.Z, {
+                    e && (m = !0)
+                })), null != s && 200 !== s && "200" !== s ? a.createElement(r.Z, {
                     error: i,
                     statusCode: s
-                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? a.createElement(l.Z, {
+                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? a.createElement(r.Z, {
                     error: t.error,
                     statusCode: t.statusCode
-                }) : i ? a.createElement(l.Z, {
+                }) : i ? a.createElement(r.Z, {
                     error: i
-                }) : null != t && t.error ? a.createElement(l.Z, {
+                }) : null != t && t.error ? a.createElement(r.Z, {
                     error: t.error
-                }) : n || u || null != t && t.fetching || null != t && t.loading ? a.createElement(r.Z, null) : a.createElement("div", null, c)
+                }) : n || m || null != t && t.fetching || null != t && t.loading ? a.createElement(l.Z, {
+                    className: "tw-mx-auto"
+                }) : a.createElement("div", {
+                    className: u
+                }, c)
             }
         },
         37549: (e, t, n) => {
@@ -187,9 +147,9 @@
             n.r(t), n.d(t, {
                 default: () => St
             });
-            var a = n(80873),
+            var a = n(12752),
                 r = n(67294),
-                l = n(34226),
+                l = n(14411),
                 o = n(15861),
                 i = n(54546),
                 s = n(4965),
@@ -277,15 +237,15 @@
                         })
                     },
                     slim: !0
-                }, r.createElement(g, null, r.createElement(E, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
+                }, r.createElement(E, null, r.createElement(g, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
             };
-            var g = (0, s.Z)(l.JX, {
+            var E = (0, s.Z)(l.JX, {
                     target: "e1c8z0io1"
                 })({
                     name: "1d3w5wq",
                     styles: "width:100%"
                 }),
-                E = (0, s.Z)("p", {
+                g = (0, s.Z)("p", {
                     target: "e1c8z0io0"
                 })({
                     name: "1tmloek",
@@ -319,10 +279,10 @@
                     m = (0, h.Bb)(),
                     d = (0, i.Z)(m, 2),
                     w = d[0],
-                    g = d[1],
-                    E = g.isError,
-                    N = g.error,
-                    k = g.isSuccess;
+                    E = d[1],
+                    g = E.isError,
+                    N = E.error,
+                    k = E.isSuccess;
                 (0, r.useEffect)((function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
@@ -343,7 +303,7 @@
                         timeout: 7e3
                     }))
                 }), [k]);
-                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), E && r.createElement(b.Z, {
+                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), g && r.createElement(b.Z, {
                     color: "danger"
                 }, "Unable to change content gating settings: ", null == N || null === (e = N.data) || void 0 === e ? void 0 : e.error.message), Object.entries(x).map((function(e) {
                     var t = (0, i.Z)(e, 2),
@@ -382,9 +342,9 @@
                     h = (0, r.useState)(!1),
                     f = (0, i.Z)(h, 2),
                     w = f[0],
-                    g = f[1],
-                    E = (0, r.useState)({}),
-                    y = (0, i.Z)(E, 2),
+                    E = f[1],
+                    g = (0, r.useState)({}),
+                    y = (0, i.Z)(g, 2),
                     v = y[0],
                     b = y[1],
                     Z = (0, r.useState)({}),
@@ -392,7 +352,7 @@
                     C = x[0],
                     N = x[1],
                     k = function() {
-                        c(1), p(null), g(!1), b({}), n()
+                        c(1), p(null), E(!1), b({}), n()
                     };
                 return w ? r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
@@ -452,7 +412,7 @@
                         },
                         currentStep: s,
                         setFormError: p,
-                        setFormSuccess: g,
+                        setFormSuccess: E,
                         ownerInfo: v,
                         setOwnerInfo: b,
                         claimInfo: C,
@@ -505,8 +465,8 @@
                     h = d[1],
                     f = (0, r.useState)(""),
                     w = (0, i.Z)(f, 2),
-                    g = w[0],
-                    E = w[1],
+                    E = w[0],
+                    g = w[1],
                     y = (0, r.useContext)(T),
                     v = y.previous,
                     b = y.currentStep,
@@ -516,7 +476,7 @@
                     N = y.setFormError,
                     k = y.setFormSuccess,
                     D = (null == p ? void 0 : p.owner) && (null == p ? void 0 : p.accurate) && (null == p ? void 0 : p.perjury) && (null == p ? void 0 : p.liability) && (null == p ? void 0 : p.abuse),
-                    I = (null == Z || null === (e = Z.description) || void 0 === e ? void 0 : e.length) > 0 && (null == Z || null === (t = Z.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == Z || null === (n = Z.proof) || void 0 === n ? void 0 : n.length) > 0 && D && g.toLowerCase() === C.fullName.toLowerCase(),
+                    I = (null == Z || null === (e = Z.description) || void 0 === e ? void 0 : e.length) > 0 && (null == Z || null === (t = Z.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == Z || null === (n = Z.proof) || void 0 === n ? void 0 : n.length) > 0 && D && E.toLowerCase() === C.fullName.toLowerCase(),
                     j = (0, O.lw)(),
                     $ = (0, i.Z)(j, 2),
                     V = $[0],
@@ -643,9 +603,9 @@
                 }, "Type your full name below which will act as your digital signature", r.createElement(l.II, {
                     className: "tw-pt-2",
                     id: "claim-signature",
-                    value: g.toUpperCase(),
+                    value: E.toUpperCase(),
                     onChange: function(e) {
-                        return E(e.target.value)
+                        return g(e.target.value)
                     },
                     pattern: null == C || null === (a = C.fullName) || void 0 === a ? void 0 : a.toUpperCase()
                 })), D ? null : r.createElement("div", {
@@ -989,8 +949,8 @@
                     p = (0, r.useState)(""),
                     f = (0, i.Z)(p, 2),
                     w = f[0],
-                    g = f[1],
-                    E = (0, a.Nr)(o),
+                    E = f[1],
+                    g = (0, a.Nr)(o),
                     y = (0, h.X6)(),
                     v = (0, i.Z)(y, 2),
                     Z = v[0],
@@ -1016,10 +976,10 @@
                     M = V.error,
                     Y = V.isSuccess,
                     B = (0, h.SO)({
-                        email: E,
+                        email: g,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === E || !1 === q()(E)
+                        skip: "" === g || !1 === q()(g)
                     }),
                     W = B.data,
                     H = B.isFetching,
@@ -1027,21 +987,21 @@
                     se = B.originalArgs,
                     ce = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, r.useEffect)((function() {
-                    d(""), g("")
+                    d(""), E("")
                 }), [o]);
                 var ue = (0, r.useMemo)((function() {
-                        return ie && !1 === W.userExists && q()(E) && "" !== E
-                    }), [W, E]),
+                        return ie && !1 === W.userExists && q()(g) && "" !== g
+                    }), [W, g]),
                     me = (0, r.useMemo)((function() {
-                        return "" !== m && m === E
-                    }), [m, E]),
+                        return "" !== m && m === g
+                    }), [m, g]),
                     de = (0, r.useMemo)((function() {
-                        if (!1 === q()(E) && "" !== E) return r.createElement(b.Z, {
+                        if (!1 === q()(g) && "" !== g) return r.createElement(b.Z, {
                             color: "warning"
                         }, r.createElement(l.$1, {
                             icon: ee.e7
                         }), " That's an invalid email.");
-                        if (null != W && W.userExists && (null == se ? void 0 : se.email) === E) return r.createElement(b.Z, {
+                        if (null != W && W.userExists && (null == se ? void 0 : se.email) === g) return r.createElement(b.Z, {
                             color: "warning"
                         }, r.createElement(l.$1, {
                             icon: ee.e7
@@ -1051,8 +1011,8 @@
                         }, r.createElement(l.$1, {
                             icon: ee.e7
                         }), " Failed to change news preference: ", j, ".");
-                        if (N && (null == O ? void 0 : O.email) === E) {
-                            g("");
+                        if (N && (null == O ? void 0 : O.email) === g) {
+                            E("");
                             var t = P.data.error.message;
                             return r.createElement(b.Z, {
                                 color: "warning"
@@ -1060,7 +1020,7 @@
                                 icon: ee.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== m && m !== E) return r.createElement(b.Z, {
+                        if (ue && "" !== m && m !== g) return r.createElement(b.Z, {
                             color: "warning"
                         }, r.createElement(l.$1, {
                             icon: ee.e7
@@ -1086,7 +1046,7 @@
                         }, r.createElement(l.$1, {
                             icon: S.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [Y, L, N, k, W, ie, m, E, e, F]),
+                    }), [Y, L, N, k, W, ie, m, g, e, F]),
                     pe = (0, r.useMemo)((function() {
                         return !ce || k ? r.createElement("span", null, r.createElement(l.$1, {
                             icon: J.XC
@@ -1100,7 +1060,7 @@
                             icon: X.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === E ? null : ue ? r.createElement(le.Z, {
+                        }) : "" === g ? null : ue ? r.createElement(le.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -1109,7 +1069,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [H, E, ue]);
+                    }), [H, g, ue]);
                 return r.createElement("form", null, r.createElement(te.Z, {
                     className: "align-items-center justify-content-center"
                 }, r.createElement(ne.Z, {
@@ -1194,7 +1154,7 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return g(e.target.value)
+                        return E(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -1243,7 +1203,7 @@
                     onClick: function(t) {
                         t.preventDefault(), Z({
                             userId: null == e ? void 0 : e.id,
-                            email: E,
+                            email: g,
                             password: w
                         })
                     }
@@ -1260,11 +1220,11 @@
                 we = function(e) {
                     return e.currentUser.checkDisplayName.isLoading
                 },
-                ge = function(e) {
+                Ee = function(e) {
                     var t;
                     return (null === (t = e.currentUser.databaseUser) || void 0 === t ? void 0 : t.pastDisplayNames) || null
                 },
-                Ee = (0, fe.P1)(we, (function(e) {
+                ge = (0, fe.P1)(we, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
@@ -1292,23 +1252,23 @@
                 }), (function(e, t, n) {
                     return !1 === e && null !== t && !1 === n
                 })),
-                Ze = (0, fe.P1)(ge, (function(e) {
+                Ze = (0, fe.P1)(Ee, (function(e) {
                     return null !== e && e.length > 0
                 })),
-                xe = (0, fe.P1)(Ze, ge, (function(e, t) {
+                xe = (0, fe.P1)(Ze, Ee, (function(e, t) {
                     return e && t.reduce((function(e, t) {
                         return me()(t.updated_at) > me()(e.updated_at) ? t : e
                     }), {
                         updated_at: 0
                     })
                 })),
-                Ce = (0, fe.P1)(ge, xe, (function(e, t) {
+                Ce = (0, fe.P1)(Ee, xe, (function(e, t) {
                     return null !== e && t.updated_at
                 })),
-                Ne = (0, fe.P1)(ge, xe, (function(e, t) {
+                Ne = (0, fe.P1)(Ee, xe, (function(e, t) {
                     return null !== e && t.displayName
                 })),
-                ke = (0, fe.P1)(ge, xe, (function(e, t) {
+                ke = (0, fe.P1)(Ee, xe, (function(e, t) {
                     return null !== e && !!t.reverted
                 })),
                 Pe = n(76938),
@@ -1428,8 +1388,8 @@
                         h = u[1],
                         f = (0, r.useState)(""),
                         w = (0, i.Z)(f, 2),
-                        g = w[0],
-                        E = w[1],
+                        E = w[0],
+                        g = w[1],
                         y = (0, r.useState)(!0),
                         v = (0, i.Z)(y, 2),
                         b = v[0],
@@ -1439,8 +1399,8 @@
                         N = C[0],
                         k = C[1];
                     (0, r.useEffect)((function() {
-                        return Z("" === g || d !== n)
-                    }), [g, d]);
+                        return Z("" === E || d !== n)
+                    }), [E, d]);
                     var P = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
@@ -1449,7 +1409,7 @@
                                         return e.prev = 0, e.next = 3, a((0, he.eu)({
                                             userId: s,
                                             displayName: n,
-                                            currentPassword: g,
+                                            currentPassword: E,
                                             revertDisplayName: !0
                                         }));
                                     case 3:
@@ -1491,11 +1451,11 @@
                         name: "namePasswordVerify",
                         "aria-label": "Please confirm current password",
                         onChange: function(e) {
-                            return E(e.target.value)
+                            return g(e.target.value)
                         },
                         placeholder: "Please confirm current password",
                         type: "password",
-                        value: g
+                        value: E
                     }), r.createElement(ae.Z, {
                         className: "me-2",
                         onClick: function() {
@@ -1529,9 +1489,9 @@
                     d = c[1],
                     f = d.isLoading,
                     w = d.isError,
-                    g = d.error,
-                    E = d.isSuccess,
-                    y = (0, p.v9)(Ee),
+                    E = d.error,
+                    g = d.isSuccess,
+                    y = (0, p.v9)(ge),
                     v = (0, p.v9)(ve),
                     Z = (0, p.v9)(we),
                     x = (0, p.v9)(Ze),
@@ -1571,9 +1531,9 @@
                     ie = oe[0],
                     ue = oe[1],
                     fe = (0, r.useState)(!1),
-                    ge = (0, i.Z)(fe, 2),
-                    ye = ge[0],
-                    be = ge[1],
+                    Ee = (0, i.Z)(fe, 2),
+                    ye = Ee[0],
+                    be = Ee[1],
                     xe = (0, a.Nr)(J),
                     Se = y && v && "" !== xe;
                 if ((0, r.useEffect)((function() {
@@ -1586,7 +1546,7 @@
                     }), [xe]), (0, r.useEffect)((function() {
                         return "" === $ ? (ue(!1), void j(null)) : $ !== J ? (ue(!1), void j("Names don't match")) : (ue(!0), void j(null))
                     }), [$]), w) return r.createElement(Fe, {
-                    displayNameError: null !== (e = null === (t = g.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
+                    displayNameError: null !== (e = null === (t = E.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (ye) return r.createElement(Me, {
                     previousDisplayName: P,
@@ -1666,7 +1626,7 @@
                     latestChangedDate: k,
                     displayNameChecking: Z,
                     validationError: W,
-                    displayNameChanged: E
+                    displayNameChanged: g
                 }))), r.createElement(ne.Z, {
                     xs: "1",
                     style: {
@@ -1680,7 +1640,7 @@
                 }), "" !== J && !Z && r.createElement(le.Z, {
                     "aria-label": y && v ? "Name is available" : "Name is unavailable",
                     ok: y && v
-                }))), Se && !E && r.createElement(te.Z, null, r.createElement(ne.Z, {
+                }))), Se && !g && r.createElement(te.Z, null, r.createElement(ne.Z, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -1714,7 +1674,7 @@
                 }, "" !== $ && r.createElement(le.Z, {
                     "aria-label": null !== F ? F : "Confirmation name matches",
                     ok: null === F
-                }))), ie && !E && r.createElement(te.Z, {
+                }))), ie && !g && r.createElement(te.Z, {
                     className: "mt-2"
                 }, r.createElement(ne.Z, {
                     xs: "1",
@@ -2082,10 +2042,10 @@
                     u = c.isLoading,
                     d = c.isError,
                     w = !(u || d),
-                    g = (0, h.IO)(),
-                    E = (0, i.Z)(g, 2),
-                    y = E[0],
-                    v = E[1],
+                    E = (0, h.IO)(),
+                    g = (0, i.Z)(E, 2),
+                    y = g[0],
+                    v = g[1],
                     b = v.isLoading,
                     Z = v.isError,
                     x = v.error,
@@ -2196,8 +2156,8 @@
                 ht = n(53637),
                 ft = n(12611),
                 wt = n(37549),
-                gt = n(9669),
-                Et = n.n(gt);
+                Et = n(9669),
+                gt = n.n(Et);
 
             function yt(e, t) {
                 var n = Object.keys(e);
@@ -2266,7 +2226,7 @@
                                             forgetOtpTimeout: t
                                         }), e.prev = 3, e.next = 6, a.props.dispatch({
                                             type: "TWOFACTORAUTH_GET_OTP",
-                                            payload: Et().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
+                                            payload: gt().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
                                         });
                                     case 6:
                                         r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
@@ -2292,7 +2252,7 @@
                                         case 0:
                                             return t.preventDefault(), e.prev = 1, e.next = 4, a.props.dispatch({
                                                 type: "TWOFACTORAUTH_REMOVE",
-                                                payload: Et().delete(window.apiUrl("/api/1/auth/twofactorauth"))
+                                                payload: gt().delete(window.apiUrl("/api/1/auth/twofactorauth"))
                                             });
                                         case 4:
                                             r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
@@ -2357,7 +2317,7 @@
                                 code: this.state.code
                             }, n = t.code, {
                                 type: "TWOFACTORAUTH_VERIFY_PENDING_SECRET",
-                                payload: Et().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
+                                payload: gt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
                                     code: n
                                 })
                             }))), e.preventDefault()
@@ -2383,7 +2343,7 @@
                         value: function(e) {
                             e.preventDefault(), this.setState(Ct), this.props.dispatch({
                                 type: "TWOFACTORAUTH_GET_PENDING_SECRET",
-                                payload: Et().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: gt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
@@ -2391,7 +2351,7 @@
                         value: function(e) {
                             e.preventDefault(), this.setState(Ct), this.props.dispatch({
                                 type: "TWOFACTORAUTH_REMOVE_PENDING_SECRET",
-                                payload: Et().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: gt().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
@@ -2843,4 +2803,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7a2dba1741f89eb95ce0958cedc669d50bc11cb6331df28881b723bed939eae1.js.map
+//# sourceMappingURL=94cbda652ab32860742cd7f2288023fe14733e61948d10d6ecd6929cd634c1f7.js.map

@@ -5,7 +5,7 @@
             var a = "envelope-circle-check",
                 r = [],
                 l = "e4e8",
-                n = "M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176V384c0 35.3 28.7 64 64 64H360.2C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z";
+                n = "M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176 0 384c0 35.3 28.7 64 64 64l296.2 0C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z";
             t.DF = {
                 prefix: "fas",
                 iconName: a,
@@ -15,7 +15,7 @@
         84176: (e, t) => {
             var a = [128273],
                 r = "f084",
-                l = "M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z";
+                l = "M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17l0 80c0 13.3 10.7 24 24 24l80 0c13.3 0 24-10.7 24-24l0-40 40 0c13.3 0 24-10.7 24-24l0-40 40 0c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z";
             t.DF = {
                 prefix: "fas",
                 iconName: "key",
@@ -130,7 +130,7 @@
                 p = a(83868),
                 h = a.n(p),
                 x = a(82470),
-                g = a(34226),
+                g = a(14411),
                 v = a(36678);
 
             function b(e, t) {
@@ -186,20 +186,20 @@
                     M = $[0],
                     C = $[1],
                     Z = (0, w.v1)(),
-                    A = (0, n.Z)(Z, 2),
-                    L = A[0],
-                    R = A[1],
+                    L = (0, n.Z)(Z, 2),
+                    A = L[0],
+                    R = L[1],
                     I = R.isLoading,
                     T = R.isError,
                     U = (0, w.c$)(),
                     W = (0, n.Z)(U, 2),
-                    V = W[0],
-                    H = W[1],
-                    Y = H.isLoading,
-                    B = H.isError,
-                    G = null !== (e = new URL(window.location.href).searchParams.get("verify_email")) && void 0 !== e && e,
+                    Y = W[0],
+                    B = W[1],
+                    G = B.isLoading,
+                    V = B.isError,
+                    H = null !== (e = new URL(window.location.href).searchParams.get("verify_email")) && void 0 !== e && e,
                     J = null !== (t = new URL(window.location.href).searchParams.get("id")) && void 0 !== t && t,
-                    Q = !(!G || !J),
+                    Q = !(!H || !J),
                     X = function() {
                         var e = (0, r.Z)(i().mark((function e(t) {
                             var a;
@@ -212,7 +212,7 @@
                                         }
                                         return e.abrupt("return");
                                     case 2:
-                                        return t.preventDefault(), e.prev = 3, e.next = 6, L({
+                                        return t.preventDefault(), e.prev = 3, e.next = 6, A({
                                             email: u.value
                                         }).unwrap();
                                     case 6:
@@ -244,8 +244,8 @@
                             return i().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t.preventDefault(), e.prev = 1, e.next = 4, V({
-                                            emailToken: G,
+                                        return t.preventDefault(), e.prev = 1, e.next = 4, Y({
+                                            emailToken: H,
                                             password: E.value,
                                             id: J
                                         }).unwrap();
@@ -427,14 +427,14 @@
                     className: "tw-text-center tw-mb-2"
                 }, "If we have an account associated with ", m.createElement("strong", null, u.value), ", we have sent you a password reset link!"), m.createElement("p", {
                     className: "tw-text-subtext-grey"
-                }, "You may need to check your spam folder if you don't see it within a few minutes.")), (T || B) && m.createElement("p", {
+                }, "You may need to check your spam folder if you don't see it within a few minutes.")), (T || V) && m.createElement("p", {
                     role: "alert",
                     "aria-label": "Failed to recover",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-2"
                 }, P || "Oops, that didn't work."), Q && m.createElement(g.zx, {
                     disabled: !E.ok || !E.againOk,
                     className: "tw-mt-5 tw-w-60",
-                    loading: Y,
+                    loading: G,
                     type: "submit"
                 }, "Change Password"), !D && !Q && m.createElement(g.zx, {
                     disabled: !u.ok || I || T,
@@ -662,4 +662,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4a2dd049e7bb30d69dae1e98a0c57fa873cace33e49ddbdbc8df0d96e9411ad7.js.map
+//# sourceMappingURL=44ac3e2c3e2814609a78f062e7956025cce2f7cbf59fa511d13e0b81cdb1e508.js.map

@@ -1,17 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [3488], {
-        6767: (e, t) => {
-            var a = "minus",
-                l = [8211, 8722, 10134, "subtract"],
-                n = "f068",
-                r = "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z";
-            t.DF = {
-                prefix: "fas",
-                iconName: a,
-                icon: [448, 512, l, n, r]
-            }, t.Kl = t.DF
-        },
         93488: (e, t, a) => {
             a.r(t), a.d(t, {
                 default: () => h
@@ -21,9 +10,9 @@
                 r = a(6767),
                 o = a(40098),
                 s = a(67294),
-                c = a(34226),
+                c = a(14411),
                 m = a(17219),
-                i = a(80873),
+                i = a(12752),
                 u = a(72562);
             var d = {
                 "/download/sdk3-worlds": "download worlds VCC SDK package",
@@ -38,28 +27,28 @@
                     g = n.isLoading,
                     b = s.useState(!0),
                     y = (0, l.Z)(b, 2),
-                    v = y[0],
-                    k = y[1],
+                    k = y[0],
+                    v = y[1],
                     C = s.useState(!1),
                     x = (0, l.Z)(C, 2),
                     N = x[0],
-                    D = x[1],
-                    S = s.useState(null),
-                    _ = (0, l.Z)(S, 2),
-                    K = _[0],
-                    j = _[1],
+                    S = x[1],
+                    D = s.useState(null),
+                    _ = (0, l.Z)(D, 2),
+                    j = _[0],
+                    K = _[1],
                     A = s.useMemo((function() {
                         return h && t && (null != h && h.disableAvatarGating || t.tagsSet.has("system_avatar_access") || t.tagsSet.has("system_world_access")) ? "none" : "block"
                     }), [null == h ? void 0 : h.disableAvatarGating, null == t ? void 0 : t.tagsSet]);
                 if (a || g) return null;
-                var V, z = function(e) {
+                var V, X = function(e) {
                     return function() {
-                        j(e), D(!0)
+                        K(e), S(!0)
                     }
                 };
                 return s.createElement(p, null, s.createElement(c.sm, {
                     isOpen: N,
-                    confirmCallback: (V = K, function() {
+                    confirmCallback: (V = j, function() {
                         (0, u.Kz)("Web_ButtonPressed", {
                             controlName: d[V]
                         }), setTimeout((function() {
@@ -67,7 +56,7 @@
                         }), 1e3)
                     }),
                     cancelCallback: function() {
-                        return D(!1)
+                        return S(!1)
                     },
                     headerText: "Package Download",
                     confirmText: "I Understand, download package",
@@ -93,13 +82,13 @@
                     className: "text-center justify-content-center mb-5 mt-5"
                 }, s.createElement(c.$4, null, "Download VRChat"), s.createElement(c.JX, null, s.createElement("h2", null, "Download VRChat"), s.createElement(c.X2, {
                     className: "align-items-center justify-content-center mt-2"
-                }, s.createElement(f, {
+                }, s.createElement(w, {
                     href: "/download/vive",
                     target: "_blank",
                     className: "API_vive_url me-3"
                 }, s.createElement(c.zx, {
                     className: "px-5"
-                }, "Steam")), s.createElement(f, {
+                }, "Steam")), s.createElement(w, {
                     href: "/download/oculus",
                     target: "_blank",
                     className: "API_oculus_url"
@@ -116,7 +105,7 @@
                     style: {
                         display: A
                     }
-                }, s.createElement("p", null, " ", "Welcome to VRChat content creation! We're glad you are excited to get started. We ask that you engage with VRChat for a while before we allow you to upload avatars and worlds. Once you have spent some time enjoying and exploring we'll send you a notification that your ability to upload has been unlocked."), s.createElement("ul", null, s.createElement("li", null, "Explore some worlds "), s.createElement("li", null, "Make some friends "), s.createElement("li", null, "Learn to create and build avatars and worlds "), s.createElement("li", null, "Don't be abusive to other people or groups "), s.createElement("li", null, "Share and stream ")), s.createElement("p", null, "❤ — The VRChat Team")), s.createElement(f, {
+                }, s.createElement("p", null, " ", "Welcome to VRChat content creation! We're glad you are excited to get started. We ask that you engage with VRChat for a while before we allow you to upload avatars and worlds. Once you have spent some time enjoying and exploring we'll send you a notification that your ability to upload has been unlocked."), s.createElement("ul", null, s.createElement("li", null, "Explore some worlds "), s.createElement("li", null, "Make some friends "), s.createElement("li", null, "Learn to create and build avatars and worlds "), s.createElement("li", null, "Don't be abusive to other people or groups "), s.createElement("li", null, "Share and stream ")), s.createElement("p", null, "❤ — The VRChat Team")), s.createElement(w, {
                     href: "https://docs.vrchat.com/docs/setting-up-the-sdk",
                     target: "_blank",
                     className: "API_sdk_url mt-2"
@@ -133,19 +122,19 @@
                     target: "_blank",
                     rel: "noreferrer",
                     className: "font-weight-bold"
-                }, "Creator Companion Docs."), s.createElement(f, {
+                }, "Creator Companion Docs."), s.createElement(w, {
                     href: h.downloadUrls.vcc,
                     className: "mt-3"
-                }, s.createElement(c.zx, null, "Download the Creator Companion")))), s.createElement(c.JX, null, s.createElement(w, {
+                }, s.createElement(c.zx, null, "Download the Creator Companion")))), s.createElement(c.JX, null, s.createElement(f, {
                     role: "checkbox",
-                    "aria-checked": !v,
+                    "aria-checked": !k,
                     onClick: function() {
-                        return k(!v)
+                        return v(!k)
                     }
                 }, s.createElement(c.$1, {
                     width: 20,
-                    icon: v ? o.r8 : r.Kl
-                }), s.createElement(E, null, "Manual SDK Installation")), !v && s.createElement(c.JX, {
+                    icon: k ? o.r8 : r.Kl
+                }), s.createElement(E, null, "Manual SDK Installation")), !k && s.createElement(c.JX, {
                     className: "pb-5 mb-5"
                 }, s.createElement(c.qX, {
                     type: "info",
@@ -167,7 +156,7 @@
                 }, s.createElement("div", {
                     className: "mb-2 text-center"
                 }, "Create Udon-Powered Worlds"), s.createElement(c.zx, {
-                    onClick: z("/download/sdk3-worlds")
+                    onClick: X("/download/sdk3-worlds")
                 }, "Download Worlds SDK"))), s.createElement(c.JX, {
                     className: "ms-0 ms-sm-1 flex-1"
                 }, s.createElement(c.oI, null, s.createElement("h4", {
@@ -177,7 +166,7 @@
                 }, s.createElement("div", {
                     className: "mb-2 text-center"
                 }, "Create Avatars using Avatars 3.0"), s.createElement(c.zx, {
-                    onClick: z("/download/sdk3-avatars")
+                    onClick: X("/download/sdk3-avatars")
                 }, "Download Avatars SDK")))), s.createElement(c.qX, {
                     type: "warn",
                     title: "These export to packages",
@@ -191,13 +180,13 @@
                     name: "1wafcg9",
                     styles: "max-width:1200px;margin:0 auto"
                 }),
-                f = (0, n.Z)("a", {
+                w = (0, n.Z)("a", {
                     target: "e1uz4owu2"
                 })({
                     name: "1bs7qd7",
                     styles: "&:hover{text-decoration:none;}"
                 }),
-                w = (0, n.Z)(c.zx, {
+                f = (0, n.Z)(c.zx, {
                     target: "e1uz4owu1"
                 })({
                     name: "3zych9",
@@ -212,4 +201,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f590746b94d3bcd0dec22cb67278ea9a81a3fd1f07a87226f33d88f58ca1f62a.js.map
+//# sourceMappingURL=7945662d661319edad4863189746da8b3fe575c409456d25faee573ee63bbf8f.js.map

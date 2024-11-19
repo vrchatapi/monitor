@@ -195,43 +195,6 @@
                     }
                 }
         },
-        45861: (e, t, n) => {
-            n.d(t, {
-                o: () => a
-            });
-            var a = function(e) {
-                var t = e.width,
-                    n = e.height,
-                    a = void 0 === n ? t : n,
-                    r = e.path,
-                    i = e.name;
-                return {
-                    icon: [t, a, [], "", r],
-                    iconName: "vrchat-".concat(i),
-                    prefix: "vrchat"
-                }
-            }
-        },
-        50249: (e, t, n) => {
-            n.d(t, {
-                Z: () => a
-            });
-            const a = (0, n(45861).o)({
-                name: "credits",
-                width: 64,
-                path: "m11.825 0 30.646 53.693L38.522 64 2 0h9.825Zm19.707 0 13.28 23.277L53.72 0h9.274L46.419 43.374 21.684 0h9.848Z"
-            })
-        },
-        7503: (e, t, n) => {
-            n.d(t, {
-                Z: () => a
-            });
-            const a = (0, n(45861).o)({
-                name: "group",
-                width: 64,
-                path: "M41.61,24.28 L47.92,37.57 L49.2179049,40.3241512 C50.110782,40.1121924 51.0422891,40 52,40 C58.627417,40 64,45.372583 64,52 C64,58.627417 58.627417,64 52,64 C45.372583,64 40,58.627417 40,52 C40,48.1183234 41.8430335,44.6671104 44.7017586,42.4737028 L43.4,39.72 L37.09,26.43 C38.73,25.97 40.25,25.23 41.61,24.28 Z M12,40 C17.7701692,40 22.589132,44.0725989 23.739244,49.5001523 L37.21,49.5 C37.07,50.31 37,51.15 37,52 C37,52.85 37.07,53.69 37.21,54.5 L23.7390315,54.5008502 C22.5885386,59.9279026 17.769814,64 12,64 C5.372583,64 0,58.627417 0,52 C0,45.372583 5.372583,40 12,40 Z M33,0 L33.3049748,0.00379985776 C39.7914556,0.165607248 45,5.47454326 45,12 C45,18.627417 39.627417,24 33,24 C31.8758881,24 30.787877,23.8454341 29.7560602,23.5563959 L21.08,40.07 C19.76,39.06 18.27,38.27 16.66,37.75 L25.33,21.24 C22.6858567,19.0311889 21,15.7124709 21,12 C21,5.372583 26.372583,0 33,0 Z"
-            })
-        },
         88233: (e, t, n) => {
             n.d(t, {
                 Z: () => c
@@ -240,7 +203,7 @@
                 r = n(65394),
                 i = n(85020),
                 o = n(67294),
-                l = n(34226);
+                l = n(14411);
             const c = function(e) {
                 var t = e.imageUrl,
                     n = e.closeCallback,
@@ -436,10 +399,10 @@
                 v = n(35773),
                 b = n(95305),
                 y = n(64358),
-                E = n(80873),
+                E = n(12752),
                 x = n(6655),
                 w = n(12227),
-                k = n(34226),
+                k = n(14411),
                 N = (n(46326), n(72528));
             const T = function(e) {
                 var t, n, i, l = e.navToggleCallback,
@@ -545,7 +508,7 @@
                     style: {
                         borderRadius: 14
                     }
-                }) : r.createElement(V, {
+                }) : r.createElement(L, {
                     to: "/home/marketplace/wallet",
                     onClick: ee
                 }, r.createElement(k.b5, null), null !== (i = " ".concat(null == Q ? void 0 : Q.toLocaleString())) && void 0 !== i ? i : " ???")), !1, r.createElement(B, null, r.createElement(h.rU, {
@@ -559,7 +522,7 @@
                         name: "1qhktia",
                         styles: "margin:5px 8px"
                     })
-                }, te && (null == u ? void 0 : u.location) && !["traveling", "offline"].includes(null == u ? void 0 : u.location) && r.createElement(L, {
+                }, te && (null == u ? void 0 : u.location) && !["traveling", "offline"].includes(null == u ? void 0 : u.location) && r.createElement(V, {
                     className: "mx-0"
                 }, r.createElement(N.Z, {
                     location: u.location,
@@ -656,13 +619,13 @@
                     name: "1xmid75",
                     styles: "width:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:2px 20px;font-weight:bold;overflow:hidden;text-overflow:ellipsis"
                 }),
-                L = (0, p.Z)("div", {
+                V = (0, p.Z)("div", {
                     target: "esgak1l5"
                 })({
                     name: "1i2d3s7",
                     styles: ">div>div{border:none;background:none!important;}h6{margin-bottom:0;}.clearfix{display:none!important;}div:first-of-type{margin:0 0;padding:2px;}"
                 }),
-                V = (0, p.Z)(h.rU, {
+                L = (0, p.Z)(h.rU, {
                     target: "esgak1l4"
                 })("color:white;background-color:rgba(17, 17, 17, 0.8);padding:4px 6px;line-height:1em;border-radius:14px;>", k.b5, "{color:#6ae3f9;}&:hover{color:#737372;text-decoration:none;>", k.b5, "{color:#064b5c;}}"),
                 F = (0, p.Z)("div", {
@@ -751,13 +714,13 @@
                     })
                 })))
             };
-            n(17563);
+            n(64230);
             var De = n(76938),
                 Me = n(42138),
                 We = n(4942),
                 $e = n(38824),
-                Le = n(87261),
-                Ve = n(3126),
+                Ve = n(87261),
+                Le = n(3126),
                 Fe = n(45697),
                 Ge = n.n(Fe),
                 _e = n(25411),
@@ -842,7 +805,7 @@
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Sort Results By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(Le.Z, {
+                }, r.createElement(Ve.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return T(t)
@@ -864,7 +827,7 @@
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Order By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(Le.Z, {
+                }, r.createElement(Ve.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return v(t)
@@ -884,46 +847,46 @@
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Search For"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: E.includes("displayName"),
                     onChange: I,
                     type: "checkbox",
                     name: "displayName",
                     id: "displayName"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "displayName"
                 }, "Display Name"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: E.includes("email"),
                     onChange: I,
                     type: "checkbox",
                     name: "email",
                     id: "email"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "email"
                 }, "Email"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: E.includes("username"),
                     onChange: I,
                     type: "checkbox",
                     name: "username",
                     id: "username"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "username"
                 }, "Username"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: E.includes("pastEmails"),
                     onChange: I,
                     type: "checkbox",
                     name: "pastEmails",
                     id: "pastEmails"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "pastEmails"
                 }, "Past Emails"))), r.createElement($e.Z, {
@@ -931,7 +894,7 @@
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Settings"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: Z,
                     onChange: function() {
                         return n((0, _e.Tr)())
@@ -939,12 +902,12 @@
                     type: "checkbox",
                     name: "autoDirect",
                     id: "autoDirect"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "autoDirect"
                 }, "Auto Redirect"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Ve.Z, {
                     checked: d,
                     onChange: function() {
                         return p(!d)
@@ -952,7 +915,7 @@
                     type: "checkbox",
                     name: "fuzzy",
                     id: "fuzzy"
-                }), r.createElement(Ve.Z, {
+                }), r.createElement(Le.Z, {
                     className: "ms-1",
                     for: "fuzzy"
                 }, "Fuzzy")))))
@@ -1216,8 +1179,8 @@
                             s && s(!1)
                         },
                         $ = A || [],
-                        L = $.includes("permission-user-icons"),
-                        V = $.includes("permission-user-gallery"),
+                        V = $.includes("permission-user-icons"),
+                        L = $.includes("permission-user-gallery"),
                         F = ($.includes("permission-groups-beta"), null !== (t = q.length) && void 0 !== t ? t : 0);
                     n = R.filter((function(e) {
                         return e.state === st.oq.INVITED
@@ -1505,7 +1468,7 @@
                         icon: Q.T
                     }), r.createElement("div", null, "Favorite Friends"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), (L || V) && r.createElement(Et, {
+                    })), (V || L) && r.createElement(Et, {
                         to: "/home/gallery",
                         title: "gallery",
                         className: "btn text-left",
@@ -1635,7 +1598,7 @@
                     return Promise.all([n.e(3261), n.e(9923), n.e(5508)]).then(n.bind(n, 5712))
                 })),
                 At = r.lazy((function() {
-                    return Promise.all([n.e(8005), n.e(2998), n.e(8874), n.e(587)]).then(n.bind(n, 37099))
+                    return Promise.all([n.e(4984), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
                 })),
                 Ut = r.lazy((function() {
                     return n.e(3488).then(n.bind(n, 93488))
@@ -1644,7 +1607,7 @@
                     return n.e(6231).then(n.bind(n, 76231))
                 })),
                 Dt = r.lazy((function() {
-                    return Promise.all([n.e(5778), n.e(1259), n.e(4734)]).then(n.bind(n, 87429))
+                    return Promise.all([n.e(5778), n.e(1435), n.e(4734)]).then(n.bind(n, 87429))
                 })),
                 Mt = r.lazy((function() {
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
@@ -1653,28 +1616,28 @@
                     return Promise.all([n.e(8170), n.e(1572)]).then(n.bind(n, 71572))
                 })),
                 $t = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(430), n.e(6681), n.e(4444), n.e(9908), n.e(229), n.e(2045), n.e(347), n.e(2998), n.e(4353)]).then(n.bind(n, 82434))
-                })),
-                Lt = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(4444), n.e(5082)]).then(n.bind(n, 74444))
+                    return Promise.all([n.e(8744), n.e(2150), n.e(4444), n.e(8890), n.e(9908), n.e(2998), n.e(2045), n.e(347), n.e(4353)]).then(n.bind(n, 82434))
                 })),
                 Vt = r.lazy((function() {
+                    return Promise.all([n.e(8744), n.e(4444), n.e(5082)]).then(n.bind(n, 74444))
+                })),
+                Lt = r.lazy((function() {
                     return Promise.all([n.e(8744), n.e(9908), n.e(2432)]).then(n.bind(n, 39908))
                 })),
                 Ft = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(6681), n.e(229), n.e(8598)]).then(n.bind(n, 60229))
+                    return Promise.all([n.e(8744), n.e(8890), n.e(8598)]).then(n.bind(n, 78890))
                 })),
                 Gt = r.lazy((function() {
                     return n.e(1264).then(n.bind(n, 82296))
                 })),
                 _t = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(8666), n.e(1968)]).then(n.bind(n, 44907))
+                    return Promise.all([n.e(3261), n.e(8666), n.e(4907)]).then(n.bind(n, 44907))
                 })),
                 Bt = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(9714), n.e(6488)]).then(n.bind(n, 92848))
+                    return Promise.all([n.e(3261), n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
                 Jt = r.lazy((function() {
-                    return Promise.all([n.e(6736), n.e(3261), n.e(347), n.e(2998), n.e(9923), n.e(4896), n.e(9714), n.e(5939)]).then(n.bind(n, 50464))
+                    return Promise.all([n.e(5879), n.e(3261), n.e(2998), n.e(347), n.e(2520), n.e(9923), n.e(4896), n.e(8158), n.e(7652), n.e(464)]).then(n.bind(n, 50464))
                 })),
                 Kt = r.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
@@ -1692,7 +1655,7 @@
                     return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 en = r.lazy((function() {
-                    return Promise.all([n.e(8005), n.e(1357), n.e(6780)]).then(n.bind(n, 86780))
+                    return Promise.all([n.e(4984), n.e(2095), n.e(6780)]).then(n.bind(n, 86780))
                 })),
                 tn = r.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
@@ -1704,10 +1667,10 @@
                     return n.e(7024).then(n.bind(n, 48192))
                 })),
                 rn = r.lazy((function() {
-                    return Promise.all([n.e(1364), n.e(3261), n.e(8666), n.e(147)]).then(n.bind(n, 147))
+                    return Promise.all([n.e(3261), n.e(8666), n.e(7323)]).then(n.bind(n, 97323))
                 })),
                 on = r.lazy((function() {
-                    return Promise.all([n.e(8005), n.e(3261), n.e(1259), n.e(9327)]).then(n.bind(n, 48755))
+                    return Promise.all([n.e(4984), n.e(3261), n.e(2998), n.e(2520), n.e(1435), n.e(5777)]).then(n.bind(n, 40525))
                 }));
             const ln = function() {
                 var e = (0, i.I0)();
@@ -1800,13 +1763,13 @@
                     element: r.createElement(rn, null)
                 }), r.createElement(o.AW, {
                     path: "/uploadIcon",
-                    element: St(Vt)()
+                    element: St(Lt)()
                 }), r.createElement(o.AW, {
                     path: "/uploadPhoto",
                     element: St(Ft)()
                 }), r.createElement(o.AW, {
                     path: "/uploadEmoji",
-                    element: St(Lt)()
+                    element: St(Vt)()
                 }), r.createElement(o.AW, {
                     path: "/gallery/*",
                     element: r.createElement($t, null)
@@ -1835,7 +1798,7 @@
                     path: "/worlds",
                     element: r.createElement(Gt, null)
                 }), r.createElement(o.AW, {
-                    path: "/world/:worldId",
+                    path: "/world/:worldId/*",
                     element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
                     path: "/avatars",
@@ -1962,7 +1925,7 @@
                 Z = n(53359),
                 I = n(20495),
                 C = n(67992),
-                S = n(11976),
+                S = n(95896),
                 O = n(27484),
                 z = n.n(O),
                 j = n(56176),
@@ -1975,8 +1938,8 @@
                 M = n(51540),
                 W = n(8792),
                 $ = n(65322),
-                L = n(87589),
-                V = n(4739),
+                V = n(87589),
+                L = n(4739),
                 F = n(79036),
                 G = n(59660),
                 _ = n(2155),
@@ -2005,9 +1968,9 @@
                 fe = n(98375),
                 he = n(33805),
                 ve = {
-                    edit: n(11071).faPenToSquare,
+                    edit: n(11071).Y,
                     cancel: E.faXmark,
-                    history: he.faClockRotateLeft,
+                    history: he.On,
                     refresh: fe.faArrowsRotate,
                     search: ge.faMagnifyingGlass,
                     settings: pe.faGear,
@@ -2037,15 +2000,15 @@
                     feather: _.nA,
                     images: G.l9,
                     house: F.faHouse,
-                    location: V.iU,
-                    rocket: L.tM,
+                    location: L.iU,
+                    rocket: V.tM,
                     microphone: $.UO,
                     "folder-open": W.cC,
                     gauge: M.Iz,
                     dice: D.RJ,
                     "triangle-exclamation": Z.faTriangleExclamation
                 },
-                be = n(34226),
+                be = n(14411),
                 ye = n(88233),
                 Ee = n(2566);
             z().extend(A()), z().extend(q());
@@ -2883,4 +2846,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4c2597b637056bd598341c67b1e887aecc981d6b4e8396dea2098a4958bb56e1.js.map
+//# sourceMappingURL=0c3eca5df42c0c2c8b264d6952af291bfeef4b89c08e1e83b2c3a33082a2d290.js.map

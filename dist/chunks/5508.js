@@ -3,7 +3,7 @@
     [5508], {
         56811: (e, t) => {
             var n = [61946],
-                a = "M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z";
+                a = "M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z";
             t.DF = {
                 prefix: "fas",
                 iconName: "at",
@@ -25,7 +25,7 @@
             var n = "user-group",
                 a = [128101, "user-friends"],
                 r = "f500",
-                i = "M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z";
+                i = "M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z";
             t.definition = {
                 prefix: "fas",
                 iconName: n,
@@ -38,7 +38,7 @@
             });
             var a = n(67294),
                 r = n(54546),
-                i = n(34226),
+                i = n(14411),
                 o = n(4942),
                 c = n(45987),
                 s = n(42138),
@@ -99,7 +99,7 @@
                 }
                 return e
             }
-            const h = function() {
+            const g = function() {
                 var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).instancePollingInterval,
                     t = (0, l.Z)(),
                     n = t.locations,
@@ -108,15 +108,15 @@
                     u = void 0 === o ? [] : o,
                     d = t.isOnlineLoading,
                     f = t.isError,
-                    h = m({
+                    g = m({
                         instancePollingInterval: e
                     }),
-                    g = h.locations,
-                    b = void 0 === g ? {} : g,
-                    E = h.sortedLocations,
+                    h = g.locations,
+                    b = void 0 === h ? {} : h,
+                    E = g.sortedLocations,
                     y = void 0 === E ? [] : E,
-                    w = h.isLoading,
-                    P = h.isError,
+                    w = g.isLoading,
+                    P = g.isError,
                     Z = a.useMemo((function() {
                         var e = {},
                             t = [];
@@ -138,10 +138,10 @@
                     isError: f || P
                 }
             };
-            var g = n(59923);
+            var h = n(59923);
             const b = function(e) {
                 var t, n = e.className,
-                    o = h(),
+                    o = g(),
                     c = o.sortedLocations,
                     s = o.isLoading,
                     l = o.isError,
@@ -152,7 +152,7 @@
                     f = null !== (t = null == c ? void 0 : c.slice(0, m)) && void 0 !== t ? t : [],
                     v = a.useMemo((function() {
                         return f.map((function(e) {
-                            return a.createElement(g.Z, {
+                            return a.createElement(h.Z, {
                                 key: "location-".concat(e.location),
                                 className: "mb-4",
                                 location: e
@@ -289,9 +289,9 @@
                     p = a.useState([]),
                     f = (0, r.Z)(p, 2),
                     v = f[0],
-                    h = f[1],
-                    g = a.useState(!1),
-                    b = (0, r.Z)(g, 2),
+                    g = f[1],
+                    h = a.useState(!1),
+                    b = (0, r.Z)(h, 2),
                     E = b[0],
                     y = b[1],
                     w = a.useState(""),
@@ -309,9 +309,9 @@
                             id: "checkbox-".concat(e),
                             className: "tw-my-4 md:tw-my-2.5",
                             onChange: function() {
-                                v.includes(e) ? h(v.filter((function(t) {
+                                v.includes(e) ? g(v.filter((function(t) {
                                     return t !== e
-                                }))) : h([].concat((0, s.Z)(v), [e]))
+                                }))) : g([].concat((0, s.Z)(v), [e]))
                             }
                         }
                     }),
@@ -456,10 +456,10 @@
                     p = m.data,
                     f = m.isFetching,
                     v = m.isError,
-                    h = a.useState(n.includes(A)),
-                    g = (0, r.Z)(h, 2),
-                    b = g[0],
-                    E = g[1],
+                    g = a.useState(n.includes(A)),
+                    h = (0, r.Z)(g, 2),
+                    b = h[0],
+                    E = h[1],
                     y = a.useState(!1),
                     w = (0, r.Z)(y, 2),
                     P = w[0],
@@ -517,7 +517,7 @@
                 r = n(45697),
                 i = n.n(r),
                 o = n(67294),
-                c = n(34226),
+                c = n(14411),
                 s = function(e) {
                     var t;
                     return o.createElement(c.uW, (0, a.Z)({
@@ -547,4 +547,4 @@
         }
     }
 ]);
-//# sourceMappingURL=26b026d66a58e744c33292d19b5a045af30446a4c8860d413302295f8c683caa.js.map
+//# sourceMappingURL=6639c8e1dda938b4b86f9a3ca301b3dbb210a7e31f400b4aa8829261eab340f5.js.map

@@ -1,256 +1,370 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [3261], {
-        93261: (e, r, u) => {
-            u.d(r, {
-                A4: () => J,
-                Aw: () => h,
-                CL: () => L,
-                DU: () => z,
-                E8: () => P,
-                Eg: () => b,
-                FW: () => l,
-                G_: () => _,
-                HT: () => ge,
-                LA: () => K,
-                M7: () => ue,
-                MQ: () => ae,
-                Pi: () => C,
-                Pt: () => M,
-                Pv: () => Y,
+        93261: (r, e, t) => {
+            t.d(e, {
+                A4: () => F,
+                Aw: () => P,
+                CL: () => S,
+                DU: () => Z,
+                E8: () => R,
+                Eg: () => T,
+                FW: () => g,
+                G_: () => z,
+                HT: () => yr,
+                LA: () => W,
+                M7: () => ur,
+                MQ: () => sr,
+                Pi: () => _,
+                Pt: () => h,
+                Pv: () => rr,
                 QA: () => G,
-                Rx: () => ne,
+                Rx: () => ar,
                 Sp: () => Q,
                 V3: () => O,
-                VF: () => U,
-                Vc: () => x,
-                WG: () => v,
-                XK: () => E,
-                _n: () => A,
+                VF: () => L,
+                VR: () => V,
+                Vc: () => J,
+                WG: () => m,
+                XK: () => k,
+                _n: () => D,
+                ci: () => lr,
                 d3: () => w,
                 dZ: () => j,
-                dj: () => V,
+                dj: () => C,
                 dl: () => y,
-                dt: () => m,
-                ek: () => ce,
-                gx: () => q,
-                hE: () => de,
-                hg: () => $,
-                i2: () => I,
-                jP: () => R,
-                l5: () => te,
-                mA: () => pe,
-                mN: () => T,
-                mm: () => F,
+                dt: () => v,
+                ek: () => gr,
+                gx: () => M,
+                hE: () => cr,
+                hg: () => H,
+                i2: () => f,
+                jP: () => E,
+                l5: () => or,
+                mA: () => dr,
+                mN: () => q,
+                mm: () => I,
                 mt: () => N,
-                nm: () => re,
-                nz: () => H,
-                pI: () => se,
-                r5: () => D,
-                rq: () => le,
-                rw: () => W,
-                t$: () => f,
-                tN: () => g,
-                uX: () => ie,
-                v5: () => S,
-                vb: () => Z,
-                w$: () => k,
-                xI: () => X,
-                xS: () => ee,
+                nm: () => tr,
+                nz: () => Y,
+                pI: () => ir,
+                r5: () => x,
+                rq: () => Gr,
+                rw: () => $,
+                t$: () => b,
+                tN: () => l,
+                uX: () => pr,
+                v5: () => U,
+                vb: () => X,
+                w$: () => A,
+                xI: () => K,
+                xS: () => er,
                 xm: () => B,
-                zv: () => oe
+                zv: () => nr
             });
-            var t = u(4942),
-                o = u(15861),
-                n = u(64687),
-                a = u.n(n),
-                s = u(64358),
-                i = u(61509);
+            var u = t(4942),
+                o = t(15861),
+                n = t(64687),
+                a = t.n(n),
+                s = t(64358),
+                i = t(61509);
 
-            function p(e, r) {
-                var u = Object.keys(e);
+            function p(r, e) {
+                var t = Object.keys(r);
                 if (Object.getOwnPropertySymbols) {
-                    var t = Object.getOwnPropertySymbols(e);
-                    r && (t = t.filter((function(r) {
-                        return Object.getOwnPropertyDescriptor(e, r).enumerable
-                    }))), u.push.apply(u, t)
+                    var u = Object.getOwnPropertySymbols(r);
+                    e && (u = u.filter((function(e) {
+                        return Object.getOwnPropertyDescriptor(r, e).enumerable
+                    }))), t.push.apply(t, u)
                 }
-                return u
+                return t
             }
 
-            function d(e) {
-                for (var r = 1; r < arguments.length; r++) {
-                    var u = null != arguments[r] ? arguments[r] : {};
-                    r % 2 ? p(Object(u), !0).forEach((function(r) {
-                        (0, t.Z)(e, r, u[r])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(u)) : p(Object(u)).forEach((function(r) {
-                        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(u, r))
+            function d(r) {
+                for (var e = 1; e < arguments.length; e++) {
+                    var t = null != arguments[e] ? arguments[e] : {};
+                    e % 2 ? p(Object(t), !0).forEach((function(e) {
+                        (0, u.Z)(r, e, t[e])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach((function(e) {
+                        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
                     }))
                 }
-                return e
+                return r
             }
             var c = i.S.injectEndpoints({
-                    endpoints: function(e) {
+                    endpoints: function(r) {
                         return {
-                            getGroupById: e.query({
-                                queryFn: function(e, r, u, t) {
-                                    return (0, o.Z)(a().mark((function r() {
-                                        var u, n, s, i, p, c, g, l, y, G, m;
-                                        return a().wrap((function(r) {
-                                            for (;;) switch (r.prev = r.next) {
+                            createGroup: r.mutation({
+                                queryFn: (t = (0, o.Z)(a().mark((function r(e, t, u, o) {
+                                    var n, s, i, p, c, l, g, y, G, v, m, f, I, b, T, q, M, h, P, R, E, k, S;
+                                    return a().wrap((function(r) {
+                                        for (;;) switch (r.prev = r.next) {
+                                            case 0:
+                                                if (i = e.banner, p = void 0 === i ? null : i, c = e.bannerId, l = void 0 === c ? null : c, g = e.icon, y = void 0 === g ? null : g, G = e.iconId, v = void 0 === G ? null : G, m = e.tag, f = void 0 === m ? "gallery" : m, I = e.name, b = e.description, T = void 0 === b ? "" : b, q = e.joinState, M = e.privacy, h = e.shortCode, P = e.roleTemplate, R = void 0 === P ? "default" : P, !p) {
+                                                    r.next = 7;
+                                                    break
+                                                }
+                                                return r.next = 4, o({
+                                                    url: "file/image",
+                                                    method: "POST",
+                                                    body: (t = void 0, t = new FormData, t.append("file", p), t.append("tag", f), t)
+                                                });
+                                            case 4:
+                                                r.t0 = r.sent, r.next = 8;
+                                                break;
+                                            case 7:
+                                                r.t0 = null;
+                                            case 8:
+                                                if (null == (E = r.t0) || !E.error) {
+                                                    r.next = 11;
+                                                    break
+                                                }
+                                                return r.abrupt("return", {
+                                                    error: E.error
+                                                });
+                                            case 11:
+                                                if (!y) {
+                                                    r.next = 17;
+                                                    break
+                                                }
+                                                return r.next = 14, o({
+                                                    url: "file/image",
+                                                    method: "POST",
+                                                    body: function() {
+                                                        var r = new FormData;
+                                                        return r.append("file", y), r.append("tag", f), r
+                                                    }()
+                                                });
+                                            case 14:
+                                                r.t1 = r.sent, r.next = 18;
+                                                break;
+                                            case 17:
+                                                r.t1 = null;
+                                            case 18:
+                                                if (null == (k = r.t1) || !k.error) {
+                                                    r.next = 21;
+                                                    break
+                                                }
+                                                return r.abrupt("return", {
+                                                    error: k.error
+                                                });
+                                            case 21:
+                                                return r.next = 23, o({
+                                                    url: "groups",
+                                                    method: "POST",
+                                                    body: {
+                                                        bannerId: E ? null == E || null === (n = E.data) || void 0 === n ? void 0 : n.id : l,
+                                                        iconId: k ? null == k || null === (s = k.data) || void 0 === s ? void 0 : s.id : v,
+                                                        name: I,
+                                                        description: T,
+                                                        joinState: q,
+                                                        privacy: M,
+                                                        shortCode: h,
+                                                        roleTemplate: R
+                                                    }
+                                                });
+                                            case 23:
+                                                if (null == (S = r.sent) || !S.error) {
+                                                    r.next = 26;
+                                                    break
+                                                }
+                                                return r.abrupt("return", {
+                                                    error: S.error
+                                                });
+                                            case 26:
+                                                return r.abrupt("return", {
+                                                    data: d(d({
+                                                        group: S.data
+                                                    }, (null == E ? void 0 : E.data) && {
+                                                        banner: E.data
+                                                    }), (null == k ? void 0 : k.data) && {
+                                                        icon: k.data
+                                                    })
+                                                });
+                                            case 27:
+                                            case "end":
+                                                return r.stop()
+                                        }
+                                        var t
+                                    }), r)
+                                }))), function(r, e, u, o) {
+                                    return t.apply(this, arguments)
+                                }),
+                                invalidatesTags: function(r, e, t) {
+                                    var u = t.tag;
+                                    return [{
+                                        type: "Groups"
+                                    }, {
+                                        type: "Group",
+                                        id: r.group.id
+                                    }, {
+                                        type: "FilesForTag",
+                                        id: "PARTIAL-LIST:".concat(u)
+                                    }, {
+                                        type: "UserGalleryPictures",
+                                        id: r.group.ownerId
+                                    }]
+                                }
+                            }),
+                            getGroupById: r.query({
+                                queryFn: function(r, e, t, u) {
+                                    return (0, o.Z)(a().mark((function e() {
+                                        var t, n, s, i, p, c, l, g, y, G, v;
+                                        return a().wrap((function(e) {
+                                            for (;;) switch (e.prev = e.next) {
                                                 case 0:
-                                                    return u = e.groupId, n = e.includeRoles, s = void 0 === n || n, i = e.purpose, p = void 0 === i ? "other" : i, r.next = 3, t({
-                                                        url: "/groups/".concat(u),
+                                                    return t = r.groupId, n = r.includeRoles, s = void 0 === n || n, i = r.purpose, p = void 0 === i ? "other" : i, e.next = 3, u({
+                                                        url: "/groups/".concat(t),
                                                         params: {
                                                             includeRoles: s,
                                                             purpose: p
                                                         }
                                                     });
                                                 case 3:
-                                                    if (!(c = r.sent).error) {
-                                                        r.next = 6;
+                                                    if (!(c = e.sent).error) {
+                                                        e.next = 6;
                                                         break
                                                     }
-                                                    return r.abrupt("return", {
+                                                    return e.abrupt("return", {
                                                         error: c.error
                                                     });
                                                 case 6:
-                                                    return g = c.data, l = "softdeleted" === g.membershipStatus, y = 3 === Object.keys(g).length, G = function() {
-                                                        var e = (0, o.Z)(a().mark((function e() {
-                                                            var r, u;
-                                                            return a().wrap((function(e) {
-                                                                for (;;) switch (e.prev = e.next) {
+                                                    return l = c.data, g = "softdeleted" === l.membershipStatus, y = 3 === Object.keys(l).length, G = function() {
+                                                        var r = (0, o.Z)(a().mark((function r() {
+                                                            var e, t;
+                                                            return a().wrap((function(r) {
+                                                                for (;;) switch (r.prev = r.next) {
                                                                     case 0:
                                                                         if (!y) {
-                                                                            e.next = 2;
+                                                                            r.next = 2;
                                                                             break
                                                                         }
-                                                                        return e.abrupt("return", null);
+                                                                        return r.abrupt("return", null);
                                                                     case 2:
-                                                                        return e.next = 4, t("users/".concat(g.ownerId));
+                                                                        return r.next = 4, u("users/".concat(l.ownerId));
                                                                     case 4:
-                                                                        if (!(r = e.sent).error) {
-                                                                            e.next = 7;
+                                                                        if (!(e = r.sent).error) {
+                                                                            r.next = 7;
                                                                             break
                                                                         }
-                                                                        return e.abrupt("return", {
-                                                                            error: r.error
+                                                                        return r.abrupt("return", {
+                                                                            error: e.error
                                                                         });
                                                                     case 7:
-                                                                        return u = r.data, e.abrupt("return", d(d({}, u), {}, {
-                                                                            joinedAt: g.createdAt
+                                                                        return t = e.data, r.abrupt("return", d(d({}, t), {}, {
+                                                                            joinedAt: l.createdAt
                                                                         }));
                                                                     case 9:
                                                                     case "end":
-                                                                        return e.stop()
+                                                                        return r.stop()
                                                                 }
-                                                            }), e)
+                                                            }), r)
                                                         })));
                                                         return function() {
-                                                            return e.apply(this, arguments)
+                                                            return r.apply(this, arguments)
                                                         }
-                                                    }(), m = function() {
-                                                        var e;
-                                                        return null != g && g.myMember && null != g && g.roles ? null == g || null === (e = g.roles) || void 0 === e ? void 0 : e.map((function(e) {
-                                                            var r;
-                                                            return null != g && null !== (r = g.myMember) && void 0 !== r && null !== (r = r.roleIds) && void 0 !== r && r.includes(e.id) ? e.order : Number.MAX_SAFE_INTEGER
-                                                        })).sort((function(e, r) {
-                                                            return e - r
+                                                    }(), v = function() {
+                                                        var r;
+                                                        return null != l && l.myMember && null != l && l.roles ? null == l || null === (r = l.roles) || void 0 === r ? void 0 : r.map((function(r) {
+                                                            var e;
+                                                            return null != l && null !== (e = l.myMember) && void 0 !== e && null !== (e = e.roleIds) && void 0 !== e && e.includes(r.id) ? r.order : Number.MAX_SAFE_INTEGER
+                                                        })).sort((function(r, e) {
+                                                            return r - e
                                                         }))[0] : Number.MAX_SAFE_INTEGER
-                                                    }, r.t0 = d, r.t1 = d({}, g), r.t2 = {}, r.t3 = l, r.t4 = y, r.t5 = m(), r.next = 19, G();
+                                                    }, e.t0 = d, e.t1 = d({}, l), e.t2 = {}, e.t3 = g, e.t4 = y, e.t5 = v(), e.next = 19, G();
                                                 case 19:
-                                                    return r.t6 = r.sent, r.t7 = {
-                                                        isSoftDeleted: r.t3,
-                                                        isSoftDeleting: r.t4,
-                                                        memberRank: r.t5,
-                                                        ownerData: r.t6
-                                                    }, r.t8 = (0, r.t0)(r.t1, r.t2, r.t7), r.abrupt("return", {
-                                                        data: r.t8
+                                                    return e.t6 = e.sent, e.t7 = {
+                                                        isSoftDeleted: e.t3,
+                                                        isSoftDeleting: e.t4,
+                                                        memberRank: e.t5,
+                                                        ownerData: e.t6
+                                                    }, e.t8 = (0, e.t0)(e.t1, e.t2, e.t7), e.abrupt("return", {
+                                                        data: e.t8
                                                     });
                                                 case 23:
                                                 case "end":
-                                                    return r.stop()
+                                                    return e.stop()
                                             }
-                                        }), r)
+                                        }), e)
                                     })))()
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "Group",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupsForUser: e.query({
-                                query: function(e) {
-                                    var r = e.userId;
-                                    return "/users/".concat(r, "/groups")
+                            getGroupsForUser: r.query({
+                                query: function(r) {
+                                    var e = r.userId;
+                                    return "/users/".concat(e, "/groups")
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "UserGroups",
-                                        id: u.userId
+                                        id: t.userId
                                     }]
                                 }
                             }),
-                            getGroupPosts: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.n,
-                                        t = e.pageValue,
-                                        o = e.publicOnly;
+                            getGroupPosts: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.n,
+                                        u = r.pageValue,
+                                        o = r.publicOnly;
                                     return {
-                                        url: "/groups/".concat(r, "/posts"),
+                                        url: "/groups/".concat(e, "/posts"),
                                         method: "GET",
                                         params: d(d({}, (0, s.ue)({
-                                            n: u,
-                                            pageValue: t
+                                            n: t,
+                                            pageValue: u
                                         })), {}, {
                                             publicOnly: o
                                         })
                                     }
                                 },
-                                transformResponse: function(e, r, u) {
-                                    var t, o = u.pageValue,
-                                        n = u.n;
-                                    return d(d({}, e), {}, {
+                                transformResponse: function(r, e, t) {
+                                    var u, o = t.pageValue,
+                                        n = t.n;
+                                    return d(d({}, r), {}, {
                                         offset: (0, s.ue)({
                                             n,
                                             pageValue: o
                                         }).offset,
                                         isLastPage: (0, s.L6)({
                                             n,
-                                            pageResultsLength: null === (t = e.posts) || void 0 === t ? void 0 : t.length,
+                                            pageResultsLength: null === (u = r.posts) || void 0 === u ? void 0 : u.length,
                                             pageValue: o,
-                                            total: e.total
+                                            total: r.total
                                         })
                                     })
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupPosts",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            createGroupPost: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.text,
-                                        t = e.title,
-                                        o = e.imageId,
-                                        n = e.sendNotification,
+                            createGroupPost: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.text,
+                                        u = r.title,
+                                        o = r.imageId,
+                                        n = r.sendNotification,
                                         a = void 0 === n || n,
-                                        s = e.roleIds,
+                                        s = r.roleIds,
                                         i = void 0 === s ? [] : s,
-                                        p = e.visibility,
+                                        p = r.visibility,
                                         d = void 0 === p ? "group" : p;
                                     return {
-                                        url: "/groups/".concat(r, "/posts"),
+                                        url: "/groups/".concat(e, "/posts"),
                                         method: "POST",
                                         body: {
-                                            text: u,
-                                            title: t,
+                                            text: t,
+                                            title: u,
                                             imageId: o,
                                             sendNotification: a,
                                             roleIds: i,
@@ -258,132 +372,132 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: function(e, r, u) {
+                                invalidatesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupPosts",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            deleteGroupPost: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.postId;
+                            deleteGroupPost: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.postId;
                                     return {
-                                        url: "/groups/".concat(r, "/posts/").concat(u),
+                                        url: "/groups/".concat(e, "/posts/").concat(t),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: function(e, r, u) {
+                                invalidatesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupPosts",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupActiveInstances: e.query({
-                                query: function(e) {
-                                    var r = e.groupId;
-                                    return "/groups/".concat(r, "/instances")
+                            getGroupActiveInstances: r.query({
+                                query: function(r) {
+                                    var e = r.groupId;
+                                    return "/groups/".concat(e, "/instances")
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupActiveInstances",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupsPermissions: e.query({
-                                query: function(e) {
-                                    var r = e.groupId;
-                                    return "/groups/".concat(r, "/permissions")
+                            getGroupsPermissions: r.query({
+                                query: function(r) {
+                                    var e = r.groupId;
+                                    return "/groups/".concat(e, "/permissions")
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupPermissions",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getAllUserGroupsPermissions: e.query({
-                                query: function(e) {
-                                    var r = e.userId;
-                                    return "/users/".concat(r, "/groups/permissions")
+                            getAllUserGroupsPermissions: r.query({
+                                query: function(r) {
+                                    var e = r.userId;
+                                    return "/users/".concat(e, "/groups/permissions")
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "UserGroupsPermissions",
-                                        id: u.userId
+                                        id: t.userId
                                     }]
                                 }
                             }),
-                            getGroupReports: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            getGroupReports: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/users/".concat(u, "/feedback?contentId=").concat(r, "&metadata=true")
+                                        url: "/users/".concat(t, "/feedback?contentId=").concat(e, "&metadata=true")
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupFeedback",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            createGroupReports: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.reasons,
-                                        t = e.locations,
-                                        o = e.description;
+                            createGroupReports: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.reasons,
+                                        u = r.locations,
+                                        o = r.description;
                                     return {
-                                        url: "/feedbacks/group/".concat(r),
+                                        url: "/feedbacks/group/".concat(e),
                                         method: "POST",
                                         body: {
                                             type: "report",
-                                            reasons: u,
-                                            locations: t,
+                                            reasons: t,
+                                            locations: u,
                                             description: o
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
+                                invalidatesTags: (0, i.T)((function(r) {
                                     return [{
                                         type: "GroupFeedback",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }]
                                 }))
                             }),
-                            updateGroupTags: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.tags;
+                            updateGroupTags: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.tags;
                                     return {
-                                        url: "/groups/".concat(r),
+                                        url: "/groups/".concat(e),
                                         method: "PUT",
                                         body: {
-                                            tags: u
+                                            tags: t
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            removeGroupIconAndBanner: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            removeGroupIconAndBanner: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r),
+                                        url: "/groups/".concat(e),
                                         method: "PUT",
                                         body: {
                                             bannerId: null,
@@ -391,520 +505,518 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            updateGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.data;
+                            updateGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.data;
                                     return {
-                                        url: "/groups/".concat(r),
+                                        url: "/groups/".concat(e),
                                         method: "PUT",
-                                        body: d({}, u)
+                                        body: d({}, t)
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            deleteGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.hardDelete,
-                                        t = void 0 !== u && u;
+                            deleteGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.hardDelete,
+                                        u = void 0 !== t && t;
                                     return {
-                                        url: "/groups/".concat(r),
+                                        url: "/groups/".concat(e),
                                         method: "DELETE",
                                         params: {
-                                            hardDelete: t
+                                            hardDelete: u
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.ownerId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
+                                        type: "Groups"
+                                    }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
                                     }, {
-                                        type: "UserGroups",
-                                        id: u
+                                        type: "UserGroups"
                                     }, {
-                                        type: "UserListings",
-                                        id: u
+                                        type: "UserListings"
                                     }, {
-                                        type: "UserProducts",
-                                        id: u
+                                        type: "UserProducts"
                                     }]
                                 }))
                             }),
-                            getGroupMembers: e.query({
-                                queryFn: function(e, r, u, t) {
-                                    return (0, o.Z)(a().mark((function r() {
-                                        var u, o, n, s, i, p, c, g, l, y, G;
-                                        return a().wrap((function(r) {
-                                            for (;;) switch (r.prev = r.next) {
+                            getGroupMembers: r.query({
+                                queryFn: function(r, e, t, u) {
+                                    return (0, o.Z)(a().mark((function e() {
+                                        var t, o, n, s, i, p, c, l, g, y, G;
+                                        return a().wrap((function(e) {
+                                            for (;;) switch (e.prev = e.next) {
                                                 case 0:
-                                                    return u = e.groupId, o = e.perPage, n = void 0 === o ? 25 : o, s = e.page, i = void 0 === s ? 0 : s, p = e.roleId, c = void 0 === p ? null : p, g = e.sort, l = void 0 === g ? null : g, r.next = 3, t({
-                                                        url: "/groups/".concat(u, "/members"),
+                                                    return t = r.groupId, o = r.perPage, n = void 0 === o ? 25 : o, s = r.page, i = void 0 === s ? 0 : s, p = r.roleId, c = void 0 === p ? null : p, l = r.sort, g = void 0 === l ? null : l, e.next = 3, u({
+                                                        url: "/groups/".concat(t, "/members"),
                                                         params: {
                                                             n,
                                                             offset: i * n,
                                                             roleId: null !== c ? c : void 0,
-                                                            sort: null !== l ? l : void 0
+                                                            sort: null !== g ? g : void 0
                                                         }
                                                     });
                                                 case 3:
-                                                    if (!(y = r.sent).error) {
-                                                        r.next = 6;
+                                                    if (!(y = e.sent).error) {
+                                                        e.next = 6;
                                                         break
                                                     }
-                                                    return r.abrupt("return", {
+                                                    return e.abrupt("return", {
                                                         error: y.error
                                                     });
                                                 case 6:
                                                     return G = {
                                                         members: y.data,
                                                         isLastPage: y.data.length < n
-                                                    }, r.abrupt("return", {
+                                                    }, e.abrupt("return", {
                                                         data: d({
                                                             page: i
                                                         }, G)
                                                     });
                                                 case 8:
                                                 case "end":
-                                                    return r.stop()
+                                                    return e.stop()
                                             }
-                                        }), r)
+                                        }), e)
                                     })))()
                                 },
-                                providesTags: function(e, r, u) {
-                                    var t = u.groupId;
+                                providesTags: function(r, e, t) {
+                                    var u = t.groupId;
                                     return [{
                                         type: "GroupMembers",
-                                        id: t
+                                        id: u
                                     }, {
                                         type: "GroupMemberPage",
-                                        id: "".concat(t, "-").concat(null == e ? void 0 : e.page)
+                                        id: "".concat(u, "-").concat(null == r ? void 0 : r.page)
                                     }]
                                 }
                             }),
-                            getSearchGroupMembers: e.query({
-                                query: function(e) {
+                            getSearchGroupMembers: r.query({
+                                query: function(r) {
                                     return {
-                                        url: "/groups/".concat(e.groupId, "/members/search"),
-                                        params: (0, s.Ld)(e)
+                                        url: "/groups/".concat(r.groupId, "/members/search"),
+                                        params: (0, s.Ld)(r)
                                     }
                                 },
-                                providesTags: function(e, r, u) {
-                                    u.groupId;
+                                providesTags: function(r, e, t) {
+                                    t.groupId;
                                     return [{
                                         type: "GroupMembersSearch"
                                     }]
                                 },
-                                transformResponse: function(e, r, u) {
-                                    var t, o = u.pageValue,
-                                        n = u.n;
-                                    return d(d({}, e), {}, {
+                                transformResponse: function(r, e, t) {
+                                    var u, o = t.pageValue,
+                                        n = t.n;
+                                    return d(d({}, r), {}, {
                                         isLastPage: (0, s.L6)({
                                             n,
-                                            pageResultsLength: null === (t = e.results) || void 0 === t ? void 0 : t.length,
+                                            pageResultsLength: null === (u = r.results) || void 0 === u ? void 0 : u.length,
                                             pageValue: o,
-                                            total: e.total
+                                            total: r.total
                                         })
                                     })
                                 }
                             }),
-                            joinGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.inviteId,
-                                        t = e.confirmOverrideBlock,
-                                        o = void 0 !== t && t;
+                            joinGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.inviteId,
+                                        u = r.confirmOverrideBlock,
+                                        o = void 0 !== u && u;
                                     return {
-                                        url: "/groups/".concat(r, "/join?confirmOverrideBlock=").concat(o),
+                                        url: "/groups/".concat(e, "/join?confirmOverrideBlock=").concat(o),
                                         method: "POST",
                                         body: {
-                                            inviteId: u
+                                            inviteId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "UserGroups:invited"
                                     }]
                                 }))
                             }),
-                            cancelGroupJoinRequest: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            cancelGroupJoinRequest: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/requests"),
+                                        url: "/groups/".concat(e, "/requests"),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
+                                invalidatesTags: (0, i.T)((function(r) {
                                     return [{
                                         type: "Group",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }]
                                 }))
                             }),
-                            getGroupMemberByUserId: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            getGroupMemberByUserId: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u)
+                                        url: "/groups/".concat(e, "/members/").concat(t)
                                     }
                                 },
-                                providesTags: function(e, r, u) {
-                                    var t = u.groupId,
-                                        o = u.userId;
+                                providesTags: function(r, e, t) {
+                                    var u = t.groupId,
+                                        o = t.userId;
                                     return [{
                                         type: "GroupMember",
-                                        id: t + (void 0 === o ? "" : o)
+                                        id: u + (void 0 === o ? "" : o)
                                     }]
                                 }
                             }),
-                            getGroupBannedMembers: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.perPage,
-                                        t = void 0 === u ? 100 : u,
-                                        o = e.offset,
+                            getGroupBannedMembers: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.perPage,
+                                        u = void 0 === t ? 100 : t,
+                                        o = r.offset,
                                         n = void 0 === o ? 0 : o;
                                     return {
-                                        url: "/groups/".concat(r, "/bans"),
+                                        url: "/groups/".concat(e, "/bans"),
                                         params: {
-                                            n: t,
+                                            n: u,
                                             offset: n
                                         }
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupBannedMembers",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            banGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            banGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/bans"),
+                                        url: "/groups/".concat(e, "/bans"),
                                         method: "POST",
                                         body: {
-                                            userId: u
+                                            userId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId,
-                                        t = void 0 === u ? "" : u,
-                                        o = e.fromPage;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId,
+                                        u = void 0 === t ? "" : t,
+                                        o = r.fromPage;
                                     return [{
                                         type: "GroupMembersSearch"
                                     }, {
                                         type: "GroupBannedMembers",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMember",
-                                        id: r + t
+                                        id: e + u
                                     }, {
                                         type: "GroupMemberPage",
-                                        id: "".concat(r, "-").concat(o)
+                                        id: "".concat(e, "-").concat(o)
                                     }]
                                 }))
                             }),
-                            unbanGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            unbanGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/bans/").concat(u),
+                                        url: "/groups/".concat(e, "/bans/").concat(t),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return [{
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupBannedMembers",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMember",
-                                        id: r + (void 0 === u ? "" : u)
+                                        id: e + (void 0 === t ? "" : t)
                                     }]
                                 }))
                             }),
-                            kickGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            kickGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u),
+                                        url: "/groups/".concat(e, "/members/").concat(t),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId,
-                                        t = void 0 === u ? "" : u,
-                                        o = e.fromPage;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId,
+                                        u = void 0 === t ? "" : t,
+                                        o = r.fromPage;
                                     return [{
                                         type: "GroupMembersSearch"
                                     }, {
                                         type: "GroupMember",
-                                        id: r + t
+                                        id: e + u
                                     }, {
                                         type: "GroupMemberPage",
-                                        id: "".concat(r, "-").concat(o)
+                                        id: "".concat(e, "-").concat(o)
                                     }]
                                 }))
                             }),
-                            unblockGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            unblockGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u),
+                                        url: "/groups/".concat(e, "/members/").concat(t),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "UserGroups:userblocked"
                                     }, {
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            blockGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            blockGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/block"),
+                                        url: "/groups/".concat(e, "/block"),
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
+                                invalidatesTags: (0, i.T)((function(r) {
                                     return [{
                                         type: "Group",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }, {
                                         type: "UserGroups:userblocked"
                                     }]
                                 }))
                             }),
-                            leaveGroup: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            leaveGroup: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/leave"),
+                                        url: "/groups/".concat(e, "/leave"),
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return [{
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMember",
-                                        id: r + (void 0 === u ? "" : u)
+                                        id: e + (void 0 === t ? "" : t)
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            deleteGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            deleteGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u),
+                                        url: "/groups/".concat(e, "/members/").concat(t),
                                         method: "DELETE"
                                     }
                                 }
                             }),
-                            getGroupInvites: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.perPage,
-                                        t = void 0 === u ? 100 : u,
-                                        o = e.offset,
+                            getGroupInvites: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.perPage,
+                                        u = void 0 === t ? 100 : t,
+                                        o = r.offset,
                                         n = void 0 === o ? 0 : o;
                                     return {
-                                        url: "/groups/".concat(r, "/invites"),
+                                        url: "/groups/".concat(e, "/invites"),
                                         params: {
-                                            n: t,
+                                            n: u,
                                             offset: n
                                         }
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupInvites",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            inviteGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            inviteGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/invites"),
+                                        url: "/groups/".concat(e, "/invites"),
                                         method: "POST",
                                         body: {
-                                            userId: u
+                                            userId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupInvites",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            deleteGroupInvite: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            deleteGroupInvite: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/invites/").concat(u),
+                                        url: "/groups/".concat(e, "/invites/").concat(t),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
+                                invalidatesTags: (0, i.T)((function(r) {
                                     return [{
                                         type: "GroupInvites",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }]
                                 }))
                             }),
-                            getGroupJoinRequests: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.perPage,
-                                        t = void 0 === u ? 100 : u,
-                                        o = e.offset,
+                            getGroupJoinRequests: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.perPage,
+                                        u = void 0 === t ? 100 : t,
+                                        o = r.offset,
                                         n = void 0 === o ? 0 : o,
-                                        a = e.blocked,
+                                        a = r.blocked,
                                         s = void 0 !== a && a;
                                     return {
-                                        url: "/groups/".concat(r, "/requests"),
+                                        url: "/groups/".concat(e, "/requests"),
                                         params: {
-                                            n: t,
+                                            n: u,
                                             offset: n,
                                             blocked: s
                                         }
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupJoinRequests",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            acceptGroupJoinRequest: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            acceptGroupJoinRequest: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/requests/").concat(u),
+                                        url: "/groups/".concat(e, "/requests/").concat(t),
                                         method: "PUT",
                                         body: {
                                             action: "accept"
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            rejectGroupJoinRequest: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            rejectGroupJoinRequest: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/requests/").concat(u),
+                                        url: "/groups/".concat(e, "/requests/").concat(t),
                                         method: "PUT",
                                         body: {
                                             action: "reject"
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            blockGroupJoinRequest: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            blockGroupJoinRequest: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/requests/").concat(u),
+                                        url: "/groups/".concat(e, "/requests/").concat(t),
                                         method: "PUT",
                                         body: {
                                             action: "reject",
@@ -912,643 +1024,711 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupMembers",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            banUserFromGroupJoinRequest: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                            banUserFromGroupJoinRequest: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return {
-                                        url: "/groups/".concat(r, "/bans"),
+                                        url: "/groups/".concat(e, "/bans"),
                                         method: "POST",
                                         body: {
-                                            userId: u
+                                            userId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupJoinRequests",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupBannedMembers",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            getGroupMembershipStatus: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.perPage,
-                                        t = void 0 === u ? 100 : u,
-                                        o = e.offset,
+                            getGroupMembershipStatus: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.perPage,
+                                        u = void 0 === t ? 100 : t,
+                                        o = r.offset,
                                         n = void 0 === o ? 0 : o,
-                                        a = e.membershipStatus,
+                                        a = r.membershipStatus,
                                         s = void 0 === a ? "invited" : a;
                                     return {
-                                        url: "/groups/".concat(r, "/").concat(s),
+                                        url: "/groups/".concat(e, "/").concat(s),
                                         params: {
-                                            n: t,
+                                            n: u,
                                             offset: n
                                         }
                                     }
                                 }
                             }),
-                            getGroupRoles: e.query({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            getGroupRoles: r.query({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/roles")
+                                        url: "/groups/".concat(e, "/roles")
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupRoles",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            createGroupRole: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.data;
+                            createGroupRole: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.data;
                                     return {
-                                        url: "/groups/".concat(r, "/roles"),
+                                        url: "/groups/".concat(e, "/roles"),
                                         method: "POST",
-                                        body: d({}, u)
-                                    }
-                                },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.ownerId;
-                                    return [{
-                                        type: "GroupRoles",
-                                        id: r
-                                    }, {
-                                        type: "Group",
-                                        id: r
-                                    }, {
-                                        type: "GroupAuditLogs",
-                                        id: r
-                                    }, {
-                                        type: "UserListings",
-                                        id: u
-                                    }, {
-                                        type: "UserProducts",
-                                        id: u
-                                    }]
-                                }))
-                            }),
-                            updateGroupRole: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.roleId,
-                                        t = e.data;
-                                    return {
-                                        url: "/groups/".concat(r, "/roles/").concat(u),
-                                        method: "PUT",
                                         body: d({}, t)
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupRoles",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
+                                    }, "Stores", "Store", "UserListings", "UserProducts"]
+                                }))
+                            }),
+                            updateGroupRole: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.roleId,
+                                        u = r.data;
+                                    return {
+                                        url: "/groups/".concat(e, "/roles/").concat(t),
+                                        method: "PUT",
+                                        body: d({}, u)
+                                    }
+                                },
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
+                                    return [{
+                                        type: "GroupRoles",
+                                        id: e
+                                    }, {
+                                        type: "Group",
+                                        id: e
+                                    }, {
+                                        type: "GroupAuditLogs",
+                                        id: e
                                     }]
                                 }))
                             }),
-                            deleteGroupRole: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.roleId,
-                                        t = e.confirm;
+                            updateGroupRolewithProduct: r.mutation({
+                                queryFn: (e = (0, o.Z)(a().mark((function r(e, t, u, o) {
+                                    var n, s, i, p, c, l, g;
+                                    return a().wrap((function(r) {
+                                        for (;;) switch (r.prev = r.next) {
+                                            case 0:
+                                                if (n = e.groupId, s = e.roleId, i = e.productId, p = e.roleData, !(c = e.productData) || !i) {
+                                                    r.next = 7;
+                                                    break
+                                                }
+                                                return r.next = 4, o({
+                                                    url: "products/".concat(i),
+                                                    method: "PUT",
+                                                    body: d({}, c)
+                                                });
+                                            case 4:
+                                                r.t0 = r.sent, r.next = 8;
+                                                break;
+                                            case 7:
+                                                r.t0 = null;
+                                            case 8:
+                                                if (null == (l = r.t0) || !l.error) {
+                                                    r.next = 11;
+                                                    break
+                                                }
+                                                return r.abrupt("return", {
+                                                    error: l.error
+                                                });
+                                            case 11:
+                                                return r.next = 13, o({
+                                                    url: "/groups/".concat(n, "/roles/").concat(s),
+                                                    method: "PUT",
+                                                    body: d({}, p)
+                                                });
+                                            case 13:
+                                                if (!(g = r.sent).error) {
+                                                    r.next = 16;
+                                                    break
+                                                }
+                                                return r.abrupt("return", {
+                                                    error: g.error
+                                                });
+                                            case 16:
+                                                return r.abrupt("return", {
+                                                    data: d({
+                                                        role: g.data
+                                                    }, (null == l ? void 0 : l.data) && {
+                                                        product: l.data
+                                                    })
+                                                });
+                                            case 17:
+                                            case "end":
+                                                return r.stop()
+                                        }
+                                    }), r)
+                                }))), function(r, t, u, o) {
+                                    return e.apply(this, arguments)
+                                }),
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
+                                    return [{
+                                        type: "Product",
+                                        id: r.productId
+                                    }, "UserProducts", {
+                                        type: "GroupRoles",
+                                        id: e
+                                    }, {
+                                        type: "Group",
+                                        id: e
+                                    }, {
+                                        type: "GroupAuditLogs",
+                                        id: e
+                                    }]
+                                }))
+                            }),
+                            deleteGroupRole: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.roleId,
+                                        u = r.confirm;
                                     return {
-                                        url: "/groups/".concat(r, "/roles/").concat(u),
+                                        url: "/groups/".concat(e, "/roles/").concat(t),
                                         method: "DELETE",
                                         params: {
-                                            confirm: t
+                                            confirm: u
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.ownerId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupRoles",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "GroupAuditLogs",
-                                        id: r
+                                        id: e
                                     }, {
-                                        type: "UserListings",
-                                        id: u
+                                        type: "UserListings"
                                     }, {
-                                        type: "UserProducts",
-                                        id: u
-                                    }]
+                                        type: "Store"
+                                    }, "Stores", "UserProducts"]
                                 }))
                             }),
-                            updateGroupMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId,
-                                        t = e.visibility,
-                                        o = e.isSubscribedToPosts,
-                                        n = e.managerNotes;
+                            updateGroupMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId,
+                                        u = r.visibility,
+                                        o = r.isSubscribedToPosts,
+                                        n = r.managerNotes;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u),
+                                        url: "/groups/".concat(e, "/members/").concat(t),
                                         method: "PUT",
                                         body: {
-                                            visibility: t,
+                                            visibility: u,
                                             isSubscribedToAnnouncements: o,
                                             managerNotes: n
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return [{
                                         type: "GroupMember",
-                                        id: r + (void 0 === u ? "" : u)
+                                        id: e + (void 0 === t ? "" : t)
                                     }, {
                                         type: "GroupMembersSearch"
                                     }]
                                 }))
                             }),
-                            addRoleToMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId,
-                                        t = e.roleId;
+                            addRoleToMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId,
+                                        u = r.roleId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u, "/roles/").concat(t),
+                                        url: "/groups/".concat(e, "/members/").concat(t, "/roles/").concat(u),
                                         method: "PUT"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return [{
                                         type: "GroupMember",
-                                        id: r + (void 0 === u ? "" : u)
+                                        id: e + (void 0 === t ? "" : t)
                                     }, {
                                         type: "GroupMembersSearch"
                                     }]
                                 }))
                             }),
-                            removeRoleFromMember: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId,
-                                        t = e.roleId;
+                            removeRoleFromMember: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId,
+                                        u = r.roleId;
                                     return {
-                                        url: "/groups/".concat(r, "/members/").concat(u, "/roles/").concat(t),
+                                        url: "/groups/".concat(e, "/members/").concat(t, "/roles/").concat(u),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId,
-                                        u = e.userId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId,
+                                        t = r.userId;
                                     return [{
                                         type: "GroupMember",
-                                        id: r + (void 0 === u ? "" : u)
+                                        id: e + (void 0 === t ? "" : t)
                                     }, {
                                         type: "GroupMembersSearch"
                                     }]
                                 }))
                             }),
-                            getGroupAuditLogTypes: e.query({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            getGroupAuditLogTypes: r.query({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/auditLogTypes")
+                                        url: "/groups/".concat(e, "/auditLogTypes")
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupAuditLogTypes",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupAuditLogs: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.eventTypes,
-                                        t = void 0 === u ? [] : u,
-                                        o = e.perPage,
+                            getGroupAuditLogs: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.eventTypes,
+                                        u = void 0 === t ? [] : t,
+                                        o = r.perPage,
                                         n = void 0 === o ? 1 : o,
-                                        a = e.offset,
-                                        s = e.startDate,
-                                        i = e.endDate;
+                                        a = r.offset,
+                                        s = r.startDate,
+                                        i = r.endDate;
                                     return {
-                                        url: "/groups/".concat(r, "/auditLogs"),
+                                        url: "/groups/".concat(e, "/auditLogs"),
                                         params: {
                                             n,
                                             offset: a,
                                             startDate: s,
                                             endDate: i,
-                                            eventTypes: t
+                                            eventTypes: u
                                         }
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupAuditLogs",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupGalleries: e.query({
-                                query: function(e) {
-                                    var r = e.groupId;
+                            getGroupGalleries: r.query({
+                                query: function(r) {
+                                    var e = r.groupId;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries")
+                                        url: "/groups/".concat(e, "/galleries")
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupGalleries",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getGroupGalleryImages: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.galleryId,
-                                        t = e.n,
-                                        o = e.page,
+                            getGroupGalleryImages: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.galleryId,
+                                        u = r.n,
+                                        o = r.page,
                                         n = void 0 === o ? 1 : o;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries/").concat(u),
+                                        url: "/groups/".concat(e, "/galleries/").concat(t),
                                         params: {
                                             v: 2,
-                                            n: t,
-                                            offset: (n - 1) * t
+                                            n: u,
+                                            offset: (n - 1) * u
                                         }
                                     }
                                 },
-                                providesTags: function(e, r, u) {
+                                providesTags: function(r, e, t) {
                                     return [{
                                         type: "GroupGalleryImages",
-                                        id: u.groupId + u.galleryId
+                                        id: t.groupId + t.galleryId
                                     }]
                                 }
                             }),
-                            createGroupGallery: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.name,
-                                        t = e.description,
-                                        o = e.membersOnly;
+                            createGroupGallery: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.name,
+                                        u = r.description,
+                                        o = r.membersOnly;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries"),
+                                        url: "/groups/".concat(e, "/galleries"),
                                         method: "POST",
                                         body: {
-                                            name: u,
-                                            description: t,
+                                            name: t,
+                                            description: u,
                                             membersOnly: o
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupGalleries",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            updateGroupGallery: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.galleryId,
-                                        t = e.data;
+                            updateGroupGallery: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.galleryId,
+                                        u = r.data;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries/").concat(u),
+                                        url: "/groups/".concat(e, "/galleries/").concat(t),
                                         method: "PUT",
-                                        body: d({}, t)
+                                        body: d({}, u)
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupGalleryImages",
-                                        id: r + e.galleryId
+                                        id: e + r.galleryId
                                     }, {
                                         type: "GroupGalleries",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            deleteGroupGallery: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.galleryId,
-                                        t = e.confirm;
+                            deleteGroupGallery: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.galleryId,
+                                        u = r.confirm;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries/").concat(u, "?confirm=").concat(t),
+                                        url: "/groups/".concat(e, "/galleries/").concat(t, "?confirm=").concat(u),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupGalleryImages",
-                                        id: r + e.galleryId
+                                        id: e + r.galleryId
                                     }, {
                                         type: "GroupGalleries",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }
                             }),
-                            deleteGroupGalleryImage: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.galleryId,
-                                        t = e.imageId;
+                            deleteGroupGalleryImage: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.galleryId,
+                                        u = r.imageId;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries/").concat(u, "/images/").concat(t),
+                                        url: "/groups/".concat(e, "/galleries/").concat(t, "/images/").concat(u),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupGalleryImages",
-                                        id: r + e.galleryId
+                                        id: e + r.galleryId
                                     }, {
                                         type: "GroupGalleries",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            submitGroupGalleryImage: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.galleryId,
-                                        t = e.fileId;
+                            submitGroupGalleryImage: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.galleryId,
+                                        u = r.fileId;
                                     return {
-                                        url: "/groups/".concat(r, "/galleries/").concat(u, "/images"),
+                                        url: "/groups/".concat(e, "/galleries/").concat(t, "/images"),
                                         method: "POST",
                                         body: {
-                                            fileId: t
+                                            fileId: u
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
-                                    var r = e.groupId;
+                                invalidatesTags: (0, i.T)((function(r) {
+                                    var e = r.groupId;
                                     return [{
                                         type: "GroupGalleryImages",
-                                        id: r + e.galleryId
+                                        id: e + r.galleryId
                                     }, {
                                         type: "GroupGalleries",
-                                        id: r
+                                        id: e
                                     }, {
                                         type: "Group",
-                                        id: r
+                                        id: e
                                     }]
                                 }))
                             }),
-                            getGroupRoleTemplates: e.query({
+                            getGroupRoleTemplates: r.query({
                                 query: function() {
                                     return {
                                         url: "/groups/roleTemplates"
                                     }
                                 }
                             }),
-                            searchGroups: e.query({
-                                query: function(e) {
+                            searchGroups: r.query({
+                                query: function(r) {
                                     return {
                                         url: "/groups",
                                         params: {
-                                            query: e.query,
+                                            query: r.query,
                                             n: 100
                                         }
                                     }
                                 }
                             }),
-                            createGroupInstance: e.mutation({
-                                query: function(e) {
+                            createGroupInstance: r.mutation({
+                                query: function(r) {
                                     return {
                                         url: "/instances",
                                         method: "POST",
                                         body: {
-                                            worldId: e.worldId,
-                                            ownerId: e.groupId,
-                                            type: e.instanceType,
-                                            groupAccessType: e.groupAccessType,
-                                            region: e.region,
-                                            queueEnabled: e.queueEnabled,
-                                            roleIds: e.roleIds || []
+                                            worldId: r.worldId,
+                                            ownerId: r.groupId,
+                                            type: r.instanceType,
+                                            groupAccessType: r.groupAccessType,
+                                            region: r.region,
+                                            queueEnabled: r.queueEnabled,
+                                            roleIds: r.roleIds || []
                                         }
                                     }
                                 },
-                                invalidatesTags: function(e, r, u) {
+                                invalidatesTags: function(r, e, t) {
                                     return [{
                                         type: "Group",
-                                        id: u.groupId
+                                        id: t.groupId
                                     }]
                                 }
                             }),
-                            getUserGroupsByMembershipStatus: e.query({
-                                query: function(e) {
-                                    var r = e.userId,
-                                        u = e.membershipStatus;
+                            getUserGroupsByMembershipStatus: r.query({
+                                query: function(r) {
+                                    var e = r.userId,
+                                        t = r.membershipStatus;
                                     return {
-                                        url: "/users/".concat(r, "/groups/").concat(u)
+                                        url: "/users/".concat(e, "/groups/").concat(t)
                                     }
                                 },
-                                providesTags: function(e, r, u) {
-                                    var t = u.membershipStatus;
+                                providesTags: function(r, e, t) {
+                                    var u = t.membershipStatus;
                                     return [{
-                                        type: "UserGroups:".concat(t)
+                                        type: "UserGroups:".concat(u)
                                     }]
                                 }
                             }),
-                            declineGroupInvite: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.block,
-                                        t = void 0 !== u && u;
+                            declineGroupInvite: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.block,
+                                        u = void 0 !== t && t;
                                     return {
-                                        url: "groups/".concat(r, "/invites"),
+                                        url: "groups/".concat(e, "/invites"),
                                         method: "PUT",
                                         body: {
-                                            block: t
+                                            block: u
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(e) {
+                                invalidatesTags: (0, i.T)((function(r) {
                                     return [{
                                         type: "UserGroups:invited"
                                     }, {
                                         type: "Group",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }]
                                 }))
                             }),
-                            getTransferGroupValidity: e.query({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.transferTargetId;
+                            getTransferGroupValidity: r.query({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.transferTargetId;
                                     return {
-                                        url: "groups/".concat(r, "/transfer"),
+                                        url: "groups/".concat(e, "/transfer"),
                                         method: "GET",
                                         params: {
-                                            transferTargetId: u
+                                            transferTargetId: t
                                         }
                                     }
                                 },
-                                providesTags: function(e) {
+                                providesTags: function(r) {
                                     return [{
                                         type: "GroupTransfer",
-                                        id: e.groupId
+                                        id: r.groupId
                                     }]
                                 }
                             }),
-                            acceptGroupTransfer: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.transferTargetId;
+                            acceptGroupTransfer: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.transferTargetId;
                                     return {
-                                        url: "groups/".concat(r, "/transfer"),
+                                        url: "groups/".concat(e, "/transfer"),
                                         method: "POST",
                                         body: {
-                                            transferTargetId: u
+                                            transferTargetId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: function(e, r, u) {
-                                    var t = u.groupId;
+                                invalidatesTags: function(r, e, t) {
+                                    var u = t.groupId;
                                     return [{
                                         type: "Group",
-                                        id: t
+                                        id: u
                                     }, {
                                         type: "GroupTransfer",
-                                        id: t
+                                        id: u
                                     }]
                                 }
                             }),
-                            deleteGroupTransfer: e.mutation({
-                                query: function(e) {
-                                    var r = e.groupId,
-                                        u = e.transferTargetId;
+                            deleteGroupTransfer: r.mutation({
+                                query: function(r) {
+                                    var e = r.groupId,
+                                        t = r.transferTargetId;
                                     return {
-                                        url: "groups/".concat(r, "/transfer"),
+                                        url: "groups/".concat(e, "/transfer"),
                                         method: "DELETE",
                                         body: {
-                                            transferTargetId: u
+                                            transferTargetId: t
                                         }
                                     }
                                 },
-                                invalidatesTags: function(e, r, u) {
-                                    var t = u.groupId;
+                                invalidatesTags: function(r, e, t) {
+                                    var u = t.groupId;
                                     return [{
                                         type: "Group",
-                                        id: t
+                                        id: u
                                     }, {
                                         type: "GroupTransfer",
-                                        id: t
+                                        id: u
                                     }]
                                 }
                             })
-                        }
+                        };
+                        var e, t
                     }
                 }).enhanceEndpoints({
                     addTagTypes: ["Group", "GroupActiveInstances", "GroupPost", "GroupAuditLogs", "GroupAuditLogTypes", "GroupBannedMembers", "GroupFeedback", "GroupInvites", "GroupJoinRequests", "GroupMember", "GroupMembersSearch", "GroupPermissions", "GroupRoles", "UserGroups:userblocked", "UserGroups:invited", "UserGroups", "UserGroupsPermissions"]
                 }),
-                g = c.useAcceptGroupJoinRequestMutation,
-                l = c.useAddRoleToMemberMutation,
+                l = c.useAcceptGroupJoinRequestMutation,
+                g = c.useAddRoleToMemberMutation,
                 y = c.useBanGroupMemberMutation,
                 G = c.useBanUserFromGroupJoinRequestMutation,
-                m = c.useBlockGroupJoinRequestMutation,
-                v = c.useBlockGroupMutation,
-                I = c.useCancelGroupJoinRequestMutation,
-                f = c.useCreateGroupPostMutation,
-                b = c.useCreateGroupGalleryMutation,
-                T = c.useCreateGroupInstanceMutation,
-                q = c.useCreateGroupReportsMutation,
-                M = c.useCreateGroupRoleMutation,
-                h = c.useDeleteGroupPostMutation,
-                P = c.useDeleteGroupGalleryImageMutation,
-                R = c.useDeleteGroupGalleryMutation,
-                E = c.useDeleteGroupInviteMutation,
-                L = (c.useDeleteGroupMemberMutation, c.useDeleteGroupMutation),
-                U = c.useDeleteGroupRoleMutation,
-                S = c.useGetAllUserGroupsPermissionsQuery,
-                k = c.useGetGroupActiveInstancesQuery,
-                A = c.useGetGroupPostsQuery,
+                v = c.useBlockGroupJoinRequestMutation,
+                m = c.useBlockGroupMutation,
+                f = c.useCancelGroupJoinRequestMutation,
+                I = c.useCreateGroupMutation,
+                b = c.useCreateGroupPostMutation,
+                T = c.useCreateGroupGalleryMutation,
+                q = c.useCreateGroupInstanceMutation,
+                M = c.useCreateGroupReportsMutation,
+                h = c.useCreateGroupRoleMutation,
+                P = c.useDeleteGroupPostMutation,
+                R = c.useDeleteGroupGalleryImageMutation,
+                E = c.useDeleteGroupGalleryMutation,
+                k = c.useDeleteGroupInviteMutation,
+                S = (c.useDeleteGroupMemberMutation, c.useDeleteGroupMutation),
+                L = c.useDeleteGroupRoleMutation,
+                U = c.useGetAllUserGroupsPermissionsQuery,
+                A = c.useGetGroupActiveInstancesQuery,
+                D = c.useGetGroupPostsQuery,
                 O = c.useGetGroupBannedMembersQuery,
-                D = c.useGetGroupByIdQuery,
+                x = c.useGetGroupByIdQuery,
                 w = (c.useGetGroupGalleriesQuery, c.useGetGroupGalleryImagesQuery),
                 Q = c.useGetGroupInvitesQuery,
                 j = c.useGetGroupJoinRequestsQuery,
                 B = c.useGetGroupMemberByUserIdQuery,
-                J = (c.useGetGroupMembershipStatusQuery, c.useGetGroupReportsQuery),
-                x = c.useGetGroupRolesQuery,
-                F = c.useGetGroupRoleTemplatesQuery,
-                V = c.useGetGroupsForUserQuery,
+                F = (c.useGetGroupMembershipStatusQuery, c.useGetGroupReportsQuery),
+                J = c.useGetGroupRolesQuery,
+                V = c.useGetGroupRoleTemplatesQuery,
+                C = c.useGetGroupsForUserQuery,
                 N = c.useGetGroupsPermissionsQuery,
-                C = c.useGetSearchGroupMembersQuery,
-                _ = c.useGetUserGroupsByMembershipStatusQuery,
-                z = c.useDeclineGroupInviteMutation,
-                Z = c.useInviteGroupMemberMutation,
-                X = c.useJoinGroupMutation,
-                K = c.useKickGroupMemberMutation,
-                W = c.useGetGroupAuditLogTypesQuery,
-                $ = c.useLazyGetGroupAuditLogsQuery,
-                H = c.useLazyGetGroupByIdQuery,
-                Y = c.useLazyGetGroupMembersQuery,
-                ee = (c.useLazyGetGroupRolesQuery, c.useLazySearchGroupsQuery),
-                re = c.useLeaveGroupMutation,
-                ue = c.useRejectGroupJoinRequestMutation,
-                te = (c.useRemoveGroupIconAndBannerMutation, c.useRemoveRoleFromMemberMutation),
-                oe = c.useSubmitGroupGalleryImageMutation,
-                ne = c.useUnbanGroupMemberMutation,
-                ae = c.useUnblockGroupMutation,
-                se = c.useUpdateGroupGalleryMutation,
-                ie = c.useUpdateGroupMemberMutation,
-                pe = c.useUpdateGroupMutation,
-                de = c.useUpdateGroupRoleMutation,
-                ce = (c.useUpdateGroupTagsMutation, c.useGetTransferGroupValidityQuery),
-                ge = c.useAcceptGroupTransferMutation,
-                le = c.useDeleteGroupTransferMutation
+                _ = c.useGetSearchGroupMembersQuery,
+                z = c.useGetUserGroupsByMembershipStatusQuery,
+                Z = c.useDeclineGroupInviteMutation,
+                X = c.useInviteGroupMemberMutation,
+                K = c.useJoinGroupMutation,
+                W = c.useKickGroupMemberMutation,
+                $ = c.useGetGroupAuditLogTypesQuery,
+                H = c.useLazyGetGroupAuditLogsQuery,
+                Y = c.useLazyGetGroupByIdQuery,
+                rr = c.useLazyGetGroupMembersQuery,
+                er = (c.useLazyGetGroupRolesQuery, c.useLazySearchGroupsQuery),
+                tr = c.useLeaveGroupMutation,
+                ur = c.useRejectGroupJoinRequestMutation,
+                or = (c.useRemoveGroupIconAndBannerMutation, c.useRemoveRoleFromMemberMutation),
+                nr = c.useSubmitGroupGalleryImageMutation,
+                ar = c.useUnbanGroupMemberMutation,
+                sr = c.useUnblockGroupMutation,
+                ir = c.useUpdateGroupGalleryMutation,
+                pr = c.useUpdateGroupMemberMutation,
+                dr = c.useUpdateGroupMutation,
+                cr = c.useUpdateGroupRoleMutation,
+                lr = (c.useUpdateGroupTagsMutation, c.useUpdateGroupRolewithProductMutation),
+                gr = c.useGetTransferGroupValidityQuery,
+                yr = c.useAcceptGroupTransferMutation,
+                Gr = c.useDeleteGroupTransferMutation
         }
     }
 ]);
-//# sourceMappingURL=1015f53edb6c044203fc29e291a8ebc29c03a1cf42fc16b6c296a1cd79c73d2c.js.map
+//# sourceMappingURL=d4c3f87d3ac58964e5339d861588ec39dee67185f7b04b9bb69b08ecaed3dfe1.js.map

@@ -15,34 +15,34 @@
             });
             var a = "file-lines",
                 n = [128441, 128462, 61686, "file-alt", "file-text"],
-                c = "f15c",
-                l = "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z";
+                l = "f15c",
+                c = "M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z";
             t.definition = {
                 prefix: "fas",
                 iconName: a,
-                icon: [384, 512, n, c, l]
-            }, t.faFileLines = t.definition, t.prefix = "fas", t.iconName = a, t.width = 384, t.height = 512, t.ligatures = n, t.unicode = c, t.svgPathData = l, t.aliases = n
+                icon: [384, 512, n, l, c]
+            }, t.faFileLines = t.definition, t.prefix = "fas", t.iconName = a, t.width = 384, t.height = 512, t.ligatures = n, t.unicode = l, t.svgPathData = c, t.aliases = n
         },
         26375: (e, t) => {
             var a = "id-card",
                 n = [62147, "drivers-license"],
-                c = "f2c2",
-                l = "M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z";
+                l = "f2c2",
+                c = "M0 96l576 0c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96zm0 32L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-288L0 128zM64 405.3c0-29.5 23.9-53.3 53.3-53.3l117.3 0c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7L74.7 416c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z";
             t.DF = {
                 prefix: "fas",
                 iconName: a,
-                icon: [576, 512, n, c, l]
+                icon: [576, 512, n, l, c]
             }, t.Uk = t.DF
         },
         23598: (e, t) => {
             var a = "money-bill",
                 n = [],
-                c = "f0d6",
-                l = "M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z";
+                l = "f0d6",
+                c = "M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm64 320l-64 0 0-64c35.3 0 64 28.7 64 64zM64 192l0-64 64 0c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64l0 64-64 0zm64-192c-35.3 0-64-28.7-64-64l64 0 0 64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z";
             t.DF = {
                 prefix: "fas",
                 iconName: a,
-                icon: [576, 512, n, c, l]
+                icon: [576, 512, n, l, c]
             }, t.aL = t.DF
         },
         18393: (e, t, a) => {
@@ -50,15 +50,15 @@
                 default: () => g
             });
             var n = a(15861),
-                c = a(54546),
-                l = a(23598),
+                l = a(54546),
+                c = a(23598),
                 r = a(26375),
                 i = a(7452),
                 s = a(64687),
                 o = a.n(s),
                 u = a(67294),
-                d = a(80873),
-                m = a(34226),
+                d = a(12752),
+                m = a(14411),
                 p = a(43862),
                 f = a(22202),
                 E = a(6655);
@@ -83,45 +83,45 @@
                     b = v.data,
                     S = v.isLoading,
                     C = (0, E.nT)(),
-                    H = (0, c.Z)(C, 2),
-                    k = H[0],
-                    z = H[1].isLoading,
-                    N = (0, E.O7)(),
-                    y = (0, c.Z)(N, 2),
-                    w = y[0],
-                    A = y[1].isLoading,
+                    k = (0, l.Z)(C, 2),
+                    z = k[0],
+                    N = k[1].isLoading,
+                    y = (0, E.O7)(),
+                    L = (0, l.Z)(y, 2),
+                    w = L[0],
+                    A = L[1].isLoading,
                     x = u.useState(!1),
-                    M = (0, c.Z)(x, 2),
+                    M = (0, l.Z)(x, 2),
                     D = M[0],
-                    V = M[1],
-                    Z = u.useState("NODATA"),
-                    L = (0, c.Z)(Z, 2),
-                    O = L[0],
-                    T = L[1],
-                    F = (0, E.$2)(),
-                    I = (0, c.Z)(F, 2),
-                    U = I[0],
-                    P = I[1],
-                    J = P.isLoading,
-                    R = (P.isError, P.error, P.isSuccess, (0, E.ve)()),
-                    Y = (0, c.Z)(R, 2),
-                    $ = Y[0],
-                    _ = Y[1],
-                    q = _.isLoading,
-                    K = (_.isError, _.error, _.isSuccess, u.useState(100)),
-                    X = (0, c.Z)(K, 2),
-                    W = X[0],
-                    j = X[1],
-                    B = u.useState(""),
-                    G = (0, c.Z)(B, 2),
-                    Q = G[0],
-                    ee = G[1],
+                    Z = M[1],
+                    O = u.useState("NODATA"),
+                    T = (0, l.Z)(O, 2),
+                    F = T[0],
+                    I = T[1],
+                    U = (0, E.$2)(),
+                    P = (0, l.Z)(U, 2),
+                    J = P[0],
+                    R = P[1],
+                    Y = R.isLoading,
+                    $ = (R.isError, R.error, R.isSuccess, (0, E.ve)()),
+                    _ = (0, l.Z)($, 2),
+                    q = _[0],
+                    K = _[1],
+                    V = K.isLoading,
+                    X = (K.isError, K.error, K.isSuccess, u.useState(100)),
+                    W = (0, l.Z)(X, 2),
+                    j = W[0],
+                    B = W[1],
+                    G = u.useState(""),
+                    H = (0, l.Z)(G, 2),
+                    Q = H[0],
+                    ee = H[1],
                     te = u.useState("standard"),
-                    ae = (0, c.Z)(te, 2),
+                    ae = (0, l.Z)(te, 2),
                     ne = ae[0],
-                    ce = ae[1],
-                    le = u.useState("add"),
-                    re = (0, c.Z)(le, 2),
+                    le = ae[1],
+                    ce = u.useState("add"),
+                    re = (0, l.Z)(ce, 2),
                     ie = re[0],
                     se = re[1];
                 u.useEffect((function() {
@@ -135,15 +135,15 @@
                                     e.t0 = ie, e.next = "add" === e.t0 ? 3 : "subtract" === e.t0 ? 5 : 7;
                                     break;
                                 case 3:
-                                    return U({
+                                    return J({
                                         toUserId: Q || a,
-                                        amountTokens: W,
+                                        amountTokens: j,
                                         toWalletType: ne
                                     }), e.abrupt("break", 8);
                                 case 5:
-                                    return $({
+                                    return q({
                                         fromUserId: Q || a,
-                                        amountTokens: W
+                                        amountTokens: j
                                     }), e.abrupt("break", 8);
                                 case 7:
                                     console.error("Unexpected tiliaTokenAction: ".concat(JSON.stringify(ie)));
@@ -158,7 +158,7 @@
                     }
                 }();
                 if (!e) return null;
-                var ue = z || A;
+                var ue = N || A;
                 return u.createElement(m.JX, {
                     className: "pb-5"
                 }, u.createElement("h2", null, u.createElement(m.RL, {
@@ -181,7 +181,7 @@
                     className: "custom-select",
                     value: D,
                     onChange: function(e) {
-                        V(e.target.value)
+                        Z(e.target.value)
                     },
                     disabled: ue
                 }, u.createElement("option", {
@@ -190,7 +190,7 @@
                     value: !1
                 }, "Not Accepted")), u.createElement(m.zx, {
                     onClick: function() {
-                        k({
+                        z({
                             userId: a,
                             accepted: D
                         })
@@ -200,9 +200,9 @@
                     icon: i.cw
                 }), " Update ToS Acceptance"), u.createElement("h3", null, "Set KYC Completion State"), u.createElement("select", {
                     className: "custom-select",
-                    value: O,
+                    value: F,
                     onChange: function(e) {
-                        T(e.target.value)
+                        I(e.target.value)
                     },
                     disabled: ue
                 }, ["ACCEPT", "DENY", "MANUAL_REVIEW", "NODATA", "PROCESSING", "REVERIFY"].map((function(e) {
@@ -214,7 +214,7 @@
                     onClick: function() {
                         w({
                             userId: a,
-                            state: O
+                            state: F
                         })
                     },
                     disabled: ue
@@ -230,7 +230,7 @@
                     onChange: function(e) {
                         se(e.target.value)
                     },
-                    disabled: J || q
+                    disabled: Y || V
                 }, u.createElement("option", {
                     value: "add"
                 }, "Add to"), u.createElement("option", {
@@ -243,9 +243,9 @@
                     },
                     value: ne,
                     onChange: function(e) {
-                        ce(e.target.value)
+                        le(e.target.value)
                     },
-                    disabled: J || q
+                    disabled: Y || V
                 }, u.createElement("option", {
                     value: "standard"
                 }, "standard"), u.createElement("option", {
@@ -259,19 +259,19 @@
                     }
                 })), u.createElement("label", null, u.createElement(m.b5, null), u.createElement("input", {
                     type: "number",
-                    value: W,
+                    value: j,
                     onChange: function(e) {
-                        j(e.target.value)
+                        B(e.target.value)
                     }
                 })), u.createElement(m.zx, {
                     onClick: oe,
-                    loading: J || q,
-                    disabled: 40 !== Q.length || J || q
+                    loading: Y || V,
+                    disabled: 40 !== Q.length || Y || V
                 }, u.createElement(m.$1, {
-                    icon: l.aL
+                    icon: c.aL
                 }), " ", "add" === ie ? "Add to ".concat(ne) : "Subtract from", " wallet"))
             }
         }
     }
 ]);
-//# sourceMappingURL=1a033ac5d2213ee70f09dc3c9433adc3f37def9f9961ef90a219eb039a955212.js.map
+//# sourceMappingURL=b9c137d6505113b3fbea75d8ed40911abc920bca6f0c39c1b241a944207fd095.js.map
