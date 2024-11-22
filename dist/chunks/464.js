@@ -1386,7 +1386,7 @@
                     w = (0, l.Z)(y, 2),
                     Z = w[0],
                     N = w[1],
-                    C = I.useState({}),
+                    C = I.useState(null),
                     A = (0, l.Z)(C, 2),
                     R = A[0],
                     U = A[1],
@@ -1503,7 +1503,7 @@
                 var Rt = function() {
                     var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                         t = {};
-                    "new" === (null == x ? void 0 : x.id) && (t = Ot({}, x)), e || (te(null == x ? void 0 : x.requiresTwoFactor), oe(null == x ? void 0 : x.isAddedOnJoin), de(null == x ? void 0 : x.isSelfAssignable), Ne((null == x ? void 0 : x.permissions) || [])), d(0), N(t), U({})
+                    "new" === (null == x ? void 0 : x.id) && (t = Ot({}, x)), e || (te(null == x ? void 0 : x.requiresTwoFactor), oe(null == x ? void 0 : x.isAddedOnJoin), de(null == x ? void 0 : x.isSelfAssignable), Ne((null == x ? void 0 : x.permissions) || [])), d(0), N(t), U(null)
                 };
                 (0, I.useEffect)((function() {
                     Rt(), H(null != x && x.defaultRole ? "permissions" : "general")
@@ -1570,7 +1570,7 @@
                                         return e.next = 11, Ke({
                                             groupId: u.id,
                                             roleId: x.id,
-                                            productId: st.id,
+                                            productId: (null == st ? void 0 : st.id) || null,
                                             productData: R,
                                             roleData: t
                                         }).unwrap();
@@ -6657,4 +6657,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6c68c77b4b8a428c8dcdcba826959ca2c10c6aaed2e1c5ef2427386404e5b761.js.map
+//# sourceMappingURL=7370304fda0b5f8be481b87f6feef236c42ae42efa0d138c9033f3e16305663a.js.map
