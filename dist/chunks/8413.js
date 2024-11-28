@@ -368,7 +368,8 @@
                     J = void 0 === G ? [] : G,
                     U = (Z.isLoading, Z.isError, Z.error, (0, f.g9)({
                         userId: null == n ? void 0 : n.id,
-                        releaseStatus: "all"
+                        releaseStatus: "all",
+                        n: 100
                     }, {
                         skip: !n
                     })),
@@ -621,4 +622,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3aee9f86b5ff78213b48bf05549ebfe1e6a5fa81a004e1decd120e994ef0456d.js.map
+//# sourceMappingURL=5f3e1bc3c966c75fba695cb297a64bc97e6d68ef15ecb6a7605ef6e1648558b2.js.map

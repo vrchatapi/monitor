@@ -4813,7 +4813,8 @@
                     A = N.isError,
                     M = N.error,
                     T = I.useMemo((function() {
-                        return null == x ? void 0 : x.listings.map((function(e) {
+                        var e;
+                        return null == x || null === (e = x.listings) || void 0 === e ? void 0 : e.map((function(e) {
                             return {
                                 listing: e,
                                 purchase: S.find((function(t) {
@@ -4930,7 +4931,7 @@
                     ge = (0, ve.dj)(q);
                 return I.createElement(I.Fragment, null, U && I.createElement(Zr.Z, {
                     isTiliaTOSAccepted: ae,
-                    returnPath: window.location.href,
+                    returnPath: "/home/group/".concat(s.id, "/store"),
                     termsOfServiceMessage: "Tilia's Terms of Service have been changed. Please accept them before supporting ".concat(s.name, ".")
                 }), I.createElement(ee.oI, {
                     className: "flex-row justify-content-center align-items-center"
@@ -4991,7 +4992,7 @@
                         onCancel: oe,
                         onPurchase: ie
                     }))
-                })) : I.createElement("p", null, "There are no subscription options here!"), m.isOpen && I.createElement(Cr.Z, null), d.isOpen && I.createElement(Ar.Z, null), p.isOpen && I.createElement(Sr.Z, {
+                })) : I.createElement("p", null, ue ? "You have no current subscriptions to this group!" : "There are no subscription options here!"), m.isOpen && I.createElement(Cr.Z, null), d.isOpen && I.createElement(Ar.Z, null), p.isOpen && I.createElement(Sr.Z, {
                     groupData: s
                 }), g.isOpen && I.createElement(jr.Z, null)))
             };
@@ -6771,4 +6772,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c980e2e9ed17dfaf437dcaef7a84a0d09b0cec4ffdd486d622133d3b6fa91f0c.js.map
+//# sourceMappingURL=4909f66418b17c4bdda5ccfb0d4b49ef4e1a775220c87363f6cb3cfb99853ef9.js.map

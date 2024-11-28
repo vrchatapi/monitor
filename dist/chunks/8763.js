@@ -297,7 +297,7 @@
                 }, x.createElement("p", {
                     className: "tw-mb-0"
                 }, x.createElement("strong", null, "Subscription Role"), x.createElement("br", null), "Role with paid custom permissions in a group", x.createElement("br", null), x.createElement("a", {
-                    href: "https://creators.vrchat.com/economy/products/paid-roles",
+                    href: "https://creators.vrchat.com/economy/products/paid-role",
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn More")))), (null == n ? void 0 : n.productType) !== b.Pm.ROLE && x.createElement(p.X2, {
@@ -1212,4 +1212,4 @@
         }
     }
 ]);
-//# sourceMappingURL=183c217d0b4c2d02295bf7546bcf290f5ccb0e6d8fb0678ae2528ee9b0794f83.js.map
+//# sourceMappingURL=eed722a354d3447ac24796cfe1e4f6cccd1c01f9fd45b7a8d074ced6a4d01f47.js.map

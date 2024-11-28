@@ -329,7 +329,7 @@
                 return m.createElement(i.JX, {
                     className: "tw-@container/add-products tw-relative tw-z-10"
                 }, m.createElement("p", null, "Reward your subscribers by granting them access to exclusive products for the duration of their subscription.", " ", m.createElement("a", {
-                    href: "https://creators.vrchat.com/economy/products/paid-roles",
+                    href: "https://creators.vrchat.com/economy/products/paid-role",
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn More")), m.createElement(i.JX, {
@@ -2662,7 +2662,7 @@
                 }, m.createElement(p.$1, {
                     icon: h.r8
                 }), " Create Subscription"), m.createElement("a", {
-                    href: "https://creators.vrchat.com/economy/products/paid-roles",
+                    href: "https://creators.vrchat.com/economy/products/paid-role",
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn more about subscriptions")))
@@ -4677,4 +4677,4 @@
         }
     }
 ]);
-//# sourceMappingURL=877b1d508edf4aa2dd6bf82e9e447aabe2d972283f9b12c7bf5a75e4e9f08d8d.js.map
+//# sourceMappingURL=9e559ea49cfb577977518db4ad2dadaf582ed632434bfdf52310abc153837f1f.js.map
