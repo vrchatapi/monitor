@@ -186,7 +186,7 @@
                     type: "error",
                     title: "Error loading statistics"
                 }, null == x || null === (e = x.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), f.createElement("div", {
-                    className: "tw-flex tw-w-full tw-gap-3 tw-mt-6 tw-mb-6 tw-flex-col sm:tw-flex-row"
+                    className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col sm:tw-flex-row"
                 }, d ? f.createElement(f.Fragment, null, f.createElement(B, null), f.createElement(B, {
                     delay: 100
                 })) : f.createElement(f.Fragment, null, f.createElement(Z, {
@@ -700,7 +700,7 @@
                         return !0 === e.active
                     })) && Ye, be ? 1 : he ? 2 : 0 === j ? 3 : 4)
                 }), f.createElement(A, null), f.createElement(o.X2, {
-                    className: "align-items-center flex-wrap tw-mb-5",
+                    className: "align-items-center flex-wrap tw-mb-4",
                     style: {
                         justifyContent: "space-between"
                     }
@@ -862,4 +862,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9592c782b3299ad7d6bfc44160b5510471a89ff8574beaffe1394708fd453201.js.map
+//# sourceMappingURL=440cd17e99cb434247de559cac314c7593165d987c8c411350dc7e1e52938a9e.js.map

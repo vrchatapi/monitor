@@ -1,17 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [9028], {
-        68335: (e, t) => {
-            var n = "store",
-                r = [],
-                i = "f54e",
-                a = "M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9c0 0 0 0-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3L448 384l-320 0 0-133.4c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3L64 384l0 64c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-64 0-131.4c-4 1-8 1.8-12.3 2.3z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [576, 512, r, i, a]
-            }, t.vJ = t.DF
-        },
         53734: (e, t, n) => {
             n.d(t, {
                 Z: () => u
@@ -19,30 +8,30 @@
             var r = n(14411),
                 i = n(95896),
                 a = n(74205),
-                l = n(45697),
-                s = n.n(l),
+                s = n(45697),
+                l = n.n(s),
                 o = n(67294),
                 c = function(e) {
                     var t = e.storeType,
                         n = void 0 === t ? null : t,
-                        l = e.className;
+                        s = e.className;
                     e.style;
                     if (null === n) return null;
-                    var s = (0, o.useMemo)((function() {
+                    var l = (0, o.useMemo)((function() {
                         var e, t;
                         return null !== (e = null === (t = i.HH.find((function(e) {
                             return e.value === n
                         }))) || void 0 === t ? void 0 : t.label) && void 0 !== e ? e : "Unknown"
                     }), [n]);
                     return o.createElement("div", {
-                        className: "".concat(l, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-rounded-full tw-text-white tw-text-xs")
+                        className: "".concat(s, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-rounded-full tw-text-white tw-text-xs")
                     }, o.createElement(r.$1, {
                         icon: "world" === n ? a.rr : a.Yj,
                         className: "tw-mr-1"
-                    }), s)
+                    }), l)
                 };
             c.propTypes = {
-                storeType: s().string.isRequired
+                storeType: l().string.isRequired
             };
             const u = c
         },
@@ -53,8 +42,8 @@
             var r = n(42138),
                 i = n(15861),
                 a = n(54546),
-                l = n(17319),
-                s = n(85020),
+                s = n(17319),
+                l = n(85020),
                 o = n(64687),
                 c = n.n(o),
                 u = n(64258),
@@ -114,8 +103,8 @@
                     n = void 0 !== t && t,
                     r = e.editAction,
                     i = void 0 === r ? function() {} : r,
-                    l = e.deleteAction,
-                    s = void 0 === l ? function() {} : l,
+                    s = e.deleteAction,
+                    l = void 0 === s ? function() {} : s,
                     o = e.publishAction,
                     c = void 0 === o ? function() {} : o,
                     u = (0, h.useState)(!1),
@@ -162,20 +151,20 @@
                     className: "tw-border-t-2 tw-border-solid tw-w-full tw-border-white tw-my-2"
                 }), h.createElement("button", {
                     type: "button",
-                    onClick: s,
+                    onClick: l,
                     className: "tw-text-left tw-w-full tw-p-0 tw-text-red hover:tw-text-white tw-border-none tw-bg-transparent"
                 }, "Delete"))))
             };
             var j = ["listingData", "isOrdering", "moveUp", "moveDown", "editListingCallback", "deleteListingCallback", "publishListingCallback"],
-                J = function(e) {
+                A = function(e) {
                     var t = e.listingData,
                         n = void 0 === t ? null : t,
                         r = e.isOrdering,
                         i = void 0 !== r && r,
                         a = e.moveUp,
-                        l = void 0 === a ? function() {} : a,
-                        s = e.moveDown,
-                        o = void 0 === s ? function() {} : s,
+                        s = void 0 === a ? function() {} : a,
+                        l = e.moveDown,
+                        o = void 0 === l ? function() {} : l,
                         c = e.editListingCallback,
                         m = void 0 === c ? function() {} : c,
                         w = e.deleteListingCallback,
@@ -273,7 +262,7 @@
                     })), i && h.createElement(h.Fragment, null, h.createElement(d.zx, {
                         className: "tw-w-9 tw-h-9",
                         neutral: !0,
-                        onClick: l
+                        onClick: s
                     }, h.createElement(d.$1, {
                         icon: k.mT,
                         size: "1x"
@@ -286,23 +275,23 @@
                         size: "1x"
                     }))))))
                 };
-            J.propTypes = {
+            A.propTypes = {
                 listingData: X().object.isRequired,
                 isOrdering: X().bool,
                 moveUp: X().func,
                 moveDown: X().func
             };
-            const A = J;
-            var F = n(40098),
-                U = n(95896),
+            const J = A;
+            var U = n(40098),
+                F = n(95896),
                 $ = n(76176);
-            const M = function(e) {
+            const V = function(e) {
                 var t = e.onFilterChange,
                     n = void 0 === t ? function() {} : t,
                     r = e.onOrder,
                     i = void 0 === r ? function() {} : r,
-                    l = e.onCreateListing,
-                    s = void 0 === l ? function() {} : l,
+                    s = e.onCreateListing,
+                    l = void 0 === s ? function() {} : s,
                     o = e.onCreateSubscription,
                     c = void 0 === o ? function() {} : o,
                     u = e.onSaveOrder,
@@ -351,7 +340,7 @@
                     placeholder: "Search"
                 }), h.createElement(d.Lt, {
                     className: "tw-flex-inital",
-                    options: U.di,
+                    options: F.di,
                     value: z,
                     label: "Display",
                     onChange: function(e) {
@@ -359,7 +348,7 @@
                     }
                 }), h.createElement(d.Lt, {
                     className: "tw-flex-inital",
-                    options: U.lh,
+                    options: F.lh,
                     value: X,
                     label: "Sort by",
                     onChange: function(e) {
@@ -380,17 +369,17 @@
                     className: "tw-group tw-relative tw-flex-auto tw-grow-0 tw-max-h-fit"
                 }, C && h.createElement(d.zx, {
                     type: "button",
-                    onClick: s,
+                    onClick: l,
                     className: "tw-w-[170px] tw-max-h-fit"
                 }, h.createElement(d.$1, {
-                    icon: F.r8
+                    icon: U.r8
                 }), " Create Listing"), !C && h.createElement(d.zx, {
                     type: "button",
                     disabled: x,
                     onClick: c,
                     className: "tw-w-[180px] tw-max-h-fit"
                 }, h.createElement(d.$1, {
-                    icon: F.r8
+                    icon: U.r8
                 }), " Create Subscription"))), f && h.createElement(h.Fragment, null, h.createElement(d.zx, {
                     type: "button",
                     neutral: !0,
@@ -404,7 +393,7 @@
                     className: "tw-w-[170px] tw-max-h-fit"
                 }, "Save"))))
             };
-            var V = (0, h.lazy)((function() {
+            var M = (0, h.lazy)((function() {
                     return Promise.all([n.e(8303), n.e(3564)]).then(n.bind(n, 59795))
                 })),
                 R = (0, h.lazy)((function() {
@@ -448,10 +437,10 @@
                     O = B[1],
                     q = (0, h.useState)({}),
                     j = (0, a.Z)(q, 2),
-                    J = j[0],
-                    F = j[1],
-                    U = (0, h.useState)(!1),
-                    $ = (0, a.Z)(U, 2),
+                    A = j[0],
+                    U = j[1],
+                    F = (0, h.useState)(!1),
+                    $ = (0, a.Z)(F, 2),
                     K = $[0],
                     Y = $[1],
                     ee = (0, h.useState)([]),
@@ -460,8 +449,8 @@
                     re = te[1],
                     ie = (0, h.useState)([]),
                     ae = (0, a.Z)(ie, 2),
-                    le = ae[0],
-                    se = ae[1],
+                    se = ae[0],
+                    le = ae[1],
                     oe = (0, h.useState)(!1),
                     ce = (0, a.Z)(oe, 2),
                     ue = ce[0],
@@ -504,24 +493,24 @@
                         groupId: Ee.groupId
                     })
                 }), [Ce, Ee]), (0, h.useEffect)((function() {
-                    null != Ee && Ee.storeStatus && Y("published" === Ee.storeStatus), null != Ee && Ee.listings && se(Ee.listings)
+                    null != Ee && Ee.storeStatus && Y("published" === Ee.storeStatus), null != Ee && Ee.listings && le(Ee.listings)
                 }), [Ee]), (0, h.useMemo)((function() {
                     if (null == Ee || !Ee.listings) return re([]);
                     re(Ee.listings.filter((function(e) {
-                        return null != J && J.searchValue && "" !== (null == J ? void 0 : J.searchValue) ? e.displayName.toLowerCase().includes(J.searchValue.toLowerCase()) : null == J || !J.listingType || "all" === (null == J ? void 0 : J.listingType) || e.listingType === J.listingType
+                        return null != A && A.searchValue && "" !== (null == A ? void 0 : A.searchValue) ? e.displayName.toLowerCase().includes(A.searchValue.toLowerCase()) : null == A || !A.listingType || "all" === (null == A ? void 0 : A.listingType) || e.listingType === A.listingType
                     })).sort((function(e, t) {
-                        if (null != J && J.sortBy) {
-                            if ("buyerView" === J.sortBy) return Ee.listings.indexOf(e) - Ee.listings.indexOf(t);
-                            if ("newest" === J.sortBy) return new Date(t.created) - new Date(e.created);
-                            if ("oldest" === J.sortBy) return new Date(e.created) - new Date(t.created);
-                            if ("descendingName" === J.sortBy) return e.displayName.localeCompare(t.displayName);
-                            if ("ascendingName" === J.sortBy) return t.displayName.localeCompare(e.displayName);
-                            if ("cheapest" === J.sortBy) return e.priceTokens - t.priceTokens;
-                            if ("expensive" === J.sortBy) return t.priceTokens - e.priceTokens;
-                            if ("status" === J.sortBy) return e.active - t.active
+                        if (null != A && A.sortBy) {
+                            if ("buyerView" === A.sortBy) return Ee.listings.indexOf(e) - Ee.listings.indexOf(t);
+                            if ("newest" === A.sortBy) return new Date(t.created) - new Date(e.created);
+                            if ("oldest" === A.sortBy) return new Date(e.created) - new Date(t.created);
+                            if ("descendingName" === A.sortBy) return e.displayName.localeCompare(t.displayName);
+                            if ("ascendingName" === A.sortBy) return t.displayName.localeCompare(e.displayName);
+                            if ("cheapest" === A.sortBy) return e.priceTokens - t.priceTokens;
+                            if ("expensive" === A.sortBy) return t.priceTokens - e.priceTokens;
+                            if ("status" === A.sortBy) return e.active - t.active
                         }
                     })))
-                }), [J, Ee]);
+                }), [A, Ee]);
                 (0, h.useEffect)((function() {
                     Ne && (T("/home/marketplace/storefront/stores"), S((0, u.d)({
                         title: "Store Not Found",
@@ -531,7 +520,7 @@
                         timeout: 5e3
                     })))
                 }), [Ne, T]);
-                var Je = function() {
+                var Ae = function() {
                     var e = (0, i.Z)(c().mark((function e() {
                         var t, n;
                         return c().wrap((function(e) {
@@ -566,9 +555,9 @@
                 }();
                 (0, h.useEffect)((function() {
                     var e = new URLSearchParams(X.toString());
-                    J.listingType && e.set("listingType", J.listingType), J.sortBy && e.set("sortBy", J.sortBy), e.toString() !== X.toString() && O(e)
-                }), [J, X]);
-                var Ae, Fe, Ue, $e, Me, Ve = function() {
+                    A.listingType && e.set("listingType", A.listingType), A.sortBy && e.set("sortBy", A.sortBy), e.toString() !== X.toString() && O(e)
+                }), [A, X]);
+                var Je, Ue, Fe, $e, Ve, Me = function() {
                         var e;
                         re(null !== (e = Ee.listings) && void 0 !== e ? e : []), de(!1), n()
                     },
@@ -581,11 +570,11 @@
                                             e.next = 3;
                                             break
                                         }
-                                        return Ve(), e.abrupt("return");
+                                        return Me(), e.abrupt("return");
                                     case 3:
                                         return e.prev = 3, e.next = 6, Be({
                                             storeId: o,
-                                            listingIds: le.map((function(e) {
+                                            listingIds: se.map((function(e) {
                                                 return e.id
                                             }))
                                         }).unwrap();
@@ -618,9 +607,9 @@
                             r = e.data,
                             i = void 0 === r ? void 0 : r,
                             a = e.isCreating,
-                            l = void 0 !== a && a,
-                            s = e.isEditing,
-                            o = void 0 !== s && s,
+                            s = void 0 !== a && a,
+                            l = e.isEditing,
+                            o = void 0 !== l && l,
                             c = e.isDeleting,
                             u = void 0 !== c && c,
                             d = e.isPublishing,
@@ -630,7 +619,7 @@
                         ge(!0), he({
                             title: n,
                             data: i,
-                            isCreating: l,
+                            isCreating: s,
                             isEditing: o,
                             isDeleting: u,
                             isPublishing: m,
@@ -683,7 +672,7 @@
                         if (n < 0 || n >= ne.length) return ne;
                         var i = (0, r.Z)(ne),
                             a = [i[n], i[t]];
-                        i[t] = a[0], i[n] = a[1], re(i), se(i)
+                        i[t] = a[0], i[n] = a[1], re(i), le(i)
                     },
                     tt = function() {
                         ge(!1), he({}), S((0, v.IT)(null)), S((0, v.Bq)("Create Listing (1/3)")), S((0, y.IT)(null)), S((0, y.Bq)("Create Subscription")), S((0, y.BQ)(!1)), S((0, v.BQ)(!1))
@@ -700,7 +689,7 @@
                         return T("/home/marketplace/storefront/stores")
                     }
                 }, h.createElement(d.$1, {
-                    icon: s.A3
+                    icon: l.A3
                 }), " Back to All Stores"), h.createElement(d.JX, {
                     className: "@xs/store:tw-flex-row tw-capitalize tw-justify-between"
                 }, h.createElement(d.X2, {
@@ -713,22 +702,22 @@
                 })), h.createElement(d.X2, {
                     className: "tw-items-center tw-gap-2"
                 }, h.createElement(d.$1, {
-                    icon: l.di,
+                    icon: s.di,
                     className: "tw-text-".concat(K ? "green" : "placeholder-text")
                 }), h.createElement(d.K_, {
                     label: K ? "Published" : "Unpublished",
                     className: "tw-text-".concat(K ? "white" : "placeholder-text", " tw-gap-2"),
                     defaultChecked: K,
-                    onChangeCallback: Je
-                }))), h.createElement(M, {
+                    onChangeCallback: Ae
+                }))), h.createElement(V, {
                     isOrdering: ue,
                     onFilterChange: function(e) {
-                        F(e)
+                        U(e)
                     },
                     onOrder: function() {
                         de(!0), n()
                     },
-                    onCancelOrder: Ve,
+                    onCancelOrder: Me,
                     onSaveOrder: Re,
                     onCreateListing: Qe,
                     groupLoading: ze,
@@ -752,11 +741,11 @@
                     loading: !0
                 })) : Ne || qe ? h.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, h.createElement("p", null, "Error loading sales data:"), h.createElement("code", null, null !== (Me = (Se || je).data.error.message) && void 0 !== Me ? Me : "Unknown error")) : Ce && 0 === ne.length ? J.listingType && "all" !== J.listingType ? h.createElement(N, {
+                }, h.createElement("p", null, "Error loading sales data:"), h.createElement("code", null, null !== (Ve = (Se || je).data.error.message) && void 0 !== Ve ? Ve : "Unknown error")) : Ce && 0 === ne.length ? A.listingType && "all" !== A.listingType ? h.createElement(N, {
                     storeType: null == Ee ? void 0 : Ee.storeType,
                     createListing: "group" === (null == Ee ? void 0 : Ee.storeType) ? _e : Qe,
                     content: "No results found for this listing type"
-                }) : J.searchValue && "" !== J.searchValue ? h.createElement(N, {
+                }) : A.searchValue && "" !== A.searchValue ? h.createElement(N, {
                     storeType: null == Ee ? void 0 : Ee.storeType,
                     createListing: "group" === (null == Ee ? void 0 : Ee.storeType) ? _e : Qe,
                     content: "No results found for this search query"
@@ -781,12 +770,12 @@
                                 if (n !== t) {
                                     var r = Array.from(ne),
                                         i = r.splice(n, 1),
-                                        l = (0, a.Z)(i, 1)[0];
-                                    r.splice(t, 0, l), re(r), se(r)
+                                        s = (0, a.Z)(i, 1)[0];
+                                    r.splice(t, 0, s), re(r), le(r)
                                 }
                             }(e, t)
                         }
-                    }, h.createElement(A, {
+                    }, h.createElement(J, {
                         isOrdering: ue,
                         listingData: e,
                         editListingCallback: He,
@@ -806,7 +795,7 @@
                         }
                     }))
                 })) : void 0)), h.createElement(d.u_, {
-                    title: (Ae = ye, Fe = Ae.isCreating, Ue = Ae.listingType, $e = Ae.title, Fe && "subscription" === Ue ? Z : Fe ? D : $e),
+                    title: (Je = ye, Ue = Je.isCreating, Fe = Je.listingType, $e = Je.title, Ue && "subscription" === Fe ? Z : Ue ? D : $e),
                     isVisible: pe,
                     onBackCallback: z || I ? function() {
                         z && S((0, y.Bq)(z)), I && S((0, v.Bq)(I))
@@ -814,12 +803,13 @@
                     onClose: tt,
                     width: "100%",
                     centered: !1,
+                    disableBackdropClick: !0,
                     slim: !0
                 }, h.createElement(h.Suspense, {
                     fallback: h.createElement(m.Z, {
                         loading: !0
                     })
-                }, pe && !ye.data && "subscription" !== ye.listingType && h.createElement(V, {
+                }, pe && !ye.data && "subscription" !== ye.listingType && h.createElement(M, {
                     onClose: tt,
                     store: Ee
                 }), pe && !ye.data && "subscription" === ye.listingType && h.createElement(W, {
@@ -850,13 +840,13 @@
             n.d(t, {
                 Ci: () => o,
                 j6: () => c,
-                md: () => s,
+                md: () => l,
                 mt: () => u
             });
             var r = n(45987),
                 i = n(61509),
                 a = ["storeId"],
-                l = i.S.injectEndpoints({
+                s = i.S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getStores: e.query({
@@ -866,14 +856,14 @@
                                         r = void 0 !== n && n,
                                         i = e.n,
                                         a = void 0 === i ? 50 : i,
-                                        l = e.offset;
+                                        s = e.offset;
                                     return {
                                         url: "economy/stores",
                                         params: {
                                             sellerId: t,
                                             managementPov: r,
                                             n: a,
-                                            offset: void 0 === l ? 0 : l
+                                            offset: void 0 === s ? 0 : s
                                         }
                                     }
                                 },
@@ -886,9 +876,9 @@
                                         r = e.groupId,
                                         i = e.creatorId,
                                         a = e.hydrateListings,
-                                        l = void 0 !== a && a,
-                                        s = e.hydrateProducts,
-                                        o = void 0 !== s && s,
+                                        s = void 0 !== a && a,
+                                        l = e.hydrateProducts,
+                                        o = void 0 !== l && l,
                                         c = e.managementPov;
                                     return {
                                         url: "economy/store",
@@ -897,7 +887,7 @@
                                             worldId: n,
                                             groupId: r,
                                             creatorId: i,
-                                            hydrateListings: l,
+                                            hydrateListings: s,
                                             hydrateProducts: o,
                                             managementPov: void 0 !== c && c
                                         }
@@ -917,8 +907,8 @@
                                         r = e.worldId,
                                         i = e.groupId,
                                         a = e.tags,
-                                        l = void 0 === a ? [] : a,
-                                        s = e.description;
+                                        s = void 0 === a ? [] : a,
+                                        l = e.description;
                                     return {
                                         url: "economy/store",
                                         method: "POST",
@@ -927,8 +917,8 @@
                                             storeType: n,
                                             worldId: r,
                                             groupId: i,
-                                            tags: l,
-                                            description: void 0 === s ? "" : s
+                                            tags: s,
+                                            description: void 0 === l ? "" : l
                                         }
                                     }
                                 },
@@ -977,12 +967,12 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["Stores", "Store", "UserGroups"]
                 }),
-                s = l.useGetStoreQuery,
-                o = l.useGetStoresQuery,
-                c = l.useCreateStoreMutation,
-                u = l.useUpdateStoreMutation;
-            l.useDeleteStoreMutation
+                l = s.useGetStoreQuery,
+                o = s.useGetStoresQuery,
+                c = s.useCreateStoreMutation,
+                u = s.useUpdateStoreMutation;
+            s.useDeleteStoreMutation
         }
     }
 ]);
-//# sourceMappingURL=821c55710abee43a12544707542aa71266d91cbe3458735c863754c68931cc50.js.map
+//# sourceMappingURL=baa0ef7e0af26be340b16a400309cf0b4f091282d963ebbfbf0524c4f2404707.js.map

@@ -451,7 +451,8 @@
                     width: "100%",
                     slim: !0,
                     centered: !1,
-                    overflow: "auto"
+                    overflow: "auto",
+                    disableBackdropClick: !0
                 }, b.createElement(b.Suspense, {
                     fallback: b.createElement(u.Z, {
                         loading: !0
@@ -476,4 +477,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59488d06e2021c39547bf0b30e12100eebf69d8ee4c65cc23f7eed8ccdc9e6d3.js.map
+//# sourceMappingURL=f16d05819211fedce2ff04443ba3db2ad5ec51d4e414cd7d8d0bb04af05edc7a.js.map

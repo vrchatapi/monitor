@@ -25,53 +25,59 @@
         },
         81952: (e, t, l) => {
             l.r(t), l.d(t, {
-                default: () => f
+                default: () => h
             });
             var a = l(71842),
                 n = l(45189),
-                c = l(67294),
-                r = l(89250),
+                c = l(82414),
+                r = l(67294),
+                o = l(89250),
                 i = l(14411),
                 m = l(72998),
-                o = l(46320),
-                s = l(50249),
-                p = l(22202),
-                u = c.lazy((function() {
+                s = l(46320),
+                p = l(50249),
+                u = l(22202),
+                w = r.lazy((function() {
                     return Promise.all([l.e(3261), l.e(8666), l.e(8304)]).then(l.bind(l, 15558))
                 })),
-                d = c.lazy((function() {
+                d = r.lazy((function() {
                     return Promise.all([l.e(3261), l.e(2520), l.e(4896), l.e(5187), l.e(7161)]).then(l.bind(l, 46123))
                 })),
-                E = c.lazy((function() {
-                    return Promise.all([l.e(8504), l.e(3261), l.e(2520), l.e(5187), l.e(1515)]).then(l.bind(l, 95146))
+                E = r.lazy((function() {
+                    return Promise.all([l.e(5056), l.e(3261), l.e(2520), l.e(5187), l.e(1515)]).then(l.bind(l, 95146))
                 })),
-                w = c.lazy((function() {
+                f = r.lazy((function() {
                     return l.e(4061).then(l.bind(l, 14061))
                 }));
-            const f = function() {
-                var e = (0, p.q7)(),
+            const h = function() {
+                var e = (0, u.q7)(),
                     t = e.data,
                     l = void 0 === t ? [] : t,
-                    f = e.isLoading,
-                    h = (null == l || l.includes("permission-creator-preview"), f);
-                return c.createElement(i.JX, {
+                    h = e.isLoading,
+                    b = (null == l || l.includes("permission-creator-preview"), h);
+                return r.createElement(i.JX, {
                     className: "pb-5"
-                }, c.createElement(i.$4, null, "Marketplace"), h && c.createElement(c.Fragment, null, c.createElement(i.l_, null), c.createElement(i.UU, {
+                }, r.createElement(i.qX, {
+                    iconColor: "#1FD1ED",
+                    icon: c.sq,
+                    type: "custom",
+                    color: "#28434B",
+                    barColor: "#1FD1ED",
+                    className: "xs:tw-hidden tw-flex-row"
+                }, "For the best experience, please view this page on a desktop or tablet."), r.createElement(i.$4, null, "Marketplace"), b && r.createElement(r.Fragment, null, r.createElement(i.l_, null), r.createElement(i.UU, {
                     height: "480px",
                     radius: "8"
-                })), !h && c.createElement("div", {
+                })), !b && r.createElement("div", {
                     className: "tw-@container/marketplaceContainer"
-                }, c.createElement("div", {
-                    className: "tw-grid tw-gap-0 tw-grid-cols-1 @[990px]/marketplaceContainer:tw-grid-cols-3"
-                }, c.createElement("div", {
-                    className: ""
-                }, c.createElement("h2", null, "Marketplace")), c.createElement("div", {
+                }, r.createElement("div", {
+                    className: "tw-grid tw-gap-x-0 tw-gap-y-3 tw-grid-cols-1 @[990px]/marketplaceContainer:tw-grid-cols-3 tw-mb-4 tw-items-center"
+                }, r.createElement("h2", null, "Marketplace"), r.createElement("div", {
                     className: "tw-flex-nowrap"
-                }, c.createElement(m.Z, {
+                }, r.createElement(m.Z, {
                     tabs: [{
                         name: "Marketplace",
                         to: "welcome",
-                        icon: s.Z,
+                        icon: p.Z,
                         condition: !0
                     }, {
                         name: "Wallet",
@@ -84,32 +90,32 @@
                         icon: a.Yy,
                         condition: !0
                     }],
-                    className: "tw-mb-3 tw-w-fit-content tw-flex-nowrap"
-                }))), c.createElement(c.Suspense, {
-                    fallback: c.createElement(i.UU, {
+                    className: "tw-w-fit-content tw-flex-nowrap"
+                }))), r.createElement(r.Suspense, {
+                    fallback: r.createElement(i.UU, {
                         height: "480px",
                         radius: "8"
                     })
-                }, c.createElement(r.Z5, null, c.createElement(r.AW, {
+                }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/",
-                    element: c.createElement(o.Z, {
+                    element: r.createElement(s.Z, {
                         to: "welcome"
                     })
-                }), c.createElement(r.AW, {
+                }), r.createElement(o.AW, {
                     path: "welcome",
-                    element: c.createElement(u, null)
-                }), c.createElement(r.AW, {
+                    element: r.createElement(w, null)
+                }), r.createElement(o.AW, {
                     path: "wallet/*",
-                    element: c.createElement(d, null)
-                }), c.createElement(r.AW, {
+                    element: r.createElement(d, null)
+                }), r.createElement(o.AW, {
                     path: "storefront/*",
-                    element: c.createElement(E, null)
-                }), c.createElement(r.AW, {
+                    element: r.createElement(E, null)
+                }), r.createElement(o.AW, {
                     path: "storefront/payout",
-                    element: c.createElement(w, null)
+                    element: r.createElement(f, null)
                 }), !1))))
             }
         }
     }
 ]);
-//# sourceMappingURL=1890d62f849de7501a8e708722f1e782757e1dab27ba7ed19f249d70dea18b97.js.map
+//# sourceMappingURL=aed666feb10b2bb0a8c3dae8214140c0c41132c808fbc4a1fac2e128c99bf203.js.map

@@ -282,63 +282,63 @@
                 a = n(76553),
                 o = n(64687),
                 l = n.n(o),
-                u = n(67294),
-                c = n(27484),
-                s = n.n(c),
-                d = n(14411),
-                p = n(32981),
-                m = n(67263),
-                f = n(66736),
-                g = n(64258),
-                v = n(73647);
+                u = n(64258),
+                c = n(14411),
+                s = n(67263),
+                d = n(66736),
+                p = n(73647),
+                m = n(27484),
+                f = n.n(m),
+                g = n(67294),
+                v = n(32981);
             const y = function() {
-                var e = (0, p.I0)(),
-                    t = (0, p.v9)((function(e) {
+                var e = (0, v.I0)(),
+                    t = (0, v.v9)((function(e) {
                         return e.listingRow.currentUserId
                     })),
-                    n = (0, p.v9)((function(e) {
+                    n = (0, v.v9)((function(e) {
                         return e.listingRow.listingId
                     })),
-                    o = (0, p.v9)((function(e) {
+                    o = (0, v.v9)((function(e) {
                         return e.listingRow.listing
                     })),
-                    c = (0, p.v9)((function(e) {
+                    m = (0, v.v9)((function(e) {
                         return e.listingRow.purchase
                     })),
-                    y = (0, p.v9)((function(e) {
+                    y = (0, v.v9)((function(e) {
                         return e.listingRow.modals.cancellation
                     })),
-                    h = (0, p.v9)((function(e) {
+                    h = (0, v.v9)((function(e) {
                         return e.listingRow.modals.cancellation.showCancellationConfirm
                     })),
-                    b = (0, p.v9)((function(e) {
+                    b = (0, v.v9)((function(e) {
                         return e.listingRow.modals.cancellation.newExpirationDate
                     })),
-                    E = (0, p.v9)((function(e) {
+                    E = (0, v.v9)((function(e) {
                         return e.listingRow.modals.cancellation.cancelImmediately
                     })),
-                    w = c ? s()(c.purchaseEndDate) : void 0,
-                    x = null == w ? void 0 : w.diff(s()(), "months", !0),
-                    T = (0, f.x)(),
+                    w = m ? f()(m.purchaseEndDate) : void 0,
+                    x = null == w ? void 0 : w.diff(f()(), "months", !0),
+                    T = (0, d.x)(),
                     P = (0, i.Z)(T, 2),
                     k = P[0],
                     I = P[1],
                     M = I.data,
                     C = I.isLoading,
                     R = I.isError;
-                u.useEffect((function() {
+                g.useEffect((function() {
                     y.isOpen && S()
                 }), [y.isOpen]);
                 var D = function() {
-                        e((0, v.gd)())
+                        e((0, p.gd)())
                     },
                     S = function() {
                         var i = (0, r.Z)(l().mark((function r() {
-                            var i, u, s, d;
+                            var i, c, s, d;
                             return l().wrap((function(r) {
                                 for (;;) switch (r.prev = r.next) {
                                     case 0:
-                                        return i = c && x <= 1, e((0, v.yR)(i)), r.prev = 2, r.next = 5, k({
+                                        return i = m && x <= 1, e((0, p.yR)(i)), r.prev = 2, r.next = 5, k({
                                             buyerId: t,
                                             listingId: n,
                                             reason: "user cancellation",
@@ -346,16 +346,16 @@
                                             isPreview: !0
                                         }).unwrap();
                                     case 5:
-                                        u = r.sent, y.newExpirationDate !== u.newExpiryDate && e((0, v.C0)(u.newExpiryDate)), r.next = 13;
+                                        c = r.sent, y.newExpirationDate !== c.newExpiryDate && e((0, p.C0)(c.newExpiryDate)), r.next = 13;
                                         break;
                                     case 9:
-                                        r.prev = 9, r.t0 = r.catch(2), e((0, g.d)({
+                                        r.prev = 9, r.t0 = r.catch(2), e((0, u.d)({
                                             title: "Failed to preview cancellation ".concat(o.id, " for ").concat(t),
                                             icon: a.eH,
                                             message: null !== (s = null === (d = r.t0.data) || void 0 === d || null === (d = d.error) || void 0 === d ? void 0 : d.message) && void 0 !== s ? s : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })), e((0, v.gd)());
+                                        })), e((0, p.gd)());
                                     case 13:
                                     case "end":
                                         return r.stop()
@@ -370,7 +370,7 @@
                     }(),
                     Y = function() {
                         var i = (0, r.Z)(l().mark((function r() {
-                            var i, u;
+                            var i, c;
                             return l().wrap((function(r) {
                                 for (;;) switch (r.prev = r.next) {
                                     case 0:
@@ -382,16 +382,16 @@
                                             isPreview: !1
                                         }).unwrap();
                                     case 3:
-                                        e((0, v.J6)(!0)), r.next = 10;
+                                        e((0, p.J6)(!0)), r.next = 10;
                                         break;
                                     case 6:
-                                        r.prev = 6, r.t0 = r.catch(0), e((0, g.d)({
+                                        r.prev = 6, r.t0 = r.catch(0), e((0, u.d)({
                                             title: "Failed to cancel ".concat(o.id, " for ").concat(t),
                                             icon: a.eH,
-                                            message: null !== (i = null === (u = r.t0.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) && void 0 !== i ? i : "Something went wrong",
+                                            message: null !== (i = null === (c = r.t0.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) && void 0 !== i ? i : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })), e((0, v.al)(!0));
+                                        })), e((0, p.al)(!0));
                                     case 10:
                                     case "end":
                                         return r.stop()
@@ -404,14 +404,14 @@
                             return i.apply(this, arguments)
                         }
                     }();
-                var L = h && R ? u.createElement(d.qX, {
+                var L = h && R ? g.createElement(c.qX, {
                     type: "error",
                     title: "Cancellation Unsuccessful"
-                }, "Your subscription cannot be cancelled, please try again later.") : h && !R ? u.createElement(d.qX, {
+                }, "Your subscription cannot be cancelled, please try again later.") : h && !R ? g.createElement(c.qX, {
                     type: "success",
                     title: "Cancellation Successful"
-                }, "Your subscription has been cancelled successfully!") : u.createElement(u.Fragment, null, u.createElement("p", null, "Are you sure you want to cancel your subscription?"));
-                return u.createElement(d.sm, {
+                }, "Your subscription has been cancelled successfully!") : g.createElement(g.Fragment, null, g.createElement("p", null, "Are you sure you want to cancel your subscription?"));
+                return g.createElement(c.sm, {
                     headerText: "Cancel Subscription",
                     isOpen: y.isOpen,
                     confirmText: h ? "Done" : "Confirm",
@@ -420,25 +420,25 @@
                     hideCancel: h,
                     size: "lg",
                     isLoading: C
-                }, u.createElement(u.Fragment, null, L, y.isOpen && o && u.createElement(d.x7, null, u.createElement(d.pw, {
+                }, g.createElement(g.Fragment, null, L, y.isOpen && o && g.createElement(c.x7, null, g.createElement(c.pw, {
                     alt: o.displayName,
                     imageId: o.imageId,
-                    fallbackSrc: m
-                }), u.createElement(d.JX, {
+                    fallbackSrc: s
+                }), g.createElement(c.JX, {
                     style: {
                         flexGrow: 1,
                         flexBasis: 300,
                         maxWidth: "100%",
                         overflowWrap: "break-word"
                     }
-                }, u.createElement(d.X3, null, o.displayName), u.createElement("p", null, o.description))), x > 1 && !h && M ? u.createElement("p", null, u.createElement("big", null, u.createElement("b", null, "Total Refund: ", u.createElement(d.b5, null), null == M ? void 0 : M.totalRefundable)), " ", "Your new expiration date will be ", s()(null == M ? void 0 : M.newExpiryDate).format("MMMM D, YYYY"), u.createElement("br", null), u.createElement(d.hh, null, "You will be refunded for the unused months. Tilia and VRChat Fees are not refunded."), u.createElement(d.XZ, {
+                }, g.createElement(c.X3, null, o.displayName), g.createElement("p", null, o.description))), x > 1 && !h && M ? g.createElement("p", null, g.createElement("big", null, g.createElement("b", null, "Total Refund: ", g.createElement(c.b5, null), null == M ? void 0 : M.totalRefundable)), " ", "Your new expiration date will be ", f()(null == M ? void 0 : M.newExpiryDate).format("MMMM D, YYYY"), g.createElement("br", null), g.createElement(c.hh, null, "You will be refunded for the unused months. Tilia and VRChat Fees are not refunded."), g.createElement(c.XZ, {
                     id: "cancellationCheck",
-                    label: " I want to cancel it immediately",
+                    label: " I want to remove my benefits immediately (Optional)",
                     checked: E,
                     onChange: function() {
-                        e((0, v.yR)(!y.cancelImmediately))
+                        e((0, p.yR)(!y.cancelImmediately))
                     }
-                }), u.createElement(d.hh, null, "This will change your expiration of the current month to today. The total refund will remain the same.")) : c && !M ? u.createElement("p", null, "This will change your current subscription expiration from ", s()(null == c ? void 0 : c.purchaseEndDate).format("MMMM D, YYYY"), " to ", E ? "today" : s()(b).format("MMMM D, YYYY"), ".") : u.createElement("p", null, "This will change your current subscription expiration to  ", E ? "today" : s()(b).format("MMMM D, YYYY"), ".")))
+                }), g.createElement(c.hh, null, "If you enable this option, your subscription and benefits end immediately. Your total refund will be the same.")) : m && !M ? g.createElement("p", null, "This will change your current subscription expiration from ", f()(null == m ? void 0 : m.purchaseEndDate).format("MMMM D, YYYY"), " to ", E ? "today" : f()(b).format("MMMM D, YYYY"), ".") : g.createElement("p", null, "This will change your current subscription expiration to  ", E ? "today" : f()(b).format("MMMM D, YYYY"), ".")))
             }
         },
         7701: (e, t, n) => {
@@ -1217,4 +1217,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1e01396f66eb76beefede97fb16f970d70879f0304d012b9abeeeb2458fb9ca6.js.map
+//# sourceMappingURL=d2a589bdeb04ea42b839c156ef88098e5131a05eca72ab0428ddc7aa6e4fcd26.js.map
