@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [989], {
+    [8482], {
         69523: (e, t, n) => {
             n.d(t, {
                 $L: () => l,
@@ -44,9 +44,8 @@
         },
         90922: (e, t, n) => {
             n.d(t, {
-                Dy: () => i,
+                Dy: () => l,
                 MF: () => o,
-                QG: () => l,
                 t1: () => c
             });
             var r = n(9669),
@@ -80,16 +79,6 @@
                     }
                 },
                 l = function(e) {
-                    var t = e.n,
-                        n = void 0 === t ? 100 : t,
-                        r = e.offset,
-                        o = void 0 === r ? 0 : r;
-                    return {
-                        type: "LOAD_PERMISSIONS",
-                        payload: a().get(window.apiUrl("/api/1/permissions?n=".concat(n, "&offset=").concat(o)), {})
-                    }
-                },
-                i = function(e) {
                     e.n, e.offset;
                     return {
                         type: "LOAD_LICENSEGROUPS",
@@ -161,8 +150,8 @@
                 var t = e.collapseOpen,
                     n = e.toggle,
                     u = e.title,
-                    m = e.size,
-                    p = void 0 === m ? "md" : m,
+                    p = e.size,
+                    m = void 0 === p ? "md" : p,
                     d = e.children,
                     f = e.onToggleCallback,
                     E = void 0 === f ? function() {} : f,
@@ -175,7 +164,7 @@
                 }), [t]);
                 return c.createElement("div", null, c.createElement("h3", null, c.createElement(l.Z, {
                     "aria-label": "".concat(u, " Toggle"),
-                    size: p,
+                    size: m,
                     onClick: function() {
                         n ? n() : (E(!y), g(!y))
                     },
@@ -186,7 +175,7 @@
                     icon: a.Kt
                 })), " ", u), c.createElement(i.Z, {
                     isOpen: y
-                }, d), "sm" !== p && c.createElement("br", null))
+                }, d), "sm" !== m && c.createElement("br", null))
             }
         },
         11e3: (e, t, n) => {
@@ -223,228 +212,287 @@
                 }, " Cancel")))
             }
         },
-        40902: (e, t, n) => {
+        20916: (e, t, n) => {
             n.d(t, {
-                Z: () => w
+                Z: () => S
             });
             var r = n(54546),
                 a = n(59895),
                 o = n(34359),
-                c = n(67294),
-                l = n(32981),
-                i = n(23138),
-                s = n(21442),
-                u = n(89163),
-                m = n(3126),
-                p = n(95305),
-                d = n(87261),
-                f = n(34698),
-                E = n(86646),
-                v = n(90922),
-                Z = n(18436),
-                y = n(12752),
-                g = ["seconds", "minutes", "hours", "days", "months", "years", "forever"],
-                h = {
+                c = n(42138),
+                l = n(15861),
+                i = n(64687),
+                s = n.n(i),
+                u = n(61509).S.injectEndpoints({
+                    endpoints: function(e) {
+                        return {
+                            getAllPermissions: e.query({
+                                queryFn: (t = (0, l.Z)(s().mark((function e(t, n, r, a) {
+                                    var o, l, i, u;
+                                    return s().wrap((function(e) {
+                                        for (;;) switch (e.prev = e.next) {
+                                            case 0:
+                                                o = [], l = 0, i = 100;
+                                            case 3:
+                                                return e.next = 6, a({
+                                                    url: "permissions",
+                                                    params: {
+                                                        n: i,
+                                                        offset: l
+                                                    }
+                                                });
+                                            case 6:
+                                                if (!(u = e.sent).error) {
+                                                    e.next = 9;
+                                                    break
+                                                }
+                                                return e.abrupt("return", {
+                                                    error: u.error
+                                                });
+                                            case 9:
+                                                if (!(u.data.length > 0)) {
+                                                    e.next = 14;
+                                                    break
+                                                }
+                                                if (o.push.apply(o, (0, c.Z)(u.data)), l += i, u.data.length !== i) {
+                                                    e.next = 14;
+                                                    break
+                                                }
+                                                return e.abrupt("continue", 3);
+                                            case 14:
+                                                return e.abrupt("break", 17);
+                                            case 17:
+                                                return o.sort((function(e, t) {
+                                                    return e.name.localeCompare(t.name)
+                                                })), e.abrupt("return", {
+                                                    data: o
+                                                });
+                                            case 19:
+                                            case "end":
+                                                return e.stop()
+                                        }
+                                    }), e)
+                                }))), function(e, n, r, a) {
+                                    return t.apply(this, arguments)
+                                })
+                            })
+                        };
+                        var t
+                    }
+                }).useGetAllPermissionsQuery,
+                p = n(67294),
+                m = n(32981),
+                d = n(23138),
+                f = n(21442),
+                E = n(89163),
+                v = n(3126),
+                Z = n(95305),
+                y = n(87261),
+                g = n(34698),
+                h = n(90922),
+                b = n(12752),
+                w = n(86646),
+                I = n(18436),
+                O = ["seconds", "minutes", "hours", "days", "months", "years", "forever"],
+                A = {
                     for: ["avatar", "licenseGroup", "permission", "product"],
                     to: ["wear", "have"]
                 };
-            const w = function(e) {
+            const S = function(e) {
                 var t, n = e.userId,
-                    w = (0, l.I0)(),
-                    I = (0, l.v9)((function(e) {
+                    c = (0, m.I0)(),
+                    l = (0, m.v9)((function(e) {
                         return e.miscellaneous
                     })),
-                    b = (0, l.v9)((function(e) {
-                        return e.miscellaneous.permissions
-                    })),
-                    O = (0, l.v9)((function(e) {
+                    i = u().data,
+                    s = (0, m.v9)((function(e) {
                         return e.miscellaneous.licenseGroups
                     })),
-                    S = (0, y.pc)(),
-                    A = (0, c.useState)(""),
-                    C = (0, r.Z)(A, 2),
-                    D = C[0],
-                    N = C[1],
-                    L = (0, c.useState)("permission"),
-                    _ = (0, r.Z)(L, 2),
-                    k = _[0],
-                    T = _[1],
-                    x = (0, c.useState)("have"),
-                    R = (0, r.Z)(x, 2),
-                    U = R[0],
-                    P = R[1],
-                    M = (0, c.useState)(n || ""),
-                    j = (0, r.Z)(M, 2),
-                    z = j[0],
-                    G = j[1],
-                    H = (0, c.useState)("forever"),
-                    F = (0, r.Z)(H, 2),
-                    V = F[0],
-                    K = F[1],
-                    B = (0, c.useState)([]),
+                    S = (0, b.pc)(),
+                    C = (0, p.useState)(""),
+                    k = (0, r.Z)(C, 2),
+                    x = k[0],
+                    D = k[1],
+                    N = (0, p.useState)("permission"),
+                    L = (0, r.Z)(N, 2),
+                    T = L[0],
+                    _ = L[1],
+                    R = (0, p.useState)("have"),
+                    U = (0, r.Z)(R, 2),
+                    P = U[0],
+                    j = U[1],
+                    z = (0, p.useState)(n || ""),
+                    M = (0, r.Z)(z, 2),
+                    G = M[0],
+                    H = M[1],
+                    F = (0, p.useState)("forever"),
+                    V = (0, r.Z)(F, 2),
+                    q = V[0],
+                    K = V[1],
+                    B = (0, p.useState)([]),
                     Q = (0, r.Z)(B, 2),
-                    q = Q[0],
-                    W = Q[1],
-                    X = (0, c.useState)("Granted via website"),
-                    Y = (0, r.Z)(X, 2),
-                    $ = Y[0],
-                    J = Y[1];
-                (0, c.useEffect)((function() {
-                    w((0, v.QG)({})), w((0, v.Dy)({}))
+                    W = Q[0],
+                    X = Q[1],
+                    Y = (0, p.useState)("Granted via website"),
+                    $ = (0, r.Z)(Y, 2),
+                    J = $[0],
+                    ee = $[1];
+                (0, p.useEffect)((function() {
+                    c((0, h.Dy)({}))
                 }), []);
-                var ee = {
-                        forId: D,
-                        forType: k,
-                        forAction: U,
-                        licenseHolderId: z,
-                        untilDate: V,
-                        tags: q,
-                        notes: $
+                var te = {
+                        forId: x,
+                        forType: T,
+                        forAction: P,
+                        licenseHolderId: G,
+                        untilDate: q,
+                        tags: W,
+                        notes: J
                     },
-                    te = "permission" === k ? b : O,
-                    ne = "avatar" === k || "product" === k;
-                return S ? c.createElement(Z.Z, {
+                    ne = "permission" === T ? i : s,
+                    re = "avatar" === T || "product" === T;
+                return S ? p.createElement(I.Z, {
                     title: "Grant License",
                     icon: o.sS
-                }, (null === (t = I.error) || void 0 === t ? void 0 : t.error) && c.createElement(i.Z, {
+                }, (null === (t = l.error) || void 0 === t ? void 0 : t.error) && p.createElement(d.Z, {
                     className: "alert-danger"
-                }, c.createElement("h6", {
+                }, p.createElement("h6", {
                     className: "alert-heading"
-                }, " Error Granting License"), c.createElement("hr", null), c.createElement("strong", null, I.statusCode), "  ", I.error.error), I.complete && c.createElement(i.Z, {
+                }, " Error Granting License"), p.createElement("hr", null), p.createElement("strong", null, l.statusCode), "  ", l.error.error), l.complete && p.createElement(d.Z, {
                     className: "alert-success"
-                }, c.createElement("h6", {
+                }, p.createElement("h6", {
                     className: "alert-heading"
-                }, "Success!"), c.createElement("hr", null), "License Granted! ", c.createElement(E.Z, {
+                }, "Success!"), p.createElement("hr", null), "License Granted! ", p.createElement(w.Z, {
                     icon: a.u8,
                     color: "success"
-                })), I.loading && c.createElement("div", null, "Loading..."), c.createElement(s.Z, null, c.createElement(u.Z, {
+                })), l.loading && p.createElement("div", null, "Loading..."), p.createElement(f.Z, null, p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "forType"), c.createElement(p.Z, {
+                }, "forType"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "select",
                     bsSize: "sm",
-                    value: k,
+                    value: T,
                     onChange: function(e) {
-                        return T(e.target.value)
+                        return _(e.target.value)
                     }
-                }, h.for.map((function(e, t) {
-                    return c.createElement("option", {
+                }, A.for.map((function(e, t) {
+                    return p.createElement("option", {
                         key: "forType-".concat(t),
                         value: e
                     }, e)
-                }))))), c.createElement(u.Z, {
+                }))))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     sm: "2"
-                }, "forId"), ne && c.createElement(p.Z, {
+                }, "forId"), re && p.createElement(Z.Z, {
                     sm: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "text",
                     bsSize: "sm",
                     placeholder: "_id of the avatar or product",
-                    value: D,
+                    value: x,
                     onChange: function(e) {
-                        return N(e.target.value)
+                        return D(e.target.value)
                     }
-                })), !ne && c.createElement(p.Z, {
+                })), !re && p.createElement(Z.Z, {
                     sm: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "select",
                     bsSize: "sm",
-                    value: D,
+                    value: x,
                     onChange: function(e) {
-                        return N(e.target.value)
+                        return D(e.target.value)
                     }
-                }, c.createElement("option", {
+                }, p.createElement("option", {
                     value: "",
                     disabled: !0
-                }, "-- Select Option --"), te.map((function(e, t) {
-                    return c.createElement("option", {
-                        key: "".concat(k, "-forId-").concat(t),
+                }, "-- Select Option --"), null == ne ? void 0 : ne.map((function(e, t) {
+                    return p.createElement("option", {
+                        key: "".concat(T, "-forId-").concat(t),
                         value: e.id
                     }, e.name)
-                }))))), c.createElement(u.Z, {
+                }))))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "forAction"), c.createElement(p.Z, {
+                }, "forAction"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "select",
                     bsSize: "sm",
-                    value: U,
+                    value: P,
                     onChange: function(e) {
-                        return P(e.target.value)
+                        return j(e.target.value)
                     }
-                }, h.to.map((function(e, t) {
-                    return c.createElement("option", {
+                }, A.to.map((function(e, t) {
+                    return p.createElement("option", {
                         key: "forAction-".concat(t),
                         value: e
                     }, e)
-                }))))), c.createElement(u.Z, {
+                }))))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "licenseHolderId"), c.createElement(p.Z, {
+                }, "licenseHolderId"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "text",
                     bsSize: "sm",
                     placeholder: "User Id of user this license will be granted for",
-                    value: z,
+                    value: G,
                     onChange: function(e) {
-                        return G(e.target.value)
+                        return H(e.target.value)
                     }
-                }))), c.createElement(u.Z, {
+                }))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "untilDate"), c.createElement(p.Z, {
+                }, "untilDate"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "select",
                     bsSize: "sm",
-                    value: V,
+                    value: q,
                     onChange: function(e) {
                         return K(e.target.value)
                     }
-                }, g.map((function(e, t) {
-                    return c.createElement("option", {
+                }, O.map((function(e, t) {
+                    return p.createElement("option", {
                         key: "time-".concat(t),
                         value: e
                     }, e)
-                }))))), c.createElement(u.Z, {
+                }))))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "tags"), c.createElement(p.Z, {
+                }, "tags"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "text",
                     bgsize: "small",
-                    value: q,
+                    value: W,
                     onChange: function(e) {
-                        return W([e.target.value])
+                        return X([e.target.value])
                     }
-                }))), c.createElement(u.Z, {
+                }))), p.createElement(E.Z, {
                     row: !0
-                }, c.createElement(m.Z, {
+                }, p.createElement(v.Z, {
                     xs: "2"
-                }, "notes"), c.createElement(p.Z, {
+                }, "notes"), p.createElement(Z.Z, {
                     xs: "10"
-                }, c.createElement(d.Z, {
+                }, p.createElement(y.Z, {
                     type: "text",
                     bgsize: "small",
-                    value: $,
+                    value: J,
                     onChange: function(e) {
-                        return J(e.target.value)
+                        return ee(e.target.value)
                     }
-                }))), c.createElement(f.Z, {
+                }))), p.createElement(g.Z, {
                     onClick: function() {
-                        return w((0, v.t1)(ee))
+                        return c((0, h.t1)(te))
                     }
                 }, "Submit"))) : null
             }
@@ -464,13 +512,13 @@
                     i = e.color,
                     s = e.children,
                     u = e.hidden,
-                    m = e.disabled;
+                    p = e.disabled;
                 return a.createElement(o.Z, {
                     className: n,
                     onClick: l,
                     color: i,
                     hidden: u,
-                    disabled: m
+                    disabled: p
                 }, a.createElement("div", {
                     className: t ? "invisible" : "visible"
                 }, s), a.createElement("div", {
@@ -514,7 +562,7 @@
         },
         62876: (e, t, n) => {
             n.d(t, {
-                Z: () => S
+                Z: () => A
             });
             var r = n(4942),
                 a = n(15861),
@@ -524,9 +572,9 @@
                 i = n(82963),
                 s = n(61120),
                 u = n(64687),
-                m = n.n(u),
-                p = n(65780),
-                d = n.n(p),
+                p = n.n(u),
+                m = n(65780),
+                d = n.n(m),
                 f = n(67294),
                 E = (n(32981), n(83505), n(14411), n(34984)),
                 v = n(97878),
@@ -534,10 +582,10 @@
                 y = n.n(Z),
                 g = n(17228),
                 h = n(69523),
-                w = n(67947);
+                b = n(67947);
             n(43862), n(47716), n(37549);
 
-            function I(e, t) {
+            function w(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -548,12 +596,12 @@
                 return n
             }
 
-            function b(e) {
+            function I(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? I(Object(n), !0).forEach((function(t) {
+                    t % 2 ? w(Object(n), !0).forEach((function(t) {
                         (0, r.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : I(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : w(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
@@ -581,10 +629,10 @@
                 }
             }
             v.Z.adminChangeName, f.Component;
-            const S = function() {
+            const A = function() {
                 return []
             }
         }
     }
 ]);
-//# sourceMappingURL=7cbce8acd8ac20704fa002ecda738991ef6a7c7556694ef0445d1e9839ebdeca.js.map
+//# sourceMappingURL=b2ab7a23d36fea6b32fd11ed64d38e01c06474bab8ef132f0742fd4e0abac439.js.map
