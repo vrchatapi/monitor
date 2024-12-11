@@ -164,11 +164,11 @@
                             }),
                             createListing: e.mutation({
                                 queryFn: (r = (0, n.Z)(o().mark((function e(t, r, n, i) {
-                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, E, P, k, O, S, x, U, C;
+                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, C;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.displayName, g = t.description, f = t.tags, y = t.listingVariants, v = t.imageId, h = t.listingType, m = t.productType, b = t.products, I = t.priceTokens, L = t.duration, T = t.durationType, w = t.active, E = t.groupId, P = t.permanent, k = t.instant, O = t.stackable, S = t.storeIds, x = t.recurrable, !u) {
+                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.displayName, g = t.description, f = t.tags, y = t.listingVariants, v = t.imageId, h = t.listingType, m = t.productType, b = t.products, I = t.priceTokens, L = t.duration, T = t.durationType, w = t.active, P = t.groupId, E = t.permanent, k = t.instant, S = t.stackable, O = t.storeIds, x = t.recurrable, !u) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -207,12 +207,12 @@
                                                         duration: L,
                                                         durationType: T,
                                                         active: w,
-                                                        groupId: E,
-                                                        permanent: P,
+                                                        groupId: P,
+                                                        permanent: E,
                                                         instant: k,
-                                                        stackable: O,
+                                                        stackable: S,
                                                         recurrable: x,
-                                                        storeIds: S
+                                                        storeIds: O
                                                     }
                                                 });
                                             case 13:
@@ -258,11 +258,11 @@
                             }),
                             updateListing: e.mutation({
                                 queryFn: (t = (0, n.Z)(o().mark((function e(t, r, n, i) {
-                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, E, P, k, O, S, x, U, C;
+                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, C;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.listingId, g = t.displayName, f = t.description, y = t.tags, v = t.listingVariants, h = t.imageId, m = t.products, b = t.priceTokens, I = t.duration, L = t.durationType, T = t.active, w = t.groupId, E = t.archive, P = t.permanent, k = t.instant, O = t.stackable, S = t.recurrable, x = t.storeIds, !u) {
+                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.listingId, g = t.displayName, f = t.description, y = t.tags, v = t.listingVariants, h = t.imageId, m = t.products, b = t.priceTokens, I = t.duration, L = t.durationType, T = t.active, w = t.groupId, P = t.archive, E = t.permanent, k = t.instant, S = t.stackable, O = t.recurrable, x = t.storeIds, !u) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -300,11 +300,11 @@
                                                         durationType: L,
                                                         active: T,
                                                         groupId: w,
-                                                        archive: E,
-                                                        permanent: P,
+                                                        archive: P,
+                                                        permanent: E,
                                                         instant: k,
-                                                        stackable: O,
-                                                        recurrable: S,
+                                                        stackable: S,
+                                                        recurrable: O,
                                                         storeIds: x
                                                     }
                                                 });
@@ -347,7 +347,10 @@
                                     }, {
                                         type: "FilesForTag",
                                         id: "PARTIAL-LIST:".concat(a)
-                                    }, "Store", "Stores", "UserProducts", "Product"]
+                                    }, {
+                                        type: "Purchases",
+                                        id: "PARTIAL-LIST"
+                                    }, "Purchase", "Store", "Stores", "UserProducts", "Product"]
                                 }
                             }),
                             activateListing: e.mutation({
@@ -424,4 +427,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5a38902eac9a5891c5eadf1e592e42b06ee4db567f063c4c8ccf793a6d7fa531.js.map
+//# sourceMappingURL=14cb3354eb32eb929a15db8053f8e1e8475117461b6436ed419178903b92b0b8.js.map

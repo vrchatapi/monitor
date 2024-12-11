@@ -1448,7 +1448,8 @@
                         y = "instant" !== (null == c ? void 0 : c.listingType),
                         x = (0, We.mr)({
                             listingId: c.listingId,
-                            hydrate: !0
+                            hydrateProducts: !0,
+                            hydrateStores: !0
                         }, {
                             skip: !y || !c.listingId
                         }),
@@ -1463,6 +1464,7 @@
                             description: null == c ? void 0 : c.listingDescription,
                             purchaseActive: null == c ? void 0 : c.purchaseActive,
                             imageId: null == c ? void 0 : c.imageId,
+                            listingImageId: null == c ? void 0 : c.listingImageId,
                             products: null == c ? void 0 : c.products
                         };
                     if (b || N) return n.createElement("div", {
@@ -1501,7 +1503,8 @@
                         I = T.listingType,
                         O = T.description,
                         A = T.imageId,
-                        M = T.products;
+                        M = T.products,
+                        P = T.listingImageId;
                     return n.createElement("div", {
                         className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
                     }, n.createElement("div", {
@@ -1523,10 +1526,12 @@
                     }, n.createElement("div", {
                         className: "tw-w-fit tw-h-fit sm:tw-w-1/3 sm:tw-h-1/3 tw-rounded-sm"
                     }, n.createElement(r.pw, {
-                        className: "tw-w-full tw-h-full",
+                        className: "tw-w-full tw-h-full tw-aspect-square",
+                        width: 162,
                         alt: D,
-                        imageId: A,
-                        fallbackSrc: W
+                        imageId: A || P || null,
+                        fallbackSrc: W,
+                        fitToCover: !0
                     })), n.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
                     }, n.createElement("div", {
@@ -1572,15 +1577,14 @@
                             }))
                         }
                     }, "View ", M.length, " included products ", n.createElement(r.$1, {
-                        icon: d ? $.pt : G.mT
+                        icon: d ? G.mT : $.pt
                     }))), d && n.createElement("div", {
                         className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
                     }, null == M ? void 0 : M.map((function(e) {
-                        var t = e.id;
                         return n.createElement(Ge.Z, {
-                            className: "tw-h-20 tw-my-2",
-                            key: t,
-                            productId: t
+                            className: "tw-min-h-20 tw-my-2",
+                            key: e.id,
+                            productData: e
                         })
                     }))), n.createElement("div", {
                         className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
@@ -1608,8 +1612,8 @@
                     w = a.listingDescription,
                     u = a.purchaseActive,
                     d = a.purchaseDate,
-                    p = a.imageId,
-                    f = a.purchaseContext;
+                    p = a.purchaseContext,
+                    f = a.listingImageId;
                 return n.createElement("div", {
                     className: "tw-@container/purchaseCard ".concat(i)
                 }, n.createElement("div", {
@@ -1617,26 +1621,28 @@
                 }, n.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-start tw-w-full tw-max-w-[340px] @sm/purchaseCard:tw-max-w-[450px] @md/purchaseCard:tw-max-w-[600px] @lg/purchaseCard:tw-max-w-[600px]"
                 }, n.createElement(r.pw, {
-                    className: "tw-w-32 tw-h-full tw-rounded-md tw-bg-transparent tw-pr-5 tw-hidden @lg/purchaseCard:tw-block",
+                    className: "tw-shrink-0 tw-aspect-square tw-rounded-md tw-bg-transparent tw-mr-5 tw-hidden @lg/purchaseCard:tw-block",
                     alt: o,
-                    imageId: p,
-                    fallbackSrc: W
+                    width: 128,
+                    imageId: f,
+                    fallbackSrc: W,
+                    fitToCover: !0
                 }), n.createElement("div", {
-                    className: "tw-w-full @sm:tw-w-fit tw-text-ellipsis"
+                    className: "tw-w-full @sm:tw-w-fit tw-text-ellipsis tw-overflow-hidden"
                 }, n.createElement("div", {
-                    className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/purchaseCard:tw-flex-row tw-items-start @sm/purchaseCard:tw-items-center "
+                    className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/purchaseCard:tw-flex-row tw-items-start @sm/purchaseCard:tw-items-center tw-gap-2 tw-mb-2 "
                 }, n.createElement("h4", {
-                    className: "tw-max-w-[250px] @sm/purchaseCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
+                    className: "tw-leading-8 tw-max-w-[250px] tw-mb-0 @sm/purchaseCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
                 }, o), n.createElement($e.Z, {
                     listingType: m,
-                    className: "tw-ml-0 tw-mr-2 @sm/purchaseCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
+                    className: "tw-ml-0 @sm/purchaseCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 }), u && n.createElement("div", {
                     className: "tw-px-2 tw-py-1 tw-rounded-full tw-text-white tw-text-xs tw-bg-active-purple"
                 }, "Active")), n.createElement("div", {
                     className: " tw-flex tw-flex-col tw-mt-2 @sm/purchaseCard:tw-mt-0 tw-max-w-full @sm/purchaseCard:tw-max-w-[400px] @md/purchaseCard:tw-max-w-[580px] @lg/purchaseCard:tw-max-w-[480px] "
                 }, n.createElement("p", {
                     className: " tw-text-light-grey tw-text-sm tw-text-ellipsis tw-overflow-hidden tw-mb-0 tw-pb-0 tw-hidden @sm/purchaseCard:tw-block "
-                }, "subscription" === m && f ? null != f && f.groupName ? "Group: ".concat(null == f ? void 0 : f.groupName) : "" : w)))), n.createElement("div", {
+                }, "subscription" === m && p ? null != p && p.groupName ? "Group: ".concat(null == p ? void 0 : p.groupName) : "" : w)))), n.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-items-end tw-border-solid tw-border-0 tw-border-hr-grey tw-pl-4"
                 }, n.createElement(r.zx, {
                     className: "tw-h-fit @md/purchaseCard:tw-ml-0 tw-cursor-pointer tw-w-40",
@@ -2392,4 +2398,4 @@
         }
     }
 ]);
-//# sourceMappingURL=82c2247be38c2161c8ec9e7f8a3698043c6f11b5c16ad05d9c87ec867d94e777.js.map
+//# sourceMappingURL=ae5580c4b9c73488782a05ee358e6bdcec4a3ffdd410432eb3b0080226453fff.js.map

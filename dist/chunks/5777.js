@@ -311,8 +311,8 @@
                 A = n(41145),
                 F = n(68055),
                 Y = n(65394),
-                W = n(64687),
-                q = n.n(W),
+                q = n(64687),
+                W = n.n(q),
                 O = n(83505),
                 X = n(15832),
                 G = n(3845),
@@ -905,14 +905,14 @@
                         return J.M7.includes(e)
                     })),
                     z = [S, I, Z].filter(Boolean).length >= 2;
-                return s.createElement(s.Fragment, null, s.createElement(Re, null, s.createElement(We, {
+                return s.createElement(s.Fragment, null, s.createElement(Re, null, s.createElement(qe, {
                     onClick: function() {
                         f()
                     },
                     containerStyles: "position:static;"
                 }, s.createElement(d.$1, {
                     icon: re.A3
-                })), s.createElement(qe, {
+                })), s.createElement(We, {
                     id: "GroupInstanceTypeTitle"
                 }, "Select Instance Type"), s.createElement(d.JX, null, s.createElement(Xe, {
                     onClick: function() {
@@ -1014,13 +1014,13 @@
                 })("min-height:100%;min-width:100%;position:absolute;display:flex;", (function(e) {
                     return e.stepComplete ? Fe : Ae
                 }), ";"),
-                We = (0, a.Z)(d.zx, {
+                qe = (0, a.Z)(d.zx, {
                     target: "e1q2o6752"
                 })({
                     name: "1xrwwlz",
                     styles: "display:flex;align-items:center;position:absolute;width:24px;height:30px;top:4px;left:4px"
                 }),
-                qe = (0, a.Z)("div", {
+                We = (0, a.Z)("div", {
                     target: "e1q2o6751"
                 })({
                     name: "5a6l2d",
@@ -1234,7 +1234,7 @@
                     P = _[1],
                     L = s.useRef(null),
                     M = s.useRef(null),
-                    W = s.useRef(null),
+                    q = s.useRef(null),
                     H = (0, X._)("instanceCreation_alsoInviteMe", !1),
                     B = (0, w.Z)(H, 2),
                     Q = B[0],
@@ -1293,9 +1293,9 @@
                             return window.removeEventListener("click", he)
                         }
                 }), [y]);
-                var ve = s.useCallback((0, U.Z)(q().mark((function e() {
+                var ve = s.useCallback((0, U.Z)(W().mark((function e() {
                         var t, a, s, c, o;
-                        return q().wrap((function(e) {
+                        return W().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     t = [], a = lt[I], s = [], null != n.instances && n.instances.forEach((function(e) {
@@ -1321,9 +1321,9 @@
                             }
                         }), e)
                     }))), [I, T, Q, null == n ? void 0 : n.id, null == r ? void 0 : r.id]),
-                    be = s.useCallback((0, U.Z)(q().mark((function e() {
+                    be = s.useCallback((0, U.Z)(W().mark((function e() {
                         var t;
-                        return q().wrap((function(e) {
+                        return W().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     if (v) {
@@ -1361,7 +1361,7 @@
                 }, s.createElement(bt, {
                     initial: !f,
                     role: "dialog",
-                    ref: W,
+                    ref: q,
                     "aria-labelledby": "LaunchWorldTitle",
                     className: (0, O.cx)(["animated", !a && (y ? "slideInUp" : "slideOutDown")])
                 }, s.createElement(d.JX, {
@@ -1668,9 +1668,9 @@
                     Z = C.isError,
                     S = !(I || Z),
                     j = function() {
-                        var e = (0, U.Z)(q().mark((function e() {
+                        var e = (0, U.Z)(W().mark((function e() {
                             var t;
-                            return q().wrap((function(e) {
+                            return W().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, p({
@@ -1738,7 +1738,7 @@
                 styles: "margin:0;font-size:1.5rem;&::after{display:none;}"
             });
             var Yt = T.Z.updateElasticsearchWorld,
-                Wt = function(e) {
+                qt = function(e) {
                     var t, n, a, l, r = e.world,
                         i = e.file,
                         c = e.reports,
@@ -1754,9 +1754,9 @@
                         A = (0, s.useState)(50),
                         F = (0, w.Z)(A, 2),
                         Y = (F[0], F[1], (0, s.useState)(60)),
-                        W = (0, w.Z)(Y, 2),
-                        q = W[0],
-                        O = W[1],
+                        q = (0, w.Z)(Y, 2),
+                        W = q[0],
+                        O = q[1],
                         X = (0, s.useState)(!1),
                         G = (0, w.Z)(X, 2),
                         V = (G[0], G[1], (0, s.useState)(!1)),
@@ -2051,7 +2051,7 @@
                     }, s.createElement(d.oI, null, s.createElement(Ot, null, "Active Instances")), s.createElement(d.Ao, null, s.createElement(an, {
                         role: "list",
                         "aria-label": "Active Instance List"
-                    }, r.instances.slice(0, q).filter((function(e) {
+                    }, r.instances.slice(0, W).filter((function(e) {
                         return u || e[1] > 0
                     })).map((function(e) {
                         return s.createElement(tn, {
@@ -2059,17 +2059,17 @@
                             location: "".concat(r.id, ":").concat(e[0]),
                             players: e[1]
                         })
-                    }))), r.instances.length > q && s.createElement(d.zx, {
+                    }))), r.instances.length > W && s.createElement(d.zx, {
                         "aria-label": "Show More Instances",
                         onClick: function() {
-                            return O(q + 60)
+                            return O(W + 60)
                         }
                     }, "Show More Instances"))), s.createElement(At, {
                         worldId: null == r ? void 0 : r.id,
                         className: "mt-sm-2"
                     }))
                 };
-            Wt.propTypes = {
+            qt.propTypes = {
                 world: $().object.isRequired,
                 file: $().object,
                 reports: $().object,
@@ -2077,7 +2077,7 @@
                 isOwner: $().bool,
                 isMod: $().bool
             };
-            const qt = Wt;
+            const Wt = qt;
             var Ot = (0, a.Z)("h3", {
                     target: "e1264afg13"
                 })({
@@ -2211,7 +2211,7 @@
                     M = L.isLoading,
                     F = L.isError,
                     Y = L.error,
-                    W = L.isSuccess,
+                    q = L.isSuccess,
                     O = L.reset,
                     X = (0, mn.YZ)(),
                     G = (0, w.Z)(X, 2),
@@ -2222,9 +2222,9 @@
                 (0, s.useEffect)((function() {
                     p(!1);
                     var e = function() {
-                        var e = (0, U.Z)(q().mark((function e() {
+                        var e = (0, U.Z)(W().mark((function e() {
                             var t;
-                            return q().wrap((function(e) {
+                            return W().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (e.prev = 0, null != i && i.products) {
@@ -2273,8 +2273,8 @@
                     re = "duration" === (null == i ? void 0 : i.listingType),
                     ie = null == i ? void 0 : i.stackable,
                     se = function() {
-                        var e = (0, U.Z)(q().mark((function e() {
-                            return q().wrap((function(e) {
+                        var e = (0, U.Z)(W().mark((function e() {
+                            return W().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, P({
@@ -2300,7 +2300,7 @@
                     ce = function() {
                         p(!1), x(!1), O(), l()
                     };
-                if (W) return s.createElement("div", {
+                if (q) return s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
@@ -2317,10 +2317,11 @@
                 }))), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
                 }, s.createElement(d.pw, {
-                    className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5",
+                    className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5 tw-aspect-square",
                     alt: i.displayName,
                     imageId: null == i ? void 0 : i.imageId,
-                    fallbackSrc: on
+                    fallbackSrc: on,
+                    fitToCover: !0
                 }), s.createElement("h3", {
                     className: "heading"
                 }, "Thank you for your purchase!"), s.createElement("p", {
@@ -2855,7 +2856,7 @@
                     })
                 }), s.createElement(c.AW, {
                     path: "/info",
-                    element: s.createElement(qt, {
+                    element: s.createElement(Wt, {
                         bops: g,
                         file: p,
                         isOwner: v,
@@ -3311,4 +3312,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7e056b094c55bfbbcbee87fb79e8182ff808263ba61b60f05d826b3270d7728f.js.map
+//# sourceMappingURL=c344eb6460f5e666967da08bf4c1017b1faaa9ff4c0bbc0096fe712d58664793.js.map
