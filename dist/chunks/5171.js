@@ -380,7 +380,7 @@
         },
         78006: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => ln
+                default: () => cn
             });
             var a = n(54546),
                 r = n(67294),
@@ -1613,7 +1613,7 @@
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
                 })),
                 Wt = r.lazy((function() {
-                    return Promise.all([n.e(8170), n.e(1572)]).then(n.bind(n, 71572))
+                    return Promise.all([n.e(4473), n.e(3023), n.e(390)]).then(n.bind(n, 20390))
                 })),
                 $t = r.lazy((function() {
                     return Promise.all([n.e(8744), n.e(2150), n.e(4444), n.e(8890), n.e(9908), n.e(2998), n.e(2045), n.e(347), n.e(4353)]).then(n.bind(n, 82434))
@@ -1637,42 +1637,45 @@
                     return Promise.all([n.e(3261), n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
                 Jt = r.lazy((function() {
-                    return Promise.all([n.e(5879), n.e(3261), n.e(2998), n.e(347), n.e(2520), n.e(9923), n.e(4896), n.e(8158), n.e(464)]).then(n.bind(n, 50464))
+                    return Promise.all([n.e(435), n.e(3261), n.e(2998), n.e(347), n.e(2520), n.e(9923), n.e(8158), n.e(4896), n.e(464)]).then(n.bind(n, 50464))
                 })),
                 Kt = r.lazy((function() {
-                    return n.e(3443).then(n.bind(n, 53443))
+                    return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
                 Xt = r.lazy((function() {
-                    return n.e(9795).then(n.bind(n, 79795))
+                    return n.e(3443).then(n.bind(n, 53443))
                 })),
                 Ht = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
+                    return n.e(9795).then(n.bind(n, 79795))
                 })),
                 Qt = r.lazy((function() {
-                    return n.e(7047).then(n.bind(n, 7047))
+                    return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
                 })),
                 Yt = r.lazy((function() {
-                    return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
+                    return n.e(7047).then(n.bind(n, 7047))
                 })),
                 en = r.lazy((function() {
-                    return Promise.all([n.e(4984), n.e(2095), n.e(6780)]).then(n.bind(n, 86780))
+                    return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 tn = r.lazy((function() {
-                    return n.e(997).then(n.bind(n, 997))
+                    return Promise.all([n.e(4984), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
                 })),
                 nn = r.lazy((function() {
-                    return n.e(4945).then(n.bind(n, 14945))
+                    return n.e(997).then(n.bind(n, 997))
                 })),
                 an = r.lazy((function() {
-                    return n.e(7024).then(n.bind(n, 48192))
+                    return n.e(4945).then(n.bind(n, 14945))
                 })),
                 rn = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(8666), n.e(7323)]).then(n.bind(n, 97323))
+                    return n.e(7024).then(n.bind(n, 48192))
                 })),
                 on = r.lazy((function() {
+                    return Promise.all([n.e(3261), n.e(8666), n.e(7323)]).then(n.bind(n, 97323))
+                })),
+                ln = r.lazy((function() {
                     return Promise.all([n.e(4984), n.e(3261), n.e(2998), n.e(2520), n.e(1435), n.e(5777)]).then(n.bind(n, 40525))
                 }));
-            const ln = function() {
+            const cn = function() {
                 var e = (0, i.I0)();
                 It();
                 var t = (0, d.IB)().data,
@@ -1760,7 +1763,7 @@
                     element: r.createElement(Wt, null)
                 }), r.createElement(o.AW, {
                     path: "/user/:userId/*",
-                    element: r.createElement(rn, null)
+                    element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
                     path: "/uploadIcon",
                     element: St(Lt)()
@@ -1775,7 +1778,7 @@
                     element: r.createElement($t, null)
                 }), r.createElement(o.AW, {
                     path: "/marketplace/*",
-                    element: r.createElement(Yt, null)
+                    element: r.createElement(en, null)
                 }), r.createElement(o.AW, {
                     path: "/wallet",
                     element: r.createElement(kt.Z, {
@@ -1793,13 +1796,13 @@
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(Ht, null)
+                    element: r.createElement(Qt, null)
                 }), r.createElement(o.AW, {
                     path: "/worlds",
                     element: r.createElement(Gt, null)
                 }), r.createElement(o.AW, {
                     path: "/world/:worldId/*",
-                    element: r.createElement(on, null)
+                    element: r.createElement(ln, null)
                 }), r.createElement(o.AW, {
                     path: "/avatars",
                     element: r.createElement(Mt, null)
@@ -1808,13 +1811,13 @@
                     element: r.createElement(Dt, null)
                 }), r.createElement(o.AW, {
                     path: "/content/*",
-                    element: r.createElement(en, null)
-                }), r.createElement(o.AW, {
-                    path: "/messages",
                     element: r.createElement(tn, null)
                 }), r.createElement(o.AW, {
-                    path: "/playermoderations",
+                    path: "/messages",
                     element: r.createElement(nn, null)
+                }), r.createElement(o.AW, {
+                    path: "/playermoderations",
+                    element: r.createElement(an, null)
                 }), r.createElement(o.AW, {
                     path: "/download",
                     element: r.createElement(Ut, null)
@@ -1831,6 +1834,9 @@
                     path: "/groups/search/:query",
                     element: r.createElement(_t, null)
                 }), r.createElement(o.AW, {
+                    path: "/group/:groupId/ageverification/:code",
+                    element: r.createElement(Kt, null)
+                }), r.createElement(o.AW, {
                     path: "/group/:groupId/*",
                     element: r.createElement(Jt, null)
                 }), r.createElement(o.AW, {
@@ -1845,17 +1851,17 @@
                     path: "/favorites/*",
                     element: r.createElement(o.Z5, null, r.createElement(o.AW, {
                         path: "/:type",
-                        element: r.createElement(Kt, null)
+                        element: r.createElement(Xt, null)
                     }), r.createElement(o.AW, {
                         path: "/:type/:name",
-                        element: r.createElement(Kt, null)
+                        element: r.createElement(Xt, null)
                     }))
                 }), r.createElement(o.AW, {
                     path: "/jams/*",
-                    element: r.createElement(Qt, null)
+                    element: r.createElement(Yt, null)
                 }), !1, r.createElement(o.AW, {
                     path: "/subscriptions",
-                    element: r.createElement(an, null)
+                    element: r.createElement(rn, null)
                 }), r.createElement(o.AW, {
                     path: "/",
                     element: r.createElement(Pt, null)
@@ -1876,7 +1882,7 @@
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(Xt, {
+                }, r.createElement(Ht, {
                     friendsToggleCallback: x
                 })))), r.createElement("div", {
                     role: "button",
@@ -2846,4 +2852,4 @@
         }
     }
 ]);
-//# sourceMappingURL=990ecbffcaa52fb20d437b98784e326df7af3746c2cddd40e9493f1ab1abaad1.js.map
+//# sourceMappingURL=c2cb31b58b2cb8769317971b7efcc16ea3d91d4291339b5a14caf189c0f0df6b.js.map
