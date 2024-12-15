@@ -64,6 +64,7 @@
                         }
                     }
                     if (g) switch (g.status) {
+                        case "verified":
                         case "approved":
                             return {
                                 icon: s.f8, status: "Verification Complete", message: "You have successfully verified your age with Persona.\nYour profile data has been updated."
@@ -262,4 +263,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e06812f91887aa07ed90053d4a1621709494fafc84439627d6653ebac39f7ef2.js.map
+//# sourceMappingURL=b2593faa041077ecabf80c050c225ebed012a9db63834e332d3b17c69d4e1429.js.map
