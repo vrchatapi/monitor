@@ -15,7 +15,7 @@
         79795: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => ae
+                default: () => oe
             });
             var r = n(42138),
                 i = n(54546),
@@ -38,9 +38,10 @@
                 y = n(25062),
                 E = n(12227),
                 k = n(22202),
-                Z = n(73170);
+                Z = n(90924),
+                C = n(73170);
             n(98353);
-            var C = d.memo((function(e) {
+            var S = d.memo((function(e) {
                 var t, n, r, a = e.userId,
                     o = e.closeSidebar,
                     l = (0, k.IB)().data,
@@ -53,56 +54,58 @@
                     p = (0, f.Kk)(null == u ? void 0 : u.location),
                     b = p.world,
                     w = p.location,
-                    C = d.useState("Invite Me"),
-                    S = (0, i.Z)(C, 2),
-                    J = S[0],
-                    V = S[1],
+                    S = d.useState("Invite Me"),
+                    I = (0, i.Z)(S, 2),
+                    J = I[0],
+                    Y = I[1],
                     X = d.useState(!1),
-                    Y = (0, i.Z)(X, 2),
-                    ee = Y[0],
-                    te = Y[1],
-                    ne = (0, f.Kz)(),
-                    re = function() {
+                    ee = (0, i.Z)(X, 2),
+                    te = ee[0],
+                    ne = ee[1],
+                    re = (0, f.Kz)(),
+                    ie = function() {
                         o && window.innerWidth <= 1200 && o()
                     };
                 if (!u || null != u && u.error || !l) return null;
-                var ie = (0, h.Je)({
+                var ae = (0, h.Je)({
                         user: u,
                         currentUser: l
                     }),
-                    ae = ie.inPrivate,
-                    oe = ie.isTraveling,
-                    le = ie.isWeb,
-                    se = ie.isMobile,
-                    ce = ie.inWorld,
-                    ue = ie.instanceId,
-                    de = ie.isOffline,
-                    fe = ie.userStatus,
-                    me = ie.userStatusLabel,
-                    ve = ie.isInActive,
-                    pe = ie.userActivity,
-                    ge = ie.receivesMobileNotifications,
-                    he = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
-                    be = (0, h.aF)(ue),
-                    xe = (0, E.uP)(ue),
-                    we = function() {
+                    oe = ae.inPrivate,
+                    le = ae.isTraveling,
+                    se = ae.isWeb,
+                    ce = ae.isMobile,
+                    ue = ae.inWorld,
+                    de = ae.instanceId,
+                    fe = ae.isOffline,
+                    me = ae.userStatus,
+                    ve = ae.userStatusLabel,
+                    pe = ae.isInActive,
+                    ge = ae.userActivity,
+                    he = ae.receivesMobileNotifications,
+                    be = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
+                    xe = (0, h.aF)(de),
+                    we = (0, E.uP)(de),
+                    ye = (0, E.YW)(de),
+                    Ee = (0, E.PF)(l, de),
+                    ke = function() {
                         var e = (0, m.Z)(g().mark((function e() {
                             return g().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (b && ue) {
+                                        if (b && de) {
                                             e.next = 2;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 2:
-                                        return e.next = 4, ne({
+                                        return e.next = 4, re({
                                             worldId: b.id,
-                                            instanceId: ue
+                                            instanceId: de
                                         });
                                     case 4:
-                                        V("Invited!"), setTimeout((function() {
-                                            V("Invite Me")
+                                        Y("Invited!"), setTimeout((function() {
+                                            Y("Invite Me")
                                         }), 2e3);
                                     case 6:
                                     case "end":
@@ -114,12 +117,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ye = (0, h.S6)({
-                        fileUrl: he,
+                    Ze = (0, h.S6)({
+                        fileUrl: be,
                         width: "128"
                     }),
-                    Ee = null !== (n = null == b || null === (r = b.name) || void 0 === r ? void 0 : r.substr(0, 300)) && void 0 !== n ? n : "",
-                    ke = function(e) {
+                    Ce = null !== (n = null == b || null === (r = b.name) || void 0 === r ? void 0 : r.substr(0, 300)) && void 0 !== n ? n : "",
+                    Se = function(e) {
                         var t = e.isTraveling,
                             n = e.inWorld,
                             r = e.inPrivate,
@@ -127,103 +130,103 @@
                             a = e.isMobile,
                             o = e.instanceId,
                             l = e.shortWorldName;
-                        return t ? d.createElement(L, {
+                        return t ? d.createElement(M, {
                             role: "note",
                             "aria-label": "User is Loading a World"
-                        }, "Loading a world") : n && r ? d.createElement(A, {
+                        }, "Loading a world") : n && r ? d.createElement(L, {
                             role: "note",
                             "aria-label": "User is in a Private World"
-                        }, "In a private world") : i ? d.createElement(W, {
+                        }, "In a private world") : i ? d.createElement(A, {
                             role: "note",
                             "aria-label": "User is On Website"
-                        }, "On website") : a ? d.createElement(W, {
+                        }, "On website") : a ? d.createElement(A, {
                             role: "note",
                             "aria-label": "User is On Mobile"
-                        }, "On mobile") : n && !r && o ? d.createElement(W, {
+                        }, "On mobile") : n && !r && o ? d.createElement(A, {
                             role: "note",
                             "aria-label": "User World Location"
                         }, l) : null
                     }({
-                        isTraveling: oe,
-                        inWorld: ce,
-                        inPrivate: ae,
-                        isWeb: le,
-                        isMobile: se,
-                        instanceId: ue,
-                        shortWorldName: Ee
+                        isTraveling: le,
+                        inWorld: ue,
+                        inPrivate: oe,
+                        isWeb: se,
+                        isMobile: ce,
+                        instanceId: de,
+                        shortWorldName: Ce
                     }),
-                    Ze = function(e) {
+                    Ie = function(e) {
                         var t = e.statusDescription,
                             n = e.isOffline,
                             r = e.userStatusLabel,
                             i = e.receivesMobileNotifications,
                             a = e.isUserCardHovered;
-                        return t && !n ? d.createElement(H, {
+                        return t && !n ? d.createElement(P, {
                             "aria-label": "User Status Description"
-                        }, t) : t || n ? n ? d.createElement(M, {
+                        }, t) : t || n ? n ? d.createElement(T, {
                             isUserCardHovered: a,
                             isOffline: n,
                             role: "note",
                             "aria-label": "User is offline"
-                        }, "Offline ", i && "on Mobile") : null : d.createElement(H, {
+                        }, "Offline ", i && "on Mobile") : null : d.createElement(P, {
                             "aria-label": "User Status Description"
                         }, r)
                     }({
                         statusDescription: u.statusDescription,
-                        isOffline: de,
-                        userStatusLabel: me,
-                        receivesMobileNotifications: ge,
-                        isUserCardHovered: ee
+                        isOffline: fe,
+                        userStatusLabel: ve,
+                        receivesMobileNotifications: he,
+                        isUserCardHovered: te
                     });
-                return d.createElement(N, {
+                return d.createElement(z, {
                     onMouseEnter: function() {
-                        return te(!0)
+                        return ne(!0)
                     },
                     onMouseLeave: function() {
-                        return te(!1)
+                        return ne(!1)
                     },
                     role: "listitem",
                     "aria-label": "User Card",
                     level: (0, E.FR)({
                         tags: u.tags
                     }),
-                    isOffline: de
-                }, !1, d.createElement(z, null, d.createElement(I, null, d.createElement(F, {
+                    isOffline: fe
+                }, !1, d.createElement(U, null, d.createElement(q, null, d.createElement(W, {
                     "aria-label": "User Image",
                     to: "/home/user/".concat(u.id),
-                    onClick: re
-                }, d.createElement(U, null, "Go To Profile"), d.createElement(j, {
-                    isOffline: de,
-                    isUserCardHovered: ee,
-                    url: ye
+                    onClick: ie
+                }, d.createElement(F, null, "Go To Profile"), d.createElement(j, {
+                    isOffline: fe,
+                    isUserCardHovered: te,
+                    url: Ze
                 }))), d.createElement(O, {
-                    isOffline: de,
+                    isOffline: fe,
                     role: "group",
                     "aria-label": "User Info",
                     className: "flex-grow-1 justify-content-between"
-                }, d.createElement(q, {
+                }, d.createElement(N, {
                     className: "align-items-center"
                 }, d.createElement(c.Cl, {
-                    status: fe,
-                    isInActive: ve,
-                    title: "".concat(me, " ").concat(pe && "- ".concat(pe))
-                }), d.createElement(P, {
+                    status: me,
+                    isInActive: pe,
+                    title: "".concat(ve, " ").concat(ge && "- ".concat(ge))
+                }), d.createElement(R, {
                     to: "/home/user/".concat(u.id),
-                    onClick: re
-                }, u.displayName)), ke, Ze, de && !!u.last_login && d.createElement(T, {
-                    isUserCardHovered: ee,
+                    onClick: ie
+                }, u.displayName)), Se, Ie, fe && !!u.last_login && d.createElement(H, {
+                    isUserCardHovered: te,
                     role: "note",
                     "aria-label": "Last Logged In"
-                }, x()(u.last_login).fromNow()))), ce && !ae && !!ue && d.createElement(D, {
+                }, x()(u.last_login).fromNow()))), ue && !oe && !!de && d.createElement(D, {
                     role: "group",
                     "aria-label": "User Location Info"
-                }, d.createElement(R, null, d.createElement(B, {
+                }, d.createElement(G, null, d.createElement(_, {
                     url: null == b ? void 0 : b.thumbnailImageUrl,
-                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(ue),
+                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(de),
                     target: "_blank"
-                }, d.createElement(G, null, "Open Instance")), d.createElement(_, {
+                }, d.createElement(B, null, "Open Instance")), d.createElement($, {
                     className: "flex-grow-1 justify-content-between"
-                }, d.createElement(q, {
+                }, d.createElement(N, {
                     className: "align-items-start"
                 }, d.createElement(y.Z, {
                     role: "note",
@@ -232,60 +235,65 @@
                 }, null == w ? void 0 : w.users.length, " ", d.createElement(c.$1, {
                     icon: v.FV,
                     title: "Number of friends in instance"
-                }), " "), d.createElement($, {
-                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(ue),
-                    title: Ee,
+                }), " "), d.createElement(K, {
+                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(de),
+                    title: Ce,
                     target: "_blank",
                     "aria-label": "Location Link"
-                }, Ee)), d.createElement(K, {
+                }, Ce)), d.createElement(Q, {
                     className: "align-items-center"
-                }, d.createElement(Z.Z, {
-                    region: xe,
+                }, ye && d.createElement(Z.Z, {
+                    imageSize: "16px",
+                    className: "tw-mr-1"
+                }), d.createElement(C.Z, {
+                    region: we,
                     imageSize: "16px"
                 }), d.createElement("div", {
                     role: "note",
                     "aria-label": "Instance Type"
-                }, be), d.createElement(Q, {
-                    onClick: we
+                }, xe), d.createElement(V, {
+                    onClick: ke,
+                    disabled: Ee,
+                    title: Ee ? "Age Verification Required (18+)" : null
                 }, J))))))
             }));
-            C.displayName = "FriendSidebarComponent";
-            const S = C;
-            var I = (0, a.Z)("div", {
+            S.displayName = "FriendSidebarComponent";
+            const I = S;
+            var q = (0, a.Z)("div", {
                     target: "e176ivn223"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                q = (0, a.Z)("div", {
+                N = (0, a.Z)("div", {
                     target: "e176ivn222"
                 })({
                     name: "ho1qnd",
                     styles: "display:flex;flex-direction:row"
                 }),
-                N = (0, a.Z)(I, {
+                z = (0, a.Z)(q, {
                     target: "e176ivn221"
                 })("margin:.5rem 1.3rem 0 1.3rem;border-radius:4px;position:relative;padding:15px;background-color:", (function(e) {
                     return e.isOffline ? "#181B1F" : "#252A30"
                 }), ";&:hover{background-color:#252A30;}"),
-                z = (0, a.Z)(q, {
+                U = (0, a.Z)(N, {
                     target: "e176ivn220"
                 })({
                     name: "bjn8wh",
                     styles: "position:relative"
                 }),
-                U = (0, a.Z)("div", {
+                F = (0, a.Z)("div", {
                     target: "e176ivn219"
                 })({
                     name: "106697k",
                     styles: "width:100%;height:100%;top:0;left:0;position:absolute;z-index:3;opacity:0;transition:opacity 0.2s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;background-color:rgba(0, 0, 0, 0.7)"
                 }),
-                F = (0, a.Z)(w.rU, {
+                W = (0, a.Z)(w.rU, {
                     shouldForwardProp: function(e) {
                         return e && "statusColor" !== e
                     },
                     target: "e176ivn218"
-                })("display:flex;cursor:pointer;width:124px;height:72px;overflow:hidden;position:relative;border-radius:4px;box-sizing:border-box;&:hover ", U, "{opacity:1;}"),
+                })("display:flex;cursor:pointer;width:124px;height:72px;overflow:hidden;position:relative;border-radius:4px;box-sizing:border-box;&:hover ", F, "{opacity:1;}"),
                 j = (0, a.Z)("div", {
                     target: "e176ivn217"
                 })("position:absolute;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
@@ -295,138 +303,138 @@
                         n = e.isUserCardHovered;
                     return t && !n && "opacity: .5;"
                 }), ";"),
-                O = (0, a.Z)(I, {
+                O = (0, a.Z)(q, {
                     target: "e176ivn216"
                 })("margin:5px 10px;max-width:189px;position:relative;z-index:1;color:", (function(e) {
                     return e.isOffline ? "#737372" : "white"
                 }), ";"),
-                W = (0, a.Z)(q, {
+                A = (0, a.Z)(N, {
                     target: "e176ivn214"
                 })({
                     name: "1u7pwvo",
                     styles: "font-size:0.9rem"
                 }),
-                A = (0, a.Z)(W, {
+                L = (0, a.Z)(A, {
                     target: "e176ivn213"
                 })(""),
-                L = (0, a.Z)(W, {
+                M = (0, a.Z)(A, {
                     target: "e176ivn212"
                 })(""),
-                M = (0, a.Z)(W, {
+                T = (0, a.Z)(A, {
                     target: "e176ivn211"
                 })("color:", (function(e) {
                     var t = e.isOffline,
                         n = e.isUserCardHovered;
                     return t && n ? "white" : "#737372"
                 }), ";"),
-                T = (0, a.Z)(W, {
+                H = (0, a.Z)(A, {
                     target: "e176ivn210"
                 })("color:", (function(e) {
                     return e.isUserCardHovered ? "#9C9C9C" : "#737372"
                 }), ";"),
-                H = (0, a.Z)(W, {
+                P = (0, a.Z)(A, {
                     target: "e176ivn29"
                 })({
                     name: "1oqhvc",
                     styles: "color:#9C9C9C"
                 }),
-                P = (0, a.Z)(w.rU, {
+                R = (0, a.Z)(w.rU, {
                     target: "e176ivn28"
                 })({
                     name: "1u1s9ta",
                     styles: "font-weight:900"
                 }),
-                D = (0, a.Z)(q, {
+                D = (0, a.Z)(N, {
                     target: "e176ivn27"
                 })({
                     name: "1b25ts6",
                     styles: "flex-grow:1;border:1px solid #404C58;margin-top:10px;border-radius:4px;overflow:hidden;position:relative;z-index:1;min-height:77px"
                 }),
-                R = (0, a.Z)(q, {
+                G = (0, a.Z)(N, {
                     target: "e176ivn26"
                 })({
                     name: "mczqin",
                     styles: "position:relative;z-index:2;padding:10px;flex-wrap:nowrap"
                 }),
-                G = (0, a.Z)("div", {
+                B = (0, a.Z)("div", {
                     target: "e176ivn25"
                 })({
                     name: "1gzcm43",
                     styles: "position:absolute;z-index:3;width:100%;height:100%;top:0;left:0;background-color:rgba(0, 0, 0, 0.7);border-radius:4px;color:white;font-weight:700;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transition:opacity 0.2s ease-in-out;font-size:0.6rem"
                 }),
-                B = (0, a.Z)(w.rU, {
+                _ = (0, a.Z)(w.rU, {
                     target: "e176ivn24"
                 })("display:flex;position:relative;width:80px;height:57px;display:flex;flex-shrink:0;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
-                }), ");border-radius:4px;&:hover ", G, "{opacity:1;}"),
-                _ = (0, a.Z)(I, {
+                }), ");border-radius:4px;&:hover ", B, "{opacity:1;}"),
+                $ = (0, a.Z)(q, {
                     target: "e176ivn23"
                 })({
                     name: "1a2afmv",
                     styles: "margin-left:10px"
                 }),
-                $ = (0, a.Z)(w.rU, {
+                K = (0, a.Z)(w.rU, {
                     target: "e176ivn22"
                 })({
                     name: "1hyjd8g",
                     styles: "display:flex;color:white;font-weight:900;margin-left:10px;&:hover{color:white;}"
                 }),
-                K = (0, a.Z)(q, {
+                Q = (0, a.Z)(N, {
                     target: "e176ivn21"
                 })({
                     name: "1k16hbx",
                     styles: "margin-top:5px;&>div{margin-right:5px;line-height:16px;}"
                 }),
-                Q = (0, a.Z)("button", {
+                V = (0, a.Z)("button", {
                     target: "e176ivn20"
                 })({
-                    name: "14dkj72",
-                    styles: "display:flex;outline:none!important;border:1px solid var(--bs-primary);border-radius:4px;background-color:rgba(31, 209, 237, 0);color:var(--bs-primary);padding:1px 10px;margin:0 5px;transition:background-color 0.2s ease-in-out;font-size:0.7rem;&:hover{background-color:rgba(31, 209, 237, 0.3);}"
+                    name: "19t9gfi",
+                    styles: "display:flex;outline:none!important;border:1px solid var(--bs-primary);border-radius:4px;background-color:rgba(31, 209, 237, 0);color:var(--bs-primary);padding:1px 10px;margin:0 5px;transition:background-color 0.2s ease-in-out;font-size:0.7rem;&:hover:enabled{background-color:rgba(31, 209, 237, 0.3);}&:disabled{border:hsl(0, 0%, 60%) solid 1px;color:hsl(0, 0%, 60%);}"
                 }),
                 J = n(87462),
-                V = n(45987),
+                Y = n(45987),
                 X = ["isActive", "categoryName", "count"];
-            var Y = (0, a.Z)("div", {
+            var ee = (0, a.Z)("div", {
                     target: "elcswtc2"
                 })("margin:", (function(e) {
                     var t = e.isActive,
                         n = e.isEmpty;
                     return !t || t && n ? "0 1.3rem 0.75rem 1.3rem" : "0 1.3rem 0 1.3rem"
                 }), ";font-size:1.19rem;font-weight:300;cursor:pointer;"),
-                ee = (0, a.Z)("span", {
+                te = (0, a.Z)("span", {
                     target: "elcswtc1"
                 })({
                     name: "1j389vi",
                     styles: "font-weight:700"
                 }),
-                te = (0, a.Z)(c.$1, {
+                ne = (0, a.Z)(c.$1, {
                     target: "elcswtc0"
                 })("font-size:1.1rem;display:inline-block;transition:transform 0.1s ease;transform:", (function(e) {
                     return e.isActive ? "rotate(0)" : "rotate(-90deg)"
                 }), ";");
-            const ne = function(e) {
+            const re = function(e) {
                 var t = e.isActive,
                     n = e.categoryName,
                     r = e.count,
-                    i = (0, V.Z)(e, X);
-                return d.createElement(Y, (0, J.Z)({
+                    i = (0, Y.Z)(e, X);
+                return d.createElement(ee, (0, J.Z)({
                     isActive: t,
                     isEmpty: 0 === r
-                }, i), d.createElement(te, {
+                }, i), d.createElement(ne, {
                     isActive: t,
                     icon: o.pt,
                     color: "white",
                     className: "tw-mr-1"
-                }), d.createElement(ee, null, n, " "), d.createElement("span", null, "(", r, ")"))
+                }), d.createElement(te, null, n, " "), d.createElement("span", null, "(", r, ")"))
             };
-            var re = [{
+            var ie = [{
                     label: "Status",
                     value: "status"
                 }, {
                     label: "Name",
                     value: "name"
                 }],
-                ie = d.memo((function(e) {
+                ae = d.memo((function(e) {
                     var t = e.friendsToggleCallback,
                         n = d.useState(""),
                         a = (0, i.Z)(n, 2),
@@ -445,27 +453,27 @@
                         k = E[0],
                         Z = E[1],
                         C = d.useState(10),
-                        I = (0, i.Z)(C, 2),
-                        q = I[0],
-                        N = I[1],
+                        S = (0, i.Z)(C, 2),
+                        q = S[0],
+                        N = S[1],
                         z = d.useState(new Set(["inWorld", "active", "offline"])),
                         U = (0, i.Z)(z, 2),
                         F = U[0],
-                        j = U[1],
-                        O = d.useState(!1),
-                        W = (0, i.Z)(O, 2),
-                        A = W[0],
-                        L = W[1],
+                        W = U[1],
+                        j = d.useState(!1),
+                        O = (0, i.Z)(j, 2),
+                        A = O[0],
+                        L = O[1],
                         M = d.useRef(null),
                         T = d.useRef(null),
                         H = function(e) {
                             return function() {
                                 F.has(e) ? function(e) {
                                     var t = new Set(F);
-                                    t.delete(e), j(t)
+                                    t.delete(e), W(t)
                                 }(e) : function(e) {
                                     var t = new Set(F);
-                                    t.add(e), j(t)
+                                    t.add(e), W(t)
                                 }(e)
                             }
                         },
@@ -476,17 +484,17 @@
                             selectedGroup: k,
                             enabledCategories: F
                         }),
-                        D = P.inWorldFriends,
-                        R = P.activeFriends,
+                        R = P.inWorldFriends,
+                        D = P.activeFriends,
                         G = P.offlineFriends,
                         B = P.totalCount,
                         _ = P.loaded,
                         $ = P.sortedFriendGroupData,
                         K = P.activeFriendsCount,
                         Q = P.inWorldFriendsCount,
-                        J = P.offlineFriendsCount,
-                        V = P.debouncedSearchQuery,
-                        X = function() {
+                        V = P.offlineFriendsCount,
+                        J = P.debouncedSearchQuery,
+                        Y = function() {
                             if (T.current) {
                                 var e = (t = T.current.clientHeight, (n = Math.floor(t / 100)) > 10 ? n : 10);
                                 N(e)
@@ -498,7 +506,7 @@
                     }), []), d.useEffect((function() {
                         T.current && (T.current.scrollTop = 0)
                     }), [p, l, k]);
-                    var Y = function(e, t, n) {
+                    var X = function(e, t, n) {
                         var r = n[e];
                         return r ? "".concat(s()(r.name, {
                             omission: "...",
@@ -506,39 +514,39 @@
                         }), " (").concat(r.friends.length, "/").concat(150, ")") : "All Friends (".concat(t, ")")
                     }(k, B, $);
                     return d.useEffect((function() {
-                        return X(), window.addEventListener("resize", X),
+                        return Y(), window.addEventListener("resize", Y),
                             function() {
-                                window.removeEventListener("resize", X)
+                                window.removeEventListener("resize", Y)
                             }
                     }), []), d.useEffect((function() {
-                        V && j(new Set(["inWorld", "active", "offline"]))
-                    }), [V]), d.createElement(se, {
+                        J && W(new Set(["inWorld", "active", "offline"]))
+                    }), [J]), d.createElement(ce, {
                         id: "friendsSidebar",
                         onClick: function() {
                             A && L(!1)
                         }
-                    }, d.createElement(ue, {
-                        showShadow: x
                     }, d.createElement(de, {
+                        showShadow: x
+                    }, d.createElement(fe, {
                         onClick: function() {
                             return L((function(e) {
                                 return !e
                             }))
                         },
                         className: "tw-cursor-pointer tw-justify-center md:tw-justify-between mb-3"
-                    }, d.createElement(me, {
+                    }, d.createElement(ve, {
                         className: "tw-hidden md:tw-flex",
                         onClick: function(e) {
                             e.stopPropagation(), t(!1)
                         }
                     }, d.createElement("div", null)), d.createElement("div", {
                         "aria-label": "Friends Total"
-                    }, d.createElement("span", null, Y), d.createElement(c.$1, {
+                    }, d.createElement("span", null, X), d.createElement(c.$1, {
                         "aria-label": "Friend Groups Dropdown Button",
                         icon: o.pt,
                         color: "white",
                         className: "ms-2"
-                    })), d.createElement("div", null), A && d.createElement(be, {
+                    })), d.createElement("div", null), A && d.createElement(xe, {
                         "aria-label": "Friend Groups"
                     }, [{
                         label: "All Friends (".concat(B, ")"),
@@ -552,7 +560,7 @@
                             value: e.selectedGroupTag
                         }
                     })))).map((function(e, t) {
-                        return d.createElement(we, {
+                        return d.createElement(ye, {
                             "aria-label": "Friend Group Button",
                             role: "radio",
                             key: e.value,
@@ -563,7 +571,7 @@
                             tabIndex: t,
                             title: e.label
                         }, e.label)
-                    })))), d.createElement(fe, {
+                    })))), d.createElement(me, {
                         type: "text",
                         onChange: function(e) {
                             var t;
@@ -579,10 +587,10 @@
                             g(e)
                         },
                         value: p,
-                        options: re
-                    })), d.createElement(he, null, d.createElement(ve, {
+                        options: ie
+                    })), d.createElement(be, null, d.createElement(pe, {
                         ref: T
-                    }, d.createElement(pe, {
+                    }, d.createElement(ge, {
                         className: "pt-1",
                         onScroll: function(e) {
                             var t = e.target,
@@ -592,45 +600,45 @@
                                 a = void 0 === i ? 0 : i;
                             r > 0 && !x ? w(!0) : 0 === r && x && w(!1), _ && r + a >= M.current.scrollHeight - 200 && q <= B && N(Math.min(q + 10, B))
                         }
-                    }, d.createElement(ge, {
+                    }, d.createElement(he, {
                         ref: M,
                         role: "list",
                         "aria-label": "Friends List"
-                    }, d.createElement(ne, {
+                    }, d.createElement(re, {
                         isActive: F.has("inWorld"),
                         onClick: H("inWorld"),
                         categoryName: "In-World",
                         count: Q
-                    }), F.has("inWorld") && D.map((function(e) {
-                        return d.createElement(S, {
+                    }), F.has("inWorld") && R.map((function(e) {
+                        return d.createElement(I, {
                             key: e.id,
                             userId: e.id,
                             closeSidebar: function() {
                                 t(!1)
                             }
                         })
-                    })), d.createElement(ne, {
-                        className: F.has("inWorld") && D.length > 0 ? "tw-mt-3" : "",
+                    })), d.createElement(re, {
+                        className: F.has("inWorld") && R.length > 0 ? "tw-mt-3" : "",
                         isActive: F.has("active"),
                         onClick: H("active"),
                         categoryName: "Active",
                         count: K
-                    }), F.has("active") && R.map((function(e) {
-                        return d.createElement(S, {
+                    }), F.has("active") && D.map((function(e) {
+                        return d.createElement(I, {
                             key: e.id,
                             userId: e.id,
                             closeSidebar: function() {
                                 t(!1)
                             }
                         })
-                    })), d.createElement(ne, {
-                        className: F.has("active") && R.length > 0 ? "tw-mt-3" : "",
+                    })), d.createElement(re, {
+                        className: F.has("active") && D.length > 0 ? "tw-mt-3" : "",
                         isActive: F.has("offline"),
                         onClick: H("offline"),
                         categoryName: "Offline",
-                        count: J
+                        count: V
                     }), F.has("offline") && G.map((function(e) {
-                        return d.createElement(S, {
+                        return d.createElement(I, {
                             key: e.id,
                             userId: e.id,
                             closeSidebar: function() {
@@ -639,88 +647,88 @@
                         })
                     })))))))
                 }));
-            ie.displayName = "FriendsComponent";
-            const ae = ie;
-            var oe = (0, a.Z)("div", {
+            ae.displayName = "FriendsComponent";
+            const oe = ae;
+            var le = (0, a.Z)("div", {
                     target: "e1oqhh5q12"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                le = (0, a.Z)("div", {
+                se = (0, a.Z)("div", {
                     target: "e1oqhh5q11"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                se = (0, a.Z)(oe, {
+                ce = (0, a.Z)(le, {
                     target: "e1oqhh5q10"
                 })({
                     name: "fq1d6",
                     styles: "min-height:100%;flex-grow:1;overflow-x:hidden"
                 }),
-                ce = {
+                ue = {
                     name: "125sl10",
                     styles: "box-shadow:0 20px 90px -2px rgba(0, 0, 0, 0.3)"
                 },
-                ue = (0, a.Z)(oe, {
+                de = (0, a.Z)(le, {
                     target: "e1oqhh5q9"
                 })("padding:1.3rem;z-index:10;", (function(e) {
-                    return e.showShadow ? ce : (0, u.iv)("", "")
+                    return e.showShadow ? ue : (0, u.iv)("", "")
                 }), " transition:box-shadow 0.3s ease-in-out;"),
-                de = (0, a.Z)(le, {
+                fe = (0, a.Z)(se, {
                     target: "e1oqhh5q8"
                 })({
                     name: "ju98wq",
                     styles: "position:relative;font-weight:300;font-size:1.5rem;line-height:1.5rem;align-items:center"
                 }),
-                fe = (0, a.Z)(c.II, {
+                me = (0, a.Z)(c.II, {
                     target: "e1oqhh5q7"
                 })({
                     name: "82a6rk",
                     styles: "flex:1"
                 }),
-                me = (0, a.Z)("div", {
+                ve = (0, a.Z)("div", {
                     target: "e1oqhh5q6"
                 })({
                     name: "13yoiil",
                     styles: "transition:all 0.1s ease-in;width:35px;height:35px;display:flex;justify-content:center;overflow:hidden;:hover{transform:scale(1.15);cursor:pointer;}:active{transform:scale(0.9);}>div{width:100%;height:100%;background-image:url('https://assets.vrchat.com/www/images/WingLeft.png');background-repeat:no-repeat;background-position:center;background-size:contain;}"
                 }),
-                ve = (0, a.Z)(oe, {
+                pe = (0, a.Z)(le, {
                     target: "e1oqhh5q5"
                 })({
                     name: "wsam0j",
                     styles: "flex-grow:1;position:absolute;width:100%;height:100%"
                 }),
-                pe = (0, a.Z)(oe, {
+                ge = (0, a.Z)(le, {
                     target: "e1oqhh5q4"
                 })({
                     name: "131cj2s",
                     styles: "overflow-y:auto;overflow-x:hidden;transition:margin-right 250ms ease-in-out"
                 }),
-                ge = (0, a.Z)(oe, {
+                he = (0, a.Z)(le, {
                     target: "e1oqhh5q3"
                 })({
                     name: "1bnk0mu",
                     styles: "transition:margin-right 250ms ease-in-out"
                 }),
-                he = (0, a.Z)("div", {
-                    target: "e1oqhh5q2"
-                })("position:relative;height:100%;flex-grow:1;&:hover{", pe, "{margin-right:0;}}"),
                 be = (0, a.Z)("div", {
+                    target: "e1oqhh5q2"
+                })("position:relative;height:100%;flex-grow:1;&:hover{", ge, "{margin-right:0;}}"),
+                xe = (0, a.Z)("div", {
                     target: "e1oqhh5q1"
                 })({
                     name: "3x907s",
                     styles: "position:absolute;z-index:5;top:100%;left:-2px;width:calc(100% + 4px);background-color:#07343f;display:flex;flex-direction:column;border-radius:3px;border:#086c84 solid 2px;text-align:center;max-width:calc(100% + 4px);font-size:1rem"
                 }),
-                xe = {
+                we = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                we = (0, a.Z)("div", {
+                ye = (0, a.Z)("div", {
                     target: "e1oqhh5q0"
                 })("transition:opacity 0.2s ease-in-out;padding:5px;background-color:#07343f;cursor:pointer;max-width:100%;white-space:nowrap;", (function(e) {
-                    return e.trimToLength ? xe : ""
+                    return e.trimToLength ? we : ""
                 }), " transition:background-color 0.2s ease-in-out;&:hover{background-color:#086c84;opacity:1;}")
         },
         29932: e => {
@@ -926,4 +934,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6f5b2ea2646979db07066623c234e21f95a2a055bf82e68a9be072551229355f.js.map
+//# sourceMappingURL=cefb8b84a6839fdc9c48718e4d35f358a9c20b334c689e2a2389da58c0e8a48f.js.map

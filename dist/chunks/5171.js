@@ -380,7 +380,7 @@
         },
         78006: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => cn
+                default: () => sn
             });
             var a = n(54546),
                 r = n(67294),
@@ -477,13 +477,13 @@
                     onClick: function(e) {
                         e.stopPropagation(), e.preventDefault(), (null != _ && _.includes("permission-user-icons") || null != _ && _.includes("permission-user-gallery")) && (b("/home/gallery"), ee())
                     }
-                }, r.createElement(P, {
+                }, r.createElement(A, {
                     "aria-label": "User Icon",
                     url: re,
                     level: (0, w.FR)({
                         tags: u.tags
                     })
-                }, r.createElement(A, null, r.createElement(U, {
+                }, r.createElement(P, null, r.createElement(U, {
                     icon: f._j,
                     size: "lg"
                 }))), r.createElement(R, null, "Change Icon")), r.createElement(z, null)), !(null === (n = u.badges) || void 0 === n || !n.length) && r.createElement(G, null, u.badges.filter((function(e) {
@@ -576,12 +576,12 @@
                     name: "13p5eg",
                     styles: "display:flex;position:absolute;bottom:-40px;left:10px;width:80px;align-items:center;z-index:3;color:white;&:hover{div:last-child{opacity:1;}svg{opacity:1;}}"
                 }),
-                P = (0, p.Z)("div", {
+                A = (0, p.Z)("div", {
                     target: "esgak1l13"
                 })("border-radius:100%;width:80px;height:80px;border:3px solid #07242b;box-sizing:border-box;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
                 }), ");background-color:#05191d;display:flex;justify-content:center;align-items:center;flex-shrink:0;"),
-                A = (0, p.Z)("div", {
+                P = (0, p.Z)("div", {
                     target: "esgak1l12"
                 })({
                     name: "6828uq",
@@ -692,8 +692,8 @@
                 ze = n(34698),
                 je = n(58877),
                 qe = n(25062);
-            const Pe = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
-            var Ae = n(17219),
+            const Ae = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
+            var Pe = n(17219),
                 Ue = n(31358);
             const Re = function(e) {
                 var t = e.n,
@@ -1151,13 +1151,13 @@
                         C = (0, a.Z)(I, 2),
                         S = C[0],
                         O = C[1],
-                        z = (0, Ae.y)().data,
+                        z = (0, Pe.y)().data,
                         j = ((0, E.pc)(), (0, d.XC)().data),
                         q = (0, i.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
-                        P = (0, d.q7)().data,
-                        A = void 0 === P ? [] : P,
+                        A = (0, d.q7)().data,
+                        P = void 0 === A ? [] : A,
                         U = (0, E.CZ)().sortedLocations.length,
                         R = (0, i.v9)((function(e) {
                             return e.notifications.groupNotifications
@@ -1178,7 +1178,7 @@
                         W = function() {
                             s && s(!1)
                         },
-                        $ = A || [],
+                        $ = P || [],
                         V = $.includes("permission-user-icons"),
                         L = $.includes("permission-user-gallery"),
                         F = ($.includes("permission-groups-beta"), null !== (t = q.length) && void 0 !== t ? t : 0);
@@ -1513,7 +1513,7 @@
                     }, r.createElement("img", {
                         alt: "subscriptions",
                         width: "25",
-                        src: Pe
+                        src: Ae
                     }), r.createElement("div", null, "Subscriptions"), r.createElement(k.$1, {
                         icon: K.yO
                     })), r.createElement(xt, {
@@ -1594,10 +1594,10 @@
                     }), [a, n]), null
                 },
                 qt = n.p + "4237ca770f17680f3d2d0178803a80813b464ec58fc9ea496c992fcce193d614.jpg";
-            var Pt = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(9923), n.e(5508)]).then(n.bind(n, 5712))
+            var At = r.lazy((function() {
+                    return Promise.all([n.e(3261), n.e(9923), n.e(1047)]).then(n.bind(n, 26969))
                 })),
-                At = r.lazy((function() {
+                Pt = r.lazy((function() {
                     return Promise.all([n.e(4984), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
                 })),
                 Ut = r.lazy((function() {
@@ -1643,39 +1643,42 @@
                     return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
                 Xt = r.lazy((function() {
-                    return n.e(3443).then(n.bind(n, 53443))
+                    return n.e(6815).then(n.bind(n, 76815))
                 })),
                 Ht = r.lazy((function() {
-                    return n.e(9795).then(n.bind(n, 79795))
+                    return n.e(3443).then(n.bind(n, 53443))
                 })),
                 Qt = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
+                    return n.e(9795).then(n.bind(n, 79795))
                 })),
                 Yt = r.lazy((function() {
-                    return n.e(7047).then(n.bind(n, 7047))
+                    return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
                 })),
                 en = r.lazy((function() {
-                    return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
+                    return n.e(7047).then(n.bind(n, 7047))
                 })),
                 tn = r.lazy((function() {
-                    return Promise.all([n.e(4984), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
+                    return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 nn = r.lazy((function() {
-                    return n.e(997).then(n.bind(n, 997))
+                    return Promise.all([n.e(4984), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
                 })),
                 an = r.lazy((function() {
-                    return n.e(4945).then(n.bind(n, 14945))
+                    return n.e(997).then(n.bind(n, 997))
                 })),
                 rn = r.lazy((function() {
-                    return n.e(7024).then(n.bind(n, 48192))
+                    return n.e(4945).then(n.bind(n, 14945))
                 })),
                 on = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(8666), n.e(7323)]).then(n.bind(n, 97323))
+                    return n.e(7024).then(n.bind(n, 48192))
                 })),
                 ln = r.lazy((function() {
+                    return Promise.all([n.e(3261), n.e(8666), n.e(8906)]).then(n.bind(n, 38906))
+                })),
+                cn = r.lazy((function() {
                     return Promise.all([n.e(4984), n.e(3261), n.e(2998), n.e(2520), n.e(1435), n.e(5777)]).then(n.bind(n, 40525))
                 }));
-            const cn = function() {
+            const sn = function() {
                 var e = (0, i.I0)();
                 It();
                 var t = (0, d.IB)().data,
@@ -1757,13 +1760,13 @@
                     }))
                 }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/search/:query",
-                    element: r.createElement(At, null)
+                    element: r.createElement(Pt, null)
                 }), r.createElement(o.AW, {
                     path: "/profile",
                     element: r.createElement(Wt, null)
                 }), r.createElement(o.AW, {
                     path: "/user/:userId/*",
-                    element: r.createElement(on, null)
+                    element: r.createElement(ln, null)
                 }), r.createElement(o.AW, {
                     path: "/uploadIcon",
                     element: St(Lt)()
@@ -1778,7 +1781,7 @@
                     element: r.createElement($t, null)
                 }), r.createElement(o.AW, {
                     path: "/marketplace/*",
-                    element: r.createElement(en, null)
+                    element: r.createElement(tn, null)
                 }), r.createElement(o.AW, {
                     path: "/wallet",
                     element: r.createElement(kt.Z, {
@@ -1796,13 +1799,13 @@
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(Qt, null)
+                    element: r.createElement(Yt, null)
                 }), r.createElement(o.AW, {
                     path: "/worlds",
                     element: r.createElement(Gt, null)
                 }), r.createElement(o.AW, {
                     path: "/world/:worldId/*",
-                    element: r.createElement(ln, null)
+                    element: r.createElement(cn, null)
                 }), r.createElement(o.AW, {
                     path: "/avatars",
                     element: r.createElement(Mt, null)
@@ -1811,13 +1814,13 @@
                     element: r.createElement(Dt, null)
                 }), r.createElement(o.AW, {
                     path: "/content/*",
-                    element: r.createElement(tn, null)
-                }), r.createElement(o.AW, {
-                    path: "/messages",
                     element: r.createElement(nn, null)
                 }), r.createElement(o.AW, {
-                    path: "/playermoderations",
+                    path: "/messages",
                     element: r.createElement(an, null)
+                }), r.createElement(o.AW, {
+                    path: "/playermoderations",
+                    element: r.createElement(rn, null)
                 }), r.createElement(o.AW, {
                     path: "/download",
                     element: r.createElement(Ut, null)
@@ -1845,26 +1848,29 @@
                         to: "../../group/:groupId"
                     })
                 }), r.createElement(o.AW, {
+                    path: "/ageverification",
+                    element: r.createElement(Xt, null)
+                }), r.createElement(o.AW, {
                     path: "/accountlink",
                     element: r.createElement(Rt, null)
                 }), r.createElement(o.AW, {
                     path: "/favorites/*",
                     element: r.createElement(o.Z5, null, r.createElement(o.AW, {
                         path: "/:type",
-                        element: r.createElement(Xt, null)
+                        element: r.createElement(Ht, null)
                     }), r.createElement(o.AW, {
                         path: "/:type/:name",
-                        element: r.createElement(Xt, null)
+                        element: r.createElement(Ht, null)
                     }))
                 }), r.createElement(o.AW, {
                     path: "/jams/*",
-                    element: r.createElement(Yt, null)
+                    element: r.createElement(en, null)
                 }), !1, r.createElement(o.AW, {
                     path: "/subscriptions",
-                    element: r.createElement(rn, null)
+                    element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
                     path: "/",
-                    element: r.createElement(Pt, null)
+                    element: r.createElement(At, null)
                 })))))), r.createElement("div", {
                     className: "fixed-top rightbar ".concat(g ? "open" : "")
                 }, r.createElement(s.SV, {
@@ -1882,7 +1888,7 @@
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(Ht, {
+                }, r.createElement(Qt, {
                     friendsToggleCallback: x
                 })))), r.createElement("div", {
                     role: "button",
@@ -1936,8 +1942,8 @@
                 z = n.n(O),
                 j = n(56176),
                 q = n.n(j),
-                P = n(84110),
-                A = n.n(P),
+                A = n(84110),
+                P = n.n(A),
                 U = n(9419),
                 R = n(50249),
                 D = n(13757),
@@ -2017,7 +2023,7 @@
                 be = n(14411),
                 ye = n(88233),
                 Ee = n(2566);
-            z().extend(A()), z().extend(q());
+            z().extend(P()), z().extend(q());
             var xe = {
                     "economy.alert": {
                         caption: "Economy",
@@ -2281,13 +2287,13 @@
                     senderUserData: z
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var P, A = Ce[k],
+                var A, P = Ce[k],
                     U = Se[k],
                     R = (0, m.Tq)(z.status).color,
                     D = z.profilePicOverride || z.currentAvatarThumbnailImageUrl,
                     M = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = E.details) || void 0 === l ? void 0 : l.requestMessage);
                 return u.createElement(Ee.jm, null, u.createElement(Ee.XK, null, u.createElement(be.$1, {
-                    icon: A
+                    icon: P
                 }), "  ", u.createElement("i", null, U)), u.createElement(Ee.g6, null, u.createElement(Ee.rR, {
                     to: "/home/user/".concat(N),
                     statusColor: R
@@ -2299,7 +2305,7 @@
                     to: "/home/user/".concat(N)
                 }, u.createElement("strong", null, z.displayName)), " - ", Z || {
                     friendRequest: "would like to be your friend!",
-                    invite: "has invited you to ".concat((null === (P = E.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
+                    invite: "has invited you to ".concat((null === (A = E.details) || void 0 === A ? void 0 : A.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
                     requestInviteResponse: "has declined your invite request.",
                     inviteResponse: "has declined your invite."
@@ -2852,4 +2858,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c2cb31b58b2cb8769317971b7efcc16ea3d91d4291339b5a14caf189c0f0df6b.js.map
+//# sourceMappingURL=0640b420dd4721bd30ab127b120b2b4dc1b2cb54f9c63b45819bc17da7405163.js.map
