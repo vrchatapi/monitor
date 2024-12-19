@@ -18,8 +18,8 @@
                 i = a(20495),
                 s = a(6811),
                 o = a(67294),
-                l = a(79655),
-                c = a(86646),
+                c = a(79655),
+                l = a(86646),
                 u = a(85533),
                 w = a(43862),
                 d = a(36678),
@@ -27,7 +27,7 @@
                 h = a(79442),
                 p = a(60006);
             const g = function() {
-                var e = (0, l.lr)(),
+                var e = (0, c.lr)(),
                     t = (0, n.Z)(e, 1)[0].get("inquiry-id"),
                     a = (0, h.MI)({
                         inquiryId: t
@@ -37,7 +37,7 @@
                     v = a.error,
                     x = a.refetch,
                     b = "completed" === (null == g ? void 0 : g.status) || "needs_review" === (null == g ? void 0 : g.status);
-                (0, m.Yz)(x, b ? 5e3 : null);
+                (0, m.Yz)(x, b ? 3e3 : null);
                 var y = (0, o.useMemo)((function() {
                     var e, a;
                     if (v) {
@@ -47,7 +47,7 @@
                                 n = "Your inquiry was not found.";
                                 break;
                             case 400:
-                                "No birth date change" === (null === (e = v.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) ? n = "No change in birth date was detected.": "Identification data already in use" === (null === (a = v.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && (n = "Your identification data is already in use on another account."), n = "An unknown error occurred while processing your inquiry.";
+                                n = "No birth date change" === (null === (e = v.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) ? "No change in birth date was detected." : "Identification data already in use" === (null === (a = v.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) ? "Your identification data is already in use on another account." : "An unknown error occurred while processing your inquiry.";
                                 break;
                             case 429:
                                 n = "Too many users are trying to get age verified right now!\nPlease refresh the page in a few minutes.";
@@ -67,7 +67,7 @@
                         case "verified":
                         case "approved":
                             return {
-                                icon: s.f8, status: "Verification Complete", message: "You have successfully verified your age with Persona.\nYour profile data has been updated."
+                                icon: s.f8, status: "Verification Complete", message: "You have successfully verified your age with Persona.\nYour profile data has been updated.", buttonLink: "/home/user/me", buttonText: "View Your Profile"
                             };
                         case "failed":
                         case "declined":
@@ -81,7 +81,7 @@
                     }
                 }), [g, v]);
                 return o.createElement(d.Z, null, o.createElement(u.Z, null, "Age Verification Status"), f || b ? o.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-py-20 tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, o.createElement("div", {
                     className: "tw-mb-5 tw-flex tw-items-center tw-justify-center"
                 }, o.createElement(w.Z, {
@@ -89,20 +89,20 @@
                 })), o.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
                 }, "Please Wait"), o.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-pre"
+                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
                 }, "Please remain on this page while your profile is being updated.", o.createElement("br", null), "This can take up to a couple of minutes.")) : o.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-py-20 tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, o.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, o.createElement("div", {
                     className: "tw-mb-5"
-                }, o.createElement(c.Z, {
+                }, o.createElement(l.Z, {
                     icon: y.icon,
                     className: "tw-w-[72px] tw-h-[72px]"
                 })), o.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
                 }, y.status), o.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-pre"
+                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
                 }, y.message), y.buttonLink && o.createElement(p.Qj, {
                     to: y.buttonLink,
                     className: "tw-mt-9 tw-w-60"
@@ -111,21 +111,21 @@
         },
         43862: (e, t, a) => {
             a.d(t, {
-                Z: () => l
+                Z: () => c
             });
             var n = a(45987),
                 r = a(92332),
                 i = a(67294),
                 s = a(86646),
                 o = ["hidden", "size"];
-            const l = function(e) {
+            const c = function(e) {
                 var t = e.hidden,
                     a = e.size,
-                    l = void 0 === a ? "2x" : a,
-                    c = (0, n.Z)(e, o);
-                return i.createElement("div", c, i.createElement(s.Z, {
+                    c = void 0 === a ? "2x" : a,
+                    l = (0, n.Z)(e, o);
+                return i.createElement("div", l, i.createElement(s.Z, {
                     icon: r.LM,
-                    size: l,
+                    size: c,
                     hidden: t,
                     spin: !0,
                     pulse: !0
@@ -170,21 +170,21 @@
                     a = e.showCredits,
                     s = (0, r.useState)(null),
                     o = (0, n.Z)(s, 2),
-                    l = o[0],
-                    c = o[1],
+                    c = o[0],
+                    l = o[1],
                     u = (0, r.useState)(null),
                     w = (0, n.Z)(u, 2),
                     d = w[0],
                     m = w[1];
                 (0, r.useEffect)((function() {
-                    if (null === l) c(i[0]);
+                    if (null === c) l(i[0]);
                     else {
-                        var e = h(l);
+                        var e = h(c);
                         setTimeout((function() {
-                            return c(e)
+                            return l(e)
                         }), 1e4), m(e)
                     }
-                }), [l]);
+                }), [c]);
                 var h = function(e) {
                     var t = i.findIndex((function(t) {
                         return t.imagePath === e.imagePath
@@ -194,7 +194,7 @@
                 return r.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === l ? "none" : "url(".concat(l.imagePath, ")")
+                        backgroundImage: null === c ? "none" : "url(".concat(c.imagePath, ")")
                     }
                 }, r.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -212,13 +212,13 @@
                     alt: "VRChat"
                 }))), r.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == l ? void 0 : l.worldName) && a && r.createElement("div", {
+                }, t), (null == c ? void 0 : c.worldName) && a && r.createElement("div", {
                     className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
                 }, r.createElement("p", {
                     className: "tw-text-right mb-0"
-                }, r.createElement("strong", null, "World:"), " ", l.worldName), r.createElement("p", {
+                }, r.createElement("strong", null, "World:"), " ", c.worldName), r.createElement("p", {
                     className: "tw-text-right mb-0"
-                }, r.createElement("strong", null, "Author:"), " ", l.authorName)))
+                }, r.createElement("strong", null, "Author:"), " ", c.authorName)))
             }
         },
         79442: (e, t, a) => {
@@ -263,4 +263,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b2593faa041077ecabf80c050c225ebed012a9db63834e332d3b17c69d4e1429.js.map
+//# sourceMappingURL=fc6cd05ab869c2f21cb52b5c85a334ef2e11be212e3c94fd6897594a8946dc43.js.map

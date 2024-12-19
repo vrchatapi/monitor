@@ -79,8 +79,8 @@
                 f = n(35773),
                 p = n(95305),
                 g = n(34698),
-                w = n(83868),
-                y = n.n(w),
+                y = n(83868),
+                w = n.n(y),
                 h = n(12752),
                 E = n(22202),
                 v = n(62437),
@@ -91,7 +91,7 @@
                 var e = (0, E.IB)().data,
                     t = (0, m.useState)(""),
                     n = (0, r.Z)(t, 2),
-                    w = n[0],
+                    y = n[0],
                     Z = n[1],
                     k = (0, m.useState)(""),
                     N = (0, r.Z)(k, 2),
@@ -101,7 +101,7 @@
                     D = (0, r.Z)(O, 2),
                     A = D[0],
                     j = D[1],
-                    I = (0, h.Nr)(w),
+                    I = (0, h.Nr)(y),
                     V = (0, v.X6)(),
                     T = (0, r.Z)(V, 2),
                     R = T[0],
@@ -112,9 +112,9 @@
                     L = z.error,
                     M = z.originalArgs,
                     $ = (0, v.n_)(),
-                    Y = (0, r.Z)($, 2),
-                    B = Y[0],
-                    U = Y[1],
+                    B = (0, r.Z)($, 2),
+                    Y = B[0],
+                    U = B[1],
                     G = U.isLoading,
                     X = U.isError,
                     K = U.error,
@@ -130,7 +130,7 @@
                         email: I,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === I || !1 === y()(I)
+                        skip: "" === I || !1 === w()(I)
                     }),
                     ie = ae.data,
                     oe = ae.isFetching,
@@ -139,15 +139,15 @@
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
                     P(""), j("")
-                }), [w]);
+                }), [y]);
                 var ue = (0, m.useMemo)((function() {
-                        return le && !1 === ie.userExists && y()(I) && "" !== I
+                        return le && !1 === ie.userExists && w()(I) && "" !== I
                     }), [ie, I]),
                     me = (0, m.useMemo)((function() {
                         return "" !== S && S === I
                     }), [S, I]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === y()(I) && "" !== I) return m.createElement(d.Z, {
+                        if (!1 === w()(I) && "" !== I) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -252,7 +252,7 @@
                     },
                     placeholder: null == e ? void 0 : e.obfuscatedEmail,
                     type: "text",
-                    value: w
+                    value: y
                 }))), m.createElement(p.Z, {
                     xs: "1",
                     style: {
@@ -321,7 +321,7 @@
                     id: "subscribe",
                     checked: !(null != e && e.unsubscribe),
                     onChange: function(t) {
-                        return B({
+                        return Y({
                             userId: e.id,
                             subscribe: t.target.checked
                         })
@@ -379,8 +379,8 @@
                 f = n(14411),
                 p = n(86646),
                 g = n(43862),
-                w = n(65578),
-                y = n(78158),
+                y = n(65578),
+                w = n(78158),
                 h = n(14343),
                 E = n(60006);
             const v = function() {
@@ -398,7 +398,7 @@
                     P = k.error,
                     O = k.isFetching,
                     D = k.refetch;
-                (0, s.Yz)(D, "completed" === (null == N ? void 0 : N.status) || "needs_review" === (null == N ? void 0 : N.status) ? 5e3 : null);
+                (0, s.Yz)(D, "completed" === (null == N ? void 0 : N.status) || "needs_review" === (null == N ? void 0 : N.status) ? 3e3 : null);
                 var A = (0, d.r5)({
                         groupId: t,
                         purpose: "group"
@@ -415,9 +415,9 @@
                     L = _.isError,
                     M = _.isSuccess,
                     $ = (0, u.nv)(),
-                    Y = (0, r.Z)($, 2),
-                    B = Y[0],
-                    U = Y[1],
+                    B = (0, r.Z)($, 2),
+                    Y = B[0],
+                    U = B[1],
                     G = U.isFetching,
                     X = U.isError,
                     K = U.isSuccess,
@@ -427,7 +427,7 @@
                             var t;
                             switch (P.status) {
                                 case 400:
-                                    "Identification data already in use" === (null === (e = error.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) && (t = "Your identification data is already in use on another account."), t = "An unknown error occurred while getting your age verification status.";
+                                    t = "Identification data already in use" === (null === (e = error.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) ? "Your identification data is already in use on another account." : "An unknown error occurred while processing your inquiry.";
                                     break;
                                 case 429:
                                     t = "Too many users are trying to get age verified right now! Please refresh the page in a few minutes.";
@@ -464,11 +464,11 @@
                         }
                     }), [N, P]),
                     Q = O || T || "completed" === (null == N ? void 0 : N.status) || "needs_review" === (null == N ? void 0 : N.status);
-                return l.createElement(l.Fragment, null, l.createElement(f.$4, null, "Group Age Verification"), Q && l.createElement("div", {
+                return l.createElement(l.Fragment, null, l.createElement(f.$4, null, "Group Age Verification Beta"), Q && l.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
                 }, l.createElement(g.Z, {
                     size: "5x"
-                })), !Q && S && I && l.createElement(l.Fragment, null, l.createElement(y.Z, {
+                })), !Q && S && I && l.createElement(l.Fragment, null, l.createElement(w.Z, {
                     group: j
                 }), l.createElement("div", {
                     className: "tw-pb-10"
@@ -476,7 +476,7 @@
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full tw-p-5 tw-rounded-lg tw-h-fit tw-flex tw-flex-col tw-items-center"
                 }, l.createElement("h2", {
                     className: "tw-text-center"
-                }, "Age Verification"), "uninitialized" !== N.status ? l.createElement("div", {
+                }, "Age Verification Beta"), "uninitialized" !== N.status ? l.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-mt-5"
                 }, l.createElement("div", {
                     className: "tw-mb-2"
@@ -494,7 +494,7 @@
                     className: "tw-flex-none tw-px-4",
                     disabled: G || K,
                     onClick: function() {
-                        return B({
+                        return Y({
                             groupId: t,
                             code: n
                         })
@@ -541,7 +541,7 @@
                     className: "tw-flex-none tw-px-4",
                     disabled: G || K,
                     onClick: function() {
-                        return B({
+                        return Y({
                             groupId: t,
                             code: n
                         })
@@ -560,7 +560,7 @@
                     width: "600px"
                 }, l.createElement("div", {
                     className: "tw-w-full"
-                }, l.createElement(w.Z, null)))) : l.createElement("p", null, "This group does not have age verification beta slots remaining.") : l.createElement("p", null, "This group is not part of the age verification beta.")))), V && l.createElement("p", {
+                }, l.createElement(y.Z, null)))) : l.createElement("p", null, "This group does not have age verification beta slots remaining.") : l.createElement("p", null, "This group is not part of the age verification beta.")))), V && l.createElement("p", {
                     role: "alert",
                     "aria-label": "Page load error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1 tw-text-center"
@@ -684,7 +684,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? c(Object(n), !0).forEach((function(t) {
-                        w(e, t, n[t])
+                        y(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : c(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -757,7 +757,7 @@
                 }, g(e)
             }
 
-            function w(e, t, n) {
+            function y(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -765,7 +765,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            var y = function(e) {
+            var w = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -786,7 +786,7 @@
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, c);
                     for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-                    return w(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
+                    return y(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
                         var n = e.props,
                             r = n.text,
                             o = n.onCopy,
@@ -812,7 +812,7 @@
                     writable: !1
                 }), c
             }(a.default.PureComponent);
-            t.CopyToClipboard = y, w(y, "defaultProps", {
+            t.CopyToClipboard = w, y(w, "defaultProps", {
                 onCopy: void 0,
                 options: void 0
             })
@@ -845,4 +845,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5b217b7f5c8b91053ef9c40968ddd1ff2fdd616b8f97cf7f2955171a5cc9158a.js.map
+//# sourceMappingURL=7b5297bf4fc0a1170d09cf9227cc2a4be4458ba83358ac3ead165e138a8a7afe.js.map

@@ -125,8 +125,8 @@
                 i = r(27593),
                 s = r(89148),
                 c = r(71421),
-                w = r(7747),
-                u = r(7371),
+                u = r(7747),
+                w = r(7371),
                 d = r(63153),
                 m = r(27879),
                 f = r(64687),
@@ -222,21 +222,21 @@
                     i = (0, N.GR)(t),
                     s = i.data,
                     c = i.isSuccess,
-                    w = (0, k.IB)().data,
-                    u = (0, A.Kz)(),
+                    u = (0, k.IB)().data,
+                    w = (0, A.Kz)(),
                     d = (0, v.I0)(),
                     m = (0, g.useState)(!0),
                     f = (0, a.Z)(m, 2),
                     b = f[0],
                     h = f[1];
-                if (w && c && s) {
+                if (u && c && s) {
                     var y = s.displayName,
                         E = s.state,
                         U = s.userIcon,
                         q = s.currentAvatarImageUrl,
                         O = (0, S.Je)({
                             user: s,
-                            currentUser: w
+                            currentUser: u
                         }),
                         j = O.inPrivate,
                         z = O.userStatus,
@@ -334,13 +334,13 @@
                             fileUrl: re,
                             width: "1024"
                         }),
-                        we = (0, R.PF)(w, ee),
-                        ue = function() {
+                        ue = (0, R.PF)(u, ee),
+                        we = function() {
                             var e = (0, n.Z)(p().mark((function e() {
                                 return p().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, e.next = 3, u({
+                                            return e.prev = 0, e.next = 3, w({
                                                 worldId: X.id,
                                                 instanceId: ee
                                             });
@@ -441,7 +441,7 @@
                         className: "tw-mr-1"
                     }), le))))), g.createElement("div", {
                         className: " tw-flex tw-justify-between tw-col-span-3 md:tw-col-span-1 tw-flex-col md:tw-h-22 sm:tw-flex-row "
-                    }, we ? g.createElement("div", {
+                    }, ue ? g.createElement("div", {
                         className: "tw-w-full"
                     }, g.createElement(I.zx, {
                         className: "tw-w-full",
@@ -458,7 +458,7 @@
                         className: "tw-w-full md:tw-max-w-[150px]"
                     }, g.createElement(I.zx, {
                         className: "md:tw-ml-0 tw-w-full",
-                        onClick: ue
+                        onClick: we
                     }, "Invite Me"))))))
                 }
                 return null
@@ -478,9 +478,9 @@
                         i = void 0 === l ? function() {} : l,
                         s = (0, v.I0)(),
                         c = (0, A.Tu)().user,
-                        w = (0, g.useRef)(null),
-                        u = (0, g.useState)(!1),
-                        d = (0, a.Z)(u, 2),
+                        u = (0, g.useRef)(null),
+                        w = (0, g.useState)(!1),
+                        d = (0, a.Z)(w, 2),
                         m = d[0],
                         f = d[1],
                         b = (0, g.useState)(null),
@@ -611,13 +611,13 @@
                         className: "tw-flex tw-flex-col sm:tw-flex-row tw-w-1/2"
                     }, g.createElement("div", {
                         className: "tw-bg-black tw-rounded tw-relative tw-w-full",
-                        ref: w
+                        ref: u
                     }, g.createElement("div", {
                         tabIndex: 0,
                         role: "button",
                         className: "tw-flex tw-items-center tw-cursor-pointer tw-p-4 tw-text-left",
                         onClick: function() {
-                            null != w && w.current && w.current.scrollIntoView({
+                            null != u && u.current && u.current.scrollIntoView({
                                 behavior: "smooth",
                                 block: "start"
                             }), f(!m)
@@ -689,7 +689,7 @@
                         i = (0, g.useState)(!1),
                         s = (0, a.Z)(i, 2),
                         c = s[0],
-                        w = s[1],
+                        u = s[1],
                         d = (0, g.useRef)(null);
                     return g.createElement("div", {
                         className: l,
@@ -702,10 +702,10 @@
                             null != d && d.current && d.current.scrollIntoView({
                                 behavior: "smooth",
                                 block: "start"
-                            }), w(!c)
+                            }), u(!c)
                         },
                         onKeyDown: function(e) {
-                            "Enter" !== e.key && " " !== e.key || w(!c)
+                            "Enter" !== e.key && " " !== e.key || u(!c)
                         }
                     }, g.createElement(J.Z, {
                         imageSize: "20px",
@@ -714,14 +714,14 @@
                     }), g.createElement("span", {
                         className: "tw-mr-2 tw-flex-grow"
                     }, o.label), g.createElement(I.$1, {
-                        icon: u.Iw
+                        icon: w.Iw
                     })), g.createElement(te, {
                         isOpen: c,
                         onClick: function() {
-                            return w(!1)
+                            return u(!1)
                         }
                     }), g.createElement("div", {
-                        className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[12em] tw-top-[3.5em] tw-left-0 ".concat(c ? "tw-flex" : "tw-hidden"),
+                        className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[12em] tw-top-[3.5em] tw-left-0 tw-z-10 ".concat(c ? "tw-flex" : "tw-hidden"),
                         isOpen: c
                     }, Object.keys(y.Dq).filter((function(e) {
                         var r;
@@ -732,10 +732,10 @@
                             tabIndex: 0,
                             role: "button",
                             onClick: function() {
-                                w(!1), n(e)
+                                u(!1), n(e)
                             },
                             onKeyDown: function(t) {
-                                "Enter" !== t.key && " " !== t.key || (w(!1), n(e))
+                                "Enter" !== t.key && " " !== t.key || (u(!1), n(e))
                             }
                         }, g.createElement(J.Z, {
                             imageSize: "20px",
@@ -766,16 +766,16 @@
                     i = (0, a.Z)(o, 2),
                     s = i[0],
                     c = i[1],
-                    w = (0, g.useRef)(null);
+                    u = (0, g.useRef)(null);
                 return g.createElement("div", {
                     className: n,
-                    ref: w
+                    ref: u
                 }, g.createElement("div", {
                     tabIndex: 0,
                     role: "button",
                     className: "tw-flex tw-items-center tw-cursor-pointer",
                     onClick: function() {
-                        null != w && w.current && w.current.scrollIntoView({
+                        null != u && u.current && u.current.scrollIntoView({
                             behavior: "smooth",
                             block: "start"
                         }), c(!s)
@@ -788,14 +788,14 @@
                 }), g.createElement("span", {
                     className: "tw-mr-2 tw-flex-grow"
                 }, l.label), g.createElement(I.$1, {
-                    icon: u.Iw
+                    icon: w.Iw
                 })), g.createElement(ae, {
                     isOpen: s,
                     onClick: function() {
                         return c(!1)
                     }
                 }), g.createElement("div", {
-                    className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[9em] tw-top-[3.5em] tw-left-0 ".concat(s ? "tw-flex" : "tw-hidden"),
+                    className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[9em] tw-top-[3.5em] tw-left-0 tw-z-10 ".concat(s ? "tw-flex" : "tw-hidden"),
                     isOpen: s
                 }, Object.keys(y.xY).filter((function(e) {
                     return (0, y.Tq)(e).settable
@@ -833,8 +833,8 @@
                 ie = r(43946),
                 se = r(6767),
                 ce = r(78076),
-                we = r(41255),
-                ue = r(82084),
+                ue = r(41255),
+                we = r(82084),
                 de = r(7570),
                 me = r(58804),
                 fe = 2048,
@@ -842,8 +842,8 @@
                     var t, r, l, i = e.userId,
                         s = e.isOpen,
                         c = void 0 !== s && s,
-                        w = e.cancelCallback,
-                        u = void 0 === w ? function() {} : w,
+                        u = e.cancelCallback,
+                        w = void 0 === u ? function() {} : u,
                         d = e.mode,
                         m = void 0 === d ? "profileIcon" : d,
                         f = (0, v.I0)(),
@@ -882,7 +882,7 @@
                         ne = re[0],
                         ae = re[1],
                         le = "" !== _,
-                        pe = (0, we.Yh)(),
+                        pe = (0, ue.Yh)(),
                         ge = (0, a.Z)(pe, 2),
                         ve = ge[0],
                         be = ge[1],
@@ -909,7 +909,7 @@
                     var ye = function() {
                             W(""), ee(0), K(1), D("")
                         },
-                        Ee = (0, we.sR)({
+                        Ee = (0, ue.sR)({
                             userId: i
                         }, {
                             skip: "profileIcon" !== m || !c
@@ -918,7 +918,7 @@
                         ke = void 0 === Ne ? [] : Ne,
                         Ie = Ee.isFetching,
                         Fe = Ee.isSuccess,
-                        Se = (0, we.FQ)({
+                        Se = (0, ue.FQ)({
                             userId: i
                         }, {
                             skip: "profilePicture" !== m || !c
@@ -1017,7 +1017,7 @@
                                     maxHeight: fe,
                                     maxWidth: fe,
                                     aspect: De[m].aspectRatio
-                                }, t = e.mediaWidth, r = e.mediaHeight, n = e.aspect, (0, ue._H)((0, ue.YG)({
+                                }, t = e.mediaWidth, r = e.mediaHeight, n = e.aspect, (0, we._H)((0, we.YG)({
                                     unit: "%",
                                     width: 90
                                 }, n, t, r), t, r)))
@@ -1064,7 +1064,7 @@
                                                                     message: De[m].successMessage,
                                                                     color: "success",
                                                                     timeout: 5e3
-                                                                })), ye(), u(), e.next = 18;
+                                                                })), ye(), w(), e.next = 18;
                                                                 break;
                                                             case 14:
                                                                 e.prev = 14, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), (0, x.d)({
@@ -1113,7 +1113,7 @@
                                                 message: De[m].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
-                                            })), ye(), u(), e.next = 11;
+                                            })), ye(), w(), e.next = 11;
                                             break;
                                         case 8:
                                             e.prev = 8, e.t0 = e.catch(0), f((0, x.d)({
@@ -1153,7 +1153,7 @@
                         type: "button",
                         className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-absolute -tw-right-4 -tw-top-4 tw-border-none ",
                         onClick: function() {
-                            ye(), u()
+                            ye(), w()
                         }
                     }, g.createElement(I.$1, {
                         icon: G.faXmark
@@ -1183,7 +1183,7 @@
                         className: "tw-flex tw-flex-col"
                     }, g.createElement("div", {
                         className: "tw-pb-5 tw-flex tw-flex-row tw-justify-center"
-                    }, g.createElement(ue.ZP, {
+                    }, g.createElement(we.ZP, {
                         crop: y,
                         onChange: function(e, t) {
                             return E(t)
@@ -1321,7 +1321,7 @@
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-48 tw-bg-button-bg-grey tw-leading-none",
                         onClick: function() {
-                            ye(), u()
+                            ye(), w()
                         }
                     }, "Cancel"), g.createElement("button", {
                         type: "button",
@@ -1350,9 +1350,9 @@
                         o = (e.cancelCallback, e.defaultValue),
                         i = void 0 === o ? null : o,
                         s = e.defaultIsOpen,
-                        w = void 0 !== s && s,
-                        u = e.className,
-                        d = (0, g.useState)(w),
+                        u = void 0 !== s && s,
+                        w = e.className,
+                        d = (0, g.useState)(u),
                         m = (0, a.Z)(d, 2),
                         f = m[0],
                         p = m[1],
@@ -1363,7 +1363,7 @@
                     return (0, g.useEffect)((function() {
                         null !== h && h.value !== (null == i ? void 0 : i.value) && (p(!1), l(h))
                     }), [h]), g.createElement("div", {
-                        className: "tw-relative ".concat(u)
+                        className: "tw-relative ".concat(w)
                     }, g.createElement("button", {
                         "data-dropdown-toggle": "dropdown",
                         className: " tw-text-white tw-bg-button-bg tw-border-solid tw-border-button-border tw-font-medium tw-rounded-sm tw-text-sm tw-px-4 tw-py-2.5 tw-w-44 tw-mr-3 tw-cursor-pointer tw-flex tw-flex-row tw-justify-between tw-items-center ",
@@ -1420,8 +1420,8 @@
                     i = (0, a.Z)(o, 2),
                     s = i[0],
                     c = i[1],
-                    w = (0, g.useState)(t),
-                    d = (0, a.Z)(w, 2),
+                    u = (0, g.useState)(t),
+                    d = (0, a.Z)(u, 2),
                     m = d[0],
                     f = d[1],
                     p = m.title,
@@ -1466,7 +1466,7 @@
                         return c(!0)
                     }
                 }, g.createElement(I.$1, {
-                    icon: u.Iw
+                    icon: w.Iw
                 })), g.createElement("button", {
                     type: "button",
                     className: " tw-border-0 tw-rounded-sm tw-bg-transparent tw-text-red tw-leading-none ",
@@ -1497,9 +1497,9 @@
                     i = void 0 === o ? function() {} : o,
                     s = e.order,
                     c = (0, g.useState)(r),
-                    w = (0, a.Z)(c, 2),
-                    u = w[0],
-                    d = w[1],
+                    u = (0, a.Z)(c, 2),
+                    w = u[0],
+                    d = u[1],
                     m = (0, g.useState)(!1),
                     f = (0, a.Z)(m, 2),
                     p = f[0],
@@ -1513,7 +1513,7 @@
                 }, g.createElement("div", {
                     className: "tw-px-3"
                 }, g.createElement(h.QZ, {
-                    url: u,
+                    url: w,
                     className: "tw-w-9 tw-h-9",
                     as: "span"
                 })), g.createElement("form", {
@@ -1530,9 +1530,9 @@
                         return d(e.target.value)
                     },
                     onBlur: function() {
-                        return u === r ? (E(""), void v(!1)) : (0, S.K2)(u) ? t.includes(u) ? (E("This social link is already added"), void v(!0)) : (E(""), v(!1), void l({
+                        return w === r ? (E(""), void v(!1)) : (0, S.K2)(w) ? t.includes(w) ? (E("This social link is already added"), void v(!0)) : (E(""), v(!1), void l({
                             fromValue: r,
-                            toValue: u
+                            toValue: w
                         })) : (E("Invalid social link"), void v(!0))
                     },
                     "aria-label": "Social Link ".concat(s)
@@ -1558,7 +1558,7 @@
                     i = e.isOpen,
                     s = void 0 !== i && i,
                     c = e.cancelCallback,
-                    w = void 0 === c ? function() {} : c,
+                    u = void 0 === c ? function() {} : c,
                     d = (0, g.useState)("ask me"),
                     f = (0, a.Z)(d, 2),
                     p = f[0],
@@ -1596,9 +1596,9 @@
                     ie = oe[0],
                     se = oe[1],
                     ce = (0, g.useState)([]),
-                    we = (0, a.Z)(ce, 2),
-                    ue = we[0],
-                    de = we[1],
+                    ue = (0, a.Z)(ce, 2),
+                    we = ue[0],
+                    de = ue[1],
                     me = (0, g.useState)(""),
                     fe = (0, a.Z)(me, 2),
                     pe = fe[0],
@@ -1643,7 +1643,7 @@
                 (0, g.useEffect)((function() {
                     C(et), q(Xe), de(Ye), b(Je), A(rt)
                 }), [je]), (0, g.useEffect)((function() {
-                    Re && (w(), Le((0, x.d)({
+                    Re && (u(), Le((0, x.d)({
                         title: "Update Profile",
                         icon: m.IL,
                         message: "Profile successfully updated!",
@@ -1684,7 +1684,7 @@
                     se(e)
                 }), [te]);
                 var at, lt = function() {
-                    return "" === pe ? (ke(!1), void Ce("")) : (0, S.K2)(pe) ? ue.includes(pe) ? (Ce("This social link is already added"), void ke(!0)) : (ke(!1), Ce(""), ve(""), void de([].concat((0, _.Z)(ue), [pe.trim()]))) : (Ce("Invalid social link"), void ke(!0))
+                    return "" === pe ? (ke(!1), void Ce("")) : (0, S.K2)(pe) ? we.includes(pe) ? (Ce("This social link is already added"), void ke(!0)) : (ke(!1), Ce(""), ve(""), void de([].concat((0, _.Z)(we), [pe.trim()]))) : (Ce("Invalid social link"), void ke(!0))
                 };
                 if (ze) return g.createElement("div", {
                     tabIndex: "-1",
@@ -1719,7 +1719,7 @@
                     type: "button",
                     className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-10 tw-h-10 tw-ml-auto sm:tw-w-8 sm:tw-h-8 tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-border-none tw-block sm:tw-absolute sm:-tw-right-4 sm:-tw-top-4 ",
                     onClick: function() {
-                        return w()
+                        return u()
                     },
                     "aria-label": "Close Modal"
                 }, g.createElement(I.$1, {
@@ -1753,7 +1753,7 @@
                 }, g.createElement("div", {
                     className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
                 }, g.createElement(I.$1, {
-                    icon: u.Iw,
+                    icon: w.Iw,
                     className: "tw-text-3xl"
                 }))))), g.createElement("div", {
                     className: "tw-flex tw-flex-col"
@@ -1778,7 +1778,7 @@
                 }, g.createElement("div", {
                     className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
                 }, g.createElement(I.$1, {
-                    icon: u.Iw,
+                    icon: w.Iw,
                     className: "tw-text-3xl"
                 })))))), g.createElement("div", {
                     className: "tw-flex tw-flex-col"
@@ -1890,29 +1890,29 @@
                 }, g.createElement("label", {
                     className: "tw-mb-3",
                     htmlFor: "edit-social-links"
-                }, "Social Links"), ue.map((function(e, t) {
+                }, "Social Links"), we.map((function(e, t) {
                     return g.createElement(Ne, {
                         id: "edit-social-links",
                         key: e,
                         value: e,
                         order: t + 1,
-                        socialLinksArray: ue,
+                        socialLinksArray: we,
                         onChange: function(e) {
                             var t = e.fromValue,
                                 r = e.toValue,
-                                n = ue.findIndex((function(e) {
+                                n = we.findIndex((function(e) {
                                     return e === t
                                 })),
-                                a = (0, _.Z)(ue);
+                                a = (0, _.Z)(we);
                             a[n] = r, de(a)
                         },
                         onDelete: function(e) {
-                            de((0, _.Z)(ue.filter((function(t) {
+                            de((0, _.Z)(we.filter((function(t) {
                                 return t !== e
                             }))))
                         }
                     })
-                })), (null == ue ? void 0 : ue.length) < 3 && g.createElement(g.Fragment, null, g.createElement("div", {
+                })), (null == we ? void 0 : we.length) < 3 && g.createElement(g.Fragment, null, g.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-row tw-items-center"
                 }, g.createElement("form", {
                     onSubmit: function(e) {
@@ -1948,7 +1948,7 @@
                     type: "button",
                     className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-48 tw-bg-button-bg-grey tw-leading-none",
                     onClick: function() {
-                        return w()
+                        return u()
                     }
                 }, "Cancel"), g.createElement("button", {
                     type: "button",
@@ -1967,7 +1967,7 @@
                             status: p,
                             statusDescription: F,
                             bio: U,
-                            bioLinks: ue
+                            bioLinks: we
                         }, tt && (n.ageVerificationStatus = P), void Pe({
                             userId: l,
                             data: n,
@@ -2001,14 +2001,14 @@
                         c = (0, Ce.ge)(r, {
                             skip: null === r
                         }),
-                        w = c.data,
-                        u = void 0 === w ? {} : w,
+                        u = c.data,
+                        w = void 0 === u ? {} : u,
                         d = c.isFetching,
                         m = c.isSuccess,
                         f = (0, Se.G)({
                             type: "friend"
                         }, {
-                            skip: !m || !(null != u && u.isFriend)
+                            skip: !m || !(null != w && w.isFriend)
                         }),
                         b = f.data,
                         h = void 0 === b ? [] : b,
@@ -2067,7 +2067,7 @@
                         icon: o.LM,
                         spin: !0
                     }));
-                    if (!u.isFriend) return null;
+                    if (!w.isFriend) return null;
                     var C = h.some((function(e) {
                             return e.favoriteId === r
                         })),
@@ -2109,8 +2109,8 @@
                         }),
                         s = i.data,
                         c = void 0 === s ? {} : s,
-                        w = i.isError,
-                        u = i.error,
+                        u = i.isError,
+                        w = i.error,
                         d = i.isSuccess,
                         m = (0, Ce.I0)(),
                         f = (0, a.Z)(m, 2),
@@ -2125,7 +2125,7 @@
                         C = S[0],
                         L = S[1].isLoading,
                         Z = h || k || L;
-                    w && (console.error("Friend Status Error:", u), o((0, x.d)({
+                    u && (console.error("Friend Status Error:", w), o((0, x.d)({
                         title: "Friend Status",
                         icon: T.eH,
                         message: "Failed to get friend status, Please try again later.",
@@ -2340,10 +2340,10 @@
                         i = o.data,
                         s = o.isSuccess,
                         c = (0, g.useRef)(null),
-                        w = (0, g.useState)(!0),
-                        u = (0, a.Z)(w, 2),
-                        d = u[0],
-                        m = u[1],
+                        u = (0, g.useState)(!0),
+                        w = (0, a.Z)(u, 2),
+                        d = w[0],
+                        m = w[1],
                         f = (0, g.useState)(null),
                         p = (0, a.Z)(f, 2),
                         v = p[0],
@@ -2421,8 +2421,8 @@
                         }),
                         s = i.data,
                         c = void 0 === s ? [] : s,
-                        w = i.isSuccess,
-                        u = (0, g.useRef)(null),
+                        u = i.isSuccess,
+                        w = (0, g.useRef)(null),
                         d = (0, g.useState)(!0),
                         m = (0, a.Z)(d, 2),
                         f = m[0],
@@ -2432,22 +2432,22 @@
                         h = b[0],
                         x = b[1];
                     (0, g.useEffect)((function() {
-                        u.current && p(u.current.scrollWidth <= u.current.offsetWidth)
+                        w.current && p(w.current.scrollWidth <= w.current.offsetWidth)
                     }), [c]);
                     var y = (0, g.useMemo)((function() {
-                            return !!u.current && u.current.scrollLeft >= u.current.scrollWidth - u.current.offsetWidth
+                            return !!w.current && w.current.scrollLeft >= w.current.scrollWidth - w.current.offsetWidth
                         }), [h]),
                         E = (0, g.useMemo)((function() {
-                            return !u.current || u.current.scrollLeft <= 300
+                            return !w.current || w.current.scrollLeft <= 300
                         }), [h]);
-                    if (o && w && c.length > 0) {
+                    if (o && u && c.length > 0) {
                         var F = l.displayName;
                         return g.createElement("div", {
                             className: "tw-py-6 tw-relative tw-w-full"
                         }, g.createElement("h2", {
                             className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
                         }, F, "'s Worlds"), g.createElement("div", {
-                            ref: u,
+                            ref: w,
                             onScroll: function(e) {
                                 return x(e.currentTarget.scrollLeft)
                             },
@@ -2464,7 +2464,7 @@
                             className: "\n              tw-bg-button-bg tw-absolute tw--left-3 tw-top-60 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n              ".concat(E ? "tw-hidden" : "", "\n              tw-z-30\n            "),
                             type: "button",
                             onClick: function(e) {
-                                e.stopPropagation(), u.current.scrollLeft -= 300
+                                e.stopPropagation(), w.current.scrollLeft -= 300
                             }
                         }, g.createElement(I.$1, {
                             icon: Ue.A3,
@@ -2473,7 +2473,7 @@
                             className: "\n              tw-bg-button-bg tw-absolute tw--right-3 tw-top-60 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n              ".concat(y || f ? "tw-hidden" : "", "\n              tw-z-30\n            "),
                             type: "button",
                             onClick: function(e) {
-                                e.stopPropagation(), u.current.scrollLeft += 300
+                                e.stopPropagation(), w.current.scrollLeft += 300
                             }
                         }, g.createElement(I.$1, {
                             icon: Re._t,
@@ -2491,70 +2491,73 @@
                     t = void 0 === e ? null : e,
                     r = (0, v.I0)(),
                     f = (0, k.IB)().data,
-                    C = t === (null == f ? void 0 : f.id),
-                    L = (0, g.useState)(!1),
-                    Z = (0, a.Z)(L, 2),
-                    T = Z[0],
-                    P = Z[1],
-                    A = (0, g.useState)(!1),
-                    M = (0, a.Z)(A, 2),
-                    R = M[0],
-                    U = M[1],
-                    q = (0, g.useState)(!1),
-                    O = (0, a.Z)(q, 2),
-                    j = O[0],
-                    D = O[1],
-                    z = (0, g.useState)(null),
-                    _ = (0, a.Z)(z, 2),
-                    W = _[0],
-                    G = _[1],
-                    H = (0, g.useState)(null),
-                    V = (0, a.Z)(H, 2),
-                    B = V[0],
-                    K = V[1],
-                    X = (0, g.useState)(""),
-                    Y = (0, a.Z)(X, 2),
-                    J = Y[0],
-                    ee = Y[1],
-                    te = (0, E.y)().data,
-                    re = (0, k.hd)(null, {
-                        skip: C
+                    C = (0, b.s0)(),
+                    L = t === (null == f ? void 0 : f.id),
+                    Z = (0, g.useState)(!1),
+                    T = (0, a.Z)(Z, 2),
+                    P = T[0],
+                    A = T[1],
+                    M = (0, g.useState)(!1),
+                    R = (0, a.Z)(M, 2),
+                    U = R[0],
+                    q = R[1],
+                    O = (0, g.useState)(!1),
+                    j = (0, a.Z)(O, 2),
+                    D = j[0],
+                    z = j[1],
+                    _ = (0, g.useState)(null),
+                    W = (0, a.Z)(_, 2),
+                    G = W[0],
+                    H = W[1],
+                    V = (0, g.useState)(null),
+                    B = (0, a.Z)(V, 2),
+                    K = B[0],
+                    X = B[1],
+                    Y = (0, g.useState)(""),
+                    J = (0, a.Z)(Y, 2),
+                    ee = J[0],
+                    te = J[1],
+                    re = (0, E.y)().data,
+                    ne = (0, k.hd)(null, {
+                        skip: L
                     }),
-                    ne = re.data,
-                    ae = re.isSuccess;
+                    ae = ne.data,
+                    le = ne.isSuccess;
                 (0, g.useEffect)((function() {
-                    if (ae) {
-                        var e = ne.filter((function(e) {
+                    if (le) {
+                        var e = ae.filter((function(e) {
                             return e.targetUserId === t
                         }));
-                        G(e.some((function(e) {
+                        H(e.some((function(e) {
                             return "mute" === e.type
-                        }))), K(e.some((function(e) {
+                        }))), X(e.some((function(e) {
                             return "block" === e.type
                         })))
                     }
-                }), [ne]);
-                var le = (0, N.GR)(t, {
-                        skip: null === t
+                }), [ae]);
+                var oe = (0, N.GR)(t, {
+                        skip: null === t || "me" === t
                     }),
-                    oe = le.data,
-                    ie = le.isError,
-                    se = le.isSuccess;
+                    ie = oe.data,
+                    se = oe.isError,
+                    ce = oe.isSuccess;
                 (0, g.useEffect)((function() {
-                    null !== t && se && (ee(oe.note), U(!1))
-                }), [oe]);
-                var ce = (0, k.vO)(),
-                    we = (0, a.Z)(ce, 2),
-                    ue = we[0],
-                    de = we[1].isLoading,
-                    me = (0, k.SU)(),
-                    fe = (0, a.Z)(me, 2),
-                    pe = fe[0],
-                    ge = fe[1].isLoading,
-                    ve = (0, N.kh)(),
-                    be = (0, a.Z)(ve, 1)[0],
-                    he = de || ge,
-                    xe = function() {
+                    null !== t && ce && (te(ie.note), q(!1))
+                }), [ie]), (0, g.useEffect)((function() {
+                    "me" === t && null != f && f.id && C("/home/user/".concat(null == f ? void 0 : f.id))
+                }), [f, t]);
+                var ue = (0, k.vO)(),
+                    we = (0, a.Z)(ue, 2),
+                    de = we[0],
+                    me = we[1].isLoading,
+                    fe = (0, k.SU)(),
+                    pe = (0, a.Z)(fe, 2),
+                    ge = pe[0],
+                    ve = pe[1].isLoading,
+                    be = (0, N.kh)(),
+                    he = (0, a.Z)(be, 1)[0],
+                    xe = me || ve,
+                    ye = function() {
                         var e = (0, n.Z)(p().mark((function e() {
                             return p().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2578,21 +2581,21 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ye = function() {
+                    Ee = function() {
                         var e = (0, n.Z)(p().mark((function e() {
                             var n, a;
                             return p().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (J !== oe.note) {
+                                        if (ee !== ie.note) {
                                             e.next = 2;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 2:
-                                        return e.prev = 2, e.next = 5, be({
+                                        return e.prev = 2, e.next = 5, he({
                                             userId: t,
-                                            note: J
+                                            note: ee
                                         }).unwrap();
                                     case 5:
                                         r((0, x.d)({
@@ -2623,9 +2626,9 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ee = function() {
+                    Ne = function() {
                         var e = (0, n.Z)(p().mark((function e(n) {
-                            var a, l, o, i, s, c, w;
+                            var a, l, o, i, s, c, u;
                             return p().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -2641,13 +2644,13 @@
                                             }, o = {
                                                 userId: t,
                                                 moderationType: a
-                                            }, !("block" === a && B || "mute" === a && W)) {
+                                            }, !("block" === a && K || "mute" === a && G)) {
                                             e.next = 16;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, pe(o).unwrap();
+                                        return e.prev = 4, e.next = 7, ge(o).unwrap();
                                     case 7:
-                                        U(!1), r((0, x.d)({
+                                        q(!1), r((0, x.d)({
                                             title: "Player Profile",
                                             icon: m.IL,
                                             message: "".concat(l[a].remove, " successfully."),
@@ -2666,9 +2669,9 @@
                                     case 15:
                                         return e.abrupt("return");
                                     case 16:
-                                        return e.prev = 16, e.next = 19, ue(o).unwrap();
+                                        return e.prev = 16, e.next = 19, de(o).unwrap();
                                     case 19:
-                                        U(!1), r((0, x.d)({
+                                        q(!1), r((0, x.d)({
                                             title: "Player Profile",
                                             icon: m.IL,
                                             message: "".concat(l[a].apply, " successfully."),
@@ -2680,7 +2683,7 @@
                                         e.prev = 23, e.t1 = e.catch(16), console.error("Player Moderation Error:", e.t1), r((0, x.d)({
                                             title: "Player Profile",
                                             icon: d.$9,
-                                            message: "\n            ".concat(l[a].apply, " failed.\n            ").concat((null === (c = e.t1.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) || (null === (w = e.t1.data) || void 0 === w ? void 0 : w.error), "\n          "),
+                                            message: "\n            ".concat(l[a].apply, " failed.\n            ").concat((null === (c = e.t1.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) || (null === (u = e.t1.data) || void 0 === u ? void 0 : u.error), "\n          "),
                                             color: "danger",
                                             timeout: 5e3
                                         }));
@@ -2697,51 +2700,51 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                if (ie) return null;
-                if (se) {
-                    var Ne, ke, Fe, Se = oe.displayName,
-                        Ce = oe.bio,
-                        Le = oe.bioLinks,
-                        Te = oe.tags,
-                        Pe = oe.profilePicOverride,
-                        Ae = oe.currentAvatarImageUrl,
-                        Re = oe.badges,
-                        Ue = (0, S.H1)(Te, null !== (Ne = null == te || null === (ke = te.constants) || void 0 === ke || null === (ke = ke.LANGUAGE) || void 0 === ke ? void 0 : ke.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== Ne ? Ne : y.O),
-                        qe = Ue.some((function(e) {
+                if (se) return null;
+                if (ce) {
+                    var ke, Fe, Se, Ce = ie.displayName,
+                        Le = ie.bio,
+                        Te = ie.bioLinks,
+                        Pe = ie.tags,
+                        Ae = ie.profilePicOverride,
+                        Re = ie.currentAvatarImageUrl,
+                        Ue = ie.badges,
+                        qe = (0, S.H1)(Pe, null !== (ke = null == re || null === (Fe = re.constants) || void 0 === Fe || null === (Fe = Fe.LANGUAGE) || void 0 === Fe ? void 0 : Fe.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== ke ? ke : y.O),
+                        Oe = qe.some((function(e) {
                             return e.length > 8
                         }));
-                    return g.createElement(F.rg, null, g.createElement(I.$4, null, null !== (Fe = se && (null == oe ? void 0 : oe.displayName)) && void 0 !== Fe ? Fe : "User"), C && g.createElement(Ie, {
+                    return g.createElement(F.rg, null, g.createElement(I.$4, null, null !== (Se = ce && (null == ie ? void 0 : ie.displayName)) && void 0 !== Se ? Se : "User"), L && g.createElement(Ie, {
                         userId: t,
-                        isOpen: T,
+                        isOpen: P,
                         cancelCallback: function() {
-                            return P(!1)
+                            return A(!1)
                         }
-                    }), !C && g.createElement(Q, {
+                    }), !L && g.createElement(Q, {
                         friendUserId: t,
-                        isOpen: j,
+                        isOpen: D,
                         cancelCallback: function() {
-                            return D(!1)
+                            return z(!1)
                         }
                     }), g.createElement("div", {
                         className: "tw-flex tw-flex-col md:tw-flex-row tw-py-9"
                     }, g.createElement("h2", {
                         className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
-                    }, Se, "'s Profile"), g.createElement("div", {
-                        className: "".concat(C ? "" : "tw-hidden", " tw-flex tw-flex-col tw-justify-center md:tw-px-4")
+                    }, Ce, "'s Profile"), g.createElement("div", {
+                        className: "".concat(L ? "" : "tw-hidden", " tw-flex tw-flex-col tw-justify-center md:tw-px-4")
                     }, g.createElement("div", {
                         className: "tw-flex tw-flex-row tw-ml-2 tw-mt-2 md:tw-m-0"
                     }, g.createElement(I.zx, {
                         className: "tw-rounded-full tw-h-[40px] tw-w-[40px]",
                         "aria-label": "Edit Profile",
                         onClick: function() {
-                            return P(!T)
+                            return A(!P)
                         }
                     }, g.createElement(I.$1, {
-                        icon: u.Iw
+                        icon: w.Iw
                     }))))), g.createElement("div", {
                         className: "tw-relative tw-bg-cover tw-bg-center tw-rounded-lg tw-mt-16 tw-flex tw-z-0 tw-@container/profile",
                         style: {
-                            backgroundImage: "url(".concat(Pe || Ae, ")")
+                            backgroundImage: "url(".concat(Ae || Re, ")")
                         }
                     }, g.createElement("div", {
                         className: "tw-bg-cover tw-rounded-lg tw-bg-grey/[97%] tw-w-full"
@@ -2756,67 +2759,67 @@
                         className: "\n                      tw-flex tw-justify-start\n                      tw-flex-col\n                      @[1096px]/profile:tw-flex-row-reverse\n                    "
                     }, g.createElement("div", {
                         className: "\n                        tw-flex\n                        tw-mb-0 tw-h-fit\n                        tw-flex-col\n                        tw-w-full\n                        tw-justify-end\n                        @[1096px]/profile:tw-w-auto\n                        @[1096px]/profile:tw-flex-row\n                      "
-                    }, !C && g.createElement(Me, {
+                    }, !L && g.createElement(Me, {
                         userId: t,
                         className: "tw-mb-4 @[1096px]/profile:tw-mr-3"
                     }), g.createElement(I.zx, {
                         className: "tw-mb-4 tw-mt-2 @[1096px]/profile:tw-mt-0",
-                        onClick: xe
+                        onClick: ye
                     }, g.createElement(I.$1, {
-                        icon: w.Dr
-                    }), " Share"), !C && g.createElement("div", {
+                        icon: u.Dr
+                    }), " Share"), !L && g.createElement("div", {
                         className: "tw-relative"
                     }, g.createElement(I.zx, {
                         className: "tw-mb-4 @[1096px]/profile:tw-ml-3",
                         onClick: function() {
-                            return U(!R)
+                            return q(!U)
                         },
                         "aria-label": "Show More Options"
                     }, "More  ", g.createElement(I.$1, {
                         icon: c.eW
-                    })), R && g.createElement("div", {
+                    })), U && g.createElement("div", {
                         className: " tw-absolute tw-text-option-inactive tw-bg-option-bg tw-border-solid tw-border-button-border tw-rounded-md tw-font-medium tw-text-base tw-w-full tw-cursor-pointer tw-z-10 @[1096px]/profile:tw-w-40 @[1096px]/profile:tw-right-0 "
-                    }, null !== W && g.createElement("span", {
-                        className: "\n                                hover:tw-text-white hover:tw-bg-button-border\n                                  tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                                  tw-text-center tw-cursor-pointer tw-items-center\n                                  ".concat(he ? "tw-hidden" : "tw-block", "\n                                "),
+                    }, null !== G && g.createElement("span", {
+                        className: "\n                                hover:tw-text-white hover:tw-bg-button-border\n                                  tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                                  tw-text-center tw-cursor-pointer tw-items-center\n                                  ".concat(xe ? "tw-hidden" : "tw-block", "\n                                "),
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
-                            return Ee({
+                            return Ne({
                                 type: "mute"
                             })
                         },
                         onKeyDown: function(e) {
-                            if ("enter" === e.key.toLowerCase()) return Ee({
+                            if ("enter" === e.key.toLowerCase()) return Ne({
                                 type: "mute"
                             })
                         },
-                        "aria-label": "".concat(W ? "Unmute" : "Mute", " User")
+                        "aria-label": "".concat(G ? "Unmute" : "Mute", " User")
                     }, g.createElement(I.$1, {
                         icon: s.Ek
-                    }), " ", W ? "Unmute" : "Mute"), null !== B && g.createElement("span", {
-                        className: "\n                                hover:tw-text-white hover:tw-bg-button-border\n                                  tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                                  tw-text-center tw-cursor-pointer tw-items-center\n                                  ".concat(he ? "tw-hidden" : "tw-block", "\n                                "),
+                    }), " ", G ? "Unmute" : "Mute"), null !== K && g.createElement("span", {
+                        className: "\n                                hover:tw-text-white hover:tw-bg-button-border\n                                  tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                                  tw-text-center tw-cursor-pointer tw-items-center\n                                  ".concat(xe ? "tw-hidden" : "tw-block", "\n                                "),
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
-                            return Ee({
+                            return Ne({
                                 type: "block"
                             })
                         },
                         onKeyDown: function(e) {
-                            if ("enter" === e.key.toLowerCase()) return Ee({
+                            if ("enter" === e.key.toLowerCase()) return Ne({
                                 type: "block"
                             })
                         },
-                        "aria-label": "".concat(B ? "Unblock" : "Block", " User")
+                        "aria-label": "".concat(K ? "Unblock" : "Block", " User")
                     }, g.createElement(I.$1, {
                         icon: i.wO
-                    }), " ", B ? "Unblock" : "Block"), g.createElement(Ze, {
+                    }), " ", K ? "Unblock" : "Block"), g.createElement(Ze, {
                         userId: t,
                         selectedCallback: function() {
-                            return D(!0)
+                            return z(!0)
                         }
                     }), g.createElement("div", {
-                        className: "\n                              tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                              tw-text-center tw-items-center\n                              tw-h-20\n                              ".concat(he ? "tw-block" : "tw-hidden", "\n                            ")
+                        className: "\n                              tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n                              tw-text-center tw-items-center\n                              tw-h-20\n                              ".concat(xe ? "tw-block" : "tw-hidden", "\n                            ")
                     }, g.createElement(I.$1, {
                         icon: o.LM,
                         spin: !0,
@@ -2824,14 +2827,14 @@
                     }))))), g.createElement(I.gx, {
                         className: "\n                      tw-flex tw-grow tw-w-auto @[1096px]/profile:tw-h-10 @[1096px]/profile:tw-justify-end @[1096px]/profile:tw-mr-3 tw-relative\n                    ",
                         placeholder: "Add a note about this user",
-                        value: J,
+                        value: ee,
                         inputClassName: "\n                      tw-bg-darker-grey\n                      tw-border-none\n                      placeholder:tw-text-placeholder-text\n                      tw-h-auto\n                      @[1096px]/profile:tw-max-w-[400px]\n                    ",
                         "aria-label": "User's Note",
                         onChange: function(e) {
-                            return ee(e.target.value)
+                            return te(e.target.value)
                         },
                         onBlur: function() {
-                            return ye()
+                            return Ee()
                         },
                         maxLength: "256",
                         icon: l.faPencil,
@@ -2842,11 +2845,11 @@
                         className: "tw-flex"
                     }, g.createElement("p", {
                         className: "\n                        tw-whitespace-pre-wrap\n                        tw-overflow-y-auto\n                        tw-text-lighter-grey \n                        tw-my-9 \n                        tw-h-24\n                        tw-w-full tw-col-span-2\n                        tw-hidden\n                        @[1096px]/profile:tw-block\n                        [overflow-wrap:anywhere]\n                      "
-                    }, Ce))), g.createElement("div", {
+                    }, Le))), g.createElement("div", {
                         className: "tw-absolute tw-right-0 tw-top-2 tw-hidden sm:tw-block"
                     }, g.createElement("div", {
                         className: "tw-flex-row tw-flex"
-                    }, !(null == Re || !Re.length) && Re.filter((function(e) {
+                    }, !(null == Ue || !Ue.length) && Ue.filter((function(e) {
                         return e.showcased && !e.hidden
                     })).slice(0, 3).sort((function(e, t) {
                         return new Date(t.assignedAt) - new Date(e.assignedAt)
@@ -2862,28 +2865,28 @@
                     }))))), g.createElement("div", {
                         className: "\n                tw-px-9 tw-pb-10 sm:tw-pb-9 tw-pt-0 tw-grid tw-grid-cols-2 grid-flow-col tw-gap-x-6\n              "
                     }, g.createElement("p", {
-                        className: "\n                    tw-touch-auto\n                    tw-whitespace-pre-wrap tw-h-auto tw-overflow-y-auto\n                    sm:tw-h-36\n                    tw-text-lighter-grey tw-w-full tw-col-span-2\n                    tw-block\n                    @[1096px]/profile:tw-hidden\n                    tw-my-9\n                    [overflow-wrap:anywhere]\n                    ".concat(Ue.length > 0 || Le.length > 0 ? "" : "tw-mb-0", "\n                  ")
-                    }, Ce), Ue.length > 0 && g.createElement("div", {
+                        className: "\n                    tw-touch-auto\n                    tw-whitespace-pre-wrap tw-h-auto tw-overflow-y-auto\n                    sm:tw-h-36\n                    tw-text-lighter-grey tw-w-full tw-col-span-2\n                    tw-block\n                    @[1096px]/profile:tw-hidden\n                    tw-my-9\n                    [overflow-wrap:anywhere]\n                    ".concat(qe.length > 0 || Te.length > 0 ? "" : "tw-mb-0", "\n                  ")
+                    }, Le), qe.length > 0 && g.createElement("div", {
                         className: "tw-mt-0 xl:tw-mt-2 tw-col-span-2 sm:tw-col-span-1 xl:tw-col-span-1",
                         title: "User Languages"
                     }, g.createElement("h4", {
                         className: "tw-text-h4 xl:tw-mt-8"
                     }, "I speak"), g.createElement("div", {
-                        className: "tw-flex tw-mt-4 ".concat(qe ? "tw-flex-col" : "")
-                    }, Ue.map((function(e) {
+                        className: "tw-flex tw-mt-4 ".concat(Oe ? "tw-flex-col" : "")
+                    }, qe.map((function(e) {
                         return g.createElement("div", {
                             key: e,
-                            className: "\n                          tw-bg-dark-grey/80 tw-w-fit tw-rounded-full tw-px-2 tw-py-1 tw-text-md tw-font-bold\n                           ".concat(qe ? "tw-mb-3" : "tw-mr-3", "\n                        ")
+                            className: "\n                          tw-bg-dark-grey/80 tw-w-fit tw-rounded-full tw-px-2 tw-py-1 tw-text-md tw-font-bold\n                           ".concat(Oe ? "tw-mb-3" : "tw-mr-3", "\n                        ")
                         }, g.createElement("span", {
                             className: "tw-px-1"
                         }, e))
-                    })))), Le.length > 0 && g.createElement("div", {
+                    })))), Te.length > 0 && g.createElement("div", {
                         className: "tw-mt-0 xl:tw-mt-2 tw-col-span-2 sm:tw-col-span-1 xl:tw-col-span-1"
                     }, g.createElement("h4", {
                         className: "tw-text-h4 tw-mt-8 sm:max-xl:tw-mt-0"
                     }, "Social Links"), g.createElement("div", {
                         className: "tw-flex tw-mt-4"
-                    }, Le.map((function(e) {
+                    }, Te.map((function(e) {
                         return g.createElement(h.QZ, {
                             key: e,
                             url: e,
@@ -2940,7 +2943,7 @@
         },
         751: (e, t, r) => {
             r.d(t, {
-                Ec: () => u,
+                Ec: () => w,
                 Xc: () => d,
                 oy: () => g,
                 sd: () => f,
@@ -3013,7 +3016,7 @@
                 for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                 return n
             }
-            var w = r(61509).S.injectEndpoints({
+            var u = r(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getFavorites: e.query({
@@ -3051,11 +3054,11 @@
                             }),
                             getAllFavorites: e.query({
                                 queryFn: (l = (0, n.Z)(o().mark((function e(t, r, n, l) {
-                                    var i, s, c, w, u, d, m, f;
+                                    var i, s, c, u, w, d, m, f;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                i = t.type, s = t.tag, c = t.tags, w = t.notag, u = t.ownerId, d = [], m = 0;
+                                                i = t.type, s = t.tag, c = t.tags, u = t.notag, w = t.ownerId, d = [], m = 0;
                                             case 3:
                                                 return e.next = 6, l({
                                                     url: "favorites",
@@ -3065,8 +3068,8 @@
                                                         type: i,
                                                         tag: s,
                                                         tags: c,
-                                                        notag: w,
-                                                        ownerId: u
+                                                        notag: u,
+                                                        ownerId: w
                                                     }
                                                 });
                                             case 6:
@@ -3114,35 +3117,35 @@
                             }),
                             getAllFavoriteCounts: e.query({
                                 queryFn: (r = (0, n.Z)(o().mark((function e(t, r, n, a) {
-                                    var l, i, c, w, u, d, m, f;
+                                    var l, i, c, u, w, d, m, f;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                l = t.type, i = t.ownerId, c = {}, w = 0;
+                                                l = t.type, i = t.ownerId, c = {}, u = 0;
                                             case 3:
                                                 return e.next = 6, a({
                                                     url: "favorites",
                                                     params: {
                                                         n: 50,
-                                                        offset: w,
+                                                        offset: u,
                                                         type: l,
                                                         ownerId: i
                                                     }
                                                 });
                                             case 6:
-                                                if (!(u = e.sent).error) {
+                                                if (!(w = e.sent).error) {
                                                     e.next = 9;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: u.error
+                                                    error: w.error
                                                 });
                                             case 9:
-                                                if (!(u.data.length > 0)) {
+                                                if (!(w.data.length > 0)) {
                                                     e.next = 14;
                                                     break
                                                 }
-                                                d = s(u.data);
+                                                d = s(w.data);
                                                 try {
                                                     for (d.s(); !(m = d.n()).done;) f = m.value, c[f.tags[0]] ? c[f.tags[0]] += 1 : c[f.tags[0]] = 1
                                                 } catch (e) {
@@ -3150,7 +3153,7 @@
                                                 } finally {
                                                     d.f()
                                                 }
-                                                return w += 50, e.abrupt("continue", 3);
+                                                return u += 50, e.abrupt("continue", 3);
                                             case 14:
                                                 return e.abrupt("break", 17);
                                             case 17:
@@ -3190,7 +3193,7 @@
                                         a = e.groupName,
                                         l = t.dispatch,
                                         o = t.queryFulfilled,
-                                        s = l(w.util.updateQueryData("getAllFavorites", {
+                                        s = l(u.util.updateQueryData("getAllFavorites", {
                                             type: r
                                         }, (function(e) {
                                             e && (-1 === e.findIndex((function(e) {
@@ -3249,7 +3252,7 @@
                                         a = e.groupName,
                                         l = t.dispatch,
                                         o = t.queryFulfilled,
-                                        i = l(w.util.updateQueryData("getAllFavorites", {
+                                        i = l(u.util.updateQueryData("getAllFavorites", {
                                             type: n
                                         }, (function(e) {
                                             if (e) {
@@ -3296,21 +3299,21 @@
                             }),
                             moveFavorite: e.mutation({
                                 queryFn: (t = (0, n.Z)(o().mark((function e(t, r, n, a) {
-                                    var l, i, s, c, w, u, d;
+                                    var l, i, s, c, u, w, d;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                return l = t.id, i = t.type, s = t.favoriteId, c = t.oldGroupName, w = t.newGroupName, t.silent, e.next = 3, a({
+                                                return l = t.id, i = t.type, s = t.favoriteId, c = t.oldGroupName, u = t.newGroupName, t.silent, e.next = 3, a({
                                                     url: "favorites/".concat(l),
                                                     method: "DELETE"
                                                 });
                                             case 3:
-                                                if (!(u = e.sent).error) {
+                                                if (!(w = e.sent).error) {
                                                     e.next = 6;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: u.error
+                                                    error: w.error
                                                 });
                                             case 6:
                                                 return e.next = 8, a({
@@ -3319,7 +3322,7 @@
                                                     body: {
                                                         type: i,
                                                         favoriteId: s,
-                                                        tags: [w]
+                                                        tags: [u]
                                                     }
                                                 });
                                             case 8:
@@ -3421,13 +3424,13 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["Favorites", "FavoritesCount"]
                 }),
-                u = w.useCreateFavoriteMutation,
-                d = w.useDeleteFavoriteMutation,
-                m = w.useGetAllFavoriteCountsQuery,
-                f = w.useGetAllFavoritesQuery,
-                p = (w.useGetFavoritesQuery, w.useMoveFavoriteMutation),
-                g = w.useReloadFavoritesMutation
+                w = u.useCreateFavoriteMutation,
+                d = u.useDeleteFavoriteMutation,
+                m = u.useGetAllFavoriteCountsQuery,
+                f = u.useGetAllFavoritesQuery,
+                p = (u.useGetFavoritesQuery, u.useMoveFavoriteMutation),
+                g = u.useReloadFavoritesMutation
         }
     }
 ]);
-//# sourceMappingURL=5b9a21c18e1d013adf8a55427d0c2e2733dfb80fabd9b8a19b48e2365ddc29fa.js.map
+//# sourceMappingURL=12c732aef98b03ff31537d9c2ca1a132f877833ff3dd9077bdf625b42e8e1afd.js.map
