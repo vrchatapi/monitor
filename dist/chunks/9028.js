@@ -709,7 +709,10 @@
                     className: "tw-text-".concat(K ? "white" : "placeholder-text", " tw-gap-2"),
                     defaultChecked: K,
                     onChangeCallback: Ae
-                }))), h.createElement(V, {
+                }))), "unpublished" === (null == Ee ? void 0 : Ee.storeStatus) && h.createElement(d.qX, {
+                    type: "warn",
+                    className: "tw-mt-2 tw-flex-row"
+                }, "This store is disabled. Enable it so users can browse and purchase your listings."), h.createElement(V, {
                     isOrdering: ue,
                     onFilterChange: function(e) {
                         U(e)
@@ -975,4 +978,4 @@
         }
     }
 ]);
-//# sourceMappingURL=baa0ef7e0af26be340b16a400309cf0b4f091282d963ebbfbf0524c4f2404707.js.map
+//# sourceMappingURL=35945e73b7577b7a510942bd643e91c5906352bbcc651d3c19ba0a76a50fdb8c.js.map

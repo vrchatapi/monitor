@@ -1212,14 +1212,12 @@
                     $e = (0, w.Z)(Ve, 2),
                     Ge = $e[0],
                     We = $e[1],
-                    qe = (0, h.CE)(Re(Re(Re({}, (C === o.yy.ACTIVE || C === o.yy.EXPIRING) && {
-                        active: !0
+                    qe = (0, h.BQ)(Re(Re(Re({}, (C === o.yy.ACTIVE || C === o.yy.EXPIRING) && {
+                        isActive: !0
                     }), C === o.yy.EXPIRED && {
-                        active: !1
+                        isActive: !1
                     }), {}, {
-                        buyerId: v,
-                        getAll: !0,
-                        mostRecent: !0
+                        subscriberId: v
                     }), {
                         skip: !v,
                         refetchOnMountOrArgChange: !0
@@ -2398,4 +2396,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ae5580c4b9c73488782a05ee358e6bdcec4a3ffdd410432eb3b0080226453fff.js.map
+//# sourceMappingURL=588c5815486596cbd34636345ee040360825da7d41d20303c37b8620bb0d7bbd.js.map

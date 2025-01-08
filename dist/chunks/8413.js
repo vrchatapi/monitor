@@ -85,7 +85,7 @@
                     }, g.createElement("div", {
                         className: "tw-relative"
                     }, g.createElement(d.X2, {
-                        className: "tw-absolute tw-p-3 tw-w-full tw-justify-between"
+                        className: "tw-absolute tw-p-3 tw-w-full tw-justify-between tw-z-10"
                     }, g.createElement(N.Z, {
                         storeType: i
                     }), g.createElement(d.$1, {
@@ -95,7 +95,8 @@
                         className: "tw-rounded-md tw-h-36 tw-w-full",
                         imageId: null == w ? void 0 : w.imageUrl,
                         fallbackSrc: E,
-                        fitToCover: !0
+                        fitToCover: !0,
+                        gradientOverlayClassName: "tw-bg-gradient-to-b"
                     })), g.createElement("div", {
                         className: "tw-p-3"
                     }, g.createElement("p", {
@@ -111,8 +112,8 @@
             const x = k;
             var I = r(68055),
                 O = r(95896),
-                j = r(74205);
-            const C = r.p + "11f3732a3ff50a45dcd540a65f0f2a813f760e739e604675aa46732e189d9fe8.png",
+                C = r(74205);
+            const j = r.p + "11f3732a3ff50a45dcd540a65f0f2a813f760e739e604675aa46732e189d9fe8.png",
                 P = r.p + "82ba25de48489ff56beccb326f25bf9bb6c87914269ecb1bf48898efa2d7d95c.png";
             var T = function(e) {
                 var t, r, o, l, s, c = e.groups,
@@ -160,15 +161,15 @@
                         key: "id",
                         label: "World",
                         thumbSrc: P,
-                        icon: j.rr
+                        icon: C.rr
                     }), (0, n.Z)(t, O.Bk.GROUPS, {
                         list: Z.groups,
                         key: "groupId",
                         label: "Group",
-                        thumbSrc: C,
-                        icon: j.Yj
+                        thumbSrc: j,
+                        icon: C.Yj
                     }), t),
-                    J = function(e) {
+                    q = function(e) {
                         var t = G[D].list,
                             r = G[D].key,
                             n = t.find((function(t) {
@@ -179,7 +180,7 @@
                             baseObj: n
                         })
                     },
-                    U = function(e) {
+                    J = function(e) {
                         L(e), b(null), W("")
                     };
                 return g.createElement(d.JX, {
@@ -189,7 +190,7 @@
                 }, g.createElement("div", {
                     className: "tw-relative tw-w-[270px] tw-cursor-pointer",
                     onClick: function() {
-                        return U(O.Bk.WORLDS)
+                        return J(O.Bk.WORLDS)
                     }
                 }, g.createElement(d.JX, {
                     className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(D === O.Bk.WORLDS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
@@ -198,7 +199,7 @@
                 }, D === O.Bk.WORLDS ? g.createElement(d.$1, {
                     icon: I.LE
                 }) : null), g.createElement(d.JX, null, g.createElement(d.$1, {
-                    icon: j.rr,
+                    icon: C.rr,
                     width: 36,
                     className: "tw-mb-2"
                 }), g.createElement("h4", null, "World Store"))), g.createElement("div", {
@@ -213,7 +214,7 @@
                 }))), g.createElement("div", {
                     className: "tw-relative tw-w-[270px] tw-cursor-pointer",
                     onClick: function() {
-                        return U(O.Bk.GROUPS)
+                        return J(O.Bk.GROUPS)
                     }
                 }, g.createElement(d.JX, {
                     className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(D === O.Bk.GROUPS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
@@ -222,7 +223,7 @@
                 }, D === O.Bk.GROUPS ? g.createElement(d.$1, {
                     icon: I.LE
                 }) : null), g.createElement(d.JX, null, g.createElement(d.$1, {
-                    icon: j.Yj,
+                    icon: C.Yj,
                     width: 36,
                     className: "tw-mb-2"
                 }), g.createElement("h4", null, "Group Store"))), g.createElement("div", {
@@ -230,7 +231,7 @@
                 }, g.createElement("div", {
                     className: "tw-bg-[radial-gradient(circle,rgba(0,0,0,0)_0%,rgba(0,0,0,0.75)_100%)] tw-absolute tw-w-full tw-h-full tw-rounded-lg"
                 }), g.createElement("img", {
-                    src: C,
+                    src: j,
                     alt: "",
                     role: "presentation",
                     className: "tw-object-cover tw-rounded-lg"
@@ -251,7 +252,7 @@
                     value: X,
                     name: "".concat(l, "-select"),
                     options: s,
-                    onChange: J
+                    onChange: q
                 }))), g.createElement(d.X2, {
                     className: "tw-gap-3 tw-w-full"
                 }, g.createElement(d.zx, {
@@ -336,10 +337,10 @@
                     k = (0, a.Z)(N, 2),
                     I = k[0],
                     O = k[1],
-                    j = (0, g.useState)([]),
-                    C = (0, a.Z)(j, 2),
-                    P = C[0],
-                    T = C[1],
+                    C = (0, g.useState)([]),
+                    j = (0, a.Z)(C, 2),
+                    P = j[0],
+                    T = j[1],
                     L = (0, p.Ci)({
                         sellerId: null == n ? void 0 : n.id,
                         managementPov: !0
@@ -354,27 +355,30 @@
                         skip: !n
                     })),
                     G = Z.data,
-                    J = void 0 === G ? [] : G,
-                    U = (Z.isLoading, Z.isError, Z.error, (0, f.g9)({
+                    q = void 0 === G ? [] : G,
+                    J = (Z.isLoading, Z.isError, Z.error, (0, f.g9)({
                         userId: null == n ? void 0 : n.id,
                         releaseStatus: "all",
                         n: 100
                     }, {
                         skip: !n
                     })),
-                    q = U.data,
-                    $ = void 0 === q ? [] : q,
-                    M = (U.isLoading, U.isError, U.error, (0, p.j6)()),
-                    _ = (0, a.Z)(M, 2),
-                    z = _[0],
-                    F = _[1];
+                    U = J.data,
+                    $ = void 0 === U ? [] : U,
+                    z = (J.isLoading, J.isError, J.error, (0, p.j6)()),
+                    M = (0, a.Z)(z, 2),
+                    _ = M[0],
+                    F = M[1];
                 F.isLoading, F.isSuccess, F.isError, F.error;
                 (0, g.useEffect)((function() {
-                    J.length > 0 && n && T(J.filter((function(e) {
+                    q.length > 0 && n && T(q.filter((function(e) {
                         return e.ownerId === n.id
                     })))
-                }), [J]);
-                var Y = function() {
+                }), [q]);
+                var Y = null == B ? void 0 : B.some((function(e) {
+                        return "unpublished" === e.storeStatus
+                    })),
+                    H = function() {
                         var t = (0, o.Z)(i().mark((function t() {
                             var r, n, o, a, c;
                             return i().wrap((function(t) {
@@ -388,7 +392,7 @@
                                             groupId: n.groupId
                                         }), {}, {
                                             displayName: n.name
-                                        }), t.prev = 2, t.next = 5, z(X({}, o)).unwrap();
+                                        }), t.prev = 2, t.next = 5, _(X({}, o)).unwrap();
                                     case 5:
                                         e((0, u.d)({
                                             title: "Store Created!",
@@ -396,7 +400,7 @@
                                             message: "Your store has been created successfully!",
                                             color: "success",
                                             timeout: 3e3
-                                        })), A(), t.next = 12;
+                                        })), Q(), t.next = 12;
                                         break;
                                     case 9:
                                         t.prev = 9, t.t0 = t.catch(2), e((0, u.d)({
@@ -418,44 +422,47 @@
                             return t.apply(this, arguments)
                         }
                     }(),
-                    H = function(e) {
+                    A = function(e) {
                         t("/home/marketplace/storefront/stores/".concat(e))
                     },
-                    A = function() {
+                    Q = function() {
                         h(!1), O({
                             type: null,
                             baseObj: null
                         })
                     },
-                    Q = c || W;
+                    V = c || W;
                 return g.createElement(g.Fragment, null, g.createElement(d.$4, null, "Store Manager"), g.createElement(d.JX, {
                     className: "tw-@container/stores tw-w-full tw-gap-5"
                 }, g.createElement(d.X2, {
                     className: "tw-w-full tw-justify-between tw-items-center"
                 }, g.createElement("h4", {
                     className: "tw-mr-2"
-                }, "Store Manager"), !Q && 0 !== (null == B ? void 0 : B.length) && g.createElement(d.zx, {
+                }, "Store Manager"), !V && 0 !== (null == B ? void 0 : B.length) && g.createElement(d.zx, {
                     onClick: function() {
                         return h(!0)
                     },
                     className: "tw-px-3 tw-py-2"
-                }, "Setup New Store")), g.createElement(d.X2, {
+                }, "Setup New Store")), Y && !W && g.createElement(d.qX, {
+                    type: "warn",
+                    className: "tw-mt-2 tw-flex-row"
+                }, "Some of your stores are disabled. Enable them so users can browse and purchase your listings."), g.createElement(d.X2, {
                     className: "tw-w-full"
-                }, !Q && 0 === (null == B ? void 0 : B.length) && g.createElement(R, {
+                }, !V && 0 === (null == B ? void 0 : B.length) && g.createElement(R, {
                     createStore: function() {
                         return h(!0)
                     }
-                }), !Q && 0 !== (null == B ? void 0 : B.length) && g.createElement("div", {
+                }), !V && 0 !== (null == B ? void 0 : B.length) && g.createElement("div", {
                     className: "tw-grid tw-gap-4 tw-w-full tw-grid-cols-1 @xs/stores:tw-grid-cols-2 @sm/stores:tw-grid-cols-3 @md/stores:tw-grid-cols-4"
                 }, B.map((function(e) {
                     return g.createElement(x, {
                         key: e.id,
                         storeData: e,
-                        onSelect: H
+                        onSelect: A
                     })
                 }))))), g.createElement(d.u_, {
                     isVisible: S,
-                    onClose: A,
+                    onClose: Q,
                     title: "Create Storefront",
                     slim: !0,
                     disableBackdropClick: !0
@@ -467,8 +474,8 @@
                     onDataChange: function(e) {
                         return O(e)
                     },
-                    onCancel: A,
-                    onSubmit: Y,
+                    onCancel: Q,
+                    onSubmit: H,
                     canSubmit: null !== I
                 })))
             }
@@ -612,4 +619,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a65050c984b5aa4902e24a3e466938fd598775a3cff6ee9512c3e584d24c915b.js.map
+//# sourceMappingURL=bc2d134b51244b5a419a0121fd65b3ff35fe0b03c9de0c1f222aed71fc78f60e.js.map
