@@ -24,11 +24,11 @@
                         }))) || void 0 === t ? void 0 : t.label) && void 0 !== e ? e : "Unknown"
                     }), [r]);
                     return c.createElement("div", {
-                        className: "".concat(l, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-rounded-full tw-text-white tw-text-xs")
+                        className: "".concat(l, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-opacity-90 tw-rounded-full tw-text-white tw-text-xs")
                     }, c.createElement(n.$1, {
                         icon: "world" === r ? a.rr : a.Yj,
                         className: "tw-mr-1"
-                    }), s)
+                    }), s, " Store")
                 };
             i.propTypes = {
                 storeType: s().string.isRequired
@@ -102,7 +102,7 @@
                     }, g.createElement("p", {
                         className: "tw-text-ellipsis tw-mb-1 tw-block tw-overflow-hidden tw-whitespace-nowrap group-hover:tw-underline"
                     }, c), g.createElement("small", {
-                        className: "tw-text-placeholder-text"
+                        className: "tw-text-light-grey"
                     }, s.length || "0", " Listings"))))
                 };
             k.propTypes = {
@@ -619,4 +619,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bc2d134b51244b5a419a0121fd65b3ff35fe0b03c9de0c1f222aed71fc78f60e.js.map
+//# sourceMappingURL=05bde2ebb395145100ec0b2dd2e99e5f97e1f5dd033bb7d148fea50dcb789254.js.map

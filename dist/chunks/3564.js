@@ -45,7 +45,9 @@
                     imageId: null == r ? void 0 : r.imageId,
                     alt: null == r ? void 0 : r.displayName,
                     width: 150,
-                    fitToCover: !0
+                    fitToCover: !0,
+                    containerColor: "#252A30",
+                    iconColor: "#404C58"
                 }), b.createElement("h4", null, "Listing Created!"), b.createElement("p", null, "You can edit and manage your listings from the ", b.createElement(y.rU, {
                     to: "/home/marketplace/storefront/stores"
                 }, "Store Manager"), "."))
@@ -172,10 +174,10 @@
                     G = M[1],
                     F = (0, p.G4)(),
                     J = (0, i.Z)(F, 2),
-                    H = J[0],
-                    A = J[1],
-                    _ = (A.isSuccess, A.isLoading),
-                    U = (A.isError, A.error, (0, w.Ci)({
+                    A = J[0],
+                    H = J[1],
+                    _ = (H.isSuccess, H.isLoading),
+                    U = (H.isError, H.error, (0, w.Ci)({
                         sellerId: T.id,
                         managementPov: !0
                     }, {
@@ -220,7 +222,7 @@
                                     case 8:
                                         return y((0, f.Bq)("Create Listing (3/3)")), y((0, f.IT)("Create Listing (2/3)")), e.abrupt("break", 31);
                                     case 11:
-                                        return e.prev = 11, e.next = 14, H(S(S({}, X), {}, {
+                                        return e.prev = 11, e.next = 14, A(S(S({}, X), {}, {
                                             sellerId: T.id
                                         })).unwrap();
                                     case 14:
@@ -285,6 +287,7 @@
                     className: "tw-mt-8 tw-gap-3"
                 }, N && "listingCreated" !== I ? b.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
+                    neutral: !0,
                     onClick: N ? re : null
                 }, "Back") : "listingCreated" === I && r ? b.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
@@ -295,6 +298,7 @@
                     neutral: !0
                 }, "Cancel") : b.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
+                    neutral: !0,
                     onClick: function() {
                         return k("/home/marketplace/storefront/stores")
                     }
@@ -307,4 +311,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4340ca6871665655c28140aaf746cbb1d8a56c891e900f43658dd65c65e34e40.js.map
+//# sourceMappingURL=692d0fbb55c126f8bc0d4e383c0ed02039b8c2e1215529f313817dadad35cb4e.js.map

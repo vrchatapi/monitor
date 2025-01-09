@@ -54,14 +54,14 @@
                     y = v.isLoading,
                     x = null == h ? void 0 : h.id,
                     N = (0, g.useState)(!1),
-                    S = (0, l.Z)(N, 2),
-                    k = S[0],
-                    C = S[1],
+                    C = (0, l.Z)(N, 2),
+                    k = C[0],
+                    S = C[1],
                     O = (0, d.gI)(),
                     P = (0, l.Z)(O, 2),
                     I = P[0],
-                    j = P[1],
-                    T = (0, b.oQ)("".concat(c).concat(null != f && null !== (t = f.state) && void 0 !== t && t.redirectTo ? "?redirectTo=".concat(encodeURIComponent(f.state.redirectTo)) : ""));
+                    T = P[1],
+                    j = (0, b.oQ)("".concat(c).concat(null != f && null !== (t = f.state) && void 0 !== t && t.redirectTo ? "?redirectTo=".concat(encodeURIComponent(f.state.redirectTo)) : ""));
                 if (n) return null;
                 var D = function() {
                     var e = (0, a.Z)(s().mark((function e(t) {
@@ -69,7 +69,7 @@
                         return s().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return t.preventDefault(), C(!0), r = new URL(T, window.location.href), e.next = 5, I(E(E({}, w.$Z.TOS), {}, {
+                                    return t.preventDefault(), S(!0), r = new URL(j, window.location.href), e.next = 5, I(E(E({}, w.$Z.TOS), {}, {
                                         userId: x,
                                         returnUrl: r
                                     })).unwrap();
@@ -86,8 +86,8 @@
                     }
                 }();
                 return (0, g.useEffect)((function() {
-                    (null != j && j.isLoading || y) && C(!0), null != j && j.isError && C(!1)
-                }), [j, y]), g.createElement("div", {
+                    (null != T && T.isLoading || y) && S(!0), null != T && T.isError && S(!1)
+                }), [T, y]), g.createElement("div", {
                     className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-row"
@@ -152,46 +152,46 @@
                         y = (h[0], h[1]),
                         x = (0, b.useState)(null),
                         N = (0, a.Z)(x, 2),
-                        S = N[0],
+                        C = N[0],
                         k = N[1],
-                        C = (0, b.useState)(null),
-                        O = (0, a.Z)(C, 2),
+                        S = (0, b.useState)(null),
+                        O = (0, a.Z)(S, 2),
                         P = O[0],
                         I = O[1],
-                        j = (0, p.mr)({
+                        T = (0, p.mr)({
                             listingId: r,
                             hydrateProducts: !0
                         }),
-                        T = j.data,
-                        D = j.isLoading,
-                        Z = (j.isError, j.error, (0, w.nz)()),
+                        j = T.data,
+                        D = T.isLoading,
+                        Z = (T.isError, T.error, (0, w.nz)()),
                         L = (0, a.Z)(Z, 2),
                         A = L[0],
                         F = L[1],
                         X = F.data,
-                        z = F.isLoading,
-                        R = (F.isError, F.error, (0, w.VF)()),
-                        U = (0, a.Z)(R, 2),
+                        R = F.isLoading,
+                        z = (F.isError, F.error, (0, w.VF)()),
+                        U = (0, a.Z)(z, 2),
                         J = U[0],
                         G = U[1];
                     G.isLoading, G.isError, G.error;
                     (0, b.useEffect)((function() {
-                        if (T && (k(T), T.hydratedProducts)) {
-                            var e = T.products.find((function(e) {
+                        if (j && (k(j), j.hydratedProducts)) {
+                            var e = j.products.find((function(e) {
                                 return e.groupRoleId
                             }));
                             y(e), I(e.groupRoleId), A({
-                                groupId: T.groupId
+                                groupId: j.groupId
                             })
                         }
-                    }), [T]);
-                    var q = function() {
+                    }), [j]);
+                    var M = function() {
                         var e = (0, n.Z)(c().mark((function e() {
                             var t, r, n;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (P && X && T) {
+                                        if (P && X && j) {
                                             e.next = 2;
                                             break
                                         }
@@ -237,7 +237,7 @@
                     return b.createElement(u.JX, {
                         className: "tw-w-full"
                     }, b.createElement(m.Z, {
-                        loading: D || z
+                        loading: D || R
                     }, b.createElement("p", null, b.createElement("strong", null, "Are you sure you want to delete this subscription? This is NOT reversible.")), b.createElement("p", null, "In order to delete this subscription, verify the following."), b.createElement("ul", {
                         className: "tw-bg-grey tw-rounded tw-py-3 tw-gap-2"
                     }, b.createElement("li", null, "There are no active subscribers to this subscription."), b.createElement("li", null, "The subscription listing is in draft mode."), b.createElement("li", null, "This listing must not contain any other products other than the role it's related to.")), b.createElement(u.X2, {
@@ -248,11 +248,11 @@
                         containerClasses: "tw-flex-1",
                         neutral: !0
                     }, "Cancel"), b.createElement(u.zx, {
-                        onClick: q,
+                        onClick: M,
                         type: "button",
                         containerClasses: "tw-flex-1",
                         danger: !0,
-                        disabled: (null == S ? void 0 : S.active) || (null == S ? void 0 : S.products.length) > 1
+                        disabled: (null == C ? void 0 : C.active) || (null == C ? void 0 : C.products.length) > 1
                     }, "Delete"))))
                 };
             E.propTypes = {
@@ -289,14 +289,14 @@
                     y = h[0],
                     x = h[1],
                     N = m.useState(p || []),
-                    S = (0, a.Z)(N, 2),
-                    k = S[0],
-                    C = S[1],
+                    C = (0, a.Z)(N, 2),
+                    k = C[0],
+                    S = C[1],
                     O = m.useState(!1),
                     P = (0, a.Z)(O, 2),
                     I = P[0],
-                    j = P[1],
-                    T = (0, m.useRef)(null),
+                    T = P[1],
+                    j = (0, m.useRef)(null),
                     D = (0, u.Nr)(y);
                 m.useEffect((function() {
                     g({
@@ -306,7 +306,7 @@
                     }), v(k)
                 }), [k]);
                 var Z = function(e) {
-                    T.current && !T.current.contains(e.target) && j(!1)
+                    j.current && !j.current.contains(e.target) && T(!1)
                 };
                 (0, m.useEffect)((function() {
                     return document.addEventListener("mousedown", Z),
@@ -334,7 +334,7 @@
                     rel: "noreferrer"
                 }, "Learn More")), m.createElement(i.JX, {
                     className: "tw-mb-5",
-                    ref: T
+                    ref: j
                 }, m.createElement(i.II, {
                     className: "tw-mb-2",
                     value: y,
@@ -342,7 +342,7 @@
                         return x(e.target.value)
                     },
                     onFocus: function() {
-                        j(!0)
+                        T(!0)
                     },
                     disabled: k.length >= s._1
                 }), m.createElement("small", {
@@ -374,7 +374,7 @@
                         containerClasses: "tw-w-full @sm/add-products:tw-w-[160px] tw-self-center",
                         onClick: function(t) {
                             var r;
-                            r = e, C([].concat((0, n.Z)(k), [r])), j(!1), x("")
+                            r = e, S([].concat((0, n.Z)(k), [r])), T(!1), x("")
                         }
                     }, "Add")), m.createElement("hr", {
                         className: "tw-bg-[#07242B] tw-font-medium tw-border-2 tw-border-solid"
@@ -397,7 +397,7 @@
                                     n = Array.from(k),
                                     l = n.splice(r, 1),
                                     o = (0, a.Z)(l, 1)[0];
-                                n.splice(t, 0, o), C(n)
+                                n.splice(t, 0, o), S(n)
                             }(e, t)
                         },
                         className: "tw-px-5 tw-py-3 tw-gap-5 tw-items-center tw-bg-grey tw-rounded-lg"
@@ -415,7 +415,7 @@
                     }, e.displayName)), (null == e ? void 0 : e.id) !== (null == d ? void 0 : d.id) && m.createElement(i.zx, {
                         type: "button",
                         onClick: function() {
-                            return C(k.filter((function(t) {
+                            return S(k.filter((function(t) {
                                 return t.id !== e.id
                             })))
                         },
@@ -452,14 +452,14 @@
                 y = r(79655),
                 x = r(36078),
                 N = r(45987),
-                S = r(41145),
+                C = r(41145),
                 k = r(62228),
-                C = r(78076),
+                S = r(78076),
                 O = r(67263),
                 P = r(93261),
                 I = ["file", "imageId"],
-                j = ["file"],
-                T = ["imageId"];
+                T = ["file"],
+                j = ["imageId"];
 
             function D(e, t) {
                 var r = Object.keys(e);
@@ -506,14 +506,14 @@
                     A = (0, l.Z)(L, 2),
                     F = A[0],
                     X = A[1],
-                    z = c || [],
-                    R = (null == t ? void 0 : t.displayName) || "",
-                    U = v.useState(R),
+                    R = c || [],
+                    z = (null == t ? void 0 : t.displayName) || "",
+                    U = v.useState(z),
                     J = (0, l.Z)(U, 2),
                     G = J[0],
-                    q = J[1],
-                    M = (null == t ? void 0 : t.description) || "",
-                    B = v.useState(M),
+                    M = J[1],
+                    q = (null == t ? void 0 : t.description) || "",
+                    B = v.useState(q),
                     $ = (0, l.Z)(B, 2),
                     V = $[0],
                     _ = $[1],
@@ -537,7 +537,7 @@
                             return Z(Z({}, e), {}, (0, a.Z)({}, r, n))
                         })), r) {
                         case "displayName":
-                            q(n);
+                            M(n);
                             break;
                         case "description":
                             _(n);
@@ -562,7 +562,7 @@
                 }, !x && v.createElement(m.zx, {
                     containerClasses: "tw-rounded tw-absolute tw-flex-1"
                 }, v.createElement(m.$1, {
-                    icon: C.Vm,
+                    icon: S.Vm,
                     className: "tw-mr-2"
                 }), v.createElement("span", null, "Upload Thumbnail")), v.createElement(m.pw, {
                     imageId: x,
@@ -572,7 +572,9 @@
                     className: "tw-bg-grey tw-text-[#404C58]"
                 })), v.createElement(m.JX, {
                     className: "tw-gap-5 flex-1"
-                }, v.createElement(m.JX, null, v.createElement("label", {
+                }, v.createElement(m.JX, {
+                    className: "tw-gap-2"
+                }, v.createElement("label", {
                     htmlFor: "displayName"
                 }, "Display Name"), v.createElement(m.II, {
                     name: "displayName",
@@ -582,7 +584,9 @@
                     value: G
                 }), v.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, G.length, "/64")), v.createElement(m.JX, null, v.createElement("label", {
+                }, G.length, "/64")), v.createElement(m.JX, {
+                    className: "tw-gap-2"
+                }, v.createElement("label", {
                     htmlFor: "description"
                 }, "Description"), v.createElement(m.gx, {
                     name: "description",
@@ -610,11 +614,11 @@
                 }, t.groupId)))), v.createElement(m.JX, null, v.createElement("label", {
                     htmlFor: "id",
                     className: "tw-mb-2"
-                }, "Associated Products ", z.length > 0 && "(".concat(z.length, ")")), 0 === z.length && v.createElement("p", {
+                }, "Associated Products ", R.length > 0 && "(".concat(R.length, ")")), 0 === R.length && v.createElement("p", {
                     className: "tw-text-placeholder-text tw-mb-0"
-                }, "None"), z.length > 0 && v.createElement(m.JX, null, v.createElement("div", {
+                }, "None"), R.length > 0 && v.createElement(m.JX, null, v.createElement("div", {
                     className: "tw-gap-2 tw-w-full tw-grid tw-grid-cols-2 tw-mb-3"
-                }, (F ? z : z.slice(0, 6)).map((function(e) {
+                }, (F ? R : R.slice(0, 6)).map((function(e) {
                     return v.createElement(m.X2, {
                         key: e.id,
                         className: "tw-items-center tw-gap-2 tw-flex-1"
@@ -629,7 +633,7 @@
                     }, null == e ? void 0 : e.displayName, " (", v.createElement("span", {
                         className: "tw-capitalize"
                     }, null == e ? void 0 : e.productType), ")"))
-                }))), z.length > 6 && v.createElement(m.X2, {
+                }))), R.length > 6 && v.createElement(m.X2, {
                     className: "tw-items-center tw-gap-2"
                 }, v.createElement("button", {
                     type: "button",
@@ -640,7 +644,7 @@
                 }, F ? "Show Less " : "Show all products ", F ? v.createElement(m.$1, {
                     icon: k.mT
                 }) : v.createElement(m.$1, {
-                    icon: S.pt
+                    icon: C.pt
                 }))))), v.createElement(m.zx, {
                     type: "button",
                     onClick: i,
@@ -664,13 +668,13 @@
                             return (0, N.Z)(e, I)
                         }))) : l ? (D(r), void p((function(e) {
                             e.file;
-                            var t = (0, N.Z)(e, j);
+                            var t = (0, N.Z)(e, T);
                             return Z({
                                 imageId: r
                             }, t)
                         }))) : (D(a), void p((function(e) {
                             e.imageId;
-                            var t = (0, N.Z)(e, T);
+                            var t = (0, N.Z)(e, j);
                             return Z({
                                 file: a
                             }, t)
@@ -688,9 +692,9 @@
             const A = L;
             var F = r(95896),
                 X = r(25062),
-                z = ["currentUnitPriceTokens"];
+                R = ["currentUnitPriceTokens"];
 
-            function R(e, t) {
+            function z(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -704,9 +708,9 @@
             function U(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? R(Object(r), !0).forEach((function(t) {
+                    t % 2 ? z(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : R(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : z(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -738,16 +742,16 @@
                     }))),
                     y = (0, l.Z)(h, 2),
                     x = y[0],
-                    S = y[1],
+                    C = y[1],
                     k = (null == t ? void 0 : t.duration) || 1,
-                    C = v.useState(k),
-                    O = (0, l.Z)(C, 2),
+                    S = v.useState(k),
+                    O = (0, l.Z)(S, 2),
                     P = O[0],
                     I = (O[1], (null == t ? void 0 : t.durationType) || "months"),
-                    j = v.useState(I),
-                    T = (0, l.Z)(j, 2),
-                    D = T[0];
-                T[1];
+                    T = v.useState(I),
+                    j = (0, l.Z)(T, 2),
+                    D = j[0];
+                j[1];
                 v.useEffect((function() {
                     n(u)
                 }), [u]), v.useEffect((function() {
@@ -757,7 +761,7 @@
                                 return !!e.unitPriceTokens
                             })).map((function(e) {
                                 var t = e.currentUnitPriceTokens,
-                                    r = (0, N.Z)(e, z);
+                                    r = (0, N.Z)(e, R);
                                 return U(U({
                                     unitPriceTokens: parseInt(t, 10)
                                 }, r), {}, {
@@ -790,7 +794,7 @@
                     }), [x, g]),
                     L = function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x;
-                        S(e.map((function(t, r) {
+                        C(e.map((function(t, r) {
                             var n, a = (null === (n = e.slice(0, r).findLast((function(e) {
                                 return e.unitPriceTokens
                             }))) || void 0 === n ? void 0 : n.unitPriceTokens) || g;
@@ -824,7 +828,7 @@
                                 b(n);
                                 break;
                             case "listingVariants":
-                                S(n)
+                                C(n)
                         }
                     },
                     value: g,
@@ -906,7 +910,7 @@
             };
             const G = J;
 
-            function q(e, t) {
+            function M(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -917,12 +921,12 @@
                 return r
             }
 
-            function M(e) {
+            function q(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? q(Object(r), !0).forEach((function(t) {
+                    t % 2 ? M(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : q(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : M(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -937,24 +941,24 @@
                     g = ((0, h.s0)(), (0, w.XC)().data),
                     b = (0, v.useState)(0),
                     N = (0, l.Z)(b, 2),
-                    S = N[0],
+                    C = N[0],
                     k = N[1],
-                    C = (0, v.useState)(null),
-                    O = (0, l.Z)(C, 2),
+                    S = (0, v.useState)(null),
+                    O = (0, l.Z)(S, 2),
                     P = O[0],
                     I = O[1],
-                    j = (0, v.useState)(null),
-                    T = (0, l.Z)(j, 2),
-                    D = T[0],
-                    Z = T[1],
+                    T = (0, v.useState)(null),
+                    j = (0, l.Z)(T, 2),
+                    D = j[0],
+                    Z = j[1],
                     L = (0, v.useState)(!1),
                     F = (0, l.Z)(L, 2),
                     X = F[0],
-                    z = F[1],
-                    R = (0, v.useState)(null),
-                    U = (0, l.Z)(R, 2),
+                    R = F[1],
+                    z = (0, v.useState)(null),
+                    U = (0, l.Z)(z, 2),
                     J = U[0],
-                    q = U[1],
+                    M = U[1],
                     B = (0, v.useState)([]),
                     $ = (0, l.Z)(B, 2),
                     V = $[0],
@@ -986,13 +990,13 @@
                             var e = ee.products.find((function(e) {
                                 return e.groupRoleId
                             }));
-                            q(e), _(ee.products)
+                            M(e), _(ee.products)
                         }
                         I(ee)
                     }
                 }), [ee, te]);
                 var de = function(e) {
-                        I(M(M({}, P), e)), Z(M(M({}, D), e))
+                        I(q(q({}, P), e)), Z(q(q({}, D), e))
                     },
                     we = function() {
                         var e = (0, n.Z)(s().mark((function e() {
@@ -1008,7 +1012,7 @@
                                                 color: "success",
                                                 timeout: 3e3
                                             })), a()
-                                        }, e.prev = 1, e.next = 4, ae(M({
+                                        }, e.prev = 1, e.next = 4, ae(q({
                                             listingId: ee.id
                                         }, D)).unwrap();
                                     case 4:
@@ -1049,7 +1053,7 @@
                 }, v.createElement(d.Z, {
                     loading: fe
                 })), !fe && !X && v.createElement(v.Fragment, null, v.createElement("div", {
-                    className: "tw-w-full tw-bg-black tw-text-light-grey tw-rounded-lg tw-px-3 tw-py-4 tw-mb-3"
+                    className: "tw-w-full tw-bg-grey tw-text-light-grey tw-rounded-lg tw-px-3 tw-py-4 tw-mb-3"
                 }, v.createElement("p", {
                     className: "tw-mb-0 tw-text-sm"
                 }, "Manage this role's permissions and requirements from your", " ", v.createElement("strong", null, v.createElement(y.rU, {
@@ -1062,25 +1066,25 @@
                     onClick: function() {
                         return k(0)
                     },
-                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(0 === S ? "tw-border-teal-accent" : "tw-border-transparent")
+                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(0 === C ? "tw-border-teal-accent" : "tw-border-transparent")
                 }, "Overview"), v.createElement("button", {
                     type: "button",
                     onClick: function() {
                         return k(1)
                     },
-                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(1 === S ? "tw-border-solid tw-border-teal-accent" : "tw-border-transparent")
+                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(1 === C ? "tw-border-solid tw-border-teal-accent" : "tw-border-transparent")
                 }, "Pricing")), v.createElement("div", {
                     className: "tw-w-full tw-relative"
-                }, 0 === S && v.createElement(A, {
+                }, 0 === C && v.createElement(A, {
                     listing: P,
                     onDataChange: de,
                     onEditProducts: function() {
                         ce({
                             userId: g.id
-                        }), z(!0)
+                        }), R(!0)
                     },
                     productList: V
-                }), 1 === S && v.createElement(G, {
+                }), 1 === C && v.createElement(G, {
                     listing: P,
                     onDataChange: de,
                     validateVariants: function(e) {
@@ -1111,7 +1115,7 @@
                 }, v.createElement(m.zx, {
                     type: "button",
                     onClick: function() {
-                        return z(!1)
+                        return R(!1)
                     },
                     containerClasses: "tw-max-w-[170px] tw-w-full tw-mt-5"
                 }, "Done"))))
@@ -1125,7 +1129,7 @@
         },
         18529: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => ge
+                default: () => be
             });
             var n = r(15861),
                 a = r(45987),
@@ -1148,12 +1152,13 @@
                 y = r(89250),
                 x = r(36078),
                 N = r(82414),
-                S = r(46357),
-                k = r(17319),
-                C = r(34233),
-                O = r(7371);
+                C = r(65061),
+                k = r(46357),
+                S = r(17319),
+                O = r(34233),
+                P = r(7371);
 
-            function P(e, t) {
+            function I(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -1164,12 +1169,12 @@
                 return r
             }
 
-            function I(e) {
+            function T(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? P(Object(r), !0).forEach((function(t) {
+                    t % 2 ? I(Object(r), !0).forEach((function(t) {
                         (0, l.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : P(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : I(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -1209,12 +1214,14 @@
                     className: "tw-rounded-full",
                     containerClasses: "tw-rounded-full tw-absolute tw-w-9 tw-h-9 tw-right-3 tw-top-3"
                 }, E.createElement(m.$1, {
-                    icon: O.Iw
+                    icon: P.Iw
                 })), E.createElement(m.pw, {
                     imageId: b.currentBanner,
                     fitToCover: !0,
                     alt: "Group Banner",
-                    className: "tw-w-full tw-max-h-[115px]"
+                    className: "tw-w-full tw-max-h-[115px]",
+                    containerColor: "#181B1F",
+                    iconColor: "#404C58"
                 })), E.createElement(m.JX, {
                     className: "sm:tw-flex-row"
                 }, E.createElement("div", {
@@ -1226,12 +1233,14 @@
                     className: "tw-rounded-full",
                     containerClasses: "tw-rounded-full tw-absolute tw-w-9 tw-h-9 tw-right-0 tw-bottom-0"
                 }, E.createElement(m.$1, {
-                    icon: C._j
+                    icon: O._j
                 })), E.createElement(m.pw, {
                     imageId: b.currentIcon,
                     fitToCover: !0,
                     alt: "Group Banner",
-                    className: "tw-w-[100px] tw-rounded-full tw-aspect-square tw-h-[100px]"
+                    className: "tw-w-[100px] tw-rounded-full tw-aspect-square tw-h-[100px]",
+                    containerColor: "#181B1F",
+                    iconColor: "#404C58"
                 })), E.createElement(m.JX, null, E.createElement("h4", {
                     className: "tw-m-0"
                 }, i.name), E.createElement(m.X2, {
@@ -1239,12 +1248,12 @@
                 }, E.createElement("p", {
                     className: "tw-m-0"
                 }, E.createElement(m.$1, {
-                    icon: k.di,
+                    icon: S.di,
                     color: "#737F8D"
                 }), " 0"), E.createElement("p", {
                     className: "tw-m-0"
                 }, E.createElement(m.$1, {
-                    icon: S.FV,
+                    icon: k.FV,
                     color: "#FFFFFF"
                 }), " 0"), E.createElement("p", {
                     className: "tw-m-0"
@@ -1267,7 +1276,7 @@
                                     currentIcon: null
                                 };
                                 return v((function(e) {
-                                    return I(I({}, e), c)
+                                    return T(T({}, e), c)
                                 })), void("groupBanner" === t ? l : n)(null)
                             }
                             if (null !== a) {
@@ -1277,7 +1286,7 @@
                                     currentIcon: a
                                 };
                                 return v((function(e) {
-                                    return I(I({}, e), s)
+                                    return T(T({}, e), s)
                                 })), void("groupBanner" === t ? l : n)(a)
                             }
                             var u = "groupBanner" === t ? {
@@ -1286,7 +1295,7 @@
                                 currentIcon: i
                             };
                             v((function(e) {
-                                return I(I({}, e), u)
+                                return T(T({}, e), u)
                             })), ("groupBanner" === t ? l : n)(i)
                         }
                     }),
@@ -1296,7 +1305,7 @@
                 }))
             };
 
-            function T(e, t) {
+            function D(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -1307,18 +1316,18 @@
                 return r
             }
 
-            function D(e) {
+            function Z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? T(Object(r), !0).forEach((function(t) {
+                    t % 2 ? D(Object(r), !0).forEach((function(t) {
                         (0, l.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : T(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : D(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            const Z = function(e) {
+            const L = function(e) {
                 var t = e.currentGroupData,
                     r = void 0 === t ? null : t,
                     n = e.onGroupDataChange,
@@ -1343,76 +1352,115 @@
                     b = (0, o.Z)(g, 2),
                     v = b[0],
                     h = b[1],
-                    y = E.useCallback((function(e, t) {
+                    y = (0, E.useState)(!1),
+                    x = (0, o.Z)(y, 2),
+                    k = x[0],
+                    S = x[1],
+                    O = (0, E.useRef)(null),
+                    P = E.useCallback((function(e, t) {
                         var r = "string" == typeof t;
                         h((function(n) {
-                            var o, i = D(D({}, n), {}, (o = {}, (0, l.Z)(o, "".concat(e, "Id"), r ? t : null), (0, l.Z)(o, e, r ? null : t), o));
+                            var o, i = Z(Z({}, n), {}, (o = {}, (0, l.Z)(o, "".concat(e, "Id"), r ? t : null), (0, l.Z)(o, e, r ? null : t), o));
                             return a(i), i
                         }))
                     }), [a]),
-                    x = function(e) {
+                    I = function(e) {
                         var t = e.target,
                             r = t.name,
                             n = t.value;
                         h((function(e) {
-                            var t = D(D({}, e), {}, (0, l.Z)({}, r, "shortCode" === r ? n.toUpperCase() : n));
+                            var t = Z(Z({}, e), {}, (0, l.Z)({}, r, "shortCode" === r ? n.toUpperCase() : n));
                             return a(t), t
                         }))
                     };
-                return E.createElement(m.JX, {
+                return (0, E.useEffect)((function() {
+                    var e = function(e) {
+                        O.current && !O.current.contains(e.target) && S(!1)
+                    };
+                    return k ? document.addEventListener("mousedown", e) : document.removeEventListener("mousedown", e),
+                        function() {
+                            document.removeEventListener("mousedown", e)
+                        }
+                }), [k]), E.createElement(m.JX, {
                     className: "tw-gap-5 tw-mb-8"
                 }, E.createElement(m.JX, null, E.createElement("label", {
-                    forHtml: "name"
+                    forHtml: "name",
+                    className: "tw-mb-2"
                 }, "Group Name"), E.createElement(m.II, {
                     name: "name",
                     type: "text",
+                    className: "tw-mb-2",
                     onChange: function(e) {
-                        x(e), c(e)
+                        I(e), c(e)
                     },
                     maxLength: 64,
                     value: v.name
-                }), E.createElement("small", null, v.name.length, "/64")), E.createElement(m.JX, null, E.createElement("label", {
+                }), E.createElement("small", {
+                    className: "tw-text-placeholder-text"
+                }, v.name.length, "/64")), E.createElement(m.JX, null, E.createElement("label", {
                     forHtml: "shortCode",
-                    className: "tw-flex tw-flex-row"
+                    className: "tw-flex tw-flex-row tw-mb-2"
                 }, "Group Unique ID", E.createElement("div", {
-                    className: "tw-group tw-relative tw-ml-1"
+                    className: "tw-group tw-relative tw-ml-1",
+                    ref: O
+                }, E.createElement("button", {
+                    id: "groupIdTooltip",
+                    type: "button",
+                    className: "tw-bg-transparent tw-border-none",
+                    onClick: function() {
+                        return S(!k)
+                    },
+                    "aria-label": "Group ID tooltip"
                 }, E.createElement(m.$1, {
                     icon: N.sq,
                     className: "tw-text-light-grey"
-                }), E.createElement("span", {
-                    className: "tw-pointer-events-none tw-z-50 tw-absolute tw-top-[-4rem] tw-left-[-7rem] sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
-                }, "This will help other users find your group or differentiate it from similar named ones."))), E.createElement(m.II, {
+                })), E.createElement(C.Z, {
+                    isOpen: k,
+                    target: "groupIdTooltip",
+                    placement: "right",
+                    trigger: "click",
+                    innerClassName: "tw-bg-gray-900"
+                }, E.createElement("span", {
+                    className: "tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50"
+                }, "This will help other users find your group or differentiate it from similar named ones.")))), E.createElement(m.II, {
                     name: "shortCode",
+                    className: "tw-mb-2",
                     type: "text",
-                    onChange: x,
+                    onChange: I,
                     maxLength: 6,
                     min: 3,
                     value: v.shortCode,
                     placeholder: u
-                }), E.createElement("small", null, "Your Group's identifier must be 3-6 characters and will be followed with a discriminator.", v.name.length >= 3 && "If left blank, ".concat(u, " will be your identifier."))), E.createElement(m.JX, null, E.createElement("label", {
-                    forHtml: "description"
+                }), E.createElement("small", {
+                    className: "tw-text-placeholder-text"
+                }, "Your Group's identifier must be 3-6 characters and will be followed with a discriminator.", v.name.length >= 3 && " If left blank, ".concat(u, " will be your identifier."))), E.createElement(m.JX, null, E.createElement("label", {
+                    forHtml: "description",
+                    className: "tw-mb-2"
                 }, "Description"), E.createElement(m.gx, {
+                    className: "tw-mb-2",
                     name: "description",
-                    onChange: x,
+                    onChange: I,
                     maxLength: 1024,
                     value: v.description
-                }), E.createElement("small", null, v.description.length, "/1024 characters")), E.createElement("div", {
+                }), E.createElement("small", {
+                    className: "tw-text-placeholder-text"
+                }, v.description.length, "/1024 characters")), E.createElement("div", {
                     className: "tw-relative tw-rounded-lg"
                 }, E.createElement("label", {
                     className: "tw-mb-3"
                 }, "Add Group Icon and Banner Image"), E.createElement(j, {
                     shortCodePlaceholder: u,
                     iconChangeCallback: function(e) {
-                        return y("icon", e)
+                        return P("icon", e)
                     },
                     bannerChangeCallback: function(e) {
-                        return y("banner", e)
+                        return P("banner", e)
                     },
                     groupData: v
                 })))
             };
-            var L = r(79655);
-            const A = function(e) {
+            var A = r(79655);
+            const F = function(e) {
                 var t = e.group,
                     r = void 0 === t ? {} : t;
                 return E.createElement(m.JX, {
@@ -1422,19 +1470,19 @@
                     imageId: null == r ? void 0 : r.iconId,
                     alt: null == r ? void 0 : r.name,
                     fitToCover: !0
-                }), E.createElement("h4", null, null == r ? void 0 : r.name, " has been created!"), E.createElement("p", null, "You can modify, add members and customize your group from the ", E.createElement(L.rU, {
+                }), E.createElement("h4", null, null == r ? void 0 : r.name, " has been created!"), E.createElement("p", null, "You can modify, add members and customize your group from the ", E.createElement(A.rU, {
                     to: "/home/groups"
                 }, "Groups"), " section."), E.createElement("p", {
                     className: "tw-font-bold tw-mb-0"
                 }, "Subscriptions need to be linked to a subscription role."))
             };
-            var F = r(11298),
-                X = r(66007),
+            var X = r(11298),
+                R = r(66007),
                 z = r(81116),
-                R = r(81511),
-                U = r(4241),
-                J = r(6811),
-                G = r(83505);
+                U = r(81511),
+                J = r(4241),
+                G = r(6811),
+                M = r(83505);
 
             function q(e, t) {
                 var r = Object.keys(e);
@@ -1447,7 +1495,7 @@
                 return r
             }
 
-            function M(e) {
+            function B(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? q(Object(r), !0).forEach((function(t) {
@@ -1458,7 +1506,7 @@
                 }
                 return e
             }
-            const B = function(e) {
+            const $ = function(e) {
                 var t = e.onDataChange,
                     r = void 0 === t ? function() {} : t,
                     n = (0, E.useState)({
@@ -1472,23 +1520,23 @@
                     r(l)
                 }), [l]);
                 var c = function(e) {
-                        i(M(M({}, l), {}, {
+                        i(B(B({}, l), {}, {
                             joinState: e
                         }))
                     },
                     s = function(e) {
-                        i(M(M({}, l), {}, {
+                        i(B(B({}, l), {}, {
                             privacy: e
                         }))
                     },
                     u = function(e) {
                         return e ? E.createElement(m.$1, {
-                            icon: J.f8,
+                            icon: G.f8,
                             color: "#1FD1ED",
                             width: "24",
                             className: "tw-absolute tw-top-3 tw-right-3"
                         }) : E.createElement(m.$1, {
-                            icon: k.di,
+                            icon: S.di,
                             color: "#2D363F",
                             width: "24",
                             className: "tw-absolute tw-top-3 tw-right-3"
@@ -1503,9 +1551,9 @@
                         return c(d.wN.OPEN)
                     },
                     role: "button",
-                    className: (0, G.cx)("tw-relative tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.OPEN ? "tw-border-button-border" : "tw-border-hr-line-color")
+                    className: (0, M.cx)("tw-relative tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.OPEN ? "tw-border-button-border" : "tw-border-hr-line-color")
                 }, u(l.joinState === d.wN.OPEN), E.createElement(m.$1, {
-                    icon: U.FK,
+                    icon: J.FK,
                     width: "48",
                     className: "tw-mb-3"
                 }), E.createElement("p", {
@@ -1517,9 +1565,9 @@
                         return c(d.wN.REQUEST)
                     },
                     role: "button",
-                    className: (0, G.cx)("tw-relative tw-flex-1 tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.REQUEST ? "tw-border-button-border" : "tw-border-hr-line-color")
+                    className: (0, M.cx)("tw-relative tw-flex-1 tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.REQUEST ? "tw-border-button-border" : "tw-border-hr-line-color")
                 }, u(l.joinState === d.wN.REQUEST), E.createElement(m.$1, {
-                    icon: R.FU,
+                    icon: U.FU,
                     width: "48",
                     className: "tw-mb-3"
                 }), E.createElement("p", {
@@ -1531,7 +1579,7 @@
                         return c(d.wN.INVITE)
                     },
                     role: "button",
-                    className: (0, G.cx)("tw-relative tw-flex-1 tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.INVITE ? "tw-border-button-border" : "tw-border-hr-line-color")
+                    className: (0, M.cx)("tw-relative tw-flex-1 tw-px-5 tw-py-8 tw-text-center tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.joinState === d.wN.INVITE ? "tw-border-button-border" : "tw-border-hr-line-color")
                 }, u(l.joinState === d.wN.INVITE), E.createElement(m.$1, {
                     icon: z.FJ,
                     width: "48",
@@ -1551,9 +1599,9 @@
                         return s(d.TW.DEFAULT)
                     },
                     role: "button",
-                    className: (0, G.cx)("tw-relative tw-min-w-[200px] tw-gap-6 tw-p-5 tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.privacy === d.TW.DEFAULT ? "tw-border-button-border" : "tw-border-hr-line-color")
+                    className: (0, M.cx)("tw-relative tw-min-w-[200px] tw-gap-6 tw-p-5 tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.privacy === d.TW.DEFAULT ? "tw-border-button-border" : "tw-border-hr-line-color")
                 }, u(l.privacy === d.TW.DEFAULT), E.createElement(m.$1, {
-                    icon: X.KC,
+                    icon: R.KC,
                     width: "48"
                 }), E.createElement(m.JX, null, E.createElement("p", {
                     className: "tw-mb-0 tw-font-bold"
@@ -1564,9 +1612,9 @@
                         return s(d.TW.PRIVATE)
                     },
                     role: "button",
-                    className: (0, G.cx)("tw-relative tw-min-w-[200px] tw-gap-6 tw-p-5 tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.privacy === d.TW.PRIVATE ? "tw-border-button-border" : "tw-border-hr-line-color")
+                    className: (0, M.cx)("tw-relative tw-min-w-[200px] tw-gap-6 tw-p-5 tw-items-center tw-bg-grey tw-border-2 tw-border-solid tw-rounded-lg hover:tw-border-button-border", l.privacy === d.TW.PRIVATE ? "tw-border-button-border" : "tw-border-hr-line-color")
                 }, u(l.privacy === d.TW.PRIVATE), E.createElement(m.$1, {
-                    icon: F.BC,
+                    icon: X.BC,
                     width: "48"
                 }), E.createElement(m.JX, null, E.createElement("p", {
                     className: "tw-mb-0 tw-font-bold"
@@ -1577,7 +1625,7 @@
                 }, "Note that once you've set up a Group as Public or Private, it cannot be changed.")))
             };
 
-            function $(e, t) {
+            function V(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -1588,62 +1636,90 @@
                 return r
             }
 
-            function V(e) {
+            function _(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? $(Object(r), !0).forEach((function(t) {
+                    t % 2 ? V(Object(r), !0).forEach((function(t) {
                         (0, l.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : $(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : V(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var _ = {
+            var W = {
                 name: "",
                 description: ""
             };
-            const W = function(e) {
+            const Y = function(e) {
                 var t = e.onDataChange,
                     r = void 0 === t ? function() {} : t,
                     n = e.role,
-                    a = void 0 === n ? _ : n,
-                    i = E.useState(a),
+                    a = void 0 === n ? W : n,
+                    i = (0, E.useState)(a),
                     c = (0, o.Z)(i, 2),
                     s = c[0],
                     u = c[1],
-                    d = function(e) {
+                    d = (0, E.useState)(!1),
+                    w = (0, o.Z)(d, 2),
+                    p = w[0],
+                    f = w[1],
+                    g = (0, E.useRef)(null),
+                    b = function(e) {
                         var t = e.target,
                             n = t.name,
                             a = t.value;
                         u((function(e) {
-                            var t = V(V({}, e), {}, (0, l.Z)({}, n, a));
+                            var t = _(_({}, e), {}, (0, l.Z)({}, n, a));
                             return r(t), t
                         }))
                     };
-                return E.createElement(m.JX, {
+                return (0, E.useEffect)((function() {
+                    var e = function(e) {
+                        g.current && !g.current.contains(e.target) && f(!1)
+                    };
+                    return p ? document.addEventListener("mousedown", e) : document.removeEventListener("mousedown", e),
+                        function() {
+                            document.removeEventListener("mousedown", e)
+                        }
+                }), [p]), E.createElement(m.JX, {
                     className: "tw-gap-5 tw-mb-8"
                 }, E.createElement(m.JX, {
                     className: "tw-rounded-lg tw-bg-[#000000] tw-p-3"
                 }, E.createElement("small", {
-                    className: "tw-text-placeholder-text"
+                    className: "tw-text-light-grey"
                 }, "Don't sweat it, you can still change your subscription role details and role permissions in the group page after the role has been created.")), E.createElement(m.JX, {
                     className: "tw-gap-2"
                 }, E.createElement("label", {
                     htmlFor: "roleName",
                     className: "tw-flex tw-flex-row"
                 }, "Subscription Role Name", E.createElement("div", {
-                    className: "tw-group tw-relative tw-ml-1"
+                    className: "tw-group tw-relative tw-ml-1",
+                    ref: g
+                }, E.createElement("button", {
+                    id: "roleNameTooltip",
+                    type: "button",
+                    className: "tw-bg-transparent tw-border-none",
+                    onClick: function() {
+                        return f(!p)
+                    },
+                    "aria-label": "Paid role name tooltip"
                 }, E.createElement(m.$1, {
                     icon: N.sq,
                     className: "tw-text-light-grey"
-                }), E.createElement("span", {
-                    className: "tw-pointer-events-none tw-z-50 tw-absolute tw-top-[-6rem] tw-left-[-9rem] sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
-                }, "Subscription roles are exclusive roles within the group, available only through an active subscription. Access will automatically end when the subscription expires."))), E.createElement(m.II, {
+                })), E.createElement(C.Z, {
+                    isOpen: p,
+                    target: "roleNameTooltip",
+                    placement: "right",
+                    trigger: "click",
+                    innerClassName: "tw-bg-gray-900"
+                }, E.createElement("span", {
+                    className: "tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50"
+                }, "Subscription roles are exclusive roles within the group, available only through an active subscription. Access will automatically end when the subscription expires.")))), E.createElement(m.II, {
                     id: "roleName",
                     name: "name",
                     type: "text",
-                    onChange: d,
+                    onChange: b,
                     value: s.name,
                     "aria-labelledby": "roleName",
                     "aria-describedby": "roleNameDescription"
@@ -1657,7 +1733,7 @@
                 }, "Description"), E.createElement(m.gx, {
                     id: "roleDescription",
                     name: "description",
-                    onChange: d,
+                    onChange: b,
                     value: s.description,
                     maxLength: 1024,
                     "aria-labelledby": "roleDescription",
@@ -1669,16 +1745,16 @@
                     className: "tw-sr-only"
                 }, "Enter a description for the paid role. Maximum length is 1024 characters.")))
             };
-            var Y = r(42138),
-                Q = r(12752),
-                H = r(64358),
-                K = {
+            var Q = r(42138),
+                H = r(12752),
+                K = r(64358),
+                ee = {
                     permissions: [],
                     productGroupAccess: !1,
                     requiresTwoFactor: !1,
                     productGroupAccessRemove: !1
                 };
-            const ee = function(e) {
+            const te = function(e) {
                 var t, r = e.onDataChange,
                     n = void 0 === r ? function() {} : r,
                     a = e.groupPermissions,
@@ -1686,7 +1762,7 @@
                     i = e.groupInfo,
                     c = void 0 === i ? {} : i,
                     s = e.role,
-                    u = void 0 === s ? K : s,
+                    u = void 0 === s ? ee : s,
                     d = E.useState(u.permissions),
                     w = (0, o.Z)(d, 2),
                     p = w[0],
@@ -1698,26 +1774,26 @@
                     y = E.useState("open" === (null == c ? void 0 : c.joinState) || u.productGroupAccess),
                     x = (0, o.Z)(y, 2),
                     N = x[0],
-                    S = x[1],
+                    C = x[1],
                     k = E.useState(u.productGroupAccessRemove),
-                    C = (0, o.Z)(k, 2),
-                    O = C[0],
-                    P = C[1],
+                    S = (0, o.Z)(k, 2),
+                    O = S[0],
+                    P = S[1],
                     I = E.useState(u.requiresTwoFactor),
-                    j = (0, o.Z)(I, 2),
-                    T = j[0],
-                    D = j[1];
+                    T = (0, o.Z)(I, 2),
+                    j = T[0],
+                    D = T[1];
                 E.useEffect((function() {
                     n({
                         permissions: p,
                         productGroupAccess: N,
-                        requiresTwoFactor: T,
+                        requiresTwoFactor: j,
                         productGroupAccessRemove: O
                     })
-                }), [p, N, T, O]);
-                var Z = (0, Q._b)(l),
+                }), [p, N, j, O]);
+                var Z = (0, H._b)(l),
                     L = E.useMemo((function() {
-                        return (0, H.Ps)({
+                        return (0, K.Ps)({
                             permissionName: v,
                             permissionsMap: Z
                         })
@@ -1725,10 +1801,11 @@
                     A = "open" === (null == c ? void 0 : c.joinState) ? "Since your group setting is Free Join, all users who subscribe will be automatically added to your group without needing approval. They'll remain part of the group after their subscription ends." : "Since your group setting is not Free Join, any user in VRChat can purchase this role and be added to the group, no matter what the group's join rules are.";
                 return E.createElement(m.JX, {
                     className: "tw-gap-5 tw-mb-8"
-                }, E.createElement(m.qX, {
-                    type: "dark",
-                    hideIcon: !0
-                }, E.createElement("small", null, "Don’t sweat it, you can still change your subscription role details and role permissions in the group page after the role has been created.")), E.createElement(m.JX, {
+                }, E.createElement(m.JX, {
+                    className: "tw-rounded-lg tw-bg-[#000000] tw-p-3"
+                }, E.createElement("small", {
+                    className: "tw-text-light-grey"
+                }, "Don’t sweat it, you can still change your subscription role details and role permissions in the group page after the role has been created.")), E.createElement(m.JX, {
                     className: "tw-gap-3"
                 }, E.createElement(m.JX, {
                     className: "tw-bg-grey tw-p-5 tw-rounded-lg"
@@ -1736,7 +1813,7 @@
                     label: "Require Two-Factor Authentication",
                     value: "requiresTwoFactor",
                     description: "Requires members to have 2FA before permissions apply.",
-                    defaultChecked: T,
+                    defaultChecked: j,
                     onChangeCallback: function(e) {
                         var t = e.checked;
                         return D(t)
@@ -1750,7 +1827,7 @@
                     defaultChecked: N,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        return S(t)
+                        return C(t)
                     },
                     disabled: "open" === (null == c ? void 0 : c.joinState) || "closed" === (null == c ? void 0 : c.joinState)
                 })), N && "open" !== (null == c ? void 0 : c.joinState) && E.createElement(m.JX, {
@@ -1780,11 +1857,11 @@
                             return function(e, t) {
                                 var r;
                                 if (t) {
-                                    var n = (0, H.QZ)({
+                                    var n = (0, K.QZ)({
                                         permissionName: e,
                                         permissionsMap: Z
                                     });
-                                    return f([].concat((0, Y.Z)(p), [e], (0, Y.Z)(n)))
+                                    return f([].concat((0, Q.Z)(p), [e], (0, Q.Z)(n)))
                                 }
                                 var a = Z[e];
                                 if (null !== (r = a.computedDependedOnBy) && void 0 !== r && r.size && p.some((function(e) {
@@ -1809,7 +1886,7 @@
                     headerText: "Role Permission Dependencies",
                     confirmText: "Turn Off",
                     cancelText: "Go Back"
-                }, E.createElement("div", null, E.createElement("p", null, "Turning off “", null === (t = Z[v]) || void 0 === t ? void 0 : t.displayName, "” will also turn off permissions that currently require it:"), E.createElement("ul", null, (0, Y.Z)(L).filter((function(e) {
+                }, E.createElement("div", null, E.createElement("p", null, "Turning off “", null === (t = Z[v]) || void 0 === t ? void 0 : t.displayName, "” will also turn off permissions that currently require it:"), E.createElement("ul", null, (0, Q.Z)(L).filter((function(e) {
                     return p.includes(e)
                 })).map((function(e) {
                     var t = Z[e];
@@ -1818,8 +1895,8 @@
                     }, "“", t.displayName, "”")
                 }))), E.createElement("strong", null, "Are you sure you want to turn this off?"))))
             };
-            var te = r(4965);
-            const re = function(e) {
+            var re = r(4965);
+            const ne = function(e) {
                 var t, r, n = e.user,
                     a = e.groups,
                     l = e.onGroupSelect,
@@ -1838,7 +1915,7 @@
                     className: "tw-mb-4 tw-min-h-[100px] tw-w-full"
                 }, E.createElement("p", {
                     className: "tw-mb-2"
-                }, "Select Group"), E.createElement(ne, {
+                }, "Select Group"), E.createElement(ae, {
                     className: "tw-w-full",
                     id: "group_select",
                     "aria-label": "Select a group",
@@ -1867,14 +1944,14 @@
                     value: null
                 }, "+ Create New Group")))
             };
-            var ne = (0, te.Z)("select", {
+            var ae = (0, re.Z)("select", {
                 target: "e1iz8sio0"
             })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", (function(e) {
                 return e.isError ? "#A8342E" : "#053c48"
             }), ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", (function(e) {
                 return e.isError ? "#A8342E" : "#086c84"
             }), ";}");
-            const ae = function(e) {
+            const le = function(e) {
                 var t = e.listing,
                     r = void 0 === t ? {} : t;
                 return E.createElement(m.JX, {
@@ -1883,15 +1960,16 @@
                     className: "tw-mb-5 tw-rounded-lg",
                     imageId: null == r ? void 0 : r.imageId,
                     alt: null == r ? void 0 : r.displayName,
-                    width: 150
+                    width: 150,
+                    fitToCover: !0
                 }), E.createElement("h4", null, "Subscription Created"), E.createElement("p", null, "Your subscription is ready! Make sure your group store is enabled to start selling."))
             };
-            var le = r(78076),
-                oe = r(25062),
-                ie = ["file"],
-                ce = ["imageId"];
+            var oe = r(78076),
+                ie = r(25062),
+                ce = ["file"],
+                se = ["imageId"];
 
-            function se(e, t) {
+            function ue(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -1902,18 +1980,18 @@
                 return r
             }
 
-            function ue(e) {
+            function me(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? se(Object(r), !0).forEach((function(t) {
+                    t % 2 ? ue(Object(r), !0).forEach((function(t) {
                         (0, l.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : se(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : ue(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            const me = function(e) {
+            const de = function(e) {
                 var t = e.onDataChange,
                     r = void 0 === t ? function() {} : t,
                     n = e.listing,
@@ -1931,29 +2009,29 @@
                     y = v[1],
                     x = E.useState((null == c ? void 0 : c.imageId) || (null == c ? void 0 : c.file) || null),
                     N = (0, o.Z)(x, 2),
-                    S = N[0],
+                    C = N[0],
                     k = N[1],
-                    C = E.useState(""),
-                    O = (0, o.Z)(C, 2),
+                    S = E.useState(""),
+                    O = (0, o.Z)(S, 2),
                     P = (O[0], O[1]),
                     I = (null == c ? void 0 : c.displayName) || (null == i ? void 0 : i.displayName) || "",
-                    j = E.useState(I),
-                    T = (0, o.Z)(j, 2),
-                    D = T[0],
-                    Z = T[1],
+                    T = E.useState(I),
+                    j = (0, o.Z)(T, 2),
+                    D = j[0],
+                    Z = j[1],
                     L = (null == c ? void 0 : c.description) || (null == i ? void 0 : i.description) || "",
                     A = E.useState(L),
                     F = (0, o.Z)(A, 2),
                     X = F[0],
-                    z = F[1],
-                    R = (null == c ? void 0 : c.priceTokens) || (null == i ? void 0 : i.priceTokens) || ((null == i ? void 0 : i.productType) === w.Pm.LISTING ? w.zD : void 0),
-                    U = E.useState(R),
+                    R = F[1],
+                    z = (null == c ? void 0 : c.priceTokens) || (null == i ? void 0 : i.priceTokens) || ((null == i ? void 0 : i.productType) === w.Pm.LISTING ? w.zD : void 0),
+                    U = E.useState(z),
                     J = (0, o.Z)(U, 2),
                     G = J[0],
-                    q = J[1],
-                    M = (null == c ? void 0 : c.listingVariants) || (null == i ? void 0 : i.listingVariants) || [],
+                    M = J[1],
+                    q = (null == c ? void 0 : c.listingVariants) || (null == i ? void 0 : i.listingVariants) || [],
                     B = E.useState(w.PN.map((function(e) {
-                        return M.find((function(t) {
+                        return q.find((function(t) {
                             return t.quantity === e
                         })) || {
                             quantity: e
@@ -1979,16 +2057,16 @@
                         r = t.name,
                         n = t.value;
                     switch (g((function(e) {
-                            return ue(ue({}, e), {}, (0, l.Z)({}, r, n))
+                            return me(me({}, e), {}, (0, l.Z)({}, r, n))
                         })), r) {
                         case "displayName":
                             Z(n);
                             break;
                         case "description":
-                            z(n);
+                            R(n);
                             break;
                         case "priceTokens":
-                            q(n);
+                            M(n);
                             break;
                         case "listingVariants":
                             _(n)
@@ -2015,20 +2093,20 @@
                             return i >= w.zD && i <= o
                         }))
                     }), [V, G]),
-                    se = function() {
+                    le = function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
                             t = e.map((function(t, r) {
                                 var n, a = (null === (n = e.slice(0, r).findLast((function(e) {
                                     return e.unitPriceTokens
                                 }))) || void 0 === n ? void 0 : n.unitPriceTokens) || G;
-                                return parseInt(t.unitPriceTokens, 10) === parseInt(a, 10) ? ue(ue({}, t), {}, {
+                                return parseInt(t.unitPriceTokens, 10) === parseInt(a, 10) ? me(me({}, t), {}, {
                                     unitPriceTokens: void 0
-                                }) : ue(ue({}, t), {}, {
+                                }) : me(me({}, t), {}, {
                                     sellerVariant: !0
                                 })
                             }));
                         _(t), g((function(e) {
-                            return ue(ue({}, e), {}, {
+                            return me(me({}, e), {}, {
                                 listingVariants: t.filter((function(e) {
                                     return void 0 !== e.unitPriceTokens
                                 }))
@@ -2036,10 +2114,10 @@
                         }))
                     };
                 E.useEffect((function() {
-                    se(V)
+                    le(V)
                 }), [G]);
                 return E.createElement(E.Fragment, null, E.createElement(m.JX, {
-                    className: "tw-@container/subInfo tw-gap-5"
+                    className: "tw-@container/subInfo tw-gap-5 tw-mb-2"
                 }, E.createElement(m.JX, {
                     className: "@sm/subInfo:tw-flex-row tw-gap-5"
                 }, E.createElement("button", {
@@ -2048,20 +2126,22 @@
                         P("subscription"), y(!0)
                     },
                     className: "tw-bg-transparent tw-border-0 tw-p-0 tw-rounded tw-relative tw-items-center tw-justify-center tw-flex"
-                }, !S && E.createElement(m.zx, {
+                }, !C && E.createElement(m.zx, {
                     containerClasses: "tw-rounded tw-absolute tw-flex-1"
                 }, E.createElement(m.$1, {
-                    icon: le.Vm,
+                    icon: oe.Vm,
                     className: "tw-mr-2"
                 }), E.createElement("span", null, "Upload Thumbnail")), E.createElement(m.pw, {
-                    imageId: S,
+                    imageId: C,
                     fitToCover: !0,
                     alt: "Subscription Thumbnail",
                     width: 285,
                     className: "tw-bg-grey tw-text-[#404C58]"
                 })), E.createElement(m.JX, {
                     className: "tw-gap-5 flex-1"
-                }, E.createElement(m.JX, null, E.createElement("label", {
+                }, E.createElement(m.JX, {
+                    className: "tw-gap-2"
+                }, E.createElement("label", {
                     htmlFor: "displayName"
                 }, "Display Name"), E.createElement(m.II, {
                     name: "displayName",
@@ -2071,7 +2151,9 @@
                     value: D
                 }), E.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, D.length, "/64")), E.createElement(m.JX, null, E.createElement("label", {
+                }, D.length, "/64")), E.createElement(m.JX, {
+                    className: "tw-gap-2"
+                }, E.createElement("label", {
                     htmlFor: "description"
                 }, "Description"), E.createElement(m.gx, {
                     name: "description",
@@ -2086,7 +2168,7 @@
                 }, E.createElement("label", {
                     htmlFor: "listingVariants"
                 }, "Monthly Price and Plans"), E.createElement(m.X2, {
-                    className: "tw-items-center tw-gap-2"
+                    className: "tw-items-center tw-gap-2 tw-bg-grey tw-px-3 tw-py-2 tw-rounded-lg"
                 }, E.createElement("label", {
                     htmlFor: "priceTokens",
                     className: "tw-text-nowrap"
@@ -2112,9 +2194,9 @@
                         u = parseInt(i, 10);
                     return E.createElement(m.JX, {
                         key: l,
-                        className: "tw-justify-center"
+                        className: "tw-justify-center tw-bg-grey tw-gap-2 tw-px-3 tw-py-2 tw-rounded-lg"
                     }, E.createElement(m.X2, {
-                        className: "tw-items-center tw-mb-2"
+                        className: "tw-items-center"
                     }, E.createElement("label", {
                         htmlFor: l,
                         className: "tw-whitespace-nowrap tw-mr-2"
@@ -2134,9 +2216,9 @@
                                 var t = e.index,
                                     r = e.unitPriceTokens,
                                     n = V.map((function(e) {
-                                        return ue({}, e)
+                                        return me({}, e)
                                     }));
-                                n[t].unitPriceTokens = r, se(n)
+                                n[t].unitPriceTokens = r, le(n)
                             }({
                                 index: t,
                                 unitPriceTokens: e.target.value.slice(0, w._C.toString(10).length)
@@ -2157,9 +2239,9 @@
                         durationType: re
                     }), ", ")), E.createElement("label", {
                         htmlFor: l
-                    }, E.createElement("strong", null, "Total"), " ", E.createElement(m.b5, null), (n * H * u || 0).toLocaleString(), u < c && E.createElement(E.Fragment, null, " ", E.createElement(oe.Z, {
+                    }, E.createElement("strong", null, "Total"), " ", E.createElement(m.b5, null), (n * H * u || 0).toLocaleString(), u < c && E.createElement(E.Fragment, null, " ", E.createElement(ie.Z, {
                         color: "success"
-                    }, Math.floor(100 - u / c * 100), "% off")), u === s && E.createElement(E.Fragment, null, " ", E.createElement(oe.Z, {
+                    }, Math.floor(100 - u / c * 100), "% off")), u === s && E.createElement(E.Fragment, null, " ", E.createElement(ie.Z, {
                         className: "tw-text-[#DADADA] tw-bg-gray-500",
                         title: "This bundle is using the same unit price as the ".concat(0 === t ? "standard price" : "previous bundle", ".")
                     }, "Max Price")))), !0 !== ae[t] && E.createElement("div", null, E.createElement("span", {
@@ -2169,7 +2251,7 @@
                     className: "tw-text-placeholder-text"
                 }, "Set pricing for your monthly subscription plans, and consider offering discounts to attract more subscribers by reducing the monthly rates."))), E.createElement(m.m6, {
                     preset: "subscription",
-                    image: S,
+                    image: C,
                     isOpen: h,
                     onClose: function() {
                         return y(!1)
@@ -2181,20 +2263,20 @@
                             l = void 0 === n ? null : n,
                             o = null !== r;
                         return null === r && null === l ? (k(null), void g((function(e) {
-                            return ue({
+                            return me({
                                 file: null,
                                 imageId: null
                             }, e)
                         }))) : o ? (k(r), void g((function(e) {
                             e.file;
-                            var t = (0, a.Z)(e, ie);
-                            return ue({
+                            var t = (0, a.Z)(e, ce);
+                            return me({
                                 imageId: r
                             }, t)
                         }))) : (k(l), void g((function(e) {
                             e.imageId;
-                            var t = (0, a.Z)(e, ce);
-                            return ue({
+                            var t = (0, a.Z)(e, se);
+                            return me({
                                 file: l
                             }, t)
                         })))
@@ -2204,10 +2286,10 @@
                     }
                 }))
             };
-            var de = ["imageId"],
-                we = ["file"];
+            var we = ["imageId"],
+                pe = ["file"];
 
-            function pe(e, t) {
+            function fe(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -2218,56 +2300,56 @@
                 return r
             }
 
-            function fe(e) {
+            function ge(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? pe(Object(r), !0).forEach((function(t) {
+                    t % 2 ? fe(Object(r), !0).forEach((function(t) {
                         (0, l.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : pe(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : fe(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            const ge = function(e) {
+            const be = function(e) {
                 var t = e.user,
                     r = void 0 === t ? null : t,
                     l = e.onClose,
                     c = void 0 === l ? function() {} : l,
                     N = (e.groupData, (0, h.I0)()),
-                    S = (0, y.s0)(),
+                    C = (0, y.s0)(),
                     k = (0, h.v9)((function(e) {
                         return e.myStoreCreateSubscription
                     })),
-                    C = (k.previousStep, k.currentStep),
+                    S = (k.previousStep, k.currentStep),
                     O = k.selectedGroup,
                     P = (0, p.XC)({
                         skip: r
                     }).data,
                     I = E.useState("Next"),
-                    j = (0, o.Z)(I, 2),
-                    T = j[0],
-                    D = j[1],
-                    L = E.useState(!1),
-                    F = (0, o.Z)(L, 2),
-                    X = F[0],
-                    z = F[1],
-                    R = E.useState(!1),
-                    U = (0, o.Z)(R, 2),
+                    T = (0, o.Z)(I, 2),
+                    j = T[0],
+                    D = T[1],
+                    Z = E.useState(!1),
+                    A = (0, o.Z)(Z, 2),
+                    X = A[0],
+                    R = A[1],
+                    z = E.useState(!1),
+                    U = (0, o.Z)(z, 2),
                     J = U[0],
                     G = U[1],
-                    q = E.useState({}),
-                    M = (0, o.Z)(q, 2),
-                    $ = M[0],
-                    V = M[1],
+                    M = E.useState({}),
+                    q = (0, o.Z)(M, 2),
+                    B = q[0],
+                    V = q[1],
                     _ = E.useState(null),
-                    Y = (0, o.Z)(_, 2),
-                    Q = Y[0],
-                    H = Y[1],
+                    W = (0, o.Z)(_, 2),
+                    Q = W[0],
+                    H = W[1],
                     K = (0, E.useState)(!0),
-                    te = (0, o.Z)(K, 2),
-                    ne = te[0],
-                    le = te[1],
+                    ee = (0, o.Z)(K, 2),
+                    re = ee[0],
+                    ae = ee[1],
                     oe = E.useState({
                         name: "",
                         shortCode: "",
@@ -2293,30 +2375,30 @@
                         productGroupAccessRemove: !1,
                         permissions: []
                     }),
-                    pe = (0, o.Z)(ue, 2),
-                    ge = pe[0],
-                    be = pe[1],
+                    me = (0, o.Z)(ue, 2),
+                    fe = me[0],
+                    be = me[1],
                     ve = E.useState(null),
                     Ee = (0, o.Z)(ve, 2),
                     he = Ee[0],
                     ye = Ee[1],
                     xe = E.useState(null),
                     Ne = (0, o.Z)(xe, 2),
-                    Se = Ne[0],
+                    Ce = Ne[0],
                     ke = Ne[1],
-                    Ce = E.useState([]),
-                    Oe = (0, o.Z)(Ce, 2),
+                    Se = E.useState([]),
+                    Oe = (0, o.Z)(Se, 2),
                     Pe = Oe[0],
                     Ie = Oe[1],
-                    je = r || P,
-                    Te = (0, f.dj)({
-                        userId: null == je ? void 0 : je.id
+                    Te = r || P,
+                    je = (0, f.dj)({
+                        userId: null == Te ? void 0 : Te.id
                     }, {
-                        skip: !je
+                        skip: !Te
                     }),
-                    De = Te.data,
+                    De = je.data,
                     Ze = void 0 === De ? [] : De,
-                    Le = Te.isLoading,
+                    Le = je.isLoading,
                     Ae = (0, f.mt)({
                         groupId: null == O ? void 0 : O.id
                     }, {
@@ -2325,14 +2407,14 @@
                     }),
                     Fe = Ae.data,
                     Xe = Ae.isLoading,
-                    ze = Ae.isError,
-                    Re = (0, f.mm)(),
-                    Ue = (0, o.Z)(Re, 2),
+                    Re = Ae.isError,
+                    ze = (0, f.mm)(),
+                    Ue = (0, o.Z)(ze, 2),
                     Je = Ue[0],
                     Ge = Ue[1],
-                    qe = (Ge.isSuccess, Ge.isLoading),
-                    Me = (Ge.isError, Ge.error, (0, f.Pt)()),
-                    Be = (0, o.Z)(Me, 2),
+                    Me = (Ge.isSuccess, Ge.isLoading),
+                    qe = (Ge.isError, Ge.error, (0, f.Pt)()),
+                    Be = (0, o.Z)(qe, 2),
                     $e = Be[0],
                     Ve = Be[1],
                     _e = (Ve.isSuccess, Ve.isLoading, Ve.isError, Ve.error, (0, g.Ij)()),
@@ -2358,30 +2440,30 @@
                     pt = dt[1];
                 pt.data, pt.isLoading, pt.isError, pt.error;
                 (0, E.useEffect)((function() {
-                    return D("Create Subscription" === C && X ? "Create" : "groupCreated" === C ? "Create Subscription Role" : "createdSubscription" === C ? "Go to Store Manager" : "Next")
-                }), [C, X]);
+                    return D("Create Subscription" === S && X ? "Create" : "groupCreated" === S ? "Create Subscription Role" : "createdSubscription" === S ? "Go to Store Manager" : "Next")
+                }), [S, X]);
                 var ft = function(e) {
                         se((function(t) {
-                            return fe(fe({}, t), e)
+                            return ge(ge({}, t), e)
                         }))
                     },
                     gt = function(e) {
                         be((function(t) {
-                            return fe(fe({}, t), e)
+                            return ge(ge({}, t), e)
                         }))
                     },
                     bt = function(e) {
                         ye((function(t) {
-                            return fe(fe({}, t), e)
+                            return ge(ge({}, t), e)
                         })), V((function(t) {
-                            var r = fe(fe({}, t), e);
+                            var r = ge(ge({}, t), e);
                             if (null === e.imageId) {
                                 r.imageId;
-                                return (0, a.Z)(r, de)
+                                return (0, a.Z)(r, we)
                             }
                             if (null === e.file) {
                                 r.file;
-                                return (0, a.Z)(r, we)
+                                return (0, a.Z)(r, pe)
                             }
                             return r
                         }))
@@ -2392,14 +2474,14 @@
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        e.t0 = C, e.next = "Create Subscription" === e.t0 ? 3 : "Create Group" === e.t0 ? 19 : "Define Group Rules" === e.t0 ? 22 : "groupCreated" === e.t0 ? 37 : "Create Subscription Role" === e.t0 ? 41 : "Subscription Role Permissions" === e.t0 ? 44 : "Define Subscription" === e.t0 ? 65 : "Add Products" === e.t0 ? 69 : "createdSubscription" === e.t0 ? 83 : 85;
+                                        e.t0 = S, e.next = "Create Subscription" === e.t0 ? 3 : "Create Group" === e.t0 ? 19 : "Define Group Rules" === e.t0 ? 22 : "groupCreated" === e.t0 ? 37 : "Create Subscription Role" === e.t0 ? 41 : "Subscription Role Permissions" === e.t0 ? 44 : "Define Subscription" === e.t0 ? 65 : "Add Products" === e.t0 ? 69 : "createdSubscription" === e.t0 ? 83 : 85;
                                         break;
                                     case 3:
                                         if (!X) {
                                             e.next = 7;
                                             break
                                         }
-                                        return N((0, v.Bq)("Create Group")), z(!1), e.abrupt("return");
+                                        return N((0, v.Bq)("Create Group")), R(!1), e.abrupt("return");
                                     case 7:
                                         return e.prev = 7, e.next = 10, et({
                                             groupId: O.groupId || O.id
@@ -2420,7 +2502,7 @@
                                     case 19:
                                         return N((0, v.Bq)("Define Group Rules")), N((0, v.IT)("Create Group")), e.abrupt("break", 87);
                                     case 22:
-                                        return z(!0), e.prev = 23, a = fe(fe({}, ce), {}, {
+                                        return R(!0), e.prev = 23, a = ge(ge({}, ce), {}, {
                                             shortCode: "" === ce.shortCode ? Q : ce.shortCode
                                         }), e.next = 27, Je(a).unwrap();
                                     case 27:
@@ -2443,7 +2525,7 @@
                                     case 44:
                                         return e.prev = 44, e.next = 47, $e({
                                             groupId: O.id,
-                                            data: ge
+                                            data: fe
                                         }).unwrap();
                                     case 47:
                                         return m = e.sent, e.next = 50, at({
@@ -2472,9 +2554,9 @@
                                             userId: P.id
                                         }), N((0, v.Bq)("Add Products")), N((0, v.IT)("Define Subscription")), e.abrupt("break", 87);
                                     case 69:
-                                        return e.prev = 69, e.next = 72, Ye(fe({
+                                        return e.prev = 69, e.next = 72, Ye(ge({
                                             listingId: he.id
-                                        }, $)).unwrap();
+                                        }, B)).unwrap();
                                     case 72:
                                         g = e.sent, ye(g.listing), N((0, v.Bq)("createdSubscription")), N((0, v.BQ)(!0)), e.next = 82;
                                         break;
@@ -2489,7 +2571,7 @@
                                     case 82:
                                         return e.abrupt("break", 87);
                                     case 83:
-                                        return S("/home/marketplace/storefront/stores"), e.abrupt("break", 87);
+                                        return C("/home/marketplace/storefront/stores"), e.abrupt("break", 87);
                                     case 85:
                                         return N((0, v.Bq)("Create Subscription")), e.abrupt("break", 87);
                                     case 87:
@@ -2507,32 +2589,32 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Et = Le || Xe || qe;
+                    Et = Le || Xe || Me;
                 return (0, E.useEffect)((function() {
-                    if ("Create Subscription" !== C) {
-                        if ("Create Group" === C) {
+                    if ("Create Subscription" !== S) {
+                        if ("Create Group" === S) {
                             var e = ce.name.length >= 3 && ce.name.length < 64 && "" !== ce.name,
                                 t = "" === ce.shortCode || ce.shortCode.length >= 3 && ce.shortCode.length <= 6;
                             return e && t ? !ce.name || ce.name.length >= 64 ? void G(!1) : G(!0) : void G(!1)
                         }
-                        if ("Define Subscription" === C) {
+                        if ("Define Subscription" === S) {
                             var r = (null == he ? void 0 : he.displayName.length) >= 3,
                                 n = (null == he ? void 0 : he.priceTokens) >= 100 && (null == he ? void 0 : he.priceTokens) <= 1e4 && Number.isInteger(parseFloat(null == he ? void 0 : he.priceTokens));
-                            return G(r && n && ne)
+                            return G(r && n && re)
                         }
-                        return G("Create Subscription Role" === C ? ge.name.length <= 64 && 0 !== ge.name.length : "Add Products" === C ? Pe.length > 0 && Pe.length <= w._1 : !Et)
+                        return G("Create Subscription Role" === S ? fe.name.length <= 64 && 0 !== fe.name.length : "Add Products" === S ? Pe.length > 0 && Pe.length <= w._1 : !Et)
                     }
                     G(null !== O || X)
-                }), [C, O, X, ce, ge, Et, he, ne]), E.createElement(m.JX, {
+                }), [S, O, X, ce, fe, Et, he, re]), E.createElement(m.JX, {
                     className: "tw-w-full"
-                }, "Create Subscription" === C && E.createElement(re, {
-                    user: je,
+                }, "Create Subscription" === S && E.createElement(ne, {
+                    user: Te,
                     groups: Ze,
                     onGroupSelect: function(e) {
-                        if (!e) return z(!0), void N((0, v.lr)(null));
-                        z(!1), N((0, v.lr)(e))
+                        if (!e) return R(!0), void N((0, v.lr)(null));
+                        R(!1), N((0, v.lr)(e))
                     }
-                }), "Create Group" === C && !O && E.createElement(Z, {
+                }), "Create Group" === S && !O && E.createElement(L, {
                     currentGroupData: ce,
                     onGroupDataChange: ft,
                     generateShortCodeFromName: function(e) {
@@ -2541,49 +2623,49 @@
                         H(r)
                     },
                     shortCodePlaceholder: Q
-                }), "Define Group Rules" === C && E.createElement(B, {
+                }), "Define Group Rules" === S && E.createElement($, {
                     onDataChange: ft
-                }), "groupCreated" === C && E.createElement(A, {
+                }), "groupCreated" === S && E.createElement(F, {
                     group: O
-                }), "Create Subscription Role" === C && E.createElement(W, {
+                }), "Create Subscription Role" === S && E.createElement(Y, {
                     onDataChange: gt,
-                    role: ge
-                }), "Subscription Role Permissions" === C && E.createElement(ee, {
+                    role: fe
+                }), "Subscription Role Permissions" === S && E.createElement(te, {
                     onDataChange: gt,
-                    role: ge,
+                    role: fe,
                     groupPermissions: Fe,
-                    isError: ze,
-                    roleInfo: ge,
+                    isError: Re,
+                    roleInfo: fe,
                     groupInfo: O
-                }), "Define Subscription" === C && he && E.createElement(me, {
+                }), "Define Subscription" === S && he && E.createElement(de, {
                     listing: he,
                     validateVariants: function(e) {
-                        return le(e)
+                        return ae(e)
                     },
                     onDataChange: bt,
-                    currentChanges: $
-                }), "Add Products" === C && E.createElement(x.Z, {
+                    currentChanges: B
+                }), "Add Products" === S && E.createElement(x.Z, {
                     products: ut,
                     listing: he,
-                    associatedProduct: Se,
+                    associatedProduct: Ce,
                     existingProducts: Pe,
                     onDataChange: bt,
                     onAddedProducts: function(e) {
                         return Ie(e)
                     }
-                }), "createdSubscription" === C && E.createElement(ae, {
+                }), "createdSubscription" === S && E.createElement(le, {
                     listing: he
                 }), E.createElement(m.X2, {
                     className: "tw-gap-2"
-                }, "groupCreated" !== C && E.createElement(m.zx, {
+                }, "groupCreated" !== S && E.createElement(m.zx, {
                     containerClasses: "tw-flex-1",
                     onClick: c,
                     neutral: !0
-                }, "createdSubscription" === C ? "Finish" : "Cancel"), E.createElement(m.zx, {
+                }, "createdSubscription" === S ? "Finish" : "Cancel"), E.createElement(m.zx, {
                     containerClasses: "tw-flex-1",
                     onClick: vt,
                     disabled: !J
-                }, T)))
+                }, j)))
             }
         },
         95146: (e, t, r) => {
@@ -2611,14 +2693,14 @@
                 y = r(40098),
                 x = r(95337),
                 N = r(98185),
-                S = r(35187),
+                C = r(35187),
                 k = r(95896),
-                C = r(76176),
+                S = r(76176),
                 O = r(22202),
                 P = r(16869),
                 I = r(68157),
-                j = r(32981);
-            const T = r.p + "8483efe53b992e51983c5f56d5ebb938550f39f1a72d1258f3b30353f7ad369c.svg",
+                T = r(32981);
+            const j = r.p + "8483efe53b992e51983c5f56d5ebb938550f39f1a72d1258f3b30353f7ad369c.svg",
                 D = r.p + "aab2cd88e8f1da1b8209f5e30357c5ba59c64949f9079b0f33e3d05609c6e1da.svg",
                 Z = r.p + "f3de2219aad5eed5eceeb782bdf669066f23fe34ed832e88d74183128849e5c0.svg";
             const L = function(e) {
@@ -2651,7 +2733,7 @@
                 }, d.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, d.createElement("img", {
-                    src: T,
+                    src: j,
                     alt: "Grow your community and build stronger connections."
                 })), d.createElement("h4", null, "Activate Your Fan Base"), d.createElement("p", {
                     className: "tw-text-light-grey"
@@ -2671,8 +2753,8 @@
             var A = r(44062),
                 F = r(18529),
                 X = r(76553),
-                z = r(6811),
-                R = r(64258),
+                R = r(6811),
+                z = r(64258),
                 U = r(45697),
                 J = r.n(U),
                 G = function(e) {
@@ -2680,7 +2762,7 @@
                         r = void 0 === t ? function() {} : t,
                         l = e.listing;
                     if (!l) return null;
-                    var o = (0, j.I0)(),
+                    var o = (0, T.I0)(),
                         i = (0, P.Ij)(),
                         c = (0, a.Z)(i, 2),
                         s = c[0],
@@ -2697,16 +2779,16 @@
                                                 active: !l.active
                                             }).unwrap();
                                         case 3:
-                                            t = e.sent, o((0, R.d)({
+                                            t = e.sent, o((0, z.d)({
                                                 title: "Listing ".concat(t.listing.active ? "published" : "unpublished"),
-                                                icon: z.f8,
+                                                icon: R.f8,
                                                 message: "".concat(l.displayName, " has been ").concat(t.listing.active ? "published" : "unpublished", "."),
                                                 color: "success",
                                                 timeout: 3e3
                                             })), r(), e.next = 12;
                                             break;
                                         case 8:
-                                            e.prev = 8, e.t0 = e.catch(0), console.error(e.t0), o((0, R.d)({
+                                            e.prev = 8, e.t0 = e.catch(0), console.error(e.t0), o((0, z.d)({
                                                 title: "Failed to ".concat(l.active ? "unpublish" : "publish", " listing"),
                                                 icon: X.eH,
                                                 message: null !== (n = null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== n ? n : "Something went wrong",
@@ -2751,8 +2833,8 @@
                 onClose: J().func,
                 listing: J().object
             };
-            const q = G;
-            var M = r(2909),
+            const M = G;
+            var q = r(2909),
                 B = r(27484),
                 $ = r.n(B),
                 V = r(97798);
@@ -2796,21 +2878,21 @@
                     },
                     className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(w ? "tw-flex" : "tw-hidden")
                 }, d.createElement(f.JX, {
-                    className: "tw-items-start tw-bg-button-bg tw-border-2 tw-w-full tw-text-left tw-weight-[500] tw-border-solid tw-border-button-border tw-rounded-lg tw-p-3"
+                    className: "tw-items-start tw-bg-button-bg-grey tw-border-2 tw-w-full tw-text-left tw-weight-[500] tw-border-solid tw-border-[#666666] tw-rounded-lg"
                 }, d.createElement("button", {
                     type: "button",
                     onClick: l,
-                    className: "tw-p-0 tw-w-full tw-text-left hover:tw-text-white tw-text-option-inactive tw-border-none tw-bg-transparent"
+                    className: "tw-text-left tw-px-3 tw-py-2 tw-w-full tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]"
                 }, "Edit"), d.createElement("button", {
                     type: "button",
                     onClick: s,
-                    className: "tw-p-0 tw-w-full tw-text-left hover:tw-text-white tw-text-option-inactive tw-border-none tw-bg-transparent"
+                    className: "tw-text-left tw-px-3 tw-py-2 tw-w-full tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]"
                 }, r ? "Move to Draft" : "Publish"), d.createElement("hr", {
-                    className: "tw-border-t-2 tw-border-solid tw-w-full tw-border-white tw-my-2"
+                    className: "tw-border-t-2 tw-m-0 tw-border-solid tw-w-full tw-border-white"
                 }), d.createElement("button", {
                     type: "button",
                     onClick: i,
-                    className: "tw-p-0 tw-w-full tw-text-left hover:tw-text-white tw-text-red tw-border-none tw-bg-transparent"
+                    className: "tw-px-3 tw-py-2 tw-text-red tw-text-left tw-border-none tw-w-full tw-bg-transparent hover:tw-bg-[#666666] hover:tw-text-white"
                 }, "Delete"))))
             };
             var W = function(e) {
@@ -2822,7 +2904,7 @@
                     o = void 0 === l ? function() {} : l,
                     i = e.publishListingCallback,
                     c = void 0 === i ? function() {} : i,
-                    s = (0, j.I0)();
+                    s = (0, T.I0)();
                 if (null === r) return null;
                 var u = r.id,
                     m = r.displayName,
@@ -2834,7 +2916,7 @@
                     key: u,
                     className: "tw-relative"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-2 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-mx-5"
+                    className: "tw-grid tw-gap-2 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-mx-5 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color"
                 }, d.createElement("div", {
                     className: "tw-flex tw-items-center tw-h-9 tw-truncate tw-my-2 @[800px]/my-subscriptions:tw-max-w-max tw-col-span-2"
                 }, m), d.createElement("div", {
@@ -2852,16 +2934,16 @@
                     neutral: !0,
                     onClick: function() {
                         navigator.clipboard.writeText(u).then((function() {
-                            s((0, R.d)({
+                            s((0, z.d)({
                                 title: "Copied subscription ID",
-                                icon: z.f8,
+                                icon: R.f8,
                                 message: "Subscription ID Copied!",
                                 color: "success",
                                 timeout: 3e3
                             }))
                         })).catch((function(e) {
                             var t, r;
-                            s((0, R.d)({
+                            s((0, z.d)({
                                 title: "Failed to copy subscription ID",
                                 icon: X.eH,
                                 message: null !== (t = null === (r = res.error.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Failed to copy subscription ID",
@@ -2871,7 +2953,7 @@
                         }))
                     }
                 }, d.createElement(f.$1, {
-                    icon: M.kZ,
+                    icon: q.kZ,
                     size: "1x"
                 })), d.createElement(_, {
                     active: null == r ? void 0 : r.active,
@@ -2940,12 +3022,12 @@
                 }],
                 te = [];
             const re = function() {
-                var e, t = (0, j.I0)(),
+                var e, t = (0, T.I0)(),
                     r = (0, p.s0)(),
                     n = (0, w.lr)(),
                     l = (0, a.Z)(n, 2),
                     o = l[0],
-                    i = (l[1], (0, j.v9)((function(e) {
+                    i = (l[1], (0, T.v9)((function(e) {
                         return e.myStoreCreateSubscription
                     }))),
                     c = i.previousStep,
@@ -2955,24 +3037,24 @@
                     g = (0, d.useState)(""),
                     b = (0, a.Z)(g, 2),
                     v = b[0],
-                    T = b[1],
+                    j = b[1],
                     D = (0, d.useState)(o.get("sortBy") || null),
                     Z = (0, a.Z)(D, 2),
                     X = Z[0],
-                    z = Z[1],
-                    R = (0, d.useState)(o.get("orderBy") || "descending"),
-                    U = (0, a.Z)(R, 2),
+                    R = Z[1],
+                    z = (0, d.useState)(o.get("orderBy") || "descending"),
+                    U = (0, a.Z)(z, 2),
                     J = U[0],
                     G = U[1],
-                    M = d.useState({}),
-                    B = (0, a.Z)(M, 2),
+                    q = d.useState({}),
+                    B = (0, a.Z)(q, 2),
                     $ = B[0],
                     V = B[1],
                     _ = d.useState(!1),
                     W = (0, a.Z)(_, 2),
                     H = W[0],
                     re = W[1],
-                    ne = ((0, C.Z)(v), (0, O.IB)().data),
+                    ne = ((0, S.Z)(v), (0, O.IB)().data),
                     ae = (0, d.useMemo)((function() {
                         return {
                             sellerId: ne.id,
@@ -3059,7 +3141,7 @@
                     },
                     ve = function(e) {
                         if (te.includes(e)) return function(e) {
-                            return be(e) ? G("descending" === J ? "ascending" : "descending") : (z(e), G("ascending"))
+                            return be(e) ? G("descending" === J ? "ascending" : "descending") : (R(e), G("ascending"))
                         }(e)
                     };
                 return d.createElement(d.Fragment, null, d.createElement(f.$4, null, "My Subscriptions"), 0 !== (null == oe ? void 0 : oe.length) || ce || 1 !== m ? d.createElement(d.Fragment, null, d.createElement(f.X2, {
@@ -3071,7 +3153,7 @@
                     className: "tw-w-full tw-max-w-[515px] tw-hidden",
                     value: v,
                     onChange: function(e) {
-                        return T(e.target.value)
+                        return j(e.target.value)
                     },
                     placeholder: "Search by name or listing ID",
                     disabled: !0
@@ -3095,7 +3177,7 @@
                 }, d.createElement("div", {
                     className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/subscriptions-heading"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-border-b tw-border-0 tw-border-solid tw-border-hr-line-color tw-pb-3 tw-mx-5"
+                    className: "tw-grid tw-gap-1 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color tw-pb-3 tw-mx-5"
                 }, ee.map((function(e) {
                     var t = e.label,
                         r = e.value,
@@ -3139,7 +3221,8 @@
                         deleteListingCallback: pe,
                         publishListingCallback: fe
                     })
-                })) : void 0), d.createElement("div", null, d.createElement(S.Z, {
+                })) : void 0), d.createElement("div", null, d.createElement(C.Z, {
+                    className: "tw-pt-2",
                     totalCount: null !== (e = null == oe ? void 0 : oe.length) && void 0 !== e ? e : 0,
                     showCurrentPageOnly: !0,
                     currentPage: m,
@@ -3168,7 +3251,8 @@
                     onBackCallback: c ? function() {
                         t((0, I.Bq)(c))
                     } : null,
-                    disableBackdropClick: !0
+                    disableBackdropClick: !0,
+                    backgroundColor: "#181B1F"
                 }, H && $.isCreating && d.createElement(F.default, {
                     user: ne,
                     subscription: $.data,
@@ -3177,7 +3261,7 @@
                 }), H && $.isEditing && d.createElement(A.default, {
                     onClose: ge,
                     listingId: $.data.id
-                }), H && $.isPublishing && d.createElement(q, {
+                }), H && $.isPublishing && d.createElement(M, {
                     onClose: ge,
                     listing: $.data
                 }), H && $.isDeleting && d.createElement(Q.default, {
@@ -3222,14 +3306,14 @@
                         w = a.purchaseDuration,
                         p = a.listingEarnings;
                     return d.createElement("div", {
-                        className: "tw-@container/sales-summary tw-bg-darker-grey tw-rounded-lg tw-mx-5 tw-p-5 tw-mb-4 ".concat(t ? "tw-block" : "tw-hidden")
+                        className: "tw-@container/sales-summary tw-bg-darker-grey tw-rounded-lg tw-p-5 tw-mb-4 ".concat(t ? "tw-block" : "tw-hidden")
                     }, d.createElement("h4", {
                         className: "heading tw-text-base tw-font-normal tw-text-light-grey"
                     }, d.createElement(f.$1, {
                         icon: ce.faCircleInfo,
                         size: "1x"
                     }), " Sales summary"), d.createElement("hr", {
-                        className: "tw-bg-[#242A31] tw-border-0 tw-h-[2px]"
+                        className: "tw-bg-hr-line-color tw-border-0 tw-h-[2px]"
                     }), d.createElement("div", {
                         className: "tw-grid tw-grid-cols-1 tw-gap-3 @sm/sales-summary:tw-grid-cols-2 @md/sales-summary:tw-grid-cols-3"
                     }, d.createElement("div", null, d.createElement("div", {
@@ -3323,11 +3407,11 @@
                 });
                 return d.createElement("div", {
                     key: u,
-                    className: "tw-@container/sales-row"
+                    className: "tw-@container/sales-row tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-4 @[590px]/sales-heading:tw-grid-cols-5 "
+                    className: "tw-grid tw-gap-1 tw-grid-cols-4 @[590px]/sales-heading:tw-grid-cols-5"
                 }, d.createElement("div", {
-                    className: "tw-pl-5 tw-h-9 tw-truncate tw-my-2 tw-max-w-[100px] @[800px]/sales-row:tw-max-w-max"
+                    className: "tw-h-9 tw-truncate tw-my-2 tw-max-w-[100px] @[800px]/sales-row:tw-max-w-max"
                 }, $()(m).format("L LT")), d.createElement("div", {
                     className: "tw-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/sales-row:tw-max-w-max"
                 }, i), d.createElement("div", {
@@ -3337,7 +3421,7 @@
                 }, d.createElement(f.b5, {
                     className: "tw-mr-1 tw-text-white"
                 }), " ", null !== (t = l.listingEarnings) && void 0 !== t ? t : "-"), d.createElement("div", {
-                    className: "tw-pr-6 tw-h-9 tw-truncate tw-my-2"
+                    className: "tw-h-9 tw-truncate tw-my-2"
                 }, d.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-between"
                 }, o, d.createElement(f.zx, {
@@ -3415,14 +3499,14 @@
                     k = (0, d.useState)("desc"),
                     P = (0, a.Z)(k, 2),
                     I = P[0],
-                    j = P[1],
-                    T = o ? Number(o) : 1,
-                    D = (0, C.Z)(g),
+                    T = P[1],
+                    j = o ? Number(o) : 1,
+                    D = (0, S.Z)(g),
                     Z = (0, O.IB)().data,
                     L = (0, ne.JJ)(pe(pe({
                         sellerId: Z.id,
                         n: 50,
-                        pageValue: T
+                        pageValue: j
                     }, y && {
                         sort: y
                     }), I && {
@@ -3434,22 +3518,22 @@
                     A = L.data,
                     F = L.isFetching,
                     X = L.isSuccess,
-                    z = L.isError,
-                    R = L.error,
+                    R = L.isError,
+                    z = L.error,
                     U = function(e) {
                         return y === e
                     },
                     J = function(e) {
                         if (ge.includes(e)) return function(e) {
-                            return U(e) ? j("desc" === I ? "asc" : "desc") : (x(e), j("asc"))
+                            return U(e) ? T("desc" === I ? "asc" : "desc") : (x(e), T("asc"))
                         }(e)
                     };
                 return d.createElement("div", null, d.createElement(f.$4, null, "My Sales"), d.createElement(ae, null), d.createElement("div", {
                     className: "tw-rounded-md tw-bg-grey tw-mt-5"
                 }, d.createElement("div", {
-                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/sales-heading"
+                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/sales-heading tw-px-5 tw-pt-3"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-4 @[590px]/sales-heading:tw-grid-cols-5 "
+                    className: "tw-grid tw-gap-1 tw-grid-cols-4 @[590px]/sales-heading:tw-grid-cols-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid tw-pb-2"
                 }, fe.map((function(e) {
                     var t = e.label,
                         r = e.value,
@@ -3457,7 +3541,7 @@
                         a = void 0 !== n && n;
                     return d.createElement("span", {
                         key: r,
-                        className: "\n                  ".concat(U(r) ? "tw-text-light-white" : "tw-text-light-grey", "\n                  ").concat(a ? "tw-hidden @[590px]/sales-heading:tw-block" : "", "\n                  ").concat(ge.includes(r) ? "tw-cursor-pointer" : "tw-cursor-auto", "\n                  tw-pt-3 tw-font-normal tw-text-base first:tw-pl-5 last:tw-pr-5\n                "),
+                        className: "\n                  ".concat(U(r) ? "tw-text-light-white" : "tw-text-light-grey", "\n                  ").concat(a ? "tw-hidden @[590px]/sales-heading:tw-block" : "", "\n                  ").concat(ge.includes(r) ? "tw-cursor-pointer" : "tw-cursor-auto", "\n                  tw-font-normal tw-text-base\n                "),
                         onClick: function() {
                             return J(r)
                         },
@@ -3477,18 +3561,18 @@
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, d.createElement(N.Z, {
                     loading: !0
-                })) : z ? d.createElement("div", {
+                })) : R ? d.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, d.createElement("p", null, "Error loading sales data:"), d.createElement("code", null, null !== (n = R.data.error.message) && void 0 !== n ? n : "Unknown error")) : "" === D && X ? A.purchases.map((function(e) {
+                }, d.createElement("p", null, "Error loading sales data:"), d.createElement("code", null, null !== (n = z.data.error.message) && void 0 !== n ? n : "Unknown error")) : "" === D && X ? A.purchases.map((function(e) {
                     return d.createElement(de, {
                         transactionData: e
                     })
                 })) : void 0), 0 === (null == A || null === (e = A.purchases) || void 0 === e ? void 0 : e.length) && d.createElement("div", {
                     className: "tw-flex tw-justify-center tw-p-10"
-                }, d.createElement("p", null, "There are no sales data to display")), d.createElement("div", null, d.createElement(S.Z, {
+                }, d.createElement("p", null, "There are no sales data to display")), d.createElement("div", null, d.createElement(C.Z, {
                     totalCount: null !== (t = null == A || null === (r = A.purchases) || void 0 === r ? void 0 : r.length) && void 0 !== t ? t : 0,
                     showCurrentPageOnly: !0,
-                    currentPage: T,
+                    currentPage: j,
                     pageSize: 50,
                     onPageChange: function(e) {
                         return l("/home/marketplace/storefront/revenue/mysales/page/".concat(e))
@@ -3562,14 +3646,14 @@
                     u = n.subscriptionFirstStarted,
                     m = s && $()(s).isAfter($()());
                 return null === n ? null : d.createElement("div", {
-                    className: "tw-@container/subscribers tw-bg-darker-grey tw-rounded-lg tw-mx-5 tw-p-5 tw-mb-4 ".concat(t ? "tw-block" : "tw-hidden")
+                    className: "tw-@container/subscribers tw-bg-darker-grey tw-rounded-lg tw-p-5 tw-mb-4 ".concat(t ? "tw-block" : "tw-hidden")
                 }, d.createElement("h4", {
                     className: "heading tw-text-base tw-font-normal tw-text-light-grey"
                 }, d.createElement(f.$1, {
                     icon: ce.faCircleInfo,
                     size: "1x"
                 }), " Subscription details"), d.createElement("hr", {
-                    className: "tw-bg-[#242A31] tw-border-0 tw-h-[2px]"
+                    className: "tw-bg-hr-line-color tw-border-0 tw-h-[2px]"
                 }), d.createElement("div", {
                     className: "tw-grid tw-grid-cols-1 tw-gap-3 @sm/subscribers:tw-grid-cols-1 @md/subscribers:tw-grid-cols-4"
                 }, d.createElement("div", null, d.createElement("div", {
@@ -3634,7 +3718,7 @@
                 }))
             };
             Ne.propTypes = {};
-            const Se = Ne;
+            const Ce = Ne;
             var ke = function(e) {
                 var t = e.subscriberData,
                     r = void 0 === t ? null : t,
@@ -3647,17 +3731,23 @@
                     s = (0, a.Z)(c, 2),
                     u = s[0],
                     m = s[1];
-                return d.createElement("div", null, d.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-3 "
+                return d.createElement("div", {
+                    className: "tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
                 }, d.createElement("div", {
-                    className: "tw-h-9 tw-pl-5 tw-my-2 tw-truncate"
+                    className: "tw-grid tw-gap-1 tw-grid-cols-3"
+                }, d.createElement("div", {
+                    className: "tw-h-9 tw-my-2 tw-truncate"
                 }, l), d.createElement("div", {
                     className: "tw-h-9 tw-my-2 tw-truncate"
                 }, o), d.createElement("div", {
-                    className: "tw-pr-6 tw-h-9 tw-truncate tw-my-2"
+                    className: " tw-h-9 tw-truncate tw-my-2"
                 }, d.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-between"
-                }, $()(i).format("L LT"), d.createElement(f.zx, {
+                }, d.createElement("span", {
+                    className: "tw-hidden md:tw-block"
+                }, $()(i).format("L LT")), d.createElement("span", {
+                    className: "tw-block md:tw-hidden"
+                }, $()(i).format("L")), d.createElement(f.zx, {
                     className: "tw-h-9 tw-w-10 tw-text-white tw-bg-button-bg-grey tw-border-none",
                     onClick: function() {
                         return m(!u)
@@ -3665,7 +3755,7 @@
                 }, d.createElement(f.$1, {
                     icon: u ? oe.mT : le.pt,
                     size: "1x"
-                }))))), d.createElement(Se, {
+                }))))), d.createElement(Ce, {
                     subscriberData: r,
                     isExpanded: u,
                     startCancelSubscriptionCallback: n
@@ -3674,7 +3764,7 @@
             ke.propTypes = {
                 transactionData: J().object
             };
-            const Ce = ke;
+            const Se = ke;
             const Oe = function(e) {
                 var t, r, n, l, o = (0, O.IB)().data,
                     i = (0, p.UO)().paginationPage,
@@ -3692,21 +3782,21 @@
                     k = (0, d.useState)("ALL"),
                     P = (0, a.Z)(k, 2),
                     I = (P[0], P[1], (0, d.useState)(null)),
-                    j = (0, a.Z)(I, 2),
-                    T = (j[0], j[1], (0, d.useState)("desc")),
-                    D = (0, a.Z)(T, 2),
+                    T = (0, a.Z)(I, 2),
+                    j = (T[0], T[1], (0, d.useState)("desc")),
+                    D = (0, a.Z)(j, 2),
                     Z = (D[0], D[1], (0, d.useState)("")),
                     L = (0, a.Z)(Z, 2),
                     A = L[0],
-                    F = (L[1], (0, C.Z)(A)),
+                    F = (L[1], (0, S.Z)(A)),
                     X = (0, d.useRef)(null),
-                    z = (0, ne.x)(),
-                    R = (0, a.Z)(z, 2),
-                    U = R[0],
-                    J = R[1],
+                    R = (0, ne.x)(),
+                    z = (0, a.Z)(R, 2),
+                    U = z[0],
+                    J = z[1],
                     G = J.isSuccess,
-                    q = J.isLoading,
-                    M = J.isError,
+                    M = J.isLoading,
+                    q = J.isError,
                     B = J.error,
                     $ = (0, ne.vb)({
                         sellerId: o.id
@@ -3717,11 +3807,11 @@
                     Y = $.isError,
                     Q = $.error;
                 (0, d.useEffect)((function() {
-                    G && !M && (v(!1), x(null))
-                }), [G, M]);
+                    G && !q && (v(!1), x(null))
+                }), [G, q]);
                 var H;
                 return d.createElement("div", null, d.createElement(f.$4, null, "My Subscribers"), d.createElement(ae, null), d.createElement(f.sm, {
-                    isLoading: q,
+                    isLoading: M,
                     isOpen: b,
                     confirmCallback: function() {
                         U({
@@ -3769,7 +3859,7 @@
                 }), d.createElement(xe, {
                     instalmentData: null == y ? void 0 : y.stacks,
                     showCancellable: !0
-                })), M && !G && d.createElement("div", {
+                })), q && !G && d.createElement("div", {
                     className: "tw-mt-3"
                 }, d.createElement("p", {
                     className: "tw-text-error-message-red tw-flex tw-flex-col"
@@ -3786,9 +3876,9 @@
                 })), d.createElement("div", {
                     className: "tw-rounded-md tw-bg-grey tw-mt-5"
                 }, d.createElement("div", {
-                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/sales-heading"
+                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/sales-heading tw-px-5 tw-pt-3"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-3"
+                    className: "tw-grid tw-gap-1 tw-grid-cols-3 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid tw-pb-2"
                 }, [{
                     label: "Subscriber",
                     value: ""
@@ -3803,7 +3893,7 @@
                         r = e.value;
                     return d.createElement("span", {
                         key: r,
-                        className: "\n                  tw-pt-3 tw-font-normal tw-text-base first:tw-pl-5 last:tw-pr-5 tw-cursor-auto\n                "
+                        className: "\n                  tw-font-normal tw-text-base tw-cursor-auto\n                "
                     }, t)
                 }))), d.createElement("div", {
                     className: "tw-group"
@@ -3814,7 +3904,7 @@
                 })) : Y ? d.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
                 }, d.createElement("p", null, "Error loading sales data:"), d.createElement("code", null, null !== (H = Q.data.error.message) && void 0 !== H ? H : "Unknown error")) : "" === F && W ? V.map((function(e) {
-                    return d.createElement(Ce, {
+                    return d.createElement(Se, {
                         key: "".concat(e.buyerId, "-").concat(e.listingId),
                         subscriberData: e,
                         startCancelSubscriptionCallback: function(e) {
@@ -3824,7 +3914,7 @@
                     })
                 })) : void 0), 0 === (null == V || null === (r = V.purchases) || void 0 === r ? void 0 : r.length) && d.createElement("div", {
                     className: "tw-flex tw-justify-center tw-p-10"
-                }, d.createElement("p", null, "There are no subscribers data to display")), d.createElement("div", null, d.createElement(S.Z, {
+                }, d.createElement("p", null, "There are no subscribers data to display")), d.createElement("div", null, d.createElement(C.Z, {
                     totalCount: null !== (n = null == V || null === (l = V.purchases) || void 0 === l ? void 0 : l.length) && void 0 !== n ? n : 0,
                     showCurrentPageOnly: !0,
                     currentPage: c,
@@ -3836,9 +3926,9 @@
             };
             var Pe = r(6655),
                 Ie = r(64358),
-                je = r(19933);
+                Te = r(19933);
 
-            function Te(e, t) {
+            function je(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -3852,9 +3942,9 @@
             function De(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Te(Object(r), !0).forEach((function(t) {
+                    t % 2 ? je(Object(r), !0).forEach((function(t) {
                         (0, v.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Te(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : je(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -3941,8 +4031,8 @@
                 }, d.createElement("li", null, "In-world effects, passes, key accesses"), d.createElement("li", null, "Group Subscriptions"), d.createElement("li", null, "And more!"))))
             };
             Xe.propTypes = {};
-            const ze = Xe,
-                Re = r.p + "8d069ec94cb9500c4bcd478e05f582f23cf9dadd4c8b7dd0114942d53c7acdcb.png";
+            const Re = Xe,
+                ze = r.p + "8d069ec94cb9500c4bcd478e05f582f23cf9dadd4c8b7dd0114942d53c7acdcb.png";
             var Ue = d.lazy((function() {
                     return Promise.all([r.e(1959), r.e(8051)]).then(r.bind(r, 71560))
                 })),
@@ -3952,36 +4042,36 @@
                 Ge = d.lazy((function() {
                     return r.e(267).then(r.bind(r, 20267))
                 })),
-                qe = d.lazy((function() {
+                Me = d.lazy((function() {
                     return r.e(8413).then(r.bind(r, 69026))
                 })),
-                Me = d.lazy((function() {
+                qe = d.lazy((function() {
                     return r.e(9028).then(r.bind(r, 99028))
                 }));
             const Be = function() {
-                var e, t, r, u, v, E, h, y, x, N, S, k, C = (0, w.lr)(),
-                    P = (0, a.Z)(C, 2),
+                var e, t, r, u, v, E, h, y, x, N, C, k, S = (0, w.lr)(),
+                    P = (0, a.Z)(S, 2),
                     I = P[0],
-                    j = P[1],
-                    T = d.useState(!1),
-                    D = (0, a.Z)(T, 2),
+                    T = P[1],
+                    j = d.useState(!1),
+                    D = (0, a.Z)(j, 2),
                     Z = D[0],
                     L = D[1],
                     A = d.useState(!1),
                     F = (0, a.Z)(A, 2),
                     X = F[0],
-                    z = F[1],
-                    R = Object.fromEntries(I.entries()),
+                    R = F[1],
+                    z = Object.fromEntries(I.entries()),
                     U = (0, O.XC)(),
                     J = U.data,
                     G = U.isLoading,
-                    q = null == J ? void 0 : J.id,
-                    M = (0, O.q7)(),
-                    B = M.data,
+                    M = null == J ? void 0 : J.id,
+                    q = (0, O.q7)(),
+                    B = q.data,
                     $ = void 0 === B ? [] : B,
-                    V = M.isFetching,
-                    _ = M.isError,
-                    W = M.error,
+                    V = q.isFetching,
+                    _ = q.isError,
+                    W = q.error,
                     Y = (0, ne.mW)(),
                     Q = (0, a.Z)(Y, 2),
                     H = Q[0],
@@ -4004,9 +4094,9 @@
                     de = ae.isError,
                     we = ae.error,
                     pe = (0, Pe.v$)({
-                        userId: q
+                        userId: M
                     }, {
-                        skip: !q || !ee || !ie,
+                        skip: !M || !ee || !ie,
                         refetchOnMountOrArgChange: !0
                     }),
                     fe = pe.data,
@@ -4015,31 +4105,31 @@
                     Ee = pe.error,
                     he = null == fe ? void 0 : fe.signed_tos,
                     ye = (0, Pe.gq)({
-                        userId: q
+                        userId: M
                     }, {
-                        skip: !q || !ee || !ie,
+                        skip: !M || !ee || !ie,
                         refetchOnMountOrArgChange: !0
                     }),
                     xe = (ye.data, ye.isLoading),
                     Ne = ye.isError,
-                    Se = ye.error,
+                    Ce = ye.error,
                     ke = (0, Pe.kN)({
-                        userId: q
+                        userId: M
                     }, {
-                        skip: !(q && ee && te && ie)
+                        skip: !(M && ee && te && ie)
                     }),
-                    Ce = ke.data,
-                    Te = void 0 === Ce ? {} : Ce,
-                    De = Te.eligible,
-                    Ze = Te.reason,
+                    Se = ke.data,
+                    je = void 0 === Se ? {} : Se,
+                    De = je.eligible,
+                    Ze = je.reason,
                     Fe = ke.isLoading,
                     Xe = ke.isError,
                     Be = ke.error,
                     $e = (0, Pe.pp)({
-                        userId: q,
+                        userId: M,
                         type: "earnings"
                     }, {
-                        skip: !q,
+                        skip: !M,
                         refetchOnMountOrArgChange: !0
                     }),
                     Ve = $e.data,
@@ -4054,7 +4144,7 @@
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (t = "complete" === (null == R ? void 0 : R.state), e.prev = 1, !t || te) {
+                                        if (t = "complete" === (null == z ? void 0 : z.state), e.prev = 1, !t || te) {
                                             e.next = 5;
                                             break
                                         }
@@ -4065,7 +4155,7 @@
                                     case 7:
                                         e.prev = 7, e.t0 = e.catch(1), console.error("Not able to onboard seller:", e.t0);
                                     case 10:
-                                        return e.prev = 10, j({}), e.finish(10);
+                                        return e.prev = 10, T({}), e.finish(10);
                                     case 13:
                                     case "end":
                                         return e.stop()
@@ -4103,11 +4193,11 @@
                     radius: "8"
                 })) : d.createElement(f.JX, {
                     className: "pb-5"
-                }, d.createElement(f.$4, null, "My Store"), "complete" === (null == R ? void 0 : R.state) && (null == R ? void 0 : R.redirectTo) && d.createElement(f.qX, {
+                }, d.createElement(f.$4, null, "My Store"), "complete" === (null == z ? void 0 : z.state) && (null == z ? void 0 : z.redirectTo) && d.createElement(f.qX, {
                     type: "success",
                     title: "You're ready to go!"
                 }, "Now you can ", d.createElement(w.rU, {
-                    to: null == R ? void 0 : R.redirectTo
+                    to: null == z ? void 0 : z.redirectTo
                 }, "pick up where you left off"), "."), et && d.createElement(f.qX, {
                     type: ie || de ? "error" : "warn",
                     title: ie || de ? "Something strange happened" : "Storefront Offline"
@@ -4123,11 +4213,11 @@
                     className: "m-0"
                 }, "Error looking up Tilia ToS acceptance: ", Ee.status, " ", null !== (v = null === (E = Ee.data) || void 0 === E ? void 0 : E.error.message) && void 0 !== v ? v : "Unknown error"), Ne && d.createElement("p", {
                     className: "m-0"
-                }, "Error looking up Tilia identity verification status: ", Se.status, " ", null !== (h = null === (y = Se.data) || void 0 === y ? void 0 : y.error.message) && void 0 !== h ? h : "Unknown error"), Xe && d.createElement("p", {
+                }, "Error looking up Tilia identity verification status: ", Ce.status, " ", null !== (h = null === (y = Ce.data) || void 0 === y ? void 0 : y.error.message) && void 0 !== h ? h : "Unknown error"), Xe && d.createElement("p", {
                     className: "m-0"
                 }, "Error looking up your eligibility to pay out: ", Be.status, " ", null !== (x = null === (N = Be.data) || void 0 === N ? void 0 : N.error.message) && void 0 !== x ? x : "Unknown error"), We && d.createElement("p", {
                     className: "m-0"
-                }, "Error looking up credit balance: ", Ye.status, " ", null !== (S = null === (k = Ye.data) || void 0 === k ? void 0 : k.error.message) && void 0 !== S ? S : "Unknown error")), Ke && ie && !de && d.createElement(f.qX, {
+                }, "Error looking up credit balance: ", Ye.status, " ", null !== (C = null === (k = Ye.data) || void 0 === k ? void 0 : k.error.message) && void 0 !== C ? C : "Unknown error")), Ke && ie && !de && d.createElement(f.qX, {
                     type: "warn",
                     title: "Storefront Maintenance"
                 }, d.createElement("p", {
@@ -4147,7 +4237,7 @@
                     className: "m-0"
                 }, "You have exceeded the payout limit. Please contact VRChat support for more information."), "cooldown" === Ze && d.createElement("p", {
                     className: "m-0"
-                }, "You have exceeded the daily payout transaction limit. Please wait 24 hours before making your next payout transaction.")), ee ? te ? d.createElement(d.Fragment, null, d.createElement(je.Z, {
+                }, "You have exceeded the daily payout transaction limit. Please wait 24 hours before making your next payout transaction.")), ee ? te ? d.createElement(d.Fragment, null, d.createElement(Te.Z, {
                     isSeller: !0,
                     isTiliaTOSAccepted: he,
                     returnPath: "/home/marketplace/storefront/dashboard",
@@ -4213,12 +4303,12 @@
                     element: d.createElement(Ue, null)
                 }), d.createElement(p.AW, {
                     path: "stores",
-                    element: d.createElement(qe, null)
+                    element: d.createElement(Me, null)
                 }), d.createElement(p.AW, {
                     path: "stores/:storeId",
-                    element: d.createElement(Me, {
+                    element: d.createElement(qe, {
                         onOrderStore: function() {
-                            return z(!X)
+                            return R(!X)
                         }
                     })
                 }), d.createElement(p.AW, {
@@ -4275,12 +4365,12 @@
                 }, d.createElement(f.X2, {
                     className: "tw-items-center tw-gap-6 tw-flex-wrap"
                 }, d.createElement("img", {
-                    src: Re,
+                    src: ze,
                     alt: "Storefront Robot",
                     className: "tw-mx-auto tw-w-[180px] tw-flex-1"
                 }), d.createElement("p", {
                     className: "tw-m-0 tw-font-bold tw-text-lg tw-flex-1"
-                }, "Thank you for completing the Tilia Process, now you are ready to sell and receive payouts!")))))) : d.createElement(Le, null) : d.createElement(ze, null))
+                }, "Thank you for completing the Tilia Process, now you are ready to sell and receive payouts!")))))) : d.createElement(Le, null) : d.createElement(Re, null))
             }
         },
         67978: (e, t, r) => {
@@ -4447,11 +4537,11 @@
                             }),
                             createProduct: e.mutation({
                                 queryFn: (r = (0, n.Z)(i().mark((function e(t, r, a, l) {
-                                    var o, c, s, m, d, w, p, f, g, b, v, E, h, y, x, N, S, k, C, O, P, I, j, T;
+                                    var o, c, s, m, d, w, p, f, g, b, v, E, h, y, x, N, C, k, S, O, P, I, T, j;
                                     return i().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (c = t.file, s = void 0 === c ? null : c, m = t.tag, d = void 0 === m ? "product" : m, w = t.displayName, p = t.description, f = void 0 === p ? "" : p, g = t.tags, b = void 0 === g ? [] : g, v = t.imageId, E = void 0 === v ? null : v, h = t.productType, y = t.useForSubscriberList, x = void 0 !== y && y, N = t.generateListing, S = t.priceTokens, k = t.duration, C = t.durationType, O = t.permanent, P = t.instant, null === s) {
+                                                if (c = t.file, s = void 0 === c ? null : c, m = t.tag, d = void 0 === m ? "product" : m, w = t.displayName, p = t.description, f = void 0 === p ? "" : p, g = t.tags, b = void 0 === g ? [] : g, v = t.imageId, E = void 0 === v ? null : v, h = t.productType, y = t.useForSubscriberList, x = void 0 !== y && y, N = t.generateListing, C = t.priceTokens, k = t.duration, S = t.durationType, O = t.permanent, P = t.instant, null === s) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -4495,7 +4585,7 @@
                                                     error: I.error
                                                 });
                                             case 11:
-                                                return j = (null == I || null === (o = I.data) || void 0 === o ? void 0 : o.id) || E, e.next = 14, l({
+                                                return T = (null == I || null === (o = I.data) || void 0 === o ? void 0 : o.id) || E, e.next = 14, l({
                                                     url: "products",
                                                     method: "POST",
                                                     body: u({
@@ -4505,27 +4595,27 @@
                                                         productType: h,
                                                         useForSubscriberList: x,
                                                         generateListing: N,
-                                                        priceTokens: S,
+                                                        priceTokens: C,
                                                         duration: k,
-                                                        durationType: C,
+                                                        durationType: S,
                                                         permanent: O,
                                                         instant: P
-                                                    }, j && {
-                                                        imageId: j
+                                                    }, T && {
+                                                        imageId: T
                                                     })
                                                 });
                                             case 14:
-                                                if (!(T = e.sent).error) {
+                                                if (!(j = e.sent).error) {
                                                     e.next = 17;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: T.error
+                                                    error: j.error
                                                 });
                                             case 17:
                                                 return e.abrupt("return", {
                                                     data: u({
-                                                        product: T.data
+                                                        product: j.data
                                                     }, (null == I ? void 0 : I.data) && {
                                                         file: I.data
                                                     })
@@ -4558,7 +4648,7 @@
                             }),
                             updateProduct: e.mutation({
                                 queryFn: (t = (0, n.Z)(i().mark((function e(t, r, n, a) {
-                                    var l, o, c, s, m, d, w, p, f, g, b, v, E, h, y, x, N, S;
+                                    var l, o, c, s, m, d, w, p, f, g, b, v, E, h, y, x, N, C;
                                     return i().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
@@ -4594,17 +4684,17 @@
                                                     })
                                                 });
                                             case 13:
-                                                if (!(S = e.sent).error) {
+                                                if (!(C = e.sent).error) {
                                                     e.next = 16;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: S.error
+                                                    error: C.error
                                                 });
                                             case 16:
                                                 return e.abrupt("return", {
                                                     data: u({
-                                                        product: S.data
+                                                        product: C.data
                                                     }, (null === (o = x) || void 0 === o ? void 0 : o.data) && {
                                                         file: x.data
                                                     })
@@ -4680,4 +4770,4 @@
         }
     }
 ]);
-//# sourceMappingURL=987d6235b4f38e91fe28b1ed2c1f96a9a118c53e2a930904095ecbb30b57ad7f.js.map
+//# sourceMappingURL=0038717ce6b09eb16ea7b61cbe9789c863e16da5502c77df3fe18dd295ab8a15.js.map

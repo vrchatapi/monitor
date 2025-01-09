@@ -45,7 +45,9 @@
                     imageId: null == r ? void 0 : r.imageId,
                     alt: null == r ? void 0 : r.displayName,
                     width: 150,
-                    fitToCover: !0
+                    fitToCover: !0,
+                    containerColor: "#252A30",
+                    iconColor: "#404C58"
                 }), y.createElement("h4", null, "Listing Created!"), y.createElement("p", null, "You can edit and manage your listings from the ", y.createElement(h.rU, {
                     to: "/home/marketplace/storefront/stores"
                 }, "Store Manager"), "."))
@@ -173,9 +175,9 @@
                     U = (0, m.G4)(),
                     F = (0, i.Z)(U, 2),
                     J = F[0],
-                    H = F[1],
-                    A = (H.isSuccess, H.isLoading),
-                    Q = (H.isError, H.error, (0, f.Ci)({
+                    A = F[1],
+                    H = (A.isSuccess, A.isLoading),
+                    Q = (A.isError, A.error, (0, f.Ci)({
                         sellerId: x.id,
                         managementPov: !0
                     }, {
@@ -252,7 +254,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ae = W || ee || A,
+                    ae = W || ee || H,
                     ie = (0, y.useMemo)((function() {
                         if ("Create Listing (1/3)" === P) return null !== B.listingType;
                         if ("Create Listing (2/3)" === P) {
@@ -285,6 +287,7 @@
                     className: "tw-mt-8 tw-gap-3"
                 }, k && "listingCreated" !== P ? y.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
+                    neutral: !0,
                     onClick: k ? re : null
                 }, "Back") : "listingCreated" === P && r ? y.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
@@ -295,6 +298,7 @@
                     neutral: !0
                 }, "Cancel") : y.createElement(u.zx, {
                     containerClasses: "tw-flex-1",
+                    neutral: !0,
                     onClick: function() {
                         return T("/home/marketplace/storefront/stores")
                     }
@@ -444,4 +448,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8146799c7037a63ceaed6cb55eb9d557908ddd7e4019f74442a04a44490700b6.js.map
+//# sourceMappingURL=e40edb7488047fc9561cd50b246dca133d48e570e9616c3890e1448ed7d8d5f8.js.map

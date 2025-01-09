@@ -153,13 +153,13 @@
                     onClick: function() {
                         return N(0)
                     },
-                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(0 === j ? "tw-border-teal-accent" : "tw-border-transparent")
+                    className: "tw-bg-transparent tw-py-2 tw-px-0 tw-border-0 tw-border-b-2 tw-border-solid ".concat(0 === j ? "tw-border-teal-accent" : "tw-border-transparent")
                 }, "Listing Information"), S.createElement("button", {
                     type: "button",
                     onClick: function() {
                         return N(1)
                     },
-                    className: "tw-bg-transparent tw-py-2 tw-border-0 tw-border-b-2 tw-border-solid ".concat(1 === j ? "tw-border-solid tw-border-teal-accent" : "tw-border-transparent")
+                    className: "tw-bg-transparent tw-py-2 tw-px-0 tw-border-0 tw-border-b-2 tw-border-solid ".concat(1 === j ? "tw-border-solid tw-border-teal-accent" : "tw-border-transparent")
                 }, "Store Availability")), S.createElement("div", {
                     className: "tw-w-full tw-relative"
                 }, 0 === j && S.createElement(h.Z, {
@@ -344,4 +344,4 @@
         }
     }
 ]);
-//# sourceMappingURL=50da21c77159de626edce8db9fd3e4dbdf3ea9a1154700495e07da6a8d8f4bf8.js.map
+//# sourceMappingURL=d40994546e4c5a9ef58e0dcd52362b2791d369ad720f07bd4f7120c26d5cce21.js.map

@@ -3,7 +3,7 @@
     [8303], {
         9401: (e, t, n) => {
             n.d(t, {
-                Z: () => Z
+                Z: () => D
             });
             var a = n(42138),
                 r = n(45987),
@@ -22,14 +22,15 @@
                 b = n(95896),
                 h = n(12752),
                 E = n(45697),
-                y = n.n(E),
-                v = n(67294),
+                v = n.n(E),
+                y = n(67294),
                 N = n(32981),
-                x = ["file", "imageId"],
-                C = ["file"],
-                k = ["imageId"];
+                x = n(65061),
+                C = ["file", "imageId"],
+                k = ["file"],
+                I = ["imageId"];
 
-            function I(e, t) {
+            function X(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -40,188 +41,201 @@
                 return n
             }
 
-            function X(e) {
+            function T(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? I(Object(n), !0).forEach((function(t) {
+                    t % 2 ? X(Object(n), !0).forEach((function(t) {
                         (0, l.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : I(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : X(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var T = function(e) {
+            var Z = function(e) {
                 var t = e.onDataChange,
                     n = void 0 === t ? function() {} : t,
                     E = e.products,
-                    y = void 0 === E ? [] : E,
-                    I = e.productsLoading,
-                    T = void 0 !== I && I,
-                    Z = e.listingType,
-                    D = e.currentListing,
-                    J = void 0 === D ? {} : D,
-                    O = e.isEditing,
-                    L = void 0 !== O && O,
-                    S = (0, N.I0)(),
-                    j = (0, v.useState)(X({
-                        displayName: (null == J ? void 0 : J.displayName) || "",
-                        description: (null == J ? void 0 : J.description) || "",
-                        priceTokens: (null == J ? void 0 : J.priceTokens) || 100,
-                        products: (null == J ? void 0 : J.products) || []
-                    }, Z === b.ft.DURATION && {
-                        duration: (null == J ? void 0 : J.duration) || 1,
-                        durationType: (null == J ? void 0 : J.durationType) || b.PG.DAY
+                    v = void 0 === E ? [] : E,
+                    X = e.productsLoading,
+                    Z = void 0 !== X && X,
+                    D = e.listingType,
+                    L = e.currentListing,
+                    O = void 0 === L ? {} : L,
+                    J = e.isEditing,
+                    S = void 0 !== J && J,
+                    j = (0, N.I0)(),
+                    P = (0, y.useState)(T({
+                        displayName: (null == O ? void 0 : O.displayName) || "",
+                        description: (null == O ? void 0 : O.description) || "",
+                        priceTokens: (null == O ? void 0 : O.priceTokens) || 100,
+                        products: (null == O ? void 0 : O.products) || []
+                    }, D === b.ft.DURATION && {
+                        duration: (null == O ? void 0 : O.duration) || 1,
+                        durationType: (null == O ? void 0 : O.durationType) || b.PG.DAY
                     })),
-                    P = (0, c.Z)(j, 2),
-                    F = P[0],
-                    A = P[1],
-                    z = (0, v.useState)({}),
-                    U = (0, c.Z)(z, 2),
-                    R = U[0],
-                    V = U[1],
-                    $ = (0, v.useMemo)((function() {
-                        return T || !J.products ? [] : y.filter((function(e) {
-                            return J.products.includes(e.id)
+                    F = (0, c.Z)(P, 2),
+                    A = F[0],
+                    R = F[1],
+                    U = (0, y.useState)({}),
+                    z = (0, c.Z)(U, 2),
+                    V = z[0],
+                    $ = z[1],
+                    _ = (0, y.useMemo)((function() {
+                        return Z || !O.products ? [] : v.filter((function(e) {
+                            return O.products.includes(e.id)
                         }))
-                    }), [J.products, T]),
-                    _ = (0, v.useState)(!1),
-                    B = (0, c.Z)(_, 2),
-                    Y = B[0],
-                    q = B[1],
-                    M = (0, v.useState)((null == J ? void 0 : J.file) || (null == J ? void 0 : J.imageId) || null),
-                    G = (0, c.Z)(M, 2),
-                    H = G[0],
-                    K = G[1],
-                    Q = v.useState(""),
-                    W = (0, c.Z)(Q, 2),
-                    ee = W[0],
-                    te = W[1],
-                    ne = v.useState([]),
-                    ae = (0, c.Z)(ne, 2),
-                    re = ae[0],
-                    le = ae[1],
-                    ce = v.useState(!1),
-                    ie = (0, c.Z)(ce, 2),
-                    oe = ie[0],
-                    se = ie[1],
-                    me = (0, v.useRef)(null),
-                    ue = (0, h.Nr)(ee);
-                (0, v.useEffect)((function() {
-                    n(F)
-                }), [F]), (0, v.useEffect)((function() {
-                    le($)
-                }), [$]);
-                (0, v.useEffect)((function() {
-                    return document.addEventListener("mousedown", we),
+                    }), [O.products, Z]),
+                    B = (0, y.useState)(!1),
+                    Y = (0, c.Z)(B, 2),
+                    q = Y[0],
+                    M = Y[1],
+                    G = (0, y.useState)((null == O ? void 0 : O.file) || (null == O ? void 0 : O.imageId) || null),
+                    H = (0, c.Z)(G, 2),
+                    K = H[0],
+                    Q = H[1],
+                    W = y.useState(""),
+                    ee = (0, c.Z)(W, 2),
+                    te = ee[0],
+                    ne = ee[1],
+                    ae = y.useState([]),
+                    re = (0, c.Z)(ae, 2),
+                    le = re[0],
+                    ce = re[1],
+                    ie = y.useState(!1),
+                    oe = (0, c.Z)(ie, 2),
+                    se = oe[0],
+                    me = oe[1],
+                    ue = (0, y.useRef)(null),
+                    de = (0, y.useState)(!1),
+                    we = (0, c.Z)(de, 2),
+                    pe = we[0],
+                    ge = we[1],
+                    fe = (0, y.useRef)(null),
+                    be = (0, h.Nr)(te);
+                (0, y.useEffect)((function() {
+                    n(A)
+                }), [A]), (0, y.useEffect)((function() {
+                    ce(_)
+                }), [_]);
+                (0, y.useEffect)((function() {
+                    return document.addEventListener("mousedown", Ee),
                         function() {
-                            document.removeEventListener("mousedown", we)
+                            document.removeEventListener("mousedown", Ee)
                         }
-                }), []);
-                var de = function(e) {
+                }), []), (0, y.useEffect)((function() {
+                    var e = function(e) {
+                        fe.current && !fe.current.contains(e.target) && ge(!1)
+                    };
+                    return pe ? document.addEventListener("mousedown", e) : document.removeEventListener("mousedown", e),
+                        function() {
+                            document.removeEventListener("mousedown", e)
+                        }
+                }), [pe]);
+                var he = function(e) {
                         var t = e.target,
                             n = t.name,
                             a = t.value;
-                        A((function(e) {
-                            return X(X({}, e), {}, (0, l.Z)({}, n, a))
-                        })), V(X(X({}, R), {}, (0, l.Z)({}, n, e.target.checkValidity())))
+                        R((function(e) {
+                            return T(T({}, e), {}, (0, l.Z)({}, n, a))
+                        })), $(T(T({}, V), {}, (0, l.Z)({}, n, e.target.checkValidity())))
                     },
-                    we = function(e) {
-                        me.current && !me.current.contains(e.target) && se(!1)
+                    Ee = function(e) {
+                        ue.current && !ue.current.contains(e.target) && me(!1)
                     },
-                    pe = v.useMemo((function() {
-                        if (!y) return [];
-                        var e = re.map((function(e) {
+                    ve = y.useMemo((function() {
+                        if (!v) return [];
+                        var e = le.map((function(e) {
                             return e.id
                         }));
-                        return y.filter((function(t) {
-                            return !(null != e && e.includes(t.id)) && t.productType !== b.Pm.ROLE && (!ue || (t.id.toLowerCase().includes(ue.trim().toLowerCase()) || t.displayName.toLowerCase().includes(ue.trim().toLowerCase())))
+                        return v.filter((function(t) {
+                            return !(null != e && e.includes(t.id)) && t.productType !== b.Pm.ROLE && (!be || (t.id.toLowerCase().includes(be.trim().toLowerCase()) || t.displayName.toLowerCase().includes(be.trim().toLowerCase())))
                         })) || []
-                    }), [re, y, ue]);
-                return v.createElement(v.Fragment, null, T && v.createElement("div", {
+                    }), [le, v, be]);
+                return y.createElement(y.Fragment, null, Z && y.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, v.createElement(g.Z, {
+                }, y.createElement(g.Z, {
                     loading: !0
-                })), !T && v.createElement(p.JX, null, v.createElement("p", {
+                })), !Z && y.createElement(p.JX, null, y.createElement("p", {
                     className: "tw-text-lg tw-font-bold tw-mb-2"
-                }, "Add Products"), v.createElement(p.JX, {
+                }, "Add Products"), y.createElement(p.JX, {
                     className: "tw-relative",
-                    ref: me
-                }, v.createElement("p", {
+                    ref: ue
+                }, y.createElement("p", {
                     className: "tw-mb-2"
-                }, "Choose the products that buyers of this listing gain access to."), v.createElement(p.II, {
+                }, "Choose the products that buyers of this listing gain access to."), y.createElement(p.II, {
                     className: "tw-mb-2",
-                    value: ee,
+                    value: te,
                     onChange: function(e) {
-                        return te(e.target.value)
+                        return ne(e.target.value)
                     },
                     onFocus: function() {
-                        se(!0)
+                        me(!0)
                     },
-                    disabled: re.length >= b._1
-                }), v.createElement("small", {
+                    disabled: le.length >= b._1
+                }), y.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-5"
-                }, "You must choose 1 to ", b._1, " products."), oe && re.length < b._1 && v.createElement("div", {
+                }, "You must choose 1 to ", b._1, " products."), se && le.length < b._1 && y.createElement("div", {
                     role: "list",
                     "aria-label": "Available Products List",
                     className: "tw-bottom-[120px] tw-border-2 tw-border-solid tw-rounded-lg tw-border-button-bg tw-bg-[#07242B] tw-p-5 tw-gap-3 tw-max-h-[400px] tw-h-[400px] tw-overflow-y-auto tw-absolute tw-z-10 tw-w-full tw-top-[135px] sm:tw-top-[110px] tw-min-h-[200px]"
-                }, v.createElement("p", {
+                }, y.createElement("p", {
                     className: "tw-mb-3"
-                }, "Available Products"), pe.length ? pe.map((function(e) {
-                    return v.createElement(v.Fragment, {
+                }, "Available Products"), ve.length ? ve.map((function(e) {
+                    return y.createElement(y.Fragment, {
                         key: e.id
-                    }, v.createElement(p.X2, {
+                    }, y.createElement(p.X2, {
                         product: e,
                         className: "tw-gap-3 tw-flex-wrap"
-                    }, v.createElement(p.pw, {
+                    }, y.createElement(p.pw, {
                         imageId: e.imageId,
                         alt: e.displayName,
                         fallbackSrc: f,
                         width: 100,
                         fitToCover: !0
-                    }), v.createElement(p.JX, {
+                    }), y.createElement(p.JX, {
                         className: "tw-flex-1"
-                    }, v.createElement("p", {
+                    }, y.createElement("p", {
                         className: "tw-mb-0 tw-text-highlight tw-font-bold"
-                    }, e.displayName), v.createElement("p", {
+                    }, e.displayName), y.createElement("p", {
                         className: "tw-mb-0 tw-text-placeholder-text"
-                    }, e.description)), v.createElement(p.zx, {
+                    }, e.description)), y.createElement(p.zx, {
                         type: "button",
                         containerClasses: "tw-w-full sm:tw-w-[160px] tw-self-center",
                         onClick: function(t) {
                             var n;
-                            n = e, le([].concat((0, a.Z)(re), [n])), A((function(e) {
-                                return X(X({}, e), {}, {
+                            n = e, ce([].concat((0, a.Z)(le), [n])), R((function(e) {
+                                return T(T({}, e), {}, {
                                     products: [].concat((0, a.Z)(e.products), [n.id])
                                 })
-                            })), se(!1), te("")
+                            })), me(!1), ne("")
                         }
-                    }, "Add")), v.createElement("hr", {
+                    }, "Add")), y.createElement("hr", {
                         className: "tw-bg-[#07242B] tw-font-medium tw-border tw-border-solid"
                     }))
-                })) : v.createElement("div", null, v.createElement("em", null, "No matching products!")))), v.createElement(p.JX, {
-                    className: "tw-gap-2 tw-max-h-[196px] tw-overflow-y-auto ".concat(0 !== re.length && "tw-mb-5")
-                }, 0 !== re.length && re.map((function(e) {
-                    return v.createElement(p.X2, {
+                })) : y.createElement("div", null, y.createElement("em", null, "No matching products!")))), y.createElement(p.JX, {
+                    className: "tw-gap-2 tw-max-h-[196px] tw-overflow-y-auto ".concat(0 !== le.length && "tw-mb-5")
+                }, 0 !== le.length && le.map((function(e) {
+                    return y.createElement(p.X2, {
                         key: e.id,
                         className: "tw-px-5 tw-py-3 tw-gap-5 tw-items-center tw-bg-grey tw-rounded-lg tw-select-none"
-                    }, v.createElement(p.X2, {
+                    }, y.createElement(p.X2, {
                         className: "tw-items-center tw-gap-2 tw-flex-1"
-                    }, v.createElement(p.pw, {
+                    }, y.createElement(p.pw, {
                         imageId: null == e ? void 0 : e.imageId,
                         alt: null == e ? void 0 : e.displayName,
                         fallbackSrc: f,
                         width: 36
-                    }), v.createElement("p", {
-                        className: "tw-text-highlight tw-font-bold tw-mb-0"
-                    }, e.displayName)), v.createElement(p.zx, {
+                    }), y.createElement("p", {
+                        className: "tw-text-white tw-font-bold tw-mb-0"
+                    }, e.displayName)), y.createElement(p.zx, {
                         type: "button",
                         onClick: function() {
                             return function(e) {
-                                le(re.filter((function(t) {
+                                ce(le.filter((function(t) {
                                     return t.id !== e.id
-                                }))), A((function(t) {
-                                    return X(X({}, t), {}, {
+                                }))), R((function(t) {
+                                    return T(T({}, t), {}, {
                                         products: t.products.filter((function(t) {
                                             return t !== e.id
                                         }))
@@ -231,91 +245,110 @@
                         },
                         neutral: !0,
                         className: "tw-w-9 tw-h-9"
-                    }, v.createElement(p.$1, {
+                    }, y.createElement(p.$1, {
                         icon: m.$
                     })))
-                }))), v.createElement("hr", {
-                    className: "tw-border-2 tw-border-solid tw-mb-5 tw-mt-0"
-                }), v.createElement("p", {
+                }))), y.createElement("hr", {
+                    className: "tw-border-2 tw-border-[#404c58] tw-border-solid tw-mb-5 tw-mt-0"
+                }), y.createElement("p", {
                     className: "tw-text-lg tw-font-bold"
-                }, "Listing Details"), v.createElement(p.JX, {
+                }, "Listing Details"), y.createElement(p.JX, {
                     className: "tw-gap-5"
-                }, v.createElement(p.JX, {
+                }, y.createElement(p.JX, {
                     className: "md:tw-flex-row tw-gap-5"
-                }, v.createElement(p.JX, {
+                }, y.createElement(p.JX, {
                     className: "tw-gap-5"
-                }, v.createElement("button", {
+                }, y.createElement("button", {
                     type: "button",
                     onClick: function() {
-                        q(!0)
+                        M(!0)
                     },
                     className: "tw-bg-transparent tw-border-0 tw-p-0 tw-rounded tw-relative tw-items-center tw-justify-center tw-flex"
-                }, !H && v.createElement(p.zx, {
+                }, !K && y.createElement(p.zx, {
                     containerClasses: "tw-rounded tw-absolute tw-flex-1"
-                }, v.createElement(p.$1, {
+                }, y.createElement(p.$1, {
                     icon: s.Vm,
                     className: "tw-mr-2"
-                }), v.createElement("span", null, "Upload Thumbnail")), v.createElement(p.pw, {
-                    imageId: H,
+                }), y.createElement("span", null, "Upload Thumbnail")), y.createElement(p.pw, {
+                    imageId: K,
                     fitToCover: !0,
                     alt: "Subscription Thumbnail",
                     width: 285,
                     className: "tw-bg-grey tw-text-[#404C58]"
-                }))), v.createElement(p.JX, {
+                }))), y.createElement(p.JX, {
                     className: "tw-gap-5 tw-flex-1 md:tw-justify-between"
-                }, v.createElement(p.JX, null, v.createElement("label", {
-                    htmlFor: "displayName",
-                    className: "tw-mb-2"
-                }, "Name"), v.createElement(p.II, {
+                }, y.createElement(p.JX, {
+                    className: "tw-gap-2"
+                }, y.createElement("label", {
+                    htmlFor: "displayName"
+                }, "Name"), y.createElement(p.II, {
                     name: "displayName",
                     id: "displayName",
                     type: "text",
                     label: "Name",
                     maxLength: 64,
-                    value: F.displayName,
-                    onChange: de
-                }), v.createElement("small", {
+                    value: A.displayName,
+                    onChange: he
+                }), y.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, F.displayName.length, "/64")), v.createElement(p.JX, null, v.createElement("label", {
-                    htmlFor: "description",
-                    className: "tw-mb-2"
-                }, "Description"), v.createElement(p.gx, {
+                }, A.displayName.length, "/64")), y.createElement(p.JX, {
+                    className: "tw-gap-2"
+                }, y.createElement("label", {
+                    htmlFor: "description"
+                }, "Description"), y.createElement(p.gx, {
                     inputClassName: "tw-h-[120px]",
                     maxLength: 256,
                     id: "description",
                     name: "description",
                     label: "Description",
-                    value: F.description,
-                    onChange: de
-                }), v.createElement("small", {
+                    value: A.description,
+                    onChange: he
+                }), y.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, F.description.length, "/256")))), v.createElement(p.JX, {
+                }, A.description.length, "/256")))), y.createElement(p.JX, {
                     className: "tw-gap-5"
-                }, L && v.createElement(p.JX, null, v.createElement("label", {
+                }, S && y.createElement(p.JX, {
+                    className: "tw-gap-2"
+                }, y.createElement("label", {
                     htmlFor: "id",
-                    className: "tw-mb-2 tw-flex tw-flex-row"
-                }, "Listing ID", v.createElement("div", {
-                    className: "tw-group tw-relative tw-ml-1"
-                }, v.createElement(p.$1, {
+                    className: "tw-flex tw-flex-row"
+                }, "Listing ID", y.createElement("div", {
+                    className: "tw-group tw-relative tw-ml-1",
+                    ref: fe
+                }, y.createElement("button", {
+                    id: "listingIdTooltip",
+                    type: "button",
+                    className: "tw-bg-transparent tw-border-none",
+                    onClick: function() {
+                        return ge(!pe)
+                    },
+                    "aria-label": "Listing ID tooltip"
+                }, y.createElement(p.$1, {
                     icon: o.sq,
                     className: "tw-text-light-grey"
-                }), v.createElement("span", {
-                    className: "tw-pointer-events-none tw-z-50 tw-absolute tw--top-14 tw--left-20 sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
-                }, "This unique ID can be used for reference and direct integration with prefabs in Unity."))), v.createElement(p.X2, {
+                })), y.createElement(x.Z, {
+                    isOpen: pe,
+                    target: "listingIdTooltip",
+                    placement: "right",
+                    trigger: "click",
+                    innerClassName: "tw-bg-gray-900"
+                }, y.createElement("span", {
+                    className: "tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50"
+                }, "This unique ID can be used for reference and direct integration with prefabs in Unity.")))), y.createElement(p.X2, {
                     className: "tw-gap-2"
-                }, v.createElement(p.II, {
+                }, y.createElement(p.II, {
                     type: "text",
                     name: "id",
                     id: "id",
-                    value: J.id,
+                    value: O.id,
                     disabled: !0,
                     className: "tw-flex-1"
-                }), v.createElement(p.zx, {
+                }), y.createElement(p.zx, {
                     type: "button",
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function() {
-                        navigator.clipboard.writeText(J.id).then((function() {
-                            S((0, w.d)({
+                        navigator.clipboard.writeText(O.id).then((function() {
+                            j((0, w.d)({
                                 title: "Copied listing ID",
                                 icon: d.f8,
                                 message: "Listing ID Copied!",
@@ -324,7 +357,7 @@
                             }))
                         })).catch((function(e) {
                             var t, n;
-                            S((0, w.d)({
+                            j((0, w.d)({
                                 title: "Failed to copy listing ID",
                                 icon: u.eH,
                                 message: null !== (t = null === (n = res.error.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Failed to copy listing ID",
@@ -333,44 +366,43 @@
                             }))
                         }))
                     }
-                }, v.createElement(p.$1, {
+                }, y.createElement(p.$1, {
                     icon: i.kZ
-                })))), Z && Z === b.ft.DURATION && v.createElement(p.JX, {
-                    className: "tw-max-w-[270px]"
-                }, v.createElement("label", {
-                    htmlFor: "duration",
-                    className: "tw-mb-2"
-                }, "Duration"), v.createElement(p.JX, {
+                })))), D && D === b.ft.DURATION && y.createElement(p.JX, {
+                    className: "tw-max-w-[270px] tw-gap-2"
+                }, y.createElement("label", {
+                    htmlFor: "duration"
+                }, "Duration"), y.createElement(p.JX, {
                     className: "tw-gap-2 xs:tw-flex-row"
-                }, v.createElement(p.II, {
+                }, y.createElement(p.II, {
                     name: "duration",
                     id: "duration",
                     type: "number",
                     label: "Duration",
-                    min: b.nD[F.durationType].min,
-                    max: b.nD[F.durationType].max,
-                    value: F.duration,
-                    onChange: de,
+                    min: b.nD[A.durationType].min,
+                    max: b.nD[A.durationType].max,
+                    value: A.duration,
+                    onChange: he,
                     step: "1"
-                }), v.createElement(p.Lt, {
+                }), y.createElement(p.Lt, {
                     name: "durationType",
                     options: b.Ir,
-                    value: F.durationType,
+                    value: A.durationType,
                     onChange: function(e) {
-                        A((function(t) {
-                            return X(X({}, t), {}, {
+                        R((function(t) {
+                            return T(T({}, t), {}, {
                                 durationType: e
                             })
                         }))
                     }
-                })), v.createElement("small", {
+                })), y.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, "Starts immediately after purchasing.")), v.createElement(p.JX, {
+                }, "Starts immediately after purchasing.")), y.createElement(p.JX, {
                     className: "md:tw-max-w-[270px]"
-                }, v.createElement("label", {
+                }, y.createElement("label", {
                     htmlFor: "priceTokens",
                     className: "tw-mb-2"
-                }, "Price in VRChat Credits"), v.createElement(p.II, {
+                }, "Price in VRChat Credits"), y.createElement(p.II, {
                     name: "priceTokens",
                     id: "priceTokens",
                     type: "number",
@@ -378,14 +410,14 @@
                     min: 100,
                     step: "1",
                     label: "Price in VRChat Credits",
-                    value: F.priceTokens,
-                    onChange: de
-                }))))), v.createElement(p.m6, {
+                    value: A.priceTokens,
+                    onChange: he
+                }))))), y.createElement(p.m6, {
                     preset: "subscription",
-                    image: H,
-                    isOpen: Y,
+                    image: K,
+                    isOpen: q,
                     onClose: function() {
-                        return q(!1)
+                        return M(!1)
                     },
                     confirmCallback: function(e) {
                         var t = e.fileId,
@@ -393,34 +425,34 @@
                             a = e.fileBlob,
                             l = void 0 === a ? null : a,
                             c = null !== n;
-                        return null === n && null === l ? (K(null), void A((function(e) {
+                        return null === n && null === l ? (Q(null), void R((function(e) {
                             e.file, e.imageId;
-                            return (0, r.Z)(e, x)
-                        }))) : c ? (K(n), void A((function(e) {
+                            return (0, r.Z)(e, C)
+                        }))) : c ? (Q(n), void R((function(e) {
                             e.file;
-                            var t = (0, r.Z)(e, C);
-                            return X({
+                            var t = (0, r.Z)(e, k);
+                            return T({
                                 imageId: n
                             }, t)
-                        }))) : (K(l), void A((function(e) {
+                        }))) : (Q(l), void R((function(e) {
                             e.imageId;
-                            var t = (0, r.Z)(e, k);
-                            return X({
+                            var t = (0, r.Z)(e, I);
+                            return T({
                                 file: l
                             }, t)
                         })))
                     },
                     cancelCallBack: function() {
-                        return q(!1)
+                        return M(!1)
                     }
                 }))
             };
-            T.propTypes = {
-                onDataChange: y().func,
-                products: y().array,
-                productsLoading: y().bool
+            Z.propTypes = {
+                onDataChange: v().func,
+                products: v().array,
+                productsLoading: v().bool
             };
-            const Z = T
+            const D = Z
         },
         99878: (e, t, n) => {
             n.d(t, {
@@ -447,17 +479,17 @@
                         b = g[1],
                         h = (0, o.useState)(null !== (t = null == w ? void 0 : w.active) && void 0 !== t && t),
                         E = (0, r.Z)(h, 2),
-                        y = E[0],
-                        v = E[1],
+                        v = E[0],
+                        y = E[1],
                         N = s.filter((function(e) {
                             return "world" === e.storeType
                         }));
                     (0, o.useEffect)((function() {
                         c({
                             storeIds: f,
-                            active: y
+                            active: v
                         })
-                    }), [f, y]), (0, o.useEffect)((function() {
+                    }), [f, v]), (0, o.useEffect)((function() {
                         w && b(w.storeIds), u && !f.includes(u.id) && b([].concat((0, a.Z)(f), [u.id]))
                     }), []);
                     var x = function(e) {
@@ -465,7 +497,9 @@
                             return t !== e.id
                         }))) : b([].concat((0, a.Z)(f), [e.id]))
                     };
-                    return o.createElement(l.JX, null, o.createElement("h4", null, "Store Availability"), o.createElement("p", {
+                    return o.createElement(l.JX, null, o.createElement("h6", {
+                        className: "tw-text-lg"
+                    }, "Store Availability"), o.createElement("p", {
                         className: "tw-mb-3"
                     }, "Choose the world stores where you want to display this listing:"), o.createElement(l.JX, {
                         className: "tw-gap-2 tw-max-h-[217px] tw-overflow-y-auto"
@@ -497,19 +531,19 @@
                         }, e.storeType, " Store")))
                     }))), o.createElement("hr", {
                         className: "tw-border-t-2 tw-border-placeholder-text"
-                    }), o.createElement("h4", {
-                        className: "tw-mb-3"
+                    }), o.createElement("h6", {
+                        className: "tw-mb-3 tw-text-lg"
                     }, "Listing Visibility"), o.createElement(l.JX, {
                         className: "tw-gap-3"
                     }, o.createElement(l.X2, {
                         className: "tw-gap-2 tw-cursor-pointer",
                         onClick: function() {
-                            return v(!1)
+                            return y(!1)
                         }
                     }, o.createElement(l.XZ, {
-                        checked: !y,
+                        checked: !v,
                         onChange: function() {
-                            return v(!1)
+                            return y(!1)
                         },
                         className: "tw-m-1 tw-w-5 tw-h-5 tw-bg-button-bg-grey tw-ring-2 tw-ring-[#677079] checked:tw-bg-teal-accent checked:tw-ring-teal-accent checked:tw-ring-offset-2 checked:tw-ring-offset-darker-grey tw-rounded-full tw-appearance-none"
                     }), o.createElement(l.JX, null, o.createElement("p", {
@@ -519,12 +553,12 @@
                     }, "Users cannot see the listing until you publish it."))), o.createElement(l.X2, {
                         className: "tw-gap-2 tw-cursor-pointer",
                         onClick: function() {
-                            return v(!0)
+                            return y(!0)
                         }
                     }, o.createElement(l.XZ, {
-                        checked: y,
+                        checked: v,
                         onChange: function() {
-                            return v(!0)
+                            return y(!0)
                         },
                         className: "tw-m-1 tw-w-5 tw-h-5 tw-bg-button-bg-grey tw-ring-2 tw-ring-[#677079] checked:tw-bg-teal-accent checked:tw-ring-teal-accent checked:tw-ring-offset-2 checked:tw-ring-offset-darker-grey tw-rounded-full tw-appearance-none"
                     }), o.createElement(l.JX, null, o.createElement("p", {
@@ -542,4 +576,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9ae2e4a4344848e0c2c685abad333408d2e6c716eba46f88d733226614533eba.js.map
+//# sourceMappingURL=842d322c5090bd2f9e61e8b4c6563749d5aea57169f7fd89f5dc52bb199cd2a6.js.map

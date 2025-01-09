@@ -273,7 +273,7 @@
             });
             var a = n(4965),
                 l = n(78076),
-                r = n(94691),
+                r = n(66062),
                 i = n(72998),
                 s = n(67294),
                 c = n(89250),
@@ -2841,7 +2841,7 @@
                     tabs: [{
                         name: "World Info",
                         to: "/home/world/".concat(e, "/info"),
-                        icon: r.faCircleUser,
+                        icon: r.g4,
                         condition: !0
                     }, {
                         name: "World Store",
@@ -3312,4 +3312,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c344eb6460f5e666967da08bf4c1017b1faaa9ff4c0bbc0096fe712d58664793.js.map
+//# sourceMappingURL=cf6e23c57c898bb47be74b2ddeba3d30f80959315e698f367fce0e098d6aaa0c.js.map
