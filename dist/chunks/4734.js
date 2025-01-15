@@ -550,7 +550,7 @@
                     to: "/home/user/".concat(Y.authorId)
                 }, Y.authorName))), A.createElement(z.Z, {
                     text: "".concat(Y.name, " by ").concat(Y.authorName, " #VRChat #MadeWithVRChat"),
-                    url: "".concat(window.endpoint, "/home/avatars/").concat(Y.id)
+                    url: "".concat(window.endpoint, "/home/avatar/").concat(Y.id)
                 })), A.createElement(P.Ao, {
                     className: "tw-mb-3"
                 }, Y.description)), A.createElement(Ee, null, (F || Ke || We) && A.createElement(P.zx, {
@@ -1341,4 +1341,4 @@
         }
     }
 ]);
-//# sourceMappingURL=236be7e73b490eb03a962661e144fc064f0ea0d4503963873ee0caac6f4b253f.js.map
+//# sourceMappingURL=c7181a70cc9f152fd889fd3ccc29ed581d24f717d7ac89643c91e87fd3bf0330.js.map
