@@ -3,9 +3,9 @@
     [8051], {
         71560: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => oe
+                default: () => ne
             });
-            var r = a(45987),
+            var r = a(42138),
                 l = a(54546),
                 n = a(40767),
                 o = a(14411),
@@ -27,13 +27,13 @@
                 E = a(95896),
                 N = a(4942),
                 k = a(15861),
-                D = a(4965),
-                M = a(64687),
-                S = a.n(M),
+                M = a(4965),
+                D = a(64687),
+                S = a.n(D),
                 C = a(6655),
                 P = a(64358),
-                O = a(89250),
-                Y = a(56646),
+                Y = a(89250),
+                O = a(56646),
                 j = a(45697),
                 T = a.n(j),
                 I = function(e) {
@@ -81,7 +81,7 @@
                         onClick: null == s ? void 0 : s.onClickCallback,
                         title: null == s ? void 0 : s.title
                     }, s.text), null !== n && f.createElement("span", null, f.createElement(o.$1, {
-                        icon: Y.faCircleInfo
+                        icon: O.faCircleInfo
                     }), f.createElement("a", {
                         href: null == n ? void 0 : n.href,
                         className: "tw-text-sm tw-underline tw-font-thin tw-ml-1 tw-text-subtext-grey",
@@ -105,7 +105,7 @@
             };
             const Z = I;
 
-            function L(e, t) {
+            function G(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -116,78 +116,78 @@
                 return a
             }
 
-            function G(e) {
+            function L(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? L(Object(a), !0).forEach((function(t) {
+                    t % 2 ? G(Object(a), !0).forEach((function(t) {
                         (0, N.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : L(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : G(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            const A = function() {
+            const R = function() {
                 var e, t, a = (0, h.IB)().data,
                     r = null == a ? void 0 : a.id,
-                    n = (0, O.s0)(),
+                    n = (0, Y.s0)(),
                     i = (0, C.gI)(),
                     s = (0, l.Z)(i, 1)[0],
-                    c = (0, O.oQ)("/home/marketplace/storefront/payout"),
+                    c = (0, Y.oQ)("/home/marketplace/storefront/payout"),
                     u = (0, C.v$)({
                         userId: r
                     }, {
                         skip: !r,
                         refetchOnMountOrArgChange: !0
                     }).data,
-                    w = (0, g.B3)({
+                    w = (0, g.uK)({
                         sellerId: r,
                         groupByDuration: "years",
                         metricDateStart: E.pH,
                         metricDateEnd: "2511-03-07"
                     }, {
-                        skip: !r,
-                        refetchOnMountOrArgChange: !0
+                        skip: !r
                     }),
                     m = w.data,
-                    d = w.isLoading,
-                    p = w.isError,
-                    x = w.error,
-                    b = (0, C.pp)({
+                    d = void 0 === m ? {
+                        totals: {
+                            totalEarnings: 0,
+                            otpPurchaseCount: 0,
+                            subscriberMonths: 0
+                        }
+                    } : m,
+                    p = w.isFetching,
+                    x = w.isError,
+                    b = w.error,
+                    v = (0, C.pp)({
                         userId: r,
                         type: "earnings"
                     }, {
                         skip: !r,
                         refetchOnMountOrArgChange: !0
-                    }),
-                    v = b.data,
+                    }).data,
                     y = (void 0 === v ? {
                         balance: 0
                     } : v).balance,
-                    N = (b.IsFetching, f.useMemo((function() {
-                        var e = 0,
-                            t = 0;
-                        return null == m || m.forEach((function(a) {
-                            var r = a.numPurchases,
-                                l = a.totalPurchasePrice;
-                            e += r, t += l
-                        })), {
-                            allTimeNumPurchases: e,
-                            allTimeTotalPurchasePrice: t
+                    N = f.useMemo((function() {
+                        var e, t, a;
+                        return {
+                            allTimeNumPurchases: Number(null == d || null === (e = d.totals) || void 0 === e ? void 0 : e.otpPurchaseCount) + Number(null == d || null === (t = d.totals) || void 0 === t ? void 0 : t.subscriberMonths),
+                            allTimeTotalPurchasePrice: null == d || null === (a = d.totals) || void 0 === a ? void 0 : a.totalEarnings
                         }
-                    }), [m])),
-                    D = N.allTimeNumPurchases,
-                    M = N.allTimeTotalPurchasePrice,
-                    Y = null == u ? void 0 : u.signed_tos,
+                    }), [d]),
+                    M = N.allTimeNumPurchases,
+                    D = N.allTimeTotalPurchasePrice,
+                    O = null == u ? void 0 : u.signed_tos,
                     j = (0, f.useMemo)((function() {
-                        return Y ? y < E.vC ? "You must have at least ".concat(E.vC.toLocaleString(), " credits available to pay out.") : "Pay Out Now" : "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out."
+                        return O ? y < E.vC ? "You must have at least ".concat(E.vC.toLocaleString(), " credits available to pay out.") : "Pay Out Now" : "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out."
                     }), [u, y]);
-                return f.createElement(f.Fragment, null, p && f.createElement(o.qX, {
+                return f.createElement(f.Fragment, null, x && f.createElement(o.qX, {
                     type: "error",
                     title: "Error loading statistics"
-                }, null == x || null === (e = x.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), f.createElement("div", {
+                }, "Failed to fetch earnings: ", null == b || null === (e = b.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), f.createElement("div", {
                     className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col sm:tw-flex-row"
-                }, d ? f.createElement(f.Fragment, null, f.createElement(B, null), f.createElement(B, {
+                }, p ? f.createElement(f.Fragment, null, f.createElement(A, null), f.createElement(A, {
                     delay: 100
                 })) : f.createElement(f.Fragment, null, f.createElement(Z, {
                     title: "Available Payout",
@@ -203,7 +203,7 @@
                             return S().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, s(G(G({}, P.$Z.PAYOUT), {}, {
+                                        return e.next = 2, s(L(L({}, P.$Z.PAYOUT), {}, {
                                             userId: a.id,
                                             returnUrl: new URL(c, window.location.href)
                                         })).unwrap();
@@ -217,13 +217,13 @@
                         }))), function() {
                             return t.apply(this, arguments)
                         }),
-                        isDisabled: y < E.vC || !Y,
+                        isDisabled: y < E.vC || !O,
                         title: j
                     }
                 }), f.createElement(Z, {
                     title: "Total Sales",
                     hideGlyph: !0,
-                    credits: Number(D || 0),
+                    credits: Number(M || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
@@ -233,7 +233,7 @@
                     }
                 }), f.createElement(Z, {
                     title: "Total Earned",
-                    credits: Number(M || 0),
+                    credits: Number(D || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
@@ -243,16 +243,16 @@
                     }
                 }))))
             };
-            var B = (0, D.Z)(o.UU, {
+            var A = (0, M.Z)(o.UU, {
                     target: "e129v97h1"
                 })({
                     name: "rdii6n",
                     styles: "flex:1 1 240px;min-height:148px;margin:0.5rem;border-radius:8px"
                 }),
-                R = a(87709),
-                U = a(86646),
-                F = a(68055),
-                q = function(e) {
+                B = a(87709),
+                F = a(86646),
+                U = a(68055),
+                _ = function(e) {
                     var t = e.steps,
                         a = e.currentStepNumber,
                         r = t.filter((function(e) {
@@ -275,15 +275,15 @@
                             className: "tw-flex tw-flex-col tw-items-start"
                         }, f.createElement("div", {
                             className: "\n                  tw-border-solid tw-border-2 tw-border-full\n                  tw-w-8 tw-h-8 tw-rounded-full\n                  tw-flex tw-items-center tw-justify-center tw-text-sm\n                  after:tw-w-full after:tw-h-1 after:tw-border-b\n                  ".concat("", "\n                  ").concat(n ? "tw-border-green tw-text-[#000] tw-bg-green" : o ? "tw-border-green tw-text-white" : "tw-border-light-grey tw-text-light-grey", "\n                ")
-                        }, n ? f.createElement(U.Z, {
-                            icon: F.LE,
+                        }, n ? f.createElement(F.Z, {
+                            icon: U.LE,
                             "aria-label": "Done"
                         }) : e.number))), f.createElement("div", {
                             className: "tw-text-sm tw-text-center tw-w-[130px] tw--ml-[44px] tw-mt-2 ".concat(o ? "tw-text-white tw-font-bold" : "tw-text-light-grey")
                         }, e.label))
                     })))
                 };
-            q.propTypes = {
+            _.propTypes = {
                 steps: T().arrayOf(T().shape({
                     number: T().number.isRequired,
                     label: T().string.isRequired,
@@ -291,17 +291,17 @@
                 })).isRequired,
                 currentStepNumber: T().number.isRequired
             };
-            const H = q;
-            var _ = a(15832),
+            const q = _;
+            var H = a(15832),
                 W = a(79655),
                 X = a(34698);
             const $ = a.p + "7cad9f1f8b11b4060d8dcf99c259d4474a6740e249c0f7346db2d09929ae3220.png",
-                z = a.p + "48d4f7e7b13c122dd05368c83fe31445acd702f869a8fe12dddd798405348751.png",
-                V = a.p + "c1becf4493c453ba551cea61c7053848eddec27fc172c89ceaceda8fa728f450.png",
-                K = a.p + "7ef55804fb1330c747702ccf55ff39625cfe41dadd0efa98f2c77777db069eab.png";
+                K = a.p + "48d4f7e7b13c122dd05368c83fe31445acd702f869a8fe12dddd798405348751.png",
+                z = a.p + "c1becf4493c453ba551cea61c7053848eddec27fc172c89ceaceda8fa728f450.png",
+                V = a.p + "7ef55804fb1330c747702ccf55ff39625cfe41dadd0efa98f2c77777db069eab.png";
             var Q = function(e) {
                 var t, a = e.currentStepNumber,
-                    r = (0, _._)("myStoreTutorialDismissed", !1),
+                    r = (0, H._)("myStoreTutorialDismissed", !1),
                     n = (0, l.Z)(r, 2),
                     o = n[0],
                     i = n[1],
@@ -312,7 +312,7 @@
                             return f.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                             }, f.createElement("img", {
-                                src: z,
+                                src: K,
                                 alt: "",
                                 className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                             }), f.createElement("div", {
@@ -342,7 +342,7 @@
                             return f.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                             }, f.createElement("img", {
-                                src: V,
+                                src: z,
                                 alt: "",
                                 className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                             }), f.createElement("div", {
@@ -366,7 +366,7 @@
                             return f.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                             }, f.createElement("img", {
-                                src: K,
+                                src: V,
                                 alt: "",
                                 className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                             }), f.createElement("div", {
@@ -415,7 +415,7 @@
                     className: "tw-text-lighter-grey after:tw-border-0 tw-font-bold tw-text-lg "
                 }, "Get Ready To Sell"), f.createElement("div", {
                     className: "tw-hidden @[900px]/tutorial:tw-block"
-                }, f.createElement(H, {
+                }, f.createElement(q, {
                     steps: s,
                     currentStepNumber: a
                 })), f.createElement("div", null, f.createElement("button", {
@@ -424,11 +424,11 @@
                         i(!0)
                     },
                     className: "tw-bg-transparent tw-border-none tw-cursor-pointer"
-                }, f.createElement(U.Z, {
-                    icon: R.faXmark
+                }, f.createElement(F.Z, {
+                    icon: B.faXmark
                 })))), f.createElement("div", {
                     className: "tw-mt-4 tw-mb-2 tw-flex tw-justify-center tw-ml-[44px] @[900px]/tutorial:tw-hidden"
-                }, f.createElement(H, {
+                }, f.createElement(q, {
                     steps: s,
                     currentStepNumber: a
                 })), null === (t = s.find((function(e) {
@@ -439,13 +439,12 @@
                 currentStepNumber: T().number.isRequired
             };
             const J = Q;
-            var ee = ["_id"];
             u().extend(m()), s.kL.register(s.uw, s.f$, s.FB, s.od, s.jn, s.u, s.Gu), s.kL.defaults.color = "#737372", s.kL.defaults.borderColor = "rgba(127, 127, 127, 0.1)";
-            var te = {
+            var ee = {
                     numPurchases: "Total Sales",
                     totalPurchasePrice: "Total Earnings"
                 },
-                ae = [{
+                te = [{
                     label: "Last 7 Days",
                     value: "P7D"
                 }, {
@@ -464,7 +463,7 @@
                     label: "Custom",
                     value: !1
                 }],
-                re = [{
+                ae = [{
                     label: "Day",
                     value: "days"
                 }, {
@@ -477,17 +476,17 @@
                     label: "Year",
                     value: "years"
                 }],
-                le = function(e) {
+                re = function(e) {
                     return "weeks" === e ? "isoweek" : e
                 },
-                ne = function(e) {
+                le = function(e) {
                     var t = p().duration(e);
                     if (t.asDays() < 1) throw new RangeError("computeValuesForDurationTemplate: durationTemplate ".concat(e, " resulted in an invalid duration"));
                     var a = function(e) {
                             if (!p().isDuration(e)) throw new TypeError("duration ".concat(e, " is not a valid duration object"));
                             return e.asMonths() > 11 ? "months" : e.asMonths() > 2 ? "weeks" : "days"
                         }(t),
-                        r = le(a),
+                        r = re(a),
                         l = p()(),
                         n = l.clone().endOf(r);
                     return {
@@ -496,130 +495,156 @@
                         metricDateEnd: n
                     }
                 };
-            const oe = function() {
-                var e, t, a, s, c = (0, h.IB)().data,
-                    w = null == c ? void 0 : c.id,
-                    m = f.useState("numPurchases"),
-                    d = (0, l.Z)(m, 2),
-                    N = d[0],
-                    k = d[1],
-                    D = f.useState(ae[0].value),
-                    M = (0, l.Z)(D, 2),
-                    S = M[0],
-                    C = M[1],
-                    P = (0, g.B3)({
-                        sellerId: w,
+            const ne = function() {
+                var e, t, a, s, c, w = (0, h.IB)().data,
+                    m = null == w ? void 0 : w.id,
+                    d = f.useState("numPurchases"),
+                    N = (0, l.Z)(d, 2),
+                    k = N[0],
+                    M = N[1],
+                    D = f.useState(te[0].value),
+                    S = (0, l.Z)(D, 2),
+                    C = S[0],
+                    P = S[1],
+                    Y = (0, g.uK)({
+                        sellerId: m,
                         groupByDuration: "years",
                         metricDateStart: E.pH,
                         metricDateEnd: "2511-03-07"
                     }, {
-                        skip: !w,
-                        refetchOnMountOrArgChange: !0
+                        skip: !m
                     }),
-                    O = P.data,
-                    Y = P.isLoading,
-                    j = (P.isError, P.error, f.useMemo((function() {
-                        var e = 0;
-                        return null == O || O.forEach((function(t) {
-                            var a = t.numPurchases;
-                            e += a
-                        })), e
-                    }), [O])),
-                    T = f.useMemo((function() {
-                        return ne(S)
+                    O = Y.data,
+                    j = void 0 === O ? {
+                        totals: {
+                            totalEarnings: 0,
+                            otpPurchaseCount: 0,
+                            subscriberMonths: 0
+                        }
+                    } : O,
+                    T = Y.isFetching,
+                    I = Y.isError,
+                    Z = Y.error,
+                    G = f.useMemo((function() {
+                        return 0 === j.totals.totalEarnings
+                    }), [j]),
+                    L = f.useMemo((function() {
+                        return le(C)
                     }), []),
-                    I = T.groupByDuration,
-                    Z = T.metricDateStart,
-                    L = T.metricDateEnd,
-                    G = f.useState(I),
-                    B = (0, l.Z)(G, 2),
-                    R = B[0],
-                    U = B[1],
-                    F = f.useState(Z),
-                    q = (0, l.Z)(F, 2),
-                    H = q[0],
-                    _ = q[1],
-                    W = (0, b.Nr)(H),
-                    X = f.useState(L),
-                    $ = (0, l.Z)(X, 2),
-                    z = $[0],
-                    V = $[1],
-                    K = (0, b.Nr)(z),
-                    Q = f.useState(!1),
-                    oe = (0, l.Z)(Q, 2),
-                    ie = oe[0],
-                    se = oe[1],
-                    ce = f.useState(),
-                    ue = (0, l.Z)(ce, 2),
-                    we = ue[0],
-                    me = ue[1],
-                    de = f.useMemo((function() {
-                        return [p().isMoment(H) && H.isAfter(E.pH) && H.isBefore(z || p()().add(2, "y")), p().isMoment(z) && z.isAfter(H || E.pH) && z.isBefore(p()().add(2, "y"))]
-                    }), [H, z]),
-                    pe = (0, l.Z)(de, 2),
-                    fe = pe[0],
-                    xe = pe[1];
+                    A = L.groupByDuration,
+                    B = L.metricDateStart,
+                    F = L.metricDateEnd,
+                    U = f.useState(A),
+                    _ = (0, l.Z)(U, 2),
+                    q = _[0],
+                    H = _[1],
+                    W = f.useState(B),
+                    X = (0, l.Z)(W, 2),
+                    $ = X[0],
+                    K = X[1],
+                    z = (0, b.Nr)($),
+                    V = f.useState(F),
+                    Q = (0, l.Z)(V, 2),
+                    ne = Q[0],
+                    oe = Q[1],
+                    ie = (0, b.Nr)(ne),
+                    se = f.useState(!1),
+                    ce = (0, l.Z)(se, 2),
+                    ue = ce[0],
+                    we = ce[1],
+                    me = f.useState(),
+                    de = (0, l.Z)(me, 2),
+                    pe = de[0],
+                    fe = de[1],
+                    xe = f.useMemo((function() {
+                        return [p().isMoment($) && $.isAfter(E.pH) && $.isBefore(ne || p()().add(2, "y")), p().isMoment(ne) && ne.isAfter($ || E.pH) && ne.isBefore(p()().add(2, "y"))]
+                    }), [$, ne]),
+                    be = (0, l.Z)(xe, 2),
+                    he = be[0],
+                    ge = be[1];
                 f.useEffect((function() {
-                    if (S) {
-                        var e = ne(S),
+                    if (C) {
+                        var e = le(C),
                             t = e.groupByDuration,
                             a = e.metricDateStart,
                             r = e.metricDateEnd;
-                        U(t), _(a), V(r)
+                        H(t), K(a), oe(r)
                     }
-                }), [S]);
-                var be, he, ge = (0, g.B3)({
-                        sellerId: w,
-                        groupByDuration: R,
-                        metricDateStart: null == W ? void 0 : W.toISOString(),
-                        metricDateEnd: null == K ? void 0 : K.toISOString(),
-                        listingIds: we ? [we] : we
+                }), [C]);
+                var ve, ye, Ee = (0, g.uK)({
+                        sellerId: m,
+                        groupByDuration: q,
+                        metricDateStart: null == z ? void 0 : z.toISOString(),
+                        metricDateEnd: null == ie ? void 0 : ie.toISOString(),
+                        listingIds: pe ? [pe] : pe
                     }, {
-                        skip: !(w && W && K && fe && xe),
-                        refetchOnMountOrArgChange: !0
+                        skip: !(m && z && ie && he && ge)
                     }),
-                    ve = ge.data,
-                    ye = ge.isFetching,
-                    Ee = ge.isError,
-                    Ne = ge.error,
-                    ke = f.useMemo((function() {
-                        var e = [],
-                            t = {};
-                        return null == ve || ve.forEach((function(a) {
-                            var l = a._id,
-                                n = (0, r.Z)(a, ee);
-                            e.push(l), t[N] || (t[N] = {
-                                yAxisId: N,
-                                label: te[N] || N,
-                                data: [],
-                                backgroundColor: "#064b5c",
-                                borderColor: "#086c84"
-                            }), t[N].data.push(n[N])
-                        })), {
-                            labels: e,
-                            datasets: Object.values(t)
+                    Ne = Ee.data,
+                    ke = void 0 === Ne ? {
+                        totals: {
+                            totalEarnings: 0,
+                            otpPurchaseCount: 0,
+                            subscriberMonths: 0
                         }
-                    }), [ve, N]),
-                    De = function() {
-                        ie || se(!0)
+                    } : Ne,
+                    Me = (Ee.isFetching, Ee.isError, Ee.error, !m || pe && (Oe || je) || !$ || !ne || !he || !ge || !(null != ke && null !== (e = ke.breakdown) && void 0 !== e && e.length) || Fe),
+                    De = f.useMemo((function() {
+                        var e;
+                        if (null == ke || null === (e = ke.breakdown) || void 0 === e || !e.length) return {
+                            labels: [],
+                            datasets: []
+                        };
+                        var t = (0, r.Z)(ke.breakdown).sort((function(e, t) {
+                                return e._id > t._id ? -1 : 1
+                            })).reduce((function(e, t) {
+                                var a = t._id,
+                                    r = t.otpPurchaseCount,
+                                    l = void 0 === r ? 0 : r,
+                                    n = t.subscriberMonths,
+                                    o = void 0 === n ? 0 : n,
+                                    i = t.totalEarnings,
+                                    s = void 0 === i ? 0 : i;
+                                e.labels.push(a);
+                                var c = "numPurchases" === k ? l + o : s;
+                                return e.datasets[k] || (e.datasets[k] = {
+                                    yAxisId: k,
+                                    label: ee[k] || k,
+                                    data: [],
+                                    backgroundColor: "#064b5c",
+                                    borderColor: "#086c84"
+                                }), e.datasets[k].data.push(c), e
+                            }), {
+                                labels: [],
+                                datasets: {}
+                            }),
+                            a = t.labels,
+                            l = t.datasets;
+                        return {
+                            labels: a,
+                            datasets: Object.values(l)
+                        }
+                    }), [ke, k]),
+                    Se = function() {
+                        ue || we(!0)
                     },
-                    Me = (0, v.Ul)({
-                        userId: w,
+                    Ce = (0, v.Ul)({
+                        userId: m,
                         hydrate: !0
                     }),
-                    Se = Me.data,
-                    Ce = void 0 === Se ? [] : Se,
-                    Pe = Me.isLoading,
-                    Oe = Me.isError,
-                    Ye = Me.isSuccess,
-                    je = Me.error,
-                    Te = f.useMemo((function() {
+                    Pe = Ce.data,
+                    Ye = void 0 === Pe ? [] : Pe,
+                    Oe = Ce.isLoading,
+                    je = Ce.isError,
+                    Te = Ce.isSuccess,
+                    Ie = Ce.error,
+                    Ze = f.useMemo((function() {
                         var e = [{
                             label: "All"
                         }];
-                        return Pe ? e.push({
+                        return Oe ? e.push({
                             label: "Loading…"
-                        }) : Ce.forEach((function(t) {
+                        }) : Ye.forEach((function(t) {
                             var a = t.id,
                                 r = t.displayName;
                             e.push({
@@ -627,19 +652,19 @@
                                 value: a
                             })
                         })), e
-                    }), [Ce, Pe]),
-                    Ie = (0, y.rP)({
-                        userId: w
+                    }), [Ye, Oe]),
+                    Ge = (0, y.rP)({
+                        userId: m
                     }, {
-                        skip: !w
+                        skip: !m
                     }),
-                    Ze = Ie.data,
-                    Le = Ie.isFetching,
-                    Ge = Ie.isSuccess,
-                    Ae = ye || H !== W || z !== K || Y || Le,
-                    Be = !(null != ke && null !== (e = ke.datasets) && void 0 !== e && e.length),
-                    Re = f.useMemo((function() {
-                        switch (R) {
+                    Le = Ge.data,
+                    Re = Ge.isFetching,
+                    Ae = Ge.isSuccess,
+                    Be = T || $ !== z || ne !== ie || Re,
+                    Fe = !(null != De && null !== (t = De.datasets) && void 0 !== t && t.length),
+                    Ue = f.useMemo((function() {
+                        switch (q) {
                             case "years":
                                 return "YYYY";
                             case "months":
@@ -649,8 +674,8 @@
                             default:
                                 return "MMM DD, YYYY"
                         }
-                    }), [R]),
-                    Ue = f.useMemo((function() {
+                    }), [q]),
+                    _e = f.useMemo((function() {
                         var e = function(e) {
                             return "".concat(e, " credits")
                         };
@@ -661,7 +686,7 @@
                             plugins: {
                                 tooltip: {
                                     callbacks: {
-                                        label: "totalPurchasePrice" === N ? function(t) {
+                                        label: "totalPurchasePrice" === k ? function(t) {
                                             var a = t.dataset,
                                                 r = t.parsed;
                                             return (a.label ? "".concat(a.label, ": ") : "") + e(r.y)
@@ -678,8 +703,8 @@
                                 x: {
                                     type: "time",
                                     time: {
-                                        unit: null == R ? void 0 : R.replace(/s$/, ""),
-                                        tooltipFormat: Re,
+                                        unit: null == q ? void 0 : q.replace(/s$/, ""),
+                                        tooltipFormat: Ue,
                                         displayFormats: {
                                             week: "GGGG [W]ww"
                                         }
@@ -689,17 +714,17 @@
                                     beginAtZero: !0,
                                     ticks: {
                                         precision: 0,
-                                        callback: "totalPurchasePrice" === N ? e : void 0
+                                        callback: "totalPurchasePrice" === k ? e : void 0
                                     }
                                 }
                             }
                         }
-                    }), [N, R, Re]);
+                    }), [k, q, Ue]);
                 return f.createElement(f.Fragment, null, f.createElement(J, {
-                    currentStepNumber: (be = 0 === (null == Ze ? void 0 : Ze.length) && Ge, he = !Ce.some((function(e) {
+                    currentStepNumber: (ve = 0 === (null == Le ? void 0 : Le.length) && Ae, ye = !Ye.some((function(e) {
                         return !0 === e.active
-                    })) && Ye, be ? 1 : he ? 2 : 0 === j ? 3 : 4)
-                }), f.createElement(A, null), f.createElement(o.X2, {
+                    })) && Te, ve ? 1 : ye ? 2 : G ? 3 : 4)
+                }), f.createElement(R, null), f.createElement(o.X2, {
                     className: "align-items-center flex-wrap tw-mb-4",
                     style: {
                         justifyContent: "space-between"
@@ -710,9 +735,9 @@
                     }
                 }, f.createElement(i.Z, {
                     justify: "left",
-                    selected: N,
-                    onChange: k,
-                    tabs: Object.entries(te).map((function(e) {
+                    selected: k,
+                    onChange: M,
+                    tabs: Object.entries(ee).map((function(e) {
                         var t = (0, l.Z)(e, 2);
                         return {
                             id: t[0],
@@ -724,41 +749,41 @@
                     className: "align-items-center flex-wrap tw-gap-1"
                 }, f.createElement(o.Lt, {
                     label: "Duration",
-                    onChange: C,
-                    value: S,
-                    options: ae,
+                    onChange: P,
+                    value: C,
+                    options: te,
                     className: "tw-mr-2"
                 }), f.createElement(o.Lt, {
                     label: "Group By",
-                    onChange: U,
-                    value: R,
-                    options: re,
+                    onChange: H,
+                    value: q,
+                    options: ae,
                     className: "tw-mr-2"
-                }), !S && f.createElement("div", {
+                }), !C && f.createElement("div", {
                     className: "d-flex align-items-center flex-wrap"
                 }, f.createElement(o.II, {
                     type: "date",
                     className: "tw-mr-1",
-                    disabled: !!S,
-                    invalid: fe,
-                    value: null == H ? void 0 : H.format("YYYY-MM-DD"),
+                    disabled: !!C,
+                    invalid: he,
+                    value: null == $ ? void 0 : $.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = p()(e.target.value).startOf(le(R));
-                        _(t)
+                        var t = p()(e.target.value).startOf(re(q));
+                        K(t)
                     },
                     min: E.pH,
-                    max: null == z ? void 0 : z.format("YYYY-MM-DD")
+                    max: null == ne ? void 0 : ne.format("YYYY-MM-DD")
                 }), " to ", f.createElement(o.II, {
                     type: "date",
                     className: "tw-ml-1",
-                    disabled: !!S,
-                    invalid: xe,
-                    value: null == z ? void 0 : z.format("YYYY-MM-DD"),
+                    disabled: !!C,
+                    invalid: ge,
+                    value: null == ne ? void 0 : ne.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = p()(e.target.value).endOf(le(R));
-                        V(t)
+                        var t = p()(e.target.value).endOf(re(q));
+                        oe(t)
                     },
-                    min: (null == H ? void 0 : H.format("YYYY-MM-DD")) || E.pH,
+                    min: (null == $ ? void 0 : $.format("YYYY-MM-DD")) || E.pH,
                     max: p()().add(2, "y").format("YYYY-MM-DD")
                 })), f.createElement("div", {
                     className: "d-flex justify-content-end",
@@ -772,31 +797,32 @@
                     },
                     trimToLength: !0,
                     label: "Listing",
-                    onChange: me,
-                    onMouseEnter: De,
-                    onClick: De,
+                    onChange: fe,
+                    onMouseEnter: Se,
+                    onClick: Se,
                     className: "tw-mr-2",
-                    value: we,
-                    options: Te
+                    value: pe,
+                    options: Ze
                 }), f.createElement(o.zx, {
-                    disabled: !w || we && (Pe || Oe) || !H || !z || !fe || !xe || Be,
+                    disabled: Me,
                     onClick: function() {
                         var e;
-                        if (!we || !Pe && !Oe && null != ve && ve.length) {
+                        if (!Me) {
                             var t = document.createElement("a");
                             t.style.display = "none";
-                            var a = "weeks" === R ? "GGGG-[W]ww" : "YYYY-MM-DD",
-                                r = we && (null == Ce || null === (e = Ce.find((function(e) {
-                                    return e.id === we
+                            var a = "weeks" === q ? "GGGG-[W]ww" : "YYYY-MM-DD",
+                                r = pe && (null == Ye || null === (e = Ye.find((function(e) {
+                                    return e.id === pe
                                 }))) || void 0 === e ? void 0 : e.displayName);
-                            t.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(R.replace(/s$/, ""), " - ").concat(H.format(a), " to ").concat(z.format(a), ".csv"));
-                            var l = Object.keys(ve[0]),
-                                n = null == ve ? void 0 : ve.map((function(e) {
-                                    return l.map((function(t) {
+                            t.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(q.replace(/s$/, ""), " - ").concat($.format(a), " to ").concat(ne.format(a), ".csv"));
+                            var l = (null == ke ? void 0 : ke.breakdown) || [],
+                                n = Object.keys(l[0]),
+                                o = null == l ? void 0 : l.map((function(e) {
+                                    return n.map((function(t) {
                                         return e[t]
                                     })).join(",")
                                 }));
-                            l[0] = R, n.unshift(l.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(n.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
+                            n[0] = q, o.unshift(n.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(o.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
                         }
                     }
                 }, f.createElement(o.$1, {
@@ -804,19 +830,19 @@
                     className: "tw-px-2"
                 })))), f.createElement("span", {
                     className: "tw-text-placeholder-text tw-my-5 tw-text-base"
-                }, "Time period: ", null == H ? void 0 : H.format("MMM DD"), " - ", null !== (t = u()(z)) && void 0 !== t && t.isToday() ? "Today" : null == z ? void 0 : z.format("MMM DD")), Ee && f.createElement(o.qX, {
-                    type: "error",
-                    title: "Error loading data"
-                }, null == Ne || null === (a = Ne.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message), Oe && f.createElement(o.qX, {
+                }, "Time period: ", null == $ ? void 0 : $.format("MMM DD"), " - ", null !== (a = u()(ne)) && void 0 !== a && a.isToday() ? "Today" : null == ne ? void 0 : ne.format("MMM DD")), je && f.createElement(o.qX, {
                     type: "error",
                     title: "Error loading listings"
-                }, null == je || null === (s = je.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), Ae ? f.createElement(o.UU, {
+                }, null == Ie || null === (s = Ie.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), I && f.createElement(o.qX, {
+                    type: "error",
+                    title: "Error loading earnings"
+                }, null == Z || null === (c = Z.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message), Be ? f.createElement(o.UU, {
                     style: {
                         minHeight: 100,
-                        aspectRatio: Ue.aspectRatio.toString(10)
+                        aspectRatio: _e.aspectRatio.toString(10)
                     }
                 }) : function() {
-                    if (Be && j > 0) {
+                    if (Fe) {
                         var e = {
                             labels: Array.from({
                                 length: 7
@@ -846,10 +872,10 @@
                     }
                     return f.createElement(x.x1, {
                         datasetIdKey: "_id",
-                        options: Ue,
-                        data: ke
+                        options: _e,
+                        data: De
                     })
-                }(), "weeks" === R && f.createElement(o.qX, {
+                }(), "weeks" === q && f.createElement(o.qX, {
                     type: "dark",
                     slim: !0,
                     className: "mb-0"
@@ -862,4 +888,4 @@
         }
     }
 ]);
-//# sourceMappingURL=440cd17e99cb434247de559cac314c7593165d987c8c411350dc7e1e52938a9e.js.map
+//# sourceMappingURL=c4153752625ecf4687e10d8f46792a2d6e1957302b5f351da1e93893e0f3de73.js.map
