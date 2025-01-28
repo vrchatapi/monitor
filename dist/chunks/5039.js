@@ -2469,7 +2469,7 @@
                     D = (w.pastDisplayNames, w.tags, w.twoFactorAuthEnabled, w.username),
                     O = (0, nt.pc)(),
                     P = !1,
-                    _ = null == w ? void 0 : w.displayName,
+                    _ = void 0 !== (null == w ? void 0 : w.displayName),
                     F = (0, m.useState)(e.error),
                     B = (0, a.Z)(F, 2),
                     $ = B[0],
@@ -2845,4 +2845,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e774948ab2a1ec6daa9881ed2316bf3ba0e77f65782902c1394d2edf8e97c9cf.js.map
+//# sourceMappingURL=47e1ef489b44fda6d8f7c74ad18f1d4f22c8780ee3ac07af87e6a60767462c17.js.map
