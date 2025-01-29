@@ -32,6 +32,131 @@
                 icon: [r.width, r.height, r.aliases, r.unicode, r.svgPathData]
             }, t.e7 = t.DF, r.prefix, r.iconName, r.width, r.height, r.aliases, r.unicode, r.svgPathData, r.aliases
         },
+        55549: (e, t, n) => {
+            "use strict";
+            n.d(t, {
+                Z: () => d
+            });
+            var r = n(54546),
+                a = n(21707),
+                i = n(20495),
+                o = n(6811),
+                l = n(67294),
+                c = n(14411),
+                s = n(86646),
+                u = n(79442),
+                m = n(60006);
+            const d = function(e) {
+                var t = e.status,
+                    n = e.error,
+                    d = e.groupId,
+                    f = e.code,
+                    p = e.className,
+                    g = (0, u.nv)(),
+                    h = (0, r.Z)(g, 2),
+                    y = h[0],
+                    w = h[1],
+                    E = w.isFetching,
+                    v = w.isError,
+                    b = w.isSuccess,
+                    x = (0, u.W3)(),
+                    C = (0, r.Z)(x, 2),
+                    Z = C[0],
+                    k = C[1],
+                    N = k.isFetching,
+                    P = k.isError,
+                    S = k.isSuccess,
+                    O = (0, l.useMemo)((function() {
+                        var e;
+                        if (n) {
+                            var r, l;
+                            switch (n.status) {
+                                case 404:
+                                    l = "Your inquiry was not found.";
+                                    break;
+                                case 400:
+                                    l = function(e) {
+                                        switch (e.replace("retry_", "")) {
+                                            case "personaFailed":
+                                                return "Persona could not verify your identity.";
+                                            case "noBirthdate":
+                                                return "No birth date received from Persona.";
+                                            case "noBirthdateChange":
+                                                return "No change in birth date was detected.";
+                                            case "invalidDate":
+                                                return "Invalid date received from Persona.";
+                                            case "hashUsed":
+                                                return "Your identification data is already in use on another account.";
+                                            default:
+                                                return "An unknown error occurred while processing your inquiry."
+                                        }
+                                    }(null === (e = n.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.error_code);
+                                    break;
+                                case 429:
+                                    l = "Too many users are trying to get age verified right now!\nPlease refresh the page in a few minutes.";
+                                    break;
+                                default:
+                                    l = "An unknown error occurred while processing your inquiry."
+                            }
+                            return null !== (r = n.data) && void 0 !== r && null !== (r = r.error) && void 0 !== r && null !== (r = r.error_code) && void 0 !== r && r.startsWith("retry_") ? {
+                                message: "".concat(l, "\n\nWe have sent you an email with instructions on how to retry the process."),
+                                icon: i.faCircleExclamation,
+                                status: "Verification Error"
+                            } : {
+                                message: l,
+                                icon: i.faCircleExclamation,
+                                status: "Verification Error",
+                                buttonLink: "https://vrch.at/support",
+                                buttonText: "Contact Support"
+                            }
+                        }
+                        if (t) switch (t.status) {
+                            case "verified":
+                            case "approved":
+                                return {
+                                    icon: o.f8, status: "Verification Complete", message: "You have successfully verified your age with Persona.\nYour profile data has been updated.", buttonLink: "/home/user/me", buttonText: "View Your Profile"
+                                };
+                            case "failed":
+                            case "declined":
+                                return {
+                                    icon: i.faCircleExclamation, status: "Verification Failed", message: "Persona could not verify your identity.", buttonLink: "https://vrch.at/support", buttonText: "Contact Support"
+                                };
+                            default:
+                                return {
+                                    icon: a.e7, status: "Verification Pending", message: "Your verification with Persona is incomplete.\n\nReturn to the verification link sent to your email,\nor press the button below to receive the email again.", showResendButton: !0
+                                }
+                        }
+                    }), [t, n]);
+                return l.createElement("div", {
+                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center ".concat(p)
+                }, l.createElement("div", {
+                    className: "tw-mb-5"
+                }, l.createElement(s.Z, {
+                    icon: O.icon,
+                    className: "tw-w-[72px] tw-h-[72px]"
+                })), l.createElement("h4", {
+                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                }, O.status), l.createElement("p", {
+                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
+                }, O.message), O.buttonLink && l.createElement(m.Qj, {
+                    to: O.buttonLink,
+                    className: "tw-mt-9 tw-w-60"
+                }, O.buttonText), O.showResendButton && l.createElement(l.Fragment, null, l.createElement(c.zx, {
+                    className: "tw-flex-none tw-mt-9 tw-px-4",
+                    disabled: E || b || N || S,
+                    onClick: function() {
+                        return d && f ? Z({
+                            groupId: d,
+                            code: f
+                        }) : y()
+                    }
+                }, b || S ? "Sent!" : "Resend Age Verification Email"), (v || P) && l.createElement("p", {
+                    role: "alert",
+                    "aria-label": "Resend age verification email error",
+                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
+                }, "An error occurred when trying to resend age verification email.")))
+            }
+        },
         8860: (e, t, n) => {
             "use strict";
             n.d(t, {
@@ -79,9 +204,9 @@
                 f = n(35773),
                 p = n(95305),
                 g = n(34698),
-                y = n(83868),
-                w = n.n(y),
-                h = n(12752),
+                h = n(83868),
+                y = n.n(h),
+                w = n(12752),
                 E = n(22202),
                 v = n(62437),
                 b = n(14411),
@@ -91,46 +216,46 @@
                 var e = (0, E.IB)().data,
                     t = (0, m.useState)(""),
                     n = (0, r.Z)(t, 2),
-                    y = n[0],
+                    h = n[0],
                     Z = n[1],
                     k = (0, m.useState)(""),
                     N = (0, r.Z)(k, 2),
-                    S = N[0],
-                    P = N[1],
+                    P = N[0],
+                    S = N[1],
                     O = (0, m.useState)(""),
                     D = (0, r.Z)(O, 2),
                     A = D[0],
-                    j = D[1],
-                    I = (0, h.Nr)(y),
+                    I = D[1],
+                    j = (0, w.Nr)(h),
                     V = (0, v.X6)(),
                     T = (0, r.Z)(V, 2),
-                    R = T[0],
-                    z = T[1],
-                    F = z.isFetching,
-                    _ = z.isError,
-                    q = z.isSuccess,
-                    L = z.error,
-                    M = z.originalArgs,
+                    F = T[0],
+                    R = T[1],
+                    z = R.isFetching,
+                    _ = R.isError,
+                    q = R.isSuccess,
+                    L = R.error,
+                    M = R.originalArgs,
                     $ = (0, v.n_)(),
                     B = (0, r.Z)($, 2),
                     Y = B[0],
                     U = B[1],
                     G = U.isLoading,
-                    X = U.isError,
-                    K = U.error,
-                    H = (0, E.Fe)(),
-                    Q = (0, r.Z)(H, 2),
-                    W = Q[0],
-                    J = Q[1],
+                    W = U.isError,
+                    X = U.error,
+                    K = (0, E.Fe)(),
+                    H = (0, r.Z)(K, 2),
+                    Q = H[0],
+                    J = H[1],
                     ee = J.isFetching,
                     te = J.isError,
                     ne = J.error,
                     re = J.isSuccess,
                     ae = (0, v.SO)({
-                        email: I,
+                        email: j,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === I || !1 === w()(I)
+                        skip: "" === j || !1 === y()(j)
                     }),
                     ie = ae.data,
                     oe = ae.isFetching,
@@ -138,32 +263,32 @@
                     ce = ae.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    P(""), j("")
-                }), [y]);
+                    S(""), I("")
+                }), [h]);
                 var ue = (0, m.useMemo)((function() {
-                        return le && !1 === ie.userExists && w()(I) && "" !== I
-                    }), [ie, I]),
+                        return le && !1 === ie.userExists && y()(j) && "" !== j
+                    }), [ie, j]),
                     me = (0, m.useMemo)((function() {
-                        return "" !== S && S === I
-                    }), [S, I]),
+                        return "" !== P && P === j
+                    }), [P, j]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === w()(I) && "" !== I) return m.createElement(d.Z, {
+                        if (!1 === y()(j) && "" !== j) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That's an invalid email.");
-                        if (null != ie && ie.userExists && (null == ce ? void 0 : ce.email) === I) return m.createElement(d.Z, {
+                        if (null != ie && ie.userExists && (null == ce ? void 0 : ce.email) === j) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That email is already in use.");
-                        if (X) return m.createElement(d.Z, {
+                        if (W) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
-                        }), " Failed to change news preference: ", K, ".");
-                        if (_ && (null == M ? void 0 : M.email) === I) {
-                            j("");
+                        }), " Failed to change news preference: ", X, ".");
+                        if (_ && (null == M ? void 0 : M.email) === j) {
+                            I("");
                             var t = L.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
@@ -171,7 +296,7 @@
                                 icon: u.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== S && S !== I) return m.createElement(d.Z, {
+                        if (ue && "" !== P && P !== j) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -197,7 +322,7 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [re, te, _, q, ie, le, S, I, e, X]),
+                    }), [re, te, _, q, ie, le, P, j, e, W]),
                     fe = (0, m.useMemo)((function() {
                         return !se || q ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
@@ -211,7 +336,7 @@
                             icon: o.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === I ? null : ue ? m.createElement(x.Z, {
+                        }) : "" === j ? null : ue ? m.createElement(x.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -220,7 +345,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [oe, I, ue]);
+                    }), [oe, j, ue]);
                 return m.createElement("form", null, m.createElement(f.Z, {
                     className: "align-items-center justify-content-center"
                 }, m.createElement(p.Z, {
@@ -252,7 +377,7 @@
                     },
                     placeholder: null == e ? void 0 : e.obfuscatedEmail,
                     type: "text",
-                    value: y
+                    value: h
                 }))), m.createElement(p.Z, {
                     xs: "1",
                     style: {
@@ -272,18 +397,18 @@
                     autoComplete: "off",
                     name: "confirmEmail",
                     onChange: function(e) {
-                        return P(e.target.value)
+                        return S(e.target.value)
                     },
                     placeholder: "Please confirm email",
                     type: "text",
-                    value: S
+                    value: P
                 }))), m.createElement(p.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== S && m.createElement(x.Z, {
+                }, "" !== P && m.createElement(x.Z, {
                     size: "2x",
                     ok: me,
                     title: "Confirm email is OK"
@@ -305,7 +430,7 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return j(e.target.value)
+                        return I(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -339,7 +464,7 @@
                     color: "primary",
                     disabled: !(null != e && e.hasPendingEmail) && !q || ee,
                     onClick: function() {
-                        return W()
+                        return Q()
                     },
                     outline: !0
                 }, fe)), m.createElement(p.Z, {
@@ -347,14 +472,14 @@
                 }, m.createElement(g.Z, {
                     block: !0,
                     color: "primary",
-                    disabled: !ue || !me || F || "" === A,
+                    disabled: !ue || !me || z || "" === A,
                     id: "email-change-submit",
                     name: "email-change-submit",
                     value: "update",
                     onClick: function(t) {
-                        t.preventDefault(), R({
+                        t.preventDefault(), F({
                             userId: null == e ? void 0 : e.id,
-                            email: I,
+                            email: j,
                             password: A
                         })
                     }
@@ -364,203 +489,136 @@
         13164: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => v
+                default: () => h
             });
             var r = n(54546),
-                a = n(21707),
-                i = n(20495),
-                o = n(6811),
-                l = n(67294),
-                c = n(89250),
-                s = n(12752),
-                u = n(79442),
-                m = n(22202),
-                d = n(93261),
-                f = n(14411),
-                p = n(86646),
-                g = n(43862),
-                y = n(65578),
-                w = n(78158),
-                h = n(14343),
-                E = n(60006);
-            const v = function() {
-                var e = (0, c.UO)(),
+                a = n(67294),
+                i = n(89250),
+                o = n(12752),
+                l = n(79442),
+                c = n(22202),
+                s = n(93261),
+                u = n(55549),
+                m = n(14411),
+                d = n(43862),
+                f = n(65578),
+                p = n(78158),
+                g = n(14343);
+            const h = function() {
+                var e = (0, i.UO)(),
                     t = e.groupId,
                     n = e.code,
-                    v = (0, m.IB)().data,
-                    b = (0, l.useState)(!1),
-                    x = (0, r.Z)(b, 2),
-                    C = x[0],
-                    Z = x[1],
-                    k = (0, u.HI)(),
-                    N = k.data,
-                    S = k.isSuccess,
-                    P = k.error,
-                    O = k.isFetching,
-                    D = k.refetch;
-                (0, s.Yz)(D, "completed" === (null == N ? void 0 : N.status) || "needs_review" === (null == N ? void 0 : N.status) ? 3e3 : null);
-                var A = (0, d.r5)({
+                    h = (0, c.IB)().data,
+                    y = (0, a.useState)(!1),
+                    w = (0, r.Z)(y, 2),
+                    E = w[0],
+                    v = w[1],
+                    b = (0, l.HI)(),
+                    x = b.data,
+                    C = b.isSuccess,
+                    Z = b.error,
+                    k = b.isFetching,
+                    N = b.refetch;
+                (0, o.Yz)(N, "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status) ? 3e3 : null);
+                var P = (0, s.r5)({
                         groupId: t,
                         purpose: "group"
                     }),
-                    j = A.data,
-                    I = A.isSuccess,
-                    V = A.isError,
-                    T = A.isFetching,
-                    R = (0, m.Fe)(),
-                    z = (0, r.Z)(R, 2),
-                    F = z[0],
-                    _ = z[1],
-                    q = _.isFetching,
-                    L = _.isError,
-                    M = _.isSuccess,
-                    $ = (0, u.nv)(),
-                    B = (0, r.Z)($, 2),
-                    Y = B[0],
-                    U = B[1],
-                    G = U.isFetching,
-                    X = U.isError,
-                    K = U.isSuccess,
-                    H = (0, l.useMemo)((function() {
-                        var e;
-                        if (P) {
-                            var t;
-                            switch (P.status) {
-                                case 400:
-                                    t = "Identification data already in use" === (null === (e = error.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) ? "Your identification data is already in use on another account." : "An unknown error occurred while processing your inquiry.";
-                                    break;
-                                case 429:
-                                    t = "Too many users are trying to get age verified right now! Please refresh the page in a few minutes.";
-                                    break;
-                                default:
-                                    t = "An unknown error occurred while getting your age verification status."
-                            }
-                            return {
-                                message: t,
-                                icon: i.faCircleExclamation,
-                                status: "Verification Error",
-                                buttonLink: "https://vrch.at/support",
-                                buttonText: "Contact Support"
-                            }
-                        }
-                        if (N) switch (N.status) {
-                            case "verified":
-                                return {
-                                    icon: o.f8, status: "Verification Complete", message: "Your account is already age verified."
-                                };
-                            case "approved":
-                                return {
-                                    icon: o.f8, status: "Verification Complete", message: "You have successfully verified your age with Persona.\nYour profile data has been updated."
-                                };
-                            case "failed":
-                            case "declined":
-                                return {
-                                    icon: i.faCircleExclamation, status: "Verification Failed", message: "Persona could not verify your identity.", buttonLink: "https://vrch.at/support", buttonText: "Contact Support"
-                                };
-                            default:
-                                return {
-                                    icon: a.e7, status: "Verification Pending", message: "Your verification with Persona is incomplete.\nReturn to the verification link sent to your email, or press the button below to receive the email again.", showResendButton: !0
-                                }
-                        }
-                    }), [N, P]),
-                    Q = O || T || "completed" === (null == N ? void 0 : N.status) || "needs_review" === (null == N ? void 0 : N.status);
-                return l.createElement(l.Fragment, null, l.createElement(f.$4, null, "Group Age Verification Beta"), Q && l.createElement("div", {
+                    S = P.data,
+                    O = P.isSuccess,
+                    D = P.isError,
+                    A = P.isFetching,
+                    I = (0, c.Fe)(),
+                    j = (0, r.Z)(I, 2),
+                    V = j[0],
+                    T = j[1],
+                    F = T.isFetching,
+                    R = T.isError,
+                    z = T.isSuccess,
+                    _ = (0, l.W3)(),
+                    q = (0, r.Z)(_, 2),
+                    L = q[0],
+                    M = q[1],
+                    $ = M.isFetching,
+                    B = M.isError,
+                    Y = M.isSuccess,
+                    U = k || A || "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status);
+                return a.createElement(a.Fragment, null, a.createElement(m.$4, null, "Group Age Verification Beta"), U && a.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
-                }, l.createElement(g.Z, {
+                }, a.createElement(d.Z, {
                     size: "5x"
-                })), !Q && S && I && l.createElement(l.Fragment, null, l.createElement(w.Z, {
-                    group: j
-                }), l.createElement("div", {
+                })), !U && C && O && a.createElement(a.Fragment, null, a.createElement(p.Z, {
+                    group: S
+                }), a.createElement("div", {
                     className: "tw-pb-10"
-                }, l.createElement("div", {
+                }, a.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full tw-p-5 tw-rounded-lg tw-h-fit tw-flex tw-flex-col tw-items-center"
-                }, l.createElement("h2", {
+                }, a.createElement("h2", {
                     className: "tw-text-center"
-                }, "Age Verification Beta"), "uninitialized" !== N.status ? l.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-mt-5"
-                }, l.createElement("div", {
-                    className: "tw-mb-2"
-                }, l.createElement(p.Z, {
-                    icon: H.icon,
-                    className: "tw-w-[50px] tw-h-[50px]"
-                })), l.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-5 tw-text-[24px]"
-                }, H.status), l.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-pre"
-                }, H.message), H.buttonLink && l.createElement(E.Qj, {
-                    to: H.buttonLink,
-                    className: "tw-mt-9 tw-w-60"
-                }, H.buttonText), H.showResendButton && l.createElement(l.Fragment, null, l.createElement(f.zx, {
-                    className: "tw-flex-none tw-px-4",
-                    disabled: G || K,
-                    onClick: function() {
-                        return Y({
-                            groupId: t,
-                            code: n
-                        })
-                    }
-                }, K ? "Sent!" : "Resend Age Verification Email"), X && l.createElement("p", {
-                    role: "alert",
-                    "aria-label": "Resend age verification email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
-                }, "An error occurred when trying to resend age verification email."))) : "member" !== (null == j ? void 0 : j.membershipStatus) ? l.createElement("p", null, "You must be a member of this group in order to access this page.") : j.tags.includes("admin_age_verification_enabled") ? j.ageVerificationSlotsAvailable ? l.createElement(l.Fragment, null, l.createElement("div", {
+                }, "Age Verification Beta"), "uninitialized" !== x.status ? a.createElement(u.Z, {
+                    className: "tw-mt-5",
+                    status: x,
+                    error: Z,
+                    groupId: t,
+                    code: n
+                }) : "member" !== (null == S ? void 0 : S.membershipStatus) ? a.createElement("p", null, "You must be a member of this group in order to access this page.") : S.tags.includes("admin_age_verification_enabled") ? S.ageVerificationSlotsAvailable ? a.createElement(a.Fragment, null, a.createElement("div", {
                     class: "tw-py-5 tw-flex tw-w-full"
-                }, l.createElement(h.Z, {
-                    userId: v.id,
+                }, a.createElement(g.Z, {
+                    userId: h.id,
                     isFluid: !0,
                     className: "tw-w-1/3 max-sm:tw-hidden"
-                }), l.createElement("div", {
+                }), a.createElement("div", {
                     className: "md:tw-w-2/3 max-sm:tw-w-full tw-px-5 tw-flex tw-flex-direction tw-flex-col"
-                }, l.createElement("span", null, "Welcome ", l.createElement("strong", null, v.displayName)), l.createElement("span", {
+                }, a.createElement("span", null, "Welcome ", a.createElement("strong", null, h.displayName)), a.createElement("span", {
                     className: "tw-flex tw-items-center"
-                }, l.createElement("span", {
+                }, a.createElement("span", {
                     className: "tw-flex-1"
-                }, "Email: ", l.createElement("strong", null, v.obfuscatedEmail)), l.createElement(f.zx, {
+                }, "Email: ", a.createElement("strong", null, h.obfuscatedEmail)), a.createElement(m.zx, {
                     onClick: function() {
-                        return Z(!0)
+                        return v(!0)
                     }
-                }, "Change Email")), (null == v ? void 0 : v.hasPendingEmail) && l.createElement(f.qX, {
+                }, "Change Email")), (null == h ? void 0 : h.hasPendingEmail) && a.createElement(m.qX, {
                     type: "info",
                     title: "Email Change Pending",
                     slim: !0
-                }, l.createElement("strong", null, "An email change is pending verification: ", null == v ? void 0 : v.obfuscatedPendingEmail), l.createElement("div", null, l.createElement(f.zx, {
+                }, a.createElement("strong", null, "An email change is pending verification: ", null == h ? void 0 : h.obfuscatedPendingEmail), a.createElement("div", null, a.createElement(m.zx, {
                     className: "tw-flex-none tw-mt-2",
-                    disabled: q || M,
+                    disabled: F || z,
                     onClick: function() {
-                        return F()
+                        return V()
                     }
-                }, M ? "Sent!" : "Resend Verification")), L && l.createElement("p", {
+                }, z ? "Sent!" : "Resend Verification")), R && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend verification error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1"
-                }, "An error occurred when trying to resend verification email.")), l.createElement("p", {
+                }, "An error occurred when trying to resend verification email.")), a.createElement("p", {
                     className: "tw-mt-5"
-                }, "Getting Age Verified will grant you access to Age Verified Group Instances."), l.createElement("p", null, "The age verification process utilizes Persona to verify your government-issued ID and compare it to your likeness. VRChat will receive and process text extracted from your ID, and will not receive any images or face scans. This information is used to generate an irreversible hash, which is saved. All extracted text from your verification process other than your birth date is deleted."), l.createElement("p", null, "VRChat saves the generated hash and your birth date and then tells Persona to delete all of your information."), l.createElement("h4", {
+                }, "Getting Age Verified will grant you access to Age Verified Group Instances."), a.createElement("p", null, "The age verification process utilizes Persona to verify your government-issued ID and compare it to your likeness. VRChat will receive and process text extracted from your ID, and will not receive any images or face scans. This information is used to generate an irreversible hash, which is saved. All extracted text from your verification process other than your birth date is deleted."), a.createElement("p", null, "VRChat saves the generated hash and your birth date and then tells Persona to delete all of your information."), a.createElement("h4", {
                     className: "tw-text-lg"
-                }, "To complete this process you will need:"), l.createElement("ul", null, l.createElement("li", null, "A valid email address."), l.createElement("li", null, "You will also need a valid government ID."), l.createElement("li", null, "You will need a computer or a smartphone with a camera to complete the validation process.")), l.createElement("p", null, "Please confirm your email address above to receive your unique link.", l.createElement("br", null), "Once you click the ", l.createElement("strong", null, '"Send Age Verification Email"'), " button, you'll get an email leading to the verification process."), l.createElement("p", null, "Please open this email with a camera-enabled device, such as a smartphone, to complete this process."))), l.createElement(f.zx, {
+                }, "To complete this process you will need:"), a.createElement("ul", null, a.createElement("li", null, "A valid email address."), a.createElement("li", null, "You will also need a valid government ID."), a.createElement("li", null, "You will need a computer or a smartphone with a camera to complete the validation process.")), a.createElement("p", null, "Please confirm your email address above to receive your unique link.", a.createElement("br", null), "Once you click the ", a.createElement("strong", null, '"Send Age Verification Email"'), " button, you'll get an email leading to the verification process."), a.createElement("p", null, "Please open this email with a camera-enabled device, such as a smartphone, to complete this process."))), a.createElement(m.zx, {
                     className: "tw-flex-none tw-px-4",
-                    disabled: G || K,
+                    disabled: $ || Y,
                     onClick: function() {
-                        return Y({
+                        return L({
                             groupId: t,
                             code: n
                         })
                     }
-                }, K ? "Sent!" : "Send Age Verification Email"), X && l.createElement("p", {
+                }, Y ? "Sent!" : "Send Age Verification Email"), B && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Send age verification email error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1"
-                }, "An error occurred when trying to send age verification email."), l.createElement(f.u_, {
-                    isVisible: C,
+                }, "An error occurred when trying to send age verification email."), a.createElement(m.u_, {
+                    isVisible: E,
                     onClose: function() {
-                        return Z(!1)
+                        return v(!1)
                     },
                     title: "Change Email",
                     slim: !0,
                     width: "600px"
-                }, l.createElement("div", {
+                }, a.createElement("div", {
                     className: "tw-w-full"
-                }, l.createElement(y.Z, null)))) : l.createElement("p", null, "This group does not have age verification beta slots remaining.") : l.createElement("p", null, "This group is not part of the age verification beta.")))), V && l.createElement("p", {
+                }, a.createElement(f.Z, null)))) : a.createElement("p", null, "This group does not have age verification beta slots remaining.") : a.createElement("p", null, "This group is not part of the age verification beta.")))), D && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Page load error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1 tw-text-center"
@@ -572,7 +630,8 @@
             n.d(t, {
                 HI: () => i,
                 MI: () => a,
-                nv: () => o
+                W3: () => o,
+                nv: () => l
             });
             var r = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
@@ -588,7 +647,7 @@
                                     return "/ageVerification/status"
                                 }
                             }),
-                            sendInquiryLink: e.mutation({
+                            sendGroupInquiryLink: e.mutation({
                                 query: function(e) {
                                     var t = e.groupId,
                                         n = e.code;
@@ -600,13 +659,22 @@
                                         }
                                     }
                                 }
+                            }),
+                            sendInquiryLink: e.mutation({
+                                query: function() {
+                                    return {
+                                        url: "/ageVerification/sendInquiryLink",
+                                        method: "POST"
+                                    }
+                                }
                             })
                         }
                     }
                 }),
                 a = r.useGetAgeVerificationInquiryStatusQuery,
                 i = r.useGetAgeVerificationStatusQuery,
-                o = r.useSendInquiryLinkMutation
+                o = r.useSendGroupInquiryLinkMutation,
+                l = r.useSendInquiryLinkMutation
         },
         20640: (e, t, n) => {
             "use strict";
@@ -684,7 +752,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? c(Object(n), !0).forEach((function(t) {
-                        y(e, t, n[t])
+                        h(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : c(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -757,7 +825,7 @@
                 }, g(e)
             }
 
-            function y(e, t, n) {
+            function h(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -765,7 +833,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            var w = function(e) {
+            var y = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -786,7 +854,7 @@
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, c);
                     for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-                    return y(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
+                    return h(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
                         var n = e.props,
                             r = n.text,
                             o = n.onCopy,
@@ -812,7 +880,7 @@
                     writable: !1
                 }), c
             }(a.default.PureComponent);
-            t.CopyToClipboard = w, y(w, "defaultProps", {
+            t.CopyToClipboard = y, h(y, "defaultProps", {
                 onCopy: void 0,
                 options: void 0
             })
@@ -845,4 +913,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b5297bf4fc0a1170d09cf9227cc2a4be4458ba83358ac3ead165e138a8a7afe.js.map
+//# sourceMappingURL=d68ca3e3c3b1e6bc216013fa8c0394b6059546f34dd5cb6d27acb277a45752f6.js.map

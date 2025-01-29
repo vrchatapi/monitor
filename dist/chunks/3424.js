@@ -96,25 +96,25 @@
             });
             var r = a(20495),
                 l = a(67294),
-                n = a(60006),
-                w = a(86646),
-                s = a(85533),
+                n = a(86646),
+                w = a(85533),
+                s = a(60006),
                 o = a(36678);
             const i = function() {
-                return l.createElement(o.Z, null, l.createElement(s.Z, null, "Verification Failed"), l.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-py-20 tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                return l.createElement(o.Z, null, l.createElement(w.Z, null, "Verification Failed"), l.createElement("div", {
+                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, l.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, l.createElement("div", {
                     className: "tw-mb-5"
-                }, l.createElement(w.Z, {
+                }, l.createElement(n.Z, {
                     icon: r.faCircleExclamation,
                     className: "tw-w-[72px] tw-h-[72px]"
                 })), l.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
                 }, "Verification Failed"), l.createElement("p", {
                     className: "tw-text-center tw-mb-0"
-                }, "The link you followed is either invalid, or you are already verified. Please log in and request a new verification link if prompted."), l.createElement(n.Qj, {
+                }, "The link you followed is either invalid, or you are already verified. Please log in and request a new verification link if prompted."), l.createElement(s.Qj, {
                     to: "/home/login",
                     className: "tw-mt-9 tw-w-60"
                 }, "Back to login"))))
@@ -122,4 +122,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3a9f52313563dd319d5d8f3001236072b43529609305bddd838377c96eb56d70.js.map
+//# sourceMappingURL=cc23e69d89d57edf7981f611799cb734af63ed97368fccc0ebe6ed5c78469d41.js.map

@@ -477,13 +477,13 @@
                     onClick: function(e) {
                         e.stopPropagation(), e.preventDefault(), (null != _ && _.includes("permission-user-icons") || null != _ && _.includes("permission-user-gallery")) && (b("/home/gallery"), ee())
                     }
-                }, r.createElement(A, {
+                }, r.createElement(P, {
                     "aria-label": "User Icon",
                     url: re,
                     level: (0, w.FR)({
                         tags: u.tags
                     })
-                }, r.createElement(P, null, r.createElement(U, {
+                }, r.createElement(A, null, r.createElement(U, {
                     icon: f._j,
                     size: "lg"
                 }))), r.createElement(R, null, "Change Icon")), r.createElement(z, null)), !(null === (n = u.badges) || void 0 === n || !n.length) && r.createElement(G, null, u.badges.filter((function(e) {
@@ -576,12 +576,12 @@
                     name: "13p5eg",
                     styles: "display:flex;position:absolute;bottom:-40px;left:10px;width:80px;align-items:center;z-index:3;color:white;&:hover{div:last-child{opacity:1;}svg{opacity:1;}}"
                 }),
-                A = (0, p.Z)("div", {
+                P = (0, p.Z)("div", {
                     target: "esgak1l13"
                 })("border-radius:100%;width:80px;height:80px;border:3px solid #07242b;box-sizing:border-box;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
                 }), ");background-color:#05191d;display:flex;justify-content:center;align-items:center;flex-shrink:0;"),
-                P = (0, p.Z)("div", {
+                A = (0, p.Z)("div", {
                     target: "esgak1l12"
                 })({
                     name: "6828uq",
@@ -692,8 +692,8 @@
                 ze = n(34698),
                 je = n(58877),
                 qe = n(25062);
-            const Ae = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
-            var Pe = n(17219),
+            const Pe = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
+            var Ae = n(17219),
                 Ue = n(31358);
             const Re = function(e) {
                 var t = e.n,
@@ -1151,13 +1151,13 @@
                         C = (0, a.Z)(I, 2),
                         S = C[0],
                         O = C[1],
-                        z = (0, Pe.y)().data,
+                        z = (0, Ae.y)().data,
                         j = ((0, E.pc)(), (0, d.XC)().data),
                         q = (0, i.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
-                        A = (0, d.q7)().data,
-                        P = void 0 === A ? [] : A,
+                        P = (0, d.q7)().data,
+                        A = void 0 === P ? [] : P,
                         U = (0, E.CZ)().sortedLocations.length,
                         R = (0, i.v9)((function(e) {
                             return e.notifications.groupNotifications
@@ -1178,7 +1178,7 @@
                         W = function() {
                             s && s(!1)
                         },
-                        $ = P || [],
+                        $ = A || [],
                         V = $.includes("permission-user-icons"),
                         L = $.includes("permission-user-gallery"),
                         F = ($.includes("permission-groups-beta"), null !== (t = q.length) && void 0 !== t ? t : 0);
@@ -1513,7 +1513,7 @@
                     }, r.createElement("img", {
                         alt: "subscriptions",
                         width: "25",
-                        src: Ae
+                        src: Pe
                     }), r.createElement("div", null, "Subscriptions"), r.createElement(k.$1, {
                         icon: K.yO
                     })), r.createElement(xt, {
@@ -1594,10 +1594,10 @@
                     }), [a, n]), null
                 },
                 qt = n.p + "4237ca770f17680f3d2d0178803a80813b464ec58fc9ea496c992fcce193d614.jpg";
-            var At = r.lazy((function() {
-                    return Promise.all([n.e(3261), n.e(9923), n.e(1047)]).then(n.bind(n, 26969))
+            var Pt = r.lazy((function() {
+                    return Promise.all([n.e(3261), n.e(9923), n.e(5508)]).then(n.bind(n, 5712))
                 })),
-                Pt = r.lazy((function() {
+                At = r.lazy((function() {
                     return Promise.all([n.e(4984), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
                 })),
                 Ut = r.lazy((function() {
@@ -1643,7 +1643,7 @@
                     return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
                 Xt = r.lazy((function() {
-                    return n.e(6815).then(n.bind(n, 76815))
+                    return Promise.all([n.e(4473), n.e(8264)]).then(n.bind(n, 8264))
                 })),
                 Ht = r.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
@@ -1760,7 +1760,7 @@
                     }))
                 }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/search/:query",
-                    element: r.createElement(Pt, null)
+                    element: r.createElement(At, null)
                 }), r.createElement(o.AW, {
                     path: "/profile",
                     element: r.createElement(Wt, null)
@@ -1870,7 +1870,7 @@
                     element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
                     path: "/",
-                    element: r.createElement(At, null)
+                    element: r.createElement(Pt, null)
                 })))))), r.createElement("div", {
                     className: "fixed-top rightbar ".concat(g ? "open" : "")
                 }, r.createElement(s.SV, {
@@ -1942,8 +1942,8 @@
                 z = n.n(O),
                 j = n(56176),
                 q = n.n(j),
-                A = n(84110),
-                P = n.n(A),
+                P = n(84110),
+                A = n.n(P),
                 U = n(9419),
                 R = n(50249),
                 D = n(13757),
@@ -2023,7 +2023,7 @@
                 be = n(14411),
                 ye = n(88233),
                 Ee = n(2566);
-            z().extend(P()), z().extend(q());
+            z().extend(A()), z().extend(q());
             var xe = {
                     "economy.alert": {
                         caption: "Economy",
@@ -2287,13 +2287,13 @@
                     senderUserData: z
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var A, P = Ce[k],
+                var P, A = Ce[k],
                     U = Se[k],
                     R = (0, m.Tq)(z.status).color,
                     D = z.profilePicOverride || z.currentAvatarThumbnailImageUrl,
                     M = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = E.details) || void 0 === l ? void 0 : l.requestMessage);
                 return u.createElement(Ee.jm, null, u.createElement(Ee.XK, null, u.createElement(be.$1, {
-                    icon: P
+                    icon: A
                 }), "  ", u.createElement("i", null, U)), u.createElement(Ee.g6, null, u.createElement(Ee.rR, {
                     to: "/home/user/".concat(N),
                     statusColor: R
@@ -2305,7 +2305,7 @@
                     to: "/home/user/".concat(N)
                 }, u.createElement("strong", null, z.displayName)), " - ", Z || {
                     friendRequest: "would like to be your friend!",
-                    invite: "has invited you to ".concat((null === (A = E.details) || void 0 === A ? void 0 : A.worldName) || "Somewhere"),
+                    invite: "has invited you to ".concat((null === (P = E.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
                     requestInviteResponse: "has declined your invite request.",
                     inviteResponse: "has declined your invite."
@@ -2858,4 +2858,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0640b420dd4721bd30ab127b120b2b4dc1b2cb54f9c63b45819bc17da7405163.js.map
+//# sourceMappingURL=3f51c17a2143439aec7cb6e1a767d98eabc5883626f52c55164ed40c10500c70.js.map
