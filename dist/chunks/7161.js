@@ -1263,17 +1263,17 @@
                         var e, t, a, n, l, r;
                         return u === o.He.TRANSACTIONS && (null == tt || null === (e = tt.transactions) || void 0 === e ? void 0 : e.length) >= 0 ? null == tt ? void 0 : tt.transactions : (t = _e, a = {
                             active: [],
-                            expired: [],
-                            expiring: []
+                            expiring: [],
+                            expired: []
                         }, n = {
                             active: [],
-                            expired: [],
-                            expiring: []
+                            expiring: [],
+                            expired: []
                         }, l = S()(), r = S()().add(1, "months"), t ? (t.forEach((function(e) {
                             var t = !0,
-                                s = S()(e.purchaseEndDate).isBefore(l),
-                                c = S()(e.purchaseEndDate).isBefore(r);
-                            if (null !== Ee && null !== Te && t && (t = S()(e.purchaseDate, "YYYY-MM-DD").isBetween(Ee, Te)), null !== Ae && t && (t = e.listingType === Ae), t) switch (e.listingType) {
+                                s = S()(e.subscriptionExpiry).isBefore(l),
+                                c = S()(e.subscriptionExpiry).isBefore(r);
+                            if (null !== Ee && null !== Te && t && (t = S()(e.subscriptionFirstStarted, "YYYY-MM-DD").isBetween(Ee, Te)), null !== Ae && t && (t = e.listingType === Ae), t) switch (e.listingType) {
                                 case o.ft.PERMANENT:
                                 case o.ft.INSTANT:
                                 case o.ft.DURATION:
@@ -2398,4 +2398,4 @@
         }
     }
 ]);
-//# sourceMappingURL=05e111a714a6d68320f10e4d4725758b433d6ea52fdedfe7c15a17be709dfc40.js.map
+//# sourceMappingURL=1033e2da9a8de97324dc0f55d28a3d8ceb119a162e7b2e147cb812aeeade202f.js.map
