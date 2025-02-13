@@ -1551,6 +1551,7 @@
                                             groupAccessType: r.groupAccessType,
                                             region: r.region,
                                             queueEnabled: r.queueEnabled,
+                                            ageGate: r.ageGate,
                                             roleIds: r.roleIds || []
                                         }
                                     }
@@ -1731,4 +1732,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d4c3f87d3ac58964e5339d861588ec39dee67185f7b04b9bb69b08ecaed3dfe1.js.map
+//# sourceMappingURL=aefdfea31cf4987c61bc95465dbbc7a4a968a870df4ceb45117eda65bc30d64f.js.map

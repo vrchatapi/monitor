@@ -334,10 +334,11 @@
                 Mw: () => r,
                 TW: () => i,
                 a8: () => s,
-                fq: () => d,
+                fq: () => g,
                 hp: () => m,
                 iI: () => o,
-                kI: () => g,
+                kI: () => f,
+                lE: () => d,
                 nD: () => u,
                 oq: () => c,
                 qH: () => a,
@@ -376,7 +377,8 @@
                 u = ["group-instance-plus-create", "*"],
                 d = ["group-instance-public-create", "*"],
                 p = ["group-instance-restricted-create", "*"],
-                g = ["group-instance-open-create", "group-instance-restricted-create", "*"]
+                g = ["group-instance-age-gated-create", "*"],
+                f = ["group-instance-open-create", "group-instance-restricted-create", "*"]
         },
         78006: (e, t, n) => {
             n.r(t), n.d(t, {
@@ -2858,4 +2860,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3f51c17a2143439aec7cb6e1a767d98eabc5883626f52c55164ed40c10500c70.js.map
+//# sourceMappingURL=ac28dde2cae17aeec9aac9157ccca8755acb1af8adbf4045512e00f700a41853.js.map

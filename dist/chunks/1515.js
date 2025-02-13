@@ -4015,7 +4015,7 @@
                     alt: "VRChat Avatars",
                     className: "tw-max-h-80"
                 }), d.createElement(w.rU, {
-                    to: "https://www.surveymonkey.com/r/creator-economy-web",
+                    to: "https://www.surveymonkey.com/r/econ-app",
                     target: "_blank"
                 }, d.createElement(f.zx, {
                     className: "tw-mb-3 tw-px-6"
@@ -4770,4 +4770,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0038717ce6b09eb16ea7b61cbe9789c863e16da5502c77df3fe18dd295ab8a15.js.map
+//# sourceMappingURL=3d7618e713cdf08f94276af8dd9a04ef0e987538f381450a29b7187c77896289.js.map

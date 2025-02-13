@@ -412,27 +412,36 @@
                     E = (0, w.Z)(x, 2),
                     y = E[0],
                     N = E[1],
-                    k = s.useState("us"),
+                    k = s.useState(!1),
                     C = (0, w.Z)(k, 2),
                     I = C[0],
                     Z = C[1],
-                    S = (0, X._)("instanceCreation_alsoInviteMe", !1),
+                    S = s.useState("us"),
                     j = (0, w.Z)(S, 2),
                     z = j[0],
                     $ = j[1],
-                    D = J.M7.some((function(e) {
+                    D = (0, X._)("instanceCreation_alsoInviteMe", !1),
+                    _ = (0, w.Z)(D, 2),
+                    T = _[0],
+                    P = _[1],
+                    L = J.M7.some((function(e) {
+                        var t;
+                        return null === (t = v[null == n ? void 0 : n.groupId]) || void 0 === t ? void 0 : t.includes(e)
+                    })),
+                    M = J.fq.some((function(e) {
                         var t;
                         return null === (t = v[null == n ? void 0 : n.groupId]) || void 0 === t ? void 0 : t.includes(e)
                     }));
                 return s.useEffect((function() {
-                    n && ("members" === l && !D && !i || "members" === l && D && (null == i ? void 0 : i.length) >= 0 || "plus" === l || "public" === l) && m({
+                    n && ("members" === l && !L && !i || "members" === l && L && (null == i ? void 0 : i.length) >= 0 || "plus" === l || "public" === l) && m({
                         group: n,
                         type: l,
                         roles: i,
                         queueEnabled: y,
-                        region: I
+                        ageGate: I,
+                        region: z
                     })
-                }), [n, l, i, y, I]), v ? s.createElement(oe, null, s.createElement(de, {
+                }), [n, l, i, y, I, z]), v ? s.createElement(oe, null, s.createElement(de, {
                     onClick: function() {
                         f()
                     },
@@ -459,7 +468,7 @@
                     icon: re.A3
                 }), s.createElement(pe, null, null == n ? void 0 : n.name), s.createElement(ge, {
                     src: null == n ? void 0 : n.iconUrl
-                })), s.createElement("hr", null), "members" === l && s.createElement(s.Fragment, null, s.createElement(d.JX, null, s.createElement(me, null, "Instance Roles:"), D ? s.createElement(fe, {
+                })), "members" === l && s.createElement(s.Fragment, null, s.createElement(d.JX, null, s.createElement(me, null, "Instance Roles:"), L ? s.createElement(fe, {
                     onClick: function() {
                         "members" === l && f("roles")
                     },
@@ -469,7 +478,7 @@
                     icon: re.A3
                 }), s.createElement(pe, null, "View Selected"), s.createElement("div", null)) : s.createElement(me, {
                     className: "fw-normal"
-                }, "All members can join!")), s.createElement("hr", null)), s.createElement(me, null, "Instance Queue If Full:"), s.createElement(d.X2, {
+                }, "All members can join!"))), s.createElement(me, null, "Instance Queue If Full:"), s.createElement(d.X2, {
                     className: "justify-content-evenly"
                 }, s.createElement(me, {
                     className: "fw-normal"
@@ -479,52 +488,64 @@
                     defaultChecked: y,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        N(t)
+                        return N(t)
                     }
-                })), s.createElement("hr", null), s.createElement(ue, {
+                })), M && s.createElement(s.Fragment, null, s.createElement(me, null, "Age Verification:"), s.createElement(d.X2, {
+                    className: "justify-content-evenly"
+                }, s.createElement(me, {
+                    className: "fw-normal"
+                }, "Require 18+ Age Verification"), s.createElement(se.Z, {
+                    className: "w-auto d-flex align-items-center",
+                    value: "hasAgeGate",
+                    defaultChecked: I,
+                    onChangeCallback: function(e) {
+                        var t = e.checked;
+                        return Z(t)
+                    }
+                }))), s.createElement(ue, {
                     className: "mt-0 mb-0",
                     id: "WorldLaunchRegionTitle"
                 }, "Select Region"), s.createElement(xe, {
                     role: "radiogroup",
                     "aria-labelledby": "WorldLaunchRegionTitle"
                 }, s.createElement(le, {
-                    isSelected: "us" === I,
+                    isSelected: "us" === z,
                     onClick: function() {
-                        Z("us")
+                        $("us")
                     },
                     region: "us"
                 }), s.createElement(le, {
-                    isSelected: "use" === I,
+                    isSelected: "use" === z,
                     onClick: function() {
-                        Z("use")
+                        $("use")
                     },
                     region: "use"
                 }), s.createElement(le, {
-                    isSelected: "eu" === I,
+                    isSelected: "eu" === z,
                     onClick: function() {
-                        Z("eu")
+                        $("eu")
                     },
                     region: "eu"
                 }), s.createElement(le, {
-                    isSelected: "jp" === I,
+                    isSelected: "jp" === z,
                     onClick: function() {
-                        Z("jp")
+                        $("jp")
                     },
                     region: "jp"
-                })), s.createElement("hr", null), s.createElement(fe, {
+                })), s.createElement(fe, {
                     role: "checkbox",
-                    "aria-checked": z,
+                    "aria-checked": T,
                     className: "my-2",
                     onClick: function() {
-                        return $(!z)
+                        return P(!T)
                     },
-                    selected: z,
+                    selected: T,
                     containerStyles: Ee
                 }, s.createElement(d.X2, {
                     className: "align-items-center justify-content-center flex-grow-1 position-relative"
                 }, s.createElement(he, {
                     icon: F.LE,
-                    disabled: !z
+                    disabled: !T
                 }), "Also Invite Me")), b && s.createElement(ve, {
                     className: "mt-2",
                     onClick: g
@@ -896,7 +917,7 @@
                         return J.nD.includes(e)
                     })),
                     Z = null === (n = m[null == g ? void 0 : g.groupId]) || void 0 === n ? void 0 : n.some((function(e) {
-                        return J.fq.includes(e)
+                        return J.lE.includes(e)
                     })),
                     S = null === (a = m[null == g ? void 0 : g.groupId]) || void 0 === a ? void 0 : a.some((function(e) {
                         return J.kI.includes(e)
@@ -965,7 +986,7 @@
                     "aria-label": "Group Public Instance",
                     className: "justify-content-between",
                     disabled: !(null !== (c = m[null == g ? void 0 : g.groupId]) && void 0 !== c && c.some((function(e) {
-                        return J.fq.includes(e)
+                        return J.lE.includes(e)
                     })))
                 }, s.createElement(d.JX, {
                     className: "w-100"
@@ -1339,6 +1360,7 @@
                                         groupAccessType: v.type,
                                         region: v.region,
                                         queueEnabled: v.queueEnabled,
+                                        ageGate: v.ageGate,
                                         roleIds: v.roles
                                     });
                                 case 4:
@@ -3312,4 +3334,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cf6e23c57c898bb47be74b2ddeba3d30f80959315e698f367fce0e098d6aaa0c.js.map
+//# sourceMappingURL=f01d50a7def8bc0345863e63bbbbb797d5d0c70c1c704ac8c68ac01e925e17e8.js.map
