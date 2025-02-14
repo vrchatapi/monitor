@@ -515,14 +515,14 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                if (!Y || Ve) return A.createElement(U.Z, null, A.createElement(P.$4, null, "Avatar"), A.createElement(G.Z, {
-                    loading: !0
-                }));
                 if (j) return A.createElement(U.Z, null, A.createElement(P.$4, null, "Avatar"), A.createElement(P.qX, {
                     type: "error",
                     title: "Error",
                     className: "tw-my-2"
                 }, (null == Q || null === (Oe = Q.data) || void 0 === Oe ? void 0 : Oe.error.message) || "There was an error loading the avatar."));
+                if (!Y || Ve) return A.createElement(U.Z, null, A.createElement(P.$4, null, "Avatar"), A.createElement(G.Z, {
+                    loading: !0
+                }));
                 var je, Qe = "private" === Y.releaseStatus,
                     We = !Qe,
                     Je = "hidden" === Y.releaseStatus,
@@ -1341,4 +1341,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c7181a70cc9f152fd889fd3ccc29ed581d24f717d7ac89643c91e87fd3bf0330.js.map
+//# sourceMappingURL=903417f3da119e2507176ff427c9c51743abb62e494b1337afdf2265f8c9b774.js.map
