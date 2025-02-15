@@ -1639,9 +1639,10 @@
                     Je = je.status,
                     et = je.statusDescription,
                     tt = je.ageVerified,
-                    rt = je.ageVerificationStatus;
+                    rt = je.isAdult,
+                    nt = je.ageVerificationStatus;
                 (0, g.useEffect)((function() {
-                    C(et), q(Xe), de(Ye), b(Je), A(rt)
+                    C(et), q(Xe), de(Ye), b(Je), A(nt)
                 }), [je]), (0, g.useEffect)((function() {
                     Re && (u(), Le((0, x.d)({
                         title: "Update Profile",
@@ -1651,7 +1652,7 @@
                         timeout: 3e3
                     })))
                 }), [Re]);
-                var nt = Qe.includes("system_supporter");
+                var at = Qe.includes("system_supporter");
                 (0, g.useEffect)((function() {
                     var e = Qe.filter((function(e) {
                         return e.startsWith("language")
@@ -1683,7 +1684,7 @@
                     }), []);
                     se(e)
                 }), [te]);
-                var at, lt = function() {
+                var lt, ot = function() {
                     return "" === pe ? (ke(!1), void Ce("")) : (0, S.K2)(pe) ? we.includes(pe) ? (Ce("This social link is already added"), void ke(!0)) : (ke(!1), Ce(""), ve(""), void de([].concat((0, _.Z)(we), [pe.trim()]))) : (Ce("Invalid social link"), void ke(!0))
                 };
                 if (ze) return g.createElement("div", {
@@ -1693,7 +1694,7 @@
                     className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-margin-top tw-mt-auto tw-p-10"
                 }, g.createElement("h3", {
                     className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-border-t after:tw-pb-0 after:tw-mt-5 "
-                }, "Failed To Load User Data"), g.createElement("code", null, null === (at = $e.data) || void 0 === at || null === (at = at.error) || void 0 === at ? void 0 : at.message)));
+                }, "Failed To Load User Data"), g.createElement("code", null, null === (lt = $e.data) || void 0 === lt || null === (lt = lt.error) || void 0 === lt ? void 0 : lt.message)));
                 return g.createElement("div", {
                     tabIndex: "-1",
                     className: "\n        tw-top-0 tw-left-0 tw-right-0 tw-z-[1100]\n        tw-overflow-x-hidden tw-overflow-y-auto\n        md:tw-inset-0\n        tw-h-[calc(100%-1rem)] tw-max-h-full\n        tw-bg-dark-grey-transparent\n        ".concat(s ? "tw-fixed" : "tw-hidden", "\n      "),
@@ -1728,7 +1729,7 @@
                     className: "tw-sr-only"
                 }, "Close modal"))), g.createElement("div", {
                     className: "tw-p-5"
-                }, nt && g.createElement("div", {
+                }, at && g.createElement("div", {
                     className: "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-pb-5"
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-mb-5 sm:tw-mb-0"
@@ -1802,7 +1803,7 @@
                         return C(e.target.value)
                     },
                     value: F
-                })))), tt && g.createElement("div", {
+                })))), tt && rt && g.createElement("div", {
                     className: "tw-flex tw-flex-col"
                 }, g.createElement("div", {
                     className: "tw-pb-5 tw-flex tw-flex-col"
@@ -1916,7 +1917,7 @@
                     className: "tw-w-full tw-flex tw-flex-row tw-items-center"
                 }, g.createElement("form", {
                     onSubmit: function(e) {
-                        e.preventDefault(), lt()
+                        e.preventDefault(), ot()
                     },
                     className: "tw-w-full"
                 }, g.createElement("input", {
@@ -1927,7 +1928,7 @@
                         return ve(e.target.value)
                     },
                     onBlur: function() {
-                        return lt()
+                        return ot()
                     },
                     placeholder: "Add links to your social media accounts."
                 })), g.createElement("button", {
@@ -2402,7 +2403,7 @@
                 userId: O().string.isRequired
             };
             const De = je;
-            var ze = r(14343),
+            var ze = r(20165),
                 $e = r(89182),
                 _e = r(1208),
                 We = function(e) {
@@ -3433,4 +3434,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2f48848498d59d5b90c30856aeeded048e0d22c242ac1e982ac3627f242a5f25.js.map
+//# sourceMappingURL=2805922f6965df68650106b5110552dfd9fb18e50213e11a692ea29297ffb889.js.map

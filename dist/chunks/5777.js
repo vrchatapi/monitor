@@ -1766,27 +1766,28 @@
                         c = e.reports,
                         o = e.bops,
                         m = e.isOwner,
-                        u = e.isMod,
-                        S = (0, _t.I0)(),
-                        z = (0, s.useState)(!1),
-                        $ = (0, w.Z)(z, 2),
-                        T = $[0],
-                        U = $[1],
-                        R = (0, s.useRef)(null),
-                        A = (0, s.useState)(50),
-                        F = (0, w.Z)(A, 2),
-                        Y = (F[0], F[1], (0, s.useState)(60)),
-                        q = (0, w.Z)(Y, 2),
-                        W = q[0],
-                        O = q[1],
-                        X = (0, s.useState)(!1),
-                        G = (0, w.Z)(X, 2),
-                        V = (G[0], G[1], (0, s.useState)(!1)),
-                        J = (0, w.Z)(V, 2),
-                        H = (J[0], J[1], (0, _t.v9)((function(e) {
+                        u = e.user,
+                        S = e.isMod,
+                        z = (0, _t.I0)(),
+                        $ = (0, s.useState)(!1),
+                        T = (0, w.Z)($, 2),
+                        U = T[0],
+                        R = T[1],
+                        A = (0, s.useRef)(null),
+                        F = (0, s.useState)(50),
+                        Y = (0, w.Z)(F, 2),
+                        q = (Y[0], Y[1], (0, s.useState)(60)),
+                        W = (0, w.Z)(q, 2),
+                        O = W[0],
+                        X = W[1],
+                        G = (0, s.useState)(!1),
+                        V = (0, w.Z)(G, 2),
+                        J = (V[0], V[1], (0, s.useState)(!1)),
+                        H = (0, w.Z)(J, 2),
+                        B = (H[0], H[1], (0, _t.v9)((function(e) {
                             return e.world.forceUpdateESWorld
                         }))),
-                        B = (0, s.useMemo)((function() {
+                        Q = (0, s.useMemo)((function() {
                             if (!r) return {
                                 isPc: !1,
                                 isQuest: !1,
@@ -1804,7 +1805,7 @@
                                 isCrossPlatform: e && t
                             }
                         }), [null == r ? void 0 : r.id]),
-                        Q = (0, s.useMemo)((function() {
+                        K = (0, s.useMemo)((function() {
                             var e;
                             return null == r || null === (e = r.tags) || void 0 === e ? void 0 : e.map((function(e) {
                                 var t, n = e.startsWith("author_tag_"),
@@ -1825,7 +1826,7 @@
                                 }), l)
                             }))
                         }), [null == r ? void 0 : r.id]),
-                        K = function(e) {
+                        ee = function(e) {
                             var t;
                             return null !== (t = null == e ? void 0 : e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")) && void 0 !== t ? t : "0"
                         };
@@ -1847,16 +1848,16 @@
                         role: "note",
                         title: "World Size",
                         className: "tw-flex"
-                    }, null !== (t = null == i ? void 0 : i.fileSize) && void 0 !== t ? t : "0 MB"), s.createElement(Xt, null), B.isCrossPlatform && s.createElement("div", {
+                    }, null !== (t = null == i ? void 0 : i.fileSize) && void 0 !== t ? t : "0 MB"), s.createElement(Xt, null), Q.isCrossPlatform && s.createElement("div", {
                         role: "note",
                         title: "Cross-Platform Support",
                         className: "tw-flex tw-items-center"
                     }, s.createElement(d.$1, {
                         icon: Z.vq,
                         className: "me-2"
-                    }), "Cross-Platform"), !B.isCrossPlatform && B.isPc && s.createElement("div", {
+                    }), "Cross-Platform"), !Q.isCrossPlatform && Q.isPc && s.createElement("div", {
                         className: "tw-flex"
-                    }, "PC Only"), !B.isCrossPlatform && B.isQuest && s.createElement("div", {
+                    }, "PC Only"), !Q.isCrossPlatform && Q.isQuest && s.createElement("div", {
                         className: "tw-flex"
                     }, "Android Only"), s.createElement(Xt, null), s.createElement(M.Z, {
                         text: "".concat(r.name, " by ").concat(r.authorName, " #VRChat #MadeWithVRChat"),
@@ -1866,7 +1867,7 @@
                         displayLabel: !0,
                         transparent: !0
                     }))), s.createElement(Gt, {
-                        ref: R
+                        ref: A
                     }, s.createElement(rt, {
                         world: r
                     }), "public" === r.releaseStatus && s.createElement(Qt, {
@@ -1892,7 +1893,7 @@
                         "aria-labelledby": "WorldTagsLabel"
                     }, s.createElement(Jt, {
                         id: "WorldTagsLabel"
-                    }, "Tags"), Q)), "private" === (null == r ? void 0 : r.releaseStatus) && s.createElement(d.qX, {
+                    }, "Tags"), K)), "private" === (null == r ? void 0 : r.releaseStatus) && s.createElement(d.qX, {
                         type: "warn",
                         title: "Private World Callout",
                         message: "This world is private and only visible via direct links",
@@ -1940,14 +1941,14 @@
                         width: 20,
                         icon: E.BC,
                         className: "me-2"
-                    }), "Private Players"), (m || u) && s.createElement("div", {
+                    }), "Private Players"), (m || S) && s.createElement("div", {
                         className: "tw-flex mb-2 align-items-center"
                     }, s.createElement(d.$1, {
                         color: "#54b5c5",
                         width: 20,
                         icon: x.JH,
                         className: "me-2"
-                    }), "Reports"), (m || u) && (null != o ? o : 0) > 0 && s.createElement("div", {
+                    }), "Reports"), (m || S) && (null != o ? o : 0) > 0 && s.createElement("div", {
                         className: "tw-flex mb-2 align-items-center"
                     }, s.createElement(d.$1, {
                         color: "#54b5c5",
@@ -1981,11 +1982,11 @@
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Visits"
-                    }, K(r.visits)), s.createElement("div", {
+                    }, ee(r.visits)), s.createElement("div", {
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Favorites"
-                    }, K(r.favorites)), s.createElement("div", {
+                    }, ee(r.favorites)), s.createElement("div", {
                         role: "note",
                         className: "tw-flex mb-2 align-items-center",
                         "aria-label": "Capacity"
@@ -2000,9 +2001,9 @@
                     })), s.createElement(_.Z, {
                         placement: "top",
                         target: "CapacityInfo",
-                        isOpen: T,
+                        isOpen: U,
                         toggle: function() {
-                            U(!T)
+                            R(!U)
                         },
                         "aria-label": "World Capacity Info"
                     }, s.createElement("div", {
@@ -2011,19 +2012,19 @@
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Public Players"
-                    }, K(r.publicOccupants)), s.createElement("div", {
+                    }, ee(r.publicOccupants)), s.createElement("div", {
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Private Players"
-                    }, K(r.privateOccupants)), (m || u) && s.createElement("div", {
+                    }, ee(r.privateOccupants)), (m || S) && s.createElement("div", {
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Reports"
-                    }, K(null !== (n = null == c ? void 0 : c.reportCount) && void 0 !== n ? n : null == c || null === (a = c.feedbackReport) || void 0 === a ? void 0 : a.reportCount)), (m || u) && (null != o ? o : 0) > 0 && s.createElement("div", {
+                    }, ee(null !== (n = null == c ? void 0 : c.reportCount) && void 0 !== n ? n : null == c || null === (a = c.feedbackReport) || void 0 === a ? void 0 : a.reportCount)), (m || S) && (null != o ? o : 0) > 0 && s.createElement("div", {
                         className: "mb-2",
                         role: "note",
                         "aria-label": "Bops"
-                    }, K(o)), "none" !== r.publicationDate ? s.createElement("div", {
+                    }, ee(o)), "none" !== r.publicationDate ? s.createElement("div", {
                         role: "note",
                         className: "mb-2",
                         "aria-label": "Publish Date"
@@ -2040,7 +2041,7 @@
                         authorId: null == r ? void 0 : r.authorId,
                         releaseStatus: null == r ? void 0 : r.releaseStatus,
                         className: "mt-0 mt-sm-2 order-0 order-sm-1"
-                    }), (m || u) && s.createElement("div", {
+                    }), (m || S) && s.createElement("div", {
                         className: "tw-flex tw-flex-col my-2"
                     }, s.createElement(D.rU, {
                         to: "/home/content/worlds/".concat(r.id, "/edit?backLink=/home/world/").concat(r.id)
@@ -2048,19 +2049,19 @@
                         icon: p.Iw,
                         color: "#6ae3f9",
                         className: "me-2 fa-sm"
-                    }), "Edit"))), u && s.createElement("div", {
+                    }), "Edit"))), S && s.createElement("div", {
                         className: "my-2 tw-flex tw-flex-col"
-                    }, (null == H ? void 0 : H.error) && s.createElement(d.qX, {
+                    }, (null == B ? void 0 : B.error) && s.createElement(d.qX, {
                         type: "error",
                         title: "Failed to update Elasticsearch World data",
-                        message: H.error
-                    }), (null == H ? void 0 : H.updated) && s.createElement(d.qX, {
+                        message: B.error
+                    }), (null == B ? void 0 : B.updated) && s.createElement(d.qX, {
                         type: "success",
                         title: "Success!",
                         message: "Successfully updated Elasticsearch"
                     }), s.createElement(d.zx, {
                         onClick: function() {
-                            S(Yt({
+                            z(Yt({
                                 worldId: null == r ? void 0 : r.id
                             }))
                         }
@@ -2073,18 +2074,19 @@
                     }, s.createElement(d.oI, null, s.createElement(Ot, null, "Active Instances")), s.createElement(d.Ao, null, s.createElement(an, {
                         role: "list",
                         "aria-label": "Active Instance List"
-                    }, r.instances.slice(0, W).filter((function(e) {
-                        return u || e[1] > 0
+                    }, r.instances.slice(0, O).filter((function(e) {
+                        return S || e[1] > 0
                     })).map((function(e) {
                         return s.createElement(tn, {
                             key: e[0],
                             location: "".concat(r.id, ":").concat(e[0]),
-                            players: e[1]
+                            players: e[1],
+                            user: u
                         })
-                    }))), r.instances.length > W && s.createElement(d.zx, {
+                    }))), r.instances.length > O && s.createElement(d.zx, {
                         "aria-label": "Show More Instances",
                         onClick: function() {
-                            return O(W + 60)
+                            return X(O + 60)
                         }
                     }, "Show More Instances"))), s.createElement(At, {
                         worldId: null == r ? void 0 : r.id,
@@ -3334,4 +3336,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f01d50a7def8bc0345863e63bbbbb797d5d0c70c1c704ac8c68ac01e925e17e8.js.map
+//# sourceMappingURL=d769d72536d7adc4927b67be0642aa44dbad004aa7f95d780d4003bd2b854958.js.map
