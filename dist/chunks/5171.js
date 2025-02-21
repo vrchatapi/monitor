@@ -479,13 +479,13 @@
                     onClick: function(e) {
                         e.stopPropagation(), e.preventDefault(), (null != _ && _.includes("permission-user-icons") || null != _ && _.includes("permission-user-gallery")) && (b("/home/gallery"), ee())
                     }
-                }, r.createElement(P, {
+                }, r.createElement(A, {
                     "aria-label": "User Icon",
                     url: re,
                     level: (0, w.FR)({
                         tags: u.tags
                     })
-                }, r.createElement(A, null, r.createElement(U, {
+                }, r.createElement(P, null, r.createElement(U, {
                     icon: f._j,
                     size: "lg"
                 }))), r.createElement(R, null, "Change Icon")), r.createElement(z, null)), !(null === (n = u.badges) || void 0 === n || !n.length) && r.createElement(G, null, u.badges.filter((function(e) {
@@ -578,12 +578,12 @@
                     name: "13p5eg",
                     styles: "display:flex;position:absolute;bottom:-40px;left:10px;width:80px;align-items:center;z-index:3;color:white;&:hover{div:last-child{opacity:1;}svg{opacity:1;}}"
                 }),
-                P = (0, p.Z)("div", {
+                A = (0, p.Z)("div", {
                     target: "esgak1l13"
                 })("border-radius:100%;width:80px;height:80px;border:3px solid #07242b;box-sizing:border-box;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
                 }), ");background-color:#05191d;display:flex;justify-content:center;align-items:center;flex-shrink:0;"),
-                A = (0, p.Z)("div", {
+                P = (0, p.Z)("div", {
                     target: "esgak1l12"
                 })({
                     name: "6828uq",
@@ -694,8 +694,8 @@
                 ze = n(34698),
                 je = n(58877),
                 qe = n(25062);
-            const Pe = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
-            var Ae = n(17219),
+            const Ae = n.p + "2f54c84e8bbcaf0a8801a17b841323d526b4ab69246d311bf460cbbcff173d40.png";
+            var Pe = n(17219),
                 Ue = n(31358);
             const Re = function(e) {
                 var t = e.n,
@@ -1153,13 +1153,13 @@
                         C = (0, a.Z)(I, 2),
                         S = C[0],
                         O = C[1],
-                        z = (0, Ae.y)().data,
+                        z = (0, Pe.y)().data,
                         j = ((0, E.pc)(), (0, d.XC)().data),
                         q = (0, i.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
-                        P = (0, d.q7)().data,
-                        A = void 0 === P ? [] : P,
+                        A = (0, d.q7)().data,
+                        P = void 0 === A ? [] : A,
                         U = (0, E.CZ)().sortedLocations.length,
                         R = (0, i.v9)((function(e) {
                             return e.notifications.groupNotifications
@@ -1180,7 +1180,7 @@
                         W = function() {
                             s && s(!1)
                         },
-                        $ = A || [],
+                        $ = P || [],
                         V = $.includes("permission-user-icons"),
                         L = $.includes("permission-user-gallery"),
                         F = ($.includes("permission-groups-beta"), null !== (t = q.length) && void 0 !== t ? t : 0);
@@ -1515,7 +1515,7 @@
                     }, r.createElement("img", {
                         alt: "subscriptions",
                         width: "25",
-                        src: Pe
+                        src: Ae
                     }), r.createElement("div", null, "Subscriptions"), r.createElement(k.$1, {
                         icon: K.yO
                     })), r.createElement(xt, {
@@ -1596,11 +1596,11 @@
                     }), [a, n]), null
                 },
                 qt = n.p + "4237ca770f17680f3d2d0178803a80813b464ec58fc9ea496c992fcce193d614.jpg";
-            var Pt = r.lazy((function() {
+            var At = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(9923), n.e(5508)]).then(n.bind(n, 5712))
                 })),
-                At = r.lazy((function() {
-                    return Promise.all([n.e(4984), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
+                Pt = r.lazy((function() {
+                    return Promise.all([n.e(2218), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
                 })),
                 Ut = r.lazy((function() {
                     return n.e(3488).then(n.bind(n, 93488))
@@ -1609,7 +1609,7 @@
                     return n.e(6231).then(n.bind(n, 76231))
                 })),
                 Dt = r.lazy((function() {
-                    return Promise.all([n.e(5778), n.e(1435), n.e(4734)]).then(n.bind(n, 87429))
+                    return Promise.all([n.e(123), n.e(3375), n.e(2998), n.e(3294), n.e(2811), n.e(1435), n.e(9664), n.e(1982)]).then(n.bind(n, 11982))
                 })),
                 Mt = r.lazy((function() {
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
@@ -1618,16 +1618,16 @@
                     return Promise.all([n.e(4473), n.e(3023), n.e(390)]).then(n.bind(n, 20390))
                 })),
                 $t = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(2150), n.e(4444), n.e(8890), n.e(9908), n.e(2998), n.e(2045), n.e(347), n.e(4353)]).then(n.bind(n, 82434))
+                    return Promise.all([n.e(123), n.e(2150), n.e(2998), n.e(4444), n.e(8890), n.e(9908), n.e(3294), n.e(9375), n.e(347), n.e(929)]).then(n.bind(n, 82434))
                 })),
                 Vt = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(4444), n.e(5082)]).then(n.bind(n, 74444))
+                    return Promise.all([n.e(123), n.e(4444), n.e(8086)]).then(n.bind(n, 74444))
                 })),
                 Lt = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(9908), n.e(2432)]).then(n.bind(n, 39908))
+                    return Promise.all([n.e(123), n.e(9908), n.e(3713)]).then(n.bind(n, 39908))
                 })),
                 Ft = r.lazy((function() {
-                    return Promise.all([n.e(8744), n.e(8890), n.e(8598)]).then(n.bind(n, 78890))
+                    return Promise.all([n.e(123), n.e(8890), n.e(5491)]).then(n.bind(n, 78890))
                 })),
                 Gt = r.lazy((function() {
                     return n.e(1264).then(n.bind(n, 82296))
@@ -1639,7 +1639,7 @@
                     return Promise.all([n.e(3261), n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
                 Jt = r.lazy((function() {
-                    return Promise.all([n.e(435), n.e(3261), n.e(2998), n.e(347), n.e(2520), n.e(9923), n.e(8158), n.e(4896), n.e(464)]).then(n.bind(n, 50464))
+                    return Promise.all([n.e(435), n.e(3261), n.e(2998), n.e(347), n.e(2811), n.e(9923), n.e(8158), n.e(4896), n.e(464)]).then(n.bind(n, 50464))
                 })),
                 Kt = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
@@ -1663,7 +1663,7 @@
                     return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 nn = r.lazy((function() {
-                    return Promise.all([n.e(4984), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
+                    return Promise.all([n.e(2218), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
                 })),
                 an = r.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
@@ -1678,7 +1678,7 @@
                     return Promise.all([n.e(3261), n.e(8666), n.e(8906)]).then(n.bind(n, 38906))
                 })),
                 cn = r.lazy((function() {
-                    return Promise.all([n.e(4984), n.e(3261), n.e(2998), n.e(2520), n.e(1435), n.e(5777)]).then(n.bind(n, 40525))
+                    return Promise.all([n.e(2218), n.e(3261), n.e(2998), n.e(1435), n.e(5777)]).then(n.bind(n, 40525))
                 }));
             const sn = function() {
                 var e = (0, i.I0)();
@@ -1762,7 +1762,7 @@
                     }))
                 }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/search/:query",
-                    element: r.createElement(At, null)
+                    element: r.createElement(Pt, null)
                 }), r.createElement(o.AW, {
                     path: "/profile",
                     element: r.createElement(Wt, null)
@@ -1872,7 +1872,7 @@
                     element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
                     path: "/",
-                    element: r.createElement(Pt, null)
+                    element: r.createElement(At, null)
                 })))))), r.createElement("div", {
                     className: "fixed-top rightbar ".concat(g ? "open" : "")
                 }, r.createElement(s.SV, {
@@ -1911,7 +1911,7 @@
         },
         31358: (e, t, n) => {
             n.d(t, {
-                Z: () => ze
+                Z: () => Ae
             });
             var a = n(87462),
                 r = n(45987),
@@ -1934,110 +1934,113 @@
                 x = n(16995),
                 w = n(67454),
                 k = n(15405),
-                N = n(22601),
-                T = n(47947),
-                Z = n(53359),
-                I = n(20495),
-                C = n(67992),
-                S = n(95896),
-                O = n(27484),
-                z = n.n(O),
-                j = n(56176),
-                q = n.n(j),
-                P = n(84110),
-                A = n.n(P),
-                U = n(9419),
-                R = n(50249),
-                D = n(13757),
-                M = n(51540),
-                W = n(8792),
-                $ = n(65322),
-                V = n(87589),
-                L = n(4739),
-                F = n(79036),
-                G = n(59660),
-                _ = n(2155),
-                B = n(42619),
-                J = n(96231),
-                K = n(34233),
-                X = n(43714),
-                H = n(86529),
-                Q = n(27879),
-                Y = n(98078),
-                ee = n(12690),
-                te = n(44641),
-                ne = n(13461),
-                ae = n(17319),
-                re = n(20446),
-                ie = n(75386),
-                oe = n(40098),
-                le = n(35117),
-                ce = n(50906),
-                se = n(55346),
-                me = n(61730),
-                ue = n(69323),
-                de = n(20455),
-                pe = n(32731),
-                ge = n(57982),
-                fe = n(98375),
-                he = n(33805),
-                ve = {
+                N = n(95819),
+                T = n(22601),
+                Z = n(87695),
+                I = n(16686),
+                C = n(47947),
+                S = n(53359),
+                O = n(20495),
+                z = n(67992),
+                j = n(95896),
+                q = n(27484),
+                A = n.n(q),
+                P = n(56176),
+                U = n.n(P),
+                R = n(84110),
+                D = n.n(R),
+                M = n(9419),
+                W = n(50249),
+                $ = n(13757),
+                V = n(51540),
+                L = n(8792),
+                F = n(65322),
+                G = n(87589),
+                _ = n(4739),
+                B = n(79036),
+                J = n(59660),
+                K = n(2155),
+                X = n(42619),
+                H = n(96231),
+                Q = n(34233),
+                Y = n(43714),
+                ee = n(86529),
+                te = n(27879),
+                ne = n(98078),
+                ae = n(12690),
+                re = n(44641),
+                ie = n(13461),
+                oe = n(17319),
+                le = n(20446),
+                ce = n(75386),
+                se = n(40098),
+                me = n(35117),
+                ue = n(50906),
+                de = n(55346),
+                pe = n(61730),
+                ge = n(69323),
+                fe = n(20455),
+                he = n(32731),
+                ve = n(57982),
+                be = n(98375),
+                ye = n(33805),
+                Ee = {
                     edit: n(11071).Y,
                     cancel: E.faXmark,
-                    history: he.On,
-                    refresh: fe.faArrowsRotate,
-                    search: ge.faMagnifyingGlass,
-                    settings: pe.faGear,
-                    pin: de.RP,
-                    "arrow-up": ue.FP,
-                    "arrow-down": me.r5,
-                    "arrow-left": se.ac,
-                    "arrow-right": ce.eF,
-                    ban: le.faBan,
+                    history: ye.On,
+                    refresh: be.faArrowsRotate,
+                    search: ve.faMagnifyingGlass,
+                    settings: he.faGear,
+                    pin: fe.RP,
+                    "arrow-up": ge.FP,
+                    "arrow-down": pe.r5,
+                    "arrow-left": de.ac,
+                    "arrow-right": ue.eF,
+                    ban: me.faBan,
                     check: o.LE,
-                    plus: oe.r8,
-                    link: ie.nN,
-                    eye: re.Md,
-                    circle: ae.di,
-                    star: ne.T,
-                    bell: C.qm,
-                    "bell-slash": te.n8,
-                    bookmark: ee.xV,
-                    reply: Y.Lh,
-                    user: Q.IL,
-                    "user-circle": H.m0,
+                    plus: se.r8,
+                    link: ce.nN,
+                    eye: le.Md,
+                    circle: oe.di,
+                    star: ie.T,
+                    bell: z.qm,
+                    "bell-slash": re.n8,
+                    bookmark: ae.xV,
+                    reply: ne.Lh,
+                    user: te.IL,
+                    "user-circle": ee.m0,
                     "user-plus": s.FK,
-                    "user-minus": X.k9,
-                    camera: K._j,
-                    display: J.YV,
-                    trash: B.$,
-                    feather: _.nA,
-                    images: G.l9,
-                    house: F.faHouse,
-                    location: L.iU,
-                    rocket: V.tM,
-                    microphone: $.UO,
-                    "folder-open": W.cC,
-                    gauge: M.Iz,
-                    dice: D.RJ,
-                    "triangle-exclamation": Z.faTriangleExclamation
+                    "user-minus": Y.k9,
+                    camera: Q._j,
+                    display: H.YV,
+                    trash: X.$,
+                    feather: K.nA,
+                    images: J.l9,
+                    house: B.faHouse,
+                    location: _.iU,
+                    rocket: G.tM,
+                    microphone: F.UO,
+                    "folder-open": L.cC,
+                    gauge: V.Iz,
+                    dice: $.RJ,
+                    "triangle-exclamation": S.faTriangleExclamation
                 },
-                be = n(14411),
-                ye = n(88233),
-                Ee = n(2566);
-            z().extend(A()), z().extend(q());
-            var xe = {
+                xe = n(14411),
+                we = n(88233),
+                ke = n(2566);
+            A().extend(D()), A().extend(U());
+            var Ne = {
                     "economy.alert": {
                         caption: "Economy",
-                        icon: R.Z
+                        icon: W.Z
                     },
                     "group.announcement": {
                         caption: "Group Announcement",
-                        icon: C.qm
+                        icon: z.qm
                     },
                     "group.informative": {
                         caption: "Group",
-                        icon: C.qm
+                        icon: z.qm
                     },
                     "group.invite": {
                         caption: "Group Invite",
@@ -2049,31 +2052,43 @@
                     },
                     "group.post": {
                         caption: "Group Post",
-                        icon: C.qm
+                        icon: z.qm
                     },
                     "invite.instance.contentGated": {
                         caption: "Content Gated",
-                        icon: I.faCircleExclamation
+                        icon: O.faCircleExclamation
                     },
                     "moderation.contentrestriction.dmca": {
                         caption: "Content Restricted",
-                        icon: Z.faTriangleExclamation
+                        icon: S.faTriangleExclamation
                     },
                     "moderation.notice": {
                         caption: "Moderation Notice",
-                        icon: Z.faTriangleExclamation
+                        icon: S.faTriangleExclamation
                     },
                     "moderation.warning.group": {
                         caption: "Group Moderation Warning",
-                        icon: Z.faTriangleExclamation
+                        icon: S.faTriangleExclamation
                     },
                     "moderation.report.closed": {
                         caption: "Moderation",
-                        icon: T.JH
+                        icon: C.JH
+                    },
+                    "avatarreview.success": {
+                        caption: "Avatar Approved",
+                        icon: I.faCircleCheck
+                    },
+                    "avatarreview.failure": {
+                        caption: "Avatar Rejected",
+                        icon: Z.faCircleXmark
                     },
                     "promo.redeem": {
                         caption: "Promo",
-                        icon: N.IB
+                        icon: T.IB
+                    },
+                    "badge.earned": {
+                        caption: "Badge Earned",
+                        icon: N.U
                     },
                     "text.adventure": {
                         caption: "Adventure",
@@ -2084,29 +2099,29 @@
                         icon: w.kQ
                     }
                 },
-                we = {
+                Te = {
                     OpenListingDetails: function(e) {
                         e.linkType, e.linkId;
-                        return "/home/marketplace/wallet/subscriptions/".concat(S.yy.EXPIRING)
+                        return "/home/marketplace/wallet/subscriptions/".concat(j.yy.EXPIRING)
                     },
                     OpenExpiredListingDetails: function(e) {
                         e.linkType, e.linkId;
-                        return "/home/marketplace/wallet/subscriptions/".concat(S.yy.EXPIRED)
+                        return "/home/marketplace/wallet/subscriptions/".concat(j.yy.EXPIRED)
                     }
                 },
-                ke = function(e) {
+                Ze = function(e) {
                     var t = e.linkType,
                         n = e.linkId;
                     return "/home/".concat(t, "/").concat(n)
                 },
-                Ne = function(e) {
+                Ie = function(e) {
                     var t, n = e.notificationId,
                         a = e.respondToNotification,
                         r = e.type,
                         i = e.data,
                         o = e.icon,
                         l = e.text;
-                    return "link" === r ? null : u.createElement(Ee.n9, {
+                    return "link" === r ? null : u.createElement(ke.n9, {
                         disabled: "reply" === r,
                         onClick: function() {
                             a({
@@ -2116,11 +2131,11 @@
                             })
                         },
                         title: "reply" === r ? "To reply, open your notifications in VRChat" : l || r
-                    }, u.createElement(be.$1, {
-                        icon: (t = o, ve[t] || t)
+                    }, u.createElement(xe.$1, {
+                        icon: (t = o, Ee[t] || t)
                     }), " ", l || r)
                 };
-            const Te = function(e) {
+            const Ce = function(e) {
                 var t = e.notification,
                     n = e.slim,
                     r = (0, d.I0)(),
@@ -2128,11 +2143,11 @@
                     o = (0, v.Z)(i, 2),
                     l = o[0],
                     c = o[1],
-                    s = (0, U.S5)(),
+                    s = (0, M.S5)(),
                     f = (0, v.Z)(s, 2),
                     h = f[0],
                     w = f[1].isSuccess,
-                    k = (0, U.oS)(),
+                    k = (0, M.oS)(),
                     N = (0, v.Z)(k, 2),
                     T = N[0],
                     Z = N[1].isSuccess,
@@ -2143,7 +2158,7 @@
                             a = (0, v.Z)(n, 2),
                             r = a[0],
                             i = a[1];
-                        if (r) return (we[r] || ke)({
+                        if (r) return (Te[r] || Ze)({
                             linkType: r,
                             linkId: i
                         })
@@ -2152,84 +2167,84 @@
                 (w || Z) && r((0, g.tV)({
                     notificationId: null == t ? void 0 : t.id
                 }));
-                var S = xe[null == t ? void 0 : t.type] || {
+                var S = Ne[null == t ? void 0 : t.type] || {
                         caption: null == t ? void 0 : t.type,
                         icon: x.Ps
                     },
                     O = S.icon,
-                    j = S.caption,
-                    q = t.createdAt && z()(t.createdAt);
-                return u.createElement(u.Fragment, null, u.createElement(Ee.jm, null, u.createElement(Ee.lR, null, u.createElement(Ee.XK, null, u.createElement(be.$1, {
+                    z = S.caption,
+                    j = t.createdAt && A()(t.createdAt);
+                return u.createElement(u.Fragment, null, u.createElement(ke.jm, null, u.createElement(ke.lR, null, u.createElement(ke.XK, null, u.createElement(xe.$1, {
                     icon: O
-                }), " ", u.createElement("i", null, j)), (null == t ? void 0 : t.canDelete) && u.createElement(Ee.Z2, {
+                }), " ", u.createElement("i", null, z)), (null == t ? void 0 : t.canDelete) && u.createElement(ke.Z2, {
                     title: "Dismiss Notification",
                     onClick: function() {
                         T({
                             notificationId: null == t ? void 0 : t.id
                         })
                     }
-                }, u.createElement(be.$1, {
+                }, u.createElement(xe.$1, {
                     icon: E.faXmark
-                }))), u.createElement(Ee.g6, null, t.imageUrl && u.createElement(Ee.rR, {
+                }))), u.createElement(ke.g6, null, t.imageUrl && u.createElement(ke.rR, {
                     to: !0,
                     onClick: function() {
                         c(!0)
                     },
                     statusColor: m.xY.offline.color
-                }, u.createElement(Ee.v_, null, u.createElement(be.$1, {
+                }, u.createElement(ke.v_, null, u.createElement(xe.$1, {
                     icon: y.q9
-                })), u.createElement(Ee.sJ, {
+                })), u.createElement(ke.sJ, {
                     url: t.imageUrl
-                }), u.createElement(Ee.EU, {
+                }), u.createElement(ke.EU, {
                     url: t.imageUrl
-                })), u.createElement(Ee.N2, null, u.createElement(Ee.gp, null, !!C && u.createElement("strong", null, I ? u.createElement(p.rU, {
+                })), u.createElement(ke.N2, null, u.createElement(ke.gp, null, !!C && u.createElement("strong", null, I ? u.createElement(p.rU, {
                     to: I
-                }, C) : C), (null == q ? void 0 : q.isValid()) && u.createElement("p", {
+                }, C) : C), (null == j ? void 0 : j.isValid()) && u.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, u.createElement("small", null, u.createElement("time", {
                     dateTime: t.createdAt,
-                    title: q.format("llll")
-                }, u.createElement(be.$1, {
+                    title: j.format("llll")
+                }, u.createElement(xe.$1, {
                     className: "tw-mr-1",
                     icon: b.SZ
-                }), q.fromNow()))), u.createElement("p", null, t.message)), u.createElement(Ee.tt, {
+                }), j.fromNow()))), u.createElement("p", null, t.message)), u.createElement(ke.tt, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map((function(e) {
-                    return u.createElement(Ne, (0, a.Z)({
+                    return u.createElement(Ie, (0, a.Z)({
                         key: "".concat(null == t ? void 0 : t.id, "-").concat(e.type)
                     }, e, {
                         notificationId: null == t ? void 0 : t.id,
                         respondToNotification: h
                     }))
-                })))))), !!t.imageUrl && l && u.createElement(ye.Z, {
+                })))))), !!t.imageUrl && l && u.createElement(we.Z, {
                     imageUrl: t.imageUrl,
                     closeCallback: function() {
                         c(!1)
                     }
                 }))
             };
-            const Ze = function(e) {
+            const Se = function(e) {
                 var t = e.notification,
                     n = e.senderUserData,
                     a = (0, d.I0)(),
-                    r = (0, U.gS)(),
+                    r = (0, M.gS)(),
                     o = (0, v.Z)(r, 2),
                     c = o[0],
                     s = o[1].isSuccess,
-                    p = (0, U.pX)(),
+                    p = (0, M.pX)(),
                     f = (0, v.Z)(p, 1)[0],
                     h = n.profilePicOverride || n.currentAvatarThumbnailImageUrl;
                 return s && a((0, g.tV)({
                     notificationId: t.id
-                })), u.createElement(Ee.jm, null, u.createElement(Ee.XK, null, u.createElement(be.$1, {
+                })), u.createElement(ke.jm, null, u.createElement(ke.XK, null, u.createElement(xe.$1, {
                     icon: l.FU
-                }), "  ", u.createElement("i", null, "System Message")), u.createElement(Ee.g6, null, u.createElement(Ee.gt, {
+                }), "  ", u.createElement("i", null, "System Message")), u.createElement(ke.g6, null, u.createElement(ke.gt, {
                     statusColor: m.xY.offline.color
-                }, u.createElement(Ee.sJ, {
+                }, u.createElement(ke.sJ, {
                     url: h
-                }), u.createElement(Ee.EU, {
+                }), u.createElement(ke.EU, {
                     url: h
-                })), u.createElement(Ee.N2, null, u.createElement(Ee.gp, null, u.createElement("strong", null, "System Message"), " - ", t.message), u.createElement(Ee.tt, null, u.createElement(Ee.n9, {
+                })), u.createElement(ke.N2, null, u.createElement(ke.gp, null, u.createElement("strong", null, "System Message"), " - ", t.message), u.createElement(ke.tt, null, u.createElement(ke.n9, {
                     onClick: function() {
                         c({
                             notificationId: t.id
@@ -2239,12 +2254,12 @@
                     },
                     color: "primary",
                     title: "Close"
-                }, u.createElement(be.$1, {
+                }, u.createElement(xe.$1, {
                     icon: i.NB
                 }), " Close")))))
             };
-            var Ie = ["notification"],
-                Ce = {
+            var Oe = ["notification"],
+                ze = {
                     friendRequest: s.FK,
                     "friend-add": s.FK,
                     invite: l.FU,
@@ -2253,7 +2268,7 @@
                     inviteResponse: c.dw,
                     message: l.FU
                 },
-                Se = {
+                je = {
                     friendRequest: "Friend Request",
                     "friend-add": "Friend Status",
                     invite: "Invite",
@@ -2262,10 +2277,10 @@
                     inviteResponse: "Invite Response",
                     message: "System Message"
                 },
-                Oe = ["friend-active", "friend-add", "friend-online"];
-            const ze = function(e) {
+                qe = ["friend-active", "friend-add", "friend-online"];
+            const Ae = function(e) {
                 var t, n, l, c, s, v, b, y, E = e.notification,
-                    x = (0, r.Z)(e, Ie),
+                    x = (0, r.Z)(e, Oe),
                     w = (0, d.I0)(),
                     k = E.type,
                     N = E.senderUserId,
@@ -2280,48 +2295,48 @@
                     z = O.data,
                     j = O.isLoading,
                     q = O.error;
-                if (C) return u.createElement(Te, (0, a.Z)({}, x, {
+                if (C) return u.createElement(Ce, (0, a.Z)({}, x, {
                     notification: E
                 }));
                 if (j) return u.createElement("p", null, "Loading");
-                if (S) return u.createElement(Ze, (0, a.Z)({}, x, {
+                if (S) return u.createElement(Se, (0, a.Z)({}, x, {
                     notification: E,
                     senderUserData: z
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var P, A = Ce[k],
-                    U = Se[k],
+                var A, P = ze[k],
+                    U = je[k],
                     R = (0, m.Tq)(z.status).color,
                     D = z.profilePicOverride || z.currentAvatarThumbnailImageUrl,
                     M = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = E.details) || void 0 === l ? void 0 : l.requestMessage);
-                return u.createElement(Ee.jm, null, u.createElement(Ee.XK, null, u.createElement(be.$1, {
-                    icon: A
-                }), "  ", u.createElement("i", null, U)), u.createElement(Ee.g6, null, u.createElement(Ee.rR, {
+                return u.createElement(ke.jm, null, u.createElement(ke.XK, null, u.createElement(xe.$1, {
+                    icon: P
+                }), "  ", u.createElement("i", null, U)), u.createElement(ke.g6, null, u.createElement(ke.rR, {
                     to: "/home/user/".concat(N),
                     statusColor: R
-                }, !(null !== (c = E.details) && void 0 !== c && c.imageUrl) && u.createElement(Ee.v_, null, "Go To Profile"), u.createElement(Ee.sJ, {
+                }, !(null !== (c = E.details) && void 0 !== c && c.imageUrl) && u.createElement(ke.v_, null, "Go To Profile"), u.createElement(ke.sJ, {
                     url: null !== (s = null === (v = E.details) || void 0 === v ? void 0 : v.imageUrl) && void 0 !== s ? s : D
-                }), u.createElement(Ee.EU, {
+                }), u.createElement(ke.EU, {
                     url: null !== (b = null === (y = E.details) || void 0 === y ? void 0 : y.imageUrl) && void 0 !== b ? b : D
-                })), u.createElement(Ee.N2, null, u.createElement(Ee.gp, null, u.createElement(p.rU, {
+                })), u.createElement(ke.N2, null, u.createElement(ke.gp, null, u.createElement(p.rU, {
                     to: "/home/user/".concat(N)
                 }, u.createElement("strong", null, z.displayName)), " - ", Z || {
                     friendRequest: "would like to be your friend!",
-                    invite: "has invited you to ".concat((null === (P = E.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
+                    invite: "has invited you to ".concat((null === (A = E.details) || void 0 === A ? void 0 : A.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
                     requestInviteResponse: "has declined your invite request.",
                     inviteResponse: "has declined your invite."
-                } [k]), "friendRequest" === k ? u.createElement(Ee.tt, null, u.createElement(Ee.n9, {
+                } [k]), "friendRequest" === k ? u.createElement(ke.tt, null, u.createElement(ke.n9, {
                     onClick: function() {
                         return w((0, g.yK)({
                             notificationId: T,
-                            withServer: !Oe.includes(E.type)
+                            withServer: !qe.includes(E.type)
                         }))
                     },
                     color: "secondary"
-                }, u.createElement(be.$1, {
+                }, u.createElement(xe.$1, {
                     icon: i.NB
-                })), u.createElement(Ee.n9, {
+                })), u.createElement(ke.n9, {
                     onClick: function() {
                         w((0, g.FC)({
                             notificationId: E.id
@@ -2331,19 +2346,19 @@
                         })
                     },
                     color: "primary"
-                }, u.createElement(be.$1, {
+                }, u.createElement(xe.$1, {
                     icon: o.LE
-                }))) : u.createElement(Ee.tt, null, u.createElement(Ee.n9, {
+                }))) : u.createElement(ke.tt, null, u.createElement(ke.n9, {
                     onClick: function() {
                         return w((0, g.yK)({
                             notificationId: T,
-                            withServer: !Oe.includes(E.type)
+                            withServer: !qe.includes(E.type)
                         }))
                     },
                     color: "secondary"
-                }, u.createElement(be.$1, {
+                }, u.createElement(xe.$1, {
                     icon: i.NB
-                })), "invite" === k && u.createElement(Ee.n9, {
+                })), "invite" === k && u.createElement(ke.n9, {
                     onClick: function() {
                         window.open(function() {
                             var e;
@@ -2356,7 +2371,7 @@
                         }())
                     },
                     color: "secondary"
-                }, u.createElement("strong", null, "Join"))))), M && u.createElement(Ee.hH, null, '"', M, '"'))
+                }, u.createElement("strong", null, "Join"))))), M && u.createElement(ke.hH, null, '"', M, '"'))
             }
         },
         2566: (e, t, n) => {
@@ -2860,4 +2875,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ac28dde2cae17aeec9aac9157ccca8755acb1af8adbf4045512e00f700a41853.js.map
+//# sourceMappingURL=e3d2295514bd0d098d2e4e568acddc5cfe925b7e51aaed3318aa6a516f38453d.js.map

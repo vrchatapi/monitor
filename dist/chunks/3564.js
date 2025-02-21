@@ -62,19 +62,19 @@
                 label: "Instant",
                 value: "instant",
                 text: "Single-use items triggered instantly.",
-                redriect: "https://creators.vrchat.com/economy/listings#instant",
+                redirect: "https://creators.vrchat.com/economy/listings#instant",
                 icon: O.BD
             }, {
                 label: "Temporary",
                 value: "duration",
                 text: "Offer access for a limited time.",
-                redriect: "https://creators.vrchat.com/economy/listings#temporary",
+                redirect: "https://creators.vrchat.com/economy/listings#temporary",
                 icon: T.DH
             }, {
                 label: "Permanent",
                 value: "permanent",
                 text: "Lifetime access to exclusive zones or features.",
-                redriect: "https://creators.vrchat.com/economy/listings#permanent",
+                redirect: "https://creators.vrchat.com/economy/listings#permanent",
                 image: N
             }];
             const D = function(e) {
@@ -116,7 +116,7 @@
                     }), e.label, b.createElement("small", {
                         className: "tw-m-0 tw-text-xs tw-text-light-grey"
                     }, e.text, " ", b.createElement("a", {
-                        href: e.redriect
+                        href: e.redirect
                     }, "Learn More")))
                 }))))
             };
@@ -311,4 +311,4 @@
         }
     }
 ]);
-//# sourceMappingURL=692d0fbb55c126f8bc0d4e383c0ed02039b8c2e1215529f313817dadad35cb4e.js.map
+//# sourceMappingURL=7e17cbb2eb7a859391ea7d3b7d860425af02d98e935c7790c6ebc9e149b731dc.js.map

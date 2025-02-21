@@ -147,7 +147,7 @@
         },
         36418: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => R
+                default: () => D
             });
             var n = r(15861),
                 a = r(15671),
@@ -158,25 +158,25 @@
                 c = r(64687),
                 l = r.n(c),
                 f = r(67294),
-                d = r(32981),
-                p = r(79655),
+                p = r(32981),
+                d = r(79655),
                 v = r(35773),
                 y = r(95305),
                 h = r(9669),
                 m = r.n(h),
                 g = r(85533),
                 b = r(14411),
-                E = r(7826),
-                O = r(54546),
-                x = r(45528),
-                A = r(66770),
-                w = r(64258),
+                O = r(7826),
+                E = r(54546),
+                A = r(45528),
+                w = r(66770),
+                x = r(64258),
                 j = r(62437),
                 P = r(21538),
                 T = r(17219),
                 I = r(22202);
-            const Z = function() {
-                var e, t, r = (0, d.I0)(),
+            const S = function() {
+                var e, t, r = (0, p.I0)(),
                     n = (0, I.XC)().data,
                     a = (0, j.DD)(null == n ? void 0 : n.id, {
                         skip: !(null != n && n.id)
@@ -187,13 +187,13 @@
                     u = a.isError,
                     c = (0, T.y)().data,
                     l = (void 0 === c ? {} : c).defaultAvatar,
-                    p = (0, P.x8)(),
-                    h = (0, O.Z)(p, 2),
+                    d = (0, P.x8)(),
+                    h = (0, E.Z)(d, 2),
                     m = h[0],
                     g = h[1],
-                    E = g.isLoading,
-                    Z = g.isError,
-                    k = g.error;
+                    O = g.isLoading,
+                    S = g.isError,
+                    Z = g.error;
                 return f.createElement("div", null, f.createElement(v.Z, null, f.createElement(y.Z, {
                     xs: "12"
                 }, f.createElement("h2", null, "Current Avatar"))), f.createElement(v.Z, null, f.createElement(y.Z, {
@@ -203,7 +203,7 @@
                     width: "100%",
                     height: "160px",
                     className: "my-2"
-                }) : !u && o && f.createElement(A.Z, {
+                }) : !u && o && f.createElement(w.Z, {
                     data: o
                 }), u && f.createElement(b.qX, {
                     type: "error",
@@ -216,25 +216,25 @@
                     onClick: function() {
                         n && l && (m({
                             avatarId: l
-                        }), r((0, w.d)({
+                        }), r((0, x.d)({
                             title: "Avatar reset",
-                            icon: x.hn,
+                            icon: A.hn,
                             message: "You've reset your avatar to default! You'll see this change next time you load into a world.",
                             color: "success"
                         })))
                     },
-                    loading: i || E,
+                    loading: i || O,
                     neutral: !0
                 }, f.createElement(b.$1, {
-                    icon: x.hn
-                }), " Reset to Default Avatar"), Z && f.createElement(b.qX, {
+                    icon: A.hn
+                }), " Reset to Default Avatar"), S && f.createElement(b.qX, {
                     type: "error",
                     title: "Failed to reset avatar",
-                    message: null === (t = k.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message
+                    message: null === (t = Z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message
                 }))))
             };
 
-            function k(e) {
+            function Z(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -254,9 +254,9 @@
                     return (0, s.Z)(this, r)
                 }
             }
-            var S = function(e) {
+            var k = function(e) {
                 (0, i.Z)(s, e);
-                var t, r = k(s);
+                var t, r = Z(s);
 
                 function s(e) {
                     var t;
@@ -294,21 +294,21 @@
                     value: function() {
                         return f.createElement(v.Z, null, f.createElement(y.Z, {
                             xs: "12"
-                        }, f.createElement(g.Z, null, "Avatars"), f.createElement(Z, null), f.createElement(b.qX, {
+                        }, f.createElement(g.Z, null, "Avatars"), f.createElement(S, null), f.createElement(b.qX, {
                             type: "success",
                             title: "Favorite Avatars have moved!",
                             className: "my-4",
                             hideIcon: !0
-                        }, "They now have a new and improved home ", f.createElement(p.rU, {
+                        }, "They now have a new and improved home ", f.createElement(d.rU, {
                             to: "/home/favorites/avatar"
-                        }, "here")), f.createElement(E.Z, {
+                        }, "here")), f.createElement(O.Z, {
                             title: "My Avatars",
                             releaseStatus: "all",
                             user: "me",
                             sort: "updated",
                             order: "descending",
                             hideAuthor: !0
-                        }), this.state.licences.length > 0 && f.createElement(E.Z, {
+                        }), this.state.licences.length > 0 && f.createElement(O.Z, {
                             title: "Granted Avatars",
                             releaseStatus: "all",
                             sort: "updated",
@@ -316,7 +316,7 @@
                             user: "me",
                             licenses: this.state.licences,
                             hideAuthor: !0
-                        }), f.createElement(E.Z, {
+                        }), f.createElement(O.Z, {
                             title: "Featured Avatars",
                             releaseStatus: "public",
                             featured: "true",
@@ -326,9 +326,9 @@
                     }
                 }]), s
             }(f.Component);
-            const R = (0, d.$j)((function(e) {
+            const D = (0, p.$j)((function(e) {
                 return {}
-            }))(S)
+            }))(k)
         },
         11e3: (e, t, r) => {
             r.d(t, {
@@ -412,8 +412,8 @@
                 c = r(42619),
                 l = r(67294),
                 f = r(32981),
-                d = r(34698),
-                p = r(14411),
+                p = r(34698),
+                d = r(14411),
                 v = r(411);
 
             function y(e) {
@@ -467,11 +467,11 @@
                         } catch (t) {
                             console.error(t), e = !1
                         }
-                        return e ? l.createElement(d.Z, {
+                        return e ? l.createElement(p.Z, {
                             color: "primary",
                             title: "Remove Favorite",
                             onClick: this.unFavorite
-                        }, l.createElement(p.$1, {
+                        }, l.createElement(d.$1, {
                             icon: c.$
                         }), " Remove Favorite") : null
                     }
@@ -485,35 +485,38 @@
         },
         21538: (e, t, r) => {
             r.d(t, {
-                Cm: () => g,
-                EA: () => O,
-                F6: () => f,
-                GG: () => b,
-                Gy: () => E,
-                LQ: () => p,
-                X8: () => x,
-                ak: () => m,
-                cq: () => h,
-                lx: () => d,
-                ve: () => v,
-                x8: () => y
+                C0: () => T,
+                CO: () => g,
+                Cm: () => j,
+                EA: () => h,
+                F6: () => m,
+                GG: () => v,
+                Gy: () => P,
+                LQ: () => O,
+                X8: () => y,
+                ak: () => x,
+                cq: () => w,
+                lx: () => b,
+                ve: () => E,
+                x8: () => A
             });
             var n = r(42138),
                 a = r(15861),
-                o = r(64687),
-                i = r.n(o),
-                s = r(61509);
+                o = r(4942),
+                i = r(64687),
+                s = r.n(i),
+                u = r(61509);
 
-            function u(e, t) {
+            function c(e, t) {
                 var r = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!r) {
                     if (Array.isArray(e) || (r = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return c(e, t);
+                            if ("string" == typeof e) return l(e, t);
                             var r = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === r && e.constructor && (r = e.constructor.name);
                             if ("Map" === r || "Set" === r) return Array.from(e);
-                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return c(e, t)
+                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         r && (e = r);
                         var n = 0,
@@ -559,14 +562,66 @@
                 }
             }
 
-            function c(e, t) {
+            function l(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                 return n
             }
-            var l = s.S.injectEndpoints({
+
+            function f(e, t) {
+                var r = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var n = Object.getOwnPropertySymbols(e);
+                    t && (n = n.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), r.push.apply(r, n)
+                }
+                return r
+            }
+
+            function p(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? f(Object(r), !0).forEach((function(t) {
+                        (0, o.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : f(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+                    }))
+                }
+                return e
+            }
+            var d = u.S.injectEndpoints({
                     endpoints: function(e) {
                         return {
+                            getAllAvatarStyles: e.query({
+                                query: function() {
+                                    return {
+                                        url: "/avatarStyles"
+                                    }
+                                },
+                                providesTags: ["AvatarStyles"]
+                            }),
+                            updateAvatar: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId,
+                                        r = e.data;
+                                    return {
+                                        url: "/avatars/".concat(t),
+                                        method: "PUT",
+                                        body: p(p(p({}, r), null !== r.styles.primary ? {
+                                            primaryStyle: r.styles.primary
+                                        } : {}), null !== r.styles.secondary ? {
+                                            secondaryStyle: r.styles.secondary
+                                        } : {})
+                                    }
+                                },
+                                invalidatesTags: (0, u.T)((function(e) {
+                                    e.avatarId;
+                                    return [{
+                                        type: "Avatar"
+                                    }]
+                                }))
+                            }),
                             selectAvatar: e.mutation({
                                 query: function(e) {
                                     var t = e.avatarId;
@@ -579,15 +634,22 @@
                             }),
                             getAvatar: e.query({
                                 query: function(e) {
-                                    var t = e.avatarId;
+                                    var t = e.avatarId,
+                                        r = e.getListingData,
+                                        n = void 0 !== r && r;
                                     return {
-                                        url: "/avatars/".concat(t)
+                                        url: "/avatars/".concat(t),
+                                        params: {
+                                            getListingData: n
+                                        }
                                     }
                                 },
                                 providesTags: function(e, t, r) {
+                                    var n = r.avatarId,
+                                        a = r.getListingData;
                                     return [{
                                         type: "Avatar",
-                                        id: r.avatarId
+                                        id: "".concat(n, "-").concat(a ? "withListingData" : "")
                                     }]
                                 }
                             }),
@@ -602,7 +664,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(e) {
+                                invalidatesTags: (0, u.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -620,7 +682,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(e) {
+                                invalidatesTags: (0, u.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -639,7 +701,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(e) {
+                                invalidatesTags: (0, u.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -654,7 +716,7 @@
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: ["CurrentAvatar"]
+                                invalidatesTags: ["CurrentAvatar", "Avatar"]
                             }),
                             wearAvatar: e.mutation({
                                 query: function(e) {
@@ -674,7 +736,7 @@
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(e) {
+                                invalidatesTags: (0, u.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -689,7 +751,7 @@
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(e) {
+                                invalidatesTags: (0, u.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -704,56 +766,56 @@
                                 }
                             }),
                             getAllAvatars: e.query({
-                                queryFn: (r = (0, a.Z)(i().mark((function e(t, r, a, o) {
-                                    var s, u, c, l, f, d, p, v, y, h, m, g, b, E, O, x, A, w, j, P, T, I, Z, k, S, R, N;
-                                    return i().wrap((function(e) {
+                                queryFn: (r = (0, a.Z)(s().mark((function e(t, r, a, o) {
+                                    var i, u, c, l, f, p, d, v, y, h, m, g, b, O, E, A, w, x, j, P, T, I, S, Z, k, D, R;
+                                    return s().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                s = t.sort, u = void 0 === s ? "updated" : s, c = t.order, l = void 0 === c ? "descending" : c, f = t.releaseStatus, d = void 0 === f ? "all" : f, p = t.user, v = void 0 === p ? "me" : p, y = t.organization, h = void 0 === y ? "vrchat" : y, m = t.n, g = void 0 === m ? 20 : m, b = t.featured, E = t.userId, O = t.search, x = t.tag, A = t.notag, w = t.platform, j = t.maxUnityVersion, P = t.minUnityVersion, T = t.exactUnityVersion, I = t.minAssetVersion, Z = t.maxAssetVersion, k = t.exactAssetVersion, S = [], R = 0;
+                                                i = t.sort, u = void 0 === i ? "updated" : i, c = t.order, l = void 0 === c ? "descending" : c, f = t.releaseStatus, p = void 0 === f ? "all" : f, d = t.user, v = void 0 === d ? "me" : d, y = t.organization, h = void 0 === y ? "vrchat" : y, m = t.n, g = void 0 === m ? 20 : m, b = t.featured, O = t.userId, E = t.search, A = t.tag, w = t.notag, x = t.platform, j = t.maxUnityVersion, P = t.minUnityVersion, T = t.exactUnityVersion, I = t.minAssetVersion, S = t.maxAssetVersion, Z = t.exactAssetVersion, k = [], D = 0;
                                             case 3:
                                                 return e.next = 6, o({
                                                     url: "avatars",
                                                     params: {
-                                                        exactAssetVersion: k,
+                                                        exactAssetVersion: Z,
                                                         exactUnityVersion: T,
                                                         featured: b,
-                                                        maxAssetVersion: Z,
+                                                        maxAssetVersion: S,
                                                         maxUnityVersion: j,
                                                         minAssetVersion: I,
                                                         minUnityVersion: P,
                                                         n: g,
-                                                        notag: A,
-                                                        offset: R,
+                                                        notag: w,
+                                                        offset: D,
                                                         order: l,
                                                         organization: h,
-                                                        platform: w,
-                                                        releaseStatus: d,
-                                                        search: O,
+                                                        platform: x,
+                                                        releaseStatus: p,
+                                                        search: E,
                                                         sort: u,
-                                                        tag: x,
+                                                        tag: A,
                                                         user: v,
-                                                        userId: E
+                                                        userId: O
                                                     }
                                                 });
                                             case 6:
-                                                if (!(N = e.sent).error) {
+                                                if (!(R = e.sent).error) {
                                                     e.next = 9;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: N.error
+                                                    error: R.error
                                                 });
                                             case 9:
-                                                if (!(N.data.length > 0)) {
+                                                if (!(R.data.length > 0)) {
                                                     e.next = 13;
                                                     break
                                                 }
-                                                return S.push.apply(S, (0, n.Z)(N.data)), R += g, e.abrupt("continue", 3);
+                                                return k.push.apply(k, (0, n.Z)(R.data)), D += g, e.abrupt("continue", 3);
                                             case 13:
                                                 return e.abrupt("break", 16);
                                             case 16:
                                                 return e.abrupt("return", {
-                                                    data: S
+                                                    data: k
                                                 });
                                             case 17:
                                             case "end":
@@ -762,7 +824,13 @@
                                     }), e)
                                 }))), function(e, t, n, a) {
                                     return r.apply(this, arguments)
-                                })
+                                }),
+                                providesTags: function(e, t) {
+                                    return [{
+                                        type: "Avatars",
+                                        id: "LIST"
+                                    }]
+                                }
                             }),
                             getFavoriteAvatars: e.query({
                                 query: function(e) {
@@ -785,18 +853,18 @@
                                 }
                             }),
                             getAllFavoriteAvatars: e.query({
-                                queryFn: (t = (0, a.Z)(i().mark((function e() {
-                                    var t, r, a, o, s, c, l, f, d, p, v, y, h, m = arguments;
-                                    return i().wrap((function(e) {
+                                queryFn: (t = (0, a.Z)(s().mark((function e() {
+                                    var t, r, a, o, i, u, l, f, p, d, v, y, h, m = arguments;
+                                    return s().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                r = (t = m.length > 0 && void 0 !== m[0] ? m[0] : {}).tag, a = t.tags, o = t.userId, s = t.groups, c = void 0 === s ? [] : s, l = m.length > 3 ? m[3] : void 0, f = [], d = u(r ? [r] : c), e.prev = 7, d.s();
+                                                r = (t = m.length > 0 && void 0 !== m[0] ? m[0] : {}).tag, a = t.tags, o = t.userId, i = t.groups, u = void 0 === i ? [] : i, l = m.length > 3 ? m[3] : void 0, f = [], p = c(r ? [r] : u), e.prev = 7, p.s();
                                             case 9:
-                                                if ((p = d.n()).done) {
+                                                if ((d = p.n()).done) {
                                                     e.next = 27;
                                                     break
                                                 }
-                                                v = p.value, y = 0;
+                                                v = d.value, y = 0;
                                             case 12:
                                                 return e.next = 15, l({
                                                     url: "avatars/favorites",
@@ -831,9 +899,9 @@
                                                 e.next = 32;
                                                 break;
                                             case 29:
-                                                e.prev = 29, e.t0 = e.catch(7), d.e(e.t0);
+                                                e.prev = 29, e.t0 = e.catch(7), p.e(e.t0);
                                             case 32:
-                                                return e.prev = 32, d.f(), e.finish(32);
+                                                return e.prev = 32, p.f(), e.finish(32);
                                             case 35:
                                                 return e.abrupt("return", {
                                                     data: f
@@ -861,20 +929,22 @@
                     },
                     overrideExisting: !1
                 }).enhanceEndpoints({
-                    addTagTypes: ["FavoriteAvatars"]
+                    addTagTypes: ["Avatars", "FavoriteAvatars"]
                 }),
-                f = l.useGetAllAvatarsQuery,
-                d = l.useGetAllFavoriteAvatarsQuery,
-                p = l.useGetAvatarQuery,
-                v = (l.useGetFavoriteAvatarsQuery, l.useGetImpostorQueueStatsQuery),
-                y = l.useSelectAvatarMutation,
-                h = l.useSetAvatarPrivateMutation,
-                m = l.useSetAvatarPublicMutation,
-                g = l.useSetAvatarTagsMutation,
-                b = l.useDeleteAvatarMutation,
-                E = l.useWearAvatarMutation,
-                O = l.useEnqueueImpostorMutation,
-                x = l.useDeleteImpostorsMutation
+                v = d.useDeleteAvatarMutation,
+                y = d.useDeleteImpostorsMutation,
+                h = d.useEnqueueImpostorMutation,
+                m = d.useGetAllAvatarsQuery,
+                g = d.useGetAllAvatarStylesQuery,
+                b = d.useGetAllFavoriteAvatarsQuery,
+                O = d.useGetAvatarQuery,
+                E = (d.useGetFavoriteAvatarsQuery, d.useGetImpostorQueueStatsQuery),
+                A = d.useSelectAvatarMutation,
+                w = d.useSetAvatarPrivateMutation,
+                x = d.useSetAvatarPublicMutation,
+                j = d.useSetAvatarTagsMutation,
+                P = d.useWearAvatarMutation,
+                T = d.useUpdateAvatarMutation
         },
         54610: (e, t, r) => {
             r.d(t, {
@@ -913,28 +983,28 @@
                 }
                 return a
             }
-            var d = {
+            var p = {
                 className: o().string,
                 cssModule: o().object,
                 innerRef: o().oneOfType([o().object, o().string, o().func]),
                 tag: u.iC
             };
 
-            function p(e) {
+            function d(e) {
                 var t = e.className,
                     r = e.cssModule,
                     a = e.innerRef,
                     o = e.tag,
                     i = void 0 === o ? "div" : o,
-                    d = f(e, c),
-                    p = (0, u.mx)(s()(t, "card-body"), r);
-                return n.createElement(i, l({}, d, {
-                    className: p,
+                    p = f(e, c),
+                    d = (0, u.mx)(s()(t, "card-body"), r);
+                return n.createElement(i, l({}, p, {
+                    className: d,
                     ref: a
                 }))
             }
-            p.propTypes = d;
-            const v = p
+            d.propTypes = p;
+            const v = d
         },
         56599: (e, t, r) => {
             r.d(t, {
@@ -973,25 +1043,25 @@
                 }
                 return a
             }
-            var d = {
+            var p = {
                 className: o().string,
                 cssModule: o().object,
                 tag: u.iC
             };
 
-            function p(e) {
+            function d(e) {
                 var t = e.className,
                     r = e.cssModule,
                     a = e.tag,
                     o = void 0 === a ? "div" : a,
                     i = f(e, c),
-                    d = (0, u.mx)(s()(t, "card-header"), r);
+                    p = (0, u.mx)(s()(t, "card-header"), r);
                 return n.createElement(o, l({}, i, {
-                    className: d
+                    className: p
                 }))
             }
-            p.propTypes = d;
-            const v = p
+            d.propTypes = p;
+            const v = d
         },
         65706: (e, t, r) => {
             r.d(t, {
@@ -1012,16 +1082,16 @@
                     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
                 }, l(e)
             }
-            var f, d = ["tag", "horizontal", "isOpen", "className", "navbar", "cssModule", "children", "innerRef"];
+            var f, p = ["tag", "horizontal", "isOpen", "className", "navbar", "cssModule", "children", "innerRef"];
 
-            function p() {
-                return p = Object.assign ? Object.assign.bind() : function(e) {
+            function d() {
+                return d = Object.assign ? Object.assign.bind() : function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var r = arguments[t];
                         for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
                     }
                     return e
-                }, p.apply(this, arguments)
+                }, d.apply(this, arguments)
             }
 
             function v(e, t) {
@@ -1089,7 +1159,7 @@
                 }, b(e)
             }
 
-            function E(e, t) {
+            function O(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -1100,19 +1170,19 @@
                 return r
             }
 
-            function O(e) {
+            function E(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? E(Object(r), !0).forEach((function(t) {
-                        x(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : E(Object(r)).forEach((function(t) {
+                    t % 2 ? O(Object(r), !0).forEach((function(t) {
+                        A(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : O(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
 
-            function x(e, t, r) {
+            function A(e, t, r) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: r,
                     enumerable: !0,
@@ -1120,7 +1190,7 @@
                     writable: !0
                 }) : e[t] = r, e
             }
-            var A = O(O({}, u.ZP.propTypes), {}, {
+            var w = E(E({}, u.ZP.propTypes), {}, {
                     horizontal: o().bool,
                     isOpen: o().bool,
                     children: o().oneOfType([o().arrayOf(o().node), o().node]),
@@ -1132,7 +1202,7 @@
                         current: o().object
                     })
                 }),
-                w = O(O({}, u.ZP.defaultProps), {}, {
+                x = E(E({}, u.ZP.defaultProps), {}, {
                     horizontal: !1,
                     isOpen: !1,
                     appear: !1,
@@ -1141,7 +1211,7 @@
                     tag: "div",
                     timeout: c.wF.Collapse
                 }),
-                j = (x(f = {}, c.E5.ENTERING, "collapsing"), x(f, c.E5.ENTERED, "collapse show"), x(f, c.E5.EXITING, "collapsing"), x(f, c.E5.EXITED, "collapse"), f);
+                j = (A(f = {}, c.E5.ENTERING, "collapsing"), A(f, c.E5.ENTERED, "collapse show"), A(f, c.E5.EXITING, "collapsing"), A(f, c.E5.EXITED, "collapse"), f);
             var P = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
@@ -1229,11 +1299,11 @@
                             l = t.navbar,
                             f = t.cssModule,
                             y = t.children,
-                            h = (t.innerRef, v(t, d)),
+                            h = (t.innerRef, v(t, p)),
                             m = this.state.dimension,
                             g = (0, c.ei)(h, c.rb),
                             b = (0, c.CE)(h, c.rb);
-                        return n.createElement(u.ZP, p({}, g, {
+                        return n.createElement(u.ZP, d({}, g, {
                             in: o,
                             nodeRef: this.nodeRef,
                             onEntering: this.onEntering,
@@ -1246,9 +1316,9 @@
                                     return j[e] || "collapse"
                                 }(t),
                                 u = (0, c.mx)(s()(i, a && "collapse-horizontal", o, l && "navbar-collapse"), f),
-                                d = null === m ? null : x({}, a ? "width" : "height", m);
-                            return n.createElement(r, p({}, b, {
-                                style: O(O({}, b.style), d),
+                                p = null === m ? null : A({}, a ? "width" : "height", m);
+                            return n.createElement(r, d({}, b, {
+                                style: E(E({}, b.style), p),
                                 className: u,
                                 ref: e.nodeRef
                             }), y)
@@ -1258,9 +1328,9 @@
                     writable: !1
                 }), i
             }(n.Component);
-            P.propTypes = A, P.defaultProps = w;
+            P.propTypes = w, P.defaultProps = x;
             const T = P
         }
     }
 ]);
-//# sourceMappingURL=edee86f1990bfbb6eea50737e866eb7a8a6adc0dec96667d6ad14c29e5898ab8.js.map
+//# sourceMappingURL=521212101f0653f6bf23d8352b9de61d262c95e9ed1f45eac6ec4c2bef614002.js.map

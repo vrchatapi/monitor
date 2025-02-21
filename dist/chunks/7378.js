@@ -3,7 +3,7 @@
     [7378], {
         87378: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => x
+                default: () => A
             });
             var r = a(15861),
                 n = a(54546),
@@ -18,54 +18,54 @@
                 v = a(89250),
                 p = a(64258),
                 f = a(12752),
-                b = a(21538),
-                g = a(22082),
-                y = a(1208),
+                y = a(21538),
+                b = a(22082),
+                g = a(1208),
                 h = a(14411);
             var E = {
                 name: "1k1xm34",
                 styles: "padding-bottom:1.75rem"
             };
-            const x = function() {
-                var e, t, a, o, l, u, x, M, N, j = (0, v.UO)().jamId,
-                    X = (0, m.I0)(),
-                    Z = (0, v.s0)(),
-                    L = (0, g.oE)(void 0, {
+            const A = function() {
+                var e, t, a, o, l, u, A, C, D, M = (0, v.UO)().jamId,
+                    L = (0, m.I0)(),
+                    N = (0, v.s0)(),
+                    O = (0, b.oE)(void 0, {
                         selectFromResult: function(e) {
                             var t = e.data;
                             return {
                                 data: null == t ? void 0 : t.find((function(e) {
-                                    return e.id === j
+                                    return e.id === M
                                 }))
                             }
                         }
                     }),
-                    D = L.data,
-                    F = L.isLoading,
-                    U = L.isError,
-                    J = (0, f.Tu)().user,
-                    P = (0, g.Zv)({
-                        jamId: j,
-                        submitterId: null == J ? void 0 : J.id
+                    P = O.data,
+                    Z = O.isLoading,
+                    X = O.isError,
+                    U = (0, f.Tu)().user,
+                    F = (0, b.Zv)({
+                        jamId: M,
+                        submitterId: null == U ? void 0 : U.id
                     }, {
-                        skip: !(null != J && J.id)
+                        skip: !(null != U && U.id)
                     }),
-                    V = P.data,
-                    G = P.isLoading,
-                    R = (0, g.Pc)(),
-                    z = (0, n.Z)(R, 2),
-                    Q = z[0],
-                    Y = z[1],
-                    O = Y.isLoading,
-                    _ = Y.error,
-                    W = (0, g.MM)(),
+                    J = F.data,
+                    G = F.isLoading,
+                    V = (0, b.Pc)(),
+                    R = (0, n.Z)(V, 2),
+                    z = R[0],
+                    Q = R[1],
+                    Y = Q.isLoading,
+                    _ = Q.error,
+                    W = (0, b.MM)(),
                     B = (0, n.Z)(W, 2),
                     H = B[0],
                     $ = B[1],
                     K = $.isLoading,
                     ee = $.error,
-                    te = null == V ? void 0 : V[0],
-                    ae = (null == D ? void 0 : D.type) && D.type.slice(0, 1).toUpperCase() + D.type.slice(1),
+                    te = null == J ? void 0 : J[0],
+                    ae = (null == P ? void 0 : P.type) && P.type.slice(0, 1).toUpperCase() + P.type.slice(1),
                     re = d.useState(""),
                     ne = (0, n.Z)(re, 2),
                     oe = ne[0],
@@ -79,93 +79,93 @@
                     ve = me[0],
                     pe = me[1],
                     fe = d.useState(null),
-                    be = (0, n.Z)(fe, 2),
-                    ge = be[0],
-                    ye = be[1],
+                    ye = (0, n.Z)(fe, 2),
+                    be = ye[0],
+                    ge = ye[1],
                     he = d.useState(!1),
                     Ee = (0, n.Z)(he, 2),
-                    xe = Ee[0],
-                    Ae = Ee[1],
-                    we = d.useState(""),
-                    Ie = (0, n.Z)(we, 2),
-                    Se = Ie[0],
-                    Te = Ie[1],
+                    Ae = Ee[0],
+                    we = Ee[1],
+                    xe = d.useState(""),
+                    Se = (0, n.Z)(xe, 2),
+                    Ie = Se[0],
+                    Te = Se[1],
                     ke = d.useState(!1),
                     qe = (0, n.Z)(ke, 2),
-                    Ce = qe[0],
-                    Me = qe[1],
-                    Ne = d.useMemo((function() {
-                        return (null == Se ? void 0 : Se.length) < 100 ? "var(--bs-danger)" : (null == Se ? void 0 : Se.length) < 750 ? "var(--bs-success)" : (null == Se ? void 0 : Se.length) > 1500 ? "var(--bs-danger)" : (null == Se ? void 0 : Se.length) > 750 ? "var(--bs-warning)" : "#fff"
-                    }), [null == Se ? void 0 : Se.length]),
-                    je = (0, b.LQ)({
+                    je = qe[0],
+                    Ce = qe[1],
+                    De = d.useMemo((function() {
+                        return (null == Ie ? void 0 : Ie.length) < 100 ? "var(--bs-danger)" : (null == Ie ? void 0 : Ie.length) < 750 ? "var(--bs-success)" : (null == Ie ? void 0 : Ie.length) > 1500 ? "var(--bs-danger)" : (null == Ie ? void 0 : Ie.length) > 750 ? "var(--bs-warning)" : "#fff"
+                    }), [null == Ie ? void 0 : Ie.length]),
+                    Me = (0, y.LQ)({
                         avatarId: null == te ? void 0 : te.contentId
                     }, {
-                        skip: !te || "avatar" !== (null == D ? void 0 : D.type)
+                        skip: !te || "avatar" !== (null == P ? void 0 : P.type)
                     }),
-                    Xe = je.data,
-                    Ze = je.isLoading,
-                    Le = (0, y.Vw)({
+                    Le = Me.data,
+                    Ne = Me.isLoading,
+                    Oe = (0, g.Vw)({
                         worldId: null == te ? void 0 : te.contentId
                     }, {
-                        skip: !te || "world" !== (null == D ? void 0 : D.type)
+                        skip: !te || "world" !== (null == P ? void 0 : P.type)
                     }),
-                    De = Le.data,
-                    Fe = Le.isLoading,
-                    Ue = (0, b.F6)({
+                    Pe = Oe.data,
+                    Ze = Oe.isLoading,
+                    Xe = (0, y.F6)({
                         user: "me",
                         releaseStatus: "public"
                     }, {
-                        skip: !xe && te || G || "avatar" !== (null == D ? void 0 : D.type)
+                        skip: !Ae && te || G || "avatar" !== (null == P ? void 0 : P.type)
                     }),
-                    Je = Ue.data,
-                    Pe = Ue.isLoading,
-                    Ve = (0, y.Ld)({
+                    Ue = Xe.data,
+                    Fe = Xe.isLoading,
+                    Je = (0, g.Ld)({
                         user: "me",
                         releaseStatus: "public"
                     }, {
-                        skip: !xe && te || G || "world" !== (null == D ? void 0 : D.type)
+                        skip: !Ae && te || G || "world" !== (null == P ? void 0 : P.type)
                     }),
-                    Ge = Ve.data,
-                    Re = Ve.isLoading,
-                    ze = (null === (e = {
-                        avatar: Je,
+                    Ge = Je.data,
+                    Ve = Je.isLoading,
+                    Re = (null === (e = {
+                        avatar: Ue,
                         world: Ge
-                    }) || void 0 === e ? void 0 : e[null == D ? void 0 : D.type]) || [],
-                    Qe = (null === (t = {
-                        avatar: Pe,
-                        world: Re
-                    }) || void 0 === t ? void 0 : t[null == D ? void 0 : D.type]) || !1,
-                    Ye = (null === (a = {
-                        avatar: Xe,
-                        world: De
-                    }) || void 0 === a ? void 0 : a[null == D ? void 0 : D.type]) || null,
-                    Oe = (null === (o = {
-                        avatar: Ze,
-                        world: Fe
-                    }) || void 0 === o ? void 0 : o[null == D ? void 0 : D.type]) || !1,
+                    }) || void 0 === e ? void 0 : e[null == P ? void 0 : P.type]) || [],
+                    ze = (null === (t = {
+                        avatar: Fe,
+                        world: Ve
+                    }) || void 0 === t ? void 0 : t[null == P ? void 0 : P.type]) || !1,
+                    Qe = (null === (a = {
+                        avatar: Le,
+                        world: Pe
+                    }) || void 0 === a ? void 0 : a[null == P ? void 0 : P.type]) || null,
+                    Ye = (null === (o = {
+                        avatar: Ne,
+                        world: Ze
+                    }) || void 0 === o ? void 0 : o[null == P ? void 0 : P.type]) || !1,
                     _e = d.useMemo((function() {
-                        return null == ze ? void 0 : ze.find((function(e) {
-                            return e.id === ge
+                        return null == Re ? void 0 : Re.find((function(e) {
+                            return e.id === be
                         }))
-                    }), [ge]),
+                    }), [be]),
                     We = d.useMemo((function() {
                         var e;
-                        if (!D) return [];
-                        var t = ze;
-                        return null != D && D.submissionContentGated && (t = null == ze ? void 0 : ze.filter((function(e) {
+                        if (!P) return [];
+                        var t = Re;
+                        return null != P && P.submissionContentGated && (t = null == Re ? void 0 : Re.filter((function(e) {
                             var t = e.updated_at;
-                            return c()(t).isAfter(c()(null == D ? void 0 : D.submissionContentGateDate))
+                            return c()(t).isAfter(c()(null == P ? void 0 : P.submissionContentGateDate))
                         }))), null === (e = t) || void 0 === e ? void 0 : e.filter((function(e) {
                             return e.name.toLowerCase().includes(ue.toLowerCase())
                         })).slice(0, ve)
-                    }), [ze, ue, ve, D]);
-                if (U) return d.createElement(h.qX, {
+                    }), [Re, ue, ve, P]);
+                if (X) return d.createElement(h.qX, {
                     type: "error",
                     title: "Jam load error",
                     message: "Failed to load the Jam",
                     slim: !0
                 });
-                if (F || G) return d.createElement(h.UU, {
+                if (Z || G) return d.createElement(h.UU, {
                     width: "100%",
                     height: "200px"
                 });
@@ -175,7 +175,7 @@
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (ge) {
+                                        if (be) {
                                             e.next = 2;
                                             break
                                         }
@@ -186,7 +186,7 @@
                                             break
                                         }
                                         return e.next = 5, H({
-                                            jamId: j,
+                                            jamId: M,
                                             submissionId: te.id,
                                             silent: !0
                                         }).unwrap();
@@ -199,16 +199,16 @@
                                             return setTimeout(e, 1e3)
                                         }));
                                     case 9:
-                                        return e.next = 11, Q({
-                                            jamId: j,
-                                            contentId: ge,
-                                            description: Se
+                                        return e.next = 11, z({
+                                            jamId: M,
+                                            contentId: be,
+                                            description: Ie
                                         }).unwrap();
                                     case 11:
-                                        e.sent.error || (ye(null), Ae(!1), Te("")), e.next = 16;
+                                        e.sent.error || (ge(null), we(!1), Te("")), e.next = 16;
                                         break;
                                     case 15:
-                                        X((0, p.d)({
+                                        L((0, p.d)({
                                             title: "Failed to update submission",
                                             icon: i.eH,
                                             message: null !== (a = null === (r = t.error.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== a ? a : "Something went wrong",
@@ -218,13 +218,13 @@
                                     case 16:
                                         return e.abrupt("return");
                                     case 17:
-                                        return e.next = 19, Q({
-                                            jamId: D.id,
-                                            contentId: ge,
-                                            description: Se
+                                        return e.next = 19, z({
+                                            jamId: P.id,
+                                            contentId: be,
+                                            description: Ie
                                         }).unwrap();
                                     case 19:
-                                        e.sent.error || (ye(null), Ae(!1), Te(""));
+                                        e.sent.error || (ge(null), we(!1), Te(""));
                                     case 21:
                                     case "end":
                                         return e.stop()
@@ -243,18 +243,18 @@
                     $e = null !== (l = null === (u = {
                         avatar: "an",
                         world: "a"
-                    }) || void 0 === u ? void 0 : u[null == D ? void 0 : D.type]) && void 0 !== l ? l : "",
+                    }) || void 0 === u ? void 0 : u[null == P ? void 0 : P.type]) && void 0 !== l ? l : "",
                     Ke = te ? "Update Submission" : "Submit ".concat(ae, " to Jam"),
                     et = !!te && c()(te.submittedOn).format("MMMM D [at] h:mm A"),
-                    tt = D && (D.stateChangeDates.submissionsClosed ? "on ".concat(c()(D.stateChangeDates.submissionsClosed).format("MMMM D [at] h:mm A")) : null),
-                    at = xe ? "Select a new ".concat(ae) : "Select ".concat($e, " ").concat(ae, " to submit"),
-                    rt = !!te && Ye && !xe,
-                    nt = !(!D || rt || xe || Oe),
-                    ot = xe && !ge,
-                    it = 0 === (null == We ? void 0 : We.length) && 0 === oe.length && !Qe,
+                    tt = P && (P.stateChangeDates.submissionsClosed ? "on ".concat(c()(P.stateChangeDates.submissionsClosed).format("MMMM D [at] h:mm A")) : null),
+                    at = Ae ? "Select a new ".concat(ae) : "Select ".concat($e, " ").concat(ae, " to submit"),
+                    rt = !!te && Qe && !Ae,
+                    nt = !(!P || rt || Ae || Ye),
+                    ot = Ae && !be,
+                    it = 0 === (null == We ? void 0 : We.length) && 0 === oe.length && !ze,
                     lt = oe.length > 1 && 0 === (null == We ? void 0 : We.length),
                     st = "You can only submit public ".concat(ae, "s");
-                null != D && D.submissionContentGated && (st += " uploaded after ".concat(c()(D.submissionContentGateDate).format("MMMM D YYYY h:mm A")));
+                null != P && P.submissionContentGated && (st += " uploaded after ".concat(c()(P.submissionContentGateDate).format("MMMM D YYYY h:mm A")));
                 var ut = He({
                         error: _,
                         rateLimitText: "Please wait before submitting again"
@@ -263,25 +263,25 @@
                         error: ee,
                         rateLimitText: "Please before trying to remove a submission again"
                     });
-                return D ? d.createElement(A, null, d.createElement(h.JX, {
+                return P ? d.createElement(w, null, d.createElement(h.JX, {
                     className: "mt-2"
-                }, d.createElement("h2", null, "Submit ", ae, " to ", null == D ? void 0 : D.title), d.createElement(h.JX, {
+                }, d.createElement("h2", null, "Submit ", ae, " to ", null == P ? void 0 : P.title), d.createElement(h.JX, {
                     className: "mt-3 mb-3"
-                }, d.createElement(h.oI, null, d.createElement("h4", null, "My Submission")), d.createElement(h.Ao, null, Oe && d.createElement(h.UU, {
+                }, d.createElement(h.oI, null, d.createElement("h4", null, "My Submission")), d.createElement(h.Ao, null, Ye && d.createElement(h.UU, {
                     width: "100%",
                     height: "200px"
-                }), rt && !(null != te && te.rejected) && d.createElement(I, {
+                }), rt && !(null != te && te.rejected) && d.createElement(S, {
                     "aria-label": "Submitted ".concat(ae)
-                }, d.createElement(S, {
-                    data: Ye,
-                    contentType: null == D ? void 0 : D.type,
+                }, d.createElement(I, {
+                    data: Qe,
+                    contentType: null == P ? void 0 : P.type,
                     fieldsList: ["updated_at"],
                     showAuthor: !0
                 }), d.createElement(h.JX, {
                     className: "ms-3 flex-1"
                 }, d.createElement("p", {
                     className: "mb-2"
-                }, "You submitted this ", null == D ? void 0 : D.type, " on ", et), d.createElement("label", {
+                }, "You submitted this ", null == P ? void 0 : P.type, " on ", et), d.createElement("label", {
                     htmlFor: "contentDescription"
                 }, "Description"), d.createElement(h.gx, {
                     id: "contentDescription",
@@ -291,33 +291,33 @@
                     disabled: !0
                 }), d.createElement("br", null), d.createElement("p", null, "You can change or remove your submission until the Jam deadline ", tt, "."), d.createElement(h.zx, {
                     onClick: function() {
-                        Ae(!0)
+                        we(!0)
                     },
-                    loading: O,
+                    loading: Y,
                     className: "mb-2"
                 }, "Replace Submission"), d.createElement(h.zx, {
                     onClick: function() {
                         te && H({
-                            jamId: j,
+                            jamId: M,
                             submissionId: te.id,
                             silent: !1
                         })
                     },
-                    disabled: O,
+                    disabled: Y,
                     loading: K,
                     danger: !0
-                }, "Remove Submission"))), rt && (null == te ? void 0 : te.rejected) && d.createElement(d.Fragment, null, d.createElement(I, {
+                }, "Remove Submission"))), rt && (null == te ? void 0 : te.rejected) && d.createElement(d.Fragment, null, d.createElement(S, {
                     "aria-label": "Submitted ".concat(ae)
-                }, d.createElement(S, {
-                    data: Ye,
-                    contentType: null == D ? void 0 : D.type,
+                }, d.createElement(I, {
+                    data: Qe,
+                    contentType: null == P ? void 0 : P.type,
                     fieldsList: ["updated_at"],
                     showAuthor: !0
                 }), d.createElement(h.JX, {
                     className: "ms-3 flex-1"
                 }, d.createElement("p", {
                     className: "mb-2"
-                }, "You have submitted this ", null == D ? void 0 : D.type, " on ", et), d.createElement("label", {
+                }, "You have submitted this ", null == P ? void 0 : P.type, " on ", et), d.createElement("label", {
                     htmlFor: "contentDescription"
                 }, "Description"), d.createElement(h.gx, {
                     id: "contentDescription",
@@ -328,7 +328,7 @@
                     disabled: !0
                 }), d.createElement("br", null), d.createElement(q, {
                     htmlFor: "rejectionReason text"
-                }, "This submission was rejected"), d.createElement(C, {
+                }, "This submission was rejected"), d.createElement(j, {
                     id: "rejectionReason",
                     "aria-label": "Rejection Reason",
                     rows: 5,
@@ -351,14 +351,14 @@
                 }, "Select a new ", ae, " below"), d.createElement(h.zx, {
                     "aria-label": "Cancel Content Replace",
                     onClick: function() {
-                        Ae(!1)
+                        we(!1)
                     }
-                }, "Cancel")), ge && d.createElement(w, {
+                }, "Cancel")), be && d.createElement(x, {
                     "aria-label": "Selected ".concat(ae),
                     className: "flex-1 w-100 mb-2"
-                }, d.createElement(S, {
+                }, d.createElement(I, {
                     data: _e,
-                    contentType: null == D ? void 0 : D.type,
+                    contentType: null == P ? void 0 : P.type,
                     fieldsList: ["updated_at"],
                     showAuthor: !0
                 }), d.createElement(h.JX, {
@@ -366,7 +366,7 @@
                 }, d.createElement("div", {
                     className: "position-relative"
                 }, d.createElement(h.gx, {
-                    value: Se,
+                    value: Ie,
                     onChange: function(e) {
                         var t = e.target.value;
                         return Te(t)
@@ -380,35 +380,35 @@
                     minlength: 1,
                     maxlength: 1500,
                     onFocus: function() {
-                        return Me(!0)
+                        return Ce(!0)
                     },
                     onBlur: function() {
-                        return Me(!1)
+                        return Ce(!1)
                     }
                 }), d.createElement(k, {
-                    focused: Ce,
-                    textColor: Ne
-                }, null !== (x = null == Se ? void 0 : Se.length) && void 0 !== x ? x : 0, " / 1500")), (null == Se ? void 0 : Se.length) < 100 && d.createElement(h.qX, {
+                    focused: je,
+                    textColor: De
+                }, null !== (A = null == Ie ? void 0 : Ie.length) && void 0 !== A ? A : 0, " / 1500")), (null == Ie ? void 0 : Ie.length) < 100 && d.createElement(h.qX, {
                     className: "mt-0",
                     type: "error",
                     title: "Description is required",
                     slim: !0
-                }, "Please tell us more about your submission."), (null == Se ? void 0 : Se.length) > 1500 && d.createElement(h.qX, {
+                }, "Please tell us more about your submission."), (null == Ie ? void 0 : Ie.length) > 1500 && d.createElement(h.qX, {
                     className: "mt-0",
                     type: "error",
                     title: "Description is too long",
                     slim: !0
                 }, "Please write fewer than 1500 characters."), d.createElement(h.zx, {
                     onClick: Be,
-                    loading: O || K,
+                    loading: Y || K,
                     className: "mb-2",
-                    disabled: (null !== (M = null == Se || null === (N = Se.trim()) || void 0 === N ? void 0 : N.length) && void 0 !== M ? M : 0) < 100,
+                    disabled: (null !== (C = null == Ie || null === (D = Ie.trim()) || void 0 === D ? void 0 : D.length) && void 0 !== C ? C : 0) < 100,
                     positive: !0
                 }, Ke), d.createElement(h.zx, {
                     onClick: function() {
-                        ye(null), Ae(!1)
+                        ge(null), we(!1)
                     },
-                    disabled: O,
+                    disabled: Y,
                     neutral: !0
                 }, "Cancel"))), _ && d.createElement(h.qX, {
                     type: "error",
@@ -422,7 +422,7 @@
                     message: ct,
                     className: "mb-0",
                     slim: !0
-                }))), (!te || xe) && d.createElement(h.JX, null, d.createElement("h4", {
+                }))), (!te || Ae) && d.createElement(h.JX, null, d.createElement("h4", {
                     className: "mb-0"
                 }, at), d.createElement(h.qX, {
                     type: "info",
@@ -441,7 +441,7 @@
                             ce(a), pe(10)
                         }))
                     },
-                    loading: Qe
+                    loading: ze
                 }), it && d.createElement(h.qX, {
                     type: "neutral",
                     title: "No public ".concat(ae, "s"),
@@ -458,43 +458,43 @@
                         key: e.id,
                         onClick: (t = e.id, function() {
                             var e;
-                            ye(t), null === (e = document.querySelector(".content-scroll")) || void 0 === e || e.scrollTo({
+                            ge(t), null === (e = document.querySelector(".content-scroll")) || void 0 === e || e.scrollTo({
                                 top: 0,
                                 behavior: "smooth"
                             })
                         })
-                    }, d.createElement(S, {
+                    }, d.createElement(I, {
                         data: e,
-                        contentType: null == D ? void 0 : D.type,
+                        contentType: null == P ? void 0 : P.type,
                         fieldsList: ["updated_at"],
                         showAuthor: !0
                     }));
                     var t
-                })))))) : d.createElement(A, null, d.createElement(h.qX, {
+                })))))) : d.createElement(w, null, d.createElement(h.qX, {
                     type: "error",
                     title: "Jam not found",
                     message: "The Jam you are looking for does not exist",
                     customButton: d.createElement(h.zx, {
                         className: "mt-3",
                         onClick: function() {
-                            return Z("/home/jams")
+                            return N("/home/jams")
                         }
                     }, "Back to Jams")
                 }))
             };
-            var A = (0, o.Z)(h.JX, {
+            var w = (0, o.Z)(h.JX, {
                     target: "eyi9ar47"
                 })({
                     name: "iano38",
                     styles: "max-width:1200px;width:100%;margin:0 auto"
                 }),
-                w = (0, o.Z)(h.X2, {
+                x = (0, o.Z)(h.X2, {
                     target: "eyi9ar46"
                 })(h.Ao, "{background-color:#1e2226;border-color:#1e2226;}"),
-                I = (0, o.Z)(w, {
+                S = (0, o.Z)(x, {
                     target: "eyi9ar45"
                 })(""),
-                S = (0, o.Z)(h.uW, {
+                I = (0, o.Z)(h.uW, {
                     target: "eyi9ar44"
                 })({
                     name: "17lbmje",
@@ -502,7 +502,7 @@
                 }),
                 T = (0, o.Z)("div", {
                     target: "eyi9ar43"
-                })("cursor:pointer;&:hover{", S, "{", h.oI, "{border-color:#054d5e!important;}", h.Ao, "{border-color:#054d5e!important;}}}"),
+                })("cursor:pointer;&:hover{", I, "{", h.oI, "{border-color:#054d5e!important;}", h.Ao, "{border-color:#054d5e!important;}}}"),
                 k = (0, o.Z)("div", {
                     target: "eyi9ar42"
                 })("position:absolute;bottom:0.75rem;right:1.5rem;font-size:0.75rem;color:", (function(e) {
@@ -518,7 +518,7 @@
                     name: "z1qxtn",
                     styles: "color:var(--bs-danger)"
                 }),
-                C = (0, o.Z)(h.gx, {
+                j = (0, o.Z)(h.gx, {
                     target: "eyi9ar40"
                 })({
                     name: "1vu1jc4",
@@ -527,35 +527,38 @@
         },
         21538: (e, t, a) => {
             a.d(t, {
-                Cm: () => y,
-                EA: () => x,
-                F6: () => d,
-                GG: () => h,
-                Gy: () => E,
-                LQ: () => v,
-                X8: () => A,
-                ak: () => g,
-                cq: () => b,
-                lx: () => m,
-                ve: () => p,
-                x8: () => f
+                C0: () => k,
+                CO: () => g,
+                Cm: () => I,
+                EA: () => y,
+                F6: () => b,
+                GG: () => p,
+                Gy: () => T,
+                LQ: () => E,
+                X8: () => f,
+                ak: () => S,
+                cq: () => x,
+                lx: () => h,
+                ve: () => A,
+                x8: () => w
             });
             var r = a(42138),
                 n = a(15861),
-                o = a(64687),
-                i = a.n(o),
-                l = a(61509);
+                o = a(4942),
+                i = a(64687),
+                l = a.n(i),
+                s = a(61509);
 
-            function s(e, t) {
+            function u(e, t) {
                 var a = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!a) {
                     if (Array.isArray(e) || (a = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return u(e, t);
+                            if ("string" == typeof e) return c(e, t);
                             var a = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === a && e.constructor && (a = e.constructor.name);
                             if ("Map" === a || "Set" === a) return Array.from(e);
-                            if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return u(e, t)
+                            if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return c(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         a && (e = a);
                         var r = 0,
@@ -601,14 +604,66 @@
                 }
             }
 
-            function u(e, t) {
+            function c(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var a = 0, r = new Array(t); a < t; a++) r[a] = e[a];
                 return r
             }
-            var c = l.S.injectEndpoints({
+
+            function d(e, t) {
+                var a = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), a.push.apply(a, r)
+                }
+                return a
+            }
+
+            function m(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var a = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? d(Object(a), !0).forEach((function(t) {
+                        (0, o.Z)(e, t, a[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : d(Object(a)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
+                    }))
+                }
+                return e
+            }
+            var v = s.S.injectEndpoints({
                     endpoints: function(e) {
                         return {
+                            getAllAvatarStyles: e.query({
+                                query: function() {
+                                    return {
+                                        url: "/avatarStyles"
+                                    }
+                                },
+                                providesTags: ["AvatarStyles"]
+                            }),
+                            updateAvatar: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId,
+                                        a = e.data;
+                                    return {
+                                        url: "/avatars/".concat(t),
+                                        method: "PUT",
+                                        body: m(m(m({}, a), null !== a.styles.primary ? {
+                                            primaryStyle: a.styles.primary
+                                        } : {}), null !== a.styles.secondary ? {
+                                            secondaryStyle: a.styles.secondary
+                                        } : {})
+                                    }
+                                },
+                                invalidatesTags: (0, s.T)((function(e) {
+                                    e.avatarId;
+                                    return [{
+                                        type: "Avatar"
+                                    }]
+                                }))
+                            }),
                             selectAvatar: e.mutation({
                                 query: function(e) {
                                     var t = e.avatarId;
@@ -621,15 +676,22 @@
                             }),
                             getAvatar: e.query({
                                 query: function(e) {
-                                    var t = e.avatarId;
+                                    var t = e.avatarId,
+                                        a = e.getListingData,
+                                        r = void 0 !== a && a;
                                     return {
-                                        url: "/avatars/".concat(t)
+                                        url: "/avatars/".concat(t),
+                                        params: {
+                                            getListingData: r
+                                        }
                                     }
                                 },
                                 providesTags: function(e, t, a) {
+                                    var r = a.avatarId,
+                                        n = a.getListingData;
                                     return [{
                                         type: "Avatar",
-                                        id: a.avatarId
+                                        id: "".concat(r, "-").concat(n ? "withListingData" : "")
                                     }]
                                 }
                             }),
@@ -644,7 +706,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, l.T)((function(e) {
+                                invalidatesTags: (0, s.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -662,7 +724,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, l.T)((function(e) {
+                                invalidatesTags: (0, s.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -681,7 +743,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, l.T)((function(e) {
+                                invalidatesTags: (0, s.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -696,7 +758,7 @@
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: ["CurrentAvatar"]
+                                invalidatesTags: ["CurrentAvatar", "Avatar"]
                             }),
                             wearAvatar: e.mutation({
                                 query: function(e) {
@@ -716,7 +778,7 @@
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, l.T)((function(e) {
+                                invalidatesTags: (0, s.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -731,7 +793,7 @@
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, l.T)((function(e) {
+                                invalidatesTags: (0, s.T)((function(e) {
                                     return [{
                                         type: "Avatar",
                                         id: e.avatarId
@@ -746,56 +808,56 @@
                                 }
                             }),
                             getAllAvatars: e.query({
-                                queryFn: (a = (0, n.Z)(i().mark((function e(t, a, n, o) {
-                                    var l, s, u, c, d, m, v, p, f, b, g, y, h, E, x, A, w, I, S, T, k, q, C, M, N, j, X;
-                                    return i().wrap((function(e) {
+                                queryFn: (a = (0, n.Z)(l().mark((function e(t, a, n, o) {
+                                    var i, s, u, c, d, m, v, p, f, y, b, g, h, E, A, w, x, S, I, T, k, q, j, C, D, M, L;
+                                    return l().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                l = t.sort, s = void 0 === l ? "updated" : l, u = t.order, c = void 0 === u ? "descending" : u, d = t.releaseStatus, m = void 0 === d ? "all" : d, v = t.user, p = void 0 === v ? "me" : v, f = t.organization, b = void 0 === f ? "vrchat" : f, g = t.n, y = void 0 === g ? 20 : g, h = t.featured, E = t.userId, x = t.search, A = t.tag, w = t.notag, I = t.platform, S = t.maxUnityVersion, T = t.minUnityVersion, k = t.exactUnityVersion, q = t.minAssetVersion, C = t.maxAssetVersion, M = t.exactAssetVersion, N = [], j = 0;
+                                                i = t.sort, s = void 0 === i ? "updated" : i, u = t.order, c = void 0 === u ? "descending" : u, d = t.releaseStatus, m = void 0 === d ? "all" : d, v = t.user, p = void 0 === v ? "me" : v, f = t.organization, y = void 0 === f ? "vrchat" : f, b = t.n, g = void 0 === b ? 20 : b, h = t.featured, E = t.userId, A = t.search, w = t.tag, x = t.notag, S = t.platform, I = t.maxUnityVersion, T = t.minUnityVersion, k = t.exactUnityVersion, q = t.minAssetVersion, j = t.maxAssetVersion, C = t.exactAssetVersion, D = [], M = 0;
                                             case 3:
                                                 return e.next = 6, o({
                                                     url: "avatars",
                                                     params: {
-                                                        exactAssetVersion: M,
+                                                        exactAssetVersion: C,
                                                         exactUnityVersion: k,
                                                         featured: h,
-                                                        maxAssetVersion: C,
-                                                        maxUnityVersion: S,
+                                                        maxAssetVersion: j,
+                                                        maxUnityVersion: I,
                                                         minAssetVersion: q,
                                                         minUnityVersion: T,
-                                                        n: y,
-                                                        notag: w,
-                                                        offset: j,
+                                                        n: g,
+                                                        notag: x,
+                                                        offset: M,
                                                         order: c,
-                                                        organization: b,
-                                                        platform: I,
+                                                        organization: y,
+                                                        platform: S,
                                                         releaseStatus: m,
-                                                        search: x,
+                                                        search: A,
                                                         sort: s,
-                                                        tag: A,
+                                                        tag: w,
                                                         user: p,
                                                         userId: E
                                                     }
                                                 });
                                             case 6:
-                                                if (!(X = e.sent).error) {
+                                                if (!(L = e.sent).error) {
                                                     e.next = 9;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: X.error
+                                                    error: L.error
                                                 });
                                             case 9:
-                                                if (!(X.data.length > 0)) {
+                                                if (!(L.data.length > 0)) {
                                                     e.next = 13;
                                                     break
                                                 }
-                                                return N.push.apply(N, (0, r.Z)(X.data)), j += y, e.abrupt("continue", 3);
+                                                return D.push.apply(D, (0, r.Z)(L.data)), M += g, e.abrupt("continue", 3);
                                             case 13:
                                                 return e.abrupt("break", 16);
                                             case 16:
                                                 return e.abrupt("return", {
-                                                    data: N
+                                                    data: D
                                                 });
                                             case 17:
                                             case "end":
@@ -804,7 +866,13 @@
                                     }), e)
                                 }))), function(e, t, r, n) {
                                     return a.apply(this, arguments)
-                                })
+                                }),
+                                providesTags: function(e, t) {
+                                    return [{
+                                        type: "Avatars",
+                                        id: "LIST"
+                                    }]
+                                }
                             }),
                             getFavoriteAvatars: e.query({
                                 query: function(e) {
@@ -827,12 +895,12 @@
                                 }
                             }),
                             getAllFavoriteAvatars: e.query({
-                                queryFn: (t = (0, n.Z)(i().mark((function e() {
-                                    var t, a, n, o, l, u, c, d, m, v, p, f, b, g = arguments;
-                                    return i().wrap((function(e) {
+                                queryFn: (t = (0, n.Z)(l().mark((function e() {
+                                    var t, a, n, o, i, s, c, d, m, v, p, f, y, b = arguments;
+                                    return l().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                a = (t = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, n = t.tags, o = t.userId, l = t.groups, u = void 0 === l ? [] : l, c = g.length > 3 ? g[3] : void 0, d = [], m = s(a ? [a] : u), e.prev = 7, m.s();
+                                                a = (t = b.length > 0 && void 0 !== b[0] ? b[0] : {}).tag, n = t.tags, o = t.userId, i = t.groups, s = void 0 === i ? [] : i, c = b.length > 3 ? b[3] : void 0, d = [], m = u(a ? [a] : s), e.prev = 7, m.s();
                                             case 9:
                                                 if ((v = m.n()).done) {
                                                     e.next = 27;
@@ -851,19 +919,19 @@
                                                     }
                                                 });
                                             case 15:
-                                                if (!(b = e.sent).error) {
+                                                if (!(y = e.sent).error) {
                                                     e.next = 18;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: b.error
+                                                    error: y.error
                                                 });
                                             case 18:
-                                                if (!(b.data.length > 0)) {
+                                                if (!(y.data.length > 0)) {
                                                     e.next = 22;
                                                     break
                                                 }
-                                                return d.push.apply(d, (0, r.Z)(b.data)), f += 50, e.abrupt("continue", 12);
+                                                return d.push.apply(d, (0, r.Z)(y.data)), f += 50, e.abrupt("continue", 12);
                                             case 22:
                                                 return e.abrupt("break", 25);
                                             case 25:
@@ -903,21 +971,23 @@
                     },
                     overrideExisting: !1
                 }).enhanceEndpoints({
-                    addTagTypes: ["FavoriteAvatars"]
+                    addTagTypes: ["Avatars", "FavoriteAvatars"]
                 }),
-                d = c.useGetAllAvatarsQuery,
-                m = c.useGetAllFavoriteAvatarsQuery,
-                v = c.useGetAvatarQuery,
-                p = (c.useGetFavoriteAvatarsQuery, c.useGetImpostorQueueStatsQuery),
-                f = c.useSelectAvatarMutation,
-                b = c.useSetAvatarPrivateMutation,
-                g = c.useSetAvatarPublicMutation,
-                y = c.useSetAvatarTagsMutation,
-                h = c.useDeleteAvatarMutation,
-                E = c.useWearAvatarMutation,
-                x = c.useEnqueueImpostorMutation,
-                A = c.useDeleteImpostorsMutation
+                p = v.useDeleteAvatarMutation,
+                f = v.useDeleteImpostorsMutation,
+                y = v.useEnqueueImpostorMutation,
+                b = v.useGetAllAvatarsQuery,
+                g = v.useGetAllAvatarStylesQuery,
+                h = v.useGetAllFavoriteAvatarsQuery,
+                E = v.useGetAvatarQuery,
+                A = (v.useGetFavoriteAvatarsQuery, v.useGetImpostorQueueStatsQuery),
+                w = v.useSelectAvatarMutation,
+                x = v.useSetAvatarPrivateMutation,
+                S = v.useSetAvatarPublicMutation,
+                I = v.useSetAvatarTagsMutation,
+                T = v.useWearAvatarMutation,
+                k = v.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=02d5fca3fa5b307396fa64e08775bef03c5e0f2ef42c625f66202bbd508aff2b.js.map
+//# sourceMappingURL=75ada47ca1249e8aaaa1d2e8e245022d284d18b2d3578599975af425d02e942e.js.map
