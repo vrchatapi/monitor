@@ -32,74 +32,76 @@
                     s = e.onChange,
                     u = e.isLoading,
                     d = void 0 !== u && u,
-                    f = e.onSearch,
-                    y = e.className,
-                    k = e.trimToLength,
-                    C = e.disabled,
-                    Z = e.allowMultiline,
-                    z = (0, v.Z)(e, h),
+                    f = (e.onSearch, e.className),
+                    y = e.trimToLength,
+                    k = e.disabled,
+                    C = e.allowMultiline,
+                    Z = (0, v.Z)(e, h),
                     M = m.useState(!1),
-                    D = (0, l.Z)(M, 2),
-                    F = D[0],
-                    A = D[1],
-                    R = m.useState(""),
-                    q = (0, l.Z)(R, 2),
-                    O = q[0],
-                    B = q[1],
-                    K = (0, E.Nr)(O),
-                    U = m.useRef(null),
-                    $ = function(e) {
-                        U.current.contains(e.target) || A(!1)
-                    };
+                    z = (0, l.Z)(M, 2),
+                    D = z[0],
+                    F = z[1],
+                    A = m.useState(""),
+                    R = (0, l.Z)(A, 2),
+                    q = R[0],
+                    O = R[1],
+                    B = (0, E.Nr)(q),
+                    K = m.useRef(null),
+                    U = function(e) {
+                        K.current.contains(e.target) || F(!1)
+                    },
+                    $ = m.useMemo((function() {
+                        return !1 === D ? (O(""), r) : r.filter((function(e) {
+                            return e.name.toLowerCase().includes(B.toLowerCase())
+                        }))
+                    }), [B, D]);
                 m.useEffect((function() {
-                    f(!1 !== F ? K : "")
-                }), [K, F]), m.useEffect((function() {
-                    return F ? window.addEventListener("click", $) : window.removeEventListener("click", $),
+                    return D ? window.addEventListener("click", U) : window.removeEventListener("click", U),
                         function() {
-                            window.removeEventListener("click", $)
+                            window.removeEventListener("click", U)
                         }
-                }), [F]);
+                }), [D]);
                 var _ = r.find((function(e) {
                     return e.name === c
                 }));
                 return m.createElement(X, (0, w.Z)({
                     role: "radiogroup",
                     "aria-label": i,
-                    ref: U,
-                    className: y,
+                    ref: K,
+                    className: f,
                     onMouseLeave: function() {
-                        F && A(!1)
+                        D && F(!1)
                     }
-                }, z), m.createElement(I, {
-                    disabled: C,
-                    expanded: F
+                }, Z), m.createElement(I, {
+                    disabled: k,
+                    expanded: D
                 }, m.createElement(S, {
                     type: "button",
                     "aria-label": "Expand Options",
-                    disabled: C,
+                    disabled: k,
                     onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), A(!F)
+                        e.stopPropagation(), e.preventDefault(), F(!D)
                     }
                 }, m.createElement(N, null, !!i && m.createElement(L, null, i), m.createElement(J, {
                     role: "note",
-                    trimToLength: k,
+                    trimToLength: y,
                     title: null !== (t = null == _ ? void 0 : _.selectedLabel) && void 0 !== t ? t : null == _ ? void 0 : _.label
                 }, null !== (a = null == _ ? void 0 : _.name) && void 0 !== a ? a : null == _ ? void 0 : _.name)), m.createElement(o.$1, {
                     icon: b.eW,
                     color: "white",
                     className: "ms-3"
-                })), F && m.createElement(T, null, m.createElement(o.II, {
-                    className: "tw-mb-4 tw-mt-3 tw-px-3",
+                })), D && m.createElement(T, null, m.createElement(o.II, {
+                    className: "tw-mb-4 tw-mt-3 tw-px-3 tw-overflow-visible",
                     placeholder: "Search Avatars",
                     onChange: function(e) {
-                        return B(e.target.value)
+                        return O(e.target.value)
                     },
-                    disabled: 0 === r.length
+                    value: q
                 }), d && m.createElement("p", {
                     className: "tw-mx-3"
-                }, "Loading..."), 0 === r.length && !d && m.createElement("p", {
+                }, "Loading..."), 0 === $.length && !d && m.createElement("p", {
                     className: "tw-mx-3 tw-mb-3"
-                }, "No avatars are available!"), r.map((function(e, t) {
+                }, "No avatars are available!"), !d && $.map((function(e, t) {
                     return m.createElement(m.Fragment, {
                         key: e.id
                     }, m.createElement(P, {
@@ -107,12 +109,12 @@
                         "aria-checked": e.id === (null == c ? void 0 : c.id),
                         key: e.id,
                         onClick: (a = e, function(e) {
-                            e.stopPropagation(), e.preventDefault(), s && s(a), A(!1)
+                            e.stopPropagation(), e.preventDefault(), s && s(a), F(!1)
                         }),
                         tabIndex: t,
-                        trimToLength: k,
+                        trimToLength: y,
                         title: "string" == typeof e.selectedLabel ? e.selectedLabel : e.label,
-                        allowMultiline: Z,
+                        allowMultiline: C,
                         className: (0, x.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.Z)({}, "tw-cursor-not-allowed tw-text-placeholder-text", !1))
                     }, m.createElement(o.X2, {
                         className: "tw-gap-2 tw-items-center"
@@ -188,11 +190,11 @@
                     name: "fbo9zu",
                     styles: "position:absolute;z-index:4;top:100%;left:-2px;width:calc(100% + 4px);background-color:#07343f;display:flex;flex-direction:column;border-radius:0 0 3px 3px;border:#086c84 solid 2px;border-top-width:0;text-align:left;max-width:calc(100% + 4px);max-height:310px;overflow-y:auto"
                 }),
-                z = {
+                M = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                M = {
+                z = {
                     name: "1bmnxg7",
                     styles: "white-space:nowrap"
                 },
@@ -203,9 +205,9 @@
                 P = (0, f.Z)("div", {
                     target: "evny8vp0"
                 })("transition:opacity 0.2s ease-in-out;padding:0;background-color:#07343f;cursor:pointer;max-width:100%;", (function(e) {
-                    return e.allowMultiline ? D : M
+                    return e.allowMultiline ? D : z
                 }), " ", (function(e) {
-                    return e.trimToLength ? z : ""
+                    return e.trimToLength ? M : ""
                 }), ";"),
                 F = a(44869);
             const A = function(e) {
@@ -235,56 +237,54 @@
                     Z = m.useState(S || a),
                     J = (0, l.Z)(Z, 2),
                     T = J[0],
-                    z = J[1],
-                    M = m.useState(""),
-                    D = (0, l.Z)(M, 2),
-                    P = D[0],
-                    A = D[1],
-                    R = (0, m.useState)(T ? null == T ? void 0 : T.thumbnailImageUrl : null),
-                    q = (0, l.Z)(R, 2),
-                    O = q[0],
-                    B = q[1],
-                    K = (0, m.useState)(!1),
-                    U = (0, l.Z)(K, 2),
-                    $ = U[0],
-                    _ = U[1],
-                    j = (0, m.useState)(!1),
-                    W = (0, l.Z)(j, 2),
-                    H = W[0],
-                    V = W[1],
-                    G = (0, c.F6)({
-                        user: "me",
-                        search: P
+                    M = J[1],
+                    z = m.useState(""),
+                    D = (0, l.Z)(z, 2),
+                    P = (D[0], D[1]),
+                    A = (0, m.useState)(T ? null == T ? void 0 : T.thumbnailImageUrl : null),
+                    R = (0, l.Z)(A, 2),
+                    q = R[0],
+                    O = R[1],
+                    B = (0, m.useState)(!1),
+                    K = (0, l.Z)(B, 2),
+                    U = K[0],
+                    $ = K[1],
+                    _ = (0, m.useState)(!1),
+                    j = (0, l.Z)(_, 2),
+                    W = j[0],
+                    H = j[1],
+                    V = (0, c.F6)({
+                        user: "me"
                     }, {
                         skip: !L.id || "avatar" !== I || X,
                         refetchOnMountOrArgChange: !0
                     }),
-                    Q = G.data,
-                    Y = G.isFetching,
-                    ee = G.isSuccess;
+                    G = V.data,
+                    Q = V.isFetching,
+                    Y = V.isSuccess;
                 (0, m.useEffect)((function() {
                     T && b(T)
                 }), [T]);
-                var te = (0, m.useMemo)((function() {
-                    return ee && Q ? function(e) {
+                var ee = (0, m.useMemo)((function() {
+                    return Y && G ? function(e) {
                         return e ? e.filter((function(e) {
                             return "public" !== e.releaseStatus && !e.productId && (null === e.activeAssetReviewId || void 0 === e.activeAssetReviewId)
                         })) : []
-                    }(Q) : []
-                }), [Q, ee]);
+                    }(G) : []
+                }), [G, Y]);
                 return m.createElement(o.JX, null, !X && m.createElement(o.JX, null, m.createElement("p", {
                     className: "tw-mb-2"
                 }, "Select Avatar"), m.createElement(y, {
-                    avatars: te,
-                    isLoading: Y,
+                    avatars: ee,
+                    isLoading: Q,
                     value: null == T ? void 0 : T.name,
                     onChange: function(e) {
                         return function(e) {
-                            N((0, s.IR)(e)), z(e)
+                            N((0, s.IR)(e)), M(e)
                         }(e)
                     },
                     onSearch: function(e) {
-                        return A(e)
+                        return P(e)
                     }
                 }), T && m.createElement("hr", {
                     className: "tw-h-px tw-my-5 tw-bg-gray-200 tw-border-0 dark:tw-bg-gray-700"
@@ -300,16 +300,16 @@
                 }, m.createElement("p", null, "To list your avatar for sale, it must meet our Marketplace Standards and Terms and Conditions. Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", m.createElement(d.rU, {
                     to: "/home/avatar/".concat(T.id),
                     className: "hover:tw-text-teal-accent"
-                }, "the avatar page"), " ", "to make changes."), H && m.createElement("div", null, m.createElement("p", null, m.createElement("strong", null, "Our review process:")), m.createElement("p", null, m.createElement("ol", null, m.createElement("li", null, m.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), m.createElement("li", null, m.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), m.createElement("li", null, m.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), m.createElement("li", null, m.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), m.createElement("p", null, m.createElement("strong", null, "Why Reviews Matter?"), m.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), m.createElement("button", {
+                }, "the avatar page"), " ", "to make changes."), W && m.createElement("div", null, m.createElement("p", null, m.createElement("strong", null, "Our review process:")), m.createElement("p", null, m.createElement("ol", null, m.createElement("li", null, m.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), m.createElement("li", null, m.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), m.createElement("li", null, m.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), m.createElement("li", null, m.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), m.createElement("p", null, m.createElement("strong", null, "Why Reviews Matter?"), m.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), m.createElement("button", {
                     type: "button",
                     className: "tw-bg-transparent tw-border-none tw-text-teal-accent hover:tw-text-white tw-text-left",
                     onClick: function() {
-                        return V(!H)
+                        return H(!W)
                     }
                 }, m.createElement(o.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", H ? "Read less" : "Read more about our review process"))), m.createElement(F.Z, {
+                }), " ", W ? "Read less" : "Read more about our review process"))), m.createElement(F.Z, {
                     avatarData: T,
                     productType: I
                 })), m.createElement(o.JX, {
@@ -324,10 +324,10 @@
                     disabled: !T
                 }, "Next")), m.createElement(o.m6, {
                     preset: "product",
-                    image: O,
-                    isOpen: $,
+                    image: q,
+                    isOpen: U,
                     onClose: function() {
-                        return _(!1)
+                        return $(!1)
                     },
                     confirmCallback: function(e) {
                         var t = e.fileId,
@@ -335,10 +335,10 @@
                             l = e.fileBlob,
                             n = void 0 === l ? null : l,
                             r = null !== a;
-                        B(null === a && null === n ? null : r ? a : n)
+                        O(null === a && null === n ? null : r ? a : n)
                     },
                     cancelCallBack: function() {
-                        return _(!1)
+                        return $(!1)
                     },
                     className: "tw-w-[285px] tw-aspect-square"
                 }))
@@ -518,4 +518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21e8a7d59a5ceb7a733a65b58160889cdd6bdf9014955c0ff1ec590808bd8e07.js.map
+//# sourceMappingURL=c5c64dba4639b58897b330760466c4286b712da986b000f54931d19524ac1595.js.map
