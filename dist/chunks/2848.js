@@ -31,8 +31,8 @@
                 I = a(41727),
                 P = a(72621),
                 S = a(44869),
-                Z = a(53359),
-                D = a(92332),
+                D = a(53359),
+                Z = a(92332),
                 T = a(45697),
                 j = a.n(T),
                 O = a(44488),
@@ -144,7 +144,7 @@
                             }, y.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-full"
                             }, y.createElement(p.$1, {
-                                icon: Z.faTriangleExclamation,
+                                icon: D.faTriangleExclamation,
                                 size: "xl",
                                 className: "tw-h-[72px] tw-mb-5"
                             }), y.createElement("h2", {
@@ -195,7 +195,7 @@
                             }, y.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-w-full"
                             }, y.createElement(p.$1, {
-                                icon: Z.faTriangleExclamation,
+                                icon: D.faTriangleExclamation,
                                 size: "xl",
                                 className: "tw-h-[72px] tw-mb-4"
                             }), y.createElement("p", {
@@ -224,7 +224,7 @@
                         if (S) return y.createElement("div", {
                             className: "tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
                         }, y.createElement(p.$1, {
-                            icon: D.LM,
+                            icon: Z.LM,
                             spin: !0,
                             size: "2x"
                         }));
@@ -613,18 +613,18 @@
                         return e.productFlow
                     })).currentTitle,
                     S = (0, C.lr)(),
-                    Z = (0, r.Z)(S, 2),
-                    D = Z[0],
-                    T = (Z[1], (0, k.UO)().paginationPage),
+                    D = (0, r.Z)(S, 2),
+                    Z = D[0],
+                    T = (D[1], (0, k.UO)().paginationPage),
                     j = T ? Number(T) : 1,
                     O = (0, y.useState)(""),
                     X = (0, r.Z)(O, 2),
                     F = X[0],
-                    A = (X[1], (0, y.useState)(D.get("sortBy") || null)),
+                    A = (X[1], (0, y.useState)(Z.get("sortBy") || null)),
                     U = (0, r.Z)(A, 2),
                     L = U[0],
                     $ = U[1],
-                    M = (0, y.useState)(D.get("orderBy") || "descending"),
+                    M = (0, y.useState)(Z.get("orderBy") || "descending"),
                     B = (0, r.Z)(M, 2),
                     q = B[0],
                     _ = B[1],
@@ -659,9 +659,9 @@
                     Ie = y.useState(!1),
                     Pe = (0, r.Z)(Ie, 2),
                     Se = Pe[0],
-                    Ze = Pe[1],
-                    De = y.useState(!1),
-                    Te = (0, r.Z)(De, 2),
+                    De = Pe[1],
+                    Ze = y.useState(!1),
+                    Te = (0, r.Z)(Ze, 2),
                     je = Te[0],
                     Oe = Te[1],
                     Xe = y.useState(!1),
@@ -676,7 +676,7 @@
                             n: 50,
                             pageValue: j
                         }
-                    }), [D, Je, q, L, j]), (0, E.rP)({
+                    }), [Z, Je, q, L, j]), (0, E.rP)({
                         userId: Ue.id,
                         n: 50,
                         pageValue: j
@@ -714,58 +714,58 @@
                         })
                     }),
                     tt = function() {
-                        re(!1), te({}), ie(!1), xe(null), ue(!1), Ze(!1), Oe(!1), Ae(!1), he(null), a((0, h.bi)())
+                        re(!1), te({}), ie(!1), xe(null), ue(!1), De(!1), Oe(!1), Ae(!1), he(null), a((0, h.bi)())
                     },
                     at = function() {
-                        var e = (0, n.Z)(m().mark((function e() {
-                            var t, l, n, r, c, o, s = arguments;
+                        var e = (0, n.Z)(m().mark((function e(t) {
+                            var l, n, r, c, o, s, d, p, g;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (t = s.length > 0 && void 0 !== s[0] ? s[0] : {}, l = s.length > 1 && void 0 !== s[1] && s[1], n = s.length > 2 && void 0 !== s[2] ? s[2] : void 0, r = function() {
+                                        if (l = t.productData, n = void 0 === l ? {} : l, r = t.isEditing, c = void 0 !== r && r, o = t.image, s = void 0 === o ? void 0 : o, d = function() {
                                                 a((0, u.d)({
-                                                    title: "Product ".concat(l ? "updated" : "created", " successfully!"),
+                                                    title: "Product ".concat(c ? "updated" : "created", " successfully!"),
                                                     icon: w.f8,
-                                                    message: "Your product has been ".concat(l ? "updated" : "created", " successfully!"),
+                                                    message: "Your product has been ".concat(c ? "updated" : "created", " successfully!"),
                                                     color: "success",
                                                     timeout: 3e3
-                                                })), xe(t), ie(!0), ue(l)
-                                            }, e.prev = 4, !l) {
-                                            e.next = 9;
+                                                })), xe(n), Oe(!1), ie(!0), ue(c)
+                                            }, e.prev = 2, !c) {
+                                            e.next = 7;
                                             break
                                         }
-                                        return e.next = 8, Ge(G(G({
-                                            productId: t.id
-                                        }, null !== n ? {
-                                            file: n,
+                                        return e.next = 6, Ge(G(G({
+                                            productId: n.id
+                                        }, null !== s ? {
+                                            file: s,
                                             tag: "product"
-                                        } : {}), t)).unwrap();
-                                    case 8:
-                                        return e.abrupt("return", r());
+                                        } : {}), n)).unwrap();
+                                    case 6:
+                                        return e.abrupt("return", d());
+                                    case 7:
+                                        return e.next = 9, He(G(G({}, null !== s ? {
+                                            file: s,
+                                            tag: "product"
+                                        } : {}), n)).unwrap();
                                     case 9:
-                                        return e.next = 11, He(G(G({}, null !== n ? {
-                                            file: n,
-                                            tag: "product"
-                                        } : {}), t)).unwrap();
-                                    case 11:
-                                        return e.abrupt("return", r());
-                                    case 14:
-                                        e.prev = 14, e.t0 = e.catch(4), console.log("error", e.t0), a((0, u.d)({
-                                            title: "Failed to ".concat(l ? "update" : "create", " product!"),
+                                        return e.abrupt("return", d());
+                                    case 12:
+                                        e.prev = 12, e.t0 = e.catch(2), console.log("error", e.t0), a((0, u.d)({
+                                            title: "Failed to ".concat(c ? "update" : "create", " product!"),
                                             icon: i.eH,
-                                            message: null !== (c = null === (o = e.t0.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== c ? c : "Something went wrong",
+                                            message: null !== (p = null === (g = e.t0.data) || void 0 === g || null === (g = g.error) || void 0 === g ? void 0 : g.message) && void 0 !== p ? p : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
-                                    case 18:
+                                    case 16:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [4, 14]
+                                [2, 12]
                             ])
                         })));
-                        return function() {
+                        return function(t) {
                             return e.apply(this, arguments)
                         }
                     }(),
@@ -786,14 +786,14 @@
                         })
                     },
                     ct = function(e) {
-                        he(e), Ze(!0), et({
+                        he(e), De(!0), et({
                             title: "Delete Product",
                             data: e,
                             productType: "product"
                         })
                     },
                     ot = function(e) {
-                        Ce(e), Ze(!1), Oe(!1), Ae(!0), et({
+                        Ce(e), De(!1), Oe(!1), Ae(!0), et({
                             title: "Product Views",
                             data: e
                         })
@@ -897,7 +897,7 @@
                 }), ne && je && y.createElement(P.default, {
                     product: W.data,
                     onClose: tt,
-                    isEditing: W.isEditing,
+                    isEditing: !0,
                     onSubmit: at,
                     user: Ue
                 }), ne && se && y.createElement(H, {
@@ -1089,4 +1089,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f24850334891f0ba3cd3e3a98b13713d71f579cd20f30a35e5d9a104c4e82b24.js.map
+//# sourceMappingURL=a746e1fd3c2fb96526b6c070ee7bd7ddaeca2519be071dc95d8605ee21cfd8ec.js.map

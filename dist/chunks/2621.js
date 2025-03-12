@@ -10,11 +10,11 @@
                 r = l(67263),
                 o = l(16869),
                 c = l(67294),
-                s = l(95896),
-                i = function(e) {
+                i = l(95896),
+                s = function(e) {
                     var t, l = e.listingId,
-                        i = e.className,
-                        u = void 0 === i ? "" : i,
+                        s = e.className,
+                        u = void 0 === s ? "" : s,
                         m = e.showImage,
                         d = void 0 !== m && m,
                         p = (0, o.mr)({
@@ -27,7 +27,7 @@
                         b = p.isSuccess,
                         f = p.isError;
                     g && (n.$1, a.LM);
-                    var E = (null === (t = s.di.find((function(e) {
+                    var E = (null === (t = i.di.find((function(e) {
                         return e.value === (null == w ? void 0 : w.listingType)
                     }))) || void 0 === t ? void 0 : t.label) || (null == w ? void 0 : w.listingType);
                     return b ? c.createElement("div", {
@@ -46,8 +46,8 @@
                         className: "tw-font-bold tw-mb-0"
                     }, l)) : null
                 };
-            i.propTypes = {};
-            const u = i
+            s.propTypes = {};
+            const u = s
         },
         72621: (e, t, l) => {
             l.r(t), l.d(t, {
@@ -58,8 +58,8 @@
                 r = l(4942),
                 o = l(41145),
                 c = l(62228),
-                s = l(2909),
-                i = l(82414),
+                i = l(2909),
+                s = l(82414),
                 u = l(78076),
                 m = l(76553),
                 d = l(6811),
@@ -119,9 +119,9 @@
                     F = e.onClose,
                     L = void 0 === F ? function() {} : F,
                     J = e.onDataChange,
-                    A = void 0 === J ? function() {} : J;
+                    D = void 0 === J ? function() {} : J;
                 if (null === r && P) return null;
-                var D = null !== (t = null == r ? void 0 : r.parentListings) && void 0 !== t ? t : [],
+                var A = null !== (t = null == r ? void 0 : r.parentListings) && void 0 !== t ? t : [],
                     Z = (0, y.I0)(),
                     R = (0, y.v9)((function(e) {
                         return e.productFlow
@@ -152,9 +152,9 @@
                     re = (0, v.useState)(r ? null == r ? void 0 : r.imageId : null),
                     oe = (0, n.Z)(re, 2),
                     ce = oe[0],
-                    se = oe[1],
-                    ie = (0, v.useState)(!1),
-                    ue = (0, n.Z)(ie, 2),
+                    ie = oe[1],
+                    se = (0, v.useState)(!1),
+                    ue = (0, n.Z)(se, 2),
                     me = ue[0],
                     de = ue[1],
                     pe = (0, v.useState)(!1),
@@ -162,7 +162,7 @@
                     ge = we[0],
                     be = we[1];
                 (0, v.useEffect)((function() {
-                    A(B)
+                    D(B)
                 }), [B]), (0, v.useEffect)((function() {
                     null != r && r.productType && Z((0, h.WB)(r.productType))
                 }), [r]);
@@ -182,7 +182,11 @@
                 }), [Ee]);
                 return v.createElement(w.JX, null, v.createElement("form", {
                     onSubmit: function(e) {
-                        e.preventDefault(), X(B, "string" != typeof ce ? ce : null)
+                        e.preventDefault(), X({
+                            productData: B,
+                            isEditing: P,
+                            image: "string" != typeof ce ? ce : null
+                        })
                     },
                     className: "tw-w-full"
                 }, v.createElement(w.JX, null, v.createElement(w.JX, {
@@ -249,7 +253,7 @@
                 }, "Product ID", v.createElement("div", {
                     className: "tw-group tw-relative tw-ml-1"
                 }, v.createElement(w.$1, {
-                    icon: i.sq,
+                    icon: s.sq,
                     className: "tw-text-light-grey"
                 }), v.createElement("span", {
                     className: "tw-pointer-events-none tw-z-50 tw-absolute tw--top-14 tw--left-20 sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
@@ -285,7 +289,7 @@
                         }))
                     }
                 }, v.createElement(w.$1, {
-                    icon: s.kZ
+                    icon: i.kZ
                 })))), R && v.createElement(w.JX, {
                     className: "tw-mb-5"
                 }, v.createElement("label", {
@@ -317,17 +321,17 @@
                 }, v.createElement("label", {
                     htmlFor: "id",
                     className: "tw-mb-2"
-                }, "Associated ", "role" === (null == r ? void 0 : r.productType) ? "Subscription" : "Listings", " ", D.length > 0 && "(".concat(D.length, ")")), 0 === D.length && v.createElement("p", {
+                }, "Associated ", "role" === (null == r ? void 0 : r.productType) ? "Subscription" : "Listings", " ", A.length > 0 && "(".concat(A.length, ")")), 0 === A.length && v.createElement("p", {
                     className: "tw-text-placeholder-text tw-mb-0"
-                }, "None"), D.length > 0 && v.createElement(w.JX, null, v.createElement("div", {
+                }, "None"), A.length > 0 && v.createElement(w.JX, null, v.createElement("div", {
                     className: "tw-gap-2 tw-w-full tw-grid tw-grid-cols-2 tw-mb-3"
-                }, (ge ? D : D.slice(0, 6)).map((function(e) {
+                }, (ge ? A : A.slice(0, 6)).map((function(e) {
                     return v.createElement(N.Z, {
                         listingId: e,
                         showImage: !0,
                         className: "tw-flex tw-flex-row"
                     })
-                }))), D.length > 6 && v.createElement(w.X2, {
+                }))), A.length > 6 && v.createElement(w.X2, {
                     className: "tw-items-center tw-gap-2"
                 }, v.createElement("button", {
                     type: "button",
@@ -408,15 +412,15 @@
                             n = e.fileBlob,
                             r = void 0 === n ? null : n,
                             o = null !== l;
-                        return null === l && null === r ? (se(null), void q((function(e) {
+                        return null === l && null === r ? (ie(null), void q((function(e) {
                             e.file, e.imageId;
                             return (0, a.Z)(e, x)
-                        }))) : o ? (se(l), void q((function(e) {
+                        }))) : o ? (ie(l), void q((function(e) {
                             e.file;
                             return k(k({}, (0, a.Z)(e, I)), {}, {
                                 imageId: l
                             })
-                        }))) : (se(r), void q((function(e) {
+                        }))) : (ie(r), void q((function(e) {
                             e.imageId;
                             return k(k({}, (0, a.Z)(e, C)), {}, {
                                 file: r
@@ -432,4 +436,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4f6404be66fdbe5f467ef47216757ec356bb44b382512e486eef7283315905da.js.map
+//# sourceMappingURL=e5bdb04a21911609fc80152ef9196182bca7a86f8def68551498f2d368d7c957.js.map

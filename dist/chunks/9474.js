@@ -1,5 +1,5 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [435, 2874], {
+    [9474, 2874], {
         67082: (e, t) => {
             "use strict";
             Object.defineProperty(t, "__esModule", {
@@ -163,18 +163,6 @@
                 iconName: r,
                 icon: [448, 512, n, i, o]
             }, t.faFloppyDisk = t.definition, t.prefix = "fas", t.iconName = r, t.width = 448, t.height = 512, t.ligatures = n, t.unicode = i, t.svgPathData = o, t.aliases = n
-        },
-        34604: (e, t) => {
-            "use strict";
-            var r = "heart",
-                n = [128153, 128154, 128155, 128156, 128420, 129293, 129294, 129505, 9829, 10084, 61578],
-                i = "f004",
-                o = "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
-            t.DF = {
-                prefix: "fas",
-                iconName: r,
-                icon: [512, 512, n, i, o]
-            }, t.m6 = t.DF
         },
         5945: (e, t) => {
             "use strict";
@@ -354,6 +342,18 @@
                 iconName: n.iconName,
                 icon: [n.width, n.height, n.aliases, n.unicode, n.svgPathData]
             }, t.HE = t.DF, n.prefix, n.iconName, n.width, n.height, n.aliases, n.unicode, n.svgPathData, n.aliases
+        },
+        68335: (e, t) => {
+            "use strict";
+            var r = "store",
+                n = [],
+                i = "f54e",
+                o = "M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9c0 0 0 0-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3L448 384l-320 0 0-133.4c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3L64 384l0 64c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-64 0-131.4c-4 1-8 1.8-12.3 2.3z";
+            t.DF = {
+                prefix: "fas",
+                iconName: r,
+                icon: [576, 512, n, i, o]
+            }, t.vJ = t.DF
         },
         5702: (e, t, r) => {
             "use strict";
@@ -1839,4 +1839,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4a6618c1093a8faa7b5e9a1a1eb04f0410e00b9833a79ed861709b4929842c9d.js.map
+//# sourceMappingURL=495da115ffa5a7c8c9dc8c1fbb5100a09a4c63d5890b0a4a50bc1f5e5797c859.js.map

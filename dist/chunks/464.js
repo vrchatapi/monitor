@@ -58,7 +58,7 @@
                 u = n(92481),
                 m = n(59660),
                 d = n(42494),
-                p = n(34604),
+                p = n(68335),
                 g = n(67992),
                 f = n(41259),
                 E = n(68149),
@@ -6481,7 +6481,7 @@
                     }, {
                         name: "Store",
                         to: "store",
-                        icon: p.m6,
+                        icon: p.vJ,
                         condition: null == Re ? void 0 : Re.storeId
                     }, {
                         name: "Instances",
@@ -6805,4 +6805,4 @@
         }
     }
 ]);
-//# sourceMappingURL=57d31264d243deaaf5643929d224ff0564b88d986d3d9a925b81318058835316.js.map
+//# sourceMappingURL=4f4428b69de658dcdb0d9c5036589c064daa3af1a8528bbfc434df9a524ae62a.js.map

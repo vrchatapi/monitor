@@ -20,10 +20,10 @@
                 y = r(67294),
                 g = r(45697),
                 b = r.n(g),
-                h = r(70917),
-                x = r(32981),
-                w = r(751),
-                F = r(13271),
+                w = r(70917),
+                h = r(32981),
+                F = r(751),
+                x = r(13271),
                 k = r(22202),
                 Z = r(64258),
                 I = r(12752),
@@ -35,18 +35,19 @@
                     a = e.authorId,
                     u = e.releaseStatus,
                     f = e.className,
-                    g = (0, x.I0)(),
-                    b = (0, I.Tu)().user,
-                    h = y.useState(!1),
-                    T = (0, i.Z)(h, 2),
-                    E = T[0],
-                    A = T[1],
-                    C = y.useState(null),
-                    D = (0, i.Z)(C, 2),
-                    M = D[0],
-                    z = D[1],
-                    W = y.useRef(null),
-                    X = (0, w.sd)({
+                    g = void 0 === f ? "" : f,
+                    b = (0, h.I0)(),
+                    w = (0, I.Tu)().user,
+                    T = y.useState(!1),
+                    E = (0, i.Z)(T, 2),
+                    P = E[0],
+                    R = E[1],
+                    G = y.useState(null),
+                    M = (0, i.Z)(G, 2),
+                    z = M[0],
+                    W = M[1],
+                    X = y.useRef(null),
+                    Q = (0, F.sd)({
                         type: r
                     }, {
                         selectFromResult: function(e) {
@@ -58,69 +59,69 @@
                             }
                         }
                     }),
-                    Q = X.favoriteInfo,
-                    H = X.isLoading,
-                    $ = (0, w.wu)({
+                    H = Q.favoriteInfo,
+                    $ = Q.isLoading,
+                    U = (0, F.wu)({
                         type: r
                     }),
-                    U = $.data,
-                    _ = $.isLoading,
-                    B = (0, k.k5)().data,
-                    J = (0, w.Ec)(),
-                    Y = (0, i.Z)(J, 2),
-                    K = Y[0],
-                    V = Y[1].isLoading,
-                    ee = (0, w.Xc)(),
-                    te = (0, i.Z)(ee, 2),
-                    re = te[0],
-                    ne = te[1].isLoading,
-                    ae = (0, w.zZ)(),
-                    oe = (0, i.Z)(ae, 2),
-                    ie = oe[0],
-                    ue = oe[1].isLoading,
-                    se = (0, F.S)({
+                    _ = U.data,
+                    B = U.isLoading,
+                    J = (0, k.k5)().data,
+                    Y = (0, F.Ec)(),
+                    K = (0, i.Z)(Y, 2),
+                    V = K[0],
+                    ee = K[1].isLoading,
+                    te = (0, F.Xc)(),
+                    re = (0, i.Z)(te, 2),
+                    ne = re[0],
+                    ae = re[1].isLoading,
+                    oe = (0, F.zZ)(),
+                    ie = (0, i.Z)(oe, 2),
+                    ue = ie[0],
+                    se = ie[1].isLoading,
+                    ce = (0, x.S)({
                         type: r
                     }).data,
-                    ce = y.useCallback((function(e) {
+                    le = y.useCallback((function(e) {
                         var t;
-                        null !== (t = W.current) && void 0 !== t && t.contains(e.target) || A(!1)
-                    }), [W.current]);
+                        null !== (t = X.current) && void 0 !== t && t.contains(e.target) || R(!1)
+                    }), [X.current]);
                 y.useEffect((function() {
-                    return window.addEventListener("click", ce),
+                    return window.addEventListener("click", le),
                         function() {
-                            return window.removeEventListener("click", ce)
+                            return window.removeEventListener("click", le)
                         }
-                }), [W.current]);
-                var le = function() {
+                }), [X.current]);
+                var de = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             var t, n, a;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (Q) {
+                                        if (H) {
                                             e.next = 3;
                                             break
                                         }
-                                        return A(!E), e.abrupt("return");
+                                        return R(!P), e.abrupt("return");
                                     case 3:
-                                        return e.next = 5, re({
-                                            id: Q.id,
+                                        return e.next = 5, ne({
+                                            id: H.id,
                                             type: r,
-                                            groupName: Q.tags[0]
+                                            groupName: H.tags[0]
                                         }).unwrap();
                                     case 5:
-                                        (t = e.sent).error ? g((0, Z.d)({
+                                        (t = e.sent).error ? b((0, Z.d)({
                                             title: "Failed to delete favorite",
                                             icon: v.eH,
                                             message: null !== (n = null === (a = t.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== n ? n : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })) : g((0, Z.d)({
+                                        })) : b((0, Z.d)({
                                             title: "Favorite Removed",
                                             icon: p.f8,
                                             color: "success",
                                             timeout: 3e3
-                                        })), A(!1), z(null);
+                                        })), R(!1), W(null);
                                     case 9:
                                     case "end":
                                         return e.stop()
@@ -131,9 +132,9 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    de = function(e) {
-                        var t, n = null !== (t = null == B ? void 0 : B.maxFavoritesPerGroup[r]) && void 0 !== t ? t : B.defaultMaxFavoritesPerGroup;
-                        return (null == U ? void 0 : U[e]) >= n && (g((0, Z.d)({
+                    pe = function(e) {
+                        var t, n = null !== (t = null == J ? void 0 : J.maxFavoritesPerGroup[r]) && void 0 !== t ? t : J.defaultMaxFavoritesPerGroup;
+                        return (null == _ ? void 0 : _[e]) >= n && (b((0, Z.d)({
                             title: "Cannot save to a full collection",
                             icon: v.eH,
                             message: "You will need to make space before you can add more favorites to this collection",
@@ -141,64 +142,26 @@
                             timeout: 7e3
                         })), !0)
                     },
-                    pe = function() {
-                        var e = (0, o.Z)(m().mark((function e(t) {
-                            var a, o, i;
-                            return m().wrap((function(e) {
-                                for (;;) switch (e.prev = e.next) {
-                                    case 0:
-                                        return e.next = 2, K({
-                                            type: r,
-                                            favoriteId: n,
-                                            groupName: t
-                                        }).unwrap();
-                                    case 2:
-                                        (a = e.sent).error ? g((0, Z.d)({
-                                            title: "Failed to create a favorite",
-                                            icon: v.eH,
-                                            message: null !== (o = null === (i = a.error.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message) && void 0 !== o ? o : "Something went wrong",
-                                            color: "error",
-                                            timeout: 3e3
-                                        })) : g((0, Z.d)({
-                                            title: "Favorite Saved to ".concat(se.find((function(e) {
-                                                return e.name === t
-                                            })).displayName),
-                                            icon: p.f8,
-                                            color: "success",
-                                            timeout: 3e3
-                                        }));
-                                    case 4:
-                                    case "end":
-                                        return e.stop()
-                                }
-                            }), e)
-                        })));
-                        return function(t) {
-                            return e.apply(this, arguments)
-                        }
-                    }(),
                     ve = function() {
                         var e = (0, o.Z)(m().mark((function e(t) {
                             var a, o, i;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ie({
-                                            id: Q.id,
+                                        return e.next = 2, V({
                                             type: r,
                                             favoriteId: n,
-                                            oldGroupName: Q.tags[0],
-                                            newGroupName: t
+                                            groupName: t
                                         }).unwrap();
                                     case 2:
-                                        (a = e.sent).error ? g((0, Z.d)({
-                                            title: "Failed to move favorite",
+                                        (a = e.sent).error ? b((0, Z.d)({
+                                            title: "Failed to create a favorite",
                                             icon: v.eH,
                                             message: null !== (o = null === (i = a.error.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message) && void 0 !== o ? o : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })) : g((0, Z.d)({
-                                            title: "Favorite Moved to ".concat(se.find((function(e) {
+                                        })) : b((0, Z.d)({
+                                            title: "Favorite Saved to ".concat(ce.find((function(e) {
                                                 return e.name === t
                                             })).displayName),
                                             icon: p.f8,
@@ -217,23 +180,61 @@
                     }(),
                     fe = function() {
                         var e = (0, o.Z)(m().mark((function e(t) {
+                            var a, o, i;
+                            return m().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.next = 2, ue({
+                                            id: H.id,
+                                            type: r,
+                                            favoriteId: n,
+                                            oldGroupName: H.tags[0],
+                                            newGroupName: t
+                                        }).unwrap();
+                                    case 2:
+                                        (a = e.sent).error ? b((0, Z.d)({
+                                            title: "Failed to move favorite",
+                                            icon: v.eH,
+                                            message: null !== (o = null === (i = a.error.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message) && void 0 !== o ? o : "Something went wrong",
+                                            color: "error",
+                                            timeout: 3e3
+                                        })) : b((0, Z.d)({
+                                            title: "Favorite Moved to ".concat(ce.find((function(e) {
+                                                return e.name === t
+                                            })).displayName),
+                                            icon: p.f8,
+                                            color: "success",
+                                            timeout: 3e3
+                                        }));
+                                    case 4:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e)
+                        })));
+                        return function(t) {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    me = function() {
+                        var e = (0, o.Z)(m().mark((function e(t) {
                             var n, a, o;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, re({
-                                            id: Q.id,
+                                        return e.next = 2, ne({
+                                            id: H.id,
                                             type: r,
                                             groupName: t
                                         }).unwrap();
                                     case 2:
-                                        (n = e.sent).error ? g((0, Z.d)({
+                                        (n = e.sent).error ? b((0, Z.d)({
                                             title: "Failed to delete favorite",
                                             icon: v.eH,
                                             message: null !== (a = null === (o = n.error.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== a ? a : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })) : g((0, Z.d)({
+                                        })) : b((0, Z.d)({
                                             title: "Favorite Removed",
                                             icon: p.f8,
                                             color: "success",
@@ -250,78 +251,80 @@
                         }
                     }();
                 if (y.useEffect((function() {
-                        Q && z(Q.tags[0])
-                    }), [Q]), H) return y.createElement(S.UU, {
+                        H && W(H.tags[0])
+                    }), [H]), $) return y.createElement(S.UU, {
                     width: "100%",
                     height: "49px",
                     className: "mt-2"
                 });
-                var me = Q ? d.T : s.T,
-                    ye = Q ? "Remove Favorite" : "Add to Favorites";
-                E && (ye = Q ? "Move Favorite" : "Select Collection"), V && (ye = "Adding..."), ne && (ye = "Deleting..."), ue && (ye = "Moving...");
-                var ge = V || ne || ue;
-                return "private" === u && a !== (null == b ? void 0 : b.id) ? null : y.createElement(L, {
-                    ref: W,
-                    className: f,
-                    isSelecting: E
+                var ye = H ? d.T : s.T,
+                    ge = H ? "Remove Favorite" : "Add to Favorites";
+                P && (ge = H ? "Move Favorite" : "Select Collection"), ee && (ge = "Adding..."), ae && (ge = "Deleting..."), se && (ge = "Moving...");
+                var be = ee || ae || se;
+                return "private" === u && a !== (null == w ? void 0 : w.id) ? null : y.createElement(A, {
+                    ref: X,
+                    className: "\n        tw-border-solid tw-border-2 hover:tw-border-[#086c84]\n        ".concat(P ? "tw-border-[#086c84] tw-border-2 tw-rounded-b-md tw-rounded-t-none md:tw-rounded-b-none md:tw-rounded-t-md" : "tw-rounded-md tw-border-[#064b5c]", "\n        ").concat(g, "\n      "),
+                    isSelecting: P
                 }, y.createElement(S.X2, {
                     className: "align-items-center",
                     role: "button",
-                    onClick: le
+                    onClick: de
                 }, y.createElement(S.$1, {
-                    icon: me,
+                    icon: ye,
                     className: "me-4"
-                }), y.createElement("div", null, ye)), y.createElement(S.X2, {
+                }), y.createElement("div", null, ge)), y.createElement(S.X2, {
                     className: "align-items-center h-100",
                     role: "button",
                     onClick: function() {
-                        A(!E)
+                        R(!P)
                     }
-                }, y.createElement(N, null), y.createElement(O, {
+                }, y.createElement(L, null), y.createElement(N, {
                     icon: l.pt,
-                    rotation: E ? 0 : 180,
+                    rotation: P ? 0 : 180,
                     className: "ms-4 me-1",
                     color: "#6ae3f9"
-                })), E && y.createElement(q, null, null == se ? void 0 : se.map((function(e) {
+                })), P && y.createElement(q, {
+                    className: " tw-border-solid tw-border-[#086c84] tw-select-none tw-bottom-[calc(100%+2px)] tw-rounded-t-md tw-border-t-2 tw-rounded-b-none tw-border-b-0 md:tw-bottom-auto md:tw-top-[calc(100%+2px)] md:tw-rounded-t-none md:tw-rounded-b-md md:tw-border-b-2  md:tw-border-t-0 "
+                }, null == ce ? void 0 : ce.map((function(e) {
                     var t, n;
-                    return y.createElement(P, {
+                    return y.createElement(O, {
                         key: e.id,
                         onClick: (n = e.name, function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
                                 return m().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (t.stopPropagation(), A(!1), Q) {
+                                            if (t.stopPropagation(), R(!1), H) {
                                                 e.next = 9;
                                                 break
                                             }
-                                            if (!de(n)) {
+                                            if (!pe(n)) {
                                                 e.next = 5;
                                                 break
                                             }
                                             return e.abrupt("return");
                                         case 5:
-                                            return e.next = 7, pe(n);
+                                            return e.next = 7, ve(n);
                                         case 7:
-                                            return z(n), e.abrupt("return");
+                                            return W(n), e.abrupt("return");
                                         case 9:
-                                            if (n === Q.tags[0]) {
+                                            if (n === H.tags[0]) {
                                                 e.next = 16;
                                                 break
                                             }
-                                            if (!de(n)) {
+                                            if (!pe(n)) {
                                                 e.next = 12;
                                                 break
                                             }
                                             return e.abrupt("return");
                                         case 12:
-                                            return e.next = 14, ve(n);
+                                            return e.next = 14, fe(n);
                                         case 14:
-                                            return z(n), e.abrupt("return");
+                                            return W(n), e.abrupt("return");
                                         case 16:
-                                            return e.next = 18, fe(n);
+                                            return e.next = 18, me(n);
                                         case 18:
-                                            z(null);
+                                            W(null);
                                         case 19:
                                         case "end":
                                             return e.stop()
@@ -334,36 +337,34 @@
                         }())
                     }, y.createElement(S.X2, {
                         className: "align-items-center"
-                    }, y.createElement(j, {
-                        isSelected: M === e.name,
+                    }, y.createElement(C, {
+                        isSelected: z === e.name,
                         icon: c.LE,
                         className: "me-3"
-                    }), e.displayName), !_ && y.createElement("div", null, null == U ? void 0 : U[e.name], " / ", null !== (t = null == B ? void 0 : B.maxFavoritesPerGroup[r]) && void 0 !== t ? t : 100))
-                }))), ge && y.createElement(R, null, y.createElement(G, null)))
+                    }), e.displayName), !B && y.createElement("div", null, null == _ ? void 0 : _[e.name], " / ", null !== (t = null == J ? void 0 : J.maxFavoritesPerGroup[r]) && void 0 !== t ? t : 100))
+                }))), be && y.createElement(j, null, y.createElement(D, null)))
             };
             T.propTypes = {
                 contentId: b().string.isRequired,
                 authorId: b().string.isRequired,
                 releaseStatus: b().oneOf(["private", "public", "unlisted"]),
-                className: b().string
+                className: b().string,
+                type: b().oneOf(["world", "avatar", "event", "friend"])
             };
             const E = T;
-            var A = {
-                    name: "ijbj2b",
-                    styles: "border-radius:0 0 4px 4px;border-color:#086c84"
-                },
-                L = (0, u.Z)(S.X2, {
+            var A = (0, u.Z)(S.X2, {
                     target: "e1o4xuq47"
-                })("justify-content:space-between;position:relative;align-items:center;border:#064b5c solid 2px;border-radius:4px;font-size:1.2rem;background:#064b5c;color:#6ae3f9;padding:0.5rem 1rem;box-sizing:border-box;position:relative;&:hover{border-color:#086c84;}", (function(e) {
-                    return e.isSelecting ? A : ""
-                }), ";"),
-                N = (0, u.Z)("div", {
+                })({
+                    name: "1y4y4wq",
+                    styles: "justify-content:space-between;position:relative;align-items:center;font-size:1.2rem;background:#064b5c;color:#6ae3f9;padding:0.5rem 1rem;box-sizing:border-box;position:relative;&:hover{border-color:#086c84;}"
+                }),
+                L = (0, u.Z)("div", {
                     target: "e1o4xuq46"
                 })({
                     name: "kktyj1",
                     styles: "height:100%;position:absolute;background:hsla(0, 0%, 100%, 0.2);width:1px"
                 }),
-                O = (0, u.Z)(S.$1, {
+                N = (0, u.Z)(S.$1, {
                     target: "e1o4xuq45"
                 })({
                     name: "crmczs",
@@ -372,37 +373,37 @@
                 q = (0, u.Z)(S.JX, {
                     target: "e1o4xuq44"
                 })({
-                    name: "14rwa6y",
-                    styles: "position:relative;border:#086c84 solid 2px;border-width:2px 2px 0 2px;border-radius:4px 4px 0 0;font-size:1.15rem;background:#064b5c;color:#6ae3f9;box-sizing:border-box;position:absolute;width:calc(100% + 4px);bottom:calc(100% + 2px);left:-2px;z-index:2;min-height:1rem"
+                    name: "1p1g0qm",
+                    styles: "position:relative;font-size:1.15rem;background:#064b5c;color:#6ae3f9;box-sizing:border-box;position:absolute;width:calc(100% + 4px);left:-2px;z-index:2;min-height:1rem"
                 }),
-                P = (0, u.Z)(S.X2, {
+                O = (0, u.Z)(S.X2, {
                     target: "e1o4xuq43"
                 })({
                     name: "khx7zf",
                     styles: "padding:0.5rem 1rem;align-items:center;transition:background-color 150ms ease-in-out;justify-content:space-between;align-items:center;cursor:pointer;&:hover{background-color:#086c84;svg{opacity:0.5;}}"
                 }),
-                C = {
+                P = {
                     name: "1d9ftqx",
                     styles: "opacity:1!important"
                 },
-                j = (0, u.Z)(S.$1, {
+                C = (0, u.Z)(S.$1, {
                     shouldForwardProp: function(e) {
                         return "isSelected" !== e
                     },
                     target: "e1o4xuq42"
                 })("opacity:0;", (function(e) {
-                    return e.isSelected ? C : ""
+                    return e.isSelected ? P : ""
                 }), ";"),
-                R = (0, u.Z)("div", {
+                j = (0, u.Z)("div", {
                     target: "e1o4xuq41"
                 })({
                     name: "m6phxa",
                     styles: "position:absolute;width:100%;height:2px;border-radius:0 0 4px 4px;overflow:hidden;bottom:0;left:0"
                 }),
-                D = (0, h.F4)(n || (n = (0, a.Z)(["\n  0% {\n    left: -100%;\n    width: 80%;\n  }\n\n  100% {\n    left: 100%;\n    width: 40%;\n  }\n"]))),
-                G = (0, u.Z)("div", {
+                R = (0, w.F4)(n || (n = (0, a.Z)(["\n  0% {\n    left: -100%;\n    width: 80%;\n  }\n\n  100% {\n    left: 100%;\n    width: 40%;\n  }\n"]))),
+                D = (0, u.Z)("div", {
                     target: "e1o4xuq40"
-                })("position:absolute;z-index:10;bottom:0;height:2px;background-color:var(--bs-success);animation-name:", D, ";animation-iteration-count:infinite;animation-duration:1.5s;animation-timing-function:ease-in-out;")
+                })("position:absolute;z-index:10;bottom:0;height:2px;background-color:var(--bs-success);animation-name:", R, ";animation-iteration-count:infinite;animation-duration:1.5s;animation-timing-function:ease-in-out;")
         },
         64537: (e, t, r) => {
             r.d(t, {
@@ -424,7 +425,7 @@
                 g = r(50048),
                 b = ["url", "text", "title", "files", "style", "shareLabel", "copyLabel", "displayLabel"];
 
-            function h(e, t) {
+            function w(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -435,27 +436,27 @@
                 return r
             }
 
-            function x(e) {
+            function h(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? h(Object(r), !0).forEach((function(t) {
+                    t % 2 ? w(Object(r), !0).forEach((function(t) {
                         (0, o.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : h(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : w(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var w = !(null === (n = navigator.clipboard) || void 0 === n || !n.writeText),
-                F = !!navigator.canShare;
+            var F = !(null === (n = navigator.clipboard) || void 0 === n || !n.writeText),
+                x = !!navigator.canShare;
             const k = function(e) {
                 var t = e.url,
                     r = e.text,
                     n = e.title,
                     o = e.files,
                     d = e.style,
-                    h = e.shareLabel,
-                    k = void 0 === h ? "Share" : h,
+                    w = e.shareLabel,
+                    k = void 0 === w ? "Share" : w,
                     Z = e.copyLabel,
                     I = void 0 === Z ? "Copy" : Z,
                     S = e.displayLabel,
@@ -463,14 +464,14 @@
                     E = (0, u.Z)(e, b),
                     A = (0, f.I0)(),
                     L = v.useMemo((function() {
-                        return F && navigator.canShare({
+                        return x && navigator.canShare({
                             url: t,
                             text: r,
                             title: n,
                             files: o
                         })
-                    }), [F, t, r, n, o]);
-                if (!w && !F) return null;
+                    }), [x, t, r, n, o]);
+                if (!F && !x) return null;
                 var N = function() {
                         var e = (0, i.Z)(p().mark((function e() {
                             return p().wrap((function(e) {
@@ -494,7 +495,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    O = function() {
+                    q = function() {
                         var e = (0, i.Z)(p().mark((function e(a) {
                             return p().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -544,20 +545,20 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    q = L ? k : I,
+                    O = L ? k : I,
                     P = L ? c.Dr : s.kZ;
                 return v.createElement(g.ZP, (0, a.Z)({
                     neutral: !0,
-                    style: x({
+                    style: h({
                         lineHeight: "1"
                     }, d)
                 }, E, {
-                    title: q,
-                    onClick: O
+                    title: O,
+                    onClick: q
                 }), v.createElement(y.Z, {
                     icon: P,
                     className: T && "tw-mr-1"
-                }), T && q)
+                }), T && O)
             }
         },
         751: (e, t, r) => {
@@ -1052,4 +1053,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ec1d26157b819f97b489e150ce3cff32eeb46ec785a17809fc13845ae6375aab.js.map
+//# sourceMappingURL=6acc053dd5a49edc6228d48b018d3984e3904310097a456c34a7c05a53562b62.js.map

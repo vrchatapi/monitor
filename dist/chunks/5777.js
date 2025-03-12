@@ -353,7 +353,7 @@
                 default: () => In
             });
             var a = n(4965),
-                r = n(78076),
+                r = n(68335),
                 l = n(66062),
                 i = n(72998),
                 s = n(67294),
@@ -2951,7 +2951,7 @@
                     }, {
                         name: "World Store",
                         to: "/home/world/".concat(e, "/store"),
-                        icon: r.Vm,
+                        icon: r.vJ,
                         condition: b
                     }]
                 })), s.createElement(o.Z5, null, s.createElement(o.AW, {
@@ -3786,4 +3786,4 @@
         }
     }
 ]);
-//# sourceMappingURL=133d4816c89677f406d5c31db69865f7da30fcfe9fdfc3224f831a80e90e8af7.js.map
+//# sourceMappingURL=0cce09ff80c9c79a792d415169569722f7573639d457a78fa0d07dc7b7729dac.js.map
