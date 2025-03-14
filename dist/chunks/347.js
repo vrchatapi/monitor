@@ -40,13 +40,13 @@
                     A = e.showWearButton,
                     F = void 0 === A ? !n && !i && !E : A,
                     M = e.wearButtonTitle,
-                    O = void 0 === M ? "Wear" : M,
-                    N = e.showSelectButton,
-                    P = void 0 === N ? !n : N,
+                    N = void 0 === M ? "Wear" : M,
+                    O = e.showSelectButton,
+                    P = void 0 === O ? !n : O,
                     W = e.selectButtonTitle,
-                    V = void 0 === W ? "Select" : W,
-                    _ = e.showEditButton,
-                    q = void 0 === _ ? !n : _,
+                    q = void 0 === W ? "Select" : W,
+                    V = e.showEditButton,
+                    _ = void 0 === V ? !n : V,
                     J = e.editButtonTitle,
                     X = void 0 === J ? "Edit" : J,
                     Y = e.showDeleteButton,
@@ -81,10 +81,12 @@
                     ye = p.useState(!!z),
                     Ce = (0, r.Z)(ye, 2),
                     Be = Ce[0],
-                    Re = Ce[1];
+                    Re = Ce[1],
+                    Ie = n || i || E ? "square" : "video";
                 return p.createElement(b, {
                     width: le,
-                    isIcon: n
+                    isIcon: n,
+                    className: "tw-aspect-".concat(Ie)
                 }, te && $ && p.createElement(g.sm, {
                     headerText: "Are you sure?",
                     confirmText: "Delete",
@@ -144,10 +146,10 @@
                 }))), (Be || ke) && p.createElement(x, null)), !me && p.createElement(C, {
                     isIcon: n,
                     isSticker: E,
-                    hasButtons: j && P || L && T || ne && F || re && q || te && $ || ce || ae || oe
+                    hasButtons: j && P || L && T || ne && F || re && _ || te && $ || ce || ae || oe
                 }, j && P && p.createElement(B, {
                     positive: !0,
-                    title: V,
+                    title: q,
                     onClick: function() {
                         j(R, z)
                     }
@@ -160,13 +162,13 @@
                     icon: d.Md
                 })), ne && F && p.createElement(B, {
                     positive: !0,
-                    title: O,
+                    title: N,
                     onClick: function() {
                         ne(R, I)
                     }
                 }, p.createElement(v.Z, {
                     icon: s.vT
-                })), re && q && p.createElement(B, {
+                })), re && _ && p.createElement(B, {
                     title: X,
                     onClick: function() {
                         re(R, I)
@@ -227,9 +229,7 @@
                     return e.width
                 }), "px!important;max-width:", (function(e) {
                     return e.width
-                }), "px!important;height:fit-content;aspect-ratio:", (function(e) {
-                    return e.isIcon ? "1/1" : "16/9"
-                }), ";border:4px solid #252a30;background-color:#252a30;border-radius:", (function(e) {
+                }), "px!important;height:fit-content;border:4px solid #252a30;background-color:#252a30;border-radius:", (function(e) {
                     return e.isIcon ? "50%" : "8px"
                 }), ";overflow:visible;"),
                 k = (0, i.Z)("div", {
@@ -403,4 +403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=aa8a69d262738f5401ac7ddf8ddf22b0f8e07625c9caaf18b495c3a405c9f47c.js.map
+//# sourceMappingURL=065c3749f10502e763354ce812bdc87d17f694f8f0700b6dd1310cd0ea5b0bfc.js.map
