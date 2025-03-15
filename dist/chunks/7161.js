@@ -246,9 +246,9 @@
                     }), u.createElement("div", {
                         className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-2/3"
                     }, u.createElement("h4", {
-                        className: "tw-text-white tw-text-[16px]"
+                        className: "tw-text-white tw-text-[16px] tw-truncate"
                     }, null == a ? void 0 : a.displayName), u.createElement("p", {
-                        className: "tw-text-light-grey tw-text-xs tw-mb-0"
+                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-truncate tw-break-words"
                     }, null == a ? void 0 : a.description)), "avatar" === (null == a ? void 0 : a.productType) && u.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
                     }, u.createElement(d.rU, {
@@ -2445,4 +2445,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cea227655025e6d50f52f452b537c6b40fe7178b042ebb42ec979a81a4d2fa9a.js.map
+//# sourceMappingURL=59d88e879ed33c7cac3a03b44dabb7843202fee41027dcef196781de97b85c4d.js.map

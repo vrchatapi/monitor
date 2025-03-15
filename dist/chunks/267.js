@@ -14,7 +14,7 @@
         },
         20267: (t, e, n) => {
             n.r(e), n.d(e, {
-                default: () => B
+                default: () => J
             });
             n(15861);
             var i = n(4942),
@@ -24,20 +24,19 @@
                 s = n(6811),
                 c = (n(64687), n(64258)),
                 o = n(14411),
-                u = n(98185),
-                w = n(35187),
+                w = n(98185),
+                u = n(35187),
                 m = n(95896),
                 d = n(76176),
                 g = n(22202),
                 p = n(16869),
-                f = n(36753),
+                f = n(39270),
                 b = n(67294),
                 v = n(32981),
-                y = n(89250),
-                E = n(79655),
-                h = n(44062),
-                x = n(2126);
-            const C = function(t) {
+                h = n(89250),
+                y = n(79655),
+                E = n(2126);
+            const x = function(t) {
                 var e = t.createListing,
                     n = void 0 === e ? function() {} : e;
                 return b.createElement(o.JX, {
@@ -45,7 +44,7 @@
                 }, b.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center"
                 }, b.createElement(o.$1, {
-                    icon: x.u7,
+                    icon: E.u7,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -61,14 +60,14 @@
                     icon: a.r8
                 }), " Create Listing")))
             };
-            var N = n(2909),
-                k = n(76553),
-                T = n(27484),
-                j = n.n(T),
-                D = n(45697),
-                L = n.n(D),
-                P = n(97798);
-            const z = function(t) {
+            var C = n(2909),
+                N = n(76553),
+                k = n(27484),
+                D = n.n(k),
+                P = n(45697),
+                j = n.n(P),
+                L = n(97798);
+            const T = function(t) {
                 var e = t.active,
                     n = void 0 !== e && e,
                     i = t.editAction,
@@ -76,31 +75,31 @@
                     r = t.deleteAction,
                     s = void 0 === r ? function() {} : r,
                     c = t.publishAction,
-                    u = void 0 === c ? function() {} : c,
-                    w = (0, b.useState)(!1),
-                    m = (0, l.Z)(w, 2),
+                    w = void 0 === c ? function() {} : c,
+                    u = (0, b.useState)(!1),
+                    m = (0, l.Z)(u, 2),
                     d = m[0],
                     g = m[1],
                     p = (0, b.useState)(null),
                     f = (0, l.Z)(p, 2),
                     v = f[0],
-                    y = f[1],
-                    E = (0, b.useRef)(null);
+                    h = f[1],
+                    y = (0, b.useRef)(null);
                 return (0, b.useEffect)((function() {
-                    null != E && E.current && y(E.current.getBoundingClientRect())
-                }), [E]), b.createElement("div", {
+                    null != y && y.current && h(y.current.getBoundingClientRect())
+                }), [y]), b.createElement("div", {
                     onMouseLeave: function() {
                         return g(!1)
                     }
                 }, b.createElement(o.zx, {
-                    ref: E,
+                    ref: y,
                     className: "tw-h-9 tw-w-9",
                     neutral: !0,
                     onClick: function() {
                         return g(!d)
                     }
                 }, b.createElement(o.$1, {
-                    icon: P.Uw,
+                    icon: L.Uw,
                     size: "1x"
                 })), b.createElement(o.JX, {
                     style: {
@@ -115,7 +114,7 @@
                     className: "tw-text-left tw-px-3 tw-py-2 tw-w-full tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]"
                 }, "Edit"), b.createElement("button", {
                     type: "button",
-                    onClick: u,
+                    onClick: w,
                     className: "tw-text-left tw-px-3 tw-py-2 tw-w-full tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]"
                 }, n ? "Move to Draft" : "Publish"), b.createElement("hr", {
                     className: "tw-border-t-2 tw-m-0 tw-border-solid tw-w-full tw-border-white"
@@ -125,24 +124,24 @@
                     className: "tw-px-3 tw-py-2 tw-text-red tw-text-left tw-border-none tw-w-full tw-bg-transparent hover:tw-bg-[#666666] hover:tw-text-white"
                 }, "Delete"))))
             };
-            var I = function(t) {
+            var z = function(t) {
                 var e = t.listingData,
                     n = void 0 === e ? null : e,
                     i = t.editListingCallback,
                     l = void 0 === i ? function() {} : i,
                     a = t.deleteListingCallback,
                     r = void 0 === a ? function() {} : a,
-                    u = t.publishListingCallback,
-                    w = void 0 === u ? function() {} : u,
+                    w = t.publishListingCallback,
+                    u = void 0 === w ? function() {} : w,
                     m = (0, v.I0)();
                 if (null === n) return null;
                 var d = n.id,
                     g = n.displayName,
                     p = n.created,
                     f = n.active,
-                    y = n.priceTokens,
-                    E = n.listingType,
-                    h = n.imageId,
+                    h = n.priceTokens,
+                    y = n.listingType,
+                    E = n.imageId,
                     x = n.storeIds;
                 return b.createElement("div", {
                     className: "tw-relative"
@@ -152,7 +151,7 @@
                     className: "tw-flex tw-gap-2 tw-items-center tw-truncate  tw-col-span-2"
                 }, b.createElement(o.pw, {
                     fitToCover: !0,
-                    imageId: h,
+                    imageId: E,
                     className: "tw-w-12 tw-h-12 tw-rounded-md tw-shrink-0",
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
@@ -162,17 +161,17 @@
                     className: "tw-m-0 tw-font-bold"
                 }, g), b.createElement("p", {
                     className: "tw-capitalize tw-m-0 tw-text-light-grey"
-                }, "duration" === E ? "Temporary" : E || ""))), b.createElement(o.JX, {
+                }, "duration" === y ? "Temporary" : y || ""))), b.createElement(o.JX, {
                     className: "tw-items-center tw-justify-center tw-items-center tw-truncate tw-hidden @[700px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
-                }, "Date Added"), j()(p).format("ll")), b.createElement(o.JX, {
+                }, "Date Added"), D()(p).format("ll")), b.createElement(o.JX, {
                     className: "tw-items-center tw-justify-center tw-items-center tw-truncate  tw-hidden @[700px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
                 }, "Price"), b.createElement("p", {
                     className: "tw-mb-0"
-                }, b.createElement(o.b5, null), " ", y)), b.createElement(o.JX, {
+                }, b.createElement(o.b5, null), " ", h)), b.createElement(o.JX, {
                     className: "tw-items-center tw-justify-center tw-items-center tw-truncate tw-capitalize tw-hidden @[470px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
@@ -200,7 +199,7 @@
                             var e, n;
                             m((0, c.d)({
                                 title: "Failed to copy listing ID",
-                                icon: k.eH,
+                                icon: N.eH,
                                 message: null !== (e = null === (n = res.error.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== e ? e : "Failed to copy listing ID",
                                 color: "error",
                                 timeout: 3e3
@@ -208,9 +207,9 @@
                         }))
                     }
                 }, b.createElement(o.$1, {
-                    icon: N.kZ,
+                    icon: C.kZ,
                     size: "1x"
-                })), b.createElement(z, {
+                })), b.createElement(T, {
                     active: null == n ? void 0 : n.active,
                     editAction: function() {
                         return l(n)
@@ -219,16 +218,16 @@
                         return r(n)
                     },
                     publishAction: function() {
-                        return w(n)
+                        return u(n)
                     }
                 }))))
             };
-            I.propTypes = {
-                listingData: L().object
+            z.propTypes = {
+                listingData: j().object
             };
-            const O = I;
+            const O = z;
 
-            function S(t, e) {
+            function I(t, e) {
                 var n = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                     var i = Object.getOwnPropertySymbols(t);
@@ -239,47 +238,47 @@
                 return n
             }
 
-            function Z(t) {
+            function S(t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var n = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? S(Object(n), !0).forEach((function(e) {
+                    e % 2 ? I(Object(n), !0).forEach((function(e) {
                         (0, i.Z)(t, e, n[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : S(Object(n)).forEach((function(e) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : I(Object(n)).forEach((function(e) {
                         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
                     }))
                 }
                 return t
             }
-            var X = (0, b.lazy)((function() {
-                    return Promise.all([n.e(8303), n.e(6150)]).then(n.bind(n, 59795))
+            var Z = (0, b.lazy)((function() {
+                    return Promise.all([n.e(4980), n.e(682)]).then(n.bind(n, 20682))
+                })),
+                X = (0, b.lazy)((function() {
+                    return Promise.all([n.e(4980), n.e(2012)]).then(n.bind(n, 33642))
                 })),
                 A = (0, b.lazy)((function() {
-                    return Promise.all([n.e(8303), n.e(2012)]).then(n.bind(n, 33642))
-                })),
-                F = (0, b.lazy)((function() {
                     return n.e(4372).then(n.bind(n, 14363))
                 })),
-                J = (0, b.lazy)((function() {
+                F = (0, b.lazy)((function() {
                     return n.e(3929).then(n.bind(n, 63929))
                 }));
-            const B = function() {
-                var t, e = (0, v.I0)(),
-                    n = (0, y.s0)(),
-                    i = (0, E.lr)(),
-                    s = (0, l.Z)(i, 2),
-                    c = s[0],
-                    x = (s[1], (0, y.UO)().paginationPage),
-                    N = x ? Number(x) : 1,
+            const J = function() {
+                var t, e, n = (0, v.I0)(),
+                    i = (0, h.s0)(),
+                    s = (0, y.lr)(),
+                    c = (0, l.Z)(s, 2),
+                    E = c[0],
+                    C = (c[1], (0, h.UO)().paginationPage),
+                    N = C ? Number(C) : 1,
                     k = 50 * (N - 1),
-                    T = (0, b.useState)(""),
-                    j = (0, l.Z)(T, 2),
-                    D = j[0],
-                    L = j[1],
-                    P = (0, b.useState)(c.get("sortBy") || null),
-                    z = (0, l.Z)(P, 2),
+                    D = (0, b.useState)(""),
+                    P = (0, l.Z)(D, 2),
+                    j = P[0],
+                    L = P[1],
+                    T = (0, b.useState)(E.get("sortBy") || null),
+                    z = (0, l.Z)(T, 2),
                     I = z[0],
-                    S = (z[1], (0, b.useState)(c.get("orderBy") || "descending")),
-                    B = (0, l.Z)(S, 2),
+                    J = (z[1], (0, b.useState)(E.get("orderBy") || "descending")),
+                    B = (0, l.Z)(J, 2),
                     M = B[0],
                     $ = (B[1], b.useState({})),
                     U = (0, l.Z)($, 2),
@@ -289,72 +288,62 @@
                     R = (0, l.Z)(H, 2),
                     V = R[0],
                     q = R[1],
-                    K = (0, d.Z)(D),
+                    K = (0, d.Z)(j),
                     Q = (0, g.IB)().data,
                     W = (0, v.v9)((function(t) {
-                        return t.listingCreation
+                        return t.listingFlow
                     })),
-                    Y = (W.previousStep, W.currentStep),
-                    tt = W.isTitleHidden,
-                    et = (0, b.useMemo)((function() {
+                    Y = W.currentTitle,
+                    tt = W.isPreviewOpen,
+                    et = W.isTitleHidden,
+                    nt = (0, b.useMemo)((function() {
                         return {
                             userId: Q.id,
                             n: 50,
                             offset: k,
                             pageValue: N
                         }
-                    }), [c, K, M, I, N]),
-                    nt = (0, p.Ul)(Z(Z({}, et), {}, {
+                    }), [E, K, M, I, N]),
+                    it = (0, p.Ul)(S(S({}, nt), {}, {
                         listingType: "otp"
                     }), {
                         skip: !Q.id,
                         refetchOnMountOrArgChange: !0
                     }),
-                    it = nt.data,
-                    lt = nt.isSuccess,
-                    at = nt.isFetching,
-                    rt = nt.isError,
-                    st = nt.error;
-                (0, b.useEffect)((function() {
-                    _.isCreating && G((function(t) {
-                        return Z(Z({}, t), {}, {
-                            title: Y
-                        })
-                    })), tt && G((function(t) {
-                        return Z(Z({}, t), {}, {
-                            title: null
-                        })
-                    }))
-                }), [Y]);
-                var ct, ot = function(t) {
+                    lt = it.data,
+                    at = it.isSuccess,
+                    rt = it.isFetching,
+                    st = it.isError,
+                    ct = it.error,
+                    ot = function(t) {
                         var e = t.title,
-                            n = void 0 === e ? "" : e,
-                            i = t.data,
-                            l = void 0 === i ? void 0 : i,
-                            a = t.isCreating,
-                            r = void 0 !== a && a,
-                            s = t.isEditing,
-                            c = void 0 !== s && s,
-                            o = t.isDeleting,
-                            u = void 0 !== o && o,
-                            w = t.isPublishing,
-                            d = void 0 !== w && w,
-                            g = t.productType,
-                            p = void 0 === g ? m.Pm.LISTING : g,
-                            f = t.listingType,
-                            b = void 0 === f ? "" : f;
-                        q(!0), G({
-                            title: n,
-                            data: l,
-                            isCreating: r,
-                            isEditing: c,
+                            i = void 0 === e ? "" : e,
+                            l = t.data,
+                            a = void 0 === l ? void 0 : l,
+                            r = t.isCreating,
+                            s = void 0 !== r && r,
+                            c = t.isEditing,
+                            o = void 0 !== c && c,
+                            w = t.isDeleting,
+                            u = void 0 !== w && w,
+                            d = t.isPublishing,
+                            g = void 0 !== d && d,
+                            p = t.productType,
+                            b = void 0 === p ? m.Pm.LISTING : p,
+                            v = t.listingType,
+                            h = void 0 === v ? "" : v;
+                        q(!0), i && n((0, f.Td)(i)), G({
+                            title: i,
+                            data: a,
+                            isCreating: s,
+                            isEditing: o,
                             isDeleting: u,
-                            isPublishing: d,
-                            productType: p,
-                            listingType: b
+                            isPublishing: g,
+                            productType: b,
+                            listingType: h
                         })
                     },
-                    ut = function(t) {
+                    wt = function(t) {
                         ot({
                             title: "Edit Listing",
                             data: t,
@@ -362,7 +351,7 @@
                             listingType: t.listingType
                         })
                     },
-                    wt = function(t) {
+                    ut = function(t) {
                         ot({
                             title: "Delete Listing",
                             data: t,
@@ -378,16 +367,23 @@
                         })
                     },
                     dt = function() {
-                        q(!V), G({}), e((0, f.IT)(null)), e((0, f.Bq)("Create Listing (1/3)"))
+                        ot({
+                            title: "Create Listing (1/3)",
+                            isCreating: !0,
+                            productType: m.Pm.LISTING
+                        })
+                    },
+                    gt = function() {
+                        q(!V), G({}), n((0, f.rk)())
                     };
-                return b.createElement(b.Fragment, null, b.createElement(o.$4, null, "My Listings"), 0 !== (null == it ? void 0 : it.length) || at || 1 !== N ? b.createElement(b.Fragment, null, b.createElement(o.X2, {
+                return b.createElement(b.Fragment, null, b.createElement(o.$4, null, "My Listings"), 0 !== (null == lt ? void 0 : lt.length) || rt || 1 !== N ? b.createElement(b.Fragment, null, b.createElement(o.X2, {
                     className: "tw-justify-between tw-gap-x-5 tw-gap-y-3 tw-flex-wrap tw-mt-6"
                 }, b.createElement("div", null, b.createElement(o.II, {
                     icon: r.wn,
                     type: "text",
                     rawInputClassName: "tw-h-9",
                     className: "tw-w-full tw-max-w-[515px] tw-hidden",
-                    value: D,
+                    value: j,
                     onChange: function(t) {
                         return L(t.target.value)
                     },
@@ -395,14 +391,7 @@
                 })), b.createElement(o.zx, {
                     "aria-label": "Create Listing",
                     className: "tw-px-2",
-                    onClick: function() {
-                        return ot({
-                            title: Y,
-                            isCreating: !0,
-                            data: void 0,
-                            productType: m.Pm.LISTING
-                        })
-                    }
+                    onClick: dt
                 }, b.createElement(o.$1, {
                     icon: a.r8,
                     size: "1x"
@@ -410,75 +399,66 @@
                     className: "tw-@container/my-listings tw-rounded-md tw-mt-5"
                 }, b.createElement(o.JX, {
                     className: "tw-group tw-gap-3 tw-bg-[#181B1F]"
-                }, at ? b.createElement("div", {
+                }, rt ? b.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, b.createElement(u.Z, {
+                }, b.createElement(w.Z, {
                     loading: !0
-                })) : rt ? b.createElement("div", {
+                })) : st ? b.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, b.createElement("p", null, "Error loading sales data:"), b.createElement("code", null, null !== (ct = st.data.error.message) && void 0 !== ct ? ct : "Unknown error")) : lt && 0 === (null == it ? void 0 : it.length) ? b.createElement("div", {
+                }, b.createElement("p", null, "Error loading sales data:"), b.createElement("code", null, null !== (e = ct.data.error.message) && void 0 !== e ? e : "Unknown error")) : at && 0 === (null == lt ? void 0 : lt.length) ? b.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, b.createElement("p", {
                     className: "tw-mb-0"
-                }, "There are no transactions data to display.")) : lt ? it.map((function(t) {
+                }, "There are no transactions data to display.")) : at ? lt.map((function(t) {
                     return b.createElement(O, {
                         key: t.id,
                         listingData: t,
-                        editListingCallback: ut,
-                        deleteListingCallback: wt,
+                        editListingCallback: wt,
+                        deleteListingCallback: ut,
                         publishListingCallback: mt
                     })
-                })) : void 0), b.createElement(w.Z, {
+                })) : void 0), b.createElement(u.Z, {
                     className: "tw-pt-2",
-                    totalCount: null !== (t = null == it ? void 0 : it.length) && void 0 !== t ? t : 0,
+                    totalCount: null !== (t = null == lt ? void 0 : lt.length) && void 0 !== t ? t : 0,
                     showCurrentPageOnly: !0,
                     currentPage: N,
                     pageSize: 50,
                     onPageChange: function(t) {
-                        return n("/home/marketplace/storefront/listings/page/".concat(t))
+                        return i("/home/marketplace/storefront/listings/page/".concat(t))
                     }
-                }))) : b.createElement(C, {
-                    createListing: function() {
-                        return ot({
-                            title: Y,
-                            isCreating: !0,
-                            data: void 0,
-                            isEditing: !1,
-                            productType: "listing"
-                        })
-                    }
+                }))) : b.createElement(x, {
+                    createListing: dt
                 }), b.createElement(o.u_, {
-                    title: _.title,
-                    onClose: dt,
+                    title: Y || _.title,
+                    onClose: gt,
                     isVisible: V,
                     width: "100%",
-                    slim: !0,
+                    slim: !tt,
                     centered: !1,
                     overflow: "auto",
+                    noClose: tt,
+                    hideTitle: et,
                     disableBackdropClick: !0,
-                    backgroundColor: "#181B1F"
+                    backgroundColor: tt ? "#0A0A0D" : "#181B1F"
                 }, b.createElement(b.Suspense, {
-                    fallback: b.createElement(u.Z, {
+                    fallback: b.createElement(w.Z, {
                         loading: !0
                     })
-                }, V && !_.data && "subscription" !== _.listingType && _.isCreating && b.createElement(X, {
-                    onClose: dt
-                }), V && _.isEditing && _.data && "subscription" !== _.listingType && b.createElement(A, {
-                    onClose: dt,
-                    onDelete: wt,
-                    listing: _.data
-                }), V && _.isEditing && _.data && "subscription" === _.listingType && b.createElement(h.default, {
-                    onClose: dt,
+                }, V && _.isCreating && b.createElement(Z, {
+                    onClose: gt
+                }), V && _.isEditing && _.data && b.createElement(X, {
+                    onClose: gt,
+                    onDelete: ut,
                     listingId: _.data.id
-                }), V && _.isDeleting && b.createElement(F, {
-                    onCancelCallback: dt,
+                }), V && _.isDeleting && b.createElement(A, {
+                    onCancelCallback: gt,
                     listing: _.data
-                }), V && _.isPublishing && b.createElement(J, {
-                    onClose: dt,
+                }), V && _.isPublishing && b.createElement(F, {
+                    onClose: gt,
                     listing: _.data
                 }))))
             }
         }
     }
 ]);
-//# sourceMappingURL=2c482be05175db99d0073c8fd72e0e852cbab7512aa7721f14a52ccfa519b779.js.map
+//# sourceMappingURL=c85a94387af7f9bd9405b1c72dea52d458f64a8fd5d039c5bd4f67f8fb122320.js.map

@@ -254,20 +254,14 @@
                 y = n(42138),
                 v = n(3820),
                 b = n(23138),
-                Z = n(29104);
-            var x = {
-                    content_sex: "Sexually Suggestive Content",
-                    content_adult: "Adult Language and Themes",
-                    content_violence: "Graphic Violence",
-                    content_gore: "Excessive Gore",
-                    content_horror: "Extreme Horror"
-                },
-                C = (0, s.Z)("div", {
-                    target: "ezmvepu0"
-                })({
-                    name: "1qck9b",
-                    styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
-                });
+                Z = n(3620),
+                x = n(29104);
+            var C = (0, s.Z)("div", {
+                target: "ezmvepu0"
+            })({
+                name: "1qck9b",
+                styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
+            });
             const N = function() {
                 var e, t = (0, p.I0)(),
                     n = (0, a.Tu)().user,
@@ -305,13 +299,13 @@
                 }), [k]);
                 return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), g && r.createElement(b.Z, {
                     color: "danger"
-                }, "Unable to change content gating settings: ", null == N || null === (e = N.data) || void 0 === e ? void 0 : e.error.message), Object.entries(x).map((function(e) {
+                }, "Unable to change content gating settings: ", null == N || null === (e = N.data) || void 0 === e ? void 0 : e.error.message), Object.entries(Z.N).map((function(e) {
                     var t = (0, i.Z)(e, 2),
                         n = t[0],
                         a = t[1];
                     return r.createElement(C, {
                         key: n
-                    }, r.createElement(Z.Z, {
+                    }, r.createElement(x.Z, {
                         label: "Filter ".concat(a),
                         defaultChecked: s.has(n),
                         onChangeCallback: function() {
@@ -480,16 +474,16 @@
                     j = (0, O.lw)(),
                     $ = (0, i.Z)(j, 2),
                     V = $[0],
-                    _ = $[1],
-                    q = _.isError,
-                    L = _.error,
-                    M = _.isLoading,
-                    Y = _.isSuccess,
-                    B = _.reset;
+                    q = $[1],
+                    _ = q.isError,
+                    L = q.error,
+                    M = q.isLoading,
+                    Y = q.isSuccess,
+                    B = q.reset;
                 (0, r.useEffect)((function() {
                     var e;
-                    q && (B(), N("Could Not Proccess Claim: ".concat(null == L || null === (e = L.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
-                }), [q, L]), (0, r.useEffect)((function() {
+                    _ && (B(), N("Could Not Proccess Claim: ".concat(null == L || null === (e = L.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                }), [_, L]), (0, r.useEffect)((function() {
                     Y && (B(), k(!0))
                 }), [Y]);
                 var W = function(e) {
@@ -698,8 +692,8 @@
                 }, "Next")))
             };
             var V = n(59545),
-                _ = n(83868),
-                q = n.n(_);
+                q = n(83868),
+                _ = n.n(q);
 
             function L(e, t) {
                 var n = Object.keys(e);
@@ -740,7 +734,7 @@
                     w = m.setOwnerInfo;
                 return (0, r.useEffect)((function() {
                     var e, t, n, a, r, l;
-                    q()(null !== (e = null == f ? void 0 : f.email) && void 0 !== e ? e : "") && (null == f || null === (t = f.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == f || null === (n = f.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == f || null === (a = f.mailingCity) || void 0 === a ? void 0 : a.length) > 0 && (null == f || null === (r = f.mailingCountry) || void 0 === r ? void 0 : r.length) > 0 && (null == f || null === (l = f.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
+                    _()(null !== (e = null == f ? void 0 : f.email) && void 0 !== e ? e : "") && (null == f || null === (t = f.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == f || null === (n = f.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == f || null === (a = f.mailingCity) || void 0 === a ? void 0 : a.length) > 0 && (null == f || null === (r = f.mailingCountry) || void 0 === r ? void 0 : r.length) > 0 && (null == f || null === (l = f.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
                 }), [f]), 2 !== h ? null : r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
                 }, n ? r.createElement(B, null, r.createElement(l.$1, {
@@ -924,8 +918,8 @@
                     }
                 }, r.createElement($, null), r.createElement(Y, null), r.createElement(j, null))))
             };
-            var G = n(65578),
-                K = n(84176),
+            var K = n(65578),
+                G = n(84176),
                 X = n(22081),
                 Q = n(92332),
                 J = n(34424),
@@ -1236,16 +1230,16 @@
                     U = (0, i.Z)(z, 2),
                     $ = U[0],
                     V = U[1],
-                    _ = (0, r.useState)(""),
-                    q = (0, i.Z)(_, 2),
-                    L = q[0],
-                    M = q[1],
+                    q = (0, r.useState)(""),
+                    _ = (0, i.Z)(q, 2),
+                    L = _[0],
+                    M = _[1],
                     Y = (0, r.useState)(null),
                     B = (0, i.Z)(Y, 2),
                     W = B[0],
                     H = B[1],
-                    G = (0, r.useState)(""),
-                    ee = (0, i.Z)(G, 2),
+                    K = (0, r.useState)(""),
+                    ee = (0, i.Z)(K, 2),
                     ce = ee[0],
                     me = ee[1],
                     pe = r.useState(!1),
@@ -1405,7 +1399,7 @@
                     },
                     className: "mx-0"
                 }, r.createElement(l.$1, {
-                    icon: K.DD,
+                    icon: G.DD,
                     size: "2x"
                 })), r.createElement(re.Z, {
                     xs: "10"
@@ -1448,8 +1442,8 @@
                 }, "Change Display Name"))))))
             };
             var Ve = n(15671),
-                _e = n(43144),
-                qe = n(97326),
+                qe = n(43144),
+                _e = n(97326),
                 Le = n(60136),
                 Me = n(82963),
                 Ye = n(61120),
@@ -1476,7 +1470,7 @@
                     return (0, Me.Z)(this, n)
                 }
             }
-            var Ge = function(e) {
+            var Ke = function(e) {
                 (0, Le.Z)(c, e);
                 var t, n, a, i, s = He(c);
 
@@ -1493,9 +1487,9 @@
                         confirmationError: !1,
                         confirmationOk: null,
                         ready: !1
-                    }, t.handleCurrentPassword = t.handleCurrentPassword.bind((0, qe.Z)(t)), t.handleNewPassword = t.handleNewPassword.bind((0, qe.Z)(t)), t.handleConfirmation = t.handleConfirmation.bind((0, qe.Z)(t)), t.handleSubmit = t.handleSubmit.bind((0, qe.Z)(t)), t
+                    }, t.handleCurrentPassword = t.handleCurrentPassword.bind((0, _e.Z)(t)), t.handleNewPassword = t.handleNewPassword.bind((0, _e.Z)(t)), t.handleConfirmation = t.handleConfirmation.bind((0, _e.Z)(t)), t.handleSubmit = t.handleSubmit.bind((0, _e.Z)(t)), t
                 }
-                return (0, _e.Z)(c, [{
+                return (0, qe.Z)(c, [{
                     key: "handleCurrentPassword",
                     value: (i = (0, o.Z)(m().mark((function e(t) {
                         var n;
@@ -1714,7 +1708,7 @@
                             },
                             className: "mx-0"
                         }, r.createElement(l.$1, {
-                            icon: K.DD,
+                            icon: G.DD,
                             size: "2x"
                         })), r.createElement(re.Z, {
                             xs: "10"
@@ -1743,12 +1737,12 @@
                     }
                 }]), c
             }(r.Component);
-            const Ke = (0, p.$j)((function(e) {
+            const Ge = (0, p.$j)((function(e) {
                 return {
                     currentUser: e.currentUser.databaseUser,
                     password: e.currentUser.password
                 }
-            }))(Ge);
+            }))(Ke);
             var Xe = n(42501),
                 Qe = n(67714),
                 Je = n(22202);
@@ -1935,7 +1929,7 @@
 
                     function n(e) {
                         var a;
-                        return (0, Ve.Z)(this, n), a = t.call(this, e), (0, P.Z)((0, qe.Z)(a), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
+                        return (0, Ve.Z)(this, n), a = t.call(this, e), (0, P.Z)((0, _e.Z)(a), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
                             var t, n, r;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1968,7 +1962,7 @@
                             }), e, null, [
                                 [3, 10]
                             ])
-                        })))), (0, P.Z)((0, qe.Z)(a), "disable", function() {
+                        })))), (0, P.Z)((0, _e.Z)(a), "disable", function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
                                 var n, r;
                                 return m().wrap((function(e) {
@@ -2008,9 +2002,9 @@
                                 }))
                             }
                             return e
-                        }({}, vt), a.ref = r.createRef(), a.enable = a.enable.bind((0, qe.Z)(a)), a.renderSetup = a.renderSetup.bind((0, qe.Z)(a)), a.renderStatus = a.renderStatus.bind((0, qe.Z)(a)), a.handleChangeVerifyCode = a.handleChangeVerifyCode.bind((0, qe.Z)(a)), a.handleVerifyPendingSecret = a.handleVerifyPendingSecret.bind((0, qe.Z)(a)), a.isSettingUp = a.isSettingUp.bind((0, qe.Z)(a)), a.cancelSecret = a.cancelSecret.bind((0, qe.Z)(a)), a.showTextKey = a.showTextKey.bind((0, qe.Z)(a)), a.goToStep0 = a.goToStep0.bind((0, qe.Z)(a)), a.goToStep1 = a.goToStep1.bind((0, qe.Z)(a)), a.goToStep2 = a.goToStep2.bind((0, qe.Z)(a)), a.toggleOneTimePasswordsShown = a.toggleOneTimePasswordsShown.bind((0, qe.Z)(a)), a.hasOneTimePasswords = a.hasOneTimePasswords.bind((0, qe.Z)(a)), a.getOneTimePasswordHref = a.getOneTimePasswordHref.bind((0, qe.Z)(a)), a.downloadOneTimePasswords = a.downloadOneTimePasswords.bind((0, qe.Z)(a)), a.triggerOtpDownloadLink = a.triggerOtpDownloadLink.bind((0, qe.Z)(a)), a
+                        }({}, vt), a.ref = r.createRef(), a.enable = a.enable.bind((0, _e.Z)(a)), a.renderSetup = a.renderSetup.bind((0, _e.Z)(a)), a.renderStatus = a.renderStatus.bind((0, _e.Z)(a)), a.handleChangeVerifyCode = a.handleChangeVerifyCode.bind((0, _e.Z)(a)), a.handleVerifyPendingSecret = a.handleVerifyPendingSecret.bind((0, _e.Z)(a)), a.isSettingUp = a.isSettingUp.bind((0, _e.Z)(a)), a.cancelSecret = a.cancelSecret.bind((0, _e.Z)(a)), a.showTextKey = a.showTextKey.bind((0, _e.Z)(a)), a.goToStep0 = a.goToStep0.bind((0, _e.Z)(a)), a.goToStep1 = a.goToStep1.bind((0, _e.Z)(a)), a.goToStep2 = a.goToStep2.bind((0, _e.Z)(a)), a.toggleOneTimePasswordsShown = a.toggleOneTimePasswordsShown.bind((0, _e.Z)(a)), a.hasOneTimePasswords = a.hasOneTimePasswords.bind((0, _e.Z)(a)), a.getOneTimePasswordHref = a.getOneTimePasswordHref.bind((0, _e.Z)(a)), a.downloadOneTimePasswords = a.downloadOneTimePasswords.bind((0, _e.Z)(a)), a.triggerOtpDownloadLink = a.triggerOtpDownloadLink.bind((0, _e.Z)(a)), a
                     }
-                    return (0, _e.Z)(n, [{
+                    return (0, qe.Z)(n, [{
                         key: "componentDidUpdate",
                         value: function() {
                             this.state.isWaitingToDownloadOtp && this.hasOneTimePasswords() && (this.triggerOtpDownloadLink(), this.setState({
@@ -2392,9 +2386,9 @@
                     className: "mb-2"
                 }, r.createElement($e, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Change Email")), r.createElement(l.Ao, {
                     className: "mb-2"
-                }, r.createElement(G.Z, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Change Password")), r.createElement(l.Ao, {
+                }, r.createElement(K.Z, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Change Password")), r.createElement(l.Ao, {
                     className: "mb-2"
-                }, r.createElement(Ke, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Two-factor authentication")), r.createElement(l.Ao, {
+                }, r.createElement(Ge, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Two-factor authentication")), r.createElement(l.Ao, {
                     className: "mb-2"
                 }, r.createElement(Zt, null)), r.createElement(l.oI, null, r.createElement("h4", null, "Privacy")), r.createElement(l.Ao, {
                     className: "mb-2"
@@ -2456,17 +2450,17 @@
                     U = z.isFetching,
                     $ = z.isError,
                     V = z.isSuccess,
-                    _ = z.error,
-                    q = z.originalArgs,
+                    q = z.error,
+                    _ = z.originalArgs,
                     L = (0, v.n_)(),
                     M = (0, a.Z)(L, 2),
                     Y = M[0],
                     B = M[1],
                     W = B.isLoading,
                     H = B.isError,
-                    G = B.error,
-                    K = (0, y.Fe)(),
-                    X = (0, a.Z)(K, 2),
+                    K = B.error,
+                    G = (0, y.Fe)(),
+                    X = (0, a.Z)(G, 2),
                     Q = X[0],
                     J = X[1],
                     ee = J.isFetching,
@@ -2508,10 +2502,10 @@
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
-                        }), " Failed to change news preference: ", G, ".");
-                        if ($ && (null == q ? void 0 : q.email) === A) {
+                        }), " Failed to change news preference: ", K, ".");
+                        if ($ && (null == _ ? void 0 : _.email) === A) {
                             I("");
-                            var t = _.data.error.message;
+                            var t = q.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
                             }, m.createElement(b.$1, {
@@ -2826,4 +2820,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b2c2e9d55bf3b32a382ff4ced0a256906edae39327bd279e334c7173ded926d9.js.map
+//# sourceMappingURL=600974c555b64f5b6e2a1a641a388f775011f15a829dc1879a563b78eb3f74c8.js.map

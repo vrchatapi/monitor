@@ -9,9 +9,9 @@
                 n = r(4942),
                 u = r(54546),
                 o = r(76553),
-                s = r(6811),
-                i = r(64687),
-                c = r.n(i),
+                i = r(6811),
+                s = r(64687),
+                c = r.n(s),
                 l = r(67294),
                 v = r(32981),
                 d = r(64258),
@@ -42,7 +42,7 @@
                 }
                 return t
             }
-            var w = r(61509).S.injectEndpoints({
+            var A = r(61509).S.injectEndpoints({
                     endpoints: function(t) {
                         return {
                             getAssetReviewsList: t.query({
@@ -106,8 +106,8 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["AssetReviewsAvatar", "AssetReviewsList"]
                 }),
-                A = (w.useGetAssetReviewsListQuery, w.useGetAvatarAssetReviewsByIdQuery, w.useSubmitAvatarForAssetReviewMutation),
-                h = r(22202),
+                h = (A.useGetAssetReviewsListQuery, A.useGetAvatarAssetReviewsByIdQuery, A.useSubmitAvatarForAssetReviewMutation),
+                w = r(22202),
                 O = r(67978),
                 S = r(43683),
                 T = r(67263),
@@ -171,18 +171,18 @@
                     return r.e(8536).then(r.bind(r, 18536))
                 })),
                 q = (0, l.lazy)((function() {
-                    return Promise.all([r.e(3261), r.e(2621), r.e(6869)]).then(r.bind(r, 72621))
+                    return Promise.all([r.e(3261), r.e(2621)]).then(r.bind(r, 72621))
                 })),
-                C = (0, l.lazy)((function() {
+                D = (0, l.lazy)((function() {
                     return r.e(2172).then(r.bind(r, 42172))
                 })),
                 k = (0, l.lazy)((function() {
                     return r.e(1899).then(r.bind(r, 71899))
                 })),
-                D = (0, l.lazy)((function() {
+                C = (0, l.lazy)((function() {
                     return r.e(3871).then(r.bind(r, 3871))
                 })),
-                R = {
+                L = {
                     productDetails: "Create Product",
                     productReviewSumbit: "Submit for Review",
                     productCreated: "Product Created",
@@ -192,43 +192,43 @@
                 var e = t.onClose,
                     r = void 0 === e ? function() {} : e,
                     n = (0, v.I0)(),
-                    i = (0, y.Tu)().user,
+                    s = (0, y.Tu)().user,
                     m = (0, v.v9)((function(t) {
                         return t.productFlow
                     })),
                     g = m.currentStep,
                     b = m.productType,
-                    w = m.currentProduct,
-                    T = (0, l.useState)(w || {}),
+                    A = m.currentProduct,
+                    T = (0, l.useState)(A || {}),
                     I = (0, u.Z)(T, 2),
                     x = I[0],
                     F = I[1];
                 (0, l.useEffect)((function() {
                     g || n((0, S.Bq)("productType"))
                 }), []);
-                var L = (0, h.q7)({
-                        skip: !i
+                var R = (0, w.q7)({
+                        skip: !s
                     }),
-                    U = L.data,
-                    V = L.isLoading,
-                    Z = L.isSuccess,
-                    M = A(),
-                    G = (0, u.Z)(M, 2),
-                    N = G[0],
-                    Q = G[1],
-                    z = (Q.isLoading, Q.isError, Q.error),
-                    _ = (0, O.qX)(),
-                    B = (0, u.Z)(_, 2),
-                    X = B[0],
-                    J = B[1],
-                    Y = (J.isSuccess, J.isLoading, J.isError, J.error, (0, l.useMemo)((function() {
+                    U = R.data,
+                    V = R.isLoading,
+                    Z = R.isSuccess,
+                    M = h(),
+                    N = (0, u.Z)(M, 2),
+                    Q = N[0],
+                    G = N[1],
+                    z = (G.isLoading, G.isError, G.error),
+                    W = (0, O.qX)(),
+                    _ = (0, u.Z)(W, 2),
+                    B = _[0],
+                    X = _[1],
+                    J = (X.isSuccess, X.isLoading, X.isError, X.error, (0, l.useMemo)((function() {
                         return !(V || !Z) && (null == U ? void 0 : U.includes("permission-sell-avatar-products"))
                     }), [V])),
-                    H = function() {
+                    Y = function() {
                         var t, e = (t = f.F_[b].indexOf(g), f.F_[b][t + 1] || g);
-                        n((0, S.Td)(R[e])), n((0, S.Bq)(e))
+                        n((0, S.Td)(L[e])), n((0, S.Bq)(e))
                     },
-                    W = function() {
+                    H = function() {
                         var t, e = (t = f.F_[b].indexOf(g), {
                                 immediateStep: f.F_[b][t - 1] || null,
                                 nextStep: f.F_[b][t - 2] || null
@@ -236,27 +236,27 @@
                             r = e.immediateStep,
                             a = e.nextStep;
                         if (!r) return n((0, S.Bq)("productType")), void n((0, S.IT)(null));
-                        n((0, S.Td)(R[r])), n((0, S.Bq)(r)), n((0, S.IT)(a))
+                        n((0, S.Td)(L[r])), n((0, S.Bq)(r)), n((0, S.IT)(a))
                     },
                     $ = function(t) {
                         n((0, S.IR)(t)), F(E(E({}, x), t))
                     },
                     K = function() {
                         var t = (0, a.Z)(c().mark((function t(e) {
-                            var r, a, u, i, l, v, p, f, y;
+                            var r, a, u, s, l, v, p, f, y;
                             return c().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        return r = e.productData, a = void 0 === r ? {} : r, u = e.image, i = void 0 === u ? void 0 : u, l = function() {
+                                        return r = e.productData, a = void 0 === r ? {} : r, u = e.image, s = void 0 === u ? void 0 : u, l = function() {
                                             n((0, d.d)({
                                                 title: "Product created successfully!",
-                                                icon: s.f8,
+                                                icon: i.f8,
                                                 message: "Your product has been created successfully!",
                                                 color: "success",
                                                 timeout: 3e3
-                                            })), H()
-                                        }, t.prev = 2, t.next = 5, X(E(E({}, i && {
-                                            file: i,
+                                            })), Y()
+                                        }, t.prev = 2, t.next = 5, B(E(E({}, s && {
+                                            file: s,
                                             tag: "product"
                                         }), a)).unwrap();
                                     case 5:
@@ -293,26 +293,32 @@
                                         }
                                         return t.abrupt("return");
                                     case 2:
-                                        return t.prev = 2, t.next = 5, N({
+                                        if ("private" === (null == x ? void 0 : x.releaseStatus)) {
+                                            t.next = 4;
+                                            break
+                                        }
+                                        return t.abrupt("return");
+                                    case 4:
+                                        return t.prev = 4, t.next = 7, Q({
                                             avatarId: x.id,
                                             submitNotes: ""
                                         }).unwrap();
-                                    case 5:
-                                        return t.abrupt("return", H());
-                                    case 8:
-                                        t.prev = 8, t.t0 = t.catch(2), n((0, d.d)({
+                                    case 7:
+                                        return t.abrupt("return", Y());
+                                    case 10:
+                                        t.prev = 10, t.t0 = t.catch(4), n((0, d.d)({
                                             title: "Error",
                                             icon: o.eH,
                                             message: (null == z || null === (e = z.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) || "An error occurred while submitting your avatar for review.",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
-                                    case 11:
+                                    case 13:
                                     case "end":
                                         return t.stop()
                                 }
                             }), t, null, [
-                                [2, 8]
+                                [4, 10]
                             ])
                         })));
                         return function() {
@@ -330,38 +336,38 @@
                     switch (g) {
                         case "productType":
                             return l.createElement(j, {
-                                onNext: H,
+                                onNext: Y,
                                 onClose: et,
-                                hasAvatarSellerPermission: Y
+                                hasAvatarSellerPermission: J
                             });
                         case "productDetails":
-                            return "avatar" === b ? l.createElement(C, {
+                            return "avatar" === b ? l.createElement(D, {
                                 disabled: !0,
                                 type: b,
                                 onDataChange: $,
-                                user: i,
+                                user: s,
                                 onNext: function(t) {
-                                    return H()
+                                    return Y()
                                 },
                                 onPrevious: function(t) {
-                                    return W()
+                                    return H()
                                 },
                                 onClose: et
                             }) : l.createElement(q, {
                                 type: b,
                                 onDataChange: $,
-                                user: i,
+                                user: s,
                                 onSubmit: K,
                                 onClose: et
                             });
                         case "productReviewSumbit":
                             return l.createElement(k, {
-                                onPrevious: W,
+                                onPrevious: H,
                                 avatar: x,
                                 onSubmit: tt
                             });
                         case "productReviewSubmitted":
-                            return l.createElement(D, {
+                            return l.createElement(C, {
                                 onClose: et
                             });
                         case "productCreated":
@@ -378,25 +384,25 @@
             r.d(e, {
                 C0: () => x,
                 CO: () => b,
-                Cm: () => I,
+                Cm: () => P,
                 EA: () => m,
                 F6: () => g,
                 GG: () => f,
-                Gy: () => P,
-                LQ: () => A,
+                LQ: () => h,
                 X8: () => y,
-                ak: () => T,
-                cq: () => S,
-                lx: () => w,
-                ve: () => h,
+                ak: () => I,
+                cq: () => T,
+                eP: () => S,
+                lx: () => A,
+                ve: () => w,
                 x8: () => O
             });
-            var a = r(42138),
-                n = r(15861),
+            var a = r(15861),
+                n = r(42138),
                 u = r(4942),
                 o = r(64687),
-                s = r.n(o),
-                i = r(61509);
+                i = r.n(o),
+                s = r(61509);
 
             function c(t, e) {
                 var r = "undefined" != typeof Symbol && t[Symbol.iterator] || t["@@iterator"];
@@ -431,7 +437,7 @@
                     throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }
                 var u, o = !0,
-                    s = !1;
+                    i = !1;
                 return {
                     s: function() {
                         r = r.call(t)
@@ -441,13 +447,13 @@
                         return o = t.done, t
                     },
                     e: function(t) {
-                        s = !0, u = t
+                        i = !0, u = t
                     },
                     f: function() {
                         try {
                             o || null == r.return || r.return()
                         } finally {
-                            if (s) throw u
+                            if (i) throw u
                         }
                     }
                 }
@@ -481,7 +487,7 @@
                 }
                 return t
             }
-            var p = i.S.injectEndpoints({
+            var p = s.S.injectEndpoints({
                     endpoints: function(t) {
                         return {
                             getAllAvatarStyles: t.query({
@@ -506,10 +512,14 @@
                                         } : {})
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
-                                    t.avatarId;
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
-                                        type: "Avatar"
+                                        type: "Avatar",
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -522,6 +532,15 @@
                                     }
                                 },
                                 invalidatesTags: ["CurrentAvatar"]
+                            }),
+                            selectFallbackAvatar: t.mutation({
+                                query: function(t) {
+                                    var e = t.avatarId;
+                                    return {
+                                        url: "/avatars/".concat(e, "/selectfallback"),
+                                        method: "PUT"
+                                    }
+                                }
                             }),
                             getAvatar: t.query({
                                 query: function(t) {
@@ -537,11 +556,14 @@
                                 },
                                 providesTags: function(t, e, r) {
                                     var a = r.avatarId,
-                                        n = r.getListingData;
+                                        u = r.getListingData;
                                     return [{
                                         type: "Avatar",
-                                        id: "".concat(a, "-").concat(n ? "withListingData" : "")
-                                    }]
+                                        id: a
+                                    }].concat((0, n.Z)(u ? [{
+                                        type: "AvatarWithListingData",
+                                        id: a
+                                    }] : []))
                                 }
                             }),
                             setAvatarPublic: t.mutation({
@@ -555,10 +577,14 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: t.avatarId
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -573,10 +599,14 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: t.avatarId
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -592,10 +622,14 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: t.avatarId
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -609,16 +643,6 @@
                                 },
                                 invalidatesTags: ["CurrentAvatar", "Avatar"]
                             }),
-                            wearAvatar: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
-                                    return {
-                                        url: "/avatars/".concat(e, "/select"),
-                                        method: "PUT"
-                                    }
-                                },
-                                invalidatesTags: ["CurrentAvatar"]
-                            }),
                             enqueueImpostor: t.mutation({
                                 query: function(t) {
                                     var e = t.avatarId;
@@ -627,10 +651,14 @@
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: t.avatarId
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -642,10 +670,14 @@
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, i.T)((function(t) {
+                                invalidatesTags: (0, s.T)((function(t) {
+                                    var e = t.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: t.avatarId
+                                        id: e
+                                    }, {
+                                        type: "AvatarWithListingData",
+                                        id: e
                                     }]
                                 }))
                             }),
@@ -657,19 +689,19 @@
                                 }
                             }),
                             getAllAvatars: t.query({
-                                queryFn: (r = (0, n.Z)(s().mark((function t(e, r, n, u) {
-                                    var o, i, c, l, v, d, p, f, y, m, g, b, w, A, h, O, S, T, I, P, x, E, j, q, C, k, D;
-                                    return s().wrap((function(t) {
+                                queryFn: (r = (0, a.Z)(i().mark((function t(e, r, a, u) {
+                                    var o, s, c, l, v, d, p, f, y, m, g, b, A, h, w, O, S, T, I, P, x, E, j, q, D, k, C;
+                                    return i().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                o = e.sort, i = void 0 === o ? "updated" : o, c = e.order, l = void 0 === c ? "descending" : c, v = e.releaseStatus, d = void 0 === v ? "all" : v, p = e.user, f = void 0 === p ? "me" : p, y = e.organization, m = void 0 === y ? "vrchat" : y, g = e.n, b = void 0 === g ? 20 : g, w = e.featured, A = e.userId, h = e.search, O = e.tag, S = e.notag, T = e.platform, I = e.maxUnityVersion, P = e.minUnityVersion, x = e.exactUnityVersion, E = e.minAssetVersion, j = e.maxAssetVersion, q = e.exactAssetVersion, C = [], k = 0;
+                                                o = e.sort, s = void 0 === o ? "updated" : o, c = e.order, l = void 0 === c ? "descending" : c, v = e.releaseStatus, d = void 0 === v ? "all" : v, p = e.user, f = void 0 === p ? "me" : p, y = e.organization, m = void 0 === y ? "vrchat" : y, g = e.n, b = void 0 === g ? 20 : g, A = e.featured, h = e.userId, w = e.search, O = e.tag, S = e.notag, T = e.platform, I = e.maxUnityVersion, P = e.minUnityVersion, x = e.exactUnityVersion, E = e.minAssetVersion, j = e.maxAssetVersion, q = e.exactAssetVersion, D = [], k = 0;
                                             case 3:
                                                 return t.next = 6, u({
                                                     url: "avatars",
                                                     params: {
                                                         exactAssetVersion: q,
                                                         exactUnityVersion: x,
-                                                        featured: w,
+                                                        featured: A,
                                                         maxAssetVersion: j,
                                                         maxUnityVersion: I,
                                                         minAssetVersion: E,
@@ -681,32 +713,32 @@
                                                         organization: m,
                                                         platform: T,
                                                         releaseStatus: d,
-                                                        search: h,
-                                                        sort: i,
+                                                        search: w,
+                                                        sort: s,
                                                         tag: O,
                                                         user: f,
-                                                        userId: A
+                                                        userId: h
                                                     }
                                                 });
                                             case 6:
-                                                if (!(D = t.sent).error) {
+                                                if (!(C = t.sent).error) {
                                                     t.next = 9;
                                                     break
                                                 }
                                                 return t.abrupt("return", {
-                                                    error: D.error
+                                                    error: C.error
                                                 });
                                             case 9:
-                                                if (!(D.data.length > 0)) {
+                                                if (!(C.data.length > 0)) {
                                                     t.next = 13;
                                                     break
                                                 }
-                                                return C.push.apply(C, (0, a.Z)(D.data)), k += b, t.abrupt("continue", 3);
+                                                return D.push.apply(D, (0, n.Z)(C.data)), k += b, t.abrupt("continue", 3);
                                             case 13:
                                                 return t.abrupt("break", 16);
                                             case 16:
                                                 return t.abrupt("return", {
-                                                    data: C
+                                                    data: D
                                                 });
                                             case 17:
                                             case "end":
@@ -744,12 +776,12 @@
                                 }
                             }),
                             getAllFavoriteAvatars: t.query({
-                                queryFn: (e = (0, n.Z)(s().mark((function t() {
-                                    var e, r, n, u, o, i, l, v, d, p, f, y, m, g = arguments;
-                                    return s().wrap((function(t) {
+                                queryFn: (e = (0, a.Z)(i().mark((function t() {
+                                    var e, r, a, u, o, s, l, v, d, p, f, y, m, g = arguments;
+                                    return i().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                r = (e = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, n = e.tags, u = e.userId, o = e.groups, i = void 0 === o ? [] : o, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : i), t.prev = 7, d.s();
+                                                r = (e = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, a = e.tags, u = e.userId, o = e.groups, s = void 0 === o ? [] : o, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : s), t.prev = 7, d.s();
                                             case 9:
                                                 if ((p = d.n()).done) {
                                                     t.next = 27;
@@ -763,7 +795,7 @@
                                                         n: 50,
                                                         offset: y,
                                                         tag: null != r ? r : f,
-                                                        tags: n,
+                                                        tags: a,
                                                         userId: u
                                                     }
                                                 });
@@ -780,7 +812,7 @@
                                                     t.next = 22;
                                                     break
                                                 }
-                                                return v.push.apply(v, (0, a.Z)(m.data)), y += 50, t.abrupt("continue", 12);
+                                                return v.push.apply(v, (0, n.Z)(m.data)), y += 50, t.abrupt("continue", 12);
                                             case 22:
                                                 return t.abrupt("break", 25);
                                             case 25:
@@ -820,23 +852,23 @@
                     },
                     overrideExisting: !1
                 }).enhanceEndpoints({
-                    addTagTypes: ["Avatars", "FavoriteAvatars"]
+                    addTagTypes: ["Avatar", "AvatarWithListingData", "FavoriteAvatars"]
                 }),
                 f = p.useDeleteAvatarMutation,
                 y = p.useDeleteImpostorsMutation,
                 m = p.useEnqueueImpostorMutation,
                 g = p.useGetAllAvatarsQuery,
                 b = p.useGetAllAvatarStylesQuery,
-                w = p.useGetAllFavoriteAvatarsQuery,
-                A = p.useGetAvatarQuery,
-                h = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
+                A = p.useGetAllFavoriteAvatarsQuery,
+                h = p.useGetAvatarQuery,
+                w = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
                 O = p.useSelectAvatarMutation,
-                S = p.useSetAvatarPrivateMutation,
-                T = p.useSetAvatarPublicMutation,
-                I = p.useSetAvatarTagsMutation,
-                P = p.useWearAvatarMutation,
+                S = p.useSelectFallbackAvatarMutation,
+                T = p.useSetAvatarPrivateMutation,
+                I = p.useSetAvatarPublicMutation,
+                P = p.useSetAvatarTagsMutation,
                 x = p.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=1006004243ce7574cc21306740c9c94fe5eefa4f8d12c48c413279824ebd3be1.js.map
+//# sourceMappingURL=c5868cfc6cc9979206ba663b8f3ed7b74b16bc4b4201405f7ed79c040c69cc0b.js.map

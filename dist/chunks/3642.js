@@ -3,12 +3,12 @@
     [3642], {
         33642: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => P
+                default: () => I
             });
             var n = r(15861),
                 a = r(4942),
-                o = r(54546),
-                i = r(76553),
+                i = r(54546),
+                o = r(76553),
                 s = r(6811),
                 c = r(64687),
                 l = r.n(c),
@@ -17,17 +17,18 @@
                 p = r(95896),
                 w = r(22202),
                 f = r(16869),
-                b = r(67978),
+                g = r(67978),
                 m = r(36183),
-                g = r(64358),
-                v = r(45697),
-                y = r.n(v),
-                x = r(67294),
+                b = r(39270),
+                v = r(64358),
+                y = r(45697),
+                x = r.n(y),
+                E = r(67294),
                 h = r(32981),
-                E = r(9401),
+                k = r(68420),
                 O = r(99878);
 
-            function k(e, t) {
+            function C(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -38,85 +39,103 @@
                 return r
             }
 
-            function C(e) {
+            function j(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? k(Object(r), !0).forEach((function(t) {
+                    t % 2 ? C(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : k(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : C(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var j = function(e) {
+            var P = function(e) {
                 var t = e.store,
                     r = void 0 === t ? null : t,
-                    a = e.listing,
+                    a = e.listingId,
                     c = e.onClose,
-                    v = void 0 === c ? function() {} : c,
-                    y = e.onDelete,
-                    k = void 0 === y ? function() {} : y,
-                    j = (0, h.I0)(),
-                    P = (0, w.XC)().data,
-                    N = (0, x.useState)(0),
-                    D = (0, o.Z)(N, 2),
-                    S = D[0],
-                    I = D[1],
-                    L = (0, x.useState)(a),
-                    T = (0, o.Z)(L, 2),
-                    Z = T[0],
-                    G = T[1],
-                    z = (0, x.useState)({}),
-                    F = (0, o.Z)(z, 2),
-                    X = F[0],
-                    _ = F[1],
-                    q = (0, b.x3)({
-                        userId: P.id,
-                        archived: !1
+                    y = void 0 === c ? function() {} : c,
+                    x = e.onDelete,
+                    C = void 0 === x ? function() {} : x,
+                    P = (0, h.I0)(),
+                    I = (0, w.XC)().data,
+                    L = (0, E.useState)(0),
+                    N = (0, i.Z)(L, 2),
+                    S = N[0],
+                    T = N[1],
+                    D = (0, E.useState)(null),
+                    Z = (0, i.Z)(D, 2),
+                    F = Z[0],
+                    G = Z[1],
+                    X = (0, E.useState)({}),
+                    z = (0, i.Z)(X, 2),
+                    Y = z[0],
+                    _ = z[1],
+                    q = (0, f.mr)({
+                        listingId: a,
+                        hydrateProducts: !0,
+                        hydrateStores: !0
                     }, {
-                        skip: !P
+                        skip: !a
                     }),
                     A = q.data,
                     H = q.isLoading,
-                    M = (q.isError, q.error, (0, m.Ci)({
-                        sellerId: P.id,
-                        managementPov: !0
+                    M = (q.isError, q.error, (0, g.x3)({
+                        userId: I.id,
+                        archived: !1
                     }, {
-                        skip: !P
+                        skip: !I
                     })),
                     R = M.data,
-                    Y = (M.isLoading, M.isError, M.error, (0, f.Ij)()),
-                    J = (0, o.Z)(Y, 2),
-                    U = J[0],
-                    B = J[1],
-                    K = (B.isLoading, B.isSuccess, B.isError, B.error, function(e) {
-                        G(C(C({}, Z), e)), _(C(C({}, X), e))
-                    }),
-                    Q = function() {
+                    J = M.isLoading,
+                    U = (M.isError, M.error, (0, m.Ci)({
+                        sellerId: I.id,
+                        managementPov: !0
+                    }, {
+                        skip: !I
+                    })),
+                    B = U.data,
+                    K = U.isLoading,
+                    Q = (U.isError, U.error, (0, f.Ij)()),
+                    V = (0, i.Z)(Q, 2),
+                    W = V[0],
+                    $ = V[1];
+                $.isLoading, $.isSuccess, $.isError, $.error;
+                (0, E.useEffect)((function() {
+                    return function() {
+                        P((0, b.rk)())
+                    }
+                }), []), (0, E.useEffect)((function() {
+                    A && (G(A), P((0, b.fX)(A.products)), P((0, b.TY)(A.listingType)))
+                }), [A]);
+                var ee = function(e) {
+                        G(j(j({}, F), e)), _(j(j({}, Y), e))
+                    },
+                    te = function() {
                         var e = (0, n.Z)(l().mark((function e() {
                             var t, r, n;
                             return l().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return t = function() {
-                                            j((0, u.d)({
+                                            P((0, u.d)({
                                                 title: "Listing updated successfully!",
                                                 icon: s.f8,
                                                 message: "Your listing has been updated successfully!",
                                                 color: "success",
                                                 timeout: 3e3
-                                            })), v()
-                                        }, e.prev = 1, e.next = 4, U(C({
-                                            listingId: a.id
-                                        }, X)).unwrap();
+                                            })), y()
+                                        }, e.prev = 1, e.next = 4, W(j({
+                                            listingId: A.id
+                                        }, Y)).unwrap();
                                     case 4:
                                         t(), e.next = 11;
                                         break;
                                     case 7:
-                                        e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), j((0, u.d)({
+                                        e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), P((0, u.d)({
                                             title: "Failed to update listing!",
-                                            icon: i.eH,
+                                            icon: o.eH,
                                             message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
@@ -133,78 +152,81 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    V = (0, x.useMemo)((function() {
-                        if ("duration" === Z.listingType) {
-                            var e = [p.PG.MIN, p.PG.HOUR, p.PG.DAY].includes(Z.durationType),
-                                t = (0, g.qG)(a.durationType, a.duration) && Number.isInteger(parseFloat(Z.duration));
+                    re = (0, E.useMemo)((function() {
+                        if (!F) return !1;
+                        if ("duration" === F.listingType) {
+                            var e = [p.PG.MIN, p.PG.HOUR, p.PG.DAY].includes(F.durationType),
+                                t = (0, v.qG)(A.durationType, A.duration) && Number.isInteger(parseFloat(F.duration));
                             return e && t
                         }
-                        var r = Z.displayName.length >= 3,
-                            n = Z.priceTokens >= 100 && Z.priceTokens <= 1e4 && Number.isInteger(parseFloat(Z.priceTokens)),
-                            o = Z.products.length > 0 && Z.products.length <= p._1;
-                        return r && n && o
-                    }), [Z]);
-                return x.createElement(d.JX, {
+                        var r = F.displayName.length >= 3,
+                            n = F.priceTokens >= 100 && F.priceTokens <= 1e4 && Number.isInteger(parseFloat(F.priceTokens)),
+                            a = F.products.length > 0 && F.products.length <= p._1;
+                        return r && n && a
+                    }), [F]),
+                    ne = H || J || K;
+                return E.createElement(E.Fragment, null, ne && E.createElement("div", null, "Loading..."), !ne && F && E.createElement(d.JX, {
                     className: "tw-w-full tw-relative"
-                }, x.createElement(d.X2, {
+                }, E.createElement(d.X2, {
                     className: "tw-gap-5 tw-mb-6"
-                }, x.createElement("button", {
+                }, E.createElement("button", {
                     type: "button",
                     onClick: function() {
-                        return I(0)
+                        return T(0)
                     },
                     className: "tw-bg-transparent tw-py-2 tw-px-0 tw-border-0 tw-border-b-2 tw-border-solid ".concat(0 === S ? "tw-border-teal-accent" : "tw-border-transparent")
-                }, "Listing Information"), x.createElement("button", {
+                }, "Listing Information"), E.createElement("button", {
                     type: "button",
                     onClick: function() {
-                        return I(1)
+                        return T(1)
                     },
                     className: "tw-bg-transparent tw-py-2 tw-px-0 tw-border-0 tw-border-b-2 tw-border-solid ".concat(1 === S ? "tw-border-solid tw-border-teal-accent" : "tw-border-transparent")
-                }, "Store Availability")), x.createElement("div", {
+                }, "Store Availability")), E.createElement("div", {
                     className: "tw-w-full tw-relative"
-                }, 0 === S && x.createElement(E.Z, {
-                    currentListing: Z,
-                    onDataChange: K,
+                }, 0 === S && E.createElement(k.Z, {
+                    originalListing: A,
+                    editedListing: F,
+                    onDataChange: ee,
                     isEditing: !0,
-                    products: A,
-                    listingType: Z.listingType,
-                    productsLoading: H
-                }), 1 === S && x.createElement(O.Z, {
-                    activeListing: Z,
-                    onDataChange: K,
-                    stores: R,
+                    products: R,
+                    listingType: F.listingType,
+                    productsLoading: J
+                }), 1 === S && E.createElement(O.Z, {
+                    activeListing: F,
+                    onDataChange: ee,
+                    stores: B,
                     activeStore: r
-                })), x.createElement("div", {
+                })), E.createElement("div", {
                     className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
-                }, x.createElement("div", {
+                }, E.createElement("div", {
                     className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-flex-1"
-                }, x.createElement(d.zx, {
+                }, E.createElement(d.zx, {
                     neutral: !0,
                     type: "button",
-                    onClick: v,
+                    onClick: y,
                     containerClasses: "md:tw-max-w-[170px] tw-flex-auto"
-                }, "Cancel"), x.createElement(d.zx, {
+                }, "Cancel"), E.createElement(d.zx, {
                     type: "button",
                     onClick: function() {
-                        return k(a)
+                        return C(A)
                     },
                     danger: !0,
                     containerClasses: "md:tw-max-w-[170px] tw-flex-auto"
-                }, "Delete Listing")), x.createElement(d.zx, {
+                }, "Delete Listing")), E.createElement(d.zx, {
                     type: "button",
-                    onClick: Q,
+                    onClick: te,
                     containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
-                    disabled: !V
-                }, "Save")))
+                    disabled: !re
+                }, "Save"))))
             };
-            j.propTypes = {
-                listing: y().object.isRequired,
-                stores: y().array,
-                onCancel: y().func,
-                onDelete: y().func
+            P.propTypes = {
+                listingId: x().string.isRequired,
+                stores: x().array,
+                onCancel: x().func,
+                onDelete: x().func
             };
-            const P = j
+            const I = P
         }
     }
 ]);
-//# sourceMappingURL=e2e43b2bc79cbcab1a8a84d5dcba075541d9c72b4156cc31222912de92f334ab.js.map
+//# sourceMappingURL=7aada0986ab9505be47117556d6625bfd1da45881a5941cd28ea0fb23fdf63a3.js.map

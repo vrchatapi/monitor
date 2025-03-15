@@ -208,7 +208,9 @@
                                 })
                             }))), y.createElement("h2", {
                                 className: "heading tw-inline-block tw-w-full tw-text-base tw-text-center"
-                            }, "Please remove this item from these listings prior to deleting this item."))), y.createElement("div", {
+                            }, "Please remove this item from these listings prior to deleting this item."), "avatar" === (null == P ? void 0 : P.productType) && y.createElement("p", {
+                                className: "tw-text-orange tw-text-base tw-text-center tw-mb-2"
+                            }, "Note: If a listing has already been purchased, you won't be able to remove the product from it, and deletion won't be possible."))), y.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-w-full tw-gap-2 tw-items-center"
                             }, y.createElement("div", {
                                 className: "tw-w-1/2"
@@ -1089,4 +1091,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a746e1fd3c2fb96526b6c070ee7bd7ddaeca2519be071dc95d8605ee21cfd8ec.js.map
+//# sourceMappingURL=45e8a71c5786bfee75cc89b524276e248db169d686b270ecb95203b3fcce90e9.js.map
