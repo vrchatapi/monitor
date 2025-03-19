@@ -112,7 +112,7 @@
         },
         36418: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => S
+                default: () => C
             });
             var r = n(15861),
                 o = n(15671),
@@ -124,82 +124,81 @@
                 u = n.n(l),
                 f = n(67294),
                 p = n(32981),
-                d = n(79655),
-                v = n(35773),
-                h = n(95305),
-                y = n(9669),
-                m = n.n(y),
-                g = n(85533),
-                b = n(14411),
-                E = n(7826),
-                O = n(54546),
-                w = n(45528),
-                j = n(66770),
-                x = n(64258),
-                P = n(62437),
-                Z = n(21538),
-                R = n(17219),
-                N = n(22202);
-            const k = function() {
+                d = n(9669),
+                v = n.n(d),
+                h = n(35773),
+                y = n(95305),
+                m = n(85533),
+                g = n(7826),
+                b = n(54546),
+                E = n(45528),
+                O = n(14411),
+                w = n(66770),
+                j = n(64258),
+                x = n(62437),
+                P = n(21538),
+                Z = n(17219),
+                R = n(22202);
+            const N = function() {
                 var e, t, n = (0, p.I0)(),
-                    r = (0, N.XC)().data,
-                    o = (0, P.DD)(null == r ? void 0 : r.id, {
+                    r = (0, R.XC)().data,
+                    o = (0, x.DD)(null == r ? void 0 : r.id, {
                         skip: !(null != r && r.id)
                     }),
                     i = o.data,
                     a = o.isFetching,
                     c = o.error,
                     s = o.isError,
-                    l = (0, R.y)().data,
+                    l = (0, Z.y)().data,
                     u = (void 0 === l ? {} : l).defaultAvatar,
-                    d = (0, Z.x8)(),
-                    y = (0, O.Z)(d, 2),
-                    m = y[0],
-                    g = y[1],
-                    E = g.isLoading,
+                    d = (0, P.x8)(),
+                    v = (0, b.Z)(d, 2),
+                    m = v[0],
+                    g = v[1],
+                    N = g.isLoading,
                     k = g.isError,
                     D = g.error;
-                return f.createElement("div", null, f.createElement(v.Z, null, f.createElement(h.Z, {
+                return f.createElement("div", null, f.createElement(h.Z, null, f.createElement(y.Z, {
                     xs: "12"
-                }, f.createElement("h2", null, "Current Avatar"))), f.createElement(v.Z, null, f.createElement(h.Z, {
+                }, f.createElement("h2", null, "Current Avatar"))), f.createElement(h.Z, null, f.createElement(y.Z, {
                     xs: "4",
                     xl: "3"
-                }, a ? f.createElement(b.UU, {
+                }, a ? f.createElement(O.UU, {
                     width: "100%",
                     height: "160px",
                     className: "my-2"
-                }) : !s && i && f.createElement(j.Z, {
+                }) : !s && i && f.createElement(w.Z, {
                     data: i
-                }), s && f.createElement(b.qX, {
+                }), s && f.createElement(O.qX, {
                     type: "error",
                     title: "Failed to load avatar",
                     message: null === (e = c.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
-                })), f.createElement(h.Z, {
+                })), f.createElement(y.Z, {
                     xs: "8",
                     xl: "9"
-                }, f.createElement(b.zx, {
+                }, f.createElement(O.zx, {
                     onClick: function() {
                         r && u && (m({
                             avatarId: u
-                        }), n((0, x.d)({
+                        }), n((0, j.d)({
                             title: "Avatar reset",
-                            icon: w.hn,
+                            icon: E.hn,
                             message: "You've reset your avatar to default! You'll see this change next time you load into a world.",
                             color: "success"
                         })))
                     },
-                    loading: a || E,
+                    loading: a || N,
                     neutral: !0
-                }, f.createElement(b.$1, {
-                    icon: w.hn
-                }), " Reset to Default Avatar"), k && f.createElement(b.qX, {
+                }, f.createElement(O.$1, {
+                    icon: E.hn
+                }), " Reset to Default Avatar"), k && f.createElement(O.qX, {
                     type: "error",
                     title: "Failed to reset avatar",
                     message: null === (t = D.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message
                 }))))
             };
 
-            function D(e) {
+            function k(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -219,9 +218,9 @@
                     return (0, c.Z)(this, n)
                 }
             }
-            var C = function(e) {
+            var D = function(e) {
                 (0, a.Z)(c, e);
-                var t, n = D(c);
+                var t, n = k(c);
 
                 function c(e) {
                     var t;
@@ -241,7 +240,7 @@
                         return u().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return e.next = 2, m().get(window.apiUrl("/api/1/licenses?licenseHolder=me"));
+                                    return e.next = 2, v().get(window.apiUrl("/api/1/licenses?licenseHolder=me&forType=avatar&n=100"));
                                 case 2:
                                     200 !== (t = e.sent).status ? console.error("Failed to get licenses for user!") : this.setState({
                                         licences: t.data
@@ -257,31 +256,24 @@
                 }, {
                     key: "render",
                     value: function() {
-                        return f.createElement(v.Z, null, f.createElement(h.Z, {
+                        return f.createElement(h.Z, null, f.createElement(y.Z, {
                             xs: "12"
-                        }, f.createElement(g.Z, null, "Avatars"), f.createElement(k, null), f.createElement(b.qX, {
-                            type: "success",
-                            title: "Favorite Avatars have moved!",
-                            className: "my-4",
-                            hideIcon: !0
-                        }, "They now have a new and improved home ", f.createElement(d.rU, {
-                            to: "/home/favorites/avatar"
-                        }, "here")), f.createElement(E.Z, {
+                        }, f.createElement(m.Z, null, "Avatars"), f.createElement(N, null), f.createElement(g.Z, {
                             title: "My Avatars",
                             releaseStatus: "all",
                             user: "me",
                             sort: "updated",
                             order: "descending",
                             hideAuthor: !0
-                        }), this.state.licences.length > 0 && f.createElement(E.Z, {
-                            title: "Granted Avatars",
+                        }), this.state.licences.length > 0 && f.createElement(g.Z, {
+                            title: "Purchased Avatars",
                             releaseStatus: "all",
                             sort: "updated",
                             order: "descending",
                             user: "me",
                             licenses: this.state.licences,
                             hideAuthor: !0
-                        }), f.createElement(E.Z, {
+                        }), f.createElement(g.Z, {
                             title: "Featured Avatars",
                             releaseStatus: "public",
                             featured: "true",
@@ -291,9 +283,9 @@
                     }
                 }]), c
             }(f.Component);
-            const S = (0, p.$j)((function(e) {
+            const C = (0, p.$j)((function(e) {
                 return {}
-            }))(C)
+            }))(D)
         },
         11e3: (e, t, n) => {
             n.d(t, {
@@ -835,4 +827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dc22ea811e11f2489ad31637888788b0e50da376532a1be790b5336e478a54de.js.map
+//# sourceMappingURL=1f047041635dab412e8c7e4cfa4c84df83913857bf8d1e929dd87cd2b5f5f3dd.js.map

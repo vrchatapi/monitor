@@ -169,15 +169,15 @@
                 m = a.n(i),
                 u = a(67294),
                 d = a(79655),
-                h = a(83505),
-                f = a(95305),
-                p = a(35773),
-                E = a(34698),
+                h = a(95305),
+                f = a(35773),
+                p = a(34698),
+                E = a(83505),
                 v = a(9669),
                 g = a.n(v),
-                x = a(55694),
-                w = a(64358),
-                Z = a(14411);
+                x = a(64358),
+                w = a(14411),
+                Z = a(55694);
             const y = function(e) {
                 var t = e.avatar,
                     a = e.slim,
@@ -209,13 +209,13 @@
                     _ = "hidden" === t.releaseStatus,
                     V = 12;
                 a && (V = 4, L.push("slim"));
-                return u.createElement(f.Z, {
+                return u.createElement(h.Z, {
                     xs: V,
-                    className: (0, h.iv)({
+                    className: (0, E.iv)({
                         name: "1o3w9m7",
                         styles: "& .search-container{border:1px solid teal;box-shadow:10px 10px 8px 10px #111;margin:20px;padding:20px;}& .search-container.slim{margin:5px;padding:10px;}& .search-container.private{border:1px solid grey;}& .search-container.hidden{border:1px solid grey;}& .search-container a{color:white;}& .search-container img{border-radius:5px;max-height:200px;max-width:200px;}"
                     })
-                }, u.createElement(Z.sm, {
+                }, u.createElement(w.sm, {
                     headerText: j,
                     bodyText: $,
                     confirmCallback: k,
@@ -225,7 +225,7 @@
                     isOpen: R
                 }), u.createElement("div", {
                     className: L.join(" ")
-                }, a && u.createElement(p.Z, null, u.createElement(f.Z, {
+                }, a && u.createElement(f.Z, null, u.createElement(h.Z, {
                     xs: "12"
                 }, u.createElement("h6", null, u.createElement(d.rU, {
                     to: "/home/avatar/".concat(t.id)
@@ -233,17 +233,17 @@
                     style: {
                         color: "red"
                     }
-                }, "  ", u.createElement(Z.$1, {
+                }, "  ", u.createElement(w.$1, {
                     icon: s.by
                 }), " "), _ && u.createElement("span", {
                     style: {
                         color: "red"
                     }
-                }, "  ", u.createElement(Z.$1, {
+                }, "  ", u.createElement(w.$1, {
                     icon: l.eH
                 }), " ")), !i && u.createElement("span", null, " ", u.createElement("small", null, "—  ", u.createElement(d.rU, {
                     to: "/home/user/".concat(t.authorId)
-                }, t.authorName))))), u.createElement(f.Z, {
+                }, t.authorName))))), u.createElement(h.Z, {
                     xs: "12"
                 }, u.createElement(d.rU, {
                     to: "/home/avatar/".concat(t.id)
@@ -254,14 +254,14 @@
                     alt: t.name
                 })), y && u.createElement("div", {
                     className: "d-flex justify-content-between mt-2"
-                }, u.createElement(E.Z, {
+                }, u.createElement(p.Z, {
                     "aria-label": "Copy ID",
-                    onClick: (0, w.zp)(t.id),
+                    onClick: (0, x.zp)(t.id),
                     size: "sm"
-                }, u.createElement(Z.$1, {
+                }, u.createElement(w.$1, {
                     icon: o.kZ,
                     className: "me-2"
-                }), "ID")))), !a && u.createElement(p.Z, null, u.createElement(f.Z, {
+                }), "ID")))), !a && u.createElement(f.Z, null, u.createElement(h.Z, {
                     xs: "12",
                     md: "4"
                 }, u.createElement(d.rU, {
@@ -273,14 +273,14 @@
                     alt: t.name
                 })), y && u.createElement("div", {
                     className: "d-flex justify-content-between mt-2"
-                }, u.createElement(E.Z, {
+                }, u.createElement(p.Z, {
                     "aria-label": "Copy ID",
-                    onClick: (0, w.zp)(t.id),
+                    onClick: (0, x.zp)(t.id),
                     size: "sm"
-                }, u.createElement(Z.$1, {
+                }, u.createElement(w.$1, {
                     icon: o.kZ,
                     className: "me-2"
-                }), "ID"))), u.createElement(f.Z, {
+                }), "ID"))), u.createElement(h.Z, {
                     xs: "12",
                     md: "5"
                 }, u.createElement("h4", null, u.createElement(d.rU, {
@@ -291,30 +291,30 @@
                     style: {
                         color: "red"
                     }
-                }, u.createElement(Z.$1, {
+                }, u.createElement(w.$1, {
                     icon: s.by
                 }), " Private", " "), _ && u.createElement("span", {
                     style: {
                         color: "red"
                     }
-                }, u.createElement(Z.$1, {
+                }, u.createElement(w.$1, {
                     icon: l.eH
-                }), " Deleted!", " "), u.createElement("p", null, t.description)), v && u.createElement(f.Z, {
+                }), " Deleted!", " "), u.createElement("p", null, t.description)), v && u.createElement(h.Z, {
                     xs: "12",
                     md: "3",
                     style: {
                         textAlign: "right"
                     }
-                }, v && u.createElement(x.Z, {
+                }, u.createElement(Z.Z, {
                     thing: t,
                     type: "avatar"
-                })), b && u.createElement(f.Z, {
+                })), b && !b.productId && u.createElement(h.Z, {
                     xs: "12",
                     md: "3",
                     style: {
                         textAlign: "right"
                     }
-                }, u.createElement(E.Z, {
+                }, u.createElement(p.Z, {
                     color: "primary",
                     title: "Remove Avatar",
                     onClick: function() {
@@ -338,7 +338,7 @@
                             })))
                         })), z(!0)
                     }
-                }, u.createElement(Z.$1, {
+                }, u.createElement(w.$1, {
                     icon: c.$
                 }), "Delete Avatar")))))
             }
@@ -539,4 +539,4 @@
         }
     }
 ]);
-//# sourceMappingURL=151099517e87000dcb115d8c9a4d96727e5708cee84350cc285a20870cfa4d05.js.map
+//# sourceMappingURL=a29863df7d5179578648fa77a9f7d94267275f547f0b2e02477edf22f659461c.js.map

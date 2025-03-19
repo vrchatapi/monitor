@@ -16,8 +16,8 @@
                 m = a(45573),
                 h = a(27003),
                 d = a(64687),
-                f = a.n(d),
-                p = a(67294),
+                p = a.n(d),
+                f = a(67294),
                 v = a(9669),
                 g = a.n(v),
                 y = a(34698),
@@ -144,8 +144,8 @@
                     }
                 }, {
                     key: "confirmPrivateAll",
-                    value: (n = (0, r.Z)(f().mark((function e() {
-                        return f().wrap((function(e) {
+                    value: (n = (0, r.Z)(p().mark((function e() {
+                        return p().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return this.setState({
@@ -169,8 +169,8 @@
                     })
                 }, {
                     key: "confirmHideAll",
-                    value: (a = (0, r.Z)(f().mark((function e() {
-                        return f().wrap((function(e) {
+                    value: (a = (0, r.Z)(p().mark((function e() {
+                        return p().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return this.setState({
@@ -212,9 +212,9 @@
                     }
                 }, {
                     key: "loadMoreAvatars",
-                    value: (t = (0, r.Z)(f().mark((function e() {
+                    value: (t = (0, r.Z)(p().mark((function e() {
                         var t, a, n = this;
-                        return f().wrap((function(e) {
+                        return p().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return t = this.buildQuery(), this.setState({
@@ -252,7 +252,7 @@
                                 var r;
                                 return e.state.licenses.length > 0 && (r = e.state.licenses.find((function(e) {
                                     return e.forId === a.id
-                                }))), p.createElement(x.Z, {
+                                }))), f.createElement(x.Z, {
                                     avatar: a,
                                     hideAuthor: e.state.hideAuthor,
                                     license: r,
@@ -262,35 +262,35 @@
                                     slim: e.state.slim
                                 })
                             }));
-                        return this.state.avatars.length > 0 ? p.createElement("div", null, p.createElement("h3", null, p.createElement(y.Z, {
+                        return this.state.avatars.length > 0 ? f.createElement("div", null, f.createElement("h3", null, f.createElement(y.Z, {
                             onClick: this.toggleCollapse,
                             color: this.state.collapseOpen ? "primary" : "secondary"
-                        }, this.state.collapseOpen && p.createElement(Z.$1, {
+                        }, this.state.collapseOpen && f.createElement(Z.$1, {
                             icon: h.uM
-                        }), !this.state.collapseOpen && p.createElement(Z.$1, {
+                        }), !this.state.collapseOpen && f.createElement(Z.$1, {
                             icon: m.Kt
-                        })), " ", this.state.title), p.createElement(E.Z, {
+                        })), " ", this.state.title), f.createElement(E.Z, {
                             isOpen: this.state.collapseOpen
-                        }, "privateAll" === this.state.confirming && p.createElement(w.Z, {
+                        }, "privateAll" === this.state.confirming && f.createElement(w.Z, {
                             prompt: "Are you sure you want to private all avatars belonging to this user?",
                             confirmLink: this.confirmPrivateAll,
                             cancelLink: this.cancelAvatarConfirm
-                        }), "hideAll" === this.state.confirming && p.createElement(w.Z, {
+                        }), "hideAll" === this.state.confirming && f.createElement(w.Z, {
                             prompt: "Are you sure you want to DELETE all avatars belonging to this user? THIS CANNOT BE UNDONE!!!",
                             confirmLink: this.confirmHideAll,
                             cancelLink: this.cancelAvatarConfirm
-                        }), !1, p.createElement(A.Z, null, a, p.createElement(b.Z, {
+                        }), !1, f.createElement(A.Z, null, a, f.createElement(b.Z, {
                             md: "3",
                             className: "text-center"
-                        }, p.createElement(k.Z, {
+                        }, f.createElement(k.Z, {
                             onClick: this.loadMoreAvatars,
                             loading: this.state.loading,
                             hidden: !this.state.moreAvatars,
                             color: "primary"
-                        }, "Load More Avatars")))), p.createElement("hr", null)) : p.createElement("div", null)
+                        }, "Load More Avatars")))), f.createElement("hr", null)) : f.createElement("div", null)
                     }
                 }]), u
-            }(p.Component)
+            }(f.Component)
         },
         29449: (e, t, a) => {
             a.d(t, {
@@ -306,15 +306,15 @@
                 u = a.n(c),
                 m = a(67294),
                 h = a(79655),
-                d = a(83505),
-                f = a(95305),
+                d = a(95305),
                 p = a(35773),
-                v = a(34698),
+                f = a(34698),
+                v = a(83505),
                 g = a(9669),
                 y = a.n(g),
-                E = a(55694),
-                A = a(64358),
-                b = a(14411);
+                E = a(64358),
+                A = a(14411),
+                b = a(55694);
             const Z = function(e) {
                 var t = e.avatar,
                     a = e.slim,
@@ -346,13 +346,13 @@
                     B = "hidden" === t.releaseStatus,
                     Q = 12;
                 a && (Q = 4, w.push("slim"));
-                return m.createElement(f.Z, {
+                return m.createElement(d.Z, {
                     xs: Q,
-                    className: (0, d.iv)({
+                    className: (0, v.iv)({
                         name: "1o3w9m7",
                         styles: "& .search-container{border:1px solid teal;box-shadow:10px 10px 8px 10px #111;margin:20px;padding:20px;}& .search-container.slim{margin:5px;padding:10px;}& .search-container.private{border:1px solid grey;}& .search-container.hidden{border:1px solid grey;}& .search-container a{color:white;}& .search-container img{border-radius:5px;max-height:200px;max-width:200px;}"
                     })
-                }, m.createElement(b.sm, {
+                }, m.createElement(A.sm, {
                     headerText: H,
                     bodyText: V,
                     confirmCallback: N,
@@ -362,7 +362,7 @@
                     isOpen: S
                 }), m.createElement("div", {
                     className: w.join(" ")
-                }, a && m.createElement(p.Z, null, m.createElement(f.Z, {
+                }, a && m.createElement(p.Z, null, m.createElement(d.Z, {
                     xs: "12"
                 }, m.createElement("h6", null, m.createElement(h.rU, {
                     to: "/home/avatar/".concat(t.id)
@@ -370,17 +370,17 @@
                     style: {
                         color: "red"
                     }
-                }, "  ", m.createElement(b.$1, {
+                }, "  ", m.createElement(A.$1, {
                     icon: o.by
                 }), " "), B && m.createElement("span", {
                     style: {
                         color: "red"
                     }
-                }, "  ", m.createElement(b.$1, {
+                }, "  ", m.createElement(A.$1, {
                     icon: i.eH
                 }), " ")), !c && m.createElement("span", null, " ", m.createElement("small", null, "—  ", m.createElement(h.rU, {
                     to: "/home/user/".concat(t.authorId)
-                }, t.authorName))))), m.createElement(f.Z, {
+                }, t.authorName))))), m.createElement(d.Z, {
                     xs: "12"
                 }, m.createElement(h.rU, {
                     to: "/home/avatar/".concat(t.id)
@@ -391,14 +391,14 @@
                     alt: t.name
                 })), Z && m.createElement("div", {
                     className: "d-flex justify-content-between mt-2"
-                }, m.createElement(v.Z, {
+                }, m.createElement(f.Z, {
                     "aria-label": "Copy ID",
-                    onClick: (0, A.zp)(t.id),
+                    onClick: (0, E.zp)(t.id),
                     size: "sm"
-                }, m.createElement(b.$1, {
+                }, m.createElement(A.$1, {
                     icon: l.kZ,
                     className: "me-2"
-                }), "ID")))), !a && m.createElement(p.Z, null, m.createElement(f.Z, {
+                }), "ID")))), !a && m.createElement(p.Z, null, m.createElement(d.Z, {
                     xs: "12",
                     md: "4"
                 }, m.createElement(h.rU, {
@@ -410,14 +410,14 @@
                     alt: t.name
                 })), Z && m.createElement("div", {
                     className: "d-flex justify-content-between mt-2"
-                }, m.createElement(v.Z, {
+                }, m.createElement(f.Z, {
                     "aria-label": "Copy ID",
-                    onClick: (0, A.zp)(t.id),
+                    onClick: (0, E.zp)(t.id),
                     size: "sm"
-                }, m.createElement(b.$1, {
+                }, m.createElement(A.$1, {
                     icon: l.kZ,
                     className: "me-2"
-                }), "ID"))), m.createElement(f.Z, {
+                }), "ID"))), m.createElement(d.Z, {
                     xs: "12",
                     md: "5"
                 }, m.createElement("h4", null, m.createElement(h.rU, {
@@ -428,30 +428,30 @@
                     style: {
                         color: "red"
                     }
-                }, m.createElement(b.$1, {
+                }, m.createElement(A.$1, {
                     icon: o.by
                 }), " Private", " "), B && m.createElement("span", {
                     style: {
                         color: "red"
                     }
-                }, m.createElement(b.$1, {
+                }, m.createElement(A.$1, {
                     icon: i.eH
-                }), " Deleted!", " "), m.createElement("p", null, t.description)), g && m.createElement(f.Z, {
+                }), " Deleted!", " "), m.createElement("p", null, t.description)), g && m.createElement(d.Z, {
                     xs: "12",
                     md: "3",
                     style: {
                         textAlign: "right"
                     }
-                }, g && m.createElement(E.Z, {
+                }, m.createElement(b.Z, {
                     thing: t,
                     type: "avatar"
-                })), x && m.createElement(f.Z, {
+                })), x && !x.productId && m.createElement(d.Z, {
                     xs: "12",
                     md: "3",
                     style: {
                         textAlign: "right"
                     }
-                }, m.createElement(v.Z, {
+                }, m.createElement(f.Z, {
                     color: "primary",
                     title: "Remove Avatar",
                     onClick: function() {
@@ -475,11 +475,11 @@
                             })))
                         })), I(!0)
                     }
-                }, m.createElement(b.$1, {
+                }, m.createElement(A.$1, {
                     icon: s.$
                 }), "Delete Avatar")))))
             }
         }
     }
 ]);
-//# sourceMappingURL=cb84236a6d65b85741e6cac1a53480ed3ef81d14634fed3a2cb1c2355a7483a6.js.map
+//# sourceMappingURL=1e705bed877a0d4bdf1cb3295287f6da9dfdaa4fdfe3382ec4eabde381d48c91.js.map
