@@ -93,8 +93,8 @@
                 F = r(41727),
                 D = r(94370),
                 q = r(6811),
-                G = (r(37337), r(4991)),
-                R = r(35773),
+                R = (r(37337), r(4991)),
+                G = r(35773),
                 M = r(95305),
                 z = r(93007),
                 X = r(30381),
@@ -262,7 +262,7 @@
                 }, "Learn more about Impostors")), de.estimatedServiceDurationSeconds > 3600 && f.createElement(U.qX, {
                     type: "info",
                     title: "Whoa there!"
-                }, f.createElement("p", null, "We're experiencing a lot of demand right now. Impostor generation may take a long time! You're lookin' at a wait of at least", " ", K().duration(de.estimatedServiceDurationSeconds, "seconds").humanize(), " before your impostors are ready.")), f.createElement(G.Z, {
+                }, f.createElement("p", null, "We're experiencing a lot of demand right now. Impostor generation may take a long time! You're lookin' at a wait of at least", " ", K().duration(de.estimatedServiceDurationSeconds, "seconds").humanize(), " before your impostors are ready.")), f.createElement(R.Z, {
                     size: "sm"
                 }, f.createElement("thead", null, f.createElement("tr", {
                     style: {
@@ -300,10 +300,10 @@
                             color: "#f8f9fa"
                         }
                     }, Q in r && W))
-                })))), ie && f.createElement(R.Z, null, f.createElement(M.Z, null, f.createElement(U.qX, {
+                })))), ie && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(U.qX, {
                     type: "warn",
                     title: "Impostorization failed"
-                }, f.createElement("p", null, "Uh, oh, the last time we tried to generate impostors for this avatar, we had a problem:"), f.createElement("p", null, f.createElement("pre", null, ie)), f.createElement("p", null, "Some errors will always recur because our impostor system can't process this avatar. Others may be fixed over time.")))), !he && f.createElement(R.Z, null, f.createElement(M.Z, null, f.createElement("p", null, "Unfortunately we can't currently generate impostors for this avatar:"), f.createElement("p", null, f.createElement("pre", null, ye)))), f.createElement(R.Z, null, f.createElement(M.Z, null, f.createElement(U.zx, {
+                }, f.createElement("p", null, "Uh, oh, the last time we tried to generate impostors for this avatar, we had a problem:"), f.createElement("p", null, f.createElement("pre", null, ie)), f.createElement("p", null, "Some errors will always recur because our impostor system can't process this avatar. Others may be fixed over time.")))), !he && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement("p", null, "Unfortunately we can't currently generate impostors for this avatar:"), f.createElement("p", null, f.createElement("pre", null, ye)))), f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(U.zx, {
                     className: "mb-2",
                     onClick: function() {
                         A({
@@ -556,9 +556,9 @@
                     F = (0, f.useState)(!0),
                     D = (0, l.Z)(F, 2),
                     q = D[0],
-                    G = D[1],
-                    R = (0, f.useState)(null),
-                    M = (0, l.Z)(R, 2),
+                    R = D[1],
+                    G = (0, f.useState)(null),
+                    M = (0, l.Z)(G, 2),
                     z = M[0],
                     X = M[1],
                     K = (0, k.Yh)(),
@@ -784,10 +784,10 @@
                         src: t,
                         alt: "Avatar Cover Showcase",
                         onLoad: function() {
-                            return G(!1)
+                            return R(!1)
                         },
                         onError: function() {
-                            return G(!1)
+                            return R(!1)
                         },
                         style: {
                             display: q ? "none" : "block"
@@ -1177,10 +1177,10 @@
                     L = (0, l.Z)(T, 2),
                     F = L[0],
                     D = L[1],
-                    G = (0, f.useState)("overview"),
-                    R = (0, l.Z)(G, 2),
-                    M = R[0],
-                    z = R[1],
+                    R = (0, f.useState)("overview"),
+                    G = (0, l.Z)(R, 2),
+                    M = G[0],
+                    z = G[1],
                     X = (0, f.useState)(C),
                     K = (0, l.Z)(X, 2),
                     V = K[0],
@@ -1215,8 +1215,8 @@
                     Fe = Te[1],
                     De = (0, f.useState)(!1),
                     qe = (0, l.Z)(De, 2),
-                    Ge = qe[0],
-                    Re = qe[1],
+                    Re = qe[0],
+                    Ge = qe[1],
                     Me = (0, f.useState)(""),
                     ze = (0, l.Z)(Me, 2),
                     Xe = ze[0],
@@ -1347,16 +1347,16 @@
                         return nt(g.id)
                     }
                 }), f.createElement(U.u_, {
-                    isVisible: Ge,
+                    isVisible: Re,
                     className: "tw-pt-0",
                     onClose: function() {
-                        return Re(!1)
+                        return Ge(!1)
                     },
                     title: "Upload a New Thumbnail",
                     children: f.createElement(ye, {
                         imageTag: "avatarimage",
                         onCloseCallback: function() {
-                            return Re(!1)
+                            return Ge(!1)
                         },
                         onUploadedCallback: function(e) {
                             return function(e) {
@@ -1372,7 +1372,7 @@
                                     Y(Oe(Oe({}, V), {}, {
                                         thumbnailImageUrl: o,
                                         imageUrl: r
-                                    })), Re(!1)
+                                    })), Ge(!1)
                                 } catch (e) {
                                     return console.error("Failed to process the uploaded image data", e.message), null
                                 }
@@ -1403,7 +1403,7 @@
                     className: "tw-block tw-mr-5"
                 }, f.createElement("button", {
                     onClick: function() {
-                        return Re(!0)
+                        return Ge(!0)
                     },
                     type: "button",
                     className: "\n                  tw-bg-cover tw-bg-center tw-w-[286px] tw-h-[286px]  \n                  tw-border-0 tw-p-0 tw-rounded-2xl tw-relative tw-items-center tw-justify-center tw-flex tw-bg-transparent\n                ",
@@ -1687,9 +1687,9 @@
                     C = S[0],
                     D = S[1],
                     q = f.useState(null),
-                    G = (0, l.Z)(q, 2),
-                    R = G[0],
-                    M = G[1],
+                    R = (0, l.Z)(q, 2),
+                    G = R[0],
+                    M = R[1],
                     z = f.useState(!1),
                     X = (0, l.Z)(z, 2),
                     K = X[0],
@@ -1736,8 +1736,7 @@
                     }),
                     be = ge.data,
                     he = (ge.isFetching, ge.isError, ge.error, (0, P.Ms)({
-                        listingId: null == _ ? void 0 : _.productId,
-                        adminPov: !0
+                        listingId: null == _ ? void 0 : _.productId
                     }, {
                         skip: !(null != _ && _.productId)
                     })),
@@ -1756,9 +1755,9 @@
                     Fe = Le.isError,
                     De = Le.error,
                     qe = (0, x.Cm)(),
-                    Ge = (0, l.Z)(qe, 2),
-                    Re = Ge[0],
-                    Me = Ge[1],
+                    Re = (0, l.Z)(qe, 2),
+                    Ge = Re[0],
+                    Me = Re[1],
                     ze = Me.isError,
                     Xe = Me.error,
                     Ke = Me.isSuccess,
@@ -1785,7 +1784,7 @@
                     dt = st.isError,
                     mt = st.error,
                     wt = st.isSuccess,
-                    ft = (0, y.Nr)(R, 1400),
+                    ft = (0, y.Nr)(G, 1400),
                     pt = (0, y.Tb)(vt, 300),
                     vt = J || le,
                     gt = ee || oe || pe || Ze || Fe || Qe || nt || dt || ze,
@@ -1797,7 +1796,7 @@
                         var e = new Set(_.tags);
                         ft.length === _.tags.length && ft.every((function(t) {
                             return e.has(t)
-                        })) || Re({
+                        })) || Ge({
                             avatarId: _.id,
                             tags: ft
                         })
@@ -1932,7 +1931,7 @@
                 }, "Content Warnings")), f.createElement(U.Ao, null, f.createElement(U.X2, {
                     className: "tw-w-full tw-flex-wrap tw-py-2 tw-gap-3"
                 }, f.createElement(U.ks, {
-                    tags: R,
+                    tags: G,
                     isMod: I,
                     onSelectValues: function(e) {
                         M((function(t) {
@@ -1986,7 +1985,7 @@
                     },
                     warning: !0,
                     expand: !0,
-                    disable: ye || Ee
+                    disabled: ye || Ee || (null == _ ? void 0 : _.activeAssetReviewId) || (null == _ ? void 0 : _.productId)
                 }, f.createElement(U.$1, {
                     icon: s.nG
                 }), " Make Avatar Public"), me && !ce && !ue && f.createElement(U.zx, {
@@ -2639,4 +2638,4 @@
         }
     }
 ]);
-//# sourceMappingURL=858e6a263500dacd632d0e4e8c22c859d7fb0475f43c17168faf03ee7c2b0498.js.map
+//# sourceMappingURL=7eb72e87d76757c9796e0aa5d36ae20c47f5966f8def10e83212ff441166df19.js.map
