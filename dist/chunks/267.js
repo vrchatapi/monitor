@@ -32,8 +32,8 @@
                 p = n(16869),
                 f = n(39270),
                 b = n(67294),
-                v = n(32981),
-                h = n(89250),
+                h = n(32981),
+                v = n(89250),
                 y = n(79655),
                 E = n(2126);
             const x = function(t) {
@@ -82,11 +82,11 @@
                     g = m[1],
                     p = (0, b.useState)(null),
                     f = (0, l.Z)(p, 2),
-                    v = f[0],
-                    h = f[1],
+                    h = f[0],
+                    v = f[1],
                     y = (0, b.useRef)(null);
                 return (0, b.useEffect)((function() {
-                    null != y && y.current && h(y.current.getBoundingClientRect())
+                    null != y && y.current && v(y.current.getBoundingClientRect())
                 }), [y]), b.createElement("div", {
                     onMouseLeave: function() {
                         return g(!1)
@@ -103,7 +103,7 @@
                     size: "1x"
                 })), b.createElement(o.JX, {
                     style: {
-                        transform: "translate(-".concat(120 - (null == v ? void 0 : v.width), "px, 0px)")
+                        transform: "translate(-".concat(120 - (null == h ? void 0 : h.width), "px, 0px)")
                     },
                     className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(d ? "tw-flex" : "tw-hidden")
                 }, b.createElement(o.JX, {
@@ -133,22 +133,22 @@
                     r = void 0 === a ? function() {} : a,
                     w = t.publishListingCallback,
                     u = void 0 === w ? function() {} : w,
-                    m = (0, v.I0)();
+                    m = (0, h.I0)();
                 if (null === n) return null;
                 var d = n.id,
                     g = n.displayName,
                     p = n.created,
                     f = n.active,
-                    h = n.priceTokens,
+                    v = n.priceTokens,
                     y = n.listingType,
                     E = n.imageId,
                     x = n.storeIds;
                 return b.createElement("div", {
                     className: "tw-relative"
                 }, b.createElement("div", {
-                    className: "tw-grid tw-gap-2 tw-grid-cols-3 tw-bg-[#252A30] tw-rounded-lg @[470px]/my-listings:tw-grid-cols-5 @[700px]/my-listings:tw-grid-cols-7 tw-p-3 tw-h-[72px]"
+                    className: "tw-grid tw-gap-2 tw-grid-cols-3 tw-bg-[#252A30] tw-rounded-lg @[470px]/my-listings:tw-grid-cols-5 @[700px]/my-listings:tw-grid-cols-7 tw-p-3 tw-min-h-[72px]"
                 }, b.createElement(o.X2, {
-                    className: "tw-flex tw-gap-2 tw-items-center tw-truncate  tw-col-span-2"
+                    className: "tw-flex tw-gap-2 tw-items-center tw-col-span-2"
                 }, b.createElement(o.pw, {
                     fitToCover: !0,
                     imageId: E,
@@ -156,9 +156,10 @@
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
                 }), b.createElement(o.JX, {
-                    className: "tw-justify-center"
+                    className: "tw-justify-center tw-overflow-hidden"
                 }, b.createElement("h6", {
-                    className: "tw-m-0 tw-font-bold"
+                    title: g,
+                    className: "tw-m-0 tw-font-bold tw-truncate @[800px]/my-listings:tw-whitespace-pre-line @[800px]/my-listings:tw-break-words"
                 }, g), b.createElement("p", {
                     className: "tw-capitalize tw-m-0 tw-text-light-grey"
                 }, "duration" === y ? "Temporary" : y || ""))), b.createElement(o.JX, {
@@ -171,7 +172,7 @@
                     className: "tw-text-light-grey"
                 }, "Price"), b.createElement("p", {
                     className: "tw-mb-0"
-                }, b.createElement(o.b5, null), " ", h)), b.createElement(o.JX, {
+                }, b.createElement(o.b5, null), " ", v)), b.createElement(o.JX, {
                     className: "tw-items-center tw-justify-center tw-items-center tw-truncate tw-capitalize tw-hidden @[470px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
@@ -262,12 +263,12 @@
                     return n.e(3929).then(n.bind(n, 63929))
                 }));
             const J = function() {
-                var t, e, n = (0, v.I0)(),
-                    i = (0, h.s0)(),
+                var t, e, n = (0, h.I0)(),
+                    i = (0, v.s0)(),
                     s = (0, y.lr)(),
                     c = (0, l.Z)(s, 2),
                     E = c[0],
-                    C = (c[1], (0, h.UO)().paginationPage),
+                    C = (c[1], (0, v.UO)().paginationPage),
                     N = C ? Number(C) : 1,
                     k = 50 * (N - 1),
                     D = (0, b.useState)(""),
@@ -290,7 +291,7 @@
                     q = R[1],
                     K = (0, d.Z)(j),
                     Q = (0, g.IB)().data,
-                    W = (0, v.v9)((function(t) {
+                    W = (0, h.v9)((function(t) {
                         return t.listingFlow
                     })),
                     Y = W.currentTitle,
@@ -330,8 +331,8 @@
                             g = void 0 !== d && d,
                             p = t.productType,
                             b = void 0 === p ? m.Pm.LISTING : p,
-                            v = t.listingType,
-                            h = void 0 === v ? "" : v;
+                            h = t.listingType,
+                            v = void 0 === h ? "" : h;
                         q(!0), i && n((0, f.Td)(i)), G({
                             title: i,
                             data: a,
@@ -340,7 +341,7 @@
                             isDeleting: u,
                             isPublishing: g,
                             productType: b,
-                            listingType: h
+                            listingType: v
                         })
                     },
                     wt = function(t) {
@@ -461,4 +462,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c85a94387af7f9bd9405b1c72dea52d458f64a8fd5d039c5bd4f67f8fb122320.js.map
+//# sourceMappingURL=810a2c3f0ad5d1b5081cfe31f6ae4cd6a58b5fbc19f4cfce22f6ab6068f2a504.js.map

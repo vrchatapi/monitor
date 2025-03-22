@@ -1932,13 +1932,12 @@
                         c = a.name,
                         i = a.created_at,
                         o = a.runningBalance,
-                        m = a.transactionPOV,
-                        u = "seller" === m ? "Sale" : "Purchase",
-                        d = "seller" === m ? "tw-text-green" : "tw-text-red",
-                        p = (0, n.useState)(!1),
-                        f = (0, w.Z)(p, 2),
-                        h = f[0],
-                        g = f[1];
+                        m = "seller" === a.transactionPOV ? "Sale" : "Purchase",
+                        u = s < 0 ? "tw-text-red" : "tw-text-green",
+                        d = (0, n.useState)(!1),
+                        p = (0, w.Z)(d, 2),
+                        f = p[0],
+                        h = p[1];
                     return n.createElement("div", {
                         key: l,
                         className: "tw-@container/transaction-row tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid tw-py-3"
@@ -1949,7 +1948,7 @@
                     }, S()(i).format("L LT")), n.createElement("div", {
                         className: "tw-h-9 tw-truncate tw-max-w-[100px] @[800px]/transaction-row:tw-max-w-max"
                     }, c), n.createElement("div", {
-                        className: "tw-h-9 tw-truncate tw-max-w-[100px] @[800px]/transaction-row:tw-max-w-max ".concat(d)
+                        className: "tw-h-9 tw-truncate tw-max-w-[100px] @[800px]/transaction-row:tw-max-w-max ".concat(u)
                     }, n.createElement(r.b5, {
                         className: "tw-mr-1"
                     }), " ", s), n.createElement("div", {
@@ -1960,17 +1959,17 @@
                         className: "tw-h-9 tw-truncate"
                     }, n.createElement("div", {
                         className: "tw-flex tw-flex-row tw-justify-between"
-                    }, u, n.createElement(r.zx, {
+                    }, m, n.createElement(r.zx, {
                         className: "tw-h-9 tw-w-10 tw-text-white tw-bg-button-bg-grey tw-border-none",
                         onClick: function() {
-                            return g(!h)
+                            return h(!f)
                         }
                     }, n.createElement(r.$1, {
-                        icon: h ? W.mT : V.pt,
+                        icon: f ? W.mT : V.pt,
                         size: "1x"
                     }))))), n.createElement(Q, {
                         transactionData: a,
-                        isExpanded: h
+                        isExpanded: f
                     }))
                 };
             wt.propTypes = {
@@ -2029,7 +2028,7 @@
                     i = c[0],
                     m = c[1],
                     u = (0, l.UO)().paginationPage,
-                    d = (0, n.useState)(i.get("listingType") || "all"),
+                    d = (0, n.useState)(i.get("transactionType") || "all"),
                     p = (0, w.Z)(d, 2),
                     g = p[0],
                     v = p[1],
@@ -2095,7 +2094,7 @@
                     ie = ne.error;
                 (0, n.useEffect)((function() {
                     var e = new URLSearchParams(i.toString());
-                    g && e.set("listingType", g), N && e.set("duration", N), B && e.set("sortBy", B), V && e.set("orderBy", V), e.toString() !== i.toString() && (m(e), J(1))
+                    g && e.set("transactionType", g), N && e.set("duration", N), B && e.set("sortBy", B), V && e.set("orderBy", V), e.toString() !== i.toString() && (m(e), J(1))
                 }), [g, N, B, V, i]);
                 var oe, me = function(e) {
                         return B === e
@@ -2111,9 +2110,9 @@
                     className: "tw-flex"
                 }, n.createElement(r.Lt, {
                     className: "tw-h-9 tw-mr-2",
-                    label: "Listing Type",
+                    label: "Transaction Type",
                     value: g,
-                    options: o.yB,
+                    options: o.Ds,
                     onChange: v
                 }), n.createElement(r.Lt, {
                     className: "tw-h-9",
@@ -2445,4 +2444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59d88e879ed33c7cac3a03b44dabb7843202fee41027dcef196781de97b85c4d.js.map
+//# sourceMappingURL=40a11a6901f7089bf6c4ce63d244a82013c2b60746dd72d45a47ce18fbfedf77.js.map

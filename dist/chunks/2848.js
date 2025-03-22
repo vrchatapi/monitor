@@ -380,9 +380,9 @@
                 return y.createElement("div", {
                     className: "tw-relative"
                 }, y.createElement("div", {
-                    className: "tw-grid tw-gap-2 tw-grid-cols-3 @[540px]/my-products:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-mx-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
+                    className: "tw-grid tw-gap-2 tw-items-center tw-grid-cols-3 @[540px]/my-products:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-mx-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
                 }, y.createElement(p.X2, {
-                    className: "tw-flex tw-gap-1 tw-items-center tw-h-9 tw-my-2 @[800px]/my-products:tw-max-w-max tw-col-span-2"
+                    className: "tw-flex tw-gap-1 tw-items-center tw-min-h-9 tw-my-2 @[800px]/my-products:tw-max-w-max tw-col-span-2"
                 }, y.createElement(p.pw, {
                     fitToCover: !0,
                     imageId: E,
@@ -390,21 +390,22 @@
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
                 }), y.createElement("p", {
-                    className: "tw-truncate tw-mb-0"
+                    className: "tw-truncate tw-mb-0 tw-overflow-hidden @[800px]/my-products:tw-whitespace-pre-line @[800px]/my-products:tw-break-words",
+                    title: g
                 }, g)), y.createElement("div", {
-                    className: "tw-block tw-items-center tw-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
+                    className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
                 }, v), y.createElement("div", {
-                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
+                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
                 }, $()(f).format("ll")), y.createElement("div", {
-                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
+                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
                 }, $()(x).format("ll")), y.createElement("div", {
-                    className: "tw-flex tw-items-center tw-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
+                    className: "tw-flex tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
                 }, y.createElement("span", {
                     className: "tw-truncate tw-hidden @[700px]/products-heading:tw-block"
                 }, b && b.length > 0 ? "Available in ".concat(b.length, " listings") : "Unlisted"), y.createElement("span", {
                     className: "@[700px]/products-heading:tw-hidden tw-truncate"
                 }, b && b.length > 0 ? "In ".concat(b.length, " listings") : "Unlisted")), y.createElement(p.X2, {
-                    className: "tw-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-w-fit tw-gap-2"
+                    className: "tw-min-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-w-fit tw-gap-2"
                 }, y.createElement(p.zx, {
                     className: "tw-w-9",
                     neutral: !0,
@@ -1091,4 +1092,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45e8a71c5786bfee75cc89b524276e248db169d686b270ecb95203b3fcce90e9.js.map
+//# sourceMappingURL=3dbadbd01c939a5f517b8a06366804a8ae77e13fbd09f6add69fc8eae43a75bd.js.map

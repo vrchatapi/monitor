@@ -2925,19 +2925,22 @@
                     key: u,
                     className: "tw-relative"
                 }, d.createElement("div", {
-                    className: "tw-grid tw-gap-2 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-mx-5 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color"
+                    className: "tw-grid tw-items-center tw-gap-2 tw-grid-cols-5 @[700px]/subscriptions-heading:tw-grid-cols-7 tw-mx-5 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color"
                 }, d.createElement("div", {
-                    className: "tw-flex tw-items-center tw-h-9 tw-truncate tw-my-2 @[800px]/my-subscriptions:tw-max-w-max tw-col-span-2"
-                }, m), d.createElement("div", {
-                    className: "tw-block tw-items-center tw-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-subscriptions:tw-max-w-max"
+                    title: m,
+                    className: "tw-flex tw-items-center tw-min-h-9 tw-my-2 @[800px]/my-subscriptions:tw-max-w-max tw-col-span-2"
+                }, d.createElement("p", {
+                    className: "tw-truncate @[800px]/my-subscriptions:tw-whitespace-pre-line @[800px]/my-subscriptions:tw-break-words tw-m-0"
+                }, m)), d.createElement("div", {
+                    className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-subscriptions:tw-max-w-max"
                 }, b), d.createElement("div", {
-                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-subscriptions:tw-max-w-max tw-hidden @[700px]/my-subscriptions:tw-flex"
+                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-subscriptions:tw-max-w-max tw-hidden @[700px]/my-subscriptions:tw-flex"
                 }, $()(w).format("ll")), d.createElement("div", {
-                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-subscriptions:tw-max-w-max tw-hidden @[700px]/my-subscriptions:tw-flex"
+                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-subscriptions:tw-max-w-max tw-hidden @[700px]/my-subscriptions:tw-flex"
                 }, $()(p).format("ll")), d.createElement("div", {
-                    className: "tw-flex tw-items-center tw-h-9 tw-my-2 tw-truncate @[800px]/my-subscriptions:tw-max-w-max"
+                    className: "tw-flex tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-subscriptions:tw-max-w-max"
                 }, g ? "Published" : "Draft"), d.createElement(f.X2, {
-                    className: "tw-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-gap-2"
+                    className: "tw-min-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-gap-2"
                 }, d.createElement(f.zx, {
                     className: "tw-w-9",
                     neutral: !0,
@@ -4781,4 +4784,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ab2cdfba1833b7132ecdc4ee81b7216cc45142ced21b7caafda1662ff73f9517.js.map
+//# sourceMappingURL=be0d61a45e563104837f9c2296718cfcbbdcdf54fcb0c35ddb5c291ff1957b64.js.map

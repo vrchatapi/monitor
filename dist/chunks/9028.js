@@ -48,8 +48,8 @@
                 c = n.n(l),
                 u = n(64258),
                 d = n(14411),
-                m = n(98185),
-                w = n(53734),
+                w = n(98185),
+                m = n(53734),
                 p = n(95896),
                 g = n(12752),
                 f = n(93261),
@@ -109,9 +109,9 @@
                     l = e.publishAction,
                     c = void 0 === l ? function() {} : l,
                     u = (0, b.useState)(!1),
-                    m = (0, a.Z)(u, 2),
-                    w = m[0],
-                    p = m[1],
+                    w = (0, a.Z)(u, 2),
+                    m = w[0],
+                    p = w[1],
                     g = (0, b.useState)(null),
                     f = (0, a.Z)(g, 2),
                     v = f[0],
@@ -128,7 +128,7 @@
                     className: "tw-h-9 tw-w-9",
                     neutral: !0,
                     onClick: function() {
-                        return p(!w)
+                        return p(!m)
                     }
                 }, b.createElement(d.$1, {
                     icon: q.Uw,
@@ -137,7 +137,7 @@
                     style: {
                         transform: "translate(-".concat(120 - (null == v ? void 0 : v.width), "px, 0px)")
                     },
-                    className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(w ? "tw-flex" : "tw-hidden")
+                    className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(m ? "tw-flex" : "tw-hidden")
                 }, b.createElement(d.JX, {
                     className: "tw-items-start tw-bg-button-bg-grey tw-border-2 tw-w-full tw-text-left tw-weight-[500] tw-border-solid tw-border-[#666666] tw-rounded-lg"
                 }, b.createElement("button", {
@@ -167,9 +167,9 @@
                         s = e.moveDown,
                         l = void 0 === s ? function() {} : s,
                         c = e.editListingCallback,
-                        m = void 0 === c ? function() {} : c,
-                        w = e.deleteListingCallback,
-                        p = void 0 === w ? function() {} : w,
+                        w = void 0 === c ? function() {} : c,
+                        m = e.deleteListingCallback,
+                        p = void 0 === m ? function() {} : m,
                         g = e.publishListingCallback,
                         f = void 0 === g ? function() {} : g,
                         v = ((0, S.Z)(e, A), (0, E.I0)());
@@ -185,9 +185,9 @@
                     return b.createElement("div", {
                         className: "tw-relative"
                     }, b.createElement("div", {
-                        className: "tw-grid tw-gap-2 tw-grid-cols-3 tw-bg-[#252A30] tw-rounded-lg @[470px]/store:tw-grid-cols-5 @[700px]/store:tw-grid-cols-7 tw-p-3 tw-h-[72px]"
+                        className: "tw-grid tw-gap-2 tw-grid-cols-3 tw-bg-[#252A30] tw-rounded-lg @[470px]/store:tw-grid-cols-5 @[700px]/store:tw-grid-cols-7 tw-p-3 tw-min-h-[72px]"
                     }, b.createElement(d.X2, {
-                        className: "tw-flex tw-gap-2 tw-items-center tw-truncate  tw-col-span-2"
+                        className: "tw-flex tw-gap-2 tw-items-center tw-truncate tw-col-span-2"
                     }, i && b.createElement(d.$1, {
                         className: "tw-hidden sm:tw-block",
                         icon: L.g$
@@ -198,9 +198,10 @@
                         containerColor: "#181B1F",
                         iconColor: "#404C58"
                     }), b.createElement(d.JX, {
-                        className: "tw-justify-center"
+                        className: "tw-justify-center tw-truncate"
                     }, b.createElement("h6", {
-                        className: "tw-m-0 tw-font-bold"
+                        className: "tw-m-0 tw-font-bold tw-truncate @[800px]/store:tw-whitespace-pre-line @[800px]/store:tw-break-words",
+                        title: h
                     }, h), b.createElement("p", {
                         className: "tw-capitalize tw-m-0 tw-text-light-grey"
                     }, "duration" === N ? "Temporary" : N || ""))), b.createElement(d.JX, {
@@ -257,7 +258,7 @@
                             return f(n)
                         },
                         editAction: function() {
-                            return m(n)
+                            return w(n)
                         },
                         deleteAction: function() {
                             return p(n)
@@ -297,9 +298,9 @@
                     l = e.onCreateSubscription,
                     c = void 0 === l ? function() {} : l,
                     u = e.onSaveOrder,
-                    m = void 0 === u ? function() {} : u,
-                    w = e.onCancelOrder,
-                    g = void 0 === w ? function() {} : w,
+                    w = void 0 === u ? function() {} : u,
+                    m = e.onCancelOrder,
+                    g = void 0 === m ? function() {} : m,
                     f = e.isOrdering,
                     v = void 0 !== f && f,
                     y = e.orderingDisabled,
@@ -390,7 +391,7 @@
                     className: "tw-w-[170px] tw-max-h-fit"
                 }, "Cancel"), b.createElement(d.zx, {
                     type: "button",
-                    onClick: m,
+                    onClick: w,
                     containerClasses: "tw-h-fit",
                     className: "tw-w-[170px] tw-max-h-fit"
                 }, "Save"))))
@@ -456,9 +457,9 @@
                     ce = le[0],
                     ue = le[1],
                     de = (0, b.useState)(!1),
-                    me = (0, a.Z)(de, 2),
-                    we = me[0],
-                    pe = me[1],
+                    we = (0, a.Z)(de, 2),
+                    me = we[0],
+                    pe = we[1],
                     ge = (0, b.useState)(!1),
                     fe = (0, a.Z)(ge, 2),
                     ve = fe[0],
@@ -617,9 +618,9 @@
                             c = e.isDeleting,
                             u = void 0 !== c && c,
                             d = e.isPublishing,
-                            m = void 0 !== d && d,
-                            w = e.productType,
-                            g = void 0 === w ? p.Pm.LISTING : w,
+                            w = void 0 !== d && d,
+                            m = e.productType,
+                            g = void 0 === m ? p.Pm.LISTING : m,
                             f = e.listingType,
                             v = void 0 === f ? "" : f;
                         ye(!0), n && S((0, y.Td)(n)), xe({
@@ -628,7 +629,7 @@
                             isCreating: o,
                             isEditing: l,
                             isDeleting: u,
-                            isPublishing: m,
+                            isPublishing: w,
                             listingType: v,
                             productType: g
                         })
@@ -687,7 +688,7 @@
                     };
                 return b.createElement(b.Fragment, null, b.createElement(d.JX, {
                     className: "tw-@container/store tw-gap-4"
-                }, we && b.createElement("div", {
+                }, me && b.createElement("div", {
                     className: "tw-w-full tw-h-full tw-opacity-75 tw-bg-black tw-fixed tw-z-10 tw-top-0 tw-left-0"
                 }), b.createElement(d.zx, {
                     neutral: !0,
@@ -704,7 +705,7 @@
                     className: "tw-items-align"
                 }, b.createElement("h4", {
                     className: "tw-mr-2"
-                }, null == Ce ? void 0 : Ce.displayName), (null == Ce ? void 0 : Ce.storeType) && b.createElement(w.Z, {
+                }, null == Ce ? void 0 : Ce.displayName), (null == Ce ? void 0 : Ce.storeType) && b.createElement(m.Z, {
                     storeType: null == Ce ? void 0 : Ce.storeType,
                     className: "tw-h-fit"
                 })), b.createElement(d.X2, {
@@ -721,7 +722,7 @@
                     type: "warn",
                     className: "tw-mt-2 tw-flex-row"
                 }, "This store is disabled. Enable it so users can browse and purchase your listings."), b.createElement(V, {
-                    isOrdering: we,
+                    isOrdering: me,
                     onFilterChange: function(e) {
                         K(e)
                     },
@@ -737,8 +738,8 @@
                     worldStore: "world" === (null == Ce ? void 0 : Ce.storeType),
                     orderingDisabled: 0 === ae.length
                 }), b.createElement(d.JX, {
-                    className: "tw-gap-3 ".concat(we ? "tw-z-20" : null)
-                }, we && b.createElement(b.Fragment, null, b.createElement(d.qX, {
+                    className: "tw-gap-3 ".concat(me ? "tw-z-20" : null)
+                }, me && b.createElement(b.Fragment, null, b.createElement(d.qX, {
                     type: "dark",
                     hideIcon: !0,
                     className: "tw-m-0 tw-hidden sm:tw-block"
@@ -748,7 +749,7 @@
                     className: "tw-m-0 tw-block sm:tw-hidden"
                 }, "Click the arrows of store items to reorder them, don’t forget to click on ", b.createElement("strong", null, "Save"), " after finishing changes.")), Ne || Ae ? b.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, b.createElement(m.Z, {
+                }, b.createElement(w.Z, {
                     loading: !0
                 })) : ke || Fe ? b.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
@@ -766,8 +767,8 @@
                 }) : Se ? ae.map((function(e, t) {
                     return b.createElement("div", {
                         key: e.id,
-                        className: "".concat(we ? "sm:tw-select-none sm:tw-cursor-move" : ""),
-                        draggable: we,
+                        className: "".concat(me ? "sm:tw-select-none sm:tw-cursor-move" : ""),
+                        draggable: me,
                         onDragOver: nt,
                         onDragStart: function(e) {
                             return function(e, t) {
@@ -787,7 +788,7 @@
                             }(e, t)
                         }
                     }, b.createElement(J, {
-                        isOrdering: we,
+                        isOrdering: me,
                         listingData: e,
                         editListingCallback: Ye,
                         deleteListingCallback: et,
@@ -821,7 +822,7 @@
                     slim: !z,
                     backgroundColor: z ? "#0A0A0D" : "#181B1F"
                 }, b.createElement(b.Suspense, {
-                    fallback: b.createElement(m.Z, {
+                    fallback: b.createElement(w.Z, {
                         loading: !0
                     })
                 }, ve && !Ee.data && "subscription" !== Ee.listingType && b.createElement(M, {
@@ -990,4 +991,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2acea3ee71a7a36a5ca89989dfa4bb1b29dd5c2bc95821484e11433dc7e896dc.js.map
+//# sourceMappingURL=7a28b48c85e00b02c213d4f2a88e7c1f425d111487f76558454b620d7c2b2a1b.js.map
