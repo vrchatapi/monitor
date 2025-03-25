@@ -28,7 +28,7 @@
         },
         68116: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => N
+                default: () => y
             });
             var n = r(15861),
                 a = r(54546),
@@ -43,8 +43,8 @@
                 w = r(89250),
                 p = r(79655),
                 d = r(22202),
-                v = r(14411),
-                h = r(78989),
+                h = r(14411),
+                v = r(78989),
                 x = r(41400),
                 g = r(36678),
                 E = r(98538),
@@ -55,23 +55,23 @@
                         s = (0, w.TH)().state,
                         m = (0, d.Sq)(),
                         b = (0, a.Z)(m, 2),
-                        N = b[0],
-                        y = b[1],
-                        L = y.isLoading,
-                        C = y.isError,
-                        T = y.error,
+                        y = b[0],
+                        N = b[1],
+                        L = N.isLoading,
+                        C = N.isError,
+                        T = N.error,
                         R = (0, f.useState)(!1),
                         k = (0, a.Z)(R, 2),
                         F = k[0],
                         M = k[1],
-                        D = (0, f.useState)(!0),
-                        Z = (0, a.Z)(D, 2),
-                        S = Z[0],
-                        z = Z[1],
+                        Z = (0, f.useState)(!0),
+                        D = (0, a.Z)(Z, 2),
+                        S = D[0],
+                        z = D[1],
                         O = (0, f.useRef)(null),
-                        P = (0, f.useRef)(null),
                         j = (0, f.useRef)(null),
                         K = (0, f.useRef)(null),
+                        P = (0, f.useRef)(null),
                         _ = (0, f.useRef)(null),
                         H = (0, f.useRef)(null);
                     (0, f.useEffect)((function() {
@@ -89,7 +89,7 @@
                                             }
                                             return e.abrupt("return");
                                         case 3:
-                                            return H.current.blur(), e.prev = 4, e.next = 7, N({
+                                            return H.current.blur(), e.prev = 4, e.next = 7, y({
                                                 code: U(),
                                                 twoFactorType: r ? "emailotp" : "totp"
                                             }).unwrap();
@@ -126,17 +126,24 @@
                         }(),
                         q = F && !L && S,
                         U = function() {
-                            return [O.current.value, P.current.value, j.current.value, K.current.value, _.current.value, H.current.value].join("")
+                            return [O.current.value, j.current.value, K.current.value, P.current.value, _.current.value, H.current.value].join("")
                         },
                         W = function(e) {
-                            var t, r = e.event,
-                                n = e.nextRef,
-                                a = void 0 === n ? null : n;
-                            if (Number.isNaN(r.target.value)) r.target.value = "";
+                            var t = e.event,
+                                r = e.nextRef,
+                                n = void 0 === r ? null : r;
+                            if (Number.isNaN(t.target.value)) t.target.value = "";
                             else {
+                                var a;
+                                if (1 === t.target.value.length && null !== n) null === (a = n.current) || void 0 === a || a.focus();
+                                t.target.value.length > 1 && function(e) {
+                                    for (var t, r = e.target.value.replace(/\s+/g, ""), n = [O, j, K, P, _, H], a = 0; a < r.length && a < n.length; a++) n[a].current.value = r[a];
+                                    var l, o = Math.min(r.length, n.length);
+                                    o < n.length ? null === (l = n[o]) || void 0 === l || null === (l = l.current) || void 0 === l || l.focus() : null === (t = O.current) || void 0 === t || t.blur()
+                                }(t);
                                 var l = U(),
                                     o = 6 === l.length && !Number.isNaN(l);
-                                M(o), null !== a && (null === (t = a.current) || void 0 === t || t.focus())
+                                M(o)
                             }
                         },
                         $ = function(e) {
@@ -145,7 +152,7 @@
                                 n = void 0 === r ? null : r;
                             null !== n && "Backspace" === t.key && 0 === t.target.value.length && (n.current.value = "", n.current.focus())
                         };
-                    return f.createElement(g.Z, null, f.createElement(v.$4, null, r ? "Email One-Time Code" : "Two-Factor Authentication"), f.createElement("div", {
+                    return f.createElement(g.Z, null, f.createElement(h.$4, null, r ? "Email One-Time Code" : "Two-Factor Authentication"), f.createElement("div", {
                         className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                     }, f.createElement(x.l0, {
                         onSubmit: A
@@ -153,7 +160,7 @@
                         className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                     }, f.createElement("div", {
                         className: "tw-mb-5"
-                    }, f.createElement(v.$1, {
+                    }, f.createElement(h.$1, {
                         icon: r ? o.mS : l.faShieldHalved,
                         className: "tw-w-[72px] tw-h-[72px]"
                     })), f.createElement("h4", {
@@ -170,28 +177,7 @@
                         className: "tw-flex tw-justify-center tw-flex-col"
                     }, f.createElement("div", {
                         className: "tw-flex tw-items-center"
-                    }, f.createElement(h.Z, {
-                        type: "text",
-                        name: "code",
-                        "aria-label": "Two Factor Code",
-                        placeholder: "0",
-                        onChange: function(e) {
-                            return W({
-                                event: e,
-                                nextRef: P
-                            })
-                        },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
-                        isError: C,
-                        inputMode: "numeric",
-                        autocomplete: "off",
-                        maxLength: "1",
-                        ref: O,
-                        onPaste: function(e) {
-                            var t = e.clipboardData.getData("text/plain");
-                            t.length < 6 || Number.isNaN(t) || (O.current.value = t[0], P.current.value = t[1], j.current.value = t[2], K.current.value = t[3], _.current.value = t[4], H.current.value = t[5], M(!0), H.current.focus())
-                        }
-                    }), f.createElement(h.Z, {
+                    }, f.createElement(v.Z, {
                         type: "text",
                         name: "code",
                         "aria-label": "Two Factor Code",
@@ -202,19 +188,12 @@
                                 nextRef: j
                             })
                         },
-                        onKeyDown: function(e) {
-                            return $({
-                                event: e,
-                                previousRef: O
-                            })
-                        },
                         className: "tw-w-12 tw-h-[60px] tw-mr-3",
                         isError: C,
                         inputMode: "numeric",
                         autocomplete: "off",
-                        maxLength: "1",
-                        ref: P
-                    }), f.createElement(h.Z, {
+                        ref: O
+                    }), f.createElement(v.Z, {
                         type: "text",
                         name: "code",
                         "aria-label": "Two Factor Code",
@@ -228,7 +207,7 @@
                         onKeyDown: function(e) {
                             return $({
                                 event: e,
-                                previousRef: P
+                                previousRef: O
                             })
                         },
                         className: "tw-w-12 tw-h-[60px] tw-mr-3",
@@ -237,7 +216,7 @@
                         autocomplete: "off",
                         maxLength: "1",
                         ref: j
-                    }), f.createElement(h.Z, {
+                    }), f.createElement(v.Z, {
                         type: "text",
                         name: "code",
                         "aria-label": "Two Factor Code",
@@ -245,7 +224,7 @@
                         onChange: function(e) {
                             return W({
                                 event: e,
-                                nextRef: _
+                                nextRef: P
                             })
                         },
                         onKeyDown: function(e) {
@@ -260,7 +239,7 @@
                         autocomplete: "off",
                         maxLength: "1",
                         ref: K
-                    }), f.createElement(h.Z, {
+                    }), f.createElement(v.Z, {
                         type: "text",
                         name: "code",
                         "aria-label": "Two Factor Code",
@@ -268,7 +247,7 @@
                         onChange: function(e) {
                             return W({
                                 event: e,
-                                nextRef: H
+                                nextRef: _
                             })
                         },
                         onKeyDown: function(e) {
@@ -282,8 +261,31 @@
                         inputMode: "numeric",
                         autocomplete: "off",
                         maxLength: "1",
+                        ref: P
+                    }), f.createElement(v.Z, {
+                        type: "text",
+                        name: "code",
+                        "aria-label": "Two Factor Code",
+                        placeholder: "0",
+                        onChange: function(e) {
+                            return W({
+                                event: e,
+                                nextRef: H
+                            })
+                        },
+                        onKeyDown: function(e) {
+                            return $({
+                                event: e,
+                                previousRef: P
+                            })
+                        },
+                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        isError: C,
+                        inputMode: "numeric",
+                        autocomplete: "off",
+                        maxLength: "1",
                         ref: _
-                    }), f.createElement(h.Z, {
+                    }), f.createElement(v.Z, {
                         type: "text",
                         name: "code",
                         "aria-label": "Two Factor Code",
@@ -308,12 +310,12 @@
                     })), C && f.createElement("p", {
                         role: "alert",
                         className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
-                    }, 429 === (null == T ? void 0 : T.status) ? "Login unavailable due to too many failed attempts. Please try again later." : "Oops, that code didn't work.")), f.createElement(v.zx, {
+                    }, 429 === (null == T ? void 0 : T.status) ? "Login unavailable due to too many failed attempts. Please try again later." : "Oops, that code didn't work.")), f.createElement(h.zx, {
                         className: "tw-w-60 tw-mt-6 tw-mb-4",
                         disabled: !q,
                         loading: L || !S,
                         type: "submit"
-                    }, "Next"), r ? f.createElement(v.qX, {
+                    }, "Next"), r ? f.createElement(h.qX, {
                         type: "info",
                         title: "What's this?",
                         className: "tw--mb-4",
@@ -331,11 +333,11 @@
                         className: "tw-mt-12"
                     }, "Log out")))))
                 };
-            const N = b;
+            const y = b;
             b.propTypes = {
                 isEmailOTP: m().bool
             }
         }
     }
 ]);
-//# sourceMappingURL=1899526e34a4925c635133291860fc4baa8d36ce3e9dcee762216409aab814d3.js.map
+//# sourceMappingURL=29a0401532becd92d7f8562eb461a6e8c9d3d4d02426716e818d4682ed8b7438.js.map

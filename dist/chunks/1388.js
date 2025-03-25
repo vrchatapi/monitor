@@ -40,7 +40,7 @@
                 return r
             }
 
-            function S(e) {
+            function C(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? Z(Object(r), !0).forEach((function(t) {
@@ -51,7 +51,7 @@
                 }
                 return e
             }
-            var C = r(61509).S.injectEndpoints({
+            var S = r(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getUserLicensesForContent: e.query({
@@ -66,7 +66,7 @@
                                         c = void 0 === i || i;
                                     return {
                                         url: "licenses",
-                                        params: S(S({}, (0, N.ue)({
+                                        params: C(C({}, (0, N.ue)({
                                             n: r,
                                             pageValue: n
                                         })), {}, {
@@ -83,17 +83,17 @@
                     },
                     overrideExisting: !1
                 }),
-                O = C.useGetUserLicensesForContentQuery,
+                O = S.useGetUserLicensesForContentQuery,
                 P = r(16869),
                 j = r(62437),
                 A = r(43683),
-                U = r(14411),
-                T = (r(37599), r(84090)),
+                T = r(14411),
+                U = (r(37599), r(84090)),
                 L = (r(49567), r(98185)),
                 F = r(41727),
                 D = r(94370),
-                q = r(6811),
-                R = (r(37337), r(4991)),
+                R = r(6811),
+                q = (r(37337), r(4991)),
                 G = r(35773),
                 M = r(95305),
                 z = r(93007),
@@ -162,10 +162,10 @@
                 return n
             }
             var B = "standard",
-                Q = "impostor",
-                W = f.createElement(U.$1, {
+                W = "impostor",
+                Q = f.createElement(T.$1, {
                     color: "#54b5c5",
-                    icon: q.f8
+                    icon: R.f8
                 }),
                 _ = {
                     estimatedServiceDurationSeconds: 14400
@@ -201,18 +201,18 @@
                     E = (0, l.Z)(h, 2),
                     I = E[0],
                     Z = E[1],
-                    S = Z.isLoading,
-                    C = Z.isError,
+                    C = Z.isLoading,
+                    S = Z.isError,
                     O = Z.error,
                     P = (Z.isSuccess, (0, x.EA)()),
                     j = (0, l.Z)(P, 2),
                     A = j[0],
-                    T = j[1],
-                    L = T.isLoading,
-                    F = T.isError,
-                    q = T.error,
-                    X = T.isSuccess,
-                    $ = T.reset,
+                    U = j[1],
+                    L = U.isLoading,
+                    F = U.isError,
+                    R = U.error,
+                    X = U.isSuccess,
+                    $ = U.reset,
                     H = (0, k.Ko)(null === (t = s) || void 0 === t ? void 0 : t.fileId, {
                         skip: !s
                     }),
@@ -251,7 +251,7 @@
                 c || (ye = "No asset found for Windows Platform with Unity ".concat(2017, " or later"));
                 var Ee = function(e) {
                     var t, r = "An unknown error occurred";
-                    return 429 === (null == e ? void 0 : e.status) ? r = "You're doing that a bit too much. Please try again tomorrow." : null !== (t = q.data) && void 0 !== t && null !== (t = t.error) && void 0 !== t && t.message && (r = f.createElement("code", null, q.data.error.message)), r
+                    return 429 === (null == e ? void 0 : e.status) ? r = "You're doing that a bit too much. Please try again tomorrow." : null !== (t = R.data) && void 0 !== t && null !== (t = t.error) && void 0 !== t && t.message && (r = f.createElement("code", null, R.data.error.message)), r
                 };
                 return f.createElement(g.Z, null, f.createElement("p", {
                     style: {
@@ -259,10 +259,10 @@
                     }
                 }, "Impostors are cross-platform variations of your avatar, automatically generated and optimized for performance. When other players can't see your avatar, they'll see the Impostor instead of a Fallback, provided you have enabled the \"Use Impostor as Fallback\" setting in the client. Keep in mind that only 10 new Impostors can be generated per day.", " ", f.createElement("a", {
                     href: "https://creators.vrchat.com/avatars/avatar-impostors/"
-                }, "Learn more about Impostors")), de.estimatedServiceDurationSeconds > 3600 && f.createElement(U.qX, {
+                }, "Learn more about Impostors")), de.estimatedServiceDurationSeconds > 3600 && f.createElement(T.qX, {
                     type: "info",
                     title: "Whoa there!"
-                }, f.createElement("p", null, "We're experiencing a lot of demand right now. Impostor generation may take a long time! You're lookin' at a wait of at least", " ", K().duration(de.estimatedServiceDurationSeconds, "seconds").humanize(), " before your impostors are ready.")), f.createElement(R.Z, {
+                }, f.createElement("p", null, "We're experiencing a lot of demand right now. Impostor generation may take a long time! You're lookin' at a wait of at least", " ", K().duration(de.estimatedServiceDurationSeconds, "seconds").humanize(), " before your impostors are ready.")), f.createElement(q.Z, {
                     size: "sm"
                 }, f.createElement("thead", null, f.createElement("tr", {
                     style: {
@@ -295,15 +295,15 @@
                         style: {
                             color: "#f8f9fa"
                         }
-                    }, B in r && W), f.createElement("td", {
+                    }, B in r && Q), f.createElement("td", {
                         style: {
                             color: "#f8f9fa"
                         }
-                    }, Q in r && W))
-                })))), ie && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(U.qX, {
+                    }, W in r && Q))
+                })))), ie && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(T.qX, {
                     type: "warn",
                     title: "Impostorization failed"
-                }, f.createElement("p", null, "Uh, oh, the last time we tried to generate impostors for this avatar, we had a problem:"), f.createElement("p", null, f.createElement("pre", null, ie)), f.createElement("p", null, "Some errors will always recur because our impostor system can't process this avatar. Others may be fixed over time.")))), !he && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement("p", null, "Unfortunately we can't currently generate impostors for this avatar:"), f.createElement("p", null, f.createElement("pre", null, ye)))), f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(U.zx, {
+                }, f.createElement("p", null, "Uh, oh, the last time we tried to generate impostors for this avatar, we had a problem:"), f.createElement("p", null, f.createElement("pre", null, ie)), f.createElement("p", null, "Some errors will always recur because our impostor system can't process this avatar. Others may be fixed over time.")))), !he && f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement("p", null, "Unfortunately we can't currently generate impostors for this avatar:"), f.createElement("p", null, f.createElement("pre", null, ye)))), f.createElement(G.Z, null, f.createElement(M.Z, null, f.createElement(T.zx, {
                     className: "mb-2",
                     onClick: function() {
                         A({
@@ -313,7 +313,7 @@
                     color: "primary",
                     disabled: we || ne || !he,
                     loading: L || ne
-                }, f.createElement(U.$1, {
+                }, f.createElement(T.$1, {
                     width: 20,
                     icon: z.Z
                 }), " ", function() {
@@ -331,7 +331,7 @@
                         }
                     } else e = "Generate Impostors";
                     return e
-                }())), f.createElement(M.Z, null, f.createElement(U.zx, {
+                }())), f.createElement(M.Z, null, f.createElement(T.zx, {
                     className: "mb-2",
                     onClick: function() {
                         I({
@@ -339,16 +339,16 @@
                         })
                     },
                     color: "secondary",
-                    loading: S,
+                    loading: C,
                     disabled: !me
-                }, f.createElement(U.$1, {
+                }, f.createElement(T.$1, {
                     width: 20,
                     icon: D.nY
-                }), " Delete Impostors"))), C && f.createElement(U.qX, {
+                }), " Delete Impostors"))), S && f.createElement(T.qX, {
                     type: "error"
-                }, "Welp, failed to delete impostors.", f.createElement("br", null), Ee(O)), F && f.createElement(U.qX, {
+                }, "Welp, failed to delete impostors.", f.createElement("br", null), Ee(O)), F && f.createElement(T.qX, {
                     type: "error"
-                }, "Couldn't request impostors.", f.createElement("br", null), Ee(q)))
+                }, "Couldn't request impostors.", f.createElement("br", null), Ee(R)))
             };
             r(9669);
             var J = r(45987),
@@ -381,14 +381,14 @@
                         fileId: null == s ? void 0 : s.id
                     }),
                     Z = (0, k.Yh)(),
-                    S = (0, l.Z)(Z, 2),
-                    C = S[0],
-                    O = S[1].isLoading,
+                    C = (0, l.Z)(Z, 2),
+                    S = C[0],
+                    O = C[1].isLoading,
                     P = (0, k.g3)(),
                     j = (0, l.Z)(P, 2),
                     A = j[0],
-                    U = j[1].isLoading,
-                    T = function() {
+                    T = j[1].isLoading,
+                    U = function() {
                         var e = (0, a.Z)(w().mark((function e(a) {
                             var l, i, c, s;
                             return w().wrap((function(e) {
@@ -413,7 +413,7 @@
                                         }
                                         return e.abrupt("return");
                                     case 9:
-                                        return e.prev = 9, e.next = 12, C({
+                                        return e.prev = 9, e.next = 12, S({
                                             tag: "avatargallery",
                                             file: i,
                                             galleryId: o
@@ -473,7 +473,7 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return O || U ? f.createElement("div", {
+                return O || T ? f.createElement("div", {
                     className: "tw-border-dashed tw-border-2 tw-rounded-md tw-border-[#404C58] tw-h-[105px] tw-flex tw-items-center tw-justify-center"
                 }, f.createElement(se.Z, {
                     icon: oe.LM,
@@ -499,7 +499,7 @@
                     ref: g,
                     value: E,
                     onChange: function(e) {
-                        T(e)
+                        U(e)
                     },
                     name: "additional-image__input",
                     "aria-label": "Upload additional image"
@@ -544,19 +544,19 @@
                     x = (0, f.useState)(""),
                     I = (0, l.Z)(x, 2),
                     Z = I[0],
-                    S = I[1],
-                    C = (0, f.useState)([]),
-                    O = (0, l.Z)(C, 2),
+                    C = I[1],
+                    S = (0, f.useState)([]),
+                    O = (0, l.Z)(S, 2),
                     P = O[0],
                     j = O[1],
                     A = (0, f.useState)(!1),
-                    U = (0, l.Z)(A, 2),
-                    T = U[0],
-                    L = U[1],
+                    T = (0, l.Z)(A, 2),
+                    U = T[0],
+                    L = T[1],
                     F = (0, f.useState)(!0),
                     D = (0, l.Z)(F, 2),
-                    q = D[0],
-                    R = D[1],
+                    R = D[0],
+                    q = D[1],
                     G = (0, f.useState)(null),
                     M = (0, l.Z)(G, 2),
                     z = M[0],
@@ -566,9 +566,9 @@
                     Y = V[0],
                     $ = V[1].isLoading,
                     B = (0, k.g3)(),
-                    Q = (0, l.Z)(B, 2),
-                    W = Q[0],
-                    _ = Q[1].isLoading,
+                    W = (0, l.Z)(B, 2),
+                    Q = W[0],
+                    _ = W[1].isLoading,
                     H = (0, k.e4)(),
                     J = (0, l.Z)(H, 2),
                     ee = J[0],
@@ -668,7 +668,7 @@
                                             galleryId: b
                                         }).unwrap();
                                     case 12:
-                                        S(""), e.next = 19;
+                                        C(""), e.next = 19;
                                         break;
                                     case 15:
                                         return e.prev = 15, e.t0 = e.catch(9), console.error("Failed to upload image:", e.t0), e.abrupt("return", y((0, h.d)({
@@ -696,7 +696,7 @@
                             return w().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return r = t.fileId, e.prev = 1, e.next = 4, W({
+                                        return r = t.fileId, e.prev = 1, e.next = 4, Q({
                                             fileId: r
                                         }).unwrap();
                                     case 4:
@@ -767,13 +767,13 @@
                             return fe(0, e)
                         },
                         style: {
-                            transition: T ? "transform 0.3s, opacity 0.3s" : void 0,
+                            transition: U ? "transform 0.3s, opacity 0.3s" : void 0,
                             opacity: 0 === z ? .3 : 1,
                             transform: 0 === z ? "scale(0.95)" : "scale(1)"
                         }
                     }, f.createElement("div", {
                         className: "tw-relative"
-                    }, q && f.createElement("div", {
+                    }, R && f.createElement("div", {
                         className: "tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-bg-dark-grey tw-opacity-50"
                     }, f.createElement(se.Z, {
                         icon: oe.LM,
@@ -784,13 +784,13 @@
                         src: t,
                         alt: "Avatar Cover Showcase",
                         onLoad: function() {
-                            return R(!1)
+                            return q(!1)
                         },
                         onError: function() {
-                            return R(!1)
+                            return q(!1)
                         },
                         style: {
-                            display: q ? "none" : "block"
+                            display: R ? "none" : "block"
                         }
                     })), f.createElement("span", {
                         className: "tw-absolute tw-bottom-4 tw-right-4 tw-bg-dark-grey-transparent-90 tw-px-3 tw-py-1 tw-rounded tw-cursor-pointer hover:tw-bg-dark-grey tw-transition",
@@ -838,7 +838,7 @@
                             return fe(t + 1, e)
                         },
                         style: {
-                            transition: T ? "transform 0.3s, opacity 0.3s" : void 0,
+                            transition: U ? "transform 0.3s, opacity 0.3s" : void 0,
                             opacity: z === t + 1 ? .3 : 1,
                             transform: z === t + 1 ? "scale(0.95)" : "scale(1)"
                         }
@@ -1040,11 +1040,10 @@
                     hintTextMuted: "Each file must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels."
                 })))
             };
-            var Ee = r(95002),
-                xe = r(3620),
-                ke = r(45697),
-                Ie = r.n(ke),
-                Ne = function(e) {
+            var Ee = r(3620),
+                xe = r(45697),
+                ke = r.n(xe),
+                Ie = function(e) {
                     var t = e.avatarId,
                         r = e.isOpen,
                         n = e.confirmCallback,
@@ -1101,14 +1100,14 @@
                         }
                     }, "Cancel"))))) : null
                 };
-            Ne.propTypes = {
-                avatarId: Ie().string.isRequired,
-                isOpen: Ie().bool.isRequired,
-                confirmCallback: Ie().func.isRequired,
-                cancelCallback: Ie().func.isRequired
+            Ie.propTypes = {
+                avatarId: ke().string.isRequired,
+                isOpen: ke().bool.isRequired,
+                confirmCallback: ke().func.isRequired,
+                cancelCallback: ke().func.isRequired
             };
-            const Ze = Ne;
-            var Se = ["thumbnailImageUrl"];
+            const Ne = Ie;
+            var Ze = ["thumbnailImageUrl"];
 
             function Ce(e, t) {
                 var r = Object.keys(e);
@@ -1121,7 +1120,7 @@
                 return r
             }
 
-            function Oe(e) {
+            function Se(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? Ce(Object(r), !0).forEach((function(t) {
@@ -1132,7 +1131,8 @@
                 }
                 return e
             }
-            var Pe = ["name", "description", "thumbnailImageUrl", "imageUrl", "styles", "acknowledgements"];
+            var Oe = new RegExp("^".concat(Ee.i.AUTHOR)),
+                Pe = ["name", "description", "thumbnailImageUrl", "imageUrl", "styles", "acknowledgements"];
             const je = function(e) {
                 var t, r, o, i = e.isOpen,
                     c = e.avatarId,
@@ -1151,17 +1151,17 @@
                             r = [],
                             n = [];
                         return null == g || null === (e = g.tags) || void 0 === e || e.forEach((function(e) {
-                            e.startsWith("content_") ? n.push(e) : (0, Ee.x)(e) ? t.push(e) : r.push(e)
+                            e.startsWith(Ee.i.AUTHOR) ? t.push(e) : e.startsWith(Ee.i.CONTENT_WARNING) ? r.push(e) : n.push(e)
                         })), {
-                            privateTags: t,
-                            contentTags: n,
-                            publicTags: r
+                            authorTags: t,
+                            contentTags: r,
+                            privateTags: n
                         }
                     }), [null == g ? void 0 : g.tags])),
-                    I = k.privateTags,
+                    I = k.authorTags,
                     Z = k.contentTags,
-                    S = k.publicTags,
-                    C = (o = g, Object.keys(o).filter((function(e) {
+                    C = k.privateTags,
+                    S = (o = g, Object.keys(o).filter((function(e) {
                         return Pe.includes(e)
                     })).reduce((function(e, t) {
                         return e[t] = o[t], e
@@ -1170,25 +1170,25 @@
                     P = (0, l.Z)(O, 2),
                     j = P[0],
                     A = P[1],
-                    T = (0, f.useState)({
+                    U = (0, f.useState)({
                         pass: !0,
                         message: ""
                     }),
-                    L = (0, l.Z)(T, 2),
+                    L = (0, l.Z)(U, 2),
                     F = L[0],
                     D = L[1],
-                    R = (0, f.useState)("overview"),
-                    G = (0, l.Z)(R, 2),
+                    q = (0, f.useState)("overview"),
+                    G = (0, l.Z)(q, 2),
                     M = G[0],
                     z = G[1],
-                    X = (0, f.useState)(C),
+                    X = (0, f.useState)(S),
                     K = (0, l.Z)(X, 2),
                     V = K[0],
                     Y = K[1],
                     $ = (0, f.useState)(),
                     B = (0, l.Z)($, 2),
-                    Q = B[0],
-                    W = B[1],
+                    W = B[0],
+                    Q = B[1],
                     _ = (0, f.useState)(),
                     H = (0, l.Z)(_, 2),
                     oe = H[0],
@@ -1197,26 +1197,26 @@
                     se = (0, l.Z)(ce, 2),
                     ue = se[0],
                     de = se[1],
-                    fe = (0, f.useState)(S),
+                    fe = (0, f.useState)(I),
                     pe = (0, l.Z)(fe, 2),
                     ve = pe[0],
                     ge = pe[1],
                     be = (0, f.useState)(!1),
                     he = (0, l.Z)(be, 2),
-                    ke = he[0],
-                    Ie = he[1],
-                    Ne = (0, f.useState)(!!C.acknowledgements),
-                    Ce = (0, l.Z)(Ne, 2),
+                    xe = he[0],
+                    ke = he[1],
+                    Ie = (0, f.useState)(!!S.acknowledgements),
+                    Ce = (0, l.Z)(Ie, 2),
                     je = Ce[0],
                     Ae = Ce[1],
-                    Ue = (0, f.useState)(!!C.acknowledgements),
-                    Te = (0, l.Z)(Ue, 2),
-                    Le = Te[0],
-                    Fe = Te[1],
+                    Te = (0, f.useState)(!!S.acknowledgements),
+                    Ue = (0, l.Z)(Te, 2),
+                    Le = Ue[0],
+                    Fe = Ue[1],
                     De = (0, f.useState)(!1),
-                    qe = (0, l.Z)(De, 2),
-                    Re = qe[0],
-                    Ge = qe[1],
+                    Re = (0, l.Z)(De, 2),
+                    qe = Re[0],
+                    Ge = Re[1],
                     Me = (0, f.useState)(""),
                     ze = (0, l.Z)(Me, 2),
                     Xe = ze[0],
@@ -1225,19 +1225,19 @@
                     Ye = (0, x.C0)(),
                     $e = (0, l.Z)(Ye, 2),
                     Be = $e[0],
-                    Qe = $e[1].isLoading,
-                    We = (0, x.GG)(),
-                    _e = (0, l.Z)(We, 1)[0],
+                    We = $e[1].isLoading,
+                    Qe = (0, x.GG)(),
+                    _e = (0, l.Z)(Qe, 1)[0],
                     He = (0, f.useMemo)((function() {
                         var e;
                         return Le && !je && (null == V || null === (e = V.acknowledgements) || void 0 === e ? void 0 : e.length) > 0
                     }), [Le, je, V.acknowledgements]),
                     Je = function() {
                         var e, t;
-                        W(tt(null == g || null === (e = g.styles) || void 0 === e ? void 0 : e.primary)), ie(tt(null == g || null === (t = g.styles) || void 0 === t ? void 0 : t.secondary))
+                        Q(tt(null == g || null === (e = g.styles) || void 0 === e ? void 0 : e.primary)), ie(tt(null == g || null === (t = g.styles) || void 0 === t ? void 0 : t.secondary))
                     },
                     et = function() {
-                        Y(C), Je()
+                        Y(S), Je()
                     },
                     tt = function(e) {
                         var t;
@@ -1253,12 +1253,12 @@
                             return w().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = [].concat((0, n.Z)(I), (0, n.Z)(ve), (0, n.Z)(ue)), V.thumbnailImageUrl, r = (0, J.Z)(V, Se), e.prev = 2, e.next = 5, Be({
+                                        return t = [].concat((0, n.Z)(C), (0, n.Z)(ve), (0, n.Z)(ue)), V.thumbnailImageUrl, r = (0, J.Z)(V, Ze), e.prev = 2, e.next = 5, Be({
                                             avatarId: c,
-                                            data: Oe(Oe({}, r), {}, {
+                                            data: Se(Se({}, r), {}, {
                                                 tags: t,
                                                 styles: {
-                                                    primary: Q,
+                                                    primary: W,
                                                     secondary: oe
                                                 }
                                             })
@@ -1266,7 +1266,7 @@
                                     case 5:
                                         s(), d((0, h.d)({
                                             title: "Avatar Updated",
-                                            icon: q.f8,
+                                            icon: R.f8,
                                             color: "success",
                                             timeout: 5e3
                                         })), e.next = 13;
@@ -1326,7 +1326,7 @@
                     at = (0, f.useCallback)((function(e) {
                         z(e)
                     }), []);
-                return f.createElement(U.u_, {
+                return f.createElement(T.u_, {
                     title: "Edit Avatar",
                     onClose: function() {
                         et(), A(!0), s()
@@ -1337,17 +1337,17 @@
                     overflow: "auto",
                     backgroundColor: "#181B1F",
                     className: "tw-p-5"
-                }, f.createElement(Ze, {
+                }, f.createElement(Ne, {
                     avatarId: c,
-                    isOpen: ke,
+                    isOpen: xe,
                     cancelCallback: function() {
-                        return Ie(!1)
+                        return ke(!1)
                     },
                     confirmCallback: function() {
                         return nt(g.id)
                     }
-                }), f.createElement(U.u_, {
-                    isVisible: Re,
+                }), f.createElement(T.u_, {
+                    isVisible: qe,
                     className: "tw-pt-0",
                     onClose: function() {
                         return Ge(!1)
@@ -1369,7 +1369,7 @@
                                         a = n.fileId,
                                         l = n.fileVersion,
                                         o = "".concat("https://api.vrchat.cloud", "/api/1/image/").concat(a, "/").concat(l, "/256");
-                                    Y(Oe(Oe({}, V), {}, {
+                                    Y(Se(Se({}, V), {}, {
                                         thumbnailImageUrl: o,
                                         imageUrl: r
                                     })), Ge(!1)
@@ -1416,13 +1416,13 @@
                     className: "tw-mb-3"
                 }, f.createElement("label", {
                     className: "tw-mb-2"
-                }, "Avatar Name"), f.createElement(U.II, {
+                }, "Avatar Name"), f.createElement(T.II, {
                     className: "tw-mb-0",
                     type: "text",
                     placeholder: "Enter avatar name",
                     value: V.name,
                     onChange: function(e) {
-                        return Y(Oe(Oe({}, V), {}, {
+                        return Y(Se(Se({}, V), {}, {
                             name: e.target.value
                         }))
                     },
@@ -1434,14 +1434,14 @@
                     className: "tw-mb-0"
                 }, f.createElement("label", {
                     className: "tw-mb-2"
-                }, "Avatar Description"), f.createElement(U.gx, {
+                }, "Avatar Description"), f.createElement(T.gx, {
                     styleOverride: {
                         height: "120px"
                     },
                     placeholder: "Enter avatar description",
                     value: V.description,
                     onChange: function(e) {
-                        return Y(Oe(Oe({}, V), {}, {
+                        return Y(Se(Se({}, V), {}, {
                             description: e.target.value
                         }))
                     },
@@ -1461,16 +1461,16 @@
                     className: "tw-text-sm tw-text-placeholder-text"
                 }, "(optional)")), f.createElement("select", {
                     className: "tw-w-full tw-rounded tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-border-r-8 tw-border-transparent",
-                    value: Q,
+                    value: W,
                     onChange: function(e) {
-                        return W(e.target.value)
+                        return Q(e.target.value)
                     }
                 }, f.createElement("option", null, "Not Specified"), E.map((function(e) {
                     return f.createElement("option", {
                         key: null == e ? void 0 : e.id,
                         value: null == e ? void 0 : e.id
                     }, null == e ? void 0 : e.styleName)
-                })))), Q && f.createElement("div", {
+                })))), W && f.createElement("div", {
                     className: "tw-mb-5"
                 }, f.createElement("label", {
                     className: "tw-mb-2"
@@ -1497,16 +1497,17 @@
                     className: "tw-text-sm tw-text-placeholder-text tw-mb-2"
                 }, "Tags help users discover your avatar more easily. You can add up to 10 custom tags for your avatar.")), f.createElement("div", {
                     className: "tw-flex tw-flex-row"
-                }, f.createElement(U.II, {
+                }, f.createElement(T.II, {
                     className: "tw-mb-0 tw-flex-grow",
                     type: "text",
                     placeholder: "Enter avatar tag",
                     onKeyUp: function(e) {
                         if ("Enter" === e.key) {
-                            if (ve.find((function(t) {
-                                    return t === e.target.value
+                            var t = "".concat(Ee.i.AUTHOR).concat(e.target.value);
+                            if (ve.find((function(e) {
+                                    return e === t
                                 })) || 0 === Xe.trim().length) return;
-                            ge([].concat((0, n.Z)(ve), [e.target.value])), Ke("")
+                            ge([].concat((0, n.Z)(ve), [t])), Ke("")
                         }
                     },
                     value: Xe,
@@ -1516,16 +1517,18 @@
                     },
                     maxLength: 64,
                     minLength: 1,
-                    disabled: S.length >= 10
-                }), f.createElement(U.zx, {
+                    disabled: I.length >= 10
+                }), f.createElement(T.zx, {
                     className: "tw-ml-2 tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-w-10 disabled:tw-cursor-not-allowed disabled:tw-opacity-50",
                     onClick: function() {
-                        Ve.current.focus(), ve.find((function(e) {
-                            return e === Ve.current.value
-                        })) || (ge([].concat((0, n.Z)(ve), [Ve.current.value])), Ke(""))
+                        Ve.current.focus();
+                        var e = "".concat(Ee.i.AUTHOR).concat(Ve.current.value);
+                        ve.find((function(t) {
+                            return t === e
+                        })) || (ge([].concat((0, n.Z)(ve), [e])), Ke(""))
                     },
-                    disabled: S.length >= 10 || 0 === Xe.trim().length
-                }, f.createElement(U.$1, {
+                    disabled: I.length >= 10 || 0 === Xe.trim().length
+                }, f.createElement(T.$1, {
                     icon: ae.r8
                 }))), f.createElement("div", {
                     className: "tw-flex tw-gap-2 tw-mb-2 tw-flex-wrap"
@@ -1533,7 +1536,7 @@
                     return f.createElement("div", {
                         key: e,
                         className: "tw-flex tw-flex-row tw-items-center tw-justify-between tw-flex-wrap tw-mt-2 tw-min-w-[115px] tw-w-fit tw-bg-[#0A0A0D] tw-rounded-md tw-py-2 tw-px-3"
-                    }, f.createElement("span", null, e), f.createElement(U.$1, {
+                    }, f.createElement("span", null, e.replace(Oe, "")), f.createElement(T.$1, {
                         icon: ne.NB,
                         className: "tw-ml-2 tw-cursor-pointer",
                         onClick: function() {
@@ -1554,9 +1557,9 @@
                     onKeyUp: function(e) {
                         return "Enter" === e.key && Fe(!Le)
                     }
-                }, "please acknowledge them here ", f.createElement(U.$1, {
+                }, "please acknowledge them here ", f.createElement(T.$1, {
                     icon: Le ? re.mT : te.pt
-                }))), f.createElement(U.gx, {
+                }))), f.createElement(T.gx, {
                     className: "tw-".concat(Le ? "block" : "hidden", " tw-mb-2"),
                     styleOverride: {
                         height: "120px"
@@ -1564,7 +1567,7 @@
                     placeholder: "Acknowledgements",
                     value: null == V ? void 0 : V.acknowledgements,
                     onChange: function(e) {
-                        Y(Oe(Oe({}, V), {}, {
+                        Y(Se(Se({}, V), {}, {
                             acknowledgements: e.target.value
                         })), Ae(!1)
                     },
@@ -1592,7 +1595,7 @@
                     className: "tw-text-xl tw-font-bold tw-mb-3"
                 }, "Content Warnings"), f.createElement("div", {
                     className: "tw-grid tw-grid-cols-2 tw-gap-2 tw-mt-2"
-                }, Object.entries(xe.N).map((function(e) {
+                }, Object.entries(Ee.N).map((function(e) {
                     var t = (0, l.Z)(e, 2),
                         r = t[0],
                         a = t[1];
@@ -1618,13 +1621,13 @@
                     className: "tw-mb-0"
                 }, "Showcase your avatar with up to 6 images."), f.createElement("p", null, "Recommended resolution: 1920x1080px. Maximum file size: 1MB."), j && f.createElement("p", {
                     className: "tw-rounded-lg tw-bg-[#000] tw-px-5 tw-py-4 tw-flex tw-justify-between tw-items-center"
-                }, "You can drag images to reorder them", f.createElement(U.$1, {
+                }, "You can drag images to reorder them", f.createElement(T.$1, {
                     icon: ee.faXmark,
                     className: "tw-ml-2 tw-cursor-pointer",
                     onClick: function() {
                         return A(!1)
                     }
-                })), !1 === F.pass && f.createElement(U.qX, {
+                })), !1 === F.pass && f.createElement(T.qX, {
                     type: "error",
                     title: "Failed to upload image",
                     message: null == F ? void 0 : F.message
@@ -1637,20 +1640,20 @@
                     className: "tw-flex tw-justify-between tw-mt-5"
                 }, f.createElement("div", {
                     className: "tw-flex"
-                }, f.createElement(U.zx, {
+                }, f.createElement(T.zx, {
                     className: "tw-mr-2 tw-px-4",
                     onClick: function() {
                         et(), s()
                     },
                     neutral: !0
-                }, "Cancel"), f.createElement(U.zx, {
+                }, "Cancel"), f.createElement(T.zx, {
                     className: "tw-mr-2 tw-bg-red-600 tw-text-white tw-px-4",
                     onClick: function() {
-                        return Ie(!0)
+                        return ke(!0)
                     },
                     neutral: !0
-                }, "Delete Avatar")), f.createElement(U.zx, {
-                    loading: Qe,
+                }, "Delete Avatar")), f.createElement(T.zx, {
+                    loading: We,
                     className: "tw-bg-button-bg tw-px-4",
                     onClick: function() {
                         return rt()
@@ -1663,11 +1666,11 @@
                     productReviewSumbit: "Sell Your Avatar (2/2)",
                     productReviewSubmitted: null
                 },
-                Ue = {
+                Te = {
                     name: "118eoxb",
                     styles: "width:100%;@media (min-width: 576px){width:calc(50% - 0.5rem);}"
                 },
-                Te = (0, o.Z)(U.JX, {
+                Ue = (0, o.Z)(T.JX, {
                     target: "e1blkums0"
                 })({
                     name: "o33n1w",
@@ -1683,13 +1686,13 @@
                         return e.productFlow
                     })).currentStep,
                     Z = f.useState(!1),
-                    S = (0, l.Z)(Z, 2),
-                    C = S[0],
-                    D = S[1],
-                    q = f.useState(null),
-                    R = (0, l.Z)(q, 2),
-                    G = R[0],
-                    M = R[1],
+                    C = (0, l.Z)(Z, 2),
+                    S = C[0],
+                    D = C[1],
+                    R = f.useState(null),
+                    q = (0, l.Z)(R, 2),
+                    G = q[0],
+                    M = q[1],
                     z = f.useState(!1),
                     X = (0, l.Z)(z, 2),
                     K = X[0],
@@ -1697,15 +1700,15 @@
                     Y = f.useState(!1),
                     $ = (0, l.Z)(Y, 2),
                     B = $[0],
-                    Q = $[1],
-                    W = (0, x.LQ)({
+                    W = $[1],
+                    Q = (0, x.LQ)({
                         avatarId: o
                     }),
-                    _ = W.data,
-                    J = W.isFetching,
-                    ee = W.isError,
-                    te = W.error,
-                    re = W.refetch,
+                    _ = Q.data,
+                    J = Q.isFetching,
+                    ee = Q.isError,
+                    te = Q.error,
+                    re = Q.refetch,
                     ne = (0, j.GR)(null == _ ? void 0 : _.authorId, {
                         skip: !o || !_ || !(null != _ && _.authorId)
                     }),
@@ -1747,17 +1750,17 @@
                     Ie = ke[0],
                     Ne = ke[1],
                     Ze = Ne.isError,
-                    Se = Ne.error,
-                    Ce = (0, x.cq)(),
-                    Oe = (0, l.Z)(Ce, 2),
+                    Ce = Ne.error,
+                    Se = (0, x.cq)(),
+                    Oe = (0, l.Z)(Se, 2),
                     Pe = Oe[0],
                     Le = Oe[1],
                     Fe = Le.isError,
                     De = Le.error,
-                    qe = (0, x.Cm)(),
-                    Re = (0, l.Z)(qe, 2),
-                    Ge = Re[0],
-                    Me = Re[1],
+                    Re = (0, x.Cm)(),
+                    qe = (0, l.Z)(Re, 2),
+                    Ge = qe[0],
+                    Me = qe[1],
                     ze = Me.isError,
                     Xe = Me.error,
                     Ke = Me.isSuccess,
@@ -1765,8 +1768,8 @@
                     Ye = (0, l.Z)(Ve, 2),
                     $e = Ye[0],
                     Be = Ye[1],
-                    Qe = Be.isError,
-                    We = Be.error,
+                    We = Be.isError,
+                    Qe = Be.error,
                     _e = Be.isSuccess,
                     He = (0, x.x8)(),
                     Je = (0, l.Z)(He, 2),
@@ -1787,8 +1790,8 @@
                     ft = (0, y.Nr)(G, 1400),
                     pt = (0, y.Tb)(vt, 300),
                     vt = J || le,
-                    gt = ee || oe || pe || Ze || Fe || Qe || nt || dt || ze,
-                    bt = te || ie || ve || Se || De || We || at || mt || Xe;
+                    gt = ee || oe || pe || Ze || Fe || We || nt || dt || ze,
+                    bt = te || ie || ve || Ce || De || Qe || at || mt || Xe;
                 f.useEffect((function() {
                     null != _ && _.id && M(_.tags)
                 }), [_]), f.useEffect((function() {
@@ -1891,22 +1894,22 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                if (ee) return f.createElement(g.Z, null, f.createElement(U.$4, null, "Avatar"), f.createElement(U.qX, {
+                if (ee) return f.createElement(g.Z, null, f.createElement(T.$4, null, "Avatar"), f.createElement(T.qX, {
                     type: "error",
                     title: "Error",
                     className: "tw-my-2"
                 }, (null == te || null === (ht = te.data) || void 0 === ht ? void 0 : ht.error.message) || "There was an error loading the avatar."));
-                if (!_ || pt || vt) return f.createElement(g.Z, null, f.createElement(U.$4, null, "Avatar"), f.createElement(L.Z, {
+                if (!_ || pt || vt) return f.createElement(g.Z, null, f.createElement(T.$4, null, "Avatar"), f.createElement(L.Z, {
                     loading: !0
                 }));
                 var kt, It = "";
-                gt && (It = f.createElement(U.X2, null, f.createElement(b.Z, {
+                gt && (It = f.createElement(T.X2, null, f.createElement(b.Z, {
                     color: "warning"
                 }, null == bt || null === (kt = bt.data) || void 0 === kt ? void 0 : kt.error.message)));
                 var Nt = function() {
-                    Q(!1), t((0, A.bi)())
+                    W(!1), t((0, A.bi)())
                 };
-                return f.createElement(g.Z, null, f.createElement(U.$4, null, null !== (e = _.name) && void 0 !== e ? e : "Avatar"), It, me && f.createElement(je, {
+                return f.createElement(g.Z, null, f.createElement(T.$4, null, null !== (e = _.name) && void 0 !== e ? e : "Avatar"), It, me && f.createElement(je, {
                     isOpen: K,
                     onCloseCallback: function() {
                         return V(!1)
@@ -1924,13 +1927,13 @@
                     },
                     onChangeFallback: xt,
                     onAvatarChange: Et
-                }), (de || I) && f.createElement(U.X2, {
+                }), (de || I) && f.createElement(T.X2, {
                     className: "tw-mb-3"
-                }, f.createElement(Te, null, f.createElement(U.oI, null, f.createElement("h4", {
+                }, f.createElement(Ue, null, f.createElement(T.oI, null, f.createElement("h4", {
                     className: "tw-font-normal tw-mb-0"
-                }, "Content Warnings")), f.createElement(U.Ao, null, f.createElement(U.X2, {
+                }, "Content Warnings")), f.createElement(T.Ao, null, f.createElement(T.X2, {
                     className: "tw-w-full tw-flex-wrap tw-py-2 tw-gap-3"
-                }, f.createElement(U.ks, {
+                }, f.createElement(T.ks, {
                     tags: G,
                     isMod: I,
                     onSelectValues: function(e) {
@@ -1945,26 +1948,26 @@
                             }))
                         }))
                     },
-                    styleOverrides: Ue
-                }))))), (de || I) && f.createElement(U.X2, {
+                    styleOverrides: Te
+                }))))), (de || I) && f.createElement(T.X2, {
                     className: "tw-mb-3"
-                }, f.createElement("div", null, f.createElement(U.oI, null, f.createElement("h4", {
+                }, f.createElement("div", null, f.createElement(T.oI, null, f.createElement("h4", {
                     className: "tw-font-normal tw-mb-0"
-                }, "Impostors")), f.createElement(U.Ao, {
+                }, "Impostors")), f.createElement(T.Ao, {
                     className: "tw-block"
-                }, f.createElement(U.X2, {
+                }, f.createElement(T.X2, {
                     className: "tw-mb-2"
                 }, f.createElement(H, {
                     avatar: _,
                     refetch: re
-                }))))), (me || I) && f.createElement(U.X2, {
+                }))))), (me || I) && f.createElement(T.X2, {
                     className: "tw-mb-3"
-                }, f.createElement(U.l8, {
+                }, f.createElement(T.l8, {
                     className: "tw-w-full"
-                }, f.createElement(U.oI, null, f.createElement("h4", {
+                }, f.createElement(T.oI, null, f.createElement("h4", {
                     className: "tw-font-normal tw-mb-0"
-                }, "Danger Zone")), f.createElement(U.Ao, null, f.createElement(U.JX, null, f.createElement(T.Z, {
-                    isOpen: C,
+                }, "Danger Zone")), f.createElement(T.Ao, null, f.createElement(T.JX, null, f.createElement(U.Z, {
+                    isOpen: S,
                     bodyText: "Are you sure you want to DELETE this avatar? This can not be undone!",
                     confirmCallback: function() {
                         $e({
@@ -1974,9 +1977,9 @@
                     cancelCallback: function() {
                         return D(!1)
                     }
-                }), f.createElement(U.X2, null, f.createElement("div", {
+                }), f.createElement(T.X2, null, f.createElement("div", {
                     className: "tw-w-full"
-                }, me && !se && !ue && f.createElement(U.zx, {
+                }, me && !se && !ue && f.createElement(T.zx, {
                     className: "tw-mb-2",
                     onClick: function() {
                         Ie({
@@ -1986,9 +1989,9 @@
                     warning: !0,
                     expand: !0,
                     disabled: ye || Ee || (null == _ ? void 0 : _.activeAssetReviewId) || (null == _ ? void 0 : _.productId)
-                }, f.createElement(U.$1, {
+                }, f.createElement(T.$1, {
                     icon: s.nG
-                }), " Make Avatar Public"), me && !ce && !ue && f.createElement(U.zx, {
+                }), " Make Avatar Public"), me && !ce && !ue && f.createElement(T.zx, {
                     className: "tw-mb-2",
                     onClick: function() {
                         Pe({
@@ -1997,18 +2000,18 @@
                     },
                     warning: !0,
                     expand: !0
-                }, f.createElement(U.$1, {
+                }, f.createElement(T.$1, {
                     icon: c.by
-                }), " Make Avatar Private"), (I || de) && !ue && f.createElement(U.zx, {
+                }), " Make Avatar Private"), (I || de) && !ue && f.createElement(T.zx, {
                     className: "tw-mt-1",
                     onClick: function() {
                         D(!0)
                     },
                     danger: !0,
                     expand: !0
-                }, f.createElement(U.$1, {
+                }, f.createElement(T.$1, {
                     icon: i.$
-                }), " Delete Avatar"))))))), !1, !1, f.createElement(U.u_, {
+                }), " Delete Avatar"))))))), !1, !1, f.createElement(T.u_, {
                     title: Ae[N] || null,
                     isVisible: B,
                     onClose: Nt,
@@ -2403,11 +2406,11 @@
                             }),
                             createProduct: e.mutation({
                                 queryFn: (r = (0, n.Z)(i().mark((function e(t, r, a, l) {
-                                    var o, c, s, d, m, w, f, p, v, g, b, h, y, E, x, k, I, N, Z, S, C, O, P, j, A;
+                                    var o, c, s, d, m, w, f, p, v, g, b, h, y, E, x, k, I, N, Z, C, S, O, P, j, A;
                                     return i().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (c = t.avatarId, s = t.description, d = void 0 === s ? "" : s, m = t.displayName, w = t.duration, f = t.durationType, p = t.file, v = void 0 === p ? null : p, g = t.generateListing, b = t.imageId, h = void 0 === b ? null : b, y = t.instant, E = t.permanent, x = t.priceTokens, k = t.productType, I = t.tag, N = void 0 === I ? "product" : I, Z = t.tags, S = void 0 === Z ? [] : Z, C = t.useForSubscriberList, O = void 0 !== C && C, null === v) {
+                                                if (c = t.avatarId, s = t.description, d = void 0 === s ? "" : s, m = t.displayName, w = t.duration, f = t.durationType, p = t.file, v = void 0 === p ? null : p, g = t.generateListing, b = t.imageId, h = void 0 === b ? null : b, y = t.instant, E = t.permanent, x = t.priceTokens, k = t.productType, I = t.tag, N = void 0 === I ? "product" : I, Z = t.tags, C = void 0 === Z ? [] : Z, S = t.useForSubscriberList, O = void 0 !== S && S, null === v) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -2464,7 +2467,7 @@
                                                         permanent: E,
                                                         priceTokens: x,
                                                         productType: k,
-                                                        tags: S,
+                                                        tags: C,
                                                         useForSubscriberList: O
                                                     }, c && {
                                                         avatarId: c
@@ -2638,4 +2641,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7eb72e87d76757c9796e0aa5d36ae20c47f5966f8def10e83212ff441166df19.js.map
+//# sourceMappingURL=9186ea88da768d2fea0054c859b899c04ff7fe8122593b1d5c41703ea926025e.js.map
