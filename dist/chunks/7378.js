@@ -89,9 +89,9 @@
                     xe = d.useState(""),
                     Se = (0, n.Z)(xe, 2),
                     Ie = Se[0],
-                    Te = Se[1],
-                    ke = d.useState(!1),
-                    qe = (0, n.Z)(ke, 2),
+                    ke = Se[1],
+                    Te = d.useState(!1),
+                    qe = (0, n.Z)(Te, 2),
                     je = qe[0],
                     De = qe[1],
                     Ce = d.useMemo((function() {
@@ -205,7 +205,7 @@
                                             description: Ie
                                         }).unwrap();
                                     case 11:
-                                        e.sent.error || (be(null), we(!1), Te("")), e.next = 16;
+                                        e.sent.error || (be(null), we(!1), ke("")), e.next = 16;
                                         break;
                                     case 15:
                                         M((0, p.d)({
@@ -224,7 +224,7 @@
                                             description: Ie
                                         }).unwrap();
                                     case 19:
-                                        e.sent.error || (be(null), we(!1), Te(""));
+                                        e.sent.error || (be(null), we(!1), ke(""));
                                     case 21:
                                     case "end":
                                         return e.stop()
@@ -369,7 +369,7 @@
                     value: Ie,
                     onChange: function(e) {
                         var t = e.target.value;
-                        return Te(t)
+                        return ke(t)
                     },
                     placeholder: "Tell us more about this ".concat(ae, ". What makes it a good fit for the jam?"),
                     "aria-label": "Description",
@@ -385,7 +385,7 @@
                     onBlur: function() {
                         return De(!1)
                     }
-                }), d.createElement(k, {
+                }), d.createElement(T, {
                     focused: je,
                     textColor: Ce
                 }, null !== (E = null == Ie ? void 0 : Ie.length) && void 0 !== E ? E : 0, " / 1500")), (null == Ie ? void 0 : Ie.length) < 100 && d.createElement(h.qX, {
@@ -454,7 +454,7 @@
                 }), d.createElement(h.rj, {
                     className: "mb-4"
                 }, null == _e ? void 0 : _e.map((function(e) {
-                    return d.createElement(T, {
+                    return d.createElement(k, {
                         key: e.id,
                         onClick: (t = e.id, function() {
                             var e;
@@ -500,10 +500,10 @@
                     name: "17lbmje",
                     styles: "pointer-events:none;margin-bottom:0"
                 }),
-                T = (0, o.Z)("div", {
+                k = (0, o.Z)("div", {
                     target: "eyi9ar43"
                 })("cursor:pointer;&:hover{", I, "{", h.oI, "{border-color:#054d5e!important;}", h.Ao, "{border-color:#054d5e!important;}}}"),
-                k = (0, o.Z)("div", {
+                T = (0, o.Z)("div", {
                     target: "eyi9ar42"
                 })("position:absolute;bottom:0.75rem;right:1.5rem;font-size:0.75rem;color:", (function(e) {
                     return e.textColor
@@ -527,9 +527,9 @@
         },
         21538: (e, t, a) => {
             a.d(t, {
-                C0: () => k,
+                C0: () => T,
                 CO: () => b,
-                Cm: () => T,
+                Cm: () => k,
                 EA: () => y,
                 F6: () => g,
                 GG: () => p,
@@ -650,10 +650,12 @@
                                     return {
                                         url: "/avatars/".concat(t),
                                         method: "PUT",
-                                        body: m(m(m({}, a), null !== a.styles.primary ? {
+                                        body: m(m(m(m({}, a), null !== a.styles.primary ? {
                                             primaryStyle: a.styles.primary
                                         } : {}), null !== a.styles.secondary ? {
                                             secondaryStyle: a.styles.secondary
+                                        } : {}), null !== a.acknowledgements ? {
+                                            acknowledgements: a.acknowledgements
                                         } : {})
                                     }
                                 },
@@ -835,22 +837,22 @@
                             }),
                             getAllAvatars: e.query({
                                 queryFn: (a = (0, r.Z)(l().mark((function e(t, a, r, o) {
-                                    var i, s, u, c, d, m, v, p, f, y, g, b, h, A, E, w, x, S, I, T, k, q, j, D, C, L, M;
+                                    var i, s, u, c, d, m, v, p, f, y, g, b, h, A, E, w, x, S, I, k, T, q, j, D, C, L, M;
                                     return l().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                i = t.sort, s = void 0 === i ? "updated" : i, u = t.order, c = void 0 === u ? "descending" : u, d = t.releaseStatus, m = void 0 === d ? "all" : d, v = t.user, p = void 0 === v ? "me" : v, f = t.organization, y = void 0 === f ? "vrchat" : f, g = t.n, b = void 0 === g ? 20 : g, h = t.featured, A = t.userId, E = t.search, w = t.tag, x = t.notag, S = t.platform, I = t.maxUnityVersion, T = t.minUnityVersion, k = t.exactUnityVersion, q = t.minAssetVersion, j = t.maxAssetVersion, D = t.exactAssetVersion, C = [], L = 0;
+                                                i = t.sort, s = void 0 === i ? "updated" : i, u = t.order, c = void 0 === u ? "descending" : u, d = t.releaseStatus, m = void 0 === d ? "all" : d, v = t.user, p = void 0 === v ? "me" : v, f = t.organization, y = void 0 === f ? "vrchat" : f, g = t.n, b = void 0 === g ? 20 : g, h = t.featured, A = t.userId, E = t.search, w = t.tag, x = t.notag, S = t.platform, I = t.maxUnityVersion, k = t.minUnityVersion, T = t.exactUnityVersion, q = t.minAssetVersion, j = t.maxAssetVersion, D = t.exactAssetVersion, C = [], L = 0;
                                             case 3:
                                                 return e.next = 6, o({
                                                     url: "avatars",
                                                     params: {
                                                         exactAssetVersion: D,
-                                                        exactUnityVersion: k,
+                                                        exactUnityVersion: T,
                                                         featured: h,
                                                         maxAssetVersion: j,
                                                         maxUnityVersion: I,
                                                         minAssetVersion: q,
-                                                        minUnityVersion: T,
+                                                        minUnityVersion: k,
                                                         n: b,
                                                         notag: x,
                                                         offset: L,
@@ -1011,9 +1013,9 @@
                 x = v.useSelectFallbackAvatarMutation,
                 S = v.useSetAvatarPrivateMutation,
                 I = v.useSetAvatarPublicMutation,
-                T = v.useSetAvatarTagsMutation,
-                k = v.useUpdateAvatarMutation
+                k = v.useSetAvatarTagsMutation,
+                T = v.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=08ab0b12a35cf550c004c8f7fb82faadfbb358af904370a796fb593f78737f32.js.map
+//# sourceMappingURL=ad4c2dbd0e5b4ba7fbb1ed203a024691b7c8f7b114551350376a48c1134858dc.js.map

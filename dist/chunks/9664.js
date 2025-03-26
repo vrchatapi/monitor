@@ -8,8 +8,8 @@
             var a = r(15861),
                 n = r(4942),
                 u = r(54546),
-                i = r(76553),
-                o = r(6811),
+                o = r(76553),
+                i = r(6811),
                 s = r(64687),
                 c = r.n(s),
                 l = r(67294),
@@ -42,7 +42,7 @@
                 }
                 return t
             }
-            var h = r(61509).S.injectEndpoints({
+            var w = r(61509).S.injectEndpoints({
                     endpoints: function(t) {
                         return {
                             getAssetReviewsList: t.query({
@@ -104,8 +104,8 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["AssetReviewsAvatar", "AssetReviewsList"]
                 }),
-                A = (h.useGetAssetReviewsListQuery, h.useSubmitAvatarForAssetReviewMutation),
-                w = (h.useGetAssetReviewByIdQuery, r(22202)),
+                h = (w.useGetAssetReviewsListQuery, w.useSubmitAvatarForAssetReviewMutation),
+                A = (w.useGetAssetReviewByIdQuery, r(22202)),
                 O = r(67978),
                 S = r(43683),
                 T = r(67263),
@@ -171,10 +171,10 @@
                 q = (0, l.lazy)((function() {
                     return Promise.all([r.e(3261), r.e(2621)]).then(r.bind(r, 72621))
                 })),
-                D = (0, l.lazy)((function() {
+                k = (0, l.lazy)((function() {
                     return r.e(2172).then(r.bind(r, 42172))
                 })),
-                k = (0, l.lazy)((function() {
+                D = (0, l.lazy)((function() {
                     return r.e(1899).then(r.bind(r, 71899))
                 })),
                 C = (0, l.lazy)((function() {
@@ -196,21 +196,21 @@
                     })),
                     g = m.currentStep,
                     b = m.productType,
-                    h = m.currentProduct,
-                    T = (0, l.useState)(h || {}),
+                    w = m.currentProduct,
+                    T = (0, l.useState)(w || {}),
                     I = (0, u.Z)(T, 2),
                     x = I[0],
                     R = I[1];
                 (0, l.useEffect)((function() {
                     g || n((0, S.Bq)("productType"))
                 }), []);
-                var F = (0, w.q7)({
+                var F = (0, A.q7)({
                         skip: !s
                     }),
                     U = F.data,
                     V = F.isLoading,
                     Z = F.isSuccess,
-                    M = A(),
+                    M = h(),
                     N = (0, u.Z)(M, 2),
                     Q = N[0],
                     G = N[1],
@@ -248,7 +248,7 @@
                                         return r = e.productData, a = void 0 === r ? {} : r, u = e.image, s = void 0 === u ? void 0 : u, l = function() {
                                             n((0, d.d)({
                                                 title: "Product created successfully!",
-                                                icon: o.f8,
+                                                icon: i.f8,
                                                 message: "Your product has been created successfully!",
                                                 color: "success",
                                                 timeout: 3e3
@@ -262,7 +262,7 @@
                                     case 10:
                                         t.prev = 10, t.t0 = t.catch(2), console.log("error", null === t.t0 || void 0 === t.t0 || null === (p = t.t0.data) || void 0 === p || null === (p = p.error) || void 0 === p ? void 0 : p.message), n((0, d.d)({
                                             title: "Failed to create product!",
-                                            icon: i.eH,
+                                            icon: o.eH,
                                             message: null !== (f = null === t.t0 || void 0 === t.t0 || null === (y = t.t0.data) || void 0 === y || null === (y = y.error) || void 0 === y ? void 0 : y.message) && void 0 !== f ? f : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
@@ -306,7 +306,7 @@
                                     case 10:
                                         t.prev = 10, t.t0 = t.catch(4), n((0, d.d)({
                                             title: "Error",
-                                            icon: i.eH,
+                                            icon: o.eH,
                                             message: (null == z || null === (e = z.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) || "An error occurred while submitting your avatar for review.",
                                             color: "danger",
                                             timeout: 3e3
@@ -339,7 +339,7 @@
                                 hasAvatarSellerPermission: J
                             });
                         case "productDetails":
-                            return "avatar" === b ? l.createElement(D, {
+                            return "avatar" === b ? l.createElement(k, {
                                 disabled: !0,
                                 type: b,
                                 onDataChange: $,
@@ -359,7 +359,7 @@
                                 onClose: et
                             });
                         case "productReviewSumbit":
-                            return l.createElement(k, {
+                            return l.createElement(D, {
                                 onPrevious: H,
                                 avatar: x,
                                 onSubmit: tt
@@ -386,20 +386,20 @@
                 EA: () => m,
                 F6: () => g,
                 GG: () => f,
-                LQ: () => A,
+                LQ: () => h,
                 X8: () => y,
                 ak: () => I,
                 cq: () => T,
                 eP: () => S,
-                lx: () => h,
-                ve: () => w,
+                lx: () => w,
+                ve: () => A,
                 x8: () => O
             });
             var a = r(15861),
                 n = r(42138),
                 u = r(4942),
-                i = r(64687),
-                o = r.n(i),
+                o = r(64687),
+                i = r.n(o),
                 s = r(61509);
 
             function c(t, e) {
@@ -434,24 +434,24 @@
                     }
                     throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }
-                var u, i = !0,
-                    o = !1;
+                var u, o = !0,
+                    i = !1;
                 return {
                     s: function() {
                         r = r.call(t)
                     },
                     n: function() {
                         var t = r.next();
-                        return i = t.done, t
+                        return o = t.done, t
                     },
                     e: function(t) {
-                        o = !0, u = t
+                        i = !0, u = t
                     },
                     f: function() {
                         try {
-                            i || null == r.return || r.return()
+                            o || null == r.return || r.return()
                         } finally {
-                            if (o) throw u
+                            if (i) throw u
                         }
                     }
                 }
@@ -503,10 +503,12 @@
                                     return {
                                         url: "/avatars/".concat(e),
                                         method: "PUT",
-                                        body: d(d(d({}, r), null !== r.styles.primary ? {
+                                        body: d(d(d(d({}, r), null !== r.styles.primary ? {
                                             primaryStyle: r.styles.primary
                                         } : {}), null !== r.styles.secondary ? {
                                             secondaryStyle: r.styles.secondary
+                                        } : {}), null !== r.acknowledgements ? {
+                                            acknowledgements: r.acknowledgements
                                         } : {})
                                     }
                                 },
@@ -687,35 +689,35 @@
                                 }
                             }),
                             getAllAvatars: t.query({
-                                queryFn: (r = (0, a.Z)(o().mark((function t(e, r, a, u) {
-                                    var i, s, c, l, v, d, p, f, y, m, g, b, h, A, w, O, S, T, I, P, x, E, j, q, D, k, C;
-                                    return o().wrap((function(t) {
+                                queryFn: (r = (0, a.Z)(i().mark((function t(e, r, a, u) {
+                                    var o, s, c, l, v, d, p, f, y, m, g, b, w, h, A, O, S, T, I, P, x, E, j, q, k, D, C;
+                                    return i().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                i = e.sort, s = void 0 === i ? "updated" : i, c = e.order, l = void 0 === c ? "descending" : c, v = e.releaseStatus, d = void 0 === v ? "all" : v, p = e.user, f = void 0 === p ? "me" : p, y = e.organization, m = void 0 === y ? "vrchat" : y, g = e.n, b = void 0 === g ? 20 : g, h = e.featured, A = e.userId, w = e.search, O = e.tag, S = e.notag, T = e.platform, I = e.maxUnityVersion, P = e.minUnityVersion, x = e.exactUnityVersion, E = e.minAssetVersion, j = e.maxAssetVersion, q = e.exactAssetVersion, D = [], k = 0;
+                                                o = e.sort, s = void 0 === o ? "updated" : o, c = e.order, l = void 0 === c ? "descending" : c, v = e.releaseStatus, d = void 0 === v ? "all" : v, p = e.user, f = void 0 === p ? "me" : p, y = e.organization, m = void 0 === y ? "vrchat" : y, g = e.n, b = void 0 === g ? 20 : g, w = e.featured, h = e.userId, A = e.search, O = e.tag, S = e.notag, T = e.platform, I = e.maxUnityVersion, P = e.minUnityVersion, x = e.exactUnityVersion, E = e.minAssetVersion, j = e.maxAssetVersion, q = e.exactAssetVersion, k = [], D = 0;
                                             case 3:
                                                 return t.next = 6, u({
                                                     url: "avatars",
                                                     params: {
                                                         exactAssetVersion: q,
                                                         exactUnityVersion: x,
-                                                        featured: h,
+                                                        featured: w,
                                                         maxAssetVersion: j,
                                                         maxUnityVersion: I,
                                                         minAssetVersion: E,
                                                         minUnityVersion: P,
                                                         n: b,
                                                         notag: S,
-                                                        offset: k,
+                                                        offset: D,
                                                         order: l,
                                                         organization: m,
                                                         platform: T,
                                                         releaseStatus: d,
-                                                        search: w,
+                                                        search: A,
                                                         sort: s,
                                                         tag: O,
                                                         user: f,
-                                                        userId: A
+                                                        userId: h
                                                     }
                                                 });
                                             case 6:
@@ -731,12 +733,12 @@
                                                     t.next = 13;
                                                     break
                                                 }
-                                                return D.push.apply(D, (0, n.Z)(C.data)), k += b, t.abrupt("continue", 3);
+                                                return k.push.apply(k, (0, n.Z)(C.data)), D += b, t.abrupt("continue", 3);
                                             case 13:
                                                 return t.abrupt("break", 16);
                                             case 16:
                                                 return t.abrupt("return", {
-                                                    data: D
+                                                    data: k
                                                 });
                                             case 17:
                                             case "end":
@@ -774,12 +776,12 @@
                                 }
                             }),
                             getAllFavoriteAvatars: t.query({
-                                queryFn: (e = (0, a.Z)(o().mark((function t() {
-                                    var e, r, a, u, i, s, l, v, d, p, f, y, m, g = arguments;
-                                    return o().wrap((function(t) {
+                                queryFn: (e = (0, a.Z)(i().mark((function t() {
+                                    var e, r, a, u, o, s, l, v, d, p, f, y, m, g = arguments;
+                                    return i().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                r = (e = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, a = e.tags, u = e.userId, i = e.groups, s = void 0 === i ? [] : i, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : s), t.prev = 7, d.s();
+                                                r = (e = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, a = e.tags, u = e.userId, o = e.groups, s = void 0 === o ? [] : o, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : s), t.prev = 7, d.s();
                                             case 9:
                                                 if ((p = d.n()).done) {
                                                     t.next = 27;
@@ -857,9 +859,9 @@
                 m = p.useEnqueueImpostorMutation,
                 g = p.useGetAllAvatarsQuery,
                 b = p.useGetAllAvatarStylesQuery,
-                h = p.useGetAllFavoriteAvatarsQuery,
-                A = p.useGetAvatarQuery,
-                w = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
+                w = p.useGetAllFavoriteAvatarsQuery,
+                h = p.useGetAvatarQuery,
+                A = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
                 O = p.useSelectAvatarMutation,
                 S = p.useSelectFallbackAvatarMutation,
                 T = p.useSetAvatarPrivateMutation,
@@ -869,4 +871,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fc6d1ed64ca53399a9d4e1ee59ab6221d5f7e6aee06ff7344963a86a16eebf2c.js.map
+//# sourceMappingURL=477f8eba390724fdc52db798821ad33f5aef99a70264b101365d8978cd01212a.js.map

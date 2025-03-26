@@ -1741,7 +1741,7 @@
                     he = (ge.isFetching, ge.isError, ge.error, (0, P.Ms)({
                         listingId: null == _ ? void 0 : _.productId
                     }, {
-                        skip: !(null != _ && _.productId)
+                        skip: !(null != _ && _.productId) || (null == _ ? void 0 : _.authorId) !== m.id
                     })),
                     ye = he.data,
                     Ee = he.isFetching,
@@ -2641,4 +2641,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9186ea88da768d2fea0054c859b899c04ff7fe8122593b1d5c41703ea926025e.js.map
+//# sourceMappingURL=9c5b0ef65b089d68e0f5e8821a41ceea916e4b46517e4fad8fec667a645a24f9.js.map

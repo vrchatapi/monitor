@@ -38,11 +38,11 @@
         },
         21538: (t, a, r) => {
             r.d(a, {
-                C0: () => k,
-                CO: () => m,
-                Cm: () => x,
+                C0: () => w,
+                CO: () => A,
+                Cm: () => k,
                 EA: () => g,
-                F6: () => A,
+                F6: () => m,
                 GG: () => y,
                 LQ: () => b,
                 X8: () => f,
@@ -121,7 +121,7 @@
                 return e
             }
 
-            function d(t, a) {
+            function l(t, a) {
                 var r = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
                     var e = Object.getOwnPropertySymbols(t);
@@ -132,12 +132,12 @@
                 return r
             }
 
-            function l(t) {
+            function d(t) {
                 for (var a = 1; a < arguments.length; a++) {
                     var r = null != arguments[a] ? arguments[a] : {};
-                    a % 2 ? d(Object(r), !0).forEach((function(a) {
+                    a % 2 ? l(Object(r), !0).forEach((function(a) {
                         (0, s.Z)(t, a, r[a])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : d(Object(r)).forEach((function(a) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : l(Object(r)).forEach((function(a) {
                         Object.defineProperty(t, a, Object.getOwnPropertyDescriptor(r, a))
                     }))
                 }
@@ -161,10 +161,12 @@
                                     return {
                                         url: "/avatars/".concat(a),
                                         method: "PUT",
-                                        body: l(l(l({}, r), null !== r.styles.primary ? {
+                                        body: d(d(d(d({}, r), null !== r.styles.primary ? {
                                             primaryStyle: r.styles.primary
                                         } : {}), null !== r.styles.secondary ? {
                                             secondaryStyle: r.styles.secondary
+                                        } : {}), null !== r.acknowledgements ? {
+                                            acknowledgements: r.acknowledgements
                                         } : {})
                                     }
                                 },
@@ -346,29 +348,29 @@
                             }),
                             getAllAvatars: t.query({
                                 queryFn: (r = (0, e.Z)(u().mark((function t(a, r, e, s) {
-                                    var i, o, v, c, d, l, p, y, f, g, A, m, h, b, T, I, S, q, O, x, k, P, w, D, L, j, E;
+                                    var i, o, v, c, l, d, p, y, f, g, m, A, h, b, T, I, S, q, O, k, w, x, P, D, L, j, E;
                                     return u().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                i = a.sort, o = void 0 === i ? "updated" : i, v = a.order, c = void 0 === v ? "descending" : v, d = a.releaseStatus, l = void 0 === d ? "all" : d, p = a.user, y = void 0 === p ? "me" : p, f = a.organization, g = void 0 === f ? "vrchat" : f, A = a.n, m = void 0 === A ? 20 : A, h = a.featured, b = a.userId, T = a.search, I = a.tag, S = a.notag, q = a.platform, O = a.maxUnityVersion, x = a.minUnityVersion, k = a.exactUnityVersion, P = a.minAssetVersion, w = a.maxAssetVersion, D = a.exactAssetVersion, L = [], j = 0;
+                                                i = a.sort, o = void 0 === i ? "updated" : i, v = a.order, c = void 0 === v ? "descending" : v, l = a.releaseStatus, d = void 0 === l ? "all" : l, p = a.user, y = void 0 === p ? "me" : p, f = a.organization, g = void 0 === f ? "vrchat" : f, m = a.n, A = void 0 === m ? 20 : m, h = a.featured, b = a.userId, T = a.search, I = a.tag, S = a.notag, q = a.platform, O = a.maxUnityVersion, k = a.minUnityVersion, w = a.exactUnityVersion, x = a.minAssetVersion, P = a.maxAssetVersion, D = a.exactAssetVersion, L = [], j = 0;
                                             case 3:
                                                 return t.next = 6, s({
                                                     url: "avatars",
                                                     params: {
                                                         exactAssetVersion: D,
-                                                        exactUnityVersion: k,
+                                                        exactUnityVersion: w,
                                                         featured: h,
-                                                        maxAssetVersion: w,
+                                                        maxAssetVersion: P,
                                                         maxUnityVersion: O,
-                                                        minAssetVersion: P,
-                                                        minUnityVersion: x,
-                                                        n: m,
+                                                        minAssetVersion: x,
+                                                        minUnityVersion: k,
+                                                        n: A,
                                                         notag: S,
                                                         offset: j,
                                                         order: c,
                                                         organization: g,
                                                         platform: q,
-                                                        releaseStatus: l,
+                                                        releaseStatus: d,
                                                         search: T,
                                                         sort: o,
                                                         tag: I,
@@ -389,7 +391,7 @@
                                                     t.next = 13;
                                                     break
                                                 }
-                                                return L.push.apply(L, (0, n.Z)(E.data)), j += m, t.abrupt("continue", 3);
+                                                return L.push.apply(L, (0, n.Z)(E.data)), j += A, t.abrupt("continue", 3);
                                             case 13:
                                                 return t.abrupt("break", 16);
                                             case 16:
@@ -433,13 +435,13 @@
                             }),
                             getAllFavoriteAvatars: t.query({
                                 queryFn: (a = (0, e.Z)(u().mark((function t() {
-                                    var a, r, e, s, i, o, c, d, l, p, y, f, g, A = arguments;
+                                    var a, r, e, s, i, o, c, l, d, p, y, f, g, m = arguments;
                                     return u().wrap((function(t) {
                                         for (;;) switch (t.prev = t.next) {
                                             case 0:
-                                                r = (a = A.length > 0 && void 0 !== A[0] ? A[0] : {}).tag, e = a.tags, s = a.userId, i = a.groups, o = void 0 === i ? [] : i, c = A.length > 3 ? A[3] : void 0, d = [], l = v(r ? [r] : o), t.prev = 7, l.s();
+                                                r = (a = m.length > 0 && void 0 !== m[0] ? m[0] : {}).tag, e = a.tags, s = a.userId, i = a.groups, o = void 0 === i ? [] : i, c = m.length > 3 ? m[3] : void 0, l = [], d = v(r ? [r] : o), t.prev = 7, d.s();
                                             case 9:
-                                                if ((p = l.n()).done) {
+                                                if ((p = d.n()).done) {
                                                     t.next = 27;
                                                     break
                                                 }
@@ -468,7 +470,7 @@
                                                     t.next = 22;
                                                     break
                                                 }
-                                                return d.push.apply(d, (0, n.Z)(g.data)), f += 50, t.abrupt("continue", 12);
+                                                return l.push.apply(l, (0, n.Z)(g.data)), f += 50, t.abrupt("continue", 12);
                                             case 22:
                                                 return t.abrupt("break", 25);
                                             case 25:
@@ -478,12 +480,12 @@
                                                 t.next = 32;
                                                 break;
                                             case 29:
-                                                t.prev = 29, t.t0 = t.catch(7), l.e(t.t0);
+                                                t.prev = 29, t.t0 = t.catch(7), d.e(t.t0);
                                             case 32:
-                                                return t.prev = 32, l.f(), t.finish(32);
+                                                return t.prev = 32, d.f(), t.finish(32);
                                             case 35:
                                                 return t.abrupt("return", {
-                                                    data: d
+                                                    data: l
                                                 });
                                             case 36:
                                             case "end":
@@ -513,8 +515,8 @@
                 y = p.useDeleteAvatarMutation,
                 f = p.useDeleteImpostorsMutation,
                 g = p.useEnqueueImpostorMutation,
-                A = p.useGetAllAvatarsQuery,
-                m = p.useGetAllAvatarStylesQuery,
+                m = p.useGetAllAvatarsQuery,
+                A = p.useGetAllAvatarStylesQuery,
                 h = p.useGetAllFavoriteAvatarsQuery,
                 b = p.useGetAvatarQuery,
                 T = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
@@ -522,9 +524,9 @@
                 S = p.useSelectFallbackAvatarMutation,
                 q = p.useSetAvatarPrivateMutation,
                 O = p.useSetAvatarPublicMutation,
-                x = p.useSetAvatarTagsMutation,
-                k = p.useUpdateAvatarMutation
+                k = p.useSetAvatarTagsMutation,
+                w = p.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=04b181ed9caa3cc1591e1e48deb54520e6e0fcd7938e35b8371688e1da8110f7.js.map
+//# sourceMappingURL=4b9c794727cbf7a6fe3aee5fa73671bdda657a210afa5edeaeaeaef742e53d7d.js.map

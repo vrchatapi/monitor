@@ -17,8 +17,8 @@
                 m = a.n(d),
                 u = a(64258),
                 p = a(14411),
-                g = a(98185),
-                f = a(35187),
+                f = a(98185),
+                g = a(35187),
                 x = a(95896),
                 b = a(76176),
                 v = a(22202),
@@ -34,8 +34,8 @@
                 D = a(53359),
                 Z = a(92332),
                 T = a(45697),
-                j = a.n(T),
-                O = a(44488),
+                O = a.n(T),
+                j = a(44488),
                 X = function(e) {
                     e.isOpen;
                     var t = e.productId,
@@ -46,9 +46,9 @@
                     var o = (0, N.I0)(),
                         s = (0, v.IB)().data,
                         d = (0, y.useState)(1),
-                        g = (0, r.Z)(d, 2),
-                        f = g[0],
-                        x = g[1],
+                        f = (0, r.Z)(d, 2),
+                        g = f[0],
+                        x = f[1],
                         b = (0, y.useState)(!1),
                         h = (0, r.Z)(b, 2),
                         k = h[0],
@@ -61,9 +61,9 @@
                         P = I.data,
                         S = I.isFetching,
                         T = (0, E.xq)(),
-                        j = (0, r.Z)(T, 2),
-                        X = j[0],
-                        z = j[1],
+                        O = (0, r.Z)(T, 2),
+                        X = O[0],
+                        z = O[1],
                         F = z.isLoading,
                         A = z.isError,
                         J = z.error,
@@ -137,7 +137,7 @@
                                 disabled: !1
                             }, "Delete Product"))))
                         },
-                        q = function() {
+                        R = function() {
                             var e, t;
                             return y.createElement(y.Fragment, null, y.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
@@ -189,7 +189,7 @@
                                 loading: F
                             }, "Delete"))))
                         },
-                        V = function() {
+                        q = function() {
                             return y.createElement(y.Fragment, null, y.createElement("div", {
                                 className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
                             }, y.createElement("div", {
@@ -203,7 +203,7 @@
                             }, "This product is included in the following listings:"), y.createElement("div", {
                                 className: "tw-w-full tw-flex tw-flex-col tw-items-center tw-gap-2 tw-mb-9"
                             }, null == P ? void 0 : P.parentListings.map((function(e) {
-                                return y.createElement(O.Z, {
+                                return y.createElement(j.Z, {
                                     listingId: e
                                 })
                             }))), y.createElement("h2", {
@@ -230,21 +230,21 @@
                             spin: !0,
                             size: "2x"
                         }));
-                        if ($) return V();
-                        switch (f) {
+                        if ($) return q();
+                        switch (g) {
                             case 1:
                                 return B();
                             case 2:
-                                return q();
+                                return R();
                             default:
                                 return null
                         }
                     }())
                 };
             X.propTypes = {
-                isOpen: j().bool,
-                productId: j().string.isRequired,
-                onCancelCallback: j().func
+                isOpen: O().bool,
+                productId: O().string.isRequired,
+                onCancelCallback: O().func
             };
             const z = X;
             var F = a(72998),
@@ -293,7 +293,7 @@
                 })), "listings" === s && y.createElement("div", {
                     className: "tw-gap-2 tw-w-full tw-grid tw-grid-cols-2 tw-mb-3"
                 }, m.length > 0 && m.map((function(e) {
-                    return y.createElement(O.Z, {
+                    return y.createElement(j.Z, {
                         key: e.id,
                         listingData: e
                     })
@@ -319,15 +319,15 @@
                     d = (0, r.Z)(w, 2),
                     m = d[0],
                     u = d[1],
-                    g = (0, y.useRef)(null);
+                    f = (0, y.useRef)(null);
                 return (0, y.useEffect)((function() {
-                    null != g && g.current && u(g.current.getBoundingClientRect())
-                }), [g]), y.createElement("div", {
+                    null != f && f.current && u(f.current.getBoundingClientRect())
+                }), [f]), y.createElement("div", {
                     onMouseLeave: function() {
                         return i(!1)
                     }
                 }, y.createElement(p.zx, {
-                    ref: g,
+                    ref: f,
                     className: "tw-h-9 tw-w-9",
                     neutral: !0,
                     onClick: function() {
@@ -359,7 +359,7 @@
                     onClick: t
                 }, "Delete"))))
             };
-            var q = function(e) {
+            var R = function(e) {
                 var t = e.productData,
                     a = void 0 === t ? null : t,
                     l = e.editProductCallback,
@@ -371,8 +371,8 @@
                     d = (0, N.I0)();
                 if (null === a) return null;
                 var m = a.id,
-                    g = a.displayName,
-                    f = a.created,
+                    f = a.displayName,
+                    g = a.created,
                     x = a.updated,
                     b = a.parentListings,
                     v = a.productType,
@@ -391,12 +391,12 @@
                     iconColor: "#404C58"
                 }), y.createElement("p", {
                     className: "tw-truncate tw-mb-0 tw-overflow-hidden @[800px]/my-products:tw-whitespace-pre-line @[800px]/my-products:tw-break-words",
-                    title: g
-                }, g)), y.createElement("div", {
+                    title: f
+                }, f)), y.createElement("div", {
                     className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
                 }, v), y.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
-                }, $()(f).format("ll")), y.createElement("div", {
+                }, $()(g).format("ll")), y.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
                 }, $()(x).format("ll")), y.createElement("div", {
                     className: "tw-flex tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
@@ -445,12 +445,12 @@
                     }
                 }))))
             };
-            q.propTypes = {
-                productData: j().object
+            R.propTypes = {
+                productData: O().object
             };
-            const V = q;
-            var _ = a(67263),
-                K = function(e) {
+            const q = R;
+            var H = a(67263),
+                V = function(e) {
                     e.isOpen;
                     var t = e.createdProduct,
                         a = void 0 === t ? null : t,
@@ -465,7 +465,7 @@
                     }, y.createElement(p.pw, {
                         alt: null == a ? void 0 : a.displayName,
                         imageId: (null == a ? void 0 : a.imageId) || (null == a ? void 0 : a.file) || null,
-                        fallbackSrc: _,
+                        fallbackSrc: H,
                         fitToCover: !0
                     }), y.createElement("h2", {
                         className: "heading tw-mt-5"
@@ -488,13 +488,13 @@
                         onClick: n
                     }, "Done"))))))
                 };
-            K.propTypes = {
-                isOpen: j().bool,
-                createdProduct: j().object.isRequired,
-                closeModalCallback: j().func
+            V.propTypes = {
+                isOpen: O().bool,
+                createdProduct: O().object.isRequired,
+                closeModalCallback: O().func
             };
-            const H = K;
-            var R = a(74205);
+            const _ = V;
+            var K = a(74205);
             const Y = function(e) {
                 var t = e.createProduct,
                     a = void 0 === t ? function() {} : t;
@@ -509,7 +509,7 @@
                 }, y.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, y.createElement(p.$1, {
-                    icon: R.fk,
+                    icon: K.fk,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -523,7 +523,7 @@
                 }, y.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, y.createElement(p.$1, {
-                    icon: R.rP,
+                    icon: K.rP,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -537,7 +537,7 @@
                 }, y.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, y.createElement(p.$1, {
-                    icon: R.F,
+                    icon: K.F,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -619,9 +619,9 @@
                     D = (0, r.Z)(S, 2),
                     Z = D[0],
                     T = (D[1], (0, k.UO)().paginationPage),
-                    j = T ? Number(T) : 1,
-                    O = (0, y.useState)(""),
-                    X = (0, r.Z)(O, 2),
+                    O = T ? Number(T) : 1,
+                    j = (0, y.useState)(""),
+                    X = (0, r.Z)(j, 2),
                     F = X[0],
                     A = (X[1], (0, y.useState)(Z.get("sortBy") || null)),
                     U = (0, r.Z)(A, 2),
@@ -629,12 +629,12 @@
                     $ = U[1],
                     M = (0, y.useState)(Z.get("orderBy") || "descending"),
                     B = (0, r.Z)(M, 2),
-                    q = B[0],
-                    _ = B[1],
-                    K = y.useState({}),
-                    R = (0, r.Z)(K, 2),
-                    W = R[0],
-                    te = R[1],
+                    R = B[0],
+                    H = B[1],
+                    V = y.useState({}),
+                    K = (0, r.Z)(V, 2),
+                    W = K[0],
+                    te = K[1],
                     ae = y.useState(!1),
                     le = (0, r.Z)(ae, 2),
                     ne = le[0],
@@ -648,9 +648,9 @@
                     me = de[0],
                     ue = de[1],
                     pe = y.useState(null),
-                    ge = (0, r.Z)(pe, 2),
-                    fe = ge[0],
-                    xe = ge[1],
+                    fe = (0, r.Z)(pe, 2),
+                    ge = fe[0],
+                    xe = fe[1],
                     be = y.useState(null),
                     ve = (0, r.Z)(be, 2),
                     Ee = ve[0],
@@ -665,8 +665,8 @@
                     De = Pe[1],
                     Ze = y.useState(!1),
                     Te = (0, r.Z)(Ze, 2),
-                    je = Te[0],
-                    Oe = Te[1],
+                    Oe = Te[0],
+                    je = Te[1],
                     Xe = y.useState(!1),
                     ze = (0, r.Z)(Xe, 2),
                     Fe = ze[0],
@@ -677,12 +677,12 @@
                         return {
                             sellerId: Ue.id,
                             n: 50,
-                            pageValue: j
+                            pageValue: O
                         }
-                    }), [Z, Je, q, L, j]), (0, E.rP)({
+                    }), [Z, Je, R, L, O]), (0, E.rP)({
                         userId: Ue.id,
                         n: 50,
-                        pageValue: j
+                        pageValue: O
                     }, {
                         skip: !Ue.id,
                         refetchOnMountOrArgChange: !0
@@ -690,13 +690,13 @@
                     $e = Le.data,
                     Me = Le.isSuccess,
                     Be = Le.isFetching,
-                    qe = Le.isError,
-                    Ve = Le.error,
-                    _e = (0, E.qX)(),
-                    Ke = (0, r.Z)(_e, 2),
-                    He = Ke[0],
-                    Re = Ke[1],
-                    Ye = (Re.isSuccess, Re.isLoading, Re.isError, Re.error, (0, E.wE)()),
+                    Re = Le.isError,
+                    qe = Le.error,
+                    He = (0, E.qX)(),
+                    Ve = (0, r.Z)(He, 2),
+                    _e = Ve[0],
+                    Ke = Ve[1],
+                    Ye = (Ke.isSuccess, Ke.isLoading, Ke.isError, Ke.error, (0, E.wE)()),
                     We = (0, r.Z)(Ye, 2),
                     Ge = We[0],
                     Qe = We[1],
@@ -717,11 +717,11 @@
                         })
                     }),
                     tt = function() {
-                        re(!1), te({}), ie(!1), xe(null), ue(!1), De(!1), Oe(!1), Ae(!1), he(null), a((0, h.bi)())
+                        re(!1), te({}), ie(!1), xe(null), ue(!1), De(!1), je(!1), Ae(!1), he(null), a((0, h.bi)())
                     },
                     at = function() {
                         var e = (0, n.Z)(m().mark((function e(t) {
-                            var l, n, r, c, o, s, d, p, g;
+                            var l, n, r, c, o, s, d, p, f;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -732,7 +732,7 @@
                                                     message: "Your product has been ".concat(c ? "updated" : "created", " successfully!"),
                                                     color: "success",
                                                     timeout: 3e3
-                                                })), xe(n), Oe(!1), ie(!0), ue(c)
+                                                })), xe(n), je(!1), ie(!0), ue(c)
                                             }, e.prev = 2, !c) {
                                             e.next = 7;
                                             break
@@ -746,7 +746,7 @@
                                     case 6:
                                         return e.abrupt("return", d());
                                     case 7:
-                                        return e.next = 9, He(G(G({}, null !== s ? {
+                                        return e.next = 9, _e(G(G({}, null !== s ? {
                                             file: s,
                                             tag: "product"
                                         } : {}), n)).unwrap();
@@ -756,7 +756,7 @@
                                         e.prev = 12, e.t0 = e.catch(2), console.log("error", e.t0), a((0, u.d)({
                                             title: "Failed to ".concat(c ? "update" : "create", " product!"),
                                             icon: i.eH,
-                                            message: null !== (p = null === (g = e.t0.data) || void 0 === g || null === (g = g.error) || void 0 === g ? void 0 : g.message) && void 0 !== p ? p : "Something went wrong",
+                                            message: null !== (p = null === (f = e.t0.data) || void 0 === f || null === (f = f.error) || void 0 === f ? void 0 : f.message) && void 0 !== p ? p : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
@@ -777,11 +777,11 @@
                     },
                     nt = function(e) {
                         if (ee.includes(e)) return function(e) {
-                            return lt(e) ? _("descending" === q ? "ascending" : "descending") : ($(e), _("ascending"))
+                            return lt(e) ? H("descending" === R ? "ascending" : "descending") : ($(e), H("ascending"))
                         }(e)
                     },
                     rt = function(e) {
-                        Oe(!0), et({
+                        je(!0), et({
                             title: "Edit Product",
                             data: e,
                             isEditing: !0,
@@ -796,12 +796,12 @@
                         })
                     },
                     ot = function(e) {
-                        Ce(e), De(!1), Oe(!1), Ae(!0), et({
+                        Ce(e), De(!1), je(!1), Ae(!0), et({
                             title: "Product Views",
                             data: e
                         })
                     };
-                return y.createElement(y.Fragment, null, y.createElement(p.$4, null, "My Products"), 0 !== (null == $e ? void 0 : $e.length) || Be || 1 !== j ? y.createElement(y.Fragment, null, y.createElement(p.X2, {
+                return y.createElement(y.Fragment, null, y.createElement(p.$4, null, "My Products"), 0 !== (null == $e ? void 0 : $e.length) || Be || 1 !== O ? y.createElement(y.Fragment, null, y.createElement(p.X2, {
                     className: "tw-justify-between tw-gap-x-5 tw-gap-y-3 tw-flex-wrap"
                 }, y.createElement("div", null), y.createElement(p.zx, {
                     "aria-label": "Create Product",
@@ -843,35 +843,35 @@
                         role: "button",
                         tabIndex: 0
                     }, t, ee.includes(a) && y.createElement(p.$1, {
-                        icon: lt(a) && "ascending" === q ? o.fo : c.u9,
+                        icon: lt(a) && "ascending" === R ? o.fo : c.u9,
                         size: "1x",
-                        className: "tw-ml-1 ".concat(lt(a) && "ascending" === q ? "tw-align-bottom" : "tw-align-top")
+                        className: "tw-ml-1 ".concat(lt(a) && "ascending" === R ? "tw-align-bottom" : "tw-align-top")
                     }))
                 }))), y.createElement("div", {
                     className: "tw-group"
                 }, Be ? y.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, y.createElement(g.Z, {
+                }, y.createElement(f.Z, {
                     loading: !0
-                })) : qe ? y.createElement("div", {
+                })) : Re ? y.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, y.createElement("p", null, "Error loading sales data:"), y.createElement("code", null, null !== (t = Ve.data.error.message) && void 0 !== t ? t : "Unknown error")) : Me && 0 === (null == $e ? void 0 : $e.length) ? y.createElement("div", {
+                }, y.createElement("p", null, "Error loading sales data:"), y.createElement("code", null, null !== (t = qe.data.error.message) && void 0 !== t ? t : "Unknown error")) : Me && 0 === (null == $e ? void 0 : $e.length) ? y.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, y.createElement("p", {
                     className: "tw-mb-0"
                 }, "There are no transactions data to display.")) : Me ? $e.map((function(e) {
-                    return y.createElement(V, {
+                    return y.createElement(q, {
                         key: e.id,
                         productData: e,
                         editProductCallback: rt,
                         deleteProductCallback: ct,
                         viewAvatarDetailsActionCallback: ot
                     })
-                })) : void 0), y.createElement("div", null, y.createElement(f.Z, {
+                })) : void 0), y.createElement("div", null, y.createElement(g.Z, {
                     className: "tw-pt-2",
                     totalCount: null !== (e = null == $e ? void 0 : $e.length) && void 0 !== e ? e : 0,
                     showCurrentPageOnly: !0,
-                    currentPage: j,
+                    currentPage: O,
                     pageSize: 50,
                     onPageChange: function(e) {
                         return l("/home/marketplace/storefront/products/page/".concat(e))
@@ -895,17 +895,17 @@
                     overflow: "auto",
                     disableBackdropClick: !0,
                     backgroundColor: "#181B1F"
-                }, ne && !Se && !se && !je && !Fe && y.createElement(I.Z, {
+                }, ne && !Se && !se && !Oe && !Fe && y.createElement(I.Z, {
                     onClose: tt
-                }), ne && je && y.createElement(P.default, {
+                }), ne && Oe && y.createElement(P.default, {
                     product: W.data,
                     onClose: tt,
                     isEditing: !0,
                     onSubmit: at,
                     user: Ue
-                }), ne && se && y.createElement(H, {
+                }), ne && se && y.createElement(_, {
                     isOpen: se,
-                    createdProduct: fe,
+                    createdProduct: ge,
                     updated: me,
                     closeModalCallback: tt
                 }), ne && Se && y.createElement(z, {
@@ -920,7 +920,7 @@
         },
         44869: (e, t, a) => {
             a.d(t, {
-                Z: () => g
+                Z: () => x
             });
             var l = a(15861),
                 n = a(2909),
@@ -928,26 +928,35 @@
                 c = a(6811),
                 o = a(64687),
                 s = a.n(o),
-                i = a(64258),
-                w = a(14411),
-                d = a(95896),
-                m = a(64358),
-                u = a(32981),
-                p = a(67294);
-            const g = function(e) {
-                var t, a, o, g, f, x, b, v = e.avatarData,
+                i = a(67294),
+                w = a(32981),
+                d = a(64258),
+                m = a(14411),
+                u = a(95896),
+                p = a(3620),
+                f = a(64358),
+                g = new RegExp("^".concat(p.i.AUTHOR));
+            const x = function(e) {
+                var t, a, o, x, b, v = e.avatarData,
                     E = void 0 === v ? null : v,
                     h = e.productType;
                 if (null === E) return null;
-                var y = (0, u.I0)(),
-                    N = function() {
+                var y = (0, w.I0)(),
+                    N = i.useMemo((function() {
+                        return null == E ? void 0 : E.tags.filter((function(e) {
+                            return e.startsWith(p.i.AUTHOR)
+                        })).map((function(e) {
+                            return e.replace(g, "")
+                        }))
+                    }), [null == E ? void 0 : E.tags]),
+                    k = function() {
                         var e = (0, l.Z)(s().mark((function e(t, a) {
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t.stopPropagation(), e.next = 3, (0, m.zp)(a)();
+                                        return t.stopPropagation(), e.next = 3, (0, f.zp)(a)();
                                     case 3:
-                                        y((0, i.d)({
+                                        y((0, d.d)({
                                             title: "Copied product ID",
                                             icon: c.f8,
                                             message: "Product ID Copied!",
@@ -964,23 +973,23 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return p.createElement("form", {
+                return i.createElement("form", {
                     className: "tw-w-full"
-                }, p.createElement(w.JX, {
+                }, i.createElement(m.JX, {
                     className: "tw-mb-8"
-                }, p.createElement(w.X2, {
+                }, i.createElement(m.X2, {
                     className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
-                }, p.createElement(w.JX, null, p.createElement(w.pw, {
+                }, i.createElement(m.JX, null, i.createElement(m.pw, {
                     imageId: E.thumbnailImageUrl,
                     fitToCover: !0,
                     alt: "Product Thumbnail",
                     width: 285,
                     className: "tw-bg-grey tw-text-[#404C58]"
-                })), p.createElement(w.JX, {
+                })), i.createElement(m.JX, {
                     className: "tw-flex-1 tw-gap-5"
-                }, p.createElement(w.JX, null, p.createElement("label", {
+                }, i.createElement(m.JX, null, i.createElement("label", {
                     htmlFor: "name"
-                }, "Product Name"), p.createElement(w.II, {
+                }, "Product Name"), i.createElement(m.II, {
                     type: "text",
                     inputStyle: {
                         margin: "8px 0"
@@ -989,98 +998,98 @@
                     id: "name",
                     value: E.name,
                     disabled: !0
-                })), p.createElement(w.X2, {
+                })), i.createElement(m.X2, {
                     className: "tw-gap-2"
-                }, p.createElement(w.JX, {
+                }, i.createElement(m.JX, {
                     className: "tw-flex-1"
-                }, p.createElement("p", {
+                }, i.createElement("p", {
                     className: "tw-mb-2"
-                }, "Primary Style"), !(null !== (t = E.styles) && void 0 !== t && t.primary) && p.createElement("small", {
+                }, "Primary Style"), !(null !== (t = E.styles) && void 0 !== t && t.primary) && i.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No primary style!"), (null === (a = E.styles) || void 0 === a ? void 0 : a.primary) && p.createElement("div", {
+                }, "No primary style!"), (null === (a = E.styles) || void 0 === a ? void 0 : a.primary) && i.createElement("div", {
                     className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, p.createElement("span", null, E.styles.primary))), p.createElement(w.JX, {
+                }, i.createElement("span", null, E.styles.primary))), i.createElement(m.JX, {
                     className: "tw-flex-1"
-                }, p.createElement("p", {
+                }, i.createElement("p", {
                     className: "tw-mb-2"
-                }, "Secondary Style"), !(null !== (o = E.styles) && void 0 !== o && o.secondary) && p.createElement("small", {
+                }, "Secondary Style"), !(null !== (o = E.styles) && void 0 !== o && o.secondary) && i.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No secondary style!"), (null === (g = E.styles) || void 0 === g ? void 0 : g.secondary) && p.createElement("div", {
+                }, "No secondary style!"), (null === (x = E.styles) || void 0 === x ? void 0 : x.secondary) && i.createElement("div", {
                     className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, E.styles.secondary))), p.createElement(w.JX, null, p.createElement("p", {
+                }, E.styles.secondary))), i.createElement(m.JX, null, i.createElement("p", {
                     className: "tw-mb-2"
-                }, "Tags"), p.createElement(w.X2, {
+                }, "Tags"), i.createElement(m.X2, {
                     className: "tw-flex-wrap tw-gap-2"
-                }, 0 === (null === (f = E.tags) || void 0 === f ? void 0 : f.length) && p.createElement("small", {
+                }, 0 === (null == N ? void 0 : N.length) && i.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No tags!"), null === (x = E.tags) || void 0 === x ? void 0 : x.map((function(e) {
-                    return p.createElement("div", {
+                }, "No tags!"), null == N ? void 0 : N.map((function(e) {
+                    return i.createElement("div", {
                         key: e,
                         className: "tw-leading-none tw-max-h-[50px] tw-break-all tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block"
-                    }, p.createElement("span", null, e))
-                })))))), p.createElement(w.JX, {
+                    }, i.createElement("span", null, e))
+                })))))), i.createElement(m.JX, {
                     className: "tw-gap-5"
-                }, E.productId && p.createElement(w.JX, {
+                }, E.productId && i.createElement(m.JX, {
                     className: "tw-mb-5"
-                }, p.createElement("label", {
+                }, i.createElement("label", {
                     htmlFor: "id",
                     className: "tw-mb-2 tw-flex tw-flex-row"
-                }, "Product ID", p.createElement("div", {
+                }, "Product ID", i.createElement("div", {
                     className: "tw-group tw-relative tw-ml-1"
-                }, p.createElement(w.$1, {
+                }, i.createElement(m.$1, {
                     icon: r.sq,
                     className: "tw-text-light-grey"
-                }), p.createElement("span", {
+                }), i.createElement("span", {
                     className: "tw-pointer-events-none tw-z-50 tw-absolute tw--top-14 tw--left-20 sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
-                }, "This unique ID links your Udon product to the VRChat Worlds SDK, allowing you to track ownership within your world."))), p.createElement(w.X2, {
+                }, "This unique ID links your Udon product to the VRChat Worlds SDK, allowing you to track ownership within your world."))), i.createElement(m.X2, {
                     className: "tw-gap-2"
-                }, p.createElement(w.II, {
+                }, i.createElement(m.II, {
                     type: "text",
                     id: "id",
                     value: E.productId,
                     disabled: !0,
                     className: "tw-flex-1"
-                }), p.createElement(w.zx, {
+                }), i.createElement(m.zx, {
                     type: "button",
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function(e) {
-                        return N(e, E.productId)
+                        return k(e, E.productId)
                     }
-                }, p.createElement(w.$1, {
+                }, i.createElement(m.$1, {
                     icon: n.kZ
-                })))), h && p.createElement(w.JX, {
+                })))), h && i.createElement(m.JX, {
                     className: "tw-mb-5"
-                }, p.createElement("label", {
+                }, i.createElement("label", {
                     htmlFor: "price",
                     className: "tw-mb-2"
-                }, "Product Type"), p.createElement(w.X2, {
+                }, "Product Type"), i.createElement(m.X2, {
                     className: "tw-gap-3"
-                }, p.createElement("div", {
+                }, i.createElement("div", {
                     className: "tw-rounded-full tw-w-[90px] tw-h-[90px] tw-bg-[#303135]"
-                }, p.createElement("img", {
+                }, i.createElement("img", {
                     alt: "udon logo",
                     width: "90",
-                    src: d.pK[h].image
-                })), p.createElement(w.JX, {
+                    src: u.pK[h].image
+                })), i.createElement(m.JX, {
                     className: "tw-items-center tw-justify-center"
-                }, p.createElement("p", {
+                }, i.createElement("p", {
                     className: "tw-mb-0"
-                }, p.createElement("strong", null, d.pK[h].label), p.createElement("br", null), d.pK[h].text, p.createElement("br", null), p.createElement("a", {
-                    href: d.pK[h].redirect,
+                }, i.createElement("strong", null, u.pK[h].label), i.createElement("br", null), u.pK[h].text, i.createElement("br", null), i.createElement("a", {
+                    href: u.pK[h].redirect,
                     target: "_blank",
                     rel: "noreferrer"
-                }, "Learn More"))))), p.createElement(w.JX, null, p.createElement("label", {
+                }, "Learn More"))))), i.createElement(m.JX, null, i.createElement("label", {
                     htmlFor: "description"
-                }, "Description"), p.createElement(w.gx, {
+                }, "Description"), i.createElement(m.gx, {
                     disabled: !0,
                     type: "textarea",
                     id: "description",
                     inputClassName: "tw-h-[120px] tw-my-2",
                     maxLength: 256,
                     value: E.description
-                })), p.createElement(w.JX, null, p.createElement("label", {
+                })), i.createElement(m.JX, null, i.createElement("label", {
                     htmlFor: "acknowledgements"
-                }, "Acknowledgements"), p.createElement(w.gx, {
+                }, "Acknowledgements"), i.createElement(m.gx, {
                     disabled: !0,
                     type: "textarea",
                     id: "acknowledgements",
@@ -1092,4 +1101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3dbadbd01c939a5f517b8a06366804a8ae77e13fbd09f6add69fc8eae43a75bd.js.map
+//# sourceMappingURL=a0b964cee4873f6177e962fb5add94037809d318960e74d63d2f5bbb17ad7e14.js.map
