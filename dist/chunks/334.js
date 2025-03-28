@@ -2562,7 +2562,10 @@
                     }), [L, M, x, k]),
                     R = function(e) {
                         u(e), i(!0)
-                    };
+                    },
+                    A = un.di.filter((function(e) {
+                        return "subscription" !== e.value
+                    }));
                 return s.createElement("div", null, s.createElement(d.$4, null, U), s.createElement("h1", {
                     className: "heading tw-text-[32px]"
                 }, U), s.createElement("div", null, s.createElement("div", {
@@ -2573,7 +2576,7 @@
                     className: "tw-h-9 tw-mr-2",
                     label: "Listing Type",
                     value: x,
-                    options: un.di,
+                    options: A,
                     onChange: E
                 }), s.createElement(d.Lt, {
                     className: "tw-h-9",
@@ -3219,4 +3222,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9bbdd098ea3f8ba24453e6bd5a9b653345d777fb2704e9d4af778d048ad88f73.js.map
+//# sourceMappingURL=0119b7be8b088894729bc715380b70a86d3e76f92a3a26b0bce9e2d29cb74a54.js.map

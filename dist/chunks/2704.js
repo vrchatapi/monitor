@@ -411,7 +411,7 @@
                     to: "/home/user/".concat((null == j ? void 0 : j.authorId) || (null == xe ? void 0 : xe.id)),
                     className: "hover:tw-text-white tw-text-teal-accent hover:tw-no-underline"
                 }, E.createElement("strong", null, (null == j ? void 0 : j.authorName) || (null == xe ? void 0 : xe.displayName))))))))), E.createElement("hr", {
-                    className: "tw-my-3 tw-border-gray-300"
+                    className: "tw-my-5 tw-border-gray-300"
                 }), E.createElement(N.X2, {
                     className: "tw-flex-wrap tw-gap-3"
                 }, E.createElement(N.JX, {
@@ -421,7 +421,7 @@
                 }, E.createElement(R, {
                     images: D
                 })), E.createElement(N.oI, null, E.createElement("h4", {
-                    className: "tw-font-normal tw-mb-0"
+                    className: "tw-mb-0 tw-font-bold"
                 }, C ? "Listing" : "Avatar", " Info")), E.createElement(N.Ao, {
                     className: "tw-mb-3 tw-break-words"
                 }, (null == j ? void 0 : j.acknowledgements) && E.createElement(Z.Z, {
@@ -454,7 +454,7 @@
                     onClick: function() {
                         S || ne(C)
                     }
-                }, "Purchase"), E.createElement(N.zx, {
+                }, "Purchase"), Ie && E.createElement(N.zx, {
                     onClick: function() {
                         S || le(C)
                     },
@@ -585,4 +585,4 @@
         }
     }
 ]);
-//# sourceMappingURL=028a4a0229f4106725349948fc2ea4d542e2d34f10bc10a08738c3b2d061acc4.js.map
+//# sourceMappingURL=6c7c8c5e6570b96436269363dea7e8d143da9755884877447dde1ffe8fb88eb2.js.map
