@@ -224,12 +224,8 @@
                         }, "That's not me!"))), d.createElement(y.Z, {
                             sm: "8",
                             md: "7"
-                        }, d.createElement(b.Z, null, d.createElement(y.Z, null, d.createElement("p", null, d.createElement("strong", null, this.state.oAuthVendor.name), " wants to:"), (null === (e = this.state.scopeDefinitions) || void 0 === e ? void 0 : e.length) && d.createElement("ul", null, this.state.scopeDefinitions.map((function(e) {
-                            return d.createElement("li", {
-                                key: e.scopeName
-                            }, d.createElement("b", null, e.description))
-                        }))))), d.createElement(b.Z, {
-                            className: "mt-2"
+                        }, d.createElement(b.Z, {
+                            className: "mb-2"
                         }, d.createElement(y.Z, {
                             className: "d-flex align-items-center"
                         }, d.createElement("img", {
@@ -242,7 +238,11 @@
                             },
                             alt: this.state.oAuthVendor.name,
                             src: this.state.oAuthVendor.thumbnail
-                        }), d.createElement("div", null, d.createElement("strong", null, this.state.oAuthVendor.name), d.createElement("br", null), "by ", d.createElement("strong", null, this.state.oAuthVendor.company)))))), d.createElement(b.Z, null, d.createElement(y.Z, {
+                        }), d.createElement("div", null, d.createElement("strong", null, this.state.oAuthVendor.name), d.createElement("br", null), "by ", d.createElement("strong", null, this.state.oAuthVendor.company)))), d.createElement(b.Z, null, d.createElement(y.Z, null, d.createElement("p", null, d.createElement("strong", null, this.state.oAuthVendor.name), " wants to:"), (null === (e = this.state.scopeDefinitions) || void 0 === e ? void 0 : e.length) && d.createElement("ul", null, this.state.scopeDefinitions.map((function(e) {
+                            return d.createElement("li", {
+                                key: e.scopeName
+                            }, d.createElement("b", null, e.description))
+                        }))))))), d.createElement(b.Z, null, d.createElement(y.Z, {
                             className: "d-flex",
                             style: {
                                 margin: "0 -0.25rem",
@@ -473,4 +473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2394e9110ba881289d187ab65f4b564c504eac2bb401175df296f95a580d69bc.js.map
+//# sourceMappingURL=4ccbf375e4765238bd10e6299893951d24211a12eaf0dff18db6c47f5db08f43.js.map
