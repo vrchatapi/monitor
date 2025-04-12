@@ -1,17 +1,17 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [9664], {
-        41727: (t, e, r) => {
-            r.d(e, {
-                Z: () => R
+        41727: (e, t, r) => {
+            r.d(t, {
+                Z: () => F
             });
             var a = r(15861),
                 n = r(4942),
                 u = r(54546),
                 o = r(76553),
-                i = r(6811),
-                s = r(64687),
-                c = r.n(s),
+                s = r(6811),
+                i = r(64687),
+                c = r.n(i),
                 l = r(67294),
                 v = r(32981),
                 d = r(64258),
@@ -20,43 +20,43 @@
                 y = r(12752),
                 m = r(64358);
 
-            function g(t, e) {
-                var r = Object.keys(t);
+            function g(e, t) {
+                var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(t);
-                    e && (a = a.filter((function(e) {
-                        return Object.getOwnPropertyDescriptor(t, e).enumerable
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
                     }))), r.push.apply(r, a)
                 }
                 return r
             }
 
-            function b(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var r = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? g(Object(r), !0).forEach((function(e) {
-                        (0, n.Z)(t, e, r[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : g(Object(r)).forEach((function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+            function b(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? g(Object(r), !0).forEach((function(t) {
+                        (0, n.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : g(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
-                return t
+                return e
             }
             var w = r(61509).S.injectEndpoints({
-                    endpoints: function(t) {
+                    endpoints: function(e) {
                         return {
-                            getAssetReviewsList: t.query({
-                                query: function(t) {
-                                    var e = t.n,
-                                        r = void 0 === e ? 100 : e,
-                                        a = t.pageValue,
+                            getAssetReviewsList: e.query({
+                                query: function(e) {
+                                    var t = e.n,
+                                        r = void 0 === t ? 100 : t,
+                                        a = e.pageValue,
                                         n = void 0 === a ? 1 : a,
-                                        u = t.hydrateAsset;
+                                        u = e.hydrateAsset;
                                     return {
                                         url: "assetReviews",
                                         params: b({
                                             hydrateAsset: void 0 !== u && u,
-                                            reviewStatus: t.reviewStatus
+                                            reviewStatus: e.reviewStatus
                                         }, (0, m.ue)({
                                             n: r,
                                             pageValue: n
@@ -65,34 +65,34 @@
                                 },
                                 providesTags: ["AssetReviewsList"]
                             }),
-                            getAssetReviewById: t.query({
-                                query: function(t) {
-                                    var e = t.assetReviewId;
+                            getAssetReviewById: e.query({
+                                query: function(e) {
+                                    var t = e.assetReviewId;
                                     return {
-                                        url: "/assetReview/".concat(e)
+                                        url: "/assetReview/".concat(t)
                                     }
                                 },
-                                providesTags: function(t, e, r) {
+                                providesTags: function(e, t, r) {
                                     return [{
                                         type: "AssetReview",
                                         id: r.assetReviewId
                                     }]
                                 }
                             }),
-                            submitAvatarForAssetReview: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId,
-                                        r = t.submitNotes;
+                            submitAvatarForAssetReview: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId,
+                                        r = e.submitNotes;
                                     return {
                                         url: "/assetReviews/avatarProduct",
                                         body: {
-                                            avatarId: e,
+                                            avatarId: t,
                                             submitNotes: void 0 === r ? "" : r
                                         },
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: function(t, e, r) {
+                                invalidatesTags: function(e, t, r) {
                                     return [{
                                         type: "AssetReviewsAvatar",
                                         id: r.avatarId
@@ -108,13 +108,13 @@
                 A = (w.useGetAssetReviewByIdQuery, r(22202)),
                 O = r(67978),
                 S = r(43683),
-                T = r(67263),
+                x = r(67263),
                 I = r(79655);
-            const P = function(t) {
-                var e = t.onClose,
-                    r = void 0 === e ? function() {} : e,
-                    a = (0, v.v9)((function(t) {
-                        return t.productFlow
+            const T = function(e) {
+                var t = e.onClose,
+                    r = void 0 === t ? function() {} : t,
+                    a = (0, v.v9)((function(e) {
+                        return e.productFlow
                     })).currentProduct;
                 if (!a) return null;
                 var n = a.product,
@@ -124,7 +124,7 @@
                 }, l.createElement(p.pw, {
                     imageId: n.imageId || u || null,
                     alt: n.displayName,
-                    fallbackSrc: T,
+                    fallbackSrc: x,
                     className: "tw-w-[150px] tw-h-[150px]",
                     fitToCover: !0
                 }), l.createElement(p.JX, {
@@ -143,27 +143,27 @@
                 }, "Done")))
             };
 
-            function x(t, e) {
-                var r = Object.keys(t);
+            function E(e, t) {
+                var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(t);
-                    e && (a = a.filter((function(e) {
-                        return Object.getOwnPropertyDescriptor(t, e).enumerable
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
                     }))), r.push.apply(r, a)
                 }
                 return r
             }
 
-            function E(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var r = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? x(Object(r), !0).forEach((function(e) {
-                        (0, n.Z)(t, e, r[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : x(Object(r)).forEach((function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+            function P(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? E(Object(r), !0).forEach((function(t) {
+                        (0, n.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : E(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
-                return t
+                return e
             }
             var j = (0, l.lazy)((function() {
                     return r.e(8536).then(r.bind(r, 18536))
@@ -180,150 +180,150 @@
                 C = (0, l.lazy)((function() {
                     return r.e(3871).then(r.bind(r, 3871))
                 })),
-                L = {
+                R = {
                     productDetails: "Create Product",
                     productReviewSumbit: "Submit for Review",
                     productCreated: "Product Created",
                     productReviewSubmitted: null
                 };
-            const R = function(t) {
-                var e = t.onClose,
-                    r = void 0 === e ? function() {} : e,
+            const F = function(e) {
+                var t = e.onClose,
+                    r = void 0 === t ? function() {} : t,
                     n = (0, v.I0)(),
-                    s = (0, y.Tu)().user,
-                    m = (0, v.v9)((function(t) {
-                        return t.productFlow
+                    i = (0, y.Tu)().user,
+                    m = (0, v.v9)((function(e) {
+                        return e.productFlow
                     })),
                     g = m.currentStep,
                     b = m.productType,
                     w = m.currentProduct,
-                    T = (0, l.useState)(w || {}),
-                    I = (0, u.Z)(T, 2),
-                    x = I[0],
-                    R = I[1];
+                    x = (0, l.useState)(w || {}),
+                    I = (0, u.Z)(x, 2),
+                    E = I[0],
+                    F = I[1];
                 (0, l.useEffect)((function() {
                     g || n((0, S.Bq)("productType"))
                 }), []);
-                var F = (0, A.q7)({
-                        skip: !s
+                var L = (0, A.q7)({
+                        skip: !i
                     }),
-                    U = F.data,
-                    V = F.isLoading,
-                    Z = F.isSuccess,
-                    M = h(),
-                    N = (0, u.Z)(M, 2),
-                    Q = N[0],
-                    G = N[1],
-                    z = (G.isLoading, G.isError, G.error),
-                    W = (0, O.qX)(),
-                    _ = (0, u.Z)(W, 2),
-                    B = _[0],
-                    X = _[1],
+                    U = L.data,
+                    V = L.isLoading,
+                    Z = L.isSuccess,
+                    N = h(),
+                    Q = (0, u.Z)(N, 2),
+                    G = Q[0],
+                    M = Q[1],
+                    z = (M.isLoading, M.isError, M.error),
+                    _ = (0, O.qX)(),
+                    W = (0, u.Z)(_, 2),
+                    B = W[0],
+                    X = W[1],
                     J = (X.isSuccess, X.isLoading, X.isError, X.error, (0, l.useMemo)((function() {
                         return !(V || !Z) && (null == U ? void 0 : U.includes("permission-sell-avatar-products"))
                     }), [V])),
                     Y = function() {
-                        var t, e = (t = f.F_[b].indexOf(g), f.F_[b][t + 1] || g);
-                        n((0, S.Td)(L[e])), n((0, S.Bq)(e))
+                        var e, t = (e = f.F_[b].indexOf(g), f.F_[b][e + 1] || g);
+                        n((0, S.Td)(R[t])), n((0, S.Bq)(t))
                     },
                     H = function() {
-                        var t, e = (t = f.F_[b].indexOf(g), {
-                                immediateStep: f.F_[b][t - 1] || null,
-                                nextStep: f.F_[b][t - 2] || null
+                        var e, t = (e = f.F_[b].indexOf(g), {
+                                immediateStep: f.F_[b][e - 1] || null,
+                                nextStep: f.F_[b][e - 2] || null
                             }),
-                            r = e.immediateStep,
-                            a = e.nextStep;
+                            r = t.immediateStep,
+                            a = t.nextStep;
                         if (!r) return n((0, S.Bq)("productType")), void n((0, S.IT)(null));
-                        n((0, S.Td)(L[r])), n((0, S.Bq)(r)), n((0, S.IT)(a))
+                        n((0, S.Td)(R[r])), n((0, S.Bq)(r)), n((0, S.IT)(a))
                     },
-                    $ = function(t) {
-                        n((0, S.IR)(t)), R(E(E({}, x), t))
+                    $ = function(e) {
+                        n((0, S.IR)(e)), F(P(P({}, E), e))
                     },
                     K = function() {
-                        var t = (0, a.Z)(c().mark((function t(e) {
-                            var r, a, u, s, l, v, p, f, y;
-                            return c().wrap((function(t) {
-                                for (;;) switch (t.prev = t.next) {
+                        var e = (0, a.Z)(c().mark((function e(t) {
+                            var r, a, u, i, l, v, p, f, y;
+                            return c().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return r = e.productData, a = void 0 === r ? {} : r, u = e.image, s = void 0 === u ? void 0 : u, l = function() {
+                                        return r = t.productData, a = void 0 === r ? {} : r, u = t.image, i = void 0 === u ? void 0 : u, l = function() {
                                             n((0, d.d)({
                                                 title: "Product created successfully!",
-                                                icon: i.f8,
+                                                icon: s.f8,
                                                 message: "Your product has been created successfully!",
                                                 color: "success",
                                                 timeout: 3e3
                                             })), Y()
-                                        }, t.prev = 2, t.next = 5, B(E(E({}, s && {
-                                            file: s,
+                                        }, e.prev = 2, e.next = 5, B(P(P({}, i && {
+                                            file: i,
                                             tag: "product"
                                         }), a)).unwrap();
                                     case 5:
-                                        return v = t.sent, n((0, S.IR)(v)), t.abrupt("return", l());
+                                        return v = e.sent, n((0, S.IR)(v)), e.abrupt("return", l());
                                     case 10:
-                                        t.prev = 10, t.t0 = t.catch(2), console.log("error", null === t.t0 || void 0 === t.t0 || null === (p = t.t0.data) || void 0 === p || null === (p = p.error) || void 0 === p ? void 0 : p.message), n((0, d.d)({
+                                        e.prev = 10, e.t0 = e.catch(2), console.log("error", null === e.t0 || void 0 === e.t0 || null === (p = e.t0.data) || void 0 === p || null === (p = p.error) || void 0 === p ? void 0 : p.message), n((0, d.d)({
                                             title: "Failed to create product!",
                                             icon: o.eH,
-                                            message: null !== (f = null === t.t0 || void 0 === t.t0 || null === (y = t.t0.data) || void 0 === y || null === (y = y.error) || void 0 === y ? void 0 : y.message) && void 0 !== f ? f : "Something went wrong",
+                                            message: null !== (f = null === e.t0 || void 0 === e.t0 || null === (y = e.t0.data) || void 0 === y || null === (y = y.error) || void 0 === y ? void 0 : y.message) && void 0 !== f ? f : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
                                     case 14:
                                     case "end":
-                                        return t.stop()
+                                        return e.stop()
                                 }
-                            }), t, null, [
+                            }), e, null, [
                                 [2, 10]
                             ])
                         })));
-                        return function(e) {
-                            return t.apply(this, arguments)
+                        return function(t) {
+                            return e.apply(this, arguments)
                         }
                     }(),
-                    tt = function() {
-                        var t = (0, a.Z)(c().mark((function t() {
-                            var e;
-                            return c().wrap((function(t) {
-                                for (;;) switch (t.prev = t.next) {
+                    ee = function() {
+                        var e = (0, a.Z)(c().mark((function e() {
+                            var t;
+                            return c().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (null != x && x.id.startsWith("avtr_")) {
-                                            t.next = 2;
+                                        if (null != E && E.id.startsWith("avtr_")) {
+                                            e.next = 2;
                                             break
                                         }
-                                        return t.abrupt("return");
+                                        return e.abrupt("return");
                                     case 2:
-                                        if ("public" !== (null == x ? void 0 : x.releaseStatus)) {
-                                            t.next = 4;
+                                        if ("public" !== (null == E ? void 0 : E.releaseStatus)) {
+                                            e.next = 4;
                                             break
                                         }
-                                        return t.abrupt("return");
+                                        return e.abrupt("return");
                                     case 4:
-                                        return t.prev = 4, t.next = 7, Q({
-                                            avatarId: x.id,
+                                        return e.prev = 4, e.next = 7, G({
+                                            avatarId: E.id,
                                             submitNotes: ""
                                         }).unwrap();
                                     case 7:
-                                        return t.abrupt("return", Y());
+                                        return e.abrupt("return", Y());
                                     case 10:
-                                        t.prev = 10, t.t0 = t.catch(4), n((0, d.d)({
+                                        e.prev = 10, e.t0 = e.catch(4), n((0, d.d)({
                                             title: "Error",
                                             icon: o.eH,
-                                            message: (null == z || null === (e = z.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message) || "An error occurred while submitting your avatar for review.",
+                                            message: (null == z || null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "An error occurred while submitting your avatar for review.",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
                                     case 13:
                                     case "end":
-                                        return t.stop()
+                                        return e.stop()
                                 }
-                            }), t, null, [
+                            }), e, null, [
                                 [4, 10]
                             ])
                         })));
                         return function() {
-                            return t.apply(this, arguments)
+                            return e.apply(this, arguments)
                         }
                     }(),
-                    et = function() {
+                    te = function() {
                         n((0, S.bi)()), r()
                     };
                 return l.createElement(p.JX, {
@@ -335,7 +335,7 @@
                         case "productType":
                             return l.createElement(j, {
                                 onNext: Y,
-                                onClose: et,
+                                onClose: te,
                                 hasAvatarSellerPermission: J
                             });
                         case "productDetails":
@@ -343,34 +343,34 @@
                                 disabled: !0,
                                 type: b,
                                 onDataChange: $,
-                                user: s,
-                                onNext: function(t) {
+                                user: i,
+                                onNext: function(e) {
                                     return Y()
                                 },
-                                onPrevious: function(t) {
+                                onPrevious: function(e) {
                                     return H()
                                 },
-                                onClose: et
+                                onClose: te
                             }) : l.createElement(q, {
                                 type: b,
                                 onDataChange: $,
-                                user: s,
+                                user: i,
                                 onSubmit: K,
-                                onClose: et
+                                onClose: te
                             });
                         case "productReviewSumbit":
                             return l.createElement(D, {
                                 onPrevious: H,
-                                avatar: x,
-                                onSubmit: tt
+                                avatar: E,
+                                onSubmit: ee
                             });
                         case "productReviewSubmitted":
                             return l.createElement(C, {
-                                onClose: et
+                                onClose: te
                             });
                         case "productCreated":
-                            return l.createElement(P, {
-                                onClose: et
+                            return l.createElement(T, {
+                                onClose: te
                             });
                         default:
                             return null
@@ -378,18 +378,16 @@
                 }()))
             }
         },
-        21538: (t, e, r) => {
-            r.d(e, {
-                C0: () => x,
+        21538: (e, t, r) => {
+            r.d(t, {
+                C0: () => I,
                 CO: () => b,
-                Cm: () => P,
+                Cm: () => x,
                 EA: () => m,
                 F6: () => g,
                 GG: () => f,
                 LQ: () => h,
                 X8: () => y,
-                ak: () => I,
-                cq: () => T,
                 eP: () => S,
                 lx: () => w,
                 ve: () => A,
@@ -399,35 +397,35 @@
                 n = r(42138),
                 u = r(4942),
                 o = r(64687),
-                i = r.n(o),
-                s = r(61509);
+                s = r.n(o),
+                i = r(61509);
 
-            function c(t, e) {
-                var r = "undefined" != typeof Symbol && t[Symbol.iterator] || t["@@iterator"];
+            function c(e, t) {
+                var r = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!r) {
-                    if (Array.isArray(t) || (r = function(t, e) {
-                            if (!t) return;
-                            if ("string" == typeof t) return l(t, e);
-                            var r = Object.prototype.toString.call(t).slice(8, -1);
-                            "Object" === r && t.constructor && (r = t.constructor.name);
-                            if ("Map" === r || "Set" === r) return Array.from(t);
-                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(t, e)
-                        }(t)) || e && t && "number" == typeof t.length) {
-                        r && (t = r);
+                    if (Array.isArray(e) || (r = function(e, t) {
+                            if (!e) return;
+                            if ("string" == typeof e) return l(e, t);
+                            var r = Object.prototype.toString.call(e).slice(8, -1);
+                            "Object" === r && e.constructor && (r = e.constructor.name);
+                            if ("Map" === r || "Set" === r) return Array.from(e);
+                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return l(e, t)
+                        }(e)) || t && e && "number" == typeof e.length) {
+                        r && (e = r);
                         var a = 0,
                             n = function() {};
                         return {
                             s: n,
                             n: function() {
-                                return a >= t.length ? {
+                                return a >= e.length ? {
                                     done: !0
                                 } : {
                                     done: !1,
-                                    value: t[a++]
+                                    value: e[a++]
                                 }
                             },
-                            e: function(t) {
-                                throw t
+                            e: function(e) {
+                                throw e
                             },
                             f: n
                         }
@@ -435,60 +433,60 @@
                     throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }
                 var u, o = !0,
-                    i = !1;
+                    s = !1;
                 return {
                     s: function() {
-                        r = r.call(t)
+                        r = r.call(e)
                     },
                     n: function() {
-                        var t = r.next();
-                        return o = t.done, t
+                        var e = r.next();
+                        return o = e.done, e
                     },
-                    e: function(t) {
-                        i = !0, u = t
+                    e: function(e) {
+                        s = !0, u = e
                     },
                     f: function() {
                         try {
                             o || null == r.return || r.return()
                         } finally {
-                            if (i) throw u
+                            if (s) throw u
                         }
                     }
                 }
             }
 
-            function l(t, e) {
-                (null == e || e > t.length) && (e = t.length);
-                for (var r = 0, a = new Array(e); r < e; r++) a[r] = t[r];
+            function l(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for (var r = 0, a = new Array(t); r < t; r++) a[r] = e[r];
                 return a
             }
 
-            function v(t, e) {
-                var r = Object.keys(t);
+            function v(e, t) {
+                var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(t);
-                    e && (a = a.filter((function(e) {
-                        return Object.getOwnPropertyDescriptor(t, e).enumerable
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
                     }))), r.push.apply(r, a)
                 }
                 return r
             }
 
-            function d(t) {
-                for (var e = 1; e < arguments.length; e++) {
-                    var r = null != arguments[e] ? arguments[e] : {};
-                    e % 2 ? v(Object(r), !0).forEach((function(e) {
-                        (0, u.Z)(t, e, r[e])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : v(Object(r)).forEach((function(e) {
-                        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+            function d(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? v(Object(r), !0).forEach((function(t) {
+                        (0, u.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : v(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
-                return t
+                return e
             }
-            var p = s.S.injectEndpoints({
-                    endpoints: function(t) {
+            var p = i.S.injectEndpoints({
+                    endpoints: function(e) {
                         return {
-                            getAllAvatarStyles: t.query({
+                            getAllAvatarStyles: e.query({
                                 query: function() {
                                     return {
                                         url: "/avatarStyles"
@@ -496,65 +494,65 @@
                                 },
                                 providesTags: ["AvatarStyles"]
                             }),
-                            updateAvatar: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId,
-                                        r = t.data;
+                            updateAvatar: e.mutation({
+                                query: function(e) {
+                                    var t, r, a, n, u = e.avatarId,
+                                        o = e.data;
                                     return {
-                                        url: "/avatars/".concat(e),
+                                        url: "/avatars/".concat(u),
                                         method: "PUT",
-                                        body: d(d(d(d({}, r), null !== r.styles.primary ? {
-                                            primaryStyle: r.styles.primary
-                                        } : {}), null !== r.styles.secondary ? {
-                                            secondaryStyle: r.styles.secondary
-                                        } : {}), null !== r.acknowledgements ? {
-                                            acknowledgements: r.acknowledgements
+                                        body: d(d(d(d({}, o), null != o && null !== (t = o.styles) && void 0 !== t && t.primary ? {
+                                            primaryStyle: null == o || null === (r = o.styles) || void 0 === r ? void 0 : r.primary
+                                        } : {}), null != o && null !== (a = o.styles) && void 0 !== a && a.secondary ? {
+                                            secondaryStyle: null == o || null === (n = o.styles) || void 0 === n ? void 0 : n.secondary
+                                        } : {}), null != o && o.acknowledgements ? {
+                                            acknowledgements: null == o ? void 0 : o.acknowledgements
                                         } : {})
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
+                                invalidatesTags: (0, i.T)((function(e) {
+                                    var t = e.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: e
+                                        id: t
                                     }, {
                                         type: "AvatarWithListingData",
-                                        id: e
+                                        id: t
                                     }]
                                 }))
                             }),
-                            selectAvatar: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            selectAvatar: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId;
                                     return {
-                                        url: "/avatars/".concat(e, "/select"),
+                                        url: "/avatars/".concat(t, "/select"),
                                         method: "PUT"
                                     }
                                 },
                                 invalidatesTags: ["CurrentAvatar"]
                             }),
-                            selectFallbackAvatar: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            selectFallbackAvatar: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId;
                                     return {
-                                        url: "/avatars/".concat(e, "/selectfallback"),
+                                        url: "/avatars/".concat(t, "/selectfallback"),
                                         method: "PUT"
                                     }
                                 }
                             }),
-                            getAvatar: t.query({
-                                query: function(t) {
-                                    var e = t.avatarId,
-                                        r = t.getListingData,
+                            getAvatar: e.query({
+                                query: function(e) {
+                                    var t = e.avatarId,
+                                        r = e.getListingData,
                                         a = void 0 !== r && r;
                                     return {
-                                        url: "/avatars/".concat(e),
+                                        url: "/avatars/".concat(t),
                                         params: {
                                             getListingData: a
                                         }
                                     }
                                 },
-                                providesTags: function(t, e, r) {
+                                providesTags: function(e, t, r) {
                                     var a = r.avatarId,
                                         u = r.getListingData;
                                     return [{
@@ -566,230 +564,186 @@
                                     }] : []))
                                 }
                             }),
-                            setAvatarPublic: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            setAvatarTags: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId,
+                                        r = e.tags;
                                     return {
-                                        url: "/avatars/".concat(e),
-                                        method: "PUT",
-                                        body: {
-                                            releaseStatus: "public"
-                                        }
-                                    }
-                                },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
-                                    return [{
-                                        type: "Avatar",
-                                        id: e
-                                    }, {
-                                        type: "AvatarWithListingData",
-                                        id: e
-                                    }]
-                                }))
-                            }),
-                            setAvatarPrivate: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
-                                    return {
-                                        url: "/avatars/".concat(e),
-                                        method: "PUT",
-                                        body: {
-                                            releaseStatus: "private"
-                                        }
-                                    }
-                                },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
-                                    return [{
-                                        type: "Avatar",
-                                        id: e
-                                    }, {
-                                        type: "AvatarWithListingData",
-                                        id: e
-                                    }]
-                                }))
-                            }),
-                            setAvatarTags: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId,
-                                        r = t.tags;
-                                    return {
-                                        url: "/avatars/".concat(e),
+                                        url: "/avatars/".concat(t),
                                         method: "PUT",
                                         body: {
                                             tags: r
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
+                                invalidatesTags: (0, i.T)((function(e) {
+                                    var t = e.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: e
+                                        id: t
                                     }, {
                                         type: "AvatarWithListingData",
-                                        id: e
+                                        id: t
                                     }]
                                 }))
                             }),
-                            deleteAvatar: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            deleteAvatar: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId;
                                     return {
-                                        url: "/avatars/".concat(e),
+                                        url: "/avatars/".concat(t),
                                         method: "DELETE"
                                     }
                                 },
                                 invalidatesTags: ["CurrentAvatar", "Avatar"]
                             }),
-                            enqueueImpostor: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            enqueueImpostor: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId;
                                     return {
-                                        url: "/avatars/".concat(e, "/impostor/enqueue"),
+                                        url: "/avatars/".concat(t, "/impostor/enqueue"),
                                         method: "POST"
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
+                                invalidatesTags: (0, i.T)((function(e) {
+                                    var t = e.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: e
+                                        id: t
                                     }, {
                                         type: "AvatarWithListingData",
-                                        id: e
+                                        id: t
                                     }]
                                 }))
                             }),
-                            deleteImpostors: t.mutation({
-                                query: function(t) {
-                                    var e = t.avatarId;
+                            deleteImpostors: e.mutation({
+                                query: function(e) {
+                                    var t = e.avatarId;
                                     return {
-                                        url: "/avatars/".concat(e, "/impostor"),
+                                        url: "/avatars/".concat(t, "/impostor"),
                                         method: "DELETE"
                                     }
                                 },
-                                invalidatesTags: (0, s.T)((function(t) {
-                                    var e = t.avatarId;
+                                invalidatesTags: (0, i.T)((function(e) {
+                                    var t = e.avatarId;
                                     return [{
                                         type: "Avatar",
-                                        id: e
+                                        id: t
                                     }, {
                                         type: "AvatarWithListingData",
-                                        id: e
+                                        id: t
                                     }]
                                 }))
                             }),
-                            getImpostorQueueStats: t.query({
+                            getImpostorQueueStats: e.query({
                                 query: function() {
                                     return {
                                         url: "/avatars/impostor/queue/stats"
                                     }
                                 }
                             }),
-                            getAllAvatars: t.query({
-                                queryFn: (r = (0, a.Z)(i().mark((function t(e, r, a, u) {
-                                    var o, s, c, l, v, d, p, f, y, m, g, b, w, h, A, O, S, T, I, P, x, E, j, q, k, D, C;
-                                    return i().wrap((function(t) {
-                                        for (;;) switch (t.prev = t.next) {
+                            getAllAvatars: e.query({
+                                queryFn: (r = (0, a.Z)(s().mark((function e(t, r, a, u) {
+                                    var o, i, c, l, v, d, p, f, y, m, g, b, w, h, A, O, S, x, I, T, E, P, j, q, k, D, C;
+                                    return s().wrap((function(e) {
+                                        for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                o = e.sort, s = void 0 === o ? "updated" : o, c = e.order, l = void 0 === c ? "descending" : c, v = e.releaseStatus, d = void 0 === v ? "all" : v, p = e.user, f = void 0 === p ? "me" : p, y = e.organization, m = void 0 === y ? "vrchat" : y, g = e.n, b = void 0 === g ? 20 : g, w = e.featured, h = e.userId, A = e.search, O = e.tag, S = e.notag, T = e.platform, I = e.maxUnityVersion, P = e.minUnityVersion, x = e.exactUnityVersion, E = e.minAssetVersion, j = e.maxAssetVersion, q = e.exactAssetVersion, k = [], D = 0;
+                                                o = t.sort, i = void 0 === o ? "updated" : o, c = t.order, l = void 0 === c ? "descending" : c, v = t.releaseStatus, d = void 0 === v ? "all" : v, p = t.user, f = void 0 === p ? "me" : p, y = t.organization, m = void 0 === y ? "vrchat" : y, g = t.n, b = void 0 === g ? 20 : g, w = t.featured, h = t.userId, A = t.search, O = t.tag, S = t.notag, x = t.platform, I = t.maxUnityVersion, T = t.minUnityVersion, E = t.exactUnityVersion, P = t.minAssetVersion, j = t.maxAssetVersion, q = t.exactAssetVersion, k = [], D = 0;
                                             case 3:
-                                                return t.next = 6, u({
+                                                return e.next = 6, u({
                                                     url: "avatars",
                                                     params: {
                                                         exactAssetVersion: q,
-                                                        exactUnityVersion: x,
+                                                        exactUnityVersion: E,
                                                         featured: w,
                                                         maxAssetVersion: j,
                                                         maxUnityVersion: I,
-                                                        minAssetVersion: E,
-                                                        minUnityVersion: P,
+                                                        minAssetVersion: P,
+                                                        minUnityVersion: T,
                                                         n: b,
                                                         notag: S,
                                                         offset: D,
                                                         order: l,
                                                         organization: m,
-                                                        platform: T,
+                                                        platform: x,
                                                         releaseStatus: d,
                                                         search: A,
-                                                        sort: s,
+                                                        sort: i,
                                                         tag: O,
                                                         user: f,
                                                         userId: h
                                                     }
                                                 });
                                             case 6:
-                                                if (!(C = t.sent).error) {
-                                                    t.next = 9;
+                                                if (!(C = e.sent).error) {
+                                                    e.next = 9;
                                                     break
                                                 }
-                                                return t.abrupt("return", {
+                                                return e.abrupt("return", {
                                                     error: C.error
                                                 });
                                             case 9:
                                                 if (!(C.data.length > 0)) {
-                                                    t.next = 13;
+                                                    e.next = 13;
                                                     break
                                                 }
-                                                return k.push.apply(k, (0, n.Z)(C.data)), D += b, t.abrupt("continue", 3);
+                                                return k.push.apply(k, (0, n.Z)(C.data)), D += b, e.abrupt("continue", 3);
                                             case 13:
-                                                return t.abrupt("break", 16);
+                                                return e.abrupt("break", 16);
                                             case 16:
-                                                return t.abrupt("return", {
+                                                return e.abrupt("return", {
                                                     data: k
                                                 });
                                             case 17:
                                             case "end":
-                                                return t.stop()
+                                                return e.stop()
                                         }
-                                    }), t)
-                                }))), function(t, e, a, n) {
+                                    }), e)
+                                }))), function(e, t, a, n) {
                                     return r.apply(this, arguments)
                                 }),
-                                providesTags: function(t, e) {
+                                providesTags: function(e, t) {
                                     return [{
                                         type: "Avatars",
                                         id: "LIST"
                                     }]
                                 }
                             }),
-                            getFavoriteAvatars: t.query({
-                                query: function(t) {
+                            getFavoriteAvatars: e.query({
+                                query: function(e) {
                                     return {
                                         url: "avatars/favorites",
                                         params: {
-                                            userId: t.userId,
-                                            n: t.n,
-                                            offset: t.offset,
-                                            tag: t.tag,
-                                            tags: t.tags
+                                            userId: e.userId,
+                                            n: e.n,
+                                            offset: e.offset,
+                                            tag: e.tag,
+                                            tags: e.tags
                                         }
                                     }
                                 },
-                                providesTags: function(t, e, r) {
+                                providesTags: function(e, t, r) {
                                     return [{
                                         type: "FavoriteAvatars",
                                         id: r.tag
                                     }]
                                 }
                             }),
-                            getAllFavoriteAvatars: t.query({
-                                queryFn: (e = (0, a.Z)(i().mark((function t() {
-                                    var e, r, a, u, o, s, l, v, d, p, f, y, m, g = arguments;
-                                    return i().wrap((function(t) {
-                                        for (;;) switch (t.prev = t.next) {
+                            getAllFavoriteAvatars: e.query({
+                                queryFn: (t = (0, a.Z)(s().mark((function e() {
+                                    var t, r, a, u, o, i, l, v, d, p, f, y, m, g = arguments;
+                                    return s().wrap((function(e) {
+                                        for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                r = (e = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, a = e.tags, u = e.userId, o = e.groups, s = void 0 === o ? [] : o, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : s), t.prev = 7, d.s();
+                                                r = (t = g.length > 0 && void 0 !== g[0] ? g[0] : {}).tag, a = t.tags, u = t.userId, o = t.groups, i = void 0 === o ? [] : o, l = g.length > 3 ? g[3] : void 0, v = [], d = c(r ? [r] : i), e.prev = 7, d.s();
                                             case 9:
                                                 if ((p = d.n()).done) {
-                                                    t.next = 27;
+                                                    e.next = 27;
                                                     break
                                                 }
                                                 f = p.value, y = 0;
                                             case 12:
-                                                return t.next = 15, l({
+                                                return e.next = 15, l({
                                                     url: "avatars/favorites",
                                                     params: {
                                                         n: 50,
@@ -800,46 +754,46 @@
                                                     }
                                                 });
                                             case 15:
-                                                if (!(m = t.sent).error) {
-                                                    t.next = 18;
+                                                if (!(m = e.sent).error) {
+                                                    e.next = 18;
                                                     break
                                                 }
-                                                return t.abrupt("return", {
+                                                return e.abrupt("return", {
                                                     error: m.error
                                                 });
                                             case 18:
                                                 if (!(m.data.length > 0)) {
-                                                    t.next = 22;
+                                                    e.next = 22;
                                                     break
                                                 }
-                                                return v.push.apply(v, (0, n.Z)(m.data)), y += 50, t.abrupt("continue", 12);
+                                                return v.push.apply(v, (0, n.Z)(m.data)), y += 50, e.abrupt("continue", 12);
                                             case 22:
-                                                return t.abrupt("break", 25);
+                                                return e.abrupt("break", 25);
                                             case 25:
-                                                t.next = 9;
+                                                e.next = 9;
                                                 break;
                                             case 27:
-                                                t.next = 32;
+                                                e.next = 32;
                                                 break;
                                             case 29:
-                                                t.prev = 29, t.t0 = t.catch(7), d.e(t.t0);
+                                                e.prev = 29, e.t0 = e.catch(7), d.e(e.t0);
                                             case 32:
-                                                return t.prev = 32, d.f(), t.finish(32);
+                                                return e.prev = 32, d.f(), e.finish(32);
                                             case 35:
-                                                return t.abrupt("return", {
+                                                return e.abrupt("return", {
                                                     data: v
                                                 });
                                             case 36:
                                             case "end":
-                                                return t.stop()
+                                                return e.stop()
                                         }
-                                    }), t, null, [
+                                    }), e, null, [
                                         [7, 29, 32, 35]
                                     ])
                                 }))), function() {
-                                    return e.apply(this, arguments)
+                                    return t.apply(this, arguments)
                                 }),
-                                providesTags: function(t, e) {
+                                providesTags: function(e, t) {
                                     var r = (arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}).tag;
                                     return [{
                                         type: "FavoriteAvatars",
@@ -848,7 +802,7 @@
                                 }
                             })
                         };
-                        var e, r
+                        var t, r
                     },
                     overrideExisting: !1
                 }).enhanceEndpoints({
@@ -864,11 +818,9 @@
                 A = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
                 O = p.useSelectAvatarMutation,
                 S = p.useSelectFallbackAvatarMutation,
-                T = p.useSetAvatarPrivateMutation,
-                I = p.useSetAvatarPublicMutation,
-                P = p.useSetAvatarTagsMutation,
-                x = p.useUpdateAvatarMutation
+                x = p.useSetAvatarTagsMutation,
+                I = p.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=477f8eba390724fdc52db798821ad33f5aef99a70264b101365d8978cd01212a.js.map
+//# sourceMappingURL=2194c80a0b9cd105895a5aa2981cf555754a5ebcd52da4970c65c00fc6757efc.js.map
