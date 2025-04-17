@@ -1,165 +1,146 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [8679], {
-        90502: (e, t) => {
-            var n = "arrow-up-right-from-square",
-                r = ["external-link"],
-                a = "f08e",
-                i = "M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [512, 512, r, a, i]
-            }, t.wl = t.DF
-        },
-        68149: (e, t, n) => {
-            var r = n(87709);
-            t.DF = {
-                prefix: r.prefix,
-                iconName: r.iconName,
-                icon: [r.width, r.height, r.aliases, r.unicode, r.svgPathData]
-            }, t.YI = t.DF, r.prefix, r.iconName, r.width, r.height, r.aliases, r.unicode, r.svgPathData, r.aliases
-        },
+    [8679, 682], {
         28963: (e, t) => {
-            var n = "hourglass",
-                r = [9203, 62032, "hourglass-empty"],
+            var r = "hourglass",
+                n = [9203, 62032, "hourglass-empty"],
                 a = "f254",
                 i = "M0 32C0 14.3 14.3 0 32 0L64 0 320 0l32 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 11c0 42.4-16.9 83.1-46.9 113.1L237.3 256l67.9 67.9c30 30 46.9 70.7 46.9 113.1l0 11c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0L64 512l-32 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-11c0-42.4 16.9-83.1 46.9-113.1L146.7 256 78.9 188.1C48.9 158.1 32 117.4 32 75l0-11C14.3 64 0 49.7 0 32zM96 64l0 11c0 25.5 10.1 49.9 28.1 67.9L192 210.7l67.9-67.9c18-18 28.1-42.4 28.1-67.9l0-11L96 64zm0 384l192 0 0-11c0-25.5-10.1-49.9-28.1-67.9L192 301.3l-67.9 67.9c-18 18-28.1 42.4-28.1 67.9l0 11z";
             t.DF = {
                 prefix: "fas",
-                iconName: n,
-                icon: [384, 512, r, a, i]
+                iconName: r,
+                icon: [384, 512, n, a, i]
             }, t.DH = t.DF
         },
-        20682: (e, t, n) => {
-            n.r(t), n.d(t, {
-                default: () => H
+        20682: (e, t, r) => {
+            r.r(t), r.d(t, {
+                default: () => _
             });
-            var r = n(15861),
-                a = n(4942),
-                i = n(54546),
-                l = n(68149),
-                s = n(90502),
-                c = n(76553),
-                o = n(64687),
-                u = n.n(o),
-                m = n(64258),
-                d = n(14411),
-                w = n(95896),
-                p = n(22202),
-                f = n(41255),
-                g = n(16869),
-                v = n(67978),
-                x = n(36183),
-                h = n(39270),
-                y = n(64358),
-                E = n(67294),
-                b = n(32981),
-                C = n(89250),
-                k = n(53637),
-                T = n(79655);
-            const N = function(e) {
+            var n = r(15861),
+                a = r(4942),
+                i = r(54546),
+                o = r(68149),
+                s = r(90502),
+                l = r(76553),
+                c = r(64687),
+                u = r.n(c),
+                d = r(64258),
+                m = r(14411),
+                p = r(95896),
+                f = r(22202),
+                w = r(41255),
+                g = r(16869),
+                v = r(67978),
+                y = r(36183),
+                E = r(39270),
+                h = r(64358),
+                b = r(67294),
+                x = r(32981),
+                C = r(89250),
+                T = r(53637),
+                S = r(79655);
+            const I = function(e) {
                 var t = e.listing,
-                    n = void 0 === t ? {} : t;
-                return E.createElement(d.JX, {
+                    r = void 0 === t ? {} : t;
+                return b.createElement(m.JX, {
                     className: "tw-text-center tw-mb-8 tw-items-center"
-                }, E.createElement(d.pw, {
+                }, b.createElement(m.pw, {
                     className: "tw-mb-5 tw-rounded-lg",
-                    imageId: null == n ? void 0 : n.imageId,
-                    alt: null == n ? void 0 : n.displayName,
+                    imageId: null == r ? void 0 : r.imageId,
+                    alt: null == r ? void 0 : r.displayName,
                     width: 150,
                     fitToCover: !0,
                     containerColor: "#252A30",
                     iconColor: "#404C58"
-                }), E.createElement("h4", null, "Listing Created!"), E.createElement("p", null, "You can edit and manage your listings from the ", E.createElement(T.rU, {
+                }), b.createElement("h4", null, "Listing Created!"), b.createElement("p", null, "You can edit and manage your listings from the ", b.createElement(S.rU, {
                     to: "/home/marketplace/storefront/stores"
                 }, "Store Manager"), "."))
             };
-            var L = n(68420),
-                D = n(99878),
-                P = n(68055),
-                S = n(28963),
-                O = n(91435),
-                I = n(74205),
-                j = n(60006),
+            var k = r(68420),
+                N = r(99878),
+                P = r(68055),
+                L = r(28963),
+                D = r(91435),
+                O = r(74205),
+                j = r(60006),
                 z = [{
                     label: "Instant",
                     value: "instant",
                     text: "Single-use items triggered instantly.",
                     redirect: "https://creators.vrchat.com/economy/listings#instant",
-                    icon: O.BD,
+                    icon: D.BD,
                     allowedTypes: ["Udon"]
                 }, {
                     label: "Temporary",
                     value: "duration",
                     text: "Offer access for a limited time.",
                     redirect: "https://creators.vrchat.com/economy/listings#temporary",
-                    icon: S.DH,
+                    icon: L.DH,
                     allowedTypes: ["Udon"]
                 }, {
                     label: "Permanent",
                     value: "permanent",
                     text: "Lifetime access to exclusive zones or features.",
                     redirect: "https://creators.vrchat.com/economy/listings#permanent",
-                    icon: I.SQ,
+                    icon: O.SQ,
                     allowedTypes: ["Udon", "Avatar"]
                 }];
-            const F = function(e) {
+            const X = function(e) {
                 var t = e.onDataChange,
-                    n = void 0 === t ? function() {} : t,
-                    r = e.currentListing,
-                    a = void 0 === r ? {} : r,
-                    l = (0, b.I0)(),
-                    s = (0, b.v9)((function(e) {
+                    r = void 0 === t ? function() {} : t,
+                    n = e.currentListing,
+                    a = void 0 === n ? {} : n,
+                    o = (0, x.I0)(),
+                    s = (0, x.v9)((function(e) {
                         return e.listingFlow
                     })),
-                    c = s.selectedListingType,
-                    o = s.selectedProducts,
-                    u = E.useState(c),
-                    m = (0, i.Z)(u, 2),
-                    w = m[0],
-                    p = m[1];
-                (0, E.useEffect)((function() {
-                    a.listingType && p(a.listingType)
+                    l = s.selectedListingType,
+                    c = s.selectedProducts,
+                    u = b.useState(l),
+                    d = (0, i.Z)(u, 2),
+                    p = d[0],
+                    f = d[1];
+                (0, b.useEffect)((function() {
+                    a.listingType && f(a.listingType)
                 }), [a]);
-                return E.createElement(d.JX, null, E.createElement("p", null, "Select the duration of your listing:"), E.createElement(d.JX, {
+                return b.createElement(m.JX, null, b.createElement("p", null, "Select the duration of your listing:"), b.createElement(m.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row"
                 }, z.map((function(e) {
-                    return E.createElement(d.JX, {
+                    return b.createElement(m.JX, {
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                o.length > 0 && l((0, h.kH)()), l((0, h.TY)(e)), p(e), n({
+                                c.length > 0 && o((0, E.kH)()), o((0, E.TY)(e)), f(e), r({
                                     listingType: e
                                 })
                             }(e.value)
                         },
-                        className: "".concat(w === e.value ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-max-w-[220px] tw-text-center tw-px-5 tw-py-7 tw-gap-3 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md tw-cursor-pointer")
-                    }, E.createElement(d.JX, {
+                        className: "".concat(p === e.value ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-max-w-[220px] tw-text-center tw-px-5 tw-py-7 tw-gap-3 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md tw-cursor-pointer")
+                    }, b.createElement(m.JX, {
                         className: "tw-items-center tw-justify-center tw-border-b-2 tw-border-solid tw-border-t-0 tw-border-l-0 tw-border-r-0 tw-border-[#404C58] tw-w-full tw-pb-3"
-                    }, E.createElement("span", {
-                        className: "".concat(w === e.value ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-absolute tw-top-3 tw-right-3 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
-                    }, w === e.value ? E.createElement(d.$1, {
+                    }, b.createElement("span", {
+                        className: "".concat(p === e.value ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-absolute tw-top-3 tw-right-3 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
+                    }, p === e.value ? b.createElement(m.$1, {
                         icon: P.LE
-                    }) : null), e.image ? E.createElement("img", {
+                    }) : null), e.image ? b.createElement("img", {
                         src: e.image,
                         alt: e.label,
                         className: "tw-h-12 tw-w-[56px]"
-                    }) : E.createElement(d.$1, {
+                    }) : b.createElement(m.$1, {
                         icon: e.icon,
                         className: "tw-text-5xl"
-                    }), e.label, E.createElement("small", {
+                    }), e.label, b.createElement("small", {
                         className: "tw-m-0 tw-text-xs tw-text-light-grey"
-                    }, e.text, " ", E.createElement("a", {
+                    }, e.text, " ", b.createElement("a", {
                         href: e.redirect
-                    }, "Learn More"))), E.createElement(d.JX, {
+                    }, "Learn More"))), b.createElement(m.JX, {
                         className: "tw-items-center tw-justify-center"
-                    }, E.createElement("small", {
+                    }, b.createElement("small", {
                         className: "tw-font-bold tw-mb-2"
-                    }, "Eligible Products"), E.createElement(d.X2, {
+                    }, "Eligible Products"), b.createElement(m.X2, {
                         className: "tw-gap-1"
                     }, e.allowedTypes.map((function(e) {
-                        return E.createElement(j.DR, {
+                        return b.createElement(j.DR, {
                             key: e,
                             bgColor: "#575757"
                         }, e)
@@ -167,32 +148,32 @@
                 }))))
             };
 
-            function X(e, t) {
-                var n = Object.keys(e);
+            function q(e, t) {
+                var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    t && (r = r.filter((function(t) {
+                    var n = Object.getOwnPropertySymbols(e);
+                    t && (n = n.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, r)
+                    }))), r.push.apply(r, n)
                 }
-                return n
+                return r
             }
 
-            function M(e) {
+            function F(e) {
                 for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? X(Object(n), !0).forEach((function(t) {
-                        (0, a.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : X(Object(n)).forEach((function(t) {
-                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? q(Object(r), !0).forEach((function(t) {
+                        (0, a.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : q(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var Z = (0, E.lazy)((function() {
-                    return Promise.all([n.e(8043), n.e(2704), n.e(8490)]).then(n.bind(n, 22704))
+            var M = (0, b.lazy)((function() {
+                    return Promise.all([r.e(8043), r.e(2704), r.e(8490)]).then(r.bind(r, 22704))
                 })),
-                J = {
+                Z = {
                     listingType: null,
                     products: [],
                     displayName: "",
@@ -201,39 +182,39 @@
                     active: !1,
                     productType: "listing"
                 },
-                q = "listingType",
-                A = "listingDetails",
-                B = "listingStoreSelect",
-                G = "listingCreated",
-                _ = {
-                    duration: [q, A, B, G],
-                    instant: [q, A, B, G],
-                    permanent: [q, A, B, G]
+                G = "listingType",
+                U = "listingDetails",
+                J = "listingStoreSelect",
+                A = "listingCreated",
+                B = {
+                    duration: [G, U, J, A],
+                    instant: [G, U, J, A],
+                    permanent: [G, U, J, A]
                 };
-            const H = function(e) {
+            const _ = function(e) {
                 var t = e.store,
-                    n = void 0 === t ? null : t,
+                    r = void 0 === t ? null : t,
                     a = e.onClose,
-                    o = void 0 === a ? function() {} : a,
-                    T = (0, b.I0)(),
+                    c = void 0 === a ? function() {} : a,
+                    S = (0, x.I0)(),
                     P = (0, C.s0)(),
-                    S = (0, p.XC)().data,
-                    O = (0, b.v9)((function(e) {
+                    L = (0, f.XC)().data,
+                    D = (0, x.v9)((function(e) {
                         return e.listingFlow
                     })),
-                    I = O.currentStep,
-                    j = O.selectedListingType,
-                    z = O.selectedProducts,
-                    X = O.isPreviewOpen,
-                    H = E.useState(null),
-                    U = (0, i.Z)(H, 2),
-                    Y = U[0],
-                    $ = U[1],
-                    Q = E.useState(J),
-                    R = (0, i.Z)(Q, 2),
+                    O = D.currentStep,
+                    j = D.selectedListingType,
+                    z = D.selectedProducts,
+                    q = D.isPreviewOpen,
+                    _ = b.useState(null),
+                    H = (0, i.Z)(_, 2),
+                    Q = H[0],
+                    Y = H[1],
+                    $ = b.useState(Z),
+                    R = (0, i.Z)($, 2),
                     V = R[0],
-                    K = R[1],
-                    W = (0, E.useMemo)((function() {
+                    W = R[1],
+                    K = (0, b.useMemo)((function() {
                         return z.filter((function(e) {
                             return e.avatarId
                         })).map((function(e) {
@@ -242,50 +223,50 @@
                     }), [z]),
                     ee = (0, g.G4)(),
                     te = (0, i.Z)(ee, 2),
-                    ne = te[0],
-                    re = te[1],
-                    ae = (re.isSuccess, re.isLoading),
-                    ie = (re.isError, re.error, (0, x.Ci)({
-                        sellerId: S.id,
+                    re = te[0],
+                    ne = te[1],
+                    ae = (ne.isSuccess, ne.isLoading),
+                    ie = (ne.isError, ne.error, (0, y.Ci)({
+                        sellerId: L.id,
                         managementPov: !0
                     }, {
-                        skip: !S
+                        skip: !L
                     })),
-                    le = ie.data,
+                    oe = ie.data,
                     se = ie.isLoading,
-                    ce = (ie.isError, ie.error, (0, v.x3)({
-                        userId: S.id,
+                    le = (ie.isError, ie.error, (0, v.x3)({
+                        userId: L.id,
                         archived: !1
                     }, {
-                        skip: !S && "listingDetails" !== listingDetails
+                        skip: !L && "listingDetails" !== listingDetails
                     })),
-                    oe = ce.data,
-                    ue = ce.isLoading,
-                    me = (ce.isError, ce.error, (0, f.Qb)({
-                        avatarIds: W
+                    ce = le.data,
+                    ue = le.isLoading,
+                    de = (le.isError, le.error, (0, w.Qb)({
+                        avatarIds: K
                     }, {
-                        skip: !W.length
+                        skip: !K.length
                     })),
-                    de = me.data,
-                    we = (me.isFetching, me.isError, me.error, (0, E.useMemo)((function() {
-                        return (null != de ? de : []).map((function(e) {
+                    me = de.data,
+                    pe = (de.isFetching, de.isError, de.error, (0, b.useMemo)((function() {
+                        return (null != me ? me : []).map((function(e) {
                             return {
                                 fileId: e.id,
                                 fileVersion: e.latestVersionFile.version,
                                 order: null == e ? void 0 : e.order
                             }
                         }))
-                    }), [de]));
-                (0, E.useEffect)((function() {
+                    }), [me]));
+                (0, b.useEffect)((function() {
                     return function() {
-                        T((0, h.rk)())
+                        S((0, E.rk)())
                     }
                 }), []);
-                var pe = function(e) {
-                        e.listingType ? K(M(M({}, J), e)) : K(M(M({}, V), e))
+                var fe = function(e) {
+                        e.listingType ? W(F(F({}, Z), e)) : W(F(F({}, V), e))
                     },
-                    fe = function() {
-                        var e = (0, r.Z)(u().mark((function e(t) {
+                    we = function() {
+                        var e = (0, n.Z)(u().mark((function e(t) {
                             return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -295,7 +276,7 @@
                                         }
                                         return e.abrupt("return");
                                     case 2:
-                                        pe({
+                                        fe({
                                             listingType: t
                                         }), ge();
                                     case 4:
@@ -309,8 +290,8 @@
                         }
                     }(),
                     ge = function() {
-                        var e, t = (e = _[j].indexOf(I), _[j][e + 1] || I);
-                        T((0, h.Td)(w._9[t])), T((0, h.Bq)(t))
+                        var e, t = (e = B[j].indexOf(O), B[j][e + 1] || O);
+                        S((0, E.Td)(p._9[t])), S((0, E.Bq)(t))
                     },
                     ve = function() {
                         var e = function() {
@@ -318,33 +299,33 @@
                                     immediateStep: null,
                                     nextStep: null
                                 };
-                                var e = _[j].indexOf(I);
+                                var e = B[j].indexOf(O);
                                 return {
-                                    immediateStep: _[j][e - 1] || null,
-                                    nextStep: _[j][e - 2] || null
+                                    immediateStep: B[j][e - 1] || null,
+                                    nextStep: B[j][e - 2] || null
                                 }
                             }(),
                             t = e.immediateStep,
-                            n = e.nextStep;
-                        if (!t) return T((0, h.Bq)(q)), void T((0, h.IT)(null));
-                        T((0, h.Td)(w._9[t])), T((0, h.Bq)(t)), T((0, h.IT)(n))
+                            r = e.nextStep;
+                        if (!t) return S((0, E.Bq)(G)), void S((0, E.IT)(null));
+                        S((0, E.Td)(p._9[t])), S((0, E.Bq)(t)), S((0, E.IT)(r))
                     },
-                    xe = function() {
-                        var e = (0, r.Z)(u().mark((function e() {
-                            var t, n, r;
+                    ye = function() {
+                        var e = (0, n.Z)(u().mark((function e() {
+                            var t, r, n;
                             return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, ne(M(M({}, V), {}, {
-                                            sellerId: S.id
+                                        return e.prev = 0, e.next = 3, re(F(F({}, V), {}, {
+                                            sellerId: L.id
                                         })).unwrap();
                                     case 3:
-                                        return t = e.sent, $(t.listing), e.abrupt("return", ge());
+                                        return t = e.sent, Y(t.listing), e.abrupt("return", ge());
                                     case 8:
-                                        e.prev = 8, e.t0 = e.catch(0), T((0, m.d)({
+                                        e.prev = 8, e.t0 = e.catch(0), S((0, d.d)({
                                             title: "Failed to create listing!",
-                                            icon: c.eH,
-                                            message: null !== (n = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Something went wrong",
+                                            icon: l.eH,
+                                            message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
                                         }));
@@ -360,164 +341,301 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    he = function(e) {
-                        T((0, h.Td)(null)), T((0, h.xj)(e))
+                    Ee = function(e) {
+                        S((0, E.Td)(null)), S((0, E.xj)(e))
                     },
-                    ye = function() {
-                        o(), K(J)
+                    he = function() {
+                        c(), W(Z)
                     },
-                    Ee = se || ue || ae,
-                    be = (0, E.useMemo)((function() {
+                    be = se || ue || ae,
+                    xe = (0, b.useMemo)((function() {
                         if (!j) return !1;
                         if ("permanent" !== j && z.some((function(e) {
                                 return e.avatarId
                             }))) return !1;
-                        if (I === A) {
+                        if (O === U) {
                             if ("duration" === V.listingType) {
-                                if (![w.PG.MIN, w.PG.HOUR, w.PG.DAY].includes(V.durationType)) return !1;
-                                if (!((0, y.qG)(V.durationType, V.duration) && Number.isInteger(parseFloat(V.duration)))) return !1
+                                if (![p.PG.MIN, p.PG.HOUR, p.PG.DAY].includes(V.durationType)) return !1;
+                                if (!((0, h.qG)(V.durationType, V.duration) && Number.isInteger(parseFloat(V.duration)))) return !1
                             }
                             var e = V.displayName.length >= 3,
                                 t = V.priceTokens >= 100 && V.priceTokens <= 1e4 && Number.isInteger(parseFloat(V.priceTokens)),
-                                n = V.products.length > 0 && V.products.length <= w._1;
-                            return e && t && n
+                                r = V.products.length > 0 && V.products.length <= p._1;
+                            return e && t && r
                         }
-                        return !Ee
-                    }), [I, V, z, j]);
-                return E.createElement(E.Fragment, null, !X && E.createElement(d.JX, {
+                        return !be
+                    }), [O, V, z, j]);
+                return b.createElement(b.Fragment, null, !q && b.createElement(m.JX, {
                     className: "tw-w-full"
                 }, function() {
-                    switch (I) {
-                        case q:
-                            return E.createElement(F, {
-                                onDataChange: pe,
+                    switch (O) {
+                        case G:
+                            return b.createElement(X, {
+                                onDataChange: fe,
                                 listing: V
                             });
-                        case A:
-                            return E.createElement(L.Z, {
-                                onDataChange: pe,
-                                products: oe,
+                        case U:
+                            return b.createElement(k.Z, {
+                                onDataChange: fe,
+                                products: ce,
                                 productsLoading: ue,
                                 listingType: V.listingType,
                                 editedListing: V,
                                 originalListing: V
                             });
-                        case B:
-                            return E.createElement(D.Z, {
+                        case J:
+                            return b.createElement(N.Z, {
                                 products: V.products,
-                                onDataChange: pe,
-                                stores: le,
-                                activeStore: n
+                                onDataChange: fe,
+                                stores: oe,
+                                activeStore: r
                             });
-                        case G:
-                            return E.createElement(N, {
-                                listing: Y
+                        case A:
+                            return b.createElement(I, {
+                                listing: Q
                             });
                         default:
                             return null
                     }
-                }(), E.createElement(d.X2, {
+                }(), b.createElement(m.X2, {
                     className: "tw-mt-8 tw-gap-3"
-                }, E.createElement(d.X2, {
+                }, b.createElement(m.X2, {
                     className: "tw-flex-auto"
                 }, function() {
-                    switch (I) {
-                        case q:
-                            return E.createElement(d.zx, {
+                    switch (O) {
+                        case G:
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
-                                onClick: ye,
+                                onClick: he,
                                 neutral: !0
                             }, "Cancel");
-                        case G:
-                            return n ? E.createElement(d.zx, {
+                        case A:
+                            return r ? b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
-                                onClick: ye
-                            }, "Close") : E.createElement(d.zx, {
+                                onClick: he
+                            }, "Close") : b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
                                 onClick: function() {
                                     return P("/home/marketplace/storefront/stores")
                                 }
                             }, "Go to Store Manager");
-                        case B:
-                            return E.createElement(d.zx, {
+                        case J:
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex tw-w-[200px]",
                                 neutral: !0,
                                 onClick: ve
                             }, "Back");
                         default:
-                            return E.createElement(d.zx, {
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
                                 onClick: ve
                             }, "Back")
                     }
-                }()), E.createElement(d.X2, {
+                }()), b.createElement(m.X2, {
                     className: "tw-flex-auto tw-justify-end"
                 }, function() {
-                    switch (I) {
-                        case q:
-                            return E.createElement(d.zx, {
+                    switch (O) {
+                        case G:
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
                                 onClick: function() {
-                                    return fe(V.listingType)
+                                    return we(V.listingType)
                                 },
-                                disabled: !be || !j
+                                disabled: !xe || !j
                             }, "Next");
-                        case G:
-                            return E.createElement(d.zx, {
+                        case A:
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
-                                onClick: ye,
-                                disabled: !be
+                                onClick: he,
+                                disabled: !xe
                             }, "Done");
-                        case B:
-                            return E.createElement(E.Fragment, null, "permanent" === j && E.createElement(d.zx, {
+                        case J:
+                            return b.createElement(b.Fragment, null, "permanent" === j && b.createElement(m.zx, {
                                 transparent: !0,
                                 containerClasses: "tw-w-fit tw-mr-5",
                                 onClick: function() {
-                                    return he(!0)
+                                    return Ee(!0)
                                 }
-                            }, E.createElement(d.$1, {
+                            }, b.createElement(m.$1, {
                                 icon: s.wl,
                                 className: "tw-mr-2"
-                            }), "Preview Listing"), E.createElement(d.zx, {
+                            }), "Preview Listing"), b.createElement(m.zx, {
                                 containerClasses: "tw-w-[200px]",
-                                onClick: xe,
-                                disabled: !be
+                                onClick: ye,
+                                disabled: !xe
                             }, "Create"));
                         default:
-                            return E.createElement(d.zx, {
+                            return b.createElement(m.zx, {
                                 containerClasses: "tw-flex-1",
                                 onClick: ge,
-                                disabled: !be
+                                disabled: !xe
                             }, "Next")
                     }
-                }()))), X && E.createElement(k.Z, {
+                }()))), q && b.createElement(T.Z, {
                     className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-border tw-border-[#2D363F] tw-rounded-lg tw-p-5"
-                }, E.createElement(d.X2, {
+                }, b.createElement(m.X2, {
                     className: "tw-justify-center tw-items-center tw-mb-3"
-                }, E.createElement(d.zx, {
+                }, b.createElement(m.zx, {
                     neutral: !0,
                     containerClasses: "tw-w-fit",
                     onClick: function() {
-                        return T((0, h.xj)(!1)), void T((0, h.Td)(w._9[I]))
+                        return S((0, E.xj)(!1)), void S((0, E.Td)(p._9[O]))
                     }
-                }, E.createElement(d.$1, {
-                    icon: l.YI
-                }), " Close Preview")), E.createElement(E.Suspense, {
-                    fallback: E.createElement("div", null, "Loading...")
-                }, E.createElement(Z, {
+                }, b.createElement(m.$1, {
+                    icon: o.YI
+                }), " Close Preview")), b.createElement(b.Suspense, {
+                    fallback: b.createElement("div", null, "Loading...")
+                }, b.createElement(M, {
                     isPreview: !0,
                     products: z,
-                    galleryImages: we,
+                    galleryImages: pe,
                     listing: V,
                     onClose: function() {
-                        return he(!1)
+                        return Ee(!1)
                     }
                 }))))
             }
+        },
+        36183: (e, t, r) => {
+            r.d(t, {
+                Ci: () => l,
+                j6: () => c,
+                md: () => s,
+                mt: () => u
+            });
+            var n = r(45987),
+                a = r(61509),
+                i = ["storeId"],
+                o = a.S.injectEndpoints({
+                    endpoints: function(e) {
+                        return {
+                            getStores: e.query({
+                                query: function(e) {
+                                    var t = e.sellerId,
+                                        r = e.managementPov,
+                                        n = void 0 !== r && r,
+                                        a = e.n,
+                                        i = void 0 === a ? 50 : a,
+                                        o = e.offset;
+                                    return {
+                                        url: "economy/stores",
+                                        params: {
+                                            sellerId: t,
+                                            managementPov: n,
+                                            n: i,
+                                            offset: void 0 === o ? 0 : o
+                                        }
+                                    }
+                                },
+                                providesTags: ["Stores"]
+                            }),
+                            getStore: e.query({
+                                query: function(e) {
+                                    var t = e.storeId,
+                                        r = e.worldId,
+                                        n = e.groupId,
+                                        a = e.creatorId,
+                                        i = e.hydrateListings,
+                                        o = void 0 !== i && i,
+                                        s = e.hydrateProducts,
+                                        l = void 0 !== s && s,
+                                        c = e.managementPov;
+                                    return {
+                                        url: "economy/store",
+                                        params: {
+                                            storeId: t,
+                                            worldId: r,
+                                            groupId: n,
+                                            creatorId: a,
+                                            hydrateListings: o,
+                                            hydrateProducts: l,
+                                            managementPov: void 0 !== c && c
+                                        }
+                                    }
+                                },
+                                providesTags: function(e, t, r) {
+                                    return [{
+                                        type: "Store",
+                                        id: r.storeId
+                                    }]
+                                }
+                            }),
+                            createStore: e.mutation({
+                                query: function(e) {
+                                    var t = e.displayName,
+                                        r = e.storeType,
+                                        n = e.worldId,
+                                        a = e.groupId,
+                                        i = e.tags,
+                                        o = void 0 === i ? [] : i,
+                                        s = e.description;
+                                    return {
+                                        url: "economy/store",
+                                        method: "POST",
+                                        body: {
+                                            displayName: t,
+                                            storeType: r,
+                                            worldId: n,
+                                            groupId: a,
+                                            tags: o,
+                                            description: void 0 === s ? "" : s
+                                        }
+                                    }
+                                },
+                                invalidatesTags: function() {
+                                    return ["Stores", "Worlds"]
+                                }
+                            }),
+                            updateStore: e.mutation({
+                                query: function(e) {
+                                    var t = e.storeId,
+                                        r = (0, n.Z)(e, i);
+                                    return {
+                                        url: "economy/store/".concat(t),
+                                        method: "PUT",
+                                        body: r
+                                    }
+                                },
+                                invalidatesTags: function(e, t, r) {
+                                    return [{
+                                        type: "Store",
+                                        id: r.storeId
+                                    }, "Stores", {
+                                        type: "UserGroups",
+                                        id: e.sellerId
+                                    }, "Worlds"]
+                                }
+                            }),
+                            deleteStore: e.mutation({
+                                query: function(e) {
+                                    var t = e.storeId;
+                                    return {
+                                        url: "economy/store/".concat(t),
+                                        method: "DELETE"
+                                    }
+                                },
+                                invalidatesTags: function(e, t, r) {
+                                    return [{
+                                        type: "Store",
+                                        id: r.storeId
+                                    }, "Stores"]
+                                }
+                            })
+                        }
+                    },
+                    overrideExisting: !1
+                }).enhanceEndpoints({
+                    addTagTypes: ["Stores", "Store", "UserGroups"]
+                }),
+                s = o.useGetStoreQuery,
+                l = o.useGetStoresQuery,
+                c = o.useCreateStoreMutation,
+                u = o.useUpdateStoreMutation;
+            o.useDeleteStoreMutation
         }
     }
 ]);
-//# sourceMappingURL=587c6427c445d3db7ee1db6a195cfe48b316cc6c6dcc253d3f83050c3ebf421f.js.map
+//# sourceMappingURL=166d0b5fc7275b125f5fe6fb114baafaddb6b248ddb449f0efaba75785f3695f.js.map

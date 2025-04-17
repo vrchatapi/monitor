@@ -329,7 +329,7 @@
                     className: "md:tw-flex-row tw-gap-3 tw-items-center md:tw-items-stretch"
                 }, E.createElement(S.pw, {
                     width: 144,
-                    className: "tw-rounded-md",
+                    className: "tw-rounded-md tw-shrink-0",
                     imgClassName: "tw-aspect-square",
                     imageId: Je || (null == _ ? void 0 : _.file),
                     fallbackSrc: F,
@@ -621,4 +621,4 @@
         }
     }
 ]);
-//# sourceMappingURL=727a483272114de0dceb3f92f444a3a43a400e3b414e33be7943275ca8e86801.js.map
+//# sourceMappingURL=29391bcac7779596101ca580086394d1332dc37cb17f5a2f8d1f7f6840fb7946.js.map

@@ -1106,7 +1106,7 @@
                 cancelCallback: xe().func.isRequired
             };
             const Ie = ke;
-            var Ne = ["thumbnailImageUrl"];
+            var Ne = ["thumbnailImageUrl", "acknowledgements"];
 
             function Ze(e, t) {
                 var r = Object.keys(e);
@@ -1248,13 +1248,14 @@
                 (0, m.useEffect)(et, [h, x]);
                 var nt = function() {
                         var e = (0, a.Z)(d().mark((function e() {
-                            var t, r, a, o;
+                            var t, r, a, o, l;
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = [].concat((0, n.Z)(S), (0, n.Z)(ge), (0, n.Z)(we)), V.thumbnailImageUrl, r = (0, Q.Z)(V, Ne), e.prev = 2, e.next = 5, We({
+                                        return t = [].concat((0, n.Z)(S), (0, n.Z)(ge), (0, n.Z)(we)), V.thumbnailImageUrl, r = V.acknowledgements, a = (0, Q.Z)(V, Ne), e.prev = 2, e.next = 5, We({
                                             avatarId: c,
-                                            data: Se(Se({}, r), {}, {
+                                            data: Se(Se({}, a), {}, {
+                                                acknowledgements: r || "",
                                                 tags: t,
                                                 styles: {
                                                     primary: W,
@@ -1274,7 +1275,7 @@
                                         e.prev = 9, e.t0 = e.catch(2), console.error("Error updating avatar:", e.t0), p((0, g.d)({
                                             title: "Failed to update avatar",
                                             icon: ne.eH,
-                                            message: null !== (a = null === (o = e.t0.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== a ? a : "Something went wrong",
+                                            message: null !== (o = null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== o ? o : "Something went wrong",
                                             color: "danger",
                                             timeout: 5e3
                                         }));
@@ -2621,4 +2622,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8b640561b785b4c05a54aafd265adc915e77c13accb417eefdba7610fb74146c.js.map
+//# sourceMappingURL=50c093fbf3538f068822feca0832529e157da5ce7b8beb0bfafa927729d55002.js.map
