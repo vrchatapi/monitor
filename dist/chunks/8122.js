@@ -288,10 +288,11 @@
                     className: "tw-gap-2 tw-w-full tw-grid tw-grid-cols-2 tw-mb-3"
                 }, m.length > 0 && m.map((function(e) {
                     return x.createElement(D.Z, {
-                        key: e.id,
-                        listingData: e
+                        key: e,
+                        listingId: e,
+                        showImage: !0
                     })
-                })), x.createElement("p", null, "No listings associated with this product.")), x.createElement(w.zx, {
+                })), 0 === m.length && x.createElement("p", null, "No listings associated with this product.")), x.createElement(w.zx, {
                     onClick: n,
                     containerClasses: "tw-w-full"
                 }, "Done"))
@@ -820,4 +821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5f94097e6ef4b4878af8f0cde3077763f6deb5f3e3721805d96ba1a2320525a5.js.map
+//# sourceMappingURL=a9d69104116ed9361a74fc5e59d6523cd667eaef8f1ca082b0140dabf3ed961a.js.map
