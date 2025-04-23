@@ -268,62 +268,63 @@
                     De = j ? ye : P,
                     Ze = !("private" === (null == C ? void 0 : C.releaseStatus)),
                     ze = j || (null == C ? void 0 : C.authorId) === ye.id,
-                    Ue = E.useMemo((function() {
+                    Ue = ze,
+                    Xe = E.useMemo((function() {
                         return null == ie ? void 0 : ie.some((function(e) {
                             return e.isCurrent && "avatar" === e.forType && e.forId === C.id && e.licenseHolderId === ye.id
                         }))
                     }), [C, ie, ye]),
-                    Xe = ze || Ue || Ze,
-                    $e = xe || ze || Ue || Ze,
-                    qe = (xe || ze) && !ee && !W && !(null != C && C.activeAssetReviewId) && !(null != C && C.productId) && "hidden" !== (null == C ? void 0 : C.releaseStatus),
-                    Me = 1 === R.length && R[0].productType === J.Pm.AVATAR,
-                    Fe = (0, T.S6)({
+                    $e = ze || Xe || Ze,
+                    qe = xe || ze || Xe || Ze,
+                    Me = (xe || ze) && !ee && !W && !(null != C && C.activeAssetReviewId) && !(null != C && C.productId) && "hidden" !== (null == C ? void 0 : C.releaseStatus),
+                    Fe = 1 === R.length && R[0].productType === J.Pm.AVATAR,
+                    Ve = (0, T.S6)({
                         fileUrl: (null == De ? void 0 : De.profilePicOverride) || (null == De ? void 0 : De.currentAvatarImageUrl),
                         width: "512"
                     }),
-                    Ve = (0, T.S6)({
+                    Je = (0, T.S6)({
                         fileUrl: null == De ? void 0 : De.userIcon,
                         width: "256"
                     }),
-                    Je = (0, T.S6)(Q(Q(Q({
+                    Le = (0, T.S6)(Q(Q(Q({
                         width: "512"
-                    }, !Me && _ && {
+                    }, !Fe && _ && {
                         fileId: null == _ ? void 0 : _.imageId
-                    }), Me && _ && {
+                    }), Fe && _ && {
                         fileId: null === (t = R[0]) || void 0 === t ? void 0 : t.imageId
                     }), C && {
                         fileUrl: null == C ? void 0 : C.imageUrl
                     })),
-                    Le = E.useMemo((function() {
+                    He = E.useMemo((function() {
                         return Object.keys(L.VT).reduce((function(e, t) {
                             var a = (0, V.F)(null == C ? void 0 : C.unityPackages, t);
                             return a && (e[t] = a), e
                         }), {})
                     }), [C]),
-                    He = E.useMemo((function() {
+                    Be = E.useMemo((function() {
                         return Object.entries(L.VT).filter((function(e) {
                             var t = (0, r.Z)(e, 1)[0];
-                            return !!Le[t]
+                            return !!He[t]
                         }))
-                    }), [Le]),
-                    Be = E.useMemo((function() {
+                    }), [He]),
+                    We = E.useMemo((function() {
                         var e, t;
                         return null !== (e = null == C || null === (t = C.tags) || void 0 === t ? void 0 : t.some((function(e) {
                             return G.includes(e)
                         }))) && void 0 !== e && e
                     }), [null == C ? void 0 : C.tags]),
-                    We = E.useMemo((function() {
+                    Qe = E.useMemo((function() {
                         return null == C ? void 0 : C.tags.filter((function(e) {
                             return e.startsWith(H.i.AUTHOR)
                         }))
                     }), [null == C ? void 0 : C.tags]),
-                    Qe = E.useMemo((function() {
+                    Ye = E.useMemo((function() {
                         var e, t;
-                        return [null == C || null === (e = C.styles) || void 0 === e ? void 0 : e.primary, null == C || null === (t = C.styles) || void 0 === t ? void 0 : t.secondary].concat((0, n.Z)((null == We ? void 0 : We.map((function(e) {
+                        return [null == C || null === (e = C.styles) || void 0 === e ? void 0 : e.primary, null == C || null === (t = C.styles) || void 0 === t ? void 0 : t.secondary].concat((0, n.Z)((null == Qe ? void 0 : Qe.map((function(e) {
                             return e.replace(Y, "")
                         }))) || [])).filter(Boolean)
-                    }), [null == C || null === (a = C.styles) || void 0 === a ? void 0 : a.primary, null == C || null === (l = C.styles) || void 0 === l ? void 0 : l.secondary, We]),
-                    Ye = !(null == Qe || !Qe.length);
+                    }), [null == C || null === (a = C.styles) || void 0 === a ? void 0 : a.primary, null == C || null === (l = C.styles) || void 0 === l ? void 0 : l.secondary, Qe]),
+                    Ge = !(null == Ye || !Ye.length);
                 if (!C && !_) return null;
                 return E.createElement(E.Fragment, null, E.createElement(S.JX, {
                     className: "md:tw-flex-row tw-gap-3 tw-items-center md:tw-items-stretch"
@@ -331,7 +332,7 @@
                     width: 144,
                     className: "tw-rounded-md tw-shrink-0",
                     imgClassName: "tw-aspect-square",
-                    imageId: Je || (null == _ ? void 0 : _.file),
+                    imageId: Le || (null == _ ? void 0 : _.file),
                     fallbackSrc: F,
                     fitToCover: !0,
                     alt: "".concat(null == C ? void 0 : C.name, " Thumbnail") || 0
@@ -370,7 +371,7 @@
                     className: (0, x.cx)("tw-mb-0 tw-text-truncate tw-line-clamp-1 tw-break-all tw-leading-[1.25]", {
                         "tw-flex-grow": !ze
                     })
-                }, (null == C ? void 0 : C.name) || (null == _ ? void 0 : _.displayName)), ze && !j && E.createElement(S.JX, {
+                }, (null == C ? void 0 : C.name) || (null == _ ? void 0 : _.displayName)), Ue && !j && E.createElement(S.JX, {
                     className: "tw-justify-center md:tw-px-1 tw-flex-grow"
                 }, E.createElement(S.X2, {
                     className: "tw-ml-2 tw-mt-2 md:tw-m-0"
@@ -395,15 +396,15 @@
                     className: "tw-text-[#737372]"
                 }, "By", " ", E.createElement(h.rU, {
                     to: "/home/user/".concat((null == C ? void 0 : C.authorId) || De.id)
-                }, Ve && E.createElement("img", {
+                }, Je && E.createElement("img", {
                     className: "tw-aspect-square tw-w-6 tw-rounded-full tw-mr-1",
-                    src: Ve,
+                    src: Je,
                     alt: ""
                 }), (null == C ? void 0 : C.authorName) || De.displayName), R.length >= 1 && E.createElement(E.Fragment, null, " | ", E.createElement("small", null, E.createElement(S.$1, {
                     icon: p.hV
-                }), " ", R.length, " included product", 1 === R.length ? "" : "s"))), Ye && E.createElement("ul", {
+                }), " ", R.length, " included product", 1 === R.length ? "" : "s"))), Ge && E.createElement("ul", {
                     className: "tw-flex tw-flex-row tw-flex-wrap tw-m-0 tw-p-0 tw-gap-1 tw-list-none"
-                }, Qe.map((function(e) {
+                }, Ye.map((function(e) {
                     return E.createElement("li", {
                         key: e,
                         className: "tw-text-xs tw-px-2 tw-py-1 tw-bg-[#575757] tw-rounded-full"
@@ -413,11 +414,11 @@
                 }, E.createElement(S._q, {
                     className: "tw-flex-row tw-items-center tw-gap-2 tw-bg-cover tw-bg-center",
                     style: {
-                        backgroundImage: "linear-gradient( rgba(37, 42, 48, 0.75), rgba(37, 42, 48, 0.75) ), url(".concat(Fe, ")")
+                        backgroundImage: "linear-gradient( rgba(37, 42, 48, 0.75), rgba(37, 42, 48, 0.75) ), url(".concat(Ve, ")")
                     }
-                }, Ve && E.createElement("img", {
+                }, Je && E.createElement("img", {
                     className: "tw-aspect-square tw-w-12 tw-flex-0 tw-rounded-full tw-border-solid tw-border-2 tw-border-gray-700",
-                    src: Ve,
+                    src: Je,
                     alt: ""
                 }), E.createElement(S.JX, {
                     className: "tw-flex-auto"
@@ -468,7 +469,7 @@
                     onClick: function() {
                         j || we(_)
                     }
-                }, "Purchase"), Me && E.createElement(S.zx, {
+                }, "Purchase"), Fe && E.createElement(S.zx, {
                     onClick: function() {
                         j || he(_)
                     },
@@ -491,26 +492,26 @@
                         key: e.id,
                         productData: e
                     })
-                })))))), !j && (qe || $e || Xe && C) && E.createElement(S._q, {
+                })))))), !j && (Me || qe || $e && C) && E.createElement(S._q, {
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-4"
                 }, "Manage Avatar"), E.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-3"
-                }, $e && E.createElement(S.zx, {
+                }, qe && E.createElement(S.zx, {
                     disabled: ae,
                     loading: ae,
                     onClick: fe
                 }, E.createElement(S.$1, {
                     icon: w.mn
-                }), " Change Into Avatar"), $e && Be && E.createElement(S.zx, {
+                }), " Change Into Avatar"), qe && We && E.createElement(S.zx, {
                     disabled: le,
                     loading: le,
                     onClick: ve,
                     neutral: !0
                 }, E.createElement(S.$1, {
                     icon: u.SD
-                }), " Use as Fallback"), qe && E.createElement(E.Fragment, null, E.createElement(O.Z, {
+                }), " Use as Fallback"), Me && E.createElement(E.Fragment, null, E.createElement(O.Z, {
                     headerText: "Change avatar release status?",
                     confirmText: "Yes, make it ".concat("private" === C.releaseStatus ? "public" : "private"),
                     confirmCallback: function() {
@@ -532,7 +533,7 @@
                         Oe(!0)
                     },
                     neutral: !0
-                }, "Make Avatar ", "private" === C.releaseStatus ? "Public" : "Private")), Xe && C && E.createElement(I.Z, {
+                }, "Make Avatar ", "private" === C.releaseStatus ? "Public" : "Private")), $e && C && E.createElement(I.Z, {
                     type: "avatar",
                     contentId: C.id,
                     authorId: C.authorId,
@@ -542,13 +543,13 @@
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-4"
-                }, "Performance Rating"), He.length ? E.createElement("table", {
+                }, "Performance Rating"), Be.length ? E.createElement("table", {
                     className: "tw-w-full"
-                }, He.map((function(e, t) {
+                }, Be.map((function(e, t) {
                     var a, n = (0, r.Z)(e, 2),
                         l = n[0],
                         c = n[1].label,
-                        o = Le[l],
+                        o = He[l],
                         u = E.createElement("div", {
                             className: "tw-flex tw-items-center tw-gap-2"
                         }, E.createElement(S.$1, {
@@ -621,4 +622,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29391bcac7779596101ca580086394d1332dc37cb17f5a2f8d1f7f6840fb7946.js.map
+//# sourceMappingURL=1a0afbc66c0b6874f52b637a0fdbc12f7b291e1d2eb00206db3c0697813d409c.js.map

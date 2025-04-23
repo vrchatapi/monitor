@@ -237,15 +237,15 @@
                         })
                     },
                     slim: !0
-                }, r.createElement(E, null, r.createElement(g, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
+                }, r.createElement(g, null, r.createElement(E, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
             };
-            var E = (0, s.Z)(l.JX, {
+            var g = (0, s.Z)(l.JX, {
                     target: "e1c8z0io1"
                 })({
                     name: "1d3w5wq",
                     styles: "width:100%"
                 }),
-                g = (0, s.Z)("p", {
+                E = (0, s.Z)("p", {
                     target: "e1c8z0io0"
                 })({
                     name: "1tmloek",
@@ -273,10 +273,10 @@
                     m = (0, h.Bb)(),
                     d = (0, i.Z)(m, 2),
                     w = d[0],
-                    E = d[1],
-                    g = E.isError,
-                    N = E.error,
-                    k = E.isSuccess;
+                    g = d[1],
+                    E = g.isError,
+                    N = g.error,
+                    k = g.isSuccess;
                 (0, r.useEffect)((function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
@@ -297,7 +297,7 @@
                         timeout: 7e3
                     }))
                 }), [k]);
-                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), g && r.createElement(b.Z, {
+                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), E && r.createElement(b.Z, {
                     color: "danger"
                 }, "Unable to change content gating settings: ", null == N || null === (e = N.data) || void 0 === e ? void 0 : e.error.message), Object.entries(Z.N).map((function(e) {
                     var t = (0, i.Z)(e, 2),
@@ -336,9 +336,9 @@
                     h = (0, r.useState)(!1),
                     f = (0, i.Z)(h, 2),
                     w = f[0],
-                    E = f[1],
-                    g = (0, r.useState)({}),
-                    y = (0, i.Z)(g, 2),
+                    g = f[1],
+                    E = (0, r.useState)({}),
+                    y = (0, i.Z)(E, 2),
                     v = y[0],
                     b = y[1],
                     Z = (0, r.useState)({}),
@@ -346,7 +346,7 @@
                     C = x[0],
                     N = x[1],
                     k = function() {
-                        c(1), p(null), E(!1), b({}), n()
+                        c(1), p(null), g(!1), b({}), n()
                     };
                 return w ? r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
@@ -406,7 +406,7 @@
                         },
                         currentStep: s,
                         setFormError: p,
-                        setFormSuccess: E,
+                        setFormSuccess: g,
                         ownerInfo: v,
                         setOwnerInfo: b,
                         claimInfo: C,
@@ -459,8 +459,8 @@
                     h = d[1],
                     f = (0, r.useState)(""),
                     w = (0, i.Z)(f, 2),
-                    E = w[0],
-                    g = w[1],
+                    g = w[0],
+                    E = w[1],
                     y = (0, r.useContext)(T),
                     v = y.previous,
                     b = y.currentStep,
@@ -470,7 +470,7 @@
                     N = y.setFormError,
                     k = y.setFormSuccess,
                     D = (null == p ? void 0 : p.owner) && (null == p ? void 0 : p.accurate) && (null == p ? void 0 : p.perjury) && (null == p ? void 0 : p.liability) && (null == p ? void 0 : p.abuse),
-                    I = (null == Z || null === (e = Z.description) || void 0 === e ? void 0 : e.length) > 0 && (null == Z || null === (t = Z.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == Z || null === (n = Z.proof) || void 0 === n ? void 0 : n.length) > 0 && D && E.toLowerCase() === C.fullName.toLowerCase(),
+                    I = (null == Z || null === (e = Z.description) || void 0 === e ? void 0 : e.length) > 0 && (null == Z || null === (t = Z.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == Z || null === (n = Z.proof) || void 0 === n ? void 0 : n.length) > 0 && D && g.toLowerCase() === C.fullName.toLowerCase(),
                     j = (0, O.lw)(),
                     $ = (0, i.Z)(j, 2),
                     V = $[0],
@@ -597,9 +597,9 @@
                 }, "Type your full name below which will act as your digital signature", r.createElement(l.II, {
                     className: "tw-pt-2",
                     id: "claim-signature",
-                    value: E.toUpperCase(),
+                    value: g.toUpperCase(),
                     onChange: function(e) {
-                        return g(e.target.value)
+                        return E(e.target.value)
                     },
                     pattern: null == C || null === (a = C.fullName) || void 0 === a ? void 0 : a.toUpperCase()
                 })), D ? null : r.createElement("div", {
@@ -971,20 +971,20 @@
                 we = (0, ce.P1)(me, (function(e) {
                     return null !== e && e.length > 0
                 })),
-                Ee = (0, ce.P1)(we, me, (function(e, t) {
+                ge = (0, ce.P1)(we, me, (function(e, t) {
                     return e && t.reduce((function(e, t) {
                         return te()(t.updated_at) > te()(e.updated_at) ? t : e
                     }), {
                         updated_at: 0
                     })
                 })),
-                ge = (0, ce.P1)(me, Ee, (function(e, t) {
+                Ee = (0, ce.P1)(me, ge, (function(e, t) {
                     return null !== e && t.updated_at
                 })),
-                ye = (0, ce.P1)(me, Ee, (function(e, t) {
+                ye = (0, ce.P1)(me, ge, (function(e, t) {
                     return null !== e && t.displayName
                 })),
-                ve = (0, ce.P1)(me, Ee, (function(e, t) {
+                ve = (0, ce.P1)(me, ge, (function(e, t) {
                     return null !== e && !!t.reverted
                 })),
                 be = n(76938),
@@ -999,7 +999,7 @@
                         o = void 0 !== a && a,
                         i = (0, p.v9)(pe),
                         s = (0, p.v9)(fe),
-                        c = (0, p.v9)(ge),
+                        c = (0, p.v9)(Ee),
                         u = o || (0, p.v9)((function(e) {
                             var t;
                             return null === (t = e.currentUser.displayName) || void 0 === t ? void 0 : t.changed
@@ -1098,42 +1098,49 @@
                         s = (0, p.v9)((function(e) {
                             return e.currentUser.databaseUser.id
                         })),
-                        c = (0, r.useState)(""),
-                        u = (0, i.Z)(c, 2),
-                        d = u[0],
-                        h = u[1],
-                        f = (0, r.useState)(""),
-                        w = (0, i.Z)(f, 2),
-                        E = w[0],
-                        g = w[1],
-                        y = (0, r.useState)(!0),
-                        v = (0, i.Z)(y, 2),
-                        b = v[0],
-                        Z = v[1],
-                        x = (0, r.useState)(!1),
-                        C = (0, i.Z)(x, 2),
-                        N = C[0],
-                        k = C[1];
+                        u = (0, r.useState)(""),
+                        d = (0, i.Z)(u, 2),
+                        h = d[0],
+                        w = d[1],
+                        g = (0, r.useState)(""),
+                        E = (0, i.Z)(g, 2),
+                        y = E[0],
+                        v = E[1],
+                        b = (0, r.useState)(!0),
+                        Z = (0, i.Z)(b, 2),
+                        x = Z[0],
+                        C = Z[1],
+                        N = (0, r.useState)(!1),
+                        k = (0, i.Z)(N, 2),
+                        P = k[0],
+                        S = k[1];
                     (0, r.useEffect)((function() {
-                        return Z("" === E || d !== n)
-                    }), [E, d]);
-                    var P = function() {
+                        return C("" === y || h !== n)
+                    }), [y, h]);
+                    var O = function() {
                         var e = (0, o.Z)(m().mark((function e() {
+                            var r, l, o, i;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, a((0, se.eu)({
                                             userId: s,
                                             displayName: n,
-                                            currentPassword: E,
+                                            currentPassword: y,
                                             revertDisplayName: !0
                                         }));
                                     case 3:
-                                        t(), e.next = 9;
+                                        t(), e.next = 13;
                                         break;
                                     case 6:
-                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0);
-                                    case 9:
+                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (r = null === (l = e.t0.response) || void 0 === l || null === (l = l.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== r ? r : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), S(!1), a((0, f.d)({
+                                            title: "Failed to revert display name",
+                                            icon: c.eH,
+                                            message: i,
+                                            color: "danger",
+                                            timeout: 8e3
+                                        }));
+                                    case 13:
                                     case "end":
                                         return e.stop()
                                 }
@@ -1158,26 +1165,26 @@
                         className: "form-control mt-2 mb-2",
                         placeholder: "Type ".concat(n, " to Confirm"),
                         onChange: function(e) {
-                            return h(e.target.value)
+                            return w(e.target.value)
                         },
-                        value: d
+                        value: h
                     }), r.createElement("input", {
                         className: "form-control mb-2",
                         id: "namePasswordVerify",
                         name: "namePasswordVerify",
                         "aria-label": "Please confirm current password",
                         onChange: function(e) {
-                            return g(e.target.value)
+                            return v(e.target.value)
                         },
                         placeholder: "Please confirm current password",
                         type: "password",
-                        value: E
+                        value: y
                     }), r.createElement(le.Z, {
                         className: "me-2",
                         onClick: function() {
-                            return k(!0)
+                            return S(!0)
                         },
-                        disabled: b,
+                        disabled: x,
                         color: "primary"
                     }, "Ok"), r.createElement(le.Z, {
                         onClick: t,
@@ -1185,11 +1192,11 @@
                     }, "Cancel"))), r.createElement(l.sm, {
                         headerText: "Revert Display Name Change",
                         bodyText: "✋ Stop! You will not be able to change your name for 90 days after reverting your name. Are you sure you want to revert your display name? ",
-                        confirmCallback: P,
+                        confirmCallback: O,
                         cancelCallback: function() {
-                            return k(!1)
+                            return S(!1)
                         },
-                        isOpen: N
+                        isOpen: P
                     }))
                 };
             ze.propTypes = {
@@ -1205,15 +1212,15 @@
                     d = c[1],
                     f = d.isLoading,
                     w = d.isError,
-                    E = d.error,
-                    g = d.isSuccess,
+                    g = d.error,
+                    E = d.isSuccess,
                     y = (0, p.v9)(de),
                     v = (0, p.v9)(he),
                     Z = (0, p.v9)(ue),
                     x = (0, p.v9)(we),
                     C = (0, p.v9)(ve),
                     N = (0, p.v9)(be.y),
-                    k = (0, p.v9)(ge),
+                    k = (0, p.v9)(Ee),
                     P = (0, p.v9)(ye),
                     S = (0, p.v9)((function(e) {
                         return e.currentUser.databaseUser
@@ -1244,7 +1251,7 @@
                     me = ee[1],
                     pe = r.useState(!1),
                     fe = (0, i.Z)(pe, 2),
-                    Ee = fe[0],
+                    ge = fe[0],
                     Ze = fe[1],
                     xe = (0, r.useState)(!1),
                     Ce = (0, i.Z)(xe, 2),
@@ -1262,7 +1269,7 @@
                     }), [Se]), (0, r.useEffect)((function() {
                         return "" === $ ? (Ze(!1), void j(null)) : $ !== ce ? (Ze(!1), void j("Names don't match")) : (Ze(!0), void j(null))
                     }), [$]), w) return r.createElement(Oe, {
-                    displayNameError: null !== (e = null === (t = E.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
+                    displayNameError: null !== (e = null === (t = g.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (Ne) return r.createElement(Ue, {
                     previousDisplayName: P,
@@ -1342,7 +1349,7 @@
                     latestChangedDate: k,
                     displayNameChecking: Z,
                     validationError: W,
-                    displayNameChanged: g
+                    displayNameChanged: E
                 }))), r.createElement(re.Z, {
                     xs: "1",
                     style: {
@@ -1356,7 +1363,7 @@
                 }), "" !== ce && !Z && r.createElement(oe.Z, {
                     "aria-label": y && v ? "Name is available" : "Name is unavailable",
                     ok: y && v
-                }))), Te && !g && r.createElement(ae.Z, null, r.createElement(re.Z, {
+                }))), Te && !E && r.createElement(ae.Z, null, r.createElement(re.Z, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -1390,7 +1397,7 @@
                 }, "" !== $ && r.createElement(oe.Z, {
                     "aria-label": null !== F ? F : "Confirmation name matches",
                     ok: null === F
-                }))), Ee && !g && r.createElement(ae.Z, {
+                }))), ge && !E && r.createElement(ae.Z, {
                     className: "mt-2"
                 }, r.createElement(re.Z, {
                     xs: "1",
@@ -1759,10 +1766,10 @@
                     u = c.isLoading,
                     d = c.isError,
                     w = !(u || d),
-                    E = (0, h.IO)(),
-                    g = (0, i.Z)(E, 2),
-                    y = g[0],
-                    v = g[1],
+                    g = (0, h.IO)(),
+                    E = (0, i.Z)(g, 2),
+                    y = E[0],
+                    v = E[1],
                     b = v.isLoading,
                     Z = v.isError,
                     x = v.error,
@@ -1908,8 +1915,8 @@
                     return (0, Me.Z)(this, n)
                 }
             }
-            var Et = "https://docs.vrchat.com/docs/setup-2fa",
-                gt = function(e) {
+            var gt = "https://docs.vrchat.com/docs/setup-2fa",
+                Et = function(e) {
                     return "".concat(e.substr(0, 4), "-").concat(e.substr(4, 8))
                 },
                 yt = "otpDownload",
@@ -2048,7 +2055,7 @@
                             return this.hasOneTimePasswords() && (t = "".concat("VRChat Two-Factor Authentication recovery codes\n===============================================\n\nYou can use these to log in, in case you lose access to your authenticator app codes. \n\nYou can only use each recovery code once.\n\nKeep these safe and secure! Printing them out is a very good idea.\n\n").concat(e.otp.filter((function(e) {
                                 return !e.used
                             })).map((function(e) {
-                                return "".concat(gt(e.code), "\n")
+                                return "".concat(Et(e.code), "\n")
                             })).join(""))), "data:text/plain;charset=utf-8,".concat(encodeURIComponent(t))
                         }
                     }, {
@@ -2146,7 +2153,7 @@
                                                 marginRight: "0.25em"
                                             }
                                         }), "You are protecting your account with an additional login step.", " ", r.createElement("a", {
-                                            href: Et,
+                                            href: gt,
                                             target: "_blank",
                                             rel: "noreferrer"
                                         }, "Help")), r.createElement("p", null, r.createElement(mt.Z, {
@@ -2187,7 +2194,7 @@
                                         }, "Download recovery link"))))
                                     }
                                     return r.createElement("div", null, r.createElement("p", null, "Enable two-factor authentication to protect your account with an additional login step.", " ", r.createElement("a", {
-                                        href: Et,
+                                        href: gt,
                                         target: "_blank",
                                         rel: "noreferrer"
                                     }, "Learn more")), r.createElement("p", null, r.createElement(mt.Z, {
@@ -2203,7 +2210,7 @@
                                     style: {
                                         textDecoration: e.used ? "line-through" : "none"
                                     }
-                                }, gt(e.code)))
+                                }, Et(e.code)))
                             })))) : null)
                         }
                     }, {
@@ -2223,7 +2230,7 @@
                                     marginRight: "1em"
                                 },
                                 target: "_blank",
-                                href: Et,
+                                href: gt,
                                 rel: "noreferrer"
                             }, "Help"), r.createElement(le.Z, {
                                 className: "btn",
@@ -2421,8 +2428,8 @@
                 h = n(95305),
                 f = n(34698),
                 w = n(83868),
-                E = n.n(w),
-                g = n(12752),
+                g = n.n(w),
+                E = n(12752),
                 y = n(22202),
                 v = n(62437),
                 b = n(14411),
@@ -2442,7 +2449,7 @@
                     T = (0, a.Z)(O, 2),
                     D = T[0],
                     I = T[1],
-                    A = (0, g.Nr)(w),
+                    A = (0, E.Nr)(w),
                     R = (0, v.X6)(),
                     F = (0, a.Z)(R, 2),
                     j = F[0],
@@ -2471,7 +2478,7 @@
                         email: A,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === A || !1 === E()(A)
+                        skip: "" === A || !1 === g()(A)
                     }),
                     le = re.data,
                     oe = re.isFetching,
@@ -2482,13 +2489,13 @@
                     S(""), I("")
                 }), [w]);
                 var ue = (0, m.useMemo)((function() {
-                        return ie && !1 === le.userExists && E()(A) && "" !== A
+                        return ie && !1 === le.userExists && g()(A) && "" !== A
                     }), [le, A]),
                     me = (0, m.useMemo)((function() {
                         return "" !== P && P === A
                     }), [P, A]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === E()(A) && "" !== A) return m.createElement(d.Z, {
+                        if (!1 === g()(A) && "" !== A) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2820,4 +2827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=600974c555b64f5b6e2a1a641a388f775011f15a829dc1879a563b78eb3f74c8.js.map
+//# sourceMappingURL=2b46bcb02f6d0904550a3d35732c3c3270e91aaf81309277b0edfcf9b8692e87.js.map
