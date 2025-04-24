@@ -3,7 +3,7 @@
     [2012, 3642], {
         33642: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => Z
+                default: () => q
             });
             var n = r(15861),
                 o = r(4942),
@@ -17,23 +17,24 @@
                 m = r(64258),
                 f = r(14411),
                 p = r(72998),
-                g = r(95896),
-                w = r(22202),
+                w = r(95896),
+                g = r(22202),
                 v = r(41255),
                 y = r(16869),
-                I = r(67978),
+                x = r(67978),
                 b = r(36183),
-                x = r(39270),
-                E = r(64358),
+                E = r(39270),
+                I = r(64358),
                 h = r(45697),
                 S = r.n(h),
-                P = r(67294),
-                T = r(32981),
-                C = r(53637),
+                C = r(67294),
+                P = r(32981),
+                T = r(53637),
                 k = r(68420),
-                j = r(99878);
+                j = r(80938),
+                O = r(99878);
 
-            function O(e, t) {
+            function L(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -44,138 +45,142 @@
                 return r
             }
 
-            function L(e) {
+            function N(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? O(Object(r), !0).forEach((function(t) {
+                    t % 2 ? L(Object(r), !0).forEach((function(t) {
                         (0, o.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : O(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : L(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var D = (0, P.lazy)((function() {
+            var D = (0, C.lazy)((function() {
                     return Promise.all([r.e(8043), r.e(2704), r.e(6239)]).then(r.bind(r, 22704))
                 })),
-                N = function(e) {
+                Z = function(e) {
                     var t = e.store,
                         r = void 0 === t ? null : t,
                         o = e.listingId,
                         c = e.onClose,
                         h = void 0 === c ? function() {} : c,
                         S = e.onDelete,
-                        O = void 0 === S ? function() {} : S,
-                        N = (0, T.I0)(),
-                        Z = (0, w.XC)().data,
-                        q = (0, T.v9)((function(e) {
+                        L = void 0 === S ? function() {} : S,
+                        Z = (0, P.I0)(),
+                        q = (0, g.XC)().data,
+                        z = (0, P.v9)((function(e) {
                             return e.listingFlow
                         })),
-                        F = q.isPreviewOpen,
-                        G = q.selectedProducts,
-                        M = (0, P.useState)("listingInformation"),
-                        z = (0, i.Z)(M, 2),
-                        A = z[0],
-                        U = z[1],
-                        X = (0, P.useState)(null),
-                        Y = (0, i.Z)(X, 2),
-                        Q = Y[0],
-                        _ = Y[1],
-                        H = (0, P.useState)({}),
-                        R = (0, i.Z)(H, 2),
+                        F = z.isPreviewOpen,
+                        G = z.selectedProducts,
+                        M = (0, C.useState)("listingInformation"),
+                        A = (0, i.Z)(M, 2),
+                        U = A[0],
+                        X = A[1],
+                        Y = (0, C.useState)(null),
+                        Q = (0, i.Z)(Y, 2),
+                        _ = Q[0],
+                        H = Q[1],
+                        J = (0, C.useState)({}),
+                        R = (0, i.Z)(J, 2),
                         V = R[0],
                         W = R[1],
-                        $ = (0, P.useMemo)((function() {
+                        $ = (0, C.useState)(!1),
+                        B = (0, i.Z)($, 2),
+                        K = B[0],
+                        ee = B[1],
+                        te = (0, C.useMemo)((function() {
                             return G.filter((function(e) {
                                 return e.avatarId
                             })).map((function(e) {
                                 return e.avatarId
                             }))
                         }), [G]),
-                        J = (0, y.mr)({
+                        re = (0, y.mr)({
                             listingId: o,
                             hydrateProducts: !0,
                             hydrateStores: !0
                         }, {
                             skip: !o
                         }),
-                        B = J.data,
-                        K = J.isLoading,
-                        ee = (J.isError, J.error, (0, P.useMemo)((function() {
-                            return "permanent" === (null == B ? void 0 : B.listingType)
-                        }), [B])),
-                        te = (0, I.x3)({
-                            userId: Z.id,
+                        ne = re.data,
+                        oe = re.isLoading,
+                        ie = (re.isError, re.error, (0, C.useMemo)((function() {
+                            return "permanent" === (null == ne ? void 0 : ne.listingType)
+                        }), [ne])),
+                        ae = (0, x.x3)({
+                            userId: q.id,
                             archived: !1
                         }, {
-                            skip: !Z
+                            skip: !q
                         }),
-                        re = te.data,
-                        ne = te.isLoading,
-                        oe = (te.isError, te.error, (0, b.Ci)({
-                            sellerId: Z.id,
+                        se = ae.data,
+                        le = ae.isLoading,
+                        ue = (ae.isError, ae.error, (0, b.Ci)({
+                            sellerId: q.id,
                             managementPov: !0
                         }, {
-                            skip: !Z
+                            skip: !q
                         })),
-                        ie = oe.data,
-                        ae = oe.isLoading,
-                        se = (oe.isError, oe.error, (0, v.Qb)({
-                            avatarIds: $
+                        ce = ue.data,
+                        de = ue.isLoading,
+                        me = (ue.isError, ue.error, (0, v.Qb)({
+                            avatarIds: te
                         }, {
-                            skip: !$.length
+                            skip: !te.length
                         })),
-                        le = se.data,
-                        ue = (se.isFetching, se.isError, se.error, (0, P.useMemo)((function() {
-                            return (null != le ? le : []).map((function(e) {
+                        fe = me.data,
+                        pe = (me.isFetching, me.isError, me.error, (0, C.useMemo)((function() {
+                            return (null != fe ? fe : []).map((function(e) {
                                 return {
                                     fileId: e.id,
                                     fileVersion: e.latestVersionFile.version,
                                     order: null == e ? void 0 : e.order
                                 }
                             }))
-                        }), [le])),
-                        ce = (0, y.Ij)(),
-                        de = (0, i.Z)(ce, 2),
-                        me = de[0],
-                        fe = de[1];
-                    fe.isLoading, fe.isSuccess, fe.isError, fe.error;
-                    (0, P.useEffect)((function() {
+                        }), [fe])),
+                        we = (0, y.Ij)(),
+                        ge = (0, i.Z)(we, 2),
+                        ve = ge[0],
+                        ye = ge[1],
+                        xe = (ye.isLoading, ye.isSuccess, ye.isError, ye.error, !0 === (null == V ? void 0 : V.active) && !1 === (null == ne ? void 0 : ne.active));
+                    (0, C.useEffect)((function() {
                         return function() {
-                            N((0, x.rk)())
+                            Z((0, E.rk)())
                         }
-                    }), []), (0, P.useEffect)((function() {
-                        B && (_(B), N((0, x.fX)(B.products)), N((0, x.TY)(B.listingType)))
-                    }), [B]);
-                    var pe = function(e) {
-                            _((function(t) {
-                                return L(L({}, t), e)
+                    }), []), (0, C.useEffect)((function() {
+                        ne && (H(ne), Z((0, E.fX)(ne.products)), Z((0, E.TY)(ne.listingType)))
+                    }), [ne]);
+                    var be = function(e) {
+                            H((function(t) {
+                                return N(N({}, t), e)
                             })), W((function(t) {
-                                return L(L({}, t), e)
+                                return N(N({}, t), e)
                             }))
                         },
-                        ge = function() {
+                        Ee = function() {
                             var e = (0, n.Z)(d().mark((function e() {
                                 var t, r, n;
                                 return d().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return t = function() {
-                                                N((0, m.d)({
+                                                Z((0, m.d)({
                                                     title: "Listing updated successfully!",
                                                     icon: u.f8,
                                                     message: "Your listing has been updated successfully!",
                                                     color: "success",
                                                     timeout: 3e3
                                                 })), h()
-                                            }, e.prev = 1, e.next = 4, me(L({
-                                                listingId: B.id
+                                            }, e.prev = 1, e.next = 4, ve(N({
+                                                listingId: ne.id
                                             }, V)).unwrap();
                                         case 4:
                                             t(), e.next = 11;
                                             break;
                                         case 7:
-                                            e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), N((0, m.d)({
+                                            e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), Z((0, m.d)({
                                                 title: "Failed to update listing!",
                                                 icon: l.eH,
                                                 message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
@@ -194,28 +199,28 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        we = function(e) {
-                            N((0, x.Td)(null)), N((0, x.xj)(e))
+                        Ie = function(e) {
+                            Z((0, E.Td)(null)), Z((0, E.xj)(e))
                         },
-                        ve = (0, P.useMemo)((function() {
-                            if (!Q) return !1;
-                            if ("duration" === Q.listingType) {
-                                var e = [g.PG.MIN, g.PG.HOUR, g.PG.DAY].includes(Q.durationType),
-                                    t = (0, E.qG)(B.durationType, B.duration) && Number.isInteger(parseFloat(Q.duration));
+                        he = (0, C.useMemo)((function() {
+                            if (!_) return !1;
+                            if ("duration" === _.listingType) {
+                                var e = [w.PG.MIN, w.PG.HOUR, w.PG.DAY].includes(_.durationType),
+                                    t = (0, I.qG)(ne.durationType, ne.duration) && Number.isInteger(parseFloat(_.duration));
                                 return e && t
                             }
-                            var r = Q.displayName.length >= 3,
-                                n = Q.priceTokens >= 100 && Q.priceTokens <= 1e4 && Number.isInteger(parseFloat(Q.priceTokens)),
-                                o = Q.products.length > 0 && Q.products.length <= g._1;
+                            var r = _.displayName.length >= 3,
+                                n = _.priceTokens >= 100 && _.priceTokens <= 1e4 && Number.isInteger(parseFloat(_.priceTokens)),
+                                o = _.products.length > 0 && _.products.length <= w._1;
                             return r && n && o
-                        }), [Q]),
-                        ye = K || ne || ae;
-                    return P.createElement(P.Fragment, null, ye && P.createElement("div", null, "Loading..."), !ye && Q && !F && P.createElement(f.JX, {
+                        }), [_]),
+                        Se = oe || le || de;
+                    return C.createElement(C.Fragment, null, Se && C.createElement("div", null, "Loading..."), !Se && _ && !K && !F && C.createElement(f.JX, {
                         className: "tw-w-full tw-relative"
-                    }, P.createElement(p.Z, {
-                        onChange: U,
+                    }, C.createElement(p.Z, {
+                        onChange: X,
                         justify: "left",
-                        selected: A,
+                        selected: U,
                         tabs: [{
                             name: "Listing Information",
                             id: "listingInformation",
@@ -225,84 +230,100 @@
                             id: "storeAvailability",
                             condition: !0
                         }]
-                    }), P.createElement("div", {
+                    }), C.createElement("div", {
                         className: "tw-w-full tw-relative"
-                    }, "listingInformation" === A && P.createElement(k.Z, {
-                        originalListing: B,
-                        editedListing: Q,
-                        onDataChange: pe,
+                    }, "listingInformation" === U && C.createElement(k.Z, {
+                        originalListing: ne,
+                        editedListing: _,
+                        onDataChange: be,
                         isEditing: !0,
-                        products: re,
-                        listingType: Q.listingType,
-                        productsLoading: ne
-                    }), "storeAvailability" === A && P.createElement(j.Z, {
-                        activeListing: Q,
-                        onDataChange: pe,
-                        stores: ie,
+                        products: se,
+                        listingType: _.listingType,
+                        productsLoading: le
+                    }), "storeAvailability" === U && C.createElement(O.Z, {
+                        activeListing: _,
+                        onDataChange: be,
+                        stores: ce,
                         activeStore: r
-                    })), P.createElement("div", {
+                    })), C.createElement("div", {
                         className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
-                    }, P.createElement("div", {
+                    }, C.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-flex-auto"
-                    }, P.createElement(f.zx, {
+                    }, C.createElement(f.zx, {
                         neutral: !0,
                         type: "button",
                         onClick: h,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
-                    }, "Cancel"), P.createElement(f.zx, {
+                    }, "Cancel"), C.createElement(f.zx, {
                         type: "button",
                         onClick: function() {
-                            return O(B)
+                            return L(ne)
                         },
                         danger: !0,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
-                    }, "Delete Listing")), P.createElement("div", {
+                    }, "Delete Listing")), C.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-justify-end tw-flex-auto tw-flex-wrap"
-                    }, ee && P.createElement(f.zx, {
+                    }, ie && C.createElement(f.zx, {
                         transparent: !0,
                         containerClasses: "tw-w-fit md:tw-max-w-[160px] tw-flex-1",
                         onClick: function() {
-                            return we(!0)
+                            return Ie(!0)
                         }
-                    }, P.createElement(f.$1, {
+                    }, C.createElement(f.$1, {
                         icon: s.wl,
                         className: "tw-mr-2"
-                    }), "Preview Listing"), P.createElement(f.zx, {
+                    }), "Preview Listing"), C.createElement(f.zx, {
                         type: "button",
-                        onClick: ge,
+                        onClick: xe ? function() {
+                            ee(!0)
+                        } : Ee,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1",
-                        disabled: !ve
-                    }, "Save")))), F && ee && P.createElement(C.Z, {
+                        disabled: !he
+                    }, "Save")))), K && C.createElement(f.JX, null, C.createElement(j.Z, null), C.createElement("div", {
+                        className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
+                    }, C.createElement(f.zx, {
+                        neutral: !0,
+                        type: "button",
+                        onClick: function() {
+                            return ee(!1)
+                        },
+                        containerClasses: "md:tw-max-w-[170px] tw-flex-auto"
+                    }, "Back"), C.createElement(f.zx, {
+                        type: "button",
+                        onClick: Ee,
+                        containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
+                        disabled: !he
+                    }, "Save"))), F && ie && C.createElement(T.Z, {
                         className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-border tw-border-[#2D363F] tw-rounded-lg tw-p-5"
-                    }, P.createElement(f.X2, {
+                    }, C.createElement(f.X2, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
-                    }, P.createElement(f.zx, {
+                    }, C.createElement(f.zx, {
                         neutral: !0,
                         containerClasses: "tw-w-fit",
                         onClick: function() {
-                            return N((0, x.xj)(!1)), void N((0, x.Td)("Edit Listing"))
+                            return Z((0, E.xj)(!1)), void Z((0, E.Td)("Edit Listing"))
                         }
-                    }, P.createElement(f.$1, {
+                    }, C.createElement(f.$1, {
                         icon: a.YI
-                    }), " Close Preview")), P.createElement(P.Suspense, {
-                        fallback: P.createElement("div", null, "Loading...")
-                    }, P.createElement(D, {
+                    }), " Close Preview")), C.createElement(C.Suspense, {
+                        fallback: C.createElement("div", null, "Loading...")
+                    }, C.createElement(D, {
                         isPreview: !0,
                         products: G,
-                        galleryImages: ue,
-                        listing: Q,
+                        galleryImages: pe,
+                        listing: _,
                         onClose: function() {
-                            return we(!1)
+                            return Ie(!1)
                         }
                     }))))
                 };
-            N.propTypes = {
+            Z.propTypes = {
                 listingId: S().string.isRequired,
                 stores: S().array,
                 onCancel: S().func,
                 onDelete: S().func
             };
-            const Z = N
+            const q = Z
         },
         36183: (e, t, r) => {
             r.d(t, {
@@ -443,4 +464,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2d77d0a8b020acfad15bc1d2003f5a38e75ccaf99c4597aeafbaaee675e27061.js.map
+//# sourceMappingURL=4b0343241557d2f14e61544915eb211f7326ab6fb7d8ae9a82c5270528255b3e.js.map
