@@ -27,10 +27,10 @@
                     g = (0, r.Z)(h, 2),
                     b = g[0],
                     y = g[1],
-                    k = (0, u.useState)(!1),
-                    x = (0, r.Z)(k, 2),
-                    N = x[0],
-                    C = x[1],
+                    x = (0, u.useState)(!1),
+                    k = (0, r.Z)(x, 2),
+                    N = k[0],
+                    C = k[1],
                     S = (0, u.useMemo)((function() {
                         return v.IM.reduce((function(e, a) {
                             var r = (0, d.F)(null == t ? void 0 : t.unityPackages, a);
@@ -64,7 +64,9 @@
                 }, u.createElement(m.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", N ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h4", null, "Performance Rank"), u.createElement("small", {
+                }), " ", N ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h2", {
+                    className: "tw-text-xl"
+                }, "Performance Rank"), u.createElement("small", {
                     className: "tw-text-light-grey tw-mb-3"
                 }, "Confirm the performance rank for the avatar. A better performance rank might generate better sales."), u.createElement(m.JX, {
                     className: "tw-px-5 tw-py-2 tw-bg-grey tw-rounded-md"
@@ -114,7 +116,9 @@
                     className: "tw-text-yellow-500 tw-mt-3"
                 }, u.createElement(m.$1, {
                     icon: l.faTriangleExclamation
-                }), " Cross-platform avatars receive higher visibility and are more likely to be featured in the Avatar Marketplace.")), u.createElement(m.JX, null, u.createElement("h4", null, "Licensing"), u.createElement("p", null, "All published avatars in the Avatar Shop will follow the license terms specified in the Terms and Conditions.", " ", u.createElement("a", {
+                }), " Cross-platform avatars receive higher visibility and are more likely to be featured in the Avatar Marketplace.")), u.createElement(m.JX, null, u.createElement("h2", {
+                    className: "tw-text-xl"
+                }, "Licensing"), u.createElement("p", null, "All published avatars in the Avatar Shop will follow the license terms specified in the Terms and Conditions.", " ", u.createElement("a", {
                     href: "/",
                     className: "hover:tw-text-teal-accent"
                 }, "Learn More")), u.createElement(m.JX, {
@@ -135,7 +139,8 @@
                     },
                     checked: b,
                     id: "termsAccepted",
-                    className: "tw-w-5 tw-h-5 tw-mr-2",
+                    topAlign: !0,
+                    className: "tw-w-5 tw-h-5 tw-mr-2 tw-mt-1",
                     label: "I acknowledge that all the information I entered here is true and there will be a review process to validate it."
                 }))), u.createElement(m.JX, {
                     className: "tw-mt-8 tw-gap-3 md:tw-flex-row"
@@ -154,4 +159,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b5427c9bc98f8df103c7aab998f379605c9b54b07f6e148d6b863690ca707e12.js.map
+//# sourceMappingURL=173a8c1ddfdfdefb96e09e97ed9c5ffedb5b41b304af063d5089bb9f1117cb44.js.map

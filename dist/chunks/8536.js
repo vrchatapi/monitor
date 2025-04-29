@@ -9,8 +9,8 @@
                 l = a(67294),
                 n = a(32981),
                 c = a(14411),
-                o = a(43683),
-                s = a(9674),
+                s = a(43683),
+                o = a(9674),
                 w = [{
                     label: "Udon Product",
                     value: "udon",
@@ -22,13 +22,13 @@
                     value: "avatar",
                     text: "Sell your uploaded avatars.",
                     redirect: "https://creators.vrchat.com/avatars/",
-                    image: s
+                    image: o
                 }];
             const i = function(e) {
                 var t = e.hasAvatarSellerPermission,
                     a = void 0 !== t && t,
-                    s = e.onNext,
-                    i = void 0 === s ? function() {} : s,
+                    o = e.onNext,
+                    i = void 0 === o ? function() {} : o,
                     u = e.onClose,
                     m = void 0 === u ? function() {} : u,
                     d = (0, n.I0)(),
@@ -36,17 +36,17 @@
                         return e.productFlow.productType
                     }));
                 return l.createElement(c.JX, null, l.createElement("p", null, "Choose the type of product you’d like to create:"), l.createElement(c.JX, {
-                    className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row"
+                    className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row md:tw-justify-center"
                 }, w.map((function(e) {
                     var t = p === e.value;
                     return l.createElement(c.JX, {
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                d((0, o.WB)(e))
+                                d((0, s.WB)(e))
                             }(e.value)
                         },
-                        className: "".concat(t ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-text-center tw-px-5 tw-py-7 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md ").concat(a || "avatar" !== e.value ? "tw-cursor-pointer" : "tw-opacity-50 tw-cursor-not-allowed tw-pointer-events-none")
+                        className: "".concat(t ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-text-center tw-px-5 tw-max-w-[220px] tw-py-7 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md ").concat(a || "avatar" !== e.value ? "tw-cursor-pointer" : "tw-opacity-50 tw-cursor-not-allowed tw-pointer-events-none")
                     }, l.createElement("span", {
                         className: "\n                  ".concat(t ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-absolute tw-top-3 tw-right-3 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
                     }, t ? l.createElement(c.$1, {
@@ -82,4 +82,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cbc74620d631bbac4f20e5fdca59172f7ae860b9fc08e1eb398b47e955dc9532.js.map
+//# sourceMappingURL=fc7b980ccd53f70b5685d252628825ff37ec3c075ac02721e30363e366d16a8e.js.map

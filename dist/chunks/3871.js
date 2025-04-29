@@ -3,25 +3,25 @@
     [3871], {
         3871: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => i
+                default: () => o
             });
             var n = a(14411),
                 l = a(67263),
                 r = a(67294),
                 c = a(32981);
-            const i = function(e) {
+            const o = function(e) {
                 var t = e.onClose,
                     a = void 0 === t ? function() {} : t,
-                    i = (0, c.v9)((function(e) {
+                    o = (0, c.v9)((function(e) {
                         return e.productFlow
                     })).currentProduct;
-                return i ? r.createElement(n.JX, {
+                return o ? r.createElement(n.JX, {
                     className: "tw-items-center tw-text-center tw-gap-5"
                 }, r.createElement(n.pw, {
-                    imageId: i.thumbnailImageUrl,
-                    alt: i.name,
+                    imageId: o.thumbnailImageUrl,
+                    alt: o.name,
                     fallbackSrc: l,
-                    className: "tw-w-[150px] tw-h-[150px]",
+                    className: "tw-w-[150px] tw-h-[150px] tw-rounded-lg",
                     fitToCover: !0
                 }), r.createElement(n.JX, {
                     className: "tw-max-w-[500px]"
@@ -35,4 +35,4 @@
         }
     }
 ]);
-//# sourceMappingURL=04def92ab3ae6189279934641f8178e6dd965dacfc9b8d684503c32f2a517340.js.map
+//# sourceMappingURL=8e080e10da788e56c757ef8cdeade6c8d438a287f0537b8ed8f0385db751b378.js.map

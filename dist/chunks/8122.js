@@ -60,11 +60,11 @@
                         T = X[0],
                         z = X[1],
                         F = z.isLoading,
-                        J = z.isError,
-                        L = z.error,
-                        U = z.reset,
-                        A = function() {
-                            h(1), P(!1), c(), U()
+                        A = z.isError,
+                        J = z.error,
+                        L = z.reset,
+                        U = function() {
+                            h(1), P(!1), c(), L()
                         },
                         B = (null == S ? void 0 : S.parentListings.length) > 0,
                         V = function() {
@@ -84,7 +84,7 @@
                                                 message: "".concat(S.displayName, " has been deleted."),
                                                 color: "success",
                                                 timeout: 3e3
-                                            })), A(), e.next = 12;
+                                            })), U(), e.next = 12;
                                             break;
                                         case 7:
                                             return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), o((0, u.d)({
@@ -121,7 +121,7 @@
                                 className: "tw-w-1/2"
                             }, x.createElement(w.zx, {
                                 className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                                onClick: A
+                                onClick: U
                             }, "Cancel")), x.createElement("div", {
                                 className: "tw-w-1/2"
                             }, x.createElement(w.zx, {
@@ -164,17 +164,17 @@
                             }), x.createElement("label", {
                                 for: "checked-checkbox",
                                 className: "tw-text-sm tw-font-medium tw-text-white"
-                            }, "I acknowledge that deleting this product will revoke access for existing users and confirm compliance with the Creator Economy guidelines."))), J && x.createElement("div", {
+                            }, "I acknowledge that deleting this product will revoke access for existing users and confirm compliance with the Creator Economy guidelines."))), A && x.createElement("div", {
                                 className: "tw-w-full tw-text-red tw-text-center"
                             }, x.createElement("p", null, "Failed to delete product:"), x.createElement("code", {
                                 className: "tw-text-red"
-                            }, null !== (e = null === (t = L.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "".concat(a, " An error occurred")))), x.createElement("div", {
+                            }, null !== (e = null === (t = J.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "".concat(a, " An error occurred")))), x.createElement("div", {
                                 className: "tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-flex-nowrap tw-w-full tw-gap-2"
                             }, x.createElement("div", {
                                 className: "sm:tw-w-1/2"
                             }, x.createElement(w.zx, {
                                 className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                                onClick: A
+                                onClick: U
                             }, "Cancel")), x.createElement("div", {
                                 className: "sm:tw-w-1/2"
                             }, x.createElement(w.zx, {
@@ -211,7 +211,7 @@
                                 className: "tw-w-1/2"
                             }, x.createElement(w.zx, {
                                 className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight",
-                                onClick: A,
+                                onClick: U,
                                 loading: F
                             }, "Understood"))))
                         };
@@ -341,9 +341,9 @@
                 createdProduct: Z().object.isRequired,
                 closeModalCallback: Z().func
             };
-            const J = F;
+            const A = F;
 
-            function L(e, t) {
+            function J(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var l = Object.getOwnPropertySymbols(e);
@@ -354,18 +354,18 @@
                 return a
             }
 
-            function U(e) {
+            function L(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? L(Object(a), !0).forEach((function(t) {
+                    t % 2 ? J(Object(a), !0).forEach((function(t) {
                         (0, l.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : L(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : J(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            var A = (0, x.lazy)((function() {
+            var U = (0, x.lazy)((function() {
                     return a.e(2073).then(a.bind(a, 2073))
                 })),
                 B = (0, x.lazy)((function() {
@@ -388,9 +388,9 @@
                     X = S.productTab,
                     z = O ? Number(O) : 1,
                     F = (0, x.useState)(I.get("sortBy") || null),
-                    L = (0, r.Z)(F, 2),
-                    V = L[0],
-                    M = L[1],
+                    J = (0, r.Z)(F, 2),
+                    V = J[0],
+                    M = J[1],
                     R = (0, x.useState)(I.get("orderBy") || "descending"),
                     $ = (0, r.Z)(R, 2),
                     q = $[0],
@@ -483,7 +483,7 @@
                                             e.next = 7;
                                             break
                                         }
-                                        return e.next = 6, Ze(U(U({
+                                        return e.next = 6, Ze(L(L({
                                             productId: n.id
                                         }, null !== w ? {
                                             file: w,
@@ -492,7 +492,7 @@
                                     case 6:
                                         return e.abrupt("return", m());
                                     case 7:
-                                        return e.next = 9, ke(U(U({}, null !== w ? {
+                                        return e.next = 9, ke(L(L({}, null !== w ? {
                                             file: w,
                                             tag: "product"
                                         } : {}), n)).unwrap();
@@ -574,7 +574,7 @@
                     fallback: x.createElement(m.Z, {
                         loading: !0
                     })
-                }, !X && x.createElement(A, {
+                }, !X && x.createElement(U, {
                     currentUser: t,
                     searchValue: D,
                     currentPage: z,
@@ -624,7 +624,7 @@
                     isEditing: !0,
                     onSubmit: Oe,
                     user: t
-                }), ee && ne && x.createElement(J, {
+                }), ee && ne && x.createElement(A, {
                     isOpen: ne,
                     createdProduct: we,
                     updated: se,
@@ -697,7 +697,9 @@
                     className: "tw-w-full"
                 }, o.createElement(w.JX, {
                     className: "tw-mb-8"
-                }, o.createElement(w.X2, {
+                }, o.createElement("h2", {
+                    className: "tw-text-lg tw-mb-3"
+                }, "Avatar Detail"), o.createElement(w.X2, {
                     className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
                 }, o.createElement(w.JX, null, o.createElement(w.pw, {
                     imageId: E.thumbnailImageUrl,
@@ -777,9 +779,7 @@
                     }
                 }, o.createElement(w.$1, {
                     icon: n.kZ
-                })))), h && o.createElement(w.JX, {
-                    className: "tw-mb-5"
-                }, o.createElement("label", {
+                })))), h && o.createElement(w.JX, null, o.createElement("label", {
                     htmlFor: "price",
                     className: "tw-mb-2"
                 }, "Product Type"), o.createElement(w.X2, {
@@ -821,4 +821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a9d69104116ed9361a74fc5e59d6523cd667eaef8f1ca082b0140dabf3ed961a.js.map
+//# sourceMappingURL=b868fef81388f1f06597fd88430ae9cb67855ed97f9198ecfb7a963c73410dd3.js.map

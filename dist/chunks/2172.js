@@ -3,7 +3,7 @@
     [2172], {
         42172: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => P
+                default: () => F
             });
             var l = a(54546),
                 n = a(65394),
@@ -19,8 +19,8 @@
                 p = a(4942),
                 v = a(45987),
                 f = a(4965),
-                b = a(71421),
-                g = a(67263),
+                g = a(71421),
+                b = a(67263),
                 x = a(83505),
                 E = a(12752),
                 h = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
@@ -38,29 +38,29 @@
                     C = e.allowMultiline,
                     Z = (0, v.Z)(e, h),
                     M = m.useState(!1),
-                    z = (0, l.Z)(M, 2),
-                    R = z[0],
-                    D = z[1],
-                    P = m.useState(""),
-                    F = (0, l.Z)(P, 2),
-                    O = F[0],
-                    q = F[1],
+                    D = (0, l.Z)(M, 2),
+                    z = D[0],
+                    R = D[1],
+                    F = m.useState(""),
+                    P = (0, l.Z)(F, 2),
+                    O = P[0],
+                    q = P[1],
                     U = (0, E.Nr)(O),
                     B = m.useRef(null),
                     K = function(e) {
-                        B.current.contains(e.target) || D(!1)
+                        B.current.contains(e.target) || R(!1)
                     },
                     W = m.useMemo((function() {
-                        return !1 === R ? (q(""), r) : r.filter((function(e) {
+                        return !1 === z ? (q(""), r) : r.filter((function(e) {
                             return e.name.toLowerCase().includes(U.toLowerCase())
                         }))
-                    }), [U, R]);
+                    }), [U, z]);
                 m.useEffect((function() {
-                    return R ? window.addEventListener("click", K) : window.removeEventListener("click", K),
+                    return z ? window.addEventListener("click", K) : window.removeEventListener("click", K),
                         function() {
                             window.removeEventListener("click", K)
                         }
-                }), [R]);
+                }), [z]);
                 var $ = r.find((function(e) {
                     return e.name === c
                 }));
@@ -70,27 +70,27 @@
                     ref: B,
                     className: f,
                     onMouseLeave: function() {
-                        R && D(!1)
+                        z && R(!1)
                     }
                 }, Z), m.createElement(I, {
                     disabled: k,
-                    expanded: R
+                    expanded: z
                 }, m.createElement(S, {
                     type: "button",
                     "aria-label": "Expand Options",
                     disabled: k,
                     onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), D(!R)
+                        e.stopPropagation(), e.preventDefault(), R(!z)
                     }
                 }, m.createElement(N, null, !!i && m.createElement(L, null, i), m.createElement(T, {
                     role: "note",
                     trimToLength: y,
                     title: null !== (t = null == $ ? void 0 : $.selectedLabel) && void 0 !== t ? t : null == $ ? void 0 : $.label
                 }, null !== (a = null == $ ? void 0 : $.name) && void 0 !== a ? a : null == $ ? void 0 : $.name)), m.createElement(o.$1, {
-                    icon: b.eW,
+                    icon: g.eW,
                     color: "white",
                     className: "ms-3"
-                })), R && m.createElement(J, null, m.createElement(o.II, {
+                })), z && m.createElement(J, null, m.createElement(o.II, {
                     className: "tw-mb-4 tw-mt-3 tw-px-3 tw-overflow-visible",
                     placeholder: "Search Avatars",
                     onChange: function(e) {
@@ -109,7 +109,7 @@
                         "aria-checked": e.id === (null == c ? void 0 : c.id),
                         key: e.id,
                         onClick: (a = e, function(e) {
-                            e.stopPropagation(), e.preventDefault(), s && s(a), D(!1)
+                            e.stopPropagation(), e.preventDefault(), s && s(a), R(!1)
                         }),
                         tabIndex: t,
                         trimToLength: y,
@@ -122,7 +122,7 @@
                         fitToCover: !0,
                         imageId: null == e ? void 0 : e.imageUrl,
                         alt: null == e ? void 0 : e.name,
-                        fallbackSrc: g,
+                        fallbackSrc: b,
                         width: 36
                     }), m.createElement(o.JX, {
                         className: "tw-flex-1"
@@ -194,32 +194,32 @@
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                z = {
+                D = {
                     name: "1bmnxg7",
                     styles: "white-space:nowrap"
                 },
-                R = {
+                z = {
                     name: "1vv75mf",
                     styles: "white-space:wrap"
                 },
                 A = (0, f.Z)("div", {
                     target: "evny8vp0"
                 })("transition:opacity 0.2s ease-in-out;padding:0;background-color:#07343f;cursor:pointer;max-width:100%;", (function(e) {
-                    return e.allowMultiline ? R : z
+                    return e.allowMultiline ? z : D
                 }), " ", (function(e) {
                     return e.trimToLength ? M : ""
                 }), ";"),
-                D = a(44869);
-            const P = function(e) {
+                R = a(44869);
+            const F = function(e) {
                 var t = e.avatarProductData,
                     a = void 0 === t ? null : t,
                     w = e.isEditing,
                     p = void 0 !== w && w,
                     v = e.user,
                     f = e.onDataChange,
-                    b = void 0 === f ? function() {} : f,
-                    g = e.onNext,
-                    x = void 0 === g ? function() {} : g,
+                    g = void 0 === f ? function() {} : f,
+                    b = e.onNext,
+                    x = void 0 === b ? function() {} : b,
                     E = e.onPrevious,
                     h = void 0 === E ? function() {} : E;
                 if (null === a && p) return null;
@@ -238,13 +238,13 @@
                     T = (0, l.Z)(Z, 2),
                     J = T[0],
                     M = T[1],
-                    z = m.useState(""),
-                    R = (0, l.Z)(z, 2),
-                    A = (R[0], R[1]),
-                    P = (0, m.useState)(J ? null == J ? void 0 : J.thumbnailImageUrl : null),
-                    F = (0, l.Z)(P, 2),
-                    O = F[0],
-                    q = F[1],
+                    D = m.useState(""),
+                    z = (0, l.Z)(D, 2),
+                    A = (z[0], z[1]),
+                    F = (0, m.useState)(J ? null == J ? void 0 : J.thumbnailImageUrl : null),
+                    P = (0, l.Z)(F, 2),
+                    O = P[0],
+                    q = P[1],
                     U = (0, m.useState)(!1),
                     B = (0, l.Z)(U, 2),
                     K = B[0],
@@ -263,7 +263,7 @@
                     Q = V.isFetching,
                     Y = V.isSuccess;
                 (0, m.useEffect)((function() {
-                    J && b(J)
+                    J && g(J)
                 }), [J]);
                 var ee = (0, m.useMemo)((function() {
                     return Y && G ? function(e) {
@@ -287,16 +287,16 @@
                         return A(e)
                     }
                 }), J && m.createElement("hr", {
-                    className: "tw-h-px tw-my-5 tw-bg-gray-200 tw-border-0 dark:tw-bg-gray-700"
+                    className: "tw-h-px tw-my-5 tw-bg-[#2D363F] tw-opacity-100 tw-border-0 dark:tw-bg-gray-700"
                 })), J && m.createElement(m.Fragment, null, m.createElement(o.qX, {
                     title: "Review and submit to start selling",
                     type: "custom",
                     icon: r.sq,
-                    className: "tw-mb-5",
+                    className: "tw-mb-5 tw-mt-0 tw-rounded-sm",
                     color: "#28434B",
                     iconColor: "#6AE3F9"
                 }, m.createElement(o.JX, {
-                    className: "tw-ml-[25px] tw-mt-3 tw-mb-3"
+                    className: "tw-ml-[25px]"
                 }, m.createElement("p", null, "To list your avatar for sale, it must meet our Marketplace Standards and Terms and Conditions. Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", m.createElement(d.rU, {
                     to: "/home/avatar/".concat(J.id),
                     className: "hover:tw-text-teal-accent"
@@ -309,7 +309,7 @@
                 }, m.createElement(o.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(D.Z, {
+                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(R.Z, {
                     avatarData: J,
                     productType: I
                 })), m.createElement(o.JX, {
@@ -346,7 +346,7 @@
         },
         44869: (e, t, a) => {
             a.d(t, {
-                Z: () => b
+                Z: () => g
             });
             var l = a(15861),
                 n = a(2909),
@@ -362,8 +362,8 @@
                 p = a(3620),
                 v = a(64358),
                 f = new RegExp("^".concat(p.i.AUTHOR));
-            const b = function(e) {
-                var t, a, i, b, g, x = e.avatarData,
+            const g = function(e) {
+                var t, a, i, g, b, x = e.avatarData,
                     E = void 0 === x ? null : x,
                     h = e.productType;
                 if (null === E) return null;
@@ -403,7 +403,9 @@
                     className: "tw-w-full"
                 }, s.createElement(d.JX, {
                     className: "tw-mb-8"
-                }, s.createElement(d.X2, {
+                }, s.createElement("h2", {
+                    className: "tw-text-lg tw-mb-3"
+                }, "Avatar Detail"), s.createElement(d.X2, {
                     className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
                 }, s.createElement(d.JX, null, s.createElement(d.pw, {
                     imageId: E.thumbnailImageUrl,
@@ -440,7 +442,7 @@
                     className: "tw-mb-2"
                 }, "Secondary Style"), !(null !== (i = E.styles) && void 0 !== i && i.secondary) && s.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No secondary style!"), (null === (b = E.styles) || void 0 === b ? void 0 : b.secondary) && s.createElement("div", {
+                }, "No secondary style!"), (null === (g = E.styles) || void 0 === g ? void 0 : g.secondary) && s.createElement("div", {
                     className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
                 }, E.styles.secondary))), s.createElement(d.JX, null, s.createElement("p", {
                     className: "tw-mb-2"
@@ -483,9 +485,7 @@
                     }
                 }, s.createElement(d.$1, {
                     icon: n.kZ
-                })))), h && s.createElement(d.JX, {
-                    className: "tw-mb-5"
-                }, s.createElement("label", {
+                })))), h && s.createElement(d.JX, null, s.createElement("label", {
                     htmlFor: "price",
                     className: "tw-mb-2"
                 }, "Product Type"), s.createElement(d.X2, {
@@ -521,10 +521,10 @@
                     id: "acknowledgements",
                     inputClassName: "tw-h-[90px] tw-my-2",
                     maxLength: 256,
-                    value: null !== (g = null == E ? void 0 : E.acknowledgements) && void 0 !== g ? g : ""
+                    value: null !== (b = null == E ? void 0 : E.acknowledgements) && void 0 !== b ? b : ""
                 })))))
             }
         }
     }
 ]);
-//# sourceMappingURL=1eb56e43d32431ec2a8c684273711bf20587a882743c0782a5fc3c7c9ab75903.js.map
+//# sourceMappingURL=6da57c18cd4fbaee9e5258fa3b764f2a4e7aa357396ed4871cdabfc68a27a20a.js.map

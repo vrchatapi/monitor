@@ -9583,6 +9583,7 @@
   "tooltipItems",
   "tooltipPosition",
   "top",
+  "topAlign",
   "topLeft",
   "topMargin",
   "topRight",
