@@ -72,10 +72,10 @@
                         z = (0, P.v9)((function(e) {
                             return e.listingFlow
                         })),
-                        F = z.isPreviewOpen,
-                        G = z.selectedProducts,
-                        M = (0, C.useState)("listingInformation"),
-                        A = (0, i.Z)(M, 2),
+                        G = z.isPreviewOpen,
+                        M = z.selectedProducts,
+                        F = (0, C.useState)("listingInformation"),
+                        A = (0, i.Z)(F, 2),
                         U = A[0],
                         X = A[1],
                         Y = (0, C.useState)(null),
@@ -91,12 +91,12 @@
                         K = B[0],
                         ee = B[1],
                         te = (0, C.useMemo)((function() {
-                            return G.filter((function(e) {
+                            return M.filter((function(e) {
                                 return e.avatarId
                             })).map((function(e) {
                                 return e.avatarId
                             }))
-                        }), [G]),
+                        }), [M]),
                         re = (0, y.mr)({
                             listingId: o,
                             hydrateProducts: !0,
@@ -215,7 +215,7 @@
                             return r && n && o
                         }), [_]),
                         Se = oe || le || de;
-                    return C.createElement(C.Fragment, null, Se && C.createElement("div", null, "Loading..."), !Se && _ && !K && !F && C.createElement(f.JX, {
+                    return C.createElement(C.Fragment, null, Se && C.createElement("div", null, "Loading..."), !Se && _ && !K && !G && C.createElement(f.JX, {
                         className: "tw-w-full tw-relative"
                     }, C.createElement(p.Z, {
                         onChange: X,
@@ -259,7 +259,7 @@
                         onClick: function() {
                             return L(ne)
                         },
-                        danger: !0,
+                        neutral: !0,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
                     }, "Delete Listing")), C.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-justify-end tw-flex-auto tw-flex-wrap"
@@ -293,8 +293,8 @@
                         onClick: Ee,
                         containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
                         disabled: !he
-                    }, "Save"))), F && ie && C.createElement(T.Z, {
-                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-border tw-border-[#2D363F] tw-rounded-lg tw-p-5"
+                    }, "Save"))), G && ie && C.createElement(T.Z, {
+                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
                     }, C.createElement(f.X2, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
                     }, C.createElement(f.zx, {
@@ -307,15 +307,17 @@
                         icon: a.YI
                     }), " Close Preview")), C.createElement(C.Suspense, {
                         fallback: C.createElement("div", null, "Loading...")
+                    }, C.createElement("div", {
+                        className: "tw-border tw-border-solid  tw-border-hr-line-color tw-rounded-lg tw-p-5"
                     }, C.createElement(D, {
                         isPreview: !0,
-                        products: G,
+                        products: M,
                         galleryImages: pe,
                         listing: _,
                         onClose: function() {
                             return Ie(!1)
                         }
-                    }))))
+                    })))))
                 };
             Z.propTypes = {
                 listingId: S().string.isRequired,
@@ -464,4 +466,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4b0343241557d2f14e61544915eb211f7326ab6fb7d8ae9a82c5270528255b3e.js.map
+//# sourceMappingURL=88cd66eb6f5f4852d5b842b2fe1fae6d508ef52472c0f2c1784102e12619b735.js.map

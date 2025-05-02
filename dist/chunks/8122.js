@@ -615,7 +615,7 @@
                     centered: !1,
                     overflow: "auto",
                     disableBackdropClick: !0,
-                    backgroundColor: "#181B1F"
+                    className: "tw-bg-black"
                 }, ee && Y.isCreating && x.createElement(N.Z, {
                     onClose: je
                 }), ee && Y.isEditing && x.createElement(k.default, {
@@ -821,4 +821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b868fef81388f1f06597fd88430ae9cb67855ed97f9198ecfb7a963c73410dd3.js.map
+//# sourceMappingURL=b691182f22d941b1d0ef944a9184706210f11ffff6aa08a6ed329e70b7c59e76.js.map

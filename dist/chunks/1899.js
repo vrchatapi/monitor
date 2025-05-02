@@ -28,9 +28,9 @@
                     b = g[0],
                     y = g[1],
                     x = (0, u.useState)(!1),
-                    k = (0, r.Z)(x, 2),
-                    N = k[0],
-                    C = k[1],
+                    N = (0, r.Z)(x, 2),
+                    k = N[0],
+                    C = N[1],
                     S = (0, u.useMemo)((function() {
                         return v.IM.reduce((function(e, a) {
                             var r = (0, d.F)(null == t ? void 0 : t.unityPackages, a);
@@ -49,22 +49,23 @@
                     type: "custom",
                     icon: c.sq,
                     color: "#28434B",
-                    iconColor: "#6AE3F9"
+                    iconColor: "#6AE3F9",
+                    className: "tw-border-2 tw-rounded-lg"
                 }, u.createElement(m.JX, {
                     className: "tw-ml-[25px] tw-mt-3"
                 }, u.createElement("p", null, "To list your avatar for sale, it must meet our ", u.createElement("strong", null, "Marketplace Standards"), " and ", u.createElement("strong", null, "Terms and Conditions"), ". Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", u.createElement(w.rU, {
                     to: "/home/avatar/".concat(t.id),
                     className: "hover:tw-text-teal-accent"
-                }, "the avatar page"), " ", "to make changes."), N && u.createElement("div", null, u.createElement("p", null, u.createElement("strong", null, "Our review process:")), u.createElement("p", null, u.createElement("ol", null, u.createElement("li", null, u.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), u.createElement("li", null, u.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), u.createElement("li", null, u.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), u.createElement("li", null, u.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), u.createElement("p", null, u.createElement("strong", null, "Why Reviews Matter?"), u.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), u.createElement("button", {
+                }, "the avatar page"), " ", "to make changes."), k && u.createElement("div", null, u.createElement("p", null, u.createElement("strong", null, "Our review process:")), u.createElement("p", null, u.createElement("ol", null, u.createElement("li", null, u.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), u.createElement("li", null, u.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), u.createElement("li", null, u.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), u.createElement("li", null, u.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), u.createElement("p", null, u.createElement("strong", null, "Why Reviews Matter?"), u.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), u.createElement("button", {
                     type: "button",
                     className: "tw-bg-transparent tw-border-none tw-text-teal-accent hover:tw-text-white tw-text-left",
                     onClick: function() {
-                        return C(!N)
+                        return C(!k)
                     }
                 }, u.createElement(m.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", N ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h2", {
+                }), " ", k ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h2", {
                     className: "tw-text-xl"
                 }, "Performance Rank"), u.createElement("small", {
                     className: "tw-text-light-grey tw-mb-3"
@@ -159,4 +160,4 @@
         }
     }
 ]);
-//# sourceMappingURL=173a8c1ddfdfdefb96e09e97ed9c5ffedb5b41b304af063d5089bb9f1117cb44.js.map
+//# sourceMappingURL=1b45611117303f2113c46e3422cc7aee604229e82fcfd113be8ccd654204ccd2.js.map

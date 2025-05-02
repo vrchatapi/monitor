@@ -106,7 +106,7 @@
                         }
                     }();
                 return w ? f.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-my-4 tw-gap-8"
+                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
                 }, f.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, f.createElement(u.$1, {
@@ -123,7 +123,7 @@
                     containerClasses: "tw-flex-1",
                     neutral: !0
                 }, "Close"))) : f.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-my-4 tw-gap-8"
+                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
                 }, f.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, f.createElement(u.$1, {
@@ -301,4 +301,4 @@
         }
     }
 ]);
-//# sourceMappingURL=19a25b1d085196520c99031bdba2e41dcaedc15f6d69b7e83b20b78f81adaa1e.js.map
+//# sourceMappingURL=27cb8cc26b6085ab4f9484ddb8f0f8f4185780f2f75262bf1d0938a4d81515a1.js.map

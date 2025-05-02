@@ -3264,7 +3264,7 @@
                         t((0, I.Bq)(c))
                     } : null,
                     disableBackdropClick: !0,
-                    backgroundColor: "#181B1F"
+                    className: "tw-bg-black"
                 }, H && $.isCreating && d.createElement(F.default, {
                     user: ne,
                     subscription: $.data,
@@ -4792,4 +4792,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d90fda9008244dbc2c73bf6766e064120f6d8b808f9897537628cf596bf02467.js.map
+//# sourceMappingURL=84bb391b441c89e21e3bd288235aa6de91c0c13bc6f89cbd7783885aa09172c6.js.map

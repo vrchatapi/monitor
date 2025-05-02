@@ -31,10 +31,10 @@
                 p = n(41255),
                 g = n(16869),
                 v = n(67978),
-                x = n(36183),
-                y = n(39270),
-                E = n(64358),
-                b = n(67294),
+                b = n(36183),
+                E = n(39270),
+                x = n(64358),
+                y = n(67294),
                 h = n(32981),
                 C = n(89250),
                 k = n(53637),
@@ -42,9 +42,9 @@
             const N = function(e) {
                 var t = e.listing,
                     n = void 0 === t ? {} : t;
-                return b.createElement(d.JX, {
+                return y.createElement(d.JX, {
                     className: "tw-text-center tw-items-center"
-                }, b.createElement(d.pw, {
+                }, y.createElement(d.pw, {
                     className: "tw-mb-5 tw-rounded-lg",
                     imageId: null == n ? void 0 : n.imageId,
                     alt: null == n ? void 0 : n.displayName,
@@ -52,15 +52,15 @@
                     fitToCover: !0,
                     containerColor: "#252A30",
                     iconColor: "#404C58"
-                }), b.createElement("h4", null, "Listing Created!"), b.createElement("p", null, "You can manage and review your listings from the ", b.createElement(T.rU, {
+                }), y.createElement("h4", null, "Listing Created!"), y.createElement("p", null, "You can manage and review your listings from the ", y.createElement(T.rU, {
                     to: "/home/marketplace/storefront/listings"
                 }, "My Listings"), " section."))
             };
             var L = n(68420),
                 P = n(80938),
                 O = n(99878),
-                D = n(68055),
-                S = n(28963),
+                S = n(68055),
+                D = n(28963),
                 I = n(91435),
                 j = n(74205),
                 z = n(60006),
@@ -76,7 +76,7 @@
                     value: "duration",
                     text: "Offer access for a limited time.",
                     redirect: "https://creators.vrchat.com/economy/listings#temporary",
-                    icon: S.DH,
+                    icon: D.DH,
                     allowedTypes: ["Udon"]
                 }, {
                     label: "Permanent",
@@ -97,51 +97,51 @@
                     })),
                     c = s.selectedListingType,
                     o = s.selectedProducts,
-                    u = b.useState(c),
+                    u = y.useState(c),
                     m = (0, i.Z)(u, 2),
                     w = m[0],
                     f = m[1];
-                (0, b.useEffect)((function() {
+                (0, y.useEffect)((function() {
                     a.listingType && f(a.listingType)
                 }), [a]);
-                return b.createElement(d.JX, null, b.createElement("p", null, "Select the duration of your listing:"), b.createElement(d.JX, {
+                return y.createElement(d.JX, null, y.createElement("p", null, "Select the duration of your listing:"), y.createElement(d.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row"
                 }, X.map((function(e) {
-                    return b.createElement(d.JX, {
+                    return y.createElement(d.JX, {
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                o.length > 0 && l((0, y.kH)()), l((0, y.TY)(e)), f(e), n({
+                                o.length > 0 && l((0, E.kH)()), l((0, E.TY)(e)), f(e), n({
                                     listingType: e
                                 })
                             }(e.value)
                         },
                         className: "".concat(w === e.value ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-max-w-[220px] tw-text-center tw-px-5 tw-py-7 tw-gap-3 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md tw-cursor-pointer")
-                    }, b.createElement(d.JX, {
-                        className: "tw-items-center tw-justify-center tw-border-b-2 tw-border-solid tw-border-t-0 tw-border-l-0 tw-border-r-0 tw-border-[#404C58] tw-w-full tw-pb-3"
-                    }, b.createElement("span", {
+                    }, y.createElement(d.JX, {
+                        className: "tw-items-center tw-justify-center tw-border-b tw-border-solid tw-border-t-0 tw-border-l-0 tw-border-r-0 tw-border-[#404C58] tw-w-full tw-pb-3"
+                    }, y.createElement("span", {
                         className: "".concat(w === e.value ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-absolute tw-top-3 tw-right-3 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
-                    }, w === e.value ? b.createElement(d.$1, {
-                        icon: D.LE
-                    }) : null), e.image ? b.createElement("img", {
+                    }, w === e.value ? y.createElement(d.$1, {
+                        icon: S.LE
+                    }) : null), e.image ? y.createElement("img", {
                         src: e.image,
                         alt: e.label,
-                        className: "tw-h-12 tw-w-[56px]"
-                    }) : b.createElement(d.$1, {
+                        className: "tw-h-12 tw-w-[56px] tw-mb-2"
+                    }) : y.createElement(d.$1, {
                         icon: e.icon,
-                        className: "tw-text-5xl"
-                    }), e.label, b.createElement("small", {
+                        className: "tw-text-5xl tw-mb-2"
+                    }), e.label, y.createElement("small", {
                         className: "tw-m-0 tw-text-xs tw-text-light-grey"
-                    }, e.text, " ", b.createElement("a", {
+                    }, e.text, " ", y.createElement("a", {
                         href: e.redirect
-                    }, "Learn More"))), b.createElement(d.JX, {
+                    }, "Learn More"))), y.createElement(d.JX, {
                         className: "tw-items-center tw-justify-center"
-                    }, b.createElement("small", {
+                    }, y.createElement("small", {
                         className: "tw-font-bold tw-mb-2"
-                    }, "Eligible Products"), b.createElement(d.X2, {
+                    }, "Eligible Products"), y.createElement(d.X2, {
                         className: "tw-gap-1"
                     }, e.allowedTypes.map((function(e) {
-                        return b.createElement(z.DR, {
+                        return y.createElement(z.DR, {
                             key: e,
                             bgColor: "#575757"
                         }, e)
@@ -171,7 +171,7 @@
                 }
                 return e
             }
-            var B = (0, b.lazy)((function() {
+            var B = (0, y.lazy)((function() {
                     return Promise.all([n.e(8043), n.e(2704), n.e(8490)]).then(n.bind(n, 22704))
                 })),
                 J = {
@@ -199,8 +199,8 @@
                     a = e.onClose,
                     o = void 0 === a ? function() {} : a,
                     T = (0, h.I0)(),
-                    D = (0, C.s0)(),
-                    S = (0, f.XC)().data,
+                    S = (0, C.s0)(),
+                    D = (0, f.XC)().data,
                     I = (0, h.v9)((function(e) {
                         return e.listingFlow
                     })),
@@ -208,15 +208,15 @@
                     z = I.selectedListingType,
                     X = I.selectedProducts,
                     Z = I.isPreviewOpen,
-                    Y = b.useState(null),
+                    Y = y.useState(null),
                     $ = (0, i.Z)(Y, 2),
                     Q = $[0],
                     R = $[1],
-                    V = b.useState(J),
+                    V = y.useState(J),
                     W = (0, i.Z)(V, 2),
                     K = W[0],
                     ee = W[1],
-                    te = (0, b.useMemo)((function() {
+                    te = (0, y.useMemo)((function() {
                         return X.filter((function(e) {
                             return e.avatarId
                         })).map((function(e) {
@@ -228,19 +228,19 @@
                     ae = re[0],
                     ie = re[1],
                     le = (ie.isSuccess, ie.isLoading),
-                    se = (ie.isError, ie.error, (0, x.Ci)({
-                        sellerId: S.id,
+                    se = (ie.isError, ie.error, (0, b.Ci)({
+                        sellerId: D.id,
                         managementPov: !0
                     }, {
-                        skip: !S
+                        skip: !D
                     })),
                     ce = se.data,
                     oe = se.isLoading,
                     ue = (se.isError, se.error, (0, v.x3)({
-                        userId: S.id,
+                        userId: D.id,
                         archived: !1
                     }, {
-                        skip: !S && "listingDetails" !== listingDetails
+                        skip: !D && "listingDetails" !== listingDetails
                     })),
                     me = ue.data,
                     de = ue.isLoading,
@@ -250,7 +250,7 @@
                         skip: !te.length
                     })),
                     fe = we.data,
-                    pe = (we.isFetching, we.isError, we.error, (0, b.useMemo)((function() {
+                    pe = (we.isFetching, we.isError, we.error, (0, y.useMemo)((function() {
                         return (null != fe ? fe : []).map((function(e) {
                             return {
                                 fileId: e.id,
@@ -259,9 +259,9 @@
                             }
                         }))
                     }), [fe]));
-                (0, b.useEffect)((function() {
+                (0, y.useEffect)((function() {
                     return function() {
-                        T((0, y.rk)())
+                        T((0, E.rk)())
                     }
                 }), []);
                 var ge = function(e) {
@@ -280,7 +280,7 @@
                                     case 2:
                                         ge({
                                             listingType: t
-                                        }), xe();
+                                        }), be();
                                     case 4:
                                     case "end":
                                         return e.stop()
@@ -291,7 +291,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    xe = function() {
+                    be = function() {
                         var e = function() {
                             if (!z) return j;
                             var e = U[z],
@@ -300,9 +300,9 @@
                             var n = e[t + 1];
                             return n !== q || K.active ? n : H
                         }();
-                        T((0, y.Td)(w._9[e])), T((0, y.Bq)(e))
+                        T((0, E.Td)(w._9[e])), T((0, E.Bq)(e))
                     },
-                    ye = function() {
+                    Ee = function() {
                         var e = function() {
                                 if (null === z) return {
                                     immediateStep: null,
@@ -317,20 +317,20 @@
                             }(),
                             t = e.immediateStep,
                             n = e.nextStep;
-                        if (!t) return T((0, y.Bq)(A)), void T((0, y.IT)(null));
-                        T((0, y.Td)(w._9[t])), T((0, y.Bq)(t)), T((0, y.IT)(n))
+                        if (!t) return T((0, E.Bq)(A)), void T((0, E.IT)(null));
+                        T((0, E.Td)(w._9[t])), T((0, E.Bq)(t)), T((0, E.IT)(n))
                     },
-                    Ee = function() {
+                    xe = function() {
                         var e = (0, r.Z)(u().mark((function e() {
                             var t, n, r;
                             return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, ae(M(M({}, K), {}, {
-                                            sellerId: S.id
+                                            sellerId: D.id
                                         })).unwrap();
                                     case 3:
-                                        return t = e.sent, R(t.listing), e.abrupt("return", xe());
+                                        return t = e.sent, R(t.listing), e.abrupt("return", be());
                                     case 8:
                                         e.prev = 8, e.t0 = e.catch(0), T((0, m.d)({
                                             title: "Failed to create listing!",
@@ -351,14 +351,14 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    be = function(e) {
-                        T((0, y.Td)(null)), T((0, y.xj)(e))
+                    ye = function(e) {
+                        T((0, E.Td)(null)), T((0, E.xj)(e))
                     },
                     he = function() {
                         o(), ee(J)
                     },
                     Ce = oe || de || le,
-                    ke = (0, b.useMemo)((function() {
+                    ke = (0, y.useMemo)((function() {
                         if (!z) return !1;
                         if ("permanent" !== z && X.some((function(e) {
                                 return e.avatarId
@@ -366,7 +366,7 @@
                         if (j === G) {
                             if ("duration" === K.listingType) {
                                 if (![w.PG.MIN, w.PG.HOUR, w.PG.DAY].includes(K.durationType)) return !1;
-                                if (!((0, E.qG)(K.durationType, K.duration) && Number.isInteger(parseFloat(K.duration)))) return !1
+                                if (!((0, x.qG)(K.durationType, K.duration) && Number.isInteger(parseFloat(K.duration)))) return !1
                             }
                             var e = K.displayName.length >= 3,
                                 t = K.priceTokens >= 100 && K.priceTokens <= 1e4 && Number.isInteger(parseFloat(K.priceTokens)),
@@ -375,17 +375,17 @@
                         }
                         return !Ce
                     }), [j, K, X, z]);
-                return b.createElement(b.Fragment, null, !Z && b.createElement(d.JX, {
+                return y.createElement(y.Fragment, null, !Z && y.createElement(d.JX, {
                     className: "tw-w-full"
                 }, function() {
                     switch (j) {
                         case A:
-                            return b.createElement(F, {
+                            return y.createElement(F, {
                                 onDataChange: ge,
                                 listing: K
                             });
                         case G:
-                            return b.createElement(L.Z, {
+                            return y.createElement(L.Z, {
                                 onDataChange: ge,
                                 products: me,
                                 productsLoading: de,
@@ -394,7 +394,7 @@
                                 originalListing: K
                             });
                         case _:
-                            return b.createElement(O.Z, {
+                            return y.createElement(O.Z, {
                                 activeListing: K,
                                 products: K.products,
                                 onDataChange: ge,
@@ -402,59 +402,59 @@
                                 activeStore: n
                             });
                         case q:
-                            return b.createElement(P.Z, null);
+                            return y.createElement(P.Z, null);
                         case H:
-                            return b.createElement(N, {
+                            return y.createElement(N, {
                                 listing: Q
                             });
                         default:
                             return null
                     }
-                }(), b.createElement(d.X2, {
+                }(), y.createElement(d.X2, {
                     className: "tw-mt-8 tw-gap-3"
-                }, b.createElement(d.X2, {
+                }, y.createElement(d.X2, {
                     className: "tw-flex-auto"
                 }, function() {
                     switch (j) {
                         case A:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 onClick: he,
                                 neutral: !0
                             }, "Cancel");
                         case q:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
-                                onClick: ye
+                                onClick: Ee
                             }, "Back");
                         case H:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
                                 onClick: function() {
-                                    return D("/home/marketplace/storefront/listings")
+                                    return S("/home/marketplace/storefront/listings")
                                 }
                             }, "Go to My Listings");
                         case _:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex tw-w-[200px]",
                                 neutral: !0,
-                                onClick: ye
+                                onClick: Ee
                             }, "Back");
                         default:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
-                                onClick: ye
+                                onClick: Ee
                             }, "Back")
                     }
-                }()), b.createElement(d.X2, {
+                }()), y.createElement(d.X2, {
                     className: "tw-flex-auto tw-justify-end"
                 }, function() {
                     switch (j) {
                         case A:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 onClick: function() {
                                     return ve(K.listingType)
@@ -462,64 +462,66 @@
                                 disabled: !ke || !z
                             }, "Next");
                         case q:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
-                                onClick: Ee,
+                                onClick: xe,
                                 disabled: !ke
                             }, "Publish Listing");
                         case H:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 onClick: he,
                                 disabled: !ke
                             }, "Done");
                         case _:
-                            return b.createElement(b.Fragment, null, "permanent" === z && b.createElement(d.zx, {
+                            return y.createElement(y.Fragment, null, "permanent" === z && y.createElement(d.zx, {
                                 transparent: !0,
                                 containerClasses: "tw-w-fit tw-mr-5",
                                 onClick: function() {
-                                    return be(!0)
+                                    return ye(!0)
                                 }
-                            }, b.createElement(d.$1, {
+                            }, y.createElement(d.$1, {
                                 icon: s.wl,
                                 className: "tw-mr-2"
-                            }), "Preview Listing"), b.createElement(d.zx, {
+                            }), "Preview Listing"), y.createElement(d.zx, {
                                 containerClasses: "tw-w-[200px]",
-                                onClick: null != K && K.active ? xe : Ee,
+                                onClick: null != K && K.active ? be : xe,
                                 disabled: !ke
                             }, "Create"));
                         default:
-                            return b.createElement(d.zx, {
+                            return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
-                                onClick: xe,
+                                onClick: be,
                                 disabled: !ke
                             }, "Next")
                     }
-                }()))), Z && b.createElement(k.Z, {
-                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-border tw-border-[#2D363F] tw-rounded-lg tw-p-5"
-                }, b.createElement(d.X2, {
+                }()))), Z && y.createElement(k.Z, {
+                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
+                }, y.createElement(d.X2, {
                     className: "tw-justify-center tw-items-center tw-mb-3"
-                }, b.createElement(d.zx, {
+                }, y.createElement(d.zx, {
                     neutral: !0,
                     containerClasses: "tw-w-fit",
                     onClick: function() {
-                        return T((0, y.xj)(!1)), void T((0, y.Td)(w._9[j]))
+                        return T((0, E.xj)(!1)), void T((0, E.Td)(w._9[j]))
                     }
-                }, b.createElement(d.$1, {
+                }, y.createElement(d.$1, {
                     icon: l.YI
-                }), " Close Preview")), b.createElement(b.Suspense, {
-                    fallback: b.createElement("div", null, "Loading...")
-                }, b.createElement(B, {
+                }), " Close Preview")), y.createElement(y.Suspense, {
+                    fallback: y.createElement("div", null, "Loading...")
+                }, y.createElement("div", {
+                    className: "tw-border tw-border-solid  tw-border-hr-line-color tw-rounded-lg tw-p-5"
+                }, y.createElement(B, {
                     isPreview: !0,
                     products: X,
                     galleryImages: pe,
                     listing: K,
                     onClose: function() {
-                        return be(!1)
+                        return ye(!1)
                     }
-                }))))
+                })))))
             }
         }
     }
 ]);
-//# sourceMappingURL=cd2c781249221424233edaa5037cdecc9aef126db7dd76a88b45d23b25150775.js.map
+//# sourceMappingURL=8c0f7cb78c3c3440ff4561e668cc3ec63e14e239b6048932604b758e96008474.js.map

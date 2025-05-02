@@ -292,7 +292,7 @@
                     title: "Review and submit to start selling",
                     type: "custom",
                     icon: r.sq,
-                    className: "tw-mb-5 tw-mt-0 tw-rounded-sm",
+                    className: "tw-mb-5 tw-mt-0 tw-border-2 tw-rounded-lg",
                     color: "#28434B",
                     iconColor: "#6AE3F9"
                 }, m.createElement(o.JX, {
@@ -527,4 +527,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6da57c18cd4fbaee9e5258fa3b764f2a4e7aa357396ed4871cdabfc68a27a20a.js.map
+//# sourceMappingURL=aa78c7fe75071c65f96d4581e8133c4164d9f5855991a3e8faeedebbe0f7381a.js.map

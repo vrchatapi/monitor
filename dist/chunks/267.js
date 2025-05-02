@@ -163,23 +163,23 @@
                 }, g), b.createElement("p", {
                     className: "tw-capitalize tw-m-0 tw-text-light-grey"
                 }, "duration" === y ? "Temporary" : y || ""))), b.createElement(o.JX, {
-                    className: "tw-items-center tw-justify-center tw-items-center tw-truncate tw-hidden @[700px]/my-listings:tw-flex"
+                    className: "tw-justify-center tw-truncate tw-hidden @[700px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
                 }, "Date Added"), D()(p).format("ll")), b.createElement(o.JX, {
-                    className: "tw-items-center tw-justify-center tw-items-center tw-truncate  tw-hidden @[700px]/my-listings:tw-flex"
+                    className: "tw-justify-center tw-truncate  tw-hidden @[700px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
                 }, "Price"), b.createElement("p", {
                     className: "tw-mb-0"
                 }, b.createElement(o.b5, null), " ", v)), b.createElement(o.JX, {
-                    className: "tw-items-center tw-justify-center tw-items-center tw-truncate tw-capitalize tw-hidden @[470px]/my-listings:tw-flex"
+                    className: "tw-justify-center tw-truncate tw-capitalize tw-hidden @[470px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
                 }, "Availability"), b.createElement("p", {
                     className: "tw-mb-0"
                 }, x.length || 0, " ", 1 === (null == x ? void 0 : x.length) ? "Store" : "Stores")), b.createElement(o.JX, {
-                    className: "tw-flex tw-justify-center tw-items-center tw-truncate tw-hidden @[470px]/my-listings:tw-flex"
+                    className: "tw-justify-center tw-truncate tw-hidden @[470px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
                 }, "Status"), f ? "Published" : "Draft"), b.createElement(o.X2, {
@@ -279,9 +279,9 @@
                     z = (0, l.Z)(T, 2),
                     I = z[0],
                     J = (z[1], (0, b.useState)(E.get("orderBy") || "descending")),
-                    B = (0, l.Z)(J, 2),
-                    M = B[0],
-                    $ = (B[1], b.useState({})),
+                    M = (0, l.Z)(J, 2),
+                    B = M[0],
+                    $ = (M[1], b.useState({})),
                     U = (0, l.Z)($, 2),
                     _ = U[0],
                     G = U[1],
@@ -304,7 +304,7 @@
                             offset: k,
                             pageValue: N
                         }
-                    }), [E, K, M, I, N]),
+                    }), [E, K, B, I, N]),
                     it = (0, p.Ul)(S(S({}, nt), {}, {
                         listingType: "otp"
                     }), {
@@ -440,7 +440,7 @@
                     noClose: tt,
                     hideTitle: et,
                     disableBackdropClick: !0,
-                    backgroundColor: tt ? "#0A0A0D" : "#181B1F"
+                    className: "".concat(tt ? "tw-bg-[#0A0A0D]" : "tw-bg-black")
                 }, b.createElement(b.Suspense, {
                     fallback: b.createElement(w.Z, {
                         loading: !0
@@ -462,4 +462,4 @@
         }
     }
 ]);
-//# sourceMappingURL=775c2b9926c50f2addb518508c56e0f211f7ac77167767385cafa7c29f93dfdc.js.map
+//# sourceMappingURL=e23e424110ccc9865dc17c96bc2665ff18fad6a7684476affec429735588e0cc.js.map

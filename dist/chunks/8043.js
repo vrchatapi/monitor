@@ -663,11 +663,11 @@
                         className: "tw-w-14 tw-h-14 tw-rounded-sm tw-bg-transparent",
                         fitToCover: !0
                     }), p.createElement("div", {
-                        className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-2/3"
+                        className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-2 tw-w-2/3"
                     }, p.createElement("h4", {
                         className: "tw-text-white tw-text-[16px] tw-truncate"
                     }, null == r ? void 0 : r.displayName), p.createElement("p", {
-                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-truncate tw-break-words"
+                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-text-ellipsis tw-overflow-hidden tw-break-words tw-line-clamp-3 tw-max-h-[3rem]"
                     }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && p.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
                     }, p.createElement(v.rU, {
@@ -1176,4 +1176,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e61f17447fc568b050c19327e9a2064efe7a6ee382141fe01339cc3144683440.js.map
+//# sourceMappingURL=d7be54b2b912203294ec956cd5d843fae2e06423bfe344516f45219a0dc04566.js.map

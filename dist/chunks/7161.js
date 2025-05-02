@@ -189,11 +189,11 @@
                         h = e.listingData,
                         g = void 0 === h ? null : h,
                         v = o()(null == f ? void 0 : f.expiry).year() > 9e3,
-                        E = "duration" === (null == g ? void 0 : g.listingType),
-                        x = null == g ? void 0 : g.stackable;
+                        x = "duration" === (null == g ? void 0 : g.listingType),
+                        E = null == g ? void 0 : g.stackable;
                     return u.createElement("div", {
                         className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(i)
-                    }, w && null !== f ? E && x ? v ? u.createElement("div", {
+                    }, w && null !== f ? x && E ? v ? u.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
                     }, u.createElement("div", {
                         className: "tw-flex tw-flex-row"
@@ -244,11 +244,11 @@
                         className: "tw-w-14 tw-h-14 tw-rounded-sm tw-bg-transparent",
                         fitToCover: !0
                     }), u.createElement("div", {
-                        className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-2/3"
+                        className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-2 tw-w-2/3"
                     }, u.createElement("h4", {
                         className: "tw-text-white tw-text-[16px] tw-truncate"
                     }, null == a ? void 0 : a.displayName), u.createElement("p", {
-                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-truncate tw-break-words"
+                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-text-ellipsis tw-overflow-hidden tw-break-words tw-line-clamp-3 tw-max-h-[3rem]"
                     }, null == a ? void 0 : a.description)), "avatar" === (null == a ? void 0 : a.productType) && u.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
                     }, u.createElement(d.rU, {
@@ -285,8 +285,8 @@
                 h = a(66736),
                 g = a(6655),
                 v = a(30381),
-                E = a.n(v),
-                x = a(12599),
+                x = a.n(v),
+                E = a(12599),
                 y = a(35187),
                 b = a(64358),
                 N = a(27484),
@@ -353,10 +353,10 @@
                     u = e.showDisplay,
                     d = (0, f.IB)().data,
                     p = null == d ? void 0 : d.id,
-                    h = E()(),
+                    h = x()(),
                     g = n.useState(!1),
                     v = (0, w.Z)(g, 2),
-                    x = v[0],
+                    E = v[0],
                     y = v[1],
                     b = n.useState(h.clone().subtract(1, "isoweek")),
                     N = (0, w.Z)(b, 2),
@@ -375,7 +375,7 @@
                     X = H[0],
                     _ = H[1],
                     V = n.useMemo((function() {
-                        return [E().isMoment(S) && S.isAfter(o.pH) && S.isBefore(Z), E().isMoment(Z) && Z.isAfter(S || o.pH) && Z.isBefore(E()())]
+                        return [x().isMoment(S) && S.isAfter(o.pH) && S.isBefore(Z), x().isMoment(Z) && Z.isAfter(S || o.pH) && Z.isBefore(x()())]
                     }), [S, Z]),
                     W = (0, w.Z)(V, 2),
                     $ = W[0],
@@ -404,11 +404,11 @@
                             end: Z
                         }), y(!0);
                         else {
-                            var t = E().duration(e),
-                                a = "ALL" === e ? E()(o.pH) : E()().subtract(t);
+                            var t = x().duration(e),
+                                a = "ALL" === e ? x()(o.pH) : x()().subtract(t);
                             l("ALL" === e ? e : {
                                 start: a,
-                                end: E()()
+                                end: x()()
                             }), y(!1)
                         }
                     }
@@ -419,7 +419,7 @@
                     invalid: $,
                     value: null == S ? void 0 : S.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = E()(e.target.value);
+                        var t = x()(e.target.value);
                         D(t), "CUSTOM RANGE" === X && l({
                             start: t,
                             end: Z
@@ -427,23 +427,23 @@
                     },
                     min: o.pH,
                     max: null == Z ? void 0 : Z.format("YYYY-MM-DD"),
-                    hidden: !x
-                }), x ? n.createElement(n.Fragment, null, " to ") : null, n.createElement(r.II, {
+                    hidden: !E
+                }), E ? n.createElement(n.Fragment, null, " to ") : null, n.createElement(r.II, {
                     type: "date",
                     className: "m-1",
                     disabled: "CUSTOM RANGE" !== X,
                     invalid: G,
                     value: null == Z ? void 0 : Z.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = E()(e.target.value);
+                        var t = x()(e.target.value);
                         j(t), "CUSTOM RANGE" === X && l({
                             start: S,
                             end: t
                         })
                     },
                     min: (null == S ? void 0 : S.format("YYYY-MM-DD")) || o.pH,
-                    max: E()().format("YYYY-MM-DD"),
-                    hidden: !x
+                    max: x()().format("YYYY-MM-DD"),
+                    hidden: !E
                 }))), n.createElement(L, null, n.createElement(O, {
                     type: "text",
                     id: "search-transaction-list",
@@ -547,10 +547,10 @@
                         h = void 0 === f ? function() {} : f,
                         g = e.hideSearchBar,
                         v = void 0 !== g && g,
-                        E = n.useState(""),
-                        x = (0, w.Z)(E, 2),
-                        y = x[0],
-                        b = x[1];
+                        x = n.useState(""),
+                        E = (0, w.Z)(x, 2),
+                        y = E[0],
+                        b = E[1];
                     return n.createElement(B, null, n.createElement(r.X2, {
                         className: "align-items-center flex-wrap gap-2",
                         style: {
@@ -641,7 +641,7 @@
                         f = d.isFetching,
                         g = d.isError,
                         v = d.error,
-                        E = (0, n.useMemo)((function() {
+                        x = (0, n.useMemo)((function() {
                             return (null == p ? void 0 : p.stacks) && p.stacks.length > 0 ? p.stacks.reduce((function(e, t) {
                                 return S()(t._updated_at).isAfter(S()(e._updated_at)) ? t : e
                             })) : null
@@ -656,7 +656,7 @@
                     }), " Transaction details"), n.createElement("div", {
                         className: "tw-flex tw-justify-center tw-p-12"
                     }, n.createElement(q.Z, null)));
-                    var x = c.id;
+                    var E = c.id;
                     return n.createElement("div", {
                         className: "tw-@container/transaction-details tw-bg-darker-grey tw-rounded-lg tw-mt-3 tw-p-5 ".concat(l ? "tw-block" : "tw-hidden")
                     }, n.createElement("h4", {
@@ -693,13 +693,13 @@
                         className: "tw-rounded tw-border-2 tw-flex tw-flex-row tw-py-1 tw-items-center tw-justify-start"
                     }, n.createElement("span", {
                         className: "tw-text-base tw-font-normal tw-text-white"
-                    }, (0, b.Lv)(E.stackStatus)))), n.createElement("div", null, n.createElement("div", {
+                    }, (0, b.Lv)(x.stackStatus)))), n.createElement("div", null, n.createElement("div", {
                         className: "tw-text-light-grey tw-font-normal tw-text-xs"
                     }, "Transaction ID"), n.createElement("div", {
                         className: "tw-rounded tw-border-2 tw-flex tw-flex-row tw-py-1 tw-items-center tw-justify-start"
                     }, n.createElement("span", {
                         className: "tw-text-xs tw-text-white"
-                    }, x)))))
+                    }, E)))))
                 };
             J.propTypes = {
                 isExpanded: R().bool,
@@ -771,7 +771,7 @@
                 he = "Credits",
                 ge = "Payouts",
                 ve = "Disbursements";
-            const Ee = function(e) {
+            const xe = function(e) {
                 var t, a, l = e.purchase,
                     s = (e.currentUser, e.columns, e.economyOnline, (0, m.Z)(e, ue), (0, n.useState)(!0)),
                     c = (0, w.Z)(s, 2),
@@ -818,7 +818,7 @@
                     className: "tw-flex-col tw-mb-2 tw-gap-1 md:tw-flex-row md:tw-mb-0 sm:tw-w-1/2"
                 }, n.createElement("h6", {
                     className: "md:tw-hidden tw-mb-0 tw-me-1"
-                }, "Amount:"), n.createElement(xe, {
+                }, "Amount:"), n.createElement(Ee, {
                     isIncomingTransaction: u(l)
                 }, n.createElement("span", null, u(l) ? "+" : "-"), n.createElement(r.b5, null), null === (t = l.amountTokens) || void 0 === t ? void 0 : t.toLocaleString().replace("-", ""))), n.createElement(te, {
                     className: "tw-flex-col tw-mb-2 tw-gap-1 md:tw-flex-row md:tw-mb-0 sm:tw-w-1/2"
@@ -848,7 +848,7 @@
                     transactionData: l
                 }))
             };
-            var xe = (0, d.Z)((0, d.Z)("span", {
+            var Ee = (0, d.Z)((0, d.Z)("span", {
                     target: "e3e3c921"
                 })(""), {
                     shouldForwardProp: function(e) {
@@ -880,10 +880,10 @@
                     h = (0, w.Z)(f, 2),
                     g = h[0],
                     v = h[1],
-                    E = n.useState(o.IR.DATE),
-                    x = (0, w.Z)(E, 2),
-                    y = x[0],
-                    b = x[1];
+                    x = n.useState(o.IR.DATE),
+                    E = (0, w.Z)(x, 2),
+                    y = E[0],
+                    b = E[1];
                 return n.createElement(re, null, n.createElement(se, null, n.createElement(ce, {
                     className: "tw-hidden md:tw-flex tw-mb-3 tw-gap-1",
                     hidden: 0 === (null == u ? void 0 : u.length)
@@ -924,7 +924,7 @@
                             a = e.currentId;
                         return (null == t ? void 0 : t.toUserId) === a || (null == t ? void 0 : t.fromUserId) === a || (null == t ? void 0 : t.sellerId) === a || (null == t ? void 0 : t.buyerId) === a
                     }(e.purchase ? e.purchase : e, a.id) ? function(e, t) {
-                        if (l === o.He.TRANSACTIONS) return n.createElement(Ee, {
+                        if (l === o.He.TRANSACTIONS) return n.createElement(xe, {
                             key: t,
                             purchase: e,
                             columns: u,
@@ -985,7 +985,7 @@
                     v = (g[0], g[1], o.He.SUBSCRIPTIONS, Object.keys(t).every((function(e) {
                         return 0 === t[e].length
                     }))),
-                    E = n.useCallback((function(e) {
+                    x = n.useCallback((function(e) {
                         var t = e.currentUserId,
                             a = e.listingId,
                             n = e.listing,
@@ -997,7 +997,7 @@
                             purchase: l
                         }))
                     })),
-                    x = n.useCallback((function(e, t) {
+                    E = n.useCallback((function(e, t) {
                         var a = t.listing,
                             n = t.purchase,
                             l = t.totalPrice,
@@ -1076,8 +1076,8 @@
                             tiliaTosAccepted: i,
                             index: t,
                             economyOnline: a,
-                            onCancel: E,
-                            onPurchase: x
+                            onCancel: x,
+                            onPurchase: E
                         })
                     }))) : null
                 })), u.isOpen && o.He.SUBSCRIPTIONS && n.createElement(De.Z, null), d.isOpen && o.He.SUBSCRIPTIONS && n.createElement(Ae.Z, null), p.isOpen && o.He.SUBSCRIPTIONS && n.createElement(Ie.Z, null), f.isOpen && o.He.SUBSCRIPTIONS && n.createElement(Oe.Z, null))
@@ -1141,7 +1141,7 @@
                             a = e.subscriptionMode,
                             n = e.transactionMode,
                             l = (0, m.Z)(e, Pe);
-                        N((0, x.Gn)(je[u], Ze({
+                        N((0, E.Gn)(je[u], Ze({
                             purchaseMode: t && (Object.values(o.yy).includes(t) ? t : o.yy.ALL),
                             subscriptionMode: a && (Object.values(o.yy).includes(a) ? a : o.yy.ALL),
                             transactionMode: n && (Object.values(o.cV).includes(n) ? n : o.cV.ALL)
@@ -1205,13 +1205,13 @@
                     ve = function(e) {
                         G(e.state)
                     },
-                    Ee = function(e) {
-                        var t = "string" != typeof e && "start" in e ? E()(e.start, "YYYY-MM-DD") : null,
-                            a = "string" != typeof e && "end" in e ? E()(e.end, "YYYY-MM-DD") : null;
+                    xe = function(e) {
+                        var t = "string" != typeof e && "start" in e ? x()(e.start, "YYYY-MM-DD") : null,
+                            a = "string" != typeof e && "end" in e ? x()(e.end, "YYYY-MM-DD") : null;
                         Ne(t), De(a)
                     },
-                    xe = n.useState(null),
-                    ye = (0, w.Z)(xe, 2),
+                    Ee = n.useState(null),
+                    ye = (0, w.Z)(Ee, 2),
                     be = ye[0],
                     Ne = ye[1],
                     ke = n.useState(null),
@@ -1344,7 +1344,7 @@
                 }) : n.createElement(D, {
                     displayState: T,
                     onDisplayStateChange: he,
-                    onDatesUpdate: Ee,
+                    onDatesUpdate: xe,
                     onSearchUpdate: L,
                     hideExport: !0,
                     showDisplay: !0
@@ -1464,18 +1464,18 @@
                         h = (0, w.Z)(f, 2),
                         g = h[0],
                         v = h[1],
-                        E = "instant" !== (null == c ? void 0 : c.listingType),
-                        x = (0, $e.mr)({
+                        x = "instant" !== (null == c ? void 0 : c.listingType),
+                        E = (0, $e.mr)({
                             listingId: c.listingId,
                             hydrateProducts: !0,
                             hydrateStores: !0
                         }, {
-                            skip: !E || !c.listingId
+                            skip: !x || !c.listingId
                         }),
-                        y = x.data,
-                        b = x.isFetching,
-                        N = x.isError,
-                        k = x.error,
+                        y = E.data,
+                        b = E.isFetching,
+                        N = E.isError,
+                        k = E.error,
                         C = {
                             displayName: null == c ? void 0 : c.listingDisplayName,
                             listingType: null == c ? void 0 : c.listingType,
@@ -1519,7 +1519,7 @@
                         disabled: b,
                         onClick: l
                     }, "Done")))));
-                    var T = E ? y : C,
+                    var T = x ? y : C,
                         D = T.displayName,
                         I = T.listingType,
                         O = T.description,
@@ -1778,9 +1778,9 @@
                     p = d[0],
                     g = d[1],
                     v = (0, n.useState)(c.get("purchaseDisplay") || st),
-                    E = (0, w.Z)(v, 2),
-                    x = E[0],
-                    b = E[1],
+                    x = (0, w.Z)(v, 2),
+                    E = x[0],
+                    b = x[1],
                     N = (0, n.useState)(c.get("sortBy") || ct),
                     S = (0, w.Z)(N, 2),
                     k = S[0],
@@ -1803,8 +1803,8 @@
                         buyerId: B.id,
                         n: 50,
                         pageValue: R
-                    }, x && {
-                        purchaseDisplay: x
+                    }, E && {
+                        purchaseDisplay: E
                     }), p && {
                         listingType: p
                     }), k && {
@@ -1822,7 +1822,7 @@
                 Qe({
                     listingType: p,
                     orderBy: I,
-                    purchaseDisplay: x,
+                    purchaseDisplay: E,
                     searchParams: c,
                     setSearchParams: i,
                     sortBy: k
@@ -1834,8 +1834,8 @@
                         P(e), U(!0)
                     },
                     q = (0, n.useMemo)((function() {
-                        return p === rt && x === st && k === ct && I === it
-                    }), [p, x, k, I]),
+                        return p === rt && E === st && k === ct && I === it
+                    }), [p, E, k, I]),
                     J = (0, n.useMemo)((function() {
                         return X ? n.createElement("div", {
                             className: "tw-container tw-flex tw-justify-center tw-p-10"
@@ -1889,7 +1889,7 @@
                 }, n.createElement(r.Lt, {
                     className: "tw-h-9 tw-min-w-[200px] ",
                     label: "Display",
-                    value: x,
+                    value: E,
                     options: at,
                     onChange: b
                 }), n.createElement(r.Lt, {
@@ -2021,7 +2021,7 @@
                 ht = ["created_at", "name", "amountTokens"],
                 gt = S()().subtract(1, "month").format("YYYY-MM-DD"),
                 vt = S()().format("YYYY-MM-DD");
-            const Et = function(e) {
+            const xt = function(e) {
                 (0, l.s0)();
                 var t, a, s = (0, K.lr)(),
                     c = (0, w.Z)(s, 2),
@@ -2032,10 +2032,10 @@
                     p = (0, w.Z)(d, 2),
                     g = p[0],
                     v = p[1],
-                    E = (0, n.useState)(i.get("duration") || "All"),
-                    x = (0, w.Z)(E, 2),
-                    N = x[0],
-                    k = x[1],
+                    x = (0, n.useState)(i.get("duration") || "All"),
+                    E = (0, w.Z)(x, 2),
+                    N = E[0],
+                    k = E[1],
                     C = (0, n.useState)(""),
                     T = (0, w.Z)(C, 2),
                     D = T[0],
@@ -2209,7 +2209,7 @@
                     }
                 })))))
             };
-            const xt = function(e) {
+            const Et = function(e) {
                 var t = e.className,
                     a = void 0 === t ? "" : t,
                     l = (0, f.XC)(),
@@ -2230,9 +2230,9 @@
                     v = (void 0 === h ? {
                         balance: 0
                     } : h).balance,
-                    E = p.isLoading,
-                    x = (p.isError, p.error, c || E);
-                return n.createElement(n.Fragment, null, x ? n.createElement(r.UU, {
+                    x = p.isLoading,
+                    E = (p.isError, p.error, c || x);
+                return n.createElement(n.Fragment, null, E ? n.createElement(r.UU, {
                     height: "4.5em"
                 }) : n.createElement(r.JX, {
                     className: "tw-p-5 tw-bg-grey tw-rounded-lg tw-gap-6 tw-justify-between ".concat(a)
@@ -2307,8 +2307,8 @@
                     h = p[0],
                     g = p[1],
                     v = c || u,
-                    E = h ? "Manage my membership" : "Subscribe Now",
-                    x = h ? "/home/subscriptions" : "https://hello.vrchat.com/vrchatplus",
+                    x = h ? "Manage my membership" : "Subscribe Now",
+                    E = h ? "/home/subscriptions" : "https://hello.vrchat.com/vrchatplus",
                     y = function() {
                         return h ? n.createElement("p", {
                             className: "tw-m-0 tw-text-2xl tw-font-bold",
@@ -2349,8 +2349,8 @@
                 }, n.createElement(y, null), n.createElement(b, null)))), n.createElement(r.X2, {
                     className: "tw-items-center tw-w-full tw-justify-between tw-z-10"
                 }, n.createElement("div", null, n.createElement(Ct, {
-                    to: x
-                }, E)), n.createElement(r.X2, {
+                    to: E
+                }, x)), n.createElement(r.X2, {
                     className: "tw-items-center tw-text-xs"
                 }, !h && n.createElement("a", {
                     href: "https://hello.vrchat.com/vrchatplus",
@@ -2383,7 +2383,7 @@
                     className: "fw-normal mb-0"
                 }, "Overview")), n.createElement(r.Ao, null, n.createElement(r.X2, {
                     className: "tw-gap-3.5 tw-flex-wrap tw-flex tw-justify-between"
-                }, n.createElement(xt, {
+                }, n.createElement(Et, {
                     className: "tw-min-w-[310px] tw-flex-1"
                 }), n.createElement(kt, {
                     className: "tw-min-w-[310px] tw-flex-1"
@@ -2438,10 +2438,10 @@
                     })
                 }), n.createElement(l.AW, {
                     path: "transactions/:paginationPage",
-                    element: n.createElement(Et, null)
+                    element: n.createElement(xt, null)
                 }))))
             }
         }
     }
 ]);
-//# sourceMappingURL=40a11a6901f7089bf6c4ce63d244a82013c2b60746dd72d45a47ce18fbfedf77.js.map
+//# sourceMappingURL=2971d47b7fbf8c0a6a61923a43f3c9782fd767743ab8ee70dc33898d6fdb81c2.js.map

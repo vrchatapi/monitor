@@ -106,7 +106,7 @@
                         }
                     }();
                 return d ? p.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-my-4 tw-gap-8"
+                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
                 }, p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, p.createElement(m.$1, {
@@ -123,7 +123,7 @@
                     containerClasses: "tw-flex-1",
                     neutral: !0
                 }, "Close"))) : p.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-my-4 tw-gap-8"
+                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
                 }, p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, p.createElement(m.$1, {
@@ -164,4 +164,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3c10b2300baba1ddf5eeff200f360ce8b31832bb73e2f4097bb1fa3d84133a8e.js.map
+//# sourceMappingURL=9f16837e2957d6ce8d87b647c2c17fcda49ba601b6199ee3813c593c032c6598.js.map

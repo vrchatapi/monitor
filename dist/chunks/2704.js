@@ -10,8 +10,8 @@
                 r = a(54546),
                 c = a(34601),
                 o = a(30856),
-                i = a(68412),
-                s = a(87709),
+                s = a(68412),
+                i = a(87709),
                 m = a(20702),
                 u = a(55462),
                 w = a(7581),
@@ -23,9 +23,9 @@
                 b = a(28963),
                 E = a(67294),
                 h = a(79655),
-                x = a(83505),
-                y = a(27484),
-                N = a.n(y),
+                y = a(83505),
+                x = a(27484),
+                N = a.n(x),
                 k = a(12752),
                 S = a(14411),
                 O = a(84090),
@@ -68,8 +68,8 @@
                     l = e.style,
                     c = void 0 === l ? {} : l,
                     o = (0, C.Z)(e, D),
-                    i = E.useRef(null),
                     s = E.useRef(null),
+                    i = E.useRef(null),
                     m = E.useState(0),
                     u = (0, r.Z)(m, 2),
                     w = u[0],
@@ -95,16 +95,16 @@
                     }), [a]),
                     p = function(e) {
                         var t, a;
-                        null === (t = i.current) || void 0 === t || null === (t = t.querySelector("[data-gallery-index='".concat(e, "']"))) || void 0 === t || t.scrollIntoView({
+                        null === (t = s.current) || void 0 === t || null === (t = t.querySelector("[data-gallery-index='".concat(e, "']"))) || void 0 === t || t.scrollIntoView({
                             block: "nearest"
-                        }), null === (a = s.current) || void 0 === a || null === (a = a.querySelector("[data-gallery-index='".concat(e, "']"))) || void 0 === a || a.scrollIntoView({
+                        }), null === (a = i.current) || void 0 === a || null === (a = a.querySelector("[data-gallery-index='".concat(e, "']"))) || void 0 === a || a.scrollIntoView({
                             block: "nearest"
                         })
                     },
                     v = function(e) {
                         e.preventDefault();
                         var t = e.currentTarget;
-                        e.currentTarget && i.current && p(t.dataset.galleryIndex)
+                        e.currentTarget && s.current && p(t.dataset.galleryIndex)
                     },
                     g = function(e, t) {
                         var a;
@@ -119,16 +119,16 @@
                         }))
                     }), [f]);
                 return E.createElement("div", (0, j.Z)({
-                    className: (0, x.cx)(n, "tw-group tw-flex tw-flex-col tw-w-full tw-relative tw-gap-2"),
+                    className: (0, y.cx)(n, "tw-group tw-flex tw-flex-col tw-w-full tw-relative tw-gap-2"),
                     style: z({}, c)
                 }, o), E.createElement("div", {
                     className: "tw-flex tw-flex-row tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
-                    ref: i
+                    ref: s
                 }, b.map((function(e, t) {
                     return E.createElement(A.df, {
                         as: "img",
                         threshold: .6,
-                        root: i.current,
+                        root: s.current,
                         onChange: g,
                         key: e.fileId || e.fileUrl,
                         "data-gallery-index": t,
@@ -162,7 +162,7 @@
                     size: "2x"
                 })))), E.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-center tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
-                    ref: s
+                    ref: i
                 }, b.map((function(e, t) {
                     return E.createElement("a", {
                         key: e.fileId || e.fileUrl,
@@ -171,7 +171,7 @@
                         href: "#".concat(e.fileId),
                         className: "tw-bg-transparent tw-border-none tw-p-0 tw-m-0 tw-cursor-pointer"
                     }, E.createElement("img", {
-                        className: (0, x.cx)("tw-w-16 tw-h-16 tw-object-cover tw-rounded-md tw-snap-center tw-border-solid tw-border-2", {
+                        className: (0, y.cx)("tw-w-16 tw-h-16 tw-object-cover tw-rounded-md tw-snap-center tw-border-solid tw-border-2", {
                             "tw-border-primary": w === t,
                             "tw-border-transparent": w !== t
                         }),
@@ -218,8 +218,8 @@
             var Y = new RegExp("^".concat(H.i.AUTHOR)),
                 G = ["admin_quest_fallback", "admin_quest_fallback_basic", "admin_quest_fallback_extended", "author_quest_fallback"];
             const K = function(e) {
-                var t, a, l, y = e.isPreview,
-                    j = void 0 !== y && y,
+                var t, a, l, x = e.isPreview,
+                    j = void 0 !== x && x,
                     C = e.avatar,
                     P = e.user,
                     _ = e.listing,
@@ -238,9 +238,9 @@
                     re = e.isUpdateAvatarFetching,
                     ce = void 0 !== re && re,
                     oe = e.licenses,
-                    ie = void 0 === oe ? [] : oe,
-                    se = e.onEdit,
-                    me = void 0 === se ? function() {} : se,
+                    se = void 0 === oe ? [] : oe,
+                    ie = e.onEdit,
+                    me = void 0 === ie ? function() {} : ie,
                     ue = e.onPurchase,
                     we = void 0 === ue ? function() {} : ue,
                     de = e.onSelectAvatar,
@@ -251,8 +251,8 @@
                     be = void 0 === ge ? function() {} : ge,
                     Ee = e.onTryOn,
                     he = void 0 === Ee ? function() {} : Ee,
-                    xe = (0, k.pc)(),
-                    ye = (0, k.Tu)().user,
+                    ye = (0, k.pc)(),
+                    xe = (0, k.Tu)().user,
                     Ne = E.useState(!1),
                     ke = (0, r.Z)(Ne, 2),
                     Se = ke[0],
@@ -265,18 +265,18 @@
                     Ae = (0, r.Z)(_e, 2),
                     Te = Ae[0],
                     Re = Ae[1],
-                    De = j ? ye : P,
+                    De = j ? xe : P,
                     Ze = !("private" === (null == C ? void 0 : C.releaseStatus)),
-                    ze = j || (null == C ? void 0 : C.authorId) === ye.id,
+                    ze = j || (null == C ? void 0 : C.authorId) === xe.id,
                     Ue = ze,
                     Xe = E.useMemo((function() {
-                        return null == ie ? void 0 : ie.some((function(e) {
-                            return e.isCurrent && "avatar" === e.forType && e.forId === C.id && e.licenseHolderId === ye.id
+                        return null == se ? void 0 : se.some((function(e) {
+                            return e.isCurrent && "avatar" === e.forType && e.forId === C.id && e.licenseHolderId === xe.id
                         }))
-                    }), [C, ie, ye]),
+                    }), [C, se, xe]),
                     $e = ze || Xe || Ze,
-                    qe = xe || ze || Xe || Ze,
-                    Me = (xe || ze) && !ee && !W && !(null != C && C.activeAssetReviewId) && !(null != C && C.productId) && "hidden" !== (null == C ? void 0 : C.releaseStatus),
+                    qe = ye || ze || Xe || Ze,
+                    Me = (ye || ze) && !ee && !W && !(null != C && C.activeAssetReviewId) && !(null != C && C.productId) && "hidden" !== (null == C ? void 0 : C.releaseStatus),
                     Fe = 1 === R.length && R[0].productType === J.Pm.AVATAR,
                     Ve = (0, T.S6)({
                         fileUrl: (null == De ? void 0 : De.profilePicOverride) || (null == De ? void 0 : De.currentAvatarImageUrl),
@@ -368,7 +368,7 @@
                 }(_.listingType), E.createElement(S.X2, {
                     className: "tw-items-center tw-gap-2"
                 }, E.createElement("h2", {
-                    className: (0, x.cx)("tw-mb-0 tw-text-truncate tw-line-clamp-1 tw-break-all tw-leading-[1.25]", {
+                    className: (0, y.cx)("tw-mb-0 tw-text-truncate tw-line-clamp-1 tw-break-all tw-leading-[1.25]", {
                         "tw-flex-grow": !ze
                     })
                 }, (null == C ? void 0 : C.name) || (null == _ ? void 0 : _.displayName)), Ue && !j && E.createElement(S.JX, {
@@ -459,13 +459,16 @@
                     className: "tw-whitespace-pre-wrap"
                 }, _ ? _.description : C[Ce]))), E.createElement(S.JX, {
                     className: "tw-flex-[1_1_0%] tw-min-w-[300px]"
-                }, (j || !ze || !xe) && _ && E.createElement(S._q, {
+                }, (j || !ze || !ye) && _ && E.createElement(S._q, {
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
-                    className: "tw-text-base tw-mb-4"
-                }, "Price"), E.createElement("h2", null, E.createElement(S.b5, null), " ", null == _ ? void 0 : _.priceTokens), E.createElement("div", {
+                    className: "tw-text-base tw-mb-1"
+                }, "Price"), E.createElement("h2", {
+                    className: "tw-mb-6"
+                }, E.createElement(S.b5, null), " ", null == _ ? void 0 : _.priceTokens), E.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-3"
                 }, E.createElement(S.zx, {
+                    type: "accent",
                     onClick: function() {
                         j || we(_)
                     }
@@ -558,12 +561,12 @@
                     if ("failed" === o.scanStatus) u = E.createElement("div", {
                         className: "tw-flex tw-items-center tw-gap-2"
                     }, E.createElement(S.$1, {
-                        icon: s.faXmark
+                        icon: i.faXmark
                     }), "Security Checks Failed");
                     else if ("unscanned" === o.scanStatus) u = E.createElement("div", {
                         className: "tw-flex tw-items-center tw-gap-2"
                     }, E.createElement(S.$1, {
-                        icon: i.faCircleQuestion
+                        icon: s.faCircleQuestion
                     }), "Security Checks Pending");
                     else if (o.scanStatus) {
                         var w, d;
@@ -622,4 +625,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1a0afbc66c0b6874f52b637a0fdbc12f7b291e1d2eb00206db3c0697813d409c.js.map
+//# sourceMappingURL=8a0dcfeefd20320ec107b7bb0b8ef52f4679044eac7da7634f5263edfa841fb4.js.map
