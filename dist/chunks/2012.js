@@ -6,8 +6,8 @@
                 default: () => q
             });
             var n = r(15861),
-                o = r(4942),
-                i = r(54546),
+                i = r(4942),
+                o = r(54546),
                 a = r(68149),
                 s = r(90502),
                 l = r(76553),
@@ -49,7 +49,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? L(Object(r), !0).forEach((function(t) {
-                        (0, o.Z)(e, t, r[t])
+                        (0, i.Z)(e, t, r[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : L(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
@@ -62,7 +62,7 @@
                 Z = function(e) {
                     var t = e.store,
                         r = void 0 === t ? null : t,
-                        o = e.listingId,
+                        i = e.listingId,
                         c = e.onClose,
                         h = void 0 === c ? function() {} : c,
                         S = e.onDelete,
@@ -74,20 +74,20 @@
                         })),
                         G = z.isPreviewOpen,
                         M = z.selectedProducts,
-                        F = (0, C.useState)("listingInformation"),
-                        A = (0, i.Z)(F, 2),
-                        U = A[0],
-                        X = A[1],
+                        A = (0, C.useState)("listingInformation"),
+                        F = (0, o.Z)(A, 2),
+                        U = F[0],
+                        X = F[1],
                         Y = (0, C.useState)(null),
-                        Q = (0, i.Z)(Y, 2),
-                        _ = Q[0],
-                        H = Q[1],
-                        J = (0, C.useState)({}),
-                        R = (0, i.Z)(J, 2),
-                        V = R[0],
-                        W = R[1],
-                        $ = (0, C.useState)(!1),
-                        B = (0, i.Z)($, 2),
+                        $ = (0, o.Z)(Y, 2),
+                        _ = $[0],
+                        Q = $[1],
+                        H = (0, C.useState)({}),
+                        J = (0, o.Z)(H, 2),
+                        R = J[0],
+                        V = J[1],
+                        W = (0, C.useState)(!1),
+                        B = (0, o.Z)(W, 2),
                         K = B[0],
                         ee = B[1],
                         te = (0, C.useMemo)((function() {
@@ -98,15 +98,15 @@
                             }))
                         }), [M]),
                         re = (0, y.mr)({
-                            listingId: o,
+                            listingId: i,
                             hydrateProducts: !0,
                             hydrateStores: !0
                         }, {
-                            skip: !o
+                            skip: !i
                         }),
                         ne = re.data,
-                        oe = re.isLoading,
-                        ie = (re.isError, re.error, (0, C.useMemo)((function() {
+                        ie = re.isLoading,
+                        oe = (re.isError, re.error, (0, C.useMemo)((function() {
                             return "permanent" === (null == ne ? void 0 : ne.listingType)
                         }), [ne])),
                         ae = (0, x.x3)({
@@ -141,21 +141,21 @@
                             }))
                         }), [fe])),
                         we = (0, y.Ij)(),
-                        ge = (0, i.Z)(we, 2),
+                        ge = (0, o.Z)(we, 2),
                         ve = ge[0],
                         ye = ge[1],
-                        xe = (ye.isLoading, ye.isSuccess, ye.isError, ye.error, !0 === (null == V ? void 0 : V.active) && !1 === (null == ne ? void 0 : ne.active));
+                        xe = (ye.isLoading, ye.isSuccess, ye.isError, ye.error, !0 === (null == R ? void 0 : R.active) && !1 === (null == ne ? void 0 : ne.active));
                     (0, C.useEffect)((function() {
                         return function() {
                             Z((0, E.rk)())
                         }
                     }), []), (0, C.useEffect)((function() {
-                        ne && (H(ne), Z((0, E.fX)(ne.products)), Z((0, E.TY)(ne.listingType)))
+                        ne && (Q(ne), Z((0, E.fX)(ne.products)), Z((0, E.TY)(ne.listingType)))
                     }), [ne]);
                     var be = function(e) {
-                            H((function(t) {
+                            Q((function(t) {
                                 return N(N({}, t), e)
-                            })), W((function(t) {
+                            })), V((function(t) {
                                 return N(N({}, t), e)
                             }))
                         },
@@ -175,7 +175,7 @@
                                                 })), h()
                                             }, e.prev = 1, e.next = 4, ve(N({
                                                 listingId: ne.id
-                                            }, V)).unwrap();
+                                            }, R)).unwrap();
                                         case 4:
                                             t(), e.next = 11;
                                             break;
@@ -206,15 +206,16 @@
                             if (!_) return !1;
                             if ("duration" === _.listingType) {
                                 var e = [w.PG.MIN, w.PG.HOUR, w.PG.DAY].includes(_.durationType),
-                                    t = (0, I.qG)(ne.durationType, ne.duration) && Number.isInteger(parseFloat(_.duration));
+                                    t = (0, I.qG)(ne.durationType, ne.duration) && Number.isInteger(Number(_.duration)) && /^\d+$/.test(_.duration);
                                 return e && t
                             }
                             var r = _.displayName.length >= 3,
-                                n = _.priceTokens >= 100 && _.priceTokens <= 1e4 && Number.isInteger(parseFloat(_.priceTokens)),
+                                n = oe ? w.YC : w._C,
+                                i = _.priceTokens >= w.zD && _.priceTokens <= n && Number.isInteger(parseInt(_.priceTokens)) && /^\d+$/.test(_.priceTokens),
                                 o = _.products.length > 0 && _.products.length <= w._1;
-                            return r && n && o
+                            return r && i && o
                         }), [_]),
-                        Se = oe || le || de;
+                        Se = ie || le || de;
                     return C.createElement(C.Fragment, null, Se && C.createElement("div", null, "Loading..."), !Se && _ && !K && !G && C.createElement(f.JX, {
                         className: "tw-w-full tw-relative"
                     }, C.createElement(p.Z, {
@@ -244,7 +245,8 @@
                         activeListing: _,
                         onDataChange: be,
                         stores: ce,
-                        activeStore: r
+                        activeStore: r,
+                        isEditing: !0
                     })), C.createElement("div", {
                         className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
                     }, C.createElement("div", {
@@ -263,7 +265,7 @@
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
                     }, "Delete Listing")), C.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-justify-end tw-flex-auto tw-flex-wrap"
-                    }, ie && C.createElement(f.zx, {
+                    }, oe && C.createElement(f.zx, {
                         transparent: !0,
                         containerClasses: "tw-w-fit md:tw-max-w-[160px] tw-flex-1",
                         onClick: function() {
@@ -293,7 +295,7 @@
                         onClick: Ee,
                         containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
                         disabled: !he
-                    }, "Save"))), G && ie && C.createElement(T.Z, {
+                    }, "Publish Listing"))), G && oe && C.createElement(T.Z, {
                         className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
                     }, C.createElement(f.X2, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
@@ -335,9 +337,9 @@
                 mt: () => c
             });
             var n = r(45987),
-                o = r(61509),
-                i = ["storeId"],
-                a = o.S.injectEndpoints({
+                i = r(61509),
+                o = ["storeId"],
+                a = i.S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getStores: e.query({
@@ -345,15 +347,15 @@
                                     var t = e.sellerId,
                                         r = e.managementPov,
                                         n = void 0 !== r && r,
-                                        o = e.n,
-                                        i = void 0 === o ? 50 : o,
+                                        i = e.n,
+                                        o = void 0 === i ? 50 : i,
                                         a = e.offset;
                                     return {
                                         url: "economy/stores",
                                         params: {
                                             sellerId: t,
                                             managementPov: n,
-                                            n: i,
+                                            n: o,
                                             offset: void 0 === a ? 0 : a
                                         }
                                     }
@@ -365,9 +367,9 @@
                                     var t = e.storeId,
                                         r = e.worldId,
                                         n = e.groupId,
-                                        o = e.creatorId,
-                                        i = e.hydrateListings,
-                                        a = void 0 !== i && i,
+                                        i = e.creatorId,
+                                        o = e.hydrateListings,
+                                        a = void 0 !== o && o,
                                         s = e.hydrateProducts,
                                         l = void 0 !== s && s,
                                         u = e.managementPov;
@@ -377,7 +379,7 @@
                                             storeId: t,
                                             worldId: r,
                                             groupId: n,
-                                            creatorId: o,
+                                            creatorId: i,
                                             hydrateListings: a,
                                             hydrateProducts: l,
                                             managementPov: void 0 !== u && u
@@ -396,9 +398,9 @@
                                     var t = e.displayName,
                                         r = e.storeType,
                                         n = e.worldId,
-                                        o = e.groupId,
-                                        i = e.tags,
-                                        a = void 0 === i ? [] : i,
+                                        i = e.groupId,
+                                        o = e.tags,
+                                        a = void 0 === o ? [] : o,
                                         s = e.description;
                                     return {
                                         url: "economy/store",
@@ -407,7 +409,7 @@
                                             displayName: t,
                                             storeType: r,
                                             worldId: n,
-                                            groupId: o,
+                                            groupId: i,
                                             tags: a,
                                             description: void 0 === s ? "" : s
                                         }
@@ -420,7 +422,7 @@
                             updateStore: e.mutation({
                                 query: function(e) {
                                     var t = e.storeId,
-                                        r = (0, n.Z)(e, i);
+                                        r = (0, n.Z)(e, o);
                                     return {
                                         url: "economy/store/".concat(t),
                                         method: "PUT",
@@ -466,4 +468,4 @@
         }
     }
 ]);
-//# sourceMappingURL=88cd66eb6f5f4852d5b842b2fe1fae6d508ef52472c0f2c1784102e12619b735.js.map
+//# sourceMappingURL=374695ab5f96f62dd61aa3fa58eeb5f1c055d2e66a0d1975f3e2620d9ec3c2ed.js.map

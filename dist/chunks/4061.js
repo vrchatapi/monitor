@@ -93,12 +93,12 @@
                 d = a.n(u),
                 h = a(67294),
                 f = a(79655),
-                g = a(27484),
-                p = a.n(g),
-                E = a(12752),
-                v = a(14411),
-                y = a(22202),
-                b = a(6655),
+                p = a(14411),
+                g = a(12752),
+                E = a(22202),
+                v = a(6655),
+                y = a(27484),
+                b = a.n(y),
                 w = a(95896);
             var N, x = ["Payout Amount", "Confirm Payout", "Payout Requested"];
             const C = function() {
@@ -106,12 +106,12 @@
                     style: "currency",
                     currency: "USD"
                 }));
-                var e = (0, y.IB)().data,
+                var e = (0, E.IB)().data,
                     t = e.id,
-                    a = e && p()().diff(p()(e.date_joined), "day"),
+                    a = e && b()().diff(b()(e.date_joined), "day"),
                     r = h.useState(0),
                     u = (0, n.Z)(r, 2),
-                    g = u[0],
+                    y = u[0],
                     C = u[1],
                     k = h.useState(0),
                     D = (0, n.Z)(k, 2),
@@ -121,8 +121,8 @@
                     L = (0, n.Z)(S, 2),
                     I = L[0],
                     O = L[1],
-                    z = (0, E.Nr)(M),
-                    A = (0, b.WA)(),
+                    z = (0, g.Nr)(M),
+                    A = (0, v.WA)(),
                     _ = (0, n.Z)(A, 2),
                     q = _[0],
                     T = _[1],
@@ -133,7 +133,7 @@
                     $ = T.isLoading,
                     X = T.isError,
                     Y = T.error,
-                    j = (0, b.Cv)(),
+                    j = (0, v.Cv)(),
                     B = (0, n.Z)(j, 2),
                     G = B[0],
                     H = B[1],
@@ -142,12 +142,12 @@
                     K = H.isError,
                     Q = H.status,
                     ee = H.error,
-                    te = (0, y.q7)().data,
+                    te = (0, E.q7)().data,
                     ae = (void 0 === te ? [] : te).includes("permission-can-sell-products");
                 h.useEffect((function() {
                     t && (a < 30 ? O(w.bD) : a >= 30 && a < 89 ? O(w.yO) : a >= 90 && O(w.MS))
                 }), [t]);
-                var ce = (0, b.v$)({
+                var ce = (0, v.v$)({
                         userId: t
                     }, {
                         skip: !t || !ae,
@@ -156,7 +156,7 @@
                     ne = ce.data,
                     re = ce.isLoading,
                     le = ce.isError,
-                    ie = (0, b.gq)({
+                    ie = (0, v.gq)({
                         userId: t
                     }, {
                         skip: !t || !ae,
@@ -165,7 +165,7 @@
                     oe = ie.data,
                     se = ie.isLoading,
                     me = ie.isError,
-                    ue = (0, b.pp)({
+                    ue = (0, v.pp)({
                         userId: t,
                         type: "earnings"
                     }, {
@@ -177,13 +177,13 @@
                         balance: 0
                     } : de).balance,
                     fe = ue.isLoading,
-                    ge = ue.isError,
-                    pe = new URL(window.location.href).searchParams,
-                    Ee = pe.get("state"),
-                    ve = pe.get("id"),
-                    ye = pe.get("pm_state"),
-                    be = pe.get("psp_reference"),
-                    we = (0, b.S6)({
+                    pe = ue.isError,
+                    ge = new URL(window.location.href).searchParams,
+                    Ee = ge.get("state"),
+                    ve = ge.get("id"),
+                    ye = ge.get("pm_state"),
+                    be = ge.get("psp_reference"),
+                    we = (0, v.S6)({
                         paymentMethodId: ve
                     }, {
                         skip: !ve,
@@ -245,29 +245,29 @@
                     Ae = re || se || fe || Ce,
                     _e = ne && !ne.signed_tos,
                     qe = oe && "ACCEPT" !== oe.state,
-                    Te = le || _e || me || qe || "complete" !== Ee || "ACTIVE" !== ye || !be || ge || he < w.vC,
+                    Te = le || _e || me || qe || "complete" !== Ee || "ACTIVE" !== ye || !be || pe || he < w.vC,
                     Ue = Te || Fe || J || $,
                     Ze = void 0 !== R && void 0 !== V && z === M && !X && !$ && "That's ".concat(N.format(R / 100), " to you, ") + "plus ".concat(N.format(V / 100), " in Tilia transaction fees."),
                     Re = function(e, t, a, c) {
-                        if (Ae) return h.createElement(v.UU, {
+                        if (Ae) return h.createElement(p.UU, {
                             height: "200px"
                         });
-                        switch (g) {
+                        switch (y) {
                             case 0:
-                                return h.createElement(h.Fragment, null, Te && h.createElement(v.qX, {
+                                return h.createElement(h.Fragment, null, Te && h.createElement(p.qX, {
                                     type: "error",
                                     title: "Your account isn't ready to pay out!"
                                 }, "Something strange happened! Head back to ", h.createElement(f.rU, {
                                     to: "/home/marketplace/wallet"
-                                }, "your wallet"), " to start over."), Pe && h.createElement(v.qX, {
+                                }, "your wallet"), " to start over."), Pe && h.createElement(p.qX, {
                                     type: "error",
                                     title: "Unable to retrieve payment method"
-                                }, ke.status, ": ", null === (e = ke.data) || void 0 === e ? void 0 : e.error.message), z > I && h.createElement(v.qX, {
+                                }, ke.status, ": ", null === (e = ke.data) || void 0 === e ? void 0 : e.error.message), z > I && h.createElement(p.qX, {
                                     type: "error",
                                     title: "You've reached your transaction limit"
-                                }, "You can only make transactions up to ", h.createElement(v.b5, null), I.toLocaleString(), "."), h.createElement("p", null, "You have ", h.createElement(v.b5, null), he.toLocaleString(), " available to pay out."), xe && h.createElement("p", null, "Payment will be sent to ", h.createElement("strong", null, xe), "."), h.createElement("label", {
+                                }, "You can only make transactions up to ", h.createElement(p.b5, null), I.toLocaleString(), "."), h.createElement("p", null, "You have ", h.createElement(p.b5, null), he.toLocaleString(), " available to pay out."), xe && h.createElement("p", null, "Payment will be sent to ", h.createElement("strong", null, xe), "."), h.createElement("label", {
                                     htmlFor: "payoutAmount"
-                                }, "Payout Amount in VRChat Credits", h.createElement(v.II, {
+                                }, "Payout Amount in VRChat Credits", h.createElement(p.II, {
                                     type: "number",
                                     id: "payoutAmount",
                                     className: "flex-1 mb-2",
@@ -277,18 +277,18 @@
                                     min: 1,
                                     max: he,
                                     onChange: Le
-                                })), h.createElement("p", null, h.createElement("small", null, !Fe && X ? "".concat(null !== (t = Y.data) && void 0 !== t && t.error.message ? "Error calculating the conversion rate: ".concat(null === (a = Y.data) || void 0 === a ? void 0 : a.error.message) : "Something went wrong calculating the conversion rate", ". Please try again.") : Ze || h.createElement(h.Fragment, null, "Enter a number to calculate the conversion rate. Minimum payout value is ", h.createElement(v.b5, null), w.vC, "."))), h.createElement(v.zx, {
+                                })), h.createElement("p", null, h.createElement("small", null, !Fe && X ? "".concat(null !== (t = Y.data) && void 0 !== t && t.error.message ? "Error calculating the conversion rate: ".concat(null === (a = Y.data) || void 0 === a ? void 0 : a.error.message) : "Something went wrong calculating the conversion rate", ". Please try again.") : Ze || h.createElement(h.Fragment, null, "Enter a number to calculate the conversion rate. Minimum payout value is ", h.createElement(p.b5, null), w.vC, "."))), h.createElement(p.zx, {
                                     "aria-label": "Review Payout",
                                     onClick: Ie,
                                     disabled: Ue
-                                }, h.createElement(v.$1, {
+                                }, h.createElement(p.$1, {
                                     icon: m.qy
                                 }), " Review Payout"));
                             case 1:
-                                return h.createElement(h.Fragment, null, K && h.createElement(v.qX, {
+                                return h.createElement(h.Fragment, null, K && h.createElement(p.qX, {
                                     type: "error",
                                     title: "Failed to create payout"
-                                }, Q, ": ", null === (c = ee.data) || void 0 === c ? void 0 : c.error.message), h.createElement(v.$1, {
+                                }, Q, ": ", null === (c = ee.data) || void 0 === c ? void 0 : c.error.message), h.createElement(p.$1, {
                                     icon: s.Vk,
                                     className: "mb-1",
                                     style: {
@@ -298,28 +298,28 @@
                                     className: "text-center"
                                 }, "Please review the details below and make sure you're happy."), h.createElement(P, null, h.createElement("dt", null, "Withdraw from VRChat wallet"), h.createElement("dd", {
                                     className: "text-right"
-                                }, h.createElement(v.b5, null), M.toLocaleString()), h.createElement("dt", null, "Tilia transaction fees"), h.createElement("dd", {
+                                }, h.createElement(p.b5, null), M.toLocaleString()), h.createElement("dt", null, "Tilia transaction fees"), h.createElement("dd", {
                                     className: "text-right"
                                 }, N.format(V / 100)), h.createElement("dt", null, "Payment to ", h.createElement("em", null, xe)), h.createElement("dd", {
                                     className: "text-right"
-                                }, N.format(R / 100))), h.createElement(v.zx, {
+                                }, N.format(R / 100))), h.createElement(p.zx, {
                                     "aria-label": "Pay Out Now",
                                     className: "mb-1",
                                     onClick: Oe,
                                     disabled: Ue,
                                     loading: J
-                                }, h.createElement(v.$1, {
+                                }, h.createElement(p.$1, {
                                     icon: o.Pb
-                                }), " Pay Out Now"), h.createElement(v.zx, {
+                                }), " Pay Out Now"), h.createElement(p.zx, {
                                     "aria-label": "Go Back",
                                     neutral: !0,
                                     onClick: ze,
                                     disabled: Ue
-                                }, h.createElement(v.$1, {
+                                }, h.createElement(p.$1, {
                                     icon: i.ac
                                 }), " Go Back"));
                             case 2:
-                                return h.createElement(h.Fragment, null, h.createElement(v.$1, {
+                                return h.createElement(h.Fragment, null, h.createElement(p.$1, {
                                     icon: l.oF,
                                     className: "mb-1",
                                     style: {
@@ -327,9 +327,9 @@
                                     }
                                 }), h.createElement("p", {
                                     className: "text-center"
-                                }, "Your money is on the way! Tilia will send you a confirmation email soon."), h.createElement(P, null, h.createElement("dt", null, "Transaction ID"), h.createElement("dd", null, W.transactionId), h.createElement("dt", null, "Withdrawn from VRChat wallet"), h.createElement("dd", {
+                                }, "Your money is on the way! Payouts can take up to 5 business days to complete. Note, receipts for payouts will be sent from no-reply@tilia.io."), h.createElement(P, null, h.createElement("dt", null, "Transaction ID"), h.createElement("dd", null, W.transactionId), h.createElement("dt", null, "Withdrawn from VRChat wallet"), h.createElement("dd", {
                                     className: "text-right"
-                                }, h.createElement(v.b5, null), W.amountTokens.toLocaleString()), h.createElement("dt", null, "Tilia transaction fees"), h.createElement("dd", {
+                                }, h.createElement(p.b5, null), W.amountTokens.toLocaleString()), h.createElement("dt", null, "Tilia transaction fees"), h.createElement("dd", {
                                     className: "text-right"
                                 }, N.format(W.amountFee / 100)), h.createElement("dt", null, "Paid to ", h.createElement("em", null, xe)), h.createElement("dd", {
                                     className: "text-right"
@@ -337,16 +337,16 @@
                                     to: "/home/marketplace/wallet"
                                 }, "your wallet"), "."));
                             default:
-                                return h.createElement(v.UU, {
+                                return h.createElement(p.UU, {
                                     height: "200px"
                                 })
                         }
                     }();
-                return h.createElement(v.JX, {
+                return h.createElement(p.JX, {
                     className: "pb-5"
-                }, h.createElement("h2", null, "Pay Out"), h.createElement(v.oI, null, h.createElement("h4", {
+                }, h.createElement("h2", null, "Pay Out"), h.createElement(p.oI, null, h.createElement("h4", {
                     className: "fw-normal mb-0"
-                }, x[g])), h.createElement(v.Ao, {
+                }, x[y])), h.createElement(p.Ao, {
                     className: "mb-4"
                 }, Re))
             };
@@ -359,4 +359,4 @@
         }
     }
 ]);
-//# sourceMappingURL=68831e24999d6428babf836027525948c873eb6120a5c4663bbe5ac6e80709e3.js.map
+//# sourceMappingURL=02a192bab1397b6fc9ff3af0a227ad8b707e71c3985faac86b0a272d921f94c1.js.map

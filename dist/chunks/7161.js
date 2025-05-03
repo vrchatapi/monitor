@@ -253,6 +253,8 @@
                         className: "tw-flex tw-items-center tw-justify-center"
                     }, u.createElement(d.rU, {
                         to: "/home/avatar/".concat(a.avatarId),
+                        target: "_blank",
+                        rel: "noopener noreferrer",
                         className: "tw-text-white tw-px-2 tw-py-1 tw-rounded tw-h-9 tw-w-9 tw-bg-button-bg-grey hover:tw-bg-dark-grey tw-items-center tw-justify-center tw-flex",
                         title: "Go to Avatar"
                     }, u.createElement(r.$1, {
@@ -2444,4 +2446,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2971d47b7fbf8c0a6a61923a43f3c9782fd767743ab8ee70dc33898d6fdb81c2.js.map
+//# sourceMappingURL=7ffd5ff069b6419e3289e2ea2faff3b882760b8e659ce543e5b71b1f5d1ef08d.js.map
