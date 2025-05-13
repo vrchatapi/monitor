@@ -19,11 +19,11 @@
                 p = a(4942),
                 v = a(45987),
                 f = a(4965),
-                g = a(71421),
-                b = a(67263),
+                b = a(71421),
+                g = a(67263),
                 x = a(83505),
-                E = a(12752),
-                h = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
+                h = a(12752),
+                E = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
             const y = function(e) {
                 var t, a, n = e.avatars,
                     r = void 0 === n ? [] : n,
@@ -36,61 +36,61 @@
                     y = e.trimToLength,
                     k = e.disabled,
                     C = e.allowMultiline,
-                    Z = (0, v.Z)(e, h),
-                    M = m.useState(!1),
-                    D = (0, l.Z)(M, 2),
-                    z = D[0],
-                    R = D[1],
+                    T = (0, v.Z)(e, E),
+                    D = m.useState(!1),
+                    R = (0, l.Z)(D, 2),
+                    A = R[0],
+                    z = R[1],
                     F = m.useState(""),
                     P = (0, l.Z)(F, 2),
                     O = P[0],
                     q = P[1],
-                    U = (0, E.Nr)(O),
+                    U = (0, h.Nr)(O),
                     B = m.useRef(null),
                     K = function(e) {
-                        B.current.contains(e.target) || R(!1)
+                        B.current.contains(e.target) || z(!1)
                     },
                     W = m.useMemo((function() {
-                        return !1 === z ? (q(""), r) : r.filter((function(e) {
+                        return !1 === A ? (q(""), r) : r.filter((function(e) {
                             return e.name.toLowerCase().includes(U.toLowerCase())
                         }))
-                    }), [U, z]);
+                    }), [U, A]);
                 m.useEffect((function() {
-                    return z ? window.addEventListener("click", K) : window.removeEventListener("click", K),
+                    return A ? window.addEventListener("click", K) : window.removeEventListener("click", K),
                         function() {
                             window.removeEventListener("click", K)
                         }
-                }), [z]);
+                }), [A]);
                 var $ = r.find((function(e) {
                     return e.name === c
                 }));
-                return m.createElement(X, (0, w.Z)({
+                return m.createElement(S, (0, w.Z)({
                     role: "radiogroup",
                     "aria-label": i,
                     ref: B,
                     className: f,
                     onMouseLeave: function() {
-                        z && R(!1)
+                        A && z(!1)
                     }
-                }, Z), m.createElement(I, {
+                }, T), m.createElement(I, {
                     disabled: k,
-                    expanded: z
-                }, m.createElement(S, {
+                    expanded: A
+                }, m.createElement(X, {
                     type: "button",
                     "aria-label": "Expand Options",
                     disabled: k,
                     onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), R(!z)
+                        e.stopPropagation(), e.preventDefault(), z(!A)
                     }
-                }, m.createElement(N, null, !!i && m.createElement(L, null, i), m.createElement(T, {
+                }, m.createElement(N, null, !!i && m.createElement(L, null, i), m.createElement(Z, {
                     role: "note",
                     trimToLength: y,
                     title: null !== (t = null == $ ? void 0 : $.selectedLabel) && void 0 !== t ? t : null == $ ? void 0 : $.label
                 }, null !== (a = null == $ ? void 0 : $.name) && void 0 !== a ? a : null == $ ? void 0 : $.name)), m.createElement(o.$1, {
-                    icon: g.eW,
+                    icon: b.eW,
                     color: "white",
                     className: "ms-3"
-                })), z && m.createElement(J, null, m.createElement(o.II, {
+                })), A && m.createElement(J, null, m.createElement(o.II, {
                     className: "tw-mb-4 tw-mt-3 tw-px-3 tw-overflow-visible",
                     placeholder: "Search Avatars",
                     onChange: function(e) {
@@ -102,36 +102,42 @@
                 }, "Loading..."), 0 === W.length && !d && m.createElement("p", {
                     className: "tw-mx-3 tw-mb-3"
                 }, "No avatars are available!"), !d && W.map((function(e, t) {
+                    var a, l = (null == e ? void 0 : e.productId) || (null == e ? void 0 : e.activeAssetReviewId) || (null == e ? void 0 : e.assetDisabled) || (null == e ? void 0 : e.contentRestrictionId);
                     return m.createElement(m.Fragment, {
                         key: e.id
-                    }, m.createElement(A, {
+                    }, m.createElement(M, {
                         role: "radio",
                         "aria-checked": e.id === (null == c ? void 0 : c.id),
                         key: e.id,
-                        onClick: (a = e, function(e) {
-                            e.stopPropagation(), e.preventDefault(), s && s(a), R(!1)
+                        onClick: l ? void 0 : (a = e, function(e) {
+                            e.stopPropagation(), e.preventDefault(), s && s(a), z(!1)
                         }),
                         tabIndex: t,
                         trimToLength: y,
                         title: "string" == typeof e.selectedLabel ? e.selectedLabel : e.label,
                         allowMultiline: C,
-                        className: (0, x.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.Z)({}, "tw-cursor-not-allowed tw-text-placeholder-text", !1))
+                        className: (0, x.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all  hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.Z)({}, "tw-cursor-not-allowed tw-text-placeholder-text hover:tw-text-placeholder-text", l))
                     }, m.createElement(o.X2, {
                         className: "tw-gap-2 tw-items-center"
                     }, m.createElement(o.pw, {
                         fitToCover: !0,
                         imageId: null == e ? void 0 : e.imageUrl,
                         alt: null == e ? void 0 : e.name,
-                        fallbackSrc: b,
+                        fallbackSrc: g,
                         width: 36
                     }), m.createElement(o.JX, {
                         className: "tw-flex-1"
                     }, m.createElement("p", {
-                        className: "tw-mb-0 tw-font-bold"
+                        className: "tw-mb-0 tw-font-bold group-hover:tw-text-white"
                     }, e.name), m.createElement("small", {
                         className: "tw-mb-0 tw-text-placeholder-text transition-all group-hover:tw-text-white"
-                    }, "Avatar")), !1)));
-                    var a
+                    }, "Avatar")), l && m.createElement(o.JX, {
+                        className: "tw-flex-1 tw-max-w-[50%]"
+                    }, m.createElement("small", {
+                        className: "tw-mb-0 tw-break-normal tw-text-placeholder-text group-hover:tw-text-white tw-whitespace-break-spaces"
+                    }, function(e) {
+                        if (e) return e.contentRestrictionId ? "This avatar is currently disabled. Check your email inbox for more details." : e.productId ? "This avatar is already linked to a product." : e.activeAssetReviewId ? "This avatar is currently under review." : "This avatar is not available."
+                    }(e))))))
                 })))))
             };
             var N = (0, f.Z)("div", {
@@ -157,13 +163,13 @@
                 }), " ", (function(e) {
                     return e.disabled ? k : ""
                 }), ";"),
-                S = (0, f.Z)("button", {
+                X = (0, f.Z)("button", {
                     target: "evny8vp5"
                 })({
                     name: "118t6pa",
                     styles: "border:none;background:transparent;outline:none!important;display:flex;flex:1;flex-direction:row;align-items:center;justify-content:space-between;position:relative;max-width:100%"
                 }),
-                X = (0, f.Z)("div", {
+                S = (0, f.Z)("div", {
                     target: "evny8vp4"
                 })({
                     name: "1cxtnl2",
@@ -175,14 +181,14 @@
                     name: "qcoia9",
                     styles: "font-size:0.8em;margin-right:10px;color:hsla(0, 0%, 100%, 0.6);white-space:nowrap;max-width:100%"
                 }),
-                Z = {
+                T = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                T = (0, f.Z)("div", {
+                Z = (0, f.Z)("div", {
                     target: "evny8vp2"
                 })("font-size:1em;color:#fff;max-width:100%;white-space:nowrap;", (function(e) {
-                    return e.trimToLength ? Z : ""
+                    return e.trimToLength ? T : ""
                 }), ";"),
                 J = (0, f.Z)("div", {
                     target: "evny8vp1"
@@ -190,26 +196,26 @@
                     name: "fbo9zu",
                     styles: "position:absolute;z-index:4;top:100%;left:-2px;width:calc(100% + 4px);background-color:#07343f;display:flex;flex-direction:column;border-radius:0 0 3px 3px;border:#086c84 solid 2px;border-top-width:0;text-align:left;max-width:calc(100% + 4px);max-height:310px;overflow-y:auto"
                 }),
-                M = {
+                D = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                D = {
+                R = {
                     name: "1bmnxg7",
                     styles: "white-space:nowrap"
                 },
-                z = {
+                A = {
                     name: "1vv75mf",
                     styles: "white-space:wrap"
                 },
-                A = (0, f.Z)("div", {
+                M = (0, f.Z)("div", {
                     target: "evny8vp0"
                 })("transition:opacity 0.2s ease-in-out;padding:0;background-color:#07343f;cursor:pointer;max-width:100%;", (function(e) {
-                    return e.allowMultiline ? z : D
+                    return e.allowMultiline ? A : R
                 }), " ", (function(e) {
-                    return e.trimToLength ? M : ""
+                    return e.trimToLength ? D : ""
                 }), ";"),
-                R = a(44869);
+                z = a(44869);
             const F = function(e) {
                 var t = e.avatarProductData,
                     a = void 0 === t ? null : t,
@@ -217,11 +223,11 @@
                     p = void 0 !== w && w,
                     v = e.user,
                     f = e.onDataChange,
-                    g = void 0 === f ? function() {} : f,
-                    b = e.onNext,
-                    x = void 0 === b ? function() {} : b,
-                    E = e.onPrevious,
-                    h = void 0 === E ? function() {} : E;
+                    b = void 0 === f ? function() {} : f,
+                    g = e.onNext,
+                    x = void 0 === g ? function() {} : g,
+                    h = e.onPrevious,
+                    E = void 0 === h ? function() {} : h;
                 if (null === a && p) return null;
                 var N = (0, u.I0)(),
                     k = (0, i.IB)({
@@ -231,16 +237,16 @@
                         return e.productFlow
                     })),
                     I = C.productType,
-                    S = C.currentProduct,
-                    X = C.singleton,
+                    X = C.currentProduct,
+                    S = C.singleton,
                     L = v || k,
-                    Z = m.useState(S || a),
-                    T = (0, l.Z)(Z, 2),
-                    J = T[0],
-                    M = T[1],
-                    D = m.useState(""),
-                    z = (0, l.Z)(D, 2),
-                    A = (z[0], z[1]),
+                    T = m.useState(X || a),
+                    Z = (0, l.Z)(T, 2),
+                    J = Z[0],
+                    D = Z[1],
+                    R = m.useState(""),
+                    A = (0, l.Z)(R, 2),
+                    M = (A[0], A[1]),
                     F = (0, m.useState)(J ? null == J ? void 0 : J.thumbnailImageUrl : null),
                     P = (0, l.Z)(F, 2),
                     O = P[0],
@@ -256,23 +262,25 @@
                     V = (0, c.F6)({
                         user: "me"
                     }, {
-                        skip: !L.id || "avatar" !== I || X,
+                        skip: !L.id || "avatar" !== I || S,
                         refetchOnMountOrArgChange: !0
                     }),
                     G = V.data,
                     Q = V.isFetching,
                     Y = V.isSuccess;
                 (0, m.useEffect)((function() {
-                    J && g(J)
+                    J && b(J)
                 }), [J]);
                 var ee = (0, m.useMemo)((function() {
                     return Y && G ? function(e) {
                         return e ? e.filter((function(e) {
-                            return "public" !== e.releaseStatus && !e.productId && (null === e.activeAssetReviewId || void 0 === e.activeAssetReviewId)
+                            return "public" !== e.releaseStatus
+                        })).sort((function(e, t) {
+                            return (e.activeAssetReviewId ? 1 : 0) + (e.productId ? 1 : 0) + (e.assetDisabled ? 1 : 0) - ((t.activeAssetReviewId ? 1 : 0) + (t.productId ? 1 : 0) + (t.assetDisabled ? 1 : 0))
                         })) : []
                     }(G) : []
                 }), [G, Y]);
-                return m.createElement(o.JX, null, !X && m.createElement(o.JX, null, m.createElement("p", {
+                return m.createElement(o.JX, null, !S && m.createElement(o.JX, null, m.createElement("p", {
                     className: "tw-mb-2"
                 }, "Select Avatar"), m.createElement(y, {
                     avatars: ee,
@@ -280,11 +288,11 @@
                     value: null == J ? void 0 : J.name,
                     onChange: function(e) {
                         return function(e) {
-                            N((0, s.IR)(e)), M(e)
+                            N((0, s.IR)(e)), D(e)
                         }(e)
                     },
                     onSearch: function(e) {
-                        return A(e)
+                        return M(e)
                     }
                 }), J && m.createElement("hr", {
                     className: "tw-h-px tw-my-5 tw-bg-[#2D363F] tw-opacity-100 tw-border-0 dark:tw-bg-gray-700"
@@ -309,14 +317,14 @@
                 }, m.createElement(o.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(R.Z, {
+                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(z.Z, {
                     avatarData: J,
                     productType: I
                 })), m.createElement(o.JX, {
                     className: "tw-mt-8 tw-gap-3 md:tw-flex-row"
                 }, m.createElement(o.zx, {
                     containerClasses: "tw-flex-1",
-                    onClick: h,
+                    onClick: E,
                     neutral: !0
                 }, "Back"), m.createElement(o.zx, {
                     containerClasses: "tw-flex-1",
@@ -346,7 +354,7 @@
         },
         44869: (e, t, a) => {
             a.d(t, {
-                Z: () => g
+                Z: () => b
             });
             var l = a(15861),
                 n = a(2909),
@@ -362,19 +370,19 @@
                 p = a(3620),
                 v = a(64358),
                 f = new RegExp("^".concat(p.i.AUTHOR));
-            const g = function(e) {
-                var t, a, i, g, b, x = e.avatarData,
-                    E = void 0 === x ? null : x,
-                    h = e.productType;
-                if (null === E) return null;
+            const b = function(e) {
+                var t, a, i, b, g, x = e.avatarData,
+                    h = void 0 === x ? null : x,
+                    E = e.productType;
+                if (null === h) return null;
                 var y = (0, m.I0)(),
                     N = s.useMemo((function() {
-                        return null == E ? void 0 : E.tags.filter((function(e) {
+                        return null == h ? void 0 : h.tags.filter((function(e) {
                             return e.startsWith(p.i.AUTHOR)
                         })).map((function(e) {
                             return e.replace(f, "")
                         }))
-                    }), [null == E ? void 0 : E.tags]),
+                    }), [null == h ? void 0 : h.tags]),
                     k = function() {
                         var e = (0, l.Z)(c().mark((function e(t, a) {
                             return c().wrap((function(e) {
@@ -408,7 +416,7 @@
                 }, "Avatar Detail"), s.createElement(d.X2, {
                     className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
                 }, s.createElement(d.JX, null, s.createElement(d.pw, {
-                    imageId: E.thumbnailImageUrl,
+                    imageId: h.thumbnailImageUrl,
                     fitToCover: !0,
                     alt: "Product Thumbnail",
                     width: 285,
@@ -424,7 +432,7 @@
                     },
                     maxLength: 64,
                     id: "name",
-                    value: E.name,
+                    value: h.name,
                     disabled: !0
                 })), s.createElement(d.X2, {
                     className: "tw-gap-2"
@@ -432,19 +440,19 @@
                     className: "tw-flex-1"
                 }, s.createElement("p", {
                     className: "tw-mb-2"
-                }, "Primary Style"), !(null !== (t = E.styles) && void 0 !== t && t.primary) && s.createElement("small", {
+                }, "Primary Style"), !(null !== (t = h.styles) && void 0 !== t && t.primary) && s.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No primary style!"), (null === (a = E.styles) || void 0 === a ? void 0 : a.primary) && s.createElement("div", {
+                }, "No primary style!"), (null === (a = h.styles) || void 0 === a ? void 0 : a.primary) && s.createElement("div", {
                     className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, s.createElement("span", null, E.styles.primary))), s.createElement(d.JX, {
+                }, s.createElement("span", null, h.styles.primary))), s.createElement(d.JX, {
                     className: "tw-flex-1"
                 }, s.createElement("p", {
                     className: "tw-mb-2"
-                }, "Secondary Style"), !(null !== (i = E.styles) && void 0 !== i && i.secondary) && s.createElement("small", {
+                }, "Secondary Style"), !(null !== (i = h.styles) && void 0 !== i && i.secondary) && s.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No secondary style!"), (null === (g = E.styles) || void 0 === g ? void 0 : g.secondary) && s.createElement("div", {
+                }, "No secondary style!"), (null === (b = h.styles) || void 0 === b ? void 0 : b.secondary) && s.createElement("div", {
                     className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, E.styles.secondary))), s.createElement(d.JX, null, s.createElement("p", {
+                }, h.styles.secondary))), s.createElement(d.JX, null, s.createElement("p", {
                     className: "tw-mb-2"
                 }, "Tags"), s.createElement(d.X2, {
                     className: "tw-flex-wrap tw-gap-2"
@@ -457,7 +465,7 @@
                     }, s.createElement("span", null, e))
                 })))))), s.createElement(d.JX, {
                     className: "tw-gap-5"
-                }, E.productId && s.createElement(d.JX, {
+                }, h.productId && s.createElement(d.JX, {
                     className: "tw-mb-5"
                 }, s.createElement("label", {
                     htmlFor: "id",
@@ -474,18 +482,18 @@
                 }, s.createElement(d.II, {
                     type: "text",
                     id: "id",
-                    value: E.productId,
+                    value: h.productId,
                     disabled: !0,
                     className: "tw-flex-1"
                 }), s.createElement(d.zx, {
                     type: "button",
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function(e) {
-                        return k(e, E.productId)
+                        return k(e, h.productId)
                     }
                 }, s.createElement(d.$1, {
                     icon: n.kZ
-                })))), h && s.createElement(d.JX, null, s.createElement("label", {
+                })))), E && s.createElement(d.JX, null, s.createElement("label", {
                     htmlFor: "price",
                     className: "tw-mb-2"
                 }, "Product Type"), s.createElement(d.X2, {
@@ -495,13 +503,13 @@
                 }, s.createElement("img", {
                     alt: "udon logo",
                     width: "90",
-                    src: w.pK[h].image
+                    src: w.pK[E].image
                 })), s.createElement(d.JX, {
                     className: "tw-items-center tw-justify-center"
                 }, s.createElement("p", {
                     className: "tw-mb-0"
-                }, s.createElement("strong", null, w.pK[h].label), s.createElement("br", null), w.pK[h].text, s.createElement("br", null), s.createElement("a", {
-                    href: w.pK[h].redirect,
+                }, s.createElement("strong", null, w.pK[E].label), s.createElement("br", null), w.pK[E].text, s.createElement("br", null), s.createElement("a", {
+                    href: w.pK[E].redirect,
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn More"))))), s.createElement(d.JX, null, s.createElement("label", {
@@ -512,7 +520,7 @@
                     id: "description",
                     inputClassName: "tw-h-[120px] tw-my-2",
                     maxLength: 256,
-                    value: E.description
+                    value: h.description
                 })), s.createElement(d.JX, null, s.createElement("label", {
                     htmlFor: "acknowledgements"
                 }, "Acknowledgements"), s.createElement(d.gx, {
@@ -521,10 +529,10 @@
                     id: "acknowledgements",
                     inputClassName: "tw-h-[90px] tw-my-2",
                     maxLength: 256,
-                    value: null !== (b = null == E ? void 0 : E.acknowledgements) && void 0 !== b ? b : ""
+                    value: null !== (g = null == h ? void 0 : h.acknowledgements) && void 0 !== g ? g : ""
                 })))))
             }
         }
     }
 ]);
-//# sourceMappingURL=aa78c7fe75071c65f96d4581e8133c4164d9f5855991a3e8faeedebbe0f7381a.js.map
+//# sourceMappingURL=2259fd2bff7f4b5e7b993c9265f4b227b328ff609923fd904260a019a536f0c9.js.map

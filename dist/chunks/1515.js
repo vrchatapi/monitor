@@ -4264,114 +4264,106 @@
                 qe = d.lazy((function() {
                     return r.e(9028).then(r.bind(r, 99028))
                 }));
-            const Be = function() {
-                var e, t, r, u, v, E, h, y, x, N, C, k, S = (0, w.lr)(),
-                    O = (0, a.Z)(S, 2),
-                    I = O[0],
-                    T = O[1],
-                    j = d.useState(!1),
-                    D = (0, a.Z)(j, 2),
-                    Z = D[0],
-                    L = D[1],
-                    F = d.useState(!1),
-                    A = (0, a.Z)(F, 2),
-                    z = A[0],
-                    X = A[1],
-                    M = Object.fromEntries(I.entries()),
-                    R = (0, P.XC)(),
-                    J = R.data,
-                    U = R.isLoading,
-                    G = null == J ? void 0 : J.id,
-                    q = (0, P.q7)(),
-                    B = q.data,
-                    $ = void 0 === B ? [] : B,
-                    V = q.isFetching,
-                    _ = q.isError,
-                    W = q.error,
-                    Y = (0, ne.mW)(),
-                    H = (0, a.Z)(Y, 2),
-                    Q = H[0],
-                    K = H[1].isLoading,
-                    ee = null == $ ? void 0 : $.includes("permission-creator-preview"),
-                    te = null == $ ? void 0 : $.includes("permission-can-sell-products"),
-                    ae = (0, Oe.En)(),
-                    le = ae.data,
-                    oe = void 0 === le ? {
-                        economyOnline: !1,
-                        plannedOfflineWindowStart: null,
-                        plannedOfflineWindowEnd: null,
-                        offlineReason: null
-                    } : le,
-                    ie = oe.economyOnline,
-                    ce = oe.plannedOfflineWindowStart,
-                    se = oe.plannedOfflineWindowEnd,
-                    ue = oe.offlineReason,
-                    me = ae.isFetching,
-                    de = ae.isError,
-                    we = ae.error,
-                    pe = (0, Oe.v$)({
-                        userId: G
+            const Be = function(e) {
+                var t, r, u, v, E, h, y, x, N, C, k, S, O = e.marketPlaceStatus,
+                    I = (0, w.lr)(),
+                    T = (0, a.Z)(I, 2),
+                    j = T[0],
+                    D = T[1],
+                    Z = d.useState(!1),
+                    L = (0, a.Z)(Z, 2),
+                    F = L[0],
+                    A = L[1],
+                    z = d.useState(!1),
+                    X = (0, a.Z)(z, 2),
+                    M = X[0],
+                    R = X[1],
+                    J = Object.fromEntries(j.entries()),
+                    U = (0, P.XC)(),
+                    G = U.data,
+                    q = U.isLoading,
+                    B = null == G ? void 0 : G.id,
+                    $ = O.isEconomyOffline,
+                    V = (O.isPlannedMaintenanceSoon, O.plannedOfflineWindowStart),
+                    _ = O.plannedOfflineWindowEnd,
+                    W = O.offlineReason,
+                    Y = O.isTiliaStatusLoading,
+                    H = O.isTiliaStatusError,
+                    Q = (0, P.q7)(),
+                    K = Q.data,
+                    ee = void 0 === K ? [] : K,
+                    te = Q.isFetching,
+                    ae = Q.isError,
+                    le = Q.error,
+                    oe = (0, ne.mW)(),
+                    ie = (0, a.Z)(oe, 2),
+                    ce = ie[0],
+                    se = ie[1].isLoading,
+                    ue = null == ee ? void 0 : ee.includes("permission-creator-preview"),
+                    me = null == ee ? void 0 : ee.includes("permission-can-sell-products"),
+                    de = (0, Oe.v$)({
+                        userId: B
                     }, {
-                        skip: !G || !ee || !ie,
+                        skip: !B || !ue || $,
                         refetchOnMountOrArgChange: !0
                     }),
-                    fe = pe.data,
-                    ge = pe.isLoading,
-                    ve = pe.isError,
-                    Ee = pe.error,
-                    he = null == fe ? void 0 : fe.signed_tos,
-                    ye = (0, Oe.gq)({
-                        userId: G
+                    we = de.data,
+                    pe = de.isLoading,
+                    fe = de.isError,
+                    ge = de.error,
+                    ve = null == we ? void 0 : we.signed_tos,
+                    Ee = (0, Oe.gq)({
+                        userId: B
                     }, {
-                        skip: !G || !ee || !ie,
+                        skip: !B || !ue || $,
                         refetchOnMountOrArgChange: !0
                     }),
-                    xe = (ye.data, ye.isLoading),
-                    Ne = ye.isError,
-                    Ce = ye.error,
-                    ke = (0, Oe.kN)({
-                        userId: G
+                    he = (Ee.data, Ee.isLoading),
+                    ye = Ee.isError,
+                    xe = Ee.error,
+                    Ne = (0, Oe.kN)({
+                        userId: B
                     }, {
-                        skip: !(G && ee && te && ie)
+                        skip: !B || !ue || !me || $
                     }),
-                    Se = ke.data,
-                    je = void 0 === Se ? {} : Se,
-                    De = je.eligible,
-                    Ze = je.reason,
-                    Ae = ke.isLoading,
-                    ze = ke.isError,
-                    Be = ke.error,
-                    $e = (0, Oe.pp)({
-                        userId: G,
+                    Ce = Ne.data,
+                    ke = void 0 === Ce ? {} : Ce,
+                    Se = ke.eligible,
+                    je = ke.reason,
+                    De = Ne.isLoading,
+                    Ze = Ne.isError,
+                    Ae = Ne.error,
+                    ze = (0, Oe.pp)({
+                        userId: B,
                         type: "earnings"
                     }, {
-                        skip: !G,
+                        skip: !B,
                         refetchOnMountOrArgChange: !0
                     }),
-                    Ve = $e.data,
-                    _e = ((void 0 === Ve ? {
+                    Be = ze.data,
+                    $e = ((void 0 === Be ? {
                         balance: 0
-                    } : Ve).balance, $e.isLoading),
-                    We = $e.isError,
-                    Ye = $e.error,
-                    He = function() {
+                    } : Be).balance, ze.isLoading),
+                    Ve = ze.isError,
+                    _e = ze.error,
+                    We = function() {
                         var e = (0, n.Z)(m().mark((function e() {
                             var t;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (t = "complete" === (null == M ? void 0 : M.state), e.prev = 1, !t || te) {
+                                        if (t = "complete" === (null == J ? void 0 : J.state), e.prev = 1, !t || me) {
                                             e.next = 5;
                                             break
                                         }
-                                        return e.next = 5, Q().unwrap();
+                                        return e.next = 5, ce().unwrap();
                                     case 5:
                                         e.next = 10;
                                         break;
                                     case 7:
                                         e.prev = 7, e.t0 = e.catch(1), console.error("Not able to onboard seller:", e.t0);
                                     case 10:
-                                        return e.prev = 10, T({}), e.finish(10);
+                                        return e.prev = 10, D({}), e.finish(10);
                                     case 13:
                                     case "end":
                                         return e.stop()
@@ -4385,12 +4377,12 @@
                         }
                     }();
                 d.useEffect((function() {
-                    He()
+                    We()
                 }), []);
-                var Qe = me || U || V || ge || _e || xe || K || Ae,
-                    Ke = (0, Ie.dj)(ce),
-                    et = de || !ie || ve || ze || We || _ || Ne;
-                if (Qe) return d.createElement(d.Fragment, null, d.createElement(f.UU, {
+                var Ye = Y || q || te || pe || $e || he || se || De,
+                    He = (0, Ie.dj)(V),
+                    Qe = H || $ || fe || Ze || Ve || ae || ye;
+                if (Ye) return d.createElement(d.Fragment, null, d.createElement(f.UU, {
                     className: "tw-mb-4",
                     height: "80px",
                     radius: "8"
@@ -4399,7 +4391,7 @@
                     height: "480px",
                     radius: "8"
                 }));
-                return Qe ? d.createElement(d.Fragment, null, d.createElement(f.UU, {
+                return Ye ? d.createElement(d.Fragment, null, d.createElement(f.UU, {
                     className: "tw-mb-4",
                     height: "80px",
                     radius: "8"
@@ -4409,66 +4401,68 @@
                     radius: "8"
                 })) : d.createElement(f.JX, {
                     className: "pb-5"
-                }, d.createElement(f.$4, null, "My Store"), "complete" === (null == M ? void 0 : M.state) && (null == M ? void 0 : M.redirectTo) && d.createElement(f.qX, {
+                }, d.createElement(f.$4, null, "My Store"), "complete" === (null == J ? void 0 : J.state) && (null == J ? void 0 : J.redirectTo) && d.createElement(f.qX, {
                     type: "success",
                     title: "You're ready to go!"
                 }, "Now you can ", d.createElement(w.rU, {
-                    to: null == M ? void 0 : M.redirectTo
-                }, "pick up where you left off"), "."), et && d.createElement(f.qX, {
-                    type: ie || de ? "error" : "warn",
-                    title: ie || de ? "Something strange happened" : "Storefront Offline"
-                }, !ie && !de && d.createElement(d.Fragment, null, d.createElement("p", {
-                    className: "m-0"
-                }, "Storefront Currently Offline: ", null != ue ? ue : "Unknown Reason"), d.createElement("p", {
-                    className: "m-0"
-                }, "Projected Service Return: ", (0, Ie.M4)(se))), de && d.createElement("p", {
-                    className: "m-0"
-                }, "Error getting Tilia online status: ", we.status, " ", null !== (e = null === (t = we.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown error"), W && d.createElement("p", {
-                    className: "m-0"
-                }, "Error looking up user permissions: ", W.status, " ", null !== (r = null === (u = W.data) || void 0 === u ? void 0 : u.error.message) && void 0 !== r ? r : "Unknown error"), ve && d.createElement("p", {
-                    className: "m-0"
-                }, "Error looking up Tilia ToS acceptance: ", Ee.status, " ", null !== (v = null === (E = Ee.data) || void 0 === E ? void 0 : E.error.message) && void 0 !== v ? v : "Unknown error"), Ne && d.createElement("p", {
-                    className: "m-0"
-                }, "Error looking up Tilia identity verification status: ", Ce.status, " ", null !== (h = null === (y = Ce.data) || void 0 === y ? void 0 : y.error.message) && void 0 !== h ? h : "Unknown error"), ze && d.createElement("p", {
-                    className: "m-0"
-                }, "Error looking up your eligibility to pay out: ", Be.status, " ", null !== (x = null === (N = Be.data) || void 0 === N ? void 0 : N.error.message) && void 0 !== x ? x : "Unknown error"), We && d.createElement("p", {
-                    className: "m-0"
-                }, "Error looking up credit balance: ", Ye.status, " ", null !== (C = null === (k = Ye.data) || void 0 === k ? void 0 : k.error.message) && void 0 !== C ? C : "Unknown error")), Ke && ie && !de && d.createElement(f.qX, {
+                    to: null == J ? void 0 : J.redirectTo
+                }, "pick up where you left off"), "."), Qe && d.createElement(f.qX, {
+                    type: $ ? "warn" : "error",
+                    title: $ ? "Storefront Offline" : "Something strange happened"
+                }, $ && d.createElement(d.Fragment, null, d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Storefront Currently Offline: ", null != W ? W : "Unknown Reason"), d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Projected Service Return: ", (0, Ie.M4)(_))), H && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error getting Tilia online status: ", tiliaStatusError.status, " ", null !== (t = null === (r = tiliaStatusError.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Unknown error"), le && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error looking up user permissions: ", le.status, " ", null !== (u = null === (v = le.data) || void 0 === v ? void 0 : v.error.message) && void 0 !== u ? u : "Unknown error"), fe && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error looking up Tilia ToS acceptance: ", ge.status, " ", null !== (E = null === (h = ge.data) || void 0 === h ? void 0 : h.error.message) && void 0 !== E ? E : "Unknown error"), ye && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error looking up Tilia identity verification status: ", xe.status, " ", null !== (y = null === (x = xe.data) || void 0 === x ? void 0 : x.error.message) && void 0 !== y ? y : "Unknown error"), Ze && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error looking up your eligibility to pay out: ", Ae.status, " ", null !== (N = null === (C = Ae.data) || void 0 === C ? void 0 : C.error.message) && void 0 !== N ? N : "Unknown error"), Ve && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Error looking up credit balance: ", _e.status, " ", null !== (k = null === (S = _e.data) || void 0 === S ? void 0 : S.error.message) && void 0 !== k ? k : "Unknown error")), He && !$ && d.createElement(f.qX, {
                     type: "warn",
-                    title: "Storefront Maintenance"
+                    title: "Marketplace Maintenance"
                 }, d.createElement("p", {
-                    className: "m-0"
-                }, "Starts: ", (0, Ie.M4)(ce)), d.createElement("p", {
-                    className: "m-0"
-                }, "Ends: ", (0, Ie.M4)(se))), !De && Ze && ie && !de && d.createElement(f.qX, {
+                    className: "tw-m-0"
+                }, "Starts: ", (0, Ie.M4)(V)), d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Ends: ", (0, Ie.M4)(_)), d.createElement("p", {
+                    className: "tw-m-0"
+                }, "In-game credit purchases/transactions will be unavailable during this period. We apologize for the inconvenience.")), !Se && je && !$ && d.createElement(f.qX, {
                     type: "warn",
                     title: "Issue with payout eligibility"
-                }, "blocked" === Ze && d.createElement("p", {
-                    className: "m-0"
-                }, "You are currently blocked from receiving payouts. Please contact VRChat support for more information."), "kyc_required" === Ze && d.createElement("p", {
-                    className: "m-0"
-                }, "You must complete the KYC process before you can receive payouts. Please contact VRChat support for more information."), "kyc_pending" === Ze && d.createElement("p", {
-                    className: "m-0"
-                }, "Your KYC has been recieved and is pending approval from Tilia. Please check back later."), "limit_exceeded" === Ze && d.createElement("p", {
-                    className: "m-0"
-                }, "You have exceeded the payout limit. Please contact VRChat support for more information."), "cooldown" === Ze && d.createElement("p", {
-                    className: "m-0"
-                }, "You have exceeded the daily payout transaction limit. Please wait 24 hours before making your next payout transaction.")), ee ? te ? d.createElement(d.Fragment, null, d.createElement(Te.Z, {
+                }, "blocked" === je && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "You are currently blocked from receiving payouts. Please contact VRChat support for more information."), "kyc_required" === je && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "You must complete the KYC process before you can receive payouts. Please contact VRChat support for more information."), "kyc_pending" === je && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "Your KYC has been recieved and is pending approval from Tilia. Please check back later."), "limit_exceeded" === je && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "You have exceeded the payout limit. Please contact VRChat support for more information."), "cooldown" === je && d.createElement("p", {
+                    className: "tw-m-0"
+                }, "You have exceeded the daily payout transaction limit. Please wait 24 hours before making your next payout transaction.")), ue ? me ? d.createElement(d.Fragment, null, d.createElement(Te.Z, {
                     isSeller: !0,
-                    isTiliaTOSAccepted: he,
+                    isTiliaTOSAccepted: ve,
                     returnPath: "/home/marketplace/storefront/dashboard",
                     termsOfServiceMessage: "Tilia's Terms of Service have been changed. Please accept them before managing your store."
                 }), d.createElement("div", {
                     className: "tw-relative"
                 }, d.createElement("div", {
                     className: "tw-relative"
-                }, d.createElement(f.oI, null, z && d.createElement("div", {
+                }, d.createElement(f.oI, null, M && d.createElement("div", {
                     className: "tw-w-full tw-h-full tw-opacity-75 tw-bg-black tw-absolute tw-z-10 tw-top-0 tw-bottom-0 tw-left-0"
                 }), d.createElement("h4", {
                     className: "fw-normal mb-0"
                 }, "My Store"))), d.createElement(f.Ao, null, d.createElement("div", {
                     className: "tw-relative tw-mb-4"
-                }, z && d.createElement("div", {
+                }, M && d.createElement("div", {
                     className: "tw-w-full tw-h-full tw-opacity-75 tw-bg-black tw-absolute tw-z-10 tw-top-0 tw-bottom-0 tw-left-0"
                 }), d.createElement(g.Z, {
                     justify: "left",
@@ -4524,7 +4518,7 @@
                     path: "stores/:storeId",
                     element: d.createElement(qe, {
                         onOrderStore: function() {
-                            return X(!z)
+                            return R(!M)
                         }
                     })
                 }), d.createElement(p.AW, {
@@ -4578,12 +4572,12 @@
                 }))), d.createElement(f.sm, {
                     headerText: "Congratulations!",
                     confirmText: "Done",
-                    isOpen: Z,
+                    isOpen: F,
                     confirmCallback: function() {
-                        return L(!1)
+                        return A(!1)
                     },
                     cancelCallback: function() {
-                        return L(!1)
+                        return A(!1)
                     },
                     hideCancel: !0
                 }, d.createElement(f.X2, {
@@ -4996,4 +4990,4 @@
         }
     }
 ]);
-//# sourceMappingURL=310a178a5ba9207cffa439d0a79adface48d02c979a331c9a36406d311a53e49.js.map
+//# sourceMappingURL=dafa3020dc1a98aa6ca240c0f07db079f525db6b8e3284cbe794f941e662e14b.js.map
