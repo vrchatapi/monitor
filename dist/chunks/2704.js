@@ -393,7 +393,7 @@
                     className: "tw-flex-0 tw-gap-2 tw-justify-self-end"
                 }, E.createElement($.Z, {
                     text: "".concat(j.name, " by ").concat(j.authorName, " #VRChat #MadeWithVRChat"),
-                    url: "".concat(window.endpoint, "/home/avatars/").concat(j.id)
+                    url: "".concat(window.endpoint, "/home/avatar/").concat(j.id)
                 }))), E.createElement(S.X2, {
                     className: "tw-gap-2 tw-flex-wrap tw-flex-grow"
                 }, E.createElement(S.JX, {
@@ -639,4 +639,4 @@
         }
     }
 ]);
-//# sourceMappingURL=da7716727a84921186135174f02c3f9b0199634e8a101d8fbe034943f8525922.js.map
+//# sourceMappingURL=0b8e341082ed73e78056424401b63746fb14a35e2234ca2a07ef5f979144b4cb.js.map
