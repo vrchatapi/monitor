@@ -15,8 +15,8 @@
                 d = r(6811),
                 p = r(76553),
                 v = r(88512),
-                f = r(64687),
-                m = r.n(f),
+                m = r(64687),
+                f = r.n(m),
                 w = r(67294),
                 y = r(32981),
                 b = r(45697),
@@ -24,7 +24,7 @@
                 x = r(83505),
                 h = r(70917),
                 F = r(64258),
-                E = r(12752),
+                E = r(17383),
                 k = r(22202),
                 N = r(13271),
                 I = r(751),
@@ -35,8 +35,8 @@
                     a = e.contentId,
                     n = e.authorId,
                     s = e.releaseStatus,
-                    f = e.className,
-                    b = void 0 === f ? "" : f,
+                    m = e.className,
+                    b = void 0 === m ? "" : m,
                     g = e.neutral,
                     h = (0, y.I0)(),
                     S = (0, E.Tu)().user,
@@ -45,9 +45,9 @@
                     L = A[0],
                     D = A[1],
                     G = w.useState(null),
-                    W = (0, i.Z)(G, 2),
-                    X = W[0],
-                    $ = W[1],
+                    X = (0, i.Z)(G, 2),
+                    $ = X[0],
+                    W = X[1],
                     Q = w.useRef(null),
                     H = (0, I.sd)({
                         type: r
@@ -95,9 +95,9 @@
                         }
                 }), [Q.current]);
                 var ve = function() {
-                        var e = (0, o.Z)(m().mark((function e() {
+                        var e = (0, o.Z)(f().mark((function e() {
                             var t, a, n;
-                            return m().wrap((function(e) {
+                            return f().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (U) {
@@ -123,7 +123,7 @@
                                             icon: d.f8,
                                             color: "success",
                                             timeout: 3e3
-                                        })), D(!1), $(null);
+                                        })), D(!1), W(null);
                                     case 9:
                                     case "end":
                                         return e.stop()
@@ -134,7 +134,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    fe = function(e) {
+                    me = function(e) {
                         var t, a = null !== (t = null == K ? void 0 : K.maxFavoritesPerGroup[r]) && void 0 !== t ? t : K.defaultMaxFavoritesPerGroup;
                         return (null == B ? void 0 : B[e]) >= a && (h((0, F.d)({
                             title: "Cannot save to a full collection",
@@ -144,10 +144,10 @@
                             timeout: 7e3
                         })), !0)
                     },
-                    me = function() {
-                        var e = (0, o.Z)(m().mark((function e(t) {
+                    fe = function() {
+                        var e = (0, o.Z)(f().mark((function e(t) {
                             var n, o, i;
-                            return m().wrap((function(e) {
+                            return f().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, te({
@@ -181,9 +181,9 @@
                         }
                     }(),
                     we = function() {
-                        var e = (0, o.Z)(m().mark((function e(t) {
+                        var e = (0, o.Z)(f().mark((function e(t) {
                             var n, o, i;
-                            return m().wrap((function(e) {
+                            return f().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, ce({
@@ -219,9 +219,9 @@
                         }
                     }(),
                     ye = function() {
-                        var e = (0, o.Z)(m().mark((function e(t) {
+                        var e = (0, o.Z)(f().mark((function e(t) {
                             var a, n, o;
-                            return m().wrap((function(e) {
+                            return f().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.next = 2, oe({
@@ -253,7 +253,7 @@
                         }
                     }();
                 if (w.useEffect((function() {
-                        U && $(U.tags[0])
+                        U && W(U.tags[0])
                     }), [U]), Y) return w.createElement(Z.UU, {
                     width: "100%",
                     height: "49px",
@@ -300,29 +300,29 @@
                     return w.createElement(C, {
                         key: e.id,
                         onClick: (a = e.name, function() {
-                            var e = (0, o.Z)(m().mark((function e(t) {
-                                return m().wrap((function(e) {
+                            var e = (0, o.Z)(f().mark((function e(t) {
+                                return f().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (t.stopPropagation(), D(!1), U) {
                                                 e.next = 9;
                                                 break
                                             }
-                                            if (!fe(a)) {
+                                            if (!me(a)) {
                                                 e.next = 5;
                                                 break
                                             }
                                             return e.abrupt("return");
                                         case 5:
-                                            return e.next = 7, me(a);
+                                            return e.next = 7, fe(a);
                                         case 7:
-                                            return $(a), e.abrupt("return");
+                                            return W(a), e.abrupt("return");
                                         case 9:
                                             if (a === U.tags[0]) {
                                                 e.next = 16;
                                                 break
                                             }
-                                            if (!fe(a)) {
+                                            if (!me(a)) {
                                                 e.next = 12;
                                                 break
                                             }
@@ -330,11 +330,11 @@
                                         case 12:
                                             return e.next = 14, we(a);
                                         case 14:
-                                            return $(a), e.abrupt("return");
+                                            return W(a), e.abrupt("return");
                                         case 16:
                                             return e.next = 18, ye(a);
                                         case 18:
-                                            $(null);
+                                            W(null);
                                         case 19:
                                         case "end":
                                             return e.stop()
@@ -348,7 +348,7 @@
                     }, w.createElement(Z.X2, {
                         className: "align-items-center"
                     }, w.createElement(R, {
-                        isSelected: X === e.name,
+                        isSelected: $ === e.name,
                         icon: l.LE,
                         className: "me-3"
                     }), e.displayName), !J && w.createElement("div", null, null == B ? void 0 : B[e.name], " / ", null !== (t = null == K ? void 0 : K.maxFavoritesPerGroup[r]) && void 0 !== t ? t : 100))
@@ -440,8 +440,8 @@
                 d = r(64687),
                 p = r.n(d),
                 v = r(67294),
-                f = r(32981),
-                m = r(64258),
+                m = r(32981),
+                f = r(64258),
                 w = r(86646),
                 y = r(50048),
                 b = ["url", "text", "title", "files", "style", "shareLabel", "copyLabel", "displayLabel"];
@@ -483,7 +483,7 @@
                     I = e.displayLabel,
                     Z = void 0 !== I && I,
                     S = (0, s.Z)(e, b),
-                    T = (0, f.I0)(),
+                    T = (0, m.I0)(),
                     A = v.useMemo((function() {
                         return F && navigator.canShare({
                             url: t,
@@ -500,7 +500,7 @@
                                     case 0:
                                         return e.next = 2, navigator.clipboard.writeText([a, r, t].filter(Boolean).join("\n"));
                                     case 2:
-                                        T((0, m.d)({
+                                        T((0, f.d)({
                                             title: "Copied to clipboard",
                                             icon: l.kZ,
                                             color: "success",
@@ -539,7 +539,7 @@
                                             e.next = 14;
                                             break
                                         }
-                                        T((0, m.d)({
+                                        T((0, f.d)({
                                             title: "Something went wrong",
                                             icon: u.faTriangleExclamation,
                                             message: "Copying to clipboard instead",
@@ -584,116 +584,131 @@
         },
         95643: (e, t, r) => {
             r.d(t, {
-                Z: () => m
+                Z: () => w
             });
             var a = r(22984),
-                n = r(82414),
-                o = r(14411),
-                i = r(69181),
-                s = r(67263),
-                l = r(27484),
-                c = r.n(l),
-                u = r(45697),
-                d = r.n(u),
-                p = r(67294),
-                v = r(79655),
+                n = r(35117),
+                o = r(82414),
+                i = r(14411),
+                s = r(69181),
+                l = r(67263),
+                c = r(27484),
+                u = r.n(c),
+                d = r(45697),
+                p = r.n(d),
+                v = r(67294),
+                m = r(79655),
                 f = function(e) {
                     var t = e.productData,
                         r = void 0 === t ? null : t,
-                        l = e.className,
-                        u = e.hasAlreadyPurchased,
-                        d = void 0 !== u && u,
+                        c = e.className,
+                        d = e.hasAlreadyPurchased,
+                        p = void 0 !== d && d,
                         f = e.alreadyPurchasedData,
-                        m = void 0 === f ? null : f,
-                        w = e.listingData,
-                        y = void 0 === w ? null : w,
-                        b = c()(null == m ? void 0 : m.expiry).year() > 9e3,
-                        g = "duration" === (null == y ? void 0 : y.listingType),
-                        x = null == y ? void 0 : y.stackable;
-                    return p.createElement("div", {
-                        className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(l)
-                    }, d && null !== m ? g && x ? b ? p.createElement("div", {
+                        w = void 0 === f ? null : f,
+                        y = e.listingData,
+                        b = void 0 === y ? null : y,
+                        g = u()(null == w ? void 0 : w.expiry).year() > 9e3,
+                        x = "duration" === (null == b ? void 0 : b.listingType),
+                        h = null == b ? void 0 : b.stackable,
+                        F = !(null != r && r.assetDisabled) && r;
+                    return v.createElement("div", {
+                        className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(c)
+                    }, p && null !== w ? x && h ? g ? v.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, p.createElement("div", {
+                    }, v.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, p.createElement(o.$1, {
-                        icon: n.sq,
+                    }, v.createElement(i.$1, {
+                        icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), p.createElement("div", {
+                    }), v.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, p.createElement("h2", {
+                    }, v.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), p.createElement("p", {
+                    }, "You already have access to this product."), v.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Purchasing will have no effect.")))) : p.createElement("div", {
+                    }, "Purchasing will have no effect.")))) : v.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, p.createElement("div", {
+                    }, v.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, p.createElement(o.$1, {
-                        icon: n.sq,
+                    }, v.createElement(i.$1, {
+                        icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), p.createElement("div", {
+                    }), v.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, p.createElement("h2", {
+                    }, v.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), p.createElement("p", {
+                    }, "You already have access to this product."), v.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Expires at ", c()(null == m ? void 0 : m.expiry).format("llll"), ".")))) : p.createElement("div", {
+                    }, "Expires at ", u()(null == w ? void 0 : w.expiry).format("llll"), ".")))) : v.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, p.createElement("div", {
+                    }, v.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, p.createElement(o.$1, {
-                        icon: n.sq,
+                    }, v.createElement(i.$1, {
+                        icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), p.createElement("div", {
+                    }), v.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, p.createElement("h2", {
+                    }, v.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), p.createElement("p", {
+                    }, "You already have access to this product."), v.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Purchasing will have no effect.")))) : null, p.createElement("div", {
-                        className: "tw-flex tw-w-full ".concat(d ? "tw-opacity-30" : "tw-opacity-100")
-                    }, p.createElement(i.Z, {
+                    }, "Purchasing will have no effect.")))) : null, !F && v.createElement(v.Fragment, null, v.createElement(i.qX, {
+                        type: "warn",
+                        title: v.createElement("small", null, "This avatar is unavailable due to an issue."),
+                        className: "tw-mt-0"
+                    }, v.createElement("small", null, "Please check your email or notifications for more information.")), v.createElement(i.X2, {
+                        className: "tw-gap-3 tw-items-center"
+                    }, v.createElement("div", {
+                        className: "tw-bg-hr-line-color tw-w-14 tw-h-14 tw-rounded-sm tw-p-2 tw-text-[#404c58]"
+                    }, v.createElement(i.$1, {
+                        icon: n.faBan,
+                        className: "tw-w-full tw-h-full"
+                    })), v.createElement("h6", {
+                        className: "tw-p-0 tw-flex-auto tw-m-0 tw-text-placeholder-text"
+                    }, "Unavailable Product"))), F && v.createElement("div", {
+                        className: "tw-flex tw-w-full ".concat(p ? "tw-opacity-30" : "tw-opacity-100")
+                    }, v.createElement(s.Z, {
                         alt: null == r ? void 0 : r.displayName,
                         imageId: null == r ? void 0 : r.imageId,
-                        fallbackSrc: s,
+                        fallbackSrc: l,
                         className: "tw-w-14 tw-h-14 tw-rounded-sm tw-bg-transparent",
                         fitToCover: !0
-                    }), p.createElement("div", {
+                    }), v.createElement("div", {
                         className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-2 tw-w-2/3"
-                    }, p.createElement("h4", {
+                    }, v.createElement("h4", {
                         className: "tw-text-white tw-text-[16px] tw-truncate"
-                    }, null == r ? void 0 : r.displayName), p.createElement("p", {
+                    }, null == r ? void 0 : r.displayName), v.createElement("p", {
                         className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-text-ellipsis tw-overflow-hidden tw-break-words tw-line-clamp-3 tw-max-h-[3rem]"
-                    }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && p.createElement("div", {
+                    }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && v.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
-                    }, p.createElement(v.rU, {
+                    }, v.createElement(m.rU, {
                         to: "/home/avatar/".concat(r.avatarId),
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "tw-text-white tw-px-2 tw-py-1 tw-rounded tw-h-9 tw-w-9 tw-bg-button-bg-grey hover:tw-bg-dark-grey tw-items-center tw-justify-center tw-flex",
                         title: "Go to Avatar"
-                    }, p.createElement(o.$1, {
+                    }, v.createElement(i.$1, {
                         icon: a.t3
                     })))))
                 };
             f.propTypes = {
-                productId: d().string,
-                className: d().string
+                productId: p().string,
+                className: p().string
             };
-            const m = f
+            const w = f
         },
         751: (e, t, r) => {
             r.d(t, {
                 Ec: () => d,
                 Xc: () => p,
                 oy: () => w,
-                sd: () => f,
+                sd: () => m,
                 wu: () => v,
-                zZ: () => m
+                zZ: () => f
             });
             var a = r(15861),
                 n = r(42138),
@@ -799,7 +814,7 @@
                             }),
                             getAllFavorites: e.query({
                                 queryFn: (o = (0, a.Z)(i().mark((function e(t, r, a, o) {
-                                    var s, l, c, u, d, p, v, f;
+                                    var s, l, c, u, d, p, v, m;
                                     return i().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
@@ -818,19 +833,19 @@
                                                     }
                                                 });
                                             case 6:
-                                                if (!(f = e.sent).error) {
+                                                if (!(m = e.sent).error) {
                                                     e.next = 9;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: f.error
+                                                    error: m.error
                                                 });
                                             case 9:
-                                                if (!(f.data.length > 0)) {
+                                                if (!(m.data.length > 0)) {
                                                     e.next = 13;
                                                     break
                                                 }
-                                                return p.push.apply(p, (0, n.Z)(f.data)), v += 50, e.abrupt("continue", 3);
+                                                return p.push.apply(p, (0, n.Z)(m.data)), v += 50, e.abrupt("continue", 3);
                                             case 13:
                                                 return e.abrupt("break", 16);
                                             case 16:
@@ -862,7 +877,7 @@
                             }),
                             getAllFavoriteCounts: e.query({
                                 queryFn: (r = (0, a.Z)(i().mark((function e(t, r, a, n) {
-                                    var o, s, c, u, d, p, v, f;
+                                    var o, s, c, u, d, p, v, m;
                                     return i().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
@@ -892,7 +907,7 @@
                                                 }
                                                 p = l(d.data);
                                                 try {
-                                                    for (p.s(); !(v = p.n()).done;) f = v.value, c[f.tags[0]] ? c[f.tags[0]] += 1 : c[f.tags[0]] = 1
+                                                    for (p.s(); !(v = p.n()).done;) m = v.value, c[m.tags[0]] ? c[m.tags[0]] += 1 : c[m.tags[0]] = 1
                                                 } catch (e) {
                                                     p.e(e)
                                                 } finally {
@@ -1172,10 +1187,10 @@
                 d = u.useCreateFavoriteMutation,
                 p = u.useDeleteFavoriteMutation,
                 v = u.useGetAllFavoriteCountsQuery,
-                f = u.useGetAllFavoritesQuery,
-                m = (u.useGetFavoritesQuery, u.useMoveFavoriteMutation),
+                m = u.useGetAllFavoritesQuery,
+                f = (u.useGetFavoritesQuery, u.useMoveFavoriteMutation),
                 w = u.useReloadFavoritesMutation
         }
     }
 ]);
-//# sourceMappingURL=cccb91c5fea9aa3bff52ebb1360c6cc9c954f724bbb61fc0aa089e0e6f2f13ee.js.map
+//# sourceMappingURL=dbf39e1ac5ec725f87960e67f1c76cdc4279c0d71473f2bf80ebf5b6e01bf199.js.map

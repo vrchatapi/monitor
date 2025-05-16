@@ -12,7 +12,7 @@
                 s = a(67294),
                 c = a(14411),
                 m = a(17219),
-                i = a(12752),
+                i = a(17383),
                 u = a(72562);
             var d = {
                 "/download/sdk3-worlds": "download worlds VCC SDK package",
@@ -201,4 +201,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7945662d661319edad4863189746da8b3fe575c409456d25faee573ee63bbf8f.js.map
+//# sourceMappingURL=4042e27a34a70cbeeaca9e955d4dd53b38203fc2c8176b444fb25f18a5f7e5b1.js.map

@@ -22,7 +22,7 @@
                 b = a(71421),
                 g = a(67263),
                 x = a(83505),
-                h = a(12752),
+                h = a(17383),
                 E = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
             const y = function(e) {
                 var t, a, n = e.avatars,
@@ -535,4 +535,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2259fd2bff7f4b5e7b993c9265f4b227b328ff609923fd904260a019a536f0c9.js.map
+//# sourceMappingURL=9780d2dbaac5106f17a1ef9a0becb169ae8a119798f268c01c6ee098ab3bfa33.js.map

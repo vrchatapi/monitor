@@ -3,63 +3,65 @@
     [2073], {
         2073: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => T
+                default: () => X
             });
             var n = a(62475),
                 r = a(96766),
                 l = a(14411),
                 c = a(98185),
                 o = a(35187),
-                i = a(83505),
-                s = a(67978),
+                s = a(83505),
+                i = a(67978),
                 w = a(67294),
                 d = a(89250),
-                m = a(2909),
-                u = a(76553),
-                p = a(6811),
-                x = a(64258),
-                f = a(27484),
-                g = a.n(f),
-                v = a(45697),
-                b = a.n(v),
-                h = a(32981),
-                E = a(54546),
-                y = a(97798);
-            const C = function(e) {
+                m = a(54546),
+                u = a(2909),
+                p = a(82414),
+                x = a(76553),
+                f = a(6811),
+                g = a(64258),
+                b = a(27484),
+                v = a.n(b),
+                h = a(45697),
+                E = a.n(h),
+                y = a(32981),
+                N = a(65061),
+                C = a(97798);
+            const k = function(e) {
                 var t = e.deleteAction,
                     a = e.editAction,
                     n = e.productType,
                     r = e.viewAvatarDetailsAction,
                     c = (0, w.useState)(!1),
-                    o = (0, E.Z)(c, 2),
-                    i = o[0],
-                    s = o[1],
+                    o = (0, m.Z)(c, 2),
+                    s = o[0],
+                    i = o[1],
                     d = (0, w.useState)(null),
-                    m = (0, E.Z)(d, 2),
-                    u = m[0],
-                    p = m[1],
-                    x = (0, w.useRef)(null);
+                    u = (0, m.Z)(d, 2),
+                    p = u[0],
+                    x = u[1],
+                    f = (0, w.useRef)(null);
                 return (0, w.useEffect)((function() {
-                    null != x && x.current && p(x.current.getBoundingClientRect())
-                }), [x]), w.createElement("div", {
+                    null != f && f.current && x(f.current.getBoundingClientRect())
+                }), [f]), w.createElement("div", {
                     onMouseLeave: function() {
-                        return s(!1)
+                        return i(!1)
                     }
                 }, w.createElement(l.zx, {
-                    ref: x,
+                    ref: f,
                     className: "tw-h-9 tw-w-9",
                     neutral: !0,
                     onClick: function() {
-                        return s(!i)
+                        return i(!s)
                     }
                 }, w.createElement(l.$1, {
-                    icon: y.Uw,
+                    icon: C.Uw,
                     size: "1x"
                 })), w.createElement("div", {
                     style: {
-                        transform: "translate(-".concat(120 - (null == u ? void 0 : u.width), "px, 0px)")
+                        transform: "translate(-".concat(120 - (null == p ? void 0 : p.width), "px, 0px)")
                     },
-                    className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(i ? "tw-flex" : "tw-hidden")
+                    className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(s ? "tw-flex" : "tw-hidden")
                 }, w.createElement(l.JX, {
                     className: "tw-items-start tw-items-start tw-bg-button-bg-grey tw-border-2 tw-w-full tw-text-left tw-weight-[500]  tw-border-solid tw-border-[#666666] tw-rounded-lg"
                 }, "avatar" !== n && w.createElement("button", {
@@ -78,25 +80,39 @@
                     onClick: t
                 }, "Delete"))))
             };
-            var N = function(e) {
+            var D = function(e) {
                 var t = e.productData,
                     a = void 0 === t ? null : t,
                     n = e.editProductCallback,
                     r = void 0 === n ? function() {} : n,
                     c = e.deleteProductCallback,
                     o = void 0 === c ? function() {} : c,
-                    i = e.viewAvatarDetailsActionCallback,
-                    s = void 0 === i ? function() {} : i,
-                    d = (0, h.I0)();
+                    s = e.viewAvatarDetailsActionCallback,
+                    i = void 0 === s ? function() {} : s,
+                    d = (0, y.I0)();
                 if (null === a) return null;
-                var f = a.id,
-                    v = a.displayName,
-                    b = a.created,
-                    E = a.updated,
-                    y = a.parentListings,
-                    N = a.productType,
-                    k = a.imageId;
-                return w.createElement("div", {
+                var b = a.id,
+                    h = a.displayName,
+                    E = a.created,
+                    C = a.updated,
+                    D = a.parentListings,
+                    A = a.productType,
+                    P = a.imageId,
+                    S = a.assetDisabled,
+                    T = (0, w.useState)(!1),
+                    I = (0, m.Z)(T, 2),
+                    z = I[0],
+                    X = I[1],
+                    $ = (0, w.useRef)(null);
+                return (0, w.useEffect)((function() {
+                    var e = function(e) {
+                        $.current && !$.current.contains(e.target) && X(!1)
+                    };
+                    return z ? document.addEventListener("mousedown", e) : document.removeEventListener("mousedown", e),
+                        function() {
+                            document.removeEventListener("mousedown", e)
+                        }
+                }), [z]), w.createElement("div", {
                     className: "tw-relative"
                 }, w.createElement("div", {
                     className: "tw-grid tw-gap-2 tw-items-center tw-grid-cols-3 @[540px]/my-products:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-mx-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
@@ -104,44 +120,73 @@
                     className: "tw-flex tw-gap-1 tw-items-center tw-min-h-9 tw-my-2 @[800px]/my-products:tw-max-w-max tw-col-span-2"
                 }, w.createElement(l.pw, {
                     fitToCover: !0,
-                    imageId: k,
+                    imageId: P,
                     className: "tw-w-8 tw-h-8 tw-rounded-md tw-shrink-0",
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
                 }), w.createElement("p", {
                     className: "tw-truncate tw-mb-0 tw-overflow-hidden @[800px]/my-products:tw-whitespace-pre-line @[800px]/my-products:tw-break-words",
-                    title: v
-                }, v)), w.createElement("div", {
+                    title: h
+                }, h)), w.createElement("div", {
                     className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
-                }, N), w.createElement("div", {
+                }, A), w.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
-                }, g()(b).format("ll")), w.createElement("div", {
+                }, v()(E).format("ll")), w.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
-                }, g()(E).format("ll")), w.createElement("div", {
-                    className: "tw-flex tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
+                }, v()(C).format("ll")), !S && w.createElement("div", {
+                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
                 }, w.createElement("span", {
                     className: "tw-truncate tw-hidden @[700px]/products-heading:tw-block"
-                }, y && y.length > 0 ? "Available in ".concat(y.length, " listings") : "Unlisted"), w.createElement("span", {
+                }, D && D.length > 0 ? "Available in ".concat(D.length, " listings") : "Unlisted"), w.createElement("span", {
                     className: "@[700px]/products-heading:tw-hidden tw-truncate"
-                }, y && y.length > 0 ? "In ".concat(y.length, " listings") : "Unlisted")), w.createElement(l.X2, {
+                }, D && D.length > 0 ? "In ".concat(D.length, " listings") : "Unlisted")), S && w.createElement("div", {
+                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
+                }, w.createElement("span", {
+                    className: "tw-truncate"
+                }, w.createElement(l.$1, {
+                    className: "tw-text-orange",
+                    icon: x.eH
+                }), " ", w.createElement("span", {
+                    className: "tw-text-orange"
+                }, "Disabled"), " ", w.createElement("button", {
+                    id: "disabledTooltip-".concat(b),
+                    type: "button",
+                    className: "tw-bg-transparent tw-border-none",
+                    onClick: function() {
+                        return X(!z)
+                    },
+                    "aria-label": "Disabled avatar tooltip",
+                    ref: $
+                }, w.createElement(l.$1, {
+                    className: "tw-text-placeholder-text",
+                    icon: p.sq
+                })), w.createElement(N.Z, {
+                    isOpen: z,
+                    target: "disabledTooltip-".concat(b),
+                    toggle: function() {
+                        return X(!z)
+                    },
+                    trigger: "click",
+                    innerClassName: "tw-bg-black"
+                }, "This product is currently unavailable due to an issue. Enter Edit mode to view more details and how to address the problem."))), w.createElement(l.X2, {
                     className: "tw-min-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-w-fit tw-gap-2"
                 }, w.createElement(l.zx, {
                     className: "tw-w-9",
                     neutral: !0,
                     onClick: function() {
-                        navigator.clipboard.writeText(f).then((function() {
-                            d((0, x.d)({
+                        navigator.clipboard.writeText(b).then((function() {
+                            d((0, g.d)({
                                 title: "Copied product ID",
-                                icon: p.f8,
+                                icon: f.f8,
                                 message: "Product ID Copied!",
                                 color: "success",
                                 timeout: 3e3
                             }))
                         })).catch((function(e) {
                             var t, a;
-                            d((0, x.d)({
+                            d((0, g.d)({
                                 title: "Failed to copy product ID",
-                                icon: u.eH,
+                                icon: x.eH,
                                 message: null !== (t = null === (a = res.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== t ? t : "Failed to copy product ID",
                                 color: "error",
                                 timeout: 3e3
@@ -149,10 +194,10 @@
                         }))
                     }
                 }, w.createElement(l.$1, {
-                    icon: m.kZ,
+                    icon: u.kZ,
                     size: "1x"
-                })), w.createElement(C, {
-                    productType: N,
+                })), w.createElement(k, {
+                    productType: A,
                     editAction: function() {
                         return r(a)
                     },
@@ -160,17 +205,17 @@
                         return o(a)
                     },
                     viewAvatarDetailsAction: function() {
-                        return s(a)
+                        return i(a)
                     }
                 }))))
             };
-            N.propTypes = {
-                productData: b().object
+            D.propTypes = {
+                productData: E().object
             };
-            const k = N;
-            var A = a(40098),
-                P = a(74205);
-            const D = function(e) {
+            const A = D;
+            var P = a(40098),
+                S = a(74205);
+            const T = function(e) {
                 var t = e.createProduct,
                     a = void 0 === t ? function() {} : t;
                 return w.createElement(l.JX, {
@@ -184,7 +229,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: P.fk,
+                    icon: S.fk,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -198,7 +243,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: P.rP,
+                    icon: S.rP,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -212,7 +257,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: P.F,
+                    icon: S.F,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -227,14 +272,14 @@
                     containerClasses: "tw-mb-3 tw-w-[200px]",
                     onClick: a
                 }, w.createElement(l.$1, {
-                    icon: A.r8
+                    icon: P.r8
                 }), " Create Product"), w.createElement("a", {
                     href: "https://creators.vrchat.com/economy/products/",
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn more about products")))
             };
-            var S = [{
+            var I = [{
                     label: "Name",
                     value: "displayName"
                 }, {
@@ -260,8 +305,8 @@
                     label: "Actions",
                     value: ""
                 }],
-                I = [];
-            const T = function(e) {
+                z = [];
+            const X = function(e) {
                 var t, a = e.sortBy,
                     m = e.currentUser,
                     u = e.currentPage,
@@ -269,16 +314,16 @@
                     x = e.editProductCallback,
                     f = void 0 === x ? function() {} : x,
                     g = e.deleteProductCallback,
-                    v = void 0 === g ? function() {} : g,
-                    b = e.viewAvatarDetailsCallback,
-                    h = void 0 === b ? function() {} : b,
+                    b = void 0 === g ? function() {} : g,
+                    v = e.viewAvatarDetailsCallback,
+                    h = void 0 === v ? function() {} : v,
                     E = e.createProductCallback,
                     y = void 0 === E ? function() {} : E,
-                    C = e.onSortByChange,
-                    N = void 0 === C ? function() {} : C;
+                    N = e.onSortByChange,
+                    C = void 0 === N ? function() {} : N;
                 if (!m) return null;
-                var A, P, T = (0, d.s0)(),
-                    z = (0, s.rP)({
+                var k, D, P = (0, d.s0)(),
+                    S = (0, i.rP)({
                         userId: m.id,
                         n: 50,
                         pageValue: u
@@ -286,77 +331,77 @@
                         skip: !m.id,
                         refetchOnMountOrArgChange: !0
                     }),
-                    X = z.data,
-                    j = z.isSuccess,
-                    F = z.isFetching,
-                    U = z.isError,
-                    J = z.error,
-                    $ = (0, w.useCallback)((function(e) {
+                    X = S.data,
+                    $ = S.isSuccess,
+                    j = S.isFetching,
+                    F = S.isError,
+                    U = S.error,
+                    J = (0, w.useCallback)((function(e) {
                         return a === e
                     }), [a]),
-                    B = (0, w.useCallback)((function(e) {
-                        if (I.includes(e)) return N(e)
-                    }), [N]);
-                return w.createElement(w.Fragment, null, 0 !== (null == X ? void 0 : X.length) || F || 1 !== u ? w.createElement(w.Fragment, null, w.createElement("div", {
+                    Z = (0, w.useCallback)((function(e) {
+                        if (z.includes(e)) return C(e)
+                    }), [C]);
+                return w.createElement(w.Fragment, null, 0 !== (null == X ? void 0 : X.length) || j || 1 !== u ? w.createElement(w.Fragment, null, w.createElement("div", {
                     className: "tw-@container/my-products tw-rounded-md tw-bg-grey tw-mt-5"
                 }, w.createElement("div", {
                     className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/products-heading"
                 }, w.createElement("div", {
                     className: "tw-grid tw-gap-1 tw-grid-cols-3 @[540px]/products-heading:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color tw-py-3 tw-pb-3 tw-mx-5"
-                }, S.map((function(e) {
+                }, I.map((function(e) {
                     var t = e.label,
                         a = e.value,
                         c = e.canCollapse,
                         o = void 0 !== c && c,
-                        s = e.isSmallColumn,
-                        d = void 0 !== s && s,
+                        i = e.isSmallColumn,
+                        d = void 0 !== i && i,
                         m = e.mobileCollapse,
                         u = void 0 !== m && m;
                     return w.createElement("span", {
                         key: a,
-                        className: (0, i.cx)("tw-font-normal tw-text-base", {
-                            "tw-text-light-white": $(a),
-                            "tw-text-light-grey": !$(a),
+                        className: (0, s.cx)("tw-font-normal tw-text-base", {
+                            "tw-text-light-white": J(a),
+                            "tw-text-light-grey": !J(a),
                             "tw-hidden @[700px]/products-heading:tw-block": o,
                             "tw-hidden @[540px]/products-heading:tw-block": u,
                             "tw-max-w-[100px]": d,
                             "tw-max-w-auto": !d,
                             "tw-col-span-1": "displayName" !== a,
                             "tw-col-span-2": "displayName" === a,
-                            "tw-cursor-pointer": I.includes(a),
-                            "tw-cursor-auto": !I.includes(a)
+                            "tw-cursor-pointer": z.includes(a),
+                            "tw-cursor-auto": !z.includes(a)
                         }),
                         onClick: function() {
-                            return B(a)
+                            return Z(a)
                         },
                         onKeyDown: function(e) {
-                            if ("Enter" === e.key || "Space" === e.key) return B(a)
+                            if ("Enter" === e.key || "Space" === e.key) return Z(a)
                         },
                         role: "button",
                         tabIndex: 0
-                    }, t, I.includes(a) && w.createElement(l.$1, {
-                        icon: $(a) && "ascending" === p ? r.fo : n.u9,
+                    }, t, z.includes(a) && w.createElement(l.$1, {
+                        icon: J(a) && "ascending" === p ? r.fo : n.u9,
                         size: "1x",
-                        className: "tw-ml-1 ".concat($(a) && "ascending" === p ? "tw-align-bottom" : "tw-align-top")
+                        className: "tw-ml-1 ".concat(J(a) && "ascending" === p ? "tw-align-bottom" : "tw-align-top")
                     }))
                 }))), w.createElement("div", {
                     className: "tw-group"
-                }, F ? w.createElement("div", {
+                }, j ? w.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, w.createElement(c.Z, {
                     loading: !0
-                })) : U ? w.createElement("div", {
+                })) : F ? w.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (A = null == J || null === (P = J.data) || void 0 === P || null === (P = P.error) || void 0 === P ? void 0 : P.message) && void 0 !== A ? A : "Unknown error")) : j && 0 === (null == X ? void 0 : X.length) ? w.createElement("div", {
+                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (k = null == U || null === (D = U.data) || void 0 === D || null === (D = D.error) || void 0 === D ? void 0 : D.message) && void 0 !== k ? k : "Unknown error")) : $ && 0 === (null == X ? void 0 : X.length) ? w.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, w.createElement("p", {
                     className: "tw-mb-0"
-                }, "There are no products to display.")) : j ? X.map((function(e) {
-                    return w.createElement(k, {
+                }, "There are no products to display.")) : $ ? X.map((function(e) {
+                    return w.createElement(A, {
                         key: e.id,
                         productData: e,
                         editProductCallback: f,
-                        deleteProductCallback: v,
+                        deleteProductCallback: b,
                         viewAvatarDetailsActionCallback: h
                     })
                 })) : void 0), w.createElement("div", null, w.createElement(o.Z, {
@@ -366,13 +411,13 @@
                     currentPage: u,
                     pageSize: 50,
                     onPageChange: function(e) {
-                        return T("/home/marketplace/storefront/products/page/".concat(e))
+                        return P("/home/marketplace/storefront/products/page/".concat(e))
                     }
-                }))))) : w.createElement(D, {
+                }))))) : w.createElement(T, {
                     createProduct: y
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=7b7949dc4ba456ec865aa5a5cdcd005250737273e55cee994ce87a4a28dd02fd.js.map
+//# sourceMappingURL=6bb4c090a4bf155fd0532d1acf5c36f8155fa592ab7df4d9f5580df97bc41905.js.map
