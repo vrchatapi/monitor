@@ -22,15 +22,15 @@
                     a = e.onPrevious,
                     p = void 0 === a ? function() {} : a,
                     f = e.onSubmit,
-                    E = void 0 === f ? function() {} : f,
-                    h = (0, u.useState)(!1),
-                    g = (0, r.Z)(h, 2),
+                    h = void 0 === f ? function() {} : f,
+                    E = (0, u.useState)(!1),
+                    g = (0, r.Z)(E, 2),
                     b = g[0],
                     y = g[1],
                     x = (0, u.useState)(!1),
-                    N = (0, r.Z)(x, 2),
-                    k = N[0],
-                    C = N[1],
+                    k = (0, r.Z)(x, 2),
+                    N = k[0],
+                    C = k[1],
                     S = (0, u.useMemo)((function() {
                         return v.IM.reduce((function(e, a) {
                             var r = (0, d.F)(null == t ? void 0 : t.unityPackages, a);
@@ -56,16 +56,16 @@
                 }, u.createElement("p", null, "To list your avatar for sale, it must meet our ", u.createElement("strong", null, "Marketplace Standards"), " and ", u.createElement("strong", null, "Terms and Conditions"), ". Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", u.createElement(w.rU, {
                     to: "/home/avatar/".concat(t.id),
                     className: "hover:tw-text-teal-accent"
-                }, "the avatar page"), " ", "to make changes."), k && u.createElement("div", null, u.createElement("p", null, u.createElement("strong", null, "Our review process:")), u.createElement("p", null, u.createElement("ol", null, u.createElement("li", null, u.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), u.createElement("li", null, u.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), u.createElement("li", null, u.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), u.createElement("li", null, u.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), u.createElement("p", null, u.createElement("strong", null, "Why Reviews Matter?"), u.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), u.createElement("button", {
+                }, "the avatar page"), " ", "to make changes."), N && u.createElement("div", null, u.createElement("p", null, u.createElement("strong", null, "Our review process:")), u.createElement("p", null, u.createElement("ol", null, u.createElement("li", null, u.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), u.createElement("li", null, u.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), u.createElement("li", null, u.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), u.createElement("li", null, u.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), u.createElement("p", null, u.createElement("strong", null, "Why Reviews Matter?"), u.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), u.createElement("button", {
                     type: "button",
                     className: "tw-bg-transparent tw-border-none tw-text-teal-accent hover:tw-text-white tw-text-left",
                     onClick: function() {
-                        return C(!k)
+                        return C(!N)
                     }
                 }, u.createElement(m.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", k ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h2", {
+                }), " ", N ? "Read less" : "Read more about our review process"))), u.createElement(m.JX, null, u.createElement("h2", {
                     className: "tw-text-xl"
                 }, "Performance Rank"), u.createElement("small", {
                     className: "tw-text-light-grey tw-mb-3"
@@ -120,7 +120,9 @@
                 }), " Cross-platform avatars receive higher visibility and are more likely to be featured in the Avatar Marketplace.")), u.createElement(m.JX, null, u.createElement("h2", {
                     className: "tw-text-xl"
                 }, "Licensing"), u.createElement("p", null, "All published avatars in the Avatar Shop will follow the license terms specified in the Terms and Conditions.", " ", u.createElement("a", {
-                    href: "/",
+                    href: "https://hello.vrchat.com/legal",
+                    target: "_blank",
+                    rel: "noreferrer",
                     className: "hover:tw-text-teal-accent"
                 }, "Learn More")), u.createElement(m.JX, {
                     className: "tw-p-5 tw-bg-[#000] tw-rounded-md"
@@ -130,7 +132,7 @@
                     rel: "noreferrer",
                     className: "hover:tw-text-teal-accent"
                 }, "Terms and Conditions"), " ", "and", " ", u.createElement("a", {
-                    href: "https://creators.vrchat.com/economy/products/avatar",
+                    href: "https://creators.vrchat.com/economy/guidelines",
                     target: "_blank",
                     rel: "noreferrer",
                     className: "hover:tw-text-teal-accent"
@@ -152,7 +154,7 @@
                 }, "Back"), u.createElement(m.zx, {
                     containerClasses: "tw-flex-1",
                     onClick: function() {
-                        b && E()
+                        b && h()
                     },
                     disabled: !b
                 }, "Submit for Review")))
@@ -160,4 +162,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1b45611117303f2113c46e3422cc7aee604229e82fcfd113be8ccd654204ccd2.js.map
+//# sourceMappingURL=bcd698966559b9abf6c457bda40da909ac5d4cafeb2385293e826853373ebc9f.js.map
