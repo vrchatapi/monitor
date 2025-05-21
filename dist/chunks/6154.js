@@ -4,12 +4,12 @@
         90502: (e, t) => {
             var a = "arrow-up-right-from-square",
                 n = ["external-link"],
-                r = "f08e",
-                l = "M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z";
+                l = "f08e",
+                r = "M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z";
             t.DF = {
                 prefix: "fas",
                 iconName: a,
-                icon: [512, 512, n, r, l]
+                icon: [512, 512, n, l, r]
             }, t.wl = t.DF
         },
         68149: (e, t, a) => {
@@ -25,8 +25,8 @@
                 Z: () => F
             });
             var n = a(42138),
-                r = a(45987),
-                l = a(4942),
+                l = a(45987),
+                r = a(4942),
                 i = a(54546),
                 c = a(2909),
                 o = a(82414),
@@ -53,9 +53,9 @@
                 var t = e.onCloseCallback,
                     a = e.isOpen,
                     n = e.title,
-                    r = void 0 === n ? "" : n;
+                    l = void 0 === n ? "" : n;
                 return x.createElement(w.u_, {
-                    title: r,
+                    title: l,
                     onCloseFinished: t,
                     isVisible: a,
                     width: "100%",
@@ -90,7 +90,7 @@
                 }, "Cancel")), x.createElement("div", {
                     className: "tw-w-1/2"
                 }, x.createElement(C.rU, {
-                    to: "https://help.vrchat.com/hc/en-us/requests/new",
+                    to: "https://vrch.at/marketplace-help",
                     target: "_blank",
                     rel: "noopener noreferrer"
                 }, x.createElement(w.zx, {
@@ -103,10 +103,10 @@
                 var t = e.product,
                     a = e.onClick,
                     n = void 0 === a ? function() {} : a,
-                    r = (0, x.useState)(!1),
-                    l = (0, i.Z)(r, 2),
-                    c = l[0],
-                    o = l[1],
+                    l = (0, x.useState)(!1),
+                    r = (0, i.Z)(l, 2),
+                    c = r[0],
+                    o = r[1],
                     s = (0, x.useRef)(null);
                 return (0, x.useEffect)((function() {
                     var e = function(e) {
@@ -186,7 +186,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? S(Object(a), !0).forEach((function(t) {
-                        (0, l.Z)(e, t, a[t])
+                        (0, r.Z)(e, t, a[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : S(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
@@ -213,17 +213,17 @@
                     })),
                     U = _.selectedListingType,
                     $ = _.selectedProducts,
-                    q = _.productIds,
-                    B = (0, x.useState)(O({
+                    B = _.productIds,
+                    q = (0, x.useState)(O({
                         displayName: (null == F ? void 0 : F.displayName) || "",
                         description: (null == F ? void 0 : F.description) || "",
                         priceTokens: (null == F ? void 0 : F.priceTokens) || 100,
-                        products: q || (null == F ? void 0 : F.productIds) || []
+                        products: B || (null == F ? void 0 : F.productIds) || []
                     }, S === b.ft.DURATION && {
                         duration: (null == F ? void 0 : F.duration) || 1,
                         durationType: (null == F ? void 0 : F.durationType) || b.PG.DAY
                     })),
-                    Y = (0, i.Z)(B, 2),
+                    Y = (0, i.Z)(q, 2),
                     G = Y[0],
                     H = Y[1],
                     W = (0, x.useState)({}),
@@ -233,9 +233,9 @@
                     te = (0, x.useState)(!1),
                     ae = (0, i.Z)(te, 2),
                     ne = ae[0],
-                    re = ae[1],
-                    le = (0, x.useState)((null == F ? void 0 : F.file) || (null == F ? void 0 : F.imageId) || null),
-                    ie = (0, i.Z)(le, 2),
+                    le = ae[1],
+                    re = (0, x.useState)((null == F ? void 0 : F.file) || (null == F ? void 0 : F.imageId) || null),
+                    ie = (0, i.Z)(re, 2),
                     ce = ie[0],
                     oe = ie[1],
                     se = x.useState(""),
@@ -288,22 +288,22 @@
                         var t = e.fileId,
                             a = void 0 === t ? null : t,
                             n = e.fileBlob,
-                            l = void 0 === n ? null : n,
+                            r = void 0 === n ? null : n,
                             i = null !== a;
-                        return null === a && null === l ? (oe(null), void H((function(e) {
+                        return null === a && null === r ? (oe(null), void H((function(e) {
                             return O(O({}, e), {}, {
                                 file: null,
                                 imageId: ""
                             })
                         }))) : i ? (oe(a), void H((function(e) {
                             e.file;
-                            return O(O({}, (0, r.Z)(e, A)), {}, {
+                            return O(O({}, (0, l.Z)(e, A)), {}, {
                                 imageId: a
                             })
-                        }))) : (oe(l), void H((function(e) {
+                        }))) : (oe(r), void H((function(e) {
                             e.imageId;
-                            return O(O({}, (0, r.Z)(e, P)), {}, {
-                                file: l
+                            return O(O({}, (0, l.Z)(e, P)), {}, {
+                                file: r
                             })
                         })))
                     },
@@ -312,9 +312,9 @@
                             a = t.name,
                             n = t.value;
                         H((function(e) {
-                            var t = O(O({}, e), {}, (0, l.Z)({}, a, n));
+                            var t = O(O({}, e), {}, (0, r.Z)({}, a, n));
                             return N(t), t
-                        })), ee(O(O({}, Q), {}, (0, l.Z)({}, a, e.target.checkValidity())))
+                        })), ee(O(O({}, Q), {}, (0, r.Z)({}, a, e.target.checkValidity())))
                     },
                     Pe = function() {
                         Ze({
@@ -476,7 +476,7 @@
                 }, x.createElement("button", {
                     type: "button",
                     onClick: function() {
-                        De || re(!0)
+                        De || le(!0)
                     },
                     disabled: De,
                     className: "tw-bg-transparent tw-border-0 tw-p-0 tw-rounded tw-relative tw-items-center tw-justify-center tw-flex"
@@ -639,11 +639,11 @@
                     image: ce,
                     isOpen: ne,
                     onClose: function() {
-                        return re(!1)
+                        return le(!1)
                     },
                     confirmCallback: Ze,
                     cancelCallBack: function() {
-                        return re(!1)
+                        return le(!1)
                     }
                 }))
             };
@@ -656,10 +656,10 @@
         },
         80938: (e, t, a) => {
             a.d(t, {
-                Z: () => r
+                Z: () => l
             });
             var n = a(67294);
-            const r = function() {
+            const l = function() {
                 return n.createElement("div", null, n.createElement("p", null, "Publishing this listing will make it available for viewing and purchase, including in any selected store(s)"))
             }
         },
@@ -668,8 +668,8 @@
                 Z: () => u
             });
             var n = a(42138),
-                r = a(54546),
-                l = a(14411),
+                l = a(54546),
+                r = a(14411),
                 i = a(95896),
                 c = a(45697),
                 o = a.n(c),
@@ -687,11 +687,11 @@
                         f = e.isEditing,
                         b = void 0 !== f && f,
                         h = (0, s.useState)([]),
-                        v = (0, r.Z)(h, 2),
+                        v = (0, l.Z)(h, 2),
                         E = v[0],
                         N = v[1],
                         y = (0, s.useState)(null !== (t = null == g ? void 0 : g.active) && void 0 !== t && t),
-                        x = (0, r.Z)(y, 2),
+                        x = (0, l.Z)(y, 2),
                         k = x[0],
                         C = x[1],
                         I = (0, m.v9)((function(e) {
@@ -718,27 +718,27 @@
                             return t !== e.id
                         }))) : N([].concat((0, n.Z)(E), [e.id]))
                     };
-                    return s.createElement(l.JX, null, s.createElement("h6", {
+                    return s.createElement(r.JX, null, s.createElement("h6", {
                         className: "tw-text-lg"
                     }, "Store Availability"), s.createElement("p", {
                         className: "tw-mb-3"
-                    }, "Choose the stores where you want to display this listing:"), s.createElement(l.JX, {
+                    }, "Choose the stores where you want to display this listing:"), s.createElement(r.JX, {
                         className: "tw-gap-2 tw-max-h-[217px] tw-overflow-y-auto"
-                    }, D && s.createElement(l.X2, {
+                    }, D && s.createElement(r.X2, {
                         className: "tw-px-5 tw-py-3 tw-bg-grey tw-rounded-lg tw-items-center tw-gap-2"
-                    }, s.createElement(l.XZ, {
+                    }, s.createElement(r.XZ, {
                         checked: !0,
                         disabled: !0,
                         className: "tw-w-5 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-accent-teal-accent tw-border-[#677079] tw-rounded tw-ring-offset-gray-800"
                     }), s.createElement("div", {
                         className: "tw-w-9 tw-h-9 tw-rounded-lg tw-items-center tw-justify-center tw-flex tw-bg-grey"
-                    }, s.createElement(l.pw, {
+                    }, s.createElement(r.pw, {
                         imageId: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-crop-background.png",
                         containerColor: "transparent",
                         width: 36,
                         height: 36,
                         alt: "VRC Logo"
-                    })), s.createElement(l.JX, null, s.createElement("p", {
+                    })), s.createElement(r.JX, null, s.createElement("p", {
                         className: "tw-font-bold tw-text-teal-accent tw-mb-0"
                     }, "Avatar Marketplace"), s.createElement("small", {
                         className: "tw-mb-0 tw-text-light-grey"
@@ -746,24 +746,24 @@
                         className: "tw-text-light-grey"
                     }, "You have no stores that can be used for this listing."), T.map((function(e) {
                         var t;
-                        return s.createElement(l.X2, {
+                        return s.createElement(r.X2, {
                             key: e.id,
                             onClick: function() {
                                 return L(e)
                             },
                             className: "tw-cursor-pointer tw-px-5 tw-py-3 tw-bg-grey tw-rounded-lg tw-items-center tw-gap-2"
-                        }, s.createElement(l.XZ, {
+                        }, s.createElement(r.XZ, {
                             checked: E.includes(e.id),
                             onChange: function() {
                                 return L(e)
                             },
                             className: "tw-w-5 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-accent-teal-accent tw-border-[#677079] tw-rounded tw-ring-offset-gray-800"
-                        }), s.createElement(l.pw, {
+                        }), s.createElement(r.pw, {
                             imageId: null === (t = e.storeContext) || void 0 === t ? void 0 : t.imageUrl,
                             alt: "".concat(e.displayName, " thumbnail"),
                             width: 36,
                             fitToCover: !0
-                        }), s.createElement(l.JX, null, s.createElement("p", {
+                        }), s.createElement(r.JX, null, s.createElement("p", {
                             className: "tw-font-bold tw-text-teal-accent tw-mb-0"
                         }, e.displayName), s.createElement("small", {
                             className: "tw-capitalize tw-mb-0 tw-text-light-grey"
@@ -772,35 +772,35 @@
                         className: "tw-border-t tw-border-placeholder-text"
                     }), s.createElement("h6", {
                         className: "tw-mb-3 tw-text-lg"
-                    }, "Listing Visibility"), s.createElement(l.JX, {
+                    }, "Listing Visibility"), s.createElement(r.JX, {
                         className: "tw-gap-3"
-                    }, s.createElement(l.X2, {
+                    }, s.createElement(r.X2, {
                         className: "tw-gap-2 tw-cursor-pointer",
                         onClick: function() {
                             return C(!1)
                         }
-                    }, s.createElement(l.XZ, {
+                    }, s.createElement(r.XZ, {
                         checked: !k,
                         onChange: function() {
                             return C(!1)
                         },
                         className: "tw-m-1 tw-w-4 tw-h-4 tw-bg-button-bg-grey tw-ring-2 tw-ring-[#677079] checked:tw-bg-teal-accent checked:tw-ring-teal-accent checked:tw-ring-offset-2 checked:tw-ring-offset-darker-grey tw-rounded-full tw-appearance-none"
-                    }), s.createElement(l.JX, null, s.createElement("p", {
+                    }), s.createElement(r.JX, null, s.createElement("p", {
                         className: "tw-mb-0"
                     }, "Save as draft"), s.createElement("small", {
                         className: "tw-text-light-grey"
-                    }, "Users cannot see the listing until you publish it."))), s.createElement(l.X2, {
+                    }, "Users cannot see the listing until you publish it."))), s.createElement(r.X2, {
                         className: "tw-gap-2 tw-cursor-pointer",
                         onClick: function() {
                             return C(!0)
                         }
-                    }, s.createElement(l.XZ, {
+                    }, s.createElement(r.XZ, {
                         checked: k,
                         onChange: function() {
                             return C(!0)
                         },
                         className: "tw-m-1 tw-w-4 tw-h-4 tw-bg-button-bg-grey tw-ring-2 tw-ring-[#677079] checked:tw-bg-teal-accent checked:tw-ring-teal-accent checked:tw-ring-offset-2 checked:tw-ring-offset-darker-grey tw-rounded-full tw-appearance-none"
-                    }), s.createElement(l.JX, null, s.createElement("p", {
+                    }), s.createElement(r.JX, null, s.createElement("p", {
                         className: "tw-mb-0"
                     }, b ? "Save" : "Create", " and publish in the selected stores"), s.createElement("small", {
                         className: "tw-text-light-grey"
@@ -815,4 +815,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2ea1d3bfad216df68812a255a1d21b74e4fb54b718fab081fea12a4b1246f93e.js.map
+//# sourceMappingURL=8ea202ee19a7e4a07907764ce88e9f1bf71e1be27662cca072a705daccd97028.js.map

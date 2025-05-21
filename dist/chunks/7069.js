@@ -96,7 +96,7 @@
                         to: "/home/marketplace/storefront/products",
                         className: "tw-flex-1 tw-capitalize tw-m-0"
                     }, "View Products"), f && u.createElement(v.Qj, {
-                        to: "https://vrch.at/support",
+                        to: "https://vrch.at/marketplace-help",
                         target: "_blank",
                         className: "tw-flex-1 tw-m-0"
                     }, "Contact Support")))
@@ -349,4 +349,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2c996abca4b123d742fa892a8b06da52967ea59fadfb8876a630c4fd674aec96.js.map
+//# sourceMappingURL=73f13eee09b23a5c51450c00591fd95146a36f2b6251394060a10710c4402ad1.js.map
