@@ -203,7 +203,7 @@
                 r = n(65394),
                 i = n(85020),
                 o = n(67294),
-                l = n(14411);
+                l = n(37463);
             const c = function(e) {
                 var t = e.imageUrl,
                     n = e.closeCallback,
@@ -404,7 +404,7 @@
                 E = n(17383),
                 x = n(6655),
                 w = n(12227),
-                k = n(14411),
+                k = n(37463),
                 N = (n(46326), n(72528));
             const T = function(e) {
                 var t, n, i, l = e.navToggleCallback,
@@ -1609,7 +1609,7 @@
                     return n.e(6231).then(n.bind(n, 76231))
                 })),
                 Dt = r.lazy((function() {
-                    return Promise.all([n.e(123), n.e(9958), n.e(2998), n.e(3294), n.e(2520), n.e(8043), n.e(2704), n.e(5842), n.e(1388)]).then(n.bind(n, 76461))
+                    return Promise.all([n.e(123), n.e(7202), n.e(2998), n.e(3294), n.e(2520), n.e(8043), n.e(1244), n.e(2704), n.e(5842), n.e(1388)]).then(n.bind(n, 76461))
                 })),
                 Mt = r.lazy((function() {
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
@@ -1639,7 +1639,7 @@
                     return Promise.all([n.e(3261), n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
                 Jt = r.lazy((function() {
-                    return Promise.all([n.e(9474), n.e(3261), n.e(2998), n.e(2520), n.e(347), n.e(9923), n.e(8158), n.e(4896), n.e(464)]).then(n.bind(n, 50464))
+                    return Promise.all([n.e(5032), n.e(3261), n.e(2998), n.e(2520), n.e(347), n.e(1244), n.e(9923), n.e(8158), n.e(4896), n.e(7672)]).then(n.bind(n, 27672))
                 })),
                 Kt = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
@@ -2025,7 +2025,7 @@
                     dice: $.RJ,
                     "triangle-exclamation": S.faTriangleExclamation
                 },
-                xe = n(14411),
+                xe = n(37463),
                 we = n(88233),
                 ke = n(2566);
             A().extend(D()), A().extend(U());
@@ -2058,8 +2058,8 @@
                         caption: "Content Gated",
                         icon: O.faCircleExclamation
                     },
-                    "moderation.contentrestriction.dmca": {
-                        caption: "Content Restricted",
+                    "moderation.contentrestriction": {
+                        caption: "Content Moderation",
                         icon: S.faTriangleExclamation
                     },
                     "moderation.notice": {
@@ -2875,4 +2875,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ce03afc795826ec667231b40e2322f3110190b33922d70b7a884114dafea2642.js.map
+//# sourceMappingURL=6fbbbc9f96ff2d3ede00354544d08c0237d145d9a01b07c9f21afbbfe8c47464.js.map

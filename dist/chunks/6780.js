@@ -105,7 +105,7 @@
                 l = n(67294),
                 o = n(89250),
                 i = n(79655),
-                c = n(14411),
+                c = n(37463),
                 s = n(54546),
                 u = n(21429),
                 m = n(17183),
@@ -455,12 +455,12 @@
                 }, l.createElement("div", {
                     className: "tw-w-fit tw-relative"
                 }, l.createElement("img", {
-                    className: "w-100 tw-border-solid tw-border-4 tw-border-orange-400",
+                    className: "w-100 tw-border-solid tw-border-4 tw-border-[#fb923c]",
                     src: g.thumbnailImageUrl,
                     title: g.name,
                     alt: g.name
                 }), l.createElement("div", {
-                    className: "p-1 tw-w-full tw-bg-orange-400/75 tw-text-center tw-text-black tw-font-bold tw-absolute tw-bottom-1"
+                    className: "p-1 tw-w-full tw-text-center tw-text-black tw-font-bold tw-absolute tw-bottom-1 tw-bg-[#fb923c] tw-opacity-75"
                 }, "Archived"))), l.createElement(y.Z, {
                     xs: "12",
                     md: "9",
@@ -481,7 +481,7 @@
                 }, l.createElement("div", {
                     className: "tw-flex tw-flex-row tw-place-content-between"
                 }, l.createElement("div", null, null !== (e = g.id) && void 0 !== e && e.startsWith("avtr_") ? "Avatar" : "World", " Visibility:", l.createElement("div", {
-                    className: "mt-2 mb-4 tw-text-lg tw-font-bold"
+                    className: "mt-2 tw-text-lg tw-font-bold"
                 }, "Archived")), (null == a ? void 0 : a.id) === g.authorId && g.disputed && l.createElement(l.Fragment, null, l.createElement(c.sm, {
                     isOpen: K,
                     confirmCallback: function() {
@@ -506,7 +506,7 @@
                     }
                 }, l.createElement(c.$1, {
                     icon: p.k8
-                }), "  Withdraw")), (null == a ? void 0 : a.id) === g.authorId && !g.disputed && l.createElement(l.Fragment, null, l.createElement(c.zx, {
+                }), "  Withdraw")), (null == a ? void 0 : a.id) === g.authorId && g.isDmcaClaimed && !g.disputed && l.createElement(l.Fragment, null, l.createElement(c.zx, {
                     danger: !0,
                     className: "tw-px-12 tw-block tw-self-center",
                     onClick: function() {
@@ -530,8 +530,8 @@
                     closeModal: function() {
                         return B(!1)
                     }
-                })))), l.createElement("a", {
-                    className: "tw-text-light-grey tw-underline",
+                })))), g.isDmcaClaimed && l.createElement("a", {
+                    className: "tw-text-light-grey tw-underline mt-4",
                     href: "https://hello.vrchat.com/copyright",
                     target: "_blank",
                     rel: "noreferrer"
@@ -2741,7 +2741,7 @@
                 r = n(45697),
                 l = n.n(r),
                 o = n(67294),
-                i = n(14411),
+                i = n(37463),
                 c = function(e) {
                     var t;
                     return o.createElement(i.uW, (0, a.Z)({
@@ -3291,4 +3291,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98145606399548dfce74c4eee757880c02c54a1191d5a8997128017430867c2c.js.map
+//# sourceMappingURL=befd995d840cc66651e126deddad1379d2a79d28161289ef3217295042e8ff6e.js.map

@@ -3,64 +3,62 @@
     [3261], {
         93261: (r, e, t) => {
             t.d(e, {
-                A4: () => F,
-                Aw: () => P,
-                CL: () => S,
-                DU: () => Z,
-                E8: () => R,
+                Aw: () => h,
+                CL: () => L,
+                DU: () => _,
+                E8: () => P,
                 Eg: () => T,
                 FW: () => g,
-                G_: () => z,
-                HT: () => yr,
-                LA: () => W,
-                M7: () => ur,
-                MQ: () => sr,
-                Pi: () => _,
-                Pt: () => h,
-                Pv: () => rr,
+                G_: () => N,
+                HT: () => lr,
+                LA: () => X,
+                M7: () => er,
+                MQ: () => nr,
+                Pi: () => C,
+                Pt: () => M,
+                Pv: () => H,
                 QA: () => G,
-                Rx: () => ar,
-                Sp: () => Q,
-                V3: () => O,
-                VF: () => L,
-                VR: () => V,
-                Vc: () => J,
-                WG: () => m,
-                XK: () => k,
-                _n: () => D,
-                ci: () => lr,
-                d3: () => w,
-                dZ: () => j,
-                dj: () => C,
+                Rx: () => or,
+                Sp: () => w,
+                V3: () => D,
+                VF: () => S,
+                VR: () => J,
+                Vc: () => B,
+                WG: () => v,
+                XK: () => E,
+                _n: () => A,
+                ci: () => dr,
+                d3: () => x,
+                dZ: () => Q,
+                dj: () => F,
                 dl: () => y,
-                dt: () => v,
-                ek: () => gr,
-                gx: () => M,
-                hE: () => cr,
-                hg: () => H,
+                dt: () => m,
+                ek: () => cr,
+                hE: () => pr,
+                hg: () => W,
                 i2: () => f,
-                jP: () => E,
-                l5: () => or,
-                mA: () => dr,
+                jP: () => R,
+                l5: () => tr,
+                mA: () => ir,
                 mN: () => q,
                 mm: () => I,
-                mt: () => N,
-                nm: () => tr,
-                nz: () => Y,
-                pI: () => ir,
-                r5: () => x,
-                rq: () => Gr,
-                rw: () => $,
+                mt: () => V,
+                nm: () => rr,
+                nz: () => $,
+                pI: () => ar,
+                r5: () => O,
+                rq: () => gr,
+                rw: () => K,
                 t$: () => b,
                 tN: () => l,
-                uX: () => pr,
+                uX: () => sr,
                 v5: () => U,
-                vb: () => X,
-                w$: () => A,
-                xI: () => K,
-                xS: () => er,
-                xm: () => B,
-                zv: () => nr
+                vb: () => z,
+                w$: () => k,
+                xI: () => Z,
+                xS: () => Y,
+                xm: () => j,
+                zv: () => ur
             });
             var u = t(4942),
                 o = t(15861),
@@ -96,11 +94,11 @@
                         return {
                             createGroup: r.mutation({
                                 queryFn: (t = (0, o.Z)(a().mark((function r(e, t, u, o) {
-                                    var n, s, i, p, c, l, g, y, G, v, m, f, I, b, T, q, M, h, P, R, E, k, S;
+                                    var n, s, i, p, c, l, g, y, G, m, v, f, I, b, T, q, M, h, P, R, E, L, S;
                                     return a().wrap((function(r) {
                                         for (;;) switch (r.prev = r.next) {
                                             case 0:
-                                                if (i = e.banner, p = void 0 === i ? null : i, c = e.bannerId, l = void 0 === c ? null : c, g = e.icon, y = void 0 === g ? null : g, G = e.iconId, v = void 0 === G ? null : G, m = e.tag, f = void 0 === m ? "gallery" : m, I = e.name, b = e.description, T = void 0 === b ? "" : b, q = e.joinState, M = e.privacy, h = e.shortCode, P = e.roleTemplate, R = void 0 === P ? "default" : P, !p) {
+                                                if (i = e.banner, p = void 0 === i ? null : i, c = e.bannerId, l = void 0 === c ? null : c, g = e.icon, y = void 0 === g ? null : g, G = e.iconId, m = void 0 === G ? null : G, v = e.tag, f = void 0 === v ? "gallery" : v, I = e.name, b = e.description, T = void 0 === b ? "" : b, q = e.joinState, M = e.privacy, h = e.shortCode, P = e.roleTemplate, R = void 0 === P ? "default" : P, !p) {
                                                     r.next = 7;
                                                     break
                                                 }
@@ -141,12 +139,12 @@
                                             case 17:
                                                 r.t1 = null;
                                             case 18:
-                                                if (null == (k = r.t1) || !k.error) {
+                                                if (null == (L = r.t1) || !L.error) {
                                                     r.next = 21;
                                                     break
                                                 }
                                                 return r.abrupt("return", {
-                                                    error: k.error
+                                                    error: L.error
                                                 });
                                             case 21:
                                                 return r.next = 23, o({
@@ -154,7 +152,7 @@
                                                     method: "POST",
                                                     body: {
                                                         bannerId: E ? null == E || null === (n = E.data) || void 0 === n ? void 0 : n.id : l,
-                                                        iconId: k ? null == k || null === (s = k.data) || void 0 === s ? void 0 : s.id : v,
+                                                        iconId: L ? null == L || null === (s = L.data) || void 0 === s ? void 0 : s.id : m,
                                                         name: I,
                                                         description: T,
                                                         joinState: q,
@@ -177,8 +175,8 @@
                                                         group: S.data
                                                     }, (null == E ? void 0 : E.data) && {
                                                         banner: E.data
-                                                    }), (null == k ? void 0 : k.data) && {
-                                                        icon: k.data
+                                                    }), (null == L ? void 0 : L.data) && {
+                                                        icon: L.data
                                                     })
                                                 });
                                             case 27:
@@ -209,7 +207,7 @@
                             getGroupById: r.query({
                                 queryFn: function(r, e, t, u) {
                                     return (0, o.Z)(a().mark((function e() {
-                                        var t, n, s, i, p, c, l, g, y, G, v;
+                                        var t, n, s, i, p, c, l, g, y, G, m;
                                         return a().wrap((function(e) {
                                             for (;;) switch (e.prev = e.next) {
                                                 case 0:
@@ -263,7 +261,7 @@
                                                         return function() {
                                                             return r.apply(this, arguments)
                                                         }
-                                                    }(), v = function() {
+                                                    }(), m = function() {
                                                         var r;
                                                         return null != l && l.myMember && null != l && l.roles ? null == l || null === (r = l.roles) || void 0 === r ? void 0 : r.map((function(r) {
                                                             var e;
@@ -271,7 +269,7 @@
                                                         })).sort((function(r, e) {
                                                             return r - e
                                                         }))[0] : Number.MAX_SAFE_INTEGER
-                                                    }, e.t0 = d, e.t1 = d({}, l), e.t2 = {}, e.t3 = g, e.t4 = y, e.t5 = v(), e.next = 19, G();
+                                                    }, e.t0 = d, e.t1 = d({}, l), e.t2 = {}, e.t3 = g, e.t4 = y, e.t5 = m(), e.next = 19, G();
                                                 case 19:
                                                     return e.t6 = e.sent, e.t7 = {
                                                         isSoftDeleted: e.t3,
@@ -430,45 +428,6 @@
                                         id: t.userId
                                     }]
                                 }
-                            }),
-                            getGroupReports: r.query({
-                                query: function(r) {
-                                    var e = r.groupId,
-                                        t = r.userId;
-                                    return {
-                                        url: "/users/".concat(t, "/feedback?contentId=").concat(e, "&metadata=true")
-                                    }
-                                },
-                                providesTags: function(r, e, t) {
-                                    return [{
-                                        type: "GroupFeedback",
-                                        id: t.groupId
-                                    }]
-                                }
-                            }),
-                            createGroupReports: r.mutation({
-                                query: function(r) {
-                                    var e = r.groupId,
-                                        t = r.reasons,
-                                        u = r.locations,
-                                        o = r.description;
-                                    return {
-                                        url: "/feedbacks/group/".concat(e),
-                                        method: "POST",
-                                        body: {
-                                            type: "report",
-                                            reasons: t,
-                                            locations: u,
-                                            description: o
-                                        }
-                                    }
-                                },
-                                invalidatesTags: (0, i.T)((function(r) {
-                                    return [{
-                                        type: "GroupFeedback",
-                                        id: r.groupId
-                                    }]
-                                }))
                             }),
                             updateGroupTags: r.mutation({
                                 query: function(r) {
@@ -1675,61 +1634,59 @@
                 g = c.useAddRoleToMemberMutation,
                 y = c.useBanGroupMemberMutation,
                 G = c.useBanUserFromGroupJoinRequestMutation,
-                v = c.useBlockGroupJoinRequestMutation,
-                m = c.useBlockGroupMutation,
+                m = c.useBlockGroupJoinRequestMutation,
+                v = c.useBlockGroupMutation,
                 f = c.useCancelGroupJoinRequestMutation,
                 I = c.useCreateGroupMutation,
                 b = c.useCreateGroupPostMutation,
                 T = c.useCreateGroupGalleryMutation,
                 q = c.useCreateGroupInstanceMutation,
-                M = c.useCreateGroupReportsMutation,
-                h = c.useCreateGroupRoleMutation,
-                P = c.useDeleteGroupPostMutation,
-                R = c.useDeleteGroupGalleryImageMutation,
-                E = c.useDeleteGroupGalleryMutation,
-                k = c.useDeleteGroupInviteMutation,
-                S = (c.useDeleteGroupMemberMutation, c.useDeleteGroupMutation),
-                L = c.useDeleteGroupRoleMutation,
+                M = c.useCreateGroupRoleMutation,
+                h = c.useDeleteGroupPostMutation,
+                P = c.useDeleteGroupGalleryImageMutation,
+                R = c.useDeleteGroupGalleryMutation,
+                E = c.useDeleteGroupInviteMutation,
+                L = (c.useDeleteGroupMemberMutation, c.useDeleteGroupMutation),
+                S = c.useDeleteGroupRoleMutation,
                 U = c.useGetAllUserGroupsPermissionsQuery,
-                A = c.useGetGroupActiveInstancesQuery,
-                D = c.useGetGroupPostsQuery,
-                O = c.useGetGroupBannedMembersQuery,
-                x = c.useGetGroupByIdQuery,
-                w = (c.useGetGroupGalleriesQuery, c.useGetGroupGalleryImagesQuery),
-                Q = c.useGetGroupInvitesQuery,
-                j = c.useGetGroupJoinRequestsQuery,
-                B = c.useGetGroupMemberByUserIdQuery,
-                F = (c.useGetGroupMembershipStatusQuery, c.useGetGroupReportsQuery),
-                J = c.useGetGroupRolesQuery,
-                V = c.useGetGroupRoleTemplatesQuery,
-                C = c.useGetGroupsForUserQuery,
-                N = c.useGetGroupsPermissionsQuery,
-                _ = c.useGetSearchGroupMembersQuery,
-                z = c.useGetUserGroupsByMembershipStatusQuery,
-                Z = c.useDeclineGroupInviteMutation,
-                X = c.useInviteGroupMemberMutation,
-                K = c.useJoinGroupMutation,
-                W = c.useKickGroupMemberMutation,
-                $ = c.useGetGroupAuditLogTypesQuery,
-                H = c.useLazyGetGroupAuditLogsQuery,
-                Y = c.useLazyGetGroupByIdQuery,
-                rr = c.useLazyGetGroupMembersQuery,
-                er = (c.useLazyGetGroupRolesQuery, c.useLazySearchGroupsQuery),
-                tr = c.useLeaveGroupMutation,
-                ur = c.useRejectGroupJoinRequestMutation,
-                or = (c.useRemoveGroupIconAndBannerMutation, c.useRemoveRoleFromMemberMutation),
-                nr = c.useSubmitGroupGalleryImageMutation,
-                ar = c.useUnbanGroupMemberMutation,
-                sr = c.useUnblockGroupMutation,
-                ir = c.useUpdateGroupGalleryMutation,
-                pr = c.useUpdateGroupMemberMutation,
-                dr = c.useUpdateGroupMutation,
-                cr = c.useUpdateGroupRoleMutation,
-                lr = (c.useUpdateGroupTagsMutation, c.useUpdateGroupRolewithProductMutation),
-                gr = c.useGetTransferGroupValidityQuery,
-                yr = c.useAcceptGroupTransferMutation,
-                Gr = c.useDeleteGroupTransferMutation
+                k = c.useGetGroupActiveInstancesQuery,
+                A = c.useGetGroupPostsQuery,
+                D = c.useGetGroupBannedMembersQuery,
+                O = c.useGetGroupByIdQuery,
+                x = (c.useGetGroupGalleriesQuery, c.useGetGroupGalleryImagesQuery),
+                w = c.useGetGroupInvitesQuery,
+                Q = c.useGetGroupJoinRequestsQuery,
+                j = c.useGetGroupMemberByUserIdQuery,
+                B = (c.useGetGroupMembershipStatusQuery, c.useGetGroupRolesQuery),
+                J = c.useGetGroupRoleTemplatesQuery,
+                F = c.useGetGroupsForUserQuery,
+                V = c.useGetGroupsPermissionsQuery,
+                C = c.useGetSearchGroupMembersQuery,
+                N = c.useGetUserGroupsByMembershipStatusQuery,
+                _ = c.useDeclineGroupInviteMutation,
+                z = c.useInviteGroupMemberMutation,
+                Z = c.useJoinGroupMutation,
+                X = c.useKickGroupMemberMutation,
+                K = c.useGetGroupAuditLogTypesQuery,
+                W = c.useLazyGetGroupAuditLogsQuery,
+                $ = c.useLazyGetGroupByIdQuery,
+                H = c.useLazyGetGroupMembersQuery,
+                Y = (c.useLazyGetGroupRolesQuery, c.useLazySearchGroupsQuery),
+                rr = c.useLeaveGroupMutation,
+                er = c.useRejectGroupJoinRequestMutation,
+                tr = (c.useRemoveGroupIconAndBannerMutation, c.useRemoveRoleFromMemberMutation),
+                ur = c.useSubmitGroupGalleryImageMutation,
+                or = c.useUnbanGroupMemberMutation,
+                nr = c.useUnblockGroupMutation,
+                ar = c.useUpdateGroupGalleryMutation,
+                sr = c.useUpdateGroupMemberMutation,
+                ir = c.useUpdateGroupMutation,
+                pr = c.useUpdateGroupRoleMutation,
+                dr = (c.useUpdateGroupTagsMutation, c.useUpdateGroupRolewithProductMutation),
+                cr = c.useGetTransferGroupValidityQuery,
+                lr = c.useAcceptGroupTransferMutation,
+                gr = c.useDeleteGroupTransferMutation
         }
     }
 ]);
-//# sourceMappingURL=aefdfea31cf4987c61bc95465dbbc7a4a968a870df4ceb45117eda65bc30d64f.js.map
+//# sourceMappingURL=24c2de9900ce31888e29ff83b79b8bf15f4bdc6680c2bc67cfe974bc1888111f.js.map

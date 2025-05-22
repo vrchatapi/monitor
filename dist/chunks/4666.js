@@ -176,7 +176,7 @@
                 v = a(9669),
                 g = a.n(v),
                 x = a(64358),
-                w = a(14411),
+                w = a(37463),
                 Z = a(55694);
             const y = function(e) {
                 var t = e.avatar,
@@ -369,7 +369,7 @@
                 y = (a(29449), a(88874)),
                 b = a(4965),
                 C = a(47716);
-            a(14411);
+            a(37463);
             var L = (0, b.Z)("div", {
                     target: "e1f1wigo2"
                 })({
@@ -539,4 +539,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7af2df8c7861f7b02a256c73c41690ae00edbb1d4427d563699d687509feebbe.js.map
+//# sourceMappingURL=80655ccc12d3698eceda89b6f809f607261c969e6c26a40957d49212d5793da2.js.map
