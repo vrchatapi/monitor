@@ -176,11 +176,11 @@
                             }),
                             createListing: e.mutation({
                                 queryFn: (r = (0, n.Z)(o().mark((function e(t, r, n, i) {
-                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, C;
+                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, q, C;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.displayName, g = t.description, f = t.tags, y = t.listingVariants, v = t.imageId, h = t.listingType, m = t.productType, b = t.products, I = t.priceTokens, L = t.duration, T = t.durationType, w = t.active, P = t.groupId, E = t.permanent, k = t.instant, S = t.stackable, O = t.storeIds, x = t.recurrable, !u) {
+                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.displayName, g = t.description, f = t.tags, y = t.listingVariants, v = t.imageId, h = t.listingType, m = t.productType, b = t.products, I = t.priceTokens, L = t.duration, T = t.durationType, w = t.active, P = t.groupId, E = t.permanent, k = t.instant, S = t.stackable, O = t.storeIds, x = t.recurrable, U = t.quantifiable, !u) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -195,19 +195,19 @@
                                             case 7:
                                                 e.t0 = null;
                                             case 8:
-                                                if (null == (U = e.t0) || !U.error) {
+                                                if (null == (q = e.t0) || !q.error) {
                                                     e.next = 11;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: U.error
+                                                    error: q.error
                                                 });
                                             case 11:
                                                 return e.next = 13, i({
                                                     url: "listing",
                                                     method: "POST",
                                                     body: {
-                                                        imageId: U ? null == U || null === (a = U.data) || void 0 === a ? void 0 : a.id : v,
+                                                        imageId: q ? null == q || null === (a = q.data) || void 0 === a ? void 0 : a.id : v,
                                                         displayName: p,
                                                         description: g,
                                                         tags: f,
@@ -224,7 +224,8 @@
                                                         instant: k,
                                                         stackable: S,
                                                         recurrable: x,
-                                                        storeIds: O
+                                                        storeIds: O,
+                                                        quantifiable: U
                                                     }
                                                 });
                                             case 13:
@@ -239,8 +240,8 @@
                                                 return e.abrupt("return", {
                                                     data: c({
                                                         listing: C.data
-                                                    }, (null == U ? void 0 : U.data) && {
-                                                        file: U.data
+                                                    }, (null == q ? void 0 : q.data) && {
+                                                        file: q.data
                                                     })
                                                 });
                                             case 17:
@@ -270,11 +271,11 @@
                             }),
                             updateListing: e.mutation({
                                 queryFn: (t = (0, n.Z)(o().mark((function e(t, r, n, i) {
-                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, C;
+                                    var a, s, u, d, l, p, g, f, y, v, h, m, b, I, L, T, w, P, E, k, S, O, x, U, q, C;
                                     return o().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.listingId, g = t.displayName, f = t.description, y = t.tags, v = t.listingVariants, h = t.imageId, m = t.products, b = t.priceTokens, I = t.duration, L = t.durationType, T = t.active, w = t.groupId, P = t.archive, E = t.permanent, k = t.instant, S = t.stackable, O = t.recurrable, x = t.storeIds, !u) {
+                                                if (s = t.file, u = void 0 === s ? null : s, d = t.tag, l = void 0 === d ? "product" : d, p = t.listingId, g = t.displayName, f = t.description, y = t.tags, v = t.listingVariants, h = t.imageId, m = t.products, b = t.priceTokens, I = t.duration, L = t.durationType, T = t.active, w = t.groupId, P = t.archive, E = t.permanent, k = t.instant, S = t.stackable, O = t.recurrable, x = t.storeIds, U = t.quantifiable, !u) {
                                                     e.next = 7;
                                                     break
                                                 }
@@ -289,12 +290,12 @@
                                             case 7:
                                                 e.t0 = null;
                                             case 8:
-                                                if (null == (U = e.t0) || !U.error) {
+                                                if (null == (q = e.t0) || !q.error) {
                                                     e.next = 11;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: U.error
+                                                    error: q.error
                                                 });
                                             case 11:
                                                 return e.next = 13, i({
@@ -305,7 +306,7 @@
                                                         description: f,
                                                         tags: y,
                                                         listingVariants: v,
-                                                        imageId: U ? null == U || null === (a = U.data) || void 0 === a ? void 0 : a.id : h,
+                                                        imageId: q ? null == q || null === (a = q.data) || void 0 === a ? void 0 : a.id : h,
                                                         products: m,
                                                         priceTokens: b,
                                                         duration: I,
@@ -317,7 +318,8 @@
                                                         instant: k,
                                                         stackable: S,
                                                         recurrable: O,
-                                                        storeIds: x
+                                                        storeIds: x,
+                                                        quantifiable: U
                                                     }
                                                 });
                                             case 13:
@@ -332,8 +334,8 @@
                                                 return e.abrupt("return", {
                                                     data: c({
                                                         listing: C.data
-                                                    }, (null == U ? void 0 : U.data) && {
-                                                        file: U.data
+                                                    }, (null == q ? void 0 : q.data) && {
+                                                        file: q.data
                                                     })
                                                 });
                                             case 17:
@@ -440,4 +442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=df50f888872454cc309a24a5d277e0363219a13ce6d03a30e9fce761829bc05d.js.map
+//# sourceMappingURL=ac385212757bdec7d8c5c995e71e403b4fc4ade9cb47869b08d9f3a7e1c8e258.js.map

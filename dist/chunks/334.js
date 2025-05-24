@@ -175,7 +175,7 @@
         40525: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                PopulationCallout: () => Dn,
+                PopulationCallout: () => _n,
                 default: () => In
             });
             var a = n(4965),
@@ -207,8 +207,8 @@
                 j = n(65061),
                 z = n(27484),
                 $ = n.n(z),
-                _ = n(45697),
-                D = n.n(_),
+                D = n(45697),
+                _ = n.n(D),
                 T = n(97878),
                 L = (n(67947), n(28213)),
                 M = n(67371),
@@ -328,10 +328,10 @@
                     j = (0, w.Z)(S, 2),
                     z = j[0],
                     $ = j[1],
-                    _ = (0, G._)("instanceCreation_alsoInviteMe", !1),
-                    D = (0, w.Z)(_, 2),
-                    T = D[0],
-                    L = D[1],
+                    D = (0, G._)("instanceCreation_alsoInviteMe", !1),
+                    _ = (0, w.Z)(D, 2),
+                    T = _[0],
+                    L = _[1],
                     M = H.M7.some((function(e) {
                         var t;
                         return null === (t = v[null == n ? void 0 : n.groupId]) || void 0 === t ? void 0 : t.includes(e)
@@ -679,8 +679,8 @@
                 }, "Roles")), j(C)))
             };
             Ze.propTypes = {
-                groupId: D().string.isRequired,
-                onChangeCallback: D().func
+                groupId: _().string.isRequired,
+                onChangeCallback: _().func
             };
             var Se = (0, a.Z)("div", {
                 target: "e1okdy4l0"
@@ -768,18 +768,18 @@
                     name: "4yku77",
                     styles: "position:absolute;max-width:100%;min-width:100%;padding:0 0.5rem;overflow-y:auto;min-height:calc(100% - 50px);max-height:calc(100% - 50px);background-color:#1a282f"
                 }),
-                _e = {
+                De = {
                     name: "1gxpm0j",
                     styles: "transition:left 300ms ease-in-out;left:100%"
                 },
-                De = {
+                _e = {
                     name: "8ebo3g",
                     styles: "transition:left 500ms ease-in-out;left:0"
                 },
                 Te = (0, a.Z)("div", {
                     target: "ecn4xws5"
                 })("min-height:100%;min-width:100%;position:absolute;display:flex;", (function(e) {
-                    return e.stepComplete ? De : _e
+                    return e.stepComplete ? _e : De
                 }), ";"),
                 Le = (0, a.Z)(d.zx, {
                     target: "ecn4xws4"
@@ -1157,10 +1157,10 @@
                     j = (0, w.Z)(S, 2),
                     z = j[0],
                     $ = j[1],
-                    _ = s.useState("us"),
-                    D = (0, w.Z)(_, 2),
-                    T = D[0],
-                    L = D[1],
+                    D = s.useState("us"),
+                    _ = (0, w.Z)(D, 2),
+                    T = _[0],
+                    L = _[1],
                     M = s.useRef(null),
                     U = s.useRef(null),
                     P = s.useRef(null),
@@ -1561,8 +1561,8 @@
                     name: "1gydd9a",
                     styles: "position:absolute;left:0.5rem"
                 }),
-                _t = n(42501),
-                Dt = n(6811),
+                Dt = n(42501),
+                _t = n(6811),
                 Tt = n(35773),
                 Lt = n(95305),
                 Mt = n(84090),
@@ -1614,7 +1614,7 @@
                                     case 8:
                                         k(!1), r((0, Pt.d)({
                                             title: "User Data Reset",
-                                            icon: Dt.f8,
+                                            icon: _t.f8,
                                             message: "Your user data for ".concat(null !== (t = null == c ? void 0 : c.name) && void 0 !== t ? t : "this world", " has been reset. Rejoin this world for changes to take effect."),
                                             color: "success",
                                             timeout: 5e3
@@ -1643,7 +1643,7 @@
                     disabled: h || o,
                     warning: !0
                 }, s.createElement(d.$1, {
-                    icon: _t.faUserXmark
+                    icon: Dt.faUserXmark
                 }), " Reset User Data")), s.createElement(Mt.Z, {
                     headerText: "Reset User Data in ".concat(null !== (n = null == c ? void 0 : c.name) && void 0 !== n ? n : "this world"),
                     confirmText: "Yes, Reset",
@@ -1675,9 +1675,9 @@
                         m = e.isOwner,
                         u = e.user,
                         z = e.isMod,
-                        _ = (0, Z.I0)(),
-                        D = (0, s.useState)(!1),
-                        T = (0, w.Z)(D, 2),
+                        D = (0, Z.I0)(),
+                        _ = (0, s.useState)(!1),
+                        T = (0, w.Z)(_, 2),
                         R = T[0],
                         A = T[1],
                         F = (0, s.useRef)(null),
@@ -1944,7 +1944,7 @@
                         message: "Successfully updated Elasticsearch"
                     }), s.createElement(d.zx, {
                         onClick: function() {
-                            _(Wt({
+                            D(Wt({
                                 worldId: null == r ? void 0 : r.id
                             }))
                         }
@@ -1977,12 +1977,12 @@
                     }))
                 };
             Yt.propTypes = {
-                world: D().object.isRequired,
-                file: D().object,
-                reports: D().object,
-                bops: D().number,
-                isOwner: D().bool,
-                isMod: D().bool
+                world: _().object.isRequired,
+                file: _().object,
+                reports: _().object,
+                bops: _().number,
+                isOwner: _().bool,
+                isMod: _().bool
             };
             const qt = Yt;
             var Xt = (0, a.Z)("h3", {
@@ -2097,35 +2097,41 @@
                     N = y[0],
                     k = y[1],
                     C = (0, o.Tu)().user,
-                    I = (0, wn.pp)({
+                    I = (0, mn.sy)({
+                        userId: i.sellerId
+                    }, {
+                        skip: !(null != i && i.sellerId)
+                    }),
+                    Z = I.data,
+                    j = (I.isFetching, I.isError, I.error, (0, wn.pp)({
                         userId: C.id
                     }, {
                         skip: !C
-                    }),
-                    Z = I.data,
-                    j = (void 0 === Z ? {} : Z).balance,
-                    z = I.isFetching,
-                    _ = (0, dn.mr)({
+                    })),
+                    z = j.data,
+                    D = (void 0 === z ? {} : z).balance,
+                    _ = j.isFetching,
+                    T = (0, dn.mr)({
                         listingId: i.id,
                         hydrate: !0
                     }, {
                         skip: null === i
                     }).data,
-                    D = (0, mn.I8)(),
-                    T = (0, w.Z)(D, 2),
-                    L = T[0],
-                    M = T[1],
-                    U = M.isLoading,
-                    P = M.isError,
-                    W = M.error,
-                    Y = M.isSuccess,
-                    q = M.reset,
-                    O = (0, mn.YZ)(),
-                    G = (0, w.Z)(O, 2),
-                    V = G[0],
-                    J = G[1],
-                    H = J.isLoading;
-                J.isError, J.error, J.isSuccess;
+                    L = (0, mn.I8)(),
+                    M = (0, w.Z)(L, 2),
+                    U = M[0],
+                    P = M[1],
+                    W = P.isLoading,
+                    Y = P.isError,
+                    q = P.error,
+                    O = P.isSuccess,
+                    G = P.reset,
+                    V = (0, mn.YZ)(),
+                    J = (0, w.Z)(V, 2),
+                    H = J[0],
+                    B = J[1],
+                    Q = B.isLoading;
+                B.isError, B.error, B.isSuccess;
                 (0, s.useEffect)((function() {
                     f(!1);
                     var e = function() {
@@ -2140,7 +2146,7 @@
                                         }
                                         return e.abrupt("return", null);
                                     case 3:
-                                        return e.next = 5, V({
+                                        return e.next = 5, H({
                                             productIds: i.products
                                         }).unwrap();
                                     case 5:
@@ -2161,30 +2167,31 @@
                         }
                     }();
                     e()
-                }), [V, i, a]);
-                var B = function(e) {
+                }), [H, i, a]);
+                var K = function(e) {
                     return N.find((function(t) {
                         return t.productId === e
                     }))
                 };
-                if (z) return null;
-                var Q, K, ee = Number(j) < Number(i.priceTokens),
-                    te = i.isPurchased,
-                    ne = i.products.every((function(e) {
+                if (_) return null;
+                var ee, te, ne = Number(D) < Number(i.priceTokens),
+                    ae = i.isPurchased,
+                    le = i.products.every((function(e) {
                         return N.some((function(t) {
                             return t.productId === e
                         }))
                     })),
-                    ae = U || z || ee || H || te || ne,
-                    le = "instant" === (null == i ? void 0 : i.listingType),
-                    re = "duration" === (null == i ? void 0 : i.listingType),
-                    ie = null == i ? void 0 : i.stackable,
-                    se = function() {
+                    re = (null == Z ? void 0 : Z.accountSellerStatus) === un.dd.SUSPENDED,
+                    ie = W || _ || ne || Q || ae || le || re,
+                    se = "instant" === (null == i ? void 0 : i.listingType),
+                    ce = "duration" === (null == i ? void 0 : i.listingType),
+                    oe = null == i ? void 0 : i.stackable,
+                    me = function() {
                         var e = (0, R.Z)(X().mark((function e() {
                             return X().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, L({
+                                        return e.next = 2, U({
                                             listingId: i.id,
                                             quantity: 1,
                                             totalPrice: i.priceTokens,
@@ -2204,10 +2211,10 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ce = function() {
-                        f(!1), x(!1), q(), l()
+                    de = function() {
+                        f(!1), x(!1), G(), l()
                     };
-                if (Y) return s.createElement("div", {
+                if (O) return s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
@@ -2217,7 +2224,7 @@
                     className: "tw-p-4 tw-flex tw-flex-row tw-justify-end"
                 }, s.createElement(d.zx, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: ce
+                    onClick: de
                 }, s.createElement(d.$1, {
                     color: "white",
                     icon: cn.YI
@@ -2236,10 +2243,10 @@
                 }, "Enjoy your purchase in ", null == c ? void 0 : c.name, "!"), s.createElement(d.zx, {
                     className: "tw-w-[300px] tw-rounded-md tw-border-0 tw-bg-button-bg tw-mb-3 tw-text-highlight",
                     onClick: function() {
-                        return ce()
+                        return de()
                     }
                 }, "Done")))));
-                if (U || b) return s.createElement("div", {
+                if (W || b) return s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
@@ -2251,8 +2258,8 @@
                     className: "heading tw-m-0 tw-p-0"
                 }, "Confirm Purchase"), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: ce,
-                    disabled: U
+                    onClick: de,
+                    disabled: W
                 }, s.createElement(d.$1, {
                     color: "white",
                     icon: cn.YI
@@ -2260,24 +2267,24 @@
                     className: "tw-p-5 tw-font-bold tw-text-white tw-text-xl"
                 }, "Are you sure you want to buy ", i.displayName, " for ", s.createElement(d.b5, null), " ", i.priceTokens, "?")), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-2"
-                }, P && s.createElement("div", {
+                }, Y && s.createElement("div", {
                     className: "tw-col-span-2 tw-rounded-md tw-p-3"
                 }, s.createElement("p", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
                 }, "Failed to make purchase:"), s.createElement("code", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
-                }, null !== (Q = null === (K = W.data) || void 0 === K || null === (K = K.error) || void 0 === K ? void 0 : K.message) && void 0 !== Q ? Q : "Unknown Error")), s.createElement(d.zx, {
+                }, null !== (ee = null === (te = q.data) || void 0 === te || null === (te = te.error) || void 0 === te ? void 0 : te.message) && void 0 !== ee ? ee : "Unknown Error")), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-border-0 tw-bg-button-bg-grey tw-mb-3",
                     neutral: !0,
-                    onClick: ce
+                    onClick: de
                 }, "Cancel"), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-border-0 tw-mb-3 ",
                     onClick: function() {
-                        return se()
+                        return me()
                     },
                     accent: !0,
-                    disabled: (!ie || !re) && ae,
-                    loading: U
+                    disabled: !(oe && ce && !re) && ie,
+                    loading: W
                 }, "Confirm Purchase")))));
                 return s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
@@ -2291,11 +2298,11 @@
                     className: "heading tw-m-0 tw-p-0"
                 }, "Bundle Details"), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: ce
+                    onClick: de
                 }, s.createElement(d.$1, {
                     color: "white",
                     icon: cn.YI
-                }))), le && s.createElement("div", {
+                }))), se && s.createElement("div", {
                     className: "tw-px-3 tw-pt-5 tw-pb-0"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
@@ -2331,7 +2338,7 @@
                     className: "tw-text-white tw-text-xl"
                 }, i.displayName), s.createElement("p", null, s.createElement(d.b5, null), " ", i.priceTokens), s.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
-                }, i.description))), re && (null == i ? void 0 : i.isPurchased) && (null == i || null === (t = i.isPurchasedData) || void 0 === t ? void 0 : t.expiry) && s.createElement("div", {
+                }, i.description))), ce && (null == i ? void 0 : i.isPurchased) && (null == i || null === (t = i.isPurchasedData) || void 0 === t ? void 0 : t.expiry) && s.createElement("div", {
                     className: "tw-px-3"
                 }, s.createElement("div", {
                     className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
@@ -2359,23 +2366,23 @@
                     icon: p ? F.pt : A.mT
                 }))), p && s.createElement("div", {
                     className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
-                }, null == _ || null === (n = _.hydratedProducts) || void 0 === n ? void 0 : n.map((function(e) {
+                }, null == T || null === (n = T.hydratedProducts) || void 0 === n ? void 0 : n.map((function(e) {
                     return s.createElement(hn.Z, {
                         className: "tw-my-2",
                         key: e.id,
                         productData: e,
                         listingData: i,
-                        hasAlreadyPurchased: !!B(e.id),
-                        alreadyPurchasedData: B(e.id)
+                        hasAlreadyPurchased: !!K(e.id),
+                        alreadyPurchasedData: K(e.id)
                     })
-                }))), le ? s.createElement("div", {
+                }))), se ? s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-py-8 sm:flex sm:flex-row-reverse sm:px-6"
                 }, s.createElement(d.zx, {
                     className: "tw-rounded-md tw-w-9 tw-h-9 tw-border-0",
-                    onClick: ce
+                    onClick: de
                 }, "Done")) : s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
-                }, ee && s.createElement("div", {
+                }, ne && s.createElement("div", {
                     className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-message-error-bg tw-rounded-lg tw-border-error-message-red tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-row"
@@ -2394,16 +2401,16 @@
                     onClick: function() {
                         return x(!0)
                     },
-                    disabled: (!re || !ie) && ae
-                }, !te && !ne || re ? s.createElement(s.Fragment, null, "Purchase for ", s.createElement(d.b5, null), " ", i.priceTokens) : "Owned"), s.createElement(d.zx, {
+                    disabled: !(ce && oe && !re) && ie
+                }, !ae && !le || ce ? s.createElement(s.Fragment, null, "Purchase for ", s.createElement(d.b5, null), " ", i.priceTokens) : "Owned"), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                    onClick: ce
+                    onClick: de
                 }, "Cancel")))))
             };
             vn.propTypes = {
-                show: D().bool.isRequired,
-                onHide: D().func.isRequired,
-                onConfirm: D().func.isRequired
+                show: _().bool.isRequired,
+                onHide: _().func.isRequired,
+                onConfirm: _().func.isRequired
             };
             const bn = vn;
             var xn = function(e) {
@@ -2489,8 +2496,8 @@
                 }, "View Details")))
             };
             xn.propTypes = {
-                listingData: D().object.isRequired,
-                isDetailedView: D().bool
+                listingData: _().object.isRequired,
+                isDetailedView: _().bool
             };
             const En = xn;
             var yn = n(76176);
@@ -2533,16 +2540,16 @@
                     j = Z[0],
                     z = Z[1],
                     $ = (0, s.useState)(""),
-                    _ = (0, w.Z)($, 2),
-                    D = _[0],
-                    T = _[1],
+                    D = (0, w.Z)($, 2),
+                    _ = D[0],
+                    T = D[1],
                     L = (0, mn.mb)({
                         storeId: null == n ? void 0 : n.storeId,
                         checkListingsPurchasesStatus: !0
                     }, {
                         skip: !(null != n && n.storeId)
                     }).data,
-                    M = (0, yn.Z)(D);
+                    M = (0, yn.Z)(_);
                 Nn({
                     searchParams: g,
                     listingType: x,
@@ -2590,7 +2597,7 @@
                     type: "text",
                     rawInputClassName: "tw-h-9",
                     className: "tw-mr-2 tw-w-full",
-                    value: D,
+                    value: _,
                     onChange: function(e) {
                         return T(e.target.value)
                     },
@@ -2741,7 +2748,7 @@
                     frameBorder: "0",
                     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
                     allowFullScreen: !0
-                })) : s.createElement(_n, {
+                })) : s.createElement(Dn, {
                     role: "img",
                     title: "".concat(null == w ? void 0 : w.name, " Preview"),
                     image: w.imageUrl
@@ -2812,12 +2819,12 @@
                     name: "1dgkeo9",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden"
                 }),
-                _n = (0, a.Z)("div", {
+                Dn = (0, a.Z)("div", {
                     target: "e1mfpqtc1"
                 })("padding-bottom:50%;width:100%;height:0;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:4px;background-image:url(", (function(e) {
                     return e.image
                 }), ");"),
-                Dn = (0, a.Z)("div", {
+                _n = (0, a.Z)("div", {
                     target: "e1mfpqtc0"
                 })({
                     name: "12ndgvw",
@@ -3222,4 +3229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2fbe986446f5f47a963b024ad877b2b0cd02c248fbde12c346ce3cb2d4fbdb39.js.map
+//# sourceMappingURL=cd0cdb657fda4517a7adcf8b6c9af869c6bd26792473d8c933a5faf4d1f88870.js.map

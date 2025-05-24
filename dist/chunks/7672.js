@@ -1923,76 +1923,79 @@
                 Tt = n(3163),
                 Rt = n(50249);
             const Pt = function(e) {
-                var t, n = e.group,
-                    r = e.roleLocalOffset,
-                    l = e.isGroupOwner,
-                    a = (0, ce.pc)(),
-                    o = (0, C.TH)(),
-                    i = (0, C.UO)(),
-                    c = I.useMemo((function() {
-                        return "new" !== i.roleId && i.roleId
-                    }), [i]),
-                    s = (0, K.q7)().data,
-                    u = void 0 === s ? [] : s,
-                    m = u.includes("permission-creator-preview"),
-                    d = u.includes("permission-can-sell-products"),
-                    p = (0, L.Z)(null == n ? void 0 : n.roles).sort((function(e, t) {
+                var t, n, r = e.group,
+                    l = e.roleLocalOffset,
+                    a = e.isGroupOwner,
+                    o = (0, ce.pc)(),
+                    i = (0, C.TH)(),
+                    c = (0, C.UO)(),
+                    s = (0, ce.Tu)({
+                        withEconomyAccount: !0
+                    }).user,
+                    u = I.useMemo((function() {
+                        return "new" !== c.roleId && c.roleId
+                    }), [c]),
+                    m = (0, K.q7)().data,
+                    d = void 0 === m ? [] : m,
+                    p = (null == s || null === (t = s.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === Ot.dd.INVITED,
+                    g = d.includes("permission-can-sell-products"),
+                    f = (0, L.Z)(null != r && r.roles ? r.roles : []).sort((function(e, t) {
                         var n = e.order,
-                            l = t.order;
-                        return e.id === c ? (n += r) === t.order && (r > 0 ? n += 1 : n -= 1) : t.id === c && (l += r) === e.order && (r > 0 ? l += 1 : l -= 1), n < l ? -1 : 1
+                            r = t.order;
+                        return e.id === u ? (n += l) === t.order && (l > 0 ? n += 1 : n -= 1) : t.id === u && (r += l) === e.order && (l > 0 ? r += 1 : r -= 1), n < r ? -1 : 1
                     })) || [],
-                    g = p.length >= vt.Mw,
-                    f = null == n || null === (t = n.myMember) || void 0 === t ? void 0 : t.permissions,
-                    E = p.map((function(e, t) {
-                        var r, l = [],
-                            o = null;
+                    E = f.length >= vt.Mw,
+                    v = null == r || null === (n = r.myMember) || void 0 === n ? void 0 : n.permissions,
+                    h = f.map((function(e, t) {
+                        var n, l = [],
+                            a = null;
                         0 === e.order ? (l.push(I.createElement(Lt, {
                             key: "management-header"
-                        }, "Management Roles")), o = I.createElement(I.Fragment, null, I.createElement(te.$1, {
+                        }, "Management Roles")), a = I.createElement(I.Fragment, null, I.createElement(te.$1, {
                             icon: Ne.nm,
                             title: "Management Role"
-                        }), " ")) : e.permissions.includes("group-instance-moderate") ? o = I.createElement(I.Fragment, null, I.createElement(te.$1, {
+                        }), " ")) : e.permissions.includes("group-instance-moderate") ? a = I.createElement(I.Fragment, null, I.createElement(te.$1, {
                             icon: Tt.U7,
                             title: "Instance Moderator Role"
-                        }), " ") : e.requiresPurchase ? o = I.createElement(I.Fragment, null, I.createElement(te.$1, {
+                        }), " ") : e.requiresPurchase ? a = I.createElement(I.Fragment, null, I.createElement(te.$1, {
                             icon: Rt.Z,
                             title: "Paid Role"
                         }), " ") : e.defaultRole && (l.push(I.createElement(Lt, {
                             key: "default-header"
-                        }, "Default Role")), o = I.createElement(I.Fragment, null, I.createElement(te.$1, {
+                        }, "Default Role")), a = I.createElement(I.Fragment, null, I.createElement(te.$1, {
                             icon: Mt.Z3,
                             title: "Default Role"
-                        }), " ")), e.isManagementRole || e.defaultRole || null === (r = p[t - 1]) || void 0 === r || !r.isManagementRole || l.push(I.createElement(Lt, {
+                        }), " ")), e.isManagementRole || e.defaultRole || null === (n = f[t - 1]) || void 0 === n || !n.isManagementRole || l.push(I.createElement(Lt, {
                             key: "member-header"
                         }, "Member Roles"));
-                        var i = (0 === (null == n ? void 0 : n.memberRank) || "new" === e.id || e.order > (null == n ? void 0 : n.memberRank)) && (f.includes("*") || 0 === e.permissions.filter((function(e) {
-                            return !f.includes(e)
+                        var i = (0 === (null == r ? void 0 : r.memberRank) || "new" === e.id || e.order > (null == r ? void 0 : r.memberRank)) && (v.includes("*") || 0 === e.permissions.filter((function(e) {
+                            return !v.includes(e)
                         })).length);
-                        return l.push(a || i ? I.createElement(zt, null, I.createElement(Gt, {
+                        return l.push(o || i ? I.createElement(zt, null, I.createElement(Gt, {
                             key: e.id,
-                            to: "/home/group/".concat(n.id, "/settings/roles/").concat(e.id),
-                            className: e.id === c ? "selected" : ""
-                        }, o, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : I.createElement(qt, {
+                            to: "/home/group/".concat(r.id, "/settings/roles/").concat(e.id),
+                            className: e.id === u ? "selected" : ""
+                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : I.createElement(qt, {
                             key: e.id
-                        }, o, e.name + ("new" === e.id ? " (unsaved new role)" : ""))), l
+                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))), l
                     }));
-                return I.createElement(I.Fragment, null, g && I.createElement(A.Z, {
+                return I.createElement(I.Fragment, null, E && I.createElement(A.Z, {
                     role: "alert",
                     color: "warning"
-                }, "This group has reached maximum number of roles"), I.createElement(Ut, null, E, I.createElement("li", null, I.createElement(Ft, {
-                    to: "/home/group/".concat(n.id, "/settings/roles/new"),
+                }, "This group has reached maximum number of roles"), I.createElement(Ut, null, h, I.createElement("li", null, I.createElement(Ft, {
+                    to: "/home/group/".concat(r.id, "/settings/roles/new"),
                     end: !0,
-                    disabled: g
-                }, "Create Role")), l && m && I.createElement("li", null, d ? I.createElement(Ft, {
-                    to: "/home/group/".concat(n.id, "/settings/roles/new/paid"),
+                    disabled: E
+                }, "Create Role")), a && p && I.createElement("li", null, g ? I.createElement(Ft, {
+                    to: "/home/group/".concat(r.id, "/settings/roles/new/paid"),
                     end: !0,
-                    disabled: g
+                    disabled: E
                 }, "Create Paid Role") : I.createElement(te.qX, {
                     slim: !0
                 }, "Want to create a paid role? Find out more and sign up", " ", I.createElement(S.rU, {
                     to: "/home/marketplace/wallet",
                     state: {
-                        redirectTo: o.pathname
+                        redirectTo: i.pathname
                     }
                 }, "in your Wallet"), "."))))
             };
@@ -6644,4 +6647,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e73e2b64c89c4b89a75d4a8f7c7bb0a690332a6d60ae8bd1b215f311ac009cb4.js.map
+//# sourceMappingURL=a69fe18ede4deae7a3b7f4a7e0c28d506a617c3f01c43839d83421d70af3f89e.js.map

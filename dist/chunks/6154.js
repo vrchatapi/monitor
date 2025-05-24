@@ -32,8 +32,8 @@
                 o = a(82414),
                 s = a(78076),
                 m = a(76553),
-                d = a(6811),
-                u = a(64258),
+                u = a(6811),
+                d = a(64258),
                 w = a(37463),
                 p = a(98185),
                 g = a(60006),
@@ -97,9 +97,9 @@
                     className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight"
                 }, "Contact Support"))))))
             };
-            var L = a(42619),
-                X = a(56646);
-            const Z = function(e) {
+            var X = a(42619),
+                L = a(56646);
+            const S = function(e) {
                 var t = e.product,
                     a = e.onClick,
                     n = void 0 === a ? function() {} : a,
@@ -146,7 +146,7 @@
                     ref: s,
                     "aria-label": "Product Status tooltip"
                 }, x.createElement(w.$1, {
-                    icon: X.faCircleInfo,
+                    icon: L.faCircleInfo,
                     className: "tw-text-placeholder-text"
                 })), x.createElement(I.Z, {
                     isOpen: c,
@@ -165,13 +165,13 @@
                     neutral: !0,
                     className: "tw-w-9 tw-h-9"
                 }, x.createElement(w.$1, {
-                    icon: L.$
+                    icon: X.$
                 })))
             };
             var A = ["file"],
-                P = ["imageId"];
+                Z = ["imageId"];
 
-            function S(e, t) {
+            function P(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -185,9 +185,9 @@
             function O(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? S(Object(a), !0).forEach((function(t) {
+                    t % 2 ? P(Object(a), !0).forEach((function(t) {
                         (0, r.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : S(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : P(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
@@ -198,38 +198,40 @@
                     N = void 0 === a ? function() {} : a,
                     y = e.products,
                     T = void 0 === y ? [] : y,
-                    L = e.productsLoading,
-                    X = void 0 !== L && L,
-                    S = e.listingType,
+                    X = e.productsLoading,
+                    L = void 0 !== X && X,
+                    P = e.listingType,
                     J = e.editedListing,
                     F = void 0 === J ? {} : J,
                     j = e.originalListing,
                     R = void 0 === j ? {} : j,
                     z = e.isEditing,
                     V = void 0 !== z && z,
-                    M = (0, k.I0)(),
+                    q = (0, k.I0)(),
                     _ = (0, k.v9)((function(e) {
                         return e.listingFlow
                     })),
-                    U = _.selectedListingType,
-                    $ = _.selectedProducts,
-                    B = _.productIds,
-                    q = (0, x.useState)(O({
+                    M = _.selectedListingType,
+                    U = _.selectedProducts,
+                    $ = _.productIds,
+                    B = (0, x.useState)(O(O({
                         displayName: (null == F ? void 0 : F.displayName) || "",
                         description: (null == F ? void 0 : F.description) || "",
                         priceTokens: (null == F ? void 0 : F.priceTokens) || 100,
-                        products: B || (null == F ? void 0 : F.productIds) || []
-                    }, S === b.ft.DURATION && {
+                        products: $ || (null == F ? void 0 : F.productIds) || []
+                    }, P === b.ft.DURATION && {
                         duration: (null == F ? void 0 : F.duration) || 1,
                         durationType: (null == F ? void 0 : F.durationType) || b.PG.DAY
+                    }), P === b.ft.INSTANT && {
+                        quantifiable: (null == F ? void 0 : F.quantifiable) || !1
                     })),
-                    Y = (0, i.Z)(q, 2),
+                    Y = (0, i.Z)(B, 2),
                     G = Y[0],
                     H = Y[1],
-                    W = (0, x.useState)({}),
-                    K = (0, i.Z)(W, 2),
-                    Q = K[0],
-                    ee = K[1],
+                    K = (0, x.useState)({}),
+                    Q = (0, i.Z)(K, 2),
+                    W = Q[0],
+                    ee = Q[1],
                     te = (0, x.useState)(!1),
                     ae = (0, i.Z)(te, 2),
                     ne = ae[0],
@@ -240,8 +242,8 @@
                     oe = ie[1],
                     se = x.useState(""),
                     me = (0, i.Z)(se, 2),
-                    de = me[0],
-                    ue = me[1],
+                    ue = me[0],
+                    de = me[1],
                     we = x.useState(!1),
                     pe = (0, i.Z)(we, 2),
                     ge = pe[0],
@@ -252,28 +254,28 @@
                     Ee = ve[0],
                     Ne = ve[1],
                     ye = (0, x.useRef)(null),
-                    xe = (0, h.Nr)(de),
+                    xe = (0, h.Nr)(ue),
                     ke = x.useState(!1),
                     Ce = (0, i.Z)(ke, 2),
                     Ie = Ce[0],
                     Te = Ce[1],
                     De = (0, x.useMemo)((function() {
-                        return 1 === $.length && $[0].productType === b.Pm.AVATAR
-                    }), [$]),
-                    Le = (0, v.Ms)({
+                        return 1 === U.length && U[0].productType === b.Pm.AVATAR
+                    }), [U]),
+                    Xe = (0, v.Ms)({
                         listingId: F.id
                     }, {
                         skip: !F.id
                     }),
-                    Xe = Le.data;
-                Le.isFetching;
+                    Le = Xe.data;
+                Xe.isFetching;
                 (0, x.useEffect)((function() {
                     N(G)
                 }), [G]);
                 (0, x.useEffect)((function() {
-                    return document.addEventListener("mousedown", Se),
+                    return document.addEventListener("mousedown", Pe),
                         function() {
-                            document.removeEventListener("mousedown", Se)
+                            document.removeEventListener("mousedown", Pe)
                         }
                 }), []), (0, x.useEffect)((function() {
                     var e = function(e) {
@@ -284,7 +286,7 @@
                             document.removeEventListener("mousedown", e)
                         }
                 }), [Ee]);
-                var Ze = function(e) {
+                var Se = function(e) {
                         var t = e.fileId,
                             a = void 0 === t ? null : t,
                             n = e.fileBlob,
@@ -302,7 +304,7 @@
                             })
                         }))) : (oe(r), void H((function(e) {
                             e.imageId;
-                            return O(O({}, (0, l.Z)(e, P)), {}, {
+                            return O(O({}, (0, l.Z)(e, Z)), {}, {
                                 file: r
                             })
                         })))
@@ -314,10 +316,10 @@
                         H((function(e) {
                             var t = O(O({}, e), {}, (0, r.Z)({}, a, n));
                             return N(t), t
-                        })), ee(O(O({}, Q), {}, (0, r.Z)({}, a, e.target.checkValidity())))
+                        })), ee(O(O({}, W), {}, (0, r.Z)({}, a, e.target.checkValidity())))
                     },
-                    Pe = function() {
-                        Ze({
+                    Ze = function() {
+                        Se({
                             fileId: null,
                             fileBlob: null
                         }), H((function(e) {
@@ -328,36 +330,36 @@
                             })
                         }))
                     },
-                    Se = function(e) {
+                    Pe = function(e) {
                         be.current && !be.current.contains(e.target) && fe(!1)
                     },
                     Oe = x.useMemo((function() {
                         if (!T) return [];
-                        var e = $.map((function(e) {
+                        var e = U.map((function(e) {
                             return e.id
                         }));
                         return T.filter((function(t) {
-                            return !(null != e && e.includes(t.id)) && t.productType !== b.Pm.ROLE && ("permanent" === U || t.productType !== b.Pm.AVATAR) && (!xe || (t.id.toLowerCase().includes(xe.trim().toLowerCase()) || t.displayName.toLowerCase().includes(xe.trim().toLowerCase())))
+                            return !(null != e && e.includes(t.id)) && t.productType !== b.Pm.ROLE && ("permanent" === M || t.productType !== b.Pm.AVATAR) && (!xe || (t.id.toLowerCase().includes(xe.trim().toLowerCase()) || t.displayName.toLowerCase().includes(xe.trim().toLowerCase())))
                         })) || []
-                    }), [$, T, xe]);
+                    }), [U, T, xe]);
                 return (0, x.useEffect)((function() {
                     if (De) {
-                        var e = $[0];
+                        var e = U[0];
                         H((function(t) {
                             return O(O({}, t), {}, {
                                 displayName: e.displayName,
                                 description: e.description,
                                 imageId: e.imageId
                             })
-                        })), Ze({
+                        })), Se({
                             fileId: e.imageId
                         })
                     }
-                }), [De]), x.createElement(x.Fragment, null, X && x.createElement("div", {
+                }), [De]), x.createElement(x.Fragment, null, L && x.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, x.createElement(p.Z, {
                     loading: !0
-                })), !X && x.createElement(w.JX, null, x.createElement(D, {
+                })), !L && x.createElement(w.JX, null, x.createElement(D, {
                     isOpen: Ie,
                     onCloseCallback: function() {
                         return Te(!1)
@@ -375,17 +377,17 @@
                     placeholder: "Search products",
                     type: "search",
                     rawInputClassName: "tw-pl-8",
-                    value: de,
+                    value: ue,
                     onChange: function(e) {
-                        return ue(e.target.value)
+                        return de(e.target.value)
                     },
                     onFocus: function() {
                         fe(!0)
                     },
-                    disabled: $.length >= b._1
+                    disabled: U.length >= b._1
                 }), x.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-5"
-                }, "You must choose 1 to ", b._1, " products."), ge && $.length < b._1 && x.createElement("div", {
+                }, "You must choose 1 to ", b._1, " products."), ge && U.length < b._1 && x.createElement("div", {
                     role: "list",
                     "aria-label": "Available Products List",
                     className: "tw-bottom-[120px] tw-border-2 tw-border-solid tw-rounded-lg tw-border-button-bg tw-bg-[#07242B] tw-p-5 tw-gap-3 tw-max-h-[400px] tw-h-[400px] tw-overflow-y-auto tw-absolute tw-z-10 tw-w-full tw-top-[105px] sm:tw-top-[80px] tw-min-h-[200px]"
@@ -419,20 +421,20 @@
                         containerClasses: "tw-w-full sm:tw-w-[160px] tw-self-center",
                         onClick: function(t) {
                             var a;
-                            a = e, De && Pe(), M((0, E.H_)(a)), H((function(e) {
+                            a = e, De && Ze(), q((0, E.H_)(a)), H((function(e) {
                                 return O(O({}, e), {}, {
                                     products: [].concat((0, n.Z)(e.products), [a.id])
                                 })
-                            })), fe(!1), ue("")
+                            })), fe(!1), de("")
                         },
                         disabled: null == e ? void 0 : e.assetDisabled
                     }, "Add")), x.createElement("hr", {
                         className: "tw-bg-[#07242B] tw-font-medium tw-border tw-border-solid"
                     }))
                 })) : x.createElement("div", null, x.createElement("em", null, "No matching products!")))), x.createElement(w.JX, {
-                    className: "tw-gap-2 tw-max-h-[196px] tw-overflow-y-auto ".concat(0 !== $.length && "tw-mb-5")
-                }, 0 !== $.length && $.map((function(e) {
-                    return x.createElement(Z, {
+                    className: "tw-gap-2 tw-max-h-[196px] tw-overflow-y-auto ".concat(0 !== U.length && "tw-mb-5")
+                }, 0 !== U.length && U.map((function(e) {
+                    return x.createElement(S, {
                         product: e,
                         key: e.id,
                         onClick: function() {
@@ -441,9 +443,9 @@
                                     var t, a = null == R || null === (t = R.products) || void 0 === t ? void 0 : t.some((function(t) {
                                         return t.avatarId === e.avatarId
                                     }));
-                                    if ((null == e ? void 0 : e.productType) === b.Pm.AVATAR && a && Xe) return void Te(!0)
+                                    if ((null == e ? void 0 : e.productType) === b.Pm.AVATAR && a && Le) return void Te(!0)
                                 }
-                                De && Pe(), M((0, E.Ds)(e)), H((function(t) {
+                                De && Ze(), q((0, E.Ds)(e)), H((function(t) {
                                     return O(O({}, t), {}, {
                                         products: t.products.filter((function(t) {
                                             return t !== e.id
@@ -463,7 +465,7 @@
                     icon: o.sq,
                     className: "tw-mb-5 tw-p-5 tw-border-2 tw-rounded-lg"
                 }, "The listing thumbnail, name and description will be inherited from your avatar details. To make changes, head over to the", " ", x.createElement(C.rU, {
-                    to: "/home/avatar/".concat(null === (t = $[0]) || void 0 === t ? void 0 : t.avatarId),
+                    to: "/home/avatar/".concat(null === (t = U[0]) || void 0 === t ? void 0 : t.avatarId),
                     className: "hover:tw-text-teal-accent"
                 }, "avatar page"), "."), x.createElement("p", {
                     className: "tw-text-lg tw-font-bold"
@@ -566,16 +568,16 @@
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function() {
                         navigator.clipboard.writeText(F.id).then((function() {
-                            M((0, u.d)({
+                            q((0, d.d)({
                                 title: "Copied listing ID",
-                                icon: d.f8,
+                                icon: u.f8,
                                 message: "Listing ID Copied!",
                                 color: "success",
                                 timeout: 3e3
                             }))
                         })).catch((function(e) {
                             var t, a;
-                            M((0, u.d)({
+                            q((0, d.d)({
                                 title: "Failed to copy listing ID",
                                 icon: m.eH,
                                 message: null !== (t = null === (a = res.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== t ? t : "Failed to copy listing ID",
@@ -586,7 +588,7 @@
                     }
                 }, x.createElement(w.$1, {
                     icon: c.kZ
-                })))), S && S === b.ft.DURATION && x.createElement(w.JX, {
+                })))), P && P === b.ft.DURATION && x.createElement(w.JX, {
                     className: "tw-max-w-[270px] tw-gap-2"
                 }, x.createElement("label", {
                     htmlFor: "duration"
@@ -628,20 +630,43 @@
                     type: "number",
                     inputmode: "numeric",
                     pattern: "\\d*",
-                    max: S === b.ft.PERMANENT ? b.YC : b._C,
+                    max: P === b.ft.PERMANENT ? b.YC : b._C,
                     min: b.zD,
                     step: "1",
                     label: "Price in VRChat Credits",
                     value: G.priceTokens,
                     onChange: Ae
-                }))))), x.createElement(w.m6, {
+                })), P && P === b.ft.INSTANT && x.createElement(w.X2, {
+                    className: "tw-bg-[#252A30] tw-p-5 tw-rounded-lg tw-mb-5"
+                }, x.createElement(w.JX, {
+                    className: "tw-flex-1"
+                }, x.createElement("p", {
+                    className: "tw-mb-1"
+                }, "Enable Quantity Purchases"), x.createElement("small", {
+                    className: "tw-text-light-grey"
+                }, "If enabled, buyers can purchase up to 99 units of this item at once.")), x.createElement(w.X2, {
+                    className: "tw-justify-center tw-items-center tw-gap-3"
+                }, x.createElement("label", {
+                    htmlFor: "useForSubscriberList"
+                }, G.quantifiable ? "On" : "Off"), x.createElement(w.K_, {
+                    value: "useForSubscriberList",
+                    defaultChecked: G.quantifiable,
+                    onChangeCallback: function(e) {
+                        var t = e.checked;
+                        H((function(e) {
+                            return O(O({}, e), {}, {
+                                quantifiable: t
+                            })
+                        }))
+                    }
+                })))))), x.createElement(w.m6, {
                     preset: "listing",
                     image: ce,
                     isOpen: ne,
                     onClose: function() {
                         return le(!1)
                     },
-                    confirmCallback: Ze,
+                    confirmCallback: Se,
                     cancelCallBack: function() {
                         return le(!1)
                     }
@@ -665,7 +690,7 @@
         },
         99878: (e, t, a) => {
             a.d(t, {
-                Z: () => u
+                Z: () => d
             });
             var n = a(42138),
                 l = a(54546),
@@ -675,13 +700,13 @@
                 o = a.n(c),
                 s = a(67294),
                 m = a(32981),
-                d = function(e) {
+                u = function(e) {
                     var t, a = e.onDataChange,
                         c = void 0 === a ? function() {} : a,
                         o = e.stores,
-                        d = void 0 === o ? [] : o,
-                        u = e.activeStore,
-                        w = void 0 === u ? null : u,
+                        u = void 0 === o ? [] : o,
+                        d = e.activeStore,
+                        w = void 0 === d ? null : d,
                         p = e.activeListing,
                         g = void 0 === p ? null : p,
                         f = e.isEditing,
@@ -697,7 +722,7 @@
                         I = (0, m.v9)((function(e) {
                             return e.listingFlow
                         })).selectedProducts,
-                        T = d.filter((function(e) {
+                        T = u.filter((function(e) {
                             return "world" === e.storeType
                         })),
                         D = (0, s.useMemo)((function() {
@@ -713,7 +738,7 @@
                     }), [E, k]), (0, s.useEffect)((function() {
                         null != g && g.storeIds && N(g.storeIds), w && !E.includes(w.id) && N([].concat((0, n.Z)(E), [w.id]))
                     }), []);
-                    var L = function(e) {
+                    var X = function(e) {
                         E.includes(e.id) ? N(E.filter((function(t) {
                             return t !== e.id
                         }))) : N([].concat((0, n.Z)(E), [e.id]))
@@ -749,13 +774,13 @@
                         return s.createElement(r.X2, {
                             key: e.id,
                             onClick: function() {
-                                return L(e)
+                                return X(e)
                             },
                             className: "tw-cursor-pointer tw-px-5 tw-py-3 tw-bg-grey tw-rounded-lg tw-items-center tw-gap-2"
                         }, s.createElement(r.XZ, {
                             checked: E.includes(e.id),
                             onChange: function() {
-                                return L(e)
+                                return X(e)
                             },
                             className: "tw-w-5 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-accent-teal-accent tw-border-[#677079] tw-rounded tw-ring-offset-gray-800"
                         }), s.createElement(r.pw, {
@@ -806,13 +831,13 @@
                         className: "tw-text-light-grey"
                     }, "The listing will be immediately visible and available for purchase in active stores.")))))
                 };
-            d.propTypes = {
+            u.propTypes = {
                 onDataChange: o().func,
                 stores: o().array,
                 store: o().object
             };
-            const u = d
+            const d = u
         }
     }
 ]);
-//# sourceMappingURL=694f1d21162c87251e57ed3f64367d4092d962c0b0e1b791d769d7240290f178.js.map
+//# sourceMappingURL=a9608872e83212fba4661751d0fac6f568857f59a0bca846e0c1d0d696da6221.js.map

@@ -30,25 +30,25 @@
             var a = n(71842),
                 l = n(45189),
                 r = n(82414),
-                i = n(67294),
-                o = n(89250),
-                c = n(37463),
+                o = n(67294),
+                c = n(89250),
+                i = n(37463),
                 s = n(72998),
                 m = n(46320),
                 d = n(6655),
                 f = n(64358),
                 p = n(50249),
                 u = n(22202),
-                w = i.lazy((function() {
+                w = o.lazy((function() {
                     return Promise.all([n.e(3261), n.e(8666), n.e(8304)]).then(n.bind(n, 15558))
                 })),
-                E = i.lazy((function() {
+                E = o.lazy((function() {
                     return Promise.all([n.e(3261), n.e(2520), n.e(4896), n.e(2042), n.e(7161)]).then(n.bind(n, 46123))
                 })),
-                h = i.lazy((function() {
+                h = o.lazy((function() {
                     return Promise.all([n.e(3261), n.e(2520), n.e(2042), n.e(1515)]).then(n.bind(n, 95146))
                 })),
-                b = i.lazy((function() {
+                b = o.lazy((function() {
                     return n.e(4061).then(n.bind(n, 14061))
                 })),
                 k = {
@@ -59,53 +59,51 @@
                 };
             const y = function() {
                 var e = (0, u.q7)(),
-                    t = e.data,
-                    n = void 0 === t ? [] : t,
-                    y = e.isLoading,
-                    g = (0, d.En)(),
-                    W = g.data,
-                    v = void 0 === W ? k : W,
-                    x = v.economyOnline,
-                    S = v.plannedOfflineWindowStart,
-                    M = v.plannedOfflineWindowEnd,
-                    z = v.offlineReason,
-                    C = g.isFetching,
-                    F = g.isError,
-                    O = g.error,
-                    D = x && !F && (0, f.dj)(S),
-                    L = !x && !F,
-                    N = i.useMemo((function() {
+                    t = (e.data, e.isLoading),
+                    n = (0, d.En)(),
+                    y = n.data,
+                    g = void 0 === y ? k : y,
+                    W = g.economyOnline,
+                    x = g.plannedOfflineWindowStart,
+                    S = g.plannedOfflineWindowEnd,
+                    M = g.offlineReason,
+                    v = n.isFetching,
+                    z = n.isError,
+                    C = n.error,
+                    F = W && !z && (0, f.dj)(x),
+                    O = !W && !z,
+                    D = o.useMemo((function() {
                         return {
-                            isPlannedMaintenanceSoon: D,
-                            isEconomyOffline: L,
-                            plannedOfflineWindowStart: S,
-                            plannedOfflineWindowEnd: M,
-                            offlineReason: z,
-                            isTiliaStatusLoading: C,
-                            isTiliaStatusError: F,
-                            tiliaStatusError: O
+                            isPlannedMaintenanceSoon: F,
+                            isEconomyOffline: O,
+                            plannedOfflineWindowStart: x,
+                            plannedOfflineWindowEnd: S,
+                            offlineReason: M,
+                            isTiliaStatusLoading: v,
+                            isTiliaStatusError: z,
+                            tiliaStatusError: C
                         }
-                    }), [D, L, S, M, z, C, F, O]),
-                    P = (null == n || n.includes("permission-creator-preview"), y);
-                return i.createElement(c.JX, {
+                    }), [F, O, x, S, M, v, z, C]),
+                    L = t;
+                return o.createElement(i.JX, {
                     className: "pb-5"
-                }, i.createElement(c.qX, {
+                }, o.createElement(i.qX, {
                     iconColor: "#1FD1ED",
                     icon: r.sq,
                     type: "custom",
                     color: "#28434B",
                     barColor: "#1FD1ED",
                     className: "xs:tw-hidden tw-flex-row"
-                }, "For the best experience, please view this page on a desktop or tablet."), i.createElement(c.$4, null, "Marketplace"), P && i.createElement(i.Fragment, null, i.createElement(c.l_, null), i.createElement(c.UU, {
+                }, "For the best experience, please view this page on a desktop or tablet."), o.createElement(i.$4, null, "Marketplace"), L && o.createElement(o.Fragment, null, o.createElement(i.l_, null), o.createElement(i.UU, {
                     height: "480px",
                     radius: "8"
-                })), !P && i.createElement("div", {
+                })), !L && o.createElement("div", {
                     className: "tw-@container/marketplaceContainer"
-                }, i.createElement("div", {
+                }, o.createElement("div", {
                     className: "tw-grid tw-gap-x-0 tw-gap-y-3 tw-grid-cols-1 @[990px]/marketplaceContainer:tw-grid-cols-3 tw-mb-4 tw-items-center"
-                }, i.createElement("h2", null, "Marketplace"), i.createElement("div", {
+                }, o.createElement("h2", null, "Marketplace"), o.createElement("div", {
                     className: "tw-flex-nowrap"
-                }, i.createElement(s.Z, {
+                }, o.createElement(s.Z, {
                     tabs: [{
                         name: "Marketplace",
                         to: "welcome",
@@ -123,35 +121,35 @@
                         condition: !0
                     }],
                     className: "tw-w-fit-content tw-flex-nowrap"
-                }))), i.createElement(i.Suspense, {
-                    fallback: i.createElement(c.UU, {
+                }))), o.createElement(o.Suspense, {
+                    fallback: o.createElement(i.UU, {
                         height: "480px",
                         radius: "8"
                     })
-                }, i.createElement(o.Z5, null, i.createElement(o.AW, {
+                }, o.createElement(c.Z5, null, o.createElement(c.AW, {
                     path: "/",
-                    element: i.createElement(m.Z, {
+                    element: o.createElement(m.Z, {
                         to: "welcome"
                     })
-                }), i.createElement(o.AW, {
+                }), o.createElement(c.AW, {
                     path: "welcome",
-                    element: i.createElement(w, null)
-                }), i.createElement(o.AW, {
+                    element: o.createElement(w, null)
+                }), o.createElement(c.AW, {
                     path: "wallet/*",
-                    element: i.createElement(E, {
-                        marketPlaceStatus: N
+                    element: o.createElement(E, {
+                        marketPlaceStatus: D
                     })
-                }), i.createElement(o.AW, {
+                }), o.createElement(c.AW, {
                     path: "storefront/*",
-                    element: i.createElement(h, {
-                        marketPlaceStatus: N
+                    element: o.createElement(h, {
+                        marketPlaceStatus: D
                     })
-                }), i.createElement(o.AW, {
+                }), o.createElement(c.AW, {
                     path: "storefront/payout",
-                    element: i.createElement(b, null)
+                    element: o.createElement(b, null)
                 }), !1))))
             }
         }
     }
 ]);
-//# sourceMappingURL=400157cb5494257905b64cf5b978cb3d849c98cd001f0567f3c3f60ba72a64fa.js.map
+//# sourceMappingURL=bf380b85a9357621f1774b27e4ed0b75fded73ba3ca233c8e86b7fb06f336738.js.map
