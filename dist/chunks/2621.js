@@ -3,21 +3,22 @@
     [2621], {
         44488: (e, t, l) => {
             l.d(t, {
-                Z: () => u
+                Z: () => m
             });
             var n = l(92332),
                 a = l(37463),
-                r = l(67263),
-                o = l(16869),
-                c = l(67294),
-                i = l(95896),
-                s = function(e) {
+                r = l(51806),
+                o = l.n(r),
+                c = l(16869),
+                i = l(67294),
+                s = l(95896),
+                u = function(e) {
                     var t, l = e.listingId,
-                        s = e.className,
-                        u = void 0 === s ? "" : s,
+                        r = e.className,
+                        u = void 0 === r ? "" : r,
                         m = e.showImage,
                         d = void 0 !== m && m,
-                        w = (0, o.mr)({
+                        w = (0, c.mr)({
                             listingId: l
                         }, {
                             skip: !l
@@ -27,29 +28,29 @@
                         b = w.isSuccess,
                         f = w.isError;
                     g && (a.$1, n.LM);
-                    var h = (null === (t = i.di.find((function(e) {
+                    var h = (null === (t = s.di.find((function(e) {
                         return e.value === (null == p ? void 0 : p.listingType)
                     }))) || void 0 === t ? void 0 : t.label) || (null == p ? void 0 : p.listingType);
-                    return b ? c.createElement(a.X2, {
+                    return b ? i.createElement(a.X2, {
                         className: "".concat(u, " tw-flex-nowrap tw-items-center tw-flex-1")
-                    }, d && c.createElement(a.pw, {
+                    }, d && i.createElement(a.pw, {
                         imageId: null == p ? void 0 : p.imageId,
                         alt: null == p ? void 0 : p.displayName,
-                        fallbackSrc: r,
+                        fallbackSrc: o(),
                         fitToCover: !0,
                         className: "tw-h-7 tw-w-7 tw-mr-2 tw-shrink-0"
-                    }), c.createElement("p", {
+                    }), i.createElement("p", {
                         className: "tw-font-bold tw-mb-0 tw-overflow-hidden tw-truncate tw-flex-1"
-                    }, null == p ? void 0 : p.displayName), c.createElement("p", {
+                    }, null == p ? void 0 : p.displayName), i.createElement("p", {
                         className: "tw-font-bold tw-mb-0 tw-overflow-hidden tw-shrink-0"
-                    }, "(", h, ")")) : f ? c.createElement("div", {
+                    }, "(", h, ")")) : f ? i.createElement("div", {
                         className: "".concat(u)
-                    }, c.createElement("p", {
+                    }, i.createElement("p", {
                         className: "tw-font-bold tw-mb-0"
                     }, l)) : null
                 };
-            s.propTypes = {};
-            const u = s
+            u.propTypes = {};
+            const m = u
         },
         72621: (e, t, l) => {
             l.r(t), l.d(t, {
@@ -438,4 +439,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85bd12b2522097efddd8fa9dbd4fe8547ac8dde79dbfb0649b0236a388cfc1e6.js.map
+//# sourceMappingURL=f6204d7c88ed3b7587cc85c912c946c8d5d4d48910b30eb1000c23fb4dc23cbd.js.map

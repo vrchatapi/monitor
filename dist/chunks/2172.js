@@ -3,7 +3,7 @@
     [2172], {
         42172: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => F
+                default: () => P
             });
             var l = a(54546),
                 n = a(65394),
@@ -20,11 +20,12 @@
                 v = a(45987),
                 f = a(4965),
                 b = a(71421),
-                g = a(67263),
-                x = a(83505),
-                h = a(17383),
-                E = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
-            const y = function(e) {
+                g = a(51806),
+                x = a.n(g),
+                h = a(83505),
+                E = a(17383),
+                y = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
+            const N = function(e) {
                 var t, a, n = e.avatars,
                     r = void 0 === n ? [] : n,
                     i = e.label,
@@ -33,22 +34,22 @@
                     u = e.isLoading,
                     d = void 0 !== u && u,
                     f = (e.onSearch, e.className),
-                    y = e.trimToLength,
-                    k = e.disabled,
+                    g = e.trimToLength,
+                    N = e.disabled,
                     C = e.allowMultiline,
-                    T = (0, v.Z)(e, E),
-                    D = m.useState(!1),
-                    R = (0, l.Z)(D, 2),
+                    I = (0, v.Z)(e, y),
+                    Z = m.useState(!1),
+                    R = (0, l.Z)(Z, 2),
                     A = R[0],
-                    z = R[1],
+                    M = R[1],
                     F = m.useState(""),
                     P = (0, l.Z)(F, 2),
                     O = P[0],
                     q = P[1],
-                    U = (0, h.Nr)(O),
+                    U = (0, E.Nr)(O),
                     B = m.useRef(null),
                     K = function(e) {
-                        B.current.contains(e.target) || z(!1)
+                        B.current.contains(e.target) || M(!1)
                     },
                     W = m.useMemo((function() {
                         return !1 === A ? (q(""), r) : r.filter((function(e) {
@@ -64,33 +65,33 @@
                 var $ = r.find((function(e) {
                     return e.name === c
                 }));
-                return m.createElement(S, (0, w.Z)({
+                return m.createElement(L, (0, w.Z)({
                     role: "radiogroup",
                     "aria-label": i,
                     ref: B,
                     className: f,
                     onMouseLeave: function() {
-                        A && z(!1)
+                        A && M(!1)
                     }
-                }, T), m.createElement(I, {
-                    disabled: k,
+                }, I), m.createElement(X, {
+                    disabled: N,
                     expanded: A
-                }, m.createElement(X, {
+                }, m.createElement(S, {
                     type: "button",
                     "aria-label": "Expand Options",
-                    disabled: k,
+                    disabled: N,
                     onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), z(!A)
+                        e.stopPropagation(), e.preventDefault(), M(!A)
                     }
-                }, m.createElement(N, null, !!i && m.createElement(L, null, i), m.createElement(Z, {
+                }, m.createElement(k, null, !!i && m.createElement(T, null, i), m.createElement(J, {
                     role: "note",
-                    trimToLength: y,
+                    trimToLength: g,
                     title: null !== (t = null == $ ? void 0 : $.selectedLabel) && void 0 !== t ? t : null == $ ? void 0 : $.label
                 }, null !== (a = null == $ ? void 0 : $.name) && void 0 !== a ? a : null == $ ? void 0 : $.name)), m.createElement(o.$1, {
                     icon: b.eW,
                     color: "white",
                     className: "ms-3"
-                })), A && m.createElement(J, null, m.createElement(o.II, {
+                })), A && m.createElement(D, null, m.createElement(o.II, {
                     className: "tw-mb-4 tw-mt-3 tw-px-3 tw-overflow-visible",
                     placeholder: "Search Avatars",
                     onChange: function(e) {
@@ -105,25 +106,25 @@
                     var a, l = (null == e ? void 0 : e.productId) || (null == e ? void 0 : e.activeAssetReviewId) || (null == e ? void 0 : e.assetDisabled) || (null == e ? void 0 : e.contentRestrictionId);
                     return m.createElement(m.Fragment, {
                         key: e.id
-                    }, m.createElement(M, {
+                    }, m.createElement(z, {
                         role: "radio",
                         "aria-checked": e.id === (null == c ? void 0 : c.id),
                         key: e.id,
                         onClick: l ? void 0 : (a = e, function(e) {
-                            e.stopPropagation(), e.preventDefault(), s && s(a), z(!1)
+                            e.stopPropagation(), e.preventDefault(), s && s(a), M(!1)
                         }),
                         tabIndex: t,
-                        trimToLength: y,
+                        trimToLength: g,
                         title: "string" == typeof e.selectedLabel ? e.selectedLabel : e.label,
                         allowMultiline: C,
-                        className: (0, x.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all  hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.Z)({}, "tw-cursor-not-allowed tw-text-placeholder-text hover:tw-text-placeholder-text", l))
+                        className: (0, h.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all  hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.Z)({}, "tw-cursor-not-allowed tw-text-placeholder-text hover:tw-text-placeholder-text", l))
                     }, m.createElement(o.X2, {
                         className: "tw-gap-2 tw-items-center"
                     }, m.createElement(o.pw, {
                         fitToCover: !0,
                         imageId: null == e ? void 0 : e.imageUrl,
                         alt: null == e ? void 0 : e.name,
-                        fallbackSrc: g,
+                        fallbackSrc: x(),
                         width: 36
                     }), m.createElement(o.JX, {
                         className: "tw-flex-1"
@@ -140,83 +141,83 @@
                     }(e))))))
                 })))))
             };
-            var N = (0, f.Z)("div", {
+            var k = (0, f.Z)("div", {
                     target: "evny8vp7"
                 })({
                     name: "jyvlna",
                     styles: "display:flex;align-items:center;max-width:75%"
                 }),
-                k = {
+                C = {
                     name: "4u0b5g",
                     styles: "border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);&:hover{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);}"
                 },
-                C = {
+                I = {
                     name: "1ll5w29",
                     styles: "border-bottom-color:'#07343f'"
                 },
-                I = (0, f.Z)("div", {
+                X = (0, f.Z)("div", {
                     target: "evny8vp6"
                 })("text-align:center;background-color:#064b5c;padding:5px 5px 5px 15px;border:#064b5c solid 2px;color:#ffffff;border-radius:3px;transition:background-color 0.2s ease-in-out;position:relative;display:flex;flex:1;border-radius:", (function(e) {
                     return e.expanded ? "3px 3px 0 0" : 3
                 }), "px;max-width:100%;&:hover{background-color:#064b5c;border-color:#086c84;}", (function(e) {
-                    return e.expanded ? C : ""
+                    return e.expanded ? I : ""
                 }), " ", (function(e) {
-                    return e.disabled ? k : ""
+                    return e.disabled ? C : ""
                 }), ";"),
-                X = (0, f.Z)("button", {
+                S = (0, f.Z)("button", {
                     target: "evny8vp5"
                 })({
                     name: "118t6pa",
                     styles: "border:none;background:transparent;outline:none!important;display:flex;flex:1;flex-direction:row;align-items:center;justify-content:space-between;position:relative;max-width:100%"
                 }),
-                S = (0, f.Z)("div", {
+                L = (0, f.Z)("div", {
                     target: "evny8vp4"
                 })({
                     name: "1cxtnl2",
                     styles: "display:flex;z-index:4;max-width:100%"
                 }),
-                L = (0, f.Z)("div", {
+                T = (0, f.Z)("div", {
                     target: "evny8vp3"
                 })({
                     name: "qcoia9",
                     styles: "font-size:0.8em;margin-right:10px;color:hsla(0, 0%, 100%, 0.6);white-space:nowrap;max-width:100%"
                 }),
-                T = {
+                Z = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                Z = (0, f.Z)("div", {
+                J = (0, f.Z)("div", {
                     target: "evny8vp2"
                 })("font-size:1em;color:#fff;max-width:100%;white-space:nowrap;", (function(e) {
-                    return e.trimToLength ? T : ""
+                    return e.trimToLength ? Z : ""
                 }), ";"),
-                J = (0, f.Z)("div", {
+                D = (0, f.Z)("div", {
                     target: "evny8vp1"
                 })({
                     name: "fbo9zu",
                     styles: "position:absolute;z-index:4;top:100%;left:-2px;width:calc(100% + 4px);background-color:#07343f;display:flex;flex-direction:column;border-radius:0 0 3px 3px;border:#086c84 solid 2px;border-top-width:0;text-align:left;max-width:calc(100% + 4px);max-height:310px;overflow-y:auto"
                 }),
-                D = {
+                R = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                R = {
+                A = {
                     name: "1bmnxg7",
                     styles: "white-space:nowrap"
                 },
-                A = {
+                M = {
                     name: "1vv75mf",
                     styles: "white-space:wrap"
                 },
-                M = (0, f.Z)("div", {
+                z = (0, f.Z)("div", {
                     target: "evny8vp0"
                 })("transition:opacity 0.2s ease-in-out;padding:0;background-color:#07343f;cursor:pointer;max-width:100%;", (function(e) {
-                    return e.allowMultiline ? A : R
+                    return e.allowMultiline ? M : A
                 }), " ", (function(e) {
-                    return e.trimToLength ? D : ""
+                    return e.trimToLength ? R : ""
                 }), ";"),
-                z = a(44869);
-            const F = function(e) {
+                F = a(44869);
+            const P = function(e) {
                 var t = e.avatarProductData,
                     a = void 0 === t ? null : t,
                     w = e.isEditing,
@@ -229,7 +230,7 @@
                     h = e.onPrevious,
                     E = void 0 === h ? function() {} : h;
                 if (null === a && p) return null;
-                var N = (0, u.I0)(),
+                var y = (0, u.I0)(),
                     k = (0, i.IB)({
                         skip: v
                     }).data,
@@ -247,8 +248,8 @@
                     R = m.useState(""),
                     A = (0, l.Z)(R, 2),
                     M = (A[0], A[1]),
-                    F = (0, m.useState)(J ? null == J ? void 0 : J.thumbnailImageUrl : null),
-                    P = (0, l.Z)(F, 2),
+                    z = (0, m.useState)(J ? null == J ? void 0 : J.thumbnailImageUrl : null),
+                    P = (0, l.Z)(z, 2),
                     O = P[0],
                     q = P[1],
                     U = (0, m.useState)(!1),
@@ -282,13 +283,13 @@
                 }), [G, Y]);
                 return m.createElement(o.JX, null, !S && m.createElement(o.JX, null, m.createElement("p", {
                     className: "tw-mb-2"
-                }, "Select Avatar"), m.createElement(y, {
+                }, "Select Avatar"), m.createElement(N, {
                     avatars: ee,
                     isLoading: Q,
                     value: null == J ? void 0 : J.name,
                     onChange: function(e) {
                         return function(e) {
-                            N((0, s.IR)(e)), D(e)
+                            y((0, s.IR)(e)), D(e)
                         }(e)
                     },
                     onSearch: function(e) {
@@ -317,7 +318,7 @@
                 }, m.createElement(o.$1, {
                     icon: n._t,
                     size: "xs"
-                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(z.Z, {
+                }), " ", j ? "Read less" : "Read more about our review process"))), m.createElement(F.Z, {
                     avatarData: J,
                     productType: I
                 })), m.createElement(o.JX, {
@@ -535,4 +536,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8d100b8d87b885380fa6d5565dc173184ce2ce75507002f980a65624ccf96f5d.js.map
+//# sourceMappingURL=369adfcee8804f9f16777adcf6652e85ce233ea3be2ccf84141d8dc3707b7063.js.map

@@ -22,7 +22,7 @@
         },
         25423: (e, t, a) => {
             a.d(t, {
-                Z: () => F
+                Z: () => j
             });
             var n = a(42138),
                 l = a(45987),
@@ -37,24 +37,25 @@
                 w = a(37463),
                 p = a(98185),
                 g = a(60006),
-                f = a(67263),
-                b = a(95896),
-                h = a(17383),
-                v = a(16869),
-                E = a(39270),
-                N = a(45697),
-                y = a.n(N),
-                x = a(67294),
-                k = a(32981),
-                C = a(79655),
-                I = a(65061),
-                T = a(53359);
-            const D = function(e) {
+                f = a(51806),
+                b = a.n(f),
+                h = a(95896),
+                v = a(17383),
+                E = a(16869),
+                N = a(39270),
+                y = a(45697),
+                x = a.n(y),
+                k = a(67294),
+                C = a(32981),
+                I = a(79655),
+                T = a(65061),
+                D = a(53359);
+            const X = function(e) {
                 var t = e.onCloseCallback,
                     a = e.isOpen,
                     n = e.title,
                     l = void 0 === n ? "" : n;
-                return x.createElement(w.u_, {
+                return k.createElement(w.u_, {
                     title: l,
                     onCloseFinished: t,
                     isVisible: a,
@@ -64,51 +65,51 @@
                     overflow: "auto",
                     disableBackdropClick: !0,
                     className: "tw-bg-black"
-                }, x.createElement("div", {
+                }, k.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-h-full tw-gap-5"
-                }, x.createElement("div", {
+                }, k.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
-                }, x.createElement("div", {
+                }, k.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-w-full"
-                }, x.createElement(w.$1, {
-                    icon: T.faTriangleExclamation,
+                }, k.createElement(w.$1, {
+                    icon: D.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-4"
-                }), x.createElement("h3", {
+                }), k.createElement("h3", {
                     className: "heading tw-text-xl tw-font-bold tw-m-0 tw-text-center tw-mb-5"
-                }, "This avatar product has already been purchased by users."), x.createElement("p", {
+                }, "This avatar product has already been purchased by users."), k.createElement("p", {
                     className: "tw-font-bold tw-inline-block tw-w-full tw-text-base tw-text-center tw-mb-5"
-                }, "Removing an avatar product from a listing that has already been purchased is not allowed, as it would revoke access for users who have paid for it."), x.createElement("p", {
+                }, "Removing an avatar product from a listing that has already been purchased is not allowed, as it would revoke access for users who have paid for it."), k.createElement("p", {
                     className: "tw-text-base tw-text-center tw-mb-2"
-                }, "If you still need to remove it, contact our support team. We will review your case and explore potential solutions."))), x.createElement("div", {
+                }, "If you still need to remove it, contact our support team. We will review your case and explore potential solutions."))), k.createElement("div", {
                     className: "tw-flex tw-flex-row tw-w-full tw-gap-2 tw-items-center"
-                }, x.createElement("div", {
+                }, k.createElement("div", {
                     className: "tw-w-1/2"
-                }, x.createElement(w.zx, {
+                }, k.createElement(w.zx, {
                     className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bg-grey tw-text-white",
                     onClick: t
-                }, "Cancel")), x.createElement("div", {
+                }, "Cancel")), k.createElement("div", {
                     className: "tw-w-1/2"
-                }, x.createElement(C.rU, {
+                }, k.createElement(I.rU, {
                     to: "https://vrch.at/marketplace-help",
                     target: "_blank",
                     rel: "noopener noreferrer"
-                }, x.createElement(w.zx, {
+                }, k.createElement(w.zx, {
                     className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight"
                 }, "Contact Support"))))))
             };
-            var X = a(42619),
-                L = a(56646);
-            const S = function(e) {
+            var L = a(42619),
+                S = a(56646);
+            const A = function(e) {
                 var t = e.product,
                     a = e.onClick,
                     n = void 0 === a ? function() {} : a,
-                    l = (0, x.useState)(!1),
+                    l = (0, k.useState)(!1),
                     r = (0, i.Z)(l, 2),
                     c = r[0],
                     o = r[1],
-                    s = (0, x.useRef)(null);
-                return (0, x.useEffect)((function() {
+                    s = (0, k.useRef)(null);
+                return (0, k.useEffect)((function() {
                     var e = function(e) {
                         s.current && !s.current.contains(e.target) && o(!1)
                     };
@@ -116,27 +117,27 @@
                         function() {
                             document.removeEventListener("mousedown", e)
                         }
-                }), [c]), x.createElement(w.X2, {
+                }), [c]), k.createElement(w.X2, {
                     key: t.id,
                     className: "tw-px-5 tw-py-3 tw-gap-5 tw-items-center tw-bg-grey tw-rounded-lg tw-select-none"
-                }, x.createElement(w.X2, {
+                }, k.createElement(w.X2, {
                     className: "tw-items-center tw-gap-2 tw-flex-1"
-                }, x.createElement(w.pw, {
+                }, k.createElement(w.pw, {
                     className: "tw-shrink-0",
                     imageId: null == t ? void 0 : t.imageId,
                     alt: null == t ? void 0 : t.displayName,
-                    fallbackSrc: f,
+                    fallbackSrc: b(),
                     width: 36
-                }), x.createElement("p", {
+                }), k.createElement("p", {
                     className: "tw-text-white tw-font-bold tw-mb-0 tw-grow"
-                }, t.displayName), (null == t ? void 0 : t.assetDisabled) && x.createElement("p", {
+                }, t.displayName), (null == t ? void 0 : t.assetDisabled) && k.createElement("p", {
                     className: "tw-text-orange tw-shrink-0 tw-mb-0",
                     "aria-label": "".concat(t.displayName, " is disabled")
-                }, x.createElement(w.$1, {
-                    icon: T.faTriangleExclamation
-                }), x.createElement("span", {
+                }, k.createElement(w.$1, {
+                    icon: D.faTriangleExclamation
+                }), k.createElement("span", {
                     className: "tw-hidden sm:tw-inline"
-                }, " Disabled"), x.createElement("button", {
+                }, " Disabled"), k.createElement("button", {
                     id: "productStatusTooltip-".concat(t.id),
                     type: "button",
                     className: "tw-bg-transparent tw-border-none",
@@ -145,10 +146,10 @@
                     },
                     ref: s,
                     "aria-label": "Product Status tooltip"
-                }, x.createElement(w.$1, {
-                    icon: L.faCircleInfo,
+                }, k.createElement(w.$1, {
+                    icon: S.faCircleInfo,
                     className: "tw-text-placeholder-text"
-                })), x.createElement(I.Z, {
+                })), k.createElement(T.Z, {
                     isOpen: c,
                     target: "productStatusTooltip-".concat(t.id),
                     placement: "top",
@@ -157,21 +158,21 @@
                     },
                     trigger: "click",
                     innerClassName: "tw-bg-black"
-                }, "This product is currently unavailable due to an issue. Go to the product page to view more details and how to address the problem."))), x.createElement(w.zx, {
+                }, "This product is currently unavailable due to an issue. Go to the product page to view more details and how to address the problem."))), k.createElement(w.zx, {
                     type: "button",
                     onClick: function() {
                         n(t)
                     },
                     neutral: !0,
                     className: "tw-w-9 tw-h-9"
-                }, x.createElement(w.$1, {
-                    icon: X.$
+                }, k.createElement(w.$1, {
+                    icon: L.$
                 })))
             };
-            var A = ["file"],
-                Z = ["imageId"];
+            var Z = ["file"],
+                P = ["imageId"];
 
-            function P(e, t) {
+            function O(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -182,102 +183,102 @@
                 return a
             }
 
-            function O(e) {
+            function J(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? P(Object(a), !0).forEach((function(t) {
+                    t % 2 ? O(Object(a), !0).forEach((function(t) {
                         (0, r.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : P(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : O(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            var J = function(e) {
+            var F = function(e) {
                 var t, a = e.onDataChange,
-                    N = void 0 === a ? function() {} : a,
+                    f = void 0 === a ? function() {} : a,
                     y = e.products,
-                    T = void 0 === y ? [] : y,
-                    X = e.productsLoading,
-                    L = void 0 !== X && X,
-                    P = e.listingType,
-                    J = e.editedListing,
-                    F = void 0 === J ? {} : J,
+                    x = void 0 === y ? [] : y,
+                    D = e.productsLoading,
+                    L = void 0 !== D && D,
+                    S = e.listingType,
+                    O = e.editedListing,
+                    F = void 0 === O ? {} : O,
                     j = e.originalListing,
                     R = void 0 === j ? {} : j,
                     z = e.isEditing,
                     V = void 0 !== z && z,
-                    q = (0, k.I0)(),
-                    _ = (0, k.v9)((function(e) {
+                    q = (0, C.I0)(),
+                    _ = (0, C.v9)((function(e) {
                         return e.listingFlow
                     })),
                     M = _.selectedListingType,
                     U = _.selectedProducts,
                     $ = _.productIds,
-                    B = (0, x.useState)(O(O({
+                    B = (0, k.useState)(J(J({
                         displayName: (null == F ? void 0 : F.displayName) || "",
                         description: (null == F ? void 0 : F.description) || "",
                         priceTokens: (null == F ? void 0 : F.priceTokens) || 100,
                         products: $ || (null == F ? void 0 : F.productIds) || []
-                    }, P === b.ft.DURATION && {
+                    }, S === h.ft.DURATION && {
                         duration: (null == F ? void 0 : F.duration) || 1,
-                        durationType: (null == F ? void 0 : F.durationType) || b.PG.DAY
-                    }), P === b.ft.INSTANT && {
+                        durationType: (null == F ? void 0 : F.durationType) || h.PG.DAY
+                    }), S === h.ft.INSTANT && {
                         quantifiable: (null == F ? void 0 : F.quantifiable) || !1
                     })),
                     Y = (0, i.Z)(B, 2),
                     G = Y[0],
                     H = Y[1],
-                    K = (0, x.useState)({}),
+                    K = (0, k.useState)({}),
                     Q = (0, i.Z)(K, 2),
                     W = Q[0],
                     ee = Q[1],
-                    te = (0, x.useState)(!1),
+                    te = (0, k.useState)(!1),
                     ae = (0, i.Z)(te, 2),
                     ne = ae[0],
                     le = ae[1],
-                    re = (0, x.useState)((null == F ? void 0 : F.file) || (null == F ? void 0 : F.imageId) || null),
+                    re = (0, k.useState)((null == F ? void 0 : F.file) || (null == F ? void 0 : F.imageId) || null),
                     ie = (0, i.Z)(re, 2),
                     ce = ie[0],
                     oe = ie[1],
-                    se = x.useState(""),
+                    se = k.useState(""),
                     me = (0, i.Z)(se, 2),
                     ue = me[0],
                     de = me[1],
-                    we = x.useState(!1),
+                    we = k.useState(!1),
                     pe = (0, i.Z)(we, 2),
                     ge = pe[0],
                     fe = pe[1],
-                    be = (0, x.useRef)(null),
-                    he = (0, x.useState)(!1),
+                    be = (0, k.useRef)(null),
+                    he = (0, k.useState)(!1),
                     ve = (0, i.Z)(he, 2),
                     Ee = ve[0],
                     Ne = ve[1],
-                    ye = (0, x.useRef)(null),
-                    xe = (0, h.Nr)(ue),
-                    ke = x.useState(!1),
+                    ye = (0, k.useRef)(null),
+                    xe = (0, v.Nr)(ue),
+                    ke = k.useState(!1),
                     Ce = (0, i.Z)(ke, 2),
                     Ie = Ce[0],
                     Te = Ce[1],
-                    De = (0, x.useMemo)((function() {
-                        return 1 === U.length && U[0].productType === b.Pm.AVATAR
+                    De = (0, k.useMemo)((function() {
+                        return 1 === U.length && U[0].productType === h.Pm.AVATAR
                     }), [U]),
-                    Xe = (0, v.Ms)({
+                    Xe = (0, E.Ms)({
                         listingId: F.id
                     }, {
                         skip: !F.id
                     }),
                     Le = Xe.data;
                 Xe.isFetching;
-                (0, x.useEffect)((function() {
-                    N(G)
+                (0, k.useEffect)((function() {
+                    f(G)
                 }), [G]);
-                (0, x.useEffect)((function() {
+                (0, k.useEffect)((function() {
                     return document.addEventListener("mousedown", Pe),
                         function() {
                             document.removeEventListener("mousedown", Pe)
                         }
-                }), []), (0, x.useEffect)((function() {
+                }), []), (0, k.useEffect)((function() {
                     var e = function(e) {
                         ye.current && !ye.current.contains(e.target) && Ne(!1)
                     };
@@ -293,18 +294,18 @@
                             r = void 0 === n ? null : n,
                             i = null !== a;
                         return null === a && null === r ? (oe(null), void H((function(e) {
-                            return O(O({}, e), {}, {
+                            return J(J({}, e), {}, {
                                 file: null,
                                 imageId: ""
                             })
                         }))) : i ? (oe(a), void H((function(e) {
                             e.file;
-                            return O(O({}, (0, l.Z)(e, A)), {}, {
+                            return J(J({}, (0, l.Z)(e, Z)), {}, {
                                 imageId: a
                             })
                         }))) : (oe(r), void H((function(e) {
                             e.imageId;
-                            return O(O({}, (0, l.Z)(e, Z)), {}, {
+                            return J(J({}, (0, l.Z)(e, P)), {}, {
                                 file: r
                             })
                         })))
@@ -314,16 +315,16 @@
                             a = t.name,
                             n = t.value;
                         H((function(e) {
-                            var t = O(O({}, e), {}, (0, r.Z)({}, a, n));
-                            return N(t), t
-                        })), ee(O(O({}, W), {}, (0, r.Z)({}, a, e.target.checkValidity())))
+                            var t = J(J({}, e), {}, (0, r.Z)({}, a, n));
+                            return f(t), t
+                        })), ee(J(J({}, W), {}, (0, r.Z)({}, a, e.target.checkValidity())))
                     },
                     Ze = function() {
                         Se({
                             fileId: null,
                             fileBlob: null
                         }), H((function(e) {
-                            return O(O({}, e), {}, {
+                            return J(J({}, e), {}, {
                                 displayName: "",
                                 description: "",
                                 imageId: null
@@ -333,20 +334,20 @@
                     Pe = function(e) {
                         be.current && !be.current.contains(e.target) && fe(!1)
                     },
-                    Oe = x.useMemo((function() {
-                        if (!T) return [];
+                    Oe = k.useMemo((function() {
+                        if (!x) return [];
                         var e = U.map((function(e) {
                             return e.id
                         }));
-                        return T.filter((function(t) {
-                            return !(null != e && e.includes(t.id)) && t.productType !== b.Pm.ROLE && ("permanent" === M || t.productType !== b.Pm.AVATAR) && (!xe || (t.id.toLowerCase().includes(xe.trim().toLowerCase()) || t.displayName.toLowerCase().includes(xe.trim().toLowerCase())))
+                        return x.filter((function(t) {
+                            return !(null != e && e.includes(t.id)) && t.productType !== h.Pm.ROLE && ("permanent" === M || t.productType !== h.Pm.AVATAR) && (!xe || (t.id.toLowerCase().includes(xe.trim().toLowerCase()) || t.displayName.toLowerCase().includes(xe.trim().toLowerCase())))
                         })) || []
-                    }), [U, T, xe]);
-                return (0, x.useEffect)((function() {
+                    }), [U, x, xe]);
+                return (0, k.useEffect)((function() {
                     if (De) {
                         var e = U[0];
                         H((function(t) {
-                            return O(O({}, t), {}, {
+                            return J(J({}, t), {}, {
                                 displayName: e.displayName,
                                 description: e.description,
                                 imageId: e.imageId
@@ -355,24 +356,24 @@
                             fileId: e.imageId
                         })
                     }
-                }), [De]), x.createElement(x.Fragment, null, L && x.createElement("div", {
+                }), [De]), k.createElement(k.Fragment, null, L && k.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, x.createElement(p.Z, {
+                }, k.createElement(p.Z, {
                     loading: !0
-                })), !L && x.createElement(w.JX, null, x.createElement(D, {
+                })), !L && k.createElement(w.JX, null, k.createElement(X, {
                     isOpen: Ie,
                     onCloseCallback: function() {
                         return Te(!1)
                     },
                     title: "Remove Product from Listing"
-                }), x.createElement("p", {
+                }), k.createElement("p", {
                     className: "tw-text-lg tw-font-bold tw-mb-2"
-                }, "Add Products"), x.createElement(w.JX, {
+                }, "Add Products"), k.createElement(w.JX, {
                     className: "tw-relative",
                     ref: be
-                }, x.createElement("p", {
+                }, k.createElement("p", {
                     className: "tw-mb-2"
-                }, "Choose the products that buyers of this listing gain access to."), x.createElement(w.II, {
+                }, "Choose the products that buyers of this listing gain access to."), k.createElement(w.II, {
                     className: "tw-mb-2",
                     placeholder: "Search products",
                     type: "search",
@@ -384,57 +385,57 @@
                     onFocus: function() {
                         fe(!0)
                     },
-                    disabled: U.length >= b._1
-                }), x.createElement("small", {
+                    disabled: U.length >= h._1
+                }), k.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-5"
-                }, "You must choose 1 to ", b._1, " products."), ge && U.length < b._1 && x.createElement("div", {
+                }, "You must choose 1 to ", h._1, " products."), ge && U.length < h._1 && k.createElement("div", {
                     role: "list",
                     "aria-label": "Available Products List",
                     className: "tw-bottom-[120px] tw-border-2 tw-border-solid tw-rounded-lg tw-border-button-bg tw-bg-[#07242B] tw-p-5 tw-gap-3 tw-max-h-[400px] tw-h-[400px] tw-overflow-y-auto tw-absolute tw-z-10 tw-w-full tw-top-[105px] sm:tw-top-[80px] tw-min-h-[200px]"
-                }, x.createElement("p", {
+                }, k.createElement("p", {
                     className: "tw-mb-3"
                 }, "Available Products"), Oe.length ? Oe.map((function(e) {
-                    return x.createElement(x.Fragment, {
+                    return k.createElement(k.Fragment, {
                         key: e.id
-                    }, x.createElement(w.X2, {
+                    }, k.createElement(w.X2, {
                         product: e,
                         className: "tw-gap-3 tw-flex-wrap"
-                    }, x.createElement(w.pw, {
+                    }, k.createElement(w.pw, {
                         imageId: e.imageId,
                         alt: e.displayName,
-                        fallbackSrc: f,
+                        fallbackSrc: b(),
                         width: 100,
                         fitToCover: !0
-                    }), x.createElement(w.JX, {
+                    }), k.createElement(w.JX, {
                         className: "tw-flex-1 tw-overflow-hidden"
-                    }, x.createElement(w.X2, {
+                    }, k.createElement(w.X2, {
                         className: "tw-gap-2 tw-items-center tw-mb-1"
-                    }, x.createElement("p", {
+                    }, k.createElement("p", {
                         className: "tw-mb-0 tw-text-highlight tw-font-bold tw-break-words"
-                    }, e.displayName), x.createElement(g.DR, {
+                    }, e.displayName), k.createElement(g.DR, {
                         bgColor: "#575757",
                         className: "tw-capitalize"
-                    }, e.productType)), x.createElement("p", {
+                    }, e.productType)), k.createElement("p", {
                         className: "tw-mb-0 tw-text-light-grey tw-break-words"
-                    }, e.description)), x.createElement(w.zx, {
+                    }, e.description)), k.createElement(w.zx, {
                         type: "button",
                         containerClasses: "tw-w-full sm:tw-w-[160px] tw-self-center",
                         onClick: function(t) {
                             var a;
-                            a = e, De && Ze(), q((0, E.H_)(a)), H((function(e) {
-                                return O(O({}, e), {}, {
+                            a = e, De && Ze(), q((0, N.H_)(a)), H((function(e) {
+                                return J(J({}, e), {}, {
                                     products: [].concat((0, n.Z)(e.products), [a.id])
                                 })
                             })), fe(!1), de("")
                         },
                         disabled: null == e ? void 0 : e.assetDisabled
-                    }, "Add")), x.createElement("hr", {
+                    }, "Add")), k.createElement("hr", {
                         className: "tw-bg-[#07242B] tw-font-medium tw-border tw-border-solid"
                     }))
-                })) : x.createElement("div", null, x.createElement("em", null, "No matching products!")))), x.createElement(w.JX, {
+                })) : k.createElement("div", null, k.createElement("em", null, "No matching products!")))), k.createElement(w.JX, {
                     className: "tw-gap-2 tw-max-h-[196px] tw-overflow-y-auto ".concat(0 !== U.length && "tw-mb-5")
                 }, 0 !== U.length && U.map((function(e) {
-                    return x.createElement(S, {
+                    return k.createElement(A, {
                         product: e,
                         key: e.id,
                         onClick: function() {
@@ -443,10 +444,10 @@
                                     var t, a = null == R || null === (t = R.products) || void 0 === t ? void 0 : t.some((function(t) {
                                         return t.avatarId === e.avatarId
                                     }));
-                                    if ((null == e ? void 0 : e.productType) === b.Pm.AVATAR && a && Le) return void Te(!0)
+                                    if ((null == e ? void 0 : e.productType) === h.Pm.AVATAR && a && Le) return void Te(!0)
                                 }
-                                De && Ze(), q((0, E.Ds)(e)), H((function(t) {
-                                    return O(O({}, t), {}, {
+                                De && Ze(), q((0, N.Ds)(e)), H((function(t) {
+                                    return J(J({}, t), {}, {
                                         products: t.products.filter((function(t) {
                                             return t !== e.id
                                         }))
@@ -455,51 +456,51 @@
                             }(e)
                         }
                     })
-                }))), x.createElement("hr", {
+                }))), k.createElement("hr", {
                     className: "tw-border tw-border-[#404c58] tw-border-solid tw-mb-5 tw-mt-0"
-                }), De && x.createElement(w.qX, {
+                }), De && k.createElement(w.qX, {
                     type: "custom",
                     color: "#000000",
                     iconColor: "#DADADA",
                     hideIcon: !0,
                     icon: o.sq,
                     className: "tw-mb-5 tw-p-5 tw-border-2 tw-rounded-lg"
-                }, "The listing thumbnail, name and description will be inherited from your avatar details. To make changes, head over to the", " ", x.createElement(C.rU, {
+                }, "The listing thumbnail, name and description will be inherited from your avatar details. To make changes, head over to the", " ", k.createElement(I.rU, {
                     to: "/home/avatar/".concat(null === (t = U[0]) || void 0 === t ? void 0 : t.avatarId),
                     className: "hover:tw-text-teal-accent"
-                }, "avatar page"), "."), x.createElement("p", {
+                }, "avatar page"), "."), k.createElement("p", {
                     className: "tw-text-lg tw-font-bold"
-                }, "Listing Details"), x.createElement(w.JX, {
+                }, "Listing Details"), k.createElement(w.JX, {
                     className: "tw-gap-5"
-                }, x.createElement(w.JX, {
+                }, k.createElement(w.JX, {
                     className: "md:tw-flex-row tw-gap-5"
-                }, x.createElement(w.JX, {
+                }, k.createElement(w.JX, {
                     className: "tw-gap-5"
-                }, x.createElement("button", {
+                }, k.createElement("button", {
                     type: "button",
                     onClick: function() {
                         De || le(!0)
                     },
                     disabled: De,
                     className: "tw-bg-transparent tw-border-0 tw-p-0 tw-rounded tw-relative tw-items-center tw-justify-center tw-flex"
-                }, !ce && x.createElement(w.zx, {
+                }, !ce && k.createElement(w.zx, {
                     containerClasses: "tw-rounded tw-absolute tw-flex-1"
-                }, x.createElement(w.$1, {
+                }, k.createElement(w.$1, {
                     icon: s.Vm,
                     className: "tw-mr-2"
-                }), x.createElement("span", null, "Upload Thumbnail")), x.createElement(w.pw, {
+                }), k.createElement("span", null, "Upload Thumbnail")), k.createElement(w.pw, {
                     imageId: ce,
                     fitToCover: !0,
                     alt: "Subscription Thumbnail",
                     width: 285,
                     className: "tw-bg-grey tw-text-[#404C58]"
-                }))), x.createElement(w.JX, {
+                }))), k.createElement(w.JX, {
                     className: "tw-gap-5 tw-flex-1 md:tw-justify-between"
-                }, x.createElement(w.JX, {
+                }, k.createElement(w.JX, {
                     className: "tw-gap-2"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "displayName"
-                }, "Name"), x.createElement(w.II, {
+                }, "Name"), k.createElement(w.II, {
                     name: "displayName",
                     id: "displayName",
                     type: "text",
@@ -508,13 +509,13 @@
                     disabled: De,
                     value: G.displayName,
                     onChange: Ae
-                }), x.createElement("small", {
+                }), k.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, G.displayName.length, "/64")), x.createElement(w.JX, {
+                }, G.displayName.length, "/64")), k.createElement(w.JX, {
                     className: "tw-gap-2"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "description"
-                }, "Description"), x.createElement(w.gx, {
+                }, "Description"), k.createElement(w.gx, {
                     inputClassName: "tw-h-[120px]",
                     maxLength: 256,
                     disabled: De,
@@ -523,19 +524,19 @@
                     label: "Description",
                     value: G.description,
                     onChange: Ae
-                }), x.createElement("small", {
+                }), k.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, G.description.length, "/256")))), x.createElement(w.JX, {
+                }, G.description.length, "/256")))), k.createElement(w.JX, {
                     className: "tw-gap-5"
-                }, V && x.createElement(w.JX, {
+                }, V && k.createElement(w.JX, {
                     className: "tw-gap-2"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "id",
                     className: "tw-flex tw-flex-row"
-                }, "Listing ID", x.createElement("div", {
+                }, "Listing ID", k.createElement("div", {
                     className: "tw-group tw-relative tw-ml-1",
                     ref: ye
-                }, x.createElement("button", {
+                }, k.createElement("button", {
                     id: "listingIdTooltip",
                     type: "button",
                     className: "tw-bg-transparent tw-border-none",
@@ -543,27 +544,27 @@
                         return Ne(!Ee)
                     },
                     "aria-label": "Listing ID tooltip"
-                }, x.createElement(w.$1, {
+                }, k.createElement(w.$1, {
                     icon: o.sq,
                     className: "tw-text-light-grey"
-                })), x.createElement(I.Z, {
+                })), k.createElement(T.Z, {
                     isOpen: Ee,
                     target: "listingIdTooltip",
                     placement: "right",
                     trigger: "click",
                     innerClassName: "tw-bg-gray-900"
-                }, x.createElement("span", {
+                }, k.createElement("span", {
                     className: "tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50"
-                }, "This unique ID can be used for reference and direct integration with prefabs in Unity.")))), x.createElement(w.X2, {
+                }, "This unique ID can be used for reference and direct integration with prefabs in Unity.")))), k.createElement(w.X2, {
                     className: "tw-gap-2"
-                }, x.createElement(w.II, {
+                }, k.createElement(w.II, {
                     type: "text",
                     name: "id",
                     id: "id",
                     value: F.id,
                     disabled: !0,
                     className: "tw-flex-1"
-                }), x.createElement(w.zx, {
+                }), k.createElement(w.zx, {
                     type: "button",
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function() {
@@ -586,80 +587,80 @@
                             }))
                         }))
                     }
-                }, x.createElement(w.$1, {
+                }, k.createElement(w.$1, {
                     icon: c.kZ
-                })))), P && P === b.ft.DURATION && x.createElement(w.JX, {
+                })))), S && S === h.ft.DURATION && k.createElement(w.JX, {
                     className: "tw-max-w-[270px] tw-gap-2"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "duration"
-                }, "Duration"), x.createElement(w.JX, {
+                }, "Duration"), k.createElement(w.JX, {
                     className: "tw-gap-2 xs:tw-flex-row"
-                }, x.createElement(w.II, {
+                }, k.createElement(w.II, {
                     name: "duration",
                     id: "duration",
                     type: "number",
                     inputmode: "numeric",
                     pattern: "\\d*",
                     label: "Duration",
-                    min: b.nD[G.durationType].min,
-                    max: b.nD[G.durationType].max,
+                    min: h.nD[G.durationType].min,
+                    max: h.nD[G.durationType].max,
                     value: G.duration,
                     onChange: Ae,
                     step: "1"
-                }), x.createElement(w.Lt, {
+                }), k.createElement(w.Lt, {
                     name: "durationType",
-                    options: b.Ir,
+                    options: h.Ir,
                     value: G.durationType,
                     onChange: function(e) {
                         H((function(t) {
-                            return O(O({}, t), {}, {
+                            return J(J({}, t), {}, {
                                 durationType: e
                             })
                         }))
                     }
-                })), x.createElement("small", {
+                })), k.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, "Starts immediately after purchasing.")), x.createElement(w.JX, {
+                }, "Starts immediately after purchasing.")), k.createElement(w.JX, {
                     className: "md:tw-max-w-[270px]"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "priceTokens",
                     className: "tw-mb-2"
-                }, "Price in VRChat Credits"), x.createElement(w.II, {
+                }, "Price in VRChat Credits"), k.createElement(w.II, {
                     name: "priceTokens",
                     id: "priceTokens",
                     type: "number",
                     inputmode: "numeric",
                     pattern: "\\d*",
-                    max: P === b.ft.PERMANENT ? b.YC : b._C,
-                    min: b.zD,
+                    max: S === h.ft.PERMANENT ? h.YC : h._C,
+                    min: h.zD,
                     step: "1",
                     label: "Price in VRChat Credits",
                     value: G.priceTokens,
                     onChange: Ae
-                })), P && P === b.ft.INSTANT && x.createElement(w.X2, {
+                })), S && S === h.ft.INSTANT && k.createElement(w.X2, {
                     className: "tw-bg-[#252A30] tw-p-5 tw-rounded-lg tw-mb-5"
-                }, x.createElement(w.JX, {
+                }, k.createElement(w.JX, {
                     className: "tw-flex-1"
-                }, x.createElement("p", {
+                }, k.createElement("p", {
                     className: "tw-mb-1"
-                }, "Enable Quantity Purchases"), x.createElement("small", {
+                }, "Enable Quantity Purchases"), k.createElement("small", {
                     className: "tw-text-light-grey"
-                }, "If enabled, buyers can purchase up to 99 units of this item at once.")), x.createElement(w.X2, {
+                }, "If enabled, buyers can purchase up to 99 units of this item at once.")), k.createElement(w.X2, {
                     className: "tw-justify-center tw-items-center tw-gap-3"
-                }, x.createElement("label", {
+                }, k.createElement("label", {
                     htmlFor: "useForSubscriberList"
-                }, G.quantifiable ? "On" : "Off"), x.createElement(w.K_, {
+                }, G.quantifiable ? "On" : "Off"), k.createElement(w.K_, {
                     value: "useForSubscriberList",
                     defaultChecked: G.quantifiable,
                     onChangeCallback: function(e) {
                         var t = e.checked;
                         H((function(e) {
-                            return O(O({}, e), {}, {
+                            return J(J({}, e), {}, {
                                 quantifiable: t
                             })
                         }))
                     }
-                })))))), x.createElement(w.m6, {
+                })))))), k.createElement(w.m6, {
                     preset: "listing",
                     image: ce,
                     isOpen: ne,
@@ -672,12 +673,12 @@
                     }
                 }))
             };
-            J.propTypes = {
-                onDataChange: y().func,
-                products: y().array,
-                productsLoading: y().bool
+            F.propTypes = {
+                onDataChange: x().func,
+                products: x().array,
+                productsLoading: x().bool
             };
-            const F = J
+            const j = F
         },
         80938: (e, t, a) => {
             a.d(t, {
@@ -840,4 +841,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a9608872e83212fba4661751d0fac6f568857f59a0bca846e0c1d0d696da6221.js.map
+//# sourceMappingURL=7af51c340f3d491798ac12d0442ad4e8c8db0fd05d91df0a75dd152a5da8ab9b.js.map

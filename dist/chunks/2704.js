@@ -3,7 +3,7 @@
     [2704], {
         22704: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => te
+                default: () => ae
             });
             var n = a(42138),
                 l = a(4942),
@@ -188,14 +188,15 @@
                 F = a(64537),
                 M = a(60006),
                 J = a(95643),
-                V = a(67263),
-                L = a(58687),
-                H = a(95896),
-                B = a(72522),
-                W = a(3620),
-                Q = a(74205);
+                V = a(51806),
+                L = a.n(V),
+                H = a(58687),
+                B = a(95896),
+                W = a(72522),
+                Q = a(3620),
+                Y = a(74205);
 
-            function Y(e, t) {
+            function G(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -206,20 +207,20 @@
                 return a
             }
 
-            function G(e) {
+            function K(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Y(Object(a), !0).forEach((function(t) {
+                    t % 2 ? G(Object(a), !0).forEach((function(t) {
                         (0, l.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : Y(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : G(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            var K = new RegExp("^".concat(W.i.AUTHOR)),
-                ee = ["admin_quest_fallback", "admin_quest_fallback_basic", "admin_quest_fallback_extended", "author_quest_fallback"];
-            const te = function(e) {
+            var ee = new RegExp("^".concat(Q.i.AUTHOR)),
+                te = ["admin_quest_fallback", "admin_quest_fallback_basic", "admin_quest_fallback_extended", "author_quest_fallback"];
+            const ae = function(e) {
                 var t, a, l, N = e.isPreview,
                     j = void 0 !== N && N,
                     A = e.avatar,
@@ -230,9 +231,9 @@
                     z = e.galleryImages,
                     D = void 0 === z ? [] : z,
                     $ = e.isAvatarSold,
-                    Y = void 0 !== $ && $,
-                    te = e.isAvatarSoldFetching,
-                    ae = void 0 !== te && te,
+                    V = void 0 !== $ && $,
+                    G = e.isAvatarSoldFetching,
+                    ae = void 0 !== G && G,
                     ne = e.isSelectAvatarLoading,
                     le = void 0 !== ne && ne,
                     re = e.isSelectFallbackLoading,
@@ -288,8 +289,8 @@
                     }), [A, we, Ce]),
                     Ge = Be || Ye || He,
                     Ke = Ie || Be || Ye || He,
-                    et = (Ie || Be) && !ae && !Y && !(null != A && A.activeAssetReviewId) && !(null != A && A.productId) && "hidden" !== (null == A ? void 0 : A.releaseStatus),
-                    tt = 1 === Z.length && Z[0].productType === H.Pm.AVATAR,
+                    et = (Ie || Be) && !ae && !V && !(null != A && A.activeAssetReviewId) && !(null != A && A.productId) && "hidden" !== (null == A ? void 0 : A.releaseStatus),
+                    tt = 1 === Z.length && Z[0].productType === B.Pm.AVATAR,
                     at = (0, R.S6)({
                         fileUrl: (null == Ve ? void 0 : Ve.profilePicOverride) || (null == Ve ? void 0 : Ve.currentAvatarImageUrl),
                         width: "512"
@@ -298,7 +299,7 @@
                         fileUrl: null == Ve ? void 0 : Ve.userIcon,
                         width: "256"
                     }),
-                    lt = (0, R.S6)(G(G(G({
+                    lt = (0, R.S6)(K(K(K({
                         width: "512"
                     }, !tt && _ && {
                         fileId: null == _ ? void 0 : _.imageId
@@ -308,13 +309,13 @@
                         fileUrl: null == A ? void 0 : A.imageUrl
                     })),
                     rt = h.useMemo((function() {
-                        return Object.keys(B.VT).reduce((function(e, t) {
-                            var a = (0, L.F)(null == A ? void 0 : A.unityPackages, t);
+                        return Object.keys(W.VT).reduce((function(e, t) {
+                            var a = (0, H.F)(null == A ? void 0 : A.unityPackages, t);
                             return a && (e[t] = a), e
                         }), {})
                     }), [A]),
                     ct = h.useMemo((function() {
-                        return Object.entries(B.VT).filter((function(e) {
+                        return Object.entries(W.VT).filter((function(e) {
                             var t = (0, r.Z)(e, 1)[0];
                             return !!rt[t]
                         }))
@@ -322,18 +323,18 @@
                     ot = h.useMemo((function() {
                         var e, t;
                         return null !== (e = null == A || null === (t = A.tags) || void 0 === t ? void 0 : t.some((function(e) {
-                            return ee.includes(e)
+                            return te.includes(e)
                         }))) && void 0 !== e && e
                     }), [null == A ? void 0 : A.tags]),
                     it = h.useMemo((function() {
                         return null == A ? void 0 : A.tags.filter((function(e) {
-                            return e.startsWith(W.i.AUTHOR)
+                            return e.startsWith(Q.i.AUTHOR)
                         }))
                     }), [null == A ? void 0 : A.tags]),
                     st = h.useMemo((function() {
                         var e, t;
                         return [null == A || null === (e = A.styles) || void 0 === e ? void 0 : e.primary, null == A || null === (t = A.styles) || void 0 === t ? void 0 : t.secondary].concat((0, n.Z)((null == it ? void 0 : it.map((function(e) {
-                            return e.replace(K, "")
+                            return e.replace(ee, "")
                         }))) || [])).filter(Boolean)
                     }), [null == A || null === (a = A.styles) || void 0 === a ? void 0 : a.primary, null == A || null === (l = A.styles) || void 0 === l ? void 0 : l.secondary, it]),
                     mt = !(null == st || !st.length);
@@ -345,29 +346,29 @@
                     className: "tw-rounded-md tw-shrink-0",
                     imgClassName: "tw-aspect-square",
                     imageId: lt || (null == _ ? void 0 : _.file),
-                    fallbackSrc: V,
+                    fallbackSrc: L(),
                     fitToCover: !0,
                     alt: "".concat(null == A ? void 0 : A.name, " Thumbnail") || 0
                 }), h.createElement(O.JX, {
                     className: "tw-flex-grow tw-gap-1"
                 }, _ && function(e) {
                     switch (e) {
-                        case H.ft.PERMANENT:
+                        case B.ft.PERMANENT:
                             return h.createElement(M.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize tw-leading-5"
                             }, h.createElement(O.$1, {
-                                icon: Q.SQ,
+                                icon: Y.SQ,
                                 width: 14
                             }), " ", e);
-                        case H.ft.DURATION:
+                        case B.ft.DURATION:
                             return h.createElement(M.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize"
                             }, h.createElement(O.$1, {
                                 icon: E.DH
                             }), " ", e);
-                        case H.ft.INSTANT:
+                        case B.ft.INSTANT:
                             return h.createElement(M.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize"
@@ -616,9 +617,9 @@
                             style: {
                                 height: "1em"
                             },
-                            src: null === (w = B.i1[o.performanceRating]) || void 0 === w ? void 0 : w.image,
+                            src: null === (w = W.i1[o.performanceRating]) || void 0 === w ? void 0 : w.image,
                             alt: ""
-                        }), null === (d = B.i1[o.performanceRating]) || void 0 === d ? void 0 : d.label)
+                        }), null === (d = W.i1[o.performanceRating]) || void 0 === d ? void 0 : d.label)
                     }
                     return h.createElement("tr", {
                         key: l,
@@ -626,7 +627,7 @@
                     }, h.createElement("th", {
                         className: "tw-py-1 tw-font-normal tw-text-center"
                     }, h.createElement(O.$1, {
-                        icon: null === (a = B.VT[l]) || void 0 === a ? void 0 : a.icon
+                        icon: null === (a = W.VT[l]) || void 0 === a ? void 0 : a.icon
                     })), h.createElement("th", {
                         className: "tw-py-1 tw-font-normal"
                     }, c), h.createElement("td", {
@@ -665,4 +666,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f083a4a26009e4c7ec6e678e9d9f459ff9fbf4044efa379fc3aabae3b6ba73f4.js.map
+//# sourceMappingURL=8076b13e318f77e8abdca84f94cc5ecfe0c64486e68ffe98673ec13d8416be98.js.map

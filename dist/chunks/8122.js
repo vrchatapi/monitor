@@ -3,7 +3,7 @@
     [8122], {
         38122: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => V
+                default: () => M
             });
             var l = a(4942),
                 n = a(15861),
@@ -302,8 +302,9 @@
                     containerClasses: "tw-w-full"
                 }, "Done"))
             };
-            var z = a(67263),
-                F = function(e) {
+            var z = a(51806),
+                F = a.n(z),
+                A = function(e) {
                     e.isOpen;
                     var t = e.createdProduct,
                         a = void 0 === t ? null : t,
@@ -318,7 +319,7 @@
                     }, E.createElement(w.pw, {
                         alt: null == a ? void 0 : a.displayName,
                         imageId: (null == a ? void 0 : a.imageId) || (null == a ? void 0 : a.file) || null,
-                        fallbackSrc: z,
+                        fallbackSrc: F(),
                         fitToCover: !0
                     }), E.createElement("h2", {
                         className: "heading tw-mt-5"
@@ -341,14 +342,14 @@
                         onClick: n
                     }, "Done"))))))
                 };
-            F.propTypes = {
+            A.propTypes = {
                 isOpen: D().bool,
                 createdProduct: D().object.isRequired,
                 closeModalCallback: D().func
             };
-            const A = F;
+            const J = A;
 
-            function J(e, t) {
+            function L(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var l = Object.getOwnPropertySymbols(e);
@@ -359,24 +360,24 @@
                 return a
             }
 
-            function L(e) {
+            function U(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? J(Object(a), !0).forEach((function(t) {
+                    t % 2 ? L(Object(a), !0).forEach((function(t) {
                         (0, l.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : J(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : L(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            var U = (0, E.lazy)((function() {
+            var B = (0, E.lazy)((function() {
                     return a.e(2073).then(a.bind(a, 2073))
                 })),
-                B = (0, E.lazy)((function() {
+                V = (0, E.lazy)((function() {
                     return a.e(7069).then(a.bind(a, 17069))
                 }));
-            const V = function() {
+            const M = function() {
                 var e, t = (0, f.IB)().data,
                     a = (0, x.I0)(),
                     l = (0, x.v9)((function(e) {
@@ -393,9 +394,9 @@
                     X = S.productTab,
                     z = O ? Number(O) : 1,
                     F = (0, E.useState)(I.get("sortBy") || null),
-                    J = (0, r.Z)(F, 2),
-                    V = J[0],
-                    M = J[1],
+                    A = (0, r.Z)(F, 2),
+                    L = A[0],
+                    M = A[1],
                     q = (0, E.useState)(I.get("orderBy") || "descending"),
                     R = (0, r.Z)(q, 2),
                     $ = R[0],
@@ -434,7 +435,7 @@
                             n: 50,
                             pageValue: z
                         }
-                    }), [I, he, $, V, z]), (0, b.qX)()),
+                    }), [I, he, $, L, z]), (0, b.qX)()),
                     Ne = (0, r.Z)(ye, 2),
                     ke = Ne[0],
                     Ce = Ne[1],
@@ -488,7 +489,7 @@
                                             e.next = 7;
                                             break
                                         }
-                                        return e.next = 6, De(L(L({
+                                        return e.next = 6, De(U(U({
                                             productId: n.id
                                         }, null !== w ? {
                                             file: w,
@@ -497,7 +498,7 @@
                                     case 6:
                                         return e.abrupt("return", m());
                                     case 7:
-                                        return e.next = 9, ke(L(L({}, null !== w ? {
+                                        return e.next = 9, ke(U(U({}, null !== w ? {
                                             file: w,
                                             tag: "product"
                                         } : {}), n)).unwrap();
@@ -524,8 +525,8 @@
                         }
                     }(),
                     Xe = (0, E.useCallback)((function(e) {
-                        return V === e
-                    }), [V]),
+                        return L === e
+                    }), [L]),
                     Te = function() {
                         Se({
                             title: "Create Product",
@@ -579,11 +580,11 @@
                     fallback: E.createElement(m.Z, {
                         loading: !0
                     })
-                }, !X && E.createElement(U, {
+                }, !X && E.createElement(B, {
                     currentUser: t,
                     searchValue: Z,
                     currentPage: z,
-                    sortBy: V,
+                    sortBy: L,
                     orderBy: $,
                     editProductCallback: ze,
                     deleteProductCallback: function(e) {
@@ -606,8 +607,8 @@
                             return Xe(e) ? H("descending" === $ ? "ascending" : "descending") : (M(e), H("ascending"))
                         }(e)
                     }
-                }), "moderation" === X && E.createElement(B, {
-                    sortBy: V,
+                }), "moderation" === X && E.createElement(V, {
+                    sortBy: L,
                     orderBy: $,
                     currentUser: t,
                     currentPage: z
@@ -629,7 +630,7 @@
                     isEditing: !0,
                     onSubmit: Oe,
                     user: t
-                }), ee && ne && E.createElement(A, {
+                }), ee && ne && E.createElement(J, {
                     isOpen: ne,
                     createdProduct: we,
                     updated: se,
@@ -826,4 +827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a07bef19697bb39dace68ebb6ec54cb8d29fa5f14cbc2124a0732b13e91280f1.js.map
+//# sourceMappingURL=7945894203a07d726553d8ca87ceb4f6fdb580502740b441c5651070e303cd64.js.map

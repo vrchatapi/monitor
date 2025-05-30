@@ -3,7 +3,7 @@
     [4896], {
         68791: (e, t, n) => {
             n.d(t, {
-                Z: () => R
+                Z: () => C
             });
             var r = n(15861),
                 i = n(54546),
@@ -18,49 +18,50 @@
                 m = n.n(p),
                 f = n(37463),
                 g = n(50048),
-                v = n(67263),
-                y = n(22202),
-                h = n(93261),
-                b = n(16869),
-                E = n(67978),
-                w = n(60006),
-                x = n(27484),
-                T = n.n(x),
-                P = n(67294),
-                k = n(32981),
-                I = n(73647),
-                M = n(63221);
-            const R = function(e) {
+                v = n(51806),
+                y = n.n(v),
+                h = n(22202),
+                b = n(93261),
+                E = n(16869),
+                w = n(67978),
+                x = n(60006),
+                T = n(27484),
+                P = n.n(T),
+                k = n(67294),
+                I = n(32981),
+                M = n(73647),
+                R = n(63221);
+            const C = function(e) {
                 var t, n, a, p, g = e.listing,
-                    x = e.purchase,
-                    R = e.group,
-                    S = e.tiliaTokenBalance,
+                    v = e.purchase,
+                    T = e.group,
+                    C = e.tiliaTokenBalance,
                     D = e.tiliaTosAccepted,
-                    L = e.index,
+                    Y = e.index,
                     O = e.onCancel,
                     F = e.onPurchase,
                     A = e.economyOnline,
-                    Q = (0, k.I0)(),
-                    q = T()(),
-                    Z = (0, y.XC)().data,
-                    U = P.useState(!0),
+                    Q = (0, I.I0)(),
+                    q = P()(),
+                    Z = (0, h.XC)().data,
+                    U = k.useState(!0),
                     N = (0, i.Z)(U, 2),
                     X = N[0],
                     G = N[1],
-                    B = (0, k.v9)((function(e) {
+                    B = (0, I.v9)((function(e) {
                         return e.listingRow.modals.cancellation
                     })),
-                    V = (0, k.v9)((function(e) {
+                    V = (0, I.v9)((function(e) {
                         return e.listingRow.modals.purchase
                     })),
-                    j = (0, k.v9)((function(e) {
+                    j = (0, I.v9)((function(e) {
                         return e.listingRow.modals.rules.isOpen
                     })),
-                    $ = (0, k.v9)((function(e) {
+                    $ = (0, I.v9)((function(e) {
                         return e.listingRow.modals.purchaseConfirmation.isOpen
                     })),
-                    z = (0, b.mr)({
-                        listingId: null == x ? void 0 : x.listingId,
+                    z = (0, E.mr)({
+                        listingId: null == v ? void 0 : v.listingId,
                         hydrate: !0
                     }, {
                         skip: !!g,
@@ -71,41 +72,41 @@
                     J = (z.isSuccess, z.isError),
                     H = z.error,
                     K = g || W,
-                    ee = (0, h.r5)({
+                    ee = (0, b.r5)({
                         groupId: null == K ? void 0 : K.groupId
                     }, {
-                        skip: !!R || !K
+                        skip: !!T || !K
                     }),
                     te = ee.data,
                     ne = ee.isLoading,
-                    re = (ee.isError, ee.error, (0, E.DM)({
+                    re = (ee.isError, ee.error, (0, w.DM)({
                         listingId: null == K ? void 0 : K.id
                     }, {
                         skip: !K
                     })),
                     ie = re.data,
-                    ae = (re.isLoading, re.isError, re.error, R || te),
+                    ae = (re.isLoading, re.isError, re.error, T || te),
                     oe = null == K ? void 0 : K.stackable,
-                    le = (null == ae ? void 0 : ae.memberCount) >= M.qH,
+                    le = (null == ae ? void 0 : ae.memberCount) >= R.qH,
                     ue = !(null == ae || !ae.myMember),
                     ce = !(null == ae || null === (t = ae.myMember) || void 0 === t || !t.userId) && (null == ae ? void 0 : ae.ownerId) === (null == ae || null === (n = ae.myMember) || void 0 === n ? void 0 : n.userId);
-                (0, P.useEffect)((function() {
+                (0, k.useEffect)((function() {
                     K && ae && !_ && !ne && G(!1)
-                }), [K, ae, _, ne]), (0, P.useEffect)((function() {
-                    V.enteredPurchaseQuantity && Q((0, I.tE)(parseInt(V.enteredPurchaseQuantity, 10)))
+                }), [K, ae, _, ne]), (0, k.useEffect)((function() {
+                    V.enteredPurchaseQuantity && Q((0, M.tE)(parseInt(V.enteredPurchaseQuantity, 10)))
                 }), [V.enteredPurchaseQuantity]);
-                var se = P.useMemo((function() {
+                var se = k.useMemo((function() {
                     var e, t;
                     if (V.selectedPurchaseQuantity && (null == K || null === (e = K.listingVariants) || void 0 === e ? void 0 : e.length) > 0) return null === (t = K.listingVariants) || void 0 === t ? void 0 : t.findLast((function(e) {
                         return (null == e ? void 0 : e.quantity) && (null == e ? void 0 : e.quantity) <= V.selectedPurchaseQuantity
                     }))
                 }), [V.selectedPurchaseQuantity, K]);
-                (0, P.useEffect)((function() {
-                    !$ && j && Q((0, I.gB)())
+                (0, k.useEffect)((function() {
+                    !$ && j && Q((0, M.gB)())
                 }), [$, j]);
                 var de, pe, me, fe = (null == K ? void 0 : K.permanent) || "forevers" === (null == K ? void 0 : K.durationType) || "permanent" === (null == K ? void 0 : K.listingType),
-                    ge = (null == x ? void 0 : x.permanent) || "forevers" === (null == x ? void 0 : x.purchaseDurationType) || "permanent" === (null == K ? void 0 : K.listingType),
-                    ve = P.useMemo((function() {
+                    ge = (null == v ? void 0 : v.permanent) || "forevers" === (null == v ? void 0 : v.purchaseDurationType) || "permanent" === (null == K ? void 0 : K.listingType),
+                    ve = k.useMemo((function() {
                         if (!ie) return [!1, !1];
                         var e = ie.find((function(e) {
                             return "role" === e.productType
@@ -115,19 +116,19 @@
                     ye = (0, i.Z)(ve, 2),
                     he = ye[0],
                     be = ye[1],
-                    Ee = P.useMemo((function() {
+                    Ee = k.useMemo((function() {
                         return (V.selectedPurchaseQuantity || 1) * ((null == se ? void 0 : se.unitPriceTokens) || (null == K ? void 0 : K.priceTokens))
                     }), [V.selectedPurchaseQuantity, se, K]),
-                    we = P.useMemo((function() {
+                    we = k.useMemo((function() {
                         return ce ? 0 : Ee
                     }), [ce, Ee]),
                     xe = he && !ue,
                     Te = !he && !ue,
                     Pe = fe ? "Buy" : "Subscribe",
-                    ke = x ? T()(x.subscriptionExpiry) : void 0,
+                    ke = v ? P()(v.subscriptionExpiry) : void 0,
                     Ie = null == ke ? void 0 : ke.diff(q, "months", !0),
                     Me = null == ke ? void 0 : ke.diff(q, "days", !0),
-                    Re = x && Ie <= 1 ? "Immediately" : "Subscription",
+                    Re = v && Ie <= 1 ? "Immediately" : "Subscription",
                     Ce = Me < 0,
                     Se = le || Te || !D || !A,
                     De = function() {
@@ -139,7 +140,7 @@
                                             currentUserId: Z.id,
                                             listingId: K.id,
                                             listing: K,
-                                            purchase: x
+                                            purchase: v
                                         });
                                     case 1:
                                     case "end":
@@ -151,32 +152,32 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ye = x ? fe || ge ? "You own this!" : Ce ? le && !ue ? "This group is full!" : !xe && D ? "You need to be a member of the group to buy this." : "This subscription has expired!" : "You're subscribed! Expires ".concat(T()(x.subscriptionExpiry).format("MMMM D YYYY [at] h:mm A")) : le && !ue ? "This group is full!" : !xe && D ? "You need to be a member of the group to buy this." : Se ? "You need to accept the Tilia Terms of Service to buy this." : void 0,
-                    Le = x ? fe || ge ? "You own this!" : P.createElement(P.Fragment, null, "Renew Subscription") : P.createElement(P.Fragment, null, Pe, P.createElement("br", null), "Buy" === Pe ? "for " : "Starting from ", P.createElement(f.b5, null), K.priceTokens.toLocaleString());
-                return P.createElement(P.Fragment, null, J && P.createElement(f.qX, {
+                    Ye = v ? fe || ge ? "You own this!" : Ce ? le && !ue ? "This group is full!" : !xe && D ? "You need to be a member of the group to buy this." : "This subscription has expired!" : "You're subscribed! Expires ".concat(P()(v.subscriptionExpiry).format("MMMM D YYYY [at] h:mm A")) : le && !ue ? "This group is full!" : !xe && D ? "You need to be a member of the group to buy this." : Se ? "You need to accept the Tilia Terms of Service to buy this." : void 0,
+                    Le = v ? fe || ge ? "You own this!" : k.createElement(k.Fragment, null, "Renew Subscription") : k.createElement(k.Fragment, null, Pe, k.createElement("br", null), "Buy" === Pe ? "for " : "Starting from ", k.createElement(f.b5, null), K.priceTokens.toLocaleString());
+                return k.createElement(k.Fragment, null, J && k.createElement(f.qX, {
                     className: "tw-mt-0 tw-mb-3",
                     type: "error",
                     title: "Listing Error"
-                }, P.createElement("p", {
+                }, k.createElement("p", {
                     className: "tw-mb-0"
-                }, "Error looking up listing information: ", null !== (a = null === (p = H.data) || void 0 === p ? void 0 : p.error.message) && void 0 !== a ? a : "Unknown error"), g ? P.createElement("small", null, "Listing ID: ", g.id) : P.createElement("small", null, "Listing ID: ", null == x ? void 0 : x.listingId)), X && !J && P.createElement(C, {
-                    key: L,
+                }, "Error looking up listing information: ", null !== (a = null === (p = H.data) || void 0 === p ? void 0 : p.error.message) && void 0 !== a ? a : "Unknown error"), g ? k.createElement("small", null, "Listing ID: ", g.id) : k.createElement("small", null, "Listing ID: ", null == v ? void 0 : v.listingId)), X && !J && k.createElement(S, {
+                    key: Y,
                     height: "12rem",
-                    delay: 50 * L,
+                    delay: 50 * Y,
                     radius: 8
-                }), !J && !X && P.createElement(f.x7, null, P.createElement(f.pw, {
+                }), !J && !X && k.createElement(f.x7, null, k.createElement(f.pw, {
                     alt: K.displayName,
                     imageId: K.imageId,
-                    fallbackSrc: v,
+                    fallbackSrc: y(),
                     fitToCover: !0
-                }), P.createElement(f.JX, {
+                }), k.createElement(f.JX, {
                     style: {
                         flexGrow: 1,
                         flexBasis: 300,
                         maxWidth: "100%",
                         overflowWrap: "break-word"
                     }
-                }, P.createElement(f.X3, null, K.displayName, " ", (pe = null == K ? void 0 : K.listingType, (me = {
+                }, k.createElement(f.X3, null, K.displayName, " ", (pe = null == K ? void 0 : K.listingType, (me = {
                     instant: {
                         bgColor: "#575757",
                         icon: d.YK,
@@ -192,37 +193,37 @@
                         icon: c.DD,
                         label: "Permanent"
                     }
-                })[pe] ? P.createElement(w.DR, {
+                })[pe] ? k.createElement(x.DR, {
                     bgColor: me[pe].bgColor
-                }, P.createElement(f.$1, {
+                }, k.createElement(f.$1, {
                     icon: me[pe].icon
-                }), " ", me[pe].label) : null), " ", x ? Me <= 10 ? P.createElement(w.DR, {
+                }), " ", me[pe].label) : null), " ", v ? Me <= 10 ? k.createElement(x.DR, {
                     bgColor: "#A53D29"
-                }, P.createElement(f.$1, {
+                }, k.createElement(f.$1, {
                     icon: u.faCircleExclamation
-                }), " ", Ce ? P.createElement(P.Fragment, null, "Expired!") : P.createElement(P.Fragment, null, "Expires Soon!")) : P.createElement(w.DR, {
+                }), " ", Ce ? k.createElement(k.Fragment, null, "Expired!") : k.createElement(k.Fragment, null, "Expires Soon!")) : k.createElement(x.DR, {
                     bgColor: "#575757"
-                }, P.createElement(f.$1, {
+                }, k.createElement(f.$1, {
                     icon: l.B2
-                }), " Expires ", T()(x.subscriptionExpiry).format("MMM YYYY")) : null !== (de = K.listingVariants) && void 0 !== de && de.some((function(e) {
+                }), " Expires ", P()(v.subscriptionExpiry).format("MMM YYYY")) : null !== (de = K.listingVariants) && void 0 !== de && de.some((function(e) {
                     return !0 === e.sellerVariant
-                })) ? P.createElement(w.DR, {
+                })) ? k.createElement(x.DR, {
                     bgColor: "#6F42C1"
-                }, P.createElement(f.$1, {
+                }, k.createElement(f.$1, {
                     icon: o.th
-                }), " Volume Discount") : null), P.createElement("p", null, K.description)), P.createElement(Y, {
+                }), " Volume Discount") : null), k.createElement("p", null, K.description)), k.createElement(L, {
                     flexDirection: "column",
                     containerType: "listing"
-                }, P.createElement(f.zx, {
-                    disabled: x ? fe || !oe || !A || Te : Se,
+                }, k.createElement(f.zx, {
+                    disabled: v ? fe || !oe || !A || Te : Se,
                     title: Ye,
                     onClick: function() {
                         F(oe, oe ? {
                             listing: K,
-                            purchase: x,
+                            purchase: v,
                             group: ae,
                             totalPrice: we,
-                            tiliaTokenBalance: S,
+                            tiliaTokenBalance: C,
                             tiliaTosAccepted: D,
                             includesGroupAccess: he,
                             includesGroupAccessRemove: be,
@@ -230,10 +231,10 @@
                             selectedPurchaseQuantity: 1
                         } : {
                             listing: K,
-                            purchase: x,
+                            purchase: v,
                             group: ae,
                             totalPrice: we,
-                            tiliaTokenBalance: S,
+                            tiliaTokenBalance: C,
                             tiliaTosAccepted: D,
                             quantity: 1,
                             includesGroupAccess: he,
@@ -241,7 +242,7 @@
                         })
                     },
                     containerStyles: "width: fit-content"
-                }, Le), x && !fe && oe ? P.createElement(f.zx, {
+                }, Le), v && !fe && oe ? k.createElement(f.zx, {
                     neutral: "true",
                     disabled: B.isLoading || !A,
                     hidden: Ce,
@@ -251,37 +252,37 @@
                     containerStyles: "width: fit-content"
                 }, "Cancel ", Re) : null)))
             };
-            var C = (0, a.Z)(f.UU, {
+            var S = (0, a.Z)(f.UU, {
                     target: "ex2vave1"
                 })({
                     name: "1vx3e21",
                     styles: "margin:0.4rem 0"
                 }),
-                S = {
+                D = {
                     name: "h78xii",
                     styles: "margin:0.5rem;flex:1 1 90px"
                 },
-                D = {
+                Y = {
                     name: "16cahg",
                     styles: "margin-bottom:-1.5rem;justify-content:center;margin-top:0;margin:-0.5rem"
                 },
-                Y = (0, a.Z)(f.X2, {
+                L = (0, a.Z)(f.X2, {
                     target: "ex2vave0"
                 })("display:flex;flex-wrap:wrap;flex-direction:", (function(e) {
                     return e.flexDirection || "row"
                 }), ";", (function(e) {
-                    return "purchase" === e.containerType && D
+                    return "purchase" === e.containerType && Y
                 }), " flex:1;align-items:flex-end;", (function(e) {
                     return "listing" === e.containerType && "gap: 7px;"
                 }), " &>", g.Mt, "{", (function(e) {
-                    return "purchase" === e.containerType && S
+                    return "purchase" === e.containerType && D
                 }), " font-weight:500;line-height:normal;&>", g.Sn, "{", (function(e) {
                     return "listing" === e.containerType && "padding: 7px 10px;"
                 }), ";}}")
         },
         40067: (e, t, n) => {
             n.d(t, {
-                Z: () => y
+                Z: () => h
             });
             var r = n(15861),
                 i = n(54546),
@@ -290,61 +291,62 @@
                 l = n.n(o),
                 u = n(64258),
                 c = n(37463),
-                s = n(67263),
-                d = n(66736),
-                p = n(73647),
-                m = n(27484),
-                f = n.n(m),
-                g = n(67294),
-                v = n(32981);
-            const y = function() {
-                var e = (0, v.I0)(),
-                    t = (0, v.v9)((function(e) {
+                s = n(51806),
+                d = n.n(s),
+                p = n(66736),
+                m = n(73647),
+                f = n(27484),
+                g = n.n(f),
+                v = n(67294),
+                y = n(32981);
+            const h = function() {
+                var e = (0, y.I0)(),
+                    t = (0, y.v9)((function(e) {
                         return e.listingRow.currentUserId
                     })),
-                    n = (0, v.v9)((function(e) {
+                    n = (0, y.v9)((function(e) {
                         return e.listingRow.listingId
                     })),
-                    o = (0, v.v9)((function(e) {
+                    o = (0, y.v9)((function(e) {
                         return e.listingRow.listing
                     })),
-                    m = (0, v.v9)((function(e) {
+                    s = (0, y.v9)((function(e) {
                         return e.listingRow.purchase
                     })),
-                    y = (0, v.v9)((function(e) {
+                    f = (0, y.v9)((function(e) {
                         return e.listingRow.modals.cancellation
                     })),
-                    h = (0, v.v9)((function(e) {
+                    h = (0, y.v9)((function(e) {
                         return e.listingRow.modals.cancellation.showCancellationConfirm
                     })),
-                    b = (0, v.v9)((function(e) {
+                    b = (0, y.v9)((function(e) {
                         return e.listingRow.modals.cancellation.newExpirationDate
                     })),
-                    E = (0, v.v9)((function(e) {
+                    E = (0, y.v9)((function(e) {
                         return e.listingRow.modals.cancellation.cancelImmediately
                     })),
-                    w = m ? f()(m.subscriptionExpiry) : void 0,
-                    x = null == w ? void 0 : w.diff(f()(), "months", !0),
-                    T = (0, d.x)(),
+                    w = s ? g()(s.subscriptionExpiry) : void 0,
+                    x = null == w ? void 0 : w.diff(g()(), "months", !0),
+                    T = (0, p.x)(),
                     P = (0, i.Z)(T, 2),
                     k = P[0],
                     I = P[1],
                     M = I.data,
                     R = I.isLoading,
                     C = I.isError;
-                g.useEffect((function() {
-                    y.isOpen && D()
-                }), [y.isOpen]);
+                v.useEffect((function() {
+                    f.isOpen && D()
+                }), [f.isOpen]);
                 var S = function() {
-                        e((0, p.gd)())
+                        e((0, m.gd)())
                     },
                     D = function() {
                         var i = (0, r.Z)(l().mark((function r() {
-                            var i, c, s, d;
+                            var i, c, d, p;
                             return l().wrap((function(r) {
                                 for (;;) switch (r.prev = r.next) {
                                     case 0:
-                                        return i = m && x <= 1, e((0, p.yR)(i)), r.prev = 2, r.next = 5, k({
+                                        return i = s && x <= 1, e((0, m.yR)(i)), r.prev = 2, r.next = 5, k({
                                             buyerId: t,
                                             listingId: n,
                                             reason: "user cancellation",
@@ -352,16 +354,16 @@
                                             isPreview: !0
                                         }).unwrap();
                                     case 5:
-                                        c = r.sent, y.newExpirationDate !== c.newExpiryDate && e((0, p.C0)(c.newExpiryDate)), r.next = 13;
+                                        c = r.sent, f.newExpirationDate !== c.newExpiryDate && e((0, m.C0)(c.newExpiryDate)), r.next = 13;
                                         break;
                                     case 9:
                                         r.prev = 9, r.t0 = r.catch(2), e((0, u.d)({
                                             title: "Failed to preview cancellation ".concat(o.id, " for ").concat(t),
                                             icon: a.eH,
-                                            message: null !== (s = null === (d = r.t0.data) || void 0 === d || null === (d = d.error) || void 0 === d ? void 0 : d.message) && void 0 !== s ? s : "Something went wrong",
+                                            message: null !== (d = null === (p = r.t0.data) || void 0 === p || null === (p = p.error) || void 0 === p ? void 0 : p.message) && void 0 !== d ? d : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })), e((0, p.gd)());
+                                        })), e((0, m.gd)());
                                     case 13:
                                     case "end":
                                         return r.stop()
@@ -384,11 +386,11 @@
                                             buyerId: t,
                                             listingId: n,
                                             reason: "user cancellation",
-                                            immediate: y.cancelImmediately,
+                                            immediate: f.cancelImmediately,
                                             isPreview: !1
                                         }).unwrap();
                                     case 3:
-                                        e((0, p.J6)(!0)), r.next = 10;
+                                        e((0, m.J6)(!0)), r.next = 10;
                                         break;
                                     case 6:
                                         r.prev = 6, r.t0 = r.catch(0), e((0, u.d)({
@@ -397,7 +399,7 @@
                                             message: null !== (i = null === (c = r.t0.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) && void 0 !== i ? i : "Something went wrong",
                                             color: "error",
                                             timeout: 3e3
-                                        })), e((0, p.al)(!0));
+                                        })), e((0, m.al)(!0));
                                     case 10:
                                     case "end":
                                         return r.stop()
@@ -410,46 +412,46 @@
                             return i.apply(this, arguments)
                         }
                     }();
-                var L = h && C ? g.createElement(c.qX, {
+                var L = h && C ? v.createElement(c.qX, {
                     type: "error",
                     title: "Cancellation Unsuccessful"
-                }, "Your subscription cannot be cancelled, please try again later.") : h && !C ? g.createElement(c.qX, {
+                }, "Your subscription cannot be cancelled, please try again later.") : h && !C ? v.createElement(c.qX, {
                     type: "success",
                     title: "Cancellation Successful"
-                }, "Your subscription has been cancelled successfully!") : g.createElement(g.Fragment, null, g.createElement("p", null, "Are you sure you want to cancel your subscription?"));
-                return g.createElement(c.sm, {
+                }, "Your subscription has been cancelled successfully!") : v.createElement(v.Fragment, null, v.createElement("p", null, "Are you sure you want to cancel your subscription?"));
+                return v.createElement(c.sm, {
                     headerText: "Cancel Subscription",
-                    isOpen: y.isOpen,
+                    isOpen: f.isOpen,
                     confirmText: h ? "Done" : "Confirm",
                     confirmCallback: h ? S : Y,
                     cancelCallback: S,
                     hideCancel: h,
                     size: "lg",
                     isLoading: R
-                }, g.createElement(g.Fragment, null, L, y.isOpen && o && g.createElement(c.x7, null, g.createElement(c.pw, {
+                }, v.createElement(v.Fragment, null, L, f.isOpen && o && v.createElement(c.x7, null, v.createElement(c.pw, {
                     alt: o.displayName,
                     imageId: o.imageId,
-                    fallbackSrc: s
-                }), g.createElement(c.JX, {
+                    fallbackSrc: d()
+                }), v.createElement(c.JX, {
                     style: {
                         flexGrow: 1,
                         flexBasis: 300,
                         maxWidth: "100%",
                         overflowWrap: "break-word"
                     }
-                }, g.createElement(c.X3, null, o.displayName), g.createElement("p", null, o.description))), x > 1 && !h && M ? g.createElement(g.Fragment, null, g.createElement("p", null, g.createElement("big", null, g.createElement("b", null, "Total Refund: ", g.createElement(c.b5, null), null == M ? void 0 : M.totalRefundable)), " ", "Your new expiration date will be ", f()(null == M ? void 0 : M.newExpiryDate).format("MMMM D, YYYY"), g.createElement("br", null), g.createElement(c.hh, null, "You will be refunded for the unused months. Tilia and VRChat Fees are not refunded.")), g.createElement("p", null, g.createElement(c.XZ, {
+                }, v.createElement(c.X3, null, o.displayName), v.createElement("p", null, o.description))), x > 1 && !h && M ? v.createElement(v.Fragment, null, v.createElement("p", null, v.createElement("big", null, v.createElement("b", null, "Total Refund: ", v.createElement(c.b5, null), null == M ? void 0 : M.totalRefundable)), " ", "Your new expiration date will be ", g()(null == M ? void 0 : M.newExpiryDate).format("MMMM D, YYYY"), v.createElement("br", null), v.createElement(c.hh, null, "You will be refunded for the unused months. Tilia and VRChat Fees are not refunded.")), v.createElement("p", null, v.createElement(c.XZ, {
                     id: "cancellationCheck",
                     label: " I want to remove my benefits immediately (Optional)",
                     checked: E,
                     onChange: function() {
-                        e((0, p.yR)(!y.cancelImmediately))
+                        e((0, m.yR)(!f.cancelImmediately))
                     }
-                }), g.createElement(c.hh, null, "If you enable this option, your subscription and benefits end immediately. Your total refund will be the same."))) : m && !M ? g.createElement("p", null, "This will change your current subscription expiration from ", f()(null == m ? void 0 : m.subscriptionExpiry).format("MMMM D, YYYY"), " to ", E ? "today" : f()(b).format("MMMM D, YYYY"), ".") : g.createElement("p", null, "This will change your current subscription expiration to  ", E ? "today" : f()(b).format("MMMM D, YYYY"), ".")))
+                }), v.createElement(c.hh, null, "If you enable this option, your subscription and benefits end immediately. Your total refund will be the same."))) : s && !M ? v.createElement("p", null, "This will change your current subscription expiration from ", g()(null == s ? void 0 : s.subscriptionExpiry).format("MMMM D, YYYY"), " to ", E ? "today" : g()(b).format("MMMM D, YYYY"), ".") : v.createElement("p", null, "This will change your current subscription expiration to  ", E ? "today" : g()(b).format("MMMM D, YYYY"), ".")))
             }
         },
         7701: (e, t, n) => {
             n.d(t, {
-                Z: () => x
+                Z: () => T
             });
             var r = n(15861),
                 i = n(54546),
@@ -460,43 +462,44 @@
                 c = n.n(u),
                 s = n(37463),
                 d = n(98185),
-                p = n(67263),
-                m = n(95896),
-                f = n(66736),
-                g = n(67978),
-                v = n(73647),
-                y = n(60006),
-                h = n(27484),
-                b = n.n(h),
-                E = n(67294),
-                w = n(32981);
-            const x = function(e) {
-                var t, n, u, h = e.groupData,
-                    x = (0, w.I0)(),
-                    T = b()(),
-                    P = (0, w.v9)((function(e) {
+                p = n(51806),
+                m = n.n(p),
+                f = n(95896),
+                g = n(66736),
+                v = n(67978),
+                y = n(73647),
+                h = n(60006),
+                b = n(27484),
+                E = n.n(b),
+                w = n(67294),
+                x = n(32981);
+            const T = function(e) {
+                var t, n, u, p = e.groupData,
+                    b = (0, x.I0)(),
+                    T = E()(),
+                    P = (0, x.v9)((function(e) {
                         return e.listingRow.listing
                     })),
-                    k = (0, w.v9)((function(e) {
+                    k = (0, x.v9)((function(e) {
                         return e.listingRow.group
                     })),
                     I = !(null == k || null === (t = k.myMember) || void 0 === t || !t.userId) && (null == k ? void 0 : k.ownerId) === (null == k || null === (n = k.myMember) || void 0 === n ? void 0 : n.userId),
-                    M = (0, w.v9)((function(e) {
+                    M = (0, x.v9)((function(e) {
                         return e.listingRow.purchase
                     })),
-                    R = I ? 0 : (0, w.v9)((function(e) {
+                    R = I ? 0 : (0, x.v9)((function(e) {
                         return e.listingRow.totalPrice
                     })),
-                    C = (0, w.v9)((function(e) {
+                    C = (0, x.v9)((function(e) {
                         return e.listingRow.tokenBalance
                     })),
-                    S = (0, w.v9)((function(e) {
+                    S = (0, x.v9)((function(e) {
                         return e.listingRow.modals.purchase
                     })),
-                    D = (0, w.v9)((function(e) {
+                    D = (0, x.v9)((function(e) {
                         return e.listingRow.modals.purchaseConfirmation
                     })),
-                    Y = M ? b()(M.subscriptionExpiry) : void 0,
+                    Y = M ? E()(M.subscriptionExpiry) : void 0,
                     L = null == Y ? void 0 : Y.diff(T, "days", !0),
                     O = L < 0,
                     F = (null == P ? void 0 : P.permanent) || "forevers" === (null == P ? void 0 : P.durationType),
@@ -506,7 +509,7 @@
                     Z = D.includesGroupAccess && !q,
                     U = !F && D.includesGroupAccessRemove && !q,
                     N = Z && (null == k ? void 0 : k.rules),
-                    X = (0, g.DM)({
+                    X = (0, v.DM)({
                         listingId: P.id,
                         hydrateProducts: !0
                     }, {
@@ -515,21 +518,21 @@
                     G = X.data,
                     B = X.isFetching,
                     V = (X.isError, X.error),
-                    j = (0, f.I8)(),
+                    j = (0, g.I8)(),
                     $ = (0, i.Z)(j, 2),
                     z = $[0],
                     W = $[1],
-                    _ = (W.isLoading, W.isError, W.error, E.useMemo((function() {
+                    _ = (W.isLoading, W.isError, W.error, w.useMemo((function() {
                         var e;
                         return S.selectedPurchaseQuantity ? null === (e = P.listingVariants) || void 0 === e ? void 0 : e.findLast((function(e) {
                             return (null == e ? void 0 : e.quantity) && (null == e ? void 0 : e.quantity) <= S.selectedPurchaseQuantity
                         })) : null
                     }), [S.selectedPurchaseQuantity, P])),
-                    J = E.useMemo((function() {
+                    J = w.useMemo((function() {
                         return (S.selectedPurchaseQuantity || 1) * ((null == _ ? void 0 : _.unitPriceTokens) || (null == P ? void 0 : P.priceTokens))
                     }), [S.selectedPurchaseQuantity, _, P]);
-                E.useEffect((function() {
-                    x((0, v.m1)(R)), x((0, v.OT)(J <= m.A1))
+                w.useEffect((function() {
+                    b((0, y.m1)(R)), b((0, y.OT)(J <= f.A1))
                 }), [R]);
                 var H = function() {
                     var e = (0, r.Z)(c().mark((function e() {
@@ -542,9 +545,9 @@
                                         quantity: S.selectedPurchaseQuantity,
                                         totalPrice: 0 === R ? void 0 : R,
                                         contextData: {
-                                            locationType: m.G0.GROUP,
-                                            storeId: null == h ? void 0 : h.storeId,
-                                            groupId: null == h ? void 0 : h.id
+                                            locationType: f.G0.GROUP,
+                                            storeId: null == p ? void 0 : p.storeId,
+                                            groupId: null == p ? void 0 : p.id
                                         }
                                     }).unwrap();
                                 case 2:
@@ -560,63 +563,63 @@
 
                 function K() {
                     var e;
-                    return M ? L <= 10 ? E.createElement(y.DR, {
+                    return M ? L <= 10 ? w.createElement(h.DR, {
                         bgColor: "#A53D29"
-                    }, E.createElement(s.$1, {
+                    }, w.createElement(s.$1, {
                         icon: l.faCircleExclamation
-                    }), " ", O ? E.createElement(E.Fragment, null, "Expired!") : E.createElement(E.Fragment, null, "Expires Soon!")) : E.createElement(y.DR, {
+                    }), " ", O ? w.createElement(w.Fragment, null, "Expired!") : w.createElement(w.Fragment, null, "Expires Soon!")) : w.createElement(h.DR, {
                         bgColor: "#575757"
-                    }, E.createElement(s.$1, {
+                    }, w.createElement(s.$1, {
                         icon: o.B2
-                    }), " Expires ", b()(M.subscriptionExpiry).format("MMM YYYY")) : (null === (e = P.listingVariants) || void 0 === e ? void 0 : e.length) > 0 ? E.createElement(y.DR, {
+                    }), " Expires ", E()(M.subscriptionExpiry).format("MMM YYYY")) : (null === (e = P.listingVariants) || void 0 === e ? void 0 : e.length) > 0 ? w.createElement(h.DR, {
                         bgColor: "#6F42C1"
-                    }, E.createElement(s.$1, {
+                    }, w.createElement(s.$1, {
                         icon: a.th
                     }), " Volume Discount") : null
                 }
-                return E.useEffect((function() {
-                    x((0, v.jg)(void 0 === S.selectedPurchaseQuantity || S.selectedPurchaseQuantity > 0 && S.selectedPurchaseQuantity === Number(S.enteredPurchaseQuantity) && S.selectedPurchaseQuantity <= m.b_))
-                }), [S.selectedPurchaseQuantity]), E.createElement(s.sm, {
+                return w.useEffect((function() {
+                    b((0, y.jg)(void 0 === S.selectedPurchaseQuantity || S.selectedPurchaseQuantity > 0 && S.selectedPurchaseQuantity === Number(S.enteredPurchaseQuantity) && S.selectedPurchaseQuantity <= f.b_))
+                }), [S.selectedPurchaseQuantity]), w.createElement(s.sm, {
                     headerText: "Confirm ".concat(F ? "Purchase" : "Subscription"),
                     isOpen: D.isOpen,
                     isLoading: D.isLoading,
-                    confirmText: E.createElement(E.Fragment, null, A, " for ", E.createElement(s.b5, null), R.toLocaleString()),
+                    confirmText: w.createElement(w.Fragment, null, A, " for ", w.createElement(s.b5, null), R.toLocaleString()),
                     confirmCallback: H,
                     confirmDisabled: Q || !S.isQuantityValid || !S.isTotalPriceValid,
                     cancelCallback: function() {
-                        x((0, v.gd)())
+                        b((0, y.gd)())
                     },
                     size: "lg"
-                }, D.isError && E.createElement(s.qX, {
+                }, D.isError && w.createElement(s.qX, {
                     type: "error",
                     title: "Error purchasing"
-                }, null === (u = D.error) || void 0 === u || null === (u = u.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message), E.createElement(s.x7, null, E.createElement(s.pw, {
+                }, null === (u = D.error) || void 0 === u || null === (u = u.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message), w.createElement(s.x7, null, w.createElement(s.pw, {
                     alt: P.displayName || "",
                     imageId: P.imageId,
-                    fallbackSrc: p,
+                    fallbackSrc: m(),
                     fitToCover: !0
-                }), E.createElement(s.JX, {
+                }), w.createElement(s.JX, {
                     style: {
                         flexGrow: 1,
                         flexBasis: 300,
                         maxWidth: "100%",
                         overflowWrap: "break-word"
                     }
-                }, E.createElement(s.X3, null, P.displayName, " ", E.createElement(K, null)), E.createElement("p", null, P.description), E.createElement(d.Z, {
+                }, w.createElement(s.X3, null, P.displayName, " ", w.createElement(K, null)), w.createElement("p", null, P.description), w.createElement(d.Z, {
                     loading: B,
                     error: V
-                }, (null == G ? void 0 : G.length) > 1 && !B && E.createElement(E.Fragment, null, E.createElement("p", null, F ? "Purchasing" : "Subscribing", " grants access to the following items:"), E.createElement("ul", null, G.map((function(e) {
-                    return E.createElement("li", {
+                }, (null == G ? void 0 : G.length) > 1 && !B && w.createElement(w.Fragment, null, w.createElement("p", null, F ? "Purchasing" : "Subscribing", " grants access to the following items:"), w.createElement("ul", null, G.map((function(e) {
+                    return w.createElement("li", {
                         key: e.id
-                    }, E.createElement("strong", null, e.displayName))
-                }))))))), Z && E.createElement("p", null, F ? "Purchasing" : "Subscribing", " will add you to this group."), N && E.createElement(E.Fragment, null, E.createElement("p", null, "By joining, you agree to the group's rules."), E.createElement(s.zx, {
+                    }, w.createElement("strong", null, e.displayName))
+                }))))))), Z && w.createElement("p", null, F ? "Purchasing" : "Subscribing", " will add you to this group."), N && w.createElement(w.Fragment, null, w.createElement("p", null, "By joining, you agree to the group's rules."), w.createElement(s.zx, {
                     onClick: function() {
-                        return x((0, v.oM)(k))
+                        return b((0, y.oM)(k))
                     },
                     style: {
                         marginBottom: "1rem"
                     }
-                }, "Show Group Rules")), !F && E.createElement("p", null, "This purchase will expire in ", M && "an additional ", S.selectedPurchaseQuantity * P.duration, " ", S.selectedPurchaseQuantity * P.duration == 1 ? P.durationType.replace(/s$/, "") : P.durationType, ", on", " ", b()(null == M ? void 0 : M.subscriptionExpiry).add(S.selectedPurchaseQuantity * P.duration, P.durationType.replace(/s$/, "")).format("MMM D YYYY"), "."), U && E.createElement("p", null, "Once this expires, you will be removed from the group."), Q && E.createElement(s.qX, {
+                }, "Show Group Rules")), !F && w.createElement("p", null, "This purchase will expire in ", M && "an additional ", S.selectedPurchaseQuantity * P.duration, " ", S.selectedPurchaseQuantity * P.duration == 1 ? P.durationType.replace(/s$/, "") : P.durationType, ", on", " ", E()(null == M ? void 0 : M.subscriptionExpiry).add(S.selectedPurchaseQuantity * P.duration, P.durationType.replace(/s$/, "")).format("MMM D YYYY"), "."), U && w.createElement("p", null, "Once this expires, you will be removed from the group."), Q && w.createElement(s.qX, {
                     type: "error",
                     title: "Insufficient funds"
                 }, "You don't have enough credits for this purchase. You can buy more inside VRChat."))
@@ -1229,4 +1232,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2a1ca734345de66f817c57e96810d617ad26ed6413425d2b60f2ae087b760e79.js.map
+//# sourceMappingURL=18bbadbdae8230abe54937a063dce8d49b8eb6264af09d37469bd1a0b4f04227.js.map

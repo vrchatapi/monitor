@@ -3,7 +3,7 @@
     [5842], {
         19637: (e, t, r) => {
             r.d(t, {
-                Z: () => k
+                Z: () => D
             });
             var a = r(15861),
                 n = r(4942),
@@ -22,9 +22,10 @@
                 g = r(22202),
                 b = r(67978),
                 w = r(43683),
-                h = r(67263),
-                A = r(79655);
-            const O = function(e) {
+                h = r(51806),
+                A = r.n(h),
+                O = r(79655);
+            const S = function(e) {
                 var t = e.onClose,
                     r = void 0 === t ? function() {} : t,
                     a = (0, d.v9)((function(e) {
@@ -38,7 +39,7 @@
                 }, l.createElement(p.pw, {
                     imageId: n.imageId || u || null,
                     alt: n.displayName,
-                    fallbackSrc: h,
+                    fallbackSrc: A(),
                     className: "tw-w-[150px] tw-h-[150px]",
                     fitToCover: !0
                 }), l.createElement(p.JX, {
@@ -48,7 +49,7 @@
                 }, l.createElement(p.zx, {
                     neutral: !0,
                     containerClasses: "tw-flex-1"
-                }, l.createElement(A.rU, {
+                }, l.createElement(O.rU, {
                     to: "https://docs.vrchat.com/docs",
                     target: "_blank"
                 }, "View Docs")), l.createElement(p.zx, {
@@ -57,7 +58,7 @@
                 }, "Done")))
             };
 
-            function S(e, t) {
+            function I(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -68,39 +69,39 @@
                 return r
             }
 
-            function I(e) {
+            function x(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? S(Object(r), !0).forEach((function(t) {
+                    t % 2 ? I(Object(r), !0).forEach((function(t) {
                         (0, n.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : S(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : I(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var x = (0, l.lazy)((function() {
+            var T = (0, l.lazy)((function() {
                     return r.e(8536).then(r.bind(r, 18536))
                 })),
-                T = (0, l.lazy)((function() {
+                E = (0, l.lazy)((function() {
                     return Promise.all([r.e(3261), r.e(2621)]).then(r.bind(r, 72621))
                 })),
-                E = (0, l.lazy)((function() {
+                P = (0, l.lazy)((function() {
                     return r.e(2172).then(r.bind(r, 42172))
                 })),
-                P = (0, l.lazy)((function() {
+                j = (0, l.lazy)((function() {
                     return r.e(1899).then(r.bind(r, 71899))
                 })),
-                j = (0, l.lazy)((function() {
+                q = (0, l.lazy)((function() {
                     return r.e(3871).then(r.bind(r, 3871))
                 })),
-                q = {
+                k = {
                     productDetails: "Create Product",
                     productReviewSumbit: "Submit for Review",
                     productCreated: "Product Created",
                     productReviewSubmitted: null
                 };
-            const k = function(e) {
+            const D = function(e) {
                 var t = e.onClose,
                     r = void 0 === t ? function() {} : t,
                     n = (0, d.I0)(),
@@ -109,9 +110,9 @@
                         return e.productFlow
                     })),
                     A = h.currentStep,
-                    S = h.productType,
-                    k = h.currentProduct,
-                    D = (0, l.useState)(k || {}),
+                    O = h.productType,
+                    I = h.currentProduct,
+                    D = (0, l.useState)(I || {}),
                     C = (0, u.Z)(D, 2),
                     R = C[0],
                     F = C[1];
@@ -137,21 +138,21 @@
                         return !(V || !Z) && (null == U ? void 0 : U.includes("permission-sell-avatar-products"))
                     }), [V])),
                     Y = function() {
-                        var e, t = (e = f.F_[S].indexOf(A), f.F_[S][e + 1] || A);
-                        n((0, w.Td)(q[t])), n((0, w.Bq)(t))
+                        var e, t = (e = f.F_[O].indexOf(A), f.F_[O][e + 1] || A);
+                        n((0, w.Td)(k[t])), n((0, w.Bq)(t))
                     },
                     H = function() {
-                        var e, t = (e = f.F_[S].indexOf(A), {
-                                immediateStep: f.F_[S][e - 1] || null,
-                                nextStep: f.F_[S][e - 2] || null
+                        var e, t = (e = f.F_[O].indexOf(A), {
+                                immediateStep: f.F_[O][e - 1] || null,
+                                nextStep: f.F_[O][e - 2] || null
                             }),
                             r = t.immediateStep,
                             a = t.nextStep;
                         if (!r) return n((0, w.Bq)("productType")), void n((0, w.IT)(null));
-                        n((0, w.Td)(q[r])), n((0, w.Bq)(r)), n((0, w.IT)(a))
+                        n((0, w.Td)(k[r])), n((0, w.Bq)(r)), n((0, w.IT)(a))
                     },
                     $ = function(e) {
-                        n((0, w.IR)(e)), F(I(I({}, R), e))
+                        n((0, w.IR)(e)), F(x(x({}, R), e))
                     },
                     K = function() {
                         var e = (0, a.Z)(c().mark((function e(t) {
@@ -167,7 +168,7 @@
                                                 color: "success",
                                                 timeout: 3e3
                                             })), Y()
-                                        }, e.prev = 2, e.next = 5, B(I(I({}, i && {
+                                        }, e.prev = 2, e.next = 5, B(x(x({}, i && {
                                             file: i,
                                             tag: "product"
                                         }), a)).unwrap();
@@ -247,15 +248,15 @@
                 }, function() {
                     switch (A) {
                         case "productType":
-                            return l.createElement(x, {
+                            return l.createElement(T, {
                                 onNext: Y,
                                 onClose: te,
                                 hasAvatarSellerPermission: J
                             });
                         case "productDetails":
-                            return "avatar" === S ? l.createElement(E, {
+                            return "avatar" === O ? l.createElement(P, {
                                 disabled: !0,
-                                type: S,
+                                type: O,
                                 onDataChange: $,
                                 user: i,
                                 onNext: function(e) {
@@ -265,25 +266,25 @@
                                     return H()
                                 },
                                 onClose: te
-                            }) : l.createElement(T, {
-                                type: S,
+                            }) : l.createElement(E, {
+                                type: O,
                                 onDataChange: $,
                                 user: i,
                                 onSubmit: K,
                                 onClose: te
                             });
                         case "productReviewSumbit":
-                            return l.createElement(P, {
+                            return l.createElement(j, {
                                 onPrevious: H,
                                 avatar: R,
                                 onSubmit: ee
                             });
                         case "productReviewSubmitted":
-                            return l.createElement(j, {
+                            return l.createElement(q, {
                                 onClose: te
                             });
                         case "productCreated":
-                            return l.createElement(O, {
+                            return l.createElement(S, {
                                 onClose: te
                             });
                         default:
@@ -836,4 +837,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3e77ea94d85bf4a0b8cf77536d7936d0aff73eb6b67c7f0f607e987429bc310d.js.map
+//# sourceMappingURL=7c3dbfc3bfcbcdc089cc6a308e0226b2809d9eb4905221079e385c21b3bfef24.js.map

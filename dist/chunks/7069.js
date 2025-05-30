@@ -36,7 +36,7 @@
         },
         17069: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => S
+                default: () => z
             });
             var l = a(54546),
                 n = a(62475),
@@ -108,19 +108,20 @@
             const E = x;
             var h = a(86569),
                 b = a(59814),
-                N = a(67263),
-                C = a(72522),
-                k = a(58687),
-                y = a(27484),
-                R = a.n(y),
-                q = a(32981),
-                D = function(e) {
+                N = a(51806),
+                C = a.n(N),
+                k = a(72522),
+                y = a(58687),
+                R = a(27484),
+                q = a.n(R),
+                D = a(32981),
+                P = function(e) {
                     var t = e.assetReviewData,
                         a = void 0 === t ? null : t,
                         n = e.viewReviewResultsCallback,
                         r = void 0 === n ? function() {} : n;
                     if (null === a) return null;
-                    (0, q.I0)(), a.id;
+                    (0, D.I0)(), a.id;
                     var i = a.avatar,
                         o = a.createdAt,
                         s = a.reviewDate,
@@ -129,13 +130,13 @@
                         d = i.name,
                         v = i.unityPackages,
                         f = u.useMemo((function() {
-                            return Object.keys(C.VT).reduce((function(e, t) {
-                                var a = (0, k.F)(v, t);
+                            return Object.keys(k.VT).reduce((function(e, t) {
+                                var a = (0, y.F)(v, t);
                                 return a && (e[t] = a), e
                             }), {})
                         }), [v]),
                         g = u.useMemo((function() {
-                            return Object.entries(C.VT).filter((function(e) {
+                            return Object.entries(k.VT).filter((function(e) {
                                 var t = (0, l.Z)(e, 1)[0];
                                 return !!f[t]
                             }))
@@ -149,7 +150,7 @@
                     }, u.createElement(c.pw, {
                         fitToCover: !0,
                         imageId: w,
-                        fallbackSrc: N,
+                        fallbackSrc: C(),
                         className: "tw-w-8 tw-h-8 tw-rounded-md tw-shrink-0",
                         containerColor: "#181B1F",
                         iconColor: "#404C58"
@@ -168,13 +169,13 @@
                             key: r,
                             className: "tw-m-0 tw-text-center"
                         }, u.createElement("span", null, u.createElement(c.$1, {
-                            icon: null === (a = C.VT[r]) || void 0 === a ? void 0 : a.icon
+                            icon: null === (a = k.VT[r]) || void 0 === a ? void 0 : a.icon
                         }), " ", i, " | Ver. ", o.assetVersion)))
                     }))) : u.createElement("em", null, "-")), u.createElement("div", {
                         className: "tw-items-center tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/moderation-queue:tw-max-w-max tw-hidden @md/moderation-queue:tw-flex"
-                    }, R()(o).format("ll")), u.createElement("div", {
+                    }, q()(o).format("ll")), u.createElement("div", {
                         className: "tw-items-center tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/moderation-queue:tw-max-w-max tw-hidden @sm/moderation-queue:tw-flex"
-                    }, s ? R()(s).format("ll") : "-"), u.createElement("div", {
+                    }, s ? q()(s).format("ll") : "-"), u.createElement("div", {
                         className: "tw-flex tw-items-center tw-my-2 tw-truncate @[800px]/moderation-queue:tw-max-w-max tw-capitalize"
                     }, m === p.V3.PENDING && u.createElement("span", null, "Under Review"), (m === p.V3.COMPLETE || m === p.V3.APPROVED) && u.createElement("span", {
                         className: "tw-text-green"
@@ -198,12 +199,12 @@
                         neutral: !0
                     }, "View Results"))))
                 };
-            D.propTypes = {
+            P.propTypes = {
                 assetReviewData: g().object,
                 viewReviewResultsCallback: g().func.isRequired
             };
-            const P = D;
-            var V = [{
+            const V = P;
+            var j = [{
                     label: "Product Name",
                     value: "name"
                 }, {
@@ -225,8 +226,8 @@
                     label: "Results",
                     value: ""
                 }],
-                j = [];
-            const S = function(e) {
+                S = [];
+            const z = function(e) {
                 var t, a = e.currentUser,
                     d = e.currentPage,
                     p = e.onSortByChange,
@@ -250,13 +251,13 @@
                     R = y.data,
                     q = y.isSuccess,
                     D = y.isFetching,
-                    S = y.isError,
+                    P = y.isError,
                     z = y.error,
                     A = (0, u.useCallback)((function(e) {
                         return f === e
                     }), [f]),
                     T = (0, u.useCallback)((function(e) {
-                        if (j.includes(e)) return v(e)
+                        if (S.includes(e)) return v(e)
                     }), [v]),
                     F = function(e) {
                         k(e)
@@ -267,7 +268,7 @@
                     className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/queue-heading"
                 }, u.createElement("div", {
                     className: "tw-grid tw-gap-1 tw-grid-cols-3 @[576px]/queue-heading:tw-grid-cols-4 @md/queue-heading:tw-grid-cols-5 @lg/queue-heading:tw-grid-cols-6 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color tw-py-3 tw-pb-3 tw-mx-5"
-                }, V.map((function(e) {
+                }, j.map((function(e) {
                     var t = e.label,
                         a = e.value,
                         l = (e.canCollapse, e.isSmallColumn),
@@ -288,8 +289,8 @@
                             "tw-hidden @lg/queue-heading:tw-block": v,
                             "tw-max=w-[100px]": i,
                             "tw-max-w-auto": !i,
-                            "tw-cursor-auto": !j.includes(a),
-                            "tw-cursor-pointer": j.includes(a)
+                            "tw-cursor-auto": !S.includes(a),
+                            "tw-cursor-pointer": S.includes(a)
                         }),
                         onClick: function() {
                             return T(a)
@@ -299,7 +300,7 @@
                         },
                         role: "button",
                         tabIndex: 0
-                    }, t, j.includes(a) && u.createElement(c.$1, {
+                    }, t, S.includes(a) && u.createElement(c.$1, {
                         icon: A(a) && "ascending" === g ? r.fo : n.u9,
                         size: "1x",
                         className: "tw-ml-1 ".concat(A(a) && "ascending" === g ? "tw-align-bottom" : "tw-align-top")
@@ -310,14 +311,14 @@
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, u.createElement(i.Z, {
                     loading: !0
-                })) : S ? u.createElement("div", {
+                })) : P ? u.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
                 }, u.createElement("p", null, "Error loading review data:"), u.createElement("code", null, null !== (x = z.data.error.message) && void 0 !== x ? x : "Unknown error")) : q && 0 === (null == R ? void 0 : R.length) ? u.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, u.createElement("p", {
                     className: "tw-mb-0"
                 }, "You have no assets currently in review")) : q ? R.map((function(e) {
-                    return u.createElement(P, {
+                    return u.createElement(V, {
                         key: e.id,
                         assetReviewData: e,
                         viewReviewResultsCallback: F
@@ -349,4 +350,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8ca03f92acc64616c3ebdb4347ce76f828a129eddc9888c17de5dfe773f4ab44.js.map
+//# sourceMappingURL=1e91bb72ca90fb40d631ca0476a76ec4c41295db36cb30353680dd1c5557dabd.js.map

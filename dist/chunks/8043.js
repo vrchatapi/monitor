@@ -584,122 +584,123 @@
         },
         95643: (e, t, r) => {
             r.d(t, {
-                Z: () => w
+                Z: () => y
             });
             var a = r(22984),
                 n = r(35117),
                 o = r(82414),
                 i = r(37463),
                 s = r(69181),
-                l = r(67263),
-                c = r(27484),
-                u = r.n(c),
-                d = r(45697),
-                p = r.n(d),
-                v = r(67294),
-                m = r(79655),
-                f = function(e) {
+                l = r(51806),
+                c = r.n(l),
+                u = r(27484),
+                d = r.n(u),
+                p = r(45697),
+                v = r.n(p),
+                m = r(67294),
+                f = r(79655),
+                w = function(e) {
                     var t = e.productData,
                         r = void 0 === t ? null : t,
-                        c = e.className,
-                        d = e.hasAlreadyPurchased,
-                        p = void 0 !== d && d,
-                        f = e.alreadyPurchasedData,
-                        w = void 0 === f ? null : f,
+                        l = e.className,
+                        u = e.hasAlreadyPurchased,
+                        p = void 0 !== u && u,
+                        v = e.alreadyPurchasedData,
+                        w = void 0 === v ? null : v,
                         y = e.listingData,
                         b = void 0 === y ? null : y,
-                        g = u()(null == w ? void 0 : w.expiry).year() > 9e3,
+                        g = d()(null == w ? void 0 : w.expiry).year() > 9e3,
                         x = "duration" === (null == b ? void 0 : b.listingType),
                         h = null == b ? void 0 : b.stackable,
                         F = !(null != r && r.assetDisabled) && r;
-                    return v.createElement("div", {
-                        className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(c)
-                    }, p && null !== w ? x && h ? g ? v.createElement("div", {
+                    return m.createElement("div", {
+                        className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(l)
+                    }, p && null !== w ? x && h ? g ? m.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, v.createElement("div", {
+                    }, m.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, v.createElement(i.$1, {
+                    }, m.createElement(i.$1, {
                         icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), v.createElement("div", {
+                    }), m.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, v.createElement("h2", {
+                    }, m.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), v.createElement("p", {
+                    }, "You already have access to this product."), m.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Purchasing will have no effect.")))) : v.createElement("div", {
+                    }, "Purchasing will have no effect.")))) : m.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, v.createElement("div", {
+                    }, m.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, v.createElement(i.$1, {
+                    }, m.createElement(i.$1, {
                         icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), v.createElement("div", {
+                    }), m.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, v.createElement("h2", {
+                    }, m.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), v.createElement("p", {
+                    }, "You already have access to this product."), m.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Expires at ", u()(null == w ? void 0 : w.expiry).format("llll"), ".")))) : v.createElement("div", {
+                    }, "Expires at ", d()(null == w ? void 0 : w.expiry).format("llll"), ".")))) : m.createElement("div", {
                         className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
-                    }, v.createElement("div", {
+                    }, m.createElement("div", {
                         className: "tw-flex tw-flex-row"
-                    }, v.createElement(i.$1, {
+                    }, m.createElement(i.$1, {
                         icon: o.sq,
                         size: "1x",
                         className: "tw-text-highlight tw-mt-1 tw-mr-2"
-                    }), v.createElement("div", {
+                    }), m.createElement("div", {
                         className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
-                    }, v.createElement("h2", {
+                    }, m.createElement("h2", {
                         className: "tw-text-xs"
-                    }, "You already have access to this product."), v.createElement("p", {
+                    }, "You already have access to this product."), m.createElement("p", {
                         className: "tw-text-xs tw-mb-0"
-                    }, "Purchasing will have no effect.")))) : null, !F && v.createElement(v.Fragment, null, v.createElement(i.qX, {
+                    }, "Purchasing will have no effect.")))) : null, !F && m.createElement(m.Fragment, null, m.createElement(i.qX, {
                         type: "warn",
-                        title: v.createElement("small", null, "This avatar is unavailable due to an issue."),
+                        title: m.createElement("small", null, "This avatar is unavailable due to an issue."),
                         className: "tw-mt-0"
-                    }, v.createElement("small", null, "Please check your email or notifications for more information.")), v.createElement(i.X2, {
+                    }, m.createElement("small", null, "Please check your email or notifications for more information.")), m.createElement(i.X2, {
                         className: "tw-gap-3 tw-items-center"
-                    }, v.createElement("div", {
+                    }, m.createElement("div", {
                         className: "tw-bg-hr-line-color tw-w-14 tw-h-14 tw-rounded-sm tw-p-2 tw-text-[#404c58]"
-                    }, v.createElement(i.$1, {
+                    }, m.createElement(i.$1, {
                         icon: n.faBan,
                         className: "tw-w-full tw-h-full"
-                    })), v.createElement("h6", {
+                    })), m.createElement("h6", {
                         className: "tw-p-0 tw-flex-auto tw-m-0 tw-text-placeholder-text"
-                    }, "Unavailable Product"))), F && v.createElement("div", {
+                    }, "Unavailable Product"))), F && m.createElement("div", {
                         className: "tw-flex tw-w-full ".concat(p ? "tw-opacity-30" : "tw-opacity-100")
-                    }, v.createElement(s.Z, {
+                    }, m.createElement(s.Z, {
                         alt: null == r ? void 0 : r.displayName,
                         imageId: null == r ? void 0 : r.imageId,
-                        fallbackSrc: l,
+                        fallbackSrc: c(),
                         className: "tw-w-14 tw-h-14 tw-rounded-sm tw-bg-transparent",
                         fitToCover: !0
-                    }), v.createElement("div", {
+                    }), m.createElement("div", {
                         className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-2 tw-w-2/3"
-                    }, v.createElement("h4", {
+                    }, m.createElement("h4", {
                         className: "tw-text-white tw-text-[16px] tw-truncate"
-                    }, null == r ? void 0 : r.displayName), v.createElement("p", {
+                    }, null == r ? void 0 : r.displayName), m.createElement("p", {
                         className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-text-ellipsis tw-overflow-hidden tw-break-words tw-line-clamp-3 tw-max-h-[3rem]"
-                    }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && v.createElement("div", {
+                    }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && m.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
-                    }, v.createElement(m.rU, {
+                    }, m.createElement(f.rU, {
                         to: "/home/avatar/".concat(r.avatarId),
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "tw-text-white tw-px-2 tw-py-1 tw-rounded tw-h-9 tw-w-9 tw-bg-button-bg-grey hover:tw-bg-dark-grey tw-items-center tw-justify-center tw-flex",
                         title: "Go to Avatar"
-                    }, v.createElement(i.$1, {
+                    }, m.createElement(i.$1, {
                         icon: a.t3
                     })))))
                 };
-            f.propTypes = {
-                productId: p().string,
-                className: p().string
+            w.propTypes = {
+                productId: v().string,
+                className: v().string
             };
-            const w = f
+            const y = w
         },
         751: (e, t, r) => {
             r.d(t, {
@@ -1193,4 +1194,4 @@
         }
     }
 ]);
-//# sourceMappingURL=704ab59a255ce105993f3c84655b19c716416e1cbbbef9e89cfca3a08238bfc5.js.map
+//# sourceMappingURL=57a2667174c82418272e742607ed7c097ed3a7d10dc2e427a0e3b814f1f09fcc.js.map

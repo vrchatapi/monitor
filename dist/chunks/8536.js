@@ -3,41 +3,43 @@
     [8536], {
         18536: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => i
+                default: () => m
             });
             var r = a(68055),
                 l = a(67294),
                 n = a(32981),
                 c = a(37463),
                 s = a(43683),
-                o = a(9674),
-                w = [{
+                o = a(95679),
+                w = a.n(o),
+                i = a(67511),
+                u = [{
                     label: "Udon Product",
                     value: "udon",
                     text: "Custom In-World Experiences.",
                     redirect: "https://creators.vrchat.com/worlds/udon/",
-                    image: a(31086)
+                    image: a.n(i)()
                 }, {
                     label: "Avatar",
                     value: "avatar",
                     text: "Sell your uploaded avatars.",
                     redirect: "https://creators.vrchat.com/avatars/",
-                    image: o
+                    image: w()
                 }];
-            const i = function(e) {
+            const m = function(e) {
                 var t = e.hasAvatarSellerPermission,
                     a = void 0 !== t && t,
                     o = e.onNext,
-                    i = void 0 === o ? function() {} : o,
-                    u = e.onClose,
-                    m = void 0 === u ? function() {} : u,
+                    w = void 0 === o ? function() {} : o,
+                    i = e.onClose,
+                    m = void 0 === i ? function() {} : i,
                     d = (0, n.I0)(),
                     p = (0, n.v9)((function(e) {
                         return e.productFlow.productType
                     }));
                 return l.createElement(c.JX, null, l.createElement("p", null, "Choose the type of product you’d like to create:"), l.createElement(c.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row md:tw-justify-center"
-                }, w.map((function(e) {
+                }, u.map((function(e) {
                     var t = p === e.value;
                     return l.createElement(c.JX, {
                         key: e.value,
@@ -75,11 +77,11 @@
                     neutral: !0
                 }, "Close"), l.createElement(c.zx, {
                     containerClasses: "tw-flex-1",
-                    onClick: i,
+                    onClick: w,
                     disabled: !p || "avatar" === p && !a
                 }, "Next")))
             }
         }
     }
 ]);
-//# sourceMappingURL=46e37cee51c685ef77eb99a433ac93853659b76f561fbc7ec88e197998dcb097.js.map
+//# sourceMappingURL=a7b902c2e3ddd5ad8e61e810f045db1aab6dba98572bd698686c7264bbdfc814.js.map

@@ -175,8 +175,8 @@
         40525: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                PopulationCallout: () => _n,
-                default: () => In
+                PopulationCallout: () => Tn,
+                default: () => Zn
             });
             var a = n(4965),
                 l = n(68335),
@@ -2067,17 +2067,18 @@
                 rn = n(29841),
                 sn = n(76553),
                 cn = n(68149),
-                on = n(67263),
-                mn = n(66736),
-                dn = n(16869),
-                un = n(95896),
-                wn = n(6655),
-                pn = n(1646),
-                fn = n.n(pn),
-                gn = n(49715),
-                hn = n(95643);
-            $().extend(fn());
-            var vn = function(e) {
+                on = n(51806),
+                mn = n.n(on),
+                dn = n(66736),
+                un = n(16869),
+                wn = n(95896),
+                pn = n(6655),
+                fn = n(1646),
+                gn = n.n(fn),
+                hn = n(49715),
+                vn = n(95643);
+            $().extend(gn());
+            var bn = function(e) {
                 var t, n, a = e.isOpen,
                     l = e.onCancelCallback,
                     r = e.listingData,
@@ -2097,13 +2098,13 @@
                     N = y[0],
                     k = y[1],
                     C = (0, o.Tu)().user,
-                    I = (0, mn.sy)({
+                    I = (0, dn.sy)({
                         userId: i.sellerId
                     }, {
                         skip: !(null != i && i.sellerId)
                     }),
                     Z = I.data,
-                    j = (I.isFetching, I.isError, I.error, (0, wn.pp)({
+                    j = (I.isFetching, I.isError, I.error, (0, pn.pp)({
                         userId: C.id
                     }, {
                         skip: !C
@@ -2111,13 +2112,13 @@
                     z = j.data,
                     D = (void 0 === z ? {} : z).balance,
                     _ = j.isFetching,
-                    T = (0, dn.mr)({
+                    T = (0, un.mr)({
                         listingId: i.id,
                         hydrate: !0
                     }, {
                         skip: null === i
                     }).data,
-                    L = (0, mn.I8)(),
+                    L = (0, dn.I8)(),
                     M = (0, w.Z)(L, 2),
                     U = M[0],
                     P = M[1],
@@ -2126,7 +2127,7 @@
                     q = P.error,
                     O = P.isSuccess,
                     G = P.reset,
-                    V = (0, mn.YZ)(),
+                    V = (0, dn.YZ)(),
                     J = (0, w.Z)(V, 2),
                     H = J[0],
                     B = J[1],
@@ -2181,7 +2182,7 @@
                             return t.productId === e
                         }))
                     })),
-                    re = (null == Z ? void 0 : Z.accountSellerStatus) === un.dd.SUSPENDED,
+                    re = (null == Z ? void 0 : Z.accountSellerStatus) === wn.dd.SUSPENDED,
                     ie = W || _ || ne || Q || ae || le || re,
                     se = "instant" === (null == i ? void 0 : i.listingType),
                     ce = "duration" === (null == i ? void 0 : i.listingType),
@@ -2196,7 +2197,7 @@
                                             quantity: 1,
                                             totalPrice: i.priceTokens,
                                             contextData: {
-                                                locationType: un.G0.WORLD,
+                                                locationType: wn.G0.WORLD,
                                                 storeId: null == c ? void 0 : c.storeId,
                                                 worldId: null == c ? void 0 : c.id
                                             }
@@ -2234,7 +2235,7 @@
                     className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5 tw-aspect-square",
                     alt: i.displayName,
                     imageId: null == i ? void 0 : i.imageId,
-                    fallbackSrc: on,
+                    fallbackSrc: mn(),
                     fitToCover: !0
                 }), s.createElement("h3", {
                     className: "heading"
@@ -2328,10 +2329,10 @@
                     className: "tw-w-full tw-h-full",
                     alt: i.displayName,
                     imageId: null == i ? void 0 : i.imageId,
-                    fallbackSrc: on
+                    fallbackSrc: mn()
                 })), s.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
-                }, s.createElement(gn.Z, {
+                }, s.createElement(hn.Z, {
                     listingType: i.listingType,
                     className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                 }), s.createElement("h4", {
@@ -2367,7 +2368,7 @@
                 }))), p && s.createElement("div", {
                     className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
                 }, null == T || null === (n = T.hydratedProducts) || void 0 === n ? void 0 : n.map((function(e) {
-                    return s.createElement(hn.Z, {
+                    return s.createElement(vn.Z, {
                         className: "tw-my-2",
                         key: e.id,
                         productData: e,
@@ -2407,13 +2408,13 @@
                     onClick: de
                 }, "Cancel")))))
             };
-            vn.propTypes = {
+            bn.propTypes = {
                 show: _().bool.isRequired,
                 onHide: _().func.isRequired,
                 onConfirm: _().func.isRequired
             };
-            const bn = vn;
-            var xn = function(e) {
+            const xn = bn;
+            var En = function(e) {
                 var t = e.isDetailedView,
                     n = void 0 === t || t,
                     a = e.listingData,
@@ -2436,7 +2437,7 @@
                     className: "tw-w-32 tw-h-full tw-rounded-md tw-bg-transparent tw-pr-5 tw-hidden @lg/listingCard:tw-block",
                     alt: c,
                     imageId: null == l ? void 0 : l.imageId,
-                    fallbackSrc: on,
+                    fallbackSrc: mn(),
                     fitToCover: !0
                 }), s.createElement("div", {
                     className: "tw-w-full @sm:tw-w-fit tw-text-ellipsis"
@@ -2444,7 +2445,7 @@
                     className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/listingCard:tw-flex-row tw-items-start @sm/listingCard:tw-items-center "
                 }, s.createElement("h4", {
                     className: "tw-max-w-[250px] @sm/listingCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
-                }, c), s.createElement(gn.Z, {
+                }, c), s.createElement(hn.Z, {
                     listingType: o,
                     className: "tw-ml-0 @sm/listingCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 })), s.createElement("div", {
@@ -2470,7 +2471,7 @@
                     className: "tw-rounded-md tw-bg-grey tw-p-1 tw-flex-1"
                 }, s.createElement("div", null, s.createElement("div", {
                     className: "tw-absolute tw-p-3 "
-                }, s.createElement(gn.Z, {
+                }, s.createElement(hn.Z, {
                     listingType: o,
                     className: "tw-bg-dark-grey-transparent-90"
                 })), s.createElement("div", {
@@ -2479,7 +2480,7 @@
                     className: "tw-w-full tw-h-full tw-bg-transparent",
                     alt: l.displayName,
                     imageId: null == l ? void 0 : l.imageId,
-                    fallbackSrc: on,
+                    fallbackSrc: mn(),
                     fitToCover: !0
                 }))), s.createElement("div", {
                     className: "tw-p-3"
@@ -2495,13 +2496,13 @@
                     }
                 }, "View Details")))
             };
-            xn.propTypes = {
+            En.propTypes = {
                 listingData: _().object.isRequired,
                 isDetailedView: _().bool
             };
-            const En = xn;
-            var yn = n(76176);
-            const Nn = function(e) {
+            const yn = En;
+            var Nn = n(76176);
+            const kn = function(e) {
                 var t = e.searchParams,
                     n = e.listingType,
                     a = e.sortBy,
@@ -2511,7 +2512,7 @@
                     n && e.set("listingType", n), a && e.set("sortBy", a), e.toString() !== t.toString() && l(e)
                 }), [n, a, t, l])
             };
-            var kn = function(e) {
+            var Cn = function(e) {
                 var t = e.worldData,
                     n = void 0 === t ? null : t;
                 if (null === n) return null;
@@ -2543,14 +2544,14 @@
                     D = (0, w.Z)($, 2),
                     _ = D[0],
                     T = D[1],
-                    L = (0, mn.mb)({
+                    L = (0, dn.mb)({
                         storeId: null == n ? void 0 : n.storeId,
                         checkListingsPurchasesStatus: !0
                     }, {
                         skip: !(null != n && n.storeId)
                     }).data,
-                    M = (0, yn.Z)(_);
-                Nn({
+                    M = (0, Nn.Z)(_);
+                kn({
                     searchParams: g,
                     listingType: x,
                     sortBy: k,
@@ -2570,7 +2571,7 @@
                     R = function(e) {
                         u(e), i(!0)
                     },
-                    A = un.di.filter((function(e) {
+                    A = wn.di.filter((function(e) {
                         return "subscription" !== e.value
                     }));
                 return s.createElement("div", null, s.createElement(d.$4, null, U), s.createElement("h1", {
@@ -2589,7 +2590,7 @@
                     className: "tw-h-9",
                     label: "Sort By",
                     value: k,
-                    options: un.vA,
+                    options: wn.vA,
                     onChange: C
                 })), s.createElement("div", {
                     className: "tw-flex tw-justify-end tw-w-1/3"
@@ -2618,13 +2619,13 @@
                 }, "No store listings found")), s.createElement("div", {
                     className: "tw-mt-5 ".concat(j ? "" : "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-2 tw-flex-wrap")
                 }, null == P ? void 0 : P.map((function(e) {
-                    return s.createElement(En, {
+                    return s.createElement(yn, {
                         key: e.id,
                         listingData: e,
                         isDetailedView: j,
                         viewDetailsCallback: R
                     })
-                })), s.createElement(En, null))), s.createElement(bn, {
+                })), s.createElement(yn, null))), s.createElement(xn, {
                     worldData: n,
                     listingData: m,
                     isOpen: r,
@@ -2633,9 +2634,9 @@
                     }
                 }))
             };
-            kn.propTypes = {};
-            const Cn = kn;
-            const In = function() {
+            Cn.propTypes = {};
+            const In = Cn;
+            const Zn = function() {
                 var e = (0, c.UO)().worldId,
                     t = (0, m.XC)().data,
                     n = (0, o.pc)(),
@@ -2656,13 +2657,13 @@
                     }), []), s.useEffect((function() {
                         var e;
                         document.title = "".concat(null !== (e = null == w ? void 0 : w.name) && void 0 !== e ? e : "World", " - VRChat")
-                    }), [w]), h || null == w || !w.id || null == t || !t.id) return s.createElement(jn, {
+                    }), [w]), h || null == w || !w.id || null == t || !t.id) return s.createElement(zn, {
                     className: "w-100"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col"
-                }, s.createElement($n, {
+                }, s.createElement(Dn, {
                     width: "100%"
-                }), s.createElement(Sn, {
+                }), s.createElement(jn, {
                     className: "mt-2 flex-column flex-sm-row "
                 }, s.createElement("div", {
                     style: {
@@ -2679,7 +2680,7 @@
                 })), s.createElement(d.UU, {
                     height: "80px",
                     width: "300px"
-                })), s.createElement(Sn, {
+                })), s.createElement(jn, {
                     className: "mt-2 flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col w-100 me-3 mb-3"
@@ -2731,7 +2732,7 @@
                 }))))));
                 var v = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.id) === (null == w ? void 0 : w.authorId),
                     b = w.storeId && null !== w.storeId;
-                return s.createElement(jn, null, "hidden" === (null == w ? void 0 : w.releaseStatus) && s.createElement(Sn, {
+                return s.createElement(zn, null, "hidden" === (null == w ? void 0 : w.releaseStatus) && s.createElement(jn, {
                     className: "justify-content-between flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col ms-0 ms-sm-2 flex-grow-1"
@@ -2739,7 +2740,7 @@
                     type: "error",
                     title: "World Deleted",
                     message: "This World has been deleted"
-                }))), w.previewYoutubeId ? s.createElement(zn, {
+                }))), w.previewYoutubeId ? s.createElement($n, {
                     className: "mt-2"
                 }, s.createElement("iframe", {
                     src: "https://www.youtube.com/embed/".concat(w.previewYoutubeId),
@@ -2748,7 +2749,7 @@
                     frameBorder: "0",
                     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
                     allowFullScreen: !0
-                })) : s.createElement(Dn, {
+                })) : s.createElement(_n, {
                     role: "img",
                     title: "".concat(null == w ? void 0 : w.name, " Preview"),
                     image: w.imageUrl
@@ -2784,47 +2785,47 @@
                     })
                 }), s.createElement(c.AW, {
                     path: "/store",
-                    element: s.createElement(Cn, {
+                    element: s.createElement(In, {
                         worldData: w
                     })
                 })))
             };
-            var Zn = (0, a.Z)("div", {
+            var Sn = (0, a.Z)("div", {
                     target: "e1mfpqtc6"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                Sn = (0, a.Z)("div", {
+                jn = (0, a.Z)("div", {
                     target: "e1mfpqtc5"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                jn = (0, a.Z)(Zn, {
+                zn = (0, a.Z)(Sn, {
                     target: "e1mfpqtc4"
                 })({
                     name: "qgr7u4",
                     styles: "padding-bottom:100px;max-width:1200px;align-self:center;width:100%"
                 }),
-                zn = (0, a.Z)("div", {
+                $n = (0, a.Z)("div", {
                     target: "e1mfpqtc3"
                 })({
                     name: "p7qmao",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden;padding-top:30px;border-radius:4px;iframe,object,embed{position:absolute;top:0;left:0;width:100%;height:100%;}"
                 }),
-                $n = (0, a.Z)(d.UU, {
+                Dn = (0, a.Z)(d.UU, {
                     target: "e1mfpqtc2"
                 })({
                     name: "1dgkeo9",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden"
                 }),
-                Dn = (0, a.Z)("div", {
+                _n = (0, a.Z)("div", {
                     target: "e1mfpqtc1"
                 })("padding-bottom:50%;width:100%;height:0;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:4px;background-image:url(", (function(e) {
                     return e.image
                 }), ");"),
-                _n = (0, a.Z)("div", {
+                Tn = (0, a.Z)("div", {
                     target: "e1mfpqtc0"
                 })({
                     name: "12ndgvw",
@@ -3229,4 +3230,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cd0cdb657fda4517a7adcf8b6c9af869c6bd26792473d8c933a5faf4d1f88870.js.map
+//# sourceMappingURL=403226d51bdd5a93cd063299fbc090435b7eca2d87403c29a1169cd347f130cc.js.map
