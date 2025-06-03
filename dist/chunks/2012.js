@@ -305,7 +305,7 @@
                         containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
                         disabled: !ke
                     }, "Publish Listing"))), G && se && C.createElement(k.Z, {
-                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
+                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
                     }, C.createElement(p.X2, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
                     }, C.createElement(p.zx, {
@@ -477,4 +477,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71eaea7fbca65a7ecad6ff0cded51443b7fcea027590006ce9fd9b1b87af8389.js.map
+//# sourceMappingURL=5234b3572ba06b169acf4248b05beea9d8511cae803bb729fda48e95b18f4dbb.js.map

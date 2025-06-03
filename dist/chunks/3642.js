@@ -14,8 +14,8 @@
                 c = n(6811),
                 u = n(64687),
                 d = n.n(u),
-                m = n(64258),
-                w = n(37463),
+                w = n(64258),
+                m = n(37463),
                 f = n(72998),
                 p = n(95896),
                 g = n(17383),
@@ -125,14 +125,14 @@
                             skip: !A
                         })),
                         de = ue.data,
-                        me = ue.isLoading,
-                        we = (ue.isError, ue.error, (0, b.Qb)({
+                        we = ue.isLoading,
+                        me = (ue.isError, ue.error, (0, b.Qb)({
                             avatarIds: ne
                         }, {
                             skip: !ne.length
                         })),
-                        fe = we.data,
-                        pe = (we.isFetching, we.isError, we.error, (0, I.useMemo)((function() {
+                        fe = me.data,
+                        pe = (me.isFetching, me.isError, me.error, (0, I.useMemo)((function() {
                             return (null != fe ? fe : []).map((function(e) {
                                 return {
                                     fileId: e.id,
@@ -171,7 +171,7 @@
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return t = function() {
-                                                z((0, m.d)({
+                                                z((0, w.d)({
                                                     title: "Listing updated successfully!",
                                                     icon: c.f8,
                                                     message: "Your listing has been updated successfully!",
@@ -185,7 +185,7 @@
                                             t(), e.next = 11;
                                             break;
                                         case 7:
-                                            e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), z((0, m.d)({
+                                            e.prev = 7, e.t0 = e.catch(1), console.error("error", e.t0), z((0, w.d)({
                                                 title: "Failed to update listing!",
                                                 icon: o.eH,
                                                 message: null !== (n = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Something went wrong",
@@ -220,10 +220,10 @@
                                 a = H.products.length > 0 && H.products.length <= p._1;
                             return n && i && a && Pe
                         }), [H]),
-                        Le = ae || ce || me;
-                    return I.createElement(I.Fragment, null, Le && I.createElement("div", null, "Loading..."), !Le && H && !ee && !F && I.createElement(w.JX, {
+                        Le = ae || ce || we;
+                    return I.createElement(I.Fragment, null, Le && I.createElement("div", null, "Loading..."), !Le && H && !ee && !F && I.createElement(m.JX, {
                         className: "tw-w-full tw-relative"
-                    }, (Ce || ke) && I.createElement(w.qX, {
+                    }, (Ce || ke) && I.createElement(m.qX, {
                         title: Ce ? "Listing is not purchasable" : "Listing contains some unavailable products",
                         type: "warn",
                         message: Ce ? "This listing cannot be purchased because it contains only products that are not eligible for sale. Resolve the issues to re-enable the listing and make it available to buyers." : "This listing is still available for purchase, but buyers will not receive the unavailable products included in the listing."
@@ -260,12 +260,12 @@
                         className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
                     }, I.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-flex-auto"
-                    }, I.createElement(w.zx, {
+                    }, I.createElement(m.zx, {
                         neutral: !0,
                         type: "button",
                         onClick: k,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
-                    }, "Cancel"), I.createElement(w.zx, {
+                    }, "Cancel"), I.createElement(m.zx, {
                         type: "button",
                         onClick: function() {
                             return D(ie)
@@ -274,47 +274,47 @@
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1"
                     }, "Delete Listing")), I.createElement("div", {
                         className: "tw-gap-3 tw-flex tw-flex-col sm:tw-flex-row sm:tw-max-w-1/2 tw-justify-end tw-flex-auto tw-flex-wrap"
-                    }, se && I.createElement(w.zx, {
+                    }, se && I.createElement(m.zx, {
                         transparent: !0,
                         containerClasses: "tw-w-fit md:tw-max-w-[160px] tw-flex-1",
                         onClick: function() {
                             return je(!0)
                         }
-                    }, I.createElement(w.$1, {
+                    }, I.createElement(m.$1, {
                         icon: l.wl,
                         className: "tw-mr-2"
-                    }), "Preview Listing"), I.createElement(w.zx, {
+                    }), "Preview Listing"), I.createElement(m.zx, {
                         type: "button",
                         onClick: ye ? function() {
                             te(!0)
                         } : Ie,
                         containerClasses: "md:tw-max-w-[140px] tw-flex-1",
                         disabled: !Oe
-                    }, "Save")))), ee && I.createElement(w.JX, null, I.createElement(T.Z, null), I.createElement("div", {
+                    }, "Save")))), ee && I.createElement(m.JX, null, I.createElement(T.Z, null), I.createElement("div", {
                         className: "tw-mt-8 tw-justify-between tw-gap-3 tw-flex-col sm:tw-flex-row tw-flex tw-flex-wrap"
-                    }, I.createElement(w.zx, {
+                    }, I.createElement(m.zx, {
                         neutral: !0,
                         type: "button",
                         onClick: function() {
                             return te(!1)
                         },
                         containerClasses: "md:tw-max-w-[170px] tw-flex-auto"
-                    }, "Back"), I.createElement(w.zx, {
+                    }, "Back"), I.createElement(m.zx, {
                         type: "button",
                         onClick: Ie,
                         containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
                         disabled: !Oe
                     }, "Publish Listing"))), F && se && I.createElement(O.Z, {
-                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
-                    }, I.createElement(w.X2, {
+                        className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
+                    }, I.createElement(m.X2, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
-                    }, I.createElement(w.zx, {
+                    }, I.createElement(m.zx, {
                         neutral: !0,
                         containerClasses: "tw-w-fit",
                         onClick: function() {
                             return z((0, E.xj)(!1)), void z((0, E.Td)("Edit Listing"))
                         }
-                    }, I.createElement(w.$1, {
+                    }, I.createElement(m.$1, {
                         icon: s.YI
                     }), " Close Preview")), I.createElement(I.Suspense, {
                         fallback: I.createElement("div", null, "Loading...")
@@ -340,4 +340,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c5cd0af7f19815c080095246a82a2a61c57a333e9cc02a6b5138346761abe5e0.js.map
+//# sourceMappingURL=413881734e430d9f2e97e494064daebba0d43d94dde52db8a082f88c29901126.js.map

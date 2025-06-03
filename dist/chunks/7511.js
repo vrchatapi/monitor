@@ -1,49 +1,49 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [7511], {
-        77511: (e, t, r) => {
+        77511: (e, t, n) => {
             "use strict";
-            r.r(t), r.d(t, {
+            n.r(t), n.d(t, {
                 default: () => Q
             });
-            var n = r(42138),
-                a = r(4965),
-                l = r(67294),
-                o = r(79655),
-                c = r(95896),
-                i = r(37463),
-                s = r(50048),
-                u = r(17383),
-                d = (r(22202), r(82197)),
-                w = r(64358),
-                p = r(54546),
-                m = r(65394),
-                g = r(85020),
-                h = r(45697),
-                f = r.n(h),
-                v = r(87462),
-                b = r(45987),
-                y = r(93261),
-                x = r(78666),
-                E = ["groupId"],
+            var r = n(42138),
+                a = n(4965),
+                l = n(67294),
+                o = n(79655),
+                c = n(95896),
+                i = n(37463),
+                s = n(50048),
+                u = n(17383),
+                d = (n(22202), n(82197)),
+                w = n(64358),
+                p = n(54546),
+                m = n(65394),
+                g = n(85020),
+                h = n(45697),
+                f = n.n(h),
+                v = n(87462),
+                b = n(45987),
+                y = n(93261),
+                E = n(78666),
+                x = ["groupId"],
                 k = function(e) {
                     var t = e.groupId,
-                        r = void 0 === t ? null : t,
-                        n = (0, b.Z)(e, E),
+                        n = void 0 === t ? null : t,
+                        r = (0, b.Z)(e, x),
                         a = (0, y.r5)({
-                            groupId: r
+                            groupId: n
                         }, {
-                            skip: null === r
+                            skip: null === n
                         }),
                         o = a.data,
                         c = a.isLoading,
                         s = a.isError,
                         u = a.isSuccess;
-                    return null === r || s ? null : c ? l.createElement(i.UU, (0, v.Z)({
+                    return null === n || s ? null : c ? l.createElement(i.UU, (0, v.Z)({
                         width: "auto",
                         height: "250px"
-                    }, n)) : u ? l.createElement(x.Z, (0, v.Z)({
+                    }, r)) : u ? l.createElement(E.Z, (0, v.Z)({
                         group: o
-                    }, n)) : void 0
+                    }, r)) : void 0
                 };
             k.propTypes = {
                 groupId: f().string
@@ -51,8 +51,8 @@
             const S = k;
             var N = function(e) {
                 var t = e.title,
-                    r = e.groupIds,
-                    n = void 0 === r ? [] : r,
+                    n = e.groupIds,
+                    r = void 0 === n ? [] : n,
                     a = (0, l.useState)(!0),
                     o = (0, p.Z)(a, 2),
                     c = o[0],
@@ -64,14 +64,14 @@
                     f = (0, l.useRef)(null);
                 (0, l.useEffect)((function() {
                     f.current && s(f.current.scrollWidth <= f.current.offsetWidth)
-                }), [n]);
+                }), [r]);
                 var v = (0, l.useMemo)((function() {
                         return !!f.current && f.current.scrollLeft >= f.current.scrollWidth - f.current.offsetWidth
                     }), [w]),
                     b = (0, l.useMemo)((function() {
                         return !f.current || f.current.scrollLeft <= 200
                     }), [w]);
-                return n.length < 1 ? null : l.createElement("div", {
+                return r.length < 1 ? null : l.createElement("div", {
                     className: "tw-py-6 tw-relative tw-w-full"
                 }, l.createElement("h2", {
                     className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
@@ -81,7 +81,7 @@
                         return h(e.currentTarget.scrollLeft)
                     },
                     className: "tw-snap-x tw-whitespace-nowrap tw-overflow-x-scroll tw-snap-mandatory tw-scroll-smooth"
-                }, n.map((function(e) {
+                }, r.map((function(e) {
                     return l.createElement("div", {
                         key: e,
                         className: "tw-mr-4 tw-mt-4 tw-snap-center tw-w-80 tw-inline-block tw-h-64 tw-scroll-ml-6 tw-snap-always"
@@ -113,37 +113,37 @@
                 groupIds: f().arrayOf(f().string).isRequired
             };
             const I = N;
-            var Z = r(1208),
-                C = r(89182),
+            var C = n(1208),
+                Z = n(89182),
                 L = ["worldId"],
                 R = function(e) {
                     var t = e.worldId,
-                        r = void 0 === t ? null : t,
-                        n = (0, b.Z)(e, L),
-                        a = (0, Z.Vw)({
-                            worldId: r
+                        n = void 0 === t ? null : t,
+                        r = (0, b.Z)(e, L),
+                        a = (0, C.Vw)({
+                            worldId: n
                         }, {
-                            skip: null === r
+                            skip: null === n
                         }),
                         o = a.data,
                         c = a.isLoading,
                         s = a.isError,
                         u = a.isSuccess;
-                    return null === r || s ? null : c ? l.createElement(i.UU, (0, v.Z)({
+                    return null === n || s ? null : c ? l.createElement(i.UU, (0, v.Z)({
                         width: "auto",
                         height: "420px"
-                    }, n)) : u ? l.createElement(C.Z, (0, v.Z)({
+                    }, r)) : u ? l.createElement(Z.Z, (0, v.Z)({
                         world: o
-                    }, n)) : void 0
+                    }, r)) : void 0
                 };
             R.propTypes = {
                 worldId: f().string
             };
             const T = R;
-            var j = function(e) {
+            var q = function(e) {
                 var t = e.title,
-                    r = e.worldIds,
-                    n = void 0 === r ? [] : r,
+                    n = e.worldIds,
+                    r = void 0 === n ? [] : n,
                     a = (0, l.useState)(!0),
                     o = (0, p.Z)(a, 2),
                     c = o[0],
@@ -155,14 +155,14 @@
                     f = (0, l.useRef)(null);
                 (0, l.useEffect)((function() {
                     f.current && s(f.current.scrollWidth <= f.current.offsetWidth)
-                }), [n]);
+                }), [r]);
                 var v = (0, l.useMemo)((function() {
                         return !!f.current && f.current.scrollLeft >= f.current.scrollWidth - f.current.offsetWidth
                     }), [w]),
                     b = (0, l.useMemo)((function() {
                         return !f.current || f.current.scrollLeft <= 300
                     }), [w]);
-                return n.length < 1 ? null : l.createElement("div", {
+                return r.length < 1 ? null : l.createElement("div", {
                     className: "tw-py-6 tw-relative tw-w-full"
                 }, l.createElement("h2", {
                     className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
@@ -172,7 +172,7 @@
                     onScroll: function(e) {
                         return h(e.currentTarget.scrollLeft)
                     }
-                }, n.map((function(e) {
+                }, r.map((function(e) {
                     return l.createElement("div", {
                         key: e,
                         className: "tw-snap-center tw-w-80 tw-inline-block tw-h-98 tw-scroll-ml-6 tw-snap-always"
@@ -200,25 +200,25 @@
                     className: "tw-text-highlight tw-text-2xl"
                 }))))
             };
-            j.propTypes = {
+            q.propTypes = {
                 title: f().string.isRequired,
                 worldIds: f().arrayOf(f().string).isRequired
             };
-            const q = j;
-            var W = r(40433),
-                P = r.n(W),
-                A = r(60542),
-                M = r.n(A),
-                _ = r(43e3),
-                z = r.n(_),
-                U = r(15630),
-                V = r.n(U),
-                F = r(69595),
-                O = r.n(F),
-                D = r(96752),
-                $ = r.n(D);
+            const W = q;
+            var j = n(40433),
+                P = n.n(j),
+                A = n(60542),
+                M = n.n(A),
+                V = n(43e3),
+                z = n.n(V),
+                _ = n(15630),
+                U = n.n(_),
+                D = n(69595),
+                O = n.n(D),
+                $ = n(96752),
+                F = n.n($);
             const Q = function() {
-                var e, t, r = (0, u.Tu)({
+                var e, t, n = (0, u.Tu)({
                         withEconomyAccount: !0
                     }).user,
                     a = (0, d.l)({
@@ -232,12 +232,12 @@
                     h = l.useMemo((function() {
                         var e;
                         return null == g || null === (e = g.map((function(e) {
-                            var t = Array.isArray(e.ids) && (0, w.Sy)((0, n.Z)(e.ids)).slice(0, e.maxCells || void 0) || [];
+                            var t = Array.isArray(e.ids) && (0, w.Sy)((0, r.Z)(e.ids)).slice(0, e.maxCells || void 0) || [];
                             switch (e.type) {
                                 case "worlds":
-                                    var r, a, o, c;
-                                    return l.createElement(q, {
-                                        key: "".concat(e.type, ":").concat(null !== (r = null === (a = e.name) || void 0 === a ? void 0 : a.fallback) && void 0 !== r ? r : e.name, ":").concat(e.maxCells),
+                                    var n, a, o, c;
+                                    return l.createElement(W, {
+                                        key: "".concat(e.type, ":").concat(null !== (n = null === (a = e.name) || void 0 === a ? void 0 : a.fallback) && void 0 !== n ? n : e.name, ":").concat(e.maxCells),
                                         title: null !== (o = null === (c = e.name) || void 0 === c ? void 0 : c.fallback) && void 0 !== o ? o : e.name,
                                         worldIds: t
                                     });
@@ -255,7 +255,7 @@
                             return !!e
                         }))
                     }), [g]),
-                    f = (null == r || null === (t = r.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.dd.INVITED;
+                    f = (null == n || null === (t = n.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.dd.INVITED;
                 return l.createElement(l.Fragment, null, l.createElement(G, {
                     className: "flex-row px-1 gap-1 justify-content-evenly align-items-center"
                 }, l.createElement("picture", {
@@ -266,60 +266,34 @@
                     src: P(),
                     width: "272",
                     alt: "A cute catgirl smiles and points at the viewer"
-                })), l.createElement(Y, {
+                })), l.createElement(H, {
                     className: "fw-normal my-3 text-center"
                 }, "Welcome to ", l.createElement("br", null), l.createElement(B, null, "VRChat Marketplace")), l.createElement("picture", {
                     className: "tw--mt-4 tw--mb-8 tw-pointer-events-none"
                 }, l.createElement("source", {
-                    srcSet: "".concat(O(), ", ").concat($(), " 2x")
+                    srcSet: "".concat(O(), ", ").concat(F(), " 2x")
                 }), l.createElement("img", {
                     src: O(),
                     width: "280",
                     alt: "Emoji of the VRChat Plus logo, a dollar bill, and a smiling face with heart eyes"
                 }))), l.createElement(i.Ao, {
                     className: "d-flex flex-row flex-wrap tw-gap-12 tw-p-12"
-                }, l.createElement("div", {
-                    style: {
-                        flex: "1 1 300px"
-                    }
-                }, l.createElement("h4", null, "VRChat Marketplace is here!"), l.createElement("p", null, "VRChat Marketplace is a place where you can manage your VRChat Plus membership and buy or sell stuff such as Worlds, Group Roles, etc, whether you want to support your favorite creators or just to become a mighty creator, this is the place for you!"), l.createElement("p", null, "To learn more about the VRChat Marketplace, please head to", " ", l.createElement("a", {
+                }, l.createElement("div", null, l.createElement("h4", null, "Welcome to the VRChat Marketplace!"), l.createElement("p", null, "The VRChat Marketplace is your gateway to premium world features, group perks, and avatars made by our community. Discover and purchase listings inside VRChat using your VRChat Credits."), l.createElement("p", null, "To learn more about the VRChat Marketplace, please head to", " ", l.createElement("a", {
                     href: "https://help.vrchat.com/hc/en-us/articles/23255458227987-Creator-Economy-Frequently-Asked-Questions",
                     target: "_blank",
                     rel: "noreferrer"
-                }, "our FAQ page"), "."), l.createElement("div", {
+                }, "our FAQ page"), "."), l.createElement("p", null, "Need to manage your VRChat Plus membership? Head to the Wallet tab to review or update your subscription details."), l.createElement("div", {
                     className: "d-flex flex-row flex-wrap gap-2 align-items-start"
-                }, l.createElement(K, {
+                }, l.createElement(J, {
                     to: "../wallet"
-                }, "Check my Wallet"), f && l.createElement(K, {
+                }, "Check my Wallet"), f && l.createElement(J, {
                     to: "../storefront"
-                }, "Manage my Store"))), l.createElement("div", {
-                    style: {
-                        flex: "1 1 240px",
-                        maxWidth: 560
-                    }
-                }, l.createElement("div", {
-                    style: {
-                        width: "100%",
-                        aspectRatio: 16 / 9
-                    }
-                }, l.createElement("iframe", {
-                    width: "560",
-                    height: "315",
-                    style: {
-                        width: "100%",
-                        height: "100%"
-                    },
-                    src: "https://www.youtube-nocookie.com/embed/mgk7mpxEjSU?si=bbXFx3EFYA3doKSz&rel=0&cc_load_policy=1",
-                    title: "YouTube video player",
-                    frameBorder: "0",
-                    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
-                    allowFullScreen: !0
-                })))), p ? l.createElement(i.UU, null) : h)
+                }, "Manage my Store")))), p ? l.createElement(i.UU, null) : h)
             };
             var G = (0, a.Z)(i.oI, {
                     target: "e1g9fx423"
-                })("background-color:#715900;background-size:cover;background-position:center;background-image:url(", z(), ");@media (min-device-pixel-ratio: 1.5){background-image:url(", V(), ");}border:none;padding:0;&>picture:last-child{z-index:1;}@media (max-width: 479px){&>picture:last-child{display:none;}}"),
-                Y = (0, a.Z)("h3", {
+                })("background-color:#715900;background-size:cover;background-position:center;background-image:url(", z(), ");@media (min-device-pixel-ratio: 1.5){background-image:url(", U(), ");}border:none;padding:0;&>picture:last-child{z-index:1;}@media (max-width: 479px){&>picture:last-child{display:none;}}"),
+                H = (0, a.Z)("h3", {
                     target: "e1g9fx422"
                 })({
                     name: "fxe5j0",
@@ -331,7 +305,7 @@
                     name: "vk99or",
                     styles: "color:#f6de09;font-weight:bold"
                 }),
-                K = (0, a.Z)(s.Sn.withComponent(o.rU, {
+                J = (0, a.Z)(s.Sn.withComponent(o.rU, {
                     target: "e1g9fx424"
                 }), {
                     target: "e1g9fx420"
@@ -340,19 +314,19 @@
                     styles: "flex:0 0 auto;&:hover{text-decoration:none;}"
                 })
         },
-        89182: (e, t, r) => {
+        89182: (e, t, n) => {
             "use strict";
-            r.d(t, {
+            n.d(t, {
                 Z: () => s
             });
-            var n = r(87462),
-                a = r(45697),
-                l = r.n(a),
-                o = r(67294),
-                c = r(37463),
+            var r = n(87462),
+                a = n(45697),
+                l = n.n(a),
+                o = n(67294),
+                c = n(37463),
                 i = function(e) {
                     var t;
-                    return o.createElement(c.uW, (0, n.Z)({
+                    return o.createElement(c.uW, (0, r.Z)({
                         fieldsList: ["occupants", "visits", "favorites", "updated_at"],
                         contentType: "world",
                         data: null !== (t = e.world) && void 0 !== t ? t : e.data
@@ -377,12 +351,12 @@
             };
             const s = i
         },
-        82197: (e, t, r) => {
+        82197: (e, t, n) => {
             "use strict";
-            r.d(t, {
-                l: () => n
+            n.d(t, {
+                l: () => r
             });
-            var n = r(61509).S.injectEndpoints({
+            var r = n(61509).S.injectEndpoints({
                 endpoints: function(e) {
                     return {
                         getInfoPushData: e.query({
@@ -398,10 +372,10 @@
                                 }
                             },
                             providesTags: function(e, t) {
-                                var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                                    n = r.include,
-                                    a = void 0 === n ? ["user-all"] : n,
-                                    l = r.require;
+                                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                                    r = n.include,
+                                    a = void 0 === r ? ["user-all"] : r,
+                                    l = n.require;
                                 return [{
                                     type: "InfoPushData",
                                     id: {
@@ -418,97 +392,97 @@
                 addTagTypes: ["InfoPushData"]
             }).useGetInfoPushDataQuery
         },
-        40433: (e, t, r) => {
+        40433: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "6e468e6ae59e609a-272w.png 272w",
+                srcSet: n.p + "6e468e6ae59e609a-272w.png 272w",
                 images: [{
-                    path: r.p + "6e468e6ae59e609a-272w.png",
+                    path: n.p + "6e468e6ae59e609a-272w.png",
                     width: 272,
                     height: 223
                 }],
-                src: r.p + "6e468e6ae59e609a-272w.png",
+                src: n.p + "6e468e6ae59e609a-272w.png",
                 toString: function() {
-                    return r.p + "6e468e6ae59e609a-272w.png"
+                    return n.p + "6e468e6ae59e609a-272w.png"
                 },
                 width: 272,
                 height: 223
             }
         },
-        60542: (e, t, r) => {
+        60542: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "480a07033ee5c228-545w.png 545w",
+                srcSet: n.p + "480a07033ee5c228-545w.png 545w",
                 images: [{
-                    path: r.p + "480a07033ee5c228-545w.png",
+                    path: n.p + "480a07033ee5c228-545w.png",
                     width: 545,
                     height: 447
                 }],
-                src: r.p + "480a07033ee5c228-545w.png",
+                src: n.p + "480a07033ee5c228-545w.png",
                 toString: function() {
-                    return r.p + "480a07033ee5c228-545w.png"
+                    return n.p + "480a07033ee5c228-545w.png"
                 },
                 width: 545,
                 height: 447
             }
         },
-        43e3: (e, t, r) => {
+        43e3: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "c7fb16f1c42f6e98-1184w.jpg 1184w",
+                srcSet: n.p + "c7fb16f1c42f6e98-1184w.jpg 1184w",
                 images: [{
-                    path: r.p + "c7fb16f1c42f6e98-1184w.jpg",
+                    path: n.p + "c7fb16f1c42f6e98-1184w.jpg",
                     width: 1184,
                     height: 194
                 }],
-                src: r.p + "c7fb16f1c42f6e98-1184w.jpg",
+                src: n.p + "c7fb16f1c42f6e98-1184w.jpg",
                 toString: function() {
-                    return r.p + "c7fb16f1c42f6e98-1184w.jpg"
+                    return n.p + "c7fb16f1c42f6e98-1184w.jpg"
                 },
                 width: 1184,
                 height: 194
             }
         },
-        15630: (e, t, r) => {
+        15630: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "d2bd24ac12140a7d-2369w.jpg 2369w",
+                srcSet: n.p + "d2bd24ac12140a7d-2369w.jpg 2369w",
                 images: [{
-                    path: r.p + "d2bd24ac12140a7d-2369w.jpg",
+                    path: n.p + "d2bd24ac12140a7d-2369w.jpg",
                     width: 2369,
                     height: 388
                 }],
-                src: r.p + "d2bd24ac12140a7d-2369w.jpg",
+                src: n.p + "d2bd24ac12140a7d-2369w.jpg",
                 toString: function() {
-                    return r.p + "d2bd24ac12140a7d-2369w.jpg"
+                    return n.p + "d2bd24ac12140a7d-2369w.jpg"
                 },
                 width: 2369,
                 height: 388
             }
         },
-        69595: (e, t, r) => {
+        69595: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "004e049255f8944f-280w.png 280w",
+                srcSet: n.p + "004e049255f8944f-280w.png 280w",
                 images: [{
-                    path: r.p + "004e049255f8944f-280w.png",
+                    path: n.p + "004e049255f8944f-280w.png",
                     width: 280,
                     height: 243
                 }],
-                src: r.p + "004e049255f8944f-280w.png",
+                src: n.p + "004e049255f8944f-280w.png",
                 toString: function() {
-                    return r.p + "004e049255f8944f-280w.png"
+                    return n.p + "004e049255f8944f-280w.png"
                 },
                 width: 280,
                 height: 243
             }
         },
-        96752: (e, t, r) => {
+        96752: (e, t, n) => {
             e.exports = {
-                srcSet: r.p + "d53ae47c8bd8da77-561w.png 561w",
+                srcSet: n.p + "d53ae47c8bd8da77-561w.png 561w",
                 images: [{
-                    path: r.p + "d53ae47c8bd8da77-561w.png",
+                    path: n.p + "d53ae47c8bd8da77-561w.png",
                     width: 561,
                     height: 487
                 }],
-                src: r.p + "d53ae47c8bd8da77-561w.png",
+                src: n.p + "d53ae47c8bd8da77-561w.png",
                 toString: function() {
-                    return r.p + "d53ae47c8bd8da77-561w.png"
+                    return n.p + "d53ae47c8bd8da77-561w.png"
                 },
                 width: 561,
                 height: 487
@@ -516,4 +490,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e927894ccc2db81400e90afc8aacd1ef0f11c1f9f3608f99a1c64c76f98705ad.js.map
+//# sourceMappingURL=0946ef9b347eee5d523a1ec42e8de9bca51a6dfcddf581761b21da4f56202db1.js.map

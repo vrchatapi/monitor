@@ -27,8 +27,8 @@
                 d = r(64258),
                 m = r(37463),
                 p = r(95896),
-                f = r(22202),
-                w = r(41255),
+                w = r(22202),
+                f = r(41255),
                 g = r(16869),
                 v = r(67978),
                 y = r(36183),
@@ -100,9 +100,9 @@
                     u = h.useState(l),
                     d = (0, i.Z)(u, 2),
                     p = d[0],
-                    f = d[1];
+                    w = d[1];
                 (0, h.useEffect)((function() {
-                    a.listingType && f(a.listingType)
+                    a.listingType && w(a.listingType)
                 }), [a]);
                 return h.createElement(m.JX, null, h.createElement("p", null, "Select the duration of your listing:"), h.createElement(m.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row"
@@ -111,7 +111,7 @@
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                c.length > 0 && s((0, E.kH)()), s((0, E.TY)(e)), f(e), r({
+                                c.length > 0 && s((0, E.kH)()), s((0, E.TY)(e)), w(e), r({
                                     listingType: e
                                 })
                             }(e.value)
@@ -200,7 +200,7 @@
                     c = void 0 === a ? function() {} : a,
                     I = (0, x.I0)(),
                     L = (0, C.s0)(),
-                    D = (0, f.XC)().data,
+                    D = (0, w.XC)().data,
                     O = (0, x.v9)((function(e) {
                         return e.listingFlow
                     })),
@@ -244,21 +244,21 @@
                     })),
                     de = ue.data,
                     me = ue.isLoading,
-                    pe = (ue.isError, ue.error, (0, w.Qb)({
+                    pe = (ue.isError, ue.error, (0, f.Qb)({
                         avatarIds: te
                     }, {
                         skip: !te.length
                     })),
-                    fe = pe.data,
-                    we = (pe.isFetching, pe.isError, pe.error, (0, h.useMemo)((function() {
-                        return (null != fe ? fe : []).map((function(e) {
+                    we = pe.data,
+                    fe = (pe.isFetching, pe.isError, pe.error, (0, h.useMemo)((function() {
+                        return (null != we ? we : []).map((function(e) {
                             return {
                                 fileId: e.id,
                                 fileVersion: e.latestVersionFile.version,
                                 order: null == e ? void 0 : e.order
                             }
                         }))
-                    }), [fe]));
+                    }), [we]));
                 (0, h.useEffect)((function() {
                     return function() {
                         I((0, E.rk)())
@@ -497,7 +497,7 @@
                             }, "Next")
                     }
                 }()))), M && h.createElement(T.Z, {
-                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
+                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
                 }, h.createElement(m.X2, {
                     className: "tw-justify-center tw-items-center tw-mb-3"
                 }, h.createElement(m.zx, {
@@ -515,7 +515,7 @@
                 }, h.createElement(G, {
                     isPreview: !0,
                     products: X,
-                    galleryImages: we,
+                    galleryImages: fe,
                     listing: K,
                     onClose: function() {
                         return he(!1)
@@ -662,4 +662,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2e2192f37dd579d919ceae2491ebdab0ed66f286cde0bca9e5c83b03edcd79c1.js.map
+//# sourceMappingURL=5b9b2450910bb4004f4e0465ad9d14309654c80d7df55daeec2b660b0145497f.js.map

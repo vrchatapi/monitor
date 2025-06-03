@@ -27,13 +27,13 @@
                 m = n(64258),
                 d = n(37463),
                 w = n(95896),
-                f = n(22202),
-                p = n(41255),
+                p = n(22202),
+                f = n(41255),
                 g = n(16869),
                 v = n(67978),
                 b = n(36183),
-                E = n(39270),
-                x = n(64358),
+                x = n(39270),
+                E = n(64358),
                 y = n(67294),
                 h = n(32981),
                 C = n(89250),
@@ -100,9 +100,9 @@
                     u = y.useState(c),
                     m = (0, i.Z)(u, 2),
                     w = m[0],
-                    f = m[1];
+                    p = m[1];
                 (0, y.useEffect)((function() {
-                    a.listingType && f(a.listingType)
+                    a.listingType && p(a.listingType)
                 }), [a]);
                 return y.createElement(d.JX, null, y.createElement("p", null, "Select the duration of your listing:"), y.createElement(d.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row"
@@ -111,7 +111,7 @@
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                o.length > 0 && l((0, E.kH)()), l((0, E.TY)(e)), f(e), n({
+                                o.length > 0 && l((0, x.kH)()), l((0, x.TY)(e)), p(e), n({
                                     listingType: e
                                 })
                             }(e.value)
@@ -200,7 +200,7 @@
                     o = void 0 === a ? function() {} : a,
                     T = (0, h.I0)(),
                     D = (0, C.s0)(),
-                    I = (0, f.XC)().data,
+                    I = (0, p.XC)().data,
                     S = (0, h.v9)((function(e) {
                         return e.listingFlow
                     })),
@@ -244,24 +244,24 @@
                     })),
                     me = ue.data,
                     de = ue.isLoading,
-                    we = (ue.isError, ue.error, (0, p.Qb)({
+                    we = (ue.isError, ue.error, (0, f.Qb)({
                         avatarIds: te
                     }, {
                         skip: !te.length
                     })),
-                    fe = we.data,
-                    pe = (we.isFetching, we.isError, we.error, (0, y.useMemo)((function() {
-                        return (null != fe ? fe : []).map((function(e) {
+                    pe = we.data,
+                    fe = (we.isFetching, we.isError, we.error, (0, y.useMemo)((function() {
+                        return (null != pe ? pe : []).map((function(e) {
                             return {
                                 fileId: e.id,
                                 fileVersion: e.latestVersionFile.version,
                                 order: null == e ? void 0 : e.order
                             }
                         }))
-                    }), [fe]));
+                    }), [pe]));
                 (0, y.useEffect)((function() {
                     return function() {
-                        T((0, E.rk)())
+                        T((0, x.rk)())
                     }
                 }), []);
                 var ge = function(e) {
@@ -300,9 +300,9 @@
                             var n = e[t + 1];
                             return n !== $ || K.active ? n : q
                         }();
-                        T((0, E.Td)(w._9[e])), T((0, E.Bq)(e))
+                        T((0, x.Td)(w._9[e])), T((0, x.Bq)(e))
                     },
-                    Ee = function() {
+                    xe = function() {
                         var e = function() {
                                 if (null === z) return {
                                     immediateStep: null,
@@ -317,10 +317,10 @@
                             }(),
                             t = e.immediateStep,
                             n = e.nextStep;
-                        if (!t) return T((0, E.Bq)(_)), void T((0, E.IT)(null));
-                        T((0, E.Td)(w._9[t])), T((0, E.Bq)(t)), T((0, E.IT)(n))
+                        if (!t) return T((0, x.Bq)(_)), void T((0, x.IT)(null));
+                        T((0, x.Td)(w._9[t])), T((0, x.Bq)(t)), T((0, x.IT)(n))
                     },
-                    xe = function() {
+                    Ee = function() {
                         var e = (0, r.Z)(u().mark((function e() {
                             var t, n, r;
                             return u().wrap((function(e) {
@@ -352,7 +352,7 @@
                         }
                     }(),
                     ye = function(e) {
-                        T((0, E.Td)(null)), T((0, E.xj)(e))
+                        T((0, x.Td)(null)), T((0, x.xj)(e))
                     },
                     he = function() {
                         o(), ee(J)
@@ -366,7 +366,7 @@
                         if (j === A) {
                             if ("duration" === K.listingType) {
                                 if (![w.PG.MIN, w.PG.HOUR, w.PG.DAY].includes(K.durationType)) return !1;
-                                if (!((0, x.qG)(K.durationType, K.duration) && Number.isInteger(Number(K.duration)) && /^\d+$/.test(K.duration))) return !1
+                                if (!((0, E.qG)(K.durationType, K.duration) && Number.isInteger(Number(K.duration)) && /^\d+$/.test(K.duration))) return !1
                             }
                             var e = K.displayName.length >= 3,
                                 t = "permanent" === z ? w.YC : w._C,
@@ -427,7 +427,7 @@
                             return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
-                                onClick: Ee
+                                onClick: xe
                             }, "Back");
                         case q:
                             return y.createElement(d.zx, {
@@ -441,13 +441,13 @@
                             return y.createElement(d.zx, {
                                 containerClasses: "tw-flex tw-w-[200px]",
                                 neutral: !0,
-                                onClick: Ee
+                                onClick: xe
                             }, "Back");
                         default:
                             return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
                                 neutral: !0,
-                                onClick: Ee
+                                onClick: xe
                             }, "Back")
                     }
                 }()), y.createElement(d.X2, {
@@ -465,7 +465,7 @@
                         case $:
                             return y.createElement(d.zx, {
                                 containerClasses: "tw-flex-1",
-                                onClick: xe,
+                                onClick: Ee,
                                 disabled: !ke
                             }, "Publish Listing");
                         case q:
@@ -486,7 +486,7 @@
                                 className: "tw-mr-2"
                             }), "Preview Listing"), y.createElement(d.zx, {
                                 containerClasses: "tw-w-[200px]",
-                                onClick: null != K && K.active ? be : xe,
+                                onClick: null != K && K.active ? be : Ee,
                                 disabled: !ke
                             }, "Create"));
                         default:
@@ -497,14 +497,14 @@
                             }, "Next")
                     }
                 }()))), F && y.createElement(k.Z, {
-                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg"
+                    className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
                 }, y.createElement(d.X2, {
                     className: "tw-justify-center tw-items-center tw-mb-3"
                 }, y.createElement(d.zx, {
                     neutral: !0,
                     containerClasses: "tw-w-fit",
                     onClick: function() {
-                        return T((0, E.xj)(!1)), void T((0, E.Td)(w._9[j]))
+                        return T((0, x.xj)(!1)), void T((0, x.Td)(w._9[j]))
                     }
                 }, y.createElement(d.$1, {
                     icon: l.YI
@@ -515,7 +515,7 @@
                 }, y.createElement(B, {
                     isPreview: !0,
                     products: X,
-                    galleryImages: pe,
+                    galleryImages: fe,
                     listing: K,
                     onClose: function() {
                         return ye(!1)
@@ -525,4 +525,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23d0fe1fcad3a3baa5da2937f811198f96cca5cbf3207e29f2bd66b74eca36da.js.map
+//# sourceMappingURL=8619077bf1334034cac27002bdc17b389647efb0a9136f4da60627e0147bc019.js.map
