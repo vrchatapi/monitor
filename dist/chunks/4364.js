@@ -387,7 +387,7 @@
         64364: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => mn
+                default: () => dn
             });
             var a = n(54546),
                 r = n(67294),
@@ -661,49 +661,50 @@
                 }),
                 J = n(14097),
                 K = n(83183),
-                X = n(89148),
-                H = n(15369),
-                Q = n(13461),
-                Y = n(66007),
-                ee = n(2723),
-                te = n(66062),
-                ne = n(40767),
-                ae = n(81511),
-                re = n(16688),
-                ie = n(46450),
-                oe = n(774),
-                le = n(12529),
-                ce = n(64240),
-                se = n(43701),
-                ue = n(70396),
-                me = n(7975),
-                de = n(70440),
-                pe = n(96165),
-                ge = n(54492),
-                fe = n(91435),
-                he = n(49866),
-                ve = n(57245),
-                be = n(93118),
-                ye = n(99631),
-                Ee = n(51970),
-                xe = n(28959),
-                we = n(67922),
-                ke = n(87589),
-                Ne = n(62455),
-                Te = n(25248),
-                Ze = n(50249),
-                Ie = n(7503),
-                Ce = n(48566),
-                Se = n(8256),
-                Oe = n(28055),
-                je = n(34698),
-                ze = n(58877),
-                qe = n(25062),
-                Ae = n(93046),
-                Pe = n.n(Ae),
-                Ue = n(17219),
-                Re = n(31358);
-            const De = function(e) {
+                X = n(57026),
+                H = n(89148),
+                Q = n(15369),
+                Y = n(13461),
+                ee = n(66007),
+                te = n(2723),
+                ne = n(66062),
+                ae = n(40767),
+                re = n(81511),
+                ie = n(16688),
+                oe = n(46450),
+                le = n(774),
+                ce = n(12529),
+                se = n(64240),
+                ue = n(43701),
+                me = n(70396),
+                de = n(7975),
+                pe = n(70440),
+                ge = n(96165),
+                fe = n(54492),
+                he = n(91435),
+                ve = n(49866),
+                be = n(57245),
+                ye = n(93118),
+                Ee = n(99631),
+                xe = n(51970),
+                we = n(28959),
+                ke = n(67922),
+                Ne = n(87589),
+                Te = n(62455),
+                Ze = n(25248),
+                Ie = n(50249),
+                Ce = n(7503),
+                Se = n(48566),
+                Oe = n(8256),
+                je = n(28055),
+                ze = n(34698),
+                qe = n(58877),
+                Ae = n(25062),
+                Pe = n(93046),
+                Ue = n.n(Pe),
+                Re = n(17219),
+                De = n(31358);
+            const Me = function(e) {
                 var t = e.n,
                     n = void 0 === t ? 10 : t,
                     a = e.closeDialog,
@@ -713,7 +714,7 @@
                 return r.createElement("div", {
                     className: "mt-2"
                 }, o.map((function(e) {
-                    return r.createElement(Re.Z, {
+                    return r.createElement(De.Z, {
                         notification: e,
                         key: e.id,
                         popIn: !0,
@@ -723,18 +724,18 @@
                 })))
             };
             n(64230);
-            var Me = n(76938),
-                We = n(42138),
-                $e = n(4942),
-                Ve = n(38824),
-                Le = n(87261),
-                Fe = n(3126),
-                Ge = n(45697),
-                _e = n.n(Ge),
-                Be = n(25411),
-                Je = n(72562);
+            var We = n(76938),
+                $e = n(42138),
+                Ve = n(4942),
+                Le = n(38824),
+                Fe = n(87261),
+                Ge = n(3126),
+                _e = n(45697),
+                Be = n.n(_e),
+                Je = n(25411),
+                Ke = n(72562);
 
-            function Ke(e, t) {
+            function Xe(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -745,18 +746,18 @@
                 return n
             }
 
-            function Xe(e) {
+            function He(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Ke(Object(n), !0).forEach((function(t) {
-                        (0, $e.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ke(Object(n)).forEach((function(t) {
+                    t % 2 ? Xe(Object(n), !0).forEach((function(t) {
+                        (0, Ve.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Xe(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var He = function(e) {
+            var Qe = function(e) {
                 var t = e.onChangeCallback,
                     n = (0, i.I0)(),
                     o = (0, r.useState)(!1),
@@ -790,30 +791,30 @@
                         searchableFilters: E,
                         sortByFilter: N
                     };
-                    (0, Je.Kz)("Web_Mod_SearchFilterChange", Xe(Xe({}, e), {}, {
+                    (0, Ke.Kz)("Web_Mod_SearchFilterChange", He(He({}, e), {}, {
                         autoRedirect: Z
                     })), t(e)
                 }), [Z, d, h, E, N]);
                 var I = function(e) {
-                    return e.target.checked ? x([].concat((0, We.Z)(E), [e.target.name])) : x(E.filter((function(t) {
+                    return e.target.checked ? x([].concat((0, $e.Z)(E), [e.target.name])) : x(E.filter((function(t) {
                         return t !== e.target.name
                     })))
                 };
-                return r.createElement(Ce.Z, {
+                return r.createElement(Se.Z, {
                     isOpen: c,
                     toggle: function() {
                         return s(!c)
                     }
-                }, r.createElement(Se.Z, {
+                }, r.createElement(Oe.Z, {
                     caret: !0
-                }, "Filters"), r.createElement(Oe.Z, {
+                }, "Filters"), r.createElement(je.Z, {
                     className: "text-white p-0 bg-dark pb-2"
-                }, r.createElement(Ve.Z, {
+                }, r.createElement(Le.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Sort Results By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(Le.Z, {
+                }, r.createElement(Fe.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return T(t)
@@ -830,12 +831,12 @@
                     value: "last_login"
                 }, "Last Login"), r.createElement("option", {
                     value: "trust"
-                }, "Trust Rank"))), r.createElement(Ve.Z, {
+                }, "Trust Rank"))), r.createElement(Le.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Order By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(Le.Z, {
+                }, r.createElement(Fe.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return v(t)
@@ -850,72 +851,72 @@
                     value: "ascending"
                 }, "Ascending"), r.createElement("option", {
                     value: "descending"
-                }, "Descending"))), r.createElement(Ve.Z, {
+                }, "Descending"))), r.createElement(Le.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Search For"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: E.includes("displayName"),
                     onChange: I,
                     type: "checkbox",
                     name: "displayName",
                     id: "displayName"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "displayName"
                 }, "Display Name"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: E.includes("email"),
                     onChange: I,
                     type: "checkbox",
                     name: "email",
                     id: "email"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "email"
                 }, "Email"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: E.includes("username"),
                     onChange: I,
                     type: "checkbox",
                     name: "username",
                     id: "username"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "username"
                 }, "Username"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: E.includes("pastEmails"),
                     onChange: I,
                     type: "checkbox",
                     name: "pastEmails",
                     id: "pastEmails"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "pastEmails"
-                }, "Past Emails"))), r.createElement(Ve.Z, {
+                }, "Past Emails"))), r.createElement(Le.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Settings"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: Z,
                     onChange: function() {
-                        return n((0, Be.Tr)())
+                        return n((0, Je.Tr)())
                     },
                     type: "checkbox",
                     name: "autoDirect",
                     id: "autoDirect"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "autoDirect"
                 }, "Auto Redirect"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(Le.Z, {
+                }, r.createElement("div", null, r.createElement(Fe.Z, {
                     checked: d,
                     onChange: function() {
                         return p(!d)
@@ -923,21 +924,21 @@
                     type: "checkbox",
                     name: "fuzzy",
                     id: "fuzzy"
-                }), r.createElement(Fe.Z, {
+                }), r.createElement(Ge.Z, {
                     className: "ms-1",
                     for: "fuzzy"
                 }, "Fuzzy")))))
             };
-            He.propTypes = {
-                onChangeCallback: _e().func.isRequired
+            Qe.propTypes = {
+                onChangeCallback: Be().func.isRequired
             };
-            var Qe = n(73670);
-            const Ye = function() {
+            var Ye = n(73670);
+            const et = function() {
                 var e = (0, o.s0)(),
                     t = (0, o.TH)(),
                     n = "";
                 t.pathname.startsWith("/home/search/") && (n = decodeURIComponent(t.pathname.substring(13)));
-                var l = (0, i.v9)(Me.y),
+                var l = (0, i.v9)(We.y),
                     s = (0, r.useState)("/home/search/"),
                     u = (0, a.Z)(s, 2),
                     m = u[0],
@@ -982,21 +983,21 @@
                         name: "clzu0",
                         styles: "display:flex;flex-direction:row;align-items:center;flex-grow:1"
                     })
-                }, r.createElement(Qe.Z, {
+                }, r.createElement(Ye.Z, {
                     initialString: b,
                     searchString: y
                 }), l && !1))))))
             };
-            var et = n(15861),
-                tt = n(24075),
-                nt = n(89082),
-                at = n(64687),
-                rt = n.n(at),
-                it = n(58589),
-                ot = n(9669),
-                lt = n.n(ot);
-            var ct = ["public", "internal"];
-            const st = function(e) {
+            var tt = n(15861),
+                nt = n(24075),
+                at = n(89082),
+                rt = n(64687),
+                it = n.n(rt),
+                ot = n(58589),
+                lt = n(9669),
+                ct = n.n(lt);
+            var st = ["public", "internal"];
+            const ut = function(e) {
                 var t = e.direction,
                     n = r.useState([]),
                     l = (0, a.Z)(n, 2),
@@ -1011,16 +1012,16 @@
                         return e.currentUser.isMod
                     })),
                     b = function() {
-                        var e = (0, et.Z)(rt().mark((function e() {
+                        var e = (0, tt.Z)(it().mark((function e() {
                             var t, n, a;
-                            return rt().wrap((function(e) {
+                            return it().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = window.apiUrl("/api/1/frontend/branches"), e.next = 3, lt().get(t);
+                                        return t = window.apiUrl("/api/1/frontend/branches"), e.next = 3, ct().get(t);
                                     case 3:
                                         n = e.sent, a = n.data.filter((function(e) {
                                             return "main" !== e
-                                        })), u(["main"].concat((0, We.Z)(a)));
+                                        })), u(["main"].concat((0, $e.Z)(a)));
                                     case 6:
                                     case "end":
                                         return e.stop()
@@ -1043,7 +1044,7 @@
                             return !0
                         };
                         return e.map((function(e) {
-                            return ct.map((function(n, a) {
+                            return st.map((function(n, a) {
                                 if ("public" !== n && !h) return null;
                                 var i = "".concat(n, "-").concat(e) === "".concat("public", "-").concat("main"),
                                     o = ["dropdown-item", "px-2", "py-1", t(e) ? "" : (0, c.iv)({
@@ -1053,7 +1054,7 @@
                                 i && o.push("active");
                                 var l = {
                                     className: ["public" === n ? "text-success" : "text-danger", "main" === e ? "" : "mx-1"].join(" "),
-                                    icon: "main" === e ? "public" === n ? re.J9 : nt.c : tt.mh
+                                    icon: "main" === e ? "public" === n ? ie.J9 : at.c : nt.mh
                                 };
                                 return r.createElement("a", {
                                     href: y(e, n),
@@ -1064,19 +1065,19 @@
                             }))
                         }))
                     };
-                return s.length <= 1 ? null : r.createElement("div", null, r.createElement(it.Z, {
+                return s.length <= 1 ? null : r.createElement("div", null, r.createElement(ot.Z, {
                     size: "sm",
                     direction: null != t ? t : "left",
                     className: (0, c.iv)({
                         name: "1xtoy05",
                         styles: "z-index:20;text-align:center"
                     })
-                }, r.createElement(Se.Z, {
+                }, r.createElement(Oe.Z, {
                     caret: !0,
                     color: "primary"
                 }, r.createElement(k.$1, {
-                    icon: tt.mh
-                }), " ", "public", "-", "main"), r.createElement(Oe.Z, {
+                    icon: nt.mh
+                }), " ", "public", "-", "main"), r.createElement(je.Z, {
                     className: (0, c.iv)({
                         name: "1c2bfwh",
                         styles: "max-height:800px;overflow-y:auto;&.dropdown-menu{padding:0;margin:0;border-radius:4px;}.dropdown-item{color:white!important;&.active{background:#1db3cb linear-gradient(180deg, #198799, #1cb5cd) repeat-x;}&:hover{color:var(--bs-gray-dark)!important;}}input{border-radius:4px;border:none;}"
@@ -1098,48 +1099,48 @@
                     return 0 === p.length || new RegExp(p, "gi").test(e)
                 })))))
             };
-            var ut = n(63221),
-                mt = n(72065),
-                dt = n(22082),
-                pt = n(56395);
-            const gt = function(e) {
+            var mt = n(63221),
+                dt = n(72065),
+                pt = n(22082),
+                gt = n(56395);
+            const ft = function(e) {
                 var t = e.to,
                     n = e.title,
                     a = e.onClick,
-                    i = (0, dt.oE)({
-                        states: [pt.g1.ANNOUNCED, pt.g1.SUBMISSIONS_OPEN, pt.g1.SUBMISSIONS_CLOSED, pt.g1.WINNERS_SELECTED]
+                    i = (0, pt.oE)({
+                        states: [gt.g1.ANNOUNCED, gt.g1.SUBMISSIONS_OPEN, gt.g1.SUBMISSIONS_CLOSED, gt.g1.WINNERS_SELECTED]
                     }).data,
                     o = null == i ? void 0 : i.every((function(e) {
                         return !Object.keys(e).includes("state")
                     }));
                 if (!i || 0 === (null == i ? void 0 : i.length) || o) return null;
                 var l = i[0];
-                return r.createElement(ft, {
+                return r.createElement(ht, {
                     to: t,
                     title: n,
                     className: "btn text-left",
                     onClick: a
-                }, r.createElement(ht, {
-                    icon: mt.Ww
-                }), r.createElement("div", null, pt.p6[l.state]), r.createElement(k.$1, {
+                }, r.createElement(vt, {
+                    icon: dt.Ww
+                }), r.createElement("div", null, gt.p6[l.state]), r.createElement(k.$1, {
                     icon: K.yO
                 }))
             };
-            var ft = (0, p.Z)(h.rU, {
+            var ht = (0, p.Z)(h.rU, {
                     target: "eq9q68u1"
                 })({
                     name: "wjiy21",
                     styles: "border:#7e24ab solid 2px;color:#f7c94b;background:#5a1995;text-shadow:0 0 5px #7e24ab;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{align-self:center;font-weight:bold;}&:hover{background:#5a1995;color:#f7c94b;border-color:#ca34de;transform:scale(1.1);}"
                 }),
-                ht = (0, p.Z)(k.$1, {
+                vt = (0, p.Z)(k.$1, {
                     target: "eq9q68u0"
                 })({
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var vt = [Te.R7, Ne.od, ke.tM, we.RK, xe.I3, Ee.nG, ye.jO, be.uS, ve.dy, he.XG, fe.BD, ge.ok, pe.Sv, de.qA, me.I1, ue.Nk, se.uj, ce.io, le.l9],
-                bt = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
-                yt = r.memo((function(e) {
+            var bt = [Ze.R7, Te.od, Ne.tM, ke.RK, we.I3, xe.nG, Ee.jO, ye.uS, be.dy, ve.XG, he.BD, fe.ok, ge.Sv, pe.qA, de.I1, me.Nk, ue.uj, se.io, ce.l9],
+                yt = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
+                Et = r.memo((function(e) {
                     var t, n, l = e.horizontal,
                         s = e.navToggleCallback,
                         u = e.friendsToggleCallback,
@@ -1151,15 +1152,15 @@
                         b = (0, a.Z)(v, 2),
                         y = b[0],
                         x = b[1],
-                        w = r.useState(vt[Math.floor(m(vt.length))]),
+                        w = r.useState(bt[Math.floor(m(bt.length))]),
                         N = (0, a.Z)(w, 2),
                         T = N[0],
                         Z = N[1],
-                        I = r.useState(bt[m(bt.length)]),
+                        I = r.useState(yt[m(yt.length)]),
                         C = (0, a.Z)(I, 2),
                         S = C[0],
                         O = C[1],
-                        j = (0, Ue.y)().data,
+                        j = (0, Re.y)().data,
                         z = ((0, E.pc)(), (0, d.XC)().data),
                         q = (0, i.v9)((function(e) {
                             return e.notifications.notifications
@@ -1171,7 +1172,7 @@
                             return e.notifications.groupNotifications
                         })) || [];
                     (0, r.useEffect)((function() {
-                        y && (Z(vt[m(vt.length)]), O(bt[m(bt.length)]))
+                        y && (Z(bt[m(bt.length)]), O(yt[m(yt.length)]))
                     }), [y]);
                     var D = function(e) {
                             p("/home/login", {
@@ -1191,7 +1192,7 @@
                         L = $.includes("permission-user-gallery"),
                         F = ($.includes("permission-groups-beta"), null !== (t = q.length) && void 0 !== t ? t : 0);
                     n = R.filter((function(e) {
-                        return e.state === ut.oq.INVITED
+                        return e.state === mt.oq.INVITED
                     })).length;
                     if (null == l || !1 === l) {
                         0;
@@ -1211,7 +1212,7 @@
                                 s && (u && u(!1), s())
                             }
                         }, r.createElement(k.$1, {
-                            icon: oe.xi,
+                            icon: le.xi,
                             size: "lg"
                         })), r.createElement(h.rU, {
                             to: "/home",
@@ -1234,12 +1235,12 @@
                                 name: "1vcob1d",
                                 styles: "display:flex;justify-content:center;align-items:center"
                             }))
-                        }, r.createElement(Ce.Z, {
+                        }, r.createElement(Se.Z, {
                             isOpen: y,
                             toggle: function() {
                                 return x(!y)
                             }
-                        }, r.createElement(Se.Z, {
+                        }, r.createElement(Oe.Z, {
                             className: "p-1 navbar-btn text-white"
                         }, F > 0 && r.createElement("div", {
                             className: (0, c.iv)({
@@ -1247,7 +1248,7 @@
                                 styles: "position:absolute;top:-3px;right:-8px;background:var(--bs-primary);color:var(--bs-gray-800);min-width:23px;padding:3px;height:23px;border-radius:23px;z-index:5;font-size:80%;font-weight:bold"
                             })
                         }, F), r.createElement(k.$1, {
-                            icon: ae.FU,
+                            icon: re.FU,
                             size: "lg",
                             className: (0, c.iv)({
                                 name: "bqqvn3",
@@ -1260,7 +1261,7 @@
                                 name: "2ey0we",
                                 styles: "transform:translateX(0)"
                             })
-                        }, r.createElement(Oe.Z, {
+                        }, r.createElement(je.Z, {
                             className: "text-white bg-dark custom-dropdown ".concat((0, c.iv)({
                                 name: "1aeu1is",
                                 styles: "width:550px"
@@ -1284,7 +1285,7 @@
                                 name: "2nen93",
                                 styles: "max-height:500px;overflow-y:auto;padding:0 15px;background:#041215"
                             })
-                        }, F > 0 ? r.createElement(De, {
+                        }, F > 0 ? r.createElement(Me, {
                             n: 20,
                             closeDialog: M,
                             isGroups: !1
@@ -1316,7 +1317,7 @@
                             className: "navbar-section center-nav"
                         }, r.createElement("div", {
                             className: "search"
-                        }, r.createElement(Ye, null)), r.createElement("button", {
+                        }, r.createElement(et, null)), r.createElement("button", {
                             type: "button",
                             className: "p-1 btn btn-secondary navbar-btn d-md-none",
                             onClick: function() {
@@ -1329,7 +1330,7 @@
                             })
                         }))), r.createElement("div", {
                             className: "navbar-section right-nav d-xl-flex d-none"
-                        }, r.createElement(st, null), r.createElement("a", {
+                        }, r.createElement(ut, null), r.createElement("a", {
                             href: "https://docs.vrchat.com/",
                             target: "_blank",
                             rel: "noreferrer"
@@ -1344,7 +1345,7 @@
                             style: {
                                 color: "#ffff00"
                             }
-                        }, "VRC+"), r.createElement(je.Z, {
+                        }, "VRC+"), r.createElement(ze.Z, {
                             className: "p-1 btn btn-secondary navbar-btn logout ".concat((0, c.iv)({
                                 name: "vv8j00",
                                 styles: "min-width:102px!important"
@@ -1356,127 +1357,127 @@
                             icon: J.TE
                         }), "  Logout"))))
                     }
-                    return r.createElement("nav", null, r.createElement(ze.Z, {
+                    return r.createElement("nav", null, r.createElement(qe.Z, {
                         vertical: !0,
                         size: "lg",
                         className: "w-100 ".concat((0, c.iv)({
                             name: "1bfow8s",
                             styles: "padding:0 10px;&>a{margin-bottom:10px;}"
                         }))
-                    }, 0 !== U ? r.createElement(xt, {
+                    }, 0 !== U ? r.createElement(wt, {
                         to: "/home/locations",
                         title: "locations",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: ie.mG
-                    }), r.createElement("div", null, "Join Friends", " ", r.createElement(qe.Z, {
+                        icon: oe.mG
+                    }), r.createElement("div", null, "Join Friends", " ", r.createElement(Ae.Z, {
                         className: (0, c.iv)({
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
                     }, U)), r.createElement(k.$1, {
                         icon: K.yO
-                    })) : r.createElement(xt, {
+                    })) : r.createElement(wt, {
                         to: "/home",
                         title: "home",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: re.J9
+                        icon: ie.J9
                     }), r.createElement("div", null, "  Home"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/groups",
                         title: "groups",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Ie.Z
+                        icon: Ce.Z
                     }), r.createElement("div", null, "Groups"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/messages",
                         title: "messages",
                         className: "btn text-left d-sm-none",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: ae.FU
-                    }), r.createElement("div", null, "Messages", " ", F > 0 && r.createElement(qe.Z, {
+                        icon: re.FU
+                    }), r.createElement("div", null, "Messages", " ", F > 0 && r.createElement(Ae.Z, {
                         className: (0, c.iv)({
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
                     }, F)), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(gt, {
+                    })), r.createElement(ft, {
                         to: "/home/jams",
                         title: "Jam",
                         onClick: W
-                    }), r.createElement(xt, {
+                    }), r.createElement(wt, {
                         to: "/home/download",
                         title: "download",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: ne.q7
+                        icon: ae.q7
                     }), r.createElement("div", null, "Download"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/worlds",
                         title: "worlds",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: te.g4
+                        icon: ne.g4
                     }), r.createElement("div", null, "Discover Worlds"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/content/worlds",
                         title: "My Worlds",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: ee.cf
+                        icon: te.cf
                     }), r.createElement("div", null, "My Worlds"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/avatars",
                         title: "avatars",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Y.KC
+                        icon: ee.KC
                     }), r.createElement("div", null, "Avatars"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/favorites/world",
                         title: "Favorite Worlds",
                         className: "btn nav-button text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Q.T
+                        icon: Y.T
                     }), r.createElement("div", null, "Favorite Worlds"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/favorites/avatar",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Q.T
+                        icon: Y.T
                     }), r.createElement("div", null, "Favorite Avatars"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/favorites/friend",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Q.T
+                        icon: Y.T
                     }), r.createElement("div", null, "Favorite Friends"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), (V || L) && r.createElement(xt, {
+                    })), (V || L) && r.createElement(wt, {
                         to: "/home/gallery",
                         title: "gallery",
                         className: "btn text-left",
@@ -1485,35 +1486,35 @@
                         icon: f._j
                     }), r.createElement("div", null, "Gallery"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/marketplace",
                         title: "marketplace",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: Ze.Z
+                        icon: Ie.Z
                     }), r.createElement("div", null, "Marketplace"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), !1, r.createElement(xt, {
+                    })), !1, r.createElement(wt, {
                         to: "/home/accountlink",
                         title: "accountLink",
                         className: "btn text-left",
                         hidden: (null == j ? void 0 : j.disableUpgradeAccount) || (null == z ? void 0 : z.steamId) && (null == z ? void 0 : z.oculusId),
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: H.x0
+                        icon: Q.x0
                     }), r.createElement("div", null, "Account Link"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/playermoderations",
                         title: "playermoderations",
                         className: "btn text-left",
                         onClick: W
                     }, r.createElement(k.$1, {
-                        icon: X.Ek
+                        icon: H.Ek
                     }), r.createElement("div", null, "Blocks & Mutes"), r.createElement(k.$1, {
                         icon: K.yO
-                    })), r.createElement(xt, {
+                    })), r.createElement(wt, {
                         to: "/home/subscriptions",
                         title: "subscriptions",
                         className: "btn text-left",
@@ -1521,10 +1522,21 @@
                     }, r.createElement("img", {
                         alt: "subscriptions",
                         width: "25",
-                        src: Pe()
+                        src: Ue()
                     }), r.createElement("div", null, "Subscriptions"), r.createElement(k.$1, {
                         icon: K.yO
                     })), r.createElement(wt, {
+                        to: "https://help.vrchat.com/",
+                        title: "helpdesk",
+                        target: "_blank",
+                        rel: "noreferrer",
+                        className: "tw-bg-[#07142B] tw-border-[#051E48] tw-text-[#6AA2F9] btn text-left",
+                        onClick: W
+                    }, r.createElement(k.$1, {
+                        icon: X.lX
+                    }), r.createElement("div", null, "Help Desk"), r.createElement(k.$1, {
+                        icon: K.yO
+                    })), r.createElement(kt, {
                         to: "/home/login",
                         title: "logout",
                         className: "btn text-left d-xl-none",
@@ -1533,31 +1545,31 @@
                         icon: J.TE
                     }), r.createElement("div", null, "Logout"), r.createElement("div", null))))
                 }));
-            yt.displayName = "Navbar";
-            const Et = yt;
-            var xt = (0, p.Z)(h.rU, {
+            Et.displayName = "Navbar";
+            const xt = Et;
+            var wt = (0, p.Z)(h.rU, {
                     target: "e18dqzxk1"
                 })({
                     name: "yjay0l",
                     styles: "background:#07242b;border:#053c48 solid 2px;color:#6ae3f9;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{font-weight:normal;align-self:center;}&:hover{background:#07343f;border-color:#086c84;transform:scale(1.1);}"
                 }),
-                wt = (0, p.Z)(xt, {
+                kt = (0, p.Z)(wt, {
                     target: "e18dqzxk0"
                 })({
                     name: "vkod7",
                     styles: "color:#ee5454;background:#07242b;border:#ee5454 solid 4px;&:hover{border-color:#ee6464;}"
                 }),
-                kt = n(50119),
-                Nt = n(46320),
-                Tt = n(30098),
-                Zt = n(15832),
-                It = [];
-            const Ct = function() {
+                Nt = n(50119),
+                Tt = n(46320),
+                Zt = n(30098),
+                It = n(15832),
+                Ct = [];
+            const St = function() {
                 var e = (0, o.s0)(),
-                    t = (0, Zt._)("campaigns", []),
+                    t = (0, It._)("campaigns", []),
                     n = (0, a.Z)(t, 2),
                     r = n[0],
-                    i = (n[1], (0, Zt._)("campaignsSeen", [])),
+                    i = (n[1], (0, It._)("campaignsSeen", [])),
                     l = (0, a.Z)(i, 2),
                     c = l[0],
                     s = (l[1], function() {
@@ -1572,124 +1584,124 @@
                         return (0, a.Z)(r, 1)[0]
                     }());
                 if (s) {
-                    var u = It.find((function(e) {
+                    var u = Ct.find((function(e) {
                         return e.name === s.name
                     }));
                     if (u) return e(u.landingPage)
                 }
                 return null
             };
-            var St = n(87462);
-            const Ot = function(e) {
+            var Ot = n(87462);
+            const jt = function(e) {
                 var t = (0, d.q7)().data,
                     n = void 0 === t ? [] : t;
                 return function(t) {
-                    return r.createElement(e, (0, St.Z)({}, t, {
+                    return r.createElement(e, (0, Ot.Z)({}, t, {
                         currentUserPermissions: n
                     }))
                 }
             };
-            var jt = n(28944),
-                zt = n(9419);
-            const qt = function() {
+            var zt = n(28944),
+                qt = n(9419);
+            const At = function() {
                 var e = (0, i.I0)(),
-                    t = (0, zt._V)(),
+                    t = (0, qt._V)(),
                     n = t.data,
                     a = t.isSuccess;
                 t.isLoading;
                 return r.useEffect((function() {
-                    e((0, Tt._r)(n))
+                    e((0, Zt._r)(n))
                 }), [a, n]), null
             };
-            var At = n(33622),
-                Pt = n.n(At);
-            var Ut = r.lazy((function() {
+            var Pt = n(33622),
+                Ut = n.n(Pt);
+            var Rt = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(9923), n.e(5508)]).then(n.bind(n, 5712))
                 })),
-                Rt = r.lazy((function() {
+                Dt = r.lazy((function() {
                     return Promise.all([n.e(2218), n.e(2998), n.e(8874), n.e(4666)]).then(n.bind(n, 37099))
                 })),
-                Dt = r.lazy((function() {
+                Mt = r.lazy((function() {
                     return n.e(3488).then(n.bind(n, 93488))
                 })),
-                Mt = r.lazy((function() {
+                Wt = r.lazy((function() {
                     return n.e(6231).then(n.bind(n, 76231))
                 })),
-                Wt = r.lazy((function() {
+                $t = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(7202), n.e(2998), n.e(3294), n.e(1946), n.e(8043), n.e(1244), n.e(2704), n.e(5842), n.e(1388)]).then(n.bind(n, 76461))
                 })),
-                $t = r.lazy((function() {
+                Vt = r.lazy((function() {
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
                 })),
-                Vt = r.lazy((function() {
+                Lt = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(3023), n.e(390)]).then(n.bind(n, 20390))
                 })),
-                Lt = r.lazy((function() {
+                Ft = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(2150), n.e(2998), n.e(4444), n.e(8890), n.e(9908), n.e(3294), n.e(9375), n.e(347), n.e(929)]).then(n.bind(n, 82434))
                 })),
-                Ft = r.lazy((function() {
+                Gt = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(4444), n.e(8086)]).then(n.bind(n, 74444))
                 })),
-                Gt = r.lazy((function() {
+                _t = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(9908), n.e(3713)]).then(n.bind(n, 39908))
                 })),
-                _t = r.lazy((function() {
+                Bt = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(8890), n.e(5491)]).then(n.bind(n, 78890))
                 })),
-                Bt = r.lazy((function() {
+                Jt = r.lazy((function() {
                     return n.e(8438).then(n.bind(n, 58438))
                 })),
-                Jt = r.lazy((function() {
+                Kt = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(8666), n.e(4907)]).then(n.bind(n, 44907))
                 })),
-                Kt = r.lazy((function() {
+                Xt = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
-                Xt = r.lazy((function() {
+                Ht = r.lazy((function() {
                     return Promise.all([n.e(5032), n.e(3261), n.e(2998), n.e(1946), n.e(347), n.e(1244), n.e(9923), n.e(8158), n.e(4896), n.e(7672)]).then(n.bind(n, 27672))
                 })),
-                Ht = r.lazy((function() {
+                Qt = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(3261), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
-                Qt = r.lazy((function() {
+                Yt = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(8264)]).then(n.bind(n, 8264))
                 })),
-                Yt = r.lazy((function() {
+                en = r.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
                 })),
-                en = r.lazy((function() {
+                tn = r.lazy((function() {
                     return n.e(9795).then(n.bind(n, 79795))
                 })),
-                tn = r.lazy((function() {
+                nn = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
                 })),
-                nn = r.lazy((function() {
+                an = r.lazy((function() {
                     return n.e(7047).then(n.bind(n, 7047))
                 })),
-                an = r.lazy((function() {
+                rn = r.lazy((function() {
                     return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
-                rn = r.lazy((function() {
+                on = r.lazy((function() {
                     return Promise.all([n.e(2218), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
                 })),
-                on = r.lazy((function() {
+                ln = r.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
                 })),
-                ln = r.lazy((function() {
+                cn = r.lazy((function() {
                     return n.e(4945).then(n.bind(n, 14945))
                 })),
-                cn = r.lazy((function() {
+                sn = r.lazy((function() {
                     return n.e(6812).then(n.bind(n, 46812))
                 })),
-                sn = r.lazy((function() {
+                un = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(8666), n.e(8906)]).then(n.bind(n, 38906))
                 })),
-                un = r.lazy((function() {
+                mn = r.lazy((function() {
                     return Promise.all([n.e(2218), n.e(3261), n.e(2998), n.e(1946), n.e(8043), n.e(334)]).then(n.bind(n, 40525))
                 }));
-            const mn = function() {
+            const dn = function() {
                 var e = (0, i.I0)();
-                Ct();
+                St();
                 var t = (0, d.IB)().data,
                     n = r.useMemo((function() {
                         var e;
@@ -1717,13 +1729,13 @@
                         x(window.innerWidth > 1400 && !g)
                     }), []);
                 return (0, r.useEffect)((function() {
-                    return e((0, Tt.Wk)()), e((0, Tt._e)()), x(window.innerWidth > 1400), window.addEventListener("resize", w),
+                    return e((0, Zt.Wk)()), e((0, Zt._e)()), x(window.innerWidth > 1400), window.addEventListener("resize", w),
                         function() {
                             window.removeEventListener("resize", w)
                         }
                 }), []), r.createElement("div", {
-                    className: (0, c.iv)("& .leftbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(90deg, #050505 50%, #050505ef 100%);padding:0 3px 3px 3px;z-index:30;top:60px;width:285px;min-width:285px;height:calc(100% - 60px);position:fixed;overflow-y:auto;display:flex;justify-content:center;}& .rightbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(270deg, #050505 50%, #050505ef 100%);padding:0;top:60px;width:410px;min-width:410px;z-index:50;height:calc(100% - 60px);margin-left:calc(100% - 410px);position:fixed;left:410px;&.open{left:0;}}& .content-scroll{top:60px;left:285px;position:absolute;overflow-y:auto;overflow-x:hidden;width:calc(100% - 285px);height:calc(100% - 60px);transition:width 0.5s ease-in-out,left 0.5s ease-in-out;background-image:url('https://assets.vrchat.com/www/images/Background_lines.svg');background-repeat:no-repeat;background-size:auto 100%;", n && (0, c.iv)("background-image:url(", Pt(), ");background-size:cover;background-position:bottom right;&>*{filter:drop-shadow(#714513 0 .125rem .25rem);}", ""), " & .home-content{max-width:2000px;margin:0 auto;display:flex;flex-direction:column;height:100%;padding:20px 95px 0 20px;transition:padding-right 0.35s ease-in-out;}&.rightPinned{width:calc(100% - 695px);& .home-content{padding:10px 20px 0 20px;}}&.leftOpen{width:calc(100% - 410px)!important;}}& .friends-button{width:65px;height:65px;top:70px;right:25px;transition:all 0.1s ease-in;border-radius:100%;background:#07242b;border:#053c48 solid 4px;position:fixed;display:flex;align-items:center;justify-content:center;&:hover{transform:scale(1.05);cursor:pointer;background:#05191d;}&:active{transform:scale(0.95);background:#053c48;}}@media (min-width: 1400px){& .rightbar.rightPinned{left:0;}& .hide-large{display:none;}}@media (max-width: 1400px){& .leftbar{top:60px;left:-285px;&.leftOpen{left:0;}}& .content-scroll{top:60px;left:0;width:100%;height:calc(100% - 60px);&.rightPinned{width:100%;& .home-content{padding:10px 95px 0 20px;}}&.leftOpen{width:100%!important;}}}@media (max-width: 768px){& .friends-button{display:none;}& .home-content{padding:10px 5px 0 5px!important;}& .leftbar{width:100%;left:-100%;min-width:auto!important;}& .rightbar{width:100%;left:100%;margin:0;min-width:auto!important;}}", "")
-                }, r.createElement(qt, null), r.createElement("div", null, r.createElement(Et, {
+                    className: (0, c.iv)("& .leftbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(90deg, #050505 50%, #050505ef 100%);padding:0 3px 3px 3px;z-index:30;top:60px;width:285px;min-width:285px;height:calc(100% - 60px);position:fixed;overflow-y:auto;display:flex;justify-content:center;}& .rightbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(270deg, #050505 50%, #050505ef 100%);padding:0;top:60px;width:410px;min-width:410px;z-index:50;height:calc(100% - 60px);margin-left:calc(100% - 410px);position:fixed;left:410px;&.open{left:0;}}& .content-scroll{top:60px;left:285px;position:absolute;overflow-y:auto;overflow-x:hidden;width:calc(100% - 285px);height:calc(100% - 60px);transition:width 0.5s ease-in-out,left 0.5s ease-in-out;background-image:url('https://assets.vrchat.com/www/images/Background_lines.svg');background-repeat:no-repeat;background-size:auto 100%;", n && (0, c.iv)("background-image:url(", Ut(), ");background-size:cover;background-position:bottom right;&>*{filter:drop-shadow(#714513 0 .125rem .25rem);}", ""), " & .home-content{max-width:2000px;margin:0 auto;display:flex;flex-direction:column;height:100%;padding:20px 95px 0 20px;transition:padding-right 0.35s ease-in-out;}&.rightPinned{width:calc(100% - 695px);& .home-content{padding:10px 20px 0 20px;}}&.leftOpen{width:calc(100% - 410px)!important;}}& .friends-button{width:65px;height:65px;top:70px;right:25px;transition:all 0.1s ease-in;border-radius:100%;background:#07242b;border:#053c48 solid 4px;position:fixed;display:flex;align-items:center;justify-content:center;&:hover{transform:scale(1.05);cursor:pointer;background:#05191d;}&:active{transform:scale(0.95);background:#053c48;}}@media (min-width: 1400px){& .rightbar.rightPinned{left:0;}& .hide-large{display:none;}}@media (max-width: 1400px){& .leftbar{top:60px;left:-285px;&.leftOpen{left:0;}}& .content-scroll{top:60px;left:0;width:100%;height:calc(100% - 60px);&.rightPinned{width:100%;& .home-content{padding:10px 95px 0 20px;}}&.leftOpen{width:100%!important;}}}@media (max-width: 768px){& .friends-button{display:none;}& .home-content{padding:10px 5px 0 5px!important;}& .leftbar{width:100%;left:-100%;min-width:auto!important;}& .rightbar{width:100%;left:100%;margin:0;min-width:auto!important;}}", "")
+                }, r.createElement(At, null), r.createElement("div", null, r.createElement(xt, {
                     navToggleCallback: E,
                     friendsToggleCallback: function(e) {
                         window.removeEventListener("resize", w), x(e)
@@ -1742,15 +1754,15 @@
                         name: "1bk3y4m",
                         styles: "margin-top:8px;& .dropdown-menu{padding:10px 15px 5px 15px;position:fixed!important;background-color:#506070;border-radius:0;z-index:1000;bottom:0!important;top:100px!important;margin:0!important;transform:none!important;}& .dropdown-toggle{margin-bottom:5px;}"
                     }))
-                }, r.createElement(st, {
+                }, r.createElement(ut, {
                     direction: "right"
                 })), r.createElement(s.SV, {
-                    fallback: jt.Z
+                    fallback: zt.Z
                 }, r.createElement(T, {
                     navToggleCallback: E
                 })), r.createElement(s.SV, {
-                    fallback: jt.Z
-                }, r.createElement(Et, {
+                    fallback: zt.Z
+                }, r.createElement(xt, {
                     horizontal: !0,
                     navToggleCallback: E
                 })))), r.createElement("div", {
@@ -1758,146 +1770,146 @@
                 }, r.createElement("div", {
                     className: "home-content"
                 }, r.createElement(s.SV, {
-                    fallback: jt.Z
+                    fallback: zt.Z
                 }, r.createElement(r.Suspense, {
-                    fallback: r.createElement(r.Fragment, null, r.createElement(kt.Z, {
+                    fallback: r.createElement(r.Fragment, null, r.createElement(Nt.Z, {
                         className: "tw-mb-2",
                         height: "2.5rem"
-                    }), r.createElement(kt.Z, {
+                    }), r.createElement(Nt.Z, {
                         delay: "50",
                         height: "480px"
                     }))
                 }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/search/:query",
-                    element: r.createElement(Rt, null)
+                    element: r.createElement(Dt, null)
                 }), r.createElement(o.AW, {
                     path: "/profile",
-                    element: r.createElement(Vt, null)
-                }), r.createElement(o.AW, {
-                    path: "/user/:userId/*",
-                    element: r.createElement(sn, null)
-                }), r.createElement(o.AW, {
-                    path: "/uploadIcon",
-                    element: Ot(Gt)()
-                }), r.createElement(o.AW, {
-                    path: "/uploadPhoto",
-                    element: Ot(_t)()
-                }), r.createElement(o.AW, {
-                    path: "/uploadEmoji",
-                    element: Ot(Ft)()
-                }), r.createElement(o.AW, {
-                    path: "/gallery/*",
                     element: r.createElement(Lt, null)
                 }), r.createElement(o.AW, {
+                    path: "/user/:userId/*",
+                    element: r.createElement(un, null)
+                }), r.createElement(o.AW, {
+                    path: "/uploadIcon",
+                    element: jt(_t)()
+                }), r.createElement(o.AW, {
+                    path: "/uploadPhoto",
+                    element: jt(Bt)()
+                }), r.createElement(o.AW, {
+                    path: "/uploadEmoji",
+                    element: jt(Gt)()
+                }), r.createElement(o.AW, {
+                    path: "/gallery/*",
+                    element: r.createElement(Ft, null)
+                }), r.createElement(o.AW, {
                     path: "/marketplace/*",
-                    element: r.createElement(an, null)
+                    element: r.createElement(rn, null)
                 }), r.createElement(o.AW, {
                     path: "/wallet",
-                    element: r.createElement(Nt.Z, {
+                    element: r.createElement(Tt.Z, {
                         to: "../marketplace/wallet"
                     })
                 }), r.createElement(o.AW, {
                     path: "/wallet/purchases/*",
-                    element: r.createElement(Nt.Z, {
+                    element: r.createElement(Tt.Z, {
                         to: "../marketplace/wallet/subscriptions/*"
                     })
                 }), r.createElement(o.AW, {
                     path: "/wallet/store/*",
-                    element: r.createElement(Nt.Z, {
+                    element: r.createElement(Tt.Z, {
                         to: "../marketplace/storefront/*"
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(tn, null)
+                    element: r.createElement(nn, null)
                 }), r.createElement(o.AW, {
                     path: "/worlds",
-                    element: r.createElement(Bt, null)
+                    element: r.createElement(Jt, null)
                 }), r.createElement(o.AW, {
                     path: "/world/:worldId/*",
-                    element: r.createElement(un, null)
+                    element: r.createElement(mn, null)
                 }), r.createElement(o.AW, {
                     path: "/avatars",
-                    element: r.createElement($t, null)
+                    element: r.createElement(Vt, null)
                 }), r.createElement(o.AW, {
                     path: "/avatar/:avatarId",
-                    element: r.createElement(Wt, null)
+                    element: r.createElement($t, null)
                 }), r.createElement(o.AW, {
                     path: "/content/*",
-                    element: r.createElement(rn, null)
-                }), r.createElement(o.AW, {
-                    path: "/messages",
                     element: r.createElement(on, null)
                 }), r.createElement(o.AW, {
-                    path: "/playermoderations",
+                    path: "/messages",
                     element: r.createElement(ln, null)
                 }), r.createElement(o.AW, {
+                    path: "/playermoderations",
+                    element: r.createElement(cn, null)
+                }), r.createElement(o.AW, {
                     path: "/download",
-                    element: r.createElement(Dt, null)
+                    element: r.createElement(Mt, null)
                 }), r.createElement(o.AW, {
                     path: "/groups",
-                    element: r.createElement(Jt, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups/create",
                     element: r.createElement(Kt, null)
                 }), r.createElement(o.AW, {
-                    path: "/groups/search",
-                    element: r.createElement(Jt, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups/search/:query",
-                    element: r.createElement(Jt, null)
-                }), r.createElement(o.AW, {
-                    path: "/group/:groupId/ageverification/:code",
-                    element: r.createElement(Ht, null)
-                }), r.createElement(o.AW, {
-                    path: "/group/:groupId/*",
+                    path: "/groups/create",
                     element: r.createElement(Xt, null)
                 }), r.createElement(o.AW, {
+                    path: "/groups/search",
+                    element: r.createElement(Kt, null)
+                }), r.createElement(o.AW, {
+                    path: "/groups/search/:query",
+                    element: r.createElement(Kt, null)
+                }), r.createElement(o.AW, {
+                    path: "/group/:groupId/ageverification/:code",
+                    element: r.createElement(Qt, null)
+                }), r.createElement(o.AW, {
+                    path: "/group/:groupId/*",
+                    element: r.createElement(Ht, null)
+                }), r.createElement(o.AW, {
                     path: "/groups/:groupId",
-                    element: r.createElement(Nt.Z, {
+                    element: r.createElement(Tt.Z, {
                         to: "../../group/:groupId"
                     })
                 }), r.createElement(o.AW, {
                     path: "/ageverification",
-                    element: r.createElement(Qt, null)
+                    element: r.createElement(Yt, null)
                 }), r.createElement(o.AW, {
                     path: "/accountlink",
-                    element: r.createElement(Mt, null)
+                    element: r.createElement(Wt, null)
                 }), r.createElement(o.AW, {
                     path: "/favorites/*",
                     element: r.createElement(o.Z5, null, r.createElement(o.AW, {
                         path: "/:type",
-                        element: r.createElement(Yt, null)
+                        element: r.createElement(en, null)
                     }), r.createElement(o.AW, {
                         path: "/:type/:name",
-                        element: r.createElement(Yt, null)
+                        element: r.createElement(en, null)
                     }))
                 }), r.createElement(o.AW, {
                     path: "/jams/*",
-                    element: r.createElement(nn, null)
+                    element: r.createElement(an, null)
                 }), !1, r.createElement(o.AW, {
                     path: "/subscriptions",
-                    element: r.createElement(cn, null)
+                    element: r.createElement(sn, null)
                 }), r.createElement(o.AW, {
                     path: "/",
-                    element: r.createElement(Ut, null)
+                    element: r.createElement(Rt, null)
                 })))))), r.createElement("div", {
                     className: "fixed-top rightbar ".concat(g ? "open" : "")
                 }, r.createElement(s.SV, {
-                    fallback: jt.Z
+                    fallback: zt.Z
                 }, r.createElement(r.Suspense, {
-                    fallback: r.createElement(r.Fragment, null, r.createElement(kt.Z, {
+                    fallback: r.createElement(r.Fragment, null, r.createElement(Nt.Z, {
                         className: "tw-m-6 tw-mb-4",
                         height: "2.25rem"
-                    }), r.createElement(kt.Z, {
+                    }), r.createElement(Nt.Z, {
                         className: "tw-m-6 tw-mt-0",
                         delay: "50",
                         height: "1.75rem"
-                    }), r.createElement(kt.Z, {
+                    }), r.createElement(Nt.Z, {
                         className: "tw-m-6",
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(en, {
+                }, r.createElement(tn, {
                     friendsToggleCallback: x
                 })))), r.createElement("div", {
                     role: "button",
@@ -2920,4 +2932,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6b4eee4165dd46b7d8cfef36bc5e445098c43596acf72e424dcc1decd0595e14.js.map
+//# sourceMappingURL=6e11ce3d0acb4688f5e8cdbc100cc4295594546979d42bdb7673fdf5f170fe7d.js.map
