@@ -411,7 +411,7 @@
                         styles: "margin-right:0.4em"
                     })
                 }), "Next"), p.createElement(b.rU, {
-                    to: "/home/gallery/icons"
+                    to: "/home/inventory/user-icons"
                 }, p.createElement(f.Z, {
                     color: "danger"
                 }, p.createElement(Z.$1, {
@@ -467,7 +467,7 @@
                         }), _(1), K(null != t ? t : 1), te(!1), le({}), oe(0), fe(!1), ye(!1), ke(!1), Ie(!1), qe(!1), Ae(!1), he(!1), Ge((0, S.LC)()), d()
                     }
                 }, "Back") : p.createElement(b.rU, {
-                    to: "/home/gallery/icons"
+                    to: "/home/inventory/user-icons"
                 }, p.createElement(f.Z, null, "View Icons"))))), !De.success && De.complete && p.createElement("div", {
                     className: (0, x.iv)({
                         name: "1q7q77",
@@ -492,7 +492,7 @@
                         styles: "float:right"
                     })
                 }, p.createElement(b.rU, {
-                    to: "/home/gallery/icons"
+                    to: "/home/inventory/user-icons"
                 }, p.createElement(f.Z, null, "View Icons"))))), !De.pending && p.createElement("div", null, p.createElement("div", {
                     className: (0, x.iv)({
                         name: "2v18bt",
@@ -560,4 +560,4 @@
         }
     }
 ]);
-//# sourceMappingURL=467d8dfa7258de2c2f4b31812e5b4f093bc34d375fef6dcd3cee6a70d4d755a6.js.map
+//# sourceMappingURL=efdce763ce69855e8fd4ccc42ca8f076cacb5be36e264c1bea3b62f44c52f46e.js.map

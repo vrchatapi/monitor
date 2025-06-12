@@ -6,8 +6,8 @@
                 default: () => L
             });
             var a = n(15861),
-                l = n(54546),
-                i = n(55346),
+                i = n(54546),
+                l = n(55346),
                 r = n(2723),
                 s = n(76553),
                 o = n(68055),
@@ -33,7 +33,7 @@
                 var t = e.isAdminView,
                     n = void 0 !== t && t,
                     a = e.imageUrl,
-                    i = e.fileId,
+                    l = e.fileId,
                     r = e.versionNumber,
                     s = e.onWear,
                     m = e.onDelete,
@@ -46,28 +46,28 @@
                     E = e.onSelect,
                     y = e.showSelect,
                     b = p.useState(!0),
-                    S = (0, l.Z)(b, 2),
+                    S = (0, i.Z)(b, 2),
                     U = S[0],
                     z = S[1],
                     L = p.useState(!1),
-                    j = (0, l.Z)(L, 2),
+                    j = (0, i.Z)(L, 2),
                     $ = j[0],
                     M = j[1],
                     I = p.useState(!1),
-                    P = (0, l.Z)(I, 2),
+                    P = (0, i.Z)(I, 2),
                     R = P[0],
                     B = P[1],
                     q = p.useState(!1),
-                    O = (0, l.Z)(q, 2),
+                    O = (0, i.Z)(q, 2),
                     A = O[0],
                     D = (O[1], p.useState(16 / 9)),
-                    W = (0, l.Z)(D, 2),
+                    W = (0, i.Z)(D, 2),
                     V = W[0],
                     Y = (W[1], p.useState(!0)),
-                    H = (0, l.Z)(Y, 2),
+                    H = (0, i.Z)(Y, 2),
                     T = H[0],
                     _ = (H[1], p.useState(!1)),
-                    F = (0, l.Z)(_, 2),
+                    F = (0, i.Z)(_, 2),
                     G = F[0],
                     J = F[1],
                     K = function() {
@@ -85,19 +85,19 @@
                     te = A ? "spin-and-shrink " : "",
                     ne = G ? "jitter-but-you-drank-decaf " : "",
                     ae = u,
-                    le = null != h ? h : "auto",
-                    ie = g || 135,
+                    ie = null != h ? h : "auto",
+                    le = g || 135,
                     re = null != V ? V : 16 / 9;
                 return p.createElement("div", {
-                    className: te + ne + (0, x.iv)("width:", le, "px;height:", ie, "px;aspect-ratio:", re, ";display:flex;z-index:1;align-items:center;justify-content:center;"),
+                    className: te + ne + (0, x.iv)("width:", ie, "px;height:", le, "px;aspect-ratio:", re, ";display:flex;z-index:1;align-items:center;justify-content:center;"),
                     onMouseLeave: Q
                 }, p.createElement("div", {
-                    className: "image-preview ".concat((0, x.iv)("background-color:transparent;border:2px solid ", ae || "var(--bs-gray-dark)", ";width:", le, "px!important;height:", ie, "px;padding:5px;border-radius:7px;z-index:3!important;")),
+                    className: "image-preview ".concat((0, x.iv)("background-color:transparent;border:2px solid ", ae || "var(--bs-gray-dark)", ";width:", ie, "px!important;height:", le, "px;padding:5px;border-radius:7px;z-index:3!important;")),
                     onMouseEnter: K
                 }, p.createElement("img", {
                     src: a,
                     alt: "user",
-                    className: (0, x.iv)("height:", ie - 10, "px;aspect-ratio:", re, ";border-radius:7px;"),
+                    className: (0, x.iv)("height:", le - 10, "px;aspect-ratio:", re, ";border-radius:7px;"),
                     hidden: U,
                     onLoad: function(e) {
                         var t = e.target;
@@ -105,10 +105,10 @@
                         z(!1)
                     }
                 }), p.createElement("div", {
-                    className: (0, x.iv)("height:", ie - 10, "px;max-height:", ie - 10, "px;aspect-ratio:", re, ";border-radius:100%;display:flex;align-items:center;justify-content:center;"),
+                    className: (0, x.iv)("height:", le - 10, "px;max-height:", le - 10, "px;aspect-ratio:", re, ";border-radius:100%;display:flex;align-items:center;justify-content:center;"),
                     hidden: !U
                 }, p.createElement(N.Z, null))), p.createElement("div", {
-                    className: "management-box ".concat("quick-visible margin-slide-out ", " ").concat((0, x.iv)("width:30px;height:", ie - 10, "px;background-color:var(--bs-gray-dark);border-radius:0 10px 10px 0;z-index:2!important;")),
+                    className: "management-box ".concat("quick-visible margin-slide-out ", " ").concat((0, x.iv)("width:30px;height:", le - 10, "px;background-color:var(--bs-gray-dark);border-radius:0 10px 10px 0;z-index:2!important;")),
                     hidden: !$,
                     onMouseEnter: K,
                     onMouseLeave: Q
@@ -120,7 +120,7 @@
                 }, !n && d && p.createElement(C.Z, {
                     color: "success",
                     onClick: function() {
-                        M(!1), s(i, r)
+                        M(!1), s(l, r)
                     }
                 }, p.createElement(w.$1, {
                     icon: k.vT,
@@ -128,7 +128,7 @@
                 })), y && p.createElement(C.Z, {
                     color: "success",
                     onClick: function() {
-                        M(!1), E(i, a)
+                        M(!1), E(l, a)
                     }
                 }, p.createElement(w.$1, {
                     icon: o.LE
@@ -147,7 +147,7 @@
                     icon: Z.$,
                     hidden: !R,
                     onClick: function() {
-                        M(!1), m(i), v && v(i)
+                        M(!1), m(l), v && v(l)
                     },
                     onMouseEnter: function() {
                         J(!0)
@@ -166,14 +166,14 @@
                     Z = e.isSelector,
                     k = void 0 !== Z && Z,
                     C = (0, p.useState)(null),
-                    L = (0, l.Z)(C, 2),
+                    L = (0, i.Z)(C, 2),
                     j = L[0],
                     $ = L[1],
                     M = (0, p.useState)({
                         x: 0,
                         y: 0
                     }),
-                    I = (0, l.Z)(M, 2),
+                    I = (0, i.Z)(M, 2),
                     P = I[0],
                     R = I[1],
                     B = (0, p.useState)({
@@ -182,7 +182,7 @@
                         width: 0,
                         height: 0
                     }),
-                    q = (0, l.Z)(B, 2),
+                    q = (0, i.Z)(B, 2),
                     O = (q[0], q[1]),
                     A = (0, p.useState)({
                         x: 0,
@@ -190,43 +190,43 @@
                         width: 0,
                         height: 0
                     }),
-                    D = (0, l.Z)(A, 2),
+                    D = (0, i.Z)(A, 2),
                     W = D[0],
                     V = D[1],
                     Y = (0, p.useState)(1),
-                    H = (0, l.Z)(Y, 2),
+                    H = (0, i.Z)(Y, 2),
                     T = H[0],
                     _ = H[1],
                     F = (0, p.useState)(null != t ? t : 16 / 9),
-                    G = (0, l.Z)(F, 2),
+                    G = (0, i.Z)(F, 2),
                     J = G[0],
                     K = G[1],
                     Q = (0, p.useState)(!1),
-                    X = (0, l.Z)(Q, 2),
+                    X = (0, i.Z)(Q, 2),
                     ee = X[0],
                     te = X[1],
                     ne = (0, p.useState)({}),
-                    ae = (0, l.Z)(ne, 2),
-                    le = ae[0],
-                    ie = ae[1],
+                    ae = (0, i.Z)(ne, 2),
+                    ie = ae[0],
+                    le = ae[1],
                     re = (0, p.useState)(0),
-                    se = (0, l.Z)(re, 2),
+                    se = (0, i.Z)(re, 2),
                     oe = se[0],
                     ce = se[1],
                     me = (0, p.useState)(!1),
-                    ue = (0, l.Z)(me, 2),
+                    ue = (0, i.Z)(me, 2),
                     de = ue[0],
                     he = ue[1],
                     pe = (0, p.useState)(!1),
-                    ge = (0, l.Z)(pe, 2),
+                    ge = (0, i.Z)(pe, 2),
                     ve = ge[0],
                     fe = ge[1],
                     Ee = p.useState(!1),
-                    xe = (0, l.Z)(Ee, 2),
+                    xe = (0, i.Z)(Ee, 2),
                     ye = xe[0],
                     be = xe[1],
                     we = p.useState(!1),
-                    Ne = (0, l.Z)(we, 2),
+                    Ne = (0, i.Z)(we, 2),
                     Ze = Ne[0],
                     ke = Ne[1],
                     Ce = (0, g.v9)((function(e) {
@@ -253,7 +253,7 @@
                             y: 0,
                             width: 0,
                             height: 0
-                        }), _(1), K(null != t ? t : 16 / 9), te(!1), ie({}), ce(0), fe(!1), be(!1), ke(!1), he(!1), je((0, U.b9)())
+                        }), _(1), K(null != t ? t : 16 / 9), te(!1), le({}), ce(0), fe(!1), be(!1), ke(!1), he(!1), je((0, U.b9)())
                     },
                     Me = function(e, t) {
                         O(e), V(t)
@@ -288,7 +288,7 @@
                                     case 0:
                                         return e.next = 2, Ae(Oe(j), W);
                                     case 2:
-                                        t = e.sent, te(!0), ie(t), ce(2);
+                                        t = e.sent, te(!0), le(t), ce(2);
                                     case 6:
                                     case "end":
                                         return e.stop()
@@ -393,7 +393,7 @@
                         styles: "margin-right:0.4em"
                     })
                 }), "Cancel") : p.createElement(b.rU, {
-                    to: "/home/gallery/photos"
+                    to: "/home/inventory/photos"
                 }, p.createElement(v.Z, {
                     color: "danger"
                 }, p.createElement(w.$1, {
@@ -436,7 +436,7 @@
                         $e(), d()
                     }
                 }, "Back") : p.createElement(b.rU, {
-                    to: "/home/gallery/photos"
+                    to: "/home/inventory/photos"
                 }, p.createElement(v.Z, null, "View Photos"))))), !Ce.success && Ce.complete && p.createElement("div", {
                     className: (0, x.iv)({
                         name: "1q7q77",
@@ -461,14 +461,14 @@
                         styles: "float:right"
                     })
                 }, p.createElement(b.rU, {
-                    to: "/home/gallery/photos"
+                    to: "/home/inventory/photos"
                 }, p.createElement(v.Z, null, "View Photos"))))), !Ce.pending && p.createElement("div", null, p.createElement("div", {
                     className: (0, x.iv)({
                         name: "1ue3j6i",
                         styles: "div{margin:auto;margin-top:0.5em;}"
                     })
                 }, p.createElement(S, {
-                    imageUrl: le.base64,
+                    imageUrl: ie.base64,
                     borderColor: _e,
                     disableManagement: !0
                 })), !Ce.success && p.createElement("div", {
@@ -490,7 +490,7 @@
                     color: "success",
                     onClick: function() {
                         je((0, U.nn)({
-                            file: le.file
+                            file: ie.file
                         }))
                     }
                 }, p.createElement(w.$1, {
@@ -506,10 +506,10 @@
                     }),
                     color: "danger",
                     onClick: function() {
-                        te(!1), ie({}), ce(1)
+                        te(!1), le({}), ce(1)
                     }
                 }, p.createElement(w.$1, {
-                    icon: i.ac,
+                    icon: l.ac,
                     className: (0, x.iv)({
                         name: "ofo7n8",
                         styles: "margin-right:0.4em"
@@ -534,4 +534,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1a83fcab02ed0e90678acc55fa35b14917728e4e80a2ad157270d9d701c70f82.js.map
+//# sourceMappingURL=554e86d692891adefabf7e6a18d23939a2458e7b100642e40713900e35d0b802.js.map

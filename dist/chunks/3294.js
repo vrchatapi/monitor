@@ -3,7 +3,7 @@
     [3294], {
         22497: (e, t, n) => {
             n.d(t, {
-                Z: () => x
+                Z: () => y
             });
             var r = n(67294),
                 a = (n(37337), n(54546)),
@@ -17,17 +17,17 @@
                     name: "4j0agp",
                     styles: "margin-right:0.3em"
                 }),
-                u = (0, i.Z)("input", {
+                m = (0, i.Z)("input", {
                     target: "e14fnvay0"
                 })({
                     name: "eivff4",
                     styles: "display:none"
                 });
-            const m = function(e) {
+            const u = function(e) {
                 var t = e.callback,
                     n = e.text,
                     a = (0, r.useRef)(null);
-                return r.createElement(r.Fragment, null, r.createElement(u, {
+                return r.createElement(r.Fragment, null, r.createElement(m, {
                     type: "file",
                     id: "file",
                     ref: a,
@@ -75,13 +75,13 @@
                     name: "1iy47er",
                     styles: "padding-bottom:0.3em"
                 }),
-                v = (0, i.Z)("div", {
+                w = (0, i.Z)("div", {
                     target: "e1ytxlu90"
                 })({
                     name: "1bk55cy",
                     styles: "width:100%;height:100%;background-color:#0a0a0d;border-radius:8px;border-style:dashed;border-width:2px;border-color:#737373;display:flex;align-items:center;justify-content:center;text-align:center"
                 });
-            const y = function(e) {
+            const v = function(e) {
                 var t = e.fileCallback,
                     n = e.isForAnimatedEmoji,
                     i = e.setIsPremadeSpriteSheet,
@@ -93,7 +93,7 @@
                     e.preventDefault()
                 }), !1), window.addEventListener("drop", (function(e) {
                     e.preventDefault()
-                }), !1), r.createElement(v, {
+                }), !1), r.createElement(w, {
                     onDrop: function(e) {
                         var n;
                         e.stopPropagation(), e.preventDefault();
@@ -106,7 +106,7 @@
                     color: "#737373",
                     icon: o.l9,
                     width: 50
-                }), " ", r.createElement("br", null), r.createElement(h, null, r.createElement("strong", null, "Drag and drop files here or"), "  ", r.createElement(m, {
+                }), " ", r.createElement("br", null), r.createElement(h, null, r.createElement("strong", null, "Drag and drop files here or"), "  ", r.createElement(u, {
                     callback: t,
                     text: "Select Files"
                 })), n && r.createElement(d, null, r.createElement(f, {
@@ -117,17 +117,17 @@
                     onClick: c
                 }, "Enable Sprite Sheet Mode [BETA]"))))
             };
-            var w = n(60006);
-            const x = function(e) {
+            var x = n(60006);
+            const y = function(e) {
                 var t = e.fileSelectedCallback,
                     n = e.isForAnimatedEmoji,
                     a = e.isPremadeSpriteSheet,
                     i = e.setIsPremadeSpriteSheet,
                     o = e.hintText,
                     l = e.hintTextMuted;
-                return r.createElement(r.Fragment, null, r.createElement(w.X2, {
+                return r.createElement(r.Fragment, null, r.createElement(x.X2, {
                     className: "tw-grow"
-                }, r.createElement(y, {
+                }, r.createElement(v, {
                     fileCallback: function(e) {
                         t({
                             file: e,
@@ -137,7 +137,7 @@
                     isForAnimatedEmoji: n,
                     setIsPremadeSpriteSheet: i,
                     isPremadeSpriteSheet: a
-                })), (o || l) && r.createElement(w.X2, null, r.createElement("div", {
+                })), (o || l) && r.createElement(x.X2, null, r.createElement("div", {
                     className: "tw-mt-6"
                 }, o && r.createElement("strong", null, o), o && l && r.createElement("br", null), l && r.createElement("span", {
                     className: "tw-text-light-grey"
@@ -173,7 +173,7 @@
         },
         85042: (e, t, n) => {
             n.d(t, {
-                Z: () => v
+                Z: () => w
             });
             var r = n(4965),
                 a = n(23208),
@@ -182,8 +182,8 @@
                 l = n(18478),
                 c = n(37463),
                 s = n(86646),
-                u = n(60006),
-                m = n(67294);
+                m = n(60006),
+                u = n(67294);
             var d = (0, r.Z)(c.zx, {
                     target: "eteiwuh4"
                 })({
@@ -202,7 +202,7 @@
                     name: "1d9z9vl",
                     styles: "width:25em"
                 }),
-                h = (0, r.Z)(u.X2, {
+                h = (0, r.Z)(m.X2, {
                     target: "eteiwuh1"
                 })({
                     name: "1h1nmc6",
@@ -214,20 +214,20 @@
                     name: "1dw9q8m",
                     styles: "outline:none!important;border:none;background:#064b5c;width:2em;height:2em;margin-left:0.5em;border-radius:100%;display:flex;align-items:center;justify-content:center"
                 });
-            const v = function(e) {
+            const w = function(e) {
                 var t = e.onReset,
                     n = e.onZoom,
                     r = e.onRotate,
                     c = (e.onFlip, e.zoom);
-                return m.createElement(h, null, m.createElement(d, {
+                return u.createElement(h, null, u.createElement(d, {
                     neutral: !0,
                     onClick: function() {
                         t()
                     }
-                }, "Reset"), m.createElement(p, {
+                }, "Reset"), u.createElement(p, {
                     width: 20,
                     icon: l.Wq
-                }), m.createElement(f, {
+                }), u.createElement(f, {
                     type: "range",
                     className: "sliderInput",
                     min: 1,
@@ -238,22 +238,22 @@
                         var t = e.target.value;
                         n(t)
                     }
-                }), m.createElement(p, {
+                }), u.createElement(p, {
                     width: 20,
                     icon: o.q9
-                }), m.createElement(g, {
+                }), u.createElement(g, {
                     onClick: function() {
                         return r(-90)
                     }
-                }, m.createElement(s.Z, {
+                }, u.createElement(s.Z, {
                     icon: i.Xn,
                     color: "#1fd1ed",
                     width: 20
-                })), m.createElement(g, {
+                })), u.createElement(g, {
                     onClick: function() {
                         return r(90)
                     }
-                }, m.createElement(s.Z, {
+                }, u.createElement(s.Z, {
                     icon: a.mH,
                     color: "#1fd1ed",
                     width: 20
@@ -262,7 +262,7 @@
         },
         39191: (e, t, n) => {
             n.d(t, {
-                Z: () => b
+                Z: () => E
             });
             var r = n(15861),
                 a = n(54546),
@@ -271,8 +271,8 @@
                 l = n.n(o),
                 c = n(60006),
                 s = n(67294),
-                u = n(60933),
-                m = n(37463),
+                m = n(60933),
+                u = n(37463),
                 d = n(85042),
                 p = n(70123);
             var f = (0, i.Z)(c.X2, {
@@ -293,7 +293,7 @@
                     name: "1ixejqt",
                     styles: "display:flex;flex-direction:column;background-color:#0a0a0d;border-radius:8px;width:100%;height:40em"
                 });
-            const v = function(e) {
+            const w = function(e) {
                 e.completedCallback;
                 var t = e.frames,
                     n = e.zoom,
@@ -302,14 +302,14 @@
                     o = e.setRotation,
                     l = e.crop,
                     c = e.setCrop,
-                    m = (e.croppedArea, e.setCroppedArea),
-                    v = (e.croppedAreaPixels, e.setCroppedAreaPixels),
-                    y = s.useState(0),
-                    w = (0, a.Z)(y, 2),
-                    x = w[0];
-                w[1];
+                    u = (e.croppedArea, e.setCroppedArea),
+                    w = (e.croppedAreaPixels, e.setCroppedAreaPixels),
+                    v = s.useState(0),
+                    x = (0, a.Z)(v, 2),
+                    y = x[0];
+                x[1];
                 return s.createElement(g, null, s.createElement(f, null, s.createElement(p.ZP, {
-                    image: (0, u.Gr)(t[x]),
+                    image: (0, m.Gr)(t[y]),
                     crop: l,
                     zoom: n,
                     aspect: 1,
@@ -319,7 +319,7 @@
                         return c(e)
                     },
                     onCropAreaChange: function(e, t) {
-                        m(e), v(t)
+                        u(e), w(t)
                     },
                     onZoomChange: function(e) {
                         return r(e)
@@ -332,12 +332,12 @@
                         r(1), o(0), c({
                             x: 0,
                             y: 0
-                        }), m({
+                        }), u({
                             x: 0,
                             y: 0,
                             width: 0,
                             height: 0
-                        }), v({
+                        }), w({
                             x: 0,
                             y: 0,
                             width: 0,
@@ -350,69 +350,68 @@
                     zoom: n
                 })))
             };
-            var y = (0, i.Z)("div", {
-                    target: "e1p1famy1"
-                })({
-                    name: "bp2yox",
-                    styles: "flex:50%"
-                }),
-                w = (0, i.Z)("div", {
-                    target: "e1p1famy0"
-                })({
-                    name: "4kj7g6",
-                    styles: "flex:50%;display:flex;justify-content:right"
-                });
-            const x = function(e) {
+            n(37337);
+            const v = function(e) {
                 var t = e.onCancel,
                     n = e.onBack,
                     r = e.onNext,
                     a = "\n    width: 12em;\n  ";
-                return s.createElement(s.Fragment, null, s.createElement(c.X2, null, s.createElement(y, null, s.createElement(m.zx, {
+                return s.createElement(s.Fragment, null, s.createElement("div", {
+                    className: "tw-w-full tw-flex tw-flex-col tw-justify-between md:tw-flex-row"
+                }, s.createElement("div", {
+                    className: "md:tw-mr-4"
+                }, s.createElement(u.zx, {
+                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
                     containerStyles: a,
                     neutral: !0,
                     onClick: t
-                }, "Cancel")), s.createElement(w, null, s.createElement(m.zx, {
+                }, "Cancel")), s.createElement("div", {
+                    className: "tw-flex tw-flex-col md:tw-flex-row tw-justify-items-start"
+                }, s.createElement(u.zx, {
+                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
                     containerStyles: a,
                     neutral: !0,
                     onClick: n
-                }, "Back"), s.createElement(m.zx, {
-                    containerStyles: "".concat(a, "margin-left: 1em;"),
+                }, "Back"), s.createElement(u.zx, {
+                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
+                    containerStyles: a,
                     accent: !0,
-                    onClick: r
+                    onClick: r,
+                    className: "md:tw-ml-4"
                 }, "Next"))))
             };
-            var E = (0, i.Z)("div", {
+            var x = (0, i.Z)("div", {
                     target: "e15niawg1"
                 })({
                     name: "v4exnp",
                     styles: "height:86%;margin-bottom:1.5em;flex:80%"
                 }),
-                Z = (0, i.Z)("div", {
+                y = (0, i.Z)("div", {
                     target: "e15niawg0"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 });
-            const b = function(e) {
+            const E = function(e) {
                 var t = e.baseImage,
                     n = e.onCompleted,
                     i = e.onCancel,
                     o = e.onBack,
                     c = s.useState(1),
-                    m = (0, a.Z)(c, 2),
-                    d = m[0],
-                    p = m[1],
+                    u = (0, a.Z)(c, 2),
+                    d = u[0],
+                    p = u[1],
                     f = s.useState(0),
                     h = (0, a.Z)(f, 2),
                     g = h[0],
-                    y = h[1],
-                    w = s.useState({
+                    E = h[1],
+                    b = s.useState({
                         x: 0,
                         y: 0
                     }),
-                    b = (0, a.Z)(w, 2),
-                    k = b[0],
-                    C = b[1],
+                    Z = (0, a.Z)(b, 2),
+                    C = Z[0],
+                    k = Z[1],
                     S = s.useState({
                         x: 0,
                         y: 0,
@@ -428,21 +427,21 @@
                         width: 0,
                         height: 0
                     }),
-                    I = (0, a.Z)(A, 2),
-                    q = I[0],
-                    D = I[1],
-                    F = s.useState(null),
-                    R = (0, a.Z)(F, 2),
-                    B = (R[0], R[1], s.useState("square")),
-                    N = (0, a.Z)(B, 2),
-                    X = N[0],
-                    T = (N[1], function() {
+                    N = (0, a.Z)(A, 2),
+                    I = N[0],
+                    q = N[1],
+                    D = s.useState(null),
+                    F = (0, a.Z)(D, 2),
+                    R = (F[0], F[1], s.useState("square")),
+                    B = (0, a.Z)(R, 2),
+                    X = B[0],
+                    T = (B[1], function() {
                         var e = (0, r.Z)(l().mark((function e(t) {
                             return l().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.abrupt("return", new Promise((function(e) {
-                                            var n = (0, u.Gr)(t),
+                                            var n = (0, m.Gr)(t),
                                                 a = new Image;
                                             a.onload = function() {
                                                 var t = document.createElement("canvas"),
@@ -453,7 +452,7 @@
                                                         return l().wrap((function(t) {
                                                             for (;;) switch (t.prev = t.next) {
                                                                 case 0:
-                                                                    return t.next = 2, (0, u.s3)(n);
+                                                                    return t.next = 2, (0, m.s3)(n);
                                                                 case 2:
                                                                     r = t.sent, e({
                                                                         file: n,
@@ -495,13 +494,13 @@
                                             t.onload = function() {
                                                 var n = document.createElement("canvas"),
                                                     a = n.getContext("2d");
-                                                n.width = q.width, n.height = q.height, a.drawImage(t, -q.x, -q.y), n.toBlob(function() {
+                                                n.width = I.width, n.height = I.height, a.drawImage(t, -I.x, -I.y), n.toBlob(function() {
                                                     var n = (0, r.Z)(l().mark((function n(r) {
                                                         var a;
                                                         return l().wrap((function(n) {
                                                             for (;;) switch (n.prev = n.next) {
                                                                 case 0:
-                                                                    return n.next = 2, (0, u.s3)(r);
+                                                                    return n.next = 2, (0, m.s3)(r);
                                                                 case 2:
                                                                     a = n.sent, e({
                                                                         file: r,
@@ -552,20 +551,20 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return s.createElement(Z, null, s.createElement(E, null, s.createElement(v, {
+                return s.createElement(y, null, s.createElement(x, null, s.createElement(w, {
                     frames: [t],
                     completedCallback: n,
                     zoom: d,
                     setZoom: p,
                     rotation: g,
-                    setRotation: y,
-                    crop: k,
-                    setCrop: C,
+                    setRotation: E,
+                    crop: C,
+                    setCrop: k,
                     croppedArea: P,
                     setCroppedArea: z,
-                    croppedAreaPixels: q,
-                    setCroppedAreaPixels: D
-                })), s.createElement(x, {
+                    croppedAreaPixels: I,
+                    setCroppedAreaPixels: q
+                })), s.createElement(v, {
                     onCancel: i,
                     onBack: function() {
                         o()
@@ -576,4 +575,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67b9631a8d9a18ea94febf3612ee4e5b68b03b613465e5f4661ebdbdabd764e9.js.map
+//# sourceMappingURL=1714324ca92403c09e2310b9ed15ab3003834d4088487ed0b749076710f9390d.js.map

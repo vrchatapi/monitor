@@ -26,7 +26,11 @@
                     className: c
                 }, l.map((function(e) {
                     var t = e.id || e.to,
-                        o = a.createElement(a.Fragment, null, e.icon && a.createElement(d, {
+                        o = a.createElement(a.Fragment, null, e.customIcon && a.createElement("img", {
+                            className: "tw-mr-1",
+                            src: e.customIcon,
+                            alt: e.name
+                        }), e.icon && a.createElement(d, {
                             icon: e.icon
                         }), e.name),
                         s = {
@@ -38,10 +42,13 @@
                             },
                             neutral: n !== e.id
                         };
-                    return e.to ? a.createElement(p, (0, r.Z)({}, s, {
+                    return e.to ? a.createElement(m, (0, r.Z)({}, s, {
                         to: e.to,
                         end: e.end
-                    }), o) : (e !== n && (null == e ? void 0 : e.id) !== n || (s.className = "selected"), a.createElement(u, (0, r.Z)({}, s, {
+                    }), o, (null == e ? void 0 : e.hasNotification) && a.createElement("div", {
+                        className: "tw-absolute tw-z-50 tw-right-[-8px] tw-top-0 tw-h-2 tw-w-2 tw-bg-red tw-rounded-full",
+                        "aria-label": "has notification"
+                    })) : (e !== n && (null == e ? void 0 : e.id) !== n || (s.className = "selected"), a.createElement(u, (0, r.Z)({}, s, {
                         containerStyles: {
                             borderRadius: 0,
                             borderBottom: "2px solid transparent"
@@ -67,9 +74,9 @@
                 }), ";align-items:center;width:100%;flex-wrap:wrap;margin-bottom:8px;", (function(e) {
                     switch (e.justify) {
                         case "left":
-                            return "\n          & > :first-of-type > ".concat(s.Sn, ",\n          & > ").concat(p, ":first-of-type {\n            margin-left: 0;\n          }\n        ");
+                            return "\n          & > :first-of-type > ".concat(s.Sn, ",\n          & > ").concat(m, ":first-of-type {\n            margin-left: 0;\n          }\n        ");
                         case "right":
-                            return "\n          & > :first-of-type > ".concat(s.Sn, ",\n          & > ").concat(p, ":first-of-type {\n            margin-right: 0;\n          }\n        ");
+                            return "\n          & > :first-of-type > ".concat(s.Sn, ",\n          & > ").concat(m, ":first-of-type {\n            margin-right: 0;\n          }\n        ");
                         default:
                             return ""
                     }
@@ -80,13 +87,13 @@
                     name: "rsc60g",
                     styles: "background:none;border:none;border-radius:0px!important;border-bottom:2px solid transparent;color:#fff;padding:5px 0px;text-decoration:none;display:flex;align-items:center;margin:10px;&.selected{border-bottom:#1FD1ED solid 2px;color:#6ae3f9;}"
                 }),
-                p = (0, o.Z)(i.OL, {
+                m = (0, o.Z)(i.OL, {
                     target: "e1s986um0"
                 })({
-                    name: "kqs0q4",
-                    styles: "background:none;border:none;border-bottom:2px solid transparent;color:#fff;padding:5px 0px;text-decoration:none;&:hover,&:active,&:focus{color:#fff;border-color:#086c84;text-decoration:none;}&:disabled{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);&:hover{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);}}&.active{border-bottom:#1FD1ED solid 2px;color:#6ae3f9;}display:flex;align-items:center;margin:0.175rem 10px"
+                    name: "1faq2w4",
+                    styles: "background:none;border:none;border-bottom:2px solid transparent;color:#fff;padding:5px 0px;text-decoration:none;position:relative;&:hover,&:active,&:focus{color:#fff;border-color:#086c84;text-decoration:none;}&:disabled{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);&:hover{border:hsl(0, 0%, 20%) solid 2px;background:hsl(0, 0%, 20%);color:hsl(0, 0%, 60%);}}&.active{border-bottom:#1FD1ED solid 2px;color:#6ae3f9;}display:flex;align-items:center;margin:0.175rem 10px"
                 })
         }
     }
 ]);
-//# sourceMappingURL=ce306c6c70b1e20c7c4f28ed5c9acc822e7a7b9639078947ec6f072bec0bc685.js.map
+//# sourceMappingURL=127cd437742e7eedcae6974b604b546049aaba856d77f2b61a161831faef92e6.js.map
