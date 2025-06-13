@@ -260,18 +260,18 @@
                         N = (0, i.useMemo)((function() {
                             return null == t ? void 0 : t.framesOverTime
                         }), [t]),
-                        Z = function() {
+                        T = function() {
                             return I <= 4 ? 512 : I <= 16 ? 256 : I <= 64 ? 128 : void console.error("Frame count of ".concat(I, " is unsupported!"))
                         },
-                        C = function() {
+                        Z = function() {
                             var e = I <= 4 ? 2 : I <= 16 ? 4 : I <= 64 ? 8 : void console.error("Frame count of ".concat(I, " is unsupported!")),
-                                t = Z();
+                                t = T();
                             return {
                                 x: d.current % e * t,
                                 y: Math.floor(d.current / e) * t
                             }
                         },
-                        T = function() {
+                        C = function() {
                             y(), null === g.current && h.current && (g.current = h.current.getContext("2d")), g.current && g.current.clearRect(0, 0, r, r), k && I && N > 0 && (v.current = setInterval(S, 1e3 / N))
                         },
                         S = function() {
@@ -279,8 +279,8 @@
                                 if (null !== g.current && null !== p.current) {
                                     var e = g.current;
                                     e.clearRect(0, 0, 1e3, 1e3), e.save(), null !== E && f.current && (e.drawImage(f.current, 0, 0, r, r), e.globalCompositeOperation = "source-in");
-                                    var t = C(),
-                                        n = Z();
+                                    var t = Z(),
+                                        n = T();
                                     w(e), e.drawImage(p.current, t.x, t.y, n, n, 0, 0, r, r), e.restore(), d.current = (d.current + 1) % I
                                 }
                             } else y()
@@ -305,7 +305,7 @@
                             p.current = null;
                             var e = new Image;
                             if (e.onload = function() {
-                                    p.current = e, k && I && N ? T() : j(), void 0 !== o && o()
+                                    p.current = e, k && I && N ? C() : j(), void 0 !== o && o()
                                 }, e.onerror = function(e) {
                                     console.error("Error loading image:", e), void 0 !== l && l(e)
                                 }, E) {
@@ -326,7 +326,7 @@
                                 y()
                             }
                     }), [t, n, r]), (0, i.useEffect)((function() {
-                        if (p.current) return y(), k && I && N ? T() : j(),
+                        if (p.current) return y(), k && I && N ? C() : j(),
                             function() {
                                 y()
                             }
@@ -572,10 +572,10 @@
                 k = n(7469),
                 I = n(37463),
                 N = n(50048),
-                Z = n(3447),
-                C = n(6344),
-                T = n(45697),
-                S = n.n(T),
+                T = n(3447),
+                Z = n(6344),
+                C = n(45697),
+                S = n.n(C),
                 j = n(55206),
                 O = n(19531),
                 A = n(78542),
@@ -589,7 +589,7 @@
                         s = e.deleteItemCallback,
                         u = void 0 === s ? null : s,
                         d = e.onArchiveCallback,
-                        T = void 0 === d ? null : d,
+                        C = void 0 === d ? null : d,
                         S = e.type,
                         q = (0, r.useRef)(null),
                         P = (0, r.useState)(c),
@@ -805,7 +805,7 @@
                     }, r.createElement("h3", {
                         className: "heading tw-text-white tw-text-left tw-text-2xl"
                     }, r.createElement(I.$1, {
-                        icon: C.Z,
+                        icon: Z.Z,
                         className: "tw-mr-2"
                     }), ue), r.createElement(N.ZP, {
                         className: "tw-w-9 tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
@@ -824,7 +824,7 @@
                         containerClasses: "tw-w-full sm:tw-w-fit",
                         className: "tw-w-full  tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey tw-mr-2 "
                     }, r.createElement(I.$1, {
-                        icon: Z.Z
+                        icon: T.Z
                     }), "Create Emoji From Sticker"), ge.hasDelete && r.createElement(N.ZP, {
                         containerClasses: "tw-w-full sm:tw-w-fit",
                         className: "tw-w-full tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
@@ -840,7 +840,7 @@
                         className: "tw-h-12 sm:tw-h-9 tw-w-full tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
                         title: "Archive Sticker",
                         onClick: function() {
-                            return null == T ? void 0 : T(me)
+                            return null == C ? void 0 : C(me)
                         }
                     }, r.createElement(I.$1, {
                         icon: f.hV,
@@ -974,12 +974,12 @@
                         s(!1)
                     },
                     N = "online" === m.state,
-                    Z = (null === (t = m.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? m.profilePicOverride : m.currentAvatarThumbnailImageUrl,
-                    C = (0, J.S6)({
-                        fileUrl: Z,
+                    T = (null === (t = m.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? m.profilePicOverride : m.currentAvatarThumbnailImageUrl,
+                    Z = (0, J.S6)({
+                        fileUrl: T,
                         width: "1024"
                     }),
-                    T = m.userIcon ? (0, J.S6)({
+                    C = m.userIcon ? (0, J.S6)({
                         fileUrl: m.userIcon,
                         width: "1024"
                     }) : null;
@@ -1006,7 +1006,7 @@
                 }, m.statusDescription)), r.createElement(te, null, r.createElement(ae, {
                     "aria-label": "Profile Picture",
                     to: "/home/user/".concat(m.id),
-                    url: C,
+                    url: Z,
                     level: (0, Q.FR)({
                         tags: m.tags
                     }),
@@ -1015,7 +1015,7 @@
                     className: "mx-0"
                 }, r.createElement(oe, {
                     className: "text-center"
-                }, "Go To Profile")), T && r.createElement(le, {
+                }, "Go To Profile")), C && r.createElement(le, {
                     role: "button",
                     "aria-label": "Go To Gallery",
                     onClick: function(e) {
@@ -1023,7 +1023,7 @@
                     }
                 }, r.createElement(ce, {
                     "aria-label": "User Icon",
-                    url: T,
+                    url: C,
                     level: (0, Q.FR)({
                         tags: m.tags
                     })
@@ -1200,9 +1200,9 @@
                 ke = n(83183),
                 Ie = n(57026),
                 Ne = n(89148),
-                Ze = n(15369),
-                Ce = n(13461),
-                Te = n(66007),
+                Te = n(15369),
+                Ze = n(13461),
+                Ce = n(66007),
                 Se = n(2723),
                 je = n(66062),
                 Oe = n(40767),
@@ -1316,7 +1316,7 @@
                     k = (0, a.Z)(x, 2),
                     I = k[0],
                     N = k[1],
-                    Z = (0, i.v9)((function(e) {
+                    T = (0, i.v9)((function(e) {
                         return e.search.autoRedirect
                     }));
                 (0, r.useEffect)((function() {
@@ -1328,10 +1328,10 @@
                         sortByFilter: I
                     };
                     (0, xt.Kz)("Web_Mod_SearchFilterChange", It(It({}, e), {}, {
-                        autoRedirect: Z
+                        autoRedirect: T
                     })), t(e)
-                }), [Z, d, h, y, I]);
-                var C = function(e) {
+                }), [T, d, h, y, I]);
+                var Z = function(e) {
                     return e.target.checked ? E([].concat((0, ht.Z)(y), [e.target.name])) : E(y.filter((function(t) {
                         return t !== e.target.name
                     })))
@@ -1394,7 +1394,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("displayName"),
-                    onChange: C,
+                    onChange: Z,
                     type: "checkbox",
                     name: "displayName",
                     id: "displayName"
@@ -1405,7 +1405,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("email"),
-                    onChange: C,
+                    onChange: Z,
                     type: "checkbox",
                     name: "email",
                     id: "email"
@@ -1416,7 +1416,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("username"),
-                    onChange: C,
+                    onChange: Z,
                     type: "checkbox",
                     name: "username",
                     id: "username"
@@ -1427,7 +1427,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("pastEmails"),
-                    onChange: C,
+                    onChange: Z,
                     type: "checkbox",
                     name: "pastEmails",
                     id: "pastEmails"
@@ -1440,7 +1440,7 @@
                 }, "Settings"), r.createElement("div", {
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
-                    checked: Z,
+                    checked: T,
                     onChange: function() {
                         return n((0, Et.Tr)())
                     },
@@ -1468,8 +1468,8 @@
             Nt.propTypes = {
                 onChangeCallback: S().func.isRequired
             };
-            var Zt = n(73670);
-            const Ct = function() {
+            var Tt = n(73670);
+            const Zt = function() {
                 var e = (0, o.s0)(),
                     t = (0, o.TH)(),
                     n = "";
@@ -1519,12 +1519,12 @@
                         name: "clzu0",
                         styles: "display:flex;flex-direction:row;align-items:center;flex-grow:1"
                     })
-                }, r.createElement(Zt.Z, {
+                }, r.createElement(Tt.Z, {
                     initialString: b,
                     searchString: w
                 }), l && !1))))))
             };
-            var Tt = n(15861),
+            var Ct = n(15861),
                 St = n(24075),
                 jt = n(89082),
                 Ot = n(64687),
@@ -1548,7 +1548,7 @@
                         return e.currentUser.isMod
                     })),
                     v = function() {
-                        var e = (0, Tt.Z)(At().mark((function e() {
+                        var e = (0, Ct.Z)(At().mark((function e() {
                             var t, n, a;
                             return At().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1696,9 +1696,9 @@
                         x = (0, a.Z)(E, 2),
                         k = x[0],
                         N = x[1],
-                        Z = (0, mt.y)().data,
-                        C = ((0, K.pc)(), (0, M.XC)().data),
-                        T = (0, i.v9)((function(e) {
+                        T = (0, mt.y)().data,
+                        Z = ((0, K.pc)(), (0, M.XC)().data),
+                        C = (0, i.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
                         S = (0, M.q7)().data,
@@ -1730,7 +1730,7 @@
                             s && s(!1)
                         },
                         W = j || [],
-                        V = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = T.length) && void 0 !== t ? t : 0);
+                        V = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = C.length) && void 0 !== t ? t : 0);
                     n = A.filter((function(e) {
                         return e.state === Dt.oq.INVITED
                     })).length;
@@ -1857,7 +1857,7 @@
                             className: "navbar-section center-nav"
                         }, r.createElement("div", {
                             className: "search"
-                        }, r.createElement(Ct, null)), r.createElement("button", {
+                        }, r.createElement(Zt, null)), r.createElement("button", {
                             type: "button",
                             className: "p-1 btn btn-secondary navbar-btn d-md-none",
                             onClick: function() {
@@ -1987,7 +1987,7 @@
                         className: "btn text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Te.KC
+                        icon: Ce.KC
                     }), r.createElement("div", null, "Avatars"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -1996,7 +1996,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ce.T
+                        icon: Ze.T
                     }), r.createElement("div", null, "Favorite Worlds"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2005,7 +2005,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ce.T
+                        icon: Ze.T
                     }), r.createElement("div", null, "Favorite Avatars"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2014,7 +2014,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ce.T
+                        icon: Ze.T
                     }), r.createElement("div", null, "Favorite Friends"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2045,10 +2045,10 @@
                         to: "/home/accountlink",
                         title: "accountLink",
                         className: "btn text-left",
-                        hidden: (null == Z ? void 0 : Z.disableUpgradeAccount) || (null == C ? void 0 : C.steamId) && (null == C ? void 0 : C.oculusId),
+                        hidden: (null == T ? void 0 : T.disableUpgradeAccount) || (null == Z ? void 0 : Z.steamId) && (null == Z ? void 0 : Z.oculusId),
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ze.x0
+                        icon: Te.x0
                     }), r.createElement("div", null, "Account Link"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2208,13 +2208,13 @@
                 Nn = r.lazy((function() {
                     return Promise.all([n.e(4473), n.e(8264)]).then(n.bind(n, 8264))
                 })),
-                Zn = r.lazy((function() {
+                Tn = r.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
                 })),
-                Cn = r.lazy((function() {
+                Zn = r.lazy((function() {
                     return n.e(9795).then(n.bind(n, 79795))
                 })),
-                Tn = r.lazy((function() {
+                Cn = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
                 })),
                 Sn = r.lazy((function() {
@@ -2224,7 +2224,7 @@
                     return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 On = r.lazy((function() {
-                    return Promise.all([n.e(9753), n.e(2022), n.e(6780)]).then(n.bind(n, 86780))
+                    return Promise.all([n.e(9753), n.e(2022), n.e(4586)]).then(n.bind(n, 34586))
                 })),
                 An = r.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
@@ -2242,7 +2242,7 @@
                     return Promise.all([n.e(9753), n.e(3261), n.e(2998), n.e(1946), n.e(8043), n.e(334)]).then(n.bind(n, 40525))
                 })),
                 Un = r.lazy((function() {
-                    return Promise.all([n.e(123), n.e(1541), n.e(2998), n.e(4444), n.e(8890), n.e(9908), n.e(3294), n.e(527), n.e(347), n.e(6327)]).then(n.bind(n, 49826))
+                    return Promise.all([n.e(123), n.e(1541), n.e(2998), n.e(4444), n.e(8890), n.e(9908), n.e(3294), n.e(527), n.e(347), n.e(2554)]).then(n.bind(n, 8376))
                 }));
             const Dn = function() {
                 var e = (0, i.I0)();
@@ -2390,7 +2390,7 @@
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(Tn, null)
+                    element: r.createElement(Cn, null)
                 }), r.createElement(o.AW, {
                     path: "/worlds",
                     element: r.createElement(yn, null)
@@ -2448,10 +2448,10 @@
                     path: "/favorites/*",
                     element: r.createElement(o.Z5, null, r.createElement(o.AW, {
                         path: "/:type",
-                        element: r.createElement(Zn, null)
+                        element: r.createElement(Tn, null)
                     }), r.createElement(o.AW, {
                         path: "/:type/:name",
-                        element: r.createElement(Zn, null)
+                        element: r.createElement(Tn, null)
                     }))
                 }), r.createElement(o.AW, {
                     path: "/jams/*",
@@ -2479,7 +2479,7 @@
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(Cn, {
+                }, r.createElement(Zn, {
                     friendsToggleCallback: y
                 })))), r.createElement("div", {
                     role: "button",
@@ -2538,6 +2538,10 @@
                         custom: "emojisCustom",
                         exclusive: "emojisExclusive",
                         archived: "emojisArchived"
+                    },
+                    props: {
+                        exclusive: "propsExclusive",
+                        archived: "propsArchived"
                     }
                 },
                 l = {
@@ -2546,7 +2550,8 @@
                     hasConvertToVrcEmojis: !1,
                     hasDelete: !1,
                     hasRecover: !1,
-                    imageGrayScale: !1
+                    imageGrayScale: !1,
+                    hasThumbnailName: !1
                 },
                 c = {
                     stickersCustom: i(i({
@@ -2581,6 +2586,19 @@
                     }, l), {}, {
                         imageGrayScale: !0,
                         hasRecover: !0
+                    }),
+                    propsExclusive: i(i({
+                        label: "Exclusive Items"
+                    }, l), {}, {
+                        hasArchive: !0,
+                        hasThumbnailName: !0
+                    }),
+                    propsArchived: i(i({
+                        label: "Archived Items"
+                    }, l), {}, {
+                        imageGrayScale: !0,
+                        hasRecover: !0,
+                        hasThumbnailName: !0
                     })
                 }
         },
@@ -2619,9 +2637,9 @@
                 k = n(15405),
                 I = n(95819),
                 N = n(22601),
-                Z = n(87695),
-                C = n(16686),
-                T = n(47947),
+                T = n(87695),
+                Z = n(16686),
+                C = n(47947),
                 S = n(53359),
                 j = n(20495),
                 O = n(67992),
@@ -2755,15 +2773,15 @@
                     },
                     "moderation.report.closed": {
                         caption: "Moderation",
-                        icon: T.JH
+                        icon: C.JH
                     },
                     "avatarreview.success": {
                         caption: "Avatar Approved",
-                        icon: C.faCircleCheck
+                        icon: Z.faCircleCheck
                     },
                     "avatarreview.failure": {
                         caption: "Avatar Rejected",
-                        icon: Z.faCircleXmark
+                        icon: T.faCircleXmark
                     },
                     "promo.redeem": {
                         caption: "Promo",
@@ -2792,12 +2810,12 @@
                         return "/home/marketplace/wallet/subscriptions/".concat(A.yy.EXPIRED)
                     }
                 },
-                Ze = function(e) {
+                Te = function(e) {
                     var t = e.linkType,
                         n = e.linkId;
                     return "/home/".concat(t, "/").concat(n)
                 },
-                Ce = function(e) {
+                Ze = function(e) {
                     var t, n = e.notificationId,
                         a = e.respondToNotification,
                         r = e.type,
@@ -2818,7 +2836,7 @@
                         icon: (t = o, ye[t] || t)
                     }), " ", l || r)
                 };
-            const Te = function(e) {
+            const Ce = function(e) {
                 var t = e.notification,
                     n = e.slim,
                     r = (0, d.I0)(),
@@ -2833,21 +2851,21 @@
                     k = (0, M.oS)(),
                     I = (0, v.Z)(k, 2),
                     N = I[0],
-                    Z = I[1].isSuccess,
-                    C = function() {
+                    T = I[1].isSuccess,
+                    Z = function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                             t = e.link,
                             n = (e.linkText, (null == t ? void 0 : t.split(":")) || []),
                             a = (0, v.Z)(n, 2),
                             r = a[0],
                             i = a[1];
-                        if (r) return (Ne[r] || Ze)({
+                        if (r) return (Ne[r] || Te)({
                             linkType: r,
                             linkId: i
                         })
                     }(t),
-                    T = (t.linkText || t.title, t.title || t.linkText);
-                (x || Z) && r((0, f.tV)({
+                    C = (t.linkText || t.title, t.title || t.linkText);
+                (x || T) && r((0, f.tV)({
                     notificationId: null == t ? void 0 : t.id
                 }));
                 var S = Ie[null == t ? void 0 : t.type] || {
@@ -2880,9 +2898,9 @@
                     url: t.imageUrl
                 }), m.createElement(ke.EU, {
                     url: t.imageUrl
-                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, !!T && m.createElement("strong", null, C ? m.createElement(p.rU, {
-                    to: C
-                }, T) : T), (null == A ? void 0 : A.isValid()) && m.createElement("p", {
+                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, !!C && m.createElement("strong", null, Z ? m.createElement(p.rU, {
+                    to: Z
+                }, C) : C), (null == A ? void 0 : A.isValid()) && m.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, m.createElement("small", null, m.createElement("time", {
                     dateTime: t.createdAt,
@@ -2893,7 +2911,7 @@
                 }), A.fromNow()))), m.createElement("p", null, t.message)), m.createElement(ke.tt, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map((function(e) {
-                    return m.createElement(Ce, (0, a.Z)({
+                    return m.createElement(Ze, (0, a.Z)({
                         key: "".concat(null == t ? void 0 : t.id, "-").concat(e.type)
                     }, e, {
                         notificationId: null == t ? void 0 : t.id,
@@ -2968,17 +2986,17 @@
                     k = y.type,
                     I = y.senderUserId,
                     N = y.id,
-                    Z = y.message,
-                    C = y.isSystem,
-                    T = 2 === y.version,
-                    S = "message" === k || C,
+                    T = y.message,
+                    Z = y.isSystem,
+                    C = 2 === y.version,
+                    S = "message" === k || Z,
                     j = (0, h.GR)(I, {
-                        skip: !I || T
+                        skip: !I || C
                     }),
                     O = j.data,
                     A = j.isLoading,
                     q = j.error;
-                if (T) return m.createElement(Te, (0, a.Z)({}, E, {
+                if (C) return m.createElement(Ce, (0, a.Z)({}, E, {
                     notification: y
                 }));
                 if (A) return m.createElement("p", null, "Loading");
@@ -3003,7 +3021,7 @@
                     url: null !== (b = null === (w = y.details) || void 0 === w ? void 0 : w.imageUrl) && void 0 !== b ? b : D
                 })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, m.createElement(p.rU, {
                     to: "/home/user/".concat(I)
-                }, m.createElement("strong", null, O.displayName)), " - ", Z || {
+                }, m.createElement("strong", null, O.displayName)), " - ", T || {
                     friendRequest: "would like to be your friend!",
                     invite: "has invited you to ".concat((null === (P = y.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
@@ -3904,4 +3922,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b3c36b5525813d9b9a040e5f93634a7a81da028f225b487087f3405ebb78ad2b.js.map
+//# sourceMappingURL=bd9abb24d84ecdaf55f7979c5f04f651c42fa07e09ef2d8da325b4c51b267bff.js.map
