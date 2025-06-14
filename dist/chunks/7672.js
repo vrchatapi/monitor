@@ -4794,7 +4794,7 @@
                 var t, n, r, a, o, i, c, s = e.group,
                     u = (0, O.I0)(),
                     m = (0, O.v9)((function(e) {
-                        return e.listingRow.modals.cancellation
+                        return e.listingRow.modals.subscriptionCancellation
                     })),
                     d = (0, O.v9)((function(e) {
                         return e.listingRow.modals.rules
@@ -6647,4 +6647,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4eb9e2ca3c95ab2a7809dbb98d6b706953a7261600a0d8f0d94dbc169ec83723.js.map
+//# sourceMappingURL=806687fbee1f9c2b939548a07b397fc37e955eabac4bda502f8b1d2ab111853c.js.map

@@ -6,8 +6,8 @@
                 default: () => ce
             });
             var r = a(42138),
-                n = a(54546),
-                l = a(40767),
+                l = a(54546),
+                n = a(40767),
                 o = a(37463),
                 i = a(72998),
                 s = a(529),
@@ -17,21 +17,21 @@
                 m = a.n(w),
                 d = a(30381),
                 p = a.n(d),
-                f = a(67294),
-                b = a(26495),
+                b = a(67294),
+                f = a(26495),
                 x = a(17383),
-                h = a(95896),
-                g = a(22202),
+                g = a(95896),
+                h = a(22202),
                 v = a(66736),
                 y = a(16869),
                 E = a(67978),
                 N = a(4942),
                 k = a(15861),
-                M = a(4965),
+                D = a(4965),
                 S = a(64687),
-                D = a.n(S),
-                C = a(6655),
-                P = a(64358),
+                M = a.n(S),
+                P = a(6655),
+                C = a(64358),
                 Y = a(89250),
                 O = a(56646),
                 j = a(45697),
@@ -40,8 +40,8 @@
                     var t = e.title,
                         a = e.credits,
                         r = void 0 === a ? null : a,
-                        n = e.link,
-                        l = void 0 === n ? null : n,
+                        l = e.link,
+                        n = void 0 === l ? null : l,
                         i = e.cta,
                         s = void 0 === i ? null : i,
                         c = e.hideGlyph,
@@ -50,43 +50,43 @@
                         m = void 0 === w ? null : w,
                         d = e.className,
                         p = e.isError,
-                        b = void 0 !== p && p,
+                        f = void 0 !== p && p,
                         x = e.error,
-                        h = null === r || 0 === r;
-                    if (b) {
-                        var g = x || "An unknown error occurred";
-                        return f.createElement("div", {
+                        g = null === r || 0 === r;
+                    if (f) {
+                        var h = x || "An unknown error occurred";
+                        return b.createElement("div", {
                             className: "tw-bg-grey tw-p-5 tw-rounded-xl tw-@container/marketplacePanel tw-w-full ".concat(d)
-                        }, f.createElement("h5", {
+                        }, b.createElement("h5", {
                             className: "tw-text-xl tw-font-bold after:tw-border-none tw-no-underline tw-mb-3"
-                        }, t), f.createElement("p", {
+                        }, t), b.createElement("p", {
                             className: "tw-text-placeholder-text tw-mb-12"
-                        }, "Failed to retrieve data: ", g))
+                        }, "Failed to retrieve data: ", h))
                     }
-                    return f.createElement("div", {
+                    return b.createElement("div", {
                         className: "tw-bg-grey tw-p-5 tw-rounded-xl tw-@container/marketplacePanel tw-w-full ".concat(d)
-                    }, f.createElement("h5", {
+                    }, b.createElement("h5", {
                         className: "tw-text-xl tw-font-bold after:tw-border-none tw-no-underline tw-mb-3"
-                    }, t), h && f.createElement("p", {
+                    }, t), g && b.createElement("p", {
                         className: "tw-text-placeholder-text tw-mb-12"
-                    }, m || "Nothing here (yet)"), !h && f.createElement("p", {
+                    }, m || "Nothing here (yet)"), !g && b.createElement("p", {
                         className: "tw-text-white tw-text-4xl tw-font-bold tw-mb-8"
-                    }, !u && f.createElement(o.b5, {
+                    }, !u && b.createElement(o.b5, {
                         className: "tw-text-[#6ae3f9] tw-mr-1"
-                    }), r.toLocaleString()), f.createElement("div", {
+                    }), r.toLocaleString()), b.createElement("div", {
                         className: " tw-justify-between tw-flex tw-flex-col @[300px]/marketplacePanel:tw-flex-row @[300px]/marketplacePanel:tw-items-end  "
-                    }, f.createElement(o.zx, {
+                    }, b.createElement(o.zx, {
                         className: "tw-px-[10px] tw-py-[7px] tw-mb-2 @[300px]/marketplacePanel:tw-mb-0",
                         disabled: null == s ? void 0 : s.isDisabled,
                         onClick: null == s ? void 0 : s.onClickCallback,
                         title: null == s ? void 0 : s.title
-                    }, s.text), null !== l && f.createElement("span", null, f.createElement(o.$1, {
+                    }, s.text), null !== n && b.createElement("span", null, b.createElement(o.$1, {
                         icon: O.faCircleInfo
-                    }), f.createElement("a", {
-                        href: null == l ? void 0 : l.href,
+                    }), b.createElement("a", {
+                        href: null == n ? void 0 : n.href,
                         className: "tw-text-sm tw-underline tw-font-thin tw-ml-1 tw-text-subtext-grey",
                         referrerPolicy: "no-referrer"
-                    }, null == l ? void 0 : l.text))))
+                    }, null == n ? void 0 : n.text))))
                 };
             I.propTypes = {
                 title: T().string.isRequired,
@@ -105,7 +105,7 @@
             };
             const Z = I;
 
-            function G(e, t) {
+            function L(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -116,94 +116,99 @@
                 return a
             }
 
-            function L(e) {
+            function B(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? G(Object(a), !0).forEach((function(t) {
+                    t % 2 ? L(Object(a), !0).forEach((function(t) {
                         (0, N.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : G(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : L(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
             const R = function() {
-                var e, t, a = (0, g.IB)().data,
+                var e, t, a = (0, h.IB)().data,
                     r = null == a ? void 0 : a.id,
-                    l = (0, Y.s0)(),
-                    i = (0, C.gI)(),
-                    s = (0, n.Z)(i, 1)[0],
+                    n = (0, Y.s0)(),
+                    i = (0, P.gI)(),
+                    s = (0, l.Z)(i, 1)[0],
                     c = (0, Y.oQ)("/home/marketplace/storefront/payout"),
-                    u = (0, C.v$)({
-                        userId: r
-                    }, {
-                        skip: !r,
+                    u = (0, P.kN)({}, {
                         refetchOnMountOrArgChange: !0
-                    }).data,
-                    w = (0, v.uK)({
+                    }),
+                    w = u.data,
+                    m = (u.isLoading, u.isError),
+                    d = (u.error, null == w ? void 0 : w.eligible),
+                    p = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.UPDATED_REQUIRED,
+                    f = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.BLOCKED,
+                    x = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.DISABLED,
+                    y = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.KYC_PENDING,
+                    E = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.KYC_REQUIRED,
+                    N = !(null != w && w.eligible) && (null == w ? void 0 : w.reason) === g.BP.COOLDOWN,
+                    D = (0, v.uK)({
                         sellerId: r,
                         groupByDuration: "years",
-                        metricDateStart: h.pH,
+                        metricDateStart: g.pH,
                         metricDateEnd: "2511-03-07"
                     }, {
                         skip: !r
                     }),
-                    m = w.data,
-                    d = void 0 === m ? {
+                    S = D.data,
+                    O = void 0 === S ? {
                         totals: {
                             totalEarnings: 0,
                             otpPurchaseCount: 0,
                             subscriberMonths: 0
                         }
-                    } : m,
-                    p = w.isFetching,
-                    b = w.isError,
-                    x = w.error,
-                    y = (0, C.pp)({
+                    } : S,
+                    j = D.isFetching,
+                    T = D.isError,
+                    I = D.error,
+                    L = (0, P.pp)({
                         userId: r,
                         type: "earnings"
                     }, {
                         skip: !r,
                         refetchOnMountOrArgChange: !0
                     }).data,
-                    E = (void 0 === y ? {
+                    R = (void 0 === L ? {
                         balance: 0
-                    } : y).balance,
-                    N = f.useMemo((function() {
+                    } : L).balance,
+                    A = b.useMemo((function() {
                         var e, t, a;
                         return {
-                            allTimeNumPurchases: Number(null == d || null === (e = d.totals) || void 0 === e ? void 0 : e.otpPurchaseCount) + Number(null == d || null === (t = d.totals) || void 0 === t ? void 0 : t.subscriberMonths),
-                            allTimeTotalPurchasePrice: null == d || null === (a = d.totals) || void 0 === a ? void 0 : a.totalEarnings
+                            allTimeNumPurchases: Number(null == O || null === (e = O.totals) || void 0 === e ? void 0 : e.otpPurchaseCount) + Number(null == O || null === (t = O.totals) || void 0 === t ? void 0 : t.subscriberMonths),
+                            allTimeTotalPurchasePrice: null == O || null === (a = O.totals) || void 0 === a ? void 0 : a.totalEarnings
                         }
-                    }), [d]),
-                    M = N.allTimeNumPurchases,
-                    S = N.allTimeTotalPurchasePrice,
-                    O = null == u ? void 0 : u.signed_tos,
-                    j = (0, f.useMemo)((function() {
-                        return O ? E < h.vC ? "You must have at least ".concat(h.vC.toLocaleString(), " credits available to pay out.") : "Pay Out Now" : "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out."
-                    }), [u, E]);
-                return f.createElement(f.Fragment, null, b && f.createElement(o.qX, {
+                    }), [O]),
+                    U = A.allTimeNumPurchases,
+                    F = A.allTimeTotalPurchasePrice,
+                    _ = (0, b.useMemo)((function() {
+                        return m ? "Error fetching payout eligibility, please try again later." : x ? "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out." : R < g.vC ? "You must have at least ".concat(g.vC.toLocaleString(), " credits available to pay out.") : p ? "Tilia Terms of Service have been updated. You must accept the updated Terms of Service before you can pay out." : f ? "Your account has been blocked by Tilia. Please contact support for assistance." : y ? "Your KYC verification is pending. Please complete the KYC process before you can pay out." : E ? "You must complete KYC verification before you can pay out." : N ? "You are currently in a payout cooldown period. Please wait before attempting to pay out again." : "You are eligible to pay out. Click to proceed."
+                    }), [R, w, m]);
+                return b.createElement(b.Fragment, null, T && b.createElement(o.qX, {
                     type: "error",
                     title: "Error loading statistics"
-                }, "Failed to fetch earnings: ", null == x || null === (e = x.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), f.createElement("div", {
+                }, "Failed to fetch earnings: ", null == I || null === (e = I.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), b.createElement("div", {
                     className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col sm:tw-flex-row"
-                }, p ? f.createElement(f.Fragment, null, f.createElement(A, null), f.createElement(A, {
+                }, j ? b.createElement(b.Fragment, null, b.createElement(G, null), b.createElement(G, {
                     delay: 100
-                })) : f.createElement(f.Fragment, null, f.createElement(Z, {
+                })) : b.createElement(b.Fragment, null, b.createElement(Z, {
                     title: "Available Payout",
-                    credits: Number(E) || 0,
+                    credits: Number(R) || 0,
                     link: {
                         text: "About Payout",
                         href: "https://www.tilia.io/legal/terms-of-service"
                     },
                     cta: {
                         text: "Payout",
-                        onClickCallback: (t = (0, k.Z)(D().mark((function e() {
+                        onClickCallback: (t = (0, k.Z)(M().mark((function e() {
                             var t, r;
-                            return D().wrap((function(e) {
+                            return M().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, s(L(L({}, P.$Z.PAYOUT), {}, {
+                                        return e.next = 2, s(B(B({}, C.$Z.PAYOUT), {}, {
                                             userId: a.id,
                                             returnUrl: new URL(c, window.location.href)
                                         })).unwrap();
@@ -217,68 +222,68 @@
                         }))), function() {
                             return t.apply(this, arguments)
                         }),
-                        isDisabled: E < h.vC || !O,
-                        title: j
+                        isDisabled: R < g.vC || !d,
+                        title: _
                     }
-                }), f.createElement(Z, {
+                }), b.createElement(Z, {
                     title: "Total Sales",
                     hideGlyph: !0,
-                    credits: Number(M || 0),
+                    credits: Number(U || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
-                            l("/home/marketplace/storefront/revenue/mysales")
+                            n("/home/marketplace/storefront/revenue/mysales")
                         },
                         isDisabled: !1
                     }
-                }), f.createElement(Z, {
+                }), b.createElement(Z, {
                     title: "Total Earned",
-                    credits: Number(S || 0),
+                    credits: Number(F || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
-                            l("/home/marketplace/storefront/revenue/mysales")
+                            n("/home/marketplace/storefront/revenue/mysales")
                         },
                         isDisabled: !1
                     }
                 }))))
             };
-            var A = (0, M.Z)(o.UU, {
+            var G = (0, D.Z)(o.UU, {
                     target: "e129v97h1"
                 })({
                     name: "rdii6n",
                     styles: "flex:1 1 240px;min-height:148px;margin:0.5rem;border-radius:8px"
                 }),
-                B = a(87709),
-                F = a(86646),
-                U = a(68055),
+                A = a(87709),
+                U = a(86646),
+                F = a(68055),
                 _ = function(e) {
                     var t = e.steps,
                         a = e.currentStepNumber,
                         r = t.filter((function(e) {
                             return e.isHiddenStep
                         }));
-                    return f.createElement("ol", {
+                    return b.createElement("ol", {
                         className: "tw-max-w-[650px] tw-flex tw-justify-between tw-items-start tw-pl-[0px] xs:tw-pl-[44px]"
-                    }, t.map((function(e, n) {
-                        var l = Number(a) > Number(e.number),
+                    }, t.map((function(e, l) {
+                        var n = Number(a) > Number(e.number),
                             o = Number(a) === Number(e.number),
-                            i = n === t.length - (r.length + 1);
+                            i = l === t.length - (r.length + 1);
                         if (e.isHiddenStep) return null;
-                        return f.createElement("li", {
+                        return b.createElement("li", {
                             key: e.number,
                             className: "\n              tw-list-none\n              xs:tw-flex tw-flex-col\n              xs:tw-w-[120px] sm:tw-w-[340px]\n              ".concat(o ? "" : "tw-hidden", "\n            "),
                             "aria-label": "".concat(o ? "Current step: ".concat(e.label) : "", " ")
-                        }, f.createElement("div", {
-                            className: "\n              tw-list-none tw-flex tw-items-center\n              ".concat(l ? "after:tw-border-green" : "after:tw-border-lighter-grey", "\n              after:tw-border-0 after:tw-content-[''] after:tw-w-full after:tw-border-b-[1px] after:tw-border-solid after:tw-mx-2\n              after:tw-flex\n              ").concat(i ? "after:tw-hidden" : "xs:after:tw-flex", "\n              ").concat(o ? "after:tw-hidden" : "", "\n            ")
-                        }, f.createElement("div", {
+                        }, b.createElement("div", {
+                            className: "\n              tw-list-none tw-flex tw-items-center\n              ".concat(n ? "after:tw-border-green" : "after:tw-border-lighter-grey", "\n              after:tw-border-0 after:tw-content-[''] after:tw-w-full after:tw-border-b-[1px] after:tw-border-solid after:tw-mx-2\n              after:tw-flex\n              ").concat(i ? "after:tw-hidden" : "xs:after:tw-flex", "\n              ").concat(o ? "after:tw-hidden" : "", "\n            ")
+                        }, b.createElement("div", {
                             className: "tw-flex tw-flex-col tw-items-start"
-                        }, f.createElement("div", {
-                            className: "\n                  tw-border-solid tw-border-2 tw-border-full\n                  tw-w-8 tw-h-8 tw-rounded-full\n                  tw-flex tw-items-center tw-justify-center tw-text-sm\n                  after:tw-w-full after:tw-h-1 after:tw-border-b\n                  ".concat("", "\n                  ").concat(l ? "tw-border-green tw-text-[#000] tw-bg-green" : o ? "tw-border-green tw-text-white" : "tw-border-light-grey tw-text-light-grey", "\n                ")
-                        }, l ? f.createElement(F.Z, {
-                            icon: U.LE,
+                        }, b.createElement("div", {
+                            className: "\n                  tw-border-solid tw-border-2 tw-border-full\n                  tw-w-8 tw-h-8 tw-rounded-full\n                  tw-flex tw-items-center tw-justify-center tw-text-sm\n                  after:tw-w-full after:tw-h-1 after:tw-border-b\n                  ".concat("", "\n                  ").concat(n ? "tw-border-green tw-text-[#000] tw-bg-green" : o ? "tw-border-green tw-text-white" : "tw-border-light-grey tw-text-light-grey", "\n                ")
+                        }, n ? b.createElement(U.Z, {
+                            icon: F.LE,
                             "aria-label": "Done"
-                        }) : e.number))), f.createElement("div", {
+                        }) : e.number))), b.createElement("div", {
                             className: "tw-text-sm tw-text-center tw-w-[130px] tw--ml-[44px] tw-mt-2 ".concat(o ? "tw-text-white tw-font-bold" : "tw-text-light-grey")
                         }, e.label))
                     })))
@@ -293,10 +298,10 @@
             };
             const q = _;
             var H = a(15832),
-                W = a(79655),
-                X = a(34698),
-                $ = a(59128),
-                K = a.n($),
+                K = a(79655),
+                W = a(34698),
+                X = a(59128),
+                $ = a.n(X),
                 z = a(259),
                 V = a.n(z),
                 Q = a(9468),
@@ -306,36 +311,36 @@
                 ae = function(e) {
                     var t, a = e.currentStepNumber,
                         r = (0, H._)("myStoreTutorialDismissed", !1),
-                        l = (0, n.Z)(r, 2),
-                        o = l[0],
-                        i = l[1],
+                        n = (0, l.Z)(r, 2),
+                        o = n[0],
+                        i = n[1],
                         s = [{
                             number: 1,
                             label: "Create a Product or subscription",
                             content: function() {
-                                return f.createElement("div", {
+                                return b.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
-                                }, f.createElement("img", {
+                                }, b.createElement("img", {
                                     src: V(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
-                                }), f.createElement("div", {
+                                }), b.createElement("div", {
                                     className: " tw-flex tw-flex-col tw-max-w-full tw-ml-0 @[700px]/tutorial:tw-max-w-full @[700px]/tutorial:tw-ml-4 "
-                                }, f.createElement("h4", {
+                                }, b.createElement("h4", {
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
-                                }, "Enhance in-world experiences and engage with your community"), f.createElement("p", {
+                                }, "Enhance in-world experiences and engage with your community"), b.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Products allow you to customize interactions and behaviors in your worlds. Subscriptions ensure you a regular income from your supporters."), f.createElement("p", {
+                                }, "Products allow you to customize interactions and behaviors in your worlds. Subscriptions ensure you a regular income from your supporters."), b.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Proceed to the next step by creating your first product or subscription!"), f.createElement("div", {
+                                }, "Proceed to the next step by creating your first product or subscription!"), b.createElement("div", {
                                     className: "tw-flex"
-                                }, f.createElement(W.rU, {
+                                }, b.createElement(K.rU, {
                                     to: "/home/marketplace/storefront/products"
-                                }, f.createElement(X.Z, {
+                                }, b.createElement(W.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
-                                }, "Create Product")), f.createElement(W.rU, {
+                                }, "Create Product")), b.createElement(K.rU, {
                                     to: "/home/marketplace/storefront/subscriptions"
-                                }, f.createElement(X.Z, {
+                                }, b.createElement(W.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight tw-ml-4"
                                 }, "Create Subscription")))))
                             }
@@ -343,23 +348,23 @@
                             number: 2,
                             label: "Setup your store and publish it",
                             content: function() {
-                                return f.createElement("div", {
+                                return b.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
-                                }, f.createElement("img", {
+                                }, b.createElement("img", {
                                     src: J(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
-                                }), f.createElement("div", {
+                                }), b.createElement("div", {
                                     className: " tw-flex tw-flex-col tw-max-w-full tw-ml-0 @[700px]/tutorial:tw-max-w-full @[700px]/tutorial:tw-ml-4 "
-                                }, f.createElement("h4", {
+                                }, b.createElement("h4", {
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
-                                }, "Build your storefronts from the store manager"), f.createElement("p", {
+                                }, "Build your storefronts from the store manager"), b.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Organize your listings, create bundles and set prices. Preview how your stores appear in-world, on the marketplace tab and in the corresponding group and world pages."), f.createElement("div", {
+                                }, "Organize your listings, create bundles and set prices. Preview how your stores appear in-world, on the marketplace tab and in the corresponding group and world pages."), b.createElement("div", {
                                     className: "tw-flex"
-                                }, f.createElement(W.rU, {
+                                }, b.createElement(K.rU, {
                                     to: "/home/marketplace/storefront/stores"
-                                }, f.createElement(X.Z, {
+                                }, b.createElement(W.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
                                 }, "Manage Stores")))))
                             }
@@ -367,19 +372,19 @@
                             number: 3,
                             label: "Make your first sale!",
                             content: function() {
-                                return f.createElement("div", {
+                                return b.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
-                                }, f.createElement("img", {
+                                }, b.createElement("img", {
                                     src: te(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
-                                }), f.createElement("div", {
+                                }), b.createElement("div", {
                                     className: " tw-flex tw-flex-col tw-max-w-full tw-ml-0 @[700px]/tutorial:tw-max-w-full @[700px]/tutorial:tw-ml-4 "
-                                }, f.createElement("h4", {
+                                }, b.createElement("h4", {
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
-                                }, "You are all set to start selling!"), f.createElement("p", {
+                                }, "You are all set to start selling!"), b.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "The final step to greatness. Share your store, promote your work, and make your first sale! You can track all your sales and subscribers on the", " ", f.createElement(W.rU, {
+                                }, "The final step to greatness. Share your store, promote your work, and make your first sale! You can track all your sales and subscribers on the", " ", b.createElement(K.rU, {
                                     to: "/home/marketplace/storefront/revenue/mysales",
                                     title: "Revenue section"
                                 }, "Revenue section"), ".")))
@@ -389,21 +394,21 @@
                             label: "Make your first sale!",
                             isHiddenStep: !0,
                             content: function() {
-                                return f.createElement("div", {
+                                return b.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
-                                }, f.createElement("img", {
-                                    src: K(),
+                                }, b.createElement("img", {
+                                    src: $(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
-                                }), f.createElement("div", {
+                                }), b.createElement("div", {
                                     className: " tw-flex tw-flex-col tw-max-w-full tw-ml-0 @[700px]/tutorial:tw-max-w-full @[700px]/tutorial:tw-ml-4 "
-                                }, f.createElement("h4", {
+                                }, b.createElement("h4", {
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
-                                }, "Congrats on your first sale!"), f.createElement("p", {
+                                }, "Congrats on your first sale!"), b.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Well done! Now you can close this module by clicking the button below."), f.createElement("div", {
+                                }, "Well done! Now you can close this module by clicking the button below."), b.createElement("div", {
                                     className: "tw-flex"
-                                }, f.createElement(X.Z, {
+                                }, b.createElement(W.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight",
                                     onClick: function() {
                                         i(!0)
@@ -411,28 +416,28 @@
                                 }, "Close"))))
                             }
                         }];
-                    return o ? null : f.createElement("div", {
+                    return o ? null : b.createElement("div", {
                         className: "tw-bg-[#000] tw-rounded-lg tw-relative tw-p-5 tw-@container/tutorial"
-                    }, f.createElement("div", {
+                    }, b.createElement("div", {
                         className: "tw-flex tw-flex-row tw-justify-between"
-                    }, f.createElement("h3", {
+                    }, b.createElement("h3", {
                         className: "tw-text-lighter-grey after:tw-border-0 tw-font-bold tw-text-lg "
-                    }, "Get Ready To Sell"), f.createElement("div", {
+                    }, "Get Ready To Sell"), b.createElement("div", {
                         className: "tw-hidden @[900px]/tutorial:tw-block"
-                    }, f.createElement(q, {
+                    }, b.createElement(q, {
                         steps: s,
                         currentStepNumber: a
-                    })), f.createElement("div", null, f.createElement("button", {
+                    })), b.createElement("div", null, b.createElement("button", {
                         type: "button",
                         onClick: function() {
                             i(!0)
                         },
                         className: "tw-bg-transparent tw-border-none tw-cursor-pointer"
-                    }, f.createElement(F.Z, {
-                        icon: B.faXmark
-                    })))), f.createElement("div", {
+                    }, b.createElement(U.Z, {
+                        icon: A.faXmark
+                    })))), b.createElement("div", {
                         className: "tw-mt-4 tw-mb-2 tw-flex tw-justify-center tw-ml-[44px] @[900px]/tutorial:tw-hidden"
-                    }, f.createElement(q, {
+                    }, b.createElement(q, {
                         steps: s,
                         currentStepNumber: a
                     })), null === (t = s.find((function(e) {
@@ -444,11 +449,11 @@
             };
             const re = ae;
             u().extend(m()), s.kL.register(s.uw, s.f$, s.FB, s.od, s.jn, s.u, s.Gu), s.kL.defaults.color = "#737372", s.kL.defaults.borderColor = "rgba(127, 127, 127, 0.1)";
-            var ne = {
+            var le = {
                     numPurchases: "Total Sales",
                     totalPurchasePrice: "Total Earnings"
                 },
-                le = [{
+                ne = [{
                     label: "Last 7 Days",
                     value: "P7D"
                 }, {
@@ -491,29 +496,29 @@
                             return e.asMonths() > 11 ? "months" : e.asMonths() > 2 ? "weeks" : "days"
                         }(t),
                         r = ie(a),
-                        n = p()(),
-                        l = n.clone().endOf(r);
+                        l = p()(),
+                        n = l.clone().endOf(r);
                     return {
                         groupByDuration: a,
-                        metricDateStart: n.clone().add(1, r).startOf(r).subtract(t),
-                        metricDateEnd: l
+                        metricDateStart: l.clone().add(1, r).startOf(r).subtract(t),
+                        metricDateEnd: n
                     }
                 };
             const ce = function() {
-                var e, t, a, s, c, w = (0, g.IB)().data,
+                var e, t, a, s, c, w = (0, h.IB)().data,
                     m = null == w ? void 0 : w.id,
-                    d = f.useState("numPurchases"),
-                    N = (0, n.Z)(d, 2),
+                    d = b.useState("numPurchases"),
+                    N = (0, l.Z)(d, 2),
                     k = N[0],
-                    M = N[1],
-                    S = f.useState(le[0].value),
-                    D = (0, n.Z)(S, 2),
-                    C = D[0],
-                    P = D[1],
+                    D = N[1],
+                    S = b.useState(ne[0].value),
+                    M = (0, l.Z)(S, 2),
+                    P = M[0],
+                    C = M[1],
                     Y = (0, v.uK)({
                         sellerId: m,
                         groupByDuration: "years",
-                        metricDateStart: h.pH,
+                        metricDateStart: g.pH,
                         metricDateEnd: "2511-03-07"
                     }, {
                         skip: !m
@@ -529,52 +534,52 @@
                     T = Y.isFetching,
                     I = Y.isError,
                     Z = Y.error,
-                    G = f.useMemo((function() {
+                    L = b.useMemo((function() {
                         return 0 === j.totals.totalEarnings
                     }), [j]),
-                    L = f.useMemo((function() {
-                        return se(C)
+                    B = b.useMemo((function() {
+                        return se(P)
                     }), []),
-                    A = L.groupByDuration,
-                    B = L.metricDateStart,
-                    F = L.metricDateEnd,
-                    U = f.useState(A),
-                    _ = (0, n.Z)(U, 2),
+                    G = B.groupByDuration,
+                    A = B.metricDateStart,
+                    U = B.metricDateEnd,
+                    F = b.useState(G),
+                    _ = (0, l.Z)(F, 2),
                     q = _[0],
                     H = _[1],
-                    W = f.useState(B),
-                    X = (0, n.Z)(W, 2),
-                    $ = X[0],
-                    K = X[1],
-                    z = (0, x.Nr)($),
-                    V = f.useState(F),
-                    Q = (0, n.Z)(V, 2),
+                    K = b.useState(A),
+                    W = (0, l.Z)(K, 2),
+                    X = W[0],
+                    $ = W[1],
+                    z = (0, x.Nr)(X),
+                    V = b.useState(U),
+                    Q = (0, l.Z)(V, 2),
                     J = Q[0],
                     ee = Q[1],
                     te = (0, x.Nr)(J),
-                    ae = f.useState(!1),
-                    ce = (0, n.Z)(ae, 2),
+                    ae = b.useState(!1),
+                    ce = (0, l.Z)(ae, 2),
                     ue = ce[0],
                     we = ce[1],
-                    me = f.useState(),
-                    de = (0, n.Z)(me, 2),
+                    me = b.useState(),
+                    de = (0, l.Z)(me, 2),
                     pe = de[0],
-                    fe = de[1],
-                    be = f.useMemo((function() {
-                        return [p().isMoment($) && $.isAfter(h.pH) && $.isBefore(J || p()().add(2, "y")), p().isMoment(J) && J.isAfter($ || h.pH) && J.isBefore(p()().add(2, "y"))]
-                    }), [$, J]),
-                    xe = (0, n.Z)(be, 2),
-                    he = xe[0],
-                    ge = xe[1];
-                f.useEffect((function() {
-                    if (C) {
-                        var e = se(C),
+                    be = de[1],
+                    fe = b.useMemo((function() {
+                        return [p().isMoment(X) && X.isAfter(g.pH) && X.isBefore(J || p()().add(2, "y")), p().isMoment(J) && J.isAfter(X || g.pH) && J.isBefore(p()().add(2, "y"))]
+                    }), [X, J]),
+                    xe = (0, l.Z)(fe, 2),
+                    ge = xe[0],
+                    he = xe[1];
+                b.useEffect((function() {
+                    if (P) {
+                        var e = se(P),
                             t = e.groupByDuration,
                             a = e.metricDateStart,
                             r = e.metricDateEnd;
-                        H(t), K(a), ee(r)
+                        H(t), $(a), ee(r)
                     }
-                }), [C]);
+                }), [P]);
                 var ve, ye, Ee = (0, v.uK)({
                         sellerId: m,
                         groupByDuration: q,
@@ -582,7 +587,7 @@
                         metricDateEnd: null == te ? void 0 : te.toISOString(),
                         listingIds: pe ? [pe] : pe
                     }, {
-                        skip: !(m && z && te && he && ge)
+                        skip: !(m && z && te && ge && he)
                     }),
                     Ne = Ee.data,
                     ke = void 0 === Ne ? {
@@ -592,8 +597,8 @@
                             subscriberMonths: 0
                         }
                     } : Ne,
-                    Me = (Ee.isFetching, Ee.isError, Ee.error, !m || pe && (Oe || je) || !$ || !J || !he || !ge || !(null != ke && null !== (e = ke.breakdown) && void 0 !== e && e.length) || Fe),
-                    Se = f.useMemo((function() {
+                    De = (Ee.isFetching, Ee.isError, Ee.error, !m || pe && (Oe || je) || !X || !J || !ge || !he || !(null != ke && null !== (e = ke.breakdown) && void 0 !== e && e.length) || Ue),
+                    Se = b.useMemo((function() {
                         var e;
                         if (null == ke || null === (e = ke.breakdown) || void 0 === e || !e.length) return {
                             labels: [],
@@ -604,16 +609,16 @@
                             })).reduce((function(e, t) {
                                 var a = t._id,
                                     r = t.otpPurchaseCount,
-                                    n = void 0 === r ? 0 : r,
-                                    l = t.subscriberMonths,
-                                    o = void 0 === l ? 0 : l,
+                                    l = void 0 === r ? 0 : r,
+                                    n = t.subscriberMonths,
+                                    o = void 0 === n ? 0 : n,
                                     i = t.totalEarnings,
                                     s = void 0 === i ? 0 : i;
                                 e.labels.push(a);
-                                var c = "numPurchases" === k ? n + o : s;
+                                var c = "numPurchases" === k ? l + o : s;
                                 return e.datasets[k] || (e.datasets[k] = {
                                     yAxisId: k,
-                                    label: ne[k] || k,
+                                    label: le[k] || k,
                                     data: [],
                                     backgroundColor: "#064b5c",
                                     borderColor: "#086c84"
@@ -623,26 +628,26 @@
                                 datasets: {}
                             }),
                             a = t.labels,
-                            n = t.datasets;
+                            l = t.datasets;
                         return {
                             labels: a,
-                            datasets: Object.values(n)
+                            datasets: Object.values(l)
                         }
                     }), [ke, k]),
-                    De = function() {
+                    Me = function() {
                         ue || we(!0)
                     },
-                    Ce = (0, y.Ul)({
+                    Pe = (0, y.Ul)({
                         userId: m,
                         hydrate: !0
                     }),
-                    Pe = Ce.data,
-                    Ye = void 0 === Pe ? [] : Pe,
-                    Oe = Ce.isLoading,
-                    je = Ce.isError,
-                    Te = Ce.isSuccess,
-                    Ie = Ce.error,
-                    Ze = f.useMemo((function() {
+                    Ce = Pe.data,
+                    Ye = void 0 === Ce ? [] : Ce,
+                    Oe = Pe.isLoading,
+                    je = Pe.isError,
+                    Te = Pe.isSuccess,
+                    Ie = Pe.error,
+                    Ze = b.useMemo((function() {
                         var e = [{
                             label: "All"
                         }];
@@ -657,17 +662,17 @@
                             })
                         })), e
                     }), [Ye, Oe]),
-                    Ge = (0, E.rP)({
+                    Le = (0, E.rP)({
                         userId: m
                     }, {
                         skip: !m
                     }),
-                    Le = Ge.data,
-                    Re = Ge.isFetching,
-                    Ae = Ge.isSuccess,
-                    Be = T || $ !== z || J !== te || Re,
-                    Fe = !(null != Se && null !== (t = Se.datasets) && void 0 !== t && t.length),
-                    Ue = f.useMemo((function() {
+                    Be = Le.data,
+                    Re = Le.isFetching,
+                    Ge = Le.isSuccess,
+                    Ae = T || X !== z || J !== te || Re,
+                    Ue = !(null != Se && null !== (t = Se.datasets) && void 0 !== t && t.length),
+                    Fe = b.useMemo((function() {
                         switch (q) {
                             case "years":
                                 return "YYYY";
@@ -679,7 +684,7 @@
                                 return "MMM DD, YYYY"
                         }
                     }), [q]),
-                    _e = f.useMemo((function() {
+                    _e = b.useMemo((function() {
                         var e = function(e) {
                             return "".concat(e, " credits")
                         };
@@ -708,7 +713,7 @@
                                     type: "time",
                                     time: {
                                         unit: null == q ? void 0 : q.replace(/s$/, ""),
-                                        tooltipFormat: Ue,
+                                        tooltipFormat: Fe,
                                         displayFormats: {
                                             week: "GGGG [W]ww"
                                         }
@@ -723,130 +728,130 @@
                                 }
                             }
                         }
-                    }), [k, q, Ue]);
-                return f.createElement(f.Fragment, null, f.createElement(re, {
-                    currentStepNumber: (ve = 0 === (null == Le ? void 0 : Le.length) && Ae, ye = !Ye.some((function(e) {
+                    }), [k, q, Fe]);
+                return b.createElement(b.Fragment, null, b.createElement(re, {
+                    currentStepNumber: (ve = 0 === (null == Be ? void 0 : Be.length) && Ge, ye = !Ye.some((function(e) {
                         return !0 === e.active
-                    })) && Te, ve ? 1 : ye ? 2 : G ? 3 : 4)
-                }), f.createElement(R, null), f.createElement(o.X2, {
+                    })) && Te, ve ? 1 : ye ? 2 : L ? 3 : 4)
+                }), b.createElement(R, null), b.createElement(o.X2, {
                     className: "align-items-center flex-wrap tw-mb-4",
                     style: {
                         justifyContent: "space-between"
                     }
-                }, f.createElement("div", {
+                }, b.createElement("div", {
                     style: {
                         marginBottom: -8
                     }
-                }, f.createElement(i.Z, {
+                }, b.createElement(i.Z, {
                     justify: "left",
                     selected: k,
-                    onChange: M,
-                    tabs: Object.entries(ne).map((function(e) {
-                        var t = (0, n.Z)(e, 2);
+                    onChange: D,
+                    tabs: Object.entries(le).map((function(e) {
+                        var t = (0, l.Z)(e, 2);
                         return {
                             id: t[0],
                             name: t[1],
                             condition: !0
                         }
                     }))
-                }))), f.createElement(o.X2, {
+                }))), b.createElement(o.X2, {
                     className: "align-items-center flex-wrap tw-gap-1"
-                }, f.createElement(o.Lt, {
+                }, b.createElement(o.Lt, {
                     label: "Duration",
-                    onChange: P,
-                    value: C,
-                    options: le,
+                    onChange: C,
+                    value: P,
+                    options: ne,
                     className: "tw-mr-2"
-                }), f.createElement(o.Lt, {
+                }), b.createElement(o.Lt, {
                     label: "Group By",
                     onChange: H,
                     value: q,
                     options: oe,
                     className: "tw-mr-2"
-                }), !C && f.createElement("div", {
+                }), !P && b.createElement("div", {
                     className: "d-flex align-items-center flex-wrap"
-                }, f.createElement(o.II, {
+                }, b.createElement(o.II, {
                     type: "date",
                     className: "tw-mr-1",
-                    disabled: !!C,
-                    invalid: he,
-                    value: null == $ ? void 0 : $.format("YYYY-MM-DD"),
+                    disabled: !!P,
+                    invalid: ge,
+                    value: null == X ? void 0 : X.format("YYYY-MM-DD"),
                     onChange: function(e) {
                         var t = p()(e.target.value).startOf(ie(q));
-                        K(t)
+                        $(t)
                     },
-                    min: h.pH,
+                    min: g.pH,
                     max: null == J ? void 0 : J.format("YYYY-MM-DD")
-                }), " to ", f.createElement(o.II, {
+                }), " to ", b.createElement(o.II, {
                     type: "date",
                     className: "tw-ml-1",
-                    disabled: !!C,
-                    invalid: ge,
+                    disabled: !!P,
+                    invalid: he,
                     value: null == J ? void 0 : J.format("YYYY-MM-DD"),
                     onChange: function(e) {
                         var t = p()(e.target.value).endOf(ie(q));
                         ee(t)
                     },
-                    min: (null == $ ? void 0 : $.format("YYYY-MM-DD")) || h.pH,
+                    min: (null == X ? void 0 : X.format("YYYY-MM-DD")) || g.pH,
                     max: p()().add(2, "y").format("YYYY-MM-DD")
-                })), f.createElement("div", {
+                })), b.createElement("div", {
                     className: "d-flex justify-content-end",
                     style: {
                         flex: "1 1 auto"
                     }
-                }, f.createElement(o.Lt, {
+                }, b.createElement(o.Lt, {
                     style: {
                         minWidth: 200,
                         maxWidth: 300
                     },
                     trimToLength: !0,
                     label: "Listing",
-                    onChange: fe,
-                    onMouseEnter: De,
-                    onClick: De,
+                    onChange: be,
+                    onMouseEnter: Me,
+                    onClick: Me,
                     className: "tw-mr-2",
                     value: pe,
                     options: Ze
-                }), f.createElement(o.zx, {
-                    disabled: Me,
+                }), b.createElement(o.zx, {
+                    disabled: De,
                     onClick: function() {
                         var e;
-                        if (!Me) {
+                        if (!De) {
                             var t = document.createElement("a");
                             t.style.display = "none";
                             var a = "weeks" === q ? "GGGG-[W]ww" : "YYYY-MM-DD",
                                 r = pe && (null == Ye || null === (e = Ye.find((function(e) {
                                     return e.id === pe
                                 }))) || void 0 === e ? void 0 : e.displayName);
-                            t.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(q.replace(/s$/, ""), " - ").concat($.format(a), " to ").concat(J.format(a), ".csv"));
-                            var n = (null == ke ? void 0 : ke.breakdown) || [],
-                                l = Object.keys(n[0]),
-                                o = null == n ? void 0 : n.map((function(e) {
-                                    return l.map((function(t) {
+                            t.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(q.replace(/s$/, ""), " - ").concat(X.format(a), " to ").concat(J.format(a), ".csv"));
+                            var l = (null == ke ? void 0 : ke.breakdown) || [],
+                                n = Object.keys(l[0]),
+                                o = null == l ? void 0 : l.map((function(e) {
+                                    return n.map((function(t) {
                                         return e[t]
                                     })).join(",")
                                 }));
-                            l[0] = q, o.unshift(l.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(o.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
+                            n[0] = q, o.unshift(n.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(o.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
                         }
                     }
-                }, f.createElement(o.$1, {
-                    icon: l.q7,
+                }, b.createElement(o.$1, {
+                    icon: n.q7,
                     className: "tw-px-2"
-                })))), f.createElement("span", {
+                })))), b.createElement("span", {
                     className: "tw-text-placeholder-text tw-my-5 tw-text-base"
-                }, "Time period: ", null == $ ? void 0 : $.format("MMM DD"), " - ", null !== (a = u()(J)) && void 0 !== a && a.isToday() ? "Today" : null == J ? void 0 : J.format("MMM DD")), je && f.createElement(o.qX, {
+                }, "Time period: ", null == X ? void 0 : X.format("MMM DD"), " - ", null !== (a = u()(J)) && void 0 !== a && a.isToday() ? "Today" : null == J ? void 0 : J.format("MMM DD")), je && b.createElement(o.qX, {
                     type: "error",
                     title: "Error loading listings"
-                }, null == Ie || null === (s = Ie.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), I && f.createElement(o.qX, {
+                }, null == Ie || null === (s = Ie.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), I && b.createElement(o.qX, {
                     type: "error",
                     title: "Error loading earnings"
-                }, null == Z || null === (c = Z.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message), Be ? f.createElement(o.UU, {
+                }, null == Z || null === (c = Z.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message), Ae ? b.createElement(o.UU, {
                     style: {
                         minHeight: 100,
                         aspectRatio: _e.aspectRatio.toString(10)
                     }
                 }) : function() {
-                    if (Fe) {
+                    if (Ue) {
                         var e = {
                             labels: Array.from({
                                 length: 7
@@ -855,17 +860,17 @@
                             })),
                             datasets: Array(7).fill({})
                         };
-                        return f.createElement("div", {
+                        return b.createElement("div", {
                             className: "tw-flex-auto tw-flex-wrap tw-flex-row tw-text-center tw-mt-5 tw-relative"
-                        }, f.createElement("div", {
+                        }, b.createElement("div", {
                             className: "tw-absolute tw-w-full tw-h-full"
-                        }, f.createElement("div", {
+                        }, b.createElement("div", {
                             className: "tw-flex tw-flex-col tw-justify-center tw-align-middle tw-items-center tw-w-full tw-h-full tw-text-light-grey"
-                        }, f.createElement("span", {
+                        }, b.createElement("span", {
                             className: "tw-mb-1 tw-font-bold"
-                        }, "No Data"), f.createElement("span", null, "There's no available data in the selected date and time"))), f.createElement("div", {
+                        }, "No Data"), b.createElement("span", null, "There's no available data in the selected date and time"))), b.createElement("div", {
                             className: "tw-flex tw-w-full tw-justify-center tw-min-h-[100px] tw-opacity-20"
-                        }, f.createElement(b.x1, {
+                        }, b.createElement(f.x1, {
                             datasetIdKey: "_id",
                             options: {
                                 responsive: !0,
@@ -874,16 +879,16 @@
                             data: e
                         })))
                     }
-                    return f.createElement(b.x1, {
+                    return b.createElement(f.x1, {
                         datasetIdKey: "_id",
                         options: _e,
                         data: Se
                     })
-                }(), "weeks" === q && f.createElement(o.qX, {
+                }(), "weeks" === q && b.createElement(o.qX, {
                     type: "dark",
                     slim: !0,
                     className: "mb-0"
-                }, "Weekly data is tabulated using ISO weeks, which always begin on a Monday and end on a Sunday. The first and last ISO weeks can overlap into the previous or next calendar year, respectively. More information about ISO weeks can be found", " ", f.createElement("a", {
+                }, "Weekly data is tabulated using ISO weeks, which always begin on a Monday and end on a Sunday. The first and last ISO weeks can overlap into the previous or next calendar year, respectively. More information about ISO weeks can be found", " ", b.createElement("a", {
                     href: "https://en.wikipedia.org/wiki/ISO_week_date",
                     target: "_blank",
                     rel: "noreferrer"
@@ -956,4 +961,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e3286e4a0b768f8ecd6e2e6321211dd0739294b3fcb609f9660ef8d70286cb9d.js.map
+//# sourceMappingURL=23fd2dccd6349092a1a60f99f5b7afe0425476e3dd94568abed944e9cab7555d.js.map

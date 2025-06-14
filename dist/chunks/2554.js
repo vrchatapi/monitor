@@ -162,47 +162,47 @@
                 V = n(45697),
                 T = n.n(V),
                 M = n(78542),
-                z = n(55206),
-                U = n(19531),
+                U = n(55206),
+                z = n(19531),
                 _ = function(e) {
-                    var t, n = e.item,
-                        r = e.type,
-                        l = e.disabled,
-                        c = void 0 !== l && l,
-                        o = e.onClickCallback,
-                        s = void 0 === o ? function() {} : o,
-                        m = e.onDeleteCallback,
-                        d = void 0 === m ? function() {} : m,
-                        w = e.onArchiveCallback,
-                        v = void 0 === w ? function() {} : w,
-                        p = e.onRecoverCallback,
-                        f = void 0 === p ? function() {} : p,
-                        h = z._[r],
-                        g = (0, a.useState)(!(null == n || !n.imageUrl)),
-                        x = (0, N.Z)(g, 2),
-                        E = x[0],
-                        b = x[1],
-                        y = (0, a.useState)(200),
-                        C = (0, N.Z)(y, 2),
-                        k = C[0],
-                        O = C[1],
-                        Z = (0, a.useRef)(null),
-                        S = (0, D.Z)(k, 200),
-                        F = (0, a.useMemo)((function() {
-                            var e;
-                            return null == n || null === (e = n.flags) || void 0 === e ? void 0 : e.includes("archivable")
-                        }), [n]),
+                    var t, n, r = e.item,
+                        l = e.type,
+                        c = e.disabled,
+                        o = void 0 !== c && c,
+                        s = e.onClickCallback,
+                        m = void 0 === s ? function() {} : s,
+                        d = e.onDeleteCallback,
+                        w = void 0 === d ? function() {} : d,
+                        v = e.onArchiveCallback,
+                        p = void 0 === v ? function() {} : v,
+                        f = e.onRecoverCallback,
+                        h = void 0 === f ? function() {} : f,
+                        g = U._[l],
+                        x = (0, a.useState)(!(null == r || !r.imageUrl)),
+                        E = (0, N.Z)(x, 2),
+                        b = E[0],
+                        y = E[1],
+                        C = (0, a.useState)(200),
+                        k = (0, N.Z)(C, 2),
+                        O = k[0],
+                        Z = k[1],
+                        S = (0, a.useRef)(null),
+                        F = (0, D.Z)(O, 200),
                         A = (0, a.useMemo)((function() {
-                            return !n.isSeen && !n.flags.includes("ugc")
-                        }), [n]),
+                            var e;
+                            return null == r || null === (e = r.flags) || void 0 === e ? void 0 : e.includes("archivable")
+                        }), [r]),
                         V = (0, a.useMemo)((function() {
-                            return !!c || h.imageGrayScale
-                        }), [c, h]);
+                            return !r.isSeen && !r.flags.includes("ugc")
+                        }), [r]),
+                        T = (0, a.useMemo)((function() {
+                            return !!o || g.imageGrayScale
+                        }), [o, g]);
                     return (0, a.useEffect)((function() {
                         var e = function() {
-                            if (Z.current) {
-                                var e = Z.current.clientWidth;
-                                O(e)
+                            if (S.current) {
+                                var e = S.current.clientWidth;
+                                Z(e)
                             }
                         };
                         return e(), window.addEventListener("resize", e),
@@ -211,26 +211,26 @@
                             }
                     }), []), a.createElement("div", {
                         role: "button",
-                        tabIndex: c ? -1 : 0,
-                        ref: Z,
+                        tabIndex: o ? -1 : 0,
+                        ref: S,
                         className: (0, I.cx)("tw-group tw-rounded-lg tw-overflow-hidden tw-relative tw-w-full tw-h-full tw-cursor-pointer", {
-                            "tw-pointer-events-none": c
+                            "tw-pointer-events-none": o
                         }),
-                        onClick: c ? function() {} : s,
+                        onClick: o ? function() {} : m,
                         onKeyUp: function(e) {
-                            "Enter" !== e.key || c || s()
+                            "Enter" !== e.key || o || m()
                         },
                         onKeyDown: function(e) {
-                            "Enter" !== e.key || c || s()
+                            "Enter" !== e.key || o || m()
                         }
-                    }, E && a.createElement("div", {
+                    }, b && a.createElement("div", {
                         className: "tw-w-full tw-h-full tw-bg-dark-grey tw-opacity-50 tw-flex tw-items-center tw-justify-center tw-h-min-[170px]"
                     }, a.createElement(i.$1, {
                         icon: j.LM,
                         color: "#FFFFFF",
                         spin: !0,
                         width: 48
-                    })), A && a.createElement("div", {
+                    })), V && a.createElement("div", {
                         className: "tw-absolute tw-z-[3] tw-left-2 tw-top-2 tw-bg-red tw-rounded-full tw-w-fit"
                     }, a.createElement("p", {
                         className: "tw-m-0 tw-text-white tw-w-fit tw-rounded-full tw-px-2 "
@@ -238,7 +238,7 @@
                         className: " tw-absolute tw-z-[2] tw-right-3 tw-top-3 tw-h-1/5 tw-h-min-[48px] tw-transition-opacity tw-duration-300 tw-ease-in-out tw-opacity-0 group-hover:tw-opacity-100 "
                     }, a.createElement("div", {
                         className: "tw-flex tw-gap-1"
-                    }, U.a && h.hasConvertToVrcEmojis && a.createElement(i.zx, {
+                    }, z.a && g.hasConvertToVrcEmojis && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
@@ -248,32 +248,32 @@
                         icon: u.Z,
                         color: "#FFFFFF",
                         width: 20
-                    })), h.hasDelete && a.createElement(i.zx, {
+                    })), g.hasDelete && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), d()
+                            e.stopPropagation(), e.preventDefault(), w()
                         }
                     }, a.createElement(i.$1, {
                         icon: L.$,
                         color: "#FFFFFF",
                         width: 20
-                    })), h.hasArchive && F && a.createElement(i.zx, {
+                    })), g.hasArchive && A && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), v()
+                            e.stopPropagation(), e.preventDefault(), p()
                         }
                     }, a.createElement(i.$1, {
                         icon: R.N2,
                         color: "#FFFFFF",
                         width: 20
-                    })), h.hasRecover && F && a.createElement(i.zx, {
+                    })), g.hasRecover && A && a.createElement(i.zx, {
                         title: "Recover",
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), f()
+                            e.stopPropagation(), e.preventDefault(), h()
                         }
                     }, a.createElement(i.$1, {
                         icon: P.faArrowsRotate,
@@ -283,23 +283,33 @@
                         className: "tw-w-full tw-h-full"
                     }, a.createElement("div", {
                         className: "tw-relative"
-                    }, a.createElement(M.Z, {
-                        imageUrl: (null === (t = n.metadata) || void 0 === t ? void 0 : t.imageUrl) || n.imageUrl,
-                        metaData: n.metadata,
+                    }, g.useCanvasThumbnail ? a.createElement(M.Z, {
+                        imageUrl: (null === (t = r.metadata) || void 0 === t ? void 0 : t.imageUrl) || r.imageUrl,
+                        metaData: r.metadata,
                         onLoad: function() {
-                            return b(!1)
+                            return y(!1)
                         },
                         onError: function() {
-                            return b(!1)
+                            return y(!1)
                         },
-                        size: S,
+                        size: F,
                         isThumbnail: !0,
-                        isGrayScale: V
-                    }), h.hasThumbnailName && a.createElement("div", {
+                        isGrayScale: T
+                    }) : a.createElement("img", {
+                        src: (null === (n = r.metadata) || void 0 === n ? void 0 : n.imageUrl) || r.imageUrl,
+                        alt: r.name,
+                        className: "tw-w-full tw-h-full tw-min-h-[190px] tw-object-cover",
+                        onLoad: function() {
+                            return y(!1)
+                        },
+                        onError: function() {
+                            return y(!1)
+                        }
+                    }), g.hasThumbnailName && a.createElement("div", {
                         className: "tw-absolute tw-m-0 tw-bottom-0 tw-left-0 tw-top-0 tw-text-white tw-text-center tw-w-full tw-bg-gradient-to-t tw-from-dark-grey-transparent-90 tw-from-20% tw-to-transparent"
                     }, a.createElement("span", {
                         className: "tw-absolute tw-w-full tw-bottom-0 tw-left-0"
-                    }, n.name)))))
+                    }, r.name)))))
                 };
             _.propTypes = {
                 item: T().object.isRequired,
@@ -392,7 +402,7 @@
                     return a.createElement(W, {
                         key: e.id,
                         item: e,
-                        type: z.b.emojis.archived,
+                        type: U.b.emojis.archived,
                         onRecoverCallback: function() {
                             return f(e.id)
                         }
@@ -540,7 +550,7 @@
                     M = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
-                    U = null == M ? void 0 : M.hasVRCPlus,
+                    z = null == M ? void 0 : M.hasVRCPlus,
                     _ = null == M ? void 0 : M.previouslyHadVRCPlus;
                 (0, a.useEffect)((function() {
                     return function() {
@@ -620,7 +630,7 @@
                     deleteCallback: ce,
                     isDeleting: V,
                     title: "Delete Emoji"
-                }), re && U && a.createElement(a.Fragment, null, a.createElement("h3", {
+                }), re && z && a.createElement(a.Fragment, null, a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Custom Emojis"), a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
@@ -680,7 +690,7 @@
                                     deleteItemCallback: function() {
                                         return f(!0)
                                     },
-                                    type: z.b.emojis.custom
+                                    type: U.b.emojis.custom
                                 }))
                             }({
                                 emoji: e,
@@ -690,9 +700,9 @@
                         onDeleteCallback: function() {
                             R(e), f(!0)
                         },
-                        type: z.b.emojis.custom
+                        type: U.b.emojis.custom
                     })
-                }))) : U ? a.createElement(ae, {
+                }))) : z ? a.createElement(ae, {
                     icon: u.Z,
                     text: "You have no custom emoji.",
                     uploadText: "Upload Emoji",
@@ -827,7 +837,7 @@
                     V = (I[1], (0, v.F)()),
                     T = (0, N.Z)(V, 2),
                     M = T[0],
-                    U = T[1].isLoading,
+                    z = T[1].isLoading,
                     _ = (0, v.fv)(),
                     q = (0, N.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
@@ -887,7 +897,7 @@
                                                         emoji: e
                                                     })
                                                 },
-                                                type: z.b.emojis.exclusive
+                                                type: U.b.emojis.exclusive
                                             })), n.isSeen) {
                                             e.next = 12;
                                             break
@@ -988,7 +998,7 @@
                         return R(!1)
                     },
                     archiveItemCallback: le,
-                    isArchiving: U
+                    isArchiving: z
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Exclusive Emojis"), a.createElement("p", {
@@ -1047,7 +1057,7 @@
                                 index: t
                             })
                         },
-                        type: z.b.emojis.exclusive,
+                        type: U.b.emojis.exclusive,
                         onArchiveCallback: function() {
                             return ie({
                                 emoji: e
@@ -1195,7 +1205,7 @@
                     return a.createElement(W, {
                         key: e.id,
                         item: e,
-                        type: z.b.props.archived,
+                        type: U.b.props.archived,
                         onRecoverCallback: function() {
                             return f(e.id)
                         }
@@ -1249,7 +1259,7 @@
                         })
                     }
                 }), [M]);
-                var U = (0, v.aj)(function(e) {
+                var z = (0, v.aj)(function(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var n = null != arguments[t] ? arguments[t] : {};
                             t % 2 ? ge(Object(n), !0).forEach((function(t) {
@@ -1269,10 +1279,10 @@
                     }, "all" !== d && {
                         collections: d
                     })),
-                    _ = U.data,
-                    q = U.error,
-                    $ = U.isError,
-                    B = U.isFetching,
+                    _ = z.data,
+                    q = z.error,
+                    $ = z.isError,
+                    B = z.isFetching,
                     X = (0, Y.v9)((function(e) {
                         return e.gallery
                     }));
@@ -1306,7 +1316,7 @@
                                                         prop: e
                                                     })
                                                 },
-                                                type: z.b.props.exclusive
+                                                type: U.b.props.exclusive
                                             })), n.isSeen) {
                                             e.next = 12;
                                             break
@@ -1458,7 +1468,7 @@
                                 index: t
                             })
                         },
-                        type: z.b.props.exclusive,
+                        type: U.b.props.exclusive,
                         onArchiveCallback: function() {
                             return ne({
                                 prop: e
@@ -1598,7 +1608,7 @@
                     return a.createElement(W, {
                         key: e.id,
                         item: e,
-                        type: z.b.stickers.archived,
+                        type: U.b.stickers.archived,
                         onRecoverCallback: function() {
                             return f(e.id)
                         }
@@ -1633,7 +1643,7 @@
                         M = (0, s.Tu)({
                             withRecentSubscription: !0
                         }).user,
-                        U = null == M ? void 0 : M.hasVRCPlus,
+                        z = null == M ? void 0 : M.hasVRCPlus,
                         _ = null == M ? void 0 : M.previouslyHadVRCPlus;
                     (0, a.useEffect)((function() {
                         return function() {
@@ -1713,7 +1723,7 @@
                         deleteCallback: ie,
                         isDeleting: V,
                         title: "Delete Sticker"
-                    }), ne && U && a.createElement(a.Fragment, null, a.createElement("h3", {
+                    }), ne && z && a.createElement(a.Fragment, null, a.createElement("h3", {
                         className: "heading tw-text-white tw-text-left tw-text-2xl"
                     }, "Custom Stickers"), a.createElement("p", {
                         className: "tw-text-light-grey tw-text-base"
@@ -1773,7 +1783,7 @@
                                         deleteItemCallback: function() {
                                             return f(!0)
                                         },
-                                        type: z.b.stickers.custom
+                                        type: U.b.stickers.custom
                                     }))
                                 }({
                                     sticker: e,
@@ -1783,9 +1793,9 @@
                             onDeleteCallback: function() {
                                 R(e), f(!0)
                             },
-                            type: z.b.stickers.custom
+                            type: U.b.stickers.custom
                         })
-                    }))) : U ? a.createElement(ae, {
+                    }))) : z ? a.createElement(ae, {
                         icon: d.Z,
                         text: "You have no custom stickers.",
                         uploadText: "Upload Sticker",
@@ -1863,7 +1873,7 @@
                     V = (I[1], (0, v.F)()),
                     T = (0, N.Z)(V, 2),
                     M = T[0],
-                    U = T[1].isLoading,
+                    z = T[1].isLoading,
                     _ = (0, v.fv)(),
                     q = (0, N.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
@@ -1923,7 +1933,7 @@
                                                         sticker: e
                                                     })
                                                 },
-                                                type: z.b.stickers.exclusive
+                                                type: U.b.stickers.exclusive
                                             })), n.isSeen) {
                                             e.next = 12;
                                             break
@@ -2024,7 +2034,7 @@
                         return y(!1)
                     },
                     archiveItemCallback: le,
-                    isArchiving: U
+                    isArchiving: z
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Exclusive Stickers"), a.createElement("p", {
@@ -2082,7 +2092,7 @@
                                 index: t
                             })
                         },
-                        type: z.b.stickers.exclusive,
+                        type: U.b.stickers.exclusive,
                         onArchiveCallback: function() {
                             return ie({
                                 sticker: e
@@ -2380,4 +2390,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ee6fe55230f73e6fd9d0286e4bc8c443ff42f0c0c3ba7d9ee672126a217bfee9.js.map
+//# sourceMappingURL=8e904ca94c6e594b1a4465db95a090bf13934f8f128e2eb05f156a6bcc297e78.js.map

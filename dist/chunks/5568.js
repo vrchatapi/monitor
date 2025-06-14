@@ -974,7 +974,7 @@
                     i = e.tiliaTosAccepted,
                     o = (e.hasSubscriptionHistory, (0, Te.I0)()),
                     w = (0, Te.v9)((function(e) {
-                        return e.listingRow.modals.cancellation
+                        return e.listingRow.modals.subscriptionCancellation
                     })),
                     d = (0, Te.v9)((function(e) {
                         return e.listingRow.modals.rules
@@ -2480,4 +2480,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27fcdae0a9834164cf7529cfb1be74db8c73d4c1882a45ae6a73e832ecb0cd2f.js.map
+//# sourceMappingURL=c6ce1d735b4e7f1ae11158eaea44cb1d261d3e87a5cae9ac0ddbe68b2a915077.js.map

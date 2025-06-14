@@ -263,7 +263,7 @@
                         T = function() {
                             return I <= 4 ? 512 : I <= 16 ? 256 : I <= 64 ? 128 : void console.error("Frame count of ".concat(I, " is unsupported!"))
                         },
-                        Z = function() {
+                        C = function() {
                             var e = I <= 4 ? 2 : I <= 16 ? 4 : I <= 64 ? 8 : void console.error("Frame count of ".concat(I, " is unsupported!")),
                                 t = T();
                             return {
@@ -271,7 +271,7 @@
                                 y: Math.floor(d.current / e) * t
                             }
                         },
-                        C = function() {
+                        Z = function() {
                             y(), null === g.current && h.current && (g.current = h.current.getContext("2d")), g.current && g.current.clearRect(0, 0, r, r), k && I && N > 0 && (v.current = setInterval(S, 1e3 / N))
                         },
                         S = function() {
@@ -279,7 +279,7 @@
                                 if (null !== g.current && null !== p.current) {
                                     var e = g.current;
                                     e.clearRect(0, 0, 1e3, 1e3), e.save(), null !== E && f.current && (e.drawImage(f.current, 0, 0, r, r), e.globalCompositeOperation = "source-in");
-                                    var t = Z(),
+                                    var t = C(),
                                         n = T();
                                     w(e), e.drawImage(p.current, t.x, t.y, n, n, 0, 0, r, r), e.restore(), d.current = (d.current + 1) % I
                                 }
@@ -305,7 +305,7 @@
                             p.current = null;
                             var e = new Image;
                             if (e.onload = function() {
-                                    p.current = e, k && I && N ? C() : j(), void 0 !== o && o()
+                                    p.current = e, k && I && N ? Z() : j(), void 0 !== o && o()
                                 }, e.onerror = function(e) {
                                     console.error("Error loading image:", e), void 0 !== l && l(e)
                                 }, E) {
@@ -326,7 +326,7 @@
                                 y()
                             }
                     }), [t, n, r]), (0, i.useEffect)((function() {
-                        if (p.current) return y(), k && I && N ? C() : j(),
+                        if (p.current) return y(), k && I && N ? Z() : j(),
                             function() {
                                 y()
                             }
@@ -573,9 +573,9 @@
                 I = n(37463),
                 N = n(50048),
                 T = n(3447),
-                Z = n(6344),
-                C = n(45697),
-                S = n.n(C),
+                C = n(6344),
+                Z = n(45697),
+                S = n.n(Z),
                 j = n(55206),
                 O = n(19531),
                 A = n(78542),
@@ -589,7 +589,7 @@
                         s = e.deleteItemCallback,
                         u = void 0 === s ? null : s,
                         d = e.onArchiveCallback,
-                        C = void 0 === d ? null : d,
+                        Z = void 0 === d ? null : d,
                         S = e.type,
                         q = (0, r.useRef)(null),
                         P = (0, r.useState)(c),
@@ -805,7 +805,7 @@
                     }, r.createElement("h3", {
                         className: "heading tw-text-white tw-text-left tw-text-2xl"
                     }, r.createElement(I.$1, {
-                        icon: Z.Z,
+                        icon: C.Z,
                         className: "tw-mr-2"
                     }), ue), r.createElement(N.ZP, {
                         className: "tw-w-9 tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
@@ -840,7 +840,7 @@
                         className: "tw-h-12 sm:tw-h-9 tw-w-full tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
                         title: "Archive Sticker",
                         onClick: function() {
-                            return null == C ? void 0 : C(me)
+                            return null == Z ? void 0 : Z(me)
                         }
                     }, r.createElement(I.$1, {
                         icon: f.hV,
@@ -975,11 +975,11 @@
                     },
                     N = "online" === m.state,
                     T = (null === (t = m.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? m.profilePicOverride : m.currentAvatarThumbnailImageUrl,
-                    Z = (0, J.S6)({
+                    C = (0, J.S6)({
                         fileUrl: T,
                         width: "1024"
                     }),
-                    C = m.userIcon ? (0, J.S6)({
+                    Z = m.userIcon ? (0, J.S6)({
                         fileUrl: m.userIcon,
                         width: "1024"
                     }) : null;
@@ -1006,7 +1006,7 @@
                 }, m.statusDescription)), r.createElement(te, null, r.createElement(ae, {
                     "aria-label": "Profile Picture",
                     to: "/home/user/".concat(m.id),
-                    url: Z,
+                    url: C,
                     level: (0, Q.FR)({
                         tags: m.tags
                     }),
@@ -1015,7 +1015,7 @@
                     className: "mx-0"
                 }, r.createElement(oe, {
                     className: "text-center"
-                }, "Go To Profile")), C && r.createElement(le, {
+                }, "Go To Profile")), Z && r.createElement(le, {
                     role: "button",
                     "aria-label": "Go To Gallery",
                     onClick: function(e) {
@@ -1023,7 +1023,7 @@
                     }
                 }, r.createElement(ce, {
                     "aria-label": "User Icon",
-                    url: C,
+                    url: Z,
                     level: (0, Q.FR)({
                         tags: m.tags
                     })
@@ -1201,8 +1201,8 @@
                 Ie = n(57026),
                 Ne = n(89148),
                 Te = n(15369),
-                Ze = n(13461),
-                Ce = n(66007),
+                Ce = n(13461),
+                Ze = n(66007),
                 Se = n(2723),
                 je = n(66062),
                 Oe = n(40767),
@@ -1331,7 +1331,7 @@
                         autoRedirect: T
                     })), t(e)
                 }), [T, d, h, y, I]);
-                var Z = function(e) {
+                var C = function(e) {
                     return e.target.checked ? E([].concat((0, ht.Z)(y), [e.target.name])) : E(y.filter((function(t) {
                         return t !== e.target.name
                     })))
@@ -1394,7 +1394,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("displayName"),
-                    onChange: Z,
+                    onChange: C,
                     type: "checkbox",
                     name: "displayName",
                     id: "displayName"
@@ -1405,7 +1405,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("email"),
-                    onChange: Z,
+                    onChange: C,
                     type: "checkbox",
                     name: "email",
                     id: "email"
@@ -1416,7 +1416,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("username"),
-                    onChange: Z,
+                    onChange: C,
                     type: "checkbox",
                     name: "username",
                     id: "username"
@@ -1427,7 +1427,7 @@
                     className: "ms-3 text-white"
                 }, r.createElement("div", null, r.createElement(wt.Z, {
                     checked: y.includes("pastEmails"),
-                    onChange: Z,
+                    onChange: C,
                     type: "checkbox",
                     name: "pastEmails",
                     id: "pastEmails"
@@ -1469,7 +1469,7 @@
                 onChangeCallback: S().func.isRequired
             };
             var Tt = n(73670);
-            const Zt = function() {
+            const Ct = function() {
                 var e = (0, o.s0)(),
                     t = (0, o.TH)(),
                     n = "";
@@ -1524,7 +1524,7 @@
                     searchString: w
                 }), l && !1))))))
             };
-            var Ct = n(15861),
+            var Zt = n(15861),
                 St = n(24075),
                 jt = n(89082),
                 Ot = n(64687),
@@ -1548,7 +1548,7 @@
                         return e.currentUser.isMod
                     })),
                     v = function() {
-                        var e = (0, Ct.Z)(At().mark((function e() {
+                        var e = (0, Zt.Z)(At().mark((function e() {
                             var t, n, a;
                             return At().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1697,8 +1697,8 @@
                         k = x[0],
                         N = x[1],
                         T = (0, mt.y)().data,
-                        Z = ((0, K.pc)(), (0, M.XC)().data),
-                        C = (0, i.v9)((function(e) {
+                        C = ((0, K.pc)(), (0, M.XC)().data),
+                        Z = (0, i.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
                         S = (0, M.q7)().data,
@@ -1730,7 +1730,7 @@
                             s && s(!1)
                         },
                         W = j || [],
-                        V = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = C.length) && void 0 !== t ? t : 0);
+                        V = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = Z.length) && void 0 !== t ? t : 0);
                     n = A.filter((function(e) {
                         return e.state === Dt.oq.INVITED
                     })).length;
@@ -1857,7 +1857,7 @@
                             className: "navbar-section center-nav"
                         }, r.createElement("div", {
                             className: "search"
-                        }, r.createElement(Zt, null)), r.createElement("button", {
+                        }, r.createElement(Ct, null)), r.createElement("button", {
                             type: "button",
                             className: "p-1 btn btn-secondary navbar-btn d-md-none",
                             onClick: function() {
@@ -1987,7 +1987,7 @@
                         className: "btn text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ce.KC
+                        icon: Ze.KC
                     }), r.createElement("div", null, "Avatars"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -1996,7 +1996,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ze.T
+                        icon: Ce.T
                     }), r.createElement("div", null, "Favorite Worlds"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2005,7 +2005,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ze.T
+                        icon: Ce.T
                     }), r.createElement("div", null, "Favorite Avatars"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2014,7 +2014,7 @@
                         className: "btn nav-button text-left",
                         onClick: D
                     }, r.createElement(I.$1, {
-                        icon: Ze.T
+                        icon: Ce.T
                     }), r.createElement("div", null, "Favorite Friends"), r.createElement(I.$1, {
                         icon: ke.yO
                     })), r.createElement(Kt, {
@@ -2045,7 +2045,7 @@
                         to: "/home/accountlink",
                         title: "accountLink",
                         className: "btn text-left",
-                        hidden: (null == T ? void 0 : T.disableUpgradeAccount) || (null == Z ? void 0 : Z.steamId) && (null == Z ? void 0 : Z.oculusId),
+                        hidden: (null == T ? void 0 : T.disableUpgradeAccount) || (null == C ? void 0 : C.steamId) && (null == C ? void 0 : C.oculusId),
                         onClick: D
                     }, r.createElement(I.$1, {
                         icon: Te.x0
@@ -2211,10 +2211,10 @@
                 Tn = r.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
                 })),
-                Zn = r.lazy((function() {
+                Cn = r.lazy((function() {
                     return n.e(9795).then(n.bind(n, 79795))
                 })),
-                Cn = r.lazy((function() {
+                Zn = r.lazy((function() {
                     return Promise.all([n.e(3261), n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
                 })),
                 Sn = r.lazy((function() {
@@ -2390,7 +2390,7 @@
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(Cn, null)
+                    element: r.createElement(Zn, null)
                 }), r.createElement(o.AW, {
                     path: "/worlds",
                     element: r.createElement(yn, null)
@@ -2479,7 +2479,7 @@
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(Zn, {
+                }, r.createElement(Cn, {
                     friendsToggleCallback: y
                 })))), r.createElement("div", {
                     role: "button",
@@ -2551,41 +2551,48 @@
                     hasDelete: !1,
                     hasRecover: !1,
                     imageGrayScale: !1,
-                    hasThumbnailName: !1
+                    hasThumbnailName: !1,
+                    useCanvasThumbnail: !1
                 },
                 c = {
                     stickersCustom: i(i({
                         label: "Custom Stickers"
                     }, l), {}, {
                         hasDelete: !0,
-                        hasConvertToVrcEmojis: !0
+                        hasConvertToVrcEmojis: !0,
+                        useCanvasThumbnail: !0
                     }),
                     stickersExclusive: i(i({
                         label: "Exclusive Stickers"
                     }, l), {}, {
-                        hasArchive: !0
+                        hasArchive: !0,
+                        useCanvasThumbnail: !0
                     }),
                     stickersArchived: i(i({
                         label: "Archived Stickers"
                     }, l), {}, {
                         imageGrayScale: !0,
-                        hasRecover: !0
+                        hasRecover: !0,
+                        useCanvasThumbnail: !0
                     }),
                     emojisCustom: i(i({
                         label: "Custom Emojis"
                     }, l), {}, {
-                        hasDelete: !0
+                        hasDelete: !0,
+                        useCanvasThumbnail: !0
                     }),
                     emojisExclusive: i(i({
                         label: "Exclusive Emojis"
                     }, l), {}, {
-                        hasArchive: !0
+                        hasArchive: !0,
+                        useCanvasThumbnail: !0
                     }),
                     emojisArchived: i(i({
                         label: "Archived Emojis"
                     }, l), {}, {
                         imageGrayScale: !0,
-                        hasRecover: !0
+                        hasRecover: !0,
+                        useCanvasThumbnail: !0
                     }),
                     propsExclusive: i(i({
                         label: "Exclusive Items"
@@ -2638,8 +2645,8 @@
                 I = n(95819),
                 N = n(22601),
                 T = n(87695),
-                Z = n(16686),
-                C = n(47947),
+                C = n(16686),
+                Z = n(47947),
                 S = n(53359),
                 j = n(20495),
                 O = n(67992),
@@ -2773,11 +2780,11 @@
                     },
                     "moderation.report.closed": {
                         caption: "Moderation",
-                        icon: C.JH
+                        icon: Z.JH
                     },
                     "avatarreview.success": {
                         caption: "Avatar Approved",
-                        icon: Z.faCircleCheck
+                        icon: C.faCircleCheck
                     },
                     "avatarreview.failure": {
                         caption: "Avatar Rejected",
@@ -2815,7 +2822,7 @@
                         n = e.linkId;
                     return "/home/".concat(t, "/").concat(n)
                 },
-                Ze = function(e) {
+                Ce = function(e) {
                     var t, n = e.notificationId,
                         a = e.respondToNotification,
                         r = e.type,
@@ -2836,7 +2843,7 @@
                         icon: (t = o, ye[t] || t)
                     }), " ", l || r)
                 };
-            const Ce = function(e) {
+            const Ze = function(e) {
                 var t = e.notification,
                     n = e.slim,
                     r = (0, d.I0)(),
@@ -2852,7 +2859,7 @@
                     I = (0, v.Z)(k, 2),
                     N = I[0],
                     T = I[1].isSuccess,
-                    Z = function() {
+                    C = function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                             t = e.link,
                             n = (e.linkText, (null == t ? void 0 : t.split(":")) || []),
@@ -2864,7 +2871,7 @@
                             linkId: i
                         })
                     }(t),
-                    C = (t.linkText || t.title, t.title || t.linkText);
+                    Z = (t.linkText || t.title, t.title || t.linkText);
                 (x || T) && r((0, f.tV)({
                     notificationId: null == t ? void 0 : t.id
                 }));
@@ -2898,9 +2905,9 @@
                     url: t.imageUrl
                 }), m.createElement(ke.EU, {
                     url: t.imageUrl
-                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, !!C && m.createElement("strong", null, Z ? m.createElement(p.rU, {
-                    to: Z
-                }, C) : C), (null == A ? void 0 : A.isValid()) && m.createElement("p", {
+                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, !!Z && m.createElement("strong", null, C ? m.createElement(p.rU, {
+                    to: C
+                }, Z) : Z), (null == A ? void 0 : A.isValid()) && m.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, m.createElement("small", null, m.createElement("time", {
                     dateTime: t.createdAt,
@@ -2911,7 +2918,7 @@
                 }), A.fromNow()))), m.createElement("p", null, t.message)), m.createElement(ke.tt, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map((function(e) {
-                    return m.createElement(Ze, (0, a.Z)({
+                    return m.createElement(Ce, (0, a.Z)({
                         key: "".concat(null == t ? void 0 : t.id, "-").concat(e.type)
                     }, e, {
                         notificationId: null == t ? void 0 : t.id,
@@ -2987,16 +2994,16 @@
                     I = y.senderUserId,
                     N = y.id,
                     T = y.message,
-                    Z = y.isSystem,
-                    C = 2 === y.version,
-                    S = "message" === k || Z,
+                    C = y.isSystem,
+                    Z = 2 === y.version,
+                    S = "message" === k || C,
                     j = (0, h.GR)(I, {
-                        skip: !I || C
+                        skip: !I || Z
                     }),
                     O = j.data,
                     A = j.isLoading,
                     q = j.error;
-                if (C) return m.createElement(Ce, (0, a.Z)({}, E, {
+                if (Z) return m.createElement(Ze, (0, a.Z)({}, E, {
                     notification: y
                 }));
                 if (A) return m.createElement("p", null, "Loading");
@@ -3922,4 +3929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bd9abb24d84ecdaf55f7979c5f04f651c42fa07e09ef2d8da325b4c51b267bff.js.map
+//# sourceMappingURL=6684cac68b3f6149b069fc01b173bf2d1c41585671b35fb60a6245718e568c11.js.map
