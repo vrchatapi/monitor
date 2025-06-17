@@ -4485,7 +4485,7 @@
                     className: "tw-m-0"
                 }, "You have exceeded the payout limit. Please contact VRChat support for more information."), "cooldown" === Me && w.createElement("p", {
                     className: "tw-m-0"
-                }, "You have exceeded the payout transaction limit. Please wait two weeks before making your next payout transaction.")), nt ? w.createElement(g.JX, {
+                }, "You have submitted a payout request within the past 24 hours. Please wait until that time has elapsed before submitting another payout transaction.")), nt ? w.createElement(g.JX, {
                     className: "tw-items-center tw-justify-center tw-gap-4"
                 }, w.createElement(g.$1, {
                     icon: u.eH,
@@ -5071,4 +5071,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5de1a4d614f15c1c6b7a7e67d5d47a1edfea6a019a0ed23d576ebbe223c09dc1.js.map
+//# sourceMappingURL=292880146c87fb4e78830eb040b434de1f0381c1e1f308754e886ab8612e95f3.js.map
