@@ -1019,7 +1019,7 @@
                     role: "button",
                     "aria-label": "Go To Gallery",
                     onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), (null != h && h.includes("permission-user-icons") || null != h && h.includes("permission-user-gallery")) && (f("/home/gallery"), k())
+                        e.stopPropagation(), e.preventDefault(), (null != h && h.includes("permission-user-icons") || null != h && h.includes("permission-user-gallery")) && (f("/home/inventory/user-icons"), k())
                     }
                 }, r.createElement(ce, {
                     "aria-label": "User Icon",
@@ -3929,4 +3929,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6684cac68b3f6149b069fc01b173bf2d1c41585671b35fb60a6245718e568c11.js.map
+//# sourceMappingURL=d428f21a1d87ea342d4c3955108784d846f2f51287aacafa8647a308f4bfe462.js.map
