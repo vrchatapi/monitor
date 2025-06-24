@@ -235,7 +235,7 @@
                     }, a.createElement("p", {
                         className: "tw-m-0 tw-text-white tw-w-fit tw-rounded-full tw-px-2 "
                     }, "New")), a.createElement("div", {
-                        className: " tw-absolute tw-z-[2] tw-right-3 tw-top-3 tw-h-1/5 tw-h-min-[48px] tw-transition-opacity tw-duration-300 tw-ease-in-out tw-opacity-0 group-hover:tw-opacity-100 "
+                        className: " tw-absolute tw-z-[2] tw-right-3 tw-top-3 tw-h-1/5 tw-h-min-[48px] tw-transition-opacity tw-duration-300 tw-ease-in-out tw-opacity-0 group-hover:tw-opacity-100 group-focus:tw-opacity-100 group-focus-within:tw-opacity-100 "
                     }, a.createElement("div", {
                         className: "tw-flex tw-gap-1"
                     }, z.a && g.hasConvertToVrcEmojis && a.createElement(i.zx, {
@@ -2390,4 +2390,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8e904ca94c6e594b1a4465db95a090bf13934f8f128e2eb05f156a6bcc297e78.js.map
+//# sourceMappingURL=c9733257402bb0aa82db4c52d767a38c90a932f2931807fcd9321f1610e2c4b1.js.map
