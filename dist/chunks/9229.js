@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [2554, 8086, 3713, 5491, 9740, 4814, 2874], {
+    [9229, 8086, 3713, 5491, 9740, 4814, 2874], {
         21438: (e, t, n) => {
             var r = n(52498);
             t.DF = {
@@ -77,7 +77,7 @@
                 icon: [448, 512, r, a, l]
             }, t.nG = t.DF
         },
-        8376: (e, t, n) => {
+        60377: (e, t, n) => {
             n.r(t), n.d(t, {
                 default: () => Fe
             });
@@ -88,14 +88,9 @@
                 c = n(72998),
                 o = n(46320),
                 s = n(17383),
-                u = n(3447);
-            const m = (0, n(45861).o)({
-                name: "vrcItem",
-                width: 1500,
-                path: "M840.879 1540.66L871.394 909.849C792.413 960.721 739.097 960.721 667.896 960.721C596.695 960.721 505.218 920.024 484.808 909.849C477.32 947.303 480.858 984.757 483.245 1010.03C484.101 1019.08 484.808 1026.57 484.808 1031.94C484.808 1052.29 464.532 1052.29 433.951 1052.29C403.369 1052.29 382.959 1042.12 372.921 1021.77C364.891 1005.49 362.794 920.021 362.75 879.321C311.847 862.364 203.979 822.321 179.728 797.807C126.287 1118.3 189.53 1244.09 219.966 1304.62C224.326 1313.29 228.012 1320.63 230.586 1327C251.13 1377.87 464.532 1479.61 606.934 1530.49C720.855 1571.18 810.365 1554.23 840.879 1540.66Z M973.109 645.315C948.698 702.292 932.423 1259.17 927.337 1530.49C950.514 1521.65 974.436 1513.91 996.815 1506.66C1036.62 1493.77 1071.54 1482.47 1088.7 1469.44C1115.51 1449.09 1125.68 1377.87 1125.68 1367.7C1125.68 1357.52 1166.37 1323.61 1186.71 1316.82C1183.32 1160.82 1174.51 826.42 1166.37 736.885C1156.2 624.967 1125.68 553.746 1095.17 523.223C1064.65 492.7 1003.62 574.094 973.109 645.315Z M1033.94 400.989C1058.35 409.129 1071.23 438.296 1074.62 451.861C952.365 411.028 871.394 706.357 871.394 706.357C871.394 706.357 844.27 808.101 830.708 838.624C810.365 909.844 698.277 889.496 657.791 879.321C617.306 869.147 545.904 845.407 505.218 828.449C525.561 787.752 566.247 702.26 566.247 685.872C566.247 665.387 495.047 645.311 464.532 655.485C440.12 663.625 399.978 753.758 382.959 797.807C345.016 803.013 194.284 734.336 210.042 685.872C339.454 287.867 624.368 288.827 693.919 289.061C695.482 289.066 696.936 289.071 698.277 289.071C746.325 289.071 907.861 352.137 989.295 383.93C1011.29 392.519 1027.45 398.825 1033.94 400.989Z M983.281 85.7247C1013.8 106.073 1027.36 268.859 1023.97 340.079C1007.01 329.907 963.955 307.525 927.337 299.382C932.423 248.505 927.337 156.945 912.08 136.596C896.823 116.247 840.879 106.073 820.536 126.421C809.345 137.616 809.927 198.614 810.268 234.394C810.319 239.75 810.365 244.541 810.365 248.515C793.412 248.515 753.404 244.445 728.992 228.166C728.992 167.261 752.558 54.1262 779.85 45.0221C810.365 34.8429 952.766 65.3766 983.281 85.7247Z M1146.03 421.474L1095.17 360.428C1166.37 289.207 1227.4 279.033 1278.26 299.382C1329.11 319.73 1390.14 380.777 1400.31 482.521C1410.49 584.264 1441 950.542 1441 1072.63C1441 1186.45 1387.97 1238.37 1356.06 1269.62C1353.74 1271.89 1351.53 1274.05 1349.46 1276.12C1325.05 1300.54 1277.87 1304.62 1257.53 1304.62V1202.88C1302.15 1185.03 1307.92 1160.9 1322.4 1100.26C1324.43 1091.79 1326.62 1082.61 1329.11 1072.63C1349.46 991.242 1318.94 655.506 1308.77 543.577L1308.77 543.567C1298.61 431.72 1278.28 421.487 1237.65 401.029L1237.57 400.989C1205.02 384.602 1162.98 407.818 1146.03 421.474Z"
-            });
-            n(92177);
-            var d = n(6344),
+                u = n(3447),
+                m = n(56209),
+                d = (n(92177), n(6344)),
                 w = n(10679),
                 v = n(91492),
                 p = n(40527);
@@ -145,9 +140,9 @@
                     }, "Subscribe to VRC+")))
                 };
             y.propTypes = {};
-            const C = y;
-            var k = n(15861),
-                N = n(54546),
+            const k = y;
+            var N = n(15861),
+                C = n(54546),
                 j = n(92332),
                 O = n(20702),
                 Z = n(6811),
@@ -179,13 +174,13 @@
                         h = void 0 === f ? function() {} : f,
                         g = U._[l],
                         x = (0, a.useState)(!(null == r || !r.imageUrl)),
-                        E = (0, N.Z)(x, 2),
+                        E = (0, C.Z)(x, 2),
                         b = E[0],
                         y = E[1],
-                        C = (0, a.useState)(200),
-                        k = (0, N.Z)(C, 2),
-                        O = k[0],
-                        Z = k[1],
+                        k = (0, a.useState)(200),
+                        N = (0, C.Z)(k, 2),
+                        O = N[0],
+                        Z = N[1],
                         S = (0, a.useRef)(null),
                         F = (0, D.Z)(O, 200),
                         A = (0, a.useMemo)((function() {
@@ -322,7 +317,7 @@
             const W = _;
             const q = function() {
                 var e, t, n, r, l = (0, v.F)(),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
                     u = (0, v.aj)({
@@ -337,7 +332,7 @@
                     w = u.isError,
                     p = u.isFetching,
                     f = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -527,23 +522,23 @@
             const ae = re;
             var le = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     m = c[1],
                     d = (0, a.useState)(!1),
-                    w = (0, N.Z)(d, 2),
+                    w = (0, C.Z)(d, 2),
                     p = w[0],
                     f = w[1],
                     h = (0, a.useState)(!1),
-                    g = (0, N.Z)(h, 2),
+                    g = (0, C.Z)(h, 2),
                     x = g[0],
                     b = g[1],
                     y = (0, a.useState)(null),
-                    S = (0, N.Z)(y, 2),
+                    S = (0, C.Z)(y, 2),
                     P = S[0],
                     R = S[1],
                     L = (0, v.Xz)(),
-                    I = (0, N.Z)(L, 2),
+                    I = (0, C.Z)(L, 2),
                     D = I[0],
                     V = I[1].isLoading,
                     T = (0, Y.I0)(),
@@ -583,7 +578,7 @@
                 H(le, J);
                 var ie = null !== (e = null == q ? void 0 : q.maxUserEmoji) && void 0 !== e ? e : 18,
                     ce = function() {
-                        var e = (0, k.Z)(F().mark((function e() {
+                        var e = (0, N.Z)(F().mark((function e() {
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -710,7 +705,7 @@
                         return b(!0)
                     },
                     disabled: (null == J ? void 0 : J.data.length) >= ie
-                }) : _ ? a.createElement(C, {
+                }) : _ ? a.createElement(k, {
                     icon: u.Z,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 }) : a.createElement("p", {
@@ -740,7 +735,7 @@
                         l = e.isArchiving,
                         c = e.itemType,
                         o = (0, se._)("skipInventoryArchiveConfirmation", !1),
-                        s = (0, N.Z)(o, 2),
+                        s = (0, C.Z)(o, 2),
                         u = (s[0], s[1]),
                         m = (0, a.useRef)(null),
                         d = function() {
@@ -812,34 +807,34 @@
             }
             var ve = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1],
                     u = (0, a.useState)("all"),
-                    m = (0, N.Z)(u, 2),
+                    m = (0, C.Z)(u, 2),
                     d = m[0],
                     w = m[1],
                     p = (0, a.useState)(!1),
-                    f = (0, N.Z)(p, 2),
+                    f = (0, C.Z)(p, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(null),
-                    E = (0, N.Z)(x, 2),
+                    E = (0, C.Z)(x, 2),
                     b = E[0],
                     y = E[1],
-                    C = (0, a.useState)(!1),
-                    S = (0, N.Z)(C, 2),
+                    k = (0, a.useState)(!1),
+                    S = (0, C.Z)(k, 2),
                     P = S[0],
                     R = S[1],
                     L = (0, se._)("skipInventoryArchiveConfirmation", !1),
-                    I = (0, N.Z)(L, 2),
+                    I = (0, C.Z)(L, 2),
                     D = I[0],
                     V = (I[1], (0, v.F)()),
-                    T = (0, N.Z)(V, 2),
+                    T = (0, C.Z)(V, 2),
                     M = T[0],
                     z = T[1].isLoading,
                     _ = (0, v.fv)(),
-                    q = (0, N.Z)(_, 1)[0],
+                    q = (0, C.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
@@ -884,7 +879,7 @@
                         }])
                     }), [ne])),
                     ae = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             var n, r;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -926,7 +921,7 @@
                         }
                     }(),
                     le = function() {
-                        var e = (0, k.Z)(F().mark((function e() {
+                        var e = (0, N.Z)(F().mark((function e() {
                             var t, n, r, a = arguments;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1118,14 +1113,14 @@
                 }), a.createElement(l.AW, {
                     path: "archived",
                     element: a.createElement(q, null)
-                })))) : a.createElement(C, {
+                })))) : a.createElement(k, {
                     icon: u.Z,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 })
             };
             const he = function() {
                 var e, t, n, r, l = (0, v.F)(),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
                     u = (0, v.aj)({
@@ -1140,7 +1135,7 @@
                     w = u.isError,
                     p = u.isFetching,
                     f = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -1227,30 +1222,30 @@
             }
             const xe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1],
                     u = (0, a.useState)("all"),
-                    m = (0, N.Z)(u, 2),
+                    m = (0, C.Z)(u, 2),
                     d = m[0],
                     w = m[1],
                     p = (0, a.useState)(null),
-                    f = (0, N.Z)(p, 2),
+                    f = (0, C.Z)(p, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(!1),
-                    E = (0, N.Z)(x, 2),
+                    E = (0, C.Z)(x, 2),
                     b = E[0],
                     y = E[1],
-                    C = (0, se._)("skipInventoryArchiveConfirmation", !1),
-                    S = (0, N.Z)(C, 2),
+                    k = (0, se._)("skipInventoryArchiveConfirmation", !1),
+                    S = (0, C.Z)(k, 2),
                     P = S[0],
                     R = (S[1], (0, v.F)()),
-                    L = (0, N.Z)(R, 2),
+                    L = (0, C.Z)(R, 2),
                     I = L[0],
                     D = L[1].isLoading,
                     V = (0, v.fv)(),
-                    T = (0, N.Z)(V, 1)[0],
+                    T = (0, C.Z)(V, 1)[0],
                     M = (0, Y.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
@@ -1303,7 +1298,7 @@
                         }])
                     }), [J])),
                     ee = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             var n, r;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1345,7 +1340,7 @@
                         }
                     }(),
                     te = function() {
-                        var e = (0, k.Z)(F().mark((function e() {
+                        var e = (0, N.Z)(F().mark((function e() {
                             var t, n, r, a = arguments;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1489,7 +1484,7 @@
                         pageValue: 1,
                         types: "prop"
                     }).data;
-                return t ? a.createElement(C, {
+                return t ? a.createElement(k, {
                     icon: d.Z,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                 }) : a.createElement("div", null, a.createElement("div", {
@@ -1528,7 +1523,7 @@
             };
             const be = function() {
                 var e, t, n, r, l = (0, v.F)(),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
                     u = (0, v.aj)({
@@ -1543,7 +1538,7 @@
                     w = u.isError,
                     p = u.isFetching,
                     f = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -1618,25 +1613,25 @@
                 }, "You have no archived stickers."))))
             };
             var ye = n(95024),
-                Ce = function() {
+                ke = function() {
                     var e, t, n, r, l = (0, a.useState)("newest"),
-                        c = (0, N.Z)(l, 2),
+                        c = (0, C.Z)(l, 2),
                         o = c[0],
                         u = c[1],
                         m = (0, a.useState)(!1),
-                        w = (0, N.Z)(m, 2),
+                        w = (0, C.Z)(m, 2),
                         p = w[0],
                         f = w[1],
                         h = (0, a.useState)(!1),
-                        g = (0, N.Z)(h, 2),
+                        g = (0, C.Z)(h, 2),
                         x = g[0],
                         b = g[1],
                         y = (0, a.useState)(null),
-                        S = (0, N.Z)(y, 2),
+                        S = (0, C.Z)(y, 2),
                         P = S[0],
                         R = S[1],
                         L = (0, v.Xz)(),
-                        I = (0, N.Z)(L, 2),
+                        I = (0, C.Z)(L, 2),
                         D = I[0],
                         V = I[1].isLoading,
                         T = (0, Y.I0)(),
@@ -1676,7 +1671,7 @@
                     H(re, X);
                     var le = null !== (e = null == q ? void 0 : q.maxUserStickers) && void 0 !== e ? e : 18,
                         ie = function() {
-                            var e = (0, k.Z)(F().mark((function e() {
+                            var e = (0, N.Z)(F().mark((function e() {
                                 return F().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
@@ -1803,7 +1798,7 @@
                             return b(!0)
                         },
                         disabled: (null == X ? void 0 : X.data.length) >= le
-                    }) : _ ? a.createElement(C, {
+                    }) : _ ? a.createElement(k, {
                         icon: d.Z,
                         text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                     }) : a.createElement("p", {
@@ -1821,10 +1816,10 @@
                         })
                     }))
                 };
-            Ce.propTypes = {};
-            const ke = Ce;
+            ke.propTypes = {};
+            const Ne = ke;
 
-            function Ne(e, t) {
+            function Ce(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1838,9 +1833,9 @@
             function je(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Ne(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Ce(Object(n), !0).forEach((function(t) {
                         (0, oe.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ne(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ce(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
@@ -1848,34 +1843,34 @@
             }
             var Oe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
-                    c = (0, N.Z)(l, 2),
+                    c = (0, C.Z)(l, 2),
                     o = c[0],
                     s = c[1],
                     u = (0, a.useState)("all"),
-                    m = (0, N.Z)(u, 2),
+                    m = (0, C.Z)(u, 2),
                     d = m[0],
                     w = m[1],
                     p = (0, a.useState)(!1),
-                    f = (0, N.Z)(p, 2),
+                    f = (0, C.Z)(p, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(!1),
-                    E = (0, N.Z)(x, 2),
+                    E = (0, C.Z)(x, 2),
                     b = E[0],
                     y = E[1],
-                    C = (0, a.useState)(null),
-                    S = (0, N.Z)(C, 2),
+                    k = (0, a.useState)(null),
+                    S = (0, C.Z)(k, 2),
                     P = S[0],
                     R = S[1],
                     L = (0, se._)("skipInventoryArchiveConfirmation", !1),
-                    I = (0, N.Z)(L, 2),
+                    I = (0, C.Z)(L, 2),
                     D = I[0],
                     V = (I[1], (0, v.F)()),
-                    T = (0, N.Z)(V, 2),
+                    T = (0, C.Z)(V, 2),
                     M = T[0],
                     z = T[1].isLoading,
                     _ = (0, v.fv)(),
-                    q = (0, N.Z)(_, 1)[0],
+                    q = (0, C.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
@@ -1920,7 +1915,7 @@
                         }])
                     }), [ne])),
                     ae = function() {
-                        var e = (0, k.Z)(F().mark((function e(t) {
+                        var e = (0, N.Z)(F().mark((function e(t) {
                             var n, r;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1962,7 +1957,7 @@
                         }
                     }(),
                     le = function() {
-                        var e = (0, k.Z)(F().mark((function e() {
+                        var e = (0, N.Z)(F().mark((function e() {
                             var t, n, r, a = arguments;
                             return F().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2115,7 +2110,7 @@
                         pageValue: 1,
                         types: "sticker"
                     }).data;
-                return t ? a.createElement(C, {
+                return t ? a.createElement(k, {
                     icon: d.Z,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                 }) : a.createElement("div", null, a.createElement("div", {
@@ -2150,7 +2145,7 @@
                     })
                 }), a.createElement(l.AW, {
                     path: "custom",
-                    element: a.createElement(ke, null)
+                    element: a.createElement(Ne, null)
                 }), a.createElement(l.AW, {
                     path: "exclusive",
                     element: a.createElement(Ze, null)
@@ -2211,7 +2206,7 @@
                         condition: !0
                     }, {
                         name: "Items",
-                        icon: m,
+                        icon: m.Z,
                         to: "items",
                         condition: !0,
                         hasNotification: (null == p ? void 0 : p.totalCount) > 0
@@ -2357,20 +2352,20 @@
                     E = e.toggle,
                     b = e.children,
                     y = e.transition,
-                    C = void 0 === y ? w(w({}, s.Z.defaultProps), {}, {
+                    k = void 0 === y ? w(w({}, s.Z.defaultProps), {}, {
                         unmountOnExit: !0
                     }) : y,
-                    k = e.fade,
-                    N = void 0 === k || k,
+                    N = e.fade,
+                    C = void 0 === N || N,
                     j = e.innerRef,
                     O = p(e, u),
                     Z = (0, o.mx)(c()(t, "alert", "alert-".concat(h), {
                         "alert-dismissible": E
                     }), i),
                     S = (0, o.mx)(c()("btn-close", n), i),
-                    F = w(w(w({}, s.Z.defaultProps), C), {}, {
-                        baseClass: N ? C.baseClass : "",
-                        timeout: N ? C.timeout : 0
+                    F = w(w(w({}, s.Z.defaultProps), k), {}, {
+                        baseClass: C ? k.baseClass : "",
+                        timeout: C ? k.timeout : 0
                     });
                 return r.createElement(s.Z, m({}, O, F, {
                     tag: v,
@@ -2390,4 +2385,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c9733257402bb0aa82db4c52d767a38c90a932f2931807fcd9321f1610e2c4b1.js.map
+//# sourceMappingURL=1907cf5c496c1ae5a7f58a6073e49c01823f404dfb45cd3a6eb2a2fa324f12c7.js.map
