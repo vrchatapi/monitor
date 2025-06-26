@@ -214,7 +214,7 @@
                             className: "mb-2"
                         }, d.createElement(y.Z, {
                             sm: "4",
-                            md: "5"
+                            md: "4"
                         }, d.createElement(A.Z, {
                             size: "slim",
                             userId: r.id
@@ -473,4 +473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4c0706eb486bfdf5283a108c3d971358ef0d7e5fc97a35bd5cfaf88bbc41ffec.js.map
+//# sourceMappingURL=0b8d32e2815d361a01dec15363f5c3b880e19daac6da6f2ed6bc1a7071528a49.js.map

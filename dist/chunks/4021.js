@@ -2658,7 +2658,7 @@
         31358: (e, t, n) => {
             "use strict";
             n.d(t, {
-                Z: () => Pe
+                Z: () => ze
             });
             var a = n(87462),
                 r = n(45987),
@@ -2680,114 +2680,115 @@
                 y = n(87709),
                 E = n(16995),
                 x = n(67454),
-                k = n(15405),
-                C = n(95819),
-                I = n(22601),
-                N = n(87695),
-                Z = n(16686),
-                T = n(47947),
-                S = n(53359),
-                j = n(20495),
-                O = n(67992),
-                A = n(95896),
-                q = n(27484),
-                P = n.n(q),
-                z = n(56176),
-                M = n.n(z),
-                R = n(84110),
-                D = n.n(R),
-                U = n(9419),
-                $ = n(50249),
-                W = n(13757),
-                V = n(51540),
-                L = n(8792),
-                G = n(65322),
-                _ = n(87589),
-                F = n(4739),
-                B = n(79036),
-                J = n(59660),
-                K = n(2155),
-                X = n(42619),
-                Q = n(96231),
-                H = n(34233),
-                Y = n(43714),
-                ee = n(86529),
-                te = n(27879),
-                ne = n(98078),
-                ae = n(12690),
-                re = n(44641),
-                ie = n(13461),
-                oe = n(17319),
-                le = n(20446),
-                ce = n(75386),
-                se = n(40098),
-                ue = n(35117),
-                me = n(50906),
-                de = n(55346),
-                pe = n(61730),
-                fe = n(69323),
-                ge = n(20455),
-                he = n(32731),
-                ve = n(57982),
-                be = n(98375),
-                we = n(33805),
-                ye = {
+                k = n(31087),
+                C = n(15405),
+                I = n(95819),
+                N = n(22601),
+                Z = n(87695),
+                T = n(16686),
+                S = n(47947),
+                j = n(53359),
+                O = n(20495),
+                A = n(67992),
+                q = n(95896),
+                P = n(27484),
+                z = n.n(P),
+                M = n(56176),
+                R = n.n(M),
+                D = n(84110),
+                U = n.n(D),
+                $ = n(9419),
+                W = n(50249),
+                V = n(13757),
+                L = n(51540),
+                G = n(8792),
+                _ = n(65322),
+                F = n(87589),
+                B = n(4739),
+                J = n(79036),
+                K = n(59660),
+                X = n(2155),
+                Q = n(42619),
+                H = n(96231),
+                Y = n(34233),
+                ee = n(43714),
+                te = n(86529),
+                ne = n(27879),
+                ae = n(98078),
+                re = n(12690),
+                ie = n(44641),
+                oe = n(13461),
+                le = n(17319),
+                ce = n(20446),
+                se = n(75386),
+                ue = n(40098),
+                me = n(35117),
+                de = n(50906),
+                pe = n(55346),
+                fe = n(61730),
+                ge = n(69323),
+                he = n(20455),
+                ve = n(32731),
+                be = n(57982),
+                we = n(98375),
+                ye = n(33805),
+                Ee = {
                     edit: n(11071).Y,
                     cancel: y.faXmark,
-                    history: we.On,
-                    refresh: be.faArrowsRotate,
-                    search: ve.faMagnifyingGlass,
-                    settings: he.faGear,
-                    pin: ge.RP,
-                    "arrow-up": fe.FP,
-                    "arrow-down": pe.r5,
-                    "arrow-left": de.ac,
-                    "arrow-right": me.eF,
-                    ban: ue.faBan,
+                    history: ye.On,
+                    refresh: we.faArrowsRotate,
+                    search: be.faMagnifyingGlass,
+                    settings: ve.faGear,
+                    pin: he.RP,
+                    "arrow-up": ge.FP,
+                    "arrow-down": fe.r5,
+                    "arrow-left": pe.ac,
+                    "arrow-right": de.eF,
+                    ban: me.faBan,
                     check: o.LE,
-                    plus: se.r8,
-                    link: ce.nN,
-                    eye: le.Md,
-                    circle: oe.di,
-                    star: ie.T,
-                    bell: O.qm,
-                    "bell-slash": re.n8,
-                    bookmark: ae.xV,
-                    reply: ne.Lh,
-                    user: te.IL,
-                    "user-circle": ee.m0,
+                    plus: ue.r8,
+                    link: se.nN,
+                    eye: ce.Md,
+                    circle: le.di,
+                    star: oe.T,
+                    bell: A.qm,
+                    "bell-slash": ie.n8,
+                    bookmark: re.xV,
+                    reply: ae.Lh,
+                    user: ne.IL,
+                    "user-circle": te.m0,
                     "user-plus": s.FK,
-                    "user-minus": Y.k9,
-                    camera: H._j,
-                    display: Q.YV,
-                    trash: X.$,
-                    feather: K.nA,
-                    images: J.l9,
-                    house: B.faHouse,
-                    location: F.iU,
-                    rocket: _.tM,
-                    microphone: G.UO,
-                    "folder-open": L.cC,
-                    gauge: V.Iz,
-                    dice: W.RJ,
-                    "triangle-exclamation": S.faTriangleExclamation
+                    "user-minus": ee.k9,
+                    camera: Y._j,
+                    display: H.YV,
+                    trash: Q.$,
+                    feather: X.nA,
+                    images: K.l9,
+                    house: J.faHouse,
+                    location: B.iU,
+                    rocket: F.tM,
+                    microphone: _.UO,
+                    "folder-open": G.cC,
+                    gauge: L.Iz,
+                    dice: V.RJ,
+                    "triangle-exclamation": j.faTriangleExclamation
                 },
-                Ee = n(37463),
-                xe = n(88233),
-                ke = n(2566);
-            P().extend(D()), P().extend(M());
-            var Ce = {
+                xe = n(37463),
+                ke = n(88233),
+                Ce = n(2566);
+            z().extend(U()), z().extend(R());
+            var Ie = {
                     "economy.alert": {
                         caption: "Economy",
-                        icon: $.Z
+                        icon: W.Z
                     },
                     "group.announcement": {
                         caption: "Group Announcement",
-                        icon: O.qm
+                        icon: A.qm
                     },
                     "group.informative": {
                         caption: "Group",
-                        icon: O.qm
+                        icon: A.qm
                     },
                     "group.invite": {
                         caption: "Group Invite",
@@ -2799,76 +2800,80 @@
                     },
                     "group.post": {
                         caption: "Group Post",
-                        icon: O.qm
+                        icon: A.qm
                     },
                     "invite.instance.contentGated": {
                         caption: "Content Gated",
-                        icon: j.faCircleExclamation
+                        icon: O.faCircleExclamation
                     },
                     "moderation.contentrestriction": {
                         caption: "Content Moderation",
-                        icon: S.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.notice": {
                         caption: "Moderation Notice",
-                        icon: S.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.warning.group": {
                         caption: "Group Moderation Warning",
-                        icon: S.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.report.closed": {
                         caption: "Moderation",
-                        icon: T.JH
+                        icon: S.JH
                     },
                     "avatarreview.success": {
                         caption: "Avatar Approved",
-                        icon: Z.faCircleCheck
+                        icon: T.faCircleCheck
                     },
                     "avatarreview.failure": {
                         caption: "Avatar Rejected",
-                        icon: N.faCircleXmark
+                        icon: Z.faCircleXmark
                     },
                     "promo.redeem": {
                         caption: "Promo",
-                        icon: I.IB
+                        icon: N.IB
                     },
                     "badge.earned": {
                         caption: "Badge Earned",
-                        icon: C.U
+                        icon: I.U
                     },
                     "text.adventure": {
                         caption: "Adventure",
-                        icon: k.Jw
+                        icon: C.Jw
+                    },
+                    "vrcplus.gift": {
+                        caption: "VRC+ Gift",
+                        icon: k.BH
                     },
                     boop: {
                         caption: "Boop",
                         icon: x.kQ
                     }
                 },
-                Ie = {
+                Ne = {
                     OpenListingDetails: function(e) {
                         e.linkType, e.linkId;
-                        return "/home/marketplace/wallet/subscriptions/".concat(A.yy.EXPIRING)
+                        return "/home/marketplace/wallet/subscriptions/".concat(q.yy.EXPIRING)
                     },
                     OpenExpiredListingDetails: function(e) {
                         e.linkType, e.linkId;
-                        return "/home/marketplace/wallet/subscriptions/".concat(A.yy.EXPIRED)
+                        return "/home/marketplace/wallet/subscriptions/".concat(q.yy.EXPIRED)
                     }
                 },
-                Ne = function(e) {
+                Ze = function(e) {
                     var t = e.linkType,
                         n = e.linkId;
                     return "/home/".concat(t, "/").concat(n)
                 },
-                Ze = function(e) {
+                Te = function(e) {
                     var t, n = e.notificationId,
                         a = e.respondToNotification,
                         r = e.type,
                         i = e.data,
                         o = e.icon,
                         l = e.text;
-                    return "link" === r ? null : m.createElement(ke.n9, {
+                    return "link" === r ? null : m.createElement(Ce.n9, {
                         disabled: "reply" === r,
                         onClick: function() {
                             a({
@@ -2878,11 +2883,11 @@
                             })
                         },
                         title: "reply" === r ? "To reply, open your notifications in VRChat" : l || r
-                    }, m.createElement(Ee.$1, {
-                        icon: (t = o, ye[t] || t)
+                    }, m.createElement(xe.$1, {
+                        icon: (t = o, Ee[t] || t)
                     }), " ", l || r)
                 };
-            const Te = function(e) {
+            const Se = function(e) {
                 var t = e.notification,
                     n = e.slim,
                     r = (0, d.I0)(),
@@ -2890,11 +2895,11 @@
                     o = (0, v.Z)(i, 2),
                     l = o[0],
                     c = o[1],
-                    s = (0, U.S5)(),
+                    s = (0, $.S5)(),
                     g = (0, v.Z)(s, 2),
                     h = g[0],
                     x = g[1].isSuccess,
-                    k = (0, U.oS)(),
+                    k = (0, $.oS)(),
                     C = (0, v.Z)(k, 2),
                     I = C[0],
                     N = C[1].isSuccess,
@@ -2905,7 +2910,7 @@
                             a = (0, v.Z)(n, 2),
                             r = a[0],
                             i = a[1];
-                        if (r) return (Ie[r] || Ne)({
+                        if (r) return (Ne[r] || Ze)({
                             linkType: r,
                             linkId: i
                         })
@@ -2914,84 +2919,84 @@
                 (x || N) && r((0, f.tV)({
                     notificationId: null == t ? void 0 : t.id
                 }));
-                var S = Ce[null == t ? void 0 : t.type] || {
+                var S = Ie[null == t ? void 0 : t.type] || {
                         caption: null == t ? void 0 : t.type,
                         icon: E.Ps
                     },
                     j = S.icon,
                     O = S.caption,
-                    A = t.createdAt && P()(t.createdAt);
-                return m.createElement(m.Fragment, null, m.createElement(ke.jm, null, m.createElement(ke.lR, null, m.createElement(ke.XK, null, m.createElement(Ee.$1, {
+                    A = t.createdAt && z()(t.createdAt);
+                return m.createElement(m.Fragment, null, m.createElement(Ce.jm, null, m.createElement(Ce.lR, null, m.createElement(Ce.XK, null, m.createElement(xe.$1, {
                     icon: j
-                }), " ", m.createElement("i", null, O)), (null == t ? void 0 : t.canDelete) && m.createElement(ke.Z2, {
+                }), " ", m.createElement("i", null, O)), (null == t ? void 0 : t.canDelete) && m.createElement(Ce.Z2, {
                     title: "Dismiss Notification",
                     onClick: function() {
                         I({
                             notificationId: null == t ? void 0 : t.id
                         })
                     }
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     icon: y.faXmark
-                }))), m.createElement(ke.g6, null, t.imageUrl && m.createElement(ke.rR, {
+                }))), m.createElement(Ce.g6, null, t.imageUrl && m.createElement(Ce.rR, {
                     to: !0,
                     onClick: function() {
                         c(!0)
                     },
                     statusColor: u.xY.offline.color
-                }, m.createElement(ke.v_, null, m.createElement(Ee.$1, {
+                }, m.createElement(Ce.v_, null, m.createElement(xe.$1, {
                     icon: w.q9
-                })), m.createElement(ke.sJ, {
+                })), m.createElement(Ce.sJ, {
                     url: t.imageUrl
-                }), m.createElement(ke.EU, {
+                }), m.createElement(Ce.EU, {
                     url: t.imageUrl
-                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, !!T && m.createElement("strong", null, Z ? m.createElement(p.rU, {
+                })), m.createElement(Ce.N2, null, m.createElement(Ce.gp, null, !!T && m.createElement("strong", null, Z ? m.createElement(p.rU, {
                     to: Z
                 }, T) : T), (null == A ? void 0 : A.isValid()) && m.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, m.createElement("small", null, m.createElement("time", {
                     dateTime: t.createdAt,
                     title: A.format("llll")
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     className: "tw-mr-1",
                     icon: b.SZ
-                }), A.fromNow()))), m.createElement("p", null, t.message)), m.createElement(ke.tt, {
+                }), A.fromNow()))), m.createElement("p", null, t.message)), m.createElement(Ce.tt, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map((function(e) {
-                    return m.createElement(Ze, (0, a.Z)({
+                    return m.createElement(Te, (0, a.Z)({
                         key: "".concat(null == t ? void 0 : t.id, "-").concat(e.type)
                     }, e, {
                         notificationId: null == t ? void 0 : t.id,
                         respondToNotification: h
                     }))
-                })))))), !!t.imageUrl && l && m.createElement(xe.Z, {
+                })))))), !!t.imageUrl && l && m.createElement(ke.Z, {
                     imageUrl: t.imageUrl,
                     closeCallback: function() {
                         c(!1)
                     }
                 }))
             };
-            const Se = function(e) {
+            const je = function(e) {
                 var t = e.notification,
                     n = e.senderUserData,
                     a = (0, d.I0)(),
-                    r = (0, U.gS)(),
+                    r = (0, $.gS)(),
                     o = (0, v.Z)(r, 2),
                     c = o[0],
                     s = o[1].isSuccess,
-                    p = (0, U.pX)(),
+                    p = (0, $.pX)(),
                     g = (0, v.Z)(p, 1)[0],
                     h = n.profilePicOverride || n.currentAvatarThumbnailImageUrl;
                 return s && a((0, f.tV)({
                     notificationId: t.id
-                })), m.createElement(ke.jm, null, m.createElement(ke.XK, null, m.createElement(Ee.$1, {
+                })), m.createElement(Ce.jm, null, m.createElement(Ce.XK, null, m.createElement(xe.$1, {
                     icon: l.FU
-                }), "  ", m.createElement("i", null, "System Message")), m.createElement(ke.g6, null, m.createElement(ke.gt, {
+                }), "  ", m.createElement("i", null, "System Message")), m.createElement(Ce.g6, null, m.createElement(Ce.gt, {
                     statusColor: u.xY.offline.color
-                }, m.createElement(ke.sJ, {
+                }, m.createElement(Ce.sJ, {
                     url: h
-                }), m.createElement(ke.EU, {
+                }), m.createElement(Ce.EU, {
                     url: h
-                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, m.createElement("strong", null, "System Message"), " - ", t.message), m.createElement(ke.tt, null, m.createElement(ke.n9, {
+                })), m.createElement(Ce.N2, null, m.createElement(Ce.gp, null, m.createElement("strong", null, "System Message"), " - ", t.message), m.createElement(Ce.tt, null, m.createElement(Ce.n9, {
                     onClick: function() {
                         c({
                             notificationId: t.id
@@ -3001,12 +3006,12 @@
                     },
                     color: "primary",
                     title: "Close"
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     icon: i.NB
                 }), " Close")))))
             };
-            var je = ["notification"],
-                Oe = {
+            var Oe = ["notification"],
+                Ae = {
                     friendRequest: s.FK,
                     "friend-add": s.FK,
                     invite: l.FU,
@@ -3015,7 +3020,7 @@
                     inviteResponse: c.dw,
                     message: l.FU
                 },
-                Ae = {
+                qe = {
                     friendRequest: "Friend Request",
                     "friend-add": "Friend Status",
                     invite: "Invite",
@@ -3024,10 +3029,10 @@
                     inviteResponse: "Invite Response",
                     message: "System Message"
                 },
-                qe = ["friend-active", "friend-add", "friend-online"];
-            const Pe = function(e) {
+                Pe = ["friend-active", "friend-add", "friend-online"];
+            const ze = function(e) {
                 var t, n, l, c, s, v, b, w, y = e.notification,
-                    E = (0, r.Z)(e, je),
+                    E = (0, r.Z)(e, Oe),
                     x = (0, d.I0)(),
                     k = y.type,
                     C = y.senderUserId,
@@ -3042,30 +3047,30 @@
                     O = j.data,
                     A = j.isLoading,
                     q = j.error;
-                if (T) return m.createElement(Te, (0, a.Z)({}, E, {
+                if (T) return m.createElement(Se, (0, a.Z)({}, E, {
                     notification: y
                 }));
                 if (A) return m.createElement("p", null, "Loading");
-                if (S) return m.createElement(Se, (0, a.Z)({}, E, {
+                if (S) return m.createElement(je, (0, a.Z)({}, E, {
                     notification: y,
                     senderUserData: O
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var P, z = Oe[k],
-                    M = Ae[k],
+                var P, z = Ae[k],
+                    M = qe[k],
                     R = (0, u.Tq)(O.status).color,
                     D = O.profilePicOverride || O.currentAvatarThumbnailImageUrl,
                     U = (null === (t = y.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = y.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = y.details) || void 0 === l ? void 0 : l.requestMessage);
-                return m.createElement(ke.jm, null, m.createElement(ke.XK, null, m.createElement(Ee.$1, {
+                return m.createElement(Ce.jm, null, m.createElement(Ce.XK, null, m.createElement(xe.$1, {
                     icon: z
-                }), "  ", m.createElement("i", null, M)), m.createElement(ke.g6, null, m.createElement(ke.rR, {
+                }), "  ", m.createElement("i", null, M)), m.createElement(Ce.g6, null, m.createElement(Ce.rR, {
                     to: "/home/user/".concat(C),
                     statusColor: R
-                }, !(null !== (c = y.details) && void 0 !== c && c.imageUrl) && m.createElement(ke.v_, null, "Go To Profile"), m.createElement(ke.sJ, {
+                }, !(null !== (c = y.details) && void 0 !== c && c.imageUrl) && m.createElement(Ce.v_, null, "Go To Profile"), m.createElement(Ce.sJ, {
                     url: null !== (s = null === (v = y.details) || void 0 === v ? void 0 : v.imageUrl) && void 0 !== s ? s : D
-                }), m.createElement(ke.EU, {
+                }), m.createElement(Ce.EU, {
                     url: null !== (b = null === (w = y.details) || void 0 === w ? void 0 : w.imageUrl) && void 0 !== b ? b : D
-                })), m.createElement(ke.N2, null, m.createElement(ke.gp, null, m.createElement(p.rU, {
+                })), m.createElement(Ce.N2, null, m.createElement(Ce.gp, null, m.createElement(p.rU, {
                     to: "/home/user/".concat(C)
                 }, m.createElement("strong", null, O.displayName)), " - ", N || {
                     friendRequest: "would like to be your friend!",
@@ -3073,17 +3078,17 @@
                     requestInvite: "has requested an invite to your world!",
                     requestInviteResponse: "has declined your invite request.",
                     inviteResponse: "has declined your invite."
-                } [k]), "friendRequest" === k ? m.createElement(ke.tt, null, m.createElement(ke.n9, {
+                } [k]), "friendRequest" === k ? m.createElement(Ce.tt, null, m.createElement(Ce.n9, {
                     onClick: function() {
                         return x((0, f.yK)({
                             notificationId: I,
-                            withServer: !qe.includes(y.type)
+                            withServer: !Pe.includes(y.type)
                         }))
                     },
                     color: "secondary"
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     icon: i.NB
-                })), m.createElement(ke.n9, {
+                })), m.createElement(Ce.n9, {
                     onClick: function() {
                         x((0, f.FC)({
                             notificationId: y.id
@@ -3093,19 +3098,19 @@
                         })
                     },
                     color: "primary"
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     icon: o.LE
-                }))) : m.createElement(ke.tt, null, m.createElement(ke.n9, {
+                }))) : m.createElement(Ce.tt, null, m.createElement(Ce.n9, {
                     onClick: function() {
                         return x((0, f.yK)({
                             notificationId: I,
-                            withServer: !qe.includes(y.type)
+                            withServer: !Pe.includes(y.type)
                         }))
                     },
                     color: "secondary"
-                }, m.createElement(Ee.$1, {
+                }, m.createElement(xe.$1, {
                     icon: i.NB
-                })), "invite" === k && m.createElement(ke.n9, {
+                })), "invite" === k && m.createElement(Ce.n9, {
                     onClick: function() {
                         window.open(function() {
                             var e;
@@ -3118,7 +3123,7 @@
                         }())
                     },
                     color: "secondary"
-                }, m.createElement("strong", null, "Join"))))), U && m.createElement(ke.hH, null, '"', U, '"'))
+                }, m.createElement("strong", null, "Join"))))), U && m.createElement(Ce.hH, null, '"', U, '"'))
             }
         },
         2566: (e, t, n) => {
@@ -3968,4 +3973,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8c55be4f0546aaa5603df90936004f34af6a9a7e283308cf537ddcde6bc1f067.js.map
+//# sourceMappingURL=88eabb1e0214856b2339b2f069745b9e065a349f7ab16a2188093b477f52d81d.js.map
