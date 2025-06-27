@@ -175,8 +175,8 @@
         40525: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                PopulationCallout: () => Tn,
-                default: () => Zn
+                PopulationCallout: () => Ln,
+                default: () => Sn
             });
             var a = n(4965),
                 l = n(68335),
@@ -196,8 +196,8 @@
                 v = n(30856),
                 b = n(76409),
                 x = n(47947),
-                E = n(11298),
-                y = n(27879),
+                y = n(11298),
+                E = n(27879),
                 N = n(46357),
                 k = n(13461),
                 C = n(20446),
@@ -317,9 +317,9 @@
                     v = void 0 === h ? {} : h,
                     b = (0, o.dD)(),
                     x = s.useState(!1),
-                    E = (0, w.Z)(x, 2),
-                    y = E[0],
-                    N = E[1],
+                    y = (0, w.Z)(x, 2),
+                    E = y[0],
+                    N = y[1],
                     k = s.useState(!1),
                     C = (0, w.Z)(k, 2),
                     I = C[0],
@@ -345,11 +345,11 @@
                         group: n,
                         type: l,
                         roles: i,
-                        queueEnabled: y,
+                        queueEnabled: E,
                         ageGate: I,
                         region: z
                     })
-                }), [n, l, i, y, I, z]), v ? s.createElement(me, null, s.createElement(ue, {
+                }), [n, l, i, E, I, z]), v ? s.createElement(me, null, s.createElement(ue, {
                     onClick: function() {
                         p()
                     },
@@ -393,7 +393,7 @@
                 }, "Instance Queue"), s.createElement(ce.Z, {
                     className: "w-auto d-flex align-items-center",
                     value: "hasInstanceQueue",
-                    defaultChecked: y,
+                    defaultChecked: E,
                     onChangeCallback: function(e) {
                         var t = e.checked;
                         return N(t)
@@ -413,7 +413,7 @@
                 }))), s.createElement(we, {
                     className: "mt-0 mb-0",
                     id: "WorldLaunchRegionTitle"
-                }, "Select Region"), s.createElement(Ee, {
+                }, "Select Region"), s.createElement(ye, {
                     role: "radiogroup",
                     "aria-labelledby": "WorldLaunchRegionTitle"
                 }, s.createElement(re, {
@@ -448,7 +448,7 @@
                         return L(!T)
                     },
                     selected: T,
-                    containerStyles: ye
+                    containerStyles: Ee
                 }, s.createElement(d.X2, {
                     className: "align-items-center justify-content-center flex-grow-1 position-relative"
                 }, s.createElement(ve, {
@@ -521,13 +521,13 @@
                     name: "1hz0u4k",
                     styles: "padding:0.5rem 0;display:flex;position:relative"
                 }),
-                Ee = (0, a.Z)(d.X2, {
+                ye = (0, a.Z)(d.X2, {
                     target: "e1j6aecs0"
                 })({
                     name: "1bxe3y0",
                     styles: "margin-top:0.5rem;align-items:center;justify-content:space-between;>*:hover{cursor:pointer;}"
                 }),
-                ye = {
+                Ee = {
                     name: "12brwd0",
                     styles: "overflow:unset"
                 },
@@ -555,8 +555,8 @@
                         groupId: t
                     }),
                     x = b.data,
-                    E = b.isFetching,
-                    y = b.isError,
+                    y = b.isFetching,
+                    E = b.isError,
                     N = b.error,
                     k = (0, s.useMemo)((function() {
                         return (null == x ? void 0 : x.roles.filter((function(e) {
@@ -661,9 +661,9 @@
                             }))
                         }))
                     };
-                if (y) return s.createElement("p", null, "Something's gone wrong. ", JSON.stringify(N));
+                if (E) return s.createElement("p", null, "Something's gone wrong. ", JSON.stringify(N));
                 return s.createElement(Ie.Z, {
-                    loading: E
+                    loading: y
                 }, s.createElement("p", null, s.createElement("small", null, "Only the selected group roles and instance moderators above the lowest selected role may join.")), j([{
                     id: "all",
                     name: "All (Everyone can access)",
@@ -707,10 +707,10 @@
                     v = (0, w.Z)(h, 2),
                     b = v[0],
                     x = v[1],
-                    E = s.useState(null),
-                    y = (0, w.Z)(E, 2),
-                    N = y[0],
-                    k = y[1];
+                    y = s.useState(null),
+                    E = (0, w.Z)(y, 2),
+                    N = E[0],
+                    k = E[1];
                 s.useEffect((function() {
                     t && (x([]), k(null))
                 }), [t]);
@@ -813,9 +813,9 @@
                     v = e.instanceInfoCallback,
                     b = void 0 === v ? function() {} : v,
                     x = e.startedCreation,
-                    E = e.handleLaunchClick,
-                    y = s.useState(null),
-                    N = (0, w.Z)(y, 2),
+                    y = e.handleLaunchClick,
+                    E = s.useState(null),
+                    N = (0, w.Z)(E, 2),
                     k = N[0],
                     C = N[1];
                 if (s.useEffect((function() {
@@ -918,7 +918,7 @@
                     world: h,
                     selectedInstanceType: k,
                     instanceInfoCallback: b,
-                    handleLaunchClick: E,
+                    handleLaunchClick: y,
                     returnCallback: function(e) {
                         b(null), z && !e || "type" === e ? C(null) : (C(null), p(e))
                     }
@@ -985,13 +985,13 @@
                     }, {
                         skip: !(null != f && f.id)
                     }),
-                    E = x.data,
-                    y = void 0 === E ? [] : E,
+                    y = x.data,
+                    E = void 0 === y ? [] : y,
                     N = x.isLoading,
                     k = x.isSuccess;
                 return s.useEffect((function() {
                     l && b(null)
-                }), [l]), k && 0 === y.length ? s.createElement(Je, {
+                }), [l]), k && 0 === E.length ? s.createElement(Je, {
                     stepComplete: !1
                 }, s.createElement("p", null, "You are not in any groups.")) : s.createElement(s.Fragment, null, s.createElement(Je, {
                     stepComplete: !1
@@ -1044,7 +1044,7 @@
                     width: "100%",
                     height: "40px",
                     className: "mb-1"
-                })) : null == y ? void 0 : y.map((function(e) {
+                })) : null == E ? void 0 : E.map((function(e) {
                     return n[e.groupId] && n[e.groupId].some((function(e) {
                         return H.hp.includes(e)
                     })) ? s.createElement(nt, {
@@ -1146,9 +1146,9 @@
                     v = h[0],
                     b = h[1],
                     x = s.useState(!1),
-                    E = (0, w.Z)(x, 2),
-                    y = E[0],
-                    N = E[1],
+                    y = (0, w.Z)(x, 2),
+                    E = y[0],
+                    N = y[1],
                     k = s.useState("public"),
                     C = (0, w.Z)(k, 2),
                     I = C[0],
@@ -1184,7 +1184,7 @@
                     me = (0, J.v5)({
                         userId: null == r ? void 0 : r.id
                     }, {
-                        skip: !(null != r && r.id) || !1 === y
+                        skip: !(null != r && r.id) || !1 === E
                     }),
                     de = me.data,
                     ue = me.isLoading,
@@ -1217,11 +1217,11 @@
                         (a < n.left || a > n.right || l < n.top || l > n.bottom) && ($(!1), b(null), N(!1))
                     };
                 s.useEffect((function() {
-                    return y ? window.addEventListener("click", he) : window.removeEventListener("click", he),
+                    return E ? window.addEventListener("click", he) : window.removeEventListener("click", he),
                         function() {
                             return window.removeEventListener("click", he)
                         }
-                }), [y]);
+                }), [E]);
                 var ve = s.useCallback((0, R.Z)(X().mark((function e() {
                         var t, a, s, c, o;
                         return X().wrap((function(e) {
@@ -1278,14 +1278,14 @@
                         }), e)
                     }))), [v, null == n ? void 0 : n.id, null == r ? void 0 : r.id]),
                     xe = function(e) {
-                        if (e.stopPropagation(), p || f(!0), !y) return N(!0), Z("public" === n.releaseStatus ? "public" : "friends+"), void L("us");
-                        y && (N(!1), null === v ? ve() : be())
+                        if (e.stopPropagation(), p || f(!0), !E) return N(!0), Z("public" === n.releaseStatus ? "public" : "friends+"), void L("us");
+                        E && (N(!1), null === v ? ve() : be())
                     },
-                    Ee = y ? "Create Instance" : "Launch";
-                y && Q && (Ee = "Create and Invite Me");
+                    ye = E ? "Create Instance" : "Launch";
+                E && Q && (ye = "Create and Invite Me");
                 return s.createElement(st, null, s.createElement(bt, {
                     ref: M,
-                    isOpen: y,
+                    isOpen: E,
                     privateWorld: "public" !== n.releaseStatus,
                     mobile: a
                 }, s.createElement(xt, {
@@ -1293,12 +1293,12 @@
                     role: "dialog",
                     ref: P,
                     "aria-labelledby": "LaunchWorldTitle",
-                    className: (0, O.cx)(["animated", !a && (y ? "slideInUp" : "slideOutDown")])
+                    className: (0, O.cx)(["animated", !a && (E ? "slideInUp" : "slideOutDown")])
                 }, s.createElement(d.JX, {
                     className: "w-100"
                 }, s.createElement(ct, {
                     ref: U
-                }, s.createElement(ot, null, s.createElement(Et, {
+                }, s.createElement(ot, null, s.createElement(yt, {
                     id: "LaunchWorldTitle"
                 }, "Select Instance Type"), s.createElement(d.JX, {
                     role: "radiogroup",
@@ -1347,7 +1347,7 @@
                     className: "flex-1"
                 }, pe || !te ? "You are in no groups!" : "Select for more options."), s.createElement(d.$1, {
                     icon: Y._t
-                }))), s.createElement(Et, {
+                }))), s.createElement(yt, {
                     className: "mt-0 mb-0",
                     id: "WorldLaunchRegionTitle"
                 }, "Select Region"), s.createElement(Zt, {
@@ -1377,7 +1377,7 @@
                         return K(!Q)
                     },
                     selected: Q,
-                    containerStyles: yt
+                    containerStyles: Et
                 }, s.createElement(d.X2, {
                     className: "align-items-center justify-content-center flex-grow-1 position-relative"
                 }, s.createElement($t, {
@@ -1386,7 +1386,7 @@
                 }), "Also Invite Me")), a && !z && s.createElement(St, {
                     className: "mt-2",
                     onClick: xe
-                }, s.createElement(jt, null, Ee))), s.createElement(ut, {
+                }, s.createElement(jt, null, ye))), s.createElement(ut, {
                     showNextStep: z
                 }, s.createElement(Ve, {
                     startedCreation: z,
@@ -1400,18 +1400,18 @@
                     groupPermissions: de,
                     handleLaunchClick: xe
                 })))))), s.createElement(St, {
-                    "aria-label": Ee,
+                    "aria-label": ye,
                     disabled: z && !v,
                     onClick: xe
-                }, s.createElement(jt, null, Ee), s.createElement(zt, {
+                }, s.createElement(jt, null, ye), s.createElement(zt, {
                     role: "button",
                     "aria-label": "Toggle Instance Settings",
                     onClick: function(e) {
-                        y && (e.stopPropagation(), $(!1), b(null), N(!1))
+                        E && (e.stopPropagation(), $(!1), b(null), N(!1))
                     }
                 }, s.createElement(d.$1, {
-                    title: y ? "Hide Settings" : "Show Settings",
-                    icon: y ? F.pt : A.mT,
+                    title: E ? "Hide Settings" : "Show Settings",
+                    icon: E ? F.pt : A.mT,
                     color: "#ffffff5f"
                 }))))
             }));
@@ -1500,13 +1500,13 @@
                 })("width:100%;height:100%;display:flex;flex-direction:row;background-color:#1a282f;animation-duration:", (function(e) {
                     return e.initial ? "1ms" : "300ms"
                 }), ";"),
-                Et = (0, a.Z)("div", {
+                yt = (0, a.Z)("div", {
                     target: "euozan38"
                 })({
                     name: "5a6l2d",
                     styles: "font-size:1rem;color:#6ae3f9;text-align:center;align-self:center;display:inline;margin:0.5rem 0"
                 }),
-                yt = {
+                Et = {
                     name: "12brwd0",
                     styles: "overflow:unset"
                 },
@@ -1585,10 +1585,10 @@
                     v = g.isError,
                     b = g.error,
                     x = g.reset,
-                    E = s.useState(!1),
-                    y = (0, w.Z)(E, 2),
-                    N = y[0],
-                    k = y[1],
+                    y = s.useState(!1),
+                    E = (0, w.Z)(y, 2),
+                    N = E[0],
+                    k = E[1],
                     C = (0, Rt.u4)({
                         userId: null == i ? void 0 : i.id,
                         worldId: l
@@ -1705,7 +1705,7 @@
                                 return n ? s.createElement(S.rU, {
                                     key: e,
                                     to: "/home/search/".concat(l.toLowerCase())
-                                }, s.createElement(Ht, null, l)) : s.createElement(Ht, {
+                                }, s.createElement(Bt, null, l)) : s.createElement(Bt, {
                                     key: e,
                                     role: "listitem",
                                     "aria-label": l
@@ -1720,10 +1720,16 @@
                             return null !== (t = null == e ? void 0 : e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")) && void 0 !== t ? t : "0"
                         };
                     return s.createElement(s.Fragment, null, s.createElement("div", {
-                        className: "tw-flex mb-3 align-items-start align-items-sm-center justify-content-between flex-column flex-sm-row"
-                    }, s.createElement("div", {
-                        className: "tw-flex tw-flex-col ms-2"
-                    }, s.createElement("h2", null, r.name), s.createElement("div", {
+                        className: "tw-flex mb-3 align-items-start justify-content-between flex-column flex-sm-row"
+                    }, s.createElement(Gt, {
+                        className: "tw-flex tw-flex-col"
+                    }, s.createElement("h2", {
+                        className: "tw-overflow-hidden tw-overflow-ellipsis tw-line-clamp-2 tw-hyphens-auto tw-w-full",
+                        style: {
+                            overflowWrap: "break-word"
+                        },
+                        title: r.name
+                    }, r.name), s.createElement("div", {
                         role: "region",
                         "aria-label": "World Info",
                         className: "tw-flex tw-items-center"
@@ -1749,18 +1755,18 @@
                         copyLabel: "Copy Link to This World",
                         displayLabel: !0,
                         transparent: !0
-                    }))), s.createElement(Gt, {
+                    }))), s.createElement(Vt, {
                         ref: F
                     }, s.createElement(it, {
                         world: r
-                    }), "public" === r.releaseStatus && s.createElement(Qt, {
+                    }), "public" === r.releaseStatus && s.createElement(Kt, {
                         to: "/home/launch?worldId=".concat(r.id),
                         target: "_blank"
                     }, s.createElement(d.$1, {
                         icon: I.nN,
                         color: "6ae3f99f",
                         className: "me-2 fa-sm"
-                    }), "Public Link"))), (null == r ? void 0 : r.publicOccupants) > 0 && s.createElement(nn, {
+                    }), "Public Link"))), (null == r ? void 0 : r.publicOccupants) > 0 && s.createElement(an, {
                         className: "ms-0 ms-sm-2 mb-3",
                         role: "note",
                         title: "Players in Public Instances"
@@ -1771,23 +1777,23 @@
                     }, s.createElement(d.oI, null, s.createElement(Xt, null, "Description")), s.createElement(d.Ao, null, s.createElement("div", {
                         role: "note",
                         title: "World Description"
-                    }, r.description), r.tags.length > 0 && s.createElement(Vt, {
+                    }, r.description), r.tags.length > 0 && s.createElement(Jt, {
                         role: "list",
                         "aria-labelledby": "WorldTagsLabel"
-                    }, s.createElement(Jt, {
+                    }, s.createElement(Ht, {
                         id: "WorldTagsLabel"
                     }, "Tags"), K)), "private" === (null == r ? void 0 : r.releaseStatus) && s.createElement(d.qX, {
                         type: "warn",
                         title: "Private World Callout",
                         message: "This world is private and only visible via direct links",
                         slim: !0
-                    }), !1, !1), s.createElement(Gt, {
+                    }), !1, !1), s.createElement(Vt, {
                         className: "mt-3 mt-sm-0"
                     }, s.createElement("div", {
                         className: "tw-flex tw-flex-col order-1 order-sm-0 mt-3 mt-sm-0"
                     }, s.createElement(d.oI, null, s.createElement(Xt, null, "Details")), s.createElement(d.Ao, null, s.createElement("div", {
                         className: "tw-flex"
-                    }, s.createElement(Kt, {
+                    }, s.createElement(en, {
                         role: "presentation"
                     }, "number" == typeof r.visits && s.createElement("div", {
                         className: "tw-flex mb-2 align-items-center"
@@ -1815,14 +1821,14 @@
                     }, s.createElement(d.$1, {
                         color: "#54b5c5",
                         width: 20,
-                        icon: y.IL,
+                        icon: E.IL,
                         className: "me-2"
                     }), "Public Players"), s.createElement("div", {
                         className: "tw-flex mb-2 align-items-center"
                     }, s.createElement(d.$1, {
                         color: "#54b5c5",
                         width: 20,
-                        icon: E.BC,
+                        icon: y.BC,
                         className: "me-2"
                     }), "Private Players"), (m || z) && s.createElement("div", {
                         className: "tw-flex mb-2 align-items-center"
@@ -1859,7 +1865,7 @@
                         width: 20,
                         icon: h.r6,
                         className: "me-2"
-                    }), "Updated")), s.createElement(en, {
+                    }), "Updated")), s.createElement(tn, {
                         className: "ms-3"
                     }, "number" == typeof r.visits && s.createElement("div", {
                         role: "note",
@@ -1873,7 +1879,7 @@
                         role: "note",
                         className: "tw-flex mb-2 align-items-center",
                         "aria-label": "Capacity"
-                    }, r.capacity, s.createElement(Bt, {
+                    }, r.capacity, s.createElement(Qt, {
                         id: "CapacityInfo",
                         role: "button",
                         "aria-label": "Show Capacity Information",
@@ -1954,13 +1960,13 @@
                         className: "me-2 fa-sm"
                     }), "Update in Elasticsearch")))), (null == r || null === (l = r.instances) || void 0 === l ? void 0 : l.length) > 0 && s.createElement("div", {
                         className: "tw-flex tw-flex-col ms-0 ms-sm-2 mt-3"
-                    }, s.createElement(d.oI, null, s.createElement(Xt, null, "Active Instances")), s.createElement(d.Ao, null, s.createElement(an, {
+                    }, s.createElement(d.oI, null, s.createElement(Xt, null, "Active Instances")), s.createElement(d.Ao, null, s.createElement(ln, {
                         role: "list",
                         "aria-label": "Active Instance List"
                     }, r.instances.slice(0, O).filter((function(e) {
                         return z || e[1] > 0
                     })).map((function(e) {
-                        return s.createElement(tn, {
+                        return s.createElement(nn, {
                             key: e[0],
                             location: "".concat(r.id, ":").concat(e[0]),
                             players: e[1],
@@ -1986,99 +1992,105 @@
             };
             const qt = Yt;
             var Xt = (0, a.Z)("h3", {
-                    target: "e1264afg13"
+                    target: "e1264afg14"
                 })({
                     name: "1siyvmw",
                     styles: "margin:0;font-size:1.5rem;&::after{display:none;}"
                 }),
                 Ot = (0, a.Z)("div", {
-                    target: "e1264afg12"
+                    target: "e1264afg13"
                 })({
                     name: "1xdp9l7",
                     styles: "height:10px;width:1px;background-color:hsla(0, 0%, 100%, 0.5);margin:0 0.8rem"
                 }),
                 Gt = (0, a.Z)("div", {
+                    target: "e1264afg11"
+                })({
+                    name: "lpuvq3",
+                    styles: "width:100%;@media (min-width: 576px){width:calc(100% - 300px - 1rem);}"
+                }),
+                Vt = (0, a.Z)("div", {
                     target: "e1264afg10"
                 })({
                     name: "br1a89",
                     styles: "display:flex;flex-direction:column;flex-grow:1;flex-shrink:0;position:relative;margin-top:0.5rem;width:100%;@media (min-width: 576px){margin-left:1rem;margin-top:0;flex-basis:300px;max-width:300px;width:auto;}"
                 }),
-                Vt = (0, a.Z)("div", {
+                Jt = (0, a.Z)("div", {
                     target: "e1264afg9"
                 })({
                     name: "7y7pq3",
                     styles: "display:flex;align-items:center;margin-top:1rem;flex-wrap:wrap"
                 }),
-                Jt = (0, a.Z)("div", {
+                Ht = (0, a.Z)("div", {
                     target: "e1264afg8"
                 })({
                     name: "93zbpw",
                     styles: "font-size:1rem;margin-right:1rem"
                 }),
-                Ht = (0, a.Z)("div", {
+                Bt = (0, a.Z)("div", {
                     target: "e1264afg7"
                 })({
                     name: "kjpdx2",
                     styles: "border-radius:6px;background-color:#07343f;border:#07343f solid 2px;padding:0.2rem 0.5rem;color:hsla(0, 0%, 100%, 0.8);margin:0 0.3rem 0.3rem 0;transition:border-color 300ms ease;&:hover,&:focus,&:active{border-color:#086c84;text-decoration:none;color:hsla(0, 0%, 100%, 0.8);}"
                 }),
-                Bt = (0, a.Z)("small", {
+                Qt = (0, a.Z)("small", {
                     target: "e1264afg6"
                 })({
                     name: "uaob3j",
                     styles: "margin-left:0.5rem"
                 }),
-                Qt = (0, a.Z)(S.rU, {
+                Kt = (0, a.Z)(S.rU, {
                     target: "e1264afg5"
                 })({
                     name: "1ngkm4d",
                     styles: "display:flex;align-items:center;text-align:center;margin-top:0.2rem;font-size:0.9rem;color:#6ae3f99f;align-self:center"
                 }),
-                Kt = (0, a.Z)("div", {
+                en = (0, a.Z)("div", {
                     target: "e1264afg4"
                 })({
                     name: "he1jg7",
                     styles: "display:flex;flex-direction:column;color:#737372;flex-shrink:0;font-weight:bold"
                 }),
-                en = (0, a.Z)(Kt, {
+                tn = (0, a.Z)(en, {
                     target: "e1264afg3"
                 })({
                     name: "14r110a",
                     styles: "flex-shrink:1;font-weight:normal"
                 }),
-                tn = (0, a.Z)(d.N6, {
+                nn = (0, a.Z)(d.N6, {
                     target: "e1264afg2"
                 })({
                     name: "4ld48d",
                     styles: "margin-top:0;margin-bottom:0.75rem"
                 }),
-                nn = (0, a.Z)("div", {
+                an = (0, a.Z)("div", {
                     target: "e1264afg1"
                 })({
                     name: "12ndgvw",
                     styles: "display:flex;flex-direction:column;background-color:#2c7c653f;margin-top:10px;border-radius:3px;padding:10px;border-left:3px solid teal;white-space:pre-wrap"
                 }),
-                an = (0, a.Z)("div", {
+                ln = (0, a.Z)("div", {
                     target: "e1264afg0"
                 })({
                     name: "1b5pp94",
                     styles: "display:grid;column-gap:0.5rem;grid-template-columns:repeat(1, 1fr);@media (min-width: 576px){grid-template-columns:repeat(2, 1fr);}@media (min-width: 992px){grid-template-columns:repeat(3, 1fr);}"
                 }),
-                ln = n(71858),
-                rn = n(29841),
-                sn = n(76553),
-                cn = n(68149),
-                on = n(51806),
-                mn = n.n(on),
-                dn = n(66736),
-                un = n(16869),
-                wn = n(95896),
-                pn = n(6655),
-                fn = n(1646),
-                gn = n.n(fn),
-                hn = n(49715),
-                vn = n(95643);
-            $().extend(gn());
-            var bn = function(e) {
+                rn = n(71858),
+                sn = n(29841),
+                cn = n(76553),
+                on = n(68149),
+                mn = n(51806),
+                dn = n.n(mn),
+                un = n(66736),
+                wn = n(16869),
+                pn = n(95896),
+                fn = n(6655),
+                gn = n(1646),
+                hn = n.n(gn),
+                vn = n(49715),
+                bn = n(95643);
+            $().extend(hn());
+            var xn = function(e) {
                 var t, n, a = e.isOpen,
                     l = e.onCancelCallback,
                     r = e.listingData,
@@ -2093,18 +2105,18 @@
                     v = (0, w.Z)(h, 2),
                     b = v[0],
                     x = v[1],
-                    E = (0, s.useState)([]),
-                    y = (0, w.Z)(E, 2),
-                    N = y[0],
-                    k = y[1],
+                    y = (0, s.useState)([]),
+                    E = (0, w.Z)(y, 2),
+                    N = E[0],
+                    k = E[1],
                     C = (0, o.Tu)().user,
-                    I = (0, dn.sy)({
+                    I = (0, un.sy)({
                         userId: i.sellerId
                     }, {
                         skip: !(null != i && i.sellerId)
                     }),
                     Z = I.data,
-                    j = (I.isFetching, I.isError, I.error, (0, pn.pp)({
+                    j = (I.isFetching, I.isError, I.error, (0, fn.pp)({
                         userId: C.id
                     }, {
                         skip: !C
@@ -2112,13 +2124,13 @@
                     z = j.data,
                     D = (void 0 === z ? {} : z).balance,
                     _ = j.isFetching,
-                    T = (0, un.mr)({
+                    T = (0, wn.mr)({
                         listingId: i.id,
                         hydrate: !0
                     }, {
                         skip: null === i
                     }).data,
-                    L = (0, dn.I8)(),
+                    L = (0, un.I8)(),
                     M = (0, w.Z)(L, 2),
                     U = M[0],
                     P = M[1],
@@ -2127,7 +2139,7 @@
                     q = P.error,
                     O = P.isSuccess,
                     G = P.reset,
-                    V = (0, dn.YZ)(),
+                    V = (0, un.YZ)(),
                     J = (0, w.Z)(V, 2),
                     H = J[0],
                     B = J[1],
@@ -2182,7 +2194,7 @@
                             return t.productId === e
                         }))
                     })),
-                    re = (null == Z ? void 0 : Z.accountSellerStatus) === wn.dd.SUSPENDED,
+                    re = (null == Z ? void 0 : Z.accountSellerStatus) === pn.dd.SUSPENDED,
                     ie = W || _ || ne || Q || ae || le || re,
                     se = "instant" === (null == i ? void 0 : i.listingType),
                     ce = "duration" === (null == i ? void 0 : i.listingType),
@@ -2197,7 +2209,7 @@
                                             quantity: 1,
                                             totalPrice: i.priceTokens,
                                             contextData: {
-                                                locationType: wn.G0.WORLD,
+                                                locationType: pn.G0.WORLD,
                                                 storeId: null == c ? void 0 : c.storeId,
                                                 worldId: null == c ? void 0 : c.id
                                             }
@@ -2228,14 +2240,14 @@
                     onClick: de
                 }, s.createElement(d.$1, {
                     color: "white",
-                    icon: cn.YI
+                    icon: on.YI
                 }))), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
                 }, s.createElement(d.pw, {
                     className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5 tw-aspect-square",
                     alt: i.displayName,
                     imageId: null == i ? void 0 : i.imageId,
-                    fallbackSrc: mn(),
+                    fallbackSrc: dn(),
                     fitToCover: !0
                 }), s.createElement("h3", {
                     className: "heading"
@@ -2263,7 +2275,7 @@
                     disabled: W
                 }, s.createElement(d.$1, {
                     color: "white",
-                    icon: cn.YI
+                    icon: on.YI
                 }))), s.createElement("div", null, s.createElement("p", {
                     className: "tw-p-5 tw-font-bold tw-text-white tw-text-xl"
                 }, "Are you sure you want to buy ", i.displayName, " for ", s.createElement(d.b5, null), " ", i.priceTokens, "?")), s.createElement("div", {
@@ -2302,7 +2314,7 @@
                     onClick: de
                 }, s.createElement(d.$1, {
                     color: "white",
-                    icon: cn.YI
+                    icon: on.YI
                 }))), se && s.createElement("div", {
                     className: "tw-px-3 tw-pt-5 tw-pb-0"
                 }, s.createElement("div", {
@@ -2310,7 +2322,7 @@
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-row"
                 }, s.createElement(d.$1, {
-                    icon: sn.eH,
+                    icon: cn.eH,
                     size: "1x",
                     className: "tw-text-orange tw-mt-1 tw-mr-2"
                 }), s.createElement("div", {
@@ -2329,10 +2341,10 @@
                     className: "tw-w-full tw-h-full",
                     alt: i.displayName,
                     imageId: null == i ? void 0 : i.imageId,
-                    fallbackSrc: mn()
+                    fallbackSrc: dn()
                 })), s.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
-                }, s.createElement(hn.Z, {
+                }, s.createElement(vn.Z, {
                     listingType: i.listingType,
                     className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                 }), s.createElement("h4", {
@@ -2368,7 +2380,7 @@
                 }))), p && s.createElement("div", {
                     className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
                 }, null == T || null === (n = T.hydratedProducts) || void 0 === n ? void 0 : n.map((function(e) {
-                    return s.createElement(vn.Z, {
+                    return s.createElement(bn.Z, {
                         className: "tw-my-2",
                         key: e.id,
                         productData: e,
@@ -2408,12 +2420,12 @@
                     onClick: de
                 }, "Cancel")))))
             };
-            bn.propTypes = {
+            xn.propTypes = {
                 show: _().bool.isRequired,
                 onHide: _().func.isRequired,
                 onConfirm: _().func.isRequired
             };
-            const xn = bn;
+            const yn = xn;
             var En = function(e) {
                 var t = e.isDetailedView,
                     n = void 0 === t || t,
@@ -2437,7 +2449,7 @@
                     className: "tw-w-32 tw-h-full tw-rounded-md tw-bg-transparent tw-pr-5 tw-hidden @lg/listingCard:tw-block",
                     alt: c,
                     imageId: null == l ? void 0 : l.imageId,
-                    fallbackSrc: mn(),
+                    fallbackSrc: dn(),
                     fitToCover: !0
                 }), s.createElement("div", {
                     className: "tw-w-full @sm:tw-w-fit tw-text-ellipsis"
@@ -2445,7 +2457,7 @@
                     className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/listingCard:tw-flex-row tw-items-start @sm/listingCard:tw-items-center "
                 }, s.createElement("h4", {
                     className: "tw-max-w-[250px] @sm/listingCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
-                }, c), s.createElement(hn.Z, {
+                }, c), s.createElement(vn.Z, {
                     listingType: o,
                     className: "tw-ml-0 @sm/listingCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 })), s.createElement("div", {
@@ -2471,7 +2483,7 @@
                     className: "tw-rounded-md tw-bg-grey tw-p-1 tw-flex-1"
                 }, s.createElement("div", null, s.createElement("div", {
                     className: "tw-absolute tw-p-3 "
-                }, s.createElement(hn.Z, {
+                }, s.createElement(vn.Z, {
                     listingType: o,
                     className: "tw-bg-dark-grey-transparent-90"
                 })), s.createElement("div", {
@@ -2480,7 +2492,7 @@
                     className: "tw-w-full tw-h-full tw-bg-transparent",
                     alt: l.displayName,
                     imageId: null == l ? void 0 : l.imageId,
-                    fallbackSrc: mn(),
+                    fallbackSrc: dn(),
                     fitToCover: !0
                 }))), s.createElement("div", {
                     className: "tw-p-3"
@@ -2500,9 +2512,9 @@
                 listingData: _().object.isRequired,
                 isDetailedView: _().bool
             };
-            const yn = En;
-            var Nn = n(76176);
-            const kn = function(e) {
+            const Nn = En;
+            var kn = n(76176);
+            const Cn = function(e) {
                 var t = e.searchParams,
                     n = e.listingType,
                     a = e.sortBy,
@@ -2512,7 +2524,7 @@
                     n && e.set("listingType", n), a && e.set("sortBy", a), e.toString() !== t.toString() && l(e)
                 }), [n, a, t, l])
             };
-            var Cn = function(e) {
+            var In = function(e) {
                 var t = e.worldData,
                     n = void 0 === t ? null : t;
                 if (null === n) return null;
@@ -2531,9 +2543,9 @@
                     v = (0, s.useState)(g.get("listingType") || "all"),
                     b = (0, w.Z)(v, 2),
                     x = b[0],
-                    E = b[1],
-                    y = (0, s.useState)(g.get("sortBy") || "newest"),
-                    N = (0, w.Z)(y, 2),
+                    y = b[1],
+                    E = (0, s.useState)(g.get("sortBy") || "newest"),
+                    N = (0, w.Z)(E, 2),
                     k = N[0],
                     C = N[1],
                     I = (0, s.useState)(!1),
@@ -2544,14 +2556,14 @@
                     D = (0, w.Z)($, 2),
                     _ = D[0],
                     T = D[1],
-                    L = (0, dn.mb)({
+                    L = (0, un.mb)({
                         storeId: null == n ? void 0 : n.storeId,
                         checkListingsPurchasesStatus: !0
                     }, {
                         skip: !(null != n && n.storeId)
                     }).data,
-                    M = (0, Nn.Z)(_);
-                kn({
+                    M = (0, kn.Z)(_);
+                Cn({
                     searchParams: g,
                     listingType: x,
                     sortBy: k,
@@ -2571,7 +2583,7 @@
                     R = function(e) {
                         u(e), i(!0)
                     },
-                    A = wn.di.filter((function(e) {
+                    A = pn.di.filter((function(e) {
                         return "subscription" !== e.value
                     }));
                 return s.createElement("div", null, s.createElement(d.$4, null, U), s.createElement("h1", {
@@ -2585,12 +2597,12 @@
                     label: "Listing Type",
                     value: x,
                     options: A,
-                    onChange: E
+                    onChange: y
                 }), s.createElement(d.Lt, {
                     className: "tw-h-9",
                     label: "Sort By",
                     value: k,
-                    options: wn.vA,
+                    options: pn.vA,
                     onChange: C
                 })), s.createElement("div", {
                     className: "tw-flex tw-justify-end tw-w-1/3"
@@ -2611,7 +2623,7 @@
                         }))
                     }
                 }, s.createElement(d.$1, {
-                    icon: j ? rn.QR : ln.Zr
+                    icon: j ? sn.QR : rn.Zr
                 })))), 0 === P.length && s.createElement("div", {
                     className: "tw-w-full tw-pt-10"
                 }, s.createElement("h2", {
@@ -2619,13 +2631,13 @@
                 }, "No store listings found")), s.createElement("div", {
                     className: "tw-mt-5 ".concat(j ? "" : "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-2 tw-flex-wrap")
                 }, null == P ? void 0 : P.map((function(e) {
-                    return s.createElement(yn, {
+                    return s.createElement(Nn, {
                         key: e.id,
                         listingData: e,
                         isDetailedView: j,
                         viewDetailsCallback: R
                     })
-                })), s.createElement(yn, null))), s.createElement(xn, {
+                })), s.createElement(Nn, null))), s.createElement(yn, {
                     worldData: n,
                     listingData: m,
                     isOpen: r,
@@ -2634,9 +2646,9 @@
                     }
                 }))
             };
-            Cn.propTypes = {};
-            const In = Cn;
-            const Zn = function() {
+            In.propTypes = {};
+            const Zn = In;
+            const Sn = function() {
                 var e = (0, c.UO)().worldId,
                     t = (0, m.XC)().data,
                     n = (0, o.pc)(),
@@ -2657,13 +2669,13 @@
                     }), []), s.useEffect((function() {
                         var e;
                         document.title = "".concat(null !== (e = null == w ? void 0 : w.name) && void 0 !== e ? e : "World", " - VRChat")
-                    }), [w]), h || null == w || !w.id || null == t || !t.id) return s.createElement(zn, {
+                    }), [w]), h || null == w || !w.id || null == t || !t.id) return s.createElement($n, {
                     className: "w-100"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col"
-                }, s.createElement(Dn, {
+                }, s.createElement(_n, {
                     width: "100%"
-                }), s.createElement(jn, {
+                }), s.createElement(zn, {
                     className: "mt-2 flex-column flex-sm-row "
                 }, s.createElement("div", {
                     style: {
@@ -2680,7 +2692,7 @@
                 })), s.createElement(d.UU, {
                     height: "80px",
                     width: "300px"
-                })), s.createElement(jn, {
+                })), s.createElement(zn, {
                     className: "mt-2 flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col w-100 me-3 mb-3"
@@ -2732,7 +2744,7 @@
                 }))))));
                 var v = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.id) === (null == w ? void 0 : w.authorId),
                     b = w.storeId && null !== w.storeId;
-                return s.createElement(zn, null, "hidden" === (null == w ? void 0 : w.releaseStatus) && s.createElement(jn, {
+                return s.createElement($n, null, "hidden" === (null == w ? void 0 : w.releaseStatus) && s.createElement(zn, {
                     className: "justify-content-between flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col ms-0 ms-sm-2 flex-grow-1"
@@ -2740,7 +2752,7 @@
                     type: "error",
                     title: "World Deleted",
                     message: "This World has been deleted"
-                }))), w.previewYoutubeId ? s.createElement($n, {
+                }))), w.previewYoutubeId ? s.createElement(Dn, {
                     className: "mt-2"
                 }, s.createElement("iframe", {
                     src: "https://www.youtube.com/embed/".concat(w.previewYoutubeId),
@@ -2749,7 +2761,7 @@
                     frameBorder: "0",
                     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
                     allowFullScreen: !0
-                })) : s.createElement(_n, {
+                })) : s.createElement(Tn, {
                     role: "img",
                     title: "".concat(null == w ? void 0 : w.name, " Preview"),
                     image: w.imageUrl
@@ -2785,47 +2797,47 @@
                     })
                 }), s.createElement(c.AW, {
                     path: "/store",
-                    element: s.createElement(In, {
+                    element: s.createElement(Zn, {
                         worldData: w
                     })
                 })))
             };
-            var Sn = (0, a.Z)("div", {
+            var jn = (0, a.Z)("div", {
                     target: "e1mfpqtc6"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                jn = (0, a.Z)("div", {
+                zn = (0, a.Z)("div", {
                     target: "e1mfpqtc5"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                zn = (0, a.Z)(Sn, {
+                $n = (0, a.Z)(jn, {
                     target: "e1mfpqtc4"
                 })({
                     name: "qgr7u4",
                     styles: "padding-bottom:100px;max-width:1200px;align-self:center;width:100%"
                 }),
-                $n = (0, a.Z)("div", {
+                Dn = (0, a.Z)("div", {
                     target: "e1mfpqtc3"
                 })({
                     name: "p7qmao",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden;padding-top:30px;border-radius:4px;iframe,object,embed{position:absolute;top:0;left:0;width:100%;height:100%;}"
                 }),
-                Dn = (0, a.Z)(d.UU, {
+                _n = (0, a.Z)(d.UU, {
                     target: "e1mfpqtc2"
                 })({
                     name: "1dgkeo9",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden"
                 }),
-                _n = (0, a.Z)("div", {
+                Tn = (0, a.Z)("div", {
                     target: "e1mfpqtc1"
                 })("padding-bottom:50%;width:100%;height:0;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:4px;background-image:url(", (function(e) {
                     return e.image
                 }), ");"),
-                Tn = (0, a.Z)("div", {
+                Ln = (0, a.Z)("div", {
                     target: "e1mfpqtc0"
                 })({
                     name: "12ndgvw",
@@ -2855,8 +2867,8 @@
                 v = n(23778),
                 b = n(88673),
                 x = n(26128),
-                E = n(47420),
-                y = n(29167),
+                y = n(47420),
+                E = n(29167),
                 N = n(92221),
                 k = n(88302),
                 C = n(46450),
@@ -2909,11 +2921,11 @@
                     description: "New User"
                 }, {
                     tag: "system_trust_known",
-                    icon: y.C7,
+                    icon: E.C7,
                     description: "User"
                 }, {
                     tag: "system_trust_trusted",
-                    icon: E.yS,
+                    icon: y.yS,
                     description: "Known User"
                 }, {
                     tag: "system_trust_veteran",
@@ -3230,4 +3242,4 @@
         }
     }
 ]);
-//# sourceMappingURL=403226d51bdd5a93cd063299fbc090435b7eca2d87403c29a1169cd347f130cc.js.map
+//# sourceMappingURL=95d3ef3cfa3470689edb84e90bf70fd8e73fb992eeb98f3f1be91119477bb4d3.js.map

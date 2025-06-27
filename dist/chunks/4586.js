@@ -1987,8 +1987,11 @@
                 }))), l.createElement(We, {
                     className: "justify-content-between align-items-center"
                 }, l.createElement(i.rU, {
+                    className: "tw-wrap-break-word tw-overflow-hidden tw-overflow-ellipsis",
                     to: "/home/world/".concat(ce.id)
-                }, l.createElement(Qe, null, null == kn ? void 0 : kn.name)))), l.createElement(c.Ao, null, l.createElement(Re, null, l.createElement(Re, null, l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(Qe, {
+                    className: "tw-overflow-hidden tw-overflow-ellipsis"
+                }, null == kn ? void 0 : kn.name)))), l.createElement(c.Ao, null, l.createElement(Re, null, l.createElement(Re, null, l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: Q.IL,
                     color: "#54b5c5",
@@ -3392,4 +3395,4 @@
         }
     }
 ]);
-//# sourceMappingURL=524cb68cd7a2e1285182ec4e5a364895f86ff844354b91b1d5fb89cab86dec41.js.map
+//# sourceMappingURL=fd7221d3715965183ac0bc052b71d7d1b1aed761b2b3156b16018b19e706b4b1.js.map
