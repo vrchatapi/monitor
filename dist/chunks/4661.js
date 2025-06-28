@@ -11,12 +11,12 @@
                 o = a.n(i),
                 c = a(67294),
                 l = a(32981),
-                s = a(89250),
-                w = a(79655),
+                w = a(89250),
+                s = a(79655),
                 u = a(60006),
-                g = a(5513);
-            const p = function() {
-                var e = (0, w.lr)(),
+                p = a(5513);
+            const g = function() {
+                var e = (0, s.lr)(),
                     t = (0, n.Z)(e, 1)[0];
                 return null !== t.get("campaignName") ? {
                     name: t.get("campaignName"),
@@ -35,11 +35,11 @@
                     i = (0, n.Z)(r, 2),
                     o = i[0],
                     l = i[1],
-                    s = (0, d._)("campaignsSeen", []),
-                    w = (0, n.Z)(s, 2),
-                    u = w[0],
-                    g = w[1],
-                    f = p();
+                    w = (0, d._)("campaignsSeen", []),
+                    s = (0, n.Z)(w, 2),
+                    u = s[0],
+                    p = s[1],
+                    f = g();
                 (0, c.useEffect)((function() {
                     if (null !== f) {
                         null !== a && (0, h.Kz)(a, {
@@ -48,7 +48,7 @@
                         var e = [].concat((0, m.Z)(o), [f]);
                         l((0, m.Z)(new Map(e.map((function(e) {
                             return [e.id, e]
-                        }))).values())), g(u.filter((function(e) {
+                        }))).values())), p(u.filter((function(e) {
                             return e.name !== f.name
                         })))
                     }
@@ -64,9 +64,9 @@
                 f({
                     trackingEventName: "Login_Campaign_View"
                 });
-                var t = (0, s.s0)(),
+                var t = (0, w.s0)(),
                     a = (0, l.I0)(),
-                    i = (0, s.TH)().state,
+                    i = (0, w.TH)().state,
                     m = (0, b.YA)(),
                     d = (0, n.Z)(m, 2),
                     S = d[0],
@@ -75,25 +75,25 @@
                     k = E.error,
                     C = E.isError,
                     L = (0, b._y)(),
-                    A = (0, n.Z)(L, 1)[0],
-                    I = (0, b.XC)().data,
-                    T = (0, c.useState)(""),
-                    _ = (0, n.Z)(T, 2),
-                    Z = _[0],
-                    R = _[1],
+                    I = (0, n.Z)(L, 1)[0],
+                    T = (0, b.XC)().data,
+                    _ = (0, c.useState)(""),
+                    A = (0, n.Z)(_, 2),
+                    Z = A[0],
+                    R = A[1],
                     V = (0, c.useState)(""),
                     O = (0, n.Z)(V, 2),
                     M = O[0],
                     D = O[1],
-                    F = p(),
+                    F = g(),
                     U = function() {
                         null != i && i.redirectTo ? t(i.redirectTo) : t("/home")
                     };
                 (0, c.useEffect)((function() {
                     var e;
-                    if (!(null == I || null === (e = I.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == i ? void 0 : i.logout)) return a(v.S.util.resetApiState()), a((0, g.kS)()), void A();
-                    null != I && I.id && U()
-                }), [I]);
+                    if (!(null == T || null === (e = T.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == i ? void 0 : i.logout)) return a(v.S.util.resetApiState()), a((0, p.kS)()), void I();
+                    null != T && T.id && U()
+                }), [T]);
                 var z, K, q = function(e) {
                         var t, a;
                         e.preventDefault(), R(null !== (t = null === (a = e.target) || void 0 === a ? void 0 : a.value) && void 0 !== t ? t : "")
@@ -194,10 +194,10 @@
                     onKeyUp: H
                 }), c.createElement("div", {
                     className: "tw-w-full tw-text-right tw-mt-2"
-                }, "Forgot your", " ", c.createElement(w.rU, {
+                }, "Forgot your", " ", c.createElement(s.rU, {
                     to: "/home/password",
                     className: "tw-text-link-highlight"
-                }, "password"), " ", "or", " ", c.createElement(w.rU, {
+                }, "password"), " ", "or", " ", c.createElement(s.rU, {
                     to: "/home/forgot-email",
                     className: "tw-text-link-highlight"
                 }, "email address"), "?"), c.createElement(x.zx, {
@@ -231,13 +231,15 @@
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => l
+                Z: () => s
             });
             var r = a(54546),
                 n = a(42404),
                 i = a.n(n),
-                o = a(67294);
-            const c = [{
+                o = a(67294),
+                c = a(86646),
+                l = a(62427);
+            const w = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -302,39 +304,39 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const l = function(e) {
+            const s = function(e) {
                 var t = e.children,
                     a = e.showCredits,
                     n = (0, o.useState)(null),
-                    l = (0, r.Z)(n, 2),
-                    s = l[0],
-                    w = l[1],
-                    u = (0, o.useState)(null),
-                    g = (0, r.Z)(u, 2),
-                    p = g[0],
-                    m = g[1],
-                    d = (0, o.useMemo)((function() {
-                        return i()(c, 6)
+                    s = (0, r.Z)(n, 2),
+                    u = s[0],
+                    p = s[1],
+                    g = (0, o.useState)(null),
+                    m = (0, r.Z)(g, 2),
+                    d = m[0],
+                    h = m[1],
+                    f = (0, o.useMemo)((function() {
+                        return i()(w, 6)
                     }), []);
                 (0, o.useEffect)((function() {
-                    if (null === s) w(d[0]);
+                    if (null === u) p(f[0]);
                     else {
-                        var e = h(s);
+                        var e = b(u);
                         setTimeout((function() {
-                            return w(e)
-                        }), 1e4), m(e)
+                            return p(e)
+                        }), 1e4), h(e)
                     }
-                }), [s]);
-                var h = function(e) {
-                    var t = d.findIndex((function(t) {
+                }), [u]);
+                var b = function(e) {
+                    var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === d.length - 1 ? d[0] : d[t + 1]
+                    return t === f.length - 1 ? f[0] : f[t + 1]
                 };
                 return o.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
+                        backgroundImage: null === u ? "none" : "url(".concat(u.image, ")")
                     }
                 }, o.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -348,17 +350,19 @@
                     alt: "VRChat"
                 }), o.createElement("img", {
                     className: "tw-hidden",
-                    src: null == p ? void 0 : p.image,
+                    src: null == d ? void 0 : d.image,
                     alt: "VRChat"
                 }))), o.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == s ? void 0 : s.worldName) && a && o.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "World:"), " ", s.worldName), o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "Author:"), " ", s.authorName)))
+                }, t), (null == u ? void 0 : u.worldName) && a && o.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, o.createElement(c.Z, {
+                    icon: l.default,
+                    title: "World",
+                    size: "2x"
+                }), o.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, u.worldName, o.createElement("br", null), o.createElement("small", null, "by ", u.authorName))))
             }
         },
         92610: (e, t, a) => {
@@ -619,4 +623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=41f3458bbcf952079bd9d3001b5616fc7ee130b9b9b266fbe2f56e974ea2179f.js.map
+//# sourceMappingURL=c974b6478122e7171cb3a015851293ba1f897d109208659be16d3d8738a76ec9.js.map

@@ -62,7 +62,7 @@
                 D = n(68055),
                 I = n(28963),
                 S = n(91435),
-                j = n(74205),
+                j = n(14825),
                 z = n(60006),
                 X = [{
                     label: "Instant",
@@ -83,7 +83,7 @@
                     value: "permanent",
                     text: "Lifetime access to exclusive zones or features.",
                     redirect: "https://creators.vrchat.com/economy/listings#permanent",
-                    icon: j.SQ,
+                    icon: j.default,
                     allowedTypes: ["Udon", "Avatar"]
                 }];
             const Z = function(e) {
@@ -210,10 +210,10 @@
                     F = S.isPreviewOpen,
                     U = y.useState(null),
                     Y = (0, i.Z)(U, 2),
-                    Q = Y[0],
-                    R = Y[1],
-                    V = y.useState(J),
-                    W = (0, i.Z)(V, 2),
+                    R = Y[0],
+                    V = Y[1],
+                    Q = y.useState(J),
+                    W = (0, i.Z)(Q, 2),
                     K = W[0],
                     ee = W[1],
                     te = (0, y.useMemo)((function() {
@@ -330,7 +330,7 @@
                                             sellerId: I.id
                                         })).unwrap();
                                     case 3:
-                                        return t = e.sent, R(t.listing), e.abrupt("return", be());
+                                        return t = e.sent, V(t.listing), e.abrupt("return", be());
                                     case 8:
                                         e.prev = 8, e.t0 = e.catch(0), T((0, m.d)({
                                             title: "Failed to create listing!",
@@ -406,7 +406,7 @@
                             return y.createElement(P.Z, null);
                         case q:
                             return y.createElement(N, {
-                                listing: Q
+                                listing: R
                             });
                         default:
                             return null
@@ -525,4 +525,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1648226b23f3989bba73fa0b44f92f0f766e9912d64a4111d62d6c2eddd6ab0e.js.map
+//# sourceMappingURL=7baf59bedb799c9c4707ff27291f89fa48b2ab971017111c326852418b39c7d9.js.map

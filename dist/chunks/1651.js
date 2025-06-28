@@ -7,7 +7,7 @@
             });
             var n = r(37463),
                 o = r(95896),
-                a = r(74205),
+                a = r(99162),
                 l = r(45697),
                 s = r.n(l),
                 c = r(67294),
@@ -26,7 +26,7 @@
                     return c.createElement("div", {
                         className: "".concat(l, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-opacity-90 tw-rounded-full tw-text-white tw-text-xs")
                     }, c.createElement(n.$1, {
-                        icon: "world" === r ? a.rr : a.Yj,
+                        icon: "world" === r ? a.vrcWorld : a.vrcGroup,
                         className: "tw-mr-1"
                     }), s, " Store")
                 };
@@ -114,7 +114,7 @@
             const I = x;
             var O = r(68055),
                 C = r(95896),
-                j = r(74205),
+                j = r(99162),
                 P = r(46660),
                 T = r.n(P),
                 D = r(3249),
@@ -140,10 +140,10 @@
                         P = I[0],
                         D = I[1],
                         R = (0, f.useState)(""),
-                        B = (0, a.Z)(R, 2),
-                        X = B[0],
-                        W = B[1],
-                        Z = f.useMemo((function() {
+                        W = (0, a.Z)(R, 2),
+                        B = W[0],
+                        G = W[1],
+                        X = f.useMemo((function() {
                             return g ? {
                                 groups: (null == i ? void 0 : i.filter((function(e) {
                                     return !p.some((function(t) {
@@ -160,32 +160,32 @@
                                 worlds: []
                             }
                         }), [i, w, g]),
-                        G = (t = {}, (0, n.Z)(t, C.Bk.WORLDS, {
-                            list: Z.worlds,
+                        Z = (t = {}, (0, n.Z)(t, C.Bk.WORLDS, {
+                            list: X.worlds,
                             key: "id",
                             label: "World",
                             thumbSrc: L(),
-                            icon: j.rr
+                            icon: j.vrcWorld
                         }), (0, n.Z)(t, C.Bk.GROUPS, {
-                            list: Z.groups,
+                            list: X.groups,
                             key: "groupId",
                             label: "Group",
                             thumbSrc: T(),
-                            icon: j.Yj
+                            icon: j.vrcGroup
                         }), t),
                         q = function(e) {
-                            var t = G[P].list,
-                                r = G[P].key,
+                            var t = Z[P].list,
+                                r = Z[P].key,
                                 n = t.find((function(t) {
                                     return t[r] === e
                                 }));
-                            W(n[r]), b({
+                            G(n[r]), b({
                                 type: P,
                                 baseObj: n
                             })
                         },
                         J = function(e) {
-                            D(e), b(null), W("")
+                            D(e), b(null), G("")
                         };
                     return f.createElement(d.JX, {
                         className: "tw-gap-6"
@@ -203,7 +203,7 @@
                     }, P === C.Bk.WORLDS ? f.createElement(d.$1, {
                         icon: O.LE
                     }) : null), f.createElement(d.JX, null, f.createElement(d.$1, {
-                        icon: j.rr,
+                        icon: j.vrcWorld,
                         width: 36,
                         className: "tw-mb-2"
                     }), f.createElement("h4", null, "World Store"))), f.createElement("div", {
@@ -227,7 +227,7 @@
                     }, P === C.Bk.GROUPS ? f.createElement(d.$1, {
                         icon: O.LE
                     }) : null), f.createElement(d.JX, null, f.createElement(d.$1, {
-                        icon: j.Yj,
+                        icon: j.vrcGroup,
                         width: 36,
                         className: "tw-mb-2"
                     }), f.createElement("h4", null, "Group Store"))), f.createElement("div", {
@@ -242,10 +242,10 @@
                     })))), f.createElement(d.JX, null, f.createElement("label", {
                         htmlFor: P === C.Bk.WORLDS ? "world-select" : "group-select",
                         className: "tw-mb-2"
-                    }, "Select ", P === C.Bk.WORLDS ? "World" : "Group"), (o = (r = G[P]).list, l = r.label, 0 === (s = o.map((function(e) {
+                    }, "Select ", P === C.Bk.WORLDS ? "World" : "Group"), (o = (r = Z[P]).list, l = r.label, 0 === (s = o.map((function(e) {
                         return {
                             label: e.name,
-                            value: e[G[P].key]
+                            value: e[Z[P].key]
                         }
                     }))).length ? f.createElement(d.Lt, {
                         label: "No ".concat(l, "s found"),
@@ -253,7 +253,7 @@
                         options: [],
                         onChange: function() {}
                     }) : f.createElement(d.Lt, {
-                        value: X,
+                        value: B,
                         name: "".concat(l, "-select"),
                         options: s,
                         onChange: q
@@ -280,9 +280,9 @@
                 groups: N().array,
                 worlds: N().array
             };
-            const B = R;
-            var X = r(68335);
-            const W = function(e) {
+            const W = R;
+            var B = r(68335);
+            const G = function(e) {
                 var t = e.createStore,
                     r = void 0 === t ? function() {} : t;
                 return f.createElement(d.JX, {
@@ -290,7 +290,7 @@
                 }, f.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center"
                 }, f.createElement(d.$1, {
-                    icon: X.vJ,
+                    icon: B.vJ,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -305,7 +305,7 @@
                 }, "Setup a Store")))
             };
 
-            function Z(e, t) {
+            function X(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -316,12 +316,12 @@
                 return r
             }
 
-            function G(e) {
+            function Z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Z(Object(r), !0).forEach((function(t) {
+                    t % 2 ? X(Object(r), !0).forEach((function(t) {
                         (0, n.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Z(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : X(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -353,14 +353,14 @@
                     }),
                     L = D.data,
                     R = D.isFetching,
-                    X = (D.isSuccess, D.isError, D.error, (0, m.dj)({
+                    B = (D.isSuccess, D.isError, D.error, (0, m.dj)({
                         userId: null == n ? void 0 : n.id
                     }, {
                         skip: !n
                     })),
-                    Z = X.data,
-                    q = void 0 === Z ? [] : Z,
-                    J = (X.isLoading, X.isError, X.error, (0, g.Ld)({
+                    X = B.data,
+                    q = void 0 === X ? [] : X,
+                    J = (B.isLoading, B.isError, B.error, (0, g.Ld)({
                         userId: null == n ? void 0 : n.id,
                         releaseStatus: "all",
                         n: 100
@@ -379,16 +379,16 @@
                         return e.ownerId === n.id
                     })))
                 }), [q]);
-                var Y = null == L ? void 0 : L.some((function(e) {
+                var H = null == L ? void 0 : L.some((function(e) {
                         return "unpublished" === e.storeStatus
                     })),
-                    H = function() {
+                    A = function() {
                         var t = (0, o.Z)(i().mark((function t() {
                             var r, n, o, a, c;
                             return i().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        return r = x.type, n = x.baseObj, o = G(G(G({
+                                        return r = x.type, n = x.baseObj, o = Z(Z(Z({
                                             storeType: r
                                         }, "world" === r && {
                                             worldId: n.id
@@ -396,7 +396,7 @@
                                             groupId: n.groupId
                                         }), {}, {
                                             displayName: n.name
-                                        }), t.prev = 2, t.next = 5, _(G({}, o)).unwrap();
+                                        }), t.prev = 2, t.next = 5, _(Z({}, o)).unwrap();
                                     case 5:
                                         e((0, u.d)({
                                             title: "Store Created!",
@@ -404,7 +404,7 @@
                                             message: "Your store has been created successfully!",
                                             color: "success",
                                             timeout: 3e3
-                                        })), Q(), t.next = 12;
+                                        })), V(), t.next = 12;
                                         break;
                                     case 9:
                                         t.prev = 9, t.t0 = t.catch(2), e((0, u.d)({
@@ -426,51 +426,51 @@
                             return t.apply(this, arguments)
                         }
                     }(),
-                    A = function(e) {
+                    Q = function(e) {
                         t("/home/marketplace/storefront/stores/".concat(e))
                     },
-                    Q = function() {
+                    V = function() {
                         S(!1), O({
                             type: null,
                             baseObj: null
                         })
                     },
-                    V = c || R;
+                    Y = c || R;
                 return f.createElement(f.Fragment, null, f.createElement(d.$4, null, "Store Manager"), f.createElement(d.JX, {
                     className: "tw-@container/stores tw-w-full tw-gap-5"
                 }, f.createElement(d.X2, {
                     className: "tw-w-full tw-justify-between tw-items-center"
                 }, f.createElement("h4", {
                     className: "tw-mr-2"
-                }, "Store Manager"), !V && 0 !== (null == L ? void 0 : L.length) && f.createElement(d.zx, {
+                }, "Store Manager"), !Y && 0 !== (null == L ? void 0 : L.length) && f.createElement(d.zx, {
                     onClick: function() {
                         return S(!0)
                     },
                     className: "tw-px-3 tw-py-2"
-                }, "Setup New Store")), Y && !R && f.createElement(d.qX, {
+                }, "Setup New Store")), H && !R && f.createElement(d.qX, {
                     type: "warn",
                     className: "tw-mt-2 tw-flex-row"
                 }, "Some of your stores are disabled. Enable them so users can browse and purchase your listings."), f.createElement(d.X2, {
                     className: "tw-w-full"
-                }, !V && 0 === (null == L ? void 0 : L.length) && f.createElement(W, {
+                }, !Y && 0 === (null == L ? void 0 : L.length) && f.createElement(G, {
                     createStore: function() {
                         return S(!0)
                     }
-                }), !V && 0 !== (null == L ? void 0 : L.length) && f.createElement("div", {
+                }), !Y && 0 !== (null == L ? void 0 : L.length) && f.createElement("div", {
                     className: "tw-grid tw-gap-4 tw-w-full tw-grid-cols-1 @xs/stores:tw-grid-cols-2 @sm/stores:tw-grid-cols-3 @md/stores:tw-grid-cols-4"
                 }, L.map((function(e) {
                     return f.createElement(I, {
                         key: e.id,
                         storeData: e,
-                        onSelect: A
+                        onSelect: Q
                     })
                 }))))), f.createElement(d.u_, {
                     isVisible: E,
-                    onClose: Q,
+                    onClose: V,
                     title: "Create Storefront",
                     slim: !0,
                     disableBackdropClick: !0
-                }, f.createElement(B, {
+                }, f.createElement(W, {
                     worlds: $,
                     groups: P,
                     stores: L,
@@ -478,8 +478,8 @@
                     onDataChange: function(e) {
                         return O(e)
                     },
-                    onCancel: Q,
-                    onSubmit: H,
+                    onCancel: V,
+                    onSubmit: A,
                     canSubmit: null !== x
                 })))
             }
@@ -656,4 +656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b3e86e00a821c319e5c11da204cb8e398fed154ecf6a26ae348981a2c7892acb.js.map
+//# sourceMappingURL=41383424820c9141857efb155ca290e442d999b7f9084ae56e2092372e9c361f.js.map

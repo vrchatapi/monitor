@@ -1958,7 +1958,7 @@
                             icon: Tt.U7,
                             title: "Instance Moderator Role"
                         }), " ") : e.requiresPurchase ? a = I.createElement(I.Fragment, null, I.createElement(te.$1, {
-                            icon: Rt.Z,
+                            icon: Rt.default,
                             title: "Paid Role"
                         }), " ") : e.defaultRole && (l.push(I.createElement(Lt, {
                             key: "default-header"
@@ -6647,4 +6647,4 @@
         }
     }
 ]);
-//# sourceMappingURL=806687fbee1f9c2b939548a07b397fc37e955eabac4bda502f8b1d2ab111853c.js.map
+//# sourceMappingURL=8a3fb745b4d4903bd0c186b0296b5c9f904aa0433eb5b2b90234d62f6f7b82d5.js.map

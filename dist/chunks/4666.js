@@ -42,6 +42,17 @@
                 icon: [448, 512, r, n, c]
             }, t.Rp = t.DF
         },
+        66062: (e, t) => {
+            var a = "globe",
+                r = [127760],
+                n = "f0ac",
+                c = "M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z";
+            t.DF = {
+                prefix: "fas",
+                iconName: a,
+                icon: [512, 512, r, n, c]
+            }, t.g4 = t.DF
+        },
         81264: (e, t) => {
             var a = "hashtag",
                 r = [62098],
@@ -184,19 +195,19 @@
                     i = e.hideAuthor,
                     v = e.showFavoriteButton,
                     y = e.isMod,
-                    b = e.license,
-                    C = e.removeAvatar,
+                    C = e.license,
+                    b = e.removeAvatar,
                     L = (t.tags ? Array.from(t.tags) : []).concat([t.releaseStatus, "search-container"]),
-                    N = (0, u.useState)(!1),
-                    D = (0, n.Z)(N, 2),
-                    R = D[0],
-                    z = D[1],
-                    F = (0, u.useState)((function() {
+                    z = (0, u.useState)(!1),
+                    N = (0, n.Z)(z, 2),
+                    D = N[0],
+                    R = N[1],
+                    M = (0, u.useState)((function() {
                         return function() {}
                     })),
-                    M = (0, n.Z)(F, 2),
-                    k = M[0],
-                    A = M[1],
+                    F = (0, n.Z)(M, 2),
+                    k = F[0],
+                    A = F[1],
                     O = (0, u.useState)(""),
                     U = (0, n.Z)(O, 2),
                     j = U[0],
@@ -220,9 +231,9 @@
                     bodyText: $,
                     confirmCallback: k,
                     cancelCallback: function() {
-                        return z(!1)
+                        return R(!1)
                     },
-                    isOpen: R
+                    isOpen: D
                 }), u.createElement("div", {
                     className: L.join(" ")
                 }, a && u.createElement(f.Z, null, u.createElement(h.Z, {
@@ -308,7 +319,7 @@
                 }, u.createElement(Z.Z, {
                     thing: t,
                     type: "avatar"
-                })), b && !b.productId && u.createElement(h.Z, {
+                })), C && !C.productId && u.createElement(h.Z, {
                     xs: "12",
                     md: "3",
                     style: {
@@ -323,20 +334,20 @@
                                 return m().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (z(!1), !b) {
+                                            if (R(!1), !C) {
                                                 e.next = 6;
                                                 break
                                             }
-                                            return e.next = 4, g().delete(window.apiUrl("/api/1/licenses/".concat(b.id)));
+                                            return e.next = 4, g().delete(window.apiUrl("/api/1/licenses/".concat(C.id)));
                                         case 4:
-                                            200 === e.sent.status && C(t.id);
+                                            200 === e.sent.status && b(t.id);
                                         case 6:
                                         case "end":
                                             return e.stop()
                                     }
                                 }), e)
                             })))
-                        })), z(!0)
+                        })), R(!0)
                     }
                 }, u.createElement(w.$1, {
                     icon: c.$
@@ -345,7 +356,7 @@
         },
         37099: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => z
+                default: () => R
             });
             var r = a(54546),
                 n = a(41145),
@@ -367,22 +378,22 @@
                 w = a(25411),
                 Z = a(17383),
                 y = (a(29449), a(88874)),
-                b = a(4965),
-                C = a(47716);
+                C = a(4965),
+                b = a(47716);
             a(37463);
-            var L = (0, b.Z)("div", {
+            var L = (0, C.Z)("div", {
                     target: "e1f1wigo2"
                 })({
                     name: "192s9p1",
                     styles: "display:flex;flex-direction:row;justify-content:center;align-items:center"
                 }),
-                N = (0, b.Z)("div", {
+                z = (0, C.Z)("div", {
                     target: "e1f1wigo1"
                 })({
                     name: "1ff36h2",
                     styles: "flex-grow:1"
                 });
-            const D = function(e) {
+            const N = function(e) {
                 var t, a = e.user,
                     r = (0, Z.pc)(),
                     n = null === (t = a.tags) || void 0 === t ? void 0 : t.includes("admin_hidden");
@@ -390,14 +401,14 @@
                     xs: 12
                 }, o.createElement("div", {
                     className: "search-container"
-                }, o.createElement(L, null, o.createElement(N, null, o.createElement(C.Z, {
+                }, o.createElement(L, null, o.createElement(z, null, o.createElement(b.Z, {
                     userId: a.id,
                     size: "wide",
                     isUserHidden: n
                 })), r && !1)))
             };
-            var R = a(12227);
-            const z = (0, i.$j)((function(e) {
+            var D = a(12227);
+            const R = (0, i.$j)((function(e) {
                 return {
                     userResults: e.search.userResults,
                     scrollingUsers: e.search.scrollingUsers,
@@ -415,19 +426,19 @@
                 var t = (0, m.UO)().query,
                     a = (0, u.lr)(),
                     i = (0, r.Z)(a, 1)[0],
-                    b = (0, Z.pc)(),
-                    C = (0, m.s0)(),
+                    C = (0, Z.pc)(),
+                    b = (0, m.s0)(),
                     L = o.useState("users"),
-                    N = (0, r.Z)(L, 2),
-                    z = N[0],
-                    F = N[1],
-                    M = b && !1;
+                    z = (0, r.Z)(L, 2),
+                    R = z[0],
+                    M = z[1],
+                    F = C && !1;
                 o.useEffect((function() {
                     (0, w.zf)({
                         searchTerm: t,
                         queryParams: Object.fromEntries(i.entries()),
-                        n: R.En,
-                        isInternalVariant: M
+                        n: D.En,
+                        isInternalVariant: F
                     }).map(e.dispatch)
                 }), [t, i]);
                 var k = e.reducer,
@@ -446,7 +457,7 @@
                     var a = A.find((function(a) {
                         return "".concat(a[e]).toLowerCase() === "".concat(t).toLowerCase()
                     }));
-                    a && 0 !== a.length && C("/home/user/".concat(a.id))
+                    a && 0 !== a.length && b("/home/user/".concat(a.id))
                 }));
                 return o.createElement(v.Z, {
                     reducer: k
@@ -467,16 +478,16 @@
                         name: "Avatars",
                         id: "avatars",
                         icon: c.KC,
-                        condition: M
+                        condition: F
                     }],
-                    selected: z,
+                    selected: R,
                     onChange: function(e) {
-                        F(e)
+                        M(e)
                     }
-                }), "users" === z && o.createElement(o.Fragment, null, o.createElement(d.Z, {
+                }), "users" === R && o.createElement(o.Fragment, null, o.createElement(d.Z, {
                     className: "justify-content-center"
                 }, U && 0 === A.length && o.createElement("p", null, "None Found"), A.map((function(e, t) {
-                    return o.createElement(D, {
+                    return o.createElement(N, {
                         key: e.id + t,
                         user: e
                     })
@@ -497,20 +508,20 @@
                         r((0, w.k4)({
                             searchTerm: l,
                             queryParams: c,
-                            isInternalVariant: M,
-                            n: R.En,
+                            isInternalVariant: F,
+                            n: D.En,
                             offset: s
                         }))
                     }
                 }, o.createElement(p.Z, {
                     icon: n.pt
-                }))))), "worlds" === z && o.createElement(o.Fragment, null, o.createElement(d.Z, {
+                }))))), "worlds" === R && o.createElement(o.Fragment, null, o.createElement(d.Z, {
                     className: "justify-content-center"
                 }, P && 0 === j.length && o.createElement("p", null, "None Found"), j.map((function(e, t) {
                     return o.createElement(y.Z, {
                         key: e.id + t,
                         world: e,
-                        showModTags: b
+                        showModTags: C
                     })
                 })), I && o.createElement(g.Z, null)), o.createElement(d.Z, {
                     className: "justify-content-center"
@@ -527,9 +538,9 @@
                             l = n.length;
                         r((0, w.gW)({
                             searchTerm: c,
-                            n: R.En,
+                            n: D.En,
                             offset: l,
-                            isInternalVariant: M
+                            isInternalVariant: F
                         }))
                     }
                 }, o.createElement(p.Z, {
@@ -539,4 +550,4 @@
         }
     }
 ]);
-//# sourceMappingURL=80655ccc12d3698eceda89b6f809f607261c969e6c26a40957d49212d5793da2.js.map
+//# sourceMappingURL=37d63ac8010c64cda7cd0e001ce85d6b00aa48774eee00ef01ef270d07aa3710.js.map

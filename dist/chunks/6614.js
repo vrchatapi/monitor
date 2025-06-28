@@ -195,13 +195,15 @@
         13887: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => s
+                Z: () => w
             });
             var a = r(54546),
                 i = r(42404),
                 n = r.n(i),
-                c = r(67294);
-            const o = [{
+                c = r(67294),
+                o = r(86646),
+                s = r(62427);
+            const u = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: r(92610)
@@ -266,39 +268,39 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const s = function(e) {
+            const w = function(e) {
                 var t = e.children,
                     r = e.showCredits,
                     i = (0, c.useState)(null),
-                    s = (0, a.Z)(i, 2),
-                    u = s[0],
-                    w = s[1],
-                    p = (0, c.useState)(null),
-                    d = (0, a.Z)(p, 2),
-                    l = d[0],
-                    g = d[1],
-                    h = (0, c.useMemo)((function() {
-                        return n()(o, 6)
+                    w = (0, a.Z)(i, 2),
+                    p = w[0],
+                    d = w[1],
+                    l = (0, c.useState)(null),
+                    g = (0, a.Z)(l, 2),
+                    h = g[0],
+                    m = g[1],
+                    f = (0, c.useMemo)((function() {
+                        return n()(u, 6)
                     }), []);
                 (0, c.useEffect)((function() {
-                    if (null === u) w(h[0]);
+                    if (null === p) d(f[0]);
                     else {
-                        var e = m(u);
+                        var e = b(p);
                         setTimeout((function() {
-                            return w(e)
-                        }), 1e4), g(e)
+                            return d(e)
+                        }), 1e4), m(e)
                     }
-                }), [u]);
-                var m = function(e) {
-                    var t = h.findIndex((function(t) {
+                }), [p]);
+                var b = function(e) {
+                    var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === h.length - 1 ? h[0] : h[t + 1]
+                    return t === f.length - 1 ? f[0] : f[t + 1]
                 };
                 return c.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === u ? "none" : "url(".concat(u.image, ")")
+                        backgroundImage: null === p ? "none" : "url(".concat(p.image, ")")
                     }
                 }, c.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -312,17 +314,19 @@
                     alt: "VRChat"
                 }), c.createElement("img", {
                     className: "tw-hidden",
-                    src: null == l ? void 0 : l.image,
+                    src: null == h ? void 0 : h.image,
                     alt: "VRChat"
                 }))), c.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == u ? void 0 : u.worldName) && r && c.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, c.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, c.createElement("strong", null, "World:"), " ", u.worldName), c.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, c.createElement("strong", null, "Author:"), " ", u.authorName)))
+                }, t), (null == p ? void 0 : p.worldName) && r && c.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, c.createElement(o.Z, {
+                    icon: s.default,
+                    title: "World",
+                    size: "2x"
+                }), c.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, p.worldName, c.createElement("br", null), c.createElement("small", null, "by ", p.authorName))))
             }
         },
         79442: (e, t, r) => {
@@ -634,4 +638,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5d7cf6dc6dc39ed820402cb1f9534d3b89c7d4311200a51a1538aeb479bbd225.js.map
+//# sourceMappingURL=ff7f5e1705b7da70e2eb4c6f2e4086feb5e432b2185e03c4b401f4166d5d2349.js.map

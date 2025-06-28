@@ -3,16 +3,16 @@
         39395: (e, t, a) => {
             "use strict";
             a.r(t), a.d(t, {
-                default: () => w
+                default: () => p
             });
             var r = a(67294),
                 i = a(89250),
                 c = a(37463),
                 n = a(41400),
-                p = a(13887);
-            const w = function() {
+                w = a(13887);
+            const p = function() {
                 var e = (0, i.s0)();
-                return r.createElement(p.Z, null, r.createElement(c.$4, null, "Bad Email Verification"), r.createElement(n.W2, null, r.createElement(n.sg, {
+                return r.createElement(w.Z, null, r.createElement(c.$4, null, "Bad Email Verification"), r.createElement(n.W2, null, r.createElement(n.sg, {
                     md: {
                         size: 6,
                         offset: 3
@@ -43,13 +43,15 @@
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => w
+                Z: () => o
             });
             var r = a(54546),
                 i = a(42404),
                 c = a.n(i),
-                n = a(67294);
-            const p = [{
+                n = a(67294),
+                w = a(86646),
+                p = a(62427);
+            const g = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -114,39 +116,39 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const w = function(e) {
+            const o = function(e) {
                 var t = e.children,
                     a = e.showCredits,
                     i = (0, n.useState)(null),
-                    w = (0, r.Z)(i, 2),
-                    g = w[0],
-                    o = w[1],
-                    h = (0, n.useState)(null),
-                    l = (0, r.Z)(h, 2),
-                    s = l[0],
-                    d = l[1],
-                    m = (0, n.useMemo)((function() {
-                        return c()(p, 6)
+                    o = (0, r.Z)(i, 2),
+                    h = o[0],
+                    l = o[1],
+                    d = (0, n.useState)(null),
+                    s = (0, r.Z)(d, 2),
+                    m = s[0],
+                    u = s[1],
+                    f = (0, n.useMemo)((function() {
+                        return c()(g, 6)
                     }), []);
                 (0, n.useEffect)((function() {
-                    if (null === g) o(m[0]);
+                    if (null === h) l(f[0]);
                     else {
-                        var e = u(g);
+                        var e = b(h);
                         setTimeout((function() {
-                            return o(e)
-                        }), 1e4), d(e)
+                            return l(e)
+                        }), 1e4), u(e)
                     }
-                }), [g]);
-                var u = function(e) {
-                    var t = m.findIndex((function(t) {
+                }), [h]);
+                var b = function(e) {
+                    var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === m.length - 1 ? m[0] : m[t + 1]
+                    return t === f.length - 1 ? f[0] : f[t + 1]
                 };
                 return n.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === g ? "none" : "url(".concat(g.image, ")")
+                        backgroundImage: null === h ? "none" : "url(".concat(h.image, ")")
                     }
                 }, n.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -160,17 +162,19 @@
                     alt: "VRChat"
                 }), n.createElement("img", {
                     className: "tw-hidden",
-                    src: null == s ? void 0 : s.image,
+                    src: null == m ? void 0 : m.image,
                     alt: "VRChat"
                 }))), n.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == g ? void 0 : g.worldName) && a && n.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, n.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, n.createElement("strong", null, "World:"), " ", g.worldName), n.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, n.createElement("strong", null, "Author:"), " ", g.authorName)))
+                }, t), (null == h ? void 0 : h.worldName) && a && n.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, n.createElement(w.Z, {
+                    icon: p.default,
+                    title: "World",
+                    size: "2x"
+                }), n.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, h.worldName, n.createElement("br", null), n.createElement("small", null, "by ", h.authorName))))
             }
         },
         92610: (e, t, a) => {
@@ -431,4 +435,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1498b028c6dc8c42e41f17381c7f066f9ca72119bd6a776b3eb1eb976a2eff43.js.map
+//# sourceMappingURL=a0b2ad07886155712330b11d6c7bfc7db1a597b57c0cf066f0e0571aca3594fd.js.map

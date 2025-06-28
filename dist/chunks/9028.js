@@ -7,7 +7,7 @@
             });
             var r = n(37463),
                 i = n(95896),
-                a = n(74205),
+                a = n(99162),
                 s = n(45697),
                 o = n.n(s),
                 l = n(67294),
@@ -26,7 +26,7 @@
                     return l.createElement("div", {
                         className: "".concat(s, " tw-px-2 tw-py-1 tw-bg-[#575757] tw-opacity-90 tw-rounded-full tw-text-white tw-text-xs")
                     }, l.createElement(r.$1, {
-                        icon: "world" === n ? a.rr : a.Yj,
+                        icon: "world" === n ? a.vrcWorld : a.vrcGroup,
                         className: "tw-mr-1"
                     }), o, " Store")
                 };
@@ -1010,4 +1010,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4e48d20ca9ba030ffa2bae70f273c00dd50d4402913ca6e37b69c7af075e6d4a.js.map
+//# sourceMappingURL=1c470a8b6c79ac5c19607176d574e7844787ca0d9220984f99453127619afe82.js.map

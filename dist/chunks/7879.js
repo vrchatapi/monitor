@@ -4527,7 +4527,7 @@
                     }, {
                         name: "My Subscriptions",
                         to: "subscriptions",
-                        icon: Fe.Z,
+                        icon: Fe.default,
                         condition: !0
                     }, {
                         name: "My Listings",
@@ -5071,4 +5071,4 @@
         }
     }
 ]);
-//# sourceMappingURL=292880146c87fb4e78830eb040b434de1f0381c1e1f308754e886ab8612e95f3.js.map
+//# sourceMappingURL=9cd8f7a2e1fb8dbf66e9dfde17f8a642037498c3df42377fd04eb30522ac0677.js.map

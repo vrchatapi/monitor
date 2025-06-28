@@ -14,13 +14,15 @@
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => i
+                Z: () => u
             });
             var r = a(54546),
                 n = a(42404),
                 l = a.n(n),
-                o = a(67294);
-            const c = [{
+                o = a(67294),
+                i = a(86646),
+                c = a(62427);
+            const s = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -85,39 +87,39 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const i = function(e) {
+            const u = function(e) {
                 var t = e.children,
                     a = e.showCredits,
                     n = (0, o.useState)(null),
-                    i = (0, r.Z)(n, 2),
-                    s = i[0],
-                    u = i[1],
-                    w = (0, o.useState)(null),
-                    d = (0, r.Z)(w, 2),
-                    p = d[0],
-                    f = d[1],
-                    m = (0, o.useMemo)((function() {
-                        return l()(c, 6)
+                    u = (0, r.Z)(n, 2),
+                    w = u[0],
+                    d = u[1],
+                    p = (0, o.useState)(null),
+                    f = (0, r.Z)(p, 2),
+                    m = f[0],
+                    g = f[1],
+                    h = (0, o.useMemo)((function() {
+                        return l()(s, 6)
                     }), []);
                 (0, o.useEffect)((function() {
-                    if (null === s) u(m[0]);
+                    if (null === w) d(h[0]);
                     else {
-                        var e = g(s);
+                        var e = x(w);
                         setTimeout((function() {
-                            return u(e)
-                        }), 1e4), f(e)
+                            return d(e)
+                        }), 1e4), g(e)
                     }
-                }), [s]);
-                var g = function(e) {
-                    var t = m.findIndex((function(t) {
+                }), [w]);
+                var x = function(e) {
+                    var t = h.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === m.length - 1 ? m[0] : m[t + 1]
+                    return t === h.length - 1 ? h[0] : h[t + 1]
                 };
                 return o.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
+                        backgroundImage: null === w ? "none" : "url(".concat(w.image, ")")
                     }
                 }, o.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -131,17 +133,19 @@
                     alt: "VRChat"
                 }), o.createElement("img", {
                     className: "tw-hidden",
-                    src: null == p ? void 0 : p.image,
+                    src: null == m ? void 0 : m.image,
                     alt: "VRChat"
                 }))), o.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == s ? void 0 : s.worldName) && a && o.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "World:"), " ", s.worldName), o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "Author:"), " ", s.authorName)))
+                }, t), (null == w ? void 0 : w.worldName) && a && o.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, o.createElement(i.Z, {
+                    icon: c.default,
+                    title: "World",
+                    size: "2x"
+                }), o.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, w.worldName, o.createElement("br", null), o.createElement("small", null, "by ", w.authorName))))
             }
         },
         16826: (e, t, a) => {
@@ -153,8 +157,8 @@
                 n = a(4942),
                 l = a(54546),
                 o = a(84176),
-                c = a(80916),
-                i = a(6811),
+                i = a(80916),
+                c = a(6811),
                 s = a(64687),
                 u = a.n(s),
                 w = a(22202),
@@ -214,17 +218,17 @@
                     O = p.useState(!1),
                     D = (0, l.Z)(O, 2),
                     P = D[0],
-                    q = D[1],
-                    z = p.useState(!1),
-                    $ = (0, l.Z)(z, 2),
+                    z = D[1],
+                    q = p.useState(!1),
+                    $ = (0, l.Z)(q, 2),
                     A = $[0],
                     C = $[1],
                     M = (0, w.v1)(),
                     R = (0, l.Z)(M, 2),
                     I = R[0],
-                    L = R[1],
-                    Z = L.isLoading,
-                    T = L.isError,
+                    Z = R[1],
+                    L = Z.isLoading,
+                    T = Z.isError,
                     U = (0, w.c$)(),
                     W = (0, l.Z)(U, 2),
                     B = W[0],
@@ -250,7 +254,7 @@
                                             email: s.value
                                         }).unwrap();
                                     case 6:
-                                        q(!0), e.next = 14;
+                                        z(!0), e.next = 14;
                                         break;
                                     case 9:
                                         if (e.prev = 9, e.t0 = e.catch(3), 429 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status)) {
@@ -317,7 +321,7 @@
                 }, p.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, p.createElement(x.$1, {
-                    icon: i.f8,
+                    icon: c.f8,
                     className: "tw-w-[72px] tw-h-[72px] tw-mb-6"
                 }), p.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
@@ -341,7 +345,7 @@
                 }, p.createElement("div", {
                     className: "tw-mb-5"
                 }, P && p.createElement(x.$1, {
-                    icon: c.sl,
+                    icon: i.sl,
                     className: "tw-w-[72px] tw-h-[72px]"
                 }), !P && p.createElement(x.$1, {
                     icon: o.DD,
@@ -368,7 +372,7 @@
                             value: a,
                             ok: null != a && "" !== s ? g()(a) : null,
                             error: !1
-                        })), q(!1)
+                        })), z(!1)
                     },
                     onBlur: function(e) {
                         var t = e.target.value,
@@ -471,9 +475,9 @@
                     loading: H,
                     type: "submit"
                 }, "Change Password"), !P && !Q && p.createElement(x.zx, {
-                    disabled: !s.ok || Z || T,
+                    disabled: !s.ok || L || T,
                     className: "tw-mt-5 tw-w-60",
-                    loading: Z,
+                    loading: L,
                     type: "submit"
                 }, "Reset your password"), p.createElement("div", {
                     className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
@@ -785,11 +789,11 @@
             Object.defineProperty(t, "__esModule", {
                 value: !0
             }), t.default = function(e, t) {
-                if ((0, r.default)(e), (t = (0, c.default)(t, s)).require_display_name || t.allow_display_name) {
+                if ((0, r.default)(e), (t = (0, i.default)(t, s)).require_display_name || t.allow_display_name) {
                     var a = e.match(u);
                     if (a) {
-                        var i = a[1];
-                        if (e = e.replace(i, "").replace(/(^<|>$)/g, ""), i.endsWith(" ") && (i = i.slice(0, -1)), ! function(e) {
+                        var c = a[1];
+                        if (e = e.replace(c, "").replace(/(^<|>$)/g, ""), c.endsWith(" ") && (c = c.slice(0, -1)), ! function(e) {
                                 var t = e.replace(/^"(.+)"$/, "$1");
                                 if (!t.trim()) return !1;
                                 if (/[\.";<>]/.test(t)) {
@@ -797,7 +801,7 @@
                                     if (!(t.split('"').length === t.split('\\"').length)) return !1
                                 }
                                 return !0
-                            }(i)) return !1
+                            }(c)) return !1
                     } else if (t.require_display_name) return !1
                 }
                 if (!t.ignore_max_length && e.length > g) return !1;
@@ -839,13 +843,13 @@
                 if (t.blacklisted_chars && -1 !== v.search(new RegExp("[".concat(t.blacklisted_chars, "]+"), "g"))) return !1;
                 return !0
             };
-            var r = i(a(65571)),
-                n = i(a(93235)),
-                l = i(a(10221)),
-                o = i(a(61028)),
-                c = i(a(84808));
+            var r = c(a(65571)),
+                n = c(a(93235)),
+                l = c(a(10221)),
+                o = c(a(61028)),
+                i = c(a(84808));
 
-            function i(e) {
+            function c(e) {
                 return e && e.__esModule ? e : {
                     default: e
                 }
@@ -914,7 +918,7 @@
             }), t.default = function e(t) {
                 var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
                 if ((0, n.default)(t), !(a = String(a))) return e(t, 4) || e(t, 6);
-                if ("4" === a) return c.test(t);
+                if ("4" === a) return i.test(t);
                 if ("6" === a) return s.test(t);
                 return !1
             };
@@ -923,9 +927,9 @@
             };
             var l = "(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",
                 o = "(".concat(l, "[.]){3}").concat(l),
-                c = new RegExp("^".concat(o, "$")),
-                i = "(?:[0-9a-fA-F]{1,4})",
-                s = new RegExp("^(" + "(?:".concat(i, ":){7}(?:").concat(i, "|:)|") + "(?:".concat(i, ":){6}(?:").concat(o, "|:").concat(i, "|:)|") + "(?:".concat(i, ":){5}(?::").concat(o, "|(:").concat(i, "){1,2}|:)|") + "(?:".concat(i, ":){4}(?:(:").concat(i, "){0,1}:").concat(o, "|(:").concat(i, "){1,3}|:)|") + "(?:".concat(i, ":){3}(?:(:").concat(i, "){0,2}:").concat(o, "|(:").concat(i, "){1,4}|:)|") + "(?:".concat(i, ":){2}(?:(:").concat(i, "){0,3}:").concat(o, "|(:").concat(i, "){1,5}|:)|") + "(?:".concat(i, ":){1}(?:(:").concat(i, "){0,4}:").concat(o, "|(:").concat(i, "){1,6}|:)|") + "(?::((?::".concat(i, "){0,5}:").concat(o, "|(?::").concat(i, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
+                i = new RegExp("^".concat(o, "$")),
+                c = "(?:[0-9a-fA-F]{1,4})",
+                s = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(o, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(o, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(o, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(o, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(o, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(o, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(o, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
             e.exports = t.default, e.exports.default = t.default
         },
         65571: (e, t) => {
@@ -960,4 +964,4 @@
         }
     }
 ]);
-//# sourceMappingURL=318fb471780526842b235db5223d59d6879e23b3232f38dc9fa21cc84898ea8e.js.map
+//# sourceMappingURL=2336cb64c733b416966742c8ba8600cef17b73b4d5303937503a57f5efc4b6d9.js.map

@@ -8,8 +8,8 @@
             var a = r(4942),
                 n = r(15861),
                 i = r(54546),
-                o = r(16686),
-                l = r(20495),
+                l = r(16686),
+                o = r(20495),
                 c = r(80916),
                 u = r(64687),
                 s = r.n(u),
@@ -72,8 +72,8 @@
                         ok: !1
                     }),
                     I = (0, i.Z)(A, 2),
-                    P = I[0],
-                    Z = I[1],
+                    Z = I[0],
+                    P = I[1],
                     M = w.useState({
                         value: "",
                         ok: !1
@@ -102,11 +102,11 @@
                 }), []);
                 var K = function() {
                         var e = (0, n.Z)(s().mark((function e(r) {
-                            var a, n, i, o;
+                            var a, n, i, l;
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (a = r.target.value, n = void 0 === a ? "" : a, Z(E(E({}, P), {}, {
+                                        if (a = r.target.value, n = void 0 === a ? "" : a, P(E(E({}, Z), {}, {
                                                 value: n
                                             })), "" !== n) {
                                             e.next = 4;
@@ -118,7 +118,7 @@
                                             e.next = 9;
                                             break
                                         }
-                                        return Z((function(e) {
+                                        return P((function(e) {
                                             return E(E({}, e), {}, {
                                                 error: i,
                                                 taken: !1,
@@ -132,32 +132,32 @@
                                         }
                                         return e.abrupt("return");
                                     case 11:
-                                        return Z((function(e) {
+                                        return P((function(e) {
                                             return E(E({}, e), {}, {
                                                 checking: !0,
                                                 error: i
                                             })
                                         })), e.next = 14, t(n, u.id);
                                     case 14:
-                                        if ((o = e.sent) && (i = "This email is already taken"), !i) {
+                                        if ((l = e.sent) && (i = "This email is already taken"), !i) {
                                             e.next = 19;
                                             break
                                         }
-                                        return Z((function(e) {
+                                        return P((function(e) {
                                             return E(E({}, e), {}, {
                                                 error: i,
-                                                taken: o,
+                                                taken: l,
                                                 checking: !1,
                                                 ok: !1
                                             })
                                         })), e.abrupt("return");
                                     case 19:
-                                        Z((function(e) {
+                                        P((function(e) {
                                             return E(E({}, e), {}, {
                                                 error: i,
-                                                taken: o,
+                                                taken: l,
                                                 checking: !1,
-                                                ok: !i && !o
+                                                ok: !i && !l
                                             })
                                         }));
                                     case 20:
@@ -261,25 +261,25 @@
                     role: "alert",
                     "aria-label": "Failed to send verification email"
                 }, w.createElement(v.$1, {
-                    icon: l.faCircleExclamation
+                    icon: o.faCircleExclamation
                 }), "  Failed to send verification email, please try again."), !1 === J && w.createElement("p", {
                     className: " tw-border-solid tw-border-message-warning tw-border-[1px] tw-text-error-message-red tw-bg-opacity-25 tw-bg-message-warning tw-p-2 tw-rounded-md tw-w-full ",
                     role: "alert",
                     "aria-label": "Failed to verify email"
                 }, w.createElement(v.$1, {
-                    icon: l.faCircleExclamation
+                    icon: o.faCircleExclamation
                 }), "  Failed to verify, Please check your inbox (or spam folder) to verify your email."), Y.sent && w.createElement("p", {
                     className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
                     role: "alert",
                     "aria-label": "Verification Email Sent"
                 }, w.createElement(v.$1, {
-                    icon: o.faCircleCheck
+                    icon: l.faCircleCheck
                 }), "  We’ve resent you the verification email."), J && w.createElement("p", {
                     className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
                     role: "alert",
                     "aria-label": "Email verified"
                 }, w.createElement(v.$1, {
-                    icon: o.faCircleCheck
+                    icon: l.faCircleCheck
                 }), "  Your email has been updated."), (null == u ? void 0 : u.obfuscatedEmail) && w.createElement("p", {
                     className: "tw-text-center tw-mb-0"
                 }, "We've sent an email to ", w.createElement("strong", null, null == u ? void 0 : u.obfuscatedEmail)), w.createElement("p", {
@@ -303,13 +303,13 @@
                     name: "email",
                     "aria-label": "New Email",
                     placeholder: "New Email",
-                    value: P.value,
+                    value: Z.value,
                     onChange: K,
-                    loading: P.checking
-                }), P.value.includes("@") && P.error && w.createElement(y.bZ, {
+                    loading: Z.checking
+                }), Z.value.includes("@") && Z.error && w.createElement(y.bZ, {
                     role: "alert",
                     "aria-label": "Email Error"
-                }, P.error), P.ok && w.createElement(v.II, {
+                }, Z.error), Z.ok && w.createElement(v.II, {
                     type: "email",
                     id: "emailAgain",
                     inputMode: "email",
@@ -321,13 +321,13 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t,
-                            a = P.value && P.value === r;
+                            a = Z.value && Z.value === r;
                         z({
                             value: r,
                             ok: a
                         })
                     }
-                }), P.ok && (R.ok ? w.createElement(v.II, {
+                }), Z.ok && (R.ok ? w.createElement(v.II, {
                     type: "password",
                     id: "password",
                     name: "password",
@@ -343,11 +343,11 @@
                 }) : w.createElement(y.bZ, {
                     role: "alert",
                     "aria-label": "Emails do not match"
-                }, "Emails do not match")), P.ok && R.ok && q && w.createElement(v.zx, {
+                }, "Emails do not match")), Z.ok && R.ok && q && w.createElement(v.zx, {
                     onClick: function(e) {
-                        e.preventDefault(), P.ok && R.ok && q && S({
+                        e.preventDefault(), Z.ok && R.ok && q && S({
                             userId: u.id,
-                            email: P.value,
+                            email: Z.value,
                             password: q
                         })
                     },
@@ -375,13 +375,15 @@
         13887: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => c
+                Z: () => s
             });
             var a = r(54546),
                 n = r(42404),
                 i = r.n(n),
-                o = r(67294);
-            const l = [{
+                l = r(67294),
+                o = r(86646),
+                c = r(62427);
+            const u = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: r(92610)
@@ -446,63 +448,65 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const c = function(e) {
+            const s = function(e) {
                 var t = e.children,
                     r = e.showCredits,
-                    n = (0, o.useState)(null),
-                    c = (0, a.Z)(n, 2),
-                    u = c[0],
-                    s = c[1],
-                    d = (0, o.useState)(null),
-                    w = (0, a.Z)(d, 2),
-                    p = w[0],
-                    f = w[1],
-                    m = (0, o.useMemo)((function() {
-                        return i()(l, 6)
+                    n = (0, l.useState)(null),
+                    s = (0, a.Z)(n, 2),
+                    d = s[0],
+                    w = s[1],
+                    p = (0, l.useState)(null),
+                    f = (0, a.Z)(p, 2),
+                    m = f[0],
+                    g = f[1],
+                    h = (0, l.useMemo)((function() {
+                        return i()(u, 6)
                     }), []);
-                (0, o.useEffect)((function() {
-                    if (null === u) s(m[0]);
+                (0, l.useEffect)((function() {
+                    if (null === d) w(h[0]);
                     else {
-                        var e = g(u);
+                        var e = b(d);
                         setTimeout((function() {
-                            return s(e)
-                        }), 1e4), f(e)
+                            return w(e)
+                        }), 1e4), g(e)
                     }
-                }), [u]);
-                var g = function(e) {
-                    var t = m.findIndex((function(t) {
+                }), [d]);
+                var b = function(e) {
+                    var t = h.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === m.length - 1 ? m[0] : m[t + 1]
+                    return t === h.length - 1 ? h[0] : h[t + 1]
                 };
-                return o.createElement("div", {
+                return l.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === u ? "none" : "url(".concat(u.image, ")")
+                        backgroundImage: null === d ? "none" : "url(".concat(d.image, ")")
                     }
-                }, o.createElement("div", {
+                }, l.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
-                }, o.createElement("a", {
+                }, l.createElement("a", {
                     href: "https://vrchat.com",
                     target: "_blank",
                     rel: "noreferrer"
-                }, o.createElement("img", {
+                }, l.createElement("img", {
                     className: "tw-w-[170px] tw-h-[75px]",
                     src: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-crop-background.png",
                     alt: "VRChat"
-                }), o.createElement("img", {
+                }), l.createElement("img", {
                     className: "tw-hidden",
-                    src: null == p ? void 0 : p.image,
+                    src: null == m ? void 0 : m.image,
                     alt: "VRChat"
-                }))), o.createElement("div", {
+                }))), l.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == u ? void 0 : u.worldName) && r && o.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "World:"), " ", u.worldName), o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "Author:"), " ", u.authorName)))
+                }, t), (null == d ? void 0 : d.worldName) && r && l.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, l.createElement(o.Z, {
+                    icon: c.default,
+                    title: "World",
+                    size: "2x"
+                }), l.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, d.worldName, l.createElement("br", null), l.createElement("small", null, "by ", d.authorName))))
             }
         },
         94311: (e, t, r) => {
@@ -790,8 +794,8 @@
             }), t.default = function(e, t) {
                 var r, a;
                 (0, n.default)(e), "object" === i(t) ? (r = t.min || 0, a = t.max) : (r = arguments[1], a = arguments[2]);
-                var o = encodeURI(e).split(/%..|./).length - 1;
-                return o >= r && (void 0 === a || o <= a)
+                var l = encodeURI(e).split(/%..|./).length - 1;
+                return l >= r && (void 0 === a || l <= a)
             };
             var a, n = (a = r(65571)) && a.__esModule ? a : {
                 default: a
@@ -811,7 +815,7 @@
             Object.defineProperty(t, "__esModule", {
                 value: !0
             }), t.default = function(e, t) {
-                if ((0, a.default)(e), (t = (0, l.default)(t, u)).require_display_name || t.allow_display_name) {
+                if ((0, a.default)(e), (t = (0, o.default)(t, u)).require_display_name || t.allow_display_name) {
                     var r = e.match(s);
                     if (r) {
                         var c = r[1];
@@ -853,10 +857,10 @@
                         allow_underscores: t.allow_underscores
                     })) {
                     if (!t.allow_ip_domain) return !1;
-                    if (!(0, o.default)(b)) {
+                    if (!(0, l.default)(b)) {
                         if (!b.startsWith("[") || !b.endsWith("]")) return !1;
                         var E = b.slice(1, -1);
-                        if (0 === E.length || !(0, o.default)(E)) return !1
+                        if (0 === E.length || !(0, l.default)(E)) return !1
                     }
                 }
                 if ('"' === v[0]) return v = v.slice(1, v.length - 1), t.allow_utf8_local_part ? m.test(v) : p.test(v);
@@ -868,8 +872,8 @@
             var a = c(r(65571)),
                 n = c(r(93235)),
                 i = c(r(10221)),
-                o = c(r(61028)),
-                l = c(r(84808));
+                l = c(r(61028)),
+                o = c(r(84808));
 
             function c(e) {
                 return e && e.__esModule ? e : {
@@ -901,7 +905,7 @@
             Object.defineProperty(t, "__esModule", {
                 value: !0
             }), t.default = function(e, t) {
-                (0, a.default)(e), (t = (0, n.default)(t, o)).allow_trailing_dot && "." === e[e.length - 1] && (e = e.substring(0, e.length - 1));
+                (0, a.default)(e), (t = (0, n.default)(t, l)).allow_trailing_dot && "." === e[e.length - 1] && (e = e.substring(0, e.length - 1));
                 !0 === t.allow_wildcard && 0 === e.indexOf("*.") && (e = e.substring(2));
                 var r = e.split("."),
                     i = r[r.length - 1];
@@ -923,7 +927,7 @@
                     default: e
                 }
             }
-            var o = {
+            var l = {
                 require_tld: !0,
                 allow_underscores: !1,
                 allow_trailing_dot: !1,
@@ -940,7 +944,7 @@
             }), t.default = function e(t) {
                 var r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
                 if ((0, n.default)(t), !(r = String(r))) return e(t, 4) || e(t, 6);
-                if ("4" === r) return l.test(t);
+                if ("4" === r) return o.test(t);
                 if ("6" === r) return u.test(t);
                 return !1
             };
@@ -948,10 +952,10 @@
                 default: a
             };
             var i = "(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",
-                o = "(".concat(i, "[.]){3}").concat(i),
-                l = new RegExp("^".concat(o, "$")),
+                l = "(".concat(i, "[.]){3}").concat(i),
+                o = new RegExp("^".concat(l, "$")),
                 c = "(?:[0-9a-fA-F]{1,4})",
-                u = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(o, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(o, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(o, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(o, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(o, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(o, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(o, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
+                u = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(l, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(l, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(l, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(l, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(l, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(l, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(l, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
             e.exports = t.default, e.exports.default = t.default
         },
         65571: (e, t) => {
@@ -986,4 +990,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43b8055449021d14aa3e4d9c730259bfe01ca30686532fb779116494c3affc65.js.map
+//# sourceMappingURL=ddee15469753628c6e3b1db5530060d013947bd9b502dc3bdef441f5f5c333df.js.map

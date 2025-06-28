@@ -50,13 +50,15 @@
         13887: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => l
+                Z: () => u
             });
             var a = r(54546),
                 n = r(42404),
                 c = r.n(n),
-                o = r(67294);
-            const i = [{
+                o = r(67294),
+                i = r(86646),
+                l = r(62427);
+            const w = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: r(92610)
@@ -121,39 +123,39 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const l = function(e) {
+            const u = function(e) {
                 var t = e.children,
                     r = e.showCredits,
                     n = (0, o.useState)(null),
-                    l = (0, a.Z)(n, 2),
-                    w = l[0],
-                    u = l[1],
-                    s = (0, o.useState)(null),
-                    p = (0, a.Z)(s, 2),
-                    m = p[0],
-                    g = p[1],
-                    h = (0, o.useMemo)((function() {
-                        return c()(i, 6)
+                    u = (0, a.Z)(n, 2),
+                    s = u[0],
+                    p = u[1],
+                    m = (0, o.useState)(null),
+                    g = (0, a.Z)(m, 2),
+                    h = g[0],
+                    f = g[1],
+                    d = (0, o.useMemo)((function() {
+                        return c()(w, 6)
                     }), []);
                 (0, o.useEffect)((function() {
-                    if (null === w) u(h[0]);
+                    if (null === s) p(d[0]);
                     else {
-                        var e = f(w);
+                        var e = v(s);
                         setTimeout((function() {
-                            return u(e)
-                        }), 1e4), g(e)
+                            return p(e)
+                        }), 1e4), f(e)
                     }
-                }), [w]);
-                var f = function(e) {
-                    var t = h.findIndex((function(t) {
+                }), [s]);
+                var v = function(e) {
+                    var t = d.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === h.length - 1 ? h[0] : h[t + 1]
+                    return t === d.length - 1 ? d[0] : d[t + 1]
                 };
                 return o.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === w ? "none" : "url(".concat(w.image, ")")
+                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
                     }
                 }, o.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -167,23 +169,25 @@
                     alt: "VRChat"
                 }), o.createElement("img", {
                     className: "tw-hidden",
-                    src: null == m ? void 0 : m.image,
+                    src: null == h ? void 0 : h.image,
                     alt: "VRChat"
                 }))), o.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == w ? void 0 : w.worldName) && r && o.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "World:"), " ", w.worldName), o.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, o.createElement("strong", null, "Author:"), " ", w.authorName)))
+                }, t), (null == s ? void 0 : s.worldName) && r && o.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, o.createElement(i.Z, {
+                    icon: l.default,
+                    title: "World",
+                    size: "2x"
+                }), o.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, s.worldName, o.createElement("br", null), o.createElement("small", null, "by ", s.authorName))))
             }
         },
         46077: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, {
-                default: () => x
+                default: () => b
             });
             var a = r(15861),
                 n = r(54546),
@@ -201,13 +205,13 @@
                 f = r(41400),
                 d = r(13887),
                 v = r(98538);
-            const x = function() {
+            const b = function() {
                 var e = (0, u.s0)(),
                     t = (0, u.TH)().state,
                     r = (0, w.useState)(!1),
                     i = (0, n.Z)(r, 2),
-                    x = i[0],
-                    b = i[1],
+                    b = i[0],
+                    x = i[1],
                     N = (0, p.Sq)(),
                     j = (0, n.Z)(N, 2),
                     E = j[0],
@@ -227,13 +231,13 @@
                     var e;
                     null === (e = C.current) || void 0 === e || e.focus()
                 }), []);
-                var I = function() {
+                var z = function() {
                         var r = (0, a.Z)(l().mark((function r(a) {
                             var n, c;
                             return l().wrap((function(r) {
                                 for (;;) switch (r.prev = r.next) {
                                     case 0:
-                                        if (a.preventDefault(), n = K(), x && 8 === n.length) {
+                                        if (a.preventDefault(), n = K(), b && 8 === n.length) {
                                             r.next = 4;
                                             break
                                         }
@@ -271,7 +275,7 @@
                             return r.apply(this, arguments)
                         }
                     }(),
-                    z = function(e) {
+                    I = function(e) {
                         return e.replace(/[^abcdefghjkmnpqrstuvwxyz234567890]+/g, "").substr(0, 9)
                     },
                     K = function() {
@@ -281,7 +285,7 @@
                         var t, r = e.event,
                             a = e.nextRef,
                             n = void 0 === a ? null : a;
-                        (r.target.value = z(r.target.value), b(8 === K().length), null !== n) && ("" !== r.target.value && (null === (t = n.current) || void 0 === t || t.focus()))
+                        (r.target.value = I(r.target.value), x(8 === K().length), null !== n) && ("" !== r.target.value && (null === (t = n.current) || void 0 === t || t.focus()))
                     },
                     O = function(e) {
                         var t = e.event,
@@ -289,11 +293,11 @@
                             a = void 0 === r ? null : r;
                         null !== a && "Backspace" === t.key && 0 === t.target.value.length && (a.current.value = "", a.current.focus())
                     },
-                    _ = x && !S;
+                    _ = b && !S;
                 return w.createElement(d.Z, null, w.createElement(g.$4, null, "Two-Factor Authentication Recovery"), w.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, w.createElement(f.l0, {
-                    onSubmit: I
+                    onSubmit: z
                 }, w.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, w.createElement("div", {
@@ -333,8 +337,8 @@
                     maxLength: "1",
                     ref: C,
                     onPaste: function(e) {
-                        var t = z(e.clipboardData.getData("text/plain"));
-                        t.length < 8 || Number.isNaN(t) || (C.current.value = t[0], T.current.value = t[1], D.current.value = t[2], L.current.value = t[3], Z.current.value = t[4], F.current.value = t[5], M.current.value = t[6], A.current.value = t[7], b(8 === K().length), A.current.focus())
+                        var t = I(e.clipboardData.getData("text/plain"));
+                        t.length < 8 || Number.isNaN(t) || (C.current.value = t[0], T.current.value = t[1], D.current.value = t[2], L.current.value = t[3], Z.current.value = t[4], F.current.value = t[5], M.current.value = t[6], A.current.value = t[7], x(8 === K().length), A.current.focus())
                     }
                 }), w.createElement(h.Z, {
                     type: "text",
@@ -779,4 +783,4 @@
         }
     }
 ]);
-//# sourceMappingURL=369cfa27a6c9b5c2620b0ea811de72bac5f989a64796ee677f7c680ccc3db3fb.js.map
+//# sourceMappingURL=5f4f487e6d026e42946f71605a4b27f94be97aabfee8d050c02c40bb106a1752.js.map

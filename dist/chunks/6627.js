@@ -3,13 +3,15 @@
         13887: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => i
+                Z: () => u
             });
             var a = r(54546),
                 n = r(42404),
                 o = r.n(n),
-                l = r(67294);
-            const c = [{
+                l = r(67294),
+                c = r(86646),
+                i = r(62427);
+            const s = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: r(92610)
@@ -74,39 +76,39 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const i = function(e) {
+            const u = function(e) {
                 var t = e.children,
                     r = e.showCredits,
                     n = (0, l.useState)(null),
-                    i = (0, a.Z)(n, 2),
-                    s = i[0],
-                    u = i[1],
-                    m = (0, l.useState)(null),
-                    w = (0, a.Z)(m, 2),
-                    d = w[0],
-                    p = w[1],
-                    h = (0, l.useMemo)((function() {
-                        return o()(c, 6)
+                    u = (0, a.Z)(n, 2),
+                    m = u[0],
+                    w = u[1],
+                    d = (0, l.useState)(null),
+                    p = (0, a.Z)(d, 2),
+                    h = p[0],
+                    g = p[1],
+                    f = (0, l.useMemo)((function() {
+                        return o()(s, 6)
                     }), []);
                 (0, l.useEffect)((function() {
-                    if (null === s) u(h[0]);
+                    if (null === m) w(f[0]);
                     else {
-                        var e = g(s);
+                        var e = b(m);
                         setTimeout((function() {
-                            return u(e)
-                        }), 1e4), p(e)
+                            return w(e)
+                        }), 1e4), g(e)
                     }
-                }), [s]);
-                var g = function(e) {
-                    var t = h.findIndex((function(t) {
+                }), [m]);
+                var b = function(e) {
+                    var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === h.length - 1 ? h[0] : h[t + 1]
+                    return t === f.length - 1 ? f[0] : f[t + 1]
                 };
                 return l.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
+                        backgroundImage: null === m ? "none" : "url(".concat(m.image, ")")
                     }
                 }, l.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -120,17 +122,19 @@
                     alt: "VRChat"
                 }), l.createElement("img", {
                     className: "tw-hidden",
-                    src: null == d ? void 0 : d.image,
+                    src: null == h ? void 0 : h.image,
                     alt: "VRChat"
                 }))), l.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == s ? void 0 : s.worldName) && r && l.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, l.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, l.createElement("strong", null, "World:"), " ", s.worldName), l.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, l.createElement("strong", null, "Author:"), " ", s.authorName)))
+                }, t), (null == m ? void 0 : m.worldName) && r && l.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, l.createElement(c.Z, {
+                    icon: i.default,
+                    title: "World",
+                    size: "2x"
+                }), l.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, m.worldName, l.createElement("br", null), l.createElement("small", null, "by ", m.authorName))))
             }
         },
         66627: (e, t, r) => {
@@ -162,10 +166,10 @@
                 N = r(72562),
                 j = r(69690),
                 S = r(82470),
-                C = r(41400),
-                O = r(13887);
+                Z = r(41400),
+                C = r(13887);
 
-            function T(e, t) {
+            function O(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -176,12 +180,12 @@
                 return r
             }
 
-            function Z(e) {
+            function T(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? T(Object(r), !0).forEach((function(t) {
+                    t % 2 ? O(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : T(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : O(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -195,13 +199,13 @@
                     m = c[0],
                     g = c[1],
                     b = g.isLoading,
-                    T = g.isSuccess,
+                    O = g.isSuccess,
                     A = g.error,
                     R = (0, k.y)().data,
-                    D = (void 0 === R ? {} : R).currentTOSVersion,
-                    P = (0, y.sc)(),
-                    z = P.nameTaken,
-                    q = P.emailTaken,
+                    z = (void 0 === R ? {} : R).currentTOSVersion,
+                    D = (0, y.sc)(),
+                    P = D.nameTaken,
+                    q = D.emailTaken,
                     M = d.useState({
                         value: "",
                         error: !1,
@@ -275,50 +279,50 @@
                     Ne = d.useState(!1),
                     je = (0, o.Z)(Ne, 2),
                     Se = je[0],
-                    Ce = je[1],
-                    Oe = d.useRef(T),
-                    Te = d.useRef(!1),
-                    Ze = (0, u._)("dobFailed", {
+                    Ze = je[1],
+                    Ce = d.useRef(O),
+                    Oe = d.useRef(!1),
+                    Te = (0, u._)("dobFailed", {
                         value: !1,
                         failedAt: null
                     }),
-                    Ae = (0, o.Z)(Ze, 2),
+                    Ae = (0, o.Z)(Te, 2),
                     Ie = Ae[0],
                     Re = Ae[1],
-                    De = d.useRef(null);
+                    ze = d.useRef(null);
                 d.useEffect((function() {
                     Ie.value && "number" == typeof Ie.failedAt && w()().isAfter(w()(Ie.failedAt).add(1, "days")) && Re({
                         value: !1,
                         failedAt: null
                     })
                 }), []), d.useEffect((function() {
-                    Ce(!0 === B.ok && !0 === H.ok && !0 === G.ok && !0 === K.ok && !0 === re.ok && !0 === le.ok && ue === D && !0 === be)
+                    Ze(!0 === B.ok && !0 === H.ok && !0 === G.ok && !0 === K.ok && !0 === re.ok && !0 === le.ok && ue === z && !0 === be)
                 }), [B, H, K, le, ue, be]), d.useEffect((function() {
                     (0, n.Z)(i().mark((function e() {
                         var t, n, o;
                         return i().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    T && !Oe.current && (o = null === (t = a.state) || void 0 === t ? void 0 : t.redirectTo, null !== (n = o) && void 0 !== n && n.includes("/home/register") && (o = "/home".concat(a.search)), o || (o = "/home/verify"), Te.current = !0, r(o)), Oe.current = T;
+                                    O && !Ce.current && (o = null === (t = a.state) || void 0 === t ? void 0 : t.redirectTo, null !== (n = o) && void 0 !== n && n.includes("/home/register") && (o = "/home".concat(a.search)), o || (o = "/home/verify"), Oe.current = !0, r(o)), Ce.current = O;
                                 case 3:
                                 case "end":
                                     return e.stop()
                             }
                         }), e)
                     })))()
-                }), [T, a]), d.useEffect((function() {
+                }), [O, a]), d.useEffect((function() {
                     var e;
                     A && (0, N.Kz)("Register_Error", {
                         error: null === (e = A.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
                     })
                 }), [A]);
-                var Pe = function() {
+                var De = function() {
                         var e = (0, n.Z)(i().mark((function e(t) {
                             var r, a, n, o;
                             return i().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.target.value, a = void 0 === r ? "" : r, F(Z(Z({}, B), {}, {
+                                        if (r = t.target.value, a = void 0 === r ? "" : r, F(T(T({}, B), {}, {
                                                 value: a,
                                                 ok: null,
                                                 taken: !1,
@@ -330,7 +334,7 @@
                                         return e.abrupt("return");
                                     case 4:
                                         if (F((function(e) {
-                                                return Z(Z({}, e), {}, {
+                                                return T(T({}, e), {}, {
                                                     taken: null
                                                 })
                                             })), n = !1, "" !== a && a.length < 4 ? n = "That display name is too short" : a.length > 15 && (n = "That display name is too long"), !n) {
@@ -338,20 +342,20 @@
                                             break
                                         }
                                         return F((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 error: n,
                                                 ok: null
                                             })
                                         })), e.abrupt("return");
                                     case 10:
                                         return F((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 checking: !0
                                             })
-                                        })), e.next = 13, z(a);
+                                        })), e.next = 13, P(a);
                                     case 13:
                                         o = e.sent, F((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 taken: o,
                                                 ok: !e.error && !o,
                                                 error: o ? "That display name is already taken." : e.error,
@@ -368,13 +372,13 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ze = function() {
+                    Pe = function() {
                         var e = (0, n.Z)(i().mark((function e(t) {
                             var r, a;
                             return i().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.target.value, a = void 0 === r ? "" : r, X(Z(Z({}, H), {}, {
+                                        if (r = t.target.value, a = void 0 === r ? "" : r, X(T(T({}, H), {}, {
                                                 value: a,
                                                 ok: null,
                                                 taken: !1,
@@ -386,7 +390,7 @@
                                         return e.abrupt("return");
                                     case 4:
                                         X((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 taken: null
                                             })
                                         }));
@@ -411,20 +415,20 @@
                                             break
                                         }
                                         return X((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 error: a,
                                                 ok: null
                                             })
                                         })), e.abrupt("return");
                                     case 6:
                                         return X((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 checking: !0
                                             })
                                         })), e.next = 9, q(r);
                                     case 9:
                                         n = e.sent, X((function(e) {
-                                            return Z(Z({}, e), {}, {
+                                            return T(T({}, e), {}, {
                                                 taken: n,
                                                 ok: !e.error && !n,
                                                 error: n ? "This email is already taken." : e.error,
@@ -445,7 +449,7 @@
                         if ("" !== r && "" !== t && "" !== e) {
                             var a = null;
                             if (!v()(r) || r < 1900 || r > 2017 ? a = "That's not a valid year" : !v()(t) || t < 0 || t > 12 ? a = "That's not a valid month" : (!v()(e) || e < 0 || e > 31) && (a = "That's not a valid day"), a) ce((function(e) {
-                                return Z(Z({}, e), {}, {
+                                return T(T({}, e), {}, {
                                     error: a,
                                     ok: !1
                                 })
@@ -455,11 +459,11 @@
                                 month: t - 1,
                                 day: e
                             }).isValid() ? ce((function(e) {
-                                return Z(Z({}, e), {}, {
+                                return T(T({}, e), {}, {
                                     ok: !0
                                 })
                             })) : ce((function(e) {
-                                return Z(Z({}, e), {}, {
+                                return T(T({}, e), {}, {
                                     error: "That's not a valid date",
                                     ok: !1
                                 })
@@ -503,7 +507,7 @@
                                             failedAt: Date.now()
                                         }), e.abrupt("return");
                                     case 12:
-                                        Te.current || (_e(), null === (r = De.current) || void 0 === r || r.resetCaptcha());
+                                        Oe.current || (_e(), null === (r = ze.current) || void 0 === r || r.resetCaptcha());
                                     case 13:
                                     case "end":
                                         return e.stop()
@@ -517,27 +521,27 @@
                         }
                     }(),
                     Fe = null !== (e = null == A || null === (t = A.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "";
-                return Fe && (Fe.indexOf(":") > 0 ? (Fe.substring(0, Fe.indexOf(":")).trim(), Fe = Fe.substring(Fe.indexOf(":") + 1).trim()) : 0 === Fe.indexOf(":") && (Fe = Fe.substring(1).trim())), Ie.value ? d.createElement(O.Z, null, d.createElement(x.$4, null, "Create a New Account"), d.createElement(C.W2, null, d.createElement(C.sg, {
+                return Fe && (Fe.indexOf(":") > 0 ? (Fe.substring(0, Fe.indexOf(":")).trim(), Fe = Fe.substring(Fe.indexOf(":") + 1).trim()) : 0 === Fe.indexOf(":") && (Fe = Fe.substring(1).trim())), Ie.value ? d.createElement(C.Z, null, d.createElement(x.$4, null, "Create a New Account"), d.createElement(Z.W2, null, d.createElement(Z.sg, {
                     md: {
                         size: 6,
                         offset: 3
                     },
                     className: "mt-5"
-                }, d.createElement(C.X2, {
+                }, d.createElement(Z.X2, {
                     className: "justify-content-center"
-                }, d.createElement(C.TR, {
+                }, d.createElement(Z.TR, {
                     href: "https://vrchat.com",
                     target: "_blank"
-                })), d.createElement(C.l0, null, d.createElement(C.X2, {
+                })), d.createElement(Z.l0, null, d.createElement(Z.X2, {
                     className: "align-items-flex-end justify-content-between mb-2 mt-2"
-                }, d.createElement(C.h4, null, "Create a New Account"), d.createElement(h.rU, {
+                }, d.createElement(Z.h4, null, "Create a New Account"), d.createElement(h.rU, {
                     to: "/home/login",
                     className: "nav-link"
                 }, "Login")), d.createElement(x.qX, {
                     type: "error",
                     title: "Failed to create account",
                     message: "You are not eligible for a VRChat account at this time. Please try again later."
-                }))))) : d.createElement(O.Z, null, d.createElement(x.$4, null, "Create a New Account"), d.createElement("div", {
+                }))))) : d.createElement(C.Z, null, d.createElement(x.$4, null, "Create a New Account"), d.createElement("div", {
                     className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, d.createElement("form", {
                     onSubmit: Be
@@ -556,7 +560,7 @@
                     name: "username",
                     "aria-label": "Desired display name",
                     value: B.value,
-                    onChange: Pe,
+                    onChange: De,
                     loading: B.checking,
                     success: !B.checking && B.ok,
                     className: "tw-mb-1",
@@ -579,7 +583,7 @@
                     name: "email",
                     "aria-label": "New Email",
                     value: H.value,
-                    onChange: ze,
+                    onChange: Pe,
                     onBlur: qe,
                     loading: H.checking,
                     isError: H.error
@@ -595,14 +599,14 @@
                     placeholder: "Re-enter email address",
                     value: G.value,
                     onChange: function(e) {
-                        U(Z(Z({}, G), {}, {
+                        U(T(T({}, G), {}, {
                             value: e.target.value
                         }))
                     },
                     onBlur: function() {
-                        return G.value !== H.value ? U(Z(Z({}, G), {}, {
+                        return G.value !== H.value ? U(T(T({}, G), {}, {
                             error: "Emails do not match"
-                        })) : U(Z(Z({}, G), {}, {
+                        })) : U(T(T({}, G), {}, {
                             error: null,
                             ok: !0
                         }))
@@ -626,7 +630,7 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        if (Q(Z(Z({}, K), {}, {
+                        if (Q(T(T({}, K), {}, {
                                 value: r,
                                 ok: null,
                                 error: !1
@@ -636,7 +640,7 @@
                             r.length < 8 ? n = "That password is too short \n ".concat(a) : (0, S.w)(r) && (n = "Please try a more secure password \n ".concat(a));
                             var o = !n;
                             Q((function(e) {
-                                return Z(Z({}, e), {}, {
+                                return T(T({}, e), {}, {
                                     ok: o,
                                     error: n
                                 })
@@ -658,14 +662,14 @@
                     "aria-label": "Re-enter password",
                     value: re.value,
                     onChange: function(e) {
-                        ae(Z(Z({}, re), {}, {
+                        ae(T(T({}, re), {}, {
                             value: e.target.value
                         }))
                     },
                     onBlur: function() {
-                        return re.value !== K.value ? ae(Z(Z({}, re), {}, {
+                        return re.value !== K.value ? ae(T(T({}, re), {}, {
                             error: "Passwords do not match"
-                        })) : ae(Z(Z({}, re), {}, {
+                        })) : ae(T(T({}, re), {}, {
                             error: null,
                             ok: !0
                         }))
@@ -691,7 +695,7 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ce(Z(Z({}, le), {}, {
+                        ce(T(T({}, le), {}, {
                             month: r,
                             ok: null,
                             error: !1
@@ -734,7 +738,7 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ce(Z(Z({}, le), {}, {
+                        ce(T(T({}, le), {}, {
                             day: r,
                             ok: null,
                             error: !1
@@ -753,7 +757,7 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ce(Z(Z({}, le), {}, {
+                        ce(T(T({}, le), {}, {
                             year: r,
                             ok: null,
                             error: !1
@@ -770,7 +774,7 @@
                     id: "tos",
                     onChange: function(e) {
                         var t = e.target.checked;
-                        me(t ? D : 0)
+                        me(t ? z : 0)
                     },
                     htmlFor: "tos",
                     className: "tw-mb-0",
@@ -812,7 +816,7 @@
                         ve(!0), ke(e)
                     },
                     onExpire: _e,
-                    ref: De
+                    ref: ze
                 })), d.createElement("div", {
                     className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
                 }, d.createElement(x.zx, {
@@ -1112,4 +1116,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85b51fe2a65ab8541d6f55b1f42c03dd53456f70b49494606a28f07773eb2c7f.js.map
+//# sourceMappingURL=8018f14c2df44aef856b4a4d9be6c2f58d933d1d77d6c17892cf2b063dabd089.js.map

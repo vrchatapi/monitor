@@ -145,9 +145,9 @@
                 C = n(54546),
                 j = n(92332),
                 O = n(20702),
-                Z = n(6811),
-                S = n(64687),
-                F = n.n(S),
+                S = n(6811),
+                Z = n(64687),
+                F = n.n(Z),
                 A = n(64258),
                 P = n(98375),
                 R = n(21438),
@@ -180,8 +180,8 @@
                         k = (0, a.useState)(200),
                         N = (0, C.Z)(k, 2),
                         O = N[0],
-                        Z = N[1],
-                        S = (0, a.useRef)(null),
+                        S = N[1],
+                        Z = (0, a.useRef)(null),
                         F = (0, D.Z)(O, 200),
                         A = (0, a.useMemo)((function() {
                             var e;
@@ -195,9 +195,9 @@
                         }), [o, g]);
                     return (0, a.useEffect)((function() {
                         var e = function() {
-                            if (S.current) {
-                                var e = S.current.clientWidth;
-                                Z(e)
+                            if (Z.current) {
+                                var e = Z.current.clientWidth;
+                                S(e)
                             }
                         };
                         return e(), window.addEventListener("resize", e),
@@ -207,7 +207,7 @@
                     }), []), a.createElement("div", {
                         role: "button",
                         tabIndex: o ? -1 : 0,
-                        ref: S,
+                        ref: Z,
                         className: (0, I.cx)("tw-group tw-rounded-lg tw-overflow-hidden tw-relative tw-w-full tw-h-full tw-cursor-pointer", {
                             "tw-pointer-events-none": o
                         }),
@@ -240,7 +240,7 @@
                             e.stopPropagation(), e.preventDefault()
                         }
                     }, a.createElement(i.$1, {
-                        icon: u.Z,
+                        icon: u.default,
                         color: "#FFFFFF",
                         width: 20
                     })), g.hasDelete && a.createElement(i.zx, {
@@ -345,7 +345,7 @@
                                             color: "success",
                                             title: "Emoji recovered",
                                             message: "Emoji recovered successfully",
-                                            icon: Z.f8,
+                                            icon: S.f8,
                                             timeout: 5e3
                                         }), e.next = 10;
                                         break;
@@ -534,9 +534,9 @@
                     x = g[0],
                     b = g[1],
                     y = (0, a.useState)(null),
-                    S = (0, C.Z)(y, 2),
-                    P = S[0],
-                    R = S[1],
+                    Z = (0, C.Z)(y, 2),
+                    P = Z[0],
+                    R = Z[1],
                     L = (0, v.Xz)(),
                     I = (0, C.Z)(L, 2),
                     D = I[0],
@@ -590,7 +590,7 @@
                                             color: "success",
                                             title: "Emoji deleted",
                                             message: "Emoji deleted successfully",
-                                            icon: Z.f8,
+                                            icon: S.f8,
                                             timeout: 5e3
                                         }), e.next = 12;
                                         break;
@@ -698,7 +698,7 @@
                         type: U.b.emojis.custom
                     })
                 }))) : z ? a.createElement(ae, {
-                    icon: u.Z,
+                    icon: u.default,
                     text: "You have no custom emoji.",
                     uploadText: "Upload Emoji",
                     uploadCallback: function() {
@@ -706,7 +706,7 @@
                     },
                     disabled: (null == J ? void 0 : J.data.length) >= ie
                 }) : _ ? a.createElement(k, {
-                    icon: u.Z,
+                    icon: u.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 }) : a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
@@ -823,9 +823,9 @@
                     b = E[0],
                     y = E[1],
                     k = (0, a.useState)(!1),
-                    S = (0, C.Z)(k, 2),
-                    P = S[0],
-                    R = S[1],
+                    Z = (0, C.Z)(k, 2),
+                    P = Z[0],
+                    R = Z[1],
                     L = (0, se._)("skipInventoryArchiveConfirmation", !1),
                     I = (0, C.Z)(L, 2),
                     D = I[0],
@@ -901,7 +901,8 @@
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "emoji"
                                         }).unwrap();
                                     case 7:
                                         e.next = 12;
@@ -935,7 +936,7 @@
                                                 color: "success",
                                                 title: "Emoji archived",
                                                 message: "Emoji archived successfully",
-                                                icon: Z.f8,
+                                                icon: S.f8,
                                                 timeout: 5e3
                                             }), null != (r = null === t ? b : null == X || null === (n = X.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
@@ -947,7 +948,8 @@
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "emoji"
                                         }).unwrap();
                                     case 13:
                                         e.next = 18;
@@ -1114,7 +1116,7 @@
                     path: "archived",
                     element: a.createElement(q, null)
                 })))) : a.createElement(k, {
-                    icon: u.Z,
+                    icon: u.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 })
             };
@@ -1148,7 +1150,7 @@
                                             color: "success",
                                             title: "Item recovered",
                                             message: "Item recovered successfully",
-                                            icon: Z.f8,
+                                            icon: S.f8,
                                             timeout: 5e3
                                         }), e.next = 10;
                                         break;
@@ -1238,9 +1240,9 @@
                     b = E[0],
                     y = E[1],
                     k = (0, se._)("skipInventoryArchiveConfirmation", !1),
-                    S = (0, C.Z)(k, 2),
-                    P = S[0],
-                    R = (S[1], (0, v.F)()),
+                    Z = (0, C.Z)(k, 2),
+                    P = Z[0],
+                    R = (Z[1], (0, v.F)()),
                     L = (0, C.Z)(R, 2),
                     I = L[0],
                     D = L[1].isLoading,
@@ -1320,7 +1322,8 @@
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "prop"
                                         }).unwrap();
                                     case 7:
                                         e.next = 12;
@@ -1354,7 +1357,7 @@
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
-                                                icon: Z.f8,
+                                                icon: S.f8,
                                                 timeout: 5e3
                                             }), null != (r = null === t ? h : null == _ || null === (n = _.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
@@ -1366,7 +1369,8 @@
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "prop"
                                         }).unwrap();
                                     case 13:
                                         e.next = 18;
@@ -1485,7 +1489,7 @@
                         types: "prop"
                     }).data;
                 return t ? a.createElement(k, {
-                    icon: d.Z,
+                    icon: d.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                 }) : a.createElement("div", null, a.createElement("div", {
                     className: "tw-px-4"
@@ -1551,7 +1555,7 @@
                                             color: "success",
                                             title: "Sticker recovered",
                                             message: "Sticker recovered successfully",
-                                            icon: Z.f8,
+                                            icon: S.f8,
                                             timeout: 5e3
                                         }), e.next = 10;
                                         break;
@@ -1627,9 +1631,9 @@
                         x = g[0],
                         b = g[1],
                         y = (0, a.useState)(null),
-                        S = (0, C.Z)(y, 2),
-                        P = S[0],
-                        R = S[1],
+                        Z = (0, C.Z)(y, 2),
+                        P = Z[0],
+                        R = Z[1],
                         L = (0, v.Xz)(),
                         I = (0, C.Z)(L, 2),
                         D = I[0],
@@ -1683,7 +1687,7 @@
                                                 color: "success",
                                                 title: "Sticker deleted",
                                                 message: "Sticker deleted successfully",
-                                                icon: Z.f8,
+                                                icon: S.f8,
                                                 timeout: 5e3
                                             }), e.next = 13;
                                             break;
@@ -1791,7 +1795,7 @@
                             type: U.b.stickers.custom
                         })
                     }))) : z ? a.createElement(ae, {
-                        icon: d.Z,
+                        icon: d.default,
                         text: "You have no custom stickers.",
                         uploadText: "Upload Sticker",
                         uploadCallback: function() {
@@ -1799,7 +1803,7 @@
                         },
                         disabled: (null == X ? void 0 : X.data.length) >= le
                     }) : _ ? a.createElement(k, {
-                        icon: d.Z,
+                        icon: d.default,
                         text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                     }) : a.createElement("p", {
                         className: "tw-text-light-grey tw-text-base"
@@ -1859,9 +1863,9 @@
                     b = E[0],
                     y = E[1],
                     k = (0, a.useState)(null),
-                    S = (0, C.Z)(k, 2),
-                    P = S[0],
-                    R = S[1],
+                    Z = (0, C.Z)(k, 2),
+                    P = Z[0],
+                    R = Z[1],
                     L = (0, se._)("skipInventoryArchiveConfirmation", !1),
                     I = (0, C.Z)(L, 2),
                     D = I[0],
@@ -1937,7 +1941,8 @@
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "sticker"
                                         }).unwrap();
                                     case 7:
                                         e.next = 12;
@@ -1971,7 +1976,7 @@
                                                 color: "success",
                                                 title: "Sticker archived",
                                                 message: "Sticker archived successfully",
-                                                icon: Z.f8,
+                                                icon: S.f8,
                                                 timeout: 5e3
                                             }), null != (r = null === t ? P : null == X || null === (n = X.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
@@ -1983,7 +1988,8 @@
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
-                                            }
+                                            },
+                                            types: "sticker"
                                         }).unwrap();
                                     case 13:
                                         e.next = 18;
@@ -2099,8 +2105,8 @@
                 }, "You have no exclusive stickers", h ? " with special effects" : "", "."))))
             };
             Oe.propTypes = {};
-            const Ze = Oe;
-            const Se = function() {
+            const Se = Oe;
+            const Ze = function() {
                 var e = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
@@ -2111,7 +2117,7 @@
                         types: "sticker"
                     }).data;
                 return t ? a.createElement(k, {
-                    icon: d.Z,
+                    icon: d.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                 }) : a.createElement("div", null, a.createElement("div", {
                     className: "tw-px-4"
@@ -2148,7 +2154,7 @@
                     element: a.createElement(Ne, null)
                 }), a.createElement(l.AW, {
                     path: "exclusive",
-                    element: a.createElement(Ze, null)
+                    element: a.createElement(Se, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
                     element: a.createElement(be, null)
@@ -2189,24 +2195,24 @@
                         condition: !0
                     }, {
                         name: "Emojis",
-                        icon: u.Z,
+                        icon: u.default,
                         to: "emojis",
                         condition: !0,
                         hasNotification: (null == n ? void 0 : n.totalCount) > 0
                     }, {
                         name: "Stickers",
-                        icon: d.Z,
+                        icon: d.default,
                         to: "stickers",
                         condition: !0,
                         hasNotification: (null == t ? void 0 : t.totalCount) > 0
                     }, {
                         name: "User Icons",
-                        icon: w.Z,
+                        icon: w.default,
                         to: "user-icons",
                         condition: !0
                     }, {
                         name: "Items",
-                        icon: m.Z,
+                        icon: m.default,
                         to: "items",
                         condition: !0,
                         hasNotification: (null == p ? void 0 : p.totalCount) > 0
@@ -2236,10 +2242,10 @@
                     element: a.createElement(fe, null)
                 }), a.createElement(l.AW, {
                     path: "stickers",
-                    element: a.createElement(Se, null)
+                    element: a.createElement(Ze, null)
                 }), a.createElement(l.AW, {
                     path: "stickers/*",
-                    element: a.createElement(Se, null)
+                    element: a.createElement(Ze, null)
                 }), a.createElement(l.AW, {
                     path: "user-icons",
                     element: a.createElement(g, null)
@@ -2359,23 +2365,23 @@
                     C = void 0 === N || N,
                     j = e.innerRef,
                     O = p(e, u),
-                    Z = (0, o.mx)(c()(t, "alert", "alert-".concat(h), {
+                    S = (0, o.mx)(c()(t, "alert", "alert-".concat(h), {
                         "alert-dismissible": E
                     }), i),
-                    S = (0, o.mx)(c()("btn-close", n), i),
+                    Z = (0, o.mx)(c()("btn-close", n), i),
                     F = w(w(w({}, s.Z.defaultProps), k), {}, {
                         baseClass: C ? k.baseClass : "",
                         timeout: C ? k.timeout : 0
                     });
                 return r.createElement(s.Z, m({}, O, F, {
                     tag: v,
-                    className: Z,
+                    className: S,
                     in: x,
                     role: "alert",
                     innerRef: j
                 }), E ? r.createElement("button", {
                     type: "button",
-                    className: S,
+                    className: Z,
                     "aria-label": l,
                     onClick: E
                 }) : null, b)
@@ -2385,4 +2391,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1907cf5c496c1ae5a7f58a6073e49c01823f404dfb45cd3a6eb2a2fa324f12c7.js.map
+//# sourceMappingURL=d73f6b478b8de3995062cb60be5d1d16d1eceb022e5428afb8efc12a83180654.js.map

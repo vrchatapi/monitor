@@ -313,7 +313,7 @@
                     loading: L || ne
                 }, m.createElement(A.$1, {
                     width: 20,
-                    icon: G.Z
+                    icon: G.default
                 }), " ", function() {
                     var e;
                     if (L) e = "Requesting Impostors...";
@@ -2659,4 +2659,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a05876305bc7863a3aa22fdc7b1eff15de52c32638411a40b312d79ee3ef8c53.js.map
+//# sourceMappingURL=f5df233305a0aa57ac4a25e44cc99567f5269b8d4adabeb8182a7ce5a4c73bf1.js.map

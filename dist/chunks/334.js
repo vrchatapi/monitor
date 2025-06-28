@@ -57,6 +57,18 @@
                 icon: [576, 512, a, l, r]
             }, t.nm = t.DF
         },
+        66062: (e, t) => {
+            "use strict";
+            var n = "globe",
+                a = [127760],
+                l = "f0ac",
+                r = "M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z";
+            t.DF = {
+                prefix: "fas",
+                iconName: n,
+                icon: [512, 512, a, l, r]
+            }, t.g4 = t.DF
+        },
         29841: (e, t) => {
             "use strict";
             var n = "grip",
@@ -218,9 +230,9 @@
                 A = n(62228),
                 F = n(41145),
                 W = n(68055),
-                Y = n(65394),
-                q = n(64687),
-                X = n.n(q),
+                q = n(65394),
+                Y = n(64687),
+                X = n.n(Y),
                 O = n(83505),
                 G = n(15832),
                 V = n(3845),
@@ -298,7 +310,7 @@
                 }]), n
             }(s.Component);
             var ie = n(85020),
-                se = n(74205),
+                se = n(99162),
                 ce = n(29104);
             const oe = function(e) {
                 var t = e.selectedGroup,
@@ -746,7 +758,7 @@
                     "aria-label": "Instance Overview",
                     className: "justify-content-between"
                 }, "Next", s.createElement(d.$1, {
-                    icon: Y._t
+                    icon: q._t
                 })))), s.createElement(Te, {
                     stepComplete: null !== N || "members" !== o || "members" === o && !C
                 }, s.createElement(oe, {
@@ -834,7 +846,7 @@
                         return H.M7.includes(e)
                     })),
                     z = [S, I, Z].filter(Boolean).length >= 2;
-                return s.createElement(s.Fragment, null, s.createElement(Ae, null, s.createElement(qe, {
+                return s.createElement(s.Fragment, null, s.createElement(Ae, null, s.createElement(Ye, {
                     onClick: function() {
                         p()
                     },
@@ -857,10 +869,10 @@
                 }, s.createElement(d.X2, {
                     className: "justify-content-between align-items-center"
                 }, s.createElement(d.$1, {
-                    icon: se.Yj,
+                    icon: se.vrcGroup,
                     width: 23
                 }), "Group", s.createElement(d.$1, {
-                    icon: Y._t
+                    icon: q._t
                 })), s.createElement("hr", {
                     className: "mt-2 mb-2"
                 }), s.createElement(d.X2, {
@@ -879,10 +891,10 @@
                 }, s.createElement(d.X2, {
                     className: "justify-content-between align-items-center"
                 }, s.createElement(d.$1, {
-                    icon: se.QQ,
+                    icon: se.vrcGroupPlus,
                     width: 23
                 }), "Group+", s.createElement(d.$1, {
-                    icon: Y._t
+                    icon: q._t
                 })), s.createElement("hr", {
                     className: "mt-2 mb-2"
                 }), s.createElement(d.X2, {
@@ -901,15 +913,15 @@
                 }, s.createElement(d.X2, {
                     className: "justify-content-between align-items-center"
                 }, s.createElement(d.$1, {
-                    icon: se.DE,
+                    icon: se.vrcGroupPublic,
                     width: 23
                 }), "Group Public", s.createElement(d.$1, {
-                    icon: Y._t
+                    icon: q._t
                 })), s.createElement("hr", {
                     className: "mt-2 mb-2"
                 }), s.createElement(d.X2, {
                     className: "justify-content-center"
-                }, s.createElement("small", null, "Anyone can join.")))))), s.createElement(Ye, {
+                }, s.createElement("small", null, "Anyone can join.")))))), s.createElement(qe, {
                     stepComplete: !g || !!k || !z && void(I ? C("plus") : Z ? C("public") : S && C("members"))
                 }, s.createElement(ze, {
                     groupPermissions: m,
@@ -938,12 +950,12 @@
                     name: "8ebo3g",
                     styles: "transition:left 500ms ease-in-out;left:0"
                 },
-                Ye = (0, a.Z)("div", {
+                qe = (0, a.Z)("div", {
                     target: "e1q2o6753"
                 })("min-height:100%;min-width:100%;position:absolute;display:flex;", (function(e) {
                     return e.stepComplete ? We : Fe
                 }), ";"),
-                qe = (0, a.Z)(d.zx, {
+                Ye = (0, a.Z)(d.zx, {
                     target: "e1q2o6752"
                 })({
                     name: "1xrwwlz",
@@ -1057,7 +1069,7 @@
                     }, s.createElement(lt, {
                         src: e.iconUrl
                     }), s.createElement(at, null, e.name), s.createElement(d.$1, {
-                        icon: Y._t
+                        icon: q._t
                     })) : null
                 })))), s.createElement(Ke, {
                     stepComplete: !l || !!v
@@ -1164,8 +1176,8 @@
                     M = s.useRef(null),
                     U = s.useRef(null),
                     P = s.useRef(null),
-                    q = (0, G._)("instanceCreation_alsoInviteMe", !1),
-                    B = (0, w.Z)(q, 2),
+                    Y = (0, G._)("instanceCreation_alsoInviteMe", !1),
+                    B = (0, w.Z)(Y, 2),
                     Q = B[0],
                     K = B[1],
                     ee = (0, J.dj)({
@@ -1346,7 +1358,7 @@
                 }, s.createElement(Ct, null, "Group"), s.createElement(It, {
                     className: "flex-1"
                 }, pe || !te ? "You are in no groups!" : "Select for more options."), s.createElement(d.$1, {
-                    icon: Y._t
+                    icon: q._t
                 }))), s.createElement(yt, {
                     className: "mt-0 mb-0",
                     id: "WorldLaunchRegionTitle"
@@ -1667,7 +1679,7 @@
                 styles: "margin:0;font-size:1.5rem;&::after{display:none;}"
             });
             var Wt = T.Z.updateElasticsearchWorld,
-                Yt = function(e) {
+                qt = function(e) {
                     var t, n, a, l, r = e.world,
                         i = e.file,
                         c = e.reports,
@@ -1682,9 +1694,9 @@
                         A = T[1],
                         F = (0, s.useRef)(null),
                         W = (0, s.useState)(50),
-                        Y = (0, w.Z)(W, 2),
-                        q = (Y[0], Y[1], (0, s.useState)(60)),
-                        X = (0, w.Z)(q, 2),
+                        q = (0, w.Z)(W, 2),
+                        Y = (q[0], q[1], (0, s.useState)(60)),
+                        X = (0, w.Z)(Y, 2),
                         O = X[0],
                         G = X[1],
                         V = (0, s.useState)(!1),
@@ -1982,7 +1994,7 @@
                         className: "mt-sm-2"
                     }))
                 };
-            Yt.propTypes = {
+            qt.propTypes = {
                 world: _().object.isRequired,
                 file: _().object,
                 reports: _().object,
@@ -1990,7 +2002,7 @@
                 isOwner: _().bool,
                 isMod: _().bool
             };
-            const qt = Yt;
+            const Yt = qt;
             var Xt = (0, a.Z)("h3", {
                     target: "e1264afg14"
                 })({
@@ -2135,8 +2147,8 @@
                     U = M[0],
                     P = M[1],
                     W = P.isLoading,
-                    Y = P.isError,
-                    q = P.error,
+                    q = P.isError,
+                    Y = P.error,
                     O = P.isSuccess,
                     G = P.reset,
                     V = (0, un.YZ)(),
@@ -2280,13 +2292,13 @@
                     className: "tw-p-5 tw-font-bold tw-text-white tw-text-xl"
                 }, "Are you sure you want to buy ", i.displayName, " for ", s.createElement(d.b5, null), " ", i.priceTokens, "?")), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-2"
-                }, Y && s.createElement("div", {
+                }, q && s.createElement("div", {
                     className: "tw-col-span-2 tw-rounded-md tw-p-3"
                 }, s.createElement("p", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
                 }, "Failed to make purchase:"), s.createElement("code", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
-                }, null !== (ee = null === (te = q.data) || void 0 === te || null === (te = te.error) || void 0 === te ? void 0 : te.message) && void 0 !== ee ? ee : "Unknown Error")), s.createElement(d.zx, {
+                }, null !== (ee = null === (te = Y.data) || void 0 === te || null === (te = te.error) || void 0 === te ? void 0 : te.message) && void 0 !== ee ? ee : "Unknown Error")), s.createElement(d.zx, {
                     className: "tw-rounded-md tw-border-0 tw-bg-button-bg-grey tw-mb-3",
                     neutral: !0,
                     onClick: de
@@ -2786,7 +2798,7 @@
                     })
                 }), s.createElement(c.AW, {
                     path: "/info",
-                    element: s.createElement(qt, {
+                    element: s.createElement(Yt, {
                         bops: g,
                         file: f,
                         isOwner: v,
@@ -3242,4 +3254,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95d3ef3cfa3470689edb84e90bf70fd8e73fb992eeb98f3f1be91119477bb4d3.js.map
+//# sourceMappingURL=20a5962f4a7db8c220b24a29302355c0c96ba9aa5fb107a73e092c687e54c288.js.map

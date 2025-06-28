@@ -1,43 +1,7 @@
+"use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [4586], {
-        3820: (e, t) => {
-            "use strict";
-            var n = "clipboard",
-                a = [128203],
-                r = "f328",
-                l = "M192 0c-41.8 0-77.4 26.7-90.5 64L64 64C28.7 64 0 92.7 0 128L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64l-37.5 0C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM112 192l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [384, 512, a, r, l]
-            }, t.Yj = t.DF
-        },
-        96157: (e, t) => {
-            "use strict";
-            var n = "infinity",
-                a = [8734, 9854],
-                r = "f534",
-                l = "M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1l0 29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9l0-29.7zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1l0 29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1l0-29.7c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [640, 512, a, r, l]
-            }, t.vq = t.DF
-        },
-        81143: (e, t) => {
-            "use strict";
-            var n = "pen-clip",
-                a = ["pen-alt"],
-                r = "f305",
-                l = "M453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-52.1 52.1s0 0 0 0l-1-1s0 0 0 0l-16-16-96-96-17-17 52.1-52.1c25-25 65.5-25 90.5 0zM241 114.9c-9.4-9.4-24.6-9.4-33.9 0L105 217c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L173.1 81c28.1-28.1 73.7-28.1 101.8 0L288 94.1l17 17 96 96 16 16 1 1-17 17L229.5 412.5c-48 48-109.2 80.8-175.8 94.1l-25 5c-7.9 1.6-16-.9-21.7-6.6s-8.1-13.8-6.6-21.7l5-25c13.3-66.6 46.1-127.8 94.1-175.8L254.1 128 241 114.9z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [512, 512, a, r, l]
-            }, t.k8 = t.DF
-        },
         81362: (e, t, n) => {
-            "use strict";
             n.d(t, {
                 Z: () => o
             });
@@ -60,7 +24,6 @@
             }
         },
         98185: (e, t, n) => {
-            "use strict";
             n.d(t, {
                 Z: () => o
             });
@@ -74,10 +37,10 @@
                     i = e.error,
                     c = e.statusCode,
                     s = e.children,
-                    u = e.className,
-                    m = !1;
+                    m = e.className,
+                    u = !1;
                 return o && o.forEach((function(e) {
-                    e && (m = !0)
+                    e && (u = !0)
                 })), null != c && 200 !== c && "200" !== c ? a.createElement(r.Z, {
                     error: i,
                     statusCode: c
@@ -88,17 +51,16 @@
                     error: i
                 }) : null != t && t.error ? a.createElement(r.Z, {
                     error: t.error
-                }) : n || m || null != t && t.fetching || null != t && t.loading ? a.createElement(l.Z, {
+                }) : n || u || null != t && t.fetching || null != t && t.loading ? a.createElement(l.Z, {
                     className: "tw-mx-auto"
                 }) : a.createElement("div", {
-                    className: u
+                    className: m
                 }, s)
             }
         },
         34586: (e, t, n) => {
-            "use strict";
             n.r(t), n.d(t, {
-                default: () => Ot
+                default: () => At
             });
             var a = n(4965),
                 r = n(66062),
@@ -107,8 +69,8 @@
                 i = n(79655),
                 c = n(37463),
                 s = n(54546),
-                u = n(21429),
-                m = n(17183),
+                m = n(21429),
+                u = n(17183),
                 d = n(56646),
                 p = n(81143),
                 f = n(3820),
@@ -116,14 +78,14 @@
                 h = n.n(g),
                 b = n(32981),
                 w = n(53637),
-                v = n(95305),
-                y = n(35773),
-                E = n(64258),
+                E = n(95305),
+                v = n(35773),
+                y = n(64258),
                 x = n(17383),
                 C = n(91557),
-                _ = n(98185),
-                N = n(4942),
-                k = n(82414),
+                N = n(98185),
+                k = n(4942),
+                _ = n(82414),
                 S = n(83868),
                 I = n.n(S);
 
@@ -138,35 +100,35 @@
                 return n
             }
 
-            function D(e) {
+            function Z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? P(Object(n), !0).forEach((function(t) {
-                        (0, N.Z)(e, t, n[t])
+                        (0, k.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : P(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            const Z = function(e) {
-                var t, n, a, r, o, i, u, m, d, p, f = e.dispute,
+            const D = function(e) {
+                var t, n, a, r, o, i, m, u, d, p, f = e.dispute,
                     g = e.disputeLoading,
                     h = e.contentId,
                     b = e.contentRestrictionId,
                     w = e.closeModal,
-                    v = (0, l.useState)({}),
-                    y = (0, s.Z)(v, 2),
-                    E = y[0],
-                    x = y[1],
+                    E = (0, l.useState)({}),
+                    v = (0, s.Z)(E, 2),
+                    y = v[0],
+                    x = v[1],
                     C = (0, l.useState)({}),
-                    _ = (0, s.Z)(C, 2),
-                    S = _[0],
-                    P = _[1],
-                    Z = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
-                    O = I()(null !== (t = null == E ? void 0 : E.email) && void 0 !== t ? t : "") && (null == E || null === (n = E.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == E || null === (a = E.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == E || null === (r = E.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == E || null === (o = E.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == E || null === (i = E.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == E || null === (u = E.signature) || void 0 === u ? void 0 : u.length) > 0 && Z && (null == E || null === (m = E.signature) || void 0 === m ? void 0 : m.toLowerCase()) === (null == E || null === (d = E.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
+                    N = (0, s.Z)(C, 2),
+                    S = N[0],
+                    P = N[1],
+                    D = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
+                    A = I()(null !== (t = null == y ? void 0 : y.email) && void 0 !== t ? t : "") && (null == y || null === (n = y.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == y || null === (a = y.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == y || null === (r = y.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == y || null === (o = y.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == y || null === (i = y.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == y || null === (m = y.signature) || void 0 === m ? void 0 : m.length) > 0 && D && (null == y || null === (u = y.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == y || null === (d = y.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
                     j = function(e) {
-                        P(D(D({}, S), {}, (0, N.Z)({}, e.target.id, e.target.checked)))
+                        P(Z(Z({}, S), {}, (0, k.Z)({}, e.target.id, e.target.checked)))
                     };
                 return l.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
@@ -177,11 +139,11 @@
                     className: "tw-pt-2",
                     id: "claim-name",
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             fullName: e.target.value
                         }))
                     },
-                    value: null == E ? void 0 : E.fullName
+                    value: null == y ? void 0 : y.fullName
                 })), l.createElement("label", {
                     htmlFor: "user-org-name",
                     className: "tw-mb-4"
@@ -189,9 +151,9 @@
                     className: "tw-pt-2",
                     id: "user-org-name",
                     type: "text",
-                    value: null == E ? void 0 : E.organization,
+                    value: null == y ? void 0 : y.organization,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             organization: e.target.value
                         }))
                     }
@@ -204,9 +166,9 @@
                     className: "tw-mb-4"
                 }, "Street", l.createElement(c.II, {
                     id: "owner-mailing-address",
-                    value: null == E ? void 0 : E.mailingAddress,
+                    value: null == y ? void 0 : y.mailingAddress,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
@@ -217,9 +179,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "City", l.createElement(c.II, {
                     id: "owner-mailing-city",
-                    value: null == E ? void 0 : E.mailingCity,
+                    value: null == y ? void 0 : y.mailingCity,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             mailingCity: e.target.value
                         }))
                     }
@@ -228,9 +190,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "State/Province", l.createElement(c.II, {
                     id: "owner-mailing-state-province",
-                    value: null == E ? void 0 : E.mailingStateProvince,
+                    value: null == y ? void 0 : y.mailingStateProvince,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
@@ -239,9 +201,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "ZIP/Postal Code", l.createElement(c.II, {
                     id: "owner-mailing-postal-code",
-                    value: null == E ? void 0 : E.mailingPostalCode,
+                    value: null == y ? void 0 : y.mailingPostalCode,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
@@ -249,9 +211,9 @@
                     htmlFor: "owner-mailing-country"
                 }, "Country", l.createElement(c.II, {
                     id: "owner-mailing-country",
-                    value: null == E ? void 0 : E.mailingCountry,
+                    value: null == y ? void 0 : y.mailingCountry,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
@@ -262,9 +224,9 @@
                     className: "tw-pt-2",
                     id: "owner-phone",
                     type: "text",
-                    value: null == E ? void 0 : E.phoneNumber,
+                    value: null == y ? void 0 : y.phoneNumber,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
@@ -275,9 +237,9 @@
                     className: "tw-pt-2",
                     id: "owner-email",
                     type: "email",
-                    value: null == E ? void 0 : E.email,
+                    value: null == y ? void 0 : y.email,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             email: e.target.value
                         }))
                     }
@@ -303,19 +265,19 @@
                     htmlFor: "process",
                     checked: null == S ? void 0 : S.process,
                     onChange: j
-                })), Z ? null : l.createElement("div", {
+                })), D ? null : l.createElement("div", {
                     className: "tw-flex tw-items-center tw-bg-[#FF57671A] tw-mb-4 tw-rounded"
                 }, l.createElement(c.$1, {
                     color: "#EE5454",
                     className: "tw-px-2",
-                    icon: k.sq
+                    icon: _.sq
                 }), l.createElement("p", {
                     className: "tw-text-red tw-py-2 tw-m-0"
-                }, "Please select all the checkboxes if you want to proceed.")), l.createElement(F, null, l.createElement("div", {
+                }, "Please select all the checkboxes if you want to proceed.")), l.createElement(O, null, l.createElement("div", {
                     className: "tw-my-2"
                 }, l.createElement(c.$1, {
                     className: "tw-px-2",
-                    icon: k.sq
+                    icon: _.sq
                 }), l.createElement("strong", {
                     className: "tw-m-0"
                 }, "Please note:")), l.createElement("ol", null, l.createElement("li", null, "You may be subject to liability if you knowingly make a material misrepresentation in this counter-notification."), l.createElement("li", null, "We will provide all information you submit in this form to the original complaining party."), l.createElement("li", null, "If you do not want to use this form, please see our", " ", l.createElement("a", {
@@ -327,9 +289,9 @@
                 }, "Type your name to provide your digital signature", l.createElement(c.II, {
                     className: "tw-pt-2",
                     id: "owner-signature",
-                    value: null == E || null === (p = E.signature) || void 0 === p ? void 0 : p.toUpperCase(),
+                    value: null == y || null === (p = y.signature) || void 0 === p ? void 0 : p.toUpperCase(),
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(Z(Z({}, y), {}, {
                             signature: e.target.value
                         }))
                     }
@@ -344,14 +306,14 @@
                     onClick: w
                 }, "Cancel"), l.createElement(c.zx, {
                     className: "tw-ml-2",
-                    disabled: g || !O,
+                    disabled: g || !A,
                     containerStyles: {
                         width: "100%"
                     },
                     onClick: function() {
                         return f({
                             contentId: h,
-                            disputeInfo: E,
+                            disputeInfo: y,
                             contentRestrictionId: b
                         })
                     }
@@ -363,13 +325,13 @@
                     name: "hfkisc",
                     styles: "input{align-self:flex-start;margin-top:0.33rem;}label{padding:0 0 0.75rem 0.5rem!important;}"
                 }),
-                F = (0, a.Z)("div", {
+                O = (0, a.Z)("div", {
                     target: "erb120c0"
                 })({
                     name: "tayqdf",
                     styles: "display:flex;flex-direction:column;align-items:baseline;color:#9c9c9c;background-color:#000;border-radius:8px;padding:0.5rem;margin-bottom:1rem"
                 });
-            const O = function() {
+            const A = function() {
                 var e, t, n = (0, o.UO)().contentId,
                     a = (0, x.Tu)().user,
                     r = (0, b.I0)(),
@@ -377,27 +339,27 @@
                         contentId: n
                     }),
                     g = i.data,
-                    N = i.isFetching,
-                    k = i.isError,
+                    k = i.isFetching,
+                    _ = i.isError,
                     S = i.error,
                     I = (0, C.jO)(),
                     P = (0, s.Z)(I, 2),
-                    D = P[0],
+                    Z = P[0],
                     L = P[1],
-                    F = L.isLoading,
-                    O = L.isError,
-                    A = L.isSuccess,
-                    R = L.error,
-                    T = (0, C.lY)(),
-                    W = (0, s.Z)(T, 2),
-                    M = W[0],
-                    U = W[1],
-                    z = U.isLoading,
-                    Y = U.isSuccess,
-                    $ = U.isError,
-                    q = U.error,
-                    V = (0, l.useState)(null),
-                    X = (0, s.Z)(V, 2),
+                    O = L.isLoading,
+                    A = L.isError,
+                    R = L.isSuccess,
+                    T = L.error,
+                    W = (0, C.lY)(),
+                    U = (0, s.Z)(W, 2),
+                    Y = U[0],
+                    M = U[1],
+                    z = M.isLoading,
+                    F = M.isSuccess,
+                    $ = M.isError,
+                    V = M.error,
+                    q = (0, l.useState)(null),
+                    X = (0, s.Z)(q, 2),
                     H = X[0],
                     B = X[1],
                     J = (0, l.useState)(!1),
@@ -406,50 +368,50 @@
                     Q = G[1];
                 return (0, l.useEffect)((function() {
                     var e;
-                    (A && (B(!1), r((0, E.d)({
+                    (R && (B(!1), r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been submitted successfully.",
                         color: "success",
                         timeout: 7e3
-                    }))), O) && (B(!1), r((0, E.d)({
+                    }))), A) && (B(!1), r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
-                        message: "Your dispute could not be submitted successfully: ".concat(null == R || null === (e = R.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
+                        message: "Your dispute could not be submitted successfully: ".concat(null == T || null === (e = T.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "danger",
                         timeout: 7e3
                     })))
-                }), [A, O]), (0, l.useEffect)((function() {
+                }), [R, A]), (0, l.useEffect)((function() {
                     var e;
-                    (Y && r((0, E.d)({
+                    (F && r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been withdrawn successfully.",
                         color: "success",
                         timeout: 7e3
-                    })), $) && r((0, E.d)({
+                    })), $) && r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
-                        message: "Failed to withdraw your dispute successfully: ".concat(null == q || null === (e = q.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
+                        message: "Failed to withdraw your dispute successfully: ".concat(null == V || null === (e = V.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "danger",
                         timeout: 7e3
                     }))
-                }), [$, Y]), N ? l.createElement(_.Z, {
+                }), [$, F]), k ? l.createElement(N.Z, {
                     loading: !0
-                }) : k ? l.createElement(w.Z, null, l.createElement(c.qX, {
+                }) : _ ? l.createElement(w.Z, null, l.createElement(c.qX, {
                     type: "error",
                     title: "Error",
                     className: "my-2"
                 }, (null == S || null === (t = S.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred when loading the content.")) : l.createElement(w.Z, null, l.createElement("div", {
                     className: "m-2"
-                }, l.createElement(v.Z, {
+                }, l.createElement(E.Z, {
                     className: "w-100 pb-3"
                 }, l.createElement(c.oI, {
                     className: "tw-text-xl"
                 }, g.name), l.createElement(c.Ao, null, l.createElement(j, {
                     xs: "12",
                     className: "tw-p-4"
-                }, l.createElement(y.Z, null, l.createElement(v.Z, {
+                }, l.createElement(v.Z, null, l.createElement(E.Z, {
                     xs: "12",
                     md: "3"
                 }, l.createElement("div", {
@@ -461,17 +423,17 @@
                     alt: g.name
                 }), l.createElement("div", {
                     className: "p-1 tw-w-full tw-text-center tw-text-black tw-font-bold tw-absolute tw-bottom-1 tw-bg-[#fb923c] tw-opacity-75"
-                }, "Archived"))), l.createElement(v.Z, {
+                }, "Archived"))), l.createElement(E.Z, {
                     xs: "12",
                     md: "9",
                     className: "flex-1"
-                }, l.createElement("h4", null, g.name, l.createElement("span", null, " ", l.createElement("small", null, "—  ", g.authorName))), l.createElement("p", null, g.description)))))), l.createElement(v.Z, {
+                }, l.createElement("h4", null, g.name, l.createElement("span", null, " ", l.createElement("small", null, "—  ", g.authorName))), l.createElement("p", null, g.description)))))), l.createElement(E.Z, {
                     className: "w-100"
-                }, l.createElement(y.Z, {
+                }, l.createElement(v.Z, {
                     style: {
                         "--bs-gutter-x": "1rem"
                     }
-                }, l.createElement(v.Z, {
+                }, l.createElement(E.Z, {
                     xs: "12",
                     md: "8"
                 }, l.createElement(c.oI, {
@@ -485,7 +447,7 @@
                 }, "Archived")), (null == a ? void 0 : a.id) === g.authorId && g.disputed && l.createElement(l.Fragment, null, l.createElement(c.sm, {
                     isOpen: K,
                     confirmCallback: function() {
-                        return M({
+                        return Y({
                             contentRestrictionId: g.contentRestrictionId,
                             contentId: g.id
                         })
@@ -522,9 +484,9 @@
                     onClose: function() {
                         return B(!1)
                     }
-                }, l.createElement(Z, {
-                    dispute: D,
-                    disputeLoading: F,
+                }, l.createElement(D, {
+                    dispute: Z,
+                    disputeLoading: O,
                     contentId: g.id,
                     contentRestrictionId: g.contentRestrictionId,
                     closeModal: function() {
@@ -538,7 +500,7 @@
                 }, l.createElement(c.$1, {
                     className: "tw-pr-1",
                     icon: d.faCircleInfo
-                }), "Learn more about the DMCA process"))), l.createElement(v.Z, {
+                }), "Learn more about the DMCA process"))), l.createElement(E.Z, {
                     xs: "12",
                     md: "4"
                 }, l.createElement(c.oI, {
@@ -553,7 +515,7 @@
                     color: "#2BAAC1",
                     width: 17,
                     className: "tw-pr-2",
-                    icon: m.faSquarePlus
+                    icon: u.faSquarePlus
                 }), "Created"), h()(null == g ? void 0 : g.createdAt).format("MMM DD YYYY")), l.createElement("div", {
                     className: "tw-flex tw-place-content-between tw-text-light-grey"
                 }, l.createElement("div", {
@@ -562,26 +524,26 @@
                     color: "#2BAAC1",
                     width: 17,
                     className: "tw-pr-2",
-                    icon: u.faCloudArrowUp
+                    icon: m.faCloudArrowUp
                 }), "Updated"), h()(null == g ? void 0 : g.updatedAt).format("MMM DD YYYY"))))))))
             };
-            var j = (0, a.Z)(v.Z, {
+            var j = (0, a.Z)(E.Z, {
                     target: "ek2okq60"
                 })({
                     name: "1e3lcuk",
                     styles: "border:1px solid #2BAAC1;& a{color:white;}& img{border-radius:5px;max-height:200px;max-width:200px;}"
                 }),
-                A = n(42138),
-                R = n(15861),
-                T = n(12529),
-                W = n(59545),
-                M = n(68055),
-                U = n(88302),
+                R = n(42138),
+                T = n(15861),
+                W = n(12529),
+                U = n(59545),
+                Y = n(68055),
+                M = n(88302),
                 z = n(30856),
-                Y = n(17726),
+                F = n(17726),
                 $ = n(76409),
-                q = n(34601),
-                V = n(96157),
+                V = n(34601),
+                q = n(96157),
                 X = n(20821),
                 H = n(5147),
                 B = n(47947),
@@ -599,8 +561,8 @@
                 ie = n.n(oe),
                 ce = n(18446),
                 se = n.n(ce),
-                ue = n(64687),
-                me = n.n(ue),
+                me = n(64687),
+                ue = n.n(me),
                 de = n(67947),
                 pe = n(28213),
                 fe = n(17219),
@@ -660,7 +622,7 @@
                         cancelText: "No, keep the world public"
                     })))
                 },
-                ve = function(e) {
+                Ee = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -673,7 +635,7 @@
                         cancelText: "No, keep the world alive"
                     })))
                 },
-                ye = function(e) {
+                ve = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -686,7 +648,7 @@
                         cancelText: "No, keep the world public"
                     })))
                 },
-                Ee = function(e) {
+                ye = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -725,7 +687,7 @@
                         cancelText: "No, keep the world in Labs"
                     })))
                 },
-                _e = function(e) {
+                Ne = function(e) {
                     var t = e.platformName,
                         n = e.onConfirm,
                         a = e.onCancel;
@@ -739,8 +701,8 @@
                         cancelText: "No, keep the ".concat(t, " version")
                     })))
                 },
-                Ne = n(72522);
-            var ke = (0, a.Z)(c.zx, {
+                ke = n(72522);
+            var _e = (0, a.Z)(c.zx, {
                     target: "erum2741"
                 })({
                     name: "1v8w4bi",
@@ -765,7 +727,7 @@
                     className: "tw-flex tw-flex-col tw-gap-2"
                 }, l.createElement("div", {
                     className: "tw-flex align-items-center w-100 flex-column flex-sm-row mt-2"
-                }, l.createElement(ke, {
+                }, l.createElement(_e, {
                     type: "button",
                     "aria-label": "Toggle Items",
                     onClick: function() {
@@ -781,11 +743,11 @@
                     expand: !0
                 }, l.createElement(Se, null, "Items ", o ? "Disabled" : "Enabled"), o ? l.createElement(c.$1, {
                     width: 20,
-                    icon: W.NB,
+                    icon: U.NB,
                     disabled: !0
                 }) : l.createElement(c.$1, {
                     width: 20,
-                    icon: M.LE
+                    icon: Y.LE
                 }))), o && l.createElement("div", {
                     className: "tw-flex tw-flex-col tw-border-[1px] tw-border-white/10 tw-border-solid tw-rounded tw-p-2"
                 }, l.createElement("div", null, "Why are you disabling Items in this world?"), l.createElement(c.gx, {
@@ -802,16 +764,16 @@
                 }, "Instance moderators won't be able to turn Items on for instances created for this world.")))
             };
 
-            function De(e, t) {
+            function Ze(e, t) {
                 var n = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!n) {
                     if (Array.isArray(e) || (n = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return Ze(e, t);
+                            if ("string" == typeof e) return De(e, t);
                             var n = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === n && e.constructor && (n = e.constructor.name);
                             if ("Map" === n || "Set" === n) return Array.from(e);
-                            if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Ze(e, t)
+                            if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return De(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         n && (e = n);
                         var a = 0,
@@ -857,7 +819,7 @@
                 }
             }
 
-            function Ze(e, t) {
+            function De(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var n = 0, a = new Array(t); n < t; n++) a[n] = e[n];
                 return a
@@ -874,18 +836,18 @@
                 return n
             }
 
-            function Fe(e) {
+            function Oe(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? Le(Object(n), !0).forEach((function(t) {
-                        (0, N.Z)(e, t, n[t])
+                        (0, k.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Le(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Oe = {
+            var Ae = {
                     name: "ozd7xs",
                     styles: "flex-shrink:0"
                 },
@@ -893,82 +855,82 @@
                     name: "ozd7xs",
                     styles: "flex-shrink:0"
                 };
-            const Ae = function() {
-                var e, t, n, a, u = (0, b.I0)(),
-                    m = (0, i.lr)(),
-                    d = (0, s.Z)(m, 1)[0],
+            const Re = function() {
+                var e, t, n, a, m = (0, b.I0)(),
+                    u = (0, i.lr)(),
+                    d = (0, s.Z)(u, 1)[0],
                     p = (0, o.s0)(),
                     f = (0, o.UO)().worldId,
                     g = (0, x.Tu)(),
                     w = g.trustLevel,
-                    v = g.user,
-                    y = (0, x.pc)(),
+                    E = g.user,
+                    v = (0, x.pc)(),
                     C = (0, x.BT)({
                         worldId: f,
-                        userId: v.id,
-                        isMod: y,
+                        userId: E.id,
+                        isMod: v,
                         noCache: !0
                     }),
-                    _ = C.data,
-                    k = C.reports,
+                    N = C.data,
+                    _ = C.reports,
                     S = C.bops,
                     I = C.loading,
                     P = C.error,
-                    D = C.errorMessage,
-                    Z = C.refreshWorld,
-                    L = void 0 === Z ? function() {} : Z,
-                    F = (null == _ ? void 0 : _.authorId) === v.id,
-                    O = y || F,
+                    Z = C.errorMessage,
+                    D = C.refreshWorld,
+                    L = void 0 === D ? function() {} : D,
+                    O = (null == N ? void 0 : N.authorId) === E.id,
+                    A = v || O,
                     j = (0, b.v9)((function(e) {
                         return e.world.updatedWorld
                     })),
                     re = l.useState(null),
                     oe = (0, s.Z)(re, 2),
                     ce = oe[0],
-                    ue = oe[1],
+                    me = oe[1],
                     he = (0, fe.y)().data,
-                    ke = (void 0 === he ? {} : he).sdkUnityVersion,
+                    _e = (void 0 === he ? {} : he).sdkUnityVersion,
                     Se = (0, x.dD)(),
                     Ie = l.useRef(null),
-                    Ze = l.useRef(null),
+                    De = l.useRef(null),
                     Le = (0, x.T)({
                         worldId: f
                     }),
-                    Ae = Le.action,
+                    Re = Le.action,
                     Be = Le.canPublish,
                     gt = Le.deleteWorld,
                     ht = Le.deleteWorldPlatform,
                     bt = Le.error,
                     wt = Le.loading,
-                    vt = Le.publishWorld,
-                    yt = Le.success,
-                    Et = Le.unpublishWorld,
+                    Et = Le.publishWorld,
+                    vt = Le.success,
+                    yt = Le.unpublishWorld,
                     xt = l.useState(!1),
                     Ct = (0, s.Z)(xt, 2),
-                    _t = Ct[0],
-                    Nt = Ct[1],
-                    kt = l.useState(!1),
-                    St = (0, s.Z)(kt, 2),
+                    Nt = Ct[0],
+                    kt = Ct[1],
+                    _t = l.useState(!1),
+                    St = (0, s.Z)(_t, 2),
                     It = St[0],
                     Pt = St[1],
-                    Dt = l.useState(null),
-                    Zt = (0, s.Z)(Dt, 2),
-                    Lt = Zt[0],
-                    Ft = Zt[1],
-                    Ot = l.useState(!1),
-                    jt = (0, s.Z)(Ot, 2),
-                    At = jt[0],
-                    Rt = jt[1],
-                    Tt = l.useState(!1),
-                    Wt = (0, s.Z)(Tt, 2),
-                    Mt = Wt[0],
-                    Ut = Wt[1],
+                    Zt = l.useState(null),
+                    Dt = (0, s.Z)(Zt, 2),
+                    Lt = Dt[0],
+                    Ot = Dt[1],
+                    At = l.useState(!1),
+                    jt = (0, s.Z)(At, 2),
+                    Rt = jt[0],
+                    Tt = jt[1],
+                    Wt = l.useState(!1),
+                    Ut = (0, s.Z)(Wt, 2),
+                    Yt = Ut[0],
+                    Mt = Ut[1],
                     zt = l.useState(!1),
-                    Yt = (0, s.Z)(zt, 2),
-                    $t = Yt[0],
-                    qt = Yt[1],
-                    Vt = l.useState(!1),
-                    Xt = (0, s.Z)(Vt, 2),
+                    Ft = (0, s.Z)(zt, 2),
+                    $t = Ft[0],
+                    Vt = Ft[1],
+                    qt = l.useState(!1),
+                    Xt = (0, s.Z)(qt, 2),
                     Ht = Xt[0],
                     Bt = Xt[1],
                     Jt = l.useState(!1),
@@ -984,22 +946,22 @@
                     on = ln[0],
                     cn = ln[1],
                     sn = l.useState(!1),
-                    un = (0, s.Z)(sn, 2),
-                    mn = un[0],
-                    dn = un[1],
+                    mn = (0, s.Z)(sn, 2),
+                    un = mn[0],
+                    dn = mn[1],
                     pn = l.useState(!1),
                     fn = (0, s.Z)(pn, 2),
                     gn = fn[0],
                     hn = fn[1],
                     bn = l.useState(null),
                     wn = (0, s.Z)(bn, 2),
-                    vn = wn[0],
-                    yn = wn[1],
-                    En = l.useState(!1),
-                    xn = (0, s.Z)(En, 2),
+                    En = wn[0],
+                    vn = wn[1],
+                    yn = l.useState(!1),
+                    xn = (0, s.Z)(yn, 2),
                     Cn = xn[0],
-                    _n = xn[1],
-                    Nn = function() {
+                    Nn = xn[1],
+                    kn = function() {
                         var e = d.get("backLink");
                         if (e) {
                             var t = new URLSearchParams(d);
@@ -1014,15 +976,15 @@
                         (null == e ? void 0 : e.scrollTop) > 0 && (null == e || e.scrollTo(0, 0))
                     }
                 }), [I, null == ce ? void 0 : ce.id]);
-                var kn = l.useMemo((function() {
-                    return "string" != typeof(null == _ ? void 0 : _.description) ? null : Fe({
+                var _n = l.useMemo((function() {
+                    return "string" != typeof(null == N ? void 0 : N.description) ? null : Oe({
                         description: "",
                         tags: [],
                         previewYoutubeId: ""
-                    }, _)
-                }), [_]);
+                    }, N)
+                }), [N]);
                 l.useEffect((function() {
-                    if (kn && ce) {
+                    if (_n && ce) {
                         var e = !se()({
                             name: ce.name,
                             description: ce.description,
@@ -1034,33 +996,33 @@
                             urlList: null == ce ? void 0 : ce.urlList,
                             itemDisableReason: null == ce ? void 0 : ce.itemDisableReason
                         }, {
-                            name: kn.name,
-                            description: kn.description,
-                            releaseStatus: kn.releaseStatus,
-                            tags: kn.tags,
-                            capacity: kn.capacity,
-                            recommendedCapacity: kn.recommendedCapacity,
-                            previewYoutubeId: null == kn ? void 0 : kn.previewYoutubeId,
-                            urlList: null == kn ? void 0 : kn.urlList,
-                            itemDisableReason: null == kn ? void 0 : kn.itemDisableReason
+                            name: _n.name,
+                            description: _n.description,
+                            releaseStatus: _n.releaseStatus,
+                            tags: _n.tags,
+                            capacity: _n.capacity,
+                            recommendedCapacity: _n.recommendedCapacity,
+                            previewYoutubeId: null == _n ? void 0 : _n.previewYoutubeId,
+                            urlList: null == _n ? void 0 : _n.urlList,
+                            itemDisableReason: null == _n ? void 0 : _n.itemDisableReason
                         });
                         Qt(e)
                     }
-                }), [kn, ce]), l.useEffect((function() {
+                }), [_n, ce]), l.useEffect((function() {
                     if (null !== ce) {
                         var e = function(e) {
                             return e <= 0 || Number.isNaN(e) || !Number.isInteger(e) || "" === e
                         };
-                        e(null == ce ? void 0 : ce.recommendedCapacity) ? Ft("Please enter a valid Recommended Capacity number.") : e(null == ce ? void 0 : ce.capacity) ? Ft("Please enter a valid Maximum Capacity number.") : ce.recommendedCapacity > ce.capacity ? Ft("Recommended Capacity can not be higher than Maximum Capacity.") : ce.capacity > 80 ? Ft("Maximum Capacity can not be higher than 80.") : Ft(null)
+                        e(null == ce ? void 0 : ce.recommendedCapacity) ? Ot("Please enter a valid Recommended Capacity number.") : e(null == ce ? void 0 : ce.capacity) ? Ot("Please enter a valid Maximum Capacity number.") : ce.recommendedCapacity > ce.capacity ? Ot("Recommended Capacity can not be higher than Maximum Capacity.") : ce.capacity > 80 ? Ot("Maximum Capacity can not be higher than 80.") : Ot(null)
                     }
                 }), [ce]), l.useEffect((function() {
-                    null !== kn && ue(Fe(Fe({}, kn), {
-                        recommendedCapacity: (null == kn ? void 0 : kn.recommendedCapacity) || (null == kn ? void 0 : kn.capacity)
+                    null !== _n && me(Oe(Oe({}, _n), {
+                        recommendedCapacity: (null == _n ? void 0 : _n.recommendedCapacity) || (null == _n ? void 0 : _n.capacity)
                     }))
-                }), [kn]);
+                }), [_n]);
                 var Sn = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return dn(!1), e.next = 3, gt();
@@ -1077,11 +1039,11 @@
                         }
                     }(),
                     In = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return cn(!1), e.next = 3, Et();
+                                        return cn(!1), e.next = 3, yt();
                                     case 3:
                                         L();
                                     case 4:
@@ -1097,12 +1059,12 @@
                     Pn = function() {
                         cn(!1)
                     },
-                    Dn = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                    Zn = function() {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return an(!1), e.next = 3, vt();
+                                        return an(!1), e.next = 3, Et();
                                     case 3:
                                         L();
                                     case 4:
@@ -1115,15 +1077,15 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Zn = function() {
+                    Dn = function() {
                         an(!1)
                     },
                     Ln = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return _n(!1), e.next = 3, vt();
+                                        return Nn(!1), e.next = 3, Et();
                                     case 3:
                                         L();
                                     case 4:
@@ -1136,12 +1098,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Fn = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                    On = function() {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return hn(!1), e.next = 3, vt();
+                                        return hn(!1), e.next = 3, Et();
                                     case 3:
                                         L();
                                     case 4:
@@ -1154,19 +1116,19 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    On = function(e) {
+                    An = function(e) {
                         return function() {
-                            yn(e)
+                            vn(e)
                         }
                     },
                     jn = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
-                            return me().wrap((function(e) {
+                        var e = (0, T.Z)(ue().mark((function e() {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ht(vn);
+                                        return e.next = 2, ht(En);
                                     case 2:
-                                        return yn(null), e.next = 5, new Promise((function(e) {
+                                        return vn(null), e.next = 5, new Promise((function(e) {
                                             return setTimeout(e, 1e3)
                                         }));
                                     case 5:
@@ -1181,45 +1143,45 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    An = function(e) {
-                        return function(t) {
-                            var n = t.target.value,
-                                a = void 0 === n ? "" : n;
-                            ue((function(t) {
-                                return Fe(Fe({}, t), {}, (0, N.Z)({}, e, a))
-                            }))
-                        }
-                    },
                     Rn = function(e) {
                         return function(t) {
                             var n = t.target.value,
                                 a = void 0 === n ? "" : n;
-                            ue((function(t) {
-                                return Fe(Fe({}, t), {}, (0, N.Z)({}, e, Number(a)))
+                            me((function(t) {
+                                return Oe(Oe({}, t), {}, (0, k.Z)({}, e, a))
                             }))
                         }
                     },
                     Tn = function(e) {
+                        return function(t) {
+                            var n = t.target.value,
+                                a = void 0 === n ? "" : n;
+                            me((function(t) {
+                                return Oe(Oe({}, t), {}, (0, k.Z)({}, e, Number(a)))
+                            }))
+                        }
+                    },
+                    Wn = function(e) {
                         var t = "feature_".concat(e, "_disabled");
-                        console.log("Toggling feature: ".concat(e, ", tag: ").concat(t)), ce.tags.includes(t) ? ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
+                        console.log("Toggling feature: ".concat(e, ", tag: ").concat(t)), ce.tags.includes(t) ? me((function(e) {
+                            return Oe(Oe({}, e), {}, {
                                 tags: e.tags.filter((function(e) {
                                     return e !== t
                                 }))
                             })
-                        })) : ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
-                                tags: [].concat((0, A.Z)(e.tags), [t])
+                        })) : me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: [].concat((0, R.Z)(e.tags), [t])
                             })
                         }))
                     },
-                    Wn = function() {
-                        var e = (0, R.Z)(me().mark((function e() {
+                    Un = function() {
+                        var e = (0, T.Z)(ue().mark((function e() {
                             var t;
-                            return me().wrap((function(e) {
+                            return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (Kt && ce && kn) {
+                                        if (Kt && ce && _n) {
                                             e.next = 2;
                                             break
                                         }
@@ -1237,7 +1199,7 @@
                                             e.next = 23;
                                             break
                                         }
-                                        return e.prev = 15, e.next = 18, u((0, de.tc)({
+                                        return e.prev = 15, e.next = 18, m((0, de.tc)({
                                             tagList: t,
                                             worldId: f
                                         }));
@@ -1247,11 +1209,11 @@
                                     case 20:
                                         e.prev = 20, e.t1 = e.catch(15), console.error(e.t1);
                                     case 23:
-                                        return e.prev = 23, e.next = 26, u((0, de.GE)(Fe(Fe({}, ce), {}, {
+                                        return e.prev = 23, e.next = 26, m((0, de.GE)(Oe(Oe({}, ce), {}, {
                                             worldId: f
                                         })));
                                     case 26:
-                                        j.error || u((0, E.d)({
+                                        j.error || m((0, y.d)({
                                             title: "World Info Updated",
                                             icon: r.g4,
                                             message: "You have successfully updated ".concat(null != ce && ce.name ? "world: ".concat(ce.name) : "this world"),
@@ -1275,7 +1237,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Mn = l.useMemo((function() {
+                    Yn = l.useMemo((function() {
                         if (!ce) return {
                             versionsList: [],
                             platformsList: [],
@@ -1287,14 +1249,14 @@
                             r = !1,
                             l = !1,
                             o = !1,
-                            i = De([].concat(ce.unityPackages).reverse());
+                            i = Ze([].concat(ce.unityPackages).reverse());
                         try {
                             for (i.s(); !(e = i.n()).done;) {
                                 var c = e.value,
                                     s = c.unityVersion,
-                                    u = c.unitySortNumber,
-                                    m = c.platform,
-                                    d = (0, ge.el)(u, ke),
+                                    m = c.unitySortNumber,
+                                    u = c.platform,
+                                    d = (0, ge.el)(m, _e),
                                     p = d.isUnsupported,
                                     f = d.isSupported,
                                     g = d.isOld;
@@ -1303,7 +1265,7 @@
                                     isUnsupported: p,
                                     isSupported: f,
                                     isOld: g
-                                })), a.has(m) || a.add(m)
+                                })), a.has(u) || a.add(u)
                             }
                         } catch (e) {
                             i.e(e)
@@ -1317,17 +1279,17 @@
                             hasUnsupported: r,
                             hasSupported: l
                         }
-                    }), [null == ce ? void 0 : ce.unityPackages, ke]),
-                    Un = l.useMemo((function() {
+                    }), [null == ce ? void 0 : ce.unityPackages, _e]),
+                    Mn = l.useMemo((function() {
                         if (!ce) return !1;
-                        var e = Mn.platformsList.includes("standalonewindows"),
-                            t = Mn.platformsList.includes("android");
+                        var e = Yn.platformsList.includes("standalonewindows"),
+                            t = Yn.platformsList.includes("android");
                         return e && t
-                    }), [ce, Mn.platformsList]),
-                    zn = Mn.hasUnsupported && !Mn.hasSupported && !Mn.hasOld,
-                    Yn = Mn.hasUnsupported && (Mn.hasSupported || Mn.hasOld),
-                    $n = !Mn.hasUnsupported && !Mn.hasSupported,
-                    qn = l.useMemo((function() {
+                    }), [ce, Yn.platformsList]),
+                    zn = Yn.hasUnsupported && !Yn.hasSupported && !Yn.hasOld,
+                    Fn = Yn.hasUnsupported && (Yn.hasSupported || Yn.hasOld),
+                    $n = !Yn.hasUnsupported && !Yn.hasSupported,
+                    Vn = l.useMemo((function() {
                         var e, t = new Set(null !== (e = null == ce ? void 0 : ce.tags) && void 0 !== e ? e : []);
                         return {
                             isAdminApproved: t.has("admin_approved"),
@@ -1339,27 +1301,27 @@
                             isFocusViewEnabled: !t.has("feature_focus_view_disabled")
                         }
                     }), [null == ce ? void 0 : ce.tags]),
-                    Vn = qn.isAdminApproved,
-                    Xn = qn.isInLabs,
-                    Hn = qn.isLabsLocked,
-                    Bn = qn.isLabsFailed,
-                    Jn = qn.isWorldDebugEnabled,
-                    Gn = qn.isAvatarScalingEnabled,
-                    Kn = (qn.isStickersEnabled, qn.isDroneEnabled, qn.isFocusViewEnabled),
-                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || Vn || Xn || y || Bn || Hn),
+                    qn = Vn.isAdminApproved,
+                    Xn = Vn.isInLabs,
+                    Hn = Vn.isLabsLocked,
+                    Bn = Vn.isLabsFailed,
+                    Jn = Vn.isWorldDebugEnabled,
+                    Gn = Vn.isAvatarScalingEnabled,
+                    Kn = (Vn.isStickersEnabled, Vn.isDroneEnabled, Vn.isFocusViewEnabled),
+                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || qn || Xn || v || Bn || Hn),
                     ea = "public" === (null == ce ? void 0 : ce.releaseStatus),
-                    ta = !ea && (y || Vn && Be),
+                    ta = !ea && (v || qn && Be),
                     na = Qn && !Be,
                     aa = Qn && !na && !w.user,
                     ra = !(null != ce && ce.name) || "" === (null == ce ? void 0 : ce.name),
                     la = (null != S ? S : 0) > 0,
                     oa = l.useMemo((function() {
-                        return O && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || la)
-                    }), [O, null == ce ? void 0 : ce.tags, la]),
+                        return A && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || la)
+                    }), [A, null == ce ? void 0 : ce.tags, la]),
                     ia = l.useMemo((function() {
                         var e;
                         return null == ce || null === (e = ce.tags) || void 0 === e ? void 0 : e.map((function(e) {
-                            if (!y && !e.startsWith("author_tag_")) return null;
+                            if (!v && !e.startsWith("author_tag_")) return null;
                             var t = pe.w.find((function(t) {
                                 return t.tag === e
                             }));
@@ -1373,47 +1335,47 @@
                         })).filter(Boolean)
                     }), [null == ce ? void 0 : ce.tags]),
                     ca = Xn ? "In Community Labs" : le()(null == ce ? void 0 : ce.releaseStatus),
-                    sa = null !== (e = null !== (t = null == k ? void 0 : k.reportCount) && void 0 !== t ? t : null == k || null === (n = k.feedbackReport) || void 0 === n ? void 0 : n.reportCount) && void 0 !== e ? e : 0;
-                return !I && (ce && _ || P) ? !I && P ? l.createElement(Te, null, l.createElement(We, {
+                    sa = null !== (e = null !== (t = null == _ ? void 0 : _.reportCount) && void 0 !== t ? t : null == _ || null === (n = _.feedbackReport) || void 0 === n ? void 0 : n.reportCount) && void 0 !== e ? e : 0;
+                return !I && (ce && N || P) ? !I && P ? l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
-                }, l.createElement(We, {
+                }, l.createElement(Ue, {
                     className: "align-items-center mb-1"
                 }, l.createElement(ft, {
                     role: "button",
                     "aria-label": "Back",
-                    onClick: Nn
+                    onClick: kn
                 }, l.createElement(c.$1, {
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Me, null, "Edit World Info"))), l.createElement(Te, {
+                })), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row align-items-center justify-content-center w-100"
                 }, l.createElement(c.qX, {
                     type: "error",
                     title: "Could not load World data",
-                    message: D
-                }))) : O ? l.createElement(Te, null, l.createElement(We, {
+                    message: Z
+                }))) : A ? l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
-                }, l.createElement(We, {
+                }, l.createElement(Ue, {
                     className: "align-items-center mb-1"
                 }, l.createElement(ft, {
                     role: "button",
                     "aria-label": "Back",
-                    onClick: Nn
+                    onClick: kn
                 }, l.createElement(c.$1, {
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Me, null, "Edit World Info")), Kt && !Se && null === Lt && l.createElement(mt, {
+                })), l.createElement(Ye, null, "Edit World Info")), Kt && !Se && null === Lt && l.createElement(ut, {
                     className: "animated fadeIn"
                 }, l.createElement(dt, {
-                    onClick: Wn,
+                    onClick: Un,
                     className: "w-100",
                     loading: j.changing,
                     positive: !0
-                }, "Save Changes"))), l.createElement(We, {
+                }, "Save Changes"))), l.createElement(Ue, {
                     className: "mb-2 align-items-sm-center justify-content-between flex-column flex-sm-row"
-                }), l.createElement(Te, {
+                }), l.createElement(We, {
                     className: "mb-5"
                 }, j.error && l.createElement(c.qX, {
                     type: "error",
@@ -1427,7 +1389,7 @@
                         target: "_blank",
                         rel: "noreferrer"
                     }, "Learn more here"))
-                }), Yn && l.createElement(c.qX, {
+                }), Fn && l.createElement(c.qX, {
                     title: "Unsupported Unity Version",
                     type: "warn",
                     message: l.createElement(l.Fragment, null, "Some of the uploaded world versions are using an unsupported Unity version.", l.createElement("br", null), l.createElement("b", null, "Please always use a Unity version VRChat supports."), l.createElement("br", null), l.createElement("br", null), l.createElement("a", {
@@ -1439,11 +1401,11 @@
                     type: "error",
                     title: "Capacity",
                     message: Lt
-                }), l.createElement(We, {
+                }), l.createElement(Ue, {
                     className: "align-items-start flex-column flex-sm-row"
-                }, l.createElement(Re, {
+                }, l.createElement(Te, {
                     className: "order-last order-sm-first w-100 w-sm-auto flex-grow-1"
-                }, l.createElement(qe, {
+                }, l.createElement(Ve, {
                     className: "w-100 w-sm-auto flex-grow-1"
                 }, l.createElement(at, {
                     className: "mt-0"
@@ -1453,11 +1415,11 @@
                     type: "text",
                     placeholder: "World Name",
                     value: ce.name,
-                    onChange: An("name"),
+                    onChange: Rn("name"),
                     onBlur: function() {
-                        ce.name && "" !== ce.name || ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
-                                name: kn.name
+                        ce.name && "" !== ce.name || me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                name: _n.name
                             })
                         }))
                     },
@@ -1468,7 +1430,7 @@
                     title: "World Name Error",
                     message: "World Name can't be empty",
                     slim: !0
-                }), l.createElement(at, null, "Maximum Capacity"), l.createElement(We, {
+                }), l.createElement(at, null, "Maximum Capacity"), l.createElement(Ue, {
                     className: "align-items-center w-100 mt-2 flex-column flex-sm-row"
                 }, l.createElement(c.II, {
                     ref: Ie,
@@ -1478,37 +1440,37 @@
                     placeholder: "Maximum Capacity",
                     inputMode: "number",
                     defaultValue: ce.capacity,
-                    onBlur: Rn("capacity"),
+                    onBlur: Tn("capacity"),
                     inputStyle: ze,
                     className: "flex-grow-1 w-100 me-0 me-sm-2"
                 }), l.createElement(c.zx, {
                     role: "checkbox",
-                    "aria-checked": _t,
-                    "aria-label": _t ? "Hide Maximum Capacity Help" : "Show Maximum Capacity Help",
+                    "aria-checked": Nt,
+                    "aria-label": Nt ? "Hide Maximum Capacity Help" : "Show Maximum Capacity Help",
                     onClick: function() {
-                        return Nt(!_t)
+                        return kt(!Nt)
                     },
                     className: "px-2 py-1 mt-2 mt-sm-0",
                     containerStyles: je,
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
-                    disabled: !_t
-                }))), _t && l.createElement(c.qX, {
+                    disabled: !Nt
+                }))), Nt && l.createElement(c.qX, {
                     type: "info",
                     title: "Maximum Capacity",
                     message: "Maximum Capacity controls how many users are allowed into one instance of a world at a time. Additional users are not allowed to join over this limit with very few exceptions, such as the world creator, instance owners, and group owners."
-                }), l.createElement(at, null, "Recommended Capacity"), l.createElement(We, {
+                }), l.createElement(at, null, "Recommended Capacity"), l.createElement(Ue, {
                     className: "align-items-center w-100 mt-2 flex-column flex-sm-row"
                 }, l.createElement(c.II, {
-                    ref: Ze,
+                    ref: De,
                     name: "recommended-capacity",
                     "aria-label": "Recommended Capacity",
                     type: "number",
                     placeholder: "Recommended Capacity",
                     inputMode: "number",
                     defaultValue: ce.recommendedCapacity,
-                    onBlur: Rn("recommendedCapacity"),
+                    onBlur: Tn("recommendedCapacity"),
                     inputStyle: ze,
                     className: "flex-grow-1 w-100 me-0 me-sm-2"
                 }), l.createElement(c.zx, {
@@ -1519,7 +1481,7 @@
                         return Pt(!It)
                     },
                     className: "px-2 py-1 mt-2 mt-sm-0",
-                    containerStyles: Oe,
+                    containerStyles: Ae,
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
@@ -1533,80 +1495,80 @@
                     "aria-label": "World Description",
                     placeholder: "World Description",
                     value: ce.description,
-                    onChange: An("description"),
+                    onChange: Rn("description"),
                     inputStyle: ze,
                     rows: "4",
                     className: "mt-2"
-                }), l.createElement(at, null, "Tags"), l.createElement(Ye, {
+                }), l.createElement(at, null, "Tags"), l.createElement(Fe, {
                     value: ia,
                     placeholder: "E.g., adventure, game, chill",
                     suggestions: [],
                     onSelectValue: function(e) {
                         var t, n, a = e.startsWith("system_") || e.startsWith("admin_");
-                        if ((y || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
+                        if ((v || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
                             var r = e.replace(/\s/gi, "_").replace(/\W/gi, "");
-                            y && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || ue((function(e) {
+                            v && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || me((function(e) {
                                 var t;
-                                return Fe(Fe({}, e), {}, {
-                                    tags: [].concat((0, A.Z)(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []), [r])
+                                return Oe(Oe({}, e), {}, {
+                                    tags: [].concat((0, R.Z)(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []), [r])
                                 })
                             }))
                         }
                     },
                     onRemoveValue: function(e) {
-                        ue((function(t) {
+                        me((function(t) {
                             var n, a;
-                            return Fe(Fe({}, t), {}, {
+                            return Oe(Oe({}, t), {}, {
                                 tags: null !== (n = null == t || null === (a = t.tags) || void 0 === a ? void 0 : a.filter((function(t) {
                                     return t !== e
                                 }))) && void 0 !== n ? n : []
                             })
                         }))
                     },
-                    maxEntries: y ? void 0 : 5,
-                    maxLength: y ? void 0 : 100,
+                    maxEntries: v ? void 0 : 5,
+                    maxLength: v ? void 0 : 100,
                     maxEntriesErrorText: "You can only have up to 5 tags",
                     maxLengthErrorText: "Entered tag is too long",
                     className: "mt-2",
                     label: "Tags",
                     addNewLabel: "Add new tag",
                     allowNew: !0
-                }), l.createElement(at, null, "Content Warnings"), l.createElement(Re, {
+                }), l.createElement(at, null, "Content Warnings"), l.createElement(Te, {
                     className: "py-2 gap-2"
                 }, l.createElement(c.ks, {
                     tags: null == ce ? void 0 : ce.tags,
-                    isMod: y,
+                    isMod: v,
                     onSelectValues: function(e) {
-                        ue((function(t) {
-                            return Fe(Fe({}, t), {}, {
-                                tags: [].concat((0, A.Z)(t.tags), (0, A.Z)(e))
+                        me((function(t) {
+                            return Oe(Oe({}, t), {}, {
+                                tags: [].concat((0, R.Z)(t.tags), (0, R.Z)(e))
                             })
                         }))
                     },
                     onRemoveValue: function(e) {
-                        ue((function(t) {
-                            return Fe(Fe({}, t), {}, {
+                        me((function(t) {
+                            return Oe(Oe({}, t), {}, {
                                 tags: t.tags.filter((function(t) {
                                     return t !== e
                                 }))
                             })
                         }))
                     }
-                })), l.createElement(at, null, "Avatar Scaling"), l.createElement(We, {
+                })), l.createElement(at, null, "Avatar Scaling"), l.createElement(Ue, {
                     className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                 }, l.createElement(lt, {
                     type: "button",
                     "aria-label": "Toggle Avatar Scaling",
                     onClick: function() {
-                        ce.tags.includes("feature_avatar_scaling_disabled") ? ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
+                        ce.tags.includes("feature_avatar_scaling_disabled") ? me((function(e) {
+                            return Oe(Oe({}, e), {}, {
                                 tags: e.tags.filter((function(e) {
                                     return "feature_avatar_scaling_disabled" !== e
                                 }))
                             })
-                        })) : ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
-                                tags: [].concat((0, A.Z)(e.tags), ["feature_avatar_scaling_disabled"])
+                        })) : me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: [].concat((0, R.Z)(e.tags), ["feature_avatar_scaling_disabled"])
                             })
                         }))
                     },
@@ -1616,24 +1578,24 @@
                     expand: !0
                 }, l.createElement(ot, null, "Avatar Scaling ", Gn ? "Enabled" : "Disabled"), Gn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: M.LE
+                    icon: Y.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
-                    icon: W.NB,
+                    icon: U.NB,
                     disabled: !0
                 })), l.createElement(c.zx, {
                     role: "checkbox",
-                    "aria-checked": At,
-                    "aria-label": At ? "Hide Avatar Scaling Help" : "Show Avatar Scaling Help",
+                    "aria-checked": Rt,
+                    "aria-label": Rt ? "Hide Avatar Scaling Help" : "Show Avatar Scaling Help",
                     onClick: function() {
-                        return Rt(!At)
+                        return Tt(!Rt)
                     },
                     className: "px-2 py-1",
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
-                    disabled: !At
-                }))), At && l.createElement(c.qX, {
+                    disabled: !Rt
+                }))), Rt && l.createElement(c.qX, {
                     type: "info",
                     title: "What is Avatar Scaling"
                 }, "Enabling this will let users use Avatar Scaling in your world. If you want finer control, use Udon to control scaling in your world.", " ", l.createElement("a", {
@@ -1659,13 +1621,13 @@
                     var t, n, a = (t = e.internalName, n = "feature_".concat(t, "_disabled"), !ce.tags.includes(n));
                     return l.createElement("div", {
                         key: "setting-".concat(e.internalName)
-                    }, l.createElement(We, {
+                    }, l.createElement(Ue, {
                         className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                     }, l.createElement(lt, {
                         type: "button",
                         "aria-label": "Toggle ".concat(e.displayName),
                         onClick: function() {
-                            return Tn(e.internalName)
+                            return Wn(e.internalName)
                         },
                         className: "me-0 me-sm-2 mb-2 mb-sm-0 flex-grow-1 w-100",
                         neutral: !a,
@@ -1673,31 +1635,31 @@
                         expand: !0
                     }, l.createElement(ot, null, e.displayName, " ", a ? "Enabled" : "Disabled"), a ? l.createElement(c.$1, {
                         width: 20,
-                        icon: M.LE
+                        icon: Y.LE
                     }) : l.createElement(c.$1, {
                         width: 20,
-                        icon: W.NB,
+                        icon: U.NB,
                         disabled: !0
                     }))))
                 })), l.createElement(Pe, {
                     world: ce,
-                    handleFieldEdit: An,
-                    handleFeatureToggle: Tn
-                }), l.createElement(at, null, "Focus View"), l.createElement(We, {
+                    handleFieldEdit: Rn,
+                    handleFeatureToggle: Wn
+                }), l.createElement(at, null, "Focus View"), l.createElement(Ue, {
                     className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                 }, l.createElement(lt, {
                     type: "button",
                     "aria-label": "Toggle Focus View",
                     onClick: function() {
-                        ce.tags.includes("feature_focus_view_disabled") ? ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
+                        ce.tags.includes("feature_focus_view_disabled") ? me((function(e) {
+                            return Oe(Oe({}, e), {}, {
                                 tags: e.tags.filter((function(e) {
                                     return "feature_focus_view_disabled" !== e
                                 }))
                             })
-                        })) : ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
-                                tags: [].concat((0, A.Z)(e.tags), ["feature_focus_view_disabled"])
+                        })) : me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: [].concat((0, R.Z)(e.tags), ["feature_focus_view_disabled"])
                             })
                         }))
                     },
@@ -1707,31 +1669,31 @@
                     expand: !0
                 }, l.createElement(ot, null, "Focus View ", Kn ? "Enabled" : "Disabled"), Kn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: M.LE
+                    icon: Y.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
-                    icon: W.NB,
+                    icon: U.NB,
                     disabled: !0
                 })), l.createElement(c.zx, {
                     role: "checkbox",
-                    "aria-checked": Mt,
-                    "aria-label": Mt ? "Hide Focus View Help" : "Show Focus View Help",
+                    "aria-checked": Yt,
+                    "aria-label": Yt ? "Hide Focus View Help" : "Show Focus View Help",
                     onClick: function() {
-                        return Ut(!Mt)
+                        return Mt(!Yt)
                     },
                     className: "px-2 py-1",
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
-                    disabled: !Mt
-                }))), Mt && l.createElement(c.qX, {
+                    disabled: !Yt
+                }))), Yt && l.createElement(c.qX, {
                     type: "info",
                     title: "What is Focus View"
                 }, "Enabling this will let users use Focus View in your world. If you want finer control, edit the VRC_UIShape component on a canvas to control focus view in your world.", " ", l.createElement("a", {
                     href: "https://creators.vrchat.com/worlds/components/vrc_uishape#focus-view",
                     rel: "noreferrer",
                     target: "_blank"
-                }, "Check the docs here.")), l.createElement(at, null, "YouTube Preview Link"), l.createElement(We, {
+                }, "Check the docs here.")), l.createElement(at, null, "YouTube Preview Link"), l.createElement(Ue, {
                     className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                 }, l.createElement(c.II, {
                     name: "worldTrailer",
@@ -1742,8 +1704,8 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             n = void 0 === t ? "" : t;
-                        ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
+                        me((function(e) {
+                            return Oe(Oe({}, e), {}, {
                                 previewYoutubeId: (0, ge.dv)(n)
                             })
                         }))
@@ -1777,7 +1739,7 @@
                         return /.+\..+/.test(e)
                     },
                     onChange: function(e) {
-                        return ue(Fe(Fe({}, ce), {}, {
+                        return me(Oe(Oe({}, ce), {}, {
                             urlList: e.filter((function(e) {
                                 return e
                             }))
@@ -1792,13 +1754,13 @@
                     className: "mt-2"
                 }, l.createElement(c.oI, null, l.createElement(pt, null, "Danger Zone")), l.createElement(c.Ao, null, l.createElement(at, {
                     className: "mt-0"
-                }, "World Visibility"), l.createElement(We, {
+                }, "World Visibility"), l.createElement(Ue, {
                     className: "align-items-sm-center flex-column flex-sm-row mt-2 w-100 flex-grow-1"
                 }, l.createElement($e, {
                     className: "flex-1 me-0 me-sm-2 mb-2 mb-sm-0"
-                }, ca), l.createElement(Re, {
+                }, ca), l.createElement(Te, {
                     className: "mb-2 mb-sm-0"
-                }, l.createElement(We, null, y && Xn && l.createElement(c.zx, {
+                }, l.createElement(Ue, null, v && Xn && l.createElement(c.zx, {
                     className: "px-3 py-1 me-0 me-sm-2",
                     expand: Se,
                     onClick: function() {
@@ -1829,33 +1791,33 @@
                     className: "px-3 py-1",
                     expand: Se,
                     onClick: function() {
-                        _n(!0)
+                        Nn(!0)
                     },
                     positive: !0,
                     loading: wt
                 }, l.createElement(c.$1, {
-                    icon: Y.jZ,
+                    icon: F.jZ,
                     className: "me-2"
                 }), "Publish to Community Labs"), na && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     disabled: !0
                 }, l.createElement(c.$1, {
-                    icon: W.NB,
+                    icon: U.NB,
                     className: "me-2"
                 }), "You can't publish worlds right now"), aa && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     disabled: !0
                 }, l.createElement(c.$1, {
-                    icon: W.NB,
+                    icon: U.NB,
                     className: "me-2"
-                }), "You don't have enough trust to publish worlds, yet.")))), yt && "publish" === Ae && l.createElement(c.qX, {
+                }), "You don't have enough trust to publish worlds, yet.")))), vt && "publish" === Re && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now public!"
                 }, l.createElement(i.rU, {
                     to: "/home/world/".concat(ce.id)
-                }, "Check it out!")), yt && "unpublish" === Ae && l.createElement(c.qX, {
+                }, "Check it out!")), vt && "unpublish" === Re && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now private!",
                     message: "Your world is now private!",
@@ -1867,26 +1829,26 @@
                 }), Cn && l.createElement(be, {
                     onConfirm: Ln,
                     onCancel: function() {
-                        _n(!1)
+                        Nn(!1)
                     }
-                }), on && (y ? l.createElement(ye, {
+                }), on && (v ? l.createElement(ve, {
                     onConfirm: In,
                     onCancel: Pn
                 }) : l.createElement(we, {
                     onConfirm: In,
                     onCancel: Pn
-                })), nn && (y ? l.createElement(xe, {
-                    onConfirm: Dn,
-                    onCancel: Zn
-                }) : Vn && l.createElement(Ee, {
-                    onConfirm: Dn,
-                    onCancel: Zn
+                })), nn && (v ? l.createElement(xe, {
+                    onConfirm: Zn,
+                    onCancel: Dn
+                }) : qn && l.createElement(ye, {
+                    onConfirm: Zn,
+                    onCancel: Dn
                 })), gn && l.createElement(Ce, {
-                    onConfirm: Fn,
+                    onConfirm: On,
                     onCancel: function() {
                         hn(!1)
                     }
-                }), l.createElement(ut, {
+                }), l.createElement(mt, {
                     className: "px-2 me-0 me-sm-3 mt-2 align-self-center align-self-sm-start"
                 }, l.createElement(c.$1, {
                     icon: te.sp,
@@ -1895,21 +1857,21 @@
                     href: "https://docs.vrchat.com/docs/submitting-a-world-to-be-made-public",
                     target: "_blank",
                     rel: "noreferrer"
-                }, "Learn more about Community Labs")), l.createElement(at, null, "World Debugging"), l.createElement(We, {
+                }, "Learn more about Community Labs")), l.createElement(at, null, "World Debugging"), l.createElement(Ue, {
                     className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                 }, l.createElement(lt, {
                     type: "button",
                     "aria-label": "Toggle World Debugging",
                     onClick: function() {
-                        ce.tags.includes("debug_allowed") ? ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
+                        ce.tags.includes("debug_allowed") ? me((function(e) {
+                            return Oe(Oe({}, e), {}, {
                                 tags: e.tags.filter((function(e) {
                                     return "debug_allowed" !== e
                                 }))
                             })
-                        })) : ue((function(e) {
-                            return Fe(Fe({}, e), {}, {
-                                tags: [].concat((0, A.Z)(e.tags), ["debug_allowed"])
+                        })) : me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: [].concat((0, R.Z)(e.tags), ["debug_allowed"])
                             })
                         }))
                     },
@@ -1919,17 +1881,17 @@
                     expand: !0
                 }, l.createElement(ot, null, "World Debugging ", Jn ? "Enabled" : "Disabled"), Jn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: M.LE
+                    icon: Y.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
-                    icon: W.NB,
+                    icon: U.NB,
                     disabled: !0
                 })), l.createElement(c.zx, {
                     role: "checkbox",
                     "aria-checked": $t,
                     "aria-label": $t ? "Hide World Debug Help" : "Show World Debug Help",
                     onClick: function() {
-                        return qt(!$t)
+                        return Vt(!$t)
                     },
                     className: "px-2 py-1",
                     neutral: !0
@@ -1943,25 +1905,25 @@
                     href: "https://docs.vrchat.com/docs/keyboard-and-mouse",
                     target: "_blank",
                     rel: "noreferrer"
-                }, "See the keyboard binding documentation for more details"), "."), Mn.platformsList.length > 1 && l.createElement(l.Fragment, null, l.createElement(at, null, "World Platforms"), l.createElement(We, {
+                }, "See the keyboard binding documentation for more details"), "."), Yn.platformsList.length > 1 && l.createElement(l.Fragment, null, l.createElement(at, null, "World Platforms"), l.createElement(Ue, {
                     className: "align-items-center justify-content-between w-100 flex-column flex-sm-row mt-2 tw-gap-3"
-                }, Mn.platformsList.map((function(e) {
+                }, Yn.platformsList.map((function(e) {
                     var t;
                     return l.createElement(c.zx, {
                         key: e,
-                        onClick: On(e),
+                        onClick: An(e),
                         loading: wt,
                         expand: !0,
                         danger: !0
                     }, l.createElement(c.$1, {
                         icon: ee.$,
                         className: "me-2"
-                    }), "Delete ", (null === (t = Ne.VT[e]) || void 0 === t ? void 0 : t.label) || e, " Version")
-                })))), null != vn && l.createElement(_e, {
-                    platformName: (null === (a = Ne.VT[vn]) || void 0 === a ? void 0 : a.label) || vn,
+                    }), "Delete ", (null === (t = ke.VT[e]) || void 0 === t ? void 0 : t.label) || e, " Version")
+                })))), null != En && l.createElement(Ne, {
+                    platformName: (null === (a = ke.VT[En]) || void 0 === a ? void 0 : a.label) || En,
                     onConfirm: jn,
                     onCancel: function() {
-                        yn(null)
+                        vn(null)
                     }
                 }), l.createElement(at, null, "World Deletion"), l.createElement(c.zx, {
                     className: "px-3 py-1 mt-2",
@@ -1974,24 +1936,24 @@
                 }, l.createElement(c.$1, {
                     icon: ee.$,
                     className: "me-2"
-                }), "Delete World Completely"), mn && l.createElement(ve, {
+                }), "Delete World Completely"), un && l.createElement(Ee, {
                     onConfirm: Sn,
                     onCancel: function() {
                         dn(!1)
                     }
-                })))), l.createElement(Ve, {
+                })))), l.createElement(qe, {
                     className: "ms-0 ms-sm-3 mb-3 mb-sm-0"
                 }, l.createElement(Xe, null, l.createElement(c.oI, null, l.createElement(Je, null, l.createElement(Ge, null, l.createElement(Ke, {
                     src: ce.imageUrl,
                     alt: ce.name
-                }))), l.createElement(We, {
+                }))), l.createElement(Ue, {
                     className: "justify-content-between align-items-center"
                 }, l.createElement(i.rU, {
                     className: "tw-wrap-break-word tw-overflow-hidden tw-overflow-ellipsis",
                     to: "/home/world/".concat(ce.id)
                 }, l.createElement(Qe, {
                     className: "tw-overflow-hidden tw-overflow-ellipsis"
-                }, null == kn ? void 0 : kn.name)))), l.createElement(c.Ao, null, l.createElement(Re, null, l.createElement(Re, null, l.createElement(et, null, l.createElement(c.$1, {
+                }, null == _n ? void 0 : _n.name)))), l.createElement(c.Ao, null, l.createElement(Te, null, l.createElement(Te, null, l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: Q.IL,
                     color: "#54b5c5",
@@ -2047,9 +2009,9 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "World Heat"
-                }, l.createElement(nt, null, "Heat"), l.createElement(We, {
+                }, l.createElement(nt, null, "Heat"), l.createElement(Ue, {
                     className: "align-items-center"
-                }, y ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
+                }, v ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
                     return l.createElement(c.$1, {
                         key: "heat-".concat(e),
                         size: "md",
@@ -2057,19 +2019,19 @@
                         color: "#919191",
                         className: "ms-1"
                     })
-                })))))), l.createElement(Re, {
+                })))))), l.createElement(Te, {
                     className: "mt-4"
-                }, Un && l.createElement(et, {
+                }, Mn && l.createElement(et, {
                     role: "note",
                     title: "Cross-Platform"
                 }, l.createElement(c.$1, {
                     width: 20,
-                    icon: V.vq,
+                    icon: q.vq,
                     color: "#54b5c5",
                     className: "me-2"
                 }), "Cross-Platform"), l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
-                    icon: q.r6,
+                    icon: V.r6,
                     color: "#54b5c5",
                     className: "me-2"
                 }), l.createElement(tt, {
@@ -2085,7 +2047,7 @@
                     title: "Publish Date"
                 }, l.createElement(nt, null, "Published"), h()(ce.publicationDate).format("MMM DD YYYY"))), "none" !== ce.labsPublicationDate && l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.jZ,
+                    icon: F.jZ,
                     color: "#54b5c5",
                     className: "me-2"
                 }), l.createElement(tt, {
@@ -2106,23 +2068,23 @@
                     rel: "noreferrer"
                 }, l.createElement(c.zx, null, "Download Analytics")), l.createElement(He, {
                     className: "mt-2"
-                }, l.createElement(Re, null, l.createElement(Re, {
+                }, l.createElement(Te, null, l.createElement(Te, {
                     role: "group",
                     "aria-labelledby": "UnityVersionsLabel"
                 }, l.createElement(et, {
                     id: "UnityVersionsLabel"
                 }, l.createElement(c.$1, {
                     width: 20,
-                    icon: U.kl,
+                    icon: M.kl,
                     color: "#54b5c5",
                     className: "me-2"
-                }), "Unity Versions"), l.createElement(Re, null, Mn.versionsList.map((function(e) {
+                }), "Unity Versions"), l.createElement(Te, null, Yn.versionsList.map((function(e) {
                     return e.isSupported ? l.createElement(it, {
                         title: "Unity Version",
                         key: e.name,
                         current: !0
                     }, e.name, " ", l.createElement(c.$1, {
-                        icon: M.LE,
+                        icon: Y.LE,
                         className: "mx-2",
                         color: "var(--bs-success)"
                     }), " VRChat Supported") : e.isUnsupported ? l.createElement(it, {
@@ -2130,14 +2092,14 @@
                         key: e.name,
                         current: !0
                     }, e.name, " ", l.createElement(c.$1, {
-                        icon: W.NB,
+                        icon: U.NB,
                         className: "mx-2",
                         color: "var(--bs-danger)"
                     }), " Unsupported") : l.createElement(it, {
                         title: "Unity Version",
                         key: e.name
                     }, e.name)
-                })))), l.createElement(Re, {
+                })))), l.createElement(Te, {
                     role: "group",
                     "aria-labelledby": "PlatformsLabel"
                 }, l.createElement(et, {
@@ -2145,14 +2107,14 @@
                     id: "PlatformsLabel"
                 }, l.createElement(c.$1, {
                     width: 20,
-                    icon: T.l9,
+                    icon: W.l9,
                     color: "#54b5c5",
                     className: "me-2"
-                }), "Platforms"), l.createElement(Re, null, Mn.platformsList.map((function(e) {
+                }), "Platforms"), l.createElement(Te, null, Yn.platformsList.map((function(e) {
                     var t;
                     return l.createElement(ct, {
                         key: e
-                    }, (null === (t = Ne.VT[e]) || void 0 === t ? void 0 : t.label) || e)
+                    }, (null === (t = ke.VT[e]) || void 0 === t ? void 0 : t.label) || e)
                 })))))), $n && l.createElement(st, {
                     title: "Outdated Unity Version",
                     message: l.createElement(l.Fragment, null, "It is recommended to always use the latest Unity version VRChat supports for your world development.", l.createElement("br", null), "This helps avoid possible incompatibility issues.", l.createElement("br", null), l.createElement("br", null), l.createElement("a", {
@@ -2160,43 +2122,43 @@
                         target: "_blank",
                         rel: "noreferrer"
                     }, "Learn more about upgrading"))
-                }), Kt && Se && null === Lt && l.createElement(mt, {
+                }), Kt && Se && null === Lt && l.createElement(ut, {
                     className: "animated slideInUp"
                 }, l.createElement(dt, {
-                    onClick: Wn,
+                    onClick: Un,
                     className: "w-100",
                     loading: j.changing,
                     positive: !0
-                }, "Save Changes")))))) : l.createElement(Te, null, l.createElement(We, {
+                }, "Save Changes")))))) : l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
-                }, l.createElement(We, {
+                }, l.createElement(Ue, {
                     className: "align-items-center mb-1"
                 }, l.createElement(ft, {
                     role: "button",
                     "aria-label": "Back",
-                    onClick: Nn
+                    onClick: kn
                 }, l.createElement(c.$1, {
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Me, null, "Edit World Info"))), l.createElement(Te, {
+                })), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row align-items-center justify-content-center w-100"
                 }, l.createElement(c.qX, {
                     type: "error",
                     title: "Cannot edit this world",
                     message: "You can only edit your own worlds!"
-                }))) : l.createElement(Te, null, l.createElement(We, {
+                }))) : l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
-                }, l.createElement(We, {
+                }, l.createElement(Ue, {
                     className: "align-items-center mb-1"
                 }, l.createElement(c.$1, {
                     icon: ae.ac,
                     color: "white",
                     size: "2x",
-                    onClick: Nn
-                }), l.createElement(Me, null, "Edit World Info"))), l.createElement(Te, {
+                    onClick: kn
+                }), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row"
-                }, l.createElement(Re, {
+                }, l.createElement(Te, {
                     className: "flex-grow-1 order-last order-sm-first"
                 }, l.createElement(c.UU, {
                     height: "500px",
@@ -2207,7 +2169,7 @@
                     height: "250px",
                     width: "100%",
                     radius: 8
-                })), l.createElement(Ue, {
+                })), l.createElement(Me, {
                     className: "flex-shrink-0 ms-0 ms-sm-2"
                 }, l.createElement(c.UU, {
                     width: "100%",
@@ -2221,31 +2183,31 @@
                     radius: 8
                 }))))
             };
-            var Re = (0, a.Z)("div", {
+            var Te = (0, a.Z)("div", {
                     target: "e7ur3i630"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                Te = (0, a.Z)(Re, {
+                We = (0, a.Z)(Te, {
                     target: "e7ur3i629"
                 })({
                     name: "1aea1rw",
                     styles: "align-self:center;width:100%;max-width:1200px"
                 }),
-                We = (0, a.Z)("div", {
+                Ue = (0, a.Z)("div", {
                     target: "e7ur3i628"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                Me = (0, a.Z)("h2", {
+                Ye = (0, a.Z)("h2", {
                     target: "e7ur3i627"
                 })({
                     name: "1kdats7",
                     styles: "margin:0 0 0 1rem"
                 }),
-                Ue = (0, a.Z)(Re, {
+                Me = (0, a.Z)(Te, {
                     target: "e7ur3i626"
                 })({
                     name: "1g3t9m2",
@@ -2255,25 +2217,25 @@
                     name: "ilysiq",
                     styles: "background-color:#252a30;border-radius:6px;border:none;color:white!important"
                 },
-                Ye = (0, a.Z)(c.wg, {
+                Fe = (0, a.Z)(c.wg, {
                     target: "e7ur3i625"
                 })(ze, ";"),
                 $e = (0, a.Z)("div", {
                     target: "e7ur3i624"
                 })(ze, " padding:0.5rem;line-height:1.25;"),
-                qe = (0, a.Z)(Re, {
+                Ve = (0, a.Z)(Te, {
                     target: "e7ur3i623"
                 })({
                     name: "1j03xl7",
                     styles: "background-color:#181b1f;border-radius:8px;padding:0.9rem"
                 }),
-                Ve = (0, a.Z)(Re, {
+                qe = (0, a.Z)(Te, {
                     target: "e7ur3i622"
                 })({
                     name: "1budlv3",
                     styles: "width:100%;@media (min-width: 576px){width:290px;}"
                 }),
-                Xe = (0, a.Z)(Re, {
+                Xe = (0, a.Z)(Te, {
                     target: "e7ur3i621"
                 })({
                     name: "1r30s8q",
@@ -2312,13 +2274,13 @@
                     name: "c2kuld",
                     styles: "font-size:1.4em;margin-top:0.75rem;margin-bottom:0;color:var(--bs-primary);&:hover{color:var(--bs-primary);}"
                 }),
-                et = (0, a.Z)(We, {
+                et = (0, a.Z)(Ue, {
                     target: "e7ur3i614"
                 })({
                     name: "1xhzkqb",
                     styles: "align-items:center;color:#919191;font-weight:bold"
                 }),
-                tt = (0, a.Z)(We, {
+                tt = (0, a.Z)(Ue, {
                     target: "e7ur3i613"
                 })({
                     name: "1xqm3l8",
@@ -2369,13 +2331,13 @@
                     name: "1268sfy",
                     styles: "@media (min-width: 576px){max-width:290px;}"
                 }),
-                ut = (0, a.Z)(We, {
+                mt = (0, a.Z)(Ue, {
                     target: "e7ur3i64"
                 })({
                     name: "1h3rtzg",
                     styles: "align-items:center"
                 }),
-                mt = (0, a.Z)("div", {
+                ut = (0, a.Z)("div", {
                     target: "e7ur3i63"
                 })({
                     name: "mcy7ym",
@@ -2403,7 +2365,7 @@
                 ht = n.n(gt),
                 bt = n(9669),
                 wt = n.n(bt),
-                vt = function(e) {
+                Et = function(e) {
                     var t = e.userId,
                         n = e.number,
                         a = void 0 === n ? 100 : n,
@@ -2413,8 +2375,8 @@
                         i = void 0 === o ? "all" : o,
                         c = e.sort,
                         s = void 0 === c ? "created" : c,
-                        u = e.order,
-                        m = void 0 === u ? "descending" : u;
+                        m = e.order,
+                        u = void 0 === m ? "descending" : m;
                     return {
                         type: "MY_CONTENT_LOAD_WORLDS",
                         payload: wt().get(window.apiUrl("/api/1/worlds"), {
@@ -2424,7 +2386,7 @@
                                 offset: l,
                                 releaseStatus: i,
                                 sort: s,
-                                order: m
+                                order: u
                             }
                         }),
                         meta: {
@@ -2433,7 +2395,7 @@
                         }
                     }
                 },
-                yt = function(e) {
+                vt = function(e) {
                     var t = e.worldIds;
                     return {
                         type: "MY_CONTENT_BULK_CHECK_WORLD_STATS",
@@ -2442,7 +2404,7 @@
                         })))
                     }
                 },
-                Et = n(89182),
+                yt = n(89182),
                 xt = n(22202);
 
             function Ct(e, t) {
@@ -2456,18 +2418,18 @@
                 return n
             }
 
-            function _t(e) {
+            function Nt(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? Ct(Object(n), !0).forEach((function(t) {
-                        (0, N.Z)(e, t, n[t])
+                        (0, k.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ct(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Nt = [{
+            var kt = [{
                     label: "Creation Date",
                     value: "created"
                 }, {
@@ -2480,7 +2442,7 @@
                     label: "Popularity",
                     value: "popularity"
                 }],
-                kt = {
+                _t = {
                     created: [{
                         label: "Newest First",
                         value: "descending"
@@ -2516,89 +2478,89 @@
                     n = new URLSearchParams(t).get("scrollTo"),
                     a = (0, i.lr)(),
                     r = (0, s.Z)(a, 2),
-                    u = (r[0], r[1]),
-                    m = new URLSearchParams(t),
-                    d = m.get("order"),
-                    p = m.get("sort"),
-                    f = "false" !== m.get("publicFirst"),
+                    m = (r[0], r[1]),
+                    u = new URLSearchParams(t),
+                    d = u.get("order"),
+                    p = u.get("sort"),
+                    f = "false" !== u.get("publicFirst"),
                     g = (0, xt.XC)().data,
                     h = (0, b.v9)((function(e) {
                         return e.myContent.worlds
                     })),
                     w = h.list,
-                    v = h.loading,
-                    y = h.loadedAt,
-                    E = h.error,
+                    E = h.loading,
+                    v = h.loadedAt,
+                    y = h.error,
                     x = h.errorMessage,
                     C = h.allPagesLoaded,
-                    _ = (0, b.v9)((function(e) {
+                    N = (0, b.v9)((function(e) {
                         return e.myContent.worldStats
                     })),
-                    N = l.useState(null == f || f),
-                    k = (0, s.Z)(N, 2),
-                    S = k[0],
-                    I = k[1],
+                    k = l.useState(null == f || f),
+                    _ = (0, s.Z)(k, 2),
+                    S = _[0],
+                    I = _[1],
                     P = l.useRef(null != p ? p : "updated"),
-                    D = l.useState(null != p ? p : "updated"),
-                    Z = (0, s.Z)(D, 2),
-                    L = Z[0],
-                    F = Z[1],
-                    O = l.useRef(null != d ? d : "descending"),
+                    Z = l.useState(null != p ? p : "updated"),
+                    D = (0, s.Z)(Z, 2),
+                    L = D[0],
+                    O = D[1],
+                    A = l.useRef(null != d ? d : "descending"),
                     j = l.useState(null != d ? d : "descending"),
-                    A = (0, s.Z)(j, 2),
-                    T = A[0],
-                    W = A[1],
-                    U = l.useState(""),
-                    z = (0, s.Z)(U, 2),
-                    Y = z[0],
+                    R = (0, s.Z)(j, 2),
+                    W = R[0],
+                    U = R[1],
+                    M = l.useState(""),
+                    z = (0, s.Z)(M, 2),
+                    F = z[0],
                     $ = z[1],
-                    q = l.useState(0),
-                    V = (0, s.Z)(q, 2),
-                    X = V[0],
-                    H = V[1],
+                    V = l.useState(0),
+                    q = (0, s.Z)(V, 2),
+                    X = q[0],
+                    H = q[1],
                     B = l.useRef(0);
                 l.useEffect((function() {
-                    if (!v && null != g && g.id) {
-                        var t = !y && 0 === w.length,
-                            n = L !== P.current || T !== O.current,
-                            a = Date.now() - y > 6e4;
-                        (t || a || n) && (H(0), B.current = 0, e(vt({
+                    if (!E && null != g && g.id) {
+                        var t = !v && 0 === w.length,
+                            n = L !== P.current || W !== A.current,
+                            a = Date.now() - v > 6e4;
+                        (t || a || n) && (H(0), B.current = 0, e(Et({
                             userId: null == g ? void 0 : g.id,
                             number: 50,
                             offset: 0,
                             sort: L,
-                            order: T
+                            order: W
                         })))
                     }
-                }), [null == g ? void 0 : g.id, L, T, y, v]), l.useEffect((function() {
-                    v || C || !y || (w.length - B.current < 50 ? e({
+                }), [null == g ? void 0 : g.id, L, W, v, E]), l.useEffect((function() {
+                    E || C || !v || (w.length - B.current < 50 ? e({
                         type: "MY_CONTENT_MARK_ALL_PAGES_LOADED"
                     }) : H(B.current + 50))
-                }), [w, v, y, C]), l.useEffect((function() {
-                    B.current !== X && (B.current = X, e(vt({
+                }), [w, E, v, C]), l.useEffect((function() {
+                    B.current !== X && (B.current = X, e(Et({
                         userId: g.id,
                         number: 50,
                         offset: X,
                         sort: L,
-                        order: T
+                        order: W
                     })))
                 }), [X]), l.useEffect((function() {
                     if (P.current !== L) {
                         var e = new URLSearchParams(null != t ? t : "");
-                        e.delete("scrollTo"), e.set("sort", L), u(e)
+                        e.delete("scrollTo"), e.set("sort", L), m(e)
                     }
                     P.current = L
                 }), [L]), l.useEffect((function() {
-                    if (O.current !== T) {
+                    if (A.current !== W) {
                         var e = new URLSearchParams(null != t ? t : "");
-                        e.delete("scrollTo"), e.set("order", T), u(e)
+                        e.delete("scrollTo"), e.set("order", W), m(e)
                     }
-                    O.current = T
-                }), [T]), l.useEffect((function() {
+                    A.current = W
+                }), [W]), l.useEffect((function() {
                     var e = new URLSearchParams(null != t ? t : "");
-                    e.delete("scrollTo"), S ? e.delete("publicFirst") : e.set("publicFirst", "false"), u(e)
+                    e.delete("scrollTo"), S ? e.delete("publicFirst") : e.set("publicFirst", "false"), m(e)
                 }), [S]), l.useEffect((function() {
-                    n && !v && C && setTimeout((function() {
+                    n && !E && C && setTimeout((function() {
                         var e = document.querySelector('[data-scrollkey="'.concat(n, '"]'));
                         null == e || e.scrollIntoView({
                             behavior: "smooth",
@@ -2608,14 +2570,14 @@
                             e.classList.add("pulse")
                         }), 1e3)
                     }))
-                }), [n, v, C]), l.useEffect((function() {
+                }), [n, E, C]), l.useEffect((function() {
                     var t = function() {
-                        var t = (0, R.Z)(me().mark((function t() {
+                        var t = (0, T.Z)(ue().mark((function t() {
                             var n, a;
-                            return me().wrap((function(t) {
+                            return ue().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        if (!v && !E) {
+                                        if (!E && !y) {
                                             t.next = 2;
                                             break
                                         }
@@ -2635,7 +2597,7 @@
                                             t.next = 12;
                                             break
                                         }
-                                        return t.next = 9, e(yt({
+                                        return t.next = 9, e(vt({
                                             worldIds: n.slice(a, a + 2).map((function(e) {
                                                 return e.id
                                             }))
@@ -2654,16 +2616,16 @@
                         }
                     }();
                     t()
-                }), [w, v, E, C]);
+                }), [w, E, y, C]);
                 var J = l.useMemo((function() {
                         return ht()(w, (function(e) {
                             return "public" === e.releaseStatus ? -1 : 1
                         }))
                     }), [w]),
                     G = l.useMemo((function() {
-                        if (!Y) return S ? J : w;
+                        if (!F) return S ? J : w;
                         try {
-                            var e = new RegExp(Y, "i");
+                            var e = new RegExp(F, "i");
                             return (S ? J : w).filter((function(t) {
                                 var n = "".concat(t.name, " ").concat(t.id, " ").concat(t.description, " ").concat(t.unityPackages.map((function(e) {
                                     return e.platform
@@ -2673,7 +2635,7 @@
                         } catch (e) {
                             return S ? J : w
                         }
-                    }), [S, w, J, Y]);
+                    }), [S, w, J, F]);
                 return l.createElement(It, {
                     className: "mt-2"
                 }, l.createElement(c.$4, null, "My Worlds"), l.createElement("h2", {
@@ -2687,23 +2649,23 @@
                     type: "text",
                     "aria-label": "World Filter",
                     placeholder: "Search Your Worlds",
-                    value: Y,
+                    value: F,
                     onChange: function(e) {
                         var t = e.target.value;
                         return $(void 0 === t ? "" : t)
                     }
-                }), l.createElement(Ft, {
+                }), l.createElement(Ot, {
                     className: "me-0 me-sm-2 mb-2 mb-sm-0",
                     label: "Sorting",
                     value: L,
-                    options: Nt,
-                    onChange: F
+                    options: kt,
+                    onChange: O
                 }), l.createElement(c.Lt, {
                     className: "mb-2 mb-sm-0",
                     label: "Order",
-                    value: T,
-                    options: kt[L],
-                    onChange: W
+                    value: W,
+                    options: _t[L],
+                    onChange: U
                 })), l.createElement(c.X2, {
                     className: "ms-0 ms-sm-2 align-self-center align-sm-self-start"
                 }, l.createElement(Pt, {
@@ -2712,32 +2674,32 @@
                     onClick: function() {
                         return I(!S)
                     }
-                }, l.createElement(Dt, null, "Public First"), l.createElement(c.$1, {
+                }, l.createElement(Zt, null, "Public First"), l.createElement(c.$1, {
                     width: 20,
-                    icon: M.LE,
+                    icon: Y.LE,
                     disabled: !S,
                     className: "me-1"
-                })))), E && l.createElement(c.qX, {
+                })))), y && l.createElement(c.qX, {
                     type: "error",
                     title: "Failed to load worlds",
                     message: x
-                }), y && 0 === w.length && l.createElement(Lt, {
+                }), v && 0 === w.length && l.createElement(Lt, {
                     role: "note",
                     title: "There are no Worlds here... yet"
-                }, "There are no Worlds here... yet"), l.createElement(Zt, null, v && 0 === (null == w ? void 0 : w.length) ? ie()(0, 6).map((function(e) {
+                }, "There are no Worlds here... yet"), l.createElement(Dt, null, E && 0 === (null == w ? void 0 : w.length) ? ie()(0, 6).map((function(e) {
                     return l.createElement(c.UU, {
                         key: e,
                         height: "400px",
                         className: "mb-2"
                     })
-                })) : !E && G.map((function(e) {
+                })) : !y && G.map((function(e) {
                     var t;
-                    return l.createElement(Et.Z, {
+                    return l.createElement(yt.Z, {
                         key: e.id,
-                        world: _t(_t({}, e), null !== (t = null == _ ? void 0 : _[e.id]) && void 0 !== t ? t : {}),
+                        world: Nt(Nt({}, e), null !== (t = null == N ? void 0 : N[e.id]) && void 0 !== t ? t : {}),
                         linksToEdit: !0
                     })
-                })), v && (null == w ? void 0 : w.length) > 1 && ie()(0, 6).map((function(e) {
+                })), E && (null == w ? void 0 : w.length) > 1 && ie()(0, 6).map((function(e) {
                     return l.createElement(c.UU, {
                         key: e,
                         height: "400px",
@@ -2757,13 +2719,13 @@
                     name: "3zych9",
                     styles: "display:flex;align-items:center;min-height:2.5rem"
                 }),
-                Dt = (0, a.Z)("div", {
+                Zt = (0, a.Z)("div", {
                     target: "eu0ztp83"
                 })({
                     name: "11p52gn",
                     styles: "font-size:1rem;margin-right:10px;margin-left:10px;color:hsla(0, 0%, 100%, 0.6)"
                 }),
-                Zt = (0, a.Z)("div", {
+                Dt = (0, a.Z)("div", {
                     target: "eu0ztp82"
                 })({
                     name: "mtvm74",
@@ -2775,34 +2737,34 @@
                     name: "bpc6lh",
                     styles: "width:100%;height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#54b5c5;background-color:#252a30;border-radius:8px;font-size:2rem;text-align:center;margin-top:1rem"
                 }),
-                Ft = (0, a.Z)(c.Lt, {
+                Ot = (0, a.Z)(c.Lt, {
                     target: "eu0ztp80"
                 })({
                     name: "s3oxtx",
                     styles: "z-index:5"
                 });
-            const Ot = function() {
+            const At = function() {
                 var e = (0, o.TH)();
-                return l.createElement(jt, null, "/home/content" === e.pathname && l.createElement(jt, null, l.createElement("h2", null, "Manage Uploaded Content"), l.createElement(At, null, l.createElement(Rt, {
+                return l.createElement(jt, null, "/home/content" === e.pathname && l.createElement(jt, null, l.createElement("h2", null, "Manage Uploaded Content"), l.createElement(Rt, null, l.createElement(Tt, {
                     to: "/home/content/worlds"
-                }, l.createElement(Tt, null, l.createElement(c.$1, {
+                }, l.createElement(Wt, null, l.createElement(c.$1, {
                     className: "mb-3",
                     icon: r.g4,
                     size: "5x"
-                }), l.createElement(Wt, null, "Worlds"))))), l.createElement(o.Z5, null, l.createElement(o.AW, {
+                }), l.createElement(Ut, null, "Worlds"))))), l.createElement(o.Z5, null, l.createElement(o.AW, {
                     path: "/"
                 }, l.createElement(o.AW, {
                     path: "/worlds",
                     element: l.createElement(St, null)
                 }), l.createElement(o.AW, {
                     path: "/worlds/:worldId/edit",
-                    element: l.createElement(Ae, null)
+                    element: l.createElement(Re, null)
                 }), l.createElement(o.AW, {
                     path: "/worlds/*",
                     element: l.createElement(St, null)
                 }), l.createElement(o.AW, {
                     path: "/restricted/:contentId",
-                    element: l.createElement(O, null)
+                    element: l.createElement(A, null)
                 }))))
             };
             var jt = (0, a.Z)("div", {
@@ -2811,25 +2773,25 @@
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                At = (0, a.Z)("div", {
+                Rt = (0, a.Z)("div", {
                     target: "e7t0ljh3"
                 })({
                     name: "1j04kkb",
                     styles: "display:flex;@media (max-width: 400px){flex-direction:column;}"
                 }),
-                Rt = (0, a.Z)(i.rU, {
+                Tt = (0, a.Z)(i.rU, {
                     target: "e7t0ljh2"
                 })({
                     name: "168sy3z",
                     styles: "display:flex;border:#07343f solid 2px;border-radius:4px;background:#07343f;color:#6ae3f9;box-sizing:border-box;outline:none!important;flex:1;padding-bottom:40%;height:0;overflow:hidden;margin-right:1rem;margin-top:1rem;position:relative;@media (max-width: 400px){padding-bottom:60%;margin-right:0;}&:hover,&:active,&:focus{border-color:#086c84;}"
                 }),
-                Tt = (0, a.Z)("div", {
+                Wt = (0, a.Z)("div", {
                     target: "e7t0ljh1"
                 })({
                     name: "1g561ia",
                     styles: "padding:5px 5px;position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;top:0;left:0"
                 }),
-                Wt = (0, a.Z)("div", {
+                Ut = (0, a.Z)("div", {
                     target: "e7t0ljh0"
                 })({
                     name: "mn5luc",
@@ -2837,7 +2799,6 @@
                 })
         },
         89182: (e, t, n) => {
-            "use strict";
             n.d(t, {
                 Z: () => s
             });
@@ -2874,7 +2835,6 @@
             const s = c
         },
         28213: (e, t, n) => {
-            "use strict";
             n.d(t, {
                 w: () => P
             });
@@ -2885,8 +2845,8 @@
                 i = n(68335),
                 c = n(54228),
                 s = n(85322),
-                u = n(54326),
-                m = n(68055),
+                m = n(54326),
+                u = n(68055),
                 d = n(17726),
                 p = n(16995),
                 f = n(66007),
@@ -2894,14 +2854,14 @@
                 h = n(42137),
                 b = n(34604),
                 w = n(23778),
-                v = n(88673),
-                y = n(26128),
-                E = n(47420),
+                E = n(88673),
+                v = n(26128),
+                y = n(47420),
                 x = n(29167),
                 C = n(92221),
-                _ = n(88302),
-                N = n(46450),
-                k = n(609),
+                N = n(88302),
+                k = n(46450),
+                _ = n(609),
                 S = n(84176),
                 I = n(75213),
                 P = [{
@@ -2922,23 +2882,23 @@
                     description: "Forced World Access"
                 }, {
                     tag: "admin_lock_tags",
-                    icon: k.by,
+                    icon: _.by,
                     description: "Locked Tags"
                 }, {
                     tag: "admin_lock_level",
-                    icon: k.by,
+                    icon: _.by,
                     description: "Locked Level"
                 }, {
                     tag: "admin_can_grant_licenses",
-                    icon: N.mG,
+                    icon: k.mG,
                     description: "Can Grant Licenses"
                 }, {
                     tag: "system_world_access",
-                    icon: _.kl,
+                    icon: N.kl,
                     description: "SDK World Access"
                 }, {
                     tag: "system_avatar_access",
-                    icon: _.kl,
+                    icon: N.kl,
                     description: "SDK Avatar Access"
                 }, {
                     tag: "system_feedback_access",
@@ -2954,15 +2914,15 @@
                     description: "User"
                 }, {
                     tag: "system_trust_trusted",
-                    icon: E.yS,
+                    icon: y.yS,
                     description: "Known User"
                 }, {
                     tag: "system_trust_veteran",
-                    icon: y.jA,
+                    icon: v.jA,
                     description: "Trusted User"
                 }, {
                     tag: "system_probable_troll",
-                    icon: v.I7,
+                    icon: E.I7,
                     description: "Probable Nuisance"
                 }, {
                     tag: "system_troll",
@@ -3014,11 +2974,11 @@
                     description: "System Labs"
                 }, {
                     tag: "system_approved",
-                    icon: m.LE,
+                    icon: u.LE,
                     description: "Approved"
                 }, {
                     tag: "system_updated_recently",
-                    icon: u.IV,
+                    icon: m.IV,
                     description: "Updated Recently"
                 }, {
                     tag: "system_created_recently",
@@ -3079,10 +3039,9 @@
                 }]
         },
         91557: (e, t, n) => {
-            "use strict";
             n.d(t, {
-                jO: () => u,
-                lY: () => m,
+                jO: () => m,
+                lY: () => u,
                 lw: () => s,
                 oR: () => c
             });
@@ -3183,216 +3142,9 @@
                 }),
                 c = i.useGetRestrictedContentQuery,
                 s = i.useRequestContentRestrictionMutation,
-                u = i.useDisputeContentRestrictionMutation,
-                m = i.useDeleteDisputeMutation
-        },
-        18446: (e, t, n) => {
-            var a = n(90939);
-            e.exports = function(e, t) {
-                return a(e, t)
-            }
-        },
-        93235: (e, t, n) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function(e, t) {
-                var n, a;
-                (0, r.default)(e), "object" === l(t) ? (n = t.min || 0, a = t.max) : (n = arguments[1], a = arguments[2]);
-                var o = encodeURI(e).split(/%..|./).length - 1;
-                return o >= n && (void 0 === a || o <= a)
-            };
-            var a, r = (a = n(65571)) && a.__esModule ? a : {
-                default: a
-            };
-
-            function l(e) {
-                return l = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
-                    return typeof e
-                } : function(e) {
-                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-                }, l(e)
-            }
-            e.exports = t.default, e.exports.default = t.default
-        },
-        83868: (e, t, n) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function(e, t) {
-                if ((0, a.default)(e), (t = (0, i.default)(t, s)).require_display_name || t.allow_display_name) {
-                    var n = e.match(u);
-                    if (n) {
-                        var c = n[1];
-                        if (e = e.replace(c, "").replace(/(^<|>$)/g, ""), c.endsWith(" ") && (c = c.slice(0, -1)), ! function(e) {
-                                var t = e.replace(/^"(.+)"$/, "$1");
-                                if (!t.trim()) return !1;
-                                if (/[\.";<>]/.test(t)) {
-                                    if (t === e) return !1;
-                                    if (!(t.split('"').length === t.split('\\"').length)) return !1
-                                }
-                                return !0
-                            }(c)) return !1
-                    } else if (t.require_display_name) return !1
-                }
-                if (!t.ignore_max_length && e.length > h) return !1;
-                var b = e.split("@"),
-                    w = b.pop(),
-                    v = w.toLowerCase();
-                if (t.host_blacklist.includes(v)) return !1;
-                if (t.host_whitelist.length > 0 && !t.host_whitelist.includes(v)) return !1;
-                var y = b.join("@");
-                if (t.domain_specific_validation && ("gmail.com" === v || "googlemail.com" === v)) {
-                    var E = (y = y.toLowerCase()).split("+")[0];
-                    if (!(0, r.default)(E.replace(/\./g, ""), {
-                            min: 6,
-                            max: 30
-                        })) return !1;
-                    for (var x = E.split("."), C = 0; C < x.length; C++)
-                        if (!d.test(x[C])) return !1
-                }
-                if (!(!1 !== t.ignore_max_length || (0, r.default)(y, {
-                        max: 64
-                    }) && (0, r.default)(w, {
-                        max: 254
-                    }))) return !1;
-                if (!(0, l.default)(w, {
-                        require_tld: t.require_tld,
-                        ignore_max_length: t.ignore_max_length,
-                        allow_underscores: t.allow_underscores
-                    })) {
-                    if (!t.allow_ip_domain) return !1;
-                    if (!(0, o.default)(w)) {
-                        if (!w.startsWith("[") || !w.endsWith("]")) return !1;
-                        var _ = w.slice(1, -1);
-                        if (0 === _.length || !(0, o.default)(_)) return !1
-                    }
-                }
-                if ('"' === y[0]) return y = y.slice(1, y.length - 1), t.allow_utf8_local_part ? g.test(y) : p.test(y);
-                for (var N = t.allow_utf8_local_part ? f : m, k = y.split("."), S = 0; S < k.length; S++)
-                    if (!N.test(k[S])) return !1;
-                if (t.blacklisted_chars && -1 !== y.search(new RegExp("[".concat(t.blacklisted_chars, "]+"), "g"))) return !1;
-                return !0
-            };
-            var a = c(n(65571)),
-                r = c(n(93235)),
-                l = c(n(10221)),
-                o = c(n(61028)),
-                i = c(n(84808));
-
-            function c(e) {
-                return e && e.__esModule ? e : {
-                    default: e
-                }
-            }
-            var s = {
-                    allow_display_name: !1,
-                    allow_underscores: !1,
-                    require_display_name: !1,
-                    allow_utf8_local_part: !0,
-                    require_tld: !0,
-                    blacklisted_chars: "",
-                    ignore_max_length: !1,
-                    host_blacklist: [],
-                    host_whitelist: []
-                },
-                u = /^([^\x00-\x1F\x7F-\x9F\cX]+)</i,
-                m = /^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~]+$/i,
-                d = /^[a-z\d]+$/,
-                p = /^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f]))*$/i,
-                f = /^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\u00A1-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+$/i,
-                g = /^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*$/i,
-                h = 254;
-            e.exports = t.default, e.exports.default = t.default
-        },
-        10221: (e, t, n) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function(e, t) {
-                (0, a.default)(e), (t = (0, r.default)(t, o)).allow_trailing_dot && "." === e[e.length - 1] && (e = e.substring(0, e.length - 1));
-                !0 === t.allow_wildcard && 0 === e.indexOf("*.") && (e = e.substring(2));
-                var n = e.split("."),
-                    l = n[n.length - 1];
-                if (t.require_tld) {
-                    if (n.length < 2) return !1;
-                    if (!t.allow_numeric_tld && !/^([a-z\u00A1-\u00A8\u00AA-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{2,}|xn[a-z0-9-]{2,})$/i.test(l)) return !1;
-                    if (/\s/.test(l)) return !1
-                }
-                if (!t.allow_numeric_tld && /^\d+$/.test(l)) return !1;
-                return n.every((function(e) {
-                    return !(e.length > 63 && !t.ignore_max_length) && (!!/^[a-z_\u00a1-\uffff0-9-]+$/i.test(e) && (!/[\uff01-\uff5e]/.test(e) && (!/^-|-$/.test(e) && !(!t.allow_underscores && /_/.test(e)))))
-                }))
-            };
-            var a = l(n(65571)),
-                r = l(n(84808));
-
-            function l(e) {
-                return e && e.__esModule ? e : {
-                    default: e
-                }
-            }
-            var o = {
-                require_tld: !0,
-                allow_underscores: !1,
-                allow_trailing_dot: !1,
-                allow_numeric_tld: !1,
-                allow_wildcard: !1,
-                ignore_max_length: !1
-            };
-            e.exports = t.default, e.exports.default = t.default
-        },
-        61028: (e, t, n) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function e(t) {
-                var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-                if ((0, r.default)(t), !(n = String(n))) return e(t, 4) || e(t, 6);
-                if ("4" === n) return i.test(t);
-                if ("6" === n) return s.test(t);
-                return !1
-            };
-            var a, r = (a = n(65571)) && a.__esModule ? a : {
-                default: a
-            };
-            var l = "(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",
-                o = "(".concat(l, "[.]){3}").concat(l),
-                i = new RegExp("^".concat(o, "$")),
-                c = "(?:[0-9a-fA-F]{1,4})",
-                s = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(o, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(o, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(o, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(o, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(o, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(o, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(o, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
-            e.exports = t.default, e.exports.default = t.default
-        },
-        65571: (e, t) => {
-            "use strict";
-
-            function n(e) {
-                return n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
-                    return typeof e
-                } : function(e) {
-                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-                }, n(e)
-            }
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function(e) {
-                if (!("string" == typeof e || e instanceof String)) {
-                    var t = n(e);
-                    throw null === e ? t = "null" : "object" === t && (t = e.constructor.name), new TypeError("Expected a string but received a ".concat(t))
-                }
-            }, e.exports = t.default, e.exports.default = t.default
-        },
-        84808: (e, t) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            }), t.default = function() {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                    t = arguments.length > 1 ? arguments[1] : void 0;
-                for (var n in t) void 0 === e[n] && (e[n] = t[n]);
-                return e
-            }, e.exports = t.default, e.exports.default = t.default
+                m = i.useDisputeContentRestrictionMutation,
+                u = i.useDeleteDisputeMutation
         }
     }
 ]);
-//# sourceMappingURL=fd7221d3715965183ac0bc052b71d7d1b1aed761b2b3156b16018b19e706b4b1.js.map
+//# sourceMappingURL=bd80a573357b11a630d0d415b4916f330a54dca7e0ef9a2abcc9667dc9b75b7b.js.map

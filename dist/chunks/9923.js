@@ -41,7 +41,7 @@
                 h = n(1208),
                 v = n(12227),
                 b = n(64358),
-                y = n(93739),
+                y = n(90924),
                 w = n(73170),
                 x = n(37463),
                 E = n(17383);
@@ -68,9 +68,9 @@
                 return s.createElement(k, {
                     className: t,
                     to: "/home/user/".concat(n)
-                }, s.createElement(N, null, s.createElement(Z, {
+                }, s.createElement(N, null, s.createElement(O, {
                     src: l
-                }), s.createElement(O, {
+                }), s.createElement(Z, {
                     url: l
                 })), s.createElement(x.X2, {
                     className: "align-items-center mt-2"
@@ -94,13 +94,13 @@
                     name: "5o18ri",
                     styles: "display:flex;align-items:center;align-self:center;justify-content:center;width:128px;height:74px;position:relative;overflow:hidden;border-radius:6px"
                 }),
-                Z = (0, i.Z)("img", {
+                O = (0, i.Z)("img", {
                     target: "e1cyfi882"
                 })({
                     name: "188plvy",
                     styles: "z-index:2;height:74px"
                 }),
-                O = (0, i.Z)("div", {
+                Z = (0, i.Z)("div", {
                     target: "e1cyfi881"
                 })("z-index:1;width:calc(100% + 40px);height:calc(100% + 40px);position:absolute;top:-20px;left:-20px;background-size:cover;background-position:center center;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
@@ -197,8 +197,8 @@
             }
             const U = function(e) {
                 var t, n, a, i, f, w, E, k, N = e.location,
-                    Z = e.className,
-                    O = e.currentGroup,
+                    O = e.className,
+                    Z = e.currentGroup,
                     j = p({
                         location: N.location
                     }, {
@@ -248,7 +248,7 @@
                 s.useEffect((function() {
                     fe((0, b.aF)(U.instanceId)), ve((0, v.uP)(U.instanceId))
                 }), [U]), s.useEffect((function() {
-                    if (!("Group" !== me && "Group+" !== me && "Group Public" !== me || ae || O)) {
+                    if (!("Group" !== me && "Group+" !== me && "Group Public" !== me || ae || Z)) {
                         var e = (0, v.Oc)(U.instanceId);
                         re({
                             groupId: e
@@ -285,11 +285,11 @@
                 }), [se, ye]), s.useEffect((function() {
                     Y && setTimeout(ee, 3e3)
                 }), [Y, ee]);
-                var we = !(!ae && !O),
+                var we = !(!ae && !Z),
                     xe = (null === (t = U.users) || void 0 === t ? void 0 : t.length) > 0,
                     Ee = (0, v.PF)(C, U.instanceId);
                 return s.createElement(x.JX, {
-                    className: Z,
+                    className: O,
                     ref: se
                 }, s.createElement(x.oI, {
                     style: xe ? {} : {
@@ -334,12 +334,12 @@
                 }), s.createElement("div", null, me)), we && s.createElement(D, {
                     className: "align-self-end me-2 align-items-center text-nowrap mt-1"
                 }, s.createElement(u.rU, {
-                    to: "/home/group/".concat(null !== (i = null == ae ? void 0 : ae.id) && void 0 !== i ? i : null == O ? void 0 : O.id)
-                }, null !== (f = null == ae ? void 0 : ae.name) && void 0 !== f ? f : null == O ? void 0 : O.name)), !!U.memberCount && s.createElement(D, {
+                    to: "/home/group/".concat(null !== (i = null == ae ? void 0 : ae.id) && void 0 !== i ? i : null == Z ? void 0 : Z.id)
+                }, null !== (f = null == ae ? void 0 : ae.name) && void 0 !== f ? f : null == Z ? void 0 : Z.name)), !!U.memberCount && s.createElement(D, {
                     className: "align-self-end me-2 align-items-center mt-1",
                     title: "Number of group members in the Instance"
                 }, U.memberCount, s.createElement(x.$1, {
-                    icon: c.Z,
+                    icon: c.default,
                     color: "#8f8f8d",
                     className: "ms-2"
                 })), !!U.userCount && s.createElement(D, {
@@ -445,4 +445,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b0458c4187c2ae3969534c62b1751930493c12b288a2a51723006b111c3862e.js.map
+//# sourceMappingURL=6a77feb67e093435fbd8d031c20889dc62fb53f602cf48ad780fa0c97153e375.js.map

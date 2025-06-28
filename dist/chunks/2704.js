@@ -194,7 +194,7 @@
                 B = a(95896),
                 W = a(72522),
                 Q = a(3620),
-                Y = a(74205);
+                Y = a(14825);
 
             function G(e, t) {
                 var a = Object.keys(e);
@@ -358,7 +358,7 @@
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize tw-leading-5"
                             }, h.createElement(O.$1, {
-                                icon: Y.SQ,
+                                icon: Y.default,
                                 width: 14
                             }), " ", e);
                         case B.ft.DURATION:
@@ -666,4 +666,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8076b13e318f77e8abdca84f94cc5ecfe0c64486e68ffe98673ec13d8416be98.js.map
+//# sourceMappingURL=b91f5298bf906a21b20cb40200e69739549ae7480f86b59769f3189eb4dcf48b.js.map

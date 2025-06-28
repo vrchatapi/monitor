@@ -62,7 +62,7 @@
                 L = r(68055),
                 D = r(28963),
                 O = r(91435),
-                j = r(74205),
+                j = r(14825),
                 z = r(60006),
                 X = [{
                     label: "Instant",
@@ -83,7 +83,7 @@
                     value: "permanent",
                     text: "Lifetime access to exclusive zones or features.",
                     redirect: "https://creators.vrchat.com/economy/listings#permanent",
-                    icon: j.SQ,
+                    icon: j.default,
                     allowedTypes: ["Udon", "Avatar"]
                 }];
             const q = function(e) {
@@ -662,4 +662,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e67ea575f5ae91ce9dee3757c1d0c6ac683eb1fd2c84f3773b86e537487b53a2.js.map
+//# sourceMappingURL=8008049bf0722b98b72fa9f77ce935bf948c15334a6564b319bd658df61ed022.js.map

@@ -15,13 +15,15 @@
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => l
+                Z: () => o
             });
             var r = a(54546),
                 c = a(42404),
                 n = a.n(c),
-                i = a(67294);
-            const w = [{
+                i = a(67294),
+                w = a(86646),
+                l = a(62427);
+            const s = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -86,39 +88,39 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const l = function(e) {
+            const o = function(e) {
                 var t = e.children,
                     a = e.showCredits,
                     c = (0, i.useState)(null),
-                    l = (0, r.Z)(c, 2),
-                    s = l[0],
-                    o = l[1],
-                    p = (0, i.useState)(null),
-                    m = (0, r.Z)(p, 2),
-                    g = m[0],
-                    d = m[1],
-                    h = (0, i.useMemo)((function() {
-                        return n()(w, 6)
+                    o = (0, r.Z)(c, 2),
+                    p = o[0],
+                    m = o[1],
+                    g = (0, i.useState)(null),
+                    d = (0, r.Z)(g, 2),
+                    u = d[0],
+                    h = d[1],
+                    f = (0, i.useMemo)((function() {
+                        return n()(s, 6)
                     }), []);
                 (0, i.useEffect)((function() {
-                    if (null === s) o(h[0]);
+                    if (null === p) m(f[0]);
                     else {
-                        var e = u(s);
+                        var e = b(p);
                         setTimeout((function() {
-                            return o(e)
-                        }), 1e4), d(e)
+                            return m(e)
+                        }), 1e4), h(e)
                     }
-                }), [s]);
-                var u = function(e) {
-                    var t = h.findIndex((function(t) {
+                }), [p]);
+                var b = function(e) {
+                    var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
-                    return t === h.length - 1 ? h[0] : h[t + 1]
+                    return t === f.length - 1 ? f[0] : f[t + 1]
                 };
                 return i.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
+                        backgroundImage: null === p ? "none" : "url(".concat(p.image, ")")
                     }
                 }, i.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -132,17 +134,19 @@
                     alt: "VRChat"
                 }), i.createElement("img", {
                     className: "tw-hidden",
-                    src: null == g ? void 0 : g.image,
+                    src: null == u ? void 0 : u.image,
                     alt: "VRChat"
                 }))), i.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == s ? void 0 : s.worldName) && a && i.createElement("div", {
-                    className: " tw-relative tw-text-sm tw-w-full xl:tw-absolute xl:tw-top-16 xl:tw-right-0 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-3 xl:tw-rounded-s-lg"
-                }, i.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, i.createElement("strong", null, "World:"), " ", s.worldName), i.createElement("p", {
-                    className: "tw-text-right mb-0"
-                }, i.createElement("strong", null, "Author:"), " ", s.authorName)))
+                }, t), (null == p ? void 0 : p.worldName) && a && i.createElement("div", {
+                    className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
+                }, i.createElement(w.Z, {
+                    icon: l.default,
+                    title: "World",
+                    size: "2x"
+                }), i.createElement("p", {
+                    className: "tw-mb-0 tw-leading-none"
+                }, p.worldName, i.createElement("br", null), i.createElement("small", null, "by ", p.authorName))))
             }
         },
         94673: (e, t, a) => {
@@ -162,7 +166,7 @@
                 m = (a(37337), a(17383)),
                 g = (a(60006), a(9669)),
                 d = a.n(g),
-                h = function(e) {
+                u = function(e) {
                     var t = e.name;
                     return {
                         type: "SEND_EMAIL_REMINDER",
@@ -171,7 +175,7 @@
                         })
                     }
                 },
-                u = a(37463),
+                h = a(37463),
                 f = a(13887);
             const b = function() {
                 var e = (0, o.I0)(),
@@ -212,7 +216,7 @@
                                         }
                                         return t.abrupt("return");
                                     case 2:
-                                        return a.preventDefault(), t.prev = 3, t.next = 6, e(h({
+                                        return a.preventDefault(), t.prev = 3, t.next = 6, e(u({
                                             name: w
                                         }));
                                     case 6:
@@ -233,7 +237,7 @@
                     }(),
                     D = E;
                 E && E.indexOf(":") > 0 && (D = E.substring(E.indexOf(":") + 1).trim());
-                return s.createElement(f.Z, null, s.createElement(u.$4, null, "Forgot Email Address"), s.createElement("div", {
+                return s.createElement(f.Z, null, s.createElement(h.$4, null, "Forgot Email Address"), s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit tw-mt-[200px]"
                 }, s.createElement("form", {
                     id: "email-recovery-form",
@@ -245,10 +249,10 @@
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, s.createElement("div", {
                     className: "tw-mb-5"
-                }, A && s.createElement(u.$1, {
+                }, A && s.createElement(h.$1, {
                     icon: i.sl,
                     className: "tw-w-[72px] tw-h-[72px]"
-                }), !A && s.createElement(u.$1, {
+                }), !A && s.createElement(h.$1, {
                     icon: n.Au,
                     className: "tw-w-[72px] tw-h-[72px]"
                 })), s.createElement("h4", {
@@ -259,7 +263,7 @@
                     className: "tw-w-full"
                 }, s.createElement("p", {
                     className: "tw-text-left tw-mb-2"
-                }, "Please enter the user or display name of your account.")), s.createElement(u.II, {
+                }, "Please enter the user or display name of your account.")), s.createElement(h.II, {
                     type: "text",
                     inputMode: "name",
                     "aria-label": "Username",
@@ -291,7 +295,7 @@
                     role: "alert",
                     "aria-label": "Failed to recover",
                     className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
-                }, D || "Oops, that didn't work."), !A && s.createElement(u.zx, {
+                }, D || "Oops, that didn't work."), !A && s.createElement(h.zx, {
                     disabled: M || k || y,
                     className: "tw-mt-5 tw-w-60",
                     loading: S,
@@ -562,4 +566,4 @@
         }
     }
 ]);
-//# sourceMappingURL=40688a40c94f5bfb274934f39e1e7b6f5531ec048991b2e39e179d6c4e3a5c48.js.map
+//# sourceMappingURL=ef63e3bb8a140ebce4f028eb5a3b3bf819b162c7fabbc4a75b1687c00fb132d6.js.map

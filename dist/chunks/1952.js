@@ -107,7 +107,7 @@
                     tabs: [{
                         name: "Marketplace",
                         to: "welcome",
-                        icon: p.Z,
+                        icon: p.default,
                         condition: !0
                     }, {
                         name: "Wallet",
@@ -152,4 +152,4 @@
         }
     }
 ]);
-//# sourceMappingURL=abc2d4c5d60825e69663b32f9abc03a98e131d308890f74ac791ea28adc284e4.js.map
+//# sourceMappingURL=4aa2d826becee4f091ba502a35b2ea7e5532a6ae2ff5ab26050bc6653a9366e4.js.map

@@ -18,10 +18,10 @@
                 u = a(2909),
                 p = a(82414),
                 x = a(76553),
-                f = a(6811),
-                g = a(64258),
-                b = a(27484),
-                v = a.n(b),
+                v = a(6811),
+                f = a(64258),
+                g = a(27484),
+                b = a.n(g),
                 h = a(45697),
                 E = a.n(h),
                 y = a(32981),
@@ -40,15 +40,15 @@
                     u = (0, m.Z)(d, 2),
                     p = u[0],
                     x = u[1],
-                    f = (0, w.useRef)(null);
+                    v = (0, w.useRef)(null);
                 return (0, w.useEffect)((function() {
-                    null != f && f.current && x(f.current.getBoundingClientRect())
-                }), [f]), w.createElement("div", {
+                    null != v && v.current && x(v.current.getBoundingClientRect())
+                }), [v]), w.createElement("div", {
                     onMouseLeave: function() {
                         return i(!1)
                     }
                 }, w.createElement(l.zx, {
-                    ref: f,
+                    ref: v,
                     className: "tw-h-9 tw-w-9",
                     neutral: !0,
                     onClick: function() {
@@ -91,16 +91,16 @@
                     i = void 0 === s ? function() {} : s,
                     d = (0, y.I0)();
                 if (null === a) return null;
-                var b = a.id,
+                var g = a.id,
                     h = a.displayName,
                     E = a.created,
                     C = a.updated,
                     D = a.parentListings,
-                    A = a.productType,
-                    P = a.imageId,
-                    S = a.assetDisabled,
-                    T = (0, w.useState)(!1),
-                    I = (0, m.Z)(T, 2),
+                    P = a.productType,
+                    A = a.imageId,
+                    T = a.assetDisabled,
+                    S = (0, w.useState)(!1),
+                    I = (0, m.Z)(S, 2),
                     z = I[0],
                     X = I[1],
                     $ = (0, w.useRef)(null);
@@ -120,7 +120,7 @@
                     className: "tw-flex tw-gap-1 tw-items-center tw-min-h-9 tw-my-2 @[800px]/my-products:tw-max-w-max tw-col-span-2"
                 }, w.createElement(l.pw, {
                     fitToCover: !0,
-                    imageId: P,
+                    imageId: A,
                     className: "tw-w-8 tw-h-8 tw-rounded-md tw-shrink-0",
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
@@ -129,17 +129,17 @@
                     title: h
                 }, h)), w.createElement("div", {
                     className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
-                }, A), w.createElement("div", {
+                }, P), w.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
-                }, v()(E).format("ll")), w.createElement("div", {
+                }, b()(E).format("ll")), w.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
-                }, v()(C).format("ll")), !S && w.createElement("div", {
+                }, b()(C).format("ll")), !T && w.createElement("div", {
                     className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
                 }, w.createElement("span", {
                     className: "tw-truncate tw-hidden @[700px]/products-heading:tw-block"
                 }, D && D.length > 0 ? "Available in ".concat(D.length, " listings") : "Unlisted"), w.createElement("span", {
                     className: "@[700px]/products-heading:tw-hidden tw-truncate"
-                }, D && D.length > 0 ? "In ".concat(D.length, " listings") : "Unlisted")), S && w.createElement("div", {
+                }, D && D.length > 0 ? "In ".concat(D.length, " listings") : "Unlisted")), T && w.createElement("div", {
                     className: "tw-items-center tw-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
                 }, w.createElement("span", {
                     className: "tw-truncate"
@@ -149,7 +149,7 @@
                 }), " ", w.createElement("span", {
                     className: "tw-text-orange"
                 }, "Disabled"), " ", w.createElement("button", {
-                    id: "disabledTooltip-".concat(b),
+                    id: "disabledTooltip-".concat(g),
                     type: "button",
                     className: "tw-bg-transparent tw-border-none",
                     onClick: function() {
@@ -162,7 +162,7 @@
                     icon: p.sq
                 })), w.createElement(N.Z, {
                     isOpen: z,
-                    target: "disabledTooltip-".concat(b),
+                    target: "disabledTooltip-".concat(g),
                     toggle: function() {
                         return X(!z)
                     },
@@ -174,17 +174,17 @@
                     className: "tw-w-9",
                     neutral: !0,
                     onClick: function() {
-                        navigator.clipboard.writeText(b).then((function() {
-                            d((0, g.d)({
+                        navigator.clipboard.writeText(g).then((function() {
+                            d((0, f.d)({
                                 title: "Copied product ID",
-                                icon: f.f8,
+                                icon: v.f8,
                                 message: "Product ID Copied!",
                                 color: "success",
                                 timeout: 3e3
                             }))
                         })).catch((function(e) {
                             var t, a;
-                            d((0, g.d)({
+                            d((0, f.d)({
                                 title: "Failed to copy product ID",
                                 icon: x.eH,
                                 message: null !== (t = null === (a = res.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== t ? t : "Failed to copy product ID",
@@ -197,7 +197,7 @@
                     icon: u.kZ,
                     size: "1x"
                 })), w.createElement(k, {
-                    productType: A,
+                    productType: P,
                     editAction: function() {
                         return r(a)
                     },
@@ -212,10 +212,10 @@
             D.propTypes = {
                 productData: E().object
             };
-            const A = D;
-            var P = a(40098),
-                S = a(74205);
-            const T = function(e) {
+            const P = D;
+            var A = a(40098),
+                T = a(99162);
+            const S = function(e) {
                 var t = e.createProduct,
                     a = void 0 === t ? function() {} : t;
                 return w.createElement(l.JX, {
@@ -229,7 +229,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: S.fk,
+                    icon: T.vrcGhost,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -243,7 +243,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: S.rP,
+                    icon: T.vrcProductTicket,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -257,7 +257,7 @@
                 }, w.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
                 }, w.createElement(l.$1, {
-                    icon: S.F,
+                    icon: T.vrcProductKey,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -272,7 +272,7 @@
                     containerClasses: "tw-mb-3 tw-w-[200px]",
                     onClick: a
                 }, w.createElement(l.$1, {
-                    icon: P.r8
+                    icon: A.r8
                 }), " Create Product"), w.createElement("a", {
                     href: "https://creators.vrchat.com/economy/products/",
                     target: "_blank",
@@ -312,18 +312,18 @@
                     u = e.currentPage,
                     p = (e.searchValue, e.orderBy),
                     x = e.editProductCallback,
-                    f = void 0 === x ? function() {} : x,
-                    g = e.deleteProductCallback,
-                    b = void 0 === g ? function() {} : g,
-                    v = e.viewAvatarDetailsCallback,
-                    h = void 0 === v ? function() {} : v,
+                    v = void 0 === x ? function() {} : x,
+                    f = e.deleteProductCallback,
+                    g = void 0 === f ? function() {} : f,
+                    b = e.viewAvatarDetailsCallback,
+                    h = void 0 === b ? function() {} : b,
                     E = e.createProductCallback,
                     y = void 0 === E ? function() {} : E,
                     N = e.onSortByChange,
                     C = void 0 === N ? function() {} : N;
                 if (!m) return null;
-                var k, D, P = (0, d.s0)(),
-                    S = (0, i.rP)({
+                var k, D, A = (0, d.s0)(),
+                    T = (0, i.rP)({
                         userId: m.id,
                         n: 50,
                         pageValue: u
@@ -331,11 +331,11 @@
                         skip: !m.id,
                         refetchOnMountOrArgChange: !0
                     }),
-                    X = S.data,
-                    $ = S.isSuccess,
-                    j = S.isFetching,
-                    F = S.isError,
-                    U = S.error,
+                    X = T.data,
+                    $ = T.isSuccess,
+                    j = T.isFetching,
+                    U = T.isError,
+                    F = T.error,
                     J = (0, w.useCallback)((function(e) {
                         return a === e
                     }), [a]),
@@ -390,18 +390,18 @@
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, w.createElement(c.Z, {
                     loading: !0
-                })) : F ? w.createElement("div", {
+                })) : U ? w.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (k = null == U || null === (D = U.data) || void 0 === D || null === (D = D.error) || void 0 === D ? void 0 : D.message) && void 0 !== k ? k : "Unknown error")) : $ && 0 === (null == X ? void 0 : X.length) ? w.createElement("div", {
+                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (k = null == F || null === (D = F.data) || void 0 === D || null === (D = D.error) || void 0 === D ? void 0 : D.message) && void 0 !== k ? k : "Unknown error")) : $ && 0 === (null == X ? void 0 : X.length) ? w.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, w.createElement("p", {
                     className: "tw-mb-0"
                 }, "There are no products to display.")) : $ ? X.map((function(e) {
-                    return w.createElement(A, {
+                    return w.createElement(P, {
                         key: e.id,
                         productData: e,
-                        editProductCallback: f,
-                        deleteProductCallback: b,
+                        editProductCallback: v,
+                        deleteProductCallback: g,
                         viewAvatarDetailsActionCallback: h
                     })
                 })) : void 0), w.createElement("div", null, w.createElement(o.Z, {
@@ -411,13 +411,13 @@
                     currentPage: u,
                     pageSize: 50,
                     onPageChange: function(e) {
-                        return P("/home/marketplace/storefront/products/page/".concat(e))
+                        return A("/home/marketplace/storefront/products/page/".concat(e))
                     }
-                }))))) : w.createElement(T, {
+                }))))) : w.createElement(S, {
                     createProduct: y
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=84112233d0b8bb0409b1a11d88ee7200b5f7ba456557f23dd621577d8fc82b43.js.map
+//# sourceMappingURL=cbea6c30bd6e4d2d733948978648c48913a7aa8434ae3d0830d494ac65cc9dd7.js.map

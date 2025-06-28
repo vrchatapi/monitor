@@ -2333,7 +2333,7 @@
                     className: "tw-relative tw-z-10 tw-items-center tw-gap-2"
                 }, n.createElement(r.$1, {
                     className: "tw-text-2xl ".concat(f ? "tw-text-lighter-grey" : "tw-text-[#ffff00]"),
-                    icon: Nt.Z,
+                    icon: Nt.default,
                     width: 28,
                     height: 28
                 }), n.createElement("p", {
@@ -2480,4 +2480,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c6ce1d735b4e7f1ae11158eaea44cb1d261d3e87a5cae9ac0ddbe68b2a915077.js.map
+//# sourceMappingURL=307d42169976102a120f0a415fa17569144aaeb2197855f0aecd96983ceca632.js.map
