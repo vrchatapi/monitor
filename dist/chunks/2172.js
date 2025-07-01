@@ -51,7 +51,7 @@
                     K = function(e) {
                         B.current.contains(e.target) || M(!1)
                     },
-                    W = m.useMemo((function() {
+                    _ = m.useMemo((function() {
                         return !1 === A ? (q(""), r) : r.filter((function(e) {
                             return e.name.toLowerCase().includes(U.toLowerCase())
                         }))
@@ -62,10 +62,10 @@
                             window.removeEventListener("click", K)
                         }
                 }), [A]);
-                var $ = r.find((function(e) {
+                var W = r.find((function(e) {
                     return e.name === c
                 }));
-                return m.createElement(L, (0, w.Z)({
+                return m.createElement(S, (0, w.Z)({
                     role: "radiogroup",
                     "aria-label": i,
                     ref: B,
@@ -76,7 +76,7 @@
                 }, I), m.createElement(X, {
                     disabled: N,
                     expanded: A
-                }, m.createElement(S, {
+                }, m.createElement(L, {
                     type: "button",
                     "aria-label": "Expand Options",
                     disabled: N,
@@ -86,8 +86,8 @@
                 }, m.createElement(k, null, !!i && m.createElement(T, null, i), m.createElement(J, {
                     role: "note",
                     trimToLength: g,
-                    title: null !== (t = null == $ ? void 0 : $.selectedLabel) && void 0 !== t ? t : null == $ ? void 0 : $.label
-                }, null !== (a = null == $ ? void 0 : $.name) && void 0 !== a ? a : null == $ ? void 0 : $.name)), m.createElement(o.$1, {
+                    title: null !== (t = null == W ? void 0 : W.selectedLabel) && void 0 !== t ? t : null == W ? void 0 : W.label
+                }, null !== (a = null == W ? void 0 : W.name) && void 0 !== a ? a : null == W ? void 0 : W.name)), m.createElement(o.$1, {
                     icon: b.eW,
                     color: "white",
                     className: "ms-3"
@@ -100,9 +100,9 @@
                     value: O
                 }), d && m.createElement("p", {
                     className: "tw-mx-3"
-                }, "Loading..."), 0 === W.length && !d && m.createElement("p", {
+                }, "Loading..."), 0 === _.length && !d && m.createElement("p", {
                     className: "tw-mx-3 tw-mb-3"
-                }, "No avatars are available!"), !d && W.map((function(e, t) {
+                }, "No avatars are available!"), !d && _.map((function(e, t) {
                     var a, l = (null == e ? void 0 : e.productId) || (null == e ? void 0 : e.activeAssetReviewId) || (null == e ? void 0 : e.assetDisabled) || (null == e ? void 0 : e.contentRestrictionId);
                     return m.createElement(m.Fragment, {
                         key: e.id
@@ -164,13 +164,13 @@
                 }), " ", (function(e) {
                     return e.disabled ? C : ""
                 }), ";"),
-                S = (0, f.Z)("button", {
+                L = (0, f.Z)("button", {
                     target: "evny8vp5"
                 })({
                     name: "118t6pa",
                     styles: "border:none;background:transparent;outline:none!important;display:flex;flex:1;flex-direction:row;align-items:center;justify-content:space-between;position:relative;max-width:100%"
                 }),
-                L = (0, f.Z)("div", {
+                S = (0, f.Z)("div", {
                     target: "evny8vp4"
                 })({
                     name: "1cxtnl2",
@@ -239,8 +239,8 @@
                     })),
                     I = C.productType,
                     X = C.currentProduct,
-                    S = C.singleton,
-                    L = v || k,
+                    L = C.singleton,
+                    S = v || k,
                     T = m.useState(X || a),
                     Z = (0, l.Z)(T, 2),
                     J = Z[0],
@@ -255,15 +255,15 @@
                     U = (0, m.useState)(!1),
                     B = (0, l.Z)(U, 2),
                     K = B[0],
-                    W = B[1],
-                    $ = (0, m.useState)(!1),
-                    _ = (0, l.Z)($, 2),
-                    j = _[0],
-                    H = _[1],
+                    _ = B[1],
+                    W = (0, m.useState)(!1),
+                    $ = (0, l.Z)(W, 2),
+                    j = $[0],
+                    H = $[1],
                     V = (0, c.F6)({
                         user: "me"
                     }, {
-                        skip: !L.id || "avatar" !== I || S,
+                        skip: !S.id || "avatar" !== I || L,
                         refetchOnMountOrArgChange: !0
                     }),
                     G = V.data,
@@ -281,7 +281,7 @@
                         })) : []
                     }(G) : []
                 }), [G, Y]);
-                return m.createElement(o.JX, null, !S && m.createElement(o.JX, null, m.createElement("p", {
+                return m.createElement(o.JX, null, !L && m.createElement(o.JX, null, m.createElement("p", {
                     className: "tw-mb-2"
                 }, "Select Avatar"), m.createElement(N, {
                     avatars: ee,
@@ -306,7 +306,12 @@
                     iconColor: "#6AE3F9"
                 }, m.createElement(o.JX, {
                     className: "tw-ml-[25px]"
-                }, m.createElement("p", null, "To list your avatar for sale, it must meet our Marketplace Standards and Terms and Conditions. Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", m.createElement(d.rU, {
+                }, m.createElement("p", null, "Before you list your avatar for sale, ensure that it meets our", " ", m.createElement(d.rU, {
+                    to: "https://creators.vrchat.com/economy/guidelines",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    className: "hover:tw-text-teal-accent"
+                }, "content guidelines"), " ", "and Terms and Conditions. Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", m.createElement(d.rU, {
                     to: "/home/avatar/".concat(J.id),
                     className: "hover:tw-text-teal-accent"
                 }, "the avatar page"), " ", "to make changes."), j && m.createElement("div", null, m.createElement("p", null, m.createElement("strong", null, "Our review process:")), m.createElement("p", null, m.createElement("ol", null, m.createElement("li", null, m.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), m.createElement("li", null, m.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), m.createElement("li", null, m.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), m.createElement("li", null, m.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), m.createElement("p", null, m.createElement("strong", null, "Why Reviews Matter?"), m.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), m.createElement("button", {
@@ -336,7 +341,7 @@
                     image: O,
                     isOpen: K,
                     onClose: function() {
-                        return W(!1)
+                        return _(!1)
                     },
                     confirmCallback: function(e) {
                         var t = e.fileId,
@@ -347,7 +352,7 @@
                         q(null === a && null === n ? null : r ? a : n)
                     },
                     cancelCallBack: function() {
-                        return W(!1)
+                        return _(!1)
                     },
                     className: "tw-w-[285px] tw-aspect-square"
                 }))
@@ -536,4 +541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=369adfcee8804f9f16777adcf6652e85ce233ea3be2ccf84141d8dc3707b7063.js.map
+//# sourceMappingURL=1b185db3f8ebfe344c09cbd7dbc490e41e698095996e2ba2a6a96be151853b92.js.map
