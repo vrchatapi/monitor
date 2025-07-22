@@ -65,10 +65,10 @@
                     f = e.children,
                     m = e.onToggleCallback,
                     h = void 0 === m ? function() {} : m,
-                    E = a.useState(t || !1),
-                    g = (0, r.Z)(E, 2),
-                    v = g[0],
-                    y = g[1];
+                    g = a.useState(t || !1),
+                    E = (0, r.Z)(g, 2),
+                    v = E[0],
+                    y = E[1];
                 a.useEffect((function() {
                     y(t)
                 }), [t]);
@@ -88,66 +88,9 @@
                 }, f), "sm" !== d && a.createElement("br", null))
             }
         },
-        81362: (e, t, n) => {
-            n.d(t, {
-                Z: () => a
-            });
-            var r = n(67294),
-                o = n(53637),
-                i = n(95305);
-            const a = function(e) {
-                var t = e.error,
-                    n = e.statusCode;
-                null == t && (t = "Something bad happened!"), "string" != typeof t && (console.error(t), t = t.message);
-                var a = ["😭", "😿", "🙀", "😢", "🐸", "💔", "😖", "😣", "🐉", "🐦", "🤒", "🤕"];
-                return r.createElement(o.Z, null, r.createElement(i.Z, {
-                    xs: {
-                        size: 4,
-                        offset: 4
-                    }
-                }, r.createElement("h2", null, "VRChat"), r.createElement("p", null, "An error has occurred. To continue: "), r.createElement("p", null, "Press the F5 to refresh the website, or "), r.createElement("p", null, "Press the back button to leave the website, or "), r.createElement("p", null, "Check our ", r.createElement("a", {
-                    href: "https://twitter.com/VRChat"
-                }, "twitter"), "?", " "), r.createElement("p", null, "If issues persist, please close all open tabs of the website and try again! (", ["please don't hate us", "we're super sorry", "oops", "uh-oh", "whoopsie", "GAME-OVER!", "you hate to see it happen", "aw jeez", "not like this", "where did it all go wrong?", "we're trying our best", "no cap, on god", "we still love you!!"][Math.floor(Math.random() * a.length)], "! ", a[Math.floor(Math.random() * a.length)], ")"), r.createElement("code", null, n, " ", t)))
-            }
-        },
-        98185: (e, t, n) => {
-            n.d(t, {
-                Z: () => a
-            });
-            var r = n(67294),
-                o = n(81362),
-                i = n(43862);
-            const a = function(e) {
-                var t = e.reducer,
-                    n = e.loading,
-                    a = e.loadingList,
-                    l = e.error,
-                    s = e.statusCode,
-                    c = e.children,
-                    u = e.className,
-                    p = !1;
-                return a && a.forEach((function(e) {
-                    e && (p = !0)
-                })), null != s && 200 !== s && "200" !== s ? r.createElement(o.Z, {
-                    error: l,
-                    statusCode: s
-                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? r.createElement(o.Z, {
-                    error: t.error,
-                    statusCode: t.statusCode
-                }) : l ? r.createElement(o.Z, {
-                    error: l
-                }) : null != t && t.error ? r.createElement(o.Z, {
-                    error: t.error
-                }) : n || p || null != t && t.fetching || null != t && t.loading ? r.createElement(i.Z, {
-                    className: "tw-mx-auto"
-                }) : r.createElement("div", {
-                    className: u
-                }, c)
-            }
-        },
         44907: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => O
+                default: () => w
             });
             var r = n(54546),
                 o = n(4965),
@@ -155,15 +98,15 @@
                 a = n(67294),
                 l = n(89250),
                 s = n(79655),
-                c = n(37463),
+                c = n(46382),
                 u = n(73670),
                 p = n(35773),
                 d = n(95305),
                 f = n(22202),
                 m = n(37599),
                 h = n(83505),
-                E = n(93261),
-                g = n(98185),
+                g = n(93261),
+                E = n(98185),
                 v = n(78666);
             const y = function(e) {
                     var t = e.userId,
@@ -178,46 +121,46 @@
                         d = (0, r.Z)(p, 2),
                         f = d[0],
                         m = d[1],
-                        y = (0, E.dj)({
+                        y = (0, g.dj)({
                             userId: t
                         }, {
                             skip: !!s,
                             refetchOnMountOrArgChange: !0
                         }),
                         b = y.data,
-                        w = void 0 === b ? [] : b,
-                        O = y.isLoading,
+                        O = void 0 === b ? [] : b,
+                        w = y.isLoading,
                         x = y.isSuccess,
                         P = y.isError,
                         j = y.error,
-                        Z = (0, E.G_)({
+                        S = (0, g.G_)({
                             userId: t,
                             membershipStatus: "userblocked"
                         }, {
                             skip: !u
                         }),
-                        S = Z.data,
-                        k = Z.isError,
-                        N = Z.error,
-                        C = Z.isSuccess,
-                        R = (0, E.G_)({
+                        k = S.data,
+                        N = S.isError,
+                        Z = S.error,
+                        D = S.isSuccess,
+                        R = (0, g.G_)({
                             userId: t,
                             membershipStatus: "invited"
                         }, {
                             skip: !l
                         }),
-                        D = R.data,
-                        _ = R.isError,
-                        I = R.error,
-                        M = R.isSuccess;
+                        _ = R.data,
+                        I = R.isError,
+                        C = R.error,
+                        G = R.isSuccess;
                     a.useEffect((function() {
-                        !s && x && m(o ? w.filter((function(e) {
+                        !s && x && m(o ? O.filter((function(e) {
                             return e.ownerId === t
-                        })) : w.filter((function(e) {
+                        })) : O.filter((function(e) {
                             return e.ownerId !== t
-                        }))), u && C && m(S), l && M && m(D)
-                    }), [w, S, D]);
-                    var z, G = (null != s ? s : f).map((function(e) {
+                        }))), u && D && m(k), l && G && m(_)
+                    }), [O, k, _]);
+                    var M, X = (null != s ? s : f).map((function(e) {
                             var n, r, o;
                             return a.createElement(v.Z, {
                                 key: null !== (n = null == e || null === (r = e.group) || void 0 === r ? void 0 : r.id) && void 0 !== n ? n : e.id,
@@ -226,15 +169,15 @@
                                 userId: t
                             })
                         })),
-                        X = (0, h.iv)({
+                        z = (0, h.iv)({
                             name: "1l03awk",
                             styles: "display:grid;gap:10px;grid-template-columns:repeat(1, 1fr);@media (min-width: 576px){grid-template-columns:repeat(2, 1fr);}@media (min-width: 992px){grid-template-columns:repeat(3, 1fr);}@media (min-width: 1920px){grid-template-columns:repeat(4, 1fr);}@media (min-width: 2300px){grid-template-columns:repeat(5, 1fr);}"
                         });
-                    return P || k || _ ? a.createElement("div", null, a.createElement("p", null, "Oops, something went wrong. Please try again later."), a.createElement("code", null, null === (z = j || N || I) || void 0 === z || null === (z = z.data) || void 0 === z || null === (z = z.error) || void 0 === z ? void 0 : z.message)) : a.createElement(g.Z, {
-                        loading: O
+                    return P || N || I ? a.createElement("div", null, a.createElement("p", null, "Oops, something went wrong. Please try again later."), a.createElement("code", null, null === (M = j || Z || C) || void 0 === M || null === (M = M.data) || void 0 === M || null === (M = M.error) || void 0 === M ? void 0 : M.message)) : a.createElement(E.Z, {
+                        loading: w
                     }, a.createElement("div", {
-                        className: X
-                    }, G))
+                        className: z
+                    }, X))
                 },
                 b = function() {
                     var e = (0, f.XC)().data;
@@ -268,8 +211,8 @@
                         isBlocked: !0
                     })))))
                 };
-            var w = n(17219);
-            const O = function() {
+            var O = n(17219);
+            const w = function() {
                 var e = (0, l.s0)(),
                     t = (0, l.UO)().query,
                     n = (0, f.XC)().data,
@@ -278,51 +221,51 @@
                     d = p[0],
                     m = p[1],
                     h = a.useState(3),
-                    g = (0, r.Z)(h, 2),
-                    v = g[0],
-                    O = g[1],
+                    E = (0, r.Z)(h, 2),
+                    v = E[0],
+                    w = E[1],
                     P = (0, f.XC)().data,
                     j = (void 0 === P ? {} : P).id,
-                    Z = (0, E.dj)({
+                    S = (0, g.dj)({
                         userId: j
                     }, {
                         skip: !j
                     }),
-                    S = Z.data,
-                    k = Z.isLoading,
-                    N = Z.isSuccess,
-                    C = (0, E.xS)(),
-                    R = (0, r.Z)(C, 2),
-                    D = R[0],
-                    _ = R[1],
-                    I = _.data,
-                    M = (_.error, _.isLoading),
-                    z = (0, w.y)(),
-                    G = z.data,
-                    X = z.isLoading,
+                    k = S.data,
+                    N = S.isLoading,
+                    Z = S.isSuccess,
+                    D = (0, g.xS)(),
+                    R = (0, r.Z)(D, 2),
+                    _ = R[0],
+                    I = R[1],
+                    C = I.data,
+                    G = (I.error, I.isLoading),
+                    M = (0, O.y)(),
+                    X = M.data,
+                    z = M.isLoading,
                     T = 0,
                     U = 0;
-                if (z.isSuccess && (T = G.constants.GROUPS.MAX_JOINED_PLUS, U = G.constants.GROUPS.MAX_OWNED), (0, a.useEffect)((function() {
-                        t && D({
+                if (M.isSuccess && (T = X.constants.GROUPS.MAX_JOINED_PLUS, U = X.constants.GROUPS.MAX_OWNED), (0, a.useEffect)((function() {
+                        t && _({
                             query: t
                         })
                     }), [t]), (0, a.useEffect)((function() {
-                        N && O(S.filter((function(e) {
+                        Z && w(k.filter((function(e) {
                             return e.ownerId === j
                         })).length)
-                    }), [N]), M || k || X) return a.createElement(c.X2, null, a.createElement(c.JX, {
+                    }), [Z]), G || N || z) return a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "mt-5 w-100 text-center"
                 }, a.createElement(c.UU, null)));
-                var A = n.tagsSet.has("system_supporter") ? "You can only have ".concat(U, " groups at a time. Please delete one of your existing groups to create a new one.") : "You must be a VRC+ supporter to create a group.";
+                var B = n.tagsSet.has("system_supporter") ? "You can only have ".concat(U, " groups at a time. Please delete one of your existing groups to create a new one.") : "You must be a VRC+ supporter to create a group.";
                 return a.createElement("div", null, a.createElement(c.$4, null, "Groups"), a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
-                }, a.createElement(x, null, a.createElement("h2", null, "Groups"), v < U && n.tagsSet.has("system_supporter") && S.length < T || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
+                }, a.createElement(x, null, a.createElement("h2", null, "Groups"), v < U && n.tagsSet.has("system_supporter") && k.length < T || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
                     to: "/home/groups/create"
                 }, a.createElement(c.zx, null, a.createElement(c.$1, {
                     icon: i.r8
                 }), " Create Group")) : a.createElement(c.zx, {
                     disabled: !0,
-                    title: A
+                    title: B
                 }, a.createElement(c.$1, {
                     icon: i.r8
                 }), " Create Group")), a.createElement("form", {
@@ -333,10 +276,10 @@
                     searchString: m,
                     defaultValue: t,
                     placeholder: "Enter a group short code, name or url to join"
-                })))), a.createElement("br", null), t ? (null == I ? void 0 : I.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
+                })))), a.createElement("br", null), t ? (null == C ? void 0 : C.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
                 }, a.createElement("h3", null, 'Results for "', t, '"'), a.createElement(y, {
-                    groupResults: I
+                    groupResults: C
                 }))) : a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "mt-5 w-100 text-center"
                 }, a.createElement("h4", null, 'Looks like "', t, "\" didn't bring back any groups!"), a.createElement("h6", null, "Try searching again, or ", a.createElement(s.rU, {
@@ -352,7 +295,7 @@
         },
         65706: (e, t, n) => {
             n.d(t, {
-                Z: () => S
+                Z: () => k
             });
             var r = n(67294),
                 o = n(45697),
@@ -404,13 +347,13 @@
                 }
             }
 
-            function E(e, t) {
-                return E = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+            function g(e, t) {
+                return g = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
                     return e.__proto__ = t, e
-                }, E(e, t)
+                }, g(e, t)
             }
 
-            function g(e) {
+            function E(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -457,11 +400,11 @@
                 return n
             }
 
-            function w(e) {
+            function O(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? b(Object(n), !0).forEach((function(t) {
-                        O(e, t, n[t])
+                        w(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : b(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -469,7 +412,7 @@
                 return e
             }
 
-            function O(e, t, n) {
+            function w(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -477,7 +420,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            var x = w(w({}, s.ZP.propTypes), {}, {
+            var x = O(O({}, s.ZP.propTypes), {}, {
                     horizontal: i().bool,
                     isOpen: i().bool,
                     children: i().oneOfType([i().arrayOf(i().node), i().node]),
@@ -489,7 +432,7 @@
                         current: i().object
                     })
                 }),
-                P = w(w({}, s.ZP.defaultProps), {}, {
+                P = O(O({}, s.ZP.defaultProps), {}, {
                     horizontal: !1,
                     isOpen: !1,
                     appear: !1,
@@ -498,8 +441,8 @@
                     tag: "div",
                     timeout: c.wF.Collapse
                 }),
-                j = (O(p = {}, c.E5.ENTERING, "collapsing"), O(p, c.E5.ENTERED, "collapse show"), O(p, c.E5.EXITING, "collapsing"), O(p, c.E5.EXITED, "collapse"), p);
-            var Z = function(e) {
+                j = (w(p = {}, c.E5.ENTERING, "collapsing"), w(p, c.E5.ENTERED, "collapse show"), w(p, c.E5.EXITING, "collapsing"), w(p, c.E5.EXITED, "collapse"), p);
+            var S = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -510,9 +453,9 @@
                         }
                     }), Object.defineProperty(e, "prototype", {
                         writable: !1
-                    }), t && E(e, t)
+                    }), t && g(e, t)
                 }(a, e);
-                var t, n, o, i = g(a);
+                var t, n, o, i = E(a);
 
                 function a(e) {
                     var t;
@@ -586,10 +529,10 @@
                             u = t.navbar,
                             p = t.cssModule,
                             h = t.children,
-                            E = (t.innerRef, m(t, d)),
-                            g = this.state.dimension,
-                            v = (0, c.ei)(E, c.rb),
-                            y = (0, c.CE)(E, c.rb);
+                            g = (t.innerRef, m(t, d)),
+                            E = this.state.dimension,
+                            v = (0, c.ei)(g, c.rb),
+                            y = (0, c.CE)(g, c.rb);
                         return r.createElement(s.ZP, f({}, v, {
                             in: i,
                             nodeRef: this.nodeRef,
@@ -603,9 +546,9 @@
                                     return j[e] || "collapse"
                                 }(t),
                                 s = (0, c.mx)(l()(a, o && "collapse-horizontal", i, u && "navbar-collapse"), p),
-                                d = null === g ? null : O({}, o ? "width" : "height", g);
+                                d = null === E ? null : w({}, o ? "width" : "height", E);
                             return r.createElement(n, f({}, y, {
-                                style: w(w({}, y.style), d),
+                                style: O(O({}, y.style), d),
                                 className: s,
                                 ref: e.nodeRef
                             }), h)
@@ -615,9 +558,9 @@
                     writable: !1
                 }), a
             }(r.Component);
-            Z.propTypes = x, Z.defaultProps = P;
-            const S = Z
+            S.propTypes = x, S.defaultProps = P;
+            const k = S
         }
     }
 ]);
-//# sourceMappingURL=ad6b2ca85035bc0d95ba86c9fc0cf6481fe353203614c7a3c706934b370bd823.js.map
+//# sourceMappingURL=e633a101bcb840d7f19a4eb763025a435635a75443afb034d601f59370b1b13a.js.map

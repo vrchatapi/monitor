@@ -1,17 +1,5 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [9795], {
-        41145: (e, t) => {
-            "use strict";
-            var n = "chevron-down",
-                r = [],
-                i = "f078",
-                a = "M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [512, 512, r, i, a]
-            }, t.pt = t.DF
-        },
         79795: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
@@ -23,7 +11,7 @@
                 o = n(41145),
                 l = n(39138),
                 s = n.n(l),
-                c = n(37463),
+                c = n(46382),
                 u = n(70917),
                 d = n(67294),
                 f = n(17383),
@@ -934,4 +922,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b5223a8a980ba1957cb193e30bfc07fa6935a7c7473cba6f38c7c5d99638d98c.js.map
+//# sourceMappingURL=cf3d069e0bcdc8011b2e519fa72f067a9ee566574e73cbe20df36204f808aebc.js.map

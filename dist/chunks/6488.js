@@ -36,65 +36,6 @@
                 icon: [448, 512, r, a, l]
             }, t.BC = t.DF
         },
-        81362: (e, t, n) => {
-            "use strict";
-            n.d(t, {
-                Z: () => o
-            });
-            var r = n(67294),
-                a = n(53637),
-                l = n(95305);
-            const o = function(e) {
-                var t = e.error,
-                    n = e.statusCode;
-                null == t && (t = "Something bad happened!"), "string" != typeof t && (console.error(t), t = t.message);
-                var o = ["😭", "😿", "🙀", "😢", "🐸", "💔", "😖", "😣", "🐉", "🐦", "🤒", "🤕"];
-                return r.createElement(a.Z, null, r.createElement(l.Z, {
-                    xs: {
-                        size: 4,
-                        offset: 4
-                    }
-                }, r.createElement("h2", null, "VRChat"), r.createElement("p", null, "An error has occurred. To continue: "), r.createElement("p", null, "Press the F5 to refresh the website, or "), r.createElement("p", null, "Press the back button to leave the website, or "), r.createElement("p", null, "Check our ", r.createElement("a", {
-                    href: "https://twitter.com/VRChat"
-                }, "twitter"), "?", " "), r.createElement("p", null, "If issues persist, please close all open tabs of the website and try again! (", ["please don't hate us", "we're super sorry", "oops", "uh-oh", "whoopsie", "GAME-OVER!", "you hate to see it happen", "aw jeez", "not like this", "where did it all go wrong?", "we're trying our best", "no cap, on god", "we still love you!!"][Math.floor(Math.random() * o.length)], "! ", o[Math.floor(Math.random() * o.length)], ")"), r.createElement("code", null, n, " ", t)))
-            }
-        },
-        98185: (e, t, n) => {
-            "use strict";
-            n.d(t, {
-                Z: () => o
-            });
-            var r = n(67294),
-                a = n(81362),
-                l = n(43862);
-            const o = function(e) {
-                var t = e.reducer,
-                    n = e.loading,
-                    o = e.loadingList,
-                    c = e.error,
-                    i = e.statusCode,
-                    s = e.children,
-                    u = e.className,
-                    m = !1;
-                return o && o.forEach((function(e) {
-                    e && (m = !0)
-                })), null != i && 200 !== i && "200" !== i ? r.createElement(a.Z, {
-                    error: c,
-                    statusCode: i
-                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? r.createElement(a.Z, {
-                    error: t.error,
-                    statusCode: t.statusCode
-                }) : c ? r.createElement(a.Z, {
-                    error: c
-                }) : null != t && t.error ? r.createElement(a.Z, {
-                    error: t.error
-                }) : n || m || null != t && t.fetching || null != t && t.loading ? r.createElement(l.Z, {
-                    className: "tw-mx-auto"
-                }) : r.createElement("div", {
-                    className: u
-                }, s)
-            }
-        },
         92848: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
@@ -115,23 +56,23 @@
                 h = n(4241),
                 y = n(64687),
                 g = n.n(y),
-                E = n(83505),
-                v = n(9669),
-                b = n.n(v),
-                w = n(67294),
-                x = n(89250),
+                v = n(83505),
+                b = n(9669),
+                E = n.n(b),
+                x = n(67294),
+                w = n(89250),
                 C = n(79655),
                 k = n(35773),
                 N = n(95305),
                 O = n(22202),
-                j = n(37463),
+                j = n(46382),
                 S = n(78158),
                 P = n(93261),
                 T = n(98185),
-                Z = n(63221),
-                D = n(17219);
+                D = n(63221),
+                U = n(17219);
 
-            function U(e, t) {
+            function I(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -142,100 +83,100 @@
                 return n
             }
 
-            function I(e) {
+            function A(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? U(Object(n), !0).forEach((function(t) {
+                    t % 2 ? I(Object(n), !0).forEach((function(t) {
                         (0, a.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : U(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : I(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var A = w.lazy((function() {
-                return Promise.all([n.e(123), n.e(1541), n.e(4444), n.e(8890), n.e(9908), n.e(3294), n.e(527), n.e(347), n.e(9740)]).then(n.bind(n, 40527))
+            var Z = x.lazy((function() {
+                return Promise.all([n.e(123), n.e(1541), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(347), n.e(4616)]).then(n.bind(n, 40527))
             }));
             const R = function() {
-                var e, t = (0, x.s0)(),
+                var e, t = (0, w.s0)(),
                     n = (0, O.XC)().data,
                     o = void 0 === n ? {} : n,
                     y = o.id,
-                    v = o.tagsSet,
-                    U = w.useState({
+                    b = o.tagsSet,
+                    I = x.useState({
                         name: "",
                         shortCode: "",
                         description: "",
-                        joinState: Z.wN.REQUEST,
-                        privacy: Z.TW.DEFAULT,
+                        joinState: D.wN.REQUEST,
+                        privacy: D.TW.DEFAULT,
                         roleTemplate: "default"
                     }),
-                    R = (0, l.Z)(U, 2),
+                    R = (0, l.Z)(I, 2),
                     M = R[0],
                     $ = R[1],
-                    q = w.useState(!1),
-                    V = (0, l.Z)(q, 2),
-                    W = V[0],
-                    Y = V[1],
-                    B = w.useState(null),
-                    X = (0, l.Z)(B, 2),
+                    q = x.useState(!1),
+                    W = (0, l.Z)(q, 2),
+                    Y = W[0],
+                    B = W[1],
+                    V = x.useState(null),
+                    X = (0, l.Z)(V, 2),
                     J = X[0],
                     Q = X[1],
-                    H = w.useState(0),
+                    H = x.useState(0),
                     K = (0, l.Z)(H, 2),
                     ee = K[0],
                     te = K[1],
-                    ne = w.useState(!1),
+                    ne = x.useState(!1),
                     re = (0, l.Z)(ne, 1)[0],
-                    ae = w.useState(M.joinState),
+                    ae = x.useState(M.joinState),
                     le = (0, l.Z)(ae, 2),
                     oe = le[0],
                     ce = le[1],
-                    ie = w.useState(M.roleTemplate),
+                    ie = x.useState(M.roleTemplate),
                     se = (0, l.Z)(ie, 2),
                     ue = se[0],
                     me = se[1],
-                    pe = w.useState(M.privacy),
+                    pe = x.useState(M.privacy),
                     de = (0, l.Z)(pe, 2),
                     fe = de[0],
                     he = de[1],
-                    ye = w.useState(null),
+                    ye = x.useState(null),
                     ge = (0, l.Z)(ye, 2),
-                    Ee = ge[0],
-                    ve = ge[1],
-                    be = w.useState(null),
-                    we = (0, l.Z)(be, 2),
-                    xe = we[0],
-                    Ce = we[1],
-                    ke = w.useState(null),
+                    ve = ge[0],
+                    be = ge[1],
+                    Ee = x.useState(null),
+                    xe = (0, l.Z)(Ee, 2),
+                    we = xe[0],
+                    Ce = xe[1],
+                    ke = x.useState(null),
                     Ne = (0, l.Z)(ke, 2),
                     Oe = Ne[0],
                     je = Ne[1],
-                    Se = w.useState(null),
+                    Se = x.useState(null),
                     Pe = (0, l.Z)(Se, 2),
                     Te = Pe[0],
-                    Ze = Pe[1],
-                    De = w.useState(null == v ? void 0 : v.has("admin_uncap_owned_groups")),
-                    Ue = (0, l.Z)(De, 2),
-                    Ie = Ue[0],
-                    Ae = Ue[1],
-                    Re = w.useState(null),
+                    De = Pe[1],
+                    Ue = x.useState(null == b ? void 0 : b.has("admin_uncap_owned_groups")),
+                    Ie = (0, l.Z)(Ue, 2),
+                    Ae = Ie[0],
+                    Ze = Ie[1],
+                    Re = x.useState(null),
                     _e = (0, l.Z)(Re, 2),
                     Fe = _e[0],
                     Le = _e[1],
-                    ze = (0, D.y)(),
+                    ze = (0, U.y)(),
                     Ge = ze.data,
                     Me = ze.isLoading,
                     $e = ze.isSuccess,
                     qe = (0, P.VR)(),
-                    Ve = qe.data,
-                    We = qe.isLoading,
-                    Ye = (0, P.dj)({
+                    We = qe.data,
+                    Ye = qe.isLoading,
+                    Be = (0, P.dj)({
                         userId: y
                     }),
-                    Be = Ye.data,
-                    Xe = Ye.isLoading,
-                    Je = Ye.isSuccess,
+                    Ve = Be.data,
+                    Xe = Be.isLoading,
+                    Je = Be.isSuccess,
                     Qe = 0,
                     He = 0;
                 $e && (Qe = Ge.constants.GROUPS.MAX_JOINED_PLUS, He = Ge.constants.GROUPS.MAX_OWNED);
@@ -270,21 +211,21 @@
                     name: "done",
                     check: !1
                 }];
-                w.useEffect((function() {
+                x.useEffect((function() {
                     var e = new Image;
                     e.src = "https://assets.vrchat.com/www/groups/default_icon.png", e.src = "https://assets.vrchat.com/www/groups/default_banner.png"
-                }), []), w.useEffect((function() {
-                    if (!Ie && Je) {
-                        var e = Be.filter((function(e) {
+                }), []), x.useEffect((function() {
+                    if (!Ae && Je) {
+                        var e = Ve.filter((function(e) {
                             return e.ownerId === y
                         }));
-                        Ae(e.length < He && (null == v ? void 0 : v.has("system_supporter")) && Be.length < Qe || (null == v ? void 0 : v.has("admin_uncap_owned_groups")))
+                        Ze(e.length < He && (null == b ? void 0 : b.has("system_supporter")) && Ve.length < Qe || (null == b ? void 0 : b.has("admin_uncap_owned_groups")))
                     }
                 }), [Je]);
                 var et = function(e) {
                         var t = e.target.name,
                             n = "checkbox" === e.target.getAttribute("type") ? e.target.checked : e.target.value;
-                        $(I(I({}, M), {}, (0, a.Z)({}, t, "shortCode" === t ? n.toUpperCase() : n)))
+                        $(A(A({}, M), {}, (0, a.Z)({}, t, "shortCode" === t ? n.toUpperCase() : n)))
                     },
                     tt = function() {
                         var e = (0, r.Z)(g().mark((function e() {
@@ -292,20 +233,20 @@
                             return g().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return Y(!0), Q(null), n = I(I({}, M), {}, {
-                                            joinState: null != oe ? oe : Z.wN.REQUEST,
-                                            privacy: null != fe ? fe : Z.TW.DEFAULT,
+                                        return B(!0), Q(null), n = A(A({}, M), {}, {
+                                            joinState: null != oe ? oe : D.wN.REQUEST,
+                                            privacy: null != fe ? fe : D.TW.DEFAULT,
                                             roleTemplate: null != ue ? ue : "default",
-                                            bannerId: Ee,
+                                            bannerId: ve,
                                             iconId: Oe
-                                        }), e.prev = 3, e.next = 6, b().post(window.apiUrl("/api/1/groups"), I({}, n));
+                                        }), e.prev = 3, e.next = 6, E().post(window.apiUrl("/api/1/groups"), A({}, n));
                                     case 6:
                                         r = e.sent, t("/home/groups/".concat(r.data.id)), e.next = 14;
                                         break;
                                     case 10:
                                         e.prev = 10, e.t0 = e.catch(3), 200 !== (a = e.t0.response).status && Q(a.data.error.message);
                                     case 14:
-                                        Y(!1);
+                                        B(!1);
                                     case 15:
                                     case "end":
                                         return e.stop()
@@ -318,32 +259,32 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return Me ? w.createElement(j.UU, {
+                return Me ? x.createElement(j.UU, {
                     width: "100%",
                     height: "200px"
-                }) : Ie ? w.createElement(_, null, w.createElement(j.$4, null, "Create Group"), w.createElement(F, null, J && w.createElement(j.qX, {
+                }) : Ae ? x.createElement(_, null, x.createElement(j.$4, null, "Create Group"), x.createElement(F, null, J && x.createElement(j.qX, {
                     type: "error",
                     title: "Error",
                     style: {
                         textAlign: "initial"
                     },
                     className: "mt-0"
-                }, J), (0 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "What do you want to name your group?")), w.createElement(j.Ao, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }, J), (0 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "What do you want to name your group?")), x.createElement(j.Ao, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "a32mvl",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;align-items:center"
                     })
-                }, w.createElement("h6", {
-                    className: (0, E.iv)({
+                }, x.createElement("h6", {
+                    className: (0, v.iv)({
                         name: "pr10xp",
                         styles: "margin-bottom:10px"
                     })
-                }, "This is the primary name that your Group will use everywhere, including the Group Finder."), w.createElement("div", {
-                    className: (0, E.iv)({
+                }, "This is the primary name that your Group will use everywhere, including the Group Finder."), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "xxcb20",
                         styles: "margin-top:10px;max-width:400px"
                     })
-                }, w.createElement(j.II, {
+                }, x.createElement(j.II, {
                     type: "text",
                     name: "name",
                     className: "w-100",
@@ -354,22 +295,22 @@
                             function(e) {
                                 var t = e.target.value,
                                     n = t.length >= 3 ? t.replace(/[^a-zA-Z0-9]/g, "").toUpperCase().substring(0, 6) : null;
-                                Le(n), n && $(I(I({}, M), {}, {
+                                Le(n), n && $(A(A({}, M), {}, {
                                     name: t
                                 }))
                             }(e)
                     }
-                }))))), (1 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "Select an identifier for your Group.")), w.createElement(j.Ao, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }))))), (1 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "Select an identifier for your Group.")), x.createElement(j.Ao, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "a32mvl",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;align-items:center"
                     })
-                }, w.createElement("h6", null, "Your Group's identifier must be 3-6 characters and will be followed with a discriminator."), Fe && w.createElement("small", null, "If left blank, ", w.createElement("strong", null, Fe), " will be your identifier."), w.createElement("div", {
-                    className: (0, E.iv)({
+                }, x.createElement("h6", null, "Your Group's identifier must be 3-6 characters and will be followed with a discriminator."), Fe && x.createElement("small", null, "If left blank, ", x.createElement("strong", null, Fe), " will be your identifier."), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "1r0yqr6",
                         styles: "margin-top:10px"
                     })
-                }, w.createElement(j.II, {
+                }, x.createElement(j.II, {
                     type: "text",
                     name: "shortCode",
                     className: "w-100",
@@ -377,108 +318,108 @@
                     value: M.shortCode,
                     onChange: et,
                     placeholder: null != Fe ? Fe : "example: 'BREAD'"
-                })), w.createElement("p", {
-                    className: (0, E.iv)({
+                })), x.createElement("p", {
+                    className: (0, v.iv)({
                         name: "iqoq9n",
                         styles: "margin-top:20px"
                     })
-                }, "This will help other users find your group or differentiate it from similar named ones. ", w.createElement("strong", null, "Choose wisely!"))))), (2 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "Write a description for ", M.name, "!")), w.createElement(j.Ao, null, w.createElement("h6", {
+                }, "This will help other users find your group or differentiate it from similar named ones. ", x.createElement("strong", null, "Choose wisely!"))))), (2 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "Write a description for ", M.name, "!")), x.createElement(j.Ao, null, x.createElement("h6", {
                     className: "mb-4"
-                }, "Choose a short description to be displayed on your Group's profile."), w.createElement(j.gx, {
+                }, "Choose a short description to be displayed on your Group's profile."), x.createElement(j.gx, {
                     name: "description",
                     className: "w-100",
                     value: M.description,
                     maxLength: 250,
                     onChange: et
-                }), w.createElement("p", {
-                    className: (0, E.iv)({
+                }), x.createElement("p", {
+                    className: (0, v.iv)({
                         name: "1duj7gx",
                         styles: "align-self:flex-end"
                     })
-                }, M.description.length, "/250 Characters"))), (3 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "How can people join your Group?")), w.createElement(j.Ao, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }, M.description.length, "/250 Characters"))), (3 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "How can people join your Group?")), x.createElement(j.Ao, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "a32mvl",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;align-items:center"
                     })
-                }, w.createElement("p", {
+                }, x.createElement("p", {
                     className: "mb-4"
-                }, "Choose how you'd like to allow people to join your Group. This can be changed later."), w.createElement("div", {
-                    className: (0, E.iv)({
+                }, "Choose how you'd like to allow people to join your Group. This can be changed later."), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "1nhtvcb",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;min-height:250px;@media (min-width: 1124px) and (max-width: 1199px),(min-width: 1740px){flex-direction:row;}"
                     })
-                }, w.createElement(G, {
-                    className: "".concat(oe === Z.wN.OPEN ? "active" : ""),
+                }, x.createElement(G, {
+                    className: "".concat(oe === D.wN.OPEN ? "active" : ""),
                     onClick: function() {
-                        ce(Z.wN.OPEN)
+                        ce(D.wN.OPEN)
                     }
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: h.FK,
                     width: 70
-                }), w.createElement("h2", null, "Free Join"), w.createElement("h6", null, "Anyone can join your group freely!")), w.createElement(G, {
-                    className: "".concat(oe === Z.wN.REQUEST ? "active" : ""),
+                }), x.createElement("h2", null, "Free Join"), x.createElement("h6", null, "Anyone can join your group freely!")), x.createElement(G, {
+                    className: "".concat(oe === D.wN.REQUEST ? "active" : ""),
                     onClick: function() {
-                        ce(Z.wN.REQUEST)
+                        ce(D.wN.REQUEST)
                     }
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: m.FU,
                     width: 70
-                }), w.createElement("h2", null, "Request to Join"), w.createElement("h6", null, "New members must request to join.")), w.createElement(G, {
-                    className: "".concat(oe === Z.wN.INVITE ? "active" : ""),
+                }), x.createElement("h2", null, "Request to Join"), x.createElement("h6", null, "New members must request to join.")), x.createElement(G, {
+                    className: "".concat(oe === D.wN.INVITE ? "active" : ""),
                     onClick: function() {
-                        ce(Z.wN.INVITE)
+                        ce(D.wN.INVITE)
                     }
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: f.FJ,
                     width: 70
-                }), w.createElement("h2", null, "Invite-Only"), w.createElement("h6", null, "New members may be invited by anyone with the right permissions!"))))), w.createElement("br", null)), (4 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "How visible is your Group?")), w.createElement(j.Ao, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }), x.createElement("h2", null, "Invite-Only"), x.createElement("h6", null, "New members may be invited by anyone with the right permissions!"))))), x.createElement("br", null)), (4 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "How visible is your Group?")), x.createElement(j.Ao, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "a32mvl",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;align-items:center"
                     })
-                }, w.createElement("p", null, "Choose how you'd like to allow people to discover your Group. This cannot be changed!"), w.createElement("div", {
-                    className: (0, E.iv)({
+                }, x.createElement("p", null, "Choose how you'd like to allow people to discover your Group. This cannot be changed!"), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "1tsn6nm",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;min-height:250px;@media (min-width: 855px) and (max-width: 1199px),(min-width: 1475px){flex-direction:row;}"
                     })
-                }, w.createElement(G, {
-                    className: "".concat(fe === Z.TW.DEFAULT ? "active" : ""),
+                }, x.createElement(G, {
+                    className: "".concat(fe === D.TW.DEFAULT ? "active" : ""),
                     onClick: function() {
-                        he(Z.TW.DEFAULT)
+                        he(D.TW.DEFAULT)
                     }
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: d.KC,
                     width: 70
-                }), w.createElement("h2", null, "Public"), w.createElement("h6", null, "Members can choose to advertise the group on their profile.")), w.createElement(G, {
-                    className: "".concat(fe === Z.TW.PRIVATE ? "active" : ""),
+                }), x.createElement("h2", null, "Public"), x.createElement("h6", null, "Members can choose to advertise the group on their profile.")), x.createElement(G, {
+                    className: "".concat(fe === D.TW.PRIVATE ? "active" : ""),
                     onClick: function() {
-                        he(Z.TW.PRIVATE)
+                        he(D.TW.PRIVATE)
                     }
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: p.BC,
                     width: 70
-                }), w.createElement("h2", null, "Private"), w.createElement("h6", null, "The group cannot be advertised or displayed by members."))))), w.createElement("br", null)), (5 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "Select a role template!")), w.createElement(j.Ao, null, w.createElement("h6", null, "Initial starting point of roles and permissions to help you manage your group"), w.createElement("div", {
-                    className: (0, E.iv)({
+                }), x.createElement("h2", null, "Private"), x.createElement("h6", null, "The group cannot be advertised or displayed by members."))))), x.createElement("br", null)), (5 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "Select a role template!")), x.createElement(j.Ao, null, x.createElement("h6", null, "Initial starting point of roles and permissions to help you manage your group"), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "19gvpcg",
                         styles: "display:flex;flex-direction:row;justify-content:space-evenly;flex-wrap:wrap;>div:nth-child(2n){page-break-after:always;}"
                     })
-                }, w.createElement(T.Z, {
-                    loading: We
-                }, Object.keys(null != Ve ? Ve : {}).map((function(e, t) {
-                    var n = Ve[e];
-                    return w.createElement(w.Fragment, null, w.createElement(G, {
+                }, x.createElement(T.Z, {
+                    loading: Ye
+                }, Object.keys(null != We ? We : {}).map((function(e, t) {
+                    var n = We[e];
+                    return x.createElement(x.Fragment, null, x.createElement(G, {
                         className: "".concat(ue === e ? "active" : "", " mb-3"),
                         onClick: function() {
                             me(e)
                         }
-                    }, w.createElement("h2", null, n.name), w.createElement("h6", null, n.description)))
-                })))))), (6 === ee || re) && w.createElement("div", {
+                    }, x.createElement("h2", null, n.name), x.createElement("h6", null, n.description)))
+                })))))), (6 === ee || re) && x.createElement("div", {
                     className: "h-100 d-flex flex-column"
-                }, w.createElement("h2", {
+                }, x.createElement("h2", {
                     className: "text-center"
-                }, "Select a group banner"), w.createElement(S.Z, {
+                }, "Select a group banner"), x.createElement(S.Z, {
                     group: {
-                        bannerUrl: xe,
+                        bannerUrl: we,
                         iconUrl: Te,
                         name: M.name,
                         shortCode: M.shortCode,
@@ -486,20 +427,20 @@
                         memberCount: 0
                     },
                     showCanonicalLink: !1
-                }), w.createElement(A, {
+                }), x.createElement(Z, {
                     isSelector: !0,
                     selectedCallback: function(e, t) {
-                        ve(e), Ce(t)
+                        be(e), Ce(t)
                     },
                     activeTab: "photos",
-                    selectedId: null != Ee ? Ee : ""
-                })), (7 === ee || re) && w.createElement("div", {
+                    selectedId: null != ve ? ve : ""
+                })), (7 === ee || re) && x.createElement("div", {
                     className: "h-100 d-flex flex-column"
-                }, w.createElement("h2", {
+                }, x.createElement("h2", {
                     className: "text-center"
-                }, "Select a Group Icon"), w.createElement(S.Z, {
+                }, "Select a Group Icon"), x.createElement(S.Z, {
                     group: {
-                        bannerUrl: xe,
+                        bannerUrl: we,
                         iconUrl: Te,
                         name: M.name,
                         shortCode: M.shortCode,
@@ -507,21 +448,21 @@
                         memberCount: 0
                     },
                     showCanonicalLink: !1
-                }), w.createElement(A, {
+                }), x.createElement(Z, {
                     isSelector: !0,
                     selectedCallback: function(e, t) {
-                        je(e), Ze(t)
+                        je(e), De(t)
                     },
                     activeTab: "icons",
                     selectedId: null != Oe ? Oe : ""
-                })), (8 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "This is how your group will appear!")), w.createElement(j.Ao, null, w.createElement("h6", {
-                    className: (0, E.iv)({
+                })), (8 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "This is how your group will appear!")), x.createElement(j.Ao, null, x.createElement("h6", {
+                    className: (0, v.iv)({
                         name: "a0w530",
                         styles: "padding-bottom:20px"
                     })
-                }, "Feel free to go back and change stuff if this doesn't look right!", w.createElement("br", null), "If all looks good, click the thumbs up!"), w.createElement(S.Z, {
+                }, "Feel free to go back and change stuff if this doesn't look right!", x.createElement("br", null), "If all looks good, click the thumbs up!"), x.createElement(S.Z, {
                     group: {
-                        bannerUrl: xe,
+                        bannerUrl: we,
                         iconUrl: Te,
                         name: M.name,
                         shortCode: M.shortCode,
@@ -529,14 +470,14 @@
                         memberCount: 0
                     },
                     showCanonicalLink: !1
-                }))), (9 === ee || re) && w.createElement("div", null, w.createElement(j.oI, null, w.createElement("h2", null, "You've created ", M.name, "! 🥳")), w.createElement(j.Ao, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }))), (9 === ee || re) && x.createElement("div", null, x.createElement(j.oI, null, x.createElement("h2", null, "You've created ", M.name, "! 🥳")), x.createElement(j.Ao, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "9evx32",
                         styles: "display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;>h6{margin:10px 0 40px 0;}li:last-of-type{margin-bottom:40px;}"
                     })
-                }, w.createElement(S.Z, {
+                }, x.createElement(S.Z, {
                     group: {
-                        bannerUrl: xe,
+                        bannerUrl: we,
                         iconUrl: Te,
                         name: M.name,
                         shortCode: M.shortCode,
@@ -544,86 +485,86 @@
                         memberCount: 0
                     },
                     showCanonicalLink: !1
-                }), w.createElement("h6", null, "Now that things are set-up, here's what you can expect next."), w.createElement("li", null, w.createElement("p", null, "You can start adjusting your roles and permissions! 📜")), w.createElement("li", null, w.createElement("p", null, "You can start inviting friends now. 🤩")), w.createElement("div", {
-                    className: (0, E.iv)({
+                }), x.createElement("h6", null, "Now that things are set-up, here's what you can expect next."), x.createElement("li", null, x.createElement("p", null, "You can start adjusting your roles and permissions! 📜")), x.createElement("li", null, x.createElement("p", null, "You can start inviting friends now. 🤩")), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "15hbikz",
                         styles: "display:flex;flex-direction:row;justify-content:center;align-items:center;h4{margin:0;}"
                     })
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: m.FU,
                     width: 40,
                     className: "m-3"
-                }), w.createElement(C.rU, {
+                }), x.createElement(C.rU, {
                     to: "/home/group/".concat(M.id)
-                }, w.createElement("h4", null, "Invite Your Friends"))), w.createElement("div", {
-                    className: (0, E.iv)({
+                }, x.createElement("h4", null, "Invite Your Friends"))), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "3fxd5t",
                         styles: "margin-top:30px;display:flex;flex-direction:row;justify-content:center;align-items:center;h4{margin:0;}"
                     })
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: u.Kb,
                     width: 40,
                     className: "m-3"
-                }), w.createElement(C.rU, {
+                }), x.createElement(C.rU, {
                     to: "/home/group/".concat(M.id),
                     params: {
                         tab: "settings"
                     }
-                }, w.createElement("h4", null, "Setup Roles & Permissions")))), w.createElement("hr", {
-                    className: (0, E.iv)({
+                }, x.createElement("h4", null, "Setup Roles & Permissions")))), x.createElement("hr", {
+                    className: (0, v.iv)({
                         name: "sva0ps",
                         styles: "border-top-width:3px"
                     })
-                }), w.createElement("div", {
-                    className: (0, E.iv)({
+                }), x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "1cqgxda",
                         styles: "display:flex;flex-direction:row;justify-content:center;h6{margin:2px 15px 0 0;}"
                     })
-                }, w.createElement(C.rU, {
+                }, x.createElement(C.rU, {
                     to: "/home/group/".concat(M.id)
-                }, "View Your Group!")))), ee < Ke.length && w.createElement(k.Z, null, w.createElement(N.Z, null, w.createElement("div", {
-                    className: (0, E.iv)({
+                }, "View Your Group!")))), ee < Ke.length && x.createElement(k.Z, null, x.createElement(N.Z, null, x.createElement("div", {
+                    className: (0, v.iv)({
                         name: "sw0n2m",
                         styles: "display:flex;justify-content:space-around"
                     })
-                })))), w.createElement("div", {
+                })))), x.createElement("div", {
                     className: "d-flex flex-row px-1 mx-2 align-items-center"
-                }, w.createElement(z, {
+                }, x.createElement(z, {
                     onClick: function() {
                         te(0 === ee ? 0 : ee - 1)
                     },
                     disabled: 0 === ee || ee >= Ke.length,
                     className: "me-1",
                     expand: !0
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: s.A3,
                     width: 45
-                })), w.createElement(L, {
+                })), x.createElement(L, {
                     onClick: function() {
-                        ee + 2 === Ke.length ? tt() : ("shortCode" === Ke[ee].name && $(I(I({}, M), {}, {
+                        ee + 2 === Ke.length ? tt() : ("shortCode" === Ke[ee].name && $(A(A({}, M), {}, {
                             shortCode: "" === M.shortCode && Fe ? Fe : M.shortCode
                         })), te(ee + 1))
                     },
-                    loading: W,
-                    disabled: W || !Ke[ee].check,
+                    loading: Y,
+                    disabled: Y || !Ke[ee].check,
                     className: "ms-1",
                     expand: !0
-                }, w.createElement(j.$1, {
+                }, x.createElement(j.$1, {
                     icon: 8 === ee ? i.u8 : c._t,
                     width: 45
-                })))) : Xe ? w.createElement(j.UU, {
+                })))) : Xe ? x.createElement(j.UU, {
                     width: "100%",
                     height: "200px"
-                }) : w.createElement(w.Fragment, null, w.createElement(j.qX, {
+                }) : x.createElement(x.Fragment, null, x.createElement(j.qX, {
                     type: "error",
                     title: "Error 🤖",
                     style: {
                         textAlign: "initial"
                     },
                     className: "mt-0"
-                }, "You cannot make any more groups!"), w.createElement("div", {
+                }, "You cannot make any more groups!"), x.createElement("div", {
                     className: "text-center"
-                }, w.createElement(C.rU, {
+                }, x.createElement(C.rU, {
                     to: "/home/groups"
                 }, "Go Back! 😿")))
             };
@@ -892,4 +833,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2711a67939eb1303be6eb5349ac373311a0f9c7793c3df7efb9fb83ba8776e79.js.map
+//# sourceMappingURL=4bd83f1183fe4ad5541c490bcc15eb5b3697173753308e8c084acdea2b091af6.js.map

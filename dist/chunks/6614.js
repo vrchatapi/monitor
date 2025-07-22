@@ -3,22 +3,22 @@
         55549: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => d
+                Z: () => l
             });
             var a = r(54546),
                 i = r(21707),
                 n = r(20495),
                 c = r(6811),
                 o = r(67294),
-                s = r(37463),
+                s = r(46382),
                 u = r(86646),
                 w = r(79442),
                 p = r(60006);
-            const d = function(e) {
+            const l = function(e) {
                 var t = e.status,
                     r = e.error,
-                    d = e.groupId,
-                    l = e.code,
+                    l = e.groupId,
+                    d = e.code,
                     g = e.className,
                     h = (0, w.nv)(),
                     m = (0, a.Z)(h, 2),
@@ -113,9 +113,9 @@
                     className: "tw-flex-none tw-mt-9 tw-px-4",
                     disabled: x || v || k || q,
                     onClick: function() {
-                        return d && l ? S({
-                            groupId: d,
-                            code: l
+                        return l && d ? S({
+                            groupId: l,
+                            code: d
                         }) : f()
                     }
                 }, v || q ? "Sent!" : "Resend Age Verification Email"), (j || I) && o.createElement("p", {
@@ -128,7 +128,7 @@
         66614: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, {
-                default: () => d
+                default: () => l
             });
             var a = r(54546),
                 i = r(67294),
@@ -139,18 +139,18 @@
                 u = r(17383),
                 w = r(79442),
                 p = r(55549);
-            const d = function() {
+            const l = function() {
                 var e = (0, n.lr)(),
                     t = (0, a.Z)(e, 1)[0].get("inquiry-id"),
                     r = (0, w.MI)({
                         inquiryId: t
                     }),
-                    d = r.data,
-                    l = r.isFetching,
+                    l = r.data,
+                    d = r.isFetching,
                     g = r.error,
                     h = r.refetch,
-                    m = "completed" === (null == d ? void 0 : d.status) || "needs_review" === (null == d ? void 0 : d.status);
-                return (0, u.Yz)(h, m ? 3e3 : null), i.createElement(s.Z, null, i.createElement(c.Z, null, "Age Verification Status"), l || m ? i.createElement("div", {
+                    m = "completed" === (null == l ? void 0 : l.status) || "needs_review" === (null == l ? void 0 : l.status);
+                return (0, u.Yz)(h, m ? 3e3 : null), i.createElement(s.Z, null, i.createElement(c.Z, null, "Age Verification Status"), d || m ? i.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, i.createElement("div", {
                     className: "tw-mb-5 tw-flex tw-items-center tw-justify-center"
@@ -163,33 +163,9 @@
                 }, "Please remain on this page while your profile is being updated.", i.createElement("br", null), "This can take up to a couple of minutes.")) : i.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
                 }, i.createElement(p.Z, {
-                    status: d,
+                    status: l,
                     error: g
                 })))
-            }
-        },
-        43862: (e, t, r) => {
-            "use strict";
-            r.d(t, {
-                Z: () => s
-            });
-            var a = r(45987),
-                i = r(92332),
-                n = r(67294),
-                c = r(86646),
-                o = ["hidden", "size"];
-            const s = function(e) {
-                var t = e.hidden,
-                    r = e.size,
-                    s = void 0 === r ? "2x" : r,
-                    u = (0, a.Z)(e, o);
-                return n.createElement("div", u, n.createElement(c.Z, {
-                    icon: i.LM,
-                    size: s,
-                    hidden: t,
-                    spin: !0,
-                    pulse: !0
-                }))
             }
         },
         13887: (e, t, r) => {
@@ -274,20 +250,20 @@
                     i = (0, c.useState)(null),
                     w = (0, a.Z)(i, 2),
                     p = w[0],
-                    d = w[1],
-                    l = (0, c.useState)(null),
-                    g = (0, a.Z)(l, 2),
+                    l = w[1],
+                    d = (0, c.useState)(null),
+                    g = (0, a.Z)(d, 2),
                     h = g[0],
                     m = g[1],
                     f = (0, c.useMemo)((function() {
                         return n()(u, 6)
                     }), []);
                 (0, c.useEffect)((function() {
-                    if (null === p) d(f[0]);
+                    if (null === p) l(f[0]);
                     else {
                         var e = b(p);
                         setTimeout((function() {
-                            return d(e)
+                            return l(e)
                         }), 1e4), m(e)
                     }
                 }), [p]);
@@ -638,4 +614,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ff7f5e1705b7da70e2eb4c6f2e4086feb5e432b2185e03c4b401f4166d5d2349.js.map
+//# sourceMappingURL=25c17b289350a9ecf33d76016997f641af9324f27c2e30c0acad7ba909bf10e2.js.map

@@ -1,73 +1,16 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [4586], {
-        81362: (e, t, n) => {
-            n.d(t, {
-                Z: () => o
-            });
-            var a = n(67294),
-                r = n(53637),
-                l = n(95305);
-            const o = function(e) {
-                var t = e.error,
-                    n = e.statusCode;
-                null == t && (t = "Something bad happened!"), "string" != typeof t && (console.error(t), t = t.message);
-                var o = ["😭", "😿", "🙀", "😢", "🐸", "💔", "😖", "😣", "🐉", "🐦", "🤒", "🤕"];
-                return a.createElement(r.Z, null, a.createElement(l.Z, {
-                    xs: {
-                        size: 4,
-                        offset: 4
-                    }
-                }, a.createElement("h2", null, "VRChat"), a.createElement("p", null, "An error has occurred. To continue: "), a.createElement("p", null, "Press the F5 to refresh the website, or "), a.createElement("p", null, "Press the back button to leave the website, or "), a.createElement("p", null, "Check our ", a.createElement("a", {
-                    href: "https://twitter.com/VRChat"
-                }, "twitter"), "?", " "), a.createElement("p", null, "If issues persist, please close all open tabs of the website and try again! (", ["please don't hate us", "we're super sorry", "oops", "uh-oh", "whoopsie", "GAME-OVER!", "you hate to see it happen", "aw jeez", "not like this", "where did it all go wrong?", "we're trying our best", "no cap, on god", "we still love you!!"][Math.floor(Math.random() * o.length)], "! ", o[Math.floor(Math.random() * o.length)], ")"), a.createElement("code", null, n, " ", t)))
-            }
-        },
-        98185: (e, t, n) => {
-            n.d(t, {
-                Z: () => o
-            });
-            var a = n(67294),
-                r = n(81362),
-                l = n(43862);
-            const o = function(e) {
-                var t = e.reducer,
-                    n = e.loading,
-                    o = e.loadingList,
-                    i = e.error,
-                    c = e.statusCode,
-                    s = e.children,
-                    m = e.className,
-                    u = !1;
-                return o && o.forEach((function(e) {
-                    e && (u = !0)
-                })), null != c && 200 !== c && "200" !== c ? a.createElement(r.Z, {
-                    error: i,
-                    statusCode: c
-                }) : null != t && null != t.statusCode && 200 !== t.statusCode && "200" !== t.statusCode ? a.createElement(r.Z, {
-                    error: t.error,
-                    statusCode: t.statusCode
-                }) : i ? a.createElement(r.Z, {
-                    error: i
-                }) : null != t && t.error ? a.createElement(r.Z, {
-                    error: t.error
-                }) : n || u || null != t && t.fetching || null != t && t.loading ? a.createElement(l.Z, {
-                    className: "tw-mx-auto"
-                }) : a.createElement("div", {
-                    className: m
-                }, s)
-            }
-        },
         34586: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => At
+                default: () => jt
             });
             var a = n(4965),
                 r = n(66062),
                 l = n(67294),
                 o = n(89250),
                 i = n(79655),
-                c = n(37463),
+                c = n(46382),
                 s = n(54546),
                 m = n(21429),
                 u = n(17183),
@@ -75,12 +18,12 @@
                 p = n(81143),
                 f = n(3820),
                 g = n(27484),
-                h = n.n(g),
-                b = n(32981),
-                w = n(53637),
-                E = n(95305),
-                v = n(35773),
-                y = n(64258),
+                b = n.n(g),
+                w = n(32981),
+                h = n(53637),
+                v = n(95305),
+                y = n(35773),
+                E = n(64258),
                 x = n(17383),
                 C = n(91557),
                 N = n(98185),
@@ -114,20 +57,20 @@
             const D = function(e) {
                 var t, n, a, r, o, i, m, u, d, p, f = e.dispute,
                     g = e.disputeLoading,
-                    h = e.contentId,
-                    b = e.contentRestrictionId,
-                    w = e.closeModal,
-                    E = (0, l.useState)({}),
-                    v = (0, s.Z)(E, 2),
-                    y = v[0],
-                    x = v[1],
+                    b = e.contentId,
+                    w = e.contentRestrictionId,
+                    h = e.closeModal,
+                    v = (0, l.useState)({}),
+                    y = (0, s.Z)(v, 2),
+                    E = y[0],
+                    x = y[1],
                     C = (0, l.useState)({}),
                     N = (0, s.Z)(C, 2),
                     S = N[0],
                     P = N[1],
                     D = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
-                    A = I()(null !== (t = null == y ? void 0 : y.email) && void 0 !== t ? t : "") && (null == y || null === (n = y.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == y || null === (a = y.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == y || null === (r = y.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == y || null === (o = y.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == y || null === (i = y.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == y || null === (m = y.signature) || void 0 === m ? void 0 : m.length) > 0 && D && (null == y || null === (u = y.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == y || null === (d = y.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
-                    j = function(e) {
+                    j = I()(null !== (t = null == E ? void 0 : E.email) && void 0 !== t ? t : "") && (null == E || null === (n = E.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == E || null === (a = E.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == E || null === (r = E.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == E || null === (o = E.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == E || null === (i = E.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == E || null === (m = E.signature) || void 0 === m ? void 0 : m.length) > 0 && D && (null == E || null === (u = E.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == E || null === (d = E.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
+                    A = function(e) {
                         P(Z(Z({}, S), {}, (0, k.Z)({}, e.target.id, e.target.checked)))
                     };
                 return l.createElement("div", {
@@ -139,11 +82,11 @@
                     className: "tw-pt-2",
                     id: "claim-name",
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             fullName: e.target.value
                         }))
                     },
-                    value: null == y ? void 0 : y.fullName
+                    value: null == E ? void 0 : E.fullName
                 })), l.createElement("label", {
                     htmlFor: "user-org-name",
                     className: "tw-mb-4"
@@ -151,9 +94,9 @@
                     className: "tw-pt-2",
                     id: "user-org-name",
                     type: "text",
-                    value: null == y ? void 0 : y.organization,
+                    value: null == E ? void 0 : E.organization,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             organization: e.target.value
                         }))
                     }
@@ -166,9 +109,9 @@
                     className: "tw-mb-4"
                 }, "Street", l.createElement(c.II, {
                     id: "owner-mailing-address",
-                    value: null == y ? void 0 : y.mailingAddress,
+                    value: null == E ? void 0 : E.mailingAddress,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
@@ -179,9 +122,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "City", l.createElement(c.II, {
                     id: "owner-mailing-city",
-                    value: null == y ? void 0 : y.mailingCity,
+                    value: null == E ? void 0 : E.mailingCity,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             mailingCity: e.target.value
                         }))
                     }
@@ -190,9 +133,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "State/Province", l.createElement(c.II, {
                     id: "owner-mailing-state-province",
-                    value: null == y ? void 0 : y.mailingStateProvince,
+                    value: null == E ? void 0 : E.mailingStateProvince,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
@@ -201,9 +144,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "ZIP/Postal Code", l.createElement(c.II, {
                     id: "owner-mailing-postal-code",
-                    value: null == y ? void 0 : y.mailingPostalCode,
+                    value: null == E ? void 0 : E.mailingPostalCode,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
@@ -211,9 +154,9 @@
                     htmlFor: "owner-mailing-country"
                 }, "Country", l.createElement(c.II, {
                     id: "owner-mailing-country",
-                    value: null == y ? void 0 : y.mailingCountry,
+                    value: null == E ? void 0 : E.mailingCountry,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
@@ -224,9 +167,9 @@
                     className: "tw-pt-2",
                     id: "owner-phone",
                     type: "text",
-                    value: null == y ? void 0 : y.phoneNumber,
+                    value: null == E ? void 0 : E.phoneNumber,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
@@ -237,9 +180,9 @@
                     className: "tw-pt-2",
                     id: "owner-email",
                     type: "email",
-                    value: null == y ? void 0 : y.email,
+                    value: null == E ? void 0 : E.email,
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             email: e.target.value
                         }))
                     }
@@ -252,19 +195,19 @@
                     label: "\n            UNDER PENALTY OF PERJURY, I have good faith belief that my material\n            was removed or disabled as a result of mistake or misidentification.\n          ",
                     htmlFor: "mistake",
                     checked: null == S ? void 0 : S.mistake,
-                    onChange: j
+                    onChange: A
                 }), l.createElement(c.XZ, {
                     id: "consent",
                     label: "\n            I consent to the jurisdiction of the Federal District Court for the judicial district\n            in which my address is located, or if my address is outside the United States,\n            any judicial district in which the service provider (VRChat Inc.) may be found\n            (the United States District Court for the Northern District of California).\n          ",
                     htmlFor: "consent",
                     checked: null == S ? void 0 : S.consent,
-                    onChange: j
+                    onChange: A
                 }), l.createElement(c.XZ, {
                     id: "process",
                     label: "\n            I will accept service of process from the person who provided the\n            original DMCA notice or an agent of such person. \n          ",
                     htmlFor: "process",
                     checked: null == S ? void 0 : S.process,
-                    onChange: j
+                    onChange: A
                 })), D ? null : l.createElement("div", {
                     className: "tw-flex tw-items-center tw-bg-[#FF57671A] tw-mb-4 tw-rounded"
                 }, l.createElement(c.$1, {
@@ -289,9 +232,9 @@
                 }, "Type your name to provide your digital signature", l.createElement(c.II, {
                     className: "tw-pt-2",
                     id: "owner-signature",
-                    value: null == y || null === (p = y.signature) || void 0 === p ? void 0 : p.toUpperCase(),
+                    value: null == E || null === (p = E.signature) || void 0 === p ? void 0 : p.toUpperCase(),
                     onChange: function(e) {
-                        return x(Z(Z({}, y), {}, {
+                        return x(Z(Z({}, E), {}, {
                             signature: e.target.value
                         }))
                     }
@@ -303,18 +246,18 @@
                     containerStyles: {
                         width: "100%"
                     },
-                    onClick: w
+                    onClick: h
                 }, "Cancel"), l.createElement(c.zx, {
                     className: "tw-ml-2",
-                    disabled: g || !A,
+                    disabled: g || !j,
                     containerStyles: {
                         width: "100%"
                     },
                     onClick: function() {
                         return f({
-                            contentId: h,
-                            disputeInfo: y,
-                            contentRestrictionId: b
+                            contentId: b,
+                            disputeInfo: E,
+                            contentRestrictionId: w
                         })
                     }
                 }, "Submit")))
@@ -331,10 +274,10 @@
                     name: "tayqdf",
                     styles: "display:flex;flex-direction:column;align-items:baseline;color:#9c9c9c;background-color:#000;border-radius:8px;padding:0.5rem;margin-bottom:1rem"
                 });
-            const A = function() {
+            const j = function() {
                 var e, t, n = (0, o.UO)().contentId,
                     a = (0, x.Tu)().user,
-                    r = (0, b.I0)(),
+                    r = (0, w.I0)(),
                     i = (0, C.oR)({
                         contentId: n
                     }),
@@ -347,7 +290,7 @@
                     Z = P[0],
                     L = P[1],
                     O = L.isLoading,
-                    A = L.isError,
+                    j = L.isError,
                     R = L.isSuccess,
                     T = L.error,
                     W = (0, C.lY)(),
@@ -368,28 +311,28 @@
                     Q = G[1];
                 return (0, l.useEffect)((function() {
                     var e;
-                    (R && (B(!1), r((0, y.d)({
+                    (R && (B(!1), r((0, E.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been submitted successfully.",
                         color: "success",
                         timeout: 7e3
-                    }))), A) && (B(!1), r((0, y.d)({
+                    }))), j) && (B(!1), r((0, E.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute could not be submitted successfully: ".concat(null == T || null === (e = T.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "danger",
                         timeout: 7e3
                     })))
-                }), [R, A]), (0, l.useEffect)((function() {
+                }), [R, j]), (0, l.useEffect)((function() {
                     var e;
-                    (F && r((0, y.d)({
+                    (F && r((0, E.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been withdrawn successfully.",
                         color: "success",
                         timeout: 7e3
-                    })), $) && r((0, y.d)({
+                    })), $) && r((0, E.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Failed to withdraw your dispute successfully: ".concat(null == V || null === (e = V.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
@@ -398,20 +341,20 @@
                     }))
                 }), [$, F]), k ? l.createElement(N.Z, {
                     loading: !0
-                }) : _ ? l.createElement(w.Z, null, l.createElement(c.qX, {
+                }) : _ ? l.createElement(h.Z, null, l.createElement(c.qX, {
                     type: "error",
                     title: "Error",
                     className: "my-2"
-                }, (null == S || null === (t = S.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred when loading the content.")) : l.createElement(w.Z, null, l.createElement("div", {
+                }, (null == S || null === (t = S.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred when loading the content.")) : l.createElement(h.Z, null, l.createElement("div", {
                     className: "m-2"
-                }, l.createElement(E.Z, {
+                }, l.createElement(v.Z, {
                     className: "w-100 pb-3"
                 }, l.createElement(c.oI, {
                     className: "tw-text-xl"
-                }, g.name), l.createElement(c.Ao, null, l.createElement(j, {
+                }, g.name), l.createElement(c.Ao, null, l.createElement(A, {
                     xs: "12",
                     className: "tw-p-4"
-                }, l.createElement(v.Z, null, l.createElement(E.Z, {
+                }, l.createElement(y.Z, null, l.createElement(v.Z, {
                     xs: "12",
                     md: "3"
                 }, l.createElement("div", {
@@ -423,17 +366,17 @@
                     alt: g.name
                 }), l.createElement("div", {
                     className: "p-1 tw-w-full tw-text-center tw-text-black tw-font-bold tw-absolute tw-bottom-1 tw-bg-[#fb923c] tw-opacity-75"
-                }, "Archived"))), l.createElement(E.Z, {
+                }, "Archived"))), l.createElement(v.Z, {
                     xs: "12",
                     md: "9",
                     className: "flex-1"
-                }, l.createElement("h4", null, g.name, l.createElement("span", null, " ", l.createElement("small", null, "—  ", g.authorName))), l.createElement("p", null, g.description)))))), l.createElement(E.Z, {
+                }, l.createElement("h4", null, g.name, l.createElement("span", null, " ", l.createElement("small", null, "—  ", g.authorName))), l.createElement("p", null, g.description)))))), l.createElement(v.Z, {
                     className: "w-100"
-                }, l.createElement(v.Z, {
+                }, l.createElement(y.Z, {
                     style: {
                         "--bs-gutter-x": "1rem"
                     }
-                }, l.createElement(E.Z, {
+                }, l.createElement(v.Z, {
                     xs: "12",
                     md: "8"
                 }, l.createElement(c.oI, {
@@ -500,7 +443,7 @@
                 }, l.createElement(c.$1, {
                     className: "tw-pr-1",
                     icon: d.faCircleInfo
-                }), "Learn more about the DMCA process"))), l.createElement(E.Z, {
+                }), "Learn more about the DMCA process"))), l.createElement(v.Z, {
                     xs: "12",
                     md: "4"
                 }, l.createElement(c.oI, {
@@ -516,7 +459,7 @@
                     width: 17,
                     className: "tw-pr-2",
                     icon: u.faSquarePlus
-                }), "Created"), h()(null == g ? void 0 : g.createdAt).format("MMM DD YYYY")), l.createElement("div", {
+                }), "Created"), b()(null == g ? void 0 : g.createdAt).format("MMM DD YYYY")), l.createElement("div", {
                     className: "tw-flex tw-place-content-between tw-text-light-grey"
                 }, l.createElement("div", {
                     className: "tw-flex tw-items-center"
@@ -525,9 +468,9 @@
                     width: 17,
                     className: "tw-pr-2",
                     icon: m.faCloudArrowUp
-                }), "Updated"), h()(null == g ? void 0 : g.updatedAt).format("MMM DD YYYY"))))))))
+                }), "Updated"), b()(null == g ? void 0 : g.updatedAt).format("MMM DD YYYY"))))))))
             };
-            var j = (0, a.Z)(E.Z, {
+            var A = (0, a.Z)(v.Z, {
                     target: "ek2okq60"
                 })({
                     name: "1e3lcuk",
@@ -567,7 +510,7 @@
                 pe = n(28213),
                 fe = n(17219),
                 ge = n(64358),
-                he = function(e) {
+                be = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel,
                         a = e.confirmText,
@@ -594,7 +537,7 @@
                         expand: !0
                     }, r)))
                 },
-                be = function(e) {
+                we = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -602,23 +545,49 @@
                         title: "Publishing to Community Labs"
                     }, l.createElement(c.JX, null, l.createElement("p", null, "Publishing this world will put it in to the ", l.createElement("strong", null, "Community Labs"), "."), l.createElement("p", null, "Other users will be able to see your world, and it will either stay in the Labs, get promoted to ", l.createElement("strong", null, "Public"), " status, or be placed back in to ", l.createElement("strong", null, "Private"), " status, based on community response."), l.createElement("p", null, "We encourage you to ", l.createElement("em", null, "get the word out"), " about your world if you want it to survive!"), l.createElement("p", null, "If your world violates our ", l.createElement("a", {
                         href: "https://vrchat.com/community"
-                    }, "Community Guidelines"), ", you could get in trouble by posting it!"), l.createElement("p", null, "You're only allowed to publish ", l.createElement("strong", null, "one world per week"), ", so make sure to put your best foot forward!"), l.createElement(he, {
+                    }, "Community Guidelines"), ", you could get in trouble by posting it!"), l.createElement("p", null, "You're only allowed to publish ", l.createElement("strong", null, "one world per week"), ", so make sure to put your best foot forward!"), l.createElement(be, {
                         onConfirm: t,
                         onCancel: n,
                         confirmText: "Yes, do it!",
                         cancelText: "No, keep the world private"
                     })))
                 },
-                we = function(e) {
+                he = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
                         type: "warn",
                         title: "Unpublishing a World"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "Unpublishing this world will remove it from ", l.createElement("strong", null, "Public"), "."), l.createElement("p", null, "If you want to make it public again, it will need to go through Community Labs."), l.createElement("p", null, "You're only allowed to publish ", l.createElement("strong", null, "one world per week"), ", and when you remove a world from the labs, you don't get your one world back. Are you ", l.createElement("strong", null, "sure"), "?"), l.createElement(he, {
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "Unpublishing this world will remove it from ", l.createElement("strong", null, "Public"), "."), l.createElement("p", null, "If you want to make it public again, it will need to go through Community Labs."), l.createElement("p", null, "You're only allowed to publish ", l.createElement("strong", null, "one world per week"), ", and when you remove a world from the labs, you don't get your one world back. Are you ", l.createElement("strong", null, "sure"), "?"), l.createElement(be, {
                         onConfirm: t,
                         onCancel: n,
                         confirmText: "Yes, do it!",
+                        cancelText: "No, keep the world public"
+                    })))
+                },
+                ve = function(e) {
+                    var t = e.onConfirm,
+                        n = e.onCancel;
+                    return l.createElement(c.qX, {
+                        type: "warn",
+                        title: "Deleting a World"
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "This will fully remove the world, are you sure?"), l.createElement(be, {
+                        onConfirm: t,
+                        onCancel: n,
+                        confirmText: "Yes, delete this world",
+                        cancelText: "No, keep the world alive"
+                    })))
+                },
+                ye = function(e) {
+                    var t = e.onConfirm,
+                        n = e.onCancel;
+                    return l.createElement(c.qX, {
+                        type: "warn",
+                        title: "Unpublishing a World"
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you unpublish a world, it'll remove the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: private"), " , and go back to not being visible any mo'."), l.createElement(be, {
+                        onConfirm: t,
+                        onCancel: n,
+                        confirmText: "Yes, make the world private",
                         cancelText: "No, keep the world public"
                     })))
                 },
@@ -627,34 +596,8 @@
                         n = e.onCancel;
                     return l.createElement(c.qX, {
                         type: "warn",
-                        title: "Deleting a World"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "This will fully remove the world, are you sure?"), l.createElement(he, {
-                        onConfirm: t,
-                        onCancel: n,
-                        confirmText: "Yes, delete this world",
-                        cancelText: "No, keep the world alive"
-                    })))
-                },
-                ve = function(e) {
-                    var t = e.onConfirm,
-                        n = e.onCancel;
-                    return l.createElement(c.qX, {
-                        type: "warn",
-                        title: "Unpublishing a World"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you unpublish a world, it'll remove the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: private"), " , and go back to not being visible any mo'."), l.createElement(he, {
-                        onConfirm: t,
-                        onCancel: n,
-                        confirmText: "Yes, make the world private",
-                        cancelText: "No, keep the world public"
-                    })))
-                },
-                ye = function(e) {
-                    var t = e.onConfirm,
-                        n = e.onCancel;
-                    return l.createElement(c.qX, {
-                        type: "warn",
                         title: "Publishing a World"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "Publishing a world will make it visible to everyone."), l.createElement("p", null, "Are you sure you want to proceed?"), l.createElement(he, {
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "Publishing a world will make it visible to everyone."), l.createElement("p", null, "Are you sure you want to proceed?"), l.createElement(be, {
                         onConfirm: t,
                         onCancel: n,
                         confirmText: "Yes, do it!",
@@ -667,7 +610,7 @@
                     return l.createElement(c.qX, {
                         type: "warn",
                         title: "Publishing a World"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you publish a world, it'll get the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: public"), "  and it'll stay approved forever (until you un-approve it)!"), l.createElement(he, {
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you publish a world, it'll get the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: public"), "  and it'll stay approved forever (until you un-approve it)!"), l.createElement(be, {
                         onConfirm: t,
                         onCancel: n,
                         confirmText: "Yes, make the world public",
@@ -680,7 +623,7 @@
                     return l.createElement(c.qX, {
                         type: "warn",
                         title: "Promoting to Public"
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you promote a world, it'll get the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: public"), "  and it'll stay approved forever (until you un-approve it)!"), l.createElement(he, {
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "Hey, you're a mod! When you promote a world, it'll get the  ", l.createElement("code", null, "admin_approved"), "  tag, become  ", l.createElement("code", null, "releaseStatus: public"), "  and it'll stay approved forever (until you un-approve it)!"), l.createElement(be, {
                         onConfirm: t,
                         onCancel: n,
                         confirmText: "Yes, make the world public",
@@ -694,7 +637,7 @@
                     return l.createElement(c.qX, {
                         type: "warn",
                         title: "Deleting ".concat(t, " version")
-                    }, l.createElement(c.JX, null, l.createElement("p", null, "This will make the world no longer available for players on the ", t, " platform."), l.createElement("p", null, "Are you sure you want to proceed?"), l.createElement(he, {
+                    }, l.createElement(c.JX, null, l.createElement("p", null, "This will make the world no longer available for players on the ", t, " platform."), l.createElement("p", null, "Are you sure you want to proceed?"), l.createElement(be, {
                         onConfirm: n,
                         onCancel: a,
                         confirmText: "Yes, delete the ".concat(t, " version"),
@@ -847,28 +790,28 @@
                 }
                 return e
             }
-            var Ae = {
+            var je = {
                     name: "ozd7xs",
                     styles: "flex-shrink:0"
                 },
-                je = {
+                Ae = {
                     name: "ozd7xs",
                     styles: "flex-shrink:0"
                 };
             const Re = function() {
-                var e, t, n, a, m = (0, b.I0)(),
+                var e, t, n, a, m = (0, w.I0)(),
                     u = (0, i.lr)(),
                     d = (0, s.Z)(u, 1)[0],
                     p = (0, o.s0)(),
                     f = (0, o.UO)().worldId,
                     g = (0, x.Tu)(),
-                    w = g.trustLevel,
-                    E = g.user,
-                    v = (0, x.pc)(),
+                    h = g.trustLevel,
+                    v = g.user,
+                    y = (0, x.pc)(),
                     C = (0, x.BT)({
                         worldId: f,
-                        userId: E.id,
-                        isMod: v,
+                        userId: v.id,
+                        isMod: y,
                         noCache: !0
                     }),
                     N = C.data,
@@ -879,17 +822,17 @@
                     Z = C.errorMessage,
                     D = C.refreshWorld,
                     L = void 0 === D ? function() {} : D,
-                    O = (null == N ? void 0 : N.authorId) === E.id,
-                    A = v || O,
-                    j = (0, b.v9)((function(e) {
+                    O = (null == N ? void 0 : N.authorId) === v.id,
+                    j = y || O,
+                    A = (0, w.v9)((function(e) {
                         return e.world.updatedWorld
                     })),
                     re = l.useState(null),
                     oe = (0, s.Z)(re, 2),
                     ce = oe[0],
                     me = oe[1],
-                    he = (0, fe.y)().data,
-                    _e = (void 0 === he ? {} : he).sdkUnityVersion,
+                    be = (0, fe.y)().data,
+                    _e = (void 0 === be ? {} : be).sdkUnityVersion,
                     Se = (0, x.dD)(),
                     Ie = l.useRef(null),
                     De = l.useRef(null),
@@ -899,12 +842,12 @@
                     Re = Le.action,
                     Be = Le.canPublish,
                     gt = Le.deleteWorld,
-                    ht = Le.deleteWorldPlatform,
-                    bt = Le.error,
-                    wt = Le.loading,
-                    Et = Le.publishWorld,
-                    vt = Le.success,
-                    yt = Le.unpublishWorld,
+                    bt = Le.deleteWorldPlatform,
+                    wt = Le.error,
+                    ht = Le.loading,
+                    vt = Le.publishWorld,
+                    yt = Le.success,
+                    Et = Le.unpublishWorld,
                     xt = l.useState(!1),
                     Ct = (0, s.Z)(xt, 2),
                     Nt = Ct[0],
@@ -917,10 +860,10 @@
                     Dt = (0, s.Z)(Zt, 2),
                     Lt = Dt[0],
                     Ot = Dt[1],
-                    At = l.useState(!1),
-                    jt = (0, s.Z)(At, 2),
-                    Rt = jt[0],
-                    Tt = jt[1],
+                    jt = l.useState(!1),
+                    At = (0, s.Z)(jt, 2),
+                    Rt = At[0],
+                    Tt = At[1],
                     Wt = l.useState(!1),
                     Ut = (0, s.Z)(Wt, 2),
                     Yt = Ut[0],
@@ -952,13 +895,13 @@
                     pn = l.useState(!1),
                     fn = (0, s.Z)(pn, 2),
                     gn = fn[0],
-                    hn = fn[1],
-                    bn = l.useState(null),
-                    wn = (0, s.Z)(bn, 2),
-                    En = wn[0],
-                    vn = wn[1],
-                    yn = l.useState(!1),
-                    xn = (0, s.Z)(yn, 2),
+                    bn = fn[1],
+                    wn = l.useState(null),
+                    hn = (0, s.Z)(wn, 2),
+                    vn = hn[0],
+                    yn = hn[1],
+                    En = l.useState(!1),
+                    xn = (0, s.Z)(En, 2),
                     Cn = xn[0],
                     Nn = xn[1],
                     kn = function() {
@@ -1043,7 +986,7 @@
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return cn(!1), e.next = 3, yt();
+                                        return cn(!1), e.next = 3, Et();
                                     case 3:
                                         L();
                                     case 4:
@@ -1064,7 +1007,7 @@
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return an(!1), e.next = 3, Et();
+                                        return an(!1), e.next = 3, vt();
                                     case 3:
                                         L();
                                     case 4:
@@ -1085,7 +1028,7 @@
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return Nn(!1), e.next = 3, Et();
+                                        return Nn(!1), e.next = 3, vt();
                                     case 3:
                                         L();
                                     case 4:
@@ -1103,7 +1046,7 @@
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return hn(!1), e.next = 3, Et();
+                                        return bn(!1), e.next = 3, vt();
                                     case 3:
                                         L();
                                     case 4:
@@ -1116,19 +1059,19 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    An = function(e) {
+                    jn = function(e) {
                         return function() {
-                            vn(e)
+                            yn(e)
                         }
                     },
-                    jn = function() {
+                    An = function() {
                         var e = (0, T.Z)(ue().mark((function e() {
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ht(En);
+                                        return e.next = 2, bt(vn);
                                     case 2:
-                                        return vn(null), e.next = 5, new Promise((function(e) {
+                                        return yn(null), e.next = 5, new Promise((function(e) {
                                             return setTimeout(e, 1e3)
                                         }));
                                     case 5:
@@ -1213,7 +1156,7 @@
                                             worldId: f
                                         })));
                                     case 26:
-                                        j.error || m((0, y.d)({
+                                        A.error || m((0, E.d)({
                                             title: "World Info Updated",
                                             icon: r.g4,
                                             message: "You have successfully updated ".concat(null != ce && ce.name ? "world: ".concat(ce.name) : "this world"),
@@ -1308,20 +1251,20 @@
                     Jn = Vn.isWorldDebugEnabled,
                     Gn = Vn.isAvatarScalingEnabled,
                     Kn = (Vn.isStickersEnabled, Vn.isDroneEnabled, Vn.isFocusViewEnabled),
-                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || qn || Xn || v || Bn || Hn),
+                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || qn || Xn || y || Bn || Hn),
                     ea = "public" === (null == ce ? void 0 : ce.releaseStatus),
-                    ta = !ea && (v || qn && Be),
+                    ta = !ea && (y || qn && Be),
                     na = Qn && !Be,
-                    aa = Qn && !na && !w.user,
+                    aa = Qn && !na && !h.user,
                     ra = !(null != ce && ce.name) || "" === (null == ce ? void 0 : ce.name),
                     la = (null != S ? S : 0) > 0,
                     oa = l.useMemo((function() {
-                        return A && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || la)
-                    }), [A, null == ce ? void 0 : ce.tags, la]),
+                        return j && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || la)
+                    }), [j, null == ce ? void 0 : ce.tags, la]),
                     ia = l.useMemo((function() {
                         var e;
                         return null == ce || null === (e = ce.tags) || void 0 === e ? void 0 : e.map((function(e) {
-                            if (!v && !e.startsWith("author_tag_")) return null;
+                            if (!y && !e.startsWith("author_tag_")) return null;
                             var t = pe.w.find((function(t) {
                                 return t.tag === e
                             }));
@@ -1354,7 +1297,7 @@
                     type: "error",
                     title: "Could not load World data",
                     message: Z
-                }))) : A ? l.createElement(We, null, l.createElement(Ue, {
+                }))) : j ? l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
                 }, l.createElement(Ue, {
                     className: "align-items-center mb-1"
@@ -1371,16 +1314,16 @@
                 }, l.createElement(dt, {
                     onClick: Un,
                     className: "w-100",
-                    loading: j.changing,
+                    loading: A.changing,
                     positive: !0
                 }, "Save Changes"))), l.createElement(Ue, {
                     className: "mb-2 align-items-sm-center justify-content-between flex-column flex-sm-row"
                 }), l.createElement(We, {
                     className: "mb-5"
-                }, j.error && l.createElement(c.qX, {
+                }, A.error && l.createElement(c.qX, {
                     type: "error",
                     title: "Failed to update World data",
-                    message: j.error
+                    message: A.error
                 }), zn && l.createElement(c.qX, {
                     title: "Unsupported Unity Version",
                     type: "error",
@@ -1451,7 +1394,7 @@
                         return kt(!Nt)
                     },
                     className: "px-2 py-1 mt-2 mt-sm-0",
-                    containerStyles: je,
+                    containerStyles: Ae,
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
@@ -1481,7 +1424,7 @@
                         return Pt(!It)
                     },
                     className: "px-2 py-1 mt-2 mt-sm-0",
-                    containerStyles: Ae,
+                    containerStyles: je,
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
@@ -1505,9 +1448,9 @@
                     suggestions: [],
                     onSelectValue: function(e) {
                         var t, n, a = e.startsWith("system_") || e.startsWith("admin_");
-                        if ((v || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
+                        if ((y || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
                             var r = e.replace(/\s/gi, "_").replace(/\W/gi, "");
-                            v && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || me((function(e) {
+                            y && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || me((function(e) {
                                 var t;
                                 return Oe(Oe({}, e), {}, {
                                     tags: [].concat((0, R.Z)(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []), [r])
@@ -1525,8 +1468,8 @@
                             })
                         }))
                     },
-                    maxEntries: v ? void 0 : 5,
-                    maxLength: v ? void 0 : 100,
+                    maxEntries: y ? void 0 : 5,
+                    maxLength: y ? void 0 : 100,
                     maxEntriesErrorText: "You can only have up to 5 tags",
                     maxLengthErrorText: "Entered tag is too long",
                     className: "mt-2",
@@ -1537,7 +1480,7 @@
                     className: "py-2 gap-2"
                 }, l.createElement(c.ks, {
                     tags: null == ce ? void 0 : ce.tags,
-                    isMod: v,
+                    isMod: y,
                     onSelectValues: function(e) {
                         me((function(t) {
                             return Oe(Oe({}, t), {}, {
@@ -1760,14 +1703,14 @@
                     className: "flex-1 me-0 me-sm-2 mb-2 mb-sm-0"
                 }, ca), l.createElement(Te, {
                     className: "mb-2 mb-sm-0"
-                }, l.createElement(Ue, null, v && Xn && l.createElement(c.zx, {
+                }, l.createElement(Ue, null, y && Xn && l.createElement(c.zx, {
                     className: "px-3 py-1 me-0 me-sm-2",
                     expand: Se,
                     onClick: function() {
-                        hn(!0)
+                        bn(!0)
                     },
                     positive: !0,
-                    loading: wt
+                    loading: ht
                 }, l.createElement(c.$1, {
                     icon: ne.u8,
                     className: "me-2"
@@ -1778,7 +1721,7 @@
                         cn(!0)
                     },
                     danger: !0,
-                    loading: wt
+                    loading: ht
                 }, "Unpublish"), ta && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
@@ -1786,15 +1729,15 @@
                         an(!0)
                     },
                     positive: !0,
-                    loading: wt
-                }, "Publish"), Qn && Be && w.user && l.createElement(c.zx, {
+                    loading: ht
+                }, "Publish"), Qn && Be && h.user && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     onClick: function() {
                         Nn(!0)
                     },
                     positive: !0,
-                    loading: wt
+                    loading: ht
                 }, l.createElement(c.$1, {
                     icon: F.jZ,
                     className: "me-2"
@@ -1812,41 +1755,41 @@
                 }, l.createElement(c.$1, {
                     icon: U.NB,
                     className: "me-2"
-                }), "You don't have enough trust to publish worlds, yet.")))), vt && "publish" === Re && l.createElement(c.qX, {
+                }), "You don't have enough trust to publish worlds, yet.")))), yt && "publish" === Re && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now public!"
                 }, l.createElement(i.rU, {
                     to: "/home/world/".concat(ce.id)
-                }, "Check it out!")), vt && "unpublish" === Re && l.createElement(c.qX, {
+                }, "Check it out!")), yt && "unpublish" === Re && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now private!",
                     message: "Your world is now private!",
                     slim: !0
-                }), bt && l.createElement(c.qX, {
+                }), wt && l.createElement(c.qX, {
                     type: "error",
                     title: "Failed to change world visibility",
-                    message: bt
-                }), Cn && l.createElement(be, {
+                    message: wt
+                }), Cn && l.createElement(we, {
                     onConfirm: Ln,
                     onCancel: function() {
                         Nn(!1)
                     }
-                }), on && (v ? l.createElement(ve, {
+                }), on && (y ? l.createElement(ye, {
                     onConfirm: In,
                     onCancel: Pn
-                }) : l.createElement(we, {
+                }) : l.createElement(he, {
                     onConfirm: In,
                     onCancel: Pn
-                })), nn && (v ? l.createElement(xe, {
+                })), nn && (y ? l.createElement(xe, {
                     onConfirm: Zn,
                     onCancel: Dn
-                }) : qn && l.createElement(ye, {
+                }) : qn && l.createElement(Ee, {
                     onConfirm: Zn,
                     onCancel: Dn
                 })), gn && l.createElement(Ce, {
                     onConfirm: On,
                     onCancel: function() {
-                        hn(!1)
+                        bn(!1)
                     }
                 }), l.createElement(mt, {
                     className: "px-2 me-0 me-sm-3 mt-2 align-self-center align-self-sm-start"
@@ -1911,32 +1854,32 @@
                     var t;
                     return l.createElement(c.zx, {
                         key: e,
-                        onClick: An(e),
-                        loading: wt,
+                        onClick: jn(e),
+                        loading: ht,
                         expand: !0,
                         danger: !0
                     }, l.createElement(c.$1, {
                         icon: ee.$,
                         className: "me-2"
                     }), "Delete ", (null === (t = ke.VT[e]) || void 0 === t ? void 0 : t.label) || e, " Version")
-                })))), null != En && l.createElement(Ne, {
-                    platformName: (null === (a = ke.VT[En]) || void 0 === a ? void 0 : a.label) || En,
-                    onConfirm: jn,
+                })))), null != vn && l.createElement(Ne, {
+                    platformName: (null === (a = ke.VT[vn]) || void 0 === a ? void 0 : a.label) || vn,
+                    onConfirm: An,
                     onCancel: function() {
-                        vn(null)
+                        yn(null)
                     }
                 }), l.createElement(at, null, "World Deletion"), l.createElement(c.zx, {
                     className: "px-3 py-1 mt-2",
                     onClick: function() {
                         dn(!0)
                     },
-                    loading: wt,
+                    loading: ht,
                     expand: !0,
                     danger: !0
                 }, l.createElement(c.$1, {
                     icon: ee.$,
                     className: "me-2"
-                }), "Delete World Completely"), un && l.createElement(Ee, {
+                }), "Delete World Completely"), un && l.createElement(ve, {
                     onConfirm: Sn,
                     onCancel: function() {
                         dn(!1)
@@ -2011,7 +1954,7 @@
                     title: "World Heat"
                 }, l.createElement(nt, null, "Heat"), l.createElement(Ue, {
                     className: "align-items-center"
-                }, v ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
+                }, y ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
                     return l.createElement(c.$1, {
                         key: "heat-".concat(e),
                         size: "md",
@@ -2037,7 +1980,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "Last Update Date"
-                }, l.createElement(nt, null, "Updated"), h()(ce.updated_at).format("MMM DD YYYY"))), "none" !== ce.publicationDate && l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(nt, null, "Updated"), b()(ce.updated_at).format("MMM DD YYYY"))), "none" !== ce.publicationDate && l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: $.Ac,
                     color: "#54b5c5",
@@ -2045,7 +1988,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "Publish Date"
-                }, l.createElement(nt, null, "Published"), h()(ce.publicationDate).format("MMM DD YYYY"))), "none" !== ce.labsPublicationDate && l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(nt, null, "Published"), b()(ce.publicationDate).format("MMM DD YYYY"))), "none" !== ce.labsPublicationDate && l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: F.jZ,
                     color: "#54b5c5",
@@ -2053,7 +1996,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "Labs Publish Date"
-                }, l.createElement(nt, null, "Labs'd"), h()(ce.labsPublicationDate).format("MMM DD YYYY"))), l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(nt, null, "Labs'd"), b()(ce.labsPublicationDate).format("MMM DD YYYY"))), l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: z.CP,
                     color: "#54b5c5",
@@ -2061,7 +2004,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "Creation Date"
-                }, l.createElement(nt, null, "Created"), h()(ce.created_at).format("MMM DD YYYY"))))))), oa && l.createElement("a", {
+                }, l.createElement(nt, null, "Created"), b()(ce.created_at).format("MMM DD YYYY"))))))), oa && l.createElement("a", {
                     href: window.apiUrl("/api/1/worlds/".concat(null == ce ? void 0 : ce.id, "/analytics/redirect")),
                     target: "_blank",
                     className: "mt-2",
@@ -2127,7 +2070,7 @@
                 }, l.createElement(dt, {
                     onClick: Un,
                     className: "w-100",
-                    loading: j.changing,
+                    loading: A.changing,
                     positive: !0
                 }, "Save Changes")))))) : l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
@@ -2362,10 +2305,10 @@
                     styles: "outline:none!important;padding:0;margin:0;border:none;display:flex;background:transparent;align-items:center;justify-content:center"
                 }),
                 gt = n(89734),
-                ht = n.n(gt),
-                bt = n(9669),
-                wt = n.n(bt),
-                Et = function(e) {
+                bt = n.n(gt),
+                wt = n(9669),
+                ht = n.n(wt),
+                vt = function(e) {
                     var t = e.userId,
                         n = e.number,
                         a = void 0 === n ? 100 : n,
@@ -2379,7 +2322,7 @@
                         u = void 0 === m ? "descending" : m;
                     return {
                         type: "MY_CONTENT_LOAD_WORLDS",
-                        payload: wt().get(window.apiUrl("/api/1/worlds"), {
+                        payload: ht().get(window.apiUrl("/api/1/worlds"), {
                             params: {
                                 userId: t,
                                 n: a,
@@ -2395,16 +2338,16 @@
                         }
                     }
                 },
-                vt = function(e) {
+                yt = function(e) {
                     var t = e.worldIds;
                     return {
                         type: "MY_CONTENT_BULK_CHECK_WORLD_STATS",
                         payload: Promise.all(t.map((function(e) {
-                            return wt().get(window.apiUrl("/api/1/worlds/".concat(e)))
+                            return ht().get(window.apiUrl("/api/1/worlds/".concat(e)))
                         })))
                     }
                 },
-                yt = n(89182),
+                Et = n(89182),
                 xt = n(22202);
 
             function Ct(e, t) {
@@ -2473,7 +2416,7 @@
                     }]
                 };
             const St = function() {
-                var e = (0, b.I0)(),
+                var e = (0, w.I0)(),
                     t = (0, o.TH)().search,
                     n = new URLSearchParams(t).get("scrollTo"),
                     a = (0, i.lr)(),
@@ -2484,16 +2427,16 @@
                     p = u.get("sort"),
                     f = "false" !== u.get("publicFirst"),
                     g = (0, xt.XC)().data,
-                    h = (0, b.v9)((function(e) {
+                    b = (0, w.v9)((function(e) {
                         return e.myContent.worlds
                     })),
-                    w = h.list,
-                    E = h.loading,
-                    v = h.loadedAt,
-                    y = h.error,
-                    x = h.errorMessage,
-                    C = h.allPagesLoaded,
-                    N = (0, b.v9)((function(e) {
+                    h = b.list,
+                    v = b.loading,
+                    y = b.loadedAt,
+                    E = b.error,
+                    x = b.errorMessage,
+                    C = b.allPagesLoaded,
+                    N = (0, w.v9)((function(e) {
                         return e.myContent.worldStats
                     })),
                     k = l.useState(null == f || f),
@@ -2505,9 +2448,9 @@
                     D = (0, s.Z)(Z, 2),
                     L = D[0],
                     O = D[1],
-                    A = l.useRef(null != d ? d : "descending"),
-                    j = l.useState(null != d ? d : "descending"),
-                    R = (0, s.Z)(j, 2),
+                    j = l.useRef(null != d ? d : "descending"),
+                    A = l.useState(null != d ? d : "descending"),
+                    R = (0, s.Z)(A, 2),
                     W = R[0],
                     U = R[1],
                     M = l.useState(""),
@@ -2520,11 +2463,11 @@
                     H = q[1],
                     B = l.useRef(0);
                 l.useEffect((function() {
-                    if (!E && null != g && g.id) {
-                        var t = !v && 0 === w.length,
-                            n = L !== P.current || W !== A.current,
-                            a = Date.now() - v > 6e4;
-                        (t || a || n) && (H(0), B.current = 0, e(Et({
+                    if (!v && null != g && g.id) {
+                        var t = !y && 0 === h.length,
+                            n = L !== P.current || W !== j.current,
+                            a = Date.now() - y > 6e4;
+                        (t || a || n) && (H(0), B.current = 0, e(vt({
                             userId: null == g ? void 0 : g.id,
                             number: 50,
                             offset: 0,
@@ -2532,12 +2475,12 @@
                             order: W
                         })))
                     }
-                }), [null == g ? void 0 : g.id, L, W, v, E]), l.useEffect((function() {
-                    E || C || !v || (w.length - B.current < 50 ? e({
+                }), [null == g ? void 0 : g.id, L, W, y, v]), l.useEffect((function() {
+                    v || C || !y || (h.length - B.current < 50 ? e({
                         type: "MY_CONTENT_MARK_ALL_PAGES_LOADED"
                     }) : H(B.current + 50))
-                }), [w, E, v, C]), l.useEffect((function() {
-                    B.current !== X && (B.current = X, e(Et({
+                }), [h, v, y, C]), l.useEffect((function() {
+                    B.current !== X && (B.current = X, e(vt({
                         userId: g.id,
                         number: 50,
                         offset: X,
@@ -2551,16 +2494,16 @@
                     }
                     P.current = L
                 }), [L]), l.useEffect((function() {
-                    if (A.current !== W) {
+                    if (j.current !== W) {
                         var e = new URLSearchParams(null != t ? t : "");
                         e.delete("scrollTo"), e.set("order", W), m(e)
                     }
-                    A.current = W
+                    j.current = W
                 }), [W]), l.useEffect((function() {
                     var e = new URLSearchParams(null != t ? t : "");
                     e.delete("scrollTo"), S ? e.delete("publicFirst") : e.set("publicFirst", "false"), m(e)
                 }), [S]), l.useEffect((function() {
-                    n && !E && C && setTimeout((function() {
+                    n && !v && C && setTimeout((function() {
                         var e = document.querySelector('[data-scrollkey="'.concat(n, '"]'));
                         null == e || e.scrollIntoView({
                             behavior: "smooth",
@@ -2570,14 +2513,14 @@
                             e.classList.add("pulse")
                         }), 1e3)
                     }))
-                }), [n, E, C]), l.useEffect((function() {
+                }), [n, v, C]), l.useEffect((function() {
                     var t = function() {
                         var t = (0, T.Z)(ue().mark((function t() {
                             var n, a;
                             return ue().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        if (!E && !y) {
+                                        if (!v && !E) {
                                             t.next = 2;
                                             break
                                         }
@@ -2589,7 +2532,7 @@
                                         }
                                         return t.abrupt("return");
                                     case 4:
-                                        n = w.filter((function(e) {
+                                        n = h.filter((function(e) {
                                             return "public" === e.releaseStatus
                                         })), a = 0;
                                     case 6:
@@ -2597,7 +2540,7 @@
                                             t.next = 12;
                                             break
                                         }
-                                        return t.next = 9, e(vt({
+                                        return t.next = 9, e(yt({
                                             worldIds: n.slice(a, a + 2).map((function(e) {
                                                 return e.id
                                             }))
@@ -2616,26 +2559,26 @@
                         }
                     }();
                     t()
-                }), [w, E, y, C]);
+                }), [h, v, E, C]);
                 var J = l.useMemo((function() {
-                        return ht()(w, (function(e) {
+                        return bt()(h, (function(e) {
                             return "public" === e.releaseStatus ? -1 : 1
                         }))
-                    }), [w]),
+                    }), [h]),
                     G = l.useMemo((function() {
-                        if (!F) return S ? J : w;
+                        if (!F) return S ? J : h;
                         try {
                             var e = new RegExp(F, "i");
-                            return (S ? J : w).filter((function(t) {
+                            return (S ? J : h).filter((function(t) {
                                 var n = "".concat(t.name, " ").concat(t.id, " ").concat(t.description, " ").concat(t.unityPackages.map((function(e) {
                                     return e.platform
                                 })).join(" "), " ").concat(t.releaseStatus, " ").concat(t.tags.join(" "));
                                 return e.test(n)
                             }))
                         } catch (e) {
-                            return S ? J : w
+                            return S ? J : h
                         }
-                    }), [S, w, J, F]);
+                    }), [S, h, J, F]);
                 return l.createElement(It, {
                     className: "mt-2"
                 }, l.createElement(c.$4, null, "My Worlds"), l.createElement("h2", {
@@ -2679,27 +2622,27 @@
                     icon: Y.LE,
                     disabled: !S,
                     className: "me-1"
-                })))), y && l.createElement(c.qX, {
+                })))), E && l.createElement(c.qX, {
                     type: "error",
                     title: "Failed to load worlds",
                     message: x
-                }), v && 0 === w.length && l.createElement(Lt, {
+                }), y && 0 === h.length && l.createElement(Lt, {
                     role: "note",
                     title: "There are no Worlds here... yet"
-                }, "There are no Worlds here... yet"), l.createElement(Dt, null, E && 0 === (null == w ? void 0 : w.length) ? ie()(0, 6).map((function(e) {
+                }, "There are no Worlds here... yet"), l.createElement(Dt, null, v && 0 === (null == h ? void 0 : h.length) ? ie()(0, 6).map((function(e) {
                     return l.createElement(c.UU, {
                         key: e,
                         height: "400px",
                         className: "mb-2"
                     })
-                })) : !y && G.map((function(e) {
+                })) : !E && G.map((function(e) {
                     var t;
-                    return l.createElement(yt.Z, {
+                    return l.createElement(Et.Z, {
                         key: e.id,
                         world: Nt(Nt({}, e), null !== (t = null == N ? void 0 : N[e.id]) && void 0 !== t ? t : {}),
                         linksToEdit: !0
                     })
-                })), E && (null == w ? void 0 : w.length) > 1 && ie()(0, 6).map((function(e) {
+                })), v && (null == h ? void 0 : h.length) > 1 && ie()(0, 6).map((function(e) {
                     return l.createElement(c.UU, {
                         key: e,
                         height: "400px",
@@ -2743,9 +2686,9 @@
                     name: "s3oxtx",
                     styles: "z-index:5"
                 });
-            const At = function() {
+            const jt = function() {
                 var e = (0, o.TH)();
-                return l.createElement(jt, null, "/home/content" === e.pathname && l.createElement(jt, null, l.createElement("h2", null, "Manage Uploaded Content"), l.createElement(Rt, null, l.createElement(Tt, {
+                return l.createElement(At, null, "/home/content" === e.pathname && l.createElement(At, null, l.createElement("h2", null, "Manage Uploaded Content"), l.createElement(Rt, null, l.createElement(Tt, {
                     to: "/home/content/worlds"
                 }, l.createElement(Wt, null, l.createElement(c.$1, {
                     className: "mb-3",
@@ -2764,10 +2707,10 @@
                     element: l.createElement(St, null)
                 }), l.createElement(o.AW, {
                     path: "/restricted/:contentId",
-                    element: l.createElement(A, null)
+                    element: l.createElement(j, null)
                 }))))
             };
-            var jt = (0, a.Z)("div", {
+            var At = (0, a.Z)("div", {
                     target: "e7t0ljh4"
                 })({
                     name: "1fttcpj",
@@ -2806,7 +2749,7 @@
                 r = n(45697),
                 l = n.n(r),
                 o = n(67294),
-                i = n(37463),
+                i = n(46382),
                 c = function(e) {
                     var t;
                     return o.createElement(i.uW, (0, a.Z)({
@@ -2851,12 +2794,12 @@
                 p = n(16995),
                 f = n(66007),
                 g = n(59895),
-                h = n(42137),
-                b = n(34604),
-                w = n(23778),
-                E = n(88673),
-                v = n(26128),
-                y = n(47420),
+                b = n(42137),
+                w = n(34604),
+                h = n(23778),
+                v = n(88673),
+                y = n(26128),
+                E = n(47420),
                 x = n(29167),
                 C = n(92221),
                 N = n(88302),
@@ -2914,27 +2857,27 @@
                     description: "User"
                 }, {
                     tag: "system_trust_trusted",
-                    icon: y.yS,
+                    icon: E.yS,
                     description: "Known User"
                 }, {
                     tag: "system_trust_veteran",
-                    icon: v.jA,
+                    icon: y.jA,
                     description: "Trusted User"
                 }, {
                     tag: "system_probable_troll",
-                    icon: E.I7,
+                    icon: v.I7,
                     description: "Probable Nuisance"
                 }, {
                     tag: "system_troll",
-                    icon: w.c7,
+                    icon: h.c7,
                     description: "Nuisance"
                 }, {
                     tag: "system_supporter",
-                    icon: b.m6,
+                    icon: w.m6,
                     description: "VRC+ Subscriber"
                 }, {
                     tag: "system_early_adopter",
-                    icon: h.SZ,
+                    icon: b.SZ,
                     description: "Early VRC+ Adopter"
                 }, {
                     tag: "admin_approved",
@@ -3147,4 +3090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bd80a573357b11a630d0d415b4916f330a54dca7e0ef9a2abcc9667dc9b75b7b.js.map
+//# sourceMappingURL=9bca615d4ef04b5f81ebe1f9d20fa31e04a351fea0225c05453abbf9a2808c83.js.map

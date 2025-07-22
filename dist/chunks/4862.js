@@ -7,7 +7,7 @@
             });
             var n = r(54546),
                 o = r(67294),
-                c = r(37463),
+                c = r(46382),
                 l = ["./common.js", "./index.js"],
                 a = r(27285);
             const s = function() {
@@ -75,6 +75,7 @@
                 "./vrcImpostor.js": 93007,
                 "./vrcInventory.js": 98648,
                 "./vrcItem.js": 56209,
+                "./vrcJoin.js": 76170,
                 "./vrcListingTypePermanent.js": 14825,
                 "./vrcPlus.js": 62898,
                 "./vrcPrint.js": 92177,
@@ -107,4 +108,4 @@
         }
     }
 ]);
-//# sourceMappingURL=91404e5d609d338117614d36cb8c9410e1eb4bd3b290188ab019b513bf6fdb8a.js.map
+//# sourceMappingURL=f1aa606e54f9b8812cff3bf32076c85b66357072b0d69860042f55257ac01617.js.map
