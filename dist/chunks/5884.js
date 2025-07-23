@@ -203,40 +203,45 @@
                 C = n(86646),
                 k = n(43862);
             const P = function() {
-                var e = (0, x.q7)(),
+                var e = (0, x.XC)(),
                     t = e.data,
-                    n = void 0 === t ? [] : t,
-                    r = e.isError,
-                    l = e.isFetching,
-                    o = n.includes("permission-age-verification"),
-                    i = (0, Z.HI)(),
-                    s = i.data,
-                    c = i.isError,
-                    u = i.isFetching,
-                    m = r || c;
-                if (l || u) return a.createElement("div", {
+                    n = e.isError,
+                    r = e.isFetching,
+                    l = (0, x.q7)(),
+                    o = l.data,
+                    i = void 0 === o ? [] : o,
+                    s = l.isError,
+                    c = l.isFetching,
+                    u = i.includes("permission-age-verification"),
+                    m = (0, Z.HI)(),
+                    d = m.data,
+                    p = m.isError,
+                    f = m.isFetching,
+                    h = n || s || p;
+                if (r || c || f) return a.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(k.Z, {
                     size: "5x"
                 }));
-                if (m) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(C.Z, {
+                if (h) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(C.Z, {
                     icon: b.faCircleQuestion
                 }), " Unable to determine your Age Verification status."), a.createElement(N.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "/home/ageverification"
                 }, "Try Again"));
-                if (!o) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(C.Z, {
+                if (!u) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(C.Z, {
                     icon: y.faCircleInfo
                 }), " You must have an active VRChat Plus subscription in order to begin the verification process."), a.createElement(N.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
                 }, "Learn More"));
-                switch (s.status) {
+                var w = t.isAdult;
+                switch (d.status) {
                     case "verified":
                     case "approved":
                         return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(C.Z, {
                             icon: v.f8
-                        }), " You have successfully verified your age. You may choose whether to display it on your profile."), a.createElement(N.Qj, {
+                        }), " You have successfully verified your age.", w && " You may choose whether to display it on your profile."), w && a.createElement(N.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/user/me"
                         }, "Go to My Profile"));
@@ -495,7 +500,7 @@
                     B = V.error,
                     G = V.isLoading,
                     K = V.isSuccess,
-                    Q = V.reset;
+                    X = V.reset;
                 (0, a.useEffect)((function() {
                     var e = c.get("dmcaTarget");
                     e && k(L(L({}, C), {}, {
@@ -503,11 +508,11 @@
                     }))
                 }), []), (0, a.useEffect)((function() {
                     var e;
-                    $ && (Q(), S("Could Not Proccess Claim: ".concat(null == B || null === (e = B.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                    $ && (X(), S("Could Not Proccess Claim: ".concat(null == B || null === (e = B.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
                 }), [$, B]), (0, a.useEffect)((function() {
-                    K && (Q(), O(!0))
+                    K && (X(), O(!0))
                 }), [K]);
-                var X = function(e) {
+                var Q = function(e) {
                     g(L(L({}, w), {}, (0, j.Z)({}, e.target.id, e.target.checked)))
                 };
                 return 3 !== N ? null : a.createElement(a.Fragment, null, a.createElement("label", {
@@ -582,31 +587,31 @@
                     checked: null == w ? void 0 : w.owner,
                     label: "\n            I have a good faith belief that the use of the material in the\n            manner complained of is not authorized by the copyright owner,\n            its agent, or the law;\n          ",
                     htmlFor: "owner-check",
-                    onChange: X
+                    onChange: Q
                 }), a.createElement(r.XZ, {
                     id: "accurate",
                     checked: null == w ? void 0 : w.accurate,
                     label: "This notification is accurate; and",
                     htmlFor: "accurate-check",
-                    onChange: X
+                    onChange: Q
                 }), a.createElement(r.XZ, {
                     id: "perjury",
                     checked: null == w ? void 0 : w.perjury,
                     label: "\n            Under penalty of perjury, I am authorized to act on behalf of the owner\n            of an exclusive right that is allegedly infringed.\n          ",
                     htmlFor: "perjury-check",
-                    onChange: X
+                    onChange: Q
                 }), a.createElement(r.XZ, {
                     id: "liability",
                     checked: null == w ? void 0 : w.liability,
                     label: "\n            I acknowledge that under section 512(f) of the DMCA any person who knowingly \n            materially misrepresents that material or activity is infringing may be subject \n            to liability for damages.\n          ",
                     htmlFor: "liability",
-                    onChange: X
+                    onChange: Q
                 }), a.createElement(r.XZ, {
                     id: "abuse",
                     checked: null == w ? void 0 : w.abuse,
                     label: "I understand that abuse of this tool may result in the termination of my VRChat account, legal action, and/or criminal penalties.",
                     htmlFor: "abuse",
-                    onChange: X
+                    onChange: Q
                 })), a.createElement("label", {
                     htmlFor: "claim-signature"
                 }, "Type your full name below which will act as your digital signature", a.createElement(r.II, {
@@ -707,8 +712,8 @@
                 }, "Next")))
             };
             var K = n(59545),
-                Q = n(83868),
-                X = n.n(Q);
+                X = n(83868),
+                Q = n.n(X);
 
             function J(e, t) {
                 var n = Object.keys(e);
@@ -749,7 +754,7 @@
                     w = m.setOwnerInfo;
                 return (0, a.useEffect)((function() {
                     var e, t, n, a, r, l;
-                    X()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (a = h.mailingCity) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (r = h.mailingCountry) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
+                    Q()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (a = h.mailingCity) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (r = h.mailingCountry) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
                 }), [h]), 2 !== f ? null : a.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
                 }, n ? a.createElement(ne, null, a.createElement(r.$1, {
@@ -1262,8 +1267,8 @@
                     W = B[1],
                     G = (0, a.useState)(""),
                     K = (0, i.Z)(G, 2),
-                    Q = K[0],
-                    X = K[1],
+                    X = K[0],
+                    Q = K[1],
                     J = a.useState(!1),
                     ee = (0, i.Z)(J, 2),
                     te = ee[0],
@@ -1272,7 +1277,7 @@
                     re = (0, i.Z)(ae, 2),
                     le = re[0],
                     ue = re[1],
-                    ye = (0, l.Nr)(Q),
+                    ye = (0, l.Nr)(X),
                     be = y && v && "" !== ye;
                 if ((0, a.useEffect)((function() {
                         N ? A(!0) : Z && me()().diff(C, "days") < 90 ? A(!1) : A(!0)
@@ -1282,7 +1287,7 @@
                             userId: P.id
                         }))) : W(null)
                     }), [ye]), (0, a.useEffect)((function() {
-                        return "" === q ? (ne(!1), void j(null)) : q !== Q ? (ne(!1), void j("Names don't match")) : (ne(!0), void j(null))
+                        return "" === q ? (ne(!1), void j(null)) : q !== X ? (ne(!1), void j("Names don't match")) : (ne(!0), void j(null))
                     }), [q]), w) return a.createElement(qe, {
                     displayNameError: null !== (e = null === (t = g.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
@@ -1299,7 +1304,7 @@
                                     case 0:
                                         return e.prev = 0, e.next = 3, n(u({
                                             password: _,
-                                            displayName: Q,
+                                            displayName: X,
                                             revertDisplayName: !1,
                                             userId: P.id
                                         }));
@@ -1350,16 +1355,16 @@
                     id: "displayName",
                     name: "displayName",
                     onChange: function(e) {
-                        return X(e.target.value)
+                        return Q(e.target.value)
                     },
                     placeholder: P.displayName,
                     type: "text",
-                    value: Q
+                    value: X
                 }), a.createElement(ze, {
                     canChangeDisplayName: I,
                     displayName: P.displayName,
                     displayNameAvailable: y,
-                    displayNameValue: Q,
+                    displayNameValue: X,
                     isRevert: !1,
                     latestChangedDate: C,
                     displayNameChecking: b,
@@ -1375,7 +1380,7 @@
                     icon: se.LM,
                     spin: !0,
                     size: "2x"
-                }), "" !== Q && !b && a.createElement(we.Z, {
+                }), "" !== X && !b && a.createElement(we.Z, {
                     "aria-label": y && v ? "Name is available" : "Name is unavailable",
                     ok: y && v
                 }))), be && !E && a.createElement(pe.Z, null, a.createElement(fe.Z, {
@@ -1454,7 +1459,7 @@
                 }, "Revert Display Name Change")), a.createElement(fe.Z, {
                     xs: "6"
                 }, a.createElement(he.Z, {
-                    disabled: !I || !0 === b || null !== F || "" === q || "" === _ || null !== H || "" === Q,
+                    disabled: !I || !0 === b || null !== F || "" === q || "" === _ || null !== H || "" === X,
                     color: "primary",
                     block: !0,
                     id: "name-change-submit",
@@ -1464,8 +1469,8 @@
                 }, "Change Display Name"))))))
             };
             var Ke = n(15671),
-                Qe = n(43144),
-                Xe = n(97326),
+                Xe = n(43144),
+                Qe = n(97326),
                 Je = n(60136),
                 et = n(82963),
                 tt = n(61120),
@@ -1509,9 +1514,9 @@
                         confirmationError: !1,
                         confirmationOk: null,
                         ready: !1
-                    }, t.handleCurrentPassword = t.handleCurrentPassword.bind((0, Xe.Z)(t)), t.handleNewPassword = t.handleNewPassword.bind((0, Xe.Z)(t)), t.handleConfirmation = t.handleConfirmation.bind((0, Xe.Z)(t)), t.handleSubmit = t.handleSubmit.bind((0, Xe.Z)(t)), t
+                    }, t.handleCurrentPassword = t.handleCurrentPassword.bind((0, Qe.Z)(t)), t.handleNewPassword = t.handleNewPassword.bind((0, Qe.Z)(t)), t.handleConfirmation = t.handleConfirmation.bind((0, Qe.Z)(t)), t.handleSubmit = t.handleSubmit.bind((0, Qe.Z)(t)), t
                 }
-                return (0, Qe.Z)(c, [{
+                return (0, Xe.Z)(c, [{
                     key: "handleCurrentPassword",
                     value: (i = (0, o.Z)(m().mark((function e(t) {
                         var n;
@@ -1950,7 +1955,7 @@
 
                     function n(e) {
                         var r;
-                        return (0, Ke.Z)(this, n), r = t.call(this, e), (0, j.Z)((0, Xe.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
+                        return (0, Ke.Z)(this, n), r = t.call(this, e), (0, j.Z)((0, Qe.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
                             var t, n, a;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1983,7 +1988,7 @@
                             }), e, null, [
                                 [3, 10]
                             ])
-                        })))), (0, j.Z)((0, Xe.Z)(r), "disable", function() {
+                        })))), (0, j.Z)((0, Qe.Z)(r), "disable", function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
                                 var n, a;
                                 return m().wrap((function(e) {
@@ -2023,9 +2028,9 @@
                                 }))
                             }
                             return e
-                        }({}, Ot), r.ref = a.createRef(), r.enable = r.enable.bind((0, Xe.Z)(r)), r.renderSetup = r.renderSetup.bind((0, Xe.Z)(r)), r.renderStatus = r.renderStatus.bind((0, Xe.Z)(r)), r.handleChangeVerifyCode = r.handleChangeVerifyCode.bind((0, Xe.Z)(r)), r.handleVerifyPendingSecret = r.handleVerifyPendingSecret.bind((0, Xe.Z)(r)), r.isSettingUp = r.isSettingUp.bind((0, Xe.Z)(r)), r.cancelSecret = r.cancelSecret.bind((0, Xe.Z)(r)), r.showTextKey = r.showTextKey.bind((0, Xe.Z)(r)), r.goToStep0 = r.goToStep0.bind((0, Xe.Z)(r)), r.goToStep1 = r.goToStep1.bind((0, Xe.Z)(r)), r.goToStep2 = r.goToStep2.bind((0, Xe.Z)(r)), r.toggleOneTimePasswordsShown = r.toggleOneTimePasswordsShown.bind((0, Xe.Z)(r)), r.hasOneTimePasswords = r.hasOneTimePasswords.bind((0, Xe.Z)(r)), r.getOneTimePasswordHref = r.getOneTimePasswordHref.bind((0, Xe.Z)(r)), r.downloadOneTimePasswords = r.downloadOneTimePasswords.bind((0, Xe.Z)(r)), r.triggerOtpDownloadLink = r.triggerOtpDownloadLink.bind((0, Xe.Z)(r)), r
+                        }({}, Ot), r.ref = a.createRef(), r.enable = r.enable.bind((0, Qe.Z)(r)), r.renderSetup = r.renderSetup.bind((0, Qe.Z)(r)), r.renderStatus = r.renderStatus.bind((0, Qe.Z)(r)), r.handleChangeVerifyCode = r.handleChangeVerifyCode.bind((0, Qe.Z)(r)), r.handleVerifyPendingSecret = r.handleVerifyPendingSecret.bind((0, Qe.Z)(r)), r.isSettingUp = r.isSettingUp.bind((0, Qe.Z)(r)), r.cancelSecret = r.cancelSecret.bind((0, Qe.Z)(r)), r.showTextKey = r.showTextKey.bind((0, Qe.Z)(r)), r.goToStep0 = r.goToStep0.bind((0, Qe.Z)(r)), r.goToStep1 = r.goToStep1.bind((0, Qe.Z)(r)), r.goToStep2 = r.goToStep2.bind((0, Qe.Z)(r)), r.toggleOneTimePasswordsShown = r.toggleOneTimePasswordsShown.bind((0, Qe.Z)(r)), r.hasOneTimePasswords = r.hasOneTimePasswords.bind((0, Qe.Z)(r)), r.getOneTimePasswordHref = r.getOneTimePasswordHref.bind((0, Qe.Z)(r)), r.downloadOneTimePasswords = r.downloadOneTimePasswords.bind((0, Qe.Z)(r)), r.triggerOtpDownloadLink = r.triggerOtpDownloadLink.bind((0, Qe.Z)(r)), r
                     }
-                    return (0, Qe.Z)(n, [{
+                    return (0, Xe.Z)(n, [{
                         key: "componentDidUpdate",
                         value: function() {
                             this.state.isWaitingToDownloadOtp && this.hasOneTimePasswords() && (this.triggerOtpDownloadLink(), this.setState({
@@ -2483,9 +2488,9 @@
                     W = B.isError,
                     G = B.error,
                     K = (0, y.Fe)(),
-                    Q = (0, a.Z)(K, 2),
-                    X = Q[0],
-                    J = Q[1],
+                    X = (0, a.Z)(K, 2),
+                    Q = X[0],
+                    J = X[1],
                     ee = J.isFetching,
                     te = J.isError,
                     ne = J.error,
@@ -2703,7 +2708,7 @@
                     color: "primary",
                     disabled: !(null != e && e.hasPendingEmail) && !V || ee,
                     onClick: function() {
-                        return X()
+                        return Q()
                     },
                     outline: !0
                 }, pe)), m.createElement(f.Z, {
@@ -2893,4 +2898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b5a40fb4ecc70ba89aee14d07cb58694668698b308861478dba9989635d8f8f.js.map
+//# sourceMappingURL=9fe7b4dbe69cf3233738e60109f858db9e749d4ee16adaf421e3e0d905e905f7.js.map

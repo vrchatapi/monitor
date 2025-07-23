@@ -66,85 +66,86 @@
                 c = n(34327),
                 s = n(81264),
                 o = n(67294),
-                d = n(79655),
-                p = (n(83505), n(25062)),
+                p = n(79655),
+                d = n(25062),
                 m = n(86646),
                 u = n(60006),
                 h = n(28213);
             const E = function(e) {
                 var t, n = e.onDeleteClicked,
                     r = e.tag,
-                    m = e.hideDescription,
-                    E = e.preventSearch,
-                    f = e.editable,
-                    y = (e.isMod, (0, o.useState)(!1)),
-                    v = (0, a.Z)(y, 2),
-                    _ = v[0],
-                    Z = v[1],
-                    w = (0, o.useState)(!1),
-                    b = (0, a.Z)(w, 2),
-                    x = b[0],
-                    A = b[1],
-                    C = (0, o.useState)(!1),
-                    k = (0, a.Z)(C, 2),
-                    S = k[0],
-                    R = k[1],
-                    D = (0, o.useState)(!1),
-                    $ = (0, a.Z)(D, 2),
-                    I = ($[0], $[1]),
-                    N = f,
-                    T = E || !1,
-                    U = s.ol,
-                    O = r,
-                    L = "secondary";
+                    m = e.contentType,
+                    E = e.hideDescription,
+                    f = e.preventSearch,
+                    y = e.editable,
+                    v = (e.isMod, (0, o.useState)(!1)),
+                    _ = (0, a.Z)(v, 2),
+                    Z = _[0],
+                    w = _[1],
+                    b = (0, o.useState)(!1),
+                    x = (0, a.Z)(b, 2),
+                    A = x[0],
+                    C = x[1],
+                    k = (0, o.useState)(!1),
+                    S = (0, a.Z)(k, 2),
+                    R = S[0],
+                    D = S[1],
+                    $ = (0, o.useState)(!1),
+                    I = (0, a.Z)($, 2),
+                    N = (I[0], I[1]),
+                    T = y,
+                    U = !m || f || !1,
+                    O = s.ol,
+                    L = r,
+                    W = "secondary";
                 if (null == r) return null;
                 if ("string" != typeof r) return console.error("Malformed tag."), null;
-                (r.startsWith("admin") || r.startsWith("system")) && (U = c.LE), r.startsWith("author_tag") && (U = c.LE, O = r.replace("author_tag_", ""));
-                var W = h.w.filter((function(e) {
+                (r.startsWith("admin") || r.startsWith("system")) && (O = c.LE), r.startsWith("author_tag") && (O = c.LE, L = r.replace("author_tag_", ""));
+                var P = h.w.filter((function(e) {
                     return e.tag === r
                 }));
-                W[0] && (U = W[0].icon, O = W[0].description), _ && (U = i.NB), x && S && (L = "danger"), S && (t = o.createElement(g, {
+                P[0] && (O = P[0].icon, L = P[0].description), Z && (O = i.NB), A && R && (W = "danger"), R && (t = o.createElement(g, {
                     icon: l.$,
                     title: "Delete this tag",
                     onMouseLeave: function() {
-                        I(!1)
+                        N(!1)
                     },
                     onMouseEnter: function() {
-                        I(!0)
+                        N(!0)
                     },
                     onClick: function() {
-                        n && N && n(r)
+                        n && T && n(r)
                     }
                 }));
-                var P = "/home/search/".concat(O);
-                return o.createElement(p.Z, {
+                var F = "/home/search/".concat(m, "/").concat(L);
+                return o.createElement(d.Z, {
                     "aria-label": "tag",
                     className: "tag-badge me-2 d-flex",
                     onMouseEnter: function() {
-                        N && Z(!0)
+                        T && w(!0)
                     },
                     onMouseLeave: function() {
-                        N && (Z(!1), R(!1))
+                        T && (w(!1), D(!1))
                     },
-                    color: L
+                    color: W
                 }, o.createElement(u.X2, {
                     onMouseEnter: function() {
-                        N && A(!0)
+                        T && C(!0)
                     },
                     onMouseLeave: function() {
-                        N && A(!1)
+                        T && C(!1)
                     },
                     className: "me-2"
                 }, o.createElement(g, {
-                    icon: U,
-                    title: O,
+                    icon: O,
+                    title: L,
                     className: "me-1",
                     onClick: function() {
-                        N && R(!S)
+                        T && D(!R)
                     }
-                }), t), T ? o.createElement("span", null, O) : o.createElement(d.rU, {
-                    to: P
-                }, !m && o.createElement("span", null, O)))
+                }), t), U ? o.createElement("span", null, L) : o.createElement(p.rU, {
+                    to: F
+                }, !E && o.createElement("span", null, L)))
             };
             var g = (0, r.Z)(m.Z, {
                 target: "ec3rnp40"
@@ -164,11 +165,11 @@
                 c = n(67294),
                 s = n(83505),
                 o = n(25062),
-                d = n(86646);
-            var p = "Add a new tag";
+                p = n(86646);
+            var d = "Add a new tag";
             const m = function(e) {
                 var t = e.onTagAdded,
-                    n = (0, c.useState)(p),
+                    n = (0, c.useState)(d),
                     m = (0, a.Z)(n, 2),
                     u = m[0],
                     h = m[1],
@@ -180,9 +181,9 @@
                     _ = (0, a.Z)(v, 2),
                     Z = (_[0], _[1]),
                     w = function() {
-                        u !== p && (t && u && t(u), h(p), y(!1))
+                        u !== d && (t && u && t(u), h(d), y(!1))
                     },
-                    b = c.createElement("span", null, f ? u : p);
+                    b = c.createElement("span", null, f ? u : d);
                 return f && (b = c.createElement("input", {
                     "aria-label": "Add tag input",
                     type: "text",
@@ -192,7 +193,7 @@
                     onKeyUp: function(e) {
                         13 === (e.keyCode || e.charCode) && w()
                     },
-                    placeholder: p,
+                    placeholder: d,
                     className: "transparent-input"
                 })), c.createElement(o.Z, {
                     className: "tag-badge text-black",
@@ -203,15 +204,15 @@
                         name: "flqggv",
                         styles: "float:left;padding:0!important;cursor:pointer"
                     })
-                }, c.createElement(d.Z, {
+                }, c.createElement(p.Z, {
                     icon: f ? i.NB : l.r8,
                     className: "me-1",
                     title: f ? "Cancel adding tag" : "Add a new tag",
                     onClick: function() {
-                        y(!f), h(p), Z("".concat(13, "ch"))
+                        y(!f), h(d), Z("".concat(13, "ch"))
                     },
                     "aria-label": f ? "Cancel tag button" : "Add tag button"
-                }), f && c.createElement(d.Z, {
+                }), f && c.createElement(p.Z, {
                     icon: r.LE,
                     title: "Add this new tag",
                     onClick: w
@@ -229,8 +230,8 @@
                 c = n(82963),
                 s = n(61120),
                 o = n(42619),
-                d = n(67294),
-                p = n(32981),
+                p = n(67294),
+                d = n(32981),
                 m = n(34698),
                 u = n(46382),
                 h = n(411);
@@ -286,17 +287,17 @@
                         } catch (t) {
                             console.error(t), e = !1
                         }
-                        return e ? d.createElement(m.Z, {
+                        return e ? p.createElement(m.Z, {
                             color: "primary",
                             title: "Remove Favorite",
                             onClick: this.unFavorite
-                        }, d.createElement(u.$1, {
+                        }, p.createElement(u.$1, {
                             icon: o.$
                         }), " Remove Favorite") : null
                     }
                 }]), n
-            }(d.Component);
-            const f = (0, p.$j)((function(e) {
+            }(p.Component);
+            const f = (0, d.$j)((function(e) {
                 return {
                     assets: e.favorites.assets
                 }
@@ -313,8 +314,8 @@
                 c = n(67294),
                 s = n(79655),
                 o = n(83505),
-                d = n(95305),
-                p = n(35773),
+                p = n(95305),
+                d = n(35773),
                 m = n(34698),
                 u = n(46382),
                 h = n(15671),
@@ -418,31 +419,31 @@
                             q = this.props.tags;
                         H && (q = this.props.databaseWorld.tags);
                         var G = 3;
-                        return t && (G = 2), c.createElement(p.Z, null, null != n && c.createElement(d.Z, {
+                        return t && (G = 2), c.createElement(d.Z, null, null != n && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: N.IL
-                        }), " ", !t && "Players"), c.createElement("span", null, n)), null != a && c.createElement(d.Z, {
+                        }), " ", !t && "Players"), c.createElement("span", null, n)), null != a && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: I.BC
-                        }), " ", !t && "Privates"), c.createElement("span", null, a)), null != r && c.createElement(d.Z, {
+                        }), " ", !t && "Privates"), c.createElement("span", null, a)), null != r && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: $.T
-                        }), " ", !t && "Favorites"), c.createElement("span", null, r)), i && null != s && c.createElement(d.Z, {
+                        }), " ", !t && "Favorites"), c.createElement("span", null, r)), i && null != s && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: R.Rp
-                        }), " ", !t && "Pop/Heat"), c.createElement("span", null, s, c.createElement("strong", null, "—"), o)), !i && null != o && c.createElement(d.Z, {
+                        }), " ", !t && "Pop/Heat"), c.createElement("span", null, s, c.createElement("strong", null, "—"), o)), !i && null != o && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
@@ -453,63 +454,63 @@
                                 icon: R.Rp,
                                 key: e
                             })
-                        }))), 0 === o && c.createElement("span", null, "0")), null != m && c.createElement(d.Z, {
+                        }))), 0 === o && c.createElement("span", null, "0")), null != m && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: S.Md
-                        }), " ", !t && "Visits"), c.createElement("span", null, m)), (i || h) && null != E && c.createElement(d.Z, {
+                        }), " ", !t && "Visits"), c.createElement("span", null, m)), (i || h) && null != E && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: _.JH
-                        }), " ", !t && "Reports"), c.createElement("span", null, E)), i && null != g && c.createElement(d.Z, {
+                        }), " ", !t && "Reports"), c.createElement("span", null, E)), i && null != g && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: k.DL
-                        }), " ", !t && "Report Weight"), c.createElement("span", null, g)), i && null != f && c.createElement(d.Z, {
+                        }), " ", !t && "Report Weight"), c.createElement("span", null, g)), i && null != f && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: C.O7
-                        }), " ", !t && "Trust"), c.createElement("span", null, f)), !t && null != y && c.createElement(d.Z, {
+                        }), " ", !t && "Trust"), c.createElement("span", null, f)), !t && null != y && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: A.FV
-                        }), "  ", !t && "Capacity"), c.createElement("span", null, y)), null != v && c.createElement(d.Z, {
+                        }), "  ", !t && "Capacity"), c.createElement("span", null, y)), null != v && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: "3"
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: x.CP
-                        }), "  Created"), c.createElement("span", null, L()(v, L().ISO_8601).calendar())), null != T && c.createElement(d.Z, {
+                        }), "  Created"), c.createElement("span", null, L()(v, L().ISO_8601).calendar())), null != T && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: "3"
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: b.r6
-                        }), "   Last Update"), c.createElement("span", null, L()(T, L().ISO_8601).calendar())), null != O && L()(O, L().ISO_8601).isValid() && c.createElement(d.Z, {
+                        }), "   Last Update"), c.createElement("span", null, L()(T, L().ISO_8601).calendar())), null != O && L()(O, L().ISO_8601).isValid() && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: "3"
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: l.jZ,
                             title: "favorites"
-                        }), "  Labs'd"), c.createElement("span", null, L()(O, L().ISO_8601).calendar())), null != P && L()(P).isValid() && c.createElement(d.Z, {
+                        }), "  Labs'd"), c.createElement("span", null, L()(O, L().ISO_8601).calendar())), null != P && L()(P).isValid() && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: "3"
                         }, c.createElement("h6", null, c.createElement(u.$1, {
                             icon: w.Ac,
                             title: "favorites"
-                        }), "  Published"), c.createElement("span", null, L()(P, L().ISO_8601).calendar())), B && c.createElement(d.Z, {
+                        }), "  Published"), c.createElement("span", null, L()(P, L().ISO_8601).calendar())), B && c.createElement(p.Z, {
                             xs: "4",
                             sm: "3",
                             md: G
@@ -520,7 +521,7 @@
                             href: window.apiUrl("/api/1/worlds/".concat(V, "/analytics"))
                         }, j, " ", c.createElement(u.$1, {
                             icon: Z.q7
-                        })))), q && c.createElement(d.Z, {
+                        })))), q && c.createElement(p.Z, {
                             xs: "12",
                             sm: "6",
                             md: t ? "4" : "6"
@@ -532,6 +533,7 @@
                                 className: "mb-2"
                             }, c.createElement(W.Z, {
                                 tag: t,
+                                contentType: "worlds",
                                 onDeleteClicked: e.handleDeleteTag,
                                 editable: H
                             }))
@@ -570,7 +572,7 @@
                     return !e.startsWith("system_")
                 })));
                 var w = 12;
-                return h && (w = 4, y.push("slim")), c.createElement(d.Z, {
+                return h && (w = 4, y.push("slim")), c.createElement(p.Z, {
                     xs: w,
                     className: (0, o.iv)({
                         name: "1efq825",
@@ -578,7 +580,7 @@
                     })
                 }, c.createElement("div", {
                     className: y.join(" ")
-                }, h && c.createElement(p.Z, null, c.createElement(d.Z, {
+                }, h && c.createElement(d.Z, null, c.createElement(p.Z, {
                     xs: "12"
                 }, c.createElement("h6", null, c.createElement(s.rU, {
                     to: "/home/world/".concat(t.id)
@@ -592,7 +594,7 @@
                     icon: r.by
                 }), " ")), !E && c.createElement("span", null, " ", c.createElement("small", null, "—  ", c.createElement(s.rU, {
                     to: "/home/user/".concat(t.authorId)
-                }, t.authorName))))), c.createElement(d.Z, {
+                }, t.authorName))))), c.createElement(p.Z, {
                     xs: "12"
                 }, c.createElement(s.rU, {
                     to: "/home/world/".concat(t.id)
@@ -610,7 +612,7 @@
                 }, c.createElement(u.$1, {
                     icon: i.kZ,
                     className: "me-2"
-                }), "ID")))), !h && c.createElement(p.Z, null, c.createElement(d.Z, {
+                }), "ID")))), !h && c.createElement(d.Z, null, c.createElement(p.Z, {
                     xs: "12",
                     md: "4"
                 }, c.createElement(s.rU, {
@@ -620,10 +622,10 @@
                     src: (0, B.cq)(t),
                     title: t.displayName,
                     alt: t.displayName
-                }))), c.createElement(d.Z, {
+                }))), c.createElement(p.Z, {
                     xs: "12",
                     md: "8"
-                }, c.createElement(p.Z, null, c.createElement(d.Z, {
+                }, c.createElement(d.Z, null, c.createElement(p.Z, {
                     xs: "12",
                     md: "8"
                 }, c.createElement("h4", null, c.createElement(s.rU, {
@@ -644,7 +646,7 @@
                     }
                 }, c.createElement(u.$1, {
                     icon: a.eH
-                }), " Deleted!", " ")), c.createElement(d.Z, {
+                }), " Deleted!", " ")), c.createElement(p.Z, {
                     xs: "12",
                     md: "4",
                     style: {
@@ -653,7 +655,7 @@
                 }, g && c.createElement(j.Z, {
                     thing: t,
                     type: "world"
-                }))), c.createElement(p.Z, null, c.createElement(d.Z, null, c.createElement(M, {
+                }))), c.createElement(d.Z, null, c.createElement(p.Z, null, c.createElement(M, {
                     worldId: t.id,
                     isMod: n,
                     narrow: n,
@@ -687,8 +689,8 @@
                 c = n(68335),
                 s = n(54228),
                 o = n(85322),
-                d = n(54326),
-                p = n(68055),
+                p = n(54326),
+                d = n(68055),
                 m = n(17726),
                 u = n(16995),
                 h = n(66007),
@@ -816,11 +818,11 @@
                     description: "System Labs"
                 }, {
                     tag: "system_approved",
-                    icon: p.LE,
+                    icon: d.LE,
                     description: "Approved"
                 }, {
                     tag: "system_updated_recently",
-                    icon: d.IV,
+                    icon: p.IV,
                     description: "Updated Recently"
                 }, {
                     tag: "system_created_recently",
@@ -882,4 +884,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65246e200827e09acb5914cb2ac15b58074f93f5b0eeb8745fd2e2a9bb74badc.js.map
+//# sourceMappingURL=8c00a7a5e22cd8099f635b52c6a97cf4d91ca81f70da805fc2ea6ad4e5e2b648.js.map
