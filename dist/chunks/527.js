@@ -292,13 +292,13 @@
                     }, e)
                 }))))
             };
-            var D = (0, o.Z)("div", {
+            var W = (0, o.Z)("div", {
                     target: "e1kgcgv31"
                 })({
                     name: "v4exnp",
                     styles: "height:86%;margin-bottom:1.5em;flex:80%"
                 }),
-                W = (0, o.Z)("div", {
+                D = (0, o.Z)("div", {
                     target: "e1kgcgv30"
                 })({
                     name: "1fttcpj",
@@ -495,7 +495,7 @@
                     }();
                 return u.useEffect((function() {
                     s && (K((null == l ? void 0 : l.frameCount) || 4), te((null == l ? void 0 : l.frameRate) || 15))
-                }), [s]), u.createElement(W, null, u.createElement(D, null, d === w && !s && u.createElement(B, {
+                }), [s]), u.createElement(D, null, u.createElement(W, null, d === w && !s && u.createElement(B, {
                     frames: t,
                     completedCallback: r,
                     zoom: x,
@@ -734,7 +734,7 @@
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = r.file, (0, p.DS)({
+                                        if (n = r.file, (0, p._0)({
                                                 file: n,
                                                 includeGif: !1
                                             })) {
@@ -892,7 +892,7 @@
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = r.file, (0, d.DS)({
+                                        if (n = r.file, (0, d._0)({
                                                 file: n,
                                                 includeGif: !1
                                             })) {
@@ -1058,11 +1058,11 @@
                     $ = (0, d.v9)((function(e) {
                         return e.user.photoList
                     })),
-                    D = (0, d.v9)((function(e) {
+                    W = (0, d.v9)((function(e) {
                         return e.user.iconList
                     })),
-                    W = f.useState([]),
-                    J = (0, i.Z)(W, 2),
+                    D = f.useState([]),
+                    J = (0, i.Z)(D, 2),
                     K = J[0],
                     H = J[1],
                     Q = f.useState(!1),
@@ -1341,7 +1341,7 @@
                             highestVersionNumber: r
                         }
                     })),
-                    Oe = D.map((function(e) {
+                    Oe = W.map((function(e) {
                         var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
                                 return e.version
                             })))),
@@ -1388,9 +1388,9 @@
                     Ge = Oe.length,
                     Xe = Ve.length,
                     $e = Le.length,
-                    De = Ye.length,
-                    We = u ? Ie.profilePicOverride : Ze.profilePicOverride;
-                te && (We = "");
+                    We = Ye.length,
+                    De = u ? Ie.profilePicOverride : Ze.profilePicOverride;
+                te && (De = "");
                 var Je = u ? Ie.userIcon : Ze.userIcon;
                 ie && (Je = "");
                 var Ke = u ? "64" : Pe["permission-user-gallery"],
@@ -1400,11 +1400,11 @@
                     tt = (null === (t = Pe["permission-user-emoji"]) || void 0 === t ? void 0 : t.max) || 9,
                     rt = (null === (r = Pe["permission-user-stickers"]) || void 0 === r ? void 0 : r.max) || 9,
                     nt = tt <= $e,
-                    at = rt <= De,
+                    at = rt <= We,
                     it = u ? "".concat(Ie.displayName, "'s") : "Your",
                     ot = !u,
                     st = U && de,
-                    lt = (We && O || Je && !O) && !U;
+                    lt = (De && O || Je && !O) && !U;
                 if (ce) switch (F) {
                     case "photos":
                         return f.createElement(k.default, {
@@ -1472,7 +1472,7 @@
                         name: "sf0fa5",
                         styles: ".center-flex{display:flex;flex-flow:row wrap;padding:0!important;align-items:center;justify-content:center;}"
                     })
-                }, We && !U && !Y && !G && f.createElement("div", {
+                }, De && !U && !Y && !G && f.createElement("div", {
                     className: (0, g.iv)({
                         name: "bxqzz5",
                         styles: "margin:auto;text-align:center"
@@ -1483,13 +1483,13 @@
                         styles: "margin-bottom:1em"
                     }))
                 }, (lt || st) && f.createElement(I.Z, {
-                    image: null != de ? de : O ? We : Je,
+                    image: null != de ? de : O ? De : Je,
                     borderColor: "green",
                     disableManagement: ot,
                     width: O ? 300 : 200,
                     isIcon: !O,
                     isAdminView: u
-                }), (!We && O || !Je && !O || U && !de) && f.createElement(_, null, f.createElement(x.$1, {
+                }), (!De && O || !Je && !O || U && !de) && f.createElement(_, null, f.createElement(x.$1, {
                     icon: c.eH,
                     className: (0, g.iv)({
                         name: "ofo7n8",
@@ -1548,7 +1548,7 @@
                 }, f.createElement(x.$1, {
                     icon: l.cf,
                     className: "me-2"
-                }), "Upload ", ct.title)))), !U && We && !Y && !G && f.createElement(x.zx, {
+                }), "Upload ", ct.title)))), !U && De && !Y && !G && f.createElement(x.zx, {
                     onClick: O ? Me : Fe,
                     className: "px-3",
                     danger: !0
@@ -1560,7 +1560,7 @@
                         name: "bxqzz5",
                         styles: "margin:auto;text-align:center"
                     })
-                }, O && f.createElement("h2", null, it, " Uploaded Photos (", Xe, "/", Ke, " Photos)"), L && f.createElement("h2", null, it, " Uploaded Icons (", Ge, "/", Qe, " Icons)"), Y && f.createElement("h2", null, it, " Uploaded Emoji (", $e, "/", tt, " Emoji)"), G && f.createElement("h2", null, it, " Uploaded Stickers (", De, "/", rt, " Stickers)")), u && Xe > 0 && f.createElement("div", {
+                }, O && f.createElement("h2", null, it, " Uploaded Photos (", Xe, "/", Ke, " Photos)"), L && f.createElement("h2", null, it, " Uploaded Icons (", Ge, "/", Qe, " Icons)"), Y && f.createElement("h2", null, it, " Uploaded Emoji (", $e, "/", tt, " Emoji)"), G && f.createElement("h2", null, it, " Uploaded Stickers (", We, "/", rt, " Stickers)")), u && Xe > 0 && f.createElement("div", {
                     className: (0, g.iv)({
                         name: "bxqzz5",
                         styles: "margin:auto;text-align:center"
@@ -1653,4 +1653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=15f3cbf6cc2e2215a501b08c0ae6fb0bd407a1639adc9523d08ab662b65c78e2.js.map
+//# sourceMappingURL=cf4f309c973f2fa07b5f2e9bf025408f728628fc1885f25f0ec69491ed5275b4.js.map

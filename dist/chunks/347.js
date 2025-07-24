@@ -32,9 +32,9 @@
                     z = e.image,
                     j = e.onSelect,
                     L = e.onClick,
-                    S = e.navigate,
-                    U = e.showViewButton,
-                    T = void 0 === U ? !n : U,
+                    U = e.navigate,
+                    S = e.showViewButton,
+                    T = void 0 === S ? !n : S,
                     D = e.viewButtonTitle,
                     G = void 0 === D ? "View" : D,
                     A = e.showWearButton,
@@ -44,9 +44,9 @@
                     O = e.showSelectButton,
                     P = void 0 === O ? !n : O,
                     W = e.selectButtonTitle,
-                    q = void 0 === W ? "Select" : W,
-                    V = e.showEditButton,
-                    _ = void 0 === V ? !n : V,
+                    _ = void 0 === W ? "Select" : W,
+                    q = e.showEditButton,
+                    V = void 0 === q ? !n : q,
                     J = e.editButtonTitle,
                     X = void 0 === J ? "Edit" : J,
                     Y = e.showDeleteButton,
@@ -106,9 +106,9 @@
                     isIcon: n,
                     isEmoji: i,
                     isSticker: E
-                }, S ? p.createElement(h.rU, {
+                }, U ? p.createElement(h.rU, {
                     className: "w-100",
-                    to: S
+                    to: U
                 }, p.createElement(Z, {
                     src: z,
                     onLoad: function() {
@@ -146,10 +146,10 @@
                 }))), (Be || ke) && p.createElement(x, null)), !me && p.createElement(C, {
                     isIcon: n,
                     isSticker: E,
-                    hasButtons: j && P || L && T || ne && F || re && _ || te && $ || ce || ae || oe
+                    hasButtons: j && P || L && T || ne && F || re && V || te && $ || ce || ae || oe
                 }, j && P && p.createElement(B, {
                     positive: !0,
-                    title: q,
+                    title: _,
                     onClick: function() {
                         j(R, z)
                     }
@@ -168,7 +168,7 @@
                     }
                 }, p.createElement(v.Z, {
                     icon: s.vT
-                })), re && _ && p.createElement(B, {
+                })), re && V && p.createElement(B, {
                     title: X,
                     onClick: function() {
                         re(R, I)
@@ -274,8 +274,8 @@
         },
         60933: (e, t, n) => {
             n.d(t, {
-                DS: () => s,
                 Gr: () => a,
+                _0: () => s,
                 s3: () => d,
                 sY: () => l,
                 uG: () => u
@@ -403,4 +403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=edc8b42b457de7376af9b06f23b587c436e20c7d5acdb06e062d22ee63c7a9b3.js.map
+//# sourceMappingURL=efb2e9f03c1be1fe2603b5662ccf781339cdaa616d746cb666108968d1213bcb.js.map
