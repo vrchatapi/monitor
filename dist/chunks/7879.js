@@ -1693,7 +1693,7 @@
                     className: "tw-mb-0 tw-font-bold"
                 }, "Request to Join"), E.createElement("small", {
                     className: "tw-text-light-grey"
-                }, "New members must reuqest to join")), E.createElement(m.JX, {
+                }, "New members must request to join")), E.createElement(m.JX, {
                     onClick: function() {
                         return c(d.wN.INVITE)
                     },
@@ -4662,4 +4662,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bcb7b422e1e2f8b4bb7cebb49a46d4f840464a793790f2a7f326ee890d4965a6.js.map
+//# sourceMappingURL=6cb2934ceef30a36f47a3c97781420bdd02e64664db02b805c6f20556b7bbe60.js.map

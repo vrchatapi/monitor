@@ -7886,6 +7886,7 @@
   "onInteractionEnd",
   "onInteractionStart",
   "onInvalid",
+  "onJoinButtonClick",
   "onKeyDown",
   "onKeyPress",
   "onKeyUp",
