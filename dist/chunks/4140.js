@@ -558,7 +558,6 @@
                 })), s.createElement(m.JX, {
                     className: "p-1 pb-0"
                 }, s.createElement(ze, {
-                    disabled: 0 === (null == b ? void 0 : b.length),
                     onClick: function() {
                         k(b)
                     },
@@ -3457,4 +3456,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5d0692ccec893f8625c1614dd394d8265eaf8a5dba24c83215e6f2b17dd9d1e1.js.map
+//# sourceMappingURL=9675a3c56bae652c2553bb1de3e60582ea41e7073d511c5351a7920fb08bd808.js.map
