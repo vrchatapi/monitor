@@ -6565,9 +6565,6 @@
                                 disabled: !0
                             }, "Closed to New Members")
                     }
-                    Re.joinState !== ht.wN.INVITE || Re.myMember || (Jt = O.createElement(re.zx, {
-                        disabled: !0
-                    }, "Closed to New Members"))
                 } else Fe.length >= je && !Me.tagsSet.has("admin_uncap_owned_groups") ? Jt = O.createElement(re.zx, {
                     disabled: !0
                 }, "You can't join more than ", je, " groups!") : Re.myMember || (Jt = O.createElement(re.zx, {
@@ -7093,4 +7090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6d03e1100e31195f265f5f6a6bd1fe7eb0149a26b213e0b7c1d90f5a6ee6d953.js.map
+//# sourceMappingURL=8db9c387b4c838ccd28da9f971b6c6b4c056d611ecb6ab3fd84d9acb4694e88f.js.map
