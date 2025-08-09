@@ -345,9 +345,9 @@
                             }
                         },
                         O = function() {
-                            y(), null === g.current && b.current && (g.current = b.current.getContext("2d")), g.current && g.current.clearRect(0, 0, a, a), A && C && k > 0 && (h.current = setInterval(j, 1e3 / k))
+                            y(), null === g.current && b.current && (g.current = b.current.getContext("2d")), g.current && g.current.clearRect(0, 0, a, a), A && C && k > 0 && (h.current = setInterval(Z, 1e3 / k))
                         },
-                        j = function() {
+                        Z = function() {
                             if (A) {
                                 if (null !== g.current && null !== f.current) {
                                     var e = g.current;
@@ -358,7 +358,7 @@
                                 }
                             } else y()
                         },
-                        Z = function() {
+                        j = function() {
                             if (null !== b.current && null !== f.current) {
                                 var e = b.current.getContext("2d");
                                 if (e.clearRect(0, 0, a, a), e.imageSmoothingEnabled = !1, e.save(), null !== E && p.current && (e.drawImage(p.current, 0, 0, a, a), e.globalCompositeOperation = "source-in"), s) return w(e), e.drawImage(f.current, 0, 0, a, a), void e.restore();
@@ -378,13 +378,13 @@
                             f.current = null;
                             var e = new Image;
                             if (e.onload = function() {
-                                    f.current = e, A && C && k ? O() : Z(), void 0 !== i && i()
+                                    f.current = e, A && C && k ? O() : j(), void 0 !== i && i()
                                 }, e.onerror = function(e) {
                                     console.error("Error loading image:", e), void 0 !== l && l(e)
                                 }, E) {
                                 var t = new Image;
                                 t.onload = function() {
-                                    p.current = t, f.current && (A && C && k || Z())
+                                    p.current = t, f.current && (A && C && k || j())
                                 }, t.src = E
                             } else p.current = null;
                             e.src = n
@@ -399,7 +399,7 @@
                                 y()
                             }
                     }), [t, n, a]), (0, o.useEffect)((function() {
-                        if (f.current) return y(), A && C && k ? O() : Z(),
+                        if (f.current) return y(), A && C && k ? O() : j(),
                             function() {
                                 y()
                             }
@@ -860,13 +860,13 @@
                     $ = t.memberCount,
                     V = t.iconId,
                     F = t.bannerId,
-                    _ = a ? B : T,
-                    X = a ? z : D,
-                    K = a ? S : P;
+                    _ = a ? B : S,
+                    X = a ? D : z,
+                    K = a ? T : P;
                 return f.createElement(_, {
                     to: "/home/group/".concat(null != M ? M : R),
                     "aria-label": "Group Card"
-                }, f.createElement(C, null, f.createElement(I, null, f.createElement(j, {
+                }, f.createElement(C, null, f.createElement(I, null, f.createElement(Z, {
                     src: F ? (0, m.S6)({
                         fileId: F,
                         width: "256"
@@ -876,7 +876,7 @@
                         var t = e.currentTarget;
                         t.onerror = null, t.src = h
                     }
-                }), f.createElement(O, null, f.createElement(Z, {
+                }), f.createElement(O, null, f.createElement(j, {
                     src: V ? (0, m.S6)({
                         fileId: V,
                         width: "256"
@@ -953,13 +953,13 @@
                     name: "1tujnes",
                     styles: "position:absolute;bottom:-32px;margin-left:13px"
                 }),
-                j = (0, i.Z)("img", {
+                Z = (0, i.Z)("img", {
                     target: "e1nq4ok47"
                 })({
                     name: "5usyjw",
                     styles: "width:100%;top:0;left:0;position:absolute;z-index:0;border-radius:8px;aspect-ratio:3/1;object-fit:cover"
                 }),
-                Z = (0, i.Z)("img", {
+                j = (0, i.Z)("img", {
                     target: "e1nq4ok46"
                 })({
                     name: "k2qbwb",
@@ -968,28 +968,28 @@
                 B = (0, i.Z)("div", {
                     target: "e1nq4ok45"
                 })("display:flex;margin-bottom:0.8rem;text-decoration:none!important;flex-direction:column;border-radius:8px;overflow:hidden;min-width:0;&.pulse{", C, "{", N, ";}", k, "{", N, ";}}"),
-                T = (0, i.Z)(g.rU, {
+                S = (0, i.Z)(g.rU, {
                     target: "e1nq4ok44"
                 })("display:flex;margin-bottom:0.8rem;text-decoration:none!important;flex-direction:column;border-radius:8px;overflow:hidden;min-width:0;&.pulse{", C, "{", N, ";}", k, "{", N, ";}}"),
-                S = (0, i.Z)("h4", {
+                T = (0, i.Z)("h4", {
                     target: "e1nq4ok43"
                 })({
                     name: "15baaq2",
                     styles: "font-size:1.2em;margin-top:0.25rem;margin-bottom:0;padding-bottom:2px;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"
                 }),
-                P = (0, i.Z)(S, {
+                P = (0, i.Z)(T, {
                     target: "e1nq4ok42"
                 })({
                     name: "l8p4qc",
                     styles: "&:hover{color:var(--primary);}"
                 }),
-                z = (0, i.Z)("div", {
+                D = (0, i.Z)("div", {
                     target: "e1nq4ok41"
                 })({
                     name: "11z3e6t",
                     styles: "background:none;border:none;padding:0;margin:0 0 10px 100px;color:#0e9bb1;outline:none!important;min-width:0"
                 }),
-                D = (0, i.Z)("button", {
+                z = (0, i.Z)("button", {
                     target: "e1nq4ok40"
                 })({
                     name: "c694od",
@@ -1027,10 +1027,10 @@
                 N = n(3447),
                 I = n(45697),
                 O = n.n(I),
-                j = n(55206),
-                Z = n(19531),
+                Z = n(55206),
+                j = n(19531),
                 B = n(78542),
-                T = function(e) {
+                S = function(e) {
                     var t, n = e.gallery,
                         o = void 0 === n ? [] : n,
                         i = e.isOpen,
@@ -1041,12 +1041,12 @@
                         m = void 0 === u ? null : u,
                         I = e.onArchiveCallback,
                         O = void 0 === I ? null : I,
-                        T = e.type,
-                        S = (0, a.useRef)(null),
+                        S = e.type,
+                        T = (0, a.useRef)(null),
                         P = (0, a.useState)(s),
-                        z = (0, r.Z)(P, 2),
-                        D = z[0],
-                        q = z[1],
+                        D = (0, r.Z)(P, 2),
+                        z = D[0],
+                        q = D[1],
                         M = (0, a.useState)({
                             x: 0,
                             y: 0
@@ -1078,22 +1078,22 @@
                         ie = oe[0],
                         le = oe[1],
                         ce = (0, a.useMemo)((function() {
-                            return D === o.length - 1
-                        }), [D, o]),
+                            return z === o.length - 1
+                        }), [z, o]),
                         se = (0, a.useMemo)((function() {
-                            return 0 === D
-                        }), [D]),
+                            return 0 === z
+                        }), [z]),
                         ue = (0, a.useMemo)((function() {
                             var e;
-                            return null === (e = j._[T]) || void 0 === e ? void 0 : e.label
-                        }), [T]),
+                            return null === (e = Z._[S]) || void 0 === e ? void 0 : e.label
+                        }), [S]),
                         de = (0, a.useMemo)((function() {
                             var e;
-                            return null === (e = j._[T]) || void 0 === e ? void 0 : e.icon
-                        }), [T]),
+                            return null === (e = Z._[S]) || void 0 === e ? void 0 : e.icon
+                        }), [S]),
                         me = (0, a.useMemo)((function() {
-                            return o[D]
-                        }), [o, D]);
+                            return o[z]
+                        }), [o, z]);
                     (0, a.useEffect)((function() {
                         0 !== o.length || c()
                     }), [o]), (0, a.useEffect)((function() {
@@ -1110,8 +1110,8 @@
                         }), [c]),
                         pe = (0, a.useMemo)((function() {
                             var e, t, n;
-                            return null !== (e = null === (t = o[D]) || void 0 === t || null === (t = t.metadata) || void 0 === t ? void 0 : t.imageUrl) && void 0 !== e ? e : null === (n = o[D]) || void 0 === n ? void 0 : n.imageUrl
-                        }), [o, D]),
+                            return null !== (e = null === (t = o[z]) || void 0 === t || null === (t = t.metadata) || void 0 === t ? void 0 : t.imageUrl) && void 0 !== e ? e : null === (n = o[z]) || void 0 === n ? void 0 : n.imageUrl
+                        }), [o, z]),
                         ge = (0, a.useCallback)((function(e) {
                             e.preventDefault();
                             var t = -.01 * e.deltaY;
@@ -1119,22 +1119,22 @@
                                 return Math.min(Math.max(e + t, .5), 3)
                             }))
                         }), []),
-                        be = j._[T],
+                        be = Z._[S],
                         he = (0, a.useMemo)((function() {
                             var e;
-                            return null === (e = o[D]) || void 0 === e || null === (e = e.flags) || void 0 === e ? void 0 : e.includes("archivable")
-                        }), [o, D]);
+                            return null === (e = o[z]) || void 0 === e || null === (e = e.flags) || void 0 === e ? void 0 : e.includes("archivable")
+                        }), [o, z]);
                     (0, a.useEffect)((function() {
                         q(s), le(!0)
                     }), [s, l]), (0, a.useEffect)((function() {
-                        var e = S.current;
+                        var e = T.current;
                         if (e) return e.addEventListener("wheel", ge, {
                                 passive: !1
                             }),
                             function() {
                                 e.removeEventListener("wheel", ge)
                             }
-                    }), [ge, l, S]), (0, a.useEffect)((function() {
+                    }), [ge, l, T]), (0, a.useEffect)((function() {
                         var e = function(e) {
                             "Escape" === e.key && fe()
                         };
@@ -1213,7 +1213,7 @@
                         icon: w.A3,
                         className: "tw-w-12 tw-h-[60px] tw-ml-4"
                     })), a.createElement("div", {
-                        ref: S,
+                        ref: T,
                         className: "tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full tw-overflow-hidden gallery-image-container",
                         onMouseDown: ve,
                         onMouseMove: we,
@@ -1275,7 +1275,7 @@
                         className: "tw-text-base tw-font-normal tw-hidden sm:tw-block"
                     }, "Manage"), a.createElement("div", {
                         className: "tw-flex tw-flex-row tw-w-full"
-                    }, Z.a && be.hasConvertToVrcEmojis && a.createElement(k.ZP, {
+                    }, j.a && be.hasConvertToVrcEmojis && a.createElement(k.ZP, {
                         containerClasses: "tw-w-full sm:tw-w-fit",
                         className: "tw-w-full  tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey tw-mr-2 "
                     }, a.createElement(C.$1, {
@@ -1325,8 +1325,8 @@
                         className: "tw-mr-2"
                     }), d()(null == me ? void 0 : me.created_at).format("ll, h:mm A"))))))) : null
                 };
-            const S = T;
-            T.propTypes = {
+            const T = S;
+            S.propTypes = {
                 gallery: O().array.isRequired,
                 isOpen: O().bool.isRequired,
                 onCloseCallback: O().func.isRequired,
@@ -1350,7 +1350,7 @@
                         }
                     }), [e]), null == r || !r.length) return null;
                 var u = Math.min(Math.max(0, i), r.length - 1);
-                return a.createElement(S, {
+                return a.createElement(T, {
                     gallery: r,
                     isOpen: n,
                     onCloseCallback: function() {
@@ -1362,8 +1362,8 @@
                     type: s
                 })
             };
-            var z = n(28964),
-                D = n.n(z),
+            var D = n(28964),
+                z = n.n(D),
                 q = n(15832),
                 M = n(22202),
                 R = n(34698);
@@ -1395,7 +1395,7 @@
                 }, "The gallery has now been relocated under the user profile and renamed as ", a.createElement("span", {
                     className: "tw-font-bold"
                 }, "Inventory"), "."), a.createElement("img", {
-                    src: D(),
+                    src: z(),
                     alt: "Gallery has now been relocated to Inventory"
                 }), a.createElement("div", {
                     className: "tw-flex tw-justify-end tw-mt-4"
@@ -1520,7 +1520,7 @@
                             backgroundImage: "url(".concat(e.thumbnail, ")")
                         }
                     }), a.createElement("span", {
-                        className: "tw-ml-2 tw-mr-2"
+                        className: "tw-ml-2 tw-mr-2 tw-max-w-[250px] tw-text-ellipsis tw-overflow-hidden tw-truncate"
                     }, e.label)), a.createElement("div", null, a.createElement("button", {
                         type: "button",
                         className: " tw-border-0 tw-rounded-sm tw-bg-transparent tw-text-white tw-leading-none ",
@@ -1557,7 +1557,7 @@
                 Ie = n(93261),
                 Oe = n(78666);
 
-            function je(e, t) {
+            function Ze(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1568,12 +1568,12 @@
                 return n
             }
 
-            function Ze(e) {
+            function je(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? je(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Ze(Object(n), !0).forEach((function(t) {
                         (0, W.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : je(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ze(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
@@ -1659,7 +1659,7 @@
                                 return ke().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, f(Ze({}, t));
+                                            return e.next = 2, f(je({}, t));
                                         case 2:
                                             r = e.sent, n(r.data);
                                         case 4:
@@ -1676,9 +1676,9 @@
                 }))))
             };
             Be.propTypes = {};
-            const Te = Be;
+            const Se = Be;
 
-            function Se(e, t) {
+            function Te(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1692,15 +1692,15 @@
             function Pe(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Se(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Te(Object(n), !0).forEach((function(t) {
                         (0, W.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Se(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Te(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var ze = {
+            var De = {
                     eventSources: [],
                     accessTypes: [],
                     categories: [],
@@ -1709,7 +1709,7 @@
                     languages: [],
                     groups: []
                 },
-                De = (0, a.forwardRef)((function(e, t) {
+                ze = (0, a.forwardRef)((function(e, t) {
                     var n = (0, o.I0)(),
                         i = (0, a.useState)(""),
                         l = (0, r.Z)(i, 2),
@@ -1730,29 +1730,33 @@
                         A = (0, r.Z)(x, 2),
                         k = A[0],
                         N = A[1],
-                        I = (0, a.useState)(d()()),
+                        I = (0, a.useState)(!1),
                         O = (0, r.Z)(I, 2),
-                        j = O[0],
-                        Z = O[1],
-                        B = (0, a.useState)(!1),
-                        T = (0, r.Z)(B, 2),
-                        S = T[0],
-                        P = T[1],
-                        z = (0, a.useState)(null),
-                        D = (0, r.Z)(z, 2),
-                        q = D[0],
-                        M = D[1],
-                        R = (0, a.useState)(ze),
+                        Z = O[0],
+                        j = O[1],
+                        B = (0, a.useState)(d()()),
+                        S = (0, r.Z)(B, 2),
+                        T = S[0],
+                        P = S[1],
+                        D = (0, a.useState)(!1),
+                        z = (0, r.Z)(D, 2),
+                        q = z[0],
+                        M = z[1],
+                        R = (0, a.useState)(null),
                         U = (0, r.Z)(R, 2),
                         F = U[0],
                         _ = U[1],
-                        X = (0, de.Tu)().user,
-                        K = void 0 === X ? null : X,
-                        J = !(null == K || !K.id),
-                        Y = (0, de.pc)() && !1;
+                        X = (0, a.useState)(De),
+                        K = (0, r.Z)(X, 2),
+                        J = K[0],
+                        Y = K[1],
+                        H = (0, de.Tu)().user,
+                        Q = void 0 === H ? null : H,
+                        ee = !(null == Q || !Q.id),
+                        te = (0, de.pc)() && !1;
                     (0, a.useEffect)((function() {
                         (0, fe.Kz)("Calendar_Open", {
-                            userId: null == K ? void 0 : K.id
+                            userId: null == Q ? void 0 : Q.id
                         });
                         var e = function() {
                                 return N(!0)
@@ -1778,33 +1782,51 @@
                                     t - b.clientY < 350 ? f.current.style.top = "".concat(t - 400, "px") : e.style.top = "".concat((null == b ? void 0 : b.clientY) - 100, "px")
                                 }(o)) : void 0
                         }
-                    }), [b]), (0, a.useEffect)((function() {}), [F]);
-                    var H = (0, me.bT)({
-                            date: j,
-                            userId: null == K ? void 0 : K.id,
-                            eventSources: F.eventSources
+                    }), [b]), (0, a.useEffect)((function() {}), [J]);
+                    var ne = (0, me.bT)({
+                            date: T,
+                            userId: null == Q ? void 0 : Q.id,
+                            eventSources: J.eventSources
                         }, {
-                            skip: null === K
+                            skip: null === Q
                         }),
-                        Q = H.data,
-                        ee = void 0 === Q ? {
+                        re = ne.data,
+                        ae = void 0 === re ? {
                             events: [],
                             groups: []
-                        } : Q,
-                        te = H.isFetching,
-                        ne = H.isSuccess,
-                        re = H.isError,
-                        ae = H.error;
+                        } : re,
+                        oe = ne.isFetching,
+                        pe = ne.isSuccess,
+                        ge = ne.isError,
+                        be = ne.error,
+                        he = (0, me.bT)({
+                            date: T.add(1, "month"),
+                            userId: null == Q ? void 0 : Q.id,
+                            eventSources: J.eventSources
+                        }, {
+                            skip: null === Q || !Z
+                        }),
+                        ve = he.data,
+                        Ae = void 0 === ve ? {
+                            events: [],
+                            groups: []
+                        } : ve,
+                        Ce = he.isFetching,
+                        ke = he.isSuccess,
+                        Ne = he.isError,
+                        Ie = he.error;
                     (0, a.useEffect)((function() {
-                        var e, t;
-                        re && n((0, V.d)({
-                            title: "Failed to get calendar events",
-                            message: null !== (e = null == ae || null === (t = ae.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown Error",
-                            color: "danger",
-                            timeout: 5e3
-                        }))
-                    }), [re]);
-                    var oe = function(e) {
+                        if (ge || Ne) {
+                            var e, t, r = be || Ie;
+                            n((0, V.d)({
+                                title: "Failed to get calendar events",
+                                message: null !== (e = null == r || null === (t = r.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown Error",
+                                color: "danger",
+                                timeout: 5e3
+                            }))
+                        }
+                    }), [ge, Ne]);
+                    var Oe = function(e) {
                             var t = d()(e.endsAt).diff(d()(e.startsAt), "day") > 0;
                             return Pe(Pe({}, e), {}, {
                                 id: e.id,
@@ -1813,24 +1835,26 @@
                                 allDay: t
                             })
                         },
-                        pe = function() {
+                        Ze = function() {
                             return Pe({
                                 searchTerm: u
-                            }, F)
+                            }, J)
                         },
-                        ge = (0, a.useMemo)((function() {
-                            var e = ee.events;
-                            return e && 0 !== e.length ? {
+                        je = (0, a.useMemo)((function() {
+                            var e = ae.events,
+                                t = Ae.events,
+                                n = Z ? [].concat((0, G.Z)(e), (0, G.Z)(t)) : e;
+                            return n && 0 !== n.length ? {
                                 eventSources: xe.o9.map((function(e) {
                                     return e.value
                                 })),
-                                accessTypes: e.reduce((function(e, t) {
+                                accessTypes: n.reduce((function(e, t) {
                                     return e.includes(t.accessType) || e.push(t.accessType), e
                                 }), []),
-                                categories: e.reduce((function(e, t) {
+                                categories: n.reduce((function(e, t) {
                                     return e.includes(t.category) || e.push(t.category), e
                                 }), []),
-                                days: e.reduce((function(e, t) {
+                                days: n.reduce((function(e, t) {
                                     var n = d()(t.startsAt),
                                         r = d()(t.endsAt).diff(n, "day"),
                                         a = Array.from({
@@ -1840,13 +1864,13 @@
                                         }));
                                     return Array.from(new Set([].concat((0, G.Z)(e), a)))
                                 }), []),
-                                platforms: (0, G.Z)(new Set(e.flatMap((function(e) {
+                                platforms: (0, G.Z)(new Set(n.flatMap((function(e) {
                                     return e.platforms
                                 })))),
-                                languages: (0, G.Z)(new Set(e.flatMap((function(e) {
+                                languages: (0, G.Z)(new Set(n.flatMap((function(e) {
                                     return e.languages
                                 })))),
-                                groups: e.reduce((function(e, t) {
+                                groups: n.reduce((function(e, t) {
                                     return e.includes(t.ownerId) ? e : [].concat((0, G.Z)(e), [t.ownerId])
                                 }), [])
                             } : {
@@ -1858,19 +1882,21 @@
                                 languages: [],
                                 groups: []
                             }
-                        }), [ee]),
-                        be = (0, a.useMemo)((function() {
-                            var e = ee.events;
-                            if (!e || 0 === e.length) return [];
-                            var t = pe();
-                            if (null === t) return e.map(oe);
-                            return e.filter((function(e) {
-                                return !(!e || !e.id) && (!(e.deletedAt && !Y) && (!("" !== t.searchTerm && !e.title.toLowerCase().includes(t.searchTerm.toLowerCase()) && !e.description.toLowerCase().includes(t.searchTerm.toLowerCase())) && (!(t.accessTypes.length > 0 && !t.accessTypes.includes(e.accessType)) && (!(t.categories.length > 0 && !t.categories.includes(e.category)) && (!(t.days.length > 0 && (n = {
+                        }), [ae, Ae, Z]),
+                        Be = (0, a.useMemo)((function() {
+                            var e = ae.events,
+                                t = Ae.events,
+                                n = Z ? [].concat((0, G.Z)(e), (0, G.Z)(t)) : e;
+                            if (!n || 0 === n.length) return [];
+                            var r = Ze();
+                            if (null === r) return n.map(Oe);
+                            return n.filter((function(e) {
+                                return !(!e || !e.id) && (!(e.deletedAt && !te) && (!("" !== r.searchTerm && !e.title.toLowerCase().includes(r.searchTerm.toLowerCase()) && !e.description.toLowerCase().includes(r.searchTerm.toLowerCase())) && (!(r.accessTypes.length > 0 && !r.accessTypes.includes(e.accessType)) && (!(r.categories.length > 0 && !r.categories.includes(e.category)) && (!(r.days.length > 0 && (t = {
                                     title: e.title,
-                                    daysOfWeek: t.days,
+                                    daysOfWeek: r.days,
                                     start: e.startsAt,
                                     end: e.endsAt
-                                }, r = n.daysOfWeek, a = n.start, o = n.end, n.title, i = d()(a), l = d()(o), !r.some((function(e) {
+                                }, n = t.daysOfWeek, a = t.start, o = t.end, t.title, i = d()(a), l = d()(o), !n.some((function(e) {
                                     if (i.day() === e) return !0;
                                     if (l.day() === e) return !0;
                                     var t = l.diff(i, "day") + 1;
@@ -1881,14 +1907,14 @@
                                     })).some((function(t) {
                                         return t.day() === e
                                     }))
-                                })))) && (!(t.platforms.length > 0 && !t.platforms.some((function(t) {
+                                })))) && (!(r.platforms.length > 0 && !r.platforms.some((function(t) {
                                     return e.platforms.includes(t)
-                                }))) && (!(t.languages.length > 0 && !t.languages.some((function(t) {
+                                }))) && (!(r.languages.length > 0 && !r.languages.some((function(t) {
                                     return e.languages.includes(t)
-                                }))) && !(t.groups.length > 0 && !t.groups.includes(e.ownerId)))))))));
-                                var n, r, a, o, i, l
-                            })).map(oe)
-                        }), [u, ee, F]);
+                                }))) && !(r.groups.length > 0 && !r.groups.includes(e.ownerId)))))))));
+                                var t, n, a, o, i, l
+                            })).map(Oe)
+                        }), [u, ae, Ae, Z, J]);
                     (0, a.useImperativeHandle)(t, (function() {
                         return {
                             updateCalendarSize: function() {
@@ -1899,20 +1925,20 @@
                             }
                         }
                     }), []);
-                    var he = function(e) {
+                    var Te = function(e) {
                             var t;
                             N(!0);
                             var n = m.current.getApi(),
                                 r = null !== (t = e.date) && void 0 !== t ? t : e;
                             e.date && r.setMinutes(r.getMinutes() + r.getTimezoneOffset()), n.changeView("timeGridDay", r)
                         },
-                        ve = te,
-                        Ae = function(e) {
+                        ze = oe || Z && Ce,
+                        qe = function(e) {
                             return {
                                 eventId: e.id,
                                 ownerId: e.ownerId,
-                                userId: null == K ? void 0 : K.id,
-                                isUserLoggedIn: J,
+                                userId: null == Q ? void 0 : Q.id,
+                                isUserLoggedIn: ee,
                                 eventName: e.title,
                                 eventLink: window.apiUrl("/home/group/event/".concat(e.ownerId, "/").concat(e.id)),
                                 eventStartTime: e.startsAt,
@@ -1925,7 +1951,10 @@
                                 eventLanguages: e.languages,
                                 eventTags: e.tags
                             }
-                        };
+                        },
+                        Me = (0, a.useMemo)((function() {
+                            return Z ? [].concat((0, G.Z)(ae.groups), (0, G.Z)(Ae.groups)) : ae.groups
+                        }), [ae, Ae, Z]);
                     return a.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, a.createElement("div", {
@@ -1934,37 +1963,37 @@
                         className: "tw-w-52 tw-h-9",
                         type: "button",
                         onClick: function() {
-                            M(null), P(!0)
+                            _(null), M(!0)
                         }
                     }, a.createElement(C.$1, {
                         icon: $.r8,
                         className: "tw-mr-1"
-                    }), " Create Event")), ve && a.createElement("div", {
+                    }), " Create Event")), ze && a.createElement("div", {
                         className: " tw-w-full tw-h-full  tw-left-0 tw-top-0 tw-absolute  tw-flex tw-justify-center tw-items-center tw-bg-dark-grey-transparent tw-z-10 "
                     }, a.createElement(ie.Z, {
                         loading: !0
                     })), a.createElement("div", {
                         className: "tw-mb-10 tw-bg-[#181b1f] tw-rounded tw-p-5 fc tw-relative"
-                    }, ne && a.createElement(a.Fragment, null, a.createElement("div", {
+                    }, pe && (!Z || ke) && a.createElement(a.Fragment, null, a.createElement("div", {
                         className: "tw-flex tw-justify-between tw-flex-row"
                     }, a.createElement(ye.Z, {
-                        possibleFilters: ge,
+                        possibleFilters: je,
                         onFilterChangeCallBack: function(e) {
                             return function(e) {
                                 if (e.isChecked) {
-                                    var t = (0, G.Z)(new Set([].concat((0, G.Z)(F[e.type]), [e.value])));
-                                    return _(Pe(Pe({}, F), {}, (0, W.Z)({}, e.type, t)))
+                                    var t = (0, G.Z)(new Set([].concat((0, G.Z)(J[e.type]), [e.value])));
+                                    return Y(Pe(Pe({}, J), {}, (0, W.Z)({}, e.type, t)))
                                 }
                                 if (!e.isChecked) {
-                                    var n = F[e.type].filter((function(t) {
+                                    var n = J[e.type].filter((function(t) {
                                         return t !== e.value
                                     }));
-                                    return _(Pe(Pe({}, F), {}, (0, W.Z)({}, e.type, n)))
+                                    return Y(Pe(Pe({}, J), {}, (0, W.Z)({}, e.type, n)))
                                 }
                             }(e)
                         },
-                        userGroups: ee.groups,
-                        dropdownFilterValues: F
+                        userGroups: Me,
+                        dropdownFilterValues: J
                     }), a.createElement(C.II, {
                         "aria-label": "Search by event name or url",
                         type: "text",
@@ -1981,27 +2010,28 @@
                     })), a.createElement("div", {
                         className: "tw-min-h-[70px] tw-transition-all"
                     }, a.createElement(we, {
-                        userGroups: ee.groups,
-                        filters: pe(),
+                        userGroups: Me,
+                        filters: Ze(),
                         filterRemoveCallback: function(e) {
-                            if (null === e) return _(ze);
-                            var t = F[e.dataKey].filter((function(t) {
+                            if (null === e) return Y(De);
+                            var t = J[e.dataKey].filter((function(t) {
                                 return t !== e.value
                             }));
-                            _(Pe(Pe({}, F), {}, (0, W.Z)({}, e.dataKey, t)))
+                            Y(Pe(Pe({}, J), {}, (0, W.Z)({}, e.dataKey, t)))
                         }
                     }))), a.createElement(se.Z, {
                         ref: m,
                         plugins: [ce.Z, ue.Z],
                         initialView: "dayGridMonth",
-                        events: be,
-                        dayMaxEvents: 3,
+                        showNonCurrentDates: !1,
+                        events: Be,
+                        dayMaxEventRows: !0,
                         displayEventTime: !1,
                         nowIndicator: !0,
                         dayHeaderDidMount: function(e) {
                             e.el.style.border = "none"
                         },
-                        contentHeight: 800,
+                        contentHeight: 900,
                         viewDidMount: function(e) {
                             var t, n = e.el;
                             (t = n).querySelector(".fc-scrollgrid").style.border = "none", t.querySelector(".fc-theme-standard th").style.border = "none", t.querySelector(".fc-scrollgrid-section-liquid > td").style.border = "1px solid var(--fc-border-color)", t.querySelector(".fc-scrollgrid-section-liquid > td").style.borderRadius = "8px"
@@ -2016,19 +2046,21 @@
                             right: "dayGridMonth,timeGridWeek,timeGridDay"
                         },
                         navLinks: !0,
-                        navLinkDayClick: he,
+                        navLinkDayClick: Te,
                         eventClick: function(e) {
                             var t = e.event,
                                 n = (e.el, e.jsEvent),
                                 r = (e.view, t.toPlainObject()),
                                 a = Pe(Pe({}, r), r.extendedProps);
-                            N(!1), h(n), E(a), (0, fe.Kz)("Event_Previewed", Ae(a))
+                            N(!1), h(n), E(a), (0, fe.Kz)("Event_Previewed", qe(a))
                         },
-                        moreLinkClick: he,
+                        moreLinkClick: Te,
                         datesSet: function(e) {
                             var t = e.view,
-                                n = d()(t.currentStart).startOf("month").add(1, "day");
-                            Z(n), N(!0)
+                                n = d()(t.currentStart).startOf("month").add(1, "day"),
+                                r = d()(t.currentEnd).add(-1, "minute"),
+                                a = n.month() !== r.month();
+                            j(a), P(n), N(!0)
                         },
                         views: {
                             timeGrid: {
@@ -2048,26 +2080,26 @@
                             return N(!0)
                         }
                     }))), a.createElement(C.u_, {
-                        title: "Create Event (".concat(null === q ? "1" : "2", "/2)"),
-                        isVisible: S,
+                        title: "Create Event (".concat(null === F ? "1" : "2", "/2)"),
+                        isVisible: q,
                         onClose: function() {
-                            return P(!1)
+                            return M(!1)
                         },
                         className: "tw-w-full",
                         slim: !0,
                         width: "100%"
                     }, a.createElement("div", {
                         className: "tw-block tw-w-full"
-                    }, null === q ? a.createElement(Te, {
-                        groupSelectCallback: M
+                    }, null === F ? a.createElement(Se, {
+                        groupSelectCallback: _
                     }) : a.createElement(Ee.default, {
-                        group: q,
+                        group: F,
                         closeModalCallback: function() {
-                            return P(!1)
+                            return M(!1)
                         }
                     }))))
                 }));
-            const qe = De;
+            const qe = ze;
             var Me = n(4965),
                 Re = n(47810),
                 Ue = n(34233),
@@ -2338,14 +2370,14 @@
                 Nt = n(16688),
                 It = n(46450),
                 Ot = n(774),
-                jt = n(12529),
-                Zt = n(64240),
+                Zt = n(12529),
+                jt = n(64240),
                 Bt = n(43701),
-                Tt = n(70396),
-                St = n(7975),
+                St = n(70396),
+                Tt = n(7975),
                 Pt = n(70440),
-                zt = n(96165),
-                Dt = n(54492),
+                Dt = n(96165),
+                zt = n(54492),
                 qt = n(91435),
                 Mt = n(49866),
                 Rt = n(57245),
@@ -2767,46 +2799,46 @@
             };
             var In = n(63221),
                 On = n(72065),
-                jn = n(22082),
-                Zn = n(56395);
+                Zn = n(22082),
+                jn = n(56395);
             const Bn = function(e) {
                 var t = e.to,
                     n = e.title,
                     r = e.onClick,
-                    o = (0, jn.oE)({
-                        states: [Zn.g1.ANNOUNCED, Zn.g1.SUBMISSIONS_OPEN, Zn.g1.SUBMISSIONS_CLOSED, Zn.g1.WINNERS_SELECTED]
+                    o = (0, Zn.oE)({
+                        states: [jn.g1.ANNOUNCED, jn.g1.SUBMISSIONS_OPEN, jn.g1.SUBMISSIONS_CLOSED, jn.g1.WINNERS_SELECTED]
                     }).data,
                     i = null == o ? void 0 : o.every((function(e) {
                         return !Object.keys(e).includes("state")
                     }));
                 if (!o || 0 === (null == o ? void 0 : o.length) || i) return null;
                 var l = o[0];
-                return a.createElement(Tn, {
+                return a.createElement(Sn, {
                     to: t,
                     title: n,
                     className: "btn text-left",
                     onClick: r
-                }, a.createElement(Sn, {
+                }, a.createElement(Tn, {
                     icon: On.Ww
-                }), a.createElement("div", null, Zn.p6[l.state]), a.createElement(C.$1, {
+                }), a.createElement("div", null, jn.p6[l.state]), a.createElement(C.$1, {
                     icon: ht.yO
                 }))
             };
-            var Tn = (0, Me.Z)(Ge.rU, {
+            var Sn = (0, Me.Z)(Ge.rU, {
                     target: "eq9q68u1"
                 })({
                     name: "wjiy21",
                     styles: "border:#7e24ab solid 2px;color:#f7c94b;background:#5a1995;text-shadow:0 0 5px #7e24ab;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{align-self:center;font-weight:bold;}&:hover{background:#5a1995;color:#f7c94b;border-color:#ca34de;transform:scale(1.1);}"
                 }),
-                Sn = (0, Me.Z)(C.$1, {
+                Tn = (0, Me.Z)(C.$1, {
                     target: "eq9q68u0"
                 })({
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var Pn = [_t.R7, Ft.od, Vt.tM, $t.RK, Lt.I3, Wt.nG, Gt.jO, Ut.uS, Rt.dy, Mt.XG, qt.BD, Dt.ok, zt.Sv, Pt.qA, St.I1, Tt.Nk, Bt.uj, Zt.io, jt.l9],
-                zn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
-                Dn = a.memo((function(e) {
+            var Pn = [_t.R7, Ft.od, Vt.tM, $t.RK, Lt.I3, Wt.nG, Gt.jO, Ut.uS, Rt.dy, Mt.XG, qt.BD, zt.ok, Dt.Sv, Pt.qA, Tt.I1, St.Nk, Bt.uj, jt.io, Zt.l9],
+                Dn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
+                zn = a.memo((function(e) {
                     var t, n, l = e.horizontal,
                         s = e.navToggleCallback,
                         u = e.friendsToggleCallback,
@@ -2822,19 +2854,19 @@
                         w = (0, r.Z)(v, 2),
                         y = w[0],
                         E = w[1],
-                        x = a.useState(zn[d(zn.length)]),
+                        x = a.useState(Dn[d(Dn.length)]),
                         A = (0, r.Z)(x, 2),
                         k = A[0],
                         N = A[1],
                         I = (0, on.y)().data,
                         O = ((0, de.pc)(), (0, M.XC)().data),
-                        j = (0, o.v9)((function(e) {
+                        Z = (0, o.v9)((function(e) {
                             return e.notifications.notifications
                         })) || [],
-                        Z = (0, M.q7)().data,
-                        B = void 0 === Z ? [] : Z,
-                        T = (0, de.CZ)().sortedLocations.length,
-                        S = (0, o.v9)((function(e) {
+                        j = (0, M.q7)().data,
+                        B = void 0 === j ? [] : j,
+                        S = (0, de.CZ)().sortedLocations.length,
+                        T = (0, o.v9)((function(e) {
                             return e.notifications.groupNotifications
                         })) || [],
                         P = (0, ln.dq)({
@@ -2842,10 +2874,10 @@
                             pageValue: 1,
                             isNavBar: !0
                         }),
-                        z = P.data,
-                        D = P.isSuccess;
+                        D = P.data,
+                        z = P.isSuccess;
                     (0, a.useEffect)((function() {
-                        b && (E(Pn[d(Pn.length)]), N(zn[d(zn.length)]))
+                        b && (E(Pn[d(Pn.length)]), N(Dn[d(Dn.length)]))
                     }), [b]);
                     var q = function(e) {
                             m("/home/login", {
@@ -2861,8 +2893,8 @@
                             s && s(!1)
                         },
                         W = B || [],
-                        L = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = j.length) && void 0 !== t ? t : 0);
-                    n = S.filter((function(e) {
+                        L = (W.includes("permission-user-icons"), W.includes("permission-user-gallery"), W.includes("permission-groups-beta"), null !== (t = Z.length) && void 0 !== t ? t : 0);
+                    n = T.filter((function(e) {
                         return e.state === In.oq.INVITED
                     })).length;
                     if (null == l || !1 === l) {
@@ -3042,7 +3074,7 @@
                             name: "1bfow8s",
                             styles: "padding:0 10px;&>a{margin-bottom:10px;}"
                         }))
-                    }, 0 !== T ? a.createElement(Mn, {
+                    }, 0 !== S ? a.createElement(Mn, {
                         to: "/home/locations",
                         title: "locations",
                         className: "btn text-left",
@@ -3054,7 +3086,7 @@
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
-                    }, T)), a.createElement(C.$1, {
+                    }, S)), a.createElement(C.$1, {
                         icon: ht.yO
                     })) : a.createElement(Mn, {
                         to: "/home",
@@ -3173,11 +3205,11 @@
                         icon: Jt.default
                     }), a.createElement("div", {
                         className: "tw-flex"
-                    }, "Inventory", D && (null == z ? void 0 : z.totalCount) > 0 && a.createElement("div", {
+                    }, "Inventory", z && (null == D ? void 0 : D.totalCount) > 0 && a.createElement("div", {
                         className: "tw-rounded-full tw-bg-red tw-ml-2 tw-w-[22px] tw-h-[22px] tw-text-white tw-flex tw-items-center tw-justify-center "
                     }, a.createElement("p", {
                         className: "tw-text-sm tw-text-center tw-w-full tw-mb-0 tw-font-bold"
-                    }, null == z ? void 0 : z.totalCount))), a.createElement(C.$1, {
+                    }, null == D ? void 0 : D.totalCount))), a.createElement(C.$1, {
                         icon: ht.yO
                     })), a.createElement(Mn, {
                         to: "/home/marketplace",
@@ -3238,8 +3270,8 @@
                         icon: bt.TE
                     }), a.createElement("div", null, "Logout"), a.createElement("div", null))))
                 }));
-            Dn.displayName = "Navbar";
-            const qn = Dn;
+            zn.displayName = "Navbar";
+            const qn = zn;
             var Mn = (0, Me.Z)(Ge.rU, {
                     target: "e18dqzxk1"
                 })({
@@ -3794,7 +3826,7 @@
         31358: (e, t, n) => {
             "use strict";
             n.d(t, {
-                Z: () => De
+                Z: () => ze
             });
             var r = n(87462),
                 a = n(45987),
@@ -3822,14 +3854,14 @@
                 N = n(22601),
                 I = n(87695),
                 O = n(16686),
-                j = n(47947),
-                Z = n(53359),
+                Z = n(47947),
+                j = n(53359),
                 B = n(20495),
-                T = n(85322),
-                S = n(67992),
+                S = n(85322),
+                T = n(67992),
                 P = n(95896),
-                z = n(27484),
-                D = n.n(z),
+                D = n(27484),
+                z = n.n(D),
                 q = n(56176),
                 M = n.n(q),
                 R = n(84110),
@@ -3888,7 +3920,7 @@
                     eye: se.Md,
                     circle: ce.di,
                     star: le.T,
-                    bell: S.qm,
+                    bell: T.qm,
                     "bell-slash": ie.n8,
                     bookmark: oe.xV,
                     reply: ae.Lh,
@@ -3908,12 +3940,12 @@
                     "folder-open": V.cC,
                     gauge: $.Iz,
                     dice: L.RJ,
-                    "triangle-exclamation": Z.faTriangleExclamation
+                    "triangle-exclamation": j.faTriangleExclamation
                 },
                 Ae = n(46382),
                 Ce = n(88233),
                 ke = n(2566);
-            D().extend(U()), D().extend(M());
+            z().extend(U()), z().extend(M());
             var Ne = {
                     "economy.alert": {
                         caption: "Economy",
@@ -3921,11 +3953,11 @@
                     },
                     "group.announcement": {
                         caption: "Group Announcement",
-                        icon: S.qm
+                        icon: T.qm
                     },
                     "group.informative": {
                         caption: "Group",
-                        icon: S.qm
+                        icon: T.qm
                     },
                     "group.invite": {
                         caption: "Group Invite",
@@ -3937,11 +3969,11 @@
                     },
                     "group.post": {
                         caption: "Group Post",
-                        icon: S.qm
+                        icon: T.qm
                     },
                     "event.announcement": {
                         caption: "Event Announcement",
-                        icon: T.fT
+                        icon: S.fT
                     },
                     "invite.instance.contentGated": {
                         caption: "Content Gated",
@@ -3949,19 +3981,19 @@
                     },
                     "moderation.contentrestriction": {
                         caption: "Content Moderation",
-                        icon: Z.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.notice": {
                         caption: "Moderation Notice",
-                        icon: Z.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.warning.group": {
                         caption: "Group Moderation Warning",
-                        icon: Z.faTriangleExclamation
+                        icon: j.faTriangleExclamation
                     },
                     "moderation.report.closed": {
                         caption: "Moderation",
-                        icon: j.JH
+                        icon: Z.JH
                     },
                     "avatarreview.success": {
                         caption: "Avatar Approved",
@@ -4015,7 +4047,7 @@
                         n = e.linkId;
                     return "/home/".concat(t, "/").concat(n)
                 },
-                je = function(e) {
+                Ze = function(e) {
                     var t, n = e.notificationId,
                         r = e.respondToNotification,
                         a = e.type,
@@ -4036,7 +4068,7 @@
                         icon: (t = i, xe[t] || t)
                     }), " ", l || a)
                 };
-            const Ze = function(e) {
+            const je = function(e) {
                 var t = e.notification,
                     n = e.slim,
                     a = (0, m.I0)(),
@@ -4068,15 +4100,15 @@
                 (x || N) && a((0, p.tV)({
                     notificationId: null == t ? void 0 : t.id
                 }));
-                var j = Ne[null == t ? void 0 : t.type] || {
+                var Z = Ne[null == t ? void 0 : t.type] || {
                         caption: null == t ? void 0 : t.type,
                         icon: E.Ps
                     },
-                    Z = j.icon,
-                    B = j.caption,
-                    T = t.createdAt && D()(t.createdAt);
+                    j = Z.icon,
+                    B = Z.caption,
+                    S = t.createdAt && z()(t.createdAt);
                 return d.createElement(d.Fragment, null, d.createElement(ke.jm, null, d.createElement(ke.lR, null, d.createElement(ke.XK, null, d.createElement(Ae.$1, {
-                    icon: Z
+                    icon: j
                 }), " ", d.createElement("i", null, B)), (null == t ? void 0 : t.canDelete) && d.createElement(ke.Z2, {
                     title: "Dismiss Notification",
                     onClick: function() {
@@ -4100,18 +4132,18 @@
                     url: t.imageUrl
                 })), d.createElement(ke.N2, null, d.createElement(ke.gp, null, !!O && d.createElement("strong", null, I ? d.createElement(f.rU, {
                     to: I
-                }, O) : O), (null == T ? void 0 : T.isValid()) && d.createElement("p", {
+                }, O) : O), (null == S ? void 0 : S.isValid()) && d.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, d.createElement("small", null, d.createElement("time", {
                     dateTime: t.createdAt,
-                    title: T.format("llll")
+                    title: S.format("llll")
                 }, d.createElement(Ae.$1, {
                     className: "tw-mr-1",
                     icon: v.SZ
-                }), T.fromNow()))), d.createElement("p", null, t.message)), d.createElement(ke.tt, {
+                }), S.fromNow()))), d.createElement("p", null, t.message)), d.createElement(ke.tt, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map((function(e) {
-                    return d.createElement(je, (0, r.Z)({
+                    return d.createElement(Ze, (0, r.Z)({
                         key: "".concat(null == t ? void 0 : t.id, "-").concat(e.type)
                     }, e, {
                         notificationId: null == t ? void 0 : t.id,
@@ -4159,8 +4191,8 @@
                     icon: o.NB
                 }), " Close")))))
             };
-            var Te = ["notification"],
-                Se = {
+            var Se = ["notification"],
+                Te = {
                     friendRequest: s.FK,
                     "friend-add": s.FK,
                     invite: l.FU,
@@ -4178,10 +4210,10 @@
                     inviteResponse: "Invite Response",
                     message: "System Message"
                 },
-                ze = ["friend-active", "friend-add", "friend-online"];
-            const De = function(e) {
+                De = ["friend-active", "friend-add", "friend-online"];
+            const ze = function(e) {
                 var t, n, l, c, s, h, v, w, y = e.notification,
-                    E = (0, a.Z)(e, Te),
+                    E = (0, a.Z)(e, Se),
                     x = (0, m.I0)(),
                     A = y.type,
                     C = y.senderUserId,
@@ -4189,30 +4221,30 @@
                     N = y.message,
                     I = y.isSystem,
                     O = 2 === y.version,
-                    j = "message" === A || I,
-                    Z = (0, b.GR)(C, {
+                    Z = "message" === A || I,
+                    j = (0, b.GR)(C, {
                         skip: !C || O
                     }),
-                    B = Z.data,
-                    T = Z.isLoading,
-                    S = Z.error;
-                if (O) return d.createElement(Ze, (0, r.Z)({}, E, {
+                    B = j.data,
+                    S = j.isLoading,
+                    T = j.error;
+                if (O) return d.createElement(je, (0, r.Z)({}, E, {
                     notification: y
                 }));
-                if (T) return d.createElement("p", null, "Loading");
-                if (j) return d.createElement(Be, (0, r.Z)({}, E, {
+                if (S) return d.createElement("p", null, "Loading");
+                if (Z) return d.createElement(Be, (0, r.Z)({}, E, {
                     notification: y,
                     senderUserData: B
                 }));
-                if (404 === (null == S ? void 0 : S.status)) return null;
-                var P, z = Se[A],
-                    D = Pe[A],
+                if (404 === (null == T ? void 0 : T.status)) return null;
+                var P, D = Te[A],
+                    z = Pe[A],
                     q = (0, u.Tq)(B.status).color,
                     M = B.profilePicOverride || B.currentAvatarThumbnailImageUrl,
                     R = (null === (t = y.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = y.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = y.details) || void 0 === l ? void 0 : l.requestMessage);
                 return d.createElement(ke.jm, null, d.createElement(ke.XK, null, d.createElement(Ae.$1, {
-                    icon: z
-                }), "  ", d.createElement("i", null, D)), d.createElement(ke.g6, null, d.createElement(ke.rR, {
+                    icon: D
+                }), "  ", d.createElement("i", null, z)), d.createElement(ke.g6, null, d.createElement(ke.rR, {
                     to: "/home/user/".concat(C),
                     statusColor: q
                 }, !(null !== (c = y.details) && void 0 !== c && c.imageUrl) && d.createElement(ke.v_, null, "Go To Profile"), d.createElement(ke.sJ, {
@@ -4231,7 +4263,7 @@
                     onClick: function() {
                         return x((0, p.yK)({
                             notificationId: k,
-                            withServer: !ze.includes(y.type)
+                            withServer: !De.includes(y.type)
                         }))
                     },
                     color: "secondary"
@@ -4253,7 +4285,7 @@
                     onClick: function() {
                         return x((0, p.yK)({
                             notificationId: k,
-                            withServer: !ze.includes(y.type)
+                            withServer: !De.includes(y.type)
                         }))
                     },
                     color: "secondary"
@@ -4982,12 +5014,12 @@
                 a = n.n(r),
                 o = n(23645),
                 i = n.n(o)()(a());
-            i.push([e.id, ":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: #fff;\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n}\n\n.fc .fc-toolbar .fc-button {\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: #333;\n  background-color: var(--fc-button-bg-color);\n  border-color: #333;\n  border-color: var(--fc-button-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: #064B5C;\n  background-color: var(--fc-button-active-bg-color);\n  border-color: #064B5C;\n  border-color: var(--fc-button-active-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  -webkit-text-decoration: none;\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}", "", {
+            i.push([e.id, ":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: #fff;\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n}\n\n.fc .fc-toolbar .fc-button {\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: #333;\n  background-color: var(--fc-button-bg-color);\n  border-color: #333;\n  border-color: var(--fc-button-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: #064B5C;\n  background-color: var(--fc-button-active-bg-color);\n  border-color: #064B5C;\n  border-color: var(--fc-button-active-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  -webkit-text-decoration: none;\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}", "", {
                 version: 3,
                 sources: ["webpack://./src/components/Calendar/calendarStyles.css"],
                 names: [],
-                mappings: "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",
-                sourcesContent: [":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: var(--fc-button-bg-color);\n  border-color: var(--fc-button-border-color);\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: var(--fc-button-active-bg-color);\n  border-color: var(--fc-button-active-border-color);\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}"],
+                mappings: "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",
+                sourcesContent: [":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: var(--fc-button-bg-color);\n  border-color: var(--fc-button-border-color);\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: var(--fc-button-active-bg-color);\n  border-color: var(--fc-button-active-border-color);\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}"],
                 sourceRoot: ""
             }]);
             const l = i
@@ -5138,4 +5170,4 @@
         }
     }
 ]);
-//# sourceMappingURL=18a86054024705c776c9c1fecee47a91e2845979c4440de8a700ab731b2cbed9.js.map
+//# sourceMappingURL=bacfb7ac5cf3e46db0c9adbaeed776fe9f15c188ce9c653930fc40655596dfc7.js.map
