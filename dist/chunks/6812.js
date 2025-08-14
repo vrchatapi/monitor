@@ -5,11 +5,11 @@
             var a = "gift",
                 n = [127873],
                 r = "f06b",
-                i = "M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z";
+                l = "M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z";
             t.DF = {
                 prefix: "fas",
                 iconName: a,
-                icon: [512, 512, n, r, i]
+                icon: [512, 512, n, r, l]
             }, t.Cl = t.DF
         },
         46812: (e, t, a) => {
@@ -19,14 +19,14 @@
             });
             var n = a(42138),
                 r = a(54546),
-                i = a(4965),
-                l = a(65394),
+                l = a(4965),
+                i = a(65394),
                 c = a(85020),
                 s = a(67294),
                 o = a(35773),
                 p = a(95305),
-                d = a(69677),
-                m = a(46382),
+                m = a(69677),
+                d = a(46382),
                 u = a(79967),
                 g = a.n(u),
                 b = a(3905),
@@ -37,34 +37,34 @@
                 y = a(79655),
                 w = a(27484),
                 v = a.n(w),
-                S = a(56176),
-                z = a.n(S);
+                z = a(56176),
+                S = a.n(z);
             const k = function(e) {
                 var t = e.subscription,
                     a = e.initialGift,
                     n = e.tiny,
                     r = (t.id, t.transactionId, t.store),
-                    i = (t.amount, t.description),
-                    l = t.period,
+                    l = (t.amount, t.description),
+                    i = t.period,
                     c = (t.active, t.status),
                     o = t.starts,
                     p = t.expires,
-                    d = t.isGift,
+                    m = t.isGift,
                     u = t.giftedBy,
                     g = t.giftedByDisplayName;
                 t.appliedToSubscriptionId;
-                v().extend(z());
+                v().extend(S());
                 var b = function(e) {
                         return v()(e).format("ll")
                     },
                     x = "active" === c && a ? "paused" : c;
                 return n ? s.createElement(Z, {
                     className: r,
-                    "aria-label": "Tiny VRCPlus ".concat(d ? "Gifted" : "Recurring", " Subscription Card")
-                }, s.createElement("h4", null, d && s.createElement(m.$1, {
+                    "aria-label": "Tiny VRCPlus ".concat(m ? "Gifted" : "Recurring", " Subscription Card")
+                }, s.createElement("h4", null, m && s.createElement(d.$1, {
                     icon: E.Cl
-                }), " ", d ? "Gifted" : "Recurring")) : s.createElement(N, {
-                    "aria-label": "VRCPlus ".concat(d ? "Gifted" : "Recurring", " Subscription Card")
+                }), " ", m ? "Gifted" : "Recurring")) : s.createElement(N, {
+                    "aria-label": "VRCPlus ".concat(m ? "Gifted" : "Recurring", " Subscription Card")
                 }, s.createElement(C, {
                     className: r
                 }, s.createElement(G, {
@@ -74,22 +74,22 @@
                         Steam: "https://assets.vrchat.com/misc/steam_logo.svg",
                         Admin: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-background.png"
                     } [r]
-                })), s.createElement(m.Ao, {
+                })), s.createElement(d.Ao, {
                     className: "p-3"
-                }, s.createElement("h4", null, " ", d && s.createElement(m.$1, {
+                }, s.createElement("h4", null, " ", m && s.createElement(d.$1, {
                     icon: E.Cl
-                }), " ", i), s.createElement(P, null, s.createElement("otherDiv", null, !d && s.createElement(m.X2, {
+                }), " ", l), s.createElement(P, null, s.createElement("otherDiv", null, !m && s.createElement(d.X2, {
                     "aria-label": "Subscription Status"
-                }, s.createElement(q, null, "Status:"), s.createElement(j, null, " ", x)), s.createElement(m.X2, {
+                }, s.createElement(q, null, "Status:"), s.createElement(j, null, " ", x)), s.createElement(d.X2, {
                     "aria-label": "Subscription Period"
-                }, s.createElement(q, null, "Period:"), s.createElement(j, null, l)), d && s.createElement(m.X2, {
+                }, s.createElement(q, null, "Period:"), s.createElement(j, null, i)), m && s.createElement(d.X2, {
                     "aria-label": "Subscription Start Date"
-                }, s.createElement(q, null, "Starts:"), s.createElement(j, null, " ", b(o), " ")), s.createElement(m.X2, {
+                }, s.createElement(q, null, "Starts:"), s.createElement(j, null, " ", b(o), " ")), s.createElement(d.X2, {
                     "aria-label": "Subscription End Date"
-                }, s.createElement(q, null, d ? "Expires" : "Next Payment", ":"), s.createElement(j, null, b(p), " ")), (d || a) && s.createElement("div", {
+                }, s.createElement(q, null, m ? "Expires" : "Next Payment", ":"), s.createElement(j, null, b(p), " ")), (m || a) && s.createElement("div", {
                     className: "mt-5",
                     "aria-label": "Subscription Gifted By"
-                }, s.createElement(R, null, " ", !d && "This ".concat(a.period.slice(0, 1).toUpperCase() + a.period.slice(1)), " Gifted By", " "), s.createElement(m.$1, {
+                }, s.createElement(R, null, " ", !m && "This ".concat(a.period.slice(0, 1).toUpperCase() + a.period.slice(1)), " Gifted By", " "), s.createElement(d.$1, {
                     icon: E.Cl,
                     size: "2x",
                     className: "pr-3"
@@ -98,55 +98,55 @@
                     "aria-label": "Open User Page"
                 }, g || a.giftedByDisplayName))))))
             };
-            var Z = (0, i.Z)(m.JX, {
+            var Z = (0, l.Z)(d.JX, {
                     target: "e1qexzd28"
                 })({
                     name: "16lfucs",
                     styles: "width:160px;height:80px;justify-content:center;align-content:center;text-align:center;border-style:solid;border-width:3px;border-radius:8px;background-repeat:no-repeat;background-position:center;border-image:initial;&.Oculus{background-color:#676767;border-color:#373737;background-size:100%;img{opacity:0.1;}}&.Steam{background-color:rgb(24, 27, 31);border-color:#565656;background-size:100%;}&.Admin{background-color:#07242b;border-color:#053c48;}svg{color:yellow;}"
                 }),
-                N = (0, i.Z)(m.JX, {
+                N = (0, l.Z)(d.JX, {
                     target: "e1qexzd27"
                 })({
                     name: "uka2i8",
                     styles: "width:320px;justify-content:flex-end;border:white"
                 }),
-                C = (0, i.Z)(m.oI, {
+                C = (0, l.Z)(d.oI, {
                     target: "e1qexzd26"
                 })({
                     name: "w5mjfy",
                     styles: "&.Steam{background-color:#red;background-image:linear-gradient(50deg, #184053, #1b2838, #000000f5);}&.Oculus{background-color:#cdcdcd;border-color:#a9a9a9;}&.Admin{padding:10px 0px 0px 0px;align-items:center;}"
                 }),
-                G = (0, i.Z)("img", {
+                G = (0, l.Z)("img", {
                     target: "e1qexzd25"
                 })({
                     name: "1k4htmn",
                     styles: "&.Steam{margin-left:20px;}&.Oculus{margin-top:0.7rem;margin-bottom:10px;width:78%;text-align:center;margin-left:20px;}&.Admin{width:58%;}"
                 }),
-                q = (0, i.Z)(m.JX, {
+                q = (0, l.Z)(d.JX, {
                     target: "e1qexzd24"
                 })({
                     name: "pfx2m",
                     styles: "width:50%;font-weight:bold"
                 }),
-                j = (0, i.Z)(m.JX, {
+                j = (0, l.Z)(d.JX, {
                     target: "e1qexzd23"
                 })({
                     name: "1wi8p6s",
                     styles: "text-align:right;width:50%"
                 }),
-                P = (0, i.Z)("div", {
+                P = (0, l.Z)("div", {
                     target: "e1qexzd22"
                 })({
                     name: "ah67qu",
                     styles: "display:flex;flex-direction:column;padding:0.9rem;border-style:solid;background-color:rgb(24, 27, 31);border-color:rgb(24, 27, 31);border-width:0px 3px 3px;border-radius:0px 0px 8px 8px;color:#737372"
                 }),
-                R = (0, i.Z)("h4", {
+                R = (0, l.Z)("h4", {
                     target: "e1qexzd21"
                 })({
                     name: "15ypxw7",
                     styles: "font-size:1.2em;margin-top:0.25rem;word-break:break-all;text-align:left;margin-bottom:0.25rem;color:#737372"
                 }),
-                X = (0, i.Z)(y.rU, {
+                X = (0, l.Z)(y.rU, {
                     target: "e1qexzd20"
                 })({
                     name: "1msic18",
@@ -154,26 +154,26 @@
                 });
             const D = function(e) {
                 var t, a = e.userId,
-                    i = (0, d.Vl)({
+                    l = (0, m.Vl)({
                         userId: a
                     }).data,
                     o = s.useState(0),
                     p = (0, r.Z)(o, 2),
                     u = p[0],
                     b = p[1],
-                    h = i ? i.filter((function(e) {
+                    h = l ? l.filter((function(e) {
                         return e.isGift
                     })) : [],
-                    E = i ? i.filter((function(e) {
+                    E = l ? l.filter((function(e) {
                         return !e.isGift
                     })) : [],
                     y = [].concat((0, n.Z)(h), (0, n.Z)(E)),
                     w = (null == E ? void 0 : E.length) > 0,
                     v = (null == h ? void 0 : h.length) > 0,
-                    S = u < (null == y ? void 0 : y.length) - 1,
-                    z = u > 0,
+                    z = u < (null == y ? void 0 : y.length) - 1,
+                    S = u > 0,
                     Z = !(null !== (t = y[u]) && void 0 !== t && t.isGift);
-                return s.createElement("div", null, s.createElement(m.$4, null, "Subscriptions"), s.createElement(V, {
+                return s.createElement("div", null, s.createElement(d.$4, null, "Subscriptions"), s.createElement(V, {
                     id: "SubscriptionGrid"
                 }, s.createElement(F, {
                     className: "pr-0 mb-2"
@@ -199,20 +199,20 @@
                     className: "pt-4 pr-0"
                 }, s.createElement(A, {
                     xs: "4"
-                }, z && s.createElement(m.zx, {
+                }, S && s.createElement(d.zx, {
                     "aria-label": "Previous Subscription",
                     neutral: !0,
                     size: "lg",
                     onClick: function() {
                         return b(u - 1)
                     }
-                }, " ", s.createElement(m.$1, {
+                }, " ", s.createElement(d.$1, {
                     icon: c.A3
                 }), " ")), s.createElement(O, {
                     xs: "4"
                 }, s.createElement($, {
-                    className: S ? "" : "extra-padding"
-                }, z && s.createElement(k, {
+                    className: z ? "" : "extra-padding"
+                }, S && s.createElement(k, {
                     subscription: y[u - 1],
                     tiny: !0
                 })), s.createElement(L, {
@@ -221,21 +221,21 @@
                     subscription: y[u],
                     tiny: !0
                 })), s.createElement(I, {
-                    className: z ? "" : "extra-padding"
-                }, S && s.createElement(k, {
+                    className: S ? "" : "extra-padding"
+                }, z && s.createElement(k, {
                     subscription: y[u + 1],
                     tiny: !0
                 }))), s.createElement(B, {
                     xs: "4"
-                }, S && s.createElement(m.zx, {
+                }, z && s.createElement(d.zx, {
                     "aria-label": "Next Subscription",
                     neutral: !0,
                     size: "lg",
                     onClick: function() {
                         return b(u + 1)
                     }
-                }, " ", s.createElement(m.$1, {
-                    icon: l._t
+                }, " ", s.createElement(d.$1, {
+                    icon: i._t
                 }), " "))), s.createElement(F, {
                     className: "pt-4 pr-0"
                 }, s.createElement(_, null, s.createElement(k, {
@@ -250,55 +250,55 @@
                     alt: "VRCat smiling at the viewer"
                 })))))
             };
-            var V = (0, i.Z)(o.Z, {
+            var V = (0, l.Z)(o.Z, {
                     target: "e1ia4l738"
                 })({
                     name: "koglwr",
                     styles: "margin-top:10px;margin-bottom:30px"
                 }),
-                A = (0, i.Z)(p.Z, {
+                A = (0, l.Z)(p.Z, {
                     target: "e1ia4l737"
                 })({
                     name: "1idgyd0",
                     styles: "display:flex;justify-content:right;align-text:center;z-index:2;button{padding:0px 10px 0px 10px;}@media (min-width: 300px) and (orientation: portrait){justify-content:center;}"
                 }),
-                B = (0, i.Z)(p.Z, {
+                B = (0, l.Z)(p.Z, {
                     target: "e1ia4l736"
                 })({
                     name: "o0fiqe",
                     styles: "display:flex;justify-content:left;align-text:center;z-index:2;button{padding:0px 10px 0px 10px;}@media (min-width: 300px) and (orientation: portrait){justify-content:center;}"
                 }),
-                L = (0, i.Z)("div", {
+                L = (0, l.Z)("div", {
                     target: "e1ia4l735"
                 })({
                     name: "e0vf0c",
                     styles: "z-index:3;box-shadow:0px 20px 20px black;margin-bottom:20px;&.layer{position:absolute;top:-24px;}"
                 }),
-                $ = (0, i.Z)("div", {
+                $ = (0, l.Z)("div", {
                     target: "e1ia4l734"
                 })({
                     name: "zy9on0",
                     styles: "z-index:1;opacity:0.4;margin:10px 20px 0px 0px;@media (min-width: 300px) and (orientation: portrait){opacity:0;}&.extra-padding{margin-right:180px;}"
                 }),
-                I = (0, i.Z)("div", {
+                I = (0, l.Z)("div", {
                     target: "e1ia4l733"
                 })({
                     name: "yp97xx",
                     styles: "z-index:1;margin:10px 0px 0px 20px;opacity:0.2;@media (min-width: 300px) and (orientation: portrait){opacity:0;}&.extra-padding{margin-left:180px;}"
                 }),
-                O = (0, i.Z)(p.Z, {
+                O = (0, l.Z)(p.Z, {
                     target: "e1ia4l732"
                 })({
                     name: "9otfrm",
                     styles: "justify-content:center;display:flex;position:relative"
                 }),
-                _ = (0, i.Z)(p.Z, {
+                _ = (0, l.Z)(p.Z, {
                     target: "e1ia4l731"
                 })({
                     name: "t6kner",
                     styles: "justify-content:center;display:flex;padding-right:0px;p{width:300px;color:gray;}"
                 }),
-                F = (0, i.Z)(o.Z, {
+                F = (0, l.Z)(o.Z, {
                     target: "e1ia4l730"
                 })({
                     name: "v4gdnl",
@@ -336,23 +336,7 @@
                 width: 305,
                 height: 120
             }
-        },
-        16031: (e, t, a) => {
-            e.exports = {
-                srcSet: a.p + "ed5ab4530f19591e-610w.png 610w",
-                images: [{
-                    path: a.p + "ed5ab4530f19591e-610w.png",
-                    width: 610,
-                    height: 240
-                }],
-                src: a.p + "ed5ab4530f19591e-610w.png",
-                toString: function() {
-                    return a.p + "ed5ab4530f19591e-610w.png"
-                },
-                width: 610,
-                height: 240
-            }
         }
     }
 ]);
-//# sourceMappingURL=53e46a3f0f73ab85c7c87fb3fc7c15a106767d80b633c58e8487cf51a0b4f973.js.map
+//# sourceMappingURL=7860b267382ab04285682e7208c64a626e57cb002c312c305668158c0020e941.js.map
