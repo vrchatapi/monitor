@@ -6028,7 +6028,7 @@
                         f(n), r(n)
                     };
                 return O.createElement(re.X2, {
-                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-2 tw-z-10", m && "tw-justify-between")
+                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-2 tw-z-20", m && "tw-justify-between")
                 }, O.createElement(re.X2, {
                     className: (0, I.cx)("tw-gap-2 tw-flex-wrap", !m && "@sm:tw-flex-1 tw-w-full")
                 }, O.createElement(re.Lt, {
@@ -6150,15 +6150,15 @@
                             switch (e) {
                                 case "UPCOMING":
                                     return n.filter((function(e) {
-                                        return fe()(e.startsAt).isSameOrAfter(t, "day")
+                                        return fe()(e.endsAt).isAfter(t)
                                     }));
                                 case "PAST":
                                     return n.filter((function(e) {
-                                        return fe()(e.endsAt).isBefore(t, "day")
+                                        return fe()(e.endsAt).isBefore(t)
                                     }));
                                 case "ONGOING":
                                     return n.filter((function(e) {
-                                        return fe()(e.startsAt).isSameOrBefore(t, "day") && fe()(e.endsAt).isSameOrAfter(t, "day")
+                                        return fe()(e.startsAt).isBefore(t) && fe()(e.endsAt).isAfter(t)
                                     }));
                                 default:
                                     return n
@@ -7090,4 +7090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8db9c387b4c838ccd28da9f971b6c6b4c056d611ecb6ab3fd84d9acb4694e88f.js.map
+//# sourceMappingURL=2b74e8580ed2f43b3335298d49531062ca109c9cbecca4715dace1da834d0116.js.map
