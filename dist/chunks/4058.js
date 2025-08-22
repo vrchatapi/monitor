@@ -424,7 +424,7 @@
                                     icon: u.Ps
                                 })), this.state.error) return 404 === (null === (t = this.state.error.response) || void 0 === t ? void 0 : t.status) ? c.createElement(B.default, null) : c.createElement("div", null, c.createElement("h1", null, "Error"), c.createElement("p", null, this.state.error.message));
                             if ((0, _.N4)(this.state.data)) return c.createElement(W.Z, null);
-                            var r = "vrchat://launch?ref=vrchat.com&id=".concat(this.state.worldId).concat((0, _.N4)(this.state.instanceId) ? "" : ":".concat(this.state.instanceId)).concat(this.state.shortName || this.state.secureName ? "&shortName=".concat(null !== (e = this.state.shortName) && void 0 !== e ? e : this.state.secureName) : ""),
+                            var r = "vrchat://launch?ref=vrchat.com&id=".concat(this.state.worldId).concat((0, _.N4)(this.state.instanceId) ? "" : ":".concat(this.state.instanceId)).concat(this.state.shortName || this.state.secureName ? "&shortName=".concat(null !== (e = this.state.shortName) && void 0 !== e ? e : this.state.secureName) : "", "&attach=1"),
                                 o = V || window.endpoint;
                             "/" === o[o.length - 1] && (o = o.substr(0, o.length - 1)), (0, _.N4)(this.state.shortName) ? (0, _.N4)(V) ? o += "/home/launch?worldId=".concat(this.state.worldId) : o += "/".concat(this.state.worldId) : (0, _.N4)(V) ? o += "/i/".concat(this.state.shortName) : o += "/".concat(this.state.shortName);
                             var s = V || window.endpoint;
@@ -789,4 +789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2088a320b6a54e8c160ed13ba4749d5f499b6cd672f178a2d932fbf66b388305.js.map
+//# sourceMappingURL=b1baefb227ad583f4cfa33aa210ecc76546c4ac3a2354955532e3914b1f5bb8f.js.map
