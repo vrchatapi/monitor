@@ -13,7 +13,7 @@
                 c = a(46382),
                 m = a(17219),
                 i = a(17383),
-                u = a(72562);
+                u = a(80646);
             var d = {
                 "/download/sdk3-worlds": "download worlds VCC SDK package",
                 "/download/sdk3-avatars": "download avatars VCC SDK package"
@@ -36,20 +36,20 @@
                     D = s.useState(null),
                     _ = (0, l.Z)(D, 2),
                     j = _[0],
-                    K = _[1],
-                    A = s.useMemo((function() {
+                    A = _[1],
+                    K = s.useMemo((function() {
                         return h && t && (null != h && h.disableAvatarGating || t.tagsSet.has("system_avatar_access") || t.tagsSet.has("system_world_access")) ? "none" : "block"
                     }), [null == h ? void 0 : h.disableAvatarGating, null == t ? void 0 : t.tagsSet]);
                 if (a || g) return null;
                 var V, X = function(e) {
                     return function() {
-                        K(e), S(!0)
+                        A(e), S(!0)
                     }
                 };
                 return s.createElement(p, null, s.createElement(c.sm, {
                     isOpen: N,
                     confirmCallback: (V = j, function() {
-                        (0, u.Kz)("Web_ButtonPressed", {
+                        (0, u.j)("Web_ButtonPressed", {
                             controlName: d[V]
                         }), setTimeout((function() {
                             window.location.assign(V)
@@ -103,7 +103,7 @@
                 }, " Content Creation "), s.createElement("div", {
                     className: "text-left",
                     style: {
-                        display: A
+                        display: K
                     }
                 }, s.createElement("p", null, " ", "Welcome to VRChat content creation! We're glad you are excited to get started. We ask that you engage with VRChat for a while before we allow you to upload avatars and worlds. Once you have spent some time enjoying and exploring we'll send you a notification that your ability to upload has been unlocked."), s.createElement("ul", null, s.createElement("li", null, "Explore some worlds "), s.createElement("li", null, "Make some friends "), s.createElement("li", null, "Learn to create and build avatars and worlds "), s.createElement("li", null, "Don't be abusive to other people or groups "), s.createElement("li", null, "Share and stream ")), s.createElement("p", null, "❤ — The VRChat Team")), s.createElement(w, {
                     href: "https://docs.vrchat.com/docs/setting-up-the-sdk",
@@ -201,4 +201,4 @@
         }
     }
 ]);
-//# sourceMappingURL=11f0616a78b0b5f53bce069d4c1eebd564321af923c41313d170b582af7b1a56.js.map
+//# sourceMappingURL=ec24daf0b5e465030adfad2fa98c234b63bb5cb5e14a5485e4423f9e1c83849d.js.map

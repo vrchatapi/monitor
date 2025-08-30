@@ -27,7 +27,7 @@
             };
             var m = a(42138),
                 d = a(15832),
-                h = a(72562);
+                h = a(80646);
             const f = function(e) {
                 var t = e.trackingEventName,
                     a = void 0 === t ? null : t,
@@ -42,7 +42,7 @@
                     f = g();
                 (0, c.useEffect)((function() {
                     if (null !== f) {
-                        null !== a && (0, h.Kz)(a, {
+                        null !== a && (0, h.j)(a, {
                             campaign: f
                         });
                         var e = [].concat((0, m.Z)(o), [f]);
@@ -57,8 +57,8 @@
             var b = a(22202),
                 v = a(61509),
                 x = a(46382),
-                N = a(13887),
-                j = a(41400);
+                j = a(13887),
+                N = a(41400);
             const S = function() {
                 var e;
                 f({
@@ -94,15 +94,15 @@
                     if (!(null == T || null === (e = T.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == i ? void 0 : i.logout)) return a(v.S.util.resetApiState()), a((0, p.kS)()), void I();
                     null != T && T.id && U()
                 }), [T]);
-                var z, K, q = function(e) {
+                var q, z, H = function(e) {
                         var t, a;
                         e.preventDefault(), R(null !== (t = null === (a = e.target) || void 0 === a ? void 0 : a.value) && void 0 !== t ? t : "")
                     },
-                    H = function(e) {
+                    W = function(e) {
                         var t, a;
                         e.preventDefault(), D(null !== (t = null === (a = e.target) || void 0 === a ? void 0 : a.value) && void 0 !== t ? t : "")
                     },
-                    W = function() {
+                    X = function() {
                         var e = (0, r.Z)(o().mark((function e(a) {
                             var r, n, c, l;
                             return o().wrap((function(e) {
@@ -129,12 +129,12 @@
                                     case 12:
                                         return t(c), e.abrupt("return");
                                     case 14:
-                                        return (0, h.Kz)("Login_LoginSuccess", {
+                                        return (0, h.j)("Login_LoginSuccess", {
                                             user: r.id,
                                             campaign: F
                                         }), U(), e.abrupt("return");
                                     case 19:
-                                        e.prev = 19, e.t0 = e.catch(2), (0, h.Kz)("Login_LoginFail", {
+                                        e.prev = 19, e.t0 = e.catch(2), (0, h.j)("Login_LoginFail", {
                                             error: null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message
                                         }), R(null == Z ? void 0 : Z.trim());
                                     case 23:
@@ -149,28 +149,28 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    X = "Failed to Log In",
-                    B = null == k || null === (e = k.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
-                C && ((null === (z = B) || void 0 === z ? void 0 : z.indexOf(":")) > 0 ? (X = B.substring(0, B.indexOf(":")).trim(), B = B.substring(B.indexOf(":") + 1).trim()) : 0 === (null === (K = B) || void 0 === K ? void 0 : K.indexOf(":")) && (B = B.substring(1).trim()));
-                return c.createElement(N.Z, {
+                    B = "Failed to Log In",
+                    G = null == k || null === (e = k.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
+                C && ((null === (q = G) || void 0 === q ? void 0 : q.indexOf(":")) > 0 ? (B = G.substring(0, G.indexOf(":")).trim(), G = G.substring(G.indexOf(":") + 1).trim()) : 0 === (null === (z = G) || void 0 === z ? void 0 : z.indexOf(":")) && (G = G.substring(1).trim()));
+                return c.createElement(j.Z, {
                     showCredits: !0
                 }, c.createElement(x.$4, null, "Login"), c.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[500px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
-                }, c.createElement(j.l0, {
+                }, c.createElement(N.l0, {
                     id: "login-form",
                     name: "login-form",
                     className: "nobottommargin",
-                    onSubmit: W
+                    onSubmit: X
                 }, c.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
-                }, "Welcome to VRChat"), c.createElement(j.X2, {
+                }, "Welcome to VRChat"), c.createElement(N.X2, {
                     className: "align-items-flex-end justify-content-between"
                 }), C && c.createElement(x.qX, {
                     type: "error",
                     role: "alert",
                     "aria-label": "Login Error",
-                    title: X,
-                    message: B,
+                    title: B,
+                    message: G,
                     className: "mb-2"
                 }), c.createElement(x.II, {
                     type: "text",
@@ -179,8 +179,8 @@
                     "aria-label": "username",
                     placeholder: "Username/Email",
                     value: Z,
-                    onChange: q,
-                    onKeyUp: q
+                    onChange: H,
+                    onKeyUp: H
                 }), c.createElement(x.II, {
                     type: "password",
                     id: "password",
@@ -190,8 +190,8 @@
                     className: "mt-2",
                     placeholder: "Password",
                     value: M,
-                    onChange: H,
-                    onKeyUp: H
+                    onChange: W,
+                    onKeyUp: W
                 }), c.createElement("div", {
                     className: "tw-w-full tw-text-right tw-mt-2"
                 }, "Forgot your", " ", c.createElement(s.rU, {
@@ -623,4 +623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ab9e3027f00f967547d3b904afab218a934cad40b3234f4fb0c933c11a6c4a15.js.map
+//# sourceMappingURL=f6b5b1903200f0cc05c2cb45bf83b26337abf09739185da8c3286eff6f52b490.js.map

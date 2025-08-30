@@ -277,7 +277,7 @@
                 S = k.useGetBetaQuery,
                 L = k.useGetBetaRegistrationQuery,
                 M = k.useCreateBetaRegistrationMutation;
-            const z = function(e) {
+            const B = function(e) {
                 var t = e.isOpen,
                     n = void 0 !== t && t,
                     o = e.cancelCallback,
@@ -302,8 +302,8 @@
                     k = (0, r.Z)(N, 2),
                     S = k[0],
                     L = k[1],
-                    z = L.isLoading,
-                    B = (L.isSuccess, L.isError, L.error, function(e) {
+                    B = L.isLoading,
+                    I = (L.isSuccess, L.isError, L.error, function(e) {
                         return {
                             checked: v.includes(e),
                             id: "checkbox-".concat(e),
@@ -315,27 +315,27 @@
                             }
                         }
                     }),
-                    I = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
+                    j = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
                         className: "tw-mt-8"
                     }, "Select all iOS devices you have access to and will use for testing."), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 12 Pro/Max"
-                    }, B("iPhone12PM"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone12PM"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 13 Pro/Max"
-                    }, B("iPhone13PM"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone13PM"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 14"
-                    }, B("iPhone14"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone14"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 14 Pro/Max"
-                    }, B("iPhone14PM"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone14PM"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 15"
-                    }, B("iPhone15"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone15"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPhone 15 Pro/Max"
-                    }, B("iPhone15PM"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPhone15PM"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "11-inch iPad Pro (2nd Generation of higher)"
-                    }, B("iPadPro11"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPadPro11"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "12.9-inch iPad Pro (4th generation or higher)"
-                    }, B("iPadPro12"))), a.createElement(i.XZ, (0, x.Z)({
+                    }, I("iPadPro12"))), a.createElement(i.XZ, (0, x.Z)({
                         label: "iPad Air (5th generation or higher)"
-                    }, B("iPadAir"))), a.createElement("h6", {
+                    }, I("iPadAir"))), a.createElement("h6", {
                         className: "tw-mt-6"
                     }, "Are you a creator?"), a.createElement(i.XZ, {
                         label: "Yes, I am a creator.",
@@ -370,15 +370,15 @@
                                 }
                             })
                         },
-                        loading: z,
-                        disabled: 0 === v.length || z
-                    }, z ? "Submitting" : "Submit"), a.createElement(i.zx, {
+                        loading: B,
+                        disabled: 0 === v.length || B
+                    }, B ? "Submitting" : "Submit"), a.createElement(i.zx, {
                         neutral: !0,
                         className: "tw-mt-6",
-                        disabled: z,
+                        disabled: B,
                         onClick: c
                     }, "Cancel")),
-                    j = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(i.zx, {
+                    z = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(i.zx, {
                         onClick: u
                     }, "Done"));
                 return a.createElement(i.u_, {
@@ -388,21 +388,21 @@
                     onClose: m ? u : c,
                     onCloseFinished: c,
                     doNotCapitalize: !0
-                }, m ? j : I)
+                }, m ? z : j)
             };
-            var B = n(87709),
-                I = ["title", "children", "dismissable", "onDismiss"];
-            const j = function(e) {
+            var I = n(87709),
+                j = ["title", "children", "dismissable", "onDismiss"];
+            const z = function(e) {
                 var t = e.title,
                     n = e.children,
                     r = e.dismissable,
                     i = void 0 === r || r,
                     o = e.onDismiss,
                     s = void 0 === o ? function() {} : o,
-                    l = (0, c.Z)(e, I);
+                    l = (0, c.Z)(e, j);
                 return a.createElement(D, l, a.createElement(X, null, a.createElement(T, null, t), n), i && a.createElement(R, {
                     onClick: s,
-                    icon: B.faXmark,
+                    icon: I.faXmark,
                     size: "2x"
                 }))
             };
@@ -475,14 +475,14 @@
                         i([].concat((0, s.Z)(n), [A])), E(!0)
                     },
                     M = c && null != c.created_at;
-                return b || f || l || v || !p || !p.active || !x && M ? null : a.createElement(a.Fragment, null, a.createElement(z, {
+                return b || f || l || v || !p || !p.active || !x && M ? null : a.createElement(a.Fragment, null, a.createElement(B, {
                     isOpen: P,
                     cancelCallback: function() {
                         return Z(!1)
                     },
                     doneCallback: k,
                     completed: M
-                }), a.createElement(j, {
+                }), a.createElement(z, {
                     title: "LIMITED AVAILABILITY",
                     onDismiss: k
                 }, a.createElement("span", {
@@ -493,11 +493,11 @@
                     }
                 }, "Sign up to be a Closed Beta Tester"))))
             };
-            var V = n(72562);
+            var V = n(80646);
             const G = function() {
                 var e, t = (0, u.XC)().data;
                 return a.useEffect((function() {
-                    (0, V.Kz)("Web_Home")
+                    (0, V.j)("Web_Home")
                 }), []), a.createElement("div", null, a.createElement(N.Z, null, "Home"), a.createElement("div", {
                     className: "center-block"
                 }, a.createElement(q, null), a.createElement("h2", {
@@ -547,4 +547,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0660f54c7e2ea724037fc79302e3de4af1c0adcc5dd002917920a6837faf4cdb.js.map
+//# sourceMappingURL=189b3e0ca740b927819537db8ba2d8e34962837a148141198068e3a8225ff463.js.map

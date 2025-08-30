@@ -17,7 +17,7 @@
                 u = (a(37337), a(15832), a(30381), a(46382)),
                 m = a(17383),
                 d = a(22202),
-                g = (a(17219), a(72562)),
+                g = (a(17219), a(80646)),
                 h = a(82470),
                 f = a(60006),
                 b = (a(41400), a(13887));
@@ -98,15 +98,15 @@
                     }),
                     _ = (0, l.Z)(V, 2),
                     B = _[0],
-                    K = _[1],
-                    W = i.useState({
+                    W = _[1],
+                    G = i.useState({
                         value: "",
                         error: !1,
                         ok: null
                     }),
-                    G = (0, l.Z)(W, 2),
-                    X = G[0],
-                    Y = G[1];
+                    K = (0, l.Z)(G, 2),
+                    X = K[0],
+                    Y = K[1];
                 i.useEffect((function() {
                     k && !S && (ee({
                         target: {
@@ -122,7 +122,7 @@
                 }), [L, $, B, X]);
                 i.useEffect((function() {
                     var e;
-                    q && (0, g.Kz)("AccountUpgrade_Error", {
+                    q && (0, g.j)("AccountUpgrade_Error", {
                         error: null === (e = q.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
                     })
                 }), [q]);
@@ -318,7 +318,7 @@
                     onChange: function(e) {
                         var t = e.target.value,
                             a = void 0 === t ? "" : t;
-                        if (K(v(v({}, B), {}, {
+                        if (W(v(v({}, B), {}, {
                                 value: a,
                                 ok: null,
                                 error: !1
@@ -327,7 +327,7 @@
                                 n = !1;
                             a.length < 8 ? n = "That password is too short \n ".concat(r) : (0, h.w)(a) && (n = "Please try a more secure password \n ".concat(r));
                             var l = !n;
-                            K((function(e) {
+                            W((function(e) {
                                 return v(v({}, e), {}, {
                                     ok: l,
                                     error: n
@@ -787,4 +787,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e0d34f5d18ab45886953b354ee0cf50f88eeae1ac43669dd229a8d2127300853.js.map
+//# sourceMappingURL=e8e49650b36ef4aa0381fcec3d9e2868094c8f8b8845ee92f3374ae9bc74ee66.js.map

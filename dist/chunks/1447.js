@@ -848,7 +848,7 @@
                     v = (0, o.Z)(g, 2),
                     A = v[0],
                     N = v[1],
-                    q = (N.isError, N.isSuccess, function(e) {
+                    z = (N.isError, N.isSuccess, function(e) {
                         e.preventDefault(), a ? s(t) : u("/home/group/".concat(null != M ? M : R))
                     }),
                     M = t.groupId,
@@ -861,7 +861,7 @@
                     $ = t.iconId,
                     F = t.bannerId,
                     _ = a ? B : S,
-                    X = a ? z : D,
+                    X = a ? D : q,
                     J = a ? T : P;
                 return f.createElement(_, {
                     to: "/home/group/".concat(null != M ? M : R),
@@ -890,13 +890,13 @@
                 }, f.createElement(X, {
                     role: "navigation",
                     "aria-label": "Open World Page",
-                    onClick: q
+                    onClick: z
                 }, f.createElement(J, null, U)))), f.createElement(k, null, f.createElement(x, null, f.createElement(y, {
                     className: "w-100 d-flex flex-column text-center justify-content-center align-content-center"
                 }, f.createElement("small", null, L)), f.createElement(E, null, f.createElement("small", null, f.createElement(b.$1, {
                     icon: c.FV
                 }), " ", V), f.createElement("small", null, W, ".", G)))), a && f.createElement(b.zx, {
-                    onClick: q
+                    onClick: z
                 }, "Select"), n && f.createElement(b.zx, {
                     danger: !0,
                     onClick: function(e) {
@@ -983,13 +983,13 @@
                     name: "l8p4qc",
                     styles: "&:hover{color:var(--primary);}"
                 }),
-                z = (0, i.Z)("div", {
+                D = (0, i.Z)("div", {
                     target: "e1nq4ok41"
                 })({
                     name: "11z3e6t",
                     styles: "background:none;border:none;padding:0;margin:0 0 10px 100px;color:#0e9bb1;outline:none!important;min-width:0"
                 }),
-                D = (0, i.Z)("button", {
+                q = (0, i.Z)("button", {
                     target: "e1nq4ok40"
                 })({
                     name: "c694od",
@@ -999,7 +999,7 @@
         81447: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => zr
+                default: () => Dr
             });
             var r = n(54546),
                 a = n(67294),
@@ -1044,9 +1044,9 @@
                         S = e.type,
                         T = (0, a.useRef)(null),
                         P = (0, a.useState)(s),
-                        z = (0, r.Z)(P, 2),
-                        D = z[0],
-                        q = z[1],
+                        D = (0, r.Z)(P, 2),
+                        q = D[0],
+                        z = D[1],
                         M = (0, a.useState)({
                             x: 0,
                             y: 0
@@ -1065,10 +1065,10 @@
                         _ = (0, r.Z)(F, 2),
                         X = _[0],
                         J = _[1],
-                        K = (0, a.useState)(1),
-                        Y = (0, r.Z)(K, 2),
-                        H = Y[0],
-                        Q = Y[1],
+                        Y = (0, a.useState)(1),
+                        K = (0, r.Z)(Y, 2),
+                        H = K[0],
+                        Q = K[1],
                         ee = (0, a.useState)(!1),
                         te = (0, r.Z)(ee, 2),
                         ne = te[0],
@@ -1078,11 +1078,11 @@
                         ie = oe[0],
                         le = oe[1],
                         ce = (0, a.useMemo)((function() {
-                            return D === o.length - 1
-                        }), [D, o]),
+                            return q === o.length - 1
+                        }), [q, o]),
                         se = (0, a.useMemo)((function() {
-                            return 0 === D
-                        }), [D]),
+                            return 0 === q
+                        }), [q]),
                         ue = (0, a.useMemo)((function() {
                             var e;
                             return null === (e = Z._[S]) || void 0 === e ? void 0 : e.label
@@ -1092,12 +1092,12 @@
                             return null === (e = Z._[S]) || void 0 === e ? void 0 : e.icon
                         }), [S]),
                         me = (0, a.useMemo)((function() {
-                            return o[D]
-                        }), [o, D]);
+                            return o[q]
+                        }), [o, q]);
                     (0, a.useEffect)((function() {
                         0 !== o.length || c()
                     }), [o]), (0, a.useEffect)((function() {
-                        q(s)
+                        z(s)
                     }), [s]);
                     var fe = (0, a.useCallback)((function() {
                             Q(1), W({
@@ -1110,8 +1110,8 @@
                         }), [c]),
                         pe = (0, a.useMemo)((function() {
                             var e, t, n;
-                            return null !== (e = null === (t = o[D]) || void 0 === t || null === (t = t.metadata) || void 0 === t ? void 0 : t.imageUrl) && void 0 !== e ? e : null === (n = o[D]) || void 0 === n ? void 0 : n.imageUrl
-                        }), [o, D]),
+                            return null !== (e = null === (t = o[q]) || void 0 === t || null === (t = t.metadata) || void 0 === t ? void 0 : t.imageUrl) && void 0 !== e ? e : null === (n = o[q]) || void 0 === n ? void 0 : n.imageUrl
+                        }), [o, q]),
                         ge = (0, a.useCallback)((function(e) {
                             e.preventDefault();
                             var t = -.01 * e.deltaY;
@@ -1122,10 +1122,10 @@
                         be = Z._[S],
                         we = (0, a.useMemo)((function() {
                             var e;
-                            return null === (e = o[D]) || void 0 === e || null === (e = e.flags) || void 0 === e ? void 0 : e.includes("archivable")
-                        }), [o, D]);
+                            return null === (e = o[q]) || void 0 === e || null === (e = e.flags) || void 0 === e ? void 0 : e.includes("archivable")
+                        }), [o, q]);
                     (0, a.useEffect)((function() {
-                        q(s), le(!0)
+                        z(s), le(!0)
                     }), [s, l]), (0, a.useEffect)((function() {
                         var e = T.current;
                         if (e) return e.addEventListener("wheel", ge, {
@@ -1204,7 +1204,7 @@
                         className: "tw-flex tw-w-full tw-h-full tw-justify-between tw-items-center"
                     }, a.createElement(k.ZP, {
                         onClick: function() {
-                            se || (q((function(e) {
+                            se || (z((function(e) {
                                 return e - 1
                             })), Ee(), le(!0))
                         },
@@ -1245,7 +1245,7 @@
                         size: 400
                     }))), a.createElement(k.ZP, {
                         onClick: function() {
-                            ce || (q((function(e) {
+                            ce || (z((function(e) {
                                 return e + 1
                             })), Ee(), le(!0))
                         },
@@ -1362,9 +1362,9 @@
                     type: s
                 })
             };
-            var z = n(28964),
-                D = n.n(z),
-                q = n(15832),
+            var D = n(28964),
+                q = n.n(D),
+                z = n(15832),
                 M = n(22202),
                 R = n(34698);
             const U = function() {
@@ -1373,7 +1373,7 @@
                     n = (0, r.Z)(t, 2),
                     o = n[0],
                     i = n[1],
-                    l = (0, q._)("tutorialInventorySeen", !1),
+                    l = (0, z._)("tutorialInventorySeen", !1),
                     c = (0, r.Z)(l, 2),
                     s = c[0],
                     u = c[1];
@@ -1395,7 +1395,7 @@
                 }, "The gallery has now been relocated under the user profile and renamed as ", a.createElement("span", {
                     className: "tw-font-bold"
                 }, "Inventory"), "."), a.createElement("img", {
-                    src: D(),
+                    src: q(),
                     alt: "Gallery has now been relocated to Inventory"
                 }), a.createElement("div", {
                     className: "tw-flex tw-justify-end tw-mt-4"
@@ -1415,8 +1415,8 @@
                 _ = n.n(F),
                 X = n(7795),
                 J = n.n(X),
-                K = n(90569),
-                Y = n.n(K),
+                Y = n(90569),
+                K = n.n(Y),
                 H = n(3565),
                 Q = n.n(H),
                 ee = n(19216),
@@ -1425,7 +1425,7 @@
                 re = n.n(ne),
                 ae = n(46461),
                 oe = {};
-            oe.styleTagTransform = re(), oe.setAttributes = Q(), oe.insert = Y().bind(null, "head"), oe.domAPI = J(), oe.insertStyleElement = te();
+            oe.styleTagTransform = re(), oe.setAttributes = Q(), oe.insert = K().bind(null, "head"), oe.domAPI = J(), oe.insertStyleElement = te();
             _()(ae.Z, oe);
             ae.Z && ae.Z.locals && ae.Z.locals;
             var ie = n(98185),
@@ -1435,7 +1435,7 @@
                 ue = n(86216),
                 de = n(17383),
                 me = n(88081),
-                fe = n(72562),
+                fe = n(80646),
                 pe = n(64358),
                 ge = n(42938);
 
@@ -1700,7 +1700,7 @@
                 }
                 return e
             }
-            var ze = {
+            var De = {
                     eventSources: [],
                     accessTypes: [],
                     categories: [],
@@ -1709,7 +1709,7 @@
                     languages: [],
                     groups: []
                 },
-                De = (0, a.forwardRef)((function(e, t) {
+                qe = (0, a.forwardRef)((function(e, t) {
                     var n = (0, o.I0)(),
                         i = (0, a.useState)(""),
                         l = (0, r.Z)(i, 2),
@@ -1738,24 +1738,24 @@
                         S = (0, r.Z)(B, 2),
                         T = S[0],
                         P = S[1],
-                        z = (0, a.useState)(!1),
-                        D = (0, r.Z)(z, 2),
-                        q = D[0],
-                        M = D[1],
+                        D = (0, a.useState)(!1),
+                        q = (0, r.Z)(D, 2),
+                        z = q[0],
+                        M = q[1],
                         R = (0, a.useState)(null),
                         U = (0, r.Z)(R, 2),
                         F = U[0],
                         _ = U[1],
-                        X = (0, a.useState)(ze),
+                        X = (0, a.useState)(De),
                         J = (0, r.Z)(X, 2),
-                        K = J[0],
-                        Y = J[1],
+                        Y = J[0],
+                        K = J[1],
                         H = (0, de.Tu)().user,
                         Q = void 0 === H ? null : H,
                         ee = !(null == Q || !Q.id),
                         te = (0, de.pc)() && !1;
                     (0, a.useEffect)((function() {
-                        (0, fe.Kz)("Calendar_Open", {
+                        (0, fe.j)("Calendar_Open", {
                             userId: null == Q ? void 0 : Q.id
                         });
                         var e = function() {
@@ -1782,11 +1782,11 @@
                                     t - b.clientY < 350 ? f.current.style.top = "".concat(t - 400, "px") : e.style.top = "".concat((null == b ? void 0 : b.clientY) - 100, "px")
                                 }(o)) : void 0
                         }
-                    }), [b]), (0, a.useEffect)((function() {}), [K]);
+                    }), [b]), (0, a.useEffect)((function() {}), [Y]);
                     var ne = (0, me.bT)({
                             date: T,
                             userId: null == Q ? void 0 : Q.id,
-                            eventSources: K.eventSources
+                            eventSources: Y.eventSources
                         }, {
                             skip: null === Q
                         }),
@@ -1802,7 +1802,7 @@
                         we = (0, me.bT)({
                             date: T.add(1, "month"),
                             userId: null == Q ? void 0 : Q.id,
-                            eventSources: K.eventSources
+                            eventSources: Y.eventSources
                         }, {
                             skip: null === Q || !Z
                         }),
@@ -1838,7 +1838,7 @@
                         Ze = function() {
                             return Pe({
                                 searchTerm: u
-                            }, K)
+                            }, Y)
                         },
                         je = (0, a.useMemo)((function() {
                             var e = ae.events,
@@ -1914,7 +1914,7 @@
                                 }))) && !(r.groups.length > 0 && !r.groups.includes(e.ownerId)))))))));
                                 var t, n, a, o, i, l
                             })).map(Oe)
-                        }), [u, ae, Ae, Z, K]);
+                        }), [u, ae, Ae, Z, Y]);
                     (0, a.useImperativeHandle)(t, (function() {
                         return {
                             updateCalendarSize: function() {
@@ -1932,8 +1932,8 @@
                                 r = null !== (t = e.date) && void 0 !== t ? t : e;
                             e.date && r.setMinutes(r.getMinutes() + r.getTimezoneOffset()), n.changeView("timeGridDay", r)
                         },
-                        De = oe || Z && Ce,
-                        qe = function(e) {
+                        qe = oe || Z && Ce,
+                        ze = function(e) {
                             return {
                                 eventId: e.id,
                                 ownerId: e.ownerId,
@@ -1968,7 +1968,7 @@
                     }, a.createElement(C.$1, {
                         icon: V.r8,
                         className: "tw-mr-1"
-                    }), " Create Event")), De && a.createElement("div", {
+                    }), " Create Event")), qe && a.createElement("div", {
                         className: " tw-w-full tw-h-full  tw-left-0 tw-top-0 tw-absolute  tw-flex tw-justify-center tw-items-center tw-bg-dark-grey-transparent tw-z-10 "
                     }, a.createElement(ie.Z, {
                         loading: !0
@@ -1981,19 +1981,19 @@
                         onFilterChangeCallBack: function(e) {
                             return function(e) {
                                 if (e.isChecked) {
-                                    var t = (0, W.Z)(new Set([].concat((0, W.Z)(K[e.type]), [e.value])));
-                                    return Y(Pe(Pe({}, K), {}, (0, G.Z)({}, e.type, t)))
+                                    var t = (0, W.Z)(new Set([].concat((0, W.Z)(Y[e.type]), [e.value])));
+                                    return K(Pe(Pe({}, Y), {}, (0, G.Z)({}, e.type, t)))
                                 }
                                 if (!e.isChecked) {
-                                    var n = K[e.type].filter((function(t) {
+                                    var n = Y[e.type].filter((function(t) {
                                         return t !== e.value
                                     }));
-                                    return Y(Pe(Pe({}, K), {}, (0, G.Z)({}, e.type, n)))
+                                    return K(Pe(Pe({}, Y), {}, (0, G.Z)({}, e.type, n)))
                                 }
                             }(e)
                         },
                         userGroups: Me,
-                        dropdownFilterValues: K
+                        dropdownFilterValues: Y
                     }), a.createElement(C.II, {
                         "aria-label": "Search by event name or url",
                         type: "text",
@@ -2013,11 +2013,11 @@
                         userGroups: Me,
                         filters: Ze(),
                         filterRemoveCallback: function(e) {
-                            if (null === e) return Y(ze);
-                            var t = K[e.dataKey].filter((function(t) {
+                            if (null === e) return K(De);
+                            var t = Y[e.dataKey].filter((function(t) {
                                 return t !== e.value
                             }));
-                            Y(Pe(Pe({}, K), {}, (0, G.Z)({}, e.dataKey, t)))
+                            K(Pe(Pe({}, Y), {}, (0, G.Z)({}, e.dataKey, t)))
                         }
                     }))), a.createElement(se.Z, {
                         ref: m,
@@ -2052,7 +2052,7 @@
                                 n = (e.el, e.jsEvent),
                                 r = (e.view, t.toPlainObject()),
                                 a = Pe(Pe({}, r), r.extendedProps);
-                            N(!1), w(n), E(a), (0, fe.Kz)("Event_Previewed", qe(a))
+                            N(!1), w(n), E(a), (0, fe.j)("Event_Previewed", ze(a))
                         },
                         moreLinkClick: Te,
                         datesSet: function(e) {
@@ -2081,7 +2081,7 @@
                         }
                     }))), a.createElement(C.u_, {
                         title: "Create Event (".concat(null === F ? "1" : "2", "/2)"),
-                        isVisible: q,
+                        isVisible: z,
                         onClose: function() {
                             return M(!1)
                         },
@@ -2099,7 +2099,7 @@
                         }
                     }))))
                 }));
-            const qe = De;
+            const ze = qe;
             var Me = n(4965),
                 Re = n(47810),
                 Ue = n(34233),
@@ -2164,7 +2164,7 @@
                     to: "/home/user/".concat(d.id),
                     "aria-label": "User Status",
                     onClick: A
-                }, d.statusDescription)), a.createElement(Je, null, a.createElement(Ye, {
+                }, d.statusDescription)), a.createElement(Je, null, a.createElement(Ke, {
                     "aria-label": "Profile Picture",
                     to: "/home/user/".concat(d.id),
                     url: I,
@@ -2196,7 +2196,7 @@
                 })).slice(0, 3).sort((function(e, t) {
                     return new Date(t.assignedAt) - new Date(e.assignedAt)
                 })).map((function(e) {
-                    return a.createElement(Ke, {
+                    return a.createElement(Ye, {
                         role: "note",
                         "aria-label": e.badgeName,
                         key: e.badgeId,
@@ -2245,14 +2245,14 @@
                     name: "1tnesjs",
                     styles: "border-radius:10px;border:#053c48 2px solid;overflow:hidden;position:relative;z-index:10;background-color:#07242b;:empty{display:none;}"
                 }),
-                Ke = (0, Me.Z)("div", {
+                Ye = (0, Me.Z)("div", {
                     target: "esgak1l19"
                 })("width:36px;height:36px;margin:0!important;padding:6px;border-radius:50%;z-index:3;background-color:rgba(17, 17, 17, 0.8);background-image:url(", (function(e) {
                     return e.image
                 }), ");background-size:24px;background-repeat:no-repeat;background-position:center;", (function(e) {
                     return e.pettable && "\n    cursor: grab;\n\n    &:active {\n      cursor: grabbing;\n    }\n  "
                 }), ";"),
-                Ye = (0, Me.Z)(We.rU, {
+                Ke = (0, Me.Z)(We.rU, {
                     target: "esgak1l18"
                 })("display:flex;height:0;padding-top:56.25%;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
@@ -2376,9 +2376,9 @@
                 St = n(70396),
                 Tt = n(7975),
                 Pt = n(70440),
-                zt = n(96165),
-                Dt = n(54492),
-                qt = n(91435),
+                Dt = n(96165),
+                qt = n(54492),
+                zt = n(91435),
                 Mt = n(49866),
                 Rt = n(57245),
                 Ut = n(93118),
@@ -2391,8 +2391,8 @@
                 _t = n(25248),
                 Xt = n(50249),
                 Jt = n(7503),
-                Kt = n(98648),
-                Yt = n(91158),
+                Yt = n(98648),
+                Kt = n(91158),
                 Ht = n(48566),
                 Qt = n(8256),
                 en = n(28055),
@@ -2486,7 +2486,7 @@
                         searchableFilters: y,
                         sortByFilter: C
                     };
-                    (0, fe.Kz)("Web_Mod_SearchFilterChange", wn(wn({}, e), {}, {
+                    (0, fe.j)("Web_Mod_SearchFilterChange", wn(wn({}, e), {}, {
                         autoRedirect: N
                     })), t(e)
                 }), [N, m, b, y, C]);
@@ -2836,9 +2836,9 @@
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var Pn = [_t.R7, Ft.od, $t.tM, Vt.RK, Lt.I3, Gt.nG, Wt.jO, Ut.uS, Rt.dy, Mt.XG, qt.BD, Dt.ok, zt.Sv, Pt.qA, Tt.I1, St.Nk, Bt.uj, jt.io, Zt.l9],
-                zn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
-                Dn = a.memo((function(e) {
+            var Pn = [_t.R7, Ft.od, $t.tM, Vt.RK, Lt.I3, Gt.nG, Wt.jO, Ut.uS, Rt.dy, Mt.XG, zt.BD, qt.ok, Dt.Sv, Pt.qA, Tt.I1, St.Nk, Bt.uj, jt.io, Zt.l9],
+                Dn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
+                qn = a.memo((function(e) {
                     var t, n, l = e.horizontal,
                         s = e.navToggleCallback,
                         u = e.friendsToggleCallback,
@@ -2854,7 +2854,7 @@
                         v = (0, r.Z)(h, 2),
                         y = v[0],
                         E = v[1],
-                        x = a.useState(zn[d(zn.length)]),
+                        x = a.useState(Dn[d(Dn.length)]),
                         A = (0, r.Z)(x, 2),
                         k = A[0],
                         N = A[1],
@@ -2874,12 +2874,12 @@
                             pageValue: 1,
                             isNavBar: !0
                         }),
-                        z = P.data,
-                        D = P.isSuccess;
+                        D = P.data,
+                        q = P.isSuccess;
                     (0, a.useEffect)((function() {
-                        b && (E(Pn[d(Pn.length)]), N(zn[d(zn.length)]))
+                        b && (E(Pn[d(Pn.length)]), N(Dn[d(Dn.length)]))
                     }), [b]);
-                    var q = function(e) {
+                    var z = function(e) {
                             m("/home/login", {
                                 state: {
                                     logout: !0
@@ -3062,7 +3062,7 @@
                             })),
                             to: "/home/login",
                             title: "logout",
-                            onClick: q
+                            onClick: z
                         }, a.createElement(C.$1, {
                             icon: bt.TE
                         }), "  Logout"))))
@@ -3148,7 +3148,7 @@
                         className: "btn text-left",
                         onClick: W
                     }, a.createElement(C.$1, {
-                        icon: Yt.default
+                        icon: Kt.default
                     }), a.createElement("div", null, "Discover Worlds"), a.createElement(C.$1, {
                         icon: wt.yO
                     })), a.createElement(Mn, {
@@ -3202,14 +3202,14 @@
                         className: "btn text-left",
                         onClick: W
                     }, a.createElement(C.$1, {
-                        icon: Kt.default
+                        icon: Yt.default
                     }), a.createElement("div", {
                         className: "tw-flex"
-                    }, "Inventory", D && (null == z ? void 0 : z.totalCount) > 0 && a.createElement("div", {
+                    }, "Inventory", q && (null == D ? void 0 : D.totalCount) > 0 && a.createElement("div", {
                         className: "tw-rounded-full tw-bg-red tw-ml-2 tw-w-[22px] tw-h-[22px] tw-text-white tw-flex tw-items-center tw-justify-center "
                     }, a.createElement("p", {
                         className: "tw-text-sm tw-text-center tw-w-full tw-mb-0 tw-font-bold"
-                    }, null == z ? void 0 : z.totalCount))), a.createElement(C.$1, {
+                    }, null == D ? void 0 : D.totalCount))), a.createElement(C.$1, {
                         icon: wt.yO
                     })), a.createElement(Mn, {
                         to: "/home/marketplace",
@@ -3265,13 +3265,13 @@
                         to: "/home/login",
                         title: "logout",
                         className: "btn text-left d-xl-none",
-                        onClick: q
+                        onClick: z
                     }, a.createElement(C.$1, {
                         icon: bt.TE
                     }), a.createElement("div", null, "Logout"), a.createElement("div", null))))
                 }));
-            Dn.displayName = "Navbar";
-            const qn = Dn;
+            qn.displayName = "Navbar";
+            const zn = qn;
             var Mn = (0, Me.Z)(We.rU, {
                     target: "e18dqzxk1"
                 })({
@@ -3290,10 +3290,10 @@
                 Ln = [];
             const Vn = function() {
                 var e = (0, i.s0)(),
-                    t = (0, q._)("campaigns", []),
+                    t = (0, z._)("campaigns", []),
                     n = (0, r.Z)(t, 2),
                     a = n[0],
-                    o = (n[1], (0, q._)("campaignsSeen", [])),
+                    o = (n[1], (0, z._)("campaignsSeen", [])),
                     l = (0, r.Z)(o, 2),
                     c = l[0],
                     s = (l[1], function() {
@@ -3337,9 +3337,9 @@
                     e((0, Gn._r)(n))
                 }), [r, n]), null
             };
-            var Kn = n(13557),
-                Yn = n(33622),
-                Hn = n.n(Yn),
+            var Yn = n(13557),
+                Kn = n(33622),
+                Hn = n.n(Kn),
                 Qn = n(39883),
                 er = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
@@ -3629,7 +3629,7 @@
                 Pr = a.lazy((function() {
                     return Promise.all([n.e(123), n.e(1541), n.e(2998), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(347), n.e(7577)]).then(n.bind(n, 60377))
                 }));
-            const zr = function() {
+            const Dr = function() {
                 var e = (0, o.I0)(),
                     t = (0, a.useRef)(null);
                 Vn();
@@ -3670,7 +3670,7 @@
                         }
                 }), []), a.createElement("div", {
                     className: (0, c.iv)("& .leftbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(90deg, #050505 50%, #050505ef 100%);padding:0 3px 3px 3px;z-index:30;top:60px;width:285px;min-width:285px;height:calc(100% - 60px);position:fixed;overflow-y:auto;display:flex;justify-content:center;}& .rightbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(270deg, #050505 50%, #050505ef 100%);padding:0;top:60px;width:410px;min-width:410px;z-index:50;height:calc(100% - 60px);margin-left:calc(100% - 410px);position:fixed;left:410px;&.open{left:0;}}& .content-scroll{top:60px;left:285px;position:absolute;overflow-y:auto;overflow-x:hidden;width:calc(100% - 285px);height:calc(100% - 60px);transition:width 0.5s ease-in-out,left 0.5s ease-in-out;background-image:url('https://assets.vrchat.com/www/images/Background_lines.svg');background-repeat:no-repeat;background-size:auto 100%;", u && (0, c.iv)("background-image:url(", Hn(), ");background-size:cover;background-position:bottom right;&>*{filter:drop-shadow(#714513 0 .125rem .25rem);}", ""), " & .home-content{max-width:2000px;margin:0 auto;display:flex;flex-direction:column;height:100%;padding:20px 95px 0 20px;transition:padding-right 0.35s ease-in-out;}&.rightPinned{width:calc(100% - 695px);& .home-content{padding:10px 20px 0 20px;}}&.leftOpen{width:calc(100% - 410px)!important;}}& .friends-button{width:65px;height:65px;top:70px;right:25px;transition:all 0.1s ease-in;border-radius:100%;background:#07242b;border:#053c48 solid 4px;position:fixed;display:flex;align-items:center;justify-content:center;&:hover{transform:scale(1.05);cursor:pointer;background:#05191d;}&:active{transform:scale(0.95);background:#053c48;}}@media (min-width: 1400px){& .rightbar.rightPinned{left:0;}& .hide-large{display:none;}}@media (max-width: 1400px){& .leftbar{top:60px;left:-285px;&.leftOpen{left:0;}}& .content-scroll{top:60px;left:0;width:100%;height:calc(100% - 60px);&.rightPinned{width:100%;& .home-content{padding:10px 95px 0 20px;}}&.leftOpen{width:100%!important;}}}@media (max-width: 768px){& .friends-button{display:none;}& .home-content{padding:10px 5px 0 5px!important;}& .leftbar{width:100%;left:-100%;min-width:auto!important;}& .rightbar{width:100%;left:100%;margin:0;min-width:auto!important;}}", "")
-                }, a.createElement(Jn, null), a.createElement("div", null, a.createElement(qn, {
+                }, a.createElement(Jn, null), a.createElement("div", null, a.createElement(zn, {
                     navToggleCallback: y,
                     friendsToggleCallback: function(e) {
                         window.removeEventListener("resize", x), E(e)
@@ -3697,7 +3697,7 @@
                     navToggleCallback: y
                 })), a.createElement(s.SV, {
                     fallback: _n.Z
-                }, a.createElement(qn, {
+                }, a.createElement(zn, {
                     horizontal: !0,
                     navToggleCallback: y
                 })))), a.createElement("div", {
@@ -3833,7 +3833,7 @@
                     })
                 }), a.createElement(i.AW, {
                     path: "/calendar",
-                    element: a.createElement(qe, {
+                    element: a.createElement(ze, {
                         ref: t
                     })
                 }), a.createElement(i.AW, {
@@ -3853,7 +3853,7 @@
                     }))
                 }), a.createElement(i.AW, {
                     path: "/group/:ownerId/calendar/:eventId",
-                    element: a.createElement(Kn.Z, null)
+                    element: a.createElement(Yn.Z, null)
                 }), a.createElement(i.AW, {
                     path: "/jams/*",
                     element: a.createElement(Nr, null)
@@ -4034,7 +4034,7 @@
         31358: (e, t, n) => {
             "use strict";
             n.d(t, {
-                Z: () => De
+                Z: () => qe
             });
             var r = n(87462),
                 a = n(45987),
@@ -4048,7 +4048,7 @@
                 m = n(32981),
                 f = n(79655),
                 p = n(30098),
-                g = n(72562),
+                g = n(80646),
                 b = n(62437),
                 w = n(54546),
                 h = n(42137),
@@ -4068,10 +4068,10 @@
                 S = n(85322),
                 T = n(67992),
                 P = n(95896),
-                z = n(27484),
-                D = n.n(z),
-                q = n(56176),
-                M = n.n(q),
+                D = n(27484),
+                q = n.n(D),
+                z = n(56176),
+                M = n.n(z),
                 R = n(84110),
                 U = n.n(R),
                 W = n(9419),
@@ -4083,8 +4083,8 @@
                 _ = n(87589),
                 X = n(4739),
                 J = n(79036),
-                K = n(59660),
-                Y = n(2155),
+                Y = n(59660),
+                K = n(2155),
                 H = n(42619),
                 Q = n(96231),
                 ee = n(34233),
@@ -4139,8 +4139,8 @@
                     camera: ee._j,
                     display: Q.YV,
                     trash: H.$,
-                    feather: Y.nA,
-                    images: K.l9,
+                    feather: K.nA,
+                    images: Y.l9,
                     house: J.faHouse,
                     location: X.iU,
                     rocket: _.tM,
@@ -4153,7 +4153,7 @@
                 Ae = n(46382),
                 Ce = n(88233),
                 ke = n(2566);
-            D().extend(U()), D().extend(M());
+            q().extend(U()), q().extend(M());
             var Ne = {
                     "economy.alert": {
                         caption: "Economy",
@@ -4314,7 +4314,7 @@
                     },
                     j = Z.icon,
                     B = Z.caption,
-                    S = t.createdAt && D()(t.createdAt);
+                    S = t.createdAt && q()(t.createdAt);
                 return d.createElement(d.Fragment, null, d.createElement(ke.jm, null, d.createElement(ke.lR, null, d.createElement(ke.XK, null, d.createElement(Ae.$1, {
                     icon: j
                 }), " ", d.createElement("i", null, B)), (null == t ? void 0 : t.canDelete) && d.createElement(ke.Z2, {
@@ -4418,8 +4418,8 @@
                     inviteResponse: "Invite Response",
                     message: "System Message"
                 },
-                ze = ["friend-active", "friend-add", "friend-online"];
-            const De = function(e) {
+                De = ["friend-active", "friend-add", "friend-online"];
+            const qe = function(e) {
                 var t, n, l, c, s, w, h, v, y = e.notification,
                     E = (0, a.Z)(e, Se),
                     x = (0, m.I0)(),
@@ -4445,16 +4445,16 @@
                     senderUserData: B
                 }));
                 if (404 === (null == T ? void 0 : T.status)) return null;
-                var P, z = Te[A],
-                    D = Pe[A],
-                    q = (0, u.Tq)(B.status).color,
+                var P, D = Te[A],
+                    q = Pe[A],
+                    z = (0, u.Tq)(B.status).color,
                     M = B.profilePicOverride || B.currentAvatarThumbnailImageUrl,
                     R = (null === (t = y.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = y.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = y.details) || void 0 === l ? void 0 : l.requestMessage);
                 return d.createElement(ke.jm, null, d.createElement(ke.XK, null, d.createElement(Ae.$1, {
-                    icon: z
-                }), "  ", d.createElement("i", null, D)), d.createElement(ke.g6, null, d.createElement(ke.rR, {
+                    icon: D
+                }), "  ", d.createElement("i", null, q)), d.createElement(ke.g6, null, d.createElement(ke.rR, {
                     to: "/home/user/".concat(C),
-                    statusColor: q
+                    statusColor: z
                 }, !(null !== (c = y.details) && void 0 !== c && c.imageUrl) && d.createElement(ke.v_, null, "Go To Profile"), d.createElement(ke.sJ, {
                     url: null !== (s = null === (w = y.details) || void 0 === w ? void 0 : w.imageUrl) && void 0 !== s ? s : M
                 }), d.createElement(ke.EU, {
@@ -4471,7 +4471,7 @@
                     onClick: function() {
                         return x((0, p.yK)({
                             notificationId: k,
-                            withServer: !ze.includes(y.type)
+                            withServer: !De.includes(y.type)
                         }))
                     },
                     color: "secondary"
@@ -4481,7 +4481,7 @@
                     onClick: function() {
                         x((0, p.FC)({
                             notificationId: y.id
-                        })), (0, g.Kz)("Social_AcceptFriendRequest", {
+                        })), (0, g.j)("Social_AcceptFriendRequest", {
                             targetUserId: y.senderUserId,
                             source: "web"
                         })
@@ -4493,7 +4493,7 @@
                     onClick: function() {
                         return x((0, p.yK)({
                             notificationId: k,
-                            withServer: !ze.includes(y.type)
+                            withServer: !De.includes(y.type)
                         }))
                     },
                     color: "secondary"
@@ -5394,4 +5394,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8c6f2f64abca514e6ee120e330e53ef0cb52825e36cadaafdeff3f2186cf9b36.js.map
+//# sourceMappingURL=d29680fff46f1b569370f09158d8bb55ecb11f25f65e1cfc621ff63d05035344.js.map

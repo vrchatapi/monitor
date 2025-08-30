@@ -141,20 +141,20 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    U = M ? k : I,
-                    j = M ? l.Dr : c.kZ;
+                    j = M ? k : I,
+                    U = M ? l.Dr : c.kZ;
                 return u.createElement(w.ZP, (0, r.Z)({
                     neutral: !0,
                     style: E({
                         lineHeight: "1"
                     }, m)
                 }, L, {
-                    title: U,
+                    title: j,
                     onClick: T
                 }), u.createElement(g.Z, {
-                    icon: j,
+                    icon: U,
                     className: Z && "tw-mr-1"
-                }), Z && U)
+                }), Z && j)
             }
         },
         37549: (e, t, a) => {
@@ -229,11 +229,11 @@
                 M = a(9669),
                 O = a.n(M),
                 T = a(90924),
-                U = a(46382),
-                j = a(85533),
+                j = a(46382),
+                U = a(85533),
                 P = a(64537),
-                z = a(37549),
-                A = a(72562),
+                A = a(37549),
+                z = a(80646),
                 R = a(12227),
                 $ = a(16278),
                 _ = a(85856),
@@ -335,7 +335,7 @@
                     }, {
                         key: "onLaunch",
                         value: function() {
-                            (0, A.Kz)("Launch", {
+                            (0, z.j)("Launch", {
                                 worldId: this.state.worldId,
                                 worldName: this.state.data.name,
                                 occupants: this.state.data.occupants,
@@ -412,14 +412,14 @@
                         value: function() {
                             var e, t, a = this,
                                 n = "Invite Me";
-                            if (this.state.invitePending && (n = c.createElement(U.$1, {
+                            if (this.state.invitePending && (n = c.createElement(j.$1, {
                                     color: "white",
                                     icon: b.LM,
                                     spin: !0
-                                })), this.state.inviteSent && (n = c.createElement(U.$1, {
+                                })), this.state.inviteSent && (n = c.createElement(j.$1, {
                                     color: "white",
                                     icon: f.LE
-                                })), this.state.inviteError && (n = c.createElement(U.$1, {
+                                })), this.state.inviteError && (n = c.createElement(j.$1, {
                                     color: "white",
                                     icon: u.Ps
                                 })), this.state.error) return 404 === (null === (t = this.state.error.response) || void 0 === t ? void 0 : t.status) ? c.createElement(B.default, null) : c.createElement("div", null, c.createElement("h1", null, "Error"), c.createElement("p", null, this.state.error.message));
@@ -430,7 +430,7 @@
                             var s = V || window.endpoint;
                             return "/" === s[s.length - 1] && (s = s.substr(0, s.length - 1)), (0, _.N4)(this.state.secureName) ? (0, _.N4)(V) ? s += "/home/launch?worldId=".concat(this.state.worldId) : s += "/".concat(this.state.worldId) : (0, _.N4)(V) ? s += "/i/".concat(this.state.secureName) : s += "/".concat(this.state.secureName), c.createElement("div", {
                                 className: (0, C.iv)("& h2,h3,h4,h5{text-transform:capitalize!important;}& h3{border:0;}& h4{color:#0193af;font-size:normal;}& h5{color:#0193af;font-size:normal;}& p{color:#8c8c8c;}& .container-bg{background:#111516;}& .box-shadow{border:4px solid #051d22;border-radius:10px;box-shadow:10px 10px 40px 0px rgba(0, 0, 0, 0.4);background-color:#060809;}& .navbar{font-size:1.25rem;border-top:none!important;background-image:none;}& .navbar .container{@media (min-width: 576px){max-width:540px;}@media (min-width: 768px){max-width:720px;}@media (min-width: 992px){max-width:960px;}@media (min-width: 1200px){max-width:1140px;}@media (min-width: 1920px){max-width:1920px;}}& .navbar .container .col{padding:0;}& .navbar span{padding-right:15px;color:gray;font-size:1rem;}& .navbar .sign-up-none{color:#f5b501;}& .navbar .sign-up-lg-none{color:#f5b501;font-size:1rem!important;}& .navbar .home{color:#f5b501;font-size:1rem!important;}& .logo{width:80px;}& .launch-btn{background:#f5b501;color:#ffffff;border:0;font-size:1.5rem;font-weight:bold;border-radius:25px;letter-spacing:1px;padding:5px 30px;}& .launch-btn:disabled{background:#777777;}& .secondary-launch-btn{opacity:0.9;}& .container-margin{margin-top:2 rem!important;}& .section-bg{background-image:url(", this.state.data.imageUrl, ");background-size:cover;background-position:center;height:400px;}& .header .card-text,.header .creator-link{font-size:1.5rem;}& .header .card-title{margin:0;line-height:1;}& .header .card-text{color:#8c8c8c;}& .world-image .card-body{display:flex;}& .world-image .world-size,.world-image .world-users{align-self:flex-start;text-align:right;background:gray;width:55px;padding:0 5px;flex-direction:flex-row-reverse;margin-bottom:10px;border-radius:5px;background:#777777;}& .world-description p{font-size:1.25rem;line-height:normal;}& .world-description a.more-link{text-decoration:underline;}& .world-description .btn-primary{background:#011b22;color:#0193af;font-weight:bold;border:2px solid #0193af;border-radius:25px;letter-spacing:1px;padding:5px 30px;}& .world-share{bottom:20px;position:absolute;}& .item-img{background:#ddd;width:23.3%;margin:6px;}& .item-img img{width:100%;}& .description-height{min-height:200px;}& .share-button{cursor:pointer;}", "")
-                            }, c.createElement(j.Z, null, this.state.data.name && "".concat(this.state.data.name, " - "), "Launch Instance"), c.createElement(y.Z, {
+                            }, c.createElement(U.Z, null, this.state.data.name && "".concat(this.state.data.name, " - "), "Launch Instance"), c.createElement(y.Z, {
                                 isOpen: this.state.isShowingSecureInstanceModal,
                                 toggle: function() {
                                     a.setState({
@@ -448,7 +448,7 @@
                                         isShowingSecureInstanceModal: !1
                                     })
                                 }
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 color: "white",
                                 icon: g.NB
                             })), c.createElement("h2", {
@@ -459,7 +459,7 @@
                                 className: "mb-5"
                             }, c.createElement(L.Z, {
                                 md: 1
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 icon: v.by,
                                 size: "3x",
                                 className: (0, C.iv)({
@@ -470,7 +470,7 @@
                                 md: 11
                             }, c.createElement("h2", null, "Locked Link"), c.createElement("p", null, "This link will follow the instance rules. If the link is shared, others also follow the rules to join.", c.createElement("br", null), c.createElement("br", null), c.createElement("strong", null, "Friends+: "), "You must have a friend in the instance to join.", c.createElement("br", null), c.createElement("strong", null, "Friends: "), "You must be friends with the instance creator to join.", c.createElement("br", null), c.createElement("br", null), c.createElement("strong", null, "Others: "), "Invite, Invite+, and Public instances are not affected by Locked Links.", c.createElement("br", null), c.createElement("br", null), "A Locked Link to an Invite or Invite+ instance is only usable by you, so it might not be that useful."))), c.createElement(Z.Z, null, c.createElement(L.Z, {
                                 md: 1
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 icon: w._1,
                                 size: "3x",
                                 className: (0, C.iv)({
@@ -501,7 +501,7 @@
                                         isShowingShortLinkModal: !1
                                     })
                                 }
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 color: "white",
                                 icon: g.NB
                             })), c.createElement("h2", {
@@ -533,7 +533,7 @@
                                     }))
                                 },
                                 title: "copy unlocked link"
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 color: "white",
                                 icon: this.state.shortNameCoppied ? f.LE : p.kZ
                             }))))), c.createElement(y.Z, {
@@ -554,7 +554,7 @@
                                         isShowingErrorModal: !1
                                     })
                                 }
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 color: "white",
                                 icon: g.NB
                             })), c.createElement("h2", {
@@ -653,10 +653,10 @@
                                     }))
                                 },
                                 title: "copy locked link"
-                            }, this.state.secureNameCoppied ? c.createElement(U.$1, {
+                            }, this.state.secureNameCoppied ? c.createElement(j.$1, {
                                 color: "white",
                                 icon: f.LE
-                            }) : c.createElement(U.$1, {
+                            }) : c.createElement(j.$1, {
                                 color: "white",
                                 icon: p.kZ
                             }))), void 0 !== o && this.state.shortName && c.createElement("div", {
@@ -675,7 +675,7 @@
                                         isShowingSecureInstanceModal: !0
                                     })
                                 }
-                            }, " ", c.createElement(U.$1, {
+                            }, " ", c.createElement(j.$1, {
                                 color: "white",
                                 icon: u.Ps
                             }), " "))), c.createElement("div", {
@@ -699,7 +699,7 @@
                                 className: "card-body justify-content-end align-self-end"
                             }, c.createElement("div", {
                                 className: "world-users"
-                            }, c.createElement(U.$1, {
+                            }, c.createElement(j.$1, {
                                 color: "white",
                                 icon: h.IL,
                                 className: "me-2"
@@ -735,7 +735,7 @@
                         }
                     }]), s
                 }(c.Component);
-            const H = (0, z.Z)((0, l.$j)()(F));
+            const H = (0, A.Z)((0, l.$j)()(F));
 
             function Y(e) {
                 var t = function() {
@@ -789,4 +789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b1baefb227ad583f4cfa33aa210ecc76546c4ac3a2354955532e3914b1f5bb8f.js.map
+//# sourceMappingURL=1bc8b7e91f6dcf2e518d293d5cc3fd08b95550cba9e962fffad5852c5a3e77ba.js.map

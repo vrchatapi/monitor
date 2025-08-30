@@ -163,7 +163,7 @@
                 y = r(17383),
                 E = r(22202),
                 k = r(17219),
-                N = r(72562),
+                N = r(80646),
                 j = r(69690),
                 S = r(82470),
                 Z = r(41400),
@@ -202,10 +202,10 @@
                     O = g.isSuccess,
                     A = g.error,
                     R = (0, k.y)().data,
-                    z = (void 0 === R ? {} : R).currentTOSVersion,
-                    D = (0, y.sc)(),
-                    P = D.nameTaken,
-                    q = D.emailTaken,
+                    D = (void 0 === R ? {} : R).currentTOSVersion,
+                    P = (0, y.sc)(),
+                    z = P.nameTaken,
+                    q = P.emailTaken,
                     M = d.useState({
                         value: "",
                         error: !1,
@@ -289,14 +289,14 @@
                     Ae = (0, o.Z)(Te, 2),
                     Ie = Ae[0],
                     Re = Ae[1],
-                    ze = d.useRef(null);
+                    De = d.useRef(null);
                 d.useEffect((function() {
                     Ie.value && "number" == typeof Ie.failedAt && w()().isAfter(w()(Ie.failedAt).add(1, "days")) && Re({
                         value: !1,
                         failedAt: null
                     })
                 }), []), d.useEffect((function() {
-                    Ze(!0 === B.ok && !0 === H.ok && !0 === G.ok && !0 === K.ok && !0 === re.ok && !0 === le.ok && ue === z && !0 === be)
+                    Ze(!0 === B.ok && !0 === H.ok && !0 === G.ok && !0 === K.ok && !0 === re.ok && !0 === le.ok && ue === D && !0 === be)
                 }), [B, H, G, K, re, le, ue, be]), d.useEffect((function() {
                     (0, n.Z)(i().mark((function e() {
                         var t, n, o;
@@ -312,11 +312,11 @@
                     })))()
                 }), [O, a]), d.useEffect((function() {
                     var e;
-                    A && (0, N.Kz)("Register_Error", {
+                    A && (0, N.j)("Register_Error", {
                         error: null === (e = A.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
                     })
                 }), [A]);
-                var De = function() {
+                var Pe = function() {
                         var e = (0, n.Z)(i().mark((function e(t) {
                             var r, a, n, o;
                             return i().wrap((function(e) {
@@ -352,7 +352,7 @@
                                             return T(T({}, e), {}, {
                                                 checking: !0
                                             })
-                                        })), e.next = 13, P(a);
+                                        })), e.next = 13, z(a);
                                     case 13:
                                         o = e.sent, F((function(e) {
                                             return T(T({}, e), {}, {
@@ -372,7 +372,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Pe = function() {
+                    ze = function() {
                         var e = (0, n.Z)(i().mark((function e(t) {
                             var r, a;
                             return i().wrap((function(e) {
@@ -507,7 +507,7 @@
                                             failedAt: Date.now()
                                         }), e.abrupt("return");
                                     case 12:
-                                        Oe.current || (_e(), null === (r = ze.current) || void 0 === r || r.resetCaptcha());
+                                        Oe.current || (_e(), null === (r = De.current) || void 0 === r || r.resetCaptcha());
                                     case 13:
                                     case "end":
                                         return e.stop()
@@ -560,7 +560,7 @@
                     name: "username",
                     "aria-label": "Desired display name",
                     value: B.value,
-                    onChange: De,
+                    onChange: Pe,
                     loading: B.checking,
                     success: !B.checking && B.ok,
                     className: "tw-mb-1",
@@ -583,7 +583,7 @@
                     name: "email",
                     "aria-label": "New Email",
                     value: H.value,
-                    onChange: Pe,
+                    onChange: ze,
                     onBlur: qe,
                     loading: H.checking,
                     isError: H.error
@@ -774,7 +774,7 @@
                     id: "tos",
                     onChange: function(e) {
                         var t = e.target.checked;
-                        me(t ? z : 0)
+                        me(t ? D : 0)
                     },
                     htmlFor: "tos",
                     className: "tw-mb-0",
@@ -816,7 +816,7 @@
                         ve(!0), ke(e)
                     },
                     onExpire: _e,
-                    ref: ze
+                    ref: De
                 })), d.createElement("div", {
                     className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
                 }, d.createElement(x.zx, {
@@ -1116,4 +1116,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8e78e7fbc21b54cb68d56ae56957ff1c89bdc2abb15d7a2408264960c894e1c8.js.map
+//# sourceMappingURL=4ca068f04c5c236e88a51012a3423d23b04db04189b43dd68ad222f89f54db1c.js.map
