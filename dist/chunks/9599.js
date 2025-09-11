@@ -1,5 +1,5 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [9599, 7932, 4324], {
+    [9599], {
         15832: (e, t, r) => {
             "use strict";
             t._ = void 0;
@@ -112,7 +112,7 @@
                 a = r(96268),
                 u = r(67294);
 
-            function c(e) {
+            function i(e) {
                 try {
                     return JSON.parse(e)
                 } catch (t) {
@@ -121,11 +121,11 @@
             }
             t.useLocalStorage = function(e, t) {
                 void 0 === t && (t = null);
-                var r = u.useState(null === a.storage.getItem(e) ? t : c(a.storage.getItem(e))),
-                    i = r[0],
+                var r = u.useState(null === a.storage.getItem(e) ? t : i(a.storage.getItem(e))),
+                    c = r[0],
                     s = r[1],
                     l = u.useCallback((function(t) {
-                        o.isTypeOfLocalStorageChanged(t) ? t.detail.key === e && s(t.detail.value) : t.key === e && s(null === t.newValue ? null : c(t.newValue))
+                        o.isTypeOfLocalStorageChanged(t) ? t.detail.key === e && s(t.detail.value) : t.key === e && s(null === t.newValue ? null : i(t.newValue))
                     }), [s, e]);
                 u.useEffect((function() {
                     if (n.isBrowser()) {
@@ -139,12 +139,12 @@
                     }
                 }), [e, t, l]);
                 var f = u.useCallback((function(t) {
-                        return t instanceof Function ? o.writeStorage(e, t(i)) : o.writeStorage(e, t)
+                        return t instanceof Function ? o.writeStorage(e, t(c)) : o.writeStorage(e, t)
                     }), [e]),
                     v = u.useCallback((function() {
                         return o.deleteFromStorage(e)
                     }), [e]);
-                return [null != i ? i : t, f, v]
+                return [null != c ? c : t, f, v]
             }
         },
         14636: (e, t, r) => {
@@ -152,18 +152,18 @@
                 n = r(35694),
                 a = r(1469),
                 u = r(44144),
-                c = r(65776),
-                i = r(36719),
+                i = r(65776),
+                c = r(36719),
                 s = Object.prototype.hasOwnProperty;
             e.exports = function(e, t) {
                 var r = a(e),
                     l = !r && n(e),
                     f = !r && !l && u(e),
-                    v = !r && !l && !f && i(e),
+                    v = !r && !l && !f && c(e),
                     p = r || l || f || v,
                     d = p ? o(e.length, String) : [],
                     g = d.length;
-                for (var y in e) !t && !s.call(e, y) || p && ("length" == y || f && ("offset" == y || "parent" == y) || v && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || c(y, g)) || d.push(y);
+                for (var y in e) !t && !s.call(e, y) || p && ("length" == y || f && ("offset" == y || "parent" == y) || v && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || i(y, g)) || d.push(y);
                 return d
             }
         },
@@ -191,13 +191,6 @@
         29750: e => {
             e.exports = function(e, t, r) {
                 return e == e && (void 0 !== r && (e = e <= r ? e : r), void 0 !== t && (e = e >= t ? e : t)), e
-            }
-        },
-        9454: (e, t, r) => {
-            var o = r(44239),
-                n = r(37005);
-            e.exports = function(e) {
-                return n(e) && "[object Arguments]" == o(e)
             }
         },
         38749: (e, t, r) => {
@@ -289,13 +282,13 @@
                 n = t && !t.nodeType && t,
                 a = n && e && !e.nodeType && e,
                 u = a && a.exports === n && o.process,
-                c = function() {
+                i = function() {
                     try {
                         var e = a && a.require && a.require("util").types;
                         return e || u && u.binding && u.binding("util")
                     } catch (e) {}
                 }();
-            e.exports = c
+            e.exports = i
         },
         5569: e => {
             e.exports = function(e, t) {
@@ -312,28 +305,11 @@
                     a = n - 1;
                 for (t = void 0 === t ? n : t; ++r < t;) {
                     var u = o(r, a),
-                        c = e[u];
-                    e[u] = e[r], e[r] = c
+                        i = e[u];
+                    e[u] = e[r], e[r] = i
                 }
                 return e.length = t, e
             }
-        },
-        35694: (e, t, r) => {
-            var o = r(9454),
-                n = r(37005),
-                a = Object.prototype,
-                u = a.hasOwnProperty,
-                c = a.propertyIsEnumerable,
-                i = o(function() {
-                    return arguments
-                }()) ? o : function(e) {
-                    return n(e) && u.call(e, "callee") && !c.call(e, "callee")
-                };
-            e.exports = i
-        },
-        1469: e => {
-            var t = Array.isArray;
-            e.exports = t
         },
         44144: (e, t, r) => {
             e = r.nmd(e);
@@ -341,17 +317,17 @@
                 n = r(95062),
                 a = t && !t.nodeType && t,
                 u = a && e && !e.nodeType && e,
-                c = u && u.exports === a ? o.Buffer : void 0,
-                i = (c ? c.isBuffer : void 0) || n;
-            e.exports = i
+                i = u && u.exports === a ? o.Buffer : void 0,
+                c = (i ? i.isBuffer : void 0) || n;
+            e.exports = c
         },
         36719: (e, t, r) => {
             var o = r(38749),
                 n = r(7518),
                 a = r(31167),
                 u = a && a.isTypedArray,
-                c = u ? n(u) : o;
-            e.exports = c
+                i = u ? n(u) : o;
+            e.exports = i
         },
         3674: (e, t, r) => {
             var o = r(14636),
@@ -374,9 +350,9 @@
                 n = r(60726),
                 a = r(1469),
                 u = r(16612),
-                c = r(40554);
+                i = r(40554);
             e.exports = function(e, t, r) {
-                return t = (r ? u(e, t, r) : void 0 === t) ? 1 : c(t), (a(e) ? o : n)(e, t)
+                return t = (r ? u(e, t, r) : void 0 === t) ? 1 : i(t), (a(e) ? o : n)(e, t)
             }
         },
         95062: e => {
@@ -401,4 +377,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a8c0f72634a946c4dde2293e0379310d10e391dbb2de3cb741470a6e57c48fc7.js.map
+//# sourceMappingURL=aa1ccdfb174cff5a38ae4f94fbc6dabe8fd478d85cdb6730428cd1b3c43dd63d.js.map

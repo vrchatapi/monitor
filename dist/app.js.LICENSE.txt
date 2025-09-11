@@ -563,4 +563,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// @license MIT
+
 //! moment.js

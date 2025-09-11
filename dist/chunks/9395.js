@@ -1,57 +1,245 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [9395], {
-        39395: (e, t, a) => {
+        99395: (e, t, a) => {
             "use strict";
             a.r(t), a.d(t, {
-                default: () => p
+                default: () => S
             });
-            var r = a(67294),
-                i = a(89250),
-                c = a(46382),
-                n = a(41400),
-                w = a(13887);
-            const p = function() {
-                var e = (0, i.s0)();
-                return r.createElement(w.Z, null, r.createElement(c.$4, null, "Bad Email Verification"), r.createElement(n.W2, null, r.createElement(n.sg, {
-                    md: {
-                        size: 6,
-                        offset: 3
-                    },
-                    className: "mt-5"
-                }, r.createElement(n.X2, {
-                    className: "justify-content-center"
-                }, r.createElement(n.TR, {
-                    href: "https://vrchat.com",
-                    target: "_blank"
-                })), r.createElement(n.im, null, r.createElement(c.qX, {
-                    type: "error",
-                    title: "Bad Email Verification",
-                    message: "The link you followed is either invalid, or you are already verified!\n\nPlease log in and request a new verification link if prompted."
-                }), r.createElement(c.zx, {
-                    role: "link",
-                    neutral: !0,
-                    onClick: function() {
-                        e("/home/login", {
-                            state: {
-                                logout: !0
-                            }
-                        })
+            var r = a(15861),
+                n = a(54546),
+                i = a(64687),
+                o = a.n(i),
+                c = a(67294),
+                l = a(32981),
+                w = a(89250),
+                s = a(79655),
+                u = a(60006),
+                p = a(5513);
+            const g = function() {
+                var e = (0, s.lr)(),
+                    t = (0, n.Z)(e, 1)[0];
+                return null !== t.get("campaignName") ? {
+                    name: t.get("campaignName"),
+                    source: t.get("campaignSource"),
+                    medium: t.get("campaignMedium"),
+                    id: "".concat(t.get("campaignName"), "_").concat(t.get("campaignSource"), "_").concat(t.get("campaignMedium"))
+                } : null
+            };
+            var m = a(42138),
+                d = a(15832),
+                h = a(80646);
+            const f = function(e) {
+                var t = e.trackingEventName,
+                    a = void 0 === t ? null : t,
+                    r = (0, d._)("campaigns", []),
+                    i = (0, n.Z)(r, 2),
+                    o = i[0],
+                    l = i[1],
+                    w = (0, d._)("campaignsSeen", []),
+                    s = (0, n.Z)(w, 2),
+                    u = s[0],
+                    p = s[1],
+                    f = g();
+                (0, c.useEffect)((function() {
+                    if (null !== f) {
+                        null !== a && (0, h.j)(a, {
+                            campaign: f
+                        });
+                        var e = [].concat((0, m.Z)(o), [f]);
+                        l((0, m.Z)(new Map(e.map((function(e) {
+                            return [e.id, e]
+                        }))).values())), p(u.filter((function(e) {
+                            return e.name !== f.name
+                        })))
                     }
-                }, "Back To Login")))))
+                }), [])
+            };
+            var b = a(22202),
+                v = a(61509),
+                x = a(96985),
+                j = a(13887),
+                N = a(41400);
+            const S = function() {
+                var e;
+                f({
+                    trackingEventName: "Login_Campaign_View"
+                });
+                var t = (0, w.s0)(),
+                    a = (0, l.I0)(),
+                    i = (0, w.TH)().state,
+                    m = (0, b.YA)(),
+                    d = (0, n.Z)(m, 2),
+                    S = d[0],
+                    E = d[1],
+                    y = E.isLoading,
+                    k = E.error,
+                    C = E.isError,
+                    L = (0, b._y)(),
+                    I = (0, n.Z)(L, 1)[0],
+                    T = (0, b.XC)().data,
+                    _ = (0, c.useState)(""),
+                    A = (0, n.Z)(_, 2),
+                    Z = A[0],
+                    R = A[1],
+                    V = (0, c.useState)(""),
+                    O = (0, n.Z)(V, 2),
+                    M = O[0],
+                    D = O[1],
+                    F = g(),
+                    U = function() {
+                        null != i && i.redirectTo ? t(i.redirectTo) : t("/home")
+                    };
+                (0, c.useEffect)((function() {
+                    var e;
+                    if (!(null == T || null === (e = T.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == i ? void 0 : i.logout)) return a(v.S.util.resetApiState()), a((0, p.kS)()), void I();
+                    null != T && T.id && U()
+                }), [T]);
+                var q, z, H = function(e) {
+                        var t, a;
+                        e.preventDefault(), R(null !== (t = null === (a = e.target) || void 0 === a ? void 0 : a.value) && void 0 !== t ? t : "")
+                    },
+                    W = function(e) {
+                        var t, a;
+                        e.preventDefault(), D(null !== (t = null === (a = e.target) || void 0 === a ? void 0 : a.value) && void 0 !== t ? t : "")
+                    },
+                    X = function() {
+                        var e = (0, r.Z)(o().mark((function e(a) {
+                            var r, n, c, l;
+                            return o().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return a.preventDefault(), (0, h.NA)(!1), e.prev = 2, e.next = 5, S({
+                                            username: encodeURIComponent(null == Z ? void 0 : Z.trim()),
+                                            password: encodeURIComponent(M)
+                                        }).unwrap();
+                                    case 5:
+                                        if (null == (r = e.sent) || !r.requiresTwoFactorAuth) {
+                                            e.next = 14;
+                                            break
+                                        }
+                                        if (c = "/home/twofactorauth", "emailOtp" === (null === (n = r.requiresTwoFactorAuth) || void 0 === n ? void 0 : n[0]) && (c = "/home/emailtwofactorauth"), null == i || !i.redirectTo) {
+                                            e.next = 12;
+                                            break
+                                        }
+                                        return t(c, {
+                                            state: {
+                                                redirectTo: i.redirectTo
+                                            }
+                                        }), e.abrupt("return");
+                                    case 12:
+                                        return t(c), e.abrupt("return");
+                                    case 14:
+                                        return (0, h.j)("Login_LoginSuccess", {
+                                            user: r.id,
+                                            campaign: F
+                                        }), U(), e.abrupt("return");
+                                    case 19:
+                                        e.prev = 19, e.t0 = e.catch(2), (0, h.j)("Login_LoginFail", {
+                                            error: null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message
+                                        }), R(null == Z ? void 0 : Z.trim());
+                                    case 23:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [2, 19]
+                            ])
+                        })));
+                        return function(t) {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    B = "Failed to Log In",
+                    G = null == k || null === (e = k.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
+                C && ((null === (q = G) || void 0 === q ? void 0 : q.indexOf(":")) > 0 ? (B = G.substring(0, G.indexOf(":")).trim(), G = G.substring(G.indexOf(":") + 1).trim()) : 0 === (null === (z = G) || void 0 === z ? void 0 : z.indexOf(":")) && (G = G.substring(1).trim()));
+                return c.createElement(j.Z, {
+                    showCredits: !0
+                }, c.createElement(x.$4, null, "Login"), c.createElement("div", {
+                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[500px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                }, c.createElement(N.l0, {
+                    id: "login-form",
+                    name: "login-form",
+                    className: "nobottommargin",
+                    onSubmit: X
+                }, c.createElement("h4", {
+                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                }, "Welcome to VRChat"), c.createElement(N.X2, {
+                    className: "align-items-flex-end justify-content-between"
+                }), C && c.createElement(x.qX, {
+                    type: "error",
+                    role: "alert",
+                    "aria-label": "Login Error",
+                    title: B,
+                    message: G,
+                    className: "mb-2"
+                }), c.createElement(x.II, {
+                    type: "text",
+                    id: "username_email",
+                    name: "username_email",
+                    "aria-label": "username",
+                    placeholder: "Username/Email",
+                    value: Z,
+                    onChange: H,
+                    onKeyUp: H
+                }), c.createElement(x.II, {
+                    type: "password",
+                    id: "password",
+                    name: "password",
+                    role: "textbox",
+                    "aria-label": "password",
+                    className: "mt-2",
+                    placeholder: "Password",
+                    value: M,
+                    onChange: W,
+                    onKeyUp: W
+                }), c.createElement("div", {
+                    className: "tw-w-full tw-text-right tw-mt-2"
+                }, "Forgot your", " ", c.createElement(s.rU, {
+                    to: "/home/password",
+                    className: "tw-text-link-highlight"
+                }, "password"), " ", "or", " ", c.createElement(s.rU, {
+                    to: "/home/forgot-email",
+                    className: "tw-text-link-highlight"
+                }, "email address"), "?"), c.createElement(x.zx, {
+                    "aria-label": "Login",
+                    className: "tw-mt-6",
+                    type: "submit",
+                    loading: y,
+                    disabled: "" === Z || "" === M
+                }, "Login"), c.createElement("hr", {
+                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mb-0"
+                }), c.createElement("h4", {
+                    className: "tw-text-base tw-text-white tw-text-center tw-mt-5 tw-mb-0"
+                }, "New to VRChat?"), c.createElement(u.Qj, {
+                    to: "/home/register",
+                    className: "tw-w-full",
+                    "aria-label": "Create an account"
+                }, "Create an account"), c.createElement("hr", {
+                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mb-0"
+                }), c.createElement("h4", {
+                    className: "tw-text-base tw-text-subtext-grey tw-mt-5 tw-mb-6"
+                }, "Using an Oculus, Steam, or Viveport account?"), c.createElement("p", {
+                    className: "tw-text-subtext-grey tw-text-xs"
+                }, "Don't worry! You can link your VRChat account to your existing Oculus / Steam / Viveport account and keep all your friends.", c.createElement("a", {
+                    href: "https://help.vrchat.com/hc/en-us/articles/360062659053-I-want-to-turn-my-Steam-Oculus-or-Viveport-account-into-a-VRChat-account#:~:text=Please%20log%20into%20VRChat%20with,screen%20to%20link%20your%20accounts.",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    "aria-label": "Learn More about Account Linking"
+                }, " ", "Learn More")))))
             }
         },
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => o
+                Z: () => s
             });
             var r = a(54546),
-                i = a(42404),
-                c = a.n(i),
-                n = a(67294),
-                w = a(86646),
-                p = a(62427);
-            const g = [{
+                n = a(42404),
+                i = a.n(n),
+                o = a(67294),
+                c = a(86646),
+                l = a(62427);
+            const w = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -116,65 +304,65 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const o = function(e) {
+            const s = function(e) {
                 var t = e.children,
                     a = e.showCredits,
-                    i = (0, n.useState)(null),
-                    o = (0, r.Z)(i, 2),
-                    h = o[0],
-                    l = o[1],
-                    d = (0, n.useState)(null),
-                    s = (0, r.Z)(d, 2),
-                    m = s[0],
-                    u = s[1],
-                    f = (0, n.useMemo)((function() {
-                        return c()(g, 6)
+                    n = (0, o.useState)(null),
+                    s = (0, r.Z)(n, 2),
+                    u = s[0],
+                    p = s[1],
+                    g = (0, o.useState)(null),
+                    m = (0, r.Z)(g, 2),
+                    d = m[0],
+                    h = m[1],
+                    f = (0, o.useMemo)((function() {
+                        return i()(w, 6)
                     }), []);
-                (0, n.useEffect)((function() {
-                    if (null === h) l(f[0]);
+                (0, o.useEffect)((function() {
+                    if (null === u) p(f[0]);
                     else {
-                        var e = b(h);
+                        var e = b(u);
                         setTimeout((function() {
-                            return l(e)
-                        }), 1e4), u(e)
+                            return p(e)
+                        }), 1e4), h(e)
                     }
-                }), [h]);
+                }), [u]);
                 var b = function(e) {
                     var t = f.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
                     }));
                     return t === f.length - 1 ? f[0] : f[t + 1]
                 };
-                return n.createElement("div", {
+                return o.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === h ? "none" : "url(".concat(h.image, ")")
+                        backgroundImage: null === u ? "none" : "url(".concat(u.image, ")")
                     }
-                }, n.createElement("div", {
+                }, o.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
-                }, n.createElement("a", {
+                }, o.createElement("a", {
                     href: "https://vrchat.com",
                     target: "_blank",
                     rel: "noreferrer"
-                }, n.createElement("img", {
+                }, o.createElement("img", {
                     className: "tw-w-[170px] tw-h-[75px]",
                     src: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-crop-background.png",
                     alt: "VRChat"
-                }), n.createElement("img", {
+                }), o.createElement("img", {
                     className: "tw-hidden",
-                    src: null == m ? void 0 : m.image,
+                    src: null == d ? void 0 : d.image,
                     alt: "VRChat"
-                }))), n.createElement("div", {
+                }))), o.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == h ? void 0 : h.worldName) && a && n.createElement("div", {
+                }, t), (null == u ? void 0 : u.worldName) && a && o.createElement("div", {
                     className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
-                }, n.createElement(w.Z, {
-                    icon: p.default,
+                }, o.createElement(c.Z, {
+                    icon: l.default,
                     title: "World",
                     size: "2x"
-                }), n.createElement("p", {
+                }), o.createElement("p", {
                     className: "tw-mb-0 tw-leading-none"
-                }, h.worldName, n.createElement("br", null), n.createElement("small", null, "by ", h.authorName))))
+                }, u.worldName, o.createElement("br", null), o.createElement("small", null, "by ", u.authorName))))
             }
         },
         92610: (e, t, a) => {
@@ -435,4 +623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=57dc37b6a08cea7d9bf040af2a8bca4abbd2df3f6bf4be7fe5cee60480cc6b72.js.map
+//# sourceMappingURL=e0d82d43b4f82c785d38afc56a9465ea7cedec7a9c56d2cdca84a89b4e57a986.js.map

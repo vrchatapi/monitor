@@ -1,29 +1,17 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [4673], {
-        45155: (e, t) => {
-            "use strict";
-            var a = "person-circle-question",
-                r = [],
-                c = "e542",
-                n = "M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM368 321.6l0 6.4c0 8.8 7.2 16 16 16s16-7.2 16-16l0-6.4c0-5.3 4.3-9.6 9.6-9.6l40.5 0c7.7 0 13.9 6.2 13.9 13.9c0 5.2-2.9 9.9-7.4 12.3l-32 16.8c-5.3 2.8-8.6 8.2-8.6 14.2l0 14.8c0 8.8 7.2 16 16 16s16-7.2 16-16l0-5.1 23.5-12.3c15.1-7.9 24.5-23.6 24.5-40.6c0-25.4-20.6-45.9-45.9-45.9l-40.5 0c-23 0-41.6 18.6-41.6 41.6z";
-            t.DF = {
-                prefix: "fas",
-                iconName: a,
-                icon: [576, 512, r, c, n]
-            }, t.Au = t.DF
-        },
         13887: (e, t, a) => {
             "use strict";
             a.d(t, {
-                Z: () => o
+                Z: () => s
             });
             var r = a(54546),
-                c = a(42404),
-                n = a.n(c),
-                i = a(67294),
+                n = a(42404),
+                i = a.n(n),
+                c = a(67294),
                 w = a(86646),
                 l = a(62427);
-            const s = [{
+            const o = [{
                 worldName: "Horse Mountain",
                 authorName: "nprowler",
                 image: a(92610)
@@ -88,27 +76,27 @@
                 authorName: "chu-ri",
                 image: a(50749)
             }];
-            const o = function(e) {
+            const s = function(e) {
                 var t = e.children,
                     a = e.showCredits,
-                    c = (0, i.useState)(null),
-                    o = (0, r.Z)(c, 2),
-                    p = o[0],
-                    m = o[1],
-                    g = (0, i.useState)(null),
+                    n = (0, c.useState)(null),
+                    s = (0, r.Z)(n, 2),
+                    p = s[0],
+                    m = s[1],
+                    g = (0, c.useState)(null),
                     d = (0, r.Z)(g, 2),
-                    u = d[0],
-                    h = d[1],
-                    f = (0, i.useMemo)((function() {
-                        return n()(s, 6)
+                    h = d[0],
+                    u = d[1],
+                    f = (0, c.useMemo)((function() {
+                        return i()(o, 6)
                     }), []);
-                (0, i.useEffect)((function() {
+                (0, c.useEffect)((function() {
                     if (null === p) m(f[0]);
                     else {
                         var e = b(p);
                         setTimeout((function() {
                             return m(e)
-                        }), 1e4), h(e)
+                        }), 1e4), u(e)
                     }
                 }), [p]);
                 var b = function(e) {
@@ -117,36 +105,36 @@
                     }));
                     return t === f.length - 1 ? f[0] : f[t + 1]
                 };
-                return i.createElement("div", {
+                return c.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
                         backgroundImage: null === p ? "none" : "url(".concat(p.image, ")")
                     }
-                }, i.createElement("div", {
+                }, c.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
-                }, i.createElement("a", {
+                }, c.createElement("a", {
                     href: "https://vrchat.com",
                     target: "_blank",
                     rel: "noreferrer"
-                }, i.createElement("img", {
+                }, c.createElement("img", {
                     className: "tw-w-[170px] tw-h-[75px]",
                     src: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-crop-background.png",
                     alt: "VRChat"
-                }), i.createElement("img", {
+                }), c.createElement("img", {
                     className: "tw-hidden",
-                    src: null == u ? void 0 : u.image,
+                    src: null == h ? void 0 : h.image,
                     alt: "VRChat"
-                }))), i.createElement("div", {
+                }))), c.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == p ? void 0 : p.worldName) && a && i.createElement("div", {
+                }, t), (null == p ? void 0 : p.worldName) && a && c.createElement("div", {
                     className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
-                }, i.createElement(w.Z, {
+                }, c.createElement(w.Z, {
                     icon: l.default,
                     title: "World",
                     size: "2x"
-                }), i.createElement("p", {
+                }), c.createElement("p", {
                     className: "tw-mb-0 tw-leading-none"
-                }, p.worldName, i.createElement("br", null), i.createElement("small", null, "by ", p.authorName))))
+                }, p.worldName, c.createElement("br", null), c.createElement("small", null, "by ", p.authorName))))
             }
         },
         94673: (e, t, a) => {
@@ -155,18 +143,18 @@
                 default: () => b
             });
             var r = a(15861),
-                c = a(54546),
-                n = a(45155),
-                i = a(80916),
+                n = a(54546),
+                i = a(45155),
+                c = a(80916),
                 w = a(64687),
                 l = a.n(w),
-                s = a(67294),
-                o = a(32981),
+                o = a(67294),
+                s = a(32981),
                 p = a(79655),
                 m = (a(37337), a(17383)),
                 g = (a(60006), a(9669)),
                 d = a.n(g),
-                u = function(e) {
+                h = function(e) {
                     var t = e.name;
                     return {
                         type: "SEND_EMAIL_REMINDER",
@@ -175,48 +163,48 @@
                         })
                     }
                 },
-                h = a(46382),
+                u = a(96985),
                 f = a(13887);
             const b = function() {
-                var e = (0, o.I0)(),
-                    t = s.useState(""),
-                    a = (0, c.Z)(t, 2),
+                var e = (0, s.I0)(),
+                    t = o.useState(""),
+                    a = (0, n.Z)(t, 2),
                     w = a[0],
                     g = a[1],
                     d = (0, m.Nr)(w),
-                    b = s.useState(!1),
-                    x = (0, c.Z)(b, 2),
+                    b = o.useState(!1),
+                    x = (0, n.Z)(b, 2),
                     N = x[0],
                     j = x[1],
-                    v = (0, o.v9)((function(e) {
+                    v = (0, s.v9)((function(e) {
                         return e.recoverPassword
                     })),
                     E = v.error,
                     S = (v.statusCode, v.loading),
-                    y = s.useMemo((function() {
+                    y = o.useMemo((function() {
                         return "" === w
                     }), [w]),
-                    k = s.useMemo((function() {
+                    k = o.useMemo((function() {
                         return w !== d
                     }), [w, d]),
-                    M = s.useMemo((function() {
+                    I = o.useMemo((function() {
                         return d.length > 200 ? "That name is too long" : null
                     }), [d]),
-                    A = s.useMemo((function() {
+                    M = o.useMemo((function() {
                         return N && !S && !E
                     }), [N, S, E]),
-                    I = function() {
+                    A = function() {
                         var t = (0, r.Z)(l().mark((function t(a) {
                             return l().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        if (!k && !M) {
+                                        if (!k && !I) {
                                             t.next = 2;
                                             break
                                         }
                                         return t.abrupt("return");
                                     case 2:
-                                        return a.preventDefault(), t.prev = 3, t.next = 6, e(u({
+                                        return a.preventDefault(), t.prev = 3, t.next = 6, e(h({
                                             name: w
                                         }));
                                     case 6:
@@ -235,35 +223,35 @@
                             return t.apply(this, arguments)
                         }
                     }(),
-                    D = E;
-                E && E.indexOf(":") > 0 && (D = E.substring(E.indexOf(":") + 1).trim());
-                return s.createElement(f.Z, null, s.createElement(h.$4, null, "Forgot Email Address"), s.createElement("div", {
+                    C = E;
+                E && E.indexOf(":") > 0 && (C = E.substring(E.indexOf(":") + 1).trim());
+                return o.createElement(f.Z, null, o.createElement(u.$4, null, "Forgot Email Address"), o.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit tw-mt-[200px]"
-                }, s.createElement("form", {
+                }, o.createElement("form", {
                     id: "email-recovery-form",
                     name: "email-recovery-form",
                     onSubmit: function(e) {
-                        e.preventDefault(), I(e)
+                        e.preventDefault(), A(e)
                     }
-                }, s.createElement("div", {
+                }, o.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
-                }, s.createElement("div", {
+                }, o.createElement("div", {
                     className: "tw-mb-5"
-                }, A && s.createElement(h.$1, {
-                    icon: i.sl,
+                }, M && o.createElement(u.$1, {
+                    icon: c.sl,
                     className: "tw-w-[72px] tw-h-[72px]"
-                }), !A && s.createElement(h.$1, {
-                    icon: n.Au,
+                }), !M && o.createElement(u.$1, {
+                    icon: i.Au,
                     className: "tw-w-[72px] tw-h-[72px]"
-                })), s.createElement("h4", {
+                })), o.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
-                }, "Forgot Email Address"), !A && s.createElement("div", {
+                }, "Forgot Email Address"), !M && o.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col"
-                }, s.createElement("div", {
+                }, o.createElement("div", {
                     className: "tw-w-full"
-                }, s.createElement("p", {
+                }, o.createElement("p", {
                     className: "tw-text-left tw-mb-2"
-                }, "Please enter the user or display name of your account.")), s.createElement(h.II, {
+                }, "Please enter the user or display name of your account.")), o.createElement(u.II, {
                     type: "text",
                     inputMode: "name",
                     "aria-label": "Username",
@@ -274,35 +262,35 @@
                         var t = e.target.value;
                         g(void 0 === t ? "" : t), j(!1)
                     },
-                    isError: M && !k && !y
-                }), M && !k && !y && s.createElement("p", {
+                    isError: I && !k && !y
+                }), I && !k && !y && o.createElement("p", {
                     role: "alert",
                     "aria-label": "Email Error",
                     className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
-                }, M)), s.createElement("div", {
+                }, I)), o.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col"
-                }, s.createElement("p", {
+                }, o.createElement("p", {
                     className: "tw-text-left tw-mt-2"
-                }, "If the name is associated with a verified email address, we will send a reminder message to that address.")), s.createElement("div", {
-                    className: A ? "tw-w-full tw-flex tw-flex-col" : "tw-hidden",
+                }, "If the name is associated with a verified email address, we will send a reminder message to that address.")), o.createElement("div", {
+                    className: M ? "tw-w-full tw-flex tw-flex-col" : "tw-hidden",
                     role: "alert",
                     "aria-label": "Check your email"
-                }, s.createElement("p", {
+                }, o.createElement("p", {
                     className: "tw-text-center tw-mb-2"
-                }, "We have attempted to send a reminder to your registered email address!"), s.createElement("p", {
+                }, "We have attempted to send a reminder to your registered email address!"), o.createElement("p", {
                     className: "tw-text-subtext-grey"
-                }, "You may need to check your spam folder if you don't see it within a few minutes.")), E && s.createElement("p", {
+                }, "You may need to check your spam folder if you don't see it within a few minutes.")), E && o.createElement("p", {
                     role: "alert",
                     "aria-label": "Failed to recover",
                     className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
-                }, D || "Oops, that didn't work."), !A && s.createElement(h.zx, {
-                    disabled: M || k || y,
+                }, C || "Oops, that didn't work."), !M && o.createElement(u.zx, {
+                    disabled: I || k || y,
                     className: "tw-mt-5 tw-w-60",
                     loading: S,
                     type: "submit"
-                }, "Request reminder message"), s.createElement("div", {
+                }, "Request reminder message"), o.createElement("div", {
                     className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
-                }, s.createElement(p.rU, {
+                }, o.createElement(p.rU, {
                     to: "/home/login",
                     className: "tw-text-link-highlight"
                 }, "Back to login"))))))
@@ -566,4 +554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ab0537d17c19a90528eec58f797f51bd60acd605ffb57854631f66457fc5bb40.js.map
+//# sourceMappingURL=d1a7d5874f89912940e661dd4e173dd514181231f9ae4edb027dd00f8308c3c0.js.map

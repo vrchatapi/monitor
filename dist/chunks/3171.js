@@ -3,7 +3,7 @@
         13887: (t, e, r) => {
             "use strict";
             r.d(e, {
-                Z: () => s
+                Z: () => g
             });
             var a = r(54546),
                 n = r(42404),
@@ -76,29 +76,29 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const s = function(t) {
+            const g = function(t) {
                 var e = t.children,
                     r = t.showCredits,
                     n = (0, c.useState)(null),
-                    s = (0, a.Z)(n, 2),
-                    g = s[0],
-                    u = s[1],
-                    h = (0, c.useState)(null),
-                    l = (0, a.Z)(h, 2),
+                    g = (0, a.Z)(n, 2),
+                    s = g[0],
+                    h = g[1],
+                    u = (0, c.useState)(null),
+                    l = (0, a.Z)(u, 2),
                     d = l[0],
                     f = l[1],
                     m = (0, c.useMemo)((function() {
                         return o()(w, 6)
                     }), []);
                 (0, c.useEffect)((function() {
-                    if (null === g) u(m[0]);
+                    if (null === s) h(m[0]);
                     else {
-                        var t = b(g);
+                        var t = b(s);
                         setTimeout((function() {
-                            return u(t)
+                            return h(t)
                         }), 1e4), f(t)
                     }
-                }), [g]);
+                }), [s]);
                 var b = function(t) {
                     var e = m.findIndex((function(e) {
                         return e.image.toString() === t.image.toString()
@@ -108,7 +108,7 @@
                 return c.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === g ? "none" : "url(".concat(g.image, ")")
+                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
                     }
                 }, c.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -126,7 +126,7 @@
                     alt: "VRChat"
                 }))), c.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, e), (null == g ? void 0 : g.worldName) && r && c.createElement("div", {
+                }, e), (null == s ? void 0 : s.worldName) && r && c.createElement("div", {
                     className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
                 }, c.createElement(i.Z, {
                     icon: p.default,
@@ -134,7 +134,7 @@
                     size: "2x"
                 }), c.createElement("p", {
                     className: "tw-mb-0 tw-leading-none"
-                }, g.worldName, c.createElement("br", null), c.createElement("small", null, "by ", g.authorName))))
+                }, s.worldName, c.createElement("br", null), c.createElement("small", null, "by ", s.authorName))))
             }
         },
         53171: (t, e, r) => {
@@ -178,13 +178,13 @@
                 w = Object.prototype.hasOwnProperty;
             t.exports = function(t, e) {
                 var r = o(t),
-                    s = !r && n(t),
-                    g = !r && !s && c(t),
-                    u = !r && !s && !g && p(t),
-                    h = r || s || g || u,
-                    l = h ? a(t.length, String) : [],
+                    g = !r && n(t),
+                    s = !r && !g && c(t),
+                    h = !r && !g && !s && p(t),
+                    u = r || g || s || h,
+                    l = u ? a(t.length, String) : [],
                     d = l.length;
-                for (var f in t) !e && !w.call(t, f) || h && ("length" == f || g && ("offset" == f || "parent" == f) || u && ("buffer" == f || "byteLength" == f || "byteOffset" == f) || i(f, d)) || l.push(f);
+                for (var f in t) !e && !w.call(t, f) || u && ("length" == f || s && ("offset" == f || "parent" == f) || h && ("buffer" == f || "byteLength" == f || "byteOffset" == f) || i(f, d)) || l.push(f);
                 return l
             }
         },
@@ -205,13 +205,6 @@
         29750: t => {
             t.exports = function(t, e, r) {
                 return t == t && (void 0 !== r && (t = t <= r ? t : r), void 0 !== e && (t = t >= e ? t : e)), t
-            }
-        },
-        9454: (t, e, r) => {
-            var a = r(44239),
-                n = r(37005);
-            t.exports = function(t) {
-                return n(t) && "[object Arguments]" == a(t)
             }
         },
         38749: (t, e, r) => {
@@ -324,23 +317,6 @@
                 }
                 return t.length = e, t
             }
-        },
-        35694: (t, e, r) => {
-            var a = r(9454),
-                n = r(37005),
-                o = Object.prototype,
-                c = o.hasOwnProperty,
-                i = o.propertyIsEnumerable,
-                p = a(function() {
-                    return arguments
-                }()) ? a : function(t) {
-                    return n(t) && c.call(t, "callee") && !i.call(t, "callee")
-                };
-            t.exports = p
-        },
-        1469: t => {
-            var e = Array.isArray;
-            t.exports = e
         },
         44144: (t, e, r) => {
             t = r.nmd(t);
@@ -656,4 +632,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fbb99db866c5bb9578e070ebb351ab2ca40c563af392b17244261bb78993f511.js.map
+//# sourceMappingURL=a631f275fbc4dd877ae4780084f23cd10fc0a2c5c3b36da77848c4316ad8dc5d.js.map

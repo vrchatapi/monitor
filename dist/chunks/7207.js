@@ -113,7 +113,7 @@
                 ee = n(64258),
                 te = n(22202),
                 ne = n(62437),
-                re = n(46382),
+                re = n(96985),
                 le = n(89421),
                 ae = n(43862),
                 oe = n(72998),
@@ -6071,80 +6071,82 @@
             }));
             const Gl = function(e) {
                 var t = e.group,
-                    n = (0, ue.Tu)(),
-                    r = n.user,
-                    a = n.isFetching,
-                    o = (0, ue.pc)() && !1,
-                    i = O.useState(!0),
-                    c = (0, l.Z)(i, 2),
-                    s = c[0],
-                    u = c[1],
-                    m = O.useState(!1),
-                    d = (0, l.Z)(m, 2),
-                    p = (d[0], d[1], O.useState(!1)),
+                    n = e.isCreate,
+                    r = void 0 !== n && n,
+                    a = (0, ue.Tu)(),
+                    o = a.user,
+                    i = a.isFetching,
+                    c = (0, ue.pc)() && !1,
+                    s = O.useState(!0),
+                    u = (0, l.Z)(s, 2),
+                    m = u[0],
+                    d = u[1],
+                    p = O.useState(!1),
                     g = (0, l.Z)(p, 2),
-                    f = g[0],
-                    E = g[1],
-                    v = O.useState(""),
-                    b = (0, l.Z)(v, 2),
-                    h = b[0],
-                    w = (b[1], O.useState(!1)),
-                    x = (0, l.Z)(w, 2),
-                    y = x[0],
-                    Z = x[1],
-                    k = O.useState(!1),
-                    N = (0, l.Z)(k, 2),
-                    C = N[0],
-                    S = N[1],
-                    j = O.useState(Pl.P.CREATE),
-                    A = (0, l.Z)(j, 2),
-                    T = A[0],
-                    M = A[1],
-                    L = O.useState(null),
-                    U = (0, l.Z)(L, 2),
-                    z = U[0],
-                    G = U[1],
-                    D = O.useState([]),
-                    F = (0, l.Z)(D, 2),
-                    X = F[0],
-                    _ = F[1],
-                    J = O.useState("NEWEST"),
-                    B = (0, l.Z)(J, 2),
-                    $ = B[0],
-                    V = B[1],
-                    W = O.useState("UPCOMING"),
-                    H = (0, l.Z)(W, 2),
-                    Y = H[0],
-                    Q = H[1],
-                    K = ((0, ue.Nr)(h), R({
+                    f = (g[0], g[1], O.useState(!1)),
+                    E = (0, l.Z)(f, 2),
+                    v = E[0],
+                    b = E[1],
+                    h = O.useState(""),
+                    w = (0, l.Z)(h, 2),
+                    x = w[0],
+                    y = (w[1], O.useState(r)),
+                    Z = (0, l.Z)(y, 2),
+                    k = Z[0],
+                    N = Z[1],
+                    C = O.useState(!1),
+                    S = (0, l.Z)(C, 2),
+                    j = S[0],
+                    A = S[1],
+                    T = O.useState(Pl.P.CREATE),
+                    M = (0, l.Z)(T, 2),
+                    L = M[0],
+                    U = M[1],
+                    z = O.useState(null),
+                    G = (0, l.Z)(z, 2),
+                    D = G[0],
+                    F = G[1],
+                    X = O.useState([]),
+                    _ = (0, l.Z)(X, 2),
+                    J = _[0],
+                    B = _[1],
+                    $ = O.useState("NEWEST"),
+                    V = (0, l.Z)($, 2),
+                    W = V[0],
+                    H = V[1],
+                    Y = O.useState("UPCOMING"),
+                    Q = (0, l.Z)(Y, 2),
+                    K = Q[0],
+                    ee = Q[1],
+                    te = ((0, ue.Nr)(x), R({
                         groupMember: null == t ? void 0 : t.myMember,
                         permission: "group-calendar-manage"
                     })),
-                    ee = P({
+                    ne = P({
                         group: t,
                         groupMember: null == t ? void 0 : t.myMember
                     }),
-                    te = K || ee,
-                    ne = (0, Cl.kg)({
+                    le = te || ne,
+                    ae = (0, Cl.kg)({
                         ownerId: t.id
                     }, {
                         skip: !t.id
                     }),
-                    le = ne.data,
-                    ae = ne.isLoading;
+                    oe = ae.data,
+                    ie = ae.isLoading;
                 O.useMemo((function() {
-                    le && ie(Y)
-                }), [le]);
-                var oe = function() {
-                    Z(!1), G(null), M(Pl.P.CREATE)
+                    oe && se(K)
+                }), [oe]);
+                var ce = function() {
+                    N(!1), F(null), U(Pl.P.CREATE)
                 };
 
-                function ie() {
+                function se() {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "UPCOMING";
-                    Q(e);
+                    ee(e);
                     var t = fe()(),
-                        n = (le.results || le || []).filter((function(e) {
-                            return !e.deletedAt || o
+                        n = (oe.results || oe || []).filter((function(e) {
+                            return !e.deletedAt || c
                         })),
                         r = function() {
                             switch (e) {
@@ -6164,77 +6166,78 @@
                                     return n
                             }
                         }();
-                    ce($, r)
+                    me(W, r)
                 }
 
-                function ce(e) {
-                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : X;
-                    V(e);
+                function me(e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : J;
+                    H(e);
                     var n = (0, q.Z)(t).sort((function(t, n) {
                         return "NEWEST" === e ? new Date(t.startsAt) - new Date(n.startsAt) : new Date(n.startsAt) - new Date(t.startsAt)
                     }));
-                    _(n)
+                    B(n)
                 }
-                var se = function(e) {
-                        G(e), Z(!0), M(Pl.P.EDIT)
+                var de = function(e) {
+                        F(e), N(!0), U(Pl.P.EDIT)
                     },
-                    me = function(e) {
-                        G(e), Z(!0), M(Pl.P.REVIVE)
+                    pe = function(e) {
+                        F(e), N(!0), U(Pl.P.REVIVE)
                     },
-                    de = function(e) {
-                        G(e), S(!0), M(Pl.P.DELETE)
+                    ge = function(e) {
+                        F(e), A(!0), U(Pl.P.DELETE)
                     };
                 return O.useEffect((function() {
-                    !ae && !a && le && r && u(!1)
-                }), [ae, le, a, r]), O.createElement(O.Fragment, null, O.createElement("div", {
+                    !ie && !i && oe && o && d(!1)
+                }), [ie, oe, i, o]), O.createElement(O.Fragment, null, O.createElement("div", {
                     className: "tw-py-4"
-                }, te && O.createElement(re.zx, {
+                }, le && O.createElement(re.zx, {
                     "aria-label": "Create Event",
                     className: "tw-mb-4",
                     onClick: function() {
-                        Z(!0)
+                        N(!0)
                     }
                 }, "+ Create Event"), O.createElement(Dl, null, O.createElement(Xl, null, O.createElement(Fl, null, "Events")), O.createElement(_l, {
                     className: "tw-flex-col tw-gap-5 tw-items-center tw-pt-5"
                 }, O.createElement(ql, {
                     hideSearch: !0,
                     gridToggle: function() {
-                        E(!f)
+                        b(!v)
                     },
-                    onDisplayStateChange: ie,
-                    onOrderChange: ce
-                }), s && O.createElement(re.UU, null), !s && 0 === X.length && O.createElement("div", null, "No events found"), !s && O.createElement(re.JX, {
-                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", f && "tw-flex-row")
-                }, X.map((function(e) {
+                    onDisplayStateChange: se,
+                    onOrderChange: me
+                }), m && O.createElement(re.UU, null), !m && 0 === J.length && O.createElement("div", null, "No events found"), !m && O.createElement(re.JX, {
+                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", v && "tw-flex-row")
+                }, J.map((function(e) {
                     return O.createElement(Il.ZP, {
                         key: e.id,
                         event: e,
-                        isGrid: f,
-                        onEditCallback: se,
-                        onDeleteCallback: de,
-                        onReviveCallback: me,
-                        isGroupAdmin: te
+                        isGrid: v,
+                        onEditCallback: de,
+                        onDeleteCallback: ge,
+                        onReviveCallback: pe,
+                        isGroupAdmin: le
                     })
                 })))))), O.createElement(re.u_, {
-                    title: T.label,
-                    isVisible: y,
-                    onClose: oe,
+                    title: L.label,
+                    isVisible: k,
+                    onClose: ce,
                     className: "tw-w-full",
                     slim: !0,
                     width: "100%"
                 }, O.createElement(O.Suspense, {
                     fallback: O.createElement("div", null, "Loading...")
                 }, O.createElement(zl, {
-                    event: z || void 0,
-                    isEditMode: "edit" === T.value,
-                    isReviveMode: "revive" === T.value,
+                    event: D || void 0,
+                    isEditMode: "edit" === L.value,
+                    isReviveMode: "revive" === L.value,
                     group: t,
-                    closeModalCallback: oe
-                }))), z && "delete" === T.value && O.createElement(Ml.Z, {
-                    event: z,
-                    isOpen: C,
+                    isGroupAdmin: le,
+                    closeModalCallback: ce
+                }))), D && "delete" === L.value && O.createElement(Ml.Z, {
+                    event: D,
+                    isOpen: j,
                     onCloseCallBack: function() {
-                        S(!1), G(null), M(Pl.P.CREATE)
+                        A(!1), F(null), U(Pl.P.CREATE)
                     }
                 }))
             };
@@ -6873,6 +6876,12 @@
                         group: Re
                     })
                 }), O.createElement(S.AW, {
+                    path: "/events/create",
+                    element: O.createElement(Gl, {
+                        group: Re,
+                        isCreate: !0
+                    })
+                }), O.createElement(S.AW, {
                     path: "/galleries/*",
                     element: O.createElement(sr, {
                         group: Re
@@ -6980,7 +6989,7 @@
                 i = n(76553),
                 c = n(64687),
                 s = n.n(c),
-                u = n(46382),
+                u = n(96985),
                 m = n(22202),
                 d = n(6655),
                 p = n(64358),
@@ -7090,4 +7099,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2b74e8580ed2f43b3335298d49531062ca109c9cbecca4715dace1da834d0116.js.map
+//# sourceMappingURL=84550fe1fef0a8de3a04ffdbd693d361bc9071322934d8cad355b86aa4faeefb.js.map

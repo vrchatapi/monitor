@@ -3,7 +3,7 @@
         13887: (e, t, r) => {
             "use strict";
             r.d(t, {
-                Z: () => s
+                Z: () => g
             });
             var a = r(54546),
                 n = r(42404),
@@ -76,13 +76,13 @@
                 authorName: "chu-ri",
                 image: r(50749)
             }];
-            const s = function(e) {
+            const g = function(e) {
                 var t = e.children,
                     r = e.showCredits,
                     n = (0, c.useState)(null),
-                    s = (0, a.Z)(n, 2),
-                    g = s[0],
-                    u = s[1],
+                    g = (0, a.Z)(n, 2),
+                    s = g[0],
+                    u = g[1],
                     l = (0, c.useState)(null),
                     h = (0, a.Z)(l, 2),
                     d = h[0],
@@ -91,14 +91,14 @@
                         return o()(w, 6)
                     }), []);
                 (0, c.useEffect)((function() {
-                    if (null === g) u(m[0]);
+                    if (null === s) u(m[0]);
                     else {
-                        var e = b(g);
+                        var e = b(s);
                         setTimeout((function() {
                             return u(e)
                         }), 1e4), f(e)
                     }
-                }), [g]);
+                }), [s]);
                 var b = function(e) {
                     var t = m.findIndex((function(t) {
                         return t.image.toString() === e.image.toString()
@@ -108,7 +108,7 @@
                 return c.createElement("div", {
                     className: " tw-transition-all tw-duration-1000 tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-flex tw-flex-col tw-justify-center tw-items-center ",
                     style: {
-                        backgroundImage: null === g ? "none" : "url(".concat(g.image, ")")
+                        backgroundImage: null === s ? "none" : "url(".concat(s.image, ")")
                     }
                 }, c.createElement("div", {
                     className: "tw-relative tw-p-5 xl:tw-absolute xl:tw-top-[50px] xl:tw-left-12"
@@ -126,7 +126,7 @@
                     alt: "VRChat"
                 }))), c.createElement("div", {
                     className: "tw-flex tw-h-screen tw-justify-center tw-w-full tw-overflow-auto"
-                }, t), (null == g ? void 0 : g.worldName) && r && c.createElement("div", {
+                }, t), (null == s ? void 0 : s.worldName) && r && c.createElement("div", {
                     className: " tw-relative tw-w-full tw-flex tw-flex-row tw-gap-2 tw-items-start xl:tw-absolute xl:tw-top-12 xl:tw-right-12 xl:tw-text-xl xl:tw-w-auto tw-bg-dark-grey-transparent-90 tw-transition-all tw-overflow-hidden tw-p-2 xl:tw-rounded-lg"
                 }, c.createElement(i.Z, {
                     icon: p.default,
@@ -134,7 +134,7 @@
                     size: "2x"
                 }), c.createElement("p", {
                     className: "tw-mb-0 tw-leading-none"
-                }, g.worldName, c.createElement("br", null), c.createElement("small", null, "by ", g.authorName))))
+                }, s.worldName, c.createElement("br", null), c.createElement("small", null, "by ", s.authorName))))
             }
         },
         13424: (e, t, r) => {
@@ -178,13 +178,13 @@
                 w = Object.prototype.hasOwnProperty;
             e.exports = function(e, t) {
                 var r = o(e),
-                    s = !r && n(e),
-                    g = !r && !s && c(e),
-                    u = !r && !s && !g && p(e),
-                    l = r || s || g || u,
+                    g = !r && n(e),
+                    s = !r && !g && c(e),
+                    u = !r && !g && !s && p(e),
+                    l = r || g || s || u,
                     h = l ? a(e.length, String) : [],
                     d = h.length;
-                for (var f in e) !t && !w.call(e, f) || l && ("length" == f || g && ("offset" == f || "parent" == f) || u && ("buffer" == f || "byteLength" == f || "byteOffset" == f) || i(f, d)) || h.push(f);
+                for (var f in e) !t && !w.call(e, f) || l && ("length" == f || s && ("offset" == f || "parent" == f) || u && ("buffer" == f || "byteLength" == f || "byteOffset" == f) || i(f, d)) || h.push(f);
                 return h
             }
         },
@@ -205,13 +205,6 @@
         29750: e => {
             e.exports = function(e, t, r) {
                 return e == e && (void 0 !== r && (e = e <= r ? e : r), void 0 !== t && (e = e >= t ? e : t)), e
-            }
-        },
-        9454: (e, t, r) => {
-            var a = r(44239),
-                n = r(37005);
-            e.exports = function(e) {
-                return n(e) && "[object Arguments]" == a(e)
             }
         },
         38749: (e, t, r) => {
@@ -324,23 +317,6 @@
                 }
                 return e.length = t, e
             }
-        },
-        35694: (e, t, r) => {
-            var a = r(9454),
-                n = r(37005),
-                o = Object.prototype,
-                c = o.hasOwnProperty,
-                i = o.propertyIsEnumerable,
-                p = a(function() {
-                    return arguments
-                }()) ? a : function(e) {
-                    return n(e) && c.call(e, "callee") && !i.call(e, "callee")
-                };
-            e.exports = p
-        },
-        1469: e => {
-            var t = Array.isArray;
-            e.exports = t
         },
         44144: (e, t, r) => {
             e = r.nmd(e);
@@ -656,4 +632,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e15e8d5637a999c588a1d9bb0c66b64975791fe29c899969961f4db0abdbeae0.js.map
+//# sourceMappingURL=9c6f664588678eb5489b6564f34780042c65519697cc71e189a2c39b25e377dc.js.map
