@@ -1522,7 +1522,7 @@
                                     r = n ? e.replace("author_tag_", "") : null !== (t = null == a ? void 0 : a.description) && void 0 !== t ? t : e;
                                 return n ? s.createElement(Z.rU, {
                                     key: e,
-                                    to: "/home/search/".concat(r.toLowerCase())
+                                    to: "/home/search/worlds/".concat(r.toLowerCase())
                                 }, s.createElement(Yt, null, r)) : s.createElement(Yt, {
                                     key: e,
                                     role: "listitem",
@@ -3456,4 +3456,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7e5d6f9700cf52b8f0b6dc67515bafe6a48512a572f9a0be602fca136a8d4f86.js.map
+//# sourceMappingURL=3a38e2307bb24b4ec29f8d8b0860041b63fe116a2036c0bdbf4ee46055a71282.js.map
