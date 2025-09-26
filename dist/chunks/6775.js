@@ -1,47 +1,182 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [6775], {
-        76775: (e, t, a) => {
+        76775: (e, t, r) => {
             "use strict";
-            a.r(t), a.d(t, {
-                default: () => ue
+            r.r(t), r.d(t, {
+                default: () => Ye
             });
-            var r = a(54546),
-                n = a(40767),
-                l = a(96985),
-                o = a(72998),
-                i = a(529),
-                s = (a(86961), a(27484)),
-                c = a.n(s),
-                u = a(7124),
-                w = a.n(u),
-                m = a(30381),
-                d = a.n(m),
-                p = a(67294),
-                f = a(26495),
-                b = a(17383),
-                x = a(95896),
-                h = a(22202),
-                g = a(66736),
-                v = a(16869),
-                y = a(67978),
-                E = a(37412),
-                N = a.n(E);
-            c().extend(N());
-            var k = a(4942),
-                D = a(15861),
-                M = a(4965),
-                P = a(64687),
-                S = a.n(P),
-                C = a(6655),
-                Y = a(64358),
-                O = a(89250),
-                T = a(56646),
-                j = a(45697),
-                I = a.n(j),
+            var a = r(54546),
+                n = r(40767),
+                l = r(96985),
+                o = r(72998),
+                i = r(529),
+                s = (r(86961), r(27484)),
+                c = r.n(s),
+                u = r(7124),
+                w = r.n(u),
+                m = r(30381),
+                d = r.n(m),
+                p = r(67294),
+                f = r(26495),
+                b = r(17383),
+                x = r(95896),
+                h = r(22202),
+                g = r(66736),
+                v = r(16869),
+                y = r(67978),
+                E = r(4942),
+                N = r(37412),
+                k = r.n(N),
+                Y = r(59542),
+                D = r.n(Y),
+                P = r(55183),
+                M = r.n(P);
+
+            function S(e, t) {
+                var r = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), r.push.apply(r, a)
+                }
+                return r
+            }
+
+            function O(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? S(Object(r), !0).forEach((function(t) {
+                        (0, E.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : S(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+                    }))
+                }
+                return e
+            }
+            c().extend(k()), c().extend(D()), c().extend(M());
+            var C = {
+                    years: {
+                        unit: "year",
+                        format: "YYYY"
+                    },
+                    months: {
+                        unit: "month",
+                        format: "YYYY-MM"
+                    },
+                    weeks: {
+                        unit: "week",
+                        format: "GGGG-[W]WW"
+                    },
+                    days: {
+                        unit: "day",
+                        format: "YYYY-MM-DD"
+                    }
+                },
+                j = {
+                    numPurchases: "Total Sales",
+                    totalPurchasePrice: "Total Earnings"
+                },
+                T = {
+                    backgroundColor: "#064b5c",
+                    borderColor: "#086c84"
+                },
+                I = {
+                    otpPurchaseCount: 0,
+                    subscriberMonths: 0,
+                    totalEarnings: 0
+                },
+                Z = function(e, t, r) {
+                    var a = c()(e),
+                        n = c()(t),
+                        l = C[r] || C.days,
+                        o = n.diff(a, l.unit) + 1;
+                    return Array.from({
+                        length: o
+                    }, (function(e, t) {
+                        return function(e, t) {
+                            var r;
+                            if ("weeks" === t) {
+                                var a = e.isoWeekYear(),
+                                    n = e.isoWeek();
+                                return "".concat(a, "-W").concat(n.toString().padStart(2, "0"))
+                            }
+                            return e.format((null === (r = C[t]) || void 0 === r ? void 0 : r.format) || C.days.format)
+                        }(a.add(t, l.unit), r)
+                    }))
+                },
+                G = function(e, t) {
+                    var r = function(e) {
+                        var t = new Map;
+                        return e.forEach((function(e) {
+                            t.set(e._id, e)
+                        })), t
+                    }(e);
+                    return t.map((function(e) {
+                        return function(e, t) {
+                            return O({
+                                _id: e
+                            }, Object.fromEntries(Object.entries(I).map((function(e) {
+                                var r, n = (0, a.Z)(e, 2),
+                                    l = n[0],
+                                    o = n[1];
+                                return [l, null !== (r = null == t ? void 0 : t[l]) && void 0 !== r ? r : o]
+                            }))))
+                        }(e, r.get(e))
+                    }))
+                },
                 L = function(e) {
+                    if (e.includes("-W")) {
+                        var t = e.split("-W"),
+                            r = (0, a.Z)(t, 2),
+                            n = r[0],
+                            l = r[1];
+                        return c()().startOf("year").year(Number.parseInt(n)).isoWeek(Number.parseInt(l))
+                    }
+                    return e.match(/^\d{4}-\d{2}$/) ? c()(e, "YYYY-MM") : e.match(/^\d{4}$/) ? c()(e, "YYYY") : c()(e)
+                },
+                B = function(e, t) {
+                    var r = L(e._id);
+                    return L(t._id).isAfter(r) ? 1 : -1
+                },
+                R = function(e, t) {
+                    return e.reduce((function(e, r) {
+                        var a = r._id;
+                        e.labels.push(a), e.datasets[t] || (e.datasets[t] = function(e) {
+                            return O({
+                                yAxisId: e,
+                                label: j[e] || e,
+                                data: []
+                            }, T)
+                        }(t));
+                        var n = function(e, t) {
+                            var r = e.otpPurchaseCount,
+                                a = void 0 === r ? 0 : r,
+                                n = e.subscriberMonths,
+                                l = void 0 === n ? 0 : n,
+                                o = e.totalEarnings;
+                            return "numPurchases" === t ? a + l : void 0 === o ? 0 : o
+                        }(r, t);
+                        return e.datasets[t].data.push(n), e
+                    }), {
+                        labels: [],
+                        datasets: {}
+                    })
+                },
+                A = r(15861),
+                W = r(4965),
+                U = r(64687),
+                _ = r.n(U),
+                F = r(6655),
+                q = r(64358),
+                H = r(89250),
+                K = r(56646),
+                $ = r(45697),
+                X = r.n($),
+                z = function(e) {
                     var t = e.title,
-                        a = e.credits,
-                        r = void 0 === a ? null : a,
+                        r = e.credits,
+                        a = void 0 === r ? null : r,
                         n = e.link,
                         o = void 0 === n ? null : n,
                         i = e.cta,
@@ -54,7 +189,7 @@
                         f = e.isError,
                         b = void 0 !== f && f,
                         x = e.error,
-                        h = null === r || 0 === r;
+                        h = null === a || 0 === a;
                     if (b) {
                         var g = x || "An unknown error occurred";
                         return p.createElement("div", {
@@ -75,7 +210,7 @@
                         className: "tw-text-white tw-text-4xl tw-font-bold tw-mb-8"
                     }, !u && p.createElement(l.b5, {
                         className: "tw-text-[#6ae3f9] tw-mr-1"
-                    }), r.toLocaleString()), p.createElement("div", {
+                    }), a.toLocaleString()), p.createElement("div", {
                         className: " tw-justify-between tw-flex tw-flex-col @[300px]/marketplacePanel:tw-flex-row @[300px]/marketplacePanel:tw-items-end  "
                     }, p.createElement(l.zx, {
                         className: "tw-px-[10px] tw-py-[7px] tw-mb-2 @[300px]/marketplacePanel:tw-mb-0",
@@ -83,60 +218,60 @@
                         onClick: null == s ? void 0 : s.onClickCallback,
                         title: null == s ? void 0 : s.title
                     }, s.text), null !== o && p.createElement("span", null, p.createElement(l.$1, {
-                        icon: T.faCircleInfo
+                        icon: K.faCircleInfo
                     }), p.createElement("a", {
                         href: null == o ? void 0 : o.href,
                         className: "tw-text-sm tw-underline tw-font-thin tw-ml-1 tw-text-subtext-grey",
                         referrerPolicy: "no-referrer"
                     }, null == o ? void 0 : o.text))))
                 };
-            L.propTypes = {
-                title: I().string.isRequired,
-                credits: I().number,
-                link: I().shape({
-                    href: I().string,
-                    text: I().string
+            z.propTypes = {
+                title: X().string.isRequired,
+                credits: X().number,
+                link: X().shape({
+                    href: X().string,
+                    text: X().string
                 }),
-                cta: I().shape({
-                    text: I().string,
-                    onClickCallback: I().func,
-                    isDisabled: I().bool
+                cta: X().shape({
+                    text: X().string,
+                    onClickCallback: X().func,
+                    isDisabled: X().bool
                 }),
-                hideGlyph: I().bool,
-                customNoCreditsText: I().string
+                hideGlyph: X().bool,
+                customNoCreditsText: X().string
             };
-            const Z = L;
+            const V = z;
 
-            function B(e, t) {
-                var a = Object.keys(e);
+            function Q(e, t) {
+                var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    t && (r = r.filter((function(t) {
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), a.push.apply(a, r)
+                    }))), r.push.apply(r, a)
                 }
-                return a
+                return r
             }
 
-            function R(e) {
+            function J(e) {
                 for (var t = 1; t < arguments.length; t++) {
-                    var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? B(Object(a), !0).forEach((function(t) {
-                        (0, k.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : B(Object(a)).forEach((function(t) {
-                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? Q(Object(r), !0).forEach((function(t) {
+                        (0, E.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Q(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            const G = function() {
-                var e, t, a = (0, h.IB)().data,
-                    n = null == a ? void 0 : a.id,
-                    o = (0, O.s0)(),
-                    i = (0, C.gI)(),
-                    s = (0, r.Z)(i, 1)[0],
-                    c = (0, O.oQ)("/home/marketplace/storefront/payout"),
-                    u = (0, C.kN)({}, {
+            const ee = function() {
+                var e, t, r = (0, h.IB)().data,
+                    n = null == r ? void 0 : r.id,
+                    o = (0, H.s0)(),
+                    i = (0, F.gI)(),
+                    s = (0, a.Z)(i, 1)[0],
+                    c = (0, H.oQ)("/home/marketplace/storefront/payout"),
+                    u = (0, F.kN)({}, {
                         refetchOnMountOrArgChange: !0
                     }),
                     w = u.data,
@@ -156,66 +291,66 @@
                     }, {
                         skip: !n
                     }),
-                    M = k.data,
-                    P = void 0 === M ? {
+                    Y = k.data,
+                    D = void 0 === Y ? {
                         totals: {
                             totalEarnings: 0,
                             otpPurchaseCount: 0,
                             subscriberMonths: 0
                         }
-                    } : M,
-                    T = k.isFetching,
-                    j = k.isError,
-                    I = k.error,
-                    L = (0, C.pp)({
+                    } : Y,
+                    P = k.isFetching,
+                    M = k.isError,
+                    S = k.error,
+                    O = (0, F.pp)({
                         userId: n,
                         type: "earnings"
                     }, {
                         skip: !n,
                         refetchOnMountOrArgChange: !0
                     }).data,
-                    B = (void 0 === L ? {
+                    C = (void 0 === O ? {
                         balance: 0
-                    } : L).balance,
-                    G = p.useMemo((function() {
-                        var e, t, a;
+                    } : O).balance,
+                    j = p.useMemo((function() {
+                        var e, t, r;
                         return {
-                            allTimeNumPurchases: Number(null == P || null === (e = P.totals) || void 0 === e ? void 0 : e.otpPurchaseCount) + Number(null == P || null === (t = P.totals) || void 0 === t ? void 0 : t.subscriberMonths),
-                            allTimeTotalPurchasePrice: null == P || null === (a = P.totals) || void 0 === a ? void 0 : a.totalEarnings
+                            allTimeNumPurchases: Number(null == D || null === (e = D.totals) || void 0 === e ? void 0 : e.otpPurchaseCount) + Number(null == D || null === (t = D.totals) || void 0 === t ? void 0 : t.subscriberMonths),
+                            allTimeTotalPurchasePrice: null == D || null === (r = D.totals) || void 0 === r ? void 0 : r.totalEarnings
                         }
-                    }), [P]),
-                    U = G.allTimeNumPurchases,
-                    _ = G.allTimeTotalPurchasePrice,
-                    F = (0, p.useMemo)((function() {
-                        return m ? "Error fetching payout eligibility, please try again later." : v ? "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out." : B < x.vC ? "You must have at least ".concat(x.vC.toLocaleString(), " credits available to pay out.") : f ? "Tilia Terms of Service have been updated. You must accept the updated Terms of Service before you can pay out." : b ? "Your account has been blocked by Tilia. Please contact support for assistance." : y ? "Your KYC verification is pending. Please complete the KYC process before you can pay out." : E ? "You must complete KYC verification before you can pay out." : N ? "You are currently in a payout cooldown period. Please wait before attempting to pay out again." : "You are eligible to pay out. Click to proceed."
-                    }), [B, w, m]);
-                return p.createElement(p.Fragment, null, j && p.createElement(l.qX, {
+                    }), [D]),
+                    T = j.allTimeNumPurchases,
+                    I = j.allTimeTotalPurchasePrice,
+                    Z = (0, p.useMemo)((function() {
+                        return m ? "Error fetching payout eligibility, please try again later." : v ? "Tilia's Terms of Service may have changed. You'll need to accept their updated Terms of Service before you pay out." : C < x.vC ? "You must have at least ".concat(x.vC.toLocaleString(), " credits available to pay out.") : f ? "Tilia Terms of Service have been updated. You must accept the updated Terms of Service before you can pay out." : b ? "Your account has been blocked by Tilia. Please contact support for assistance." : y ? "Your KYC verification is pending. Please complete the KYC process before you can pay out." : E ? "You must complete KYC verification before you can pay out." : N ? "You are currently in a payout cooldown period. Please wait before attempting to pay out again." : "You are eligible to pay out. Click to proceed."
+                    }), [C, w, m]);
+                return p.createElement(p.Fragment, null, M && p.createElement(l.qX, {
                     type: "error",
                     title: "Error loading statistics"
-                }, "Failed to fetch earnings: ", null == I || null === (e = I.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), p.createElement("div", {
+                }, "Failed to fetch earnings: ", null == S || null === (e = S.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), p.createElement("div", {
                     className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col sm:tw-flex-row"
-                }, T ? p.createElement(p.Fragment, null, p.createElement(A, null), p.createElement(A, {
+                }, P ? p.createElement(p.Fragment, null, p.createElement(te, null), p.createElement(te, {
                     delay: 100
-                })) : p.createElement(p.Fragment, null, p.createElement(Z, {
+                })) : p.createElement(p.Fragment, null, p.createElement(V, {
                     title: "Available Payout",
-                    credits: Number(B) || 0,
+                    credits: Number(C) || 0,
                     link: {
                         text: "About Payout",
                         href: "https://www.tilia.io/legal/terms-of-service"
                     },
                     cta: {
                         text: "Payout",
-                        onClickCallback: (t = (0, D.Z)(S().mark((function e() {
-                            var t, r;
-                            return S().wrap((function(e) {
+                        onClickCallback: (t = (0, A.Z)(_().mark((function e() {
+                            var t, a;
+                            return _().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, s(R(R({}, Y.$Z.PAYOUT), {}, {
-                                            userId: a.id,
+                                        return e.next = 2, s(J(J({}, q.$Z.PAYOUT), {}, {
+                                            userId: r.id,
                                             returnUrl: new URL(c, window.location.href)
                                         })).unwrap();
                                     case 2:
-                                        t = e.sent, r = t.redirect, window.location.assign(r);
+                                        t = e.sent, a = t.redirect, window.location.assign(a);
                                     case 5:
                                     case "end":
                                         return e.stop()
@@ -224,13 +359,13 @@
                         }))), function() {
                             return t.apply(this, arguments)
                         }),
-                        isDisabled: B < x.vC || !d,
-                        title: F
+                        isDisabled: C < x.vC || !d,
+                        title: Z
                     }
-                }), p.createElement(Z, {
+                }), p.createElement(V, {
                     title: "Total Sales",
                     hideGlyph: !0,
-                    credits: Number(U || 0),
+                    credits: Number(T || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
@@ -238,9 +373,9 @@
                         },
                         isDisabled: !1
                     }
-                }), p.createElement(Z, {
+                }), p.createElement(V, {
                     title: "Total Earned",
-                    credits: Number(_ || 0),
+                    credits: Number(I || 0),
                     cta: {
                         text: "View Details",
                         onClickCallback: function() {
@@ -250,27 +385,27 @@
                     }
                 }))))
             };
-            var A = (0, M.Z)(l.UU, {
+            var te = (0, W.Z)(l.UU, {
                     target: "e129v97h1"
                 })({
                     name: "rdii6n",
                     styles: "flex:1 1 240px;min-height:148px;margin:0.5rem;border-radius:8px"
                 }),
-                U = a(87709),
-                _ = a(86646),
-                F = a(68055),
-                q = function(e) {
+                re = r(87709),
+                ae = r(86646),
+                ne = r(68055),
+                le = function(e) {
                     var t = e.steps,
-                        a = e.currentStepNumber,
-                        r = t.filter((function(e) {
+                        r = e.currentStepNumber,
+                        a = t.filter((function(e) {
                             return e.isHiddenStep
                         }));
                     return p.createElement("ol", {
                         className: "tw-max-w-[650px] tw-flex tw-justify-between tw-items-start tw-pl-[0px] xs:tw-pl-[44px]"
                     }, t.map((function(e, n) {
-                        var l = Number(a) > Number(e.number),
-                            o = Number(a) === Number(e.number),
-                            i = n === t.length - (r.length + 1);
+                        var l = Number(r) > Number(e.number),
+                            o = Number(r) === Number(e.number),
+                            i = n === t.length - (a.length + 1);
                         if (e.isHiddenStep) return null;
                         return p.createElement("li", {
                             key: e.number,
@@ -282,38 +417,38 @@
                             className: "tw-flex tw-flex-col tw-items-start"
                         }, p.createElement("div", {
                             className: "\n                  tw-border-solid tw-border-2 tw-border-full\n                  tw-w-8 tw-h-8 tw-rounded-full\n                  tw-flex tw-items-center tw-justify-center tw-text-sm\n                  after:tw-w-full after:tw-h-1 after:tw-border-b\n                  ".concat("", "\n                  ").concat(l ? "tw-border-green tw-text-[#000] tw-bg-green" : o ? "tw-border-green tw-text-white" : "tw-border-light-grey tw-text-light-grey", "\n                ")
-                        }, l ? p.createElement(_.Z, {
-                            icon: F.LE,
+                        }, l ? p.createElement(ae.Z, {
+                            icon: ne.LE,
                             "aria-label": "Done"
                         }) : e.number))), p.createElement("div", {
                             className: "tw-text-sm tw-text-center tw-w-[130px] tw--ml-[44px] tw-mt-2 ".concat(o ? "tw-text-white tw-font-bold" : "tw-text-light-grey")
                         }, e.label))
                     })))
                 };
-            q.propTypes = {
-                steps: I().arrayOf(I().shape({
-                    number: I().number.isRequired,
-                    label: I().string.isRequired,
-                    isHiddenStep: I().bool
+            le.propTypes = {
+                steps: X().arrayOf(X().shape({
+                    number: X().number.isRequired,
+                    label: X().string.isRequired,
+                    isHiddenStep: X().bool
                 })).isRequired,
-                currentStepNumber: I().number.isRequired
+                currentStepNumber: X().number.isRequired
             };
-            const H = q;
-            var K = a(15832),
-                W = a(79655),
-                X = a(34698),
-                $ = a(59128),
-                z = a.n($),
-                V = a(259),
-                Q = a.n(V),
-                J = a(9468),
-                ee = a.n(J),
-                te = a(83555),
-                ae = a.n(te),
-                re = function(e) {
-                    var t, a = e.currentStepNumber,
-                        n = (0, K._)("myStoreTutorialDismissed", !1),
-                        l = (0, r.Z)(n, 2),
+            const oe = le;
+            var ie = r(15832),
+                se = r(79655),
+                ce = r(34698),
+                ue = r(59128),
+                we = r.n(ue),
+                me = r(259),
+                de = r.n(me),
+                pe = r(9468),
+                fe = r.n(pe),
+                be = r(83555),
+                xe = r.n(be),
+                he = function(e) {
+                    var t, r = e.currentStepNumber,
+                        n = (0, ie._)("myStoreTutorialDismissed", !1),
+                        l = (0, a.Z)(n, 2),
                         o = l[0],
                         i = l[1],
                         s = [{
@@ -323,7 +458,7 @@
                                 return p.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                                 }, p.createElement("img", {
-                                    src: Q(),
+                                    src: de(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                                 }), p.createElement("div", {
@@ -336,13 +471,13 @@
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
                                 }, "Proceed to the next step by creating your first product or subscription!"), p.createElement("div", {
                                     className: "tw-flex"
-                                }, p.createElement(W.rU, {
+                                }, p.createElement(se.rU, {
                                     to: "/home/marketplace/storefront/products"
-                                }, p.createElement(X.Z, {
+                                }, p.createElement(ce.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
-                                }, "Create Product")), p.createElement(W.rU, {
+                                }, "Create Product")), p.createElement(se.rU, {
                                     to: "/home/marketplace/storefront/subscriptions"
-                                }, p.createElement(X.Z, {
+                                }, p.createElement(ce.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight tw-ml-4"
                                 }, "Create Subscription")))))
                             }
@@ -353,7 +488,7 @@
                                 return p.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                                 }, p.createElement("img", {
-                                    src: ee(),
+                                    src: fe(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                                 }), p.createElement("div", {
@@ -364,9 +499,9 @@
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
                                 }, "Organize your listings, create bundles and set prices. Preview how your stores appear in-world, on the marketplace tab and in the corresponding group and world pages."), p.createElement("div", {
                                     className: "tw-flex"
-                                }, p.createElement(W.rU, {
+                                }, p.createElement(se.rU, {
                                     to: "/home/marketplace/storefront/stores"
-                                }, p.createElement(X.Z, {
+                                }, p.createElement(ce.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
                                 }, "Manage Stores")))))
                             }
@@ -377,7 +512,7 @@
                                 return p.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                                 }, p.createElement("img", {
-                                    src: ae(),
+                                    src: xe(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                                 }), p.createElement("div", {
@@ -386,7 +521,7 @@
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
                                 }, "You are all set to start selling!"), p.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "The final step to greatness. Share your store, promote your work, and make your first sale! You can track all your sales and subscribers on the", " ", p.createElement(W.rU, {
+                                }, "The final step to greatness. Share your store, promote your work, and make your first sale! You can track all your sales and subscribers on the", " ", p.createElement(se.rU, {
                                     to: "/home/marketplace/storefront/revenue/mysales",
                                     title: "Revenue section"
                                 }, "Revenue section"), ".")))
@@ -399,7 +534,7 @@
                                 return p.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-justify-between @[700px]/tutorial:tw-flex-row tw-pt-0 @[700px]/tutorial:tw-px-12 @[700px]/tutorial:tw-py-9"
                                 }, p.createElement("img", {
-                                    src: z(),
+                                    src: we(),
                                     alt: "",
                                     className: " tw-rounded-lg tw-max-w-full tw-object-cover @[700px]/tutorial:tw-max-w-[240px]  @[790px]/tutorial:tw-max-w-[300px] @[905px]/tutorial:tw-max-w-[350px] @[955px]/tutorial:tw-max-w-[400px] @[1160px]/tutorial:tw-max-w-[500px]"
                                 }), p.createElement("div", {
@@ -410,7 +545,7 @@
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
                                 }, "Well done! Now you can close this module by clicking the button below."), p.createElement("div", {
                                     className: "tw-flex"
-                                }, p.createElement(X.Z, {
+                                }, p.createElement(ce.Z, {
                                     className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight",
                                     onClick: function() {
                                         i(!0)
@@ -426,36 +561,36 @@
                         className: "tw-text-lighter-grey after:tw-border-0 tw-font-bold tw-text-lg "
                     }, "Get Ready To Sell"), p.createElement("div", {
                         className: "tw-hidden @[900px]/tutorial:tw-block"
-                    }, p.createElement(H, {
+                    }, p.createElement(oe, {
                         steps: s,
-                        currentStepNumber: a
+                        currentStepNumber: r
                     })), p.createElement("div", null, p.createElement("button", {
                         type: "button",
                         onClick: function() {
                             i(!0)
                         },
                         className: "tw-bg-transparent tw-border-none tw-cursor-pointer"
-                    }, p.createElement(_.Z, {
-                        icon: U.faXmark
+                    }, p.createElement(ae.Z, {
+                        icon: re.faXmark
                     })))), p.createElement("div", {
                         className: "tw-mt-4 tw-mb-2 tw-flex tw-justify-center tw-ml-[44px] @[900px]/tutorial:tw-hidden"
-                    }, p.createElement(H, {
+                    }, p.createElement(oe, {
                         steps: s,
-                        currentStepNumber: a
+                        currentStepNumber: r
                     })), null === (t = s.find((function(e) {
-                        return e.number === a
+                        return e.number === r
                     }))) || void 0 === t ? void 0 : t.content())
                 };
-            re.propTypes = {
-                currentStepNumber: I().number.isRequired
+            he.propTypes = {
+                currentStepNumber: X().number.isRequired
             };
-            const ne = re;
+            const ge = he;
             c().extend(w()), i.kL.register(i.uw, i.f$, i.FB, i.od, i.jn, i.u, i.Gu), i.kL.defaults.color = "#737372", i.kL.defaults.borderColor = "rgba(127, 127, 127, 0.1)";
-            var le = {
+            var ve = {
                     numPurchases: "Total Sales",
                     totalPurchasePrice: "Total Earnings"
                 },
-                oe = [{
+                ye = [{
                     label: "Last 7 Days",
                     value: "P7D"
                 }, {
@@ -474,7 +609,7 @@
                     label: "Custom",
                     value: !1
                 }],
-                ie = [{
+                Ee = [{
                     label: "Day",
                     value: "days"
                 }, {
@@ -487,37 +622,37 @@
                     label: "Year",
                     value: "years"
                 }],
-                se = function(e) {
+                Ne = function(e) {
                     return "weeks" === e ? "isoweek" : e
                 },
-                ce = function(e) {
+                ke = function(e) {
                     var t = d().duration(e);
                     if (t.asDays() < 1) throw new RangeError("computeValuesForDurationTemplate: durationTemplate ".concat(e, " resulted in an invalid duration"));
-                    var a = function(e) {
+                    var r = function(e) {
                             if (!d().isDuration(e)) throw new TypeError("duration ".concat(e, " is not a valid duration object"));
                             return e.asMonths() > 11 ? "months" : e.asMonths() > 2 ? "weeks" : "days"
                         }(t),
-                        r = se(a),
+                        a = Ne(r),
                         n = d()(),
-                        l = n.clone().endOf(r);
+                        l = n.clone().endOf(a);
                     return {
-                        groupByDuration: a,
-                        metricDateStart: n.clone().add(1, r).startOf(r).subtract(t),
+                        groupByDuration: r,
+                        metricDateStart: n.clone().add(1, a).startOf(a).subtract(t),
                         metricDateEnd: l
                     }
                 };
-            const ue = function() {
-                var e, t, a, i, s, u = (0, h.IB)().data,
+            const Ye = function() {
+                var e, t, r, i, s, u = (0, h.IB)().data,
                     w = null == u ? void 0 : u.id,
                     m = p.useState("numPurchases"),
-                    E = (0, r.Z)(m, 2),
+                    E = (0, a.Z)(m, 2),
                     N = E[0],
                     k = E[1],
-                    D = p.useState(oe[0].value),
-                    M = (0, r.Z)(D, 2),
-                    P = M[0],
-                    S = M[1],
-                    C = (0, g.uK)({
+                    Y = p.useState(ye[0].value),
+                    D = (0, a.Z)(Y, 2),
+                    P = D[0],
+                    M = D[1],
+                    S = (0, g.uK)({
                         sellerId: w,
                         groupByDuration: "years",
                         metricDateStart: x.pH,
@@ -525,198 +660,138 @@
                     }, {
                         skip: !w
                     }),
-                    Y = C.data,
-                    O = void 0 === Y ? {
+                    O = S.data,
+                    C = void 0 === O ? {
                         totals: {
                             totalEarnings: 0,
                             otpPurchaseCount: 0,
                             subscriberMonths: 0
                         }
-                    } : Y,
-                    T = C.isFetching,
-                    j = C.isError,
-                    I = C.error,
+                    } : O,
+                    j = S.isFetching,
+                    T = S.isError,
+                    I = S.error,
                     L = p.useMemo((function() {
-                        return 0 === O.totals.totalEarnings
-                    }), [O]),
-                    Z = p.useMemo((function() {
-                        return ce(P)
+                        return 0 === C.totals.totalEarnings
+                    }), [C]),
+                    A = p.useMemo((function() {
+                        return ke(P)
                     }), []),
-                    B = Z.groupByDuration,
-                    R = Z.metricDateStart,
-                    A = Z.metricDateEnd,
-                    U = p.useState(B),
-                    _ = (0, r.Z)(U, 2),
-                    F = _[0],
-                    q = _[1],
-                    H = p.useState(R),
-                    K = (0, r.Z)(H, 2),
-                    W = K[0],
-                    X = K[1],
-                    $ = (0, b.Nr)(W),
-                    z = p.useState(A),
-                    V = (0, r.Z)(z, 2),
-                    Q = V[0],
-                    J = V[1],
-                    ee = (0, b.Nr)(Q),
-                    te = p.useState(!1),
-                    ae = (0, r.Z)(te, 2),
-                    re = ae[0],
-                    ue = ae[1],
-                    we = p.useState(),
-                    me = (0, r.Z)(we, 2),
-                    de = me[0],
-                    pe = me[1],
-                    fe = p.useMemo((function() {
-                        return [d().isMoment(W) && W.isAfter(x.pH) && W.isBefore(Q || d()().add(2, "y")), d().isMoment(Q) && Q.isAfter(W || x.pH) && Q.isBefore(d()().add(2, "y"))]
-                    }), [W, Q]),
-                    be = (0, r.Z)(fe, 2),
-                    xe = be[0],
-                    he = be[1];
+                    W = A.groupByDuration,
+                    U = A.metricDateStart,
+                    _ = A.metricDateEnd,
+                    F = p.useState(W),
+                    q = (0, a.Z)(F, 2),
+                    H = q[0],
+                    K = q[1],
+                    $ = p.useState(U),
+                    X = (0, a.Z)($, 2),
+                    z = X[0],
+                    V = X[1],
+                    Q = (0, b.Nr)(z),
+                    J = p.useState(_),
+                    te = (0, a.Z)(J, 2),
+                    re = te[0],
+                    ae = te[1],
+                    ne = (0, b.Nr)(re),
+                    le = p.useState(!1),
+                    oe = (0, a.Z)(le, 2),
+                    ie = oe[0],
+                    se = oe[1],
+                    ce = p.useState(),
+                    ue = (0, a.Z)(ce, 2),
+                    we = ue[0],
+                    me = ue[1],
+                    de = p.useMemo((function() {
+                        return [d().isMoment(z) && z.isAfter(x.pH) && z.isBefore(re || d()().add(2, "y")), d().isMoment(re) && re.isAfter(z || x.pH) && re.isBefore(d()().add(2, "y"))]
+                    }), [z, re]),
+                    pe = (0, a.Z)(de, 2),
+                    fe = pe[0],
+                    be = pe[1];
                 p.useEffect((function() {
                     if (P) {
-                        var e = ce(P),
+                        var e = ke(P),
                             t = e.groupByDuration,
-                            a = e.metricDateStart,
-                            r = e.metricDateEnd;
-                        q(t), X(a), J(r)
+                            r = e.metricDateStart,
+                            a = e.metricDateEnd;
+                        K(t), V(r), ae(a)
                     }
                 }), [P]);
-                var ge, ve, ye = (0, g.uK)({
+                var xe, he, Ye = (0, g.uK)({
                         sellerId: w,
-                        groupByDuration: F,
-                        metricDateStart: null == $ ? void 0 : $.toISOString(),
-                        metricDateEnd: null == ee ? void 0 : ee.toISOString(),
-                        listingIds: de ? [de] : de
+                        groupByDuration: H,
+                        metricDateStart: null == Q ? void 0 : Q.toISOString(),
+                        metricDateEnd: null == ne ? void 0 : ne.toISOString(),
+                        listingIds: we ? [we] : we
                     }, {
-                        skip: !(w && $ && ee && xe && he)
+                        skip: !(w && Q && ne && fe && be)
                     }),
-                    Ee = ye.data,
-                    Ne = void 0 === Ee ? {
+                    De = Ye.data,
+                    Pe = void 0 === De ? {
                         totals: {
                             totalEarnings: 0,
                             otpPurchaseCount: 0,
                             subscriberMonths: 0
                         }
-                    } : Ee,
-                    ke = (ye.isFetching, ye.isError, ye.error, (0, v.Ul)({
+                    } : De,
+                    Me = (Ye.isFetching, Ye.isError, Ye.error, (0, v.Ul)({
                         userId: w,
                         hydrate: !0
                     })),
-                    De = ke.data,
-                    Me = void 0 === De ? [] : De,
-                    Pe = ke.isLoading,
-                    Se = ke.isError,
-                    Ce = ke.isSuccess,
-                    Ye = ke.error,
-                    Oe = p.useMemo((function() {
+                    Se = Me.data,
+                    Oe = void 0 === Se ? [] : Se,
+                    Ce = Me.isLoading,
+                    je = Me.isError,
+                    Te = Me.isSuccess,
+                    Ie = Me.error,
+                    Ze = p.useMemo((function() {
                         var e;
-                        if (null == Ne || null === (e = Ne.breakdown) || void 0 === e || !e.length || !W || !Q) return {
+                        if (null == Pe || null === (e = Pe.breakdown) || void 0 === e || !e.length || !z || !re) return {
                             labels: [],
                             datasets: []
                         };
-                        var t = function(e, t, a) {
-                                var r = c()(e),
-                                    n = c()(t),
-                                    l = function(e) {
-                                        switch (e) {
-                                            case "years":
-                                                return "year";
-                                            case "months":
-                                                return "month";
-                                            case "weeks":
-                                                return "week";
-                                            default:
-                                                return "day"
-                                        }
-                                    }(a),
-                                    o = n.diff(r, l) + 1;
-                                return Array.from({
-                                    length: o
-                                }, (function(e, t) {
-                                    return r.add(t, l).format("YYYY-MM-DD")
-                                }))
-                            }(W, Q, F),
-                            a = function(e, t) {
-                                var a = new Map;
-                                return e.forEach((function(e) {
-                                    a.set(e._id, e)
-                                })), t.map((function(e) {
-                                    var t = a.get(e);
-                                    return {
-                                        _id: e,
-                                        otpPurchaseCount: (null == t ? void 0 : t.otpPurchaseCount) || 0,
-                                        subscriberMonths: (null == t ? void 0 : t.subscriberMonths) || 0,
-                                        totalEarnings: (null == t ? void 0 : t.totalEarnings) || 0
-                                    }
-                                }))
-                            }(Ne.breakdown, t);
+                        var t = Z(z, re, H);
                         return function(e, t) {
-                            var a = {
-                                    numPurchases: "Total Sales",
-                                    totalPurchasePrice: "Total Earnings"
-                                },
-                                r = e.sort((function(e, t) {
-                                    return e._id > t._id ? -1 : 1
-                                })).reduce((function(e, r) {
-                                    var n = r._id,
-                                        l = r.otpPurchaseCount,
-                                        o = void 0 === l ? 0 : l,
-                                        i = r.subscriberMonths,
-                                        s = void 0 === i ? 0 : i,
-                                        c = r.totalEarnings,
-                                        u = void 0 === c ? 0 : c;
-                                    e.labels.push(n);
-                                    var w = "numPurchases" === t ? o + s : u;
-                                    return e.datasets[t] || (e.datasets[t] = {
-                                        yAxisId: t,
-                                        label: a[t] || t,
-                                        data: [],
-                                        backgroundColor: "#064b5c",
-                                        borderColor: "#086c84"
-                                    }), e.datasets[t].data.push(w), e
-                                }), {
-                                    labels: [],
-                                    datasets: {}
-                                }),
-                                n = r.labels,
-                                l = r.datasets;
+                            var r = e.sort(B),
+                                a = R(r, t),
+                                n = a.labels,
+                                l = a.datasets;
                             return {
                                 labels: n,
                                 datasets: Object.values(l)
                             }
-                        }(a, N)
-                    }), [Ne, N, W, Q, F]),
-                    Te = !(null != Oe && null !== (e = Oe.datasets) && void 0 !== e && e.length),
-                    je = function() {
-                        re || ue(!0)
+                        }(G(Pe.breakdown, t), N)
+                    }), [Pe, N, z, re, H]),
+                    Ge = !(null != Ze && null !== (e = Ze.datasets) && void 0 !== e && e.length),
+                    Le = function() {
+                        ie || se(!0)
                     },
-                    Ie = p.useMemo((function() {
+                    Be = p.useMemo((function() {
                         var e = [{
                             label: "All"
                         }];
-                        return Pe ? e.push({
+                        return Ce ? e.push({
                             label: "Loading…"
-                        }) : Me.forEach((function(t) {
-                            var a = t.id,
-                                r = t.displayName;
+                        }) : Oe.forEach((function(t) {
+                            var r = t.id,
+                                a = t.displayName;
                             e.push({
-                                label: r,
-                                value: a
+                                label: a,
+                                value: r
                             })
                         })), e
-                    }), [Me, Pe]),
-                    Le = (0, y.rP)({
+                    }), [Oe, Ce]),
+                    Re = (0, y.rP)({
                         userId: w
                     }, {
                         skip: !w
                     }),
-                    Ze = Le.data,
-                    Be = Le.isFetching,
-                    Re = Le.isSuccess,
-                    Ge = T || W !== $ || Q !== ee || Be,
-                    Ae = p.useMemo((function() {
-                        switch (F) {
+                    Ae = Re.data,
+                    We = Re.isFetching,
+                    Ue = Re.isSuccess,
+                    _e = j || z !== Q || re !== ne || We,
+                    Fe = p.useMemo((function() {
+                        switch (H) {
                             case "years":
                                 return "YYYY";
                             case "months":
@@ -726,8 +801,8 @@
                             default:
                                 return "MMM DD, YYYY"
                         }
-                    }), [F]),
-                    Ue = p.useMemo((function() {
+                    }), [H]),
+                    qe = p.useMemo((function() {
                         var e = function(e) {
                             return "".concat(e, " credits")
                         };
@@ -739,9 +814,9 @@
                                 tooltip: {
                                     callbacks: {
                                         label: "totalPurchasePrice" === N ? function(t) {
-                                            var a = t.dataset,
-                                                r = t.parsed;
-                                            return (a.label ? "".concat(a.label, ": ") : "") + e(r.y)
+                                            var r = t.dataset,
+                                                a = t.parsed;
+                                            return (r.label ? "".concat(r.label, ": ") : "") + e(a.y)
                                         } : void 0
                                     }
                                 }
@@ -755,8 +830,8 @@
                                 x: {
                                     type: "time",
                                     time: {
-                                        unit: null == F ? void 0 : F.replace(/s$/, ""),
-                                        tooltipFormat: Ae,
+                                        unit: null == H ? void 0 : H.replace(/s$/, ""),
+                                        tooltipFormat: Fe,
                                         displayFormats: {
                                             week: "GGGG [W]ww"
                                         }
@@ -771,13 +846,13 @@
                                 }
                             }
                         }
-                    }), [N, F, Ae]),
-                    _e = !w || de && (Pe || Se) || !W || !Q || !xe || !he || !(null != Ne && null !== (t = Ne.breakdown) && void 0 !== t && t.length) || Te;
-                return p.createElement(p.Fragment, null, p.createElement(ne, {
-                    currentStepNumber: (ge = 0 === (null == Ze ? void 0 : Ze.length) && Re, ve = !Me.some((function(e) {
+                    }), [N, H, Fe]),
+                    He = !w || we && (Ce || je) || !z || !re || !fe || !be || !(null != Pe && null !== (t = Pe.breakdown) && void 0 !== t && t.length) || Ge;
+                return p.createElement(p.Fragment, null, p.createElement(ge, {
+                    currentStepNumber: (xe = 0 === (null == Ae ? void 0 : Ae.length) && Ue, he = !Oe.some((function(e) {
                         return !0 === e.active
-                    })) && Ce, ge ? 1 : ve ? 2 : L ? 3 : 4)
-                }), p.createElement(G, null), p.createElement(l.X2, {
+                    })) && Te, xe ? 1 : he ? 2 : L ? 3 : 4)
+                }), p.createElement(ee, null), p.createElement(l.X2, {
                     className: "align-items-center flex-wrap tw-mb-4",
                     style: {
                         justifyContent: "space-between"
@@ -790,8 +865,8 @@
                     justify: "left",
                     selected: N,
                     onChange: k,
-                    tabs: Object.entries(le).map((function(e) {
-                        var t = (0, r.Z)(e, 2);
+                    tabs: Object.entries(ve).map((function(e) {
+                        var t = (0, a.Z)(e, 2);
                         return {
                             id: t[0],
                             name: t[1],
@@ -802,15 +877,15 @@
                     className: "align-items-center flex-wrap tw-gap-1"
                 }, p.createElement(l.Lt, {
                     label: "Duration",
-                    onChange: S,
+                    onChange: M,
                     value: P,
-                    options: oe,
+                    options: ye,
                     className: "tw-mr-2"
                 }), p.createElement(l.Lt, {
                     label: "Group By",
-                    onChange: q,
-                    value: F,
-                    options: ie,
+                    onChange: K,
+                    value: H,
+                    options: Ee,
                     className: "tw-mr-2"
                 }), !P && p.createElement("div", {
                     className: "d-flex align-items-center flex-wrap"
@@ -818,25 +893,25 @@
                     type: "date",
                     className: "tw-mr-1",
                     disabled: !!P,
-                    invalid: xe,
-                    value: null == W ? void 0 : W.format("YYYY-MM-DD"),
+                    invalid: fe,
+                    value: null == z ? void 0 : z.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = d()(e.target.value).startOf(se(F));
-                        X(t)
+                        var t = d()(e.target.value).startOf(Ne(H));
+                        V(t)
                     },
                     min: x.pH,
-                    max: null == Q ? void 0 : Q.format("YYYY-MM-DD")
+                    max: null == re ? void 0 : re.format("YYYY-MM-DD")
                 }), " to ", p.createElement(l.II, {
                     type: "date",
                     className: "tw-ml-1",
                     disabled: !!P,
-                    invalid: he,
-                    value: null == Q ? void 0 : Q.format("YYYY-MM-DD"),
+                    invalid: be,
+                    value: null == re ? void 0 : re.format("YYYY-MM-DD"),
                     onChange: function(e) {
-                        var t = d()(e.target.value).endOf(se(F));
-                        J(t)
+                        var t = d()(e.target.value).endOf(Ne(H));
+                        ae(t)
                     },
-                    min: (null == W ? void 0 : W.format("YYYY-MM-DD")) || x.pH,
+                    min: (null == z ? void 0 : z.format("YYYY-MM-DD")) || x.pH,
                     max: d()().add(2, "y").format("YYYY-MM-DD")
                 })), p.createElement("div", {
                     className: "d-flex justify-content-end",
@@ -850,32 +925,32 @@
                     },
                     trimToLength: !0,
                     label: "Listing",
-                    onChange: pe,
-                    onMouseEnter: je,
-                    onClick: je,
+                    onChange: me,
+                    onMouseEnter: Le,
+                    onClick: Le,
                     className: "tw-mr-2",
-                    value: de,
-                    options: Ie
+                    value: we,
+                    options: Be
                 }), p.createElement(l.zx, {
-                    disabled: _e,
+                    disabled: He,
                     onClick: function() {
                         var e;
-                        if (!_e) {
+                        if (!He) {
                             var t = document.createElement("a");
                             t.style.display = "none";
-                            var a = "weeks" === F ? "GGGG-[W]ww" : "YYYY-MM-DD",
-                                r = de && (null == Me || null === (e = Me.find((function(e) {
-                                    return e.id === de
+                            var r = "weeks" === H ? "GGGG-[W]ww" : "YYYY-MM-DD",
+                                a = we && (null == Oe || null === (e = Oe.find((function(e) {
+                                    return e.id === we
                                 }))) || void 0 === e ? void 0 : e.displayName);
-                            t.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(F.replace(/s$/, ""), " - ").concat(W.format(a), " to ").concat(Q.format(a), ".csv"));
-                            var n = (null == Ne ? void 0 : Ne.breakdown) || [],
+                            t.setAttribute("download", "VRChat Sales".concat(a ? " for ".concat(a) : "", " by ").concat(H.replace(/s$/, ""), " - ").concat(z.format(r), " to ").concat(re.format(r), ".csv"));
+                            var n = (null == Pe ? void 0 : Pe.breakdown) || [],
                                 l = Object.keys(n[0]),
                                 o = null == n ? void 0 : n.map((function(e) {
                                     return l.map((function(t) {
                                         return e[t]
                                     })).join(",")
                                 }));
-                            l[0] = F, o.unshift(l.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(o.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
+                            l[0] = H, o.unshift(l.join(",")), t.setAttribute("href", "data:text/csv;encoding:utf-8,".concat(encodeURIComponent(o.join("\n")))), document.body.appendChild(t), t.click(), document.body.removeChild(t)
                         }
                     }
                 }, p.createElement(l.$1, {
@@ -883,19 +958,19 @@
                     className: "tw-px-2"
                 })))), p.createElement("span", {
                     className: "tw-text-placeholder-text tw-my-5 tw-text-base"
-                }, "Time period: ", null == W ? void 0 : W.format("MMM DD"), " - ", null !== (a = c()(Q)) && void 0 !== a && a.isToday() ? "Today" : null == Q ? void 0 : Q.format("MMM DD")), Se && p.createElement(l.qX, {
+                }, "Time period: ", null == z ? void 0 : z.format("MMM DD"), " - ", null !== (r = c()(re)) && void 0 !== r && r.isToday() ? "Today" : null == re ? void 0 : re.format("MMM DD")), je && p.createElement(l.qX, {
                     type: "error",
                     title: "Error loading listings"
-                }, null == Ye || null === (i = Ye.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message), j && p.createElement(l.qX, {
+                }, null == Ie || null === (i = Ie.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message), T && p.createElement(l.qX, {
                     type: "error",
                     title: "Error loading earnings"
-                }, null == I || null === (s = I.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), Ge ? p.createElement(l.UU, {
+                }, null == I || null === (s = I.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), _e ? p.createElement(l.UU, {
                     style: {
                         minHeight: 100,
-                        aspectRatio: Ue.aspectRatio.toString(10)
+                        aspectRatio: qe.aspectRatio.toString(10)
                     }
                 }) : function() {
-                    if (Te) {
+                    if (Ge) {
                         var e = {
                             labels: Array.from({
                                 length: 7
@@ -925,10 +1000,10 @@
                     }
                     return p.createElement(f.x1, {
                         datasetIdKey: "_id",
-                        options: Ue,
-                        data: Oe
+                        options: qe,
+                        data: Ze
                     })
-                }(), "weeks" === F && p.createElement(l.qX, {
+                }(), "weeks" === H && p.createElement(l.qX, {
                     type: "dark",
                     slim: !0,
                     className: "mb-0"
@@ -939,65 +1014,65 @@
                 }, "on Wikipedia"), "."))
             }
         },
-        59128: (e, t, a) => {
+        59128: (e, t, r) => {
             e.exports = {
-                srcSet: a.p + "ad12fd2b35113d5d-1023w.png 1023w",
+                srcSet: r.p + "ad12fd2b35113d5d-1023w.png 1023w",
                 images: [{
-                    path: a.p + "ad12fd2b35113d5d-1023w.png",
+                    path: r.p + "ad12fd2b35113d5d-1023w.png",
                     width: 1023,
                     height: 712
                 }],
-                src: a.p + "ad12fd2b35113d5d-1023w.png",
+                src: r.p + "ad12fd2b35113d5d-1023w.png",
                 toString: function() {
-                    return a.p + "ad12fd2b35113d5d-1023w.png"
+                    return r.p + "ad12fd2b35113d5d-1023w.png"
                 },
                 width: 1023,
                 height: 712
             }
         },
-        259: (e, t, a) => {
+        259: (e, t, r) => {
             e.exports = {
-                srcSet: a.p + "33eb43b8887b1b01-1200w.png 1200w",
+                srcSet: r.p + "33eb43b8887b1b01-1200w.png 1200w",
                 images: [{
-                    path: a.p + "33eb43b8887b1b01-1200w.png",
+                    path: r.p + "33eb43b8887b1b01-1200w.png",
                     width: 1200,
                     height: 675
                 }],
-                src: a.p + "33eb43b8887b1b01-1200w.png",
+                src: r.p + "33eb43b8887b1b01-1200w.png",
                 toString: function() {
-                    return a.p + "33eb43b8887b1b01-1200w.png"
+                    return r.p + "33eb43b8887b1b01-1200w.png"
                 },
                 width: 1200,
                 height: 675
             }
         },
-        9468: (e, t, a) => {
+        9468: (e, t, r) => {
             e.exports = {
-                srcSet: a.p + "343ab670941e2a7c-1200w.png 1200w",
+                srcSet: r.p + "343ab670941e2a7c-1200w.png 1200w",
                 images: [{
-                    path: a.p + "343ab670941e2a7c-1200w.png",
+                    path: r.p + "343ab670941e2a7c-1200w.png",
                     width: 1200,
                     height: 830
                 }],
-                src: a.p + "343ab670941e2a7c-1200w.png",
+                src: r.p + "343ab670941e2a7c-1200w.png",
                 toString: function() {
-                    return a.p + "343ab670941e2a7c-1200w.png"
+                    return r.p + "343ab670941e2a7c-1200w.png"
                 },
                 width: 1200,
                 height: 830
             }
         },
-        83555: (e, t, a) => {
+        83555: (e, t, r) => {
             e.exports = {
-                srcSet: a.p + "ed6040c0dba8cdc0-1562w.png 1562w",
+                srcSet: r.p + "ed6040c0dba8cdc0-1562w.png 1562w",
                 images: [{
-                    path: a.p + "ed6040c0dba8cdc0-1562w.png",
+                    path: r.p + "ed6040c0dba8cdc0-1562w.png",
                     width: 1562,
                     height: 1024
                 }],
-                src: a.p + "ed6040c0dba8cdc0-1562w.png",
+                src: r.p + "ed6040c0dba8cdc0-1562w.png",
                 toString: function() {
-                    return a.p + "ed6040c0dba8cdc0-1562w.png"
+                    return r.p + "ed6040c0dba8cdc0-1562w.png"
                 },
                 width: 1562,
                 height: 1024
@@ -1005,4 +1080,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4ca839d84843c0a2275702ebec0a6de19bb3901613a7a96f238a01d2202e9079.js.map
+//# sourceMappingURL=12f3ffacc393446ae18a57c8130081ec7baf91dd68053ba7e332e174d83434c2.js.map
