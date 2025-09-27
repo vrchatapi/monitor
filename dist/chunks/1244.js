@@ -63,8 +63,8 @@
                 f = g.useGetReportsQuery,
                 v = g.useCreateReportMutation,
                 h = r(17383),
-                y = r(96985),
-                w = r(89421),
+                w = r(96985),
+                y = r(89421),
                 E = r(11121),
                 b = r(43862);
             var x = (0, r(4965).Z)("fieldset", {
@@ -94,7 +94,7 @@
             };
             var C = r(60006);
 
-            function O(e, t) {
+            function N(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -105,12 +105,12 @@
                 return r
             }
 
-            function N(e) {
+            function O(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? O(Object(r), !0).forEach((function(t) {
+                    t % 2 ? N(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : O(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : N(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -121,7 +121,7 @@
                     s = e.cancelCallback,
                     g = e.type,
                     x = e.contentId,
-                    O = e.contentName,
+                    N = e.contentName,
                     j = e.marketplace,
                     S = e.hasStore,
                     Z = p.useState(""),
@@ -168,7 +168,7 @@
                 p.useEffect((function() {
                     q && F("")
                 }), [q]), p.useEffect((function() {
-                    "missing" === z && L("")
+                    "warnings" === z && L("")
                 }), [z]), p.useEffect((function() {
                     a || setTimeout((function() {
                         se(), D(""), F(""), L(""), Y([])
@@ -180,7 +180,7 @@
                             return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ae(N({
+                                        return e.next = 2, ae(O({
                                             type: g,
                                             category: q,
                                             reason: z,
@@ -208,7 +208,7 @@
                         var e, t;
                         return Object.keys(null !== (e = null == H || null === (t = H.reportOptions) || void 0 === t ? void 0 : t[g]) && void 0 !== e ? e : {}).sort((function(e, t) {
                             var r, n;
-                            return (null === (r = H.reportCategories) || void 0 === r || null === (r = r[e]) || void 0 === r ? void 0 : r["".concat(g, "Order")]) - (null === (n = H.reportCategories) || void 0 === n || null === (n = n[t]) || void 0 === n ? void 0 : n["".concat(g, "Order")])
+                            return (null === (r = H.reportCategories) || void 0 === r || null === (r = r[e]) || void 0 === r ? void 0 : r.order) - (null === (n = H.reportCategories) || void 0 === n || null === (n = n[t]) || void 0 === n ? void 0 : n.order)
                         })).filter((function(e) {
                             return !e.endsWith("store") || S
                         })).map((function(e) {
@@ -227,14 +227,14 @@
                     toggle: s
                 }, ie ? p.createElement(p.Fragment, null, $ ? p.createElement(p.Fragment, null, p.createElement(C.eb, {
                     tag: "h4",
-                    close: p.createElement(w.Z, {
+                    close: p.createElement(y.Z, {
                         onClick: s,
                         disabled: pe
                     }),
                     toggle: s
                 }, "Contact Support"), p.createElement(C.vc, {
                     className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
-                }, p.createElement(y.$1, {
+                }, p.createElement(w.$1, {
                     icon: i.e7,
                     size: "4x",
                     className: "tw-mt-5 tw-mb-5"
@@ -243,18 +243,18 @@
                 }, "Support Team Required"), p.createElement("strong", null, "It looks like you are trying to report an issue that requires our support team."), p.createElement("p", null, "Please provide us with information about your issue using our web form so we can provide you with assistance.")), p.createElement(C.tc, {
                     className: "tw-justify-center"
                 }, p.createElement(C.Qj, {
-                    to: "https://help.vrchat.com/hc/en-us/requests/new?ticket_form_id=360006750513&tf_360057451993=".concat(null == G ? void 0 : G.id, "&tf_subject=").concat(z, "%20").concat(q, "%20By%20").concat(g, "%20").concat(O, "&tf_description=").concat(W),
+                    to: "https://help.vrchat.com/hc/en-us/requests/new?ticket_form_id=360006750513&tf_360057451993=".concat(null == G ? void 0 : G.id, "&tf_subject=").concat(z, "%20").concat(q, "%20By%20").concat(g, "%20").concat(N, "&tf_description=").concat(W),
                     target: "_blank"
                 }, "Open Support Form"))) : p.createElement(p.Fragment, null, p.createElement(C.eb, {
                     tag: "h4",
-                    close: p.createElement(w.Z, {
+                    close: p.createElement(y.Z, {
                         onClick: s,
                         disabled: pe
                     }),
                     toggle: s
                 }, "Report Submitted"), p.createElement(C.vc, {
                     className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
-                }, p.createElement(y.$1, {
+                }, p.createElement(w.$1, {
                     icon: c.XC,
                     size: "4x",
                     className: "tw-mt-5 tw-mb-5"
@@ -262,14 +262,14 @@
                     className: "tw-mb-4"
                 }, "Your report is in - we've got it!"), p.createElement("strong", null, "Thanks for helping us keep things safe!"), p.createElement("p", null, "Your report has been received and will be reviewed by our moderation team.")), p.createElement(C.tc, {
                     className: "tw-justify-center"
-                }, p.createElement(y.zx, {
+                }, p.createElement(w.zx, {
                     color: "primary",
                     onClick: s,
                     className: "tw-px-20 tw-py-1"
                 }, "Done")))) : p.createElement(p.Fragment, null, p.createElement(C.eb, {
                     className: "tw-capitalize",
                     tag: "h4",
-                    close: p.createElement(w.Z, {
+                    close: p.createElement(y.Z, {
                         onClick: s,
                         disabled: pe
                     }),
@@ -280,7 +280,7 @@
                     size: "3x"
                 })) : p.createElement("div", {
                     className: "tw-flex tw-flex-col"
-                }, ce && p.createElement(y.qX, {
+                }, ce && p.createElement(w.qX, {
                     type: "error",
                     title: "Error"
                 }, "An error occurred while trying to submit the report."), p.createElement("p", null, "What are you reporting?"), p.createElement(k, {
@@ -291,7 +291,7 @@
                     options: me
                 }), p.createElement("label", {
                     className: "tw-mt-5"
-                }, "Reason", p.createElement(y.Lt, {
+                }, "Reason", p.createElement(w.Lt, {
                     className: "tw-mt-2",
                     value: z,
                     onChange: F,
@@ -309,12 +309,12 @@
                     target: "_blank",
                     rel: "noreferrer",
                     className: "tw-ml-1"
-                }, "Contact us")), "copyright" === z ? p.createElement(y.qX, {
+                }, "Contact us")), "copyright" === z ? p.createElement(w.qX, {
                     type: "warn"
                 }, "We take copyright seriously. Copyright infringement reports are handled differently from standard reports. If you own this content or are authorized to act on behalf of the owner,", p.createElement(m.rU, {
                     to: "/home/profile?dmcaClaimForm=true&dmcaTarget=".concat(x),
                     className: "tw-ml-1"
-                }, "submit a DMCA Claim"), ".") : "missing" === z ? p.createElement(p.Fragment, null, p.createElement("label", {
+                }, "submit a DMCA Claim"), ".") : "warnings" === z ? p.createElement(p.Fragment, null, p.createElement("label", {
                     className: "tw-mt-5 tw-mb-2"
                 }, "Suggest Content Warnings"), p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-2"
@@ -330,14 +330,14 @@
                     }
                 }))) : null != ee && ee.results.some((function(e) {
                     return e.type === g && e.category === q && e.reason === z
-                })) ? p.createElement(y.qX, {
+                })) ? p.createElement(w.qX, {
                     type: "warn",
                     title: "You already have a pending report for this."
                 }) : p.createElement("label", {
                     className: "tw-mt-5 tw-flex tw-flex-col tw-gap-2"
                 }, "Notes", p.createElement("small", {
                     className: "tw-text-light-grey"
-                }, "Provide specific details to help moderators resolve the issue promptly."), p.createElement(y.gx, {
+                }, "Provide specific details to help moderators resolve the issue promptly."), p.createElement(w.gx, {
                     value: W,
                     onChange: function(e) {
                         return L(e.target.value)
@@ -346,16 +346,16 @@
                     styleOverride: {
                         height: "90px"
                     }
-                })))), p.createElement(C.tc, null, p.createElement(y.zx, {
+                })))), p.createElement(C.tc, null, p.createElement(w.zx, {
                     disabled: pe,
                     neutral: !0,
                     onClick: s,
                     className: "px-2",
                     expand: !0
-                }, "Cancel"), p.createElement(y.zx, {
+                }, "Cancel"), p.createElement(w.zx, {
                     color: "primary",
                     loading: le,
-                    disabled: pe || !q || !z || !W && "missing" !== z || "copyright" === z || "missing" === z && !M.length,
+                    disabled: pe || !q || !z || !W && "warnings" !== z || "copyright" === z || "warnings" === z && !M.length,
                     onClick: ue,
                     className: "px-2",
                     expand: !0
@@ -364,4 +364,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14072b2b2162f1fa28399c1e386ea6d0e78906912a253e34dcc66eec52159402.js.map
+//# sourceMappingURL=4a97f862b486e48dcfed717c2dd2446ce3c3bdd6920e706e49afc286add369e0.js.map
