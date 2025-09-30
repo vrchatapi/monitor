@@ -560,7 +560,7 @@
                                         listingId: k.id,
                                         listingVariantId: null == _ ? void 0 : _.listingVariantId,
                                         quantity: Y.selectedPurchaseQuantity,
-                                        totalPrice: 0 === P ? void 0 : P,
+                                        totalPrice: P,
                                         contextData: {
                                             locationType: f.G0.GROUP,
                                             storeId: null == m ? void 0 : m.storeId,
@@ -852,4 +852,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4f932eae6323ebd113659ae80312825f8cea6e377896799b0ce48646731d61aa.js.map
+//# sourceMappingURL=85c701f79f7243a01841df313a781c9cc18e09ebf8a3b4a0565fb4d20103ed70.js.map

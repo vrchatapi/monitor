@@ -286,8 +286,8 @@
             C.propTypes = {
                 listingType: S().string.isRequired
             };
-            const O = C;
-            var I = a(49715),
+            const I = C;
+            var O = a(49715),
                 T = a(95643),
                 D = a(51806),
                 P = a.n(D),
@@ -367,12 +367,12 @@
                     }, "Done")))));
                     var U = S ? D : Z,
                         z = U.displayName,
-                        Y = U.listingType,
-                        B = U.description,
+                        B = U.listingType,
+                        Y = U.description,
                         _ = U.imageId,
                         F = U.products,
-                        W = U.purchaseQuantity,
-                        X = (U.quantifiable, U.listingImageId),
+                        X = U.purchaseQuantity,
+                        W = (U.quantifiable, U.listingImageId),
                         $ = U.sellerId,
                         q = U.sellerDisplayName;
                     return n.createElement("div", {
@@ -399,7 +399,7 @@
                         className: "tw-w-full tw-h-full tw-aspect-square",
                         width: 162,
                         alt: z,
-                        imageId: _ || X || null,
+                        imageId: _ || W || null,
                         fallbackSrc: P(),
                         fitToCover: !0
                     })), n.createElement("div", {
@@ -411,8 +411,8 @@
                         }
                     }, n.createElement("div", {
                         className: "tw-flex tw-flex-row tw-justify-start tw-items-center "
-                    }, n.createElement(I.Z, {
-                        listingType: Y,
+                    }, n.createElement(O.Z, {
+                        listingType: B,
                         className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                     }), n.createElement("div", {
                         className: "tw-rounded-full tw-bg-placeholder-text tw-w-4 tw-h-4 tw-flex tw-flex-col tw-justify-center tw-ml-1 tw--mt-1 tw-cursor-pointer",
@@ -424,8 +424,8 @@
                         className: "tw-text-[10px] tw-text-black"
                     }))), n.createElement("div", {
                         className: "tw-bg-transparent tw-mt-[20px] tw-top-0 ".concat(g ? "tw-absolute" : "tw-hidden")
-                    }, n.createElement(O, {
-                        listingType: Y
+                    }, n.createElement(I, {
+                        listingType: B
                     }))), n.createElement("h4", {
                         className: "tw-my-2 tw-text-white tw-text-xl"
                     }, z), c.purchaseActive && n.createElement("div", {
@@ -437,15 +437,15 @@
                     }, "Sold by:", " ", n.createElement(v.rU, {
                         to: "/home/user/".concat($),
                         className: "tw-text-link-highlight"
-                    }, q)), "instant" === Y && W && n.createElement("span", {
+                    }, q)), "instant" === B && X && n.createElement("span", {
                         className: "tw-block"
-                    }, "Quantity: ", W), n.createElement("span", {
+                    }, "Quantity: ", X), n.createElement("span", {
                         className: "tw-block"
                     }, "Price: ", n.createElement(r.b5, null), " ", c.purchasePrice), n.createElement("span", {
                         className: "tw-block"
                     }, "Purchased on: ", j()(c.purchaseDate).format("ll"))), n.createElement("p", {
                         className: "tw-text-light-grey tw-text-base tw-mt-2"
-                    }, B))), n.createElement("div", null, n.createElement("button", {
+                    }, Y))), n.createElement("div", null, n.createElement("button", {
                         type: "button",
                         className: "tw-px-4 tw-py-3 tw-text-link-highlight tw-text-xs tw-cursor-pointer tw-bg-transparent tw-border-0",
                         onClick: function() {
@@ -513,7 +513,7 @@
                     className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/purchaseCard:tw-flex-row tw-items-start @sm/purchaseCard:tw-items-center tw-gap-2 tw-mb-2 "
                 }, n.createElement("h4", {
                     className: "tw-leading-8 tw-max-w-[250px] tw-mb-0 @sm/purchaseCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
-                }, o), n.createElement(I.Z, {
+                }, o), n.createElement(O.Z, {
                     listingType: w,
                     className: "tw-ml-0 @sm/purchaseCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 }), u && n.createElement("div", {
@@ -568,7 +568,7 @@
                 }), [t, c, r, s, l, a])
             };
 
-            function Y(e, t) {
+            function B(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -579,12 +579,12 @@
                 return a
             }
 
-            function B(e) {
+            function Y(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Y(Object(a), !0).forEach((function(t) {
+                    t % 2 ? B(Object(a), !0).forEach((function(t) {
                         (0, w.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : Y(Object(a)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : B(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
@@ -604,14 +604,14 @@
                     label: "Name",
                     value: "name"
                 }],
-                W = [{
+                X = [{
                     label: "Descending",
                     value: "desc"
                 }, {
                     label: "Ascending",
                     value: "asc"
                 }],
-                X = "all",
+                W = "all",
                 $ = "all",
                 q = "purchaseDate",
                 H = "desc";
@@ -622,7 +622,7 @@
                     c = s[0],
                     i = s[1],
                     o = (0, l.UO)().paginationPage,
-                    w = (0, n.useState)(c.get("listingType") || X),
+                    w = (0, n.useState)(c.get("listingType") || W),
                     x = (0, m.Z)(w, 2),
                     E = x[0],
                     y = x[1],
@@ -631,9 +631,9 @@
                     k = N[0],
                     S = N[1],
                     C = (0, n.useState)(c.get("sortBy") || q),
-                    O = (0, m.Z)(C, 2),
-                    I = O[0],
-                    T = O[1],
+                    I = (0, m.Z)(C, 2),
+                    O = I[0],
+                    T = I[1],
                     D = (0, n.useState)(c.get("orderBy") || H),
                     P = (0, m.Z)(D, 2),
                     L = P[0],
@@ -641,14 +641,14 @@
                     j = (0, n.useState)(null),
                     M = (0, m.Z)(j, 2),
                     Z = M[0],
-                    Y = M[1],
+                    B = M[1],
                     G = o ? Number(o) : 1,
                     V = (0, n.useState)(!1),
                     K = (0, m.Z)(V, 2),
                     Q = K[0],
                     J = K[1],
                     ee = (0, h.IB)().data,
-                    te = (0, g.HL)(B(B(B(B({
+                    te = (0, g.HL)(Y(Y(Y(Y({
                         buyerId: ee.id,
                         n: 50,
                         pageValue: G
@@ -656,8 +656,8 @@
                         purchaseDisplay: k
                     }), E && {
                         listingType: E
-                    }), I && {
-                        sort: I
+                    }), O && {
+                        sort: O
                     }), L && {
                         order: L
                     }), {
@@ -674,17 +674,17 @@
                     purchaseDisplay: k,
                     searchParams: c,
                     setSearchParams: i,
-                    sortBy: I
+                    sortBy: O
                 });
                 var ce = function() {
                         y("all"), S("all"), T("purchaseDate"), A("desc")
                     },
                     ie = function(e) {
-                        Y(e), J(!0)
+                        B(e), J(!0)
                     },
                     oe = (0, n.useMemo)((function() {
-                        return E === X && k === $ && I === q && L === H
-                    }), [E, k, I, L]),
+                        return E === W && k === $ && O === q && L === H
+                    }), [E, k, O, L]),
                     we = (0, n.useMemo)((function() {
                         return ne ? n.createElement("div", {
                             className: "tw-container tw-flex tw-justify-center tw-p-10"
@@ -728,7 +728,7 @@
                 return n.createElement("div", null, n.createElement(r.$4, null, "My Purchases"), n.createElement(R, {
                     isOpen: Q,
                     onCancelCallback: function() {
-                        Y(null), J(!1)
+                        B(null), J(!1)
                     },
                     purchaseData: Z
                 }), n.createElement("div", {
@@ -750,14 +750,14 @@
                 }), n.createElement(r.Lt, {
                     className: "tw-h-9",
                     label: "Sort by",
-                    value: I,
+                    value: O,
                     options: F,
                     onChange: T
                 }), n.createElement(r.Lt, {
                     className: "tw-h-9",
                     label: "Order by",
                     value: L,
-                    options: W,
+                    options: X,
                     onChange: A
                 }))), n.createElement("div", {
                     className: "tw-rounded-md tw-mt-5"
@@ -1096,15 +1096,15 @@
                         plannedOfflineWindowEnd: null,
                         offlineReason: null
                     } : S,
-                    O = C.economyOnline,
-                    I = C.plannedOfflineWindowStart,
+                    I = C.economyOnline,
+                    O = C.plannedOfflineWindowStart,
                     T = (C.plannedOfflineWindowEnd, C.offlineReason, k.isFetching),
                     D = k.isError,
                     P = k.error,
                     L = (0, Q.v$)({
                         userId: s.id
                     }, {
-                        skip: !s || !O,
+                        skip: !s || !I,
                         refetchOnMountOrArgChange: !0
                     }),
                     A = L.data,
@@ -1120,15 +1120,12 @@
                         balance: 0
                     } : Z).balance,
                     z = R.isLoading,
-                    Y = R.isError,
-                    B = null == A ? void 0 : A.signed_tos,
+                    B = R.isError,
+                    Y = null == A ? void 0 : A.signed_tos,
                     _ = n.useState(null),
-                    F = (0, m.Z)(_, 1)[0],
-                    W = n.useState(null),
-                    X = (0, m.Z)(W, 1)[0],
-                    $ = n.useState(null),
-                    q = (0, m.Z)($, 1)[0],
-                    H = (0, g.BQ)(ye(ye(ye({}, (w === f.yy.ACTIVE || w === f.yy.EXPIRING) && {
+                    F = ((0, m.Z)(_, 1)[0], n.useState(null)),
+                    X = ((0, m.Z)(F, 1)[0], n.useState(null)),
+                    W = ((0, m.Z)(X, 1)[0], (0, g.BQ)(ye(ye(ye({}, (w === f.yy.ACTIVE || w === f.yy.EXPIRING) && {
                         isActive: !0
                     }), w === f.yy.EXPIRED && {
                         isActive: !1
@@ -1137,42 +1134,47 @@
                     }), {
                         skip: !c,
                         refetchOnMountOrArgChange: !0
-                    }),
-                    G = H.data,
-                    K = H.isLoading,
-                    ee = H.isError,
-                    te = H.error;
+                    })),
+                    $ = W.data,
+                    q = W.isLoading,
+                    H = W.isError,
+                    G = W.error;
                 n.useEffect((function() {
-                    w === f.yy.ALL && !p && G && v(G.length > 0)
-                }), [w, G, p]);
-                var ae = n.useMemo((function() {
-                        return e = G, t = {
+                    w === f.yy.ALL && !p && $ && v($.length > 0)
+                }), [w, $, p]);
+                var K = n.useMemo((function() {
+                        return e = $, t = {
                             expiring: [],
                             active: [],
                             expired: []
                         }, a = j()(), n = j()().add(1, "months"), e ? (e.forEach((function(e) {
-                            var l = !0,
-                                r = j()(e.subscriptionExpiry).isBefore(a),
-                                s = j()(e.subscriptionExpiry).isBefore(n);
-                            if (null !== F && null !== X && l && (l = j()(e.subscriptionFirstStarted, "YYYY-MM-DD").isBetween(F, X)), null !== q && l && (l = e.listingType === q), l && ![f.ft.PERMANENT, f.ft.INSTANT, f.ft.DURATION].includes(e.listingType)) {
-                                if (r) return void t.expired.push(e);
-                                if (s) return void t.expiring.push(e);
+                            var l = j()(e.subscriptionExpiry).isBefore(a),
+                                r = j()(e.subscriptionExpiry).isBefore(n);
+                            if (![f.ft.PERMANENT, f.ft.INSTANT, f.ft.DURATION].includes(e.listingType)) {
+                                if (l) return void t.expired.push(e);
+                                if (r) return void t.expiring.push(e);
                                 t.active.push(e)
                             }
-                        })), t) : t;
+                        })), w === f.yy.ACTIVE ? {
+                            active: t.active
+                        } : w === f.yy.EXPIRING ? {
+                            expiring: t.expiring
+                        } : w === f.yy.EXPIRED ? {
+                            expired: t.expired
+                        } : t) : t;
                         var e, t, a, n
-                    }), [G, w]),
-                    le = K || T || M || z;
-                (0, o.dj)(I);
+                    }), [$, w]),
+                    ee = q || T || M || z;
+                (0, o.dj)(O);
                 return n.createElement(n.Fragment, null, D && n.createElement(r.qX, {
                     type: "error",
                     title: "Something strange happened"
                 }, n.createElement("p", {
                     className: "tw-m-0"
-                }, "Error getting Tilia online status: ", P.status, " ", null !== (e = null === (t = P.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown error")), ee && n.createElement(r.qX, {
+                }, "Error getting Tilia online status: ", P.status, " ", null !== (e = null === (t = P.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown error")), H && n.createElement(r.qX, {
                     type: "error",
                     title: "Error loading subscription information"
-                }, null == te || null === (a = te.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message), n.createElement(ne, {
+                }, null == G || null === (a = G.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message), n.createElement(ne, {
                     subscriptionMode: w,
                     listingType: y,
                     view: f.He.SUBSCRIPTIONS,
@@ -1185,15 +1187,15 @@
                         })
                     },
                     hideSearchBar: !0
-                }), le && n.createElement(Ne, {
+                }), ee && n.createElement(Ne, {
                     className: "tw-h-48 tw-rounded-lg"
-                }), !le && ae && n.createElement(ve, {
-                    tiliaTokenBalance: !Y && U,
-                    tiliaTosAccepted: B,
-                    purchases: ae,
-                    economyOnline: O,
+                }), !ee && K && n.createElement(ve, {
+                    tiliaTokenBalance: !B && U,
+                    tiliaTosAccepted: Y,
+                    purchases: K,
+                    economyOnline: I,
                     mode: f.He.SUBSCRIPTIONS,
-                    isTiliaTokenBalanceError: Y,
+                    isTiliaTokenBalanceError: B,
                     hasSubscriptionHistory: p
                 }))
             };
@@ -1206,8 +1208,8 @@
                 ke = a(62475),
                 Se = a(96766),
                 Ce = a(76176),
-                Oe = a(56646),
-                Ie = a(43862),
+                Ie = a(56646),
+                Oe = a(43862),
                 Te = function(e) {
                     var t, a = e.isExpanded,
                         l = void 0 !== a && a,
@@ -1235,7 +1237,7 @@
                         k = b.isFetching,
                         S = b.isError,
                         C = b.error,
-                        O = (0, n.useMemo)((function() {
+                        I = (0, n.useMemo)((function() {
                             return (null == N ? void 0 : N.stacks) && N.stacks.length > 0 ? N.stacks.reduce((function(e, t) {
                                 return j()(t._updated_at).isAfter(j()(e._updated_at)) ? t : e
                             })) : null
@@ -1245,18 +1247,18 @@
                     }, n.createElement("h4", {
                         className: "heading tw-text-base tw-font-normal tw-text-light-grey"
                     }, n.createElement(r.$1, {
-                        icon: Oe.faCircleInfo,
+                        icon: Ie.faCircleInfo,
                         size: "1x"
                     }), " Transaction details"), n.createElement("div", {
                         className: "tw-flex tw-justify-center tw-p-12"
-                    }, n.createElement(Ie.Z, null)));
-                    var I = c.id;
+                    }, n.createElement(Oe.Z, null)));
+                    var O = c.id;
                     return n.createElement("div", {
                         className: "tw-@container/transaction-details tw-bg-darker-grey tw-rounded-lg tw-mt-3 tw-p-5 ".concat(l ? "tw-block" : "tw-hidden")
                     }, n.createElement("h4", {
                         className: "heading tw-text-base tw-font-normal tw-text-light-grey"
                     }, n.createElement(r.$1, {
-                        icon: Oe.faCircleInfo,
+                        icon: Ie.faCircleInfo,
                         size: "1x"
                     }), " Transaction details"), n.createElement("hr", {
                         className: "tw-bg-hr-line-color tw-border-0 tw-h-[2px]"
@@ -1302,13 +1304,13 @@
                         className: "tw-rounded tw-border-2 tw-flex tw-flex-row tw-py-1 tw-items-center tw-justify-start"
                     }, n.createElement("span", {
                         className: "tw-text-base tw-font-normal tw-text-white"
-                    }, (0, o.Lv)(O.stackStatus)))), n.createElement("div", null, n.createElement("div", {
+                    }, (0, o.Lv)(I.stackStatus)))), n.createElement("div", null, n.createElement("div", {
                         className: "tw-text-light-grey tw-font-normal tw-text-xs"
                     }, "Transaction ID"), n.createElement("div", {
                         className: "tw-rounded tw-border-2 tw-flex tw-flex-row tw-py-1 tw-items-center tw-justify-start"
                     }, n.createElement("span", {
                         className: "tw-text-xs tw-text-white"
-                    }, I)))))
+                    }, O)))))
                 };
             Te.propTypes = {
                 isExpanded: S().bool,
@@ -1430,10 +1432,10 @@
                     k = (0, m.Z)(N, 2),
                     S = k[0],
                     C = k[1],
-                    O = (0, n.useState)(""),
-                    I = (0, m.Z)(O, 2),
-                    T = I[0],
-                    D = I[1],
+                    I = (0, n.useState)(""),
+                    O = (0, m.Z)(I, 2),
+                    T = O[0],
+                    D = O[1],
                     P = (0, n.useState)(Ze),
                     L = (0, m.Z)(P, 2),
                     A = L[0],
@@ -1442,14 +1444,14 @@
                     Z = (0, m.Z)(R, 2),
                     U = Z[0],
                     z = Z[1],
-                    Y = (0, n.useState)(i.get("sortBy") || null),
-                    B = (0, m.Z)(Y, 2),
-                    _ = B[0],
-                    F = B[1],
-                    W = (0, n.useState)(i.get("orderBy") || "descending"),
-                    X = (0, m.Z)(W, 2),
-                    $ = X[0],
-                    q = X[1],
+                    B = (0, n.useState)(i.get("sortBy") || null),
+                    Y = (0, m.Z)(B, 2),
+                    _ = Y[0],
+                    F = Y[1],
+                    X = (0, n.useState)(i.get("orderBy") || "descending"),
+                    W = (0, m.Z)(X, 2),
+                    $ = W[0],
+                    q = W[1],
                     H = (0, n.useState)(u ? Number(u) : 1),
                     G = (0, m.Z)(H, 2),
                     V = G[0],
@@ -1603,7 +1605,7 @@
                     }
                 })))))
             };
-            const Ye = function(e) {
+            const Be = function(e) {
                 var t = e.className,
                     a = void 0 === t ? "" : t,
                     l = (0, h.XC)(),
@@ -1651,7 +1653,7 @@
                     to: "https://vrchat.com/home/marketplace/welcome"
                 }, n.createElement(r.$1, {
                     className: "tw-pr-1",
-                    icon: Oe.faCircleInfo
+                    icon: Ie.faCircleInfo
                 }), n.createElement("span", {
                     className: "tw-underline"
                 }, "What can I buy?"))))), n.createElement(r.sm, {
@@ -1671,11 +1673,11 @@
                     href: "https://help.vrchat.com/hc/en-us/articles/23255458227987-Creator-Economy-Frequently-Asked-Questions"
                 }, "click here"), "!"))))
             };
-            var Be = a(42138),
+            var Ye = a(42138),
                 _e = a(62898),
                 Fe = a(69677),
-                We = a(62171),
-                Xe = a.n(We);
+                Xe = a(62171),
+                We = a.n(Xe);
             const $e = function(e) {
                 var t = e.className,
                     a = void 0 === t ? "" : t,
@@ -1695,7 +1697,7 @@
                             t = w ? w.filter((function(e) {
                                 return e.id.startsWith("vrchatplus-monthly")
                             })) : [],
-                            a = [].concat((0, Be.Z)(e), (0, Be.Z)(t));
+                            a = [].concat((0, Ye.Z)(e), (0, Ye.Z)(t));
                         return [(null == a ? void 0 : a.length) > 0, a[0]]
                     }), [w]),
                     p = (0, m.Z)(d, 2),
@@ -1754,11 +1756,11 @@
                     rel: "noreferrer"
                 }, n.createElement(r.$1, {
                     className: "tw-pr-px",
-                    icon: Oe.faCircleInfo
+                    icon: Ie.faCircleInfo
                 }), n.createElement("span", {
                     className: "tw-underline"
                 }, "What is VRChat Plus?")))), f && n.createElement("img", {
-                    src: Xe(),
+                    src: We(),
                     alt: "VRCat",
                     className: "tw-absolute tw-bottom-0 tw-right-0 tw--scale-x-100"
                 })))
@@ -1778,7 +1780,7 @@
                     className: "fw-normal mb-0"
                 }, "Overview")), n.createElement(r.Ao, null, n.createElement(r.X2, {
                     className: "tw-gap-3.5 tw-flex-wrap tw-flex tw-justify-between"
-                }, n.createElement(Ye, {
+                }, n.createElement(Be, {
                     className: "tw-min-w-[310px] tw-flex-1"
                 }), n.createElement($e, {
                     className: "tw-min-w-[310px] tw-flex-1"
@@ -1877,4 +1879,4 @@
         }
     }
 ]);
-//# sourceMappingURL=15e744b40b58748c420949c9a540555f54f6bca50296dfded2b72f35e7d6bb41.js.map
+//# sourceMappingURL=77a80412177f237c044f855ac2d0acdd036f4c89fb1027759168ba52b177ea51.js.map
