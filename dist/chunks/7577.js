@@ -81,11 +81,11 @@
                 m = n(56209),
                 d = (n(92177), n(6344)),
                 w = n(10679),
-                v = n(91492),
-                p = n(40527);
+                p = n(91492),
+                v = n(40527);
             const f = function() {
                 var e = (0, s.Tu)().user;
-                return a.createElement(p.default, {
+                return a.createElement(v.default, {
                     userId: e.id,
                     hideTitle: !0,
                     activeTab: "photos"
@@ -96,7 +96,7 @@
             };
             const g = function() {
                 var e = (0, s.Tu)().user;
-                return a.createElement(p.default, {
+                return a.createElement(v.default, {
                     userId: e.id,
                     hideTitle: !0
                 })
@@ -157,8 +157,8 @@
                         m = void 0 === s ? function() {} : s,
                         d = e.onDeleteCallback,
                         w = void 0 === d ? function() {} : d,
-                        v = e.onArchiveCallback,
-                        p = void 0 === v ? function() {} : v,
+                        p = e.onArchiveCallback,
+                        v = void 0 === p ? function() {} : p,
                         f = e.onRecoverCallback,
                         h = void 0 === f ? function() {} : f,
                         g = U._[l],
@@ -246,7 +246,7 @@
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), p()
+                            e.stopPropagation(), e.preventDefault(), v()
                         }
                     }, a.createElement(i.$1, {
                         icon: R.N2,
@@ -305,11 +305,11 @@
             };
             const W = _;
             const q = function() {
-                var e, t, n, r, l = (0, v.F)(),
+                var e, t, n, r, l = (0, p.F)(),
                     c = (0, j.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
-                    u = (0, v.aj)({
+                    u = (0, p.aj)({
                         n: 100,
                         pageValue: 1,
                         types: "emoji",
@@ -319,7 +319,7 @@
                     m = u.data,
                     d = u.error,
                     w = u.isError,
-                    p = u.isFetching,
+                    v = u.isFetching,
                     f = function() {
                         var e = (0, N.Z)(A().mark((function e(t) {
                             return A().wrap((function(e) {
@@ -358,7 +358,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    h = p || s;
+                    h = v || s;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
                 }, a.createElement("h3", {
@@ -516,7 +516,7 @@
                     m = c[1],
                     d = (0, a.useState)(!1),
                     w = (0, j.Z)(d, 2),
-                    p = w[0],
+                    v = w[0],
                     f = w[1],
                     h = (0, a.useState)(!1),
                     g = (0, j.Z)(h, 2),
@@ -526,7 +526,7 @@
                     Z = (0, j.Z)(y, 2),
                     P = Z[0],
                     R = Z[1],
-                    I = (0, v.Xz)(),
+                    I = (0, p.Xz)(),
                     L = (0, j.Z)(I, 2),
                     D = L[0],
                     V = L[1].isLoading,
@@ -544,7 +544,7 @@
                     }
                 }), [T]);
                 var q = (0, B.y)().data,
-                    X = (0, v.aj)({
+                    X = (0, p.aj)({
                         n: 100,
                         pageValue: 1,
                         types: "emoji",
@@ -607,7 +607,7 @@
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
                 }, a.createElement(K, {
-                    isOpen: p,
+                    isOpen: v,
                     onCloseCallback: function() {
                         return f(!1)
                     },
@@ -727,15 +727,16 @@
                         s = (0, j.Z)(o, 2),
                         u = (s[0], s[1]),
                         m = (0, a.useRef)(null),
-                        d = function() {
+                        d = "prop" === c ? "item" : c,
+                        w = function() {
                             var e;
                             u((null === (e = m.current) || void 0 === e ? void 0 : e.checked) || !1), r()
                         };
                     return a.createElement(i.u_, {
                         isVisible: t,
                         onClose: n,
-                        title: "Archive ".concat(c),
-                        onConfirm: d,
+                        title: "Archive ".concat(d),
+                        onConfirm: w,
                         hideCancel: !0,
                         slim: !0,
                         className: "tw-w-min-[400px]"
@@ -743,7 +744,7 @@
                         className: "tw-flex tw-flex-col tw-w-[500px]"
                     }, a.createElement("p", {
                         className: "tw-font-bold tw-w-full tw-mb-2"
-                    }, "Are you sure you want to archive this ", c, "?"), a.createElement("small", {
+                    }, "Are you sure you want to archive this ", d, "?"), a.createElement("small", {
                         className: "tw-mb-12 tw-text-light-grey"
                     }, "It will be moved to the Archived section, where you can recover it at any time."), a.createElement(i.XZ, {
                         id: "skipInventoryArchiveConfirmation",
@@ -756,12 +757,12 @@
                         neutral: !0,
                         disabled: l
                     }, "Cancel"), a.createElement(i.zx, {
-                        onClick: d,
+                        onClick: w,
                         primary: !0,
                         loading: l,
                         disabled: l,
                         className: "tw-capitalize"
-                    }, "Archive ", c))))
+                    }, "Archive ", d))))
                 };
             ue.propTypes = {
                 isOpen: T().bool.isRequired,
@@ -794,7 +795,7 @@
                 }
                 return e
             }
-            var ve = function() {
+            var pe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, j.Z)(l, 2),
                     o = c[0],
@@ -803,8 +804,8 @@
                     m = (0, j.Z)(u, 2),
                     d = m[0],
                     w = m[1],
-                    p = (0, a.useState)(!1),
-                    f = (0, j.Z)(p, 2),
+                    v = (0, a.useState)(!1),
+                    f = (0, j.Z)(v, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(null),
@@ -818,11 +819,11 @@
                     I = (0, se._)("skipInventoryArchiveConfirmation", !1),
                     L = (0, j.Z)(I, 2),
                     D = L[0],
-                    V = (L[1], (0, v.F)()),
+                    V = (L[1], (0, p.F)()),
                     T = (0, j.Z)(V, 2),
                     M = T[0],
                     z = T[1].isLoading,
-                    _ = (0, v.fv)(),
+                    _ = (0, p.fv)(),
                     q = (0, j.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
                 (0, a.useEffect)((function() {
@@ -832,7 +833,7 @@
                         })
                     }
                 }), [$]);
-                var B = (0, v.aj)(we(we({
+                var B = (0, p.aj)(we(we({
                         n: 100,
                         pageValue: 1,
                         types: "emoji",
@@ -852,7 +853,7 @@
                         return e.gallery
                     }));
                 H(ee, X);
-                var te = (0, v.sw)(),
+                var te = (0, p.sw)(),
                     ne = te.data,
                     re = (te.error, te.isError, te.isFetching, (0, a.useMemo)((function() {
                         if (!ne) return [];
@@ -1054,13 +1055,13 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "No exclusive emojis", h ? " with special effects" : "", "."))))
             };
-            ve.propTypes = {};
-            const pe = ve;
+            pe.propTypes = {};
+            const ve = pe;
             const fe = function() {
                 var e = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
-                    t = (0, v.dq)({
+                    t = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "emoji"
@@ -1100,7 +1101,7 @@
                     element: a.createElement(ie, null)
                 }), a.createElement(l.AW, {
                     path: "exclusive",
-                    element: a.createElement(pe, null)
+                    element: a.createElement(ve, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
                     element: a.createElement(q, null)
@@ -1110,11 +1111,11 @@
                 })
             };
             const he = function() {
-                var e, t, n, r, l = (0, v.F)(),
+                var e, t, n, r, l = (0, p.F)(),
                     c = (0, j.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
-                    u = (0, v.aj)({
+                    u = (0, p.aj)({
                         n: 100,
                         pageValue: 1,
                         types: "prop",
@@ -1124,7 +1125,7 @@
                     m = u.data,
                     d = u.error,
                     w = u.isError,
-                    p = u.isFetching,
+                    v = u.isFetching,
                     f = function() {
                         var e = (0, N.Z)(A().mark((function e(t) {
                             return A().wrap((function(e) {
@@ -1163,7 +1164,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    h = p || s;
+                    h = v || s;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
                 }, a.createElement("h3", {
@@ -1220,8 +1221,8 @@
                     m = (0, j.Z)(u, 2),
                     d = m[0],
                     w = m[1],
-                    p = (0, a.useState)(null),
-                    f = (0, j.Z)(p, 2),
+                    v = (0, a.useState)(null),
+                    f = (0, j.Z)(v, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(!1),
@@ -1231,11 +1232,11 @@
                     k = (0, se._)("skipInventoryArchiveConfirmation", !1),
                     Z = (0, j.Z)(k, 2),
                     P = Z[0],
-                    R = (Z[1], (0, v.F)()),
+                    R = (Z[1], (0, p.F)()),
                     I = (0, j.Z)(R, 2),
                     L = I[0],
                     D = I[1].isLoading,
-                    V = (0, v.fv)(),
+                    V = (0, p.fv)(),
                     T = (0, j.Z)(V, 1)[0],
                     M = (0, Y.I0)();
                 (0, a.useEffect)((function() {
@@ -1245,7 +1246,7 @@
                         })
                     }
                 }), [M]);
-                var z = (0, v.aj)(function(e) {
+                var z = (0, p.aj)(function(e) {
                         for (var t = 1; t < arguments.length; t++) {
                             var n = null != arguments[t] ? arguments[t] : {};
                             t % 2 ? ge(Object(n), !0).forEach((function(t) {
@@ -1273,7 +1274,7 @@
                         return e.gallery
                     }));
                 H(X, _);
-                var K = (0, v.sw)(),
+                var K = (0, p.sw)(),
                     J = K.data,
                     Q = (K.error, K.isError, K.isFetching, (0, a.useMemo)((function() {
                         if (!J) return [];
@@ -1472,7 +1473,7 @@
                         withRecentSubscription: !0
                     }).user,
                     t = !(null != e && e.hasVRCPlus || null != e && e.previouslyHadVRCPlus),
-                    n = (0, v.dq)({
+                    n = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "prop"
@@ -1515,11 +1516,11 @@
                 }))))
             };
             const be = function() {
-                var e, t, n, r, l = (0, v.F)(),
+                var e, t, n, r, l = (0, p.F)(),
                     c = (0, j.Z)(l, 2),
                     o = c[0],
                     s = c[1].isLoading,
-                    u = (0, v.aj)({
+                    u = (0, p.aj)({
                         n: 100,
                         pageValue: 1,
                         types: "sticker",
@@ -1529,7 +1530,7 @@
                     m = u.data,
                     d = u.error,
                     w = u.isError,
-                    p = u.isFetching,
+                    v = u.isFetching,
                     f = function() {
                         var e = (0, N.Z)(A().mark((function e(t) {
                             return A().wrap((function(e) {
@@ -1568,7 +1569,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    h = p || s;
+                    h = v || s;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
                 }, a.createElement("h3", {
@@ -1613,7 +1614,7 @@
                         u = c[1],
                         m = (0, a.useState)(!1),
                         w = (0, j.Z)(m, 2),
-                        p = w[0],
+                        v = w[0],
                         f = w[1],
                         h = (0, a.useState)(!1),
                         g = (0, j.Z)(h, 2),
@@ -1623,7 +1624,7 @@
                         Z = (0, j.Z)(y, 2),
                         P = Z[0],
                         R = Z[1],
-                        I = (0, v.Xz)(),
+                        I = (0, p.Xz)(),
                         L = (0, j.Z)(I, 2),
                         D = L[0],
                         V = L[1].isLoading,
@@ -1641,7 +1642,7 @@
                         }
                     }), [T]);
                     var q = (0, B.y)().data,
-                        $ = (0, v.aj)({
+                        $ = (0, p.aj)({
                             n: 100,
                             pageValue: 1,
                             types: "sticker",
@@ -1704,7 +1705,7 @@
                     return a.createElement("div", {
                         className: "tw-px-4 tw-@container/inventory-items"
                     }, a.createElement(K, {
-                        isOpen: p,
+                        isOpen: v,
                         onCloseCallback: function() {
                             return f(!1)
                         },
@@ -1843,8 +1844,8 @@
                     m = (0, j.Z)(u, 2),
                     d = m[0],
                     w = m[1],
-                    p = (0, a.useState)(!1),
-                    f = (0, j.Z)(p, 2),
+                    v = (0, a.useState)(!1),
+                    f = (0, j.Z)(v, 2),
                     h = f[0],
                     g = f[1],
                     x = (0, a.useState)(!1),
@@ -1858,11 +1859,11 @@
                     I = (0, se._)("skipInventoryArchiveConfirmation", !1),
                     L = (0, j.Z)(I, 2),
                     D = L[0],
-                    V = (L[1], (0, v.F)()),
+                    V = (L[1], (0, p.F)()),
                     T = (0, j.Z)(V, 2),
                     M = T[0],
                     z = T[1].isLoading,
-                    _ = (0, v.fv)(),
+                    _ = (0, p.fv)(),
                     q = (0, j.Z)(_, 1)[0],
                     $ = (0, Y.I0)();
                 (0, a.useEffect)((function() {
@@ -1872,7 +1873,7 @@
                         })
                     }
                 }), [$]);
-                var B = (0, v.aj)(Ce(Ce({
+                var B = (0, p.aj)(Ce(Ce({
                         n: 100,
                         pageValue: 1,
                         types: "sticker",
@@ -1892,7 +1893,7 @@
                         return e.gallery
                     }));
                 H(ee, X);
-                var te = (0, v.sw)(),
+                var te = (0, p.sw)(),
                     ne = te.data,
                     re = (te.error, te.isError, te.isFetching, (0, a.useMemo)((function() {
                         if (!ne) return [];
@@ -2100,7 +2101,7 @@
                         withRecentSubscription: !0
                     }).user,
                     t = !(null != e && e.hasVRCPlus || null != e && e.previouslyHadVRCPlus),
-                    n = (0, v.dq)({
+                    n = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "sticker"
@@ -2151,17 +2152,17 @@
             };
             const Ae = function() {
                 var e = (0, s.Tu)().user,
-                    t = (0, v.dq)({
+                    t = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "sticker"
                     }).data,
-                    n = (0, v.dq)({
+                    n = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "emoji"
                     }).data,
-                    p = (0, v.dq)({
+                    v = (0, p.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "prop"
@@ -2204,7 +2205,7 @@
                         icon: m.default,
                         to: "items",
                         condition: !0,
-                        hasNotification: (null == p ? void 0 : p.totalCount) > 0
+                        hasNotification: (null == v ? void 0 : v.totalCount) > 0
                     }]
                 })), a.createElement(a.Suspense, {
                     fallback: a.createElement(i.UU, {
@@ -2285,7 +2286,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? d(Object(n), !0).forEach((function(t) {
-                        v(e, t, n[t])
+                        p(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : d(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -2293,7 +2294,7 @@
                 return e
             }
 
-            function v(e, t, n) {
+            function p(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -2302,7 +2303,7 @@
                 }) : e[t] = n, e
             }
 
-            function p(e, t) {
+            function v(e, t) {
                 if (null == e) return {};
                 var n, r, a = function(e, t) {
                     if (null == e) return {};
@@ -2339,7 +2340,7 @@
                     l = void 0 === a ? "Close" : a,
                     i = e.cssModule,
                     d = e.tag,
-                    v = void 0 === d ? "div" : d,
+                    p = void 0 === d ? "div" : d,
                     f = e.color,
                     h = void 0 === f ? "success" : f,
                     g = e.isOpen,
@@ -2353,7 +2354,7 @@
                     N = e.fade,
                     j = void 0 === N || N,
                     C = e.innerRef,
-                    O = p(e, u),
+                    O = v(e, u),
                     S = (0, o.mx)(c()(t, "alert", "alert-".concat(h), {
                         "alert-dismissible": E
                     }), i),
@@ -2363,7 +2364,7 @@
                         timeout: j ? k.timeout : 0
                     });
                 return r.createElement(s.Z, m({}, O, A, {
-                    tag: v,
+                    tag: p,
                     className: S,
                     in: x,
                     role: "alert",
@@ -2380,4 +2381,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ac17c90382640805ecdc5930b7ec7b815bd511e80c0a70f5795b6a3a8ec91820.js.map
+//# sourceMappingURL=93cfbd155ea7838748b2cdd93a3d80e970422c6b00063571bed6830942bb72df.js.map
