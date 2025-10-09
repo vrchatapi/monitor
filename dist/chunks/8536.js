@@ -3,49 +3,49 @@
     [8536], {
         18536: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => m
+                default: () => i
             });
             var r = a(68055),
                 l = a(67294),
                 n = a(32981),
                 c = a(96985),
-                s = a(43683),
-                o = a(95679),
-                w = a.n(o),
-                i = a(67511),
-                u = [{
+                o = a(43683),
+                s = a(95679),
+                w = a.n(s),
+                u = a(67511),
+                m = [{
                     label: "Udon Product",
                     value: "udon",
                     text: "Custom In-World Experiences.",
-                    redirect: "https://creators.vrchat.com/worlds/udon/",
-                    image: a.n(i)()
+                    redirect: "https://creators.vrchat.com/economy/products/udon",
+                    image: a.n(u)()
                 }, {
                     label: "Avatar",
                     value: "avatar",
                     text: "Sell your uploaded avatars.",
-                    redirect: "https://creators.vrchat.com/avatars/",
+                    redirect: "https://creators.vrchat.com/economy/products/avatar",
                     image: w()
                 }];
-            const m = function(e) {
+            const i = function(e) {
                 var t = e.hasAvatarSellerPermission,
                     a = void 0 !== t && t,
-                    o = e.onNext,
-                    w = void 0 === o ? function() {} : o,
-                    i = e.onClose,
-                    m = void 0 === i ? function() {} : i,
+                    s = e.onNext,
+                    w = void 0 === s ? function() {} : s,
+                    u = e.onClose,
+                    i = void 0 === u ? function() {} : u,
                     d = (0, n.I0)(),
                     p = (0, n.v9)((function(e) {
                         return e.productFlow.productType
                     }));
                 return l.createElement(c.JX, null, l.createElement("p", null, "Choose the type of product you’d like to create:"), l.createElement(c.JX, {
                     className: "tw-gap-5 tw-items-center md:tw-items-stretch md:tw-flex-row md:tw-justify-center"
-                }, u.map((function(e) {
+                }, m.map((function(e) {
                     var t = p === e.value;
                     return l.createElement(c.JX, {
                         key: e.value,
                         onClick: function() {
                             return function(e) {
-                                d((0, s.WB)(e))
+                                d((0, o.WB)(e))
                             }(e.value)
                         },
                         className: "".concat(t ? "tw-ring-teal-accent" : "tw-ring-hr-line-color", " tw-ring-2 tw-relative tw-aspect-square tw-text-center tw-px-5 tw-max-w-[220px] tw-py-7 tw-bg-grey tw-items-center tw-justify-center tw-flex-1 tw-rounded-md ").concat(a || "avatar" !== e.value ? "tw-cursor-pointer" : "tw-opacity-50 tw-cursor-not-allowed tw-pointer-events-none")
@@ -73,7 +73,7 @@
                     className: "tw-mt-8 tw-gap-3 md:tw-flex-row"
                 }, l.createElement(c.zx, {
                     containerClasses: "tw-flex-1",
-                    onClick: m,
+                    onClick: i,
                     neutral: !0
                 }, "Close"), l.createElement(c.zx, {
                     containerClasses: "tw-flex-1",
@@ -84,4 +84,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21f752179be8229b43a5a9016130d269dcf04faf2bf568e25bf3556c30e9c9cc.js.map
+//# sourceMappingURL=ac23026d7f7800e35f5cdfec7463b65e302966739a7ea36034c4836f0f825ba5.js.map
