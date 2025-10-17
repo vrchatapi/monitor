@@ -1,7 +1,55 @@
-"use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [4586], {
+        3820: (e, t) => {
+            "use strict";
+            var n = "clipboard",
+                a = [128203],
+                r = "f328",
+                l = "M192 0c-41.8 0-77.4 26.7-90.5 64L64 64C28.7 64 0 92.7 0 128L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64l-37.5 0C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM112 192l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z";
+            t.DF = {
+                prefix: "fas",
+                iconName: n,
+                icon: [384, 512, a, r, l]
+            }, t.Yj = t.DF
+        },
+        66062: (e, t) => {
+            "use strict";
+            var n = "globe",
+                a = [127760],
+                r = "f0ac",
+                l = "M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z";
+            t.DF = {
+                prefix: "fas",
+                iconName: n,
+                icon: [512, 512, a, r, l]
+            }, t.g4 = t.DF
+        },
+        96157: (e, t) => {
+            "use strict";
+            var n = "infinity",
+                a = [8734, 9854],
+                r = "f534",
+                l = "M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5L320 210.7l72.2-72.2C419.5 111.3 456.4 96 494.9 96C575 96 640 161 640 241.1l0 29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2C220.5 400.7 183.6 416 145.1 416C65 416 0 351 0 270.9l0-29.7zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8C100.3 160 64 196.3 64 241.1l0 29.7c0 44.8 36.3 81.1 81.1 81.1c21.5 0 42.2-8.5 57.4-23.8L274.7 256zm90.5 0l72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8c44.8 0 81.1-36.3 81.1-81.1l0-29.7c0-44.8-36.3-81.1-81.1-81.1c-21.5 0-42.2 8.5-57.4 23.8L365.3 256z";
+            t.DF = {
+                prefix: "fas",
+                iconName: n,
+                icon: [640, 512, a, r, l]
+            }, t.vq = t.DF
+        },
+        81143: (e, t) => {
+            "use strict";
+            var n = "pen-clip",
+                a = ["pen-alt"],
+                r = "f305",
+                l = "M453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-52.1 52.1s0 0 0 0l-1-1s0 0 0 0l-16-16-96-96-17-17 52.1-52.1c25-25 65.5-25 90.5 0zM241 114.9c-9.4-9.4-24.6-9.4-33.9 0L105 217c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L173.1 81c28.1-28.1 73.7-28.1 101.8 0L288 94.1l17 17 96 96 16 16 1 1-17 17L229.5 412.5c-48 48-109.2 80.8-175.8 94.1l-25 5c-7.9 1.6-16-.9-21.7-6.6s-8.1-13.8-6.6-21.7l5-25c13.3-66.6 46.1-127.8 94.1-175.8L254.1 128 241 114.9z";
+            t.DF = {
+                prefix: "fas",
+                iconName: n,
+                icon: [512, 512, a, r, l]
+            }, t.k8 = t.DF
+        },
         34586: (e, t, n) => {
+            "use strict";
             n.r(t), n.d(t, {
                 default: () => jt
             });
@@ -43,7 +91,7 @@
                 return n
             }
 
-            function Z(e) {
+            function D(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? P(Object(n), !0).forEach((function(t) {
@@ -54,7 +102,7 @@
                 }
                 return e
             }
-            const D = function(e) {
+            const Z = function(e) {
                 var t, n, a, r, o, i, m, u, d, p, f = e.dispute,
                     g = e.disputeLoading,
                     b = e.contentId,
@@ -68,10 +116,10 @@
                     N = (0, s.Z)(C, 2),
                     S = N[0],
                     P = N[1],
-                    D = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
-                    j = I()(null !== (t = null == E ? void 0 : E.email) && void 0 !== t ? t : "") && (null == E || null === (n = E.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == E || null === (a = E.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == E || null === (r = E.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == E || null === (o = E.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == E || null === (i = E.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == E || null === (m = E.signature) || void 0 === m ? void 0 : m.length) > 0 && D && (null == E || null === (u = E.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == E || null === (d = E.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
+                    Z = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
+                    j = I()(null !== (t = null == E ? void 0 : E.email) && void 0 !== t ? t : "") && (null == E || null === (n = E.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == E || null === (a = E.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == E || null === (r = E.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == E || null === (o = E.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == E || null === (i = E.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == E || null === (m = E.signature) || void 0 === m ? void 0 : m.length) > 0 && Z && (null == E || null === (u = E.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == E || null === (d = E.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
                     A = function(e) {
-                        P(Z(Z({}, S), {}, (0, k.Z)({}, e.target.id, e.target.checked)))
+                        P(D(D({}, S), {}, (0, k.Z)({}, e.target.id, e.target.checked)))
                     };
                 return l.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
@@ -82,7 +130,7 @@
                     className: "tw-pt-2",
                     id: "claim-name",
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             fullName: e.target.value
                         }))
                     },
@@ -96,7 +144,7 @@
                     type: "text",
                     value: null == E ? void 0 : E.organization,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             organization: e.target.value
                         }))
                     }
@@ -111,7 +159,7 @@
                     id: "owner-mailing-address",
                     value: null == E ? void 0 : E.mailingAddress,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
@@ -124,7 +172,7 @@
                     id: "owner-mailing-city",
                     value: null == E ? void 0 : E.mailingCity,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             mailingCity: e.target.value
                         }))
                     }
@@ -135,7 +183,7 @@
                     id: "owner-mailing-state-province",
                     value: null == E ? void 0 : E.mailingStateProvince,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
@@ -146,7 +194,7 @@
                     id: "owner-mailing-postal-code",
                     value: null == E ? void 0 : E.mailingPostalCode,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
@@ -156,7 +204,7 @@
                     id: "owner-mailing-country",
                     value: null == E ? void 0 : E.mailingCountry,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
@@ -169,7 +217,7 @@
                     type: "text",
                     value: null == E ? void 0 : E.phoneNumber,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
@@ -182,7 +230,7 @@
                     type: "email",
                     value: null == E ? void 0 : E.email,
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             email: e.target.value
                         }))
                     }
@@ -208,7 +256,7 @@
                     htmlFor: "process",
                     checked: null == S ? void 0 : S.process,
                     onChange: A
-                })), D ? null : l.createElement("div", {
+                })), Z ? null : l.createElement("div", {
                     className: "tw-flex tw-items-center tw-bg-[#FF57671A] tw-mb-4 tw-rounded"
                 }, l.createElement(c.$1, {
                     color: "#EE5454",
@@ -234,7 +282,7 @@
                     id: "owner-signature",
                     value: null == E || null === (p = E.signature) || void 0 === p ? void 0 : p.toUpperCase(),
                     onChange: function(e) {
-                        return x(Z(Z({}, E), {}, {
+                        return x(D(D({}, E), {}, {
                             signature: e.target.value
                         }))
                     }
@@ -287,7 +335,7 @@
                     S = i.error,
                     I = (0, C.jO)(),
                     P = (0, s.Z)(I, 2),
-                    Z = P[0],
+                    D = P[0],
                     L = P[1],
                     O = L.isLoading,
                     j = L.isError,
@@ -295,14 +343,14 @@
                     T = L.error,
                     W = (0, C.lY)(),
                     U = (0, s.Z)(W, 2),
-                    Y = U[0],
+                    z = U[0],
                     M = U[1],
-                    z = M.isLoading,
+                    Y = M.isLoading,
                     F = M.isSuccess,
                     $ = M.isError,
-                    V = M.error,
-                    q = (0, l.useState)(null),
-                    X = (0, s.Z)(q, 2),
+                    q = M.error,
+                    V = (0, l.useState)(null),
+                    X = (0, s.Z)(V, 2),
                     H = X[0],
                     B = X[1],
                     J = (0, l.useState)(!1),
@@ -335,7 +383,7 @@
                     })), $) && r((0, E.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
-                        message: "Failed to withdraw your dispute successfully: ".concat(null == V || null === (e = V.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
+                        message: "Failed to withdraw your dispute successfully: ".concat(null == q || null === (e = q.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "danger",
                         timeout: 7e3
                     }))
@@ -390,7 +438,7 @@
                 }, "Archived")), (null == a ? void 0 : a.id) === g.authorId && g.disputed && l.createElement(l.Fragment, null, l.createElement(c.sm, {
                     isOpen: K,
                     confirmCallback: function() {
-                        return Y({
+                        return z({
                             contentRestrictionId: g.contentRestrictionId,
                             contentId: g.id
                         })
@@ -403,8 +451,8 @@
                     confirmText: "Confirm",
                     cancelText: "Cancel"
                 }), l.createElement(c.zx, {
-                    disabled: z,
-                    loading: z,
+                    disabled: Y,
+                    loading: Y,
                     className: "tw-px-12 tw-block tw-self-center",
                     onClick: function() {
                         return Q(!0)
@@ -427,8 +475,8 @@
                     onClose: function() {
                         return B(!1)
                     }
-                }, l.createElement(D, {
-                    dispute: Z,
+                }, l.createElement(Z, {
+                    dispute: D,
                     disputeLoading: O,
                     contentId: g.id,
                     contentRestrictionId: g.contentRestrictionId,
@@ -480,13 +528,13 @@
                 T = n(15861),
                 W = n(12529),
                 U = n(59545),
-                Y = n(68055),
+                z = n(68055),
                 M = n(88302),
-                z = n(30856),
+                Y = n(30856),
                 F = n(17726),
                 $ = n(76409),
-                V = n(34601),
-                q = n(96157),
+                q = n(34601),
+                V = n(96157),
                 X = n(20821),
                 H = n(5147),
                 B = n(47947),
@@ -690,7 +738,7 @@
                     disabled: !0
                 }) : l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.LE
+                    icon: z.LE
                 }))), o && l.createElement("div", {
                     className: "tw-flex tw-flex-col tw-border-[1px] tw-border-white/10 tw-border-solid tw-rounded tw-p-2"
                 }, l.createElement("div", null, "Why are you disabling Items in this world?"), l.createElement(c.gx, {
@@ -707,16 +755,16 @@
                 }, "Instance moderators won't be able to turn Items on for instances created for this world.")))
             };
 
-            function Ze(e, t) {
+            function De(e, t) {
                 var n = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!n) {
                     if (Array.isArray(e) || (n = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return De(e, t);
+                            if ("string" == typeof e) return Ze(e, t);
                             var n = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === n && e.constructor && (n = e.constructor.name);
                             if ("Map" === n || "Set" === n) return Array.from(e);
-                            if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return De(e, t)
+                            if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Ze(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         n && (e = n);
                         var a = 0,
@@ -762,7 +810,7 @@
                 }
             }
 
-            function De(e, t) {
+            function Ze(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var n = 0, a = new Array(t); n < t; n++) a[n] = e[n];
                 return a
@@ -819,9 +867,9 @@
                     S = C.bops,
                     I = C.loading,
                     P = C.error,
-                    Z = C.errorMessage,
-                    D = C.refreshWorld,
-                    L = void 0 === D ? function() {} : D,
+                    D = C.errorMessage,
+                    Z = C.refreshWorld,
+                    L = void 0 === Z ? function() {} : Z,
                     O = (null == N ? void 0 : N.authorId) === v.id,
                     j = y || O,
                     A = (0, w.v9)((function(e) {
@@ -835,7 +883,7 @@
                     _e = (void 0 === be ? {} : be).sdkUnityVersion,
                     Se = (0, x.dD)(),
                     Ie = l.useRef(null),
-                    De = l.useRef(null),
+                    Ze = l.useRef(null),
                     Le = (0, x.T)({
                         worldId: f
                     }),
@@ -856,24 +904,24 @@
                     St = (0, s.Z)(_t, 2),
                     It = St[0],
                     Pt = St[1],
-                    Zt = l.useState(null),
-                    Dt = (0, s.Z)(Zt, 2),
-                    Lt = Dt[0],
-                    Ot = Dt[1],
+                    Dt = l.useState(null),
+                    Zt = (0, s.Z)(Dt, 2),
+                    Lt = Zt[0],
+                    Ot = Zt[1],
                     jt = l.useState(!1),
                     At = (0, s.Z)(jt, 2),
                     Rt = At[0],
                     Tt = At[1],
                     Wt = l.useState(!1),
                     Ut = (0, s.Z)(Wt, 2),
-                    Yt = Ut[0],
+                    zt = Ut[0],
                     Mt = Ut[1],
-                    zt = l.useState(!1),
-                    Ft = (0, s.Z)(zt, 2),
+                    Yt = l.useState(!1),
+                    Ft = (0, s.Z)(Yt, 2),
                     $t = Ft[0],
-                    Vt = Ft[1],
-                    qt = l.useState(!1),
-                    Xt = (0, s.Z)(qt, 2),
+                    qt = Ft[1],
+                    Vt = l.useState(!1),
+                    Xt = (0, s.Z)(Vt, 2),
                     Ht = Xt[0],
                     Bt = Xt[1],
                     Jt = l.useState(!1),
@@ -1002,7 +1050,7 @@
                     Pn = function() {
                         cn(!1)
                     },
-                    Zn = function() {
+                    Dn = function() {
                         var e = (0, T.Z)(ue().mark((function e() {
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1020,7 +1068,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Dn = function() {
+                    Zn = function() {
                         an(!1)
                     },
                     Ln = function() {
@@ -1180,7 +1228,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Yn = l.useMemo((function() {
+                    zn = l.useMemo((function() {
                         if (!ce) return {
                             versionsList: [],
                             platformsList: [],
@@ -1192,7 +1240,7 @@
                             r = !1,
                             l = !1,
                             o = !1,
-                            i = Ze([].concat(ce.unityPackages).reverse());
+                            i = De([].concat(ce.unityPackages).reverse());
                         try {
                             for (i.s(); !(e = i.n()).done;) {
                                 var c = e.value,
@@ -1225,14 +1273,14 @@
                     }), [null == ce ? void 0 : ce.unityPackages, _e]),
                     Mn = l.useMemo((function() {
                         if (!ce) return !1;
-                        var e = Yn.platformsList.includes("standalonewindows"),
-                            t = Yn.platformsList.includes("android");
+                        var e = zn.platformsList.includes("standalonewindows"),
+                            t = zn.platformsList.includes("android");
                         return e && t
-                    }), [ce, Yn.platformsList]),
-                    zn = Yn.hasUnsupported && !Yn.hasSupported && !Yn.hasOld,
-                    Fn = Yn.hasUnsupported && (Yn.hasSupported || Yn.hasOld),
-                    $n = !Yn.hasUnsupported && !Yn.hasSupported,
-                    Vn = l.useMemo((function() {
+                    }), [ce, zn.platformsList]),
+                    Yn = zn.hasUnsupported && !zn.hasSupported && !zn.hasOld,
+                    Fn = zn.hasUnsupported && (zn.hasSupported || zn.hasOld),
+                    $n = !zn.hasUnsupported && !zn.hasSupported,
+                    qn = l.useMemo((function() {
                         var e, t = new Set(null !== (e = null == ce ? void 0 : ce.tags) && void 0 !== e ? e : []);
                         return {
                             isAdminApproved: t.has("admin_approved"),
@@ -1244,16 +1292,16 @@
                             isFocusViewEnabled: !t.has("feature_focus_view_disabled")
                         }
                     }), [null == ce ? void 0 : ce.tags]),
-                    qn = Vn.isAdminApproved,
-                    Xn = Vn.isInLabs,
-                    Hn = Vn.isLabsLocked,
-                    Bn = Vn.isLabsFailed,
-                    Jn = Vn.isWorldDebugEnabled,
-                    Gn = Vn.isAvatarScalingEnabled,
-                    Kn = (Vn.isStickersEnabled, Vn.isDroneEnabled, Vn.isFocusViewEnabled),
-                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || qn || Xn || y || Bn || Hn),
+                    Vn = qn.isAdminApproved,
+                    Xn = qn.isInLabs,
+                    Hn = qn.isLabsLocked,
+                    Bn = qn.isLabsFailed,
+                    Jn = qn.isWorldDebugEnabled,
+                    Gn = qn.isAvatarScalingEnabled,
+                    Kn = (qn.isStickersEnabled, qn.isDroneEnabled, qn.isFocusViewEnabled),
+                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || Vn || Xn || y || Bn || Hn),
                     ea = "public" === (null == ce ? void 0 : ce.releaseStatus),
-                    ta = !ea && (y || qn && Be),
+                    ta = !ea && (y || Vn && Be),
                     na = Qn && !Be,
                     aa = Qn && !na && !h.user,
                     ra = !(null != ce && ce.name) || "" === (null == ce ? void 0 : ce.name),
@@ -1291,12 +1339,12 @@
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
+                })), l.createElement(ze, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row align-items-center justify-content-center w-100"
                 }, l.createElement(c.qX, {
                     type: "error",
                     title: "Could not load World data",
-                    message: Z
+                    message: D
                 }))) : j ? l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
                 }, l.createElement(Ue, {
@@ -1309,7 +1357,7 @@
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Ye, null, "Edit World Info")), Kt && !Se && null === Lt && l.createElement(ut, {
+                })), l.createElement(ze, null, "Edit World Info")), Kt && !Se && null === Lt && l.createElement(ut, {
                     className: "animated fadeIn"
                 }, l.createElement(dt, {
                     onClick: Un,
@@ -1324,7 +1372,7 @@
                     type: "error",
                     title: "Failed to update World data",
                     message: A.error
-                }), zn && l.createElement(c.qX, {
+                }), Yn && l.createElement(c.qX, {
                     title: "Unsupported Unity Version",
                     type: "error",
                     message: l.createElement(l.Fragment, null, "None of the uploaded world versions are using a supported Unity version.", l.createElement("br", null), l.createElement("b", null, "Please always use a Unity version VRChat supports."), l.createElement("br", null), l.createElement("br", null), l.createElement("a", {
@@ -1348,7 +1396,7 @@
                     className: "align-items-start flex-column flex-sm-row"
                 }, l.createElement(Te, {
                     className: "order-last order-sm-first w-100 w-sm-auto flex-grow-1"
-                }, l.createElement(Ve, {
+                }, l.createElement(qe, {
                     className: "w-100 w-sm-auto flex-grow-1"
                 }, l.createElement(at, {
                     className: "mt-0"
@@ -1366,7 +1414,7 @@
                             })
                         }))
                     },
-                    inputStyle: ze,
+                    inputStyle: Ye,
                     className: "mt-2"
                 }), ra && l.createElement(c.qX, {
                     type: "error",
@@ -1384,7 +1432,7 @@
                     inputMode: "number",
                     defaultValue: ce.capacity,
                     onBlur: Tn("capacity"),
-                    inputStyle: ze,
+                    inputStyle: Ye,
                     className: "flex-grow-1 w-100 me-0 me-sm-2"
                 }), l.createElement(c.zx, {
                     role: "checkbox",
@@ -1406,7 +1454,7 @@
                 }), l.createElement(at, null, "Recommended Capacity"), l.createElement(Ue, {
                     className: "align-items-center w-100 mt-2 flex-column flex-sm-row"
                 }, l.createElement(c.II, {
-                    ref: De,
+                    ref: Ze,
                     name: "recommended-capacity",
                     "aria-label": "Recommended Capacity",
                     type: "number",
@@ -1414,7 +1462,7 @@
                     inputMode: "number",
                     defaultValue: ce.recommendedCapacity,
                     onBlur: Tn("recommendedCapacity"),
-                    inputStyle: ze,
+                    inputStyle: Ye,
                     className: "flex-grow-1 w-100 me-0 me-sm-2"
                 }), l.createElement(c.zx, {
                     role: "checkbox",
@@ -1439,7 +1487,7 @@
                     placeholder: "World Description",
                     value: ce.description,
                     onChange: Rn("description"),
-                    inputStyle: ze,
+                    inputStyle: Ye,
                     rows: "4",
                     className: "mt-2"
                 }), l.createElement(at, null, "Tags"), l.createElement(Fe, {
@@ -1521,7 +1569,7 @@
                     expand: !0
                 }, l.createElement(ot, null, "Avatar Scaling ", Gn ? "Enabled" : "Disabled"), Gn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.LE
+                    icon: z.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
                     icon: U.NB,
@@ -1578,7 +1626,7 @@
                         expand: !0
                     }, l.createElement(ot, null, e.displayName, " ", a ? "Enabled" : "Disabled"), a ? l.createElement(c.$1, {
                         width: 20,
-                        icon: Y.LE
+                        icon: z.LE
                     }) : l.createElement(c.$1, {
                         width: 20,
                         icon: U.NB,
@@ -1612,24 +1660,24 @@
                     expand: !0
                 }, l.createElement(ot, null, "Focus View ", Kn ? "Enabled" : "Disabled"), Kn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.LE
+                    icon: z.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
                     icon: U.NB,
                     disabled: !0
                 })), l.createElement(c.zx, {
                     role: "checkbox",
-                    "aria-checked": Yt,
-                    "aria-label": Yt ? "Hide Focus View Help" : "Show Focus View Help",
+                    "aria-checked": zt,
+                    "aria-label": zt ? "Hide Focus View Help" : "Show Focus View Help",
                     onClick: function() {
-                        return Mt(!Yt)
+                        return Mt(!zt)
                     },
                     className: "px-2 py-1",
                     neutral: !0
                 }, l.createElement(c.$1, {
                     icon: te.sp,
-                    disabled: !Yt
-                }))), Yt && l.createElement(c.qX, {
+                    disabled: !zt
+                }))), zt && l.createElement(c.qX, {
                     type: "info",
                     title: "What is Focus View"
                 }, "Enabling this will let users use Focus View in your world. If you want finer control, edit the VRC_UIShape component on a canvas to control focus view in your world.", " ", l.createElement("a", {
@@ -1653,7 +1701,7 @@
                             })
                         }))
                     },
-                    inputStyle: ze,
+                    inputStyle: Ye,
                     className: "me-0 me-sm-2 flex-grow-1 w-100 w-sm-auto"
                 }), l.createElement(c.zx, {
                     role: "checkbox",
@@ -1781,11 +1829,11 @@
                     onConfirm: In,
                     onCancel: Pn
                 })), nn && (y ? l.createElement(xe, {
-                    onConfirm: Zn,
-                    onCancel: Dn
-                }) : qn && l.createElement(Ee, {
-                    onConfirm: Zn,
-                    onCancel: Dn
+                    onConfirm: Dn,
+                    onCancel: Zn
+                }) : Vn && l.createElement(Ee, {
+                    onConfirm: Dn,
+                    onCancel: Zn
                 })), gn && l.createElement(Ce, {
                     onConfirm: On,
                     onCancel: function() {
@@ -1824,7 +1872,7 @@
                     expand: !0
                 }, l.createElement(ot, null, "World Debugging ", Jn ? "Enabled" : "Disabled"), Jn ? l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.LE
+                    icon: z.LE
                 }) : l.createElement(c.$1, {
                     width: 20,
                     icon: U.NB,
@@ -1834,7 +1882,7 @@
                     "aria-checked": $t,
                     "aria-label": $t ? "Hide World Debug Help" : "Show World Debug Help",
                     onClick: function() {
-                        return Vt(!$t)
+                        return qt(!$t)
                     },
                     className: "px-2 py-1",
                     neutral: !0
@@ -1848,9 +1896,9 @@
                     href: "https://docs.vrchat.com/docs/keyboard-and-mouse",
                     target: "_blank",
                     rel: "noreferrer"
-                }, "See the keyboard binding documentation for more details"), "."), Yn.platformsList.length > 1 && l.createElement(l.Fragment, null, l.createElement(at, null, "World Platforms"), l.createElement(Ue, {
+                }, "See the keyboard binding documentation for more details"), "."), zn.platformsList.length > 1 && l.createElement(l.Fragment, null, l.createElement(at, null, "World Platforms"), l.createElement(Ue, {
                     className: "align-items-center justify-content-between w-100 flex-column flex-sm-row mt-2 tw-gap-3"
-                }, Yn.platformsList.map((function(e) {
+                }, zn.platformsList.map((function(e) {
                     var t;
                     return l.createElement(c.zx, {
                         key: e,
@@ -1884,7 +1932,7 @@
                     onCancel: function() {
                         dn(!1)
                     }
-                })))), l.createElement(qe, {
+                })))), l.createElement(Ve, {
                     className: "ms-0 ms-sm-3 mb-3 mb-sm-0"
                 }, l.createElement(Xe, null, l.createElement(c.oI, null, l.createElement(Je, null, l.createElement(Ge, null, l.createElement(Ke, {
                     src: ce.imageUrl,
@@ -1969,12 +2017,12 @@
                     title: "Cross-Platform"
                 }, l.createElement(c.$1, {
                     width: 20,
-                    icon: q.vq,
+                    icon: V.vq,
                     color: "#54b5c5",
                     className: "me-2"
                 }), "Cross-Platform"), l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
-                    icon: V.r6,
+                    icon: q.r6,
                     color: "#54b5c5",
                     className: "me-2"
                 }), l.createElement(tt, {
@@ -1998,7 +2046,7 @@
                     title: "Labs Publish Date"
                 }, l.createElement(nt, null, "Labs'd"), b()(ce.labsPublicationDate).format("MMM DD YYYY"))), l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
-                    icon: z.CP,
+                    icon: Y.CP,
                     color: "#54b5c5",
                     className: "me-2"
                 }), l.createElement(tt, {
@@ -2021,13 +2069,13 @@
                     icon: M.kl,
                     color: "#54b5c5",
                     className: "me-2"
-                }), "Unity Versions"), l.createElement(Te, null, Yn.versionsList.map((function(e) {
+                }), "Unity Versions"), l.createElement(Te, null, zn.versionsList.map((function(e) {
                     return e.isSupported ? l.createElement(it, {
                         title: "Unity Version",
                         key: e.name,
                         current: !0
                     }, e.name, " ", l.createElement(c.$1, {
-                        icon: Y.LE,
+                        icon: z.LE,
                         className: "mx-2",
                         color: "var(--bs-success)"
                     }), " VRChat Supported") : e.isUnsupported ? l.createElement(it, {
@@ -2053,7 +2101,7 @@
                     icon: W.l9,
                     color: "#54b5c5",
                     className: "me-2"
-                }), "Platforms"), l.createElement(Te, null, Yn.platformsList.map((function(e) {
+                }), "Platforms"), l.createElement(Te, null, zn.platformsList.map((function(e) {
                     var t;
                     return l.createElement(ct, {
                         key: e
@@ -2084,7 +2132,7 @@
                     icon: ae.ac,
                     color: "white",
                     size: "2x"
-                })), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
+                })), l.createElement(ze, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row align-items-center justify-content-center w-100"
                 }, l.createElement(c.qX, {
                     type: "error",
@@ -2099,7 +2147,7 @@
                     color: "white",
                     size: "2x",
                     onClick: kn
-                }), l.createElement(Ye, null, "Edit World Info"))), l.createElement(We, {
+                }), l.createElement(ze, null, "Edit World Info"))), l.createElement(We, {
                     className: "flex-column flex-sm-row"
                 }, l.createElement(Te, {
                     className: "flex-grow-1 order-last order-sm-first"
@@ -2144,7 +2192,7 @@
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                Ye = (0, a.Z)("h2", {
+                ze = (0, a.Z)("h2", {
                     target: "e7ur3i627"
                 })({
                     name: "1kdats7",
@@ -2156,23 +2204,23 @@
                     name: "1g3t9m2",
                     styles: "width:100%;@media (min-width: 576px){width:276px;}"
                 }),
-                ze = {
+                Ye = {
                     name: "ilysiq",
                     styles: "background-color:#252a30;border-radius:6px;border:none;color:white!important"
                 },
                 Fe = (0, a.Z)(c.wg, {
                     target: "e7ur3i625"
-                })(ze, ";"),
+                })(Ye, ";"),
                 $e = (0, a.Z)("div", {
                     target: "e7ur3i624"
-                })(ze, " padding:0.5rem;line-height:1.25;"),
-                Ve = (0, a.Z)(Te, {
+                })(Ye, " padding:0.5rem;line-height:1.25;"),
+                qe = (0, a.Z)(Te, {
                     target: "e7ur3i623"
                 })({
                     name: "1j03xl7",
                     styles: "background-color:#181b1f;border-radius:8px;padding:0.9rem"
                 }),
-                qe = (0, a.Z)(Te, {
+                Ve = (0, a.Z)(Te, {
                     target: "e7ur3i622"
                 })({
                     name: "1budlv3",
@@ -2444,23 +2492,23 @@
                     S = _[0],
                     I = _[1],
                     P = l.useRef(null != p ? p : "updated"),
-                    Z = l.useState(null != p ? p : "updated"),
-                    D = (0, s.Z)(Z, 2),
-                    L = D[0],
-                    O = D[1],
+                    D = l.useState(null != p ? p : "updated"),
+                    Z = (0, s.Z)(D, 2),
+                    L = Z[0],
+                    O = Z[1],
                     j = l.useRef(null != d ? d : "descending"),
                     A = l.useState(null != d ? d : "descending"),
                     R = (0, s.Z)(A, 2),
                     W = R[0],
                     U = R[1],
                     M = l.useState(""),
-                    z = (0, s.Z)(M, 2),
-                    F = z[0],
-                    $ = z[1],
-                    V = l.useState(0),
-                    q = (0, s.Z)(V, 2),
-                    X = q[0],
-                    H = q[1],
+                    Y = (0, s.Z)(M, 2),
+                    F = Y[0],
+                    $ = Y[1],
+                    q = l.useState(0),
+                    V = (0, s.Z)(q, 2),
+                    X = V[0],
+                    H = V[1],
                     B = l.useRef(0);
                 l.useEffect((function() {
                     if (!v && null != g && g.id) {
@@ -2617,9 +2665,9 @@
                     onClick: function() {
                         return I(!S)
                     }
-                }, l.createElement(Zt, null, "Public First"), l.createElement(c.$1, {
+                }, l.createElement(Dt, null, "Public First"), l.createElement(c.$1, {
                     width: 20,
-                    icon: Y.LE,
+                    icon: z.LE,
                     disabled: !S,
                     className: "me-1"
                 })))), E && l.createElement(c.qX, {
@@ -2629,7 +2677,7 @@
                 }), y && 0 === h.length && l.createElement(Lt, {
                     role: "note",
                     title: "There are no Worlds here... yet"
-                }, "There are no Worlds here... yet"), l.createElement(Dt, null, v && 0 === (null == h ? void 0 : h.length) ? ie()(0, 6).map((function(e) {
+                }, "There are no Worlds here... yet"), l.createElement(Zt, null, v && 0 === (null == h ? void 0 : h.length) ? ie()(0, 6).map((function(e) {
                     return l.createElement(c.UU, {
                         key: e,
                         height: "400px",
@@ -2662,13 +2710,13 @@
                     name: "3zych9",
                     styles: "display:flex;align-items:center;min-height:2.5rem"
                 }),
-                Zt = (0, a.Z)("div", {
+                Dt = (0, a.Z)("div", {
                     target: "eu0ztp83"
                 })({
                     name: "11p52gn",
                     styles: "font-size:1rem;margin-right:10px;margin-left:10px;color:hsla(0, 0%, 100%, 0.6)"
                 }),
-                Dt = (0, a.Z)("div", {
+                Zt = (0, a.Z)("div", {
                     target: "eu0ztp82"
                 })({
                     name: "mtvm74",
@@ -2742,6 +2790,7 @@
                 })
         },
         89182: (e, t, n) => {
+            "use strict";
             n.d(t, {
                 Z: () => s
             });
@@ -2778,6 +2827,7 @@
             const s = c
         },
         28213: (e, t, n) => {
+            "use strict";
             n.d(t, {
                 w: () => P
             });
@@ -2982,6 +3032,7 @@
                 }]
         },
         91557: (e, t, n) => {
+            "use strict";
             n.d(t, {
                 jO: () => m,
                 lY: () => u,
@@ -3087,7 +3138,13 @@
                 s = i.useRequestContentRestrictionMutation,
                 m = i.useDisputeContentRestrictionMutation,
                 u = i.useDeleteDisputeMutation
+        },
+        18446: (e, t, n) => {
+            var a = n(90939);
+            e.exports = function(e, t) {
+                return a(e, t)
+            }
         }
     }
 ]);
-//# sourceMappingURL=07c7e8a1ca8b2613b265bd56bbffca9304266a6d8bb745aa68ed7c20126a77cb.js.map
+//# sourceMappingURL=451c85d419224f1f62639f2682d79c12674c51881db653a41d246b8307f5b178.js.map

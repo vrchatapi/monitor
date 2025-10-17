@@ -1,37 +1,5 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [3013], {
-        84176: (e, t) => {
-            "use strict";
-            var n = [128273],
-                r = "f084",
-                a = "M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17l0 80c0 13.3 10.7 24 24 24l80 0c13.3 0 24-10.7 24-24l0-40 40 0c13.3 0 24-10.7 24-24l0-40 40 0c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z";
-            t.DF = {
-                prefix: "fas",
-                iconName: "key",
-                icon: [512, 512, n, r, a]
-            }, t.DD = t.DF
-        },
-        57310: (e, t) => {
-            "use strict";
-            var n = "paper-plane",
-                r = [61913],
-                a = "f1d8",
-                i = "M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z";
-            t.DF = {
-                prefix: "fas",
-                iconName: n,
-                icon: [512, 512, r, a, i]
-            }, t.XC = t.DF
-        },
-        21707: (e, t, n) => {
-            "use strict";
-            var r = n(53359);
-            t.DF = {
-                prefix: r.prefix,
-                iconName: r.iconName,
-                icon: [r.width, r.height, r.aliases, r.unicode, r.svgPathData]
-            }, t.e7 = t.DF, r.prefix, r.iconName, r.width, r.height, r.aliases, r.unicode, r.svgPathData, r.aliases
-        },
         55549: (e, t, n) => {
             "use strict";
             n.d(t, {
@@ -53,9 +21,9 @@
                     f = e.code,
                     p = e.className,
                     g = (0, u.nv)(),
-                    h = (0, r.Z)(g, 2),
-                    y = h[0],
-                    w = h[1],
+                    y = (0, r.Z)(g, 2),
+                    h = y[0],
+                    w = y[1],
                     E = w.isFetching,
                     v = w.isError,
                     b = w.isSuccess,
@@ -63,8 +31,8 @@
                     C = (0, r.Z)(x, 2),
                     Z = C[0],
                     k = C[1],
-                    N = k.isFetching,
-                    P = k.isError,
+                    P = k.isFetching,
+                    N = k.isError,
                     S = k.isSuccess,
                     O = (0, l.useMemo)((function() {
                         var e;
@@ -143,14 +111,14 @@
                     className: "tw-mt-9 tw-w-60"
                 }, O.buttonText), O.showResendButton && l.createElement(l.Fragment, null, l.createElement(c.zx, {
                     className: "tw-flex-none tw-mt-9 tw-px-4",
-                    disabled: E || b || N || S,
+                    disabled: E || b || P || S,
                     onClick: function() {
                         return d && f ? Z({
                             groupId: d,
                             code: f
-                        }) : y()
+                        }) : h()
                     }
-                }, b || S ? "Sent!" : "Resend Age Verification Email"), (v || P) && l.createElement("p", {
+                }, b || S ? "Sent!" : "Resend Age Verification Email"), (v || N) && l.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend age verification email error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1"
@@ -204,8 +172,8 @@
                 f = n(35773),
                 p = n(95305),
                 g = n(34698),
-                h = n(83868),
-                y = n.n(h),
+                y = n(83868),
+                h = n.n(y),
                 w = n(17383),
                 E = n(22202),
                 v = n(62437),
@@ -216,35 +184,35 @@
                 var e = (0, E.IB)().data,
                     t = (0, m.useState)(""),
                     n = (0, r.Z)(t, 2),
-                    h = n[0],
+                    y = n[0],
                     Z = n[1],
                     k = (0, m.useState)(""),
-                    N = (0, r.Z)(k, 2),
-                    P = N[0],
-                    S = N[1],
+                    P = (0, r.Z)(k, 2),
+                    N = P[0],
+                    S = P[1],
                     O = (0, m.useState)(""),
-                    D = (0, r.Z)(O, 2),
-                    A = D[0],
-                    I = D[1],
-                    j = (0, w.Nr)(h),
-                    V = (0, v.X6)(),
-                    T = (0, r.Z)(V, 2),
-                    F = T[0],
-                    R = T[1],
-                    z = R.isFetching,
-                    _ = R.isError,
-                    q = R.isSuccess,
-                    L = R.error,
-                    M = R.originalArgs,
-                    $ = (0, v.n_)(),
-                    B = (0, r.Z)($, 2),
+                    A = (0, r.Z)(O, 2),
+                    I = A[0],
+                    j = A[1],
+                    V = (0, w.Nr)(y),
+                    D = (0, v.X6)(),
+                    T = (0, r.Z)(D, 2),
+                    R = T[0],
+                    _ = T[1],
+                    q = _.isFetching,
+                    z = _.isError,
+                    F = _.isSuccess,
+                    L = _.error,
+                    $ = _.originalArgs,
+                    M = (0, v.n_)(),
+                    B = (0, r.Z)(M, 2),
                     Y = B[0],
                     U = B[1],
                     G = U.isLoading,
                     W = U.isError,
-                    X = U.error,
-                    K = (0, E.Fe)(),
-                    H = (0, r.Z)(K, 2),
+                    K = U.error,
+                    X = (0, E.Fe)(),
+                    H = (0, r.Z)(X, 2),
                     Q = H[0],
                     J = H[1],
                     ee = J.isFetching,
@@ -252,10 +220,10 @@
                     ne = J.error,
                     re = J.isSuccess,
                     ae = (0, v.SO)({
-                        email: j,
+                        email: V,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === j || !1 === y()(j)
+                        skip: "" === V || !1 === h()(V)
                     }),
                     ie = ae.data,
                     oe = ae.isFetching,
@@ -263,21 +231,21 @@
                     ce = ae.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    S(""), I("")
-                }), [h]);
+                    S(""), j("")
+                }), [y]);
                 var ue = (0, m.useMemo)((function() {
-                        return le && !1 === ie.userExists && y()(j) && "" !== j
-                    }), [ie, j]),
+                        return le && !1 === ie.userExists && h()(V) && "" !== V
+                    }), [ie, V]),
                     me = (0, m.useMemo)((function() {
-                        return "" !== P && P === j
-                    }), [P, j]),
+                        return "" !== N && N === V
+                    }), [N, V]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === y()(j) && "" !== j) return m.createElement(d.Z, {
+                        if (!1 === h()(V) && "" !== V) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That's an invalid email.");
-                        if (null != ie && ie.userExists && (null == ce ? void 0 : ce.email) === j) return m.createElement(d.Z, {
+                        if (null != ie && ie.userExists && (null == ce ? void 0 : ce.email) === V) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -286,9 +254,9 @@
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
-                        }), " Failed to change news preference: ", X, ".");
-                        if (_ && (null == M ? void 0 : M.email) === j) {
-                            I("");
+                        }), " Failed to change news preference: ", K, ".");
+                        if (z && (null == $ ? void 0 : $.email) === V) {
+                            j("");
                             var t = L.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
@@ -296,7 +264,7 @@
                                 icon: u.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== P && P !== j) return m.createElement(d.Z, {
+                        if (ue && "" !== N && N !== V) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -313,7 +281,7 @@
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
-                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : q ? m.createElement(d.Z, {
+                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : F ? m.createElement(d.Z, {
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
@@ -322,21 +290,21 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [re, te, _, q, ie, le, P, j, e, W]),
+                    }), [re, te, z, F, ie, le, N, V, e, W]),
                     fe = (0, m.useMemo)((function() {
-                        return !se || q ? m.createElement("span", null, m.createElement(b.$1, {
+                        return !se || F ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
                         }), " Resend Verification") : m.createElement("span", null, m.createElement(b.$1, {
                             icon: l.LE,
                             color: "success"
                         }), " Email Verified")
-                    }), [se, q]),
+                    }), [se, F]),
                     pe = (0, m.useMemo)((function() {
                         return oe ? m.createElement(b.$1, {
                             icon: o.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === j ? null : ue ? m.createElement(x.Z, {
+                        }) : "" === V ? null : ue ? m.createElement(x.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -345,7 +313,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [oe, j, ue]);
+                    }), [oe, V, ue]);
                 return m.createElement("form", null, m.createElement(f.Z, {
                     className: "align-items-center justify-content-center"
                 }, m.createElement(p.Z, {
@@ -377,7 +345,7 @@
                     },
                     placeholder: null == e ? void 0 : e.obfuscatedEmail,
                     type: "text",
-                    value: h
+                    value: y
                 }))), m.createElement(p.Z, {
                     xs: "1",
                     style: {
@@ -401,14 +369,14 @@
                     },
                     placeholder: "Please confirm email",
                     type: "text",
-                    value: P
+                    value: N
                 }))), m.createElement(p.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== P && m.createElement(x.Z, {
+                }, "" !== N && m.createElement(x.Z, {
                     size: "2x",
                     ok: me,
                     title: "Confirm email is OK"
@@ -430,11 +398,11 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return I(e.target.value)
+                        return j(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
-                    value: A
+                    value: I
                 })))), m.createElement(f.Z, {
                     className: "align-items-center justify-content-center px-3 pt-3"
                 }, de), m.createElement("hr", null), m.createElement(f.Z, null, m.createElement(p.Z, {
@@ -462,7 +430,7 @@
                     "aria-label": "resend email",
                     block: !0,
                     color: "primary",
-                    disabled: !(null != e && e.hasPendingEmail) && !q || ee,
+                    disabled: !(null != e && e.hasPendingEmail) && !F || ee,
                     onClick: function() {
                         return Q()
                     },
@@ -472,15 +440,15 @@
                 }, m.createElement(g.Z, {
                     block: !0,
                     color: "primary",
-                    disabled: !ue || !me || z || "" === A,
+                    disabled: !ue || !me || q || "" === I,
                     id: "email-change-submit",
                     name: "email-change-submit",
                     value: "update",
                     onClick: function(t) {
-                        t.preventDefault(), F({
+                        t.preventDefault(), R({
                             userId: null == e ? void 0 : e.id,
-                            email: j,
-                            password: A
+                            email: V,
+                            password: I
                         })
                     }
                 }, "Change Email"))))
@@ -489,7 +457,7 @@
         13164: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => h
+                default: () => y
             });
             var r = n(54546),
                 a = n(67294),
@@ -504,13 +472,13 @@
                 f = n(65578),
                 p = n(78158),
                 g = n(75099);
-            const h = function() {
+            const y = function() {
                 var e = (0, i.UO)(),
                     t = e.groupId,
                     n = e.code,
-                    h = (0, c.IB)().data,
-                    y = (0, a.useState)(!1),
-                    w = (0, r.Z)(y, 2),
+                    y = (0, c.IB)().data,
+                    h = (0, a.useState)(!1),
+                    w = (0, r.Z)(h, 2),
                     E = w[0],
                     v = w[1],
                     b = (0, l.HI)(),
@@ -518,31 +486,31 @@
                     C = b.isSuccess,
                     Z = b.error,
                     k = b.isFetching,
-                    N = b.refetch;
-                (0, o.Yz)(N, "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status) ? 3e3 : null);
-                var P = (0, s.r5)({
+                    P = b.refetch;
+                (0, o.Yz)(P, "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status) ? 3e3 : null);
+                var N = (0, s.r5)({
                         groupId: t,
                         purpose: "group"
                     }),
-                    S = P.data,
-                    O = P.isSuccess,
-                    D = P.isError,
-                    A = P.isFetching,
-                    I = (0, c.Fe)(),
-                    j = (0, r.Z)(I, 2),
-                    V = j[0],
-                    T = j[1],
-                    F = T.isFetching,
-                    R = T.isError,
-                    z = T.isSuccess,
-                    _ = (0, l.W3)(),
-                    q = (0, r.Z)(_, 2),
-                    L = q[0],
-                    M = q[1],
-                    $ = M.isFetching,
-                    B = M.isError,
-                    Y = M.isSuccess,
-                    U = k || A || "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status);
+                    S = N.data,
+                    O = N.isSuccess,
+                    A = N.isError,
+                    I = N.isFetching,
+                    j = (0, c.Fe)(),
+                    V = (0, r.Z)(j, 2),
+                    D = V[0],
+                    T = V[1],
+                    R = T.isFetching,
+                    _ = T.isError,
+                    q = T.isSuccess,
+                    z = (0, l.W3)(),
+                    F = (0, r.Z)(z, 2),
+                    L = F[0],
+                    $ = F[1],
+                    M = $.isFetching,
+                    B = $.isError,
+                    Y = $.isSuccess,
+                    U = k || I || "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status);
                 return a.createElement(a.Fragment, null, a.createElement(m.$4, null, "Group Age Verification Beta"), U && a.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(d.Z, {
@@ -564,30 +532,30 @@
                 }) : "member" !== (null == S ? void 0 : S.membershipStatus) ? a.createElement("p", null, "You must be a member of this group in order to access this page.") : S.tags.includes("admin_age_verification_enabled") ? S.ageVerificationSlotsAvailable ? a.createElement(a.Fragment, null, a.createElement("div", {
                     class: "tw-py-5 tw-flex tw-w-full"
                 }, a.createElement(g.Z, {
-                    userId: h.id,
+                    userId: y.id,
                     isFluid: !0,
                     className: "tw-w-1/3 max-sm:tw-hidden"
                 }), a.createElement("div", {
                     className: "md:tw-w-2/3 max-sm:tw-w-full tw-px-5 tw-flex tw-flex-direction tw-flex-col"
-                }, a.createElement("span", null, "Welcome ", a.createElement("strong", null, h.displayName)), a.createElement("span", {
+                }, a.createElement("span", null, "Welcome ", a.createElement("strong", null, y.displayName)), a.createElement("span", {
                     className: "tw-flex tw-items-center"
                 }, a.createElement("span", {
                     className: "tw-flex-1"
-                }, "Email: ", a.createElement("strong", null, h.obfuscatedEmail)), a.createElement(m.zx, {
+                }, "Email: ", a.createElement("strong", null, y.obfuscatedEmail)), a.createElement(m.zx, {
                     onClick: function() {
                         return v(!0)
                     }
-                }, "Change Email")), (null == h ? void 0 : h.hasPendingEmail) && a.createElement(m.qX, {
+                }, "Change Email")), (null == y ? void 0 : y.hasPendingEmail) && a.createElement(m.qX, {
                     type: "info",
                     title: "Email Change Pending",
                     slim: !0
-                }, a.createElement("strong", null, "An email change is pending verification: ", null == h ? void 0 : h.obfuscatedPendingEmail), a.createElement("div", null, a.createElement(m.zx, {
+                }, a.createElement("strong", null, "An email change is pending verification: ", null == y ? void 0 : y.obfuscatedPendingEmail), a.createElement("div", null, a.createElement(m.zx, {
                     className: "tw-flex-none tw-mt-2",
-                    disabled: F || z,
+                    disabled: R || q,
                     onClick: function() {
-                        return V()
+                        return D()
                     }
-                }, z ? "Sent!" : "Resend Verification")), R && a.createElement("p", {
+                }, q ? "Sent!" : "Resend Verification")), _ && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend verification error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1"
@@ -597,7 +565,7 @@
                     className: "tw-text-lg"
                 }, "To complete this process you will need:"), a.createElement("ul", null, a.createElement("li", null, "A valid email address."), a.createElement("li", null, "You will also need a valid government ID."), a.createElement("li", null, "You will need a computer or a smartphone with a camera to complete the validation process.")), a.createElement("p", null, "Please confirm your email address above to receive your unique link.", a.createElement("br", null), "Once you click the ", a.createElement("strong", null, '"Send Age Verification Email"'), " button, you'll get an email leading to the verification process."), a.createElement("p", null, "Please open this email with a camera-enabled device, such as a smartphone, to complete this process."))), a.createElement(m.zx, {
                     className: "tw-flex-none tw-px-4",
-                    disabled: $ || Y,
+                    disabled: M || Y,
                     onClick: function() {
                         return L({
                             groupId: t,
@@ -618,7 +586,7 @@
                     width: "600px"
                 }, a.createElement("div", {
                     className: "tw-w-full"
-                }, a.createElement(f.Z, null)))) : a.createElement("p", null, "This group does not have age verification beta slots remaining.") : a.createElement("p", null, "This group is not part of the age verification beta.")))), D && a.createElement("p", {
+                }, a.createElement(f.Z, null)))) : a.createElement("p", null, "This group does not have age verification beta slots remaining.") : a.createElement("p", null, "This group is not part of the age verification beta.")))), A && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Page load error",
                     className: "tw-text-error-message-red tw-text-xs tw-mt-1 tw-text-center"
@@ -752,7 +720,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? c(Object(n), !0).forEach((function(t) {
-                        h(e, t, n[t])
+                        y(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : c(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -825,7 +793,7 @@
                 }, g(e)
             }
 
-            function h(e, t, n) {
+            function y(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -833,7 +801,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            var y = function(e) {
+            var h = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -854,7 +822,7 @@
                         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                     }(this, c);
                     for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-                    return h(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
+                    return y(p(e = l.call.apply(l, [this].concat(n))), "onClick", (function(t) {
                         var n = e.props,
                             r = n.text,
                             o = n.onCopy,
@@ -880,7 +848,7 @@
                     writable: !1
                 }), c
             }(a.default.PureComponent);
-            t.CopyToClipboard = y, h(y, "defaultProps", {
+            t.CopyToClipboard = h, y(h, "defaultProps", {
                 onCopy: void 0,
                 options: void 0
             })
@@ -913,4 +881,4 @@
         }
     }
 ]);
-//# sourceMappingURL=994feac65a5353074da65aea5ebf601efe430fc344a9cd847823ab577c83eb29.js.map
+//# sourceMappingURL=b56604e47958ade890256b07c1f9157122f60ed9b802a75c1bc04c444d74956c.js.map

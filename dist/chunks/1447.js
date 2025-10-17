@@ -2950,7 +2950,7 @@
                                 name: "1hhuku4",
                                 styles: "position:absolute;top:-3px;right:-8px;background:var(--bs-primary);color:var(--bs-gray-800);min-width:23px;padding:3px;height:23px;border-radius:23px;z-index:5;font-size:80%;font-weight:bold"
                             })
-                        }, L), a.createElement(C.$1, {
+                        }, L >= 99 ? "99+" : L), a.createElement(C.$1, {
                             icon: kt.FU,
                             size: "lg",
                             className: (0, c.iv)({
@@ -3118,7 +3118,7 @@
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
-                    }, L)), a.createElement(C.$1, {
+                    }, L >= 99 ? "99+" : L)), a.createElement(C.$1, {
                         icon: wt.yO
                     })), a.createElement(Mn, {
                         to: "/home/calendar",
@@ -3564,7 +3564,7 @@
                     return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
                 })),
                 fr = a.lazy((function() {
-                    return Promise.all([n.e(4473), n.e(3023), n.e(5884)]).then(n.bind(n, 15884))
+                    return Promise.all([n.e(545), n.e(9899), n.e(7541)]).then(n.bind(n, 77541))
                 })),
                 pr = a.lazy((function() {
                     return Promise.all([n.e(123), n.e(4444), n.e(4232)]).then(n.bind(n, 74444))
@@ -3588,10 +3588,10 @@
                     return Promise.all([n.e(18), n.e(2998), n.e(347), n.e(8207), n.e(1244), n.e(9923), n.e(8158), n.e(4896), n.e(7207)]).then(n.bind(n, 17207))
                 })),
                 Er = a.lazy((function() {
-                    return Promise.all([n.e(4473), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
+                    return Promise.all([n.e(545), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
                 xr = a.lazy((function() {
-                    return Promise.all([n.e(4473), n.e(8264)]).then(n.bind(n, 8264))
+                    return Promise.all([n.e(545), n.e(8264)]).then(n.bind(n, 8264))
                 })),
                 Ar = a.lazy((function() {
                     return n.e(3443).then(n.bind(n, 53443))
@@ -3609,7 +3609,7 @@
                     return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
                 })),
                 Or = a.lazy((function() {
-                    return Promise.all([n.e(5545), n.e(2022), n.e(533), n.e(4586)]).then(n.bind(n, 34586))
+                    return Promise.all([n.e(5545), n.e(2095), n.e(4586)]).then(n.bind(n, 34586))
                 })),
                 Zr = a.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
@@ -5398,4 +5398,4 @@
         }
     }
 ]);
-//# sourceMappingURL=977c881c0b7d6c652fe8ab1edae351dc889a26b2efcbc46a08c99a586ce81982.js.map
+//# sourceMappingURL=d774dc35ec7e94e46ac04e45fe2a0c7b18fd948d74dca97ac5446e6fe8d94c75.js.map
