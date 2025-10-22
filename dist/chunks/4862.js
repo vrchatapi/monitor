@@ -66,6 +66,7 @@
                 "./common.js": 45861,
                 "./index.js": 99162,
                 "./vrcAgeVerification.js": 91401,
+                "./vrcCosmetics.js": 25428,
                 "./vrcCredits.js": 50249,
                 "./vrcEmoji.js": 3447,
                 "./vrcGhost.js": 73948,
@@ -108,4 +109,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b82abff829b547978d9202205a67c01e0bbf0f4ea922c913fa9db9a2460c2cf3.js.map
+//# sourceMappingURL=68e2a8cbadff70e7c6cfc0f69f33909c54fb541907411a10d0261cf67949bfcb.js.map
