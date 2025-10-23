@@ -140,9 +140,9 @@
                 F = r(64687),
                 P = r.n(F),
                 I = r(64258),
-                R = r(98375),
-                D = r(21438),
-                L = r(42619),
+                D = r(98375),
+                L = r(21438),
+                R = r(42619),
                 V = r(83505),
                 T = r(76176),
                 M = r(45697),
@@ -240,7 +240,7 @@
                             e.stopPropagation(), e.preventDefault(), w()
                         }
                     }, a.createElement(i.$1, {
-                        icon: L.$,
+                        icon: R.$,
                         color: "#FFFFFF",
                         width: 20
                     })), h.hasArchive && P && a.createElement(i.zx, {
@@ -250,7 +250,7 @@
                             e.stopPropagation(), e.preventDefault(), v()
                         }
                     }, a.createElement(i.$1, {
-                        icon: D.N2,
+                        icon: L.N2,
                         color: "#FFFFFF",
                         width: 20
                     })), h.hasRecover && P && a.createElement(i.zx, {
@@ -261,7 +261,7 @@
                             e.stopPropagation(), e.preventDefault(), g()
                         }
                     }, a.createElement(i.$1, {
-                        icon: R.faArrowsRotate,
+                        icon: D.faArrowsRotate,
                         color: "#FFFFFF",
                         width: 20
                     })))), a.createElement("div", {
@@ -398,12 +398,12 @@
             };
             var Y = r(42138),
                 G = r(4942),
-                H = r(32981),
-                B = r(68599);
+                B = r(32981),
+                H = r(68599);
             const X = function(e, t) {
-                var r = (0, H.I0)();
+                var r = (0, B.I0)();
                 (0, a.useEffect)((function() {
-                    null != e && e.isOpen && null != t && t.data && r((0, B.L1)({
+                    null != e && e.isOpen && null != t && t.data && r((0, H.L1)({
                         gallery: t.data,
                         openIndex: t.data.length > e.openIndex ? e.openIndex : 0
                     }))
@@ -496,13 +496,13 @@
                     N = (0, K._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = (j[1], (0, v.F)()),
-                    D = (0, O.Z)(R, 2),
-                    L = D[0],
-                    V = D[1].isLoading,
+                    D = (j[1], (0, v.F)()),
+                    L = (0, O.Z)(D, 2),
+                    R = L[0],
+                    V = L[1].isLoading,
                     T = (0, v.fv)(),
                     M = (0, O.Z)(T, 1)[0],
-                    _ = (0, H.I0)();
+                    _ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -534,7 +534,7 @@
                     z = W.error,
                     $ = W.isError,
                     J = W.isFetching,
-                    te = (0, H.v9)((function(e) {
+                    te = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(te, U);
@@ -559,7 +559,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.prop, n = t.index, h(r), _((0, B.lc)({
+                                        if (r = t.prop, n = t.index, h(r), _((0, H.lc)({
                                                 gallery: (null == U ? void 0 : U.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -602,12 +602,12 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, L({
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
                                             itemId: null === t ? g.id : t,
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, B.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
@@ -763,13 +763,13 @@
                     N = (0, K._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = (j[1], (0, v.F)()),
-                    D = (0, O.Z)(R, 2),
-                    L = D[0],
-                    V = D[1].isLoading,
+                    D = (j[1], (0, v.F)()),
+                    L = (0, O.Z)(D, 2),
+                    R = L[0],
+                    V = L[1].isLoading,
                     T = (0, v.fv)(),
                     M = (0, O.Z)(T, 1)[0],
-                    _ = (0, H.I0)();
+                    _ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -801,7 +801,7 @@
                     z = W.error,
                     $ = W.isError,
                     J = W.isFetching,
-                    ee = (0, H.v9)((function(e) {
+                    ee = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ee, U);
@@ -826,7 +826,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.prop, n = t.index, h(r), _((0, B.lc)({
+                                        if (r = t.prop, n = t.index, h(r), _((0, H.lc)({
                                                 gallery: (null == U ? void 0 : U.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -869,12 +869,12 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, L({
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
                                             itemId: null === t ? g.id : t,
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, B.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
@@ -1030,13 +1030,13 @@
                     N = (0, K._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = (j[1], (0, v.F)()),
-                    D = (0, O.Z)(R, 2),
-                    L = D[0],
-                    V = D[1].isLoading,
+                    D = (j[1], (0, v.F)()),
+                    L = (0, O.Z)(D, 2),
+                    R = L[0],
+                    V = L[1].isLoading,
                     T = (0, v.fv)(),
                     M = (0, O.Z)(T, 1)[0],
-                    _ = (0, H.I0)();
+                    _ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -1068,7 +1068,7 @@
                     z = W.error,
                     $ = W.isError,
                     J = W.isFetching,
-                    ee = (0, H.v9)((function(e) {
+                    ee = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ee, U);
@@ -1093,7 +1093,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.prop, n = t.index, h(r), _((0, B.lc)({
+                                        if (r = t.prop, n = t.index, h(r), _((0, H.lc)({
                                                 gallery: (null == U ? void 0 : U.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -1136,12 +1136,12 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, L({
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
                                             itemId: null === t ? g.id : t,
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, B.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
@@ -1267,29 +1267,25 @@
                 }, "No exclusive warp effects."))))
             };
             const ie = function() {
-                var e = (0, s.Tu)({
-                        withRecentSubscription: !0
-                    }).user,
-                    t = !(null != e && e.hasVRCPlus || null != e && e.previouslyHadVRCPlus),
-                    r = (0, v.dq)({
+                (0, s.Tu)({
+                    withRecentSubscription: !0
+                }).user;
+                var e = (0, v.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "droneskin"
                     }).data,
-                    n = (0, v.dq)({
+                    t = (0, v.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "portalskin"
                     }).data,
-                    u = (0, v.dq)({
+                    r = (0, v.dq)({
                         n: 1,
                         pageValue: 1,
                         types: "warpeffect"
                     }).data;
-                return t ? a.createElement(j, {
-                    icon: w.default,
-                    text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
-                }) : a.createElement("div", null, a.createElement("div", {
+                return a.createElement("div", null, a.createElement("div", {
                     className: "tw-px-4"
                 }, a.createElement(c.Z, {
                     className: "tw-mb-4",
@@ -1298,17 +1294,17 @@
                         name: "Drones",
                         to: "drones",
                         condition: !0,
-                        hasNotification: (null == r ? void 0 : r.totalCount) > 0
+                        hasNotification: (null == e ? void 0 : e.totalCount) > 0
                     }, {
                         name: "Portals",
                         to: "portals",
                         condition: !0,
-                        hasNotification: (null == n ? void 0 : n.totalCount) > 0
+                        hasNotification: (null == t ? void 0 : t.totalCount) > 0
                     }, {
                         name: "Warp Effects",
                         to: "warp-effects",
                         condition: !0,
-                        hasNotification: (null == u ? void 0 : u.totalCount) > 0
+                        hasNotification: (null == r ? void 0 : r.totalCount) > 0
                     }, {
                         name: "Archived",
                         to: "archived",
@@ -1549,12 +1545,12 @@
                     k = (0, a.useState)(null),
                     N = (0, O.Z)(k, 2),
                     F = N[0],
-                    R = N[1],
-                    D = (0, v.Xz)(),
-                    L = (0, O.Z)(D, 2),
-                    V = L[0],
-                    T = L[1].isLoading,
-                    M = (0, H.I0)(),
+                    D = N[1],
+                    L = (0, v.Xz)(),
+                    R = (0, O.Z)(L, 2),
+                    V = R[0],
+                    T = R[1].isLoading,
+                    M = (0, B.I0)(),
                     _ = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
@@ -1585,7 +1581,7 @@
                         var e;
                         return (null == Y || null === (e = Y.data) || void 0 === e ? void 0 : e.length) > 0
                     }), [Y]),
-                    ee = (0, H.v9)((function(e) {
+                    ee = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ee, Y);
@@ -1599,7 +1595,7 @@
                                             itemId: F.id
                                         });
                                     case 3:
-                                        f(!1), M((0, B.AV)()), (0, I.d)({
+                                        f(!1), M((0, H.AV)()), (0, I.d)({
                                             color: "success",
                                             title: "Emoji deleted",
                                             message: "Emoji deleted successfully",
@@ -1692,7 +1688,7 @@
                             return function(e) {
                                 var t = e.emoji,
                                     r = e.index;
-                                R(t), M((0, B.lc)({
+                                D(t), M((0, H.lc)({
                                     gallery: (null == Y ? void 0 : Y.data) || [],
                                     openIndex: r,
                                     deleteItemCallback: function() {
@@ -1706,7 +1702,7 @@
                             })
                         },
                         onDeleteCallback: function() {
-                            R(e), f(!0)
+                            D(e), f(!0)
                         },
                         type: y.b5.emojis.custom
                     })
@@ -1781,17 +1777,17 @@
                     N = (0, a.useState)(!1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = j[1],
-                    D = (0, K._)("skipInventoryArchiveConfirmation", !1),
-                    L = (0, O.Z)(D, 2),
-                    V = L[0],
-                    T = (L[1], (0, v.F)()),
+                    D = j[1],
+                    L = (0, K._)("skipInventoryArchiveConfirmation", !1),
+                    R = (0, O.Z)(L, 2),
+                    V = R[0],
+                    T = (R[1], (0, v.F)()),
                     M = (0, O.Z)(T, 2),
                     _ = M[0],
                     W = M[1].isLoading,
                     U = (0, v.fv)(),
                     z = (0, O.Z)(U, 1)[0],
-                    $ = (0, H.I0)();
+                    $ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         $({
@@ -1815,7 +1811,7 @@
                     ee = G.error,
                     te = G.isError,
                     re = G.isFetching,
-                    ne = (0, H.v9)((function(e) {
+                    ne = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ne, J);
@@ -1840,7 +1836,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.emoji, n = t.index, k(r), $((0, B.lc)({
+                                        if (r = t.emoji, n = t.index, k(r), $((0, H.lc)({
                                                 gallery: (null == J ? void 0 : J.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -1888,7 +1884,7 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (R(!1), k(null), $((0, B.AV)()), (0, I.d)({
+                                        if (D(!1), k(null), $((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Emoji archived",
                                                 message: "Emoji archived successfully",
@@ -1939,7 +1935,7 @@
                     se = function(e) {
                         var t = e.emoji,
                             r = void 0 === t ? null : t;
-                        V ? oe(r.id) : (R(!0), k(r))
+                        V ? oe(r.id) : (D(!0), k(r))
                     },
                     ue = re;
                 return a.createElement("div", {
@@ -1948,7 +1944,7 @@
                     itemType: "emoji",
                     isOpen: F,
                     onCloseCallback: function() {
-                        return R(!1)
+                        return D(!1)
                     },
                     archiveItemCallback: oe,
                     isArchiving: W
@@ -2198,13 +2194,13 @@
                     N = (0, K._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = (j[1], (0, v.F)()),
-                    D = (0, O.Z)(R, 2),
-                    L = D[0],
-                    V = D[1].isLoading,
+                    D = (j[1], (0, v.F)()),
+                    L = (0, O.Z)(D, 2),
+                    R = L[0],
+                    V = L[1].isLoading,
                     T = (0, v.fv)(),
                     M = (0, O.Z)(T, 1)[0],
-                    _ = (0, H.I0)();
+                    _ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -2236,7 +2232,7 @@
                     z = W.error,
                     $ = W.isError,
                     J = W.isFetching,
-                    ee = (0, H.v9)((function(e) {
+                    ee = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ee, U);
@@ -2261,7 +2257,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.prop, n = t.index, h(r), _((0, B.lc)({
+                                        if (r = t.prop, n = t.index, h(r), _((0, H.lc)({
                                                 gallery: (null == U ? void 0 : U.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -2304,12 +2300,12 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, L({
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
                                             itemId: null === t ? g.id : t,
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, B.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
@@ -2435,19 +2431,15 @@
                 }, "No exclusive items."))))
             };
             const Se = function() {
-                var e = (0, s.Tu)({
-                        withRecentSubscription: !0
-                    }).user,
-                    t = !(null != e && e.hasVRCPlus || null != e && e.previouslyHadVRCPlus),
-                    r = (0, v.dq)({
-                        n: 1,
-                        pageValue: 1,
-                        types: "prop"
-                    }).data;
-                return t ? a.createElement(j, {
-                    icon: w.default,
-                    text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
-                }) : a.createElement("div", null, a.createElement("div", {
+                (0, s.Tu)({
+                    withRecentSubscription: !0
+                }).user;
+                var e = (0, v.dq)({
+                    n: 1,
+                    pageValue: 1,
+                    types: "prop"
+                }).data;
+                return a.createElement("div", null, a.createElement("div", {
                     className: "tw-px-4"
                 }, a.createElement(c.Z, {
                     className: "tw-mb-4",
@@ -2456,7 +2448,7 @@
                         name: "All Items",
                         to: "all",
                         condition: !0,
-                        hasNotification: (null == r ? void 0 : r.totalCount) > 0
+                        hasNotification: (null == e ? void 0 : e.totalCount) > 0
                     }, {
                         name: "Archived",
                         to: "archived",
@@ -2589,12 +2581,12 @@
                         k = (0, a.useState)(null),
                         N = (0, O.Z)(k, 2),
                         F = N[0],
-                        R = N[1],
-                        D = (0, v.Xz)(),
-                        L = (0, O.Z)(D, 2),
-                        V = L[0],
-                        T = L[1].isLoading,
-                        M = (0, H.I0)(),
+                        D = N[1],
+                        L = (0, v.Xz)(),
+                        R = (0, O.Z)(L, 2),
+                        V = R[0],
+                        T = R[1].isLoading,
+                        M = (0, B.I0)(),
                         _ = (0, s.Tu)({
                             withRecentSubscription: !0
                         }).user,
@@ -2625,7 +2617,7 @@
                             var e;
                             return (null == Y || null === (e = Y.data) || void 0 === e ? void 0 : e.length) > 0
                         }), [Y]),
-                        ee = (0, H.v9)((function(e) {
+                        ee = (0, B.v9)((function(e) {
                             return e.gallery
                         }));
                     X(ee, Y);
@@ -2639,7 +2631,7 @@
                                                 itemId: F.id
                                             });
                                         case 3:
-                                            f(!1), M((0, B.AV)()), R(null), (0, I.d)({
+                                            f(!1), M((0, H.AV)()), D(null), (0, I.d)({
                                                 color: "success",
                                                 title: "Sticker deleted",
                                                 message: "Sticker deleted successfully",
@@ -2732,7 +2724,7 @@
                                 return function(e) {
                                     var t = e.sticker,
                                         r = e.index;
-                                    R(t), M((0, B.lc)({
+                                    D(t), M((0, H.lc)({
                                         gallery: (null == Y ? void 0 : Y.data) || [],
                                         openIndex: r,
                                         deleteItemCallback: function() {
@@ -2746,7 +2738,7 @@
                                 })
                             },
                             onDeleteCallback: function() {
-                                R(e), f(!0)
+                                D(e), f(!0)
                             },
                             type: y.b5.stickers.custom
                         })
@@ -2779,7 +2771,7 @@
             Pe.propTypes = {};
             const Ie = Pe;
 
-            function Re(e, t) {
+            function De(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -2790,18 +2782,18 @@
                 return r
             }
 
-            function De(e) {
+            function Le(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Re(Object(r), !0).forEach((function(t) {
+                    t % 2 ? De(Object(r), !0).forEach((function(t) {
                         (0, G.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Re(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : De(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var Le = function() {
+            var Re = function() {
                 var e, t, r, n, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -2821,17 +2813,17 @@
                     N = (0, a.useState)(null),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    R = j[1],
-                    D = (0, K._)("skipInventoryArchiveConfirmation", !1),
-                    L = (0, O.Z)(D, 2),
-                    V = L[0],
-                    T = (L[1], (0, v.F)()),
+                    D = j[1],
+                    L = (0, K._)("skipInventoryArchiveConfirmation", !1),
+                    R = (0, O.Z)(L, 2),
+                    V = R[0],
+                    T = (R[1], (0, v.F)()),
                     M = (0, O.Z)(T, 2),
                     _ = M[0],
                     W = M[1].isLoading,
                     U = (0, v.fv)(),
                     z = (0, O.Z)(U, 1)[0],
-                    $ = (0, H.I0)();
+                    $ = (0, B.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         $({
@@ -2839,7 +2831,7 @@
                         })
                     }
                 }), [$]);
-                var G = (0, v.aj)(De(De({
+                var G = (0, v.aj)(Le(Le({
                         n: 100,
                         pageValue: 1,
                         types: "sticker",
@@ -2855,7 +2847,7 @@
                     ee = G.error,
                     te = G.isError,
                     re = G.isFetching,
-                    ne = (0, H.v9)((function(e) {
+                    ne = (0, B.v9)((function(e) {
                         return e.gallery
                     }));
                 X(ne, J);
@@ -2880,7 +2872,7 @@
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.sticker, n = t.index, R(r), $((0, B.lc)({
+                                        if (r = t.sticker, n = t.index, D(r), $((0, H.lc)({
                                                 gallery: (null == J ? void 0 : J.data) || [],
                                                 openIndex: n,
                                                 onArchiveCallback: function(e) {
@@ -2928,7 +2920,7 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), R(null), $((0, B.AV)()), (0, I.d)({
+                                        if (k(!1), D(null), $((0, H.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Sticker archived",
                                                 message: "Sticker archived successfully",
@@ -2979,7 +2971,7 @@
                     se = function(e) {
                         var t = e.sticker,
                             r = void 0 === t ? null : t;
-                        V ? oe(r.id) : (k(!0), R(r))
+                        V ? oe(r.id) : (k(!0), D(r))
                     },
                     ue = re;
                 return a.createElement("div", {
@@ -3060,8 +3052,8 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no exclusive stickers", g ? " with special effects" : "", "."))))
             };
-            Le.propTypes = {};
-            const Ve = Le;
+            Re.propTypes = {};
+            const Ve = Re;
             const Te = function() {
                 var e = (0, s.Tu)({
                         withRecentSubscription: !0
@@ -3364,4 +3356,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8adc84c62113998b401c4b9dd943c459f737f6d14352a940b379be032c3ee8bb.js.map
+//# sourceMappingURL=177ed1f63dd469b43f06096b94dadb0ef39ccf9a399d0ae735a82cb0ef3350ef.js.map
