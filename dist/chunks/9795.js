@@ -17,8 +17,8 @@
                 f = n(17383),
                 m = n(15861),
                 v = n(46357),
-                p = n(64687),
-                g = n.n(p),
+                g = n(64687),
+                p = n.n(g),
                 h = n(64358),
                 b = n(30381),
                 x = n.n(b),
@@ -39,9 +39,9 @@
                             return e.id === a
                         }))
                     }), [s, a]),
-                    p = (0, f.Kk)(null == u ? void 0 : u.location),
-                    b = p.world,
-                    w = p.location,
+                    g = (0, f.Kk)(null == u ? void 0 : u.location),
+                    b = g.world,
+                    w = g.location,
                     S = d.useState("Invite Me"),
                     I = (0, i.Z)(S, 2),
                     J = I[0],
@@ -68,8 +68,8 @@
                     fe = ae.isOffline,
                     me = ae.userStatus,
                     ve = ae.userStatusLabel,
-                    pe = ae.isInActive,
-                    ge = ae.userActivity,
+                    ge = ae.isInActive,
+                    pe = ae.userActivity,
                     he = ae.receivesMobileNotifications,
                     be = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
                     xe = (0, h.aF)(de),
@@ -77,8 +77,8 @@
                     ye = (0, E.YW)(de),
                     Ee = (0, E.PF)(l, de),
                     ke = function() {
-                        var e = (0, m.Z)(g().mark((function e() {
-                            return g().wrap((function(e) {
+                        var e = (0, m.Z)(p().mark((function e() {
+                            return p().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (b && de) {
@@ -196,8 +196,8 @@
                     className: "align-items-center"
                 }, d.createElement(c.Cl, {
                     status: me,
-                    isInActive: pe,
-                    title: "".concat(ve, " ").concat(ge && "- ".concat(ge))
+                    isInActive: ge,
+                    title: "".concat(ve, " ").concat(pe && "- ".concat(pe))
                 }), d.createElement(R, {
                     to: "/home/user/".concat(u.id),
                     onClick: ie
@@ -430,8 +430,8 @@
                         u = a[1],
                         m = d.useState("status"),
                         v = (0, i.Z)(m, 2),
-                        p = v[0],
-                        g = v[1],
+                        g = v[0],
+                        p = v[1],
                         h = d.useState(!1),
                         b = (0, i.Z)(h, 2),
                         x = b[0],
@@ -466,7 +466,7 @@
                             }
                         },
                         P = (0, f.Pt)({
-                            sortBy: p,
+                            sortBy: g,
                             searchQuery: l,
                             friendsShown: q,
                             selectedGroup: k,
@@ -493,7 +493,7 @@
                         q < B && M.current.clientHeight < H.current.clientHeight - 100 && N(Math.min(q + 10, B))
                     }), []), d.useEffect((function() {
                         H.current && (H.current.scrollTop = 0)
-                    }), [p, l, k]);
+                    }), [g, l, k]);
                     var X = function(e, t, n) {
                         var r = n[e];
                         return r ? "".concat(s()(r.name, {
@@ -572,13 +572,13 @@
                         label: "Sort By",
                         className: "mt-3 md:tw-w-1/2",
                         onChange: function(e) {
-                            g(e)
+                            p(e)
                         },
-                        value: p,
+                        value: g,
                         options: ie
-                    })), d.createElement(be, null, d.createElement(pe, {
+                    })), d.createElement(be, null, d.createElement(ge, {
                         ref: H
-                    }, d.createElement(ge, {
+                    }, d.createElement(pe, {
                         className: "pt-1",
                         onScroll: function(e) {
                             var t = e.target,
@@ -682,13 +682,13 @@
                     name: "13yoiil",
                     styles: "transition:all 0.1s ease-in;width:35px;height:35px;display:flex;justify-content:center;overflow:hidden;:hover{transform:scale(1.15);cursor:pointer;}:active{transform:scale(0.9);}>div{width:100%;height:100%;background-image:url('https://assets.vrchat.com/www/images/WingLeft.png');background-repeat:no-repeat;background-position:center;background-size:contain;}"
                 }),
-                pe = (0, a.Z)(le, {
+                ge = (0, a.Z)(le, {
                     target: "e1oqhh5q5"
                 })({
                     name: "wsam0j",
                     styles: "flex-grow:1;position:absolute;width:100%;height:100%"
                 }),
-                ge = (0, a.Z)(le, {
+                pe = (0, a.Z)(le, {
                     target: "e1oqhh5q4"
                 })({
                     name: "131cj2s",
@@ -702,7 +702,7 @@
                 }),
                 be = (0, a.Z)("div", {
                     target: "e1oqhh5q2"
-                })("position:relative;height:100%;flex-grow:1;&:hover{", ge, "{margin-right:0;}}"),
+                })("position:relative;height:100%;flex-grow:1;&:hover{", pe, "{margin-right:0;}}"),
                 xe = (0, a.Z)("div", {
                     target: "e1oqhh5q1"
                 })({
@@ -749,21 +749,6 @@
                 t < 0 && (t = -t > i ? 0 : i + t), (n = n > i ? i : n) < 0 && (n += i), i = t > n ? 0 : n - t >>> 0, t >>>= 0;
                 for (var a = Array(i); ++r < i;) a[r] = e[r + t];
                 return a
-            }
-        },
-        80531: (e, t, n) => {
-            var r = n(62705),
-                i = n(29932),
-                a = n(1469),
-                o = n(33448),
-                l = r ? r.prototype : void 0,
-                s = l ? l.toString : void 0;
-            e.exports = function e(t) {
-                if ("string" == typeof t) return t;
-                if (a(t)) return i(t, e) + "";
-                if (o(t)) return s ? s.call(t) : "";
-                var n = t + "";
-                return "0" == n && 1 / t == -Infinity ? "-0" : n
             }
         },
         40180: (e, t, n) => {
@@ -838,12 +823,6 @@
                 l = o ? i(o) : r;
             e.exports = l
         },
-        79833: (e, t, n) => {
-            var r = n(80531);
-            e.exports = function(e) {
-                return null == e ? "" : r(e)
-            }
-        },
         39138: (e, t, n) => {
             var r = n(80531),
                 i = n(40180),
@@ -862,17 +841,17 @@
                     var v = "separator" in t ? t.separator : v;
                     n = "length" in t ? u(t.length) : n, m = "omission" in t ? r(t.omission) : m
                 }
-                var p = (e = d(e)).length;
+                var g = (e = d(e)).length;
                 if (a(e)) {
-                    var g = c(e);
-                    p = g.length
+                    var p = c(e);
+                    g = p.length
                 }
-                if (n >= p) return e;
+                if (n >= g) return e;
                 var h = n - s(m);
                 if (h < 1) return m;
-                var b = g ? i(g, 0, h).join("") : e.slice(0, h);
+                var b = p ? i(p, 0, h).join("") : e.slice(0, h);
                 if (void 0 === v) return b + m;
-                if (g && (h += b.length - h), l(v)) {
+                if (p && (h += b.length - h), l(v)) {
                     if (e.slice(h).search(v)) {
                         var x, w = b;
                         for (v.global || (v = RegExp(v.source, d(f.exec(v)) + "g")), v.lastIndex = 0; x = v.exec(w);) var y = x.index;
@@ -887,4 +866,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8e6c1a84427eb92dae383ced875878cec7e4eb8cb18c65384ebc89f1bf58180c.js.map
+//# sourceMappingURL=63ada574f271cfe47047ebfb191b27a7a2dd738a8ab0b5f36ce874d1ed74c151.js.map

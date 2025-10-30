@@ -37,72 +37,93 @@
         94725: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => K
+                default: () => ee
             });
             var a = n(67294),
-                r = n(27484),
-                i = n.n(r),
+                r = n(60006),
+                i = n(27484),
+                s = n.n(i),
                 o = n(66607),
-                s = n.n(o),
-                l = n(79655),
-                c = n(22202),
-                u = n(88081),
+                l = n.n(o),
+                c = n(79655),
+                u = n(22202),
+                d = n(88081),
                 m = n(96985),
-                d = n(37024);
-            i().extend(s());
-            const w = function(e) {
-                var t = e.className,
-                    n = (0, c.XC)().data,
-                    r = a.useRef(i()()),
-                    o = a.useRef(i()().add(7, "days")),
-                    s = r.current,
-                    w = o.current,
-                    f = w.month() !== s.month(),
-                    p = (0, u.Yo)({
-                        date: s.toISOString()
+                f = n(37024);
+            s().extend(l());
+            const v = function(e) {
+                var t, n = e.className,
+                    i = (0, u.XC)().data,
+                    o = a.useRef(s()()),
+                    l = a.useRef(s()().add(7, "days")),
+                    v = o.current,
+                    g = l.current,
+                    p = g.month() !== v.month(),
+                    h = (0, d.bT)({
+                        date: v.startOf("month"),
+                        userId: null == i ? void 0 : i.id
                     }, {
-                        skip: !(null != n && n.id)
+                        skip: !(null != i && i.id)
                     }),
-                    g = p.data,
-                    v = p.isLoading,
-                    h = p.isError,
-                    E = (0, u.Yo)({
-                        date: w.toISOString()
+                    w = h.data,
+                    E = void 0 === w ? {
+                        events: [],
+                        groups: []
+                    } : w,
+                    b = h.isFetching,
+                    y = h.isError,
+                    N = (0, d.bT)({
+                        date: v.startOf("month").add(1, "month"),
+                        userId: null == i ? void 0 : i.id
                     }, {
-                        skip: !(null != n && n.id && f)
+                        skip: !(null != i && i.id && p)
                     }),
-                    b = E.data,
-                    y = E.isLoading,
-                    x = E.isError,
-                    N = a.useMemo((function() {
-                        var e = new Map;
-                        return null == g || g.forEach((function(t) {
-                            return e.set(t.id, t)
-                        })), f && (null == b || b.forEach((function(t) {
-                            return e.set(t.id, t)
-                        }))), Array.from(e.values())
-                    }), [g, b, f]),
-                    P = v || f && y,
-                    Z = h || !!f && x,
-                    C = a.useMemo((function() {
-                        return N.filter((function(e) {
-                            var t = i()(e.startsAt),
-                                n = i()(e.endsAt);
-                            return t.isBetween(s, w, null, "[]") || t.isBefore(s) && n.isAfter(s)
+                    x = N.data,
+                    P = void 0 === x ? {
+                        events: [],
+                        groups: []
+                    } : x,
+                    Z = N.isFetching,
+                    C = N.isError,
+                    k = (0, d.lb)({
+                        n: 1
+                    }),
+                    O = k.data,
+                    S = void 0 === O ? {
+                        results: []
+                    } : O,
+                    B = k.isLoading,
+                    M = k.isError,
+                    A = a.useMemo((function() {
+                        var e, t, n = new Map;
+                        (null == E || null === (e = E.events) || void 0 === e || e.forEach((function(e) {
+                            return n.set(e.id, e)
+                        })), p) && (null == P || null === (t = P.events) || void 0 === t || t.forEach((function(e) {
+                            return n.set(e.id, e)
+                        })));
+                        return Array.from(n.values())
+                    }), [E, P, p]),
+                    L = B || b || p && Z,
+                    I = M || y || p && C,
+                    j = a.useMemo((function() {
+                        return A.filter((function(e) {
+                            var t = s()(e.startsAt),
+                                n = s()(e.endsAt);
+                            return t.isBetween(v, g, null, "[]") || t.isBefore(v) && n.isAfter(v)
                         })).sort((function(e, t) {
-                            return i()(e.startsAt).valueOf() - i()(t.startsAt).valueOf()
+                            return s()(e.startsAt).valueOf() - s()(t.startsAt).valueOf()
                         }))
-                    }), [N, s, w]),
-                    k = a.useMemo((function() {
-                        return C.filter((function(e) {
-                            var t = i()(e.startsAt),
-                                n = i()(e.endsAt);
-                            return t.isSame(s, "day") || t.isBefore(s) && n.isAfter(s)
+                    }), [A, v, g]),
+                    z = a.useMemo((function() {
+                        return j.filter((function(e) {
+                            var t = s()(e.startsAt),
+                                n = s()(e.endsAt);
+                            return t.isSame(v, "day") || t.isBefore(v) && n.isAfter(v)
                         })).length
-                    }), [C, s]),
-                    O = C.length;
-                return P ? a.createElement(m.JX, {
-                    className: t
+                    }), [j, v]),
+                    T = j.length;
+                return L ? a.createElement(m.JX, {
+                    className: n
                 }, a.createElement("div", {
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
@@ -112,8 +133,8 @@
                 }, a.createElement(m.UU, {
                     width: "100%",
                     height: "200px"
-                }))) : Z ? a.createElement(m.JX, {
-                    className: t
+                }))) : I ? a.createElement(m.JX, {
+                    className: n
                 }, a.createElement("div", {
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
@@ -127,7 +148,7 @@
                 }, "Unable to load your events."), a.createElement("p", {
                     className: "tw-mb-0"
                 }, "Please try again later.")))) : a.createElement(m.JX, {
-                    className: t
+                    className: n
                 }, a.createElement("div", {
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
@@ -136,56 +157,52 @@
                     className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
                 }, a.createElement("div", {
                     className: "tw-grid tw-grid-cols-2 tw-gap-3 tw-mb-4"
-                }, a.createElement(l.rU, {
-                    to: "/home/calendar?view=day",
-                    className: " tw-bg-gradient-to-br tw-from-[#1a4d5c] tw-to-[#2a7b89] tw-rounded tw-py-2 tw-px-3 tw-text-center tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-2 tw-no-underline tw-cursor-pointer tw-transition-all tw-duration-200 hover:tw-bg-gradient-to-br hover:tw-from-[#2a5d6c] hover:tw-to-[#3a8b99] "
+                }, a.createElement(r.Qj, {
+                    fullWidth: !0,
+                    noMargin: !0,
+                    to: "/home/calendar?view=day"
                 }, a.createElement("span", {
-                    className: "tw-text-white tw-text-2xl tw-font-bold tw-leading-none"
-                }, k), a.createElement("span", {
-                    className: "tw-text-[#a0c4c7] tw-text-xs tw-whitespace-nowrap"
-                }, 1 === k ? "Event Today" : "Events Today")), a.createElement(l.rU, {
-                    to: "/home/calendar?view=week",
-                    className: " tw-bg-gradient-to-br tw-from-[#1a4d5c] tw-to-[#2a7b89] tw-rounded tw-py-2 tw-px-3 tw-text-center tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-2 tw-no-underline tw-cursor-pointer tw-transition-all tw-duration-200 hover:tw-bg-gradient-to-br hover:tw-from-[#2a5d6c] hover:tw-to-[#3a8b99] "
+                    className: "tw-text-med"
+                }, z, " ", 1 === z ? "Event Today" : "Events Today")), a.createElement(r.Qj, {
+                    fullWidth: !0,
+                    noMargin: !0,
+                    to: "/home/calendar?view=week"
                 }, a.createElement("span", {
-                    className: "tw-text-white tw-text-2xl tw-font-bold tw-leading-none"
-                }, O), a.createElement("span", {
-                    className: "tw-text-[#a0c4c7] tw-text-xs tw-whitespace-nowrap"
-                }, 1 === O ? "Event This Week" : "Events This Week"))), C.length > 0 ? a.createElement("div", {
+                    className: "tw-text-med"
+                }, T, " ", 1 === T ? "Event This Week" : "Events This Week"))), (null == S || null === (t = S.results) || void 0 === t ? void 0 : t.length) > 0 ? a.createElement("div", {
                     className: "tw-mb-4"
-                }, a.createElement(d.ZP, {
-                    key: C[0].id,
-                    event: C[0],
+                }, a.createElement(f.ZP, {
+                    key: S.results[0].id,
+                    event: S.results[0],
                     isExpandable: !0
                 })) : a.createElement("div", {
                     className: "tw-text-center tw-text-light-grey tw-p-8 tw-rounded"
                 }, a.createElement("p", {
                     className: "tw-mb-2"
-                }, "No upcoming events found."), a.createElement("p", {
-                    className: "tw-mb-0"
-                }, "Start following some events to see them here!")), a.createElement(l.rU, {
+                }, "No upcoming events found. Start following some events to see them here!")), a.createElement(c.rU, {
                     to: "/home/calendar?view=week",
                     className: " tw-block tw-bg-grey tw-text-white tw-py-2.5 tw-px-4 tw-rounded tw-no-underline tw-transition-colors tw-duration-200 tw-w-full tw-text-center tw-text-sm tw-font-normal hover:tw-bg-grey/80 hover:tw-text-white hover:tw-no-underline "
                 }, "See All Events")))
             };
-            var f = n(54546),
+            var g = n(54546),
                 p = n(4942),
-                g = n(45987),
-                v = n(42138),
-                h = n(9186),
-                E = n(62437);
-            const b = function() {
+                h = n(45987),
+                w = n(42138),
+                E = n(9186),
+                b = n(62437);
+            const y = function() {
                 var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).instancePollingInterval,
                     t = void 0 === e ? 12e4 : e,
-                    n = (0, c.IB)().data,
-                    r = (0, E.k1)({
+                    n = (0, u.IB)().data,
+                    r = (0, b.k1)({
                         userId: n.id
                     }, {
                         skip: !(null != n && n.id),
                         pollingInterval: t
                     }),
                     i = r.data,
-                    o = r.isLoading,
-                    s = r.isError;
+                    s = r.isLoading,
+                    o = r.isError;
                 return {
                     locations: a.useMemo((function() {
                         var e;
@@ -198,12 +215,12 @@
                         return t.sort((function(e, t) {
                             return t.userCount - e.userCount
                         })), t
-                    }), [i, o]),
-                    isLoading: o,
-                    isError: s
+                    }), [i, s]),
+                    isLoading: s,
+                    isError: o
                 }
             };
-            var y = ["users"];
+            var N = ["users"];
 
             function x(e, t) {
                 var n = Object.keys(e);
@@ -216,7 +233,7 @@
                 return n
             }
 
-            function N(e) {
+            function P(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? x(Object(n), !0).forEach((function(t) {
@@ -227,96 +244,96 @@
                 }
                 return e
             }
-            const P = function() {
+            const Z = function() {
                 var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).instancePollingInterval,
-                    t = (0, h.Z)(),
+                    t = (0, E.Z)(),
                     n = t.locations,
                     r = void 0 === n ? {} : n,
                     i = t.sortedLocations,
-                    o = void 0 === i ? [] : i,
-                    s = t.isOnlineLoading,
+                    s = void 0 === i ? [] : i,
+                    o = t.isOnlineLoading,
                     l = t.isError,
-                    c = b({
+                    c = y({
                         instancePollingInterval: e
                     }),
                     u = c.locations,
-                    m = void 0 === u ? {} : u,
-                    d = c.sortedLocations,
-                    w = void 0 === d ? [] : d,
-                    p = c.isLoading,
-                    E = c.isError,
-                    x = a.useMemo((function() {
+                    d = void 0 === u ? {} : u,
+                    m = c.sortedLocations,
+                    f = void 0 === m ? [] : m,
+                    v = c.isLoading,
+                    p = c.isError,
+                    b = a.useMemo((function() {
                         var e = {},
                             t = [];
-                        return [].concat((0, v.Z)(o), (0, v.Z)(w)).forEach((function(n, a, i) {
-                            var o = n.location;
-                            if (!Object.prototype.hasOwnProperty.call(e, o)) {
-                                var s = m[o] || {},
-                                    l = (s.users, (0, g.Z)(s, y)),
-                                    c = N(N({}, r[o] || {}), l);
-                                e[o] = c, t.push(c)
+                        return [].concat((0, w.Z)(s), (0, w.Z)(f)).forEach((function(n, a, i) {
+                            var s = n.location;
+                            if (!Object.prototype.hasOwnProperty.call(e, s)) {
+                                var o = d[s] || {},
+                                    l = (o.users, (0, h.Z)(o, N)),
+                                    c = P(P({}, r[s] || {}), l);
+                                e[s] = c, t.push(c)
                             }
                         })), [e, t]
-                    }), [r, m, o, w, s, p]),
-                    P = (0, f.Z)(x, 2);
+                    }), [r, d, s, f, o, v]),
+                    x = (0, g.Z)(b, 2);
                 return {
-                    locations: P[0],
-                    sortedLocations: P[1],
-                    isLoading: s || p,
-                    isError: l || E
+                    locations: x[0],
+                    sortedLocations: x[1],
+                    isLoading: o || v,
+                    isError: l || p
                 }
             };
-            var Z = n(59923);
-            const C = function(e) {
+            var C = n(59923);
+            const k = function(e) {
                 var t, n = e.className,
-                    r = P(),
+                    r = Z(),
                     i = r.sortedLocations,
-                    o = r.isLoading,
-                    s = r.isError,
+                    s = r.isLoading,
+                    o = r.isError,
                     l = a.useState(5),
-                    c = (0, f.Z)(l, 2),
+                    c = (0, g.Z)(l, 2),
                     u = c[0],
                     d = c[1],
-                    w = null !== (t = null == i ? void 0 : i.slice(0, u)) && void 0 !== t ? t : [],
-                    p = a.useMemo((function() {
-                        return w.map((function(e) {
-                            return a.createElement(Z.Z, {
+                    f = null !== (t = null == i ? void 0 : i.slice(0, u)) && void 0 !== t ? t : [],
+                    v = a.useMemo((function() {
+                        return f.map((function(e) {
+                            return a.createElement(C.Z, {
                                 key: "location-".concat(e.location),
                                 className: "mb-4",
                                 location: e
                             })
                         }))
-                    }), [w]);
-                return o ? a.createElement(m.UU, {
+                    }), [f]);
+                return s ? a.createElement(m.UU, {
                     width: "100%",
                     height: "200px"
-                }) : s || 0 === w.length ? null : a.createElement(m.JX, {
+                }) : o || 0 === f.length ? null : a.createElement(m.JX, {
                     className: n
                 }, a.createElement("h4", {
                     className: "text-center"
-                }, "Friend & Group Locations"), w.length > 0 && a.createElement("div", {
+                }, "Friend & Group Locations"), f.length > 0 && a.createElement("div", {
                     className: "locations"
-                }, p), u < i.length && a.createElement(m.zx, {
+                }, v), u < i.length && a.createElement(m.zx, {
                     className: "w-100",
                     onClick: function() {
                         d(u + 5)
                     }
                 }, "Show More Locations"))
             };
-            var k = n(4965),
-                O = n(17219),
-                S = n(1208),
-                B = n(89182);
-            const L = function(e) {
+            var O = n(4965),
+                S = n(17219),
+                B = n(1208),
+                M = n(89182);
+            const A = function(e) {
                 var t = e.className,
-                    n = (0, O.y)().data,
+                    n = (0, S.y)().data,
                     r = a.useState(3),
-                    i = (0, f.Z)(r, 2),
-                    o = i[0],
-                    s = i[1],
+                    i = (0, g.Z)(r, 2),
+                    s = i[0],
+                    o = i[1],
                     l = function() {
                         var e = 3;
-                        window.innerWidth < 1280 && (e = 2), window.innerWidth < 820 && (e = 3), s(e)
+                        window.innerWidth < 1280 && (e = 2), window.innerWidth < 820 && (e = 3), o(e)
                     };
                 a.useEffect((function() {
                     return l(), window.addEventListener("resize", l),
@@ -324,7 +341,7 @@
                             return window.removeEventListener("resize", l)
                         }
                 }), []);
-                var c = (0, S.g9)({
+                var c = (0, B.g9)({
                         sort: "shuffle",
                         order: "descending",
                         tag: "system_approved",
@@ -336,23 +353,23 @@
                     className: t
                 }, a.createElement("h2", {
                     className: "text-center"
-                }, "Have you seen these Completely Random Worlds?"), a.createElement(M, null, u.slice(0, o).map((function(e) {
-                    return a.createElement(B.Z, {
+                }, "Have you seen these Completely Random Worlds?"), a.createElement(L, null, u.slice(0, s).map((function(e) {
+                    return a.createElement(M.Z, {
                         key: e.id,
                         world: e
                     })
                 }))))
             };
-            var M = (0, k.Z)("div", {
+            var L = (0, O.Z)("div", {
                     target: "ecqaaaz0"
                 })({
                     name: "wi7zmd",
                     styles: "margin:1rem 0 2rem 0;display:grid;column-gap:0.5rem;grid-template-columns:repeat(1, 1fr);@media (min-width: 820px){grid-template-columns:repeat(2, 1fr);}@media (min-width: 1280px){grid-template-columns:repeat(3, 1fr);}"
                 }),
-                A = n(85533),
-                I = n(87462),
-                j = n(56811),
-                z = n(61509).S.injectEndpoints({
+                I = n(85533),
+                j = n(87462),
+                z = n(56811),
+                T = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getBeta: e.query({
@@ -402,66 +419,66 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["BetaApplication", "BetaRegistration"]
                 }),
-                X = z.useGetBetaQuery,
-                D = z.useGetBetaRegistrationQuery,
-                T = z.useCreateBetaRegistrationMutation;
-            const R = function(e) {
+                X = T.useGetBetaQuery,
+                D = T.useGetBetaRegistrationQuery,
+                R = T.useCreateBetaRegistrationMutation;
+            const _ = function(e) {
                 var t = e.isOpen,
                     n = void 0 !== t && t,
                     r = e.cancelCallback,
                     i = void 0 === r ? function() {} : r,
-                    o = e.doneCallback,
-                    s = void 0 === o ? function() {} : o,
+                    s = e.doneCallback,
+                    o = void 0 === s ? function() {} : s,
                     l = e.completed,
                     c = void 0 !== l && l,
                     u = a.useState([]),
-                    d = (0, f.Z)(u, 2),
-                    w = d[0],
-                    p = d[1],
-                    g = a.useState(!1),
-                    h = (0, f.Z)(g, 2),
+                    d = (0, g.Z)(u, 2),
+                    f = d[0],
+                    v = d[1],
+                    p = a.useState(!1),
+                    h = (0, g.Z)(p, 2),
                     E = h[0],
                     b = h[1],
                     y = a.useState(""),
-                    x = (0, f.Z)(y, 2),
-                    N = x[0],
-                    P = x[1],
-                    Z = T(),
-                    C = (0, f.Z)(Z, 2),
+                    N = (0, g.Z)(y, 2),
+                    x = N[0],
+                    P = N[1],
+                    Z = R(),
+                    C = (0, g.Z)(Z, 2),
                     k = C[0],
                     O = C[1],
                     S = O.isLoading,
                     B = (O.isSuccess, O.isError, O.error, function(e) {
                         return {
-                            checked: w.includes(e),
+                            checked: f.includes(e),
                             id: "checkbox-".concat(e),
                             className: "tw-my-4 md:tw-my-2.5",
                             onChange: function() {
-                                w.includes(e) ? p(w.filter((function(t) {
+                                f.includes(e) ? v(f.filter((function(t) {
                                     return t !== e
-                                }))) : p([].concat((0, v.Z)(w), [e]))
+                                }))) : v([].concat((0, w.Z)(f), [e]))
                             }
                         }
                     }),
-                    L = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
+                    M = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
                         className: "tw-mt-8"
-                    }, "Select all iOS devices you have access to and will use for testing."), a.createElement(m.XZ, (0, I.Z)({
+                    }, "Select all iOS devices you have access to and will use for testing."), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 12 Pro/Max"
-                    }, B("iPhone12PM"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone12PM"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 13 Pro/Max"
-                    }, B("iPhone13PM"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone13PM"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 14"
-                    }, B("iPhone14"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone14"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 14 Pro/Max"
-                    }, B("iPhone14PM"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone14PM"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 15"
-                    }, B("iPhone15"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone15"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 15 Pro/Max"
-                    }, B("iPhone15PM"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPhone15PM"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "11-inch iPad Pro (2nd Generation of higher)"
-                    }, B("iPadPro11"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPadPro11"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "12.9-inch iPad Pro (4th generation or higher)"
-                    }, B("iPadPro12"))), a.createElement(m.XZ, (0, I.Z)({
+                    }, B("iPadPro12"))), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPad Air (5th generation or higher)"
                     }, B("iPadAir"))), a.createElement("h6", {
                         className: "tw-mt-6"
@@ -476,13 +493,13 @@
                     }, "To participate in the iOS Beta channel on discord, please enter your discord name (optional)"), a.createElement("div", {
                         className: "tw-flex tw-items-center"
                     }, a.createElement(m.$1, {
-                        icon: j.IB,
+                        icon: z.IB,
                         size: "2x"
                     }), a.createElement(m.II, {
                         className: "tw-flex-grow tw-ml-4",
                         placeholder: "Discord Name",
                         maxLength: 32,
-                        value: N,
+                        value: x,
                         onChange: function(e) {
                             return P(e.target.value)
                         }
@@ -490,154 +507,154 @@
                         className: "tw-mt-6",
                         onClick: function() {
                             k({
-                                betaName: J,
+                                betaName: Q,
                                 metadata: {
-                                    devices: w,
+                                    devices: f,
                                     isCreator: E,
-                                    discordName: N
+                                    discordName: x
                                 }
                             })
                         },
                         loading: S,
-                        disabled: 0 === w.length || S
+                        disabled: 0 === f.length || S
                     }, S ? "Submitting" : "Submit"), a.createElement(m.zx, {
                         neutral: !0,
                         className: "tw-mt-6",
                         disabled: S,
                         onClick: i
                     }, "Cancel")),
-                    M = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
-                        onClick: s
+                    A = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
+                        onClick: o
                     }, "Done"));
                 return a.createElement(m.u_, {
                     title: "VRChat iOS Closed Beta Application",
                     isVisible: n,
                     slim: !0,
-                    onClose: c ? s : i,
+                    onClose: c ? o : i,
                     onCloseFinished: i,
                     doNotCapitalize: !0
-                }, c ? M : L)
+                }, c ? A : M)
             };
-            var _ = n(87709),
-                U = ["title", "children", "dismissable", "onDismiss"];
-            const F = function(e) {
+            var F = n(87709),
+                W = ["title", "children", "dismissable", "onDismiss"];
+            const U = function(e) {
                 var t = e.title,
                     n = e.children,
                     r = e.dismissable,
                     i = void 0 === r || r,
-                    o = e.onDismiss,
-                    s = void 0 === o ? function() {} : o,
-                    l = (0, g.Z)(e, U);
-                return a.createElement(Y, l, a.createElement(q, null, a.createElement(V, null, t), n), i && a.createElement(W, {
-                    onClick: s,
-                    icon: _.faXmark,
+                    s = e.onDismiss,
+                    o = void 0 === s ? function() {} : s,
+                    l = (0, h.Z)(e, W);
+                return a.createElement(q, l, a.createElement(V, null, a.createElement(G, null, t), n), i && a.createElement(Y, {
+                    onClick: o,
+                    icon: F.faXmark,
                     size: "2x"
                 }))
             };
-            var Y = (0, k.Z)("div", {
+            var q = (0, O.Z)("div", {
                     target: "e1fo5i6a3"
                 })({
                     name: "i8aeo0",
                     styles: "display:flex;align-items:center;background-color:#20d1ed;color:#1a1a1a;padding:0.5rem 0;margin-bottom:1rem;border-radius:5px"
                 }),
-                q = (0, k.Z)("div", {
+                V = (0, O.Z)("div", {
                     target: "e1fo5i6a2"
                 })({
                     name: "tu59xn",
                     styles: "display:flex;flex-grow:1;flex-direction:column;justify-content:center;align-items:center"
                 }),
-                W = (0, k.Z)(m.$1, {
+                Y = (0, O.Z)(m.$1, {
                     target: "e1fo5i6a1"
                 })({
                     name: "nfd03i",
                     styles: "margin-right:1rem"
                 }),
-                V = (0, k.Z)("h4", {
+                G = (0, O.Z)("h4", {
                     target: "e1fo5i6a0"
                 })({
                     name: "h2wgvc",
                     styles: "margin:0;font-size:1.25rem"
                 }),
-                G = n(15832);
-            var J = "ios-closed-beta",
-                H = (0, k.Z)("a", {
+                J = n(15832);
+            var Q = "ios-closed-beta",
+                H = (0, O.Z)("a", {
                     target: "ercad9d0"
                 })({
                     name: "1nh6q2e",
                     styles: "color:#1a1a1a;cursor:pointer;text-decoration:underline"
                 });
             const $ = function() {
-                var e = (0, G._)("campaignsSeen", []),
-                    t = (0, f.Z)(e, 2),
+                var e = (0, J._)("campaignsSeen", []),
+                    t = (0, g.Z)(e, 2),
                     n = t[0],
                     r = t[1],
                     i = D({
-                        betaName: J
+                        betaName: Q
                     }),
-                    o = i.data,
-                    s = i.isFetching,
+                    s = i.data,
+                    o = i.isFetching,
                     l = i.isError,
                     c = i.error,
                     u = X({
-                        betaName: J
+                        betaName: Q
                     }),
-                    m = u.data,
-                    d = u.isFetching,
-                    w = u.isError,
-                    p = a.useState(n.includes(J)),
-                    g = (0, f.Z)(p, 2),
-                    h = g[0],
-                    E = g[1],
+                    d = u.data,
+                    m = u.isFetching,
+                    f = u.isError,
+                    v = a.useState(n.includes(Q)),
+                    p = (0, g.Z)(v, 2),
+                    h = p[0],
+                    E = p[1],
                     b = a.useState(!1),
-                    y = (0, f.Z)(b, 2),
-                    x = y[0],
-                    N = y[1],
+                    y = (0, g.Z)(b, 2),
+                    N = y[0],
+                    x = y[1],
                     P = a.useState(!1),
-                    Z = (0, f.Z)(P, 2),
+                    Z = (0, g.Z)(P, 2),
                     C = Z[0],
                     k = Z[1];
                 a.useEffect((function() {
                     C || h || l && 404 === c.status && k(!0)
-                }), [o, l, c]);
+                }), [s, l, c]);
                 var O = function() {
-                        r([].concat((0, v.Z)(n), [J])), E(!0)
+                        r([].concat((0, w.Z)(n), [Q])), E(!0)
                     },
-                    S = o && null != o.created_at;
-                return h || d || s || w || !m || !m.active || !C && S ? null : a.createElement(a.Fragment, null, a.createElement(R, {
-                    isOpen: x,
+                    S = s && null != s.created_at;
+                return h || m || o || f || !d || !d.active || !C && S ? null : a.createElement(a.Fragment, null, a.createElement(_, {
+                    isOpen: N,
                     cancelCallback: function() {
-                        return N(!1)
+                        return x(!1)
                     },
                     doneCallback: O,
                     completed: S
-                }), a.createElement(F, {
+                }), a.createElement(U, {
                     title: "LIMITED AVAILABILITY",
                     onDismiss: O
                 }, a.createElement("span", {
                     className: "tw-text-center tw-px-2"
                 }, "VRChat on iOS is Coming Soon! ", a.createElement(H, {
                     onClick: function() {
-                        return N(!0)
+                        return x(!0)
                     }
                 }, "Sign up to be a Closed Beta Tester"))))
             };
-            var Q = n(80646);
-            const K = function() {
-                var e, t = (0, c.XC)().data;
+            var K = n(80646);
+            const ee = function() {
+                var e, t = (0, u.XC)().data;
                 return a.useEffect((function() {
-                    (0, Q.j)("Web_Home")
-                }), []), a.createElement("div", null, a.createElement(A.Z, null, "Home"), a.createElement("div", {
+                    (0, K.j)("Web_Home")
+                }), []), a.createElement("div", null, a.createElement(I.Z, null, "Home"), a.createElement("div", {
                     className: "center-block"
                 }, a.createElement($, null), a.createElement("h2", {
                     className: "text-center",
                     style: {
                         marginBottom: "1.5rem"
                     }
-                }, "Greetings, ", null !== (e = null == t ? void 0 : t.displayName) && void 0 !== e ? e : "whoever you are", "!"), a.createElement(w, {
+                }, "Greetings, ", null !== (e = null == t ? void 0 : t.displayName) && void 0 !== e ? e : "whoever you are", "!"), a.createElement(v, {
                     className: "mt-3"
-                }), a.createElement(C, {
+                }), a.createElement(k, {
                     className: "mt-5"
-                }), a.createElement(L, {
+                }), a.createElement(A, {
                     className: "mt-5"
                 })))
             }
@@ -650,11 +667,11 @@
             var a = n(87462),
                 r = n(45697),
                 i = n.n(r),
-                o = n(67294),
-                s = n(96985),
+                s = n(67294),
+                o = n(96985),
                 l = function(e) {
                     var t;
-                    return o.createElement(s.uW, (0, a.Z)({
+                    return s.createElement(o.uW, (0, a.Z)({
                         fieldsList: ["occupants", "visits", "favorites", "updated_at"],
                         contentType: "world",
                         data: null !== (t = e.world) && void 0 !== t ? t : e.data
@@ -685,14 +702,14 @@
                 return function(e, t, n) {
                     t.prototype.isBetween = function(e, t, a, r) {
                         var i = n(e),
-                            o = n(t),
-                            s = "(" === (r = r || "()")[0],
+                            s = n(t),
+                            o = "(" === (r = r || "()")[0],
                             l = ")" === r[1];
-                        return (s ? this.isAfter(i, a) : !this.isBefore(i, a)) && (l ? this.isBefore(o, a) : !this.isAfter(o, a)) || (s ? this.isBefore(i, a) : !this.isAfter(i, a)) && (l ? this.isAfter(o, a) : !this.isBefore(o, a))
+                        return (o ? this.isAfter(i, a) : !this.isBefore(i, a)) && (l ? this.isBefore(s, a) : !this.isAfter(s, a)) || (o ? this.isBefore(i, a) : !this.isAfter(i, a)) && (l ? this.isAfter(s, a) : !this.isBefore(s, a))
                     }
                 }
             }()
         }
     }
 ]);
-//# sourceMappingURL=d54eb1d7b2e691dee93bdd25f7d3ed4125d1b1427a165537a962421af88b2b3c.js.map
+//# sourceMappingURL=99306d851c65534e2091cc92e73e7beb5878f590a0ec7322657a29df79530c53.js.map
