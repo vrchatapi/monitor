@@ -3,27 +3,27 @@
         24862: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, {
-                default: () => s
+                default: () => a
             });
             var n = r(54546),
                 o = r(67294),
                 c = r(96985),
                 l = ["./common.js", "./index.js"],
-                a = r(27285);
-            const s = function() {
+                s = r(27285);
+            const a = function() {
                 var e = (0, o.useMemo)((function() {
-                    return Object.fromEntries(Array.prototype.map.call(a.keys(), (function(e) {
+                    return Object.fromEntries(Array.prototype.map.call(s.keys(), (function(e) {
                         if (!l.includes(e)) {
                             var t = e.match(/\.\/(.+)\.js/),
                                 r = (0, n.Z)(t, 2),
                                 o = (r[0], r[1]);
                             if (!o) throw new Error("Failed to determine basename of ".concat(e, "..."));
-                            var c = a(e);
+                            var c = s(e);
                             if (!c.default) throw new Error("Missing default export in ".concat(e, "..."));
                             return [o, c.default]
                         }
                     })).filter(Boolean))
-                }), [a]);
+                }), [s]);
                 return o.createElement(o.Fragment, null, o.createElement(c.$4, null, "Icon Sampler"), o.createElement("h2", null, "Icon Sampler"), o.createElement("p", null, "This is a list of all the custom ", o.createElement("a", {
                     href: "https://fontawesome.com/"
                 }, "FontAwesome"), "-compatible icons we have included in Appedashi. They live in the repo at ", o.createElement("code", null, "src/common/icons"), "."), o.createElement("p", null, "Icons should be roughly square and contained within their boxes. If you hover over an icon and it expands past the outline, it will behave strangely in text and should be adjusted!"), o.createElement("p", null, "For more information on authoring custom icons, see ", o.createElement("a", {
@@ -79,6 +79,7 @@
                 "./vrcJoin.js": 76170,
                 "./vrcListingTypePermanent.js": 14825,
                 "./vrcPlus.js": 62898,
+                "./vrcPremium.js": 84841,
                 "./vrcPrint.js": 92177,
                 "./vrcProductKey.js": 81512,
                 "./vrcProductTicket.js": 49524,
@@ -109,4 +110,4 @@
         }
     }
 ]);
-//# sourceMappingURL=68e2a8cbadff70e7c6cfc0f69f33909c54fb541907411a10d0261cf67949bfcb.js.map
+//# sourceMappingURL=7c684322859a9b50d9e4ac292bf9d4a19268e9f13555981f5ba1a5884d421f71.js.map
