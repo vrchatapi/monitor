@@ -1445,7 +1445,7 @@
                 H = n(37024),
                 Q = n(17383),
                 ee = n(88081),
-                te = n(80646),
+                te = n(6281),
                 ne = n(64358),
                 re = n(42938);
 
@@ -1779,24 +1779,35 @@
                         ie = (0, m.Z)(oe, 2),
                         de = ie[0],
                         me = ie[1],
-                        fe = (0, Q.Tu)().user,
-                        pe = void 0 === fe ? null : fe,
-                        ge = !(null == pe || !pe.id),
-                        be = (0, Q.pc)() && !1,
-                        we = i.get("view"),
-                        ve = (0, r.useMemo)((function() {
-                            switch (we) {
+                        fe = (0, r.useMemo)((function() {
+                            return (0, te.sm)("default-calendar-mode", {
+                                value: "month"
+                            })
+                        }), []),
+                        pe = (0, Q.Tu)().user,
+                        ge = void 0 === pe ? null : pe,
+                        be = !(null == ge || !ge.id),
+                        we = (0, Q.pc)() && !1,
+                        ve = i.get("view"),
+                        he = (0, r.useMemo)((function() {
+                            var e;
+                            switch (ve) {
                                 case "day":
                                     return "timeGridDay";
                                 case "week":
                                     return "timeGridWeek";
+                                case "month":
+                                    return "dayGridMonth";
                                 default:
-                                    return "dayGridMonth"
+                                    return null !== (e = {
+                                        month: "dayGridMonth",
+                                        week: "timeGridWeek"
+                                    } [fe.value]) && void 0 !== e ? e : "dayGridMonth"
                             }
-                        }), [we]);
+                        }), [ve, fe]);
                     (0, r.useEffect)((function() {
                         (0, te.j)("Calendar_Open", {
-                            userId: null == pe ? void 0 : pe.id
+                            userId: null == ge ? void 0 : ge.id
                         });
                         var e = function() {
                                 return O(!0)
@@ -1823,41 +1834,41 @@
                                 }(o)) : void 0
                         }
                     }), [v]), (0, r.useEffect)((function() {}), [de]);
-                    var he = (0, ee.bT)({
+                    var Ee = (0, ee.bT)({
                             date: D,
-                            userId: null == pe ? void 0 : pe.id,
+                            userId: null == ge ? void 0 : ge.id,
                             eventSources: de.eventSources
                         }, {
-                            skip: null === pe
+                            skip: null === ge
                         }),
-                        Ee = he.data,
-                        xe = void 0 === Ee ? {
+                        xe = Ee.data,
+                        Ae = void 0 === xe ? {
                             events: [],
                             groups: []
-                        } : Ee,
-                        Ae = he.isFetching,
-                        Ce = he.isSuccess,
-                        ke = he.isError,
-                        Ne = he.error,
-                        Ie = (0, ee.bT)({
+                        } : xe,
+                        Ce = Ee.isFetching,
+                        ke = Ee.isSuccess,
+                        Ne = Ee.isError,
+                        Ie = Ee.error,
+                        Oe = (0, ee.bT)({
                             date: D.add(1, "month"),
-                            userId: null == pe ? void 0 : pe.id,
+                            userId: null == ge ? void 0 : ge.id,
                             eventSources: de.eventSources
                         }, {
-                            skip: null === pe || !B
+                            skip: null === ge || !B
                         }),
-                        Oe = Ie.data,
-                        je = void 0 === Oe ? {
+                        je = Oe.data,
+                        Ze = void 0 === je ? {
                             events: [],
                             groups: []
-                        } : Oe,
-                        Ze = Ie.isFetching,
-                        Be = Ie.isSuccess,
-                        Se = Ie.isError,
-                        Te = Ie.error;
+                        } : je,
+                        Be = Oe.isFetching,
+                        Se = Oe.isSuccess,
+                        Te = Oe.isError,
+                        Pe = Oe.error;
                     (0, r.useEffect)((function() {
-                        if (ke || Se) {
-                            var e, t, r = Ne || Te;
+                        if (Ne || Te) {
+                            var e, t, r = Ie || Pe;
                             n((0, Y.d)({
                                 title: "Failed to get calendar events",
                                 message: null !== (e = null == r || null === (t = r.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Unknown Error",
@@ -1865,8 +1876,8 @@
                                 timeout: 5e3
                             }))
                         }
-                    }), [ke, Se]);
-                    var Pe = function(e) {
+                    }), [Ne, Te]);
+                    var De = function(e) {
                             var t = u()(e.endsAt).diff(u()(e.startsAt), "day") > 0;
                             return qe(qe({}, e), {}, {
                                 id: e.id,
@@ -1875,14 +1886,14 @@
                                 allDay: t
                             })
                         },
-                        De = function() {
+                        Me = function() {
                             return qe({
                                 searchTerm: f
                             }, de)
                         },
-                        Me = (0, r.useMemo)((function() {
-                            var e = xe.events,
-                                t = je.events,
+                        Re = (0, r.useMemo)((function() {
+                            var e = Ae.events,
+                                t = Ze.events,
                                 n = B ? [].concat((0, W.Z)(e), (0, W.Z)(t)) : e;
                             return n && 0 !== n.length ? {
                                 eventSources: ue.o9.map((function(e) {
@@ -1922,16 +1933,16 @@
                                 languages: [],
                                 groups: []
                             }
-                        }), [xe, je, B]),
-                        Re = (0, r.useMemo)((function() {
-                            var e = xe.events,
-                                t = je.events,
+                        }), [Ae, Ze, B]),
+                        Ue = (0, r.useMemo)((function() {
+                            var e = Ae.events,
+                                t = Ze.events,
                                 n = B ? [].concat((0, W.Z)(e), (0, W.Z)(t)) : e;
                             if (!n || 0 === n.length) return [];
-                            var r = De();
-                            if (null === r) return n.map(Pe);
+                            var r = Me();
+                            if (null === r) return n.map(De);
                             return n.filter((function(e) {
-                                return !(!e || !e.id) && (!(e.deletedAt && !be) && (!("" !== r.searchTerm && !e.title.toLowerCase().includes(r.searchTerm.toLowerCase()) && !e.description.toLowerCase().includes(r.searchTerm.toLowerCase())) && (!(r.accessTypes.length > 0 && !r.accessTypes.includes(e.accessType)) && (!(r.categories.length > 0 && !r.categories.includes(e.category)) && (!(r.days.length > 0 && (t = {
+                                return !(!e || !e.id) && (!(e.deletedAt && !we) && (!("" !== r.searchTerm && !e.title.toLowerCase().includes(r.searchTerm.toLowerCase()) && !e.description.toLowerCase().includes(r.searchTerm.toLowerCase())) && (!(r.accessTypes.length > 0 && !r.accessTypes.includes(e.accessType)) && (!(r.categories.length > 0 && !r.categories.includes(e.category)) && (!(r.days.length > 0 && (t = {
                                     title: e.title,
                                     daysOfWeek: r.days,
                                     start: e.startsAt,
@@ -1953,8 +1964,8 @@
                                     return e.languages.includes(t)
                                 }))) && !(r.groups.length > 0 && !r.groups.includes(e.ownerId)))))))));
                                 var t, n, a, o, i, l
-                            })).map(Pe)
-                        }), [f, xe, je, B, de]);
+                            })).map(De)
+                        }), [f, Ae, Ze, B, de]);
                     (0, r.useImperativeHandle)(t, (function() {
                         return {
                             updateCalendarSize: function() {
@@ -1965,20 +1976,20 @@
                             }
                         }
                     }), []);
-                    var Ue = function(e) {
+                    var Ge = function(e) {
                             var t;
                             O(!0);
                             var n = p.current.getApi(),
                                 r = null !== (t = e.date) && void 0 !== t ? t : e;
                             e.date && r.setMinutes(r.getMinutes() + r.getTimezoneOffset()), n.changeView("timeGridDay", r)
                         },
-                        Ge = Ae || B && Ze,
-                        We = function(e) {
+                        We = Ce || B && Be,
+                        Le = function(e) {
                             return {
                                 eventId: e.id,
                                 ownerId: e.ownerId,
-                                userId: null == pe ? void 0 : pe.id,
-                                isUserLoggedIn: ge,
+                                userId: null == ge ? void 0 : ge.id,
+                                isUserLoggedIn: be,
                                 eventName: e.title,
                                 eventLink: window.apiUrl("/home/group/event/".concat(e.ownerId, "/").concat(e.id)),
                                 eventStartTime: e.startsAt,
@@ -1992,9 +2003,9 @@
                                 eventTags: e.tags
                             }
                         },
-                        Le = (0, r.useMemo)((function() {
-                            return B ? [].concat((0, W.Z)(xe.groups), (0, W.Z)(je.groups)) : xe.groups
-                        }), [xe, je, B]);
+                        $e = (0, r.useMemo)((function() {
+                            return B ? [].concat((0, W.Z)(Ae.groups), (0, W.Z)(Ze.groups)) : Ae.groups
+                        }), [Ae, Ze, B]);
                     return r.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, r.createElement(C.$4, null, "Calendar"), r.createElement("div", {
@@ -2008,16 +2019,16 @@
                     }, r.createElement(C.$1, {
                         icon: F.r8,
                         className: "tw-mr-1"
-                    }), " Create Event")), Ge && r.createElement("div", {
+                    }), " Create Event")), We && r.createElement("div", {
                         className: " tw-w-full tw-h-full  tw-left-0 tw-top-0 tw-absolute  tw-flex tw-justify-center tw-items-center tw-bg-dark-grey-transparent tw-z-10 "
                     }, r.createElement(K.Z, {
                         loading: !0
                     })), r.createElement("div", {
                         className: "tw-mb-10 tw-bg-[#181b1f] tw-rounded tw-p-5 fc tw-relative"
-                    }, Ce && (!B || Be) && r.createElement(r.Fragment, null, r.createElement("div", {
+                    }, ke && (!B || Se) && r.createElement(r.Fragment, null, r.createElement("div", {
                         className: "tw-flex tw-justify-between tw-flex-row"
                     }, r.createElement(ce.Z, {
-                        possibleFilters: Me,
+                        possibleFilters: Re,
                         onFilterChangeCallBack: function(e) {
                             return function(e) {
                                 if (e.isChecked) {
@@ -2032,7 +2043,7 @@
                                 }
                             }(e)
                         },
-                        userGroups: Le,
+                        userGroups: $e,
                         dropdownFilterValues: de
                     }), r.createElement(C.II, {
                         "aria-label": "Search by event name or url",
@@ -2050,8 +2061,8 @@
                     })), r.createElement("div", {
                         className: "tw-min-h-[70px] tw-transition-all"
                     }, r.createElement(le, {
-                        userGroups: Le,
-                        filters: De(),
+                        userGroups: $e,
+                        filters: Me(),
                         filterRemoveCallback: function(e) {
                             if (null === e) return me(ze);
                             var t = de[e.dataKey].filter((function(t) {
@@ -2062,9 +2073,9 @@
                     }))), r.createElement(X.Z, {
                         ref: p,
                         plugins: [_.Z, J.Z],
-                        initialView: ve,
+                        initialView: he,
                         showNonCurrentDates: !1,
-                        events: Re,
+                        events: Ue,
                         dayMaxEventRows: !0,
                         displayEventTime: !1,
                         nowIndicator: !0,
@@ -2074,6 +2085,7 @@
                         contentHeight: 900,
                         viewDidMount: function(e) {
                             var t, n = e.el;
+                            e._view;
                             (t = n).querySelector(".fc-scrollgrid").style.border = "none", t.querySelector(".fc-theme-standard th").style.border = "none", t.querySelector(".fc-scrollgrid-section-liquid > td").style.border = "1px solid var(--fc-border-color)", t.querySelector(".fc-scrollgrid-section-liquid > td").style.borderRadius = "8px"
                         },
                         eventClassNames: function() {
@@ -2086,15 +2098,15 @@
                             right: "dayGridMonth,timeGridWeek,timeGridDay"
                         },
                         navLinks: !0,
-                        navLinkDayClick: Ue,
+                        navLinkDayClick: Ge,
                         eventClick: function(e) {
                             var t = e.event,
                                 n = (e.el, e.jsEvent),
                                 r = (e.view, t.toPlainObject()),
                                 a = qe(qe({}, r), r.extendedProps);
-                            O(!1), h(n), A(a), (0, te.j)("Event_Previewed", We(a))
+                            O(!1), h(n), A(a), (0, te.j)("Event_Previewed", Le(a))
                         },
-                        moreLinkClick: Ue,
+                        moreLinkClick: Ge,
                         datesSet: function(e) {
                             var t = e.view,
                                 n = u()(t.currentStart).startOf("month").add(1, "day"),
@@ -4107,7 +4119,7 @@
                 m = n(32981),
                 f = n(79655),
                 p = n(30098),
-                g = n(80646),
+                g = n(6281),
                 b = n(62437),
                 w = n(54546),
                 v = n(42137),
@@ -5447,4 +5459,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1b3517910cee9760dd9e2082a57f297ad29fff40ac97693a0047f6e0ac36fafa.js.map
+//# sourceMappingURL=1bc786c6d4cec1c8b60979d560f1fa953dd11938f1bcba35bdff9f5ccdd075ba.js.map
