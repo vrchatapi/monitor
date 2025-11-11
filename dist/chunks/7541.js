@@ -88,7 +88,7 @@
         },
         77541: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => Vt
+                default: () => $t
             });
             var a = n(67294),
                 r = n(96985),
@@ -119,10 +119,10 @@
                     N = (0, i.Z)(k, 2),
                     C = N[0],
                     S = N[1],
-                    T = function() {
+                    O = function() {
                         Z(!1), S(!1)
                     },
-                    O = function() {
+                    T = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             var n, a, r;
                             return m().wrap((function(e) {
@@ -162,12 +162,12 @@
                     confirmCallback: function() {
                         Z(!1), S(!0)
                     },
-                    cancelCallback: T,
+                    cancelCallback: O,
                     isOpen: x
                 }), a.createElement(r.sm, {
                     headerText: "Are You Really Sure?",
-                    confirmCallback: O,
-                    cancelCallback: T,
+                    confirmCallback: T,
+                    cancelCallback: O,
                     isOpen: C
                 }, a.createElement("p", null, "Are you absolutely sure? Again, this is permanent and non-reversible. VRChat cannot recover your account once this is complete."), a.createElement("p", null, "If you click OK, your account will be queued for deletion. After 14 days, your account will be deleted. All content that has been uploaded on this account will be deleted. Any VRC+ subscriptions will be immediately canceled regardless of the 14 day grace period."), a.createElement("p", null, "If you log into VRChat Home or the VRChat application during this time, the deletion will be canceled. However if you previously had a VRC+ subscription you will need to re-subscribe once the canceled subscription expires")), g && a.createElement(r.u_, {
                     isVisible: !0,
@@ -203,8 +203,8 @@
                 N = n(60766),
                 C = n(22202),
                 S = n(40219),
-                T = n(57672),
-                O = n(79655),
+                O = n(57672),
+                T = n(79655),
                 P = "link_discord",
                 A = "unlink_discord";
             const D = function(e) {
@@ -223,7 +223,7 @@
                     F = D[1],
                     R = (0, d.s0)(),
                     j = (0, p.I0)(),
-                    z = (0, O.lr)(),
+                    z = (0, T.lr)(),
                     U = (0, i.Z)(z, 2),
                     q = U[0],
                     V = (U[1], (0, C.Z9)()),
@@ -265,7 +265,7 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return o = e.t0.data, i = (0, T.y)(o), c = {
+                                        return o = e.t0.data, i = (0, O.y)(o), c = {
                                             redirectTo: "/home/profile",
                                             scope: o.scope,
                                             ticket: o.ticket,
@@ -701,7 +701,7 @@
                     }))
                 };
             const re = function() {
-                var e, t, n, l, o = (0, O.lr)(),
+                var e, t, n, l, o = (0, T.lr)(),
                     c = (0, i.Z)(o, 2),
                     s = c[0],
                     u = (c[1], (0, a.useState)("owner")),
@@ -722,7 +722,7 @@
                     N = x.claimInfo,
                     C = x.setClaimInfo,
                     S = x.ownerInfo,
-                    T = x.setFormError,
+                    O = x.setFormError,
                     P = x.setFormSuccess,
                     A = (null == g ? void 0 : g.owner) && (null == g ? void 0 : g.accurate) && (null == g ? void 0 : g.perjury) && (null == g ? void 0 : g.liability) && (null == g ? void 0 : g.abuse),
                     D = (null == N || null === (e = N.description) || void 0 === e ? void 0 : e.length) > 0 && (null == N || null === (t = N.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == N || null === (n = N.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
@@ -742,7 +742,7 @@
                     }))
                 }), []), (0, a.useEffect)((function() {
                     var e;
-                    z && ($(), T("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                    z && ($(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
                 }), [z, U]), (0, a.useEffect)((function() {
                     V && ($(), P(!0))
                 }), [V]);
@@ -1138,7 +1138,7 @@
                     width: "100%"
                 };
             const ge = function() {
-                var e = (0, O.lr)(),
+                var e = (0, T.lr)(),
                     t = (0, i.Z)(e, 2),
                     n = t[0],
                     l = t[1],
@@ -1183,59 +1183,59 @@
                 Ne = n(8860),
                 Ce = n(98185),
                 Se = n(5513),
-                Te = n(8698),
-                Oe = function(e) {
+                Oe = n(8698),
+                Te = function(e) {
                     return e.currentUser.checkDisplayName.isLoading
                 },
                 Pe = function(e) {
                     var t;
                     return (null === (t = e.currentUser.databaseUser) || void 0 === t ? void 0 : t.pastDisplayNames) || null
                 },
-                Ae = (0, Te.P1)(Oe, (function(e) {
+                Ae = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !1 === t && null !== n
                 })),
-                De = (0, Te.P1)(Oe, (function(e) {
+                De = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !0 === t && null !== n
                 })),
-                Ie = (0, Te.P1)(Oe, (function(e) {
+                Ie = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }), (function(e, t, n) {
                     return !1 === e && null !== t && !0 === n
                 })),
-                Fe = (0, Te.P1)(Oe, (function(e) {
+                Fe = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }), (function(e, t, n) {
                     return !1 === e && null !== t && !1 === n
                 })),
-                Re = (0, Te.P1)(Pe, (function(e) {
+                Re = (0, Oe.P1)(Pe, (function(e) {
                     return null !== e && e.length > 0
                 })),
-                je = (0, Te.P1)(Re, Pe, (function(e, t) {
+                je = (0, Oe.P1)(Re, Pe, (function(e, t) {
                     return e && t.reduce((function(e, t) {
                         return Ze()(t.updated_at) > Ze()(e.updated_at) ? t : e
                     }), {
                         updated_at: 0
                     })
                 })),
-                ze = (0, Te.P1)(Pe, je, (function(e, t) {
+                ze = (0, Oe.P1)(Pe, je, (function(e, t) {
                     return null !== e && t.updated_at
                 })),
-                Ue = (0, Te.P1)(Pe, je, (function(e, t) {
+                Ue = (0, Oe.P1)(Pe, je, (function(e, t) {
                     return null !== e && t.displayName
                 })),
-                qe = (0, Te.P1)(Pe, je, (function(e, t) {
+                qe = (0, Oe.P1)(Pe, je, (function(e, t) {
                     return null !== e && !!t.reverted
                 })),
                 Ve = n(76938),
@@ -1363,8 +1363,8 @@
                         N = x[1],
                         C = (0, a.useState)(!1),
                         S = (0, i.Z)(C, 2),
-                        T = S[0],
-                        O = S[1];
+                        O = S[0],
+                        T = S[1];
                     (0, a.useEffect)((function() {
                         return N("" === v || f !== n)
                     }), [v, f]);
@@ -1384,7 +1384,7 @@
                                         t(), e.next = 13;
                                         break;
                                     case 6:
-                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (a = null === (r = e.t0.response) || void 0 === r || null === (r = r.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== a ? a : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), O(!1), l((0, h.d)({
+                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (a = null === (r = e.t0.response) || void 0 === r || null === (r = r.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== a ? a : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), T(!1), l((0, h.d)({
                                             title: "Failed to revert display name",
                                             icon: s.eH,
                                             message: i,
@@ -1433,7 +1433,7 @@
                     }), a.createElement(Z.Z, {
                         className: "me-2",
                         onClick: function() {
-                            return O(!0)
+                            return T(!0)
                         },
                         disabled: k,
                         color: "primary"
@@ -1445,9 +1445,9 @@
                         bodyText: "✋ Stop! You will not be able to change your name for 90 days after reverting your name. Are you sure you want to revert your display name? ",
                         confirmCallback: P,
                         cancelCallback: function() {
-                            return O(!1)
+                            return T(!1)
                         },
-                        isOpen: T
+                        isOpen: O
                     }))
                 };
             nt.propTypes = {
@@ -1467,12 +1467,12 @@
                     E = d.isSuccess,
                     v = (0, p.v9)(Ae),
                     y = (0, p.v9)(Ie),
-                    k = (0, p.v9)(Oe),
+                    k = (0, p.v9)(Te),
                     N = (0, p.v9)(Re),
                     C = (0, p.v9)(qe),
                     S = (0, p.v9)(Ve.y),
-                    T = (0, p.v9)(ze),
-                    O = (0, p.v9)(Ue),
+                    O = (0, p.v9)(ze),
+                    T = (0, p.v9)(Ue),
                     P = (0, p.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
@@ -1511,8 +1511,8 @@
                     ue = (0, l.Nr)(ee),
                     me = v && y && "" !== ue;
                 if ((0, a.useEffect)((function() {
-                        S ? F(!0) : N && Ze()().diff(T, "days") < 90 ? F(!1) : F(!0)
-                    }), [T]), (0, a.useEffect)((function() {
+                        S ? F(!0) : N && Ze()().diff(O, "days") < 90 ? F(!1) : F(!0)
+                    }), [O]), (0, a.useEffect)((function() {
                         "" !== ue ? ue.length < 4 ? X("That name is too short.") : ue.length > 15 ? X("That name is too long.") : (X(null), L(""), n((0, Se.Zm)({
                             displayName: ue,
                             userId: P.id
@@ -1523,7 +1523,7 @@
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (ce) return a.createElement(at, {
-                    previousDisplayName: O,
+                    previousDisplayName: T,
                     exitRevertCallback: function() {
                         return se(!1)
                     }
@@ -1564,7 +1564,7 @@
                 }, a.createElement(ke.Z, null, a.createElement(Qe, {
                     canRevertDisplayName: pe,
                     showLastDisplayNameChange: !I,
-                    numberOfDays: Ze()().diff(T, "days")
+                    numberOfDays: Ze()().diff(O, "days")
                 }), a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "1",
                     style: {
@@ -1597,7 +1597,7 @@
                     displayNameAvailable: v,
                     displayNameValue: ee,
                     isRevert: !1,
-                    latestChangedDate: T,
+                    latestChangedDate: O,
                     displayNameChecking: k,
                     validationError: K,
                     displayNameChanged: E
@@ -1719,9 +1719,9 @@
                     N = a.useState(!1),
                     C = (0, i.Z)(N, 2),
                     S = C[0],
-                    T = C[1],
-                    O = (0, f.$h)(),
-                    P = (0, i.Z)(O, 2),
+                    O = C[1],
+                    T = (0, f.$h)(),
+                    P = (0, i.Z)(T, 2),
                     A = P[0],
                     D = P[1],
                     I = D.isLoading,
@@ -1786,7 +1786,7 @@
                         p(e.target.value)
                     };
                 return a.useEffect((function() {
-                    S || "" === d && "" === w && "" === Z || T(!0)
+                    S || "" === d && "" === w && "" === Z || O(!0)
                 }), [d, w, Z]), a.createElement(Ce.Z, {
                     loading: I
                 }, a.createElement("div", {
@@ -1920,8 +1920,8 @@
                     k = y.reset,
                     N = a.useState(!1),
                     S = (0, i.Z)(N, 2),
-                    T = S[0],
-                    O = S[1],
+                    O = S[0],
+                    T = S[1],
                     P = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
@@ -1936,7 +1936,7 @@
                                     case 5:
                                         return e.prev = 5, e.t0 = e.catch(0), e.abrupt("return");
                                     case 8:
-                                        O(!1), n((0, h.d)({
+                                        T(!1), n((0, h.d)({
                                             title: "All User Data Reset",
                                             icon: st.iC,
                                             message: "Your user data has been reset in all worlds you've visited. Rejoin worlds for changes to take effect.",
@@ -1959,7 +1959,7 @@
                 return a.createElement(a.Fragment, null, a.createElement("p", null, "Reset your saved user data in all worlds you've visited (to reset a specific world's user data, visit that world's page)."), a.createElement(r.zx, {
                     type: "button",
                     onClick: function() {
-                        O(!0)
+                        T(!0)
                     },
                     danger: !0
                 }, a.createElement(r.$1, {
@@ -1970,9 +1970,9 @@
                     confirmCallback: P,
                     cancelText: "Cancel",
                     cancelCallback: function() {
-                        O(!1), k()
+                        T(!1), k()
                     },
-                    isOpen: T,
+                    isOpen: O,
                     isLoading: b
                 }, a.createElement("p", null, A), a.createElement("p", null, "Are you sure you want to reset? This cannot be undone."), x && a.createElement(r.qX, {
                     type: "error",
@@ -1981,60 +1981,87 @@
                 }, (null == Z || null === (t = Z.data) || void 0 === t ? void 0 : t.error.message) || "An unknown error occurred while resetting your user data.")))
             };
             var mt = n(21707);
-            const dt = function() {
-                var e = (0, a.useState)(null),
-                    t = (0, i.Z)(e, 2),
-                    n = t[0],
-                    l = t[1],
-                    o = function() {
+            var dt = (0, c.Z)("div", {
+                target: "e1a02i090"
+            })({
+                name: "1qck9b",
+                styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
+            });
+            const pt = function(e) {
+                var t, n = e.user,
+                    l = (n || {}).hasSharedConnectionsOptOut,
+                    o = (0, a.useState)(null),
+                    c = (0, i.Z)(o, 2),
+                    s = c[0],
+                    u = c[1],
+                    m = (0, f.PY)(),
+                    d = (0, i.Z)(m, 2),
+                    p = d[0],
+                    h = d[1],
+                    g = h.isError,
+                    w = h.error,
+                    E = function() {
                         try {
                             window.OneTrust.ToggleInfoDisplay()
                         } catch (e) {
-                            l("OneTrust not loaded. Disable your ad blocker and refresh the page to try again.")
+                            u("OneTrust not loaded. Disable your ad blocker and refresh the page to try again.")
                         }
                     };
-                return (0, a.useEffect)((function() {
-                    return window.addEventListener("OneTrustGroupsUpdated", o),
+                (0, a.useEffect)((function() {
+                    return window.addEventListener("OneTrustGroupsUpdated", E),
                         function() {
-                            window.removeEventListener("OneTrustGroupsUpdated", o)
+                            window.removeEventListener("OneTrustGroupsUpdated", E)
                         }
-                }), []), a.createElement("div", {
+                }), []);
+                var v = g ? (null == w || null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "An error occurred while updating your shared connections setting." : s;
+                return a.createElement("div", {
                     className: "center-panel"
                 }, a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "10",
                     className: "mx-0 mb-2"
-                }, "Manage your cookie settings and consent preferences.")), n ? a.createElement(_.Z, {
+                }, "Manage your cookie settings and consent preferences.")), v ? a.createElement(_.Z, {
                     className: "warning"
                 }, a.createElement(r.$1, {
                     icon: mt.e7
-                }), " ", n) : a.createElement(b.Z, null, a.createElement(x.Z, {
+                }), " ", s) : a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "10"
                 }, a.createElement(Z.Z, {
                     type: "button",
                     color: "primary",
-                    onClick: o
-                }, "Change Privacy Settings"))))
+                    onClick: E
+                }, "Change Privacy Settings"))), a.createElement(dt, {
+                    className: "mt-3"
+                }, a.createElement(Y.Z, {
+                    label: "Show Mutual Friend Connections",
+                    defaultChecked: !l,
+                    onChangeCallback: function() {
+                        return p({
+                            hasSharedConnectionsOptOut: !l,
+                            userId: n.id
+                        })
+                    }
+                })))
             };
-            var pt = n(15671),
-                ft = n(43144),
-                ht = n(97326),
-                gt = n(60136),
-                wt = n(82963),
-                Et = n(61120),
-                vt = n(85020),
-                yt = n(65394),
-                bt = n(2909),
-                xt = n(32966),
-                Zt = n(50906),
-                kt = n(45432),
-                Nt = n(74855),
-                Ct = n(53637),
-                St = n(12611),
+            var ft = n(15671),
+                ht = n(43144),
+                gt = n(97326),
+                wt = n(60136),
+                Et = n(82963),
+                vt = n(61120),
+                yt = n(85020),
+                bt = n(65394),
+                xt = n(2909),
+                Zt = n(32966),
+                kt = n(50906),
+                Nt = n(45432),
+                Ct = n(74855),
+                St = n(53637),
+                Ot = n(12611),
                 Tt = n(37549),
-                Ot = n(9669),
-                Pt = n.n(Ot);
+                Pt = n(9669),
+                At = n.n(Pt);
 
-            function At(e, t) {
+            function Dt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -2045,7 +2072,7 @@
                 return n
             }
 
-            function Dt(e) {
+            function It(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2057,20 +2084,20 @@
                     }
                 }();
                 return function() {
-                    var n, a = (0, Et.Z)(e);
+                    var n, a = (0, vt.Z)(e);
                     if (t) {
-                        var r = (0, Et.Z)(this).constructor;
+                        var r = (0, vt.Z)(this).constructor;
                         n = Reflect.construct(a, arguments, r)
                     } else n = a.apply(this, arguments);
-                    return (0, wt.Z)(this, n)
+                    return (0, Et.Z)(this, n)
                 }
             }
-            var It = "https://docs.vrchat.com/docs/setup-2fa",
-                Ft = function(e) {
+            var Ft = "https://docs.vrchat.com/docs/setup-2fa",
+                Rt = function(e) {
                     return "".concat(e.substr(0, 4), "-").concat(e.substr(4, 8))
                 },
-                Rt = "otpDownload",
-                jt = {
+                jt = "otpDownload",
+                zt = {
                     code: "",
                     isCodeReady: !1,
                     isPreviousSubmissionRelevant: !1,
@@ -2080,13 +2107,13 @@
                     forgetOtpTimeout: null,
                     step: 0
                 },
-                zt = function(e) {
-                    (0, gt.Z)(n, e);
-                    var t = Dt(n);
+                Ut = function(e) {
+                    (0, wt.Z)(n, e);
+                    var t = It(n);
 
                     function n(e) {
                         var r;
-                        return (0, pt.Z)(this, n), r = t.call(this, e), (0, G.Z)((0, ht.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
+                        return (0, ft.Z)(this, n), r = t.call(this, e), (0, G.Z)((0, gt.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
                             var t, n, a;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2101,7 +2128,7 @@
                                             forgetOtpTimeout: t
                                         }), e.prev = 3, e.next = 6, r.props.dispatch({
                                             type: "TWOFACTORAUTH_GET_OTP",
-                                            payload: Pt().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
+                                            payload: At().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
                                         });
                                     case 6:
                                         a = e.sent, (null === (n = a.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && r.props.router.navigate("/home/twofactorauth", {
@@ -2119,7 +2146,7 @@
                             }), e, null, [
                                 [3, 10]
                             ])
-                        })))), (0, G.Z)((0, ht.Z)(r), "disable", function() {
+                        })))), (0, G.Z)((0, gt.Z)(r), "disable", function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
                                 var n, a;
                                 return m().wrap((function(e) {
@@ -2127,7 +2154,7 @@
                                         case 0:
                                             return t.preventDefault(), e.prev = 1, e.next = 4, r.props.dispatch({
                                                 type: "TWOFACTORAUTH_REMOVE",
-                                                payload: Pt().delete(window.apiUrl("/api/1/auth/twofactorauth"))
+                                                payload: At().delete(window.apiUrl("/api/1/auth/twofactorauth"))
                                             });
                                         case 4:
                                             a = e.sent, (null === (n = a.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && r.props.router.navigate("/home/twofactorauth", {
@@ -2152,16 +2179,16 @@
                         }()), r.state = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? At(Object(n), !0).forEach((function(t) {
+                                t % 2 ? Dt(Object(n), !0).forEach((function(t) {
                                     (0, G.Z)(e, t, n[t])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : At(Object(n)).forEach((function(t) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Dt(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
                             }
                             return e
-                        }({}, jt), r.ref = a.createRef(), r.enable = r.enable.bind((0, ht.Z)(r)), r.renderSetup = r.renderSetup.bind((0, ht.Z)(r)), r.renderStatus = r.renderStatus.bind((0, ht.Z)(r)), r.handleChangeVerifyCode = r.handleChangeVerifyCode.bind((0, ht.Z)(r)), r.handleVerifyPendingSecret = r.handleVerifyPendingSecret.bind((0, ht.Z)(r)), r.isSettingUp = r.isSettingUp.bind((0, ht.Z)(r)), r.cancelSecret = r.cancelSecret.bind((0, ht.Z)(r)), r.showTextKey = r.showTextKey.bind((0, ht.Z)(r)), r.goToStep0 = r.goToStep0.bind((0, ht.Z)(r)), r.goToStep1 = r.goToStep1.bind((0, ht.Z)(r)), r.goToStep2 = r.goToStep2.bind((0, ht.Z)(r)), r.toggleOneTimePasswordsShown = r.toggleOneTimePasswordsShown.bind((0, ht.Z)(r)), r.hasOneTimePasswords = r.hasOneTimePasswords.bind((0, ht.Z)(r)), r.getOneTimePasswordHref = r.getOneTimePasswordHref.bind((0, ht.Z)(r)), r.downloadOneTimePasswords = r.downloadOneTimePasswords.bind((0, ht.Z)(r)), r.triggerOtpDownloadLink = r.triggerOtpDownloadLink.bind((0, ht.Z)(r)), r
+                        }({}, zt), r.ref = a.createRef(), r.enable = r.enable.bind((0, gt.Z)(r)), r.renderSetup = r.renderSetup.bind((0, gt.Z)(r)), r.renderStatus = r.renderStatus.bind((0, gt.Z)(r)), r.handleChangeVerifyCode = r.handleChangeVerifyCode.bind((0, gt.Z)(r)), r.handleVerifyPendingSecret = r.handleVerifyPendingSecret.bind((0, gt.Z)(r)), r.isSettingUp = r.isSettingUp.bind((0, gt.Z)(r)), r.cancelSecret = r.cancelSecret.bind((0, gt.Z)(r)), r.showTextKey = r.showTextKey.bind((0, gt.Z)(r)), r.goToStep0 = r.goToStep0.bind((0, gt.Z)(r)), r.goToStep1 = r.goToStep1.bind((0, gt.Z)(r)), r.goToStep2 = r.goToStep2.bind((0, gt.Z)(r)), r.toggleOneTimePasswordsShown = r.toggleOneTimePasswordsShown.bind((0, gt.Z)(r)), r.hasOneTimePasswords = r.hasOneTimePasswords.bind((0, gt.Z)(r)), r.getOneTimePasswordHref = r.getOneTimePasswordHref.bind((0, gt.Z)(r)), r.downloadOneTimePasswords = r.downloadOneTimePasswords.bind((0, gt.Z)(r)), r.triggerOtpDownloadLink = r.triggerOtpDownloadLink.bind((0, gt.Z)(r)), r
                     }
-                    return (0, ft.Z)(n, [{
+                    return (0, ht.Z)(n, [{
                         key: "componentDidUpdate",
                         value: function() {
                             this.state.isWaitingToDownloadOtp && this.hasOneTimePasswords() && (this.triggerOtpDownloadLink(), this.setState({
@@ -2192,7 +2219,7 @@
                                 code: this.state.code
                             }, n = t.code, {
                                 type: "TWOFACTORAUTH_VERIFY_PENDING_SECRET",
-                                payload: Pt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
+                                payload: At().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
                                     code: n
                                 })
                             }))), e.preventDefault()
@@ -2205,7 +2232,7 @@
                             return this.hasOneTimePasswords() && (t = "".concat("VRChat Two-Factor Authentication recovery codes\n===============================================\n\nYou can use these to log in, in case you lose access to your authenticator app codes. \n\nYou can only use each recovery code once.\n\nKeep these safe and secure! Printing them out is a very good idea.\n\n").concat(e.otp.filter((function(e) {
                                 return !e.used
                             })).map((function(e) {
-                                return "".concat(Ft(e.code), "\n")
+                                return "".concat(Rt(e.code), "\n")
                             })).join(""))), "data:text/plain;charset=utf-8,".concat(encodeURIComponent(t))
                         }
                     }, {
@@ -2216,17 +2243,17 @@
                     }, {
                         key: "enable",
                         value: function(e) {
-                            e.preventDefault(), this.setState(jt), this.props.dispatch({
+                            e.preventDefault(), this.setState(zt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_GET_PENDING_SECRET",
-                                payload: Pt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: At().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
                         key: "cancelSecret",
                         value: function(e) {
-                            e.preventDefault(), this.setState(jt), this.props.dispatch({
+                            e.preventDefault(), this.setState(zt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_REMOVE_PENDING_SECRET",
-                                payload: Pt().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: At().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
@@ -2282,7 +2309,7 @@
                     }, {
                         key: "triggerOtpDownloadLink",
                         value: function() {
-                            document.getElementById(Rt).click(), this.setState({
+                            document.getElementById(jt).click(), this.setState({
                                 isWaitingToDownloadOtp: !1
                             })
                         }
@@ -2297,16 +2324,16 @@
                                     if (n) {
                                         var t = e.getOneTimePasswordHref();
                                         return a.createElement("div", null, a.createElement("div", null, a.createElement("p", null, a.createElement(r.$1, {
-                                            icon: kt.a3,
+                                            icon: Nt.a3,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
                                             }
                                         }), "You are protecting your account with an additional login step.", " ", a.createElement("a", {
-                                            href: It,
+                                            href: Ft,
                                             target: "_blank",
                                             rel: "noreferrer"
-                                        }, "Help")), a.createElement("p", null, a.createElement(St.Z, {
+                                        }, "Help")), a.createElement("p", null, a.createElement(Ot.Z, {
                                             onClick: e.disable,
                                             color: "primary",
                                             loading: l.isAwaitingRemove
@@ -2324,18 +2351,18 @@
                                             style: {
                                                 marginRight: "0.5em"
                                             }
-                                        }, a.createElement(St.Z, {
+                                        }, a.createElement(Ot.Z, {
                                             onClick: e.toggleOneTimePasswordsShown,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
-                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), a.createElement("span", null, a.createElement(St.Z, {
+                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), a.createElement("span", null, a.createElement(Ot.Z, {
                                             onClick: e.downloadOneTimePasswords,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
                                         }, "Download recovery codes")), a.createElement("a", {
-                                            id: Rt,
+                                            id: jt,
                                             href: t,
                                             download: "VRChatRecovery.txt",
                                             style: {
@@ -2344,10 +2371,10 @@
                                         }, "Download recovery link"))))
                                     }
                                     return a.createElement("div", null, a.createElement("p", null, "Enable two-factor authentication to protect your account with an additional login step.", " ", a.createElement("a", {
-                                        href: It,
+                                        href: Ft,
                                         target: "_blank",
                                         rel: "noreferrer"
-                                    }, "Learn more")), a.createElement("p", null, a.createElement(St.Z, {
+                                    }, "Learn more")), a.createElement("p", null, a.createElement(Ot.Z, {
                                         onClick: e.enable,
                                         color: "primary",
                                         loading: l.isAwaitingPendingSecret
@@ -2360,7 +2387,7 @@
                                     style: {
                                         textDecoration: e.used ? "line-through" : "none"
                                     }
-                                }, Ft(e.code)))
+                                }, Rt(e.code)))
                             })))) : null)
                         }
                     }, {
@@ -2380,14 +2407,14 @@
                                     marginRight: "1em"
                                 },
                                 target: "_blank",
-                                href: It,
+                                href: Ft,
                                 rel: "noreferrer"
                             }, "Help"), a.createElement(Z.Z, {
                                 className: "btn",
                                 onClick: this.cancelSecret
                             }, a.createElement(r.$1, {
                                 icon: ce.NB
-                            }), " Cancel"))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(Ct.Z, {
+                            }), " Cancel"))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(St.Z, {
                                 hidden: 0 !== this.state.step
                             }, a.createElement(b.Z, null, a.createElement(x.Z, {
                                 classname: "tw-flex"
@@ -2412,11 +2439,11 @@
                             }, "OTP Auth"), " ", "for iOS.")), a.createElement("div", {
                                 className: "tw-hidden xs:tw-block tw-flex-none tw-w-auto"
                             }, a.createElement(r.$1, {
-                                icon: Zt.eF,
+                                icon: kt.eF,
                                 size: "4x",
                                 className: "tw-mr-1"
                             }), a.createElement(r.$1, {
-                                icon: xt.D_,
+                                icon: Zt.D_,
                                 size: "4x"
                             }))))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, {
                                 className: "text-end"
@@ -2424,14 +2451,14 @@
                                 color: "primary",
                                 onClick: this.goToStep1
                             }, "Next ", a.createElement(r.$1, {
-                                icon: yt._t
-                            }))))), a.createElement(Ct.Z, {
+                                icon: bt._t
+                            }))))), a.createElement(St.Z, {
                                 hidden: 1 !== this.state.step
                             }, a.createElement(b.Z, null, a.createElement(x.Z, {
                                 xs: {
                                     size: "7"
                                 }
-                            }, a.createElement("p", null, a.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), a.createElement("p", null, "If you can't scan the code,", " ", a.createElement(qt, {
+                            }, a.createElement("p", null, a.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), a.createElement("p", null, "If you can't scan the code,", " ", a.createElement(Vt, {
                                 type: "button",
                                 onClick: this.showTextKey
                             }, "enter the key manually"), "."), a.createElement("div", {
@@ -2450,14 +2477,14 @@
                                 },
                                 readOnly: !0,
                                 className: "text-monospace"
-                            }), a.createElement(Nt.CopyToClipboard, {
+                            }), a.createElement(Ct.CopyToClipboard, {
                                 text: c
                             }, a.createElement(Z.Z, {
                                 style: {
                                     verticalAlign: "top"
                                 }
                             }, a.createElement(r.$1, {
-                                icon: bt.kZ
+                                icon: xt.kZ
                             }), " Copy"))))), a.createElement(x.Z, {
                                 xs: {
                                     size: "5"
@@ -2470,15 +2497,15 @@
                             })))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement(Z.Z, {
                                 onClick: this.goToStep0
                             }, a.createElement(r.$1, {
-                                icon: vt.A3
+                                icon: yt.A3
                             }), " Previous")), a.createElement(x.Z, {
                                 className: "text-end"
                             }, a.createElement(Z.Z, {
                                 color: "primary",
                                 onClick: this.goToStep2
                             }, "Next ", a.createElement(r.$1, {
-                                icon: yt._t
-                            }))))), a.createElement(Ct.Z, {
+                                icon: bt._t
+                            }))))), a.createElement(St.Z, {
                                 hidden: 2 !== this.state.step
                             }, a.createElement(b.Z, null, a.createElement(x.Z, {
                                 xs: {
@@ -2505,14 +2532,14 @@
                                 style: {
                                     marginRight: "0.5em"
                                 }
-                            }), a.createElement(St.Z, {
+                            }), a.createElement(Ot.Z, {
                                 disabled: !l,
                                 color: "primary",
                                 loading: n.isAwaitingPendingSecretVerification
                             }, "Verify"))))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement(Z.Z, {
                                 onClick: this.goToStep1
                             }, a.createElement(r.$1, {
-                                icon: vt.A3
+                                icon: yt.A3
                             }), " Previous"))))))
                         }
                     }, {
@@ -2525,19 +2552,19 @@
                         }
                     }]), n
                 }(a.Component);
-            const Ut = (0, Tt.Z)((0, p.$j)((function(e) {
+            const qt = (0, Tt.Z)((0, p.$j)((function(e) {
                 return {
                     twoFactorAuthEnabled: e.currentUser.databaseUser.twoFactorAuthEnabled,
                     twoFactorAuth: e.twoFactorAuth
                 }
-            }))(zt));
-            var qt = (0, c.Z)("button", {
+            }))(Ut));
+            var Vt = (0, c.Z)("button", {
                 target: "e8g46ds0"
             })({
                 name: "9xa7nk",
                 styles: "background-color:transparent;border:none;color:rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));padding:0;&:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb);text-decoration:underline;}"
             });
-            const Vt = function() {
+            const $t = function() {
                 var e = (0, l.Tu)().user;
                 return a.createElement("div", null, a.createElement(r.$4, null, "Account Settings"), a.createElement("h2", null, "Account Settings"), a.createElement(r.oI, null, a.createElement("h4", null, "Change Display Name")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2549,13 +2576,15 @@
                     user: e
                 })), a.createElement(r.oI, null, a.createElement("h4", null, "Two-factor authentication")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(Ut, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Account Linking")), a.createElement(r.Ao, {
+                }, a.createElement(qt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Account Linking")), a.createElement(r.Ao, {
                     className: "mb-2"
                 }, a.createElement(D, {
                     user: e
                 })), a.createElement(r.oI, null, a.createElement("h4", null, "Privacy")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(dt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Age Verification")), a.createElement(r.Ao, {
+                }, a.createElement(pt, {
+                    user: e
+                })), a.createElement(r.oI, null, a.createElement("h4", null, "Age Verification")), a.createElement(r.Ao, {
                     className: "mb-2"
                 }, a.createElement(V, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Copyright")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2602,9 +2631,9 @@
                     N = (0, m.useState)(""),
                     C = (0, a.Z)(N, 2),
                     S = C[0],
-                    T = C[1],
-                    O = (0, m.useState)(""),
-                    P = (0, a.Z)(O, 2),
+                    O = C[1],
+                    T = (0, m.useState)(""),
+                    P = (0, a.Z)(T, 2),
                     A = P[0],
                     D = P[1],
                     I = (0, E.Nr)(g),
@@ -2644,7 +2673,7 @@
                     ce = re.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    T(""), D("")
+                    O(""), D("")
                 }), [g]);
                 var ue = (0, m.useMemo)((function() {
                         return ie && !1 === le.userExists && w()(I) && "" !== I
@@ -2778,7 +2807,7 @@
                     autoComplete: "off",
                     name: "confirmEmail",
                     onChange: function(e) {
-                        return T(e.target.value)
+                        return O(e.target.value)
                     },
                     placeholder: "Please confirm email",
                     type: "text",
@@ -3082,4 +3111,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98ee74cc0215163f8fd80be86fbc15f8ee0c20d96302bac62d1bf34870ae3066.js.map
+//# sourceMappingURL=1636d5a05b2f733124c294984e3e7d4986fdfe7e5a3a73d080c5b85da827f5d6.js.map
