@@ -46,7 +46,7 @@
         },
         17207: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => Jl
+                default: () => Xl
             });
             var r = n(15861),
                 l = n(54546),
@@ -96,8 +96,8 @@
                 U = n(4942),
                 q = n(42138),
                 z = n(42619),
-                G = n(26375),
-                D = n(70265),
+                D = n(26375),
+                G = n(70265),
                 F = n(5702),
                 X = n(78439),
                 _ = n(47810),
@@ -235,8 +235,8 @@
                     L = P[1],
                     U = L.data,
                     z = L.error,
-                    G = L.isLoading,
-                    D = (null == U || null === (t = U.members) || void 0 === t ? void 0 : t.length) < 25;
+                    D = L.isLoading,
+                    G = (null == U || null === (t = U.members) || void 0 === t ? void 0 : t.length) < 25;
                 O.useEffect((function() {
                     ee(0)
                 }), []), O.useEffect((function() {
@@ -353,7 +353,7 @@
                     className: "text-center m-1 text-secondary h-25"
                 }, "Search for users on VRChat."), K && O.createElement(se.Um, null, 0 === W.results.length && O.createElement("p", {
                     className: "text-center m-1 text-secondary h-25"
-                }, "We couldn't find anything with that search.")), G ? O.createElement(re.UU, {
+                }, "We couldn't find anything with that search.")), D ? O.createElement(re.UU, {
                     height: "200px"
                 }) : O.createElement("div", {
                     className: "tw-flex tw-flex-col"
@@ -367,9 +367,9 @@
                     onClick: function() {
                         return ee(page)
                     },
-                    disabled: G || z || D,
-                    loading: G
-                }, z || D ? "No more members..." : "List More Members")), ($ || K) && O.createElement(se.Gz, null, O.createElement(se.IT, {
+                    disabled: D || z || G,
+                    loading: D
+                }, z || G ? "No more members..." : "List More Members")), ($ || K) && O.createElement(se.Gz, null, O.createElement(se.IT, {
                     className: "d-flex flex-row align-items-center justify-content-center",
                     onClick: function() {
                         return y(x - 1)
@@ -596,7 +596,7 @@
                 Ue = "hasVRCPlus",
                 qe = "groupNotMonetized",
                 ze = (Me = {}, (0, U.Z)(Me, Pe, "Email address has not been verified"), (0, U.Z)(Me, Re, "Already owns maximum nubmer of groups per user"), (0, U.Z)(Me, Le, "Is not a valid member of the group"), (0, U.Z)(Me, Ue, "Does not have an active VRChat Plus subscription"), (0, U.Z)(Me, qe, "Group is not valid because it is monetized"), Me);
-            const Ge = function(e) {
+            const De = function(e) {
                 var t, n = e.group,
                     r = e.validity,
                     l = e.prospectiveNewOwner,
@@ -671,7 +671,7 @@
                     className: "tw-full-width tw-text-center"
                 }, "This cannot be undone once the transfer is complete.")))))
             };
-            var De = n(34698),
+            var Ge = n(34698),
                 Fe = n(58877),
                 Xe = n(25402);
             const _e = function(e) {
@@ -767,11 +767,11 @@
                         width: "20px"
                     },
                     target: "_blank"
-                })))), O.createElement(De.Z, {
+                })))), O.createElement(Ge.Z, {
                     onClick: function() {
                         g(!1), u(v)
                     }
-                }, "Cancel"), O.createElement(De.Z, {
+                }, "Cancel"), O.createElement(Ge.Z, {
                     onClick: I,
                     disabled: x,
                     color: "primary"
@@ -804,7 +804,7 @@
                     "aria-hidden": "true"
                 }, "×")))) : O.createElement("div", null)
             };
-            var Je = (0, a.Z)(De.Z, {
+            var Je = (0, a.Z)(Ge.Z, {
                     target: "e1a3rjxi0"
                 })({
                     name: "1234s8l",
@@ -1031,7 +1031,7 @@
                     }),
                     U = L.data,
                     z = L.isFetching,
-                    G = L.isError;
+                    D = L.isError;
                 O.useEffect((function() {
                     C(y.map((function(e) {
                         return e.value
@@ -1061,7 +1061,7 @@
                 }), [o, u, U, I, y]), O.useEffect((function() {
                     null != M && M.totalCount && f(M.totalCount)
                 }), [M]);
-                var D = O.createElement(ut, null, O.createElement(mt, {
+                var G = O.createElement(ut, null, O.createElement(mt, {
                     className: "d-flex flex-row align-items-center justify-content-center",
                     onClick: function() {
                         return m(u - o)
@@ -1082,7 +1082,7 @@
                     title: "Error",
                     type: "error",
                     className: "mb-2"
-                }, "There was an error loading the audit log."), G && !z && O.createElement(re.qX, {
+                }, "There was an error loading the audit log."), D && !z && O.createElement(re.qX, {
                     title: "Error",
                     type: "error",
                     className: "mb-2"
@@ -1106,7 +1106,7 @@
                     options: it,
                     value: o,
                     className: "mb-2"
-                })), D, O.createElement("div", {
+                })), G, O.createElement("div", {
                     className: "audit-log"
                 }, (null !== (t = null == M ? void 0 : M.results) && void 0 !== t ? t : Array(o).fill({})).map((function(e, t) {
                     var n;
@@ -1117,7 +1117,7 @@
                         offset: u,
                         isLoading: P
                     })
-                }))), D))
+                }))), G))
             };
             var st = (0, a.Z)(re.Lt, {
                     target: "e88tm0e3"
@@ -1194,28 +1194,28 @@
                     U = R.isLoading,
                     q = R.error,
                     z = R.isError,
-                    G = (0, me.xm)({
+                    D = (0, me.xm)({
                         groupId: i,
                         userId: m.id
                     }, {
                         skip: !m.id
                     }),
-                    D = G.data,
-                    F = G.isLoading,
-                    X = G.error,
-                    _ = G.isError;
+                    G = D.data,
+                    F = D.isLoading,
+                    X = D.error,
+                    _ = D.isError;
                 (0, O.useEffect)((function() {
                     var e;
-                    if (D && L) {
-                        L.privacy === ht.TW.DEFAULT && D.visibility !== v && b(D.visibility);
-                        var t = (null == D ? void 0 : D.isSubscribedToAnnouncements) || (null == D ? void 0 : D.isSubscribedToPosts);
+                    if (G && L) {
+                        L.privacy === ht.TW.DEFAULT && G.visibility !== v && b(G.visibility);
+                        var t = (null == G ? void 0 : G.isSubscribedToAnnouncements) || (null == G ? void 0 : G.isSubscribedToPosts);
                         y(t);
-                        var n = null === (e = null == D ? void 0 : D.isSubscribedToEventAnnouncements) || void 0 === e || e;
+                        var n = null === (e = null == G ? void 0 : G.isSubscribedToEventAnnouncements) || void 0 === e || e;
                         j(n)
                     }
-                }), [L, D]);
+                }), [L, G]);
                 var J = d || U || F,
-                    B = (null == L ? void 0 : L.ownerId) === (null == D ? void 0 : D.userId),
+                    B = (null == L ? void 0 : L.ownerId) === (null == G ? void 0 : G.userId),
                     $ = (0, me.uX)(),
                     V = (0, l.Z)($, 2),
                     H = V[0],
@@ -1417,8 +1417,8 @@
                     T = k[1],
                     P = O.useState(null),
                     L = (0, l.Z)(P, 2),
-                    G = L[0],
-                    D = L[1],
+                    D = L[0],
+                    G = L[1],
                     F = O.useState({}),
                     X = (0, l.Z)(F, 2),
                     _ = X[0],
@@ -1461,8 +1461,8 @@
                     Ue = Re[1],
                     qe = O.useState(null),
                     ze = (0, l.Z)(qe, 2),
-                    Ge = ze[0],
-                    De = ze[1],
+                    De = ze[0],
+                    Ge = ze[1],
                     Fe = (0, me.mt)({
                         groupId: u.id
                     }),
@@ -1523,11 +1523,11 @@
                             return r && !l && !Mt && (null == xt || null === (t = xt.parentListings) || void 0 === t ? void 0 : t.includes(n))
                         }))) || []
                     }), [xt, Mt, Lt, qt]),
-                    Gt = He || nt || pt || _e || jt || Ut,
-                    Dt = (null == u ? void 0 : u.joinState) === ht.wN.OPEN ? "Your group is already set to Free Join, so enabling this option won’t have any effect. Subscribers will still join automatically." : "When enabled, anyone can purchase this role and join the group, regardless of the group’s join rules. This option overrides standard join settings.";
+                    Dt = He || nt || pt || _e || jt || Ut,
+                    Gt = (null == u ? void 0 : u.joinState) === ht.wN.OPEN ? "Your group is already set to Free Join, so enabling this option won’t have any effect. Subscribers will still join automatically." : "When enabled, anyone can purchase this role and join the group, regardless of the group’s join rules. This option overrides standard join settings.";
                 (0, O.useEffect)((function() {
                     if (xt) {
-                        if (Ne(xt.groupAccessRemove), (null == u ? void 0 : u.joinState) === ht.wN.OPEN) return xe(!0), void D(At(At({}, G), {}, {
+                        if (Ne(xt.groupAccessRemove), (null == u ? void 0 : u.joinState) === ht.wN.OPEN) return xe(!0), void G(At(At({}, D), {}, {
                             groupAccess: !0
                         }));
                         xe(xt.groupAccess)
@@ -1536,7 +1536,7 @@
                 var Ft = function() {
                     var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                         t = {};
-                    "new" === (null == x ? void 0 : x.id) && (t = At({}, x)), e || (ae(null == x ? void 0 : x.requiresTwoFactor), de(null == x ? void 0 : x.isAddedOnJoin), Ee(null == x ? void 0 : x.isSelfAssignable), Se((null == x ? void 0 : x.permissions) || [])), d(0), T(t), D(null)
+                    "new" === (null == x ? void 0 : x.id) && (t = At({}, x)), e || (ae(null == x ? void 0 : x.requiresTwoFactor), de(null == x ? void 0 : x.isAddedOnJoin), Ee(null == x ? void 0 : x.isSelfAssignable), Se((null == x ? void 0 : x.permissions) || [])), d(0), T(t), G(null)
                 };
                 (0, O.useEffect)((function() {
                     Ft(), K(null != x && x.defaultRole ? "permissions" : "general")
@@ -1567,7 +1567,7 @@
                             var e = Ce.filter((function(e) {
                                 return !e.includes("*") && !Xt[e]
                             }));
-                            e.length > 0 && De(e)
+                            e.length > 0 && Ge(e)
                         }
                     }), [Ce, Xt]), !x || _e || Je) return null;
                 var Jt = function(e) {
@@ -1611,7 +1611,7 @@
                                             groupId: u.id,
                                             roleId: x.id,
                                             productId: (null == xt ? void 0 : xt.id) || null,
-                                            productData: G,
+                                            productData: D,
                                             roleData: t
                                         });
                                     case 11:
@@ -1840,12 +1840,12 @@
                         var t, n, r, l = e.checked;
                         t = l, n = At(At({}, I), {}, {
                             productGroupAccess: t
-                        }), r = At(At({}, G), {}, {
+                        }), r = At(At({}, D), {}, {
                             groupAccess: t
-                        }), t || (n.productGroupAccessRemove = void 0, r.groupAccessRemove = !1, Ne(!1)), xe(t), T(n), D(r)
+                        }), t || (n.productGroupAccessRemove = void 0, r.groupAccessRemove = !1, Ne(!1)), xe(t), T(n), G(r)
                     },
                     disabled: (null == u ? void 0 : u.joinState) === ht.wN.OPEN
-                }), O.createElement(Et.Z, null, Dt)), (null != I.productGroupAccess ? I.productGroupAccess : he) && O.createElement(B.Z, {
+                }), O.createElement(Et.Z, null, Gt)), (null != I.productGroupAccess ? I.productGroupAccess : he) && O.createElement(B.Z, {
                     className: "my-2"
                 }, O.createElement(vt.Z, {
                     label: "Remove Members After Expiration",
@@ -1855,7 +1855,7 @@
                         var t, n = e.checked;
                         Ne(t = n), T(At(At({}, I), {}, {
                             productGroupAccessRemove: t
-                        })), D(At(At({}, G), {}, {
+                        })), G(At(At({}, D), {}, {
                             groupAccessRemove: t
                         }))
                     }
@@ -1928,7 +1928,7 @@
                     onClick: function() {
                         $t(!1)
                     },
-                    disabled: Gt
+                    disabled: Dt
                 }, O.createElement(M.Z, {
                     icon: z.$
                 }), " Delete"), O.createElement("div", {
@@ -1938,12 +1938,12 @@
                     onClick: function() {
                         Ft()
                     },
-                    disabled: Gt || 0 === Object.keys(I).length
+                    disabled: Dt || 0 === Object.keys(I).length
                 }, O.createElement(M.Z, {
                     icon: w.NB
                 }), " ", Wt ? "Clear" : "Cancel"), " ", O.createElement(re.zx, {
-                    loading: Gt && !pt,
-                    disabled: Gt || 0 === Object.keys(I).length || Object.values(_).includes(!1),
+                    loading: Dt && !pt,
+                    disabled: Dt || 0 === Object.keys(I).length || Object.values(_).includes(!1),
                     onClick: Bt
                 }, O.createElement(M.Z, {
                     icon: gt.r6
@@ -1968,19 +1968,19 @@
                         key: e
                     }, "“", t.displayName, "”")
                 }))), O.createElement("strong", null, "Are you sure you want to turn this off?"))), O.createElement(re.sm, {
-                    isOpen: !!Ge,
+                    isOpen: !!De,
                     confirmCallback: function() {
                         return Se(Ce.filter((function(e) {
-                            return !Ge.includes(e)
-                        }))), void De(null)
+                            return !De.includes(e)
+                        }))), void Ge(null)
                     },
                     cancelCallback: function() {
-                        return De(null)
+                        return Ge(null)
                     },
                     headerText: "Invalid Permissions Detected",
                     confirmText: "Remove Permissions",
                     cancelText: "Keep Permissions"
-                }, O.createElement("div", null, O.createElement("p", null, "This role contains permissions that no longer exist or are unavailable for your group."), O.createElement("p", null, "These permissions will be removed from the role: ", O.createElement("strong", null, null == Ge ? void 0 : Ge.join(", "))))))
+                }, O.createElement("div", null, O.createElement("p", null, "This role contains permissions that no longer exist or are unavailable for your group."), O.createElement("p", null, "These permissions will be removed from the role: ", O.createElement("strong", null, null == De ? void 0 : De.join(", "))))))
             };
             var Pt = n(93682),
                 Rt = n(3163),
@@ -2034,11 +2034,11 @@
                         var i = (0 === (null == r ? void 0 : r.memberRank) || "new" === e.id || e.order > (null == r ? void 0 : r.memberRank)) && (v.includes("*") || 0 === e.permissions.filter((function(e) {
                             return !v.includes(e)
                         })).length);
-                        return l.push(o || i ? O.createElement(Dt, null, O.createElement(Xt, {
+                        return l.push(o || i ? O.createElement(Gt, null, O.createElement(Xt, {
                             key: e.id,
                             to: "/home/group/".concat(r.id, "/settings/roles/").concat(e.id),
                             className: e.id === u ? "selected" : ""
-                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : O.createElement(Gt, {
+                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : O.createElement(Dt, {
                             key: e.id
                         }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))), l
                     }));
@@ -2074,13 +2074,13 @@
                     name: "wghgqz",
                     styles: "list-style-type:none;padding:0;margin-bottom:0"
                 }),
-                Gt = (0, a.Z)("li", {
+                Dt = (0, a.Z)("li", {
                     target: "e1hiny753"
                 })({
                     name: "12guyxn",
                     styles: "padding:8px;margin-bottom:8px;border-radius:4px;background-color:#141519;opacity:0.3"
                 }),
-                Dt = (0, a.Z)("li", {
+                Gt = (0, a.Z)("li", {
                     target: "e1hiny752"
                 })({
                     name: "1hcx8jb",
@@ -2246,8 +2246,8 @@
                     Ue = (0, l.Z)(Le, 2),
                     qe = Ue[0],
                     ze = Ue[1],
-                    De = O.useState(null),
-                    Fe = (0, l.Z)(De, 2),
+                    Ge = O.useState(null),
+                    Fe = (0, l.Z)(Ge, 2),
                     Xe = Fe[0],
                     Je = Fe[1],
                     Be = O.useState(!1),
@@ -2298,9 +2298,9 @@
                     Ut = Rt[1],
                     qt = Ut.isError,
                     zt = Ut.isLoading,
-                    Gt = Ut.error,
-                    Dt = (0, me.CL)(),
-                    Ft = (0, l.Z)(Dt, 2),
+                    Dt = Ut.error,
+                    Gt = (0, me.CL)(),
+                    Ft = (0, l.Z)(Gt, 2),
                     Xt = Ft[0],
                     _t = Ft[1],
                     Bt = _t.isError,
@@ -2542,8 +2542,8 @@
                         }))
                     },
                     zn = tn.includes("permission-user-gallery"),
-                    Gn = tn.includes("permission-user-icons"),
-                    Dn = zt || $t || yn || Sn;
+                    Dn = tn.includes("permission-user-icons"),
+                    Gn = zt || $t || yn || Sn;
                 return O.createElement("div", null, O.createElement(J.Z, {
                     className: "mt-4"
                 }, O.createElement(oe.Z, {
@@ -2575,7 +2575,7 @@
                     }, {
                         name: "Logs",
                         to: "logs",
-                        icon: D.tx,
+                        icon: G.tx,
                         condition: Tt || R({
                             groupMember: null == b ? void 0 : b.myMember,
                             permission: "group-audit-view"
@@ -2583,7 +2583,7 @@
                     }, {
                         name: "Age Verification Beta",
                         to: "ageverificationbeta",
-                        icon: G.Uk,
+                        icon: D.Uk,
                         condition: b.tags.includes("admin_age_verification_enabled") && (Tt || (null == b ? void 0 : b.myMember.userId) === b.ownerId)
                     }]
                 })), O.createElement(S.Z5, null, O.createElement(S.AW, {
@@ -2628,7 +2628,7 @@
                     }, "Cancel"))), O.createElement(J.Z, null, qt ? O.createElement(re.qX, {
                         type: "error",
                         title: "An error occurred",
-                        message: (null == Gt || null === (u = Gt.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) || "Something went wrong updating the group"
+                        message: (null == Dt || null === (u = Dt.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) || "Something went wrong updating the group"
                     }) : null, O.createElement(re.oI, null, O.createElement("h4", {
                         className: "text-center"
                     }, "General")), O.createElement(re.Ao, null, O.createElement("div", null, O.createElement(B.Z, {
@@ -2738,7 +2738,7 @@
                         onClick: function() {
                             rt(!0)
                         }
-                    }, "Update Group Banner"), " ", Gn && O.createElement(re.zx, {
+                    }, "Update Group Banner"), " ", Dn && O.createElement(re.zx, {
                         color: "primary",
                         onClick: function() {
                             ft(!0)
@@ -2748,8 +2748,8 @@
                     }, O.createElement(re.zx, {
                         neutral: !0,
                         onClick: Mn,
-                        disabled: Dn,
-                        loading: Dn
+                        disabled: Gn,
+                        loading: Gn
                     }, "Save")))))), Mt && !w && O.createElement(O.Fragment, null, O.createElement(Ie, {
                         isOpen: fe,
                         group: b,
@@ -2763,7 +2763,7 @@
                         },
                         isGroupMemberOnly: !0,
                         isSelecting: Ze
-                    }), (null == Xe ? void 0 : Xe.user) && Pe && O.createElement(Ge, {
+                    }), (null == Xe ? void 0 : Xe.user) && Pe && O.createElement(De, {
                         group: b,
                         validity: Se,
                         prospectiveNewOwner: Xe,
@@ -2780,7 +2780,7 @@
                         onButtonClick: function() {
                             return Ee(!0)
                         },
-                        isLoading: Dn || !1
+                        isLoading: Gn || !1
                     })), Mt && w && O.createElement(Ce, {
                         group: b,
                         onClickCallback: function() {
@@ -2831,8 +2831,8 @@
                         onClick: function() {
                             de(!0)
                         },
-                        disabled: Dn,
-                        loading: Dn
+                        disabled: Gn,
+                        loading: Gn
                     }, O.createElement(M.Z, {
                         icon: z.$
                     }), " Delete Group"))))) : O.createElement(xt, {
@@ -2999,8 +2999,8 @@
                     }),
                     q = L.data,
                     z = L.isLoading,
-                    G = L.isError,
-                    D = L.error,
+                    D = L.isError,
+                    G = L.error,
                     F = (0, me.uX)(),
                     X = (0, l.Z)(F, 2),
                     _ = X[0],
@@ -3018,7 +3018,7 @@
                     le = ne[0],
                     ae = (ne[1].isLoading, (0, ue.pc)()),
                     oe = A || z,
-                    ie = G || T;
+                    ie = D || T;
                 if (O.useEffect((function() {
                         m()
                     }), []), ie) return O.createElement(O.Fragment, null, O.createElement(re.oI, null, O.createElement("h4", null, "Managing Member")), O.createElement(re.Ao, null, O.createElement("div", null, O.createElement("div", {
@@ -3030,9 +3030,9 @@
                     className: "text-center mb-4"
                 }, "We have encountered a problem."), P && O.createElement("p", {
                     className: "text-center text-danger"
-                }, null == P || null === (o = P.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), D && O.createElement("p", {
+                }, null == P || null === (o = P.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), G && O.createElement("p", {
                     className: "text-center text-danger"
-                }, null == D || null === (c = D.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message))));
+                }, null == G || null === (c = G.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message))));
                 if (oe) return null;
                 var ce = function() {
                         h(!b)
@@ -3621,8 +3621,8 @@
                     L = (0, l.Z)(P, 2),
                     U = L[0],
                     z = L[1],
-                    G = (0, te.XC)().data,
-                    D = (0, ue.pc)(),
+                    D = (0, te.XC)().data,
+                    G = (0, ue.pc)(),
                     F = (0, O.useState)([
                         [],
                         []
@@ -3657,9 +3657,9 @@
                     if (ae) {
                         var t;
                         if (ae.page <= 0 && !C && null === T && null === U && null != n && n.myMember) e[0] = [On(On({}, B), {}, {
-                            userId: G.id,
-                            user: On(On({}, G), {}, {
-                                thumbnailUrl: null !== (t = G.profilePicOverride) && void 0 !== t ? t : G.currentAvatarImageUrl
+                            userId: D.id,
+                            user: On(On({}, D), {}, {
+                                thumbnailUrl: null !== (t = D.profilePicOverride) && void 0 !== t ? t : D.currentAvatarImageUrl
                             })
                         })].concat((0, q.Z)(ae.members));
                         else e[ae.page] = ae.members;
@@ -3704,7 +3704,7 @@
                             i = null == n ? void 0 : n.roles.some((function(e) {
                                 return !0 === e.isSelfAssignable
                             }));
-                        return !!D || (!(!ve && !Ee || !a) || (!(!ve && !Ee || !o) || !(!i || !o)))
+                        return !!G || (!(!ve && !Ee || !a) || (!(!ve && !Ee || !o) || !(!i || !o)))
                     };
                 if (de) return O.createElement(re.UU, {
                     height: "200px"
@@ -3845,7 +3845,7 @@
                             title: o[t]
                         }
                     }));
-                return O.createElement(qn, null, O.createElement(zn, null, O.createElement(Pn, null, "Languages")), O.createElement(Gn, null, i.length > 0 ? i.map((function(e) {
+                return O.createElement(qn, null, O.createElement(zn, null, O.createElement(Pn, null, "Languages")), O.createElement(Dn, null, i.length > 0 ? i.map((function(e) {
                     var t, n;
                     return O.createElement(Un, {
                         key: e,
@@ -3891,13 +3891,13 @@
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Gn = (0, a.Z)(zn, {
+                Dn = (0, a.Z)(zn, {
                     target: "e8rhb6u0"
                 })({
                     name: "18clcmv",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto"
                 });
-            const Dn = function(e) {
+            const Gn = function(e) {
                 var t = e.links;
                 return O.createElement($n, null, O.createElement(Vn, null, O.createElement(Fn, null, "Links")), O.createElement(Wn, null, t.length > 0 ? t.map((function(e) {
                     return O.createElement(Bn, {
@@ -4023,9 +4023,9 @@
                     }),
                     q = (0, l.Z)(L, 2),
                     z = q[0],
-                    G = q[1],
-                    D = O.useState(!1),
-                    F = (0, l.Z)(D, 2),
+                    D = q[1],
+                    G = O.useState(!1),
+                    F = (0, l.Z)(G, 2),
                     X = F[0],
                     J = F[1],
                     B = O.useState(15),
@@ -4073,7 +4073,7 @@
                 }), [pe]);
                 var Ce = function(e) {
                     var t = "checkbox" === e.target.getAttribute("type") ? !e.target.checked : e.target.value;
-                    G(Kn(Kn({}, z), {}, (0, U.Z)({}, e.target.name, t)))
+                    D(Kn(Kn({}, z), {}, (0, U.Z)({}, e.target.name, t)))
                 };
                 if (de) return O.createElement(re.UU, {
                     className: "mt-3",
@@ -4661,8 +4661,8 @@
                         groupId: m.id,
                         blocked: !0
                     }),
-                    G = z.data,
-                    D = z.isError,
+                    D = z.data,
+                    G = z.isError,
                     F = z.error,
                     X = (z.isFetching, (0, me.dt)()),
                     _ = (0, l.Z)(X, 2),
@@ -4844,7 +4844,7 @@
                     }))
                 }))))), O.createElement(yr.Z, {
                     title: "Blocked Requests"
-                }, D && O.createElement(re.qX, {
+                }, G && O.createElement(re.qX, {
                     type: "error",
                     title: "Error",
                     className: "my-2"
@@ -4859,9 +4859,9 @@
                 }, T ? O.createElement(re.UU, {
                     width: "100%",
                     height: "75px"
-                }) : O.createElement(Nr, null, 0 === (null == G ? void 0 : G.length) ? O.createElement("p", {
+                }) : O.createElement(Nr, null, 0 === (null == D ? void 0 : D.length) ? O.createElement("p", {
                     className: "m-0"
-                }, "Nobody has been blocked from joining the group!") : null, null == G ? void 0 : G.map((function(e) {
+                }, "Nobody has been blocked from joining the group!") : null, null == D ? void 0 : D.map((function(e) {
                     return O.createElement("div", {
                         className: "mb-2"
                     }, O.createElement(tn, {
@@ -4960,8 +4960,8 @@
                     U = L.economyOnline,
                     q = L.plannedOfflineWindowStart,
                     z = L.plannedOfflineWindowEnd,
-                    G = L.offlineReason,
-                    D = P.isFetching,
+                    D = L.offlineReason,
+                    G = P.isFetching,
                     F = P.isError,
                     X = P.error,
                     _ = (0, Sr.v$)({
@@ -5040,7 +5040,7 @@
                     se = (0, l.Z)(ce, 2),
                     ue = se[0],
                     me = se[1];
-                if (v || j || y || D || B || Q) return O.createElement(re.UU, {
+                if (v || j || y || G || B || Q) return O.createElement(re.UU, {
                     width: "100%",
                     height: "200px"
                 });
@@ -5073,7 +5073,7 @@
                     title: "Store Maintenance"
                 }, O.createElement(O.Fragment, null, O.createElement("p", {
                     className: "m-0"
-                }, "Store Currently Offline: ", null != G ? G : "Unknown Reason"), O.createElement("p", {
+                }, "Store Currently Offline: ", null != D ? D : "Unknown Reason"), O.createElement("p", {
                     className: "m-0"
                 }, "Projected Service Return: ", (0, we.M4)(z)))), $ && U && O.createElement(re.qX, {
                     type: "error",
@@ -5125,8 +5125,8 @@
             var Ur = n(28764),
                 qr = n(96427),
                 zr = n(42137),
-                Gr = n(9230);
-            const Dr = function(e) {
+                Dr = n(9230);
+            const Gr = function(e) {
                 var t, n = e.postData,
                     r = e.myMember,
                     a = void 0 === r ? {
@@ -5187,7 +5187,7 @@
                         icon: zr.SZ
                     }), " ", (0, we.h4)(b), O.createElement(re.$1, {
                         className: "ms-2",
-                        icon: Gr.iO
+                        icon: Dr.iO
                     }), " ", "public" === I ? "Public" : "Group"));
                     var e = (0, q.Z)(N).sort((function(e, t) {
                         return S.includes(t) ? 1 : -1
@@ -5232,7 +5232,7 @@
                     icon: z.$
                 }))))
             };
-            var Fr = (0, a.Z)(De.Z, {
+            var Fr = (0, a.Z)(Ge.Z, {
                     target: "ewr2sfy9"
                 })({
                     name: "3891qj",
@@ -5391,9 +5391,9 @@
                     L = R[0],
                     U = R[1],
                     z = O.useState(""),
-                    G = (0, l.Z)(z, 2),
-                    D = G[0],
-                    F = G[1],
+                    D = (0, l.Z)(z, 2),
+                    G = D[0],
+                    F = D[1],
                     X = (0, te.q7)().data,
                     _ = void 0 === X ? [] : X,
                     J = (0, me.t$)(),
@@ -5547,11 +5547,11 @@
                     loading: Y,
                     expand: !0,
                     onClick: Q
-                }, "Create Post")), " ", O.createElement(Dr, {
+                }, "Create Post")), " ", O.createElement(Gr, {
                     postData: {
                         text: i,
                         title: m,
-                        imageUrl: D,
+                        imageUrl: G,
                         roleIds: h
                     },
                     groupRoles: t.roles
@@ -5735,7 +5735,7 @@
                     }, {
                         refetchOnMountOrArgChange: !0
                     }),
-                    G = (0, O.useMemo)((function() {
+                    D = (0, O.useMemo)((function() {
                         var e = new Array(k * (N + 1)).fill(null);
                         return (0, q.Z)(new Set([L.data, U.data, z.data])).map((function(t) {
                             return null != t && t.posts ? e.splice.apply(e, [t.offset, t.posts.length].concat((0, q.Z)(t.posts))) : []
@@ -5744,29 +5744,29 @@
                         }))
                     }), [k, L.data, U.data, z.data]);
                 (0, O.useEffect)((function() {
-                    d(G.some((function(e) {
+                    d(D.some((function(e) {
                         return null !== e
                     })))
-                }), [G]), (0, O.useEffect)((function() {
+                }), [D]), (0, O.useEffect)((function() {
                     T && E(!1)
                 }), [T]);
-                var D = function(e) {
+                var G = function(e) {
                         w(e), E(!0)
                     },
                     F = (0, O.useMemo)((function() {
-                        return m ? G.map((function(e, t) {
+                        return m ? D.map((function(e, t) {
                             return null !== e ? O.createElement("div", {
                                 key: e.id
-                            }, O.createElement(Dr, {
+                            }, O.createElement(Gr, {
                                 myMember: Z,
                                 postData: e,
-                                observe: t === G.length - 1 ? P : 0 === t && 1 !== i ? R : null,
+                                observe: t === D.length - 1 ? P : 0 === t && 1 !== i ? R : null,
                                 isEditMode: r,
-                                deleteCallback: D,
+                                deleteCallback: G,
                                 groupRoles: y
                             })) : null
                         })) : null
-                    }), [G, m]);
+                    }), [D, m]);
                 return m ? O.createElement("div", {
                     className: "py-4"
                 }, O.createElement(dl.Z, {
@@ -5972,14 +5972,10 @@
                 }, "Create Event"))))
             };
             var Cl = n(88081),
-                Sl = n(79212),
-                jl = n.n(Sl),
-                Al = n(37412),
-                Tl = n.n(Al),
-                Ml = n(75727),
-                Pl = n(24752),
-                Rl = n(29841),
-                Ll = [{
+                Sl = n(75727),
+                jl = n(24752),
+                Al = n(29841),
+                Tl = [{
                     key: 0,
                     label: "All",
                     value: "ALL"
@@ -5996,7 +5992,7 @@
                     label: "Ongoing",
                     value: "ONGOING"
                 }],
-                Ul = [{
+                Ml = [{
                     key: 0,
                     label: "Newest First",
                     value: "NEWEST"
@@ -6005,7 +6001,7 @@
                     label: "Oldest First",
                     value: "OLDEST"
                 }];
-            const ql = function(e) {
+            const Pl = function(e) {
                 var t, n = e.onSearchUpdate,
                     r = void 0 === n ? function() {} : n,
                     a = e.onDisplayStateChange,
@@ -6038,14 +6034,14 @@
                     className: (0, I.cx)("tw-gap-2 tw-flex-wrap", !m && "@sm:tw-flex-1 tw-w-full")
                 }, O.createElement(re.Lt, {
                     label: "Display",
-                    options: Ll,
+                    options: Tl,
                     value: b,
                     onChange: function(e) {
                         h(e), o(e)
                     }
                 }), O.createElement(re.Lt, {
                     label: "Order",
-                    options: Ul,
+                    options: Ml,
                     value: y,
                     onChange: function(e) {
                         Z(e), c(e)
@@ -6067,14 +6063,36 @@
                         s()
                     }
                 }, O.createElement(re.$1, {
-                    icon: Rl.QR
+                    icon: Al.QR
                 }))))
             };
-            fe().extend(Tl()), fe().extend(jl());
-            var zl = (0, O.lazy)((function() {
+
+            function Rl(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), n.push.apply(n, r)
+                }
+                return n
+            }
+
+            function Ll(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? Rl(Object(n), !0).forEach((function(t) {
+                        (0, U.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Rl(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            var Ul = (0, O.lazy)((function() {
                 return Promise.resolve().then(n.bind(n, 41568))
             }));
-            const Gl = function(e) {
+            const ql = function(e) {
                 var t = e.group,
                     n = e.isCreate,
                     r = void 0 !== n && n,
@@ -6082,203 +6100,195 @@
                     o = a.user,
                     i = a.isFetching,
                     c = (0, ue.pc)() && !1,
-                    s = O.useState(!0),
+                    s = O.useState(!1),
                     u = (0, l.Z)(s, 2),
                     m = u[0],
                     d = u[1],
-                    p = O.useState(!1),
+                    p = O.useState(r),
                     g = (0, l.Z)(p, 2),
-                    f = (g[0], g[1], O.useState(!1)),
-                    E = (0, l.Z)(f, 2),
-                    v = E[0],
-                    b = E[1],
-                    h = O.useState(""),
-                    w = (0, l.Z)(h, 2),
-                    x = w[0],
-                    y = (w[1], O.useState(r)),
-                    Z = (0, l.Z)(y, 2),
-                    k = Z[0],
-                    N = Z[1],
-                    C = O.useState(!1),
-                    S = (0, l.Z)(C, 2),
-                    j = S[0],
-                    A = S[1],
-                    T = O.useState(Pl.P.CREATE),
-                    M = (0, l.Z)(T, 2),
-                    L = M[0],
-                    U = M[1],
-                    z = O.useState(null),
-                    G = (0, l.Z)(z, 2),
-                    D = G[0],
-                    F = G[1],
-                    X = O.useState([]),
-                    _ = (0, l.Z)(X, 2),
-                    J = _[0],
-                    B = _[1],
-                    $ = O.useState("NEWEST"),
-                    V = (0, l.Z)($, 2),
-                    W = V[0],
-                    H = V[1],
-                    Y = O.useState("UPCOMING"),
-                    Q = (0, l.Z)(Y, 2),
-                    K = Q[0],
-                    ee = Q[1],
-                    te = ((0, ue.Nr)(x), R({
+                    f = g[0],
+                    E = g[1],
+                    v = O.useState(!1),
+                    b = (0, l.Z)(v, 2),
+                    h = b[0],
+                    w = b[1],
+                    x = O.useState(jl.P.CREATE),
+                    y = (0, l.Z)(x, 2),
+                    Z = y[0],
+                    k = y[1],
+                    N = O.useState(null),
+                    C = (0, l.Z)(N, 2),
+                    S = C[0],
+                    j = C[1],
+                    A = O.useState("NEWEST"),
+                    T = (0, l.Z)(A, 2),
+                    M = T[0],
+                    L = T[1],
+                    U = O.useState("UPCOMING"),
+                    q = (0, l.Z)(U, 2),
+                    z = q[0],
+                    D = q[1],
+                    G = R({
                         groupMember: null == t ? void 0 : t.myMember,
                         permission: "group-calendar-manage"
-                    })),
-                    ne = P({
+                    }),
+                    F = P({
                         group: t,
                         groupMember: null == t ? void 0 : t.myMember
                     }),
-                    le = te || ne,
-                    ae = (0, Cl.kg)({
+                    X = G || F,
+                    _ = O.useState(fe()()),
+                    J = (0, l.Z)(_, 2),
+                    B = J[0],
+                    $ = J[1],
+                    V = O.useMemo((function() {
+                        switch (z) {
+                            case "UPCOMING":
+                                return {
+                                    after: B.toISOString()
+                                };
+                            case "PAST":
+                                return {
+                                    before: B.toISOString()
+                                };
+                            case "ONGOING":
+                                return {
+                                    live: !0
+                                };
+                            default:
+                                return {}
+                        }
+                    }), [z, B]),
+                    W = O.useMemo((function() {
+                        return "OLDEST" === M ? {
+                            sort: "startTime_descending"
+                        } : {
+                            sort: "startTime_ascending"
+                        }
+                    }), [M]),
+                    H = (0, Cl.Is)(Ll(Ll({
                         ownerId: t.id
-                    }, {
+                    }, V), W), {
                         skip: !t.id
                     }),
-                    oe = ae.data,
-                    ie = ae.isLoading;
-                O.useMemo((function() {
-                    oe && se(K)
-                }), [oe]);
-                var ce = function() {
-                    N(!1), F(null), U(Pl.P.CREATE)
-                };
-
-                function se() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "UPCOMING";
-                    ee(e);
-                    var t = fe()(),
-                        n = (oe.results || oe || []).filter((function(e) {
+                    Y = H.data,
+                    Q = H.hasNextPage,
+                    K = H.fetchNextPage,
+                    ee = H.isLoading,
+                    te = H.isFetching,
+                    ne = O.useMemo((function() {
+                        return ((null == Y ? void 0 : Y.pages) || []).flatMap((function(e) {
+                            return e.results
+                        })).filter((function(e) {
                             return !e.deletedAt || c
-                        })),
-                        r = function() {
-                            switch (e) {
-                                case "UPCOMING":
-                                    return n.filter((function(e) {
-                                        return fe()(e.endsAt).isAfter(t)
-                                    }));
-                                case "PAST":
-                                    return n.filter((function(e) {
-                                        return fe()(e.endsAt).isBefore(t)
-                                    }));
-                                case "ONGOING":
-                                    return n.filter((function(e) {
-                                        return fe()(e.startsAt).isBefore(t) && fe()(e.endsAt).isAfter(t)
-                                    }));
-                                default:
-                                    return n
-                            }
-                        }();
-                    me(W, r)
-                }
-
-                function me(e) {
-                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : J;
-                    H(e);
-                    var n = (0, q.Z)(t).sort((function(t, n) {
-                        return "NEWEST" === e ? new Date(t.startsAt) - new Date(n.startsAt) : new Date(n.startsAt) - new Date(t.startsAt)
-                    }));
-                    B(n)
-                }
-                var de = function(e) {
-                        F(e), N(!0), U(Pl.P.EDIT)
+                        }))
+                    }), [Y, c]),
+                    le = function() {
+                        E(!1), j(null), k(jl.P.CREATE)
                     },
-                    pe = function(e) {
-                        F(e), N(!0), U(Pl.P.REVIVE)
+                    ae = function(e) {
+                        j(e), E(!0), k(jl.P.EDIT)
                     },
-                    ge = function(e) {
-                        F(e), A(!0), U(Pl.P.DELETE)
-                    };
-                return O.useEffect((function() {
-                    !ie && !i && oe && o && d(!1)
-                }), [ie, oe, i, o]), O.createElement(O.Fragment, null, O.createElement("div", {
+                    oe = function(e) {
+                        j(e), E(!0), k(jl.P.REVIVE)
+                    },
+                    ie = function(e) {
+                        j(e), w(!0), k(jl.P.DELETE)
+                    },
+                    ce = ee || i || !Y || !o;
+                return O.createElement(O.Fragment, null, O.createElement("div", {
                     className: "tw-py-4"
-                }, le && O.createElement(re.zx, {
+                }, X && O.createElement(re.zx, {
                     "aria-label": "Create Event",
                     className: "tw-mb-4",
                     onClick: function() {
-                        N(!0)
+                        E(!0)
                     }
-                }, "+ Create Event"), O.createElement(Dl, null, O.createElement(Xl, null, O.createElement(Fl, null, "Events")), O.createElement(_l, {
+                }, "+ Create Event"), O.createElement(zl, null, O.createElement(Gl, null, O.createElement(Dl, null, "Events")), O.createElement(Fl, {
                     className: "tw-flex-col tw-gap-5 tw-items-center tw-pt-5"
-                }, O.createElement(ql, {
+                }, O.createElement(Pl, {
                     hideSearch: !0,
                     gridToggle: function() {
-                        b(!v)
+                        d(!m)
                     },
-                    onDisplayStateChange: se,
-                    onOrderChange: me
-                }), m && O.createElement(re.UU, null), !m && 0 === J.length && O.createElement("div", null, "No events found"), !m && O.createElement(re.JX, {
-                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", v && "tw-flex-row")
-                }, J.map((function(e) {
+                    onDisplayStateChange: function(e) {
+                        e !== z && $(fe()()), D(e)
+                    },
+                    onOrderChange: function(e) {
+                        L(e)
+                    }
+                }), ce && O.createElement(re.UU, null), !ce && (null != ne && ne.length ? O.createElement(re.JX, {
+                    className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", m && "tw-flex-row")
+                }, ne.map((function(e) {
                     return O.createElement(Il.ZP, {
                         key: e.id,
                         event: e,
-                        isGrid: v,
-                        onEditCallback: de,
-                        onDeleteCallback: ge,
-                        onReviveCallback: pe,
-                        isGroupAdmin: le
+                        isGrid: m,
+                        onEditCallback: ae,
+                        onDeleteCallback: ie,
+                        onReviveCallback: oe,
+                        isGroupAdmin: X
                     })
-                })))))), O.createElement(re.u_, {
-                    title: L.label,
-                    isVisible: k,
-                    onClose: ce,
+                }))) : O.createElement("div", null, "No events found")), !(null == ne || !ne.length) && O.createElement(re.zx, {
+                    onClick: K,
+                    disabled: !Q || te
+                }, te ? "Loading More…" : Q ? "Load More…" : "That's all of them!")))), O.createElement(re.u_, {
+                    title: Z.label,
+                    isVisible: f,
+                    onClose: le,
                     className: "tw-w-full",
                     slim: !0,
                     width: "100%"
                 }, O.createElement(O.Suspense, {
                     fallback: O.createElement("div", null, "Loading...")
-                }, O.createElement(zl, {
-                    event: D || void 0,
-                    isEditMode: "edit" === L.value,
-                    isReviveMode: "revive" === L.value,
+                }, O.createElement(Ul, {
+                    event: S || void 0,
+                    isEditMode: "edit" === Z.value,
+                    isReviveMode: "revive" === Z.value,
                     group: t,
-                    isGroupAdmin: le,
-                    closeModalCallback: ce
-                }))), D && "delete" === L.value && O.createElement(Ml.Z, {
-                    event: D,
-                    isOpen: j,
+                    isGroupAdmin: X,
+                    closeModalCallback: le
+                }))), S && "delete" === Z.value && O.createElement(Sl.Z, {
+                    event: S,
+                    isOpen: h,
                     onCloseCallBack: function() {
-                        A(!1), F(null), U(Pl.P.CREATE)
+                        w(!1), j(null), k(jl.P.CREATE)
                     }
                 }))
             };
-            var Dl = (0, a.Z)("div", {
+            var zl = (0, a.Z)("div", {
                     target: "e1bz3ytt3"
                 })({
                     name: "144akkd",
                     styles: "display:flex;flex-direction:column;align-items:start;justify-content:start;border-radius:8px;background:#2a2e34"
                 }),
-                Fl = (0, a.Z)("h2", {
+                Dl = (0, a.Z)("h2", {
                     target: "e1bz3ytt2"
                 })({
                     name: "14mdnr2",
                     styles: "font-size:1.5rem;font-weight:bold"
                 }),
-                Xl = (0, a.Z)(re.JX, {
+                Gl = (0, a.Z)(re.JX, {
                     target: "e1bz3ytt1"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                _l = (0, a.Z)(Xl, {
+                Fl = (0, a.Z)(Gl, {
                     target: "e1bz3ytt0"
                 })({
                     name: "j2vksd",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;display:flex;justify-content:space-around;height:auto!important"
                 });
-            const Jl = function() {
+            const Xl = function() {
                 var e, t, n, a = O.useState(!1),
                     k = (0, l.Z)(a, 2),
                     P = k[0],
                     U = k[1],
                     q = O.useState(!1),
                     z = (0, l.Z)(q, 2),
-                    G = z[0],
-                    D = z[1],
+                    D = z[0],
+                    G = z[1],
                     F = O.useState(!1),
                     X = (0, l.Z)(F, 2),
                     _ = X[0],
@@ -6327,12 +6337,12 @@
                     Ue = Pe.isFetching,
                     qe = Pe.isError,
                     ze = Pe.error,
-                    Ge = (0, ue.pc)(),
-                    De = (0, me.dj)({
+                    De = (0, ue.pc)(),
+                    Ge = (0, me.dj)({
                         userId: null == Me ? void 0 : Me.id
                     }),
-                    Fe = De.data,
-                    Xe = De.isLoading,
+                    Fe = Ge.data,
+                    Xe = Ge.isLoading,
                     _e = (0, me.xI)(),
                     Je = (0, l.Z)(_e, 2),
                     Be = Je[0],
@@ -6373,13 +6383,13 @@
                     bt = vt.data;
                 vt.isLoading;
                 O.useEffect((function() {
-                    Re && !Ue && D(!0)
+                    Re && !Ue && G(!0)
                 }), [Re, Ue]), O.useEffect((function() {
                     pt && fe(!1)
                 }), [pt]);
                 var wt, xt, yt = O.useMemo((function() {
-                        return !!G && (null !== Re.transferTargetId || void 0 !== Re.transferTargetId)
-                    }), [G]),
+                        return !!D && (null !== Re.transferTargetId || void 0 !== Re.transferTargetId)
+                    }), [D]),
                     Zt = (null == Re ? void 0 : Re.transferTargetId) === (null == Me ? void 0 : Me.id) ? null == Re ? void 0 : Re.ownerId : null == Re ? void 0 : Re.transferTargetId,
                     kt = (0, ne.GR)(Zt, {
                         skip: null == Re || Ue || !yt || !Zt,
@@ -6399,10 +6409,10 @@
                     Ut = (0, me.rq)(),
                     qt = (0, l.Z)(Ut, 2),
                     zt = qt[0],
-                    Gt = qt[1],
-                    Dt = Gt.data,
-                    Ft = (Gt.isFetching, Gt.isError),
-                    Xt = (Gt.error, function() {
+                    Dt = qt[1],
+                    Gt = Dt.data,
+                    Ft = (Dt.isFetching, Dt.isError),
+                    Xt = (Dt.error, function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             var t, n;
                             return N().wrap((function(e) {
@@ -6460,10 +6470,10 @@
                                         Ft && Ie((0, ee.d)({
                                             title: "Cancel Group Transfer Error",
                                             icon: y.eH,
-                                            message: "".concat(null == Dt || null === (t = Dt.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
+                                            message: "".concat(null == Gt || null === (t = Gt.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
                                             color: "error",
                                             timeout: 3e3
-                                        }), he(!1)), !Ft && Dt && Ie((0, ee.d)({
+                                        }), he(!1)), !Ft && Gt && Ie((0, ee.d)({
                                             title: "Cancel Group Transfer Success",
                                             icon: Z.f8,
                                             color: "success",
@@ -6585,9 +6595,9 @@
                     toggle: function() {
                         W(!1)
                     }
-                }, O.createElement($l, null, O.createElement("h4", {
+                }, O.createElement(Jl, null, O.createElement("h4", {
                     className: "text-center"
-                }, "Unblock this Group?")), O.createElement(Vl, null, O.createElement(re.JX, null, O.createElement("div", {
+                }, "Unblock this Group?")), O.createElement(Bl, null, O.createElement(re.JX, null, O.createElement("div", {
                     className: "p-3 text-center"
                 }, "Are you sure you want to unblock ", O.createElement("strong", null, Re.name), "?"), O.createElement("div", {
                     className: "p-3"
@@ -6614,11 +6624,11 @@
                     toggle: function() {
                         J(!1)
                     }
-                }, O.createElement($l, null, O.createElement("h4", {
+                }, O.createElement(Jl, null, O.createElement("h4", {
                     className: "text-center"
-                }, "Rules")), O.createElement(Vl, null, O.createElement(re.JX, null, O.createElement("div", {
+                }, "Rules")), O.createElement(Bl, null, O.createElement(re.JX, null, O.createElement("div", {
                     className: "p-3"
-                }, O.createElement("p", null, "By joining this group, you agree to the following rules:"), O.createElement(Hl, null, Re.rules)), O.createElement("div", {
+                }, O.createElement("p", null, "By joining this group, you agree to the following rules:"), O.createElement(Vl, null, Re.rules)), O.createElement("div", {
                     className: "p-3"
                 }, O.createElement(re.X2, null, O.createElement(re.zx, {
                     expand: !0,
@@ -6642,9 +6652,9 @@
                     toggle: function() {
                         return fe(!1)
                     }
-                }, O.createElement($l, null, O.createElement("h4", {
+                }, O.createElement(Jl, null, O.createElement("h4", {
                     className: "text-center"
-                }, "Decline Group Invite?")), O.createElement(Vl, null, O.createElement(re.JX, null, O.createElement("div", {
+                }, "Decline Group Invite?")), O.createElement(Bl, null, O.createElement(re.JX, null, O.createElement("div", {
                     className: "p-3 text-center"
                 }, "Are you sure you want to decline invite to ", O.createElement("strong", null, Re.name), "?"), O.createElement("div", {
                     className: "px-3 text-center d-flex justify-content-center"
@@ -6725,7 +6735,7 @@
                     group: Re
                 }), Vt && O.createElement(re.X2, null, O.createElement(T.Z, {
                     color: "warning"
-                }, "Your VRChat account does not have 2FA enabled. Your role '", Vt.name, "' in ", Re.name, " requires this. Until you enable 2FA, your ability to manage ", Re.name, " will be limited.")), Ge && gt && O.createElement(re.X2, null, O.createElement(Yl, null, " THIS GROUP HAS BEEN DELETED ")), He && O.createElement(re.qX, {
+                }, "Your VRChat account does not have 2FA enabled. Your role '", Vt.name, "' in ", Re.name, " requires this. Until you enable 2FA, your ability to manage ", Re.name, " will be limited.")), De && gt && O.createElement(re.X2, null, O.createElement(Wl, null, " THIS GROUP HAS BEEN DELETED ")), He && O.createElement(re.qX, {
                     type: "error",
                     title: "An error occurred",
                     message: (null == Ye || null === (t = Ye.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred while trying to join ".concat(null == Re ? void 0 : Re.name, ".")
@@ -6794,7 +6804,7 @@
                         name: "Invites",
                         to: "invites",
                         icon: s.FU,
-                        condition: Ge || R({
+                        condition: De || R({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-invites-manage"
                         })
@@ -6802,7 +6812,7 @@
                         name: "Settings",
                         to: "settings",
                         icon: c.b7,
-                        condition: Ge || (null == Re ? void 0 : Re.myMember) || R({
+                        condition: De || (null == Re ? void 0 : Re.myMember) || R({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-data-manage"
                         }) || R({
@@ -6813,7 +6823,7 @@
                         name: "Banned Users",
                         to: "bans",
                         icon: i.JH,
-                        condition: Ge || R({
+                        condition: De || R({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-bans-manage"
                         })
@@ -6825,30 +6835,30 @@
                     }), Le && O.createElement(Ol, {
                         group: Re,
                         event: bt,
-                        isAdmin: Ge || R({
+                        isAdmin: De || R({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-members-manage"
                         })
-                    }), O.createElement(Bl, null, O.createElement(re.JX, {
+                    }), O.createElement(_l, null, O.createElement(re.JX, {
                         className: "m-1"
                     }, O.createElement(Mn, {
                         langs: Re.languages
                     })), O.createElement(re.JX, {
                         className: "m-1"
-                    }, O.createElement(Dn, {
+                    }, O.createElement(Gn, {
                         links: Re.links
-                    }))), O.createElement(Bl, null, O.createElement(re.JX, {
+                    }))), O.createElement(_l, null, O.createElement(re.JX, {
                         className: "m-1 mt-2 mw-100"
-                    }, O.createElement($l, null, O.createElement("h4", null, "About This Group")), O.createElement(Wl, null, O.createElement("p", {
+                    }, O.createElement(Jl, null, O.createElement("h4", null, "About This Group")), O.createElement($l, null, O.createElement("p", {
                         className: "w-100 text-break"
                     }, Re.description))), Re.rules && O.createElement(O.Fragment, null, O.createElement(re.JX, {
                         className: "m-1 mt-2 mw-100"
-                    }, O.createElement($l, null, O.createElement("h4", null, "Rules")), O.createElement(Wl, null, O.createElement("p", {
+                    }, O.createElement(Jl, null, O.createElement("h4", null, "Rules")), O.createElement($l, null, O.createElement("p", {
                         className: "w-100 text-break"
                     }, Re.rules))))))
                 }), O.createElement(S.AW, {
                     path: "/posts",
-                    element: (Ge || R({
+                    element: (De || R({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-announcement-manage"
                     })) && Le ? O.createElement(O.Fragment, null, P ? O.createElement(re.X2, null, O.createElement(re.JX, {
@@ -6877,12 +6887,12 @@
                     })
                 }), O.createElement(S.AW, {
                     path: "/events",
-                    element: O.createElement(Gl, {
+                    element: O.createElement(ql, {
                         group: Re
                     })
                 }), O.createElement(S.AW, {
                     path: "/events/create",
-                    element: O.createElement(Gl, {
+                    element: O.createElement(ql, {
                         group: Re,
                         isCreate: !0
                     })
@@ -6909,7 +6919,7 @@
                     })
                 }), O.createElement(S.AW, {
                     path: "/invites/*",
-                    element: Ge || R({
+                    element: De || R({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-invites-manage"
                     }) ? O.createElement(kr, {
@@ -6919,14 +6929,14 @@
                     })
                 }), O.createElement(S.AW, {
                     path: "/members",
-                    element: Ge || null != Re && Re.myMember ? O.createElement(Sn, {
+                    element: De || null != Re && Re.myMember ? O.createElement(Sn, {
                         group: Re
                     }) : O.createElement(L.Z, {
                         to: ".."
                     })
                 }), O.createElement(S.AW, {
                     path: "/settings/*",
-                    element: Ge || null != Re && Re.myMember || R({
+                    element: De || null != Re && Re.myMember || R({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-data-manage"
                     }) || R({
@@ -6939,7 +6949,7 @@
                     })
                 }), O.createElement(S.AW, {
                     path: "/bans",
-                    element: Ge || R({
+                    element: De || R({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-members-manage"
                     }) ? O.createElement(wl, {
@@ -6949,34 +6959,34 @@
                     })
                 })))))
             };
-            var Bl = (0, a.Z)(re.X2, {
+            var _l = (0, a.Z)(re.X2, {
                     target: "e7n20a25"
                 })("flex-wrap:wrap;margin:-0.25rem;>", re.JX, "{min-width:300px;flex:1;}"),
-                $l = (0, a.Z)(re.JX, {
+                Jl = (0, a.Z)(re.JX, {
                     target: "e7n20a24"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Vl = (0, a.Z)($l, {
+                Bl = (0, a.Z)(Jl, {
                     target: "e7n20a23"
                 })({
                     name: "vnq3j7",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto;white-space:pre-line"
                 }),
-                Wl = (0, a.Z)(Vl, {
+                $l = (0, a.Z)(Bl, {
                     target: "e7n20a22"
                 })({
                     name: "di36rf",
                     styles: "overflow-y:auto;white-space:pre-line;max-height:300px"
                 }),
-                Hl = (0, a.Z)("p", {
+                Vl = (0, a.Z)("p", {
                     target: "e7n20a21"
                 })({
                     name: "votlfh",
                     styles: "overflow-y:auto;white-space:pre-line;max-height:400px;background:#252a30;padding:0.5rem;border-radius:8px"
                 }),
-                Yl = (0, a.Z)("h3", {
+                Wl = (0, a.Z)("h3", {
                     target: "e7n20a20"
                 })({
                     name: "bbnlne",
@@ -7104,4 +7114,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85a6bad71844dedaf9d58fc94ef2f2c2c09674e031792e3ee602c9b9499f7736.js.map
+//# sourceMappingURL=cd4aac3a4d3d2acd719abe34d4f98a711496ae4c47dae56433625ea0dc0dc954.js.map
