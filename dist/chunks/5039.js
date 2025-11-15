@@ -1066,7 +1066,7 @@
                 }, m.createElement(_e.Z, {
                     top: !0,
                     className: "ms-3 vrchat-img",
-                    src: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-background.png"
+                    src: "https://assets.vrchat.com/www/favicons/android-chrome-512x512.png"
                 }), m.createElement(ie.Z, {
                     className: "p-3"
                 }, m.createElement(Pe.Z, {
@@ -2788,4 +2788,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b0c92830e246513070b07a57eb807a4c37238cbbc387b6d75ef81291334efd48.js.map
+//# sourceMappingURL=474d7fcc99be9f8bb8916202608f5e4e17c8374e6f396e520378a223ec6829d2.js.map

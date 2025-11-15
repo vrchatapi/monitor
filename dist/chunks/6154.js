@@ -28,8 +28,8 @@
                 r = a(45987),
                 l = a(4942),
                 i = a(54546),
-                c = a(2909),
-                o = a(82414),
+                c = a(82414),
+                o = a(2909),
                 s = a(78076),
                 m = a(76553),
                 u = a(6811),
@@ -99,9 +99,9 @@
                     className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight"
                 }, "Contact Support"))))))
             };
-            var S = a(42619),
-                A = a(56646);
-            const Z = function(e) {
+            var A = a(42619),
+                S = a(56646);
+            const P = function(e) {
                 var t = e.product,
                     a = e.onClick,
                     n = void 0 === a ? function() {} : a,
@@ -148,7 +148,7 @@
                     ref: s,
                     "aria-label": "Product Status tooltip"
                 }, C.createElement(w.$1, {
-                    icon: A.faCircleInfo,
+                    icon: S.faCircleInfo,
                     className: "tw-text-placeholder-text"
                 })), C.createElement(D.Z, {
                     isOpen: c,
@@ -167,10 +167,10 @@
                     neutral: !0,
                     className: "tw-w-9 tw-h-9"
                 }, C.createElement(w.$1, {
-                    icon: S.$
+                    icon: A.$
                 })))
             };
-            var P = ["file"],
+            var Z = ["file"],
                 O = ["imageId"];
 
             function J(e, t) {
@@ -201,32 +201,32 @@
                     x = e.products,
                     k = void 0 === x ? [] : x,
                     L = e.productsLoading,
-                    S = void 0 !== L && L,
-                    A = e.listingType,
+                    A = void 0 !== L && L,
+                    S = e.listingType,
                     J = e.editedListing,
                     R = void 0 === J ? {} : J,
                     j = e.originalListing,
-                    z = e.isEditing,
-                    V = void 0 !== z && z,
-                    q = (0, I.I0)(),
+                    V = e.isEditing,
+                    q = void 0 !== V && V,
+                    z = (0, I.I0)(),
                     M = (0, I.v9)((function(e) {
                         return e.listingFlow
                     })),
                     _ = M.selectedListingType,
-                    U = M.selectedProducts,
-                    $ = M.productIds,
-                    B = (0, C.useState)(F(F({
+                    $ = M.selectedProducts,
+                    B = M.productIds,
+                    U = (0, C.useState)(F(F({
                         displayName: (null == R ? void 0 : R.displayName) || "",
                         description: (null == R ? void 0 : R.description) || "",
                         priceTokens: (null == R ? void 0 : R.priceTokens) || 100,
-                        products: $ || (null == R ? void 0 : R.productIds) || []
-                    }, A === b.ft.DURATION && {
+                        products: B || (null == R ? void 0 : R.productIds) || []
+                    }, S === b.ft.DURATION && {
                         duration: (null == R ? void 0 : R.duration) || 1,
                         durationType: (null == R ? void 0 : R.durationType) || b.PG.DAY
-                    }), A === b.ft.INSTANT && {
+                    }), S === b.ft.INSTANT && {
                         quantifiable: (null == R ? void 0 : R.quantifiable) || !1
                     })),
-                    Y = (0, i.Z)(B, 2),
+                    Y = (0, i.Z)(U, 2),
                     G = Y[0],
                     H = Y[1],
                     K = (0, h.Dy)((0, h.VT)(h.we, {
@@ -268,27 +268,32 @@
                     Te = Ie[0],
                     De = Ie[1],
                     Le = (0, C.useMemo)((function() {
-                        return (U || []).map((function(e) {
+                        return ($ || []).map((function(e) {
                             return e.id
                         }))
-                    }), [U]),
+                    }), [$]),
                     Xe = (0, C.useMemo)((function() {
-                        return 1 === U.length && U[0].productType === b.Pm.AVATAR
-                    }), [U]),
+                        return 1 === $.length && $[0].productType === b.Pm.AVATAR
+                    }), [$]),
+                    Ae = (0, C.useMemo)((function() {
+                        return $.some((function(e) {
+                            return e.productType === b.Pm.AVATAR
+                        }))
+                    }), [$]),
                     Se = (0, N.Ms)({
                         listingId: R.id
                     }, {
                         skip: !R.id
                     }),
-                    Ae = Se.data;
+                    Pe = Se.data;
                 Se.isFetching;
                 (0, C.useEffect)((function() {
                     g(G)
                 }), [G]);
                 (0, C.useEffect)((function() {
-                    return document.addEventListener("mousedown", Je),
+                    return document.addEventListener("mousedown", Fe),
                         function() {
-                            document.removeEventListener("mousedown", Je)
+                            document.removeEventListener("mousedown", Fe)
                         }
                 }), []), (0, C.useEffect)((function() {
                     var e = function(e) {
@@ -312,7 +317,7 @@
                             })
                         }))) : i ? (se(a), void H((function(e) {
                             e.file;
-                            return F(F({}, (0, r.Z)(e, P)), {}, {
+                            return F(F({}, (0, r.Z)(e, Z)), {}, {
                                 imageId: a
                             })
                         }))) : (se(l), void H((function(e) {
@@ -322,7 +327,7 @@
                             })
                         })))
                     },
-                    Pe = function(e) {
+                    Oe = function(e) {
                         var t = e.target,
                             a = t.name,
                             n = t.value;
@@ -331,7 +336,7 @@
                             return g(t), t
                         })), te(F(F({}, ee), {}, (0, l.Z)({}, a, e.target.checkValidity())))
                     },
-                    Oe = function() {
+                    Je = function() {
                         Ze({
                             fileId: null,
                             fileBlob: null
@@ -343,17 +348,17 @@
                             })
                         }))
                     },
-                    Je = function(e) {
+                    Fe = function(e) {
                         he.current && !he.current.contains(e.target) && be(!1)
                     },
-                    Fe = (0, C.useMemo)((function() {
+                    Re = (0, C.useMemo)((function() {
                         return k && k.filter((function(e) {
                             return !(null != Le && Le.includes(e.id)) && e.productType !== b.Pm.ROLE && ("permanent" === _ || e.productType !== b.Pm.AVATAR) && (!ke || (e.id.toLowerCase().includes(ke.trim().toLowerCase()) || e.displayName.toLowerCase().includes(ke.trim().toLowerCase())))
                         })) || []
-                    }), [U, k, ke, Le]);
+                    }), [$, k, ke, Le]);
                 return (0, C.useEffect)((function() {
                     if (Xe) {
-                        var e = U[0];
+                        var e = $[0];
                         H((function(t) {
                             return F(F({}, t), {}, {
                                 displayName: e.displayName,
@@ -364,11 +369,11 @@
                             fileId: e.imageId
                         })
                     }
-                }), [Xe]), C.createElement(C.Fragment, null, S && C.createElement("div", {
+                }), [Xe]), C.createElement(C.Fragment, null, A && C.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, C.createElement(w.yK, {
                     loading: !0
-                })), !S && C.createElement(w.JX, null, C.createElement(X, {
+                })), !A && C.createElement(w.JX, null, C.createElement(X, {
                     isOpen: Te,
                     onCloseCallback: function() {
                         return De(!1)
@@ -393,18 +398,18 @@
                     onFocus: function() {
                         be(!0)
                     },
-                    disabled: U.length >= b._1
+                    disabled: $.length >= b._1
                 }), C.createElement("small", {
                     className: "tw-text-placeholder-text tw-mb-5"
-                }, "You must choose 1 to ", b._1, " products."), fe && U.length < b._1 && C.createElement("div", {
-                    role: "list",
+                }, "You must choose 1 to ", b._1, " products."), fe && $.length < b._1 && C.createElement("ul", {
                     "aria-label": "Available Products List",
                     className: "tw-bottom-[120px] tw-border-2 tw-border-solid tw-rounded-lg tw-border-button-bg tw-bg-[#07242B] tw-p-5 tw-gap-3 tw-max-h-[400px] tw-h-[400px] tw-overflow-y-auto tw-absolute tw-z-10 tw-w-full tw-top-[105px] sm:tw-top-[80px] tw-min-h-[200px]"
                 }, C.createElement("p", {
                     className: "tw-mb-3"
-                }, "Available Products"), Fe.length ? Fe.map((function(e) {
-                    return C.createElement(C.Fragment, {
-                        key: e.id
+                }, "Available Products"), Re.length ? Re.map((function(e) {
+                    return C.createElement("li", {
+                        key: e.id,
+                        className: "tw-list-none"
                     }, C.createElement(w.X2, {
                         product: e,
                         className: "tw-gap-3 tw-flex-wrap"
@@ -417,7 +422,7 @@
                     }), C.createElement(w.JX, {
                         className: "tw-flex-1 tw-overflow-hidden"
                     }, C.createElement(w.X2, {
-                        className: "tw-gap-2 tw-items-center tw-mb-1"
+                        className: "tw-gap-2 tw-items-center tw-mb-1 tw-flex-wrap"
                     }, C.createElement("p", {
                         className: "tw-mb-0 tw-text-highlight tw-font-bold tw-break-words"
                     }, e.displayName), C.createElement(p.DR, {
@@ -430,7 +435,7 @@
                         containerClasses: "tw-w-full sm:tw-w-[160px] tw-self-center",
                         onClick: function(t) {
                             var a;
-                            a = e, Xe && Oe(), q((0, y.H_)(a)), H((function(e) {
+                            a = e, Xe && Je(), z((0, y.H_)(a)), H((function(e) {
                                 return F(F({}, e), {}, {
                                     products: [].concat((0, n.Z)(e.products), [a.id])
                                 })
@@ -440,8 +445,10 @@
                     }, "Add")), C.createElement("hr", {
                         className: "tw-bg-[#07242B] tw-font-medium tw-border tw-border-solid"
                     }))
-                })) : C.createElement("div", null, C.createElement("em", null, "No matching products!")))), C.createElement(w.JX, {
-                    className: "tw-gap-2 ".concat(0 !== U.length && "tw-mb-5")
+                })) : C.createElement("li", {
+                    className: "tw-list-none"
+                }, C.createElement("em", null, "No matching products!")))), C.createElement(w.JX, {
+                    className: "tw-gap-2 ".concat(0 !== $.length && "tw-mb-5")
                 }, C.createElement(h.LB, {
                     sensors: K,
                     collisionDetection: h.pE,
@@ -449,14 +456,14 @@
                         var t = e.active,
                             a = e.over;
                         if (a && t.id !== a.id) {
-                            var n = U.findIndex((function(e) {
+                            var n = $.findIndex((function(e) {
                                     return e.id === t.id
                                 })),
-                                r = U.findIndex((function(e) {
+                                r = $.findIndex((function(e) {
                                     return e.id === a.id
                                 })),
-                                l = (0, v.Rp)(U, n, r);
-                            q((0, y.H8)(l)), H((function(e) {
+                                l = (0, v.Rp)($, n, r);
+                            z((0, y.H8)(l)), H((function(e) {
                                 return F(F({}, e), {}, {
                                     products: l.map((function(e) {
                                         return e.id
@@ -468,22 +475,22 @@
                 }, C.createElement(v.Fo, {
                     items: Le,
                     strategy: v.qw
-                }, 0 !== U.length && U.map((function(e) {
+                }, 0 !== $.length && $.map((function(e) {
                     return C.createElement(w.TR, {
                         key: e.id,
                         id: e.id
-                    }, C.createElement(Z, {
+                    }, C.createElement(P, {
                         product: e,
                         key: e.id,
                         onClick: function() {
                             return function(e) {
-                                if (V) {
+                                if (q) {
                                     var t, a = null == j || null === (t = j.products) || void 0 === t ? void 0 : t.some((function(t) {
                                         return t.avatarId === e.avatarId
                                     }));
-                                    if ((null == e ? void 0 : e.productType) === b.Pm.AVATAR && a && Ae) return void De(!0)
+                                    if ((null == e ? void 0 : e.productType) === b.Pm.AVATAR && a && Pe) return void De(!0)
                                 }
-                                Xe && Oe(), q((0, y.Ds)(e)), H((function(t) {
+                                Xe && Je(), z((0, y.Ds)(e)), H((function(t) {
                                     return F(F({}, t), {}, {
                                         products: t.products.filter((function(t) {
                                             return t !== e.id
@@ -500,10 +507,10 @@
                     color: "#000000",
                     iconColor: "#DADADA",
                     hideIcon: !0,
-                    icon: o.sq,
+                    icon: c.sq,
                     className: "tw-mb-5 tw-p-5 tw-border-2 tw-rounded-lg"
                 }, "The listing thumbnail, name and description will be inherited from your avatar details. To make changes, head over to the", " ", C.createElement(T.rU, {
-                    to: "/home/avatar/".concat(null === (t = U[0]) || void 0 === t ? void 0 : t.avatarId),
+                    to: "/home/avatar/".concat(null === (t = $[0]) || void 0 === t ? void 0 : t.avatarId),
                     className: "hover:tw-text-teal-accent"
                 }, "avatar page"), "."), C.createElement("p", {
                     className: "tw-text-lg tw-font-bold"
@@ -545,7 +552,7 @@
                     maxLength: 64,
                     disabled: Xe,
                     value: G.displayName,
-                    onChange: Pe
+                    onChange: Oe
                 }), C.createElement("small", {
                     className: "tw-text-placeholder-text"
                 }, G.displayName.length, "/64")), C.createElement(w.JX, {
@@ -560,12 +567,12 @@
                     name: "description",
                     label: "Description",
                     value: G.description,
-                    onChange: Pe
+                    onChange: Oe
                 }), C.createElement("small", {
                     className: "tw-text-placeholder-text"
                 }, G.description.length, "/256")))), C.createElement(w.JX, {
                     className: "tw-gap-5"
-                }, V && C.createElement(w.JX, {
+                }, q && C.createElement(w.JX, {
                     className: "tw-gap-2"
                 }, C.createElement("label", {
                     htmlFor: "id",
@@ -582,7 +589,7 @@
                     },
                     "aria-label": "Listing ID tooltip"
                 }, C.createElement(w.$1, {
-                    icon: o.sq,
+                    icon: c.sq,
                     className: "tw-text-light-grey"
                 })), C.createElement(D.Z, {
                     isOpen: Ne,
@@ -606,7 +613,7 @@
                     className: "tw-w-[40px] tw-h-[40px]",
                     onClick: function() {
                         navigator.clipboard.writeText(R.id).then((function() {
-                            q((0, d.d)({
+                            z((0, d.d)({
                                 title: "Copied listing ID",
                                 icon: u.f8,
                                 message: "Listing ID Copied!",
@@ -615,7 +622,7 @@
                             }))
                         })).catch((function(e) {
                             var t, a;
-                            q((0, d.d)({
+                            z((0, d.d)({
                                 title: "Failed to copy listing ID",
                                 icon: m.eH,
                                 message: null !== (t = null === (a = res.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== t ? t : "Failed to copy listing ID",
@@ -625,8 +632,8 @@
                         }))
                     }
                 }, C.createElement(w.$1, {
-                    icon: c.kZ
-                })))), A && A === b.ft.DURATION && C.createElement(w.JX, {
+                    icon: o.kZ
+                })))), S && S === b.ft.DURATION && C.createElement(w.JX, {
                     className: "tw-max-w-[270px] tw-gap-2"
                 }, C.createElement("label", {
                     htmlFor: "duration"
@@ -642,7 +649,7 @@
                     min: b.nD[G.durationType].min,
                     max: b.nD[G.durationType].max,
                     value: G.duration,
-                    onChange: Pe,
+                    onChange: Oe,
                     step: "1"
                 }), C.createElement(w.Lt, {
                     name: "durationType",
@@ -658,23 +665,39 @@
                 })), C.createElement("small", {
                     className: "tw-text-placeholder-text"
                 }, "Starts immediately after purchasing.")), C.createElement(w.JX, {
-                    className: "md:tw-max-w-[270px]"
+                    className: "tw-gap-2"
                 }, C.createElement("label", {
-                    htmlFor: "priceTokens",
-                    className: "tw-mb-2"
+                    htmlFor: "priceTokens"
                 }, "Price in VRChat Credits"), C.createElement(w.II, {
+                    className: "md:tw-max-w-[270px]",
                     name: "priceTokens",
                     id: "priceTokens",
                     type: "number",
                     inputmode: "numeric",
                     pattern: "\\d*",
-                    max: A === b.ft.PERMANENT ? b.YC : b._C,
+                    max: S === b.ft.PERMANENT ? b.YC : b._C,
                     min: b.zD,
                     step: "1",
                     label: "Price in VRChat Credits",
                     value: G.priceTokens,
-                    onChange: Pe
-                })), A && A === b.ft.INSTANT && C.createElement(w.X2, {
+                    onChange: Oe
+                }), Ae && C.createElement(w.qX, {
+                    type: "warn",
+                    hideIcon: !0,
+                    slim: !0
+                }, C.createElement("div", {
+                    className: "tw-flex tw-gap-2 tw-items-center"
+                }, C.createElement(w.$1, {
+                    icon: c.sq,
+                    className: "tw-text-warning"
+                }), C.createElement("small", {
+                    className: "tw-text-warning",
+                    slim: !0
+                }, "Avatars priced at ", b.AB, " VRC Credits and above will appear in Avatar marketplace. See the", " ", C.createElement("a", {
+                    href: "https://creators.vrchat.com/economy/guidelines/#avatars",
+                    target: "_blank",
+                    rel: "noreferrer"
+                }, "Content Guidelines"), " ", "for how to price your avatar.")))), S && S === b.ft.INSTANT && C.createElement(w.X2, {
                     className: "tw-bg-[#252A30] tw-p-5 tw-rounded-lg tw-mb-5"
                 }, C.createElement(w.JX, {
                     className: "tw-flex-1"
@@ -878,4 +901,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cd36199ce579d34af7e555bb6a306135bf9e78b192f5b046773a50ac862d827f.js.map
+//# sourceMappingURL=274918cd6fab415d75feb1f8a9f06f17bbec4ce781dbb8ed998875f88e334767.js.map

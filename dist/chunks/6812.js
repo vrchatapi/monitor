@@ -39,7 +39,7 @@
                 v = a.n(w),
                 z = a(56176),
                 S = a.n(z);
-            const k = function(e) {
+            const Z = function(e) {
                 var t = e.subscription,
                     a = e.initialGift,
                     n = e.tiny,
@@ -58,7 +58,7 @@
                         return v()(e).format("ll")
                     },
                     x = "active" === c && a ? "paused" : c;
-                return n ? s.createElement(Z, {
+                return n ? s.createElement(k, {
                     className: r,
                     "aria-label": "Tiny VRCPlus ".concat(m ? "Gifted" : "Recurring", " Subscription Card")
                 }, s.createElement("h4", null, m && s.createElement(d.$1, {
@@ -72,7 +72,7 @@
                     src: {
                         Oculus: "https://assets.vrchat.com/misc/meta-logo.png",
                         Steam: "https://assets.vrchat.com/misc/steam_logo.svg",
-                        Admin: "https://assets.vrchat.com/www/brand/vrchat-logo-white-transparent-background.png"
+                        Admin: "https://assets.vrchat.com/www/favicons/android-chrome-512x512.png"
                     } [r]
                 })), s.createElement(d.Ao, {
                     className: "p-3"
@@ -98,7 +98,7 @@
                     "aria-label": "Open User Page"
                 }, g || a.giftedByDisplayName))))))
             };
-            var Z = (0, l.Z)(d.JX, {
+            var k = (0, l.Z)(d.JX, {
                     target: "e1qexzd28"
                 })({
                     name: "16lfucs",
@@ -172,7 +172,7 @@
                     v = (null == h ? void 0 : h.length) > 0,
                     z = u < (null == y ? void 0 : y.length) - 1,
                     S = u > 0,
-                    Z = !(null !== (t = y[u]) && void 0 !== t && t.isGift);
+                    k = !(null !== (t = y[u]) && void 0 !== t && t.isGift);
                 return s.createElement("div", null, s.createElement(d.$4, null, "Subscriptions"), s.createElement(V, {
                     id: "SubscriptionGrid"
                 }, s.createElement(F, {
@@ -212,17 +212,17 @@
                     xs: "4"
                 }, s.createElement($, {
                     className: z ? "" : "extra-padding"
-                }, S && s.createElement(k, {
+                }, S && s.createElement(Z, {
                     subscription: y[u - 1],
                     tiny: !0
                 })), s.createElement(L, {
                     className: y.length > 1 ? "layer" : ""
-                }, s.createElement(k, {
+                }, s.createElement(Z, {
                     subscription: y[u],
                     tiny: !0
                 })), s.createElement(I, {
                     className: S ? "" : "extra-padding"
-                }, z && s.createElement(k, {
+                }, z && s.createElement(Z, {
                     subscription: y[u + 1],
                     tiny: !0
                 }))), s.createElement(B, {
@@ -238,10 +238,10 @@
                     icon: i._t
                 }), " "))), s.createElement(F, {
                     className: "pt-4 pr-0"
-                }, s.createElement(_, null, s.createElement(k, {
+                }, s.createElement(_, null, s.createElement(Z, {
                     subscription: y[u],
                     initialGift: h.length > 0 ? h[0] : null
-                }))), v && w && Z && s.createElement(F, null, s.createElement(_, {
+                }))), v && w && k && s.createElement(F, null, s.createElement(_, {
                     className: "pt-3"
                 }, s.createElement("p", null, "Payments to your recurring VRC+ subscription will remain paused until all your gifts expire. So sit back, relax and enjoy your gifted subs! 🥳")))), s.createElement(F, {
                     className: "pt-2 pr-0"
@@ -339,4 +339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28511cefadba68fe66e8ce5154f873b11b834d9c92e1457b9ec4d78c23985cb8.js.map
+//# sourceMappingURL=a00551a96674432dd7c8e8d2e7397bcd6b6950642a7ff6e7006ef66323c58e3c.js.map
