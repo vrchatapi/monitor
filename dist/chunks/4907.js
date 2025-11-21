@@ -232,40 +232,41 @@
                         skip: !j
                     }),
                     k = S.data,
-                    N = S.isLoading,
-                    Z = S.isSuccess,
-                    D = (0, g.xS)(),
-                    R = (0, r.Z)(D, 2),
-                    _ = R[0],
-                    I = R[1],
-                    C = I.data,
-                    G = (I.error, I.isLoading),
-                    M = (0, O.y)(),
-                    X = M.data,
-                    z = M.isLoading,
-                    T = 0,
-                    U = 0;
-                if (M.isSuccess && (T = X.constants.GROUPS.MAX_JOINED_PLUS, U = X.constants.GROUPS.MAX_OWNED), (0, a.useEffect)((function() {
-                        t && _({
+                    N = void 0 === k ? [] : k,
+                    Z = S.isLoading,
+                    D = S.isSuccess,
+                    R = (0, g.xS)(),
+                    _ = (0, r.Z)(R, 2),
+                    I = _[0],
+                    C = _[1],
+                    G = C.data,
+                    M = (C.error, C.isLoading),
+                    X = (0, O.y)(),
+                    z = X.data,
+                    T = X.isLoading,
+                    U = 0,
+                    B = 0;
+                if (X.isSuccess && (U = z.constants.GROUPS.MAX_JOINED_PLUS, B = z.constants.GROUPS.MAX_OWNED), (0, a.useEffect)((function() {
+                        t && I({
                             query: t
                         })
                     }), [t]), (0, a.useEffect)((function() {
-                        Z && w(k.filter((function(e) {
+                        D && w(N.filter((function(e) {
                             return e.ownerId === j
                         })).length)
-                    }), [Z]), G || N || z) return a.createElement(c.X2, null, a.createElement(c.JX, {
+                    }), [D]), M || Z || T) return a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "mt-5 w-100 text-center"
                 }, a.createElement(c.UU, null)));
-                var B = n.tagsSet.has("system_supporter") ? "You can only have ".concat(U, " groups at a time. Please delete one of your existing groups to create a new one.") : "You must be a VRC+ supporter to create a group.";
+                var J = n.tagsSet.has("system_supporter") ? "You can only have ".concat(B, " groups at a time. Please delete one of your existing groups to create a new one.") : "You must be a VRC+ supporter to create a group.";
                 return a.createElement("div", null, a.createElement(c.$4, null, "Groups"), a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
-                }, a.createElement(x, null, a.createElement("h2", null, "Groups"), v < U && n.tagsSet.has("system_supporter") && k.length < T || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
+                }, a.createElement(x, null, a.createElement("h2", null, "Groups"), v < B && n.tagsSet.has("system_supporter") && N.length < U || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
                     to: "/home/groups/create"
                 }, a.createElement(c.zx, null, a.createElement(c.$1, {
                     icon: i.r8
                 }), " Create Group")) : a.createElement(c.zx, {
                     disabled: !0,
-                    title: B
+                    title: J
                 }, a.createElement(c.$1, {
                     icon: i.r8
                 }), " Create Group")), a.createElement("form", {
@@ -276,10 +277,10 @@
                     searchString: m,
                     defaultValue: t,
                     placeholder: "Enter a group short code, name or url to join"
-                })))), a.createElement("br", null), t ? (null == C ? void 0 : C.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
+                })))), a.createElement("br", null), t ? (null == G ? void 0 : G.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
                 }, a.createElement("h3", null, 'Results for "', t, '"'), a.createElement(y, {
-                    groupResults: C
+                    groupResults: G
                 }))) : a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "mt-5 w-100 text-center"
                 }, a.createElement("h4", null, 'Looks like "', t, "\" didn't bring back any groups!"), a.createElement("h6", null, "Try searching again, or ", a.createElement(s.rU, {
@@ -563,4 +564,4 @@
         }
     }
 ]);
-//# sourceMappingURL=990b46919a74dee1037ebf7ff7ac67afd4a9d1d334f7e9490cbf4d422f446ceb.js.map
+//# sourceMappingURL=dae4131454425d6c86d7d388668f111f4f6e86ea56dca8d1d22e2887c0988e98.js.map

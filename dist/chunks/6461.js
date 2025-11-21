@@ -1796,8 +1796,8 @@
                     $e = Xe.error,
                     Be = Xe.isSuccess,
                     _e = (0, h.Nr)(Z, 1400),
-                    He = (0, h.Tb)(Qe, 300),
-                    Qe = X || Q,
+                    He = X || Q,
+                    Qe = (0, h.Tb)(He, 300),
                     Je = V || J || se || Ee || qe || We || Ce,
                     et = W || ee || ue || xe || ze || $e || Se,
                     tt = (0, m.useMemo)((function() {
@@ -1937,8 +1937,8 @@
                     type: "error",
                     title: "Error",
                     className: "tw-my-2"
-                }, (null == W || null === (rt = W.data) || void 0 === rt ? void 0 : rt.error.message) || "There was an error loading the avatar."));
-                if (!Y || He || Qe) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
+                }, (null == W || null === (rt = W.data) || void 0 === rt || null === (rt = rt.error) || void 0 === rt ? void 0 : rt.message) || "There was an error loading the avatar."));
+                if (!Y || Qe || He) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
                     loading: !0
                 }));
                 var it, ct = "";
@@ -2262,4 +2262,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ccffd98f936a9697adf245ee2e4ff2645f54a6d3be7ba8e73b34559a7cc4d366.js.map
+//# sourceMappingURL=9bf1660b8874a8a983681bdabff7f9968b79fd6e2b1dc5babb0809a205a21967.js.map

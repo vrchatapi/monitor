@@ -42,8 +42,8 @@
                 c = n(20821),
                 i = n(67992),
                 l = n(81511),
-                a = n(67294),
-                o = n(32981),
+                o = n(67294),
+                a = n(32981),
                 s = n(58877),
                 u = n(34698),
                 m = n(25062),
@@ -79,7 +79,7 @@
                     n = e.userId,
                     r = e.isAdmin,
                     c = void 0 !== r && r,
-                    i = (0, o.I0)(),
+                    i = (0, a.I0)(),
                     s = t.created_at,
                     u = t.createdAt,
                     m = t.details,
@@ -97,42 +97,42 @@
                             isAdmin: c
                         }))
                     };
-                return a.createElement(I.e5, {
+                return o.createElement(I.e5, {
                     seen: !1
-                }, a.createElement(N.Z, null, a.createElement(k.Z, {
+                }, o.createElement(N.Z, null, o.createElement(k.Z, {
                     tag: "h4"
-                }, a.createElement(d.X2, {
+                }, o.createElement(d.X2, {
                     className: "align-items-center justify-content-between"
-                }, a.createElement(d.X2, {
+                }, o.createElement(d.X2, {
                     className: "align-items-center"
-                }, a.createElement(d.$1, {
+                }, o.createElement(d.$1, {
                     icon: l.FU,
                     size: "sm"
-                }), " ", a.createElement("span", null, a.createElement("strong", null, a.createElement(f.rU, {
+                }), " ", o.createElement("span", null, o.createElement("strong", null, o.createElement(f.rU, {
                     to: "/home/user/".concat(g)
-                }, y)), a.createElement("small", null, z[E] && a.createElement(a.Fragment, null, "— ", a.createElement("i", null, z[E])), " — ", j()(s || u).fromNow()))), a.createElement(d.X2, null, a.createElement(x.Z, {
+                }, y)), o.createElement("small", null, z[E] && o.createElement(o.Fragment, null, "— ", o.createElement("i", null, z[E])), " — ", j()(s || u).fromNow()))), o.createElement(d.X2, null, o.createElement(x.Z, {
                     onClick: Z
-                })))), b && a.createElement("img", {
+                })))), b && o.createElement("img", {
                     src: m.imageUrl,
                     alt: "Invite thumbnail"
-                }), a.createElement(F.Z, null, a.createElement(U.Z, {
+                }), o.createElement(F.Z, null, o.createElement(U.Z, {
                     userId: g,
                     slim: !0
-                }), a.createElement("div", null, "friendRequest" === t.type ? a.createElement("div", null, "would like to be your friend!", a.createElement("hr", null), a.createElement("div", null, a.createElement(I.db, {
+                }), o.createElement("div", null, "friendRequest" === t.type ? o.createElement("div", null, "would like to be your friend!", o.createElement("hr", null), o.createElement("div", null, o.createElement(I.db, {
                     onClick: function() {
                         return i((0, p.FC)({
                             notificationId: h
                         }))
                     },
                     color: "primary"
-                }, a.createElement(d.$1, {
+                }, o.createElement(d.$1, {
                     icon: C.u8
-                }), " Accept"), a.createElement(I.db, {
+                }), " Accept"), o.createElement(I.db, {
                     onClick: Z,
                     color: "secondary"
-                }, a.createElement(d.$1, {
+                }, o.createElement(d.$1, {
                     icon: R.b
-                }), " Ignore"))) : (console.warn("Missing/Unknown Notification Type:", t), a.createElement("div", null, a.createElement("p", null, v)))))))
+                }), " Ignore"))) : (console.warn("Missing/Unknown Notification Type:", t), o.createElement("div", null, o.createElement("p", null, v)))))))
             };
 
             function P(e) {
@@ -182,24 +182,24 @@
                             t = e.ignoredFriendRequests,
                             n = (e.ignoredFriendRequestsOffset, e.ignoredFriendRequestsLoading),
                             r = t.map((function(e) {
-                                return a.createElement(L, {
+                                return o.createElement(L, {
                                     notification: e,
                                     key: e.id,
                                     ignored: !0
                                 })
                             }));
-                        return 0 === t.length ? a.createElement("div", null) : a.createElement("div", {
+                        return 0 === t.length ? o.createElement("div", null) : o.createElement("div", {
                             className: (0, Z.iv)({
                                 name: "lutbjm",
                                 styles: "margin-top:50px"
                             })
-                        }, a.createElement("h3", null, "Ignored Friend Requests"), a.createElement("p", null, "Users in this list won't be able to send you friend requests again until you remove them from this list. "), r, a.createElement("center", null, n && a.createElement(O.Z, null), !n && a.createElement(u.Z, {
+                        }, o.createElement("h3", null, "Ignored Friend Requests"), o.createElement("p", null, "Users in this list won't be able to send you friend requests again until you remove them from this list. "), r, o.createElement("center", null, n && o.createElement(O.Z, null), !n && o.createElement(u.Z, {
                             onClick: this.loadMore
                         }, "Load More")))
                     }
                 }]), n
-            }(a.Component);
-            const A = (0, o.$j)((function(e) {
+            }(o.Component);
+            const A = (0, a.$j)((function(e) {
                 return {
                     ignoredFriendRequests: e.notifications.ignoredFriendRequests,
                     ignoredFriendRequestsOffset: e.notifications.ignoredFriendRequestsOffset,
@@ -212,104 +212,105 @@
                     var t = e.type,
                         n = e.n,
                         c = e.slim,
-                        i = a.useState(n || 10),
+                        i = o.useState(n || 10),
                         l = (0, r.Z)(i, 1)[0],
-                        s = (0, o.v9)((function(e) {
+                        s = (0, a.v9)((function(e) {
                             return e.notifications.notifications
                         })),
-                        u = a.useMemo((function() {
+                        u = o.useMemo((function() {
                             return null == t ? s : "other" === t ? s.filter((function(e) {
                                 return "friendRequest" !== e.type && "invite" !== e.type && "group.invite" !== e.type
                             })) : s.filter((function(e) {
                                 return e.type === t
                             }))
-                        }), [s, t]).slice(0, l).map((function(e) {
-                            return a.createElement(S.Z, {
+                        }), [s, t]).slice(0, l).map((function(e, t) {
+                            var n;
+                            return o.createElement(S.Z, {
                                 notification: e,
-                                key: e.id,
+                                key: null !== (n = null == e ? void 0 : e.id) && void 0 !== n ? n : t,
                                 slim: c
                             })
                         }));
-                    return a.createElement("div", {
+                    return o.createElement("div", {
                         className: (0, Z.iv)({
                             name: "1azpx8r",
                             styles: "margin-bottom:20px"
                         })
-                    }, a.createElement("div", {
+                    }, o.createElement("div", {
                         className: "mt-2"
                     }, u))
                 },
                 X = function() {
-                    var e = (0, o.I0)(),
-                        t = a.useState(null),
+                    var e = (0, a.I0)(),
+                        t = o.useState(null),
                         n = (0, r.Z)(t, 2),
                         v = n[0],
                         g = n[1],
-                        y = (0, o.v9)((function(e) {
+                        y = (0, a.v9)((function(e) {
                             return e.notifications.pushNotifications
                         })),
-                        E = (0, o.v9)((function(e) {
+                        E = (0, a.v9)((function(e) {
                             return e.notifications.notifications
                         })),
                         h = (0, D.XJ)(),
                         b = (0, r.Z)(h, 1)[0];
-                    return a.createElement("div", null, a.createElement(d.$4, null, "Messages"), a.createElement("h3", null, "Messages", a.createElement(s.Z, {
+                    return o.createElement("div", null, o.createElement(d.$4, null, "Messages"), o.createElement("h3", null, "Messages", o.createElement(s.Z, {
                         className: "tw-float-right"
-                    }, a.createElement(u.Z, {
+                    }, o.createElement(u.Z, {
                         color: null == v ? "primary" : "secondary",
                         onClick: function() {
                             g(null)
                         }
-                    }, "All"), a.createElement(u.Z, {
+                    }, "All"), o.createElement(u.Z, {
                         color: "friendRequest" === v ? "primary" : "secondary",
                         onClick: function() {
                             g("friendRequest")
                         }
-                    }, "Friend Requests"), a.createElement(u.Z, {
+                    }, "Friend Requests"), o.createElement(u.Z, {
                         color: "invite" === v ? "primary" : "secondary",
                         onClick: function() {
                             g("invite")
                         }
-                    }, "World Invites"), a.createElement(u.Z, {
+                    }, "World Invites"), o.createElement(u.Z, {
                         color: "group.invite" === v ? "primary" : "secondary",
                         onClick: function() {
                             g("group.invite")
                         }
-                    }, "Group Invites"), a.createElement(u.Z, {
+                    }, "Group Invites"), o.createElement(u.Z, {
                         color: "other" === v ? "primary" : "secondary",
                         onClick: function() {
                             g("other")
                         }
-                    }, "Other"))), a.createElement("div", {
+                    }, "Other"))), o.createElement("div", {
                         className: "text-center mb-3 pt-2"
-                    }, a.createElement(s.Z, null, a.createElement(f.rU, {
+                    }, o.createElement(s.Z, null, o.createElement(f.rU, {
                         to: "/home/messages",
                         className: E.length > 0 ? "btn btn-primary" : "btn btn-outline-primary"
-                    }, a.createElement(d.$1, {
+                    }, o.createElement(d.$1, {
                         icon: l.FU
-                    }), " ", a.createElement(m.Z, null, E.length)), a.createElement(u.Z, {
+                    }), " ", o.createElement(m.Z, null, E.length)), o.createElement(u.Z, {
                         color: y ? "primary" : "outline-primary",
                         title: "Push Notifications",
                         onClick: function() {
                             e(y ? (0, p.gr)() : (0, p.Wj)())
                         }
-                    }, a.createElement(d.$1, {
+                    }, o.createElement(d.$1, {
                         icon: i.qm
-                    }), "  Push"))), E.length > 0 && a.createElement("div", null, null == v && a.createElement("div", {
+                    }), "  Push"))), E.length > 0 && o.createElement("div", null, null == v && o.createElement("div", {
                         className: "text-center mb-3"
-                    }, a.createElement(u.Z, {
+                    }, o.createElement(u.Z, {
                         color: "danger",
                         onClick: function() {
                             b(), e((0, p.L1)())
                         }
-                    }, a.createElement(d.$1, {
+                    }, o.createElement(d.$1, {
                         icon: c.Rp
-                    }), " Clear All Messages", " ")), a.createElement(T, {
+                    }), " Clear All Messages", " ")), o.createElement(T, {
                         type: v,
                         n: 20
-                    })), 0 === E.length && a.createElement("div", {
+                    })), 0 === E.length && o.createElement("div", {
                         className: "text-center"
-                    }, " No messages for you right now! "), a.createElement("br", null), a.createElement(A, null))
+                    }, " No messages for you right now! "), o.createElement("br", null), o.createElement(A, null))
                 }
         },
         54610: (e, t, n) => {
@@ -320,8 +321,8 @@
                 c = n(45697),
                 i = n.n(c),
                 l = n(94184),
-                a = n.n(l),
-                o = n(22040),
+                o = n.n(l),
+                a = n(22040),
                 s = ["className", "cssModule", "innerRef", "tag"];
 
             function u() {
@@ -353,7 +354,7 @@
                 className: i().string,
                 cssModule: i().object,
                 innerRef: i().oneOfType([i().object, i().string, i().func]),
-                tag: o.iC
+                tag: a.iC
             };
 
             function d(e) {
@@ -363,7 +364,7 @@
                     i = e.tag,
                     l = void 0 === i ? "div" : i,
                     f = m(e, s),
-                    d = (0, o.mx)(a()(t, "card-body"), n);
+                    d = (0, a.mx)(o()(t, "card-body"), n);
                 return r.createElement(l, u({}, f, {
                     className: d,
                     ref: c
@@ -380,8 +381,8 @@
                 c = n(45697),
                 i = n.n(c),
                 l = n(94184),
-                a = n.n(l),
-                o = n(22040),
+                o = n.n(l),
+                a = n(22040),
                 s = ["className", "cssModule", "tag"];
 
             function u() {
@@ -412,7 +413,7 @@
             var f = {
                 className: i().string,
                 cssModule: i().object,
-                tag: o.iC
+                tag: a.iC
             };
 
             function d(e) {
@@ -421,7 +422,7 @@
                     c = e.tag,
                     i = void 0 === c ? "div" : c,
                     l = m(e, s),
-                    f = (0, o.mx)(a()(t, "card-header"), n);
+                    f = (0, a.mx)(o()(t, "card-header"), n);
                 return r.createElement(i, u({}, l, {
                     className: f
                 }))
@@ -431,4 +432,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72812fdaf15d6e718d93e733dbae1b6522fa00a9622765796a275054ab3fe1be.js.map
+//# sourceMappingURL=c2852283c0934642306be68681d74ba42218505b88d05c4d745930e03d044218.js.map

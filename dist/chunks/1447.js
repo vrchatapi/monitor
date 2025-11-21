@@ -4522,8 +4522,8 @@
                 if (404 === (null == T ? void 0 : T.status)) return null;
                 var P, D = Te[A],
                     q = Pe[A],
-                    z = (0, u.Tq)(B.status).color,
-                    M = B.profilePicOverride || B.currentAvatarThumbnailImageUrl,
+                    z = (0, u.Tq)(null == B ? void 0 : B.status).color,
+                    M = (null == B ? void 0 : B.profilePicOverride) || (null == B ? void 0 : B.currentAvatarThumbnailImageUrl),
                     R = (null === (t = y.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = y.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (l = y.details) || void 0 === l ? void 0 : l.requestMessage);
                 return d.createElement(ke.jm, null, d.createElement(ke.XK, null, d.createElement(Ae.$1, {
                     icon: D
@@ -5459,4 +5459,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d739c12c8d71d092ec09625bfee9de4f7d880dae6cf964d1be30b8a663fe37fc.js.map
+//# sourceMappingURL=1eed7add6d45cbd764bf688b5cb4a524ec1773f52052c31d609ca26599aed898.js.map

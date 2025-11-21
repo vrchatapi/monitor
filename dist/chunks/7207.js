@@ -2325,7 +2325,7 @@
                         groupId: null == b ? void 0 : b.id,
                         transferTargetId: null == Xe || null === (s = Xe.user) || void 0 === s ? void 0 : s.id
                     }, {
-                        skip: !an,
+                        skip: !an || !(null != b && b.id),
                         refetchOnMountOrArgChange: !0
                     }),
                     cn = on.data,
@@ -7114,4 +7114,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cd4aac3a4d3d2acd719abe34d4f98a711496ae4c47dae56433625ea0dc0dc954.js.map
+//# sourceMappingURL=395a46278034d1082dad39f2fc95452a77188367cbd998dd35007491e3140f85.js.map
