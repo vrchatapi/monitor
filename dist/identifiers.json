@@ -6914,6 +6914,7 @@
   "isSystem",
   "isTag",
   "isTextKeyShown",
+  "isThirdPersonViewEnabled",
   "isThisApiSliceAction",
   "isThumbnail",
   "isTiliaStatusError",

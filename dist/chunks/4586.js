@@ -70,8 +70,8 @@
                 b = n(32981),
                 h = n(53637),
                 v = n(95305),
-                y = n(35773),
-                E = n(64258),
+                E = n(35773),
+                y = n(64258),
                 x = n(95168),
                 C = n(91557),
                 N = n(98185),
@@ -109,15 +109,15 @@
                     b = e.contentRestrictionId,
                     h = e.closeModal,
                     v = (0, l.useState)({}),
-                    y = (0, s.Z)(v, 2),
-                    E = y[0],
-                    x = y[1],
+                    E = (0, s.Z)(v, 2),
+                    y = E[0],
+                    x = E[1],
                     C = (0, l.useState)({}),
                     N = (0, s.Z)(C, 2),
                     S = N[0],
                     P = N[1],
                     Z = (null == S ? void 0 : S.mistake) && (null == S ? void 0 : S.consent) && (null == S ? void 0 : S.process),
-                    j = I()(null !== (t = null == E ? void 0 : E.email) && void 0 !== t ? t : "") && (null == E || null === (n = E.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == E || null === (a = E.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == E || null === (r = E.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == E || null === (o = E.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == E || null === (i = E.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == E || null === (m = E.signature) || void 0 === m ? void 0 : m.length) > 0 && Z && (null == E || null === (u = E.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == E || null === (d = E.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
+                    j = I()(null !== (t = null == y ? void 0 : y.email) && void 0 !== t ? t : "") && (null == y || null === (n = y.fullName) || void 0 === n ? void 0 : n.length) > 0 && (null == y || null === (a = y.mailingAddress) || void 0 === a ? void 0 : a.length) > 0 && (null == y || null === (r = y.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == y || null === (o = y.mailingCountry) || void 0 === o ? void 0 : o.length) > 0 && (null == y || null === (i = y.phoneNumber) || void 0 === i ? void 0 : i.length) > 0 && (null == y || null === (m = y.signature) || void 0 === m ? void 0 : m.length) > 0 && Z && (null == y || null === (u = y.signature) || void 0 === u ? void 0 : u.toLowerCase()) === (null == y || null === (d = y.fullName) || void 0 === d ? void 0 : d.toLowerCase()),
                     A = function(e) {
                         P(D(D({}, S), {}, (0, k.Z)({}, e.target.id, e.target.checked)))
                     };
@@ -130,11 +130,11 @@
                     className: "tw-pt-2",
                     id: "claim-name",
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             fullName: e.target.value
                         }))
                     },
-                    value: null == E ? void 0 : E.fullName
+                    value: null == y ? void 0 : y.fullName
                 })), l.createElement("label", {
                     htmlFor: "user-org-name",
                     className: "tw-mb-4"
@@ -142,9 +142,9 @@
                     className: "tw-pt-2",
                     id: "user-org-name",
                     type: "text",
-                    value: null == E ? void 0 : E.organization,
+                    value: null == y ? void 0 : y.organization,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             organization: e.target.value
                         }))
                     }
@@ -157,9 +157,9 @@
                     className: "tw-mb-4"
                 }, "Street", l.createElement(c.II, {
                     id: "owner-mailing-address",
-                    value: null == E ? void 0 : E.mailingAddress,
+                    value: null == y ? void 0 : y.mailingAddress,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
@@ -170,9 +170,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "City", l.createElement(c.II, {
                     id: "owner-mailing-city",
-                    value: null == E ? void 0 : E.mailingCity,
+                    value: null == y ? void 0 : y.mailingCity,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             mailingCity: e.target.value
                         }))
                     }
@@ -181,9 +181,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "State/Province", l.createElement(c.II, {
                     id: "owner-mailing-state-province",
-                    value: null == E ? void 0 : E.mailingStateProvince,
+                    value: null == y ? void 0 : y.mailingStateProvince,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
@@ -192,9 +192,9 @@
                     className: "tw-mb-4 tw-flex-grow"
                 }, "ZIP/Postal Code", l.createElement(c.II, {
                     id: "owner-mailing-postal-code",
-                    value: null == E ? void 0 : E.mailingPostalCode,
+                    value: null == y ? void 0 : y.mailingPostalCode,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
@@ -202,9 +202,9 @@
                     htmlFor: "owner-mailing-country"
                 }, "Country", l.createElement(c.II, {
                     id: "owner-mailing-country",
-                    value: null == E ? void 0 : E.mailingCountry,
+                    value: null == y ? void 0 : y.mailingCountry,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
@@ -215,9 +215,9 @@
                     className: "tw-pt-2",
                     id: "owner-phone",
                     type: "text",
-                    value: null == E ? void 0 : E.phoneNumber,
+                    value: null == y ? void 0 : y.phoneNumber,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
@@ -228,9 +228,9 @@
                     className: "tw-pt-2",
                     id: "owner-email",
                     type: "email",
-                    value: null == E ? void 0 : E.email,
+                    value: null == y ? void 0 : y.email,
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             email: e.target.value
                         }))
                     }
@@ -280,9 +280,9 @@
                 }, "Type your name to provide your digital signature", l.createElement(c.II, {
                     className: "tw-pt-2",
                     id: "owner-signature",
-                    value: null == E || null === (p = E.signature) || void 0 === p ? void 0 : p.toUpperCase(),
+                    value: null == y || null === (p = y.signature) || void 0 === p ? void 0 : p.toUpperCase(),
                     onChange: function(e) {
-                        return x(D(D({}, E), {}, {
+                        return x(D(D({}, y), {}, {
                             signature: e.target.value
                         }))
                     }
@@ -304,7 +304,7 @@
                     onClick: function() {
                         return f({
                             contentId: w,
-                            disputeInfo: E,
+                            disputeInfo: y,
                             contentRestrictionId: b
                         })
                     }
@@ -348,9 +348,9 @@
                     Y = M.isLoading,
                     F = M.isSuccess,
                     $ = M.isError,
-                    q = M.error,
-                    V = (0, l.useState)(null),
-                    X = (0, s.Z)(V, 2),
+                    V = M.error,
+                    q = (0, l.useState)(null),
+                    X = (0, s.Z)(q, 2),
                     H = X[0],
                     B = X[1],
                     J = (0, l.useState)(!1),
@@ -359,13 +359,13 @@
                     Q = G[1];
                 return (0, l.useEffect)((function() {
                     var e;
-                    (T && (B(!1), r((0, E.d)({
+                    (T && (B(!1), r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been submitted successfully.",
                         color: "success",
                         timeout: 7e3
-                    }))), j) && (B(!1), r((0, E.d)({
+                    }))), j) && (B(!1), r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute could not be submitted successfully: ".concat(null == R || null === (e = R.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
@@ -374,16 +374,16 @@
                     })))
                 }), [T, j]), (0, l.useEffect)((function() {
                     var e;
-                    (F && r((0, E.d)({
+                    (F && r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
                         message: "Your dispute has been withdrawn successfully.",
                         color: "success",
                         timeout: 7e3
-                    })), $) && r((0, E.d)({
+                    })), $) && r((0, y.d)({
                         title: "DMCA Dispute",
                         icon: f.Yj,
-                        message: "Failed to withdraw your dispute successfully: ".concat(null == q || null === (e = q.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
+                        message: "Failed to withdraw your dispute successfully: ".concat(null == V || null === (e = V.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "danger",
                         timeout: 7e3
                     }))
@@ -402,7 +402,7 @@
                 }, g.name), l.createElement(c.Ao, null, l.createElement(A, {
                     xs: "12",
                     className: "tw-p-4"
-                }, l.createElement(y.Z, null, l.createElement(v.Z, {
+                }, l.createElement(E.Z, null, l.createElement(v.Z, {
                     xs: "12",
                     md: "3"
                 }, l.createElement("div", {
@@ -420,7 +420,7 @@
                     className: "flex-1"
                 }, l.createElement("h4", null, g.name, l.createElement("span", null, " ", l.createElement("small", null, "—  ", g.authorName))), l.createElement("p", null, g.description)))))), l.createElement(v.Z, {
                     className: "w-100"
-                }, l.createElement(y.Z, {
+                }, l.createElement(E.Z, {
                     style: {
                         "--bs-gutter-x": "1rem"
                     }
@@ -533,8 +533,8 @@
                 Y = n(30856),
                 F = n(17726),
                 $ = n(76409),
-                q = n(34601),
-                V = n(96157),
+                V = n(34601),
+                q = n(96157),
                 X = n(20821),
                 H = n(5147),
                 B = n(47947),
@@ -626,7 +626,7 @@
                         cancelText: "No, keep the world alive"
                     })))
                 },
-                ye = function(e) {
+                Ee = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -639,7 +639,7 @@
                         cancelText: "No, keep the world public"
                     })))
                 },
-                Ee = function(e) {
+                ye = function(e) {
                     var t = e.onConfirm,
                         n = e.onCancel;
                     return l.createElement(c.qX, {
@@ -855,11 +855,11 @@
                     g = (0, x.Tu)(),
                     h = g.trustLevel,
                     v = g.user,
-                    y = (0, x.pc)(),
+                    E = (0, x.pc)(),
                     C = (0, x.BT)({
                         worldId: f,
                         userId: v.id,
-                        isMod: y,
+                        isMod: E,
                         noCache: !0
                     }),
                     N = C.data,
@@ -871,7 +871,7 @@
                     Z = C.refreshWorld,
                     L = void 0 === Z ? function() {} : Z,
                     O = (null == N ? void 0 : N.authorId) === v.id,
-                    j = y || O,
+                    j = E || O,
                     A = (0, b.v9)((function(e) {
                         return e.world.updatedWorld
                     })),
@@ -894,8 +894,8 @@
                     bt = Le.error,
                     ht = Le.loading,
                     vt = Le.publishWorld,
-                    yt = Le.success,
-                    Et = Le.unpublishWorld,
+                    Et = Le.success,
+                    yt = Le.unpublishWorld,
                     xt = l.useState(!1),
                     Ct = (0, s.Z)(xt, 2),
                     Nt = Ct[0],
@@ -919,9 +919,9 @@
                     Yt = l.useState(!1),
                     Ft = (0, s.Z)(Yt, 2),
                     $t = Ft[0],
-                    qt = Ft[1],
-                    Vt = l.useState(!1),
-                    Xt = (0, s.Z)(Vt, 2),
+                    Vt = Ft[1],
+                    qt = l.useState(!1),
+                    Xt = (0, s.Z)(qt, 2),
                     Ht = Xt[0],
                     Bt = Xt[1],
                     Jt = l.useState(!1),
@@ -947,9 +947,9 @@
                     bn = l.useState(null),
                     hn = (0, s.Z)(bn, 2),
                     vn = hn[0],
-                    yn = hn[1],
-                    En = l.useState(!1),
-                    xn = (0, s.Z)(En, 2),
+                    En = hn[1],
+                    yn = l.useState(!1),
+                    xn = (0, s.Z)(yn, 2),
                     Cn = xn[0],
                     Nn = xn[1],
                     kn = function() {
@@ -1034,7 +1034,7 @@
                             return ue().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return cn(!1), e.next = 3, Et();
+                                        return cn(!1), e.next = 3, yt();
                                     case 3:
                                         L();
                                     case 4:
@@ -1109,7 +1109,7 @@
                     }(),
                     jn = function(e) {
                         return function() {
-                            yn(e)
+                            En(e)
                         }
                     },
                     An = function() {
@@ -1119,7 +1119,7 @@
                                     case 0:
                                         return e.next = 2, wt(vn);
                                     case 2:
-                                        return yn(null), e.next = 5, new Promise((function(e) {
+                                        return En(null), e.next = 5, new Promise((function(e) {
                                             return setTimeout(e, 1e3)
                                         }));
                                     case 5:
@@ -1204,7 +1204,7 @@
                                             worldId: f
                                         })));
                                     case 26:
-                                        A.error || m((0, E.d)({
+                                        A.error || m((0, y.d)({
                                             title: "World Info Updated",
                                             icon: r.g4,
                                             message: "You have successfully updated ".concat(null != ce && ce.name ? "world: ".concat(ce.name) : "this world"),
@@ -1280,7 +1280,7 @@
                     Yn = zn.hasUnsupported && !zn.hasSupported && !zn.hasOld,
                     Fn = zn.hasUnsupported && (zn.hasSupported || zn.hasOld),
                     $n = !zn.hasUnsupported && !zn.hasSupported,
-                    qn = l.useMemo((function() {
+                    Vn = l.useMemo((function() {
                         var e, t = new Set(null !== (e = null == ce ? void 0 : ce.tags) && void 0 !== e ? e : []);
                         return {
                             isAdminApproved: t.has("admin_approved"),
@@ -1289,30 +1289,32 @@
                             isLabsFailed: t.has("system_troll"),
                             isWorldDebugEnabled: t.has("debug_allowed"),
                             isAvatarScalingEnabled: !t.has("feature_avatar_scaling_disabled"),
+                            isThirdPersonViewEnabled: !t.has("feature_third_person_view_disabled"),
                             isFocusViewEnabled: !t.has("feature_focus_view_disabled")
                         }
                     }), [null == ce ? void 0 : ce.tags]),
-                    Vn = qn.isAdminApproved,
-                    Xn = qn.isInLabs,
-                    Hn = qn.isLabsLocked,
-                    Bn = qn.isLabsFailed,
-                    Jn = qn.isWorldDebugEnabled,
-                    Gn = qn.isAvatarScalingEnabled,
-                    Kn = (qn.isStickersEnabled, qn.isDroneEnabled, qn.isFocusViewEnabled),
-                    Qn = !("public" === (null == ce ? void 0 : ce.releaseStatus) || Vn || Xn || y || Bn || Hn),
-                    ea = "public" === (null == ce ? void 0 : ce.releaseStatus),
-                    ta = !ea && (y || Vn && Be),
-                    na = Qn && !Be,
-                    aa = Qn && !na && !h.user,
-                    ra = !(null != ce && ce.name) || "" === (null == ce ? void 0 : ce.name),
-                    la = (null != S ? S : 0) > 0,
-                    oa = l.useMemo((function() {
-                        return j && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || la)
-                    }), [j, null == ce ? void 0 : ce.tags, la]),
+                    qn = Vn.isAdminApproved,
+                    Xn = Vn.isInLabs,
+                    Hn = Vn.isLabsLocked,
+                    Bn = Vn.isLabsFailed,
+                    Jn = Vn.isWorldDebugEnabled,
+                    Gn = Vn.isAvatarScalingEnabled,
+                    Kn = Vn.isThirdPersonViewEnabled,
+                    Qn = (Vn.isStickersEnabled, Vn.isDroneEnabled, Vn.isFocusViewEnabled),
+                    ea = !("public" === (null == ce ? void 0 : ce.releaseStatus) || qn || Xn || E || Bn || Hn),
+                    ta = "public" === (null == ce ? void 0 : ce.releaseStatus),
+                    na = !ta && (E || qn && Be),
+                    aa = ea && !Be,
+                    ra = ea && !aa && !h.user,
+                    la = !(null != ce && ce.name) || "" === (null == ce ? void 0 : ce.name),
+                    oa = (null != S ? S : 0) > 0,
                     ia = l.useMemo((function() {
+                        return j && ((null == ce ? void 0 : ce.tags.includes("admin_filter_analytics")) || oa)
+                    }), [j, null == ce ? void 0 : ce.tags, oa]),
+                    ca = l.useMemo((function() {
                         var e;
                         return null == ce || null === (e = ce.tags) || void 0 === e ? void 0 : e.map((function(e) {
-                            if (!y && !e.startsWith("author_tag_")) return null;
+                            if (!E && !e.startsWith("author_tag_")) return null;
                             var t = pe.w.find((function(t) {
                                 return t.tag === e
                             }));
@@ -1325,8 +1327,8 @@
                             }
                         })).filter(Boolean)
                     }), [null == ce ? void 0 : ce.tags]),
-                    ca = Xn ? "In Community Labs" : le()(null == ce ? void 0 : ce.releaseStatus),
-                    sa = null !== (e = null !== (t = null == _ ? void 0 : _.reportCount) && void 0 !== t ? t : null == _ || null === (n = _.feedbackReport) || void 0 === n ? void 0 : n.reportCount) && void 0 !== e ? e : 0;
+                    sa = Xn ? "In Community Labs" : le()(null == ce ? void 0 : ce.releaseStatus),
+                    ma = null !== (e = null !== (t = null == _ ? void 0 : _.reportCount) && void 0 !== t ? t : null == _ || null === (n = _.feedbackReport) || void 0 === n ? void 0 : n.reportCount) && void 0 !== e ? e : 0;
                 return !I && (ce && N || P) ? !I && P ? l.createElement(We, null, l.createElement(Ue, {
                     className: "mt-2 mb-3 align-items-center justify-content-between"
                 }, l.createElement(Ue, {
@@ -1396,7 +1398,7 @@
                     className: "align-items-start flex-column flex-sm-row"
                 }, l.createElement(Re, {
                     className: "order-last order-sm-first w-100 w-sm-auto flex-grow-1"
-                }, l.createElement(qe, {
+                }, l.createElement(Ve, {
                     className: "w-100 w-sm-auto flex-grow-1"
                 }, l.createElement(at, {
                     className: "mt-0"
@@ -1416,7 +1418,7 @@
                     },
                     inputStyle: Ye,
                     className: "mt-2"
-                }), ra && l.createElement(c.qX, {
+                }), la && l.createElement(c.qX, {
                     type: "error",
                     title: "World Name Error",
                     message: "World Name can't be empty",
@@ -1491,14 +1493,14 @@
                     rows: "4",
                     className: "mt-2"
                 }), l.createElement(at, null, "Tags"), l.createElement(Fe, {
-                    value: ia,
+                    value: ca,
                     placeholder: "E.g., adventure, game, chill",
                     suggestions: [],
                     onSelectValue: function(e) {
                         var t, n, a = e.startsWith("system_") || e.startsWith("admin_");
-                        if ((y || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
+                        if ((E || !a) && (null == ce || null === (t = ce.tags) || void 0 === t || !t.includes(e))) {
                             var r = e.replace(/\s/gi, "_").replace(/\W/gi, "");
-                            y && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || me((function(e) {
+                            E && a || (r = "author_tag_".concat(r)), null != ce && null !== (n = ce.tags) && void 0 !== n && n.includes(r) || me((function(e) {
                                 var t;
                                 return Oe(Oe({}, e), {}, {
                                     tags: [].concat((0, T.Z)(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []), [r])
@@ -1516,8 +1518,8 @@
                             })
                         }))
                     },
-                    maxEntries: y ? void 0 : 5,
-                    maxLength: y ? void 0 : 100,
+                    maxEntries: E ? void 0 : 5,
+                    maxLength: E ? void 0 : 100,
                     maxEntriesErrorText: "You can only have up to 5 tags",
                     maxLengthErrorText: "Entered tag is too long",
                     className: "mt-2",
@@ -1528,7 +1530,7 @@
                     className: "py-2 gap-2"
                 }, l.createElement(c.ks, {
                     tags: null == ce ? void 0 : ce.tags,
-                    isMod: y,
+                    isMod: E,
                     onSelectValues: function(e) {
                         me((function(t) {
                             return Oe(Oe({}, t), {}, {
@@ -1655,10 +1657,10 @@
                         }))
                     },
                     className: "me-0 me-sm-2 mb-2 mb-sm-0 flex-grow-1 w-100",
-                    neutral: !Kn,
-                    positive: Kn,
+                    neutral: !Qn,
+                    positive: Qn,
                     expand: !0
-                }, l.createElement(ot, null, "Focus View ", Kn ? "Enabled" : "Disabled"), Kn ? l.createElement(c.$1, {
+                }, l.createElement(ot, null, "Focus View ", Qn ? "Enabled" : "Disabled"), Qn ? l.createElement(c.$1, {
                     width: 20,
                     icon: z.LE
                 }) : l.createElement(c.$1, {
@@ -1684,7 +1686,36 @@
                     href: "https://creators.vrchat.com/worlds/components/vrc_uishape#focus-view",
                     rel: "noreferrer",
                     target: "_blank"
-                }, "Check the docs here.")), l.createElement(at, null, "YouTube Preview Link"), l.createElement(Ue, {
+                }, "Check the docs here.")), l.createElement(at, null, "Third-Person View"), l.createElement(Ue, {
+                    className: "align-items-center w-100 flex-column flex-sm-row mt-2"
+                }, l.createElement(lt, {
+                    type: "button",
+                    "aria-label": "Toggle Third-Person View",
+                    onClick: function() {
+                        ce.tags.includes("feature_third_person_view_disabled") ? me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: e.tags.filter((function(e) {
+                                    return "feature_third_person_view_disabled" !== e
+                                }))
+                            })
+                        })) : me((function(e) {
+                            return Oe(Oe({}, e), {}, {
+                                tags: [].concat((0, T.Z)(e.tags), ["feature_third_person_view_disabled"])
+                            })
+                        }))
+                    },
+                    className: "me-0 me-sm-2 mb-2 mb-sm-0 flex-grow-1 w-100",
+                    neutral: !Kn,
+                    positive: Kn,
+                    expand: !0
+                }, l.createElement(ot, null, "Third-Person View ", Kn ? "Enabled" : "Disabled"), Kn ? l.createElement(c.$1, {
+                    width: 20,
+                    icon: z.LE
+                }) : l.createElement(c.$1, {
+                    width: 20,
+                    icon: U.NB,
+                    disabled: !0
+                }))), l.createElement(at, null, "YouTube Preview Link"), l.createElement(Ue, {
                     className: "align-items-center w-100 flex-column flex-sm-row mt-2"
                 }, l.createElement(c.II, {
                     name: "worldTrailer",
@@ -1749,9 +1780,9 @@
                     className: "align-items-sm-center flex-column flex-sm-row mt-2 w-100 flex-grow-1"
                 }, l.createElement($e, {
                     className: "flex-1 me-0 me-sm-2 mb-2 mb-sm-0"
-                }, ca), l.createElement(Re, {
+                }, sa), l.createElement(Re, {
                     className: "mb-2 mb-sm-0"
-                }, l.createElement(Ue, null, y && Xn && l.createElement(c.zx, {
+                }, l.createElement(Ue, null, E && Xn && l.createElement(c.zx, {
                     className: "px-3 py-1 me-0 me-sm-2",
                     expand: Se,
                     onClick: function() {
@@ -1762,7 +1793,7 @@
                 }, l.createElement(c.$1, {
                     icon: ne.u8,
                     className: "me-2"
-                }), "Promote to Public"), ea && l.createElement(c.zx, {
+                }), "Promote to Public"), ta && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     onClick: function() {
@@ -1770,7 +1801,7 @@
                     },
                     danger: !0,
                     loading: ht
-                }, "Unpublish"), ta && l.createElement(c.zx, {
+                }, "Unpublish"), na && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     onClick: function() {
@@ -1778,7 +1809,7 @@
                     },
                     positive: !0,
                     loading: ht
-                }, "Publish"), Qn && Be && h.user && l.createElement(c.zx, {
+                }, "Publish"), ea && Be && h.user && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     onClick: function() {
@@ -1789,26 +1820,26 @@
                 }, l.createElement(c.$1, {
                     icon: F.jZ,
                     className: "me-2"
-                }), "Publish to Community Labs"), na && l.createElement(c.zx, {
+                }), "Publish to Community Labs"), aa && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     disabled: !0
                 }, l.createElement(c.$1, {
                     icon: U.NB,
                     className: "me-2"
-                }), "You can't publish worlds right now"), aa && l.createElement(c.zx, {
+                }), "You can't publish worlds right now"), ra && l.createElement(c.zx, {
                     className: "px-3 py-1",
                     expand: Se,
                     disabled: !0
                 }, l.createElement(c.$1, {
                     icon: U.NB,
                     className: "me-2"
-                }), "You don't have enough trust to publish worlds, yet.")))), yt && "publish" === Te && l.createElement(c.qX, {
+                }), "You don't have enough trust to publish worlds, yet.")))), Et && "publish" === Te && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now public!"
                 }, l.createElement(i.rU, {
                     to: "/home/world/".concat(ce.id)
-                }, "Check it out!")), yt && "unpublish" === Te && l.createElement(c.qX, {
+                }, "Check it out!")), Et && "unpublish" === Te && l.createElement(c.qX, {
                     type: "success",
                     title: "Your World is now private!",
                     message: "Your world is now private!",
@@ -1822,16 +1853,16 @@
                     onCancel: function() {
                         Nn(!1)
                     }
-                }), on && (y ? l.createElement(ye, {
+                }), on && (E ? l.createElement(Ee, {
                     onConfirm: In,
                     onCancel: Pn
                 }) : l.createElement(he, {
                     onConfirm: In,
                     onCancel: Pn
-                })), nn && (y ? l.createElement(xe, {
+                })), nn && (E ? l.createElement(xe, {
                     onConfirm: Dn,
                     onCancel: Zn
-                }) : Vn && l.createElement(Ee, {
+                }) : qn && l.createElement(ye, {
                     onConfirm: Dn,
                     onCancel: Zn
                 })), gn && l.createElement(Ce, {
@@ -1882,7 +1913,7 @@
                     "aria-checked": $t,
                     "aria-label": $t ? "Hide World Debug Help" : "Show World Debug Help",
                     onClick: function() {
-                        return qt(!$t)
+                        return Vt(!$t)
                     },
                     className: "px-2 py-1",
                     neutral: !0
@@ -1914,7 +1945,7 @@
                     platformName: (null === (a = ke.VT[vn]) || void 0 === a ? void 0 : a.label) || vn,
                     onConfirm: An,
                     onCancel: function() {
-                        yn(null)
+                        En(null)
                     }
                 }), l.createElement(at, null, "World Deletion"), l.createElement(c.zx, {
                     className: "px-3 py-1 mt-2",
@@ -1932,7 +1963,7 @@
                     onCancel: function() {
                         dn(!1)
                     }
-                })))), l.createElement(Ve, {
+                })))), l.createElement(qe, {
                     className: "ms-0 ms-sm-3 mb-3 mb-sm-0"
                 }, l.createElement(Xe, null, l.createElement(c.oI, null, l.createElement(Je, null, l.createElement(Ge, null, l.createElement(Ke, {
                     src: ce.imageUrl,
@@ -1976,7 +2007,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "World Favorites"
-                }, l.createElement(nt, null, "Favorites"), (0, ge.ER)(ce.favorites))), sa > 0 && l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(nt, null, "Favorites"), (0, ge.ER)(ce.favorites))), ma > 0 && l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: B.JH,
                     color: "#54b5c5",
@@ -1984,7 +2015,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "World Reports"
-                }, l.createElement(nt, null, "Reports"), (0, ge.ER)(sa))), la && l.createElement(et, null, l.createElement(c.$1, {
+                }, l.createElement(nt, null, "Reports"), (0, ge.ER)(ma))), oa && l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
                     icon: B.JH,
                     color: "#54b5c5",
@@ -2002,7 +2033,7 @@
                     title: "World Heat"
                 }, l.createElement(nt, null, "Heat"), l.createElement(Ue, {
                     className: "align-items-center"
-                }, y ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
+                }, E ? (0, ge.ER)(ce.heat) : ie()(Math.min(10, ce.heat)).map((function(e) {
                     return l.createElement(c.$1, {
                         key: "heat-".concat(e),
                         size: "md",
@@ -2017,12 +2048,12 @@
                     title: "Cross-Platform"
                 }, l.createElement(c.$1, {
                     width: 20,
-                    icon: V.vq,
+                    icon: q.vq,
                     color: "#54b5c5",
                     className: "me-2"
                 }), "Cross-Platform"), l.createElement(et, null, l.createElement(c.$1, {
                     width: 20,
-                    icon: q.r6,
+                    icon: V.r6,
                     color: "#54b5c5",
                     className: "me-2"
                 }), l.createElement(tt, {
@@ -2052,7 +2083,7 @@
                 }), l.createElement(tt, {
                     role: "group",
                     title: "Creation Date"
-                }, l.createElement(nt, null, "Created"), w()(ce.created_at).format("MMM DD YYYY"))))))), oa && l.createElement("a", {
+                }, l.createElement(nt, null, "Created"), w()(ce.created_at).format("MMM DD YYYY"))))))), ia && l.createElement("a", {
                     href: window.apiUrl("/api/1/worlds/".concat(null == ce ? void 0 : ce.id, "/analytics/redirect")),
                     target: "_blank",
                     className: "mt-2",
@@ -2214,13 +2245,13 @@
                 $e = (0, a.Z)("div", {
                     target: "e7ur3i624"
                 })(Ye, " padding:0.5rem;line-height:1.25;"),
-                qe = (0, a.Z)(Re, {
+                Ve = (0, a.Z)(Re, {
                     target: "e7ur3i623"
                 })({
                     name: "1j03xl7",
                     styles: "background-color:#181b1f;border-radius:8px;padding:0.9rem"
                 }),
-                Ve = (0, a.Z)(Re, {
+                qe = (0, a.Z)(Re, {
                     target: "e7ur3i622"
                 })({
                     name: "1budlv3",
@@ -2386,7 +2417,7 @@
                         }
                     }
                 },
-                yt = function(e) {
+                Et = function(e) {
                     var t = e.worldIds;
                     return {
                         type: "MY_CONTENT_BULK_CHECK_WORLD_STATS",
@@ -2395,7 +2426,7 @@
                         })))
                     }
                 },
-                Et = n(89182),
+                yt = n(89182),
                 xt = n(22202);
 
             function Ct(e, t) {
@@ -2480,8 +2511,8 @@
                     })),
                     h = w.list,
                     v = w.loading,
-                    y = w.loadedAt,
-                    E = w.error,
+                    E = w.loadedAt,
+                    y = w.error,
                     x = w.errorMessage,
                     C = w.allPagesLoaded,
                     N = (0, b.v9)((function(e) {
@@ -2505,16 +2536,16 @@
                     Y = (0, s.Z)(M, 2),
                     F = Y[0],
                     $ = Y[1],
-                    q = l.useState(0),
-                    V = (0, s.Z)(q, 2),
-                    X = V[0],
-                    H = V[1],
+                    V = l.useState(0),
+                    q = (0, s.Z)(V, 2),
+                    X = q[0],
+                    H = q[1],
                     B = l.useRef(0);
                 l.useEffect((function() {
                     if (!v && null != g && g.id) {
-                        var t = !y && 0 === h.length,
+                        var t = !E && 0 === h.length,
                             n = L !== P.current || W !== j.current,
-                            a = Date.now() - y > 6e4;
+                            a = Date.now() - E > 6e4;
                         (t || a || n) && (H(0), B.current = 0, e(vt({
                             userId: null == g ? void 0 : g.id,
                             number: 50,
@@ -2523,11 +2554,11 @@
                             order: W
                         })))
                     }
-                }), [null == g ? void 0 : g.id, L, W, y, v]), l.useEffect((function() {
-                    v || C || !y || (h.length - B.current < 50 ? e({
+                }), [null == g ? void 0 : g.id, L, W, E, v]), l.useEffect((function() {
+                    v || C || !E || (h.length - B.current < 50 ? e({
                         type: "MY_CONTENT_MARK_ALL_PAGES_LOADED"
                     }) : H(B.current + 50))
-                }), [h, v, y, C]), l.useEffect((function() {
+                }), [h, v, E, C]), l.useEffect((function() {
                     B.current !== X && (B.current = X, e(vt({
                         userId: g.id,
                         number: 50,
@@ -2568,7 +2599,7 @@
                             return ue().wrap((function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        if (!v && !E) {
+                                        if (!v && !y) {
                                             t.next = 2;
                                             break
                                         }
@@ -2588,7 +2619,7 @@
                                             t.next = 12;
                                             break
                                         }
-                                        return t.next = 9, e(yt({
+                                        return t.next = 9, e(Et({
                                             worldIds: n.slice(a, a + 2).map((function(e) {
                                                 return e.id
                                             }))
@@ -2607,7 +2638,7 @@
                         }
                     }();
                     t()
-                }), [h, v, E, C]);
+                }), [h, v, y, C]);
                 var J = l.useMemo((function() {
                         return wt()(h, (function(e) {
                             return "public" === e.releaseStatus ? -1 : 1
@@ -2670,11 +2701,11 @@
                     icon: z.LE,
                     disabled: !S,
                     className: "me-1"
-                })))), E && l.createElement(c.qX, {
+                })))), y && l.createElement(c.qX, {
                     type: "error",
                     title: "Failed to load worlds",
                     message: x
-                }), y && 0 === h.length && l.createElement(Lt, {
+                }), E && 0 === h.length && l.createElement(Lt, {
                     role: "note",
                     title: "There are no Worlds here... yet"
                 }, "There are no Worlds here... yet"), l.createElement(Zt, null, v && 0 === (null == h ? void 0 : h.length) ? ie()(0, 6).map((function(e) {
@@ -2683,9 +2714,9 @@
                         height: "400px",
                         className: "mb-2"
                     })
-                })) : !E && G.map((function(e) {
+                })) : !y && G.map((function(e) {
                     var t;
-                    return l.createElement(Et.Z, {
+                    return l.createElement(yt.Z, {
                         key: e.id,
                         world: Nt(Nt({}, e), null !== (t = null == N ? void 0 : N[e.id]) && void 0 !== t ? t : {}),
                         linksToEdit: !0
@@ -2848,8 +2879,8 @@
                 b = n(34604),
                 h = n(23778),
                 v = n(88673),
-                y = n(26128),
-                E = n(47420),
+                E = n(26128),
+                y = n(47420),
                 x = n(29167),
                 C = n(92221),
                 N = n(88302),
@@ -2907,11 +2938,11 @@
                     description: "User"
                 }, {
                     tag: "system_trust_trusted",
-                    icon: E.yS,
+                    icon: y.yS,
                     description: "Known User"
                 }, {
                     tag: "system_trust_veteran",
-                    icon: y.jA,
+                    icon: E.jA,
                     description: "Trusted User"
                 }, {
                     tag: "system_probable_troll",
@@ -3147,4 +3178,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5211448f451705619084d973b3468ca6965e35bc5e8d204eb313d3b588470d9c.js.map
+//# sourceMappingURL=57621d960c50a3b81c368eba63e6839aeb90bbe118ebdc2704ab754750667dbb.js.map
