@@ -233,10 +233,10 @@
                     M = _.isLoading,
                     Y = (_.isSuccess, _.isError, _.error, (0, C.hK)()),
                     B = (0, i.Z)(Y, 2),
-                    H = B[0],
-                    G = B[1],
-                    W = G.isLoading,
-                    K = (G.isSuccess, G.isError, G.error, function() {
+                    G = B[0],
+                    H = B[1],
+                    W = H.isLoading,
+                    K = (H.isSuccess, H.isError, H.error, function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             var t, a, r, l, o, i, c, s = arguments;
                             return m().wrap((function(e) {
@@ -248,7 +248,7 @@
                                         }
                                         return e.abrupt("return");
                                     case 3:
-                                        return e.prev = 3, e.next = 6, H({
+                                        return e.prev = 3, e.next = 6, G({
                                             token: t
                                         }).unwrap();
                                     case 6:
@@ -507,7 +507,7 @@
                 name: "1qck9b",
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
-            const H = function() {
+            const G = function() {
                 var e, t = (0, p.I0)(),
                     n = (0, l.Tu)().user,
                     r = (0, a.useState)(new Set(n.contentFilters)),
@@ -562,7 +562,7 @@
                     }))
                 })), a.createElement("small", null, "VRChat has User Generated Content and relies on its creators to label it appropriately. If you see something that is not labeled correctly, please use our Reporting system so our Moderation team can investigate."))
             };
-            var G = n(4942),
+            var H = n(4942),
                 W = n(82414),
                 K = n(91557),
                 X = (0, a.createContext)(null);
@@ -677,7 +677,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? J(Object(n), !0).forEach((function(t) {
-                        (0, G.Z)(e, t, n[t])
+                        (0, H.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : J(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -747,7 +747,7 @@
                     V && ($(), P(!0))
                 }), [V]);
                 var L = function(e) {
-                    w(ee(ee({}, g), {}, (0, G.Z)({}, e.target.id, e.target.checked)))
+                    w(ee(ee({}, g), {}, (0, H.Z)({}, e.target.id, e.target.checked)))
                 };
                 return 3 !== k ? null : a.createElement(a.Fragment, null, a.createElement("label", {
                     htmlFor: "claim-description",
@@ -964,7 +964,7 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? me(Object(n), !0).forEach((function(t) {
-                        (0, G.Z)(e, t, n[t])
+                        (0, H.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : me(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -1292,7 +1292,7 @@
                 validationError: Me().string
             };
             const Be = Ye;
-            var He = function(e) {
+            var Ge = function(e) {
                 var t = e.displayNameError,
                     n = (0, p.I0)();
                 return a.createElement("div", {
@@ -1311,10 +1311,10 @@
                     color: "primary"
                 }, "Try Again")))
             };
-            He.propTypes = {
+            Ge.propTypes = {
                 displayNameError: Me().string.isRequired
             };
-            const Ge = He;
+            const He = Ge;
             var We = (0, c.Z)("p", {
                     target: "ek3joju1"
                 })({
@@ -1491,9 +1491,9 @@
                     M = (0, a.useState)(""),
                     Y = (0, i.Z)(M, 2),
                     B = Y[0],
-                    H = Y[1],
-                    G = (0, a.useState)(null),
-                    W = (0, i.Z)(G, 2),
+                    G = Y[1],
+                    H = (0, a.useState)(null),
+                    W = (0, i.Z)(H, 2),
                     K = W[0],
                     X = W[1],
                     Q = (0, a.useState)(""),
@@ -1519,7 +1519,7 @@
                         }))) : X(null)
                     }), [ue]), (0, a.useEffect)((function() {
                         return "" === $ ? (le(!1), void U(null)) : $ !== ee ? (le(!1), void U("Names don't match")) : (le(!0), void U(null))
-                    }), [$]), g) return a.createElement(Ge, {
+                    }), [$]), g) return a.createElement(He, {
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (ce) return a.createElement(at, {
@@ -1669,7 +1669,7 @@
                     id: "namePasswordVerify",
                     name: "namePasswordVerify",
                     onChange: function(e) {
-                        return H(e.target.value)
+                        return G(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -1779,10 +1779,10 @@
                     B = function(e) {
                         E(e.target.value)
                     },
-                    H = function(e) {
+                    G = function(e) {
                         k(e.target.value)
                     },
-                    G = function(e) {
+                    H = function(e) {
                         p(e.target.value)
                     };
                 return a.useEffect((function() {
@@ -1847,8 +1847,8 @@
                     name: "confirmNewPassword",
                     className: "form-control",
                     placeholder: "Please confirm new password",
-                    onChange: H,
-                    onKeyUp: H
+                    onChange: G,
+                    onKeyUp: G
                 }), U && a.createElement(_.Z, {
                     color: "warning"
                 }, a.createElement(r.$1, {
@@ -1880,8 +1880,8 @@
                     name: "passwordPasswordVerify",
                     className: "form-control",
                     placeholder: "Please confirm current password",
-                    onChange: G,
-                    onKeyUp: G
+                    onChange: H,
+                    onKeyUp: H
                 })))), a.createElement(b.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, a.createElement(x.Z, {
@@ -2029,10 +2029,10 @@
                     type: "button",
                     color: "primary",
                     onClick: E
-                }, "Change Privacy Settings"))), a.createElement(dt, {
+                }, "Change Cookie and Consent Settings"))), a.createElement(dt, {
                     className: "mt-3"
                 }, a.createElement(Y.Z, {
-                    label: "Show Mutual Friend Connections",
+                    label: "Show Mutual Friend and Group Connections",
                     defaultChecked: !l,
                     onChangeCallback: function() {
                         return p({
@@ -2113,7 +2113,7 @@
 
                     function n(e) {
                         var r;
-                        return (0, ft.Z)(this, n), r = t.call(this, e), (0, G.Z)((0, gt.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
+                        return (0, ft.Z)(this, n), r = t.call(this, e), (0, H.Z)((0, gt.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
                             var t, n, a;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2146,7 +2146,7 @@
                             }), e, null, [
                                 [3, 10]
                             ])
-                        })))), (0, G.Z)((0, gt.Z)(r), "disable", function() {
+                        })))), (0, H.Z)((0, gt.Z)(r), "disable", function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
                                 var n, a;
                                 return m().wrap((function(e) {
@@ -2180,7 +2180,7 @@
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
                                 t % 2 ? Dt(Object(n), !0).forEach((function(t) {
-                                    (0, G.Z)(e, t, n[t])
+                                    (0, H.Z)(e, t, n[t])
                                 })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Dt(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
@@ -2590,7 +2590,7 @@
                     className: "mb-2"
                 }, a.createElement(ge, null)), !(null != e && e.hideContentFilterSettings) && a.createElement(a.Fragment, null, a.createElement(r.oI, null, a.createElement("h4", null, "Content Gating")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(H, null))), a.createElement(r.oI, null, a.createElement("h4", null, "User Data")), a.createElement(r.Ao, {
+                }, a.createElement(G, null))), a.createElement(r.oI, null, a.createElement("h4", null, "User Data")), a.createElement(r.Ao, {
                     className: "mb-2"
                 }, a.createElement(ut, null)), a.createElement(r.l8, {
                     className: "mb-2"
@@ -2650,8 +2650,8 @@
                     M = (0, a.Z)(_, 2),
                     Y = M[0],
                     B = M[1],
-                    H = B.isLoading,
-                    G = B.isError,
+                    G = B.isLoading,
+                    H = B.isError,
                     W = B.error,
                     K = (0, v.Fe)(),
                     X = (0, a.Z)(K, 2),
@@ -2692,7 +2692,7 @@
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That email is already in use.");
-                        if (G) return m.createElement(d.Z, {
+                        if (H) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2732,7 +2732,7 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [ae, te, q, V, le, ie, S, I, e, G]),
+                    }), [ae, te, q, V, le, ie, S, I, e, H]),
                     pe = (0, m.useMemo)((function() {
                         return !se || V ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
@@ -2863,7 +2863,7 @@
                     },
                     label: "Keep me up to date with the awesome power of your emails",
                     htmlFor: "subscribe",
-                    disabled: H
+                    disabled: G
                 }))), m.createElement("hr", null), m.createElement(p.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, m.createElement(f.Z, {
@@ -3111,4 +3111,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1636d5a05b2f733124c294984e3e7d4986fdfe7e5a3a73d080c5b85da827f5d6.js.map
+//# sourceMappingURL=a04bd440daa876a692545adc93adecfac527719c3136b0952fc3adae87dab442.js.map
