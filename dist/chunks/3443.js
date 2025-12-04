@@ -1470,7 +1470,7 @@
                 }, '"', W, '" is not a valid favorites type');
                 if (!K && 0 === (null == J ? void 0 : J.length)) return y.createElement(g.JX, null, y.createElement(g.qX, {
                     type: "dark",
-                    title: "You don't have any favorite groups"
+                    title: "You don't have any ".concat(W, " favorite lists")
                 }, "Explore VRChat and add some ", W, " to favorites to get started!"));
                 var pr = "Favorite ".concat(W.slice(0, 1).toUpperCase()).concat(W.slice(1), "s");
                 return y.createElement(g.JX, {
@@ -2851,4 +2851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a82bcab9c2f13630d6d1534b7661ef88a2367b632ef83f68769edec2e634fe6d.js.map
+//# sourceMappingURL=cb97c1e086a8822e398e328e1e8718f6f60fd33ea68463d984acd5d8898930e6.js.map
