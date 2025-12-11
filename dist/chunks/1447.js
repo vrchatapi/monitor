@@ -4250,6 +4250,14 @@
                         caption: "Group Post",
                         icon: T.qm
                     },
+                    "group.event.starting": {
+                        caption: "Event Starting",
+                        icon: S.fT
+                    },
+                    "group.event.created": {
+                        caption: "Event Announcement",
+                        icon: S.fT
+                    },
                     "event.announcement": {
                         caption: "Event Announcement",
                         icon: S.fT
@@ -5459,4 +5467,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1eed7add6d45cbd764bf688b5cb4a524ec1773f52052c31d609ca26599aed898.js.map
+//# sourceMappingURL=ddabf304cc4b769901d6fdc38d8f070076d580abd96e55ef61d692e3bd43eec8.js.map
