@@ -88,7 +88,7 @@
         },
         77541: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => $t
+                default: () => Lt
             });
             var a = n(67294),
                 r = n(96985),
@@ -194,8 +194,8 @@
                     name: "1tmloek",
                     styles: "text-align:center;margin-right:100px;margin-left:100px"
                 }),
-                v = n(75386),
-                y = n(27879),
+                v = n(27879),
+                y = n(75386),
                 b = n(35773),
                 x = n(95305),
                 Z = n(34698),
@@ -226,12 +226,12 @@
                     z = (0, T.lr)(),
                     U = (0, i.Z)(z, 2),
                     q = U[0],
-                    V = (U[1], (0, C.Z9)()),
-                    $ = (0, i.Z)(V, 2),
-                    L = $[0],
-                    _ = $[1],
+                    V = (U[1], (0, C.fb)()),
+                    L = (0, i.Z)(V, 2),
+                    $ = L[0],
+                    _ = L[1],
                     M = _.isLoading,
-                    Y = (_.isSuccess, _.isError, _.error, (0, C.hK)()),
+                    Y = (_.isSuccess, _.isError, _.error, (0, C.hL)()),
                     B = (0, i.Z)(Y, 2),
                     G = B[0],
                     H = B[1],
@@ -254,7 +254,7 @@
                                     case 6:
                                         w(null), F(null), j((0, h.d)({
                                             title: "Link Discord Account",
-                                            icon: v.nN,
+                                            icon: y.nN,
                                             message: "Successfully linked Discord account.",
                                             color: "success",
                                             timeout: 3e3
@@ -282,7 +282,7 @@
                                         return console.error("Failed to link Discord account:", e.t0), w(null), F(null), e.abrupt("return", j((0, h.d)({
                                             title: "Failure",
                                             message: null !== (r = null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== r ? r : "Discord Linking Failed",
-                                            icon: y.IL,
+                                            icon: v.IL,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -300,22 +300,29 @@
                     }()),
                     X = function() {
                         var e = (0, o.Z)(m().mark((function e() {
+                            var t, n;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, L().unwrap();
+                                        return e.prev = 0, e.next = 3, $().unwrap();
                                     case 3:
                                         w(null), j((0, h.d)({
                                             title: "Unlink Discord Account",
-                                            icon: v.nN,
+                                            icon: y.nN,
                                             message: "Successfully unlinked Discord account.",
                                             color: "success",
                                             timeout: 3e3
-                                        })), e.next = 10;
+                                        })), e.next = 11;
                                         break;
                                     case 7:
-                                        e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0);
-                                    case 10:
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0), e.abrupt("return", j((0, h.d)({
+                                            title: "Failure",
+                                            message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Discord Unlinking Failed",
+                                            icon: v.IL,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        })));
+                                    case 11:
                                     case "end":
                                         return e.stop()
                                 }
@@ -496,8 +503,8 @@
                         }, "Check Status"))
                 }
             };
-            var $ = n(42138),
-                L = n(3820),
+            var L = n(42138),
+                $ = n(3820),
                 _ = n(23138),
                 M = n(3620),
                 Y = n(29104);
@@ -525,7 +532,7 @@
                 (0, a.useEffect)((function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
-                            t = (0, $.Z)(u);
+                            t = (0, L.Z)(u);
                         t.length === e.size && t.every((function(t) {
                             return e.has(t)
                         })) || g({
@@ -536,7 +543,7 @@
                 }), [u]), (0, a.useEffect)((function() {
                     y && t((0, h.d)({
                         title: "Content Gating Settings Updated",
-                        icon: L.Yj,
+                        icon: $.Yj,
                         message: "Your content gating settings have been updated successfully.",
                         color: "success",
                         timeout: 7e3
@@ -554,7 +561,7 @@
                         label: "Filter ".concat(r),
                         defaultChecked: c.has(n),
                         onChangeCallback: function() {
-                            return e = n, void(c.has(e) ? s(new Set((0, $.Z)(c).filter((function(t) {
+                            return e = n, void(c.has(e) ? s(new Set((0, L.Z)(c).filter((function(t) {
                                 return t !== e
                             })))) : s(new Set(c).add(e)));
                             var e
@@ -734,7 +741,7 @@
                     U = j.error,
                     q = j.isLoading,
                     V = j.isSuccess,
-                    $ = j.reset;
+                    L = j.reset;
                 (0, a.useEffect)((function() {
                     var e = s.get("dmcaTarget");
                     e && C(ee(ee({}, N), {}, {
@@ -742,11 +749,11 @@
                     }))
                 }), []), (0, a.useEffect)((function() {
                     var e;
-                    z && ($(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                    z && (L(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
                 }), [z, U]), (0, a.useEffect)((function() {
-                    V && ($(), P(!0))
+                    V && (L(), P(!0))
                 }), [V]);
-                var L = function(e) {
+                var $ = function(e) {
                     w(ee(ee({}, g), {}, (0, H.Z)({}, e.target.id, e.target.checked)))
                 };
                 return 3 !== k ? null : a.createElement(a.Fragment, null, a.createElement("label", {
@@ -821,31 +828,31 @@
                     checked: null == g ? void 0 : g.owner,
                     label: "\n            I have a good faith belief that the use of the material in the\n            manner complained of is not authorized by the copyright owner,\n            its agent, or the law;\n          ",
                     htmlFor: "owner-check",
-                    onChange: L
+                    onChange: $
                 }), a.createElement(r.XZ, {
                     id: "accurate",
                     checked: null == g ? void 0 : g.accurate,
                     label: "This notification is accurate; and",
                     htmlFor: "accurate-check",
-                    onChange: L
+                    onChange: $
                 }), a.createElement(r.XZ, {
                     id: "perjury",
                     checked: null == g ? void 0 : g.perjury,
                     label: "\n            Under penalty of perjury, I am authorized to act on behalf of the owner\n            of an exclusive right that is allegedly infringed.\n          ",
                     htmlFor: "perjury-check",
-                    onChange: L
+                    onChange: $
                 }), a.createElement(r.XZ, {
                     id: "liability",
                     checked: null == g ? void 0 : g.liability,
                     label: "\n            I acknowledge that under section 512(f) of the DMCA any person who knowingly \n            materially misrepresents that material or activity is infringing may be subject \n            to liability for damages.\n          ",
                     htmlFor: "liability",
-                    onChange: L
+                    onChange: $
                 }), a.createElement(r.XZ, {
                     id: "abuse",
                     checked: null == g ? void 0 : g.abuse,
                     label: "I understand that abuse of this tool may result in the termination of my VRChat account, legal action, and/or criminal penalties.",
                     htmlFor: "abuse",
-                    onChange: L
+                    onChange: $
                 })), a.createElement("label", {
                     htmlFor: "claim-signature"
                 }, "Type your full name below which will act as your digital signature", a.createElement(r.II, {
@@ -1147,7 +1154,7 @@
                     s = c[0],
                     u = c[1];
                 (0, a.useEffect)((function() {
-                    var e = Object.fromEntries((0, $.Z)(n.entries()).filter((function(e) {
+                    var e = Object.fromEntries((0, L.Z)(n.entries()).filter((function(e) {
                         return "dmcaClaimForm" !== (0, i.Z)(e, 1)[0]
                     })));
                     s && (e.dmcaClaimForm = !0), l(e)
@@ -1239,8 +1246,8 @@
                     return null !== e && !!t.reverted
                 })),
                 Ve = n(76938),
-                $e = n(52926),
-                Le = n(1059),
+                Le = n(52926),
+                $e = n(1059),
                 _e = n(45697),
                 Me = n.n(_e),
                 Ye = function(e) {
@@ -1264,7 +1271,7 @@
                         color: "info",
                         "aria-label": "name warning"
                     }, a.createElement(r.$1, {
-                        icon: Le.U$
+                        icon: $e.U$
                     }), " Your next allowed display name change is in ", 90 - Ze()().diff(s, "days"), " days"), null !== n && a.createElement(_.Z, {
                         color: "warning",
                         "aria-label": "name warning"
@@ -1274,12 +1281,12 @@
                         color: "warning",
                         "aria-label": "name warning not available"
                     }, a.createElement(r.$1, {
-                        icon: $e.B1
+                        icon: Le.B1
                     }), " That display name is already in use."), c && null === n && a.createElement(_.Z, {
                         color: "warning",
                         "aria-label": "name warning character not okay"
                     }, a.createElement(r.$1, {
-                        icon: $e.B1
+                        icon: Le.B1
                     }), " That display name includes characters that cannot be used. Please try again."), u && a.createElement(_.Z, {
                         color: "success",
                         "aria-label": "name change success"
@@ -1486,8 +1493,8 @@
                     U = j[1],
                     q = (0, a.useState)(""),
                     V = (0, i.Z)(q, 2),
-                    $ = V[0],
-                    L = V[1],
+                    L = V[0],
+                    $ = V[1],
                     M = (0, a.useState)(""),
                     Y = (0, i.Z)(M, 2),
                     B = Y[0],
@@ -1513,13 +1520,13 @@
                 if ((0, a.useEffect)((function() {
                         S ? F(!0) : N && Ze()().diff(O, "days") < 90 ? F(!1) : F(!0)
                     }), [O]), (0, a.useEffect)((function() {
-                        "" !== ue ? ue.length < 4 ? X("That name is too short.") : ue.length > 15 ? X("That name is too long.") : (X(null), L(""), n((0, Se.Zm)({
+                        "" !== ue ? ue.length < 4 ? X("That name is too short.") : ue.length > 15 ? X("That name is too long.") : (X(null), $(""), n((0, Se.Zm)({
                             displayName: ue,
                             userId: P.id
                         }))) : X(null)
                     }), [ue]), (0, a.useEffect)((function() {
-                        return "" === $ ? (le(!1), void U(null)) : $ !== ee ? (le(!1), void U("Names don't match")) : (le(!0), void U(null))
-                    }), [$]), g) return a.createElement(He, {
+                        return "" === L ? (le(!1), void U(null)) : L !== ee ? (le(!1), void U("Names don't match")) : (le(!0), void U(null))
+                    }), [L]), g) return a.createElement(He, {
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (ce) return a.createElement(at, {
@@ -1629,11 +1636,11 @@
                     id: "confirmDisplayName",
                     name: "confirmDisplayName",
                     onChange: function(e) {
-                        return L(e.target.value)
+                        return $(e.target.value)
                     },
                     placeholder: "Please confirm display name",
                     type: "text",
-                    value: $
+                    value: L
                 }), null !== z && a.createElement(_.Z, {
                     color: "warning",
                     "aria-label": "confirm name warning"
@@ -1645,7 +1652,7 @@
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== $ && a.createElement(Ne.Z, {
+                }, "" !== L && a.createElement(Ne.Z, {
                     "aria-label": null !== z ? z : "Confirmation name matches",
                     ok: null === z
                 }))), re && !E && a.createElement(b.Z, {
@@ -1690,7 +1697,7 @@
                 }, "Revert Display Name Change")), a.createElement(x.Z, {
                     xs: "6"
                 }, a.createElement(Z.Z, {
-                    disabled: !I || !0 === k || null !== z || "" === $ || "" === B || null !== K || "" === ee,
+                    disabled: !I || !0 === k || null !== z || "" === L || "" === B || null !== K || "" === ee,
                     color: "primary",
                     block: !0,
                     id: "name-change-submit",
@@ -1740,8 +1747,8 @@
                     }).newPassword !== n.confirmationNewPassword ? "Passwords don't match" : null,
                     q = !z,
                     V = !U && Z.length > 0,
-                    $ = w.length > 0 && !z,
-                    L = $ && Z.length > 0 && !U && !c,
+                    L = w.length > 0 && !z,
+                    $ = L && Z.length > 0 && !U && !c,
                     M = !z && !U && w === Z && ("" !== d || c),
                     Y = function() {
                         var e = (0, o.Z)(m().mark((function e(t) {
@@ -1834,7 +1841,7 @@
                     className: "mx-0 px-0"
                 }, a.createElement(Ne.Z, {
                     ok: S ? q : null
-                }))), $ && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }))), L && a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -1861,7 +1868,7 @@
                     className: "mx-0 px-0"
                 }, a.createElement(Ne.Z, {
                     ok: V
-                }))), L && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }))), $ && a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "right"
@@ -2564,7 +2571,7 @@
                 name: "9xa7nk",
                 styles: "background-color:transparent;border:none;color:rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));padding:0;&:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb);text-decoration:underline;}"
             });
-            const $t = function() {
+            const Lt = function() {
                 var e = (0, l.Tu)().user;
                 return a.createElement("div", null, a.createElement(r.$4, null, "Account Settings"), a.createElement("h2", null, "Account Settings"), a.createElement(r.oI, null, a.createElement("h4", null, "Change Display Name")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2644,8 +2651,8 @@
                     U = z.isFetching,
                     q = z.isError,
                     V = z.isSuccess,
-                    $ = z.error,
-                    L = z.originalArgs,
+                    L = z.error,
+                    $ = z.originalArgs,
                     _ = (0, y.n_)(),
                     M = (0, a.Z)(_, 2),
                     Y = M[0],
@@ -2697,9 +2704,9 @@
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " Failed to change news preference: ", W, ".");
-                        if (q && (null == L ? void 0 : L.email) === I) {
+                        if (q && (null == $ ? void 0 : $.email) === I) {
                             D("");
-                            var t = $.data.error.message;
+                            var t = L.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
                             }, m.createElement(b.$1, {
@@ -3071,21 +3078,21 @@
                 l = n.n(r),
                 o = function() {
                     var e = (0, a.Z)(l().mark((function e() {
-                        var t, n, a, r, o, i, c, s, u, m, d = arguments;
+                        var t, n, a, r, o, i, c, s, u, m, d, p, f, h = arguments;
                         return l().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    t = (d.length > 0 && void 0 !== d[0] ? d[0] : {}).redirectTo, n = void 0 === t ? "/home/login" : t, "1366854478250381462", a = ["identify", "email"], r = window.location.origin + window.location.pathname, o = r.split("/home/"), r = "".concat(o[0], "/home/discord/auth"), i = {
-                                        redirectUri: r,
+                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, a = void 0 === n ? "/home/login" : n, r = t.version, o = void 0 === r ? 2 : r, "1366854478250381462", i = ["identify", "email"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
+                                        redirectUri: c,
                                         isMobileRequest: !1,
-                                        redirectTo: n
-                                    }, c = JSON.stringify(i), s = btoa(c), u = new URLSearchParams({
+                                        redirectTo: a
+                                    }, m = JSON.stringify(u), d = btoa(m), p = new URLSearchParams({
                                         client_id: "1366854478250381462",
-                                        redirect_uri: i.redirectUri,
+                                        redirect_uri: u.redirectUri,
                                         response_type: "code",
-                                        scope: a.join(" "),
-                                        state: s
-                                    }), m = "https://discord.com/oauth2/authorize?".concat(u.toString()), window.location.href = m;
+                                        scope: i.join(" "),
+                                        state: d
+                                    }), f = "https://discord.com/oauth2/authorize?".concat(p.toString()), window.location.href = f;
                                 case 12:
                                 case "end":
                                     return e.stop()
@@ -3111,4 +3118,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a04bd440daa876a692545adc93adecfac527719c3136b0952fc3adae87dab442.js.map
+//# sourceMappingURL=18f2283b4f5edcbfc65c87d5b1c75d7fc38f4947d56b3bb596ddd2b992b1e033.js.map
