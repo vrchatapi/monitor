@@ -1,5 +1,5 @@
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [410], {
+    [1643], {
         56811: (e, t) => {
             "use strict";
             var n = [61946],
@@ -34,7 +34,7 @@
                 icon: [640, 512, a, r, i]
             }, t.faUserGroup = t.definition, t.prefix = "fas", t.iconName = n, t.width = 640, t.height = 512, t.ligatures = a, t.unicode = r, t.svgPathData = i, t.aliases = a
         },
-        94725: (e, t, n) => {
+        88567: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
                 default: () => ee
@@ -93,8 +93,8 @@
                         results: []
                     } : O,
                     B = k.isLoading,
-                    M = k.isError,
-                    A = a.useMemo((function() {
+                    L = k.isError,
+                    M = a.useMemo((function() {
                         var e, t, n = new Map;
                         (null == E || null === (e = E.events) || void 0 === e || e.forEach((function(e) {
                             return n.set(e.id, e)
@@ -103,17 +103,17 @@
                         })));
                         return Array.from(n.values())
                     }), [E, P, p]),
-                    L = B || b || p && Z,
-                    I = M || y || p && C,
+                    A = B || b || p && Z,
+                    I = L || y || p && C,
                     j = a.useMemo((function() {
-                        return A.filter((function(e) {
+                        return M.filter((function(e) {
                             var t = s()(e.startsAt),
                                 n = s()(e.endsAt);
                             return t.isBetween(v, g, null, "[]") || t.isBefore(v) && n.isAfter(v)
                         })).sort((function(e, t) {
                             return s()(e.startsAt).valueOf() - s()(t.startsAt).valueOf()
                         }))
-                    }), [A, v, g]),
+                    }), [M, v, g]),
                     z = a.useMemo((function() {
                         return j.filter((function(e) {
                             var t = s()(e.startsAt),
@@ -122,13 +122,13 @@
                         })).length
                     }), [j, v]),
                     T = j.length;
-                return L ? a.createElement(m.JX, {
+                return A ? a.createElement(m.JX, {
                     className: n
                 }, a.createElement("div", {
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
                     className: "text-center tw-mt-0 tw-mb-0"
-                }, "Your Events")), a.createElement("div", {
+                }, "Live & Upcoming Events")), a.createElement("div", {
                     className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
                 }, a.createElement(m.UU, {
                     width: "100%",
@@ -139,13 +139,13 @@
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
                     className: "text-center tw-mt-0 tw-mb-0"
-                }, "Your Events")), a.createElement("div", {
+                }, "Live & Upcoming Events")), a.createElement("div", {
                     className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
                 }, a.createElement("div", {
                     className: "tw-text-center tw-text-message-warning tw-p-8"
                 }, a.createElement("p", {
                     className: "tw-mb-2"
-                }, "Unable to load your events."), a.createElement("p", {
+                }, "Unable to load events."), a.createElement("p", {
                     className: "tw-mb-0"
                 }, "Please try again later.")))) : a.createElement(m.JX, {
                     className: n
@@ -153,7 +153,7 @@
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
                 }, a.createElement("h4", {
                     className: "text-center tw-mt-0 tw-mb-0"
-                }, "Your Events")), a.createElement("div", {
+                }, "Live & Upcoming Events")), a.createElement("div", {
                     className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
                 }, a.createElement("div", {
                     className: "tw-grid tw-grid-cols-2 tw-gap-3 tw-mb-4"
@@ -323,8 +323,8 @@
             var O = n(4965),
                 S = n(17219),
                 B = n(1208),
-                M = n(89182);
-            const A = function(e) {
+                L = n(89182);
+            const M = function(e) {
                 var t = e.className,
                     n = (0, S.y)().data,
                     r = a.useState(3),
@@ -353,14 +353,14 @@
                     className: t
                 }, a.createElement("h2", {
                     className: "text-center"
-                }, "Have you seen these Completely Random Worlds?"), a.createElement(L, null, u.slice(0, s).map((function(e) {
-                    return a.createElement(M.Z, {
+                }, "Have you seen these Completely Random Worlds?"), a.createElement(A, null, u.slice(0, s).map((function(e) {
+                    return a.createElement(L.Z, {
                         key: e.id,
                         world: e
                     })
                 }))))
             };
-            var L = (0, O.Z)("div", {
+            var A = (0, O.Z)("div", {
                     target: "ecqaaaz0"
                 })({
                     name: "wi7zmd",
@@ -422,7 +422,7 @@
                 X = T.useGetBetaQuery,
                 D = T.useGetBetaRegistrationQuery,
                 R = T.useCreateBetaRegistrationMutation;
-            const _ = function(e) {
+            const U = function(e) {
                 var t = e.isOpen,
                     n = void 0 !== t && t,
                     r = e.cancelCallback,
@@ -460,7 +460,7 @@
                             }
                         }
                     }),
-                    M = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
+                    L = a.createElement("div", null, a.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), a.createElement("p", null, a.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), a.createElement("h6", {
                         className: "tw-mt-8"
                     }, "Select all iOS devices you have access to and will use for testing."), a.createElement(m.XZ, (0, j.Z)({
                         label: "iPhone 12 Pro/Max"
@@ -507,7 +507,7 @@
                         className: "tw-mt-6",
                         onClick: function() {
                             k({
-                                betaName: Q,
+                                betaName: Y,
                                 metadata: {
                                     devices: f,
                                     isCreator: E,
@@ -523,7 +523,7 @@
                         disabled: S,
                         onClick: i
                     }, "Cancel")),
-                    A = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
+                    M = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
                         onClick: o
                     }, "Done"));
                 return a.createElement(m.u_, {
@@ -533,21 +533,21 @@
                     onClose: c ? o : i,
                     onCloseFinished: i,
                     doNotCapitalize: !0
-                }, c ? A : M)
+                }, c ? M : L)
             };
-            var F = n(87709),
-                W = ["title", "children", "dismissable", "onDismiss"];
-            const U = function(e) {
+            var _ = n(87709),
+                F = ["title", "children", "dismissable", "onDismiss"];
+            const W = function(e) {
                 var t = e.title,
                     n = e.children,
                     r = e.dismissable,
                     i = void 0 === r || r,
                     s = e.onDismiss,
                     o = void 0 === s ? function() {} : s,
-                    l = (0, h.Z)(e, W);
-                return a.createElement(q, l, a.createElement(V, null, a.createElement(G, null, t), n), i && a.createElement(Y, {
+                    l = (0, h.Z)(e, F);
+                return a.createElement(q, l, a.createElement(V, null, a.createElement(J, null, t), n), i && a.createElement(G, {
                     onClick: o,
-                    icon: F.faXmark,
+                    icon: _.faXmark,
                     size: "2x"
                 }))
             };
@@ -563,20 +563,20 @@
                     name: "tu59xn",
                     styles: "display:flex;flex-grow:1;flex-direction:column;justify-content:center;align-items:center"
                 }),
-                Y = (0, O.Z)(m.$1, {
+                G = (0, O.Z)(m.$1, {
                     target: "e1fo5i6a1"
                 })({
                     name: "nfd03i",
                     styles: "margin-right:1rem"
                 }),
-                G = (0, O.Z)("h4", {
+                J = (0, O.Z)("h4", {
                     target: "e1fo5i6a0"
                 })({
                     name: "h2wgvc",
                     styles: "margin:0;font-size:1.25rem"
                 }),
-                J = n(15832);
-            var Q = "ios-closed-beta",
+                Q = n(15832);
+            var Y = "ios-closed-beta",
                 H = (0, O.Z)("a", {
                     target: "ercad9d0"
                 })({
@@ -584,24 +584,24 @@
                     styles: "color:#1a1a1a;cursor:pointer;text-decoration:underline"
                 });
             const $ = function() {
-                var e = (0, J._)("campaignsSeen", []),
+                var e = (0, Q._)("campaignsSeen", []),
                     t = (0, g.Z)(e, 2),
                     n = t[0],
                     r = t[1],
                     i = D({
-                        betaName: Q
+                        betaName: Y
                     }),
                     s = i.data,
                     o = i.isFetching,
                     l = i.isError,
                     c = i.error,
                     u = X({
-                        betaName: Q
+                        betaName: Y
                     }),
                     d = u.data,
                     m = u.isFetching,
                     f = u.isError,
-                    v = a.useState(n.includes(Q)),
+                    v = a.useState(n.includes(Y)),
                     p = (0, g.Z)(v, 2),
                     h = p[0],
                     E = p[1],
@@ -617,17 +617,17 @@
                     C || h || l && 404 === c.status && k(!0)
                 }), [s, l, c]);
                 var O = function() {
-                        r([].concat((0, w.Z)(n), [Q])), E(!0)
+                        r([].concat((0, w.Z)(n), [Y])), E(!0)
                     },
                     S = s && null != s.created_at;
-                return h || m || o || f || !d || !d.active || !C && S ? null : a.createElement(a.Fragment, null, a.createElement(_, {
+                return h || m || o || f || !d || !d.active || !C && S ? null : a.createElement(a.Fragment, null, a.createElement(U, {
                     isOpen: N,
                     cancelCallback: function() {
                         return x(!1)
                     },
                     doneCallback: O,
                     completed: S
-                }), a.createElement(U, {
+                }), a.createElement(W, {
                     title: "LIMITED AVAILABILITY",
                     onDismiss: O
                 }, a.createElement("span", {
@@ -654,7 +654,7 @@
                     className: "mt-3"
                 }), a.createElement(k, {
                     className: "mt-5"
-                }), a.createElement(A, {
+                }), a.createElement(M, {
                     className: "mt-5"
                 })))
             }
@@ -712,4 +712,4 @@
         }
     }
 ]);
-//# sourceMappingURL=923400646d66e31fbb76e8f056553099d0c0f50b254d10de3a699c268b0fe92e.js.map
+//# sourceMappingURL=0e0de1c858db1ff1800a82c03b67cc9a757262fc741b6cbf55623af1ddc5f220.js.map
