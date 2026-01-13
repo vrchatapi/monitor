@@ -2514,6 +2514,7 @@
   "allowDangerousHTML",
   "allowDangerousHtml",
   "allowFullScreen",
+  "allowGroupJoinPrompt",
   "allowMultiline",
   "allowNew",
   "allowNewlines",
