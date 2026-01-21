@@ -17,7 +17,7 @@
                 m = a(32981),
                 v = a(89250),
                 p = a(64258),
-                f = a(95168),
+                f = a(83807),
                 g = a(21538),
                 y = a(22082),
                 b = a(1208),
@@ -527,18 +527,17 @@
         },
         21538: (e, t, a) => {
             a.d(t, {
-                C0: () => k,
+                C0: () => S,
                 CO: () => b,
-                Cm: () => S,
+                Cm: () => x,
                 EA: () => g,
                 F6: () => y,
                 GG: () => p,
-                LQ: () => E,
+                LQ: () => h,
                 X8: () => f,
-                eP: () => x,
-                lx: () => h,
-                ve: () => A,
-                x8: () => w
+                eP: () => w,
+                ve: () => E,
+                x8: () => A
             });
             var r = a(15861),
                 n = a(42138),
@@ -960,14 +959,13 @@
                 g = v.useEnqueueImpostorMutation,
                 y = v.useGetAllAvatarsQuery,
                 b = v.useGetAllAvatarStylesQuery,
-                h = v.useGetAllFavoriteAvatarsQuery,
-                E = v.useGetAvatarQuery,
-                A = (v.useGetFavoriteAvatarsQuery, v.useGetImpostorQueueStatsQuery),
-                w = v.useSelectAvatarMutation,
-                x = v.useSelectFallbackAvatarMutation,
-                S = v.useSetAvatarTagsMutation,
-                k = v.useUpdateAvatarMutation
+                h = (v.useGetAllFavoriteAvatarsQuery, v.useGetAvatarQuery),
+                E = (v.useGetFavoriteAvatarsQuery, v.useGetImpostorQueueStatsQuery),
+                A = v.useSelectAvatarMutation,
+                w = v.useSelectFallbackAvatarMutation,
+                x = v.useSetAvatarTagsMutation,
+                S = v.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=f464d4f6ec16fe010d9619b41890d2affd6cba1bac946ddc704abdb989050717.js.map
+//# sourceMappingURL=abe9ea57a2e787f6b5c31d45c805a499690ce4ee163815f53d933a91e9963731.js.map

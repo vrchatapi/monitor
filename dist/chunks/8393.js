@@ -1,152 +1,113 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
     [8393], {
-        7452: (e, t, a) => {
-            var n = a(76792);
-            t.DF = {
-                prefix: n.prefix,
-                iconName: n.iconName,
-                icon: [n.width, n.height, n.aliases, n.unicode, n.svgPathData]
-            }, t.cw = t.DF, n.prefix, n.iconName, n.width, n.height, n.aliases, n.unicode, n.svgPathData, n.aliases
-        },
-        76792: (e, t) => {
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            });
-            var a = "file-lines",
-                n = [128441, 128462, 61686, "file-alt", "file-text"],
-                l = "f15c",
-                c = "M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z";
-            t.definition = {
-                prefix: "fas",
-                iconName: a,
-                icon: [384, 512, n, l, c]
-            }, t.faFileLines = t.definition, t.prefix = "fas", t.iconName = a, t.width = 384, t.height = 512, t.ligatures = n, t.unicode = l, t.svgPathData = c, t.aliases = n
-        },
         26375: (e, t) => {
-            var a = "id-card",
-                n = [62147, "drivers-license"],
-                l = "f2c2",
-                c = "M0 96l576 0c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96zm0 32L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-288L0 128zM64 405.3c0-29.5 23.9-53.3 53.3-53.3l117.3 0c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7L74.7 416c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z";
+            var n = "id-card",
+                a = [62147, "drivers-license"],
+                r = "f2c2",
+                i = "M0 96l576 0c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96zm0 32L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-288L0 128zM64 405.3c0-29.5 23.9-53.3 53.3-53.3l117.3 0c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7L74.7 416c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z";
             t.DF = {
                 prefix: "fas",
-                iconName: a,
-                icon: [576, 512, n, l, c]
+                iconName: n,
+                icon: [576, 512, a, r, i]
             }, t.Uk = t.DF
         },
         23598: (e, t) => {
-            var a = "money-bill",
-                n = [],
-                l = "f0d6",
-                c = "M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm64 320l-64 0 0-64c35.3 0 64 28.7 64 64zM64 192l0-64 64 0c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64l0 64-64 0zm64-192c-35.3 0-64-28.7-64-64l64 0 0 64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z";
+            var n = "money-bill",
+                a = [],
+                r = "f0d6",
+                i = "M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm64 320l-64 0 0-64c35.3 0 64 28.7 64 64zM64 192l0-64 64 0c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64l0 64-64 0zm64-192c-35.3 0-64-28.7-64-64l64 0 0 64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z";
             t.DF = {
                 prefix: "fas",
-                iconName: a,
-                icon: [576, 512, n, l, c]
+                iconName: n,
+                icon: [576, 512, a, r, i]
             }, t.aL = t.DF
         },
-        18393: (e, t, a) => {
-            a.r(t), a.d(t, {
-                default: () => g
+        18393: (e, t, n) => {
+            n.r(t), n.d(t, {
+                default: () => f
             });
-            var n = a(15861),
-                l = a(54546),
-                c = a(23598),
-                r = a(26375),
-                i = a(7452),
-                s = a(64687),
-                o = a.n(s),
-                u = a(67294),
-                d = a(95168),
-                m = a(96985),
-                p = a(43862),
-                f = a(22202),
-                E = a(6655);
-            const g = function() {
-                var e = (0, d.pc)(),
-                    t = (0, f.IB)().data,
-                    a = null == t ? void 0 : t.id,
-                    s = (0, E.v$)({
-                        userId: a
+            var a = n(15861),
+                r = n(54546),
+                i = n(23598),
+                l = n(26375),
+                o = n(64687),
+                c = n.n(o),
+                u = n(67294),
+                s = n(96985),
+                d = n(43862),
+                m = n(83807),
+                y = n(22202),
+                p = n(6655);
+            const f = function() {
+                var e = (0, m.pc)(),
+                    t = (0, y.IB)().data,
+                    n = null == t ? void 0 : t.id,
+                    o = (0, p.gq)({
+                        userId: n
                     }, {
-                        skip: !a,
+                        skip: !n,
                         refetchOnMountOrArgChange: !0
                     }),
-                    g = s.data,
-                    h = s.isLoading,
-                    v = (0, E.gq)({
-                        userId: a
-                    }, {
-                        skip: !a,
-                        refetchOnMountOrArgChange: !0
-                    }),
-                    b = v.data,
-                    S = v.isLoading,
-                    C = (0, E.nT)(),
-                    k = (0, l.Z)(C, 2),
-                    z = k[0],
-                    N = k[1].isLoading,
-                    y = (0, E.O7)(),
-                    L = (0, l.Z)(y, 2),
-                    w = L[0],
-                    A = L[1].isLoading,
-                    x = u.useState(!1),
-                    M = (0, l.Z)(x, 2),
-                    D = M[0],
-                    Z = M[1],
-                    O = u.useState("NODATA"),
-                    T = (0, l.Z)(O, 2),
-                    F = T[0],
-                    I = T[1],
-                    U = (0, E.$2)(),
-                    P = (0, l.Z)(U, 2),
-                    J = P[0],
-                    R = P[1],
-                    Y = R.isLoading,
-                    $ = (R.isError, R.error, R.isSuccess, (0, E.ve)()),
-                    _ = (0, l.Z)($, 2),
-                    q = _[0],
-                    K = _[1],
-                    V = K.isLoading,
-                    X = (K.isError, K.error, K.isSuccess, u.useState(100)),
-                    W = (0, l.Z)(X, 2),
-                    j = W[0],
-                    B = W[1],
-                    G = u.useState(""),
-                    H = (0, l.Z)(G, 2),
-                    Q = H[0],
-                    ee = H[1],
-                    te = u.useState("standard"),
-                    ae = (0, l.Z)(te, 2),
-                    ne = ae[0],
-                    le = ae[1],
-                    ce = u.useState("add"),
-                    re = (0, l.Z)(ce, 2),
-                    ie = re[0],
-                    se = re[1];
+                    f = o.data,
+                    g = o.isLoading,
+                    b = (0, p.O7)(),
+                    E = (0, r.Z)(b, 2),
+                    h = E[0],
+                    T = E[1].isLoading,
+                    v = u.useState("NODATA"),
+                    k = (0, r.Z)(v, 2),
+                    C = k[0],
+                    O = k[1],
+                    S = (0, p.$2)(),
+                    w = (0, r.Z)(S, 2),
+                    P = w[0],
+                    M = w[1],
+                    I = M.isLoading,
+                    q = (M.isError, M.error, M.isSuccess, (0, p.ve)()),
+                    z = (0, r.Z)(q, 2),
+                    L = z[0],
+                    N = z[1],
+                    j = N.isLoading,
+                    A = (N.isError, N.error, N.isSuccess, u.useState(100)),
+                    D = (0, r.Z)(A, 2),
+                    R = D[0],
+                    Z = D[1],
+                    K = u.useState(""),
+                    U = (0, r.Z)(K, 2),
+                    x = U[0],
+                    G = U[1],
+                    F = u.useState("standard"),
+                    Q = (0, r.Z)(F, 2),
+                    J = Q[0],
+                    W = Q[1],
+                    Y = u.useState("add"),
+                    $ = (0, r.Z)(Y, 2),
+                    B = $[0],
+                    V = $[1];
                 u.useEffect((function() {
-                    ee(t.id)
+                    G(t.id)
                 }), [t]);
-                var oe = function() {
-                    var e = (0, n.Z)(o().mark((function e() {
-                        return o().wrap((function(e) {
+                var _ = function() {
+                    var e = (0, a.Z)(c().mark((function e() {
+                        return c().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    e.t0 = ie, e.next = "add" === e.t0 ? 3 : "subtract" === e.t0 ? 5 : 7;
+                                    e.t0 = B, e.next = "add" === e.t0 ? 3 : "subtract" === e.t0 ? 5 : 7;
                                     break;
                                 case 3:
-                                    return J({
-                                        toUserId: Q || a,
-                                        amountTokens: j,
-                                        toWalletType: ne
+                                    return P({
+                                        toUserId: x || n,
+                                        amountTokens: R,
+                                        toWalletType: J
                                     }), e.abrupt("break", 8);
                                 case 5:
-                                    return q({
-                                        fromUserId: Q || a,
-                                        amountTokens: j
+                                    return L({
+                                        fromUserId: x || n,
+                                        amountTokens: R
                                     }), e.abrupt("break", 8);
                                 case 7:
-                                    console.error("Unexpected tiliaTokenAction: ".concat(JSON.stringify(ie)));
+                                    console.error("Unexpected tiliaTokenAction: ".concat(JSON.stringify(B)));
                                 case 8:
                                 case "end":
                                     return e.stop()
@@ -158,120 +119,234 @@
                     }
                 }();
                 if (!e) return null;
-                var ue = N || A;
-                return u.createElement(m.JX, {
+                var X = T;
+                return u.createElement(s.JX, {
                     className: "pb-5"
-                }, u.createElement("h2", null, u.createElement(m.RL, {
+                }, u.createElement("h2", null, u.createElement(s.RL, {
                     to: "/home/marketplace"
-                }, "Marketplace"), " - Staging Junk Drawer"), u.createElement("h3", null, "Tilia Account Status"), u.createElement(m.qX, {
-                    type: "info",
-                    title: "ToS Acceptance"
-                }, h ? u.createElement(u.Fragment, null, u.createElement(p.Z, {
-                    style: {
-                        display: "inline-block"
-                    }
-                }), " Please wait warmly...") : u.createElement("code", null, u.createElement("pre", null, JSON.stringify(g, null, "  ")))), u.createElement(m.qX, {
+                }, "Marketplace"), " - Staging Junk Drawer"), u.createElement("h3", null, "Tilia Account Status"), u.createElement(s.qX, {
                     type: "info",
                     title: "KYC Completion"
-                }, S ? u.createElement(u.Fragment, null, u.createElement(p.Z, {
+                }, g ? u.createElement(u.Fragment, null, u.createElement(d.Z, {
                     style: {
                         display: "inline-block"
                     }
-                }), " Please wait warmly...") : u.createElement("code", null, u.createElement("pre", null, JSON.stringify(b, null, "  ")))), u.createElement("h3", null, "Set ToS acceptance State"), u.createElement("select", {
+                }), " Please wait warmly...") : u.createElement("code", null, u.createElement("pre", null, JSON.stringify(f, null, "  ")))), u.createElement("h3", null, "Set KYC Completion State"), u.createElement("select", {
                     className: "custom-select",
-                    value: D,
+                    value: C,
                     onChange: function(e) {
-                        Z(e.target.value)
+                        O(e.target.value)
                     },
-                    disabled: ue
-                }, u.createElement("option", {
-                    value: !0
-                }, "Accepted"), u.createElement("option", {
-                    value: !1
-                }, "Not Accepted")), u.createElement(m.zx, {
-                    onClick: function() {
-                        z({
-                            userId: a,
-                            accepted: D
-                        })
-                    },
-                    disabled: ue
-                }, u.createElement(m.$1, {
-                    icon: i.cw
-                }), " Update ToS Acceptance"), u.createElement("h3", null, "Set KYC Completion State"), u.createElement("select", {
-                    className: "custom-select",
-                    value: F,
-                    onChange: function(e) {
-                        I(e.target.value)
-                    },
-                    disabled: ue
+                    disabled: X
                 }, ["ACCEPT", "DENY", "MANUAL_REVIEW", "NODATA", "PROCESSING", "REVERIFY"].map((function(e) {
                     return u.createElement("option", {
                         key: e,
                         value: e
                     }, e)
-                }))), u.createElement(m.zx, {
+                }))), u.createElement(s.zx, {
                     onClick: function() {
-                        w({
-                            userId: a,
-                            state: F
+                        h({
+                            userId: n,
+                            state: C
                         })
                     },
-                    disabled: ue
-                }, u.createElement(m.$1, {
-                    icon: r.Uk
+                    disabled: X
+                }, u.createElement(s.$1, {
+                    icon: l.Uk
                 }), " Update KYC Completion"), u.createElement("h3", null, u.createElement("select", {
                     className: "custom-select",
                     style: {
                         font: "inherit",
                         fontSize: "inherit"
                     },
-                    value: ie,
+                    value: B,
                     onChange: function(e) {
-                        se(e.target.value)
+                        V(e.target.value)
                     },
-                    disabled: Y || V
+                    disabled: I || j
                 }, u.createElement("option", {
                     value: "add"
                 }, "Add to"), u.createElement("option", {
                     value: "subtract"
-                }, "Subtract from")), "add" === ie && u.createElement(u.Fragment, null, " ", u.createElement("select", {
+                }, "Subtract from")), "add" === B && u.createElement(u.Fragment, null, " ", u.createElement("select", {
                     className: "custom-select",
                     style: {
                         font: "inherit",
                         fontSize: "inherit"
                     },
-                    value: ne,
+                    value: J,
                     onChange: function(e) {
-                        le(e.target.value)
+                        W(e.target.value)
                     },
-                    disabled: Y || V
+                    disabled: I || j
                 }, u.createElement("option", {
                     value: "standard"
                 }, "standard"), u.createElement("option", {
                     value: "earnings"
                 }, "earnings"))), " ", "wallet balance"), u.createElement("label", null, "User ID ", u.createElement("input", {
                     type: "text",
-                    defaultValue: a,
-                    value: Q,
+                    defaultValue: n,
+                    value: x,
                     onChange: function(e) {
-                        ee(e.target.value)
+                        G(e.target.value)
                     }
-                })), u.createElement("label", null, u.createElement(m.b5, null), u.createElement("input", {
+                })), u.createElement("label", null, u.createElement(s.b5, null), u.createElement("input", {
                     type: "number",
-                    value: j,
+                    value: R,
                     onChange: function(e) {
-                        B(e.target.value)
+                        Z(e.target.value)
                     }
-                })), u.createElement(m.zx, {
-                    onClick: oe,
-                    loading: Y || V,
-                    disabled: 40 !== Q.length || Y || V
-                }, u.createElement(m.$1, {
-                    icon: c.aL
-                }), " ", "add" === ie ? "Add to ".concat(ne) : "Subtract from", " wallet"))
+                })), u.createElement(s.zx, {
+                    onClick: _,
+                    loading: I || j,
+                    disabled: 40 !== x.length || I || j
+                }, u.createElement(s.$1, {
+                    icon: i.aL
+                }), " ", "add" === B ? "Add to ".concat(J) : "Subtract from", " wallet"))
             }
+        },
+        6655: (e, t, n) => {
+            n.d(t, {
+                $2: () => E,
+                Cv: () => g,
+                O7: () => m,
+                Rq: () => T,
+                S6: () => y,
+                WA: () => f,
+                gI: () => b,
+                gq: () => d,
+                kN: () => p,
+                ve: () => h
+            });
+            var a = n(45987),
+                r = n(4942),
+                i = n(61509),
+                l = ["redirect"],
+                o = ["userId", "flowConfig"];
+
+            function c(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var a = Object.getOwnPropertySymbols(e);
+                    t && (a = a.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), n.push.apply(n, a)
+                }
+                return n
+            }
+
+            function u(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? c(Object(n), !0).forEach((function(t) {
+                        (0, r.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : c(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            var s = i.S.injectEndpoints({
+                    endpoints: function(e) {
+                        return u({
+                            getTiliaKycCompletion: e.query({
+                                query: function(e) {
+                                    var t = e.userId;
+                                    return "user/".concat(t, "/tilia/kyc")
+                                },
+                                providesTags: function(e, t, n) {
+                                    return [{
+                                        type: "TiliaKycCompletion",
+                                        id: n.userId
+                                    }]
+                                }
+                            }),
+                            getTiliaKyc: e.query({
+                                query: function() {
+                                    return {
+                                        url: "economy/seller/tiliaKyc",
+                                        method: "GET"
+                                    }
+                                }
+                            }),
+                            getTiliaPayoutMethod: e.query({
+                                query: function(e) {
+                                    var t = e.paymentMethodId;
+                                    return "tilia/payoutMethod/".concat(t)
+                                }
+                            }),
+                            getTiliaPayoutEligible: e.query({
+                                query: function() {
+                                    return "tilia/payout/eligibility"
+                                }
+                            }),
+                            getTiliaPayoutEstimate: e.query({
+                                query: function(e) {
+                                    return {
+                                        url: "tilia/payout/estimate",
+                                        method: "POST",
+                                        body: {
+                                            paymentMethodId: e.paymentMethodId,
+                                            amountTokens: e.amountTokens
+                                        }
+                                    }
+                                }
+                            }),
+                            createTiliaPayoutRequest: e.mutation({
+                                query: function(e) {
+                                    return {
+                                        url: "tilia/payout/request",
+                                        method: "POST",
+                                        body: {
+                                            paymentMethodId: e.paymentMethodId,
+                                            amountTokens: e.amountTokens
+                                        }
+                                    }
+                                }
+                            }),
+                            getTiliaWebRedirectUrl: e.query({
+                                query: function(e) {
+                                    return {
+                                        url: "tilia/web/redirect",
+                                        method: "POST",
+                                        body: {
+                                            userId: e.userId,
+                                            flow: e.flow
+                                        }
+                                    }
+                                },
+                                transformResponse: function(e, t) {
+                                    var n = e.redirect,
+                                        r = (0, a.Z)(e, l),
+                                        i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                                        c = (i.userId, i.flowConfig),
+                                        s = (0, a.Z)(i, o),
+                                        d = new URL(n);
+                                    return c && d.searchParams.set("flowConfig", JSON.stringify(c)), Object.keys(s).forEach((function(e) {
+                                        "flow" !== e && d.searchParams.set(e, s[e])
+                                    })), u({
+                                        redirect: d.href,
+                                        rawRedirect: n
+                                    }, r)
+                                }
+                            })
+                        }, !1)
+                    },
+                    overrideExisting: !1
+                }).enhanceEndpoints({
+                    addTagTypes: ["TiliaKycCompletion", "TiliaStatus"]
+                }),
+                d = s.useGetTiliaKycCompletionQuery,
+                m = s.useSetTiliaKycCompletionMutation,
+                y = s.useGetTiliaPayoutMethodQuery,
+                p = s.useGetTiliaPayoutEligibleQuery,
+                f = s.useLazyGetTiliaPayoutEstimateQuery,
+                g = s.useCreateTiliaPayoutRequestMutation,
+                b = s.useLazyGetTiliaWebRedirectUrlQuery,
+                E = s.useGiveTiliaTokenBalanceMutation,
+                h = s.useTakeTiliaTokenBalanceMutation,
+                T = s.useGetTiliaKycQuery
         }
     }
 ]);
-//# sourceMappingURL=003ac63092ca54a533526787c8bfaa3ac6bd25d00ff7657921d566cf21332972.js.map
+//# sourceMappingURL=6df8837d6037f6fa9b33f32c61c344101b779e52c739516b238ef581c4b79804.js.map

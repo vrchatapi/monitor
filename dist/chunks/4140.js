@@ -151,8 +151,8 @@
         51423: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                PopulationCallout: () => Tn,
-                default: () => En
+                PopulationCallout: () => Zn,
+                default: () => xn
             });
             var a = n(4965),
                 r = n(68335),
@@ -160,7 +160,7 @@
                 i = n(72998),
                 s = n(67294),
                 c = n(89250),
-                o = n(95168),
+                o = n(83807),
                 d = n(22202),
                 m = n(96985),
                 u = n(46320),
@@ -1902,13 +1902,12 @@
                 ln = n(66736),
                 sn = n(16869),
                 cn = n(95896),
-                on = n(6655),
-                dn = n(1646),
-                mn = n.n(dn),
-                un = n(49715),
-                pn = n(95643);
-            L().extend(mn());
-            var wn = function(e) {
+                on = n(1646),
+                dn = n.n(on),
+                mn = n(49715),
+                un = n(95643);
+            L().extend(dn());
+            var pn = function(e) {
                 var t, n, a = e.isOpen,
                     r = e.onCancelCallback,
                     l = e.listingData,
@@ -1934,7 +1933,7 @@
                         skip: !(null != i && i.sellerId)
                     }),
                     S = I.data,
-                    T = (I.isFetching, I.isError, I.error, (0, on.pp)({
+                    T = (I.isFetching, I.isError, I.error, (0, ln.Fi)({
                         userId: C.id
                     }, {
                         skip: !C
@@ -2162,7 +2161,7 @@
                     fallbackSrc: rn()
                 })), s.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
-                }, s.createElement(un.Z, {
+                }, s.createElement(mn.Z, {
                     listingType: i.listingType,
                     className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                 }), s.createElement("h4", {
@@ -2198,7 +2197,7 @@
                 }))), w && s.createElement("div", {
                     className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
                 }, null == P || null === (n = P.hydratedProducts) || void 0 === n ? void 0 : n.map((function(e) {
-                    return s.createElement(pn.Z, {
+                    return s.createElement(un.Z, {
                         className: "tw-my-2",
                         key: e.id,
                         productData: e,
@@ -2238,13 +2237,13 @@
                     onClick: me
                 }, "Cancel")))))
             };
-            wn.propTypes = {
+            pn.propTypes = {
                 show: D().bool.isRequired,
                 onHide: D().func.isRequired,
                 onConfirm: D().func.isRequired
             };
-            const fn = wn;
-            var gn = function(e) {
+            const wn = pn;
+            var fn = function(e) {
                 var t = e.isDetailedView,
                     n = void 0 === t || t,
                     a = e.listingData,
@@ -2275,7 +2274,7 @@
                     className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/listingCard:tw-flex-row tw-items-start @sm/listingCard:tw-items-center "
                 }, s.createElement("h4", {
                     className: "tw-max-w-[250px] @sm/listingCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
-                }, c), s.createElement(un.Z, {
+                }, c), s.createElement(mn.Z, {
                     listingType: o,
                     className: "tw-ml-0 @sm/listingCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 })), s.createElement("div", {
@@ -2301,7 +2300,7 @@
                     className: "tw-rounded-md tw-bg-grey tw-p-1 tw-flex-1"
                 }, s.createElement("div", null, s.createElement("div", {
                     className: "tw-absolute tw-p-3 "
-                }, s.createElement(un.Z, {
+                }, s.createElement(mn.Z, {
                     listingType: o,
                     className: "tw-bg-dark-grey-transparent-90"
                 })), s.createElement("div", {
@@ -2326,13 +2325,13 @@
                     }
                 }, "View Details")))
             };
-            gn.propTypes = {
+            fn.propTypes = {
                 listingData: D().object.isRequired,
                 isDetailedView: D().bool
             };
-            const hn = gn;
-            var vn = n(76176);
-            const bn = function(e) {
+            const gn = fn;
+            var hn = n(76176);
+            const vn = function(e) {
                 var t = e.searchParams,
                     n = e.listingType,
                     a = e.sortBy,
@@ -2342,7 +2341,7 @@
                     n && e.set("listingType", n), a && e.set("sortBy", a), e.toString() !== t.toString() && r(e)
                 }), [n, a, t, r])
             };
-            var yn = function(e) {
+            var bn = function(e) {
                 var t = e.worldData,
                     n = void 0 === t ? null : t;
                 if (null === n) return null;
@@ -2380,8 +2379,8 @@
                     }, {
                         skip: !(null != n && n.storeId)
                     }).data,
-                    _ = (0, vn.Z)(D);
-                bn({
+                    _ = (0, hn.Z)(D);
+                vn({
                     searchParams: g,
                     listingType: y,
                     sortBy: k,
@@ -2449,13 +2448,13 @@
                 }, "No store listings found")), s.createElement("div", {
                     className: "tw-mt-5 ".concat(T ? "" : "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-2 tw-flex-wrap")
                 }, null == M ? void 0 : M.map((function(e) {
-                    return s.createElement(hn, {
+                    return s.createElement(gn, {
                         key: e.id,
                         listingData: e,
                         isDetailedView: T,
                         viewDetailsCallback: A
                     })
-                })), s.createElement(hn, null))), s.createElement(fn, {
+                })), s.createElement(gn, null))), s.createElement(wn, {
                     worldData: n,
                     listingData: d,
                     isOpen: l,
@@ -2464,9 +2463,9 @@
                     }
                 }))
             };
-            yn.propTypes = {};
-            const xn = yn;
-            const En = function() {
+            bn.propTypes = {};
+            const yn = bn;
+            const xn = function() {
                 var e = (0, c.UO)().worldId,
                     t = (0, d.XC)().data,
                     n = (0, o.pc)(),
@@ -2487,13 +2486,13 @@
                     }), []), s.useEffect((function() {
                         var e;
                         document.title = "".concat(null !== (e = null == p ? void 0 : p.name) && void 0 !== e ? e : "World", " - VRChat")
-                    }), [p]), h || null == p || !p.id || null == t || !t.id) return s.createElement(Cn, {
+                    }), [p]), h || null == p || !p.id || null == t || !t.id) return s.createElement(kn, {
                     className: "w-100"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col"
-                }, s.createElement(Sn, {
+                }, s.createElement(In, {
                     width: "100%"
-                }), s.createElement(kn, {
+                }), s.createElement(Nn, {
                     className: "mt-2 flex-column flex-sm-row "
                 }, s.createElement("div", {
                     style: {
@@ -2510,7 +2509,7 @@
                 })), s.createElement(m.UU, {
                     height: "80px",
                     width: "300px"
-                })), s.createElement(kn, {
+                })), s.createElement(Nn, {
                     className: "mt-2 flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col w-100 me-3 mb-3"
@@ -2562,7 +2561,7 @@
                 }))))));
                 var v = (null == t ? void 0 : t.id) && (null == t ? void 0 : t.id) === (null == p ? void 0 : p.authorId),
                     b = p.storeId && null !== p.storeId;
-                return s.createElement(Cn, null, "hidden" === (null == p ? void 0 : p.releaseStatus) && s.createElement(kn, {
+                return s.createElement(kn, null, "hidden" === (null == p ? void 0 : p.releaseStatus) && s.createElement(Nn, {
                     className: "justify-content-between flex-column flex-sm-row"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col ms-0 ms-sm-2 flex-grow-1"
@@ -2570,7 +2569,7 @@
                     type: "error",
                     title: "World Deleted",
                     message: "This World has been deleted"
-                }))), p.previewYoutubeId ? s.createElement(In, {
+                }))), p.previewYoutubeId ? s.createElement(Cn, {
                     className: "mt-2"
                 }, s.createElement("iframe", {
                     src: "https://www.youtube.com/embed/".concat(p.previewYoutubeId),
@@ -2579,7 +2578,7 @@
                     frameBorder: "0",
                     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
                     allowFullScreen: !0
-                })) : s.createElement(Zn, {
+                })) : s.createElement(Sn, {
                     role: "img",
                     title: "".concat(null == p ? void 0 : p.name, " Preview"),
                     image: p.imageUrl
@@ -2615,47 +2614,47 @@
                     })
                 }), s.createElement(c.AW, {
                     path: "/store",
-                    element: s.createElement(xn, {
+                    element: s.createElement(yn, {
                         worldData: p
                     })
                 })))
             };
-            var Nn = (0, a.Z)("div", {
+            var En = (0, a.Z)("div", {
                     target: "e1mfpqtc6"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                kn = (0, a.Z)("div", {
+                Nn = (0, a.Z)("div", {
                     target: "e1mfpqtc5"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                Cn = (0, a.Z)(Nn, {
+                kn = (0, a.Z)(En, {
                     target: "e1mfpqtc4"
                 })({
                     name: "qgr7u4",
                     styles: "padding-bottom:100px;max-width:1200px;align-self:center;width:100%"
                 }),
-                In = (0, a.Z)("div", {
+                Cn = (0, a.Z)("div", {
                     target: "e1mfpqtc3"
                 })({
                     name: "p7qmao",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden;padding-top:30px;border-radius:4px;iframe,object,embed{position:absolute;top:0;left:0;width:100%;height:100%;}"
                 }),
-                Sn = (0, a.Z)(m.UU, {
+                In = (0, a.Z)(m.UU, {
                     target: "e1mfpqtc2"
                 })({
                     name: "1dgkeo9",
                     styles: "position:relative;padding-bottom:56.25%;height:0;overflow:hidden"
                 }),
-                Zn = (0, a.Z)("div", {
+                Sn = (0, a.Z)("div", {
                     target: "e1mfpqtc1"
                 })("padding-bottom:50%;width:100%;height:0;overflow:hidden;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:4px;background-image:url(", (function(e) {
                     return e.image
                 }), ");"),
-                Tn = (0, a.Z)("div", {
+                Zn = (0, a.Z)("div", {
                     target: "e1mfpqtc0"
                 })({
                     name: "12ndgvw",
@@ -3456,4 +3455,4 @@
         }
     }
 ]);
-//# sourceMappingURL=761695b26592a2b8d631b6778c98adf9bcf5e6f31f3535ab67a3a633267ef7d0.js.map
+//# sourceMappingURL=f7fe42f448800bf7e9bd3439426b078ec89b72916e9e6daf285d544c0fff2f41.js.map

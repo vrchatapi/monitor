@@ -17,7 +17,7 @@
                 v = r(64258),
                 p = r(96985),
                 f = r(95896),
-                y = r(95168),
+                y = r(83807),
                 m = r(96882),
                 g = r(22202),
                 b = r(67978),
@@ -69,7 +69,7 @@
                 return r
             }
 
-            function x(e) {
+            function T(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? I(Object(r), !0).forEach((function(t) {
@@ -80,7 +80,7 @@
                 }
                 return e
             }
-            var T = (0, l.lazy)((function() {
+            var x = (0, l.lazy)((function() {
                     return r.e(8536).then(r.bind(r, 18536))
                 })),
                 E = (0, l.lazy)((function() {
@@ -152,7 +152,7 @@
                         n((0, w.Td)(k[r])), n((0, w.Bq)(r)), n((0, w.IT)(a))
                     },
                     $ = function(e) {
-                        n((0, w.IR)(e)), F(x(x({}, R), e))
+                        n((0, w.IR)(e)), F(T(T({}, R), e))
                     },
                     K = function() {
                         var e = (0, a.Z)(c().mark((function e(t) {
@@ -168,7 +168,7 @@
                                                 color: "success",
                                                 timeout: 3e3
                                             })), Y()
-                                        }, e.prev = 2, e.next = 5, B(x(x({}, i && {
+                                        }, e.prev = 2, e.next = 5, B(T(T({}, i && {
                                             file: i,
                                             tag: "product"
                                         }), a)).unwrap();
@@ -248,7 +248,7 @@
                 }, function() {
                     switch (A) {
                         case "productType":
-                            return l.createElement(T, {
+                            return l.createElement(x, {
                                 onNext: Y,
                                 onClose: te,
                                 hasAvatarSellerPermission: J
@@ -394,18 +394,17 @@
         },
         21538: (e, t, r) => {
             r.d(t, {
-                C0: () => x,
+                C0: () => I,
                 CO: () => b,
-                Cm: () => I,
+                Cm: () => S,
                 EA: () => m,
                 F6: () => g,
                 GG: () => f,
-                LQ: () => h,
+                LQ: () => w,
                 X8: () => y,
-                eP: () => S,
-                lx: () => w,
-                ve: () => A,
-                x8: () => O
+                eP: () => O,
+                ve: () => h,
+                x8: () => A
             });
             var a = r(15861),
                 n = r(42138),
@@ -658,11 +657,11 @@
                             }),
                             getAllAvatars: e.query({
                                 queryFn: (r = (0, a.Z)(s().mark((function e(t, r, a, u) {
-                                    var o, i, c, l, d, v, p, f, y, m, g, b, w, h, A, O, S, I, x, T, E, P, j, q, k, D, C;
+                                    var o, i, c, l, d, v, p, f, y, m, g, b, w, h, A, O, S, I, T, x, E, P, j, q, k, D, C;
                                     return s().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                o = t.sort, i = void 0 === o ? "updated" : o, c = t.order, l = void 0 === c ? "descending" : c, d = t.releaseStatus, v = void 0 === d ? "all" : d, p = t.user, f = void 0 === p ? "me" : p, y = t.organization, m = void 0 === y ? "vrchat" : y, g = t.n, b = void 0 === g ? 20 : g, w = t.featured, h = t.userId, A = t.search, O = t.tag, S = t.notag, I = t.platform, x = t.maxUnityVersion, T = t.minUnityVersion, E = t.exactUnityVersion, P = t.minAssetVersion, j = t.maxAssetVersion, q = t.exactAssetVersion, k = [], D = 0;
+                                                o = t.sort, i = void 0 === o ? "updated" : o, c = t.order, l = void 0 === c ? "descending" : c, d = t.releaseStatus, v = void 0 === d ? "all" : d, p = t.user, f = void 0 === p ? "me" : p, y = t.organization, m = void 0 === y ? "vrchat" : y, g = t.n, b = void 0 === g ? 20 : g, w = t.featured, h = t.userId, A = t.search, O = t.tag, S = t.notag, I = t.platform, T = t.maxUnityVersion, x = t.minUnityVersion, E = t.exactUnityVersion, P = t.minAssetVersion, j = t.maxAssetVersion, q = t.exactAssetVersion, k = [], D = 0;
                                             case 3:
                                                 return e.next = 6, u({
                                                     url: "avatars",
@@ -671,9 +670,9 @@
                                                         exactUnityVersion: E,
                                                         featured: w,
                                                         maxAssetVersion: j,
-                                                        maxUnityVersion: x,
+                                                        maxUnityVersion: T,
                                                         minAssetVersion: P,
-                                                        minUnityVersion: T,
+                                                        minUnityVersion: x,
                                                         n: b,
                                                         notag: S,
                                                         offset: D,
@@ -827,14 +826,13 @@
                 m = p.useEnqueueImpostorMutation,
                 g = p.useGetAllAvatarsQuery,
                 b = p.useGetAllAvatarStylesQuery,
-                w = p.useGetAllFavoriteAvatarsQuery,
-                h = p.useGetAvatarQuery,
-                A = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
-                O = p.useSelectAvatarMutation,
-                S = p.useSelectFallbackAvatarMutation,
-                I = p.useSetAvatarTagsMutation,
-                x = p.useUpdateAvatarMutation
+                w = (p.useGetAllFavoriteAvatarsQuery, p.useGetAvatarQuery),
+                h = (p.useGetFavoriteAvatarsQuery, p.useGetImpostorQueueStatsQuery),
+                A = p.useSelectAvatarMutation,
+                O = p.useSelectFallbackAvatarMutation,
+                S = p.useSetAvatarTagsMutation,
+                I = p.useUpdateAvatarMutation
         }
     }
 ]);
-//# sourceMappingURL=50c6b498e2d53fbc5473f2be9f8f71ae4d93d2d5bd35f8d20e75b7b3c839392b.js.map
+//# sourceMappingURL=f09f53d59fd65eb2219dbe295279dae5f95e0bf110e43b73f404855972f59968.js.map
