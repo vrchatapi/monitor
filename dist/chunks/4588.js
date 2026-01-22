@@ -1563,7 +1563,7 @@
                         withRecentSubscription: !0
                     }).user,
                     W = null == _ ? void 0 : _.hasVRCPlus,
-                    U = null == _ ? void 0 : _.previouslyHadVRCPlus;
+                    U = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !W;
                 (0, a.useEffect)((function() {
                     return function() {
                         M({
@@ -2599,7 +2599,7 @@
                             withRecentSubscription: !0
                         }).user,
                         W = null == _ ? void 0 : _.hasVRCPlus,
-                        U = null == _ ? void 0 : _.previouslyHadVRCPlus;
+                        U = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !W;
                     (0, a.useEffect)((function() {
                         return function() {
                             M({
@@ -3410,4 +3410,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1f9c4abb0d30db403e363673cbbfd6e37691ca637d09fbda4a20031e3abd06b3.js.map
+//# sourceMappingURL=aff4d37d4d50779d57809f60ff4c7d3ff1ed9c92b9b025e8094dc251da08c9ba.js.map

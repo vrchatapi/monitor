@@ -15,7 +15,7 @@
         72478: (e, t, a) => {
             "use strict";
             a.r(t), a.d(t, {
-                default: () => re
+                default: () => le
             });
             var n = a(15861),
                 r = a(54546),
@@ -28,8 +28,8 @@
                 m = a(83807),
                 w = a(66736),
                 d = a(67294),
-                p = a(89250),
-                f = a(79655),
+                f = a(89250),
+                p = a(79655),
                 E = a(53359);
             const y = function(e) {
                 var t = e.errorMessage,
@@ -47,13 +47,22 @@
                     containerClasses: "tw-max-w-[320px] tw-w-full"
                 }, "Try Again"))
             };
-            var g = a(43862);
-            const v = function(e) {
+            var v = a(43862);
+            const g = function(e) {
                 var t = e.title,
-                    a = e.message;
+                    a = e.message,
+                    n = e.showNotice,
+                    r = void 0 !== n && n;
                 return d.createElement("div", {
+                    className: "tw-flex tw-flex-col tw-w-full"
+                }, r && d.createElement(c.qX, {
+                    type: "custom",
+                    className: "tw-mb-4",
+                    iconColor: "#6ae3f9",
+                    color: "#064b5c"
+                }, "For a smooth payout experience, please ensure you do not close this window until you see the confirmation of your payout request has been completed."), d.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-justify-center tw-items-center tw-gap-6 tw-p-20"
-                }, d.createElement(g.Z, {
+                }, d.createElement(v.Z, {
                     size: "4x"
                 }), d.createElement("div", {
                     className: "tw-text-center"
@@ -61,7 +70,7 @@
                     className: "after:tw-hidden tw-font-bold"
                 }, t), a && d.createElement("p", {
                     className: "tw-mb-0"
-                }, a)))
+                }, a))))
             };
             const h = function(e) {
                 var t = e.status,
@@ -118,15 +127,16 @@
                 var t = e.status,
                     a = e.onClose,
                     l = e.onCancel,
-                    o = (0, d.useState)(b),
-                    c = (0, r.Z)(o, 2),
-                    i = c[0],
-                    u = c[1],
-                    m = (0, d.useState)(null),
-                    w = (0, r.Z)(m, 2),
-                    p = w[0],
-                    f = w[1],
-                    E = function() {
+                    o = e.onRefetchStatus,
+                    c = (0, d.useState)(b),
+                    i = (0, r.Z)(c, 2),
+                    u = i[0],
+                    m = i[1],
+                    w = (0, d.useState)(null),
+                    f = (0, r.Z)(w, 2),
+                    p = f[0],
+                    E = f[1],
+                    v = function() {
                         var e = (0, n.Z)(s().mark((function e() {
                             var a, n;
                             return s().wrap((function(e) {
@@ -136,51 +146,65 @@
                                             e.next = 3;
                                             break
                                         }
-                                        return u(P), e.abrupt("return");
+                                        return m(P), e.abrupt("return");
                                     case 3:
-                                        return u(C), e.prev = 4, e.next = 7, l(null == t || null === (a = t.activePayout) || void 0 === a ? void 0 : a.transactionId);
+                                        return m(C), e.prev = 4, e.next = 7, l(null == t || null === (a = t.activePayout) || void 0 === a ? void 0 : a.transactionId);
                                     case 7:
-                                        n = e.sent, f(n), u(N), e.next = 16;
+                                        if (n = e.sent, E(n), !o) {
+                                            e.next = 18;
+                                            break
+                                        }
+                                        return e.prev = 10, e.next = 13, o().unwrap();
+                                    case 13:
+                                        e.next = 18;
                                         break;
-                                    case 12:
-                                        e.prev = 12, e.t0 = e.catch(4), console.error("Error cancelling payout request:", e.t0), u(P);
-                                    case 16:
+                                    case 15:
+                                        e.prev = 15, e.t0 = e.catch(10), console.error("Error refetching payout status after cancel:", e.t0);
+                                    case 18:
+                                        m(N), e.next = 25;
+                                        break;
+                                    case 21:
+                                        e.prev = 21, e.t1 = e.catch(4), console.error("Error cancelling payout request:", e.t1), m(P);
+                                    case 25:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [4, 12]
+                                [4, 21],
+                                [10, 15]
                             ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
                         }
                     }();
-                return d.createElement(d.Fragment, null, i === b && d.createElement(h, {
+                return d.createElement(d.Fragment, null, u === b && d.createElement(h, {
                     status: t,
-                    onCancel: E,
+                    onCancel: v,
                     onClose: a,
                     onError: function() {
-                        return u(P)
+                        return m(P)
                     }
-                }), i === C && d.createElement(v, {
+                }), u === C && d.createElement(g, {
                     title: "Processing request...",
                     message: "This usually takes a few seconds."
-                }), i === N && d.createElement(x, {
+                }), u === N && d.createElement(x, {
                     cancelledData: p,
                     onClose: a
-                }), i === P && d.createElement(y, {
+                }), u === P && d.createElement(y, {
                     errorMessage: "There was an error cancelling this payout request. If this error persists, contact support.",
                     onClose: a
                 }))
             };
-            var S = a(16686);
-            const R = function(e) {
+            var S = a(76553),
+                R = a(64258),
+                T = a(16686);
+            const L = function(e) {
                 var t = e.onClose;
                 return d.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-2 tw-p-10"
                 }, d.createElement(c.$1, {
-                    icon: S.faCircleCheck,
+                    icon: T.faCircleCheck,
                     size: "4x",
                     className: "tw-text-message-success"
                 }), d.createElement("div", {
@@ -194,7 +218,7 @@
                     "aria-label": "Close payout confirmation dialog"
                 }, "Done"))
             };
-            const L = function(e) {
+            const I = function(e) {
                 var t = e.status,
                     a = e.onLoad,
                     n = void 0 === a ? function() {} : a,
@@ -206,13 +230,13 @@
                     u = i.activePayoutTiliaWidget,
                     m = i.activePayoutTiliaAmount,
                     w = "tilia-widget-container",
-                    p = (0, d.useState)(!1),
-                    f = (0, r.Z)(p, 2),
-                    E = f[0],
-                    y = f[1],
-                    g = (0, d.useState)(!1),
-                    v = (0, r.Z)(g, 2),
-                    h = (v[0], v[1]),
+                    f = (0, d.useState)(!1),
+                    p = (0, r.Z)(f, 2),
+                    E = p[0],
+                    y = p[1],
+                    v = (0, d.useState)(!1),
+                    g = (0, r.Z)(v, 2),
+                    h = (g[0], g[1]),
                     x = (0, d.useState)(!1),
                     b = (0, r.Z)(x, 2),
                     C = (b[0], b[1]),
@@ -225,10 +249,10 @@
                     R = (0, d.useMemo)((function() {
                         return null != u && u.redirect && null != u && u.nonce_auth_id ? new URL(u.redirect).hostname.includes("staging") ? "https://web.staging.tilia-inc.com/ui/appauth/".concat(u.nonce_auth_id) : "https://web.tilia-inc.com/ui/appauth/".concat(u.nonce_auth_id) : null
                     }), [u]),
-                    L = function(e) {
+                    T = function(e) {
                         h(!0), n()
                     },
-                    T = function(e) {
+                    L = function(e) {
                         C(!0), o(e)
                     },
                     I = function(e) {
@@ -255,12 +279,10 @@
                             rootId: w,
                             flow: "payout-full",
                             redirect: R,
-                            onComplete: T,
-                            onError: function() {
-                                return I
-                            },
+                            onComplete: L,
+                            onError: I,
                             debug: !1,
-                            onReady: L,
+                            onReady: T,
                             flowConfig: {
                                 hideWalletBalance: !0,
                                 hideExitButtons: !0,
@@ -280,86 +302,104 @@
                     }
                 })
             };
-            var T = "LOADING",
-                I = "WIDGET",
-                F = "VERIFYING",
-                A = "COMPLETED",
-                Z = "ERROR";
-            const D = function(e) {
+            var F = "LOADING",
+                A = "TILIA",
+                Z = "VERIFYING",
+                D = "COMPLETED",
+                O = "ERROR";
+            const _ = function(e) {
                 var t, a = e.status,
                     l = e.onClose,
-                    o = d.useState(T),
-                    c = (0, r.Z)(o, 2),
-                    i = c[0],
-                    u = c[1],
-                    p = (null == a || null === (t = a.activePayout) || void 0 === t ? void 0 : t.transactionId) || null,
-                    f = (0, m.Tu)().user,
-                    E = (0, w.xW)({
-                        userId: null == f ? void 0 : f.id
-                    }, {
-                        skip: !f
-                    }).refetch,
-                    g = (0, w.im)(),
-                    h = (0, r.Z)(g, 1)[0],
-                    x = function() {
+                    o = void 0 === l ? function() {} : l,
+                    c = e.onRefetchStatus,
+                    i = void 0 === c ? function() {} : c,
+                    u = e.onHideModalClose,
+                    f = void 0 === u ? function() {} : u,
+                    p = (0, d.useState)(F),
+                    E = (0, r.Z)(p, 2),
+                    v = E[0],
+                    h = E[1],
+                    x = (null == a || null === (t = a.activePayout) || void 0 === t ? void 0 : t.transactionId) || null,
+                    b = (0, m.Tu)().user,
+                    C = (0, w.im)(),
+                    N = (0, r.Z)(C, 1)[0];
+                (0, d.useEffect)((function() {
+                    f(v !== A)
+                }), [v, f]);
+                var P = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
                             var a, n;
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return u(F), e.prev = 1, n = (null == t || null === (a = t.payload) || void 0 === a ? void 0 : a.payout_status_id) || (null == t ? void 0 : t.payout_status_id), e.next = 5, h({
-                                            transactionId: p,
-                                            tiliaPayoutId: n
+                                        return h(Z), e.prev = 1, n = (null == t || null === (a = t.payload) || void 0 === a ? void 0 : a.payout_status_id) || (null == t ? void 0 : t.payout_status_id), e.next = 5, N({
+                                            transactionId: x,
+                                            tiliaPayoutId: n,
+                                            userId: null == b ? void 0 : b.id
                                         }).unwrap();
                                     case 5:
-                                        return e.next = 7, E().unwrap();
-                                    case 7:
-                                        u(A), e.next = 14;
+                                        if (!i) {
+                                            e.next = 8;
+                                            break
+                                        }
+                                        return e.next = 8, i().unwrap();
+                                    case 8:
+                                        h(D), e.next = 16;
                                         break;
-                                    case 10:
-                                        e.prev = 10, e.t0 = e.catch(1), u(Z), console.error("Error verifying payout status:", e.t0);
-                                    case 14:
+                                    case 11:
+                                        e.prev = 11, e.t0 = e.catch(1), h(O), console.error("Error verifying payout status:", e.t0), (0, R.d)({
+                                            title: "Payout Verification Error",
+                                            message: "There was an issue verifying your payout status. Please try again or contact support if you are unable to.",
+                                            color: "danger",
+                                            icon: S.eH,
+                                            timeout: 5e3
+                                        });
+                                    case 16:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [1, 10]
+                                [1, 11]
                             ])
                         })));
                         return function(t) {
                             return e.apply(this, arguments)
                         }
-                    }();
-                return d.createElement(d.Fragment, null, (i === T || i === I) && d.createElement("div", {
+                    }(),
+                    k = function() {
+                        h(F), v !== A && v !== D ? o() : o(!0)
+                    };
+                return d.createElement(d.Fragment, null, (v === F || v === A) && d.createElement("div", {
                     className: "tw-w-full"
-                }, i === T && d.createElement(v, {
+                }, v === F && d.createElement(g, {
                     title: "Loading Payout...",
                     message: "We're securely connecting you to complete your payout."
                 }), d.createElement("div", {
-                    className: i === T ? "tw-invisible" : ""
-                }, d.createElement(L, {
+                    className: v === F ? "tw-invisible" : ""
+                }, d.createElement(I, {
                     status: a,
-                    onComplete: x,
+                    onComplete: P,
                     onLoad: function() {
-                        u(I)
+                        h(A)
                     },
                     onError: function() {
-                        u(Z)
+                        h(O)
                     }
-                }))), i === F && d.createElement(v, {
+                }))), v === Z && d.createElement(g, {
+                    showNotice: !0,
                     message: "Please wait while we verify the transaction status."
-                }), i === A && d.createElement(R, {
-                    onClose: l
-                }), i === Z && d.createElement(y, {
+                }), v === D && d.createElement(L, {
+                    onClose: k
+                }), v === O && d.createElement(y, {
                     errorMessage: "There was an issue processing your payout. Please try again or contact support if the problem persists.",
-                    onClose: l
+                    onClose: k
                 }))
             };
-            var O = a(82414),
-                _ = a(45189),
-                q = a(83505),
-                M = [u.FZ.CANCELLED_PLATFORM, u.FZ.CANCELLED_REVERSED, u.FZ.CANCELLING];
-            const z = function(e) {
+            var q = a(82414),
+                M = a(45189),
+                z = a(83505),
+                U = [u.FZ.CANCELLED_PLATFORM, u.FZ.CANCELLED_REVERSED, u.FZ.CANCELLING];
+            const Y = function(e) {
                 var t = e.payouts,
                     a = d.useMemo((function() {
                         return new Intl.DateTimeFormat(void 0, {
@@ -375,7 +415,7 @@
                 }, (!t || 0 === t.length) && d.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-center tw-items-center tw-my-20"
                 }, d.createElement(c.$1, {
-                    icon: _.X5,
+                    icon: M.X5,
                     className: "tw-text-6xl tw-text-placeholder-text tw-mb-4"
                 }), d.createElement("p", {
                     className: "tw-text-center tw-mb-0 tw-text-lighter-grey"
@@ -404,14 +444,14 @@
                     }, e.paymentPlatform), d.createElement("td", {
                         className: "tw-py-5 tw-px-3"
                     }, d.createElement(c.b5, null), " ", e.paymentAmountTokens.toLocaleString()), d.createElement("td", {
-                        className: (0, q.cx)("tw-py-5 tw-px-3", M.includes(e.paymentStatusCode) && "tw-text-error-message-red", e.paymentStatusCode === u.FZ.PLATFORM_COMPLETED && "tw-text-message-success")
+                        className: (0, z.cx)("tw-py-5 tw-px-3", U.includes(e.paymentStatusCode) && "tw-text-error-message-red", e.paymentStatusCode === u.FZ.PLATFORM_COMPLETED && "tw-text-message-success")
                     }, d.createElement("div", {
                         className: "tw-relative tw-whitespace-nowrap"
                     }, e.paymentStatus || "Processing", " ", d.createElement("div", {
                         className: "tw-group tw-relative tw-inline-block"
                     }, d.createElement(c.$1, {
                         className: "tw-text-[#797979]",
-                        icon: O.sq
+                        icon: q.sq
                     }), function(e) {
                         switch (e.paymentStatusCode) {
                             case u.FZ.CANCELLED_PLATFORM:
@@ -435,7 +475,7 @@
                                 return d.createElement("div", {
                                     role: "tooltip",
                                     className: "tw-whitespace-normal tw-absolute tw--top-1/2 tw-right-0 tw--translate-x-5 tw-w-64 tw-mb-2 tw-hidden group-hover:tw-block tw-p-2 tw-bg-black tw-text-white tw-text-xs tw-rounded tw-shadow-lg tw-z-50"
-                                }, "Your payout is currently being processed by the provider. This usually takes a few days.", " ", d.createElement(f.rU, {
+                                }, "Your payout is currently being processed by the provider. This usually takes a few days.", " ", d.createElement(p.rU, {
                                     to: "https://creators.vrchat.com/economy/payout/",
                                     target: "_blank",
                                     rel: "noreferrer"
@@ -446,9 +486,8 @@
                     }(e)))))
                 })))))
             };
-            var U = a(28963),
-                Y = a(76553);
-            const G = function(e) {
+            var G = a(28963);
+            const V = function(e) {
                 var t = e.status,
                     a = e.onContinuePayout,
                     n = e.onCancelPayout;
@@ -490,13 +529,13 @@
                 }, r.paymentPlatform), d.createElement("td", {
                     className: "tw-py-5 tw-px-3 "
                 }, d.createElement(c.b5, null), " ", r.paymentAmountTokens.toLocaleString()), d.createElement("td", {
-                    className: (0, q.cx)("tw-py-5 tw-px-3 tw-flex tw-items-center tw-gap-2 tw-flex-nowrap", {
+                    className: (0, z.cx)("tw-py-5 tw-px-3 tw-flex tw-items-center tw-gap-2 tw-flex-nowrap", {
                         "tw-text-orange": s
                     })
                 }, s && d.createElement(c.$1, {
-                    icon: Y.eH
+                    icon: S.eH
                 }), i && d.createElement(c.$1, {
-                    icon: U.DH
+                    icon: G.DH
                 }), d.createElement("span", null, r.paymentStatus || "Incomplete"), s && d.createElement(d.Fragment, null, d.createElement(c.zx, {
                     type: "button",
                     onClick: a
@@ -509,7 +548,7 @@
             };
             var $ = a(83492),
                 j = a.n($);
-            const V = function(e) {
+            const H = function(e) {
                 var t = e.onContinue,
                     a = (e.activePayout || {}).transactionId;
                 return d.createElement("div", {
@@ -533,7 +572,7 @@
                     "aria-label": "Continue in Tilia"
                 }, "Continue in Tilia")))
             };
-            const B = function(e) {
+            const X = function(e) {
                 var t = e.status,
                     a = e.onCancel,
                     n = e.onConfirm,
@@ -543,23 +582,23 @@
                     i = s.status_code,
                     m = s.message,
                     w = (0, d.useState)(o || ""),
-                    p = (0, r.Z)(w, 2),
-                    f = p[0],
-                    E = p[1],
+                    f = (0, r.Z)(w, 2),
+                    p = f[0],
+                    E = f[1],
                     y = (0, d.useState)("$0.00"),
-                    g = (0, r.Z)(y, 2),
-                    v = g[0],
-                    h = g[1],
+                    v = (0, r.Z)(y, 2),
+                    g = v[0],
+                    h = v[1],
                     x = function() {
-                        var e = Number(f);
+                        var e = Number(p);
                         return !Number.isNaN(e) && e >= u.vC && e <= o
                     };
                 return (0, d.useEffect)((function() {
                     if (x()) {
-                        var e = Math.floor(.5 * Number(f));
+                        var e = Math.floor(.5 * Number(p));
                         h("$".concat((e / 100).toFixed(2)))
                     } else h("$0.00")
-                }), [f, o]), d.createElement("div", {
+                }), [p, o]), d.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-6 tw-w-full"
                 }, l && d.createElement(c.qX, {
                     type: "error",
@@ -577,7 +616,7 @@
                     max: o,
                     type: "number",
                     placeholder: "Enter amount",
-                    value: f,
+                    value: p,
                     step: "1",
                     onChange: function(e) {
                         return E(e.target.value)
@@ -612,7 +651,7 @@
                     className: "tw-mb-0"
                 }, "Estimated Payout Amount in USD"), d.createElement("h6", {
                     className: "tw-text-lg tw-mb-0"
-                }, v)), d.createElement("p", {
+                }, g)), d.createElement("p", {
                     className: "tw-mb-0 tw-text-orange"
                 }, d.createElement("small", null, "This is an estimate. Final amount and fees will be shown after specifying a transfer method and destination on the following screens."))), d.createElement("div", {
                     className: "tw-flex tw-gap-3 tw-w-full"
@@ -623,68 +662,78 @@
                 }, "Cancel"), d.createElement(c.zx, {
                     onClick: function() {
                         return n({
-                            amount: Number(f)
+                            amount: Number(p)
                         })
                     },
                     disabled: !x(),
                     containerClasses: "tw-flex-1"
                 }, "Request Payout"))))
             };
-            var X = "REQUEST",
-                W = "APPROVED",
-                H = "PROCESSING",
-                Q = "TILIA",
-                J = "VERIFYING",
-                K = "COMPLETED",
-                ee = "ERROR";
-            const te = function(e) {
+            var B = "REQUEST",
+                Q = "APPROVED",
+                W = "PROCESSING",
+                J = "TILIA",
+                K = "VERIFYING",
+                ee = "COMPLETED",
+                te = "ERROR";
+            const ae = function(e) {
                 var t, a = e.status,
                     l = e.onClose,
-                    o = e.onPayoutRequest,
-                    c = (0, d.useState)(X),
-                    i = (0, r.Z)(c, 2),
-                    u = i[0],
-                    p = i[1],
-                    f = (0, d.useState)(null),
-                    E = (0, r.Z)(f, 2),
-                    g = E[0],
-                    h = E[1],
-                    x = (0, d.useState)(null),
-                    b = (0, r.Z)(x, 2),
-                    C = b[0],
-                    N = b[1],
-                    P = (0, d.useState)(!1),
-                    k = (0, r.Z)(P, 2),
-                    S = k[0],
-                    T = k[1],
-                    I = (0, d.useState)((null == a || null === (t = a.activePayout) || void 0 === t ? void 0 : t.transactionId) || null),
-                    F = (0, r.Z)(I, 2),
+                    o = void 0 === l ? function() {} : l,
+                    c = e.onPayoutRequest,
+                    i = void 0 === c ? function() {} : c,
+                    u = e.onRefetchStatus,
+                    f = void 0 === u ? function() {} : u,
+                    p = e.onHideModalClose,
+                    E = void 0 === p ? function() {} : p,
+                    v = (0, d.useState)(B),
+                    h = (0, r.Z)(v, 2),
+                    x = h[0],
+                    b = h[1],
+                    C = (0, d.useState)(null),
+                    N = (0, r.Z)(C, 2),
+                    P = N[0],
+                    k = N[1],
+                    T = (0, d.useState)(null),
+                    F = (0, r.Z)(T, 2),
                     A = F[0],
                     Z = F[1],
-                    D = (0, m.Tu)().user,
-                    O = (0, w.xW)({
-                        userId: null == D ? void 0 : D.id
-                    }, {
-                        skip: !D
-                    }).refetch,
-                    _ = (0, w.im)(),
-                    q = (0, r.Z)(_, 1)[0],
-                    M = function() {
+                    D = (0, d.useState)(!1),
+                    O = (0, r.Z)(D, 2),
+                    _ = O[0],
+                    q = O[1],
+                    M = (0, d.useState)((null == a || null === (t = a.activePayout) || void 0 === t ? void 0 : t.transactionId) || null),
+                    z = (0, r.Z)(M, 2),
+                    U = z[0],
+                    Y = z[1],
+                    G = (0, m.Tu)().user,
+                    V = (0, w.im)(),
+                    $ = (0, r.Z)(V, 1)[0];
+                (0, d.useEffect)((function() {
+                    E(x !== J)
+                }), [x, E]);
+                var j = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
-                            var a, n, r, l;
+                            var a, n, r, l, o;
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return h(null), p(H), e.prev = 2, e.next = 5, o(t);
+                                        return k(null), b(W), e.prev = 2, e.next = 5, i(t);
                                     case 5:
-                                        n = e.sent, N(n), Z(null == n || null === (a = n.activePayout) || void 0 === a ? void 0 : a.transactionId), p(Q), e.next = 16;
+                                        n = e.sent, Z(n), Y(null == n || null === (a = n.activePayout) || void 0 === a ? void 0 : a.transactionId), b(J), e.next = 17;
                                         break;
                                     case 11:
-                                        e.prev = 11, e.t0 = e.catch(2), console.error("Payout request failed:", (null === e.t0 || void 0 === e.t0 || null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) || "An unexpected error occurred. Please try again later."), h({
+                                        e.prev = 11, e.t0 = e.catch(2), console.error("Payout request failed:", (null === e.t0 || void 0 === e.t0 || null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) || "An unexpected error occurred. Please try again later."), k({
                                             status_code: null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status,
                                             message: (null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) || "An unexpected error occurred. Please try again later."
-                                        }), p(ee);
-                                    case 16:
+                                        }), (0, R.d)({
+                                            title: "Payout Request Error",
+                                            message: (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) || "An unexpected error occurred. Please try again later.",
+                                            color: "danger",
+                                            icon: S.eH,
+                                            timeout: 5e3
+                                        }), b(te);
+                                    case 17:
                                     case "end":
                                         return e.stop()
                                 }
@@ -696,81 +745,93 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    z = function() {
-                        p(X), h(null), N(null), T(!1), l()
+                    ae = function() {
+                        b(B), k(null), Z(null), q(!1), x !== J && x !== ee ? o() : o(!0)
                     },
-                    U = function() {
+                    ne = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
                             var a, n;
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return p(J), e.prev = 1, n = (null == t || null === (a = t.payload) || void 0 === a ? void 0 : a.payout_status_id) || (null == t ? void 0 : t.payout_status_id), e.next = 5, q({
-                                            transactionId: A,
-                                            tiliaPayoutId: n
+                                        return b(K), e.prev = 1, n = (null == t || null === (a = t.payload) || void 0 === a ? void 0 : a.payout_status_id) || (null == t ? void 0 : t.payout_status_id), e.next = 5, $({
+                                            transactionId: U,
+                                            tiliaPayoutId: n,
+                                            userId: null == G ? void 0 : G.id
                                         }).unwrap();
                                     case 5:
-                                        return e.next = 7, O().unwrap();
-                                    case 7:
-                                        p(K), e.next = 14;
+                                        if (!f) {
+                                            e.next = 8;
+                                            break
+                                        }
+                                        return e.next = 8, f().unwrap();
+                                    case 8:
+                                        b(ee), e.next = 16;
                                         break;
-                                    case 10:
-                                        e.prev = 10, e.t0 = e.catch(1), p(ee), console.error("Error verifying payout status:", e.t0);
-                                    case 14:
+                                    case 11:
+                                        e.prev = 11, e.t0 = e.catch(1), b(te), console.error("Error verifying payout status:", e.t0), (0, R.d)({
+                                            title: "Payout Verification Error",
+                                            message: "There was an issue verifying your payout status. Please try again or contact support if you are unable to.",
+                                            color: "danger",
+                                            icon: S.eH,
+                                            timeout: 5e3
+                                        });
+                                    case 16:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [1, 10]
+                                [1, 11]
                             ])
                         })));
                         return function(t) {
                             return e.apply(this, arguments)
                         }
                     }();
-                return d.createElement(d.Fragment, null, u === X && d.createElement(B, {
-                    requestError: g,
+                return d.createElement(d.Fragment, null, x === B && d.createElement(X, {
+                    requestError: P,
                     status: a,
-                    onCancel: z,
-                    onConfirm: M
-                }), u === H && d.createElement(v, {
+                    onCancel: ae,
+                    onConfirm: j
+                }), x === W && d.createElement(g, {
                     title: "Processing Request...",
                     message: "This usually takes a few seconds."
-                }), u === W && d.createElement(V, {
-                    activePayout: null == C ? void 0 : C.activePayout,
+                }), x === Q && d.createElement(H, {
+                    activePayout: null == A ? void 0 : A.activePayout,
                     onContinue: function() {
-                        return p(Q)
+                        return b(J)
                     }
-                }), u === Q && d.createElement("div", {
+                }), x === J && d.createElement("div", {
                     className: "tw-w-full tw-relative tw-min-h-[400px]"
-                }, !S && d.createElement("div", {
+                }, !_ && d.createElement("div", {
                     className: "tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-z-10 tw-bg-white"
-                }, d.createElement(v, {
+                }, d.createElement(g, {
                     title: "Continue in Tilia",
                     message: "Complete your payout details there to finish the process."
                 })), d.createElement("div", {
-                    className: S ? "" : "tw-invisible"
-                }, d.createElement(L, {
+                    className: _ ? "" : "tw-invisible"
+                }, d.createElement(I, {
                     status: a,
-                    onComplete: U,
+                    onComplete: ne,
                     onLoad: function() {
-                        T(!0)
+                        q(!0)
                     },
                     onError: function() {
-                        p(ee)
+                        b(te)
                     }
-                }))), u === J && d.createElement(v, {
+                }))), x === K && d.createElement(g, {
+                    showNotice: !0,
                     title: "Verifying your payout status...",
                     message: "Returning you to VRChat..."
-                }), u === K && d.createElement(R, {
-                    onClose: z
-                }), u === ee && d.createElement(y, {
+                }), x === ee && d.createElement(L, {
+                    onClose: ae
+                }), x === te && d.createElement(y, {
                     errorMessage: "There was an issue processing your payout request. Please try again or contact support if the problem persists.",
-                    onClose: z
+                    onClose: ae
                 }))
             };
-            var ae = a(87695);
-            const ne = function(e) {
+            var ne = a(87695);
+            const re = function(e) {
                 var t = e.status,
                     a = e.economyStatus,
                     n = e.isInternalTesting,
@@ -782,7 +843,7 @@
                     u = o.okBalance,
                     m = o.okNotOngoing,
                     w = o.okFrequency,
-                    p = o.okStanding,
+                    f = o.okStanding,
                     E = (null == a ? void 0 : a.economyOnline) || n;
                 return d.createElement(c.JX, {
                     className: "tw-bg-grey tw-p-5 tw-rounded-lg @md:tw-flex-row tw-gap-4"
@@ -801,135 +862,143 @@
                     className: "tw-mb-4 tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-2 tw-flex-wrap"
                 }, d.createElement("h5", {
                     className: "tw-font-bold after:tw-hidden"
-                }, "Payout Request Requirements"), d.createElement(f.rU, {
+                }, "Payout Request Requirements"), d.createElement(p.rU, {
                     to: "https://creators.vrchat.com/economy/payout/",
                     target: "_blank",
                     rel: "noreferrer"
                 }, d.createElement("small", {
                     className: "tw-underline tw-text-subtext-grey"
                 }, d.createElement(c.$1, {
-                    icon: O.sq
+                    icon: q.sq
                 }), " About Payout"))), d.createElement("ul", {
                     className: "tw-list-none tw-p-0 tw-flex tw-flex-col tw-gap-2"
                 }, d.createElement("li", {
                     className: "tw-flex tw-items-center tw-gap-2"
                 }, d.createElement(c.$1, {
-                    className: (0, q.cx)({
-                        "tw-text-message-success": p,
-                        "tw-text-orange": !p
+                    className: (0, z.cx)({
+                        "tw-text-message-success": f,
+                        "tw-text-orange": !f
                     }),
-                    icon: p ? S.faCircleCheck : ae.faCircleXmark
-                }), !p && d.createElement("span", null, "Your account has creator economy holds or restrictions"), p && d.createElement("span", null, "Your account has no creator economy holds or restrictions")), d.createElement("li", {
+                    icon: f ? T.faCircleCheck : ne.faCircleXmark
+                }), !f && d.createElement("span", null, "Your account has creator economy holds or restrictions"), f && d.createElement("span", null, "Your account has no creator economy holds or restrictions")), d.createElement("li", {
                     className: "tw-flex tw-items-center tw-gap-2"
                 }, d.createElement(c.$1, {
-                    className: (0, q.cx)({
+                    className: (0, z.cx)({
                         "tw-text-message-success": u,
                         "tw-text-orange": !u
                     }),
-                    icon: u ? S.faCircleCheck : ae.faCircleXmark
+                    icon: u ? T.faCircleCheck : ne.faCircleXmark
                 }), !u && d.createElement("span", null, "You don't have at least 20,000 earned credits available"), u && d.createElement("span", null, "You have at least 20,000 earned credits available")), d.createElement("li", {
                     className: "tw-flex tw-items-center tw-gap-2"
                 }, d.createElement(c.$1, {
-                    className: (0, q.cx)({
+                    className: (0, z.cx)({
                         "tw-text-message-success": m,
                         "tw-text-orange": !m
                     }),
-                    icon: m ? S.faCircleCheck : ae.faCircleXmark
+                    icon: m ? T.faCircleCheck : ne.faCircleXmark
                 }), !m && d.createElement("span", null, "You have an active payout in progress"), m && d.createElement("span", null, "You don't have an active payout in progress")), d.createElement("li", {
                     className: "tw-flex tw-items-center tw-gap-2"
                 }, d.createElement(c.$1, {
-                    className: (0, q.cx)({
+                    className: (0, z.cx)({
                         "tw-text-message-success": w,
                         "tw-text-orange": !w
                     }),
-                    icon: w ? S.faCircleCheck : ae.faCircleXmark
+                    icon: w ? T.faCircleCheck : ne.faCircleXmark
                 }), !w && d.createElement("span", null, "You have requested a payout in the past 24 hours"), w && d.createElement("span", null, "You haven't requested a payout in the past 24 hours")))))
             };
-            const re = function() {
+            const le = function() {
                 var e, t, a, o, E, y = (0, m.Tu)().user,
-                    g = (0, m.pc)(),
-                    v = (0, p.s0)(),
-                    h = (0, f.lr)(),
-                    x = (0, r.Z)(h, 2),
-                    b = x[0],
-                    C = x[1],
-                    N = (0, d.useState)(null),
-                    P = (0, r.Z)(N, 2),
-                    S = P[0],
-                    R = P[1],
-                    L = (0, p.UO)().paginationPage,
-                    T = (0, d.useState)(L ? Number(L) : 1),
-                    I = (0, r.Z)(T, 2),
+                    v = (0, m.pc)(),
+                    h = (0, f.s0)(),
+                    x = (0, p.lr)(),
+                    b = (0, r.Z)(x, 2),
+                    C = b[0],
+                    N = b[1],
+                    P = (0, d.useState)(!1),
+                    S = (0, r.Z)(P, 2),
+                    R = S[0],
+                    T = S[1],
+                    L = (0, d.useState)(null),
+                    I = (0, r.Z)(L, 2),
                     F = I[0],
                     A = I[1],
-                    Z = (0, w.M3)(),
-                    O = Z.data,
-                    _ = (Z.isFetching, Z.isError, Z.error, 2 === (null == O ? void 0 : O.economyState) && g),
-                    q = (0, w.xW)({
+                    Z = (0, f.UO)().paginationPage,
+                    D = (0, d.useState)(Z ? Number(Z) : 1),
+                    O = (0, r.Z)(D, 2),
+                    q = O[0],
+                    M = O[1],
+                    z = (0, w.M3)(),
+                    U = z.data,
+                    G = z.isFetching,
+                    $ = (z.isError, z.error, 2 === (null == U ? void 0 : U.economyState) && v),
+                    j = (0, w.xW)({
                         userId: y.id
                     }, {
                         skip: !y,
-                        refetchOnMountOrArgChange: !0
+                        refetchOnFocus: !0
                     }),
-                    M = q.data,
-                    U = q.isFetching,
-                    Y = q.isSuccess,
-                    $ = q.isError,
-                    j = q.error,
-                    V = (0, w.yk)({
+                    H = j.data,
+                    X = j.isFetching,
+                    B = j.isSuccess,
+                    Q = j.isError,
+                    W = j.error,
+                    J = j.refetch,
+                    K = (0, w.yk)({
                         userId: y.id
                     }, {
                         skip: !y
                     }),
-                    B = V.data,
-                    X = V.isFetching,
-                    W = V.isSuccess,
-                    H = V.isError,
-                    Q = V.error,
-                    J = (0, w.DH)(),
-                    K = (0, r.Z)(J, 2),
-                    ee = K[0],
-                    ae = K[1].isSuccess,
-                    re = (0, w.Ot)(),
-                    le = (0, r.Z)(re, 1)[0],
-                    oe = U || X,
-                    se = null !== (e = null == M ? void 0 : M.activePayout) && void 0 !== e && e;
+                    ee = K.data,
+                    te = K.isFetching,
+                    ne = K.isSuccess,
+                    le = K.isError,
+                    oe = K.error,
+                    se = (0, w.DH)(),
+                    ce = (0, r.Z)(se, 2),
+                    ie = ce[0],
+                    ue = ce[1].isSuccess,
+                    me = (0, w.Ot)(),
+                    we = (0, r.Z)(me, 1)[0],
+                    de = X || te || G,
+                    fe = null !== (e = null == H ? void 0 : H.activePayout) && void 0 !== e && e;
                 (0, d.useEffect)((function() {
-                    if (Y && (!S && b.has("tilia-state"))) {
-                        R("CONTINUE");
-                        var e = new URLSearchParams(b);
-                        e.delete("tilia-state"), C(e, {
+                    if (B && (!F && C.has("tilia-state"))) {
+                        A("CONTINUE");
+                        var e = new URLSearchParams(C);
+                        e.delete("tilia-state"), N(e, {
                             replace: !0
                         })
                     }
-                }), [S, se, Y, b, C]), (0, d.useEffect)((function() {
-                    F !== (L ? Number(L) : 1) && v("/home/marketplace/storefront/payout/manage/".concat(F, "?").concat(b.toString()), {
+                }), [F, fe, B, C, N]), (0, d.useEffect)((function() {
+                    q !== (Z ? Number(Z) : 1) && h("/home/marketplace/storefront/payout/manage/".concat(q, "?").concat(C.toString()), {
                         replace: !0
                     })
-                }), [F, v, L, b]);
-                var ce = (0, d.useMemo)((function() {
-                        return B && B.payouts ? B.payouts.filter((function(e) {
+                }), [q, h, Z, C]);
+                var pe = (0, d.useMemo)((function() {
+                        return ee && ee.payouts ? ee.payouts.filter((function(e) {
                             return e.paymentStatusCode !== u.FZ.PLATFORM_READY && e.paymentStatusCode !== u.FZ.PLATFORM_PROCESSING && e.paymentStatusCode !== u.FZ.INIT
                         })) : []
-                    }), [B]),
-                    ie = (0, d.useMemo)((function() {
-                        if (!ce || 0 === ce.length) return [];
-                        var e = 10 * (F - 1),
+                    }), [ee]),
+                    Ee = (0, d.useMemo)((function() {
+                        if (!pe || 0 === pe.length) return [];
+                        var e = 10 * (q - 1),
                             t = e + 10;
-                        return ce.slice(e, t)
-                    }), [ce, F]),
-                    ue = function(e) {
-                        R(e)
+                        return pe.slice(e, t)
+                    }), [pe, q]),
+                    ye = function(e) {
+                        A(e)
                     },
-                    me = function() {
-                        R(null)
+                    ve = function() {
+                        arguments.length > 0 && void 0 !== arguments[0] && arguments[0] ? (A("EXITING"), J(), setTimeout((function() {
+                            return A(null)
+                        }), 1e3)) : A(null)
                     },
-                    we = function() {
+                    ge = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ee({
+                                        return e.next = 2, ie({
                                             platform: u.LV.PAYOUT_TILIA,
                                             amountTokens: t.amount,
                                             userId: null == y ? void 0 : y.id
@@ -946,12 +1015,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    de = function() {
+                    he = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, le({
+                                        return e.next = 2, we({
                                             transactionId: t,
                                             userId: null == y ? void 0 : y.id
                                         }).unwrap();
@@ -966,65 +1035,72 @@
                         return function(t) {
                             return e.apply(this, arguments)
                         }
-                    }();
+                    }(),
+                    xe = function(e) {
+                        T(e)
+                    };
                 return d.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-8"
                 }, d.createElement(c.zx, {
                     containerClasses: "tw-w-fit",
                     neutral: !0,
                     onClick: function() {
-                        return v("/home/marketplace/storefront/dashboard")
+                        return h("/home/marketplace/storefront/dashboard")
                     }
                 }, d.createElement(c.$1, {
                     icon: l.A3
                 }), " Back"), d.createElement("div", null, d.createElement("h3", {
                     className: "after:tw-hidden tw-font-bold tw-mb-3"
-                }, "Payout"), $ && d.createElement(c.qX, {
+                }, "Payout"), Q && d.createElement(c.qX, {
                     type: "error",
                     title: "Error Loading Payout Status",
-                    message: "There was an error loading your payout status: ".concat((null == j || null === (t = j.data) || void 0 === t ? void 0 : t.message) || "Unknown error")
-                }), oe && d.createElement(c.UU, {
+                    message: "There was an error loading your payout status: ".concat((null == W || null === (t = W.data) || void 0 === t ? void 0 : t.message) || "Unknown error")
+                }), de && d.createElement(c.UU, {
                     className: "tw-w-full tw-h-64"
-                }), !oe && Y && d.createElement(ne, {
-                    status: M,
-                    economyStatus: O,
-                    isInternalTesting: _,
+                }), !de && B && d.createElement(re, {
+                    status: H,
+                    economyStatus: U,
+                    isInternalTesting: $,
                     onRequestPayout: function() {
-                        return ue("REQUEST")
+                        return ye("REQUEST")
                     }
-                })), !oe && Y && se && d.createElement("div", null, d.createElement("h3", {
+                })), !de && B && fe && d.createElement("div", null, d.createElement("h3", {
                     className: "after:tw-hidden tw-font-bold tw-mb-3"
-                }, "In Progress"), d.createElement(G, {
-                    status: M,
+                }, "In Progress"), d.createElement(V, {
+                    status: H,
                     onContinuePayout: function() {
-                        return ue("CONTINUE")
+                        return ye("CONTINUE")
                     },
                     onCancelPayout: function() {
-                        return ue("CANCEL")
+                        return ye("CANCEL")
                     }
                 })), d.createElement("div", null, d.createElement("h3", {
                     className: "after:tw-hidden tw-font-bold tw-mb-3"
-                }, "Payout History"), H && d.createElement(c.qX, {
+                }, "Payout History"), le && d.createElement(c.qX, {
                     type: "error",
                     title: "Error Loading Payout History",
-                    message: "There was an error loading your payout history: ".concat((null == Q || null === (a = Q.data) || void 0 === a ? void 0 : a.message) || "Unknown error")
-                }), oe && d.createElement(c.UU, {
+                    message: "There was an error loading your payout history: ".concat((null == oe || null === (a = oe.data) || void 0 === a ? void 0 : a.message) || "Unknown error")
+                }), de && d.createElement(c.UU, {
                     className: "tw-w-full tw-h-64"
-                }), !oe && W && d.createElement(z, {
-                    payouts: ie
+                }), !de && ne && d.createElement(Y, {
+                    payouts: Ee
                 }), d.createElement("div", null, d.createElement(i.Z, {
-                    totalCount: null !== (o = null == B || null === (E = B.payouts) || void 0 === E ? void 0 : E.length) && void 0 !== o ? o : 0,
+                    totalCount: null !== (o = null == ee || null === (E = ee.payouts) || void 0 === E ? void 0 : E.length) && void 0 !== o ? o : 0,
                     showCurrentPageOnly: !0,
-                    currentPage: F,
+                    currentPage: q,
                     pageSize: 10,
                     onPageChange: function(e) {
-                        return A(e)
+                        return M(e)
                     }
                 }))), d.createElement(c.u_, {
-                    isVisible: !!S,
-                    onClose: me,
+                    disableBackdropClick: !0,
+                    disableClose: de || R,
+                    isVisible: !!F,
+                    onClose: function() {
+                        return ve(!0)
+                    },
                     title: function() {
-                        switch (S) {
+                        switch (F) {
                             case "REQUEST":
                                 return "Request Payout";
                             case "CONTINUE":
@@ -1036,26 +1112,37 @@
                         }
                     }(),
                     className: "tw-max-w-[700px]",
+                    noClose: "EXITING" === F || R,
                     centered: !0
                 }, function() {
-                    switch (S) {
+                    switch (F) {
                         case "REQUEST":
-                            return d.createElement(te, {
-                                status: M,
-                                onClose: me,
-                                onPayoutRequest: we,
-                                requestCreated: ae
+                            return d.createElement(ae, {
+                                status: H,
+                                onClose: ve,
+                                onHideModalClose: xe,
+                                onPayoutRequest: ge,
+                                requestCreated: ue,
+                                onRefetchStatus: J
                             });
                         case "CONTINUE":
-                            return d.createElement(D, {
-                                status: M,
-                                onClose: me
+                            return d.createElement(_, {
+                                onHideModalClose: xe,
+                                status: H,
+                                onClose: ve,
+                                onRefetchStatus: J
                             });
                         case "CANCEL":
                             return d.createElement(k, {
-                                status: M,
-                                onClose: me,
-                                onCancel: de
+                                status: H,
+                                onClose: ve,
+                                onCancel: he,
+                                onRefetchStatus: J
+                            });
+                        case "EXITING":
+                            return d.createElement(g, {
+                                title: "Exiting",
+                                message: "Exiting payout flow, one moment please..."
                             });
                         default:
                             return null
@@ -1081,4 +1168,4 @@
         }
     }
 ]);
-//# sourceMappingURL=142c07751606a79696eed7d8e5ef657aa65e34ff9732f2321eed4ef09c749330.js.map
+//# sourceMappingURL=2a4990b213e79a561b4a64dd16e4f27ffb09f6360fca597d117450c7aa8252d8.js.map

@@ -1797,10 +1797,9 @@
                     Be = Xe.isSuccess,
                     _e = (0, h.Nr)(Z, 1400),
                     He = X || Q,
-                    Qe = (0, h.Tb)(He, 300),
-                    Je = V || J || se || Ee || qe || We || Ce,
-                    et = W || ee || ue || xe || ze || $e || Se,
-                    tt = (0, m.useMemo)((function() {
+                    Qe = V || J || se || Ee || qe || We || Ce,
+                    Je = W || ee || ue || xe || ze || $e || Se,
+                    et = (0, m.useMemo)((function() {
                         return !(ne || !ae) && (null == re ? void 0 : re.includes("permission-sell-avatar-products"))
                     }), [ne]);
                 m.useEffect((function() {
@@ -1840,7 +1839,7 @@
                         timeout: 7e3
                     }))
                 }), [Oe]);
-                var rt, nt = m.useMemo((function() {
+                var tt, rt = m.useMemo((function() {
                         return (null != ce ? ce : []).map((function(e) {
                             return {
                                 fileId: e.id,
@@ -1849,7 +1848,7 @@
                             }
                         }))
                     }), [ce]),
-                    at = function() {
+                    nt = function() {
                         var e = (0, a.Z)(d().mark((function e() {
                             var n, a, l, o, i;
                             return d().wrap((function(e) {
@@ -1876,7 +1875,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    lt = function() {
+                    at = function() {
                         var e = (0, a.Z)(d().mark((function e() {
                             var n, a, l, o, i;
                             return d().wrap((function(e) {
@@ -1903,7 +1902,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ot = function() {
+                    lt = function() {
                         var e = (0, a.Z)(d().mark((function e(n) {
                             var a, l, o, c, s;
                             return d().wrap((function(e) {
@@ -1937,15 +1936,15 @@
                     type: "error",
                     title: "Error",
                     className: "tw-my-2"
-                }, (null == W || null === (rt = W.data) || void 0 === rt || null === (rt = rt.error) || void 0 === rt ? void 0 : rt.message) || "There was an error loading the avatar."));
-                if (!Y || Qe || He) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
+                }, (null == W || null === (tt = W.data) || void 0 === tt || null === (tt = tt.error) || void 0 === tt ? void 0 : tt.message) || "There was an error loading the avatar."));
+                if (!Y || He && !Y) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
                     loading: !0
                 }));
-                var it, ct = "";
-                Je && (ct = m.createElement(U.X2, null, m.createElement(p.Z, {
+                var ot, it = "";
+                Qe && (it = m.createElement(U.X2, null, m.createElement(p.Z, {
                     color: "warning"
-                }, null == et || null === (it = et.data) || void 0 === it ? void 0 : it.error.message)));
-                var st = function() {
+                }, null == Je || null === (ot = Je.data) || void 0 === ot ? void 0 : ot.error.message)));
+                var ct = function() {
                         var e = (0, a.Z)(d().mark((function e() {
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -1969,10 +1968,10 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ut = function() {
+                    st = function() {
                         M(!1), t((0, A.bi)())
                     };
-                return m.createElement(v.Z, null, m.createElement(U.$4, null, null !== (e = Y.name) && void 0 !== e ? e : "Avatar"), ct, oe && m.createElement(Ae, {
+                return m.createElement(v.Z, null, m.createElement(U.$4, null, null !== (e = Y.name) && void 0 !== e ? e : "Avatar"), it, oe && m.createElement(Ae, {
                     isOpen: P,
                     onCloseCallback: function() {
                         return R(!1)
@@ -1981,21 +1980,21 @@
                 }), m.createElement(b.default, {
                     avatar: Y,
                     user: H,
-                    galleryImages: nt,
+                    galleryImages: rt,
                     licenses: me,
                     isAvatarSold: fe,
                     isAvatarSoldFetching: ve,
                     isSelectAvatarLoading: Re,
                     isSelectFallbackLoading: Ve,
                     isUpdateAvatarFetching: ye,
-                    hasAvatarSellerPermission: tt,
+                    hasAvatarSellerPermission: et,
                     onEdit: function() {
                         return R(!0)
                     },
-                    onSelectFallback: lt,
-                    onSelectAvatar: at,
-                    onSellAvatar: st,
-                    onSetAvatarReleaseStatus: ot
+                    onSelectFallback: at,
+                    onSelectAvatar: nt,
+                    onSellAvatar: ct,
+                    onSetAvatarReleaseStatus: lt
                 }), (le || u) && m.createElement(U.X2, {
                     className: "tw-mb-3"
                 }, m.createElement(De, null, m.createElement(U.oI, null, m.createElement("h4", {
@@ -2032,7 +2031,7 @@
                 }))))), !1, !1, m.createElement(U.u_, {
                     title: Ue[k] || null,
                     isVisible: G,
-                    onClose: ut,
+                    onClose: st,
                     width: "100%",
                     slim: !0,
                     centered: !1,
@@ -2040,7 +2039,7 @@
                     disableBackdropClick: !0,
                     className: "tw-bg-black"
                 }, m.createElement(D.Z, {
-                    onClose: ut
+                    onClose: st
                 })))
             }
         },
@@ -2262,4 +2261,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8d2cb7f8bddeee089bedc3ba118029dfada7ed82c8e0df8e86d7e04d549c3412.js.map
+//# sourceMappingURL=3dcfeb669bfdeadf7aa0aa754b79b95acba91d22663be94fd7edfd2a81d9a263.js.map
