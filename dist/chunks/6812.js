@@ -29,10 +29,10 @@
                 d = a(96985),
                 u = a(79967),
                 g = a.n(u),
-                b = a(3905),
-                x = a.n(b),
-                h = a(16031),
-                f = a.n(h),
+                x = a(3905),
+                b = a.n(x),
+                f = a(16031),
+                h = a.n(f),
                 E = a(75969),
                 y = a(79655),
                 w = a(27484),
@@ -54,10 +54,10 @@
                     g = t.giftedByDisplayName;
                 t.appliedToSubscriptionId;
                 v().extend(S());
-                var b = function(e) {
+                var x = function(e) {
                         return v()(e).format("ll")
                     },
-                    x = "active" === c && a ? "paused" : c;
+                    b = "active" === c && a ? "paused" : c;
                 return n ? s.createElement(k, {
                     className: r,
                     "aria-label": "Tiny VRCPlus ".concat(m ? "Gifted" : "Recurring", " Subscription Card")
@@ -80,13 +80,13 @@
                     icon: E.Cl
                 }), " ", l), s.createElement(P, null, s.createElement("otherDiv", null, !m && s.createElement(d.X2, {
                     "aria-label": "Subscription Status"
-                }, s.createElement(q, null, "Status:"), s.createElement(j, null, " ", x)), s.createElement(d.X2, {
+                }, s.createElement(q, null, "Status:"), s.createElement(j, null, " ", b)), s.createElement(d.X2, {
                     "aria-label": "Subscription Period"
                 }, s.createElement(q, null, "Period:"), s.createElement(j, null, i)), m && s.createElement(d.X2, {
                     "aria-label": "Subscription Start Date"
-                }, s.createElement(q, null, "Starts:"), s.createElement(j, null, " ", b(o), " ")), s.createElement(d.X2, {
+                }, s.createElement(q, null, "Starts:"), s.createElement(j, null, " ", x(o), " ")), s.createElement(d.X2, {
                     "aria-label": "Subscription End Date"
-                }, s.createElement(q, null, m ? "Expires" : "Next Payment", ":"), s.createElement(j, null, b(p), " ")), (m || a) && s.createElement("div", {
+                }, s.createElement(q, null, m ? "Expires" : "Next Payment", ":"), s.createElement(j, null, x(p), " ")), (m || a) && s.createElement("div", {
                     className: "mt-5",
                     "aria-label": "Subscription Gifted By"
                 }, s.createElement(R, null, " ", !m && "This ".concat(a.period.slice(0, 1).toUpperCase() + a.period.slice(1)), " Gifted By", " "), s.createElement(d.$1, {
@@ -160,16 +160,16 @@
                     o = s.useState(0),
                     p = (0, r.Z)(o, 2),
                     u = p[0],
-                    b = p[1],
-                    h = l ? l.filter((function(e) {
+                    x = p[1],
+                    f = l ? l.filter((function(e) {
                         return e.isGift
                     })) : [],
                     E = l ? l.filter((function(e) {
                         return !e.isGift
                     })) : [],
-                    y = [].concat((0, n.Z)(h), (0, n.Z)(E)),
+                    y = [].concat((0, n.Z)(f), (0, n.Z)(E)),
                     w = (null == E ? void 0 : E.length) > 0,
-                    v = (null == h ? void 0 : h.length) > 0,
+                    v = (null == f ? void 0 : f.length) > 0,
                     z = u < (null == y ? void 0 : y.length) - 1,
                     S = u > 0,
                     k = !(null !== (t = y[u]) && void 0 !== t && t.isGift);
@@ -178,9 +178,9 @@
                 }, s.createElement(F, {
                     className: "pr-0 mb-2"
                 }, s.createElement(_, null, s.createElement("picture", null, s.createElement("source", {
-                    srcSet: "".concat(x(), ", ").concat(f(), " 2x")
+                    srcSet: "".concat(b(), ", ").concat(h(), " 2x")
                 }), s.createElement("img", {
-                    src: x(),
+                    src: b(),
                     alt: "VRChat Plus Logo"
                 })))), 0 === y.length && s.createElement(s.Fragment, null, s.createElement(F, {
                     className: "pt-3 pr-0"
@@ -195,7 +195,7 @@
                 }, "subscribing!"))))), y.length > 0 && s.createElement(s.Fragment, null, v && s.createElement(F, {
                     className: "pt-2 pr-0 pb-3",
                     "aria-label": "Gifted Subs Total"
-                }, s.createElement(_, null, "🎉 You have ", null == h ? void 0 : h.length, " Gift", (null == h ? void 0 : h.length) > 1 && "s", "! 🎉")), s.createElement(F, {
+                }, s.createElement(_, null, "🎉 You have ", null == f ? void 0 : f.length, " Gift", (null == f ? void 0 : f.length) > 1 && "s", "! 🎉")), s.createElement(F, {
                     className: "pt-4 pr-0"
                 }, s.createElement(A, {
                     xs: "4"
@@ -204,7 +204,7 @@
                     neutral: !0,
                     size: "lg",
                     onClick: function() {
-                        return b(u - 1)
+                        return x(u - 1)
                     }
                 }, " ", s.createElement(d.$1, {
                     icon: c.A3
@@ -232,7 +232,7 @@
                     neutral: !0,
                     size: "lg",
                     onClick: function() {
-                        return b(u + 1)
+                        return x(u + 1)
                     }
                 }, " ", s.createElement(d.$1, {
                     icon: i._t
@@ -240,7 +240,7 @@
                     className: "pt-4 pr-0"
                 }, s.createElement(_, null, s.createElement(Z, {
                     subscription: y[u],
-                    initialGift: h.length > 0 ? h[0] : null
+                    initialGift: f.length > 0 ? f[0] : null
                 }))), v && w && k && s.createElement(F, null, s.createElement(_, {
                     className: "pt-3"
                 }, s.createElement("p", null, "Payments to your recurring VRC+ subscription will remain paused until all your gifts expire. So sit back, relax and enjoy your gifted subs! 🥳")))), s.createElement(F, {
@@ -323,15 +323,15 @@
         },
         3905: (e, t, a) => {
             e.exports = {
-                srcSet: a.p + "b4fc3db1d7b14657-305w.png 305w",
+                srcSet: a.p + "ab5b267f449f2193-305w.png 305w",
                 images: [{
-                    path: a.p + "b4fc3db1d7b14657-305w.png",
+                    path: a.p + "ab5b267f449f2193-305w.png",
                     width: 305,
                     height: 120
                 }],
-                src: a.p + "b4fc3db1d7b14657-305w.png",
+                src: a.p + "ab5b267f449f2193-305w.png",
                 toString: function() {
-                    return a.p + "b4fc3db1d7b14657-305w.png"
+                    return a.p + "ab5b267f449f2193-305w.png"
                 },
                 width: 305,
                 height: 120
@@ -339,4 +339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a00551a96674432dd7c8e8d2e7397bcd6b6950642a7ff6e7006ef66323c58e3c.js.map
+//# sourceMappingURL=bd635225d35ac3929041ee8d2315738e8480fccd91b53a0e23b7f568c21c8074.js.map
