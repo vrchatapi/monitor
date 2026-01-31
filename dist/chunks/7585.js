@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [7541], {
+    [7585], {
         8860: (e, t, n) => {
             n.d(t, {
                 Z: () => u
@@ -86,9 +86,9 @@
                 }
             }
         },
-        77541: (e, t, n) => {
+        3306: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => Lt
+                default: () => Vt
             });
             var a = n(67294),
                 r = n(96985),
@@ -115,10 +115,10 @@
                     b = (0, i.Z)(y, 2),
                     x = b[0],
                     Z = b[1],
-                    k = a.useState(!1),
-                    N = (0, i.Z)(k, 2),
-                    C = N[0],
-                    S = N[1],
+                    N = a.useState(!1),
+                    k = (0, i.Z)(N, 2),
+                    C = k[0],
+                    S = k[1],
                     O = function() {
                         Z(!1), S(!1)
                     },
@@ -199,15 +199,15 @@
                 b = n(35773),
                 x = n(95305),
                 Z = n(34698),
-                k = n(69699),
-                N = n(60766),
+                N = n(69699),
+                k = n(60766),
                 C = n(22202),
                 S = n(40219),
                 O = n(57672),
                 T = n(79655),
                 P = "link_discord",
                 A = "unlink_discord";
-            const D = function(e) {
+            const I = function(e) {
                 var t = e.user || {},
                     n = t.discordId,
                     l = t.displayName,
@@ -218,18 +218,18 @@
                     g = f[0],
                     w = f[1],
                     E = (0, a.useState)(null),
-                    D = (0, i.Z)(E, 2),
-                    I = D[0],
-                    F = D[1],
+                    I = (0, i.Z)(E, 2),
+                    D = I[0],
+                    F = I[1],
                     R = (0, d.s0)(),
                     j = (0, p.I0)(),
                     z = (0, T.lr)(),
                     U = (0, i.Z)(z, 2),
                     q = U[0],
-                    V = (U[1], (0, C.fb)()),
-                    L = (0, i.Z)(V, 2),
-                    $ = L[0],
-                    _ = L[1],
+                    L = (U[1], (0, C.fb)()),
+                    V = (0, i.Z)(L, 2),
+                    $ = V[0],
+                    _ = V[1],
                     M = _.isLoading,
                     Y = (_.isSuccess, _.isError, _.error, (0, C.hL)()),
                     B = (0, i.Z)(Y, 2),
@@ -242,7 +242,7 @@
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : I) && !n) {
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : D) && !n) {
                                             e.next = 3;
                                             break
                                         }
@@ -365,8 +365,8 @@
                         redirectTo: "/home/profile"
                     })
                 }), []), (0, a.useEffect)((function() {
-                    g === P && I && n && (w(null), F(null))
-                }), [W, M, n, I]);
+                    g === P && D && n && (w(null), F(null))
+                }), [W, M, n, D]);
                 var J = W || M;
                 return a.createElement(a.Fragment, null, a.createElement("div", {
                     className: "center-panel"
@@ -391,11 +391,11 @@
                             redirectTo: "/home/profile"
                         })
                     }
-                }, "Link your Discord Account")))), a.createElement(k.Z, {
+                }, "Link your Discord Account")))), a.createElement(N.Z, {
                     isOpen: g === A,
                     toggle: Q,
                     centered: !0
-                }, a.createElement(N.Z, {
+                }, a.createElement(k.Z, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
                 }, a.createElement("h2", {
                     className: "text-center ty-my-5 tw-p-5 tw-text-center"
@@ -412,11 +412,11 @@
                 }, "Unlink Account"), a.createElement(r.zx, {
                     onClick: Q,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
-                }, "Cancel")))), a.createElement(k.Z, {
-                    isOpen: null !== I && g === P,
+                }, "Cancel")))), a.createElement(N.Z, {
+                    isOpen: null !== D && g === P,
                     toggle: Q,
                     centered: !0
-                }, a.createElement(N.Z, {
+                }, a.createElement(k.Z, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
                 }, a.createElement("h2", {
                     className: "text-center ty-my-5 tw-p-5"
@@ -430,21 +430,21 @@
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        return K(I)
+                        return K(D)
                     }
                 }, "Link Account"), a.createElement(r.zx, {
                     onClick: Q,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))))
             };
-            var I = n(56646),
+            var D = n(56646),
                 F = n(6811),
                 R = n(68412),
                 j = n(79442),
                 z = n(60006),
                 U = n(86646),
                 q = n(43862);
-            const V = function() {
+            const L = function() {
                 var e = (0, C.XC)(),
                     t = e.data,
                     n = e.isError,
@@ -472,7 +472,7 @@
                     to: "/home/ageverification"
                 }, "Try Again"));
                 if (!u) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                    icon: I.faCircleInfo
+                    icon: D.faCircleInfo
                 }), " You must have an active VRChat Plus subscription in order to begin the verification process."), a.createElement(z.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
@@ -489,21 +489,21 @@
                         }, "Go to My Profile"));
                     case "uninitialized":
                         return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: I.faCircleInfo
+                            icon: D.faCircleInfo
                         }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), a.createElement(z.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Learn More"));
                     default:
                         return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: I.faCircleInfo
+                            icon: D.faCircleInfo
                         }), " You can check your Age Verification status here."), a.createElement(z.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Check Status"))
                 }
             };
-            var L = n(42138),
+            var V = n(42138),
                 $ = n(3820),
                 _ = n(23138),
                 M = n(3620),
@@ -532,7 +532,7 @@
                 (0, a.useEffect)((function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
-                            t = (0, L.Z)(u);
+                            t = (0, V.Z)(u);
                         t.length === e.size && t.every((function(t) {
                             return e.has(t)
                         })) || g({
@@ -561,7 +561,7 @@
                         label: "Filter ".concat(r),
                         defaultChecked: c.has(n),
                         onChangeCallback: function() {
-                            return e = n, void(c.has(e) ? s(new Set((0, L.Z)(c).filter((function(t) {
+                            return e = n, void(c.has(e) ? s(new Set((0, V.Z)(c).filter((function(t) {
                                 return t !== e
                             })))) : s(new Set(c).add(e)));
                             var e
@@ -594,8 +594,8 @@
                     b = v[1],
                     x = (0, a.useState)({}),
                     Z = (0, i.Z)(x, 2),
-                    k = Z[0],
-                    N = Z[1],
+                    N = Z[0],
+                    k = Z[1],
                     C = function() {
                         s(1), p(null), w(!1), b({}), n()
                     };
@@ -660,8 +660,8 @@
                         setFormSuccess: w,
                         ownerInfo: y,
                         setOwnerInfo: b,
-                        claimInfo: k,
-                        setClaimInfo: N,
+                        claimInfo: N,
+                        setClaimInfo: k,
                         resetForm: C
                     }
                 }, a.createElement("div", {
@@ -725,46 +725,46 @@
                     b = v[1],
                     x = (0, a.useContext)(X),
                     Z = x.previous,
-                    k = x.currentStep,
-                    N = x.claimInfo,
+                    N = x.currentStep,
+                    k = x.claimInfo,
                     C = x.setClaimInfo,
                     S = x.ownerInfo,
                     O = x.setFormError,
                     P = x.setFormSuccess,
                     A = (null == g ? void 0 : g.owner) && (null == g ? void 0 : g.accurate) && (null == g ? void 0 : g.perjury) && (null == g ? void 0 : g.liability) && (null == g ? void 0 : g.abuse),
-                    D = (null == N || null === (e = N.description) || void 0 === e ? void 0 : e.length) > 0 && (null == N || null === (t = N.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == N || null === (n = N.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
-                    I = (0, K.lw)(),
-                    F = (0, i.Z)(I, 2),
+                    I = (null == k || null === (e = k.description) || void 0 === e ? void 0 : e.length) > 0 && (null == k || null === (t = k.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == k || null === (n = k.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
+                    D = (0, K.lw)(),
+                    F = (0, i.Z)(D, 2),
                     R = F[0],
                     j = F[1],
                     z = j.isError,
                     U = j.error,
                     q = j.isLoading,
-                    V = j.isSuccess,
-                    L = j.reset;
+                    L = j.isSuccess,
+                    V = j.reset;
                 (0, a.useEffect)((function() {
                     var e = s.get("dmcaTarget");
-                    e && C(ee(ee({}, N), {}, {
+                    e && C(ee(ee({}, k), {}, {
                         contentIds: ae([e])
                     }))
                 }), []), (0, a.useEffect)((function() {
                     var e;
-                    z && (L(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                    z && (V(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
                 }), [z, U]), (0, a.useEffect)((function() {
-                    V && (L(), P(!0))
-                }), [V]);
+                    L && (V(), P(!0))
+                }), [L]);
                 var $ = function(e) {
                     w(ee(ee({}, g), {}, (0, H.Z)({}, e.target.id, e.target.checked)))
                 };
-                return 3 !== k ? null : a.createElement(a.Fragment, null, a.createElement("label", {
+                return 3 !== N ? null : a.createElement(a.Fragment, null, a.createElement("label", {
                     htmlFor: "claim-description",
                     className: "tw-mb-4"
                 }, "A description of the copyright-protected work or other intellectual property right that you claim has been infringed", a.createElement(r.gx, {
                     className: "tw-pt-2",
                     id: "claim-description",
-                    value: null == N ? void 0 : N.description,
+                    value: null == k ? void 0 : k.description,
                     onChange: function(e) {
-                        return C(ee(ee({}, N), {}, {
+                        return C(ee(ee({}, k), {}, {
                             description: e.target.value
                         }))
                     }
@@ -773,12 +773,12 @@
                     className: "tw-mb-4"
                 }, "The ID or URL of infringing content", a.createElement(r.Lj, {
                     className: "tw-pt-2",
-                    value: null == N ? void 0 : N.contentIds,
+                    value: null == k ? void 0 : k.contentIds,
                     validator: function(e) {
                         return ne.test(e)
                     },
                     onChange: function(e) {
-                        return C(ee(ee({}, N), {}, {
+                        return C(ee(ee({}, k), {}, {
                             contentIds: ae(e)
                         }))
                     }
@@ -789,11 +789,11 @@
                     className: "tw-pt-2",
                     id: "claim-proof",
                     onChange: function(e) {
-                        return C(ee(ee({}, N), {}, {
+                        return C(ee(ee({}, k), {}, {
                             proof: e.target.value
                         }))
                     },
-                    value: null == N ? void 0 : N.proof
+                    value: null == k ? void 0 : k.proof
                 })), a.createElement("label", {
                     htmlFor: "claim-authority",
                     className: "tw-mb-4"
@@ -813,9 +813,9 @@
                 }, "Copyright Owner Name (optional)", a.createElement(r.II, {
                     className: "tw-pt-2",
                     id: "claim-owner",
-                    value: null == N ? void 0 : N.copyrightOwnerName,
+                    value: null == k ? void 0 : k.copyrightOwnerName,
                     onChange: function(e) {
-                        return C(ee(ee({}, N), {}, {
+                        return C(ee(ee({}, k), {}, {
                             copyrightOwnerName: e.target.value
                         }))
                     }
@@ -880,11 +880,11 @@
                     neutral: !0
                 }, "Back"), a.createElement(r.zx, {
                     className: "tw-ml-2",
-                    disabled: !D || q,
+                    disabled: !I || q,
                     containerStyles: oe,
                     onClick: function() {
                         return R({
-                            claimInfo: N,
+                            claimInfo: k,
                             ownerInfo: S
                         })
                     }
@@ -1154,7 +1154,7 @@
                     s = c[0],
                     u = c[1];
                 (0, a.useEffect)((function() {
-                    var e = Object.fromEntries((0, L.Z)(n.entries()).filter((function(e) {
+                    var e = Object.fromEntries((0, V.Z)(n.entries()).filter((function(e) {
                         return "dmcaClaimForm" !== (0, i.Z)(e, 1)[0]
                     })));
                     s && (e.dmcaClaimForm = !0), l(e)
@@ -1186,8 +1186,8 @@
                 be = n(34424),
                 xe = n(27484),
                 Ze = n.n(xe),
-                ke = n(21442),
-                Ne = n(8860),
+                Ne = n(21442),
+                ke = n(8860),
                 Ce = n(98185),
                 Se = n(5513),
                 Oe = n(8698),
@@ -1205,14 +1205,14 @@
                 }), (function(e, t, n) {
                     return !1 === e && !1 === t && null !== n
                 })),
-                De = (0, Oe.P1)(Te, (function(e) {
+                Ie = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !0 === t && null !== n
                 })),
-                Ie = (0, Oe.P1)(Te, (function(e) {
+                De = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
@@ -1245,61 +1245,48 @@
                 qe = (0, Oe.P1)(Pe, je, (function(e, t) {
                     return null !== e && !!t.reverted
                 })),
-                Ve = n(76938),
-                Le = n(52926),
-                $e = n(1059),
-                _e = n(45697),
-                Me = n.n(_e),
-                Ye = function(e) {
-                    var t = e.canChangeDisplayName,
-                        n = e.validationError,
-                        l = e.displayNameChanged,
-                        o = void 0 !== l && l,
-                        i = (0, p.v9)(De),
-                        c = (0, p.v9)(Fe),
-                        s = (0, p.v9)(ze),
-                        u = o || (0, p.v9)((function(e) {
+                Le = n(76938),
+                Ve = n(52926),
+                $e = n(45697),
+                _e = n.n($e),
+                Me = function(e) {
+                    var t = e.validationError,
+                        n = e.displayNameChanged,
+                        l = void 0 !== n && n,
+                        o = (0, p.v9)(Ie),
+                        i = (0, p.v9)(Fe),
+                        c = ((0, p.v9)(ze), l || (0, p.v9)((function(e) {
                             var t;
                             return null === (t = e.currentUser.displayName) || void 0 === t ? void 0 : t.changed
-                        }));
-                    return a.createElement(a.Fragment, null, t && a.createElement(_.Z, {
-                        color: "info"
-                    }, a.createElement(r.$1, {
-                        icon: W.sq,
-                        color: "teal"
-                    }), " You may only change your display name once every 3 months, choose wisely! Once you change your name, you may never be able to get your original name back!"), !t && a.createElement(_.Z, {
-                        color: "info",
-                        "aria-label": "name warning"
-                    }, a.createElement(r.$1, {
-                        icon: $e.U$
-                    }), " Your next allowed display name change is in ", 90 - Ze()().diff(s, "days"), " days"), null !== n && a.createElement(_.Z, {
+                        })));
+                    return a.createElement(a.Fragment, null, null !== t && a.createElement(_.Z, {
                         color: "warning",
                         "aria-label": "name warning"
                     }, a.createElement(r.$1, {
                         icon: ve.lE
-                    }), " ".concat(n)), i && null === n && a.createElement(_.Z, {
+                    }), " ".concat(t)), o && null === t && a.createElement(_.Z, {
                         color: "warning",
                         "aria-label": "name warning not available"
                     }, a.createElement(r.$1, {
-                        icon: Le.B1
-                    }), " That display name is already in use."), c && null === n && a.createElement(_.Z, {
+                        icon: Ve.B1
+                    }), " That display name is already in use."), i && null === t && a.createElement(_.Z, {
                         color: "warning",
                         "aria-label": "name warning character not okay"
                     }, a.createElement(r.$1, {
-                        icon: Le.B1
-                    }), " That display name includes characters that cannot be used. Please try again."), u && a.createElement(_.Z, {
+                        icon: Ve.B1
+                    }), " That display name includes characters that cannot be used. Please try again."), c && a.createElement(_.Z, {
                         color: "success",
                         "aria-label": "name change success"
                     }, a.createElement(r.$1, {
                         icon: ve.lE
                     }), " Your display name has been changed!"))
                 };
-            Ye.propTypes = {
-                canChangeDisplayName: Me().bool.isRequired,
-                validationError: Me().string
+            Me.propTypes = {
+                canChangeDisplayName: _e().bool.isRequired,
+                validationError: _e().string
             };
-            const Be = Ye;
-            var Ge = function(e) {
+            const Ye = Me;
+            var Be = function(e) {
                 var t = e.displayNameError,
                     n = (0, p.I0)();
                 return a.createElement("div", {
@@ -1318,37 +1305,70 @@
                     color: "primary"
                 }, "Try Again")))
             };
-            Ge.propTypes = {
-                displayNameError: Me().string.isRequired
+            Be.propTypes = {
+                displayNameError: _e().string.isRequired
             };
-            const He = Ge;
-            var We = (0, c.Z)("p", {
+            const Ge = Be,
+                He = n.p + "53f4092cfcb77e5217e639fd7a2012ff35100e4d9b6ed70707b47746bcb81c86.svg";
+            var We = function(e) {
+                var t = e.canRevertDisplayName,
+                    n = e.numberOfDays,
+                    l = e.showLastDisplayNameChange,
+                    o = e.cooldownPermission,
+                    i = void 0 !== o && o;
+                return a.createElement(r.qX, {
+                    hideIcon: !0,
+                    color: "#28434B",
+                    type: "custom",
+                    iconColor: "#6AE3F9",
+                    className: "tw-mb-4"
+                }, a.createElement("div", {
+                    className: "tw-flex tw-gap-3 tw-flex-row"
+                }, a.createElement("p", {
+                    className: "tw-m-0"
+                }, a.createElement(r.$1, {
+                    icon: W.sq,
+                    color: "#6AE3F9",
+                    className: "tw-mr-2"
+                })), a.createElement("div", {
+                    className: "tw-flex tw-flex-col"
+                }, a.createElement("span", null, i && a.createElement(a.Fragment, null, "You can only change your display name once per", " ", a.createElement("strong", {
+                    className: "tw-text-[#FFFF00]"
+                }, 30, " days ", a.createElement("img", {
+                    alt: "subscriptions",
+                    width: "35",
+                    src: He
+                }))), !i && a.createElement(a.Fragment, null, "You can only change your display name once per ", a.createElement("strong", null, 90, " days"), " ", a.createElement("br", null), "Want more flexibility? Change it every ", 30, " days instead with", " ", a.createElement("img", {
+                    alt: "subscriptions",
+                    width: "35",
+                    src: He
+                }))), l && a.createElement("small", {
+                    className: "tw-text-placeholder-text"
+                }, "Last changed: ", n, " days ago."), t && a.createElement("small", {
+                    className: "tw-text-placeholder-text"
+                }, "You can revert your last display name change."))))
+            };
+            We.propTypes = {
+                canRevertDisplayName: _e().bool.isRequired,
+                numberOfDays: _e().number.isRequired,
+                showLastDisplayNameChange: _e().bool.isRequired
+            };
+            const Ke = We;
+            var Xe = n(39886),
+                Qe = n(56599),
+                Je = n(54610);
+            var et = (0, c.Z)("p", {
                     target: "ek3joju1"
                 })({
                     name: "dzbp6p",
                     styles: "white-space:pre-wrap;line-height:2"
                 }),
-                Ke = (0, c.Z)("b", {
+                tt = (0, c.Z)("b", {
                     target: "ek3joju0"
                 })({
                     name: "lii32t",
                     styles: "font-size:1.2em;color:var(--bs-primary)"
                 }),
-                Xe = function(e) {
-                    var t = e.canRevertDisplayName,
-                        n = e.numberOfDays,
-                        r = e.showLastDisplayNameChange;
-                    return a.createElement(We, null, r && a.createElement(a.Fragment, null, "It has been ", n, " days since your last display name change.", a.createElement("br", null)), "• You may only change your display name once per 90 days.", a.createElement("br", null), t && a.createElement(a.Fragment, null, "• You can revert your last display name change.", a.createElement("br", null)))
-                };
-            Xe.propTypes = {
-                canRevertDisplayName: Me().bool.isRequired,
-                numberOfDays: Me().number.isRequired,
-                showLastDisplayNameChange: Me().bool.isRequired
-            };
-            const Qe = Xe;
-            var Je = n(39886),
-                et = n(56599),
-                tt = n(54610),
                 nt = function(e) {
                     var t = e.exitRevertCallback,
                         n = e.previousDisplayName,
@@ -1366,14 +1386,14 @@
                         y = E[1],
                         b = (0, a.useState)(!0),
                         x = (0, i.Z)(b, 2),
-                        k = x[0],
-                        N = x[1],
+                        N = x[0],
+                        k = x[1],
                         C = (0, a.useState)(!1),
                         S = (0, i.Z)(C, 2),
                         O = S[0],
                         T = S[1];
                     (0, a.useEffect)((function() {
-                        return N("" === v || f !== n)
+                        return k("" === v || f !== n)
                     }), [v, f]);
                     var P = function() {
                         var e = (0, o.Z)(m().mark((function e() {
@@ -1412,12 +1432,12 @@
                     }();
                     return a.createElement("div", {
                         className: "center-panel"
-                    }, a.createElement(Je.Z, {
+                    }, a.createElement(Xe.Z, {
                         className: "mb-4",
                         outline: !0
-                    }, a.createElement(et.Z, {
+                    }, a.createElement(Qe.Z, {
                         tag: "h4"
-                    }, "Confirm Display Name Change Revert"), a.createElement(tt.Z, null, a.createElement(We, null, "This will change your display name back to:", a.createElement("br", null), a.createElement(Ke, null, n), a.createElement("br", null), "And restart the 90-day timer.", a.createElement("br", null), "Type your previous display name into the field below to revert."), a.createElement("input", {
+                    }, "Confirm Display Name Change Revert"), a.createElement(Je.Z, null, a.createElement(et, null, "This will change your display name back to:", a.createElement("br", null), a.createElement(tt, null, n), a.createElement("br", null), "And restart the 90-day timer.", a.createElement("br", null), "Type your previous display name into the field below to revert."), a.createElement("input", {
                         "aria-label": "enter revert name",
                         type: "text",
                         className: "form-control mt-2 mb-2",
@@ -1442,7 +1462,7 @@
                         onClick: function() {
                             return T(!0)
                         },
-                        disabled: k,
+                        disabled: N,
                         color: "primary"
                     }, "Ok"), a.createElement(Z.Z, {
                         onClick: t,
@@ -1458,8 +1478,8 @@
                     }))
                 };
             nt.propTypes = {
-                exitRevertCallback: Me().func.isRequired,
-                previousDisplayName: Me().string
+                exitRevertCallback: _e().func.isRequired,
+                previousDisplayName: _e().string
             };
             const at = nt;
             const rt = function() {
@@ -1472,79 +1492,86 @@
                     g = d.isError,
                     w = d.error,
                     E = d.isSuccess,
-                    v = (0, p.v9)(Ae),
-                    y = (0, p.v9)(Ie),
-                    k = (0, p.v9)(Te),
-                    N = (0, p.v9)(Re),
-                    C = (0, p.v9)(qe),
-                    S = (0, p.v9)(Ve.y),
-                    O = (0, p.v9)(ze),
-                    T = (0, p.v9)(Ue),
-                    P = (0, p.v9)((function(e) {
+                    v = (0, C.q7)().data,
+                    y = void 0 === v ? [] : v,
+                    N = (0, p.v9)(Ae),
+                    k = (0, p.v9)(De),
+                    S = (0, p.v9)(Te),
+                    O = (0, p.v9)(Re),
+                    T = (0, p.v9)(qe),
+                    P = (0, p.v9)(Le.y),
+                    A = (0, p.v9)(ze),
+                    I = (0, p.v9)(Ue),
+                    D = (0, p.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
-                    A = (0, a.useState)(!0),
-                    D = (0, i.Z)(A, 2),
-                    I = D[0],
-                    F = D[1],
-                    R = (0, a.useState)(null),
-                    j = (0, i.Z)(R, 2),
-                    z = j[0],
-                    U = j[1],
-                    q = (0, a.useState)(""),
-                    V = (0, i.Z)(q, 2),
-                    L = V[0],
-                    $ = V[1],
-                    M = (0, a.useState)(""),
-                    Y = (0, i.Z)(M, 2),
-                    B = Y[0],
-                    G = Y[1],
-                    H = (0, a.useState)(null),
-                    W = (0, i.Z)(H, 2),
-                    K = W[0],
-                    X = W[1],
-                    Q = (0, a.useState)(""),
-                    J = (0, i.Z)(Q, 2),
-                    ee = J[0],
-                    te = J[1],
-                    ne = a.useState(!1),
-                    ae = (0, i.Z)(ne, 2),
-                    re = ae[0],
-                    le = ae[1],
-                    oe = (0, a.useState)(!1),
-                    ie = (0, i.Z)(oe, 2),
-                    ce = ie[0],
-                    se = ie[1],
-                    ue = (0, l.Nr)(ee),
-                    me = v && y && "" !== ue;
+                    F = (0, a.useState)(!0),
+                    R = (0, i.Z)(F, 2),
+                    j = R[0],
+                    z = R[1],
+                    U = (0, a.useState)(null),
+                    q = (0, i.Z)(U, 2),
+                    L = q[0],
+                    V = q[1],
+                    $ = (0, a.useState)(""),
+                    M = (0, i.Z)($, 2),
+                    Y = M[0],
+                    B = M[1],
+                    G = (0, a.useState)(""),
+                    H = (0, i.Z)(G, 2),
+                    W = H[0],
+                    K = H[1],
+                    X = (0, a.useState)(null),
+                    Q = (0, i.Z)(X, 2),
+                    J = Q[0],
+                    ee = Q[1],
+                    te = (0, a.useState)(""),
+                    ne = (0, i.Z)(te, 2),
+                    ae = ne[0],
+                    re = ne[1],
+                    le = (0, a.useState)(!1),
+                    oe = (0, i.Z)(le, 2),
+                    ie = oe[0],
+                    ce = oe[1],
+                    se = (0, a.useState)(!1),
+                    ue = (0, i.Z)(se, 2),
+                    me = ue[0],
+                    de = ue[1],
+                    pe = y.includes("permission-reduced-name-change-cooldown"),
+                    fe = (0, l.Nr)(ae),
+                    he = N && k && "" !== fe;
                 if ((0, a.useEffect)((function() {
-                        S ? F(!0) : N && Ze()().diff(O, "days") < 90 ? F(!1) : F(!0)
-                    }), [O]), (0, a.useEffect)((function() {
-                        "" !== ue ? ue.length < 4 ? X("That name is too short.") : ue.length > 15 ? X("That name is too long.") : (X(null), $(""), n((0, Se.Zm)({
-                            displayName: ue,
-                            userId: P.id
-                        }))) : X(null)
-                    }), [ue]), (0, a.useEffect)((function() {
-                        return "" === L ? (le(!1), void U(null)) : L !== ee ? (le(!1), void U("Names don't match")) : (le(!0), void U(null))
-                    }), [L]), g) return a.createElement(He, {
+                        if (P) z(!0);
+                        else {
+                            var e = pe ? 30 : 90;
+                            O && Ze()().diff(A, "days") < e ? z(!1) : z(!0)
+                        }
+                    }), [A, pe, P, O]), (0, a.useEffect)((function() {
+                        "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), B(""), n((0, Se.Zm)({
+                            displayName: fe,
+                            userId: D.id
+                        }))) : ee(null)
+                    }), [fe, n, D.id]), (0, a.useEffect)((function() {
+                        return "" === Y ? (ce(!1), void V(null)) : Y !== ae ? (ce(!1), void V("Names don't match")) : (ce(!0), void V(null))
+                    }), [Y, ae]), g) return a.createElement(Ge, {
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
-                if (ce) return a.createElement(at, {
-                    previousDisplayName: T,
+                if (me) return a.createElement(at, {
+                    previousDisplayName: I,
                     exitRevertCallback: function() {
-                        return se(!1)
+                        return de(!1)
                     }
                 });
-                var de = function() {
+                var ge = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, n(u({
-                                            password: B,
-                                            displayName: ee,
+                                            password: W,
+                                            displayName: ae,
                                             revertDisplayName: !1,
-                                            userId: P.id
+                                            userId: D.id
                                         }));
                                     case 3:
                                         e.next = 8;
@@ -1563,15 +1590,16 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    pe = !I && !C;
+                    we = !j && !T;
                 return a.createElement(Ce.Z, {
                     loading: h
                 }, a.createElement("div", {
                     className: "center-panel"
-                }, a.createElement(ke.Z, null, a.createElement(Qe, {
-                    canRevertDisplayName: pe,
-                    showLastDisplayNameChange: !I,
-                    numberOfDays: Ze()().diff(O, "days")
+                }, a.createElement(Ne.Z, null, a.createElement(Ke, {
+                    canRevertDisplayName: we,
+                    cooldownPermission: pe,
+                    showLastDisplayNameChange: !j,
+                    numberOfDays: Ze()().diff(A, "days")
                 }), a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "1",
                     style: {
@@ -1589,24 +1617,24 @@
                     "aria-label": "display name",
                     className: "form-control",
                     autoComplete: "off",
-                    disabled: !I,
+                    disabled: !j,
                     id: "displayName",
                     name: "displayName",
                     onChange: function(e) {
-                        return te(e.target.value)
+                        return re(e.target.value)
                     },
-                    placeholder: P.displayName,
+                    placeholder: D.displayName,
                     type: "text",
-                    value: ee
-                }), a.createElement(Be, {
-                    canChangeDisplayName: I,
-                    displayName: P.displayName,
-                    displayNameAvailable: v,
-                    displayNameValue: ee,
+                    value: ae
+                }), a.createElement(Ye, {
+                    canChangeDisplayName: j,
+                    displayName: D.displayName,
+                    displayNameAvailable: N,
+                    displayNameValue: ae,
                     isRevert: !1,
-                    latestChangedDate: O,
-                    displayNameChecking: k,
-                    validationError: K,
+                    latestChangedDate: A,
+                    displayNameChecking: S,
+                    validationError: J,
                     displayNameChanged: E
                 }))), a.createElement(x.Z, {
                     xs: "1",
@@ -1614,14 +1642,14 @@
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, k && a.createElement(r.$1, {
+                }, S && a.createElement(r.$1, {
                     icon: ye.LM,
                     spin: !0,
                     size: "2x"
-                }), "" !== ee && !k && a.createElement(Ne.Z, {
-                    "aria-label": v && y ? "Name is available" : "Name is unavailable",
-                    ok: v && y
-                }))), me && !E && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }), "" !== ae && !S && a.createElement(ke.Z, {
+                    "aria-label": N && k ? "Name is available" : "Name is unavailable",
+                    ok: N && k
+                }))), he && !E && a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -1636,26 +1664,26 @@
                     id: "confirmDisplayName",
                     name: "confirmDisplayName",
                     onChange: function(e) {
-                        return $(e.target.value)
+                        return B(e.target.value)
                     },
                     placeholder: "Please confirm display name",
                     type: "text",
-                    value: L
-                }), null !== z && a.createElement(_.Z, {
+                    value: Y
+                }), null !== L && a.createElement(_.Z, {
                     color: "warning",
                     "aria-label": "confirm name warning"
                 }, a.createElement(r.$1, {
                     icon: ve.lE
-                }), " ".concat(z)))), a.createElement(x.Z, {
+                }), " ".concat(L)))), a.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== L && a.createElement(Ne.Z, {
-                    "aria-label": null !== z ? z : "Confirmation name matches",
-                    ok: null === z
-                }))), re && !E && a.createElement(b.Z, {
+                }, "" !== Y && a.createElement(ke.Z, {
+                    "aria-label": null !== L ? L : "Confirmation name matches",
+                    ok: null === L
+                }))), ie && !E && a.createElement(b.Z, {
                     className: "mt-2"
                 }, a.createElement(x.Z, {
                     xs: "1",
@@ -1676,14 +1704,14 @@
                     id: "namePasswordVerify",
                     name: "namePasswordVerify",
                     onChange: function(e) {
-                        return G(e.target.value)
+                        return K(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
-                    value: B
+                    value: W
                 })))), a.createElement(b.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
-                }, pe && a.createElement(x.Z, {
+                }, we && a.createElement(x.Z, {
                     xs: "6"
                 }, a.createElement(Z.Z, {
                     color: "primary",
@@ -1692,18 +1720,18 @@
                     id: "revert-name-change-submit",
                     name: "revert-name-change-submit",
                     onClick: function() {
-                        return se(!0)
+                        return de(!0)
                     }
                 }, "Revert Display Name Change")), a.createElement(x.Z, {
                     xs: "6"
                 }, a.createElement(Z.Z, {
-                    disabled: !I || !0 === k || null !== z || "" === L || "" === B || null !== K || "" === ee,
+                    disabled: !j || !0 === S || null !== L || "" === Y || "" === W || null !== J || "" === ae,
                     color: "primary",
                     block: !0,
                     id: "name-change-submit",
                     name: "name-change-submit",
                     value: "update",
-                    onClick: de
+                    onClick: ge
                 }, "Change Display Name"))))))
             };
             var lt = n(609),
@@ -1722,19 +1750,19 @@
                     v = a.useState(""),
                     y = (0, i.Z)(v, 2),
                     Z = y[0],
-                    k = y[1],
-                    N = a.useState(!1),
-                    C = (0, i.Z)(N, 2),
+                    N = y[1],
+                    k = a.useState(!1),
+                    C = (0, i.Z)(k, 2),
                     S = C[0],
                     O = C[1],
                     T = (0, f.$h)(),
                     P = (0, i.Z)(T, 2),
                     A = P[0],
-                    D = P[1],
-                    I = D.isLoading,
-                    F = D.isSuccess,
-                    R = D.isError,
-                    j = D.error,
+                    I = P[1],
+                    D = I.isLoading,
+                    F = I.isSuccess,
+                    R = I.isError,
+                    j = I.error,
                     z = function(e) {
                         var t = e.newPassword;
                         return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, ot.w)(t) ? "Please try a more secure password" : null : null
@@ -1746,9 +1774,9 @@
                         confirmationNewPassword: Z
                     }).newPassword !== n.confirmationNewPassword ? "Passwords don't match" : null,
                     q = !z,
-                    V = !U && Z.length > 0,
-                    L = w.length > 0 && !z,
-                    $ = L && Z.length > 0 && !U && !c,
+                    L = !U && Z.length > 0,
+                    V = w.length > 0 && !z,
+                    $ = V && Z.length > 0 && !U && !c,
                     M = !z && !U && w === Z && ("" !== d || c),
                     Y = function() {
                         var e = (0, o.Z)(m().mark((function e(t) {
@@ -1767,7 +1795,7 @@
                                             password: w
                                         }, c || (n.currentPassword = d), e.next = 8, A(n).unwrap();
                                     case 8:
-                                        p(""), E(""), k(""), e.next = 16;
+                                        p(""), E(""), N(""), e.next = 16;
                                         break;
                                     case 13:
                                         e.prev = 13, e.t0 = e.catch(3), console.error("Failed to change password:", e.t0);
@@ -1787,7 +1815,7 @@
                         E(e.target.value)
                     },
                     G = function(e) {
-                        k(e.target.value)
+                        N(e.target.value)
                     },
                     H = function(e) {
                         p(e.target.value)
@@ -1795,7 +1823,7 @@
                 return a.useEffect((function() {
                     S || "" === d && "" === w && "" === Z || O(!0)
                 }), [d, w, Z]), a.createElement(Ce.Z, {
-                    loading: I
+                    loading: D
                 }, a.createElement("div", {
                     className: "center-panel"
                 }, a.createElement("form", {
@@ -1839,9 +1867,9 @@
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, a.createElement(Ne.Z, {
+                }, a.createElement(ke.Z, {
                     ok: S ? q : null
-                }))), L && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }))), V && a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -1866,8 +1894,8 @@
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, a.createElement(Ne.Z, {
-                    ok: V
+                }, a.createElement(ke.Z, {
+                    ok: L
                 }))), $ && a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "1",
                     style: {
@@ -1924,9 +1952,9 @@
                     b = y.isLoading,
                     x = y.isError,
                     Z = y.error,
-                    k = y.reset,
-                    N = a.useState(!1),
-                    S = (0, i.Z)(N, 2),
+                    N = y.reset,
+                    k = a.useState(!1),
+                    S = (0, i.Z)(k, 2),
                     O = S[0],
                     T = S[1],
                     P = function() {
@@ -1977,7 +2005,7 @@
                     confirmCallback: P,
                     cancelText: "Cancel",
                     cancelCallback: function() {
-                        T(!1), k()
+                        T(!1), N()
                     },
                     isOpen: O,
                     isLoading: b
@@ -2059,8 +2087,8 @@
                 bt = n(65394),
                 xt = n(2909),
                 Zt = n(32966),
-                kt = n(50906),
-                Nt = n(45432),
+                Nt = n(50906),
+                kt = n(45432),
                 Ct = n(74855),
                 St = n(53637),
                 Ot = n(12611),
@@ -2068,7 +2096,7 @@
                 Pt = n(9669),
                 At = n.n(Pt);
 
-            function Dt(e, t) {
+            function It(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -2079,7 +2107,7 @@
                 return n
             }
 
-            function It(e) {
+            function Dt(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2116,7 +2144,7 @@
                 },
                 Ut = function(e) {
                     (0, wt.Z)(n, e);
-                    var t = It(n);
+                    var t = Dt(n);
 
                     function n(e) {
                         var r;
@@ -2186,9 +2214,9 @@
                         }()), r.state = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? Dt(Object(n), !0).forEach((function(t) {
+                                t % 2 ? It(Object(n), !0).forEach((function(t) {
                                     (0, H.Z)(e, t, n[t])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Dt(Object(n)).forEach((function(t) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : It(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
                             }
@@ -2331,7 +2359,7 @@
                                     if (n) {
                                         var t = e.getOneTimePasswordHref();
                                         return a.createElement("div", null, a.createElement("div", null, a.createElement("p", null, a.createElement(r.$1, {
-                                            icon: Nt.a3,
+                                            icon: kt.a3,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
@@ -2446,7 +2474,7 @@
                             }, "OTP Auth"), " ", "for iOS.")), a.createElement("div", {
                                 className: "tw-hidden xs:tw-block tw-flex-none tw-w-auto"
                             }, a.createElement(r.$1, {
-                                icon: kt.eF,
+                                icon: Nt.eF,
                                 size: "4x",
                                 className: "tw-mr-1"
                             }), a.createElement(r.$1, {
@@ -2465,7 +2493,7 @@
                                 xs: {
                                     size: "7"
                                 }
-                            }, a.createElement("p", null, a.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), a.createElement("p", null, "If you can't scan the code,", " ", a.createElement(Vt, {
+                            }, a.createElement("p", null, a.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), a.createElement("p", null, "If you can't scan the code,", " ", a.createElement(Lt, {
                                 type: "button",
                                 onClick: this.showTextKey
                             }, "enter the key manually"), "."), a.createElement("div", {
@@ -2565,13 +2593,13 @@
                     twoFactorAuth: e.twoFactorAuth
                 }
             }))(Ut));
-            var Vt = (0, c.Z)("button", {
+            var Lt = (0, c.Z)("button", {
                 target: "e8g46ds0"
             })({
                 name: "9xa7nk",
                 styles: "background-color:transparent;border:none;color:rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));padding:0;&:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb);text-decoration:underline;}"
             });
-            const Lt = function() {
+            const Vt = function() {
                 var e = (0, l.Tu)().user;
                 return a.createElement("div", null, a.createElement(r.$4, null, "Account Settings"), a.createElement("h2", null, "Account Settings"), a.createElement(r.oI, null, a.createElement("h4", null, "Change Display Name")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2585,7 +2613,7 @@
                     className: "mb-2"
                 }, a.createElement(qt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Account Linking")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(D, {
+                }, a.createElement(I, {
                     user: e
                 })), a.createElement(r.oI, null, a.createElement("h4", null, "Privacy")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2593,7 +2621,7 @@
                     user: e
                 })), a.createElement(r.oI, null, a.createElement("h4", null, "Age Verification")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(V, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Copyright")), a.createElement(r.Ao, {
+                }, a.createElement(L, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Copyright")), a.createElement(r.Ao, {
                     className: "mb-2"
                 }, a.createElement(ge, null)), !(null != e && e.hideContentFilterSettings) && a.createElement(a.Fragment, null, a.createElement(r.oI, null, a.createElement("h4", null, "Content Gating")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2606,7 +2634,7 @@
         },
         65578: (e, t, n) => {
             n.d(t, {
-                Z: () => k
+                Z: () => N
             });
             var a = n(54546),
                 r = n(84176),
@@ -2629,29 +2657,29 @@
                 b = n(96985),
                 x = n(8860),
                 Z = n(18461);
-            const k = function() {
+            const N = function() {
                 var e = (0, v.IB)().data,
                     t = (0, m.useState)(""),
                     n = (0, a.Z)(t, 2),
                     g = n[0],
-                    k = n[1],
-                    N = (0, m.useState)(""),
-                    C = (0, a.Z)(N, 2),
+                    N = n[1],
+                    k = (0, m.useState)(""),
+                    C = (0, a.Z)(k, 2),
                     S = C[0],
                     O = C[1],
                     T = (0, m.useState)(""),
                     P = (0, a.Z)(T, 2),
                     A = P[0],
-                    D = P[1],
-                    I = (0, E.Nr)(g),
+                    I = P[1],
+                    D = (0, E.Nr)(g),
                     F = (0, y.X6)(),
                     R = (0, a.Z)(F, 2),
                     j = R[0],
                     z = R[1],
                     U = z.isFetching,
                     q = z.isError,
-                    V = z.isSuccess,
-                    L = z.error,
+                    L = z.isSuccess,
+                    V = z.error,
                     $ = z.originalArgs,
                     _ = (0, y.n_)(),
                     M = (0, a.Z)(_, 2),
@@ -2669,10 +2697,10 @@
                     ne = J.error,
                     ae = J.isSuccess,
                     re = (0, y.SO)({
-                        email: I,
+                        email: D,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === I || !1 === w()(I)
+                        skip: "" === D || !1 === w()(D)
                     }),
                     le = re.data,
                     oe = re.isFetching,
@@ -2680,21 +2708,21 @@
                     ce = re.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    O(""), D("")
+                    O(""), I("")
                 }), [g]);
                 var ue = (0, m.useMemo)((function() {
-                        return ie && !1 === le.userExists && w()(I) && "" !== I
-                    }), [le, I]),
+                        return ie && !1 === le.userExists && w()(D) && "" !== D
+                    }), [le, D]),
                     me = (0, m.useMemo)((function() {
-                        return "" !== S && S === I
-                    }), [S, I]),
+                        return "" !== S && S === D
+                    }), [S, D]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === w()(I) && "" !== I) return m.createElement(d.Z, {
+                        if (!1 === w()(D) && "" !== D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That's an invalid email.");
-                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === I) return m.createElement(d.Z, {
+                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2704,16 +2732,16 @@
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " Failed to change news preference: ", W, ".");
-                        if (q && (null == $ ? void 0 : $.email) === I) {
-                            D("");
-                            var t = L.data.error.message;
+                        if (q && (null == $ ? void 0 : $.email) === D) {
+                            I("");
+                            var t = V.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
                             }, m.createElement(b.$1, {
                                 icon: u.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== S && S !== I) return m.createElement(d.Z, {
+                        if (ue && "" !== S && S !== D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2730,7 +2758,7 @@
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
-                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : V ? m.createElement(d.Z, {
+                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : L ? m.createElement(d.Z, {
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
@@ -2739,21 +2767,21 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [ae, te, q, V, le, ie, S, I, e, H]),
+                    }), [ae, te, q, L, le, ie, S, D, e, H]),
                     pe = (0, m.useMemo)((function() {
-                        return !se || V ? m.createElement("span", null, m.createElement(b.$1, {
+                        return !se || L ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
                         }), " Resend Verification") : m.createElement("span", null, m.createElement(b.$1, {
                             icon: i.LE,
                             color: "success"
                         }), " Email Verified")
-                    }), [se, V]),
+                    }), [se, L]),
                     fe = (0, m.useMemo)((function() {
                         return oe ? m.createElement(b.$1, {
                             icon: o.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === I ? null : ue ? m.createElement(x.Z, {
+                        }) : "" === D ? null : ue ? m.createElement(x.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -2762,7 +2790,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [oe, I, ue]);
+                    }), [oe, D, ue]);
                 return m.createElement("form", null, m.createElement(p.Z, {
                     className: "align-items-center justify-content-center"
                 }, m.createElement(f.Z, {
@@ -2790,7 +2818,7 @@
                     autoComplete: "off",
                     name: "email",
                     onChange: function(e) {
-                        return k(e.target.value)
+                        return N(e.target.value)
                     },
                     placeholder: null == e ? void 0 : e.obfuscatedEmail,
                     type: "text",
@@ -2847,7 +2875,7 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return D(e.target.value)
+                        return I(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -2879,7 +2907,7 @@
                     "aria-label": "resend email",
                     block: !0,
                     color: "primary",
-                    disabled: !(null != e && e.hasPendingEmail) && !V || ee,
+                    disabled: !(null != e && e.hasPendingEmail) && !L || ee,
                     onClick: function() {
                         return Q()
                     },
@@ -2896,7 +2924,7 @@
                     onClick: function(t) {
                         t.preventDefault(), j({
                             userId: null == e ? void 0 : e.id,
-                            email: I,
+                            email: D,
                             password: A
                         })
                     }
@@ -3118,4 +3146,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1347b4c686613c880d56a882148e69a803f23b6e8d1b8176e182795386c196a6.js.map
+//# sourceMappingURL=38b2cffb965b43f046014afc15348f370afc40323229b0c3abae052bb8b7a868.js.map
