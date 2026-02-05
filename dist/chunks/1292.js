@@ -1224,7 +1224,7 @@
                         P = Math.max(0, (E || 0) - p),
                         T = Math.max(0, (k || 0) - x),
                         M = v || E || 0;
-                    return console.log(M), n.createElement("div", {
+                    return n.createElement("div", {
                         key: o,
                         className: "tw-@container/transaction-row tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid tw-py-3"
                     }, n.createElement("div", {
@@ -1895,4 +1895,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8e011a52eada74d806035a699fc2ed119eb6521e5de7923886d1e4963e31c975.js.map
+//# sourceMappingURL=1d23228c7eb1431af95e7aa2640598b9468f261847c771bb0af4e699bc278231.js.map
