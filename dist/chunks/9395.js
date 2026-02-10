@@ -87,12 +87,12 @@
                     f = (0, u.I0)(),
                     g = (0, d.TH)().state,
                     S = (0, x.YA)(),
-                    U = (0, a.Z)(S, 2),
-                    D = U[0],
-                    O = U[1],
-                    _ = O.isLoading,
-                    V = O.error,
-                    I = O.isError,
+                    _ = (0, a.Z)(S, 2),
+                    U = _[0],
+                    D = _[1],
+                    O = D.isLoading,
+                    V = D.error,
+                    I = D.isError,
                     q = (0, m.lr)(),
                     R = (0, a.Z)(q, 2),
                     j = (R[0], R[1], (0, x._y)()),
@@ -178,7 +178,7 @@
                                         timeout: 5e3
                                     })));
                                 case 9:
-                                    return e.abrupt("return", De(t));
+                                    return e.abrupt("return", Ue(t));
                                 case 10:
                                     return e.abrupt("return", ee({
                                         discordAccessToken: t,
@@ -201,7 +201,7 @@
                                     }
                                     return e.abrupt("return");
                                 case 2:
-                                    return e.abrupt("return", De(null == g ? void 0 : g.continueDiscordAccessToken));
+                                    return e.abrupt("return", Ue(null == g ? void 0 : g.continueDiscordAccessToken));
                                 case 3:
                                 case "end":
                                     return e.stop()
@@ -209,7 +209,7 @@
                         }), e)
                     })))()
                 }), []);
-                var Se, Ue, De = function() {
+                var Se, _e, Ue = function() {
                         var e = (0, n.Z)(c().mark((function e(t) {
                             var r, n, a, i, s, u, d;
                             return c().wrap((function(e) {
@@ -272,11 +272,11 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Oe = function(e) {
+                    De = function(e) {
                         var t, r;
                         e.preventDefault(), W(null !== (t = null === (r = e.target) || void 0 === r ? void 0 : r.value) && void 0 !== t ? t : "")
                     },
-                    _e = function(e) {
+                    Oe = function(e) {
                         var t, r;
                         e.preventDefault(), J(null !== (t = null === (r = e.target) || void 0 === r ? void 0 : r.value) && void 0 !== t ? t : "")
                     },
@@ -286,7 +286,7 @@
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t.preventDefault(), (0, b.NA)(!1), e.prev = 2, e.next = 5, D({
+                                        return t.preventDefault(), (0, b.NA)(!1), e.prev = 2, e.next = 5, U({
                                             username: encodeURIComponent(null == K ? void 0 : K.trim()),
                                             password: encodeURIComponent(H)
                                         }).unwrap();
@@ -327,12 +327,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ie = _ || Te || Le,
+                    Ie = O || Te || Le,
                     qe = I || Ce,
                     Re = V || Ze,
                     je = "Failed to Log In",
                     Me = null == Re || null === (e = Re.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
-                I && ((null === (Se = Me) || void 0 === Se ? void 0 : Se.indexOf(":")) > 0 ? (je = Me.substring(0, Me.indexOf(":")).trim(), Me = Me.substring(Me.indexOf(":") + 1).trim()) : 0 === (null === (Ue = Me) || void 0 === Ue ? void 0 : Ue.indexOf(":")) && (Me = Me.substring(1).trim()));
+                I && ((null === (Se = Me) || void 0 === Se ? void 0 : Se.indexOf(":")) > 0 ? (je = Me.substring(0, Me.indexOf(":")).trim(), Me = Me.substring(Me.indexOf(":") + 1).trim()) : 0 === (null === (_e = Me) || void 0 === _e ? void 0 : _e.indexOf(":")) && (Me = Me.substring(1).trim()));
                 return s.createElement(N.Z, {
                     showCredits: !0
                 }, s.createElement(y.$4, null, "Login"), s.createElement("div", {
@@ -360,8 +360,8 @@
                     "aria-label": "username",
                     placeholder: "Username/Email",
                     value: K,
-                    onChange: Oe,
-                    onKeyUp: Oe
+                    onChange: De,
+                    onKeyUp: De
                 }), s.createElement(y.II, {
                     type: "password",
                     id: "password",
@@ -371,8 +371,8 @@
                     className: "mt-2",
                     placeholder: "Password",
                     value: H,
-                    onChange: _e,
-                    onKeyUp: _e
+                    onChange: Oe,
+                    onKeyUp: Oe
                 }), s.createElement("div", {
                     className: "tw-w-full tw-mt-3"
                 }, "Forgot your", " ", s.createElement(m.rU, {
@@ -439,7 +439,7 @@
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        De(G.discordAccessToken)
+                        Ue(G.discordAccessToken)
                     }
                 }, "Link Account"), s.createElement(y.zx, {
                     onClick: function() {
@@ -462,7 +462,7 @@
                         return o().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    r = (t = v.length > 0 && void 0 !== v[0] ? v[0] : {}).redirectTo, n = void 0 === r ? "/home/login" : r, a = t.version, i = void 0 === a ? 2 : a, "1366854478250381462", l = ["identify", "email"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === i ? "/v2" : ""), u = {
+                                    r = (t = v.length > 0 && void 0 !== v[0] ? v[0] : {}).redirectTo, n = void 0 === r ? "/home/login" : r, a = t.version, i = void 0 === a ? 2 : a, "1366854478250381462", l = ["openid", "identify", "email", "sdk.social_layer_presence"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === i ? "/v2" : ""), u = {
                                         redirectUri: c,
                                         isMobileRequest: !1,
                                         redirectTo: n
@@ -498,4 +498,4 @@
         }
     }
 ]);
-//# sourceMappingURL=68062d1e92a6dbccf76e990cbbd4841321a3a64fd37bca39e737143cbbed9b42.js.map
+//# sourceMappingURL=8e2ad37c42e60497c3f8350cba04217bebd62fa91a0864f07399ee707b86b2b0.js.map

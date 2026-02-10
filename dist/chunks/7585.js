@@ -207,7 +207,7 @@
                 T = n(79655),
                 P = "link_discord",
                 A = "unlink_discord";
-            const I = function(e) {
+            const D = function(e) {
                 var t = e.user || {},
                     n = t.discordId,
                     l = t.displayName,
@@ -218,9 +218,9 @@
                     g = f[0],
                     w = f[1],
                     E = (0, a.useState)(null),
-                    I = (0, i.Z)(E, 2),
-                    D = I[0],
-                    F = I[1],
+                    D = (0, i.Z)(E, 2),
+                    I = D[0],
+                    F = D[1],
                     R = (0, d.s0)(),
                     j = (0, p.I0)(),
                     z = (0, T.lr)(),
@@ -242,7 +242,7 @@
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : D) && !n) {
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : I) && !n) {
                                             e.next = 3;
                                             break
                                         }
@@ -365,8 +365,8 @@
                         redirectTo: "/home/profile"
                     })
                 }), []), (0, a.useEffect)((function() {
-                    g === P && D && n && (w(null), F(null))
-                }), [W, M, n, D]);
+                    g === P && I && n && (w(null), F(null))
+                }), [W, M, n, I]);
                 var J = W || M;
                 return a.createElement(a.Fragment, null, a.createElement("div", {
                     className: "center-panel"
@@ -413,7 +413,7 @@
                     onClick: Q,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), a.createElement(N.Z, {
-                    isOpen: null !== D && g === P,
+                    isOpen: null !== I && g === P,
                     toggle: Q,
                     centered: !0
                 }, a.createElement(k.Z, {
@@ -430,14 +430,14 @@
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        return K(D)
+                        return K(I)
                     }
                 }, "Link Account"), a.createElement(r.zx, {
                     onClick: Q,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))))
             };
-            var D = n(56646),
+            var I = n(56646),
                 F = n(6811),
                 R = n(68412),
                 j = n(79442),
@@ -472,7 +472,7 @@
                     to: "/home/ageverification"
                 }, "Try Again"));
                 if (!u) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                    icon: D.faCircleInfo
+                    icon: I.faCircleInfo
                 }), " You must have an active VRChat Plus subscription in order to begin the verification process."), a.createElement(z.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
@@ -489,14 +489,14 @@
                         }, "Go to My Profile"));
                     case "uninitialized":
                         return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: D.faCircleInfo
+                            icon: I.faCircleInfo
                         }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), a.createElement(z.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Learn More"));
                     default:
                         return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: D.faCircleInfo
+                            icon: I.faCircleInfo
                         }), " You can check your Age Verification status here."), a.createElement(z.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
@@ -732,9 +732,9 @@
                     O = x.setFormError,
                     P = x.setFormSuccess,
                     A = (null == g ? void 0 : g.owner) && (null == g ? void 0 : g.accurate) && (null == g ? void 0 : g.perjury) && (null == g ? void 0 : g.liability) && (null == g ? void 0 : g.abuse),
-                    I = (null == k || null === (e = k.description) || void 0 === e ? void 0 : e.length) > 0 && (null == k || null === (t = k.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == k || null === (n = k.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
-                    D = (0, K.lw)(),
-                    F = (0, i.Z)(D, 2),
+                    D = (null == k || null === (e = k.description) || void 0 === e ? void 0 : e.length) > 0 && (null == k || null === (t = k.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == k || null === (n = k.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
+                    I = (0, K.lw)(),
+                    F = (0, i.Z)(I, 2),
                     R = F[0],
                     j = F[1],
                     z = j.isError,
@@ -880,7 +880,7 @@
                     neutral: !0
                 }, "Back"), a.createElement(r.zx, {
                     className: "tw-ml-2",
-                    disabled: !I || q,
+                    disabled: !D || q,
                     containerStyles: oe,
                     onClick: function() {
                         return R({
@@ -1205,14 +1205,14 @@
                 }), (function(e, t, n) {
                     return !1 === e && !1 === t && null !== n
                 })),
-                Ie = (0, Oe.P1)(Te, (function(e) {
+                De = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !0 === t && null !== n
                 })),
-                De = (0, Oe.P1)(Te, (function(e) {
+                Ie = (0, Oe.P1)(Te, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
@@ -1253,7 +1253,7 @@
                     var t = e.validationError,
                         n = e.displayNameChanged,
                         l = void 0 !== n && n,
-                        o = (0, p.v9)(Ie),
+                        o = (0, p.v9)(De),
                         i = (0, p.v9)(Fe),
                         c = ((0, p.v9)(ze), l || (0, p.v9)((function(e) {
                             var t;
@@ -1495,14 +1495,14 @@
                     v = (0, C.q7)().data,
                     y = void 0 === v ? [] : v,
                     N = (0, p.v9)(Ae),
-                    k = (0, p.v9)(De),
+                    k = (0, p.v9)(Ie),
                     S = (0, p.v9)(Te),
                     O = (0, p.v9)(Re),
                     T = (0, p.v9)(qe),
                     P = (0, p.v9)(Le.y),
                     A = (0, p.v9)(ze),
-                    I = (0, p.v9)(Ue),
-                    D = (0, p.v9)((function(e) {
+                    D = (0, p.v9)(Ue),
+                    I = (0, p.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
                     F = (0, a.useState)(!0),
@@ -1549,15 +1549,15 @@
                     }), [A, pe, P, O]), (0, a.useEffect)((function() {
                         "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), B(""), n((0, Se.Zm)({
                             displayName: fe,
-                            userId: D.id
+                            userId: I.id
                         }))) : ee(null)
-                    }), [fe, n, D.id]), (0, a.useEffect)((function() {
+                    }), [fe, n, I.id]), (0, a.useEffect)((function() {
                         return "" === Y ? (ce(!1), void V(null)) : Y !== ae ? (ce(!1), void V("Names don't match")) : (ce(!0), void V(null))
                     }), [Y, ae]), g) return a.createElement(Ge, {
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
                 if (me) return a.createElement(at, {
-                    previousDisplayName: I,
+                    previousDisplayName: D,
                     exitRevertCallback: function() {
                         return de(!1)
                     }
@@ -1571,7 +1571,7 @@
                                             password: W,
                                             displayName: ae,
                                             revertDisplayName: !1,
-                                            userId: D.id
+                                            userId: I.id
                                         }));
                                     case 3:
                                         e.next = 8;
@@ -1623,12 +1623,12 @@
                     onChange: function(e) {
                         return re(e.target.value)
                     },
-                    placeholder: D.displayName,
+                    placeholder: I.displayName,
                     type: "text",
                     value: ae
                 }), a.createElement(Ye, {
                     canChangeDisplayName: j,
-                    displayName: D.displayName,
+                    displayName: I.displayName,
                     displayNameAvailable: N,
                     displayNameValue: ae,
                     isRevert: !1,
@@ -1758,11 +1758,11 @@
                     T = (0, f.$h)(),
                     P = (0, i.Z)(T, 2),
                     A = P[0],
-                    I = P[1],
-                    D = I.isLoading,
-                    F = I.isSuccess,
-                    R = I.isError,
-                    j = I.error,
+                    D = P[1],
+                    I = D.isLoading,
+                    F = D.isSuccess,
+                    R = D.isError,
+                    j = D.error,
                     z = function(e) {
                         var t = e.newPassword;
                         return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, ot.w)(t) ? "Please try a more secure password" : null : null
@@ -1823,7 +1823,7 @@
                 return a.useEffect((function() {
                     S || "" === d && "" === w && "" === Z || O(!0)
                 }), [d, w, Z]), a.createElement(Ce.Z, {
-                    loading: D
+                    loading: I
                 }, a.createElement("div", {
                     className: "center-panel"
                 }, a.createElement("form", {
@@ -2023,56 +2023,75 @@
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
             const pt = function(e) {
-                var t, n = e.user,
-                    l = (n || {}).hasSharedConnectionsOptOut,
-                    o = (0, a.useState)(null),
-                    c = (0, i.Z)(o, 2),
-                    s = c[0],
-                    u = c[1],
-                    m = (0, f.PY)(),
-                    d = (0, i.Z)(m, 2),
-                    p = d[0],
-                    h = d[1],
-                    g = h.isError,
-                    w = h.error,
-                    E = function() {
+                var t, n, l = e.user,
+                    o = l || {},
+                    c = o.hasSharedConnectionsOptOut,
+                    s = o.hasDiscordFriendsOptOut,
+                    u = (0, a.useState)(null),
+                    m = (0, i.Z)(u, 2),
+                    d = m[0],
+                    p = m[1],
+                    h = (0, f.PY)(),
+                    g = (0, i.Z)(h, 2),
+                    w = g[0],
+                    E = g[1],
+                    v = E.isError,
+                    y = E.error,
+                    N = (0, f.Ol)(),
+                    k = (0, i.Z)(N, 2),
+                    C = k[0],
+                    S = k[1],
+                    O = S.isError,
+                    T = S.error,
+                    P = function() {
                         try {
                             window.OneTrust.ToggleInfoDisplay()
                         } catch (e) {
-                            u("OneTrust not loaded. Disable your ad blocker and refresh the page to try again.")
+                            p("OneTrust not loaded. Disable your ad blocker and refresh the page to try again.")
                         }
                     };
                 (0, a.useEffect)((function() {
-                    return window.addEventListener("OneTrustGroupsUpdated", E),
+                    return window.addEventListener("OneTrustGroupsUpdated", P),
                         function() {
-                            window.removeEventListener("OneTrustGroupsUpdated", E)
+                            window.removeEventListener("OneTrustGroupsUpdated", P)
                         }
                 }), []);
-                var v = g ? (null == w || null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "An error occurred while updating your shared connections setting." : s;
+                var A = v || O ? (null == y || null === (t = y.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || (null == T || null === (n = T.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "An error occurred while updating your shared connections setting." : d;
                 return a.createElement("div", {
                     className: "center-panel"
                 }, a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "10",
                     className: "mx-0 mb-2"
-                }, "Manage your cookie settings and consent preferences.")), v ? a.createElement(_.Z, {
+                }, "Manage your cookie settings and consent preferences.")), A ? a.createElement(_.Z, {
                     className: "warning"
                 }, a.createElement(r.$1, {
                     icon: mt.e7
-                }), " ", s) : a.createElement(b.Z, null, a.createElement(x.Z, {
+                }), " ", d) : a.createElement(b.Z, null, a.createElement(x.Z, {
                     xs: "10"
                 }, a.createElement(Z.Z, {
                     type: "button",
                     color: "primary",
-                    onClick: E
+                    onClick: P
                 }, "Change Cookie and Consent Settings"))), a.createElement(dt, {
                     className: "mt-3"
                 }, a.createElement(Y.Z, {
                     label: "Show Mutual Friend and Group Connections",
-                    defaultChecked: !l,
+                    defaultChecked: !c,
                     onChangeCallback: function() {
-                        return p({
-                            hasSharedConnectionsOptOut: !l,
-                            userId: n.id
+                        return w({
+                            hasSharedConnectionsOptOut: !c,
+                            userId: l.id
+                        })
+                    }
+                })), a.createElement(dt, {
+                    className: "mt-3"
+                }, a.createElement(Y.Z, {
+                    label: "Show Discord Friend Connections",
+                    defaultChecked: !s,
+                    onChangeCallback: function() {
+                        return C({
+                            hasDiscordFriendsOptOut: !s,
+                            userId: l.id
                         })
                     }
                 })))
@@ -2096,7 +2115,7 @@
                 Pt = n(9669),
                 At = n.n(Pt);
 
-            function It(e, t) {
+            function Dt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -2107,7 +2126,7 @@
                 return n
             }
 
-            function Dt(e) {
+            function It(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2144,7 +2163,7 @@
                 },
                 Ut = function(e) {
                     (0, wt.Z)(n, e);
-                    var t = Dt(n);
+                    var t = It(n);
 
                     function n(e) {
                         var r;
@@ -2214,9 +2233,9 @@
                         }()), r.state = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? It(Object(n), !0).forEach((function(t) {
+                                t % 2 ? Dt(Object(n), !0).forEach((function(t) {
                                     (0, H.Z)(e, t, n[t])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : It(Object(n)).forEach((function(t) {
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Dt(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
                             }
@@ -2613,7 +2632,7 @@
                     className: "mb-2"
                 }, a.createElement(qt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Account Linking")), a.createElement(r.Ao, {
                     className: "mb-2"
-                }, a.createElement(I, {
+                }, a.createElement(D, {
                     user: e
                 })), a.createElement(r.oI, null, a.createElement("h4", null, "Privacy")), a.createElement(r.Ao, {
                     className: "mb-2"
@@ -2670,8 +2689,8 @@
                     T = (0, m.useState)(""),
                     P = (0, a.Z)(T, 2),
                     A = P[0],
-                    I = P[1],
-                    D = (0, E.Nr)(g),
+                    D = P[1],
+                    I = (0, E.Nr)(g),
                     F = (0, y.X6)(),
                     R = (0, a.Z)(F, 2),
                     j = R[0],
@@ -2697,10 +2716,10 @@
                     ne = J.error,
                     ae = J.isSuccess,
                     re = (0, y.SO)({
-                        email: D,
+                        email: I,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === D || !1 === w()(D)
+                        skip: "" === I || !1 === w()(I)
                     }),
                     le = re.data,
                     oe = re.isFetching,
@@ -2708,21 +2727,21 @@
                     ce = re.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    O(""), I("")
+                    O(""), D("")
                 }), [g]);
                 var ue = (0, m.useMemo)((function() {
-                        return ie && !1 === le.userExists && w()(D) && "" !== D
-                    }), [le, D]),
+                        return ie && !1 === le.userExists && w()(I) && "" !== I
+                    }), [le, I]),
                     me = (0, m.useMemo)((function() {
-                        return "" !== S && S === D
-                    }), [S, D]),
+                        return "" !== S && S === I
+                    }), [S, I]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === w()(D) && "" !== D) return m.createElement(d.Z, {
+                        if (!1 === w()(I) && "" !== I) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That's an invalid email.");
-                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === D) return m.createElement(d.Z, {
+                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === I) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2732,8 +2751,8 @@
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " Failed to change news preference: ", W, ".");
-                        if (q && (null == $ ? void 0 : $.email) === D) {
-                            I("");
+                        if (q && (null == $ ? void 0 : $.email) === I) {
+                            D("");
                             var t = V.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
@@ -2741,7 +2760,7 @@
                                 icon: u.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== S && S !== D) return m.createElement(d.Z, {
+                        if (ue && "" !== S && S !== I) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2767,7 +2786,7 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [ae, te, q, L, le, ie, S, D, e, H]),
+                    }), [ae, te, q, L, le, ie, S, I, e, H]),
                     pe = (0, m.useMemo)((function() {
                         return !se || L ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
@@ -2781,7 +2800,7 @@
                             icon: o.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === D ? null : ue ? m.createElement(x.Z, {
+                        }) : "" === I ? null : ue ? m.createElement(x.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -2790,7 +2809,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [oe, D, ue]);
+                    }), [oe, I, ue]);
                 return m.createElement("form", null, m.createElement(p.Z, {
                     className: "align-items-center justify-content-center"
                 }, m.createElement(f.Z, {
@@ -2875,7 +2894,7 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return I(e.target.value)
+                        return D(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -2924,7 +2943,7 @@
                     onClick: function(t) {
                         t.preventDefault(), j({
                             userId: null == e ? void 0 : e.id,
-                            email: D,
+                            email: I,
                             password: A
                         })
                     }
@@ -3110,7 +3129,7 @@
                         return l().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, a = void 0 === n ? "/home/login" : n, r = t.version, o = void 0 === r ? 2 : r, "1366854478250381462", i = ["identify", "email"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
+                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, a = void 0 === n ? "/home/login" : n, r = t.version, o = void 0 === r ? 2 : r, "1366854478250381462", i = ["openid", "identify", "email", "sdk.social_layer_presence"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
                                         redirectUri: c,
                                         isMobileRequest: !1,
                                         redirectTo: a
@@ -3146,4 +3165,4 @@
         }
     }
 ]);
-//# sourceMappingURL=38b2cffb965b43f046014afc15348f370afc40323229b0c3abae052bb8b7a868.js.map
+//# sourceMappingURL=5e0c65bae44eb3aaaedb79bb5cca21851684ccc5146fbc18df113c38ff555ba1.js.map
