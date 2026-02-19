@@ -4254,50 +4254,51 @@
                     J = Object.fromEntries(j.entries()),
                     q = null == P ? void 0 : P.id,
                     G = (null == P ? void 0 : P.economyAccount) || {},
-                    B = (null == G ? void 0 : G.accountSellerStatus) === E.dd.SUSPENDED,
-                    U = (null == G ? void 0 : G.accountSellerStatus) === E.dd.INVITED,
-                    $ = (null == G ? void 0 : G.accountSellerStatus) === E.dd.REGISTERED,
-                    V = S.isEconomyOffline,
-                    _ = (S.isPlannedMaintenanceSoon, S.plannedOfflineWindowStart),
-                    W = S.plannedOfflineWindowEnd,
-                    K = S.offlineReason,
-                    Y = S.isTiliaStatusLoading,
-                    Q = S.isTiliaStatusError,
-                    H = (0, O.q7)(),
-                    ee = H.data,
-                    te = void 0 === ee ? [] : ee,
-                    ae = H.isFetching,
-                    le = H.isError,
-                    ie = H.error,
-                    oe = (0, re.mW)(),
-                    ce = (0, a.Z)(oe, 2),
-                    se = ce[0],
-                    ue = ce[1],
-                    me = ue.isLoading,
-                    de = ue.isError,
-                    we = ue.error,
-                    pe = null == te ? void 0 : te.includes("permission-can-sell-products"),
-                    fe = (0, Te.gq)({
+                    B = null == G ? void 0 : G.accountSellerStatus,
+                    U = B === E.dd.SUSPENDED,
+                    $ = B === E.dd.INVITED,
+                    V = B === E.dd.REGISTERED,
+                    _ = S.isEconomyOffline,
+                    W = (S.isPlannedMaintenanceSoon, S.plannedOfflineWindowStart),
+                    K = S.plannedOfflineWindowEnd,
+                    Y = S.offlineReason,
+                    Q = S.isTiliaStatusLoading,
+                    H = S.isTiliaStatusError,
+                    ee = (0, O.q7)(),
+                    te = ee.data,
+                    ae = void 0 === te ? [] : te,
+                    le = ee.isFetching,
+                    ie = ee.isError,
+                    oe = ee.error,
+                    ce = (0, re.mW)(),
+                    se = (0, a.Z)(ce, 2),
+                    ue = se[0],
+                    me = se[1],
+                    de = me.isLoading,
+                    we = me.isError,
+                    pe = me.error,
+                    fe = null == ae ? void 0 : ae.includes("permission-can-sell-products"),
+                    ge = (0, Te.gq)({
                         userId: q
                     }, {
-                        skip: !q || !U && !pe || V
+                        skip: !q || !$ && !fe || _
                     }),
-                    ge = fe.data,
-                    ve = void 0 === ge ? {} : ge,
-                    Ee = fe.isLoading,
-                    he = fe.isError,
-                    ye = fe.error,
-                    xe = function() {
+                    ve = ge.data,
+                    Ee = void 0 === ve ? {} : ve,
+                    he = ge.isLoading,
+                    ye = ge.isError,
+                    xe = ge.error,
+                    Ne = function() {
                         var e = (0, r.Z)(d().mark((function e(t) {
                             var n;
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = "complete" === (null == t ? void 0 : t.state), e.prev = 1, !n || pe) {
+                                        if (n = "complete" === (null == t ? void 0 : t.state), e.prev = 1, !n || fe) {
                                             e.next = 5;
                                             break
                                         }
-                                        return e.next = 5, se().unwrap();
+                                        return e.next = 5, ue().unwrap();
                                     case 5:
                                         e.next = 10;
                                         break;
@@ -4315,12 +4316,11 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ne = null == G ? void 0 : G.canEarn,
-                    Ce = (null == ve ? void 0 : ve.state) === E.p0.NONE,
-                    Se = pe && $ && !Ne,
-                    ke = Y || T || ae || Ee || me,
-                    De = (0, Ie.dj)(_),
-                    je = Q || V || le || he || Se || de;
+                    Ce = null == G ? void 0 : G.canEarn,
+                    Se = (null == Ee || Ee.state, E.p0.NONE, fe && V && !Ce),
+                    ke = Q || T || le || he || de,
+                    De = (0, Ie.dj)(W),
+                    je = H || _ || ie || ye || Se || we;
                 if (ke) return w.createElement(w.Fragment, null, w.createElement(g.UU, {
                     className: "tw-mb-4",
                     height: "80px",
@@ -4346,36 +4346,36 @@
                 }, "Now you can ", w.createElement(p.rU, {
                     to: null == J ? void 0 : J.redirectTo
                 }, "pick up where you left off"), "."), je && w.createElement(g.qX, {
-                    type: V ? "warn" : "error",
-                    title: V ? "Storefront Offline" : "Something strange happened"
-                }, V && w.createElement(w.Fragment, null, w.createElement("p", {
+                    type: _ ? "warn" : "error",
+                    title: _ ? "Storefront Offline" : "Something strange happened"
+                }, _ && w.createElement(w.Fragment, null, w.createElement("p", {
                     className: "tw-m-0"
-                }, "Storefront Currently Offline: ", null != K ? K : "Unknown Reason"), w.createElement("p", {
+                }, "Storefront Currently Offline: ", null != Y ? Y : "Unknown Reason"), w.createElement("p", {
                     className: "tw-m-0"
-                }, "Projected Service Return: ", (0, Ie.M4)(W))), Q && w.createElement("p", {
+                }, "Projected Service Return: ", (0, Ie.M4)(K))), H && w.createElement("p", {
                     className: "tw-m-0"
-                }, "Error getting Tilia online status: ", tiliaStatusError.status, " ", null !== (t = null === (n = tiliaStatusError.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Unknown error"), ie && w.createElement("p", {
+                }, "Error getting Tilia online status: ", tiliaStatusError.status, " ", null !== (t = null === (n = tiliaStatusError.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Unknown error"), oe && w.createElement("p", {
                     className: "tw-m-0"
-                }, "Error looking up user permissions: ", ie.status, " ", null !== (m = null === (h = ie.data) || void 0 === h ? void 0 : h.error.message) && void 0 !== m ? m : "Unknown error"), he && w.createElement("p", {
+                }, "Error looking up user permissions: ", oe.status, " ", null !== (m = null === (h = oe.data) || void 0 === h ? void 0 : h.error.message) && void 0 !== m ? m : "Unknown error"), ye && w.createElement("p", {
                     className: "tw-m-0"
-                }, "Error looking up Tilia identity verification status: ", ye.status, " ", null !== (y = null === (x = ye.data) || void 0 === x ? void 0 : x.error.message) && void 0 !== y ? y : "Unknown error"), Se && w.createElement("p", {
+                }, "Error looking up Tilia identity verification status: ", xe.status, " ", null !== (y = null === (x = xe.data) || void 0 === x ? void 0 : x.error.message) && void 0 !== y ? y : "Unknown error"), Se && w.createElement("p", {
                     className: "tw-m-0"
                 }, "This account is not eligible to earn credits from current listings at this time.", " ", w.createElement(p.rU, {
                     to: "https://vrch.at/marketplace-help",
                     target: "_blank",
                     className: "tw-flex-1 tw-m-0"
-                }, "Please contact support for more information"), "."), de && w.createElement("p", {
+                }, "Please contact support for more information"), "."), we && w.createElement("p", {
                     className: "tw-m-0"
-                }, "Error onboarding seller account: ", we.status, " ", null !== (N = null === (C = we.data) || void 0 === C ? void 0 : C.error.message) && void 0 !== N ? N : "Unknown error")), De && !V && w.createElement(g.qX, {
+                }, "Error onboarding seller account: ", pe.status, " ", null !== (N = null === (C = pe.data) || void 0 === C ? void 0 : C.error.message) && void 0 !== N ? N : "Unknown error")), De && !_ && w.createElement(g.qX, {
                     type: "warn",
                     title: "Marketplace Maintenance"
                 }, w.createElement("p", {
                     className: "tw-m-0"
-                }, "Starts: ", (0, Ie.M4)(_)), w.createElement("p", {
+                }, "Starts: ", (0, Ie.M4)(W)), w.createElement("p", {
                     className: "tw-m-0"
-                }, "Ends: ", (0, Ie.M4)(W)), w.createElement("p", {
+                }, "Ends: ", (0, Ie.M4)(K)), w.createElement("p", {
                     className: "tw-m-0"
-                }, "In-game credit purchases/transactions will be unavailable during this period. We apologize for the inconvenience.")), B ? w.createElement(g.JX, {
+                }, "In-game credit purchases/transactions will be unavailable during this period. We apologize for the inconvenience.")), B ? U ? w.createElement(g.JX, {
                     className: "tw-items-center tw-justify-center tw-gap-4"
                 }, w.createElement(g.$1, {
                     icon: u.eH,
@@ -4385,7 +4385,7 @@
                     to: "https://vrch.at/marketplace-help",
                     target: "_blank",
                     className: "tw-flex-1 tw-m-0"
-                }, "Please contact support for more information"))) : U || pe ? pe || !U || Ce ? w.createElement(w.Fragment, null, w.createElement("div", {
+                }, "Please contact support for more information"))) : fe ? w.createElement(w.Fragment, null, w.createElement("div", {
                     className: "tw-relative"
                 }, w.createElement("div", {
                     className: "tw-relative"
@@ -4529,9 +4529,9 @@
                     className: "tw-mx-auto tw-w-[180px] tw-flex-1"
                 }), w.createElement("p", {
                     className: "tw-m-0 tw-font-bold tw-text-lg tw-flex-1"
-                }, "Thank you for completing the Tilia Process, now you are ready to sell and receive payouts!")))))) : w.createElement(Le, {
-                    onComplete: xe
-                }) : w.createElement(Me, null))
+                }, "Thank you for completing the Tilia Process, now you are ready to sell and receive payouts!")))))) : $ ? w.createElement(Le, {
+                    onComplete: Ne
+                }) : w.createElement(Me, null) : w.createElement(Me, null))
             }
         },
         6655: (e, t, n) => {
@@ -4711,4 +4711,4 @@
         }
     }
 ]);
-//# sourceMappingURL=014d97f7790d7b25c72e4459308b6939490dc004455470c2e798362b404ffc74.js.map
+//# sourceMappingURL=ada9b5d940fbbd45ccd36bf512d704432cb973fde12f3551ff81edb485695e08.js.map

@@ -1216,14 +1216,15 @@
                         C = void 0 === N ? "" : N,
                         S = a.fromUserId,
                         O = a.isEarnings,
-                        k = a.earningsBalance,
-                        D = m < 0 ? "tw-text-red" : "tw-text-green",
-                        I = function(e) {
+                        k = a.standardBalance,
+                        D = a.earningsBalance,
+                        I = m < 0 ? "tw-text-red" : "tw-text-green",
+                        P = function(e) {
                             return 0 === e ? null : "".concat(e > 0 ? "+" : "-", " ").concat(Math.abs(e).toLocaleString())
                         },
-                        P = Math.max(0, (E || 0) - p),
-                        T = Math.max(0, (k || 0) - x),
-                        M = v || E || 0;
+                        T = Math.max(0, (k || 0) - p),
+                        M = Math.max(0, (D || 0) - x),
+                        j = v || E || 0;
                     return n.createElement("div", {
                         key: o,
                         className: "tw-@container/transaction-row tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid tw-py-3"
@@ -1284,7 +1285,7 @@
                     }()), n.createElement("span", {
                         className: "tw-text-[#797979] tw-truncate"
                     }, n.createElement("small", null, o))), n.createElement("div", {
-                        className: "tw-truncate tw-max-w-fit ".concat(D, " tw-flex tw-items-center")
+                        className: "tw-truncate tw-max-w-fit ".concat(I, " tw-flex tw-items-center")
                     }, n.createElement(r.b5, {
                         className: "tw-mr-1"
                     }), " ", m), s && n.createElement(n.Fragment, null, n.createElement("div", {
@@ -1293,21 +1294,21 @@
                         className: "tw-flex tw-items-center"
                     }, n.createElement(r.b5, {
                         className: "tw-mr-1 tw-text-white"
-                    }), " ", P.toLocaleString()), n.createElement("span", {
+                    }), " ", T.toLocaleString()), n.createElement("span", {
                         className: "tw-text-subtext-grey"
-                    }, I(p))), n.createElement("div", {
+                    }, P(p))), n.createElement("div", {
                         className: "tw-truncate tw-max-w-fit tw-hidden @[590px]/transaction-row:tw-flex tw-flex-col tw-justify-center"
                     }, n.createElement("div", {
                         className: "tw-flex tw-items-center"
                     }, n.createElement(r.b5, {
                         className: "tw-mr-1 tw-text-white"
-                    }), " ", T.toLocaleString()), n.createElement("span", {
+                    }), " ", M.toLocaleString()), n.createElement("span", {
                         className: "tw-text-subtext-grey"
-                    }, I(x)))), n.createElement("div", {
+                    }, P(x)))), n.createElement("div", {
                         className: "tw-truncate tw-max-w-fit tw-hidden @[590px]/transaction-row:tw-flex tw-items-center"
                     }, n.createElement(r.b5, {
                         className: "tw-mr-1 tw-text-white"
-                    }), " ", M.toLocaleString())))
+                    }), " ", j.toLocaleString())))
                 };
             Oe.propTypes = {
                 transactionData: S().object
@@ -1895,4 +1896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1d23228c7eb1431af95e7aa2640598b9468f261847c771bb0af4e699bc278231.js.map
+//# sourceMappingURL=8c2f7fe05c88943f92312bf9ac92d237d845172875cbd514b4dd7d14fd6647ad.js.map
