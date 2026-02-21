@@ -5,8 +5,8 @@
             n.d(t, {
                 Z: () => u
             });
-            var a = n(87462),
-                r = n(45987),
+            var r = n(87462),
+                a = n(45987),
                 l = n(59545),
                 o = n(68055),
                 i = n(67294),
@@ -17,12 +17,12 @@
                     n = void 0 === t ? null : t,
                     u = e.size,
                     m = void 0 === u ? "2x" : u,
-                    d = (0, r.Z)(e, s);
-                return null === n ? null : n ? i.createElement(c.Z, (0, a.Z)({
+                    d = (0, a.Z)(e, s);
+                return null === n ? null : n ? i.createElement(c.Z, (0, r.Z)({
                     icon: o.LE,
                     size: m,
                     className: "text-success"
-                }, d)) : i.createElement(c.Z, (0, a.Z)({
+                }, d)) : i.createElement(c.Z, (0, r.Z)({
                     icon: l.NB,
                     size: m,
                     className: "text-warning"
@@ -33,8 +33,8 @@
             n.d(t, {
                 Z: () => i
             });
-            var a = n(92332),
-                r = n(67294),
+            var r = n(92332),
+                a = n(67294),
                 l = n(34698),
                 o = n(86646);
             const i = function(e) {
@@ -45,21 +45,21 @@
                     s = e.children,
                     u = e.hidden,
                     m = e.disabled;
-                return r.createElement(l.Z, {
+                return a.createElement(l.Z, {
                     className: n,
                     onClick: i,
                     color: c,
                     hidden: u,
                     disabled: m
-                }, r.createElement("div", {
+                }, a.createElement("div", {
                     className: t ? "invisible" : "visible"
-                }, s), r.createElement("div", {
+                }, s), a.createElement("div", {
                     className: t ? "visible" : "invisible",
                     style: {
                         marginTop: "-1.25em"
                     }
-                }, r.createElement(o.Z, {
-                    icon: a.LM,
+                }, a.createElement(o.Z, {
+                    icon: r.LM,
                     spin: !0
                 })))
             }
@@ -68,15 +68,15 @@
             n.d(t, {
                 Z: () => o
             });
-            var a = n(87462),
-                r = n(67294),
+            var r = n(87462),
+                a = n(67294),
                 l = n(89250);
             const o = function(e) {
                 return function(t) {
                     var n = (0, l.TH)(),
                         o = (0, l.s0)(),
                         i = (0, l.UO)();
-                    return r.createElement(e, (0, a.Z)({}, t, {
+                    return a.createElement(e, (0, r.Z)({}, t, {
                         router: {
                             location: n,
                             navigate: o,
@@ -88,10 +88,10 @@
         },
         3306: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => Vt
+                default: () => Mt
             });
-            var a = n(67294),
-                r = n(96985),
+            var r = n(67294),
+                a = n(96985),
                 l = n(83807),
                 o = n(15861),
                 i = n(54546),
@@ -110,32 +110,32 @@
                     c = (0, i.Z)(n, 2),
                     u = c[0],
                     g = c[1].isSuccess,
-                    v = (0, l.Tu)().user,
-                    y = a.useState(!1),
+                    E = (0, l.Tu)().user,
+                    y = r.useState(!1),
                     b = (0, i.Z)(y, 2),
                     x = b[0],
-                    Z = b[1],
-                    N = a.useState(!1),
-                    k = (0, i.Z)(N, 2),
-                    C = k[0],
-                    S = k[1],
+                    k = b[1],
+                    Z = r.useState(!1),
+                    N = (0, i.Z)(Z, 2),
+                    C = N[0],
+                    S = N[1],
                     O = function() {
-                        Z(!1), S(!1)
+                        k(!1), S(!1)
                     },
                     T = function() {
                         var e = (0, o.Z)(m().mark((function e() {
-                            var n, a, r;
+                            var n, r, a;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return Z(!1), S(!1), e.next = 4, u({
-                                            userId: v.id
+                                        return k(!1), S(!1), e.next = 4, u({
+                                            userId: E.id
                                         });
                                     case 4:
                                         (n = e.sent).error && t((0, h.d)({
                                             title: "Failed to delete your account",
                                             icon: s.eH,
-                                            message: null !== (a = null === (r = n.error.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== a ? a : "Something went wrong",
+                                            message: null !== (r = null === (a = n.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Something went wrong",
                                             color: "danger",
                                             timeout: 8e3
                                         }));
@@ -149,27 +149,27 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return a.createElement("div", null, a.createElement(r.zx, {
+                return r.createElement("div", null, r.createElement(a.zx, {
                     type: "button",
                     className: "btn-danger",
                     onClick: function() {
-                        Z(!0)
+                        k(!0)
                     },
                     danger: !0
-                }, "Delete Account"), a.createElement(r.sm, {
+                }, "Delete Account"), r.createElement(a.sm, {
                     headerText: "Are You Sure?",
                     bodyText: "Are you sure you want to delete your account? This is permanent and non-reversible. VRChat cannot recover your account once this is complete and any VRC+ subscriptions will be canceled. ",
                     confirmCallback: function() {
-                        Z(!1), S(!0)
+                        k(!1), S(!0)
                     },
                     cancelCallback: O,
                     isOpen: x
-                }), a.createElement(r.sm, {
+                }), r.createElement(a.sm, {
                     headerText: "Are You Really Sure?",
                     confirmCallback: T,
                     cancelCallback: O,
                     isOpen: C
-                }, a.createElement("p", null, "Are you absolutely sure? Again, this is permanent and non-reversible. VRChat cannot recover your account once this is complete."), a.createElement("p", null, "If you click OK, your account will be queued for deletion. After 14 days, your account will be deleted. All content that has been uploaded on this account will be deleted. Any VRC+ subscriptions will be immediately canceled regardless of the 14 day grace period."), a.createElement("p", null, "If you log into VRChat Home or the VRChat application during this time, the deletion will be canceled. However if you previously had a VRC+ subscription you will need to re-subscribe once the canceled subscription expires")), g && a.createElement(r.u_, {
+                }, r.createElement("p", null, "Are you absolutely sure? Again, this is permanent and non-reversible. VRChat cannot recover your account once this is complete."), r.createElement("p", null, "If you click OK, your account will be queued for deletion. After 14 days, your account will be deleted. All content that has been uploaded on this account will be deleted. Any VRC+ subscriptions will be immediately canceled regardless of the 14 day grace period."), r.createElement("p", null, "If you log into VRChat Home or the VRChat application during this time, the deletion will be canceled. However if you previously had a VRC+ subscription you will need to re-subscribe once the canceled subscription expires")), g && r.createElement(a.u_, {
                     isVisible: !0,
                     title: "Your Account Will Delete in 14 Days",
                     onClose: function() {
@@ -180,79 +180,94 @@
                         })
                     },
                     slim: !0
-                }, a.createElement(w, null, a.createElement(E, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
+                }, r.createElement(w, null, r.createElement(v, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
             };
-            var w = (0, c.Z)(r.JX, {
+            var w = (0, c.Z)(a.JX, {
                     target: "e1c8z0io1"
                 })({
                     name: "1d3w5wq",
                     styles: "width:100%"
                 }),
-                E = (0, c.Z)("p", {
+                v = (0, c.Z)("p", {
                     target: "e1c8z0io0"
                 })({
                     name: "1tmloek",
                     styles: "text-align:center;margin-right:100px;margin-left:100px"
                 }),
-                v = n(27879),
+                E = n(27879),
                 y = n(75386),
                 b = n(35773),
                 x = n(95305),
-                Z = n(34698),
-                N = n(69699),
-                k = n(60766),
-                C = n(22202),
-                S = n(40219),
-                O = n(57672),
-                T = n(79655),
-                P = "link_discord",
-                A = "unlink_discord";
-            const D = function(e) {
+                k = n(34698),
+                Z = n(69699),
+                N = n(60766),
+                C = n(98538),
+                S = n(22202),
+                O = n(40219),
+                T = n(19517),
+                P = n(57672),
+                A = n(79655),
+                I = "link_discord",
+                D = "unlink_discord",
+                F = "link_google",
+                R = "unlink_google";
+            const j = function(e) {
                 var t = e.user || {},
                     n = t.discordId,
-                    l = t.displayName,
-                    c = t.id,
-                    s = (0, d.TH)().state,
-                    u = (0, a.useState)(null),
-                    f = (0, i.Z)(u, 2),
-                    g = f[0],
-                    w = f[1],
-                    E = (0, a.useState)(null),
-                    D = (0, i.Z)(E, 2),
-                    I = D[0],
-                    F = D[1],
-                    R = (0, d.s0)(),
-                    j = (0, p.I0)(),
-                    z = (0, T.lr)(),
-                    U = (0, i.Z)(z, 2),
-                    q = U[0],
-                    L = (U[1], (0, C.fb)()),
-                    V = (0, i.Z)(L, 2),
-                    $ = V[0],
-                    _ = V[1],
-                    M = _.isLoading,
-                    Y = (_.isSuccess, _.isError, _.error, (0, C.hL)()),
+                    l = t.googleId,
+                    c = t.displayName,
+                    s = t.id,
+                    u = (0, d.TH)().state,
+                    f = (0, r.useState)(null),
+                    g = (0, i.Z)(f, 2),
+                    w = g[0],
+                    v = g[1],
+                    j = (0, r.useState)(null),
+                    z = (0, i.Z)(j, 2),
+                    U = z[0],
+                    L = z[1],
+                    q = (0, r.useState)(null),
+                    V = (0, i.Z)(q, 2),
+                    _ = V[0],
+                    $ = V[1],
+                    G = (0, d.s0)(),
+                    M = (0, p.I0)(),
+                    Y = (0, A.lr)(),
                     B = (0, i.Z)(Y, 2),
-                    G = B[0],
-                    H = B[1],
-                    W = H.isLoading,
-                    K = (H.isSuccess, H.isError, H.error, function() {
+                    H = B[0],
+                    W = (B[1], (0, S.fb)()),
+                    K = (0, i.Z)(W, 2),
+                    X = K[0],
+                    Q = K[1].isLoading,
+                    J = (0, S.hL)(),
+                    ee = (0, i.Z)(J, 2),
+                    te = ee[0],
+                    ne = ee[1].isLoading,
+                    re = (0, S.Ep)(),
+                    ae = (0, i.Z)(re, 2),
+                    le = ae[0],
+                    oe = ae[1].isLoading,
+                    ie = (0, S.w5)(),
+                    ce = (0, i.Z)(ie, 2),
+                    se = ce[0],
+                    ue = ce[1].isLoading,
+                    me = function() {
                         var e = (0, o.Z)(m().mark((function e() {
-                            var t, a, r, l, o, i, c, s = arguments;
+                            var t, r, a, l, o, i, c, s = arguments;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : I) && !n) {
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : U) && !n) {
                                             e.next = 3;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 3:
-                                        return e.prev = 3, e.next = 6, G({
+                                        return e.prev = 3, e.next = 6, te({
                                             token: t
                                         }).unwrap();
                                     case 6:
-                                        w(null), F(null), j((0, h.d)({
+                                        v(null), L(null), M((0, h.d)({
                                             title: "Link Discord Account",
                                             icon: y.nN,
                                             message: "Successfully linked Discord account.",
@@ -261,28 +276,29 @@
                                         })), e.next = 22;
                                         break;
                                     case 11:
-                                        if (e.prev = 11, e.t0 = e.catch(3), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || !a.requiresTwoFactorAuth) {
+                                        if (e.prev = 11, e.t0 = e.catch(3), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (r = e.t0.data) || void 0 === r || !r.requiresTwoFactorAuth) {
                                             e.next = 18;
                                             break
                                         }
-                                        return o = e.t0.data, i = (0, O.y)(o), c = {
+                                        return o = e.t0.data, i = (0, P.y)(o), c = {
                                             redirectTo: "/home/profile",
                                             scope: o.scope,
                                             ticket: o.ticket,
                                             stepUpToken: o.stepUpToken,
                                             redirectState: {
-                                                selectedAction: g,
+                                                selectedAction: w,
                                                 continueDiscordAccessToken: t,
-                                                redirectTo: "/home/profile"
+                                                redirectTo: "/home/profile",
+                                                oauthProvider: C.gw.DISCORD
                                             }
-                                        }, e.abrupt("return", R(i, {
+                                        }, e.abrupt("return", G(i, {
                                             state: c
                                         }));
                                     case 18:
-                                        return console.error("Failed to link Discord account:", e.t0), w(null), F(null), e.abrupt("return", j((0, h.d)({
+                                        return console.error("Failed to link Discord account:", e.t0), v(null), L(null), e.abrupt("return", M((0, h.d)({
                                             title: "Failure",
-                                            message: null !== (r = null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== r ? r : "Discord Linking Failed",
-                                            icon: v.IL,
+                                            message: null !== (a = null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== a ? a : "Discord Linking Failed",
+                                            icon: E.IL,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -297,16 +313,79 @@
                         return function() {
                             return e.apply(this, arguments)
                         }
-                    }()),
-                    X = function() {
+                    }(),
+                    de = function() {
+                        var e = (0, o.Z)(m().mark((function e() {
+                            var t, n, r, a, o, i, c, s = arguments;
+                            return m().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : _) && !l) {
+                                            e.next = 3;
+                                            break
+                                        }
+                                        return e.abrupt("return");
+                                    case 3:
+                                        return e.prev = 3, e.next = 6, le({
+                                            token: t
+                                        }).unwrap();
+                                    case 6:
+                                        v(null), $(null), M((0, h.d)({
+                                            title: "Link Google Account",
+                                            icon: y.nN,
+                                            message: "Successfully linked Google account.",
+                                            color: "success",
+                                            timeout: 3e3
+                                        })), e.next = 22;
+                                        break;
+                                    case 11:
+                                        if (e.prev = 11, e.t0 = e.catch(3), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || !n.requiresTwoFactorAuth) {
+                                            e.next = 18;
+                                            break
+                                        }
+                                        return o = e.t0.data, i = (0, P.y)(o), c = {
+                                            redirectTo: "/home/profile",
+                                            scope: o.scope,
+                                            ticket: o.ticket,
+                                            stepUpToken: o.stepUpToken,
+                                            redirectState: {
+                                                selectedAction: w,
+                                                continueGoogleIdToken: t,
+                                                redirectTo: "/home/profile",
+                                                oauthProvider: C.gw.GOOGLE
+                                            }
+                                        }, e.abrupt("return", G(i, {
+                                            state: c
+                                        }));
+                                    case 18:
+                                        return console.error("Failed to link Google account:", e.t0), v(null), $(null), e.abrupt("return", M((0, h.d)({
+                                            title: "Failure",
+                                            message: null !== (r = null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Google Linking Failed",
+                                            icon: E.IL,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        })));
+                                    case 22:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [3, 11]
+                            ])
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    pe = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             var t, n;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, $().unwrap();
+                                        return e.prev = 0, e.next = 3, X().unwrap();
                                     case 3:
-                                        w(null), j((0, h.d)({
+                                        v(null), M((0, h.d)({
                                             title: "Unlink Discord Account",
                                             icon: y.nN,
                                             message: "Successfully unlinked Discord account.",
@@ -315,10 +394,10 @@
                                         })), e.next = 11;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0), e.abrupt("return", j((0, h.d)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0), e.abrupt("return", M((0, h.d)({
                                             title: "Failure",
                                             message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Discord Unlinking Failed",
-                                            icon: v.IL,
+                                            icon: E.IL,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -334,146 +413,274 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Q = function() {
-                        J || (w(null), F(null))
+                    fe = function() {
+                        var e = (0, o.Z)(m().mark((function e() {
+                            var t, n;
+                            return m().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.prev = 0, e.next = 3, se().unwrap();
+                                    case 3:
+                                        v(null), M((0, h.d)({
+                                            title: "Unlink Google Account",
+                                            icon: y.nN,
+                                            message: "Successfully unlinked Google account.",
+                                            color: "success",
+                                            timeout: 3e3
+                                        })), e.next = 11;
+                                        break;
+                                    case 7:
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Google account:", e.t0), e.abrupt("return", M((0, h.d)({
+                                            title: "Failure",
+                                            message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Google Unlinking Failed",
+                                            icon: E.IL,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        })));
+                                    case 11:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [0, 7]
+                            ])
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    he = function() {
+                        ge || (v(null), L(null))
                     };
-                (0, a.useEffect)((function() {
+                (0, r.useEffect)((function() {
                     (0, o.Z)(m().mark((function e() {
                         var t;
                         return m().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    if ((t = null == s ? void 0 : s.discordToken) && !n) {
+                                    if ((t = null == u ? void 0 : u.discordToken) && !n) {
                                         e.next = 3;
                                         break
                                     }
                                     return e.abrupt("return");
                                 case 3:
-                                    w(P), F(t);
+                                    v(I), L(t);
                                 case 5:
                                 case "end":
                                     return e.stop()
                             }
                         }), e)
                     })))()
-                }), []), (0, a.useEffect)((function() {
-                    (null == s ? void 0 : s.selectedAction) === P && null != s && s.continueDiscordAccessToken && K(s.continueDiscordAccessToken)
-                }), []), (0, a.useEffect)((function() {
-                    var e = q.get("prompt"),
-                        t = q.get("requestingUserId");
-                    "linkDiscordAccount" === e && t && t === c && !n && (0, S.y)({
+                }), []), (0, r.useEffect)((function() {
+                    (null == u ? void 0 : u.selectedAction) === I && null != u && u.continueDiscordAccessToken && me(u.continueDiscordAccessToken), (null == u ? void 0 : u.selectedAction) === F && null != u && u.continueGoogleIdToken && de(u.continueGoogleIdToken)
+                }), []), (0, r.useEffect)((function() {
+                    var e = H.get("prompt"),
+                        t = H.get("requestingUserId");
+                    "linkDiscordAccount" === e && t && t === s && !n && (0, O.y)({
                         redirectTo: "/home/profile"
                     })
-                }), []), (0, a.useEffect)((function() {
-                    g === P && I && n && (w(null), F(null))
-                }), [W, M, n, I]);
-                var J = W || M;
-                return a.createElement(a.Fragment, null, a.createElement("div", {
+                }), []), (0, r.useEffect)((function() {
+                    var e = H.get("prompt"),
+                        t = H.get("requestingUserId");
+                    "linkGoogleAccount" === e && t && t === s && !l && (0, T.u)({
+                        redirectTo: "/home/profile"
+                    })
+                }), []), (0, r.useEffect)((function() {
+                    (0, o.Z)(m().mark((function e() {
+                        var t, n, r, a;
+                        return m().wrap((function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    if (t = window.location.hash.substring(1), n = new URLSearchParams(t), r = n.get("id_token"), !(a = n.get("error"))) {
+                                        e.next = 8;
+                                        break
+                                    }
+                                    return history.replaceState(null, "", window.location.pathname), console.error("Google Authentication Error:", a), e.abrupt("return", M((0, h.d)({
+                                        title: "Failure",
+                                        message: "Google Authentication Failed",
+                                        icon: E.IL,
+                                        color: "danger",
+                                        timeout: 5e3
+                                    })));
+                                case 8:
+                                    r && (history.replaceState(null, "", window.location.pathname), v(F), $(r));
+                                case 9:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }), e)
+                    })))()
+                }), []), (0, r.useEffect)((function() {
+                    w === I && U && n && (v(null), L(null))
+                }), [ne, Q, n, U]), (0, r.useEffect)((function() {
+                    w === F && _ && l && (v(null), $(null))
+                }), [oe, ue, l, _]);
+                var ge = ne || Q || oe || ue;
+                return r.createElement(r.Fragment, null, r.createElement("div", {
                     className: "center-panel"
-                }, a.createElement(b.Z, null, a.createElement(x.Z, {
-                    xs: "10",
+                }, r.createElement(b.Z, null, r.createElement(x.Z, {
+                    xs: "12",
                     className: "mx-0 mb-2"
-                }, "Manage your linked accounts.")), a.createElement(b.Z, null, a.createElement(x.Z, {
-                    xs: "10"
-                }, n && a.createElement(Z.Z, {
-                    disabled: J,
+                }, "Manage your linked accounts.")), r.createElement(b.Z, null, r.createElement(x.Z, {
+                    xs: "12",
+                    className: "mx-0 mb-2 tw-flex tw-gap-2"
+                }, n && r.createElement(k.Z, {
+                    className: "tw-mr-2",
+                    disabled: ge,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return w(A)
+                        return v(D)
                     }
-                }, "Unlink your Discord Account"), !n && a.createElement(Z.Z, {
-                    isLoading: J,
+                }, "Unlink your Discord Account"), !n && r.createElement(k.Z, {
+                    className: "tw-mr-2",
+                    isLoading: ge,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return (0, S.y)({
+                        return (0, O.y)({
                             redirectTo: "/home/profile"
                         })
                     }
-                }, "Link your Discord Account")))), a.createElement(N.Z, {
-                    isOpen: g === A,
-                    toggle: Q,
+                }, "Link your Discord Account"), l && r.createElement(k.Z, {
+                    disabled: ge,
+                    type: "button",
+                    color: "primary",
+                    onClick: function() {
+                        return v(R)
+                    }
+                }, "Unlink your Google Account"), !l && r.createElement(k.Z, {
+                    isLoading: ge,
+                    type: "button",
+                    color: "primary",
+                    onClick: T.u
+                }, "Link your Google Account")))), r.createElement(Z.Z, {
+                    isOpen: w === D,
+                    toggle: he,
                     centered: !0
-                }, a.createElement(k.Z, {
+                }, r.createElement(N.Z, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
-                }, a.createElement("h2", {
+                }, r.createElement("h2", {
                     className: "text-center ty-my-5 tw-p-5 tw-text-center"
-                }, "Unlink Discord Account"), a.createElement("div", {
+                }, "Unlink Discord Account"), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, "Do you want to unlink your Discord account from this VRChat account? You can link it again anytime."), a.createElement("div", {
+                }, "Do you want to unlink your Discord account from this VRChat account? You can link it again anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, a.createElement("strong", null, l)), a.createElement("div", {
+                }, r.createElement("strong", null, c)), r.createElement("div", {
                     className: "px-3 pt-3"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-my-2",
                     expand: !0,
-                    onClick: X
-                }, "Unlink Account"), a.createElement(r.zx, {
-                    onClick: Q,
+                    onClick: pe
+                }, "Unlink Account"), r.createElement(a.zx, {
+                    onClick: he,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
-                }, "Cancel")))), a.createElement(N.Z, {
-                    isOpen: null !== I && g === P,
-                    toggle: Q,
+                }, "Cancel")))), r.createElement(Z.Z, {
+                    isOpen: null !== U && w === I,
+                    toggle: he,
                     centered: !0
-                }, a.createElement(k.Z, {
+                }, r.createElement(N.Z, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
-                }, a.createElement("h2", {
+                }, r.createElement("h2", {
                     className: "text-center ty-my-5 tw-p-5"
-                }, "Link Discord Account"), a.createElement("div", {
+                }, "Link Discord Account"), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, "Do you want to link your Discord account to this VRChat account? You can unlink it anytime."), a.createElement("div", {
+                }, "Do you want to link your Discord account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, a.createElement("strong", null, l)), a.createElement("div", {
+                }, r.createElement("strong", null, c)), r.createElement("div", {
                     className: "px-3 pt-3"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        return K(I)
+                        return me(U)
                     }
-                }, "Link Account"), a.createElement(r.zx, {
-                    onClick: Q,
+                }, "Link Account"), r.createElement(a.zx, {
+                    onClick: he,
+                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                }, "Cancel")))), r.createElement(Z.Z, {
+                    isOpen: w === R,
+                    toggle: he,
+                    centered: !0
+                }, r.createElement(N.Z, {
+                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                }, r.createElement("h2", {
+                    className: "text-center ty-my-5 tw-p-5 tw-text-center"
+                }, "Unlink Google Account"), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, "Do you want to unlink your Google account from this VRChat account? You can link it again anytime."), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, r.createElement("strong", null, c)), r.createElement("div", {
+                    className: "px-3 pt-3"
+                }, r.createElement(a.zx, {
+                    className: "tw-my-2",
+                    expand: !0,
+                    onClick: fe
+                }, "Unlink Account"), r.createElement(a.zx, {
+                    onClick: he,
+                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                }, "Cancel")))), r.createElement(Z.Z, {
+                    isOpen: null !== _ && w === F,
+                    toggle: he,
+                    centered: !0
+                }, r.createElement(N.Z, {
+                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                }, r.createElement("h2", {
+                    className: "text-center ty-my-5 tw-p-5"
+                }, "Link Google Account"), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, "Do you want to link your Google account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, r.createElement("strong", null, c)), r.createElement("div", {
+                    className: "px-3 pt-3"
+                }, r.createElement(a.zx, {
+                    className: "tw-my-2",
+                    expand: !0,
+                    onClick: function() {
+                        return de(_)
+                    }
+                }, "Link Account"), r.createElement(a.zx, {
+                    onClick: he,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))))
             };
-            var I = n(56646),
-                F = n(6811),
-                R = n(68412),
-                j = n(79442),
-                z = n(60006),
-                U = n(86646),
-                q = n(43862);
-            const L = function() {
-                var e = (0, C.XC)(),
+            var z = n(56646),
+                U = n(6811),
+                L = n(68412),
+                q = n(79442),
+                V = n(60006),
+                _ = n(86646),
+                $ = n(43862);
+            const G = function() {
+                var e = (0, S.XC)(),
                     t = e.data,
                     n = e.isError,
-                    r = e.isFetching,
-                    l = (0, C.q7)(),
+                    a = e.isFetching,
+                    l = (0, S.q7)(),
                     o = l.data,
                     i = void 0 === o ? [] : o,
                     c = l.isError,
                     s = l.isFetching,
                     u = i.includes("permission-age-verification"),
-                    m = (0, j.HI)(),
+                    m = (0, q.HI)(),
                     d = m.data,
                     p = m.isError,
                     f = m.isFetching,
                     h = n || c || p;
-                if (r || s || f) return a.createElement("div", {
+                if (a || s || f) return r.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
-                }, a.createElement(q.Z, {
+                }, r.createElement($.Z, {
                     size: "5x"
                 }));
-                if (h) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                    icon: R.faCircleQuestion
-                }), " Unable to determine your Age Verification status."), a.createElement(z.Qj, {
+                if (h) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(_.Z, {
+                    icon: L.faCircleQuestion
+                }), " Unable to determine your Age Verification status."), r.createElement(V.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "/home/ageverification"
                 }, "Try Again"));
-                if (!u) return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                    icon: I.faCircleInfo
-                }), " You must have an active VRChat Plus subscription in order to begin the verification process."), a.createElement(z.Qj, {
+                if (!u) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(_.Z, {
+                    icon: z.faCircleInfo
+                }), " You must have an active VRChat Plus subscription in order to begin the verification process."), r.createElement(V.Qj, {
                     className: "tw-w-full tw-mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
                 }, "Learn More"));
@@ -481,44 +688,44 @@
                 switch (d.status) {
                     case "verified":
                     case "approved":
-                        return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: F.f8
-                        }), " You have successfully verified your age.", g && " You may choose whether to display it on your profile."), g && a.createElement(z.Qj, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(_.Z, {
+                            icon: U.f8
+                        }), " You have successfully verified your age.", g && " You may choose whether to display it on your profile."), g && r.createElement(V.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/user/me"
                         }, "Go to My Profile"));
                     case "uninitialized":
-                        return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: I.faCircleInfo
-                        }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), a.createElement(z.Qj, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(_.Z, {
+                            icon: z.faCircleInfo
+                        }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), r.createElement(V.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Learn More"));
                     default:
-                        return a.createElement(a.Fragment, null, a.createElement("p", null, a.createElement(U.Z, {
-                            icon: I.faCircleInfo
-                        }), " You can check your Age Verification status here."), a.createElement(z.Qj, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(_.Z, {
+                            icon: z.faCircleInfo
+                        }), " You can check your Age Verification status here."), r.createElement(V.Qj, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Check Status"))
                 }
             };
-            var V = n(42138),
-                $ = n(3820),
-                _ = n(23138),
-                M = n(3620),
-                Y = n(29104);
-            var B = (0, c.Z)("div", {
+            var M = n(42138),
+                Y = n(3820),
+                B = n(23138),
+                H = n(3620),
+                W = n(29104);
+            var K = (0, c.Z)("div", {
                 target: "ezmvepu0"
             })({
                 name: "1qck9b",
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
-            const G = function() {
+            const X = function() {
                 var e, t = (0, p.I0)(),
                     n = (0, l.Tu)().user,
-                    r = (0, a.useState)(new Set(n.contentFilters)),
-                    o = (0, i.Z)(r, 2),
+                    a = (0, r.useState)(new Set(n.contentFilters)),
+                    o = (0, i.Z)(a, 2),
                     c = o[0],
                     s = o[1],
                     u = (0, l.Nr)(c, 1400),
@@ -526,13 +733,13 @@
                     d = (0, i.Z)(m, 2),
                     g = d[0],
                     w = d[1],
-                    E = w.isError,
-                    v = w.error,
+                    v = w.isError,
+                    E = w.error,
                     y = w.isSuccess;
-                (0, a.useEffect)((function() {
+                (0, r.useEffect)((function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
-                            t = (0, V.Z)(u);
+                            t = (0, M.Z)(u);
                         t.length === e.size && t.every((function(t) {
                             return e.has(t)
                         })) || g({
@@ -540,95 +747,95 @@
                             contentFilters: t
                         })
                     }
-                }), [u]), (0, a.useEffect)((function() {
+                }), [u]), (0, r.useEffect)((function() {
                     y && t((0, h.d)({
                         title: "Content Gating Settings Updated",
-                        icon: $.Yj,
+                        icon: Y.Yj,
                         message: "Your content gating settings have been updated successfully.",
                         color: "success",
                         timeout: 7e3
                     }))
                 }), [y]);
-                return a.createElement(a.Fragment, null, a.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), E && a.createElement(_.Z, {
+                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), v && r.createElement(B.Z, {
                     color: "danger"
-                }, "Unable to change content gating settings: ", null == v || null === (e = v.data) || void 0 === e ? void 0 : e.error.message), Object.entries(M.N).map((function(e) {
+                }, "Unable to change content gating settings: ", null == E || null === (e = E.data) || void 0 === e ? void 0 : e.error.message), Object.entries(H.N).map((function(e) {
                     var t = (0, i.Z)(e, 2),
                         n = t[0],
-                        r = t[1];
-                    return a.createElement(B, {
+                        a = t[1];
+                    return r.createElement(K, {
                         key: n
-                    }, a.createElement(Y.Z, {
-                        label: "Filter ".concat(r),
+                    }, r.createElement(W.Z, {
+                        label: "Filter ".concat(a),
                         defaultChecked: c.has(n),
                         onChangeCallback: function() {
-                            return e = n, void(c.has(e) ? s(new Set((0, V.Z)(c).filter((function(t) {
+                            return e = n, void(c.has(e) ? s(new Set((0, M.Z)(c).filter((function(t) {
                                 return t !== e
                             })))) : s(new Set(c).add(e)));
                             var e
                         }
                     }))
-                })), a.createElement("small", null, "VRChat has User Generated Content and relies on its creators to label it appropriately. If you see something that is not labeled correctly, please use our Reporting system so our Moderation team can investigate."))
+                })), r.createElement("small", null, "VRChat has User Generated Content and relies on its creators to label it appropriately. If you see something that is not labeled correctly, please use our Reporting system so our Moderation team can investigate."))
             };
-            var H = n(4942),
-                W = n(82414),
-                K = n(91557),
-                X = (0, a.createContext)(null);
-            const Q = function(e) {
+            var Q = n(4942),
+                J = n(82414),
+                ee = n(91557),
+                te = (0, r.createContext)(null);
+            const ne = function(e) {
                 var t = e.children,
                     n = e.closeModal,
-                    l = (0, a.useState)(1),
+                    l = (0, r.useState)(1),
                     o = (0, i.Z)(l, 2),
                     c = o[0],
                     s = o[1],
-                    u = (0, a.useState)(null),
+                    u = (0, r.useState)(null),
                     m = (0, i.Z)(u, 2),
                     d = m[0],
                     p = m[1],
-                    f = (0, a.useState)(!1),
+                    f = (0, r.useState)(!1),
                     h = (0, i.Z)(f, 2),
                     g = h[0],
                     w = h[1],
-                    E = (0, a.useState)({}),
-                    v = (0, i.Z)(E, 2),
-                    y = v[0],
-                    b = v[1],
-                    x = (0, a.useState)({}),
-                    Z = (0, i.Z)(x, 2),
-                    N = Z[0],
-                    k = Z[1],
+                    v = (0, r.useState)({}),
+                    E = (0, i.Z)(v, 2),
+                    y = E[0],
+                    b = E[1],
+                    x = (0, r.useState)({}),
+                    k = (0, i.Z)(x, 2),
+                    Z = k[0],
+                    N = k[1],
                     C = function() {
                         s(1), p(null), w(!1), b({}), n()
                     };
-                return g ? a.createElement("div", {
+                return g ? r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "tw-flex tw-items-baseline tw-mb-2"
-                }, a.createElement(r.$1, {
+                }, r.createElement(a.$1, {
                     color: "#67D781",
                     className: "tw-pr-2",
-                    icon: W.sq
-                }), a.createElement("h4", {
+                    icon: J.sq
+                }), r.createElement("h4", {
                     className: "tw-text-[#67D781]"
-                }, "Your claim has been submitted successfully, thank you!")), a.createElement("p", null, "We will look into it and email you for next possible steps."), a.createElement("div", {
+                }, "Your claim has been submitted successfully, thank you!")), r.createElement("p", null, "We will look into it and email you for next possible steps."), r.createElement("div", {
                     className: "tw-flex tw-w-full tw-mt-12"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     containerStyles: {
                         width: "100%"
                     },
                     onClick: C
-                }, "Done"))) : d ? a.createElement("div", {
+                }, "Done"))) : d ? r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "tw-flex tw-items-baseline tw-mb-2"
-                }, a.createElement(r.$1, {
+                }, r.createElement(a.$1, {
                     color: "#EE5454",
                     className: "tw-pr-2",
-                    icon: W.sq
-                }), a.createElement("h4", {
+                    icon: J.sq
+                }), r.createElement("h4", {
                     className: "tw-text-red"
-                }, "DMCA Claim Cannot Be Completed.")), a.createElement("p", null, d), a.createElement("div", {
+                }, "DMCA Claim Cannot Be Completed.")), r.createElement("p", null, d), r.createElement("div", {
                     className: "tw-flex tw-w-full tw-mt-12"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-mr-6",
                     containerStyles: {
                         width: "50%"
@@ -637,13 +844,13 @@
                         return p(null)
                     },
                     neutral: !0
-                }, "Back"), a.createElement(r.zx, {
+                }, "Back"), r.createElement(a.zx, {
                     className: "tw-ml-6",
                     containerStyles: {
                         width: "50%"
                     },
                     onClick: C
-                }, "Done"))) : a.createElement(X.Provider, {
+                }, "Done"))) : r.createElement(te.Provider, {
                     value: {
                         next: function() {
                             s((function(e) {
@@ -660,202 +867,202 @@
                         setFormSuccess: w,
                         ownerInfo: y,
                         setOwnerInfo: b,
-                        claimInfo: N,
-                        setClaimInfo: k,
+                        claimInfo: Z,
+                        setClaimInfo: N,
                         resetForm: C
                     }
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
                 }, t))
             };
 
-            function J(e, t) {
+            function re(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(e);
-                    t && (a = a.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, a)
+                    }))), n.push.apply(n, r)
                 }
                 return n
             }
 
-            function ee(e) {
+            function ae(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? J(Object(n), !0).forEach((function(t) {
-                        (0, H.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : J(Object(n)).forEach((function(t) {
+                    t % 2 ? re(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : re(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var te = [{
+            var le = [{
                     label: "I am the owner of the copyright",
                     value: "owner"
                 }, {
                     label: "I am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed",
                     value: "authorized"
                 }],
-                ne = new RegExp(/(?:avtr|wrld)_[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}/i),
-                ae = function(e) {
+                oe = new RegExp(/(?:avtr|wrld)_[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}/i),
+                ie = function(e) {
                     return e.filter((function(e) {
-                        return ne.test(e)
+                        return oe.test(e)
                     })).map((function(e) {
                         var t;
-                        return null === (t = e.match(ne)) || void 0 === t ? void 0 : t[0]
+                        return null === (t = e.match(oe)) || void 0 === t ? void 0 : t[0]
                     }))
                 };
-            const re = function() {
-                var e, t, n, l, o = (0, T.lr)(),
+            const ce = function() {
+                var e, t, n, l, o = (0, A.lr)(),
                     c = (0, i.Z)(o, 2),
                     s = c[0],
-                    u = (c[1], (0, a.useState)("owner")),
+                    u = (c[1], (0, r.useState)("owner")),
                     m = (0, i.Z)(u, 2),
                     d = m[0],
                     p = m[1],
-                    f = (0, a.useState)(!1),
+                    f = (0, r.useState)(!1),
                     h = (0, i.Z)(f, 2),
                     g = h[0],
                     w = h[1],
-                    E = (0, a.useState)(""),
-                    v = (0, i.Z)(E, 2),
-                    y = v[0],
-                    b = v[1],
-                    x = (0, a.useContext)(X),
-                    Z = x.previous,
-                    N = x.currentStep,
-                    k = x.claimInfo,
+                    v = (0, r.useState)(""),
+                    E = (0, i.Z)(v, 2),
+                    y = E[0],
+                    b = E[1],
+                    x = (0, r.useContext)(te),
+                    k = x.previous,
+                    Z = x.currentStep,
+                    N = x.claimInfo,
                     C = x.setClaimInfo,
                     S = x.ownerInfo,
                     O = x.setFormError,
-                    P = x.setFormSuccess,
-                    A = (null == g ? void 0 : g.owner) && (null == g ? void 0 : g.accurate) && (null == g ? void 0 : g.perjury) && (null == g ? void 0 : g.liability) && (null == g ? void 0 : g.abuse),
-                    D = (null == k || null === (e = k.description) || void 0 === e ? void 0 : e.length) > 0 && (null == k || null === (t = k.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == k || null === (n = k.proof) || void 0 === n ? void 0 : n.length) > 0 && A && y.toLowerCase() === S.fullName.toLowerCase(),
-                    I = (0, K.lw)(),
-                    F = (0, i.Z)(I, 2),
+                    T = x.setFormSuccess,
+                    P = (null == g ? void 0 : g.owner) && (null == g ? void 0 : g.accurate) && (null == g ? void 0 : g.perjury) && (null == g ? void 0 : g.liability) && (null == g ? void 0 : g.abuse),
+                    I = (null == N || null === (e = N.description) || void 0 === e ? void 0 : e.length) > 0 && (null == N || null === (t = N.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == N || null === (n = N.proof) || void 0 === n ? void 0 : n.length) > 0 && P && y.toLowerCase() === S.fullName.toLowerCase(),
+                    D = (0, ee.lw)(),
+                    F = (0, i.Z)(D, 2),
                     R = F[0],
                     j = F[1],
                     z = j.isError,
                     U = j.error,
-                    q = j.isLoading,
-                    L = j.isSuccess,
+                    L = j.isLoading,
+                    q = j.isSuccess,
                     V = j.reset;
-                (0, a.useEffect)((function() {
+                (0, r.useEffect)((function() {
                     var e = s.get("dmcaTarget");
-                    e && C(ee(ee({}, k), {}, {
-                        contentIds: ae([e])
+                    e && C(ae(ae({}, N), {}, {
+                        contentIds: ie([e])
                     }))
-                }), []), (0, a.useEffect)((function() {
+                }), []), (0, r.useEffect)((function() {
                     var e;
                     z && (V(), O("Could Not Proccess Claim: ".concat(null == U || null === (e = U.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
-                }), [z, U]), (0, a.useEffect)((function() {
-                    L && (V(), P(!0))
-                }), [L]);
-                var $ = function(e) {
-                    w(ee(ee({}, g), {}, (0, H.Z)({}, e.target.id, e.target.checked)))
+                }), [z, U]), (0, r.useEffect)((function() {
+                    q && (V(), T(!0))
+                }), [q]);
+                var _ = function(e) {
+                    w(ae(ae({}, g), {}, (0, Q.Z)({}, e.target.id, e.target.checked)))
                 };
-                return 3 !== N ? null : a.createElement(a.Fragment, null, a.createElement("label", {
+                return 3 !== Z ? null : r.createElement(r.Fragment, null, r.createElement("label", {
                     htmlFor: "claim-description",
                     className: "tw-mb-4"
-                }, "A description of the copyright-protected work or other intellectual property right that you claim has been infringed", a.createElement(r.gx, {
+                }, "A description of the copyright-protected work or other intellectual property right that you claim has been infringed", r.createElement(a.gx, {
                     className: "tw-pt-2",
                     id: "claim-description",
-                    value: null == k ? void 0 : k.description,
+                    value: null == N ? void 0 : N.description,
                     onChange: function(e) {
-                        return C(ee(ee({}, k), {}, {
+                        return C(ae(ae({}, N), {}, {
                             description: e.target.value
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "claim-content-ids",
                     className: "tw-mb-4"
-                }, "The ID or URL of infringing content", a.createElement(r.Lj, {
+                }, "The ID or URL of infringing content", r.createElement(a.Lj, {
                     className: "tw-pt-2",
-                    value: null == k ? void 0 : k.contentIds,
+                    value: null == N ? void 0 : N.contentIds,
                     validator: function(e) {
-                        return ne.test(e)
+                        return oe.test(e)
                     },
                     onChange: function(e) {
-                        return C(ee(ee({}, k), {}, {
-                            contentIds: ae(e)
+                        return C(ae(ae({}, N), {}, {
+                            contentIds: ie(e)
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "claim-proof",
                     className: "tw-mb-4"
-                }, "Provide your copyright work. Where can we see an authorized example of your work?", a.createElement(r.II, {
+                }, "Provide your copyright work. Where can we see an authorized example of your work?", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "claim-proof",
                     onChange: function(e) {
-                        return C(ee(ee({}, k), {}, {
+                        return C(ae(ae({}, N), {}, {
                             proof: e.target.value
                         }))
                     },
-                    value: null == k ? void 0 : k.proof
-                })), a.createElement("label", {
+                    value: null == N ? void 0 : N.proof
+                })), r.createElement("label", {
                     htmlFor: "claim-authority",
                     className: "tw-mb-4"
-                }, "Authority to make complaint", a.createElement(r.Lt, {
+                }, "Authority to make complaint", r.createElement(a.Lt, {
                     className: "tw-pt-2",
                     id: "claim-authority",
                     trimToLength: !0,
                     allowMultiline: !0,
-                    options: te,
+                    options: le,
                     value: d,
                     onChange: function(e) {
                         return p(e)
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "claim-owner",
                     className: "tw-mb-4"
-                }, "Copyright Owner Name (optional)", a.createElement(r.II, {
+                }, "Copyright Owner Name (optional)", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "claim-owner",
-                    value: null == k ? void 0 : k.copyrightOwnerName,
+                    value: null == N ? void 0 : N.copyrightOwnerName,
                     onChange: function(e) {
-                        return C(ee(ee({}, k), {}, {
+                        return C(ae(ae({}, N), {}, {
                             copyrightOwnerName: e.target.value
                         }))
                     }
-                })), a.createElement(le, {
+                })), r.createElement(se, {
                     className: "tw-mb-4"
-                }, a.createElement("h4", {
+                }, r.createElement("h4", {
                     className: "tw-text-xl"
-                }, "By checking these boxes I state that"), a.createElement(r.XZ, {
+                }, "By checking these boxes I state that"), r.createElement(a.XZ, {
                     id: "owner",
                     checked: null == g ? void 0 : g.owner,
                     label: "\n            I have a good faith belief that the use of the material in the\n            manner complained of is not authorized by the copyright owner,\n            its agent, or the law;\n          ",
                     htmlFor: "owner-check",
-                    onChange: $
-                }), a.createElement(r.XZ, {
+                    onChange: _
+                }), r.createElement(a.XZ, {
                     id: "accurate",
                     checked: null == g ? void 0 : g.accurate,
                     label: "This notification is accurate; and",
                     htmlFor: "accurate-check",
-                    onChange: $
-                }), a.createElement(r.XZ, {
+                    onChange: _
+                }), r.createElement(a.XZ, {
                     id: "perjury",
                     checked: null == g ? void 0 : g.perjury,
                     label: "\n            Under penalty of perjury, I am authorized to act on behalf of the owner\n            of an exclusive right that is allegedly infringed.\n          ",
                     htmlFor: "perjury-check",
-                    onChange: $
-                }), a.createElement(r.XZ, {
+                    onChange: _
+                }), r.createElement(a.XZ, {
                     id: "liability",
                     checked: null == g ? void 0 : g.liability,
                     label: "\n            I acknowledge that under section 512(f) of the DMCA any person who knowingly \n            materially misrepresents that material or activity is infringing may be subject \n            to liability for damages.\n          ",
                     htmlFor: "liability",
-                    onChange: $
-                }), a.createElement(r.XZ, {
+                    onChange: _
+                }), r.createElement(a.XZ, {
                     id: "abuse",
                     checked: null == g ? void 0 : g.abuse,
                     label: "I understand that abuse of this tool may result in the termination of my VRChat account, legal action, and/or criminal penalties.",
                     htmlFor: "abuse",
-                    onChange: $
-                })), a.createElement("label", {
+                    onChange: _
+                })), r.createElement("label", {
                     htmlFor: "claim-signature"
-                }, "Type your full name below which will act as your digital signature", a.createElement(r.II, {
+                }, "Type your full name below which will act as your digital signature", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "claim-signature",
                     value: y.toUpperCase(),
@@ -863,57 +1070,57 @@
                         return b(e.target.value)
                     },
                     pattern: null == S || null === (l = S.fullName) || void 0 === l ? void 0 : l.toUpperCase()
-                })), A ? null : a.createElement("div", {
+                })), P ? null : r.createElement("div", {
                     className: "tw-flex tw-items-center tw-bg-[#FF57671A] tw-mt-6 tw-rounded"
-                }, a.createElement(r.$1, {
+                }, r.createElement(a.$1, {
                     color: "#EE5454",
                     className: "tw-px-2",
-                    icon: W.sq
-                }), a.createElement("p", {
+                    icon: J.sq
+                }), r.createElement("p", {
                     className: "tw-text-red tw-py-2 tw-m-0"
-                }, "Please select all the checkboxes if you want to proceed.")), a.createElement("div", {
+                }, "Please select all the checkboxes if you want to proceed.")), r.createElement("div", {
                     className: "tw-flex tw-w-full tw-mt-6"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-mr-2",
-                    onClick: Z,
-                    containerStyles: oe,
+                    onClick: k,
+                    containerStyles: ue,
                     neutral: !0
-                }, "Back"), a.createElement(r.zx, {
+                }, "Back"), r.createElement(a.zx, {
                     className: "tw-ml-2",
-                    disabled: !D || q,
-                    containerStyles: oe,
+                    disabled: !I || L,
+                    containerStyles: ue,
                     onClick: function() {
                         return R({
-                            claimInfo: k,
+                            claimInfo: N,
                             ownerInfo: S
                         })
                     }
                 }, "Submit")))
             };
-            var le = (0, c.Z)("fieldset", {
+            var se = (0, c.Z)("fieldset", {
                     target: "eikx6m20"
                 })({
                     name: "hfkisc",
                     styles: "input{align-self:flex-start;margin-top:0.33rem;}label{padding:0 0 0.75rem 0.5rem!important;}"
                 }),
-                oe = {
+                ue = {
                     width: "100%"
                 };
-            const ie = function() {
-                var e = (0, a.useState)(null),
+            const me = function() {
+                var e = (0, r.useState)(null),
                     t = (0, i.Z)(e, 2),
                     n = t[0],
                     l = t[1],
-                    o = (0, a.useContext)(X),
+                    o = (0, r.useContext)(te),
                     c = o.resetForm,
                     s = o.next,
                     u = o.currentStep,
                     m = o.setFormError;
-                return 1 !== u ? null : a.createElement(a.Fragment, null, a.createElement("h6", {
+                return 1 !== u ? null : r.createElement(r.Fragment, null, r.createElement("h6", {
                     className: "tw-mb-6"
-                }, "Are you"), a.createElement("fieldset", null, a.createElement("label", {
+                }, "Are you"), r.createElement("fieldset", null, r.createElement("label", {
                     htmlFor: "content-owner"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     id: "content-owner",
                     type: "radio",
                     value: "owner",
@@ -921,10 +1128,10 @@
                     onChange: function(e) {
                         return l(e.target.value)
                     }
-                }), "  Submitting a claim on content I own/authorize to act on behalf of the owner"), a.createElement("label", {
+                }), "  Submitting a claim on content I own/authorize to act on behalf of the owner"), r.createElement("label", {
                     htmlFor: "content-other",
                     className: "tw-mt-2"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     id: "content-other",
                     type: "radio",
                     value: "other",
@@ -932,16 +1139,16 @@
                     onChange: function(e) {
                         return l(e.target.value)
                     }
-                }), "  Submitting a claim for someone else's content")), a.createElement("fieldset", {
+                }), "  Submitting a claim for someone else's content")), r.createElement("fieldset", {
                     className: "tw-flex tw-w-full tw-mt-12"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-mr-6",
                     containerStyles: {
                         width: "50%"
                     },
                     onClick: c,
                     neutral: !0
-                }, "Cancel"), a.createElement(r.zx, {
+                }, "Cancel"), r.createElement(a.zx, {
                     className: "tw-ml-6",
                     containerStyles: {
                         width: "50%"
@@ -952,220 +1159,220 @@
                     disabled: !n
                 }, "Next")))
             };
-            var ce = n(59545),
-                se = n(83868),
-                ue = n.n(se);
+            var de = n(59545),
+                pe = n(83868),
+                fe = n.n(pe);
 
-            function me(e, t) {
+            function he(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(e);
-                    t && (a = a.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, a)
+                    }))), n.push.apply(n, r)
                 }
                 return n
             }
 
-            function de(e) {
+            function ge(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? me(Object(n), !0).forEach((function(t) {
-                        (0, H.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : me(Object(n)).forEach((function(t) {
+                    t % 2 ? he(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : he(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            const pe = function() {
-                var e = (0, a.useState)(!0),
+            const we = function() {
+                var e = (0, r.useState)(!0),
                     t = (0, i.Z)(e, 2),
                     n = t[0],
                     l = t[1],
-                    o = (0, a.useState)(!1),
+                    o = (0, r.useState)(!1),
                     c = (0, i.Z)(o, 2),
                     s = c[0],
                     u = c[1],
-                    m = (0, a.useContext)(X),
+                    m = (0, r.useContext)(te),
                     d = m.next,
                     p = m.previous,
                     f = m.currentStep,
                     h = m.ownerInfo,
                     g = m.setOwnerInfo;
-                return (0, a.useEffect)((function() {
-                    var e, t, n, a, r, l;
-                    ue()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (a = h.mailingCity) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (r = h.mailingCountry) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
-                }), [h]), 2 !== f ? null : a.createElement("div", {
+                return (0, r.useEffect)((function() {
+                    var e, t, n, r, a, l;
+                    fe()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (r = h.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (a = h.mailingCountry) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
+                }), [h]), 2 !== f ? null : r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
-                }, n ? a.createElement(fe, null, a.createElement(r.$1, {
+                }, n ? r.createElement(ve, null, r.createElement(a.$1, {
                     className: "tw-px-2",
-                    icon: W.sq
-                }), a.createElement("p", {
+                    icon: J.sq
+                }), r.createElement("p", {
                     className: "tw-m-0"
-                }, "All information, including your full legal name and email address, are part of the full takedown notice, which may be provided to the uploader. This information is required to complete a submission."), a.createElement(r.$1, {
+                }, "All information, including your full legal name and email address, are part of the full takedown notice, which may be provided to the uploader. This information is required to complete a submission."), r.createElement(a.$1, {
                     color: "#fff",
                     className: "tw-pr-2 tw-cursor-pointer",
-                    icon: ce.NB,
+                    icon: de.NB,
                     onClick: function() {
                         return l(!1)
                     }
-                })) : null, a.createElement("label", {
+                })) : null, r.createElement("label", {
                     htmlFor: "user-full-name",
                     className: "tw-mb-4"
-                }, "Your Full Legal Name", a.createElement(r.II, {
+                }, "Your Full Legal Name", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "user-full-name",
                     type: "text",
                     value: null == h ? void 0 : h.fullName,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             fullName: e.target.value
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "user-org-name",
                     className: "tw-mb-4"
-                }, "Name of your organization (optional)", a.createElement(r.II, {
+                }, "Name of your organization (optional)", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "user-org-name",
                     type: "text",
                     value: null == h ? void 0 : h.organization,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             organization: e.target.value
                         }))
                     }
-                })), a.createElement("fieldset", {
+                })), r.createElement("fieldset", {
                     className: "tw-flex tw-flex-col tw-mb-4 tw-p-2 tw-border tw-border-solid tw-border-light-grey tw-rounded"
-                }, a.createElement("legend", null, "Mailing Address"), a.createElement("span", {
+                }, r.createElement("legend", null, "Mailing Address"), r.createElement("span", {
                     className: "tw-py-2 tw-block tw-text-sm tw-text-light-grey"
-                }, "Please provide your complete postal address including street number, city, state/province, ZIP/postal code, and country."), a.createElement("label", {
+                }, "Please provide your complete postal address including street number, city, state/province, ZIP/postal code, and country."), r.createElement("label", {
                     htmlFor: "mailing-address",
                     className: "tw-mb-4"
-                }, "Street", a.createElement(r.II, {
+                }, "Street", r.createElement(a.II, {
                     id: "owner-mailing-address",
                     value: null == h ? void 0 : h.mailingAddress,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
-                })), a.createElement("div", {
+                })), r.createElement("div", {
                     className: "tw-flex tw-gap-4"
-                }, a.createElement("label", {
+                }, r.createElement("label", {
                     htmlFor: "mailing-city",
                     className: "tw-mb-4 tw-flex-grow"
-                }, "City", a.createElement(r.II, {
+                }, "City", r.createElement(a.II, {
                     id: "owner-mailing-city",
                     value: null == h ? void 0 : h.mailingCity,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             mailingCity: e.target.value
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "mailing-state-province",
                     className: "tw-mb-4 tw-flex-grow"
-                }, "State/Province", a.createElement(r.II, {
+                }, "State/Province", r.createElement(a.II, {
                     id: "owner-mailing-state-province",
                     value: null == h ? void 0 : h.mailingStateProvince,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "mailing-postal-code",
                     className: "tw-mb-4 tw-flex-grow"
-                }, "ZIP/Postal Code", a.createElement(r.II, {
+                }, "ZIP/Postal Code", r.createElement(a.II, {
                     id: "owner-mailing-postal-code",
                     value: null == h ? void 0 : h.mailingPostalCode,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
-                }))), a.createElement("label", {
+                }))), r.createElement("label", {
                     htmlFor: "mailing-country"
-                }, "Country", a.createElement(r.II, {
+                }, "Country", r.createElement(a.II, {
                     id: "owner-mailing-country",
                     value: null == h ? void 0 : h.mailingCountry,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
-                }))), a.createElement("label", {
+                }))), r.createElement("label", {
                     htmlFor: "owner-phone",
                     className: "tw-mb-4"
-                }, "Phone Number", a.createElement(r.II, {
+                }, "Phone Number", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "owner-phone",
                     type: "tel",
                     value: null == h ? void 0 : h.phoneNumber,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
-                })), a.createElement("label", {
+                })), r.createElement("label", {
                     htmlFor: "owner-email"
-                }, "Email", a.createElement(r.II, {
+                }, "Email", r.createElement(a.II, {
                     className: "tw-pt-2",
                     id: "owner-email",
                     type: "email",
                     value: null == h ? void 0 : h.email,
                     onChange: function(e) {
-                        return g(de(de({}, h), {}, {
+                        return g(ge(ge({}, h), {}, {
                             email: e.target.value
                         }))
                     }
-                })), a.createElement("div", {
+                })), r.createElement("div", {
                     className: "tw-flex tw-w-full tw-mt-6"
-                }, a.createElement(r.zx, {
+                }, r.createElement(a.zx, {
                     className: "tw-mr-2",
-                    containerStyles: he,
+                    containerStyles: Ee,
                     onClick: p,
                     neutral: !0
-                }, "Back"), a.createElement(r.zx, {
+                }, "Back"), r.createElement(a.zx, {
                     className: "tw-ml-2",
-                    containerStyles: he,
+                    containerStyles: Ee,
                     disabled: !s,
                     onClick: d
                 }, "Next")))
             };
-            var fe = (0, c.Z)("div", {
+            var ve = (0, c.Z)("div", {
                     target: "exj8v4t0"
                 })({
                     name: "5vwt1n",
                     styles: "display:flex;align-items:baseline;color:#9c9c9c;background-color:#000;border-radius:8px;padding:0.5rem;margin-bottom:1rem"
                 }),
-                he = {
+                Ee = {
                     width: "100%"
                 };
-            const ge = function() {
-                var e = (0, T.lr)(),
+            const ye = function() {
+                var e = (0, A.lr)(),
                     t = (0, i.Z)(e, 2),
                     n = t[0],
                     l = t[1],
-                    o = (0, a.useState)(!1),
+                    o = (0, r.useState)(!1),
                     c = (0, i.Z)(o, 2),
                     s = c[0],
                     u = c[1];
-                (0, a.useEffect)((function() {
-                    var e = Object.fromEntries((0, V.Z)(n.entries()).filter((function(e) {
+                (0, r.useEffect)((function() {
+                    var e = Object.fromEntries((0, M.Z)(n.entries()).filter((function(e) {
                         return "dmcaClaimForm" !== (0, i.Z)(e, 1)[0]
                     })));
                     s && (e.dmcaClaimForm = !0), l(e)
-                }), [s]), (0, a.useEffect)((function() {
+                }), [s]), (0, r.useEffect)((function() {
                     n.get("dmcaClaimForm") && u(!0)
                 }), []);
-                return a.createElement(a.Fragment, null, a.createElement("p", null, "If you are aware of unauthorized use of your property, you can use the button below to request a DMCA takedown."), a.createElement(r.zx, {
+                return r.createElement(r.Fragment, null, r.createElement("p", null, "If you are aware of unauthorized use of your property, you can use the button below to request a DMCA takedown."), r.createElement(a.zx, {
                     onClick: function() {
                         return u(!0)
                     }
-                }, "File a DMCA Claim"), a.createElement(r.u_, {
+                }, "File a DMCA Claim"), r.createElement(a.u_, {
                     width: "80%",
                     title: "DMCA Claim",
                     slim: !0,
@@ -1173,245 +1380,245 @@
                     onClose: function() {
                         return u(!1)
                     }
-                }, a.createElement(Q, {
+                }, r.createElement(ne, {
                     closeModal: function() {
                         u(!1)
                     }
-                }, a.createElement(ie, null), a.createElement(pe, null), a.createElement(re, null))))
+                }, r.createElement(me, null), r.createElement(we, null), r.createElement(ce, null))))
             };
-            var we = n(65578),
-                Ee = n(84176),
-                ve = n(22081),
-                ye = n(92332),
-                be = n(34424),
-                xe = n(27484),
-                Ze = n.n(xe),
-                Ne = n(21442),
-                ke = n(8860),
-                Ce = n(98185),
-                Se = n(5513),
-                Oe = n(8698),
-                Te = function(e) {
+            var be = n(65578),
+                xe = n(84176),
+                ke = n(22081),
+                Ze = n(92332),
+                Ne = n(34424),
+                Ce = n(27484),
+                Se = n.n(Ce),
+                Oe = n(21442),
+                Te = n(8860),
+                Pe = n(98185),
+                Ae = n(5513),
+                Ie = n(8698),
+                De = function(e) {
                     return e.currentUser.checkDisplayName.isLoading
                 },
-                Pe = function(e) {
+                Fe = function(e) {
                     var t;
                     return (null === (t = e.currentUser.databaseUser) || void 0 === t ? void 0 : t.pastDisplayNames) || null
                 },
-                Ae = (0, Oe.P1)(Te, (function(e) {
+                Re = (0, Ie.P1)(De, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !1 === t && null !== n
                 })),
-                De = (0, Oe.P1)(Te, (function(e) {
+                je = (0, Ie.P1)(De, (function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e, t, n) {
                     return !1 === e && !0 === t && null !== n
                 })),
-                Ie = (0, Oe.P1)(Te, (function(e) {
+                ze = (0, Ie.P1)(De, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }), (function(e, t, n) {
                     return !1 === e && null !== t && !0 === n
                 })),
-                Fe = (0, Oe.P1)(Te, (function(e) {
+                Ue = (0, Ie.P1)(De, (function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }), (function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }), (function(e, t, n) {
                     return !1 === e && null !== t && !1 === n
                 })),
-                Re = (0, Oe.P1)(Pe, (function(e) {
+                Le = (0, Ie.P1)(Fe, (function(e) {
                     return null !== e && e.length > 0
                 })),
-                je = (0, Oe.P1)(Re, Pe, (function(e, t) {
+                qe = (0, Ie.P1)(Le, Fe, (function(e, t) {
                     return e && t.reduce((function(e, t) {
-                        return Ze()(t.updated_at) > Ze()(e.updated_at) ? t : e
+                        return Se()(t.updated_at) > Se()(e.updated_at) ? t : e
                     }), {
                         updated_at: 0
                     })
                 })),
-                ze = (0, Oe.P1)(Pe, je, (function(e, t) {
+                Ve = (0, Ie.P1)(Fe, qe, (function(e, t) {
                     return null !== e && t.updated_at
                 })),
-                Ue = (0, Oe.P1)(Pe, je, (function(e, t) {
+                _e = (0, Ie.P1)(Fe, qe, (function(e, t) {
                     return null !== e && t.displayName
                 })),
-                qe = (0, Oe.P1)(Pe, je, (function(e, t) {
+                $e = (0, Ie.P1)(Fe, qe, (function(e, t) {
                     return null !== e && !!t.reverted
                 })),
-                Le = n(76938),
-                Ve = n(52926),
-                $e = n(45697),
-                _e = n.n($e),
-                Me = function(e) {
+                Ge = n(76938),
+                Me = n(52926),
+                Ye = n(45697),
+                Be = n.n(Ye),
+                He = function(e) {
                     var t = e.validationError,
                         n = e.displayNameChanged,
                         l = void 0 !== n && n,
-                        o = (0, p.v9)(De),
-                        i = (0, p.v9)(Fe),
-                        c = ((0, p.v9)(ze), l || (0, p.v9)((function(e) {
+                        o = (0, p.v9)(je),
+                        i = (0, p.v9)(Ue),
+                        c = ((0, p.v9)(Ve), l || (0, p.v9)((function(e) {
                             var t;
                             return null === (t = e.currentUser.displayName) || void 0 === t ? void 0 : t.changed
                         })));
-                    return a.createElement(a.Fragment, null, null !== t && a.createElement(_.Z, {
+                    return r.createElement(r.Fragment, null, null !== t && r.createElement(B.Z, {
                         color: "warning",
                         "aria-label": "name warning"
-                    }, a.createElement(r.$1, {
-                        icon: ve.lE
-                    }), " ".concat(t)), o && null === t && a.createElement(_.Z, {
+                    }, r.createElement(a.$1, {
+                        icon: ke.lE
+                    }), " ".concat(t)), o && null === t && r.createElement(B.Z, {
                         color: "warning",
                         "aria-label": "name warning not available"
-                    }, a.createElement(r.$1, {
-                        icon: Ve.B1
-                    }), " That display name is already in use."), i && null === t && a.createElement(_.Z, {
+                    }, r.createElement(a.$1, {
+                        icon: Me.B1
+                    }), " That display name is already in use."), i && null === t && r.createElement(B.Z, {
                         color: "warning",
                         "aria-label": "name warning character not okay"
-                    }, a.createElement(r.$1, {
-                        icon: Ve.B1
-                    }), " That display name includes characters that cannot be used. Please try again."), c && a.createElement(_.Z, {
+                    }, r.createElement(a.$1, {
+                        icon: Me.B1
+                    }), " That display name includes characters that cannot be used. Please try again."), c && r.createElement(B.Z, {
                         color: "success",
                         "aria-label": "name change success"
-                    }, a.createElement(r.$1, {
-                        icon: ve.lE
+                    }, r.createElement(a.$1, {
+                        icon: ke.lE
                     }), " Your display name has been changed!"))
                 };
-            Me.propTypes = {
-                canChangeDisplayName: _e().bool.isRequired,
-                validationError: _e().string
+            He.propTypes = {
+                canChangeDisplayName: Be().bool.isRequired,
+                validationError: Be().string
             };
-            const Ye = Me;
-            var Be = function(e) {
+            const We = He;
+            var Ke = function(e) {
                 var t = e.displayNameError,
                     n = (0, p.I0)();
-                return a.createElement("div", {
+                return r.createElement("div", {
                     className: "center-panel"
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "mb-4"
-                }, a.createElement("p", null, "Name change was not successful due to:", a.createElement("br", null), a.createElement("code", null, t), a.createElement("br", null), "If issues persist, please contact VRChat Support at", " ", a.createElement("a", {
+                }, r.createElement("p", null, "Name change was not successful due to:", r.createElement("br", null), r.createElement("code", null, t), r.createElement("br", null), "If issues persist, please contact VRChat Support at", " ", r.createElement("a", {
                     target: "_blank",
                     rel: "noreferrer",
                     href: "https://help.vrchat.com"
-                }, "help.vrchat.com"), "."), a.createElement(Z.Z, {
+                }, "help.vrchat.com"), "."), r.createElement(k.Z, {
                     className: "me-2",
                     onClick: function() {
-                        return n((0, Se.IX)())
+                        return n((0, Ae.IX)())
                     },
                     color: "primary"
                 }, "Try Again")))
             };
-            Be.propTypes = {
-                displayNameError: _e().string.isRequired
+            Ke.propTypes = {
+                displayNameError: Be().string.isRequired
             };
-            const Ge = Be,
-                He = n.p + "53f4092cfcb77e5217e639fd7a2012ff35100e4d9b6ed70707b47746bcb81c86.svg";
-            var We = function(e) {
+            const Xe = Ke,
+                Qe = n.p + "53f4092cfcb77e5217e639fd7a2012ff35100e4d9b6ed70707b47746bcb81c86.svg";
+            var Je = function(e) {
                 var t = e.canRevertDisplayName,
                     n = e.numberOfDays,
                     l = e.showLastDisplayNameChange,
                     o = e.cooldownPermission,
                     i = void 0 !== o && o;
-                return a.createElement(r.qX, {
+                return r.createElement(a.qX, {
                     hideIcon: !0,
                     color: "#28434B",
                     type: "custom",
                     iconColor: "#6AE3F9",
                     className: "tw-mb-4"
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "tw-flex tw-gap-3 tw-flex-row"
-                }, a.createElement("p", {
+                }, r.createElement("p", {
                     className: "tw-m-0"
-                }, a.createElement(r.$1, {
-                    icon: W.sq,
+                }, r.createElement(a.$1, {
+                    icon: J.sq,
                     color: "#6AE3F9",
                     className: "tw-mr-2"
-                })), a.createElement("div", {
+                })), r.createElement("div", {
                     className: "tw-flex tw-flex-col"
-                }, a.createElement("span", null, i && a.createElement(a.Fragment, null, "You can only change your display name once per", " ", a.createElement("strong", {
+                }, r.createElement("span", null, i && r.createElement(r.Fragment, null, "You can only change your display name once per", " ", r.createElement("strong", {
                     className: "tw-text-[#FFFF00]"
-                }, 30, " days ", a.createElement("img", {
+                }, 30, " days ", r.createElement("img", {
                     alt: "subscriptions",
                     width: "35",
-                    src: He
-                }))), !i && a.createElement(a.Fragment, null, "You can only change your display name once per ", a.createElement("strong", null, 90, " days"), " ", a.createElement("br", null), "Want more flexibility? Change it every ", 30, " days instead with", " ", a.createElement("img", {
+                    src: Qe
+                }))), !i && r.createElement(r.Fragment, null, "You can only change your display name once per ", r.createElement("strong", null, 90, " days"), " ", r.createElement("br", null), "Want more flexibility? Change it every ", 30, " days instead with", " ", r.createElement("img", {
                     alt: "subscriptions",
                     width: "35",
-                    src: He
-                }))), l && a.createElement("small", {
+                    src: Qe
+                }))), l && r.createElement("small", {
                     className: "tw-text-placeholder-text"
-                }, "Last changed: ", n, " days ago."), t && a.createElement("small", {
+                }, "Last changed: ", n, " days ago."), t && r.createElement("small", {
                     className: "tw-text-placeholder-text"
                 }, "You can revert your last display name change."))))
             };
-            We.propTypes = {
-                canRevertDisplayName: _e().bool.isRequired,
-                numberOfDays: _e().number.isRequired,
-                showLastDisplayNameChange: _e().bool.isRequired
+            Je.propTypes = {
+                canRevertDisplayName: Be().bool.isRequired,
+                numberOfDays: Be().number.isRequired,
+                showLastDisplayNameChange: Be().bool.isRequired
             };
-            const Ke = We;
-            var Xe = n(39886),
-                Qe = n(56599),
-                Je = n(54610);
-            var et = (0, c.Z)("p", {
+            const et = Je;
+            var tt = n(39886),
+                nt = n(56599),
+                rt = n(54610);
+            var at = (0, c.Z)("p", {
                     target: "ek3joju1"
                 })({
                     name: "dzbp6p",
                     styles: "white-space:pre-wrap;line-height:2"
                 }),
-                tt = (0, c.Z)("b", {
+                lt = (0, c.Z)("b", {
                     target: "ek3joju0"
                 })({
                     name: "lii32t",
                     styles: "font-size:1.2em;color:var(--bs-primary)"
                 }),
-                nt = function(e) {
+                ot = function(e) {
                     var t = e.exitRevertCallback,
                         n = e.previousDisplayName,
                         l = (0, p.I0)(),
                         c = (0, p.v9)((function(e) {
                             return e.currentUser.databaseUser.id
                         })),
-                        u = (0, a.useState)(""),
+                        u = (0, r.useState)(""),
                         d = (0, i.Z)(u, 2),
                         f = d[0],
                         g = d[1],
-                        w = (0, a.useState)(""),
-                        E = (0, i.Z)(w, 2),
-                        v = E[0],
-                        y = E[1],
-                        b = (0, a.useState)(!0),
+                        w = (0, r.useState)(""),
+                        v = (0, i.Z)(w, 2),
+                        E = v[0],
+                        y = v[1],
+                        b = (0, r.useState)(!0),
                         x = (0, i.Z)(b, 2),
-                        N = x[0],
-                        k = x[1],
-                        C = (0, a.useState)(!1),
+                        Z = x[0],
+                        N = x[1],
+                        C = (0, r.useState)(!1),
                         S = (0, i.Z)(C, 2),
                         O = S[0],
                         T = S[1];
-                    (0, a.useEffect)((function() {
-                        return k("" === v || f !== n)
-                    }), [v, f]);
+                    (0, r.useEffect)((function() {
+                        return N("" === E || f !== n)
+                    }), [E, f]);
                     var P = function() {
                         var e = (0, o.Z)(m().mark((function e() {
-                            var a, r, o, i;
+                            var r, a, o, i;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, l((0, Se.eu)({
+                                        return e.prev = 0, e.next = 3, l((0, Ae.eu)({
                                             userId: c,
                                             displayName: n,
-                                            currentPassword: v,
+                                            currentPassword: E,
                                             revertDisplayName: !0
                                         }));
                                     case 3:
                                         t(), e.next = 13;
                                         break;
                                     case 6:
-                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (a = null === (r = e.t0.response) || void 0 === r || null === (r = r.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== a ? a : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), T(!1), l((0, h.d)({
+                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (r = null === (a = e.t0.response) || void 0 === a || null === (a = a.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), T(!1), l((0, h.d)({
                                             title: "Failed to revert display name",
                                             icon: s.eH,
                                             message: i,
@@ -1430,14 +1637,14 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                    return a.createElement("div", {
+                    return r.createElement("div", {
                         className: "center-panel"
-                    }, a.createElement(Xe.Z, {
+                    }, r.createElement(tt.Z, {
                         className: "mb-4",
                         outline: !0
-                    }, a.createElement(Qe.Z, {
+                    }, r.createElement(nt.Z, {
                         tag: "h4"
-                    }, "Confirm Display Name Change Revert"), a.createElement(Je.Z, null, a.createElement(et, null, "This will change your display name back to:", a.createElement("br", null), a.createElement(tt, null, n), a.createElement("br", null), "And restart the 90-day timer.", a.createElement("br", null), "Type your previous display name into the field below to revert."), a.createElement("input", {
+                    }, "Confirm Display Name Change Revert"), r.createElement(rt.Z, null, r.createElement(at, null, "This will change your display name back to:", r.createElement("br", null), r.createElement(lt, null, n), r.createElement("br", null), "And restart the 90-day timer.", r.createElement("br", null), "Type your previous display name into the field below to revert."), r.createElement("input", {
                         "aria-label": "enter revert name",
                         type: "text",
                         className: "form-control mt-2 mb-2",
@@ -1446,7 +1653,7 @@
                             return g(e.target.value)
                         },
                         value: f
-                    }), a.createElement("input", {
+                    }), r.createElement("input", {
                         className: "form-control mb-2",
                         id: "namePasswordVerify",
                         name: "namePasswordVerify",
@@ -1456,18 +1663,18 @@
                         },
                         placeholder: "Please confirm current password",
                         type: "password",
-                        value: v
-                    }), a.createElement(Z.Z, {
+                        value: E
+                    }), r.createElement(k.Z, {
                         className: "me-2",
                         onClick: function() {
                             return T(!0)
                         },
-                        disabled: N,
+                        disabled: Z,
                         color: "primary"
-                    }, "Ok"), a.createElement(Z.Z, {
+                    }, "Ok"), r.createElement(k.Z, {
                         onClick: t,
                         color: "secondary"
-                    }, "Cancel"))), a.createElement(r.sm, {
+                    }, "Cancel"))), r.createElement(a.sm, {
                         headerText: "Revert Display Name Change",
                         bodyText: "✋ Stop! You will not be able to change your name for 90 days after reverting your name. Are you sure you want to revert your display name? ",
                         confirmCallback: P,
@@ -1477,12 +1684,12 @@
                         isOpen: O
                     }))
                 };
-            nt.propTypes = {
-                exitRevertCallback: _e().func.isRequired,
-                previousDisplayName: _e().string
+            ot.propTypes = {
+                exitRevertCallback: Be().func.isRequired,
+                previousDisplayName: Be().string
             };
-            const at = nt;
-            const rt = function() {
+            const it = ot;
+            const ct = function() {
                 var e, t, n = (0, p.I0)(),
                     c = (0, f.yi)(),
                     s = (0, i.Z)(c, 2),
@@ -1491,73 +1698,73 @@
                     h = d.isLoading,
                     g = d.isError,
                     w = d.error,
-                    E = d.isSuccess,
-                    v = (0, C.q7)().data,
-                    y = void 0 === v ? [] : v,
-                    N = (0, p.v9)(Ae),
-                    k = (0, p.v9)(Ie),
-                    S = (0, p.v9)(Te),
-                    O = (0, p.v9)(Re),
-                    T = (0, p.v9)(qe),
-                    P = (0, p.v9)(Le.y),
-                    A = (0, p.v9)(ze),
-                    D = (0, p.v9)(Ue),
-                    I = (0, p.v9)((function(e) {
+                    v = d.isSuccess,
+                    E = (0, S.q7)().data,
+                    y = void 0 === E ? [] : E,
+                    Z = (0, p.v9)(Re),
+                    N = (0, p.v9)(ze),
+                    C = (0, p.v9)(De),
+                    O = (0, p.v9)(Le),
+                    T = (0, p.v9)($e),
+                    P = (0, p.v9)(Ge.y),
+                    A = (0, p.v9)(Ve),
+                    I = (0, p.v9)(_e),
+                    D = (0, p.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
-                    F = (0, a.useState)(!0),
+                    F = (0, r.useState)(!0),
                     R = (0, i.Z)(F, 2),
                     j = R[0],
                     z = R[1],
-                    U = (0, a.useState)(null),
-                    q = (0, i.Z)(U, 2),
-                    L = q[0],
-                    V = q[1],
-                    $ = (0, a.useState)(""),
-                    M = (0, i.Z)($, 2),
-                    Y = M[0],
-                    B = M[1],
-                    G = (0, a.useState)(""),
-                    H = (0, i.Z)(G, 2),
+                    U = (0, r.useState)(null),
+                    L = (0, i.Z)(U, 2),
+                    q = L[0],
+                    V = L[1],
+                    _ = (0, r.useState)(""),
+                    $ = (0, i.Z)(_, 2),
+                    G = $[0],
+                    M = $[1],
+                    Y = (0, r.useState)(""),
+                    H = (0, i.Z)(Y, 2),
                     W = H[0],
                     K = H[1],
-                    X = (0, a.useState)(null),
+                    X = (0, r.useState)(null),
                     Q = (0, i.Z)(X, 2),
                     J = Q[0],
                     ee = Q[1],
-                    te = (0, a.useState)(""),
+                    te = (0, r.useState)(""),
                     ne = (0, i.Z)(te, 2),
-                    ae = ne[0],
-                    re = ne[1],
-                    le = (0, a.useState)(!1),
+                    re = ne[0],
+                    ae = ne[1],
+                    le = (0, r.useState)(!1),
                     oe = (0, i.Z)(le, 2),
                     ie = oe[0],
                     ce = oe[1],
-                    se = (0, a.useState)(!1),
+                    se = (0, r.useState)(!1),
                     ue = (0, i.Z)(se, 2),
                     me = ue[0],
                     de = ue[1],
                     pe = y.includes("permission-reduced-name-change-cooldown"),
-                    fe = (0, l.Nr)(ae),
-                    he = N && k && "" !== fe;
-                if ((0, a.useEffect)((function() {
+                    fe = (0, l.Nr)(re),
+                    he = Z && N && "" !== fe;
+                if ((0, r.useEffect)((function() {
                         if (P) z(!0);
                         else {
                             var e = pe ? 30 : 90;
-                            O && Ze()().diff(A, "days") < e ? z(!1) : z(!0)
+                            O && Se()().diff(A, "days") < e ? z(!1) : z(!0)
                         }
-                    }), [A, pe, P, O]), (0, a.useEffect)((function() {
-                        "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), B(""), n((0, Se.Zm)({
+                    }), [A, pe, P, O]), (0, r.useEffect)((function() {
+                        "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), M(""), n((0, Ae.Zm)({
                             displayName: fe,
-                            userId: I.id
+                            userId: D.id
                         }))) : ee(null)
-                    }), [fe, n, I.id]), (0, a.useEffect)((function() {
-                        return "" === Y ? (ce(!1), void V(null)) : Y !== ae ? (ce(!1), void V("Names don't match")) : (ce(!0), void V(null))
-                    }), [Y, ae]), g) return a.createElement(Ge, {
+                    }), [fe, n, D.id]), (0, r.useEffect)((function() {
+                        return "" === G ? (ce(!1), void V(null)) : G !== re ? (ce(!1), void V("Names don't match")) : (ce(!0), void V(null))
+                    }), [G, re]), g) return r.createElement(Xe, {
                     displayNameError: null !== (e = null === (t = w.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
-                if (me) return a.createElement(at, {
-                    previousDisplayName: D,
+                if (me) return r.createElement(it, {
+                    previousDisplayName: I,
                     exitRevertCallback: function() {
                         return de(!1)
                     }
@@ -1569,9 +1776,9 @@
                                     case 0:
                                         return e.prev = 0, e.next = 3, n(u({
                                             password: W,
-                                            displayName: ae,
+                                            displayName: re,
                                             revertDisplayName: !1,
-                                            userId: I.id
+                                            userId: D.id
                                         }));
                                     case 3:
                                         e.next = 8;
@@ -1591,29 +1798,29 @@
                         }
                     }(),
                     we = !j && !T;
-                return a.createElement(Ce.Z, {
+                return r.createElement(Pe.Z, {
                     loading: h
-                }, a.createElement("div", {
+                }, r.createElement("div", {
                     className: "center-panel"
-                }, a.createElement(Ne.Z, null, a.createElement(Ke, {
+                }, r.createElement(Oe.Z, null, r.createElement(et, {
                     canRevertDisplayName: we,
                     cooldownPermission: pe,
                     showLastDisplayNameChange: !j,
-                    numberOfDays: Ze()().diff(A, "days")
-                }), a.createElement(b.Z, null, a.createElement(x.Z, {
+                    numberOfDays: Se()().diff(A, "days")
+                }), r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "right"
                     },
                     className: "mx-0"
-                }, a.createElement(r.$1, {
-                    icon: be.Qj,
+                }, r.createElement(a.$1, {
+                    icon: Ne.Qj,
                     size: "2x"
-                })), a.createElement(x.Z, {
+                })), r.createElement(x.Z, {
                     xs: "10"
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     "aria-label": "display name",
                     className: "form-control",
                     autoComplete: "off",
@@ -1621,84 +1828,84 @@
                     id: "displayName",
                     name: "displayName",
                     onChange: function(e) {
-                        return re(e.target.value)
+                        return ae(e.target.value)
                     },
-                    placeholder: I.displayName,
+                    placeholder: D.displayName,
                     type: "text",
-                    value: ae
-                }), a.createElement(Ye, {
+                    value: re
+                }), r.createElement(We, {
                     canChangeDisplayName: j,
-                    displayName: I.displayName,
-                    displayNameAvailable: N,
-                    displayNameValue: ae,
+                    displayName: D.displayName,
+                    displayNameAvailable: Z,
+                    displayNameValue: re,
                     isRevert: !1,
                     latestChangedDate: A,
-                    displayNameChecking: S,
+                    displayNameChecking: C,
                     validationError: J,
-                    displayNameChanged: E
-                }))), a.createElement(x.Z, {
+                    displayNameChanged: v
+                }))), r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, S && a.createElement(r.$1, {
-                    icon: ye.LM,
+                }, C && r.createElement(a.$1, {
+                    icon: Ze.LM,
                     spin: !0,
                     size: "2x"
-                }), "" !== ae && !S && a.createElement(ke.Z, {
-                    "aria-label": N && k ? "Name is available" : "Name is unavailable",
-                    ok: N && k
-                }))), he && !E && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }), "" !== re && !C && r.createElement(Te.Z, {
+                    "aria-label": Z && N ? "Name is available" : "Name is unavailable",
+                    ok: Z && N
+                }))), he && !v && r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: {
                         size: 10,
                         offset: 1
                     },
                     className: "me-0"
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     "aria-label": "confirm display name",
                     autoComplete: "off",
                     className: "form-control",
                     id: "confirmDisplayName",
                     name: "confirmDisplayName",
                     onChange: function(e) {
-                        return B(e.target.value)
+                        return M(e.target.value)
                     },
                     placeholder: "Please confirm display name",
                     type: "text",
-                    value: Y
-                }), null !== L && a.createElement(_.Z, {
+                    value: G
+                }), null !== q && r.createElement(B.Z, {
                     color: "warning",
                     "aria-label": "confirm name warning"
-                }, a.createElement(r.$1, {
-                    icon: ve.lE
-                }), " ".concat(L)))), a.createElement(x.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ke.lE
+                }), " ".concat(q)))), r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== Y && a.createElement(ke.Z, {
-                    "aria-label": null !== L ? L : "Confirmation name matches",
-                    ok: null === L
-                }))), ie && !E && a.createElement(b.Z, {
+                }, "" !== G && r.createElement(Te.Z, {
+                    "aria-label": null !== q ? q : "Confirmation name matches",
+                    ok: null === q
+                }))), ie && !v && r.createElement(b.Z, {
                     className: "mt-2"
-                }, a.createElement(x.Z, {
+                }, r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "right"
                     },
                     className: "mx-0"
-                }, a.createElement(r.$1, {
-                    icon: Ee.DD,
+                }, r.createElement(a.$1, {
+                    icon: xe.DD,
                     size: "2x"
-                })), a.createElement(x.Z, {
+                })), r.createElement(x.Z, {
                     xs: "10"
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     "aria-label": "Please confirm current password",
                     className: "form-control",
                     id: "namePasswordVerify",
@@ -1709,11 +1916,11 @@
                     placeholder: "Please confirm current password",
                     type: "password",
                     value: W
-                })))), a.createElement(b.Z, {
+                })))), r.createElement(b.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
-                }, we && a.createElement(x.Z, {
+                }, we && r.createElement(x.Z, {
                     xs: "6"
-                }, a.createElement(Z.Z, {
+                }, r.createElement(k.Z, {
                     color: "primary",
                     outline: !0,
                     block: !0,
@@ -1722,10 +1929,10 @@
                     onClick: function() {
                         return de(!0)
                     }
-                }, "Revert Display Name Change")), a.createElement(x.Z, {
+                }, "Revert Display Name Change")), r.createElement(x.Z, {
                     xs: "6"
-                }, a.createElement(Z.Z, {
-                    disabled: !j || !0 === S || null !== L || "" === Y || "" === W || null !== J || "" === ae,
+                }, r.createElement(k.Z, {
+                    disabled: !j || !0 === C || null !== q || "" === G || "" === W || null !== J || "" === re,
                     color: "primary",
                     block: !0,
                     id: "name-change-submit",
@@ -1734,57 +1941,57 @@
                     onClick: ge
                 }, "Change Display Name"))))))
             };
-            var lt = n(609),
-                ot = n(82470);
-            const it = function(e) {
+            var st = n(609),
+                ut = n(82470);
+            const mt = function(e) {
                 var t, n, l = e.user,
                     c = (l || {}).usesGeneratedPassword,
-                    s = a.useState(""),
+                    s = r.useState(""),
                     u = (0, i.Z)(s, 2),
                     d = u[0],
                     p = u[1],
-                    h = a.useState(""),
+                    h = r.useState(""),
                     g = (0, i.Z)(h, 2),
                     w = g[0],
-                    E = g[1],
-                    v = a.useState(""),
-                    y = (0, i.Z)(v, 2),
-                    Z = y[0],
-                    N = y[1],
-                    k = a.useState(!1),
-                    C = (0, i.Z)(k, 2),
+                    v = g[1],
+                    E = r.useState(""),
+                    y = (0, i.Z)(E, 2),
+                    k = y[0],
+                    Z = y[1],
+                    N = r.useState(!1),
+                    C = (0, i.Z)(N, 2),
                     S = C[0],
                     O = C[1],
                     T = (0, f.$h)(),
                     P = (0, i.Z)(T, 2),
                     A = P[0],
-                    D = P[1],
-                    I = D.isLoading,
-                    F = D.isSuccess,
-                    R = D.isError,
-                    j = D.error,
+                    I = P[1],
+                    D = I.isLoading,
+                    F = I.isSuccess,
+                    R = I.isError,
+                    j = I.error,
                     z = function(e) {
                         var t = e.newPassword;
-                        return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, ot.w)(t) ? "Please try a more secure password" : null : null
+                        return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, ut.w)(t) ? "Please try a more secure password" : null : null
                     }({
                         newPassword: w
                     }),
                     U = (n = {
                         newPassword: w,
-                        confirmationNewPassword: Z
+                        confirmationNewPassword: k
                     }).newPassword !== n.confirmationNewPassword ? "Passwords don't match" : null,
-                    q = !z,
-                    L = !U && Z.length > 0,
+                    L = !z,
+                    q = !U && k.length > 0,
                     V = w.length > 0 && !z,
-                    $ = V && Z.length > 0 && !U && !c,
-                    M = !z && !U && w === Z && ("" !== d || c),
-                    Y = function() {
+                    _ = V && k.length > 0 && !U && !c,
+                    $ = !z && !U && w === k && ("" !== d || c),
+                    G = function() {
                         var e = (0, o.Z)(m().mark((function e(t) {
                             var n;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (t.preventDefault(), M) {
+                                        if (t.preventDefault(), $) {
                                             e.next = 3;
                                             break
                                         }
@@ -1795,7 +2002,7 @@
                                             password: w
                                         }, c || (n.currentPassword = d), e.next = 8, A(n).unwrap();
                                     case 8:
-                                        p(""), E(""), N(""), e.next = 16;
+                                        p(""), v(""), Z(""), e.next = 16;
                                         break;
                                     case 13:
                                         e.prev = 13, e.t0 = e.catch(3), console.error("Failed to change password:", e.t0);
@@ -1811,105 +2018,105 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    B = function(e) {
-                        E(e.target.value)
+                    M = function(e) {
+                        v(e.target.value)
                     },
-                    G = function(e) {
-                        N(e.target.value)
+                    Y = function(e) {
+                        Z(e.target.value)
                     },
                     H = function(e) {
                         p(e.target.value)
                     };
-                return a.useEffect((function() {
-                    S || "" === d && "" === w && "" === Z || O(!0)
-                }), [d, w, Z]), a.createElement(Ce.Z, {
-                    loading: I
-                }, a.createElement("div", {
+                return r.useEffect((function() {
+                    S || "" === d && "" === w && "" === k || O(!0)
+                }), [d, w, k]), r.createElement(Pe.Z, {
+                    loading: D
+                }, r.createElement("div", {
                     className: "center-panel"
-                }, a.createElement("form", {
-                    onSubmit: Y
-                }, R && a.createElement(_.Z, {
+                }, r.createElement("form", {
+                    onSubmit: G
+                }, R && r.createElement(B.Z, {
                     color: "warning"
-                }, a.createElement(r.$1, {
-                    icon: ve.lE
-                }), " An error occurred: ", (null == j || null === (t = j.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "Unknown error"), a.createElement(b.Z, null, a.createElement(x.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ke.lE
+                }), " An error occurred: ", (null == j || null === (t = j.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "Unknown error"), r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "right"
                     },
                     className: "mx-0"
-                }, a.createElement(r.$1, {
-                    icon: lt.by,
+                }, r.createElement(a.$1, {
+                    icon: st.by,
                     size: "2x"
-                })), a.createElement(x.Z, {
+                })), r.createElement(x.Z, {
                     xs: "10"
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     type: "password",
                     id: "newPassword",
                     name: "newPassword",
                     className: "form-control",
                     placeholder: "Please enter new password",
-                    onChange: B,
-                    onKeyUp: B
-                }), z && a.createElement(_.Z, {
+                    onChange: M,
+                    onKeyUp: M
+                }), z && r.createElement(B.Z, {
                     color: "warning"
-                }, a.createElement(r.$1, {
-                    icon: ve.lE
-                }), " ", z), F && a.createElement(_.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ke.lE
+                }), " ", z), F && r.createElement(B.Z, {
                     color: "success"
-                }, a.createElement(r.$1, {
-                    icon: ve.lE
-                }), " Your password has been changed!"))), a.createElement(x.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ke.lE
+                }), " Your password has been changed!"))), r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, a.createElement(ke.Z, {
-                    ok: S ? q : null
-                }))), V && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }, r.createElement(Te.Z, {
+                    ok: S ? L : null
+                }))), V && r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: {
                         size: 10,
                         offset: 1
                     }
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     type: "password",
                     id: "confirmNewPassword",
                     name: "confirmNewPassword",
                     className: "form-control",
                     placeholder: "Please confirm new password",
-                    onChange: G,
-                    onKeyUp: G
-                }), U && a.createElement(_.Z, {
+                    onChange: Y,
+                    onKeyUp: Y
+                }), U && r.createElement(B.Z, {
                     color: "warning"
-                }, a.createElement(r.$1, {
-                    icon: ve.lE
-                }), " ", U))), a.createElement(x.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ke.lE
+                }), " ", U))), r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, a.createElement(ke.Z, {
-                    ok: L
-                }))), $ && a.createElement(b.Z, null, a.createElement(x.Z, {
+                }, r.createElement(Te.Z, {
+                    ok: q
+                }))), _ && r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: "1",
                     style: {
                         textAlign: "right"
                     },
                     className: "mx-0"
-                }, a.createElement(r.$1, {
-                    icon: Ee.DD,
+                }, r.createElement(a.$1, {
+                    icon: xe.DD,
                     size: "2x"
-                })), a.createElement(x.Z, {
+                })), r.createElement(x.Z, {
                     xs: "10"
-                }, a.createElement(b.Z, {
+                }, r.createElement(b.Z, {
                     className: "mx-0"
-                }, a.createElement("input", {
+                }, r.createElement("input", {
                     type: "password",
                     id: "passwordPasswordVerify",
                     name: "passwordPasswordVerify",
@@ -1917,12 +2124,12 @@
                     placeholder: "Please confirm current password",
                     onChange: H,
                     onKeyUp: H
-                })))), a.createElement(b.Z, {
+                })))), r.createElement(b.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
-                }, a.createElement(x.Z, {
+                }, r.createElement(x.Z, {
                     xs: "4"
-                }, a.createElement("button", {
-                    disabled: !M,
+                }, r.createElement("button", {
+                    disabled: !$,
                     className: "btn btn-primary w-100",
                     id: "password-change-submit",
                     name: "name-change-submit",
@@ -1930,11 +2137,11 @@
                     type: "submit"
                 }, "Change Password"))))))
             };
-            var ct = n(42501),
-                st = n(67714);
-            const ut = function() {
+            var dt = n(42501),
+                pt = n(67714);
+            const ft = function() {
                 var e, t, n = (0, p.I0)(),
-                    l = (0, C.IB)().data,
+                    l = (0, S.IB)().data,
                     c = null == l || null === (e = l.presence) || void 0 === e ? void 0 : e.world,
                     s = (0, f.u4)({
                         userId: null == l ? void 0 : l.id,
@@ -1946,23 +2153,23 @@
                     d = s.isError,
                     g = !(u || d),
                     w = (0, f.IO)(),
-                    E = (0, i.Z)(w, 2),
-                    v = E[0],
-                    y = E[1],
+                    v = (0, i.Z)(w, 2),
+                    E = v[0],
+                    y = v[1],
                     b = y.isLoading,
                     x = y.isError,
-                    Z = y.error,
-                    N = y.reset,
-                    k = a.useState(!1),
-                    S = (0, i.Z)(k, 2),
-                    O = S[0],
-                    T = S[1],
+                    k = y.error,
+                    Z = y.reset,
+                    N = r.useState(!1),
+                    C = (0, i.Z)(N, 2),
+                    O = C[0],
+                    T = C[1],
                     P = function() {
                         var e = (0, o.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, v({
+                                        return e.prev = 0, e.next = 3, E({
                                             userId: l.id
                                         }).unwrap();
                                     case 3:
@@ -1973,7 +2180,7 @@
                                     case 8:
                                         T(!1), n((0, h.d)({
                                             title: "All User Data Reset",
-                                            icon: st.iC,
+                                            icon: pt.iC,
                                             message: "Your user data has been reset in all worlds you've visited. Rejoin worlds for changes to take effect.",
                                             color: "success",
                                             timeout: 5e3
@@ -1991,56 +2198,56 @@
                         }
                     }(),
                     A = g ? "This action will reset your user data in all worlds you've visited except any world you're currently in. To reset that world's data, please exit it first, then go to \"Reset User Data\" in the world's details." : "This action will reset your user data in all worlds you've visited. Rejoin worlds for changes to take effect.";
-                return a.createElement(a.Fragment, null, a.createElement("p", null, "Reset your saved user data in all worlds you've visited (to reset a specific world's user data, visit that world's page)."), a.createElement(r.zx, {
+                return r.createElement(r.Fragment, null, r.createElement("p", null, "Reset your saved user data in all worlds you've visited (to reset a specific world's user data, visit that world's page)."), r.createElement(a.zx, {
                     type: "button",
                     onClick: function() {
                         T(!0)
                     },
                     danger: !0
-                }, a.createElement(r.$1, {
-                    icon: ct.faUserXmark
-                }), " Reset All User Data"), a.createElement(r.sm, {
+                }, r.createElement(a.$1, {
+                    icon: dt.faUserXmark
+                }), " Reset All User Data"), r.createElement(a.sm, {
                     headerText: "Reset User Data in All Worlds?",
                     confirmText: "Yes, Reset",
                     confirmCallback: P,
                     cancelText: "Cancel",
                     cancelCallback: function() {
-                        T(!1), N()
+                        T(!1), Z()
                     },
                     isOpen: O,
                     isLoading: b
-                }, a.createElement("p", null, A), a.createElement("p", null, "Are you sure you want to reset? This cannot be undone."), x && a.createElement(r.qX, {
+                }, r.createElement("p", null, A), r.createElement("p", null, "Are you sure you want to reset? This cannot be undone."), x && r.createElement(a.qX, {
                     type: "error",
                     title: "Failed to reset user data",
                     className: "my-2"
-                }, (null == Z || null === (t = Z.data) || void 0 === t ? void 0 : t.error.message) || "An unknown error occurred while resetting your user data.")))
+                }, (null == k || null === (t = k.data) || void 0 === t ? void 0 : t.error.message) || "An unknown error occurred while resetting your user data.")))
             };
-            var mt = n(21707);
-            var dt = (0, c.Z)("div", {
+            var ht = n(21707);
+            var gt = (0, c.Z)("div", {
                 target: "e1a02i090"
             })({
                 name: "1qck9b",
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
-            const pt = function(e) {
+            const wt = function(e) {
                 var t, n, l = e.user,
                     o = l || {},
                     c = o.hasSharedConnectionsOptOut,
                     s = o.hasDiscordFriendsOptOut,
-                    u = (0, a.useState)(null),
+                    u = (0, r.useState)(null),
                     m = (0, i.Z)(u, 2),
                     d = m[0],
                     p = m[1],
                     h = (0, f.PY)(),
                     g = (0, i.Z)(h, 2),
                     w = g[0],
-                    E = g[1],
-                    v = E.isError,
-                    y = E.error,
-                    N = (0, f.Ol)(),
-                    k = (0, i.Z)(N, 2),
-                    C = k[0],
-                    S = k[1],
+                    v = g[1],
+                    E = v.isError,
+                    y = v.error,
+                    Z = (0, f.Ol)(),
+                    N = (0, i.Z)(Z, 2),
+                    C = N[0],
+                    S = N[1],
                     O = S.isError,
                     T = S.error,
                     P = function() {
@@ -2050,31 +2257,31 @@
                             p("OneTrust not loaded. Disable your ad blocker and refresh the page to try again.")
                         }
                     };
-                (0, a.useEffect)((function() {
+                (0, r.useEffect)((function() {
                     return window.addEventListener("OneTrustGroupsUpdated", P),
                         function() {
                             window.removeEventListener("OneTrustGroupsUpdated", P)
                         }
                 }), []);
-                var A = v || O ? (null == y || null === (t = y.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || (null == T || null === (n = T.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "An error occurred while updating your shared connections setting." : d;
-                return a.createElement("div", {
+                var A = E || O ? (null == y || null === (t = y.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || (null == T || null === (n = T.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "An error occurred while updating your shared connections setting." : d;
+                return r.createElement("div", {
                     className: "center-panel"
-                }, a.createElement(b.Z, null, a.createElement(x.Z, {
+                }, r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: "10",
                     className: "mx-0 mb-2"
-                }, "Manage your cookie settings and consent preferences.")), A ? a.createElement(_.Z, {
+                }, "Manage your cookie settings and consent preferences.")), A ? r.createElement(B.Z, {
                     className: "warning"
-                }, a.createElement(r.$1, {
-                    icon: mt.e7
-                }), " ", d) : a.createElement(b.Z, null, a.createElement(x.Z, {
+                }, r.createElement(a.$1, {
+                    icon: ht.e7
+                }), " ", d) : r.createElement(b.Z, null, r.createElement(x.Z, {
                     xs: "10"
-                }, a.createElement(Z.Z, {
+                }, r.createElement(k.Z, {
                     type: "button",
                     color: "primary",
                     onClick: P
-                }, "Change Cookie and Consent Settings"))), a.createElement(dt, {
+                }, "Change Cookie and Consent Settings"))), r.createElement(gt, {
                     className: "mt-3"
-                }, a.createElement(Y.Z, {
+                }, r.createElement(W.Z, {
                     label: "Show Mutual Friend and Group Connections",
                     defaultChecked: !c,
                     onChangeCallback: function() {
@@ -2083,9 +2290,9 @@
                             userId: l.id
                         })
                     }
-                })), a.createElement(dt, {
+                })), r.createElement(gt, {
                     className: "mt-3"
-                }, a.createElement(Y.Z, {
+                }, r.createElement(W.Z, {
                     label: "Show Discord Friend Connections",
                     defaultChecked: !s,
                     onChangeCallback: function() {
@@ -2096,37 +2303,37 @@
                     }
                 })))
             };
-            var ft = n(15671),
-                ht = n(43144),
-                gt = n(97326),
-                wt = n(60136),
-                Et = n(82963),
-                vt = n(61120),
-                yt = n(85020),
-                bt = n(65394),
-                xt = n(2909),
-                Zt = n(32966),
-                Nt = n(50906),
-                kt = n(45432),
-                Ct = n(74855),
-                St = n(53637),
-                Ot = n(12611),
-                Tt = n(37549),
-                Pt = n(9669),
-                At = n.n(Pt);
+            var vt = n(15671),
+                Et = n(43144),
+                yt = n(97326),
+                bt = n(60136),
+                xt = n(82963),
+                kt = n(61120),
+                Zt = n(85020),
+                Nt = n(65394),
+                Ct = n(2909),
+                St = n(32966),
+                Ot = n(50906),
+                Tt = n(45432),
+                Pt = n(74855),
+                At = n(53637),
+                It = n(12611),
+                Dt = n(37549),
+                Ft = n(9669),
+                Rt = n.n(Ft);
 
-            function Dt(e, t) {
+            function jt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(e);
-                    t && (a = a.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, a)
+                    }))), n.push.apply(n, r)
                 }
                 return n
             }
 
-            function It(e) {
+            function zt(e) {
                 var t = function() {
                     if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
                     if (Reflect.construct.sham) return !1;
@@ -2138,20 +2345,20 @@
                     }
                 }();
                 return function() {
-                    var n, a = (0, vt.Z)(e);
+                    var n, r = (0, kt.Z)(e);
                     if (t) {
-                        var r = (0, vt.Z)(this).constructor;
-                        n = Reflect.construct(a, arguments, r)
-                    } else n = a.apply(this, arguments);
-                    return (0, Et.Z)(this, n)
+                        var a = (0, kt.Z)(this).constructor;
+                        n = Reflect.construct(r, arguments, a)
+                    } else n = r.apply(this, arguments);
+                    return (0, xt.Z)(this, n)
                 }
             }
-            var Ft = "https://docs.vrchat.com/docs/setup-2fa",
-                Rt = function(e) {
+            var Ut = "https://docs.vrchat.com/docs/setup-2fa",
+                Lt = function(e) {
                     return "".concat(e.substr(0, 4), "-").concat(e.substr(4, 8))
                 },
-                jt = "otpDownload",
-                zt = {
+                qt = "otpDownload",
+                Vt = {
                     code: "",
                     isCodeReady: !1,
                     isPreviousSubmissionRelevant: !1,
@@ -2161,31 +2368,31 @@
                     forgetOtpTimeout: null,
                     step: 0
                 },
-                Ut = function(e) {
-                    (0, wt.Z)(n, e);
-                    var t = It(n);
+                _t = function(e) {
+                    (0, bt.Z)(n, e);
+                    var t = zt(n);
 
                     function n(e) {
-                        var r;
-                        return (0, ft.Z)(this, n), r = t.call(this, e), (0, H.Z)((0, gt.Z)(r), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
-                            var t, n, a;
+                        var a;
+                        return (0, vt.Z)(this, n), a = t.call(this, e), (0, Q.Z)((0, yt.Z)(a), "getOneTimePasswords", (0, o.Z)(m().mark((function e() {
+                            var t, n, r;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return clearTimeout(r.state.forgetOtpTimeout), t = setTimeout((function() {
-                                            r.setState({
+                                        return clearTimeout(a.state.forgetOtpTimeout), t = setTimeout((function() {
+                                            a.setState({
                                                 isOneTimePasswordsShown: !1
-                                            }), r.props.dispatch({
+                                            }), a.props.dispatch({
                                                 type: "TWOFACTORAUTH_FORGET_OTP"
                                             })
-                                        }), 6e4), r.setState({
+                                        }), 6e4), a.setState({
                                             forgetOtpTimeout: t
-                                        }), e.prev = 3, e.next = 6, r.props.dispatch({
+                                        }), e.prev = 3, e.next = 6, a.props.dispatch({
                                             type: "TWOFACTORAUTH_GET_OTP",
-                                            payload: At().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
+                                            payload: Rt().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
                                         });
                                     case 6:
-                                        a = e.sent, (null === (n = a.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && r.props.router.navigate("/home/twofactorauth", {
+                                        r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
                                             state: {
                                                 redirectTo: "/home/profile"
                                             }
@@ -2200,18 +2407,18 @@
                             }), e, null, [
                                 [3, 10]
                             ])
-                        })))), (0, H.Z)((0, gt.Z)(r), "disable", function() {
+                        })))), (0, Q.Z)((0, yt.Z)(a), "disable", function() {
                             var e = (0, o.Z)(m().mark((function e(t) {
-                                var n, a;
+                                var n, r;
                                 return m().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return t.preventDefault(), e.prev = 1, e.next = 4, r.props.dispatch({
+                                            return t.preventDefault(), e.prev = 1, e.next = 4, a.props.dispatch({
                                                 type: "TWOFACTORAUTH_REMOVE",
-                                                payload: At().delete(window.apiUrl("/api/1/auth/twofactorauth"))
+                                                payload: Rt().delete(window.apiUrl("/api/1/auth/twofactorauth"))
                                             });
                                         case 4:
-                                            a = e.sent, (null === (n = a.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && r.props.router.navigate("/home/twofactorauth", {
+                                            r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
                                                 state: {
                                                     redirectTo: "/home/profile"
                                                 }
@@ -2230,19 +2437,19 @@
                             return function(t) {
                                 return e.apply(this, arguments)
                             }
-                        }()), r.state = function(e) {
+                        }()), a.state = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? Dt(Object(n), !0).forEach((function(t) {
-                                    (0, H.Z)(e, t, n[t])
-                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Dt(Object(n)).forEach((function(t) {
+                                t % 2 ? jt(Object(n), !0).forEach((function(t) {
+                                    (0, Q.Z)(e, t, n[t])
+                                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : jt(Object(n)).forEach((function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 }))
                             }
                             return e
-                        }({}, zt), r.ref = a.createRef(), r.enable = r.enable.bind((0, gt.Z)(r)), r.renderSetup = r.renderSetup.bind((0, gt.Z)(r)), r.renderStatus = r.renderStatus.bind((0, gt.Z)(r)), r.handleChangeVerifyCode = r.handleChangeVerifyCode.bind((0, gt.Z)(r)), r.handleVerifyPendingSecret = r.handleVerifyPendingSecret.bind((0, gt.Z)(r)), r.isSettingUp = r.isSettingUp.bind((0, gt.Z)(r)), r.cancelSecret = r.cancelSecret.bind((0, gt.Z)(r)), r.showTextKey = r.showTextKey.bind((0, gt.Z)(r)), r.goToStep0 = r.goToStep0.bind((0, gt.Z)(r)), r.goToStep1 = r.goToStep1.bind((0, gt.Z)(r)), r.goToStep2 = r.goToStep2.bind((0, gt.Z)(r)), r.toggleOneTimePasswordsShown = r.toggleOneTimePasswordsShown.bind((0, gt.Z)(r)), r.hasOneTimePasswords = r.hasOneTimePasswords.bind((0, gt.Z)(r)), r.getOneTimePasswordHref = r.getOneTimePasswordHref.bind((0, gt.Z)(r)), r.downloadOneTimePasswords = r.downloadOneTimePasswords.bind((0, gt.Z)(r)), r.triggerOtpDownloadLink = r.triggerOtpDownloadLink.bind((0, gt.Z)(r)), r
+                        }({}, Vt), a.ref = r.createRef(), a.enable = a.enable.bind((0, yt.Z)(a)), a.renderSetup = a.renderSetup.bind((0, yt.Z)(a)), a.renderStatus = a.renderStatus.bind((0, yt.Z)(a)), a.handleChangeVerifyCode = a.handleChangeVerifyCode.bind((0, yt.Z)(a)), a.handleVerifyPendingSecret = a.handleVerifyPendingSecret.bind((0, yt.Z)(a)), a.isSettingUp = a.isSettingUp.bind((0, yt.Z)(a)), a.cancelSecret = a.cancelSecret.bind((0, yt.Z)(a)), a.showTextKey = a.showTextKey.bind((0, yt.Z)(a)), a.goToStep0 = a.goToStep0.bind((0, yt.Z)(a)), a.goToStep1 = a.goToStep1.bind((0, yt.Z)(a)), a.goToStep2 = a.goToStep2.bind((0, yt.Z)(a)), a.toggleOneTimePasswordsShown = a.toggleOneTimePasswordsShown.bind((0, yt.Z)(a)), a.hasOneTimePasswords = a.hasOneTimePasswords.bind((0, yt.Z)(a)), a.getOneTimePasswordHref = a.getOneTimePasswordHref.bind((0, yt.Z)(a)), a.downloadOneTimePasswords = a.downloadOneTimePasswords.bind((0, yt.Z)(a)), a.triggerOtpDownloadLink = a.triggerOtpDownloadLink.bind((0, yt.Z)(a)), a
                     }
-                    return (0, ht.Z)(n, [{
+                    return (0, Et.Z)(n, [{
                         key: "componentDidUpdate",
                         value: function() {
                             this.state.isWaitingToDownloadOtp && this.hasOneTimePasswords() && (this.triggerOtpDownloadLink(), this.setState({
@@ -2273,7 +2480,7 @@
                                 code: this.state.code
                             }, n = t.code, {
                                 type: "TWOFACTORAUTH_VERIFY_PENDING_SECRET",
-                                payload: At().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
+                                payload: Rt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
                                     code: n
                                 })
                             }))), e.preventDefault()
@@ -2286,7 +2493,7 @@
                             return this.hasOneTimePasswords() && (t = "".concat("VRChat Two-Factor Authentication recovery codes\n===============================================\n\nYou can use these to log in, in case you lose access to your authenticator app codes. \n\nYou can only use each recovery code once.\n\nKeep these safe and secure! Printing them out is a very good idea.\n\n").concat(e.otp.filter((function(e) {
                                 return !e.used
                             })).map((function(e) {
-                                return "".concat(Rt(e.code), "\n")
+                                return "".concat(Lt(e.code), "\n")
                             })).join(""))), "data:text/plain;charset=utf-8,".concat(encodeURIComponent(t))
                         }
                     }, {
@@ -2297,17 +2504,17 @@
                     }, {
                         key: "enable",
                         value: function(e) {
-                            e.preventDefault(), this.setState(zt), this.props.dispatch({
+                            e.preventDefault(), this.setState(Vt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_GET_PENDING_SECRET",
-                                payload: At().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: Rt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
                         key: "cancelSecret",
                         value: function(e) {
-                            e.preventDefault(), this.setState(zt), this.props.dispatch({
+                            e.preventDefault(), this.setState(Vt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_REMOVE_PENDING_SECRET",
-                                payload: At().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: Rt().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
@@ -2363,7 +2570,7 @@
                     }, {
                         key: "triggerOtpDownloadLink",
                         value: function() {
-                            document.getElementById(jt).click(), this.setState({
+                            document.getElementById(qt).click(), this.setState({
                                 isWaitingToDownloadOtp: !1
                             })
                         }
@@ -2377,46 +2584,46 @@
                                 o = function() {
                                     if (n) {
                                         var t = e.getOneTimePasswordHref();
-                                        return a.createElement("div", null, a.createElement("div", null, a.createElement("p", null, a.createElement(r.$1, {
-                                            icon: kt.a3,
+                                        return r.createElement("div", null, r.createElement("div", null, r.createElement("p", null, r.createElement(a.$1, {
+                                            icon: Tt.a3,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
                                             }
-                                        }), "You are protecting your account with an additional login step.", " ", a.createElement("a", {
-                                            href: Ft,
+                                        }), "You are protecting your account with an additional login step.", " ", r.createElement("a", {
+                                            href: Ut,
                                             target: "_blank",
                                             rel: "noreferrer"
-                                        }, "Help")), a.createElement("p", null, a.createElement(Ot.Z, {
+                                        }, "Help")), r.createElement("p", null, r.createElement(It.Z, {
                                             onClick: e.disable,
                                             color: "primary",
                                             loading: l.isAwaitingRemove
-                                        }, "Disable"))), a.createElement("div", null, a.createElement("p", null, a.createElement(r.$1, {
-                                            icon: mt.e7,
+                                        }, "Disable"))), r.createElement("div", null, r.createElement("p", null, r.createElement(a.$1, {
+                                            icon: ht.e7,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
                                             }
-                                        }), "If you ever lose access to your authenticator app, you'll have trouble logging in. But you can use recovery codes instead. Be careful: you can only use each recovery code once!"), a.createElement("p", null, "We", " ", a.createElement("strong", null, a.createElement("em", null, "strongly")), " ", "recommend you download these codes and print them out.")), l.isOtpRejected && a.createElement(_.Z, {
+                                        }), "If you ever lose access to your authenticator app, you'll have trouble logging in. But you can use recovery codes instead. Be careful: you can only use each recovery code once!"), r.createElement("p", null, "We", " ", r.createElement("strong", null, r.createElement("em", null, "strongly")), " ", "recommend you download these codes and print them out.")), l.isOtpRejected && r.createElement(B.Z, {
                                             color: "warning"
-                                        }, a.createElement(r.$1, {
-                                            icon: mt.e7
-                                        }), " Something went wrong downloading recovery codes."), a.createElement("div", null, a.createElement("p", null, a.createElement("span", {
+                                        }, r.createElement(a.$1, {
+                                            icon: ht.e7
+                                        }), " Something went wrong downloading recovery codes."), r.createElement("div", null, r.createElement("p", null, r.createElement("span", {
                                             style: {
                                                 marginRight: "0.5em"
                                             }
-                                        }, a.createElement(Ot.Z, {
+                                        }, r.createElement(It.Z, {
                                             onClick: e.toggleOneTimePasswordsShown,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
-                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), a.createElement("span", null, a.createElement(Ot.Z, {
+                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), r.createElement("span", null, r.createElement(It.Z, {
                                             onClick: e.downloadOneTimePasswords,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
-                                        }, "Download recovery codes")), a.createElement("a", {
-                                            id: jt,
+                                        }, "Download recovery codes")), r.createElement("a", {
+                                            id: qt,
                                             href: t,
                                             download: "VRChatRecovery.txt",
                                             style: {
@@ -2424,24 +2631,24 @@
                                             }
                                         }, "Download recovery link"))))
                                     }
-                                    return a.createElement("div", null, a.createElement("p", null, "Enable two-factor authentication to protect your account with an additional login step.", " ", a.createElement("a", {
-                                        href: Ft,
+                                    return r.createElement("div", null, r.createElement("p", null, "Enable two-factor authentication to protect your account with an additional login step.", " ", r.createElement("a", {
+                                        href: Ut,
                                         target: "_blank",
                                         rel: "noreferrer"
-                                    }, "Learn more")), a.createElement("p", null, a.createElement(Ot.Z, {
+                                    }, "Learn more")), r.createElement("p", null, r.createElement(It.Z, {
                                         onClick: e.enable,
                                         color: "primary",
                                         loading: l.isAwaitingPendingSecret
                                     }, "Enable")))
                                 };
-                            return a.createElement("div", null, o(), e.state.isOneTimePasswordsShown && e.hasOneTimePasswords() ? a.createElement("div", null, a.createElement("ol", null, l.otp.map((function(e) {
-                                return a.createElement("li", {
+                            return r.createElement("div", null, o(), e.state.isOneTimePasswordsShown && e.hasOneTimePasswords() ? r.createElement("div", null, r.createElement("ol", null, l.otp.map((function(e) {
+                                return r.createElement("li", {
                                     key: "otp_code_".concat(e.code)
-                                }, a.createElement("span", {
+                                }, r.createElement("span", {
                                     style: {
                                         textDecoration: e.used ? "line-through" : "none"
                                     }
-                                }, Rt(e.code)))
+                                }, Lt(e.code)))
                             })))) : null)
                         }
                     }, {
@@ -2452,72 +2659,72 @@
                                 o = n.isAwaitingPendingSecret || n.isRemovingPendingSecret,
                                 i = n.isVerificationRejected && this.state.isPreviousSubmissionRelevant,
                                 c = (e = n.pendingSecret, e.match(/.{1,4}/g).join(" ")).toLowerCase();
-                            return a.createElement(Ce.Z, {
+                            return r.createElement(Pe.Z, {
                                 loading: o
-                            }, a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("h4", null, "Setup")), a.createElement(x.Z, {
+                            }, r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement("h4", null, "Setup")), r.createElement(x.Z, {
                                 className: "text-end"
-                            }, a.createElement("a", {
+                            }, r.createElement("a", {
                                 style: {
                                     marginRight: "1em"
                                 },
                                 target: "_blank",
-                                href: Ft,
+                                href: Ut,
                                 rel: "noreferrer"
-                            }, "Help"), a.createElement(Z.Z, {
+                            }, "Help"), r.createElement(k.Z, {
                                 className: "btn",
                                 onClick: this.cancelSecret
-                            }, a.createElement(r.$1, {
-                                icon: ce.NB
-                            }), " Cancel"))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(St.Z, {
+                            }, r.createElement(a.$1, {
+                                icon: de.NB
+                            }), " Cancel"))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement("hr", null))), r.createElement(b.Z, null, r.createElement(At.Z, {
                                 hidden: 0 !== this.state.step
-                            }, a.createElement(b.Z, null, a.createElement(x.Z, {
+                            }, r.createElement(b.Z, null, r.createElement(x.Z, {
                                 classname: "tw-flex"
-                            }, a.createElement(b.Z, null, a.createElement("div", {
+                            }, r.createElement(b.Z, null, r.createElement("div", {
                                 className: "tw-flex-[1_0_140px] tw-w-auto"
-                            }, a.createElement("p", null, a.createElement("b", null, "Step 1"), ": Install an authenticator app."), a.createElement("p", null, "You can use any TOTP authenticator app you like, but if you're new to this some good options include", " ", a.createElement("a", {
+                            }, r.createElement("p", null, r.createElement("b", null, "Step 1"), ": Install an authenticator app."), r.createElement("p", null, "You can use any TOTP authenticator app you like, but if you're new to this some good options include", " ", r.createElement("a", {
                                 href: "https://bitwarden.com/download/#bitwarden-authenticator-mobile",
                                 target: "_blank",
                                 rel: "noreferrer"
-                            }, "Bitwarden Authenticator"), ", ", a.createElement("a", {
+                            }, "Bitwarden Authenticator"), ", ", r.createElement("a", {
                                 href: "https://authy.com/download/",
                                 target: "_blank",
                                 rel: "noreferrer"
-                            }, "Authy"), ", ", a.createElement("a", {
+                            }, "Authy"), ", ", r.createElement("a", {
                                 href: "https://getaegis.app/",
                                 target: "_blank",
                                 rel: "noreferrer"
-                            }, "Aegis Authenticator"), " ", "for Android", ", ", "or", " ", a.createElement("a", {
+                            }, "Aegis Authenticator"), " ", "for Android", ", ", "or", " ", r.createElement("a", {
                                 href: "https://cooperrs.de/otpauth.html",
                                 target: "_blank",
                                 rel: "noreferrer"
-                            }, "OTP Auth"), " ", "for iOS.")), a.createElement("div", {
+                            }, "OTP Auth"), " ", "for iOS.")), r.createElement("div", {
                                 className: "tw-hidden xs:tw-block tw-flex-none tw-w-auto"
-                            }, a.createElement(r.$1, {
-                                icon: Nt.eF,
+                            }, r.createElement(a.$1, {
+                                icon: Ot.eF,
                                 size: "4x",
                                 className: "tw-mr-1"
-                            }), a.createElement(r.$1, {
-                                icon: Zt.D_,
+                            }), r.createElement(a.$1, {
+                                icon: St.D_,
                                 size: "4x"
-                            }))))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, {
+                            }))))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement("hr", null))), r.createElement(b.Z, null, r.createElement(x.Z, {
                                 className: "text-end"
-                            }, a.createElement(Z.Z, {
+                            }, r.createElement(k.Z, {
                                 color: "primary",
                                 onClick: this.goToStep1
-                            }, "Next ", a.createElement(r.$1, {
-                                icon: bt._t
-                            }))))), a.createElement(St.Z, {
+                            }, "Next ", r.createElement(a.$1, {
+                                icon: Nt._t
+                            }))))), r.createElement(At.Z, {
                                 hidden: 1 !== this.state.step
-                            }, a.createElement(b.Z, null, a.createElement(x.Z, {
+                            }, r.createElement(b.Z, null, r.createElement(x.Z, {
                                 xs: {
                                     size: "7"
                                 }
-                            }, a.createElement("p", null, a.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), a.createElement("p", null, "If you can't scan the code,", " ", a.createElement(Lt, {
+                            }, r.createElement("p", null, r.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), r.createElement("p", null, "If you can't scan the code,", " ", r.createElement(Gt, {
                                 type: "button",
                                 onClick: this.showTextKey
-                            }, "enter the key manually"), "."), a.createElement("div", {
+                            }, "enter the key manually"), "."), r.createElement("div", {
                                 hidden: !this.state.isTextKeyShown
-                            }, a.createElement("p", null, a.createElement("textarea", {
+                            }, r.createElement("p", null, r.createElement("textarea", {
                                 id: "textKey",
                                 cols: "30",
                                 rows: "3",
@@ -2531,52 +2738,52 @@
                                 },
                                 readOnly: !0,
                                 className: "text-monospace"
-                            }), a.createElement(Ct.CopyToClipboard, {
+                            }), r.createElement(Pt.CopyToClipboard, {
                                 text: c
-                            }, a.createElement(Z.Z, {
+                            }, r.createElement(k.Z, {
                                 style: {
                                     verticalAlign: "top"
                                 }
-                            }, a.createElement(r.$1, {
-                                icon: xt.kZ
-                            }), " Copy"))))), a.createElement(x.Z, {
+                            }, r.createElement(a.$1, {
+                                icon: Ct.kZ
+                            }), " Copy"))))), r.createElement(x.Z, {
                                 xs: {
                                     size: "5"
                                 },
                                 className: "text-end"
-                            }, a.createElement("p", null, a.createElement("img", {
+                            }, r.createElement("p", null, r.createElement("img", {
                                 className: "img-fluid",
                                 src: n.pendingSecretQrCodeUrl,
                                 alt: "Two-Factor Authentication Secret: ".concat(c)
-                            })))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement(Z.Z, {
+                            })))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement("hr", null))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement(k.Z, {
                                 onClick: this.goToStep0
-                            }, a.createElement(r.$1, {
-                                icon: yt.A3
-                            }), " Previous")), a.createElement(x.Z, {
+                            }, r.createElement(a.$1, {
+                                icon: Zt.A3
+                            }), " Previous")), r.createElement(x.Z, {
                                 className: "text-end"
-                            }, a.createElement(Z.Z, {
+                            }, r.createElement(k.Z, {
                                 color: "primary",
                                 onClick: this.goToStep2
-                            }, "Next ", a.createElement(r.$1, {
-                                icon: bt._t
-                            }))))), a.createElement(St.Z, {
+                            }, "Next ", r.createElement(a.$1, {
+                                icon: Nt._t
+                            }))))), r.createElement(At.Z, {
                                 hidden: 2 !== this.state.step
-                            }, a.createElement(b.Z, null, a.createElement(x.Z, {
+                            }, r.createElement(b.Z, null, r.createElement(x.Z, {
                                 xs: {
                                     size: "7"
                                 }
-                            }, a.createElement("p", null, a.createElement("b", null, "Step 3"), ": Find the new entry in your authenticator app, and enter the six-digit code.")), a.createElement(x.Z, {
+                            }, r.createElement("p", null, r.createElement("b", null, "Step 3"), ": Find the new entry in your authenticator app, and enter the six-digit code.")), r.createElement(x.Z, {
                                 xs: {
                                     size: "5"
                                 },
                                 className: "text-end"
-                            }, a.createElement("div", null, i && a.createElement(_.Z, {
+                            }, r.createElement("div", null, i && r.createElement(B.Z, {
                                 color: "warning"
-                            }, a.createElement(r.$1, {
-                                icon: mt.e7
-                            }), " That code didn't work."), a.createElement("form", {
+                            }, r.createElement(a.$1, {
+                                icon: ht.e7
+                            }), " That code didn't work."), r.createElement("form", {
                                 onSubmit: this.handleVerifyPendingSecret
-                            }, a.createElement("input", {
+                            }, r.createElement("input", {
                                 type: "text",
                                 value: (t = this.state.code, function(e) {
                                     return ("string" == typeof e || e instanceof String) && e.length > 3 ? "".concat(e.substr(0, 3), " ").concat(e.substr(3, 3)) : e
@@ -2586,77 +2793,77 @@
                                 style: {
                                     marginRight: "0.5em"
                                 }
-                            }), a.createElement(Ot.Z, {
+                            }), r.createElement(It.Z, {
                                 disabled: !l,
                                 color: "primary",
                                 loading: n.isAwaitingPendingSecretVerification
-                            }, "Verify"))))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement("hr", null))), a.createElement(b.Z, null, a.createElement(x.Z, null, a.createElement(Z.Z, {
+                            }, "Verify"))))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement("hr", null))), r.createElement(b.Z, null, r.createElement(x.Z, null, r.createElement(k.Z, {
                                 onClick: this.goToStep1
-                            }, a.createElement(r.$1, {
-                                icon: yt.A3
+                            }, r.createElement(a.$1, {
+                                icon: Zt.A3
                             }), " Previous"))))))
                         }
                     }, {
                         key: "render",
                         value: function() {
                             var e = this.isSettingUp() ? this.renderSetup : this.renderStatus;
-                            return a.createElement("div", {
+                            return r.createElement("div", {
                                 ref: this.ref
                             }, e())
                         }
                     }]), n
-                }(a.Component);
-            const qt = (0, Tt.Z)((0, p.$j)((function(e) {
+                }(r.Component);
+            const $t = (0, Dt.Z)((0, p.$j)((function(e) {
                 return {
                     twoFactorAuthEnabled: e.currentUser.databaseUser.twoFactorAuthEnabled,
                     twoFactorAuth: e.twoFactorAuth
                 }
-            }))(Ut));
-            var Lt = (0, c.Z)("button", {
+            }))(_t));
+            var Gt = (0, c.Z)("button", {
                 target: "e8g46ds0"
             })({
                 name: "9xa7nk",
                 styles: "background-color:transparent;border:none;color:rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));padding:0;&:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb);text-decoration:underline;}"
             });
-            const Vt = function() {
+            const Mt = function() {
                 var e = (0, l.Tu)().user;
-                return a.createElement("div", null, a.createElement(r.$4, null, "Account Settings"), a.createElement("h2", null, "Account Settings"), a.createElement(r.oI, null, a.createElement("h4", null, "Change Display Name")), a.createElement(r.Ao, {
+                return r.createElement("div", null, r.createElement(a.$4, null, "Account Settings"), r.createElement("h2", null, "Account Settings"), r.createElement(a.oI, null, r.createElement("h4", null, "Change Display Name")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(rt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Change Email")), a.createElement(r.Ao, {
+                }, r.createElement(ct, null)), r.createElement(a.oI, null, r.createElement("h4", null, "Change Email")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(we.Z, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Change Password")), a.createElement(r.Ao, {
+                }, r.createElement(be.Z, null)), r.createElement(a.oI, null, r.createElement("h4", null, "Change Password")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(it, {
+                }, r.createElement(mt, {
                     user: e
-                })), a.createElement(r.oI, null, a.createElement("h4", null, "Two-factor authentication")), a.createElement(r.Ao, {
+                })), r.createElement(a.oI, null, r.createElement("h4", null, "Two-factor authentication")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(qt, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Account Linking")), a.createElement(r.Ao, {
+                }, r.createElement($t, null)), r.createElement(a.oI, null, r.createElement("h4", null, "Account Linking")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(D, {
+                }, r.createElement(j, {
                     user: e
-                })), a.createElement(r.oI, null, a.createElement("h4", null, "Privacy")), a.createElement(r.Ao, {
+                })), r.createElement(a.oI, null, r.createElement("h4", null, "Privacy")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(pt, {
+                }, r.createElement(wt, {
                     user: e
-                })), a.createElement(r.oI, null, a.createElement("h4", null, "Age Verification")), a.createElement(r.Ao, {
+                })), r.createElement(a.oI, null, r.createElement("h4", null, "Age Verification")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(L, null)), a.createElement(r.oI, null, a.createElement("h4", null, "Copyright")), a.createElement(r.Ao, {
+                }, r.createElement(G, null)), r.createElement(a.oI, null, r.createElement("h4", null, "Copyright")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(ge, null)), !(null != e && e.hideContentFilterSettings) && a.createElement(a.Fragment, null, a.createElement(r.oI, null, a.createElement("h4", null, "Content Gating")), a.createElement(r.Ao, {
+                }, r.createElement(ye, null)), !(null != e && e.hideContentFilterSettings) && r.createElement(r.Fragment, null, r.createElement(a.oI, null, r.createElement("h4", null, "Content Gating")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(G, null))), a.createElement(r.oI, null, a.createElement("h4", null, "User Data")), a.createElement(r.Ao, {
+                }, r.createElement(X, null))), r.createElement(a.oI, null, r.createElement("h4", null, "User Data")), r.createElement(a.Ao, {
                     className: "mb-2"
-                }, a.createElement(ut, null)), a.createElement(r.l8, {
+                }, r.createElement(ft, null)), r.createElement(a.l8, {
                     className: "mb-2"
-                }, a.createElement(r.oI, null, a.createElement("h4", null, "Danger Zone")), a.createElement(r.Ao, null, a.createElement(g, null))))
+                }, r.createElement(a.oI, null, r.createElement("h4", null, "Danger Zone")), r.createElement(a.Ao, null, r.createElement(g, null))))
             }
         },
         65578: (e, t, n) => {
             n.d(t, {
-                Z: () => N
+                Z: () => Z
             });
-            var a = n(54546),
-                r = n(84176),
+            var r = n(54546),
+                a = n(84176),
                 l = n(56811),
                 o = n(92332),
                 i = n(68055),
@@ -2670,78 +2877,78 @@
                 h = n(34698),
                 g = n(83868),
                 w = n.n(g),
-                E = n(83807),
-                v = n(22202),
+                v = n(83807),
+                E = n(22202),
                 y = n(62437),
                 b = n(96985),
                 x = n(8860),
-                Z = n(18461);
-            const N = function() {
-                var e = (0, v.IB)().data,
+                k = n(18461);
+            const Z = function() {
+                var e = (0, E.IB)().data,
                     t = (0, m.useState)(""),
-                    n = (0, a.Z)(t, 2),
+                    n = (0, r.Z)(t, 2),
                     g = n[0],
-                    N = n[1],
-                    k = (0, m.useState)(""),
-                    C = (0, a.Z)(k, 2),
+                    Z = n[1],
+                    N = (0, m.useState)(""),
+                    C = (0, r.Z)(N, 2),
                     S = C[0],
                     O = C[1],
                     T = (0, m.useState)(""),
-                    P = (0, a.Z)(T, 2),
+                    P = (0, r.Z)(T, 2),
                     A = P[0],
-                    D = P[1],
-                    I = (0, E.Nr)(g),
+                    I = P[1],
+                    D = (0, v.Nr)(g),
                     F = (0, y.X6)(),
-                    R = (0, a.Z)(F, 2),
+                    R = (0, r.Z)(F, 2),
                     j = R[0],
                     z = R[1],
                     U = z.isFetching,
-                    q = z.isError,
-                    L = z.isSuccess,
+                    L = z.isError,
+                    q = z.isSuccess,
                     V = z.error,
-                    $ = z.originalArgs,
-                    _ = (0, y.n_)(),
-                    M = (0, a.Z)(_, 2),
-                    Y = M[0],
-                    B = M[1],
-                    G = B.isLoading,
-                    H = B.isError,
-                    W = B.error,
-                    K = (0, v.Fe)(),
-                    X = (0, a.Z)(K, 2),
+                    _ = z.originalArgs,
+                    $ = (0, y.n_)(),
+                    G = (0, r.Z)($, 2),
+                    M = G[0],
+                    Y = G[1],
+                    B = Y.isLoading,
+                    H = Y.isError,
+                    W = Y.error,
+                    K = (0, E.Fe)(),
+                    X = (0, r.Z)(K, 2),
                     Q = X[0],
                     J = X[1],
                     ee = J.isFetching,
                     te = J.isError,
                     ne = J.error,
-                    ae = J.isSuccess,
-                    re = (0, y.SO)({
-                        email: I,
+                    re = J.isSuccess,
+                    ae = (0, y.SO)({
+                        email: D,
                         userId: null == e ? void 0 : e.id
                     }, {
-                        skip: "" === I || !1 === w()(I)
+                        skip: "" === D || !1 === w()(D)
                     }),
-                    le = re.data,
-                    oe = re.isFetching,
-                    ie = re.isSuccess,
-                    ce = re.originalArgs,
+                    le = ae.data,
+                    oe = ae.isFetching,
+                    ie = ae.isSuccess,
+                    ce = ae.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)((function() {
-                    O(""), D("")
+                    O(""), I("")
                 }), [g]);
                 var ue = (0, m.useMemo)((function() {
-                        return ie && !1 === le.userExists && w()(I) && "" !== I
-                    }), [le, I]),
+                        return ie && !1 === le.userExists && w()(D) && "" !== D
+                    }), [le, D]),
                     me = (0, m.useMemo)((function() {
-                        return "" !== S && S === I
-                    }), [S, I]),
+                        return "" !== S && S === D
+                    }), [S, D]),
                     de = (0, m.useMemo)((function() {
-                        if (!1 === w()(I) && "" !== I) return m.createElement(d.Z, {
+                        if (!1 === w()(D) && "" !== D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " That's an invalid email.");
-                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === I) return m.createElement(d.Z, {
+                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2751,8 +2958,8 @@
                         }, m.createElement(b.$1, {
                             icon: u.e7
                         }), " Failed to change news preference: ", W, ".");
-                        if (q && (null == $ ? void 0 : $.email) === I) {
-                            D("");
+                        if (L && (null == _ ? void 0 : _.email) === D) {
+                            I("");
                             var t = V.data.error.message;
                             return m.createElement(d.Z, {
                                 color: "warning"
@@ -2760,7 +2967,7 @@
                                 icon: u.e7
                             }), " Failed to change email: ", t)
                         }
-                        if (ue && "" !== S && S !== I) return m.createElement(d.Z, {
+                        if (ue && "" !== S && S !== D) return m.createElement(d.Z, {
                             color: "warning"
                         }, m.createElement(b.$1, {
                             icon: u.e7
@@ -2773,11 +2980,11 @@
                                 icon: u.e7
                             }), " Failed to resend verification email: ", n)
                         }
-                        return ae ? m.createElement(d.Z, {
+                        return re ? m.createElement(d.Z, {
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
-                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : L ? m.createElement(d.Z, {
+                        }), " Your verification email has been resent to ", null == e ? void 0 : e.obfuscatedPendingEmail) : q ? m.createElement(d.Z, {
                             color: "info"
                         }, m.createElement(b.$1, {
                             icon: s.sq
@@ -2786,21 +2993,21 @@
                         }, m.createElement(b.$1, {
                             icon: s.sq
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }), [ae, te, q, L, le, ie, S, I, e, H]),
+                    }), [re, te, L, q, le, ie, S, D, e, H]),
                     pe = (0, m.useMemo)((function() {
-                        return !se || L ? m.createElement("span", null, m.createElement(b.$1, {
+                        return !se || q ? m.createElement("span", null, m.createElement(b.$1, {
                             icon: c.XC
                         }), " Resend Verification") : m.createElement("span", null, m.createElement(b.$1, {
                             icon: i.LE,
                             color: "success"
                         }), " Email Verified")
-                    }), [se, L]),
+                    }), [se, q]),
                     fe = (0, m.useMemo)((function() {
                         return oe ? m.createElement(b.$1, {
                             icon: o.LM,
                             spin: !0,
                             size: "2x"
-                        }) : "" === I ? null : ue ? m.createElement(x.Z, {
+                        }) : "" === D ? null : ue ? m.createElement(x.Z, {
                             size: "2x",
                             ok: !0,
                             title: "This email is OK"
@@ -2809,7 +3016,7 @@
                             ok: !1,
                             title: "This email is not OK"
                         })
-                    }), [oe, I, ue]);
+                    }), [oe, D, ue]);
                 return m.createElement("form", null, m.createElement(p.Z, {
                     className: "align-items-center justify-content-center"
                 }, m.createElement(f.Z, {
@@ -2837,7 +3044,7 @@
                     autoComplete: "off",
                     name: "email",
                     onChange: function(e) {
-                        return N(e.target.value)
+                        return Z(e.target.value)
                     },
                     placeholder: null == e ? void 0 : e.obfuscatedEmail,
                     type: "text",
@@ -2883,7 +3090,7 @@
                     },
                     className: "mx-0"
                 }, m.createElement(b.$1, {
-                    icon: r.DD,
+                    icon: a.DD,
                     size: "2x"
                 })), m.createElement(f.Z, {
                     xs: "10"
@@ -2894,7 +3101,7 @@
                     className: "form-control",
                     name: "emailPasswordVerify",
                     onChange: function(e) {
-                        return D(e.target.value)
+                        return I(e.target.value)
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
@@ -2906,18 +3113,18 @@
                         size: 10,
                         offset: 1
                     }
-                }, m.createElement(Z.Z, {
+                }, m.createElement(k.Z, {
                     id: "subscribe",
                     checked: !(null != e && e.unsubscribe),
                     onChange: function(t) {
-                        return Y({
+                        return M({
                             userId: e.id,
                             subscribe: t.target.checked
                         })
                     },
                     label: "Keep me up to date with the awesome power of your emails",
                     htmlFor: "subscribe",
-                    disabled: G
+                    disabled: B
                 }))), m.createElement("hr", null), m.createElement(p.Z, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, m.createElement(f.Z, {
@@ -2926,7 +3133,7 @@
                     "aria-label": "resend email",
                     block: !0,
                     color: "primary",
-                    disabled: !(null != e && e.hasPendingEmail) && !L || ee,
+                    disabled: !(null != e && e.hasPendingEmail) && !q || ee,
                     onClick: function() {
                         return Q()
                     },
@@ -2943,7 +3150,7 @@
                     onClick: function(t) {
                         t.preventDefault(), j({
                             userId: null == e ? void 0 : e.id,
-                            email: I,
+                            email: D,
                             password: A
                         })
                     }
@@ -2953,11 +3160,11 @@
         79442: (e, t, n) => {
             n.d(t, {
                 HI: () => l,
-                MI: () => r,
+                MI: () => a,
                 W3: () => o,
                 nv: () => i
             });
-            var a = n(61509).S.injectEndpoints({
+            var r = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getAgeVerificationInquiryStatus: e.query({
@@ -2995,10 +3202,10 @@
                         }
                     }
                 }),
-                r = a.useGetAgeVerificationInquiryStatusQuery,
-                l = a.useGetAgeVerificationStatusQuery,
-                o = a.useSendGroupInquiryLinkMutation,
-                i = a.useSendInquiryLinkMutation
+                a = r.useGetAgeVerificationInquiryStatusQuery,
+                l = r.useGetAgeVerificationStatusQuery,
+                o = r.useSendGroupInquiryLinkMutation,
+                i = r.useSendInquiryLinkMutation
         },
         91557: (e, t, n) => {
             n.d(t, {
@@ -3007,16 +3214,16 @@
                 lw: () => s,
                 oR: () => c
             });
-            var a = n(4942),
-                r = n(61509);
+            var r = n(4942),
+                a = n(61509);
 
             function l(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var a = Object.getOwnPropertySymbols(e);
-                    t && (a = a.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, a)
+                    }))), n.push.apply(n, r)
                 }
                 return n
             }
@@ -3025,14 +3232,14 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? l(Object(n), !0).forEach((function(t) {
-                        (0, a.Z)(e, t, n[t])
+                        (0, r.Z)(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : l(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var i = r.S.injectEndpoints({
+            var i = a.S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getRestrictedContent: e.query({
@@ -3064,16 +3271,16 @@
                                 query: function(e) {
                                     var t = e.contentId,
                                         n = e.disputeInfo,
-                                        a = e.contentRestrictionId;
+                                        r = e.contentRestrictionId;
                                     return {
-                                        url: "/contentRestrictions/".concat(a, "/dispute"),
+                                        url: "/contentRestrictions/".concat(r, "/dispute"),
                                         method: "POST",
                                         body: o({
                                             contentId: t
                                         }, n)
                                     }
                                 },
-                                invalidatesTags: (0, r.T)((function(e) {
+                                invalidatesTags: (0, a.T)((function(e) {
                                     return [{
                                         type: "RestrictedContent",
                                         id: e.contentId
@@ -3092,7 +3299,7 @@
                                         }
                                     }
                                 },
-                                invalidatesTags: (0, r.T)((function(e) {
+                                invalidatesTags: (0, a.T)((function(e) {
                                     return [{
                                         type: "RestrictedContent",
                                         id: e.contentId
@@ -3109,30 +3316,30 @@
         },
         82470: (e, t, n) => {
             n.d(t, {
-                w: () => r
+                w: () => a
             });
-            var a = new Set(["password", "password1", "passw0rd", "69696969", "11111111", "111111111", "aaaaaaaa", "aaaaaaaaa", "fuckfuck", "pooppoop", "football", "welcome", "starwars", "trustno1", "jordan23", "iloveyou", "whatever", "princess", "sunshine", "adobe123", "photoshop", "baseball", "superman", "12345678", "123456789", "1234567890", "87654321", "987654321", "0987654321", "zaq1zaq1", "1qaz2wsx", "qwertyuiop", "18atcskd2w", "1q2w3e4r", "asdfjkl;", "asdfghjk", "asdfghjkl", ";lkjfdsa", ";lkjasdf", "zxcvbnm,", "zxcvbnm,.", "zxcvbnm,./", "/.,mvcxz", "poiurewq", "poiuqwer", "qweruiop", "uiopuiop", "qwerqwer", "jkl;jkl;", "asdfasdf", "zxcfzxcv", "zxcvm,./", "m,./zxcv"]),
-                r = function(e) {
-                    return a.has(e.toLowerCase())
+            var r = new Set(["password", "password1", "passw0rd", "69696969", "11111111", "111111111", "aaaaaaaa", "aaaaaaaaa", "fuckfuck", "pooppoop", "football", "welcome", "starwars", "trustno1", "jordan23", "iloveyou", "whatever", "princess", "sunshine", "adobe123", "photoshop", "baseball", "superman", "12345678", "123456789", "1234567890", "87654321", "987654321", "0987654321", "zaq1zaq1", "1qaz2wsx", "qwertyuiop", "18atcskd2w", "1q2w3e4r", "asdfjkl;", "asdfghjk", "asdfghjkl", ";lkjfdsa", ";lkjasdf", "zxcvbnm,", "zxcvbnm,.", "zxcvbnm,./", "/.,mvcxz", "poiurewq", "poiuqwer", "qweruiop", "uiopuiop", "qwerqwer", "jkl;jkl;", "asdfasdf", "zxcfzxcv", "zxcvm,./", "m,./zxcv"]),
+                a = function(e) {
+                    return r.has(e.toLowerCase())
                 }
         },
         40219: (e, t, n) => {
             n.d(t, {
                 y: () => o
             });
-            var a = n(15861),
-                r = n(64687),
-                l = n.n(r),
+            var r = n(15861),
+                a = n(64687),
+                l = n.n(a),
                 o = function() {
-                    var e = (0, a.Z)(l().mark((function e() {
-                        var t, n, a, r, o, i, c, s, u, m, d, p, f, h = arguments;
+                    var e = (0, r.Z)(l().mark((function e() {
+                        var t, n, r, a, o, i, c, s, u, m, d, p, f, h = arguments;
                         return l().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, a = void 0 === n ? "/home/login" : n, r = t.version, o = void 0 === r ? 2 : r, "1366854478250381462", i = ["openid", "identify", "email", "sdk.social_layer_presence"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
+                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, r = void 0 === n ? "/home/login" : n, a = t.version, o = void 0 === a ? 2 : a, "1366854478250381462", i = ["openid", "identify", "email", "sdk.social_layer_presence"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
                                         redirectUri: c,
                                         isMobileRequest: !1,
-                                        redirectTo: a
+                                        redirectTo: r
                                     }, m = JSON.stringify(u), d = btoa(m), p = new URLSearchParams({
                                         client_id: "1366854478250381462",
                                         redirect_uri: u.redirectUri,
@@ -3151,18 +3358,51 @@
                     }
                 }()
         },
+        19517: (e, t, n) => {
+            n.d(t, {
+                u: () => c
+            });
+            var r = n(15861),
+                a = n(64687),
+                l = n.n(a),
+                o = n(3845),
+                i = ["openid", "email", "profile"],
+                c = function() {
+                    var e = (0, r.Z)(l().mark((function e() {
+                        var t, n;
+                        return l().wrap((function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    t = new URLSearchParams({
+                                        client_id: "827942544393-r2ouvckvouldn9dg9uruseje575e878f.apps.googleusercontent.com",
+                                        redirect_uri: window.location.origin + window.location.pathname,
+                                        response_type: "id_token",
+                                        scope: i.join(" "),
+                                        nonce: (0, o.Z)()
+                                    }), n = "https://accounts.google.com/o/oauth2/v2/auth?".concat(t.toString()), window.location.href = n;
+                                case 3:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }), e)
+                    })));
+                    return function() {
+                        return e.apply(this, arguments)
+                    }
+                }()
+        },
         57672: (e, t, n) => {
             n.d(t, {
-                y: () => a
+                y: () => r
             });
-            var a = function(e) {
+            var r = function(e) {
                 if (null != e && e.requiresTwoFactorAuth) {
-                    var t, n, a = "/home/stepupauth";
-                    return "emailOtp" === (null === (t = e.requiresTwoFactorAuth) || void 0 === t ? void 0 : t[0]) && (a = "/home/emailstepupauth"), 0 === (null === (n = e.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) && e.ticket && (a = "/home/verify-password"), a
+                    var t, n, r = "/home/stepupauth";
+                    return "emailOtp" === (null === (t = e.requiresTwoFactorAuth) || void 0 === t ? void 0 : t[0]) && (r = "/home/emailstepupauth"), 0 === (null === (n = e.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) && e.ticket && (r = "/home/verify-password"), r
                 }
                 return null
             }
         }
     }
 ]);
-//# sourceMappingURL=5e0c65bae44eb3aaaedb79bb5cca21851684ccc5146fbc18df113c38ff555ba1.js.map
+//# sourceMappingURL=1a68ef82f8d78af62f6eff1eb87ccc8fa1ee93ad3310e7d234f91f4e0ac7d004.js.map
