@@ -220,7 +220,9 @@
                             }
                         }))
                     }), [g, H, S]);
-                return p.createElement(C.oA, {
+                return p.useEffect((function() {
+                    1 !== me.length || q || D(me[0].value)
+                }), [me, q]), p.createElement(C.oA, {
                     role: "dialog",
                     type: "default",
                     isOpen: a,
@@ -295,6 +297,7 @@
                     className: "tw-mt-2",
                     value: z,
                     onChange: F,
+                    disabled: !q,
                     options: (null !== (t = null == H || null === (r = H.reportOptions) || void 0 === r || null === (r = r[g]) || void 0 === r ? void 0 : r[q]) && void 0 !== t ? t : []).map((function(e) {
                         var t;
                         return {
@@ -364,4 +367,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c89ffb545deabbc576b5dde1422c8c776d5c0701df4a17a7dbceb87ca5f40deb.js.map
+//# sourceMappingURL=ac8d22f2ff926ce73a28eb3741a99a85930d9fff39718ddcab7f4ada30ee7849.js.map
