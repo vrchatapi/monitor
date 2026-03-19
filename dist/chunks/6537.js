@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [4588, 4232, 9575, 1459, 4616, 4814, 2874], {
+    [6537, 4232, 9575, 1459, 4616, 4814, 2874], {
         21438: (e, t, n) => {
             var r = n(52498);
             t.DF = {
@@ -66,9 +66,9 @@
                 icon: [448, 512, r, a, l]
             }, t.nG = t.DF
         },
-        97091: (e, t, n) => {
+        70688: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => Me
+                default: () => Be
             });
             var r = n(78076),
                 a = n(67294),
@@ -80,7 +80,7 @@
                 u = n(25428),
                 m = n(3447),
                 d = n(56209),
-                w = (n(92177), n(6344)),
+                w = n(6344),
                 p = n(10679),
                 v = n(91492),
                 f = n(40527);
@@ -140,127 +140,143 @@
                 F = n(64687),
                 P = n.n(F),
                 I = n(64258),
-                D = n(98375),
-                L = n(21438),
+                L = n(98375),
+                D = n(21438),
                 R = n(42619),
                 V = n(87709),
-                T = n(83505),
-                M = n(76176),
-                _ = n(84841),
-                W = n(50466),
-                U = n(45697),
-                z = n.n(U),
-                q = n(32981),
-                $ = n(78542),
-                Y = n(19531),
-                G = function(e) {
+                M = n(83505),
+                T = n(76176),
+                _ = n(50466),
+                U = n(54073),
+                W = n(84841),
+                z = n(45697),
+                q = n.n(z),
+                $ = n(32981),
+                G = n(78542),
+                Y = n(48313),
+                B = n(19531),
+                H = function(e) {
                     var t, n, r, l = e.item,
                         c = e.type,
                         o = e.disabled,
-                        s = void 0 !== o && o,
-                        u = e.onClickCallback,
-                        d = void 0 === u ? function() {} : u,
-                        w = e.onDeleteCallback,
-                        p = void 0 === w ? function() {} : w,
-                        v = e.onArchiveCallback,
-                        f = void 0 === v ? function() {} : v,
-                        g = e.onRecoverCallback,
-                        h = void 0 === g ? function() {} : g,
-                        x = y._O[c],
-                        E = (0, a.useState)(!(null == l || !l.imageUrl)),
-                        b = (0, O.Z)(E, 2),
-                        k = b[0],
-                        N = b[1],
-                        j = (0, a.useState)(200),
-                        C = (0, O.Z)(j, 2),
-                        A = C[0],
-                        S = C[1],
-                        F = (0, a.useRef)(null),
-                        P = (0, M.Z)(A, 200),
-                        I = (0, q.v9)((function(e) {
+                        u = void 0 !== o && o,
+                        d = e.onClickCallback,
+                        w = void 0 === d ? function() {} : d,
+                        p = e.onDeleteCallback,
+                        v = void 0 === p ? function() {} : p,
+                        f = e.onArchiveCallback,
+                        g = void 0 === f ? function() {} : f,
+                        h = e.onRecoverCallback,
+                        x = void 0 === h ? function() {} : h,
+                        E = (0, s.Tu)().user,
+                        b = y._O[c],
+                        k = (0, a.useState)(!(null == l || !l.imageUrl)),
+                        N = (0, O.Z)(k, 2),
+                        j = N[0],
+                        C = N[1],
+                        A = (0, a.useState)(200),
+                        S = (0, O.Z)(A, 2),
+                        F = S[0],
+                        P = S[1],
+                        I = (0, a.useRef)(null),
+                        z = (0, T.Z)(F, 200),
+                        q = (0, $.v9)((function(e) {
                             return e.ui.rightWingOpen
                         })),
-                        U = (0, a.useMemo)((function() {
+                        H = (0, a.useMemo)((function() {
                             var e;
-                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes("archivable")
+                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes(y.Zh.ARCHIVABLE)
                         }), [l]),
-                        z = (0, a.useMemo)((function() {
+                        X = (0, a.useMemo)((function() {
                             var e;
-                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes("premium")
+                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes(y.Zh.PREMIUM)
                         }), [l]),
-                        G = (0, a.useMemo)((function() {
+                        K = (0, a.useMemo)((function() {
                             var e;
                             return null == l || null === (e = l.metadata) || void 0 === e ? void 0 : e.animated
                         }), [l]),
-                        H = (0, a.useMemo)((function() {
+                        J = (0, a.useMemo)((function() {
+                            var e;
+                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes(y.Zh.VRC_PLUS_EXCUSIVE)
+                        }), [l]),
+                        Q = (0, a.useMemo)((function() {
+                            return !!J && !(null != E && E.hasVRCPlus)
+                        }), [J, E]),
+                        ee = (0, a.useMemo)((function() {
                             return [{
                                 key: "premium",
-                                condition: z,
+                                condition: X,
                                 bgClass: "tw-bg-highlight",
-                                icon: _.default,
+                                icon: W.default,
                                 iconColor: "#113637"
                             }, {
                                 key: "animated",
-                                condition: G,
+                                condition: K,
                                 bgClass: "tw-bg-dark-grey-transparent-90",
-                                icon: W.default,
+                                icon: _.default,
                                 iconColor: "#DADADA"
                             }].find((function(e) {
                                 return e.condition
                             })) || null
-                        }), [z, G]),
-                        X = (0, a.useMemo)((function() {
+                        }), [X, K]),
+                        te = (0, a.useMemo)((function() {
                             var e;
-                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes("quantifiable")
+                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes(y.Zh.QUANTIFIABLE)
                         }), [l]),
-                        B = (0, a.useMemo)((function() {
-                            return !l.isSeen && !l.flags.includes("ugc")
+                        ne = (0, a.useMemo)((function() {
+                            var e;
+                            return null == l || null === (e = l.flags) || void 0 === e ? void 0 : e.includes(y.Zh.GLOBAL)
                         }), [l]),
-                        K = (0, a.useMemo)((function() {
-                            return !!s || x.imageGrayScale
-                        }), [s, x]),
-                        J = function() {
-                            if (F.current) {
-                                var e = F.current.clientWidth;
-                                S(e)
+                        re = (0, a.useMemo)((function() {
+                            return !ne && (!l.isSeen && !l.flags.includes(y.Zh.USER_GENERATED))
+                        }), [l, ne]),
+                        ae = (0, a.useMemo)((function() {
+                            return !!Q || (!!u || b.imageGrayScale)
+                        }), [u, b, Q]),
+                        le = function() {
+                            if (I.current) {
+                                var e = I.current.clientWidth;
+                                P(e)
                             }
                         };
                     return (0, a.useEffect)((function() {
-                        return J(), window.addEventListener("resize", J),
+                        return le(), window.addEventListener("resize", le),
                             function() {
-                                window.removeEventListener("resize", J)
+                                window.removeEventListener("resize", le)
                             }
                     }), []), (0, a.useEffect)((function() {
                         var e = setTimeout((function() {
-                            J()
+                            le()
                         }), 600);
                         return function() {
                             return clearTimeout(e)
                         }
-                    }), [I]), a.createElement("div", {
+                    }), [q]), a.createElement("div", {
                         className: "tw-relative"
                     }, a.createElement("button", {
                         type: "button",
-                        tabIndex: s ? -1 : 0,
-                        ref: F,
-                        className: (0, T.cx)("tw-group tw-rounded-xl tw-relative tw-w-full tw-h-auto tw-cursor-pointer tw-border-none tw-bg-transparent tw-p-0 tw-m-0 tw-overflow-hidden", {
-                            "tw-pointer-events-none": s
+                        tabIndex: u ? -1 : 0,
+                        ref: I,
+                        className: (0, M.cx)("tw-group tw-rounded-xl tw-relative tw-w-full tw-h-auto tw-cursor-pointer tw-bg-transparent tw-p-0 tw-m-0 tw-overflow-hidden tw-border-solid", {
+                            "tw-pointer-events-none": u,
+                            "tw-border-2 tw-border-vrc-plus-yellow": J,
+                            "tw-border-none": !J
                         }),
-                        onClick: s ? function() {} : d,
+                        onClick: u ? function() {} : w,
                         onKeyUp: function(e) {
-                            "Enter" !== e.key || s || d()
+                            "Enter" !== e.key || u || w()
                         },
                         onKeyDown: function(e) {
-                            "Enter" !== e.key || s || d()
+                            "Enter" !== e.key || u || w()
                         }
-                    }, k && a.createElement("div", {
-                        className: "tw-w-full tw-h-full tw-bg-dark-grey tw-opacity-50 tw-flex tw-items-center tw-justify-center tw-h-min-[170px]"
+                    }, j && a.createElement("div", {
+                        className: "tw-absolute tw-inset-0 tw-z-[2] tw-flex tw-items-center tw-justify-center tw-bg-dark-grey tw-bg-opacity-50 "
                     }, a.createElement(i.$1, {
                         icon: Z.LM,
                         color: "#FFFFFF",
                         spin: !0,
                         width: 48
-                    })), X && a.createElement("div", {
+                    })), te && a.createElement("div", {
                         className: "tw-absolute tw-z-[3] tw-left-0 tw-top-0 tw-bg-hr-grey tw-p-2 tw-w-fit tw-rounded-tl-lg tw-rounded-br-lg"
                     }, a.createElement("div", {
                         className: "tw-flex tw-items-center"
@@ -270,17 +286,27 @@
                         width: 14
                     }), a.createElement("span", {
                         className: "tw-font-bold tw-text-white"
-                    }, null !== (t = null == l ? void 0 : l.quantity) && void 0 !== t ? t : 0))), H && a.createElement("div", {
-                        className: "tw-absolute tw-z-[3] tw-right-0 tw-top-0 ".concat(H.bgClass, " tw-p-2 tw-w-fit tw-rounded-tr-lg tw-rounded-bl-lg tw-transition-opacity group-hover:tw-opacity-0")
+                    }, null !== (t = null == l ? void 0 : l.quantity) && void 0 !== t ? t : 0))), J && !te && a.createElement("div", {
+                        className: "tw-absolute tw-z-[3] tw-left-2 tw-top-2"
+                    }, a.createElement(Y.Z, {
+                        isLarge: !0
+                    })), Q && a.createElement("div", {
+                        className: "tw-absolute tw-inset-0 tw-z-[2] tw-flex tw-items-center tw-justify-center tw-bg-black tw-bg-opacity-50"
                     }, a.createElement(i.$1, {
-                        icon: H.icon,
-                        color: H.iconColor,
+                        icon: U.default,
+                        color: "#FFFF00",
+                        width: 64
+                    })), ee && a.createElement("div", {
+                        className: "tw-absolute tw-z-[3] tw-right-0 tw-top-0 ".concat(ee.bgClass, " tw-p-2 tw-w-fit tw-rounded-tr-lg tw-rounded-bl-lg tw-transition-opacity group-hover:tw-opacity-0")
+                    }, a.createElement(i.$1, {
+                        icon: ee.icon,
+                        color: ee.iconColor,
                         width: 20
                     })), a.createElement("div", {
                         className: " tw-absolute tw-z-[5] tw-right-1 tw-top-1 tw-h-1/5 tw-h-min-[48px] tw-transition-opacity tw-duration-300 tw-ease-in-out tw-opacity-0 group-hover:tw-opacity-100 group-focus:tw-opacity-100 group-focus-within:tw-opacity-100 "
                     }, a.createElement("div", {
                         className: "tw-flex tw-gap-1"
-                    }, Y.a && x.hasConvertToVrcEmojis && a.createElement(i.zx, {
+                    }, B.a && b.hasConvertToVrcEmojis && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
@@ -291,69 +317,71 @@
                         color: "#FFFFFF",
                         width: 20,
                         className: "tw-mt-1"
-                    })), x.hasDelete && a.createElement(i.zx, {
+                    })), b.hasDelete && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), p()
+                            e.stopPropagation(), e.preventDefault(), v()
                         }
                     }, a.createElement(i.$1, {
                         icon: R.$,
                         color: "#FFFFFF",
                         width: 20,
                         className: "tw-mt-1"
-                    })), x.hasArchive && U && a.createElement(i.zx, {
+                    })), b.hasArchive && H && a.createElement(i.zx, {
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), f()
+                            e.stopPropagation(), e.preventDefault(), g()
                         }
                     }, a.createElement(i.$1, {
-                        icon: L.N2,
+                        icon: D.N2,
                         color: "#FFFFFF",
                         width: 20,
                         className: "tw-mt-1"
-                    })), x.hasRecover && U && a.createElement(i.zx, {
+                    })), b.hasRecover && H && a.createElement(i.zx, {
                         title: "Recover",
                         className: "tw-rounded-full tw-w-10 tw-h-10",
                         neutral: !0,
                         onClick: function(e) {
-                            e.stopPropagation(), e.preventDefault(), h()
+                            e.stopPropagation(), e.preventDefault(), x()
                         }
                     }, a.createElement(i.$1, {
-                        icon: D.faArrowsRotate,
+                        icon: L.faArrowsRotate,
                         color: "#FFFFFF",
                         width: 20,
                         className: "tw-mt-1"
                     })))), a.createElement("div", {
-                        className: "tw-w-auto tw-h-auto tw-flex"
-                    }, x.useCanvasThumbnail ? a.createElement($.Z, {
+                        className: (0, M.cx)("tw-w-auto tw-h-auto tw-flex", {
+                            "tw-bg-gradient-to-t tw-from-[#C68B0166] tw-to-[#FFFD6B66]": J
+                        })
+                    }, b.useCanvasThumbnail ? a.createElement(G.Z, {
                         imageUrl: (null === (n = l.metadata) || void 0 === n ? void 0 : n.imageUrl) || l.imageUrl,
                         metaData: l.metadata,
                         onLoad: function() {
-                            return N(!1)
+                            return C(!1)
                         },
                         onError: function() {
-                            return N(!1)
+                            return C(!1)
                         },
-                        size: P,
+                        size: z,
                         isThumbnail: !0,
-                        isGrayScale: K
+                        isGrayScale: ae
                     }) : a.createElement("img", {
                         src: (null === (r = l.metadata) || void 0 === r ? void 0 : r.imageUrl) || l.imageUrl,
                         alt: l.name,
-                        className: "tw-w-full tw-h-full tw-min-h-[190px] tw-object-cover ".concat(K ? "tw-filter tw-grayscale" : ""),
+                        className: "tw-w-full tw-h-full tw-min-h-[190px] tw-object-cover ".concat(ae ? "tw-filter tw-grayscale" : ""),
                         onLoad: function() {
-                            return N(!1)
+                            return C(!1)
                         },
                         onError: function() {
-                            return N(!1)
+                            return C(!1)
                         }
-                    }), x.hasThumbnailName && a.createElement("div", {
+                    }), b.hasThumbnailName && a.createElement("div", {
                         className: "tw-absolute tw-m-0 tw-bottom-0 tw-left-0 tw-top-0 tw-text-white tw-text-center tw-w-full tw-bg-gradient-to-t tw-from-dark-grey-transparent-90 tw-from-20% tw-to-transparent"
                     }, a.createElement("span", {
                         className: "tw-absolute tw-w-full tw-bottom-[18px] tw-left-0"
-                    }, l.name)))), B && a.createElement("div", {
+                    }, l.name)))), re && a.createElement("div", {
                         className: "tw-absolute tw-z-[3] tw-bottom-[-10px] tw-w-full"
                     }, a.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center"
@@ -361,16 +389,16 @@
                         className: "tw-m-0 tw-text-white tw-w-fit tw-rounded-full tw-px-6 tw-bg-red"
                     }, "New"))))
                 };
-            G.propTypes = {
-                item: z().object.isRequired,
-                onClickCallback: z().func.isRequired,
-                type: z().string.isRequired,
-                onDeleteCallback: z().func,
-                onArchiveCallback: z().func,
-                onRecoverCallback: z().func
+            H.propTypes = {
+                item: q().object.isRequired,
+                onClickCallback: q().func.isRequired,
+                type: q().string.isRequired,
+                onDeleteCallback: q().func,
+                onArchiveCallback: q().func,
+                onRecoverCallback: q().func
             };
-            const H = G;
-            const X = function() {
+            const X = H;
+            const K = function() {
                 var e, t, n, r, l = (0, v.F)(),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -449,7 +477,7 @@
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
                     className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map((function(e) {
-                    return a.createElement(H, {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         type: y.b5.cosmetics.archived,
@@ -461,26 +489,26 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no archived cosmetics."))))
             };
-            var B = n(42138),
-                K = n(4942),
-                J = n(68599);
-            const Q = function(e, t) {
-                var n = (0, q.I0)();
+            var J = n(42138),
+                Q = n(4942),
+                ee = n(68599);
+            const te = function(e, t) {
+                var n = (0, $.I0)();
                 (0, a.useEffect)((function() {
-                    null != e && e.isOpen && null != t && t.data && n((0, J.L1)({
+                    null != e && e.isOpen && null != t && t.data && n((0, ee.L1)({
                         gallery: t.data,
                         openIndex: t.data.length > e.openIndex ? e.openIndex : 0
                     }))
                 }), [t, e, n])
             };
-            var ee = n(15832),
-                te = function(e) {
+            var ne = n(15832),
+                re = function(e) {
                     var t = e.isOpen,
                         n = e.onCloseCallback,
                         r = e.archiveItemCallback,
                         l = e.isArchiving,
                         c = e.itemType,
-                        o = (0, ee._)("skipInventoryArchiveConfirmation", !1),
+                        o = (0, ne._)("skipInventoryArchiveConfirmation", !1),
                         s = (0, O.Z)(o, 2),
                         u = (s[0], s[1]),
                         m = (0, a.useRef)(null),
@@ -521,281 +549,14 @@
                         className: "tw-capitalize"
                     }, "Archive ", d))))
                 };
-            te.propTypes = {
-                isOpen: z().bool.isRequired,
-                onCloseCallback: z().func.isRequired,
-                archiveItemCallback: z().func.isRequired,
-                isArchiving: z().bool.isRequired,
-                itemType: z().string.isRequired
+            re.propTypes = {
+                isOpen: q().bool.isRequired,
+                onCloseCallback: q().func.isRequired,
+                archiveItemCallback: q().func.isRequired,
+                isArchiving: q().bool.isRequired,
+                itemType: q().string.isRequired
             };
-            const ne = te;
-
-            function re(e, t) {
-                var n = Object.keys(e);
-                if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
-                    t && (r = r.filter((function(t) {
-                        return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), n.push.apply(n, r)
-                }
-                return n
-            }
-            const ae = function() {
-                var e, t, n, r, l = (0, a.useState)("newest"),
-                    c = (0, O.Z)(l, 2),
-                    o = c[0],
-                    s = c[1],
-                    u = (0, a.useState)("all"),
-                    m = (0, O.Z)(u, 2),
-                    d = m[0],
-                    w = m[1],
-                    p = (0, a.useState)(null),
-                    f = (0, O.Z)(p, 2),
-                    g = f[0],
-                    h = f[1],
-                    x = (0, a.useState)(!1),
-                    E = (0, O.Z)(x, 2),
-                    b = E[0],
-                    k = E[1],
-                    N = (0, ee._)("skipInventoryArchiveConfirmation", !1),
-                    j = (0, O.Z)(N, 2),
-                    F = j[0],
-                    D = (j[1], (0, v.F)()),
-                    L = (0, O.Z)(D, 2),
-                    R = L[0],
-                    V = L[1].isLoading,
-                    T = (0, v.fv)(),
-                    M = (0, O.Z)(T, 1)[0],
-                    _ = (0, q.I0)();
-                (0, a.useEffect)((function() {
-                    return function() {
-                        _({
-                            type: "gallery/resetGallery"
-                        })
-                    }
-                }), [_]);
-                var W = (0, v.aj)(function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {};
-                            t % 2 ? re(Object(n), !0).forEach((function(t) {
-                                (0, K.Z)(e, t, n[t])
-                            })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : re(Object(n)).forEach((function(t) {
-                                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                            }))
-                        }
-                        return e
-                    }({
-                        n: 100,
-                        pageValue: 1,
-                        types: "droneskin",
-                        notFlags: "ugc",
-                        archived: !1,
-                        order: "newest" === o ? "newest_created" : "oldest_created"
-                    }, "all" !== d && {
-                        collections: d
-                    })),
-                    U = W.data,
-                    z = W.error,
-                    $ = W.isError,
-                    Y = W.isFetching,
-                    G = (0, q.v9)((function(e) {
-                        return e.gallery
-                    }));
-                Q(G, U);
-                var X = (0, v.sw)(),
-                    te = X.data,
-                    ae = (X.error, X.isError, X.isFetching, (0, a.useMemo)((function() {
-                        if (!te) return [];
-                        var e = te.map((function(e) {
-                            return {
-                                label: e,
-                                value: e
-                            }
-                        }));
-                        return [].concat((0, B.Z)(e), [{
-                            label: "All",
-                            value: "all"
-                        }])
-                    }), [te])),
-                    le = function() {
-                        var e = (0, C.Z)(P().mark((function e(t) {
-                            var n, r;
-                            return P().wrap((function(e) {
-                                for (;;) switch (e.prev = e.next) {
-                                    case 0:
-                                        if (n = t.prop, r = t.index, h(n), _((0, J.lc)({
-                                                gallery: (null == U ? void 0 : U.data) || [],
-                                                openIndex: r,
-                                                onArchiveCallback: function(e) {
-                                                    return ce({
-                                                        prop: e
-                                                    })
-                                                },
-                                                type: y.b5.props.exclusive
-                                            })), n.isSeen) {
-                                            e.next = 12;
-                                            break
-                                        }
-                                        return e.prev = 4, e.next = 7, M({
-                                            itemId: n.id,
-                                            itemData: {
-                                                isSeen: !0
-                                            },
-                                            types: "prop"
-                                        }).unwrap();
-                                    case 7:
-                                        e.next = 12;
-                                        break;
-                                    case 9:
-                                        e.prev = 9, e.t0 = e.catch(4), console.error("Error updating prop:", e.t0);
-                                    case 12:
-                                    case "end":
-                                        return e.stop()
-                                }
-                            }), e, null, [
-                                [4, 9]
-                            ])
-                        })));
-                        return function(t) {
-                            return e.apply(this, arguments)
-                        }
-                    }(),
-                    ie = function() {
-                        var e = (0, C.Z)(P().mark((function e() {
-                            var t, n, r, a = arguments;
-                            return P().wrap((function(e) {
-                                for (;;) switch (e.prev = e.next) {
-                                    case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
-                                            itemId: null === t ? g.id : t,
-                                            isArchived: !0
-                                        }).unwrap();
-                                    case 4:
-                                        if (k(!1), h(null), _((0, J.AV)()), (0, I.d)({
-                                                color: "success",
-                                                title: "Item archived",
-                                                message: "Item archived successfully",
-                                                icon: S.f8,
-                                                timeout: 5e3
-                                            }), null != (r = null === t ? g : null == U || null === (n = U.data) || void 0 === n ? void 0 : n.find((function(e) {
-                                                return e.id === t
-                                            }))) && r.isSeen) {
-                                            e.next = 18;
-                                            break
-                                        }
-                                        return e.prev = 10, e.next = 13, M({
-                                            itemId: r.id,
-                                            itemData: {
-                                                isSeen: !0
-                                            },
-                                            types: "prop"
-                                        }).unwrap();
-                                    case 13:
-                                        e.next = 18;
-                                        break;
-                                    case 15:
-                                        e.prev = 15, e.t0 = e.catch(10), console.error("Error updating item:", e.t0);
-                                    case 18:
-                                        e.next = 24;
-                                        break;
-                                    case 20:
-                                        e.prev = 20, e.t1 = e.catch(1), console.error("Error archiving item:", e.t1), (0, I.d)({
-                                            color: "danger",
-                                            title: "Failed to archive item",
-                                            message: "Error: ".concat(e.t1),
-                                            icon: A.RL,
-                                            timeout: 5e3
-                                        });
-                                    case 24:
-                                    case "end":
-                                        return e.stop()
-                                }
-                            }), e, null, [
-                                [1, 20],
-                                [10, 15]
-                            ])
-                        })));
-                        return function() {
-                            return e.apply(this, arguments)
-                        }
-                    }(),
-                    ce = function(e) {
-                        var t = e.prop,
-                            n = void 0 === t ? null : t;
-                        F ? ie(n.id) : (k(!0), h(n))
-                    },
-                    oe = Y;
-                return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
-                    itemType: "Cosmetic",
-                    isOpen: b,
-                    onCloseCallback: function() {
-                        return k(!1)
-                    },
-                    archiveItemCallback: ie,
-                    isArchiving: V
-                }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
-                }, "Drones"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
-                }, "VRChat exclusive drones."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
-                }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
-                }, a.createElement(i.Lt, {
-                    options: ae,
-                    value: d,
-                    onChange: w,
-                    className: "tw-min-w-[200px]"
-                })), a.createElement(i.Lt, {
-                    options: [{
-                        label: "Newest",
-                        value: "newest"
-                    }, {
-                        label: "Oldest",
-                        value: "oldest"
-                    }],
-                    value: o,
-                    onChange: s
-                })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
-                }, $ && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
-                }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
-                }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), oe ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
-                }, a.createElement(i.$1, {
-                    icon: Z.LM,
-                    spin: !0,
-                    color: "#404C58",
-                    width: "32"
-                })) : a.createElement("div", null, (null == U || null === (n = U.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == U || null === (r = U.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
-                        key: e.id,
-                        item: e,
-                        onClickCallback: function() {
-                            return le({
-                                prop: e,
-                                index: t
-                            })
-                        },
-                        type: y.b5.cosmetics.exclusive,
-                        onArchiveCallback: function() {
-                            return ce({
-                                prop: e
-                            })
-                        }
-                    })
-                }))) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
-                }, "No exclusive drones."))))
-            };
+            const ae = re;
 
             function le(e, t) {
                 var n = Object.keys(e);
@@ -807,7 +568,19 @@
                 }
                 return n
             }
-            const ie = function() {
+
+            function ie(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? le(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : le(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            const ce = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -824,16 +597,16 @@
                     E = (0, O.Z)(x, 2),
                     b = E[0],
                     k = E[1],
-                    N = (0, ee._)("skipInventoryArchiveConfirmation", !1),
+                    N = (0, ne._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    D = (j[1], (0, v.F)()),
-                    L = (0, O.Z)(D, 2),
-                    R = L[0],
-                    V = L[1].isLoading,
-                    T = (0, v.fv)(),
-                    M = (0, O.Z)(T, 1)[0],
-                    _ = (0, q.I0)();
+                    L = (j[1], (0, v.F)()),
+                    D = (0, O.Z)(L, 2),
+                    R = D[0],
+                    V = D[1].isLoading,
+                    M = (0, v.fv)(),
+                    T = (0, O.Z)(M, 1)[0],
+                    _ = (0, $.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -841,60 +614,63 @@
                         })
                     }
                 }), [_]);
-                var W = (0, v.aj)(function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {};
-                            t % 2 ? le(Object(n), !0).forEach((function(t) {
-                                (0, K.Z)(e, t, n[t])
-                            })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : le(Object(n)).forEach((function(t) {
-                                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                            }))
-                        }
-                        return e
-                    }({
+                var U = (0, v.aj)(ie({
                         n: 100,
                         pageValue: 1,
-                        types: "portalskin",
+                        types: "droneskin",
                         notFlags: "ugc",
                         archived: !1,
                         order: "newest" === o ? "newest_created" : "oldest_created"
                     }, "all" !== d && {
                         collections: d
                     })),
-                    U = W.data,
-                    z = W.error,
-                    $ = W.isError,
-                    Y = W.isFetching,
-                    G = (0, q.v9)((function(e) {
+                    W = U.data,
+                    z = U.error,
+                    q = U.isError,
+                    G = U.isFetching,
+                    Y = (0, v.yM)(),
+                    B = Y.data,
+                    H = (Y.error, Y.isError, Y.isFetching),
+                    K = (0, a.useMemo)((function() {
+                        var e = B ? B.filter((function(e) {
+                            return "droneskin" === e.itemType
+                        })) : [];
+                        return W ? ie(ie({}, W), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(W.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [B, W]),
+                    Q = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(G, U);
-                var X = (0, v.sw)(),
-                    te = X.data,
-                    re = (X.error, X.isError, X.isFetching, (0, a.useMemo)((function() {
-                        if (!te) return [];
-                        var e = te.map((function(e) {
+                te(Q, K);
+                var re = (0, v.sw)(),
+                    le = re.data,
+                    ce = (re.error, re.isError, re.isFetching, (0, a.useMemo)((function() {
+                        if (!le) return [];
+                        var e = le.map((function(e) {
                             return {
                                 label: e,
                                 value: e
                             }
                         }));
-                        return [].concat((0, B.Z)(e), [{
+                        return [].concat((0, J.Z)(e), [{
                             label: "All",
                             value: "all"
                         }])
-                    }), [te])),
-                    ae = function() {
+                    }), [le])),
+                    oe = function() {
                         var e = (0, C.Z)(P().mark((function e(t) {
                             var n, r;
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = t.prop, r = t.index, h(n), _((0, J.lc)({
-                                                gallery: (null == U ? void 0 : U.data) || [],
+                                        if (n = t.prop, r = t.index, h(n), _((0, ee.lc)({
+                                                gallery: (null == K ? void 0 : K.data) || [],
                                                 openIndex: r,
                                                 onArchiveCallback: function(e) {
-                                                    return ce({
+                                                    return ue({
                                                         prop: e
                                                     })
                                                 },
@@ -903,7 +679,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, M({
+                                        return e.prev = 4, e.next = 7, T({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -927,7 +703,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ie = function() {
+                    se = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             var t, n, r, a = arguments;
                             return P().wrap((function(e) {
@@ -938,19 +714,19 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, J.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, ee.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
                                                 icon: S.f8,
                                                 timeout: 5e3
-                                            }), null != (r = null === t ? g : null == U || null === (n = U.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                            }), null != (r = null === t ? g : null == K || null === (n = K.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
                                             }))) && r.isSeen) {
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, M({
+                                        return e.prev = 10, e.next = 13, T({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -986,21 +762,585 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ce = function(e) {
+                    ue = function(e) {
                         var t = e.prop,
                             n = void 0 === t ? null : t;
-                        F ? ie(n.id) : (k(!0), h(n))
+                        F ? se(n.id) : (k(!0), h(n))
                     },
-                    oe = Y;
+                    me = G || H;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
+                }, a.createElement(ae, {
                     itemType: "Cosmetic",
                     isOpen: b,
                     onCloseCallback: function() {
                         return k(!1)
                     },
-                    archiveItemCallback: ie,
+                    archiveItemCallback: se,
+                    isArchiving: V
+                }), a.createElement("h3", {
+                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                }, "Drones"), a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "VRChat exclusive drones."), a.createElement("div", {
+                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                }, a.createElement("div", {
+                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                }, a.createElement(i.Lt, {
+                    options: ce,
+                    value: d,
+                    onChange: w,
+                    className: "tw-min-w-[200px]"
+                })), a.createElement(i.Lt, {
+                    options: [{
+                        label: "Newest",
+                        value: "newest"
+                    }, {
+                        label: "Oldest",
+                        value: "oldest"
+                    }],
+                    value: o,
+                    onChange: s
+                })), a.createElement("div", {
+                    className: "tw-mt-6 tw-mb-4"
+                }, q && a.createElement("div", {
+                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                }, a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "Failed to load items"), a.createElement("code", {
+                    className: "tw-text-white tw-text-base"
+                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), me ? a.createElement("div", {
+                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                }, a.createElement(i.$1, {
+                    icon: Z.LM,
+                    spin: !0,
+                    color: "#404C58",
+                    width: "32"
+                })) : a.createElement("div", null, (null == K || null === (n = K.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == K || null === (r = K.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
+                        key: e.id,
+                        item: e,
+                        onClickCallback: function() {
+                            return oe({
+                                prop: e,
+                                index: t
+                            })
+                        },
+                        type: y.b5.cosmetics.exclusive,
+                        onArchiveCallback: function() {
+                            return ue({
+                                prop: e
+                            })
+                        }
+                    })
+                }))) : a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "No exclusive drones."))))
+            };
+
+            function oe(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), n.push.apply(n, r)
+                }
+                return n
+            }
+
+            function se(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? oe(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : oe(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            const ue = function() {
+                var e, t, n, r, l = (0, a.useState)("newest"),
+                    c = (0, O.Z)(l, 2),
+                    o = c[0],
+                    s = c[1],
+                    u = (0, a.useState)("all"),
+                    m = (0, O.Z)(u, 2),
+                    d = m[0],
+                    w = m[1],
+                    p = (0, a.useState)(null),
+                    f = (0, O.Z)(p, 2),
+                    g = f[0],
+                    h = f[1],
+                    x = (0, a.useState)(!1),
+                    E = (0, O.Z)(x, 2),
+                    b = E[0],
+                    k = E[1],
+                    N = (0, ne._)("skipInventoryArchiveConfirmation", !1),
+                    j = (0, O.Z)(N, 2),
+                    F = j[0],
+                    L = (j[1], (0, v.F)()),
+                    D = (0, O.Z)(L, 2),
+                    R = D[0],
+                    V = D[1].isLoading,
+                    M = (0, v.fv)(),
+                    T = (0, O.Z)(M, 1)[0],
+                    _ = (0, $.I0)();
+                (0, a.useEffect)((function() {
+                    return function() {
+                        _({
+                            type: "gallery/resetGallery"
+                        })
+                    }
+                }), [_]);
+                var U = (0, v.aj)(se({
+                        n: 100,
+                        pageValue: 1,
+                        types: "loadingscreen",
+                        notFlags: "ugc",
+                        archived: !1,
+                        order: "newest" === o ? "newest_created" : "oldest_created"
+                    }, "all" !== d && {
+                        collections: d
+                    })),
+                    W = U.data,
+                    z = U.error,
+                    q = U.isError,
+                    G = U.isFetching,
+                    Y = (0, v.yM)(),
+                    B = Y.data,
+                    H = (Y.error, Y.isError, Y.isFetching),
+                    K = (0, a.useMemo)((function() {
+                        var e = B ? B.filter((function(e) {
+                            return "loadingscreen" === e.itemType
+                        })) : [];
+                        return W ? se(se({}, W), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(W.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [B, W]),
+                    Q = (0, $.v9)((function(e) {
+                        return e.gallery
+                    }));
+                te(Q, K);
+                var re = (0, v.sw)(),
+                    le = re.data,
+                    ie = (re.error, re.isError, re.isFetching, (0, a.useMemo)((function() {
+                        if (!le) return [];
+                        var e = le.map((function(e) {
+                            return {
+                                label: e,
+                                value: e
+                            }
+                        }));
+                        return [].concat((0, J.Z)(e), [{
+                            label: "All",
+                            value: "all"
+                        }])
+                    }), [le])),
+                    ce = function() {
+                        var e = (0, C.Z)(P().mark((function e(t) {
+                            var n, r;
+                            return P().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        if (n = t.prop, r = t.index, h(n), _((0, ee.lc)({
+                                                gallery: (null == K ? void 0 : K.data) || [],
+                                                openIndex: r,
+                                                onArchiveCallback: function(e) {
+                                                    return ue({
+                                                        prop: e
+                                                    })
+                                                },
+                                                type: y.b5.props.exclusive
+                                            })), n.isSeen) {
+                                            e.next = 12;
+                                            break
+                                        }
+                                        return e.prev = 4, e.next = 7, T({
+                                            itemId: n.id,
+                                            itemData: {
+                                                isSeen: !0
+                                            },
+                                            types: "prop"
+                                        }).unwrap();
+                                    case 7:
+                                        e.next = 12;
+                                        break;
+                                    case 9:
+                                        e.prev = 9, e.t0 = e.catch(4), console.error("Error updating prop:", e.t0);
+                                    case 12:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [4, 9]
+                            ])
+                        })));
+                        return function(t) {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    oe = function() {
+                        var e = (0, C.Z)(P().mark((function e() {
+                            var t, n, r, a = arguments;
+                            return P().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
+                                            itemId: null === t ? g.id : t,
+                                            isArchived: !0
+                                        }).unwrap();
+                                    case 4:
+                                        if (k(!1), h(null), _((0, ee.AV)()), (0, I.d)({
+                                                color: "success",
+                                                title: "Item archived",
+                                                message: "Item archived successfully",
+                                                icon: S.f8,
+                                                timeout: 5e3
+                                            }), null != (r = null === t ? g : null == K || null === (n = K.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                                return e.id === t
+                                            }))) && r.isSeen) {
+                                            e.next = 18;
+                                            break
+                                        }
+                                        return e.prev = 10, e.next = 13, T({
+                                            itemId: r.id,
+                                            itemData: {
+                                                isSeen: !0
+                                            },
+                                            types: "prop"
+                                        }).unwrap();
+                                    case 13:
+                                        e.next = 18;
+                                        break;
+                                    case 15:
+                                        e.prev = 15, e.t0 = e.catch(10), console.error("Error updating item:", e.t0);
+                                    case 18:
+                                        e.next = 24;
+                                        break;
+                                    case 20:
+                                        e.prev = 20, e.t1 = e.catch(1), console.error("Error archiving item:", e.t1), (0, I.d)({
+                                            color: "danger",
+                                            title: "Failed to archive item",
+                                            message: "Error: ".concat(e.t1),
+                                            icon: A.RL,
+                                            timeout: 5e3
+                                        });
+                                    case 24:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [1, 20],
+                                [10, 15]
+                            ])
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    ue = function(e) {
+                        var t = e.prop,
+                            n = void 0 === t ? null : t;
+                        F ? oe(n.id) : (k(!0), h(n))
+                    },
+                    me = G || H;
+                return a.createElement("div", {
+                    className: "tw-px-4 tw-@container/inventory-items"
+                }, a.createElement(ae, {
+                    itemType: "Cosmetic",
+                    isOpen: b,
+                    onCloseCallback: function() {
+                        return k(!1)
+                    },
+                    archiveItemCallback: oe,
+                    isArchiving: V
+                }), a.createElement("h3", {
+                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                }, "Loading Screens"), a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "VRChat exclusive loading screens."), a.createElement("div", {
+                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                }, a.createElement("div", {
+                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                }, a.createElement(i.Lt, {
+                    options: ie,
+                    value: d,
+                    onChange: w,
+                    className: "tw-min-w-[200px]"
+                })), a.createElement(i.Lt, {
+                    options: [{
+                        label: "Newest",
+                        value: "newest"
+                    }, {
+                        label: "Oldest",
+                        value: "oldest"
+                    }],
+                    value: o,
+                    onChange: s
+                })), a.createElement("div", {
+                    className: "tw-mt-6 tw-mb-4"
+                }, q && a.createElement("div", {
+                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                }, a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "Failed to load items"), a.createElement("code", {
+                    className: "tw-text-white tw-text-base"
+                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), me ? a.createElement("div", {
+                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                }, a.createElement(i.$1, {
+                    icon: Z.LM,
+                    spin: !0,
+                    color: "#404C58",
+                    width: "32"
+                })) : a.createElement("div", null, (null == K || null === (n = K.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == K || null === (r = K.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
+                        key: e.id,
+                        item: e,
+                        onClickCallback: function() {
+                            return ce({
+                                prop: e,
+                                index: t
+                            })
+                        },
+                        type: y.b5.cosmetics.exclusive,
+                        onArchiveCallback: function() {
+                            return ue({
+                                prop: e
+                            })
+                        }
+                    })
+                }))) : a.createElement("p", {
+                    className: "tw-text-light-grey tw-text-base"
+                }, "No exclusive loading screens."))))
+            };
+
+            function me(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), n.push.apply(n, r)
+                }
+                return n
+            }
+
+            function de(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? me(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : me(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            const we = function() {
+                var e, t, n, r, l = (0, a.useState)("newest"),
+                    c = (0, O.Z)(l, 2),
+                    o = c[0],
+                    s = c[1],
+                    u = (0, a.useState)("all"),
+                    m = (0, O.Z)(u, 2),
+                    d = m[0],
+                    w = m[1],
+                    p = (0, a.useState)(null),
+                    f = (0, O.Z)(p, 2),
+                    g = f[0],
+                    h = f[1],
+                    x = (0, a.useState)(!1),
+                    E = (0, O.Z)(x, 2),
+                    b = E[0],
+                    k = E[1],
+                    N = (0, ne._)("skipInventoryArchiveConfirmation", !1),
+                    j = (0, O.Z)(N, 2),
+                    F = j[0],
+                    L = (j[1], (0, v.F)()),
+                    D = (0, O.Z)(L, 2),
+                    R = D[0],
+                    V = D[1].isLoading,
+                    M = (0, v.fv)(),
+                    T = (0, O.Z)(M, 1)[0],
+                    _ = (0, $.I0)();
+                (0, a.useEffect)((function() {
+                    return function() {
+                        _({
+                            type: "gallery/resetGallery"
+                        })
+                    }
+                }), [_]);
+                var U = (0, v.aj)(de({
+                        n: 100,
+                        pageValue: 1,
+                        types: "portalskin",
+                        notFlags: "ugc",
+                        archived: !1,
+                        order: "newest" === o ? "newest_created" : "oldest_created"
+                    }, "all" !== d && {
+                        collections: d
+                    })),
+                    W = U.data,
+                    z = U.error,
+                    q = U.isError,
+                    G = U.isFetching,
+                    Y = (0, v.yM)(),
+                    B = Y.data,
+                    H = (Y.error, Y.isError, Y.isFetching),
+                    K = (0, a.useMemo)((function() {
+                        var e = B ? B.filter((function(e) {
+                            return "portalskin" === e.itemType
+                        })) : [];
+                        return W ? de(de({}, W), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(W.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [B, W]),
+                    Q = (0, $.v9)((function(e) {
+                        return e.gallery
+                    }));
+                te(Q, K);
+                var re = (0, v.sw)(),
+                    le = re.data,
+                    ie = (re.error, re.isError, re.isFetching, (0, a.useMemo)((function() {
+                        if (!le) return [];
+                        var e = le.map((function(e) {
+                            return {
+                                label: e,
+                                value: e
+                            }
+                        }));
+                        return [].concat((0, J.Z)(e), [{
+                            label: "All",
+                            value: "all"
+                        }])
+                    }), [le])),
+                    ce = function() {
+                        var e = (0, C.Z)(P().mark((function e(t) {
+                            var n, r;
+                            return P().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        if (n = t.prop, r = t.index, h(n), _((0, ee.lc)({
+                                                gallery: (null == K ? void 0 : K.data) || [],
+                                                openIndex: r,
+                                                onArchiveCallback: function(e) {
+                                                    return se({
+                                                        prop: e
+                                                    })
+                                                },
+                                                type: y.b5.props.exclusive
+                                            })), n.isSeen) {
+                                            e.next = 12;
+                                            break
+                                        }
+                                        return e.prev = 4, e.next = 7, T({
+                                            itemId: n.id,
+                                            itemData: {
+                                                isSeen: !0
+                                            },
+                                            types: "prop"
+                                        }).unwrap();
+                                    case 7:
+                                        e.next = 12;
+                                        break;
+                                    case 9:
+                                        e.prev = 9, e.t0 = e.catch(4), console.error("Error updating prop:", e.t0);
+                                    case 12:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [4, 9]
+                            ])
+                        })));
+                        return function(t) {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    oe = function() {
+                        var e = (0, C.Z)(P().mark((function e() {
+                            var t, n, r, a = arguments;
+                            return P().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, R({
+                                            itemId: null === t ? g.id : t,
+                                            isArchived: !0
+                                        }).unwrap();
+                                    case 4:
+                                        if (k(!1), h(null), _((0, ee.AV)()), (0, I.d)({
+                                                color: "success",
+                                                title: "Item archived",
+                                                message: "Item archived successfully",
+                                                icon: S.f8,
+                                                timeout: 5e3
+                                            }), null != (r = null === t ? g : null == K || null === (n = K.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                                return e.id === t
+                                            }))) && r.isSeen) {
+                                            e.next = 18;
+                                            break
+                                        }
+                                        return e.prev = 10, e.next = 13, T({
+                                            itemId: r.id,
+                                            itemData: {
+                                                isSeen: !0
+                                            },
+                                            types: "prop"
+                                        }).unwrap();
+                                    case 13:
+                                        e.next = 18;
+                                        break;
+                                    case 15:
+                                        e.prev = 15, e.t0 = e.catch(10), console.error("Error updating item:", e.t0);
+                                    case 18:
+                                        e.next = 24;
+                                        break;
+                                    case 20:
+                                        e.prev = 20, e.t1 = e.catch(1), console.error("Error archiving item:", e.t1), (0, I.d)({
+                                            color: "danger",
+                                            title: "Failed to archive item",
+                                            message: "Error: ".concat(e.t1),
+                                            icon: A.RL,
+                                            timeout: 5e3
+                                        });
+                                    case 24:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [1, 20],
+                                [10, 15]
+                            ])
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    se = function(e) {
+                        var t = e.prop,
+                            n = void 0 === t ? null : t;
+                        F ? oe(n.id) : (k(!0), h(n))
+                    },
+                    ue = G || H;
+                return a.createElement("div", {
+                    className: "tw-px-4 tw-@container/inventory-items"
+                }, a.createElement(ae, {
+                    itemType: "Cosmetic",
+                    isOpen: b,
+                    onCloseCallback: function() {
+                        return k(!1)
+                    },
+                    archiveItemCallback: oe,
                     isArchiving: V
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
@@ -1011,7 +1351,7 @@
                 }, a.createElement("div", {
                     className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
                 }, a.createElement(i.Lt, {
-                    options: re,
+                    options: ie,
                     value: d,
                     onChange: w,
                     className: "tw-min-w-[200px]"
@@ -1027,34 +1367,34 @@
                     onChange: s
                 })), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, $ && a.createElement("div", {
+                }, q && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load items"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), oe ? a.createElement("div", {
+                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, (null == U || null === (n = U.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == U || null === (r = U.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                })) : a.createElement("div", null, (null == K || null === (n = K.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == K || null === (r = K.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         onClickCallback: function() {
-                            return ae({
+                            return ce({
                                 prop: e,
                                 index: t
                             })
                         },
                         type: y.b5.cosmetics.exclusive,
                         onArchiveCallback: function() {
-                            return ce({
+                            return se({
                                 prop: e
                             })
                         }
@@ -1064,7 +1404,7 @@
                 }, "No exclusive portals."))))
             };
 
-            function ce(e, t) {
+            function pe(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1074,7 +1414,19 @@
                 }
                 return n
             }
-            const oe = function() {
+
+            function ve(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? pe(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : pe(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            const fe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -1091,16 +1443,16 @@
                     E = (0, O.Z)(x, 2),
                     b = E[0],
                     k = E[1],
-                    N = (0, ee._)("skipInventoryArchiveConfirmation", !1),
+                    N = (0, ne._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    D = (j[1], (0, v.F)()),
-                    L = (0, O.Z)(D, 2),
-                    R = L[0],
-                    V = L[1].isLoading,
-                    T = (0, v.fv)(),
-                    M = (0, O.Z)(T, 1)[0],
-                    _ = (0, q.I0)();
+                    L = (j[1], (0, v.F)()),
+                    D = (0, O.Z)(L, 2),
+                    R = D[0],
+                    V = D[1].isLoading,
+                    M = (0, v.fv)(),
+                    T = (0, O.Z)(M, 1)[0],
+                    _ = (0, $.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -1108,17 +1460,7 @@
                         })
                     }
                 }), [_]);
-                var W = (0, v.aj)(function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {};
-                            t % 2 ? ce(Object(n), !0).forEach((function(t) {
-                                (0, K.Z)(e, t, n[t])
-                            })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ce(Object(n)).forEach((function(t) {
-                                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                            }))
-                        }
-                        return e
-                    }({
+                var U = (0, v.aj)(ve({
                         n: 100,
                         pageValue: 1,
                         types: "warpeffect",
@@ -1128,40 +1470,53 @@
                     }, "all" !== d && {
                         collections: d
                     })),
-                    U = W.data,
-                    z = W.error,
-                    $ = W.isError,
-                    Y = W.isFetching,
-                    G = (0, q.v9)((function(e) {
+                    W = U.data,
+                    z = U.error,
+                    q = U.isError,
+                    G = U.isFetching,
+                    Y = (0, v.yM)(),
+                    B = Y.data,
+                    H = (Y.error, Y.isError, Y.isFetching),
+                    K = (0, a.useMemo)((function() {
+                        var e = B ? B.filter((function(e) {
+                            return "warpeffect" === e.itemType
+                        })) : [];
+                        return W ? ve(ve({}, W), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(W.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [B, W]),
+                    Q = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(G, U);
-                var X = (0, v.sw)(),
-                    te = X.data,
-                    re = (X.error, X.isError, X.isFetching, (0, a.useMemo)((function() {
-                        if (!te) return [];
-                        var e = te.map((function(e) {
+                te(Q, K);
+                var re = (0, v.sw)(),
+                    le = re.data,
+                    ie = (re.error, re.isError, re.isFetching, (0, a.useMemo)((function() {
+                        if (!le) return [];
+                        var e = le.map((function(e) {
                             return {
                                 label: e,
                                 value: e
                             }
                         }));
-                        return [].concat((0, B.Z)(e), [{
+                        return [].concat((0, J.Z)(e), [{
                             label: "All",
                             value: "all"
                         }])
-                    }), [te])),
-                    ae = function() {
+                    }), [le])),
+                    ce = function() {
                         var e = (0, C.Z)(P().mark((function e(t) {
                             var n, r;
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = t.prop, r = t.index, h(n), _((0, J.lc)({
-                                                gallery: (null == U ? void 0 : U.data) || [],
+                                        if (n = t.prop, r = t.index, h(n), _((0, ee.lc)({
+                                                gallery: (null == K ? void 0 : K.data) || [],
                                                 openIndex: r,
                                                 onArchiveCallback: function(e) {
-                                                    return ie({
+                                                    return se({
                                                         prop: e
                                                     })
                                                 },
@@ -1170,7 +1525,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, M({
+                                        return e.prev = 4, e.next = 7, T({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1194,7 +1549,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    le = function() {
+                    oe = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             var t, n, r, a = arguments;
                             return P().wrap((function(e) {
@@ -1205,19 +1560,19 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, J.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, ee.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
                                                 icon: S.f8,
                                                 timeout: 5e3
-                                            }), null != (r = null === t ? g : null == U || null === (n = U.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                            }), null != (r = null === t ? g : null == K || null === (n = K.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
                                             }))) && r.isSeen) {
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, M({
+                                        return e.prev = 10, e.next = 13, T({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1253,21 +1608,21 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ie = function(e) {
+                    se = function(e) {
                         var t = e.prop,
                             n = void 0 === t ? null : t;
-                        F ? le(n.id) : (k(!0), h(n))
+                        F ? oe(n.id) : (k(!0), h(n))
                     },
-                    oe = Y;
+                    ue = G || H;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
+                }, a.createElement(ae, {
                     itemType: "Cosmetic",
                     isOpen: b,
                     onCloseCallback: function() {
                         return k(!1)
                     },
-                    archiveItemCallback: le,
+                    archiveItemCallback: oe,
                     isArchiving: V
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
@@ -1278,7 +1633,7 @@
                 }, a.createElement("div", {
                     className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
                 }, a.createElement(i.Lt, {
-                    options: re,
+                    options: ie,
                     value: d,
                     onChange: w,
                     className: "tw-min-w-[200px]"
@@ -1294,34 +1649,34 @@
                     onChange: s
                 })), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, $ && a.createElement("div", {
+                }, q && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load items"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), oe ? a.createElement("div", {
+                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, (null == U || null === (n = U.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == U || null === (r = U.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                })) : a.createElement("div", null, (null == K || null === (n = K.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == K || null === (r = K.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         onClickCallback: function() {
-                            return ae({
+                            return ce({
                                 prop: e,
                                 index: t
                             })
                         },
                         type: y.b5.cosmetics.exclusive,
                         onArchiveCallback: function() {
-                            return ie({
+                            return se({
                                 prop: e
                             })
                         }
@@ -1330,7 +1685,7 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "No exclusive warp effects."))))
             };
-            const se = function() {
+            const ge = function() {
                 (0, s.Tu)({
                     withRecentSubscription: !0
                 }).user;
@@ -1348,6 +1703,11 @@
                         n: 1,
                         pageValue: 1,
                         types: "warpeffect"
+                    }).data,
+                    r = (0, v.dq)({
+                        n: 1,
+                        pageValue: 1,
+                        types: "loadingscreen"
                     }).data;
                 return a.createElement("div", null, a.createElement("div", {
                     className: "tw-px-4"
@@ -1370,6 +1730,11 @@
                         condition: !0,
                         hasNotification: (null == n ? void 0 : n.totalCount) > 0
                     }, {
+                        name: "Loading Screens",
+                        to: "loading-screens",
+                        condition: !0,
+                        hasNotification: (null == r ? void 0 : r.totalCount) > 0
+                    }, {
                         name: "Archived",
                         to: "archived",
                         condition: !0
@@ -1387,19 +1752,22 @@
                     })
                 }), a.createElement(l.AW, {
                     path: "drones",
-                    element: a.createElement(ae, null)
+                    element: a.createElement(ce, null)
                 }), a.createElement(l.AW, {
                     path: "portals",
-                    element: a.createElement(ie, null)
+                    element: a.createElement(we, null)
                 }), a.createElement(l.AW, {
                     path: "warp-effects",
-                    element: a.createElement(oe, null)
+                    element: a.createElement(fe, null)
+                }), a.createElement(l.AW, {
+                    path: "loading-screens",
+                    element: a.createElement(ue, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
-                    element: a.createElement(X, null)
+                    element: a.createElement(K, null)
                 }))))
             };
-            const ue = function() {
+            const he = function() {
                 var e, t, n, r, l = (0, v.F)(),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -1478,7 +1846,7 @@
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
                     className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map((function(e) {
-                    return a.createElement(H, {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         type: y.b5.emojis.archived,
@@ -1490,9 +1858,9 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no archived emojis."))))
             };
-            var me = n(46686),
-                de = n(17219),
-                we = function(e) {
+            var xe = n(46686),
+                ye = n(17219),
+                Ee = function(e) {
                     var t = e.isOpen,
                         n = e.onCloseCallback,
                         r = e.deleteCallback,
@@ -1523,11 +1891,11 @@
                         disabled: l
                     }, "Delete"))))
                 };
-            we.propTypes = {};
-            const pe = we;
-            var ve = n(77267),
-                fe = n(2723),
-                ge = function(e) {
+            Ee.propTypes = {};
+            const be = Ee;
+            var ke = n(77267),
+                Ne = n(2723),
+                je = function(e) {
                     var t = e.uploadCallback,
                         n = e.disabled,
                         r = e.icon,
@@ -1547,19 +1915,19 @@
                         onClick: t,
                         disabled: n
                     }, a.createElement(E.Z, {
-                        icon: fe.cf,
+                        icon: Ne.cf,
                         className: "tw-mr-2"
                     }), i))
                 };
-            ge.propTypes = {
-                uploadCallback: z().func.isRequired,
-                disabled: z().bool.isRequired,
-                icon: z().object.isRequired,
-                text: z().string.isRequired,
-                uploadText: z().string.isRequired
+            je.propTypes = {
+                uploadCallback: q().func.isRequired,
+                disabled: q().bool.isRequired,
+                icon: q().object.isRequired,
+                text: q().string.isRequired,
+                uploadText: q().string.isRequired
             };
-            const he = ge;
-            var xe = function() {
+            const Ce = je;
+            var Oe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -1575,26 +1943,26 @@
                     k = (0, a.useState)(null),
                     N = (0, O.Z)(k, 2),
                     F = N[0],
-                    D = N[1],
-                    L = (0, v.Xz)(),
-                    R = (0, O.Z)(L, 2),
+                    L = N[1],
+                    D = (0, v.Xz)(),
+                    R = (0, O.Z)(D, 2),
                     V = R[0],
-                    T = R[1].isLoading,
-                    M = (0, q.I0)(),
+                    M = R[1].isLoading,
+                    T = (0, $.I0)(),
                     _ = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
-                    W = null == _ ? void 0 : _.hasVRCPlus,
-                    U = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !W;
+                    U = null == _ ? void 0 : _.hasVRCPlus,
+                    W = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !U;
                 (0, a.useEffect)((function() {
                     return function() {
-                        M({
+                        T({
                             type: "gallery/resetGallery"
                         })
                     }
-                }), [M]);
-                var z = (0, de.y)().data,
-                    $ = (0, v.aj)({
+                }), [T]);
+                var z = (0, ye.y)().data,
+                    q = (0, v.aj)({
                         n: 100,
                         pageValue: 1,
                         types: "emoji",
@@ -1603,19 +1971,19 @@
                         archived: !1,
                         order: "newest" === o ? "newest_created" : "oldest_created"
                     }),
-                    Y = $.data,
-                    G = $.error,
-                    X = $.isError,
-                    B = $.isFetching,
+                    G = q.data,
+                    Y = q.error,
+                    B = q.isError,
+                    H = q.isFetching,
                     K = (0, a.useMemo)((function() {
                         var e;
-                        return (null == Y || null === (e = Y.data) || void 0 === e ? void 0 : e.length) > 0
-                    }), [Y]),
-                    ee = (0, q.v9)((function(e) {
+                        return (null == G || null === (e = G.data) || void 0 === e ? void 0 : e.length) > 0
+                    }), [G]),
+                    J = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(ee, Y);
-                var te = null !== (e = null == z ? void 0 : z.maxUserEmoji) && void 0 !== e ? e : 18,
+                te(J, G);
+                var Q = null !== (e = null == z ? void 0 : z.maxUserEmoji) && void 0 !== e ? e : 18,
                     ne = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             return P().wrap((function(e) {
@@ -1625,7 +1993,7 @@
                                             itemId: F.id
                                         });
                                     case 3:
-                                        f(!1), M((0, J.AV)()), (0, I.d)({
+                                        f(!1), T((0, ee.AV)()), (0, I.d)({
                                             color: "success",
                                             title: "Emoji deleted",
                                             message: "Emoji deleted successfully",
@@ -1653,18 +2021,18 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    re = B;
+                    re = H;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(pe, {
+                }, a.createElement(be, {
                     isOpen: p,
                     onCloseCallback: function() {
                         return f(!1)
                     },
                     deleteCallback: ne,
-                    isDeleting: T,
+                    isDeleting: M,
                     title: "Delete Emoji"
-                }), K && W && a.createElement(a.Fragment, null, a.createElement("h3", {
+                }), K && U && a.createElement(a.Fragment, null, a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Custom Emojis"), a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
@@ -1676,10 +2044,10 @@
                     onClick: function() {
                         return E(!0)
                     },
-                    disabled: (null == Y ? void 0 : Y.data.length) >= te
+                    disabled: (null == G ? void 0 : G.data.length) >= Q
                 }, "Upload Emoji"), a.createElement("p", {
                     className: "tw-text-white tw-text-base tw-m-0 tw-p-0"
-                }, null == Y ? void 0 : Y.data.length, " / ", te, " emoji")), a.createElement(i.Lt, {
+                }, null == G ? void 0 : G.data.length, " / ", Q, " emoji")), a.createElement(i.Lt, {
                     options: [{
                         label: "Newest",
                         value: "newest"
@@ -1691,35 +2059,35 @@
                     onChange: u
                 }))), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, X && a.createElement("div", {
+                }, B && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load emoji"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (t = null === (n = G.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
+                }, null !== (t = null === (n = Y.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, U && K && a.createElement(ve.Z, {
+                })) : a.createElement("div", null, W && K && a.createElement(ke.Z, {
                     title: "Your custom emoji are temporarily locked.",
                     description: "Resubscribe to VRC+ to restore them instantly."
                 }), K ? a.createElement("div", {
                     className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == Y || null === (r = Y.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                }, null == G || null === (r = G.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
-                        disabled: U,
+                        disabled: W,
                         item: e,
                         onClickCallback: function() {
                             return function(e) {
                                 var t = e.emoji,
                                     n = e.index;
-                                D(t), M((0, J.lc)({
-                                    gallery: (null == Y ? void 0 : Y.data) || [],
+                                L(t), T((0, ee.lc)({
+                                    gallery: (null == G ? void 0 : G.data) || [],
                                     openIndex: n,
                                     deleteItemCallback: function() {
                                         return f(!0)
@@ -1732,19 +2100,19 @@
                             })
                         },
                         onDeleteCallback: function() {
-                            D(e), f(!0)
+                            L(e), f(!0)
                         },
                         type: y.b5.emojis.custom
                     })
-                }))) : W ? a.createElement(he, {
+                }))) : U ? a.createElement(Ce, {
                     icon: m.default,
                     text: "You have no custom emoji.",
                     uploadText: "Upload Emoji",
                     uploadCallback: function() {
                         return E(!0)
                     },
-                    disabled: (null == Y ? void 0 : Y.data.length) >= te
-                }) : U ? a.createElement(j, {
+                    disabled: (null == G ? void 0 : G.data.length) >= Q
+                }) : W ? a.createElement(j, {
                     icon: m.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 }) : a.createElement("p", {
@@ -1755,17 +2123,17 @@
                     },
                     isVisible: !0,
                     title: "Upload a New Emoji",
-                    children: a.createElement(me.Z, {
+                    children: a.createElement(xe.Z, {
                         onClose: function() {
                             return E(!1)
                         }
                     })
                 }))
             };
-            xe.propTypes = {};
-            const ye = xe;
+            Oe.propTypes = {};
+            const Ze = Oe;
 
-            function Ee(e, t) {
+            function Ae(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1776,18 +2144,18 @@
                 return n
             }
 
-            function be(e) {
+            function Se(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Ee(Object(n), !0).forEach((function(t) {
-                        (0, K.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ee(Object(n)).forEach((function(t) {
+                    t % 2 ? Ae(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ae(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var ke = function() {
+            var Fe = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -1807,25 +2175,25 @@
                     N = (0, a.useState)(!1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    D = j[1],
-                    L = (0, ee._)("skipInventoryArchiveConfirmation", !1),
-                    R = (0, O.Z)(L, 2),
+                    L = j[1],
+                    D = (0, ne._)("skipInventoryArchiveConfirmation", !1),
+                    R = (0, O.Z)(D, 2),
                     V = R[0],
-                    T = (R[1], (0, v.F)()),
-                    M = (0, O.Z)(T, 2),
-                    _ = M[0],
-                    W = M[1].isLoading,
-                    U = (0, v.fv)(),
-                    z = (0, O.Z)(U, 1)[0],
-                    $ = (0, q.I0)();
+                    M = (R[1], (0, v.F)()),
+                    T = (0, O.Z)(M, 2),
+                    _ = T[0],
+                    U = T[1].isLoading,
+                    W = (0, v.fv)(),
+                    z = (0, O.Z)(W, 1)[0],
+                    q = (0, $.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
-                        $({
+                        q({
                             type: "gallery/resetGallery"
                         })
                     }
-                }), [$]);
-                var Y = (0, v.aj)(be(be({
+                }), [q]);
+                var G = (0, v.aj)(Se(Se({
                         n: 100,
                         pageValue: 1,
                         types: "emoji",
@@ -1837,40 +2205,56 @@
                     }), "all" !== d && {
                         collections: d
                     })),
-                    G = Y.data,
-                    X = Y.error,
-                    K = Y.isError,
-                    te = Y.isFetching,
-                    re = (0, q.v9)((function(e) {
+                    Y = G.data,
+                    B = G.error,
+                    H = G.isError,
+                    K = G.isFetching,
+                    Q = (0, v.yM)(),
+                    re = Q.data,
+                    le = (Q.error, Q.isError, Q.isFetching),
+                    ie = (0, a.useMemo)((function() {
+                        var e = re ? re.filter((function(e) {
+                            return "emoji" === e.itemType
+                        })) : [];
+                        return g && (e = e.filter((function(e) {
+                            var t;
+                            return null === (t = e.metadata) || void 0 === t ? void 0 : t.assetBundleId
+                        }))), Y ? Se(Se({}, Y), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(Y.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [re, Y, g]),
+                    ce = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(re, G);
-                var ae = (0, v.sw)(),
-                    le = ae.data,
-                    ie = (ae.error, ae.isError, ae.isFetching, (0, a.useMemo)((function() {
-                        if (!le) return [];
-                        var e = le.map((function(e) {
+                te(ce, ie);
+                var oe = (0, v.sw)(),
+                    se = oe.data,
+                    ue = (oe.error, oe.isError, oe.isFetching, (0, a.useMemo)((function() {
+                        if (!se) return [];
+                        var e = se.map((function(e) {
                             return {
                                 label: e,
                                 value: e
                             }
                         }));
-                        return [].concat((0, B.Z)(e), [{
+                        return [].concat((0, J.Z)(e), [{
                             label: "All",
                             value: "all"
                         }])
-                    }), [le])),
-                    ce = function() {
+                    }), [se])),
+                    me = function() {
                         var e = (0, C.Z)(P().mark((function e(t) {
                             var n, r;
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = t.emoji, r = t.index, k(n), $((0, J.lc)({
-                                                gallery: (null == G ? void 0 : G.data) || [],
+                                        if (n = t.emoji, r = t.index, k(n), q((0, ee.lc)({
+                                                gallery: (null == ie ? void 0 : ie.data) || [],
                                                 openIndex: r,
                                                 onArchiveCallback: function(e) {
-                                                    return se({
+                                                    return we({
                                                         emoji: e
                                                     })
                                                 },
@@ -1903,7 +2287,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    oe = function() {
+                    de = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             var t, n, r, a = arguments;
                             return P().wrap((function(e) {
@@ -1914,13 +2298,13 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (D(!1), k(null), $((0, J.AV)()), (0, I.d)({
+                                        if (L(!1), k(null), q((0, ee.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Emoji archived",
                                                 message: "Emoji archived successfully",
                                                 icon: S.f8,
                                                 timeout: 5e3
-                                            }), null != (r = null === t ? b : null == G || null === (n = G.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                            }), null != (r = null === t ? b : null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
                                             }))) && r.isSeen) {
                                             e.next = 18;
@@ -1962,22 +2346,22 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    se = function(e) {
+                    we = function(e) {
                         var t = e.emoji,
                             n = void 0 === t ? null : t;
-                        V ? oe(n.id) : (D(!0), k(n))
+                        V ? de(n.id) : (L(!0), k(n))
                     },
-                    ue = te;
+                    pe = K || le;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
+                }, a.createElement(ae, {
                     itemType: "emoji",
                     isOpen: F,
                     onCloseCallback: function() {
-                        return D(!1)
+                        return L(!1)
                     },
-                    archiveItemCallback: oe,
-                    isArchiving: W
+                    archiveItemCallback: de,
+                    isArchiving: U
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Exclusive Emojis"), a.createElement("p", {
@@ -1987,7 +2371,7 @@
                 }, a.createElement("div", {
                     className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
                 }, a.createElement(i.Lt, {
-                    options: ie,
+                    options: ue,
                     value: d,
                     onChange: w,
                     className: "tw-min-w-[200px]"
@@ -2011,34 +2395,34 @@
                     onChange: s
                 })), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, K && a.createElement("div", {
+                }, H && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load emojis"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = X.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
+                }, null !== (e = null === (t = B.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), pe ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, (null == G || null === (n = G.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == G || null === (r = G.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                })) : a.createElement("div", null, (null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == ie || null === (r = ie.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         onClickCallback: function() {
-                            return ce({
+                            return me({
                                 emoji: e,
                                 index: t
                             })
                         },
                         type: y.b5.emojis.exclusive,
                         onArchiveCallback: function() {
-                            return se({
+                            return we({
                                 emoji: e
                             })
                         }
@@ -2047,9 +2431,9 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "No exclusive emojis", g ? " with special effects" : "", "."))))
             };
-            ke.propTypes = {};
-            const Ne = ke;
-            const je = function() {
+            Fe.propTypes = {};
+            const Pe = Fe;
+            const Ie = function() {
                 var e = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
@@ -2090,19 +2474,19 @@
                     })
                 }), a.createElement(l.AW, {
                     path: "custom",
-                    element: a.createElement(ye, null)
+                    element: a.createElement(Ze, null)
                 }), a.createElement(l.AW, {
                     path: "exclusive",
-                    element: a.createElement(Ne, null)
+                    element: a.createElement(Pe, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
-                    element: a.createElement(ue, null)
+                    element: a.createElement(he, null)
                 })))) : a.createElement(j, {
                     icon: m.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 })
             };
-            const Ce = function() {
+            const Le = function() {
                 var e, t, n, r, l = (0, v.F)(),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -2181,7 +2565,7 @@
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
                     className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map((function(e) {
-                    return a.createElement(H, {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         type: y.b5.props.archived,
@@ -2194,7 +2578,7 @@
                 }, "You have no archived items."))))
             };
 
-            function Oe(e, t) {
+            function De(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -2204,7 +2588,19 @@
                 }
                 return n
             }
-            const Ze = function() {
+
+            function Re(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? De(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : De(Object(n)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                    }))
+                }
+                return e
+            }
+            const Ve = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -2221,16 +2617,16 @@
                     E = (0, O.Z)(x, 2),
                     b = E[0],
                     k = E[1],
-                    N = (0, ee._)("skipInventoryArchiveConfirmation", !1),
+                    N = (0, ne._)("skipInventoryArchiveConfirmation", !1),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    D = (j[1], (0, v.F)()),
-                    L = (0, O.Z)(D, 2),
-                    R = L[0],
-                    V = L[1].isLoading,
-                    T = (0, v.fv)(),
-                    M = (0, O.Z)(T, 1)[0],
-                    _ = (0, q.I0)();
+                    L = (j[1], (0, v.F)()),
+                    D = (0, O.Z)(L, 2),
+                    R = D[0],
+                    V = D[1].isLoading,
+                    M = (0, v.fv)(),
+                    T = (0, O.Z)(M, 1)[0],
+                    _ = (0, $.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
                         _({
@@ -2238,17 +2634,7 @@
                         })
                     }
                 }), [_]);
-                var W = (0, v.aj)(function(e) {
-                        for (var t = 1; t < arguments.length; t++) {
-                            var n = null != arguments[t] ? arguments[t] : {};
-                            t % 2 ? Oe(Object(n), !0).forEach((function(t) {
-                                (0, K.Z)(e, t, n[t])
-                            })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Oe(Object(n)).forEach((function(t) {
-                                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                            }))
-                        }
-                        return e
-                    }({
+                var U = (0, v.aj)(Re({
                         n: 100,
                         pageValue: 1,
                         types: "prop",
@@ -2258,40 +2644,53 @@
                     }, "all" !== d && {
                         collections: d
                     })),
-                    U = W.data,
-                    z = W.error,
-                    $ = W.isError,
-                    Y = W.isFetching,
-                    G = (0, q.v9)((function(e) {
+                    W = U.data,
+                    z = U.error,
+                    q = U.isError,
+                    G = U.isFetching,
+                    Y = (0, v.yM)(),
+                    B = Y.data,
+                    H = (Y.error, Y.isError, Y.isFetching),
+                    K = (0, a.useMemo)((function() {
+                        var e = B ? B.filter((function(e) {
+                            return "prop" === e.itemType
+                        })) : [];
+                        return W ? Re(Re({}, W), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(W.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [B, W]),
+                    Q = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(G, U);
-                var X = (0, v.sw)(),
-                    te = X.data,
-                    re = (X.error, X.isError, X.isFetching, (0, a.useMemo)((function() {
-                        if (!te) return [];
-                        var e = te.map((function(e) {
+                te(Q, K);
+                var re = (0, v.sw)(),
+                    le = re.data,
+                    ie = (re.error, re.isError, re.isFetching, (0, a.useMemo)((function() {
+                        if (!le) return [];
+                        var e = le.map((function(e) {
                             return {
                                 label: e,
                                 value: e
                             }
                         }));
-                        return [].concat((0, B.Z)(e), [{
+                        return [].concat((0, J.Z)(e), [{
                             label: "All",
                             value: "all"
                         }])
-                    }), [te])),
-                    ae = function() {
+                    }), [le])),
+                    ce = function() {
                         var e = (0, C.Z)(P().mark((function e(t) {
                             var n, r;
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = t.prop, r = t.index, h(n), _((0, J.lc)({
-                                                gallery: (null == U ? void 0 : U.data) || [],
+                                        if (n = t.prop, r = t.index, h(n), _((0, ee.lc)({
+                                                gallery: (null == K ? void 0 : K.data) || [],
                                                 openIndex: r,
                                                 onArchiveCallback: function(e) {
-                                                    return ie({
+                                                    return se({
                                                         prop: e
                                                     })
                                                 },
@@ -2300,7 +2699,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, M({
+                                        return e.prev = 4, e.next = 7, T({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -2324,7 +2723,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    le = function() {
+                    oe = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             var t, n, r, a = arguments;
                             return P().wrap((function(e) {
@@ -2335,19 +2734,19 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), h(null), _((0, J.AV)()), (0, I.d)({
+                                        if (k(!1), h(null), _((0, ee.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Item archived",
                                                 message: "Item archived successfully",
                                                 icon: S.f8,
                                                 timeout: 5e3
-                                            }), null != (r = null === t ? g : null == U || null === (n = U.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                            }), null != (r = null === t ? g : null == K || null === (n = K.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
                                             }))) && r.isSeen) {
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, M({
+                                        return e.prev = 10, e.next = 13, T({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -2383,21 +2782,21 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ie = function(e) {
+                    se = function(e) {
                         var t = e.prop,
                             n = void 0 === t ? null : t;
-                        F ? le(n.id) : (k(!0), h(n))
+                        F ? oe(n.id) : (k(!0), h(n))
                     },
-                    ce = Y;
+                    ue = G || H;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
+                }, a.createElement(ae, {
                     itemType: "prop",
                     isOpen: b,
                     onCloseCallback: function() {
                         return k(!1)
                     },
-                    archiveItemCallback: le,
+                    archiveItemCallback: oe,
                     isArchiving: V
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
@@ -2408,7 +2807,7 @@
                 }, a.createElement("div", {
                     className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
                 }, a.createElement(i.Lt, {
-                    options: re,
+                    options: ie,
                     value: d,
                     onChange: w,
                     className: "tw-min-w-[200px]"
@@ -2424,34 +2823,34 @@
                     onChange: s
                 })), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, $ && a.createElement("div", {
+                }, q && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load items"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ce ? a.createElement("div", {
+                }, null !== (e = null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, (null == U || null === (n = U.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == U || null === (r = U.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                })) : a.createElement("div", null, (null == K || null === (n = K.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == K || null === (r = K.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         onClickCallback: function() {
-                            return ae({
+                            return ce({
                                 prop: e,
                                 index: t
                             })
                         },
                         type: y.b5.props.exclusive,
                         onArchiveCallback: function() {
-                            return ie({
+                            return se({
                                 prop: e
                             })
                         }
@@ -2460,7 +2859,7 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "No exclusive items."))))
             };
-            const Ae = function() {
+            const Me = function() {
                 (0, s.Tu)({
                     withRecentSubscription: !0
                 }).user;
@@ -2497,13 +2896,13 @@
                     })
                 }), a.createElement(l.AW, {
                     path: "all",
-                    element: a.createElement(Ze, null)
+                    element: a.createElement(Ve, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
-                    element: a.createElement(Ce, null)
+                    element: a.createElement(Le, null)
                 }))))
             };
-            const Se = function() {
+            const Te = function() {
                 var e, t, n, r, l = (0, v.F)(),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -2582,7 +2981,7 @@
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
                     className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map((function(e) {
-                    return a.createElement(H, {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         type: y.b5.stickers.archived,
@@ -2594,8 +2993,8 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no archived stickers."))))
             };
-            var Fe = n(95024),
-                Pe = function() {
+            var _e = n(95024),
+                Ue = function() {
                     var e, t, n, r, l = (0, a.useState)("newest"),
                         c = (0, O.Z)(l, 2),
                         o = c[0],
@@ -2611,26 +3010,26 @@
                         k = (0, a.useState)(null),
                         N = (0, O.Z)(k, 2),
                         F = N[0],
-                        D = N[1],
-                        L = (0, v.Xz)(),
-                        R = (0, O.Z)(L, 2),
+                        L = N[1],
+                        D = (0, v.Xz)(),
+                        R = (0, O.Z)(D, 2),
                         V = R[0],
-                        T = R[1].isLoading,
-                        M = (0, q.I0)(),
+                        M = R[1].isLoading,
+                        T = (0, $.I0)(),
                         _ = (0, s.Tu)({
                             withRecentSubscription: !0
                         }).user,
-                        W = null == _ ? void 0 : _.hasVRCPlus,
-                        U = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !W;
+                        U = null == _ ? void 0 : _.hasVRCPlus,
+                        W = (null == _ ? void 0 : _.previouslyHadVRCPlus) && !U;
                     (0, a.useEffect)((function() {
                         return function() {
-                            M({
+                            T({
                                 type: "gallery/resetGallery"
                             })
                         }
-                    }), [M]);
-                    var z = (0, de.y)().data,
-                        $ = (0, v.aj)({
+                    }), [T]);
+                    var z = (0, ye.y)().data,
+                        q = (0, v.aj)({
                             n: 100,
                             pageValue: 1,
                             types: "sticker",
@@ -2639,19 +3038,19 @@
                             archived: !1,
                             order: "newest" === o ? "newest_created" : "oldest_created"
                         }),
-                        Y = $.data,
-                        G = $.error,
-                        X = $.isError,
-                        B = $.isFetching,
+                        G = q.data,
+                        Y = q.error,
+                        B = q.isError,
+                        H = q.isFetching,
                         K = (0, a.useMemo)((function() {
                             var e;
-                            return (null == Y || null === (e = Y.data) || void 0 === e ? void 0 : e.length) > 0
-                        }), [Y]),
-                        ee = (0, q.v9)((function(e) {
+                            return (null == G || null === (e = G.data) || void 0 === e ? void 0 : e.length) > 0
+                        }), [G]),
+                        J = (0, $.v9)((function(e) {
                             return e.gallery
                         }));
-                    Q(ee, Y);
-                    var te = null !== (e = null == z ? void 0 : z.maxUserStickers) && void 0 !== e ? e : 18,
+                    te(J, G);
+                    var Q = null !== (e = null == z ? void 0 : z.maxUserStickers) && void 0 !== e ? e : 18,
                         ne = function() {
                             var e = (0, C.Z)(P().mark((function e() {
                                 return P().wrap((function(e) {
@@ -2661,7 +3060,7 @@
                                                 itemId: F.id
                                             });
                                         case 3:
-                                            f(!1), M((0, J.AV)()), D(null), (0, I.d)({
+                                            f(!1), T((0, ee.AV)()), L(null), (0, I.d)({
                                                 color: "success",
                                                 title: "Sticker deleted",
                                                 message: "Sticker deleted successfully",
@@ -2689,18 +3088,18 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        re = B;
+                        re = H;
                     return a.createElement("div", {
                         className: "tw-px-4 tw-@container/inventory-items"
-                    }, a.createElement(pe, {
+                    }, a.createElement(be, {
                         isOpen: p,
                         onCloseCallback: function() {
                             return f(!1)
                         },
                         deleteCallback: ne,
-                        isDeleting: T,
+                        isDeleting: M,
                         title: "Delete Sticker"
-                    }), K && W && a.createElement(a.Fragment, null, a.createElement("h3", {
+                    }), K && U && a.createElement(a.Fragment, null, a.createElement("h3", {
                         className: "heading tw-text-white tw-text-left tw-text-2xl"
                     }, "Custom Stickers"), a.createElement("p", {
                         className: "tw-text-light-grey tw-text-base"
@@ -2712,10 +3111,10 @@
                         onClick: function() {
                             return E(!0)
                         },
-                        disabled: (null == Y ? void 0 : Y.data.length) >= te
+                        disabled: (null == G ? void 0 : G.data.length) >= Q
                     }, "Upload Sticker"), a.createElement("p", {
                         className: "tw-text-white tw-text-base tw-m-0 tw-p-0"
-                    }, null == Y ? void 0 : Y.data.length, " / ", te, " stickers")), a.createElement(i.Lt, {
+                    }, null == G ? void 0 : G.data.length, " / ", Q, " stickers")), a.createElement(i.Lt, {
                         options: [{
                             label: "Newest",
                             value: "newest"
@@ -2727,35 +3126,35 @@
                         onChange: u
                     }))), a.createElement("div", {
                         className: "tw-mt-6 tw-mb-4"
-                    }, X && a.createElement("div", {
+                    }, B && a.createElement("div", {
                         className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                     }, a.createElement("p", {
                         className: "tw-text-light-grey tw-text-base"
                     }, "Failed to load stickers"), a.createElement("code", {
                         className: "tw-text-white tw-text-base"
-                    }, null !== (t = null === (n = G.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
+                    }, null !== (t = null === (n = Y.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
                         className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                     }, a.createElement(i.$1, {
                         icon: Z.LM,
                         spin: !0,
                         color: "#404C58",
                         width: "32"
-                    })) : a.createElement("div", null, U && K && a.createElement(ve.Z, {
+                    })) : a.createElement("div", null, W && K && a.createElement(ke.Z, {
                         title: "Your custom stickers are temporarily locked.",
                         description: "Resubscribe to VRC+ to restore them instantly."
                     }), K ? a.createElement("div", {
                         className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                    }, null == Y || null === (r = Y.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                        return a.createElement(H, {
+                    }, null == G || null === (r = G.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                        return a.createElement(X, {
                             key: e.id,
-                            disabled: U,
+                            disabled: W,
                             item: e,
                             onClickCallback: function() {
                                 return function(e) {
                                     var t = e.sticker,
                                         n = e.index;
-                                    D(t), M((0, J.lc)({
-                                        gallery: (null == Y ? void 0 : Y.data) || [],
+                                    L(t), T((0, ee.lc)({
+                                        gallery: (null == G ? void 0 : G.data) || [],
                                         openIndex: n,
                                         deleteItemCallback: function() {
                                             return f(!0)
@@ -2768,19 +3167,19 @@
                                 })
                             },
                             onDeleteCallback: function() {
-                                D(e), f(!0)
+                                L(e), f(!0)
                             },
                             type: y.b5.stickers.custom
                         })
-                    }))) : W ? a.createElement(he, {
+                    }))) : U ? a.createElement(Ce, {
                         icon: w.default,
                         text: "You have no custom stickers.",
                         uploadText: "Upload Sticker",
                         uploadCallback: function() {
                             return E(!0)
                         },
-                        disabled: (null == Y ? void 0 : Y.data.length) >= te
-                    }) : U ? a.createElement(j, {
+                        disabled: (null == G ? void 0 : G.data.length) >= Q
+                    }) : W ? a.createElement(j, {
                         icon: w.default,
                         text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                     }) : a.createElement("p", {
@@ -2790,18 +3189,17 @@
                             return E(!1)
                         },
                         isVisible: !0,
-                        title: "Upload a New Sticker",
-                        children: a.createElement(Fe.Z, {
-                            onClose: function() {
-                                return E(!1)
-                            }
-                        })
-                    }))
+                        title: "Upload a New Sticker"
+                    }, a.createElement(_e.Z, {
+                        onClose: function() {
+                            return E(!1)
+                        }
+                    })))
                 };
-            Pe.propTypes = {};
-            const Ie = Pe;
+            Ue.propTypes = {};
+            const We = Ue;
 
-            function De(e, t) {
+            function ze(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -2812,18 +3210,18 @@
                 return n
             }
 
-            function Le(e) {
+            function qe(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? De(Object(n), !0).forEach((function(t) {
-                        (0, K.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : De(Object(n)).forEach((function(t) {
+                    t % 2 ? ze(Object(n), !0).forEach((function(t) {
+                        (0, Q.Z)(e, t, n[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ze(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Re = function() {
+            var $e = function() {
                 var e, t, n, r, l = (0, a.useState)("newest"),
                     c = (0, O.Z)(l, 2),
                     o = c[0],
@@ -2843,25 +3241,25 @@
                     N = (0, a.useState)(null),
                     j = (0, O.Z)(N, 2),
                     F = j[0],
-                    D = j[1],
-                    L = (0, ee._)("skipInventoryArchiveConfirmation", !1),
-                    R = (0, O.Z)(L, 2),
+                    L = j[1],
+                    D = (0, ne._)("skipInventoryArchiveConfirmation", !1),
+                    R = (0, O.Z)(D, 2),
                     V = R[0],
-                    T = (R[1], (0, v.F)()),
-                    M = (0, O.Z)(T, 2),
-                    _ = M[0],
-                    W = M[1].isLoading,
-                    U = (0, v.fv)(),
-                    z = (0, O.Z)(U, 1)[0],
-                    $ = (0, q.I0)();
+                    M = (R[1], (0, v.F)()),
+                    T = (0, O.Z)(M, 2),
+                    _ = T[0],
+                    U = T[1].isLoading,
+                    W = (0, v.fv)(),
+                    z = (0, O.Z)(W, 1)[0],
+                    q = (0, $.I0)();
                 (0, a.useEffect)((function() {
                     return function() {
-                        $({
+                        q({
                             type: "gallery/resetGallery"
                         })
                     }
-                }), [$]);
-                var Y = (0, v.aj)(Le(Le({
+                }), [q]);
+                var G = (0, v.aj)(qe(qe({
                         n: 100,
                         pageValue: 1,
                         types: "sticker",
@@ -2873,40 +3271,56 @@
                     }), "all" !== d && {
                         collections: d
                     })),
-                    G = Y.data,
-                    X = Y.error,
-                    K = Y.isError,
-                    te = Y.isFetching,
-                    re = (0, q.v9)((function(e) {
+                    Y = G.data,
+                    B = G.error,
+                    H = G.isError,
+                    K = G.isFetching,
+                    Q = (0, v.yM)(),
+                    re = Q.data,
+                    le = (Q.error, Q.isError, Q.isFetching),
+                    ie = (0, a.useMemo)((function() {
+                        var e = re ? re.filter((function(e) {
+                            return "sticker" === e.itemType
+                        })) : [];
+                        return g && (e = e.filter((function(e) {
+                            var t, n;
+                            return !0 === (null === (t = e.metadata) || void 0 === t ? void 0 : t.animated) && "number" == typeof(null === (n = e.metadata) || void 0 === n ? void 0 : n.frames)
+                        }))), Y ? qe(qe({}, Y), {}, {
+                            data: [].concat((0, J.Z)(e), (0, J.Z)(Y.data || []))
+                        }) : e.length > 0 ? {
+                            data: e
+                        } : null
+                    }), [re, Y, g]),
+                    ce = (0, $.v9)((function(e) {
                         return e.gallery
                     }));
-                Q(re, G);
-                var ae = (0, v.sw)(),
-                    le = ae.data,
-                    ie = (ae.error, ae.isError, ae.isFetching, (0, a.useMemo)((function() {
-                        if (!le) return [];
-                        var e = le.map((function(e) {
+                te(ce, ie);
+                var oe = (0, v.sw)(),
+                    se = oe.data,
+                    ue = (oe.error, oe.isError, oe.isFetching, (0, a.useMemo)((function() {
+                        if (!se) return [];
+                        var e = se.map((function(e) {
                             return {
                                 label: e,
                                 value: e
                             }
                         }));
-                        return [].concat((0, B.Z)(e), [{
+                        return [].concat((0, J.Z)(e), [{
                             label: "All",
                             value: "all"
                         }])
-                    }), [le])),
-                    ce = function() {
+                    }), [se])),
+                    me = function() {
                         var e = (0, C.Z)(P().mark((function e(t) {
                             var n, r;
                             return P().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = t.sticker, r = t.index, D(n), $((0, J.lc)({
-                                                gallery: (null == G ? void 0 : G.data) || [],
+                                        if (n = t.sticker, r = t.index, L(n), q((0, ee.lc)({
+                                                gallery: (null == ie ? void 0 : ie.data) || [],
                                                 openIndex: r,
                                                 onArchiveCallback: function(e) {
-                                                    return se({
+                                                    return we({
                                                         sticker: e
                                                     })
                                                 },
@@ -2939,7 +3353,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    oe = function() {
+                    de = function() {
                         var e = (0, C.Z)(P().mark((function e() {
                             var t, n, r, a = arguments;
                             return P().wrap((function(e) {
@@ -2950,13 +3364,13 @@
                                             isArchived: !0
                                         }).unwrap();
                                     case 4:
-                                        if (k(!1), D(null), $((0, J.AV)()), (0, I.d)({
+                                        if (k(!1), L(null), q((0, ee.AV)()), (0, I.d)({
                                                 color: "success",
                                                 title: "Sticker archived",
                                                 message: "Sticker archived successfully",
                                                 icon: S.f8,
                                                 timeout: 5e3
-                                            }), null != (r = null === t ? F : null == G || null === (n = G.data) || void 0 === n ? void 0 : n.find((function(e) {
+                                            }), null != (r = null === t ? F : null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.find((function(e) {
                                                 return e.id === t
                                             }))) && r.isSeen) {
                                             e.next = 18;
@@ -2998,22 +3412,22 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    se = function(e) {
+                    we = function(e) {
                         var t = e.sticker,
                             n = void 0 === t ? null : t;
-                        V ? oe(n.id) : (k(!0), D(n))
+                        V ? de(n.id) : (k(!0), L(n))
                     },
-                    ue = te;
+                    pe = K || le;
                 return a.createElement("div", {
                     className: "tw-px-4 tw-@container/inventory-items"
-                }, a.createElement(ne, {
+                }, a.createElement(ae, {
                     itemType: "sticker",
                     isOpen: b,
                     onCloseCallback: function() {
                         return k(!1)
                     },
-                    archiveItemCallback: oe,
-                    isArchiving: W
+                    archiveItemCallback: de,
+                    isArchiving: U
                 }), a.createElement("h3", {
                     className: "heading tw-text-white tw-text-left tw-text-2xl"
                 }, "Exclusive Stickers"), a.createElement("p", {
@@ -3023,7 +3437,7 @@
                 }, a.createElement("div", {
                     className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
                 }, a.createElement(i.Lt, {
-                    options: ie,
+                    options: ue,
                     value: d,
                     onChange: w
                 }), a.createElement(i.vc, {
@@ -3046,34 +3460,34 @@
                     onChange: s
                 })), a.createElement("div", {
                     className: "tw-mt-6 tw-mb-4"
-                }, K && a.createElement("div", {
+                }, H && a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
                 }, "Failed to load stickers"), a.createElement("code", {
                     className: "tw-text-white tw-text-base"
-                }, null !== (e = null === (t = X.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
+                }, null !== (e = null === (t = B.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), pe ? a.createElement("div", {
                     className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
                 }, a.createElement(i.$1, {
                     icon: Z.LM,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
-                })) : a.createElement("div", null, (null == G || null === (n = G.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
-                }, null == G || null === (r = G.data) || void 0 === r ? void 0 : r.map((function(e, t) {
-                    return a.createElement(H, {
+                })) : a.createElement("div", null, (null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
+                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                }, null == ie || null === (r = ie.data) || void 0 === r ? void 0 : r.map((function(e, t) {
+                    return a.createElement(X, {
                         key: e.id,
                         item: e,
                         onClickCallback: function() {
-                            return ce({
+                            return me({
                                 sticker: e,
                                 index: t
                             })
                         },
                         type: y.b5.stickers.exclusive,
                         onArchiveCallback: function() {
-                            return se({
+                            return we({
                                 sticker: e
                             })
                         }
@@ -3082,9 +3496,9 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no exclusive stickers", g ? " with animated effects" : "", "."))))
             };
-            Re.propTypes = {};
-            const Ve = Re;
-            const Te = function() {
+            $e.propTypes = {};
+            const Ge = $e;
+            const Ye = function() {
                 var e = (0, s.Tu)({
                         withRecentSubscription: !0
                     }).user,
@@ -3129,16 +3543,16 @@
                     })
                 }), a.createElement(l.AW, {
                     path: "custom",
-                    element: a.createElement(Ie, null)
+                    element: a.createElement(We, null)
                 }), a.createElement(l.AW, {
                     path: "exclusive",
-                    element: a.createElement(Ve, null)
+                    element: a.createElement(Ge, null)
                 }), a.createElement(l.AW, {
                     path: "archived",
-                    element: a.createElement(Se, null)
+                    element: a.createElement(Te, null)
                 }))))
             };
-            const Me = function() {
+            const Be = function() {
                 var e = (0, s.Tu)().user,
                     t = (0, v.dq)({
                         n: 1,
@@ -3225,31 +3639,31 @@
                     element: a.createElement(h, null)
                 }), a.createElement(l.AW, {
                     path: "emojis",
-                    element: a.createElement(je, null)
+                    element: a.createElement(Ie, null)
                 }), a.createElement(l.AW, {
                     path: "emojis/*",
-                    element: a.createElement(je, null)
+                    element: a.createElement(Ie, null)
                 }), a.createElement(l.AW, {
                     path: "stickers",
-                    element: a.createElement(Te, null)
+                    element: a.createElement(Ye, null)
                 }), a.createElement(l.AW, {
                     path: "stickers/*",
-                    element: a.createElement(Te, null)
+                    element: a.createElement(Ye, null)
                 }), a.createElement(l.AW, {
                     path: "user-icons",
                     element: a.createElement(x, null)
                 }), a.createElement(l.AW, {
                     path: "items",
-                    element: a.createElement(Ae, null)
+                    element: a.createElement(Me, null)
                 }), a.createElement(l.AW, {
                     path: "items/*",
-                    element: a.createElement(Ae, null)
+                    element: a.createElement(Me, null)
                 }), a.createElement(l.AW, {
                     path: "cosmetics",
-                    element: a.createElement(se, null)
+                    element: a.createElement(ge, null)
                 }), a.createElement(l.AW, {
                     path: "cosmetics/*",
-                    element: a.createElement(se, null)
+                    element: a.createElement(ge, null)
                 }))))
             }
         },
@@ -3432,4 +3846,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54e2b639f484ffac0b84d6914466d2c5aa0cba5887f0f6dcd3eefc8d83c30a15.js.map
+//# sourceMappingURL=81eb995905968f9e2e174a5055e864a7f78d360f1a14f4b53fef48d4bf158da2.js.map
