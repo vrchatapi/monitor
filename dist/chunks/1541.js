@@ -448,7 +448,7 @@
                 a = n(65394),
                 o = n(85020),
                 i = n(67294),
-                l = n(96985);
+                l = n(89132);
             const c = function(e) {
                 var t = e.imageUrl,
                     n = e.closeCallback,
@@ -606,7 +606,7 @@
                 a = n(4942),
                 o = n(54546),
                 i = n(3471),
-                l = n(96985),
+                l = n(89132),
                 c = n(67294),
                 s = n(42938),
                 u = n(41145),
@@ -866,7 +866,7 @@
                 f = n(67294),
                 p = n(89250),
                 g = n(79655),
-                w = n(96985);
+                w = n(89132);
             var b = "https://assets.vrchat.com/www/groups/default_banner.png",
                 v = "https://assets.vrchat.com/www/groups/default_icon.png";
             const h = function(e) {
@@ -1055,7 +1055,7 @@
                 y = n(24732),
                 x = n(18478),
                 A = n(7469),
-                C = n(96985),
+                C = n(89132),
                 k = n(50048),
                 N = n(48313),
                 I = n(50466),
@@ -4350,7 +4350,7 @@
                     dice: W.RJ,
                     "triangle-exclamation": O.faTriangleExclamation
                 },
-                Ae = n(96985),
+                Ae = n(89132),
                 Ce = n(88233),
                 ke = n(2566);
             z().extend(U()), z().extend(R());
@@ -5410,4 +5410,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0c3c2eeb9537e5b86800c18f7ce7fbf35899f15f6351412c67d064c42dca0feb.js.map
+//# sourceMappingURL=4b002aad3666b7f46ae5cf0de038949804eb97cf0126a040e0c8d69138c4856d.js.map

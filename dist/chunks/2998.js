@@ -10,7 +10,7 @@
                 a = n(67294),
                 i = n(79655),
                 s = n(50048),
-                c = n(96985);
+                c = n(89132);
             const l = function(e) {
                 var t = e.tabs,
                     n = e.selected,
@@ -96,4 +96,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f1925a8a5ef8ddefc0b77a8d02d97c53c8675e670597652a8bf65dbc46dc2d2f.js.map
+//# sourceMappingURL=6d2461115377c0d6d98a6ea2b331bbd72ef15b1ee52afffe7a094918c08f37d3.js.map
