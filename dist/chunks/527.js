@@ -11,8 +11,8 @@
                 o = r(4965),
                 s = r(78076),
                 l = r(64687),
-                c = r.n(l),
-                u = r(67294),
+                u = r.n(l),
+                c = r(67294),
                 m = r(32981),
                 f = r(31541),
                 d = r(22497),
@@ -20,7 +20,7 @@
                 g = r(64258),
                 h = r(73423),
                 v = r(60006),
-                x = {
+                w = {
                     Aura: "Preview_B2-Aura.gif",
                     Bats: "Preview_B2-Fall_Bats.gif",
                     Bees: "Preview_B2-Bees.gif",
@@ -49,16 +49,16 @@
                     Stop: "Preview_B2-Stop.gif",
                     ZZZ: "Preview_B2-ZZZ.gif"
                 },
-                w = "CROP",
+                x = "CROP",
                 y = "STYLE",
-                b = r(89132);
-            var E = (0, o.Z)("div", {
+                b = r(80988);
+            var k = (0, o.Z)("div", {
                     target: "elhkzni1"
                 })({
                     name: "bp2yox",
                     styles: "flex:50%"
                 }),
-                k = (0, o.Z)("div", {
+                E = (0, o.Z)("div", {
                     target: "elhkzni0"
                 })({
                     name: "4kj7g6",
@@ -69,15 +69,15 @@
                     r = e.onBack,
                     n = e.onNext,
                     a = "\n    width: 12em;\n  ";
-                return u.createElement(u.Fragment, null, u.createElement(v.X2, null, u.createElement(E, null, u.createElement(b.zx, {
+                return c.createElement(c.Fragment, null, c.createElement(v.X2, null, c.createElement(k, null, c.createElement(b.zx, {
                     containerStyles: a,
                     neutral: !0,
                     onClick: t
-                }, "Cancel")), u.createElement(k, null, u.createElement(b.zx, {
+                }, "Cancel")), c.createElement(E, null, c.createElement(b.zx, {
                     containerStyles: a,
                     neutral: !0,
                     onClick: r
-                }, "Back"), u.createElement(b.zx, {
+                }, "Back"), c.createElement(b.zx, {
                     containerStyles: "".concat(a, "margin-left: 1em;"),
                     accent: !0,
                     onClick: n
@@ -97,13 +97,13 @@
                     name: "1q8t340",
                     styles: "width:100%;align-self:center;flex:10%;flex-grow:inherit"
                 }),
-                N = (0, o.Z)("div", {
+                B = (0, o.Z)("div", {
                     target: "e1f7ou1h0"
                 })({
                     name: "1ixejqt",
                     styles: "display:flex;flex-direction:column;background-color:#0a0a0d;border-radius:8px;width:100%;height:40em"
                 });
-            const B = function(e) {
+            const N = function(e) {
                 e.completedCallback;
                 var t = e.frames,
                     r = e.zoom,
@@ -112,13 +112,13 @@
                     o = e.setRotation,
                     s = e.crop,
                     l = e.setCrop,
-                    c = (e.croppedArea, e.setCroppedArea),
+                    u = (e.croppedArea, e.setCroppedArea),
                     m = (e.croppedAreaPixels, e.setCroppedAreaPixels),
-                    f = u.useState(0),
+                    f = c.useState(0),
                     d = (0, i.Z)(f, 2),
                     g = d[0];
                 d[1];
-                return u.createElement(N, null, u.createElement(C, null, u.createElement(I.ZP, {
+                return c.createElement(B, null, c.createElement(C, null, c.createElement(I.ZP, {
                     image: (0, p.Gr)(t[g]),
                     crop: s,
                     zoom: r,
@@ -129,12 +129,12 @@
                         return l(e)
                     },
                     onCropAreaChange: function(e, t) {
-                        c(e), m(t)
+                        u(e), m(t)
                     },
                     onZoomChange: function(e) {
                         return n(e)
                     }
-                })), u.createElement(P, null, u.createElement(S.Z, {
+                })), c.createElement(P, null, c.createElement(S.Z, {
                     onRotate: function(e) {
                         o(a + e)
                     },
@@ -142,7 +142,7 @@
                         n(1), o(0), l({
                             x: 0,
                             y: 0
-                        }), c({
+                        }), u({
                             x: 0,
                             y: 0,
                             width: 0,
@@ -161,25 +161,25 @@
                 })))
             };
             var _ = r(81192);
-            var z = (0, o.Z)("div", {
+            var j = (0, o.Z)("div", {
                     target: "e1a4r75r7"
                 })({
                     name: "wrqpcr",
                     styles: "height:30em;display:flex;flex-direction:column;align-items:center;justify-content:center;row-gap:3em;background-color:#0a0a0d"
                 }),
-                j = (0, o.Z)("div", {
+                z = (0, o.Z)("div", {
                     target: "e1a4r75r6"
                 })({
                     name: "1muh860",
                     styles: "font-size:12pt;font-weight:bold;margin-bottom:0.5em"
                 }),
-                T = (0, o.Z)("div", {
+                U = (0, o.Z)("div", {
                     target: "e1a4r75r5"
                 })({
                     name: "btw7q7",
                     styles: "width:260px;height:260px;margin-bottom:1em;border:5px solid #555;border-radius:20px"
                 }),
-                U = (0, o.Z)("div", {
+                T = (0, o.Z)("div", {
                     target: "e1a4r75r4"
                 })({
                     name: "5y4g3n",
@@ -209,18 +209,18 @@
                     name: "1d9z9vl",
                     styles: "width:25em"
                 });
-            const M = function(e) {
+            const V = function(e) {
                 var t = e.spriteSheet,
                     r = e.frameCount,
                     n = e.setFrameCount,
                     a = e.frameRate,
                     i = e.setFrameRate;
-                return u.createElement(u.Fragment, null, u.createElement(j, null, "Set the frame count and frame rate for your sprite sheet."), u.createElement(z, null, u.createElement(T, null, u.createElement(_.Z, {
+                return c.createElement(c.Fragment, null, c.createElement(z, null, "Set the frame count and frame rate for your sprite sheet."), c.createElement(j, null, c.createElement(U, null, c.createElement(_.Z, {
                     spriteSheet: t,
                     frameCount: r,
                     frameRate: a,
                     size: 250
-                })), u.createElement(U, null, u.createElement(A, null, u.createElement(R, null, "Frames"), u.createElement(F, {
+                })), c.createElement(T, null, c.createElement(A, null, c.createElement(R, null, "Frames"), c.createElement(F, {
                     type: "range",
                     className: "sliderInput",
                     min: 2,
@@ -230,7 +230,7 @@
                     onChange: function(e) {
                         n(e.target.value)
                     }
-                }), u.createElement(q, null, r, " / 64")), u.createElement(A, null, u.createElement(R, null, "FPS"), u.createElement(F, {
+                }), c.createElement(q, null, r, " / 64")), c.createElement(A, null, c.createElement(R, null, "FPS"), c.createElement(F, {
                     type: "range",
                     className: "sliderInput",
                     min: 1,
@@ -240,10 +240,10 @@
                     onChange: function(e) {
                         i(e.target.value)
                     }
-                }), u.createElement(q, null, a, " / 64")))))
+                }), c.createElement(q, null, a, " / 64")))))
             };
-            var V = function(e) {
-                    return "https://assets.vrchat.com/www/images/emoji-previews/".concat(x[e])
+            var M = function(e) {
+                    return "https://assets.vrchat.com/www/images/emoji-previews/".concat(w[e])
                 },
                 O = (0, o.Z)("span", {
                     target: "e1kj3uqh4"
@@ -278,12 +278,12 @@
             const $ = function(e) {
                 var t = e.style,
                     r = e.setStyle;
-                return u.createElement(L, null, u.createElement(O, null, t), u.createElement(G, {
-                    src: V(t)
-                }), u.createElement(Y, null, Object.keys(x).map((function(e) {
-                    return e === t ? u.createElement(X, {
+                return c.createElement(L, null, c.createElement(O, null, t), c.createElement(G, {
+                    src: M(t)
+                }), c.createElement(Y, null, Object.keys(w).map((function(e) {
+                    return e === t ? c.createElement(X, {
                         key: e
-                    }, e) : u.createElement(X, {
+                    }, e) : c.createElement(X, {
                         neutral: !0,
                         key: e,
                         onClick: function() {
@@ -311,35 +311,35 @@
                     o = e.onBack,
                     s = e.isPremadeSpriteSheet,
                     l = e.defaultParameters,
-                    m = u.useState(w),
+                    m = c.useState(x),
                     f = (0, i.Z)(m, 2),
                     d = f[0],
                     g = f[1],
-                    h = u.useState(1),
+                    h = c.useState(1),
                     v = (0, i.Z)(h, 2),
-                    x = v[0],
+                    w = v[0],
                     b = v[1],
-                    E = u.useState(0),
-                    k = (0, i.Z)(E, 2),
-                    S = k[0],
-                    I = k[1],
-                    C = u.useState({
+                    k = c.useState(0),
+                    E = (0, i.Z)(k, 2),
+                    S = E[0],
+                    I = E[1],
+                    C = c.useState({
                         x: 0,
                         y: 0
                     }),
                     P = (0, i.Z)(C, 2),
-                    N = P[0],
+                    B = P[0],
                     _ = P[1],
-                    z = u.useState({
+                    j = c.useState({
                         x: 0,
                         y: 0,
                         width: 0,
                         height: 0
                     }),
-                    j = (0, i.Z)(z, 2),
-                    T = j[0],
-                    U = j[1],
-                    A = u.useState({
+                    z = (0, i.Z)(j, 2),
+                    U = z[0],
+                    T = z[1],
+                    A = c.useState({
                         x: 0,
                         y: 0,
                         width: 0,
@@ -348,28 +348,28 @@
                     R = (0, i.Z)(A, 2),
                     q = R[0],
                     F = R[1],
-                    V = u.useState(null),
-                    O = (0, i.Z)(V, 2),
+                    M = c.useState(null),
+                    O = (0, i.Z)(M, 2),
                     L = O[0],
                     Y = O[1],
-                    G = u.useState(1),
+                    G = c.useState(1),
                     X = (0, i.Z)(G, 2),
                     J = X[0],
                     K = X[1],
-                    H = u.useState(1),
+                    H = c.useState(1),
                     Q = (0, i.Z)(H, 2),
                     ee = Q[0],
                     te = Q[1],
-                    re = u.useState("Aura"),
+                    re = c.useState("Aura"),
                     ne = (0, i.Z)(re, 2),
                     ae = ne[0],
                     ie = ne[1],
-                    oe = u.useState("square"),
+                    oe = c.useState("square"),
                     se = (0, i.Z)(oe, 2),
                     le = se[0],
-                    ce = (se[1], function() {
-                        var e = (0, a.Z)(c().mark((function e(t) {
-                            return c().wrap((function(e) {
+                    ue = (se[1], function() {
+                        var e = (0, a.Z)(u().mark((function e(t) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.abrupt("return", new Promise((function(e) {
@@ -379,9 +379,9 @@
                                                 var t = document.createElement("canvas"),
                                                     r = t.getContext("2d");
                                                 t.width = n.width, t.height = n.height, r.save(), r.translate(t.width / 2, t.height / 2), r.rotate(S * Math.PI / 180), r.translate(-t.width / 2, -t.height / 2), r.drawImage(n, 0, 0), r.restore(), t.toBlob(function() {
-                                                    var t = (0, a.Z)(c().mark((function t(r) {
+                                                    var t = (0, a.Z)(u().mark((function t(r) {
                                                         var a;
-                                                        return c().wrap((function(t) {
+                                                        return u().wrap((function(t) {
                                                             for (;;) switch (t.prev = t.next) {
                                                                 case 0:
                                                                     return t.next = 2, (0, p.s3)(r);
@@ -413,13 +413,13 @@
                             return e.apply(this, arguments)
                         }
                     }()),
-                    ue = function() {
-                        var e = (0, a.Z)(c().mark((function e(t) {
+                    ce = function() {
+                        var e = (0, a.Z)(u().mark((function e(t) {
                             var r, n;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, ce(t);
+                                        return e.next = 2, ue(t);
                                     case 2:
                                         return r = e.sent, n = r.base64, e.abrupt("return", new Promise((function(e) {
                                             var t = new Image;
@@ -427,9 +427,9 @@
                                                 var r = document.createElement("canvas"),
                                                     n = r.getContext("2d");
                                                 r.width = q.width, r.height = q.height, n.drawImage(t, -q.x, -q.y), r.toBlob(function() {
-                                                    var r = (0, a.Z)(c().mark((function r(n) {
+                                                    var r = (0, a.Z)(u().mark((function r(n) {
                                                         var a;
-                                                        return c().wrap((function(r) {
+                                                        return u().wrap((function(r) {
                                                             for (;;) switch (r.prev = r.next) {
                                                                 case 0:
                                                                     return r.next = 2, (0, p.s3)(n);
@@ -462,21 +462,21 @@
                         }
                     }(),
                     me = function() {
-                        var e = (0, a.Z)(c().mark((function e() {
+                        var e = (0, a.Z)(u().mark((function e() {
                             var n;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (d !== w || s) {
+                                        if (d !== x || s) {
                                             e.next = 8;
                                             break
                                         }
-                                        return e.next = 3, ue(t[0]);
+                                        return e.next = 3, ce(t[0]);
                                     case 3:
                                         n = e.sent, Y(n), g(y), e.next = 9;
                                         break;
                                     case 8:
-                                        d === w && s ? g(y) : d === y && r({
+                                        d === x && s ? g(y) : d === y && r({
                                             image: null != L ? L : t[0],
                                             style: ae,
                                             mask: le,
@@ -493,31 +493,31 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return u.useEffect((function() {
+                return c.useEffect((function() {
                     s && (K((null == l ? void 0 : l.frameCount) || 4), te((null == l ? void 0 : l.frameRate) || 15))
-                }), [s]), u.createElement(D, null, u.createElement(W, null, d === w && !s && u.createElement(B, {
+                }), [s]), c.createElement(D, null, c.createElement(W, null, d === x && !s && c.createElement(N, {
                     frames: t,
                     completedCallback: r,
-                    zoom: x,
+                    zoom: w,
                     setZoom: b,
                     rotation: S,
                     setRotation: I,
-                    crop: N,
+                    crop: B,
                     setCrop: _,
-                    croppedArea: T,
-                    setCroppedArea: U,
+                    croppedArea: U,
+                    setCroppedArea: T,
                     croppedAreaPixels: q,
                     setCroppedAreaPixels: F
-                }), d === w && s && u.createElement(M, {
+                }), d === x && s && c.createElement(V, {
                     spriteSheet: t[0],
                     frameCount: J,
                     setFrameCount: K,
                     frameRate: ee,
                     setFrameRate: te
-                }), d === y && u.createElement($, {
+                }), d === y && c.createElement($, {
                     style: ae,
                     setStyle: ie
-                })), u.createElement(Z, {
+                })), c.createElement(Z, {
                     onCancel: n,
                     onBack: function() {
                         o()
@@ -624,23 +624,23 @@
                 });
             const re = function(e) {
                 var t = e.onClose,
-                    r = u.useState(null),
+                    r = c.useState(null),
                     o = (0, i.Z)(r, 2),
                     l = o[0],
                     f = o[1],
-                    v = u.useState(!1),
-                    x = (0, i.Z)(v, 2),
-                    w = x[0],
-                    y = x[1],
+                    v = c.useState(!1),
+                    w = (0, i.Z)(v, 2),
+                    x = w[0],
+                    y = w[1],
                     b = (0, K.Yh)(),
-                    E = (0, i.Z)(b, 2),
-                    k = E[0],
-                    Z = E[1],
+                    k = (0, i.Z)(b, 2),
+                    E = k[0],
+                    Z = k[1],
                     S = Z.isLoading,
                     I = Z.isSuccess,
                     C = (Z.isError, Z.error),
                     P = (0, m.I0)(),
-                    N = function(e) {
+                    B = function(e) {
                         var t = e.title,
                             r = e.message,
                             n = e.color;
@@ -652,10 +652,10 @@
                             timeout: 5e3
                         }))
                     },
-                    B = function() {
-                        var e = (0, a.Z)(c().mark((function e(t) {
+                    N = function() {
+                        var e = (0, a.Z)(u().mark((function e(t) {
                             var r, n, a, i, o;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return r = t.file, e.next = 3, (0, p.uG)(r);
@@ -664,7 +664,7 @@
                                             e.next = 10;
                                             break
                                         }
-                                        return N({
+                                        return B({
                                             title: "Image Uploader",
                                             message: "The image you are uploading is rather small.\nKeep it above 64x64.",
                                             color: "danger"
@@ -674,17 +674,17 @@
                                             e.next = 13;
                                             break
                                         }
-                                        return N({
+                                        return B({
                                             title: "Image Error",
                                             message: "The image you are uploading is too big!\nKeep it to under 1024x1024.",
                                             color: "danger"
                                         }), e.abrupt("return", !1);
                                     case 13:
-                                        if (!w || o) {
+                                        if (!x || o) {
                                             e.next = 16;
                                             break
                                         }
-                                        return N({
+                                        return B({
                                             title: "Invalid Size",
                                             message: "Pre-made spritesheets must be exactly 1024x1024",
                                             color: "danger"
@@ -708,7 +708,7 @@
                             a = e.defaultValue;
                         return t > n || t < r ? a : t
                     },
-                    z = function(e) {
+                    j = function(e) {
                         var t = e.file.name,
                             r = {
                                 frameCount: null,
@@ -728,10 +728,10 @@
                             defaultValue: 15
                         })), r
                     },
-                    j = function() {
-                        var e = (0, a.Z)(c().mark((function e(r) {
+                    z = function() {
+                        var e = (0, a.Z)(u().mark((function e(r) {
                             var n, a, i;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (n = r.file, (0, p._0)({
@@ -741,13 +741,13 @@
                                             e.next = 4;
                                             break
                                         }
-                                        return e.abrupt("return", N({
+                                        return e.abrupt("return", B({
                                             title: "Image Error",
                                             message: "Please select an allowed image type!",
                                             color: "danger"
                                         }));
                                     case 4:
-                                        return e.next = 6, B({
+                                        return e.next = 6, N({
                                             file: n
                                         });
                                     case 6:
@@ -765,13 +765,13 @@
                                     case 12:
                                         a = e.sent;
                                     case 13:
-                                        i = z({
+                                        i = j({
                                             file: n
-                                        }), f(u.createElement(J, {
-                                            isPremadeSpriteSheet: w,
+                                        }), f(c.createElement(J, {
+                                            isPremadeSpriteSheet: x,
                                             frames: a,
                                             defaultParameters: i,
-                                            onCompleted: T,
+                                            onCompleted: U,
                                             onCancel: t,
                                             onBack: function() {
                                                 return f(null)
@@ -787,7 +787,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    T = function(e) {
+                    U = function(e) {
                         var t = e.image,
                             r = e.frameCount,
                             n = void 0 === r ? 1 : r,
@@ -796,7 +796,7 @@
                             o = e.style,
                             s = e.mask,
                             l = void 0 === s ? "square" : s;
-                        k({
+                        E({
                             tag: n > 1 ? "emojianimated" : "emoji",
                             file: t.file || t,
                             frames: n,
@@ -805,39 +805,39 @@
                             maskTag: l
                         })
                     };
-                return u.useEffect((function() {
-                    if (I) N({
+                return c.useEffect((function() {
+                    if (I) B({
                         title: "Upload Successful!",
                         message: "Your emoji was successfully uploaded",
                         color: "success"
                     }), t();
                     else if (void 0 !== C) {
                         var e = C;
-                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), N({
+                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), B({
                             title: "Upload Failed!",
                             message: "Reason: ".concat(e),
                             color: "danger"
                         }), t()
                     }
-                }), [I, C]), u.createElement(te, {
+                }), [I, C]), c.createElement(te, {
                     className: "tw-flex tw-flex-col"
-                }, S && u.createElement(h.Z, {
+                }, S && c.createElement(h.Z, {
                     name: "emoji"
-                }), !S && (l || u.createElement(d.Z, {
+                }), !S && (l || c.createElement(d.Z, {
                     fileSelectedCallback: function(e) {
-                        return j(e)
+                        return z(e)
                     },
                     isForAnimatedEmoji: !0,
                     setIsPremadeSpriteSheet: y,
-                    isPremadeSpriteSheet: w,
+                    isPremadeSpriteSheet: x,
                     hintText: "Upload a static emoji with a single image, or use a sprite sheet to create an animated emoji.",
-                    hintTextMuted: u.createElement(u.Fragment, null, "A sprite sheet should be a 1024x1024 image with square frames in a uniform grid, ordered left to right, then top to bottom.", u.createElement("br", null), "You can preset animation values in advance using the file name, like so: ", u.createElement("em", null, "CoolEmoji_14frames_10fps.png"))
+                    hintTextMuted: c.createElement(c.Fragment, null, "A sprite sheet should be a 1024x1024 image with square frames in a uniform grid, ordered left to right, then top to bottom.", c.createElement("br", null), "You can preset animation values in advance using the file name, like so: ", c.createElement("em", null, "CoolEmoji_14frames_10fps.png"))
                 })))
             }
         },
         95024: (e, t, r) => {
             r.d(t, {
-                Z: () => w
+                Z: () => x
             });
             var n = r(71002),
                 a = r(15861),
@@ -845,8 +845,8 @@
                 o = r(4965),
                 s = r(78076),
                 l = r(64687),
-                c = r.n(l),
-                u = r(67294),
+                u = r.n(l),
+                c = r(67294),
                 m = r(32981),
                 f = r(64258),
                 d = r(60933),
@@ -854,25 +854,25 @@
                 g = r(73423),
                 h = r(39191),
                 v = r(41255);
-            var x = (0, o.Z)("div", {
+            var w = (0, o.Z)("div", {
                 target: "e1et7e2k0"
             })({
                 name: "dm9b0z",
                 styles: "width:100%;min-height:30em;overflow:hidden"
             });
-            const w = function(e) {
+            const x = function(e) {
                 var t = e.onClose,
-                    r = u.useState(null),
+                    r = c.useState(null),
                     o = (0, i.Z)(r, 2),
                     l = o[0],
-                    w = o[1],
+                    x = o[1],
                     y = (0, v.Yh)(),
                     b = (0, i.Z)(y, 2),
-                    E = b[0],
-                    k = b[1],
-                    Z = k.isLoading,
-                    S = k.isSuccess,
-                    I = (k.isError, k.error),
+                    k = b[0],
+                    E = b[1],
+                    Z = E.isLoading,
+                    S = E.isSuccess,
+                    I = (E.isError, E.error),
                     C = (0, m.I0)(),
                     P = function(e) {
                         var t = e.title,
@@ -886,10 +886,10 @@
                             timeout: 5e3
                         }))
                     },
-                    N = function() {
-                        var e = (0, a.Z)(c().mark((function e(r) {
+                    B = function() {
+                        var e = (0, a.Z)(u().mark((function e(r) {
                             var n;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         if (n = r.file, (0, d._0)({
@@ -905,7 +905,7 @@
                                             color: "danger"
                                         }));
                                     case 4:
-                                        return e.next = 6, B({
+                                        return e.next = 6, N({
                                             file: n
                                         });
                                     case 6:
@@ -915,12 +915,12 @@
                                         }
                                         return e.abrupt("return");
                                     case 8:
-                                        w(u.createElement(h.Z, {
+                                        x(c.createElement(h.Z, {
                                             baseImage: n,
                                             onCompleted: _,
                                             onCancel: t,
                                             onBack: function() {
-                                                return w(null)
+                                                return x(null)
                                             }
                                         }));
                                     case 9:
@@ -933,10 +933,10 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    B = function() {
-                        var e = (0, a.Z)(c().mark((function e(t) {
+                    N = function() {
+                        var e = (0, a.Z)(u().mark((function e(t) {
                             var r, n, a, i;
-                            return c().wrap((function(e) {
+                            return u().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return r = t.file, e.next = 3, (0, d.uG)(r);
@@ -976,13 +976,13 @@
                         var t = e.image,
                             r = e.mask,
                             n = void 0 === r ? "square" : r;
-                        console.log("image", t), E({
+                        console.log("image", t), k({
                             file: t.file || t,
                             tag: "sticker",
                             maskTag: n
                         })
                     };
-                return u.useEffect((function() {
+                return c.useEffect((function() {
                     if (S) P({
                         title: "Upload Successful!",
                         message: "Your sticker was successfully uploaded",
@@ -996,137 +996,136 @@
                             color: "danger"
                         }), t()
                     }
-                }), [S, I]), u.createElement(x, {
+                }), [S, I]), c.createElement(w, {
                     className: "tw-flex tw-flex-col"
-                }, Z && u.createElement(g.Z, {
+                }, Z && c.createElement(g.Z, {
                     name: "sticker"
-                }), !Z && (l || u.createElement(p.Z, {
+                }), !Z && (l || c.createElement(p.Z, {
                     fileSelectedCallback: function(e) {
-                        return N(e)
+                        return B(e)
                     },
                     hintText: "Stickers should be a square image between 64x64 and 1024x1024.",
-                    hintTextMuted: u.createElement(u.Fragment, null, "For best results, use a power-of-two size (64, 128, 256, 512, or 1024 pixels).", u.createElement("br", null), "You can also create stickers inside VRChat using the camera!")
+                    hintTextMuted: c.createElement(c.Fragment, null, "For best results, use a power-of-two size (64, 128, 256, 512, or 1024 pixels).", c.createElement("br", null), "You can also create stickers inside VRChat using the camera!")
                 })))
             }
         },
         40527: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => N
+                default: () => B
             });
             var n = r(42138),
                 a = r(15861),
                 i = r(54546),
                 o = r(4965),
-                s = r(59545),
-                l = r(2723),
-                c = r(76553),
-                u = r(64687),
-                m = r.n(u),
+                s = r(76553),
+                l = r(59545),
+                u = r(2723),
+                c = r(64687),
+                m = r.n(c),
                 f = r(67294),
                 d = r(32981),
                 p = r(79655),
                 g = r(83505),
                 h = r(41255),
                 v = r(12227),
-                x = r(89132),
-                w = r(5513),
+                w = r(80988),
+                x = r(5513),
                 y = r(34984),
                 b = r(22202),
-                E = r(83807),
-                k = r(60229),
+                k = r(83807),
+                E = r(60229),
                 Z = r(46686),
                 S = r(95024),
                 I = r(50347),
                 C = r(74444),
                 P = r(39908);
-            const N = function(e) {
+            const B = function(e) {
                 var t, r, o = e.userId,
-                    u = e.isAdminView,
-                    N = e.isSelector,
-                    U = void 0 !== N && N,
-                    A = e.selectedCallback,
-                    R = void 0 === A ? null : A,
-                    q = e.activeTab,
-                    F = void 0 === q ? "icons" : q,
-                    M = e.hideTitle,
-                    V = void 0 !== M && M,
-                    O = "photos" === F,
-                    L = "icons" === F,
-                    Y = "emoji" === F,
-                    G = "stickers" === F,
-                    X = (0, d.I0)(),
-                    $ = (0, d.v9)((function(e) {
+                    c = e.isAdminView,
+                    B = e.isSelector,
+                    U = void 0 !== B && B,
+                    T = e.selectedCallback,
+                    A = void 0 === T ? null : T,
+                    R = e.activeTab,
+                    q = void 0 === R ? "icons" : R,
+                    F = e.hideTitle,
+                    V = void 0 !== F && F,
+                    M = "photos" === q,
+                    O = "icons" === q,
+                    L = "emoji" === q,
+                    Y = "stickers" === q,
+                    G = (0, d.I0)(),
+                    X = (0, d.v9)((function(e) {
                         return e.user.photoList
                     })),
-                    W = (0, d.v9)((function(e) {
+                    $ = (0, d.v9)((function(e) {
                         return e.user.iconList
                     })),
-                    D = f.useState([]),
-                    J = (0, i.Z)(D, 2),
-                    K = J[0],
-                    H = J[1],
-                    Q = f.useState(!1),
-                    ee = (0, i.Z)(Q, 2),
-                    te = ee[0],
-                    re = ee[1],
-                    ne = f.useState(!1),
-                    ae = (0, i.Z)(ne, 2),
-                    ie = ae[0],
-                    oe = ae[1],
-                    se = f.useState(!1),
-                    le = (0, i.Z)(se, 2),
-                    ce = le[0],
-                    ue = le[1],
-                    me = f.useState(null),
-                    fe = (0, i.Z)(me, 2),
-                    de = fe[0],
-                    pe = fe[1],
-                    ge = f.useState(!1),
-                    he = (0, i.Z)(ge, 2),
-                    ve = he[0],
-                    xe = he[1],
-                    we = f.useState(!1),
-                    ye = (0, i.Z)(we, 2),
-                    be = ye[0],
-                    Ee = ye[1],
-                    ke = (0, E.Tu)(),
-                    Ze = ke.user,
-                    Se = ke.fetchUser,
-                    Ie = (0, E.v$)(o).user,
-                    Ce = (0, b.q7)({
+                    W = f.useState([]),
+                    D = (0, i.Z)(W, 2),
+                    J = D[0],
+                    K = D[1],
+                    H = f.useState(!1),
+                    Q = (0, i.Z)(H, 2),
+                    ee = Q[0],
+                    te = Q[1],
+                    re = f.useState(!1),
+                    ne = (0, i.Z)(re, 2),
+                    ae = ne[0],
+                    ie = ne[1],
+                    oe = f.useState(!1),
+                    se = (0, i.Z)(oe, 2),
+                    le = se[0],
+                    ue = se[1],
+                    ce = f.useState(null),
+                    me = (0, i.Z)(ce, 2),
+                    fe = (me[0], me[1]),
+                    de = f.useState(!1),
+                    pe = (0, i.Z)(de, 2),
+                    ge = pe[0],
+                    he = pe[1],
+                    ve = f.useState(!1),
+                    we = (0, i.Z)(ve, 2),
+                    xe = we[0],
+                    ye = we[1],
+                    be = (0, k.Tu)(),
+                    ke = be.user,
+                    Ee = be.fetchUser,
+                    Ze = (0, k.v$)(o).user,
+                    Se = (0, b.q7)({
                         condensed: !0
                     }).data,
-                    Pe = void 0 === Ce ? [] : Ce,
-                    Ne = (0, h.eV)({
+                    Ie = void 0 === Se ? [] : Se,
+                    Ce = (0, h.eV)({
                         userId: o
                     }).data,
-                    Be = (0, h._h)({
+                    Pe = (0, h._h)({
                         userId: o
                     }).data,
-                    _e = (0, h.g3)(),
-                    ze = (0, i.Z)(_e, 2),
-                    je = ze[0],
-                    Te = ze[1];
-                Te.isLoading, Te.isSuccess, Te.isError, Te.error;
+                    Be = (0, h.g3)(),
+                    Ne = (0, i.Z)(Be, 2),
+                    _e = Ne[0],
+                    je = Ne[1];
+                je.isLoading, je.isSuccess, je.isError, je.error;
                 f.useEffect((function() {
-                    var e = u ? o : "";
-                    X((0, y.wP)({
+                    var e = c ? o : "";
+                    G((0, y.wP)({
                         userId: e,
                         amount: 100,
                         offset: 0
-                    })), X((0, y.wu)({
+                    })), G((0, y.wu)({
                         userId: e,
                         amount: 100,
                         offset: 0
                     }))
-                }), [o, u]);
-                var Ue = function() {
+                }), [o, c]);
+                var ze = function() {
                         var e = (0, a.Z)(m().mark((function e(t, r) {
                             var n;
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (!Y && !G) {
+                                        if (!L && !Y) {
                                             e.next = 2;
                                             break
                                         }
@@ -1135,16 +1134,16 @@
                                         return n = (0, v.qm)({
                                             fileId: t,
                                             versionNumber: r
-                                        }), e.next = 5, X((0, w._W)({
-                                            userId: Ze.id,
-                                            data: O ? {
+                                        }), e.next = 5, G((0, x._W)({
+                                            userId: ke.id,
+                                            data: M ? {
                                                 profilePicOverride: n
                                             } : {
                                                 userIcon: n
                                             }
                                         }));
                                     case 5:
-                                        Se();
+                                        Ee();
                                     case 6:
                                     case "end":
                                         return e.stop()
@@ -1155,23 +1154,23 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ae = function(e, t) {
-                        pe(t), R(e, t)
+                    Ue = function(e, t) {
+                        fe(t), A(e, t)
                     },
-                    Re = function() {
+                    Te = function() {
                         var e = (0, a.Z)(m().mark((function e(t) {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (H([t].concat((0, n.Z)(K))), !O) {
+                                        if (K([t].concat((0, n.Z)(J))), !M) {
                                             e.next = 8;
                                             break
                                         }
-                                        return e.next = 4, X((0, y.JJ)({
+                                        return e.next = 4, G((0, y.JJ)({
                                             fileId: t
                                         }));
                                     case 4:
-                                        return e.next = 6, X((0, y.oI)({
+                                        return e.next = 6, G((0, y.oI)({
                                             fileId: t
                                         }));
                                     case 6:
@@ -1180,33 +1179,33 @@
                                         e.next = 23;
                                         break;
                                     case 8:
-                                        if (!L) {
+                                        if (!O) {
                                             e.next = 15;
                                             break
                                         }
-                                        return e.next = 11, X((0, y.ap)({
+                                        return e.next = 11, G((0, y.ap)({
                                             fileId: t
                                         }));
                                     case 11:
-                                        return e.next = 13, X((0, y.NB)({
+                                        return e.next = 13, G((0, y.NB)({
                                             fileId: t
                                         }));
                                     case 15:
-                                        if (!Y) {
+                                        if (!L) {
                                             e.next = 20;
                                             break
                                         }
-                                        return e.next = 18, je({
+                                        return e.next = 18, _e({
                                             fileId: t,
                                             tag: "emoji",
                                             userId: o
                                         });
                                     case 20:
-                                        if (!G) {
+                                        if (!Y) {
                                             e.next = 23;
                                             break
                                         }
-                                        return e.next = 23, je({
+                                        return e.next = 23, _e({
                                             fileId: t,
                                             tag: "sticker",
                                             userId: o
@@ -1221,19 +1220,19 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    qe = function() {
+                    Ae = function() {
                         var e = (0, a.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, Me();
+                                        return e.next = 2, qe();
                                     case 2:
-                                        return e.next = 4, Promise.all($.map(function() {
+                                        return e.next = 4, Promise.all(X.map(function() {
                                             var e = (0, a.Z)(m().mark((function e(t) {
                                                 return m().wrap((function(e) {
                                                     for (;;) switch (e.prev = e.next) {
                                                         case 0:
-                                                            return e.abrupt("return", Re(t.id));
+                                                            return e.abrupt("return", Te(t.id));
                                                         case 1:
                                                         case "end":
                                                             return e.stop()
@@ -1254,33 +1253,33 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Fe = function() {
+                    Re = function() {
                         var e = (0, a.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (!u) {
+                                        if (!c) {
                                             e.next = 6;
                                             break
                                         }
-                                        return e.next = 3, X((0, y.dm)({
+                                        return e.next = 3, G((0, y.dm)({
                                             userId: o,
                                             data: {
                                                 userIcon: ""
                                             }
                                         }));
                                     case 3:
-                                        oe(!0), e.next = 8;
+                                        ie(!0), e.next = 8;
                                         break;
                                     case 6:
-                                        return e.next = 8, X((0, w._W)({
-                                            userId: Ze.id,
+                                        return e.next = 8, G((0, x._W)({
+                                            userId: ke.id,
                                             data: {
                                                 userIcon: ""
                                             }
                                         }));
                                     case 8:
-                                        Se();
+                                        Ee();
                                     case 9:
                                     case "end":
                                         return e.stop()
@@ -1291,33 +1290,33 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Me = function() {
+                    qe = function() {
                         var e = (0, a.Z)(m().mark((function e() {
                             return m().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (!u) {
+                                        if (!c) {
                                             e.next = 6;
                                             break
                                         }
-                                        return e.next = 3, X((0, y.dm)({
+                                        return e.next = 3, G((0, y.dm)({
                                             userId: o,
                                             data: {
                                                 profilePicOverride: ""
                                             }
                                         }));
                                     case 3:
-                                        re(!0), e.next = 8;
+                                        te(!0), e.next = 8;
                                         break;
                                     case 6:
-                                        return e.next = 8, X((0, w._W)({
-                                            userId: Ze.id,
+                                        return e.next = 8, G((0, x._W)({
+                                            userId: ke.id,
                                             data: {
                                                 profilePicOverride: ""
                                             }
                                         }));
                                     case 8:
-                                        Se();
+                                        Ee();
                                     case 9:
                                     case "end":
                                         return e.stop()
@@ -1328,6 +1327,19 @@
                             return e.apply(this, arguments)
                         }
                     }(),
+                    Fe = X.map((function(e) {
+                        var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
+                                return e.version
+                            })))),
+                            a = e.versions.find((function(e) {
+                                return e.version === r
+                            }));
+                        return {
+                            fileId: e.id,
+                            imageUrl: null === (t = a.file) || void 0 === t ? void 0 : t.url,
+                            highestVersionNumber: r
+                        }
+                    })),
                     Ve = $.map((function(e) {
                         var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
                                 return e.version
@@ -1341,20 +1353,7 @@
                             highestVersionNumber: r
                         }
                     })),
-                    Oe = W.map((function(e) {
-                        var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
-                                return e.version
-                            })))),
-                            a = e.versions.find((function(e) {
-                                return e.version === r
-                            }));
-                        return {
-                            fileId: e.id,
-                            imageUrl: null === (t = a.file) || void 0 === t ? void 0 : t.url,
-                            highestVersionNumber: r
-                        }
-                    })),
-                    Le = (Ne || []).map((function(e) {
+                    Me = (Ce || []).map((function(e) {
                         var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
                                 return e.version
                             })))),
@@ -1371,7 +1370,7 @@
                             frameRate: e.framesOverTime
                         }
                     })),
-                    Ye = (Be || []).map((function(e) {
+                    Oe = (Pe || []).map((function(e) {
                         var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
                                 return e.version
                             })))),
@@ -1385,32 +1384,27 @@
                             maskTag: e.maskTag
                         }
                     })),
-                    Ge = Oe.length,
-                    Xe = Ve.length,
-                    $e = Le.length,
-                    We = Ye.length,
-                    De = u ? Ie.profilePicOverride : Ze.profilePicOverride;
-                te && (De = "");
-                var Je = u ? Ie.userIcon : Ze.userIcon;
-                ie && (Je = "");
-                var Ke = u ? "64" : Pe["permission-user-gallery"],
-                    He = Ke <= Xe,
-                    Qe = u ? "64" : Pe["permission-user-icons"],
-                    et = Qe <= Ge,
-                    tt = (null === (t = Pe["permission-user-emoji"]) || void 0 === t ? void 0 : t.max) || 9,
-                    rt = (null === (r = Pe["permission-user-stickers"]) || void 0 === r ? void 0 : r.max) || 9,
-                    nt = tt <= $e,
-                    at = rt <= We,
-                    it = u ? "".concat(Ie.displayName, "'s") : "Your",
-                    ot = !u,
-                    st = U && de,
-                    lt = (De && O || Je && !O) && !U;
-                if (ce) switch (F) {
+                    Le = Ve.length,
+                    Ye = Fe.length,
+                    Ge = Me.length,
+                    Xe = Oe.length,
+                    $e = c ? Ze.profilePicOverride : ke.profilePicOverride;
+                ee && ($e = "");
+                c ? Ze.userIcon : ke.userIcon;
+                var We = (c ? "64" : Ie["permission-user-gallery"]) <= Ye,
+                    De = c ? "64" : Ie["permission-user-icons"],
+                    Je = De <= Le,
+                    Ke = (null === (t = Ie["permission-user-emoji"]) || void 0 === t ? void 0 : t.max) || 9,
+                    He = (null === (r = Ie["permission-user-stickers"]) || void 0 === r ? void 0 : r.max) || 9,
+                    Qe = Ke <= Ge,
+                    et = He <= Xe,
+                    tt = c ? "".concat(Ze.displayName, "'s") : "Your";
+                if (le) switch (q) {
                     case "photos":
-                        return f.createElement(k.default, {
+                        return f.createElement(E.default, {
                             isSelector: U,
                             successCallback: function() {
-                                ue(!1), X((0, y.wP)({
+                                ue(!1), G((0, y.wP)({
                                     userId: o,
                                     amount: 100,
                                     offset: 0
@@ -1421,7 +1415,7 @@
                         return f.createElement(P.default, {
                             isSelector: U,
                             successCallback: function() {
-                                ue(!1), X((0, y.wu)({
+                                ue(!1), G((0, y.wu)({
                                     userId: o,
                                     amount: 100,
                                     offset: 0
@@ -1440,211 +1434,184 @@
                     default:
                         return null
                 }
-                var ct = {
+                var rt = {
                         photos: {
                             title: "Photos",
                             singularTitle: "Photo",
-                            files: Ve
+                            files: Fe
                         },
                         icons: {
                             title: "Icons",
                             singularTitle: "Icon",
-                            files: Oe
+                            files: Ve
                         },
                         emoji: {
                             title: "Emoji",
                             singularTitle: "Emoji",
-                            files: Le
+                            files: Me
                         },
                         stickers: {
                             title: "Stickers",
                             singularTitle: "Sticker",
-                            files: Ye
+                            files: Oe
                         }
-                    } [F] || {
+                    } [q] || {
                         title: "Unknown",
                         singularTitle: "Unknown",
                         files: []
                     },
-                    ut = He && O || et && L || nt && Y || at && G;
-                return f.createElement(B, null, !U && !V && f.createElement(x.oI, null, f.createElement("h2", null, ct.title)), f.createElement(z, null, f.createElement("div", {
+                    nt = We && M || Je && O || Qe && L || et && Y;
+                return f.createElement(N, null, !U && !V && f.createElement(w.oI, null, f.createElement("h2", null, rt.title)), f.createElement(_, null, f.createElement("div", {
                     className: (0, g.iv)({
                         name: "sf0fa5",
                         styles: ".center-flex{display:flex;flex-flow:row wrap;padding:0!important;align-items:center;justify-content:center;}"
                     })
-                }, De && !U && !Y && !G && f.createElement("div", {
-                    className: (0, g.iv)({
-                        name: "bxqzz5",
-                        styles: "margin:auto;text-align:center"
-                    })
-                }, f.createElement("h2", null, it, " Currently Equipped Profile Picture")), !U && !Y && !G && f.createElement("div", {
-                    className: "center-flex ".concat((0, g.iv)({
-                        name: "1gpzra0",
-                        styles: "margin-bottom:1em"
-                    }))
-                }, (lt || st) && f.createElement(I.Z, {
-                    image: null != de ? de : O ? De : Je,
-                    borderColor: "green",
-                    disableManagement: ot,
-                    width: O ? 300 : 200,
-                    isIcon: !O,
-                    isAdminView: u
-                }), (!De && O || !Je && !O || U && !de) && f.createElement(_, null, f.createElement(x.$1, {
-                    icon: c.eH,
-                    className: (0, g.iv)({
-                        name: "ofo7n8",
-                        styles: "margin-right:0.4em"
-                    })
-                }), "No ", U ? "Image" : O ? "Profile Picture" : "Icon", " Selected"), f.createElement("br", null)), ut && f.createElement("div", {
-                    className: (0, g.iv)({
-                        name: "1nwo2m",
-                        styles: "margin:1em auto;padding:0.2em 0.7em;color:red;text-transform:uppercase;font-size:1.6em;border:1px solid red;border-radius:5px;width:max-content"
-                    })
-                }, f.createElement(x.$1, {
-                    icon: c.eH,
-                    className: (0, g.iv)({
-                        name: "ofo7n8",
-                        styles: "margin-right:0.4em"
-                    })
-                }), "You have reached your ", F, " limit!"), f.createElement(x.JX, {
-                    className: "align-items-center mb-3"
-                }, f.createElement(x.X2, null, !nt && Y && f.createElement(x.zx, {
+                }, $e && !U && !L && !Y && !M && f.createElement("div", {
+                    className: "tw-m-auto tw-text-center"
+                }, f.createElement("h2", null, tt, " Currently Equipped Profile Picture")), f.createElement(w.JX, {
+                    className: "tw-mb-3 tw-gap-4"
+                }, f.createElement(w.X2, null, !Qe && L && f.createElement(w.zx, {
                     neutral: !0,
                     onClick: function() {
-                        return xe(!0)
+                        return he(!0)
                     }
-                }, f.createElement(x.X2, {
-                    className: "align-items-center px-3"
-                }, f.createElement(x.$1, {
-                    icon: l.cf,
-                    className: "me-2"
-                }), "Upload ", ct.title)), !at && G && f.createElement(x.zx, {
+                }, f.createElement(w.X2, {
+                    className: "tw-items-center tw-px-3"
+                }, f.createElement(w.$1, {
+                    icon: u.cf,
+                    className: "tw-me-2"
+                }), "Upload ", rt.title)), !et && Y && f.createElement(w.zx, {
                     neutral: !0,
                     onClick: function() {
-                        return Ee(!0)
+                        return ye(!0)
                     }
-                }, f.createElement(x.X2, {
-                    className: "align-items-center px-3"
-                }, f.createElement(x.$1, {
-                    icon: l.cf,
-                    className: "me-2"
-                }), "Upload ", ct.title)), (!He && O || !et && L) && !u && (U ? f.createElement(x.zx, {
+                }, f.createElement(w.X2, {
+                    className: "tw-items-center tw-px-3"
+                }, f.createElement(w.$1, {
+                    icon: u.cf,
+                    className: "tw-me-2"
+                }), "Upload ", rt.title)), (!We && M || !Je && O) && !c && (U ? f.createElement(w.zx, {
                     neutral: !0,
                     onClick: function() {
                         ue(!0)
                     }
-                }, f.createElement(x.X2, {
-                    className: "align-items-center px-3"
-                }, f.createElement(x.$1, {
-                    icon: l.cf,
-                    className: "me-2"
-                }), "Upload ", ct.title)) : f.createElement(p.rU, {
-                    to: "/home/upload".concat(ct.singularTitle),
-                    className: "me-3"
-                }, f.createElement(x.zx, {
+                }, f.createElement(w.X2, {
+                    className: "tw-items-center tw-px-3"
+                }, f.createElement(w.$1, {
+                    icon: u.cf,
+                    className: "tw-me-2"
+                }), "Upload ", rt.title)) : f.createElement(p.rU, {
+                    to: "/home/upload".concat(rt.singularTitle),
+                    className: "tw-me-3"
+                }, f.createElement(w.zx, {
                     neutral: !0
-                }, f.createElement(x.X2, {
-                    className: "align-items-center px-3"
-                }, f.createElement(x.$1, {
-                    icon: l.cf,
-                    className: "me-2"
-                }), "Upload ", ct.title)))), !U && De && !Y && !G && f.createElement(x.zx, {
-                    onClick: O ? Me : Fe,
-                    className: "px-3",
+                }, f.createElement(w.X2, {
+                    className: "tw-items-center tw-px-3"
+                }, f.createElement(w.$1, {
+                    icon: u.cf,
+                    className: "tw-me-2"
+                }), "Upload ", rt.title)))), !U && $e && !L && !Y && !M && f.createElement(w.zx, {
+                    onClick: M ? qe : Re,
+                    className: "tw-px-3",
                     danger: !0
-                }, f.createElement(x.$1, {
-                    icon: s.NB,
-                    className: "me-2"
-                }), "Reset ", O ? "Photo" : "Icon"))), f.createElement("div", {
-                    className: (0, g.iv)({
-                        name: "bxqzz5",
-                        styles: "margin:auto;text-align:center"
-                    })
-                }, O && f.createElement("h2", null, it, " Uploaded Photos (", Xe, "/", Ke, " Photos)"), L && f.createElement("h2", null, it, " Uploaded Icons (", Ge, "/", Qe, " Icons)"), Y && f.createElement("h2", null, it, " Uploaded Emoji (", $e, "/", tt, " Emoji)"), G && f.createElement("h2", null, it, " Uploaded Stickers (", We, "/", rt, " Stickers)")), u && Xe > 0 && f.createElement("div", {
-                    className: (0, g.iv)({
-                        name: "bxqzz5",
-                        styles: "margin:auto;text-align:center"
-                    })
-                }, f.createElement(x.zx, {
+                }, f.createElement(w.$1, {
+                    icon: l.NB,
+                    className: "tw-me-2"
+                }), "Reset ", M ? "Photo" : "Icon")), nt && f.createElement("div", {
+                    className: "tw-mx-auto tw-py-1 tw-px-3 tw-uppercase tw-text-2xl tw-border-1 tw-border-solid tw-border-red tw-rounded-md tw-text-red tw-max-w-max"
+                }, f.createElement(w.$1, {
+                    icon: s.eH,
+                    className: "tw-mr-2"
+                }), "You have reached your ", q, " limit!")), f.createElement("div", {
+                    className: "tw-m-auto tw-text-center"
+                }, O && f.createElement("h2", null, tt, " Uploaded Icons (", Le, "/", De, " Icons)"), L && f.createElement("h2", null, tt, " Uploaded Emoji (", Ge, "/", Ke, " Emoji)"), Y && f.createElement("h2", null, tt, " Uploaded Stickers (", Xe, "/", He, " Stickers)")), c && Ye > 0 && f.createElement("div", {
+                    className: "tw-m-auto tw-text-center"
+                }, f.createElement(w.zx, {
                     className: "btn-danger",
-                    onClick: qe
-                }, "Reset Profile Pic and Delete All (", Xe, ") Photos")))), f.createElement(j, null, f.createElement(T, null, ct.files.map((function(e) {
+                    onClick: Ae
+                }, "Reset Profile Pic and Delete All (", Ye, ") Photos")))), f.createElement(j, null, f.createElement(z, null, rt.files.map((function(e) {
                     return f.createElement("div", {
                         key: e.fileId
                     }, f.createElement(I.Z, {
                         image: e.imageUrl,
-                        onSelect: U ? Ae : null,
-                        onClick: U ? function() {
-                            Ae(e.fileId, e.imageUrl)
-                        } : function() {
-                            Ue(e.fileId, e.highestVersionNumber)
+                        onSelect: U ? Ue : null,
+                        onClick: function() {
+                            return function(e) {
+                                var t = e.fileId,
+                                    r = e.imageUrl,
+                                    n = e.highestVersionNumber;
+                                if (M) return null;
+                                if (t) {
+                                    if (U) {
+                                        if (!r) return;
+                                        return Ue(t, r)
+                                    }
+                                    if (n) return ze(t, n)
+                                }
+                            }({
+                                fileId: e.fileId,
+                                imageUrl: e.imageUrl,
+                                highestVersionNumber: e.highestVersionNumber
+                            })
                         },
                         showViewButton: !1,
                         onDelete: function() {
-                            return Re(e.fileId)
+                            return Te(e.fileId)
                         },
                         showDeleteButton: !U,
-                        onWear: U ? null : Ue,
+                        onWear: M || U ? null : ze,
                         fileId: e.fileId,
                         versionNumber: e.highestVersionNumber,
-                        width: O ? 300 : 200,
-                        isIcon: L,
-                        isEmoji: Y,
-                        isSticker: G,
+                        width: M ? 300 : 200,
+                        isIcon: O,
+                        isEmoji: L,
+                        isSticker: Y,
                         isAnimated: e.isAnimated,
                         maskTag: e.maskTag,
                         frameRate: e.frameRate,
                         frameCount: e.frameCount
                     }))
-                })))), ve && f.createElement(x.u_, {
+                })))), ge && f.createElement(w.u_, {
                     onClose: function() {
-                        return xe(!1)
+                        return he(!1)
                     },
                     isVisible: !0,
-                    title: "Upload a New Emoji",
-                    children: f.createElement(Z.Z, {
-                        onClose: function() {
-                            return xe(!1)
-                        }
-                    })
-                }), be && f.createElement(x.u_, {
+                    title: "Upload a New Emoji"
+                }, f.createElement(Z.Z, {
                     onClose: function() {
-                        return Ee(!1)
+                        return he(!1)
+                    }
+                })), xe && f.createElement(w.u_, {
+                    onClose: function() {
+                        return ye(!1)
                     },
                     isVisible: !0,
-                    title: "Upload a New Sticker",
-                    children: f.createElement(S.Z, {
-                        onClose: function() {
-                            return Ee(!1)
-                        }
-                    })
-                }))
+                    title: "Upload a New Sticker"
+                }, f.createElement(S.Z, {
+                    onClose: function() {
+                        return ye(!1)
+                    }
+                })))
             };
-            var B = (0, o.Z)("div", {
+            var N = (0, o.Z)("div", {
                     target: "edhboyc4"
                 })({
                     name: "mkaaq0",
                     styles: "min-height:0;display:flex;flex-direction:column;width:100%"
                 }),
-                _ = (0, o.Z)("div", {
-                    target: "edhboyc3"
-                })({
-                    name: "1rfuedz",
-                    styles: "margin:1em;padding:0.2em 0.7em;color:var(--bs-warning);text-transform:uppercase;font-size:1.6em;border:4px solid var(--bs-warning);border-radius:12px"
-                }),
-                z = (0, o.Z)(x.Ao, {
+                _ = (0, o.Z)(w.Ao, {
                     target: "edhboyc2"
                 })({
                     name: "1ch9yvl",
                     styles: "border-radius:0"
                 }),
-                j = (0, o.Z)(x.Ao, {
+                j = (0, o.Z)(w.Ao, {
                     target: "edhboyc1"
                 })({
-                    name: "1xhi4a4",
-                    styles: "background-color:#0f1113;min-height:0;margin-bottom:10px;overflow-y:auto"
+                    name: "j8uupa",
+                    styles: "background-color:#181B1F;min-height:0;margin-bottom:10px;overflow-y:auto"
                 }),
-                T = (0, o.Z)("div", {
+                z = (0, o.Z)("div", {
                     target: "edhboyc0"
                 })({
                     name: "1qzuqsf",
@@ -1653,4 +1620,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d1ab8727857a3c7a6e752885e9fab5aa5b535b8f148f64bd1cc69655f5d37971.js.map
+//# sourceMappingURL=b3f7a62e06173cbc8857ba3f2aedd97d05f808cc6429aa38a032394ba29b1610.js.map

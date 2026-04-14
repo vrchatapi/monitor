@@ -448,7 +448,7 @@
                 a = n(65394),
                 o = n(85020),
                 i = n(67294),
-                l = n(89132);
+                l = n(80988);
             const c = function(e) {
                 var t = e.imageUrl,
                     n = e.closeCallback,
@@ -606,7 +606,7 @@
                 a = n(4942),
                 o = n(54546),
                 i = n(3471),
-                l = n(89132),
+                l = n(80988),
                 c = n(67294),
                 s = n(42938),
                 u = n(41145),
@@ -866,7 +866,7 @@
                 f = n(67294),
                 p = n(89250),
                 g = n(79655),
-                w = n(89132);
+                w = n(80988);
             var b = "https://assets.vrchat.com/www/groups/default_banner.png",
                 v = "https://assets.vrchat.com/www/groups/default_icon.png";
             const h = function(e) {
@@ -898,7 +898,8 @@
                     Y = a ? T : P;
                 return f.createElement(_, {
                     to: "/home/group/".concat(null != R ? R : M),
-                    "aria-label": "Group Card"
+                    "aria-label": "Group Card",
+                    className: "tw-border-solid tw-border-grey tw-border hover:tw-border-light-grey tw-transition-colors"
                 }, f.createElement(C, null, f.createElement(I, null, f.createElement(B, {
                     src: $ ? (0, m.S6)({
                         fileId: $,
@@ -1032,7 +1033,7 @@
         61541: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => Gr
+                default: () => qr
             });
             var r = n(67294),
                 a = n(32981),
@@ -1055,7 +1056,7 @@
                 y = n(24732),
                 x = n(18478),
                 A = n(7469),
-                C = n(89132),
+                C = n(80988),
                 k = n(50048),
                 N = n(48313),
                 I = n(50466),
@@ -2267,58 +2268,53 @@
             var Ve = n(89902),
                 Fe = n(4965),
                 $e = n(47810),
-                _e = n(34233),
-                Xe = n(35773),
-                Ye = n(95305),
-                Je = n(66736),
-                He = n(12227),
-                Ke = (n(46326), n(72528));
-            const Qe = function(e) {
+                _e = n(95305),
+                Xe = n(66736),
+                Ye = n(12227),
+                Je = (n(46326), n(72528));
+            const He = function(e) {
                 var t, n, a, i = e.navToggleCallback,
                     c = void 0 === i ? function() {} : i,
                     s = (0, O.Tu)(),
                     u = s.user,
                     d = s.isFetching,
                     f = s.isLoading,
-                    p = (0, o.s0)(),
-                    g = (0, F.q7)().data,
-                    w = void 0 === g ? [] : g,
-                    b = r.useState(!1),
-                    v = (0, m.Z)(b, 2),
-                    h = (v[0], v[1], (0, Je.Fi)({
+                    p = ((0, o.s0)(), (0, F.q7)().data, r.useState(!1)),
+                    g = (0, m.Z)(p, 2),
+                    w = (g[0], g[1], (0, Xe.Fi)({
                         userId: u.id
                     }, {
                         skip: !u,
                         refetchOnMountOrArgChange: !0
                     })),
-                    E = h.data,
-                    y = (void 0 === E ? {} : E).balance,
-                    x = h.isFetching;
+                    b = w.data,
+                    v = (void 0 === b ? {} : b).balance,
+                    h = w.isFetching;
                 if (!u || f) return null;
-                var A = function() {
+                var E = function() {
                         c(!1)
                     },
-                    k = "online" === u.state,
-                    N = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
-                    I = (0, ie.S6)({
-                        fileUrl: N,
+                    y = "online" === u.state,
+                    x = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
+                    A = (0, ie.S6)({
+                        fileUrl: x,
                         width: "1024"
                     }),
-                    Z = u.userIcon ? (0, ie.S6)({
+                    k = u.userIcon ? (0, ie.S6)({
                         fileUrl: u.userIcon,
                         width: "1024"
                     }) : null;
-                return r.createElement(et, {
+                return r.createElement(Ke, {
                     className: "mx-0 mb-2"
-                }, r.createElement(ft, {
+                }, r.createElement(it, {
                     className: "d-flex mx-0 align-items-center"
-                }, r.createElement(pt, {
-                    title: (0, He.Tq)(u.status, !0),
-                    statusColor: "var(--status-".concat((0, He.Tq)(u.status), ")")
+                }, r.createElement(lt, {
+                    title: (0, Ye.Tq)(u.status, !0),
+                    statusColor: "var(--status-".concat((0, Ye.Tq)(u.status), ")")
                 }), r.createElement(D.rU, {
                     to: "/home/user/".concat(u.id),
-                    onClick: A
-                }, u.displayName)), r.createElement(gt, null, d ? r.createElement(C.UU, {
+                    onClick: E
+                }, u.displayName)), r.createElement(ct, null, d ? r.createElement(C.UU, {
                     width: "100px",
                     height: "20px",
                     className: "mb-1",
@@ -2327,247 +2323,210 @@
                 }) : r.createElement(D.rU, {
                     to: "/home/user/".concat(u.id),
                     "aria-label": "User Status",
-                    onClick: A
-                }, u.statusDescription)), r.createElement(tt, null, r.createElement(rt, {
+                    onClick: E
+                }, u.statusDescription)), r.createElement(Qe, null, r.createElement(tt, {
                     "aria-label": "Profile Picture",
                     to: "/home/user/".concat(u.id),
-                    url: I,
-                    level: (0, He.FR)({
+                    url: A,
+                    level: (0, Ye.FR)({
                         tags: u.tags
                     }),
-                    onClick: A
-                }, r.createElement(at, {
-                    className: "mx-0"
-                }, r.createElement(it, {
-                    className: "text-center"
-                }, "Go To Profile")), Z && r.createElement(lt, {
+                    onClick: E
+                }, k && r.createElement(rt, {
                     type: "button",
-                    "aria-label": "Go To Gallery",
-                    onClick: function(e) {
-                        e.stopPropagation(), e.preventDefault(), (null != w && w.includes("permission-user-icons") || null != w && w.includes("permission-user-gallery")) && (p("/home/inventory/user-icons"), A())
-                    }
-                }, r.createElement(ct, {
+                    "aria-label": "Go To Gallery"
+                }, r.createElement(at, {
                     "aria-label": "User Icon",
-                    url: Z,
-                    level: (0, He.FR)({
+                    url: k,
+                    level: (0, Ye.FR)({
                         tags: u.tags
                     })
-                }, r.createElement(st, null, r.createElement(ut, {
-                    icon: _e._j,
-                    size: "lg"
-                }))), r.createElement(dt, null, "Change Icon")), r.createElement(ot, null)), !(null === (n = u.badges) || void 0 === n || !n.length) && r.createElement(ht, null, u.badges.filter((function(e) {
+                })), r.createElement(nt, null)), !(null === (n = u.badges) || void 0 === n || !n.length) && r.createElement(mt, null, u.badges.filter((function(e) {
                     return e.showcased && !e.hidden
                 })).slice(0, 3).sort((function(e, t) {
                     return new Date(t.assignedAt) - new Date(e.assignedAt)
                 })).map((function(e) {
-                    return r.createElement(nt, {
+                    return r.createElement(et, {
                         role: "note",
                         "aria-label": e.badgeName,
                         key: e.badgeId,
                         image: e.badgeImageUrl,
                         pettable: "bdg_a60e514a-8cb7-4702-8f24-2786992be1a8" === e.badgeId
                     })
-                }))), r.createElement(mt, {
+                }))), r.createElement(ot, {
                     className: "px-2 pt-1 pb-2 mx-0"
-                }, r.createElement(vt, {
+                }, r.createElement(dt, {
                     className: "relative justify-content-end"
-                }, x ? r.createElement(C.UU, {
+                }, h ? r.createElement(C.UU, {
                     width: "4rem",
                     height: "1.5rem",
                     style: {
                         borderRadius: 14
                     }
-                }) : r.createElement(bt, {
+                }) : r.createElement(ut, {
                     to: "/home/marketplace/wallet",
-                    onClick: A
-                }, r.createElement(C.b5, null), null !== (a = " ".concat(null == y ? void 0 : y.toLocaleString())) && void 0 !== a ? a : " ???")), !1, r.createElement(yt, null, r.createElement(D.rU, {
+                    onClick: E
+                }, r.createElement(C.b5, null), null !== (a = " ".concat(null == v ? void 0 : v.toLocaleString())) && void 0 !== a ? a : " ???")), !1, r.createElement(pt, null, r.createElement(D.rU, {
                     to: "/home/profile",
                     className: "btn btn-outline-primary d-block",
-                    onClick: A
+                    onClick: E
                 }, r.createElement(C.$1, {
                     icon: $e.Kb
-                }), "  Account Settings")))), r.createElement(tt, {
+                }), "  Account Settings")))), r.createElement(Qe, {
                     className: (0, l.iv)({
                         name: "1qhktia",
                         styles: "margin:5px 8px"
                     })
-                }, k && (null == u ? void 0 : u.location) && !["traveling", "offline"].includes(null == u ? void 0 : u.location) && r.createElement(wt, {
+                }, y && (null == u ? void 0 : u.location) && !["traveling", "offline"].includes(null == u ? void 0 : u.location) && r.createElement(st, {
                     className: "mx-0"
-                }, r.createElement(Ke.Z, {
+                }, r.createElement(Je.Z, {
                     location: u.location,
                     userId: u.id,
                     currentUser: u,
                     size: "normal"
                 }))))
             };
-            var et = (0, Fe.Z)("div", {
-                    target: "esgak1l21"
+            var Ke = (0, Fe.Z)("div", {
+                    target: "esgak1l16"
                 })(""),
-                tt = (0, Fe.Z)("div", {
-                    target: "esgak1l20"
+                Qe = (0, Fe.Z)("div", {
+                    target: "esgak1l15"
                 })({
                     name: "1tnesjs",
                     styles: "border-radius:10px;border:#053c48 2px solid;overflow:hidden;position:relative;z-index:10;background-color:#07242b;:empty{display:none;}"
                 }),
-                nt = (0, Fe.Z)("div", {
-                    target: "esgak1l19"
+                et = (0, Fe.Z)("div", {
+                    target: "esgak1l14"
                 })("width:36px;height:36px;margin:0!important;padding:6px;border-radius:50%;z-index:3;background-color:rgba(17, 17, 17, 0.8);background-image:url(", (function(e) {
                     return e.image
                 }), ");background-size:24px;background-repeat:no-repeat;background-position:center;", (function(e) {
                     return e.pettable && "\n    cursor: grab;\n\n    &:active {\n      cursor: grabbing;\n    }\n  "
                 }), ";"),
-                rt = (0, Fe.Z)(D.rU, {
-                    target: "esgak1l18"
+                tt = (0, Fe.Z)(D.rU, {
+                    target: "esgak1l13"
                 })("display:flex;height:0;padding-top:56.25%;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
-                }), ");position:relative;cursor:pointer;background-color:#05191d;&:hover{&>div:last-child{opacity:1;}}"),
-                at = (0, Fe.Z)(Xe.Z, {
-                    target: "esgak1l17"
-                })({
-                    name: "w4b5cp",
-                    styles: "display:flex;align-items:center;justify-content:center;position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;opacity:0;transition:opacity 0.2s ease;color:white;text-decoration:none!important;&:hover{opacity:1;}"
-                }),
-                ot = (0, Fe.Z)("div", {
-                    target: "esgak1l16"
+                }), ");position:relative;cursor:pointer;background-color:#05191d;"),
+                nt = (0, Fe.Z)("div", {
+                    target: "esgak1l12"
                 })({
                     name: "1t7q23s",
                     styles: "position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 0.2s ease;background-color:rgba(0, 0, 0, 0.7);z-index:1"
                 }),
-                it = (0, Fe.Z)("div", {
-                    target: "esgak1l15"
-                })({
-                    name: "iu2xal",
-                    styles: "font-weight:600;color:white!important"
-                }),
-                lt = (0, Fe.Z)("button", {
-                    target: "esgak1l14"
+                rt = (0, Fe.Z)("button", {
+                    target: "esgak1l11"
                 })({
                     name: "1tt4l1h",
                     styles: "border:none;background:none;padding:0;display:flex;position:absolute;bottom:-40px;left:10px;width:80px;align-items:center;z-index:3;color:white;&:hover{div:last-child{opacity:1;}svg{opacity:1;}}"
                 }),
-                ct = (0, Fe.Z)("div", {
-                    target: "esgak1l13"
+                at = (0, Fe.Z)("div", {
+                    target: "esgak1l10"
                 })("border-radius:100%;width:80px;height:80px;border:3px solid #07242b;box-sizing:border-box;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
                 }), ");background-color:#05191d;display:flex;justify-content:center;align-items:center;flex-shrink:0;"),
-                st = (0, Fe.Z)("div", {
-                    target: "esgak1l12"
-                })({
-                    name: "6828uq",
-                    styles: "opacity:0;transition:opacity 0.2s ease;background-color:rgba(0, 0, 0, 0.7);border-radius:100%;display:flex;width:100%;height:100%;align-items:center;justify-content:center"
-                }),
-                ut = (0, Fe.Z)(C.$1, {
-                    target: "esgak1l11"
-                })(""),
-                dt = (0, Fe.Z)("div", {
-                    target: "esgak1l10"
-                })({
-                    name: "1lu2whh",
-                    styles: "opacity:0;margin-left:3px;font-weight:600;flex-shrink:0;transition:opacity 0.2s ease"
-                }),
-                mt = (0, Fe.Z)(Ye.Z, {
+                ot = (0, Fe.Z)(_e.Z, {
                     target: "esgak1l9"
                 })({
                     name: "1dt3z6y",
                     styles: "background-color:#07242b"
                 }),
-                ft = (0, Fe.Z)("div", {
+                it = (0, Fe.Z)("div", {
                     target: "esgak1l8"
                 })({
                     name: "ab3jnw",
                     styles: "font-weight:600;justify-content:center;a{color:var(--bs-primary);font-size:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:240px;}"
                 }),
-                pt = (0, Fe.Z)("div", {
+                lt = (0, Fe.Z)("div", {
                     target: "esgak1l7"
                 })("width:15px;height:15px;border-radius:100%;background-color:", (function(e) {
                     return e.statusColor
                 }), ";margin-right:10px;"),
-                gt = (0, Fe.Z)("div", {
+                ct = (0, Fe.Z)("div", {
                     target: "esgak1l6"
                 })({
                     name: "1xmid75",
                     styles: "width:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:2px 20px;font-weight:bold;overflow:hidden;text-overflow:ellipsis"
                 }),
-                wt = (0, Fe.Z)("div", {
+                st = (0, Fe.Z)("div", {
                     target: "esgak1l5"
                 })({
                     name: "1i2d3s7",
                     styles: ">div>div{border:none;background:none!important;}h6{margin-bottom:0;}.clearfix{display:none!important;}div:first-of-type{margin:0 0;padding:2px;}"
                 }),
-                bt = (0, Fe.Z)(D.rU, {
+                ut = (0, Fe.Z)(D.rU, {
                     target: "esgak1l4"
                 })("color:white;background-color:rgba(17, 17, 17, 0.8);padding:4px 6px;line-height:1em;border-radius:14px;>", C.b5, "{color:#6ae3f9;}&:hover{color:#737372;text-decoration:none;>", C.b5, "{color:#064b5c;}}"),
-                vt = (0, Fe.Z)("div", {
+                dt = (0, Fe.Z)("div", {
                     target: "esgak1l3"
                 })({
                     name: "1y5jtkv",
                     styles: "display:flex;align-items:center;margin-top:0.5rem"
                 }),
-                ht = (0, Fe.Z)(vt, {
+                mt = (0, Fe.Z)(dt, {
                     target: "esgak1l2"
                 })({
                     name: "1nld4z4",
                     styles: "width:100%;height:45px;margin-top:-45px;display:flex;justify-content:flex-end;position:relative;padding:4px;gap:4px"
                 }),
-                Et = (0, Fe.Z)(vt, {
+                ft = (0, Fe.Z)(dt, {
                     target: "esgak1l1"
                 })({
                     name: "1nfvopr",
                     styles: "a{width:100%;}"
                 }),
-                yt = (0, Fe.Z)(Et, {
+                pt = (0, Fe.Z)(ft, {
                     target: "esgak1l0"
                 })({
                     name: "1giwfl6",
                     styles: "@media (min-width: 576px){display:none;}"
                 }),
-                xt = n(14097),
-                At = n(83183),
-                Ct = n(57026),
-                kt = n(89148),
-                Nt = n(15369),
-                It = n(13461),
-                Zt = n(66007),
-                Bt = n(2723),
-                Ot = n(40767),
-                jt = n(81511),
-                St = n(16688),
-                Tt = n(46450),
-                Pt = n(774),
-                Dt = n(12529),
-                zt = n(64240),
-                qt = n(43701),
-                Rt = n(70396),
-                Mt = n(7975),
-                Ut = n(70440),
-                Gt = n(96165),
-                Lt = n(54492),
-                Wt = n(91435),
-                Vt = n(49866),
-                Ft = n(57245),
-                $t = n(93118),
-                _t = n(99631),
-                Xt = n(51970),
-                Yt = n(28959),
-                Jt = n(67922),
-                Ht = n(87589),
-                Kt = n(62455),
-                Qt = n(25248),
-                en = n(50249),
-                tn = n(7503),
-                nn = n(98648),
-                rn = n(91158),
-                an = n(48566),
-                on = n(8256),
-                ln = n(28055),
-                cn = n(58877),
-                sn = n(25062),
-                un = n(93046),
-                dn = n.n(un),
-                mn = n(17219),
-                fn = n(91492),
-                pn = n(31358);
-            const gn = function(e) {
+                gt = n(14097),
+                wt = n(83183),
+                bt = n(57026),
+                vt = n(89148),
+                ht = n(15369),
+                Et = n(13461),
+                yt = n(66007),
+                xt = n(2723),
+                At = n(40767),
+                Ct = n(81511),
+                kt = n(16688),
+                Nt = n(46450),
+                It = n(774),
+                Zt = n(12529),
+                Bt = n(64240),
+                Ot = n(43701),
+                jt = n(70396),
+                St = n(7975),
+                Tt = n(70440),
+                Pt = n(96165),
+                Dt = n(54492),
+                zt = n(91435),
+                qt = n(49866),
+                Rt = n(57245),
+                Mt = n(93118),
+                Ut = n(99631),
+                Gt = n(51970),
+                Lt = n(28959),
+                Wt = n(67922),
+                Vt = n(87589),
+                Ft = n(62455),
+                $t = n(25248),
+                _t = n(50249),
+                Xt = n(7503),
+                Yt = n(98648),
+                Jt = n(91158),
+                Ht = n(48566),
+                Kt = n(8256),
+                Qt = n(28055),
+                en = n(58877),
+                tn = n(25062),
+                nn = n(93046),
+                rn = n.n(nn),
+                an = n(17219),
+                on = n(91492),
+                ln = n(31358);
+            const cn = function(e) {
                 var t = e.n,
                     n = void 0 === t ? 10 : t,
                     o = e.closeDialog,
@@ -2577,7 +2536,7 @@
                 return r.createElement("div", {
                     className: "mt-2"
                 }, i.map((function(e) {
-                    return r.createElement(pn.Z, {
+                    return r.createElement(ln.Z, {
                         notification: e,
                         key: e.id,
                         popIn: !0,
@@ -2587,14 +2546,14 @@
                 })))
             };
             n(64230);
-            var wn = n(76938),
-                bn = n(73670),
-                vn = n(38824),
-                hn = n(87261),
-                En = n(3126),
-                yn = n(25411);
+            var sn = n(76938),
+                un = n(73670),
+                dn = n(38824),
+                mn = n(87261),
+                fn = n(3126),
+                pn = n(25411);
 
-            function xn(e, t) {
+            function gn(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -2605,18 +2564,18 @@
                 return n
             }
 
-            function An(e) {
+            function wn(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? xn(Object(n), !0).forEach((function(t) {
+                    t % 2 ? gn(Object(n), !0).forEach((function(t) {
                         (0, Y.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : xn(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : gn(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Cn = function(e) {
+            var bn = function(e) {
                 var t = e.onChangeCallback,
                     n = (0, a.I0)(),
                     o = (0, r.useState)(!1),
@@ -2650,7 +2609,7 @@
                         searchableFilters: E,
                         sortByFilter: C
                     };
-                    (0, oe.j)("Web_Mod_SearchFilterChange", An(An({}, e), {}, {
+                    (0, oe.j)("Web_Mod_SearchFilterChange", wn(wn({}, e), {}, {
                         autoRedirect: N
                     })), t(e)
                 }), [N, d, w, E, C]);
@@ -2659,21 +2618,21 @@
                         return t !== e.target.name
                     })))
                 };
-                return r.createElement(an.Z, {
+                return r.createElement(Ht.Z, {
                     isOpen: l,
                     toggle: function() {
                         return c(!l)
                     }
-                }, r.createElement(on.Z, {
+                }, r.createElement(Kt.Z, {
                     caret: !0
-                }, "Filters"), r.createElement(ln.Z, {
+                }, "Filters"), r.createElement(Qt.Z, {
                     className: "text-white p-0 bg-dark pb-2"
-                }, r.createElement(vn.Z, {
+                }, r.createElement(dn.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Sort Results By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(hn.Z, {
+                }, r.createElement(mn.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return k(t)
@@ -2690,12 +2649,12 @@
                     value: "last_login"
                 }, "Last Login"), r.createElement("option", {
                     value: "trust"
-                }, "Trust Rank"))), r.createElement(vn.Z, {
+                }, "Trust Rank"))), r.createElement(dn.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Order By"), r.createElement("div", {
                     className: "mx-3 text-white"
-                }, r.createElement(hn.Z, {
+                }, r.createElement(mn.Z, {
                     onChange: function(e) {
                         var t = e.target.value;
                         return b(t)
@@ -2710,72 +2669,72 @@
                     value: "ascending"
                 }, "Ascending"), r.createElement("option", {
                     value: "descending"
-                }, "Descending"))), r.createElement(vn.Z, {
+                }, "Descending"))), r.createElement(dn.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-2 px-2"
                 }, "Search For"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: E.includes("displayName"),
                     onChange: I,
                     type: "checkbox",
                     name: "displayName",
                     id: "displayName"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "displayName"
                 }, "Display Name"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: E.includes("email"),
                     onChange: I,
                     type: "checkbox",
                     name: "email",
                     id: "email"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "email"
                 }, "Email"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: E.includes("username"),
                     onChange: I,
                     type: "checkbox",
                     name: "username",
                     id: "username"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "username"
                 }, "Username"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: E.includes("pastEmails"),
                     onChange: I,
                     type: "checkbox",
                     name: "pastEmails",
                     id: "pastEmails"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "pastEmails"
-                }, "Past Emails"))), r.createElement(vn.Z, {
+                }, "Past Emails"))), r.createElement(dn.Z, {
                     header: !0,
                     className: "text-white mx-1 mt-1 px-2"
                 }, "Settings"), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: N,
                     onChange: function() {
-                        return n((0, yn.Tr)())
+                        return n((0, pn.Tr)())
                     },
                     type: "checkbox",
                     name: "autoDirect",
                     id: "autoDirect"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "autoDirect"
                 }, "Auto Redirect"))), r.createElement("div", {
                     className: "ms-3 text-white"
-                }, r.createElement("div", null, r.createElement(hn.Z, {
+                }, r.createElement("div", null, r.createElement(mn.Z, {
                     checked: d,
                     onChange: function() {
                         return f(!d)
@@ -2783,21 +2742,21 @@
                     type: "checkbox",
                     name: "fuzzy",
                     id: "fuzzy"
-                }), r.createElement(En.Z, {
+                }), r.createElement(fn.Z, {
                     className: "ms-1",
                     for: "fuzzy"
                 }, "Fuzzy")))))
             };
-            Cn.propTypes = {
+            bn.propTypes = {
                 onChangeCallback: S().func.isRequired
             };
-            const kn = function() {
+            const vn = function() {
                 var e = (0, o.s0)(),
                     t = (0, o.TH)(),
                     n = "users",
                     i = "";
                 t.pathname.startsWith("/home/search/") && (n = t.pathname.substring(13).split("/")[0], i = decodeURIComponent(t.pathname.substring("/home/search/".concat(n, "/").length)));
-                var c = (0, a.v9)(wn.y),
+                var c = (0, a.v9)(sn.y),
                     s = (0, r.useState)("/home/search/".concat(n, "/")),
                     u = (0, m.Z)(s, 2),
                     d = u[0],
@@ -2848,18 +2807,19 @@
                         name: "clzu0",
                         styles: "display:flex;flex-direction:row;align-items:center;flex-grow:1"
                     })
-                }, r.createElement(bn.Z, {
+                }, r.createElement(un.Z, {
                     initialString: h,
                     searchString: E
                 }), c && !1))))))
             };
-            var Nn = n(24075),
-                In = n(89082),
-                Zn = n(58589),
-                Bn = n(9669),
-                On = n.n(Bn);
-            var jn = ["public", "internal"];
-            const Sn = function(e) {
+            var hn = n(24075),
+                En = n(89082),
+                yn = n(58589),
+                xn = n(35773),
+                An = n(9669),
+                Cn = n.n(An);
+            var kn = ["public", "internal"];
+            const Nn = function(e) {
                 var t = e.direction,
                     n = r.useState([]),
                     i = (0, m.Z)(n, 2),
@@ -2879,7 +2839,7 @@
                             return be().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = window.apiUrl("/api/1/frontend/branches"), e.next = 3, On().get(t);
+                                        return t = window.apiUrl("/api/1/frontend/branches"), e.next = 3, Cn().get(t);
                                     case 3:
                                         n = e.sent, r = n.data.filter((function(e) {
                                             return "main" !== e
@@ -2906,7 +2866,7 @@
                             return !0
                         };
                         return e.map((function(e) {
-                            return jn.map((function(n, a) {
+                            return kn.map((function(n, a) {
                                 if ("public" !== n && !w) return null;
                                 var o = "".concat(n, "-").concat(e) === "".concat("public", "-").concat("main"),
                                     i = ["dropdown-item", "px-2", "py-1", t(e) ? "" : (0, l.iv)({
@@ -2916,7 +2876,7 @@
                                 o && i.push("active");
                                 var c = {
                                     className: ["public" === n ? "text-success" : "text-danger", "main" === e ? "" : "mx-1"].join(" "),
-                                    icon: "main" === e ? "public" === n ? St.J9 : In.c : Nn.mh
+                                    icon: "main" === e ? "public" === n ? kt.J9 : En.c : hn.mh
                                 };
                                 return r.createElement("a", {
                                     href: v(e, n),
@@ -2927,26 +2887,26 @@
                             }))
                         }))
                     };
-                return c.length <= 1 ? null : r.createElement("div", null, r.createElement(Zn.Z, {
+                return c.length <= 1 ? null : r.createElement("div", null, r.createElement(yn.Z, {
                     size: "sm",
                     direction: null != t ? t : "left",
                     className: (0, l.iv)({
                         name: "1xtoy05",
                         styles: "z-index:20;text-align:center"
                     })
-                }, r.createElement(on.Z, {
+                }, r.createElement(Kt.Z, {
                     caret: !0,
                     color: "primary"
                 }, r.createElement(C.$1, {
-                    icon: Nn.mh
-                }), " ", "public", "-", "main"), r.createElement(ln.Z, {
+                    icon: hn.mh
+                }), " ", "public", "-", "main"), r.createElement(Qt.Z, {
                     className: (0, l.iv)({
                         name: "1c2bfwh",
                         styles: "max-height:800px;overflow-y:auto;&.dropdown-menu{padding:0;margin:0;border-radius:4px;}.dropdown-item{color:white!important;&.active{background:#1db3cb linear-gradient(180deg, #198799, #1cb5cd) repeat-x;}&:hover{color:var(--bs-gray-dark)!important;}}input{border-radius:4px;border:none;}"
                     })
                 }, h(c.slice(0, 1)), r.createElement("hr", {
                     className: "w-100 my-1 text-primary"
-                }), r.createElement(Xe.Z, {
+                }), r.createElement(xn.Z, {
                     className: "mx-0"
                 }, r.createElement("input", {
                     type: "text",
@@ -2961,48 +2921,48 @@
                     return 0 === f.length || new RegExp(f, "gi").test(e)
                 })))))
             };
-            var Tn = n(63221),
-                Pn = n(72065),
-                Dn = n(22082),
-                zn = n(56395);
-            const qn = function(e) {
+            var In = n(63221),
+                Zn = n(72065),
+                Bn = n(22082),
+                On = n(56395);
+            const jn = function(e) {
                 var t = e.to,
                     n = e.title,
                     a = e.onClick,
-                    o = (0, Dn.oE)({
-                        states: [zn.g1.ANNOUNCED, zn.g1.SUBMISSIONS_OPEN, zn.g1.SUBMISSIONS_CLOSED, zn.g1.WINNERS_SELECTED]
+                    o = (0, Bn.oE)({
+                        states: [On.g1.ANNOUNCED, On.g1.SUBMISSIONS_OPEN, On.g1.SUBMISSIONS_CLOSED, On.g1.WINNERS_SELECTED]
                     }).data,
                     i = null == o ? void 0 : o.every((function(e) {
                         return !Object.keys(e).includes("state")
                     }));
                 if (!o || 0 === (null == o ? void 0 : o.length) || i) return null;
                 var l = o[0];
-                return r.createElement(Rn, {
+                return r.createElement(Sn, {
                     to: t,
                     title: n,
                     className: "btn text-left",
                     onClick: a
-                }, r.createElement(Mn, {
-                    icon: Pn.Ww
-                }), r.createElement("div", null, zn.p6[l.state]), r.createElement(C.$1, {
-                    icon: At.yO
+                }, r.createElement(Tn, {
+                    icon: Zn.Ww
+                }), r.createElement("div", null, On.p6[l.state]), r.createElement(C.$1, {
+                    icon: wt.yO
                 }))
             };
-            var Rn = (0, Fe.Z)(D.rU, {
+            var Sn = (0, Fe.Z)(D.rU, {
                     target: "eq9q68u1"
                 })({
                     name: "wjiy21",
                     styles: "border:#7e24ab solid 2px;color:#f7c94b;background:#5a1995;text-shadow:0 0 5px #7e24ab;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{align-self:center;font-weight:bold;}&:hover{background:#5a1995;color:#f7c94b;border-color:#ca34de;transform:scale(1.1);}"
                 }),
-                Mn = (0, Fe.Z)(C.$1, {
+                Tn = (0, Fe.Z)(C.$1, {
                     target: "eq9q68u0"
                 })({
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var Un = [Qt.R7, Kt.od, Ht.tM, Jt.RK, Yt.I3, Xt.nG, _t.jO, $t.uS, Ft.dy, Vt.XG, Wt.BD, Lt.ok, Gt.Sv, Ut.qA, Mt.I1, Rt.Nk, qt.uj, zt.io, Dt.l9],
-                Gn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
-                Ln = r.memo((function(e) {
+            var Pn = [$t.R7, Ft.od, Vt.tM, Wt.RK, Lt.I3, Gt.nG, Ut.jO, Mt.uS, Rt.dy, qt.XG, zt.BD, Dt.ok, Pt.Sv, Tt.qA, St.I1, jt.Nk, Ot.uj, Bt.io, Zt.l9],
+                Dn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
+                zn = r.memo((function(e) {
                     var t, n, i = e.horizontal,
                         c = e.navToggleCallback,
                         s = e.friendsToggleCallback,
@@ -3014,15 +2974,15 @@
                         g = (0, m.Z)(p, 2),
                         w = g[0],
                         b = g[1],
-                        v = r.useState(Un[Math.floor(u(Un.length))]),
+                        v = r.useState(Pn[Math.floor(u(Pn.length))]),
                         h = (0, m.Z)(v, 2),
                         E = h[0],
                         y = h[1],
-                        x = r.useState(Gn[u(Gn.length)]),
+                        x = r.useState(Dn[u(Dn.length)]),
                         A = (0, m.Z)(x, 2),
                         k = A[0],
                         N = A[1],
-                        I = (0, mn.y)().data,
+                        I = (0, an.y)().data,
                         Z = ((0, O.pc)(), (0, F.XC)().data),
                         B = (0, a.v9)((function(e) {
                             return e.notifications.notifications
@@ -3033,7 +2993,7 @@
                         P = (0, a.v9)((function(e) {
                             return e.notifications.groupNotifications
                         })) || [],
-                        z = (0, fn.dq)({
+                        z = (0, on.dq)({
                             n: 1,
                             pageValue: 1,
                             isNavBar: !0
@@ -3041,7 +3001,7 @@
                         q = z.data,
                         R = z.isSuccess;
                     (0, r.useEffect)((function() {
-                        w && (y(Un[u(Un.length)]), N(Gn[u(Gn.length)]))
+                        w && (y(Pn[u(Pn.length)]), N(Dn[u(Dn.length)]))
                     }), [w]);
                     var M = function(e) {
                             d("/home/login", {
@@ -3059,7 +3019,7 @@
                         L = S || [],
                         W = (L.includes("permission-user-icons"), L.includes("permission-user-gallery"), L.includes("permission-groups-beta"), null !== (t = B.length) && void 0 !== t ? t : 0);
                     n = P.filter((function(e) {
-                        return e.state === Tn.oq.INVITED
+                        return e.state === In.oq.INVITED
                     })).length;
                     if (null == i || !1 === i) {
                         0;
@@ -3079,7 +3039,7 @@
                                 c && (s && s(!1), c())
                             }
                         }, r.createElement(C.$1, {
-                            icon: Pt.xi,
+                            icon: It.xi,
                             size: "lg"
                         })), r.createElement(D.rU, {
                             to: "/home",
@@ -3102,12 +3062,12 @@
                                 name: "1vcob1d",
                                 styles: "display:flex;justify-content:center;align-items:center"
                             }))
-                        }, r.createElement(an.Z, {
+                        }, r.createElement(Ht.Z, {
                             isOpen: w,
                             toggle: function() {
                                 return b(!w)
                             }
-                        }, r.createElement(on.Z, {
+                        }, r.createElement(Kt.Z, {
                             className: "p-1 navbar-btn text-white"
                         }, W > 0 && r.createElement("div", {
                             className: (0, l.iv)({
@@ -3115,7 +3075,7 @@
                                 styles: "position:absolute;top:-3px;right:-8px;background:var(--bs-primary);color:var(--bs-gray-800);min-width:23px;padding:3px;height:23px;border-radius:23px;z-index:5;font-size:80%;font-weight:bold"
                             })
                         }, W >= 99 ? "99+" : W), r.createElement(C.$1, {
-                            icon: jt.FU,
+                            icon: Ct.FU,
                             size: "lg",
                             className: (0, l.iv)({
                                 name: "bqqvn3",
@@ -3128,7 +3088,7 @@
                                 name: "2ey0we",
                                 styles: "transform:translateX(0)"
                             })
-                        }, r.createElement(ln.Z, {
+                        }, r.createElement(Qt.Z, {
                             className: "text-white bg-dark custom-dropdown ".concat((0, l.iv)({
                                 name: "1aeu1is",
                                 styles: "width:550px"
@@ -3152,7 +3112,7 @@
                                 name: "2nen93",
                                 styles: "max-height:500px;overflow-y:auto;padding:0 15px;background:#041215"
                             })
-                        }, W > 0 ? r.createElement(gn, {
+                        }, W > 0 ? r.createElement(cn, {
                             n: 20,
                             closeDialog: U,
                             isGroups: !1
@@ -3191,7 +3151,7 @@
                             className: "navbar-section center-nav"
                         }, r.createElement("div", {
                             className: "search"
-                        }, r.createElement(kn, null)), r.createElement("button", {
+                        }, r.createElement(vn, null)), r.createElement("button", {
                             type: "button",
                             className: "p-1 btn btn-secondary navbar-btn d-md-none",
                             onClick: function() {
@@ -3204,7 +3164,7 @@
                             })
                         }))), r.createElement("div", {
                             className: "navbar-section right-nav d-xl-flex d-none"
-                        }, r.createElement(Sn, null), r.createElement("a", {
+                        }, r.createElement(Nn, null), r.createElement("a", {
                             href: "https://docs.vrchat.com/",
                             target: "_blank",
                             rel: "noreferrer"
@@ -3228,63 +3188,63 @@
                             title: "logout",
                             onClick: M
                         }, r.createElement(C.$1, {
-                            icon: xt.TE
+                            icon: gt.TE
                         }), "  Logout"))))
                     }
-                    return r.createElement("nav", null, r.createElement(cn.Z, {
+                    return r.createElement("nav", null, r.createElement(en.Z, {
                         vertical: !0,
                         size: "lg",
                         className: "w-100 ".concat((0, l.iv)({
                             name: "1bfow8s",
                             styles: "padding:0 10px;&>a{margin-bottom:10px;}"
                         }))
-                    }, 0 !== T ? r.createElement(Vn, {
+                    }, 0 !== T ? r.createElement(Rn, {
                         to: "/home/locations",
                         title: "locations",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Tt.mG
-                    }), r.createElement("div", null, "Join Friends", " ", r.createElement(sn.Z, {
+                        icon: Nt.mG
+                    }), r.createElement("div", null, "Join Friends", " ", r.createElement(tn.Z, {
                         className: (0, l.iv)({
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
                     }, T)), r.createElement(C.$1, {
-                        icon: At.yO
-                    })) : r.createElement(Vn, {
+                        icon: wt.yO
+                    })) : r.createElement(Rn, {
                         to: "/home",
                         title: "home",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: St.J9
+                        icon: kt.J9
                     }), r.createElement("div", null, "  Home"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/groups",
                         title: "groups",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: tn.default
+                        icon: Xt.default
                     }), r.createElement("div", null, "Groups"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/messages",
                         title: "messages",
                         className: "btn text-left d-sm-none",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: jt.FU
-                    }), r.createElement("div", null, "Messages", " ", W > 0 && r.createElement(sn.Z, {
+                        icon: Ct.FU
+                    }), r.createElement("div", null, "Messages", " ", W > 0 && r.createElement(tn.Z, {
                         className: (0, l.iv)({
                             name: "v21qw0",
                             styles: "background-color:var(--bs-primary);color:#05191d"
                         })
                     }, W >= 99 ? "99+" : W)), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/calendar",
                         title: "Calendar",
                         className: "btn text-left d-sm-none",
@@ -3292,81 +3252,81 @@
                     }, r.createElement(C.$1, {
                         icon: f.fT
                     }), r.createElement("div", null, "Calendar"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(qn, {
+                        icon: wt.yO
+                    })), r.createElement(jn, {
                         to: "/home/jams",
                         title: "Jam",
                         onClick: G
-                    }), r.createElement(Vn, {
+                    }), r.createElement(Rn, {
                         to: "/home/download",
                         title: "download",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Ot.q7
+                        icon: At.q7
                     }), r.createElement("div", null, "Download"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/worlds",
                         title: "worlds",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: rn.default
+                        icon: Jt.default
                     }), r.createElement("div", null, "Discover Worlds"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/content/worlds",
                         title: "My Worlds",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Bt.cf
+                        icon: xt.cf
                     }), r.createElement("div", null, "My Worlds"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/avatars",
                         title: "avatars",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Zt.KC
+                        icon: yt.KC
                     }), r.createElement("div", null, "Avatars"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/favorites/world",
                         title: "Favorite Worlds",
                         className: "btn nav-button text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: It.T
+                        icon: Et.T
                     }), r.createElement("div", null, "Favorite Worlds"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/favorites/avatar",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: It.T
+                        icon: Et.T
                     }), r.createElement("div", null, "Favorite Avatars"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/favorites/friend",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: It.T
+                        icon: Et.T
                     }), r.createElement("div", null, "Favorite Friends"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/inventory",
                         title: "Inventory",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: nn.default
+                        icon: Yt.default
                     }), r.createElement("div", {
                         className: "tw-flex"
                     }, "Inventory", R && (null == q ? void 0 : q.totalCount) > 0 && r.createElement("div", {
@@ -3374,36 +3334,36 @@
                     }, r.createElement("p", {
                         className: "tw-text-sm tw-text-center tw-w-full tw-mb-0 tw-font-bold"
                     }, null == q ? void 0 : q.totalCount))), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/marketplace",
                         title: "marketplace",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: en.default
+                        icon: _t.default
                     }), r.createElement("div", null, "Marketplace"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), !1, r.createElement(Vn, {
+                        icon: wt.yO
+                    })), !1, r.createElement(Rn, {
                         to: "/home/accountlink",
                         title: "accountLink",
                         className: "btn text-left",
                         hidden: (null == I ? void 0 : I.disableUpgradeAccount) || (null == Z ? void 0 : Z.steamId) && (null == Z ? void 0 : Z.oculusId),
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Nt.x0
+                        icon: ht.x0
                     }), r.createElement("div", null, "Account Link"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/playermoderations",
                         title: "playermoderations",
                         className: "btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: kt.Ek
+                        icon: vt.Ek
                     }), r.createElement("div", null, "Blocks & Mutes"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "/home/subscriptions",
                         title: "subscriptions",
                         className: "btn text-left",
@@ -3411,10 +3371,10 @@
                     }, r.createElement("img", {
                         alt: "subscriptions",
                         width: "25",
-                        src: dn()
+                        src: rn()
                     }), r.createElement("div", null, "Subscriptions"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Vn, {
+                        icon: wt.yO
+                    })), r.createElement(Rn, {
                         to: "https://help.vrchat.com/",
                         title: "helpdesk",
                         target: "_blank",
@@ -3422,37 +3382,37 @@
                         className: "tw-bg-[#07142B] tw-border-[#051E48] tw-text-[#6AA2F9] btn text-left",
                         onClick: G
                     }, r.createElement(C.$1, {
-                        icon: Ct.lX
+                        icon: bt.lX
                     }), r.createElement("div", null, "Help Desk"), r.createElement(C.$1, {
-                        icon: At.yO
-                    })), r.createElement(Fn, {
+                        icon: wt.yO
+                    })), r.createElement(Mn, {
                         to: "/home/login",
                         title: "logout",
                         className: "btn text-left d-xl-none",
                         onClick: M
                     }, r.createElement(C.$1, {
-                        icon: xt.TE
+                        icon: gt.TE
                     }), r.createElement("div", null, "Logout"), r.createElement("div", null))))
                 }));
-            Ln.displayName = "Navbar";
-            const Wn = Ln;
-            var Vn = (0, Fe.Z)(D.rU, {
+            zn.displayName = "Navbar";
+            const qn = zn;
+            var Rn = (0, Fe.Z)(D.rU, {
                     target: "e18dqzxk1"
                 })({
                     name: "yjay0l",
                     styles: "background:#07242b;border:#053c48 solid 2px;color:#6ae3f9;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{font-weight:normal;align-self:center;}&:hover{background:#07343f;border-color:#086c84;transform:scale(1.1);}"
                 }),
-                Fn = (0, Fe.Z)(Vn, {
+                Mn = (0, Fe.Z)(Rn, {
                     target: "e18dqzxk0"
                 })({
                     name: "vkod7",
                     styles: "color:#ee5454;background:#07242b;border:#ee5454 solid 4px;&:hover{border-color:#ee6464;}"
                 }),
-                $n = n(50119),
-                _n = n(46320),
-                Xn = n(30098),
-                Yn = [];
-            const Jn = function() {
+                Un = n(50119),
+                Gn = n(46320),
+                Ln = n(30098),
+                Wn = [];
+            const Vn = function() {
                 var e = (0, o.s0)(),
                     t = (0, V._)("campaigns", []),
                     n = (0, m.Z)(t, 2),
@@ -3472,40 +3432,42 @@
                         return (0, m.Z)(r, 1)[0]
                     }());
                 if (c) {
-                    var s = Yn.find((function(e) {
+                    var s = Wn.find((function(e) {
                         return e.name === c.name
                     }));
                     if (s) return e(s.landingPage)
                 }
                 return null
             };
-            var Hn = n(87462);
-            const Kn = function(e) {
+            var Fn = n(87462);
+            const $n = function(e) {
                 var t = (0, F.q7)().data,
                     n = void 0 === t ? [] : t;
                 return function(t) {
-                    return r.createElement(e, (0, Hn.Z)({}, t, {
+                    return r.createElement(e, (0, Fn.Z)({}, t, {
                         currentUserPermissions: n
                     }))
                 }
             };
-            var Qn = n(28944),
-                er = n(9419);
-            const tr = function() {
+            var _n = n(28944),
+                Xn = n(9419);
+            const Yn = function() {
                 var e = (0, a.I0)(),
-                    t = (0, er._V)(),
+                    t = (0, Xn._V)(),
                     n = t.data,
                     o = t.isSuccess;
                 t.isLoading;
                 return r.useEffect((function() {
-                    e((0, Xn._r)(n))
+                    e((0, Ln._r)(n))
                 }), [o, n]), null
             };
-            var nr = n(13557),
-                rr = n(33622),
-                ar = n.n(rr),
-                or = n(39883),
-                ir = n(61509).S.injectEndpoints({
+            var Jn = n(13557),
+                Hn = n(33622),
+                Kn = n.n(Hn),
+                Qn = n(62188),
+                er = n.n(Qn),
+                tr = n(39883),
+                nr = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             redeemCode: e.mutation({
@@ -3522,16 +3484,16 @@
                         }
                     }
                 }).useRedeemCodeMutation,
-                lr = n(16031),
-                cr = n.n(lr);
-            const sr = function() {
+                rr = n(16031),
+                ar = n.n(rr);
+            const or = function() {
                 var e, t, n = r.useState(""),
                     a = (0, m.Z)(n, 2),
                     i = a[0],
                     l = a[1],
                     c = (0, o.TH)(),
                     s = (0, o.s0)(),
-                    u = ir(),
+                    u = nr(),
                     d = (0, m.Z)(u, 2),
                     f = d[0],
                     p = d[1],
@@ -3550,7 +3512,7 @@
                         replace: !0
                     }), l(t))
                 }), []), r.useEffect((function() {
-                    b && null != g && g.redeemedRewards && (0, or.Z)({
+                    b && null != g && g.redeemedRewards && (0, tr.Z)({
                         particleCount: 150,
                         spread: 90,
                         origin: {
@@ -3592,12 +3554,12 @@
                 }();
                 return r.createElement("div", {
                     className: "tw-p-5"
-                }, r.createElement(C.$4, null, "Redeem Code"), r.createElement(ur, {
+                }, r.createElement(C.$4, null, "Redeem Code"), r.createElement(ir, {
                     className: "mb-4 tw-bg-[#07242b] tw-border-[#053c48]",
                     outline: !0
-                }, r.createElement(dr, null, r.createElement("h2", {
+                }, r.createElement(lr, null, r.createElement("h2", {
                     className: "tw-text-3xl tw-font-bold tw-text-center tw-text-[#6ae3f9] mb-2"
-                }, "Redeem Code")), r.createElement(mr, {
+                }, "Redeem Code")), r.createElement(cr, {
                     className: "tw-p-5 tw-border-2 tw-border-[#053c48] tw-rounded-xl"
                 }, r.createElement(C.JX, {
                     xs: {
@@ -3666,7 +3628,7 @@
                                 vrcPlus: {
                                     category: "VRC+",
                                     title: "VRC+ Subscription",
-                                    imageUrl: cr()
+                                    imageUrl: ar()
                                 }
                             } [s] || {
                                 title: s,
@@ -3676,7 +3638,7 @@
                             m = d.title,
                             f = d.imageUrl,
                             p = d.category;
-                        return r.createElement(ur, {
+                        return r.createElement(ir, {
                             key: t,
                             className: "tw-bg-[#181b1f] tw-border tw-border-[#06333d] tw-relative tw-p-4 tw-shadow tw-flex tw-flex-col tw-items-center tw-text-center tw-w-full sm:tw-w-6/12 md:tw-w-4/12 lg:tw-w-3/12 tw-p-2 tw-m-2"
                         }, p && r.createElement("div", {
@@ -3691,112 +3653,112 @@
                     }(e, t)
                 }))))))))
             };
-            var ur = (0, Fe.Z)("div", {
+            var ir = (0, Fe.Z)("div", {
                     target: "edh905g2"
                 })({
                     name: "sx6pt1",
                     styles: "border-radius:0.5rem;padding:2.5rem 1rem;box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 8px 10px -6px rgba(0, 0, 0, 0.1);border:1px solid #053c48"
                 }),
-                dr = (0, Fe.Z)("div", {
+                lr = (0, Fe.Z)("div", {
                     target: "edh905g1"
                 })({
                     name: "1ykowef",
                     styles: "margin-bottom:0"
                 }),
-                mr = (0, Fe.Z)("div", {
+                cr = (0, Fe.Z)("div", {
                     target: "edh905g0"
                 })({
                     name: "mkkf9p",
                     styles: "flex:1 1 auto"
                 });
-            var fr = r.lazy((function() {
-                    return Promise.all([n.e(9923), n.e(1643)]).then(n.bind(n, 88567))
+            var sr = r.lazy((function() {
+                    return Promise.all([n.e(4509), n.e(1643)]).then(n.bind(n, 88567))
                 })),
-                pr = r.lazy((function() {
-                    return Promise.all([n.e(5545), n.e(2998), n.e(8874), n.e(5474)]).then(n.bind(n, 37099))
+                ur = r.lazy((function() {
+                    return Promise.all([n.e(5545), n.e(141), n.e(8874), n.e(319)]).then(n.bind(n, 37099))
                 })),
-                gr = r.lazy((function() {
+                dr = r.lazy((function() {
                     return n.e(3488).then(n.bind(n, 93488))
                 })),
-                wr = r.lazy((function() {
+                mr = r.lazy((function() {
                     return n.e(6231).then(n.bind(n, 76231))
                 })),
-                br = r.lazy((function() {
-                    return Promise.all([n.e(123), n.e(9440), n.e(2998), n.e(3294), n.e(2027), n.e(8043), n.e(8207), n.e(1244), n.e(9336), n.e(5842), n.e(6461)]).then(n.bind(n, 76461))
+                fr = r.lazy((function() {
+                    return Promise.all([n.e(123), n.e(9440), n.e(3294), n.e(2027), n.e(3348), n.e(8207), n.e(9336), n.e(5842), n.e(6461)]).then(n.bind(n, 76461))
                 })),
-                vr = r.lazy((function() {
-                    return Promise.all([n.e(7826), n.e(6770), n.e(852)]).then(n.bind(n, 36418))
+                pr = r.lazy((function() {
+                    return Promise.all([n.e(7826), n.e(852)]).then(n.bind(n, 36418))
                 })),
-                hr = r.lazy((function() {
-                    return Promise.all([n.e(545), n.e(9899), n.e(7585)]).then(n.bind(n, 3306))
+                gr = r.lazy((function() {
+                    return Promise.all([n.e(545), n.e(9899), n.e(1049)]).then(n.bind(n, 71049))
                 })),
-                Er = r.lazy((function() {
+                wr = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(4444), n.e(4232)]).then(n.bind(n, 74444))
                 })),
-                yr = r.lazy((function() {
+                br = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(9908), n.e(9575)]).then(n.bind(n, 39908))
                 })),
-                xr = r.lazy((function() {
+                vr = r.lazy((function() {
                     return Promise.all([n.e(123), n.e(229), n.e(1459)]).then(n.bind(n, 60229))
                 })),
-                Ar = r.lazy((function() {
+                hr = r.lazy((function() {
                     return n.e(8438).then(n.bind(n, 58438))
                 })),
-                Cr = r.lazy((function() {
+                Er = r.lazy((function() {
                     return n.e(4907).then(n.bind(n, 44907))
                 })),
-                kr = r.lazy((function() {
+                yr = r.lazy((function() {
                     return Promise.all([n.e(8158), n.e(6488)]).then(n.bind(n, 92848))
                 })),
-                Nr = r.lazy((function() {
-                    return Promise.all([n.e(211), n.e(2998), n.e(347), n.e(8207), n.e(1244), n.e(9923), n.e(8158), n.e(4896), n.e(7207)]).then(n.bind(n, 17207))
+                xr = r.lazy((function() {
+                    return Promise.all([n.e(2537), n.e(347), n.e(141), n.e(8207), n.e(4509), n.e(8158), n.e(4896), n.e(4631)]).then(n.bind(n, 94631))
                 })),
-                Ir = r.lazy((function() {
+                Ar = r.lazy((function() {
                     return Promise.all([n.e(545), n.e(8158), n.e(3013)]).then(n.bind(n, 13164))
                 })),
-                Zr = r.lazy((function() {
+                Cr = r.lazy((function() {
                     return Promise.all([n.e(545), n.e(8264)]).then(n.bind(n, 8264))
                 })),
-                Br = r.lazy((function() {
-                    return Promise.all([n.e(2027), n.e(6770), n.e(7253)]).then(n.bind(n, 77253))
+                kr = r.lazy((function() {
+                    return Promise.all([n.e(6286), n.e(2027), n.e(141), n.e(3790), n.e(9651)]).then(n.bind(n, 49651))
                 })),
-                Or = r.lazy((function() {
+                Nr = r.lazy((function() {
                     return n.e(9795).then(n.bind(n, 79795))
                 })),
-                jr = r.lazy((function() {
-                    return Promise.all([n.e(9923), n.e(4157)]).then(n.bind(n, 50062))
+                Ir = r.lazy((function() {
+                    return Promise.all([n.e(4509), n.e(4157)]).then(n.bind(n, 50062))
                 })),
-                Sr = r.lazy((function() {
+                Zr = r.lazy((function() {
                     return n.e(7047).then(n.bind(n, 7047))
                 })),
-                Tr = r.lazy((function() {
-                    return Promise.all([n.e(2998), n.e(1952)]).then(n.bind(n, 81952))
+                Br = r.lazy((function() {
+                    return n.e(1952).then(n.bind(n, 81952))
                 })),
-                Pr = r.lazy((function() {
+                Or = r.lazy((function() {
                     return Promise.all([n.e(5545), n.e(2095), n.e(4586)]).then(n.bind(n, 34586))
                 })),
-                Dr = r.lazy((function() {
+                jr = r.lazy((function() {
                     return n.e(997).then(n.bind(n, 997))
                 })),
-                zr = r.lazy((function() {
-                    return n.e(4945).then(n.bind(n, 14945))
+                Sr = r.lazy((function() {
+                    return Promise.all([n.e(141), n.e(877)]).then(n.bind(n, 36828))
                 })),
-                qr = r.lazy((function() {
+                Tr = r.lazy((function() {
                     return n.e(6812).then(n.bind(n, 46812))
                 })),
-                Rr = r.lazy((function() {
-                    return n.e(7413).then(n.bind(n, 97413))
+                Pr = r.lazy((function() {
+                    return Promise.all([n.e(2027), n.e(141), n.e(3790), n.e(3304)]).then(n.bind(n, 44218))
                 })),
-                Mr = r.lazy((function() {
-                    return Promise.all([n.e(5545), n.e(2998), n.e(2027), n.e(8043), n.e(4140)]).then(n.bind(n, 51423))
+                Dr = r.lazy((function() {
+                    return Promise.all([n.e(5545), n.e(2027), n.e(3348), n.e(4140)]).then(n.bind(n, 51423))
                 })),
-                Ur = r.lazy((function() {
-                    return Promise.all([n.e(123), n.e(786), n.e(2998), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(347), n.e(6537)]).then(n.bind(n, 70688))
+                zr = r.lazy((function() {
+                    return Promise.all([n.e(123), n.e(786), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(347), n.e(2327)]).then(n.bind(n, 24479))
                 }));
-            const Gr = function() {
+            const qr = function() {
                 var e = (0, a.I0)(),
                     t = (0, r.useRef)(null);
-                Jn();
+                Vn();
                 var n = (0, F.IB)().data,
                     s = r.useMemo((function() {
                         var e;
@@ -3815,26 +3777,19 @@
                         e((0, Ve.hU)(null != t ? t : !f))
                     },
                     g = function(n) {
-                        e((0, Ve.Q_)(null != n ? n : !m));
-                        setTimeout((function() {
+                        e((0, Ve.Q_)(null != n ? n : !m)), setTimeout((function() {
                             var e;
                             null === (e = t.current) || void 0 === e || e.updateCalendarSize()
                         }), 500)
-                    },
-                    w = r.useCallback((function() {
-                        g(window.innerWidth > 1400 && !m)
-                    }), []);
+                    };
                 return (0, r.useEffect)((function() {
-                    return e((0, Xn.Wk)()), e((0, Xn._e)()), g(window.innerWidth > 1400), window.addEventListener("resize", w),
-                        function() {
-                            window.removeEventListener("resize", w)
-                        }
+                    e((0, Ln.Wk)()), e((0, Ln._e)())
                 }), []), r.createElement("div", {
-                    className: (0, l.iv)("& .leftbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(90deg, #050505 50%, #050505ef 100%);padding:0 3px 3px 3px;z-index:30;top:60px;width:285px;min-width:285px;height:calc(100% - 60px);position:fixed;overflow-y:auto;display:flex;justify-content:center;}& .rightbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(270deg, #050505 50%, #050505ef 100%);padding:0;top:60px;width:410px;min-width:410px;z-index:50;height:calc(100% - 60px);margin-left:calc(100% - 410px);position:fixed;left:410px;&.open{left:0;}}& .content-scroll{top:60px;left:285px;position:absolute;overflow-y:auto;overflow-x:hidden;width:calc(100% - 285px);height:calc(100% - 60px);transition:width 0.5s ease-in-out,left 0.5s ease-in-out;background-image:url('https://assets.vrchat.com/www/images/Background_lines.svg');background-repeat:no-repeat;background-size:auto 100%;", s && (0, l.iv)("background-image:url(", ar(), ");background-size:cover;background-position:bottom right;&>*{filter:drop-shadow(#714513 0 .125rem .25rem);}", ""), " & .home-content{max-width:2000px;margin:0 auto;display:flex;flex-direction:column;height:100%;padding:20px 95px 0 20px;transition:padding-right 0.35s ease-in-out;}&.rightPinned{width:calc(100% - 695px);& .home-content{padding:10px 20px 0 20px;}}&.leftOpen{width:calc(100% - 410px)!important;}}& .friends-button{width:65px;height:65px;top:70px;right:25px;transition:all 0.1s ease-in;border-radius:100%;background:#07242b;border:#053c48 solid 4px;position:fixed;display:flex;align-items:center;justify-content:center;&:hover{transform:scale(1.05);cursor:pointer;background:#05191d;}&:active{transform:scale(0.95);background:#053c48;}}@media (min-width: 1400px){& .rightbar.rightPinned{left:0;}& .hide-large{display:none;}}@media (max-width: 1400px){& .leftbar{top:60px;left:-285px;&.leftOpen{left:0;}}& .content-scroll{top:60px;left:0;width:100%;height:calc(100% - 60px);&.rightPinned{width:100%;& .home-content{padding:10px 95px 0 20px;}}&.leftOpen{width:100%!important;}}}@media (max-width: 768px){& .friends-button{display:none;}& .home-content{padding:10px 5px 0 5px!important;}& .leftbar{width:100%;left:-100%;min-width:auto!important;}& .rightbar{width:100%;left:100%;margin:0;min-width:auto!important;}}", "")
-                }, r.createElement(tr, null), r.createElement("div", null, r.createElement(Wn, {
+                    className: (0, l.iv)("& .leftbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(90deg, #050505 50%, #050505ef 100%);padding:0 3px 3px 3px;z-index:30;top:60px;width:285px;min-width:285px;height:calc(100% - 60px);position:fixed;overflow-y:auto;display:flex;justify-content:center;}& .rightbar{transition:left 0.5s ease-in-out;background:#050505;background:linear-gradient(270deg, #050505 50%, #050505ef 100%);padding:0;top:60px;width:410px;min-width:410px;z-index:50;height:calc(100% - 60px);margin-left:calc(100% - 410px);position:fixed;left:410px;&.open{left:0;}}& .content-scroll{top:60px;left:285px;position:absolute;overflow-y:auto;overflow-x:hidden;width:calc(100% - 285px);height:calc(100% - 60px);transition:width 0.5s ease-in-out,left 0.5s ease-in-out;background-image:url('https://assets.vrchat.com/www/images/Background_lines.svg');background-repeat:no-repeat;background-size:auto 100%;", s && (0, l.iv)("background-image:url(", Kn(), ");background-size:cover;background-position:bottom right;&>*{filter:drop-shadow(#714513 0 .125rem .25rem);}", ""), " & .home-content{max-width:3840px;margin:0 auto;display:flex;flex-direction:column;height:100%;padding:20px 20px 0 20px;transition:padding-right 0.35s ease-in-out;}&.leftOpen{width:calc(100% - 410px)!important;}}& .friends-button{width:65px;height:65px;top:70px;right:25px;transition:all 0.1s ease-in;border-radius:100%;background:#07242b;border:#053c48 solid 4px;position:fixed;display:flex;align-items:center;justify-content:center;&:hover{transform:scale(1.05);cursor:pointer;background:#05191d;}&:active{transform:scale(0.95);background:#053c48;}}@media (min-width: 1400px){& .hide-large{display:none;}}@media (max-width: 1400px){& .leftbar{top:60px;left:-285px;&.leftOpen{left:0;}}& .content-scroll{top:60px;left:0;width:100%;height:calc(100% - 60px);&.leftOpen{width:100%!important;}}}@media (max-width: 768px){& .friends-button{display:none;}& .home-content{padding:10px 5px 0 5px!important;}& .leftbar{width:100%;left:-100%;min-width:auto!important;}& .rightbar{width:100%;left:100%;margin:0;min-width:auto!important;}}", "")
+                }, r.createElement(Yn, null), r.createElement("div", null, r.createElement(qn, {
                     navToggleCallback: p,
                     friendsToggleCallback: function(e) {
-                        window.removeEventListener("resize", w), g(e)
+                        g(e)
                     }
                 })), r.createElement(i.Z, {
                     fluid: !0
@@ -3850,146 +3805,146 @@
                         name: "1bk3y4m",
                         styles: "margin-top:8px;& .dropdown-menu{padding:10px 15px 5px 15px;position:fixed!important;background-color:#506070;border-radius:0;z-index:1000;bottom:0!important;top:100px!important;margin:0!important;transform:none!important;}& .dropdown-toggle{margin-bottom:5px;}"
                     }))
-                }, r.createElement(Sn, {
+                }, r.createElement(Nn, {
                     direction: "right"
                 })), r.createElement(c.SV, {
-                    fallback: Qn.Z
-                }, r.createElement(Qe, {
+                    fallback: _n.Z
+                }, r.createElement(He, {
                     navToggleCallback: p
                 })), r.createElement(c.SV, {
-                    fallback: Qn.Z
-                }, r.createElement(Wn, {
+                    fallback: _n.Z
+                }, r.createElement(qn, {
                     horizontal: !0,
                     navToggleCallback: p
                 })))), r.createElement("div", {
-                    className: "col-xs-12 content-scroll ".concat(m ? "rightPinned" : "")
+                    className: "col-xs-12 content-scroll"
                 }, r.createElement("div", {
                     className: "home-content"
                 }, r.createElement(c.SV, {
-                    fallback: Qn.Z
+                    fallback: _n.Z
                 }, r.createElement(r.Suspense, {
-                    fallback: r.createElement(r.Fragment, null, r.createElement($n.Z, {
+                    fallback: r.createElement(r.Fragment, null, r.createElement(Un.Z, {
                         className: "tw-mb-2",
                         height: "2.5rem"
-                    }), r.createElement($n.Z, {
+                    }), r.createElement(Un.Z, {
                         delay: "50",
                         height: "480px"
                     }))
                 }, r.createElement(o.Z5, null, r.createElement(o.AW, {
                     path: "/search/:tab/:query",
-                    element: r.createElement(pr, null)
+                    element: r.createElement(ur, null)
                 }), r.createElement(o.AW, {
                     path: "/profile",
-                    element: r.createElement(hr, null)
+                    element: r.createElement(gr, null)
                 }), r.createElement(o.AW, {
                     path: "/user/:userId/*",
-                    element: r.createElement(Rr, null)
+                    element: r.createElement(Pr, null)
                 }), r.createElement(o.AW, {
                     path: "/uploadIcon",
-                    element: Kn(yr)()
+                    element: $n(br)()
                 }), r.createElement(o.AW, {
                     path: "/uploadPhoto",
-                    element: Kn(xr)()
+                    element: $n(vr)()
                 }), r.createElement(o.AW, {
                     path: "/uploadEmoji",
-                    element: Kn(Er)()
+                    element: $n(wr)()
                 }), r.createElement(o.AW, {
                     path: "/gallery/icons",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../inventory/user-icons"
                     })
                 }), r.createElement(o.AW, {
                     path: "/gallery/photos",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../inventory/photos"
                     })
                 }), r.createElement(o.AW, {
                     path: "/gallery/emoji",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../inventory/emojis"
                     })
                 }), r.createElement(o.AW, {
                     path: "/gallery/stickers",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../inventory/stickers"
                     })
                 }), r.createElement(o.AW, {
                     path: "/gallery/*",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../inventory/*"
                     })
                 }), r.createElement(o.AW, {
                     path: "/inventory/*",
-                    element: r.createElement(Ur, null)
+                    element: r.createElement(zr, null)
                 }), r.createElement(o.AW, {
                     path: "/marketplace/*",
-                    element: r.createElement(Tr, null)
+                    element: r.createElement(Br, null)
                 }), r.createElement(o.AW, {
                     path: "/wallet",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../marketplace/wallet"
                     })
                 }), r.createElement(o.AW, {
                     path: "/wallet/purchases/*",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../marketplace/wallet/subscriptions/*"
                     })
                 }), r.createElement(o.AW, {
                     path: "/wallet/store/*",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../marketplace/storefront/*"
                     })
                 }), r.createElement(o.AW, {
                     path: "/locations",
-                    element: r.createElement(jr, null)
-                }), r.createElement(o.AW, {
-                    path: "/worlds",
-                    element: r.createElement(Ar, null)
-                }), r.createElement(o.AW, {
-                    path: "/world/:worldId/*",
-                    element: r.createElement(Mr, null)
-                }), r.createElement(o.AW, {
-                    path: "/avatars",
-                    element: r.createElement(vr, null)
-                }), r.createElement(o.AW, {
-                    path: "/avatar/:avatarId",
-                    element: r.createElement(br, null)
-                }), r.createElement(o.AW, {
-                    path: "/content/*",
-                    element: r.createElement(Pr, null)
-                }), r.createElement(o.AW, {
-                    path: "/messages",
-                    element: r.createElement(Dr, null)
-                }), r.createElement(o.AW, {
-                    path: "/playermoderations",
-                    element: r.createElement(zr, null)
-                }), r.createElement(o.AW, {
-                    path: "/download",
-                    element: r.createElement(gr, null)
-                }), r.createElement(o.AW, {
-                    path: "/redeem",
-                    element: r.createElement(sr, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups",
-                    element: r.createElement(Cr, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups/create",
-                    element: r.createElement(kr, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups/search",
-                    element: r.createElement(Cr, null)
-                }), r.createElement(o.AW, {
-                    path: "/groups/search/:query",
-                    element: r.createElement(Cr, null)
-                }), r.createElement(o.AW, {
-                    path: "/group/:groupId/ageverification/:code",
                     element: r.createElement(Ir, null)
                 }), r.createElement(o.AW, {
+                    path: "/worlds",
+                    element: r.createElement(hr, null)
+                }), r.createElement(o.AW, {
+                    path: "/world/:worldId/*",
+                    element: r.createElement(Dr, null)
+                }), r.createElement(o.AW, {
+                    path: "/avatars",
+                    element: r.createElement(pr, null)
+                }), r.createElement(o.AW, {
+                    path: "/avatar/:avatarId",
+                    element: r.createElement(fr, null)
+                }), r.createElement(o.AW, {
+                    path: "/content/*",
+                    element: r.createElement(Or, null)
+                }), r.createElement(o.AW, {
+                    path: "/messages",
+                    element: r.createElement(jr, null)
+                }), r.createElement(o.AW, {
+                    path: "/playermoderations",
+                    element: r.createElement(Sr, null)
+                }), r.createElement(o.AW, {
+                    path: "/download",
+                    element: r.createElement(dr, null)
+                }), r.createElement(o.AW, {
+                    path: "/redeem",
+                    element: r.createElement(or, null)
+                }), r.createElement(o.AW, {
+                    path: "/groups",
+                    element: r.createElement(Er, null)
+                }), r.createElement(o.AW, {
+                    path: "/groups/create",
+                    element: r.createElement(yr, null)
+                }), r.createElement(o.AW, {
+                    path: "/groups/search",
+                    element: r.createElement(Er, null)
+                }), r.createElement(o.AW, {
+                    path: "/groups/search/:query",
+                    element: r.createElement(Er, null)
+                }), r.createElement(o.AW, {
+                    path: "/group/:groupId/ageverification/:code",
+                    element: r.createElement(Ar, null)
+                }), r.createElement(o.AW, {
                     path: "/group/:groupId/*",
-                    element: r.createElement(Nr, null)
+                    element: r.createElement(xr, null)
                 }), r.createElement(o.AW, {
                     path: "/groups/:groupId",
-                    element: r.createElement(_n.Z, {
+                    element: r.createElement(Gn.Z, {
                         to: "../../group/:groupId"
                     })
                 }), r.createElement(o.AW, {
@@ -3999,49 +3954,49 @@
                     })
                 }), r.createElement(o.AW, {
                     path: "/ageverification",
-                    element: r.createElement(Zr, null)
+                    element: r.createElement(Cr, null)
                 }), r.createElement(o.AW, {
                     path: "/accountlink",
-                    element: r.createElement(wr, null)
+                    element: r.createElement(mr, null)
                 }), r.createElement(o.AW, {
                     path: "/favorites/*",
                     element: r.createElement(o.Z5, null, r.createElement(o.AW, {
                         path: "/:type",
-                        element: r.createElement(Br, null)
+                        element: r.createElement(kr, null)
                     }), r.createElement(o.AW, {
                         path: "/:type/:name",
-                        element: r.createElement(Br, null)
+                        element: r.createElement(kr, null)
                     }))
                 }), r.createElement(o.AW, {
                     path: "/group/:ownerId/calendar/:eventId",
-                    element: r.createElement(nr.Z, null)
+                    element: r.createElement(Jn.Z, null)
                 }), r.createElement(o.AW, {
                     path: "/jams/*",
-                    element: r.createElement(Sr, null)
+                    element: r.createElement(Zr, null)
                 }), !1, !1, r.createElement(o.AW, {
                     path: "/subscriptions",
-                    element: r.createElement(qr, null)
+                    element: r.createElement(Tr, null)
                 }), r.createElement(o.AW, {
                     path: "/",
-                    element: r.createElement(fr, null)
+                    element: r.createElement(sr, null)
                 })))))), r.createElement("div", {
                     className: "fixed-top rightbar ".concat(m ? "open" : "")
                 }, r.createElement(c.SV, {
-                    fallback: Qn.Z
+                    fallback: _n.Z
                 }, r.createElement(r.Suspense, {
-                    fallback: r.createElement(r.Fragment, null, r.createElement($n.Z, {
+                    fallback: r.createElement(r.Fragment, null, r.createElement(Un.Z, {
                         className: "tw-m-6 tw-mb-4",
                         height: "2.25rem"
-                    }), r.createElement($n.Z, {
+                    }), r.createElement(Un.Z, {
                         className: "tw-m-6 tw-mt-0",
                         delay: "50",
                         height: "1.75rem"
-                    }), r.createElement($n.Z, {
+                    }), r.createElement(Un.Z, {
                         className: "tw-m-6",
                         delay: "100",
                         height: "480px"
                     }))
-                }, r.createElement(Or, {
+                }, r.createElement(Nr, {
                     friendsToggleCallback: g
                 })))), r.createElement("div", {
                     onKeyDown: function(e) {
@@ -4049,13 +4004,13 @@
                     },
                     role: "button",
                     tabIndex: -1,
-                    className: "friends-button d-md-flex d-none",
+                    className: "friends-button d-md-flex d-none tw-z-[3]",
                     onClick: function() {
-                        window.removeEventListener("resize", w), g(!0)
+                        g(!0)
                     }
                 }, r.createElement("img", {
                     alt: "Wing Icon",
-                    src: "https://assets.vrchat.com/www/images/WingLeft.png",
+                    src: er(),
                     className: (0, l.iv)({
                         name: "1a5rd5y",
                         styles: "transform:scale(0.7)"
@@ -4350,7 +4305,7 @@
                     dice: W.RJ,
                     "triangle-exclamation": O.faTriangleExclamation
                 },
-                Ae = n(89132),
+                Ae = n(80988),
                 Ce = n(88233),
                 ke = n(2566);
             z().extend(U()), z().extend(R());
@@ -5376,6 +5331,22 @@
                 height: 128
             }
         },
+        62188: (e, t, n) => {
+            e.exports = {
+                srcSet: n.p + "5c25c49e142ecf16-64w.png 64w",
+                images: [{
+                    path: n.p + "5c25c49e142ecf16-64w.png",
+                    width: 64,
+                    height: 46
+                }],
+                src: n.p + "5c25c49e142ecf16-64w.png",
+                toString: function() {
+                    return n.p + "5c25c49e142ecf16-64w.png"
+                },
+                width: 64,
+                height: 46
+            }
+        },
         28964: (e, t, n) => {
             e.exports = {
                 srcSet: n.p + "5abacd6a81ce71f4-410w.png 410w",
@@ -5410,4 +5381,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4b002aad3666b7f46ae5cf0de038949804eb97cf0126a040e0c8d69138c4856d.js.map
+//# sourceMappingURL=f600ab032b929068eefc199e04a64edbf84d7baa9d90774f89bc7c77a871873c.js.map

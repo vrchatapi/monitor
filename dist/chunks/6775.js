@@ -7,7 +7,7 @@
             });
             var r = a(54546),
                 n = a(40767),
-                l = a(89132),
+                l = a(80988),
                 o = a(72998),
                 i = a(529),
                 s = (a(86961), a(27484)),
@@ -282,7 +282,7 @@
                     type: "error",
                     title: "Error loading statistics"
                 }, "Failed to fetch earnings: ", null == m || null === (e = m.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), p.createElement("div", {
-                    className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col sm:tw-flex-row"
+                    className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col md:tw-flex-row"
                 }, u ? p.createElement(p.Fragment, null, p.createElement(V, null), p.createElement(V, {
                     delay: 100
                 })) : p.createElement(p.Fragment, null, p.createElement(K, {
@@ -348,7 +348,7 @@
                             return t.isHiddenStep
                         }));
                     return p.createElement("ol", {
-                        className: "tw-max-w-[650px] tw-flex tw-justify-between tw-items-start tw-pl-[0px] xs:tw-pl-[44px]"
+                        className: " tw-max-w-[650px] tw-flex tw-justify-between tw-items-start tw-pl-[0px] xs:tw-pl-[44px] sm:tw-pl-[40px] "
                     }, e.map((function(t, n) {
                         var l = Number(a) > Number(t.number),
                             o = Number(a) === Number(t.number),
@@ -356,7 +356,7 @@
                         if (t.isHiddenStep) return null;
                         return p.createElement("li", {
                             key: t.number,
-                            className: "\n              tw-list-none\n              xs:tw-flex tw-flex-col\n              xs:tw-w-[120px] sm:tw-w-[340px]\n              ".concat(o ? "" : "tw-hidden", "\n            "),
+                            className: "\n              tw-list-none\n              xs:tw-flex tw-flex-col\n              xs:tw-w-[120px]\n              sm:tw-w-[120px] md:tw-w-[340px]\n              ".concat(o ? "" : "tw-hidden", "\n            "),
                             "aria-label": "".concat(o ? "Current step: ".concat(t.label) : "", " ")
                         }, p.createElement("div", {
                             className: "\n              tw-list-none tw-flex tw-items-center\n              ".concat(l ? "after:tw-border-green" : "after:tw-border-lighter-grey", "\n              after:tw-border-0 after:tw-content-[''] after:tw-w-full after:tw-border-b-[1px] after:tw-border-solid after:tw-mx-2\n              after:tw-flex\n              ").concat(i ? "after:tw-hidden" : "xs:after:tw-flex", "\n              ").concat(o ? "after:tw-hidden" : "", "\n            ")
@@ -1027,4 +1027,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c951080bb602a248268f604a235bf295cb3a08f80b875f62f24f07ba399f9f65.js.map
+//# sourceMappingURL=6167152848588417135d0b6e4fda459a98b7f3688f112645cd9059c03603a313.js.map

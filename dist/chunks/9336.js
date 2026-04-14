@@ -3,13 +3,13 @@
     [9336], {
         29336: (e, t, a) => {
             a.r(t), a.d(t, {
-                default: () => ne
+                default: () => le
             });
-            var l = a(42138),
-                r = a(4942),
-                n = a(54546),
-                c = a(34601),
-                o = a(30856),
+            var r = a(42138),
+                n = a(4942),
+                l = a(54546),
+                o = a(34601),
+                c = a(30856),
                 i = a(68412),
                 s = a(87709),
                 u = a(20702),
@@ -19,32 +19,32 @@
                 p = a(62228),
                 f = a(47947),
                 v = a(7371),
-                b = a(91435),
-                g = a(28963),
+                g = a(91435),
+                b = a(28963),
                 E = a(67294),
                 h = a(83505),
                 y = a(27484),
                 N = a.n(y),
                 x = a(83807),
-                k = a(89132),
+                k = a(80988),
                 S = a(84090),
-                I = a(67371),
-                O = a(87462),
-                P = a(45987),
-                C = a(65394),
-                j = a(85020),
-                _ = a(18357),
-                A = (a(37337), a(64358)),
-                D = a(86646),
-                U = ["images", "className", "style"];
+                O = a(67371),
+                C = a(87462),
+                I = a(45987),
+                j = a(65394),
+                P = a(85020),
+                R = a(18357),
+                _ = (a(37337), a(64358)),
+                Z = a(86646),
+                D = ["images", "className", "style"];
 
-            function R(e, t) {
+            function A(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
-                    t && (l = l.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), a.push.apply(a, l)
+                    }))), a.push.apply(a, r)
                 }
                 return a
             }
@@ -52,41 +52,41 @@
             function T(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? R(Object(a), !0).forEach((function(t) {
-                        (0, r.Z)(e, t, a[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : R(Object(a)).forEach((function(t) {
+                    t % 2 ? A(Object(a), !0).forEach((function(t) {
+                        (0, n.Z)(e, t, a[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : A(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            const Z = function(e) {
+            const U = function(e) {
                 var t = e.images,
                     a = void 0 === t ? [] : t,
-                    l = e.className,
-                    r = e.style,
-                    c = void 0 === r ? {} : r,
-                    o = (0, P.Z)(e, U),
+                    r = e.className,
+                    n = e.style,
+                    o = void 0 === n ? {} : n,
+                    c = (0, I.Z)(e, D),
                     i = E.useRef(null),
                     s = E.useRef(null),
                     u = E.useState(0),
-                    m = (0, n.Z)(u, 2),
+                    m = (0, l.Z)(u, 2),
                     d = m[0],
                     w = m[1],
                     p = E.useMemo((function() {
                         return a.map((function(e) {
                             var t = [64, 128, 256, 512, 1024, 2048].reduce((function(t, a) {
-                                return t["".concat(a, "w")] = (0, A.S6)(T(T({}, e), {}, {
+                                return t["".concat(a, "w")] = (0, _.S6)(T(T({}, e), {}, {
                                     width: a
                                 })), t
                             }), {});
                             return T(T({}, e), {}, {
                                 sizes: t,
                                 fullSrcSet: Object.entries(t).map((function(e) {
-                                    var t = (0, n.Z)(e, 2),
+                                    var t = (0, l.Z)(e, 2),
                                         a = t[0],
-                                        l = t[1];
-                                    return "".concat(l, " ").concat(a)
+                                        r = t[1];
+                                    return "".concat(r, " ").concat(a)
                                 })).join(","),
                                 thumbSrcSet: "".concat(t["128w"], " 2x, ").concat(t["256w"], " 4x")
                             })
@@ -105,30 +105,30 @@
                         var t = e.currentTarget;
                         e.currentTarget && i.current && f(t.dataset.galleryIndex)
                     },
-                    b = function(e, t) {
+                    g = function(e, t) {
                         var a;
                         if (e) {
-                            var l = parseInt(null === (a = t.target) || void 0 === a ? void 0 : a.dataset.galleryIndex, 10);
-                            Number.isNaN(l) || w(l)
+                            var r = parseInt(null === (a = t.target) || void 0 === a ? void 0 : a.dataset.galleryIndex, 10);
+                            Number.isNaN(r) || w(r)
                         }
                     },
-                    g = E.useMemo((function() {
+                    b = E.useMemo((function() {
                         return p.sort((function(e, t) {
                             return e.order - t.order
                         }))
                     }), [p]);
-                return E.createElement("div", (0, O.Z)({
-                    className: (0, h.cx)(l, "tw-group tw-flex tw-flex-col tw-w-full tw-relative tw-gap-2"),
-                    style: T({}, c)
-                }, o), E.createElement("div", {
+                return E.createElement("div", (0, C.Z)({
+                    className: (0, h.cx)(r, "tw-group tw-flex tw-flex-col tw-w-full tw-relative tw-gap-2"),
+                    style: T({}, o)
+                }, c), E.createElement("div", {
                     className: "tw-flex tw-flex-row tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
                     ref: i
-                }, g.map((function(e, t) {
-                    return E.createElement(_.df, {
+                }, b.map((function(e, t) {
+                    return E.createElement(R.df, {
                         as: "img",
                         threshold: .6,
                         root: i.current,
-                        onChange: b,
+                        onChange: g,
                         key: e.fileId || e.fileUrl,
                         "data-gallery-index": t,
                         className: "tw-flex-none tw-aspect-video tw-snap-center tw-w-full tw-object-contain tw-rounded-md tw-bg-cover",
@@ -147,8 +147,8 @@
                     onClick: function() {
                         d < 1 || f(d - 1)
                     }
-                }, E.createElement(D.Z, {
-                    icon: j.A3,
+                }, E.createElement(Z.Z, {
+                    icon: P.A3,
                     size: "2x"
                 })), d < a.length - 1 && E.createElement("button", {
                     type: "button",
@@ -156,13 +156,13 @@
                     onClick: function() {
                         d > a.length || f(d + 1)
                     }
-                }, E.createElement(D.Z, {
-                    icon: C._t,
+                }, E.createElement(Z.Z, {
+                    icon: j._t,
                     size: "2x"
                 })))), E.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-center tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
                     ref: s
-                }, g.map((function(e, t) {
+                }, b.map((function(e, t) {
                     return E.createElement("a", {
                         key: e.fileId || e.fileUrl,
                         "data-gallery-index": t,
@@ -181,84 +181,84 @@
                     }))
                 }))))
             };
-            var z = a(61244),
-                $ = a(72998),
-                X = a(64537),
-                F = a(60006),
-                q = a(95643),
+            var z = a(4751),
+                q = a(72998),
+                F = a(64537),
+                X = a(60006),
+                $ = a(95643),
                 M = a(51806),
-                J = a.n(M),
+                L = a.n(M),
                 V = a(58687),
-                L = a(95896),
-                H = a(72522),
-                B = a(3620),
-                G = a(14825),
-                W = a(3629),
-                Q = a(79655),
-                Y = a(62437);
+                J = a(95896),
+                W = a(72522),
+                H = a(3620),
+                B = a(14825),
+                G = a(3629),
+                Y = a(79655),
+                Q = a(62437);
             const K = function(e) {
-                var t, a, l, r, n = e.avatar,
-                    c = e.products,
-                    o = void 0 === c ? [] : c,
-                    i = null == n ? void 0 : n.attribution,
-                    s = null == n ? void 0 : n.authorId,
+                var t, a, r, n, l = e.avatar,
+                    o = e.products,
+                    c = void 0 === o ? [] : o,
+                    i = null == l ? void 0 : l.attribution,
+                    s = null == l ? void 0 : l.authorId,
                     u = null == i || null === (t = i.creator) || void 0 === t ? void 0 : t.userId,
                     m = null == i || null === (a = i.publisher) || void 0 === a ? void 0 : a.userId,
                     d = !(null == i || !i.creator),
                     w = !(null == i || !i.publisher),
                     p = !i || !d && !w,
-                    f = (0, Y.GR)(s, {
+                    f = (0, Q.GR)(s, {
                         skip: !s || !p
                     }).data,
-                    v = (0, Y.GR)(u, {
+                    v = (0, Q.GR)(u, {
                         skip: !u
                     }).data,
-                    b = (0, Y.GR)(m, {
+                    g = (0, Q.GR)(m, {
                         skip: !m
                     }).data,
-                    g = i && (d || w) ? {
-                        creatorDisplayName: d ? u ? null == v ? void 0 : v.displayName : null == i || null === (l = i.creator) || void 0 === l ? void 0 : l.customName : null,
+                    b = i && (d || w) ? {
+                        creatorDisplayName: d ? u ? null == v ? void 0 : v.displayName : null == i || null === (r = i.creator) || void 0 === r ? void 0 : r.customName : null,
                         creatorUserId: d ? u : null,
-                        publisherDisplayName: w ? m ? null == b ? void 0 : b.displayName : null == i || null === (r = i.publisher) || void 0 === r ? void 0 : r.customName : null,
+                        publisherDisplayName: w ? m ? null == g ? void 0 : g.displayName : null == i || null === (n = i.publisher) || void 0 === n ? void 0 : n.customName : null,
                         publisherUserId: w ? m : null
                     } : {
-                        creatorDisplayName: (null == f ? void 0 : f.displayName) || (null == n ? void 0 : n.authorName),
+                        creatorDisplayName: (null == f ? void 0 : f.displayName) || (null == l ? void 0 : l.authorName),
                         creatorUserId: s,
                         publisherDisplayName: null,
                         publisherUserId: null
                     };
                 return E.createElement("span", {
                     className: "tw-text-[#737372]"
-                }, (null == g ? void 0 : g.creatorDisplayName) && E.createElement(E.Fragment, null, "By", " ", g.creatorUserId ? E.createElement(Q.rU, {
-                    to: "/home/user/".concat(g.creatorUserId),
+                }, (null == b ? void 0 : b.creatorDisplayName) && E.createElement(E.Fragment, null, "By", " ", b.creatorUserId ? E.createElement(Y.rU, {
+                    to: "/home/user/".concat(b.creatorUserId),
                     target: "_blank",
                     rel: "noreferrer"
-                }, g.creatorDisplayName) : g.creatorDisplayName), (null == g ? void 0 : g.publisherDisplayName) && E.createElement(E.Fragment, null, null != g && g.creatorDisplayName ? " | " : "", "Published by ", g.publisherUserId ? E.createElement(Q.rU, {
-                    to: "/home/user/".concat(g.publisherUserId),
+                }, b.creatorDisplayName) : b.creatorDisplayName), (null == b ? void 0 : b.publisherDisplayName) && E.createElement(E.Fragment, null, null != b && b.creatorDisplayName ? " | " : "", "Published by ", b.publisherUserId ? E.createElement(Y.rU, {
+                    to: "/home/user/".concat(b.publisherUserId),
                     target: "_blank",
                     rel: "noreferrer"
-                }, g.publisherDisplayName) : g.publisherDisplayName), o.length >= 1 && E.createElement(E.Fragment, null, " | ", E.createElement("small", null, E.createElement(k.$1, {
-                    icon: W.hV
-                }), " ", o.length, " included product", 1 === o.length ? "" : "s")))
+                }, b.publisherDisplayName) : b.publisherDisplayName), c.length >= 1 && E.createElement(E.Fragment, null, " | ", E.createElement("small", null, E.createElement(k.$1, {
+                    icon: G.hV
+                }), " ", c.length, " included product", 1 === c.length ? "" : "s")))
             };
             const ee = function(e) {
                 var t = e.avatar,
                     a = e.userState,
-                    l = e.listing,
-                    r = e.optimisedUserIconUrl,
-                    n = e.optimisedProfilePicUrl;
+                    r = e.listing,
+                    n = e.optimisedUserIconUrl,
+                    l = e.optimisedProfilePicUrl;
                 return !t || null != t && t.attribution ? null : E.createElement(k._q, {
                     className: "tw-flex-row tw-items-center tw-gap-2 tw-bg-cover tw-bg-center",
                     style: {
-                        backgroundImage: "linear-gradient( rgba(37, 42, 48, 0.75), rgba(37, 42, 48, 0.75) ), url(".concat(n, ")")
+                        backgroundImage: "linear-gradient( rgba(37, 42, 48, 0.75), rgba(37, 42, 48, 0.75) ), url(".concat(l, ")")
                     }
-                }, r && E.createElement("img", {
+                }, n && E.createElement("img", {
                     className: "tw-aspect-square tw-w-12 tw-flex-0 tw-rounded-full tw-border-solid tw-border-2 tw-border-gray-700",
-                    src: r,
+                    src: n,
                     alt: ""
                 }), E.createElement(k.JX, {
                     className: "tw-flex-auto"
-                }, E.createElement("small", null, l ? "Seller" : "Author"), E.createElement(Q.rU, {
+                }, E.createElement("small", null, r ? "Seller" : "Author"), E.createElement(Y.rU, {
                     to: "/home/user/".concat((null == t ? void 0 : t.authorId) || (null == a ? void 0 : a.id)),
                     className: "hover:tw-text-white tw-text-teal-accent hover:tw-no-underline",
                     target: "_blank",
@@ -269,10 +269,10 @@
             function te(e, t) {
                 var a = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
-                    t && (l = l.filter((function(t) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
                         return Object.getOwnPropertyDescriptor(e, t).enumerable
-                    }))), a.push.apply(a, l)
+                    }))), a.push.apply(a, r)
                 }
                 return a
             }
@@ -281,35 +281,35 @@
                 for (var t = 1; t < arguments.length; t++) {
                     var a = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? te(Object(a), !0).forEach((function(t) {
-                        (0, r.Z)(e, t, a[t])
+                        (0, n.Z)(e, t, a[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : te(Object(a)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
                     }))
                 }
                 return e
             }
-            var le = new RegExp("^".concat(B.i.AUTHOR)),
-                re = ["admin_quest_fallback", "admin_quest_fallback_basic", "admin_quest_fallback_extended", "author_quest_fallback"];
-            const ne = function(e) {
-                var t, a, r, y = e.isPreview,
-                    O = void 0 !== y && y,
-                    P = e.avatar,
-                    C = e.user,
-                    j = e.listing,
-                    _ = e.products,
-                    D = void 0 === _ ? [] : _,
-                    U = e.galleryImages,
-                    R = void 0 === U ? [] : U,
+            var re = new RegExp("^".concat(H.i.AUTHOR)),
+                ne = ["admin_quest_fallback", "admin_quest_fallback_basic", "admin_quest_fallback_extended", "author_quest_fallback"];
+            const le = function(e) {
+                var t, a, n, y = e.isPreview,
+                    C = void 0 !== y && y,
+                    I = e.avatar,
+                    j = e.user,
+                    P = e.listing,
+                    R = e.products,
+                    Z = void 0 === R ? [] : R,
+                    D = e.galleryImages,
+                    A = void 0 === D ? [] : D,
                     T = e.isAvatarSold,
                     M = void 0 !== T && T,
-                    W = e.isAvatarSoldFetching,
-                    Q = void 0 !== W && W,
-                    Y = e.isSelectAvatarLoading,
-                    te = void 0 !== Y && Y,
-                    ne = e.isSelectFallbackLoading,
-                    ce = void 0 !== ne && ne,
-                    oe = e.isUpdateAvatarFetching,
-                    ie = void 0 !== oe && oe,
+                    G = e.isAvatarSoldFetching,
+                    Y = void 0 !== G && G,
+                    Q = e.isSelectAvatarLoading,
+                    te = void 0 !== Q && Q,
+                    le = e.isSelectFallbackLoading,
+                    oe = void 0 !== le && le,
+                    ce = e.isUpdateAvatarFetching,
+                    ie = void 0 !== ce && ce,
                     se = e.hasAvatarSellerPermission,
                     ue = void 0 !== se && se,
                     me = e.licenses,
@@ -318,8 +318,8 @@
                     pe = void 0 === we ? function() {} : we,
                     fe = e.onPurchase,
                     ve = void 0 === fe ? function() {} : fe,
-                    be = e.onSelectAvatar,
-                    ge = void 0 === be ? function() {} : be,
+                    ge = e.onSelectAvatar,
+                    be = void 0 === ge ? function() {} : ge,
                     Ee = e.onSelectFallback,
                     he = void 0 === Ee ? function() {} : Ee,
                     ye = e.onSetAvatarReleaseStatus,
@@ -327,134 +327,134 @@
                     xe = e.onSellAvatar,
                     ke = void 0 === xe ? function() {} : xe,
                     Se = e.onTryOn,
-                    Ie = void 0 === Se ? function() {} : Se,
-                    Oe = (0, x.pc)(),
-                    Pe = (0, x.Tu)().user,
-                    Ce = E.useState(!1),
-                    je = (0, n.Z)(Ce, 2),
-                    _e = je[0],
-                    Ae = je[1],
-                    De = E.useState(!1),
-                    Ue = (0, n.Z)(De, 2),
-                    Re = Ue[0],
-                    Te = Ue[1],
-                    Ze = E.useState("description"),
-                    ze = (0, n.Z)(Ze, 2),
-                    $e = ze[0],
-                    Xe = ze[1],
-                    Fe = E.useState(!1),
-                    qe = (0, n.Z)(Fe, 2),
-                    Me = qe[0],
-                    Je = qe[1],
-                    Ve = O ? Pe : C,
-                    Le = "private" === (null == P ? void 0 : P.releaseStatus),
-                    He = !Le,
-                    Be = O || (null == P ? void 0 : P.authorId) === Pe.id,
-                    Ge = Be,
-                    We = ue && Be && Le || !1,
-                    Qe = E.useMemo((function() {
+                    Oe = void 0 === Se ? function() {} : Se,
+                    Ce = (0, x.pc)(),
+                    Ie = (0, x.Tu)().user,
+                    je = E.useState(!1),
+                    Pe = (0, l.Z)(je, 2),
+                    Re = Pe[0],
+                    _e = Pe[1],
+                    Ze = E.useState(!1),
+                    De = (0, l.Z)(Ze, 2),
+                    Ae = De[0],
+                    Te = De[1],
+                    Ue = E.useState("description"),
+                    ze = (0, l.Z)(Ue, 2),
+                    qe = ze[0],
+                    Fe = ze[1],
+                    Xe = E.useState(!1),
+                    $e = (0, l.Z)(Xe, 2),
+                    Me = $e[0],
+                    Le = $e[1],
+                    Ve = C ? Ie : j,
+                    Je = "private" === (null == I ? void 0 : I.releaseStatus),
+                    We = !Je,
+                    He = C || (null == I ? void 0 : I.authorId) === Ie.id,
+                    Be = He,
+                    Ge = ue && He && Je || !1,
+                    Ye = E.useMemo((function() {
                         return null == de ? void 0 : de.some((function(e) {
-                            return e.isCurrent && "avatar" === e.forType && e.forId === P.id && e.licenseHolderId === Pe.id
+                            return e.isCurrent && "avatar" === e.forType && e.forId === I.id && e.licenseHolderId === Ie.id
                         }))
-                    }), [P, de, Pe]),
-                    Ye = Be || Qe || He,
-                    Ke = Oe || Be || Qe || He,
-                    et = (Oe || Be) && !Q && !M && !(null != P && P.activeAssetReviewId) && !(null != P && P.productId) && "hidden" !== (null == P ? void 0 : P.releaseStatus),
-                    tt = 1 === D.length && D[0].productType === L.Pm.AVATAR,
-                    at = (0, A.S6)({
+                    }), [I, de, Ie]),
+                    Qe = He || Ye || We,
+                    Ke = Ce || He || Ye || We,
+                    et = (Ce || He) && !Y && !M && !(null != I && I.activeAssetReviewId) && !(null != I && I.productId) && "hidden" !== (null == I ? void 0 : I.releaseStatus),
+                    tt = 1 === Z.length && Z[0].productType === J.Pm.AVATAR,
+                    at = (0, _.S6)({
                         fileUrl: (null == Ve ? void 0 : Ve.profilePicOverride) || (null == Ve ? void 0 : Ve.currentAvatarImageUrl),
                         width: "512"
                     }),
-                    lt = (0, A.S6)({
+                    rt = (0, _.S6)({
                         fileUrl: null == Ve ? void 0 : Ve.userIcon,
                         width: "256"
                     }),
-                    rt = (0, A.S6)(ae(ae(ae({
+                    nt = (0, _.S6)(ae(ae(ae({
                         width: "512"
-                    }, !tt && j && {
-                        fileId: null == j ? void 0 : j.imageId
-                    }), tt && j && {
-                        fileId: null === (t = D[0]) || void 0 === t ? void 0 : t.imageId
-                    }), P && {
-                        fileUrl: null == P ? void 0 : P.imageUrl
+                    }, !tt && P && {
+                        fileId: null == P ? void 0 : P.imageId
+                    }), tt && P && {
+                        fileId: null === (t = Z[0]) || void 0 === t ? void 0 : t.imageId
+                    }), I && {
+                        fileUrl: null == I ? void 0 : I.imageUrl
                     })),
-                    nt = E.useMemo((function() {
-                        return Object.keys(H.VT).reduce((function(e, t) {
-                            var a = (0, V.F)(null == P ? void 0 : P.unityPackages, t);
+                    lt = E.useMemo((function() {
+                        return Object.keys(W.VT).reduce((function(e, t) {
+                            var a = (0, V.F)(null == I ? void 0 : I.unityPackages, t);
                             return a && (e[t] = a), e
                         }), {})
-                    }), [P]),
-                    ct = E.useMemo((function() {
-                        return Object.entries(H.VT).filter((function(e) {
-                            var t = (0, n.Z)(e, 1)[0];
-                            return !!nt[t]
-                        }))
-                    }), [nt]),
+                    }), [I]),
                     ot = E.useMemo((function() {
-                        var e, t;
-                        return null !== (e = null == P || null === (t = P.tags) || void 0 === t ? void 0 : t.some((function(e) {
-                            return re.includes(e)
-                        }))) && void 0 !== e && e
-                    }), [null == P ? void 0 : P.tags]),
-                    it = E.useMemo((function() {
-                        return null == P ? void 0 : P.tags.filter((function(e) {
-                            return e.startsWith(B.i.AUTHOR)
+                        return Object.entries(W.VT).filter((function(e) {
+                            var t = (0, l.Z)(e, 1)[0];
+                            return !!lt[t]
                         }))
-                    }), [null == P ? void 0 : P.tags]),
+                    }), [lt]),
+                    ct = E.useMemo((function() {
+                        var e, t;
+                        return null !== (e = null == I || null === (t = I.tags) || void 0 === t ? void 0 : t.some((function(e) {
+                            return ne.includes(e)
+                        }))) && void 0 !== e && e
+                    }), [null == I ? void 0 : I.tags]),
+                    it = E.useMemo((function() {
+                        return null == I ? void 0 : I.tags.filter((function(e) {
+                            return e.startsWith(H.i.AUTHOR)
+                        }))
+                    }), [null == I ? void 0 : I.tags]),
                     st = E.useMemo((function() {
                         var e, t;
-                        return [null == P || null === (e = P.styles) || void 0 === e ? void 0 : e.primary, null == P || null === (t = P.styles) || void 0 === t ? void 0 : t.secondary].concat((0, l.Z)((null == it ? void 0 : it.map((function(e) {
-                            return e.replace(le, "")
+                        return [null == I || null === (e = I.styles) || void 0 === e ? void 0 : e.primary, null == I || null === (t = I.styles) || void 0 === t ? void 0 : t.secondary].concat((0, r.Z)((null == it ? void 0 : it.map((function(e) {
+                            return e.replace(re, "")
                         }))) || [])).filter(Boolean)
-                    }), [null == P || null === (a = P.styles) || void 0 === a ? void 0 : a.primary, null == P || null === (r = P.styles) || void 0 === r ? void 0 : r.secondary, it]),
+                    }), [null == I || null === (a = I.styles) || void 0 === a ? void 0 : a.primary, null == I || null === (n = I.styles) || void 0 === n ? void 0 : n.secondary, it]),
                     ut = !(null == st || !st.length);
-                if (!P && !j) return null;
+                if (!I && !P) return null;
                 return E.createElement(E.Fragment, null, E.createElement(k.JX, {
                     className: "md:tw-flex-row tw-gap-3 tw-items-center md:tw-items-stretch"
                 }, E.createElement(k.pw, {
                     width: 144,
                     className: "tw-rounded-md tw-shrink-0",
                     imgClassName: "tw-aspect-square",
-                    imageId: rt || (null == j ? void 0 : j.file),
-                    fallbackSrc: J(),
+                    imageId: nt || (null == P ? void 0 : P.file),
+                    fallbackSrc: L(),
                     fitToCover: !0,
-                    alt: "".concat(null == P ? void 0 : P.name, " Thumbnail") || 0
+                    alt: "".concat(null == I ? void 0 : I.name, " Thumbnail") || 0
                 }), E.createElement(k.JX, {
                     className: "tw-flex-grow tw-gap-1"
-                }, j && function(e) {
+                }, P && function(e) {
                     switch (e) {
-                        case L.ft.PERMANENT:
-                            return E.createElement(F.DR, {
+                        case J.ft.PERMANENT:
+                            return E.createElement(X.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize tw-leading-5"
                             }, E.createElement(k.$1, {
-                                icon: G.default,
+                                icon: B.default,
                                 width: 14
                             }), " ", e);
-                        case L.ft.DURATION:
-                            return E.createElement(F.DR, {
+                        case J.ft.DURATION:
+                            return E.createElement(X.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize"
                             }, E.createElement(k.$1, {
-                                icon: g.DH
+                                icon: b.DH
                             }), " ", e);
-                        case L.ft.INSTANT:
-                            return E.createElement(F.DR, {
+                        case J.ft.INSTANT:
+                            return E.createElement(X.DR, {
                                 bgColor: "#575757",
                                 className: "tw-max-w-fit tw-capitalize"
                             }, E.createElement(k.$1, {
-                                icon: b.BD
+                                icon: g.BD
                             }), " ", e);
                         default:
                             return null
                     }
-                }(j.listingType), E.createElement(k.X2, {
+                }(P.listingType), E.createElement(k.X2, {
                     className: "tw-items-center tw-gap-2"
                 }, E.createElement("h2", {
                     className: (0, h.cx)("tw-mb-0 tw-text-truncate tw-line-clamp-1 tw-break-all tw-leading-[1.25]", {
-                        "tw-flex-grow": !Be
+                        "tw-flex-grow": !He
                     })
-                }, (null == P ? void 0 : P.name) || (null == j ? void 0 : j.displayName)), Ge && !O && E.createElement(k.JX, {
+                }, (null == I ? void 0 : I.name) || (null == P ? void 0 : P.displayName)), Be && !C && E.createElement(k.JX, {
                     className: "tw-justify-center md:tw-px-1 tw-flex-grow"
                 }, E.createElement(k.X2, {
                     className: "tw-ml-2 tw-mt-2 md:tw-m-0"
@@ -466,12 +466,12 @@
                     }
                 }, E.createElement(k.$1, {
                     icon: v.Iw
-                })))), P && E.createElement(k.X2, {
+                })))), I && E.createElement(k.X2, {
                     className: "tw-flex-0 tw-gap-2 tw-justify-self-end"
-                }, E.createElement(X.Z, {
-                    text: "".concat(P.name, " by ").concat(P.authorName, " #VRChat #MadeWithVRChat"),
-                    url: "".concat(window.endpoint, "/home/avatar/").concat(P.id)
-                }), !Be && E.createElement(E.Fragment, null, E.createElement(k.zx, {
+                }, E.createElement(F.Z, {
+                    text: "".concat(I.name, " by ").concat(I.authorName, " #VRChat #MadeWithVRChat"),
+                    url: "".concat(window.endpoint, "/home/avatar/").concat(I.id)
+                }), !He && E.createElement(E.Fragment, null, E.createElement(k.zx, {
                     neutral: !0,
                     onClick: function() {
                         Te(!0)
@@ -486,18 +486,18 @@
                     cancelCallback: function() {
                         return Te(!1)
                     },
-                    isOpen: Re,
+                    isOpen: Ae,
                     type: "avatar",
-                    contentId: P.id,
-                    contentName: P.name,
-                    marketplace: !!P.productId
+                    contentId: I.id,
+                    contentName: I.name,
+                    marketplace: !!I.productId
                 })))), E.createElement(k.X2, {
                     className: "tw-gap-2 tw-flex-wrap tw-flex-grow"
                 }, E.createElement(k.JX, {
                     className: "tw-flex-[100_1_0%] tw-gap-2 tw-min-w-[285px] tw-flex-grow-[100]"
                 }, E.createElement(K, {
-                    avatar: P,
-                    products: D
+                    avatar: I,
+                    products: Z
                 }), ut && E.createElement("ul", {
                     className: "tw-flex tw-flex-row tw-flex-wrap tw-m-0 tw-p-0 tw-gap-1 tw-list-none"
                 }, st.map((function(e) {
@@ -508,10 +508,10 @@
                 })))), E.createElement(k.JX, {
                     className: "tw-flex-[1_1_0%] tw-min-w-[300px] tw-self-end"
                 }, E.createElement(ee, {
-                    avatar: P,
+                    avatar: I,
                     userState: Ve,
-                    listing: j,
-                    optimisedUserIconUrl: lt,
+                    listing: P,
+                    optimisedUserIconUrl: rt,
                     optimisedProfilePicUrl: at
                 }))))), E.createElement("hr", {
                     className: "tw-my-5 tw-border-gray-300"
@@ -519,15 +519,15 @@
                     className: "tw-flex-wrap tw-gap-3"
                 }, E.createElement(k.JX, {
                     className: "tw-flex-[100_1_0%] tw-min-w-[285px] tw-flex-grow-[100]"
-                }, !!R.length && E.createElement("div", {
+                }, !!A.length && E.createElement("div", {
                     className: "tw-mb-3"
-                }, E.createElement(Z, {
-                    images: R
+                }, E.createElement(U, {
+                    images: A
                 })), E.createElement(k.oI, null, E.createElement("h4", {
                     className: "tw-mb-0 tw-font-bold"
-                }, j ? "Listing" : "Avatar", " Info")), E.createElement(k.Ao, {
+                }, P ? "Listing" : "Avatar", " Info")), E.createElement(k.Ao, {
                     className: "tw-mb-3 tw-break-words"
-                }, (null == P ? void 0 : P.acknowledgements) && E.createElement($.Z, {
+                }, (null == I ? void 0 : I.acknowledgements) && E.createElement(q.Z, {
                     className: "-tw-mt-3",
                     tabs: [{
                         name: "Description",
@@ -538,52 +538,52 @@
                         id: "acknowledgements",
                         condition: !0
                     }],
-                    selected: $e,
+                    selected: qe,
                     onChange: function(e) {
-                        return Xe(e)
+                        return Fe(e)
                     },
                     justify: "left"
                 }), E.createElement("span", {
                     className: "tw-whitespace-pre-wrap"
-                }, j ? j.description : P[$e]))), E.createElement(k.JX, {
+                }, P ? P.description : I[qe]))), E.createElement(k.JX, {
                     className: "tw-flex-[1_1_0%] tw-min-w-[300px]"
-                }, (O || !Be || !Oe) && j && E.createElement(k._q, {
+                }, (C || !He || !Ce) && P && E.createElement(k._q, {
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-1"
                 }, "Price"), E.createElement("h2", {
                     className: "tw-mb-6"
-                }, E.createElement(k.b5, null), " ", null == j ? void 0 : j.priceTokens), E.createElement("div", {
+                }, E.createElement(k.b5, null), " ", null == P ? void 0 : P.priceTokens), E.createElement("div", {
                     className: "tw-flex tw-flex-col tw-gap-3"
                 }, E.createElement(k.zx, {
                     type: "accent",
                     onClick: function() {
-                        O || ve(j)
+                        C || ve(P)
                     }
                 }, "Purchase"), tt && E.createElement(k.zx, {
                     onClick: function() {
-                        O || Ie(j)
+                        C || Oe(P)
                     },
                     neutral: !0
-                }, "Try On In-World"), (null == D ? void 0 : D.length) >= 1 && E.createElement(E.Fragment, null, E.createElement(k.zx, {
+                }, "Try On In-World"), (null == Z ? void 0 : Z.length) >= 1 && E.createElement(E.Fragment, null, E.createElement(k.zx, {
                     className: "tw-mt-2",
                     transparent: !0,
                     onClick: function() {
-                        return Je(!Me)
+                        return Le(!Me)
                     }
-                }, "View ", D.length, " included products", " ", Me ? E.createElement(k.$1, {
+                }, "View ", Z.length, " included products", " ", Me ? E.createElement(k.$1, {
                     icon: p.mT
                 }) : E.createElement(k.$1, {
                     icon: w.pt
                 })), Me && E.createElement(k.JX, {
                     className: "tw-gap-2"
-                }, D.map((function(e) {
-                    return E.createElement(q.Z, {
+                }, Z.map((function(e) {
+                    return E.createElement($.Z, {
                         className: "tw-min-h-20",
                         key: e.id,
                         productData: e
                     })
-                })))))), !O && (et || Ke || Ye && P) && E.createElement(k._q, {
+                })))))), !C && (et || Ke || Qe && I) && E.createElement(k._q, {
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-4"
@@ -592,75 +592,75 @@
                 }, Ke && E.createElement(k.zx, {
                     disabled: te,
                     loading: te,
-                    onClick: ge
+                    onClick: be
                 }, E.createElement(k.$1, {
                     icon: d.mn
-                }), " Change Into Avatar"), Ke && ot && E.createElement(k.zx, {
-                    disabled: ce,
-                    loading: ce,
+                }), " Change Into Avatar"), Ke && ct && E.createElement(k.zx, {
+                    disabled: oe,
+                    loading: oe,
                     onClick: he,
                     neutral: !0
                 }, E.createElement(k.$1, {
                     icon: m.SD
                 }), " Use as Fallback"), et && E.createElement(E.Fragment, null, E.createElement(S.Z, {
                     headerText: "Change avatar release status?",
-                    confirmText: "Yes, make it ".concat("private" === P.releaseStatus ? "public" : "private"),
+                    confirmText: "Yes, make it ".concat("private" === I.releaseStatus ? "public" : "private"),
                     confirmCallback: function() {
-                        if (!O) {
-                            var e = "private" === P.releaseStatus ? "public" : "private";
+                        if (!C) {
+                            var e = "private" === I.releaseStatus ? "public" : "private";
                             Ne(e)
                         }
                     },
-                    cancelText: "No, keep it ".concat(P.releaseStatus),
+                    cancelText: "No, keep it ".concat(I.releaseStatus),
                     cancelCallback: function() {
-                        Ae(!1)
+                        _e(!1)
                     },
-                    isOpen: _e,
+                    isOpen: Re,
                     isLoading: ie
-                }, E.createElement("p", null, "Are you sure you want to make ", (null == P ? void 0 : P.name) || (null == j ? void 0 : j.displayName), " ", E.createElement("strong", null, "private" === P.releaseStatus ? "public" : "private"), "?")), E.createElement(k.zx, {
+                }, E.createElement("p", null, "Are you sure you want to make ", (null == I ? void 0 : I.name) || (null == P ? void 0 : P.displayName), " ", E.createElement("strong", null, "private" === I.releaseStatus ? "public" : "private"), "?")), E.createElement(k.zx, {
                     disabled: ie,
                     loading: ie,
                     onClick: function() {
-                        Ae(!0)
+                        _e(!0)
                     },
                     neutral: !0
-                }, "Make Avatar ", "private" === P.releaseStatus ? "Public" : "Private")), Ye && P && E.createElement(I.Z, {
+                }, "Make Avatar ", "private" === I.releaseStatus ? "Public" : "Private")), Qe && I && E.createElement(O.Z, {
                     type: "avatar",
-                    contentId: P.id,
-                    authorId: P.authorId,
-                    releaseStatus: P.releaseStatus,
+                    contentId: I.id,
+                    authorId: I.authorId,
+                    releaseStatus: I.releaseStatus,
                     neutral: !0
-                }), We && E.createElement(k.zx, {
+                }), Ge && E.createElement(k.zx, {
                     onClick: ke,
                     neutral: !0,
-                    disabled: (null == P ? void 0 : P.productId) || (null == P ? void 0 : P.activeAssetReviewId)
-                }, "Sell this Avatar"))), P && E.createElement(k._q, {
+                    disabled: (null == I ? void 0 : I.productId) || (null == I ? void 0 : I.activeAssetReviewId)
+                }, "Sell this Avatar"))), I && E.createElement(k._q, {
                     className: "tw-flex-col tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-4"
-                }, "Performance Rating"), ct.length ? E.createElement("table", {
+                }, "Performance Rating"), ot.length ? E.createElement("table", {
                     className: "tw-w-full"
-                }, ct.map((function(e, t) {
-                    var a, l = (0, n.Z)(e, 2),
-                        r = l[0],
-                        c = l[1].label,
-                        o = nt[r],
+                }, ot.map((function(e, t) {
+                    var a, r = (0, l.Z)(e, 2),
+                        n = r[0],
+                        o = r[1].label,
+                        c = lt[n],
                         m = E.createElement("div", {
                             className: "tw-flex tw-items-center tw-gap-2"
                         }, E.createElement(k.$1, {
                             icon: u.RL
                         }), "No Security Checks");
-                    if ("failed" === o.scanStatus) m = E.createElement("div", {
+                    if ("failed" === c.scanStatus) m = E.createElement("div", {
                         className: "tw-flex tw-items-center tw-gap-2"
                     }, E.createElement(k.$1, {
                         icon: s.faXmark
                     }), "Security Checks Failed");
-                    else if ("unscanned" === o.scanStatus) m = E.createElement("div", {
+                    else if ("unscanned" === c.scanStatus) m = E.createElement("div", {
                         className: "tw-flex tw-items-center tw-gap-2"
                     }, E.createElement(k.$1, {
                         icon: i.faCircleQuestion
                     }), "Security Checks Pending");
-                    else if (o.scanStatus) {
+                    else if (c.scanStatus) {
                         var d, w;
                         m = E.createElement("div", {
                             className: "tw-flex tw-items-center tw-gap-2"
@@ -668,20 +668,20 @@
                             style: {
                                 height: "1em"
                             },
-                            src: null === (d = H.i1[o.performanceRating]) || void 0 === d ? void 0 : d.image,
+                            src: null === (d = W.i1[c.performanceRating]) || void 0 === d ? void 0 : d.image,
                             alt: ""
-                        }), null === (w = H.i1[o.performanceRating]) || void 0 === w ? void 0 : w.label)
+                        }), null === (w = W.i1[c.performanceRating]) || void 0 === w ? void 0 : w.label)
                     }
                     return E.createElement("tr", {
-                        key: r,
+                        key: n,
                         className: "tw-border-b tw-border-b-1 tw-border-b-gray-800"
                     }, E.createElement("th", {
                         className: "tw-py-1 tw-font-normal tw-text-center"
                     }, E.createElement(k.$1, {
-                        icon: null === (a = H.VT[r]) || void 0 === a ? void 0 : a.icon
+                        icon: null === (a = W.VT[n]) || void 0 === a ? void 0 : a.icon
                     })), E.createElement("th", {
                         className: "tw-py-1 tw-font-normal"
-                    }, c), E.createElement("td", {
+                    }, o), E.createElement("td", {
                         className: "tw-py-1"
                     }, m))
                 }))) : E.createElement("em", null, "No performance data found"), E.createElement("small", {
@@ -690,7 +690,7 @@
                     href: "https://creators.vrchat.com/avatars/avatar-performance-ranking-system",
                     target: "_blank",
                     rel: "noreferrer"
-                }, "Learn about Performance Rating"))), P && E.createElement(k._q, {
+                }, "Learn about Performance Rating"))), I && E.createElement(k._q, {
                     className: "tw-mb-3"
                 }, E.createElement("h4", {
                     className: "tw-text-base tw-mb-4"
@@ -701,20 +701,360 @@
                 }, E.createElement("th", {
                     className: "tw-py-1 tw-font-normal tw-text-center"
                 }, E.createElement(k.$1, {
-                    icon: o.CP
+                    icon: c.CP
                 })), E.createElement("th", {
                     className: "tw-py-1 tw-font-normal"
-                }, "Created"), E.createElement("td", null, N()(P.created_at).format("L"))), E.createElement("tr", {
+                }, "Created"), E.createElement("td", null, N()(I.created_at).format("L"))), E.createElement("tr", {
                     className: "tw-border-b tw-border-b-1 tw-border-b-gray-800"
                 }, E.createElement("th", {
                     className: "tw-py-1 tw-font-normal tw-text-center"
                 }, E.createElement(k.$1, {
-                    icon: c.r6
+                    icon: o.r6
                 })), E.createElement("th", {
                     className: "tw-py-1 tw-font-normal"
-                }, "Updated"), E.createElement("td", null, N()(P.updated_at).format("L"))))))))
+                }, "Updated"), E.createElement("td", null, N()(I.updated_at).format("L"))))))))
+            }
+        },
+        4751: (e, t, a) => {
+            a.d(t, {
+                Z: () => O
+            });
+            var r = a(42138),
+                n = a(4942),
+                l = a(15861),
+                o = a(54546),
+                c = a(57310),
+                i = a(21707),
+                s = a(64687),
+                u = a.n(s),
+                m = a(67294),
+                d = a(79655),
+                w = a(17219),
+                p = a(61509).S.injectEndpoints({
+                    endpoints: function(e) {
+                        return {
+                            getReports: e.query({
+                                query: function(e) {
+                                    return {
+                                        url: "/moderationReports",
+                                        params: {
+                                            contentId: e.contentId
+                                        }
+                                    }
+                                },
+                                providesTags: function(e, t, a) {
+                                    return [{
+                                        type: "Reports",
+                                        id: a.contentId
+                                    }]
+                                }
+                            }),
+                            createReport: e.mutation({
+                                query: function(e) {
+                                    return {
+                                        url: "/moderationReports",
+                                        method: "POST",
+                                        body: {
+                                            type: e.type,
+                                            category: e.category,
+                                            reason: e.reason,
+                                            contentId: e.contentId,
+                                            description: e.description,
+                                            details: e.details
+                                        }
+                                    }
+                                },
+                                invalidatesTags: function(e, t, a) {
+                                    return [{
+                                        type: "Reports",
+                                        id: a.contentId
+                                    }]
+                                }
+                            })
+                        }
+                    }
+                }),
+                f = p.useGetReportsQuery,
+                v = p.useCreateReportMutation,
+                g = a(83807),
+                b = a(80988),
+                E = a(89421),
+                h = a(11121),
+                y = a(43862),
+                N = a(76225),
+                x = a(60006);
+
+            function k(e, t) {
+                var a = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), a.push.apply(a, r)
+                }
+                return a
+            }
+
+            function S(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var a = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? k(Object(a), !0).forEach((function(t) {
+                        (0, n.Z)(e, t, a[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : k(Object(a)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
+                    }))
+                }
+                return e
+            }
+            const O = function(e) {
+                var t, a, n = e.isOpen,
+                    s = e.cancelCallback,
+                    p = e.type,
+                    k = e.contentId,
+                    O = e.contentName,
+                    C = e.marketplace,
+                    I = e.hasStore,
+                    j = m.useState(""),
+                    P = (0, o.Z)(j, 2),
+                    R = P[0],
+                    _ = P[1],
+                    Z = m.useState(""),
+                    D = (0, o.Z)(Z, 2),
+                    A = D[0],
+                    T = D[1],
+                    U = m.useState(""),
+                    z = (0, o.Z)(U, 2),
+                    q = z[0],
+                    F = z[1],
+                    X = m.useState([]),
+                    $ = (0, o.Z)(X, 2),
+                    M = $[0],
+                    L = $[1],
+                    V = m.useState(!1),
+                    J = (0, o.Z)(V, 2),
+                    W = J[0],
+                    H = J[1],
+                    B = (0, g.Tu)().user,
+                    G = (0, w.y)({}, {
+                        skip: !n
+                    }),
+                    Y = G.data,
+                    Q = G.isLoading,
+                    K = f({
+                        contentId: k
+                    }, {
+                        skip: !n
+                    }),
+                    ee = K.data,
+                    te = K.isLoading,
+                    ae = v(),
+                    re = (0, o.Z)(ae, 2),
+                    ne = re[0],
+                    le = re[1],
+                    oe = le.isFetching,
+                    ce = le.isError,
+                    ie = le.isSuccess,
+                    se = le.reset;
+                m.useEffect((function() {
+                    R && T("")
+                }), [R]), m.useEffect((function() {
+                    "warnings" === A && F("")
+                }), [A]), m.useEffect((function() {
+                    n || setTimeout((function() {
+                        se(), _(""), T(""), F(""), L([])
+                    }), 500)
+                }), [n]);
+                var ue = function() {
+                        var e = (0, l.Z)(u().mark((function e() {
+                            var t, a;
+                            return u().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.next = 2, ne(S({
+                                            type: p,
+                                            category: R,
+                                            reason: A,
+                                            contentId: k,
+                                            description: q
+                                        }, M.length ? {
+                                            details: {
+                                                suggestedWarnings: M
+                                            }
+                                        } : {}));
+                                    case 2:
+                                        t = e.sent, (a = t.data) && H(a.supportRequired);
+                                    case 5:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e)
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    me = Q || te || oe,
+                    de = m.useMemo((function() {
+                        var e, t;
+                        return Object.keys(null !== (e = null == Y || null === (t = Y.reportOptions) || void 0 === t ? void 0 : t[p]) && void 0 !== e ? e : {}).sort((function(e, t) {
+                            var a, r;
+                            return (null === (a = Y.reportCategories) || void 0 === a || null === (a = a[e]) || void 0 === a ? void 0 : a.order) - (null === (r = Y.reportCategories) || void 0 === r || null === (r = r[t]) || void 0 === r ? void 0 : r.order)
+                        })).filter((function(e) {
+                            return !e.endsWith("store") || I
+                        })).map((function(e) {
+                            var t, a, r, n, l, o;
+                            return {
+                                value: e,
+                                label: null !== (t = null === (a = Y.reportCategories) || void 0 === a || null === (a = a[e]) || void 0 === a ? void 0 : a.title) && void 0 !== t ? t : null === (r = Y.reportCategories) || void 0 === r || null === (r = r[e]) || void 0 === r ? void 0 : r.text,
+                                description: null !== (n = null === (l = Y.reportCategories) || void 0 === l || null === (l = l[e]) || void 0 === l ? void 0 : l.description) && void 0 !== n ? n : null === (o = Y.reportCategories) || void 0 === o || null === (o = o[e]) || void 0 === o ? void 0 : o.tooltip
+                            }
+                        }))
+                    }), [p, Y, I]);
+                return m.useEffect((function() {
+                    1 !== de.length || R || _(de[0].value)
+                }), [de, R]), m.createElement(x.oA, {
+                    role: "dialog",
+                    type: "default",
+                    isOpen: n,
+                    toggle: s
+                }, ie ? m.createElement(m.Fragment, null, W ? m.createElement(m.Fragment, null, m.createElement(x.eb, {
+                    tag: "h4",
+                    close: m.createElement(E.Z, {
+                        onClick: s,
+                        disabled: me
+                    }),
+                    toggle: s
+                }, "Contact Support"), m.createElement(x.vc, {
+                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                }, m.createElement(b.$1, {
+                    icon: i.e7,
+                    size: "4x",
+                    className: "tw-mt-5 tw-mb-5"
+                }), m.createElement("h4", {
+                    className: "tw-mb-4"
+                }, "Support Team Required"), m.createElement("strong", null, "It looks like you are trying to report an issue that requires our support team."), m.createElement("p", null, "Please provide us with information about your issue using our web form so we can provide you with assistance.")), m.createElement(x.tc, {
+                    className: "tw-justify-center"
+                }, m.createElement(x.Qj, {
+                    to: "https://help.vrchat.com/hc/en-us/requests/new?ticket_form_id=360006750513&tf_360057451993=".concat(null == B ? void 0 : B.id, "&tf_subject=").concat(A, "%20").concat(R, "%20By%20").concat(p, "%20").concat(O, "&tf_description=").concat(q),
+                    target: "_blank"
+                }, "Open Support Form"))) : m.createElement(m.Fragment, null, m.createElement(x.eb, {
+                    tag: "h4",
+                    close: m.createElement(E.Z, {
+                        onClick: s,
+                        disabled: me
+                    }),
+                    toggle: s
+                }, "Report Submitted"), m.createElement(x.vc, {
+                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                }, m.createElement(b.$1, {
+                    icon: c.XC,
+                    size: "4x",
+                    className: "tw-mt-5 tw-mb-5"
+                }), m.createElement("h4", {
+                    className: "tw-mb-4"
+                }, "Your report is in - we've got it!"), m.createElement("strong", null, "Thanks for helping us keep things safe!"), m.createElement("p", null, "Your report has been received and will be reviewed by our moderation team.")), m.createElement(x.tc, {
+                    className: "tw-justify-center"
+                }, m.createElement(b.zx, {
+                    color: "primary",
+                    onClick: s,
+                    className: "tw-px-20 tw-py-1"
+                }, "Done")))) : m.createElement(m.Fragment, null, m.createElement(x.eb, {
+                    className: "tw-capitalize",
+                    tag: "h4",
+                    close: m.createElement(E.Z, {
+                        onClick: s,
+                        disabled: me
+                    }),
+                    toggle: s
+                }, "Report ", p), m.createElement(x.vc, null, Q ? m.createElement("div", {
+                    className: "tw-text-center"
+                }, m.createElement(y.Z, {
+                    size: "3x"
+                })) : m.createElement("div", {
+                    className: "tw-flex tw-flex-col"
+                }, ce && m.createElement(b.qX, {
+                    type: "error",
+                    title: "Error"
+                }, "An error occurred while trying to submit the report."), m.createElement("p", null, "What are you reporting?"), m.createElement(N.Z, {
+                    value: R,
+                    onChange: function(e) {
+                        return _(e.target.value)
+                    },
+                    options: de
+                }), m.createElement("label", {
+                    className: "tw-mt-5"
+                }, "Reason", m.createElement(b.Lt, {
+                    className: "tw-mt-2",
+                    value: A,
+                    onChange: T,
+                    disabled: !R,
+                    options: (null !== (t = null == Y || null === (a = Y.reportOptions) || void 0 === a || null === (a = a[p]) || void 0 === a ? void 0 : a[R]) && void 0 !== t ? t : []).map((function(e) {
+                        var t;
+                        return {
+                            value: e,
+                            label: null === (t = Y.reportReasons) || void 0 === t || null === (t = t[e]) || void 0 === t ? void 0 : t.text
+                        }
+                    }))
+                })), m.createElement("small", {
+                    className: "tw-text-light-grey tw-mt-2"
+                }, "Don't see your issue listed here?", m.createElement("a", {
+                    href: C ? "https://vrch.at/marketplace-help" : "https://vrch.at/support",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    className: "tw-ml-1"
+                }, "Contact us")), "copyright" === A ? m.createElement(b.qX, {
+                    type: "warn"
+                }, "We take copyright seriously. Copyright infringement reports are handled differently from standard reports. If you own this content or are authorized to act on behalf of the owner,", m.createElement(d.rU, {
+                    to: "/home/profile?dmcaClaimForm=true&dmcaTarget=".concat(k),
+                    className: "tw-ml-1"
+                }, "submit a DMCA Claim"), ".") : "warnings" === A ? m.createElement(m.Fragment, null, m.createElement("label", {
+                    className: "tw-mt-5 tw-mb-2"
+                }, "Suggest Content Warnings"), m.createElement("div", {
+                    className: "tw-flex tw-flex-col tw-gap-2"
+                }, m.createElement(h.Z, {
+                    tags: M,
+                    onSelectValues: function(e) {
+                        return L([].concat((0, r.Z)(M), (0, r.Z)(e)))
+                    },
+                    onRemoveValue: function(e) {
+                        return L(M.filter((function(t) {
+                            return t !== e
+                        })))
+                    }
+                }))) : null != ee && ee.results.some((function(e) {
+                    return e.type === p && e.category === R && e.reason === A
+                })) ? m.createElement(b.qX, {
+                    type: "warn",
+                    title: "You already have a pending report for this."
+                }) : m.createElement("label", {
+                    className: "tw-mt-5 tw-flex tw-flex-col tw-gap-2"
+                }, "Notes", m.createElement("small", {
+                    className: "tw-text-light-grey"
+                }, "Provide specific details to help moderators resolve the issue promptly."), m.createElement(b.gx, {
+                    value: q,
+                    onChange: function(e) {
+                        return F(e.target.value)
+                    },
+                    maxLength: 5e3,
+                    styleOverride: {
+                        height: "90px"
+                    }
+                })))), m.createElement(x.tc, null, m.createElement(b.zx, {
+                    disabled: me,
+                    neutral: !0,
+                    onClick: s,
+                    className: "px-2",
+                    expand: !0
+                }, "Cancel"), m.createElement(b.zx, {
+                    color: "primary",
+                    loading: oe,
+                    disabled: me || !R || !A || !q && "warnings" !== A || "copyright" === A || "warnings" === A && !M.length,
+                    onClick: ue,
+                    className: "px-2",
+                    expand: !0
+                }, "Send"))))
             }
         }
     }
 ]);
-//# sourceMappingURL=58273fc40cd575962689a31b95561b836af20c86ff8cbd233a8466b776e04753.js.map
+//# sourceMappingURL=b1a5bbd9f8df76eaa626cae98c98e9be0f91454a90db034ade6b5732034b792b.js.map

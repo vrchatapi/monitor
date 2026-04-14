@@ -14,7 +14,7 @@
                 o = a(64687),
                 d = a.n(o),
                 u = a(64258),
-                m = a(89132),
+                m = a(80988),
                 w = a(98185),
                 p = a(72998),
                 g = a(95896),
@@ -683,7 +683,7 @@
                 o = a(67294),
                 d = a(32981),
                 u = a(64258),
-                m = a(89132),
+                m = a(80988),
                 w = a(95896),
                 p = a(3620),
                 g = a(64358),
@@ -732,7 +732,7 @@
                 }, o.createElement("h2", {
                     className: "tw-text-lg tw-mb-3"
                 }, "Avatar Detail"), o.createElement(m.X2, {
-                    className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
+                    className: "tw-gap-5 tw-mb-5 tw-flex-col md:tw-flex-row"
                 }, o.createElement(m.JX, null, o.createElement(m.pw, {
                     imageId: x.thumbnailImageUrl,
                     fitToCover: !0,
@@ -853,4 +853,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e82b4ae0999d0e714f887f4ff445e70732b6e2ed3bcad012e31015d1e588138c.js.map
+//# sourceMappingURL=d346863d26e22aa88fcca5346dc79775c3eac5cc34a48f1c83fd0ee1b343bb34.js.map

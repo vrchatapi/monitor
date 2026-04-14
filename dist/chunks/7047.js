@@ -8,7 +8,7 @@
             var l = n(67294),
                 a = n(89250),
                 r = l.lazy((function() {
-                    return Promise.all([n.e(9282), n.e(1395)]).then(n.bind(n, 1395))
+                    return Promise.all([n.e(8626), n.e(1395)]).then(n.bind(n, 1395))
                 })),
                 u = l.lazy((function() {
                     return n.e(7378).then(n.bind(n, 87378))
@@ -28,4 +28,4 @@
         }
     }
 ]);
-//# sourceMappingURL=744a6d3d281850c1fe340fd9d8e6cdbab6330a705a2f1ccb0fa5b56be78d1413.js.map
+//# sourceMappingURL=feeeea19e721859706170936bc937bbc1cea1e9ce540e929f7a5e31fdd291c27.js.map

@@ -24,11 +24,11 @@
                 y = n(83505),
                 w = n(70123),
                 b = n(79655),
-                x = n(89132),
+                x = n(80988),
                 N = n(43862),
-                Z = (n(12227), n(46681)),
-                C = n(5513),
-                k = n(22202);
+                Z = n(46681),
+                k = n(5513),
+                C = n(22202);
             const S = function(e) {
                 var t = e.aspectRatio,
                     n = e.successCallback,
@@ -98,15 +98,15 @@
                     xe = p.useState(!1),
                     Ne = (0, l.Z)(xe, 2),
                     Ze = Ne[0],
-                    Ce = Ne[1],
-                    ke = (0, g.v9)((function(e) {
+                    ke = Ne[1],
+                    Ce = (0, g.v9)((function(e) {
                         return e.currentUser.photoUploadState
                     })),
                     Se = (0, g.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
                     Ue = p.useRef(null),
-                    ze = (0, k.q7)().data,
+                    ze = (0, C.q7)().data,
                     je = void 0 === ze ? [] : ze,
                     Le = (0, g.I0)(),
                     Pe = function() {
@@ -123,13 +123,13 @@
                             y: 0,
                             width: 0,
                             height: 0
-                        }), H(1), K(null != t ? t : 16 / 9), te(!1), re({}), oe(0), fe(!1), be(!1), Ce(!1), he(!1), Le((0, C.b9)())
+                        }), H(1), K(null != t ? t : 16 / 9), te(!1), re({}), oe(0), fe(!1), be(!1), ke(!1), he(!1), Le((0, k.b9)())
                     },
                     Re = function(e, t) {
                         A(e), V(t)
                     };
                 p.useEffect((function() {
-                    Le((0, C.b9)())
+                    Le((0, k.b9)())
                 }), []);
                 var Ie, $e, Be, qe, Oe, Ae = function(e) {
                         var t = new Image;
@@ -170,17 +170,23 @@
                         }
                     }(),
                     De = null !== L,
-                    Ve = [p.createElement("span", null, p.createElement("h3", null, "(1/3) Choose a picture to upload"), " Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels. ", p.createElement("br", null), p.createElement("br", null)), p.createElement("h3", null, "(2/3) Crop your picture as desired"), p.createElement("h3", null, "(3/3) Preview before upload")],
+                    Ve = [p.createElement("span", {
+                        key: "step-1"
+                    }, p.createElement("h3", null, "(1/3) Choose a picture to upload"), " Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels. ", p.createElement("br", null), p.createElement("br", null)), p.createElement("h3", {
+                        key: "step-2"
+                    }, "(2/3) Crop your picture as desired"), p.createElement("h3", {
+                        key: "step-3"
+                    }, "(3/3) Preview before upload")],
                     _e = de ? "Your profile picture has been updated!" : p.createElement("span", null, " "),
                     Fe = je.includes("permission-user-gallery"),
                     Ge = je.includes("permission-profile-pic-override"),
                     He = "yellow";
-                return ke.complete && (de && ke.success ? (He = "green", Ie = Se.id, $e = ke.lastUpload, Be = $e.id, qe = $e.versions, Oe = "https://api.vrchat.cloud/api/1/file/".concat(Be, "/").concat(qe.at(-1).version), Le((0, C._W)({
+                return Ce.complete && (de && Ce.success ? (He = "green", Ie = Se.id, $e = Ce.lastUpload, Be = $e.id, qe = $e.versions, Oe = "https://api.vrchat.cloud/api/1/file/".concat(Be, "/").concat(qe.at(-1).version), Le((0, k._W)({
                     userId: Ie,
                     data: {
                         profilePicOverride: Oe
                     }
-                })), he(!1)) : He = ke.success ? "" : "red"), Fe ? p.createElement("div", null, p.createElement("div", {
+                })), he(!1)) : He = Ce.success ? "" : "red"), Fe ? p.createElement("div", null, p.createElement("div", {
                     className: (0, y.iv)({
                         name: "x6eonb",
                         styles: "margin:auto;margin-bottom:1.5em;text-align:center"
@@ -205,13 +211,13 @@
                     type: "file",
                     accept: ".png,.jpg,.jpeg",
                     onChange: function() {
-                        fe(!1), be(!1), Ce(!1);
+                        fe(!1), be(!1), ke(!1);
                         var e = Ue.current.files[0];
                         if ((null == e ? void 0 : e.size) > 10485760) fe(!0);
                         else {
                             var t = new Image;
                             t.addEventListener("load", (function() {
-                                if (t.width < 64 || t.height < 64) Ce(!0);
+                                if (t.width < 64 || t.height < 64) ke(!0);
                                 else if (t.width > 2048 || t.height > 2048) be(!0);
                                 else {
                                     window.URL.revokeObjectURL(t.src);
@@ -278,7 +284,7 @@
                         name: "nh2hxb",
                         styles: "margin:auto;text-align:center;button{width:7em;}"
                     })
-                }, ke.success && ke.complete && p.createElement("div", {
+                }, Ce.success && Ce.complete && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "yw3maw",
                         styles: "max-width:27em;margin:auto;margin-top:2em;text-align:left"
@@ -307,7 +313,7 @@
                     }
                 }, "Back") : p.createElement(b.rU, {
                     to: "/home/inventory/photos"
-                }, p.createElement(v.Z, null, "View Photos"))))), !ke.success && ke.complete && p.createElement("div", {
+                }, p.createElement(v.Z, null, "View Photos"))))), !Ce.success && Ce.complete && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "1q7q77",
                         styles: "max-width:34em;margin:auto;margin-top:2em;text-align:left"
@@ -325,14 +331,14 @@
                         name: "1ppuizh",
                         styles: "float:left;margin-right:0.6em"
                     })
-                }), p.createElement("p", null, "Your photo failed to upload!", p.createElement("br", null), ke.error || "Unknown Error", p.createElement("br", null)), p.createElement("div", {
+                }), p.createElement("p", null, "Your photo failed to upload!", p.createElement("br", null), Ce.error || "Unknown Error", p.createElement("br", null)), p.createElement("div", {
                     className: (0, y.iv)({
                         name: "tjo4qw",
                         styles: "float:right"
                     })
                 }, p.createElement(b.rU, {
                     to: "/home/inventory/photos"
-                }, p.createElement(v.Z, null, "View Photos"))))), !ke.pending && p.createElement("div", null, p.createElement("div", {
+                }, p.createElement(v.Z, null, "View Photos"))))), !Ce.pending && p.createElement("div", null, p.createElement("div", {
                     className: (0, y.iv)({
                         name: "1ue3j6i",
                         styles: "div{margin:auto;margin-top:0.5em;}"
@@ -341,7 +347,7 @@
                     imageUrl: le.base64,
                     borderColor: He,
                     disableManagement: !0
-                })), !ke.success && p.createElement("div", {
+                })), !Ce.success && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "19i7pz4",
                         styles: "margin-top:0.8em"
@@ -359,7 +365,7 @@
                 }), p.createElement("span", null, "Set as profile picture"))), p.createElement(v.Z, {
                     color: "success",
                     onClick: function() {
-                        Le((0, C.nn)({
+                        Le((0, k.nn)({
                             file: le.file
                         }))
                     }
@@ -384,7 +390,7 @@
                         name: "ofo7n8",
                         styles: "margin-right:0.4em"
                     })
-                }), "Go Back"))), ke.pending && p.createElement("div", {
+                }), "Go Back"))), Ce.pending && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "zl1inp",
                         styles: "display:flex;justify-content:center"
@@ -404,4 +410,4 @@
         }
     }
 ]);
-//# sourceMappingURL=166fff15b0d30bb41c817e034a97f8e7bc1c680bcf9f768d046c224650aef3d6.js.map
+//# sourceMappingURL=96a68e6757b920f1b8685796c6ca5b7c81c7740c9e785d16f469796a5fe673a7.js.map

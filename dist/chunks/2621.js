@@ -6,7 +6,7 @@
                 Z: () => m
             });
             var n = l(92332),
-                a = l(89132),
+                a = l(80988),
                 r = l(51806),
                 o = l.n(r),
                 c = l(16869),
@@ -67,7 +67,7 @@
                 m = l(76553),
                 d = l(6811),
                 w = l(64258),
-                p = l(89132),
+                p = l(80988),
                 g = l(63221),
                 b = l(95896),
                 f = l(22202),
@@ -80,7 +80,7 @@
                 I = ["file"],
                 C = ["imageId"];
 
-            function O(e, t) {
+            function k(e, t) {
                 var l = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -91,12 +91,12 @@
                 return l
             }
 
-            function k(e) {
+            function O(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var l = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? O(Object(l), !0).forEach((function(t) {
+                    t % 2 ? k(Object(l), !0).forEach((function(t) {
                         (0, r.Z)(e, t, l[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : O(Object(l)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : k(Object(l)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(l, t))
                     }))
                 }
@@ -114,8 +114,8 @@
             const P = function(e) {
                 var t, l = e.product,
                     r = void 0 === l ? null : l,
-                    O = e.isEditing,
-                    P = void 0 !== O && O,
+                    k = e.isEditing,
+                    P = void 0 !== k && k,
                     X = (e.type, e.user),
                     j = e.onSubmit,
                     T = void 0 === j ? function() {} : j,
@@ -133,7 +133,7 @@
                         skip: X
                     }).data,
                     $ = X || K,
-                    _ = r || k(k({}, S), {}, {
+                    _ = r || O(O({}, S), {}, {
                         sellerId: null == $ ? void 0 : $.id
                     }),
                     z = (0, v.useState)(_),
@@ -179,7 +179,7 @@
                     ve = fe.isError,
                     ye = (fe.Error, (null == he ? void 0 : he.joinState) === g.wN.OPEN ? "Your group is already set to Free Join, so enabling this option won’t have any effect. Subscribers will still join automatically." : "When enabled, anyone can purchase this role and join the group, regardless of the group’s join rules. This option overrides standard join settings.");
                 (0, v.useEffect)((function() {
-                    (null == he ? void 0 : he.joinState) === g.wN.OPEN && (ee(!0), q(k(k({}, B), {}, {
+                    (null == he ? void 0 : he.joinState) === g.wN.OPEN && (ee(!0), q(O(O({}, B), {}, {
                         groupAccess: !0
                     })))
                 }), [he]);
@@ -195,7 +195,7 @@
                 }, v.createElement(p.JX, null, v.createElement(p.JX, {
                     className: "tw-mb-8"
                 }, v.createElement(p.X2, {
-                    className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
+                    className: "tw-gap-5 tw-mb-5 tw-flex-col md:tw-flex-row"
                 }, v.createElement(p.JX, null, v.createElement("button", {
                     type: "button",
                     onClick: function() {
@@ -227,7 +227,7 @@
                     id: "displayName",
                     value: B.displayName,
                     onChange: function(e) {
-                        return q(k(k({}, B), {}, {
+                        return q(O(O({}, B), {}, {
                             displayName: e.target.value
                         }))
                     }
@@ -242,7 +242,7 @@
                     maxLength: 256,
                     value: B.description,
                     onChange: function(e) {
-                        return q(k(k({}, B), {}, {
+                        return q(O(O({}, B), {}, {
                             description: e.target.value
                         }))
                     }
@@ -332,7 +332,8 @@
                     return v.createElement(N.Z, {
                         listingId: e,
                         showImage: !0,
-                        className: "tw-flex tw-flex-row"
+                        className: "tw-flex tw-flex-row",
+                        key: e
                     })
                 }))), A.length > 6 && v.createElement(p.X2, {
                     className: "tw-items-center tw-gap-2"
@@ -361,7 +362,7 @@
                     defaultChecked: V,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        H(t), q(k(k({}, B), {}, {
+                        H(t), q(O(O({}, B), {}, {
                             useForSubscriberList: t
                         }))
                     }
@@ -373,11 +374,11 @@
                     defaultChecked: Q,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        if (ee(t), !t) return ae(!1), void q(k(k({}, B), {}, {
+                        if (ee(t), !t) return ae(!1), void q(O(O({}, B), {}, {
                             groupAccess: t,
                             groupAccessRemove: !1
                         }));
-                        q(k(k({}, B), {}, {
+                        q(O(O({}, B), {}, {
                             groupAccess: t
                         }))
                     },
@@ -390,7 +391,7 @@
                     defaultChecked: ne,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        ae(t), q(k(k({}, B), {}, {
+                        ae(t), q(O(O({}, B), {}, {
                             groupAccessRemove: t
                         }))
                     }
@@ -420,12 +421,12 @@
                             return (0, n.Z)(e, x)
                         }))) : o ? (ie(l), void q((function(e) {
                             e.file;
-                            return k(k({}, (0, n.Z)(e, I)), {}, {
+                            return O(O({}, (0, n.Z)(e, I)), {}, {
                                 imageId: l
                             })
                         }))) : (ie(r), void q((function(e) {
                             e.imageId;
-                            return k(k({}, (0, n.Z)(e, C)), {}, {
+                            return O(O({}, (0, n.Z)(e, C)), {}, {
                                 file: r
                             })
                         })))
@@ -439,4 +440,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0b6ff189e301a991346512141d0d367f5d9fe266958f68a71a3728e59b4864da.js.map
+//# sourceMappingURL=4ddf50ada9ed284906e7abb8f3dcc3e982f5d839818f2d0dc13b626d283b0994.js.map

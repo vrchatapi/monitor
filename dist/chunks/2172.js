@@ -8,7 +8,7 @@
             var l = a(54546),
                 n = a(65394),
                 r = a(82414),
-                o = a(89132),
+                o = a(80988),
                 i = a(22202),
                 c = a(21538),
                 s = a(43683),
@@ -371,7 +371,7 @@
                 s = a(67294),
                 m = a(32981),
                 u = a(64258),
-                d = a(89132),
+                d = a(80988),
                 w = a(95896),
                 p = a(3620),
                 v = a(64358),
@@ -420,7 +420,7 @@
                 }, s.createElement("h2", {
                     className: "tw-text-lg tw-mb-3"
                 }, "Avatar Detail"), s.createElement(d.X2, {
-                    className: "tw-gap-5 tw-mb-5 tw-flex-col sm:tw-flex-row"
+                    className: "tw-gap-5 tw-mb-5 tw-flex-col md:tw-flex-row"
                 }, s.createElement(d.JX, null, s.createElement(d.pw, {
                     imageId: h.thumbnailImageUrl,
                     fitToCover: !0,
@@ -541,4 +541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2780138404dc5af264b666afeab875ba7d9b8b02b1804238959987fe4988b97f.js.map
+//# sourceMappingURL=21b715bcc9c56c9f511b86f0d76a0361621300d40f3ea60b66ba179f7d5a8fd4.js.map

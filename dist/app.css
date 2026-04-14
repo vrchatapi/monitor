@@ -884,8 +884,21 @@ progress {
     }
 }
 
+@media(min-width: 1400px) {
+
+    .container-2x,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1400px
+    }
+}
+
 @media(min-width: 1920px) {
 
+    .container-3x,
     .container-2x,
     .container-xl,
     .container-lg,
@@ -896,27 +909,14 @@ progress {
     }
 }
 
-@media(min-width: 3840px) {
-
-    .container-3x,
-    .container-2x,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container {
-        max-width: 3840px
-    }
-}
-
 :root {
     --bs-breakpoint-xs: 0;
     --bs-breakpoint-sm: 576px;
     --bs-breakpoint-md: 768px;
     --bs-breakpoint-lg: 992px;
     --bs-breakpoint-xl: 1200px;
-    --bs-breakpoint-2x: 1920px;
-    --bs-breakpoint-3x: 3840px
+    --bs-breakpoint-2x: 1400px;
+    --bs-breakpoint-3x: 1920px
 }
 
 .row {
@@ -2002,7 +2002,7 @@ progress {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .col-2x {
         flex: 1 0 0%
     }
@@ -2216,7 +2216,7 @@ progress {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .col-3x {
         flex: 1 0 0%
     }
@@ -2660,14 +2660,14 @@ progress {
     }
 }
 
-@media(max-width: 1919.98px) {
+@media(max-width: 1399.98px) {
     .table-responsive-2x {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
 }
 
-@media(max-width: 3839.98px) {
+@media(max-width: 1919.98px) {
     .table-responsive-3x {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
@@ -4251,7 +4251,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .dropdown-menu-2x-start {
         --bs-position: start
     }
@@ -4271,7 +4271,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .dropdown-menu-3x-start {
         --bs-position: start
     }
@@ -5098,7 +5098,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .navbar-expand-2x {
         flex-wrap: nowrap;
         justify-content: flex-start
@@ -5155,7 +5155,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .navbar-expand-3x {
         flex-wrap: nowrap;
         justify-content: flex-start
@@ -6222,7 +6222,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .list-group-horizontal-2x {
         flex-direction: row
     }
@@ -6252,7 +6252,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .list-group-horizontal-3x {
         flex-direction: row
     }
@@ -6823,7 +6823,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 1919.98px) {
+@media(max-width: 1399.98px) {
     .modal-fullscreen-2x-down {
         width: 100vw;
         max-width: none;
@@ -6847,7 +6847,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 3839.98px) {
+@media(max-width: 1919.98px) {
     .modal-fullscreen-3x-down {
         width: 100vw;
         max-width: none;
@@ -7860,7 +7860,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 1919.98px) {
+@media(max-width: 1399.98px) {
     .offcanvas-2x {
         position: fixed;
         bottom: 0;
@@ -7877,13 +7877,13 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 1919.98px)and (prefers-reduced-motion: reduce) {
+@media(max-width: 1399.98px)and (prefers-reduced-motion: reduce) {
     .offcanvas-2x {
         transition: none
     }
 }
 
-@media(max-width: 1919.98px) {
+@media(max-width: 1399.98px) {
     .offcanvas-2x.offcanvas-start {
         top: 0;
         left: 0;
@@ -7931,7 +7931,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .offcanvas-2x {
         --bs-offcanvas-height: auto;
         --bs-offcanvas-border-width: 0;
@@ -7951,7 +7951,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 3839.98px) {
+@media(max-width: 1919.98px) {
     .offcanvas-3x {
         position: fixed;
         bottom: 0;
@@ -7968,13 +7968,13 @@ fieldset:disabled .btn {
     }
 }
 
-@media(max-width: 3839.98px)and (prefers-reduced-motion: reduce) {
+@media(max-width: 1919.98px)and (prefers-reduced-motion: reduce) {
     .offcanvas-3x {
         transition: none
     }
 }
 
-@media(max-width: 3839.98px) {
+@media(max-width: 1919.98px) {
     .offcanvas-3x.offcanvas-start {
         top: 0;
         left: 0;
@@ -8022,7 +8022,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .offcanvas-3x {
         --bs-offcanvas-height: auto;
         --bs-offcanvas-border-width: 0;
@@ -8497,7 +8497,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .sticky-2x-top {
         position: sticky;
         top: 0;
@@ -8511,7 +8511,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .sticky-3x-top {
         position: sticky;
         top: 0;
@@ -13447,7 +13447,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 1920px) {
+@media(min-width: 1400px) {
     .float-2x-start {
         float: left !important
     }
@@ -14171,7 +14171,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .float-3x-start {
         float: left !important
     }
