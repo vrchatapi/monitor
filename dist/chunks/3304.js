@@ -2904,11 +2904,15 @@
                 Ut = "worlds",
                 jt = "mutual_friends",
                 Tt = "mutual_groups",
-                Rt = function(e) {
-                    var t, r, b, v = (0, m.UO)().userId,
+                Rt = function() {
+                    var e, t, r, b = (0, m.s0)(),
+                        v = (0, m.UO)().userId,
                         x = void 0 === v ? null : v,
-                        h = (0, i.IB)().data,
-                        E = (0, o.useMemo)((function() {
+                        h = (0, i.IB)().data;
+                    (0, o.useEffect)((function() {
+                        "me" === x && null != h && h.id && b("/home/user/".concat(null == h ? void 0 : h.id))
+                    }), [h, x]);
+                    var E = (0, o.useMemo)((function() {
                             return x === (null == h ? void 0 : h.id)
                         }), [x, h]),
                         y = (0, o.useState)(!1),
@@ -3083,7 +3087,7 @@
                         }), e
                     }), [we, ce, ge, be, Se, Ue, je, Te, M, xe, Ee]);
                     if (re) return null;
-                    var Me = (0, f.H1)(ie, null !== (t = null == W || null === (r = W.constants) || void 0 === r || null === (r = r.LANGUAGE) || void 0 === r ? void 0 : r.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== t ? t : s.O);
+                    var Me = (0, f.H1)(ie, null !== (e = null == W || null === (t = W.constants) || void 0 === t || null === (t = t.LANGUAGE) || void 0 === t ? void 0 : t.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== e ? e : s.O);
                     Me.some((function(e) {
                         return e.length > 8
                     }));
@@ -3146,7 +3150,7 @@
                     }))), o.createElement(ft, (0, n.Z)({
                         isVisible: !!j,
                         onClose: Fe
-                    }, null !== (b = Oe[j]) && void 0 !== b ? b : {
+                    }, null !== (r = Oe[j]) && void 0 !== r ? r : {
                         title: "",
                         items: [],
                         renderItem: function() {
@@ -3203,4 +3207,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5f171c01313c05b6a0a44665f1571fb67435c2145725ee56917ac5bdf4cb61f8.js.map
+//# sourceMappingURL=0da90398cea577f0f4a1002de0a1425e77c5fc8bbc257fdd3343633f8022606a.js.map
