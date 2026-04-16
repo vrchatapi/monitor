@@ -3,7 +3,7 @@
         79795: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => oe
+                default: () => le
             });
             var r = n(42138),
                 i = n(54546),
@@ -13,49 +13,50 @@
                 s = n.n(l),
                 c = n(80988),
                 u = n(70917),
-                d = n(67294),
-                f = n(83807),
-                m = n(15861),
-                v = n(46357),
+                d = n(82728),
+                f = n(67294),
+                m = n(69116),
+                v = n(15861),
+                p = n(46357),
                 g = n(64687),
-                p = n.n(g),
-                h = n(64358),
-                b = n(30381),
-                x = n.n(b),
-                w = n(79655),
-                y = n(25062),
-                E = n(12227),
+                h = n.n(g),
+                b = n(64358),
+                x = n(30381),
+                w = n.n(x),
+                y = n(79655),
+                E = n(25062),
+                Z = n(12227),
                 k = n(22202),
-                Z = n(90924),
-                C = n(73170);
+                C = n(90924),
+                S = n(73170);
             n(98353);
-            var S = d.memo((function(e) {
+            var I = f.memo((function(e) {
                 var t, n, r, a = e.userId,
                     o = e.closeSidebar,
                     l = (0, k.IB)().data,
-                    s = (0, f.t4)().friends,
-                    u = d.useMemo((function() {
+                    s = (0, m.t4)().friends,
+                    u = f.useMemo((function() {
                         return null == s ? void 0 : s.find((function(e) {
                             return e.id === a
                         }))
                     }), [s, a]),
-                    g = (0, f.Kk)(null == u ? void 0 : u.location),
-                    b = g.world,
-                    w = g.location,
-                    S = d.useState("Invite Me"),
-                    I = (0, i.Z)(S, 2),
-                    J = I[0],
+                    d = (0, m.Kk)(null == u ? void 0 : u.location),
+                    g = d.world,
+                    x = d.location,
+                    y = f.useState("Invite Me"),
+                    I = (0, i.Z)(y, 2),
+                    q = I[0],
                     Y = I[1],
-                    X = d.useState(!1),
+                    X = f.useState(!1),
                     ee = (0, i.Z)(X, 2),
                     te = ee[0],
                     ne = ee[1],
-                    re = (0, f.Kz)(),
+                    re = (0, m.Kz)(),
                     ie = function() {
                         o && window.innerWidth <= 1200 && o()
                     };
                 if (!u || null != u && u.error || !l) return null;
-                var ae = (0, h.Je)({
+                var ae = (0, b.Je)({
                         user: u,
                         currentUser: l
                     }),
@@ -68,27 +69,27 @@
                     fe = ae.isOffline,
                     me = ae.userStatus,
                     ve = ae.userStatusLabel,
-                    ge = ae.isInActive,
-                    pe = ae.userActivity,
+                    pe = ae.isInActive,
+                    ge = ae.userActivity,
                     he = ae.receivesMobileNotifications,
                     be = (null === (t = u.profilePicOverride) || void 0 === t ? void 0 : t.length) > 0 ? u.profilePicOverride : u.currentAvatarThumbnailImageUrl,
-                    xe = (0, h.aF)(de),
-                    we = (0, E.uP)(de),
-                    ye = (0, E.YW)(de),
-                    Ee = (0, E.PF)(l, de),
-                    ke = function() {
-                        var e = (0, m.Z)(p().mark((function e() {
-                            return p().wrap((function(e) {
+                    xe = (0, b.aF)(de),
+                    we = (0, Z.uP)(de),
+                    ye = (0, Z.YW)(de),
+                    Ee = (0, Z.PF)(l, de),
+                    Ze = function() {
+                        var e = (0, v.Z)(h().mark((function e() {
+                            return h().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (b && de) {
+                                        if (g && de) {
                                             e.next = 2;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 2:
                                         return e.next = 4, re({
-                                            worldId: b.id,
+                                            worldId: g.id,
                                             instanceId: de
                                         });
                                     case 4:
@@ -105,11 +106,11 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ze = (0, h.S6)({
+                    ke = (0, b.S6)({
                         fileUrl: be,
                         width: "128"
                     }),
-                    Ce = null !== (n = null == b || null === (r = b.name) || void 0 === r ? void 0 : r.substr(0, 300)) && void 0 !== n ? n : "",
+                    Ce = null !== (n = null == g || null === (r = g.name) || void 0 === r ? void 0 : r.substr(0, 300)) && void 0 !== n ? n : "",
                     Se = function(e) {
                         var t = e.isTraveling,
                             n = e.inWorld,
@@ -118,19 +119,19 @@
                             a = e.isMobile,
                             o = e.instanceId,
                             l = e.shortWorldName;
-                        return t ? d.createElement(M, {
+                        return t ? f.createElement(H, {
                             role: "note",
                             "aria-label": "User is Loading a World"
-                        }, "Loading a world") : n && r ? d.createElement(L, {
+                        }, "Loading a world") : n && r ? f.createElement(M, {
                             role: "note",
                             "aria-label": "User is in a Private World"
-                        }, "In a private world") : i ? d.createElement(A, {
+                        }, "In a private world") : i ? f.createElement(L, {
                             role: "note",
                             "aria-label": "User is On Website"
-                        }, "On website") : a ? d.createElement(A, {
+                        }, "On website") : a ? f.createElement(L, {
                             role: "note",
                             "aria-label": "User is On Mobile"
-                        }, "On mobile") : n && !r && o ? d.createElement(A, {
+                        }, "On mobile") : n && !r && o ? f.createElement(L, {
                             role: "note",
                             "aria-label": "User World Location"
                         }, l) : null
@@ -149,14 +150,14 @@
                             r = e.userStatusLabel,
                             i = e.receivesMobileNotifications,
                             a = e.isUserCardHovered;
-                        return t && !n ? d.createElement(P, {
+                        return t && !n ? f.createElement(R, {
                             "aria-label": "User Status Description"
-                        }, t) : t || n ? n ? d.createElement(H, {
+                        }, t) : t || n ? n ? f.createElement(T, {
                             isUserCardHovered: a,
                             isOffline: n,
                             role: "note",
                             "aria-label": "User is offline"
-                        }, "Offline ", i && "on Mobile") : null : d.createElement(P, {
+                        }, "Offline ", i && "on Mobile") : null : f.createElement(R, {
                             "aria-label": "User Status Description"
                         }, r)
                     }({
@@ -166,7 +167,7 @@
                         receivesMobileNotifications: he,
                         isUserCardHovered: te
                     });
-                return d.createElement(z, {
+                return f.createElement(z, {
                     onMouseEnter: function() {
                         return ne(!0)
                     },
@@ -175,114 +176,114 @@
                     },
                     role: "listitem",
                     "aria-label": "User Card",
-                    level: (0, E.FR)({
+                    level: (0, Z.FR)({
                         tags: u.tags
                     }),
                     isOffline: fe
-                }, !1, d.createElement(U, null, d.createElement(q, null, d.createElement(W, {
+                }, !1, f.createElement(F, null, f.createElement(N, null, f.createElement(O, {
                     "aria-label": "User Image",
                     to: "/home/user/".concat(u.id),
                     onClick: ie
-                }, d.createElement(F, null, "Go To Profile"), d.createElement(j, {
+                }, f.createElement(j, null, "Go To Profile"), f.createElement(W, {
                     isOffline: fe,
                     isUserCardHovered: te,
-                    url: Ze
-                }))), d.createElement(O, {
+                    url: ke
+                }))), f.createElement(A, {
                     isOffline: fe,
                     role: "group",
                     "aria-label": "User Info",
                     className: "flex-grow-1 justify-content-between"
-                }, d.createElement(N, {
+                }, f.createElement(U, {
                     className: "align-items-center"
-                }, d.createElement(c.Cl, {
+                }, f.createElement(c.Cl, {
                     status: me,
-                    isInActive: ge,
-                    title: "".concat(ve, " ").concat(pe && "- ".concat(pe))
-                }), d.createElement(R, {
+                    isInActive: pe,
+                    title: "".concat(ve, " ").concat(ge && "- ".concat(ge))
+                }), f.createElement(D, {
                     to: "/home/user/".concat(u.id),
                     onClick: ie
-                }, u.displayName)), Se, Ie, fe && !!u.last_login && d.createElement(T, {
+                }, u.displayName)), Se, Ie, fe && !!u.last_login && f.createElement(P, {
                     isUserCardHovered: te,
                     role: "note",
                     "aria-label": "Last Logged In"
-                }, x()(u.last_login).fromNow()))), ue && !oe && !!de && d.createElement(D, {
+                }, w()(u.last_login).fromNow()))), ue && !oe && !!de && f.createElement(G, {
                     role: "group",
                     "aria-label": "User Location Info"
-                }, d.createElement(G, null, d.createElement(_, {
-                    url: null == b ? void 0 : b.thumbnailImageUrl,
-                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(de),
+                }, f.createElement(B, null, f.createElement($, {
+                    url: null == g ? void 0 : g.thumbnailImageUrl,
+                    to: "/home/launch?worldId=".concat(null == g ? void 0 : g.id, "&instanceId=").concat(de),
                     target: "_blank"
-                }, d.createElement(B, null, "Open Instance")), d.createElement($, {
+                }, f.createElement(_, null, "Open Instance")), f.createElement(K, {
                     className: "flex-grow-1 justify-content-between"
-                }, d.createElement(N, {
+                }, f.createElement(U, {
                     className: "align-items-start"
-                }, d.createElement(y.Z, {
+                }, f.createElement(E.Z, {
                     role: "note",
                     "aria-label": "Friends in the instance",
                     className: "mt-1"
-                }, null == w ? void 0 : w.users.length, " ", d.createElement(c.$1, {
-                    icon: v.FV,
+                }, null == x ? void 0 : x.users.length, " ", f.createElement(c.$1, {
+                    icon: p.FV,
                     title: "Number of friends in instance"
-                }), " "), d.createElement(K, {
-                    to: "/home/launch?worldId=".concat(null == b ? void 0 : b.id, "&instanceId=").concat(de),
+                }), " "), f.createElement(Q, {
+                    to: "/home/launch?worldId=".concat(null == g ? void 0 : g.id, "&instanceId=").concat(de),
                     title: Ce,
                     target: "_blank",
                     "aria-label": "Location Link"
-                }, Ce)), d.createElement(Q, {
+                }, Ce)), f.createElement(V, {
                     className: "align-items-center"
-                }, ye && d.createElement(Z.Z, {
+                }, ye && f.createElement(C.Z, {
                     imageSize: "16px",
                     className: "tw-mr-1"
-                }), d.createElement(C.Z, {
+                }), f.createElement(S.Z, {
                     region: we,
                     imageSize: "16px"
-                }), d.createElement("div", {
+                }), f.createElement("div", {
                     role: "note",
                     "aria-label": "Instance Type"
-                }, xe), d.createElement(V, {
-                    onClick: ke,
+                }, xe), f.createElement(J, {
+                    onClick: Ze,
                     disabled: Ee,
                     title: Ee ? "Age Verification Required (18+)" : null
-                }, J))))))
+                }, q))))))
             }));
-            S.displayName = "FriendSidebarComponent";
-            const I = S;
-            var q = (0, a.Z)("div", {
+            I.displayName = "FriendSidebarComponent";
+            const q = I;
+            var N = (0, a.Z)("div", {
                     target: "e176ivn223"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                N = (0, a.Z)("div", {
+                U = (0, a.Z)("div", {
                     target: "e176ivn222"
                 })({
                     name: "ho1qnd",
                     styles: "display:flex;flex-direction:row"
                 }),
-                z = (0, a.Z)(q, {
+                z = (0, a.Z)(N, {
                     target: "e176ivn221"
                 })("margin:.5rem 1.3rem 0 1.3rem;border-radius:4px;position:relative;padding:15px;background-color:", (function(e) {
                     return e.isOffline ? "#181B1F" : "#252A30"
                 }), ";&:hover{background-color:#252A30;}"),
-                U = (0, a.Z)(N, {
+                F = (0, a.Z)(U, {
                     target: "e176ivn220"
                 })({
                     name: "bjn8wh",
                     styles: "position:relative"
                 }),
-                F = (0, a.Z)("div", {
+                j = (0, a.Z)("div", {
                     target: "e176ivn219"
                 })({
                     name: "106697k",
                     styles: "width:100%;height:100%;top:0;left:0;position:absolute;z-index:3;opacity:0;transition:opacity 0.2s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;background-color:rgba(0, 0, 0, 0.7)"
                 }),
-                W = (0, a.Z)(w.rU, {
+                O = (0, a.Z)(y.rU, {
                     shouldForwardProp: function(e) {
                         return e && "statusColor" !== e
                     },
                     target: "e176ivn218"
-                })("display:flex;cursor:pointer;width:124px;height:72px;overflow:hidden;position:relative;border-radius:4px;box-sizing:border-box;&:hover ", F, "{opacity:1;}"),
-                j = (0, a.Z)("div", {
+                })("display:flex;cursor:pointer;width:124px;height:72px;overflow:hidden;position:relative;border-radius:4px;box-sizing:border-box;&:hover ", j, "{opacity:1;}"),
+                W = (0, a.Z)("div", {
                     target: "e176ivn217"
                 })("position:absolute;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
@@ -291,255 +292,260 @@
                         n = e.isUserCardHovered;
                     return t && !n && "opacity: .5;"
                 }), ";"),
-                O = (0, a.Z)(q, {
+                A = (0, a.Z)(N, {
                     target: "e176ivn216"
                 })("margin:5px 10px;max-width:189px;position:relative;z-index:1;color:", (function(e) {
                     return e.isOffline ? "#737372" : "white"
                 }), ";"),
-                A = (0, a.Z)(N, {
+                L = (0, a.Z)(U, {
                     target: "e176ivn214"
                 })({
                     name: "1u7pwvo",
                     styles: "font-size:0.9rem"
                 }),
-                L = (0, a.Z)(A, {
+                M = (0, a.Z)(L, {
                     target: "e176ivn213"
                 })(""),
-                M = (0, a.Z)(A, {
+                H = (0, a.Z)(L, {
                     target: "e176ivn212"
                 })(""),
-                H = (0, a.Z)(A, {
+                T = (0, a.Z)(L, {
                     target: "e176ivn211"
                 })("color:", (function(e) {
                     var t = e.isOffline,
                         n = e.isUserCardHovered;
                     return t && n ? "white" : "#737372"
                 }), ";"),
-                T = (0, a.Z)(A, {
+                P = (0, a.Z)(L, {
                     target: "e176ivn210"
                 })("color:", (function(e) {
                     return e.isUserCardHovered ? "#9C9C9C" : "#737372"
                 }), ";"),
-                P = (0, a.Z)(A, {
+                R = (0, a.Z)(L, {
                     target: "e176ivn29"
                 })({
                     name: "1oqhvc",
                     styles: "color:#9C9C9C"
                 }),
-                R = (0, a.Z)(w.rU, {
+                D = (0, a.Z)(y.rU, {
                     target: "e176ivn28"
                 })({
                     name: "1u1s9ta",
                     styles: "font-weight:900"
                 }),
-                D = (0, a.Z)(N, {
+                G = (0, a.Z)(U, {
                     target: "e176ivn27"
                 })({
                     name: "1b25ts6",
                     styles: "flex-grow:1;border:1px solid #404C58;margin-top:10px;border-radius:4px;overflow:hidden;position:relative;z-index:1;min-height:77px"
                 }),
-                G = (0, a.Z)(N, {
+                B = (0, a.Z)(U, {
                     target: "e176ivn26"
                 })({
                     name: "mczqin",
                     styles: "position:relative;z-index:2;padding:10px;flex-wrap:nowrap"
                 }),
-                B = (0, a.Z)("div", {
+                _ = (0, a.Z)("div", {
                     target: "e176ivn25"
                 })({
                     name: "1gzcm43",
                     styles: "position:absolute;z-index:3;width:100%;height:100%;top:0;left:0;background-color:rgba(0, 0, 0, 0.7);border-radius:4px;color:white;font-weight:700;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transition:opacity 0.2s ease-in-out;font-size:0.6rem"
                 }),
-                _ = (0, a.Z)(w.rU, {
+                $ = (0, a.Z)(y.rU, {
                     target: "e176ivn24"
                 })("display:flex;position:relative;width:80px;height:57px;display:flex;flex-shrink:0;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url(", (function(e) {
                     return e.url
-                }), ");border-radius:4px;&:hover ", B, "{opacity:1;}"),
-                $ = (0, a.Z)(q, {
+                }), ");border-radius:4px;&:hover ", _, "{opacity:1;}"),
+                K = (0, a.Z)(N, {
                     target: "e176ivn23"
                 })({
                     name: "1a2afmv",
                     styles: "margin-left:10px"
                 }),
-                K = (0, a.Z)(w.rU, {
+                Q = (0, a.Z)(y.rU, {
                     target: "e176ivn22"
                 })({
                     name: "1hyjd8g",
                     styles: "display:flex;color:white;font-weight:900;margin-left:10px;&:hover{color:white;}"
                 }),
-                Q = (0, a.Z)(N, {
+                V = (0, a.Z)(U, {
                     target: "e176ivn21"
                 })({
                     name: "1k16hbx",
                     styles: "margin-top:5px;&>div{margin-right:5px;line-height:16px;}"
                 }),
-                V = (0, a.Z)("button", {
+                J = (0, a.Z)("button", {
                     target: "e176ivn20"
                 })({
                     name: "19t9gfi",
                     styles: "display:flex;outline:none!important;border:1px solid var(--bs-primary);border-radius:4px;background-color:rgba(31, 209, 237, 0);color:var(--bs-primary);padding:1px 10px;margin:0 5px;transition:background-color 0.2s ease-in-out;font-size:0.7rem;&:hover:enabled{background-color:rgba(31, 209, 237, 0.3);}&:disabled{border:hsl(0, 0%, 60%) solid 1px;color:hsl(0, 0%, 60%);}"
                 }),
-                J = n(87462),
-                Y = n(45987),
-                X = ["isActive", "categoryName", "count"];
-            var ee = (0, a.Z)("div", {
+                Y = n(87462),
+                X = n(45987),
+                ee = ["isActive", "categoryName", "count"];
+            var te = (0, a.Z)("div", {
                     target: "elcswtc2"
                 })("margin:", (function(e) {
                     var t = e.isActive,
                         n = e.isEmpty;
                     return !t || t && n ? "0 1.3rem 0.75rem 1.3rem" : "0 1.3rem 0 1.3rem"
                 }), ";font-size:1.19rem;font-weight:300;cursor:pointer;"),
-                te = (0, a.Z)("span", {
+                ne = (0, a.Z)("span", {
                     target: "elcswtc1"
                 })({
                     name: "1j389vi",
                     styles: "font-weight:700"
                 }),
-                ne = (0, a.Z)(c.$1, {
+                re = (0, a.Z)(c.$1, {
                     target: "elcswtc0"
                 })("font-size:1.1rem;display:inline-block;transition:transform 0.1s ease;transform:", (function(e) {
                     return e.isActive ? "rotate(0)" : "rotate(-90deg)"
                 }), ";");
-            const re = function(e) {
+            const ie = function(e) {
                 var t = e.isActive,
                     n = e.categoryName,
                     r = e.count,
-                    i = (0, Y.Z)(e, X);
-                return d.createElement(ee, (0, J.Z)({
+                    i = (0, X.Z)(e, ee);
+                return f.createElement(te, (0, Y.Z)({
                     isActive: t,
                     isEmpty: 0 === r
-                }, i), d.createElement(ne, {
+                }, i), f.createElement(re, {
                     isActive: t,
                     icon: o.pt,
                     color: "white",
                     className: "tw-mr-1"
-                }), d.createElement(te, null, n, " "), d.createElement("span", null, "(", r, ")"))
+                }), f.createElement(ne, null, n, " "), f.createElement("span", null, "(", r, ")"))
             };
-            var ie = [{
+            var ae = [{
                     label: "Status",
                     value: "status"
                 }, {
                     label: "Name",
                     value: "name"
                 }],
-                ae = d.memo((function(e) {
+                oe = f.memo((function(e) {
                     var t = e.friendsToggleCallback,
-                        n = d.useState(""),
+                        n = f.useState(""),
                         a = (0, i.Z)(n, 2),
                         l = a[0],
                         u = a[1],
-                        m = d.useState("status"),
-                        v = (0, i.Z)(m, 2),
-                        g = v[0],
-                        p = v[1],
-                        h = d.useState(!1),
-                        b = (0, i.Z)(h, 2),
-                        x = b[0],
-                        w = b[1],
-                        y = d.useState(null),
-                        E = (0, i.Z)(y, 2),
-                        k = E[0],
-                        Z = E[1],
-                        C = d.useState(10),
-                        S = (0, i.Z)(C, 2),
-                        q = S[0],
-                        N = S[1],
-                        z = d.useState(new Set(["inWorld", "active", "offline"])),
-                        U = (0, i.Z)(z, 2),
-                        F = U[0],
-                        W = U[1],
-                        j = d.useState(!1),
-                        O = (0, i.Z)(j, 2),
-                        A = O[0],
-                        L = O[1],
-                        M = d.useRef(null),
-                        H = d.useRef(null),
-                        T = function(e) {
+                        v = f.useState("status"),
+                        p = (0, i.Z)(v, 2),
+                        g = p[0],
+                        h = p[1],
+                        b = f.useState(!1),
+                        x = (0, i.Z)(b, 2),
+                        w = x[0],
+                        y = x[1],
+                        E = f.useState(null),
+                        Z = (0, i.Z)(E, 2),
+                        k = Z[0],
+                        C = Z[1],
+                        S = f.useState(10),
+                        I = (0, i.Z)(S, 2),
+                        N = I[0],
+                        U = I[1],
+                        z = f.useState(new Set(["inWorld", "active", "offline"])),
+                        F = (0, i.Z)(z, 2),
+                        j = F[0],
+                        O = F[1],
+                        W = f.useState(!1),
+                        A = (0, i.Z)(W, 2),
+                        L = A[0],
+                        M = A[1],
+                        H = f.useRef(null),
+                        T = f.useRef(null),
+                        P = function(e) {
                             return function() {
-                                F.has(e) ? function(e) {
-                                    var t = new Set(F);
-                                    t.delete(e), W(t)
+                                j.has(e) ? function(e) {
+                                    var t = new Set(j);
+                                    t.delete(e), O(t)
                                 }(e) : function(e) {
-                                    var t = new Set(F);
-                                    t.add(e), W(t)
+                                    var t = new Set(j);
+                                    t.add(e), O(t)
                                 }(e)
                             }
                         },
-                        P = (0, f.Pt)({
+                        R = (0, m.Pt)({
                             sortBy: g,
                             searchQuery: l,
-                            friendsShown: q,
+                            friendsShown: N,
                             selectedGroup: k,
-                            enabledCategories: F
+                            enabledCategories: j
                         }),
-                        R = P.inWorldFriends,
-                        D = P.activeFriends,
-                        G = P.offlineFriends,
-                        B = P.totalCount,
-                        _ = P.loaded,
-                        $ = P.sortedFriendGroupData,
-                        K = P.activeFriendsCount,
-                        Q = P.inWorldFriendsCount,
-                        V = P.offlineFriendsCount,
-                        J = P.debouncedSearchQuery,
-                        Y = function() {
-                            if (H.current) {
-                                var e = (t = H.current.clientHeight, (n = Math.floor(t / 100)) > 10 ? n : 10);
-                                N(e)
+                        D = R.inWorldFriends,
+                        G = R.activeFriends,
+                        B = R.offlineFriends,
+                        _ = R.totalCount,
+                        $ = R.loaded,
+                        K = R.sortedFriendGroupData,
+                        Q = R.activeFriendsCount,
+                        V = R.inWorldFriendsCount,
+                        J = R.offlineFriendsCount,
+                        Y = R.debouncedSearchQuery,
+                        X = function() {
+                            if (T.current) {
+                                var e = (t = T.current.clientHeight, (n = Math.floor(t / 100)) > 10 ? n : 10);
+                                U(e)
                             }
                             var t, n
                         };
-                    d.useEffect((function() {
-                        q < B && M.current.clientHeight < H.current.clientHeight - 100 && N(Math.min(q + 10, B))
-                    }), []), d.useEffect((function() {
-                        H.current && (H.current.scrollTop = 0)
+                    f.useEffect((function() {
+                        N < _ && H.current.clientHeight < T.current.clientHeight - 100 && U(Math.min(N + 10, _))
+                    }), []), f.useEffect((function() {
+                        T.current && (T.current.scrollTop = 0)
                     }), [g, l, k]);
-                    var X = function(e, t, n) {
+                    var ee = function(e, t, n) {
                         var r = n[e];
                         return r ? "".concat(s()(r.name, {
                             omission: "...",
                             length: 16
                         }), " (").concat(r.friends.length, "/").concat(150, ")") : "All Friends (".concat(t, ")")
-                    }(k, B, $);
-                    return d.useEffect((function() {
-                        return Y(), window.addEventListener("resize", Y),
+                    }(k, _, K);
+                    return f.useEffect((function() {
+                        return X(), window.addEventListener("resize", X),
                             function() {
-                                window.removeEventListener("resize", Y)
+                                window.removeEventListener("resize", X)
                             }
-                    }), []), d.useEffect((function() {
-                        J && W(new Set(["inWorld", "active", "offline"]))
-                    }), [J]), d.createElement(ce, {
+                    }), []), f.useEffect((function() {
+                        Y && O(new Set(["inWorld", "active", "offline"]))
+                    }), [Y]), f.createElement(ue, {
                         id: "friendsSidebar",
                         onClick: function() {
-                            A && L(!1)
+                            L && M(!1)
                         }
-                    }, d.createElement(de, {
-                        showShadow: x
-                    }, d.createElement(fe, {
+                    }, f.createElement(fe, {
+                        showShadow: w
+                    }, f.createElement(me, {
                         onClick: function() {
-                            return L((function(e) {
+                            return M((function(e) {
                                 return !e
                             }))
                         },
                         className: "tw-cursor-pointer tw-justify-center md:tw-justify-between mb-3"
-                    }, d.createElement(ve, {
+                    }, f.createElement(pe, {
                         className: "tw-hidden md:tw-flex",
                         onClick: function(e) {
                             e.stopPropagation(), t(!1)
                         }
-                    }, d.createElement("div", null)), d.createElement("div", {
+                    }, f.createElement(c.$1, {
+                        icon: d.vrcCollapseRight,
+                        color: "white",
+                        "aria-label": "Close Friends Menu",
+                        className: "tw-w-full tw-h-full"
+                    })), f.createElement("div", {
                         "aria-label": "Friends Total"
-                    }, d.createElement("span", null, X), d.createElement(c.$1, {
+                    }, f.createElement("span", null, ee), f.createElement(c.$1, {
                         "aria-label": "Friend Groups Dropdown Button",
                         icon: o.pt,
                         color: "white",
                         className: "ms-2"
-                    })), d.createElement("div", null), A && d.createElement(xe, {
+                    })), f.createElement("div", null), L && f.createElement(we, {
                         "aria-label": "Friend Groups"
                     }, [{
-                        label: "All Friends (".concat(B, ")"),
+                        label: "All Friends (".concat(_, ")"),
                         value: null
-                    }].concat((0, r.Z)(Object.values($).map((function(e) {
+                    }].concat((0, r.Z)(Object.values(K).map((function(e) {
                         return {
                             label: "".concat(s()(e.name, {
                                 omission: "...",
@@ -548,18 +554,18 @@
                             value: e.selectedGroupTag
                         }
                     })))).map((function(e, t) {
-                        return d.createElement(ye, {
+                        return f.createElement(Ee, {
                             "aria-label": "Friend Group Button",
                             role: "radio",
                             key: e.value,
                             onClick: function() {
-                                return t = e.value, void Z(t);
+                                return t = e.value, void C(t);
                                 var t
                             },
                             tabIndex: t,
                             title: e.label
                         }, e.label)
-                    })))), d.createElement(me, {
+                    })))), f.createElement(ve, {
                         type: "text",
                         onChange: function(e) {
                             var t;
@@ -568,17 +574,17 @@
                         value: l,
                         placeholder: "Search Friends",
                         "aria-label": "Search Friends"
-                    }), d.createElement(c.Lt, {
+                    }), f.createElement(c.Lt, {
                         label: "Sort By",
                         className: "mt-3 md:tw-w-1/2",
                         onChange: function(e) {
-                            p(e)
+                            h(e)
                         },
                         value: g,
-                        options: ie
-                    })), d.createElement(be, null, d.createElement(ge, {
-                        ref: H
-                    }, d.createElement(pe, {
+                        options: ae
+                    })), f.createElement(xe, null, f.createElement(ge, {
+                        ref: T
+                    }, f.createElement(he, {
                         className: "pt-1",
                         onScroll: function(e) {
                             var t = e.target,
@@ -586,47 +592,47 @@
                                 r = void 0 === n ? 0 : n,
                                 i = t.clientHeight,
                                 a = void 0 === i ? 0 : i;
-                            r > 0 && !x ? w(!0) : 0 === r && x && w(!1), _ && r + a >= M.current.scrollHeight - 200 && q <= B && N(Math.min(q + 10, B))
+                            r > 0 && !w ? y(!0) : 0 === r && w && y(!1), $ && r + a >= H.current.scrollHeight - 200 && N <= _ && U(Math.min(N + 10, _))
                         }
-                    }, d.createElement(he, {
-                        ref: M,
+                    }, f.createElement(be, {
+                        ref: H,
                         role: "list",
                         "aria-label": "Friends List"
-                    }, d.createElement(re, {
-                        isActive: F.has("inWorld"),
-                        onClick: T("inWorld"),
+                    }, f.createElement(ie, {
+                        isActive: j.has("inWorld"),
+                        onClick: P("inWorld"),
                         categoryName: "In-World",
-                        count: Q
-                    }), F.has("inWorld") && R.map((function(e) {
-                        return d.createElement(I, {
-                            key: e.id,
-                            userId: e.id,
-                            closeSidebar: function() {
-                                t(!1)
-                            }
-                        })
-                    })), d.createElement(re, {
-                        className: F.has("inWorld") && R.length > 0 ? "tw-mt-3" : "",
-                        isActive: F.has("active"),
-                        onClick: T("active"),
-                        categoryName: "Active",
-                        count: K
-                    }), F.has("active") && D.map((function(e) {
-                        return d.createElement(I, {
-                            key: e.id,
-                            userId: e.id,
-                            closeSidebar: function() {
-                                t(!1)
-                            }
-                        })
-                    })), d.createElement(re, {
-                        className: F.has("active") && D.length > 0 ? "tw-mt-3" : "",
-                        isActive: F.has("offline"),
-                        onClick: T("offline"),
-                        categoryName: "Offline",
                         count: V
-                    }), F.has("offline") && G.map((function(e) {
-                        return d.createElement(I, {
+                    }), j.has("inWorld") && D.map((function(e) {
+                        return f.createElement(q, {
+                            key: e.id,
+                            userId: e.id,
+                            closeSidebar: function() {
+                                t(!1)
+                            }
+                        })
+                    })), f.createElement(ie, {
+                        className: j.has("inWorld") && D.length > 0 ? "tw-mt-3" : "",
+                        isActive: j.has("active"),
+                        onClick: P("active"),
+                        categoryName: "Active",
+                        count: Q
+                    }), j.has("active") && G.map((function(e) {
+                        return f.createElement(q, {
+                            key: e.id,
+                            userId: e.id,
+                            closeSidebar: function() {
+                                t(!1)
+                            }
+                        })
+                    })), f.createElement(ie, {
+                        className: j.has("active") && G.length > 0 ? "tw-mt-3" : "",
+                        isActive: j.has("offline"),
+                        onClick: P("offline"),
+                        categoryName: "Offline",
+                        count: J
+                    }), j.has("offline") && B.map((function(e) {
+                        return f.createElement(q, {
                             key: e.id,
                             userId: e.id,
                             closeSidebar: function() {
@@ -635,88 +641,88 @@
                         })
                     })))))))
                 }));
-            ae.displayName = "FriendsComponent";
-            const oe = ae;
-            var le = (0, a.Z)("div", {
+            oe.displayName = "FriendsComponent";
+            const le = oe;
+            var se = (0, a.Z)("div", {
                     target: "e1oqhh5q12"
                 })({
                     name: "1fttcpj",
                     styles: "display:flex;flex-direction:column"
                 }),
-                se = (0, a.Z)("div", {
+                ce = (0, a.Z)("div", {
                     target: "e1oqhh5q11"
                 })({
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                ce = (0, a.Z)(le, {
+                ue = (0, a.Z)(se, {
                     target: "e1oqhh5q10"
                 })({
                     name: "fq1d6",
                     styles: "min-height:100%;flex-grow:1;overflow-x:hidden"
                 }),
-                ue = {
+                de = {
                     name: "125sl10",
                     styles: "box-shadow:0 20px 90px -2px rgba(0, 0, 0, 0.3)"
                 },
-                de = (0, a.Z)(le, {
+                fe = (0, a.Z)(se, {
                     target: "e1oqhh5q9"
                 })("padding:1.3rem;z-index:10;", (function(e) {
-                    return e.showShadow ? ue : (0, u.iv)("", "")
+                    return e.showShadow ? de : (0, u.iv)("", "")
                 }), " transition:box-shadow 0.3s ease-in-out;"),
-                fe = (0, a.Z)(se, {
+                me = (0, a.Z)(ce, {
                     target: "e1oqhh5q8"
                 })({
                     name: "ju98wq",
                     styles: "position:relative;font-weight:300;font-size:1.5rem;line-height:1.5rem;align-items:center"
                 }),
-                me = (0, a.Z)(c.II, {
+                ve = (0, a.Z)(c.II, {
                     target: "e1oqhh5q7"
                 })({
                     name: "82a6rk",
                     styles: "flex:1"
                 }),
-                ve = (0, a.Z)("div", {
+                pe = (0, a.Z)("div", {
                     target: "e1oqhh5q6"
                 })({
-                    name: "13yoiil",
-                    styles: "transition:all 0.1s ease-in;width:35px;height:35px;display:flex;justify-content:center;overflow:hidden;:hover{transform:scale(1.15);cursor:pointer;}:active{transform:scale(0.9);}>div{width:100%;height:100%;background-image:url('https://assets.vrchat.com/www/images/WingLeft.png');background-repeat:no-repeat;background-position:center;background-size:contain;}"
+                    name: "15qggwq",
+                    styles: "transition:all 0.1s ease-in;width:35px;height:35px;display:flex;justify-content:center;overflow:hidden;:hover{transform:scale(1.15);cursor:pointer;}:active{transform:scale(0.9);}"
                 }),
-                ge = (0, a.Z)(le, {
+                ge = (0, a.Z)(se, {
                     target: "e1oqhh5q5"
                 })({
                     name: "wsam0j",
                     styles: "flex-grow:1;position:absolute;width:100%;height:100%"
                 }),
-                pe = (0, a.Z)(le, {
+                he = (0, a.Z)(se, {
                     target: "e1oqhh5q4"
                 })({
                     name: "131cj2s",
                     styles: "overflow-y:auto;overflow-x:hidden;transition:margin-right 250ms ease-in-out"
                 }),
-                he = (0, a.Z)(le, {
+                be = (0, a.Z)(se, {
                     target: "e1oqhh5q3"
                 })({
                     name: "1bnk0mu",
                     styles: "transition:margin-right 250ms ease-in-out"
                 }),
-                be = (0, a.Z)("div", {
-                    target: "e1oqhh5q2"
-                })("position:relative;height:100%;flex-grow:1;&:hover{", pe, "{margin-right:0;}}"),
                 xe = (0, a.Z)("div", {
+                    target: "e1oqhh5q2"
+                })("position:relative;height:100%;flex-grow:1;&:hover{", he, "{margin-right:0;}}"),
+                we = (0, a.Z)("div", {
                     target: "e1oqhh5q1"
                 })({
                     name: "3x907s",
                     styles: "position:absolute;z-index:5;top:100%;left:-2px;width:calc(100% + 4px);background-color:#07343f;display:flex;flex-direction:column;border-radius:3px;border:#086c84 solid 2px;text-align:center;max-width:calc(100% + 4px);font-size:1rem"
                 }),
-                we = {
+                ye = {
                     name: "1gz2b5f",
                     styles: "overflow:hidden;text-overflow:ellipsis"
                 },
-                ye = (0, a.Z)("div", {
+                Ee = (0, a.Z)("div", {
                     target: "e1oqhh5q0"
                 })("transition:opacity 0.2s ease-in-out;padding:5px;background-color:#07343f;cursor:pointer;max-width:100%;white-space:nowrap;", (function(e) {
-                    return e.trimToLength ? we : ""
+                    return e.trimToLength ? ye : ""
                 }), " transition:background-color 0.2s ease-in-out;&:hover{background-color:#086c84;opacity:1;}")
         },
         48983: (e, t, n) => {
@@ -841,17 +847,17 @@
                     var v = "separator" in t ? t.separator : v;
                     n = "length" in t ? u(t.length) : n, m = "omission" in t ? r(t.omission) : m
                 }
-                var g = (e = d(e)).length;
+                var p = (e = d(e)).length;
                 if (a(e)) {
-                    var p = c(e);
-                    g = p.length
+                    var g = c(e);
+                    p = g.length
                 }
-                if (n >= g) return e;
+                if (n >= p) return e;
                 var h = n - s(m);
                 if (h < 1) return m;
-                var b = p ? i(p, 0, h).join("") : e.slice(0, h);
+                var b = g ? i(g, 0, h).join("") : e.slice(0, h);
                 if (void 0 === v) return b + m;
-                if (p && (h += b.length - h), l(v)) {
+                if (g && (h += b.length - h), l(v)) {
                     if (e.slice(h).search(v)) {
                         var x, w = b;
                         for (v.global || (v = RegExp(v.source, d(f.exec(v)) + "g")), v.lastIndex = 0; x = v.exec(w);) var y = x.index;
@@ -866,4 +872,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dadeac33abba11a17e30e55ec06805cebdb0f723c95f8e9d1b69946630c41f23.js.map
+//# sourceMappingURL=77057222dff77b53beb3a19547015d9659b9384d407312544c4ad8da48455659.js.map

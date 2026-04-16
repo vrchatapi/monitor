@@ -406,21 +406,6 @@
                 icon: [n.width, n.height, n.aliases, n.unicode, n.svgPathData]
             }, t.r$ = t.DF, n.prefix, n.iconName, n.width, n.height, n.aliases, n.unicode, n.svgPathData, n.aliases
         },
-        95603: (e, t) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            });
-            var r = "user-group",
-                n = [128101, "user-friends"],
-                i = "f500",
-                o = "M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z";
-            t.definition = {
-                prefix: "fas",
-                iconName: r,
-                icon: [640, 512, n, i, o]
-            }, t.faUserGroup = t.definition, t.prefix = "fas", t.iconName = r, t.width = 640, t.height = 512, t.ligatures = n, t.unicode = i, t.svgPathData = o, t.aliases = n
-        },
         27593: (e, t) => {
             "use strict";
             var r = "user-slash",
@@ -553,7 +538,7 @@
                         C = (0, n.useCallback)((function(e) {
                             e && e !== P.current && (N(), P.current = e), O.current && P.current && O.current.observe(P.current)
                         }), [N]),
-                        M = (0, n.useCallback)((function() {
+                        E = (0, n.useCallback)((function() {
                             if (P.current) {
                                 var e = P.current.getBoundingClientRect(),
                                     t = e.x,
@@ -608,7 +593,7 @@
                     }), [f, r, c, JSON.stringify(s), l, u, C, N]), i({}, y, {
                         observe: C,
                         unobserve: N,
-                        updatePosition: M
+                        updatePosition: E
                     })
                 }
         },
@@ -896,23 +881,23 @@
                     P = void 0 === D || D,
                     N = e.innerRef,
                     C = h(e, u),
-                    M = (0, s.mx)(a()(t, "alert", "alert-".concat(v), {
+                    E = (0, s.mx)(a()(t, "alert", "alert-".concat(v), {
                         "alert-dismissible": O
                     }), c),
-                    E = (0, s.mx)(a()("btn-close", r), c),
+                    M = (0, s.mx)(a()("btn-close", r), c),
                     L = d(d(d({}, l.Z.defaultProps), j), {}, {
                         baseClass: P ? j.baseClass : "",
                         timeout: P ? j.timeout : 0
                     });
                 return n.createElement(l.Z, f({}, C, L, {
                     tag: b,
-                    className: M,
+                    className: E,
                     in: m,
                     role: "alert",
                     innerRef: N
                 }), O ? n.createElement("button", {
                     type: "button",
-                    className: E,
+                    className: M,
                     "aria-label": o,
                     onClick: O
                 }) : null, w)
@@ -1665,4 +1650,4 @@
         }
     }
 ]);
-//# sourceMappingURL=38bfe91f26ee1ce146a2617579ab500f5ff548aca53e73ed48884b9433d6b3ee.js.map
+//# sourceMappingURL=8a9704133b3c39d3b8c27a304f5b1a3777f6612f091374a2f34433b5c904dc42.js.map

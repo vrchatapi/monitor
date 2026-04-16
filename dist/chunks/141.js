@@ -16,7 +16,7 @@
                 u = r(45781),
                 w = r(29848),
                 m = r(83505),
-                v = r(83807),
+                v = r(69116),
                 f = r(22202),
                 p = r(62437),
                 x = r(64358),
@@ -693,37 +693,39 @@
                     m = e.isBlocked,
                     y = e.className,
                     k = e.containerClasses,
-                    N = (0, E.I0)(),
-                    F = (0, h.useRef)(null),
-                    I = (0, h.useState)({
+                    N = e.hideShare,
+                    F = void 0 !== N && N,
+                    I = (0, E.I0)(),
+                    C = (0, h.useRef)(null),
+                    L = (0, h.useState)({
                         left: !1
                     }),
-                    C = (0, a.Z)(I, 2),
-                    L = C[0],
-                    U = C[1],
-                    q = (0, h.useState)(!1),
-                    R = (0, a.Z)(q, 2),
-                    Z = R[0],
-                    S = R[1],
-                    $ = (0, g.vO)(),
-                    z = (0, a.Z)($, 2),
-                    P = z[0],
-                    M = z[1].isLoading,
-                    H = (0, g.SU)(),
-                    j = (0, a.Z)(H, 2),
-                    A = j[0],
-                    T = j[1].isLoading,
-                    O = M || T,
-                    _ = function(e) {
-                        F.current && !F.current.contains(e.target) && S(!1)
+                    U = (0, a.Z)(L, 2),
+                    q = U[0],
+                    R = U[1],
+                    Z = (0, h.useState)(!1),
+                    S = (0, a.Z)(Z, 2),
+                    $ = S[0],
+                    z = S[1],
+                    P = (0, g.vO)(),
+                    M = (0, a.Z)(P, 2),
+                    H = M[0],
+                    j = M[1].isLoading,
+                    A = (0, g.SU)(),
+                    T = (0, a.Z)(A, 2),
+                    O = T[0],
+                    _ = T[1].isLoading,
+                    B = j || _,
+                    D = function(e) {
+                        C.current && !C.current.contains(e.target) && z(!1)
                     };
                 (0, h.useEffect)((function() {
-                    return Z ? document.addEventListener("mousedown", _) : document.removeEventListener("mousedown", _),
+                    return $ ? document.addEventListener("mousedown", D) : document.removeEventListener("mousedown", D),
                         function() {
-                            document.removeEventListener("mousedown", _)
+                            document.removeEventListener("mousedown", D)
                         }
-                }), [Z]);
-                var B = function() {
+                }), [$]);
+                var K = function() {
                         var e = (0, n.Z)(v().mark((function e() {
                             var r;
                             return v().wrap((function(e) {
@@ -731,7 +733,7 @@
                                     case 0:
                                         return r = (0, b.zp)("".concat(window.location.origin, "/home/user/").concat(t)), e.next = 3, r();
                                     case 3:
-                                        N((0, f.d)({
+                                        I((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "Player profile link copied to clipboard.",
@@ -748,7 +750,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    D = function() {
+                    G = function() {
                         var e = (0, n.Z)(v().mark((function e(n) {
                             var a, o, i, c, s, d, u;
                             return v().wrap((function(e) {
@@ -770,9 +772,9 @@
                                             e.next = 16;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, A(i).unwrap();
+                                        return e.prev = 4, e.next = 7, O(i).unwrap();
                                     case 7:
-                                        S(!1), N((0, f.d)({
+                                        z(!1), I((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "".concat(o[a].remove, " successfully."),
@@ -781,7 +783,7 @@
                                         })), e.next = 15;
                                         break;
                                     case 11:
-                                        e.prev = 11, e.t0 = e.catch(4), console.error("Player Moderation Error:", e.t0), N((0, f.d)({
+                                        e.prev = 11, e.t0 = e.catch(4), console.error("Player Moderation Error:", e.t0), I((0, f.d)({
                                             title: "Player Profile",
                                             icon: w.$9,
                                             message: "\n                ".concat(o[a].remove, " failed.\n                ").concat((null === (c = e.t0.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) || (null === (s = e.t0.data) || void 0 === s ? void 0 : s.error), "\n              "),
@@ -791,9 +793,9 @@
                                     case 15:
                                         return e.abrupt("return");
                                     case 16:
-                                        return e.prev = 16, e.next = 19, P(i).unwrap();
+                                        return e.prev = 16, e.next = 19, H(i).unwrap();
                                     case 19:
-                                        S(!1), N((0, f.d)({
+                                        z(!1), I((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "".concat(o[a].apply, " successfully."),
@@ -802,7 +804,7 @@
                                         })), e.next = 27;
                                         break;
                                     case 23:
-                                        e.prev = 23, e.t1 = e.catch(16), console.error("Player Moderation Error:", e.t1), N((0, f.d)({
+                                        e.prev = 23, e.t1 = e.catch(16), console.error("Player Moderation Error:", e.t1), I((0, f.d)({
                                             title: "Player Profile",
                                             icon: w.$9,
                                             message: "\n                ".concat(o[a].apply, " failed.\n                ").concat((null === (d = e.t1.data) || void 0 === d || null === (d = d.error) || void 0 === d ? void 0 : d.message) || (null === (u = e.t1.data) || void 0 === u ? void 0 : u.error), "\n              "),
@@ -824,44 +826,44 @@
                     }();
                 return h.createElement("div", {
                     className: "tw-relative",
-                    ref: F
+                    ref: C
                 }, h.createElement(p.zx, {
                     className: (0, x.cx)(y, "tw-px-3 tw-py-2"),
                     "aria-label": "Show More Options",
                     containerClasses: k,
                     onClick: function() {
                         return function() {
-                            if (!Z && F.current) {
-                                var e = F.current.getBoundingClientRect(),
+                            if (!$ && C.current) {
+                                var e = C.current.getBoundingClientRect(),
                                     t = window.innerWidth - e.right;
-                                U({
+                                R({
                                     left: t < 170
                                 })
                             }
-                            S(!Z)
+                            z(!$)
                         }()
                     }
                 }, h.createElement(p.$1, {
                     icon: u.cN
-                })), Z && h.createElement("div", {
-                    className: (0, x.cx)(L.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-bg-option-bg tw-mt-2 tw-border-solid tw-border-button-border tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-10 sm:tw-max-w-[170px]")
-                }, h.createElement(p.zx, {
-                    onClick: B,
+                })), $ && h.createElement("div", {
+                    className: (0, x.cx)(q.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-bg-option-bg tw-mt-2 tw-border-solid tw-border-button-border tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-10 sm:tw-max-w-[170px]")
+                }, !F && h.createElement(p.zx, {
+                    onClick: K,
                     transparent: !0,
                     className: "hover:tw-text-white hover:tw-bg-button-border tw-py-2 tw-px-3"
                 }, h.createElement(p.$1, {
                     icon: d.Dr
                 }), " Share"), null !== r && h.createElement(p.zx, {
-                    className: "\n            hover:tw-text-white hover:tw-bg-button-border\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center\n            ".concat(O ? "tw-hidden" : "tw-block", "\n        "),
+                    className: "\n            hover:tw-text-white hover:tw-bg-button-border\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center\n            ".concat(B ? "tw-hidden" : "tw-block", "\n        "),
                     transparent: !0,
                     tabIndex: 0,
                     onClick: function() {
-                        return D({
+                        return G({
                             type: "mute"
                         })
                     },
                     onKeyDown: function(e) {
-                        if ("enter" === e.key.toLowerCase()) return D({
+                        if ("enter" === e.key.toLowerCase()) return G({
                             type: "mute"
                         })
                     },
@@ -870,15 +872,15 @@
                     icon: r ? s.UO : c.Ek
                 }), " ", r ? "Unmute" : "Mute"), null !== m && h.createElement(p.zx, {
                     transparent: !0,
-                    className: "\n            hover:tw-text-white hover:tw-bg-button-border\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center\n            ".concat(O ? "tw-hidden" : "tw-block", "\n        "),
+                    className: "\n            hover:tw-text-white hover:tw-bg-button-border\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center\n            ".concat(B ? "tw-hidden" : "tw-block", "\n        "),
                     tabIndex: 0,
                     onClick: function() {
-                        return D({
+                        return G({
                             type: "block"
                         })
                     },
                     onKeyDown: function(e) {
-                        if ("enter" === e.key.toLowerCase()) return D({
+                        if ("enter" === e.key.toLowerCase()) return G({
                             type: "block"
                         })
                     },
@@ -886,7 +888,7 @@
                 }, h.createElement(p.$1, {
                     icon: m ? l.IL : i.wO
                 }), " ", m ? "Unblock" : "Block"), h.createElement("div", {
-                    className: "\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n            tw-text-center tw-items-center\n            tw-h-20\n            ".concat(O ? "tw-block" : "tw-hidden", "\n        ")
+                    className: "\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n            tw-text-center tw-items-center\n            tw-h-20\n            ".concat(B ? "tw-block" : "tw-hidden", "\n        ")
                 }, h.createElement(p.$1, {
                     icon: o.LM,
                     spin: !0,
@@ -896,4 +898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fb26c422b5c696021b7bda326e7ec9d92007b6fbba6702f71632b8e8d9041459.js.map
+//# sourceMappingURL=2ed629c7af412f3252127a57f910ca66b6bc2775be583f2e612012db044c9027.js.map

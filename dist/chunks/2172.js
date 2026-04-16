@@ -23,7 +23,7 @@
                 g = a(51806),
                 x = a.n(g),
                 h = a(83505),
-                E = a(83807),
+                E = a(69116),
                 y = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
             const N = function(e) {
                 var t, a, n = e.avatars,
@@ -541,4 +541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21b715bcc9c56c9f511b86f0d76a0361621300d40f3ea60b66ba179f7d5a8fd4.js.map
+//# sourceMappingURL=ca450a5004060e52f81a927759c1e724d9f15af252b835c0d5ac3e7c4390a9ef.js.map

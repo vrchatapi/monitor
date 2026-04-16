@@ -19,21 +19,6 @@
                 icon: [a.width, a.height, a.aliases, a.unicode, a.svgPathData]
             }, t.r$ = t.DF, a.prefix, a.iconName, a.width, a.height, a.aliases, a.unicode, a.svgPathData, a.aliases
         },
-        95603: (e, t) => {
-            "use strict";
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            });
-            var n = "user-group",
-                a = [128101, "user-friends"],
-                r = "f500",
-                i = "M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z";
-            t.definition = {
-                prefix: "fas",
-                iconName: n,
-                icon: [640, 512, a, r, i]
-            }, t.faUserGroup = t.definition, t.prefix = "fas", t.iconName = n, t.width = 640, t.height = 512, t.ligatures = a, t.unicode = r, t.svgPathData = i, t.aliases = a
-        },
         88567: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, {
@@ -49,18 +34,18 @@
                 u = n(22202),
                 d = n(88081),
                 m = n(80988),
-                f = n(37024);
+                v = n(37024);
             s().extend(l());
-            const v = function(e) {
+            const f = function(e) {
                 var t, n = e.className,
                     i = (0, u.XC)().data,
                     o = a.useRef(s()()),
                     l = a.useRef(s()().add(7, "days")),
-                    v = o.current,
+                    f = o.current,
                     g = l.current,
-                    p = g.month() !== v.month(),
+                    p = g.month() !== f.month(),
                     h = (0, d.bT)({
-                        date: v.startOf("month"),
+                        date: f.startOf("month"),
                         userId: null == i ? void 0 : i.id
                     }, {
                         skip: !(null != i && i.id)
@@ -73,56 +58,56 @@
                     b = h.isFetching,
                     y = h.isError,
                     N = (0, d.bT)({
-                        date: v.startOf("month").add(1, "month"),
+                        date: f.startOf("month").add(1, "month"),
                         userId: null == i ? void 0 : i.id
                     }, {
                         skip: !(null != i && i.id && p)
                     }),
                     x = N.data,
-                    P = void 0 === x ? {
+                    Z = void 0 === x ? {
                         events: [],
                         groups: []
                     } : x,
-                    Z = N.isFetching,
-                    C = N.isError,
-                    k = (0, d.lb)({
+                    P = N.isFetching,
+                    k = N.isError,
+                    O = (0, d.lb)({
                         n: 1
                     }),
-                    O = k.data,
-                    S = void 0 === O ? {
+                    C = O.data,
+                    S = void 0 === C ? {
                         results: []
-                    } : O,
-                    B = k.isLoading,
-                    L = k.isError,
-                    M = a.useMemo((function() {
+                    } : C,
+                    B = O.isLoading,
+                    L = O.isError,
+                    A = a.useMemo((function() {
                         var e, t, n = new Map;
                         (null == E || null === (e = E.events) || void 0 === e || e.forEach((function(e) {
                             return n.set(e.id, e)
-                        })), p) && (null == P || null === (t = P.events) || void 0 === t || t.forEach((function(e) {
+                        })), p) && (null == Z || null === (t = Z.events) || void 0 === t || t.forEach((function(e) {
                             return n.set(e.id, e)
                         })));
                         return Array.from(n.values())
-                    }), [E, P, p]),
-                    A = B || b || p && Z,
-                    I = L || y || p && C,
+                    }), [E, Z, p]),
+                    M = B || b || p && P,
+                    I = L || y || p && k,
                     j = a.useMemo((function() {
-                        return M.filter((function(e) {
+                        return A.filter((function(e) {
                             var t = s()(e.startsAt),
                                 n = s()(e.endsAt);
-                            return t.isBetween(v, g, null, "[]") || t.isBefore(v) && n.isAfter(v)
+                            return t.isBetween(f, g, null, "[]") || t.isBefore(f) && n.isAfter(f)
                         })).sort((function(e, t) {
                             return s()(e.startsAt).valueOf() - s()(t.startsAt).valueOf()
                         }))
-                    }), [M, v, g]),
-                    z = a.useMemo((function() {
+                    }), [A, f, g]),
+                    T = a.useMemo((function() {
                         return j.filter((function(e) {
                             var t = s()(e.startsAt),
                                 n = s()(e.endsAt);
-                            return t.isSame(v, "day") || t.isBefore(v) && n.isAfter(v)
+                            return t.isSame(f, "day") || t.isBefore(f) && n.isAfter(f)
                         })).length
-                    }), [j, v]),
-                    T = j.length;
-                return A ? a.createElement(m.JX, {
+                    }), [j, f]),
+                    X = j.length;
+                return M ? a.createElement(m.JX, {
                     className: n
                 }, a.createElement("div", {
                     className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
@@ -163,15 +148,15 @@
                     to: "/home/calendar?view=day"
                 }, a.createElement("span", {
                     className: "tw-text-med"
-                }, z, " ", 1 === z ? "Event Today" : "Events Today")), a.createElement(r.Qj, {
+                }, T, " ", 1 === T ? "Event Today" : "Events Today")), a.createElement(r.Qj, {
                     fullWidth: !0,
                     noMargin: !0,
                     to: "/home/calendar?view=week"
                 }, a.createElement("span", {
                     className: "tw-text-med"
-                }, T, " ", 1 === T ? "Event This Week" : "Events This Week"))), (null == S || null === (t = S.results) || void 0 === t ? void 0 : t.length) > 0 ? a.createElement("div", {
+                }, X, " ", 1 === X ? "Event This Week" : "Events This Week"))), (null == S || null === (t = S.results) || void 0 === t ? void 0 : t.length) > 0 ? a.createElement("div", {
                     className: "tw-mb-4"
-                }, a.createElement(f.ZP, {
+                }, a.createElement(v.ZP, {
                     key: S.results[0].id,
                     event: S.results[0],
                     isExpandable: !0
@@ -233,7 +218,7 @@
                 return n
             }
 
-            function P(e) {
+            function Z(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? x(Object(n), !0).forEach((function(t) {
@@ -244,7 +229,7 @@
                 }
                 return e
             }
-            const Z = function() {
+            const P = function() {
                 var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).instancePollingInterval,
                     t = (0, E.Z)(),
                     n = t.locations,
@@ -259,34 +244,34 @@
                     u = c.locations,
                     d = void 0 === u ? {} : u,
                     m = c.sortedLocations,
-                    f = void 0 === m ? [] : m,
-                    v = c.isLoading,
+                    v = void 0 === m ? [] : m,
+                    f = c.isLoading,
                     p = c.isError,
                     b = a.useMemo((function() {
                         var e = {},
                             t = [];
-                        return [].concat((0, w.Z)(s), (0, w.Z)(f)).forEach((function(n, a, i) {
+                        return [].concat((0, w.Z)(s), (0, w.Z)(v)).forEach((function(n, a, i) {
                             var s = n.location;
                             if (!Object.prototype.hasOwnProperty.call(e, s)) {
                                 var o = d[s] || {},
                                     l = (o.users, (0, h.Z)(o, N)),
-                                    c = P(P({}, r[s] || {}), l);
+                                    c = Z(Z({}, r[s] || {}), l);
                                 e[s] = c, t.push(c)
                             }
                         })), [e, t]
-                    }), [r, d, s, f, o, v]),
+                    }), [r, d, s, v, o, f]),
                     x = (0, g.Z)(b, 2);
                 return {
                     locations: x[0],
                     sortedLocations: x[1],
-                    isLoading: o || v,
+                    isLoading: o || f,
                     isError: l || p
                 }
             };
-            var C = n(64509);
-            const k = function(e) {
+            var k = n(64509);
+            const O = function(e) {
                 var t, n = e.className,
-                    r = Z(),
+                    r = P(),
                     i = r.sortedLocations,
                     s = r.isLoading,
                     o = r.isError,
@@ -294,37 +279,37 @@
                     c = (0, g.Z)(l, 2),
                     u = c[0],
                     d = c[1],
-                    f = null !== (t = null == i ? void 0 : i.slice(0, u)) && void 0 !== t ? t : [],
-                    v = a.useMemo((function() {
-                        return f.map((function(e) {
-                            return a.createElement(C.Z, {
+                    v = null !== (t = null == i ? void 0 : i.slice(0, u)) && void 0 !== t ? t : [],
+                    f = a.useMemo((function() {
+                        return v.map((function(e) {
+                            return a.createElement(k.Z, {
                                 key: "location-".concat(e.location),
                                 className: "mb-4",
                                 location: e
                             })
                         }))
-                    }), [f]);
+                    }), [v]);
                 return s ? a.createElement(m.UU, {
                     width: "100%",
                     height: "200px"
-                }) : o || 0 === f.length ? null : a.createElement(m.JX, {
+                }) : o || 0 === v.length ? null : a.createElement(m.JX, {
                     className: n
                 }, a.createElement("h4", {
                     className: "text-center"
-                }, "Friend & Group Locations"), f.length > 0 && a.createElement("div", {
+                }, "Friend & Group Locations"), v.length > 0 && a.createElement("div", {
                     className: "locations"
-                }, v), u < i.length && a.createElement(m.zx, {
+                }, f), u < i.length && a.createElement(m.zx, {
                     className: "w-100",
                     onClick: function() {
                         d(u + 5)
                     }
                 }, "Show More Locations"))
             };
-            var O = n(4965),
+            var C = n(4965),
                 S = n(17219),
                 B = n(1208),
                 L = n(89182);
-            const M = function(e) {
+            const A = function(e) {
                 var t = e.className,
                     n = (0, S.y)().data,
                     r = a.useState(3),
@@ -353,14 +338,14 @@
                     className: t
                 }, a.createElement("h2", {
                     className: "text-center"
-                }, "Have you seen these Completely Random Worlds?"), a.createElement(A, null, u.slice(0, s).map((function(e) {
+                }, "Have you seen these Completely Random Worlds?"), a.createElement(M, null, u.slice(0, s).map((function(e) {
                     return a.createElement(L.Z, {
                         key: e.id,
                         world: e
                     })
                 }))))
             };
-            var A = (0, O.Z)("div", {
+            var M = (0, C.Z)("div", {
                     target: "ecqaaaz0"
                 })({
                     name: "wi7zmd",
@@ -368,8 +353,8 @@
                 }),
                 I = n(85533),
                 j = n(87462),
-                z = n(56811),
-                T = n(61509).S.injectEndpoints({
+                T = n(56811),
+                X = n(61509).S.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getBeta: e.query({
@@ -419,10 +404,10 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["BetaApplication", "BetaRegistration"]
                 }),
-                X = T.useGetBetaQuery,
-                D = T.useGetBetaRegistrationQuery,
-                R = T.useCreateBetaRegistrationMutation;
-            const U = function(e) {
+                D = X.useGetBetaQuery,
+                z = X.useGetBetaRegistrationQuery,
+                R = X.useCreateBetaRegistrationMutation;
+            const F = function(e) {
                 var t = e.isOpen,
                     n = void 0 !== t && t,
                     r = e.cancelCallback,
@@ -433,8 +418,8 @@
                     c = void 0 !== l && l,
                     u = a.useState([]),
                     d = (0, g.Z)(u, 2),
-                    f = d[0],
-                    v = d[1],
+                    v = d[0],
+                    f = d[1],
                     p = a.useState(!1),
                     h = (0, g.Z)(p, 2),
                     E = h[0],
@@ -442,21 +427,21 @@
                     y = a.useState(""),
                     N = (0, g.Z)(y, 2),
                     x = N[0],
-                    P = N[1],
-                    Z = R(),
-                    C = (0, g.Z)(Z, 2),
-                    k = C[0],
-                    O = C[1],
-                    S = O.isLoading,
-                    B = (O.isSuccess, O.isError, O.error, function(e) {
+                    Z = N[1],
+                    P = R(),
+                    k = (0, g.Z)(P, 2),
+                    O = k[0],
+                    C = k[1],
+                    S = C.isLoading,
+                    B = (C.isSuccess, C.isError, C.error, function(e) {
                         return {
-                            checked: f.includes(e),
+                            checked: v.includes(e),
                             id: "checkbox-".concat(e),
                             className: "tw-my-4 md:tw-my-2.5",
                             onChange: function() {
-                                f.includes(e) ? v(f.filter((function(t) {
+                                v.includes(e) ? f(v.filter((function(t) {
                                     return t !== e
-                                }))) : v([].concat((0, w.Z)(f), [e]))
+                                }))) : f([].concat((0, w.Z)(v), [e]))
                             }
                         }
                     }),
@@ -493,7 +478,7 @@
                     }, "To participate in the iOS Beta channel on discord, please enter your discord name (optional)"), a.createElement("div", {
                         className: "tw-flex tw-items-center"
                     }, a.createElement(m.$1, {
-                        icon: z.IB,
+                        icon: T.IB,
                         size: "2x"
                     }), a.createElement(m.II, {
                         className: "tw-flex-grow tw-ml-4",
@@ -501,29 +486,29 @@
                         maxLength: 32,
                         value: x,
                         onChange: function(e) {
-                            return P(e.target.value)
+                            return Z(e.target.value)
                         }
                     })), a.createElement(m.zx, {
                         className: "tw-mt-6",
                         onClick: function() {
-                            k({
+                            O({
                                 betaName: Y,
                                 metadata: {
-                                    devices: f,
+                                    devices: v,
                                     isCreator: E,
                                     discordName: x
                                 }
                             })
                         },
                         loading: S,
-                        disabled: 0 === f.length || S
+                        disabled: 0 === v.length || S
                     }, S ? "Submitting" : "Submit"), a.createElement(m.zx, {
                         neutral: !0,
                         className: "tw-mt-6",
                         disabled: S,
                         onClick: i
                     }, "Cancel")),
-                    M = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
+                    A = a.createElement("div", null, a.createElement("h6", null, "Your application has been submitted successfully, thank you!"), a.createElement("p", null, "We will review applications and email you if you're selected with next steps."), a.createElement(m.zx, {
                         onClick: o
                     }, "Done"));
                 return a.createElement(m.u_, {
@@ -533,43 +518,43 @@
                     onClose: c ? o : i,
                     onCloseFinished: i,
                     doNotCapitalize: !0
-                }, c ? M : L)
+                }, c ? A : L)
             };
-            var _ = n(87709),
-                F = ["title", "children", "dismissable", "onDismiss"];
-            const W = function(e) {
+            var U = n(87709),
+                W = ["title", "children", "dismissable", "onDismiss"];
+            const _ = function(e) {
                 var t = e.title,
                     n = e.children,
                     r = e.dismissable,
                     i = void 0 === r || r,
                     s = e.onDismiss,
                     o = void 0 === s ? function() {} : s,
-                    l = (0, h.Z)(e, F);
+                    l = (0, h.Z)(e, W);
                 return a.createElement(q, l, a.createElement(V, null, a.createElement(J, null, t), n), i && a.createElement(G, {
                     onClick: o,
-                    icon: _.faXmark,
+                    icon: U.faXmark,
                     size: "2x"
                 }))
             };
-            var q = (0, O.Z)("div", {
+            var q = (0, C.Z)("div", {
                     target: "e1fo5i6a3"
                 })({
                     name: "i8aeo0",
                     styles: "display:flex;align-items:center;background-color:#20d1ed;color:#1a1a1a;padding:0.5rem 0;margin-bottom:1rem;border-radius:5px"
                 }),
-                V = (0, O.Z)("div", {
+                V = (0, C.Z)("div", {
                     target: "e1fo5i6a2"
                 })({
                     name: "tu59xn",
                     styles: "display:flex;flex-grow:1;flex-direction:column;justify-content:center;align-items:center"
                 }),
-                G = (0, O.Z)(m.$1, {
+                G = (0, C.Z)(m.$1, {
                     target: "e1fo5i6a1"
                 })({
                     name: "nfd03i",
                     styles: "margin-right:1rem"
                 }),
-                J = (0, O.Z)("h4", {
+                J = (0, C.Z)("h4", {
                     target: "e1fo5i6a0"
                 })({
                     name: "h2wgvc",
@@ -577,7 +562,7 @@
                 }),
                 Q = n(15832);
             var Y = "ios-closed-beta",
-                H = (0, O.Z)("a", {
+                H = (0, C.Z)("a", {
                     target: "ercad9d0"
                 })({
                     name: "1nh6q2e",
@@ -588,48 +573,48 @@
                     t = (0, g.Z)(e, 2),
                     n = t[0],
                     r = t[1],
-                    i = D({
+                    i = z({
                         betaName: Y
                     }),
                     s = i.data,
                     o = i.isFetching,
                     l = i.isError,
                     c = i.error,
-                    u = X({
+                    u = D({
                         betaName: Y
                     }),
                     d = u.data,
                     m = u.isFetching,
-                    f = u.isError,
-                    v = a.useState(n.includes(Y)),
-                    p = (0, g.Z)(v, 2),
+                    v = u.isError,
+                    f = a.useState(n.includes(Y)),
+                    p = (0, g.Z)(f, 2),
                     h = p[0],
                     E = p[1],
                     b = a.useState(!1),
                     y = (0, g.Z)(b, 2),
                     N = y[0],
                     x = y[1],
-                    P = a.useState(!1),
-                    Z = (0, g.Z)(P, 2),
-                    C = Z[0],
-                    k = Z[1];
+                    Z = a.useState(!1),
+                    P = (0, g.Z)(Z, 2),
+                    k = P[0],
+                    O = P[1];
                 a.useEffect((function() {
-                    C || h || l && 404 === c.status && k(!0)
+                    k || h || l && 404 === c.status && O(!0)
                 }), [s, l, c]);
-                var O = function() {
+                var C = function() {
                         r([].concat((0, w.Z)(n), [Y])), E(!0)
                     },
                     S = s && null != s.created_at;
-                return h || m || o || f || !d || !d.active || !C && S ? null : a.createElement(a.Fragment, null, a.createElement(U, {
+                return h || m || o || v || !d || !d.active || !k && S ? null : a.createElement(a.Fragment, null, a.createElement(F, {
                     isOpen: N,
                     cancelCallback: function() {
                         return x(!1)
                     },
-                    doneCallback: O,
+                    doneCallback: C,
                     completed: S
-                }), a.createElement(W, {
+                }), a.createElement(_, {
                     title: "LIMITED AVAILABILITY",
-                    onDismiss: O
+                    onDismiss: C
                 }, a.createElement("span", {
                     className: "tw-text-center tw-px-2"
                 }, "VRChat on iOS is Coming Soon! ", a.createElement(H, {
@@ -650,11 +635,11 @@
                     style: {
                         marginBottom: "1.5rem"
                     }
-                }, "Greetings, ", null !== (e = null == t ? void 0 : t.displayName) && void 0 !== e ? e : "whoever you are", "!"), a.createElement(v, {
+                }, "Greetings, ", null !== (e = null == t ? void 0 : t.displayName) && void 0 !== e ? e : "whoever you are", "!"), a.createElement(f, {
                     className: "mt-3"
-                }), a.createElement(k, {
+                }), a.createElement(O, {
                     className: "mt-5"
-                }), a.createElement(M, {
+                }), a.createElement(A, {
                     className: "mt-5"
                 })))
             }
@@ -712,4 +697,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9defaee6f9b03a778db8600fad220fc25a94a2e93d9122374766fef58dbb4d83.js.map
+//# sourceMappingURL=22cb03f020af129e58f0e189c4cbca4b777b08e9bf4335bb55ac4b695e1d4740.js.map

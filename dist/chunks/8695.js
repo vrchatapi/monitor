@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [3304], {
+    [8695], {
         89468: (e, t) => {
             var r = "caret-up",
                 n = [],
@@ -42,20 +42,6 @@
                 icon: [576, 512, n, a, l]
             }, t.Dr = t.DF
         },
-        95603: (e, t) => {
-            Object.defineProperty(t, "__esModule", {
-                value: !0
-            });
-            var r = "user-group",
-                n = [128101, "user-friends"],
-                a = "f500",
-                l = "M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z";
-            t.definition = {
-                prefix: "fas",
-                iconName: r,
-                icon: [640, 512, n, a, l]
-            }, t.faUserGroup = t.definition, t.prefix = "fas", t.iconName = r, t.width = 640, t.height = 512, t.ligatures = n, t.unicode = a, t.svgPathData = l, t.aliases = n
-        },
         27593: (e, t) => {
             var r = "user-slash",
                 n = [],
@@ -77,110 +63,119 @@
         },
         44218: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => Ot
+                default: () => Dt
             });
             var n = r(87462),
                 a = r(4942),
                 l = r(54546),
                 o = r(67294),
-                s = r(21464),
-                c = r(80988),
+                c = r(21464),
+                s = r(80988),
                 i = r(22202),
                 w = r(17219),
                 u = r(93261),
                 d = r(62437),
                 m = r(89250),
-                f = r(64358),
-                p = r(78666),
-                g = r(50141),
-                b = r(15861),
-                v = r(76792),
-                x = r(9970),
-                h = r(68055),
-                E = r(27593),
-                y = r(89148),
+                f = r(79655),
+                p = r(64358),
+                g = r(78666),
+                b = r(50141),
+                v = r(15861),
+                x = r(76792),
+                h = r(9970),
+                E = r(68055),
+                y = r(7747),
                 N = r(11071),
-                k = r(63153),
-                C = r(6811),
-                I = r(64687),
-                S = r.n(I),
-                L = r(64258),
-                Z = r(12227),
-                F = r(90924),
-                U = r(79548),
-                j = r(43862),
-                T = r(83505),
-                R = r(45697),
-                O = r.n(R),
-                M = function(e) {
+                k = r(87695),
+                C = r(27593),
+                I = r(89148),
+                S = r(27879),
+                Z = r(63153),
+                L = r(6811),
+                F = r(64687),
+                T = r.n(F),
+                j = r(64258),
+                U = r(12227),
+                R = r(90924),
+                O = r(79548),
+                M = r(43862),
+                A = r(83505),
+                D = r(45697),
+                P = r.n(D),
+                z = function(e) {
                     var t = e.children,
                         r = e.title,
                         n = e.bannerSrc,
-                        a = e.className,
-                        l = void 0 === a ? "" : a,
-                        s = e.bannerHeight,
-                        c = e.noPadding,
-                        i = void 0 !== c && c;
+                        a = e.hasBanner,
+                        l = void 0 !== a && a,
+                        c = e.className,
+                        s = void 0 === c ? "" : c,
+                        i = e.bannerHeight,
+                        w = e.noPadding,
+                        u = void 0 !== w && w;
                     return o.createElement("div", {
-                        className: "tw-relative tw-bg-black/[93] tw-rounded-3xl tw-min-w-[310px] ".concat(l)
+                        className: "tw-relative tw-bg-black/[93] tw-rounded-3xl tw-min-w-[310px] ".concat(s)
+                    }, (n || l) && o.createElement("div", {
+                        className: "tw-rounded-t-3xl tw-w-full tw-aspect-[17/6] tw-bg-teal"
                     }, n && o.createElement("img", {
                         src: n,
-                        height: s,
+                        height: i,
                         alt: r ? "".concat(r, " Banner") : "Panel banner image",
-                        className: (0, T.cx)("tw-w-full tw-object-cover tw-rounded-t-3xl tw-aspect-[17/6]")
-                    }), o.createElement("div", {
-                        className: "".concat(i ? "tw-p-0" : "tw-p-4 md:tw-p-8")
+                        className: (0, A.cx)("tw-w-full tw-object-cover tw-rounded-t-3xl tw-aspect-[17/6]")
+                    })), o.createElement("div", {
+                        className: "".concat(u ? "tw-p-0" : "tw-p-4 md:tw-p-8")
                     }, r && o.createElement("h2", {
                         className: "heading tw-text-light-grey tw-text-sm tw-font-bold tw-uppercase"
                     }, r), t))
                 };
-            M.propTypes = {
-                title: O().string,
-                bannerSrc: O().string,
-                bannerHeight: O().string,
-                className: O().string,
-                children: O().node.isRequired
+            z.propTypes = {
+                title: P().string,
+                hasBanner: P().bool,
+                bannerSrc: P().string,
+                bannerHeight: P().string,
+                className: P().string,
+                children: P().node.isRequired
             };
-            const A = M;
-            var P = r(82728),
-                z = {
-                    "facebook.com": P.vrcFacebook,
-                    "twitch.tv": P.vrcTwitch,
-                    "twitter.com": P.vrcTwitter,
-                    "instagram.com": P.vrcInstagram,
-                    "youtube.com": P.vrcYoutube,
-                    "patreon.com": P.vrcPatreon,
-                    "booth.pm": P.vrcBooth,
-                    "discord.gg": P.vrcDiscord,
-                    "discord.com": P.vrcDiscord,
-                    "artstation.com": P.vrcArtstation,
-                    "bandcamp.com": P.vrcBandcamp,
-                    "furaffinity.net": P.vrcFuraffinity,
-                    "github.com": P.vrcGithub,
-                    "gitlab.com": P.vrcGitlab,
-                    "gumroad.com": P.vrcGumroad,
-                    "ko-fi.com": P.vrcKofi,
-                    "linktr.ee": P.vrcLinktree,
-                    "pixiv.net": P.vrcPixiv,
-                    "sketchfab.com": P.vrcSketchfab,
-                    "tiktok.com": P.vrcTikTok,
-                    "soundcloud.com": P.vrcSoundCloud,
-                    "store.vket.com": P.vrcVket
+            const $ = z;
+            var V = r(82728),
+                G = {
+                    "facebook.com": V.vrcFacebook,
+                    "twitch.tv": V.vrcTwitch,
+                    "twitter.com": V.vrcTwitter,
+                    "instagram.com": V.vrcInstagram,
+                    "youtube.com": V.vrcYoutube,
+                    "patreon.com": V.vrcPatreon,
+                    "booth.pm": V.vrcBooth,
+                    "discord.gg": V.vrcDiscord,
+                    "discord.com": V.vrcDiscord,
+                    "artstation.com": V.vrcArtstation,
+                    "bandcamp.com": V.vrcBandcamp,
+                    "furaffinity.net": V.vrcFuraffinity,
+                    "github.com": V.vrcGithub,
+                    "gitlab.com": V.vrcGitlab,
+                    "gumroad.com": V.vrcGumroad,
+                    "ko-fi.com": V.vrcKofi,
+                    "linktr.ee": V.vrcLinktree,
+                    "pixiv.net": V.vrcPixiv,
+                    "sketchfab.com": V.vrcSketchfab,
+                    "tiktok.com": V.vrcTikTok,
+                    "soundcloud.com": V.vrcSoundCloud,
+                    "store.vket.com": V.vrcVket
                 },
-                D = function(e) {
+                q = function(e) {
                     try {
-                        for (var t = new URL(e).hostname, r = 0, n = Object.entries(z); r < n.length; r++) {
+                        for (var t = new URL(e).hostname, r = 0, n = Object.entries(G); r < n.length; r++) {
                             var a = (0, l.Z)(n[r], 2),
                                 o = a[0],
-                                s = a[1];
-                            if (t === o || t.endsWith(".".concat(o))) return s
+                                c = a[1];
+                            if (t === o || t.endsWith(".".concat(o))) return c
                         }
                     } catch (t) {
                         console.error("Invalid URL: ".concat(e))
                     }
-                    return P.vrcGenericLink
+                    return V.vrcGenericLink
                 },
-                $ = function(e) {
+                B = function(e) {
                     var t = e.urlPath,
                         r = e.themeColor,
                         n = void 0 === r ? "#2BAAC1" : r;
@@ -189,133 +184,138 @@
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "tw-flex tw-items-center tw-cursor-pointer tw-justify-center tw-w-12 tw-h-12 tw-rounded-full tw-flex-shrink-0 tw-bg-dark-grey hover:tw-bg-darker-grey"
-                    }, o.createElement(c.$1, {
-                        icon: D(t),
+                    }, o.createElement(s.$1, {
+                        icon: q(t),
                         color: n,
                         width: 20
                     }))
                 };
-            $.propTypes = {
-                urlPath: O().string.isRequired,
-                themeColor: O().string
+            B.propTypes = {
+                urlPath: P().string.isRequired,
+                themeColor: P().string
             };
-            const G = $;
-            var V = r(68995),
-                q = r(20847),
-                B = r(32981),
-                W = r(45781),
-                H = r(29848),
-                _ = function(e) {
+            const W = B;
+            var H = r(68995),
+                _ = r(69116),
+                K = r(20847),
+                Y = r(32981),
+                Q = r(45781),
+                X = r(29848),
+                J = function(e) {
                     var t = e.userData,
                         r = e.userLanguages,
                         n = e.userDetailsInfo,
                         a = e.onEdit,
-                        s = void 0 === a ? function() {} : a,
+                        c = void 0 === a ? function() {} : a,
                         i = e.onFavorite,
                         w = void 0 === i ? function() {} : i,
                         u = e.representingGroup,
                         f = e.isBlocked,
-                        p = void 0 !== f && f,
-                        g = e.isMuted,
-                        I = void 0 !== g && g,
-                        R = e.isLoading,
-                        O = void 0 !== R && R,
-                        M = e.onViewAllFriendsClick,
-                        P = void 0 === M ? function() {} : M,
-                        z = e.onViewAllGroupsClick,
-                        D = void 0 === z ? function() {} : z,
-                        $ = (0, B.I0)(),
-                        _ = (0, m.s0)(),
-                        K = n || {},
-                        Y = K.isSelf,
-                        Q = K.isFriend,
-                        X = t || {},
-                        J = X.tags,
-                        ee = X.tagsSet,
-                        te = X.displayName,
-                        re = X.status,
-                        ne = X.note,
-                        ae = X.pronouns,
-                        le = X.ageVerified,
-                        oe = X.userIcon,
-                        se = X.currentAvatarThumbnailImageUrl,
-                        ce = X.profilePicOverride,
-                        ie = X.currentAvatarImageUrl,
-                        we = X.bioLinks,
-                        ue = X.bio,
-                        de = X.id,
-                        me = X.state,
-                        fe = X.hasSharedConnectionsOptOut,
-                        pe = X.statusDescription,
-                        ge = u || {},
-                        be = ge.iconUrl,
-                        ve = ge.name,
-                        xe = ge.groupId,
-                        he = (0, o.useState)(!1),
-                        Ee = (0, l.Z)(he, 2),
-                        ye = Ee[0],
-                        Ne = Ee[1],
-                        ke = (0, o.useState)(ne || ""),
-                        Ce = (0, l.Z)(ke, 2),
-                        Ie = Ce[0],
-                        Se = Ce[1],
-                        Le = (0, d.kh)(),
-                        Ze = (0, l.Z)(Le, 1)[0],
-                        Fe = (0, o.useState)(!1),
-                        Ue = (0, l.Z)(Fe, 2),
-                        je = Ue[0],
-                        Te = Ue[1],
-                        Re = (0, o.useState)(!1),
-                        Oe = (0, l.Z)(Re, 2),
-                        Me = Oe[0],
-                        Ae = Oe[1],
-                        Pe = (0, Z.HZ)({
-                            tags: J,
-                            tagsSet: ee
+                        g = void 0 !== f && f,
+                        b = e.isMuted,
+                        F = void 0 !== b && b,
+                        D = e.isLoading,
+                        P = void 0 !== D && D,
+                        z = e.onViewAllFriendsClick,
+                        V = void 0 === z ? function() {} : z,
+                        G = e.onViewAllGroupsClick,
+                        q = void 0 === G ? function() {} : G,
+                        B = (0, Y.I0)(),
+                        J = (0, m.s0)(),
+                        ee = n || {},
+                        te = ee.isSelf,
+                        re = ee.isFriend,
+                        ne = t || {},
+                        ae = ne.tags,
+                        le = ne.tagsSet,
+                        oe = ne.displayName,
+                        ce = ne.status,
+                        se = ne.note,
+                        ie = ne.pronouns,
+                        we = ne.ageVerified,
+                        ue = ne.ageVerificationStatus,
+                        de = ne.userIcon,
+                        me = ne.currentAvatarThumbnailImageUrl,
+                        fe = ne.profilePicOverride,
+                        pe = ne.currentAvatarImageUrl,
+                        ge = ne.bioLinks,
+                        be = ne.bio,
+                        ve = ne.id,
+                        xe = ne.state,
+                        he = ne.hasSharedConnectionsOptOut,
+                        Ee = ne.statusDescription,
+                        ye = u || {},
+                        Ne = ye.iconUrl,
+                        ke = ye.name,
+                        Ce = ye.groupId,
+                        Ie = (0, o.useState)(!1),
+                        Se = (0, l.Z)(Ie, 2),
+                        Ze = Se[0],
+                        Le = Se[1],
+                        Fe = (0, o.useState)(se || ""),
+                        Te = (0, l.Z)(Fe, 2),
+                        je = Te[0],
+                        Ue = Te[1],
+                        Re = (0, d.kh)(),
+                        Oe = (0, l.Z)(Re, 1)[0],
+                        Me = (0, o.useState)(!1),
+                        Ae = (0, l.Z)(Me, 2),
+                        De = Ae[0],
+                        Pe = Ae[1],
+                        ze = (0, o.useState)(!1),
+                        $e = (0, l.Z)(ze, 2),
+                        Ve = $e[0],
+                        Ge = $e[1],
+                        qe = (0, U.HZ)({
+                            tags: ae,
+                            tagsSet: le
                         }),
-                        ze = (0, Z.FR)({
-                            tags: J,
+                        Be = (0, U.FR)({
+                            tags: ae,
                             humanize: !0,
-                            tagsSet: ee
+                            tagsSet: le
                         }),
-                        De = (0, Z.FR)({
-                            tags: J,
+                        We = (0, U.FR)({
+                            tags: ae,
                             humanize: !1,
-                            tagsSet: ee
+                            tagsSet: le
                         }),
-                        $e = ((0, Z.Tq)(re, !0), (0, o.useRef)(null));
+                        He = ((0, U.Tq)(ce, !0), (0, _.j$)("about-me-settings-tooltip")),
+                        _e = He.shouldShow,
+                        Ke = He.markAsSeen,
+                        Ye = (0, o.useRef)(null);
                     (0, o.useLayoutEffect)((function() {
-                        $e.current && Ae($e.current.scrollHeight > $e.current.clientHeight)
-                    }), [ue]);
-                    var Ge = function() {
-                            var e = (0, b.Z)(S().mark((function e() {
+                        Ye.current && Ge(Ye.current.scrollHeight > Ye.current.clientHeight)
+                    }), [be]);
+                    var Qe = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
                                 var r, n;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (Ie !== t.note) {
+                                            if (je !== t.note) {
                                                 e.next = 3;
                                                 break
                                             }
-                                            return Ne(!1), e.abrupt("return");
+                                            return Le(!1), e.abrupt("return");
                                         case 3:
-                                            return e.prev = 3, e.next = 6, Ze({
-                                                userId: de,
-                                                note: Ie
+                                            return e.prev = 3, e.next = 6, Oe({
+                                                userId: ve,
+                                                note: je
                                             }).unwrap();
                                         case 6:
-                                            Ne(!1), $((0, L.d)({
+                                            Le(!1), B((0, j.d)({
                                                 title: "Player Notes",
-                                                icon: C.f8,
+                                                icon: L.f8,
                                                 message: "\n              Player Notes Updated!\n            ",
                                                 color: "success",
                                                 timeout: 5e3
                                             })), e.next = 14;
                                             break;
                                         case 10:
-                                            e.prev = 10, e.t0 = e.catch(3), console.error("Player Notes Error:", e.t0), $((0, L.d)({
+                                            e.prev = 10, e.t0 = e.catch(3), console.error("Player Notes Error:", e.t0), B((0, j.d)({
                                                 title: "Player Notes",
-                                                icon: k.$9,
+                                                icon: Z.$9,
                                                 message: "\n              Update Player Notes Failed.\n              ".concat((null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) || (null === (n = e.t0.data) || void 0 === n ? void 0 : n.error), "\n            "),
                                                 color: "danger",
                                                 timeout: 5e3
@@ -332,156 +332,213 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Ve = ce || ie,
-                        qe = oe || se || ce || ie;
-                    return o.createElement(A, {
-                        bannerSrc: Ve,
+                        Xe = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
+                                var t;
+                                return T().wrap((function(e) {
+                                    for (;;) switch (e.prev = e.next) {
+                                        case 0:
+                                            return t = (0, p.zp)("".concat(window.location.origin, "/home/user/").concat(ve)), e.next = 3, t();
+                                        case 3:
+                                            B((0, j.d)({
+                                                title: "Player Profile",
+                                                icon: S.IL,
+                                                message: "Player profile link copied to clipboard.",
+                                                color: "success",
+                                                timeout: 5e3
+                                            }));
+                                        case 4:
+                                        case "end":
+                                            return e.stop()
+                                    }
+                                }), e)
+                            })));
+                            return function() {
+                                return e.apply(this, arguments)
+                            }
+                        }(),
+                        Je = fe,
+                        et = de || me || fe || pe;
+                    return o.createElement($, {
+                        hasBanner: !0,
+                        bannerSrc: Je,
                         noPadding: !0
-                    }, Y && o.createElement(c.zx, {
-                        containerClasses: "tw-absolute tw-top-4 tw-right-4 tw-z-10",
-                        onClick: s
-                    }, o.createElement(c.$1, {
-                        icon: N.Y,
-                        className: "tw-mr-2"
-                    }), "Edit Profile"), o.createElement("div", {
+                    }, o.createElement("div", {
                         className: "tw-relative tw-pt-[75px] tw-p-4 md:tw-p-8 md:tw-pt-[75px]"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-gap-2 tw-z-20 tw-absolute -tw-translate-y-1/2 tw-top-0 tw-left-2 md:tw-left-6"
                     }, o.createElement("div", {
                         className: "tw-w-[80px] sm:tw-w-[100px] md:tw-w-[150px] lg:tw-w-[130px] 2xl:tw-w-[160px] tw-aspect-square tw-rounded-full tw-bg-darker-grey tw-overflow-hidden tw-border-8 tw-border-solid tw-border-[#181B1F]"
-                    }, O && o.createElement(j.Z, {
+                    }, P && o.createElement(M.Z, {
                         className: "tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-text-2xl"
-                    }), !O && o.createElement("img", {
-                        src: qe,
-                        alt: "".concat(te, "'s profile icon"),
+                    }), !P && o.createElement("img", {
+                        src: et,
+                        alt: "".concat(oe, "'s profile icon"),
                         className: "tw-object-cover tw-h-full tw-w-full tw-bg-darker-grey"
                     })), o.createElement("div", {
                         className: "tw-flex tw-items-center tw-bg-[#2E323D] tw-px-4 tw-py-2 tw-text-xs md:tw-text-sm tw-font-semibold md:tw-font-bold tw-h-fit tw-w-fit tw-rounded-full md:tw-mt-2 tw-space-x-2"
-                    }, o.createElement(V.Z, {
-                        status: re,
-                        customStatus: pe,
+                    }, o.createElement(H.Z, {
+                        status: ce,
+                        customStatus: Ee,
                         withLabel: !0,
-                        isOffline: "offline" === me && !Q && !Y
+                        isOffline: "offline" === xe && !re && !te
                     }))), o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-gap-6"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-gap-2"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-gap-2 tw-items-center"
-                    }, O && o.createElement(c.UU, {
+                    }, P && o.createElement(s.UU, {
                         height: "26px",
                         width: "100%"
-                    }), !O && o.createElement(o.Fragment, null, o.createElement("h4", {
+                    }), !P && o.createElement(o.Fragment, null, o.createElement("h4", {
                         className: "tw-mb-0"
-                    }, te), Pe && o.createElement("img", {
-                        src: q,
+                    }, oe), qe && o.createElement("img", {
+                        src: K,
                         alt: "VRC Plus Icon",
                         className: "tw-w-9"
-                    }), I && o.createElement(c.$1, {
-                        icon: y.Ek,
+                    }), F && o.createElement(s.$1, {
+                        icon: I.Ek,
                         className: "tw-text-error-message-red"
-                    }), p && o.createElement(c.$1, {
-                        icon: E.wO,
+                    }), g && o.createElement(s.$1, {
+                        icon: C.wO,
                         className: "tw-text-error-message-red"
                     }))), o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-2 tw-flex-wrap"
-                    }, O && o.createElement(c.UU, {
+                    }, P && o.createElement(s.UU, {
                         height: "45px",
                         width: "100%"
-                    }), !O && o.createElement(o.Fragment, null, o.createElement("div", {
+                    }), !P && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-text-light-grey tw-flex tw-flex-row tw-items-center tw-gap-2 tw-flex-wrap first:[&>*]:before:tw-content-[''] first:[&>*]:before:tw-m-0 before:[&>*]:tw-content-['•'] before:[&>*]:tw-mr-2 before:[&>*]:tw-my-auto"
-                    }, ae && o.createElement("span", null, ae), !le && Y && o.createElement(c.zx, {
+                    }, ie && o.createElement("span", null, ie), !we && te && o.createElement(s.zx, {
                         className: "tw-flex tw-items-center tw-p-2 tw-border-solid tw-border-2 tw-border-grey tw-w-fit tw-rounded-lg tw-space-x-3",
                         transparent: !0,
                         neutral: !0,
                         onClick: function() {
-                            return _("/home/ageverification")
+                            return J("/home/ageverification")
                         }
-                    }, o.createElement(F.Z, {
+                    }, o.createElement(R.Z, {
                         imageSize: "16px"
                     }), o.createElement("span", null, "Get Age Verified"), o.createElement("img", {
-                        src: q,
+                        src: K,
                         alt: "VRC Plus Icon",
                         className: "tw-w-6"
-                    })), le && Y && o.createElement("span", null, o.createElement(F.Z, {
+                    })), we && "18+" === ue && o.createElement("span", null, o.createElement(R.Z, {
                         imageSize: "16px",
                         color: "#2BAAC1"
-                    }), " Verified 18+"), ze && o.createElement("span", null, o.createElement(U.Z, {
+                    }), " Verified 18+"), Be && o.createElement("span", null, o.createElement(O.Z, {
                         imageSize: "16px",
-                        color: "var(--user-level-".concat(De, ")")
-                    }), " ", ze)), u && o.createElement(c.zx, {
+                        color: "var(--user-level-".concat(We, ")")
+                    }), " ", Be)), u && o.createElement(s.zx, {
                         containerClasses: "tw-m-0",
                         neutral: !0,
                         transparent: !0,
                         onClick: function() {
-                            return _("/home/group/".concat(xe))
+                            return J("/home/group/".concat(Ce))
                         },
                         className: "tw-py-1 tw-px-2 tw-border-solid tw-border-2 tw-border-grey tw-rounded-lg tw-flex tw-items-center tw-gap-2 hover:tw-bg-[#2E333D] hover:tw-text-lighter-grey"
-                    }, "" !== be && o.createElement("img", {
-                        src: be,
-                        alt: "".concat(ve, " group icon"),
+                    }, "" !== Ne && o.createElement("img", {
+                        src: Ne,
+                        alt: "".concat(ke, " group icon"),
                         className: "tw-w-4 tw-h-4 tw-rounded-full"
                     }), o.createElement("span", {
                         className: "tw-truncate tw-max-w-[16ch]"
-                    }, ve)))), de && !fe && !Y && o.createElement(c.GO, {
-                        userId: de,
-                        onFriendsClick: P,
-                        onGroupsClick: D
-                    })), !Y && o.createElement("div", {
+                    }, ke)))), ve && !he && !te && o.createElement(s.GO, {
+                        userId: ve,
+                        onFriendsClick: V,
+                        onGroupsClick: q
+                    })), te && o.createElement("div", {
+                        className: "tw-flex tw-flex-row tw-gap-3 tw-w-full tw-relative"
+                    }, o.createElement("div", {
+                        className: "tw-relative tw-flex-1"
+                    }, te && _e && o.createElement("div", {
+                        role: "tooltip",
+                        "aria-label": "Customize your profile icon and banner here",
+                        className: "tw-flex tw-items-center tw-gap-2 tw-whitespace-normal tw-text-center tw-absolute tw--top-[calc(100%+0.5rem)] tw-right-1/2 tw-translate-x-1/2 tw-py-3 tw-px-4 tw-bg-dark-teal tw-text-white tw-text-xs tw-rounded tw-shadow-lg tw-z-50"
+                    }, o.createElement("p", {
+                        className: "tw-mb-0"
+                    }, "Customize your profile icon and banner here"), o.createElement("button", {
+                        type: "button",
+                        "aria-label": "Dismiss tooltip",
+                        className: " tw-border-none tw-rounded-full tw-p-0",
+                        onClick: Ke
+                    }, o.createElement(s.$1, {
+                        icon: k.faCircleXmark,
+                        className: "tw-w-4 tw-h-4 tw-text-base"
+                    })), o.createElement("div", {
+                        className: "tw-absolute tw-top-full tw-bg-dark-teal tw-left-1/2 tw--translate-x-1/2 tw--mt-1 tw-w-2 tw-h-2 tw-rotate-45"
+                    })), o.createElement(s.zx, {
+                        onClick: c,
+                        className: "tw-text-center"
+                    }, o.createElement(s.$1, {
+                        icon: N.Y,
+                        className: "tw-mr-2"
+                    }), "Edit Profile")), o.createElement(s.zx, {
+                        onClick: Xe,
+                        className: "tw-w-11"
+                    }, o.createElement(s.$1, {
+                        icon: y.Dr
+                    }))), !te && o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-gap-3"
-                    }, o.createElement(W.Z, {
-                        userId: de,
+                    }, o.createElement(Q.Z, {
+                        userId: ve,
                         className: "tw-px-3 tw-py-2",
                         containerClasses: "sm:tw-max-w-[245px] tw-w-full",
                         onFavorite: w
-                    }), o.createElement(H.Z, {
-                        userId: de,
-                        isMuted: I,
-                        isBlocked: p
+                    }), o.createElement(s.zx, {
+                        onClick: Xe,
+                        className: "tw-w-11"
+                    }, o.createElement(s.$1, {
+                        icon: y.Dr
+                    })), o.createElement(X.Z, {
+                        userId: ve,
+                        isMuted: F,
+                        isBlocked: g,
+                        hideShare: !0
                     })), o.createElement("div", {
                         className: "tw-border-b-2 tw-border-0 tw-border-solid tw-border-grey tw-flex-col tw-flex tw-gap-6 tw-pb-6"
                     }, o.createElement("div", null, o.createElement("h2", {
                         className: "heading tw-text-light-grey tw-text-sm tw-font-bold tw-uppercase"
-                    }, "About Me"), "" !== ue && o.createElement("div", {
+                    }, "About Me"), "" !== be && o.createElement("div", {
                         className: "tw-relative"
                     }, o.createElement("p", {
-                        className: (0, T.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
-                            "tw-line-clamp-3 tw-overflow-hidden": !je
+                        className: (0, A.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
+                            "tw-line-clamp-3 tw-overflow-hidden": !De
                         }),
-                        ref: $e
-                    }, ue), Me && !je && o.createElement("span", {
+                        ref: Ye
+                    }, be), Ve && !De && o.createElement("span", {
                         className: "tw-flex tw-items-center"
                     }, o.createElement("span", {
                         className: "tw-h-[1.5em] tw-bg-gradient-to-r tw-from-transparent tw-to-[#171A21]"
-                    }), o.createElement(c.zx, {
+                    }), o.createElement(s.zx, {
                         className: "tw-bg-[#171A21] tw-text-teal tw-font-bold tw-p-0 tw-px-1",
                         transparent: !0,
                         onClick: function() {
-                            return Te(!0)
+                            return Pe(!0)
                         }
-                    }, "Read More"))), Y && "" === ue && o.createElement("div", {
+                    }, "Read More"))), te && "" === be && o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-items-center tw-text-center"
                     }, o.createElement("p", {
                         className: "tw-text-lighter-grey"
                     }, "You haven’t added anything here ", o.createElement("br", null), o.createElement("small", {
                         className: "tw-text-light-grey"
-                    }, "Tell others a little about yourself!")), o.createElement(c.zx, {
+                    }, "Tell others a little about yourself!")), o.createElement(s.zx, {
                         neutral: !0,
                         transparent: !0,
                         containerClasses: "tw-border-solid tw-border-2 tw-border-grey tw-w-fit",
                         "aria-label": "Add a bio",
-                        onClick: s
-                    }, "Add a bio")), !Y && "" === ue && o.createElement("div", {
+                        onClick: c
+                    }, "Add a bio")), !te && "" === be && o.createElement("div", {
                         className: "tw-relative"
                     }, o.createElement("p", {
-                        className: (0, T.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
-                            "tw-line-clamp-3 tw-overflow-hidden": !je
+                        className: (0, A.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
+                            "tw-line-clamp-3 tw-overflow-hidden": !De
                         }),
-                        ref: $e
-                    }, "No bio added."))), we && (null == we ? void 0 : we.length) > 0 && o.createElement("div", {
+                        ref: Ye
+                    }, "No bio added."))), ge && (null == ge ? void 0 : ge.length) > 0 && o.createElement("div", {
                         className: "tw-flex-row tw-flex tw-gap-3 tw-flex-wrap"
-                    }, we.map((function(e) {
-                        return o.createElement(G, {
+                    }, ge.map((function(e) {
+                        return o.createElement(W, {
                             key: e,
                             urlPath: e
                         })
@@ -498,79 +555,79 @@
                         }, e)
                     })))), o.createElement("div", {
                         className: "tw-flex-col tw-flex tw-gap-2"
-                    }, ye && o.createElement("div", {
+                    }, Ze && o.createElement("div", {
                         className: "tw-flex-row tw-flex tw-gap-2"
-                    }, o.createElement(c.II, {
+                    }, o.createElement(s.II, {
                         neutral: !0,
                         className: "tw-w-full",
                         type: "text",
                         maxLength: 256,
-                        value: Ie,
+                        value: je,
                         "aria-label": "User note",
                         onChange: function(e) {
-                            return Se(e.target.value)
+                            return Ue(e.target.value)
                         }
-                    }), o.createElement(c.zx, {
-                        onClick: Ge,
+                    }), o.createElement(s.zx, {
+                        onClick: Qe,
                         className: "tw-w-12",
                         "aria-label": "Save note"
-                    }, o.createElement(c.$1, {
-                        icon: h.LE
-                    })), o.createElement(c.zx, {
+                    }, o.createElement(s.$1, {
+                        icon: E.LE
+                    })), o.createElement(s.zx, {
                         onClick: function() {
-                            return Ne(!1)
+                            return Le(!1)
                         },
                         danger: !0,
                         className: "tw-w-12",
                         "aria-label": "Cancel note edit"
-                    }, o.createElement(c.$1, {
-                        icon: x.EO
-                    }))), !ye && o.createElement(c.zx, {
+                    }, o.createElement(s.$1, {
+                        icon: h.EO
+                    }))), !Ze && o.createElement(s.zx, {
                         onClick: function(e) {
-                            Ne(!ye), e.currentTarget.blur()
+                            Le(!Ze), e.currentTarget.blur()
                         },
                         transparent: !0,
                         neutral: !0,
                         className: "tw-text-subtext-grey tw-font-bold tw-text-left tw-flex tw-gap-2 tw-rounded-xl tw-border-none hover:tw-bg-grey tw-p-3"
-                    }, o.createElement(c.$1, {
-                        icon: v.nf,
+                    }, o.createElement(s.$1, {
+                        icon: x.nf,
                         size: "xl"
                     }), o.createElement("p", {
                         className: "tw-m-0"
-                    }, "" === ne ? " ADD NOTE" : ne))))))
+                    }, "" === se ? " ADD NOTE" : se))))))
                 };
-            _.propTypes = {
-                userData: O().shape({
-                    tags: O().arrayOf(O().string),
-                    tagsSet: O().object,
-                    displayName: O().string,
-                    status: O().string,
-                    note: O().string,
-                    pronouns: O().string,
-                    ageVerified: O().bool,
-                    userIcon: O().string,
-                    currentAvatarThumbnailImageUrl: O().string,
-                    profilePicOverride: O().string,
-                    currentAvatarImageUrl: O().string,
-                    bioLinks: O().arrayOf(O().string),
-                    bio: O().string,
-                    id: O().string,
-                    hasSharedConnectionsOptOut: O().bool
+            J.propTypes = {
+                userData: P().shape({
+                    tags: P().arrayOf(P().string),
+                    tagsSet: P().object,
+                    displayName: P().string,
+                    status: P().string,
+                    note: P().string,
+                    pronouns: P().string,
+                    ageVerified: P().bool,
+                    userIcon: P().string,
+                    currentAvatarThumbnailImageUrl: P().string,
+                    profilePicOverride: P().string,
+                    currentAvatarImageUrl: P().string,
+                    bioLinks: P().arrayOf(P().string),
+                    bio: P().string,
+                    id: P().string,
+                    hasSharedConnectionsOptOut: P().bool
                 }),
-                userLanguages: O().arrayOf(O().string),
-                userDetailsInfo: O().object,
-                onEdit: O().func,
-                onMute: O().func,
-                onBlock: O().func,
-                onFavorite: O().func,
-                isBlocked: O().bool,
-                isMuted: O().bool,
-                isLoading: O().bool,
-                representingGroup: O().object
+                userLanguages: P().arrayOf(P().string),
+                userDetailsInfo: P().object,
+                onEdit: P().func,
+                onMute: P().func,
+                onBlock: P().func,
+                onFavorite: P().func,
+                isBlocked: P().bool,
+                isMuted: P().bool,
+                isLoading: P().bool,
+                representingGroup: P().object
             };
-            const K = _;
-            var Y = r(87709),
-                Q = function(e) {
+            const ee = J;
+            var te = r(87709),
+                re = function(e) {
                     var t = e.badge;
                     return o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-4 tw-bg-grey tw-rounded-xl tw-p-4"
@@ -584,23 +641,23 @@
                         className: "tw-text-white tw-font-semibold tw-text-sm"
                     }, t.badgeName, (null == t ? void 0 : t.isQuantifiable) && (null == t ? void 0 : t.quantity) > 0 && o.createElement("span", {
                         className: "tw-ml-2 tw-rounded-full tw-bg-dark-blue tw-px-2"
-                    }, o.createElement(c.$1, {
-                        icon: Y.faXmark,
+                    }, o.createElement(s.$1, {
+                        icon: te.faXmark,
                         width: 12
                     }), null == t ? void 0 : t.quantity)), o.createElement("span", {
                         className: "tw-text-light-grey tw-text-xs"
                     }, t.badgeDescription)))
                 };
-            Q.propTypes = {
-                badge: O().shape({
-                    badgeId: O().string.isRequired,
-                    badgeImageUrl: O().string.isRequired,
-                    badgeName: O().string.isRequired,
-                    badgeDescription: O().string
+            re.propTypes = {
+                badge: P().shape({
+                    badgeId: P().string.isRequired,
+                    badgeImageUrl: P().string.isRequired,
+                    badgeName: P().string.isRequired,
+                    badgeDescription: P().string
                 }).isRequired
             };
-            const X = Q;
-            var J = function(e) {
+            const ne = re;
+            var ae = function(e) {
                 var t = e.badges,
                     r = e.onViewAllClick,
                     n = (t || []).filter((function(e) {
@@ -612,7 +669,7 @@
                         return !e.hidden
                     })),
                     l = a.length > 4;
-                return 0 === a.length ? null : o.createElement(A, {
+                return 0 === a.length ? null : o.createElement($, {
                     title: "Badges"
                 }, o.createElement("div", {
                     className: "tw-flex tw-flex-col"
@@ -630,27 +687,26 @@
                         className: "tw-w-20 tw-h-20 tw-object-contain"
                     }), (null == e ? void 0 : e.isQuantifiable) && (null == e ? void 0 : e.quantity) > 0 && o.createElement("span", {
                         className: "tw-absolute tw-bottom-[-12px] tw-left-1/2 tw--translate-x-1/2 tw-flex tw-items-center tw-rounded-full tw-bg-dark-blue-purple tw-px-2 tw-font-bold"
-                    }, o.createElement(c.$1, {
-                        icon: Y.faXmark,
+                    }, o.createElement(s.$1, {
+                        icon: te.faXmark,
                         width: 12
                     }), null == e ? void 0 : e.quantity))
-                }))), l && r && o.createElement(c.zx, {
+                }))), l && r && o.createElement(s.zx, {
                     neutral: !0,
                     className: "tw-w-full tw-mt-4 tw-rounded-lg tw-bg-grey tw-text-subtext-grey tw-border-grey tw-font-bold tw-py-4 tw-leading-none",
                     onClick: r
                 }, "View All")))
             };
-            J.propTypes = {
-                badges: O().array,
-                onViewAllClick: O().func
+            ae.propTypes = {
+                badges: P().array,
+                onViewAllClick: P().func
             };
-            const ee = J;
-            var te = r(98244),
-                re = r(21538),
-                ne = r(79655),
-                ae = function(e) {
+            const le = ae;
+            var oe = r(98244),
+                ce = r(21538),
+                se = function(e) {
                     var t = e.avatarId,
-                        r = (0, re.LQ)({
+                        r = (0, ce.LQ)({
                             avatarId: t
                         }, {
                             skip: !t
@@ -658,24 +714,24 @@
                         n = r.data,
                         a = r.isLoading,
                         l = r.isSuccess,
-                        s = (r.isError, r.error, n || {}),
-                        i = s.imageUrl,
-                        w = s.name,
-                        u = s.authorName,
-                        d = s.id,
-                        m = s.unityPackages;
-                    return o.createElement(o.Fragment, null, a && o.createElement(c.yK, null), l && o.createElement(A, {
+                        c = (r.isError, r.error, n || {}),
+                        i = c.imageUrl,
+                        w = c.name,
+                        u = c.authorName,
+                        d = c.id,
+                        m = c.unityPackages;
+                    return o.createElement(o.Fragment, null, a && o.createElement(s.yK, null), l && o.createElement($, {
                         title: "My Avatar"
                     }, o.createElement("div", {
                         className: "tw-mt-6 tw-group/ContentItem"
-                    }, o.createElement(ne.rU, {
+                    }, o.createElement(f.rU, {
                         to: "/home/avatar/".concat(d),
                         className: "tw-text-xl tw-flex tw-flex-col tw-gap-6"
                     }, o.createElement("div", {
                         className: "tw-relative"
                     }, o.createElement("div", {
                         className: "tw-absolute tw-top-0 tw-right-0 tw-z-[2] tw-flex tw-flex-row tw-gap-1 tw-p-2 tw-text-white tw-bg-black tw-backdrop-blur tw-backdrop-saturate-200 tw-transition-colors tw-bg-opacity-40 group-hover/ContentItem:tw-bg-opacity-80 tw-rounded-tr-3xl tw-rounded-bl-3xl"
-                    }, o.createElement(te.Z, {
+                    }, o.createElement(oe.Z, {
                         packages: m,
                         formattedType: "avatar",
                         isLarge: !0
@@ -689,125 +745,124 @@
                         className: "tw-font-extralight tw-text-light-grey"
                     }, "by ", u))))))
                 };
-            ae.propTypes = {};
-            const le = ae;
-            var oe = r(55505),
-                se = r(17319),
-                ce = r(95603),
-                ie = r(73170),
-                we = r(83807);
-            const ue = r.p + "a7c5ec041cb49ca4f56fcda4869fb8e40ad13545b68935c3402b8ada15e518fc.svg";
-            var de = r(87343),
-                me = "OFFLINE",
-                fe = "PRIVATE",
-                pe = "WEB",
-                ge = "MOBILE",
-                be = "TRAVELING",
-                ve = "LOADING",
-                xe = "ONLINE",
-                he = "UNKNOWN",
-                Ee = function(e) {
+            se.propTypes = {};
+            const ie = se;
+            var we = r(55505),
+                ue = r(17319),
+                de = r(95603),
+                me = r(73170);
+            const fe = r.p + "a7c5ec041cb49ca4f56fcda4869fb8e40ad13545b68935c3402b8ada15e518fc.svg";
+            var pe = r(87343),
+                ge = "OFFLINE",
+                be = "PRIVATE",
+                ve = "WEB",
+                xe = "MOBILE",
+                he = "TRAVELING",
+                Ee = "LOADING",
+                ye = "ONLINE",
+                Ne = "UNKNOWN",
+                ke = function(e) {
                     var t = e.userLocation,
                         r = e.userDetailsInfo,
                         n = e.currentUser,
-                        a = (0, we.Kz)(),
-                        l = (0, we.CZ)({
+                        a = (0, _.Kz)(),
+                        l = (0, _.CZ)({
                             withIcon: !0
                         }),
-                        s = (0, Z.YW)(t),
+                        c = (0, U.YW)(t),
                         i = r || {},
                         w = i.isFriend,
                         d = i.isSelf,
                         m = i.isWeb,
-                        p = i.isOffline,
-                        g = i.inPrivate,
-                        b = i.isMobile,
-                        v = i.isTraveling,
-                        x = i.timeSinceLastActivity,
-                        h = i.receivesMobileNotifications,
-                        E = i.isOnline,
-                        y = i.isUserMod,
-                        N = "hidden" === t,
-                        k = "string" == typeof t && t.startsWith("wrld_"),
-                        C = (0, de.kt)({
+                        g = i.isOffline,
+                        b = i.inPrivate,
+                        v = i.isMobile,
+                        x = i.isTraveling,
+                        h = i.timeSinceLastActivity,
+                        E = i.receivesMobileNotifications,
+                        y = i.isOnline,
+                        N = i.isUserMod,
+                        k = "hidden" === t,
+                        C = "string" == typeof t && t.startsWith("wrld_"),
+                        I = (0, pe.kt)({
                             location: t
                         }, {
-                            skip: !E && !k
+                            skip: !y && !C
                         }),
-                        I = C.data,
-                        S = C.isLoading,
-                        L = I || {},
+                        S = I.data,
+                        Z = I.isLoading,
+                        L = S || {},
                         F = L.world,
-                        U = L.name,
-                        T = (L.type, L.capacity),
+                        T = L.name,
+                        j = (L.type, L.capacity),
                         R = L.userCount,
                         O = L.worldId,
-                        M = L.instanceId,
-                        z = L.photonRegion,
-                        D = L.shortName,
-                        $ = L.secureName,
+                        A = L.instanceId,
+                        D = L.photonRegion,
+                        P = L.shortName,
+                        z = L.secureName,
                         G = L.location,
-                        V = L.ownerId,
-                        q = null == V ? void 0 : V.startsWith("grp_"),
-                        B = (0, u.dj)({
+                        q = L.ownerId,
+                        B = null == q ? void 0 : q.startsWith("grp_"),
+                        W = (0, u.dj)({
                             userId: null == n ? void 0 : n.id
                         }, {
-                            skip: !q || !(null != n && n.id)
+                            skip: !B || !(null != n && n.id)
                         }),
-                        W = B.data,
-                        H = B.isFetching,
-                        _ = (B.isError, B.error, (0, o.useMemo)((function() {
-                            return !!W && W.some((function(e) {
-                                return e.groupId === V
+                        H = W.data,
+                        K = W.isFetching,
+                        Y = (W.isError, W.error, (0, o.useMemo)((function() {
+                            return !!H && H.some((function(e) {
+                                return e.groupId === q
                             }))
-                        }), [W, V])),
-                        K = (0, o.useMemo)((function() {
-                            return p || !w && !d && !y || N ? me : m ? pe : b ? ge : g ? fe : v ? be : S || H ? ve : I && F && M ? xe : he
-                        }), [p, w, d, y, g, N, m, b, v, S, H, I, F, M]),
-                        Y = (0, o.useMemo)((function() {
+                        }), [H, q])),
+                        Q = (0, o.useMemo)((function() {
+                            return g || !w && !d && !N || k ? ge : m ? ve : v ? xe : b ? be : x ? he : Z || K ? Ee : S && F && A ? ye : Ne
+                        }), [g, w, d, N, b, k, m, v, x, Z, K, S, F, A]),
+                        X = (0, o.useMemo)((function() {
                             return G && l.locations[G] ? l.locations[G].users.filter((function(e) {
                                 return e.id !== n.id
                             })) : []
                         }), [G, l, n]),
-                        Q = (0, o.useMemo)((function() {
-                            return 0 === Y.length ? [] : Y.slice(0, 3)
-                        }), [Y]),
-                        X = (0, o.useMemo)((function() {
-                            return t ? (0, f.aF)(t) : ""
-                        }), [t]),
                         J = (0, o.useMemo)((function() {
-                            return !(!y && !d) || ("Group Public" === X || (!("Group+" !== X || !(_ || Y.length > 0)) || (!("Group" !== X || !_) || (!("Friends" !== X || !w) || !("Friends+" !== X || !(w || Y.length > 0))))))
-                        }), [X, _, Y, w, d, y]),
-                        ee = S || K !== xe ? null : (null == F ? void 0 : F.imageUrl) || (null == F ? void 0 : F.thumbnailImageUrl) || null,
-                        te = K === fe || K === he,
-                        re = "vrchat://launch?ref=vrchat.com&id=".concat(G).concat(D || $ ? "&shortName=".concat(null != D ? D : $) : "", "&attach=1");
-                    return o.createElement(A, {
-                        bannerSrc: ee || void 0,
+                            return 0 === X.length ? [] : X.slice(0, 3)
+                        }), [X]),
+                        ee = (0, o.useMemo)((function() {
+                            return t ? (0, p.aF)(t) : ""
+                        }), [t]),
+                        te = (0, o.useMemo)((function() {
+                            return !(!N && !d) || ("Group Public" === ee || (!("Group+" !== ee || !(Y || X.length > 0)) || (!("Group" !== ee || !Y) || (!("Friends" !== ee || !w) || !("Friends+" !== ee || !(w || X.length > 0))))))
+                        }), [ee, Y, X, w, d, N]),
+                        re = Z || Q !== ye ? null : (null == F ? void 0 : F.imageUrl) || (null == F ? void 0 : F.thumbnailImageUrl) || null,
+                        ne = Q === be || Q === Ne,
+                        ae = "vrchat://launch?ref=vrchat.com&id=".concat(G).concat(P || z ? "&shortName=".concat(null != P ? P : z) : "", "&attach=1");
+                    return o.createElement($, {
+                        bannerSrc: re || void 0,
                         bannerHeight: "265px",
-                        noPadding: te
+                        noPadding: ne
                     }, function() {
-                        switch (K) {
-                            case me:
+                        switch (Q) {
+                            case ge:
                                 return o.createElement("div", {
                                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-my-6 tw-gap-6 tw-text-[#575757]"
-                                }, o.createElement(c.$1, {
-                                    icon: P.vrcOffline,
+                                }, o.createElement(s.$1, {
+                                    icon: V.vrcOffline,
                                     width: "140",
                                     color: "#575757"
                                 }), o.createElement("div", {
                                     className: "tw-text-center"
                                 }, o.createElement("p", {
                                     className: "tw-font-bold tw-tracking-wide tw-text-xl tw-mb-0 "
-                                }, "Offline ", x && " for ".concat(x)), h && o.createElement("p", {
+                                }, "Offline ", h && " for ".concat(h)), E && o.createElement("p", {
                                     className: "tw-mb-0"
                                 }, "(Receives Mobile Notifications)")));
-                            case fe:
+                            case be:
                                 return o.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-font-bold tw-text-xl tw-text-light-grey tw-tracking-wide"
                                 }, o.createElement("div", {
                                     className: "tw-w-full tw-bg-grey tw-rounded-t-3xl tw-flex tw-justify-center tw-items-center"
-                                }, o.createElement(c.$1, {
-                                    icon: P.vrcPrivateWorld,
+                                }, o.createElement(s.$1, {
+                                    icon: V.vrcPrivateWorld,
                                     className: "tw-mr-2",
                                     color: "#FFFFFF1A",
                                     width: "167"
@@ -818,23 +873,23 @@
                                 }, "Current Location"), o.createElement("p", {
                                     className: "tw-m-0 tw-text-white tw-leading-5 tw-text-2xl"
                                 }, "Private Instance")));
-                            case pe:
+                            case ve:
                                 return o.createElement("div", {
                                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-my-6 tw-text-[#575757] tw-gap-6"
                                 }, o.createElement("img", {
-                                    src: ue,
+                                    src: fe,
                                     alt: "Web User",
                                     className: "tw-w-[140px] tw-h-[140px]"
                                 }), o.createElement("div", {
                                     className: "tw-text-center"
                                 }, o.createElement("p", {
                                     className: "tw-font-bold tw-tracking-wide tw-text-xl tw-m-0"
-                                }, "Active on Web"), h && o.createElement("span", null, "(Receives Mobile Notifications)")));
-                            case ge:
+                                }, "Active on Web"), E && o.createElement("span", null, "(Receives Mobile Notifications)")));
+                            case xe:
                                 return o.createElement("div", {
                                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-my-6 tw-text-[#575757] tw-gap-6"
-                                }, o.createElement(c.$1, {
-                                    icon: P.vrcMobile,
+                                }, o.createElement(s.$1, {
+                                    icon: V.vrcMobile,
                                     width: "140",
                                     color: "#575757",
                                     style: {
@@ -844,22 +899,22 @@
                                     className: "tw-text-center"
                                 }, o.createElement("p", {
                                     className: "tw-font-bold tw-tracking-wide tw-text-xl tw-m-0"
-                                }, "Active on Mobile"), h && o.createElement("span", null, "(Receives Mobile Notifications)")));
-                            case ve:
-                            case be:
+                                }, "Active on Mobile"), E && o.createElement("span", null, "(Receives Mobile Notifications)")));
+                            case Ee:
+                            case he:
                                 return o.createElement("div", {
                                     className: "tw-w-full tw-flex tw-justify-center tw-items-center tw-my-6"
-                                }, o.createElement(j.Z, {
+                                }, o.createElement(M.Z, {
                                     size: "5x",
                                     className: "tw-text-[#797979]"
                                 }));
-                            case he:
+                            case Ne:
                                 return o.createElement("div", {
                                     className: "tw-flex tw-flex-col tw-font-bold tw-text-xl tw-text-light-grey tw-tracking-wide"
                                 }, o.createElement("div", {
                                     className: "tw-w-full tw-bg-grey tw-rounded-t-3xl tw-flex tw-justify-center tw-items-center"
-                                }, o.createElement(c.$1, {
-                                    icon: P.vrcPrivateWorld,
+                                }, o.createElement(s.$1, {
+                                    icon: V.vrcPrivateWorld,
                                     className: "tw-mr-2",
                                     color: "#FFFFFF1A",
                                     width: "167"
@@ -873,10 +928,10 @@
                             default:
                                 return null
                         }
-                    }(), K === xe && o.createElement(o.Fragment, null, o.createElement("div", {
+                    }(), Q === ye && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-flex tw-gap-2 tw-items-center tw-absolute tw-z-50 tw-top-5 tw-left-5 tw-bg-dark-grey/80 tw-py-3 tw-px-4 tw-rounded-3xl"
-                    }, o.createElement(c.$1, {
-                        icon: P.vrcLocationWorld,
+                    }, o.createElement(s.$1, {
+                        icon: V.vrcLocationWorld,
                         color: "#6AE3F9"
                     }), o.createElement("span", null, "Current Location")), o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-gap-4"
@@ -884,103 +939,103 @@
                         className: "tw-flex tw-flex-col tw-gap-2"
                     }, o.createElement("h4", {
                         className: "tw-mb-0"
-                    }, o.createElement(ne.rU, {
+                    }, o.createElement(f.rU, {
                         className: "tw-text-lighter-grey",
                         to: "/home/world/".concat(null == F ? void 0 : F.id)
                     }, null == F ? void 0 : F.name)), o.createElement("span", {
                         className: "tw-text-light-grey tw-capitalize tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-gap-2"
                     }, o.createElement("div", {
                         className: "tw-items-center tw-flex tw-gap-2"
-                    }, z && o.createElement(ie.Z, {
-                        region: z,
+                    }, D && o.createElement(me.Z, {
+                        region: D,
                         imageSize: "24px",
                         className: "tw-h-6"
-                    }), o.createElement("span", null, U, " - ", X)), s && o.createElement("div", {
+                    }), o.createElement("span", null, T, " - ", ee)), c && o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-2"
-                    }, o.createElement(c.$1, {
-                        icon: se.di,
+                    }, o.createElement(s.$1, {
+                        icon: ue.di,
                         className: "tw-text-[4px]"
-                    }), o.createElement("span", null, o.createElement(c.$1, {
-                        icon: P.vrcAgeVerification,
+                    }), o.createElement("span", null, o.createElement(s.$1, {
+                        icon: V.vrcAgeVerification,
                         className: "tw-text-teal",
                         size: "xl"
                     }), " Verified 18+"))), o.createElement("div", {
                         className: "tw-text-light-grey tw-flex tw-flex-row tw-gap-2 tw-items-center"
-                    }, o.createElement("span", null, o.createElement(c.$1, {
-                        icon: ce.faUserGroup,
+                    }, o.createElement("span", null, o.createElement(s.$1, {
+                        icon: de.faUserGroup,
                         className: "tw-mr-1 tw-text-teal"
-                    }), " ", R, " / ", T), Y.length > 0 && o.createElement("div", {
+                    }), " ", R, " / ", j), X.length > 0 && o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-2"
-                    }, o.createElement(c.$1, {
-                        icon: se.di,
+                    }, o.createElement(s.$1, {
+                        icon: ue.di,
                         className: "tw-text-[4px]"
-                    }), o.createElement("div", null, Q.map((function(e) {
+                    }), o.createElement("div", null, J.map((function(e) {
                         return o.createElement("img", {
                             key: e.id,
                             src: e.userIcon,
                             alt: "Friend Icon",
                             className: "tw-object-cover first:tw-ml-0 -tw-ml-2 tw-w-6 tw-h-6 tw-rounded-full tw-border-solid tw-border-darker-grey tw-bg-darker-grey tw-border-2"
                         })
-                    }))), o.createElement("span", null, Y.length, " ", 1 === Y.length ? "friend" : "friends")))), J && o.createElement("div", {
+                    }))), o.createElement("span", null, X.length, " ", 1 === X.length ? "friend" : "friends")))), te && o.createElement("div", {
                         className: "tw-flex tw-flex-wrap tw-gap-3 tw-w-full tw-items-center"
-                    }, o.createElement(c.zx, {
+                    }, o.createElement(s.zx, {
                         onClick: function() {
-                            O && M && (window.location.href = re)
+                            O && A && (window.location.href = ae)
                         },
                         className: "tw-min-w-[195px] tw-space-x-2",
                         containerClasses: "tw-flex-auto"
-                    }, o.createElement(c.$1, {
-                        icon: P.vrcPortal
-                    }), o.createElement("span", null, "Launch in VRChat")), o.createElement(c.zx, {
+                    }, o.createElement(s.$1, {
+                        icon: V.vrcPortal
+                    }), o.createElement("span", null, "Launch in VRChat")), o.createElement(s.zx, {
                         neutral: !0,
                         onClick: function() {
-                            O && M && a({
+                            O && A && a({
                                 worldId: O,
-                                instanceId: M,
-                                shortName: D
+                                instanceId: A,
+                                shortName: P
                             })
                         },
                         className: "tw-min-w-[195px] tw-space-x-2",
                         containerClasses: "tw-flex-auto"
-                    }, o.createElement(c.$1, {
-                        icon: oe.dw
+                    }, o.createElement(s.$1, {
+                        icon: we.dw
                     }), " ", o.createElement("span", null, "Invite Me"))))))
                 };
-            Ee.propTypes = {
-                userLocation: O().string,
-                userDetailsInfo: O().object,
-                currentUser: O().object
+            ke.propTypes = {
+                userLocation: P().string,
+                userDetailsInfo: P().object,
+                currentUser: P().object
             };
-            const ye = Ee;
-            var Ne = r(92332),
-                ke = r(76553),
-                Ce = r(7080),
-                Ie = r(751),
-                Se = function(e) {
+            const Ce = ke;
+            var Ie = r(92332),
+                Se = r(76553),
+                Ze = r(7080),
+                Le = r(751),
+                Fe = function(e) {
                     var t = e.friendUserId,
                         r = e.isOpen,
                         n = e.cancelCallback,
                         a = void 0 === n ? function() {} : n,
-                        s = (0, B.I0)(),
-                        i = (0, we.rT)("friend"),
+                        c = (0, Y.I0)(),
+                        i = (0, _.rT)("friend"),
                         w = i.favoriteGroups,
                         u = i.isLoading,
                         d = (0, o.useState)(null),
                         m = (0, l.Z)(d, 2),
                         f = m[0],
                         p = m[1],
-                        g = (0, Ie.Ec)(),
-                        v = (0, l.Z)(g, 2),
-                        x = v[0],
-                        h = v[1].isLoading;
+                        g = (0, Le.Ec)(),
+                        b = (0, l.Z)(g, 2),
+                        x = b[0],
+                        h = b[1].isLoading;
                     (0, o.useEffect)((function() {
                         r || p(null)
                     }), [r]);
                     var E = h || u,
                         y = function() {
-                            var e = (0, b.Z)(S().mark((function e() {
+                            var e = (0, v.Z)(T().mark((function e() {
                                 var r, n;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (f) {
@@ -995,17 +1050,17 @@
                                                 groupName: f
                                             }).unwrap();
                                         case 5:
-                                            return s((0, L.d)({
+                                            return c((0, j.d)({
                                                 title: "New Favorite Friend Added!",
                                                 message: "Favorite Saved to ".concat(f),
-                                                icon: C.f8,
+                                                icon: L.f8,
                                                 color: "success",
                                                 timeout: 5e3
                                             })), e.abrupt("return", a());
                                         case 9:
-                                            return e.prev = 9, e.t0 = e.catch(2), console.error("Error creating favorite", e.t0), e.abrupt("return", s((0, L.d)({
+                                            return e.prev = 9, e.t0 = e.catch(2), console.error("Error creating favorite", e.t0), e.abrupt("return", c((0, j.d)({
                                                 title: "Failed to create a favorite",
-                                                icon: ke.eH,
+                                                icon: Se.eH,
                                                 message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
                                                 color: "danger",
                                                 timeout: 5e3
@@ -1024,7 +1079,7 @@
                         }();
                     return o.createElement("div", {
                         tabIndex: "-1",
-                        className: "\n        tw-top-0 tw-left-0 tw-right-0 tw-z-[1100]\n        tw-min-w-[200px]\n        tw-overflow-x-hidden tw-overflow-y-auto\n        md:tw-inset-0\n        tw-h-[calc(100%)] tw-max-h-full\n        tw-bg-dark-grey-transparent\n        ".concat(r ? "tw-fixed" : "tw-hidden", "\n      "),
+                        className: "\n        tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n        tw-min-w-[200px]\n        tw-overflow-x-hidden tw-overflow-y-auto\n        md:tw-inset-0\n        tw-h-[calc(100%)] tw-max-h-full\n        tw-bg-dark-grey-transparent\n        ".concat(r ? "tw-fixed" : "tw-hidden", "\n      "),
                         role: "dialog",
                         "aria-label": "Favorite User",
                         "aria-modal": r
@@ -1043,8 +1098,8 @@
                             return a()
                         },
                         "aria-label": "Close Modal"
-                    }, o.createElement(c.$1, {
-                        icon: Y.faXmark
+                    }, o.createElement(s.$1, {
+                        icon: te.faXmark
                     }), o.createElement("span", {
                         className: "tw-sr-only"
                     }, "Close modal"))), o.createElement("div", {
@@ -1055,8 +1110,8 @@
                         className: "tw-pb-5 tw-flex tw-flex-row tw-justify-start tw-items-center"
                     }, o.createElement("div", {
                         className: "tw-justify-center"
-                    }, o.createElement(c.$1, {
-                        icon: Ne.LM,
+                    }, o.createElement(s.$1, {
+                        icon: Ie.LM,
                         spin: !0,
                         className: "tw-ml-3"
                     }))), !E && o.createElement("div", {
@@ -1066,7 +1121,7 @@
                         htmlFor: "input-status-message"
                     }, "Set to Favorite User List:"), o.createElement("div", {
                         className: "tw-flex tw-flex-col sm:tw-flex-row tw-flex-1 tw-w-full"
-                    }, o.createElement(Ce.Z, {
+                    }, o.createElement(Ze.Z, {
                         favoriteGroups: w,
                         selectedGroup: f,
                         onGroupClick: function(e) {
@@ -1089,30 +1144,29 @@
                             return y()
                         },
                         disabled: h || !f
-                    }, "Add to Favorite", h && o.createElement(c.$1, {
-                        icon: Ne.LM,
+                    }, "Add to Favorite", h && o.createElement(s.$1, {
+                        icon: Ie.LM,
                         spin: !0,
                         className: "tw-ml-3"
                     }))))))))
                 };
-            Se.propTypes = {
-                friendUserId: O().string.isRequired,
-                isOpen: O().bool.isRequired,
-                cancelCallback: O().func
+            Fe.propTypes = {
+                friendUserId: P().string.isRequired,
+                isOpen: P().bool.isRequired,
+                cancelCallback: P().func
             };
-            const Le = Se;
-            var Ze = r(42138),
-                Fe = r(40098),
-                Ue = r(7371),
-                je = r(78076),
-                Te = r(27879),
-                Re = r(4965),
-                Oe = function(e) {
+            const Te = Fe;
+            var je = r(42138),
+                Ue = r(40098),
+                Re = r(7371),
+                Oe = r(78076),
+                Me = r(4965),
+                Ae = function(e) {
                     var t = e.user,
                         r = e.statusType,
                         n = e.onChange,
                         a = e.className,
-                        i = (0, s.B1)(r, "hidden"),
+                        i = (0, c.B1)(r, "hidden"),
                         w = (0, o.useState)(!1),
                         u = (0, l.Z)(w, 2),
                         d = u[0],
@@ -1134,15 +1188,15 @@
                         onKeyDown: function(e) {
                             "Enter" !== e.key && " " !== e.key || m(!d)
                         }
-                    }, o.createElement(F.Z, {
+                    }, o.createElement(R.Z, {
                         imageSize: "20px",
                         color: i.color,
                         className: "tw-h-5 tw-mr-2"
                     }), o.createElement("span", {
                         className: "tw-mr-2 tw-flex-grow"
-                    }, i.label), o.createElement(c.$1, {
-                        icon: Ue.Iw
-                    })), o.createElement(Me, {
+                    }, i.label), o.createElement(s.$1, {
+                        icon: Re.Iw
+                    })), o.createElement(De, {
                         isOpen: d,
                         onClick: function() {
                             return m(!1)
@@ -1150,7 +1204,7 @@
                     }), o.createElement("div", {
                         className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[12em] tw-top-[3.5em] tw-left-0 tw-z-10 ".concat(d ? "tw-flex" : "tw-hidden"),
                         isOpen: d
-                    }, Object.keys(s.Dq).filter((function(e) {
+                    }, Object.keys(c.Dq).filter((function(e) {
                         var r;
                         return "18+" !== e || null !== (r = null == t ? void 0 : t.isAdult) && void 0 !== r && r
                     })).map((function(e) {
@@ -1164,31 +1218,31 @@
                             onKeyDown: function(t) {
                                 "Enter" !== t.key && " " !== t.key || (m(!1), n(e))
                             }
-                        }, o.createElement(F.Z, {
+                        }, o.createElement(R.Z, {
                             imageSize: "20px",
-                            color: (0, s.B1)(e).color,
+                            color: (0, c.B1)(e).color,
                             className: "tw-h-5 tw-mr-2"
                         }), o.createElement("span", {
                             className: "tw-mr-2"
-                        }, (0, s.B1)(e).label))
+                        }, (0, c.B1)(e).label))
                     }))))
                 };
-            Oe.propTypes = {
-                statusType: O().oneOf(Object.keys(s.Dq)),
-                onChange: O().func,
-                className: O().string
+            Ae.propTypes = {
+                statusType: P().oneOf(Object.keys(c.Dq)),
+                onChange: P().func,
+                className: P().string
             };
-            var Me = (0, Re.Z)("div", {
+            var De = (0, Me.Z)("div", {
                 target: "e88e2ty0"
             })("display:", (function(e) {
                 return e.isOpen ? "block" : "none"
             }), ";position:fixed;top:0;left:0;width:100vw;height:100vh;");
-            const Ae = Oe;
-            var Pe = function(e) {
+            const Pe = Ae;
+            var ze = function(e) {
                 var t = e.statusType,
                     r = e.onChange,
                     n = e.className,
-                    a = (0, s.Tq)(t, "busy"),
+                    a = (0, c.Tq)(t, "busy"),
                     i = (0, o.useState)(!1),
                     w = (0, l.Z)(i, 2),
                     u = w[0],
@@ -1214,9 +1268,9 @@
                     className: "tw-w-4 tw-min-w-[16px] tw-h-4 tw-mr-2 ".concat(a.colorClass, " tw-rounded-full")
                 }), o.createElement("span", {
                     className: "tw-mr-2 tw-flex-grow"
-                }, a.label), o.createElement(c.$1, {
-                    icon: Ue.Iw
-                })), o.createElement(ze, {
+                }, a.label), o.createElement(s.$1, {
+                    icon: Re.Iw
+                })), o.createElement($e, {
                     isOpen: u,
                     onClick: function() {
                         return d(!1)
@@ -1224,8 +1278,8 @@
                 }), o.createElement("div", {
                     className: "tw-rounded tw-bg-option-bg tw-flex-col tw-absolute tw-w-full sm:tw-w-[9em] tw-top-[3.5em] tw-left-0 tw-z-10 ".concat(u ? "tw-flex" : "tw-hidden"),
                     isOpen: u
-                }, Object.keys(s.xY).filter((function(e) {
-                    return (0, s.Tq)(e).settable
+                }, Object.keys(c.xY).filter((function(e) {
+                    return (0, c.Tq)(e).settable
                 })).map((function(e) {
                     return o.createElement("div", {
                         className: " tw-flex tw-items-center tw-cursor-pointer tw-pt-2 tw-pb-2 tw-pl-4 tw-pr-4 tw-h-20 sm:tw-h-12 hover:tw-bg-button-bg focus:tw-bg-button-bg tw-border-0 tw-border-b-2 tw-border-b-hr-line-color tw-border-solid last:tw-border-none ",
@@ -1239,42 +1293,43 @@
                         }
                     }, o.createElement("div", {
                         key: e,
-                        className: "tw-w-4 tw-min-w-[16px] tw-h-4 tw-mr-2 ".concat((0, s.Tq)(e).colorClass, " tw-rounded-full")
+                        className: "tw-w-4 tw-min-w-[16px] tw-h-4 tw-mr-2 ".concat((0, c.Tq)(e).colorClass, " tw-rounded-full")
                     }), o.createElement("span", {
                         className: "tw-mr-2"
-                    }, (0, s.Tq)(e).label))
+                    }, (0, c.Tq)(e).label))
                 }))))
             };
-            Pe.propTypes = {
-                statusType: O().oneOf(Object.keys(s.xY)),
-                onChange: O().func,
-                className: O().string
+            ze.propTypes = {
+                statusType: P().oneOf(Object.keys(c.xY)),
+                onChange: P().func,
+                className: P().string
             };
-            var ze = (0, Re.Z)("div", {
+            var $e = (0, Me.Z)("div", {
                 target: "e1n42wje0"
             })("display:", (function(e) {
                 return e.isOpen ? "block" : "none"
             }), ";position:fixed;top:0;left:0;width:100vw;height:100vh;");
-            const De = Pe;
-            var $e = r(23208),
-                Ge = r(43946),
-                Ve = r(6767),
-                qe = r(82084),
-                Be = r(41255),
-                We = r(7570),
-                He = r(58804),
-                _e = 2048,
-                Ke = function(e) {
+            const Ve = ze;
+            var Ge = r(23208),
+                qe = r(43946),
+                Be = r(6767),
+                We = r(42619),
+                He = r(82084),
+                _e = r(41255),
+                Ke = r(7570),
+                Ye = r(58804),
+                Qe = 2048,
+                Xe = function(e) {
                     var t, r, n, a = e.userId,
-                        s = e.isOpen,
-                        i = void 0 !== s && s,
+                        c = e.isOpen,
+                        i = void 0 !== c && c,
                         w = e.cancelCallback,
                         u = void 0 === w ? function() {} : w,
                         m = e.mode,
-                        p = void 0 === m ? "profileIcon" : m,
-                        g = (0, B.I0)(),
-                        v = (0, o.useState)(),
-                        x = (0, l.Z)(v, 2),
+                        f = void 0 === m ? "profileIcon" : m,
+                        g = (0, Y.I0)(),
+                        b = (0, o.useState)(),
+                        x = (0, l.Z)(b, 2),
                         h = x[0],
                         E = x[1],
                         y = (0, o.useState)(null),
@@ -1282,49 +1337,57 @@
                         k = N[0],
                         C = N[1],
                         I = (0, o.useState)(),
-                        Z = (0, l.Z)(I, 2),
-                        F = Z[0],
-                        U = Z[1],
-                        j = (0, o.useRef)(null),
-                        R = (0, o.useRef)(null),
-                        O = (0, o.useState)(""),
-                        M = (0, l.Z)(O, 2),
-                        A = M[0],
-                        P = M[1],
-                        z = (0, o.useState)(""),
-                        D = (0, l.Z)(z, 2),
-                        $ = D[0],
-                        G = D[1],
-                        V = (0, o.useState)(1),
-                        q = (0, l.Z)(V, 2),
-                        W = q[0],
-                        H = q[1],
-                        _ = (0, o.useState)(0),
-                        K = (0, l.Z)(_, 2),
-                        Q = K[0],
-                        X = K[1],
-                        J = (0, o.useState)(null),
-                        ee = (0, l.Z)(J, 2),
-                        te = ee[0],
-                        re = ee[1],
-                        ne = "" !== $,
-                        ae = (0, Be.Yh)(),
-                        le = (0, l.Z)(ae, 2),
-                        oe = le[0],
-                        se = le[1],
-                        ce = se.isLoading,
-                        ie = se.error;
-                    t = (0, b.Z)(S().mark((function e() {
-                        return S().wrap((function(e) {
+                        S = (0, l.Z)(I, 2),
+                        Z = S[0],
+                        L = S[1],
+                        F = (0, o.useRef)(null),
+                        U = (0, o.useRef)(null),
+                        R = (0, o.useState)(""),
+                        O = (0, l.Z)(R, 2),
+                        M = O[0],
+                        D = O[1],
+                        P = (0, o.useState)(""),
+                        z = (0, l.Z)(P, 2),
+                        $ = z[0],
+                        V = z[1],
+                        G = (0, o.useState)(1),
+                        q = (0, l.Z)(G, 2),
+                        B = q[0],
+                        W = q[1],
+                        H = (0, o.useState)(0),
+                        _ = (0, l.Z)(H, 2),
+                        K = _[0],
+                        Q = _[1],
+                        X = (0, o.useState)(null),
+                        J = (0, l.Z)(X, 2),
+                        ee = J[0],
+                        re = J[1],
+                        ne = (0, o.useState)(!1),
+                        ae = (0, l.Z)(ne, 2),
+                        le = ae[0],
+                        oe = ae[1],
+                        ce = (0, o.useState)(null),
+                        se = (0, l.Z)(ce, 2),
+                        ie = se[0],
+                        we = se[1],
+                        ue = "" !== $,
+                        de = (0, _e.Yh)(),
+                        me = (0, l.Z)(de, 2),
+                        fe = me[0],
+                        pe = me[1],
+                        ge = pe.isLoading,
+                        be = pe.error;
+                    t = (0, v.Z)(T().mark((function e() {
+                        return T().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    null != F && F.width && null != F && F.height && R.current && j.current && (0, We.t)(R.current, j.current, F, W, Q);
+                                    null != Z && Z.width && null != Z && Z.height && U.current && F.current && (0, Ke.t)(U.current, F.current, Z, B, K);
                                 case 1:
                                 case "end":
                                     return e.stop()
                             }
                         }), e)
-                    }))), r = 100, n = [F, W, Q], (0, o.useEffect)((function() {
+                    }))), r = 100, n = [Z, B, K], (0, o.useEffect)((function() {
                         var e = setTimeout((function() {
                             t.apply(void 0, n)
                         }), r);
@@ -1332,42 +1395,46 @@
                             clearTimeout(e)
                         }
                     }), n);
-                    var we = function() {
-                            G(""), X(0), H(1), P("")
+                    var ve = function() {
+                            V(""), Q(0), W(1), D("")
                         },
-                        ue = (0, Be.sR)({
+                        xe = (0, _e.sR)({
                             userId: a
                         }, {
-                            skip: "profileIcon" !== p || !i
+                            skip: "profileIcon" !== f || !i
                         }),
-                        de = ue.data,
-                        me = void 0 === de ? [] : de,
-                        fe = ue.isFetching,
-                        pe = ue.isSuccess,
-                        ge = (0, Be.FQ)({
+                        he = xe.data,
+                        Ee = void 0 === he ? [] : he,
+                        ye = xe.isFetching,
+                        Ne = xe.isSuccess,
+                        ke = (0, _e.FQ)({
                             userId: a
                         }, {
-                            skip: "profilePicture" !== p || !i
+                            skip: "profilePicture" !== f || !i
                         }),
-                        be = ge.data,
-                        ve = void 0 === be ? [] : be,
-                        xe = ge.isFetching,
-                        he = ge.isSuccess,
-                        Ee = (0, d.al)(),
-                        ye = (0, l.Z)(Ee, 2),
-                        Ce = ye[0],
-                        Ie = ye[1].isLoading,
-                        Se = (0, d.Cl)(),
-                        Le = (0, l.Z)(Se, 2),
-                        Ze = Le[0],
-                        Ue = Le[1].isLoading,
-                        Te = {
+                        Ce = ke.data,
+                        Ze = void 0 === Ce ? [] : Ce,
+                        Le = ke.isFetching,
+                        Fe = ke.isSuccess,
+                        Te = (0, d.al)(),
+                        je = (0, l.Z)(Te, 2),
+                        Re = je[0],
+                        Me = je[1].isLoading,
+                        Ae = (0, d.Cl)(),
+                        De = (0, l.Z)(Ae, 2),
+                        Pe = De[0],
+                        ze = De[1].isLoading,
+                        $e = (0, _e.g3)(),
+                        Ve = (0, l.Z)($e, 2),
+                        Xe = Ve[0],
+                        Je = Ve[1].isLoading,
+                        et = {
                             profileIcon: {
                                 modalTitle: "Add your icon",
                                 modalSubTitle: "Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels.",
                                 gallerySelectionTitle: "Select from your uploaded icons",
                                 tag: "icon",
-                                updateUserFileMutation: Ce,
+                                updateUserFileMutation: Re,
                                 feedbackTitle: "Change Profile Icon",
                                 successMessage: "Icon successfully updated.",
                                 failedMessage: "Failed to change icon.",
@@ -1380,7 +1447,7 @@
                                 modalSubTitle: "Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels.",
                                 gallerySelectionTitle: "Select from your uploaded pictures",
                                 tag: "gallery",
-                                updateUserFileMutation: Ze,
+                                updateUserFileMutation: Pe,
                                 feedbackTitle: "Change Profile Picture",
                                 successMessage: "Profile picture successfully updated.",
                                 failedMessage: "Failed to change profile picture.",
@@ -1389,22 +1456,22 @@
                                 isRounded: !1
                             }
                         },
-                        Re = (0, o.useMemo)((function() {
-                            return 1 === Te[p].aspectRatio
-                        }), [p]),
-                        Oe = function(e) {
+                        tt = (0, o.useMemo)((function() {
+                            return 1 === et[f].aspectRatio
+                        }), [f]),
+                        rt = function(e) {
                             var t = e.mediaWidth,
                                 r = e.mediaHeight,
                                 n = e.aspect;
-                            return (0, qe._H)((0, qe.YG)({
+                            return (0, He._H)((0, He.YG)({
                                 unit: "%",
                                 width: 90
                             }, n, t, r), t, r)
                         },
-                        Me = function() {
-                            var e = (0, b.Z)(S().mark((function e(t) {
+                        nt = function() {
+                            var e = (0, v.Z)(T().mark((function e(t) {
                                 var r, n;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (!(t.target.files && t.target.files.length > 0)) {
@@ -1424,7 +1491,7 @@
                                                 r.width < 64 || r.height < 64 ? re({
                                                     pass: !1,
                                                     message: "Image dimensions are too small, must be larger than 64x64 pixels."
-                                                }) : r.width > _e || r.height > _e ? re({
+                                                }) : r.width > Qe || r.height > Qe ? re({
                                                     pass: !1,
                                                     message: "Image dimensions are too large, must be smaller than 2048x2048 pixels."
                                                 }) : (window.URL.revokeObjectURL(r.src), re({
@@ -1435,7 +1502,7 @@
                                                 once: !0
                                             }), r.src = window.URL.createObjectURL(t.target.files[0]), E(void 0), (n = new FileReader).addEventListener("load", (function() {
                                                 var e;
-                                                return G((null === (e = n.result) || void 0 === e ? void 0 : e.toString()) || "")
+                                                return V((null === (e = n.result) || void 0 === e ? void 0 : e.toString()) || "")
                                             })), n.readAsDataURL(t.target.files[0]);
                                         case 11:
                                         case "end":
@@ -1452,29 +1519,29 @@
                             if (null !== k) {
                                 var e = k.width,
                                     t = k.height;
-                                E(Oe({
+                                E(rt({
                                     mediaWidth: e,
                                     mediaHeight: t,
-                                    maxHeight: _e,
-                                    maxWidth: _e,
-                                    aspect: Te[p].aspectRatio
+                                    maxHeight: Qe,
+                                    maxWidth: Qe,
+                                    aspect: et[f].aspectRatio
                                 }))
                             }
                         }()
                     }), [k]);
-                    var Ae = function() {
-                            var e = (0, b.Z)(S().mark((function e() {
+                    var at = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
                                 var t, r, n, a, l;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (Re) {
+                                            if (tt) {
                                                 e.next = 2;
                                                 break
                                             }
-                                            return e.abrupt("return", null == j ? void 0 : j.current);
+                                            return e.abrupt("return", null == F ? void 0 : F.current);
                                         case 2:
-                                            return t = j.current.width, r = j.current.height, n = Math.min(t, r), (a = document.createElement("canvas")).width = n, a.height = n, l = a.getContext("2d"), e.next = 11, l.drawImage(j.current, (j.current.width - n) / 2, (j.current.height - n) / 2, n, n);
+                                            return t = F.current.width, r = F.current.height, n = Math.min(t, r), (a = document.createElement("canvas")).width = n, a.height = n, l = a.getContext("2d"), e.next = 11, l.drawImage(F.current, (F.current.width - n) / 2, (F.current.height - n) / 2, n, n);
                                         case 11:
                                             return e.abrupt("return", a);
                                         case 12:
@@ -1487,54 +1554,54 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Pe = function() {
-                            var e = (0, b.Z)(S().mark((function e() {
+                        lt = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
                                 var t;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (j.current) {
+                                            if (F.current) {
                                                 e.next = 2;
                                                 break
                                             }
                                             throw new Error("Crop canvas does not exist");
                                         case 2:
-                                            return e.next = 4, Ae();
+                                            return e.next = 4, at();
                                         case 4:
                                             return t = e.sent, e.next = 7, t.toBlob(function() {
-                                                var e = (0, b.Z)(S().mark((function e(t) {
+                                                var e = (0, v.Z)(T().mark((function e(t) {
                                                     var r, n, l, o;
-                                                    return S().wrap((function(e) {
+                                                    return T().wrap((function(e) {
                                                         for (;;) switch (e.prev = e.next) {
                                                             case 0:
                                                                 return e.next = 2, new File([t], "fileName.jpg", {
                                                                     type: "image/png"
                                                                 });
                                                             case 2:
-                                                                return r = e.sent, e.prev = 3, e.next = 6, oe({
-                                                                    tag: Te[p].tag,
+                                                                return r = e.sent, e.prev = 3, e.next = 6, fe({
+                                                                    tag: et[f].tag,
                                                                     file: r,
                                                                     userId: a
                                                                 }).unwrap();
                                                             case 6:
-                                                                return n = e.sent, e.next = 9, Te[p].updateUserFileMutation({
+                                                                return n = e.sent, e.next = 9, et[f].updateUserFileMutation({
                                                                     userId: a,
                                                                     url: "https://api.vrchat.cloud/api/1/file/".concat(n.id, "/1")
                                                                 }).unwrap();
                                                             case 9:
-                                                                g((0, L.d)({
-                                                                    title: Te[p].feedbackTitle,
-                                                                    icon: je.Vm,
-                                                                    message: Te[p].successMessage,
+                                                                g((0, j.d)({
+                                                                    title: et[f].feedbackTitle,
+                                                                    icon: Oe.Vm,
+                                                                    message: et[f].successMessage,
                                                                     color: "success",
                                                                     timeout: 5e3
-                                                                })), we(), u(), e.next = 18;
+                                                                })), ve(), u(), e.next = 18;
                                                                 break;
                                                             case 14:
-                                                                e.prev = 14, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), (0, L.d)({
-                                                                    title: Te[p].feedbackTitle,
-                                                                    icon: ke.eH,
-                                                                    message: null !== (l = null == ie || null === (o = ie.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : Te[p].failedMessage,
+                                                                e.prev = 14, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), (0, j.d)({
+                                                                    title: et[f].feedbackTitle,
+                                                                    icon: Se.eH,
+                                                                    message: null !== (l = null == be || null === (o = be.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : et[f].failedMessage,
                                                                     color: "danger",
                                                                     timeout: 5e3
                                                                 });
@@ -1560,30 +1627,30 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        ze = function() {
-                            var e = (0, b.Z)(S().mark((function e(t) {
+                        ot = function() {
+                            var e = (0, v.Z)(T().mark((function e(t) {
                                 var r, n;
-                                return S().wrap((function(e) {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, e.next = 3, Te[p].updateUserFileMutation({
+                                            return e.prev = 0, e.next = 3, et[f].updateUserFileMutation({
                                                 userId: a,
                                                 url: t.latestVersionFile.file.url
                                             }).unwrap();
                                         case 3:
-                                            g((0, L.d)({
-                                                title: Te[p].feedbackTitle,
-                                                icon: je.Vm,
-                                                message: Te[p].successMessage,
+                                            g((0, j.d)({
+                                                title: et[f].feedbackTitle,
+                                                icon: Oe.Vm,
+                                                message: et[f].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
-                                            })), we(), u(), e.next = 11;
+                                            })), ve(), u(), e.next = 11;
                                             break;
                                         case 8:
-                                            e.prev = 8, e.t0 = e.catch(0), g((0, L.d)({
-                                                title: Te[p].feedbackTitle,
-                                                icon: ke.eH,
-                                                message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : Te[p].failedMessage,
+                                            e.prev = 8, e.t0 = e.catch(0), g((0, j.d)({
+                                                title: et[f].feedbackTitle,
+                                                icon: Se.eH,
+                                                message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : et[f].failedMessage,
                                                 color: "danger",
                                                 timeout: 5e3
                                             }));
@@ -1599,12 +1666,12 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        De = function() {
-                            var e = (0, b.Z)(S().mark((function e() {
-                                return S().wrap((function(e) {
+                        ct = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
+                                return T().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, ze({
+                                            return e.next = 2, ot({
                                                 latestVersionFile: {
                                                     file: {
                                                         url: ""
@@ -1623,11 +1690,62 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Ke = "" !== A && (null == te ? void 0 : te.pass),
-                        Ye = fe || Ie || ce || xe || Ue;
-                    return o.createElement("div", {
+                        st = function(e) {
+                            we(e), oe(!0)
+                        },
+                        it = function() {
+                            var e = (0, v.Z)(T().mark((function e() {
+                                var t, r;
+                                return T().wrap((function(e) {
+                                    for (;;) switch (e.prev = e.next) {
+                                        case 0:
+                                            if (ie) {
+                                                e.next = 2;
+                                                break
+                                            }
+                                            return e.abrupt("return");
+                                        case 2:
+                                            return e.prev = 2, e.next = 5, Xe({
+                                                fileId: ie,
+                                                tag: et[f].tag,
+                                                userId: a
+                                            }).unwrap();
+                                        case 5:
+                                            g((0, j.d)({
+                                                title: "Delete Image",
+                                                icon: We.$,
+                                                message: "Image successfully deleted.",
+                                                color: "success",
+                                                timeout: 5e3
+                                            })), e.next = 11;
+                                            break;
+                                        case 8:
+                                            e.prev = 8, e.t0 = e.catch(2), g((0, j.d)({
+                                                title: "Delete Image",
+                                                icon: Se.eH,
+                                                message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Failed to delete image.",
+                                                color: "danger",
+                                                timeout: 5e3
+                                            }));
+                                        case 11:
+                                            return e.prev = 11, oe(!1), we(null), e.finish(11);
+                                        case 15:
+                                        case "end":
+                                            return e.stop()
+                                    }
+                                }), e, null, [
+                                    [2, 8, 11, 15]
+                                ])
+                            })));
+                            return function() {
+                                return e.apply(this, arguments)
+                            }
+                        }(),
+                        wt = "" !== M && (null == ee ? void 0 : ee.pass),
+                        ut = ye || Me || ge || Le || ze || Je;
+                    return o.createElement(o.Fragment, null, o.createElement("div", {
                         tabIndex: "-1",
-                        className: (0, T.cx)("\n          tw-top-0 tw-left-0 tw-right-0 tw-z-[1100]\n          tw-overflow-x-hidden tw-overflow-y-auto\n          md:tw-inset-0\n          tw-h-[calc(100%-1rem)] tw-max-h-full\n          tw-bg-dark-grey-transparent\n        ", {
+                        className: (0, A.cx)("\n            tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n            tw-overflow-x-hidden tw-overflow-y-auto\n            md:tw-inset-0\n            tw-h-[calc(100%-1rem)] tw-max-h-full\n            tw-bg-dark-grey-transparent\n          ", {
                             "tw-fixed": i,
                             "tw-hidden": !i
                         })
@@ -1639,16 +1757,16 @@
                         className: "tw-flex tw-items-start tw-justify-between tw-p-4 tw-pb-0 tw-rounded-t"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-border-t after:tw-pb-0 after:tw-mt-5 "
-                    }, Te[p].modalTitle, o.createElement("small", {
+                    }, et[f].modalTitle, o.createElement("small", {
                         className: "tw-flex tw-font-normal tw-text-lighter-grey"
-                    }, Te[p].modalSubTitle)), o.createElement("button", {
+                    }, et[f].modalSubTitle)), o.createElement("button", {
                         type: "button",
                         className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-absolute -tw-right-4 -tw-top-4 tw-border-none ",
                         onClick: function() {
-                            we(), u()
+                            ve(), u()
                         }
-                    }, o.createElement(c.$1, {
-                        icon: Y.faXmark
+                    }, o.createElement(s.$1, {
+                        icon: te.faXmark
                     }), o.createElement("span", {
                         className: "tw-sr-only"
                     }, "Close modal"))), o.createElement("div", {
@@ -1662,35 +1780,35 @@
                         className: " tw-block tw-w-full tw-text-sm tw-text-lighter-grey tw-border tw-rounded-md tw-outline-none tw-bg-gray-700 tw-border-gray-60 tw-cursor-pointer file:tw-p-2 file:tw-bg-button-bg file:tw-border-none file:tw-text-highlight file:tw-cursor-pointer ",
                         id: "file_input",
                         type: "file",
-                        value: A,
+                        value: M,
                         onChange: function(e) {
-                            P(e.target.value), Me(e)
+                            D(e.target.value), nt(e)
                         }
-                    }), null !== te && !1 === te.pass && o.createElement("div", {
+                    }), null !== ee && !1 === ee.pass && o.createElement("div", {
                         className: "card danger tw-mt-5 tw-flex tw-flex-col"
-                    }, o.createElement("span", null, o.createElement(c.$1, {
-                        icon: ke.eH,
+                    }, o.createElement("span", null, o.createElement(s.$1, {
+                        icon: Se.eH,
                         color: "red"
-                    }), " ", te.message)))), ne && (null == te ? void 0 : te.pass) && o.createElement("div", {
+                    }), " ", ee.message)))), ue && (null == ee ? void 0 : ee.pass) && o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
                         className: "tw-pb-5 tw-flex tw-flex-row tw-justify-center"
-                    }, o.createElement(qe.ZP, {
+                    }, o.createElement(He.ZP, {
                         crop: h,
                         onChange: function(e, t) {
                             return E(t)
                         },
                         onComplete: function(e) {
-                            return U(e)
+                            return L(e)
                         },
-                        aspect: Te[p].aspectRatio,
+                        aspect: et[f].aspectRatio,
                         minHeight: 64
                     }, o.createElement("img", {
-                        ref: R,
+                        ref: U,
                         alt: "Crop me",
                         src: $,
                         style: {
-                            transform: "scale(".concat(W, ") rotate(").concat(Q, "deg)")
+                            transform: "scale(".concat(B, ") rotate(").concat(K, "deg)")
                         },
                         onLoad: function(e) {
                             var t = e.currentTarget,
@@ -1701,12 +1819,12 @@
                                 height: n
                             });
                             var a = Math.min(r, n);
-                            E(Oe({
+                            E(rt({
                                 mediaWidth: r,
                                 mediaHeight: n,
-                                maxHeight: Re ? a : _e,
-                                maxWidth: Re ? a : _e,
-                                aspect: Te[p].aspectRatio
+                                maxHeight: tt ? a : Qe,
+                                maxWidth: tt ? a : Qe,
+                                aspect: et[f].aspectRatio
                             }))
                         },
                         className: "tw-h-96"
@@ -1720,12 +1838,12 @@
                         type: "button",
                         className: " tw-h-9 tw-w-fit tw-border-0 tw-rounded-md tw-px-8 tw-py-2 tw-bg-button-bg tw-text-highlight tw-leading-none hover:tw-bg-button-bg-100 hover:tw-text-white ",
                         onClick: function() {
-                            X(0), H(1)
+                            Q(0), W(1)
                         }
                     }, "Reset"))), o.createElement("div", {
                         className: "tw-flex tw-col-span-3 tw-items-center"
-                    }, o.createElement(c.$1, {
-                        icon: Ve.Kl
+                    }, o.createElement(s.$1, {
+                        icon: Be.Kl
                     }), o.createElement("input", {
                         type: "range",
                         className: "sliderInput tw-mx-4",
@@ -1733,140 +1851,159 @@
                         min: "1",
                         max: "5",
                         step: .01,
-                        value: W,
+                        value: B,
                         onChange: function(e) {
-                            return H(Number(e.target.value))
+                            return W(Number(e.target.value))
                         }
-                    }), o.createElement(c.$1, {
-                        icon: Fe.r8
+                    }), o.createElement(s.$1, {
+                        icon: Ue.r8
                     })), o.createElement("div", {
                         className: "tw-block"
                     }, o.createElement("button", {
                         type: "button",
                         className: " tw-bg-button-bg tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-mr-3 tw-inline-flex tw-justify-center tw-items-center tw-border-none ",
                         onClick: function() {
-                            return X(Q - 90)
+                            return Q(K - 90)
                         }
-                    }, o.createElement(c.$1, {
-                        icon: Ge.Xn
+                    }, o.createElement(s.$1, {
+                        icon: qe.Xn
                     }), o.createElement("span", {
                         className: "tw-sr-only"
                     }, "Rotate Left")), o.createElement("button", {
                         type: "button",
                         className: " tw-bg-button-bg tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-inline-flex tw-justify-center tw-items-center tw-border-none ",
                         onClick: function() {
-                            return X(Q + 90)
+                            return Q(K + 90)
                         }
-                    }, o.createElement(c.$1, {
-                        icon: $e.mH
+                    }, o.createElement(s.$1, {
+                        icon: Ge.mH
                     }), o.createElement("span", {
                         className: "tw-sr-only"
-                    }, "Rotate Right")))), !!F && ne && (null == te ? void 0 : te.pass) && o.createElement("div", {
+                    }, "Rotate Right")))), !!Z && ue && (null == ee ? void 0 : ee.pass) && o.createElement("div", {
                         className: "tw-pb-5 tw-flex tw-flex-col"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white tw-pt-4 tw-text-center after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-pb-0 after:tw-mt-5 "
                     }, "Preview"), o.createElement("div", {
                         className: "tw-flex tw-justify-center"
                     }, o.createElement("canvas", {
-                        ref: j,
-                        className: (0, T.cx)("tw-shadow-lg", {
-                            "tw-rounded-full tw-w-60 tw-h-60 sm:tw-w-40 sm:tw-h-40": Te[p].isRounded,
-                            "tw-rounded-lg tw-w-86 tw-h-auto": !Te[p].isRounded
+                        ref: F,
+                        className: (0, A.cx)("tw-shadow-lg", {
+                            "tw-rounded-full tw-w-60 tw-h-60 sm:tw-w-40 sm:tw-h-40": et[f].isRounded,
+                            "tw-rounded-lg tw-w-86 tw-h-auto": !et[f].isRounded
                         })
-                    }))))), (pe && me.length > 0 || he && ve.length > 0) && !ne && o.createElement(o.Fragment, null, o.createElement("div", {
+                    }))))), (Ne && Ee.length > 0 || Fe && Ze.length > 0) && !ue && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-flex tw-items-start tw-justify-between tw-p-4 tw-pb-0 tw-rounded-t"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-border-t after:tw-pb-0 after:tw-mt-5 "
-                    }, Te[p].gallerySelectionTitle)), o.createElement("div", {
-                        className: "\n                  tw-grid tw-flow-col tw-gap-4 tw-p-4\n                  tw-grid-cols-1\n                  ".concat("profileIcon" === p ? "\n                        sm:tw-grid-cols-3\n                        md:tw-grid-cols-4\n                        lg:tw-grid-cols-5\n                        xl:tw-grid-cols-6\n                        2xl:tw-grid-cols-9\n                      " : "\n                        sm:tw-grid-cols-1\n                        md:tw-grid-cols-2\n                        lg:tw-grid-cols-3\n                        xl:tw-grid-cols-4\n                        2xl:tw-grid-cols-6\n                      ", "\n                ")
-                    }, "profileIcon" === p && me.map((function(e) {
-                        return o.createElement(He.Z, {
+                    }, et[f].gallerySelectionTitle)), o.createElement("div", {
+                        className: "\n                  tw-grid tw-flow-col tw-gap-4 tw-p-4\n                  tw-grid-cols-1\n                  ".concat("profileIcon" === f ? "\n                        sm:tw-grid-cols-3\n                        md:tw-grid-cols-4\n                        lg:tw-grid-cols-5\n                        xl:tw-grid-cols-6\n                        2xl:tw-grid-cols-9\n                      " : "\n                        sm:tw-grid-cols-1\n                        md:tw-grid-cols-2\n                        lg:tw-grid-cols-3\n                        xl:tw-grid-cols-4\n                        2xl:tw-grid-cols-6\n                      ", "\n                ")
+                    }, "profileIcon" === f && Ee.map((function(e) {
+                        return o.createElement(Ye.Z, {
                             key: e.id,
-                            srcUrl: (0, f.S6)({
+                            fileId: e.id,
+                            srcUrl: (0, p.S6)({
                                 fileId: e.id,
                                 width: 512
                             }),
-                            onClick: (0, b.Z)(S().mark((function t() {
-                                return S().wrap((function(t) {
+                            onClick: (0, v.Z)(T().mark((function t() {
+                                return T().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            ze(e);
+                                            ot(e);
                                         case 1:
                                         case "end":
                                             return t.stop()
                                     }
                                 }), t)
                             }))),
+                            onDeleteCallback: function(e) {
+                                st(e)
+                            },
                             isRounded: !0
                         })
-                    })), "profilePicture" === p && ve.map((function(e) {
-                        return o.createElement(He.Z, {
+                    })), "profilePicture" === f && Ze.map((function(e) {
+                        return o.createElement(Ye.Z, {
                             key: e.id,
-                            srcUrl: (0, f.S6)({
+                            fileId: e.id,
+                            srcUrl: (0, p.S6)({
                                 fileId: e.id,
                                 width: 512
                             }),
-                            onClick: (0, b.Z)(S().mark((function t() {
-                                return S().wrap((function(t) {
+                            onClick: (0, v.Z)(T().mark((function t() {
+                                return T().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            ze(e);
+                                            ot(e);
                                         case 1:
                                         case "end":
                                             return t.stop()
                                     }
                                 }), t)
-                            })))
+                            }))),
+                            onDeleteCallback: function(e) {
+                                st(e)
+                            }
                         })
                     })))), o.createElement("div", {
                         className: "tw-flex tw-items-center tw-p-6 tw-space-x-2 tw-justify-end"
                     }, o.createElement("button", {
                         type: "button",
-                        className: (0, T.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
-                            "tw-hidden": Ke
+                        className: (0, A.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
+                            "tw-hidden": wt
                         }),
-                        onClick: De
-                    }, Te[p].clearButtonLabel), o.createElement("button", {
+                        onClick: ct
+                    }, et[f].clearButtonLabel), o.createElement("button", {
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-button-bg-grey tw-leading-none",
                         onClick: function() {
-                            we(), u()
+                            ve(), u()
                         }
                     }, "Cancel"), o.createElement("button", {
                         type: "button",
-                        className: (0, T.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
-                            "tw-hidden": !Ke
+                        className: (0, A.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
+                            "tw-hidden": !wt
                         }),
-                        disabled: Ye,
+                        disabled: ut,
                         onClick: function() {
-                            return Pe()
+                            return lt()
                         }
-                    }, "Confirm  ", Ye && o.createElement(c.$1, {
-                        icon: Ne.LM,
+                    }, "Confirm  ", ut && o.createElement(s.$1, {
+                        icon: Ie.LM,
                         spin: !0
-                    }))))))
+                    })))))), o.createElement(s.sm, {
+                        isOpen: le,
+                        headerText: "Delete Image",
+                        bodyText: "Are you sure you want to delete this image? This action cannot be undone.",
+                        confirmText: "Delete",
+                        confirmCallback: it,
+                        cancelCallback: function() {
+                            oe(!1), we(null)
+                        },
+                        isLoading: Je,
+                        type: "danger"
+                    }))
                 };
-            Ke.propTypes = {
-                userId: O().string.isRequired,
-                isOpen: O().bool,
-                cancelCallback: O().func
+            Xe.propTypes = {
+                userId: P().string.isRequired,
+                isOpen: P().bool,
+                cancelCallback: P().func
             };
-            const Ye = Ke;
-            var Qe = r(42535),
-                Xe = r(62263),
-                Je = r(25402),
-                et = function(e) {
+            const Je = Xe;
+            var et = r(42535),
+                tt = r(62263),
+                rt = r(25402),
+                nt = function(e) {
                     var t = e.socialLinksArray,
                         r = e.value,
                         n = e.onChange,
                         a = void 0 === n ? function() {} : n,
-                        s = e.onDelete,
-                        i = void 0 === s ? function() {} : s,
+                        c = e.onDelete,
+                        i = void 0 === c ? function() {} : c,
                         w = e.order,
                         u = (0, o.useState)(r),
                         d = (0, l.Z)(u, 2),
                         m = d[0],
-                        p = d[1],
+                        f = d[1],
                         g = (0, o.useState)(!1),
                         b = (0, l.Z)(g, 2),
                         v = b[0],
@@ -1879,7 +2016,7 @@
                         className: "tw-flex tw-mb-3 tw-flex-row tw-items-center"
                     }, o.createElement("div", {
                         className: "tw-px-3"
-                    }, o.createElement(Je.QZ, {
+                    }, o.createElement(rt.QZ, {
                         url: m,
                         className: "tw-w-9 tw-h-9",
                         as: "span"
@@ -1894,10 +2031,10 @@
                         placeholder: "Add links to your social media accounts.",
                         defaultValue: r,
                         onChange: function(e) {
-                            return p(e.target.value)
+                            return f(e.target.value)
                         },
                         onBlur: function() {
-                            return m === r ? (N(""), void x(!1)) : (0, f.K2)(m) ? t.includes(m) ? (N("This social link is already added"), void x(!0)) : (N(""), x(!1), void a({
+                            return m === r ? (N(""), void x(!1)) : (0, p.K2)(m) ? t.includes(m) ? (N("This social link is already added"), void x(!0)) : (N(""), x(!1), void a({
                                 fromValue: r,
                                 toValue: m
                             })) : (N("Invalid social link"), void x(!0))
@@ -1909,27 +2046,27 @@
                         onClick: function() {
                             return i(r)
                         }
-                    }, o.createElement(c.$1, {
-                        icon: Xe.faTrashCan
+                    }, o.createElement(s.$1, {
+                        icon: tt.faTrashCan
                     }))), v && o.createElement("small", {
                         className: "tw-text-red mb-3"
                     }, y))
                 };
-            et.propTypes = {
-                value: O().string.isRequired,
-                onChange: O().func.isRequired
+            nt.propTypes = {
+                value: P().string.isRequired,
+                onChange: P().func.isRequired
             };
-            const tt = et;
-            var rt = r(39522),
-                nt = r(6281),
-                at = ["they/them", "he/him", "she/her", "it/its", "any", "ze/zir", "xe/xem"],
-                lt = "other-638aa0b1f0f04640ba6425d1fd55d8",
-                ot = function(e) {
+            const at = nt;
+            var lt = r(39522),
+                ot = r(6281),
+                ct = ["they/them", "he/him", "she/her", "it/its", "any", "ze/zir", "xe/xem"],
+                st = "other-638aa0b1f0f04640ba6425d1fd55d8",
+                it = function(e) {
                     var t, r, n, a = e.userId,
                         i = e.isOpen,
                         u = void 0 !== i && i,
                         m = e.cancelCallback,
-                        p = void 0 === m ? function() {} : m,
+                        f = void 0 === m ? function() {} : m,
                         g = (0, o.useState)("ask me"),
                         b = (0, l.Z)(g, 2),
                         v = b[0],
@@ -1941,23 +2078,23 @@
                         k = (0, o.useState)("hidden"),
                         C = (0, l.Z)(k, 2),
                         I = C[0],
-                        S = C[1],
-                        Z = (0, o.useState)(""),
-                        F = (0, l.Z)(Z, 2),
-                        U = F[0],
-                        j = F[1],
-                        T = (0, o.useState)(""),
-                        R = (0, l.Z)(T, 2),
-                        O = R[0],
-                        M = R[1],
-                        A = (0, o.useState)(!1),
-                        P = (0, l.Z)(A, 2),
+                        Z = C[1],
+                        L = (0, o.useState)(""),
+                        F = (0, l.Z)(L, 2),
+                        T = F[0],
+                        U = F[1],
+                        R = (0, o.useState)(""),
+                        O = (0, l.Z)(R, 2),
+                        M = O[0],
+                        A = O[1],
+                        D = (0, o.useState)(!1),
+                        P = (0, l.Z)(D, 2),
                         z = P[0],
-                        D = P[1],
-                        $ = (0, o.useState)(!1),
-                        G = (0, l.Z)($, 2),
-                        V = G[0],
-                        q = G[1],
+                        $ = P[1],
+                        V = (0, o.useState)(!1),
+                        G = (0, l.Z)(V, 2),
+                        q = G[0],
+                        B = G[1],
                         W = (0, o.useState)("profileIcon"),
                         H = (0, l.Z)(W, 2),
                         _ = H[0],
@@ -1966,53 +2103,53 @@
                         X = (0, l.Z)(Q, 2),
                         J = X[0],
                         ee = X[1],
-                        te = (0, o.useState)([]),
-                        re = (0, l.Z)(te, 2),
-                        ne = re[0],
-                        ae = re[1],
-                        le = (0, o.useState)([]),
-                        oe = (0, l.Z)(le, 2),
-                        se = oe[0],
-                        ce = oe[1],
-                        ie = (0, o.useState)([]),
-                        we = (0, l.Z)(ie, 2),
-                        ue = we[0],
-                        de = we[1],
-                        me = (0, o.useState)(""),
-                        fe = (0, l.Z)(me, 2),
-                        pe = fe[0],
-                        ge = fe[1],
-                        be = (0, o.useState)(!1),
-                        ve = (0, l.Z)(be, 2),
-                        xe = ve[0],
-                        he = ve[1],
-                        Ee = (0, o.useState)(""),
-                        ye = (0, l.Z)(Ee, 2),
-                        Ce = ye[0],
-                        Ie = ye[1],
-                        Se = (0, B.I0)(),
+                        re = (0, o.useState)([]),
+                        ne = (0, l.Z)(re, 2),
+                        ae = ne[0],
+                        le = ne[1],
+                        oe = (0, o.useState)([]),
+                        ce = (0, l.Z)(oe, 2),
+                        se = ce[0],
+                        ie = ce[1],
+                        we = (0, o.useState)([]),
+                        ue = (0, l.Z)(we, 2),
+                        de = ue[0],
+                        me = ue[1],
+                        fe = (0, o.useState)(""),
+                        pe = (0, l.Z)(fe, 2),
+                        ge = pe[0],
+                        be = pe[1],
+                        ve = (0, o.useState)(!1),
+                        xe = (0, l.Z)(ve, 2),
+                        he = xe[0],
+                        Ee = xe[1],
+                        ye = (0, o.useState)(""),
+                        Ne = (0, l.Z)(ye, 2),
+                        ke = Ne[0],
+                        Ce = Ne[1],
+                        Ze = (0, Y.I0)(),
                         Le = (0, d.LF)(),
-                        Re = (0, l.Z)(Le, 2),
-                        Oe = Re[0],
-                        Me = Re[1],
-                        Pe = Me.isLoading,
-                        ze = Me.isSuccess,
-                        $e = Me.isError,
-                        Ge = Me.error,
-                        Ve = (0, d.GR)(a),
-                        qe = Ve.data,
-                        Be = Ve.isFetching,
-                        We = Ve.isError,
-                        He = Ve.error,
-                        _e = Ve.isSuccess,
+                        Fe = (0, l.Z)(Le, 2),
+                        Te = Fe[0],
+                        Me = Fe[1],
+                        Ae = Me.isLoading,
+                        De = Me.isSuccess,
+                        ze = Me.isError,
+                        $e = Me.error,
+                        Ge = (0, d.GR)(a),
+                        qe = Ge.data,
+                        Be = Ge.isFetching,
+                        We = Ge.isError,
+                        He = Ge.error,
+                        _e = Ge.isSuccess,
                         Ke = (0, w.y)().data,
-                        Xe = null !== (t = null == Ke || null === (r = Ke.constants) || void 0 === r || null === (r = r.LANGUAGE) || void 0 === r ? void 0 : r.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== t ? t : s.O;
+                        Ye = null !== (t = null == Ke || null === (r = Ke.constants) || void 0 === r || null === (r = r.LANGUAGE) || void 0 === r ? void 0 : r.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== t ? t : c.O;
                     if (!_e) return null;
-                    var Je = qe.currentAvatarImageUrl,
-                        et = qe.profilePicOverride,
-                        ot = qe.displayName,
-                        st = qe.userIcon,
-                        ct = qe.tags,
+                    var Qe = qe.currentAvatarImageUrl,
+                        Xe = qe.profilePicOverride,
+                        tt = qe.displayName,
+                        rt = qe.userIcon,
+                        nt = qe.tags,
                         it = qe.bio,
                         wt = qe.bioLinks,
                         ut = qe.pronouns,
@@ -2022,30 +2159,30 @@
                         pt = qe.isAdult,
                         gt = qe.ageVerificationStatus;
                     (0, o.useEffect)((function() {
-                        N(mt), j(it), D("" !== ut && !at.includes(ut)), M(null != ut ? ut : ""), de(wt), x(dt), S(gt)
+                        N(mt), U(it), $("" !== ut && !ct.includes(ut)), A(null != ut ? ut : ""), me(wt), x(dt), Z(gt)
                     }), [qe]), (0, o.useEffect)((function() {
-                        ze && (p(), Se((0, L.d)({
+                        De && (f(), Ze((0, j.d)({
                             title: "Update Profile",
-                            icon: Te.IL,
+                            icon: S.IL,
                             message: "Profile successfully updated!",
                             color: "success",
                             timeout: 3e3
                         })))
-                    }), [ze]);
-                    var bt = ct.includes("system_supporter");
+                    }), [De]);
+                    var bt = nt.includes("system_supporter");
                     (0, o.useEffect)((function() {
-                        var e = ct.filter((function(e) {
+                        var e = nt.filter((function(e) {
                             return e.startsWith("language")
                         })).map((function(e) {
                             var t = e.split("_")[1];
                             return {
                                 code: t,
-                                title: Xe[t]
+                                title: Ye[t]
                             }
                         }));
-                        ae(e)
-                    }), [ct]), (0, o.useEffect)((function() {
-                        var e = Object.entries(Xe).map((function(e) {
+                        le(e)
+                    }), [nt]), (0, o.useEffect)((function() {
+                        var e = Object.entries(Ye).map((function(e) {
                             var t = (0, l.Z)(e, 2),
                                 r = t[0];
                             return {
@@ -2055,21 +2192,21 @@
                         })).reduce((function(e, t) {
                             var r = t.label,
                                 n = t.value;
-                            return ne.some((function(e) {
+                            return ae.some((function(e) {
                                 return e.code === n
-                            })) ? e : [].concat((0, Ze.Z)(e), [{
+                            })) ? e : [].concat((0, je.Z)(e), [{
                                 label: r,
                                 value: n
                             }])
                         }), []);
-                        ce(e)
-                    }), [ne]);
+                        ie(e)
+                    }), [ae]);
                     var vt, xt = function() {
-                        return "" === pe ? (he(!1), void Ie("")) : (0, f.K2)(pe) ? ue.includes(pe) ? (Ie("This social link is already added"), void he(!0)) : (he(!1), Ie(""), ge(""), void de([].concat((0, Ze.Z)(ue), [pe.trim()]))) : (Ie("Invalid social link"), void he(!0))
+                        return "" === ge ? (Ee(!1), void Ce("")) : (0, p.K2)(ge) ? de.includes(ge) ? (Ce("This social link is already added"), void Ee(!0)) : (Ee(!1), Ce(""), be(""), void me([].concat((0, je.Z)(de), [ge.trim()]))) : (Ce("Invalid social link"), void Ee(!0))
                     };
                     if (We) return o.createElement("div", {
                         tabIndex: "-1",
-                        className: "\n          tw-top-0 tw-left-0 tw-right-0 tw-z-[1100]\n          tw-overflow-x-hidden tw-overflow-y-auto\n          md:tw-inset-0\n          tw-max-h-full\n          tw-bg-dark-grey-transparent\n          ".concat(u ? "tw-fixed" : "tw-hidden", "\n        ")
+                        className: "\n          tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n          tw-overflow-x-hidden tw-overflow-y-auto\n          md:tw-inset-0\n          tw-max-h-full\n          tw-bg-dark-grey-transparent\n          ".concat(u ? "tw-fixed" : "tw-hidden", "\n        ")
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-margin-top tw-mt-auto tw-p-10"
                     }, o.createElement("h3", {
@@ -2077,15 +2214,15 @@
                     }, "Failed To Load User Data"), o.createElement("code", null, null === (vt = He.data) || void 0 === vt || null === (vt = vt.error) || void 0 === vt ? void 0 : vt.message)));
                     return o.createElement("div", {
                         tabIndex: "-1",
-                        className: "\n        tw-top-0 tw-left-0 tw-right-0 tw-z-[1100]\n        tw-overflow-x-hidden tw-overflow-y-auto\n        md:tw-inset-0\n        tw-max-h-full\n        tw-bg-dark-grey-transparent\n        ".concat(u ? "tw-fixed" : "tw-hidden", "\n      "),
+                        className: "\n        tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n        tw-overflow-x-hidden tw-overflow-y-auto\n        md:tw-inset-0\n        tw-max-h-full\n        tw-bg-dark-grey-transparent\n        ".concat(u ? "tw-fixed" : "tw-hidden", "\n      "),
                         role: "dialog",
                         "aria-label": "Basic Info",
                         "aria-modal": u
-                    }, o.createElement(Ye, {
-                        isOpen: V,
+                    }, o.createElement(Je, {
+                        isOpen: q,
                         userId: a,
                         cancelCallback: function() {
-                            return q(!1)
+                            return B(!1)
                         },
                         mode: _
                     }), o.createElement("div", {
@@ -2100,11 +2237,11 @@
                         type: "button",
                         className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-10 tw-h-10 tw-ml-auto sm:tw-w-8 sm:tw-h-8 tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-border-none tw-block sm:tw-absolute sm:-tw-right-4 sm:-tw-top-4 ",
                         onClick: function() {
-                            return p()
+                            return f()
                         },
                         "aria-label": "Close Modal"
-                    }, o.createElement(c.$1, {
-                        icon: Y.faXmark
+                    }, o.createElement(s.$1, {
+                        icon: te.faXmark
                     }), o.createElement("span", {
                         className: "tw-sr-only"
                     }, "Close modal"))), o.createElement("div", {
@@ -2118,23 +2255,23 @@
                     }, "Profile Icon"), o.createElement("div", {
                         className: "tw-relative"
                     }, !Be && o.createElement("img", {
-                        src: st || Je || et,
-                        alt: "".concat(ot, "'s user icon"),
+                        src: rt || Qe || Xe,
+                        alt: "".concat(tt, "'s user icon"),
                         className: "tw-w-40 tw-h-40 tw-rounded-full tw-shadow-lg tw-ml-5 tw-block"
-                    }), Be && o.createElement(c.UU, {
+                    }), Be && o.createElement(s.UU, {
                         className: "tw-w-40 tw-h-40 tw-rounded-full tw-ml-5 tw-shadow-lg"
                     }), o.createElement("div", {
                         className: " tw-absolute tw-top-0 tw-opacity-0 tw-w-40 tw-h-40 tw-rounded-full tw-shadow-lg tw-ml-5 tw-bg-dark-grey-transparent tw-cursor-pointer hover:tw-opacity-100 tw-ease-in-out tw-duration-300 ",
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
-                            K("profileIcon"), q(!0)
+                            K("profileIcon"), B(!0)
                         },
                         "aria-label": "Edit Profile Icon"
                     }, o.createElement("div", {
                         className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
-                    }, o.createElement(c.$1, {
-                        icon: Ue.Iw,
+                    }, o.createElement(s.$1, {
+                        icon: Re.Iw,
                         className: "tw-text-3xl"
                     }))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
@@ -2142,29 +2279,29 @@
                         className: "tw-mb-5"
                     }, "Banner"), o.createElement("div", {
                         className: "tw-relative"
-                    }, _e && et && o.createElement("img", {
-                        src: et,
-                        alt: "".concat(ot, "'s profile"),
+                    }, _e && Xe && o.createElement("img", {
+                        src: Xe,
+                        alt: "".concat(tt, "'s profile"),
                         className: "tw-w-80 tw-h-auto tw-rounded-md tw-shadow-lg"
-                    }), _e && !et && o.createElement("div", {
+                    }), _e && !Xe && o.createElement("div", {
                         className: "tw-w-80 tw-h-44 tw-rounded-md tw-shadow-lg tw-bg-darker-grey tw-flex tw-items-center tw-justify-center"
-                    }, o.createElement(c.$1, {
-                        icon: je.Vm,
+                    }, o.createElement(s.$1, {
+                        icon: Oe.Vm,
                         className: "tw-text-4xl tw-text-placeholder-text"
-                    })), Be && o.createElement(c.UU, {
+                    })), Be && o.createElement(s.UU, {
                         className: "tw-w-80 tw-h-44 tw-rounded-md tw-shadow-lg"
                     }), o.createElement("div", {
                         className: " tw-absolute tw-top-0 tw-bottom-0 tw-opacity-0 tw-w-80 tw-h-auto tw-rounded-md tw-bg-dark-grey-transparent tw-cursor-pointer hover:tw-opacity-100 tw-ease-in-out tw-duration-300 ",
                         role: "button",
                         tabIndex: 0,
                         onClick: function() {
-                            K("profilePicture"), q(!0)
+                            K("profilePicture"), B(!0)
                         },
                         "aria-label": "Edit Profile Picture"
                     }, o.createElement("div", {
                         className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
-                    }, o.createElement(c.$1, {
-                        icon: Ue.Iw,
+                    }, o.createElement(s.$1, {
+                        icon: Re.Iw,
                         className: "tw-text-3xl"
                     })))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
@@ -2175,7 +2312,7 @@
                         htmlFor: "input-status-message"
                     }, "Status"), o.createElement("div", {
                         className: "tw-flex tw-flex-col md:tw-flex-row"
-                    }, o.createElement(De, {
+                    }, o.createElement(Ve, {
                         className: "tw-bg-black tw-rounded tw-p-4 tw-relative md:tw-w-[9em]",
                         statusType: v,
                         onChange: x
@@ -2202,9 +2339,9 @@
                         type: "text",
                         placeholder: "Introduce yourself in any way you like.",
                         onChange: function(e) {
-                            return j(e.target.value)
+                            return U(e.target.value)
                         },
-                        value: U
+                        value: T
                     }))), ft && pt && o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2212,12 +2349,12 @@
                     }, o.createElement("label", {
                         className: "tw-mb-3",
                         htmlFor: "input-age-verification"
-                    }, "Age Verification"), o.createElement(Ae, {
+                    }, "Age Verification"), o.createElement(Pe, {
                         id: "input-age-verification",
                         user: qe,
                         className: "tw-bg-black tw-rounded tw-p-4 tw-relative sm:tw-w-[12em]",
                         statusType: I,
-                        onChange: S
+                        onChange: Z
                     }))), o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-mt-3"
                     }, o.createElement("div", {
@@ -2228,23 +2365,23 @@
                     }, "Pronouns"), o.createElement("select", {
                         id: "input-pronouns",
                         className: " tw-bg-darker-grey tw-border-r-8 tw-border-transparent placeholder:tw-text-placeholder-text tw-rounded tw-h-14 tw-p-4 ",
-                        value: z ? lt : O,
+                        value: z ? st : M,
                         onChange: function(e) {
                             var t = e.target.value;
-                            if (t === lt) return D(!0), void M("");
-                            D(!1), M(t)
+                            if (t === st) return $(!0), void A("");
+                            $(!1), A(t)
                         }
                     }, o.createElement("option", {
                         value: ""
                     }, "Unlisted"), o.createElement("optgroup", {
                         label: "Suggestions"
-                    }, at.map((function(e) {
+                    }, ct.map((function(e) {
                         return o.createElement("option", {
                             key: e,
                             value: e
                         }, e)
                     }))), o.createElement("option", {
-                        value: lt
+                        value: st
                     }, "Other…")), z && o.createElement("input", {
                         id: "input-pronouns-text",
                         className: " tw-bg-darker-grey tw-border-none placeholder:tw-text-placeholder-text tw-rounded tw-h-14 tw-p-4 tw-mt-3 ",
@@ -2252,9 +2389,9 @@
                         placeholder: "Type your pronouns",
                         maxLength: 32,
                         onChange: function(e) {
-                            return M(e.target.value)
+                            return A(e.target.value)
                         },
-                        value: O
+                        value: M
                     }))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2265,8 +2402,8 @@
                     }, "Languages"), o.createElement("div", {
                         className: "tw-flex tw-flex-col sm:tw-flex-row sm:tw-items-center",
                         id: "select-languages"
-                    }, ne.map((function(e) {
-                        return o.createElement(Qe.Z, {
+                    }, ae.map((function(e) {
+                        return o.createElement(et.Z, {
                             key: e.code,
                             className: "tw-w-fit tw-my-2 sm:tw-my-2",
                             language: e,
@@ -2274,17 +2411,17 @@
                                 ! function(e) {
                                     var t = e.from,
                                         r = e.to,
-                                        n = ne.findIndex((function(e) {
+                                        n = ae.findIndex((function(e) {
                                             return t.code === e.code
                                         })),
-                                        a = (0, Ze.Z)(ne);
-                                    if (null === r) return a.splice(n, 1), void ae(a);
-                                    a[n] = r, ae(a)
+                                        a = (0, je.Z)(ae);
+                                    if (null === r) return a.splice(n, 1), void le(a);
+                                    a[n] = r, le(a)
                                 }(e)
                             },
                             options: se
                         })
-                    })), J && o.createElement(rt.Z, {
+                    })), J && o.createElement(lt.Z, {
                         key: "Add new language",
                         ariaLabel: "Add new language",
                         options: se,
@@ -2293,20 +2430,20 @@
                         onChange: function(e) {
                             var t = e.value,
                                 r = e.label;
-                            ae([].concat((0, Ze.Z)(ne), [{
+                            le([].concat((0, je.Z)(ae), [{
                                 title: r,
                                 code: t
                             }])), ee(!1)
                         }
-                    }), !J && ne.length < s.Vh && o.createElement("button", {
+                    }), !J && ae.length < c.Vh && o.createElement("button", {
                         type: "button",
                         className: " tw-w-10 tw-h-10 tw-border-0 tw-rounded-sm tw-bg-button-bg tw-text-highlight tw-leading-none hover:tw-bg-button-bg-100 hover:tw-text-white ",
                         onClick: function() {
                             return ee(!0)
                         },
                         "aria-label": "Add new language"
-                    }, o.createElement(c.$1, {
-                        icon: Fe.r8
+                    }, o.createElement(s.$1, {
+                        icon: Ue.r8
                     }))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2314,29 +2451,29 @@
                     }, o.createElement("label", {
                         className: "tw-mb-3",
                         htmlFor: "edit-social-links"
-                    }, "Social Links"), ue.map((function(e, t) {
-                        return o.createElement(tt, {
+                    }, "Social Links"), de.map((function(e, t) {
+                        return o.createElement(at, {
                             id: "edit-social-links",
                             key: e,
                             value: e,
                             order: t + 1,
-                            socialLinksArray: ue,
+                            socialLinksArray: de,
                             onChange: function(e) {
                                 var t = e.fromValue,
                                     r = e.toValue,
-                                    n = ue.findIndex((function(e) {
+                                    n = de.findIndex((function(e) {
                                         return e === t
                                     })),
-                                    a = (0, Ze.Z)(ue);
-                                a[n] = r, de(a)
+                                    a = (0, je.Z)(de);
+                                a[n] = r, me(a)
                             },
                             onDelete: function(e) {
-                                de((0, Ze.Z)(ue.filter((function(t) {
+                                me((0, je.Z)(de.filter((function(t) {
                                     return t !== e
                                 }))))
                             }
                         })
-                    })), (null == ue ? void 0 : ue.length) < 3 && o.createElement(o.Fragment, null, o.createElement("div", {
+                    })), (null == de ? void 0 : de.length) < 3 && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-w-full tw-flex tw-flex-row tw-items-center"
                     }, o.createElement("form", {
                         onSubmit: function(e) {
@@ -2344,11 +2481,11 @@
                         },
                         className: "tw-w-full"
                     }, o.createElement("input", {
-                        className: "\n                          tw-bg-darker-grey\n                          placeholder:tw-text-placeholder-text\n                          tw-rounded\n                          tw-h-14\n                          tw-p-4\n                          tw-w-full\n                          ".concat(xe ? "tw-border-red tw-border-solid" : "tw-border-none", "\n                        "),
+                        className: "\n                          tw-bg-darker-grey\n                          placeholder:tw-text-placeholder-text\n                          tw-rounded\n                          tw-h-14\n                          tw-p-4\n                          tw-w-full\n                          ".concat(he ? "tw-border-red tw-border-solid" : "tw-border-none", "\n                        "),
                         type: "text",
-                        value: pe,
+                        value: ge,
                         onChange: function(e) {
-                            return ge(e.target.value)
+                            return be(e.target.value)
                         },
                         onBlur: function() {
                             return xt()
@@ -2357,75 +2494,75 @@
                     })), o.createElement("button", {
                         type: "button",
                         className: " tw-w-9 tw-h-9 tw-ml-4 tw-border-0 tw-rounded-md tw-bg-button-bg tw-text-highlight tw-leading-none hover:tw-bg-button-bg-100 hover:tw-text-white "
-                    }, o.createElement(c.$1, {
-                        icon: Fe.r8
-                    }))), xe && o.createElement("small", {
+                    }, o.createElement(s.$1, {
+                        icon: Ue.r8
+                    }))), he && o.createElement("small", {
                         className: "tw-text-red tw-pt-2"
-                    }, Ce)))), $e && o.createElement("div", {
+                    }, ke)))), ze && o.createElement("div", {
                         className: "card danger tw-mt-5 tw-flex tw-flex-col"
-                    }, o.createElement("span", null, o.createElement(c.$1, {
-                        icon: ke.eH,
+                    }, o.createElement("span", null, o.createElement(s.$1, {
+                        icon: Se.eH,
                         color: "red"
-                    }), (null === (n = Ge.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "Failed to update profile."))), o.createElement("div", {
+                    }), (null === (n = $e.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "Failed to update profile."))), o.createElement("div", {
                         className: "tw-flex tw-items-center tw-p-6 tw-space-x-2 tw-justify-end"
                     }, o.createElement("button", {
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-48 tw-bg-button-bg-grey tw-leading-none",
                         onClick: function() {
-                            return p()
+                            return f()
                         }
                     }, "Cancel"), o.createElement("button", {
                         type: "button",
                         className: " tw-w-48 tw-h-9 tw-border-0 tw-rounded-sm tw-px-3 tw-py-2 tw-bg-button-bg tw-text-highlight tw-leading-none hover:tw-bg-button-bg-100 hover:tw-text-white ",
                         "aria-label": "Confirm Profile Update",
                         onClick: function() {
-                            return e = ne.map((function(e) {
+                            return e = ae.map((function(e) {
                                 return "language_".concat(e.code)
-                            })), t = ct.filter((function(e) {
+                            })), t = nt.filter((function(e) {
                                 return e.startsWith("language")
                             })).filter((function(t) {
                                 return !e.includes(t)
                             })), r = e.filter((function(e) {
-                                return !ct.includes(e)
+                                return !nt.includes(e)
                             })), n = {
                                 status: v,
                                 statusDescription: y,
-                                bio: U,
-                                bioLinks: ue,
-                                pronouns: O
-                            }, ft && (n.ageVerificationStatus = I), Oe({
+                                bio: T,
+                                bioLinks: de,
+                                pronouns: M
+                            }, ft && (n.ageVerificationStatus = I), Te({
                                 userId: a,
                                 data: n,
                                 tagsToRemove: t,
                                 tagsToAdd: r
-                            }), void(O !== ut && (0, nt.j)("Social_UpdatePronouns", {
+                            }), void(M !== ut && (0, ot.j)("Social_UpdatePronouns", {
                                 targetUserId: a,
                                 source: "web",
-                                text: O
+                                text: M
                             }));
                             var e, t, r, n
                         },
-                        disabled: Pe
-                    }, "Confirm", Pe && o.createElement(c.$1, {
-                        icon: Ne.LM,
+                        disabled: Ae
+                    }, "Confirm", Ae && o.createElement(s.$1, {
+                        icon: Ie.LM,
                         spin: !0,
                         className: "tw-ml-3"
                     }))))))
                 };
-            ot.propTypes = {
-                userId: O().string.isRequired,
-                isOpen: O().bool,
-                cancelCallback: O().func
+            it.propTypes = {
+                userId: P().string.isRequired,
+                isOpen: P().bool,
+                cancelCallback: P().func
             };
-            const st = ot;
-            var ct = r(7503),
-                it = function(e) {
+            const wt = it;
+            var ut = r(7503),
+                dt = function(e) {
                     var t = e.group,
                         r = t.groupId,
                         n = t.iconUrl,
                         a = t.name,
                         l = t.isRepresenting;
-                    return o.createElement(ne.rU, {
+                    return o.createElement(f.rU, {
                         to: "/home/group/".concat(r),
                         className: "tw-flex tw-items-center tw-gap-4 tw-py-1 tw-no-underline tw-rounded-lg tw-text-subtext-grey hover:tw-text-white "
                     }, o.createElement("img", {
@@ -2434,90 +2571,90 @@
                         className: "tw-w-10 tw-h-10 tw-rounded-lg tw-object-cover"
                     }), o.createElement("span", {
                         className: "tw-text-base tw-flex-1 tw-truncate tw-transition-colors tw-font-semibold"
-                    }, a), l && o.createElement(c.$1, {
+                    }, a), l && o.createElement(s.$1, {
                         title: "Representing",
-                        icon: P.vrcGroupRepresent,
+                        icon: V.vrcGroupRepresent,
                         className: "tw-text-teal",
                         width: 22
                     }))
                 };
-            it.propTypes = {
-                group: O().shape({
-                    groupId: O().string.isRequired,
-                    iconUrl: O().string,
-                    name: O().string,
-                    isRepresenting: O().bool
+            dt.propTypes = {
+                group: P().shape({
+                    groupId: P().string.isRequired,
+                    iconUrl: P().string,
+                    name: P().string,
+                    isRepresenting: P().bool
                 }).isRequired
             };
-            const wt = it;
-            var ut = function(e) {
+            const mt = dt;
+            var ft = function(e) {
                 var t, r = e.userId,
                     n = e.onViewAllClick,
                     a = e.isCurrentUser,
                     l = void 0 !== a && a,
-                    s = (0, u.dj)({
+                    c = (0, u.dj)({
                         userId: r
                     }),
-                    i = s.data,
-                    w = s.isLoading,
-                    d = s.isError,
-                    m = s.error,
-                    f = s.isSuccess;
-                if (w) return o.createElement(A, {
+                    i = c.data,
+                    w = c.isLoading,
+                    d = c.isError,
+                    m = c.error,
+                    p = c.isSuccess;
+                if (w) return o.createElement($, {
                     title: "Groups"
                 }, o.createElement("div", {
                     className: "tw-flex tw-items-center tw-justify-center tw-min-h-[200px]"
-                }, o.createElement(c.$1, {
-                    icon: Ne.LM,
+                }, o.createElement(s.$1, {
+                    icon: Ie.LM,
                     spin: !0,
                     size: "3x"
                 })));
-                if (d) return o.createElement(A, {
+                if (d) return o.createElement($, {
                     title: "Groups"
                 }, o.createElement("div", {
                     className: "tw-flex tw-items-center tw-justify-center tw-min-h-[200px] tw-flex-col"
                 }, o.createElement("p", {
                     className: "tw-text-light-grey"
                 }, "Error loading groups"), o.createElement("code", null, (null == m || null === (t = m.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "Unknown error")));
-                if (f) {
-                    var p = i || [],
-                        g = (0, Ze.Z)(p).sort((function(e, t) {
+                if (p) {
+                    var g = i || [],
+                        b = (0, je.Z)(g).sort((function(e, t) {
                             return (t.isRepresenting ? 1 : 0) - (e.isRepresenting ? 1 : 0)
                         })).slice(0, 5),
-                        b = p.length > 5;
-                    return 0 === p.length ? l ? o.createElement(A, {
+                        v = g.length > 5;
+                    return 0 === g.length ? l ? o.createElement($, {
                         title: "Groups"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-3 tw-py-8"
-                    }, o.createElement(c.$1, {
-                        icon: ct.default,
+                    }, o.createElement(s.$1, {
+                        icon: ut.default,
                         className: "tw-text-grey",
                         width: 67
                     }), o.createElement("p", {
                         className: "tw-text-lighter-grey tw-font-semibold tw-text-base"
                     }, "You haven't joined any groups yet"), o.createElement("p", {
                         className: "tw-text-light-grey tw-text-sm tw-text-center"
-                    }, "Join a community to share experiences, attend events, and meet new friends."), o.createElement(ne.rU, {
+                    }, "Join a community to share experiences, attend events, and meet new friends."), o.createElement(f.rU, {
                         to: "/home/groups",
                         className: " tw-px-3 tw-py-2 tw-rounded-xl tw-border-2 tw-border-solid tw-border-hr-grey tw-text-lighter-grey tw-text-sm tw-transition-colors "
-                    }, "Explore Groups"))) : o.createElement(A, {
+                    }, "Explore Groups"))) : o.createElement($, {
                         title: "Groups"
                     }, o.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center tw-min-h-[100px]"
                     }, o.createElement("p", {
                         className: "tw-text-light-grey"
-                    }, "No groups to show"))) : o.createElement(A, {
+                    }, "No groups to show"))) : o.createElement($, {
                         title: "Groups"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
                         className: "tw-divide-y tw-divide-dark-grey tw-flex tw-flex-col tw-gap-2"
-                    }, g.map((function(e) {
-                        return o.createElement(wt, {
+                    }, b.map((function(e) {
+                        return o.createElement(mt, {
                             key: e.groupId,
                             group: e
                         })
-                    }))), b && n && o.createElement(c.zx, {
+                    }))), v && n && o.createElement(s.zx, {
                         neutral: !0,
                         className: "tw-w-full tw-mt-4 tw-rounded-lg tw-bg-grey tw-text-subtext-grey tw-border-grey tw-font-bold tw-py-4 tw-leading-none",
                         onClick: n
@@ -2525,19 +2662,19 @@
                 }
                 return null
             };
-            ut.propTypes = {
-                userId: O().string.isRequired,
-                onViewAllClick: O().func,
-                isCurrentUser: O().bool
+            ft.propTypes = {
+                userId: P().string.isRequired,
+                onViewAllClick: P().func,
+                isCurrentUser: P().bool
             };
-            const dt = ut;
-            var mt = function(e) {
+            const pt = ft;
+            var gt = function(e) {
                 var t = e.isVisible,
                     r = e.onClose,
                     n = e.title,
                     a = e.items,
                     l = e.renderItem,
-                    s = e.isLoading,
+                    c = e.isLoading,
                     i = e.hasMore,
                     w = e.onLoadMore,
                     u = e.gridColumns,
@@ -2553,13 +2690,13 @@
                         }
                 }), [t, r]);
                 var f, p = (0, o.useCallback)((function() {
-                    if (m.current && !s && i && w) {
+                    if (m.current && !c && i && w) {
                         var e = m.current,
                             t = e.scrollTop;
                         e.scrollHeight - t - e.clientHeight < 100 && w()
                     }
-                }), [s, i, w]);
-                return o.createElement(c.u_, {
+                }), [c, i, w]);
+                return o.createElement(s.u_, {
                     isVisible: t,
                     onClose: r,
                     title: n,
@@ -2578,35 +2715,35 @@
                     } [d] || "lg:tw-grid-cols-4", "".concat("tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3", " ").concat(f)), " tw-gap-4")
                 }, null == a ? void 0 : a.map((function(e, t) {
                     return l(e, t)
-                }))), s && o.createElement("div", {
+                }))), c && o.createElement("div", {
                     className: "tw-flex tw-justify-center tw-py-6"
-                }, o.createElement(c.$1, {
-                    icon: Ne.LM,
+                }, o.createElement(s.$1, {
+                    icon: Ie.LM,
                     spin: !0,
                     size: "2x",
                     className: "tw-text-light-grey"
-                })), !s && 0 === (null == a ? void 0 : a.length) && o.createElement("div", {
+                })), !c && 0 === (null == a ? void 0 : a.length) && o.createElement("div", {
                     className: "tw-flex tw-justify-center tw-py-6"
                 }, o.createElement("p", {
                     className: "tw-text-light-grey"
                 }, "No items found"))))
             };
-            mt.propTypes = {
-                isVisible: O().bool.isRequired,
-                onClose: O().func.isRequired,
-                title: O().string.isRequired,
-                items: O().array,
-                renderItem: O().func.isRequired,
-                isLoading: O().bool,
-                hasMore: O().bool,
-                onLoadMore: O().func,
-                gridColumns: O().number
+            gt.propTypes = {
+                isVisible: P().bool.isRequired,
+                onClose: P().func.isRequired,
+                title: P().string.isRequired,
+                items: P().array,
+                renderItem: P().func.isRequired,
+                isLoading: P().bool,
+                hasMore: P().bool,
+                onLoadMore: P().func,
+                gridColumns: P().number
             };
-            const ft = mt;
-            var pt = r(62427),
-                gt = r(65394),
-                bt = r(85020),
-                vt = function(e) {
+            const bt = gt;
+            var vt = r(62427),
+                xt = r(65394),
+                ht = r(85020),
+                Et = function(e) {
                     var t = e.direction,
                         r = e.onClick,
                         n = e.className,
@@ -2616,29 +2753,29 @@
                         onClick: r,
                         className: "\n      group-hover:tw-opacity-100\n      hover:tw-bg-button-bg\n      tw--translate-y-1/2\n      tw-absolute\n      tw-bg-dark-teal/90\n      tw-border-2\n      tw-border-solid\n      tw-border-button-border/50\n      tw-p-2\n      tw-rounded-md\n      tw-top-1/2\n      tw-transition-opacity\n      tw-z-10\n      ".concat("left" === t ? "tw--left-2 md:tw--left-6" : "tw--right-2 md:tw--right-6", "\n      ").concat(a, "\n    "),
                         "aria-label": "Scroll ".concat(t)
-                    }, o.createElement(c.$1, {
-                        icon: "left" === t ? bt.A3 : gt._t,
+                    }, o.createElement(s.$1, {
+                        icon: "left" === t ? ht.A3 : xt._t,
                         className: "tw-text-highlight tw-w-6 tw-h-8"
                     }))
                 };
-            vt.propTypes = {
-                direction: O().oneOf(["left", "right"]).isRequired,
-                onClick: O().func.isRequired,
-                className: O().string
+            Et.propTypes = {
+                direction: P().oneOf(["left", "right"]).isRequired,
+                onClick: P().func.isRequired,
+                className: P().string
             };
-            const xt = vt;
-            var ht = r(1208),
-                Et = function(e) {
+            const yt = Et;
+            var Nt = r(1208),
+                kt = function(e) {
                     var t = e.folderName,
                         r = e.worlds,
                         n = void 0 === r ? [] : r,
                         a = e.numFavorites,
                         l = void 0 === a ? 0 : a,
-                        s = e.maxCapacity,
-                        i = void 0 === s ? 100 : s,
+                        c = e.maxCapacity,
+                        i = void 0 === c ? 100 : c,
                         w = e.onClick,
                         u = n.slice(0, 4),
-                        d = [].concat((0, Ze.Z)(u), (0, Ze.Z)(Array(4 - u.length).fill(null)));
+                        d = [].concat((0, je.Z)(u), (0, je.Z)(Array(4 - u.length).fill(null)));
                     return o.createElement("button", {
                         type: "button",
                         onClick: w,
@@ -2660,27 +2797,27 @@
                         className: "tw-text-white tw-text-sm tw-truncate heading tw-font-bold"
                     }, t), o.createElement("div", {
                         className: "tw-flex tw-items-center tw-gap-1 tw-text-xs"
-                    }, o.createElement(c.$1, {
-                        icon: pt.default,
+                    }, o.createElement(s.$1, {
+                        icon: vt.default,
                         className: "tw-w-3 tw-h-3 tw-text-teal"
                     }), o.createElement("span", {
                         className: "tw-text-light-grey"
                     }, l, "/", i))))
                 };
-            Et.propTypes = {
-                folderName: O().string.isRequired,
-                worlds: O().arrayOf(O().shape({
-                    id: O().string,
-                    name: O().string,
-                    imageUrl: O().string
+            kt.propTypes = {
+                folderName: P().string.isRequired,
+                worlds: P().arrayOf(P().shape({
+                    id: P().string,
+                    name: P().string,
+                    imageUrl: P().string
                 })),
-                numFavorites: O().number,
-                maxCapacity: O().number,
-                onClick: O().func
+                numFavorites: P().number,
+                maxCapacity: P().number,
+                onClick: P().func
             };
-            const yt = Et;
+            const Ct = kt;
 
-            function Nt(e, t) {
+            function It(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -2691,22 +2828,22 @@
                 return r
             }
 
-            function kt(e) {
+            function St(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Nt(Object(r), !0).forEach((function(t) {
+                    t % 2 ? It(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Nt(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : It(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
                 return e
             }
-            var Ct = function(e) {
+            var Zt = function(e) {
                 var t = e.group,
                     r = e.ownerId,
                     n = e.onClick,
-                    a = (0, Ie.FT)({
+                    a = (0, Le.FT)({
                         type: "world",
                         groupName: t.name,
                         ownerId: r
@@ -2716,7 +2853,7 @@
                             return e.world
                         })).filter(Boolean) : []
                     }), [a]),
-                    s = (0, o.useMemo)((function() {
+                    c = (0, o.useMemo)((function() {
                         return l.slice(0, 4).map((function(e) {
                             return {
                                 id: e.id,
@@ -2725,29 +2862,29 @@
                             }
                         }))
                     }), [l]);
-                return o.createElement(yt, {
+                return o.createElement(Ct, {
                     folderName: t.displayName,
-                    worlds: s,
+                    worlds: c,
                     numFavorites: t.numFavorites,
                     maxCapacity: 100,
                     onClick: function() {
-                        null == n || n(kt(kt({}, t), {}, {
+                        null == n || n(St(St({}, t), {}, {
                             worlds: l
                         }))
                     }
                 })
             };
-            Ct.propTypes = {
-                group: O().shape({
-                    id: O().string,
-                    name: O().string,
-                    displayName: O().string,
-                    numFavorites: O().number
+            Zt.propTypes = {
+                group: P().shape({
+                    id: P().string,
+                    name: P().string,
+                    displayName: P().string,
+                    numFavorites: P().number
                 }).isRequired,
-                ownerId: O().string.isRequired,
-                onClick: O().func
+                ownerId: P().string.isRequired,
+                onClick: P().func
             };
-            var It = function(e) {
+            var Lt = function(e) {
                 var t = e.userName,
                     r = e.worlds,
                     n = e.onClick,
@@ -2760,7 +2897,7 @@
                             }
                         }))
                     }), [r]);
-                return o.createElement(yt, {
+                return o.createElement(Ct, {
                     folderName: "".concat(t, "'s uploaded worlds"),
                     worlds: a,
                     numFavorites: r.length,
@@ -2774,27 +2911,27 @@
                     }
                 })
             };
-            It.propTypes = {
-                userName: O().string,
-                worlds: O().array,
-                onClick: O().func
+            Lt.propTypes = {
+                userName: P().string,
+                worlds: P().array,
+                onClick: P().func
             };
-            var St = function(e) {
+            var Ft = function(e) {
                 var t = e.userId,
                     r = e.userName,
                     n = e.isCurrentUser,
                     a = void 0 !== n && n,
-                    s = e.onFolderClick,
+                    c = e.onFolderClick,
                     i = (0, o.useRef)(null),
                     w = (0, o.useState)(!1),
                     u = (0, l.Z)(w, 2),
                     d = u[0],
                     m = u[1],
-                    f = (0, o.useState)(!1),
-                    p = (0, l.Z)(f, 2),
-                    g = p[0],
-                    b = p[1],
-                    v = (0, ht.g9)({
+                    p = (0, o.useState)(!1),
+                    g = (0, l.Z)(p, 2),
+                    b = g[0],
+                    v = g[1],
+                    x = (0, Nt.g9)({
                         userId: t,
                         offset: 0,
                         sort: "updated",
@@ -2802,89 +2939,89 @@
                         n: 100,
                         releaseStatus: a ? "all" : "public"
                     }).data,
-                    x = void 0 === v ? [] : v,
-                    h = (0, Ie.nA)({
+                    h = void 0 === x ? [] : x,
+                    E = (0, Le.nA)({
                         type: "world",
                         userId: t
                     }),
-                    E = h.data,
-                    y = h.isFetching,
-                    N = h.isSuccess,
-                    k = (0, o.useCallback)((function() {
+                    y = E.data,
+                    N = E.isFetching,
+                    k = E.isSuccess,
+                    C = (0, o.useCallback)((function() {
                         var e = i.current;
                         if (e) {
                             var t = e.scrollLeft,
                                 r = e.scrollWidth,
                                 n = e.clientWidth;
-                            m(t > 0), b(t + n < r - 1)
+                            m(t > 0), v(t + n < r - 1)
                         }
                     }), []);
                 (0, o.useEffect)((function() {
                     var e = i.current;
-                    if (e) return k(), e.addEventListener("scroll", k), window.addEventListener("resize", k),
+                    if (e) return C(), e.addEventListener("scroll", C), window.addEventListener("resize", C),
                         function() {
-                            e.removeEventListener("scroll", k), window.removeEventListener("resize", k)
+                            e.removeEventListener("scroll", C), window.removeEventListener("resize", C)
                         }
-                }), [k]), (0, o.useEffect)((function() {
-                    k()
-                }), [x, E, k]);
-                var C = (null == E ? void 0 : E.favoriteGroups) || [],
-                    I = x.length > 0,
-                    S = C.length > 0;
-                return I || S ? o.createElement(A, {
+                }), [C]), (0, o.useEffect)((function() {
+                    C()
+                }), [h, y, C]);
+                var I = (null == y ? void 0 : y.favoriteGroups) || [],
+                    S = h.length > 0,
+                    Z = I.length > 0;
+                return S || Z ? o.createElement($, {
                     title: "Worlds"
                 }, o.createElement("div", {
                     className: "tw-relative tw-group"
-                }, d && o.createElement(xt, {
+                }, d && o.createElement(yt, {
                     direction: "left",
                     onClick: function() {
                         var e;
                         null === (e = i.current) || void 0 === e || e.scrollBy({
                             left: -336,
                             behavior: "smooth"
-                        }), setTimeout(k, 350)
+                        }), setTimeout(C, 350)
                     }
-                }), y && o.createElement("div", {
+                }), N && o.createElement("div", {
                     className: "tw-flex tw-items-center tw-justify-center tw-min-h-[100px]"
-                }, o.createElement(j.Z, null)), !y && N && o.createElement("div", {
+                }, o.createElement(M.Z, null)), !N && k && o.createElement("div", {
                     ref: i,
                     className: "tw-flex tw-gap-4 tw-overflow-x-auto tw-scrollbar-hide tw-py-2 tw-scroll-smooth"
-                }, I && o.createElement(It, {
+                }, S && o.createElement(Lt, {
                     userName: r,
-                    worlds: x,
-                    onClick: s
-                }), C.map((function(e) {
-                    return o.createElement(Ct, {
+                    worlds: h,
+                    onClick: c
+                }), I.map((function(e) {
+                    return o.createElement(Zt, {
                         key: e.id,
                         group: e,
                         ownerId: t,
-                        onClick: s
+                        onClick: c
                     })
-                }))), g && o.createElement(xt, {
+                }))), b && o.createElement(yt, {
                     direction: "right",
                     onClick: function() {
                         var e;
                         null === (e = i.current) || void 0 === e || e.scrollBy({
                             left: 336,
                             behavior: "smooth"
-                        }), setTimeout(k, 350)
+                        }), setTimeout(C, 350)
                     }
-                }))) : a ? o.createElement(A, {
+                }))) : a ? o.createElement($, {
                     title: "Worlds"
                 }, o.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-3 tw-py-8"
-                }, o.createElement(c.$1, {
-                    icon: pt.default,
+                }, o.createElement(s.$1, {
+                    icon: vt.default,
                     className: "tw-text-grey",
                     width: 67
                 }), o.createElement("p", {
                     className: "tw-text-lighter-grey tw-font-semibold tw-text-base"
                 }, "No favorite worlds"), o.createElement("p", {
                     className: "tw-text-light-grey tw-text-sm tw-text-center"
-                }, "Your collection's empty... for now. Go find something amazing."), o.createElement(ne.rU, {
+                }, "Your collection's empty... for now. Go find something amazing."), o.createElement(f.rU, {
                     to: "/home/worlds",
                     className: " tw-px-3 tw-py-2 tw-rounded-xl tw-border-2 tw-border-solid tw-border-hr-grey tw-text-lighter-grey tw-text-sm tw-transition-colors "
-                }, "Discover Worlds"))) : o.createElement(A, {
+                }, "Discover Worlds"))) : o.createElement($, {
                     title: "Worlds"
                 }, o.createElement("div", {
                     className: "tw-flex tw-items-center tw-justify-center tw-min-h-[100px]"
@@ -2892,265 +3029,267 @@
                     className: "tw-text-light-grey"
                 }, "No worlds to show")))
             };
-            St.propTypes = {
-                userId: O().string.isRequired,
-                userName: O().string,
-                isCurrentUser: O().bool,
-                onFolderClick: O().func
+            Ft.propTypes = {
+                userId: P().string.isRequired,
+                userName: P().string,
+                isCurrentUser: P().bool,
+                onFolderClick: P().func
             };
-            const Lt = St;
-            var Zt = "badges",
-                Ft = "groups",
-                Ut = "worlds",
-                jt = "mutual_friends",
-                Tt = "mutual_groups",
-                Rt = function() {
-                    var e, t, r, b = (0, m.s0)(),
-                        v = (0, m.UO)().userId,
-                        x = void 0 === v ? null : v,
-                        h = (0, i.IB)().data;
+            const Tt = Ft;
+            var jt = "badges",
+                Ut = "groups",
+                Rt = "worlds",
+                Ot = "mutual_friends",
+                Mt = "mutual_groups",
+                At = function() {
+                    var e, t, r, v = (0, m.s0)(),
+                        x = (0, m.UO)().userId,
+                        h = void 0 === x ? null : x,
+                        E = (0, f.lr)(),
+                        y = (0, l.Z)(E, 1)[0],
+                        N = (0, i.IB)().data;
                     (0, o.useEffect)((function() {
-                        "me" === x && null != h && h.id && b("/home/user/".concat(null == h ? void 0 : h.id))
-                    }), [h, x]);
-                    var E = (0, o.useMemo)((function() {
-                            return x === (null == h ? void 0 : h.id)
-                        }), [x, h]),
-                        y = (0, o.useState)(!1),
-                        N = (0, l.Z)(y, 2),
-                        k = N[0],
-                        C = N[1],
-                        I = (0, o.useState)(!1),
-                        S = (0, l.Z)(I, 2),
-                        L = S[0],
-                        Z = S[1],
-                        F = (0, o.useState)(null),
-                        U = (0, l.Z)(F, 2),
-                        j = U[0],
-                        T = U[1],
-                        R = (0, o.useState)(null),
-                        O = (0, l.Z)(R, 2),
-                        M = O[0],
-                        A = O[1],
-                        P = (0, o.useState)(null),
-                        z = (0, l.Z)(P, 2),
-                        D = z[0],
-                        $ = z[1],
-                        G = (0, o.useState)(null),
-                        V = (0, l.Z)(G, 2),
-                        q = V[0],
-                        B = V[1],
-                        W = (0, w.y)().data,
-                        H = (0, i.hd)(null, {
-                            skip: E
+                        "me" === h && null != N && N.id && v("/home/user/".concat(null == N ? void 0 : N.id))
+                    }), [N, h]);
+                    var k = (0, o.useMemo)((function() {
+                            return h === (null == N ? void 0 : N.id)
+                        }), [h, N]),
+                        C = (0, o.useState)("true" === y.get("settings")),
+                        I = (0, l.Z)(C, 2),
+                        S = I[0],
+                        Z = I[1],
+                        L = (0, o.useState)(!1),
+                        F = (0, l.Z)(L, 2),
+                        T = F[0],
+                        j = F[1],
+                        U = (0, o.useState)(null),
+                        R = (0, l.Z)(U, 2),
+                        O = R[0],
+                        M = R[1],
+                        A = (0, o.useState)(null),
+                        D = (0, l.Z)(A, 2),
+                        P = D[0],
+                        z = D[1],
+                        $ = (0, o.useState)(null),
+                        V = (0, l.Z)($, 2),
+                        G = V[0],
+                        q = V[1],
+                        B = (0, o.useState)(null),
+                        W = (0, l.Z)(B, 2),
+                        H = W[0],
+                        _ = W[1],
+                        K = (0, w.y)().data,
+                        Y = (0, i.hd)(null, {
+                            skip: k
                         }),
-                        _ = H.data,
-                        Y = H.isSuccess,
-                        Q = (0, d.GR)(x, {
-                            skip: null === x || "me" === x
+                        Q = Y.data,
+                        X = Y.isSuccess,
+                        J = (0, d.GR)(h, {
+                            skip: null === h || "me" === h
                         }),
-                        J = Q.data,
-                        te = void 0 === J ? {} : J,
-                        re = Q.isError,
-                        ne = Q.isSuccess,
-                        ae = (Q.error, Q.isFetching),
-                        oe = te || {},
-                        se = oe.displayName,
-                        ce = void 0 === se ? "" : se,
-                        ie = oe.tags,
-                        we = oe.badges,
-                        ue = oe.currentAvatar,
-                        de = oe.location,
-                        me = oe.platform,
-                        fe = (0, o.useMemo)((function() {
-                            return (0, f.Je)({
-                                user: te,
-                                currentUser: h
+                        te = J.data,
+                        re = void 0 === te ? {} : te,
+                        ae = J.isError,
+                        oe = J.isSuccess,
+                        ce = (J.error, J.isFetching),
+                        se = re || {},
+                        we = se.displayName,
+                        ue = void 0 === we ? "" : we,
+                        de = se.tags,
+                        me = se.badges,
+                        fe = se.currentAvatar,
+                        pe = se.location,
+                        ge = se.platform,
+                        be = (0, o.useMemo)((function() {
+                            return (0, p.Je)({
+                                user: re,
+                                currentUser: N
                             })
-                        }), [te, h]),
-                        pe = (0, u.dj)({
-                            userId: x
+                        }), [re, N]),
+                        ve = (0, u.dj)({
+                            userId: h
                         }, {
-                            skip: !x
+                            skip: !h
                         }),
-                        ge = pe.data,
-                        be = pe.isLoading,
-                        ve = (0, d.H4)({
-                            userId: x,
+                        xe = ve.data,
+                        he = ve.isLoading,
+                        Ee = (0, d.H4)({
+                            userId: h,
                             type: "friends"
                         }, {
-                            skip: !x || E
+                            skip: !h || k
                         }).data,
-                        xe = void 0 === ve ? [] : ve,
-                        he = (0, d.H4)({
-                            userId: x,
+                        ye = void 0 === Ee ? [] : Ee,
+                        Ne = (0, d.H4)({
+                            userId: h,
                             type: "groups"
                         }, {
-                            skip: !x || E
+                            skip: !h || k
                         }).data,
-                        Ee = void 0 === he ? [] : he;
+                        ke = void 0 === Ne ? [] : Ne;
                     (0, o.useEffect)((function() {
-                        if (E) return $(!1), void B(!1);
-                        if (Y) {
-                            var e = _.filter((function(e) {
-                                return e.targetUserId === x
+                        if (k) return q(!1), void _(!1);
+                        if (X) {
+                            var e = Q.filter((function(e) {
+                                return e.targetUserId === h
                             }));
-                            $(e.some((function(e) {
+                            q(e.some((function(e) {
                                 return "mute" === e.type
-                            }))), B(e.some((function(e) {
+                            }))), _(e.some((function(e) {
                                 return "block" === e.type
                             })))
                         }
-                    }), [_, E, x, Y]);
-                    var Ne = (0, o.useCallback)((function() {
-                            return T(Ft)
+                    }), [Q, k, h, X]);
+                    var Ie = (0, o.useCallback)((function() {
+                            return M(Ut)
                         }), []),
-                        ke = (0, o.useCallback)((function() {
-                            return T(Zt)
+                        Se = (0, o.useCallback)((function() {
+                            return M(jt)
                         }), []),
-                        Ce = (0, o.useCallback)((function() {
-                            return T(jt)
+                        Ze = (0, o.useCallback)((function() {
+                            return M(Ot)
                         }), []),
-                        Ie = (0, o.useCallback)((function() {
-                            return T(Tt)
+                        Le = (0, o.useCallback)((function() {
+                            return M(Mt)
                         }), []),
-                        Se = (0, o.useCallback)((function(e) {
-                            return o.createElement(X, {
+                        Fe = (0, o.useCallback)((function(e) {
+                            return o.createElement(ne, {
                                 key: e.badgeId,
                                 badge: e
                             })
                         }), []),
-                        Ze = (0, o.useCallback)((function(e) {
-                            A(e), T(Ut)
+                        je = (0, o.useCallback)((function(e) {
+                            z(e), M(Rt)
                         }), []),
-                        Fe = (0, o.useCallback)((function() {
-                            T(null), A(null)
+                        Ue = (0, o.useCallback)((function() {
+                            M(null), z(null)
                         }), []),
-                        Ue = (0, o.useCallback)((function(e) {
-                            return o.createElement(p.Z, {
+                        Re = (0, o.useCallback)((function(e) {
+                            return o.createElement(g.Z, {
                                 key: e.groupId,
                                 group: e
                             })
                         }), []),
-                        je = (0, o.useCallback)((function(e) {
-                            return o.createElement(c.uW, {
+                        Oe = (0, o.useCallback)((function(e) {
+                            return o.createElement(s.uW, {
                                 key: e.id,
                                 data: e,
                                 contentType: "world",
                                 fieldsList: ["occupants", "favorites", "updated_at"]
                             })
                         }), []),
-                        Te = (0, o.useCallback)((function(e) {
-                            return o.createElement(g.Z, {
+                        Me = (0, o.useCallback)((function(e) {
+                            return o.createElement(b.Z, {
                                 key: e.id,
                                 userData: e,
                                 isCard: !0
                             })
                         }), []),
-                        Re = (0, o.useMemo)((function() {
-                            return ge ? ge.find((function(e) {
+                        Ae = (0, o.useMemo)((function() {
+                            return xe ? xe.find((function(e) {
                                 return e.isRepresenting
                             })) : null
-                        }), [ge]);
+                        }), [xe]);
                     (0, o.useEffect)((function() {
-                        Fe()
-                    }), [Fe, x]);
-                    var Oe = (0, o.useMemo)((function() {
+                        Ue()
+                    }), [Ue, h]);
+                    var De = (0, o.useMemo)((function() {
                         var e;
-                        return e = {}, (0, a.Z)(e, Zt, {
-                            title: "".concat(ce, "'s Badges"),
-                            items: (we || []).filter((function(e) {
+                        return e = {}, (0, a.Z)(e, jt, {
+                            title: "".concat(ue, "'s Badges"),
+                            items: (me || []).filter((function(e) {
                                 return !e.hidden
                             })),
-                            renderItem: Se,
+                            renderItem: Fe,
                             gridColumns: 3
-                        }), (0, a.Z)(e, Ft, {
-                            title: "".concat(ce, "'s Groups"),
-                            items: ge,
-                            renderItem: Ue,
-                            isLoading: be,
-                            gridColumns: 4
                         }), (0, a.Z)(e, Ut, {
-                            title: (null == M ? void 0 : M.displayName) || "Worlds",
-                            items: (null == M ? void 0 : M.worlds) || [],
-                            renderItem: je,
-                            gridColumns: 4
-                        }), (0, a.Z)(e, jt, {
-                            title: "Mutual Friends",
+                            title: "".concat(ue, "'s Groups"),
                             items: xe,
-                            renderItem: Te,
+                            renderItem: Re,
+                            isLoading: he,
                             gridColumns: 4
-                        }), (0, a.Z)(e, Tt, {
+                        }), (0, a.Z)(e, Rt, {
+                            title: (null == P ? void 0 : P.displayName) || "Worlds",
+                            items: (null == P ? void 0 : P.worlds) || [],
+                            renderItem: Oe,
+                            gridColumns: 4
+                        }), (0, a.Z)(e, Ot, {
+                            title: "Mutual Friends",
+                            items: ye,
+                            renderItem: Me,
+                            gridColumns: 4
+                        }), (0, a.Z)(e, Mt, {
                             title: "Mutual Groups",
-                            items: Ee,
-                            renderItem: Ue,
+                            items: ke,
+                            renderItem: Re,
                             gridColumns: 4
                         }), e
-                    }), [we, ce, ge, be, Se, Ue, je, Te, M, xe, Ee]);
-                    if (re) return null;
-                    var Me = (0, f.H1)(ie, null !== (e = null == W || null === (t = W.constants) || void 0 === t || null === (t = t.LANGUAGE) || void 0 === t ? void 0 : t.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== e ? e : s.O);
-                    Me.some((function(e) {
+                    }), [me, ue, xe, he, Fe, Re, Oe, Me, P, ye, ke]);
+                    if (ae) return null;
+                    var Pe = (0, p.H1)(de, null !== (e = null == K || null === (t = K.constants) || void 0 === t || null === (t = t.LANGUAGE) || void 0 === t ? void 0 : t.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== e ? e : c.O);
+                    Pe.some((function(e) {
                         return e.length > 8
                     }));
                     return o.createElement("div", {
-                        className: "tw-max-w-screen-2xl"
-                    }, o.createElement(c.$4, null, ne ? null == te ? void 0 : te.displayName : "User"), E && k && o.createElement(st, {
-                        userId: x,
-                        isOpen: k,
-                        cancelCallback: function() {
-                            return C(!1)
-                        }
-                    }), !E && L && o.createElement(Le, {
-                        friendUserId: x,
-                        isOpen: L,
+                        className: "tw-flex tw-w-full tw-flex-col tw-items-center"
+                    }, o.createElement(s.$4, null, oe ? null == re ? void 0 : re.displayName : "User"), k && S && o.createElement(wt, {
+                        userId: h,
+                        isOpen: S,
                         cancelCallback: function() {
                             return Z(!1)
                         }
+                    }), !k && T && o.createElement(Te, {
+                        friendUserId: h,
+                        isOpen: T,
+                        cancelCallback: function() {
+                            return j(!1)
+                        }
                     }), o.createElement("div", {
-                        className: "tw-flex tw-flex-col md:tw-flex-row tw-gap-6"
+                        className: "tw-max-w-screen-2xl tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-gap-6"
                     }, o.createElement("div", {
                         className: "tw-w-full md:tw-w-7/12 tw-flex tw-flex-col tw-gap-6"
-                    }, o.createElement(K, {
-                        userData: te,
-                        currentUser: h,
-                        userLanguages: Me,
-                        userDetailsInfo: fe,
+                    }, o.createElement(ee, {
+                        userData: re,
+                        currentUser: N,
+                        userLanguages: Pe,
+                        userDetailsInfo: be,
                         onEdit: function() {
-                            return C(!0)
-                        },
-                        onFavorite: function() {
                             return Z(!0)
                         },
-                        representingGroup: Re,
-                        isMuted: D,
-                        isBlocked: q,
-                        isLoading: ae,
-                        onViewAllFriendsClick: Ce,
-                        onViewAllGroupsClick: Ie
-                    }), o.createElement(Lt, {
-                        userId: x,
-                        userName: null == te ? void 0 : te.displayName,
-                        onFolderClick: Ze,
-                        isCurrentUser: E
+                        onFavorite: function() {
+                            return j(!0)
+                        },
+                        representingGroup: Ae,
+                        isMuted: G,
+                        isBlocked: H,
+                        isLoading: ce,
+                        onViewAllFriendsClick: Ze,
+                        onViewAllGroupsClick: Le
+                    }), o.createElement(Tt, {
+                        userId: h,
+                        userName: null == re ? void 0 : re.displayName,
+                        onFolderClick: je,
+                        isCurrentUser: k
                     })), o.createElement("div", {
                         className: "tw-w-full md:tw-w-5/12 tw-flex tw-flex-col tw-gap-6"
-                    }, o.createElement(ye, {
-                        userLocation: de,
-                        platform: me,
-                        userDetailsInfo: fe,
-                        currentUser: h
-                    }), o.createElement(ee, {
-                        badges: we,
-                        onViewAllClick: ke
-                    }), E && o.createElement(le, {
-                        avatarId: ue
-                    }), o.createElement(dt, {
-                        userId: x,
-                        onViewAllClick: Ne,
-                        isCurrentUser: E
-                    }))), o.createElement(ft, (0, n.Z)({
-                        isVisible: !!j,
-                        onClose: Fe
-                    }, null !== (r = Oe[j]) && void 0 !== r ? r : {
+                    }, o.createElement(Ce, {
+                        userLocation: pe,
+                        platform: ge,
+                        userDetailsInfo: be,
+                        currentUser: N
+                    }), o.createElement(le, {
+                        badges: me,
+                        onViewAllClick: Se
+                    }), k && o.createElement(ie, {
+                        avatarId: fe
+                    }), o.createElement(pt, {
+                        userId: h,
+                        onViewAllClick: Ie,
+                        isCurrentUser: k
+                    }))), o.createElement(bt, (0, n.Z)({
+                        isVisible: !!O,
+                        onClose: Ue
+                    }, null !== (r = De[O]) && void 0 !== r ? r : {
                         title: "",
                         items: [],
                         renderItem: function() {
@@ -3158,8 +3297,8 @@
                         }
                     })))
                 };
-            Rt.propTypes = {};
-            const Ot = Rt
+            At.propTypes = {};
+            const Dt = At
         },
         87343: (e, t, r) => {
             r.d(t, {
@@ -3207,4 +3346,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0da90398cea577f0f4a1002de0a1425e77c5fc8bbc257fdd3343633f8022606a.js.map
+//# sourceMappingURL=075f93cddb667139f0fc7bb32a26dd20360636c143f448ac8307275edd4156e8.js.map
