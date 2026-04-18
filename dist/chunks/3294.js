@@ -54,13 +54,13 @@
                     name: "zl1inp",
                     styles: "display:flex;justify-content:center"
                 }),
-                p = (0, i.Z)("div", {
+                f = (0, i.Z)("div", {
                     target: "e1ytxlu94"
                 })({
                     name: "yq7cq8",
                     styles: "font-style:italic;margin-left:1em;cursor:pointer;user-select:none"
                 }),
-                f = (0, i.Z)("input", {
+                p = (0, i.Z)("input", {
                     target: "e1ytxlu93"
                 })(""),
                 h = (0, i.Z)("div", {
@@ -109,11 +109,11 @@
                 }), " ", r.createElement("br", null), r.createElement(h, null, r.createElement("strong", null, "Drag and drop files here or"), "  ", r.createElement(u, {
                     callback: t,
                     text: "Select Files"
-                })), n && r.createElement(d, null, r.createElement(f, {
+                })), n && r.createElement(d, null, r.createElement(p, {
                     type: "checkbox",
                     onChange: c,
                     checked: l
-                }), r.createElement(p, {
+                }), r.createElement(f, {
                     onClick: c
                 }, "Enable Sprite Sheet Mode [BETA]"))))
             };
@@ -190,13 +190,13 @@
                     name: "1d3mj7z",
                     styles: "width:10em;margin-right:1.5em"
                 }),
-                p = (0, r.Z)(s.Z, {
+                f = (0, r.Z)(s.Z, {
                     target: "eteiwuh3"
                 })({
                     name: "cbglpv",
                     styles: "margin:0 0.5em"
                 }),
-                f = (0, r.Z)("input", {
+                p = (0, r.Z)("input", {
                     target: "eteiwuh2"
                 })({
                     name: "1d9z9vl",
@@ -224,10 +224,10 @@
                     onClick: function() {
                         t()
                     }
-                }, "Reset"), u.createElement(p, {
+                }, "Reset"), u.createElement(f, {
                     width: 20,
                     icon: l.Wq
-                }), u.createElement(f, {
+                }), u.createElement(p, {
                     type: "range",
                     className: "sliderInput",
                     min: 1,
@@ -238,7 +238,7 @@
                         var t = e.target.value;
                         n(t)
                     }
-                }), u.createElement(p, {
+                }), u.createElement(f, {
                     width: 20,
                     icon: o.q9
                 }), u.createElement(g, {
@@ -274,8 +274,8 @@
                 m = n(60933),
                 u = n(80988),
                 d = n(85042),
-                p = n(70123);
-            var f = (0, i.Z)(c.X2, {
+                f = n(70123);
+            var p = (0, i.Z)(c.X2, {
                     target: "e1aautwr2"
                 })({
                     name: "1abt8pa",
@@ -308,7 +308,7 @@
                     x = (0, a.Z)(v, 2),
                     y = x[0];
                 x[1];
-                return s.createElement(g, null, s.createElement(f, null, s.createElement(p.ZP, {
+                return s.createElement(g, null, s.createElement(p, null, s.createElement(f.ZP, {
                     image: (0, m.Gr)(t[y]),
                     crop: l,
                     zoom: n,
@@ -397,45 +397,47 @@
                     n = e.onCompleted,
                     i = e.onCancel,
                     o = e.onBack,
-                    c = s.useState(1),
-                    u = (0, a.Z)(c, 2),
-                    d = u[0],
-                    p = u[1],
-                    f = s.useState(0),
-                    h = (0, a.Z)(f, 2),
-                    g = h[0],
-                    E = h[1],
-                    b = s.useState({
+                    c = e.maxImageDimension,
+                    u = void 0 === c ? 2048 : c,
+                    d = s.useState(1),
+                    f = (0, a.Z)(d, 2),
+                    p = f[0],
+                    h = f[1],
+                    g = s.useState(0),
+                    E = (0, a.Z)(g, 2),
+                    b = E[0],
+                    Z = E[1],
+                    C = s.useState({
                         x: 0,
                         y: 0
                     }),
-                    Z = (0, a.Z)(b, 2),
-                    C = Z[0],
-                    k = Z[1],
-                    S = s.useState({
+                    k = (0, a.Z)(C, 2),
+                    S = k[0],
+                    j = k[1],
+                    P = s.useState({
                         x: 0,
                         y: 0,
                         width: 0,
                         height: 0
                     }),
-                    j = (0, a.Z)(S, 2),
-                    P = j[0],
-                    z = j[1],
-                    A = s.useState({
+                    z = (0, a.Z)(P, 2),
+                    A = z[0],
+                    I = z[1],
+                    N = s.useState({
                         x: 0,
                         y: 0,
                         width: 0,
                         height: 0
                     }),
-                    N = (0, a.Z)(A, 2),
-                    I = N[0],
-                    q = N[1],
-                    D = s.useState(null),
-                    F = (0, a.Z)(D, 2),
-                    R = (F[0], F[1], s.useState("square")),
+                    D = (0, a.Z)(N, 2),
+                    q = D[0],
+                    F = D[1],
+                    R = s.useState(null),
                     B = (0, a.Z)(R, 2),
-                    X = B[0],
-                    T = (B[1], function() {
+                    M = (B[0], B[1], s.useState("square")),
+                    X = (0, a.Z)(M, 2),
+                    T = X[0],
+                    G = (X[1], function() {
                         var e = (0, r.Z)(l().mark((function e(t) {
                             return l().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -446,7 +448,7 @@
                                             a.onload = function() {
                                                 var t = document.createElement("canvas"),
                                                     n = t.getContext("2d");
-                                                t.width = a.width, t.height = a.height, n.save(), n.translate(t.width / 2, t.height / 2), n.rotate(g * Math.PI / 180), n.translate(-t.width / 2, -t.height / 2), n.drawImage(a, 0, 0), n.restore(), t.toBlob(function() {
+                                                t.width = a.width, t.height = a.height, n.save(), n.translate(t.width / 2, t.height / 2), n.rotate(b * Math.PI / 180), n.translate(-t.width / 2, -t.height / 2), n.drawImage(a, 0, 0), n.restore(), t.toBlob(function() {
                                                     var t = (0, r.Z)(l().mark((function t(n) {
                                                         var r;
                                                         return l().wrap((function(t) {
@@ -481,20 +483,30 @@
                             return e.apply(this, arguments)
                         }
                     }()),
-                    G = function() {
+                    L = function(e) {
+                        var t = e.width,
+                            n = e.height;
+                        if (t <= u && n <= u) return e;
+                        var r = Math.min(u / t, u / n),
+                            a = document.createElement("canvas");
+                        a.width = Math.round(t * r), a.height = Math.round(n * r);
+                        var i = a.getContext("2d");
+                        return i.imageSmoothingQuality = "high", i.drawImage(e, 0, 0, a.width, a.height), a
+                    },
+                    $ = function() {
                         var e = (0, r.Z)(l().mark((function e(t) {
                             var n, a;
                             return l().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, T(t);
+                                        return e.next = 2, G(t);
                                     case 2:
                                         return n = e.sent, a = n.base64, e.abrupt("return", new Promise((function(e) {
                                             var t = new Image;
                                             t.onload = function() {
                                                 var n = document.createElement("canvas"),
                                                     a = n.getContext("2d");
-                                                n.width = I.width, n.height = I.height, a.drawImage(t, -I.x, -I.y), n.toBlob(function() {
+                                                n.width = q.width, n.height = q.height, a.drawImage(t, -q.x, -q.y), L(n).toBlob(function() {
                                                     var n = (0, r.Z)(l().mark((function n(r) {
                                                         var a;
                                                         return l().wrap((function(n) {
@@ -529,17 +541,17 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    M = function() {
+                    _ = function() {
                         var e = (0, r.Z)(l().mark((function e() {
                             var r;
                             return l().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, G(t);
+                                        return e.next = 2, $(t);
                                     case 2:
                                         r = e.sent, n({
                                             image: r,
-                                            mask: X
+                                            mask: T
                                         });
                                     case 4:
                                     case "end":
@@ -554,25 +566,25 @@
                 return s.createElement(y, null, s.createElement(x, null, s.createElement(w, {
                     frames: [t],
                     completedCallback: n,
-                    zoom: d,
-                    setZoom: p,
-                    rotation: g,
-                    setRotation: E,
-                    crop: C,
-                    setCrop: k,
-                    croppedArea: P,
-                    setCroppedArea: z,
-                    croppedAreaPixels: I,
-                    setCroppedAreaPixels: q
+                    zoom: p,
+                    setZoom: h,
+                    rotation: b,
+                    setRotation: Z,
+                    crop: S,
+                    setCrop: j,
+                    croppedArea: A,
+                    setCroppedArea: I,
+                    croppedAreaPixels: q,
+                    setCroppedAreaPixels: F
                 })), s.createElement(v, {
                     onCancel: i,
                     onBack: function() {
                         o()
                     },
-                    onNext: M
+                    onNext: _
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=8cc3f2b4bb2adafafe17df96750d6ec3c6eb8eb4da729545174fc8f496dfb5ca.js.map
+//# sourceMappingURL=21253e0ada18d9dfd2553f848b04b52c32b901f2549bdb8a42820db9cef8a5fb.js.map

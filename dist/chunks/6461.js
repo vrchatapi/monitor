@@ -3,7 +3,7 @@
     [6461], {
         76461: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => Le
+                default: () => Te
             });
             var n = r(42138),
                 a = r(15861),
@@ -89,26 +89,26 @@
                 U = r(80988),
                 F = (r(37599), r(49567), r(98185)),
                 D = r(19637),
-                L = r(94370),
-                T = r(6811),
+                T = r(94370),
+                L = r(6811),
                 P = (r(37337), r(4991)),
                 R = r(35773),
                 q = r(95305),
                 z = r(93007),
                 G = r(30381),
                 M = r.n(G),
-                K = r(72522);
+                Y = r(72522);
 
-            function Y(e, t) {
+            function K(e, t) {
                 var r = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!r) {
                     if (Array.isArray(e) || (r = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return X(e, t);
+                            if ("string" == typeof e) return V(e, t);
                             var r = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === r && e.constructor && (r = e.constructor.name);
                             if ("Map" === r || "Set" === r) return Array.from(e);
-                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return X(e, t)
+                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return V(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         r && (e = r);
                         var n = 0,
@@ -154,21 +154,21 @@
                 }
             }
 
-            function X(e, t) {
+            function V(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                 return n
             }
-            var V = "standard",
-                W = "impostor",
-                $ = m.createElement(U.$1, {
+            var X = "standard",
+                _ = "impostor",
+                W = m.createElement(U.$1, {
                     color: "#54b5c5",
-                    icon: T.f8
+                    icon: L.f8
                 }),
-                B = {
+                $ = {
                     estimatedServiceDurationSeconds: 14400
                 };
-            const _ = function(e) {
+            const B = function(e) {
                 var t, r, n = e.avatar,
                     a = e.refetch;
                 if (!n) return m.createElement("div", null, "We don't seem to have that avatar.");
@@ -176,7 +176,7 @@
                     c = !1,
                     s = null,
                     u = {},
-                    d = Y(n.unityPackages);
+                    d = K(n.unityPackages);
                 try {
                     for (d.s(); !(o = d.n()).done;) {
                         var w = o.value,
@@ -188,7 +188,7 @@
                             fileId: (0, N.oQ)(g),
                             versionNumber: parseInt((0, N.Rz)(g)),
                             unitySortNumber: b
-                        })), u[f][null != p ? p : V] = !0
+                        })), u[f][null != p ? p : X] = !0
                     }
                 } catch (e) {
                     d.e(e)
@@ -206,10 +206,10 @@
                     A = (0, l.Z)(j, 2),
                     F = A[0],
                     D = A[1],
-                    T = D.isLoading,
+                    L = D.isLoading,
                     G = D.isError,
-                    X = D.error,
-                    _ = D.isSuccess,
+                    V = D.error,
+                    B = D.isSuccess,
                     H = D.reset,
                     Q = (0, x.Ko)(null === (t = s) || void 0 === t ? void 0 : t.fileId, {
                         skip: !s
@@ -230,9 +230,9 @@
                         skip: !ne
                     }).data,
                     ue = (0, E.ve)().data,
-                    de = null !== (r = null != se ? se : ue) && void 0 !== r ? r : B,
+                    de = null !== (r = null != se ? se : ue) && void 0 !== r ? r : $,
                     me = i > 0,
-                    we = i === K.IM.length,
+                    we = i === Y.IM.length,
                     fe = n.lastImpostorizationRequest,
                     ve = null != fe && M()(fe).add(144e5).isAfter(M()());
                 if (ne) {
@@ -243,13 +243,13 @@
                         if (null != he && null != he.date && M()(he.date).isAfter(fe))
                             if (!he.isSuccess) ce(null !== (ge = he.failureReason) && void 0 !== ge ? ge : "Well, this is embarassing, we're not sure."), ae(!1)
                     }
-                } else _ ? (H(), ae(!0)) : !ve || we || ie || ae(!0);
+                } else B ? (H(), ae(!0)) : !ve || we || ie || ae(!0);
                 var be = c,
                     ye = "Unknown";
                 c || (ye = "No asset found for Windows Platform with Unity ".concat(2017, " or later"));
                 var Ee = function(e) {
                     var t, r = "An unknown error occurred";
-                    return 429 === (null == e ? void 0 : e.status) ? r = "You're doing that a bit too much. Please try again tomorrow." : null !== (t = X.data) && void 0 !== t && null !== (t = t.error) && void 0 !== t && t.message && (r = m.createElement("code", null, X.data.error.message)), r
+                    return 429 === (null == e ? void 0 : e.status) ? r = "You're doing that a bit too much. Please try again tomorrow." : null !== (t = V.data) && void 0 !== t && null !== (t = t.error) && void 0 !== t && t.message && (r = m.createElement("code", null, V.data.error.message)), r
                 };
                 return m.createElement(v.Z, null, m.createElement("p", {
                     style: {
@@ -278,7 +278,7 @@
                     style: {
                         color: "#737372"
                     }
-                }, "Impostor"))), m.createElement("tbody", null, K.IM.map((function(e) {
+                }, "Impostor"))), m.createElement("tbody", null, Y.IM.map((function(e) {
                     var t, r = u[e] || {};
                     return m.createElement("tr", {
                         key: e,
@@ -289,15 +289,15 @@
                         style: {
                             color: "#f8f9fa"
                         }
-                    }, (null === (t = K.VT[e]) || void 0 === t ? void 0 : t.label) || e), m.createElement("td", {
+                    }, (null === (t = Y.VT[e]) || void 0 === t ? void 0 : t.label) || e), m.createElement("td", {
                         style: {
                             color: "#f8f9fa"
                         }
-                    }, V in r && $), m.createElement("td", {
+                    }, X in r && W), m.createElement("td", {
                         style: {
                             color: "#f8f9fa"
                         }
-                    }, W in r && $))
+                    }, _ in r && W))
                 })))), ie && m.createElement(R.Z, null, m.createElement(q.Z, null, m.createElement(U.qX, {
                     type: "warn",
                     title: "Impostorization failed"
@@ -310,13 +310,13 @@
                     },
                     color: "primary",
                     disabled: we || ne || !be,
-                    loading: T || ne
+                    loading: L || ne
                 }, m.createElement(U.$1, {
                     width: 20,
                     icon: z.default
                 }), " ", function() {
                     var e;
-                    if (T) e = "Requesting Impostors...";
+                    if (L) e = "Requesting Impostors...";
                     else if (ne) {
                         if (e = "Generating Impostors...", null != fe) {
                             var t = M()(),
@@ -341,12 +341,12 @@
                     disabled: !me
                 }, m.createElement(U.$1, {
                     width: 20,
-                    icon: L.nY
+                    icon: T.nY
                 }), " Delete Impostors"))), S && m.createElement(U.qX, {
                     type: "error"
                 }, "Welp, failed to delete impostors.", m.createElement("br", null), Ee(O)), G && m.createElement(U.qX, {
                     type: "error"
-                }, "Couldn't request impostors.", m.createElement("br", null), Ee(X)))
+                }, "Couldn't request impostors.", m.createElement("br", null), Ee(V)))
             };
             r(9669);
             var H = r(45987),
@@ -390,7 +390,7 @@
                     U = j[1].isLoading,
                     F = function() {
                         var e = (0, a.Z)(d().mark((function e(a) {
-                            var l, i, s, u;
+                            var l, i, s, u, m;
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -404,7 +404,7 @@
                                             file: i,
                                             maxFileSizeMegaBytes: n,
                                             minImageDimension: t,
-                                            maxImageDimension: r
+                                            maxImageDimension: Number.POSITIVE_INFINITY
                                         });
                                     case 5:
                                         if (s = e.sent, f(s), s.pass) {
@@ -413,28 +413,30 @@
                                         }
                                         return e.abrupt("return");
                                     case 9:
-                                        return e.prev = 9, e.next = 12, C({
+                                        return e.next = 11, (0, N.Tu)(i, r);
+                                    case 11:
+                                        return u = e.sent, e.prev = 12, e.next = 15, C({
                                             tag: "avatargallery",
-                                            file: i,
+                                            file: u,
                                             galleryId: o
                                         }).unwrap();
-                                    case 12:
-                                        E(""), e.next = 19;
-                                        break;
                                     case 15:
-                                        e.prev = 15, e.t0 = e.catch(9), console.error("Failed to upload image:", e.t0), v((0, g.d)({
+                                        E(""), e.next = 22;
+                                        break;
+                                    case 18:
+                                        e.prev = 18, e.t0 = e.catch(12), console.error("Failed to upload image:", e.t0), v((0, g.d)({
                                             title: "Avatar Gallery",
                                             icon: c.KC,
-                                            message: "Failed to upload image:  ".concat((null === e.t0 || void 0 === e.t0 || null === (u = e.t0.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) || "Unknown error"),
+                                            message: "Failed to upload image:  ".concat((null === e.t0 || void 0 === e.t0 || null === (m = e.t0.data) || void 0 === m || null === (m = m.error) || void 0 === m ? void 0 : m.message) || "Unknown error"),
                                             color: "danger",
                                             timeout: 5e3
                                         }));
-                                    case 19:
+                                    case 22:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [9, 15]
+                                [12, 18]
                             ])
                         })));
                         return function(t) {
@@ -553,22 +555,22 @@
                     U = (0, l.Z)(A, 2),
                     F = U[0],
                     D = U[1],
-                    L = (0, m.useState)(!0),
-                    T = (0, l.Z)(L, 2),
-                    P = T[0],
-                    R = T[1],
+                    T = (0, m.useState)(!0),
+                    L = (0, l.Z)(T, 2),
+                    P = L[0],
+                    R = L[1],
                     q = (0, m.useState)(null),
                     z = (0, l.Z)(q, 2),
                     G = z[0],
                     M = z[1],
-                    K = (0, x.Yh)(),
-                    Y = (0, l.Z)(K, 2),
-                    X = Y[0],
-                    V = Y[1].isLoading,
-                    W = (0, x.g3)(),
-                    $ = (0, l.Z)(W, 2),
-                    B = $[0],
-                    _ = $[1].isLoading,
+                    Y = (0, x.Yh)(),
+                    K = (0, l.Z)(Y, 2),
+                    V = K[0],
+                    X = K[1].isLoading,
+                    _ = (0, x.g3)(),
+                    W = (0, l.Z)(_, 2),
+                    $ = W[0],
+                    B = W[1].isLoading,
                     H = (0, x.e4)(),
                     Q = (0, l.Z)(H, 2),
                     J = Q[0],
@@ -639,7 +641,7 @@
                     ve = (null == O ? void 0 : O.length) > 0,
                     pe = function() {
                         var e = (0, a.Z)(d().mark((function e(t) {
-                            var r, n, a, l;
+                            var r, n, a, l, i;
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -653,7 +655,7 @@
                                             file: n,
                                             maxFileSizeMegaBytes: f,
                                             minImageDimension: o,
-                                            maxImageDimension: s
+                                            maxImageDimension: Number.POSITIVE_INFINITY
                                         });
                                     case 5:
                                         if (a = e.sent, p(a), a.pass) {
@@ -662,28 +664,30 @@
                                         }
                                         return e.abrupt("return");
                                     case 9:
-                                        return e.prev = 9, e.next = 12, X({
+                                        return e.next = 11, (0, N.Tu)(n, s);
+                                    case 11:
+                                        return l = e.sent, e.prev = 12, e.next = 15, V({
                                             tag: "avatargallery",
-                                            file: n,
+                                            file: l,
                                             galleryId: h
                                         }).unwrap();
-                                    case 12:
-                                        Z(""), e.next = 19;
-                                        break;
                                     case 15:
-                                        return e.prev = 15, e.t0 = e.catch(9), console.error("Failed to upload image:", e.t0), e.abrupt("return", b((0, g.d)({
+                                        Z(""), e.next = 22;
+                                        break;
+                                    case 18:
+                                        return e.prev = 18, e.t0 = e.catch(12), console.error("Failed to upload image:", e.t0), e.abrupt("return", b((0, g.d)({
                                             title: "Avatar Gallery",
                                             icon: c.KC,
-                                            message: "Failed to upload image:  ".concat((null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) || "Unknown error"),
+                                            message: "Failed to upload image:  ".concat((null === e.t0 || void 0 === e.t0 || null === (i = e.t0.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message) || "Unknown error"),
                                             color: "danger",
                                             timeout: 5e3
                                         })));
-                                    case 19:
+                                    case 22:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [9, 15]
+                                [12, 18]
                             ])
                         })));
                         return function(t) {
@@ -696,7 +700,7 @@
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return r = t.fileId, e.prev = 1, e.next = 4, B({
+                                        return r = t.fileId, e.prev = 1, e.next = 4, $({
                                             fileId: r
                                         }).unwrap();
                                     case 4:
@@ -722,7 +726,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    he = _ || V || te;
+                    he = B || X || te;
                 return m.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full ".concat(t)
                 }, !he && function() {
@@ -957,14 +961,14 @@
                     }(),
                     k = function() {
                         var e = (0, a.Z)(d().mark((function e(t) {
-                            var r, n, a, l;
+                            var r, n;
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return r = t.file, e.next = 3, (0, ve.uG)(r);
                                     case 3:
-                                        if (n = e.sent, a = n.width < 64 || n.height < 64, l = n.width > 2048 || n.height > 2048, !a) {
-                                            e.next = 9;
+                                        if (n = e.sent, !(n.width < 64 || n.height < 64)) {
+                                            e.next = 8;
                                             break
                                         }
                                         return y({
@@ -972,19 +976,9 @@
                                             message: "The image you are uploading is rather small.\nKeep it above 64x64.",
                                             color: "danger"
                                         }), e.abrupt("return", !1);
-                                    case 9:
-                                        if (!l) {
-                                            e.next = 12;
-                                            break
-                                        }
-                                        return y({
-                                            title: "Image Error",
-                                            message: "The image you are uploading is too big!\nKeep it to under 2048x2048.",
-                                            color: "danger"
-                                        }), e.abrupt("return", !1);
-                                    case 12:
+                                    case 8:
                                         return e.abrupt("return", !0);
-                                    case 13:
+                                    case 9:
                                     case "end":
                                         return e.stop()
                                 }
@@ -1037,7 +1031,7 @@
                         return E(e)
                     },
                     hintText: "",
-                    hintTextMuted: "Each file must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels."
+                    hintTextMuted: "Each file must be less than 10MB and larger than 64x64 pixels. Images larger than 2048x2048 will be resized automatically."
                 })))
             };
             var Ee = r(3620),
@@ -1170,7 +1164,7 @@
                     A = (0, m.useState)(!0),
                     F = (0, l.Z)(A, 2),
                     D = F[0],
-                    L = F[1],
+                    T = F[1],
                     P = (0, m.useState)({
                         pass: !0,
                         message: ""
@@ -1180,16 +1174,16 @@
                     z = R[1],
                     G = (0, m.useState)("overview"),
                     M = (0, l.Z)(G, 2),
-                    K = M[0],
-                    Y = M[1],
-                    X = (0, m.useState)(j),
-                    V = (0, l.Z)(X, 2),
-                    W = V[0],
-                    $ = V[1],
-                    B = (0, m.useState)(),
-                    _ = (0, l.Z)(B, 2),
-                    le = _[0],
-                    oe = _[1],
+                    Y = M[0],
+                    K = M[1],
+                    V = (0, m.useState)(j),
+                    X = (0, l.Z)(V, 2),
+                    _ = X[0],
+                    W = X[1],
+                    $ = (0, m.useState)(),
+                    B = (0, l.Z)($, 2),
+                    le = B[0],
+                    oe = B[1],
                     ie = (0, m.useState)(),
                     ce = (0, l.Z)(ie, 2),
                     se = ce[0],
@@ -1209,36 +1203,36 @@
                     Ue = (0, m.useState)(!!j.acknowledgements),
                     Fe = (0, l.Z)(Ue, 2),
                     De = Fe[0],
-                    Le = Fe[1],
-                    Te = (0, m.useState)(!!j.acknowledgements),
-                    Pe = (0, l.Z)(Te, 2),
+                    Te = Fe[1],
+                    Le = (0, m.useState)(!!j.acknowledgements),
+                    Pe = (0, l.Z)(Le, 2),
                     Re = Pe[0],
                     qe = Pe[1],
                     ze = (0, m.useState)(!1),
                     Ge = (0, l.Z)(ze, 2),
                     Me = Ge[0],
-                    Ke = Ge[1],
-                    Ye = (0, m.useState)(""),
-                    Xe = (0, l.Z)(Ye, 2),
-                    Ve = Xe[0],
-                    We = Xe[1],
-                    $e = (0, m.useRef)(null),
-                    Be = (0, E.C0)(),
-                    _e = (0, l.Z)(Be, 2),
-                    He = _e[0],
-                    Qe = _e[1].isLoading,
+                    Ye = Ge[1],
+                    Ke = (0, m.useState)(""),
+                    Ve = (0, l.Z)(Ke, 2),
+                    Xe = Ve[0],
+                    _e = Ve[1],
+                    We = (0, m.useRef)(null),
+                    $e = (0, E.C0)(),
+                    Be = (0, l.Z)($e, 2),
+                    He = Be[0],
+                    Qe = Be[1].isLoading,
                     Je = (0, E.GG)(),
                     et = (0, l.Z)(Je, 1)[0],
                     tt = (0, m.useMemo)((function() {
                         var e;
-                        return Re && !De && (null == W || null === (e = W.acknowledgements) || void 0 === e ? void 0 : e.length) > 0
-                    }), [Re, De, W.acknowledgements]),
+                        return Re && !De && (null == _ || null === (e = _.acknowledgements) || void 0 === e ? void 0 : e.length) > 0
+                    }), [Re, De, _.acknowledgements]),
                     rt = function() {
                         var e, t;
                         oe(at(null == y || null === (e = y.styles) || void 0 === e ? void 0 : e.primary)), ue(at(null == y || null === (t = y.styles) || void 0 === t ? void 0 : t.secondary))
                     },
                     nt = function() {
-                        $(j), rt()
+                        W(j), rt()
                     },
                     at = function(e) {
                         var t;
@@ -1254,7 +1248,7 @@
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = [].concat((0, n.Z)(O), (0, n.Z)(be), (0, n.Z)(ve)), W.thumbnailImageUrl, r = W.acknowledgements, a = (0, H.Z)(W, Ze), e.prev = 2, e.next = 5, He({
+                                        return t = [].concat((0, n.Z)(O), (0, n.Z)(be), (0, n.Z)(ve)), _.thumbnailImageUrl, r = _.acknowledgements, a = (0, H.Z)(_, Ze), e.prev = 2, e.next = 5, He({
                                             avatarId: c,
                                             data: Se(Se({}, a), {}, {
                                                 acknowledgements: r || "",
@@ -1268,7 +1262,7 @@
                                     case 5:
                                         s(), v((0, g.d)({
                                             title: "Avatar Updated",
-                                            icon: T.f8,
+                                            icon: L.f8,
                                             color: "success",
                                             timeout: 5e3
                                         })), e.next = 13;
@@ -1326,14 +1320,14 @@
                         }
                     }(),
                     it = (0, m.useCallback)((function(e) {
-                        Y(e)
+                        K(e)
                     }), []),
                     ct = !!se && !le,
                     st = tt || ct;
                 return m.createElement(U.u_, {
                     title: "Edit Avatar",
                     onClose: function() {
-                        nt(), L(!0), s()
+                        nt(), T(!0), s()
                     },
                     isVisible: i,
                     width: "750px",
@@ -1353,13 +1347,13 @@
                     isVisible: Me,
                     className: "tw-pt-0",
                     onClose: function() {
-                        return Ke(!1)
+                        return Ye(!1)
                     },
                     title: "Upload a New Thumbnail",
                     children: m.createElement(ye, {
                         imageTag: "avatarimage",
                         onCloseCallback: function() {
-                            return Ke(!1)
+                            return Ye(!1)
                         },
                         onUploadedCallback: function(e) {
                             return function(e) {
@@ -1372,10 +1366,10 @@
                                         a = n.fileId,
                                         l = n.fileVersion,
                                         o = "".concat("https://api.vrchat.cloud", "/api/1/image/").concat(a, "/").concat(l, "/256");
-                                    $(Se(Se({}, W), {}, {
+                                    W(Se(Se({}, _), {}, {
                                         thumbnailImageUrl: o,
                                         imageUrl: r
-                                    })), Ke(!1)
+                                    })), Ye(!1)
                                 } catch (e) {
                                     return console.error("Failed to process the uploaded image data", e.message), null
                                 }
@@ -1396,22 +1390,22 @@
                         name: "Gallery",
                         condition: !0
                     }],
-                    selected: K,
+                    selected: Y,
                     justify: "start"
                 }), m.createElement("div", {
-                    className: "tw-".concat("overview" === K ? "block" : "hidden", " tw-w-full")
+                    className: "tw-".concat("overview" === Y ? "block" : "hidden", " tw-w-full")
                 }, m.createElement("div", {
                     className: "tw-flex tw-flex-row tw-w-full"
                 }, m.createElement("div", {
                     className: "tw-block tw-mr-5"
                 }, m.createElement("button", {
                     onClick: function() {
-                        return Ke(!0)
+                        return Ye(!0)
                     },
                     type: "button",
                     className: "\n                  tw-bg-cover tw-bg-center tw-w-[286px] tw-h-[286px]  \n                  tw-border-0 tw-p-0 tw-rounded-2xl tw-relative tw-items-center tw-justify-center tw-flex tw-bg-transparent\n                ",
                     style: {
-                        backgroundImage: "url(".concat((null == W ? void 0 : W.thumbnailImageUrl) || (null == W ? void 0 : W.imageUrl), ")")
+                        backgroundImage: "url(".concat((null == _ ? void 0 : _.thumbnailImageUrl) || (null == _ ? void 0 : _.imageUrl), ")")
                     }
                 })), m.createElement("div", {
                     className: "tw-flex-grow"
@@ -1423,9 +1417,9 @@
                     className: "tw-mb-0",
                     type: "text",
                     placeholder: "Enter avatar name",
-                    value: W.name,
+                    value: _.name,
                     onChange: function(e) {
-                        return $(Se(Se({}, W), {}, {
+                        return W(Se(Se({}, _), {}, {
                             name: e.target.value
                         }))
                     },
@@ -1433,7 +1427,7 @@
                     minLength: 1
                 }), m.createElement("span", {
                     className: "tw-text-sm tw-text-placeholder-text"
-                }, null !== (t = W.name.length) && void 0 !== t ? t : 0, "/128")), m.createElement("div", {
+                }, null !== (t = _.name.length) && void 0 !== t ? t : 0, "/128")), m.createElement("div", {
                     className: "tw-mb-0"
                 }, m.createElement("label", {
                     className: "tw-mb-2"
@@ -1442,9 +1436,9 @@
                         height: "120px"
                     },
                     placeholder: "Enter avatar description",
-                    value: W.description,
+                    value: _.description,
                     onChange: function(e) {
-                        return $(Se(Se({}, W), {}, {
+                        return W(Se(Se({}, _), {}, {
                             description: e.target.value
                         }))
                     },
@@ -1452,7 +1446,7 @@
                     minLength: 1
                 }), m.createElement("span", {
                     className: "tw-text-sm tw-text-placeholder-text"
-                }, null !== (r = W.description.length) && void 0 !== r ? r : 0, "/1024")))), m.createElement("div", {
+                }, null !== (r = _.description.length) && void 0 !== r ? r : 0, "/1024")))), m.createElement("div", {
                     className: "tw-flex tw-flex-col tw-mt-5"
                 }, m.createElement("div", {
                     className: "tw-flex tw-flex-row tw-justify-between tw-items-end"
@@ -1527,14 +1521,14 @@
                             var t = "".concat(Ee.i.AUTHOR).concat(e.target.value);
                             if (be.find((function(e) {
                                     return e === t
-                                })) || 0 === Ve.trim().length) return;
-                            xe([].concat((0, n.Z)(be), [t])), We("")
+                                })) || 0 === Xe.trim().length) return;
+                            xe([].concat((0, n.Z)(be), [t])), _e("")
                         }
                     },
-                    value: Ve,
-                    ref: $e,
+                    value: Xe,
+                    ref: We,
                     onChange: function(e) {
-                        return We(e.target.value)
+                        return _e(e.target.value)
                     },
                     maxLength: 64,
                     minLength: 1,
@@ -1542,13 +1536,13 @@
                 }), m.createElement(U.zx, {
                     className: "tw-ml-2 tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-w-10 disabled:tw-cursor-not-allowed disabled:tw-opacity-50",
                     onClick: function() {
-                        $e.current.focus();
-                        var e = "".concat(Ee.i.AUTHOR).concat($e.current.value);
+                        We.current.focus();
+                        var e = "".concat(Ee.i.AUTHOR).concat(We.current.value);
                         be.find((function(t) {
                             return t === e
-                        })) || (xe([].concat((0, n.Z)(be), [e])), We(""))
+                        })) || (xe([].concat((0, n.Z)(be), [e])), _e(""))
                     },
-                    disabled: C.length >= 10 || 0 === Ve.trim().length
+                    disabled: C.length >= 10 || 0 === Xe.trim().length
                 }, m.createElement(U.$1, {
                     icon: re.r8
                 }))), m.createElement("div", {
@@ -1586,11 +1580,11 @@
                         height: "120px"
                     },
                     placeholder: "Acknowledgements",
-                    value: null == W ? void 0 : W.acknowledgements,
+                    value: null == _ ? void 0 : _.acknowledgements,
                     onChange: function(e) {
-                        $(Se(Se({}, W), {}, {
+                        W(Se(Se({}, _), {}, {
                             acknowledgements: e.target.value
-                        })), Le(!1)
+                        })), Te(!1)
                     },
                     maxLength: 2048,
                     minLength: 1
@@ -1601,7 +1595,7 @@
                     type: "checkbox",
                     checked: De,
                     onChange: function() {
-                        return Le(!De)
+                        return Te(!De)
                     },
                     value: "acknowledge",
                     className: "tw-mr-1 tw-w-7 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-cursor-pointer tw-border-[#677079] tw-rounded tw-accent-link-highlight tw-ring-link-highlight"
@@ -1635,7 +1629,7 @@
                         className: "tw-mr-1 tw-w-7 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-cursor-pointer tw-border-[#677079] tw-rounded tw-accent-link-highlight tw-ring-link-highlight"
                     }), a)
                 }))))))), m.createElement("div", {
-                    className: "tw-".concat("gallery" === K ? "flex" : "hidden", " tw-container tw-flex-col")
+                    className: "tw-".concat("gallery" === Y ? "flex" : "hidden", " tw-container tw-flex-col")
                 }, m.createElement("h2", {
                     className: "heading"
                 }, "Image Gallery"), m.createElement("p", {
@@ -1646,7 +1640,7 @@
                     icon: Q.faXmark,
                     className: "tw-ml-2 tw-cursor-pointer",
                     onClick: function() {
-                        return L(!1)
+                        return T(!1)
                     }
                 })), !1 === q.pass && m.createElement(U.qX, {
                     type: "error",
@@ -1698,7 +1692,7 @@
                     name: "o33n1w",
                     styles: "flex:100;min-width:285px"
                 });
-            const Le = function() {
+            const Te = function() {
                 var e, t = (0, w.I0)(),
                     r = (0, f.UO)().avatarId,
                     o = (0, h.Tu)().user,
@@ -1710,36 +1704,36 @@
                     I = (0, l.Z)(N, 2),
                     Z = I[0],
                     C = I[1],
-                    L = m.useState(!1),
-                    T = (0, l.Z)(L, 2),
-                    P = T[0],
-                    R = T[1],
+                    T = m.useState(!1),
+                    L = (0, l.Z)(T, 2),
+                    P = L[0],
+                    R = L[1],
                     q = m.useState(!1),
                     z = (0, l.Z)(q, 2),
                     G = z[0],
                     M = z[1],
-                    K = (0, E.LQ)({
+                    Y = (0, E.LQ)({
                         avatarId: r
                     }),
-                    Y = K.data,
-                    X = K.isFetching,
-                    V = K.isError,
-                    W = K.error,
-                    $ = K.refetch,
-                    B = (0, j.GR)(null == Y ? void 0 : Y.authorId, {
-                        skip: !r || !Y || !(null != Y && Y.authorId)
+                    K = Y.data,
+                    V = Y.isFetching,
+                    X = Y.isError,
+                    _ = Y.error,
+                    W = Y.refetch,
+                    $ = (0, j.GR)(null == K ? void 0 : K.authorId, {
+                        skip: !r || !K || !(null != K && K.authorId)
                     }),
-                    H = B.data,
-                    Q = B.isFetching,
-                    J = B.isError,
-                    ee = B.error,
+                    H = $.data,
+                    Q = $.isFetching,
+                    J = $.isError,
+                    ee = $.error,
                     te = (0, y.q7)({
                         skip: !o
                     }),
                     re = te.data,
                     ne = te.isLoading,
                     ae = te.isSuccess,
-                    le = (null == Y ? void 0 : Y.authorId) === o.id,
+                    le = (null == K ? void 0 : K.authorId) === o.id,
                     oe = le,
                     ie = (0, x.iw)({
                         avatarId: r
@@ -1755,13 +1749,13 @@
                         forType: "avatar",
                         forAction: "wear"
                     }, {
-                        skip: !o || !Y || le || "private" !== (null == Y ? void 0 : Y.releaseStatus)
+                        skip: !o || !K || le || "private" !== (null == K ? void 0 : K.releaseStatus)
                     }),
                     me = de.data,
                     we = (de.isFetching, de.isError, de.error, (0, O.Ms)({
-                        listingId: null == Y ? void 0 : Y.productId
+                        listingId: null == K ? void 0 : K.productId
                     }, {
-                        skip: !(null != Y && Y.productId) || (null == Y ? void 0 : Y.authorId) !== o.id
+                        skip: !(null != K && K.productId) || (null == K ? void 0 : K.authorId) !== o.id
                     })),
                     fe = we.data,
                     ve = we.isFetching,
@@ -1780,41 +1774,41 @@
                     Se = Ze.error,
                     Oe = Ze.isSuccess,
                     je = (0, E.x8)(),
-                    Le = (0, l.Z)(je, 2),
-                    Te = Le[0],
-                    Pe = Le[1],
+                    Te = (0, l.Z)(je, 2),
+                    Le = Te[0],
+                    Pe = Te[1],
                     Re = Pe.isLoading,
                     qe = Pe.isError,
                     ze = Pe.error,
                     Ge = Pe.isSuccess,
                     Me = (0, E.eP)(),
-                    Ke = (0, l.Z)(Me, 2),
-                    Ye = Ke[0],
-                    Xe = Ke[1],
-                    Ve = Xe.isLoading,
-                    We = Xe.isError,
-                    $e = Xe.error,
-                    Be = Xe.isSuccess,
-                    _e = (0, h.Nr)(Z, 1400),
-                    He = X || Q,
-                    Qe = V || J || se || Ee || qe || We || Ce,
-                    Je = W || ee || ue || xe || ze || $e || Se,
+                    Ye = (0, l.Z)(Me, 2),
+                    Ke = Ye[0],
+                    Ve = Ye[1],
+                    Xe = Ve.isLoading,
+                    _e = Ve.isError,
+                    We = Ve.error,
+                    $e = Ve.isSuccess,
+                    Be = (0, h.Nr)(Z, 1400),
+                    He = V || Q,
+                    Qe = X || J || se || Ee || qe || _e || Ce,
+                    Je = _ || ee || ue || xe || ze || We || Se,
                     et = (0, m.useMemo)((function() {
                         return !(ne || !ae) && (null == re ? void 0 : re.includes("permission-sell-avatar-products"))
                     }), [ne]);
                 m.useEffect((function() {
-                    null != Y && Y.id && C(Y.tags)
-                }), [Y]), m.useEffect((function() {
-                    if (null != Y && Y.id && _e) {
-                        var e = new Set(Y.tags);
-                        _e.length === Y.tags.length && _e.every((function(t) {
+                    null != K && K.id && C(K.tags)
+                }), [K]), m.useEffect((function() {
+                    if (null != K && K.id && Be) {
+                        var e = new Set(K.tags);
+                        Be.length === K.tags.length && Be.every((function(t) {
                             return e.has(t)
                         })) || Ie({
-                            avatarId: Y.id,
-                            tags: _e
+                            avatarId: K.id,
+                            tags: Be
                         })
                     }
-                }), [_e]), m.useEffect((function() {
+                }), [Be]), m.useEffect((function() {
                     Ge && t((0, g.d)({
                         title: "Changed Avatars!",
                         icon: c.KC,
@@ -1823,18 +1817,18 @@
                         timeout: 5e3
                     }))
                 }), [Ge]), m.useEffect((function() {
-                    Be && t((0, g.d)({
+                    $e && t((0, g.d)({
                         title: "Changed Fallback Avatars!",
                         icon: c.KC,
                         message: "You have successfully changed fallback avatars!",
                         color: "success",
                         timeout: 5e3
                     }))
-                }), [Be]), m.useEffect((function() {
+                }), [$e]), m.useEffect((function() {
                     Oe && t((0, g.d)({
                         title: "Content Warnings Updated",
                         icon: s.Yj,
-                        message: "You have successfully updated the content warnings for ".concat(null != Y && Y.name ? "avatar: ".concat(Y.name) : "this avatar"),
+                        message: "You have successfully updated the content warnings for ".concat(null != K && K.name ? "avatar: ".concat(K.name) : "this avatar"),
                         color: "success",
                         timeout: 7e3
                     }))
@@ -1854,7 +1848,7 @@
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, Te({
+                                        return e.next = 2, Le({
                                             avatarId: r
                                         });
                                     case 2:
@@ -1881,7 +1875,7 @@
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, Ye({
+                                        return e.next = 2, Ke({
                                             avatarId: r
                                         });
                                     case 2:
@@ -1932,12 +1926,12 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                if (V) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(U.qX, {
+                if (X) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(U.qX, {
                     type: "error",
                     title: "Error",
                     className: "tw-my-2"
-                }, (null == W || null === (tt = W.data) || void 0 === tt || null === (tt = tt.error) || void 0 === tt ? void 0 : tt.message) || "There was an error loading the avatar."));
-                if (!Y || He && !Y) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
+                }, (null == _ || null === (tt = _.data) || void 0 === tt || null === (tt = tt.error) || void 0 === tt ? void 0 : tt.message) || "There was an error loading the avatar."));
+                if (!K || He && !K) return m.createElement(v.Z, null, m.createElement(U.$4, null, "Avatar"), m.createElement(F.Z, {
                     loading: !0
                 }));
                 var ot, it = "";
@@ -1949,7 +1943,7 @@
                             return d().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, t((0, A.IR)(Y));
+                                        return e.next = 2, t((0, A.IR)(K));
                                     case 2:
                                         return e.next = 4, t((0, A.WB)("avatar"));
                                     case 4:
@@ -1971,21 +1965,21 @@
                     st = function() {
                         M(!1), t((0, A.bi)())
                     };
-                return m.createElement(v.Z, null, m.createElement(U.$4, null, null !== (e = Y.name) && void 0 !== e ? e : "Avatar"), it, oe && m.createElement(Ae, {
+                return m.createElement(v.Z, null, m.createElement(U.$4, null, null !== (e = K.name) && void 0 !== e ? e : "Avatar"), it, oe && m.createElement(Ae, {
                     isOpen: P,
                     onCloseCallback: function() {
                         return R(!1)
                     },
-                    avatarId: Y.id
+                    avatarId: K.id
                 }), m.createElement(b.default, {
-                    avatar: Y,
+                    avatar: K,
                     user: H,
                     galleryImages: rt,
                     licenses: me,
                     isAvatarSold: fe,
                     isAvatarSoldFetching: ve,
                     isSelectAvatarLoading: Re,
-                    isSelectFallbackLoading: Ve,
+                    isSelectFallbackLoading: Xe,
                     isUpdateAvatarFetching: ye,
                     hasAvatarSellerPermission: et,
                     onEdit: function() {
@@ -2025,9 +2019,9 @@
                     className: "tw-block"
                 }, m.createElement(U.X2, {
                     className: "tw-mb-2"
-                }, m.createElement(_, {
-                    avatar: Y,
-                    refetch: $
+                }, m.createElement(B, {
+                    avatar: K,
+                    refetch: W
                 }))))), !1, !1, m.createElement(U.u_, {
                     title: Ue[k] || null,
                     isVisible: G,
@@ -2261,4 +2255,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0d37184def35f55f66e0cfa09cce80d1e156b8c3a3de9d54c82d3919770a736c.js.map
+//# sourceMappingURL=aa57a8c3586328b30ca905618f0faa20027aeebbc7fca1cb47d8317e600dcacc.js.map

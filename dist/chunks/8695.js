@@ -280,14 +280,15 @@
                             humanize: !1,
                             tagsSet: le
                         }),
-                        He = ((0, R.Tq)(ce, !0), (0, _.j$)("about-me-settings-tooltip")),
-                        _e = He.shouldShow,
-                        Ye = He.markAsSeen,
-                        Ke = (0, o.useRef)(null);
+                        He = new Set(ae).has("admin_moderator"),
+                        _e = ((0, R.Tq)(ce, !0), (0, _.j$)("about-me-settings-tooltip")),
+                        Ye = _e.shouldShow,
+                        Ke = _e.markAsSeen,
+                        Xe = (0, o.useRef)(null);
                     (0, o.useLayoutEffect)((function() {
-                        Ke.current && Ge(Ke.current.scrollHeight > Ke.current.clientHeight)
+                        Xe.current && Ge(Xe.current.scrollHeight > Xe.current.clientHeight)
                     }), [be]);
-                    var Xe = function() {
+                    var Qe = function() {
                             var e = (0, v.Z)(U().mark((function e() {
                                 var r, n;
                                 return U().wrap((function(e) {
@@ -332,7 +333,7 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Qe = function() {
+                        Je = function() {
                             var e = (0, v.Z)(U().mark((function e() {
                                 var t;
                                 return U().wrap((function(e) {
@@ -357,11 +358,11 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Je = fe,
-                        et = de || me || fe || pe;
+                        et = fe,
+                        tt = de || me || fe || pe;
                     return o.createElement($, {
                         hasBanner: !0,
-                        bannerSrc: Je,
+                        bannerSrc: et,
                         noPadding: !0
                     }, o.createElement("div", {
                         className: "tw-relative tw-pt-[75px] tw-p-4 md:tw-p-8 md:tw-pt-[75px]"
@@ -372,7 +373,7 @@
                     }, D && o.createElement(A.Z, {
                         className: "tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-text-2xl"
                     }), !D && o.createElement("img", {
-                        src: et,
+                        src: tt,
                         alt: "".concat(oe, "'s profile icon"),
                         className: "tw-object-cover tw-h-full tw-w-full tw-bg-darker-grey"
                     })), o.createElement("div", {
@@ -451,7 +452,7 @@
                         className: "tw-flex tw-flex-row tw-gap-3 tw-w-full tw-relative"
                     }, o.createElement("div", {
                         className: "tw-relative tw-flex-1"
-                    }, te && _e && o.createElement("div", {
+                    }, te && Ye && o.createElement("div", {
                         role: "tooltip",
                         "aria-label": "Customize your profile icon and banner here",
                         className: "tw-flex tw-items-center tw-gap-2 tw-whitespace-normal tw-text-center tw-absolute tw--top-[calc(100%+0.5rem)] tw-right-1/2 tw-translate-x-1/2 tw-py-3 tw-px-4 tw-bg-dark-teal tw-text-white tw-text-xs tw-rounded tw-shadow-lg tw-z-50"
@@ -461,7 +462,7 @@
                         type: "button",
                         "aria-label": "Dismiss tooltip",
                         className: " tw-border-none tw-rounded-full tw-p-0",
-                        onClick: Ye
+                        onClick: Ke
                     }, o.createElement(s.$1, {
                         icon: k.faCircleXmark,
                         className: "tw-w-4 tw-h-4 tw-text-base"
@@ -474,7 +475,7 @@
                         icon: N.Y,
                         className: "tw-mr-2"
                     }), "Edit Profile")), o.createElement(s.zx, {
-                        onClick: Qe,
+                        onClick: Je,
                         className: "tw-w-11"
                     }, o.createElement(s.$1, {
                         icon: y.Dr
@@ -486,11 +487,11 @@
                         containerClasses: "sm:tw-max-w-[245px] tw-w-full",
                         onFavorite: w
                     }), o.createElement(s.zx, {
-                        onClick: Qe,
+                        onClick: Je,
                         className: "tw-w-11"
                     }, o.createElement(s.$1, {
                         icon: y.Dr
-                    })), o.createElement(Q.Z, {
+                    })), !He && o.createElement(Q.Z, {
                         userId: ve,
                         isMuted: Z,
                         isBlocked: g,
@@ -505,7 +506,7 @@
                         className: (0, M.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
                             "tw-line-clamp-3 tw-overflow-hidden": !Pe
                         }),
-                        ref: Ke
+                        ref: Xe
                     }, be), Ve && !Pe && o.createElement("span", {
                         className: "tw-flex tw-items-center"
                     }, o.createElement("span", {
@@ -534,7 +535,7 @@
                         className: (0, M.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
                             "tw-line-clamp-3 tw-overflow-hidden": !Pe
                         }),
-                        ref: Ke
+                        ref: Xe
                     }, "No bio added."))), ge && (null == ge ? void 0 : ge.length) > 0 && o.createElement("div", {
                         className: "tw-flex-row tw-flex tw-gap-3 tw-flex-wrap"
                     }, ge.map((function(e) {
@@ -568,7 +569,7 @@
                             return Re(e.target.value)
                         }
                     }), o.createElement(s.zx, {
-                        onClick: Xe,
+                        onClick: Qe,
                         className: "tw-w-12",
                         "aria-label": "Save note"
                     }, o.createElement(s.$1, {
@@ -1438,7 +1439,7 @@
                         wt = {
                             profileIcon: {
                                 modalTitle: "Add your icon",
-                                modalSubTitle: "Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels.",
+                                modalSubTitle: "Must be less than 10MB and larger than 64x64 pixels. Images larger than 2048x2048 pixels will be resized automatically.",
                                 gallerySelectionTitle: "Select from your uploaded icons",
                                 tag: "icon",
                                 updateUserFileMutation: et,
@@ -1451,7 +1452,7 @@
                             },
                             profilePicture: {
                                 modalTitle: "Add your picture",
-                                modalSubTitle: "Must be less than 10MB, larger than 64x64 pixels, and smaller than 2048x2048 pixels.",
+                                modalSubTitle: "Must be less than 10MB and larger than 64x64 pixels. Images larger than 2048x2048 pixels will be resized automatically.",
                                 gallerySelectionTitle: "Select from your uploaded pictures",
                                 tag: "gallery",
                                 updateUserFileMutation: at,
@@ -1477,12 +1478,12 @@
                         },
                         mt = function() {
                             var e = (0, v.Z)(U().mark((function e(t) {
-                                var r, n;
+                                var r, n, a;
                                 return U().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (!(t.target.files && t.target.files.length > 0)) {
-                                                e.next = 11;
+                                                e.next = 12;
                                                 break
                                             }
                                             if (!(t.target.files[0].size > 10485760)) {
@@ -1494,24 +1495,21 @@
                                                 message: "Image file size must be less than 10MB."
                                             }), e.abrupt("return");
                                         case 4:
-                                            (r = new Image).addEventListener("load", (function() {
-                                                r.width < 64 || r.height < 64 ? ie({
+                                            r = new Image, n = window.URL.createObjectURL(t.target.files[0]), r.addEventListener("load", (function() {
+                                                window.URL.revokeObjectURL(n), r.width < 64 || r.height < 64 ? ie({
                                                     pass: !1,
                                                     message: "Image dimensions are too small, must be larger than 64x64 pixels."
-                                                }) : r.width > Qe || r.height > Qe ? ie({
-                                                    pass: !1,
-                                                    message: "Image dimensions are too large, must be smaller than 2048x2048 pixels."
-                                                }) : (window.URL.revokeObjectURL(r.src), ie({
+                                                }) : ie({
                                                     pass: !0,
                                                     message: null
-                                                }))
+                                                })
                                             }), {
                                                 once: !0
-                                            }), r.src = window.URL.createObjectURL(t.target.files[0]), F(void 0), (n = new FileReader).addEventListener("load", (function() {
+                                            }), r.src = n, F(void 0), (a = new FileReader).addEventListener("load", (function() {
                                                 var e;
-                                                return Y((null === (e = n.result) || void 0 === e ? void 0 : e.toString()) || "")
-                                            })), n.readAsDataURL(t.target.files[0]);
-                                        case 11:
+                                                return Y((null === (e = a.result) || void 0 === e ? void 0 : e.toString()) || "")
+                                            })), a.readAsDataURL(t.target.files[0]);
+                                        case 12:
                                         case "end":
                                             return e.stop()
                                     }
@@ -1561,7 +1559,17 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        pt = function() {
+                        pt = function(e) {
+                            var t = e.width,
+                                r = e.height;
+                            if (t <= Qe && r <= Qe) return e;
+                            var n = Math.min(Qe / t, Qe / r),
+                                a = document.createElement("canvas");
+                            a.width = Math.round(t * n), a.height = Math.round(r * n);
+                            var l = a.getContext("2d");
+                            return l.imageSmoothingQuality = "high", l.drawImage(e, 0, 0, a.width, a.height), a
+                        },
+                        gt = function() {
                             var e = (0, v.Z)(U().mark((function e() {
                                 var t;
                                 return U().wrap((function(e) {
@@ -1573,9 +1581,9 @@
                                             }
                                             throw new Error("Crop canvas does not exist");
                                         case 2:
-                                            return e.next = 4, ft();
-                                        case 4:
-                                            return t = e.sent, e.next = 7, t.toBlob(function() {
+                                            return e.t0 = pt, e.next = 5, ft();
+                                        case 5:
+                                            return e.t1 = e.sent, t = (0, e.t0)(e.t1), e.next = 9, t.toBlob(function() {
                                                 var e = (0, v.Z)(U().mark((function e(t) {
                                                     var r, n, l, o;
                                                     return U().wrap((function(e) {
@@ -1624,7 +1632,7 @@
                                                     return e.apply(this, arguments)
                                                 }
                                             }(), "image/png");
-                                        case 7:
+                                        case 9:
                                         case "end":
                                             return e.stop()
                                     }
@@ -1634,7 +1642,7 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        gt = function() {
+                        bt = function() {
                             var e = (0, v.Z)(U().mark((function e(t) {
                                 var r, n;
                                 return U().wrap((function(e) {
@@ -1673,12 +1681,12 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        bt = function() {
+                        vt = function() {
                             var e = (0, v.Z)(U().mark((function e() {
                                 return U().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, gt({
+                                            return e.next = 2, bt({
                                                 latestVersionFile: {
                                                     file: {
                                                         url: ""
@@ -1697,10 +1705,10 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        vt = function(e) {
+                        xt = function(e) {
                             be(e), me(!0)
                         },
-                        xt = function() {
+                        ht = function() {
                             var e = (0, v.Z)(U().mark((function e() {
                                 var t, r;
                                 return U().wrap((function(e) {
@@ -1748,8 +1756,8 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        ht = "" !== G && (null == se ? void 0 : se.pass),
-                        Et = Me || tt || Le || $e || lt || it;
+                        Et = "" !== G && (null == se ? void 0 : se.pass),
+                        yt = Me || tt || Le || $e || lt || it;
                     return o.createElement(o.Fragment, null, o.createElement("div", {
                         tabIndex: "-1",
                         className: (0, M.cx)("\n            tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n            tw-overflow-x-hidden tw-overflow-y-auto\n            md:tw-inset-0\n            tw-h-[calc(100%-1rem)] tw-max-h-full\n            tw-bg-dark-grey-transparent\n          ", {
@@ -1950,7 +1958,7 @@
                     }, "profileIcon" === g && x && o.createElement(Xe.Z, {
                         key: "avatar-fallback",
                         srcUrl: x,
-                        onClick: bt,
+                        onClick: vt,
                         isRounded: !0
                     }), "profileIcon" === g && Ae.map((function(e) {
                         return o.createElement(Xe.Z, {
@@ -1964,7 +1972,7 @@
                                 return U().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            gt(e);
+                                            bt(e);
                                         case 1:
                                         case "end":
                                             return t.stop()
@@ -1972,7 +1980,7 @@
                                 }), t)
                             }))),
                             onDeleteCallback: function(e) {
-                                vt(e)
+                                xt(e)
                             },
                             isRounded: !0,
                             isLocked: !xe
@@ -1980,7 +1988,7 @@
                     })), "profilePicture" === g && o.createElement("div", {
                         role: "button",
                         tabIndex: 0,
-                        onClick: bt,
+                        onClick: vt,
                         className: "tw-cursor-pointer tw-rounded-lg tw-w-full tw-h-full tw-aspect-video tw-border-3 tw-border-solid tw-border-transparent hover:tw-border-highlight tw-relative tw-flex tw-items-center tw-justify-center",
                         style: {
                             backgroundColor: y
@@ -1998,7 +2006,7 @@
                                 return U().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            gt(e);
+                                            bt(e);
                                         case 1:
                                         case "end":
                                             return t.stop()
@@ -2006,7 +2014,7 @@
                                 }), t)
                             }))),
                             onDeleteCallback: function(e) {
-                                vt(e)
+                                xt(e)
                             },
                             className: "tw-aspect-video",
                             isLocked: he || Ee
@@ -2016,9 +2024,9 @@
                     }, o.createElement("button", {
                         type: "button",
                         className: (0, M.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
-                            "tw-hidden": ht
+                            "tw-hidden": Et
                         }),
-                        onClick: bt
+                        onClick: vt
                     }, wt[g].clearButtonLabel), o.createElement("button", {
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-button-bg-grey tw-leading-none",
@@ -2028,13 +2036,13 @@
                     }, "Cancel"), o.createElement("button", {
                         type: "button",
                         className: (0, M.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
-                            "tw-hidden": !ht
+                            "tw-hidden": !Et
                         }),
-                        disabled: Et,
+                        disabled: yt,
                         onClick: function() {
-                            return pt()
+                            return gt()
                         }
-                    }, "Confirm  ", Et && o.createElement(s.$1, {
+                    }, "Confirm  ", yt && o.createElement(s.$1, {
                         icon: Ie.LM,
                         spin: !0
                     })))))), o.createElement(s.sm, {
@@ -2042,7 +2050,7 @@
                         headerText: "Delete Image",
                         bodyText: "Are you sure you want to delete this image? This action cannot be undone.",
                         confirmText: "Delete",
-                        confirmCallback: xt,
+                        confirmCallback: ht,
                         cancelCallback: function() {
                             me(!1), be(null)
                         },
@@ -3416,4 +3424,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cceae4509af21df2c7570e9f8a55c07690d25dec18ff41d82b91ce74447cf85b.js.map
+//# sourceMappingURL=df5f4e40b7eeb123ccaa52a29366eb10c44afd9a2ec2f55762bbac9f8a7e8917.js.map

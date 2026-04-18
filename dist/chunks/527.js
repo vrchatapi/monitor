@@ -292,13 +292,13 @@
                     }, e)
                 }))))
             };
-            var W = (0, o.Z)("div", {
+            var D = (0, o.Z)("div", {
                     target: "e1kgcgv31"
                 })({
                     name: "v4exnp",
                     styles: "height:86%;margin-bottom:1.5em;flex:80%"
                 }),
-                D = (0, o.Z)("div", {
+                W = (0, o.Z)("div", {
                     target: "e1kgcgv30"
                 })({
                     name: "1fttcpj",
@@ -355,9 +355,9 @@
                     G = u.useState(1),
                     X = (0, i.Z)(G, 2),
                     J = X[0],
-                    K = X[1],
-                    H = u.useState(1),
-                    Q = (0, i.Z)(H, 2),
+                    H = X[1],
+                    K = u.useState(1),
+                    Q = (0, i.Z)(K, 2),
                     ee = Q[0],
                     te = Q[1],
                     re = u.useState("Aura"),
@@ -494,8 +494,8 @@
                         }
                     }();
                 return u.useEffect((function() {
-                    l && (K((null == s ? void 0 : s.frameCount) || 4), te((null == s ? void 0 : s.frameRate) || 15))
-                }), [l]), u.createElement(D, null, u.createElement(W, null, d === x && !l && u.createElement(B, {
+                    l && (H((null == s ? void 0 : s.frameCount) || 4), te((null == s ? void 0 : s.frameRate) || 15))
+                }), [l]), u.createElement(W, null, u.createElement(D, null, d === x && !l && u.createElement(B, {
                     frames: t,
                     completedCallback: r,
                     zoom: v,
@@ -511,7 +511,7 @@
                 }), d === x && l && u.createElement(V, {
                     spriteSheet: t[0],
                     frameCount: J,
-                    setFrameCount: K,
+                    setFrameCount: H,
                     frameRate: ee,
                     setFrameRate: te
                 }), d === y && u.createElement($, {
@@ -525,9 +525,9 @@
                     onNext: me
                 }))
             };
-            var K = r(41255);
+            var H = r(41255);
 
-            function H(e, t) {
+            function K(e, t) {
                 var r = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!r) {
                     if (Array.isArray(e) || (r = function(e, t) {
@@ -601,7 +601,7 @@
                             if (void 0 === e) throw new Error("GIF explosion gave undefined output?");
                             if (0 === e.length) throw new Error("GIF explosion gave no output frames.");
                             var r, n = [],
-                                a = H(e);
+                                a = K(e);
                             try {
                                 for (a.s(); !(r = a.n()).done;) {
                                     var i = r.value;
@@ -632,7 +632,7 @@
                     v = (0, i.Z)(w, 2),
                     x = v[0],
                     y = v[1],
-                    b = (0, K.Yh)(),
+                    b = (0, H.Yh)(),
                     k = (0, i.Z)(b, 2),
                     E = k[0],
                     Z = k[1],
@@ -921,7 +921,8 @@
                                             onCancel: t,
                                             onBack: function() {
                                                 return x(null)
-                                            }
+                                            },
+                                            maxImageDimension: 1024
                                         }));
                                     case 9:
                                     case "end":
@@ -935,14 +936,14 @@
                     }(),
                     B = function() {
                         var e = (0, a.Z)(c().mark((function e(t) {
-                            var r, n, a, i;
+                            var r, n;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return r = t.file, e.next = 3, (0, d.uG)(r);
                                     case 3:
-                                        if (n = e.sent, a = n.width < 64 || n.height < 64, i = n.width > 1024 || n.height > 1024, !a) {
-                                            e.next = 9;
+                                        if (n = e.sent, !(n.width < 64 || n.height < 64)) {
+                                            e.next = 8;
                                             break
                                         }
                                         return P({
@@ -950,19 +951,9 @@
                                             message: "The image you are uploading is rather small.\nKeep it above 64x64.",
                                             color: "danger"
                                         }), e.abrupt("return", !1);
-                                    case 9:
-                                        if (!i) {
-                                            e.next = 12;
-                                            break
-                                        }
-                                        return P({
-                                            title: "Image Error",
-                                            message: "The image you are uploading is too big!\nKeep it to under 1024x1024.",
-                                            color: "danger"
-                                        }), e.abrupt("return", !1);
-                                    case 12:
+                                    case 8:
                                         return e.abrupt("return", !0);
-                                    case 13:
+                                    case 9:
                                     case "end":
                                         return e.stop()
                                 }
@@ -1004,7 +995,7 @@
                     fileSelectedCallback: function(e) {
                         return N(e)
                     },
-                    hintText: "Stickers should be a square image between 64x64 and 1024x1024.",
+                    hintText: "Stickers should be a square image, at least 64x64. Images larger than 1024x1024 will be resized automatically.",
                     hintTextMuted: u.createElement(u.Fragment, null, "For best results, use a power-of-two size (64, 128, 256, 512, or 1024 pixels).", u.createElement("br", null), "You can also create stickers inside VRChat using the camera!")
                 })))
             }
@@ -1059,13 +1050,13 @@
                     $ = (0, p.v9)((function(e) {
                         return e.user.photoList
                     })),
-                    W = (0, p.v9)((function(e) {
+                    D = (0, p.v9)((function(e) {
                         return e.user.iconList
                     })),
-                    D = d.useState([]),
-                    J = (0, i.Z)(D, 2),
-                    K = J[0],
-                    H = J[1],
+                    W = d.useState([]),
+                    J = (0, i.Z)(W, 2),
+                    H = J[0],
+                    K = J[1],
                     Q = d.useState(!1),
                     ee = (0, i.Z)(Q, 2),
                     te = ee[0],
@@ -1166,7 +1157,7 @@
                             return f().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (H([t].concat((0, n.Z)(K))), !O) {
+                                        if (K([t].concat((0, n.Z)(H))), !O) {
                                             e.next = 8;
                                             break
                                         }
@@ -1344,7 +1335,7 @@
                             highestVersionNumber: r
                         }
                     })),
-                    Ye = W.map((function(e) {
+                    Ye = D.map((function(e) {
                         var t, r = Math.max.apply(Math, (0, n.Z)(e.versions.map((function(e) {
                                 return e.version
                             })))),
@@ -1389,19 +1380,19 @@
                         }
                     })),
                     $e = Ye.length,
-                    We = Le.length,
-                    De = Ge.length,
+                    De = Le.length,
+                    We = Ge.length,
                     Je = Xe.length,
-                    Ke = m ? Se.profilePicOverride : Ee.profilePicOverride;
-                te && (Ke = "");
+                    He = m ? Se.profilePicOverride : Ee.profilePicOverride;
+                te && (He = "");
                 m ? Se.userIcon : Ee.userIcon;
-                var He = m ? "64" : Ie["permission-user-gallery"],
-                    Qe = He <= We,
+                var Ke = m ? "64" : Ie["permission-user-gallery"],
+                    Qe = Ke <= De,
                     et = m ? "64" : Ie["permission-user-icons"],
                     tt = et <= $e,
                     rt = (null === (t = Ie["permission-user-emoji"]) || void 0 === t ? void 0 : t.max) || 9,
                     nt = (null === (r = Ie["permission-user-stickers"]) || void 0 === r ? void 0 : r.max) || 9,
-                    at = rt <= De,
+                    at = rt <= We,
                     it = nt <= Je,
                     ot = m ? "".concat(Se.displayName, "'s") : "Your";
                 if (ce) switch (F) {
@@ -1471,7 +1462,7 @@
                         name: "sf0fa5",
                         styles: ".center-flex{display:flex;flex-flow:row wrap;padding:0!important;align-items:center;justify-content:center;}"
                     })
-                }, Ke && !T && !Y && !G && !O && d.createElement("div", {
+                }, He && !T && !Y && !G && !O && d.createElement("div", {
                     className: "tw-m-auto tw-text-center"
                 }, d.createElement("h2", null, ot, " Currently Equipped Profile Picture")), d.createElement(x.JX, {
                     className: "tw-mb-3 tw-gap-4"
@@ -1518,7 +1509,7 @@
                 }, d.createElement(x.$1, {
                     icon: u.cf,
                     className: "tw-me-2"
-                }), "Upload ", lt.title)))), !T && Ke && !Y && !G && !O && d.createElement(x.zx, {
+                }), "Upload ", lt.title)))), !T && He && !Y && !G && !O && d.createElement(x.zx, {
                     onClick: O ? Oe : Me,
                     className: "tw-px-3",
                     danger: !0
@@ -1527,7 +1518,7 @@
                     className: "tw-me-2"
                 }), "Reset ", O ? "Photo" : "Icon"), O && !m && d.createElement("div", null, d.createElement("span", {
                     className: "tw-text-light-grey"
-                }, We, "/", He), _e && d.createElement("div", {
+                }, De, "/", Ke), _e && d.createElement("div", {
                     role: "tooltip",
                     "aria-label": "Looking to change your profile icon? Head to Profile Settings",
                     className: "tw-flex tw-items-center tw-gap-2 tw-whitespace-normal tw-text-center tw-w-96 tw-top-[calc(100%+0.5rem)] tw-left-0 md:tw-left-[calc(100%+0.5rem)] md:tw-top-1/2 md:tw--translate-y-1/2 tw-absolute tw-py-3 tw-px-3 md:tw-px-4  tw-bg-dark-teal tw-text-white tw-text-xs tw-rounded tw-shadow-lg tw-z-10"
@@ -1552,12 +1543,12 @@
                     className: "tw-mr-2"
                 }), "You have reached your ", F, " limit!")), d.createElement("div", {
                     className: "tw-m-auto tw-text-center"
-                }, L && d.createElement("h2", null, ot, " Uploaded Icons (", $e, "/", et, " Icons)"), Y && d.createElement("h2", null, ot, " Uploaded Emoji (", De, "/", rt, " Emoji)"), G && d.createElement("h2", null, ot, " Uploaded Stickers (", Je, "/", nt, " Stickers)")), m && We > 0 && d.createElement("div", {
+                }, L && d.createElement("h2", null, ot, " Uploaded Icons (", $e, "/", et, " Icons)"), Y && d.createElement("h2", null, ot, " Uploaded Emoji (", We, "/", rt, " Emoji)"), G && d.createElement("h2", null, ot, " Uploaded Stickers (", Je, "/", nt, " Stickers)")), m && De > 0 && d.createElement("div", {
                     className: "tw-m-auto tw-text-center"
                 }, d.createElement(x.zx, {
                     className: "btn-danger",
                     onClick: Ve
-                }, "Reset Profile Pic and Delete All (", We, ") Photos")))), d.createElement(z, null, d.createElement(U, null, lt.files.map((function(e) {
+                }, "Reset Profile Pic and Delete All (", De, ") Photos")))), d.createElement(z, null, d.createElement(U, null, lt.files.map((function(e) {
                     return d.createElement("div", {
                         key: e.fileId
                     }, d.createElement(I.Z, {
@@ -1648,4 +1639,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3a389a5cbe1b4aaf9a0ae91d1a31882c1628309f7d161cd949b06561dd3f0d21.js.map
+//# sourceMappingURL=acbe935318327a10114c87ebb99c12e299187a39604f09d061c794d3310ef45c.js.map
