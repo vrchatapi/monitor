@@ -23,85 +23,84 @@
                 g = r(67294),
                 b = r(79655);
             const h = function(e) {
-                var t, r = e.userId,
-                    h = e.userData,
-                    E = e.currentUserData,
+                var t, r, h = e.userId,
+                    E = e.userData,
                     y = e.showLocation,
                     k = e.showInvalid,
                     N = e.isUserHidden,
                     F = e.openLinksInNewTab,
-                    I = void 0 !== F && F,
-                    C = e.isCard,
-                    L = void 0 !== C && C,
-                    U = e.isCompact,
-                    q = void 0 !== U && U,
-                    R = e.friendControls,
-                    Z = void 0 !== R && R,
+                    C = void 0 !== F && F,
+                    I = e.isCard,
+                    L = void 0 !== I && I,
+                    q = e.isCompact,
+                    R = void 0 !== q && q,
+                    U = e.friendControls,
+                    Z = void 0 !== U && U,
                     S = e.moderateControls,
                     $ = void 0 !== S && S,
                     z = e.editMode,
                     P = void 0 !== z && z,
                     M = e.editModeContent,
                     H = e.className,
-                    j = (0, p.GR)(r, {
-                        skip: !!h
+                    j = (0, p.GR)(h, {
+                        skip: !!E
                     }),
                     A = j.data,
                     T = j.isFetching,
                     O = j.isError,
                     _ = j.error,
-                    B = (0, f.IB)({
-                        skip: !!E
-                    }).data,
-                    D = null != h ? h : A,
-                    K = null != E ? E : B,
-                    G = (0, g.useMemo)((function() {
+                    B = (0, f.XC)(),
+                    D = B.data,
+                    K = B.isSuccess,
+                    G = null != E ? E : A,
+                    J = K,
+                    W = (0, g.useMemo)((function() {
                         return (0, x.Je)({
-                            user: D,
-                            currentUser: K
+                            user: G,
+                            currentUser: D
                         })
-                    }), [K, D]) || {},
-                    J = G.isSelf,
-                    W = G.isFriend,
-                    V = (0, v.pc)(),
-                    X = (0, v.JZ)(),
-                    Q = X.playerModerations,
-                    Y = Q.mute.users,
-                    ee = Q.block.users,
-                    te = X.loading;
-                if (!r && !D) return null;
+                    }), [D, G]) || {},
+                    X = W.isSelf,
+                    V = W.isFriend,
+                    Q = (0, v.pc)(),
+                    Y = (0, v.JZ)(),
+                    ee = Y.playerModerations,
+                    te = ee.mute.users,
+                    re = ee.block.users,
+                    ne = Y.loading;
+                if (!h && !G) return null;
                 if (k && O) return g.createElement("div", {
                     className: "tw-py-[10px] tw-px-[20px] tw-border-2 tw-border-level-visitor"
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-row"
-                }, g.createElement("h6", null, "ID: ", r)), g.createElement("div", {
+                }, g.createElement("h6", null, "ID: ", h)), g.createElement("div", {
                     className: "tw-flex tw-flex-row"
-                }, _.status, ":", null === (t = _.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message));
-                if (!D || T) return g.createElement(l.Z, null);
-                var re = D || {},
-                    ne = re.tags,
-                    ae = re.state,
-                    oe = re.status,
-                    ie = re.location,
-                    le = re.profilePicOverride,
-                    ce = re.currentAvatarThumbnailImageUrl,
-                    se = re.displayName,
-                    de = re.userIcon,
-                    ue = re.id,
-                    we = re.currentAvatarImageUrl,
-                    me = "usr_00000000-0000-0000-0000-000000000000" === ue && "Hidden Mutual" === se,
-                    ve = new Set(ne).has("admin_moderator"),
-                    fe = new Set(ee).has(r),
-                    pe = new Set(Y).has(r),
-                    xe = "https://assets.vrchat.com/default/filtered.png",
-                    ge = "offline" === ae && !W && !J,
-                    be = le || ce || we,
-                    he = de || ce || le || we,
-                    Ee = function() {
+                }, _.status, ":", null === (r = _.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message));
+                if (!G || T) return g.createElement(l.Z, null);
+                var ae = G || {},
+                    oe = ae.tags,
+                    ie = ae.state,
+                    le = ae.status,
+                    ce = ae.location,
+                    se = ae.profilePicOverride,
+                    de = ae.currentAvatarThumbnailImageUrl,
+                    ue = ae.displayName,
+                    we = ae.userIcon,
+                    me = ae.id,
+                    ve = ae.currentAvatarImageUrl,
+                    fe = "usr_00000000-0000-0000-0000-000000000000" === me && "Hidden Mutual" === ue,
+                    pe = null !== (t = null == oe ? void 0 : oe.includes("admin_moderator")) && void 0 !== t && t,
+                    xe = null == te ? void 0 : te.includes(h),
+                    ge = null == re ? void 0 : re.includes(h),
+                    be = "https://assets.vrchat.com/default/filtered.png",
+                    he = "offline" === ie && !V && !X,
+                    Ee = se || de || ve,
+                    ye = we || de || se || ve,
+                    ke = function() {
                         return g.createElement("div", {
                             className: (0, m.cx)({
                                 "tw-h-auto tw-min-h-50px tw-p-2": P
-                            }, "tw-bg-darker-grey tw-border-dark-grey tw-items-center tw-rounded-tl-xl tw-rounded-tr-xl tw-h-0 tw-min-h-0  tw-transition-all tw-duration-[250ms] tw-ease-in-out")
+                            }, "tw-bg-darker-grey tw-border-dark-grey tw-items-center tw-rounded-tl-xl tw-rounded-tr-xl tw-h-0 tw-min-h-0 tw-transition-all tw-duration-[250ms] tw-ease-in-out")
                         }, g.createElement("div", {
                             className: (0, m.cx)("tw-opacity-0 tw-items-center tw-flex-grow tw-max-w-full tw-transition-all tw-duration-[250ms] tw-ease-in-out", {
                                 "tw-opacity-100 tw-flex": P,
@@ -109,23 +108,23 @@
                             })
                         }, M))
                     };
-                return N && !V || me && !V ? null : L ? g.createElement("div", {
+                return N && !Q || fe && !Q ? null : L ? g.createElement("div", {
                     style: {
                         "--avatar-size": "min(33.333%, 8rem)"
                     },
                     className: (0, m.cx)("tw-relative tw-bg-grey tw-aspect-[1.45/1] tw-rounded-2xl tw-pb-3 tw-border-solid tw-border-4 tw-border-grey", H)
-                }, M && Ee(), g.createElement("div", {
+                }, M && ke(), g.createElement("div", {
                     className: "tw-overflow-hidden tw-rounded-tl-xl tw-rounded-tr-xl tw-min-h-[100px] tw-h-1/2"
                 }, g.createElement("img", {
                     alt: "user banner",
-                    src: N ? xe : be,
+                    src: N ? be : Ee,
                     className: "tw-object-cover tw-w-full tw-h-full tw-object-top"
                 })), g.createElement("div", {
-                    className: (0, m.cx)("tw-absolute tw-transition-all tw-duration-[250ms] tw-ease-in-out tw-top-1/2 tw--translate-y-1/2 tw-z-10 tw-left-3 tw-h-[var(--avatar-size)] tw-max-h-32 tw-aspect-square tw-rounded-full tw-border-solid tw-border-4 tw-border-grey", {
+                    className: (0, m.cx)("tw-absolute tw-transition-all tw-duration-[250ms] tw-ease-in-out tw-top-1/2 tw--translate-y-1/2 tw-z-[1] tw-left-3 tw-h-[var(--avatar-size)] tw-max-h-32 tw-aspect-square tw-rounded-full tw-border-solid tw-border-4 tw-border-grey", {
                         "tw-top-[calc(50%+25px)]": P
                     })
                 }, g.createElement("img", {
-                    src: N ? xe : he,
+                    src: N ? be : ye,
                     alt: "user icon",
                     className: "tw-h-full tw-aspect-square tw-rounded-full tw-object-cover"
                 })), g.createElement("div", {
@@ -134,91 +133,91 @@
                     className: "tw-flex tw-flex-row tw-items-center tw-gap-1"
                 }, g.createElement(b.rU, {
                     className: "tw-text-lighter-grey",
-                    to: N ? "#" : "/home/user/".concat(r || ue),
-                    target: I ? "_blank" : void 0,
-                    "aria-label": "View ".concat(se, "'s profile"),
+                    to: N ? "#" : "/home/user/".concat(h || me),
+                    target: C ? "_blank" : void 0,
+                    "aria-label": "View ".concat(ue, "'s profile"),
                     onClick: function(e) {
                         return e.stopPropagation()
                     }
                 }, g.createElement("h4", {
                     className: "tw-truncate tw-text-left tw-mb-0"
-                }, N ? "Hidden" : se)), pe && !N && g.createElement(i.$1, {
+                }, N ? "Hidden" : ue)), xe && !N && g.createElement(i.$1, {
                     icon: a.Ek,
                     className: "tw-text-error-message-red"
-                }), fe && !N && g.createElement(i.$1, {
+                }), ge && !N && g.createElement(i.$1, {
                     icon: n.wO,
                     className: "tw-text-error-message-red"
                 })), g.createElement(s.Z, {
-                    status: oe,
+                    status: le,
                     withLabel: !0,
-                    isOffline: ge
-                }))) : g.createElement("div", null, M && Ee(), g.createElement("div", {
+                    isOffline: he
+                }))) : g.createElement("div", null, M && ke(), g.createElement("div", {
                     className: (0, m.cx)("tw-p-3 tw-relative tw-bg-grey hover:tw-bg-[#363B41] tw-rounded-lg", H)
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-row tw-mx-0 tw-gap-3 tw-items-center"
                 }, g.createElement("div", {
                     className: "tw-relative tw-flex tw-flex-col"
-                }, g.createElement("div", null, (V || !N) && g.createElement(b.rU, {
-                    to: "/home/user/".concat(r),
-                    title: N ? "Hidden" : ae,
-                    target: I ? "_blank" : void 0
+                }, g.createElement("div", null, (Q || !N) && g.createElement(b.rU, {
+                    to: "/home/user/".concat(h),
+                    title: N ? "Hidden" : ie,
+                    target: C ? "_blank" : void 0
                 }, g.createElement("div", {
                     className: "tw-rounded-full tw-relative tw-overflow-hidden tw-w-12 tw-h-12"
-                }, V && N && g.createElement(i.$1, {
+                }, Q && N && g.createElement(i.$1, {
                     icon: o.Aq,
                     className: "tw-text-4xl tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-text-lighter-grey"
                 }), g.createElement("img", {
                     alt: "profile",
                     className: (0, m.cx)("tw-object-cover tw-aspect-square tw-w-12"),
-                    src: be
-                }))))), !V && N && g.createElement("div", {
+                    src: Ee
+                }))))), !Q && N && g.createElement("div", {
                     className: "tw-flex-1 tw-flex tw-flex-col tw-w-full"
-                }, g.createElement("span", null, "Hidden")), (V || !N) && g.createElement("div", {
+                }, g.createElement("span", null, "Hidden")), (Q || !N) && g.createElement("div", {
                     className: "tw-flex-1 tw-flex tw-flex-col tw-w-full"
                 }, g.createElement("h6", {
                     className: "tw-mb-[6px] tw-space-x-2"
                 }, g.createElement(b.rU, {
                     className: "tw-text-lighter-grey",
-                    to: "/home/user/".concat(r),
-                    target: I ? "_blank" : void 0
-                }, se), pe && g.createElement(i.$1, {
+                    to: "/home/user/".concat(h),
+                    target: C ? "_blank" : void 0
+                }, ue), xe && g.createElement(i.$1, {
                     icon: a.Ek,
                     className: "tw-text-error-message-red"
-                }), fe && g.createElement(i.$1, {
+                }), ge && g.createElement(i.$1, {
                     icon: n.wO,
                     className: "tw-text-error-message-red"
                 })), g.createElement(s.Z, {
-                    status: oe,
+                    status: le,
                     withLabel: !0,
-                    isOffline: ge
+                    isOffline: he
                 })), g.createElement("div", {
                     className: "tw-flex tw-items-center tw-gap-3"
-                }, Z && !q && !J && !ve && !N && g.createElement(u.Z, {
-                    userId: r,
+                }, Z && !R && J && !X && !pe && !N && g.createElement(u.Z, {
+                    userId: h,
                     slim: !0,
                     containerClasses: "tw-rounded-lg tw-h-10",
                     className: "tw-text-subtext-grey tw-bg-grey tw-border-none tw-px-3 tw-p-2 tw-flex tw-items-center tw-gap-1"
-                }), $ && !q && !J && !ve && !N && g.createElement(w.Z, {
+                }), $ && !R && J && !X && !pe && !N && g.createElement(w.Z, {
                     neutral: !0,
                     className: "tw-text-subtext-grey tw-bg-grey tw-border-none tw-px-3 tw-p-2",
                     containerClasses: "tw-rounded-lg tw-h-10",
-                    userId: r,
-                    isMuted: pe,
-                    isBlocked: fe,
-                    isLoading: te
+                    userId: h,
+                    isMuted: xe,
+                    isBlocked: ge,
+                    isLoading: ne
                 }), g.createElement(c.Z, {
-                    userId: r
-                }))), "online" === ae && y && g.createElement("div", null, ie && g.createElement(d.Z, {
-                    location: ie,
-                    userId: r,
-                    currentUser: K,
+                    userId: h
+                }))), "online" === ie && y && g.createElement("div", null, ce && g.createElement(d.Z, {
+                    location: ce,
+                    userId: h,
+                    currentUser: D,
                     size: "normal"
                 }))))
             }
         },
         45781: (e, t, r) => {
             r.d(t, {
-                Z: () => I
+                Z: () => C
             });
             var n = r(15861),
                 a = r(54546),
@@ -260,12 +259,12 @@
                         }),
                         N = k.data,
                         F = void 0 === N ? [] : N,
-                        I = k.isFetching,
-                        C = (0, E.Xc)(),
-                        L = (0, a.Z)(C, 2),
-                        U = L[0],
-                        q = (L[1].isLoading, p || I),
-                        R = function() {
+                        C = k.isFetching,
+                        I = (0, E.Xc)(),
+                        L = (0, a.Z)(I, 2),
+                        q = L[0],
+                        R = (L[1].isLoading, p || C),
+                        U = function() {
                             var e = (0, n.Z)(d().mark((function e() {
                                 var t;
                                 return d().wrap((function(e) {
@@ -273,7 +272,7 @@
                                         case 0:
                                             return t = F.find((function(e) {
                                                 return e.favoriteId === r
-                                            })), e.prev = 1, e.next = 4, U({
+                                            })), e.prev = 1, e.next = 4, q({
                                                 type: "friend",
                                                 id: t.id,
                                                 groupName: t.tags[0]
@@ -307,7 +306,7 @@
                             }
                         }();
                     if (!b) return null;
-                    if (q) return x.createElement("span", {
+                    if (R) return x.createElement("span", {
                         className: "\n          tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n          tw-text-center tw-cursor-pointer tw-items-center\n        ",
                         role: "alert",
                         "aria-busy": "true"
@@ -320,19 +319,19 @@
                             return e.favoriteId === r
                         })),
                         S = function() {
-                            if (!q) return Z ? R() : i(!0)
+                            if (!R) return Z ? U() : i(!0)
                         };
                     return x.createElement(m.zx, {
                         className: "\n        hover:tw-text-white hover:tw-bg-button-border\n        tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-3\n        tw-text-center tw-cursor-pointer tw-items-center\n      ",
                         tabIndex: 0,
                         transparent: !0,
                         onClick: S,
-                        disabled: q,
+                        disabled: R,
                         onKeyDown: function(e) {
                             if ("enter" === e.key.toLowerCase()) return S()
                         },
                         "aria-label": "".concat(Z ? "Unfavorite" : "Favorite", " User")
-                    }, q && x.createElement(m.$1, {
+                    }, R && x.createElement(m.$1, {
                         icon: h.LM,
                         spin: !0,
                         "aria-label": "loading",
@@ -356,19 +355,19 @@
                     y = e.slim,
                     k = void 0 !== y && y,
                     F = (0, g.I0)(),
-                    I = (0, x.useState)(!1),
-                    C = (0, a.Z)(I, 2),
-                    L = C[0],
-                    U = C[1],
-                    q = (0, x.useRef)(null),
-                    R = (0, v.ge)(t, {
+                    C = (0, x.useState)(!1),
+                    I = (0, a.Z)(C, 2),
+                    L = I[0],
+                    q = I[1],
+                    R = (0, x.useRef)(null),
+                    U = (0, v.ge)(t, {
                         skip: null === t
                     }),
-                    Z = R.data,
+                    Z = U.data,
                     S = void 0 === Z ? {} : Z,
-                    $ = R.isError,
-                    z = R.error,
-                    P = R.isSuccess,
+                    $ = U.isError,
+                    z = U.error,
+                    P = U.isSuccess,
                     M = (0, v.I0)(),
                     H = (0, a.Z)(M, 2),
                     j = H[0],
@@ -390,14 +389,14 @@
                     timeout: 3e3
                 }))), (0, x.useEffect)((function() {
                     var e = function(e) {
-                        q.current && !q.current.contains(e.target) && U(!1)
+                        R.current && !R.current.contains(e.target) && q(!1)
                     };
                     return document.addEventListener("mousedown", e),
                         function() {
                             document.removeEventListener("mousedown", e)
                         }
                 }), []);
-                var V, X, Q, Y = function() {
+                var X, V, Q, Y = function() {
                         var e = (0, n.Z)(d().mark((function e() {
                             var r, n, a;
                             return d().wrap((function(e) {
@@ -407,7 +406,7 @@
                                             userId: t
                                         }).unwrap();
                                     case 3:
-                                        U(!1), F((0, u.d)({
+                                        q(!1), F((0, u.d)({
                                             title: "Friend Request",
                                             icon: c.T,
                                             message: "Successfully Unfriended.",
@@ -444,7 +443,7 @@
                             ariaLabel: "Friends",
                             icon: w.vrcFriends,
                             clickHandler: function() {
-                                U((function(e) {
+                                q((function(e) {
                                     return !e
                                 }))
                             }
@@ -496,7 +495,7 @@
                             text: k ? "Cancel Request" : "Cancel Friend Request",
                             ariaLabel: "Cancel Friend Request",
                             icon: w.vrcPendingFriend,
-                            clickHandler: (X = (0, n.Z)(d().mark((function e() {
+                            clickHandler: (V = (0, n.Z)(d().mark((function e() {
                                 var r, n, a;
                                 return d().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
@@ -529,14 +528,14 @@
                                     [0, 6]
                                 ])
                             }))), function() {
-                                return X.apply(this, arguments)
+                                return V.apply(this, arguments)
                             })
                         },
                         addFriend: {
                             text: k ? "" : "Add Friend",
                             ariaLabel: "Add Friend",
                             icon: w.vrcAddFriend,
-                            clickHandler: (V = (0, n.Z)(d().mark((function e() {
+                            clickHandler: (X = (0, n.Z)(d().mark((function e() {
                                 var r, n, a;
                                 return d().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
@@ -572,7 +571,7 @@
                                     [0, 7]
                                 ])
                             }))), function() {
-                                return V.apply(this, arguments)
+                                return X.apply(this, arguments)
                             })
                         }
                     },
@@ -614,7 +613,7 @@
                         className: "tw-align-middle"
                     }), "" !== ne && x.createElement("span", null, ne)), ie && x.createElement("div", {
                         className: "tw-relative tw-min-w-[245px] tw-z-10",
-                        ref: q
+                        ref: R
                     }, x.createElement(m.zx, {
                         "aria-haspopup": "menu",
                         "aria-expanded": L,
@@ -640,7 +639,7 @@
                     }, x.createElement(N, {
                         userId: t,
                         selectedCallback: function() {
-                            E(), U(!1)
+                            E(), q(!1)
                         },
                         role: "menuitem"
                     }), x.createElement(m.zx, {
@@ -662,7 +661,7 @@
                 containerClasses: p().string,
                 slim: p().bool
             };
-            const I = F
+            const C = F
         },
         29848: (e, t, r) => {
             r.d(t, {
@@ -695,14 +694,14 @@
                     k = e.containerClasses,
                     N = e.hideShare,
                     F = void 0 !== N && N,
-                    I = (0, E.I0)(),
-                    C = (0, h.useRef)(null),
+                    C = (0, E.I0)(),
+                    I = (0, h.useRef)(null),
                     L = (0, h.useState)({
                         left: !1
                     }),
-                    U = (0, a.Z)(L, 2),
-                    q = U[0],
-                    R = U[1],
+                    q = (0, a.Z)(L, 2),
+                    R = q[0],
+                    U = q[1],
                     Z = (0, h.useState)(!1),
                     S = (0, a.Z)(Z, 2),
                     $ = S[0],
@@ -717,7 +716,7 @@
                     _ = T[1].isLoading,
                     B = j || _,
                     D = function(e) {
-                        C.current && !C.current.contains(e.target) && z(!1)
+                        I.current && !I.current.contains(e.target) && z(!1)
                     };
                 (0, h.useEffect)((function() {
                     return $ ? document.addEventListener("mousedown", D) : document.removeEventListener("mousedown", D),
@@ -733,7 +732,7 @@
                                     case 0:
                                         return r = (0, b.zp)("".concat(window.location.origin, "/home/user/").concat(t)), e.next = 3, r();
                                     case 3:
-                                        I((0, f.d)({
+                                        C((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "Player profile link copied to clipboard.",
@@ -774,7 +773,7 @@
                                         }
                                         return e.prev = 4, e.next = 7, O(i).unwrap();
                                     case 7:
-                                        z(!1), I((0, f.d)({
+                                        z(!1), C((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "".concat(o[a].remove, " successfully."),
@@ -783,7 +782,7 @@
                                         })), e.next = 15;
                                         break;
                                     case 11:
-                                        e.prev = 11, e.t0 = e.catch(4), console.error("Player Moderation Error:", e.t0), I((0, f.d)({
+                                        e.prev = 11, e.t0 = e.catch(4), console.error("Player Moderation Error:", e.t0), C((0, f.d)({
                                             title: "Player Profile",
                                             icon: w.$9,
                                             message: "\n                ".concat(o[a].remove, " failed.\n                ").concat((null === (c = e.t0.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) || (null === (s = e.t0.data) || void 0 === s ? void 0 : s.error), "\n              "),
@@ -795,7 +794,7 @@
                                     case 16:
                                         return e.prev = 16, e.next = 19, H(i).unwrap();
                                     case 19:
-                                        z(!1), I((0, f.d)({
+                                        z(!1), C((0, f.d)({
                                             title: "Player Profile",
                                             icon: l.IL,
                                             message: "".concat(o[a].apply, " successfully."),
@@ -804,7 +803,7 @@
                                         })), e.next = 27;
                                         break;
                                     case 23:
-                                        e.prev = 23, e.t1 = e.catch(16), console.error("Player Moderation Error:", e.t1), I((0, f.d)({
+                                        e.prev = 23, e.t1 = e.catch(16), console.error("Player Moderation Error:", e.t1), C((0, f.d)({
                                             title: "Player Profile",
                                             icon: w.$9,
                                             message: "\n                ".concat(o[a].apply, " failed.\n                ").concat((null === (d = e.t1.data) || void 0 === d || null === (d = d.error) || void 0 === d ? void 0 : d.message) || (null === (u = e.t1.data) || void 0 === u ? void 0 : u.error), "\n              "),
@@ -826,17 +825,17 @@
                     }();
                 return h.createElement("div", {
                     className: "tw-relative",
-                    ref: C
+                    ref: I
                 }, h.createElement(p.zx, {
                     className: (0, x.cx)(y, "tw-px-3 tw-py-2"),
                     "aria-label": "Show More Options",
                     containerClasses: k,
                     onClick: function() {
                         return function() {
-                            if (!$ && C.current) {
-                                var e = C.current.getBoundingClientRect(),
+                            if (!$ && I.current) {
+                                var e = I.current.getBoundingClientRect(),
                                     t = window.innerWidth - e.right;
-                                R({
+                                U({
                                     left: t < 170
                                 })
                             }
@@ -846,7 +845,7 @@
                 }, h.createElement(p.$1, {
                     icon: u.cN
                 })), $ && h.createElement("div", {
-                    className: (0, x.cx)(q.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-bg-option-bg tw-mt-2 tw-border-solid tw-border-button-border tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-10 sm:tw-max-w-[170px]")
+                    className: (0, x.cx)(R.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-bg-option-bg tw-mt-2 tw-border-solid tw-border-button-border tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-10 sm:tw-max-w-[170px]")
                 }, !F && h.createElement(p.zx, {
                     onClick: K,
                     transparent: !0,
@@ -898,4 +897,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2ed629c7af412f3252127a57f910ca66b6bc2775be583f2e612012db044c9027.js.map
+//# sourceMappingURL=98785a1b2b78ff91da4372723a7affab53e8b4f5e57196f478438d13758de85b.js.map
