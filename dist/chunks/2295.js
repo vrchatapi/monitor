@@ -19,8 +19,8 @@
             var a = r(4942),
                 n = r(15861),
                 l = r(54546),
-                i = r(16686),
-                o = r(20495),
+                o = r(16686),
+                i = r(20495),
                 c = r(80916),
                 u = r(64687),
                 s = r.n(u),
@@ -121,7 +121,7 @@
                 }), []);
                 var le = function() {
                         var e = (0, n.Z)(s().mark((function e(r) {
-                            var a, n, l, i;
+                            var a, n, l, o;
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -158,14 +158,14 @@
                                             })
                                         })), e.next = 14, t(n, E.id);
                                     case 14:
-                                        if ((i = e.sent) && (l = "This email is already taken"), !l) {
+                                        if ((o = e.sent) && (l = "This email is already taken"), !l) {
                                             e.next = 19;
                                             break
                                         }
                                         return A((function(e) {
                                             return k(k({}, e), {}, {
                                                 error: l,
-                                                taken: i,
+                                                taken: o,
                                                 checking: !1,
                                                 ok: !1
                                             })
@@ -174,9 +174,9 @@
                                         A((function(e) {
                                             return k(k({}, e), {}, {
                                                 error: l,
-                                                taken: i,
+                                                taken: o,
                                                 checking: !1,
-                                                ok: !l && !i
+                                                ok: !l && !o
                                             })
                                         }));
                                     case 20:
@@ -189,7 +189,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ie = function() {
+                    oe = function() {
                         var t = (0, n.Z)(s().mark((function t() {
                             var r, a;
                             return s().wrap((function(t) {
@@ -236,7 +236,7 @@
                             return t.apply(this, arguments)
                         }
                     }(),
-                    oe = function() {
+                    ie = function() {
                         var e = (0, n.Z)(s().mark((function e(t) {
                             return s().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -248,7 +248,7 @@
                                             break
                                         }
                                         return ee(!0), e.abrupt("return", setTimeout((function() {
-                                            Z(!0), r("/home")
+                                            Z(!0), r("/home?prompt=new-account")
                                         }), 1e3));
                                     case 6:
                                         return e.abrupt("return", ee(!1));
@@ -282,25 +282,25 @@
                     role: "alert",
                     "aria-label": "Failed to send verification email"
                 }, d.createElement(h.$1, {
-                    icon: o.faCircleExclamation
+                    icon: i.faCircleExclamation
                 }), "  Failed to send verification email, please try again."), !1 === J && d.createElement("p", {
                     className: " tw-border-solid tw-border-message-warning tw-border-[1px] tw-text-error-message-red tw-bg-opacity-25 tw-bg-message-warning tw-p-2 tw-rounded-md tw-w-full ",
                     role: "alert",
                     "aria-label": "Failed to verify email"
                 }, d.createElement(h.$1, {
-                    icon: o.faCircleExclamation
+                    icon: i.faCircleExclamation
                 }), "  Failed to verify, Please check your inbox (or spam folder) to verify your email."), Q.sent && d.createElement("p", {
                     className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
                     role: "alert",
                     "aria-label": "Verification Email Sent"
                 }, d.createElement(h.$1, {
-                    icon: i.faCircleCheck
+                    icon: o.faCircleCheck
                 }), "  We’ve resent you the verification email."), J && d.createElement("p", {
                     className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
                     role: "alert",
                     "aria-label": "Email verified"
                 }, d.createElement(h.$1, {
-                    icon: i.faCircleCheck
+                    icon: o.faCircleCheck
                 }), "  Your email has been updated."), (null == E ? void 0 : E.obfuscatedEmail) && d.createElement("p", {
                     className: "tw-text-center tw-mb-0"
                 }, "We've sent an email to ", d.createElement("strong", null, null == E ? void 0 : E.obfuscatedEmail)), d.createElement("p", {
@@ -309,15 +309,15 @@
                     role: "button",
                     tabIndex: 0,
                     onKeyDown: function(e) {
-                        "Enter" === e.key && ie()
+                        "Enter" === e.key && oe()
                     },
-                    onClick: ie,
+                    onClick: oe,
                     "aria-label": "Resend Verification Email",
                     className: "tw-text-link-highlight tw-cursor-pointer tw-outline-none tw-focus:tw-ring-2 tw-focus:tw-ring-offset-2 tw-focus:tw-ring-blue-500"
                 }, "Can't find the email? Send again")), d.createElement("div", {
                     className: "tw-text-center tw-text-subtext-grey"
                 }, d.createElement(h.zx, {
-                    onClick: oe,
+                    onClick: ie,
                     "aria-label": "Verified my email",
                     className: "tw-w-60 tw-my-3",
                     type: "submit",
@@ -409,8 +409,8 @@
             }), t.default = function(e, t) {
                 var r, a;
                 (0, n.default)(e), "object" === l(t) ? (r = t.min || 0, a = t.max) : (r = arguments[1], a = arguments[2]);
-                var i = encodeURI(e).split(/%..|./).length - 1;
-                return i >= r && (void 0 === a || i <= a)
+                var o = encodeURI(e).split(/%..|./).length - 1;
+                return o >= r && (void 0 === a || o <= a)
             };
             var a, n = (a = r(65571)) && a.__esModule ? a : {
                 default: a
@@ -429,7 +429,7 @@
             Object.defineProperty(t, "__esModule", {
                 value: !0
             }), t.default = function(e, t) {
-                if ((0, a.default)(e), (t = (0, o.default)(t, u)).require_display_name || t.allow_display_name) {
+                if ((0, a.default)(e), (t = (0, i.default)(t, u)).require_display_name || t.allow_display_name) {
                     var r = e.match(s);
                     if (r) {
                         var c = r[1];
@@ -471,10 +471,10 @@
                         allow_underscores: t.allow_underscores
                     })) {
                     if (!t.allow_ip_domain) return !1;
-                    if (!(0, i.default)(b)) {
+                    if (!(0, o.default)(b)) {
                         if (!b.startsWith("[") || !b.endsWith("]")) return !1;
                         var k = b.slice(1, -1);
-                        if (0 === k.length || !(0, i.default)(k)) return !1
+                        if (0 === k.length || !(0, o.default)(k)) return !1
                     }
                 }
                 if ('"' === h[0]) return h = h.slice(1, h.length - 1), t.allow_utf8_local_part ? p.test(h) : m.test(h);
@@ -486,8 +486,8 @@
             var a = c(r(65571)),
                 n = c(r(93235)),
                 l = c(r(10221)),
-                i = c(r(61028)),
-                o = c(r(84808));
+                o = c(r(61028)),
+                i = c(r(84808));
 
             function c(e) {
                 return e && e.__esModule ? e : {
@@ -518,7 +518,7 @@
             Object.defineProperty(t, "__esModule", {
                 value: !0
             }), t.default = function(e, t) {
-                (0, a.default)(e), (t = (0, n.default)(t, i)).allow_trailing_dot && "." === e[e.length - 1] && (e = e.substring(0, e.length - 1));
+                (0, a.default)(e), (t = (0, n.default)(t, o)).allow_trailing_dot && "." === e[e.length - 1] && (e = e.substring(0, e.length - 1));
                 !0 === t.allow_wildcard && 0 === e.indexOf("*.") && (e = e.substring(2));
                 var r = e.split("."),
                     l = r[r.length - 1];
@@ -540,7 +540,7 @@
                     default: e
                 }
             }
-            var i = {
+            var o = {
                 require_tld: !0,
                 allow_underscores: !1,
                 allow_trailing_dot: !1,
@@ -556,7 +556,7 @@
             }), t.default = function e(t) {
                 var r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
                 if ((0, n.default)(t), !(r = String(r))) return e(t, 4) || e(t, 6);
-                if ("4" === r) return o.test(t);
+                if ("4" === r) return i.test(t);
                 if ("6" === r) return u.test(t);
                 return !1
             };
@@ -564,10 +564,10 @@
                 default: a
             };
             var l = "(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",
-                i = "(".concat(l, "[.]){3}").concat(l),
-                o = new RegExp("^".concat(i, "$")),
+                o = "(".concat(l, "[.]){3}").concat(l),
+                i = new RegExp("^".concat(o, "$")),
                 c = "(?:[0-9a-fA-F]{1,4})",
-                u = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(i, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(i, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(i, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(i, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(i, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(i, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(i, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
+                u = new RegExp("^(" + "(?:".concat(c, ":){7}(?:").concat(c, "|:)|") + "(?:".concat(c, ":){6}(?:").concat(o, "|:").concat(c, "|:)|") + "(?:".concat(c, ":){5}(?::").concat(o, "|(:").concat(c, "){1,2}|:)|") + "(?:".concat(c, ":){4}(?:(:").concat(c, "){0,1}:").concat(o, "|(:").concat(c, "){1,3}|:)|") + "(?:".concat(c, ":){3}(?:(:").concat(c, "){0,2}:").concat(o, "|(:").concat(c, "){1,4}|:)|") + "(?:".concat(c, ":){2}(?:(:").concat(c, "){0,3}:").concat(o, "|(:").concat(c, "){1,5}|:)|") + "(?:".concat(c, ":){1}(?:(:").concat(c, "){0,4}:").concat(o, "|(:").concat(c, "){1,6}|:)|") + "(?::((?::".concat(c, "){0,5}:").concat(o, "|(?::").concat(c, "){1,7}|:))") + ")(%[0-9a-zA-Z-.:]{1,})?$");
             e.exports = t.default, e.exports.default = t.default
         },
         84808: (e, t) => {
@@ -582,4 +582,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3667154a643c8d1e36a1561864717fd9d385bcce64af71734e5a6cafcbd5f888.js.map
+//# sourceMappingURL=a9293cf9062984a25ea3a325746730c325305a13f61f37f9a1ea846ecc8c6cb2.js.map
