@@ -7144,7 +7144,7 @@
                         styles: "margin-bottom:30px"
                     })
                 }, C.createElement(re.X2, {
-                    className: "mb-4 justify-content-end md:tw-pr-20 tw-gap-2 tw-flex-wrap"
+                    className: "mb-4 justify-content-start tw-gap-2 tw-flex-wrap"
                 }, "visible" === (null == Re || null === (t = Re.myMember) || void 0 === t ? void 0 : t.visibility) && C.createElement(ll, {
                     groupId: Re.id,
                     isRepresenting: Xt
@@ -7442,4 +7442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7ab23220d2ca263869fe187e85a9a626d3919a54871ba631646a5837d56c5a5f.js.map
+//# sourceMappingURL=fe1e8b559c103f4bab93cb1a0de251189e0a64b02219d76387d5bab619c3ed56.js.map

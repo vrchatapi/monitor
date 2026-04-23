@@ -257,7 +257,7 @@
                     }), [g]),
                     f = (null == n || null === (t = n.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.dd.INVITED;
                 return l.createElement(l.Fragment, null, l.createElement(G, {
-                    className: "flex-row px-1 gap-1 justify-content-evenly align-items-center"
+                    className: "flex-row px-1 gap-1 justify-content-evenly align-items-center tw-w-full"
                 }, l.createElement("picture", {
                     className: "tw--mt-4 tw-pointer-events-none"
                 }, l.createElement("source", {
@@ -490,4 +490,4 @@
         }
     }
 ]);
-//# sourceMappingURL=deaff6cbf2b75ec730f256d0ce5945735bf8344bd0678f23c2273d584e98b6ad.js.map
+//# sourceMappingURL=f469ab499fb85866000133fc4e6334e70dc2ed77dd0e91f7a97baf349063cbac.js.map

@@ -67,9 +67,9 @@
                 L = n(40219),
                 A = n(19517),
                 C = n(57672),
-                Z = n(41400),
-                F = n(45697),
-                S = n.n(F),
+                F = n(41400),
+                Z = n(45697),
+                S = n.n(Z),
                 U = n(69699),
                 _ = n(60766),
                 O = function(e) {
@@ -119,81 +119,81 @@
                     n = (0, s.I0)(),
                     l = (0, d.TH)().state,
                     f = (0, x.YA)(),
-                    g = (0, o.Z)(f, 2),
-                    F = g[0],
-                    S = g[1],
-                    U = S.isLoading,
-                    _ = S.error,
-                    O = S.isError,
-                    R = (0, m.lr)(),
-                    V = (0, o.Z)(R, 2),
-                    j = (V[0], V[1], (0, x.Im)()),
-                    q = (0, o.Z)(j, 2),
-                    z = q[0],
-                    P = q[1],
-                    G = P.isLoading,
-                    M = P.error,
-                    B = P.isError,
-                    X = (0, x._y)(),
-                    H = (0, o.Z)(X, 1)[0],
-                    K = (0, x.XC)().data,
-                    W = (0, u.useState)(""),
-                    Y = (0, o.Z)(W, 2),
-                    J = Y[0],
-                    Q = Y[1],
-                    $ = (0, u.useState)(""),
-                    ee = (0, o.Z)($, 2),
-                    te = ee[0],
-                    ne = ee[1],
-                    re = (0, u.useState)(null),
-                    oe = (0, o.Z)(re, 2),
-                    ae = oe[0],
-                    ie = oe[1],
-                    le = (0, u.useState)(null),
-                    ce = (0, o.Z)(le, 2),
-                    ue = ce[0],
-                    se = ce[1],
-                    de = (0, h.Z)(),
-                    me = (0, x.bw)(),
-                    pe = (0, o.Z)(me, 2),
-                    we = pe[0],
-                    ve = pe[1].isLoading,
-                    he = (0, x.W0)(),
-                    fe = (0, o.Z)(he, 2),
-                    ge = fe[0],
-                    ke = fe[1].isLoading,
-                    be = (0, x.oy)(),
-                    xe = (0, o.Z)(be, 2),
-                    Ee = xe[0],
-                    ye = xe[1].isLoading,
-                    Ne = (0, x.al)(),
-                    Te = (0, o.Z)(Ne, 2),
-                    Le = Te[0],
-                    Ae = Te[1],
-                    Ce = Ae.isLoading,
-                    Ze = Ae.error,
-                    Fe = Ae.isError,
-                    Se = (0, x.et)(),
-                    Ue = (0, o.Z)(Se, 2),
-                    _e = Ue[0],
-                    Oe = Ue[1],
-                    Ie = Oe.isLoading,
-                    De = Oe.error,
-                    Re = Oe.isError,
-                    Ve = 2 === (null == l ? void 0 : l.discordOAuthVersion) ? ge : we,
-                    je = 2 === (null == l ? void 0 : l.discordOAuthVersion) ? Le : _e,
-                    qe = Ie || Ce,
-                    ze = De || Ze,
-                    Pe = Re || Fe,
-                    Ge = ve || ke,
-                    Me = function() {
+                    Z = (0, o.Z)(f, 2),
+                    S = Z[0],
+                    U = Z[1],
+                    _ = U.isLoading,
+                    O = U.error,
+                    R = U.isError,
+                    V = (0, m.lr)(),
+                    j = (0, o.Z)(V, 2),
+                    q = (j[0], j[1], (0, x.Im)()),
+                    z = (0, o.Z)(q, 2),
+                    P = z[0],
+                    G = z[1],
+                    M = G.isLoading,
+                    B = G.error,
+                    X = G.isError,
+                    H = (0, x._y)(),
+                    K = (0, o.Z)(H, 1)[0],
+                    W = (0, x.XC)().data,
+                    Y = (0, u.useState)(""),
+                    J = (0, o.Z)(Y, 2),
+                    Q = J[0],
+                    $ = J[1],
+                    ee = (0, u.useState)(""),
+                    te = (0, o.Z)(ee, 2),
+                    ne = te[0],
+                    re = te[1],
+                    oe = (0, u.useState)(null),
+                    ae = (0, o.Z)(oe, 2),
+                    ie = ae[0],
+                    le = ae[1],
+                    ce = (0, u.useState)(null),
+                    ue = (0, o.Z)(ce, 2),
+                    se = ue[0],
+                    de = ue[1],
+                    me = (0, h.Z)(),
+                    pe = (0, x.bw)(),
+                    we = (0, o.Z)(pe, 2),
+                    ve = we[0],
+                    he = we[1].isLoading,
+                    fe = (0, x.W0)(),
+                    ge = (0, o.Z)(fe, 2),
+                    ke = ge[0],
+                    be = ge[1].isLoading,
+                    xe = (0, x.oy)(),
+                    Ee = (0, o.Z)(xe, 2),
+                    ye = Ee[0],
+                    Ne = Ee[1].isLoading,
+                    Te = (0, x.al)(),
+                    Le = (0, o.Z)(Te, 2),
+                    Ae = Le[0],
+                    Ce = Le[1],
+                    Fe = Ce.isLoading,
+                    Ze = Ce.error,
+                    Se = Ce.isError,
+                    Ue = (0, x.et)(),
+                    _e = (0, o.Z)(Ue, 2),
+                    Oe = _e[0],
+                    Ie = _e[1],
+                    De = Ie.isLoading,
+                    Re = Ie.error,
+                    Ve = Ie.isError,
+                    je = 2 === (null == l ? void 0 : l.discordOAuthVersion) ? ke : ve,
+                    qe = 2 === (null == l ? void 0 : l.discordOAuthVersion) ? Ae : Oe,
+                    ze = De || Fe,
+                    Pe = Re || Ze,
+                    Ge = Ve || Se,
+                    Me = he || be,
+                    Be = function() {
                         null != l && l.redirectTo ? t(l.redirectTo) : t("/home")
                     };
                 (0, u.useEffect)((function() {
                     var e;
-                    if (!(null == K || null === (e = K.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == l ? void 0 : l.logout)) return n(E.S.util.resetApiState()), n((0, w.kS)()), void H();
-                    null != K && K.id && Me()
-                }), [K]), (0, u.useEffect)((function() {
+                    if (!(null == W || null === (e = W.requiresTwoFactorAuth) || void 0 === e || !e.length) || (null == l ? void 0 : l.logout)) return n(E.S.util.resetApiState()), n((0, w.kS)()), K(), void(0, g.DC)("isVRCFriendsOpen");
+                    null != W && W.id && Be()
+                }), [W]), (0, u.useEffect)((function() {
                     (0, r.Z)(c().mark((function e() {
                         var t, r, o, i, u;
                         return c().wrap((function(e) {
@@ -205,7 +205,7 @@
                                     }
                                     return e.abrupt("return");
                                 case 3:
-                                    return e.next = 5, Ve({
+                                    return e.next = 5, je({
                                         token: t
                                     });
                                 case 5:
@@ -225,9 +225,9 @@
                                         timeout: 5e3
                                     })));
                                 case 9:
-                                    return e.abrupt("return", Be(t));
+                                    return e.abrupt("return", Xe(t));
                                 case 10:
-                                    return e.abrupt("return", ie({
+                                    return e.abrupt("return", le({
                                         discordAccessToken: t,
                                         unlinkedUser: null == r ? void 0 : r.data
                                     }));
@@ -248,7 +248,7 @@
                                     }
                                     return e.abrupt("return");
                                 case 2:
-                                    return e.abrupt("return", Be(null == l ? void 0 : l.continueDiscordAccessToken));
+                                    return e.abrupt("return", Xe(null == l ? void 0 : l.continueDiscordAccessToken));
                                 case 3:
                                 case "end":
                                     return e.stop()
@@ -266,7 +266,7 @@
                                     }
                                     return e.abrupt("return");
                                 case 2:
-                                    return e.abrupt("return", Xe(null == l ? void 0 : l.continueIdToken));
+                                    return e.abrupt("return", He(null == l ? void 0 : l.continueIdToken));
                                 case 3:
                                 case "end":
                                     return e.stop()
@@ -274,13 +274,13 @@
                         }), e)
                     })))()
                 }), []);
-                var Be = function() {
+                var Xe = function() {
                         var e = (0, r.Z)(c().mark((function e(r) {
                             var o, i, u, s, d, m, p;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, ie(null), e.next = 4, je({
+                                        return e.prev = 0, le(null), e.next = 4, qe({
                                             token: r
                                         }).unwrap();
                                     case 4:
@@ -298,9 +298,9 @@
                                     case 7:
                                         (0, k.j)("Login_LoginSuccess", {
                                             user: o.id,
-                                            campaign: de,
+                                            campaign: me,
                                             accountType: "discord"
-                                        }), Me(), e.next = 21;
+                                        }), Be(), e.next = 21;
                                         break;
                                     case 11:
                                         if (e.prev = 11, e.t0 = e.catch(0), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (i = e.t0.data) || void 0 === i || !i.requiresTwoFactorAuth) {
@@ -315,7 +315,7 @@
                                             redirectState: {
                                                 oauthProvider: D.gw.DISCORD,
                                                 continueDiscordAccessToken: r,
-                                                unlinkedUser: ae.unlinkedUser,
+                                                unlinkedUser: ie.unlinkedUser,
                                                 redirectTo: "/home/login",
                                                 discordOAuthVersion: null == l ? void 0 : l.discordOAuthVersion
                                             }
@@ -342,13 +342,13 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Xe = function() {
+                    He = function() {
                         var e = (0, r.Z)(c().mark((function e(r) {
                             var o, i, l, u, s, d, m, p;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, se(null), e.next = 4, z({
+                                        return e.prev = 0, de(null), e.next = 4, P({
                                             token: r
                                         }).unwrap();
                                     case 4:
@@ -365,9 +365,9 @@
                                     case 7:
                                         (0, k.j)("Login_LoginSuccess", {
                                             user: o.id,
-                                            campaign: de,
+                                            campaign: me,
                                             accountType: "google"
-                                        }), Me(), e.next = 21;
+                                        }), Be(), e.next = 21;
                                         break;
                                     case 11:
                                         if (e.prev = 11, e.t0 = e.catch(0), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || !l.requiresTwoFactorAuth) {
@@ -382,7 +382,7 @@
                                             redirectState: {
                                                 oauthProvider: D.gw.GOOGLE,
                                                 continueIdToken: r,
-                                                unlinkedUser: null == ue ? void 0 : ue.unlinkedUser,
+                                                unlinkedUser: null == se ? void 0 : se.unlinkedUser,
                                                 redirectTo: "/home/login"
                                             }
                                         }, t(m, {
@@ -430,7 +430,7 @@
                                         e.next = 18;
                                         break
                                     }
-                                    return history.replaceState(null, "", window.location.pathname), e.next = 12, Ee({
+                                    return history.replaceState(null, "", window.location.pathname), e.next = 12, ye({
                                         token: o
                                     });
                                 case 12:
@@ -450,9 +450,9 @@
                                         timeout: 5e3
                                     })));
                                 case 16:
-                                    return e.abrupt("return", Xe(o));
+                                    return e.abrupt("return", He(o));
                                 case 17:
-                                    return e.abrupt("return", se({
+                                    return e.abrupt("return", de({
                                         idToken: o,
                                         unlinkedUser: null == l ? void 0 : l.data
                                     }));
@@ -463,23 +463,23 @@
                         }), e)
                     })))()
                 }), []);
-                var He, Ke, We = function(e) {
+                var Ke, We, Ye = function(e) {
                         var t, n;
-                        e.preventDefault(), Q(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
+                        e.preventDefault(), $(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
                     },
-                    Ye = function(e) {
+                    Je = function(e) {
                         var t, n;
-                        e.preventDefault(), ne(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
+                        e.preventDefault(), re(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
                     },
-                    Je = function() {
+                    Qe = function() {
                         var e = (0, r.Z)(c().mark((function e(n) {
                             var r, o, a, i;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return n.preventDefault(), (0, k.NA)(!1), e.prev = 2, e.next = 5, F({
-                                            username: encodeURIComponent(null == J ? void 0 : J.trim()),
-                                            password: encodeURIComponent(te)
+                                        return n.preventDefault(), (0, k.NA)(!1), e.prev = 2, e.next = 5, S({
+                                            username: encodeURIComponent(null == Q ? void 0 : Q.trim()),
+                                            password: encodeURIComponent(ne)
                                         }).unwrap();
                                     case 5:
                                         if (null == (r = e.sent) || !r.requiresTwoFactorAuth) {
@@ -500,12 +500,12 @@
                                     case 14:
                                         return (0, k.j)("Login_LoginSuccess", {
                                             user: r.id,
-                                            campaign: de
-                                        }), Me(), e.abrupt("return");
+                                            campaign: me
+                                        }), Be(), e.abrupt("return");
                                     case 19:
                                         e.prev = 19, e.t0 = e.catch(2), (0, k.j)("Login_LoginFail", {
                                             error: null === e.t0 || void 0 === e.t0 || null === (i = e.t0.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message
-                                        }), Q(null == J ? void 0 : J.trim());
+                                        }), $(null == Q ? void 0 : Q.trim());
                                     case 23:
                                     case "end":
                                         return e.stop()
@@ -518,31 +518,31 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Qe = U || qe || G || Ge || ye,
-                    $e = O || Pe || B,
-                    et = _ || ze || M,
-                    tt = "Failed to Log In",
-                    nt = null == et || null === (e = et.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
-                O && ((null === (He = nt) || void 0 === He ? void 0 : He.indexOf(":")) > 0 ? (tt = nt.substring(0, nt.indexOf(":")).trim(), nt = nt.substring(nt.indexOf(":") + 1).trim()) : 0 === (null === (Ke = nt) || void 0 === Ke ? void 0 : Ke.indexOf(":")) && (nt = nt.substring(1).trim()));
+                    $e = _ || ze || M || Me || Ne,
+                    et = R || Ge || X,
+                    tt = O || Pe || B,
+                    nt = "Failed to Log In",
+                    rt = null == tt || null === (e = tt.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
+                R && ((null === (Ke = rt) || void 0 === Ke ? void 0 : Ke.indexOf(":")) > 0 ? (nt = rt.substring(0, rt.indexOf(":")).trim(), rt = rt.substring(rt.indexOf(":") + 1).trim()) : 0 === (null === (We = rt) || void 0 === We ? void 0 : We.indexOf(":")) && (rt = rt.substring(1).trim()));
                 return u.createElement(N.Z, {
                     showCredits: !0
                 }, u.createElement(y.$4, null, "Login"), u.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[500px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
-                }, u.createElement(Z.l0, {
+                }, u.createElement(F.l0, {
                     id: "login-form",
                     name: "login-form",
                     className: "nobottommargin",
-                    onSubmit: Je
+                    onSubmit: Qe
                 }, u.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
-                }, "Welcome to VRChat"), u.createElement(Z.X2, {
+                }, "Welcome to VRChat"), u.createElement(F.X2, {
                     className: "align-items-flex-end justify-content-between"
-                }), $e && u.createElement(y.qX, {
+                }), et && u.createElement(y.qX, {
                     type: "error",
                     role: "alert",
                     "aria-label": "Login Error",
-                    title: tt,
-                    message: nt,
+                    title: nt,
+                    message: rt,
                     className: "mb-2"
                 }), u.createElement(y.II, {
                     type: "text",
@@ -550,9 +550,9 @@
                     name: "username_email",
                     "aria-label": "username",
                     placeholder: "Username/Email",
-                    value: J,
-                    onChange: We,
-                    onKeyUp: We
+                    value: Q,
+                    onChange: Ye,
+                    onKeyUp: Ye
                 }), u.createElement(y.II, {
                     type: "password",
                     id: "password",
@@ -561,9 +561,9 @@
                     "aria-label": "password",
                     className: "mt-2",
                     placeholder: "Password",
-                    value: te,
-                    onChange: Ye,
-                    onKeyUp: Ye
+                    value: ne,
+                    onChange: Je,
+                    onKeyUp: Je
                 }), u.createElement("div", {
                     className: "tw-w-full tw-mt-3"
                 }, "Forgot your", " ", u.createElement(m.rU, {
@@ -576,9 +576,9 @@
                     "aria-label": "Login",
                     className: "tw-mt-6",
                     type: "submit",
-                    loading: Qe,
-                    disabled: "" === J || "" === te
-                }, "Log in"), u.createElement(Z.X2, {
+                    loading: $e,
+                    disabled: "" === Q || "" === ne
+                }, "Log in"), u.createElement(F.X2, {
                     className: "tw-items-center tw-mt-4 tw-gap-2"
                 }, u.createElement("hr", {
                     className: "tw-border-hr-line-color tw-px-1 tw-border-y-2 tw-w-full tw-m-0"
@@ -591,7 +591,7 @@
                     "aria-label": "Login with Discord",
                     className: "tw-mt-5 tw-bg-[#5865F2] tw-text-white tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
                     type: "button",
-                    loading: Qe
+                    loading: $e
                 }, u.createElement(v.Z, {
                     color: "#ffffff",
                     icon: i.om,
@@ -601,7 +601,7 @@
                     "aria-label": "Sign in with Google",
                     className: "tw-mt-5 tw-bg-[#FFFFFF] tw-text-[#1f1f1f] tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
                     type: "button",
-                    loading: U
+                    loading: _
                 }, u.createElement("svg", {
                     className: "tw-mr-1 tw-p-0 tw-w-[20px] tw-h-[20px]",
                     version: "1.1",
@@ -638,21 +638,21 @@
                     className: "tw-text-sm tw-text-center tw-mt-3 tw-block"
                 }, "Using an Oculus, Steam, or Viveport account?"))), u.createElement(I, {
                     linkProvider: "Discord",
-                    unlinkedUser: null == ae ? void 0 : ae.unlinkedUser,
+                    unlinkedUser: null == ie ? void 0 : ie.unlinkedUser,
                     onLink: function() {
-                        Be(ae.discordAccessToken)
+                        Xe(ie.discordAccessToken)
                     },
                     onCancel: function() {
-                        return ie(null)
+                        return le(null)
                     }
                 }), u.createElement(I, {
                     linkProvider: "Google",
-                    unlinkedUser: null == ue ? void 0 : ue.unlinkedUser,
+                    unlinkedUser: null == se ? void 0 : se.unlinkedUser,
                     onLink: function() {
-                        Xe(ue.idToken)
+                        He(se.idToken)
                     },
                     onCancel: function() {
-                        return se(null)
+                        return de(null)
                     }
                 }))
             }
@@ -739,4 +739,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d80c4def4bca6d65bf8071d83e394023bfa006f09250d919cb2372878901d02e.js.map
+//# sourceMappingURL=c6a5d4ab4e71af91239d1277a8cd07c37d7edbad3a544b98ee648b85bbf5cf8a.js.map

@@ -90,7 +90,7 @@
         },
         44907: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => w
+                default: () => O
             });
             var r = n(54546),
                 o = n(4965),
@@ -128,21 +128,21 @@
                             refetchOnMountOrArgChange: !0
                         }),
                         b = y.data,
-                        O = void 0 === b ? [] : b,
-                        w = y.isLoading,
+                        w = void 0 === b ? [] : b,
+                        O = y.isLoading,
                         x = y.isSuccess,
                         P = y.isError,
                         j = y.error,
-                        S = (0, g.G_)({
+                        N = (0, g.G_)({
                             userId: t,
                             membershipStatus: "userblocked"
                         }, {
                             skip: !u
                         }),
-                        k = S.data,
-                        N = S.isError,
-                        Z = S.error,
-                        D = S.isSuccess,
+                        S = N.data,
+                        k = N.isError,
+                        Z = N.error,
+                        D = N.isSuccess,
                         R = (0, g.G_)({
                             userId: t,
                             membershipStatus: "invited"
@@ -154,12 +154,12 @@
                         C = R.error,
                         G = R.isSuccess;
                     a.useEffect((function() {
-                        !s && x && m(o ? O.filter((function(e) {
+                        !s && x && m(o ? w.filter((function(e) {
                             return e.ownerId === t
-                        })) : O.filter((function(e) {
+                        })) : w.filter((function(e) {
                             return e.ownerId !== t
-                        }))), u && D && m(k), l && G && m(_)
-                    }), [O, k, _]);
+                        }))), u && D && m(S), l && G && m(_)
+                    }), [w, S, _]);
                     var M, X = (null != s ? s : f).map((function(e) {
                             var n, r, o;
                             return a.createElement(v.Z, {
@@ -173,8 +173,8 @@
                             name: "1l03awk",
                             styles: "display:grid;gap:10px;grid-template-columns:repeat(1, 1fr);@media (min-width: 576px){grid-template-columns:repeat(2, 1fr);}@media (min-width: 992px){grid-template-columns:repeat(3, 1fr);}@media (min-width: 1920px){grid-template-columns:repeat(4, 1fr);}@media (min-width: 2300px){grid-template-columns:repeat(5, 1fr);}"
                         });
-                    return P || N || I ? a.createElement("div", null, a.createElement("p", null, "Oops, something went wrong. Please try again later."), a.createElement("code", null, null === (M = j || Z || C) || void 0 === M || null === (M = M.data) || void 0 === M || null === (M = M.error) || void 0 === M ? void 0 : M.message)) : a.createElement(E.Z, {
-                        loading: w
+                    return P || k || I ? a.createElement("div", null, a.createElement("p", null, "Oops, something went wrong. Please try again later."), a.createElement("code", null, null === (M = j || Z || C) || void 0 === M || null === (M = M.data) || void 0 === M || null === (M = M.error) || void 0 === M ? void 0 : M.message)) : a.createElement(E.Z, {
+                        loading: O
                     }, a.createElement("div", {
                         className: z
                     }, X))
@@ -211,8 +211,8 @@
                         isBlocked: !0
                     })))))
                 };
-            var O = n(17219);
-            const w = function() {
+            var w = n(17219);
+            const O = function() {
                 var e = (0, l.s0)(),
                     t = (0, l.UO)().query,
                     n = (0, f.XC)().data,
@@ -223,25 +223,25 @@
                     h = a.useState(3),
                     E = (0, r.Z)(h, 2),
                     v = E[0],
-                    w = E[1],
+                    O = E[1],
                     P = (0, f.XC)().data,
                     j = (void 0 === P ? {} : P).id,
-                    S = (0, g.dj)({
+                    N = (0, g.dj)({
                         userId: j
                     }, {
                         skip: !j
                     }),
-                    k = S.data,
-                    N = void 0 === k ? [] : k,
-                    Z = S.isLoading,
-                    D = S.isSuccess,
+                    S = N.data,
+                    k = void 0 === S ? [] : S,
+                    Z = N.isLoading,
+                    D = N.isSuccess,
                     R = (0, g.xS)(),
                     _ = (0, r.Z)(R, 2),
                     I = _[0],
                     C = _[1],
                     G = C.data,
                     M = (C.error, C.isLoading),
-                    X = (0, O.y)(),
+                    X = (0, w.y)(),
                     z = X.data,
                     T = X.isLoading,
                     U = 0,
@@ -251,7 +251,7 @@
                             query: t
                         })
                     }), [t]), (0, a.useEffect)((function() {
-                        D && w(N.filter((function(e) {
+                        D && O(k.filter((function(e) {
                             return e.ownerId === j
                         })).length)
                     }), [D]), M || Z || T) return a.createElement(c.X2, null, a.createElement(c.JX, {
@@ -260,24 +260,29 @@
                 var J = n.tagsSet.has("system_supporter") ? "You can only have ".concat(B, " groups at a time. Please delete one of your existing groups to create a new one.") : "You must be a VRC+ supporter to create a group.";
                 return a.createElement("div", null, a.createElement(c.$4, null, "Groups"), a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
-                }, a.createElement(x, null, a.createElement("h2", null, "Groups"), v < B && n.tagsSet.has("system_supporter") && N.length < U || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
-                    to: "/home/groups/create"
+                }, a.createElement(x, null, a.createElement("h2", null, "Groups")), a.createElement("div", {
+                    className: "tw-flex tw-flex-row tw-gap-3"
+                }, v < B && n.tagsSet.has("system_supporter") && k.length < U || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.rU, {
+                    to: "/home/groups/create",
+                    className: "tw-w-fit"
                 }, a.createElement(c.zx, null, a.createElement(c.$1, {
                     icon: i.r8
                 }), " Create Group")) : a.createElement(c.zx, {
                     disabled: !0,
-                    title: J
+                    title: J,
+                    className: "tw-w-fit"
                 }, a.createElement(c.$1, {
                     icon: i.r8
-                }), " Create Group")), a.createElement("form", {
+                }), " Create Group"), a.createElement("form", {
                     onSubmit: function(t) {
                         null == t || t.preventDefault(), "" === d ? e("/home/groups/search") : d.startsWith("https://vrc.group/") || d.startsWith("vrc.group/") ? e("/home/groups/search/".concat(d.split("/").pop())) : e("/home/groups/search/".concat(d))
-                    }
+                    },
+                    className: "tw-flex-1"
                 }, a.createElement(u.Z, {
                     searchString: m,
                     defaultValue: t,
                     placeholder: "Enter a group short code, name or url to join"
-                })))), a.createElement("br", null), t ? (null == G ? void 0 : G.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
+                }))))), a.createElement("br", null), t ? (null == G ? void 0 : G.length) > 0 ? a.createElement(c.X2, null, a.createElement(c.JX, {
                     className: "w-100"
                 }, a.createElement("h3", null, 'Results for "', t, '"'), a.createElement(y, {
                     groupResults: G
@@ -296,7 +301,7 @@
         },
         65706: (e, t, n) => {
             n.d(t, {
-                Z: () => k
+                Z: () => S
             });
             var r = n(67294),
                 o = n(45697),
@@ -401,11 +406,11 @@
                 return n
             }
 
-            function O(e) {
+            function w(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? b(Object(n), !0).forEach((function(t) {
-                        w(e, t, n[t])
+                        O(e, t, n[t])
                     })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : b(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
@@ -413,7 +418,7 @@
                 return e
             }
 
-            function w(e, t, n) {
+            function O(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -421,7 +426,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            var x = O(O({}, s.ZP.propTypes), {}, {
+            var x = w(w({}, s.ZP.propTypes), {}, {
                     horizontal: i().bool,
                     isOpen: i().bool,
                     children: i().oneOfType([i().arrayOf(i().node), i().node]),
@@ -433,7 +438,7 @@
                         current: i().object
                     })
                 }),
-                P = O(O({}, s.ZP.defaultProps), {}, {
+                P = w(w({}, s.ZP.defaultProps), {}, {
                     horizontal: !1,
                     isOpen: !1,
                     appear: !1,
@@ -442,8 +447,8 @@
                     tag: "div",
                     timeout: c.wF.Collapse
                 }),
-                j = (w(p = {}, c.E5.ENTERING, "collapsing"), w(p, c.E5.ENTERED, "collapse show"), w(p, c.E5.EXITING, "collapsing"), w(p, c.E5.EXITED, "collapse"), p);
-            var S = function(e) {
+                j = (O(p = {}, c.E5.ENTERING, "collapsing"), O(p, c.E5.ENTERED, "collapse show"), O(p, c.E5.EXITING, "collapsing"), O(p, c.E5.EXITED, "collapse"), p);
+            var N = function(e) {
                 ! function(e, t) {
                     if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                     e.prototype = Object.create(t && t.prototype, {
@@ -547,9 +552,9 @@
                                     return j[e] || "collapse"
                                 }(t),
                                 s = (0, c.mx)(l()(a, o && "collapse-horizontal", i, u && "navbar-collapse"), p),
-                                d = null === E ? null : w({}, o ? "width" : "height", E);
+                                d = null === E ? null : O({}, o ? "width" : "height", E);
                             return r.createElement(n, f({}, y, {
-                                style: O(O({}, y.style), d),
+                                style: w(w({}, y.style), d),
                                 className: s,
                                 ref: e.nodeRef
                             }), h)
@@ -559,9 +564,9 @@
                     writable: !1
                 }), a
             }(r.Component);
-            S.propTypes = x, S.defaultProps = P;
-            const k = S
+            N.propTypes = x, N.defaultProps = P;
+            const S = N
         }
     }
 ]);
-//# sourceMappingURL=c421bf4d7b8a9f530705963a66195bdeb8061fe14bcfcaeb71c4ed41ffb32cbc.js.map
+//# sourceMappingURL=f876910349c4d677a7a951cb413ed90b9369fefad5269eb1276599f42b9b9345.js.map
