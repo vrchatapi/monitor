@@ -61,13 +61,12 @@
                         })
                     }), [D, G]) || {},
                     X = W.isSelf,
-                    V = W.isFriend,
-                    Q = (0, v.pc)(),
-                    Y = (0, v.JZ)(),
-                    ee = Y.playerModerations,
-                    te = ee.mute.users,
-                    re = ee.block.users,
-                    ne = Y.loading;
+                    V = (W.isFriend, (0, v.pc)()),
+                    Q = (0, v.JZ)(),
+                    Y = Q.playerModerations,
+                    ee = Y.mute.users,
+                    te = Y.block.users,
+                    re = Q.loading;
                 if (!h && !G) return null;
                 if (k && O) return g.createElement("div", {
                     className: "tw-py-[10px] tw-px-[20px] tw-border-2 tw-border-level-visitor"
@@ -77,26 +76,26 @@
                     className: "tw-flex tw-flex-row"
                 }, _.status, ":", null === (r = _.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message));
                 if (!G || T) return g.createElement(l.Z, null);
-                var ae = G || {},
-                    oe = ae.tags,
-                    ie = ae.state,
-                    le = ae.status,
-                    ce = ae.location,
-                    se = ae.profilePicOverride,
-                    de = ae.currentAvatarThumbnailImageUrl,
-                    ue = ae.displayName,
-                    we = ae.userIcon,
-                    me = ae.id,
-                    ve = ae.currentAvatarImageUrl,
-                    fe = "usr_00000000-0000-0000-0000-000000000000" === me && "Hidden Mutual" === ue,
-                    pe = null !== (t = null == oe ? void 0 : oe.includes("admin_moderator")) && void 0 !== t && t,
+                var ne = G || {},
+                    ae = ne.tags,
+                    oe = ne.state,
+                    ie = ne.status,
+                    le = ne.location,
+                    ce = ne.profilePicOverride,
+                    se = ne.currentAvatarThumbnailImageUrl,
+                    de = ne.displayName,
+                    ue = ne.userIcon,
+                    we = ne.id,
+                    me = ne.currentAvatarImageUrl,
+                    ve = "usr_00000000-0000-0000-0000-000000000000" === we && "Hidden Mutual" === de,
+                    fe = null !== (t = null == ae ? void 0 : ae.includes("admin_moderator")) && void 0 !== t && t,
+                    pe = null == ee ? void 0 : ee.includes(h),
                     xe = null == te ? void 0 : te.includes(h),
-                    ge = null == re ? void 0 : re.includes(h),
-                    be = "https://assets.vrchat.com/default/filtered.png",
-                    he = "offline" === ie && !V && !X,
-                    Ee = se || de || ve,
-                    ye = we || de || se || ve,
-                    ke = function() {
+                    ge = "https://assets.vrchat.com/default/filtered.png",
+                    be = "offline" === oe && !X,
+                    he = ce || se || me,
+                    Ee = ue || se || ce || me,
+                    ye = function() {
                         return g.createElement("div", {
                             className: (0, m.cx)({
                                 "tw-h-auto tw-min-h-50px tw-p-2": P
@@ -108,23 +107,23 @@
                             })
                         }, M))
                     };
-                return N && !Q || fe && !Q ? null : L ? g.createElement("div", {
+                return N && !V || ve && !V ? null : L ? g.createElement("div", {
                     style: {
                         "--avatar-size": "min(33.333%, 8rem)"
                     },
                     className: (0, m.cx)("tw-relative tw-bg-grey tw-aspect-[1.45/1] tw-rounded-2xl tw-pb-3 tw-border-solid tw-border-4 tw-border-grey", H)
-                }, M && ke(), g.createElement("div", {
+                }, M && ye(), g.createElement("div", {
                     className: "tw-overflow-hidden tw-rounded-tl-xl tw-rounded-tr-xl tw-min-h-[100px] tw-h-1/2"
                 }, g.createElement("img", {
                     alt: "user banner",
-                    src: N ? be : Ee,
+                    src: N ? ge : he,
                     className: "tw-object-cover tw-w-full tw-h-full tw-object-top"
                 })), g.createElement("div", {
                     className: (0, m.cx)("tw-absolute tw-transition-all tw-duration-[250ms] tw-ease-in-out tw-top-1/2 tw--translate-y-1/2 tw-z-[1] tw-left-3 tw-h-[var(--avatar-size)] tw-max-h-32 tw-aspect-square tw-rounded-full tw-border-solid tw-border-4 tw-border-grey", {
                         "tw-top-[calc(50%+25px)]": P
                     })
                 }, g.createElement("img", {
-                    src: N ? be : ye,
+                    src: N ? ge : Ee,
                     alt: "user icon",
                     className: "tw-h-full tw-aspect-square tw-rounded-full tw-object-cover"
                 })), g.createElement("div", {
@@ -133,46 +132,46 @@
                     className: "tw-flex tw-flex-row tw-items-center tw-gap-1"
                 }, g.createElement(b.rU, {
                     className: "tw-text-lighter-grey",
-                    to: N ? "#" : "/home/user/".concat(h || me),
+                    to: N ? "#" : "/home/user/".concat(h || we),
                     target: C ? "_blank" : void 0,
-                    "aria-label": "View ".concat(ue, "'s profile"),
+                    "aria-label": "View ".concat(de, "'s profile"),
                     onClick: function(e) {
                         return e.stopPropagation()
                     }
                 }, g.createElement("h4", {
                     className: "tw-truncate tw-text-left tw-mb-0"
-                }, N ? "Hidden" : ue)), xe && !N && g.createElement(i.$1, {
+                }, N ? "Hidden" : de)), pe && !N && g.createElement(i.$1, {
                     icon: a.Ek,
                     className: "tw-text-error-message-red"
-                }), ge && !N && g.createElement(i.$1, {
+                }), xe && !N && g.createElement(i.$1, {
                     icon: n.wO,
                     className: "tw-text-error-message-red"
                 })), g.createElement(s.Z, {
-                    status: le,
+                    status: ie,
                     withLabel: !0,
-                    isOffline: he
-                }))) : g.createElement("div", null, M && ke(), g.createElement("div", {
+                    isOffline: be
+                }))) : g.createElement("div", null, M && ye(), g.createElement("div", {
                     className: (0, m.cx)("tw-p-3 tw-relative tw-bg-grey hover:tw-bg-[#363B41] tw-rounded-lg", H)
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-row tw-mx-0 tw-gap-3 tw-items-center"
                 }, g.createElement("div", {
                     className: "tw-relative tw-flex tw-flex-col"
-                }, g.createElement("div", null, (Q || !N) && g.createElement(b.rU, {
+                }, g.createElement("div", null, (V || !N) && g.createElement(b.rU, {
                     to: "/home/user/".concat(h),
-                    title: N ? "Hidden" : ie,
+                    title: N ? "Hidden" : oe,
                     target: C ? "_blank" : void 0
                 }, g.createElement("div", {
                     className: "tw-rounded-full tw-relative tw-overflow-hidden tw-w-12 tw-h-12"
-                }, Q && N && g.createElement(i.$1, {
+                }, V && N && g.createElement(i.$1, {
                     icon: o.Aq,
                     className: "tw-text-4xl tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-text-lighter-grey"
                 }), g.createElement("img", {
                     alt: "profile",
                     className: (0, m.cx)("tw-object-cover tw-aspect-square tw-w-12"),
-                    src: Ee
-                }))))), !Q && N && g.createElement("div", {
+                    src: he
+                }))))), !V && N && g.createElement("div", {
                     className: "tw-flex-1 tw-flex tw-flex-col tw-w-full"
-                }, g.createElement("span", null, "Hidden")), (Q || !N) && g.createElement("div", {
+                }, g.createElement("span", null, "Hidden")), (V || !N) && g.createElement("div", {
                     className: "tw-flex-1 tw-flex tw-flex-col tw-w-full"
                 }, g.createElement("h6", {
                     className: "tw-mb-[6px] tw-space-x-2"
@@ -180,35 +179,35 @@
                     className: "tw-text-lighter-grey",
                     to: "/home/user/".concat(h),
                     target: C ? "_blank" : void 0
-                }, ue), xe && g.createElement(i.$1, {
+                }, de), pe && g.createElement(i.$1, {
                     icon: a.Ek,
                     className: "tw-text-error-message-red"
-                }), ge && g.createElement(i.$1, {
+                }), xe && g.createElement(i.$1, {
                     icon: n.wO,
                     className: "tw-text-error-message-red"
                 })), g.createElement(s.Z, {
-                    status: le,
+                    status: ie,
                     withLabel: !0,
-                    isOffline: he
+                    isOffline: be
                 })), g.createElement("div", {
                     className: "tw-flex tw-items-center tw-gap-3"
-                }, Z && !R && J && !X && !pe && !N && g.createElement(u.Z, {
+                }, Z && !R && J && !X && !fe && !N && g.createElement(u.Z, {
                     userId: h,
                     slim: !0,
                     containerClasses: "tw-rounded-lg tw-h-10",
                     className: "tw-text-subtext-grey tw-bg-grey tw-border-none tw-px-3 tw-p-2 tw-flex tw-items-center tw-gap-1"
-                }), $ && !R && J && !X && !pe && !N && g.createElement(w.Z, {
+                }), $ && !R && J && !X && !fe && !N && g.createElement(w.Z, {
                     neutral: !0,
                     className: "tw-text-subtext-grey tw-bg-grey tw-border-none tw-px-3 tw-p-2",
                     containerClasses: "tw-rounded-lg tw-h-10",
                     userId: h,
-                    isMuted: xe,
-                    isBlocked: ge,
-                    isLoading: ne
+                    isMuted: pe,
+                    isBlocked: xe,
+                    isLoading: re
                 }), g.createElement(c.Z, {
                     userId: h
-                }))), "online" === ie && y && g.createElement("div", null, ce && g.createElement(d.Z, {
-                    location: ce,
+                }))), "online" === oe && y && g.createElement("div", null, le && g.createElement(d.Z, {
+                    location: le,
                     userId: h,
                     currentUser: D,
                     size: "normal"
@@ -897,4 +896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98785a1b2b78ff91da4372723a7affab53e8b4f5e57196f478438d13758de85b.js.map
+//# sourceMappingURL=1b8dbbbf85a7c0a88cc35a174432225fad61aafe39cb5b279933174fb4334a17.js.map
