@@ -88,7 +88,8 @@
                 return a.createElement(v.default, {
                     userId: e.id,
                     hideTitle: !0,
-                    activeTab: "photos"
+                    activeTab: "photos",
+                    enableGalleryTooltip: !0
                 })
             };
             const g = function() {
@@ -3830,4 +3831,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48a8e219a17339ffc3f565e807e49eee5c9a08d9cb5a848d2efdd3c5e00adbed.js.map
+//# sourceMappingURL=033d01bd92eb021f52d984b4aab5d81fae52ccabcd683ecae17b02acced3f98f.js.map

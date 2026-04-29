@@ -1525,7 +1525,7 @@
                         i = void 0 !== o && o;
                     return r.createElement(a.qX, {
                         hideIcon: !0,
-                        color: "#28434B",
+                        color: "#31545ebf",
                         type: "custom",
                         iconColor: "#6AE3F9",
                         className: "tw-mb-4"
@@ -3408,4 +3408,4 @@
         }
     }
 ]);
-//# sourceMappingURL=291199547fdd1c64a274456fffbb04bfc6a82925b72d4fd5c2e5e51d1465144c.js.map
+//# sourceMappingURL=961e7dda441f21714d1c103956037c33dfcb0a9f99ceab15beaf6911fdf02467.js.map

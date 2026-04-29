@@ -408,6 +408,7 @@
                 }, Object.keys(null != We ? We : {}).map((function(e, t) {
                     var n = We[e];
                     return x.createElement(x.Fragment, null, x.createElement(G, {
+                        key: e,
                         className: "".concat(ue === e ? "active" : "", " mb-3"),
                         onClick: function() {
                             me(e)
@@ -833,4 +834,4 @@
         }
     }
 ]);
-//# sourceMappingURL=50e9df469023b9433de795290eb75c1957d2850074812742295b1542c8b409b7.js.map
+//# sourceMappingURL=d1a670246bbcae945c11f5311da7d251a0721751fc537f676684d28f6ec4b914.js.map

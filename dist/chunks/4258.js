@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [5545], {
+    [4258], {
         76409: (c, a) => {
             var l = "bullhorn",
                 e = [128226, 128363],
@@ -11,6 +11,28 @@
                 iconName: l,
                 icon: [512, 512, e, i, s]
             }, a.Ac = a.DF
+        },
+        54326: (c, a, l) => {
+            var e = l(6112);
+            a.DF = {
+                prefix: e.prefix,
+                iconName: e.iconName,
+                icon: [e.width, e.height, e.aliases, e.unicode, e.svgPathData]
+            }, a.IV = a.DF, e.prefix, e.iconName, e.width, e.height, e.aliases, e.unicode, e.svgPathData, e.aliases
+        },
+        6112: (c, a) => {
+            Object.defineProperty(a, "__esModule", {
+                value: !0
+            });
+            var l = "calendar-days",
+                e = ["calendar-alt"],
+                i = "f073",
+                s = "M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z";
+            a.definition = {
+                prefix: "fas",
+                iconName: l,
+                icon: [448, 512, e, i, s]
+            }, a.faCalendarDays = a.definition, a.prefix = "fas", a.iconName = l, a.width = 448, a.height = 512, a.ligatures = e, a.unicode = i, a.svgPathData = s, a.aliases = e
         },
         92728: (c, a) => {
             var l = "camera-retro",
@@ -218,4 +240,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8bc6a1100622adc78bb6dd2292d11c07e1a7448cad41026558add495e844e3e1.js.map
+//# sourceMappingURL=1281df6e7fa8e293edef6901f14a46448a906744b03d5050e972b7db3fbe7841.js.map

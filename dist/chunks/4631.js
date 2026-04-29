@@ -2777,18 +2777,37 @@
                     },
                     Un = function() {
                         var e = (0, r.Z)(N().mark((function e() {
+                            var t;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        st && (se.bannerId = st), Mt && (se.iconId = Mt), Gt({
+                                        return st && (se.bannerId = st), Mt && (se.iconId = Mt), e.prev = 2, e.next = 5, Gt({
                                             groupId: b.id,
                                             data: Wt({}, se)
-                                        });
-                                    case 3:
+                                        }).unwrap();
+                                    case 5:
+                                        mt(null), gt(null), At(null), Rt(null), Z((0, ee.d)({
+                                            title: "Group Updated Successfully",
+                                            icon: k.f8,
+                                            color: "success",
+                                            timeout: 3e3
+                                        })), e.next = 12;
+                                        break;
+                                    case 9:
+                                        e.prev = 9, e.t0 = e.catch(2), Z((0, ee.d)({
+                                            title: "Group Update Failed",
+                                            icon: x.eH,
+                                            message: "".concat(null === e.t0 || void 0 === e.t0 || null === (t = e.t0.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
+                                            color: "error",
+                                            timeout: 5e3
+                                        }));
+                                    case 12:
                                     case "end":
                                         return e.stop()
                                 }
-                            }), e)
+                            }), e, null, [
+                                [2, 9]
+                            ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
@@ -7442,4 +7461,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fe1e8b559c103f4bab93cb1a0de251189e0a64b02219d76387d5bab619c3ed56.js.map
+//# sourceMappingURL=9b4bd5bcba99bd22ef6bf750919e9ebf741eceb6f6cf01fe1e5e43422a345490.js.map
