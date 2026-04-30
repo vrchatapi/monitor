@@ -23,16 +23,17 @@
                 b = r(20937),
                 g = r.n(b),
                 y = r(80988),
-                E = r(69116),
-                k = r(22202),
-                x = r(17219),
-                N = r(6281),
-                j = r(69690),
-                C = r(82470),
-                S = r(41400),
-                Z = r(13887);
+                E = r(90068),
+                k = r(69116),
+                x = r(22202),
+                N = r(17219),
+                j = r(6281),
+                C = r(69690),
+                S = r(82470),
+                Z = r(41400),
+                O = r(13887);
 
-            function O(e, t) {
+            function T(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var a = Object.getOwnPropertySymbols(e);
@@ -43,12 +44,12 @@
                 return r
             }
 
-            function T(e) {
+            function P(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? O(Object(r), !0).forEach((function(t) {
+                    t % 2 ? T(Object(r), !0).forEach((function(t) {
                         (0, a.Z)(e, t, r[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : O(Object(r)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : T(Object(r)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     }))
                 }
@@ -57,141 +58,142 @@
             const A = function() {
                 var e, t, r = (0, f.s0)(),
                     a = (0, f.TH)(),
-                    o = (0, E.ve)("web-test-not-logged-in", {
+                    o = (0, k.ve)("web-test-not-logged-in", {
                         value: "control"
                     }),
                     s = "treatment" === (null == o ? void 0 : o.value),
-                    m = (0, k.l4)(),
+                    m = (0, x.l4)(),
                     v = (0, l.Z)(m, 2),
                     b = v[0],
-                    O = v[1],
-                    A = O.isLoading,
-                    R = O.isSuccess,
-                    I = O.error,
-                    z = (0, x.y)().data,
-                    D = (void 0 === z ? {} : z).currentTOSVersion,
-                    _ = (0, E.sc)(),
-                    q = _.nameTaken,
-                    B = _.emailTaken,
-                    F = w.useState({
+                    T = v[1],
+                    A = T.isLoading,
+                    I = T.isSuccess,
+                    z = T.error,
+                    D = (0, E.P2)(),
+                    _ = (0, N.y)().data,
+                    q = (void 0 === _ ? {} : _).currentTOSVersion,
+                    B = (0, k.sc)(),
+                    F = B.nameTaken,
+                    V = B.emailTaken,
+                    L = w.useState({
                         value: "",
                         error: !1,
                         taken: !1,
                         ok: null,
                         checking: !1
                     }),
-                    V = (0, l.Z)(F, 2),
-                    L = V[0],
-                    M = V[1],
-                    X = w.useState({
+                    M = (0, l.Z)(L, 2),
+                    X = M[0],
+                    J = M[1],
+                    U = w.useState({
                         value: "",
                         error: !1,
                         taken: !1,
                         ok: null,
                         checking: !1
                     }),
-                    J = (0, l.Z)(X, 2),
-                    U = J[0],
-                    W = J[1],
-                    Y = w.useState({
+                    W = (0, l.Z)(U, 2),
+                    Y = W[0],
+                    H = W[1],
+                    $ = w.useState({
                         value: "",
                         error: !1,
                         ok: null
                     }),
-                    H = (0, l.Z)(Y, 2),
-                    $ = H[0],
-                    G = H[1],
-                    K = w.useState({
+                    G = (0, l.Z)($, 2),
+                    K = G[0],
+                    Q = G[1],
+                    ee = w.useState({
                         value: "",
                         error: !1,
                         ok: null
                     }),
-                    Q = (0, l.Z)(K, 2),
-                    ee = Q[0],
-                    te = Q[1],
-                    re = w.useState({
+                    te = (0, l.Z)(ee, 2),
+                    re = te[0],
+                    ae = te[1],
+                    ne = w.useState({
                         value: "",
                         error: !1,
                         ok: null
                     }),
-                    ae = (0, l.Z)(re, 2),
-                    ne = ae[0],
-                    le = ae[1],
-                    oe = w.useState({
+                    le = (0, l.Z)(ne, 2),
+                    oe = le[0],
+                    se = le[1],
+                    ce = w.useState({
                         year: "",
                         month: "1",
                         day: "",
                         error: !1,
                         ok: null
                     }),
-                    se = (0, l.Z)(oe, 2),
-                    ce = se[0],
-                    ie = se[1],
-                    ue = w.useState(0),
-                    me = (0, l.Z)(ue, 2),
-                    de = me[0],
-                    we = me[1],
-                    fe = w.useState(!1),
-                    pe = (0, l.Z)(fe, 2),
-                    ve = pe[0],
-                    he = pe[1],
-                    be = w.useState(!1),
-                    ge = (0, l.Z)(be, 2),
-                    ye = ge[0],
-                    Ee = ge[1],
-                    ke = w.useState(""),
-                    xe = (0, l.Z)(ke, 2),
-                    Ne = xe[0],
-                    je = xe[1],
-                    Ce = w.useState(!1),
-                    Se = (0, l.Z)(Ce, 2),
-                    Ze = Se[0],
-                    Oe = Se[1],
-                    Te = w.useRef(R),
-                    Ae = w.useRef(!1),
-                    Pe = (0, u._)("dobFailed", {
+                    ie = (0, l.Z)(ce, 2),
+                    ue = ie[0],
+                    me = ie[1],
+                    de = w.useState(0),
+                    we = (0, l.Z)(de, 2),
+                    fe = we[0],
+                    pe = we[1],
+                    ve = w.useState(!1),
+                    he = (0, l.Z)(ve, 2),
+                    be = he[0],
+                    ge = he[1],
+                    ye = w.useState(!1),
+                    Ee = (0, l.Z)(ye, 2),
+                    ke = Ee[0],
+                    xe = Ee[1],
+                    Ne = w.useState(""),
+                    je = (0, l.Z)(Ne, 2),
+                    Ce = je[0],
+                    Se = je[1],
+                    Ze = w.useState(!1),
+                    Oe = (0, l.Z)(Ze, 2),
+                    Te = Oe[0],
+                    Pe = Oe[1],
+                    Ae = w.useRef(I),
+                    Re = w.useRef(!1),
+                    Ie = (0, u._)("dobFailed", {
                         value: !1,
                         failedAt: null
                     }),
-                    Re = (0, l.Z)(Pe, 2),
-                    Ie = Re[0],
-                    ze = Re[1],
-                    De = w.useRef(null);
+                    ze = (0, l.Z)(Ie, 2),
+                    De = ze[0],
+                    _e = ze[1],
+                    qe = w.useRef(null);
                 w.useEffect((function() {
-                    Ie.value && "number" == typeof Ie.failedAt && d()().isAfter(d()(Ie.failedAt).add(1, "days")) && ze({
+                    De.value && "number" == typeof De.failedAt && d()().isAfter(d()(De.failedAt).add(1, "days")) && _e({
                         value: !1,
                         failedAt: null
                     })
                 }), []), w.useEffect((function() {
-                    Oe(!0 === L.ok && !0 === U.ok && (!0 === $.ok || s) && !0 === ee.ok && !0 === ne.ok && !0 === ce.ok && de === D && !0 === ye)
-                }), [L, U, $, ee, ne, ce, de, ye]), w.useEffect((function() {
+                    Pe(!0 === X.ok && !0 === Y.ok && (!0 === K.ok || s) && !0 === re.ok && !0 === oe.ok && !0 === ue.ok && fe === q && !0 === ke)
+                }), [X, Y, K, re, oe, ue, fe, ke]), w.useEffect((function() {
                     (0, n.Z)(c().mark((function e() {
                         var t, n, l;
                         return c().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    R && !Te.current && (l = null === (t = a.state) || void 0 === t ? void 0 : t.redirectTo, null !== (n = l) && void 0 !== n && n.includes("/home/register") && (l = "/home".concat(a.search)), l || (l = "/home/verify"), Ae.current = !0, r(l)), Te.current = R;
+                                    I && !Ae.current && (l = null === (t = a.state) || void 0 === t ? void 0 : t.redirectTo, null !== (n = l) && void 0 !== n && n.includes("/home/register") && (l = "/home".concat(a.search)), l || (l = "/home/verify"), Re.current = !0, r(l)), Ae.current = I;
                                 case 3:
                                 case "end":
                                     return e.stop()
                             }
                         }), e)
                     })))()
-                }), [R, a]), w.useEffect((function() {
+                }), [I, a]), w.useEffect((function() {
                     var e;
-                    I && (0, N.j)("Register_Error", {
-                        error: null === (e = I.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
+                    z && (0, j.j)("Register_Error", {
+                        error: null === (e = z.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
                     })
-                }), [I]), w.useEffect((function() {
-                    (0, N.j)("Signup_RegistrationStart")
+                }), [z]), w.useEffect((function() {
+                    (0, j.j)("Signup_RegistrationStart")
                 }), []);
-                var _e = function() {
+                var Be = function() {
                         var e = (0, n.Z)(c().mark((function e(t) {
                             var r, a, n, l;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.target.value, a = void 0 === r ? "" : r, M(T(T({}, L), {}, {
+                                        if (r = t.target.value, a = void 0 === r ? "" : r, J(P(P({}, X), {}, {
                                                 value: a,
                                                 ok: null,
                                                 taken: !1,
@@ -202,29 +204,29 @@
                                         }
                                         return e.abrupt("return");
                                     case 4:
-                                        if (M((function(e) {
-                                                return T(T({}, e), {}, {
+                                        if (J((function(e) {
+                                                return P(P({}, e), {}, {
                                                     taken: null
                                                 })
                                             })), n = !1, "" !== a && a.length < 4 ? n = "That display name is too short" : a.length > 15 && (n = "That display name is too long"), !n) {
                                             e.next = 10;
                                             break
                                         }
-                                        return M((function(e) {
-                                            return T(T({}, e), {}, {
+                                        return J((function(e) {
+                                            return P(P({}, e), {}, {
                                                 error: n,
                                                 ok: null
                                             })
                                         })), e.abrupt("return");
                                     case 10:
-                                        return M((function(e) {
-                                            return T(T({}, e), {}, {
+                                        return J((function(e) {
+                                            return P(P({}, e), {}, {
                                                 checking: !0
                                             })
-                                        })), e.next = 13, q(a);
+                                        })), e.next = 13, F(a);
                                     case 13:
-                                        l = e.sent, M((function(e) {
-                                            return T(T({}, e), {}, {
+                                        l = e.sent, J((function(e) {
+                                            return P(P({}, e), {}, {
                                                 taken: l,
                                                 ok: !e.error && !l,
                                                 error: l ? "That display name is already taken." : e.error,
@@ -241,13 +243,13 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    qe = function() {
+                    Fe = function() {
                         var e = (0, n.Z)(c().mark((function e(t) {
                             var r, a;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.target.value, a = void 0 === r ? "" : r, W(T(T({}, U), {}, {
+                                        if (r = t.target.value, a = void 0 === r ? "" : r, H(P(P({}, Y), {}, {
                                                 value: a,
                                                 ok: null,
                                                 taken: !1,
@@ -258,8 +260,8 @@
                                         }
                                         return e.abrupt("return");
                                     case 4:
-                                        W((function(e) {
-                                            return T(T({}, e), {}, {
+                                        H((function(e) {
+                                            return P(P({}, e), {}, {
                                                 taken: null
                                             })
                                         }));
@@ -273,31 +275,31 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Be = function() {
+                    Ve = function() {
                         var e = (0, n.Z)(c().mark((function e(t) {
                             var r, a, n;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (r = t.target.value, a = !1, h()(r) ? (0, j.T)(r) && (a = "This email domain cannot be used at this time due to abuse, please try using a different one") : a = "That's an invalid email", !a) {
+                                        if (r = t.target.value, a = !1, h()(r) ? (0, C.T)(r) && (a = "This email domain cannot be used at this time due to abuse, please try using a different one") : a = "That's an invalid email", !a) {
                                             e.next = 6;
                                             break
                                         }
-                                        return W((function(e) {
-                                            return T(T({}, e), {}, {
+                                        return H((function(e) {
+                                            return P(P({}, e), {}, {
                                                 error: a,
                                                 ok: null
                                             })
                                         })), e.abrupt("return");
                                     case 6:
-                                        return W((function(e) {
-                                            return T(T({}, e), {}, {
+                                        return H((function(e) {
+                                            return P(P({}, e), {}, {
                                                 checking: !0
                                             })
-                                        })), e.next = 9, B(r);
+                                        })), e.next = 9, V(r);
                                     case 9:
-                                        n = e.sent, W((function(e) {
-                                            return T(T({}, e), {}, {
+                                        n = e.sent, H((function(e) {
+                                            return P(P({}, e), {}, {
                                                 taken: n,
                                                 ok: !e.error && !n,
                                                 error: n ? "This email is already taken." : e.error,
@@ -314,11 +316,11 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Fe = function(e, t, r) {
+                    Le = function(e, t, r) {
                         if ("" !== r && "" !== t && "" !== e) {
                             var a = null;
-                            if (!g()(r) || r < 1900 || r > 2017 ? a = "That's not a valid year" : !g()(t) || t < 0 || t > 12 ? a = "That's not a valid month" : (!g()(e) || e < 0 || e > 31) && (a = "That's not a valid day"), a) ie((function(e) {
-                                return T(T({}, e), {}, {
+                            if (!g()(r) || r < 1900 || r > 2017 ? a = "That's not a valid year" : !g()(t) || t < 0 || t > 12 ? a = "That's not a valid month" : (!g()(e) || e < 0 || e > 31) && (a = "That's not a valid day"), a) me((function(e) {
+                                return P(P({}, e), {}, {
                                     error: a,
                                     ok: !1
                                 })
@@ -327,57 +329,66 @@
                                 year: r,
                                 month: t - 1,
                                 day: e
-                            }).isValid() ? ie((function(e) {
-                                return T(T({}, e), {}, {
+                            }).isValid() ? me((function(e) {
+                                return P(P({}, e), {}, {
                                     ok: !0
                                 })
-                            })) : ie((function(e) {
-                                return T(T({}, e), {}, {
+                            })) : me((function(e) {
+                                return P(P({}, e), {}, {
                                     error: "That's not a valid date",
                                     ok: !1
                                 })
                             }))
                         }
                     },
-                    Ve = function() {
-                        Ee(!1), je("")
+                    Me = function() {
+                        xe(!1), Se("")
                     },
-                    Le = function() {
+                    Xe = function() {
                         var e = (0, n.Z)(c().mark((function e(t) {
                             var r;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return t.preventDefault(), e.prev = 1, e.next = 4, b({
-                                            username: L.value,
-                                            password: ee.value,
-                                            email: U.value,
-                                            year: ce.year,
-                                            month: ce.month,
-                                            day: ce.day,
-                                            captchaCode: Ne,
-                                            subscribe: ve,
-                                            acceptedTOSVersion: de
+                                            username: X.value,
+                                            password: re.value,
+                                            email: Y.value,
+                                            year: ue.year,
+                                            month: ue.month,
+                                            day: ue.day,
+                                            captchaCode: Ce,
+                                            subscribe: be,
+                                            acceptedTOSVersion: fe
                                         }).unwrap();
                                     case 4:
-                                        (0, N.j)("Signup_AccountCreated_Web"), e.next = 13;
+                                        (0, j.j)("Signup_AccountCreated_Web"), e.next = 15;
                                         break;
                                     case 7:
-                                        if (e.prev = 7, e.t0 = e.catch(1), console.error(e.t0), !d()().subtract(13, "years").isBefore(d()({
-                                                year: ce.year,
-                                                month: ce.month - 1,
-                                                day: ce.day
-                                            }))) {
-                                            e.next = 13;
+                                        if (e.prev = 7, e.t0 = e.catch(1), console.error(e.t0), !D({
+                                                error: e.t0,
+                                                canDisagree: !1
+                                            })) {
+                                            e.next = 12;
                                             break
                                         }
-                                        return ze({
+                                        return e.abrupt("return");
+                                    case 12:
+                                        if (!d()().subtract(13, "years").isBefore(d()({
+                                                year: ue.year,
+                                                month: ue.month - 1,
+                                                day: ue.day
+                                            }))) {
+                                            e.next = 15;
+                                            break
+                                        }
+                                        return _e({
                                             value: !0,
                                             failedAt: Date.now()
                                         }), e.abrupt("return");
-                                    case 13:
-                                        Ae.current || (Ve(), null === (r = De.current) || void 0 === r || r.resetCaptcha());
-                                    case 14:
+                                    case 15:
+                                        Re.current || (Me(), null === (r = qe.current) || void 0 === r || r.resetCaptcha());
+                                    case 16:
                                     case "end":
                                         return e.stop()
                                 }
@@ -389,35 +400,35 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Me = null !== (e = null == I || null === (t = I.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "";
-                return Me && (Me.indexOf(":") > 0 ? (Me.substring(0, Me.indexOf(":")).trim(), Me = Me.substring(Me.indexOf(":") + 1).trim()) : 0 === Me.indexOf(":") && (Me = Me.substring(1).trim())), Ie.value ? w.createElement(Z.Z, {
+                    Je = null !== (e = null == z || null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "";
+                return Je && (Je.indexOf(":") > 0 ? (Je.substring(0, Je.indexOf(":")).trim(), Je = Je.substring(Je.indexOf(":") + 1).trim()) : 0 === Je.indexOf(":") && (Je = Je.substring(1).trim())), De.value ? w.createElement(O.Z, {
                     showVRCLogo: !s
-                }, w.createElement(y.$4, null, "Create a New Account"), w.createElement(S.W2, null, w.createElement(S.sg, {
+                }, w.createElement(y.$4, null, "Create a New Account"), w.createElement(Z.W2, null, w.createElement(Z.sg, {
                     md: {
                         size: 6,
                         offset: 3
                     },
                     className: "mt-5"
-                }, w.createElement(S.X2, {
+                }, w.createElement(Z.X2, {
                     className: "justify-content-center"
-                }, w.createElement(S.TR, {
+                }, w.createElement(Z.TR, {
                     href: "https://vrchat.com",
                     target: "_blank"
-                })), w.createElement(S.l0, null, w.createElement(S.X2, {
+                })), w.createElement(Z.l0, null, w.createElement(Z.X2, {
                     className: "align-items-flex-end justify-content-between mb-2 mt-2"
-                }, w.createElement(S.h4, null, "Create a New Account"), w.createElement(p.rU, {
+                }, w.createElement(Z.h4, null, "Create a New Account"), w.createElement(p.rU, {
                     to: "/home/login",
                     className: "nav-link"
                 }, "Login")), w.createElement(y.qX, {
                     type: "error",
                     title: "Failed to create account",
                     message: "You are not eligible for a VRChat account at this time. Please try again later."
-                }))))) : w.createElement(Z.Z, {
+                }))))) : w.createElement(O.Z, {
                     showVRCLogo: !s
                 }, w.createElement(y.$4, null, "Create a New Account"), w.createElement("div", {
                     className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit ".concat(s ? "xl:tw-mt-5" : "xl:tw-mt-[200px]")
                 }, w.createElement("form", {
-                    onSubmit: Le
+                    onSubmit: Xe
                 }, w.createElement("div", {
                     className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
                 }, w.createElement("h4", {
@@ -432,19 +443,19 @@
                     id: "username",
                     name: "username",
                     "aria-label": "Desired display name",
-                    value: L.value,
-                    onChange: _e,
-                    loading: L.checking,
-                    success: !L.checking && L.ok,
+                    value: X.value,
+                    onChange: Be,
+                    loading: X.checking,
+                    success: !X.checking && X.ok,
                     className: "tw-mb-1",
-                    isError: L.error
-                }), !L.error && w.createElement("p", {
+                    isError: X.error
+                }), !X.error && w.createElement("p", {
                     className: "tw-text-placeholder-text tw-text-xs tw-mb-0"
-                }, s ? "This is visible to others and can be edited later." : "This is the name shown to other users in-app, you may only change your display name once per 90 days."), L.error && w.createElement("p", {
+                }, s ? "This is visible to others and can be edited later." : "This is the name shown to other users in-app, you may only change your display name once per 90 days."), X.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Display name error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-                }, L.error)), w.createElement("div", {
+                }, X.error)), w.createElement("div", {
                     className: "tw-w-full tw-mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
@@ -455,41 +466,41 @@
                     id: "email",
                     name: "email",
                     "aria-label": "New Email",
-                    value: U.value,
-                    onChange: qe,
-                    onBlur: Be,
-                    loading: U.checking,
-                    isError: U.error
-                }), U.error && w.createElement("p", {
+                    value: Y.value,
+                    onChange: Fe,
+                    onBlur: Ve,
+                    loading: Y.checking,
+                    isError: Y.error
+                }), Y.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Email error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-                }, U.error), U.ok && !s && w.createElement(y.II, {
+                }, Y.error), Y.ok && !s && w.createElement(y.II, {
                     type: "text",
                     className: "tw-w-full tw-mt-2",
                     name: "re-enter-email",
                     "aria-label": "Re-enter email address",
                     placeholder: "Re-enter email address",
-                    value: $.value,
+                    value: K.value,
                     onChange: function(e) {
-                        G(T(T({}, $), {}, {
+                        Q(P(P({}, K), {}, {
                             value: e.target.value
                         }))
                     },
                     onBlur: function() {
-                        return $.value !== U.value ? G(T(T({}, $), {}, {
+                        return K.value !== Y.value ? Q(P(P({}, K), {}, {
                             error: "Emails do not match"
-                        })) : G(T(T({}, $), {}, {
+                        })) : Q(P(P({}, K), {}, {
                             error: null,
                             ok: !0
                         }))
                     },
-                    isError: $.error
-                }), U.ok && $.error && w.createElement("p", {
+                    isError: K.error
+                }), Y.ok && K.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Re-entered email error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-                }, $.error)), w.createElement("div", {
+                }, K.error)), w.createElement("div", {
                     className: "tw-w-full tw-mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
@@ -499,33 +510,33 @@
                     name: "Password",
                     role: "textbox",
                     "aria-label": "Password",
-                    value: ee.value,
+                    value: re.value,
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        if (te(T(T({}, ee), {}, {
+                        if (ae(P(P({}, re), {}, {
                                 value: r,
                                 ok: null,
                                 error: !1
                             })), "" !== r) {
                             var a = "\n    We recommend using a password which is:\n      •   At least 8 characters long\n      •   Unique to this account and not in use anywhere else\n      •   Uses a combination of letters, numbers, and symbols\n      •   Stored in a Password Manager\n    ",
                                 n = !1;
-                            r.length < 8 ? n = "That password is too short \n ".concat(a) : (0, C.w)(r) && (n = "Please try a more secure password \n ".concat(a));
+                            r.length < 8 ? n = "That password is too short \n ".concat(a) : (0, S.w)(r) && (n = "Please try a more secure password \n ".concat(a));
                             var l = !n;
-                            te((function(e) {
-                                return T(T({}, e), {}, {
+                            ae((function(e) {
+                                return P(P({}, e), {}, {
                                     ok: l,
                                     error: n
                                 })
                             }))
                         }
                     },
-                    isError: ee.error
-                }), ee.error && w.createElement("p", {
+                    isError: re.error
+                }), re.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Password error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1 tw-whitespace-pre-wrap"
-                }, ee.error), ee.ok && w.createElement(y.II, {
+                }, re.error), re.ok && w.createElement(y.II, {
                     type: "password",
                     className: "tw-w-full tw-mt-2",
                     id: "re-enter-password",
@@ -533,48 +544,48 @@
                     placeholder: "Re-enter password",
                     role: "textbox",
                     "aria-label": "Re-enter password",
-                    value: ne.value,
+                    value: oe.value,
                     onChange: function(e) {
-                        le(T(T({}, ne), {}, {
+                        se(P(P({}, oe), {}, {
                             value: e.target.value
                         }))
                     },
                     onBlur: function() {
-                        return ne.value !== ee.value ? le(T(T({}, ne), {}, {
+                        return oe.value !== re.value ? se(P(P({}, oe), {}, {
                             error: "Passwords do not match"
-                        })) : le(T(T({}, ne), {}, {
+                        })) : se(P(P({}, oe), {}, {
                             error: null,
                             ok: !0
                         }))
                     },
-                    isError: ne.error
-                }), ee.ok && ne.error && w.createElement("p", {
+                    isError: oe.error
+                }), re.ok && oe.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Re-entered password error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-                }, ne.error)), w.createElement("div", {
+                }, oe.error)), w.createElement("div", {
                     className: "tw-w-full tw-mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
                     className: "tw-mb-2"
                 }, "Date of Birth"), w.createElement("div", {
                     className: "tw-justify-between tw-align-middle tw-flex"
-                }, w.createElement(P, {
+                }, w.createElement(R, {
                     className: "tw-w-[129px] tw-h-10",
                     id: "age_month",
                     "aria-label": "Birthday Month",
-                    value: ce.month,
+                    value: ue.month,
                     name: "age_month",
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ie(T(T({}, ce), {}, {
+                        me(P(P({}, ue), {}, {
                             month: r,
                             ok: null,
                             error: !1
-                        })), Fe(ce.day, r, ce.year)
+                        })), Le(ue.day, r, ue.year)
                     },
-                    isError: ce.error
+                    isError: ue.error
                 }, w.createElement("option", {
                     value: "1"
                 }, "January"), w.createElement("option", {
@@ -607,17 +618,17 @@
                     className: "tw-w-[129px]",
                     placeholder: "Day",
                     "aria-label": "Birthday Day",
-                    value: ce.day,
+                    value: ue.day,
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ie(T(T({}, ce), {}, {
+                        me(P(P({}, ue), {}, {
                             day: r,
                             ok: null,
                             error: !1
-                        })), Fe(r, ce.month, ce.year)
+                        })), Le(r, ue.month, ue.year)
                     },
-                    isError: ce.error
+                    isError: ue.error
                 }), w.createElement(y.II, {
                     type: "text",
                     id: "year",
@@ -626,28 +637,28 @@
                     placeholder: "Year",
                     className: "tw-w-[129px]",
                     "aria-label": "Birthday Year",
-                    value: ce.year,
+                    value: ue.year,
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
-                        ie(T(T({}, ce), {}, {
+                        me(P(P({}, ue), {}, {
                             year: r,
                             ok: null,
                             error: !1
-                        })), Fe(ce.day, ce.month, r)
+                        })), Le(ue.day, ue.month, r)
                     },
-                    isError: ce.error
-                })), ce.error && w.createElement("p", {
+                    isError: ue.error
+                })), ue.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Birthday error",
                     className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-                }, ce.error)), w.createElement("div", {
+                }, ue.error)), w.createElement("div", {
                     className: "tw-w-full tw-mb-3"
                 }, w.createElement(y.XZ, {
                     id: "tos",
                     onChange: function(e) {
                         var t = e.target.checked;
-                        we(t ? D : 0)
+                        pe(t ? q : 0)
                     },
                     htmlFor: "tos",
                     className: "tw-mb-0",
@@ -672,11 +683,11 @@
                     id: "subscribe",
                     onChange: function(e) {
                         var t = e.target.checked;
-                        he(t)
+                        ge(t)
                     },
                     htmlFor: "subscribe",
                     className: "",
-                    checked: ve,
+                    checked: be,
                     label: w.createElement("p", {
                         className: "tw-text-placeholder-text tw-text-base tw-ml-1"
                     }, "I agree to receive updates from VRChat about its products, services and promotions.")
@@ -686,10 +697,10 @@
                     theme: "dark",
                     sitekey: "85eb5fc7-910f-44cb-b913-f92ac87596bd",
                     onVerify: function(e) {
-                        Ee(!0), je(e)
+                        xe(!0), Se(e)
                     },
-                    onExpire: Ve,
-                    ref: De
+                    onExpire: Me,
+                    ref: qe
                 })), w.createElement("div", {
                     className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
                 }, w.createElement(y.zx, {
@@ -700,12 +711,12 @@
                     id: "registration-form-submit",
                     name: "registration-form-submit",
                     loading: A,
-                    disabled: !Ze
-                }, "Create Account")), Me && w.createElement("p", {
+                    disabled: !Te
+                }, "Create Account")), Je && !(0, E._E)(z) && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Account creation error",
                     className: "tw-text-error-message-red tw-text-xs tw-my-1"
-                }, Me), w.createElement("div", {
+                }, Je), w.createElement("div", {
                     className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
                 }, w.createElement("p", {
                     className: "tw-text-base tw-ml-1"
@@ -713,7 +724,7 @@
                     href: "/home/login"
                 }, "Log in")))))))
             };
-            var P = (0, o.Z)("select", {
+            var R = (0, o.Z)("select", {
                 target: "emwozn20"
             })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", (function(e) {
                 return e.isError ? "#A8342E" : "#053c48"
@@ -732,4 +743,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a4fd1e2424438d84e9087b123f0fc7d5be299e4c29529e8ef95a7d923c446720.js.map
+//# sourceMappingURL=da0d5d488a999e8587920ffe3e350e27ee69b37481416cc99f29292cc22c2844.js.map

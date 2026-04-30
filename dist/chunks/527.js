@@ -3,7 +3,7 @@
     [527], {
         46686: (e, t, r) => {
             r.d(t, {
-                Z: () => re
+                Z: () => ne
             });
             var n = r(71002),
                 a = r(15861),
@@ -525,18 +525,19 @@
                     onNext: me
                 }))
             };
-            var H = r(41255);
+            var H = r(90068),
+                K = r(41255);
 
-            function K(e, t) {
+            function Q(e, t) {
                 var r = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                 if (!r) {
                     if (Array.isArray(e) || (r = function(e, t) {
                             if (!e) return;
-                            if ("string" == typeof e) return Q(e, t);
+                            if ("string" == typeof e) return ee(e, t);
                             var r = Object.prototype.toString.call(e).slice(8, -1);
                             "Object" === r && e.constructor && (r = e.constructor.name);
                             if ("Map" === r || "Set" === r) return Array.from(e);
-                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return Q(e, t)
+                            if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return ee(e, t)
                         }(e)) || t && e && "number" == typeof e.length) {
                         r && (e = r);
                         var n = 0,
@@ -582,12 +583,12 @@
                 }
             }
 
-            function Q(e, t) {
+            function ee(e, t) {
                 (null == t || t > e.length) && (t = e.length);
                 for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
                 return n
             }
-            var ee = function(e) {
+            var te = function(e) {
                     return new Promise((function(t, r) {
                         if (!(0, p.sY)(e)) return r("Tried to extract GIF frames from non-GIF file!");
                         var n = "".substring("".lastIndexOf("/") + 1);
@@ -601,7 +602,7 @@
                             if (void 0 === e) throw new Error("GIF explosion gave undefined output?");
                             if (0 === e.length) throw new Error("GIF explosion gave no output frames.");
                             var r, n = [],
-                                a = K(e);
+                                a = Q(e);
                             try {
                                 for (a.s(); !(r = a.n()).done;) {
                                     var i = r.value;
@@ -616,13 +617,13 @@
                         }))
                     }))
                 },
-                te = (0, o.Z)("div", {
+                re = (0, o.Z)("div", {
                     target: "e6g0jp60"
                 })({
                     name: "dm9b0z",
                     styles: "width:100%;min-height:30em;overflow:hidden"
                 });
-            const re = function(e) {
+            const ne = function(e) {
                 var t = e.onClose,
                     r = u.useState(null),
                     o = (0, i.Z)(r, 2),
@@ -632,7 +633,7 @@
                     v = (0, i.Z)(h, 2),
                     x = v[0],
                     b = v[1],
-                    y = (0, H.Yh)(),
+                    y = (0, K.Yh)(),
                     E = (0, i.Z)(y, 2),
                     k = E[0],
                     Z = E[1],
@@ -640,7 +641,8 @@
                     C = Z.isSuccess,
                     I = (Z.isError, Z.error),
                     P = (0, m.I0)(),
-                    N = function(e) {
+                    N = (0, H.P2)(),
+                    _ = function(e) {
                         var t = e.title,
                             r = e.message,
                             n = e.color;
@@ -652,7 +654,7 @@
                             timeout: 5e3
                         }))
                     },
-                    _ = function() {
+                    B = function() {
                         var e = (0, a.Z)(c().mark((function e(t) {
                             var r, n, a, i, o;
                             return c().wrap((function(e) {
@@ -664,7 +666,7 @@
                                             e.next = 10;
                                             break
                                         }
-                                        return N({
+                                        return _({
                                             title: "Image Uploader",
                                             message: "The image you are uploading is rather small.\nKeep it above 64x64.",
                                             color: "danger"
@@ -674,7 +676,7 @@
                                             e.next = 13;
                                             break
                                         }
-                                        return N({
+                                        return _({
                                             title: "Image Error",
                                             message: "The image you are uploading is too big!\nKeep it to under 1024x1024.",
                                             color: "danger"
@@ -684,7 +686,7 @@
                                             e.next = 16;
                                             break
                                         }
-                                        return N({
+                                        return _({
                                             title: "Invalid Size",
                                             message: "Pre-made spritesheets must be exactly 1024x1024",
                                             color: "danger"
@@ -701,14 +703,14 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    B = function(e) {
+                    F = function(e) {
                         var t = e.value,
                             r = e.min,
                             n = e.max,
                             a = e.defaultValue;
                         return t > n || t < r ? a : t
                     },
-                    F = function(e) {
+                    j = function(e) {
                         var t = e.file.name,
                             r = {
                                 frameCount: null,
@@ -716,19 +718,19 @@
                             },
                             n = t.match(/_(\d{1,2})frame/),
                             a = t.match(/_(\d{1,2})fps/);
-                        return null !== n && (r.frameCount = B({
+                        return null !== n && (r.frameCount = F({
                             value: parseInt(n[1]),
                             min: 1,
                             max: 64,
                             defaultValue: 4
-                        })), null !== a && (r.frameRate = B({
+                        })), null !== a && (r.frameRate = F({
                             value: parseInt(a[1]),
                             min: 1,
                             max: 64,
                             defaultValue: 15
                         })), r
                     },
-                    j = function() {
+                    U = function() {
                         var e = (0, a.Z)(c().mark((function e(r) {
                             var n, a, i;
                             return c().wrap((function(e) {
@@ -741,13 +743,13 @@
                                             e.next = 4;
                                             break
                                         }
-                                        return e.abrupt("return", N({
+                                        return e.abrupt("return", _({
                                             title: "Image Error",
                                             message: "Please select an allowed image type!",
                                             color: "danger"
                                         }));
                                     case 4:
-                                        return e.next = 6, _({
+                                        return e.next = 6, B({
                                             file: n
                                         });
                                     case 6:
@@ -761,17 +763,17 @@
                                             e.next = 13;
                                             break
                                         }
-                                        return e.next = 12, ee(n);
+                                        return e.next = 12, te(n);
                                     case 12:
                                         a = e.sent;
                                     case 13:
-                                        i = F({
+                                        i = j({
                                             file: n
                                         }), f(u.createElement(W, {
                                             isPremadeSpriteSheet: x,
                                             frames: a,
                                             defaultParameters: i,
-                                            onCompleted: U,
+                                            onCompleted: z,
                                             onCancel: t,
                                             onBack: function() {
                                                 return f(null)
@@ -787,7 +789,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    U = function(e) {
+                    z = function(e) {
                         var t = e.image,
                             r = e.frameCount,
                             n = void 0 === r ? 1 : r,
@@ -806,26 +808,29 @@
                         })
                     };
                 return u.useEffect((function() {
-                    if (C) N({
+                    if (C) _({
                         title: "Upload Successful!",
                         message: "Your emoji was successfully uploaded",
                         color: "success"
                     }), t();
                     else if (void 0 !== I) {
+                        if (N({
+                                error: I
+                            })) return void t();
                         var e = I;
-                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), N({
+                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), _({
                             title: "Upload Failed!",
                             message: "Reason: ".concat(e),
                             color: "danger"
                         }), t()
                     }
-                }), [C, I]), u.createElement(te, {
+                }), [C, I]), u.createElement(re, {
                     className: "tw-flex tw-flex-col"
                 }, S && u.createElement(g.Z, {
                     name: "emoji"
                 }), !S && (s || u.createElement(d.Z, {
                     fileSelectedCallback: function(e) {
-                        return j(e)
+                        return U(e)
                     },
                     isForAnimatedEmoji: !0,
                     setIsPremadeSpriteSheet: b,
@@ -837,7 +842,7 @@
         },
         95024: (e, t, r) => {
             r.d(t, {
-                Z: () => x
+                Z: () => b
             });
             var n = r(71002),
                 a = r(15861),
@@ -849,36 +854,38 @@
                 u = r(67294),
                 m = r(32981),
                 f = r(64258),
-                d = r(60933),
-                p = r(22497),
-                w = r(73423),
-                g = r(39191),
-                h = r(41255);
-            var v = (0, o.Z)("div", {
+                d = r(90068),
+                p = r(60933),
+                w = r(22497),
+                g = r(73423),
+                h = r(39191),
+                v = r(41255);
+            var x = (0, o.Z)("div", {
                 target: "e1et7e2k0"
             })({
                 name: "dm9b0z",
                 styles: "width:100%;min-height:30em;overflow:hidden"
             });
-            const x = function(e) {
+            const b = function(e) {
                 var t = e.onClose,
                     r = u.useState(null),
                     o = (0, i.Z)(r, 2),
                     s = o[0],
-                    x = o[1],
-                    b = (0, h.Yh)(),
-                    y = (0, i.Z)(b, 2),
-                    E = y[0],
-                    k = y[1],
-                    Z = k.isLoading,
-                    S = k.isSuccess,
-                    C = (k.isError, k.error),
-                    I = (0, m.I0)(),
-                    P = function(e) {
+                    b = o[1],
+                    y = (0, v.Yh)(),
+                    E = (0, i.Z)(y, 2),
+                    k = E[0],
+                    Z = E[1],
+                    S = Z.isLoading,
+                    C = Z.isSuccess,
+                    I = (Z.isError, Z.error),
+                    P = (0, m.I0)(),
+                    N = (0, d.P2)(),
+                    _ = function(e) {
                         var t = e.title,
                             r = e.message,
                             n = e.color;
-                        I((0, f.d)({
+                        P((0, f.d)({
                             title: t,
                             icon: l.Vm,
                             message: r,
@@ -886,26 +893,26 @@
                             timeout: 5e3
                         }))
                     },
-                    N = function() {
+                    B = function() {
                         var e = (0, a.Z)(c().mark((function e(r) {
                             var n;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (n = r.file, (0, d._0)({
+                                        if (n = r.file, (0, p._0)({
                                                 file: n,
                                                 includeGif: !1
                                             })) {
                                             e.next = 4;
                                             break
                                         }
-                                        return e.abrupt("return", P({
+                                        return e.abrupt("return", _({
                                             title: "Image Error",
                                             message: "Please select an allowed image type!",
                                             color: "danger"
                                         }));
                                     case 4:
-                                        return e.next = 6, _({
+                                        return e.next = 6, F({
                                             file: n
                                         });
                                     case 6:
@@ -915,12 +922,12 @@
                                         }
                                         return e.abrupt("return");
                                     case 8:
-                                        x(u.createElement(g.Z, {
+                                        b(u.createElement(h.Z, {
                                             baseImage: n,
-                                            onCompleted: B,
+                                            onCompleted: j,
                                             onCancel: t,
                                             onBack: function() {
-                                                return x(null)
+                                                return b(null)
                                             },
                                             maxImageDimension: 1024
                                         }));
@@ -934,19 +941,19 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    _ = function() {
+                    F = function() {
                         var e = (0, a.Z)(c().mark((function e(t) {
                             var r, n;
                             return c().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return r = t.file, e.next = 3, (0, d.uG)(r);
+                                        return r = t.file, e.next = 3, (0, p.uG)(r);
                                     case 3:
                                         if (n = e.sent, !(n.width < 64 || n.height < 64)) {
                                             e.next = 8;
                                             break
                                         }
-                                        return P({
+                                        return _({
                                             title: "Image Uploader",
                                             message: "The image you are uploading is rather small.\nKeep it above 64x64.",
                                             color: "danger"
@@ -963,37 +970,40 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    B = function(e) {
+                    j = function(e) {
                         var t = e.image,
                             r = e.mask,
                             n = void 0 === r ? "square" : r;
-                        console.log("image", t), E({
+                        console.log("image", t), k({
                             file: t.file || t,
                             tag: "sticker",
                             maskTag: n
                         })
                     };
                 return u.useEffect((function() {
-                    if (S) P({
+                    if (C) _({
                         title: "Upload Successful!",
                         message: "Your sticker was successfully uploaded",
                         color: "success"
                     }), t();
-                    else if (void 0 !== C) {
-                        var e = C;
-                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), P({
+                    else if (void 0 !== I) {
+                        if (N({
+                                error: I
+                            })) return void t();
+                        var e = I;
+                        "object" === (0, n.Z)(e) && (e = e.message || JSON.stringify(e)), _({
                             title: "Upload Failed!",
                             message: "Reason: ".concat(e),
                             color: "danger"
                         }), t()
                     }
-                }), [S, C]), u.createElement(v, {
+                }), [C, I]), u.createElement(x, {
                     className: "tw-flex tw-flex-col"
-                }, Z && u.createElement(w.Z, {
+                }, S && u.createElement(g.Z, {
                     name: "sticker"
-                }), !Z && (s || u.createElement(p.Z, {
+                }), !S && (s || u.createElement(w.Z, {
                     fileSelectedCallback: function(e) {
-                        return N(e)
+                        return B(e)
                     },
                     hintText: "Stickers should be a square image, at least 64x64. Images larger than 1024x1024 will be resized automatically.",
                     hintTextMuted: u.createElement(u.Fragment, null, "For best results, use a power-of-two size (64, 128, 256, 512, or 1024 pixels).", u.createElement("br", null), "You can also create stickers inside VRChat using the camera!")
@@ -1685,4 +1695,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ccb0988a438483d60b0f36d20f8974c9173ada12642d7d04693e1c84e822174d.js.map
+//# sourceMappingURL=b19d38ca18c10b18173354df863db5e156b29d01616c731bc36ec2b708630eef.js.map

@@ -670,7 +670,7 @@
                     },
                     Ye = function(e) {
                         Qe({
-                            title: "subscription" === e.listingType ? "Edit Subscrtiption" : "Edit Listing",
+                            title: "subscription" === e.listingType ? "Edit Subscription" : "Edit Listing",
                             data: e,
                             isEditing: !0,
                             listingType: e.listingType
@@ -1010,4 +1010,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a24c0c98385b31ad551851456b66c588fab10b460761e9c27f4ca29796057650.js.map
+//# sourceMappingURL=7953e29ef010b3e65e7e9d0556e2021d9f8a08b28ad5b3c592d0c0f718f48ec1.js.map

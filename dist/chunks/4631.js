@@ -147,10 +147,10 @@
                     j = (0, o.Z)(S, 2),
                     M = j[0],
                     A = j[1],
-                    T = m.useState(""),
-                    P = (0, o.Z)(T, 2),
-                    R = P[0],
-                    L = P[1],
+                    P = m.useState(""),
+                    T = (0, o.Z)(P, 2),
+                    R = T[0],
+                    L = T[1],
                     U = m.useState(""),
                     q = (0, o.Z)(U, 2),
                     z = q[0],
@@ -418,7 +418,7 @@
         },
         94631: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => _l
+                default: () => $l
             });
             var r = n(15861),
                 l = n(54546),
@@ -450,7 +450,7 @@
                 j = n(79655),
                 M = n(69699),
                 A = n(23138),
-                T = function(e) {
+                P = function(e) {
                     var t, n = e.group,
                         r = e.groupMember,
                         l = null === (t = n.roles) || void 0 === t ? void 0 : t.find((function(e) {
@@ -458,7 +458,7 @@
                         }));
                     return null != l && null != r && r.roleIds.includes(l.id)
                 },
-                P = function(e) {
+                T = function(e) {
                     var t, n, r, l = e.groupMember,
                         a = e.permission;
                     return (null == l || null === (t = l.permissions) || void 0 === t ? void 0 : t.includes("*")) || null !== (n = null == l || null === (r = l.permissions) || void 0 === r ? void 0 : r.includes(a)) && void 0 !== n && n
@@ -603,10 +603,10 @@
                     j = null == o ? void 0 : o.id,
                     M = null == o ? void 0 : o.ownerId,
                     A = null == o ? void 0 : o.myMember,
-                    T = (0, pe.Pv)(),
-                    P = (0, l.Z)(T, 2),
-                    R = P[0],
-                    L = P[1],
+                    P = (0, pe.Pv)(),
+                    T = (0, l.Z)(P, 2),
+                    R = T[0],
+                    L = T[1],
                     q = L.data,
                     z = L.error,
                     G = L.isLoading,
@@ -871,7 +871,7 @@
                     target: "_blank"
                 }, "account settings"), ")"), C.createElement("li", null, "The target member has an active VRC Plus subscription"), C.createElement("li", null, "The target member can still own more groups ", "(", "each user can own up to 5 groups", ")"), C.createElement("li", null, "The group is not monetized")))))
             };
-            var Te = function(e) {
+            var Pe = function(e) {
                 var t, n, r = e.group,
                     a = e.onButtonClick,
                     o = e.isLoading,
@@ -958,12 +958,12 @@
                     icon: Me.faMagnifyingGlass
                 }), "Search Group Members"))))))
             };
-            Te.propTypes = {
+            Pe.propTypes = {
                 group: fe().object.isRequired,
                 onButtonClick: fe().func.isRequired,
                 isLoading: fe().bool.isRequired
             };
-            const Pe = Te;
+            const Te = Pe;
             var Re, Le = "hasVerifiedEmail",
                 Ue = "targetCanOwnMoreGroups",
                 qe = "targetIsGroupMember",
@@ -1395,8 +1395,8 @@
                     j = (0, l.Z)(S, 2),
                     M = j[0],
                     A = j[1],
-                    T = A.data,
-                    P = A.isFetching,
+                    P = A.data,
+                    T = A.isFetching,
                     R = A.isError,
                     L = (0, pe.rw)({
                         groupId: n.id
@@ -1433,8 +1433,8 @@
                         eventTypes: I ? (0, U.Z)(I) : []
                     })
                 }), [o, u, q, I, x]), C.useEffect((function() {
-                    null != T && T.totalCount && f(T.totalCount)
-                }), [T]);
+                    null != P && P.totalCount && f(P.totalCount)
+                }), [P]);
                 var D = C.createElement(dt, null, C.createElement(pt, {
                     className: "d-flex flex-row align-items-center justify-content-center",
                     onClick: function() {
@@ -1482,14 +1482,14 @@
                     className: "mb-2"
                 })), D, C.createElement("div", {
                     className: "audit-log"
-                }, (null !== (t = null == T ? void 0 : T.results) && void 0 !== t ? t : Array(o).fill({})).map((function(e, t) {
+                }, (null !== (t = null == P ? void 0 : P.results) && void 0 !== t ? t : Array(o).fill({})).map((function(e, t) {
                     var n;
                     return C.createElement(ot, {
                         key: null !== (n = null == e ? void 0 : e.id) && void 0 !== n ? n : "log-".concat(t),
                         log: e,
                         n: o,
                         offset: u,
-                        isLoading: P
+                        isLoading: T
                     })
                 }))), D))
             };
@@ -1555,8 +1555,8 @@
                     j = Z[1],
                     M = C.useState(!1),
                     A = (0, l.Z)(M, 2),
-                    T = A[0],
-                    P = A[1],
+                    P = A[0],
+                    T = A[1],
                     R = (0, pe.r5)({
                         groupId: i
                     }, {
@@ -1608,7 +1608,7 @@
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return P(!1), e.next = 3, se({
+                                        return T(!1), e.next = 3, se({
                                             groupId: i,
                                             userId: m.id
                                         });
@@ -1705,16 +1705,16 @@
                     confirmCallback: fe,
                     cancelText: "Never Mind!",
                     cancelCallback: function() {
-                        P(!1)
+                        T(!1)
                     },
-                    isOpen: T
+                    isOpen: P
                 }), J ? C.createElement(re.qX, {
                     type: "warning",
                     title: "You own this group!"
                 }, "You can't leave your own group, but you can delete the group over in General settings.") : C.createElement("p", null, "This group not your thing anymore? No problem."), C.createElement(re.zx, {
                     warning: !0,
                     onClick: function() {
-                        P(!0)
+                        T(!0)
                     },
                     loading: me,
                     disabled: J || me
@@ -1725,13 +1725,14 @@
             var xt = n(41145),
                 kt = n(62228),
                 Zt = n(609),
-                Nt = n(16869),
-                It = n(67978),
-                Ct = n(81780),
-                Ot = n(33073),
-                St = n(95896);
+                Nt = n(90068),
+                It = n(16869),
+                Ct = n(67978),
+                Ot = n(81780),
+                St = n(33073),
+                jt = n(95896);
 
-            function jt(e, t) {
+            function Mt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1742,18 +1743,18 @@
                 return n
             }
 
-            function Mt(e) {
+            function At(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? jt(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Mt(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : jt(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Mt(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var At = {
+            var Pt = {
                 id: "new",
                 name: "",
                 description: "",
@@ -1773,10 +1774,10 @@
                     b = (0, de.pc)(),
                     y = C.useMemo((function() {
                         var e;
-                        return "new" === v.roleId ? Mt(Mt({}, At), {}, {
+                        return "new" === v.roleId ? At(At({}, Pt), {}, {
                             requiresPurchase: "paid" === v.newRoleType
                         }, "paid" === v.newRoleType && {
-                            productPriceTokens: St.nk,
+                            productPriceTokens: jt.nk,
                             productDuration: 1,
                             productDurationType: "months"
                         }) : null == u || null === (e = u.roles) || void 0 === e ? void 0 : e.find((function(e) {
@@ -1787,8 +1788,8 @@
                     Z = (0, l.Z)(k, 2),
                     I = Z[0],
                     A = Z[1],
-                    T = C.useState(null),
-                    R = (0, l.Z)(T, 2),
+                    P = C.useState(null),
+                    R = (0, l.Z)(P, 2),
                     z = R[0],
                     G = R[1],
                     D = C.useState({}),
@@ -1824,9 +1825,9 @@
                     je = Se[0],
                     Me = Se[1],
                     Ae = C.useState(!1),
-                    Te = (0, l.Z)(Ae, 2),
-                    Pe = Te[0],
-                    Re = Te[1],
+                    Pe = (0, l.Z)(Ae, 2),
+                    Te = Pe[0],
+                    Re = Pe[1],
                     Le = C.useState(null),
                     Ue = (0, l.Z)(Le, 2),
                     qe = Ue[0],
@@ -1865,16 +1866,21 @@
                     ft = gt.isLoading,
                     vt = gt.isError,
                     ht = gt.error,
-                    wt = (0, It.lZ)({
+                    wt = (0, Nt.P2)(),
+                    yt = C.useState(!1),
+                    Mt = (0, l.Z)(yt, 2),
+                    Tt = Mt[0],
+                    Rt = Mt[1],
+                    Lt = (0, Ct.lZ)({
                         productId: null == y ? void 0 : y.productId
                     }, {
                         skip: !(null != y && y.productId),
                         refetchOnMountOrArgChange: !0
                     }),
-                    yt = wt.data,
-                    jt = wt.isFetching,
-                    Tt = wt.isUninitialized,
-                    Pt = (0, Nt.Ul)({
+                    Ut = Lt.data,
+                    qt = Lt.isFetching,
+                    zt = Lt.isUninitialized,
+                    Gt = (0, It.Ul)({
                         userId: null == u ? void 0 : u.ownerId,
                         groupId: null == u ? void 0 : u.id,
                         active: !0
@@ -1882,67 +1888,67 @@
                         skip: !u || !(null != y && y.productId),
                         refetchOnMountOrArgChange: !0
                     }),
-                    Rt = Pt.data,
-                    Lt = void 0 === Rt ? [] : Rt,
-                    Ut = Pt.isFetching,
-                    qt = Pt.isUninitialized,
-                    zt = C.useMemo((function() {
+                    Dt = Gt.data,
+                    Ft = void 0 === Dt ? [] : Dt,
+                    Xt = Gt.isFetching,
+                    _t = Gt.isUninitialized,
+                    $t = C.useMemo((function() {
                         var e;
-                        return (null === (e = qt ? [] : Lt) || void 0 === e ? void 0 : e.filter((function(e) {
+                        return (null === (e = _t ? [] : Ft) || void 0 === e ? void 0 : e.filter((function(e) {
                             var t, n = e.id,
                                 r = e.active,
                                 l = e.archived;
-                            return r && !l && !Tt && (null == yt || null === (t = yt.parentListings) || void 0 === t ? void 0 : t.includes(n))
+                            return r && !l && !zt && (null == Ut || null === (t = Ut.parentListings) || void 0 === t ? void 0 : t.includes(n))
                         }))) || []
-                    }), [yt, Tt, Lt, qt]),
-                    Gt = Qe || lt || ft || Je || jt || Ut,
-                    Dt = (null == u ? void 0 : u.joinState) === bt.wN.OPEN ? "Your group is already set to Free Join, so enabling this option won’t have any effect. Subscribers will still join automatically." : "When enabled, anyone can purchase this role and join the group, regardless of the group’s join rules. This option overrides standard join settings.";
+                    }), [Ut, zt, Ft, _t]),
+                    Jt = Qe || lt || ft || Je || qt || Xt,
+                    Bt = (null == u ? void 0 : u.joinState) === bt.wN.OPEN ? "Your group is already set to Free Join, so enabling this option won’t have any effect. Subscribers will still join automatically." : "When enabled, anyone can purchase this role and join the group, regardless of the group’s join rules. This option overrides standard join settings.";
                 (0, C.useEffect)((function() {
-                    if (yt) {
-                        if (Ce(yt.groupAccessRemove), (null == u ? void 0 : u.joinState) === bt.wN.OPEN) return ke(!0), void G(Mt(Mt({}, z), {}, {
+                    if (Ut) {
+                        if (Ce(Ut.groupAccessRemove), (null == u ? void 0 : u.joinState) === bt.wN.OPEN) return ke(!0), void G(At(At({}, z), {}, {
                             groupAccess: !0
                         }));
-                        ke(yt.groupAccess)
+                        ke(Ut.groupAccess)
                     }
-                }), [yt]);
-                var Ft = function() {
+                }), [Ut]);
+                var Vt = function() {
                     var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                         t = {};
-                    "new" === (null == y ? void 0 : y.id) && (t = Mt({}, y)), e || (ie(null == y ? void 0 : y.requiresTwoFactor), ge(null == y ? void 0 : y.isAddedOnJoin), he(null == y ? void 0 : y.isSelfAssignable), Me((null == y ? void 0 : y.permissions) || [])), d(0), A(t), G(null)
+                    "new" === (null == y ? void 0 : y.id) && (t = At({}, y)), e || (ie(null == y ? void 0 : y.requiresTwoFactor), ge(null == y ? void 0 : y.isAddedOnJoin), he(null == y ? void 0 : y.isSelfAssignable), Me((null == y ? void 0 : y.permissions) || [])), d(0), A(t), G(null)
                 };
                 (0, C.useEffect)((function() {
-                    Ft(), K(null != y && y.defaultRole ? "permissions" : "general")
+                    Vt(), K(null != y && y.defaultRole ? "permissions" : "general")
                 }), [u, v]), (0, C.useEffect)((function() {
-                    h.current ? h.current = !1 : ((null == y ? void 0 : y.requiresTwoFactor) !== oe && A(Mt(Mt({}, I), {}, {
+                    h.current ? h.current = !1 : ((null == y ? void 0 : y.requiresTwoFactor) !== oe && A(At(At({}, I), {}, {
                         requiresTwoFactor: oe
-                    })), (null == y ? void 0 : y.isAddedOnJoin) !== me && A(Mt(Mt({}, I), {}, {
+                    })), (null == y ? void 0 : y.isAddedOnJoin) !== me && A(At(At({}, I), {}, {
                         isAddedOnJoin: me
-                    })), (null == y ? void 0 : y.isSelfAssignable) !== ve && A(Mt(Mt({}, I), {}, {
+                    })), (null == y ? void 0 : y.isSelfAssignable) !== ve && A(At(At({}, I), {}, {
                         isSelfAssignable: ve
-                    })), (null == y ? void 0 : y.permissions) !== je && A(Mt(Mt({}, I), {}, {
+                    })), (null == y ? void 0 : y.permissions) !== je && A(At(At({}, I), {}, {
                         permissions: je
                     })))
                 }), [oe, me, ve, je]), (0, C.useEffect)((function() {
-                    0 !== p && A(Mt(Mt({}, I), {}, {
+                    0 !== p && A(At(At({}, I), {}, {
                         order: p + y.order
                     }))
                 }), [p]);
-                var Xt = (0, de._b)($e),
-                    _t = C.useMemo((function() {
+                var Wt = (0, de._b)($e),
+                    Yt = C.useMemo((function() {
                         return (0, xe.Ps)({
                             permissionName: qe,
-                            permissionsMap: Xt
+                            permissionsMap: Wt
                         })
-                    }), [qe, Xt]);
+                    }), [qe, Wt]);
                 if ((0, C.useEffect)((function() {
-                        if (je.length > 0 && Xt && Object.keys(Xt).length > 0) {
+                        if (je.length > 0 && Wt && Object.keys(Wt).length > 0) {
                             var e = je.filter((function(e) {
-                                return !e.includes("*") && !Xt[e]
+                                return !e.includes("*") && !Wt[e]
                             }));
                             e.length > 0 && Xe(e)
                         }
-                    }), [je, Xt]), !y || Je || Be) return null;
-                var $t = function(e) {
+                    }), [je, Wt]), !y || Je || Be) return null;
+                var Ht = function(e) {
                         var t, n = null !== (t = e.target.name) && void 0 !== t ? t : e.name,
                             r = function(e) {
                                 var t;
@@ -1955,56 +1961,77 @@
                                         return e.value
                                 }
                             }(e.target);
-                        A(Mt(Mt({}, I), {}, (0, L.Z)({}, n, r))), B(Mt(Mt({}, X), {}, (0, L.Z)({}, n, e.target.checkValidity())))
+                        A(At(At({}, I), {}, (0, L.Z)({}, n, r))), B(At(At({}, X), {}, (0, L.Z)({}, n, e.target.checkValidity())))
                     },
-                    Jt = function() {
+                    Qt = function() {
                         var e = (0, r.Z)(N().mark((function e() {
-                            var t, n, r, l, a;
+                            var t, n, r, l;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ("new" !== (t = Mt({}, I)).id) {
-                                            e.next = 8;
+                                        if (Rt(!1), "new" !== (t = At({}, I)).id) {
+                                            e.next = 15;
                                             break
                                         }
-                                        return e.next = 4, Ye({
+                                        return e.prev = 3, e.next = 6, Ye({
                                             groupId: u.id,
                                             data: t
                                         }).unwrap();
-                                    case 4:
+                                    case 6:
                                         !(n = e.sent).error && null != n && n.id && E("../roles/".concat(null == n ? void 0 : n.id)), e.next = 13;
                                         break;
-                                    case 8:
+                                    case 10:
+                                        e.prev = 10, e.t0 = e.catch(3), wt({
+                                            error: e.t0
+                                        }) && Rt(!0);
+                                    case 13:
+                                        e.next = 28;
+                                        break;
+                                    case 15:
                                         if (!(Object.keys(I).length > 0)) {
-                                            e.next = 13;
+                                            e.next = 28;
                                             break
                                         }
-                                        return e.next = 11, st({
+                                        return e.prev = 16, e.next = 19, st({
                                             groupId: u.id,
                                             roleId: y.id,
-                                            productId: (null == yt ? void 0 : yt.id) || null,
+                                            productId: (null == Ut ? void 0 : Ut.id) || null,
                                             productData: z,
                                             roleData: t
-                                        });
-                                    case 11:
-                                        (r = e.sent).error ? f((0, ee.d)({
+                                        }).unwrap();
+                                    case 19:
+                                        Vt(!0), e.next = 28;
+                                        break;
+                                    case 22:
+                                        if (e.prev = 22, e.t1 = e.catch(16), !wt({
+                                                error: e.t1
+                                            })) {
+                                            e.next = 27;
+                                            break
+                                        }
+                                        return Rt(!0), e.abrupt("return");
+                                    case 27:
+                                        f((0, ee.d)({
                                             title: "Failed to update role",
                                             icon: x.eH,
-                                            message: null !== (l = null === (a = r.error.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== l ? l : "Something went wrong",
+                                            message: null !== (r = null === (l = e.t1.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== r ? r : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
-                                        })) : Ft(!0);
-                                    case 13:
+                                        }));
+                                    case 28:
                                     case "end":
                                         return e.stop()
                                 }
-                            }), e)
+                            }), e, null, [
+                                [3, 10],
+                                [16, 22]
+                            ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Bt = function() {
+                    Kt = function() {
                         var e = (0, r.Z)(N().mark((function e(t) {
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2045,29 +2072,29 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Vt = 0 === y.order,
-                    Wt = "new" === y.id,
-                    Yt = y.requiresPurchase && !g,
-                    Ht = P({
+                    en = 0 === y.order,
+                    tn = "new" === y.id,
+                    nn = y.requiresPurchase && !g,
+                    rn = T({
                         groupMember: null == u ? void 0 : u.myMember,
                         permission: "group-default-role-manage"
                     }),
-                    Qt = P({
+                    ln = T({
                         groupMember: null == u ? void 0 : u.myMember,
                         permission: "group-roles-assign"
                     }),
-                    Kt = y.defaultRole && !Ht,
-                    en = !y.requiresPurchase && !y.defaultRole && !Vt,
-                    tn = !y.defaultRole && !Vt,
-                    nn = tn && !Wt;
-                return C.createElement("div", null, at && C.createElement(re.qX, {
+                    an = y.defaultRole && !rn,
+                    on = !y.requiresPurchase && !y.defaultRole && !en,
+                    cn = !y.defaultRole && !en,
+                    sn = cn && !tn;
+                return C.createElement("div", null, at && !Tt && C.createElement(re.qX, {
                     title: "Error updating role",
                     type: "error"
-                }, "Failed to update role: ", null == ot || null === (t = ot.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message), Ke && C.createElement(re.qX, {
+                }, "Failed to update role: ", null == ot || null === (t = ot.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message), Ke && !Tt && C.createElement(re.qX, {
                     title: "Error creating role",
                     type: "error"
                 }, "Failed to create role: ", null == et || null === (n = et.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message), C.createElement(M.Z, {
-                    isOpen: Pe
+                    isOpen: Te
                 }, C.createElement(re.oI, {
                     className: "text-center"
                 }, C.createElement("h4", null, "Are you sure?")), C.createElement(re.Ao, null, C.createElement(J.Z, null, vt && C.createElement(re.qX, {
@@ -2078,7 +2105,7 @@
                 }, C.createElement(re.zx, {
                     danger: !0,
                     onClick: function() {
-                        Bt(!0)
+                        Kt(!0)
                     },
                     loading: ft,
                     expand: !0
@@ -2090,18 +2117,18 @@
                     },
                     disabled: ft,
                     expand: !0
-                }, "Cancel")))), null == y ? C.createElement("div", null, C.createElement("p", null, "Pick a role to edit.")) : C.createElement("div", null, Wt ? C.createElement("h6", {
+                }, "Cancel")))), null == y ? C.createElement("div", null, C.createElement("p", null, "Pick a role to edit.")) : C.createElement("div", null, tn ? C.createElement("h6", {
                     className: "text-center"
                 }, "New", y.requiresPurchase && " Paid", " Role") : C.createElement("h6", {
                     className: "text-center"
-                }, Yt ? "Viewing" : "Editing", " - ", y.name), function() {
+                }, nn ? "Viewing" : "Editing", " - ", y.name), function() {
                     var e;
-                    if (null == y || !y.createdAt || !y.requiresPurchase || zt.length) return null;
+                    if (null == y || !y.createdAt || !y.requiresPurchase || $t.length) return null;
                     var t = "activate its associated subscription";
                     return C.createElement(re.qX, {
                         type: "info",
                         title: "No Active Subscriptions"
-                    }, "Before people can buy this role, ", g ? "you'll" : "the group owner will", " need to", " ", g && !Tt && null != yt && null !== (e = yt.parentListings) && void 0 !== e && e.length ? C.createElement(j.rU, {
+                    }, "Before people can buy this role, ", g ? "you'll" : "the group owner will", " need to", " ", g && !zt && null != Ut && null !== (e = Ut.parentListings) && void 0 !== e && e.length ? C.createElement(j.rU, {
                         to: "/home/marketplace/storefront/subscriptions"
                     }, t) : t, " ", "in ", g ? "your" : "their", " Store. ", g ? "You" : "The Group Owner", " can also give the product and listing their own images, descriptions and other details from there.")
                 }(), !y.defaultRole && C.createElement($.Z, null, C.createElement(ce.Z, {
@@ -2120,11 +2147,11 @@
                     onChange: function(e) {
                         K(e)
                     }
-                })), C.createElement(Ct.Z, {
+                })), C.createElement(Ot.Z, {
                     activeTab: Q
-                }, C.createElement(Ot.Z, {
+                }, C.createElement(St.Z, {
                     tabId: "general"
-                }, nn && !Yt && C.createElement(C.Fragment, null, C.createElement($.Z, null, C.createElement("h6", {
+                }, sn && !nn && C.createElement(C.Fragment, null, C.createElement($.Z, null, C.createElement("h6", {
                     className: "text-center"
                 }, "Change role order"), C.createElement("div", {
                     className: "d-flex flex-row justify-content-md-center"
@@ -2154,10 +2181,10 @@
                     type: "text",
                     name: "name",
                     value: null != I.name ? I.name : y.name,
-                    onChange: $t,
+                    onChange: Ht,
                     maxLength: 64,
                     required: !0,
-                    disabled: Yt || y.defaultRole,
+                    disabled: nn || y.defaultRole,
                     placeholder: "Enter Role's Name"
                 }), !1 === X.name && C.createElement(V.Z, null, "Must be between 1 and 64 characters."))), C.createElement($.Z, {
                     className: "mb-3"
@@ -2165,14 +2192,14 @@
                     type: "textarea",
                     name: "description",
                     value: null != I.description ? I.description : y.description,
-                    onChange: $t,
+                    onChange: Ht,
                     maxLength: 256,
-                    disabled: Yt || y.defaultRole,
+                    disabled: nn || y.defaultRole,
                     placeholder: "Enter Role's Description",
                     inputStyle: {
                         height: "100px"
                     }
-                }), !1 === X.description && C.createElement(V.Z, null, "Must be 256 characters or less."))), tn && !y.requiresPurchase && Qt && C.createElement($.Z, {
+                }), !1 === X.description && C.createElement(V.Z, null, "Must be 256 characters or less."))), cn && !y.requiresPurchase && ln && C.createElement($.Z, {
                     className: "my-2"
                 }, C.createElement(ae.Z, {
                     label: "Assign On Join",
@@ -2182,7 +2209,7 @@
                         var t = e.checked;
                         ge(t)
                     }
-                }), C.createElement(W.Z, null, "If enabled, new members will be assigned this role when they join the group. This will not affect existing members.")), en && C.createElement($.Z, {
+                }), C.createElement(W.Z, null, "If enabled, new members will be assigned this role when they join the group. This will not affect existing members.")), on && C.createElement($.Z, {
                     className: "my-2"
                 }, C.createElement(ae.Z, {
                     label: "Self Assignable",
@@ -2210,14 +2237,14 @@
                     defaultChecked: ye,
                     onChangeCallback: function(e) {
                         var t, n, r, l = e.checked;
-                        t = l, n = Mt(Mt({}, I), {}, {
+                        t = l, n = At(At({}, I), {}, {
                             productGroupAccess: t
-                        }), r = Mt(Mt({}, z), {}, {
+                        }), r = At(At({}, z), {}, {
                             groupAccess: t
                         }), t || (n.productGroupAccessRemove = void 0, r.groupAccessRemove = !1, Ce(!1)), ke(t), A(n), G(r)
                     },
                     disabled: (null == u ? void 0 : u.joinState) === bt.wN.OPEN
-                }), C.createElement(W.Z, null, Dt)), (null != I.productGroupAccess ? I.productGroupAccess : ye) && C.createElement($.Z, {
+                }), C.createElement(W.Z, null, Bt)), (null != I.productGroupAccess ? I.productGroupAccess : ye) && C.createElement($.Z, {
                     className: "my-2"
                 }, C.createElement(ae.Z, {
                     label: "Remove Members After Expiration",
@@ -2225,35 +2252,35 @@
                     defaultChecked: null != I.productGroupAccessRemove ? I.productGroupAccessRemove : Ie,
                     onChangeCallback: function(e) {
                         var t, n = e.checked;
-                        Ce(t = n), A(Mt(Mt({}, I), {}, {
+                        Ce(t = n), A(At(At({}, I), {}, {
                             productGroupAccessRemove: t
-                        })), G(Mt(Mt({}, z), {}, {
+                        })), G(At(At({}, z), {}, {
                             groupAccessRemove: t
                         }))
                     }
-                }), C.createElement(W.Z, null, "If enabled, group members with this role are removed from the group entirely when their subscription ends. Note that this will remove any member whose subscription ends, whether they bought their way in or not."))), y.requiresPurchase && Wt && C.createElement($.Z, null, C.createElement(_.Z, null, C.createElement(V.Z, {
+                }), C.createElement(W.Z, null, "If enabled, group members with this role are removed from the group entirely when their subscription ends. Note that this will remove any member whose subscription ends, whether they bought their way in or not."))), y.requiresPurchase && tn && C.createElement($.Z, null, C.createElement(_.Z, null, C.createElement(V.Z, {
                     htmlFor: "productPriceTokens"
                 }, "Credits", "forevers" === y.productDurationType ? "" : " per ".concat(1 === y.productDuration ? y.productDurationType.replace(/s$/, "") : "".concat(y.productDuration, " ").concat(y.productDurationType)))), C.createElement(_.Z, null, C.createElement(re.II, {
                     type: "number",
                     name: "productPriceTokens",
                     value: null != I.productPriceTokens ? I.productPriceTokens : y.productPriceTokens,
-                    onChange: $t,
+                    onChange: Ht,
                     required: !0,
                     step: "1",
-                    min: St.nk,
-                    max: St.A1
-                }), !1 === X.productPriceTokens && C.createElement(V.Z, null, "Must be a whole number between ", C.createElement(re.b5, null), St.nk.toLocaleString(), " and ", C.createElement(re.b5, null), St.A1.toLocaleString(), "."))), y.productId && C.createElement("p", null, C.createElement("small", null, g ? "You" : "The Group Owner", " can manage details and subscription behaviour of this role's", " ", C.createElement(j.rU, {
+                    min: jt.nk,
+                    max: jt.A1
+                }), !1 === X.productPriceTokens && C.createElement(V.Z, null, "Must be a whole number between ", C.createElement(re.b5, null), jt.nk.toLocaleString(), " and ", C.createElement(re.b5, null), jt.A1.toLocaleString(), "."))), y.productId && C.createElement("p", null, C.createElement("small", null, g ? "You" : "The Group Owner", " can manage details and subscription behaviour of this role's", " ", C.createElement(j.rU, {
                     to: "/home/marketplace/storefront/products#".concat(y.productId)
-                }, "associated product"), !Tt && null != yt && null !== (i = yt.parentListings) && void 0 !== i && i.length ? C.createElement(C.Fragment, null, ", and the details, price and availability of the product's", " ", C.createElement(j.rU, {
-                    to: "/home/marketplace/storefront/listings#".concat(yt.parentListings[0])
-                }, "associated listing"), " ") : " ", g ? "in your Store" : "in their Store", "."))), C.createElement(Ot.Z, {
+                }, "associated product"), !zt && null != Ut && null !== (i = Ut.parentListings) && void 0 !== i && i.length ? C.createElement(C.Fragment, null, ", and the details, price and availability of the product's", " ", C.createElement(j.rU, {
+                    to: "/home/marketplace/storefront/listings#".concat(Ut.parentListings[0])
+                }, "associated listing"), " ") : " ", g ? "in your Store" : "in their Store", "."))), C.createElement(St.Z, {
                     tabId: "permissions"
                 }, Be && C.createElement(re.qX, {
                     title: "Error",
                     type: "error"
-                }, "There was an error loading permissions."), (null == y ? void 0 : y.defaultRole) && C.createElement(C.Fragment, null, C.createElement("p", null, y.description), C.createElement("hr", null)), Vt || Kt ? C.createElement("p", null, "You can't edit the ", Vt ? "Group Owner" : "default", " role.", " ", Vt ? "It must always have all" : "You lack the required", " permissions.") : y.requiresPurchase && !g ? C.createElement("p", null, "You can't edit a paid role if you are not the group owner.") : C.createElement("div", null, $e.map((function(e) {
+                }, "There was an error loading permissions."), (null == y ? void 0 : y.defaultRole) && C.createElement(C.Fragment, null, C.createElement("p", null, y.description), C.createElement("hr", null)), en || an ? C.createElement("p", null, "You can't edit the ", en ? "Group Owner" : "default", " role.", " ", en ? "It must always have all" : "You lack the required", " permissions.") : y.requiresPurchase && !g ? C.createElement("p", null, "You can't edit a paid role if you are not the group owner.") : C.createElement("div", null, $e.map((function(e) {
                     var t = e.name,
-                        n = Xt[t],
+                        n = Wt[t],
                         r = function(e) {
                             var t = e.permission,
                                 n = e.role;
@@ -2277,11 +2304,11 @@
                                 if (t) {
                                     var r = (0, xe.QZ)({
                                         permissionName: e,
-                                        permissionsMap: Xt
+                                        permissionsMap: Wt
                                     });
                                     return Me([].concat((0, U.Z)(je), [e], (0, U.Z)(r)))
                                 }
-                                var l = Xt[e];
+                                var l = Wt[e];
                                 if (null !== (n = l.computedDependedOnBy) && void 0 !== n && n.size && je.some((function(e) {
                                         return l.computedDependedOnBy.has(e)
                                     }))) return ze(e);
@@ -2291,16 +2318,16 @@
                             }(n.name, t)
                         }
                     }), (n.help || n.dependsOn) && C.createElement(W.Z, null, n.help, n.help && n.dependsOn && " ", n.dependsOn && C.createElement(C.Fragment, null, "Requires ", (0, U.Z)(n.dependsOn).map((function(e) {
-                        return "“".concat(Xt[e].displayName || e, "”")
+                        return "“".concat(Wt[e].displayName || e, "”")
                     })).join(", "), "."), r && C.createElement("div", null, r)))
-                }))))), !Kt && (Yt ? C.createElement("p", null, C.createElement("small", null, "Only the Group Owner can edit paid roles.")) : C.createElement("div", {
-                    className: "d-flex flex-row align-content-center mt-1\n                  ".concat(Wt || Vt || y.defaultRole ? "justify-content-end" : "justify-content-between")
-                }, !Wt && !Vt && !y.defaultRole && C.createElement(re.zx, {
+                }))))), !an && (nn ? C.createElement("p", null, C.createElement("small", null, "Only the Group Owner can edit paid roles.")) : C.createElement("div", {
+                    className: "d-flex flex-row align-content-center mt-1\n                  ".concat(tn || en || y.defaultRole ? "justify-content-end" : "justify-content-between")
+                }, !tn && !en && !y.defaultRole && C.createElement(re.zx, {
                     danger: !0,
                     onClick: function() {
-                        Bt(!1)
+                        Kt(!1)
                     },
-                    disabled: Gt
+                    disabled: Jt
                 }, C.createElement(le.Z, {
                     icon: q.$
                 }), " Delete"), C.createElement("div", {
@@ -2308,22 +2335,22 @@
                 }, C.createElement(re.zx, {
                     neutral: !0,
                     onClick: function() {
-                        Ft()
+                        Vt()
                     },
-                    disabled: Gt || 0 === Object.keys(I).length
+                    disabled: Jt || 0 === Object.keys(I).length
                 }, C.createElement(le.Z, {
                     icon: w.NB
-                }), " ", Wt ? "Clear" : "Cancel"), " ", C.createElement(re.zx, {
-                    loading: Gt && !ft,
-                    disabled: Gt || 0 === Object.keys(I).length || Object.values(X).includes(!1),
-                    onClick: Jt
+                }), " ", tn ? "Clear" : "Cancel"), " ", C.createElement(re.zx, {
+                    loading: Jt && !ft,
+                    disabled: Jt || 0 === Object.keys(I).length || Object.values(X).includes(!1),
+                    onClick: Qt
                 }, C.createElement(le.Z, {
                     icon: Et.r6
                 }), " Save"))))), C.createElement(re.sm, {
                     isOpen: !!qe,
                     confirmCallback: function() {
                         return Me(je.filter((function(e) {
-                            return e !== qe && !_t.has(e)
+                            return e !== qe && !Yt.has(e)
                         }))), void ze(null)
                     },
                     cancelCallback: function() {
@@ -2332,10 +2359,10 @@
                     headerText: "Role Permission Dependencies",
                     confirmText: "Turn Off",
                     cancelText: "Go Back"
-                }, C.createElement("div", null, C.createElement("p", null, "Turning off “", null === (s = Xt[qe]) || void 0 === s ? void 0 : s.displayName, "” will also turn off permissions that currently require it:"), C.createElement("ul", null, (0, U.Z)(_t).filter((function(e) {
+                }, C.createElement("div", null, C.createElement("p", null, "Turning off “", null === (s = Wt[qe]) || void 0 === s ? void 0 : s.displayName, "” will also turn off permissions that currently require it:"), C.createElement("ul", null, (0, U.Z)(Yt).filter((function(e) {
                     return je.includes(e)
                 })).map((function(e) {
-                    var t = Xt[e];
+                    var t = Wt[e];
                     return C.createElement("li", {
                         key: e
                     }, "“", t.displayName, "”")
@@ -2354,10 +2381,10 @@
                     cancelText: "Keep Permissions"
                 }, C.createElement("div", null, C.createElement("p", null, "This role contains permissions that no longer exist or are unavailable for your group."), C.createElement("p", null, "These permissions will be removed from the role: ", C.createElement("strong", null, null == Fe ? void 0 : Fe.join(", "))))))
             };
-            var Pt = n(93682),
-                Rt = n(3163),
-                Lt = n(50249);
-            const Ut = function(e) {
+            var Rt = n(93682),
+                Lt = n(3163),
+                Ut = n(50249);
+            const qt = function(e) {
                 var t, n, r = e.group,
                     l = e.roleLocalOffset,
                     a = e.isGroupOwner,
@@ -2372,7 +2399,7 @@
                     }), [c]),
                     m = (0, te.q7)().data,
                     d = void 0 === m ? [] : m,
-                    p = (null == s || null === (t = s.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === St.dd.INVITED,
+                    p = (null == s || null === (t = s.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === jt.dd.INVITED,
                     g = d.includes("permission-can-sell-products"),
                     f = (0, U.Z)(null != r && r.roles ? r.roles : []).sort((function(e, t) {
                         var n = e.order,
@@ -2384,44 +2411,44 @@
                     h = f.map((function(e, t) {
                         var n, l = [],
                             a = null;
-                        0 === e.order ? (l.push(C.createElement(qt, {
+                        0 === e.order ? (l.push(C.createElement(zt, {
                             key: "management-header"
                         }, "Management Roles")), a = C.createElement(C.Fragment, null, C.createElement(re.$1, {
                             icon: Se.nm,
                             title: "Management Role"
                         }), " ")) : e.permissions.includes("group-instance-moderate") ? a = C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Rt.U7,
+                            icon: Lt.U7,
                             title: "Instance Moderator Role"
                         }), " ") : e.requiresPurchase ? a = C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Lt.default,
+                            icon: Ut.default,
                             title: "Paid Role"
-                        }), " ") : e.defaultRole && (l.push(C.createElement(qt, {
+                        }), " ") : e.defaultRole && (l.push(C.createElement(zt, {
                             key: "default-header"
                         }, "Default Role")), a = C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Pt.Z3,
+                            icon: Rt.Z3,
                             title: "Default Role"
-                        }), " ")), e.isManagementRole || e.defaultRole || null === (n = f[t - 1]) || void 0 === n || !n.isManagementRole || l.push(C.createElement(qt, {
+                        }), " ")), e.isManagementRole || e.defaultRole || null === (n = f[t - 1]) || void 0 === n || !n.isManagementRole || l.push(C.createElement(zt, {
                             key: "member-header"
                         }, "Member Roles"));
                         var i = (0 === (null == r ? void 0 : r.memberRank) || "new" === e.id || e.order > (null == r ? void 0 : r.memberRank)) && (v.includes("*") || 0 === e.permissions.filter((function(e) {
                             return !v.includes(e)
                         })).length);
-                        return l.push(o || i ? C.createElement(Dt, null, C.createElement(Xt, {
+                        return l.push(o || i ? C.createElement(Ft, null, C.createElement(_t, {
                             key: e.id,
                             to: "/home/group/".concat(r.id, "/settings/roles/").concat(e.id),
                             className: e.id === u ? "selected" : ""
-                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : C.createElement(Gt, {
+                        }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))) : C.createElement(Dt, {
                             key: e.id
                         }, a, e.name + ("new" === e.id ? " (unsaved new role)" : ""))), l
                     }));
                 return C.createElement(C.Fragment, null, E && C.createElement(A.Z, {
                     role: "alert",
                     color: "warning"
-                }, "This group has reached maximum number of roles"), C.createElement(zt, null, h, C.createElement("li", null, C.createElement(Ft, {
+                }, "This group has reached maximum number of roles"), C.createElement(Gt, null, h, C.createElement("li", null, C.createElement(Xt, {
                     to: "/home/group/".concat(r.id, "/settings/roles/new"),
                     end: !0,
                     disabled: E
-                }, "Create Role")), a && p && C.createElement("li", null, g ? C.createElement(Ft, {
+                }, "Create Role")), a && p && C.createElement("li", null, g ? C.createElement(Xt, {
                     to: "/home/group/".concat(r.id, "/settings/roles/new/paid"),
                     end: !0,
                     disabled: E
@@ -2434,44 +2461,44 @@
                     }
                 }, "in your Wallet"), "."))))
             };
-            var qt = (0, a.Z)("h5", {
+            var zt = (0, a.Z)("h5", {
                     target: "e1hiny755"
                 })({
                     name: "1gttmjq",
                     styles: "margin:0;padding:0;font-size:1.2rem;font-weight:bold"
                 }),
-                zt = (0, a.Z)("ul", {
+                Gt = (0, a.Z)("ul", {
                     target: "e1hiny754"
                 })({
                     name: "wghgqz",
                     styles: "list-style-type:none;padding:0;margin-bottom:0"
                 }),
-                Gt = (0, a.Z)("li", {
+                Dt = (0, a.Z)("li", {
                     target: "e1hiny753"
                 })({
                     name: "12guyxn",
                     styles: "padding:8px;margin-bottom:8px;border-radius:4px;background-color:#141519;opacity:0.3"
                 }),
-                Dt = (0, a.Z)("li", {
+                Ft = (0, a.Z)("li", {
                     target: "e1hiny752"
                 })({
                     name: "1hcx8jb",
                     styles: "padding:0"
                 }),
-                Ft = (0, a.Z)(j.OL, {
+                Xt = (0, a.Z)(j.OL, {
                     target: "e1hiny751"
                 })({
                     name: "1ekamc",
                     styles: "display:inline-block;padding:5px;margin-bottom:8px;border-radius:4px;width:100%;color:inherit;background-color:#064b5c;border:#064b5c solid 2px;text-align:center;flex:1;:hover{background-color:#064b5c;border-color:#086c84;text-decoration:none;}&.active{background-color:#454b54;}"
                 }),
-                Xt = (0, a.Z)(Ft, {
+                _t = (0, a.Z)(Xt, {
                     target: "e1hiny750"
                 })({
                     name: "hlgyoz",
                     styles: "background-color:transparent;border-color:transparent;text-align:left;:hover{background-color:#282b31;border-color:#282b31;}&.active{background-color:#454b54;border-color:#454b54;}"
                 }),
-                _t = n(98185);
-            const $t = function(e) {
+                $t = n(98185);
+            const Jt = function(e) {
                 var t = e.group,
                     n = (0, de.pc)(),
                     r = (0, S.TH)(),
@@ -2489,7 +2516,7 @@
                 C.useEffect((function() {
                     c(0)
                 }), [r]);
-                return C.createElement(_t.Z, {
+                return C.createElement($t.Z, {
                     loading: !t.roles
                 }, s && C.createElement(re.qX, {
                     type: "error",
@@ -2497,7 +2524,7 @@
                     message: s.message
                 }), C.createElement(re.oI, null, C.createElement("h4", {
                     className: "text-center"
-                }, "Roles")), C.createElement(re.Ao, null, C.createElement(Jt, null, C.createElement(Bt, null, C.createElement(Ut, {
+                }, "Roles")), C.createElement(re.Ao, null, C.createElement(Bt, null, C.createElement(Vt, null, C.createElement(qt, {
                     group: t,
                     roleLocalOffset: i,
                     isGroupOwner: d
@@ -2521,20 +2548,20 @@
                     isGroupOwner: d
                 }))))
             };
-            var Jt = (0, a.Z)(re.X2, {
+            var Bt = (0, a.Z)(re.X2, {
                     target: "eaqb3yw1"
                 })({
                     name: "ikx90a",
                     styles: "display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:stretch;>*{flex:1;}"
                 }),
-                Bt = (0, a.Z)("div", {
+                Vt = (0, a.Z)("div", {
                     target: "eaqb3yw0"
                 })({
                     name: "1jwryq8",
                     styles: "margin-right:15px"
                 });
 
-            function Vt(e, t) {
+            function Wt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -2545,21 +2572,21 @@
                 return n
             }
 
-            function Wt(e) {
+            function Yt(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Vt(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Wt(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Vt(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Wt(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Yt = C.lazy((function() {
+            var Ht = C.lazy((function() {
                     return Promise.all([n.e(123), n.e(786), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(4814)]).then(n.bind(n, 40527))
                 })),
-                Ht = [{
+                Qt = [{
                     label: "Open",
                     value: bt.wN.OPEN
                 }, {
@@ -2572,7 +2599,7 @@
                     label: "Request Invite",
                     value: bt.wN.REQUEST
                 }];
-            const Qt = function(e) {
+            const Kt = function(e) {
                 var t, n, a, o, i, c, s, u, m, d, p, g, f, E, v, h, b = e.group,
                     w = (0, te.IB)().data,
                     y = null !== (t = null == b ? void 0 : b.transferTargetId) && void 0 !== t ? t : null,
@@ -2588,9 +2615,9 @@
                         language: b.languages,
                         rules: b.rules
                     }),
-                    T = (0, l.Z)(A, 2),
-                    se = T[0],
-                    ue = T[1],
+                    P = (0, l.Z)(A, 2),
+                    se = P[0],
+                    ue = P[1],
                     me = C.useState(!1),
                     de = (0, l.Z)(me, 2),
                     ge = de[0],
@@ -2610,7 +2637,7 @@
                     Se = C.useState(null),
                     Me = (0, l.Z)(Se, 2),
                     Ae = Me[0],
-                    Te = Me[1],
+                    Pe = Me[1],
                     Re = C.useState(!1),
                     Le = (0, l.Z)(Re, 2),
                     Ue = Le[0],
@@ -2650,88 +2677,93 @@
                     xt = (0, l.Z)(wt, 2),
                     kt = xt[0],
                     Zt = xt[1],
-                    Nt = C.useState(null !== (a = b.links) && void 0 !== a ? a : []),
-                    It = (0, l.Z)(Nt, 2),
-                    Ct = It[0],
-                    Ot = It[1],
-                    St = C.useState(null),
-                    jt = (0, l.Z)(St, 2),
-                    Mt = jt[0],
-                    At = jt[1],
+                    It = C.useState(null !== (a = b.links) && void 0 !== a ? a : []),
+                    Ct = (0, l.Z)(It, 2),
+                    Ot = Ct[0],
+                    St = Ct[1],
+                    jt = C.useState(null),
+                    Mt = (0, l.Z)(jt, 2),
+                    At = Mt[0],
+                    Pt = Mt[1],
                     Tt = C.useState(null),
-                    Pt = (0, l.Z)(Tt, 2),
-                    Rt = (Pt[0], Pt[1]),
-                    Lt = (0, O.v9)((function(e) {
+                    Rt = (0, l.Z)(Tt, 2),
+                    Lt = (Rt[0], Rt[1]),
+                    Ut = (0, O.v9)((function(e) {
                         return e.currentUser.isMod
                     })),
-                    Ut = (null == b ? void 0 : b.ownerId) === (null == w ? void 0 : w.id),
-                    qt = (0, pe.mA)(),
-                    zt = (0, l.Z)(qt, 2),
-                    Gt = zt[0],
-                    Dt = zt[1],
-                    Ft = Dt.isError,
-                    Xt = Dt.isLoading,
-                    _t = Dt.error,
-                    Jt = (0, pe.CL)(),
-                    Bt = (0, l.Z)(Jt, 2),
-                    Vt = Bt[0],
-                    Qt = Bt[1],
-                    en = Qt.isError,
-                    tn = Qt.isLoading,
-                    nn = Qt.error,
-                    rn = Qt.isSuccess,
-                    ln = (0, te.q7)().data,
-                    an = void 0 === ln ? [] : ln,
-                    on = (0, Q.y)().data,
-                    cn = null !== (o = null == on || null === (i = on.constants) || void 0 === i || null === (i = i.LANGUAGE) || void 0 === i ? void 0 : i.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== o ? o : H.O,
-                    sn = [{
+                    qt = (null == b ? void 0 : b.ownerId) === (null == w ? void 0 : w.id),
+                    zt = (0, pe.mA)(),
+                    Gt = (0, l.Z)(zt, 2),
+                    Dt = Gt[0],
+                    Ft = Gt[1],
+                    Xt = Ft.isError,
+                    _t = Ft.isLoading,
+                    $t = Ft.error,
+                    Bt = (0, Nt.P2)(),
+                    Vt = C.useState(!1),
+                    Wt = (0, l.Z)(Vt, 2),
+                    Kt = Wt[0],
+                    tn = Wt[1],
+                    nn = (0, pe.CL)(),
+                    rn = (0, l.Z)(nn, 2),
+                    ln = rn[0],
+                    an = rn[1],
+                    on = an.isError,
+                    cn = an.isLoading,
+                    sn = an.error,
+                    un = an.isSuccess,
+                    mn = (0, te.q7)().data,
+                    dn = void 0 === mn ? [] : mn,
+                    pn = (0, Q.y)().data,
+                    gn = null !== (o = null == pn || null === (i = pn.constants) || void 0 === i || null === (i = i.LANGUAGE) || void 0 === i ? void 0 : i.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== o ? o : H.O,
+                    fn = [{
                         value: "none",
                         label: "none"
-                    }].concat((0, U.Z)(Object.keys(cn).map((function(e) {
+                    }].concat((0, U.Z)(Object.keys(gn).map((function(e) {
                         return {
                             value: e,
-                            label: cn[e]
+                            label: gn[e]
                         }
                     })))),
-                    un = (null == Be || null === (c = Be.user) || void 0 === c ? void 0 : c.id) && (null == b ? void 0 : b.id) && null === y,
-                    mn = (0, pe.ek)({
+                    En = (null == Be || null === (c = Be.user) || void 0 === c ? void 0 : c.id) && (null == b ? void 0 : b.id) && null === y,
+                    vn = (0, pe.ek)({
                         groupId: null == b ? void 0 : b.id,
                         transferTargetId: null == Be || null === (s = Be.user) || void 0 === s ? void 0 : s.id
                     }, {
-                        skip: !un || !(null != b && b.id),
-                        refetchOnMountOrArgChange: !0
-                    }),
-                    dn = mn.data,
-                    pn = mn.isFetching,
-                    gn = mn.isError,
-                    fn = mn.error,
-                    En = null !== y,
-                    vn = (0, ne.GR)(y, {
-                        skip: !En,
+                        skip: !En || !(null != b && b.id),
                         refetchOnMountOrArgChange: !0
                     }),
                     hn = vn.data,
                     bn = vn.isFetching,
                     wn = vn.isError,
                     yn = vn.error,
-                    xn = (0, pe.HT)(),
-                    kn = (0, l.Z)(xn, 2),
-                    Zn = kn[0],
-                    Nn = kn[1],
-                    In = (Nn.data, Nn.isFetching),
-                    Cn = Nn.isError,
-                    On = Nn.error,
-                    Sn = (0, pe.rq)(),
-                    jn = (0, l.Z)(Sn, 2),
-                    Mn = jn[0],
-                    An = jn[1],
-                    Tn = (An.data, An.isFetching),
-                    Pn = An.isError,
-                    Rn = An.error;
+                    xn = null !== y,
+                    kn = (0, ne.GR)(y, {
+                        skip: !xn,
+                        refetchOnMountOrArgChange: !0
+                    }),
+                    Zn = kn.data,
+                    Nn = kn.isFetching,
+                    In = kn.isError,
+                    Cn = kn.error,
+                    On = (0, pe.HT)(),
+                    Sn = (0, l.Z)(On, 2),
+                    jn = Sn[0],
+                    Mn = Sn[1],
+                    An = (Mn.data, Mn.isFetching),
+                    Pn = Mn.isError,
+                    Tn = Mn.error,
+                    Rn = (0, pe.rq)(),
+                    Ln = (0, l.Z)(Rn, 2),
+                    Un = Ln[0],
+                    qn = Ln[1],
+                    zn = (qn.data, qn.isFetching),
+                    Gn = qn.isError,
+                    Dn = qn.error;
                 C.useEffect((function() {
-                    rn ? j("/home/groups") : (Qe(!1), fe(!1))
-                }), [tn]), C.useEffect((function() {
-                    if (xe && Be && pn && Ce(!0), !pn && xe && dn && !gn) {
+                    un ? j("/home/groups") : (Qe(!1), fe(!1))
+                }), [cn]), C.useEffect((function() {
+                    if (xe && Be && bn && Ce(!0), !bn && xe && hn && !wn) {
                         Ce(!1);
                         var e = function(e) {
                             var t = {
@@ -2747,90 +2779,98 @@
                                 t.valid = !((null === (n = t.reasons) || void 0 === n ? void 0 : n.length) > 0)
                             }
                             return t
-                        }(dn.requirements);
-                        Te(e), ke(!1), be(!1), qe(!0)
+                        }(hn.requirements);
+                        Pe(e), ke(!1), be(!1), qe(!0)
                     }
                     var t;
-                    !pn && xe && gn && (Ce(!1), ke(!1), Ve(null), Z((0, ee.d)({
+                    !bn && xe && wn && (Ce(!1), ke(!1), Ve(null), Z((0, ee.d)({
                         title: "Error Validating Group Transfer",
                         icon: x.eH,
-                        message: "".concat(null == fn || null === (t = fn.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
+                        message: "".concat(null == yn || null === (t = yn.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
                         color: "error",
                         timeout: 3e3
                     })))
-                }), [xe, Be, pn, gn, dn]), C.useEffect((function() {
+                }), [xe, Be, bn, wn, hn]), C.useEffect((function() {
                     var e;
-                    (bn || wn || !hn || Ve({
-                        user: hn
-                    }), !bn && wn) && Z((0, ee.d)({
+                    (Nn || In || !Zn || Ve({
+                        user: Zn
+                    }), !Nn && In) && Z((0, ee.d)({
                         title: "Error Fetching New Owner Data",
                         icon: x.eH,
-                        message: "".concat(null == yn || null === (e = yn.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
+                        message: "".concat(null == Cn || null === (e = Cn.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message),
                         color: "error",
                         timeout: 3e3
                     }))
-                }), [bn, hn, wn]);
-                var Ln = function(e) {
+                }), [Nn, Zn, In]);
+                var Fn = function(e) {
                         var t = e.target.name,
                             n = "checkbox" === e.target.getAttribute("type") ? e.target.checked : e.target.value;
-                        ue(Wt(Wt({}, se), {}, (0, L.Z)({}, t, "shortCode" === t ? n.toUpperCase() : n)))
+                        ue(Yt(Yt({}, se), {}, (0, L.Z)({}, t, "shortCode" === t ? n.toUpperCase() : n)))
                     },
-                    Un = function() {
+                    Xn = function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             var t;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return st && (se.bannerId = st), Mt && (se.iconId = Mt), e.prev = 2, e.next = 5, Gt({
+                                        return st && (se.bannerId = st), At && (se.iconId = At), tn(!1), e.prev = 3, e.next = 6, Dt({
                                             groupId: b.id,
-                                            data: Wt({}, se)
+                                            data: Yt({}, se)
                                         }).unwrap();
-                                    case 5:
-                                        mt(null), gt(null), At(null), Rt(null), Z((0, ee.d)({
+                                    case 6:
+                                        mt(null), gt(null), Pt(null), Lt(null), Z((0, ee.d)({
                                             title: "Group Updated Successfully",
                                             icon: k.f8,
                                             color: "success",
                                             timeout: 3e3
-                                        })), e.next = 12;
+                                        })), e.next = 16;
                                         break;
-                                    case 9:
-                                        e.prev = 9, e.t0 = e.catch(2), Z((0, ee.d)({
+                                    case 10:
+                                        if (e.prev = 10, e.t0 = e.catch(3), !Bt({
+                                                error: e.t0
+                                            })) {
+                                            e.next = 15;
+                                            break
+                                        }
+                                        return tn(!0), e.abrupt("return");
+                                    case 15:
+                                        Z((0, ee.d)({
                                             title: "Group Update Failed",
                                             icon: x.eH,
                                             message: "".concat(null === e.t0 || void 0 === e.t0 || null === (t = e.t0.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
                                             color: "error",
                                             timeout: 5e3
                                         }));
-                                    case 12:
+                                    case 16:
                                     case "end":
                                         return e.stop()
                                 }
                             }), e, null, [
-                                [2, 9]
+                                [3, 10]
                             ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
                         }
                     }(),
-                    qn = function() {
+                    _n = function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             var t, n, r;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return Xe(!0), e.prev = 1, e.next = 4, Zn({
+                                        return Xe(!0), e.prev = 1, e.next = 4, jn({
                                             groupId: b.id,
                                             transferTargetId: null == Be || null === (t = Be.user) || void 0 === t ? void 0 : t.id
                                         }).unwrap();
                                     case 4:
-                                        Cn && (Xe(!1), qe(!1), Ve(null), Z((0, ee.d)({
+                                        Pn && (Xe(!1), qe(!1), Ve(null), Z((0, ee.d)({
                                             title: "Group Transfer Error",
                                             icon: x.eH,
-                                            message: "".concat(null == On || null === (n = On.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message),
+                                            message: "".concat(null == Tn || null === (n = Tn.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message),
                                             color: "error",
                                             timeout: 6e3
-                                        }))), Cn || Z((0, ee.d)({
+                                        }))), Pn || Z((0, ee.d)({
                                             title: "Group Transfer Initiated",
                                             icon: k.f8,
                                             color: "success",
@@ -2857,24 +2897,24 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    zn = function() {
+                    $n = function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             var t, n, r;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return nt(!0), e.prev = 1, e.next = 4, Mn({
+                                        return nt(!0), e.prev = 1, e.next = 4, Un({
                                             groupId: b.id,
                                             transferTargetId: null == Be || null === (t = Be.user) || void 0 === t ? void 0 : t.id
                                         }).unwrap();
                                     case 4:
-                                        nt(!1), Pn && Z((0, ee.d)({
+                                        nt(!1), Gn && Z((0, ee.d)({
                                             title: "Cancel Group Transfer Error",
                                             icon: x.eH,
-                                            message: "".concat(null == Rn || null === (n = Rn.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message),
+                                            message: "".concat(null == Dn || null === (n = Dn.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message),
                                             color: "error",
                                             timeout: 3e3
-                                        })), Pn || Z((0, ee.d)({
+                                        })), Gn || Z((0, ee.d)({
                                             title: "Delete Group Transfer Success",
                                             icon: k.f8,
                                             color: "success",
@@ -2901,12 +2941,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Gn = function() {
+                    Jn = function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        Qe(!0), Vt({
+                                        Qe(!0), ln({
                                             groupId: b.id,
                                             ownerId: b.ownerId
                                         });
@@ -2920,22 +2960,22 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Dn = function(e) {
-                        Ot(e), ue(Wt(Wt({}, se), {}, {
+                    Bn = function(e) {
+                        St(e), ue(Yt(Yt({}, se), {}, {
                             links: e
                         }))
                     },
-                    Fn = function(e, t) {
+                    Vn = function(e, t) {
                         var n = (0, U.Z)(kt);
                         n[e] = t, n = n.filter((function(e) {
                             return "none" !== e
-                        })), Zt(n), ue(Wt(Wt({}, se), {}, {
+                        })), Zt(n), ue(Yt(Yt({}, se), {}, {
                             languages: n
                         }))
                     },
-                    Xn = an.includes("permission-user-gallery"),
-                    _n = an.includes("permission-user-icons"),
-                    $n = Xt || tn || In || Tn;
+                    Wn = dn.includes("permission-user-gallery"),
+                    Yn = dn.includes("permission-user-icons"),
+                    Hn = _t || cn || An || zn;
                 return C.createElement("div", null, C.createElement(_.Z, {
                     className: "mt-4"
                 }, C.createElement(ce.Z, {
@@ -2944,13 +2984,13 @@
                         to: "/home/group/".concat(b.id, "/settings"),
                         end: !0,
                         icon: X.Kb,
-                        condition: Lt || P({
+                        condition: Ut || T({
                             groupMember: null == b ? void 0 : b.myMember,
                             permission: "group-data-manage"
                         })
                     }, {
                         name: "My Membership",
-                        to: Lt || P({
+                        to: Ut || T({
                             groupMember: null == b ? void 0 : b.myMember,
                             permission: "group-data-manage"
                         }) ? "me" : "/home/group/".concat(b.id, "/settings"),
@@ -2960,7 +3000,7 @@
                         name: "Roles",
                         to: "roles",
                         icon: D.aC,
-                        condition: Lt || P({
+                        condition: Ut || T({
                             groupMember: null == b ? void 0 : b.myMember,
                             permission: "group-roles-manage"
                         })
@@ -2968,7 +3008,7 @@
                         name: "Logs",
                         to: "logs",
                         icon: G.tx,
-                        condition: Lt || P({
+                        condition: Ut || T({
                             groupMember: null == b ? void 0 : b.myMember,
                             permission: "group-audit-view"
                         })
@@ -2976,11 +3016,11 @@
                         name: "Age Verification Beta",
                         to: "ageverificationbeta",
                         icon: z.Uk,
-                        condition: b.tags.includes("admin_age_verification_enabled") && (Lt || (null == b ? void 0 : b.myMember.userId) === b.ownerId)
+                        condition: b.tags.includes("admin_age_verification_enabled") && (Ut || (null == b ? void 0 : b.myMember.userId) === b.ownerId)
                     }]
                 })), C.createElement(S.Z5, null, C.createElement(S.AW, {
                     path: "/",
-                    element: Lt || P({
+                    element: Ut || T({
                         groupMember: null == b ? void 0 : b.myMember,
                         permission: "group-data-manage"
                     }) ? C.createElement(C.Fragment, null, C.createElement($.Z, null, C.createElement(M.Z, {
@@ -2989,7 +3029,7 @@
                             name: "1ul0gzp",
                             styles: "max-width:1500px!important"
                         })
-                    }, C.createElement(J.Z, null, C.createElement(Yt, {
+                    }, C.createElement(J.Z, null, C.createElement(Ht, {
                         isSelector: !0,
                         selectedCallback: function(e, t) {
                             mt(e), gt(t), ot(!1)
@@ -3006,21 +3046,21 @@
                             name: "1ul0gzp",
                             styles: "max-width:1500px!important"
                         })
-                    }, C.createElement(J.Z, null, C.createElement(Yt, {
+                    }, C.createElement(J.Z, null, C.createElement(Ht, {
                         isSelector: !0,
                         selectedCallback: function(e, t) {
-                            At(e), Rt(t), ht(!1)
+                            Pt(e), Lt(t), ht(!1)
                         },
-                        selectedId: null != Mt ? Mt : "",
+                        selectedId: null != At ? At : "",
                         activeTab: "icons"
                     })), C.createElement(B.Z, null, C.createElement(re.zx, {
                         onClick: function() {
                             ht(!1), Z((0, K.LC)())
                         }
-                    }, "Cancel"))), C.createElement(_.Z, null, Ft ? C.createElement(re.qX, {
+                    }, "Cancel"))), C.createElement(_.Z, null, Xt && !Kt ? C.createElement(re.qX, {
                         type: "error",
                         title: "An error occurred",
-                        message: (null == _t || null === (u = _t.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) || "Something went wrong updating the group"
+                        message: (null == $t || null === (u = $t.data) || void 0 === u || null === (u = u.error) || void 0 === u ? void 0 : u.message) || "Something went wrong updating the group"
                     }) : null, C.createElement(re.oI, null, C.createElement("h4", {
                         className: "text-center"
                     }, "General")), C.createElement(re.Ao, null, C.createElement("div", null, C.createElement($.Z, {
@@ -3032,7 +3072,7 @@
                         name: "name",
                         className: "full-width",
                         value: se.name,
-                        onChange: Ln
+                        onChange: Fn
                     }))), C.createElement($.Z, {
                         className: "mb-1"
                     }, C.createElement(_.Z, null, C.createElement(V.Z, {
@@ -3043,23 +3083,23 @@
                         className: "full-width",
                         value: se.shortCode,
                         maxLength: 6,
-                        onChange: Ln
+                        onChange: Fn
                     }))), C.createElement($.Z, {
                         className: "mb-1"
                     }, C.createElement(_.Z, null, C.createElement(V.Z, {
                         for: "description"
-                    }, "Description")), C.createElement(_.Z, null, C.createElement(Kt, {
+                    }, "Description")), C.createElement(_.Z, null, C.createElement(en, {
                         name: "description",
                         className: "full-width",
                         value: null !== (m = se.description) && void 0 !== m ? m : "",
-                        onChange: Ln
+                        onChange: Fn
                     }))), C.createElement($.Z, null, C.createElement(_.Z, null, C.createElement(V.Z, {
                         for: "description"
-                    }, "Rules")), C.createElement(_.Z, null, C.createElement(Kt, {
+                    }, "Rules")), C.createElement(_.Z, null, C.createElement(en, {
                         name: "rules",
                         className: "full-width",
                         value: null !== (d = se.rules) && void 0 !== d ? d : "",
-                        onChange: Ln
+                        onChange: Fn
                     }))), C.createElement("div", null, !1, C.createElement($.Z, {
                         className: "mt-2"
                     }, C.createElement(_.Z, null, C.createElement(V.Z, {
@@ -3067,14 +3107,14 @@
                     }, "Open to New Members")), C.createElement(_.Z, null, C.createElement(re.Lt, {
                         onChange: function(e) {
                             var t = e === bt.wN.OPEN;
-                            ue(Wt(Wt({}, se), {}, {
+                            ue(Yt(Yt({}, se), {}, {
                                 joinState: e,
                                 allowGroupJoinPrompt: t
                             }))
                         },
                         value: null !== (p = se.joinState) && void 0 !== p ? p : "",
                         name: "joinState",
-                        options: Ht
+                        options: Qt
                     }))), C.createElement("br", null), C.createElement("div", {
                         className: "mt-2"
                     }, C.createElement(ae.Z, {
@@ -3084,7 +3124,7 @@
                         defaultChecked: null !== (g = se.allowGroupJoinPrompt) && void 0 !== g ? g : se.joinState === bt.wN.OPEN,
                         onChangeCallback: function(e) {
                             var t = e.checked;
-                            ue(Wt(Wt({}, se), {}, {
+                            ue(Yt(Yt({}, se), {}, {
                                 allowGroupJoinPrompt: t
                             }))
                         }
@@ -3094,58 +3134,58 @@
                         for: "languages"
                     }, "Languages")), C.createElement(_.Z, null, kt.length >= 0 && C.createElement(re.Lt, {
                         onChange: function(e) {
-                            Fn(0, e)
+                            Vn(0, e)
                         },
                         value: null !== (f = null == kt ? void 0 : kt[0]) && void 0 !== f ? f : "none",
                         name: "languages",
-                        options: sn,
+                        options: fn,
                         className: "mb-1"
                     }), kt.length >= 1 && C.createElement(re.Lt, {
                         onChange: function(e) {
-                            Fn(1, e)
+                            Vn(1, e)
                         },
                         value: null !== (E = null == kt ? void 0 : kt[1]) && void 0 !== E ? E : "none",
                         name: "languages",
-                        options: sn,
+                        options: fn,
                         className: "mb-1"
                     }), kt.length >= 2 && C.createElement(re.Lt, {
                         onChange: function(e) {
-                            Fn(2, e)
+                            Vn(2, e)
                         },
                         value: null !== (v = null == kt ? void 0 : kt[2]) && void 0 !== v ? v : "none",
                         name: "languages",
-                        options: sn,
+                        options: fn,
                         className: "mb-1"
                     }))), C.createElement("br", null), C.createElement($.Z, {
                         className: "mt-2"
                     }, C.createElement(_.Z, null, C.createElement(V.Z, {
                         for: "links"
                     }, "Group Links")), C.createElement(_.Z, null, C.createElement(Je, {
-                        groupBioLinks: Ct,
-                        callback: Dn,
+                        groupBioLinks: Ot,
+                        callback: Bn,
                         index: 0
                     }), C.createElement(Je, {
-                        groupBioLinks: Ct,
-                        callback: Dn,
+                        groupBioLinks: Ot,
+                        callback: Bn,
                         index: 1
                     }), C.createElement(Je, {
-                        groupBioLinks: Ct,
-                        callback: Dn,
+                        groupBioLinks: Ot,
+                        callback: Bn,
                         index: 2
                     }))), C.createElement("br", null), C.createElement($.Z, null, C.createElement(_.Z, null), C.createElement(_.Z, null, st && C.createElement("div", null, C.createElement("span", null, "Replacing banner with: ", st), C.createElement("br", null), C.createElement(re.zx, {
                         onClick: function() {
                             mt(null), gt(null)
                         }
-                    }, "Clear banner selection")), Mt && C.createElement("div", null, C.createElement("span", null, "Replacing icon with: ", Mt), C.createElement("br", null), C.createElement(re.zx, {
+                    }, "Clear banner selection")), At && C.createElement("div", null, C.createElement("span", null, "Replacing icon with: ", At), C.createElement("br", null), C.createElement(re.zx, {
                         onClick: function() {
-                            Rt(null), At(null)
+                            Lt(null), Pt(null)
                         }
-                    }, "Clear icon selection")))), C.createElement("br", null), C.createElement($.Z, null, C.createElement(_.Z, null), C.createElement(_.Z, null, Xn && C.createElement(re.zx, {
+                    }, "Clear icon selection")))), C.createElement("br", null), C.createElement($.Z, null, C.createElement(_.Z, null), C.createElement(_.Z, null, Wn && C.createElement(re.zx, {
                         color: "primary",
                         onClick: function() {
                             ot(!0)
                         }
-                    }, "Update Group Banner"), " ", _n && C.createElement(re.zx, {
+                    }, "Update Group Banner"), " ", Yn && C.createElement(re.zx, {
                         color: "primary",
                         onClick: function() {
                             ht(!0)
@@ -3154,10 +3194,10 @@
                         className: "mt-4"
                     }, C.createElement(re.zx, {
                         neutral: !0,
-                        onClick: Un,
-                        disabled: $n,
-                        loading: $n
-                    }, "Save")))))), Ut && !y && C.createElement(C.Fragment, null, C.createElement(Oe, {
+                        onClick: Xn,
+                        disabled: Hn,
+                        loading: Hn
+                    }, "Save")))))), qt && !y && C.createElement(C.Fragment, null, C.createElement(Oe, {
                         isOpen: he,
                         group: b,
                         cancelCallback: function() {
@@ -3175,29 +3215,29 @@
                         validity: Ae,
                         prospectiveNewOwner: Be,
                         onTransfer: function() {
-                            return qn()
+                            return _n()
                         },
                         onCancel: function() {
                             return qe(!1)
                         },
                         isOpen: Ue,
                         isTransferring: De
-                    }), C.createElement(Pe, {
+                    }), C.createElement(Te, {
                         group: b,
                         onButtonClick: function() {
                             return be(!0)
                         },
-                        isLoading: $n || !1
-                    })), Ut && y && C.createElement(je, {
+                        isLoading: Hn || !1
+                    })), qt && y && C.createElement(je, {
                         group: b,
                         onClickCallback: function() {
-                            return zn()
+                            return $n()
                         },
                         isDeleting: tt || !1
-                    }), Ut && C.createElement(C.Fragment, null, en ? C.createElement(re.qX, {
+                    }), qt && C.createElement(C.Fragment, null, on ? C.createElement(re.qX, {
                         type: "error",
                         title: "Could not delete group",
-                        message: (null == nn || null === (h = nn.data) || void 0 === h || null === (h = h.error) || void 0 === h ? void 0 : h.message) || "Something went wrong deleting the group"
+                        message: (null == sn || null === (h = sn.data) || void 0 === h || null === (h = h.error) || void 0 === h ? void 0 : h.message) || "Something went wrong deleting the group"
                     }) : null, C.createElement(re.oI, {
                         className: "mt-2"
                     }, C.createElement("h4", {
@@ -3225,7 +3265,7 @@
                     }, C.createElement($.Z, null, C.createElement("span", {
                         className: "full-width text-center"
                     }, "Hey! This can't be undone! Only do this if you ", C.createElement("strong", null, "KNOW"), " what you're doing!")), C.createElement($.Z, null, C.createElement(re.zx, {
-                        onClick: Gn,
+                        onClick: Jn,
                         danger: !0,
                         className: "full-width"
                     }, "DELETE IT!")), C.createElement($.Z, null, C.createElement(re.zx, {
@@ -3238,8 +3278,8 @@
                         onClick: function() {
                             fe(!0)
                         },
-                        disabled: $n,
-                        loading: $n
+                        disabled: Hn,
+                        loading: Hn
                     }, C.createElement(le.Z, {
                         icon: q.$
                     }), " Delete Group"))))) : C.createElement(yt, {
@@ -3254,17 +3294,17 @@
                     })
                 }), C.createElement(S.AW, {
                     path: "/roles/:roleId?/:newRoleType?",
-                    element: Lt || P({
+                    element: Ut || T({
                         groupMember: null == b ? void 0 : b.myMember,
                         permission: "group-roles-manage"
-                    }) ? C.createElement($t, {
+                    }) ? C.createElement(Jt, {
                         group: b
                     }) : C.createElement(R.Z, {
                         to: ".."
                     })
                 }), C.createElement(S.AW, {
                     path: "/logs",
-                    element: Lt || P({
+                    element: Ut || T({
                         groupMember: null == b ? void 0 : b.myMember,
                         permission: "group-audit-view"
                     }) ? C.createElement(ut, {
@@ -3274,7 +3314,7 @@
                     })
                 }), C.createElement(S.AW, {
                     path: "/ageverificationbeta",
-                    element: b.tags.includes("admin_age_verification_enabled") && (Lt || (null == b ? void 0 : b.myMember.userId) === b.ownerId) ? C.createElement($.Z, null, C.createElement(_.Z, null, C.createElement(re.oI, null, C.createElement("h4", {
+                    element: b.tags.includes("admin_age_verification_enabled") && (Ut || (null == b ? void 0 : b.myMember.userId) === b.ownerId) ? C.createElement($.Z, null, C.createElement(_.Z, null, C.createElement(re.oI, null, C.createElement("h4", {
                         className: "text-center"
                     }, "Age Verification Beta")), C.createElement(re.Ao, null, C.createElement($.Z, {
                         className: "mb-1"
@@ -3287,17 +3327,17 @@
                     })
                 })))
             };
-            var Kt = (0, a.Z)(re.gx, {
+            var en = (0, a.Z)(re.gx, {
                     target: "e3uj5bu0"
                 })({
                     name: "1vp1ylf",
                     styles: ">textarea{height:200px;}"
                 }),
-                en = n(50141),
-                tn = n(27003),
-                nn = n(53359);
+                tn = n(50141),
+                nn = n(27003),
+                rn = n(53359);
 
-            function rn(e, t) {
+            function ln(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -3308,18 +3348,18 @@
                 return n
             }
 
-            function ln(e) {
+            function an(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? rn(Object(n), !0).forEach((function(t) {
+                    t % 2 ? ln(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : rn(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ln(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            const an = function(e) {
+            const on = function(e) {
                 var t, n, r, a, o, c, s = e.groupMember,
                     u = e.onEditFinished,
                     m = void 0 === u ? function() {} : u,
@@ -3345,7 +3385,7 @@
                     j = S.data,
                     M = S.isLoading,
                     A = S.isError,
-                    T = S.error,
+                    P = S.error,
                     R = (0, pe.xm)({
                         groupId: s.groupId,
                         userId: s.userId
@@ -3377,13 +3417,13 @@
                     }), []), ie) return C.createElement(C.Fragment, null, C.createElement(re.oI, null, C.createElement("h4", null, "Managing Member")), C.createElement(re.Ao, null, C.createElement("div", null, C.createElement("div", {
                     className: "text-center mb-4"
                 }, C.createElement(le.Z, {
-                    icon: nn.faTriangleExclamation,
+                    icon: rn.faTriangleExclamation,
                     size: "xl"
                 })), C.createElement("h4", {
                     className: "text-center mb-4"
-                }, "We have encountered a problem."), T && C.createElement("p", {
+                }, "We have encountered a problem."), P && C.createElement("p", {
                     className: "text-center text-danger"
-                }, null == T || null === (o = T.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), G && C.createElement("p", {
+                }, null == P || null === (o = P.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), G && C.createElement("p", {
                     className: "text-center text-danger"
                 }, null == G || null === (c = G.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message))));
                 if (oe) return null;
@@ -3394,15 +3434,15 @@
                         k(!x)
                     };
                 if (null == U) return C.createElement("div", null);
-                var ue = P({
+                var ue = T({
                         groupMember: null == j ? void 0 : j.myMember,
                         permission: "group-members-manage"
                     }),
-                    me = P({
+                    me = T({
                         groupMember: null == j ? void 0 : j.myMember,
                         permission: "group-roles-assign"
                     }),
-                    ge = P({
+                    ge = T({
                         groupMember: null == j ? void 0 : j.myMember,
                         permission: "group-bans-manage"
                     }),
@@ -3414,7 +3454,7 @@
                                 return t.id === e
                             })),
                             n = (null == t ? void 0 : t.order) > (null == j ? void 0 : j.memberRank) && ((null == t ? void 0 : t.isSelfAssignable) && 0 !== (null == t ? void 0 : t.order) || me);
-                        return t ? C.createElement(C.Fragment, null, C.createElement(un, {
+                        return t ? C.createElement(C.Fragment, null, C.createElement(mn, {
                             key: t.id,
                             roleid: t.id,
                             canInteract: n,
@@ -3435,7 +3475,7 @@
                         return !ve.includes(e.id) && (0 !== (null == e ? void 0 : e.order) && ((null == e || !e.requiresPurchase) && ((null == e || !e.defaultRole) && (!(!me && !ae) || !(!fe || !e.isSelfAssignable)))))
                     })).map((function(e) {
                         var t = (null == e ? void 0 : e.order) > (null == j ? void 0 : j.memberRank) && ((null == e ? void 0 : e.isSelfAssignable) && 0 !== (null == e ? void 0 : e.order) || me);
-                        return C.createElement(un, {
+                        return C.createElement(mn, {
                             key: e.id,
                             roleid: e.id,
                             canInteract: t,
@@ -3451,7 +3491,7 @@
                             }
                         }, e.name)
                     }));
-                return C.createElement(_t.Z, {
+                return C.createElement($t.Z, {
                     loading: oe
                 }, C.createElement(re.oI, null, C.createElement("h4", null, "Managing ", null == s || null === (n = s.user) || void 0 === n ? void 0 : n.displayName)), C.createElement(re.Ao, null, x && C.createElement("div", null, C.createElement("h4", {
                     className: "text-center mb-4"
@@ -3466,7 +3506,7 @@
                     },
                     expand: !0
                 }, C.createElement(re.$1, {
-                    icon: tn.uM
+                    icon: nn.uM
                 }), " Get 'em outta here!"), " ", C.createElement(re.zx, {
                     neutral: !0,
                     onClick: se,
@@ -3489,7 +3529,7 @@
                     neutral: !0,
                     onClick: ce,
                     expand: !0
-                }, "Cancel"))), !(x || h) && C.createElement(C.Fragment, null, (me || ae || fe) && C.createElement(on, null, C.createElement(cn, null, C.createElement("h6", null, "Available Roles"), C.createElement(sn, null, be)), C.createElement(mn, null, C.createElement("h6", null, "Assigned Roles"), C.createElement(dn, null, he))), C.createElement(re.X2, null, (ue || ae) && C.createElement("div", {
+                }, "Cancel"))), !(x || h) && C.createElement(C.Fragment, null, (me || ae || fe) && C.createElement(cn, null, C.createElement(sn, null, C.createElement("h6", null, "Available Roles"), C.createElement(un, null, be)), C.createElement(dn, null, C.createElement("h6", null, "Assigned Roles"), C.createElement(pn, null, he))), C.createElement(re.X2, null, (ue || ae) && C.createElement("div", {
                     className: "setting mb-2 flex-1"
                 }, C.createElement(V.Z, null, "Notes"), C.createElement(re.gx, {
                     name: "managerNotes",
@@ -3498,7 +3538,7 @@
                     onChange: function(e) {
                         var t = e.target.name,
                             n = "checkbox" === e.target.getAttribute("type") ? e.target.checked : e.target.value;
-                        O(ln(ln({}, I), {}, (0, L.Z)({}, t, n)))
+                        O(an(an({}, I), {}, (0, L.Z)({}, t, n)))
                     }
                 }))), C.createElement(re.X2, null, C.createElement(re.zx, {
                     expand: !0,
@@ -3506,8 +3546,8 @@
                     onClick: function() {
                         ! function() {
                             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                                t = ln(ln({}, I), e);
-                            Object.keys(t).length > 0 && X(ln({
+                                t = an(an({}, I), e);
+                            Object.keys(t).length > 0 && X(an({
                                 groupId: U.groupId,
                                 userId: U.userId
                             }, t)), p()
@@ -3524,7 +3564,7 @@
                     warning: !0,
                     onClick: se
                 }, C.createElement(le.Z, {
-                    icon: tn.uM
+                    icon: nn.uM
                 }), "  Kick"), " ", (ge || ae) && C.createElement(re.zx, {
                     expand: !0,
                     danger: !0,
@@ -3533,46 +3573,46 @@
                     icon: i.JH
                 }), "  Ban"))))))
             };
-            var on = (0, a.Z)("div", {
+            var cn = (0, a.Z)("div", {
                     target: "emzwbrv5"
                 })({
                     name: "sh46e2",
                     styles: "display:flex;flex-direction:row;align-items:start;justify-content:space-around;margin-bottom:15px"
                 }),
-                cn = (0, a.Z)("div", {
+                sn = (0, a.Z)("div", {
                     target: "emzwbrv4"
                 })({
                     name: "1fx61ax",
                     styles: "display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;margin-right:10px"
                 }),
-                sn = (0, a.Z)("ul", {
+                un = (0, a.Z)("ul", {
                     target: "emzwbrv3"
                 })({
                     name: "1uhpukn",
                     styles: "list-style-type:none;padding:0;margin:0;width:100%;max-height:200px;height:200px;overflow-y:auto;overflow-x:hidden;background:#0d0d10;border-radius:5px"
                 }),
-                un = (0, a.Z)("li", {
+                mn = (0, a.Z)("li", {
                     target: "emzwbrv2"
                 })("padding:8px;border-radius:4px;", (function(e) {
                     return !e.canInteract && "\n    background-color: #0d0d10;\n    opacity: 0.2;\n    "
                 }), " &.not-a-role{background-color:unset;}&:hover{", (function(e) {
                     return e.canInteract && "\n        background-color: #282b31;\n        cursor: pointer;\n    "
                 }), ";}"),
-                mn = (0, a.Z)("div", {
+                dn = (0, a.Z)("div", {
                     target: "emzwbrv1"
                 })({
                     name: "d50b5r",
                     styles: "display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;margin-left:10px"
                 }),
-                dn = (0, a.Z)("ul", {
+                pn = (0, a.Z)("ul", {
                     target: "emzwbrv0"
                 })({
                     name: "1uhpukn",
                     styles: "list-style-type:none;padding:0;margin:0;width:100%;max-height:200px;height:200px;overflow-y:auto;overflow-x:hidden;background:#0d0d10;border-radius:5px"
                 }),
-                pn = n(54610),
-                gn = n(38653),
-                fn = function(e) {
+                gn = n(54610),
+                fn = n(38653),
+                En = function(e) {
                     var t = e.user,
                         n = void 0 === t ? null : t,
                         a = e.groupId,
@@ -3678,7 +3718,7 @@
                         target: "_blank"
                     }, C.createElement(me.D2, {
                         image: (null == n ? void 0 : n.iconUrl) || (null == n ? void 0 : n.thumbnailUrl) || (null == n ? void 0 : n.userIcon) || (null == n ? void 0 : n.currentAvatarThumbnailImageUrl)
-                    }))), C.createElement(_.Z, null, C.createElement(pn.Z, {
+                    }))), C.createElement(_.Z, null, C.createElement(gn.Z, {
                         className: "d-flex flex-row justify-content-between py-1"
                     }, C.createElement("div", {
                         className: "container p-0"
@@ -3692,7 +3732,7 @@
                         target: "_blank"
                     }, C.createElement(me.Hz, {
                         tag: "h5"
-                    }, n.displayName)), C.createElement(gn.Z, {
+                    }, n.displayName)), C.createElement(fn.Z, {
                         className: "mb-2 text-muted text-truncate tw-capitalize",
                         tag: "h6"
                     }, n.status)), C.createElement(_.Z, null, C.createElement("div", {
@@ -3709,14 +3749,14 @@
                         icon: i.JH
                     }), u ? " Ban" : " Unban")))))))))))
                 };
-            fn.propTypes = {
+            En.propTypes = {
                 user: fe().object,
                 groupId: fe().string.isRequired
             };
-            const En = fn;
-            var vn = n(7371),
-                hn = n(73104),
-                bn = function(e) {
+            const vn = En;
+            var hn = n(7371),
+                bn = n(73104),
+                wn = function(e) {
                     var t = e.member,
                         n = void 0 === t ? null : t,
                         r = e.groupRoles,
@@ -3737,7 +3777,7 @@
                         target: "_blank"
                     }, C.createElement(me.D2, {
                         image: a.iconUrl || a.thumbnailUrl
-                    }))), C.createElement(_.Z, null, C.createElement(pn.Z, {
+                    }))), C.createElement(_.Z, null, C.createElement(gn.Z, {
                         className: "d-flex flex-row justify-content-between py-1"
                     }, C.createElement("div", {
                         className: "container p-0"
@@ -3751,10 +3791,10 @@
                         target: "_blank"
                     }, C.createElement(me.Hz, {
                         tag: "h5"
-                    }, a.displayName)), C.createElement(gn.Z, {
+                    }, a.displayName)), C.createElement(fn.Z, {
                         className: "mb-2 text-muted text-truncate",
                         tag: "h6"
-                    }, "Joined ", ve()(n.joinedAt).fromNow()), C.createElement(hn.Z, {
+                    }, "Joined ", ve()(n.joinedAt).fromNow()), C.createElement(bn.Z, {
                         className: "text-truncate text-secondary"
                     }, (0, xe.wz)({
                         member: n,
@@ -3768,16 +3808,16 @@
                         }
                     }, C.createElement(re.$1, {
                         width: 20,
-                        icon: vn.Iw
+                        icon: hn.Iw
                     })))))))))))
                 };
-            bn.propTypes = {
+            wn.propTypes = {
                 member: fe().object.isRequired,
                 groupRoles: fe().array.isRequired,
                 memberEditCallback: fe().func.isRequired
             };
-            const wn = bn;
-            var yn = function(e) {
+            const yn = wn;
+            var xn = function(e) {
                 var t, n, r, a = e.groupId,
                     o = e.isOpen,
                     i = e.cancelCallback,
@@ -3825,18 +3865,18 @@
                     j = I.isError,
                     M = I.isFetching,
                     A = I.isSuccess,
-                    T = (0, ne.hi)({
+                    P = (0, ne.hi)({
                         pageValue: h,
                         searchTerm: w,
                         n: 25
                     }, {
                         skip: "" === w || !o || w.length < 3 || s
                     }),
-                    P = T.data,
-                    R = T.error,
-                    L = T.isError,
-                    U = T.isFetching,
-                    q = T.isSuccess;
+                    T = P.data,
+                    R = P.error,
+                    L = P.isError,
+                    U = P.isFetching,
+                    q = P.isSuccess;
                 return C.createElement(me.Xv, {
                     role: "dialog",
                     isOpen: o,
@@ -3865,7 +3905,7 @@
                 }, C.createElement(ie.Z, null))), !A && !M && !j && s && C.createElement("p", {
                     className: "text-center m-5 text-secondary h-25"
                 }, "Search for members in your group."), A && !M && k && s && C.createElement(me.Um, null, O.results.map((function(e) {
-                    return C.createElement(wn, {
+                    return C.createElement(yn, {
                         key: e.id,
                         member: e,
                         groupRoles: x,
@@ -3875,13 +3915,13 @@
                     className: "text-center m-5 text-secondary h-25"
                 }, "We couldn't find anything with that search.")), !q && !U && !L && !s && C.createElement("p", {
                     className: "text-center m-5 text-secondary h-25"
-                }, "Search for users on VRChat."), q && C.createElement(me.Um, null, P.results.map((function(e) {
-                    return C.createElement(En, {
+                }, "Search for users on VRChat."), q && C.createElement(me.Um, null, T.results.map((function(e) {
+                    return C.createElement(vn, {
                         key: e.id,
                         user: e,
                         groupId: a
                     })
-                })), 0 === P.results.length && C.createElement("p", {
+                })), 0 === T.results.length && C.createElement("p", {
                     className: "text-center m-5 text-secondary h-25"
                 }, "We couldn't find anything with that search.")), (A || q) && C.createElement(me.Gz, null, C.createElement(me.IT, {
                     className: "d-flex flex-row align-items-center justify-content-center",
@@ -3896,20 +3936,20 @@
                     onClick: function() {
                         return b(h + 1)
                     },
-                    disabled: (null == O ? void 0 : O.isLastPage) || (null == P ? void 0 : P.isLastPage) || M || U
+                    disabled: (null == O ? void 0 : O.isLastPage) || (null == T ? void 0 : T.isLastPage) || M || U
                 }, C.createElement(re.$1, {
                     icon: se._t
                 }))))))
             };
-            yn.propTypes = {
+            xn.propTypes = {
                 groupId: fe().string,
                 isOpen: fe().bool.isRequired,
                 cancelCallback: fe().func.isRequired,
                 memberEditCallback: fe().func
             };
-            const xn = yn;
+            const kn = xn;
 
-            function kn(e, t) {
+            function Zn(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -3920,18 +3960,18 @@
                 return n
             }
 
-            function Zn(e) {
+            function Nn(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? kn(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Zn(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : kn(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Zn(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Nn = [{
+            var In = [{
                 label: "None",
                 value: null
             }, {
@@ -3941,7 +3981,7 @@
                 label: "Descending",
                 value: "joinedAt:desc"
             }];
-            const In = function(e) {
+            const Cn = function(e) {
                 var t, n = e.group,
                     r = C.useState(!1),
                     a = (0, l.Z)(r, 2),
@@ -3969,7 +4009,7 @@
                     S = (N[1], C.useState(null)),
                     j = (0, l.Z)(S, 2),
                     A = j[0],
-                    T = j[1],
+                    P = j[1],
                     R = C.useState(null),
                     L = (0, l.Z)(R, 2),
                     q = L[0],
@@ -4009,9 +4049,9 @@
                     var e = (0, U.Z)(_);
                     if (ae) {
                         var t;
-                        if (ae.page <= 0 && !O && null === A && null === q && null != n && n.myMember) e[0] = [Zn(Zn({}, J), {}, {
+                        if (ae.page <= 0 && !O && null === A && null === q && null != n && n.myMember) e[0] = [Nn(Nn({}, J), {}, {
                             userId: G.id,
-                            user: Zn(Zn({}, G), {}, {
+                            user: Nn(Nn({}, G), {}, {
                                 thumbnailUrl: null !== (t = G.profilePicOverride) && void 0 !== t ? t : G.currentAvatarImageUrl
                             })
                         })].concat((0, U.Z)(ae.members));
@@ -4037,15 +4077,15 @@
                     fe = function(e, t, n) {
                         f(e), k(t), b(n), i(!0)
                     },
-                    Ee = P({
+                    Ee = T({
                         groupMember: null == n ? void 0 : n.myMember,
                         permission: "group-members-manage"
                     }),
-                    ve = P({
+                    ve = T({
                         groupMember: null == n ? void 0 : n.myMember,
                         permission: "group-roles-assign"
                     }),
-                    he = P({
+                    he = T({
                         groupMember: null == n ? void 0 : n.myMember,
                         permission: "group-members-viewall"
                     }),
@@ -4088,7 +4128,7 @@
                                     memberRank: l,
                                     member: e
                                 })
-                            }, C.createElement(en.Z, {
+                            }, C.createElement(tn.Z, {
                                 userId: e.userId,
                                 isCard: !0
                             }))
@@ -4115,16 +4155,16 @@
                     })
                 }, Ee && C.createElement(re.JX, null, C.createElement("h6", null, "Filters:"), C.createElement(re.X2, {
                     className: "flex-wrap"
-                }, C.createElement(Cn, {
+                }, C.createElement(On, {
                     label: "Filter role",
                     onChange: z,
                     options: ye,
                     value: q,
                     className: "mb-2 mx-2"
-                }), C.createElement(Cn, {
+                }), C.createElement(On, {
                     label: "Join order",
-                    onChange: T,
-                    options: Nn,
+                    onChange: P,
+                    options: In,
                     value: A,
                     className: "mb-2 mx-2"
                 }))), C.createElement(M.Z, {
@@ -4132,7 +4172,7 @@
                     toggle: function() {
                         i(!1)
                     }
-                }, C.createElement(an, {
+                }, C.createElement(on, {
                     groupMember: g,
                     memberRank: null != x ? x : 0,
                     closeCallback: function() {
@@ -4148,7 +4188,7 @@
                 }, C.createElement(re.$1, {
                     color: "white",
                     icon: Me.faMagnifyingGlass
-                }), "  Search Group Members")), C.createElement(xn, {
+                }), "  Search Group Members")), C.createElement(kn, {
                     isOpen: u,
                     groupId: n.id,
                     cancelCallback: function() {
@@ -4158,7 +4198,7 @@
                     isGroupMemberOnly: !0
                 }), ie ? C.createElement(re.UU, {
                     height: "200px"
-                }) : C.createElement(On, null, we), C.createElement("div", {
+                }) : C.createElement(Sn, null, we), C.createElement("div", {
                     className: "p-2",
                     style: {
                         margin: "20px auto 0",
@@ -4172,20 +4212,20 @@
                     loading: ie
                 }, oe || me ? "No more members..." : "List More Members")))))
             };
-            var Cn = (0, a.Z)(re.Lt, {
+            var On = (0, a.Z)(re.Lt, {
                     target: "egqvjul1"
                 })({
                     name: "1w9pskj",
                     styles: "width:300px;min-width:200px"
                 }),
-                On = (0, a.Z)("div", {
+                Sn = (0, a.Z)("div", {
                     target: "egqvjul0"
                 })({
                     name: "np9ciw",
                     styles: "display:flex;flex-direction:row;flex-wrap:wrap;gap:24px;justify-content:space-evenly;>*{width:300px;margin-top:8px;}"
                 }),
-                Sn = n(4751);
-            const jn = function(e) {
+                jn = n(4751);
+            const Mn = function(e) {
                 var t, n, r = e.langs,
                     l = e.tags,
                     a = (0, Q.y)().data,
@@ -4199,9 +4239,9 @@
                             title: o[t]
                         }
                     }));
-                return C.createElement(Rn, null, C.createElement(Ln, null, C.createElement(Mn, null, "Languages")), C.createElement(Un, null, i.length > 0 ? i.map((function(e) {
+                return C.createElement(Ln, null, C.createElement(Un, null, C.createElement(An, null, "Languages")), C.createElement(qn, null, i.length > 0 ? i.map((function(e) {
                     var t, n;
-                    return C.createElement(Pn, {
+                    return C.createElement(Rn, {
                         key: e,
                         title: null !== (t = e.title) && void 0 !== t ? t : o[e]
                     }, null !== (n = e.abbreviation) && void 0 !== n ? n : e.toUpperCase())
@@ -4209,13 +4249,13 @@
                     className: "align-self-center"
                 }, "None added")))
             };
-            var Mn = (0, a.Z)("h2", {
+            var An = (0, a.Z)("h2", {
                     target: "e8rhb6u6"
                 })({
                     name: "14mdnr2",
                     styles: "font-size:1.5rem;font-weight:bold"
                 }),
-                An = (0, a.Z)("div", {
+                Pn = (0, a.Z)("div", {
                     target: "e8rhb6u5"
                 })({
                     name: "11po3a3",
@@ -4227,34 +4267,34 @@
                     name: "r0ww0u",
                     styles: "background-color:#181b1f;border:5px solid #252a30;min-width:100px;min-height:100px;width:100px;height:100px;border-radius:50%;margin:10px;display:flex;justify-content:center;align-items:center;transition:transform 0.1s ease-in"
                 }),
-                Pn = (0, a.Z)(Tn, {
+                Rn = (0, a.Z)(Tn, {
                     target: "e8rhb6u3"
                 })({
                     name: "77x4h6",
                     styles: "font-size:1.7rem;font-weight:bold;color:#54b5c5"
                 }),
-                Rn = (0, a.Z)(An, {
+                Ln = (0, a.Z)(Pn, {
                     target: "e8rhb6u2"
                 })({
                     name: "u5t5ke",
                     styles: "flex:1;min-width:350px;min-height:136px"
                 }),
-                Ln = (0, a.Z)(me.JX, {
+                Un = (0, a.Z)(me.JX, {
                     target: "e8rhb6u1"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Un = (0, a.Z)(Ln, {
+                qn = (0, a.Z)(Un, {
                     target: "e8rhb6u0"
                 })({
                     name: "18clcmv",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto"
                 });
-            const qn = function(e) {
+            const zn = function(e) {
                 var t = e.links;
-                return C.createElement(_n, null, C.createElement($n, null, C.createElement(zn, null, "Links")), C.createElement(Jn, null, t.length > 0 ? t.map((function(e) {
-                    return C.createElement(Xn, {
+                return C.createElement($n, null, C.createElement(Jn, null, C.createElement(Gn, null, "Links")), C.createElement(Bn, null, t.length > 0 ? t.map((function(e) {
+                    return C.createElement(_n, {
                         key: e
                     }, C.createElement($e.QZ, {
                         url: e,
@@ -4268,56 +4308,56 @@
                     className: "align-self-center"
                 }, "None added")))
             };
-            var zn = (0, a.Z)("h2", {
+            var Gn = (0, a.Z)("h2", {
                     target: "e19ri8nl7"
                 })({
                     name: "14mdnr2",
                     styles: "font-size:1.5rem;font-weight:bold"
                 }),
-                Gn = (0, a.Z)("div", {
+                Dn = (0, a.Z)("div", {
                     target: "e19ri8nl6"
                 })({
                     name: "11po3a3",
                     styles: "display:flex;flex-direction:column;align-items:start;justify-content:start;border-radius:8px;overflow:hidden;background:#2a2e34"
                 }),
-                Dn = (0, a.Z)("div", {
+                Fn = (0, a.Z)("div", {
                     target: "e19ri8nl5"
                 })({
                     name: "r0ww0u",
                     styles: "background-color:#181b1f;border:5px solid #252a30;min-width:100px;min-height:100px;width:100px;height:100px;border-radius:50%;margin:10px;display:flex;justify-content:center;align-items:center;transition:transform 0.1s ease-in"
                 }),
-                Fn = (0, a.Z)(Dn, {
+                Xn = (0, a.Z)(Fn, {
                     target: "e19ri8nl4"
                 })({
                     name: "jrwc5p",
                     styles: ":hover{transform:scale(1.1);cursor:pointer;}"
                 }),
-                Xn = (0, a.Z)(Fn, {
+                _n = (0, a.Z)(Xn, {
                     target: "e19ri8nl3"
                 })(""),
-                _n = (0, a.Z)(Gn, {
+                $n = (0, a.Z)(Dn, {
                     target: "e19ri8nl2"
                 })({
                     name: "u5t5ke",
                     styles: "flex:1;min-width:350px;min-height:136px"
                 }),
-                $n = (0, a.Z)(me.JX, {
+                Jn = (0, a.Z)(me.JX, {
                     target: "e19ri8nl1"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Jn = (0, a.Z)($n, {
+                Bn = (0, a.Z)(Jn, {
                     target: "e19ri8nl0"
                 })({
                     name: "18clcmv",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto"
                 }),
-                Bn = n(87261),
-                Vn = n(50347),
-                Wn = n(88233);
+                Vn = n(87261),
+                Wn = n(50347),
+                Yn = n(88233);
 
-            function Yn(e, t) {
+            function Hn(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -4328,237 +4368,260 @@
                 return n
             }
 
-            function Hn(e) {
+            function Qn(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Yn(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Hn(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Yn(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Hn(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var Qn = C.lazy((function() {
+            var Kn = C.lazy((function() {
                 return Promise.all([n.e(123), n.e(786), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(4814)]).then(n.bind(n, 40527))
             }));
-            const Kn = function(e) {
-                var t, n, r, a = e.group,
-                    i = e.gallery,
-                    c = e.justAdded,
-                    s = void 0 !== c && c,
-                    u = (0, O.I0)(),
-                    m = (0, O.v9)((function(e) {
+            const er = function(e) {
+                var t, n, a, i = e.group,
+                    c = e.gallery,
+                    s = e.justAdded,
+                    u = void 0 !== s && s,
+                    m = (0, O.I0)(),
+                    d = (0, O.v9)((function(e) {
                         var t;
                         return null === (t = e.group) || void 0 === t || null === (t = t.galleries) || void 0 === t ? void 0 : t.isLoading
                     })),
-                    d = C.useState(!1),
-                    p = (0, l.Z)(d, 2),
-                    g = p[0],
-                    f = p[1],
-                    E = C.useState(null),
-                    v = (0, l.Z)(E, 2),
-                    h = v[0],
-                    b = (v[1], C.useState(null)),
-                    w = (0, l.Z)(b, 2),
-                    y = w[0],
-                    x = w[1],
-                    k = C.useState(null),
-                    Z = (0, l.Z)(k, 2),
-                    N = Z[0],
-                    S = Z[1],
-                    j = C.useState(!1),
-                    A = (0, l.Z)(j, 2),
-                    T = A[0],
-                    R = A[1],
-                    U = C.useState({
-                        name: i.name,
-                        description: i.description,
-                        membersOnly: i.membersOnly
+                    p = C.useState(!1),
+                    g = (0, l.Z)(p, 2),
+                    f = g[0],
+                    E = g[1],
+                    v = C.useState(null),
+                    h = (0, l.Z)(v, 2),
+                    b = h[0],
+                    w = (h[1], C.useState(null)),
+                    y = (0, l.Z)(w, 2),
+                    x = y[0],
+                    k = y[1],
+                    Z = C.useState(null),
+                    S = (0, l.Z)(Z, 2),
+                    j = S[0],
+                    A = S[1],
+                    P = C.useState(!1),
+                    R = (0, l.Z)(P, 2),
+                    U = R[0],
+                    q = R[1],
+                    z = C.useState({
+                        name: c.name,
+                        description: c.description,
+                        membersOnly: c.membersOnly
                     }),
-                    q = (0, l.Z)(U, 2),
-                    z = q[0],
-                    G = q[1],
-                    D = C.useState(!1),
-                    F = (0, l.Z)(D, 2),
-                    _ = F[0],
-                    $ = F[1],
-                    W = C.useState(15),
-                    Y = (0, l.Z)(W, 1)[0],
-                    H = C.useState(1),
-                    Q = (0, l.Z)(H, 2),
-                    ee = Q[0],
-                    te = Q[1],
-                    ne = C.useState(!0),
-                    le = (0, l.Z)(ne, 2),
-                    ae = le[0],
-                    oe = le[1],
-                    ie = (0, pe.d3)({
-                        groupId: a.id,
-                        galleryId: i.id,
-                        n: Y,
-                        page: ee
+                    G = (0, l.Z)(z, 2),
+                    D = G[0],
+                    F = G[1],
+                    _ = C.useState(!1),
+                    $ = (0, l.Z)(_, 2),
+                    W = $[0],
+                    Y = $[1],
+                    H = C.useState(15),
+                    Q = (0, l.Z)(H, 1)[0],
+                    ee = C.useState(1),
+                    te = (0, l.Z)(ee, 2),
+                    ne = te[0],
+                    le = te[1],
+                    ae = C.useState(!0),
+                    oe = (0, l.Z)(ae, 2),
+                    ie = oe[0],
+                    ce = oe[1],
+                    me = (0, pe.d3)({
+                        groupId: i.id,
+                        galleryId: c.id,
+                        n: Q,
+                        page: ne
                     }),
-                    ce = ie.data,
-                    me = ie.isLoading,
-                    de = ie.isSuccess,
-                    ge = (0, pe.zv)(),
-                    fe = (0, l.Z)(ge, 2),
-                    Ee = fe[0],
-                    ve = (fe[1].isLoading, (0, pe.E8)()),
-                    he = (0, l.Z)(ve, 2),
-                    be = he[0],
-                    we = (he[1].isLoading, (0, pe.pI)()),
-                    ye = (0, l.Z)(we, 2),
-                    xe = ye[0],
-                    ke = ye[1],
-                    Ze = (ke.isLoading, ke.isSuccess),
-                    Ne = (0, pe.jP)(),
-                    Ie = (0, l.Z)(Ne, 2),
-                    Ce = Ie[0];
-                Ie[1].isLoading;
+                    de = me.data,
+                    ge = me.isLoading,
+                    fe = me.isSuccess,
+                    Ee = (0, pe.zv)(),
+                    ve = (0, l.Z)(Ee, 2),
+                    he = ve[0],
+                    be = (ve[1].isLoading, (0, pe.E8)()),
+                    we = (0, l.Z)(be, 2),
+                    ye = we[0],
+                    xe = (we[1].isLoading, (0, pe.pI)()),
+                    ke = (0, l.Z)(xe, 2),
+                    Ze = ke[0],
+                    Ne = ke[1],
+                    Ie = (Ne.isLoading, Ne.isSuccess),
+                    Ce = (0, pe.jP)(),
+                    Oe = (0, l.Z)(Ce, 2),
+                    Se = Oe[0],
+                    je = (Oe[1].isLoading, (0, Nt.P2)());
                 C.useEffect((function() {
-                    document.getElementById(i.id) && s && !_ && (document.getElementById(i.id).scrollIntoView({
+                    document.getElementById(c.id) && u && !W && (document.getElementById(c.id).scrollIntoView({
                         behavior: "smooth"
-                    }), $(!0))
+                    }), Y(!0))
                 })), C.useEffect((function() {
-                    Ze && R(!1)
-                }), [Ze]), C.useEffect((function() {
-                    de && oe((null == ce ? void 0 : ce.totalCount) >= 100)
-                }), [de]);
-                var Oe = function(e) {
-                    var t = "checkbox" === e.target.getAttribute("type") ? !e.target.checked : e.target.value;
-                    G(Hn(Hn({}, z), {}, (0, L.Z)({}, e.target.name, t)))
-                };
-                if (me) return C.createElement(re.UU, {
+                    Ie && q(!1)
+                }), [Ie]), C.useEffect((function() {
+                    fe && ce((null == de ? void 0 : de.totalCount) >= 100)
+                }), [fe]);
+                var Me = function(e) {
+                        var t = "checkbox" === e.target.getAttribute("type") ? !e.target.checked : e.target.value;
+                        F(Qn(Qn({}, D), {}, (0, L.Z)({}, e.target.name, t)))
+                    },
+                    Ae = function() {
+                        var e = (0, r.Z)(N().mark((function e() {
+                            return N().wrap((function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.prev = 0, e.next = 3, Ze({
+                                            groupId: i.id,
+                                            galleryId: c.id,
+                                            data: Qn({}, D)
+                                        }).unwrap();
+                                    case 3:
+                                        e.next = 8;
+                                        break;
+                                    case 5:
+                                        e.prev = 5, e.t0 = e.catch(0), je({
+                                            error: e.t0
+                                        });
+                                    case 8:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }), e, null, [
+                                [0, 5]
+                            ])
+                        })));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }();
+                if (ge) return C.createElement(re.UU, {
                     className: "mt-3",
                     width: "100%",
                     height: "300px"
                 });
-                var Se = P({
-                        groupMember: null == a ? void 0 : a.myMember,
+                var Pe = T({
+                        groupMember: null == i ? void 0 : i.myMember,
                         permission: "group-galleries-manage"
                     }),
-                    je = ce.totalCount,
-                    Me = (ee - 1) * Y,
-                    Ae = C.createElement(nr, null, C.createElement(rr, {
+                    Te = de.totalCount,
+                    Re = (ne - 1) * Q,
+                    Le = C.createElement(rr, null, C.createElement(lr, {
                         className: "d-flex flex-row align-items-center justify-content-center",
                         onClick: function() {
-                            return te(ee - 1)
+                            return le(ne - 1)
                         },
-                        disabled: 0 === Me
+                        disabled: 0 === Re
                     }, C.createElement(re.$1, {
                         icon: ue.A3
-                    })), C.createElement("span", null, ee, " / ", Math.ceil(je / Y), " ", C.createElement("small", null, je > 0 && "(".concat(je, "/").concat(100, ")"))), C.createElement(lr, {
+                    })), C.createElement("span", null, ne, " / ", Math.ceil(Te / Q), " ", C.createElement("small", null, Te > 0 && "(".concat(Te, "/").concat(100, ")"))), C.createElement(ar, {
                         className: "d-flex flex-row align-items-center justify-content-center",
                         onClick: function() {
-                            return te(ee + 1)
+                            return le(ne + 1)
                         },
-                        disabled: Me + Y >= je
+                        disabled: Re + Q >= Te
                     }, C.createElement(re.$1, {
                         icon: se._t
                     })));
                 return C.createElement("div", {
                     className: "my-2",
-                    id: i.id
-                }, C.createElement(Wn.Z, {
-                    imageUrl: y,
+                    id: c.id
+                }, C.createElement(Yn.Z, {
+                    imageUrl: x,
                     closeCallback: function() {
-                        x(null)
+                        k(null)
                     },
-                    nextCallback: null !== (t = ce.results) && void 0 !== t && t[N + 1] ? function() {
-                        x(ce.results[N + 1].imageUrl), S(N + 1)
+                    nextCallback: null !== (t = de.results) && void 0 !== t && t[j + 1] ? function() {
+                        k(de.results[j + 1].imageUrl), A(j + 1)
                     } : null,
-                    prevCallback: null !== (n = ce.results) && void 0 !== n && n[N - 1] ? function() {
-                        x(ce.results[N - 1].imageUrl), S(N - 1)
+                    prevCallback: null !== (n = de.results) && void 0 !== n && n[j - 1] ? function() {
+                        k(de.results[j - 1].imageUrl), A(j - 1)
                     } : null
                 }), C.createElement(M.Z, {
-                    isOpen: g,
+                    isOpen: f,
                     className: (0, I.iv)({
                         name: "1ul0gzp",
                         styles: "max-width:1500px!important"
                     })
-                }, C.createElement(J.Z, null, C.createElement(Qn, {
+                }, C.createElement(J.Z, null, C.createElement(Kn, {
                     isSelector: !0,
                     activeTab: "photos",
                     selectedCallback: function(e) {
                         var t;
-                        t = e, Ee({
-                            groupId: a.id,
-                            galleryId: i.id,
+                        t = e, he({
+                            groupId: i.id,
+                            galleryId: c.id,
                             fileId: t
-                        }), f(!1)
+                        }), E(!1)
                     },
-                    selectedId: null != h ? h : ""
+                    selectedId: null != b ? b : ""
                 })), C.createElement(B.Z, null, C.createElement(re.zx, {
                     onClick: function() {
-                        f(!1), u((0, K.b9)())
+                        E(!1), m((0, K.b9)())
                     }
-                }, "Cancel"))), C.createElement(re.oI, null, C.createElement("h4", null, i.name), C.createElement("span", null, i.description)), C.createElement(re.Ao, null, 0 !== je && Ae, T ? C.createElement(re.JX, {
+                }, "Cancel"))), C.createElement(re.oI, null, C.createElement("h4", null, c.name), C.createElement("span", null, c.description)), C.createElement(re.Ao, null, 0 !== Te && Le, U ? C.createElement(re.JX, {
                     className: "w-100"
                 }, C.createElement(V.Z, null, "Gallery name", C.createElement(re.II, {
-                    value: z.name,
+                    value: D.name,
                     name: "name",
-                    onChange: Oe,
-                    disabled: m,
+                    onChange: Me,
+                    disabled: d,
                     maxLength: 64
                 })), " ", C.createElement(V.Z, null, "Gallery description", C.createElement(re.II, {
-                    value: z.description,
+                    value: D.description,
                     name: "description",
-                    onChange: Oe,
-                    disabled: m,
+                    onChange: Me,
+                    disabled: d,
                     maxLength: 512
-                })), " ", C.createElement(re.X2, null, C.createElement(V.Z, null, "Is this gallery public?", " ", C.createElement(Bn.Z, {
+                })), " ", C.createElement(re.X2, null, C.createElement(V.Z, null, "Is this gallery public?", " ", C.createElement(Vn.Z, {
                     type: "checkbox",
                     name: "membersOnly",
-                    checked: !z.membersOnly,
-                    onChange: Oe,
-                    disabled: m
+                    checked: !D.membersOnly,
+                    onChange: Me,
+                    disabled: d
                 }))), C.createElement(re.X2, null, C.createElement(re.zx, {
                     expand: !0,
-                    onClick: function() {
-                        xe({
-                            groupId: a.id,
-                            galleryId: i.id,
-                            data: Hn({}, z)
-                        })
-                    },
-                    disabled: m
+                    onClick: Ae,
+                    disabled: d
                 }, "Update"), " ", C.createElement(re.zx, {
                     expand: !0,
                     neutral: !0,
-                    disabled: m,
+                    disabled: d,
                     onClick: function() {
-                        R(!1)
+                        q(!1)
                     }
                 }, "Cancel"), " ", C.createElement(re.zx, {
                     expand: !0,
                     danger: !0,
-                    disabled: m,
+                    disabled: d,
                     onClick: function() {
-                        Ce({
-                            groupId: a.id,
-                            galleryId: i.id,
+                        Se({
+                            groupId: i.id,
+                            galleryId: c.id,
                             confirm: !0
                         })
                     }
-                }, "Delete"))) : C.createElement(C.Fragment, null, C.createElement(er, null, (null === (r = ce.results) || void 0 === r ? void 0 : r.length) > 0 ? ce.results.map((function(e, t) {
-                    return C.createElement(Vn.Z, {
+                }, "Delete"))) : C.createElement(C.Fragment, null, C.createElement(tr, null, (null === (a = de.results) || void 0 === a ? void 0 : a.length) > 0 ? de.results.map((function(e, t) {
+                    return C.createElement(Wn.Z, {
                         key: e.id,
                         image: e.imageUrl,
-                        disableManagement: m,
+                        disableManagement: d,
                         onClick: function() {
-                            S(t),
+                            A(t),
                                 function(e) {
-                                    x(e)
+                                    k(e)
                                 }(e.imageUrl)
                         },
-                        showDeleteButton: Se,
+                        showDeleteButton: Pe,
                         onDelete: function() {
                             return function(e) {
-                                be({
-                                    groupId: a.id,
-                                    galleryId: i.id,
+                                ye({
+                                    groupId: i.id,
+                                    galleryId: c.id,
                                     imageId: e.id
                                 })
                             }(e)
@@ -4566,55 +4629,55 @@
                     })
                 })) : C.createElement("p", {
                     className: "m-0"
-                }, "There are no pictures here... yet!")), Se && C.createElement(tr, null, C.createElement(re.zx, {
+                }, "There are no pictures here... yet!")), Pe && C.createElement(nr, null, C.createElement(re.zx, {
                     className: "m-2",
-                    disabled: ae,
+                    disabled: ie,
                     onClick: function() {
-                        f(!0)
+                        E(!0)
                     }
-                }, ae ? "Gallery is full" : C.createElement(C.Fragment, null, C.createElement(re.$1, {
+                }, ie ? "Gallery is full" : C.createElement(C.Fragment, null, C.createElement(re.$1, {
                     icon: o.r8
                 }), " Post an Image")), C.createElement(re.zx, {
                     neutral: !0,
                     onClick: function() {
-                        R(!0)
+                        q(!0)
                     }
                 }, C.createElement(re.$1, {
                     icon: X.Kb
                 }), " Manage Gallery")))))
             };
-            var er = (0, a.Z)("div", {
+            var tr = (0, a.Z)("div", {
                     target: "e5pi12i4"
                 })({
                     name: "1kra7du",
                     styles: "display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-evenly;align-items:center;margin:10px 0;width:100%"
                 }),
-                tr = (0, a.Z)("div", {
+                nr = (0, a.Z)("div", {
                     target: "e5pi12i3"
                 })({
                     name: "198unna",
                     styles: "display:flex;flex-direction:row;justify-content:left;align-items:center;width:100%"
                 }),
-                nr = (0, a.Z)("div", {
+                rr = (0, a.Z)("div", {
                     target: "e5pi12i2"
                 })({
                     name: "1vtota4",
                     styles: "display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;width:100%;margin-bottom:8px"
                 }),
-                rr = (0, a.Z)(re.zx, {
+                lr = (0, a.Z)(re.zx, {
                     target: "e5pi12i1"
                 })({
                     name: "1w4w3uo",
                     styles: "width:50px;height:50px;border-radius:50%;cursor:pointer"
                 }),
-                lr = (0, a.Z)(re.zx, {
+                ar = (0, a.Z)(re.zx, {
                     target: "e5pi12i0"
                 })({
                     name: "1w4w3uo",
                     styles: "width:50px;height:50px;border-radius:50%;cursor:pointer"
                 });
 
-            function ar(e, t) {
+            function or(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -4625,18 +4688,18 @@
                 return n
             }
 
-            function or(e) {
+            function ir(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? ar(Object(n), !0).forEach((function(t) {
+                    t % 2 ? or(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ar(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : or(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            const ir = function(e) {
+            const cr = function(e) {
                 var t, n = e.group,
                     a = C.useState({
                         name: "",
@@ -4658,57 +4721,71 @@
                     b = v.isLoading,
                     w = v.isSuccess,
                     y = v.isError,
-                    x = v.error;
+                    x = v.error,
+                    k = (0, Nt.P2)(),
+                    Z = C.useState(!1),
+                    I = (0, l.Z)(Z, 2),
+                    O = I[0],
+                    S = I[1];
                 C.useEffect((function() {
                     w && p(!1)
                 }), [w]);
-                var k = function(e) {
+                var j = function(e) {
                         var t = "checkbox" === e.target.getAttribute("type") ? !e.target.checked : e.target.value;
-                        s(or(or({}, c), {}, (0, L.Z)({}, e.target.name, t)))
+                        s(ir(ir({}, c), {}, (0, L.Z)({}, e.target.name, t)))
                     },
-                    Z = function() {
+                    M = function() {
                         var e = (0, r.Z)(N().mark((function e() {
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        E(or({
+                                        return S(!1), e.prev = 1, e.next = 4, E(ir({
                                             groupId: n.id
-                                        }, c));
-                                    case 1:
+                                        }, c)).unwrap();
+                                    case 4:
+                                        e.next = 9;
+                                        break;
+                                    case 6:
+                                        e.prev = 6, e.t0 = e.catch(1), k({
+                                            error: e.t0
+                                        }) && S(!0);
+                                    case 9:
                                     case "end":
                                         return e.stop()
                                 }
-                            }), e)
+                            }), e, null, [
+                                [1, 6]
+                            ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
                         }
                     }(),
-                    I = null;
-                return P({
+                    A = null;
+                return T({
                     groupMember: null == n ? void 0 : n.myMember,
                     permission: "group-galleries-manage"
-                }) && (I = d ? C.createElement(C.Fragment, null, C.createElement(re.oI, null, C.createElement("h4", null, "Create Gallery")), C.createElement(re.Ao, null, C.createElement(V.Z, null, "Gallery name", C.createElement(re.II, {
+                }) && (A = d ? C.createElement(C.Fragment, null, C.createElement(re.oI, null, C.createElement("h4", null, "Create Gallery")), C.createElement(re.Ao, null, C.createElement(V.Z, null, "Gallery name", C.createElement(re.II, {
                     value: c.name,
                     name: "name",
-                    onChange: k,
+                    onChange: j,
                     disabled: b,
                     maxLength: 64
                 })), " ", C.createElement(V.Z, null, "Gallery description", C.createElement(re.II, {
                     value: c.description,
                     name: "description",
-                    onChange: k,
+                    onChange: j,
                     disabled: b,
                     maxLength: 512
-                })), " ", C.createElement(re.X2, null, C.createElement(V.Z, null, "Is this gallery public?", " ", C.createElement(Bn.Z, {
+                })), " ", C.createElement(re.X2, null, C.createElement(V.Z, null, "Is this gallery public?", " ", C.createElement(Vn.Z, {
                     type: "checkbox",
                     name: "membersOnly",
                     checked: !c.membersOnly,
-                    onChange: k,
+                    onChange: j,
                     disabled: b
                 }))), C.createElement(re.X2, null, C.createElement(re.zx, {
                     expand: !0,
-                    onClick: Z,
+                    onClick: M,
                     disabled: b,
                     loading: b
                 }, "Create"), " ", C.createElement(re.zx, {
@@ -4726,29 +4803,29 @@
                     loading: b
                 }, C.createElement(re.$1, {
                     icon: o.r8
-                }), " Create Gallery")), C.createElement("div", null, y && C.createElement(re.qX, {
+                }), " Create Gallery")), C.createElement("div", null, y && !O && C.createElement(re.qX, {
                     type: "error",
                     title: "Error",
                     className: "my-2"
-                }, (null == x || null === (t = x.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred while creating the gallery."), I, n.galleries.length > 0 ? n.galleries.map((function(e) {
-                    return (e.membersOnly && (null == n ? void 0 : n.myMember) || !e.membersOnly) && C.createElement(Kn, {
+                }, (null == x || null === (t = x.data) || void 0 === t ? void 0 : t.error.message) || "An error occurred while creating the gallery."), A, n.galleries.length > 0 ? n.galleries.map((function(e) {
+                    return (e.membersOnly && (null == n ? void 0 : n.myMember) || !e.membersOnly) && C.createElement(er, {
                         key: e.id,
                         group: n,
                         gallery: e,
                         justAdded: w && (null == h ? void 0 : h.id) === e.id
                     })
-                })) : C.createElement(cr, null, "There aren't any galleries here!"))
+                })) : C.createElement(sr, null, "There aren't any galleries here!"))
             };
-            var cr = (0, a.Z)(re.oI, {
+            var sr = (0, a.Z)(re.oI, {
                     target: "e7nydss0"
                 })({
                     name: "es1q9a",
                     styles: "border-radius:6px;text-align:center;font-size:1.2rem;font-weight:bold;justify-content:center;align-items:center;padding:3rem 1rem;margin-top:0.5rem"
                 }),
-                sr = n(9186),
-                ur = n(64509);
+                ur = n(9186),
+                mr = n(64509);
 
-            function mr(e, t) {
+            function dr(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -4759,21 +4836,21 @@
                 return n
             }
 
-            function dr(e) {
+            function pr(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? mr(Object(n), !0).forEach((function(t) {
+                    t % 2 ? dr(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : mr(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : dr(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            const pr = function(e) {
+            const gr = function(e) {
                 var t = e.group,
                     n = e.onJoinButtonClick,
-                    r = (0, sr.Z)().sortedLocations,
+                    r = (0, ur.Z)().sortedLocations,
                     a = (0, te.XC)(),
                     i = a.data,
                     c = a.isLoading,
@@ -4807,11 +4884,11 @@
                             var n = e.memberCount;
                             return t.memberCount - n
                         }))) || void 0 === e ? void 0 : e.map((function(e) {
-                            return t.includes(e.instanceId) ? dr(dr({}, e), {}, {
+                            return t.includes(e.instanceId) ? pr(pr({}, e), {}, {
                                 users: r.find((function(t) {
                                     return t.instanceId === e.instanceId
                                 })).users
-                            }) : dr(dr({}, e), {}, {
+                            }) : pr(pr({}, e), {}, {
                                 users: []
                             })
                         })))
@@ -4824,7 +4901,7 @@
                             r = t.users;
                         return n.length === r.length ? 0 : n.length > r.length ? -1 : 1
                     }))) || void 0 === e ? void 0 : e.map((function(e) {
-                        return C.createElement(ur.Z, {
+                        return C.createElement(mr.Z, {
                             key: "location-".concat(e.location),
                             className: "mb-4",
                             location: e,
@@ -4869,7 +4946,7 @@
                     className: "text-center"
                 }, "Nothing to see here!")))
             };
-            const gr = function(e) {
+            const fr = function(e) {
                 var t = e.member,
                     n = e.isOwner,
                     r = e.isEditable,
@@ -4889,7 +4966,7 @@
                     v = E.thumbnailUrl,
                     h = E.currentAvatarThumbnailImageUrl,
                     b = E.displayName;
-                return C.createElement(fr, null, C.createElement(Vn.Z, {
+                return C.createElement(Er, null, C.createElement(Wn.Z, {
                     image: v || h,
                     onEdit: r ? function() {
                         l ? l(t.id) : console.warn("Edit button in member card clicked, but no onEdit callback has been specified.")
@@ -4906,26 +4983,26 @@
                     deleteButtonTitle: i,
                     confirmDelete: !1,
                     width: 300
-                }), C.createElement(Er, null, n && C.createElement("span", null, C.createElement(le.Z, {
+                }), C.createElement(vr, null, n && C.createElement("span", null, C.createElement(le.Z, {
                     icon: Se.nm,
                     width: 25
                 }), " "), C.createElement("h4", null, b)))
             };
-            var fr = (0, a.Z)("div", {
+            var Er = (0, a.Z)("div", {
                     target: "e1ml2klq1"
                 })({
                     name: "9flrez",
                     styles: "position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;>div:first-of-type{margin:0;border-bottom-right-radius:0;border-bottom-left-radius:0;}"
                 }),
-                Er = (0, a.Z)("div", {
+                vr = (0, a.Z)("div", {
                     target: "e1ml2klq0"
                 })({
                     name: "7foox8",
                     styles: "display:flex;flex-direction:row;align-items:center;justify-content:center;border:4px solid #252a30;background-color:#252a30;text-align:center;width:100%;border-bottom-right-radius:8px;border-bottom-left-radius:8px"
                 }),
-                vr = n(73670),
-                hr = n(15574);
-            const br = function(e) {
+                hr = n(73670),
+                br = n(15574);
+            const wr = function(e) {
                 var t = e.group,
                     n = e.user,
                     r = e.errorCallback,
@@ -4955,7 +5032,7 @@
                     I && a(O)
                 }), [I, O]), C.createElement("div", {
                     className: "mt-2 mb-2 d-flex flex-column justify-content-center"
-                }, C.createElement(hr.Z, {
+                }, C.createElement(br.Z, {
                     className: "mb-0",
                     userId: n.id,
                     openLinksInNewTab: !0
@@ -4987,9 +5064,9 @@
                     className: "mx-2"
                 }), "ban", x && "ned", " ", n.displayName))
             };
-            var wr = n(25411),
-                yr = n(12227);
-            const xr = function(e) {
+            var yr = n(25411),
+                xr = n(12227);
+            const kr = function(e) {
                 var t = e.group,
                     n = e.mode,
                     r = void 0 === n ? "invite" : n,
@@ -5009,16 +5086,16 @@
                     E = g[1],
                     v = o && !1;
                 C.useEffect((function() {
-                    E(""), "" !== m && a((0, wr.pz)({
+                    E(""), "" !== m && a((0, yr.pz)({
                         searchTerm: m,
-                        n: yr.En,
+                        n: xr.En,
                         isInternalVariant: v
                     }))
                 }), [m]);
                 var h = function(e) {
                     e && E(e.data.error.message)
                 };
-                return C.createElement(C.Fragment, null, C.createElement(vr.Z, {
+                return C.createElement(C.Fragment, null, C.createElement(hr.Z, {
                     searchString: u,
                     placeholder: "Search users..."
                 }), f && C.createElement(re.qX, {
@@ -5027,7 +5104,7 @@
                     className: "px-4",
                     message: f
                 }), d.map((function(e) {
-                    return C.createElement(br, {
+                    return C.createElement(wr, {
                         mode: r,
                         key: e.id,
                         group: t,
@@ -5036,9 +5113,9 @@
                     })
                 })))
             };
-            var kr = n(37599),
-                Zr = n(61509);
-            const Nr = function(e) {
+            var Zr = n(37599),
+                Nr = n(61509);
+            const Ir = function(e) {
                 var t, n, r, a, o, c, s, u, m = e.group,
                     d = (0, O.I0)(),
                     p = C.useState(!1),
@@ -5059,13 +5136,13 @@
                     I = N.data,
                     j = N.isError,
                     A = N.isLoading,
-                    T = (0, pe.dZ)({
+                    P = (0, pe.dZ)({
                         groupId: m.id
                     }),
-                    R = T.data,
-                    L = T.isError,
-                    U = T.error,
-                    q = T.isLoading,
+                    R = P.data,
+                    L = P.isError,
+                    U = P.error,
+                    q = P.isLoading,
                     z = (0, pe.dZ)({
                         groupId: m.id,
                         blocked: !0
@@ -5108,7 +5185,7 @@
                     Ce = Ne.error;
                 (0, S.s0)(), (0, de.pc)();
                 C.useEffect((function() {
-                    me && d(Zr.S.util.updateQueryData("getGroupById", {
+                    me && d(Nr.S.util.updateQueryData("getGroupById", {
                         groupId: m.id
                     }, (function(e) {
                         e.memberCount += 1
@@ -5117,7 +5194,7 @@
                 var Oe = function() {
                     w(!1), Z(null)
                 };
-                P({
+                T({
                     groupMember: null == m ? void 0 : m.myMember,
                     permission: "group-members-manage"
                 });
@@ -5152,7 +5229,7 @@
                     })
                 }, C.createElement("h4", {
                     className: "m-0"
-                }, "Invite Somebody")), C.createElement(J.Z, null, C.createElement(xr, {
+                }, "Invite Somebody")), C.createElement(J.Z, null, C.createElement(kr, {
                     group: m,
                     mode: "invite"
                 }))), C.createElement(re.zx, {
@@ -5161,7 +5238,7 @@
                     onClick: function() {
                         E(!0)
                     }
-                }, "Invite Somebody"), C.createElement(kr.Z, {
+                }, "Invite Somebody"), C.createElement(Zr.Z, {
                     title: "Join Requests",
                     collapseOpen: !0
                 }, we && C.createElement(re.qX, {
@@ -5187,12 +5264,12 @@
                 }, q ? C.createElement(re.UU, {
                     width: "100%",
                     height: "75px"
-                }) : C.createElement(Ir, null, 0 === (null == R ? void 0 : R.length) ? C.createElement("p", {
+                }) : C.createElement(Cr, null, 0 === (null == R ? void 0 : R.length) ? C.createElement("p", {
                     className: "m-0"
                 }, "Nobody is waiting to join!") : null, null == R ? void 0 : R.map((function(e) {
                     return C.createElement("div", {
                         className: "mb-2"
-                    }, C.createElement(gr, {
+                    }, C.createElement(fr, {
                         member: e,
                         navigate: "/home/user/".concat(e.userId),
                         onAccept: function() {
@@ -5217,7 +5294,7 @@
                         },
                         showView: !1
                     }))
-                }))))), C.createElement(kr.Z, {
+                }))))), C.createElement(Zr.Z, {
                     title: "Sent Invites"
                 }, j && C.createElement(re.qX, {
                     type: "error",
@@ -5234,12 +5311,12 @@
                 }, A ? C.createElement(re.UU, {
                     width: "100%",
                     height: "75px"
-                }) : C.createElement(Ir, null, 0 === (null == I ? void 0 : I.length) ? C.createElement("p", {
+                }) : C.createElement(Cr, null, 0 === (null == I ? void 0 : I.length) ? C.createElement("p", {
                     className: "m-0"
                 }, "Nobody has been invited to this group!") : null, null == I ? void 0 : I.map((function(e) {
                     return C.createElement("div", {
                         className: "mb-2"
-                    }, C.createElement(gr, {
+                    }, C.createElement(fr, {
                         member: e,
                         onDelete: function() {
                             var t;
@@ -5251,7 +5328,7 @@
                         navigate: "/home/user/".concat(e.userId),
                         showView: !1
                     }))
-                }))))), C.createElement(kr.Z, {
+                }))))), C.createElement(Zr.Z, {
                     title: "Blocked Requests"
                 }, D && C.createElement(re.qX, {
                     type: "error",
@@ -5268,12 +5345,12 @@
                 }, A ? C.createElement(re.UU, {
                     width: "100%",
                     height: "75px"
-                }) : C.createElement(Ir, null, 0 === (null == G ? void 0 : G.length) ? C.createElement("p", {
+                }) : C.createElement(Cr, null, 0 === (null == G ? void 0 : G.length) ? C.createElement("p", {
                     className: "m-0"
                 }, "Nobody has been blocked from joining the group!") : null, null == G ? void 0 : G.map((function(e) {
                     return C.createElement("div", {
                         className: "mb-2"
-                    }, C.createElement(gr, {
+                    }, C.createElement(fr, {
                         member: e,
                         onUnblock: function() {
                             H({
@@ -5286,21 +5363,21 @@
                     }))
                 }))))))
             };
-            var Ir = (0, a.Z)("div", {
+            var Cr = (0, a.Z)("div", {
                     target: "e1hocgvc0"
                 })({
                     name: "1fx10vo",
                     styles: "display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;justify-content:space-around"
                 }),
-                Cr = n(87462),
-                Or = n(66736),
-                Sr = n(73647),
-                jr = n(68791),
-                Mr = n(40067),
-                Ar = n(7701),
+                Or = n(87462),
+                Sr = n(66736),
+                jr = n(73647),
+                Mr = n(68791),
+                Ar = n(40067),
+                Pr = n(7701),
                 Tr = n(50352),
-                Pr = n(77708);
-            const Rr = function(e) {
+                Rr = n(77708);
+            const Lr = function(e) {
                 var t, n, r, a, o, i = e.group,
                     c = (0, O.I0)(),
                     s = (0, de.pc)(),
@@ -5319,7 +5396,7 @@
                     g = (0, te.XC)(),
                     f = g.data,
                     E = g.isLoading,
-                    v = (0, Or.mb)({
+                    v = (0, Sr.mb)({
                         storeId: null == i ? void 0 : i.storeId,
                         hydrateListings: !0
                     }, {
@@ -5330,7 +5407,7 @@
                     b = v.isFetching,
                     w = v.isError,
                     y = v.error,
-                    x = (0, Or.CE)({
+                    x = (0, Sr.CE)({
                         receiverId: f.id,
                         sellerId: i.ownerId,
                         active: !0,
@@ -5355,9 +5432,9 @@
                             }
                         }))
                     }), [Z, h]),
-                    M = (0, Or.M3)(),
+                    M = (0, Sr.M3)(),
                     A = M.data,
-                    T = void 0 === A ? {
+                    P = void 0 === A ? {
                         economyOnline: !1,
                         plannedOfflineWindowStart: null,
                         plannedOfflineWindowEnd: null,
@@ -5366,15 +5443,15 @@
                         shadowBreaker: null,
                         ledgerMode: null
                     } : A,
-                    P = T.economyOnline,
-                    R = T.plannedOfflineWindowStart,
-                    L = T.plannedOfflineWindowEnd,
-                    U = T.offlineReason,
-                    q = T.economyState,
-                    z = (T.shadowBreaker, T.ledgerMode, M.isFetching),
+                    T = P.economyOnline,
+                    R = P.plannedOfflineWindowStart,
+                    L = P.plannedOfflineWindowEnd,
+                    U = P.offlineReason,
+                    q = P.economyState,
+                    z = (P.shadowBreaker, P.ledgerMode, M.isFetching),
                     G = M.isError,
                     D = M.error,
-                    F = (0, Or.Fi)({
+                    F = (0, Sr.Fi)({
                         userId: f.id
                     }, {
                         skip: !f,
@@ -5391,7 +5468,7 @@
                             n = e.listingId,
                             r = e.listing,
                             l = e.purchase;
-                        c((0, Sr.zy)({
+                        c((0, jr.zy)({
                             currentUserId: t,
                             listingId: n,
                             listing: r,
@@ -5407,7 +5484,7 @@
                             s = t.enteredPurchaseQuantity,
                             u = t.selectedPurchaseQuantity,
                             m = t.quantity;
-                        c(e ? (0, Sr.DF)({
+                        c(e ? (0, jr.DF)({
                             listing: n,
                             purchase: r,
                             group: i,
@@ -5418,7 +5495,7 @@
                             quantity: m,
                             enteredPurchaseQuantity: s,
                             selectedPurchaseQuantity: u
-                        }) : (0, Sr.Li)({
+                        }) : (0, jr.Li)({
                             listing: n,
                             purchase: r,
                             group: i,
@@ -5459,7 +5536,7 @@
                     title: "Something strange happened"
                 }, C.createElement("p", {
                     className: "m-0"
-                }, "Error getting Tilia online status: ", D.status, " ", null !== (n = null === (r = D.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Unknown error")), !P && !G && C.createElement(re.qX, {
+                }, "Error getting Tilia online status: ", D.status, " ", null !== (n = null === (r = D.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Unknown error")), !T && !G && C.createElement(re.qX, {
                     type: "warn",
                     title: "Store Maintenance"
                 }, C.createElement(C.Fragment, null, C.createElement("p", {
@@ -5472,7 +5549,7 @@
                 }, null == S || null === (a = S.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message), w && C.createElement(re.qX, {
                     type: "error",
                     title: "Error loading listings"
-                }, null == y || null === (o = y.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), ne && P && C.createElement(re.qX, {
+                }, null == y || null === (o = y.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message), ne && T && C.createElement(re.qX, {
                     type: "warn",
                     title: "Store Maintenance"
                 }, C.createElement("p", {
@@ -5495,27 +5572,27 @@
                     },
                     justify: "left"
                 }), null != ee && ee.length ? null == ee ? void 0 : ee.map((function(e, t) {
-                    return C.createElement(jr.Z, (0, Cr.Z)({
+                    return C.createElement(Mr.Z, (0, Or.Z)({
                         key: e.listing.id
                     }, e, {
                         group: i,
                         tokenBalance: !J && _,
                         index: t,
-                        economyOnline: P,
+                        economyOnline: T,
                         economyState: q,
                         isMod: s,
                         onCancel: B,
                         onPurchase: V
                     }))
-                })) : C.createElement("p", null, H ? "You have no current subscriptions to this group!" : "There are no subscription options here!"), u.isOpen && C.createElement(Mr.Z, null), m.isOpen && C.createElement(Pr.Z, null), d.isOpen && C.createElement(Ar.Z, {
+                })) : C.createElement("p", null, H ? "You have no current subscriptions to this group!" : "There are no subscription options here!"), u.isOpen && C.createElement(Ar.Z, null), m.isOpen && C.createElement(Rr.Z, null), d.isOpen && C.createElement(Pr.Z, {
                     groupData: i
                 }), p.isOpen && C.createElement(Tr.Z, null)))
             };
-            var Lr = n(28764),
-                Ur = n(96427),
-                qr = n(42137),
-                zr = n(9230);
-            const Gr = function(e) {
+            var Ur = n(28764),
+                qr = n(96427),
+                zr = n(42137),
+                Gr = n(9230);
+            const Dr = function(e) {
                 var t, n = e.postData,
                     r = e.myMember,
                     a = void 0 === r ? {
@@ -5559,7 +5636,7 @@
                     }), [E, k]);
                 return C.createElement("div", {
                     className: "d-flex align-items-center"
-                }, C.createElement(Fr, {
+                }, C.createElement(Xr, {
                     isExpanded: E,
                     ref: i,
                     className: "container-fluid p-0"
@@ -5567,52 +5644,52 @@
                     className: "row"
                 }, C.createElement("div", {
                     className: "col-12 d-flex align-items-center d-sm-none"
-                }, C.createElement(Yr, {
+                }, C.createElement(Hr, {
                     src: w
                 })), C.createElement("div", {
                     className: "".concat(O ? " col-sm-6 col-md-6 col-lg-7 col-xl-7 col-12" : "col-12")
-                }, C.createElement(Xr, null, C.createElement($r, null, y), function() {
-                    if (0 === N.length) return C.createElement(Jr, null, C.createElement("div", null, C.createElement(re.$1, {
-                        icon: qr.SZ
+                }, C.createElement(_r, null, C.createElement(Jr, null, y), function() {
+                    if (0 === N.length) return C.createElement(Br, null, C.createElement("div", null, C.createElement(re.$1, {
+                        icon: zr.SZ
                     }), " ", (0, xe.h4)(h), C.createElement(re.$1, {
                         className: "ms-2",
-                        icon: zr.iO
+                        icon: Gr.iO
                     }), " ", "public" === I ? "Public" : "Group"));
                     var e = (0, U.Z)(N).sort((function(e, t) {
                         return S.includes(t) ? 1 : -1
                     }));
-                    return C.createElement(Jr, null, C.createElement("div", null, C.createElement(re.$1, {
-                        icon: qr.SZ
-                    }), " ", (0, xe.h4)(h)), C.createElement(Vr, null, C.createElement(re.$1, {
-                        icon: Ur.Aq
+                    return C.createElement(Br, null, C.createElement("div", null, C.createElement(re.$1, {
+                        icon: zr.SZ
+                    }), " ", (0, xe.h4)(h)), C.createElement(Wr, null, C.createElement(re.$1, {
+                        icon: qr.Aq
                     }), " Only Seen By", " ", e.map((function(e) {
                         var t = p.find((function(t) {
                                 return t.id === e
                             })),
                             n = !(null == t || !t.productId);
-                        return t ? C.createElement(Br, {
+                        return t ? C.createElement(Vr, {
                             id: t.id,
                             hasRole: S.includes(t.id)
                         }, n ? C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Lr.n7,
+                            icon: Ur.n7,
                             className: "me-1"
                         }), t.name) : t.name) : null
                     }))))
-                }(), C.createElement(_r, {
+                }(), C.createElement($r, {
                     hasImage: O,
                     isExpanded: E
-                }, M, C.createElement(Wr, {
+                }, M, C.createElement(Yr, {
                     showReadMore: A,
                     onClick: function() {
                         return v(!0)
                     }
                 }, "Read More")))), O && C.createElement("div", {
                     className: "col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5 d-none d-sm-flex align-items-center"
-                }, C.createElement(Yr, {
+                }, C.createElement(Hr, {
                     src: w
                 })))), s && C.createElement("div", {
                     className: "ps-5 pe-4"
-                }, C.createElement(Dr, {
+                }, C.createElement(Fr, {
                     color: "danger",
                     onClick: function() {
                         return m(n)
@@ -5621,65 +5698,65 @@
                     icon: q.$
                 }))))
             };
-            var Dr = (0, a.Z)(Xe.Z, {
+            var Fr = (0, a.Z)(Xe.Z, {
                     target: "ewr2sfy9"
                 })({
                     name: "3891qj",
                     styles: "border-radius:50px;color:white"
                 }),
-                Fr = (0, a.Z)("div", {
+                Xr = (0, a.Z)("div", {
                     target: "ewr2sfy8"
                 })({
                     name: "m9gplg",
                     styles: "background-color:#0a0a0d;border-radius:10px;color:#bababa;margin-bottom:20px;overflow:hidden;transition:all 0.3s ease-in-out"
                 }),
-                Xr = (0, a.Z)("div", {
+                _r = (0, a.Z)("div", {
                     target: "ewr2sfy7"
                 })({
                     name: "1yjx7km",
                     styles: "padding:20px"
                 }),
-                _r = (0, a.Z)("p", {
+                $r = (0, a.Z)("p", {
                     target: "ewr2sfy6"
                 })({
                     name: "n4pob0",
                     styles: "font-size:18px;flex-grow:1;word-wrap:break-word;white-space:pre-wrap;display:inline-block;overflow:auto;margin-bottom:0;min-height:auto;font-size:16px;margin-top:14px;width:100%"
                 }),
-                $r = (0, a.Z)("h4", {
+                Jr = (0, a.Z)("h4", {
                     target: "ewr2sfy5"
                 })({
                     name: "1ji90xs",
                     styles: "text-align:start;color:#fff;word-break:normal;font-size:20px"
                 }),
-                Jr = (0, a.Z)("h4", {
+                Br = (0, a.Z)("h4", {
                     target: "ewr2sfy4"
                 })({
                     name: "1rmpetc",
                     styles: "color:#737372;font-size:12px;font-weight:500;line-height:1.3em;display:inline-block"
                 }),
-                Br = (0, a.Z)("div", {
+                Vr = (0, a.Z)("div", {
                     target: "ewr2sfy3"
                 })("color:#dadada;background-color:#575757;padding:0.4em;border-radius:10rem;display:inline-block;font-size:12px;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;font-weight:normal;margin-right:5px;opacity:", (function(e) {
                     return e.hasRole ? 1 : .7
                 }), ";"),
-                Vr = (0, a.Z)("div", {
+                Wr = (0, a.Z)("div", {
                     target: "ewr2sfy2"
                 })({
                     name: "1mcu3c1",
                     styles: "line-height:2em;margin-top:4px"
                 }),
-                Wr = (0, a.Z)("span", {
+                Yr = (0, a.Z)("span", {
                     target: "ewr2sfy1"
                 })("color:#fff;cursor:pointer;display:", (function(e) {
                     return e.showReadMore ? "inline-block" : "none"
                 }), ";"),
-                Yr = (0, a.Z)("img", {
+                Hr = (0, a.Z)("img", {
                     target: "ewr2sfy0"
                 })({
                     name: "k8r326",
                     styles: "max-height:25vh;margin:0 auto"
                 });
-            var Hr = function(e) {
+            var Qr = function(e) {
                 var t = e.group,
                     n = e.onChange,
                     r = e.selectedRoles,
@@ -5693,13 +5770,13 @@
                     i = function(e) {
                         return !(null == e || !e.productId)
                     };
-                return C.createElement(Kr, null, C.createElement("h6", null, "Management Roles"), C.createElement("div", {
+                return C.createElement(el, null, C.createElement("h6", null, "Management Roles"), C.createElement("div", {
                     className: "d-flex flex-wrap"
                 }, a.map((function(e) {
                     return C.createElement(re.vc, {
                         id: e.id,
                         label: i(e) ? C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Lr.n7,
+                            icon: Ur.n7,
                             className: "me-1"
                         }), e.name) : e.name,
                         value: e.id,
@@ -5716,7 +5793,7 @@
                     return C.createElement(re.vc, {
                         id: e.id,
                         label: i(e) ? C.createElement(C.Fragment, null, C.createElement(re.$1, {
-                            icon: Lr.n7,
+                            icon: Ur.n7,
                             className: "me-1"
                         }), e.name) : e.name,
                         value: e.id,
@@ -5727,28 +5804,28 @@
                     })
                 }))))
             };
-            Hr.propTypes = {
+            Qr.propTypes = {
                 group: fe().object.isRequired,
                 onChange: fe().func.isRequired,
                 selectedRoles: fe().array.isRequired
             };
-            const Qr = Hr;
-            var Kr = (0, a.Z)("div", {
+            const Kr = Qr;
+            var el = (0, a.Z)("div", {
                 target: "e1qh7s420"
             })({
                 name: "kq62ql",
                 styles: "background-color:#000000;border-radius:5px;padding:16px 20px"
             });
-            var el = C.lazy((function() {
+            var tl = C.lazy((function() {
                     return Promise.all([n.e(123), n.e(786), n.e(4444), n.e(9908), n.e(229), n.e(3294), n.e(527), n.e(4814)]).then(n.bind(n, 40527))
                 })),
-                tl = (0, a.Z)(re.gx, {
+                nl = (0, a.Z)(re.gx, {
                     target: "e37d6q30"
                 })({
                     name: "tz9wht",
                     styles: ">textarea{min-height:250px;}"
                 });
-            const nl = function(e) {
+            const rl = function(e) {
                 var t = e.group,
                     n = (0, O.I0)(),
                     a = C.useState(""),
@@ -5774,9 +5851,9 @@
                     S = C.useState(!0),
                     j = (0, l.Z)(S, 2),
                     A = j[0],
-                    T = j[1],
-                    P = C.useState(!1),
-                    R = (0, l.Z)(P, 2),
+                    P = j[1],
+                    T = C.useState(!1),
+                    R = (0, l.Z)(T, 2),
                     L = R[0],
                     q = R[1],
                     z = C.useState(""),
@@ -5788,44 +5865,51 @@
                     $ = (0, pe.t$)(),
                     Y = (0, l.Z)($, 2),
                     H = Y[0],
-                    Q = Y[1].isLoading;
+                    Q = Y[1].isLoading,
+                    ee = (0, Nt.P2)();
                 (0, C.useEffect)((function() {
                     "selectedRoles" !== f && w([])
                 }), [f]);
-                var ee = function() {
+                var ne = function() {
                         var e = (0, r.Z)(N().mark((function e() {
-                            var n;
                             return N().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (!(n = H({
-                                                groupId: t.id,
-                                                title: m,
-                                                text: i,
-                                                imageId: k,
-                                                sendNotification: A,
-                                                roleIds: b,
-                                                visibility: "public" === f ? "public" : "group"
-                                            }).unwrap()).error) {
-                                            e.next = 3;
+                                        return e.prev = 0, e.next = 3, H({
+                                            groupId: t.id,
+                                            title: m,
+                                            text: i,
+                                            imageId: k,
+                                            sendNotification: A,
+                                            roleIds: b,
+                                            visibility: "public" === f ? "public" : "group"
+                                        }).unwrap();
+                                    case 3:
+                                        c(""), d(""), Z(null), P(!0), F(""), w([]), E("group"), e.next = 11;
+                                        break;
+                                    case 6:
+                                        if (e.prev = 6, e.t0 = e.catch(0), console.error("Failed to create post:", e.t0), !ee({
+                                                error: e.t0
+                                            })) {
+                                            e.next = 11;
                                             break
                                         }
-                                        return e.abrupt("return", console.error("Failed to create post:", n.error));
-                                    case 3:
-                                        c(""), d(""), Z(null), T(!0), F(""), w([]), E("group");
-                                    case 4:
+                                        return e.abrupt("return");
+                                    case 11:
                                     case "end":
                                         return e.stop()
                                 }
-                            }), e)
+                            }), e, null, [
+                                [0, 6]
+                            ])
                         })));
                         return function() {
                             return e.apply(this, arguments)
                         }
                     }(),
-                    ne = "" === i.trim() || "" === m.trim(),
-                    le = _.includes("permission-user-gallery"),
-                    oe = [{
+                    le = "" === i.trim() || "" === m.trim(),
+                    oe = _.includes("permission-user-gallery"),
+                    ie = [{
                         label: C.createElement(re.X2, {
                             className: "d-flex flex-column"
                         }, C.createElement(V.Z, {
@@ -5858,7 +5942,7 @@
                         name: "1ul0gzp",
                         styles: "max-width:1500px!important"
                     })
-                }, C.createElement(J.Z, null, C.createElement(el, {
+                }, C.createElement(J.Z, null, C.createElement(tl, {
                     isSelector: !0,
                     activeTab: "photos",
                     selectedCallback: function(e, t) {
@@ -5880,7 +5964,7 @@
                     maxLength: 128
                 })), C.createElement("div", {
                     className: "mb-3"
-                }, C.createElement(V.Z, null, "Post message"), C.createElement(tl, {
+                }, C.createElement(V.Z, null, "Post message"), C.createElement(nl, {
                     name: "post",
                     value: i,
                     onChange: function(e) {
@@ -5897,12 +5981,12 @@
                     defaultChecked: A,
                     onChangeCallback: function(e) {
                         var t = e.checked;
-                        T(t)
+                        P(t)
                     }
                 }), C.createElement(W.Z, null, "If on, a notification of this post will be sent to all members of the group!")), C.createElement("div", {
                     className: "mb-3"
                 }, C.createElement(V.Z, null, "Who can see this post"), C.createElement(re.Lt, {
-                    options: oe,
+                    options: ie,
                     className: "flex-grow-1",
                     value: f,
                     onChange: function(e) {
@@ -5911,7 +5995,7 @@
                     trimToLength: !0
                 })), "selectedRoles" === f && C.createElement("div", {
                     className: "mb-3"
-                }, C.createElement(Qr, {
+                }, C.createElement(Kr, {
                     group: t,
                     onChange: function(e) {
                         var t, n;
@@ -5923,7 +6007,7 @@
                     selectedRoles: b
                 })), C.createElement(re.X2, {
                     className: "w-100"
-                }, le && C.createElement(C.Fragment, null, C.createElement(re.zx, {
+                }, oe && C.createElement(C.Fragment, null, C.createElement(re.zx, {
                     neutral: !0,
                     expand: !0,
                     disabled: Q,
@@ -5932,11 +6016,11 @@
                         q(!0)
                     }
                 }, "Select an Image"), " "), C.createElement(re.zx, {
-                    disabled: ne || Q,
+                    disabled: le || Q,
                     loading: Q,
                     expand: !0,
-                    onClick: ee
-                }, "Create Post")), " ", C.createElement(Gr, {
+                    onClick: ne
+                }, "Create Post")), " ", C.createElement(Dr, {
                     postData: {
                         text: i,
                         title: m,
@@ -5946,8 +6030,8 @@
                     groupRoles: t.roles
                 }))
             };
-            var rl = n(82728);
-            const ll = function(e) {
+            var ll = n(82728);
+            const al = function(e) {
                 var t = e.groupId,
                     n = e.isRepresenting,
                     a = (0, C.useState)(null),
@@ -6009,14 +6093,14 @@
                     type: "button",
                     className: "tw-gap-2 tw-w-fit tw-flex tw-items-center tw-px-[10px] tw-py-2 tw-align-middle"
                 }, C.createElement(re.$1, {
-                    icon: E ? rl.vrcRepresenting : rl.vrcNotRepresenting,
+                    icon: E ? ll.vrcRepresenting : ll.vrcNotRepresenting,
                     className: "tw-h-4 tw-w-4"
                 }), C.createElement("p", {
                     className: "tw-m-0"
                 }, E ? "Unrepresent Group" : "Represent Group"))
             };
-            var al = n(78158);
-            const ol = function(e) {
+            var ol = n(78158);
+            const il = function(e) {
                 var t = e.group,
                     n = e.showBlockModal,
                     r = e.onClose,
@@ -6048,15 +6132,15 @@
                     onClick: r
                 }, "Cancel"))))
             };
-            const il = function() {
+            const cl = function() {
                 return C.createElement(C.Fragment, null, C.createElement(re.oI, {
                     className: "text-center"
                 }, C.createElement("h2", null, "You've Blocked this Group!")), C.createElement(re.Ao, {
                     className: "text-center"
                 }, "You won't get any invites from this group, and you can't join it.", C.createElement("br", null), C.createElement("br", null), "If you want to join this group or get invites from it, you have to unblock it first."))
             };
-            var cl = n(9970);
-            var sl = function(e) {
+            var sl = n(9970);
+            var ul = function(e) {
                 var t = e.group,
                     n = e.currentUser,
                     r = e.targetUser,
@@ -6065,7 +6149,7 @@
                     o = e.isLoading,
                     i = t.transferTargetId === (null == n ? void 0 : n.id),
                     c = (null == t ? void 0 : t.ownerId) === (null == n ? void 0 : n.id);
-                return C.createElement(ml, null, o ? C.createElement(re.UU, {
+                return C.createElement(dl, null, o ? C.createElement(re.UU, {
                     width: "100%",
                     height: "30px",
                     className: "mt-4"
@@ -6102,10 +6186,10 @@
                         return a()
                     }
                 }, C.createElement(re.$1, {
-                    icon: cl.EO
+                    icon: sl.EO
                 }), " ", i ? "Decline" : "Cancel")))))
             };
-            sl.propTypes = {
+            ul.propTypes = {
                 group: fe().object.isRequired,
                 currentUser: fe().object.isRequired,
                 targetUser: fe().object.isRequired,
@@ -6113,16 +6197,16 @@
                 inAccept: fe().func,
                 isLoading: fe().bool
             };
-            const ul = sl;
-            var ml = (0, a.Z)("div", {
+            const ml = ul;
+            var dl = (0, a.Z)("div", {
                     target: "ean9tdl0"
                 })({
                     name: "1sccrd7",
                     styles: "display:flex;flex-direction:column;background-color:#252A30;margin-top:10px;margin-bottom:10px;border-radius:3px;padding:10px;border-left:3px solid #252A30"
                 }),
-                dl = n(5276),
-                pl = n(84090);
-            var gl = function(e) {
+                pl = n(5276),
+                gl = n(84090);
+            var fl = function(e) {
                 var t = e.group,
                     n = void 0 === t ? null : t,
                     r = e.isEditMode,
@@ -6153,14 +6237,14 @@
                     j = O[1],
                     M = j.isLoading,
                     A = j.isSuccess,
-                    T = (0, dl.Y)({
+                    P = (0, pl.Y)({
                         rootMargin: "50px 0px",
                         onEnter: function(e) {
                             (0, e.unobserve)(), c(i + 1)
                         }
                     }),
-                    P = T.observe,
-                    R = (0, dl.Y)({
+                    T = P.observe,
+                    R = (0, pl.Y)({
                         rootMargin: "0px 0px",
                         onEnter: function(e) {
                             var t = e.scrollDirection,
@@ -6215,10 +6299,10 @@
                         return m ? G.map((function(e, t) {
                             return null !== e ? C.createElement("div", {
                                 key: e.id
-                            }, C.createElement(Gr, {
+                            }, C.createElement(Dr, {
                                 myMember: k,
                                 postData: e,
-                                observe: t === G.length - 1 ? P : 0 === t && 1 !== i ? R : null,
+                                observe: t === G.length - 1 ? T : 0 === t && 1 !== i ? R : null,
                                 isEditMode: r,
                                 deleteCallback: D,
                                 groupRoles: x
@@ -6227,7 +6311,7 @@
                     }), [G, m]);
                 return m ? C.createElement("div", {
                     className: "py-4"
-                }, C.createElement(pl.Z, {
+                }, C.createElement(gl.Z, {
                     isOpen: f,
                     bodyText: "Are you sure you want to delete this post?",
                     cancelCallback: function() {
@@ -6240,43 +6324,43 @@
                         })
                     },
                     isLoading: M
-                }), C.createElement(vl, null, C.createElement(bl, null, C.createElement(hl, null, "Posts")), C.createElement(wl, null, C.createElement(El, null, C.createElement("div", {
+                }), C.createElement(hl, null, C.createElement(wl, null, C.createElement(bl, null, "Posts")), C.createElement(yl, null, C.createElement(vl, null, C.createElement("div", {
                     className: "col"
                 }, F))))) : null
             };
-            gl.propTypes = {};
-            const fl = gl;
-            var El = (0, a.Z)("div", {
+            fl.propTypes = {};
+            const El = fl;
+            var vl = (0, a.Z)("div", {
                     target: "emafa4s4"
                 })({
                     name: "1s65yl6",
                     styles: "max-height:450px;margin-top:15px;margin-bottom:10px;overflow:auto"
                 }),
-                vl = (0, a.Z)("div", {
+                hl = (0, a.Z)("div", {
                     target: "emafa4s3"
                 })({
                     name: "11po3a3",
                     styles: "display:flex;flex-direction:column;align-items:start;justify-content:start;border-radius:8px;overflow:hidden;background:#2a2e34"
                 }),
-                hl = (0, a.Z)("h2", {
+                bl = (0, a.Z)("h2", {
                     target: "emafa4s2"
                 })({
                     name: "14mdnr2",
                     styles: "font-size:1.5rem;font-weight:bold"
                 }),
-                bl = (0, a.Z)(me.JX, {
+                wl = (0, a.Z)(me.JX, {
                     target: "emafa4s1"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                wl = (0, a.Z)(bl, {
+                yl = (0, a.Z)(wl, {
                     target: "emafa4s0"
                 })({
                     name: "18clcmv",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto"
                 });
-            const yl = function(e) {
+            const xl = function(e) {
                 var t, n, r, a = e.group,
                     o = (void 0 === a ? null : a).id,
                     i = (0, S.s0)(),
@@ -6308,10 +6392,10 @@
                     M = null !== (t = null == v ? void 0 : v.filter((function(e) {
                         return !!e.user
                     }))) && void 0 !== t ? t : [],
-                    A = h ? C.createElement(xl, {
+                    A = h ? C.createElement(kl, {
                         height: "130px"
-                    }) : C.createElement(C.Fragment, null, null != M && M.length ? C.createElement(kl, null, null == M ? void 0 : M.slice(0, 50).map((function(e) {
-                        return C.createElement(gr, {
+                    }) : C.createElement(C.Fragment, null, null != M && M.length ? C.createElement(Zl, null, null == M ? void 0 : M.slice(0, 50).map((function(e) {
+                        return C.createElement(fr, {
                             key: e.id,
                             member: e,
                             onDelete: function() {
@@ -6330,7 +6414,7 @@
                     }))) : C.createElement("p", {
                         className: "text-center"
                     }, "Nobody is banned from this group. Everyone's on their best behavior!"));
-                return C.createElement(C.Fragment, null, C.createElement(xn, {
+                return C.createElement(C.Fragment, null, C.createElement(kn, {
                     isOpen: g,
                     cancelCallback: function() {
                         return f(!1)
@@ -6354,7 +6438,7 @@
                 }, "User unbanned. They can now be invited back in if you like."), O && C.createElement(re.qX, {
                     type: "error",
                     title: "Failed to unban user"
-                }, null !== (n = null === (r = N.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : N.data.error), A, C.createElement(Zl, null, C.createElement(Nl, {
+                }, null !== (n = null === (r = N.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : N.data.error), A, C.createElement(Nl, null, C.createElement(Il, {
                     className: "d-flex flex-row align-items-center justify-content-center",
                     onClick: function() {
                         return m(u - 50)
@@ -6362,7 +6446,7 @@
                     disabled: h || 0 === u
                 }, C.createElement(re.$1, {
                     icon: ue.A3
-                })), C.createElement(Il, {
+                })), C.createElement(Cl, {
                     className: "d-flex flex-row align-items-center justify-content-center",
                     onClick: function() {
                         return m(u + 50)
@@ -6372,38 +6456,38 @@
                     icon: se._t
                 })))))
             };
-            var xl = (0, a.Z)(re.UU, {
+            var kl = (0, a.Z)(re.UU, {
                     target: "eqx7h3n4"
                 })({
                     name: "2cp9od",
                     styles: "margin:8px"
                 }),
-                kl = (0, a.Z)("div", {
+                Zl = (0, a.Z)("div", {
                     target: "eqx7h3n3"
                 })({
                     name: "j9stxx",
                     styles: "display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-evenly;>*{width:300px;margin:8px;}"
                 }),
-                Zl = (0, a.Z)("div", {
+                Nl = (0, a.Z)("div", {
                     target: "eqx7h3n2"
                 })({
                     name: "1vtota4",
                     styles: "display:flex;flex-direction:row;align-items:center;justify-content:space-evenly;width:100%;margin-bottom:8px"
                 }),
-                Nl = (0, a.Z)(re.zx, {
+                Il = (0, a.Z)(re.zx, {
                     target: "eqx7h3n1"
                 })({
                     name: "1w4w3uo",
                     styles: "width:50px;height:50px;border-radius:50%;cursor:pointer"
                 }),
-                Il = (0, a.Z)(re.zx, {
+                Cl = (0, a.Z)(re.zx, {
                     target: "eqx7h3n0"
                 })({
                     name: "1w4w3uo",
                     styles: "width:50px;height:50px;border-radius:50%;cursor:pointer"
                 }),
-                Cl = n(37024);
-            const Ol = function(e) {
+                Ol = n(37024);
+            const Sl = function(e) {
                 var t = e.group,
                     n = e.event,
                     r = (e.isEvents, e.isAdmin),
@@ -6414,7 +6498,7 @@
                     className: "tw-items-center"
                 }, !n && C.createElement("p", {
                     className: "align-self-center tw-mb-5 tw-text-placeholder-text"
-                }, "No upcoming or ongoing events"), n ? C.createElement(Cl.ZP, {
+                }, "No upcoming or ongoing events"), n ? C.createElement(Ol.ZP, {
                     event: n,
                     className: "tw-mb-5"
                 }) : null, n && C.createElement(j.rU, {
@@ -6429,10 +6513,10 @@
                     primary: !0
                 }, "Create Event"))))
             };
-            var Sl = n(88081),
-                jl = n(75727),
-                Ml = n(24752),
-                Al = n(29841),
+            var jl = n(88081),
+                Ml = n(75727),
+                Al = n(24752),
+                Pl = n(29841),
                 Tl = [{
                     key: 0,
                     label: "All",
@@ -6450,7 +6534,7 @@
                     label: "Ongoing",
                     value: "ONGOING"
                 }],
-                Pl = [{
+                Rl = [{
                     key: 0,
                     label: "Newest First",
                     value: "NEWEST"
@@ -6459,7 +6543,7 @@
                     label: "Oldest First",
                     value: "OLDEST"
                 }];
-            const Rl = function(e) {
+            const Ll = function(e) {
                 var t, n = e.onSearchUpdate,
                     r = void 0 === n ? function() {} : n,
                     a = e.onDisplayStateChange,
@@ -6499,7 +6583,7 @@
                     }
                 }), C.createElement(re.Lt, {
                     label: "Order",
-                    options: Pl,
+                    options: Rl,
                     value: x,
                     onChange: function(e) {
                         k(e), c(e)
@@ -6521,11 +6605,11 @@
                         s()
                     }
                 }, C.createElement(re.$1, {
-                    icon: Al.QR
+                    icon: Pl.QR
                 }))))
             };
 
-            function Ll(e, t) {
+            function Ul(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -6536,21 +6620,21 @@
                 return n
             }
 
-            function Ul(e) {
+            function ql(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? Ll(Object(n), !0).forEach((function(t) {
+                    t % 2 ? Ul(Object(n), !0).forEach((function(t) {
                         (0, L.Z)(e, t, n[t])
-                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ll(Object(n)).forEach((function(t) {
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ul(Object(n)).forEach((function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     }))
                 }
                 return e
             }
-            var ql = (0, C.lazy)((function() {
+            var zl = (0, C.lazy)((function() {
                 return Promise.resolve().then(n.bind(n, 41568))
             }));
-            const zl = function(e) {
+            const Gl = function(e) {
                 var t = e.group,
                     n = e.isCreate,
                     r = void 0 !== n && n,
@@ -6570,7 +6654,7 @@
                     h = (0, l.Z)(v, 2),
                     b = h[0],
                     w = h[1],
-                    y = C.useState(Ml.P.CREATE),
+                    y = C.useState(Al.P.CREATE),
                     x = (0, l.Z)(y, 2),
                     k = x[0],
                     Z = x[1],
@@ -6586,11 +6670,11 @@
                     q = (0, l.Z)(U, 2),
                     z = q[0],
                     G = q[1],
-                    D = P({
+                    D = T({
                         groupMember: null == t ? void 0 : t.myMember,
                         permission: "group-calendar-manage"
                     }),
-                    F = T({
+                    F = P({
                         group: t,
                         groupMember: null == t ? void 0 : t.myMember
                     }),
@@ -6624,7 +6708,7 @@
                             sort: "startTime_ascending"
                         }
                     }), [R]),
-                    Y = (0, Sl.Is)(Ul(Ul({
+                    Y = (0, jl.Is)(ql(ql({
                         ownerId: t.id
                     }, V), W), {
                         skip: !t.id
@@ -6642,16 +6726,16 @@
                         }))
                     }), [H, c]),
                     le = function() {
-                        E(!1), j(null), Z(Ml.P.CREATE)
+                        E(!1), j(null), Z(Al.P.CREATE)
                     },
                     ae = function(e) {
-                        j(e), E(!0), Z(Ml.P.EDIT)
+                        j(e), E(!0), Z(Al.P.EDIT)
                     },
                     oe = function(e) {
-                        j(e), E(!0), Z(Ml.P.REVIVE)
+                        j(e), E(!0), Z(Al.P.REVIVE)
                     },
                     ie = function(e) {
-                        j(e), w(!0), Z(Ml.P.DELETE)
+                        j(e), w(!0), Z(Al.P.DELETE)
                     },
                     ce = ee || i || !H || !o;
                 return C.createElement(C.Fragment, null, C.createElement("div", {
@@ -6662,9 +6746,9 @@
                     onClick: function() {
                         E(!0)
                     }
-                }, "+ Create Event"), C.createElement(Gl, null, C.createElement(Fl, null, C.createElement(Dl, null, "Events")), C.createElement(Xl, {
+                }, "+ Create Event"), C.createElement(Dl, null, C.createElement(Xl, null, C.createElement(Fl, null, "Events")), C.createElement(_l, {
                     className: "tw-flex-col tw-gap-5 tw-items-center tw-pt-5"
-                }, C.createElement(Rl, {
+                }, C.createElement(Ll, {
                     hideSearch: !0,
                     gridToggle: function() {
                         d(!m)
@@ -6678,7 +6762,7 @@
                 }), ce && C.createElement(re.UU, null), !ce && (null != ne && ne.length ? C.createElement(re.JX, {
                     className: (0, I.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", m && "tw-flex-row")
                 }, ne.map((function(e) {
-                    return C.createElement(Cl.ZP, {
+                    return C.createElement(Ol.ZP, {
                         key: e.id,
                         event: e,
                         isGrid: m,
@@ -6699,50 +6783,50 @@
                     width: "100%"
                 }, C.createElement(C.Suspense, {
                     fallback: C.createElement("div", null, "Loading...")
-                }, C.createElement(ql, {
+                }, C.createElement(zl, {
                     event: S || void 0,
                     isEditMode: "edit" === k.value,
                     isReviveMode: "revive" === k.value,
                     group: t,
                     isGroupAdmin: X,
                     closeModalCallback: le
-                }))), S && "delete" === k.value && C.createElement(jl.Z, {
+                }))), S && "delete" === k.value && C.createElement(Ml.Z, {
                     event: S,
                     isOpen: b,
                     onCloseCallBack: function() {
-                        w(!1), j(null), Z(Ml.P.CREATE)
+                        w(!1), j(null), Z(Al.P.CREATE)
                     }
                 }))
             };
-            var Gl = (0, a.Z)("div", {
+            var Dl = (0, a.Z)("div", {
                     target: "e1bz3ytt3"
                 })({
                     name: "144akkd",
                     styles: "display:flex;flex-direction:column;align-items:start;justify-content:start;border-radius:8px;background:#2a2e34"
                 }),
-                Dl = (0, a.Z)("h2", {
+                Fl = (0, a.Z)("h2", {
                     target: "e1bz3ytt2"
                 })({
                     name: "14mdnr2",
                     styles: "font-size:1.5rem;font-weight:bold"
                 }),
-                Fl = (0, a.Z)(re.JX, {
+                Xl = (0, a.Z)(re.JX, {
                     target: "e1bz3ytt1"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Xl = (0, a.Z)(Fl, {
+                _l = (0, a.Z)(Xl, {
                     target: "e1bz3ytt0"
                 })({
                     name: "j2vksd",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;display:flex;justify-content:space-around;height:auto!important"
                 });
-            const _l = function() {
+            const $l = function() {
                 var e, t, n, a, Z = (0, C.useState)(!1),
-                    T = (0, l.Z)(Z, 2),
-                    L = T[0],
-                    U = T[1],
+                    P = (0, l.Z)(Z, 2),
+                    L = P[0],
+                    U = P[1],
                     q = (0, C.useState)(!1),
                     z = (0, l.Z)(q, 2),
                     G = z[0],
@@ -6785,19 +6869,19 @@
                     Me = 0;
                 Ce.isSuccess && (je = Oe.constants.GROUPS.MAX_JOINED, Me = Oe.constants.GROUPS.MAX_JOINED_PLUS), Ne.includes("permission-extra-group-count") && (je = Math.max(je, Me || 0));
                 var Ae = (0, S.UO)().groupId,
-                    Te = (0, te.XC)().data,
-                    Pe = (0, pe.r5)({
+                    Pe = (0, te.XC)().data,
+                    Te = (0, pe.r5)({
                         groupId: Ae,
                         purpose: "group"
                     }),
-                    Re = Pe.data,
-                    Le = Pe.isSuccess,
-                    Ue = Pe.isLoading,
-                    qe = Pe.isError,
-                    ze = Pe.error,
+                    Re = Te.data,
+                    Le = Te.isSuccess,
+                    Ue = Te.isLoading,
+                    qe = Te.isError,
+                    ze = Te.error,
                     Ge = (0, de.pc)(),
                     De = (0, pe.dj)({
-                        userId: null == Te ? void 0 : Te.id
+                        userId: null == Pe ? void 0 : Pe.id
                     }),
                     Fe = De.data,
                     Xe = De.isLoading,
@@ -6825,7 +6909,7 @@
                     dt = st.error,
                     pt = st.isSuccess,
                     gt = null !== (null == Re ? void 0 : Re.deletedAt),
-                    ft = (0, Nt.Ul)({
+                    ft = (0, It.Ul)({
                         userId: null == Re ? void 0 : Re.ownerId,
                         groupId: null == Re ? void 0 : Re.id,
                         active: !0
@@ -6833,7 +6917,7 @@
                         skip: !Re
                     }),
                     Et = (ft.data, ft.isLoading),
-                    vt = (0, Sl.mW)({
+                    vt = (0, jl.mW)({
                         ownerId: Ae
                     }, {
                         skip: !Ae
@@ -6848,22 +6932,22 @@
                 var wt, yt, xt = (0, C.useMemo)((function() {
                         return !!G && (null !== Re.transferTargetId || void 0 !== Re.transferTargetId)
                     }), [G]),
-                    kt = (null == Re ? void 0 : Re.transferTargetId) === (null == Te ? void 0 : Te.id) ? null == Re ? void 0 : Re.ownerId : null == Re ? void 0 : Re.transferTargetId,
+                    kt = (null == Re ? void 0 : Re.transferTargetId) === (null == Pe ? void 0 : Pe.id) ? null == Re ? void 0 : Re.ownerId : null == Re ? void 0 : Re.transferTargetId,
                     Zt = (0, ne.GR)(kt, {
                         skip: null == Re || Ue || !xt || !kt,
                         refetchOnMountOrArgChange: !0
                     }),
-                    It = Zt.data,
+                    Nt = Zt.data,
                     Ct = Zt.isFetching,
                     Ot = Zt.isError,
                     St = Zt.error,
                     jt = (0, pe.HT)(),
                     Mt = (0, l.Z)(jt, 2),
                     At = Mt[0],
-                    Tt = Mt[1],
-                    Pt = Tt.data,
-                    Rt = (Tt.isFetching, Tt.isError),
-                    Lt = Tt.error,
+                    Pt = Mt[1],
+                    Tt = Pt.data,
+                    Rt = (Pt.isFetching, Pt.isError),
+                    Lt = Pt.error,
                     Ut = (0, pe.rq)(),
                     qt = (0, l.Z)(Ut, 2),
                     zt = qt[0],
@@ -6892,7 +6976,7 @@
                                             message: "".concat(null == Lt || null === (t = Lt.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message),
                                             color: "error",
                                             timeout: 3e3
-                                        }), be(!1)), !Rt && Pt && Ie((0, ee.d)({
+                                        }), be(!1)), !Rt && Tt && Ie((0, ee.d)({
                                             title: "Group Transfer Accepted",
                                             icon: k.f8,
                                             color: "success",
@@ -6963,7 +7047,7 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                if (!Re || Ue || Et || at || tt || Ve || Xe || Se) return (ie || K) && (le(!1), se(!1)), xt && !It || Ct ? C.createElement(re.UU, {
+                if (!Re || Ue || Et || at || tt || Ve || Xe || Se) return (ie || K) && (le(!1), se(!1)), xt && !Nt || Ct ? C.createElement(re.UU, {
                     width: "100%",
                     height: "200px",
                     className: "mt-4"
@@ -7004,7 +7088,7 @@
                         return !(null == n || !n.requiresTwoFactor || !1 !== Re.myMember.has2FA) && n
                     }), !1),
                     Yt = Re.membershipStatus;
-                if (Re.memberCount < bt.qH && (Fe.length < je || Te.tagsSet.has("admin_uncap_owned_groups"))) {
+                if (Re.memberCount < bt.qH && (Fe.length < je || Pe.tagsSet.has("admin_uncap_owned_groups"))) {
                     if (Yt === bt.oq.REQUESTED) Jt = C.createElement(re.zx, {
                         danger: !0,
                         onClick: function() {
@@ -7046,7 +7130,7 @@
                                 disabled: !0
                             }, "Closed to New Members")
                     }
-                } else Fe.length >= je && !Te.tagsSet.has("admin_uncap_owned_groups") ? Jt = C.createElement(re.zx, {
+                } else Fe.length >= je && !Pe.tagsSet.has("admin_uncap_owned_groups") ? Jt = C.createElement(re.zx, {
                     disabled: !0
                 }, "You can't join more than ", je, " groups!") : Re.myMember || (Jt = C.createElement(re.zx, {
                     disabled: !0
@@ -7058,9 +7142,9 @@
                     toggle: function() {
                         W(!1)
                     }
-                }, C.createElement(Jl, null, C.createElement("h4", {
+                }, C.createElement(Bl, null, C.createElement("h4", {
                     className: "text-center"
-                }, "Unblock this Group?")), C.createElement(Bl, null, C.createElement(re.JX, null, C.createElement("div", {
+                }, "Unblock this Group?")), C.createElement(Vl, null, C.createElement(re.JX, null, C.createElement("div", {
                     className: "p-3 text-center"
                 }, "Are you sure you want to unblock ", C.createElement("strong", null, Re.name), "?"), C.createElement("div", {
                     className: "p-3"
@@ -7069,7 +7153,7 @@
                     onClick: function() {
                         W(!1), lt({
                             groupId: Ae,
-                            userId: Te.id
+                            userId: Pe.id
                         })
                     }
                 }, C.createElement(re.$1, {
@@ -7087,11 +7171,11 @@
                     toggle: function() {
                         $(!1)
                     }
-                }, C.createElement(Jl, null, C.createElement("h4", {
+                }, C.createElement(Bl, null, C.createElement("h4", {
                     className: "text-center"
-                }, "Rules")), C.createElement(Bl, null, C.createElement(re.JX, null, C.createElement("div", {
+                }, "Rules")), C.createElement(Vl, null, C.createElement(re.JX, null, C.createElement("div", {
                     className: "p-3"
-                }, C.createElement("p", null, "By joining this group, you agree to the following rules:"), C.createElement(Wl, null, Re.rules)), C.createElement("div", {
+                }, C.createElement("p", null, "By joining this group, you agree to the following rules:"), C.createElement(Yl, null, Re.rules)), C.createElement("div", {
                     className: "p-3"
                 }, C.createElement(re.X2, null, C.createElement(re.zx, {
                     expand: !0,
@@ -7115,9 +7199,9 @@
                     toggle: function() {
                         return fe(!1)
                     }
-                }, C.createElement(Jl, null, C.createElement("h4", {
+                }, C.createElement(Bl, null, C.createElement("h4", {
                     className: "text-center"
-                }, "Decline Group Invite?")), C.createElement(Bl, null, C.createElement(re.JX, null, C.createElement("div", {
+                }, "Decline Group Invite?")), C.createElement(Vl, null, C.createElement(re.JX, null, C.createElement("div", {
                     className: "p-3 text-center"
                 }, "Are you sure you want to decline invite to ", C.createElement("strong", null, Re.name), "?"), C.createElement("div", {
                     className: "px-3 text-center d-flex justify-content-center"
@@ -7151,7 +7235,7 @@
                     }
                 }, C.createElement(re.$1, {
                     icon: w.NB
-                }), "  Cancel")))))), C.createElement(ol, {
+                }), "  Cancel")))))), C.createElement(il, {
                     group: Re,
                     showBlockModal: ie,
                     onClose: function() {
@@ -7164,17 +7248,17 @@
                     })
                 }, C.createElement(re.X2, {
                     className: "mb-4 justify-content-start tw-gap-2 tw-flex-wrap"
-                }, "visible" === (null == Re || null === (t = Re.myMember) || void 0 === t ? void 0 : t.visibility) && C.createElement(ll, {
+                }, "visible" === (null == Re || null === (t = Re.myMember) || void 0 === t ? void 0 : t.visibility) && C.createElement(al, {
                     groupId: Re.id,
                     isRepresenting: Xt
-                }), (null == Re ? void 0 : Re.ownerId) !== Te.id && C.createElement(C.Fragment, null, C.createElement(re.zx, {
+                }), (null == Re ? void 0 : Re.ownerId) !== Pe.id && C.createElement(C.Fragment, null, C.createElement(re.zx, {
                     neutral: !0,
                     onClick: function() {
                         le(!0)
                     }
                 }, C.createElement(re.$1, {
                     icon: i.JH
-                }), " Report"), C.createElement(Sn.Z, {
+                }), " Report"), C.createElement(jn.Z, {
                     cancelCallback: function() {
                         return le(!1)
                     },
@@ -7197,11 +7281,11 @@
                     }
                 }, C.createElement(re.$1, {
                     icon: h.faBan
-                }), " Unblock")))), C.createElement(al.Z, {
+                }), " Unblock")))), C.createElement(ol.Z, {
                     group: Re
                 }), Wt && C.createElement(re.X2, null, C.createElement(A.Z, {
                     color: "warning"
-                }, "Your VRChat account does not have 2FA enabled. Your role '", Wt.name, "' in ", Re.name, " requires this. Until you enable 2FA, your ability to manage ", Re.name, " will be limited.")), Ge && gt && C.createElement(re.X2, null, C.createElement(Yl, null, " THIS GROUP HAS BEEN DELETED ")), Ye && C.createElement(re.qX, {
+                }, "Your VRChat account does not have 2FA enabled. Your role '", Wt.name, "' in ", Re.name, " requires this. Until you enable 2FA, your ability to manage ", Re.name, " will be limited.")), Ge && gt && C.createElement(re.X2, null, C.createElement(Hl, null, " THIS GROUP HAS BEEN DELETED ")), Ye && C.createElement(re.qX, {
                     type: "error",
                     title: "An error occurred",
                     message: (null == He || null === (n = He.data) || void 0 === n ? void 0 : n.error.message) || "An error occurred while trying to join ".concat(null == Re ? void 0 : Re.name, ".")
@@ -7219,10 +7303,10 @@
                     className: "mx-2"
                 }, C.createElement(re.$1, {
                     icon: v.YI
-                }), "  Decline Invite")), Ht ? C.createElement(il, null) : C.createElement(C.Fragment, null, xt && !Ct && kt && C.createElement(ul, {
+                }), "  Decline Invite")), Ht ? C.createElement(cl, null) : C.createElement(C.Fragment, null, xt && !Ct && kt && C.createElement(ml, {
                     group: Re,
-                    currentUser: Te,
-                    targetUser: It,
+                    currentUser: Pe,
+                    targetUser: Nt,
                     onAccept: _t,
                     onCancel: $t,
                     isLoading: he
@@ -7237,7 +7321,7 @@
                         name: "Posts",
                         to: "posts",
                         icon: f.qm,
-                        condition: P({
+                        condition: T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-announcement-manage"
                         })
@@ -7270,7 +7354,7 @@
                         name: "Invites",
                         to: "invites",
                         icon: s.FU,
-                        condition: Ge || P({
+                        condition: Ge || T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-invites-manage"
                         })
@@ -7278,10 +7362,10 @@
                         name: "Settings",
                         to: "settings",
                         icon: c.b7,
-                        condition: Ge || (null == Re ? void 0 : Re.myMember) || P({
+                        condition: Ge || (null == Re ? void 0 : Re.myMember) || T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-data-manage"
-                        }) || P({
+                        }) || T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-roles-manage"
                         })
@@ -7289,42 +7373,42 @@
                         name: "Banned Users",
                         to: "bans",
                         icon: i.JH,
-                        condition: Ge || P({
+                        condition: Ge || T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-bans-manage"
                         })
                     }]
                 }), C.createElement(S.Z5, null, C.createElement(S.AW, {
                     path: "/",
-                    element: C.createElement(C.Fragment, null, Le && C.createElement(fl, {
+                    element: C.createElement(C.Fragment, null, Le && C.createElement(El, {
                         group: Re
-                    }), Le && C.createElement(Ol, {
+                    }), Le && C.createElement(Sl, {
                         group: Re,
                         event: ht,
-                        isAdmin: Ge || P({
+                        isAdmin: Ge || T({
                             groupMember: null == Re ? void 0 : Re.myMember,
                             permission: "group-members-manage"
                         })
-                    }), C.createElement($l, null, C.createElement(re.JX, {
+                    }), C.createElement(Jl, null, C.createElement(re.JX, {
                         className: "m-1"
-                    }, C.createElement(jn, {
+                    }, C.createElement(Mn, {
                         langs: Re.languages
                     })), C.createElement(re.JX, {
                         className: "m-1"
-                    }, C.createElement(qn, {
+                    }, C.createElement(zn, {
                         links: Re.links
-                    }))), C.createElement($l, null, C.createElement(re.JX, {
+                    }))), C.createElement(Jl, null, C.createElement(re.JX, {
                         className: "m-1 mt-2 mw-100"
-                    }, C.createElement(Jl, null, C.createElement("h4", null, "About This Group")), C.createElement(Vl, null, C.createElement("p", {
+                    }, C.createElement(Bl, null, C.createElement("h4", null, "About This Group")), C.createElement(Wl, null, C.createElement("p", {
                         className: "w-100 text-break"
                     }, Re.description))), Re.rules && C.createElement(re.JX, {
                         className: "m-1 mt-2 mw-100"
-                    }, C.createElement(Jl, null, C.createElement("h4", null, "Rules")), C.createElement(Vl, null, C.createElement("p", {
+                    }, C.createElement(Bl, null, C.createElement("h4", null, "Rules")), C.createElement(Wl, null, C.createElement("p", {
                         className: "w-100 text-break"
                     }, Re.rules)))))
                 }), C.createElement(S.AW, {
                     path: "/posts",
-                    element: (Ge || P({
+                    element: (Ge || T({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-announcement-manage"
                     })) && Le ? C.createElement(C.Fragment, null, L ? C.createElement(re.X2, null, C.createElement(re.JX, {
@@ -7333,7 +7417,7 @@
                         className: "text-center"
                     }, "Create Post")), C.createElement(re.Ao, null, C.createElement(re.JX, {
                         className: "w-100"
-                    }, C.createElement(nl, {
+                    }, C.createElement(rl, {
                         group: Re
                     }), C.createElement(re.zx, {
                         onClick: function() {
@@ -7345,7 +7429,7 @@
                         }
                     }, C.createElement(re.$1, {
                         icon: o.r8
-                    }), " Create Post"), C.createElement(fl, {
+                    }), " Create Post"), C.createElement(El, {
                         isEditMode: !0,
                         group: Re
                     })) : C.createElement(R.Z, {
@@ -7353,18 +7437,18 @@
                     })
                 }), C.createElement(S.AW, {
                     path: "/events",
-                    element: C.createElement(zl, {
+                    element: C.createElement(Gl, {
                         group: Re
                     })
                 }), C.createElement(S.AW, {
                     path: "/events/create",
-                    element: C.createElement(zl, {
+                    element: C.createElement(Gl, {
                         group: Re,
                         isCreate: !0
                     })
                 }), C.createElement(S.AW, {
                     path: "/galleries/*",
-                    element: C.createElement(ir, {
+                    element: C.createElement(cr, {
                         group: Re
                     })
                 }), C.createElement(S.AW, {
@@ -7374,85 +7458,85 @@
                     })
                 }), C.createElement(S.AW, {
                     path: "/store",
-                    element: C.createElement(Rr, {
+                    element: C.createElement(Lr, {
                         group: Re
                     })
                 }), C.createElement(S.AW, {
                     path: "/instances",
-                    element: C.createElement(pr, {
+                    element: C.createElement(gr, {
                         group: Re,
                         onJoinButtonClick: Vt
                     })
                 }), C.createElement(S.AW, {
                     path: "/invites/*",
-                    element: Ge || P({
+                    element: Ge || T({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-invites-manage"
-                    }) ? C.createElement(Nr, {
+                    }) ? C.createElement(Ir, {
                         group: Re
                     }) : C.createElement(R.Z, {
                         to: ".."
                     })
                 }), C.createElement(S.AW, {
                     path: "/members",
-                    element: Ge || null != Re && Re.myMember ? C.createElement(In, {
+                    element: Ge || null != Re && Re.myMember ? C.createElement(Cn, {
                         group: Re
                     }) : C.createElement(R.Z, {
                         to: ".."
                     })
                 }), C.createElement(S.AW, {
                     path: "/settings/*",
-                    element: Ge || null != Re && Re.myMember || P({
+                    element: Ge || null != Re && Re.myMember || T({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-data-manage"
-                    }) || P({
+                    }) || T({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-roles-manage"
-                    }) ? C.createElement(Qt, {
+                    }) ? C.createElement(Kt, {
                         group: Re
                     }) : C.createElement(R.Z, {
                         to: ".."
                     })
                 }), C.createElement(S.AW, {
                     path: "/bans",
-                    element: Ge || P({
+                    element: Ge || T({
                         groupMember: null == Re ? void 0 : Re.myMember,
                         permission: "group-members-manage"
-                    }) ? C.createElement(yl, {
+                    }) ? C.createElement(xl, {
                         group: Re
                     }) : C.createElement(R.Z, {
                         to: ".."
                     })
                 })))))
             };
-            var $l = (0, a.Z)(re.X2, {
+            var Jl = (0, a.Z)(re.X2, {
                     target: "e7n20a25"
                 })("flex-wrap:wrap;margin:-0.25rem;>", re.JX, "{min-width:300px;flex:1;}"),
-                Jl = (0, a.Z)(re.JX, {
+                Bl = (0, a.Z)(re.JX, {
                     target: "e7n20a24"
                 })({
                     name: "t5uylx",
                     styles: "padding:0.4rem 0.9rem;background-color:#252a30;border-color:#252a30;border-style:solid;border-width:3px 3px 0 3px;border-radius:8px 8px 0 0;width:100%"
                 }),
-                Bl = (0, a.Z)(Jl, {
+                Vl = (0, a.Z)(Bl, {
                     target: "e7n20a23"
                 })({
                     name: "vnq3j7",
                     styles: "background-color:#181b1f;border-color:#181b1f;border-width:0 3px 3px 3px;border-radius:0 0 8px 8px;flex:1;overflow-x:hidden;display:flex;flex-direction:row;justify-content:space-around;height:auto!important;overflow-y:auto;white-space:pre-line"
                 }),
-                Vl = (0, a.Z)(Bl, {
+                Wl = (0, a.Z)(Vl, {
                     target: "e7n20a22"
                 })({
                     name: "di36rf",
                     styles: "overflow-y:auto;white-space:pre-line;max-height:300px"
                 }),
-                Wl = (0, a.Z)("p", {
+                Yl = (0, a.Z)("p", {
                     target: "e7n20a21"
                 })({
                     name: "votlfh",
                     styles: "overflow-y:auto;white-space:pre-line;max-height:400px;background:#252a30;padding:0.5rem;border-radius:8px"
                 }),
-                Yl = (0, a.Z)("h3", {
+                Hl = (0, a.Z)("h3", {
                     target: "e7n20a20"
                 })({
                     name: "bbnlne",
@@ -7461,4 +7545,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9b4bd5bcba99bd22ef6bf750919e9ebf741eceb6f6cf01fe1e5e43422a345490.js.map
+//# sourceMappingURL=8efcae45d997fd460d4e1f6ad43dc3e4994e366a9e168696d4059bafb2a00f3e.js.map

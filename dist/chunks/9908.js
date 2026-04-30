@@ -145,7 +145,7 @@
         },
         39908: (e, t, n) => {
             n.r(t), n.d(t, {
-                default: () => z
+                default: () => L
             });
             var a = n(15861),
                 i = n(54546),
@@ -169,122 +169,143 @@
                 b = n(79655),
                 Z = n(80988),
                 k = n(43862),
-                N = n(12227),
-                C = n(23797),
-                S = n(5513),
-                U = n(22202);
-            var I = 2048;
-            const z = function(e) {
+                N = n(90068),
+                C = n(12227),
+                S = n(23797),
+                U = n(5513),
+                I = n(22202);
+            var z = 2048;
+            const L = function(e) {
                 var t = e.aspectRatio,
                     n = e.successCallback,
                     d = void 0 === n ? null : n,
-                    z = (e.isSelector, p.useState(null)),
-                    L = (0, i.Z)(z, 2),
-                    j = L[0],
-                    M = L[1],
-                    $ = p.useState({
+                    L = (e.isSelector, p.useState(null)),
+                    j = (0, i.Z)(L, 2),
+                    M = j[0],
+                    $ = j[1],
+                    R = p.useState({
                         x: 0,
                         y: 0,
                         width: 0,
                         height: 0
                     }),
-                    R = (0, i.Z)($, 2),
-                    q = (R[0], R[1]),
-                    B = p.useState({
+                    q = (0, i.Z)(R, 2),
+                    B = (q[0], q[1]),
+                    P = p.useState({
                         x: 0,
                         y: 0,
                         width: 0,
                         height: 0
                     }),
-                    P = (0, i.Z)(B, 2),
-                    A = P[0],
-                    D = P[1],
-                    O = p.useState({
+                    A = (0, i.Z)(P, 2),
+                    D = A[0],
+                    O = A[1],
+                    W = p.useState({
                         x: 0,
                         y: 0
                     }),
-                    W = (0, i.Z)(O, 2),
-                    V = W[0],
-                    F = W[1],
-                    G = p.useState(1),
-                    Y = (0, i.Z)(G, 2),
-                    _ = Y[0],
-                    H = Y[1],
-                    T = p.useState(null != t ? t : 1),
-                    Q = (0, i.Z)(T, 2),
-                    J = Q[0],
-                    K = Q[1],
-                    X = p.useState(!1),
-                    ee = (0, i.Z)(X, 2),
-                    te = ee[0],
-                    ne = ee[1],
-                    ae = p.useState(!1),
-                    ie = (0, i.Z)(ae, 2),
-                    re = ie[0],
-                    le = ie[1],
-                    se = p.useState(0),
-                    ce = (0, i.Z)(se, 2),
-                    oe = ce[0],
-                    me = ce[1],
-                    ue = p.useState(!1),
-                    de = (0, i.Z)(ue, 2),
-                    he = de[0],
-                    ge = de[1],
-                    pe = p.useState(!1),
-                    ve = (0, i.Z)(pe, 2),
-                    fe = ve[0],
-                    Ee = ve[1],
-                    we = p.useState(!1),
-                    ye = (0, i.Z)(we, 2),
-                    xe = (ye[0], ye[1]),
-                    be = p.useState(!1),
-                    Ze = (0, i.Z)(be, 2),
-                    ke = Ze[0],
-                    Ne = Ze[1],
-                    Ce = p.useState(!1),
-                    Se = (0, i.Z)(Ce, 2),
-                    Ue = Se[0],
-                    Ie = Se[1],
-                    ze = p.useState(null),
-                    Le = (0, i.Z)(ze, 2),
-                    je = Le[0],
-                    Me = (Le[1], p.useState(!1)),
-                    $e = (0, i.Z)(Me, 2),
-                    Re = $e[0],
-                    qe = $e[1],
-                    Be = p.useState(!1),
-                    Pe = (0, i.Z)(Be, 2),
-                    Ae = (Pe[0], Pe[1]),
-                    De = (0, v.v9)((function(e) {
+                    V = (0, i.Z)(W, 2),
+                    F = V[0],
+                    G = V[1],
+                    Y = p.useState(1),
+                    _ = (0, i.Z)(Y, 2),
+                    H = _[0],
+                    T = _[1],
+                    Q = p.useState(null != t ? t : 1),
+                    J = (0, i.Z)(Q, 2),
+                    K = J[0],
+                    X = J[1],
+                    ee = p.useState(!1),
+                    te = (0, i.Z)(ee, 2),
+                    ne = te[0],
+                    ae = te[1],
+                    ie = p.useState(!1),
+                    re = (0, i.Z)(ie, 2),
+                    le = re[0],
+                    se = re[1],
+                    ce = p.useState(0),
+                    oe = (0, i.Z)(ce, 2),
+                    me = oe[0],
+                    ue = oe[1],
+                    de = p.useState(!1),
+                    he = (0, i.Z)(de, 2),
+                    ge = he[0],
+                    pe = he[1],
+                    ve = p.useState(!1),
+                    fe = (0, i.Z)(ve, 2),
+                    Ee = fe[0],
+                    we = fe[1],
+                    ye = p.useState(!1),
+                    xe = (0, i.Z)(ye, 2),
+                    be = (xe[0], xe[1]),
+                    Ze = p.useState(!1),
+                    ke = (0, i.Z)(Ze, 2),
+                    Ne = ke[0],
+                    Ce = ke[1],
+                    Se = p.useState(!1),
+                    Ue = (0, i.Z)(Se, 2),
+                    Ie = Ue[0],
+                    ze = Ue[1],
+                    Le = p.useState(null),
+                    je = (0, i.Z)(Le, 2),
+                    Me = je[0],
+                    $e = (je[1], p.useState(!1)),
+                    Re = (0, i.Z)($e, 2),
+                    qe = Re[0],
+                    Be = Re[1],
+                    Pe = p.useState(!1),
+                    Ae = (0, i.Z)(Pe, 2),
+                    De = (Ae[0], Ae[1]),
+                    Oe = (0, v.v9)((function(e) {
                         return e.currentUser.iconUploadState
                     })),
-                    Oe = (0, v.v9)((function(e) {
+                    We = (0, v.v9)((function(e) {
                         return e.currentUser.databaseUser
                     })),
-                    We = ((0, v.v9)((function(e) {
+                    Ve = ((0, v.v9)((function(e) {
                         return e.currentUser.preloadedGalleryImage
                     })), (0, v.v9)((function(e) {
                         return e.currentUser.isPreloadingImage
                     })), p.useRef(null)),
-                    Ve = (0, U.q7)().data,
-                    Fe = void 0 === Ve ? [] : Ve,
-                    Ge = (0, v.I0)();
-                g.Z.location.search.slice(1).split("&").map((function(e) {
-                    return e.split("=")
-                })).filter((function(e) {
-                    return "preload" === e[0]
-                }))[0];
+                    Fe = (0, I.q7)().data,
+                    Ge = void 0 === Fe ? [] : Fe,
+                    Ye = (0, v.I0)(),
+                    _e = (0, N.P2)(),
+                    He = (g.Z.location.search.slice(1).split("&").map((function(e) {
+                        return e.split("=")
+                    })).filter((function(e) {
+                        return "preload" === e[0]
+                    }))[0], function() {
+                        $(null), B({
+                            x: 0,
+                            y: 0,
+                            width: 0,
+                            height: 0
+                        }), O({
+                            x: 0,
+                            y: 0,
+                            width: 0,
+                            height: 0
+                        }), G({
+                            x: 0,
+                            y: 0
+                        }), T(1), X(null != t ? t : 1), ae(!1), se({}), ue(0), we(!1), be(!1), Ce(!1), ze(!1), Be(!1), De(!1), pe(!1), Ye((0, U.LC)())
+                    });
                 p.useEffect((function() {
-                    Ge((0, S.LC)())
-                }), []);
-                var Ye, _e = function(e, t) {
-                        q(e), D(t)
+                    Ye((0, U.LC)())
+                }), []), p.useEffect((function() {
+                    Oe.complete && !Oe.success && _e({
+                        error: Oe.rawResponse
+                    }) && He()
+                }), [Oe]);
+                var Te, Qe = function(e, t) {
+                        B(e), O(t)
                     },
-                    He = function(e) {
+                    Je = function(e) {
                         var t = new Image;
                         return t.src = e, t
                     },
-                    Te = function(e, t) {
+                    Ke = function(e, t) {
                         return new Promise((function(n) {
                             var a = document.createElement("canvas"),
                                 i = a.getContext("2d"),
@@ -294,8 +315,8 @@
                                 var r = function(e) {
                                     var t = e.width,
                                         n = e.height;
-                                    if (t <= I && n <= I) return e;
-                                    var a = Math.min(I / t, I / n),
+                                    if (t <= z && n <= z) return e;
+                                    var a = Math.min(z / t, z / n),
                                         i = document.createElement("canvas");
                                     i.width = Math.round(t * a), i.height = Math.round(n * a);
                                     var r = i.getContext("2d");
@@ -313,15 +334,15 @@
                             }), !1), r.src = e.src
                         }))
                     },
-                    Qe = function() {
+                    Xe = function() {
                         var e = (0, a.Z)(h().mark((function e() {
                             var t;
                             return h().wrap((function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, Te(He(j), A);
+                                        return e.next = 2, Ke(Je(M), D);
                                     case 2:
-                                        t = e.sent, ne(!0), le(t), me(2);
+                                        t = e.sent, ae(!0), se(t), ue(2);
                                     case 6:
                                     case "end":
                                         return e.stop()
@@ -332,8 +353,8 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Je = null !== j,
-                    Ke = [Ue ? p.createElement("span", {
+                    et = null !== M,
+                    tt = [Ie ? p.createElement("span", {
                         key: "step-select"
                     }, p.createElement("h3", null, "(1/3) Fetching your gallery photo..."), " ", p.createElement("br", null), p.createElement("br", null)) : p.createElement("span", {
                         key: "step-select"
@@ -342,35 +363,35 @@
                     }, "(2/3) Crop your picture as desired"), p.createElement("h3", {
                         key: "step-preview"
                     }, "(3/3) Preview before upload")],
-                    Xe = he ? "Your current icon has been updated!" : p.createElement("span", null, " "),
-                    et = Fe.includes("permission-user-icons"),
-                    tt = "yellow";
-                return De.complete && (he && De.success ? (tt = "green", function() {
-                    De.lastUpload.versions[1].file.url;
-                    var e = Oe.id,
-                        t = (0, N.qm)({
-                            fileId: De.lastUpload.id,
-                            versionNumber: De.lastUpload.versions[1].version
+                    nt = ge ? "Your current icon has been updated!" : p.createElement("span", null, " "),
+                    at = Ge.includes("permission-user-icons"),
+                    it = "yellow";
+                return Oe.complete && (ge && Oe.success ? (it = "green", function() {
+                    Oe.lastUpload.versions[1].file.url;
+                    var e = We.id,
+                        t = (0, C.qm)({
+                            fileId: Oe.lastUpload.id,
+                            versionNumber: Oe.lastUpload.versions[1].version
                         });
-                    (0, S._W)({
+                    (0, U._W)({
                         userId: e,
                         data: {
                             userIcon: t
                         }
                     })
-                }()) : tt = De.success ? "" : "red"), et ? (Ue && !Re && (Ye = je, Ae(!0), qe(!0), me(1), M(window.apiUrl("/api/1/image/".concat(Ye, "/1/1600")))), p.createElement("div", null, p.createElement("div", {
+                }()) : it = Oe.success ? "" : "red"), at ? (Ie && !qe && (Te = Me, De(!0), Be(!0), ue(1), $(window.apiUrl("/api/1/image/".concat(Te, "/1/1600")))), p.createElement("div", null, p.createElement("div", {
                     className: (0, y.iv)({
                         name: "x6eonb",
                         styles: "margin:auto;margin-bottom:1.5em;text-align:center"
                     })
-                }, p.createElement("h2", null, "Upload a New Icon")), p.createElement("div", null, Ke[oe]), p.createElement("div", {
-                    hidden: te
+                }, p.createElement("h2", null, "Upload a New Icon")), p.createElement("div", null, tt[me]), p.createElement("div", {
+                    hidden: ne
                 }, p.createElement("div", {
                     className: (0, y.iv)({
                         name: "iekib1",
                         styles: "width:100%;max-height:30em;height:30em;position:relative!important"
                     })
-                }, (fe || ke) && p.createElement("div", {
+                }, (Ee || Ne) && p.createElement("div", {
                     className: "text-danger"
                 }, p.createElement(Z.$1, {
                     icon: u.WV,
@@ -378,50 +399,50 @@
                         name: "ofo7n8",
                         styles: "margin-right:0.4em"
                     })
-                }), fe && "Image size is larger than 10MBs. ", ke && "Image dimensions are smaller than 64 pixels. ", "Please choose a new image."), !Je && !Ue && p.createElement("div", null, p.createElement("input", {
-                    ref: We,
+                }), Ee && "Image size is larger than 10MBs. ", Ne && "Image dimensions are smaller than 64 pixels. ", "Please choose a new image."), !et && !Ie && p.createElement("div", null, p.createElement("input", {
+                    ref: Ve,
                     type: "file",
                     accept: ".png,.jpg,.jpeg",
                     onChange: function() {
-                        Ee(!1), xe(!1), Ne(!1);
-                        var e = We.current.files[0];
-                        if (e.size > 10485760) Ee(!0);
+                        we(!1), be(!1), Ce(!1);
+                        var e = Ve.current.files[0];
+                        if (e.size > 10485760) we(!0);
                         else {
                             var t = new Image;
                             t.addEventListener("load", (function() {
-                                if (t.width < 64 || t.height < 64) Ne(!0);
+                                if (t.width < 64 || t.height < 64) Ce(!0);
                                 else {
                                     window.URL.revokeObjectURL(t.src);
                                     var n = new FileReader;
                                     n.addEventListener("load", (function() {
-                                        M(n.result), me(1)
+                                        $(n.result), ue(1)
                                     })), e && n.readAsDataURL(e)
                                 }
                             })), e && (t.src = window.URL.createObjectURL(e))
                         }
                     }
-                })), Je && p.createElement("div", null, p.createElement(x.ZP, {
-                    image: j,
-                    crop: V,
-                    zoom: _,
-                    aspect: J,
+                })), et && p.createElement("div", null, p.createElement(x.ZP, {
+                    image: M,
+                    crop: F,
+                    zoom: H,
+                    aspect: K,
                     onCropChange: function(e) {
-                        F(e)
+                        G(e)
                     },
-                    onCropComplete: _e,
-                    onCropAreaChange: _e,
+                    onCropComplete: Qe,
+                    onCropAreaChange: Qe,
                     onZoomChange: function(e) {
-                        H(e)
+                        T(e)
                     },
                     cropShape: "round"
-                }))), Je && p.createElement("div", {
+                }))), et && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "swgl8p",
                         styles: "button{width:7em;margin-left:0.5em;margin-top:0.5em;}float:right"
                     })
-                }, !fe && p.createElement(f.Z, {
+                }, !Ee && p.createElement(f.Z, {
                     color: "success",
-                    onClick: Qe
+                    onClick: Xe
                 }, p.createElement(Z.$1, {
                     icon: m.wn,
                     className: (0, y.iv)({
@@ -439,12 +460,12 @@
                         styles: "margin-right:0.4em"
                     })
                 }), "Cancel")))), p.createElement("div", {
-                    hidden: !te,
+                    hidden: !ne,
                     className: (0, y.iv)({
                         name: "nh2hxb",
                         styles: "margin:auto;text-align:center;button{width:7em;}"
                     })
-                }, De.success && De.complete && p.createElement("div", {
+                }, Oe.success && Oe.complete && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "yw3maw",
                         styles: "max-width:27em;margin:auto;margin-top:2em;text-align:left"
@@ -462,31 +483,18 @@
                         name: "1ppuizh",
                         styles: "float:left;margin-right:0.6em"
                     })
-                }), p.createElement("p", null, "Your icon has been uploaded successfully!", p.createElement("br", null), Xe, p.createElement("br", null)), p.createElement("div", {
+                }), p.createElement("p", null, "Your icon has been uploaded successfully!", p.createElement("br", null), nt, p.createElement("br", null)), p.createElement("div", {
                     className: (0, y.iv)({
                         name: "tjo4qw",
                         styles: "float:right"
                     })
                 }, d ? p.createElement(f.Z, {
                     onClick: function() {
-                        M(null), q({
-                            x: 0,
-                            y: 0,
-                            width: 0,
-                            height: 0
-                        }), D({
-                            x: 0,
-                            y: 0,
-                            width: 0,
-                            height: 0
-                        }), F({
-                            x: 0,
-                            y: 0
-                        }), H(1), K(null != t ? t : 1), ne(!1), le({}), me(0), Ee(!1), xe(!1), Ne(!1), Ie(!1), qe(!1), Ae(!1), ge(!1), Ge((0, S.LC)()), d()
+                        He(), d()
                     }
                 }, "Back") : p.createElement(b.rU, {
                     to: "/home/inventory/user-icons"
-                }, p.createElement(f.Z, null, "View Icons"))))), !De.success && De.complete && p.createElement("div", {
+                }, p.createElement(f.Z, null, "View Icons"))))), !Oe.success && Oe.complete && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "1q7q77",
                         styles: "max-width:34em;margin:auto;margin-top:2em;text-align:left"
@@ -504,23 +512,23 @@
                         name: "1ppuizh",
                         styles: "float:left;margin-right:0.6em"
                     })
-                }), p.createElement("p", null, "Your icon failed to upload!", p.createElement("br", null), De.error || "Unknown Error", p.createElement("br", null)), p.createElement("div", {
+                }), p.createElement("p", null, "Your icon failed to upload!", p.createElement("br", null), Oe.error || "Unknown Error", p.createElement("br", null)), p.createElement("div", {
                     className: (0, y.iv)({
                         name: "tjo4qw",
                         styles: "float:right"
                     })
                 }, p.createElement(b.rU, {
                     to: "/home/inventory/user-icons"
-                }, p.createElement(f.Z, null, "View Icons"))))), !De.pending && p.createElement("div", null, p.createElement("div", {
+                }, p.createElement(f.Z, null, "View Icons"))))), !Oe.pending && p.createElement("div", null, p.createElement("div", {
                     className: (0, y.iv)({
                         name: "2v18bt",
                         styles: "div{margin:auto;}"
                     })
-                }, p.createElement(C.Z, {
-                    imageUrl: re.base64,
-                    borderColor: tt,
+                }, p.createElement(S.Z, {
+                    imageUrl: le.base64,
+                    borderColor: it,
                     disableManagement: !0
-                })), !De.success && p.createElement("div", null, !d && p.createElement("div", {
+                })), !Oe.success && p.createElement("div", null, !d && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "j26sjm",
                         styles: "height:1.3em;margin-bottom:0.6em;.form-check-input{margin-top:0.4rem;}"
@@ -528,13 +536,13 @@
                 }, p.createElement(w.Z, {
                     type: "checkbox",
                     onChange: function(e) {
-                        ge(e.target.checked)
+                        pe(e.target.checked)
                     }
                 }), p.createElement("span", null, "Set as current icon")), p.createElement(f.Z, {
                     color: "success",
                     onClick: function() {
-                        Ge((0, S.mt)({
-                            file: re.file
+                        Ye((0, U.mt)({
+                            file: le.file
                         }))
                     }
                 }, p.createElement(Z.$1, {
@@ -550,7 +558,7 @@
                     }),
                     color: "danger",
                     onClick: function() {
-                        ne(!1), le({}), me(1)
+                        ae(!1), se({}), ue(1)
                     }
                 }, p.createElement(Z.$1, {
                     icon: r.ac,
@@ -558,7 +566,7 @@
                         name: "ofo7n8",
                         styles: "margin-right:0.4em"
                     })
-                }), "Go Back"))), De.pending && p.createElement("div", {
+                }), "Go Back"))), Oe.pending && p.createElement("div", {
                     className: (0, y.iv)({
                         name: "zl1inp",
                         styles: "display:flex;justify-content:center"
@@ -578,4 +586,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9031ff9d7600da3d85d266f221e0ce22e1c5626e8729da2fc88c9512de190032.js.map
+//# sourceMappingURL=cd7b538e0a42abc6011236c7c5dd1fd15d7cacdc742cfd26de15f5b90df0f2d6.js.map
