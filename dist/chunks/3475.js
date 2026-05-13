@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [8695], {
+    [3475], {
         89468: (e, t) => {
             var r = "caret-up",
                 n = [],
@@ -61,9 +61,9 @@
                 icon: [n.width, n.height, n.aliases, n.unicode, n.svgPathData]
             }, t.$9 = t.DF, n.prefix, n.iconName, n.width, n.height, n.aliases, n.unicode, n.svgPathData, n.aliases
         },
-        44218: (e, t, r) => {
+        73005: (e, t, r) => {
             r.r(t), r.d(t, {
-                default: () => zt
+                default: () => qt
             });
             var n = r(87462),
                 a = r(4942),
@@ -91,17 +91,17 @@
                 I = r(89148),
                 F = r(27879),
                 S = r(63153),
-                L = r(6811),
-                Z = r(64687),
-                U = r.n(Z),
-                R = r(64258),
-                j = r(12227),
-                T = r(90924),
-                O = r(79548),
-                A = r(43862),
-                M = r(83505),
-                P = r(45697),
-                D = r.n(P),
+                Z = r(6811),
+                L = r(64687),
+                j = r.n(L),
+                O = r(64258),
+                U = r(12227),
+                R = r(90924),
+                T = r(79548),
+                P = r(43862),
+                A = r(83505),
+                M = r(45697),
+                D = r.n(M),
                 z = function(e) {
                     var t = e.children,
                         r = e.title,
@@ -121,7 +121,7 @@
                         src: n,
                         height: i,
                         alt: r ? "".concat(r, " Banner") : "Panel banner image",
-                        className: (0, M.cx)("tw-w-full tw-object-cover tw-rounded-t-3xl tw-aspect-[17/6]")
+                        className: (0, A.cx)("tw-w-full tw-object-cover tw-rounded-t-3xl tw-aspect-[17/6]")
                     })), o.createElement("div", {
                         className: "".concat(u ? "tw-p-0" : "tw-p-4 md:tw-p-8")
                     }, r && o.createElement("h2", {
@@ -213,9 +213,9 @@
                         f = e.isBlocked,
                         g = void 0 !== f && f,
                         b = e.isMuted,
-                        Z = void 0 !== b && b,
-                        P = e.isLoading,
-                        D = void 0 !== P && P,
+                        L = void 0 !== b && b,
+                        M = e.isLoading,
+                        D = void 0 !== M && M,
                         z = e.onViewAllFriendsClick,
                         V = void 0 === z ? function() {} : z,
                         G = e.onViewAllGroupsClick,
@@ -251,30 +251,30 @@
                         Ie = (0, l.Z)(Ce, 2),
                         Fe = Ie[0],
                         Se = Ie[1],
-                        Le = (0, o.useState)(ce || ""),
-                        Ze = (0, l.Z)(Le, 2),
-                        Ue = Ze[0],
-                        Re = Ze[1],
-                        je = (0, d.kh)(),
-                        Te = (0, l.Z)(je, 1)[0],
-                        Oe = (0, o.useState)(!1),
-                        Ae = (0, l.Z)(Oe, 2),
-                        Me = Ae[0],
-                        Pe = Ae[1],
+                        Ze = (0, o.useState)(ce || ""),
+                        Le = (0, l.Z)(Ze, 2),
+                        je = Le[0],
+                        Oe = Le[1],
+                        Ue = (0, d.kh)(),
+                        Re = (0, l.Z)(Ue, 1)[0],
+                        Te = (0, o.useState)(!1),
+                        Pe = (0, l.Z)(Te, 2),
+                        Ae = Pe[0],
+                        Me = Pe[1],
                         De = (0, o.useState)(!1),
                         ze = (0, l.Z)(De, 2),
                         $e = ze[0],
                         Ve = ze[1],
-                        Ge = (0, j.HZ)({
+                        Ge = (0, U.HZ)({
                             tags: ne,
                             tagsSet: ae
                         }),
-                        qe = (0, j.FR)({
+                        qe = (0, U.FR)({
                             tags: ne,
                             humanize: !0,
                             tagsSet: ae
                         }),
-                        Be = (0, j.FR)({
+                        Be = (0, U.FR)({
                             tags: ne,
                             humanize: !1,
                             tagsSet: ae
@@ -288,32 +288,32 @@
                         Ke.current && Ve(Ke.current.scrollHeight > Ke.current.clientHeight)
                     }), [ge]);
                     var Xe = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var r, n;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (Ue !== t.note) {
+                                            if (je !== t.note) {
                                                 e.next = 3;
                                                 break
                                             }
                                             return Se(!1), e.abrupt("return");
                                         case 3:
-                                            return e.prev = 3, e.next = 6, Te({
+                                            return e.prev = 3, e.next = 6, Re({
                                                 userId: be,
-                                                note: Ue
+                                                note: je
                                             }).unwrap();
                                         case 6:
-                                            Se(!1), B((0, R.d)({
+                                            Se(!1), B((0, O.d)({
                                                 title: "Player Notes",
-                                                icon: L.f8,
+                                                icon: Z.f8,
                                                 message: "\n              Player Notes Updated!\n            ",
                                                 color: "success",
                                                 timeout: 5e3
                                             })), e.next = 14;
                                             break;
                                         case 10:
-                                            e.prev = 10, e.t0 = e.catch(3), console.error("Player Notes Error:", e.t0), B((0, R.d)({
+                                            e.prev = 10, e.t0 = e.catch(3), console.error("Player Notes Error:", e.t0), B((0, O.d)({
                                                 title: "Player Notes",
                                                 icon: S.$9,
                                                 message: "\n              Update Player Notes Failed.\n              ".concat((null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) || (null === (n = e.t0.data) || void 0 === n ? void 0 : n.error), "\n            "),
@@ -333,14 +333,14 @@
                             }
                         }(),
                         Qe = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var t;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return t = (0, p.zp)("".concat(window.location.origin, "/home/user/").concat(be)), e.next = 3, t();
                                         case 3:
-                                            B((0, R.d)({
+                                            B((0, O.d)({
                                                 title: "Player Profile",
                                                 icon: F.IL,
                                                 message: "Player profile link copied to clipboard.",
@@ -369,7 +369,7 @@
                         className: "tw-flex tw-flex-row tw-gap-2 tw-z-20 tw-absolute -tw-translate-y-1/2 tw-top-0 tw-left-2 md:tw-left-6"
                     }, o.createElement("div", {
                         className: "tw-w-[80px] sm:tw-w-[100px] md:tw-w-[150px] lg:tw-w-[130px] 2xl:tw-w-[160px] tw-aspect-square tw-rounded-full tw-bg-darker-grey tw-overflow-hidden tw-border-8 tw-border-solid tw-border-[#181B1F]"
-                    }, D && o.createElement(A.Z, {
+                    }, D && o.createElement(P.Z, {
                         className: "tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-text-2xl"
                     }), !D && o.createElement("img", {
                         src: et,
@@ -397,7 +397,7 @@
                         src: Y,
                         alt: "VRC Plus Icon",
                         className: "tw-w-9"
-                    }), Z && o.createElement(s.$1, {
+                    }), L && o.createElement(s.$1, {
                         icon: I.Ek,
                         className: "tw-text-error-message-red"
                     }), g && o.createElement(s.$1, {
@@ -417,16 +417,16 @@
                         onClick: function() {
                             return J("/home/ageverification")
                         }
-                    }, o.createElement(T.Z, {
+                    }, o.createElement(R.Z, {
                         imageSize: "16px"
                     }), o.createElement("span", null, "Get Age Verified"), o.createElement("img", {
                         src: Y,
                         alt: "VRC Plus Icon",
                         className: "tw-w-6"
-                    })), ie && "18+" === we && o.createElement("span", null, o.createElement(T.Z, {
+                    })), ie && "18+" === we && o.createElement("span", null, o.createElement(R.Z, {
                         imageSize: "16px",
                         color: "#2BAAC1"
-                    }), " Verified 18+"), qe && o.createElement("span", null, o.createElement(O.Z, {
+                    }), " Verified 18+"), qe && o.createElement("span", null, o.createElement(T.Z, {
                         imageSize: "16px",
                         color: "var(--user-level-".concat(Be, ")")
                     }), " ", qe)), u && o.createElement(s.zx, {
@@ -492,7 +492,7 @@
                         icon: y.Dr
                     })), !We && o.createElement(Q.Z, {
                         userId: be,
-                        isMuted: Z,
+                        isMuted: L,
                         isBlocked: g,
                         hideShare: !0
                     })), o.createElement("div", {
@@ -502,11 +502,11 @@
                     }, "About Me"), "" !== ge && o.createElement("div", {
                         className: "tw-relative"
                     }, o.createElement("p", {
-                        className: (0, M.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
-                            "tw-line-clamp-3 tw-overflow-hidden": !Me
+                        className: (0, A.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
+                            "tw-line-clamp-3 tw-overflow-hidden": !Ae
                         }),
                         ref: Ke
-                    }, ge), $e && !Me && o.createElement("span", {
+                    }, ge), $e && !Ae && o.createElement("span", {
                         className: "tw-flex tw-items-center"
                     }, o.createElement("span", {
                         className: "tw-h-[1.5em] tw-bg-gradient-to-r tw-from-transparent tw-to-[#171A21]"
@@ -514,7 +514,7 @@
                         className: "tw-bg-[#171A21] tw-text-teal tw-font-bold tw-p-0 tw-px-1",
                         transparent: !0,
                         onClick: function() {
-                            return Pe(!0)
+                            return Me(!0)
                         }
                     }, "Read More"))), te && "" === ge && o.createElement("div", {
                         className: "tw-flex tw-flex-col tw-items-center tw-text-center"
@@ -531,8 +531,8 @@
                     }, "Add a bio")), !te && "" === ge && o.createElement("div", {
                         className: "tw-relative"
                     }, o.createElement("p", {
-                        className: (0, M.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
-                            "tw-line-clamp-3 tw-overflow-hidden": !Me
+                        className: (0, A.cx)("tw-mb-0 tw-whitespace-pre-line tw-break-words", {
+                            "tw-line-clamp-3 tw-overflow-hidden": !Ae
                         }),
                         ref: Ke
                     }, "No bio added."))), pe && (null == pe ? void 0 : pe.length) > 0 && o.createElement("div", {
@@ -562,10 +562,10 @@
                         className: "tw-w-full",
                         type: "text",
                         maxLength: 256,
-                        value: Ue,
+                        value: je,
                         "aria-label": "User note",
                         onChange: function(e) {
-                            return Re(e.target.value)
+                            return Oe(e.target.value)
                         }
                     }), o.createElement(s.zx, {
                         onClick: Xe,
@@ -769,7 +769,7 @@
                         l = (0, _.CZ)({
                             withIcon: !0
                         }),
-                        c = (0, j.YW)(t),
+                        c = (0, U.YW)(t),
                         i = r || {},
                         w = i.isFriend,
                         d = i.isSelf,
@@ -791,18 +791,18 @@
                         }),
                         F = I.data,
                         S = I.isLoading,
-                        L = F || {},
-                        Z = L.world,
-                        U = L.name,
-                        R = (L.type, L.capacity),
-                        T = L.userCount,
-                        O = L.worldId,
-                        M = L.instanceId,
-                        P = L.photonRegion,
-                        D = L.shortName,
-                        z = L.secureName,
-                        G = L.location,
-                        q = L.ownerId,
+                        Z = F || {},
+                        L = Z.world,
+                        j = Z.name,
+                        O = (Z.type, Z.capacity),
+                        R = Z.userCount,
+                        T = Z.worldId,
+                        A = Z.instanceId,
+                        M = Z.photonRegion,
+                        D = Z.shortName,
+                        z = Z.secureName,
+                        G = Z.location,
+                        q = Z.ownerId,
                         B = null == q ? void 0 : q.startsWith("grp_"),
                         W = (0, u.dj)({
                             userId: null == n ? void 0 : n.id
@@ -817,8 +817,8 @@
                             }))
                         }), [H, q])),
                         X = (0, o.useMemo)((function() {
-                            return g || !w && !d && !N || k ? ge : m ? ve : v ? xe : b ? be : x ? he : S || Y ? Ee : F && Z && M ? ye : Ne
-                        }), [g, w, d, N, b, k, m, v, x, S, Y, F, Z, M]),
+                            return g || !w && !d && !N || k ? ge : m ? ve : v ? xe : b ? be : x ? he : S || Y ? Ee : F && L && A ? ye : Ne
+                        }), [g, w, d, N, b, k, m, v, x, S, Y, F, L, A]),
                         Q = (0, o.useMemo)((function() {
                             return G && l.locations[G] ? l.locations[G].users.filter((function(e) {
                                 return e.id !== n.id
@@ -833,7 +833,7 @@
                         te = (0, o.useMemo)((function() {
                             return !(!N && !d) || ("Group Public" === ee || (!("Group+" !== ee || !(K || Q.length > 0)) || (!("Group" !== ee || !K) || (!("Friends" !== ee || !w) || !("Friends+" !== ee || !(w || Q.length > 0))))))
                         }), [ee, K, Q, w, d, N]),
-                        re = S || X !== ye ? null : (null == Z ? void 0 : Z.imageUrl) || (null == Z ? void 0 : Z.thumbnailImageUrl) || null,
+                        re = S || X !== ye ? null : (null == L ? void 0 : L.imageUrl) || (null == L ? void 0 : L.thumbnailImageUrl) || null,
                         ne = X === be || X === Ne,
                         ae = "vrchat://launch?ref=vrchat.com&id=".concat(G).concat(D || z ? "&shortName=".concat(null != D ? D : z) : "", "&attach=1");
                     return o.createElement($, {
@@ -904,7 +904,7 @@
                             case he:
                                 return o.createElement("div", {
                                     className: "tw-w-full tw-flex tw-justify-center tw-items-center tw-my-6"
-                                }, o.createElement(A.Z, {
+                                }, o.createElement(P.Z, {
                                     size: "5x",
                                     className: "tw-text-[#797979]"
                                 }));
@@ -941,16 +941,16 @@
                         className: "tw-mb-0"
                     }, o.createElement(f.rU, {
                         className: "tw-text-lighter-grey",
-                        to: "/home/world/".concat(null == Z ? void 0 : Z.id)
-                    }, null == Z ? void 0 : Z.name)), o.createElement("span", {
+                        to: "/home/world/".concat(null == L ? void 0 : L.id)
+                    }, null == L ? void 0 : L.name)), o.createElement("span", {
                         className: "tw-text-light-grey tw-capitalize tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-gap-2"
                     }, o.createElement("div", {
                         className: "tw-items-center tw-flex tw-gap-2"
-                    }, P && o.createElement(me.Z, {
-                        region: P,
+                    }, M && o.createElement(me.Z, {
+                        region: M,
                         imageSize: "24px",
                         className: "tw-h-6"
-                    }), o.createElement("span", null, U, " - ", ee)), c && o.createElement("div", {
+                    }), o.createElement("span", null, j, " - ", ee)), c && o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-2"
                     }, o.createElement(s.$1, {
                         icon: ue.di,
@@ -964,7 +964,7 @@
                     }, o.createElement("span", null, o.createElement(s.$1, {
                         icon: de.faUserGroup,
                         className: "tw-mr-1 tw-text-teal"
-                    }), " ", T, " / ", R), Q.length > 0 && o.createElement("div", {
+                    }), " ", R, " / ", O), Q.length > 0 && o.createElement("div", {
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-2"
                     }, o.createElement(s.$1, {
                         icon: ue.di,
@@ -980,7 +980,7 @@
                         className: "tw-flex tw-flex-wrap tw-gap-3 tw-w-full tw-items-center"
                     }, o.createElement(s.zx, {
                         onClick: function() {
-                            O && M && (window.location.href = ae)
+                            T && A && (window.location.href = ae)
                         },
                         className: "tw-min-w-[195px] tw-space-x-2",
                         containerClasses: "tw-flex-auto"
@@ -989,9 +989,9 @@
                     }), o.createElement("span", null, "Launch in VRChat")), o.createElement(s.zx, {
                         neutral: !0,
                         onClick: function() {
-                            O && M && a({
-                                worldId: O,
-                                instanceId: M,
+                            T && A && a({
+                                worldId: T,
+                                instanceId: A,
                                 shortName: D
                             })
                         },
@@ -1010,8 +1010,8 @@
             var Ie = r(92332),
                 Fe = r(76553),
                 Se = r(7080),
-                Le = r(751),
-                Ze = function(e) {
+                Ze = r(751),
+                Le = function(e) {
                     var t = e.friendUserId,
                         r = e.isOpen,
                         n = e.cancelCallback,
@@ -1024,7 +1024,7 @@
                         m = (0, l.Z)(d, 2),
                         f = m[0],
                         p = m[1],
-                        g = (0, Le.Ec)(),
+                        g = (0, Ze.Ec)(),
                         b = (0, l.Z)(g, 2),
                         x = b[0],
                         h = b[1].isLoading;
@@ -1033,9 +1033,9 @@
                     }), [r]);
                     var E = h || u,
                         y = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var r, n;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (f) {
@@ -1050,15 +1050,15 @@
                                                 groupName: f
                                             }).unwrap();
                                         case 5:
-                                            return c((0, R.d)({
+                                            return c((0, O.d)({
                                                 title: "New Favorite Friend Added!",
                                                 message: "Favorite Saved to ".concat(f),
-                                                icon: L.f8,
+                                                icon: Z.f8,
                                                 color: "success",
                                                 timeout: 5e3
                                             })), e.abrupt("return", a());
                                         case 9:
-                                            return e.prev = 9, e.t0 = e.catch(2), console.error("Error creating favorite", e.t0), e.abrupt("return", c((0, R.d)({
+                                            return e.prev = 9, e.t0 = e.catch(2), console.error("Error creating favorite", e.t0), e.abrupt("return", c((0, O.d)({
                                                 title: "Failed to create a favorite",
                                                 icon: Fe.eH,
                                                 message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
@@ -1150,19 +1150,19 @@
                         className: "tw-ml-3"
                     }))))))))
                 };
-            Ze.propTypes = {
+            Le.propTypes = {
                 friendUserId: D().string.isRequired,
                 isOpen: D().bool.isRequired,
                 cancelCallback: D().func
             };
-            const Ue = Ze;
-            var Re = r(42138),
-                je = r(40098),
-                Te = r(7371),
-                Oe = r(78076),
-                Ae = r(90068),
-                Me = r(4965),
-                Pe = function(e) {
+            const je = Le;
+            var Oe = r(42138),
+                Ue = r(40098),
+                Re = r(7371),
+                Te = r(78076),
+                Pe = r(90068),
+                Ae = r(4965),
+                Me = function(e) {
                     var t = e.user,
                         r = e.statusType,
                         n = e.onChange,
@@ -1189,14 +1189,14 @@
                         onKeyDown: function(e) {
                             "Enter" !== e.key && " " !== e.key || m(!d)
                         }
-                    }, o.createElement(T.Z, {
+                    }, o.createElement(R.Z, {
                         imageSize: "20px",
                         color: i.color,
                         className: "tw-h-5 tw-mr-2"
                     }), o.createElement("span", {
                         className: "tw-mr-2 tw-flex-grow"
                     }, i.label), o.createElement(s.$1, {
-                        icon: Te.Iw
+                        icon: Re.Iw
                     })), o.createElement(De, {
                         isOpen: d,
                         onClick: function() {
@@ -1219,7 +1219,7 @@
                             onKeyDown: function(t) {
                                 "Enter" !== t.key && " " !== t.key || (m(!1), n(e))
                             }
-                        }, o.createElement(T.Z, {
+                        }, o.createElement(R.Z, {
                             imageSize: "20px",
                             color: (0, c.B1)(e).color,
                             className: "tw-h-5 tw-mr-2"
@@ -1228,17 +1228,17 @@
                         }, (0, c.B1)(e).label))
                     }))))
                 };
-            Pe.propTypes = {
+            Me.propTypes = {
                 statusType: D().oneOf(Object.keys(c.Dq)),
                 onChange: D().func,
                 className: D().string
             };
-            var De = (0, Me.Z)("div", {
+            var De = (0, Ae.Z)("div", {
                 target: "e88e2ty0"
             })("display:", (function(e) {
                 return e.isOpen ? "block" : "none"
             }), ";position:fixed;top:0;left:0;width:100vw;height:100vh;");
-            const ze = Pe;
+            const ze = Me;
             var $e = function(e) {
                 var t = e.statusType,
                     r = e.onChange,
@@ -1270,7 +1270,7 @@
                 }), o.createElement("span", {
                     className: "tw-mr-2 tw-flex-grow"
                 }, a.label), o.createElement(s.$1, {
-                    icon: Te.Iw
+                    icon: Re.Iw
                 })), o.createElement(Ve, {
                     isOpen: u,
                     onClick: function() {
@@ -1305,7 +1305,7 @@
                 onChange: D().func,
                 className: D().string
             };
-            var Ve = (0, Me.Z)("div", {
+            var Ve = (0, Ae.Z)("div", {
                 target: "e1n42wje0"
             })("display:", (function(e) {
                 return e.isOpen ? "block" : "none"
@@ -1339,13 +1339,13 @@
                         I = C[0],
                         F = C[1],
                         S = (0, o.useState)(null),
-                        L = (0, l.Z)(S, 2),
-                        Z = L[0],
-                        j = L[1],
-                        T = (0, o.useState)(),
-                        O = (0, l.Z)(T, 2),
-                        A = O[0],
-                        P = O[1],
+                        Z = (0, l.Z)(S, 2),
+                        L = Z[0],
+                        U = Z[1],
+                        R = (0, o.useState)(),
+                        T = (0, l.Z)(R, 2),
+                        P = T[0],
+                        M = T[1],
                         D = (0, o.useRef)(null),
                         z = (0, o.useRef)(null),
                         $ = (0, o.useState)(""),
@@ -1385,19 +1385,19 @@
                         ke = (0, l.Z)(Ne, 2),
                         Ce = ke[0],
                         Se = ke[1],
-                        Le = Se.isLoading,
-                        Ze = Se.error;
-                    t = (0, v.Z)(U().mark((function e() {
-                        return U().wrap((function(e) {
+                        Ze = Se.isLoading,
+                        Le = Se.error;
+                    t = (0, v.Z)(j().mark((function e() {
+                        return j().wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    null != A && A.width && null != A && A.height && z.current && D.current && (0, Xe.t)(z.current, D.current, A, J, ae);
+                                    null != P && P.width && null != P && P.height && z.current && D.current && (0, Xe.t)(z.current, D.current, P, J, ae);
                                 case 1:
                                 case "end":
                                     return e.stop()
                             }
                         }), e)
-                    }))), r = 100, n = [A, J, ae], (0, o.useEffect)((function() {
+                    }))), r = 100, n = [P, J, ae], (0, o.useEffect)((function() {
                         var e = setTimeout((function() {
                             t.apply(void 0, n)
                         }), r);
@@ -1405,26 +1405,26 @@
                             clearTimeout(e)
                         }
                     }), n);
-                    var Ue = function() {
+                    var je = function() {
                             Y(""), le(0), ee(1), q("")
                         },
-                        Re = (0, Ke.sR)({
+                        Oe = (0, Ke.sR)({
                             userId: a
                         }, {
                             skip: "profileIcon" !== g || !i
                         }),
-                        Te = Re.data,
-                        Ae = void 0 === Te ? [] : Te,
-                        Me = Re.isFetching,
-                        Pe = (Re.isSuccess, (0, Ke.FQ)({
+                        Re = Oe.data,
+                        Pe = void 0 === Re ? [] : Re,
+                        Ae = Oe.isFetching,
+                        Me = (Oe.isSuccess, (0, Ke.FQ)({
                             userId: a
                         }, {
                             skip: "profilePicture" !== g || !i
                         })),
-                        De = Pe.data,
+                        De = Me.data,
                         ze = void 0 === De ? [] : De,
-                        $e = Pe.isFetching,
-                        Ve = (Pe.isSuccess, (0, d.al)()),
+                        $e = Me.isFetching,
+                        Ve = (Me.isSuccess, (0, d.al)()),
                         Ge = (0, l.Z)(Ve, 2),
                         et = Ge[0],
                         tt = Ge[1].isLoading,
@@ -1477,9 +1477,9 @@
                             }, n, t, r), t, r)
                         },
                         mt = function() {
-                            var e = (0, v.Z)(U().mark((function e(t) {
+                            var e = (0, v.Z)(j().mark((function e(t) {
                                 var r, n, a;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (!(t.target.files && t.target.files.length > 0)) {
@@ -1521,9 +1521,9 @@
                         }();
                     (0, o.useEffect)((function() {
                         ! function() {
-                            if (null !== Z) {
-                                var e = Z.width,
-                                    t = Z.height;
+                            if (null !== L) {
+                                var e = L.width,
+                                    t = L.height;
                                 F(dt({
                                     mediaWidth: e,
                                     mediaHeight: t,
@@ -1533,11 +1533,11 @@
                                 }))
                             }
                         }()
-                    }), [Z]);
+                    }), [L]);
                     var ft = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var t, r, n, a, l;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (ut) {
@@ -1570,9 +1570,9 @@
                             return l.imageSmoothingQuality = "high", l.drawImage(e, 0, 0, a.width, a.height), a
                         },
                         gt = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var t;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (D.current) {
@@ -1584,9 +1584,9 @@
                                             return e.t0 = pt, e.next = 5, ft();
                                         case 5:
                                             return e.t1 = e.sent, t = (0, e.t0)(e.t1), e.next = 9, t.toBlob(function() {
-                                                var e = (0, v.Z)(U().mark((function e(t) {
+                                                var e = (0, v.Z)(j().mark((function e(t) {
                                                     var r, n, l, o;
-                                                    return U().wrap((function(e) {
+                                                    return j().wrap((function(e) {
                                                         for (;;) switch (e.prev = e.next) {
                                                             case 0:
                                                                 return e.next = 2, new File([t], "fileName.jpg", {
@@ -1604,19 +1604,19 @@
                                                                     url: "https://api.vrchat.cloud/api/1/file/".concat(n.id, "/1")
                                                                 }).unwrap();
                                                             case 9:
-                                                                N((0, R.d)({
+                                                                N((0, O.d)({
                                                                     title: wt[g].feedbackTitle,
-                                                                    icon: Oe.Vm,
+                                                                    icon: Te.Vm,
                                                                     message: wt[g].successMessage,
                                                                     color: "success",
                                                                     timeout: 5e3
-                                                                })), Ue(), u(), e.next = 18;
+                                                                })), je(), u(), e.next = 18;
                                                                 break;
                                                             case 14:
-                                                                e.prev = 14, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), (0, R.d)({
+                                                                e.prev = 14, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), (0, O.d)({
                                                                     title: wt[g].feedbackTitle,
                                                                     icon: Fe.eH,
-                                                                    message: null !== (l = null == Ze || null === (o = Ze.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : wt[g].failedMessage,
+                                                                    message: null !== (l = null == Le || null === (o = Le.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : wt[g].failedMessage,
                                                                     color: "danger",
                                                                     timeout: 5e3
                                                                 });
@@ -1643,9 +1643,9 @@
                             }
                         }(),
                         bt = function() {
-                            var e = (0, v.Z)(U().mark((function e(t) {
+                            var e = (0, v.Z)(j().mark((function e(t) {
                                 var r, n;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return e.prev = 0, e.next = 3, wt[g].updateUserFileMutation({
@@ -1653,16 +1653,16 @@
                                                 url: t.latestVersionFile.file.url
                                             }).unwrap();
                                         case 3:
-                                            N((0, R.d)({
+                                            N((0, O.d)({
                                                 title: wt[g].feedbackTitle,
-                                                icon: Oe.Vm,
+                                                icon: Te.Vm,
                                                 message: wt[g].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
-                                            })), Ue(), u(), e.next = 11;
+                                            })), je(), u(), e.next = 11;
                                             break;
                                         case 8:
-                                            e.prev = 8, e.t0 = e.catch(0), N((0, R.d)({
+                                            e.prev = 8, e.t0 = e.catch(0), N((0, O.d)({
                                                 title: wt[g].feedbackTitle,
                                                 icon: Fe.eH,
                                                 message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : wt[g].failedMessage,
@@ -1682,8 +1682,8 @@
                             }
                         }(),
                         vt = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
-                                return U().wrap((function(e) {
+                            var e = (0, v.Z)(j().mark((function e() {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return e.next = 2, bt({
@@ -1709,9 +1709,9 @@
                             be(e), me(!0)
                         },
                         ht = function() {
-                            var e = (0, v.Z)(U().mark((function e() {
+                            var e = (0, v.Z)(j().mark((function e() {
                                 var t, r;
-                                return U().wrap((function(e) {
+                                return j().wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (ge) {
@@ -1726,7 +1726,7 @@
                                                 userId: a
                                             }).unwrap();
                                         case 5:
-                                            N((0, R.d)({
+                                            N((0, O.d)({
                                                 title: "Delete Image",
                                                 icon: _e.$,
                                                 message: "Image successfully deleted.",
@@ -1735,7 +1735,7 @@
                                             })), e.next = 11;
                                             break;
                                         case 8:
-                                            e.prev = 8, e.t0 = e.catch(2), N((0, R.d)({
+                                            e.prev = 8, e.t0 = e.catch(2), N((0, O.d)({
                                                 title: "Delete Image",
                                                 icon: Fe.eH,
                                                 message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Failed to delete image.",
@@ -1757,10 +1757,10 @@
                             }
                         }(),
                         Et = "" !== G && (null == se ? void 0 : se.pass),
-                        yt = Me || tt || Le || $e || lt || it;
+                        yt = Ae || tt || Ze || $e || lt || it;
                     return o.createElement(o.Fragment, null, o.createElement("div", {
                         tabIndex: "-1",
-                        className: (0, M.cx)("\n            tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n            tw-overflow-x-hidden tw-overflow-y-auto\n            md:tw-inset-0\n            tw-h-[calc(100%-1rem)] tw-max-h-full\n            tw-bg-dark-grey-transparent\n          ", {
+                        className: (0, A.cx)("\n            tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n            tw-overflow-x-hidden tw-overflow-y-auto\n            md:tw-inset-0\n            tw-h-[calc(100%-1rem)] tw-max-h-full\n            tw-bg-dark-grey-transparent\n          ", {
                             "tw-fixed": i,
                             "tw-hidden": !i
                         })
@@ -1778,7 +1778,7 @@
                         type: "button",
                         className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-absolute -tw-right-4 -tw-top-4 tw-border-none ",
                         onClick: function() {
-                            Ue(), u()
+                            je(), u()
                         }
                     }, o.createElement(s.$1, {
                         icon: te.faXmark
@@ -1857,7 +1857,7 @@
                             return F(t)
                         },
                         onComplete: function(e) {
-                            return P(e)
+                            return M(e)
                         },
                         aspect: wt[g].aspectRatio,
                         minHeight: 64
@@ -1872,7 +1872,7 @@
                             var t = e.currentTarget,
                                 r = t.width,
                                 n = t.height;
-                            j({
+                            U({
                                 width: r,
                                 height: n
                             });
@@ -1914,7 +1914,7 @@
                             return ee(Number(e.target.value))
                         }
                     }), o.createElement(s.$1, {
-                        icon: je.r8
+                        icon: Ue.r8
                     })), o.createElement("div", {
                         className: "tw-block"
                     }, o.createElement("button", {
@@ -1937,7 +1937,7 @@
                         icon: qe.mH
                     }), o.createElement("span", {
                         className: "tw-sr-only"
-                    }, "Rotate Right")))), !!A && ye && (null == se ? void 0 : se.pass) && o.createElement("div", {
+                    }, "Rotate Right")))), !!P && ye && (null == se ? void 0 : se.pass) && o.createElement("div", {
                         className: "tw-pb-5 tw-flex tw-flex-col"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white tw-pt-4 tw-text-center after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-pb-0 after:tw-mt-5 "
@@ -1945,7 +1945,7 @@
                         className: "tw-flex tw-justify-center"
                     }, o.createElement("canvas", {
                         ref: D,
-                        className: (0, M.cx)("tw-shadow-lg", {
+                        className: (0, A.cx)("tw-shadow-lg", {
                             "tw-rounded-full tw-w-60 tw-h-60 sm:tw-w-40 sm:tw-h-40": wt[g].isRounded,
                             "tw-rounded-lg tw-w-86 tw-h-auto": !wt[g].isRounded
                         })
@@ -1960,7 +1960,7 @@
                         srcUrl: x,
                         onClick: vt,
                         isRounded: !0
-                    }), "profileIcon" === g && Ae.map((function(e) {
+                    }), "profileIcon" === g && Pe.map((function(e) {
                         return o.createElement(Qe.Z, {
                             key: e.id,
                             fileId: e.id,
@@ -1968,8 +1968,8 @@
                                 fileId: e.id,
                                 width: 512
                             }),
-                            onClick: (0, v.Z)(U().mark((function t() {
-                                return U().wrap((function(t) {
+                            onClick: (0, v.Z)(j().mark((function t() {
+                                return j().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
                                             bt(e);
@@ -2002,8 +2002,8 @@
                                 fileId: e.id,
                                 width: 512
                             }),
-                            onClick: (0, v.Z)(U().mark((function t() {
-                                return U().wrap((function(t) {
+                            onClick: (0, v.Z)(j().mark((function t() {
+                                return j().wrap((function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
                                             bt(e);
@@ -2023,7 +2023,7 @@
                         className: "tw-flex tw-items-center tw-p-6 tw-space-x-2 tw-justify-end"
                     }, o.createElement("button", {
                         type: "button",
-                        className: (0, M.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
+                        className: (0, A.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
                             "tw-hidden": Et
                         }),
                         onClick: vt
@@ -2031,11 +2031,11 @@
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-button-bg-grey tw-leading-none",
                         onClick: function() {
-                            Ue(), u()
+                            je(), u()
                         }
                     }, "Cancel"), o.createElement("button", {
                         type: "button",
-                        className: (0, M.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
+                        className: (0, A.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
                             "tw-hidden": !Et
                         }),
                         disabled: yt,
@@ -2157,16 +2157,16 @@
                         C = (0, l.Z)(k, 2),
                         I = C[0],
                         S = C[1],
-                        L = (0, o.useState)(""),
-                        Z = (0, l.Z)(L, 2),
-                        U = Z[0],
-                        j = Z[1],
-                        T = (0, o.useState)(""),
-                        O = (0, l.Z)(T, 2),
-                        A = O[0],
-                        M = O[1],
-                        P = (0, o.useState)(!1),
-                        D = (0, l.Z)(P, 2),
+                        Z = (0, o.useState)(""),
+                        L = (0, l.Z)(Z, 2),
+                        j = L[0],
+                        U = L[1],
+                        R = (0, o.useState)(""),
+                        T = (0, l.Z)(R, 2),
+                        P = T[0],
+                        A = T[1],
+                        M = (0, o.useState)(!1),
+                        D = (0, l.Z)(M, 2),
                         z = D[0],
                         $ = D[1],
                         V = (0, o.useState)(!1),
@@ -2205,16 +2205,16 @@
                         Ne = (0, l.Z)(ye, 2),
                         ke = Ne[0],
                         Ce = Ne[1],
-                        Se = (0, Ae.P2)(),
-                        Le = (0, K.I0)(),
-                        Ze = (0, d.LF)(),
-                        Ue = (0, l.Z)(Ze, 2),
-                        Me = Ue[0],
-                        Pe = Ue[1],
-                        De = Pe.isLoading,
-                        $e = Pe.isSuccess,
-                        Ve = Pe.isError,
-                        qe = Pe.error,
+                        Se = (0, Pe.P2)(),
+                        Ze = (0, K.I0)(),
+                        Le = (0, d.LF)(),
+                        je = (0, l.Z)(Le, 2),
+                        Ae = je[0],
+                        Me = je[1],
+                        De = Me.isLoading,
+                        $e = Me.isSuccess,
+                        Ve = Me.isError,
+                        qe = Me.error,
                         Be = (0, d.GR)(a),
                         We = Be.data,
                         He = Be.isFetching,
@@ -2242,9 +2242,9 @@
                         xt = We.isAdult,
                         ht = We.ageVerificationStatus;
                     (0, o.useEffect)((function() {
-                        (et.current || u) && (et.current = !1, Je.current || (Je.current = !0, N(bt), j(mt), $("" !== pt && !it.includes(pt)), M(null != pt ? pt : ""), me(ft), x(gt), S(ht)))
+                        (et.current || u) && (et.current = !1, Je.current || (Je.current = !0, N(bt), U(mt), $("" !== pt && !it.includes(pt)), A(null != pt ? pt : ""), me(ft), x(gt), S(ht)))
                     }), [u, We]), (0, o.useEffect)((function() {
-                        $e && (f(), Le((0, R.d)({
+                        $e && (f(), Ze((0, O.d)({
                             title: "Update Profile",
                             icon: F.IL,
                             message: "Profile successfully updated!",
@@ -2281,7 +2281,7 @@
                                 n = t.value;
                             return ae.some((function(e) {
                                 return e.code === n
-                            })) ? e : [].concat((0, Re.Z)(e), [{
+                            })) ? e : [].concat((0, Oe.Z)(e), [{
                                 label: r,
                                 value: n
                             }])
@@ -2289,7 +2289,7 @@
                         ie(e)
                     }), [ae]);
                     var Et, yt = function() {
-                        return "" === ge ? (Ee(!1), void Ce("")) : (0, p.K2)(ge) ? de.includes(ge) ? (Ce("This social link is already added"), void Ee(!0)) : (Ee(!1), Ce(""), be(""), void me([].concat((0, Re.Z)(de), [ge.trim()]))) : (Ce("Invalid social link"), void Ee(!0))
+                        return "" === ge ? (Ee(!1), void Ce("")) : (0, p.K2)(ge) ? de.includes(ge) ? (Ce("This social link is already added"), void Ee(!0)) : (Ee(!1), Ce(""), be(""), void me([].concat((0, Oe.Z)(de), [ge.trim()]))) : (Ce("Invalid social link"), void Ee(!0))
                     };
                     if (_e) return o.createElement("div", {
                         tabIndex: "-1",
@@ -2359,7 +2359,7 @@
                     }, o.createElement("div", {
                         className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
                     }, o.createElement(s.$1, {
-                        icon: Te.Iw,
+                        icon: Re.Iw,
                         className: "tw-text-3xl"
                     }))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
@@ -2374,7 +2374,7 @@
                     }), Ke && !at && o.createElement("div", {
                         className: "tw-w-80 tw-h-44 tw-rounded-md tw-shadow-lg tw-bg-[#2BAAC1]  tw-flex tw-items-center tw-justify-center"
                     }, o.createElement(s.$1, {
-                        icon: Oe.Vm,
+                        icon: Te.Vm,
                         className: "tw-text-4xl tw-text-white"
                     })), He && o.createElement(s.UU, {
                         className: "tw-w-80 tw-h-44 tw-rounded-md tw-shadow-lg"
@@ -2389,7 +2389,7 @@
                     }, o.createElement("div", {
                         className: "tw-flex tw-justify-center tw-align-middle tw-flex-col tw-h-full tw-w-full"
                     }, o.createElement(s.$1, {
-                        icon: Te.Iw,
+                        icon: Re.Iw,
                         className: "tw-text-3xl"
                     })))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
@@ -2427,9 +2427,9 @@
                         type: "text",
                         placeholder: "Introduce yourself in any way you like.",
                         onChange: function(e) {
-                            return j(e.target.value)
+                            return U(e.target.value)
                         },
-                        value: U
+                        value: j
                     }))), vt && xt && o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2453,11 +2453,11 @@
                     }, "Pronouns"), o.createElement("select", {
                         id: "input-pronouns",
                         className: " tw-bg-darker-grey tw-border-r-8 tw-border-transparent placeholder:tw-text-placeholder-text tw-rounded tw-h-14 tw-p-4 ",
-                        value: z ? wt : A,
+                        value: z ? wt : P,
                         onChange: function(e) {
                             var t = e.target.value;
-                            if (t === wt) return $(!0), void M("");
-                            $(!1), M(t)
+                            if (t === wt) return $(!0), void A("");
+                            $(!1), A(t)
                         }
                     }, o.createElement("option", {
                         value: ""
@@ -2477,9 +2477,9 @@
                         placeholder: "Type your pronouns",
                         maxLength: 32,
                         onChange: function(e) {
-                            return M(e.target.value)
+                            return A(e.target.value)
                         },
-                        value: A
+                        value: P
                     }))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2502,7 +2502,7 @@
                                         n = ae.findIndex((function(e) {
                                             return t.code === e.code
                                         })),
-                                        a = (0, Re.Z)(ae);
+                                        a = (0, Oe.Z)(ae);
                                     if (null === r) return a.splice(n, 1), void le(a);
                                     a[n] = r, le(a)
                                 }(e)
@@ -2518,7 +2518,7 @@
                         onChange: function(e) {
                             var t = e.value,
                                 r = e.label;
-                            le([].concat((0, Re.Z)(ae), [{
+                            le([].concat((0, Oe.Z)(ae), [{
                                 title: r,
                                 code: t
                             }])), ee(!1)
@@ -2531,7 +2531,7 @@
                         },
                         "aria-label": "Add new language"
                     }, o.createElement(s.$1, {
-                        icon: je.r8
+                        icon: Ue.r8
                     }))))), o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement("div", {
@@ -2552,11 +2552,11 @@
                                     n = de.findIndex((function(e) {
                                         return e === t
                                     })),
-                                    a = (0, Re.Z)(de);
+                                    a = (0, Oe.Z)(de);
                                 a[n] = r, me(a)
                             },
                             onDelete: function(e) {
-                                me((0, Re.Z)(de.filter((function(t) {
+                                me((0, Oe.Z)(de.filter((function(t) {
                                     return t !== e
                                 }))))
                             }
@@ -2583,10 +2583,10 @@
                         type: "button",
                         className: " tw-w-9 tw-h-9 tw-ml-4 tw-border-0 tw-rounded-md tw-bg-button-bg tw-text-highlight tw-leading-none hover:tw-bg-button-bg-100 hover:tw-text-white "
                     }, o.createElement(s.$1, {
-                        icon: je.r8
+                        icon: Ue.r8
                     }))), he && o.createElement("small", {
                         className: "tw-text-red tw-pt-2"
-                    }, ke)))), Ve && !(0, Ae._E)(qe) && o.createElement("div", {
+                    }, ke)))), Ve && !(0, Pe._E)(qe) && o.createElement("div", {
                         className: "card danger tw-mt-5 tw-flex tw-flex-col"
                     }, o.createElement("span", null, o.createElement(s.$1, {
                         icon: Fe.eH,
@@ -2615,18 +2615,18 @@
                             })), n = {
                                 status: v,
                                 statusDescription: y,
-                                bio: U,
+                                bio: j,
                                 bioLinks: de,
-                                pronouns: A
-                            }, vt && (n.ageVerificationStatus = I), Me({
+                                pronouns: P
+                            }, vt && (n.ageVerificationStatus = I), Ae({
                                 userId: a,
                                 data: n,
                                 tagsToRemove: t,
                                 tagsToAdd: r
-                            }), void(A !== pt && (0, st.j)("Social_UpdatePronouns", {
+                            }), void(P !== pt && (0, st.j)("Social_UpdatePronouns", {
                                 targetUserId: a,
                                 source: "web",
-                                text: A
+                                text: P
                             }));
                             var e, t, r, n
                         },
@@ -2706,7 +2706,7 @@
                 }, "Error loading groups"), o.createElement("code", null, (null == m || null === (t = m.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "Unknown error")));
                 if (p) {
                     var g = i || [],
-                        b = (0, Re.Z)(g).sort((function(e, t) {
+                        b = (0, Oe.Z)(g).sort((function(e, t) {
                             return (t.isRepresenting ? 1 : 0) - (e.isRepresenting ? 1 : 0)
                         })).slice(0, 5),
                         v = g.length > 5;
@@ -2863,7 +2863,7 @@
                         i = void 0 === c ? null : c,
                         w = e.onClick,
                         u = n.slice(0, 4),
-                        d = [].concat((0, Re.Z)(u), (0, Re.Z)(Array(4 - u.length).fill(null)));
+                        d = [].concat((0, Oe.Z)(u), (0, Oe.Z)(Array(4 - u.length).fill(null)));
                     return o.createElement("button", {
                         type: "button",
                         onClick: w,
@@ -2916,7 +2916,7 @@
                 return r
             }
 
-            function Lt(e) {
+            function Zt(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? St(Object(r), !0).forEach((function(t) {
@@ -2927,12 +2927,12 @@
                 }
                 return e
             }
-            var Zt = function(e) {
+            var Lt = function(e) {
                 var t = e.group,
                     r = e.ownerId,
                     n = e.onClick,
-                    a = (0, Le.FT)({
-                        type: "world",
+                    a = (0, Ze.FT)({
+                        type: t.type,
                         groupName: t.name,
                         ownerId: r
                     }).data,
@@ -2956,23 +2956,25 @@
                     numFavorites: t.numFavorites,
                     maxCapacity: 100,
                     onClick: function() {
-                        null == n || n(Lt(Lt({}, t), {}, {
+                        null == n || n(Zt(Zt({}, t), {}, {
                             worlds: l
                         }))
                     }
                 })
             };
-            Zt.propTypes = {
+            Lt.propTypes = {
                 group: D().shape({
                     id: D().string,
                     name: D().string,
                     displayName: D().string,
-                    numFavorites: D().number
+                    numFavorites: D().number,
+                    type: D().string
                 }).isRequired,
                 ownerId: D().string.isRequired,
                 onClick: D().func
             };
-            var Ut = function(e) {
+            const jt = Lt;
+            var Ot = function(e) {
                 var t = e.userName,
                     r = e.worlds,
                     n = e.onClick,
@@ -2998,12 +3000,36 @@
                     }
                 })
             };
-            Ut.propTypes = {
+            Ot.propTypes = {
                 userName: D().string,
                 worlds: D().array,
                 onClick: D().func
             };
-            var Rt = function(e) {
+            const Ut = Ot;
+
+            function Rt(e, t) {
+                var r = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var n = Object.getOwnPropertySymbols(e);
+                    t && (n = n.filter((function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    }))), r.push.apply(r, n)
+                }
+                return r
+            }
+
+            function Tt(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {};
+                    t % 2 ? Rt(Object(r), !0).forEach((function(t) {
+                        (0, a.Z)(e, t, r[t])
+                    })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : Rt(Object(r)).forEach((function(t) {
+                        Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+                    }))
+                }
+                return e
+            }
+            var Pt = function(e) {
                 var t = e.userId,
                     r = e.userName,
                     n = e.isCurrentUser,
@@ -3027,14 +3053,21 @@
                         releaseStatus: a ? "all" : "public"
                     }).data,
                     h = void 0 === x ? [] : x,
-                    E = (0, Le.nA)({
+                    E = (0, Ze.nA)({
                         type: "world",
                         userId: t
                     }),
                     y = E.data,
                     N = E.isFetching,
                     k = E.isSuccess,
-                    C = (0, o.useCallback)((function() {
+                    C = (0, Ze.nA)({
+                        type: "vrcPlusWorld",
+                        userId: t
+                    }),
+                    I = C.data,
+                    F = C.isFetching,
+                    S = C.isSuccess,
+                    Z = (0, o.useCallback)((function() {
                         var e = i.current;
                         if (e) {
                             var t = e.scrollLeft,
@@ -3045,17 +3078,28 @@
                     }), []);
                 (0, o.useEffect)((function() {
                     var e = i.current;
-                    if (e) return C(), e.addEventListener("scroll", C), window.addEventListener("resize", C),
+                    if (e) return Z(), e.addEventListener("scroll", Z), window.addEventListener("resize", Z),
                         function() {
-                            e.removeEventListener("scroll", C), window.removeEventListener("resize", C)
+                            e.removeEventListener("scroll", Z), window.removeEventListener("resize", Z)
                         }
-                }), [C]), (0, o.useEffect)((function() {
-                    C()
-                }), [h, y, C]);
-                var I = (null == y ? void 0 : y.favoriteGroups) || [],
-                    F = h.length > 0,
-                    S = I.length > 0;
-                return F || S ? o.createElement($, {
+                }), [Z]), (0, o.useEffect)((function() {
+                    Z()
+                }), [h, y, I, Z]);
+                var L = (0, o.useMemo)((function() {
+                        return [].concat((0, Oe.Z)(((null == y ? void 0 : y.favoriteGroups) || []).map((function(e) {
+                            return Tt(Tt({}, e), {}, {
+                                type: "world"
+                            })
+                        }))), (0, Oe.Z)(((null == I ? void 0 : I.favoriteGroups) || []).map((function(e) {
+                            return Tt(Tt({}, e), {}, {
+                                type: "vrcPlusWorld"
+                            })
+                        }))))
+                    }), [y, I]),
+                    j = N || F,
+                    O = h.length > 0,
+                    U = L.length > 0;
+                return O || U ? o.createElement($, {
                     title: "Worlds"
                 }, o.createElement("div", {
                     className: "tw-relative tw-group"
@@ -3066,19 +3110,19 @@
                         null === (e = i.current) || void 0 === e || e.scrollBy({
                             left: -336,
                             behavior: "smooth"
-                        }), setTimeout(C, 350)
+                        }), setTimeout(Z, 350)
                     }
-                }), N && o.createElement("div", {
+                }), j && o.createElement("div", {
                     className: "tw-flex tw-items-center tw-justify-center tw-min-h-[100px]"
-                }, o.createElement(A.Z, null)), !N && k && o.createElement("div", {
+                }, o.createElement(P.Z, null)), !j && k && S && o.createElement("div", {
                     ref: i,
                     className: "tw-flex tw-gap-4 tw-overflow-x-auto tw-scrollbar-hide tw-py-2 tw-scroll-smooth"
-                }, F && o.createElement(Ut, {
+                }, O && o.createElement(Ut, {
                     userName: r,
                     worlds: h,
                     onClick: c
-                }), I.map((function(e) {
-                    return o.createElement(Zt, {
+                }), L.map((function(e) {
+                    return o.createElement(jt, {
                         key: e.id,
                         group: e,
                         ownerId: t,
@@ -3091,7 +3135,7 @@
                         null === (e = i.current) || void 0 === e || e.scrollBy({
                             left: 336,
                             behavior: "smooth"
-                        }), setTimeout(C, 350)
+                        }), setTimeout(Z, 350)
                     }
                 }))) : a ? o.createElement($, {
                     title: "Worlds"
@@ -3116,19 +3160,19 @@
                     className: "tw-text-light-grey"
                 }, "No worlds to show")))
             };
-            Rt.propTypes = {
+            Pt.propTypes = {
                 userId: D().string.isRequired,
                 userName: D().string,
                 isCurrentUser: D().bool,
                 onFolderClick: D().func
             };
-            const jt = Rt;
-            var Tt = "badges",
-                Ot = "groups",
-                At = "worlds",
-                Mt = "mutual_friends",
-                Pt = "mutual_groups",
-                Dt = function() {
+            const At = Pt;
+            var Mt = "badges",
+                Dt = "groups",
+                zt = "worlds",
+                $t = "mutual_friends",
+                Vt = "mutual_groups",
+                Gt = function() {
                     var e, t, r, v = (0, m.s0)(),
                         x = (0, m.UO)().userId,
                         h = void 0 === x ? null : x,
@@ -3145,18 +3189,18 @@
                         I = (0, l.Z)(C, 2),
                         F = I[0],
                         S = I[1],
-                        L = (0, o.useState)(!1),
-                        Z = (0, l.Z)(L, 2),
-                        U = Z[0],
-                        R = Z[1],
-                        j = (0, o.useState)(null),
-                        T = (0, l.Z)(j, 2),
-                        O = T[0],
-                        A = T[1],
-                        M = (0, o.useState)(null),
-                        P = (0, l.Z)(M, 2),
-                        D = P[0],
-                        z = P[1],
+                        Z = (0, o.useState)(!1),
+                        L = (0, l.Z)(Z, 2),
+                        j = L[0],
+                        O = L[1],
+                        U = (0, o.useState)(null),
+                        R = (0, l.Z)(U, 2),
+                        T = R[0],
+                        P = R[1],
+                        A = (0, o.useState)(null),
+                        M = (0, l.Z)(A, 2),
+                        D = M[0],
+                        z = M[1],
                         $ = (0, o.useState)(null),
                         V = (0, l.Z)($, 2),
                         G = V[0],
@@ -3228,36 +3272,36 @@
                         }
                     }), [X, k, h, Q]);
                     var Ie = (0, o.useCallback)((function() {
-                            return A(Ot)
+                            return P(Dt)
                         }), []),
                         Fe = (0, o.useCallback)((function() {
-                            return A(Tt)
+                            return P(Mt)
                         }), []),
                         Se = (0, o.useCallback)((function() {
-                            return A(Mt)
+                            return P($t)
                         }), []),
-                        Le = (0, o.useCallback)((function() {
-                            return A(Pt)
+                        Ze = (0, o.useCallback)((function() {
+                            return P(Vt)
                         }), []),
-                        Ze = (0, o.useCallback)((function(e) {
+                        Le = (0, o.useCallback)((function(e) {
                             return o.createElement(ne, {
                                 key: e.badgeId,
                                 badge: e
                             })
                         }), []),
+                        Oe = (0, o.useCallback)((function(e) {
+                            z(e), P(zt)
+                        }), []),
+                        Ue = (0, o.useCallback)((function() {
+                            P(null), z(null)
+                        }), []),
                         Re = (0, o.useCallback)((function(e) {
-                            z(e), A(At)
-                        }), []),
-                        je = (0, o.useCallback)((function() {
-                            A(null), z(null)
-                        }), []),
-                        Te = (0, o.useCallback)((function(e) {
                             return o.createElement(g.Z, {
                                 key: e.groupId,
                                 group: e
                             })
                         }), []),
-                        Oe = (0, o.useCallback)((function(e) {
+                        Te = (0, o.useCallback)((function(e) {
                             return o.createElement(s.uW, {
                                 key: e.id,
                                 data: e,
@@ -3265,53 +3309,53 @@
                                 fieldsList: ["occupants", "favorites", "updated_at"]
                             })
                         }), []),
-                        Ae = (0, o.useCallback)((function(e) {
+                        Pe = (0, o.useCallback)((function(e) {
                             return o.createElement(b.Z, {
                                 key: e.id,
                                 userData: e,
                                 isCard: !0
                             })
                         }), []),
-                        Me = (0, o.useMemo)((function() {
+                        Ae = (0, o.useMemo)((function() {
                             return xe ? xe.find((function(e) {
                                 return e.isRepresenting
                             })) : null
                         }), [xe]);
                     (0, o.useEffect)((function() {
-                        je()
-                    }), [je, h]);
-                    var Pe = (0, o.useMemo)((function() {
+                        Ue()
+                    }), [Ue, h]);
+                    var Me = (0, o.useMemo)((function() {
                         var e;
-                        return e = {}, (0, a.Z)(e, Tt, {
+                        return e = {}, (0, a.Z)(e, Mt, {
                             title: "".concat(ue, "'s Badges"),
                             items: (me || []).filter((function(e) {
                                 return !e.hidden
                             })),
-                            renderItem: Ze,
+                            renderItem: Le,
                             gridColumns: 3
-                        }), (0, a.Z)(e, Ot, {
+                        }), (0, a.Z)(e, Dt, {
                             title: "".concat(ue, "'s Groups"),
                             items: xe,
-                            renderItem: Te,
+                            renderItem: Re,
                             isLoading: he,
                             gridColumns: 4
-                        }), (0, a.Z)(e, At, {
+                        }), (0, a.Z)(e, zt, {
                             title: (null == D ? void 0 : D.displayName) || "Worlds",
                             items: (null == D ? void 0 : D.worlds) || [],
-                            renderItem: Oe,
-                            gridColumns: 4
-                        }), (0, a.Z)(e, Mt, {
-                            title: "Mutual Friends",
-                            items: ye,
-                            renderItem: Ae,
-                            gridColumns: 4
-                        }), (0, a.Z)(e, Pt, {
-                            title: "Mutual Groups",
-                            items: ke,
                             renderItem: Te,
                             gridColumns: 4
+                        }), (0, a.Z)(e, $t, {
+                            title: "Mutual Friends",
+                            items: ye,
+                            renderItem: Pe,
+                            gridColumns: 4
+                        }), (0, a.Z)(e, Vt, {
+                            title: "Mutual Groups",
+                            items: ke,
+                            renderItem: Re,
+                            gridColumns: 4
                         }), e
-                    }), [me, ue, xe, he, Ze, Te, Oe, Ae, D, ye, ke]);
+                    }), [me, ue, xe, he, Le, Re, Te, Pe, D, ye, ke]);
                     if (ae) return null;
                     var De = (0, p.H1)(de, null !== (e = null == Y || null === (t = Y.constants) || void 0 === t || null === (t = t.LANGUAGE) || void 0 === t ? void 0 : t.SPOKEN_LANGUAGE_OPTIONS) && void 0 !== e ? e : c.O);
                     De.some((function(e) {
@@ -3325,11 +3369,11 @@
                         cancelCallback: function() {
                             return S(!1)
                         }
-                    }), !k && U && o.createElement(Ue, {
+                    }), !k && j && o.createElement(je, {
                         friendUserId: h,
-                        isOpen: U,
+                        isOpen: j,
                         cancelCallback: function() {
-                            return R(!1)
+                            return O(!1)
                         }
                     }), o.createElement("div", {
                         className: "tw-max-w-screen-2xl tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-gap-6"
@@ -3344,18 +3388,18 @@
                             return S(!0)
                         },
                         onFavorite: function() {
-                            return R(!0)
+                            return O(!0)
                         },
-                        representingGroup: Me,
+                        representingGroup: Ae,
                         isMuted: G,
                         isBlocked: H,
                         isLoading: ce,
                         onViewAllFriendsClick: Se,
-                        onViewAllGroupsClick: Le
-                    }), o.createElement(jt, {
+                        onViewAllGroupsClick: Ze
+                    }), o.createElement(At, {
                         userId: h,
                         userName: null == re ? void 0 : re.displayName,
-                        onFolderClick: Re,
+                        onFolderClick: Oe,
                         isCurrentUser: k
                     })), o.createElement("div", {
                         className: "tw-w-full md:tw-w-5/12 tw-flex tw-flex-col tw-gap-6"
@@ -3374,9 +3418,9 @@
                         onViewAllClick: Ie,
                         isCurrentUser: k
                     }))), o.createElement(xt, (0, n.Z)({
-                        isVisible: !!O,
-                        onClose: je
-                    }, null !== (r = Pe[O]) && void 0 !== r ? r : {
+                        isVisible: !!T,
+                        onClose: Ue
+                    }, null !== (r = Me[T]) && void 0 !== r ? r : {
                         title: "",
                         items: [],
                         renderItem: function() {
@@ -3384,8 +3428,8 @@
                         }
                     })))
                 };
-            Dt.propTypes = {};
-            const zt = Dt
+            Gt.propTypes = {};
+            const qt = Gt
         },
         87343: (e, t, r) => {
             r.d(t, {
@@ -3433,4 +3477,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bf47eaa9e27ca9a0e5804a688308170174d42380c4be781d5cdb0c71dc25f88f.js.map
+//# sourceMappingURL=fad4ea2562b5fd48d844cc128fd7e25c542597ce7a141b53e06097a4d4b280a2.js.map
