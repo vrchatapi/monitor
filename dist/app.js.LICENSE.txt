@@ -6,7 +6,7 @@
 
 /*! https://mths.be/cssesc v3.0.0 by @mathias */
 
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */
 
 /**
  * @description Calculate deltaE OK which is the simple root sum of squares
@@ -191,7 +191,7 @@
  */
 
 /**
- * @remix-run/router v1.9.0
+ * @remix-run/router v1.23.2
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -501,7 +501,7 @@
  */
 
 /**
- * React Router DOM v6.16.0
+ * React Router DOM v6.30.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -512,7 +512,7 @@
  */
 
 /**
- * React Router v6.16.0
+ * React Router v6.30.3
  *
  * Copyright (c) Remix Software Inc.
  *
