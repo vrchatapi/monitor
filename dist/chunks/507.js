@@ -3,7 +3,7 @@
         40507(t, e, a) {
             "use strict";
             a.r(e), a.d(e, {
-                default: () => yt
+                default: () => Et
             });
             var r = a(15902),
                 n = a(80961),
@@ -73,11 +73,11 @@
                         format: "YYYY-MM-DD"
                     }
                 },
-                A = {
+                O = {
                     numPurchases: "Total Sales",
                     totalPurchasePrice: "Total Earnings"
                 },
-                O = {
+                A = {
                     backgroundColor: "#064b5c",
                     borderColor: "#086c84"
                 },
@@ -125,7 +125,7 @@
                         }(t, a.get(t))
                     })
                 },
-                W = function(t) {
+                _ = function(t) {
                     if (t.includes("-W")) {
                         var e = t.split("-W"),
                             a = (0, r.A)(e, 2),
@@ -135,9 +135,9 @@
                     }
                     return t.match(/^\d{4}-\d{2}$/) ? c()(t, "YYYY-MM") : t.match(/^\d{4}$/) ? c()(t, "YYYY") : c()(t)
                 },
-                _ = function(t, e) {
-                    var a = W(t._id);
-                    return W(e._id).isAfter(a) ? 1 : -1
+                W = function(t, e) {
+                    var a = _(t._id);
+                    return _(e._id).isAfter(a) ? 1 : -1
                 },
                 R = function(t, e) {
                     return t.reduce(function(t, a) {
@@ -145,9 +145,9 @@
                         t.labels.push(r), t.datasets[e] || (t.datasets[e] = function(t) {
                             return C({
                                 yAxisId: t,
-                                label: A[t] || t,
+                                label: O[t] || t,
                                 data: []
-                            }, O)
+                            }, A)
                         }(e));
                         var n = function(t, e) {
                             var a = t.otpPurchaseCount,
@@ -164,9 +164,9 @@
                     })
                 },
                 F = a(10467),
-                $ = a(70129),
-                B = a(54756),
-                L = a.n(B),
+                L = a(70129),
+                $ = a(54756),
+                B = a.n($),
                 q = a(47767),
                 H = a(3569),
                 V = a(5556),
@@ -238,8 +238,8 @@
                 hideGlyph: J().bool,
                 customNoCreditsText: J().string
             };
-            const z = K;
-            const U = function() {
+            const U = K;
+            const Z = function() {
                 var t, e, a, r = (0, h.p$)().data,
                     n = null == r ? void 0 : r.id,
                     o = (0, q.Zp)(),
@@ -283,9 +283,9 @@
                     title: "Error loading statistics"
                 }, "Failed to fetch earnings: ", null == m || null === (e = m.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message), p.createElement("div", {
                     className: "tw-flex tw-w-full tw-gap-3 tw-my-4 tw-flex-col md:tw-flex-row"
-                }, u ? p.createElement(p.Fragment, null, p.createElement(Z, null), p.createElement(Z, {
+                }, u ? p.createElement(p.Fragment, null, p.createElement(z, null), p.createElement(z, {
                     delay: 100
-                })) : p.createElement(p.Fragment, null, p.createElement(z, {
+                })) : p.createElement(p.Fragment, null, p.createElement(U, {
                     title: "Available Payout",
                     credits: Number(f) || 0,
                     link: {
@@ -294,8 +294,8 @@
                     },
                     cta: {
                         text: "Manage",
-                        onClickCallback: (a = (0, F.A)(L().mark(function t() {
-                            return L().wrap(function(t) {
+                        onClickCallback: (a = (0, F.A)(B().mark(function t() {
+                            return B().wrap(function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
                                         o("/home/marketplace/storefront/payout/manage");
@@ -309,7 +309,7 @@
                         }),
                         title: ""
                     }
-                }), p.createElement(z, {
+                }), p.createElement(U, {
                     title: "Total Sales",
                     hideGlyph: !0,
                     credits: Number(v || 0),
@@ -320,7 +320,7 @@
                         },
                         isDisabled: !1
                     }
-                }), p.createElement(z, {
+                }), p.createElement(U, {
                     title: "Total Earned",
                     credits: Number(y || 0),
                     cta: {
@@ -332,7 +332,7 @@
                     }
                 }))))
             };
-            var Z = (0, $.A)(l.fy, {
+            var z = (0, L.A)(l.fy, {
                     target: "e129v97h0"
                 })({
                     name: "rdii6n",
@@ -392,7 +392,8 @@
                 wt = a.n(ut),
                 mt = a(28826),
                 dt = a.n(mt),
-                pt = function(t) {
+                pt = "tw-my-2 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-2 tw-border-transparent hover:tw-border-highlight tw-rounded tw-px-4 tw-inline-flex tw-items-center tw-no-underline tw-w-auto",
+                ft = function(t) {
                     var e, a = t.currentStepNumber,
                         n = (0, rt.Mj)("myStoreTutorialDismissed", !1),
                         l = (0, r.A)(n, 2),
@@ -412,21 +413,26 @@
                                     className: " tw-flex tw-flex-col tw-max-w-full tw-ml-0 @[700px]/tutorial:tw-max-w-full @[700px]/tutorial:tw-ml-4 "
                                 }, p.createElement("h4", {
                                     className: "tw-text-white tw-font-bold tw-text-lg tw-mt-4"
-                                }, "Enhance in-world experiences and engage with your community"), p.createElement("p", {
+                                }, "Create exclusive content and engage with your community"), p.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Products allow you to customize interactions and behaviors in your worlds. Subscriptions ensure you a regular income from your supporters."), p.createElement("p", {
+                                }, "Products grant exclusive rewards to your supporters. Users get products by buying your listings or group subscriptions."), p.createElement("a", {
+                                    href: "https://creators.vrchat.com/economy/products/",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer"
+                                }, "Learn More about Products"), p.createElement("p", {
                                     className: "tw-text-light-grey tw-text-sm tw-mt-2"
-                                }, "Proceed to the next step by creating your first product or subscription!"), p.createElement("div", {
-                                    className: "tw-flex"
+                                }, "Proceed to the next step by creating your first product, listing, or subscription!"), p.createElement("div", {
+                                    className: "tw-flex tw-gap-2 tw-flex-wrap"
                                 }, p.createElement(nt.N_, {
-                                    to: "/home/marketplace/storefront/products"
-                                }, p.createElement(lt.A, {
-                                    className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
-                                }, "Create Product")), p.createElement(nt.N_, {
-                                    to: "/home/marketplace/storefront/subscriptions"
-                                }, p.createElement(lt.A, {
-                                    className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight tw-ml-4"
-                                }, "Create Subscription")))))
+                                    to: "/home/marketplace/storefront/products",
+                                    className: pt
+                                }, "Create Product"), p.createElement(nt.N_, {
+                                    to: "/home/marketplace/storefront/listings",
+                                    className: pt
+                                }, "Create Listing"), p.createElement(nt.N_, {
+                                    to: "/home/marketplace/storefront/subscriptions",
+                                    className: pt
+                                }, "Create Subscription"))))
                             }
                         }, {
                             number: 2,
@@ -447,10 +453,9 @@
                                 }, "Organize your listings, create bundles and set prices. Preview how your stores appear in-world, on the marketplace tab and in the corresponding group and world pages."), p.createElement("div", {
                                     className: "tw-flex"
                                 }, p.createElement(nt.N_, {
-                                    to: "/home/marketplace/storefront/stores"
-                                }, p.createElement(lt.A, {
-                                    className: "tw-mt-4 tw-h-10 tw-bg-button-bg tw-text-highlight tw-leading-none tw-border-transparent hover:tw-border-highlight"
-                                }, "Manage Stores")))))
+                                    to: "/home/marketplace/storefront/stores",
+                                    className: pt
+                                }, "Manage Stores"))))
                             }
                         }, {
                             number: 3,
@@ -528,16 +533,16 @@
                         return t.number === a
                     })) || void 0 === e ? void 0 : e.content())
                 };
-            pt.propTypes = {
+            ft.propTypes = {
                 currentStepNumber: J().number.isRequired
             };
-            const ft = pt;
+            const bt = ft;
             c().extend(w()), i.t1.register(i.PP, i.kc, i.UA, i.FN, i.No, i.m_, i.dN), i.t1.defaults.color = "#737372", i.t1.defaults.borderColor = "rgba(127, 127, 127, 0.1)";
-            var bt = {
+            var xt = {
                     numPurchases: "Total Sales",
                     totalPurchasePrice: "Total Earnings"
                 },
-                xt = [{
+                ht = [{
                     label: "Last 7 Days",
                     value: "P7D"
                 }, {
@@ -556,7 +561,7 @@
                     label: "Custom",
                     value: !1
                 }],
-                ht = [{
+                gt = [{
                     label: "Day",
                     value: "days"
                 }, {
@@ -569,17 +574,17 @@
                     label: "Year",
                     value: "years"
                 }],
-                gt = function(t) {
+                vt = function(t) {
                     return "weeks" === t ? "isoweek" : t
                 },
-                vt = function(t) {
+                yt = function(t) {
                     var e = d().duration(t);
                     if (e.asDays() < 1) throw new RangeError("computeValuesForDurationTemplate: durationTemplate ".concat(t, " resulted in an invalid duration"));
                     var a = function(t) {
                             if (!d().isDuration(t)) throw new TypeError("duration ".concat(t, " is not a valid duration object"));
                             return t.asMonths() > 11 ? "months" : t.asMonths() > 2 ? "weeks" : "days"
                         }(e),
-                        r = gt(a),
+                        r = vt(a),
                         n = d()(),
                         l = n.clone().endOf(r);
                     return {
@@ -588,14 +593,14 @@
                         metricDateEnd: l
                     }
                 };
-            const yt = function() {
+            const Et = function() {
                 var t, e, a, i, s, u = (0, h.p$)().data,
                     w = null == u ? void 0 : u.id,
                     m = p.useState("numPurchases"),
                     E = (0, r.A)(m, 2),
                     N = E[0],
                     k = E[1],
-                    M = p.useState(xt[0].value),
+                    M = p.useState(ht[0].value),
                     Y = (0, r.A)(M, 2),
                     D = Y[0],
                     S = Y[1],
@@ -615,28 +620,28 @@
                             subscriberMonths: 0
                         }
                     } : C,
-                    A = P.isFetching,
-                    O = P.isError,
+                    O = P.isFetching,
+                    A = P.isError,
                     T = P.error,
-                    W = p.useMemo(function() {
+                    _ = p.useMemo(function() {
                         return 0 === j.totals.totalEarnings
                     }, [j]),
                     F = p.useMemo(function() {
-                        return vt(D)
+                        return yt(D)
                     }, []),
-                    $ = F.groupByDuration,
-                    B = F.metricDateStart,
-                    L = F.metricDateEnd,
-                    q = p.useState($),
+                    L = F.groupByDuration,
+                    $ = F.metricDateStart,
+                    B = F.metricDateEnd,
+                    q = p.useState(L),
                     H = (0, r.A)(q, 2),
                     V = H[0],
                     J = H[1],
-                    K = p.useState(B),
-                    z = (0, r.A)(K, 2),
-                    Z = z[0],
-                    X = z[1],
-                    Q = (0, b.d7)(Z),
-                    tt = p.useState(L),
+                    K = p.useState($),
+                    U = (0, r.A)(K, 2),
+                    z = U[0],
+                    X = U[1],
+                    Q = (0, b.d7)(z),
+                    tt = p.useState(B),
                     et = (0, r.A)(tt, 2),
                     at = et[0],
                     rt = et[1],
@@ -650,14 +655,14 @@
                     wt = ut[0],
                     mt = ut[1],
                     dt = p.useMemo(function() {
-                        return [d().isMoment(Z) && Z.isAfter(x.a5) && Z.isBefore(at || d()().add(2, "y")), d().isMoment(at) && at.isAfter(Z || x.a5) && at.isBefore(d()().add(2, "y"))]
-                    }, [Z, at]),
+                        return [d().isMoment(z) && z.isAfter(x.a5) && z.isBefore(at || d()().add(2, "y")), d().isMoment(at) && at.isAfter(z || x.a5) && at.isBefore(d()().add(2, "y"))]
+                    }, [z, at]),
                     pt = (0, r.A)(dt, 2),
-                    yt = pt[0],
+                    ft = pt[0],
                     Et = pt[1];
                 p.useEffect(function() {
                     if (D) {
-                        var t = vt(D),
+                        var t = yt(D),
                             e = t.groupByDuration,
                             a = t.metricDateStart,
                             r = t.metricDateEnd;
@@ -671,7 +676,7 @@
                         metricDateEnd: null == nt ? void 0 : nt.toISOString(),
                         listingIds: wt ? [wt] : wt
                     }, {
-                        skip: !(w && Q && nt && yt && Et)
+                        skip: !(w && Q && nt && ft && Et)
                     }),
                     Yt = Mt.data,
                     Dt = void 0 === Yt ? {
@@ -688,18 +693,18 @@
                     Pt = St.data,
                     Ct = void 0 === Pt ? [] : Pt,
                     jt = St.isLoading,
-                    At = St.isError,
-                    Ot = St.isSuccess,
+                    Ot = St.isError,
+                    At = St.isSuccess,
                     Tt = St.error,
                     Gt = p.useMemo(function() {
                         var t;
-                        if (null == Dt || null === (t = Dt.breakdown) || void 0 === t || !t.length || !Z || !at) return {
+                        if (null == Dt || null === (t = Dt.breakdown) || void 0 === t || !t.length || !z || !at) return {
                             labels: [],
                             datasets: []
                         };
-                        var e = G(Z, at, V);
+                        var e = G(z, at, V);
                         return function(t, e) {
-                            var a = t.sort(_),
+                            var a = t.sort(W),
                                 r = R(a, e),
                                 n = r.labels,
                                 l = r.datasets;
@@ -708,12 +713,12 @@
                                 datasets: Object.values(l)
                             }
                         }(I(Dt.breakdown, e), N)
-                    }, [Dt, N, Z, at, V]),
+                    }, [Dt, N, z, at, V]),
                     It = !(null != Gt && null !== (t = Gt.datasets) && void 0 !== t && t.length),
-                    Wt = function() {
+                    _t = function() {
                         it || st(!0)
                     },
-                    _t = p.useMemo(function() {
+                    Wt = p.useMemo(function() {
                         var t = [{
                             label: "All"
                         }];
@@ -734,9 +739,9 @@
                         skip: !w
                     }),
                     Ft = Rt.data,
-                    $t = Rt.isFetching,
-                    Bt = Rt.isSuccess,
-                    Lt = A || Z !== Q || at !== nt || $t,
+                    Lt = Rt.isFetching,
+                    $t = Rt.isSuccess,
+                    Bt = O || z !== Q || at !== nt || Lt,
                     qt = p.useMemo(function() {
                         switch (V) {
                             case "years":
@@ -794,12 +799,12 @@
                             }
                         }
                     }, [N, V, qt]),
-                    Vt = !w || wt && (jt || At) || !Z || !at || !yt || !Et || !(null != Dt && null !== (e = Dt.breakdown) && void 0 !== e && e.length) || It;
-                return p.createElement(p.Fragment, null, p.createElement(ft, {
-                    currentStepNumber: (Nt = 0 === (null == Ft ? void 0 : Ft.length) && Bt, kt = !Ct.some(function(t) {
+                    Vt = !w || wt && (jt || Ot) || !z || !at || !ft || !Et || !(null != Dt && null !== (e = Dt.breakdown) && void 0 !== e && e.length) || It;
+                return p.createElement(p.Fragment, null, p.createElement(bt, {
+                    currentStepNumber: (Nt = 0 === (null == Ft ? void 0 : Ft.length) && $t, kt = !Ct.some(function(t) {
                         return !0 === t.active
-                    }) && Ot, Nt ? 1 : kt ? 2 : W ? 3 : 4)
-                }), p.createElement(U, null), p.createElement(l.fI, {
+                    }) && At, Nt ? 1 : kt ? 2 : _ ? 3 : 4)
+                }), p.createElement(Z, null), p.createElement(l.fI, {
                     className: "align-items-center flex-wrap tw-mb-4",
                     style: {
                         justifyContent: "space-between"
@@ -812,7 +817,7 @@
                     justify: "left",
                     selected: N,
                     onChange: k,
-                    tabs: Object.entries(bt).map(function(t) {
+                    tabs: Object.entries(xt).map(function(t) {
                         var e = (0, r.A)(t, 2);
                         return {
                             id: e[0],
@@ -826,13 +831,13 @@
                     label: "Duration",
                     onChange: S,
                     value: D,
-                    options: xt,
+                    options: ht,
                     className: "tw-mr-2"
                 }), p.createElement(l.ms, {
                     label: "Group By",
                     onChange: J,
                     value: V,
-                    options: ht,
+                    options: gt,
                     className: "tw-mr-2"
                 }), !D && p.createElement("div", {
                     className: "d-flex align-items-center flex-wrap"
@@ -840,10 +845,10 @@
                     type: "date",
                     className: "tw-mr-1",
                     disabled: !!D,
-                    invalid: yt,
-                    value: null == Z ? void 0 : Z.format("YYYY-MM-DD"),
+                    invalid: ft,
+                    value: null == z ? void 0 : z.format("YYYY-MM-DD"),
                     onChange: function(t) {
-                        var e = d()(t.target.value).startOf(gt(V));
+                        var e = d()(t.target.value).startOf(vt(V));
                         X(e)
                     },
                     min: x.a5,
@@ -855,10 +860,10 @@
                     invalid: Et,
                     value: null == at ? void 0 : at.format("YYYY-MM-DD"),
                     onChange: function(t) {
-                        var e = d()(t.target.value).endOf(gt(V));
+                        var e = d()(t.target.value).endOf(vt(V));
                         rt(e)
                     },
-                    min: (null == Z ? void 0 : Z.format("YYYY-MM-DD")) || x.a5,
+                    min: (null == z ? void 0 : z.format("YYYY-MM-DD")) || x.a5,
                     max: d()().add(2, "y").format("YYYY-MM-DD")
                 })), p.createElement("div", {
                     className: "d-flex justify-content-end",
@@ -873,11 +878,11 @@
                     trimToLength: !0,
                     label: "Listing",
                     onChange: mt,
-                    onMouseEnter: Wt,
-                    onClick: Wt,
+                    onMouseEnter: _t,
+                    onClick: _t,
                     className: "tw-mr-2",
                     value: wt,
-                    options: _t
+                    options: Wt
                 }), p.createElement(l.$n, {
                     disabled: Vt,
                     onClick: function() {
@@ -889,7 +894,7 @@
                                 r = wt && (null == Ct || null === (t = Ct.find(function(t) {
                                     return t.id === wt
                                 })) || void 0 === t ? void 0 : t.displayName);
-                            e.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(V.replace(/s$/, ""), " - ").concat(Z.format(a), " to ").concat(at.format(a), ".csv"));
+                            e.setAttribute("download", "VRChat Sales".concat(r ? " for ".concat(r) : "", " by ").concat(V.replace(/s$/, ""), " - ").concat(z.format(a), " to ").concat(at.format(a), ".csv"));
                             var n = (null == Dt ? void 0 : Dt.breakdown) || [],
                                 l = Object.keys(n[0]),
                                 o = null == n ? void 0 : n.map(function(t) {
@@ -905,13 +910,13 @@
                     className: "tw-px-2"
                 })))), p.createElement("span", {
                     className: "tw-text-placeholder-text tw-my-5 tw-text-base"
-                }, "Time period: ", null == Z ? void 0 : Z.format("MMM DD"), " - ", null !== (a = c()(at)) && void 0 !== a && a.isToday() ? "Today" : null == at ? void 0 : at.format("MMM DD")), At && p.createElement(l.$T, {
+                }, "Time period: ", null == z ? void 0 : z.format("MMM DD"), " - ", null !== (a = c()(at)) && void 0 !== a && a.isToday() ? "Today" : null == at ? void 0 : at.format("MMM DD")), Ot && p.createElement(l.$T, {
                     type: "error",
                     title: "Error loading listings"
-                }, null == Tt || null === (i = Tt.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message), O && p.createElement(l.$T, {
+                }, null == Tt || null === (i = Tt.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message), A && p.createElement(l.$T, {
                     type: "error",
                     title: "Error loading earnings"
-                }, null == T || null === (s = T.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), Lt ? p.createElement(l.fy, {
+                }, null == T || null === (s = T.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message), Bt ? p.createElement(l.fy, {
                     style: {
                         minHeight: 100,
                         aspectRatio: Ht.aspectRatio.toString(10)
@@ -1027,4 +1032,4 @@
         }
     }
 ]);
-//# sourceMappingURL=657187beb932f43b40925c45c8e1c2987fcaa8479ca526491b12b9ad40e416e0.js.map
+//# sourceMappingURL=7ff91730aa0808e43e9d8e02d08ebc5a76491a5ab365add52a44a1440b7ba57a.js.map
