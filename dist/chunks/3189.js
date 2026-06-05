@@ -3,7 +3,7 @@
         73189(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => G
+                default: () => B
             });
             var r = n(15184),
                 a = n(70129),
@@ -48,7 +48,7 @@
             k.propTypes = {
                 groupId: h().string
             };
-            const N = k;
+            const S = k;
             var A = function(e) {
                 var t = e.title,
                     n = e.groupIds,
@@ -85,7 +85,7 @@
                     return l.createElement("div", {
                         key: e,
                         className: "tw-mr-4 tw-mt-4 tw-snap-center tw-w-80 tw-inline-block tw-h-64 tw-scroll-ml-6 tw-snap-always"
-                    }, l.createElement(N, {
+                    }, l.createElement(S, {
                         groupId: e
                     }))
                 }), l.createElement("button", {
@@ -112,11 +112,11 @@
                 title: h().string.isRequired,
                 groupIds: h().arrayOf(h().string).isRequired
             };
-            const S = A;
+            const N = A;
             var I = n(60188),
                 C = n(46708),
                 R = ["worldId"],
-                L = function(e) {
+                T = function(e) {
                     var t = e.worldId,
                         n = void 0 === t ? null : t,
                         r = (0, b.A)(e, R),
@@ -136,10 +136,10 @@
                         world: o
                     }, r)) : void 0
                 };
-            L.propTypes = {
+            T.propTypes = {
                 worldId: h().string
             };
-            const T = L;
+            const L = T;
             var W = function(e) {
                 var t = e.title,
                     n = e.worldIds,
@@ -176,7 +176,7 @@
                     return l.createElement("div", {
                         key: e,
                         className: "tw-snap-center tw-w-80 tw-inline-block tw-h-98 tw-scroll-ml-6 tw-snap-always"
-                    }, l.createElement(T, {
+                    }, l.createElement(L, {
                         worldId: e,
                         className: "tw-mr-4 tw-mb-4"
                     }))
@@ -210,28 +210,28 @@
                 P = n(66829),
                 z = n.n(P),
                 V = n(17917),
-                O = n.n(V),
-                _ = n(91700),
-                D = n.n(_),
+                D = n.n(V),
+                O = n(91700),
+                _ = n.n(O),
                 F = n(50481),
                 Q = n.n(F),
                 X = n(61747),
-                B = n.n(X);
-            const G = function() {
-                var e, t, n = (0, u.a$)({
+                G = n.n(X);
+            const B = function() {
+                var e, t, n, a = (0, u.a$)({
                         withEconomyAccount: !0
                     }).user,
-                    a = (0, d.o)({
+                    o = (0, d.o)({
                         require: ["marketplace-page", "content-compatibility-pc"]
                     }),
-                    o = a.data,
-                    s = void 0 === o ? [] : o,
-                    p = a.isLoading,
-                    m = null == s || null === (e = s[0]) || void 0 === e ? void 0 : e.data,
-                    g = null == m ? void 0 : m.categories,
-                    f = l.useMemo(function() {
+                    s = o.data,
+                    p = void 0 === s ? [] : s,
+                    m = o.isLoading,
+                    g = null == p || null === (e = p[0]) || void 0 === e ? void 0 : e.data,
+                    f = null == g ? void 0 : g.categories,
+                    h = l.useMemo(function() {
                         var e;
-                        return null == g || null === (e = g.map(function(e) {
+                        return null == f || null === (e = f.map(function(e) {
                             var t = Array.isArray(e.ids) && (0, w.R3)((0, r.A)(e.ids)).slice(0, e.maxCells || void 0) || [];
                             switch (e.type) {
                                 case "worlds":
@@ -243,7 +243,7 @@
                                     });
                                 case "groups":
                                     var i, s, u, d;
-                                    return l.createElement(S, {
+                                    return l.createElement(N, {
                                         key: "".concat(e.type, ":").concat(null !== (i = null === (s = e.name) || void 0 === s ? void 0 : s.fallback) && void 0 !== i ? i : e.name, ":").concat(e.maxCells),
                                         title: null !== (u = null === (d = e.name) || void 0 === d ? void 0 : d.fallback) && void 0 !== u ? u : e.name,
                                         groupIds: t
@@ -254,8 +254,8 @@
                         })) || void 0 === e ? void 0 : e.filter(function(e) {
                             return !!e
                         })
-                    }, [g]),
-                    h = (null == n || null === (t = n.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.Tp.INVITED;
+                    }, [f]),
+                    v = (null == a || null === (t = a.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.Tp.INVITED || (null == a || null === (n = a.economyAccount) || void 0 === n ? void 0 : n.accountSellerStatus) === c.Tp.REGISTERED;
                 return l.createElement(l.Fragment, null, l.createElement(H, {
                     className: "flex-row px-1 gap-1 justify-content-evenly align-items-center tw-w-full"
                 }, l.createElement("picture", {
@@ -271,7 +271,7 @@
                 }, "Welcome to ", l.createElement("br", null), l.createElement(J, null, "VRChat Marketplace")), l.createElement("picture", {
                     className: "tw--mt-4 tw--mb-8 tw-pointer-events-none"
                 }, l.createElement("source", {
-                    srcSet: "".concat(Q(), ", ").concat(B(), " 2x")
+                    srcSet: "".concat(Q(), ", ").concat(G(), " 2x")
                 }), l.createElement("img", {
                     src: Q(),
                     width: "280",
@@ -286,13 +286,13 @@
                     className: "d-flex flex-row flex-wrap gap-2 align-items-start"
                 }, l.createElement(K, {
                     to: "../wallet"
-                }, "Check my Wallet"), h && l.createElement(K, {
+                }, "Check my Wallet"), v && l.createElement(K, {
                     to: "../storefront"
-                }, "Manage my Store")))), p ? l.createElement(i.fy, null) : f)
+                }, "Manage my Store")))), m ? l.createElement(i.fy, null) : h)
             };
             var H = (0, a.A)(i.N3, {
                     target: "e1g9fx423"
-                })("background-color:#715900;background-size:cover;background-position:center;background-image:url(", O(), ");@media (min-device-pixel-ratio: 1.5){background-image:url(", D(), ");}border:none;padding:0;&>picture:last-child{z-index:1;}@media (max-width: 479px){&>picture:last-child{display:none;}}"),
+                })("background-color:#715900;background-size:cover;background-position:center;background-image:url(", D(), ");@media (min-device-pixel-ratio: 1.5){background-image:url(", _(), ");}border:none;padding:0;&>picture:last-child{z-index:1;}@media (max-width: 479px){&>picture:last-child{display:none;}}"),
                 $ = (0, a.A)("h3", {
                     target: "e1g9fx422"
                 })({
@@ -491,4 +491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d0aa8ed9c0f563342b08064f266d7836c3648702722544fadf2488fe41abb42f.js.map
+//# sourceMappingURL=416f712b7aeab9b0c76471fe67adcf72d9467b24e9d0e4b03e153db04a116f20.js.map
