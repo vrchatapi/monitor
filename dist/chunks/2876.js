@@ -185,7 +185,9 @@
                         error: null === (e = _.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message
                     })
                 }, [_]), w.useEffect(function() {
-                    (0, A.u4)("Signup_RegistrationStart")
+                    (0, A.u4)("Signup_RegistrationStart", {
+                        accountType: "vrchat"
+                    })
                 }, []);
                 var Be = function() {
                         var e = (0, n.A)(c().mark(function e(t) {
@@ -743,4 +745,4 @@
         }
     }
 ]);
-//# sourceMappingURL=267592b9bce94c337f6b007acc1197bb2863e958d27674ba72621b8836dc3fd9.js.map
+//# sourceMappingURL=e9afbae81801374a0d76efa27847902ecbaad51baea599eb6cc4f44fd9f943fd.js.map
