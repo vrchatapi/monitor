@@ -5,7 +5,7 @@
             t.r(r), t.d(r, {
                 default: () => l
             });
-            var n = t(15902),
+            var n = t(82544),
                 o = t(96540),
                 c = t(15033),
                 s = ["./common.js", "./index.js"],
@@ -125,4 +125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b7210608c228ea8c49fe2a7466f74a84399cd35290e6bdb66e62d0fb5cccce82.js.map
+//# sourceMappingURL=1d703e40b5e737feab112de71c3294493651f0b768b21dc18e357f6d0811405f.js.map

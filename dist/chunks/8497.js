@@ -126,7 +126,7 @@
             b.propTypes = {};
             const k = b;
             var N = n(10467),
-                A = n(15902),
+                A = n(82544),
                 C = n(7612),
                 j = n(8436),
                 O = n(42217),
@@ -482,7 +482,7 @@
                     className: "tw-text-light-grey tw-text-base"
                 }, "You have no archived cosmetics."))))
             };
-            var Y = n(15184),
+            var Y = n(66911),
                 W = n(64467),
                 K = n(26664);
             const J = function(e, t) {
@@ -3831,4 +3831,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bb60f73120b41f787bd5eaf16c2c07218b1acb0eca2a3cbe984e9b7b19f4f9b7.js.map
+//# sourceMappingURL=5c04d56f729126fb5c7bebb8994af11335c4023c3087142bb786c6f65b6fe345.js.map
