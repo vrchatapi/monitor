@@ -7,7 +7,7 @@
             });
             var n = t(82544),
                 o = t(96540),
-                c = t(15033),
+                c = t(71661),
                 s = ["./common.js", "./index.js"],
                 i = t(7854);
             const l = function() {
@@ -64,7 +64,7 @@
         7854(e, r, t) {
             var n = {
                 "./common.js": 98984,
-                "./index.js": 27070,
+                "./index.js": 10343,
                 "./vrcAddFriend.js": 48437,
                 "./vrcAgeVerification.js": 7382,
                 "./vrcAnimated.js": 87081,
@@ -125,4 +125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1d703e40b5e737feab112de71c3294493651f0b768b21dc18e357f6d0811405f.js.map
+//# sourceMappingURL=60117fb35610f9a5fd3abf751f8b36e6a42d5eefd5125dd9711a5555241f0fc6.js.map

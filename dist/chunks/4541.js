@@ -50,7 +50,7 @@
                 f = n(84976),
                 d = n(3828),
                 p = n(64937),
-                v = n(15033),
+                v = n(71661),
                 g = n(23029),
                 E = n(92901),
                 y = n(9417),
@@ -70,7 +70,7 @@
                 I = n.n(x),
                 F = n(51055),
                 L = n(84370),
-                z = n(59362);
+                z = n(67920);
             j().extend(I());
             var P = {
                 friendRequest: "Friend Request"
@@ -436,4 +436,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f37a5bbbc1c885242767ee7faf96ed7891c6780570a5a163368b6d62fa9854b3.js.map
+//# sourceMappingURL=fef2947de521ff8e55b5624684b53f4d6118182907aa924fe90d430a7ef992e9.js.map

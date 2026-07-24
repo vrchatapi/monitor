@@ -25,8 +25,8 @@
                 h = a(56822),
                 y = a(74353),
                 N = a.n(y),
-                x = a(194),
-                k = a(15033),
+                x = a(78502),
+                k = a(71661),
                 A = a(90154),
                 O = a(78526),
                 I = a(58168),
@@ -776,8 +776,8 @@
                 }),
                 f = p.useGetReportsQuery,
                 v = p.useCreateReportMutation,
-                g = a(194),
-                b = a(15033),
+                g = a(78502),
+                b = a(71661),
                 E = a(51055),
                 h = a(5043),
                 y = a(25538),
@@ -1057,4 +1057,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4610c0f83da4c033bf281b62940ba1db43a3f7fc34371b90f148986cf400f7f4.js.map
+//# sourceMappingURL=14b087df49c258149e9f01eca0a147494653de54d9038080c9b5dbc930735abc.js.map

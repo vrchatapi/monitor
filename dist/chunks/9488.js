@@ -8,7 +8,7 @@
             var l = a(82544),
                 n = a(79162),
                 r = a(6913),
-                o = a(15033),
+                o = a(71661),
                 i = a(13951),
                 c = a(95583),
                 s = a(89661),
@@ -23,7 +23,7 @@
                 g = a(75171),
                 x = a.n(g),
                 h = a(56822),
-                E = a(194),
+                E = a(78502),
                 y = ["avatars", "label", "value", "onChange", "isLoading", "onSearch", "className", "trimToLength", "disabled", "allowMultiline"];
             const N = function(e) {
                 var t, a, n = e.avatars,
@@ -371,7 +371,7 @@
                 s = a(96540),
                 m = a(6376),
                 u = a(65950),
-                d = a(15033),
+                d = a(71661),
                 w = a(31069),
                 p = a(92737),
                 v = a(91069),
@@ -541,4 +541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59d954782bb1ac1ae13251efa604962c2f221e600eaeb46ab688463c8bc218fa.js.map
+//# sourceMappingURL=67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec.js.map

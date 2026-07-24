@@ -11,9 +11,9 @@
                 a = r(62672),
                 l = r(96540),
                 c = r(59399),
-                s = r(15033),
+                s = r(71661),
                 m = r(40223),
-                p = r(194),
+                p = r(78502),
                 d = r(45616);
             var g = "https://assets.vrchat.com/www/groups/default_banner.png",
                 u = "https://assets.vrchat.com/www/groups/default_icon.png";
@@ -145,4 +145,4 @@
         }
     }
 ]);
-//# sourceMappingURL=91db7e2709205a51ec5b4b5e29f5751c547f64e64387745979ec02c742a7d8f2.js.map
+//# sourceMappingURL=3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea.js.map
