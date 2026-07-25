@@ -1843,7 +1843,11 @@
                         w = c.name,
                         u = c.authorName,
                         d = c.id,
-                        m = c.unityPackages;
+                        m = c.unityPackages,
+                        p = i ? (0, h.Iu)({
+                            fileUrl: i,
+                            width: "512"
+                        }) : null;
                     return o.createElement(o.Fragment, null, a && o.createElement(s.DF, null), l && o.createElement(q, {
                         title: "My Avatar"
                     }, o.createElement("div", {
@@ -1860,7 +1864,7 @@
                         formattedType: "avatar",
                         isLarge: !0
                     })), o.createElement("img", {
-                        src: i,
+                        src: p,
                         alt: "".concat(w, " by ").concat(u, " thumbnail"),
                         className: "tw-rounded-3xl tw-object-cover tw-aspect-video tw-w-full"
                     })), o.createElement("p", null, o.createElement("strong", {
@@ -4761,12 +4765,16 @@
                         r = t.groupId,
                         n = t.iconUrl,
                         a = t.name,
-                        l = t.isRepresenting;
+                        l = t.isRepresenting,
+                        c = n ? (0, h.Iu)({
+                            fileUrl: n,
+                            width: "64"
+                        }) : null;
                     return o.createElement(g.N_, {
                         to: "/home/group/".concat(r),
                         className: "tw-flex tw-items-center tw-gap-4 tw-py-1 tw-no-underline tw-rounded-lg tw-text-subtext-grey hover:tw-text-white "
                     }, o.createElement("img", {
-                        src: n,
+                        src: c || n,
                         alt: a,
                         className: "tw-w-10 tw-h-10 tw-rounded-lg tw-object-cover"
                     }), o.createElement("span", {
@@ -5061,11 +5069,15 @@
                     }, o.createElement("div", {
                         className: "tw-grid tw-grid-cols-2 tw-gap-0.5"
                     }, d.map(function(e, t) {
+                        var r = null != e && e.imageUrl ? (0, h.Iu)({
+                            fileUrl: e.imageUrl,
+                            width: "256"
+                        }) : null;
                         return o.createElement("div", {
                             key: (null == e ? void 0 : e.id) || "empty-".concat(t),
                             className: "tw-aspect-video tw-bg-[#2E333D] tw-overflow-hidden"
                         }, (null == e ? void 0 : e.imageUrl) && o.createElement("img", {
-                            src: e.imageUrl,
+                            src: r,
                             alt: e.name || "",
                             className: "tw-w-full tw-h-full tw-object-cover"
                         }))
@@ -5815,4 +5827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3bd431666d33ba6e397f9760d9202c220b2d1b363fcacc2c9af2071f573f7722.js.map
+//# sourceMappingURL=419f2d7d91caa54f5893966b63fd92db447a61c514d537ba99da8e15c278d3fd.js.map

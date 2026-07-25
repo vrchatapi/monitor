@@ -1,4 +1,4 @@
-/*! For license information please see 2026-07-23t19-46-55-the-spaghett-of-friday--main-prod-public-06174d93-310f-42dc-b1bb-7f2e0cbc382f--app.js.LICENSE.txt */
+/*! For license information please see 2026-07-24t20-46-17-the-morph-of-otis--main-prod-public-a84eed6b-c416-4933-9152-64a2079a190c--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-23t19-46-55-the-spaghett-of-friday", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-24t20-46-17-the-morph-of-otis", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -31017,9 +31017,13 @@
                         }, (null == p ? void 0 : p.length) > 0 && c.createElement("div", {
                             className: "tw-flex tw-flex-row tw-items-center tw-gap-2"
                         }, c.createElement("div", null, m.map(function(e) {
+                            var t = e.iconUrl ? (0, v.Iu)({
+                                fileUrl: e.iconUrl,
+                                width: "64"
+                            }) : null;
                             return c.createElement("img", {
                                 key: e.id,
-                                src: e.profilePicOverride || e.currentAvatarImageUrl,
+                                src: t || e.currentAvatarImageUrl,
                                 alt: e.displayName,
                                 title: e.displayName,
                                 "aria-hidden": "true",
@@ -35338,7 +35342,8 @@
                     a = ["🤔", "🤨", "😐", "😑", "🙄", "😥", "😮", "🤐", "😯", "😒", "😓", "😔", "😕", "🙃", "☹️", "🙁", "😖", "😞", "😟", "😢", "😭", "😦", "😧", "😨", "😬", "😠", "🥺", "🤥", "🙀", "😿", "😾"],
                     i = {
                         DISCORD: "Discord",
-                        GOOGLE: "Google"
+                        GOOGLE: "Google",
+                        TWITCH: "Twitch"
                     }
             },
             13023(e, t, n) {
@@ -53938,7 +53943,7 @@
             13951(e, t, n) {
                 "use strict";
                 n.d(t, {
-                    Ay: () => W,
+                    Ay: () => K,
                     B3: () => L,
                     GF: () => g,
                     IH: () => z,
@@ -53953,7 +53958,8 @@
                     QE: () => N,
                     Qe: () => F,
                     TE: () => P,
-                    ZS: () => H,
+                    ZM: () => V,
+                    ZS: () => Q,
                     _L: () => m,
                     a2: () => B,
                     c3: () => I,
@@ -53964,16 +53970,18 @@
                     g_: () => R,
                     ge: () => O,
                     jK: () => G,
+                    jz: () => H,
                     kM: () => y,
                     lj: () => _,
                     nW: () => D,
                     oS: () => v,
                     oX: () => x,
-                    p$: () => V,
+                    p$: () => Y,
                     u9: () => M,
                     w_: () => p,
                     wr: () => A,
                     xG: () => k,
+                    yE: () => W,
                     zH: () => u
                 });
                 var r = n(66911),
@@ -54406,6 +54414,42 @@
                                         return t ? [] : ["CurrentUser"]
                                     }
                                 }),
+                                getTwitchTokenFromCode: e.query({
+                                    query: function(e) {
+                                        return {
+                                            url: "auth/twitch/callback",
+                                            params: {
+                                                code: e.code,
+                                                state: e.state
+                                            }
+                                        }
+                                    }
+                                }),
+                                linkTwitchAccount: e.mutation({
+                                    query: function(e) {
+                                        return {
+                                            url: "auth/twitch/link",
+                                            method: "POST",
+                                            body: {
+                                                provisionalId: e.token
+                                            }
+                                        }
+                                    },
+                                    invalidatesTags: function(e) {
+                                        return null != e && e.twitchId ? ["CurrentUser"] : []
+                                    }
+                                }),
+                                unlinkTwitchAccount: e.mutation({
+                                    query: function() {
+                                        return {
+                                            url: "auth/twitch/unlink",
+                                            method: "POST"
+                                        }
+                                    },
+                                    invalidatesTags: function(e, t) {
+                                        return t ? [] : ["CurrentUser"]
+                                    }
+                                }),
                                 getUnlinkedUserWithMatchingDiscordEmailV2: e.query({
                                     query: function(e) {
                                         return {
@@ -54650,9 +54694,12 @@
                     G = c.useGetAccountUpgradeDetailsQuery,
                     z = c.useFinalizeAccountUpgradeMutation,
                     q = (c.useLinkDiscordAccountMutation, c.useUnlinkDiscordAccountMutation, c.useContestModerationMutation),
-                    V = (c.endpoints.getCurrentUserFriends.useQueryState, c.endpoints.getCurrentUser.useQueryState),
-                    H = c.util;
-                const W = c
+                    V = c.useLazyGetTwitchTokenFromCodeQuery,
+                    H = c.useLinkTwitchAccountMutation,
+                    W = c.useUnlinkTwitchAccountMutation,
+                    Y = (c.endpoints.getCurrentUserFriends.useQueryState, c.endpoints.getCurrentUser.useQueryState),
+                    Q = c.util;
+                const K = c
             },
             50779(e, t, n) {
                 "use strict";
@@ -114851,7 +114898,6 @@
         3315: "4702490659e18ef2106d00160f236c140e37a867aab6702937ba9fe554400ddb",
         3441: "d917e308a7a0f8d7cb9cbd3aadc5d5d81fa6d1b4e9c9497d12e4211fac00c478",
         3456: "14b087df49c258149e9f01eca0a147494653de54d9038080c9b5dbc930735abc",
-        3734: "77f6ef4f1f75eb786d58c554744593059dd74c68b383958fcc081f6e51840179",
         3754: "80804dd27b51add91a839d4d738d0e5b64db6f0be3f402f1106acfb628207197",
         3856: "a493b5c26239c754d711a0a5498a1c3c811ad0185b0498c253ca72a9edab829b",
         3968: "cbac4c5f6444991db6a25d976a82dd7758b95226147270f3099d8dd4039702fb",
@@ -114881,7 +114927,7 @@
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "990db35b81ecf312b3395aa0b022fd5fceead12b5f9d146d528072265a6b7c38",
+        6578: "1d8e535f04fdc2c0e7e5eddf18cff0430be3d2e105b989dbf2721171fa7b40d3",
         6585: "3666a5c369addd7c631234a2125513abc38b6dcf34cf5e8c5117151fca530c7e",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
@@ -114906,12 +114952,13 @@
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
         8104: "f1b495b729e634efe25aec2ef4756a1adfe49ca720adc690a958948848740dec",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
+        8202: "fba0b917b729150e01749cbb6926fedb74a7fec320a6a8de2c6448c7384abc20",
         8229: "e6048e3c43f9d5a14530135fd4083d8b1029c77546b05215e28e24c81a850adb",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
         8497: "d10286659c03d492e5adcb734c4d87beefda8043d9433eaad51c08d74db63e06",
         8621: "6deb7f0641303a0cd03fce6f1c38de8ec8bbc571b28efd61f1a31c7bfe28018f",
-        8851: "4d1f326ba2ba8265bf955edede4d339a657ae13e4957d3107d595e6c9d0a1a81",
+        8851: "56f7daa5ba9f2b07ad4af77d04ee8612a09fdab870952f4bf393f46c9f1c6857",
         8968: "60117fb35610f9a5fd3abf751f8b36e6a42d5eefd5125dd9711a5555241f0fc6",
         8995: "2b81521c51b37ab6a16589f90d341f0aab509449d803a61796694f76715cd64f",
         9355: "63f6ec2e559e38ed86e966cb871067565486dec9aed20994ec98bdd29baa7dd2",
@@ -114923,7 +114970,7 @@
         9488: "67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec",
         9697: "549e8ce074ef5b1f3baaeefeb4d997515215b406bf1f17ec089a10bdf25f50a8",
         9772: "73b2d2aea9ceb96a4fbee13256c34bf3766e634175dbcb70b9cebfe64e637fed",
-        9809: "3bd431666d33ba6e397f9760d9202c220b2d1b363fcacc2c9af2071f573f7722",
+        9809: "419f2d7d91caa54f5893966b63fd92db447a61c514d537ba99da8e15c278d3fd",
         9876: "7618fadf8a6147b0f1aad9bfc799471204964cad893a29ffb4b13e124aca55a7",
         9915: "2c087442cc796ca8bc6aebce8222f0e88fde105d831e6176109d3bfd7912c302"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
@@ -115007,9 +115054,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-07-23t19-46-55-the-spaghett-of-friday"
+        id: "2026-07-24t20-46-17-the-morph-of-otis"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-07-23t19-46-55-the-spaghett-of-friday"
+        id: "2026-07-24t20-46-17-the-morph-of-otis"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116762,7 +116809,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-07-23t19-46-55-the-spaghett-of-friday",
+                release: "2026-07-24t20-46-17-the-morph-of-otis",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -123075,14 +123122,15 @@
             }, he)))))
         };
         var Ua = (0, Oo.A)("select", {
-            target: "e1iax06v0"
-        })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", function(e) {
-            return e.isError ? "#A8342E" : "#053c48"
-        }, ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", function(e) {
-            return e.isError ? "#A8342E" : "#086c84"
-        }, ";}");
+                target: "e1iax06v0"
+            })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", function(e) {
+                return e.isError ? "#A8342E" : "#053c48"
+            }, ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", function(e) {
+                return e.isError ? "#A8342E" : "#086c84"
+            }, ";}"),
+            Ga = s(25161);
 
-        function Ga(e, t) {
+        function za(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123093,18 +123141,130 @@
             return n
         }
 
-        function za(e) {
+        function qa(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Ga(Object(n), !0).forEach(function(t) {
+                t % 2 ? za(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ga(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : za(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const qa = function() {
+        const Va = function() {
+            var t = (0, l.Zp)(),
+                o = (0, i.ok)(),
+                a = (0, To.A)(o, 2),
+                s = a[0],
+                c = a[1],
+                u = (0, w.ZM)(),
+                d = (0, To.A)(u, 2),
+                p = d[0],
+                f = d[1],
+                m = f.isError,
+                h = f.error;
+            return (0, r.useEffect)(function() {
+                (0, e.A)(n().mark(function e() {
+                    var r, o, a, i, l, u, d, f, m;
+                    return n().wrap(function(e) {
+                        for (;;) switch (e.prev = e.next) {
+                            case 0:
+                                if (r = s.get("code"), o = s.get("state"), a = s.get("error"), i = s.get("error_description"), !a) {
+                                    e.next = 9;
+                                    break
+                                }
+                                return l = new URLSearchParams, c(l, {
+                                    replace: !0
+                                }), t("/home/profile", {
+                                    state: {
+                                        twitchError: i || "Authorization was denied"
+                                    },
+                                    replace: !0
+                                }), e.abrupt("return");
+                            case 9:
+                                if (r && o) {
+                                    e.next = 12;
+                                    break
+                                }
+                                return t("/home/profile", {
+                                    replace: !0
+                                }), e.abrupt("return");
+                            case 12:
+                                return (u = new URLSearchParams(s)).delete("code"), u.delete("state"), c(u, {
+                                    replace: !0
+                                }), e.prev = 16, e.next = 19, p({
+                                    code: r,
+                                    state: o
+                                }).unwrap();
+                            case 19:
+                                return m = e.sent, t((null === (d = m.state) || void 0 === d ? void 0 : d.redirectTo) || "/home/profile", {
+                                    state: qa(qa({}, (null === (f = m.state) || void 0 === f ? void 0 : f.redirectState) || {}), {}, {
+                                        twitchToken: m.provisionalId
+                                    }),
+                                    replace: !0
+                                }), e.abrupt("return");
+                            case 24:
+                                e.prev = 24, e.t0 = e.catch(16), console.error("Failed to get Twitch token:", e.t0), t("/home/profile", {
+                                    state: {
+                                        twitchError: "Failed to authenticate with Twitch"
+                                    },
+                                    replace: !0
+                                });
+                            case 28:
+                            case "end":
+                                return e.stop()
+                        }
+                    }, e, null, [
+                        [16, 24]
+                    ])
+                }))()
+            }, []), r.createElement(xa.A, null, r.createElement(da.Qc, null, "Linking Twitch Account"), r.createElement("div", {
+                className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+            }, r.createElement("div", {
+                className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+            }, r.createElement("div", {
+                className: "tw-mb-5"
+            }, r.createElement(da.M2, {
+                icon: Ga.CQ,
+                className: "tw-w-[72px] tw-h-[72px]"
+            })), r.createElement("h4", {
+                className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+            }, "Linking Twitch Account"), r.createElement("p", {
+                className: "tw-text-center tw-mt-6"
+            }, "Please wait while we connect your accounts..."), m && r.createElement("p", {
+                role: "alert",
+                className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
+            }, 429 === (null == h ? void 0 : h.status) ? "Twitch is currently unavailable. Please try again later." : "Oops, we've encountered an error while trying to link your Twitch account."), r.createElement("div", {
+                className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
+            }, r.createElement(wa.A, {
+                size: "5x"
+            })))))
+        };
+
+        function Ha(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                t && (r = r.filter(function(t) {
+                    return Object.getOwnPropertyDescriptor(e, t).enumerable
+                })), n.push.apply(n, r)
+            }
+            return n
+        }
+
+        function Wa(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {};
+                t % 2 ? Ha(Object(n), !0).forEach(function(t) {
+                    (0, b.A)(e, t, n[t])
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ha(Object(n)).forEach(function(t) {
+                    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+            }
+            return e
+        }
+        const Ya = function() {
             var t = (0, l.Zp)(),
                 o = (0, l.zy)().state,
                 a = (0, w.TE)(),
@@ -123151,7 +123311,7 @@
                                     return e.abrupt("return");
                                 case 9:
                                     t(null !== (a = null == o ? void 0 : o.redirectTo) && void 0 !== a ? a : "/home", {
-                                        state: za({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
+                                        state: Wa({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
                                     }), e.next = 17;
                                     break;
                                 case 12:
@@ -123209,67 +123369,67 @@
                 type: "submit"
             }, "Next")))))
         };
-        var Va = r.lazy(function() {
+        var Qa = r.lazy(function() {
                 return s.e(2726).then(s.bind(s, 52726))
             }),
-            Ha = r.lazy(function() {
+            Ka = r.lazy(function() {
                 return Promise.all([s.e(9915), s.e(3968)]).then(s.bind(s, 43968))
             }),
-            Wa = r.lazy(function() {
+            Ja = r.lazy(function() {
                 return s.e(800).then(s.bind(s, 30800))
             }),
-            Ya = r.lazy(function() {
+            Za = r.lazy(function() {
                 return s.e(2092).then(s.bind(s, 22092))
             }),
-            Qa = r.lazy(function() {
+            $a = r.lazy(function() {
                 return s.e(9381).then(s.bind(s, 79381))
             }),
-            Ka = r.lazy(function() {
+            Xa = r.lazy(function() {
                 return s.e(2274).then(s.bind(s, 42274))
             }),
-            Ja = r.lazy(function() {
+            ei = r.lazy(function() {
                 return s.e(9370).then(s.bind(s, 29370))
             }),
-            Za = r.lazy(function() {
+            ti = r.lazy(function() {
                 return s.e(7484).then(s.bind(s, 57484))
             }),
-            $a = r.lazy(function() {
+            ni = r.lazy(function() {
                 return Promise.all([s.e(2331), s.e(9772), s.e(2876)]).then(s.bind(s, 22876))
             }),
-            Xa = r.lazy(function() {
+            ri = r.lazy(function() {
                 return s.e(1840).then(s.bind(s, 21840))
             }),
-            ei = r.lazy(function() {
+            oi = r.lazy(function() {
                 return s.e(7224).then(s.bind(s, 27224))
             }),
-            ti = r.lazy(function() {
+            ai = r.lazy(function() {
                 return s.e(122).then(s.bind(s, 122))
             }),
-            ni = r.lazy(function() {
+            ii = r.lazy(function() {
                 return s.e(3441).then(s.bind(s, 63441))
             }),
-            ri = r.lazy(function() {
+            si = r.lazy(function() {
                 return s.e(776).then(s.bind(s, 60776))
             }),
-            oi = r.lazy(function() {
+            li = r.lazy(function() {
                 return s.e(2475).then(s.bind(s, 22475))
             }),
-            ai = r.lazy(function() {
+            ci = r.lazy(function() {
                 return s.e(962).then(s.bind(s, 60962))
             }),
-            ii = r.lazy(function() {
+            ui = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
             }),
-            si = r.lazy(function() {
+            di = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
             }),
-            li = r.lazy(function() {
+            pi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
             }),
-            ci = r.lazy(function() {
+            fi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(7906), s.e(2138), s.e(6578)]).then(s.bind(s, 16578))
             });
-        const ui = function() {
+        const mi = function() {
             (0, _o.zn)();
             var e = (0, w.P2)(void 0, {
                     refetchOnReconnect: !0
@@ -123284,34 +123444,34 @@
                 fallback: r.createElement(Co.A, null)
             }, r.createElement(ba, null), r.createElement(So, null), r.createElement(l.BV, null, r.createElement(l.qh, {
                 path: "/home/instance-not-found",
-                element: r.createElement(oi, null)
+                element: r.createElement(li, null)
             }), r.createElement(l.qh, {
                 path: "/home/launch",
-                element: r.createElement(Ha, null)
-            }), r.createElement(l.qh, {
-                path: "/home/launch/*",
-                element: r.createElement(Ha, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverify",
-                element: r.createElement(Qa, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverifyloginplace",
-                element: r.createElement(Qa, null)
-            }), r.createElement(l.qh, {
-                path: "/home/succeedverifyloginplace",
                 element: r.createElement(Ka, null)
             }), r.createElement(l.qh, {
+                path: "/home/launch/*",
+                element: r.createElement(Ka, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverify",
+                element: r.createElement($a, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverifyloginplace",
+                element: r.createElement($a, null)
+            }), r.createElement(l.qh, {
+                path: "/home/succeedverifyloginplace",
+                element: r.createElement(Xa, null)
+            }), r.createElement(l.qh, {
                 path: "/home/ageverificationstatus",
-                element: r.createElement(ai, null)
+                element: r.createElement(ci, null)
             }), r.createElement(l.qh, {
                 path: "/home/critical",
-                element: r.createElement(Ja, null)
+                element: r.createElement(ei, null)
             }), r.createElement(l.qh, {
                 path: "/home/unverified",
-                element: r.createElement(Za, null)
+                element: r.createElement(ti, null)
             }), r.createElement(l.qh, {
                 path: "/home/login",
-                element: r.createElement(Va, null)
+                element: r.createElement(Qa, null)
             }), r.createElement(l.qh, {
                 path: "/home/login/discord/finalize",
                 element: r.createElement(ja, {
@@ -123324,46 +123484,46 @@
                 })
             }), r.createElement(l.qh, {
                 path: "/home/register",
-                element: r.createElement($a, null)
+                element: r.createElement(ni, null)
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauth",
-                element: r.createElement(ti, null)
+                element: r.createElement(ai, null)
             }), r.createElement(l.qh, {
                 path: "/home/emailtwofactorauth",
-                element: r.createElement(ti, {
+                element: r.createElement(ai, {
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/stepupauth",
-                element: r.createElement(ti, {
+                element: r.createElement(ai, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/emailstepupauth",
-                element: r.createElement(ti, {
+                element: r.createElement(ai, {
                     isStepUpVerification: !0,
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauthrecovery",
-                element: r.createElement(ni, null)
+                element: r.createElement(ii, null)
             }), r.createElement(l.qh, {
                 path: "/home/stepupauthrecovery",
-                element: r.createElement(ni, {
+                element: r.createElement(ii, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/verify",
-                element: r.createElement(Ya, null)
+                element: r.createElement(Za, null)
             }), r.createElement(l.qh, {
                 path: "/home/verify-password",
-                element: r.createElement(qa, null)
+                element: r.createElement(Ya, null)
             }), r.createElement(l.qh, {
                 path: "/home/password",
-                element: r.createElement(ei, null)
+                element: r.createElement(oi, null)
             }), r.createElement(l.qh, {
                 path: "/home/account-upgrade",
-                element: r.createElement(Wa, null)
+                element: r.createElement(Ja, null)
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth",
                 element: r.createElement(Ia, {
@@ -123375,26 +123535,29 @@
                     version: 2
                 })
             }), r.createElement(l.qh, {
+                path: "/home/twitch/auth",
+                element: r.createElement(Va, null)
+            }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
-                element: r.createElement(Xa, null)
+                element: r.createElement(ri, null)
             }), (n || !(null != t && t.id)) && r.createElement(l.qh, {
                 path: "/home/group/:ownerId/calendar/:eventId",
                 element: r.createElement(ya.A, null)
             }), r.createElement(l.qh, {
                 path: "/home/tosupdated",
-                element: ko(ri)()
-            }), r.createElement(l.qh, {
-                path: "/home/oauth",
-                element: ko(ii)()
-            }), r.createElement(l.qh, {
-                path: "/home/sso/canny",
                 element: ko(si)()
             }), r.createElement(l.qh, {
+                path: "/home/oauth",
+                element: ko(ui)()
+            }), r.createElement(l.qh, {
+                path: "/home/sso/canny",
+                element: ko(di)()
+            }), r.createElement(l.qh, {
                 path: "/home/sso/furality",
-                element: ko(li)()
+                element: ko(pi)()
             }), r.createElement(l.qh, {
                 path: "/home/*",
-                element: ko(ci)()
+                element: ko(fi)()
             }), r.createElement(l.qh, {
                 path: "*",
                 element: r.createElement(l.C5, {
@@ -123403,32 +123566,32 @@
                 })
             })))))))
         };
-        var di = s(85072),
-            pi = s.n(di),
-            fi = s(97825),
-            mi = s.n(fi),
-            hi = s(77659),
+        var hi = s(85072),
             Ai = s.n(hi),
-            gi = s(55056),
+            gi = s(97825),
             Bi = s.n(gi),
-            vi = s(10540),
+            vi = s(77659),
             bi = s.n(vi),
-            yi = s(41113),
+            yi = s(55056),
             Ci = s.n(yi),
-            wi = s(56275),
-            xi = {};
-        xi.styleTagTransform = Ci(), xi.setAttributes = Bi(), xi.insert = Ai().bind(null, "head"), xi.domAPI = mi(), xi.insertStyleElement = bi();
-        pi()(wi.A, xi);
-        wi.A && wi.A.locals && wi.A.locals;
-        var Di = document.getElementById("app"),
-            Ei = function() {
-                Je(), p(), (0, o.H)(Di).render(r.createElement(a.Kq, {
+            wi = s(10540),
+            xi = s.n(wi),
+            Di = s(41113),
+            Ei = s.n(Di),
+            Ii = s(56275),
+            ki = {};
+        ki.styleTagTransform = Ei(), ki.setAttributes = Ci(), ki.insert = bi().bind(null, "head"), ki.domAPI = Bi(), ki.insertStyleElement = xi();
+        Ai()(Ii.A, ki);
+        Ii.A && Ii.A.locals && Ii.A.locals;
+        var _i = document.getElementById("app"),
+            Si = function() {
+                Je(), p(), (0, o.H)(_i).render(r.createElement(a.Kq, {
                     store: Ao
                 }, r.createElement(i.Kd, {
                     basename: "/"
                 }, r.createElement(l.BV, null, r.createElement(l.qh, {
                     path: "*",
-                    element: r.createElement(ui, null)
+                    element: r.createElement(mi, null)
                 }))))), S(Ao)
             };
         (0, e.A)(n().mark(function e() {
@@ -123436,7 +123599,7 @@
             return n().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Ei();
+                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Si();
                     case 3:
                     case "end":
                         return e.stop()
