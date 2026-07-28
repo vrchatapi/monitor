@@ -1,4 +1,4 @@
-/*! For license information please see 2026-07-24t20-46-17-the-morph-of-otis--main-prod-public-a84eed6b-c416-4933-9152-64a2079a190c--app.js.LICENSE.txt */
+/*! For license information please see 2026-07-27t18-14-47-the-wily-of-finn--main-prod-public-e979f984-f21b-4eef-9cb1-aa35a998edb3--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-24t20-46-17-the-morph-of-otis", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-27t18-14-47-the-wily-of-finn", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -35343,6 +35343,7 @@
                     i = {
                         DISCORD: "Discord",
                         GOOGLE: "Google",
+                        APPLE: "Apple",
                         TWITCH: "Twitch"
                     }
             },
@@ -53943,53 +53944,60 @@
             13951(e, t, n) {
                 "use strict";
                 n.d(t, {
-                    Ay: () => K,
-                    B3: () => L,
-                    GF: () => g,
-                    IH: () => z,
-                    Jg: () => d,
-                    Jn: () => q,
-                    Jz: () => T,
-                    Mm: () => h,
-                    Ng: () => S,
-                    Nu: () => E,
-                    P2: () => f,
-                    P3: () => j,
-                    QE: () => N,
-                    Qe: () => F,
-                    TE: () => P,
-                    ZM: () => V,
-                    ZS: () => Q,
-                    _L: () => m,
-                    a2: () => B,
-                    c3: () => I,
-                    cZ: () => U,
-                    ey: () => C,
-                    fC: () => w,
-                    gV: () => b,
-                    g_: () => R,
-                    ge: () => O,
-                    jK: () => G,
-                    jz: () => H,
-                    kM: () => y,
-                    lj: () => _,
-                    nW: () => D,
-                    oS: () => v,
-                    oX: () => x,
-                    p$: () => Y,
-                    u9: () => M,
-                    w_: () => p,
-                    wr: () => A,
-                    xG: () => k,
-                    yE: () => W,
-                    zH: () => u
+                    $S: () => $,
+                    Ay: () => ne,
+                    B3: () => F,
+                    GF: () => v,
+                    IH: () => V,
+                    Jg: () => f,
+                    Jn: () => H,
+                    Jz: () => P,
+                    Mj: () => K,
+                    Mm: () => g,
+                    Ng: () => T,
+                    Nu: () => k,
+                    P2: () => h,
+                    P3: () => G,
+                    QE: () => L,
+                    Qe: () => j,
+                    TE: () => R,
+                    ZM: () => W,
+                    ZS: () => te,
+                    _L: () => A,
+                    a2: () => b,
+                    aN: () => J,
+                    c3: () => _,
+                    cZ: () => z,
+                    ey: () => x,
+                    fC: () => D,
+                    gV: () => C,
+                    g_: () => M,
+                    ge: () => N,
+                    jK: () => q,
+                    jz: () => Y,
+                    kM: () => w,
+                    lj: () => O,
+                    nW: () => I,
+                    oS: () => y,
+                    oX: () => E,
+                    p$: () => ee,
+                    u9: () => U,
+                    w$: () => Z,
+                    w1: () => X,
+                    w_: () => m,
+                    wr: () => B,
+                    xG: () => S,
+                    yE: () => Q,
+                    zH: () => p
                 });
                 var r = n(66911),
                     o = n(64467),
                     a = n(4899),
-                    i = n(89483);
+                    i = n(74353),
+                    s = n.n(i),
+                    l = n(89483);
 
-                function s(e, t) {
+                function c(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -54000,18 +54008,18 @@
                     return n
                 }
 
-                function l(e) {
+                function u(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? s(Object(n), !0).forEach(function(t) {
+                        t % 2 ? c(Object(n), !0).forEach(function(t) {
                             (0, o.A)(e, t, n[t])
-                        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : s(Object(n)).forEach(function(t) {
+                        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : c(Object(n)).forEach(function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         })
                     }
                     return e
                 }
-                var c = i.m.injectEndpoints({
+                var d = l.m.injectEndpoints({
                         endpoints: function(e) {
                             return {
                                 getCurrentUser: e.query({
@@ -54020,7 +54028,7 @@
                                     },
                                     transformResponse: function(e) {
                                         var t;
-                                        return l(l({}, null != e ? e : {}), {}, {
+                                        return u(u({}, null != e ? e : {}), {}, {
                                             tagsSet: new Set(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []),
                                             bannerColor: null != e && e.bannerColor ? "#".concat(e.bannerColor) : null
                                         })
@@ -54450,6 +54458,112 @@
                                         return t ? [] : ["CurrentUser"]
                                     }
                                 }),
+                                loginWithApple: e.mutation({
+                                    query: function(e) {
+                                        return {
+                                            url: "auth/apple",
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/json"
+                                            },
+                                            body: {
+                                                identityToken: e.identityToken,
+                                                authType: "web"
+                                            }
+                                        }
+                                    },
+                                    invalidatesTags: function(e) {
+                                        return null != e && e.id ? ["CurrentUser", "Friends"] : []
+                                    },
+                                    transformResponse: function(e) {
+                                        var t, n, r;
+                                        null != e && null !== (t = e.user) && void 0 !== t && t.username && a.gV({
+                                            username: null == e || null === (n = e.user) || void 0 === n ? void 0 : n.username,
+                                            id: null == e || null === (r = e.user) || void 0 === r ? void 0 : r.id
+                                        });
+                                        return null != e && e.user ? e.user : e
+                                    }
+                                }),
+                                finalizeLoginWithApple: e.mutation({
+                                    query: function(e) {
+                                        var t = e.continueToken,
+                                            n = e.displayName,
+                                            r = e.acceptedTOSVersion,
+                                            o = e.subscribe,
+                                            a = e.year,
+                                            i = e.month,
+                                            l = e.day;
+                                        return {
+                                            url: "auth/apple/".concat(t, "/finalize"),
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/json"
+                                            },
+                                            body: {
+                                                displayName: n,
+                                                acceptedTOSVersion: r,
+                                                acceptedPrivacyVersion: 0,
+                                                unsubscribe: !o,
+                                                birthday: s()("".concat(a, "-").concat(i, "-").concat(l)).format("YYYY-MM-DD")
+                                            }
+                                        }
+                                    },
+                                    invalidatesTags: function(e) {
+                                        return null != e && e.id ? ["CurrentUser", "Friends"] : []
+                                    },
+                                    transformResponse: function(e) {
+                                        var t, n, r;
+                                        null != e && null !== (t = e.user) && void 0 !== t && t.username && a.gV({
+                                            username: null == e || null === (n = e.user) || void 0 === n ? void 0 : n.username,
+                                            id: null == e || null === (r = e.user) || void 0 === r ? void 0 : r.id
+                                        });
+                                        return null != e && e.user ? e.user : e
+                                    }
+                                }),
+                                linkAppleAccount: e.mutation({
+                                    query: function(e) {
+                                        return {
+                                            url: "auth/apple/link",
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/json"
+                                            },
+                                            body: {
+                                                identityToken: e.identityToken,
+                                                authType: "web"
+                                            }
+                                        }
+                                    },
+                                    invalidatesTags: function(e) {
+                                        return null != e && e.appleId ? ["CurrentUser"] : []
+                                    }
+                                }),
+                                unlinkAppleAccount: e.mutation({
+                                    query: function() {
+                                        return {
+                                            url: "auth/apple/unlink",
+                                            method: "POST"
+                                        }
+                                    },
+                                    invalidatesTags: function(e, t) {
+                                        return t ? [] : ["CurrentUser"]
+                                    }
+                                }),
+                                getUnlinkedUserWithMatchingAppleEmail: e.query({
+                                    query: function(e) {
+                                        return {
+                                            url: "auth/apple/unlinked",
+                                            method: "POST",
+                                            headers: {
+                                                "Content-Type": "application/json"
+                                            },
+                                            body: {
+                                                identityToken: e.identityToken,
+                                                authType: "web"
+                                            }
+                                        }
+                                    }
+                                }),
                                 getUnlinkedUserWithMatchingDiscordEmailV2: e.query({
                                     query: function(e) {
                                         return {
@@ -54660,46 +54774,51 @@
                     }).enhanceEndpoints({
                         addTagTypes: ["CurrentUser", "CurrentUserPermissions", "Friends", "FavoriteLimits"]
                     }),
-                    u = c.useClearCurrentUserFriendsMutation,
-                    d = (c.useClearCurrentUserMutation, c.useGetCurrentUserFriendsQuery),
-                    p = c.useGetCurrentUserPermissionsQuery,
-                    f = c.useGetCurrentUserQuery,
-                    m = (c.useGetFavoriteLimitsQuery, c.useLazyGetCurrentUserQuery, c.useLoginMutation),
-                    h = c.useLazyGetDiscordTokenFromCodeQuery,
-                    A = c.useLoginWithDiscordMutation,
-                    g = c.useFinalizeLoginWithDiscordMutation,
-                    B = (c.useGetUnlinkedUserWithMatchingDiscordEmailQuery, c.useLazyGetUnlinkedUserWithMatchingDiscordEmailQuery),
-                    v = (c.useGetDiscordTokenFromCodeQuery, c.useFinalizeLoginWithDiscordV2Mutation),
-                    b = c.useLoginWithDiscordV2Mutation,
-                    y = c.useLazyGetDiscordTokenFromCodeV2Query,
-                    C = (c.useGetUnlinkedUserWithMatchingDiscordEmailV2Query, c.useGetUnlinkedUserWithMatchingGoogleEmailV2Query, c.useLazyGetUnlinkedUserWithMatchingDiscordEmailV2Query),
-                    w = c.useLazyGetUnlinkedUserWithMatchingGoogleEmailV2Query,
-                    x = c.useLinkDiscordAccountV2Mutation,
-                    D = c.useUnlinkDiscordAccountV2Mutation,
-                    E = c.useLinkGoogleAccountV2Mutation,
-                    I = c.useUnlinkGoogleAccountV2Mutation,
-                    k = c.useLoginWithGoogleMutation,
-                    _ = c.useFinalizeLoginWithGoogleMutation,
-                    S = c.useLogoutMutation,
-                    O = c.useRegisterMutation,
-                    T = c.useVerify2FAMutation,
-                    N = c.useVerifyStepUp2FAMutation,
-                    P = c.useVerifyPasswordMutation,
-                    L = c.useResendVerificationEmailMutation,
-                    R = (c.useCheckDisplayNameAvailableQuery, c.useUpdatePlayerModerationsMutation),
-                    F = c.useGetPlayerModerationsQuery,
-                    M = c.useRemovePlayerModerationMutation,
-                    j = c.useSendAccountRecoveryEmailMutation,
-                    U = c.useSetNewPasswordViaEmailMutation,
-                    G = c.useGetAccountUpgradeDetailsQuery,
-                    z = c.useFinalizeAccountUpgradeMutation,
-                    q = (c.useLinkDiscordAccountMutation, c.useUnlinkDiscordAccountMutation, c.useContestModerationMutation),
-                    V = c.useLazyGetTwitchTokenFromCodeQuery,
-                    H = c.useLinkTwitchAccountMutation,
-                    W = c.useUnlinkTwitchAccountMutation,
-                    Y = (c.endpoints.getCurrentUserFriends.useQueryState, c.endpoints.getCurrentUser.useQueryState),
-                    Q = c.util;
-                const K = c
+                    p = d.useClearCurrentUserFriendsMutation,
+                    f = (d.useClearCurrentUserMutation, d.useGetCurrentUserFriendsQuery),
+                    m = d.useGetCurrentUserPermissionsQuery,
+                    h = d.useGetCurrentUserQuery,
+                    A = (d.useGetFavoriteLimitsQuery, d.useLazyGetCurrentUserQuery, d.useLoginMutation),
+                    g = d.useLazyGetDiscordTokenFromCodeQuery,
+                    B = d.useLoginWithDiscordMutation,
+                    v = d.useFinalizeLoginWithDiscordMutation,
+                    b = (d.useGetUnlinkedUserWithMatchingDiscordEmailQuery, d.useLazyGetUnlinkedUserWithMatchingDiscordEmailQuery),
+                    y = (d.useGetDiscordTokenFromCodeQuery, d.useFinalizeLoginWithDiscordV2Mutation),
+                    C = d.useLoginWithDiscordV2Mutation,
+                    w = d.useLazyGetDiscordTokenFromCodeV2Query,
+                    x = (d.useGetUnlinkedUserWithMatchingDiscordEmailV2Query, d.useGetUnlinkedUserWithMatchingGoogleEmailV2Query, d.useLazyGetUnlinkedUserWithMatchingDiscordEmailV2Query),
+                    D = d.useLazyGetUnlinkedUserWithMatchingGoogleEmailV2Query,
+                    E = d.useLinkDiscordAccountV2Mutation,
+                    I = d.useUnlinkDiscordAccountV2Mutation,
+                    k = d.useLinkGoogleAccountV2Mutation,
+                    _ = d.useUnlinkGoogleAccountV2Mutation,
+                    S = d.useLoginWithGoogleMutation,
+                    O = d.useFinalizeLoginWithGoogleMutation,
+                    T = d.useLogoutMutation,
+                    N = d.useRegisterMutation,
+                    P = d.useVerify2FAMutation,
+                    L = d.useVerifyStepUp2FAMutation,
+                    R = d.useVerifyPasswordMutation,
+                    F = d.useResendVerificationEmailMutation,
+                    M = (d.useCheckDisplayNameAvailableQuery, d.useUpdatePlayerModerationsMutation),
+                    j = d.useGetPlayerModerationsQuery,
+                    U = d.useRemovePlayerModerationMutation,
+                    G = d.useSendAccountRecoveryEmailMutation,
+                    z = d.useSetNewPasswordViaEmailMutation,
+                    q = d.useGetAccountUpgradeDetailsQuery,
+                    V = d.useFinalizeAccountUpgradeMutation,
+                    H = (d.useLinkDiscordAccountMutation, d.useUnlinkDiscordAccountMutation, d.useContestModerationMutation),
+                    W = d.useLazyGetTwitchTokenFromCodeQuery,
+                    Y = d.useLinkTwitchAccountMutation,
+                    Q = d.useUnlinkTwitchAccountMutation,
+                    K = d.useLoginWithAppleMutation,
+                    J = d.useFinalizeLoginWithAppleMutation,
+                    Z = d.useLinkAppleAccountMutation,
+                    $ = d.useUnlinkAppleAccountMutation,
+                    X = (d.useGetUnlinkedUserWithMatchingAppleEmailQuery, d.useLazyGetUnlinkedUserWithMatchingAppleEmailQuery),
+                    ee = (d.endpoints.getCurrentUserFriends.useQueryState, d.endpoints.getCurrentUser.useQueryState),
+                    te = d.util;
+                const ne = d
             },
             50779(e, t, n) {
                 "use strict";
@@ -114888,7 +115007,7 @@
         2340: "4634dd5fb7eb8a1cb39e2bf596385ebacaa165babe430d45aef5259ac8cc0f7a",
         2475: "450f91367a6db8a7a86b93ce76a90073af7567a20512f9884693655a92c02fb7",
         2676: "39627bd03bbccaeaa7aabb22a5e8156ded60b421443268b1cf4f0d27b6b13e69",
-        2726: "9220c24294e72ffa60beb373425c6042795086fea05c219b2d2e1d5228726ad8",
+        2726: "e97b4a481013cfb0c5923171013a7c8dcae163eb9b04757be9a1b8beee6f2891",
         2789: "5e0335c308a48d5a389f2214ed87658c878632a2d9a91f7034818ec293e3a5d3",
         2876: "4ebd3751d9ea991ad65ea9f98429ffa5f933f3f80b41050d22abd85bd54af72b",
         2996: "77c73e865d893323861cc95e431951defce82f7efbbb08feacff2fca425c8753",
@@ -114952,7 +115071,7 @@
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
         8104: "f1b495b729e634efe25aec2ef4756a1adfe49ca720adc690a958948848740dec",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
-        8202: "fba0b917b729150e01749cbb6926fedb74a7fec320a6a8de2c6448c7384abc20",
+        8202: "da06baca96d1ced69236112ab961ade5ef1fac227b5b4e15b8a456207013e0fe",
         8229: "e6048e3c43f9d5a14530135fd4083d8b1029c77546b05215e28e24c81a850adb",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
@@ -115054,9 +115173,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-07-24t20-46-17-the-morph-of-otis"
+        id: "2026-07-27t18-14-47-the-wily-of-finn"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-07-24t20-46-17-the-morph-of-otis"
+        id: "2026-07-27t18-14-47-the-wily-of-finn"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116809,7 +116928,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-07-24t20-46-17-the-morph-of-otis",
+                release: "2026-07-27t18-14-47-the-wily-of-finn",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -122731,68 +122850,81 @@
                 O = S.isLoading,
                 T = S.isSuccess,
                 N = S.error,
-                P = 2 === (null == u ? void 0 : u.discordOAuthVersion) ? y : m,
-                L = s === Ra.zN.GOOGLE ? _ : P,
-                R = A || x || O,
-                F = g || D || T,
-                M = B || E || N,
-                j = (0, Do.G)().data,
-                U = (void 0 === j ? {} : j).currentTOSVersion,
-                G = (0, _o.cz)().nameTaken,
-                z = r.useState({
+                P = (0, w.aN)(),
+                L = (0, To.A)(P, 2),
+                R = L[0],
+                F = L[1],
+                M = F.isLoading,
+                j = F.isSuccess,
+                U = F.error,
+                G = function(e, t, n) {
+                    return e === Ra.zN.APPLE ? n.apple : e === Ra.zN.GOOGLE ? n.google : 2 === t ? n.discordV2 : n.discordV1
+                }(s, null == u ? void 0 : u.discordOAuthVersion, {
+                    apple: R,
+                    google: _,
+                    discordV1: m,
+                    discordV2: y
+                }),
+                z = A || x || O || M,
+                q = g || D || T || j,
+                V = B || E || N || U,
+                H = (0, Do.G)().data,
+                W = (void 0 === H ? {} : H).currentTOSVersion,
+                Y = (0, _o.cz)().nameTaken,
+                Q = r.useState({
                     value: "",
                     error: !1,
                     taken: !1,
                     ok: null,
                     checking: !1
                 }),
-                q = (0, To.A)(z, 2),
-                V = q[0],
-                H = q[1],
-                W = r.useState({
+                K = (0, To.A)(Q, 2),
+                J = K[0],
+                Z = K[1],
+                $ = r.useState({
                     year: "",
                     month: "1",
                     day: "",
                     error: !1,
                     ok: null
                 }),
-                Y = (0, To.A)(W, 2),
-                Q = Y[0],
-                K = Y[1],
-                J = r.useState(0),
-                Z = (0, To.A)(J, 2),
-                $ = Z[0],
-                X = Z[1],
-                ee = r.useState(!1),
-                te = (0, To.A)(ee, 2),
-                ne = te[0],
-                re = te[1],
-                oe = r.useState(!1),
-                ae = (0, To.A)(oe, 2),
-                ie = ae[0],
-                se = ae[1],
-                le = (0, ka.Mj)("dobFailed", {
+                X = (0, To.A)($, 2),
+                ee = X[0],
+                te = X[1],
+                ne = r.useState(0),
+                re = (0, To.A)(ne, 2),
+                oe = re[0],
+                ae = re[1],
+                ie = r.useState(!1),
+                se = (0, To.A)(ie, 2),
+                le = se[0],
+                ce = se[1],
+                ue = r.useState(!1),
+                de = (0, To.A)(ue, 2),
+                pe = de[0],
+                fe = de[1],
+                me = (0, ka.Mj)("dobFailed", {
                     value: !1,
                     failedAt: null
                 }),
-                ce = (0, To.A)(le, 2),
-                ue = ce[0],
-                de = ce[1];
+                he = (0, To.A)(me, 2),
+                Ae = he[0],
+                ge = he[1];
             r.useEffect(function() {
-                ue.value && "number" == typeof ue.failedAt && Sa()().isAfter(Sa()(ue.failedAt).add(1, "days")) && de({
+                Ae.value && "number" == typeof Ae.failedAt && Sa()().isAfter(Sa()(Ae.failedAt).add(1, "days")) && ge({
                     value: !1,
                     failedAt: null
                 })
             }, []), r.useEffect(function() {
-                se(!0 === V.ok && !0 === Q.ok && $ === U)
-            }, [V, Q, $]);
-            var pe = function() {
+                fe(!0 === J.ok && !0 === ee.ok && oe === W)
+            }, [J, ee, oe]);
+            var Be = function() {
                 var t = (0, e.A)(n().mark(function e(t) {
                     var r, o, a, i;
                     return n().wrap(function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                if (r = t.target.value, o = void 0 === r ? "" : r, H(Ma(Ma({}, V), {}, {
+                                if (r = t.target.value, o = void 0 === r ? "" : r, Z(Ma(Ma({}, J), {}, {
                                         value: o,
                                         ok: null,
                                         taken: !1,
@@ -122803,7 +122935,7 @@
                                 }
                                 return e.abrupt("return");
                             case 4:
-                                if (o = (0, Na.aj)(o), H(function(e) {
+                                if (o = (0, Na.aj)(o), Z(function(e) {
                                         return Ma(Ma({}, e), {}, {
                                             taken: null
                                         })
@@ -122811,20 +122943,20 @@
                                     e.next = 11;
                                     break
                                 }
-                                return H(function(e) {
+                                return Z(function(e) {
                                     return Ma(Ma({}, e), {}, {
                                         error: a,
                                         ok: null
                                     })
                                 }), e.abrupt("return");
                             case 11:
-                                return H(function(e) {
+                                return Z(function(e) {
                                     return Ma(Ma({}, e), {}, {
                                         checking: !0
                                     })
-                                }), e.next = 14, G(o);
+                                }), e.next = 14, Y(o);
                             case 14:
-                                i = e.sent, H(function(e) {
+                                i = e.sent, Z(function(e) {
                                     return Ma(Ma({}, e), {}, {
                                         taken: i,
                                         ok: !e.error && !i,
@@ -122843,7 +122975,7 @@
                 }
             }();
             r.useEffect(function() {
-                null != u && u.continueToken ? (null != u && u.reservedName && pe({
+                null != u && u.continueToken ? (null != u && u.reservedName && Be({
                     target: {
                         value: u.reservedName
                     }
@@ -122851,12 +122983,12 @@
                     accountType: s.toLowerCase()
                 })) : c("/home/login")
             }, []), r.useEffect(function() {
-                F && (null != u && u.redirectTo ? c(u.redirectTo) : c("/home?prompt=new-account"))
-            }, [F]);
-            var fe = function(e, t, n) {
+                q && (null != u && u.redirectTo ? c(u.redirectTo) : c("/home?prompt=new-account"))
+            }, [q]);
+            var ve = function(e, t, n) {
                     if ("" !== n && "" !== t && "" !== e) {
                         var r = null;
-                        if (!Ta()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Ta()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Ta()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) K(function(e) {
+                        if (!Ta()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Ta()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Ta()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) te(function(e) {
                             return Ma(Ma({}, e), {}, {
                                 error: r,
                                 ok: !1
@@ -122866,11 +122998,11 @@
                             year: n,
                             month: t - 1,
                             day: e
-                        }).isValid() ? K(function(e) {
+                        }).isValid() ? te(function(e) {
                             return Ma(Ma({}, e), {}, {
                                 ok: !0
                             })
-                        }) : K(function(e) {
+                        }) : te(function(e) {
                             return Ma(Ma({}, e), {}, {
                                 error: "That's not a valid date",
                                 ok: !1
@@ -122878,20 +123010,20 @@
                         })
                     }
                 },
-                me = function() {
+                be = function() {
                     var t = (0, e.A)(n().mark(function e(t) {
                         var r;
                         return n().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return t.preventDefault(), e.prev = 1, e.next = 4, L({
+                                    return t.preventDefault(), e.prev = 1, e.next = 4, G({
                                         continueToken: null == u ? void 0 : u.continueToken,
-                                        displayName: V.value,
-                                        year: Q.year,
-                                        month: Q.month,
-                                        day: Q.day,
-                                        subscribe: ne,
-                                        acceptedTOSVersion: $
+                                        displayName: J.value,
+                                        year: ee.year,
+                                        month: ee.month,
+                                        day: ee.day,
+                                        subscribe: le,
+                                        acceptedTOSVersion: oe
                                     }).unwrap();
                                 case 4:
                                     r = e.sent, (0, Vr.u4)("Login_LoginSuccess", {
@@ -122902,14 +123034,14 @@
                                     break;
                                 case 8:
                                     if (e.prev = 8, e.t0 = e.catch(1), console.error(e.t0), !Sa()().subtract(13, "years").isBefore(Sa()({
-                                            year: Q.year,
-                                            month: Q.month - 1,
-                                            day: Q.day
+                                            year: ee.year,
+                                            month: ee.month - 1,
+                                            day: ee.day
                                         }))) {
                                         e.next = 14;
                                         break
                                     }
-                                    return de({
+                                    return ge({
                                         value: !0,
                                         failedAt: Date.now()
                                     }), e.abrupt("return");
@@ -122925,8 +123057,8 @@
                         return t.apply(this, arguments)
                     }
                 }(),
-                he = null !== (o = null == M || null === (a = M.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== o ? o : "";
-            return he && (he.indexOf(":") > 0 ? (he.substring(0, he.indexOf(":")).trim(), he = he.substring(he.indexOf(":") + 1).trim()) : 0 === he.indexOf(":") && (he = he.substring(1).trim())), ue.value ? r.createElement(xa.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(La.mc, null, r.createElement(La.VP, {
+                ye = null !== (o = null == V || null === (a = V.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== o ? o : "";
+            return ye && (ye.indexOf(":") > 0 ? (ye.substring(0, ye.indexOf(":")).trim(), ye = ye.substring(ye.indexOf(":") + 1).trim()) : 0 === ye.indexOf(":") && (ye = ye.substring(1).trim())), Ae.value ? r.createElement(xa.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(La.mc, null, r.createElement(La.VP, {
                 md: {
                     size: 6,
                     offset: 3
@@ -122949,7 +123081,7 @@
             }))))) : r.createElement(xa.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement("div", {
                 className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
             }, r.createElement("form", {
-                onSubmit: me
+                onSubmit: be
             }, r.createElement("div", {
                 className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
             }, r.createElement("h4", {
@@ -122964,19 +123096,19 @@
                 id: "username",
                 name: "username",
                 "aria-label": "Desired display name",
-                value: V.value,
-                onChange: pe,
-                loading: V.checking,
-                success: !V.checking && V.ok,
+                value: J.value,
+                onChange: Be,
+                loading: J.checking,
+                success: !J.checking && J.ok,
                 className: "tw-mb-1",
-                isError: V.error
-            }), !V.error && r.createElement("p", {
+                isError: J.error
+            }), !J.error && r.createElement("p", {
                 className: "tw-text-placeholder-text tw-text-xs tw-mb-0"
-            }, "This is the name shown to other users in-app, you may only change your display name once per 90 days."), V.error && r.createElement("p", {
+            }, "This is the name shown to other users in-app, you may only change your display name once per 90 days."), J.error && r.createElement("p", {
                 role: "alert",
                 "aria-label": "Display name error",
                 className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-            }, V.error)), r.createElement("div", {
+            }, J.error)), r.createElement("div", {
                 className: "tw-w-full tw-mb-3"
             }, r.createElement("label", {
                 htmlFor: "Email",
@@ -122987,18 +123119,18 @@
                 className: "tw-w-[129px] tw-h-10",
                 id: "age_month",
                 "aria-label": "Birthday Month",
-                value: Q.month,
+                value: ee.month,
                 name: "age_month",
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    K(Ma(Ma({}, Q), {}, {
+                    te(Ma(Ma({}, ee), {}, {
                         month: n,
                         ok: null,
                         error: !1
-                    })), fe(Q.day, n, Q.year)
+                    })), ve(ee.day, n, ee.year)
                 },
-                isError: Q.error
+                isError: ee.error
             }, r.createElement("option", {
                 value: "1"
             }, "January"), r.createElement("option", {
@@ -123031,17 +123163,17 @@
                 className: "tw-w-[129px]",
                 placeholder: "Day",
                 "aria-label": "Birthday Day",
-                value: Q.day,
+                value: ee.day,
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    K(Ma(Ma({}, Q), {}, {
+                    te(Ma(Ma({}, ee), {}, {
                         day: n,
                         ok: null,
                         error: !1
-                    })), fe(n, Q.month, Q.year)
+                    })), ve(n, ee.month, ee.year)
                 },
-                isError: Q.error
+                isError: ee.error
             }), r.createElement(da.pd, {
                 type: "text",
                 id: "year",
@@ -123050,28 +123182,28 @@
                 placeholder: "Year",
                 className: "tw-w-[129px]",
                 "aria-label": "Birthday Year",
-                value: Q.year,
+                value: ee.year,
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    K(Ma(Ma({}, Q), {}, {
+                    te(Ma(Ma({}, ee), {}, {
                         year: n,
                         ok: null,
                         error: !1
-                    })), fe(Q.day, Q.month, n)
+                    })), ve(ee.day, ee.month, n)
                 },
-                isError: Q.error
-            })), Q.error && r.createElement("p", {
+                isError: ee.error
+            })), ee.error && r.createElement("p", {
                 role: "alert",
                 "aria-label": "Birthday error",
                 className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
-            }, Q.error)), r.createElement("div", {
+            }, ee.error)), r.createElement("div", {
                 className: "tw-w-full tw-mb-3"
             }, r.createElement(da.Sc, {
                 id: "tos",
                 onChange: function(e) {
                     var t = e.target.checked;
-                    X(t ? U : 0)
+                    ae(t ? W : 0)
                 },
                 htmlFor: "tos",
                 className: "tw-mb-0",
@@ -123096,11 +123228,11 @@
                 id: "subscribe",
                 onChange: function(e) {
                     var t = e.target.checked;
-                    re(t)
+                    ce(t)
                 },
                 htmlFor: "subscribe",
                 className: "",
-                checked: ne,
+                checked: le,
                 label: r.createElement("p", {
                     className: "tw-text-placeholder-text tw-text-base tw-ml-1"
                 }, "I agree to receive updates from VRChat about its products, services and promotions.")
@@ -123113,13 +123245,13 @@
                 type: "submit",
                 id: "registration-form-submit",
                 name: "registration-form-submit",
-                loading: R,
-                disabled: !ie || R
-            }, "Create Linked Account")), he && r.createElement("p", {
+                loading: z,
+                disabled: !pe || z
+            }, "Create Linked Account")), ye && r.createElement("p", {
                 role: "alert",
                 "aria-label": "Account creation error",
                 className: "tw-text-error-message-red tw-text-xs tw-my-1"
-            }, he)))))
+            }, ye)))))
         };
         var Ua = (0, Oo.A)("select", {
                 target: "e1iax06v0"
@@ -123481,6 +123613,11 @@
                 path: "/home/login/google/finalize",
                 element: r.createElement(ja, {
                     oauthProvider: Ra.zN.GOOGLE
+                })
+            }), r.createElement(l.qh, {
+                path: "/home/login/apple/finalize",
+                element: r.createElement(ja, {
+                    oauthProvider: Ra.zN.APPLE
                 })
             }), r.createElement(l.qh, {
                 path: "/home/register",

@@ -9,8 +9,8 @@
                 a = n(80045),
                 l = n(19179),
                 o = n(81617),
-                c = n(96540),
-                i = n(6324),
+                i = n(96540),
+                c = n(6324),
                 s = ["ok", "size"];
             const u = function(e) {
                 var t = e.ok,
@@ -18,11 +18,11 @@
                     u = e.size,
                     m = void 0 === u ? "2x" : u,
                     d = (0, a.A)(e, s);
-                return null === n ? null : n ? c.createElement(i.A, (0, r.A)({
+                return null === n ? null : n ? i.createElement(c.A, (0, r.A)({
                     icon: o.e6,
                     size: m,
                     className: "text-success"
-                }, d)) : c.createElement(i.A, (0, r.A)({
+                }, d)) : i.createElement(c.A, (0, r.A)({
                     icon: l.GR,
                     size: m,
                     className: "text-warning"
@@ -32,24 +32,24 @@
         },
         75255(e, t, n) {
             n.d(t, {
-                A: () => c
+                A: () => i
             });
             var r = n(7612),
                 a = n(96540),
                 l = n(30104),
                 o = n(6324);
-            const c = function(e) {
+            const i = function(e) {
                 var t = e.loading,
                     n = e.className,
-                    c = e.onClick,
-                    i = e.color,
+                    i = e.onClick,
+                    c = e.color,
                     s = e.children,
                     u = e.hidden,
                     m = e.disabled;
                 return a.createElement(l.A, {
                     className: n,
-                    onClick: c,
-                    color: i,
+                    onClick: i,
+                    color: c,
                     hidden: u,
                     disabled: m
                 }, a.createElement("div", {
@@ -64,7 +64,7 @@
                     spin: !0
                 })))
             };
-            n.dn(c)
+            n.dn(i)
         },
         86878(e, t, n) {
             n.d(t, {
@@ -77,12 +77,12 @@
                 return function(t) {
                     var n = (0, l.zy)(),
                         o = (0, l.Zp)(),
-                        c = (0, l.g)();
+                        i = (0, l.g)();
                     return a.createElement(e, (0, r.A)({}, t, {
                         router: {
                             location: n,
                             navigate: o,
-                            params: c
+                            params: i
                         }
                     }))
                 }
@@ -90,14 +90,14 @@
         },
         18202(e, t, n) {
             n.r(t), n.d(t, {
-                default: () => en
+                default: () => rn
             });
             var r = n(96540),
                 a = n(71661),
                 l = n(78502),
                 o = n(10467),
-                c = n(82544),
-                i = n(70129),
+                i = n(82544),
+                c = n(70129),
                 s = n(34496),
                 u = n(54756),
                 m = n.n(u),
@@ -109,16 +109,16 @@
                 var e = (0, d.Zp)(),
                     t = (0, p.wA)(),
                     n = (0, f.TP)(),
-                    i = (0, c.A)(n, 2),
-                    u = i[0],
-                    w = i[1].isSuccess,
+                    c = (0, i.A)(n, 2),
+                    u = c[0],
+                    w = c[1].isSuccess,
                     E = (0, l.a$)().user,
                     y = r.useState(!1),
-                    b = (0, c.A)(y, 2),
+                    b = (0, i.A)(y, 2),
                     A = b[0],
                     k = b[1],
                     x = r.useState(!1),
-                    N = (0, c.A)(x, 2),
+                    N = (0, i.A)(x, 2),
                     C = N[0],
                     S = N[1],
                     T = function() {
@@ -184,13 +184,13 @@
                     slim: !0
                 }, r.createElement(g, null, r.createElement(v, null, "Your account is queued for deletion and will be deleted in 14 days. If you log into the application or the website, the deletion will be cancelled. You will now be logged out of the website and application."))))
             };
-            var g = (0, i.A)(a.fv, {
+            var g = (0, c.A)(a.fv, {
                     target: "e1c8z0io1"
                 })({
                     name: "1d3w5wq",
                     styles: "width:100%"
                 }),
-                v = (0, i.A)("p", {
+                v = (0, c.A)("p", {
                     target: "e1c8z0io0"
                 })({
                     name: "1tmloek",
@@ -205,24 +205,25 @@
                 N = n(17535),
                 C = n(97890),
                 S = n(13951),
-                T = n(58622),
-                O = n(22479),
-                P = function() {
+                T = n(98462),
+                O = n(58622),
+                P = n(22479),
+                D = function() {
                     var e = (0, o.A)(m().mark(function e() {
-                        var t, n, r, a, l, o, c, i, s, u = arguments;
+                        var t, n, r, a, l, o, i, c, s, u = arguments;
                         return m().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     t = (u.length > 0 && void 0 !== u[0] ? u[0] : {}).redirectTo, n = void 0 === t ? "/home/profile" : t, r = window.location.origin + window.location.pathname, a = r.split("/home/"), r = "".concat(a[0], "/home/twitch/auth"), l = {
                                         redirectUri: r,
                                         redirectTo: n
-                                    }, o = JSON.stringify(l), c = btoa(o), i = new URLSearchParams({
+                                    }, o = JSON.stringify(l), i = btoa(o), c = new URLSearchParams({
                                         client_id: "ym4yaez8f1d4om9tsbn22wmg13oofn",
                                         redirect_uri: l.redirectUri,
                                         response_type: "code",
                                         scope: "user:read:email",
-                                        state: c
-                                    }), s = "https://id.twitch.tv/oauth2/authorize?".concat(i.toString()), window.location.href = s;
+                                        state: i
+                                    }), s = "https://id.twitch.tv/oauth2/authorize?".concat(c.toString()), window.location.href = s;
                                 case 11:
                                 case "end":
                                     return e.stop()
@@ -233,85 +234,96 @@
                         return e.apply(this, arguments)
                     }
                 }(),
-                D = n(53369),
-                F = n(84976),
-                R = "link_discord",
-                I = "unlink_discord",
-                M = "link_google",
-                z = "unlink_google",
-                U = "link_twitch",
-                j = "unlink_twitch";
-            const L = function(e) {
+                F = n(53369),
+                R = n(84976),
+                I = "link_discord",
+                U = "unlink_discord",
+                z = "link_google",
+                M = "unlink_google",
+                j = "link_twitch",
+                L = "unlink_twitch",
+                V = "link_apple",
+                _ = "unlink_apple";
+            const q = function(e) {
                 var t = e.user || {},
                     n = t.discordId,
                     l = t.googleId,
-                    i = t.twitchId,
+                    c = t.twitchId,
                     s = t.twitchDetails,
-                    u = t.displayName,
-                    f = t.id,
-                    w = (0, d.zy)().state,
-                    g = (0, r.useState)(null),
-                    v = (0, c.A)(g, 2),
-                    L = v[0],
-                    V = v[1],
-                    q = (0, r.useState)(null),
-                    _ = (0, c.A)(q, 2),
-                    G = _[0],
-                    W = _[1],
+                    u = t.appleId,
+                    f = t.displayName,
+                    w = t.id,
+                    g = (0, d.zy)().state,
+                    v = (0, r.useState)(null),
+                    q = (0, i.A)(v, 2),
+                    G = q[0],
+                    W = q[1],
                     $ = (0, r.useState)(null),
-                    Y = (0, c.A)($, 2),
-                    B = Y[0],
-                    X = Y[1],
+                    X = (0, i.A)($, 2),
+                    Y = X[0],
+                    B = X[1],
                     Q = (0, r.useState)(null),
-                    K = (0, c.A)(Q, 2),
+                    K = (0, i.A)(Q, 2),
                     H = K[0],
                     J = K[1],
-                    Z = (0, d.Zp)(),
-                    ee = (0, p.wA)(),
-                    te = (0, F.ok)(),
-                    ne = (0, c.A)(te, 2),
-                    re = ne[0],
-                    ae = (ne[1], (0, S.nW)()),
-                    le = (0, c.A)(ae, 2),
-                    oe = le[0],
-                    ce = le[1].isLoading,
-                    ie = (0, S.oX)(),
-                    se = (0, c.A)(ie, 2),
+                    Z = (0, r.useState)(null),
+                    ee = (0, i.A)(Z, 2),
+                    te = ee[0],
+                    ne = ee[1],
+                    re = (0, d.Zp)(),
+                    ae = (0, p.wA)(),
+                    le = (0, R.ok)(),
+                    oe = (0, i.A)(le, 2),
+                    ie = oe[0],
+                    ce = (oe[1], (0, S.nW)()),
+                    se = (0, i.A)(ce, 2),
                     ue = se[0],
                     me = se[1].isLoading,
-                    de = (0, S.Nu)(),
-                    pe = (0, c.A)(de, 2),
+                    de = (0, S.oX)(),
+                    pe = (0, i.A)(de, 2),
                     fe = pe[0],
                     he = pe[1].isLoading,
-                    we = (0, S.c3)(),
-                    ge = (0, c.A)(we, 2),
+                    we = (0, S.Nu)(),
+                    ge = (0, i.A)(we, 2),
                     ve = ge[0],
                     Ee = ge[1].isLoading,
-                    ye = (0, S.jz)(),
-                    be = (0, c.A)(ye, 2),
+                    ye = (0, S.c3)(),
+                    be = (0, i.A)(ye, 2),
                     Ae = be[0],
                     ke = be[1].isLoading,
-                    xe = (0, S.yE)(),
-                    Ne = (0, c.A)(xe, 2),
+                    xe = (0, S.jz)(),
+                    Ne = (0, i.A)(xe, 2),
                     Ce = Ne[0],
                     Se = Ne[1].isLoading,
-                    Te = function() {
+                    Te = (0, S.yE)(),
+                    Oe = (0, i.A)(Te, 2),
+                    Pe = Oe[0],
+                    De = Oe[1].isLoading,
+                    Fe = (0, S.w$)(),
+                    Re = (0, i.A)(Fe, 2),
+                    Ie = Re[0],
+                    Ue = Re[1].isLoading,
+                    ze = (0, S.$S)(),
+                    Me = (0, i.A)(ze, 2),
+                    je = Me[0],
+                    Le = Me[1].isLoading,
+                    Ve = function() {
                         var e = (0, o.A)(m().mark(function e() {
-                            var t, r, a, l, o, c, i, s = arguments;
+                            var t, r, a, l, o, i, c, s = arguments;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : G) && !n) {
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : Y) && !n) {
                                             e.next = 3;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 3:
-                                        return e.prev = 3, e.next = 6, ue({
+                                        return e.prev = 3, e.next = 6, fe({
                                             token: t
                                         }).unwrap();
                                     case 6:
-                                        V(null), W(null), ee((0, h.X)({
+                                        W(null), B(null), ae((0, h.X)({
                                             title: "Link Discord Account",
                                             icon: y.CQ,
                                             message: "Successfully linked Discord account.",
@@ -324,22 +336,22 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return o = e.t0.data, c = (0, D.h)(o), i = {
+                                        return o = e.t0.data, i = (0, F.h)(o), c = {
                                             redirectTo: "/home/profile",
                                             scope: o.scope,
                                             ticket: o.ticket,
                                             stepUpToken: o.stepUpToken,
                                             redirectState: {
-                                                selectedAction: L,
+                                                selectedAction: G,
                                                 continueDiscordAccessToken: t,
                                                 redirectTo: "/home/profile",
                                                 oauthProvider: C.zN.DISCORD
                                             }
-                                        }, e.abrupt("return", Z(c, {
-                                            state: i
+                                        }, e.abrupt("return", re(i, {
+                                            state: c
                                         }));
                                     case 18:
-                                        return console.error("Failed to link Discord account:", e.t0), V(null), W(null), e.abrupt("return", ee((0, h.X)({
+                                        return console.error("Failed to link Discord account:", e.t0), W(null), B(null), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (a = null === e.t0 || void 0 === e.t0 || null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== a ? a : "Discord Linking Failed",
                                             icon: E.X4,
@@ -358,23 +370,23 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Oe = function() {
+                    _e = function() {
                         var e = (0, o.A)(m().mark(function e() {
-                            var t, n, r, a, o, c, i, s = arguments;
+                            var t, n, r, a, o, i, c, s = arguments;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : B) && !l) {
+                                        if ((t = s.length > 0 && void 0 !== s[0] ? s[0] : H) && !l) {
                                             e.next = 3;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 3:
-                                        return e.prev = 3, e.next = 6, fe({
+                                        return e.prev = 3, e.next = 6, ve({
                                             token: t
                                         }).unwrap();
                                     case 6:
-                                        V(null), X(null), ee((0, h.X)({
+                                        W(null), J(null), ae((0, h.X)({
                                             title: "Link Google Account",
                                             icon: y.CQ,
                                             message: "Successfully linked Google account.",
@@ -387,22 +399,22 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return o = e.t0.data, c = (0, D.h)(o), i = {
+                                        return o = e.t0.data, i = (0, F.h)(o), c = {
                                             redirectTo: "/home/profile",
                                             scope: o.scope,
                                             ticket: o.ticket,
                                             stepUpToken: o.stepUpToken,
                                             redirectState: {
-                                                selectedAction: L,
+                                                selectedAction: G,
                                                 continueGoogleIdToken: t,
                                                 redirectTo: "/home/profile",
                                                 oauthProvider: C.zN.GOOGLE
                                             }
-                                        }, e.abrupt("return", Z(c, {
-                                            state: i
+                                        }, e.abrupt("return", re(i, {
+                                            state: c
                                         }));
                                     case 18:
-                                        return console.error("Failed to link Google account:", e.t0), V(null), X(null), e.abrupt("return", ee((0, h.X)({
+                                        return console.error("Failed to link Google account:", e.t0), W(null), J(null), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (r = null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Google Linking Failed",
                                             icon: E.X4,
@@ -421,15 +433,15 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Pe = function() {
+                    qe = function() {
                         var e = (0, o.A)(m().mark(function e() {
                             var t, n;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, oe().unwrap();
+                                        return e.prev = 0, e.next = 3, ue().unwrap();
                                     case 3:
-                                        V(null), ee((0, h.X)({
+                                        W(null), ae((0, h.X)({
                                             title: "Unlink Discord Account",
                                             icon: y.CQ,
                                             message: "Successfully unlinked Discord account.",
@@ -438,7 +450,7 @@
                                         })), e.next = 11;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0), e.abrupt("return", ee((0, h.X)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Discord account:", e.t0), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Discord Unlinking Failed",
                                             icon: E.X4,
@@ -457,15 +469,15 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    De = function() {
+                    Ge = function() {
                         var e = (0, o.A)(m().mark(function e() {
                             var t, n;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, ve().unwrap();
+                                        return e.prev = 0, e.next = 3, Ae().unwrap();
                                     case 3:
-                                        V(null), ee((0, h.X)({
+                                        W(null), ae((0, h.X)({
                                             title: "Unlink Google Account",
                                             icon: y.CQ,
                                             message: "Successfully unlinked Google account.",
@@ -474,7 +486,7 @@
                                         })), e.next = 11;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Google account:", e.t0), e.abrupt("return", ee((0, h.X)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Google account:", e.t0), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Google Unlinking Failed",
                                             icon: E.X4,
@@ -493,23 +505,23 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Fe = function() {
+                    We = function() {
                         var e = (0, o.A)(m().mark(function e() {
                             var t, n, r, a = arguments;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if ((t = a.length > 0 && void 0 !== a[0] ? a[0] : H) && !i) {
+                                        if ((t = a.length > 0 && void 0 !== a[0] ? a[0] : te) && !c) {
                                             e.next = 3;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 3:
-                                        return e.prev = 3, e.next = 6, Ae({
+                                        return e.prev = 3, e.next = 6, Ce({
                                             token: t
                                         }).unwrap();
                                     case 6:
-                                        V(null), J(null), ee((0, h.X)({
+                                        W(null), ne(null), ae((0, h.X)({
                                             title: "Twitch Account Linked",
                                             icon: y.CQ,
                                             message: "Your Twitch account is linked. You're ready to receive Twitch Drops.",
@@ -518,7 +530,7 @@
                                         })), e.next = 17;
                                         break;
                                     case 11:
-                                        return e.prev = 11, e.t0 = e.catch(3), console.error("Failed to link Twitch account:", e.t0), V(null), J(null), e.abrupt("return", ee((0, h.X)({
+                                        return e.prev = 11, e.t0 = e.catch(3), console.error("Failed to link Twitch account:", e.t0), W(null), ne(null), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (n = null === e.t0 || void 0 === e.t0 || null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Twitch Linking Failed",
                                             icon: E.X4,
@@ -537,15 +549,15 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Re = function() {
+                    $e = function() {
                         var e = (0, o.A)(m().mark(function e() {
                             var t, n;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, Ce().unwrap();
+                                        return e.prev = 0, e.next = 3, Pe().unwrap();
                                     case 3:
-                                        V(null), ee((0, h.X)({
+                                        W(null), ae((0, h.X)({
                                             title: "Twitch Account Unlinked",
                                             icon: y.CQ,
                                             message: "Your Twitch account has been unlinked.",
@@ -554,7 +566,7 @@
                                         })), e.next = 11;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Twitch account:", e.t0), e.abrupt("return", ee((0, h.X)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Twitch account:", e.t0), e.abrupt("return", ae((0, h.X)({
                                             title: "Failure",
                                             message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Twitch Unlinking Failed",
                                             icon: E.X4,
@@ -573,8 +585,137 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Ie = function() {
-                        Me || (V(null), W(null), X(null), J(null))
+                    Xe = function() {
+                        var e = (0, o.A)(m().mark(function e(t) {
+                            var n, r, a, l, o, i;
+                            return m().wrap(function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        if (t && !u) {
+                                            e.next = 2;
+                                            break
+                                        }
+                                        return e.abrupt("return");
+                                    case 2:
+                                        return e.prev = 2, e.next = 5, Ie({
+                                            identityToken: t
+                                        }).unwrap();
+                                    case 5:
+                                        W(null), ae((0, h.X)({
+                                            title: "Link Apple Account",
+                                            icon: y.CQ,
+                                            message: "Successfully linked Apple account.",
+                                            color: "success",
+                                            timeout: 3e3
+                                        })), e.next = 19;
+                                        break;
+                                    case 9:
+                                        if (e.prev = 9, e.t0 = e.catch(2), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || !n.requiresTwoFactorAuth) {
+                                            e.next = 16;
+                                            break
+                                        }
+                                        return l = e.t0.data, o = (0, F.h)(l), i = {
+                                            redirectTo: "/home/profile",
+                                            scope: l.scope,
+                                            ticket: l.ticket,
+                                            stepUpToken: l.stepUpToken,
+                                            redirectState: {
+                                                selectedAction: V,
+                                                continueAppleIdentityToken: t,
+                                                redirectTo: "/home/profile",
+                                                oauthProvider: C.zN.APPLE
+                                            }
+                                        }, e.abrupt("return", re(o, {
+                                            state: i
+                                        }));
+                                    case 16:
+                                        return console.error("Failed to link Apple account:", e.t0), W(null), e.abrupt("return", ae((0, h.X)({
+                                            title: "Failure",
+                                            message: null !== (r = null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Apple Linking Failed",
+                                            icon: E.X4,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        })));
+                                    case 19:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }, e, null, [
+                                [2, 9]
+                            ])
+                        }));
+                        return function(t) {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    Ye = function() {
+                        var e = (0, o.A)(m().mark(function e() {
+                            var t, n;
+                            return m().wrap(function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.prev = 0, e.next = 3, je().unwrap();
+                                    case 3:
+                                        W(null), ae((0, h.X)({
+                                            title: "Unlink Apple Account",
+                                            icon: y.CQ,
+                                            message: "Successfully unlinked Apple account.",
+                                            color: "success",
+                                            timeout: 3e3
+                                        })), e.next = 11;
+                                        break;
+                                    case 7:
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error("Failed to unlink Apple account:", e.t0), e.abrupt("return", ae((0, h.X)({
+                                            title: "Failure",
+                                            message: null !== (t = null === e.t0 || void 0 === e.t0 || null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Apple Unlinking Failed",
+                                            icon: E.X4,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        })));
+                                    case 11:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }, e, null, [
+                                [0, 7]
+                            ])
+                        }));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    Be = function() {
+                        var e = (0, o.A)(m().mark(function e() {
+                            var t;
+                            return m().wrap(function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.prev = 0, e.next = 3, (0, T.Q)();
+                                    case 3:
+                                        null != (t = e.sent) && t.identityToken && Xe(t.identityToken), e.next = 11;
+                                        break;
+                                    case 7:
+                                        e.prev = 7, e.t0 = e.catch(0), console.error("Apple Sign In Error:", e.t0), ae((0, h.X)({
+                                            title: "Failure",
+                                            message: "Apple Authentication Failed",
+                                            icon: E.X4,
+                                            color: "danger",
+                                            timeout: 5e3
+                                        }));
+                                    case 11:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }, e, null, [
+                                [0, 7]
+                            ])
+                        }));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }(),
+                    Qe = function() {
+                        Ke || (W(null), B(null), J(null), ne(null))
                     };
                 (0, r.useEffect)(function() {
                     (0, o.A)(m().mark(function e() {
@@ -582,13 +723,13 @@
                         return m().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    if ((t = null == w ? void 0 : w.discordToken) && !n) {
+                                    if ((t = null == g ? void 0 : g.discordToken) && !n) {
                                         e.next = 3;
                                         break
                                     }
                                     return e.abrupt("return");
                                 case 3:
-                                    V(R), W(t);
+                                    W(I), B(t);
                                 case 5:
                                 case "end":
                                     return e.stop()
@@ -596,50 +737,34 @@
                         }, e)
                     }))()
                 }, []), (0, r.useEffect)(function() {
-                    (0, o.A)(m().mark(function e() {
-                        var t;
-                        return m().wrap(function(e) {
-                            for (;;) switch (e.prev = e.next) {
-                                case 0:
-                                    if ((t = null == w ? void 0 : w.twitchToken) && !i) {
-                                        e.next = 3;
-                                        break
-                                    }
-                                    return e.abrupt("return");
-                                case 3:
-                                    V(U), J(t);
-                                case 5:
-                                case "end":
-                                    return e.stop()
-                            }
-                        }, e)
-                    }))()
+                    var e = null == g ? void 0 : g.twitchToken;
+                    e && !c && (W(j), ne(e))
                 }, []), (0, r.useEffect)(function() {
-                    null != w && w.twitchError && ee((0, h.X)({
+                    null != g && g.twitchError && ae((0, h.X)({
                         title: "Twitch Linking Failed",
-                        message: w.twitchError,
+                        message: g.twitchError,
                         icon: E.X4,
                         color: "danger",
                         timeout: 5e3
                     }))
                 }, []), (0, r.useEffect)(function() {
-                    (null == w ? void 0 : w.selectedAction) === R && null != w && w.continueDiscordAccessToken && Te(w.continueDiscordAccessToken), (null == w ? void 0 : w.selectedAction) === M && null != w && w.continueGoogleIdToken && Oe(w.continueGoogleIdToken)
+                    (null == g ? void 0 : g.selectedAction) === I && null != g && g.continueDiscordAccessToken && Ve(g.continueDiscordAccessToken), (null == g ? void 0 : g.selectedAction) === z && null != g && g.continueGoogleIdToken && _e(g.continueGoogleIdToken), (null == g ? void 0 : g.selectedAction) === V && null != g && g.continueAppleIdentityToken && Xe(g.continueAppleIdentityToken)
                 }, []), (0, r.useEffect)(function() {
-                    var e = re.get("prompt"),
-                        t = re.get("requestingUserId");
-                    "linkDiscordAccount" === e && t && t === f && !n && (0, T.O)({
+                    var e = ie.get("prompt"),
+                        t = ie.get("requestingUserId");
+                    "linkDiscordAccount" === e && t && t === w && !n && (0, O.O)({
                         redirectTo: "/home/profile"
                     })
                 }, []), (0, r.useEffect)(function() {
-                    var e = re.get("prompt"),
-                        t = re.get("requestingUserId");
-                    "linkGoogleAccount" === e && t && t === f && !l && (0, O.B)({
+                    var e = ie.get("prompt"),
+                        t = ie.get("requestingUserId");
+                    "linkGoogleAccount" === e && t && t === w && !l && (0, P.B)({
                         redirectTo: "/home/profile"
                     })
                 }, []), (0, r.useEffect)(function() {
-                    var e = re.get("prompt"),
-                        t = re.get("requestingUserId");
-                    "linkTwitchAccount" === e && t && t === f && !i && P({
+                    var e = ie.get("prompt"),
+                        t = ie.get("requestingUserId");
+                    "linkTwitchAccount" === e && t && t === w && !c && D({
                         redirectTo: "/home/profile"
                     })
                 }, []), (0, r.useEffect)(function() {
@@ -652,7 +777,7 @@
                                         e.next = 8;
                                         break
                                     }
-                                    return history.replaceState(null, "", window.location.pathname), console.error("Google Authentication Error:", a), e.abrupt("return", ee((0, h.X)({
+                                    return history.replaceState(null, "", window.location.pathname), console.error("Google Authentication Error:", a), e.abrupt("return", ae((0, h.X)({
                                         title: "Failure",
                                         message: "Google Authentication Failed",
                                         icon: E.X4,
@@ -660,7 +785,7 @@
                                         timeout: 5e3
                                     })));
                                 case 8:
-                                    r && (history.replaceState(null, "", window.location.pathname), V(M), X(r));
+                                    r && (history.replaceState(null, "", window.location.pathname), W(z), J(r));
                                 case 9:
                                 case "end":
                                     return e.stop()
@@ -668,13 +793,13 @@
                         }, e)
                     }))()
                 }, []), (0, r.useEffect)(function() {
-                    L === R && G && n && (V(null), W(null))
-                }, [me, ce, n, G]), (0, r.useEffect)(function() {
-                    L === M && B && l && (V(null), X(null))
-                }, [he, Ee, l, B]), (0, r.useEffect)(function() {
-                    L === U && H && i && (V(null), J(null))
-                }, [ke, Se, i, H]);
-                var Me = me || ce || he || Ee || ke || Se;
+                    G === I && Y && n && (W(null), B(null))
+                }, [he, me, n, Y]), (0, r.useEffect)(function() {
+                    G === z && H && l && (W(null), J(null))
+                }, [Ee, ke, l, H]), (0, r.useEffect)(function() {
+                    G === j && te && c && (W(null), ne(null))
+                }, [Se, De, c, te]);
+                var Ke = he || me || Ee || ke || Se || De || Ue || Le;
                 return r.createElement(r.Fragment, null, r.createElement("div", {
                     className: "center-panel"
                 }, r.createElement(b.A, null, r.createElement(A.A, {
@@ -684,36 +809,46 @@
                     xs: "12",
                     className: "mx-0 mb-2 tw-flex tw-gap-2"
                 }, n && r.createElement(k.A, {
-                    className: "tw-mr-2",
-                    disabled: Me,
+                    disabled: Ke,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return V(I)
+                        return W(U)
                     }
                 }, "Unlink your Discord Account"), !n && r.createElement(k.A, {
-                    className: "tw-mr-2",
-                    isLoading: Me,
+                    isLoading: Ke,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return (0, T.O)({
+                        return (0, O.O)({
                             redirectTo: "/home/profile"
                         })
                     }
                 }, "Link your Discord Account"), l && r.createElement(k.A, {
-                    disabled: Me,
+                    disabled: Ke,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return V(z)
+                        return W(M)
                     }
                 }, "Unlink your Google Account"), !l && r.createElement(k.A, {
-                    isLoading: Me,
+                    isLoading: Ke,
                     type: "button",
                     color: "primary",
-                    onClick: O.B
-                }, "Link your Google Account"))), r.createElement(b.A, {
+                    onClick: P.B
+                }, "Link your Google Account"), u && r.createElement(k.A, {
+                    disabled: Ke,
+                    type: "button",
+                    color: "primary",
+                    onClick: function() {
+                        return W(_)
+                    }
+                }, "Unlink your Apple Account"), !u && r.createElement(k.A, {
+                    isLoading: Ke,
+                    type: "button",
+                    color: "primary",
+                    onClick: Be
+                }, "Link your Apple Account"))), r.createElement(b.A, {
                     id: "link-twitch",
                     className: "tw-mt-6"
                 }, r.createElement(A.A, {
@@ -721,32 +856,32 @@
                     className: "mx-0 mb-2"
                 }, r.createElement("h5", {
                     className: "tw-font-semibold tw-mb-2"
-                }, "Twitch Drops"), i ? r.createElement("p", {
+                }, "Twitch Drops"), c ? r.createElement("p", {
                     className: "tw-text-sm tw-text-gray-300 tw-mb-3"
                 }, null != s && s.displayName ? r.createElement(r.Fragment, null, "Connected as ", r.createElement("strong", null, s.displayName), ". You're ready to receive Twitch Drops.") : r.createElement(r.Fragment, null, "Your Twitch account is linked. You're ready to receive Twitch Drops.")) : r.createElement("p", {
                     className: "tw-text-sm tw-text-gray-300 tw-mb-3"
                 }, "Link your Twitch account to receive Twitch Drops rewards in VRChat.")), r.createElement(A.A, {
                     xs: "12",
                     className: "mx-0 mb-2 tw-flex tw-gap-2"
-                }, i && r.createElement(k.A, {
-                    disabled: Me,
+                }, c && r.createElement(k.A, {
+                    disabled: Ke,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return V(j)
+                        return W(L)
                     }
-                }, "Unlink your Twitch Account"), !i && r.createElement(k.A, {
-                    disabled: Me,
+                }, "Unlink your Twitch Account"), !c && r.createElement(k.A, {
+                    disabled: Ke,
                     type: "button",
                     color: "primary",
                     onClick: function() {
-                        return P({
+                        return D({
                             redirectTo: "/home/profile"
                         })
                     }
                 }, "Connect Twitch for Drops")))), r.createElement(x.A, {
-                    isOpen: L === I,
-                    toggle: Ie,
+                    isOpen: G === U,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -756,18 +891,18 @@
                     className: "p-3 tw-text-center"
                 }, "Do you want to unlink your Discord account from this VRChat account? You can link it again anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
-                    onClick: Pe
+                    onClick: qe
                 }, "Unlink Account"), r.createElement(a.$n, {
-                    onClick: Ie,
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), r.createElement(x.A, {
-                    isOpen: null !== G && L === R,
-                    toggle: Ie,
+                    isOpen: null !== Y && G === I,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -777,20 +912,20 @@
                     className: "p-3 tw-text-center"
                 }, "Do you want to link your Discord account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        return Te(G)
+                        return Ve(Y)
                     }
                 }, "Link Account"), r.createElement(a.$n, {
-                    onClick: Ie,
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), r.createElement(x.A, {
-                    isOpen: L === z,
-                    toggle: Ie,
+                    isOpen: G === M,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -800,18 +935,18 @@
                     className: "p-3 tw-text-center"
                 }, "Do you want to unlink your Google account from this VRChat account? You can link it again anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
-                    onClick: De
+                    onClick: Ge
                 }, "Unlink Account"), r.createElement(a.$n, {
-                    onClick: Ie,
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), r.createElement(x.A, {
-                    isOpen: null !== B && L === M,
-                    toggle: Ie,
+                    isOpen: null !== H && G === z,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -821,20 +956,20 @@
                     className: "p-3 tw-text-center"
                 }, "Do you want to link your Google account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
                     onClick: function() {
-                        return Oe(B)
+                        return _e(H)
                     }
                 }, "Link Account"), r.createElement(a.$n, {
-                    onClick: Ie,
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), r.createElement(x.A, {
-                    isOpen: L === j,
-                    toggle: Ie,
+                    isOpen: G === L,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -844,18 +979,18 @@
                     className: "p-3 tw-text-center"
                 }, "Are you sure you want to unlink your Twitch account? Unlinking may prevent future Twitch Drops from being delivered to your VRChat account."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
-                    onClick: Re
+                    onClick: $e
                 }, "Unlink Twitch Account"), r.createElement(a.$n, {
-                    onClick: Ie,
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))), r.createElement(x.A, {
-                    isOpen: null !== H && L === U,
-                    toggle: Ie,
+                    isOpen: null !== te && G === j,
+                    toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
                     className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
@@ -865,58 +1000,79 @@
                     className: "p-3 tw-text-center"
                 }, "Link your Twitch account to this VRChat account to receive Twitch Drops rewards."), r.createElement("div", {
                     className: "p-3 tw-text-center"
-                }, r.createElement("strong", null, u)), r.createElement("div", {
+                }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
                     className: "tw-my-2",
                     expand: !0,
-                    loading: ke,
+                    loading: Se,
                     onClick: function() {
-                        return Fe(H)
+                        return We(te)
                     }
                 }, "Link Twitch Account"), r.createElement(a.$n, {
-                    onClick: Ie,
-                    disabled: ke,
+                    onClick: Qe,
+                    disabled: Se,
+                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                }, "Cancel")))), r.createElement(x.A, {
+                    isOpen: G === _,
+                    toggle: Qe,
+                    centered: !0
+                }, r.createElement(N.A, {
+                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                }, r.createElement("h2", {
+                    className: "text-center ty-my-5 tw-p-5 tw-text-center"
+                }, "Unlink Apple Account"), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, "Do you want to unlink your Apple account from this VRChat account? You can link it again anytime."), r.createElement("div", {
+                    className: "p-3 tw-text-center"
+                }, r.createElement("strong", null, f)), r.createElement("div", {
+                    className: "px-3 pt-3"
+                }, r.createElement(a.$n, {
+                    className: "tw-my-2",
+                    expand: !0,
+                    onClick: Ye
+                }, "Unlink Account"), r.createElement(a.$n, {
+                    onClick: Qe,
                     className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                 }, "Cancel")))))
             };
-            var V = n(3569),
-                q = n(42217),
-                _ = n(70961),
-                G = n(29281),
-                W = n(24751),
-                $ = n(6324),
-                Y = n(25538);
-            const B = function() {
+            var G = n(3569),
+                W = n(42217),
+                $ = n(70961),
+                X = n(29281),
+                Y = n(24751),
+                B = n(6324),
+                Q = n(25538);
+            const K = function() {
                 var e = (0, S.P2)(),
                     t = e.data,
                     n = e.isError,
                     a = e.isFetching,
                     l = (0, S.w_)(),
                     o = l.data,
-                    c = void 0 === o ? [] : o,
-                    i = l.isError,
+                    i = void 0 === o ? [] : o,
+                    c = l.isError,
                     s = l.isFetching,
-                    u = c.includes("permission-age-verification"),
-                    m = (0, G.CV)(),
+                    u = i.includes("permission-age-verification"),
+                    m = (0, X.CV)(),
                     d = m.data,
                     p = m.isError,
                     f = m.isFetching,
-                    h = n || i || p;
+                    h = n || c || p;
                 if (a || s || f) return r.createElement("div", {
                     className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
-                }, r.createElement(Y.A, {
+                }, r.createElement(Q.A, {
                     size: "5x"
                 }));
-                if (h) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement($.A, {
-                    icon: _.faCircleQuestion
-                }), " Unable to determine your Age Verification status."), r.createElement(W.z9, {
+                if (h) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
+                    icon: $.faCircleQuestion
+                }), " Unable to determine your Age Verification status."), r.createElement(Y.z9, {
                     className: "tw-w-full tw-mt-0",
                     to: "/home/ageverification"
                 }, "Try Again"));
-                if (!u) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement($.A, {
-                    icon: V.faCircleInfo
-                }), " You must have an active VRChat Plus subscription in order to begin the verification process."), r.createElement(W.z9, {
+                if (!u) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
+                    icon: G.faCircleInfo
+                }), " You must have an active VRChat Plus subscription in order to begin the verification process."), r.createElement(Y.z9, {
                     className: "tw-w-full tw-mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
                 }, "Learn More"));
@@ -924,49 +1080,49 @@
                 switch (d.status) {
                     case "verified":
                     case "approved":
-                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement($.A, {
-                            icon: q.SG
-                        }), " You have successfully verified your age.", w && " You may choose whether to display it on your profile."), w && r.createElement(W.z9, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
+                            icon: W.SG
+                        }), " You have successfully verified your age.", w && " You may choose whether to display it on your profile."), w && r.createElement(Y.z9, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/user/me"
                         }, "Go to My Profile"));
                     case "uninitialized":
-                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement($.A, {
-                            icon: V.faCircleInfo
-                        }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), r.createElement(W.z9, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
+                            icon: G.faCircleInfo
+                        }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), r.createElement(Y.z9, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Learn More"));
                     default:
-                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement($.A, {
-                            icon: V.faCircleInfo
-                        }), " You can check your Age Verification status here."), r.createElement(W.z9, {
+                        return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
+                            icon: G.faCircleInfo
+                        }), " You can check your Age Verification status here."), r.createElement(Y.z9, {
                             className: "tw-w-full tw-mt-0",
                             to: "/home/ageverification"
                         }, "Check Status"))
                 }
             };
-            var X = n(66911),
-                Q = n(9391),
-                K = n(85052),
-                H = n(92737),
-                J = n(19462);
-            var Z = (0, i.A)("div", {
+            var H = n(66911),
+                J = n(9391),
+                Z = n(85052),
+                ee = n(92737),
+                te = n(19462);
+            var ne = (0, c.A)("div", {
                 target: "ezmvepu0"
             })({
                 name: "1qck9b",
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
-            const ee = function() {
+            const re = function() {
                 var e, t = (0, p.wA)(),
                     n = (0, l.a$)().user,
                     a = (0, r.useState)(new Set(n.contentFilters)),
-                    o = (0, c.A)(a, 2),
-                    i = o[0],
+                    o = (0, i.A)(a, 2),
+                    c = o[0],
                     s = o[1],
-                    u = (0, l.d7)(i, 1400),
+                    u = (0, l.d7)(c, 1400),
                     m = (0, f.FP)(),
-                    d = (0, c.A)(m, 2),
+                    d = (0, i.A)(m, 2),
                     w = d[0],
                     g = d[1],
                     v = g.isError,
@@ -975,7 +1131,7 @@
                 (0, r.useEffect)(function() {
                     if (null != n && n.id && u) {
                         var e = new Set(n.contentFilters),
-                            t = (0, X.A)(u);
+                            t = (0, H.A)(u);
                         t.length === e.size && t.every(function(t) {
                             return e.has(t)
                         }) || w({
@@ -986,57 +1142,57 @@
                 }, [u]), (0, r.useEffect)(function() {
                     y && t((0, h.X)({
                         title: "Content Gating Settings Updated",
-                        icon: Q.KT,
+                        icon: J.KT,
                         message: "Your content gating settings have been updated successfully.",
                         color: "success",
                         timeout: 7e3
                     }))
                 }, [y]);
-                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), v && r.createElement(K.A, {
+                return r.createElement(r.Fragment, null, r.createElement("strong", null, "Content Gating keeps you safe by filtering content you don't want to see."), v && r.createElement(Z.A, {
                     color: "danger"
-                }, "Unable to change content gating settings: ", null == E || null === (e = E.data) || void 0 === e ? void 0 : e.error.message), Object.entries(H.z).map(function(e) {
-                    var t = (0, c.A)(e, 2),
+                }, "Unable to change content gating settings: ", null == E || null === (e = E.data) || void 0 === e ? void 0 : e.error.message), Object.entries(ee.z).map(function(e) {
+                    var t = (0, i.A)(e, 2),
                         n = t[0],
                         a = t[1];
-                    return r.createElement(Z, {
+                    return r.createElement(ne, {
                         key: n
-                    }, r.createElement(J.A, {
+                    }, r.createElement(te.A, {
                         label: "Filter ".concat(a),
-                        defaultChecked: i.has(n),
+                        defaultChecked: c.has(n),
                         onChangeCallback: function() {
-                            return e = n, void(i.has(e) ? s(new Set((0, X.A)(i).filter(function(t) {
+                            return e = n, void(c.has(e) ? s(new Set((0, H.A)(c).filter(function(t) {
                                 return t !== e
-                            }))) : s(new Set(i).add(e)));
+                            }))) : s(new Set(c).add(e)));
                             var e
                         }
                     }))
                 }), r.createElement("small", null, "VRChat has User Generated Content and relies on its creators to label it appropriately. If you see something that is not labeled correctly, please use our Reporting system so our Moderation team can investigate."))
             };
-            var te = n(64467),
-                ne = n(6913),
-                re = n(49843),
-                ae = (0, r.createContext)(null);
-            const le = function(e) {
+            var ae = n(64467),
+                le = n(6913),
+                oe = n(49843),
+                ie = (0, r.createContext)(null);
+            const ce = function(e) {
                 var t = e.children,
                     n = e.closeModal,
                     l = (0, r.useState)(1),
-                    o = (0, c.A)(l, 2),
-                    i = o[0],
+                    o = (0, i.A)(l, 2),
+                    c = o[0],
                     s = o[1],
                     u = (0, r.useState)(null),
-                    m = (0, c.A)(u, 2),
+                    m = (0, i.A)(u, 2),
                     d = m[0],
                     p = m[1],
                     f = (0, r.useState)(!1),
-                    h = (0, c.A)(f, 2),
+                    h = (0, i.A)(f, 2),
                     w = h[0],
                     g = h[1],
                     v = (0, r.useState)({}),
-                    E = (0, c.A)(v, 2),
+                    E = (0, i.A)(v, 2),
                     y = E[0],
                     b = E[1],
                     A = (0, r.useState)({}),
-                    k = (0, c.A)(A, 2),
+                    k = (0, i.A)(A, 2),
                     x = k[0],
                     N = k[1],
                     C = function() {
@@ -1049,7 +1205,7 @@
                 }, r.createElement(a.M2, {
                     color: "#67D781",
                     className: "tw-pr-2",
-                    icon: ne.iW
+                    icon: le.iW
                 }), r.createElement("h4", {
                     className: "tw-text-[#67D781]"
                 }, "Your claim has been submitted successfully, thank you!")), r.createElement("p", null, "We will look into it and email you for next possible steps."), r.createElement("div", {
@@ -1066,7 +1222,7 @@
                 }, r.createElement(a.M2, {
                     color: "#EE5454",
                     className: "tw-pr-2",
-                    icon: ne.iW
+                    icon: le.iW
                 }), r.createElement("h4", {
                     className: "tw-text-red"
                 }, "DMCA Claim Cannot Be Completed.")), r.createElement("p", null, d), r.createElement("div", {
@@ -1086,7 +1242,7 @@
                         width: "50%"
                     },
                     onClick: C
-                }, "Done"))) : r.createElement(ae.Provider, {
+                }, "Done"))) : r.createElement(ie.Provider, {
                     value: {
                         next: function() {
                             s(function(e) {
@@ -1098,7 +1254,7 @@
                                 return e - 1
                             })
                         },
-                        currentStep: i,
+                        currentStep: c,
                         setFormError: p,
                         setFormSuccess: g,
                         ownerInfo: y,
@@ -1112,7 +1268,7 @@
                 }, t))
             };
 
-            function oe(e, t) {
+            function se(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1123,50 +1279,50 @@
                 return n
             }
 
-            function ce(e) {
+            function ue(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? oe(Object(n), !0).forEach(function(t) {
-                        (0, te.A)(e, t, n[t])
-                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : oe(Object(n)).forEach(function(t) {
+                    t % 2 ? se(Object(n), !0).forEach(function(t) {
+                        (0, ae.A)(e, t, n[t])
+                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : se(Object(n)).forEach(function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
                 }
                 return e
             }
-            var ie = [{
+            var me = [{
                     label: "I am the owner of the copyright",
                     value: "owner"
                 }, {
                     label: "I am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed",
                     value: "authorized"
                 }],
-                se = new RegExp(/(?:avtr|wrld)_[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}/i),
-                ue = function(e) {
+                de = new RegExp(/(?:avtr|wrld)_[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}/i),
+                pe = function(e) {
                     return e.filter(function(e) {
-                        return se.test(e)
+                        return de.test(e)
                     }).map(function(e) {
                         var t;
-                        return null === (t = e.match(se)) || void 0 === t ? void 0 : t[0]
+                        return null === (t = e.match(de)) || void 0 === t ? void 0 : t[0]
                     })
                 };
-            const me = function() {
-                var e, t, n, l, o = (0, F.ok)(),
-                    i = (0, c.A)(o, 2),
-                    s = i[0],
-                    u = (i[1], (0, r.useState)("owner")),
-                    m = (0, c.A)(u, 2),
+            const fe = function() {
+                var e, t, n, l, o = (0, R.ok)(),
+                    c = (0, i.A)(o, 2),
+                    s = c[0],
+                    u = (c[1], (0, r.useState)("owner")),
+                    m = (0, i.A)(u, 2),
                     d = m[0],
                     p = m[1],
                     f = (0, r.useState)(!1),
-                    h = (0, c.A)(f, 2),
+                    h = (0, i.A)(f, 2),
                     w = h[0],
                     g = h[1],
                     v = (0, r.useState)(""),
-                    E = (0, c.A)(v, 2),
+                    E = (0, i.A)(v, 2),
                     y = E[0],
                     b = E[1],
-                    A = (0, r.useContext)(ae),
+                    A = (0, r.useContext)(ie),
                     k = A.previous,
                     x = A.currentStep,
                     N = A.claimInfo,
@@ -1176,28 +1332,28 @@
                     O = A.setFormSuccess,
                     P = (null == w ? void 0 : w.owner) && (null == w ? void 0 : w.accurate) && (null == w ? void 0 : w.perjury) && (null == w ? void 0 : w.liability) && (null == w ? void 0 : w.abuse),
                     D = (null == N || null === (e = N.description) || void 0 === e ? void 0 : e.length) > 0 && (null == N || null === (t = N.contentIds) || void 0 === t ? void 0 : t.length) > 0 && (null == N || null === (n = N.proof) || void 0 === n ? void 0 : n.length) > 0 && P && y.toLowerCase() === S.fullName.toLowerCase(),
-                    R = (0, re.Ds)(),
-                    I = (0, c.A)(R, 2),
-                    M = I[0],
+                    F = (0, oe.Ds)(),
+                    I = (0, i.A)(F, 2),
+                    U = I[0],
                     z = I[1],
-                    U = z.isError,
+                    M = z.isError,
                     j = z.error,
                     L = z.isLoading,
                     V = z.isSuccess,
-                    q = z.reset;
+                    _ = z.reset;
                 (0, r.useEffect)(function() {
                     var e = s.get("dmcaTarget");
-                    e && C(ce(ce({}, N), {}, {
-                        contentIds: ue([e])
+                    e && C(ue(ue({}, N), {}, {
+                        contentIds: pe([e])
                     }))
                 }, []), (0, r.useEffect)(function() {
                     var e;
-                    U && (q(), T("Could Not Proccess Claim: ".concat(null == j || null === (e = j.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
-                }, [U, j]), (0, r.useEffect)(function() {
-                    V && (q(), O(!0))
+                    M && (_(), T("Could Not Proccess Claim: ".concat(null == j || null === (e = j.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message)))
+                }, [M, j]), (0, r.useEffect)(function() {
+                    V && (_(), O(!0))
                 }, [V]);
-                var _ = function(e) {
-                    g(ce(ce({}, w), {}, (0, te.A)({}, e.target.id, e.target.checked)))
+                var q = function(e) {
+                    g(ue(ue({}, w), {}, (0, ae.A)({}, e.target.id, e.target.checked)))
                 };
                 return 3 !== x ? null : r.createElement(r.Fragment, null, r.createElement("label", {
                     htmlFor: "claim-description",
@@ -1207,7 +1363,7 @@
                     id: "claim-description",
                     value: null == N ? void 0 : N.description,
                     onChange: function(e) {
-                        return C(ce(ce({}, N), {}, {
+                        return C(ue(ue({}, N), {}, {
                             description: e.target.value
                         }))
                     }
@@ -1218,11 +1374,11 @@
                     className: "tw-pt-2",
                     value: null == N ? void 0 : N.contentIds,
                     validator: function(e) {
-                        return se.test(e)
+                        return de.test(e)
                     },
                     onChange: function(e) {
-                        return C(ce(ce({}, N), {}, {
-                            contentIds: ue(e)
+                        return C(ue(ue({}, N), {}, {
+                            contentIds: pe(e)
                         }))
                     }
                 })), r.createElement("label", {
@@ -1232,7 +1388,7 @@
                     className: "tw-pt-2",
                     id: "claim-proof",
                     onChange: function(e) {
-                        return C(ce(ce({}, N), {}, {
+                        return C(ue(ue({}, N), {}, {
                             proof: e.target.value
                         }))
                     },
@@ -1245,7 +1401,7 @@
                     id: "claim-authority",
                     trimToLength: !0,
                     allowMultiline: !0,
-                    options: ie,
+                    options: me,
                     value: d,
                     onChange: function(e) {
                         return p(e)
@@ -1258,11 +1414,11 @@
                     id: "claim-owner",
                     value: null == N ? void 0 : N.copyrightOwnerName,
                     onChange: function(e) {
-                        return C(ce(ce({}, N), {}, {
+                        return C(ue(ue({}, N), {}, {
                             copyrightOwnerName: e.target.value
                         }))
                     }
-                })), r.createElement(de, {
+                })), r.createElement(he, {
                     className: "tw-mb-4"
                 }, r.createElement("h4", {
                     className: "tw-text-xl"
@@ -1271,31 +1427,31 @@
                     checked: null == w ? void 0 : w.owner,
                     label: "\n            I have a good faith belief that the use of the material in the\n            manner complained of is not authorized by the copyright owner,\n            its agent, or the law;\n          ",
                     htmlFor: "owner-check",
-                    onChange: _
+                    onChange: q
                 }), r.createElement(a.Sc, {
                     id: "accurate",
                     checked: null == w ? void 0 : w.accurate,
                     label: "This notification is accurate; and",
                     htmlFor: "accurate-check",
-                    onChange: _
+                    onChange: q
                 }), r.createElement(a.Sc, {
                     id: "perjury",
                     checked: null == w ? void 0 : w.perjury,
                     label: "\n            Under penalty of perjury, I am authorized to act on behalf of the owner\n            of an exclusive right that is allegedly infringed.\n          ",
                     htmlFor: "perjury-check",
-                    onChange: _
+                    onChange: q
                 }), r.createElement(a.Sc, {
                     id: "liability",
                     checked: null == w ? void 0 : w.liability,
                     label: "\n            I acknowledge that under section 512(f) of the DMCA any person who knowingly \n            materially misrepresents that material or activity is infringing may be subject \n            to liability for damages.\n          ",
                     htmlFor: "liability",
-                    onChange: _
+                    onChange: q
                 }), r.createElement(a.Sc, {
                     id: "abuse",
                     checked: null == w ? void 0 : w.abuse,
                     label: "I understand that abuse of this tool may result in the termination of my VRChat account, legal action, and/or criminal penalties.",
                     htmlFor: "abuse",
-                    onChange: _
+                    onChange: q
                 })), r.createElement("label", {
                     htmlFor: "claim-signature"
                 }, "Type your full name below which will act as your digital signature", r.createElement(a.pd, {
@@ -1311,7 +1467,7 @@
                 }, r.createElement(a.M2, {
                     color: "#EE5454",
                     className: "tw-px-2",
-                    icon: ne.iW
+                    icon: le.iW
                 }), r.createElement("p", {
                     className: "tw-text-red tw-py-2 tw-m-0"
                 }, "Please select all the checkboxes if you want to proceed.")), r.createElement("div", {
@@ -1319,36 +1475,36 @@
                 }, r.createElement(a.$n, {
                     className: "tw-mr-2",
                     onClick: k,
-                    containerStyles: pe,
+                    containerStyles: we,
                     neutral: !0
                 }, "Back"), r.createElement(a.$n, {
                     className: "tw-ml-2",
                     disabled: !D || L,
-                    containerStyles: pe,
+                    containerStyles: we,
                     onClick: function() {
-                        return M({
+                        return U({
                             claimInfo: N,
                             ownerInfo: S
                         })
                     }
                 }, "Submit")))
             };
-            var de = (0, i.A)("fieldset", {
+            var he = (0, c.A)("fieldset", {
                     target: "eikx6m20"
                 })({
                     name: "hfkisc",
                     styles: "input{align-self:flex-start;margin-top:0.33rem;}label{padding:0 0 0.75rem 0.5rem!important;}"
                 }),
-                pe = {
+                we = {
                     width: "100%"
                 };
-            const fe = function() {
+            const ge = function() {
                 var e = (0, r.useState)(null),
-                    t = (0, c.A)(e, 2),
+                    t = (0, i.A)(e, 2),
                     n = t[0],
                     l = t[1],
-                    o = (0, r.useContext)(ae),
-                    i = o.resetForm,
+                    o = (0, r.useContext)(ie),
+                    c = o.resetForm,
                     s = o.next,
                     u = o.currentStep,
                     m = o.setFormError;
@@ -1382,7 +1538,7 @@
                     containerStyles: {
                         width: "50%"
                     },
-                    onClick: i,
+                    onClick: c,
                     neutral: !0
                 }, "Cancel"), r.createElement(a.$n, {
                     className: "tw-ml-6",
@@ -1395,11 +1551,11 @@
                     disabled: !n
                 }, "Next")))
             };
-            var he = n(19179),
-                we = n(69517),
-                ge = n.n(we);
+            var ve = n(19179),
+                Ee = n(69517),
+                ye = n.n(Ee);
 
-            function ve(e, t) {
+            function be(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -1410,27 +1566,27 @@
                 return n
             }
 
-            function Ee(e) {
+            function Ae(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? ve(Object(n), !0).forEach(function(t) {
-                        (0, te.A)(e, t, n[t])
-                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : ve(Object(n)).forEach(function(t) {
+                    t % 2 ? be(Object(n), !0).forEach(function(t) {
+                        (0, ae.A)(e, t, n[t])
+                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : be(Object(n)).forEach(function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
                 }
                 return e
             }
-            const ye = function() {
+            const ke = function() {
                 var e = (0, r.useState)(!0),
-                    t = (0, c.A)(e, 2),
+                    t = (0, i.A)(e, 2),
                     n = t[0],
                     l = t[1],
                     o = (0, r.useState)(!1),
-                    i = (0, c.A)(o, 2),
-                    s = i[0],
-                    u = i[1],
-                    m = (0, r.useContext)(ae),
+                    c = (0, i.A)(o, 2),
+                    s = c[0],
+                    u = c[1],
+                    m = (0, r.useContext)(ie),
                     d = m.next,
                     p = m.previous,
                     f = m.currentStep,
@@ -1438,18 +1594,18 @@
                     w = m.setOwnerInfo;
                 return (0, r.useEffect)(function() {
                     var e, t, n, r, a, l;
-                    ge()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (r = h.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (a = h.mailingCountry) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
+                    ye()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (r = h.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (a = h.mailingCountry) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
                 }, [h]), 2 !== f ? null : r.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full"
-                }, n ? r.createElement(be, null, r.createElement(a.M2, {
+                }, n ? r.createElement(xe, null, r.createElement(a.M2, {
                     className: "tw-px-2",
-                    icon: ne.iW
+                    icon: le.iW
                 }), r.createElement("p", {
                     className: "tw-m-0"
                 }, "All information, including your full legal name and email address, are part of the full takedown notice, which may be provided to the uploader. This information is required to complete a submission."), r.createElement(a.M2, {
                     color: "#fff",
                     className: "tw-pr-2 tw-cursor-pointer",
-                    icon: he.GR,
+                    icon: ve.GR,
                     onClick: function() {
                         return l(!1)
                     }
@@ -1462,7 +1618,7 @@
                     type: "text",
                     value: null == h ? void 0 : h.fullName,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             fullName: e.target.value
                         }))
                     }
@@ -1475,7 +1631,7 @@
                     type: "text",
                     value: null == h ? void 0 : h.organization,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             organization: e.target.value
                         }))
                     }
@@ -1490,7 +1646,7 @@
                     id: "owner-mailing-address",
                     value: null == h ? void 0 : h.mailingAddress,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             mailingAddress: e.target.value
                         }))
                     }
@@ -1503,7 +1659,7 @@
                     id: "owner-mailing-city",
                     value: null == h ? void 0 : h.mailingCity,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             mailingCity: e.target.value
                         }))
                     }
@@ -1514,7 +1670,7 @@
                     id: "owner-mailing-state-province",
                     value: null == h ? void 0 : h.mailingStateProvince,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             mailingStateProvince: e.target.value
                         }))
                     }
@@ -1525,7 +1681,7 @@
                     id: "owner-mailing-postal-code",
                     value: null == h ? void 0 : h.mailingPostalCode,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             mailingPostalCode: e.target.value
                         }))
                     }
@@ -1535,7 +1691,7 @@
                     id: "owner-mailing-country",
                     value: null == h ? void 0 : h.mailingCountry,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             mailingCountry: e.target.value
                         }))
                     }
@@ -1548,7 +1704,7 @@
                     type: "tel",
                     value: null == h ? void 0 : h.phoneNumber,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             phoneNumber: e.target.value
                         }))
                     }
@@ -1560,7 +1716,7 @@
                     type: "email",
                     value: null == h ? void 0 : h.email,
                     onChange: function(e) {
-                        return w(Ee(Ee({}, h), {}, {
+                        return w(Ae(Ae({}, h), {}, {
                             email: e.target.value
                         }))
                     }
@@ -1568,37 +1724,37 @@
                     className: "tw-flex tw-w-full tw-mt-6"
                 }, r.createElement(a.$n, {
                     className: "tw-mr-2",
-                    containerStyles: Ae,
+                    containerStyles: Ne,
                     onClick: p,
                     neutral: !0
                 }, "Back"), r.createElement(a.$n, {
                     className: "tw-ml-2",
-                    containerStyles: Ae,
+                    containerStyles: Ne,
                     disabled: !s,
                     onClick: d
                 }, "Next")))
             };
-            var be = (0, i.A)("div", {
+            var xe = (0, c.A)("div", {
                     target: "exj8v4t0"
                 })({
                     name: "5vwt1n",
                     styles: "display:flex;align-items:baseline;color:#9c9c9c;background-color:#000;border-radius:8px;padding:0.5rem;margin-bottom:1rem"
                 }),
-                Ae = {
+                Ne = {
                     width: "100%"
                 };
-            const ke = function() {
-                var e = (0, F.ok)(),
-                    t = (0, c.A)(e, 2),
+            const Ce = function() {
+                var e = (0, R.ok)(),
+                    t = (0, i.A)(e, 2),
                     n = t[0],
                     l = t[1],
                     o = (0, r.useState)(!1),
-                    i = (0, c.A)(o, 2),
-                    s = i[0],
-                    u = i[1];
+                    c = (0, i.A)(o, 2),
+                    s = c[0],
+                    u = c[1];
                 (0, r.useEffect)(function() {
-                    var e = Object.fromEntries((0, X.A)(n.entries()).filter(function(e) {
-                        return "dmcaClaimForm" !== (0, c.A)(e, 1)[0]
+                    var e = Object.fromEntries((0, H.A)(n.entries()).filter(function(e) {
+                        return "dmcaClaimForm" !== (0, i.A)(e, 1)[0]
                     }));
                     s && (e.dmcaClaimForm = !0), l(e)
                 }, [s]), (0, r.useEffect)(function() {
@@ -1616,120 +1772,120 @@
                     onClose: function() {
                         return u(!1)
                     }
-                }, r.createElement(le, {
+                }, r.createElement(ce, {
                     closeModal: function() {
                         u(!1)
                     }
-                }, r.createElement(fe, null), r.createElement(ye, null), r.createElement(me, null))))
+                }, r.createElement(ge, null), r.createElement(ke, null), r.createElement(fe, null))))
             };
-            var xe = n(32254),
-                Ne = n(32110),
-                Ce = n(1700),
-                Se = n(7612),
-                Te = n(94451),
-                Oe = n(74353),
-                Pe = n.n(Oe),
-                De = n(53370),
-                Fe = n(78479),
-                Re = n(71853),
-                Ie = n(558),
-                Me = n(8120),
-                ze = function(e) {
+            var Se = n(32254),
+                Te = n(32110),
+                Oe = n(1700),
+                Pe = n(7612),
+                De = n(94451),
+                Fe = n(74353),
+                Re = n.n(Fe),
+                Ie = n(53370),
+                Ue = n(78479),
+                ze = n(71853),
+                Me = n(558),
+                je = n(8120),
+                Le = function(e) {
                     return e.currentUser.checkDisplayName.isLoading
                 },
-                Ue = function(e) {
+                Ve = function(e) {
                     var t;
                     return (null === (t = e.currentUser.databaseUser) || void 0 === t ? void 0 : t.pastDisplayNames) || null
                 },
-                je = (0, Me.Mz)(ze, function(e) {
+                _e = (0, je.Mz)(Le, function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }, function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }, function(e, t, n) {
                     return !1 === e && !1 === t && null !== n
                 }),
-                Le = (0, Me.Mz)(ze, function(e) {
+                qe = (0, je.Mz)(Le, function(e) {
                     return e.currentUser.checkDisplayName.userExists
                 }, function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }, function(e, t, n) {
                     return !1 === e && !0 === t && null !== n
                 }),
-                Ve = (0, Me.Mz)(ze, function(e) {
+                Ge = (0, je.Mz)(Le, function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }, function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }, function(e, t, n) {
                     return !1 === e && null !== t && !0 === n
                 }),
-                qe = (0, Me.Mz)(ze, function(e) {
+                We = (0, je.Mz)(Le, function(e) {
                     return e.currentUser.checkDisplayName.displayName
                 }, function(e) {
                     return e.currentUser.checkDisplayName.nameOk
                 }, function(e, t, n) {
                     return !1 === e && null !== t && !1 === n
                 }),
-                _e = (0, Me.Mz)(Ue, function(e) {
+                $e = (0, je.Mz)(Ve, function(e) {
                     return null !== e && e.length > 0
                 }),
-                Ge = (0, Me.Mz)(_e, Ue, function(e, t) {
+                Xe = (0, je.Mz)($e, Ve, function(e, t) {
                     return e && t.reduce(function(e, t) {
-                        return Pe()(t.updated_at) > Pe()(e.updated_at) ? t : e
+                        return Re()(t.updated_at) > Re()(e.updated_at) ? t : e
                     }, {
                         updated_at: 0
                     })
                 }),
-                We = (0, Me.Mz)(Ue, Ge, function(e, t) {
+                Ye = (0, je.Mz)(Ve, Xe, function(e, t) {
                     return null !== e && t.updated_at
                 }),
-                $e = (0, Me.Mz)(Ue, Ge, function(e, t) {
+                Be = (0, je.Mz)(Ve, Xe, function(e, t) {
                     return null !== e && t.displayName
                 }),
-                Ye = (0, Me.Mz)(Ue, Ge, function(e, t) {
+                Qe = (0, je.Mz)(Ve, Xe, function(e, t) {
                     return null !== e && !!t.reverted
                 }),
-                Be = n(77839),
-                Xe = n(33673),
-                Qe = n(5556),
-                Ke = n.n(Qe),
-                He = function(e) {
+                Ke = n(77839),
+                He = n(33673),
+                Je = n(5556),
+                Ze = n.n(Je),
+                et = function(e) {
                     var t = e.validationError,
                         n = e.displayNameChanged,
                         l = void 0 !== n && n,
-                        o = (0, p.d4)(Le),
-                        c = (0, p.d4)(qe),
-                        i = ((0, p.d4)(We), l || (0, p.d4)(function(e) {
+                        o = (0, p.d4)(qe),
+                        i = (0, p.d4)(We),
+                        c = ((0, p.d4)(Ye), l || (0, p.d4)(function(e) {
                             var t;
                             return null === (t = e.currentUser.displayName) || void 0 === t ? void 0 : t.changed
                         }));
-                    return r.createElement(r.Fragment, null, null !== t && r.createElement(K.A, {
+                    return r.createElement(r.Fragment, null, null !== t && r.createElement(Z.A, {
                         color: "warning",
                         "aria-label": "name warning"
                     }, r.createElement(a.M2, {
-                        icon: Ce.$f
-                    }), " ".concat(t)), o && null === t && r.createElement(K.A, {
+                        icon: Oe.$f
+                    }), " ".concat(t)), o && null === t && r.createElement(Z.A, {
                         color: "warning",
                         "aria-label": "name warning not available"
                     }, r.createElement(a.M2, {
-                        icon: Xe.W6
-                    }), " That display name is already in use."), c && null === t && r.createElement(K.A, {
+                        icon: He.W6
+                    }), " That display name is already in use."), i && null === t && r.createElement(Z.A, {
                         color: "warning",
                         "aria-label": "name warning character not okay"
                     }, r.createElement(a.M2, {
-                        icon: Xe.W6
-                    }), " That display name includes characters that cannot be used. Please try again."), i && r.createElement(K.A, {
+                        icon: He.W6
+                    }), " That display name includes characters that cannot be used. Please try again."), c && r.createElement(Z.A, {
                         color: "success",
                         "aria-label": "name change success"
                     }, r.createElement(a.M2, {
-                        icon: Ce.$f
+                        icon: Oe.$f
                     }), " Your display name has been changed!"))
                 };
-            He.propTypes = {
-                canChangeDisplayName: Ke().bool.isRequired,
-                validationError: Ke().string
+            et.propTypes = {
+                canChangeDisplayName: Ze().bool.isRequired,
+                validationError: Ze().string
             };
-            const Je = He;
-            var Ze = function(e) {
+            const tt = et;
+            var nt = function(e) {
                 var t = e.displayNameError,
                     n = (0, p.wA)();
                 return r.createElement("div", {
@@ -1743,22 +1899,22 @@
                 }, "help.vrchat.com"), "."), r.createElement(k.A, {
                     className: "me-2",
                     onClick: function() {
-                        return n((0, Ie.qc)())
+                        return n((0, Me.qc)())
                     },
                     color: "primary"
                 }, "Try Again")))
             };
-            Ze.propTypes = {
-                displayNameError: Ke().string.isRequired
+            nt.propTypes = {
+                displayNameError: Ze().string.isRequired
             };
-            const et = Ze;
-            var tt = n(34450),
-                nt = function(e) {
+            const rt = nt;
+            var at = n(34450),
+                lt = function(e) {
                     var t = e.canRevertDisplayName,
                         n = e.numberOfDays,
                         l = e.showLastDisplayNameChange,
                         o = e.cooldownPermission,
-                        c = void 0 !== o && o;
+                        i = void 0 !== o && o;
                     return r.createElement(a.$T, {
                         hideIcon: !0,
                         color: "#31545ebf",
@@ -1770,69 +1926,69 @@
                     }, r.createElement("p", {
                         className: "tw-m-0"
                     }, r.createElement(a.M2, {
-                        icon: ne.iW,
+                        icon: le.iW,
                         color: "#6AE3F9",
                         className: "tw-mr-2"
                     })), r.createElement("div", {
                         className: "tw-flex tw-flex-col"
-                    }, r.createElement("span", null, c && r.createElement(r.Fragment, null, "You can only change your display name once per", " ", r.createElement("strong", {
+                    }, r.createElement("span", null, i && r.createElement(r.Fragment, null, "You can only change your display name once per", " ", r.createElement("strong", {
                         className: "tw-text-[#FFFF00]"
                     }, 30, " days ", r.createElement("img", {
                         alt: "subscriptions",
                         width: "35",
-                        src: tt
-                    }))), !c && r.createElement(r.Fragment, null, "You can only change your display name once per ", r.createElement("strong", null, 90, " days"), " ", r.createElement("br", null), "Want more flexibility? Change it every ", 30, " days instead with", " ", r.createElement("img", {
+                        src: at
+                    }))), !i && r.createElement(r.Fragment, null, "You can only change your display name once per ", r.createElement("strong", null, 90, " days"), " ", r.createElement("br", null), "Want more flexibility? Change it every ", 30, " days instead with", " ", r.createElement("img", {
                         alt: "subscriptions",
                         width: "35",
-                        src: tt
+                        src: at
                     }))), l && r.createElement("small", {
                         className: "tw-text-placeholder-text"
                     }, "Last changed: ", n, " days ago."), t && r.createElement("small", {
                         className: "tw-text-placeholder-text"
                     }, "You can revert your last display name change."))))
                 };
-            nt.propTypes = {
-                canRevertDisplayName: Ke().bool.isRequired,
-                numberOfDays: Ke().number.isRequired,
-                showLastDisplayNameChange: Ke().bool.isRequired
+            lt.propTypes = {
+                canRevertDisplayName: Ze().bool.isRequired,
+                numberOfDays: Ze().number.isRequired,
+                showLastDisplayNameChange: Ze().bool.isRequired
             };
-            const rt = nt;
-            var at = n(74758),
-                lt = n(87959),
-                ot = n(55606);
-            var ct = (0, i.A)("p", {
+            const ot = lt;
+            var it = n(74758),
+                ct = n(87959),
+                st = n(55606);
+            var ut = (0, c.A)("p", {
                     target: "ek3joju1"
                 })({
                     name: "dzbp6p",
                     styles: "white-space:pre-wrap;line-height:2"
                 }),
-                it = (0, i.A)("b", {
+                mt = (0, c.A)("b", {
                     target: "ek3joju0"
                 })({
                     name: "lii32t",
                     styles: "font-size:1.2em;color:var(--bs-primary)"
                 }),
-                st = function(e) {
+                dt = function(e) {
                     var t = e.exitRevertCallback,
                         n = e.previousDisplayName,
                         l = (0, p.wA)(),
-                        i = (0, p.d4)(function(e) {
+                        c = (0, p.d4)(function(e) {
                             return e.currentUser.databaseUser.id
                         }),
                         u = (0, r.useState)(""),
-                        d = (0, c.A)(u, 2),
+                        d = (0, i.A)(u, 2),
                         f = d[0],
                         w = d[1],
                         g = (0, r.useState)(""),
-                        v = (0, c.A)(g, 2),
+                        v = (0, i.A)(g, 2),
                         E = v[0],
                         y = v[1],
                         b = (0, r.useState)(!0),
-                        A = (0, c.A)(b, 2),
+                        A = (0, i.A)(b, 2),
                         x = A[0],
                         N = A[1],
                         C = (0, r.useState)(!1),
-                        S = (0, c.A)(C, 2),
+                        S = (0, i.A)(C, 2),
                         T = S[0],
                         O = S[1];
                     (0, r.useEffect)(function() {
@@ -1840,12 +1996,12 @@
                     }, [E, f]);
                     var P = function() {
                         var e = (0, o.A)(m().mark(function e() {
-                            var r, a, o, c;
+                            var r, a, o, i;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, l((0, Ie.m9)({
-                                            userId: i,
+                                        return e.prev = 0, e.next = 3, l((0, Me.m9)({
+                                            userId: c,
                                             displayName: n,
                                             currentPassword: E,
                                             revertDisplayName: !0
@@ -1854,10 +2010,10 @@
                                         t(), e.next = 13;
                                         break;
                                     case 6:
-                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), c = null !== (r = null === (a = e.t0.response) || void 0 === a || null === (a = a.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(c) ? c = "Your previous display name is not available." : /current password incorrect/i.test(c) && (c = "Check your password and try again.")), O(!1), l((0, h.X)({
+                                        e.prev = 6, e.t0 = e.catch(0), console.error(e.t0), i = null !== (r = null === (a = e.t0.response) || void 0 === a || null === (a = a.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Something went wrong", 400 === (null === e.t0 || void 0 === e.t0 || null === (o = e.t0.response) || void 0 === o ? void 0 : o.status) && (/ is not available/i.test(i) ? i = "Your previous display name is not available." : /current password incorrect/i.test(i) && (i = "Check your password and try again.")), O(!1), l((0, h.X)({
                                             title: "Failed to revert display name",
                                             icon: s.zp,
-                                            message: c,
+                                            message: i,
                                             color: "danger",
                                             timeout: 8e3
                                         }));
@@ -1875,12 +2031,12 @@
                     }();
                     return r.createElement("div", {
                         className: "center-panel"
-                    }, r.createElement(at.A, {
+                    }, r.createElement(it.A, {
                         className: "mb-4",
                         outline: !0
-                    }, r.createElement(lt.A, {
+                    }, r.createElement(ct.A, {
                         tag: "h4"
-                    }, "Confirm Display Name Change Revert"), r.createElement(ot.A, null, r.createElement(ct, null, "This will change your display name back to:", r.createElement("br", null), r.createElement(it, null, n), r.createElement("br", null), "And restart the 90-day timer.", r.createElement("br", null), "Type your previous display name into the field below to revert."), r.createElement("input", {
+                    }, "Confirm Display Name Change Revert"), r.createElement(st.A, null, r.createElement(ut, null, "This will change your display name back to:", r.createElement("br", null), r.createElement(mt, null, n), r.createElement("br", null), "And restart the 90-day timer.", r.createElement("br", null), "Type your previous display name into the field below to revert."), r.createElement("input", {
                         "aria-label": "enter revert name",
                         type: "text",
                         className: "form-control mt-2 mb-2",
@@ -1920,15 +2076,15 @@
                         isOpen: T
                     }))
                 };
-            st.propTypes = {
-                exitRevertCallback: Ke().func.isRequired,
-                previousDisplayName: Ke().string
+            dt.propTypes = {
+                exitRevertCallback: Ze().func.isRequired,
+                previousDisplayName: Ze().string
             };
-            const ut = st;
-            const mt = function() {
+            const pt = dt;
+            const ft = function() {
                 var e, t, n = (0, p.wA)(),
-                    i = (0, f.Mo)(),
-                    s = (0, c.A)(i, 2),
+                    c = (0, f.Mo)(),
+                    s = (0, i.A)(c, 2),
                     u = s[0],
                     d = s[1],
                     h = d.isLoading,
@@ -1937,69 +2093,69 @@
                     v = d.isSuccess,
                     E = (0, S.w_)().data,
                     y = void 0 === E ? [] : E,
-                    x = (0, p.d4)(je),
-                    N = (0, p.d4)(Ve),
-                    C = (0, p.d4)(ze),
-                    T = (0, p.d4)(_e),
-                    O = (0, p.d4)(Ye),
-                    P = (0, p.d4)(Be.B),
-                    D = (0, p.d4)(We),
-                    F = (0, p.d4)($e),
+                    x = (0, p.d4)(_e),
+                    N = (0, p.d4)(Ge),
+                    C = (0, p.d4)(Le),
+                    T = (0, p.d4)($e),
+                    O = (0, p.d4)(Qe),
+                    P = (0, p.d4)(Ke.B),
+                    D = (0, p.d4)(Ye),
+                    F = (0, p.d4)(Be),
                     R = (0, p.d4)(function(e) {
                         return e.currentUser.databaseUser
                     }),
                     I = (0, r.useState)(!0),
-                    M = (0, c.A)(I, 2),
-                    z = M[0],
-                    U = M[1],
+                    U = (0, i.A)(I, 2),
+                    z = U[0],
+                    M = U[1],
                     j = (0, r.useState)(null),
-                    L = (0, c.A)(j, 2),
+                    L = (0, i.A)(j, 2),
                     V = L[0],
-                    q = L[1],
-                    _ = (0, r.useState)(""),
-                    G = (0, c.A)(_, 2),
+                    _ = L[1],
+                    q = (0, r.useState)(""),
+                    G = (0, i.A)(q, 2),
                     W = G[0],
                     $ = G[1],
-                    Y = (0, r.useState)(""),
-                    B = (0, c.A)(Y, 2),
-                    X = B[0],
-                    Q = B[1],
-                    H = (0, r.useState)(null),
-                    J = (0, c.A)(H, 2),
-                    Z = J[0],
-                    ee = J[1],
+                    X = (0, r.useState)(""),
+                    Y = (0, i.A)(X, 2),
+                    B = Y[0],
+                    Q = Y[1],
+                    K = (0, r.useState)(null),
+                    H = (0, i.A)(K, 2),
+                    J = H[0],
+                    ee = H[1],
                     te = (0, r.useState)(""),
-                    ne = (0, c.A)(te, 2),
+                    ne = (0, i.A)(te, 2),
                     re = ne[0],
                     ae = ne[1],
                     le = (0, r.useState)(!1),
-                    oe = (0, c.A)(le, 2),
-                    ce = oe[0],
-                    ie = oe[1],
+                    oe = (0, i.A)(le, 2),
+                    ie = oe[0],
+                    ce = oe[1],
                     se = (0, r.useState)(!1),
-                    ue = (0, c.A)(se, 2),
+                    ue = (0, i.A)(se, 2),
                     me = ue[0],
                     de = ue[1],
                     pe = y.includes("permission-reduced-name-change-cooldown"),
                     fe = (0, l.d7)(re),
                     he = x && N && "" !== fe;
                 if ((0, r.useEffect)(function() {
-                        if (P) U(!0);
+                        if (P) M(!0);
                         else {
                             var e = pe ? 30 : 90;
-                            T && Pe()().diff(D, "days") < e ? U(!1) : U(!0)
+                            T && Re()().diff(D, "days") < e ? M(!1) : M(!0)
                         }
                     }, [D, pe, P, T]), (0, r.useEffect)(function() {
-                        "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), $(""), n((0, Ie.pT)({
+                        "" !== fe ? fe.length < 4 ? ee("That name is too short.") : fe.length > 15 ? ee("That name is too long.") : (ee(null), $(""), n((0, Me.pT)({
                             displayName: fe,
                             userId: R.id
                         }))) : ee(null)
                     }, [fe, n, R.id]), (0, r.useEffect)(function() {
-                        return "" === W ? (ie(!1), void q(null)) : W !== re ? (ie(!1), void q("Names don't match")) : (ie(!0), void q(null))
-                    }, [W, re]), w) return r.createElement(et, {
+                        return "" === W ? (ce(!1), void _(null)) : W !== re ? (ce(!1), void _("Names don't match")) : (ce(!0), void _(null))
+                    }, [W, re]), w) return r.createElement(rt, {
                     displayNameError: null !== (e = null === (t = g.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "Something went wrong"
                 });
-                if (me) return r.createElement(ut, {
+                if (me) return r.createElement(pt, {
                     previousDisplayName: F,
                     exitRevertCallback: function() {
                         return de(!1)
@@ -2011,7 +2167,7 @@
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
                                         return e.prev = 0, e.next = 3, n(u({
-                                            password: X,
+                                            password: B,
                                             displayName: re,
                                             revertDisplayName: !1,
                                             userId: R.id
@@ -2034,15 +2190,15 @@
                         }
                     }(),
                     ge = !z && !O;
-                return r.createElement(Re.A, {
+                return r.createElement(ze.A, {
                     loading: h
                 }, r.createElement("div", {
                     className: "center-panel"
-                }, r.createElement(De.A, null, r.createElement(rt, {
+                }, r.createElement(Ie.A, null, r.createElement(ot, {
                     canRevertDisplayName: ge,
                     cooldownPermission: pe,
                     showLastDisplayNameChange: !z,
-                    numberOfDays: Pe()().diff(D, "days")
+                    numberOfDays: Re()().diff(D, "days")
                 }), r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "1",
                     style: {
@@ -2050,7 +2206,7 @@
                     },
                     className: "mx-0"
                 }, r.createElement(a.M2, {
-                    icon: Te.UK,
+                    icon: De.UK,
                     size: "2x"
                 })), r.createElement(A.A, {
                     xs: "10"
@@ -2069,7 +2225,7 @@
                     placeholder: R.displayName,
                     type: "text",
                     value: re
-                }), r.createElement(Je, {
+                }), r.createElement(tt, {
                     canChangeDisplayName: z,
                     displayName: R.displayName,
                     displayNameAvailable: x,
@@ -2077,7 +2233,7 @@
                     isRevert: !1,
                     latestChangedDate: D,
                     displayNameChecking: C,
-                    validationError: Z,
+                    validationError: J,
                     displayNameChanged: v
                 }))), r.createElement(A.A, {
                     xs: "1",
@@ -2086,10 +2242,10 @@
                     },
                     className: "mx-0 px-0"
                 }, C && r.createElement(a.M2, {
-                    icon: Se.z1,
+                    icon: Pe.z1,
                     spin: !0,
                     size: "2x"
-                }), "" !== re && !C && r.createElement(Fe.A, {
+                }), "" !== re && !C && r.createElement(Ue.A, {
                     "aria-label": x && N ? "Name is available" : "Name is unavailable",
                     ok: x && N
                 }))), he && !v && r.createElement(b.A, null, r.createElement(A.A, {
@@ -2112,21 +2268,21 @@
                     placeholder: "Please confirm display name",
                     type: "text",
                     value: W
-                }), null !== V && r.createElement(K.A, {
+                }), null !== V && r.createElement(Z.A, {
                     color: "warning",
                     "aria-label": "confirm name warning"
                 }, r.createElement(a.M2, {
-                    icon: Ce.$f
+                    icon: Oe.$f
                 }), " ".concat(V)))), r.createElement(A.A, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, "" !== W && r.createElement(Fe.A, {
+                }, "" !== W && r.createElement(Ue.A, {
                     "aria-label": null !== V ? V : "Confirmation name matches",
                     ok: null === V
-                }))), ce && !v && r.createElement(b.A, {
+                }))), ie && !v && r.createElement(b.A, {
                     className: "mt-2"
                 }, r.createElement(A.A, {
                     xs: "1",
@@ -2135,7 +2291,7 @@
                     },
                     className: "mx-0"
                 }, r.createElement(a.M2, {
-                    icon: Ne.bM,
+                    icon: Te.bM,
                     size: "2x"
                 })), r.createElement(A.A, {
                     xs: "10"
@@ -2151,7 +2307,7 @@
                     },
                     placeholder: "Please confirm current password",
                     type: "password",
-                    value: X
+                    value: B
                 })))), r.createElement(b.A, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, ge && r.createElement(A.A, {
@@ -2168,7 +2324,7 @@
                 }, "Revert Display Name Change")), r.createElement(A.A, {
                     xs: "6"
                 }, r.createElement(k.A, {
-                    disabled: !z || !0 === C || null !== V || "" === W || "" === X || null !== Z || "" === re,
+                    disabled: !z || !0 === C || null !== V || "" === W || "" === B || null !== J || "" === re,
                     color: "primary",
                     block: !0,
                     id: "name-change-submit",
@@ -2177,38 +2333,38 @@
                     onClick: we
                 }, "Change Display Name"))))))
             };
-            var dt = n(12378),
-                pt = n(28337);
-            const ft = function(e) {
+            var ht = n(12378),
+                wt = n(28337);
+            const gt = function(e) {
                 var t, n, l = e.user,
-                    i = (l || {}).usesGeneratedPassword,
+                    c = (l || {}).usesGeneratedPassword,
                     s = r.useState(""),
-                    u = (0, c.A)(s, 2),
+                    u = (0, i.A)(s, 2),
                     d = u[0],
                     p = u[1],
                     h = r.useState(""),
-                    w = (0, c.A)(h, 2),
+                    w = (0, i.A)(h, 2),
                     g = w[0],
                     v = w[1],
                     E = r.useState(""),
-                    y = (0, c.A)(E, 2),
+                    y = (0, i.A)(E, 2),
                     k = y[0],
                     x = y[1],
                     N = r.useState(!1),
-                    C = (0, c.A)(N, 2),
+                    C = (0, i.A)(N, 2),
                     S = C[0],
                     T = C[1],
                     O = (0, f.SV)(),
-                    P = (0, c.A)(O, 2),
+                    P = (0, i.A)(O, 2),
                     D = P[0],
                     F = P[1],
                     R = F.isLoading,
                     I = F.isSuccess,
-                    M = F.isError,
+                    U = F.isError,
                     z = F.error,
-                    U = function(e) {
+                    M = function(e) {
                         var t = e.newPassword;
-                        return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, pt.v)(t) ? "Please try a more secure password" : null : null
+                        return t && 0 !== t.length ? t.length < 8 ? "That password is too short" : (0, wt.v)(t) ? "Please try a more secure password" : null : null
                     }({
                         newPassword: g
                     }),
@@ -2216,11 +2372,11 @@
                         newPassword: g,
                         confirmationNewPassword: k
                     }).newPassword !== n.confirmationNewPassword ? "Passwords don't match" : null,
-                    L = !U,
+                    L = !M,
                     V = !j && k.length > 0,
-                    q = g.length > 0 && !U,
-                    _ = q && k.length > 0 && !j && !i,
-                    G = !U && !j && g === k && ("" !== d || i),
+                    _ = g.length > 0 && !M,
+                    q = _ && k.length > 0 && !j && !c,
+                    G = !M && !j && g === k && ("" !== d || c),
                     W = function() {
                         var e = (0, o.A)(m().mark(function e(t) {
                             var n;
@@ -2236,7 +2392,7 @@
                                         return e.prev = 3, n = {
                                             userId: l.id,
                                             password: g
-                                        }, i || (n.currentPassword = d), e.next = 8, D(n).unwrap();
+                                        }, c || (n.currentPassword = d), e.next = 8, D(n).unwrap();
                                     case 8:
                                         p(""), v(""), x(""), e.next = 16;
                                         break;
@@ -2257,24 +2413,24 @@
                     $ = function(e) {
                         v(e.target.value)
                     },
-                    Y = function(e) {
+                    X = function(e) {
                         x(e.target.value)
                     },
-                    B = function(e) {
+                    Y = function(e) {
                         p(e.target.value)
                     };
                 return r.useEffect(function() {
                     S || "" === d && "" === g && "" === k || T(!0)
-                }, [d, g, k]), r.createElement(Re.A, {
+                }, [d, g, k]), r.createElement(ze.A, {
                     loading: R
                 }, r.createElement("div", {
                     className: "center-panel"
                 }, r.createElement("form", {
                     onSubmit: W
-                }, M && r.createElement(K.A, {
+                }, U && r.createElement(Z.A, {
                     color: "warning"
                 }, r.createElement(a.M2, {
-                    icon: Ce.$f
+                    icon: Oe.$f
                 }), " An error occurred: ", (null == z || null === (t = z.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) || "Unknown error"), r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "1",
                     style: {
@@ -2282,7 +2438,7 @@
                     },
                     className: "mx-0"
                 }, r.createElement(a.M2, {
-                    icon: dt.DW,
+                    icon: ht.DW,
                     size: "2x"
                 })), r.createElement(A.A, {
                     xs: "10"
@@ -2296,23 +2452,23 @@
                     placeholder: "Please enter new password",
                     onChange: $,
                     onKeyUp: $
-                }), U && r.createElement(K.A, {
+                }), M && r.createElement(Z.A, {
                     color: "warning"
                 }, r.createElement(a.M2, {
-                    icon: Ce.$f
-                }), " ", U), I && r.createElement(K.A, {
+                    icon: Oe.$f
+                }), " ", M), I && r.createElement(Z.A, {
                     color: "success"
                 }, r.createElement(a.M2, {
-                    icon: Ce.$f
+                    icon: Oe.$f
                 }), " Your password has been changed!"))), r.createElement(A.A, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, r.createElement(Fe.A, {
+                }, r.createElement(Ue.A, {
                     ok: S ? L : null
-                }))), q && r.createElement(b.A, null, r.createElement(A.A, {
+                }))), _ && r.createElement(b.A, null, r.createElement(A.A, {
                     xs: {
                         size: 10,
                         offset: 1
@@ -2325,28 +2481,28 @@
                     name: "confirmNewPassword",
                     className: "form-control",
                     placeholder: "Please confirm new password",
-                    onChange: Y,
-                    onKeyUp: Y
-                }), j && r.createElement(K.A, {
+                    onChange: X,
+                    onKeyUp: X
+                }), j && r.createElement(Z.A, {
                     color: "warning"
                 }, r.createElement(a.M2, {
-                    icon: Ce.$f
+                    icon: Oe.$f
                 }), " ", j))), r.createElement(A.A, {
                     xs: "1",
                     style: {
                         textAlign: "left"
                     },
                     className: "mx-0 px-0"
-                }, r.createElement(Fe.A, {
+                }, r.createElement(Ue.A, {
                     ok: V
-                }))), _ && r.createElement(b.A, null, r.createElement(A.A, {
+                }))), q && r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "1",
                     style: {
                         textAlign: "right"
                     },
                     className: "mx-0"
                 }, r.createElement(a.M2, {
-                    icon: Ne.bM,
+                    icon: Te.bM,
                     size: "2x"
                 })), r.createElement(A.A, {
                     xs: "10"
@@ -2358,8 +2514,8 @@
                     name: "passwordPasswordVerify",
                     className: "form-control",
                     placeholder: "Please confirm current password",
-                    onChange: B,
-                    onKeyUp: B
+                    onChange: Y,
+                    onKeyUp: Y
                 })))), r.createElement(b.A, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, r.createElement(A.A, {
@@ -2373,23 +2529,23 @@
                     type: "submit"
                 }, "Change Password"))))))
             };
-            var ht = n(6241),
-                wt = n(48994);
-            const gt = function() {
+            var vt = n(6241),
+                Et = n(48994);
+            const yt = function() {
                 var e, t, n = (0, p.wA)(),
                     l = (0, S.p$)().data,
-                    i = null == l || null === (e = l.presence) || void 0 === e ? void 0 : e.world,
+                    c = null == l || null === (e = l.presence) || void 0 === e ? void 0 : e.world,
                     s = (0, f.ER)({
                         userId: null == l ? void 0 : l.id,
-                        worldId: i
+                        worldId: c
                     }, {
-                        skip: !i
+                        skip: !c
                     }),
                     u = s.isLoading,
                     d = s.isError,
                     w = !(u || d),
                     g = (0, f.Ns)(),
-                    v = (0, c.A)(g, 2),
+                    v = (0, i.A)(g, 2),
                     E = v[0],
                     y = v[1],
                     b = y.isLoading,
@@ -2397,7 +2553,7 @@
                     k = y.error,
                     x = y.reset,
                     N = r.useState(!1),
-                    C = (0, c.A)(N, 2),
+                    C = (0, i.A)(N, 2),
                     T = C[0],
                     O = C[1],
                     P = function() {
@@ -2416,7 +2572,7 @@
                                     case 8:
                                         O(!1), n((0, h.X)({
                                             title: "All User Data Reset",
-                                            icon: wt.XK,
+                                            icon: Et.XK,
                                             message: "Your user data has been reset in all worlds you've visited. Rejoin worlds for changes to take effect.",
                                             color: "success",
                                             timeout: 5e3
@@ -2441,7 +2597,7 @@
                     },
                     danger: !0
                 }, r.createElement(a.M2, {
-                    icon: ht.faUserXmark
+                    icon: vt.faUserXmark
                 }), " Reset All User Data"), r.createElement(a.uo, {
                     headerText: "Reset User Data in All Worlds?",
                     confirmText: "Yes, Reset",
@@ -2458,30 +2614,30 @@
                     className: "my-2"
                 }, (null == k || null === (t = k.data) || void 0 === t ? void 0 : t.error.message) || "An unknown error occurred while resetting your user data.")))
             };
-            var vt = n(48645);
-            var Et = (0, i.A)("div", {
+            var bt = n(48645);
+            var At = (0, c.A)("div", {
                 target: "e1a02i090"
             })({
                 name: "1qck9b",
                 styles: "border-top:1px solid #252a30;padding:8px 5px;&:first-of-type{margin-top:1rem;}&:last-of-type{border-bottom:1px solid #252a30;margin-bottom:1rem;}"
             });
-            const yt = function(e) {
+            const kt = function(e) {
                 var t, n, l = e.user,
                     o = l || {},
-                    i = o.hasSharedConnectionsOptOut,
+                    c = o.hasSharedConnectionsOptOut,
                     s = o.hasDiscordFriendsOptOut,
                     u = (0, r.useState)(null),
-                    m = (0, c.A)(u, 2),
+                    m = (0, i.A)(u, 2),
                     d = m[0],
                     p = m[1],
                     h = (0, f.au)(),
-                    w = (0, c.A)(h, 2),
+                    w = (0, i.A)(h, 2),
                     g = w[0],
                     v = w[1],
                     E = v.isError,
                     y = v.error,
                     x = (0, f.nz)(),
-                    N = (0, c.A)(x, 2),
+                    N = (0, i.A)(x, 2),
                     C = N[0],
                     S = N[1],
                     T = S.isError,
@@ -2505,30 +2661,30 @@
                 }, r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "10",
                     className: "mx-0 mb-2"
-                }, "Manage your cookie settings and consent preferences.")), D ? r.createElement(K.A, {
+                }, "Manage your cookie settings and consent preferences.")), D ? r.createElement(Z.A, {
                     className: "warning"
                 }, r.createElement(a.M2, {
-                    icon: vt.QJ
+                    icon: bt.QJ
                 }), " ", d) : r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "10"
                 }, r.createElement(k.A, {
                     type: "button",
                     color: "primary",
                     onClick: P
-                }, "Change Cookie and Consent Settings"))), r.createElement(Et, {
+                }, "Change Cookie and Consent Settings"))), r.createElement(At, {
                     className: "mt-3"
-                }, r.createElement(J.A, {
+                }, r.createElement(te.A, {
                     label: "Show Mutual Friend and Group Connections",
-                    defaultChecked: !i,
+                    defaultChecked: !c,
                     onChangeCallback: function() {
                         return g({
-                            hasSharedConnectionsOptOut: !i,
+                            hasSharedConnectionsOptOut: !c,
                             userId: l.id
                         })
                     }
-                })), r.createElement(Et, {
+                })), r.createElement(At, {
                     className: "mt-3"
-                }, r.createElement(J.A, {
+                }, r.createElement(te.A, {
                     label: "Show Discord Friend Connections",
                     defaultChecked: !s,
                     onChangeCallback: function() {
@@ -2539,16 +2695,16 @@
                     }
                 })))
             };
-            var bt = n(46078),
-                At = n(88838);
-            const kt = function() {
+            var xt = n(46078),
+                Nt = n(88838);
+            const Ct = function() {
                 var e = (0, p.wA)(),
                     t = (0, l.a$)().user,
                     n = (0, r.useState)(!1),
-                    a = (0, c.A)(n, 2),
-                    i = a[0],
+                    a = (0, i.A)(n, 2),
+                    c = a[0],
                     u = a[1],
-                    d = (0, bt.FJ)({
+                    d = (0, xt.FJ)({
                         userId: null == t ? void 0 : t.id
                     }, {
                         skip: !(null != t && t.id),
@@ -2556,18 +2712,18 @@
                     }),
                     f = d.data,
                     w = d.isLoading,
-                    g = (0, bt.Rl)(),
-                    v = (0, c.A)(g, 1)[0];
+                    g = (0, xt.Rl)(),
+                    v = (0, i.A)(g, 1)[0];
                 (0, r.useEffect)(function() {
                     void 0 !== (null == f ? void 0 : f.accessReduceDecorAnim) && u(f.accessReduceDecorAnim)
                 }, [null == f ? void 0 : f.accessReduceDecorAnim]);
                 var E = function() {
                     var n = (0, o.A)(m().mark(function n(r) {
-                        var a, l, o, c;
+                        var a, l, o, i;
                         return m().wrap(function(n) {
                             for (;;) switch (n.prev = n.next) {
                                 case 0:
-                                    return a = r.checked, l = i, u(a), e((0, At.mA)(a)), n.prev = 4, n.next = 7, v({
+                                    return a = r.checked, l = c, u(a), e((0, Nt.mA)(a)), n.prev = 4, n.next = 7, v({
                                         userId: null == t ? void 0 : t.id,
                                         accessReduceDecorAnim: a
                                     }).unwrap();
@@ -2575,10 +2731,10 @@
                                     n.next = 14;
                                     break;
                                 case 9:
-                                    n.prev = 9, n.t0 = n.catch(4), u(l), e((0, At.mA)(l)), e((0, h.X)({
+                                    n.prev = 9, n.t0 = n.catch(4), u(l), e((0, Nt.mA)(l)), e((0, h.X)({
                                         title: "Failed to update setting",
                                         icon: s.zp,
-                                        message: null !== (o = null === n.t0 || void 0 === n.t0 || null === (c = n.t0.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) && void 0 !== o ? o : "Something went wrong while updating your animation preference."
+                                        message: null !== (o = null === n.t0 || void 0 === n.t0 || null === (i = n.t0.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message) && void 0 !== o ? o : "Something went wrong while updating your animation preference."
                                     }));
                                 case 14:
                                 case "end":
@@ -2602,45 +2758,45 @@
                     className: "center-panel"
                 }, r.createElement("div", {
                     className: "tw-py-2 tw-px-1"
-                }, r.createElement(J.A, {
+                }, r.createElement(te.A, {
                     label: "Enable Reduced Profile Animations",
                     value: "reducedProfileAnimations",
-                    defaultChecked: i,
+                    defaultChecked: c,
                     onChangeCallback: E
                 })))
             };
-            var xt = n(23029),
-                Nt = n(92901),
-                Ct = n(9417),
-                St = n(85501),
-                Tt = n(34441),
-                Ot = n(53954),
-                Pt = n(49107),
-                Dt = n(79162),
-                Ft = n(67256),
-                Rt = n(71783),
-                It = n(60380),
-                Mt = n(12438),
-                zt = n(59399),
-                Ut = n(35169),
-                jt = n(75255),
-                Lt = n(86878),
-                Vt = n(72505),
-                qt = n.n(Vt),
-                _t = function() {
+            var St = n(23029),
+                Tt = n(92901),
+                Ot = n(9417),
+                Pt = n(85501),
+                Dt = n(34441),
+                Ft = n(53954),
+                Rt = n(49107),
+                It = n(79162),
+                Ut = n(67256),
+                zt = n(71783),
+                Mt = n(60380),
+                jt = n(12438),
+                Lt = n(59399),
+                Vt = n(35169),
+                _t = n(75255),
+                qt = n(86878),
+                Gt = n(72505),
+                Wt = n.n(Gt),
+                $t = function() {
                     return {
                         type: "TWOFACTORAUTH_REMOVE",
-                        payload: qt().delete(window.apiUrl("/api/1/auth/twofactorauth"))
+                        payload: Wt().delete(window.apiUrl("/api/1/auth/twofactorauth"))
                     }
                 },
-                Gt = function() {
+                Xt = function() {
                     return {
                         type: "TWOFACTORAUTH_GET_OTP",
-                        payload: qt().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
+                        payload: Wt().get(window.apiUrl("/api/1/auth/user/twofactorauth/otp"))
                     }
                 };
 
-            function Wt(e, t) {
+            function Yt(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
@@ -2651,32 +2807,32 @@
                 return n
             }
 
-            function $t(e) {
-                var t = Yt();
+            function Bt(e) {
+                var t = Qt();
                 return function() {
-                    var n, r = (0, Ot.A)(e);
+                    var n, r = (0, Ft.A)(e);
                     if (t) {
-                        var a = (0, Ot.A)(this).constructor;
+                        var a = (0, Ft.A)(this).constructor;
                         n = Reflect.construct(r, arguments, a)
                     } else n = r.apply(this, arguments);
-                    return (0, Tt.A)(this, n)
+                    return (0, Dt.A)(this, n)
                 }
             }
 
-            function Yt() {
+            function Qt() {
                 try {
                     var e = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}))
                 } catch (e) {}
-                return (Yt = function() {
+                return (Qt = function() {
                     return !!e
                 })()
             }
-            var Bt = "https://docs.vrchat.com/docs/setup-2fa",
-                Xt = function(e) {
+            var Kt = "https://docs.vrchat.com/docs/setup-2fa",
+                Ht = function(e) {
                     return "".concat(e.substr(0, 4), "-").concat(e.substr(4, 8))
                 },
-                Qt = "otpDownload",
-                Kt = {
+                Jt = "otpDownload",
+                Zt = {
                     code: "",
                     isCodeReady: !1,
                     isPreviousSubmissionRelevant: !1,
@@ -2686,13 +2842,13 @@
                     forgetOtpTimeout: null,
                     step: 0
                 },
-                Ht = function(e) {
-                    (0, St.A)(n, e);
-                    var t = $t(n);
+                en = function(e) {
+                    (0, Pt.A)(n, e);
+                    var t = Bt(n);
 
                     function n(e) {
                         var a;
-                        return (0, xt.A)(this, n), a = t.call(this, e), (0, te.A)((0, Ct.A)(a), "getOneTimePasswords", (0, o.A)(m().mark(function e() {
+                        return (0, St.A)(this, n), a = t.call(this, e), (0, ae.A)((0, Ot.A)(a), "getOneTimePasswords", (0, o.A)(m().mark(function e() {
                             var t, n, r;
                             return m().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
@@ -2705,7 +2861,7 @@
                                             })
                                         }, 6e4), a.setState({
                                             forgetOtpTimeout: t
-                                        }), e.prev = 3, e.next = 6, a.props.dispatch(Gt());
+                                        }), e.prev = 3, e.next = 6, a.props.dispatch(Xt());
                                     case 6:
                                         r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
                                             state: {
@@ -2722,13 +2878,13 @@
                             }, e, null, [
                                 [3, 10]
                             ])
-                        }))), (0, te.A)((0, Ct.A)(a), "disable", function() {
+                        }))), (0, ae.A)((0, Ot.A)(a), "disable", function() {
                             var e = (0, o.A)(m().mark(function e(t) {
                                 var n, r;
                                 return m().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return t.preventDefault(), e.prev = 1, e.next = 4, a.props.dispatch(_t());
+                                            return t.preventDefault(), e.prev = 1, e.next = 4, a.props.dispatch($t());
                                         case 4:
                                             r = e.sent, (null === (n = r.value) || void 0 === n || null === (n = n.data) || void 0 === n || null === (n = n.requiresTwoFactorAuth) || void 0 === n ? void 0 : n.length) > 0 && a.props.router.navigate("/home/twofactorauth", {
                                                 state: {
@@ -2752,16 +2908,16 @@
                         }()), a.state = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {};
-                                t % 2 ? Wt(Object(n), !0).forEach(function(t) {
-                                    (0, te.A)(e, t, n[t])
-                                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Wt(Object(n)).forEach(function(t) {
+                                t % 2 ? Yt(Object(n), !0).forEach(function(t) {
+                                    (0, ae.A)(e, t, n[t])
+                                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Yt(Object(n)).forEach(function(t) {
                                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                                 })
                             }
                             return e
-                        }({}, Kt), a.ref = r.createRef(), a.enable = a.enable.bind((0, Ct.A)(a)), a.renderSetup = a.renderSetup.bind((0, Ct.A)(a)), a.renderStatus = a.renderStatus.bind((0, Ct.A)(a)), a.handleChangeVerifyCode = a.handleChangeVerifyCode.bind((0, Ct.A)(a)), a.handleVerifyPendingSecret = a.handleVerifyPendingSecret.bind((0, Ct.A)(a)), a.isSettingUp = a.isSettingUp.bind((0, Ct.A)(a)), a.cancelSecret = a.cancelSecret.bind((0, Ct.A)(a)), a.showTextKey = a.showTextKey.bind((0, Ct.A)(a)), a.goToStep0 = a.goToStep0.bind((0, Ct.A)(a)), a.goToStep1 = a.goToStep1.bind((0, Ct.A)(a)), a.goToStep2 = a.goToStep2.bind((0, Ct.A)(a)), a.toggleOneTimePasswordsShown = a.toggleOneTimePasswordsShown.bind((0, Ct.A)(a)), a.hasOneTimePasswords = a.hasOneTimePasswords.bind((0, Ct.A)(a)), a.getOneTimePasswordHref = a.getOneTimePasswordHref.bind((0, Ct.A)(a)), a.downloadOneTimePasswords = a.downloadOneTimePasswords.bind((0, Ct.A)(a)), a.triggerOtpDownloadLink = a.triggerOtpDownloadLink.bind((0, Ct.A)(a)), a
+                        }({}, Zt), a.ref = r.createRef(), a.enable = a.enable.bind((0, Ot.A)(a)), a.renderSetup = a.renderSetup.bind((0, Ot.A)(a)), a.renderStatus = a.renderStatus.bind((0, Ot.A)(a)), a.handleChangeVerifyCode = a.handleChangeVerifyCode.bind((0, Ot.A)(a)), a.handleVerifyPendingSecret = a.handleVerifyPendingSecret.bind((0, Ot.A)(a)), a.isSettingUp = a.isSettingUp.bind((0, Ot.A)(a)), a.cancelSecret = a.cancelSecret.bind((0, Ot.A)(a)), a.showTextKey = a.showTextKey.bind((0, Ot.A)(a)), a.goToStep0 = a.goToStep0.bind((0, Ot.A)(a)), a.goToStep1 = a.goToStep1.bind((0, Ot.A)(a)), a.goToStep2 = a.goToStep2.bind((0, Ot.A)(a)), a.toggleOneTimePasswordsShown = a.toggleOneTimePasswordsShown.bind((0, Ot.A)(a)), a.hasOneTimePasswords = a.hasOneTimePasswords.bind((0, Ot.A)(a)), a.getOneTimePasswordHref = a.getOneTimePasswordHref.bind((0, Ot.A)(a)), a.downloadOneTimePasswords = a.downloadOneTimePasswords.bind((0, Ot.A)(a)), a.triggerOtpDownloadLink = a.triggerOtpDownloadLink.bind((0, Ot.A)(a)), a
                     }
-                    return (0, Nt.A)(n, [{
+                    return (0, Tt.A)(n, [{
                         key: "componentDidUpdate",
                         value: function() {
                             this.state.isWaitingToDownloadOtp && this.hasOneTimePasswords() && (this.triggerOtpDownloadLink(), this.setState({
@@ -2792,7 +2948,7 @@
                                 code: this.state.code
                             }, n = t.code, {
                                 type: "TWOFACTORAUTH_VERIFY_PENDING_SECRET",
-                                payload: qt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
+                                payload: Wt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending/verify"), {
                                     code: n
                                 })
                             }))), e.preventDefault()
@@ -2805,7 +2961,7 @@
                             return this.hasOneTimePasswords() && (t = "".concat("VRChat Two-Factor Authentication recovery codes\n===============================================\n\nYou can use these to log in, in case you lose access to your authenticator app codes. \n\nYou can only use each recovery code once.\n\nKeep these safe and secure! Printing them out is a very good idea.\n\n").concat(e.otp.filter(function(e) {
                                 return !e.used
                             }).map(function(e) {
-                                return "".concat(Xt(e.code), "\n")
+                                return "".concat(Ht(e.code), "\n")
                             }).join(""))), "data:text/plain;charset=utf-8,".concat(encodeURIComponent(t))
                         }
                     }, {
@@ -2816,17 +2972,17 @@
                     }, {
                         key: "enable",
                         value: function(e) {
-                            e.preventDefault(), this.setState(Kt), this.props.dispatch({
+                            e.preventDefault(), this.setState(Zt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_GET_PENDING_SECRET",
-                                payload: qt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: Wt().post(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
                         key: "cancelSecret",
                         value: function(e) {
-                            e.preventDefault(), this.setState(Kt), this.props.dispatch({
+                            e.preventDefault(), this.setState(Zt), this.props.dispatch({
                                 type: "TWOFACTORAUTH_REMOVE_PENDING_SECRET",
-                                payload: qt().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
+                                payload: Wt().delete(window.apiUrl("/api/1/auth/twofactorauth/totp/pending"))
                             })
                         }
                     }, {
@@ -2882,7 +3038,7 @@
                     }, {
                         key: "triggerOtpDownloadLink",
                         value: function() {
-                            document.getElementById(Qt).click(), this.setState({
+                            document.getElementById(Jt).click(), this.setState({
                                 isWaitingToDownloadOtp: !1
                             })
                         }
@@ -2897,45 +3053,45 @@
                                     if (n) {
                                         var t = e.getOneTimePasswordHref();
                                         return r.createElement("div", null, r.createElement("div", null, r.createElement("p", null, r.createElement(a.M2, {
-                                            icon: Mt.rQ,
+                                            icon: jt.rQ,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
                                             }
                                         }), "You are protecting your account with an additional login step.", " ", r.createElement("a", {
-                                            href: Bt,
+                                            href: Kt,
                                             target: "_blank",
                                             rel: "noreferrer"
-                                        }, "Help")), r.createElement("p", null, r.createElement(jt.A, {
+                                        }, "Help")), r.createElement("p", null, r.createElement(_t.A, {
                                             onClick: e.disable,
                                             color: "primary",
                                             loading: l.isAwaitingRemove
                                         }, "Disable"))), r.createElement("div", null, r.createElement("p", null, r.createElement(a.M2, {
-                                            icon: vt.QJ,
+                                            icon: bt.QJ,
                                             size: "2x",
                                             style: {
                                                 marginRight: "0.25em"
                                             }
-                                        }), "If you ever lose access to your authenticator app, you'll have trouble logging in. But you can use recovery codes instead. Be careful: you can only use each recovery code once!"), r.createElement("p", null, "We", " ", r.createElement("strong", null, r.createElement("em", null, "strongly")), " ", "recommend you download these codes and print them out.")), l.isOtpRejected && r.createElement(K.A, {
+                                        }), "If you ever lose access to your authenticator app, you'll have trouble logging in. But you can use recovery codes instead. Be careful: you can only use each recovery code once!"), r.createElement("p", null, "We", " ", r.createElement("strong", null, r.createElement("em", null, "strongly")), " ", "recommend you download these codes and print them out.")), l.isOtpRejected && r.createElement(Z.A, {
                                             color: "warning"
                                         }, r.createElement(a.M2, {
-                                            icon: vt.QJ
+                                            icon: bt.QJ
                                         }), " Something went wrong downloading recovery codes."), r.createElement("div", null, r.createElement("p", null, r.createElement("span", {
                                             style: {
                                                 marginRight: "0.5em"
                                             }
-                                        }, r.createElement(jt.A, {
+                                        }, r.createElement(_t.A, {
                                             onClick: e.toggleOneTimePasswordsShown,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
-                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), r.createElement("span", null, r.createElement(jt.A, {
+                                        }, e.state.isOneTimePasswordsShown ? "Hide recovery codes" : "Show recovery codes")), r.createElement("span", null, r.createElement(_t.A, {
                                             onClick: e.downloadOneTimePasswords,
                                             color: "secondary",
                                             className: "text-white",
                                             loading: l.isAwaitingOtp
                                         }, "Download recovery codes")), r.createElement("a", {
-                                            id: Qt,
+                                            id: Jt,
                                             href: t,
                                             download: "VRChatRecovery.txt",
                                             style: {
@@ -2944,10 +3100,10 @@
                                         }, "Download recovery link"))))
                                     }
                                     return r.createElement("div", null, r.createElement("p", null, "Enable two-factor authentication to protect your account with an additional login step.", " ", r.createElement("a", {
-                                        href: Bt,
+                                        href: Kt,
                                         target: "_blank",
                                         rel: "noreferrer"
-                                    }, "Learn more")), r.createElement("p", null, r.createElement(jt.A, {
+                                    }, "Learn more")), r.createElement("p", null, r.createElement(_t.A, {
                                         onClick: e.enable,
                                         color: "primary",
                                         loading: l.isAwaitingPendingSecret
@@ -2960,7 +3116,7 @@
                                     style: {
                                         textDecoration: e.used ? "line-through" : "none"
                                     }
-                                }, Xt(e.code)))
+                                }, Ht(e.code)))
                             }))) : null)
                         }
                     }, {
@@ -2969,9 +3125,9 @@
                             var e, t, n = this.props.twoFactorAuth,
                                 l = this.state.isCodeReady && !n.isAwaitingPendingSecretVerification,
                                 o = n.isAwaitingPendingSecret || n.isRemovingPendingSecret,
-                                c = n.isVerificationRejected && this.state.isPreviousSubmissionRelevant,
-                                i = (e = n.pendingSecret, e.match(/.{1,4}/g).join(" ")).toLowerCase();
-                            return r.createElement(Re.A, {
+                                i = n.isVerificationRejected && this.state.isPreviousSubmissionRelevant,
+                                c = (e = n.pendingSecret, e.match(/.{1,4}/g).join(" ")).toLowerCase();
+                            return r.createElement(ze.A, {
                                 loading: o
                             }, r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("h4", null, "Setup")), r.createElement(A.A, {
                                 className: "text-end"
@@ -2980,14 +3136,14 @@
                                     marginRight: "1em"
                                 },
                                 target: "_blank",
-                                href: Bt,
+                                href: Kt,
                                 rel: "noreferrer"
                             }, "Help"), r.createElement(k.A, {
                                 className: "btn",
                                 onClick: this.cancelSecret
                             }, r.createElement(a.M2, {
-                                icon: he.GR
-                            }), " Cancel"))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(Ut.A, {
+                                icon: ve.GR
+                            }), " Cancel"))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(Vt.A, {
                                 hidden: 0 !== this.state.step
                             }, r.createElement(b.A, null, r.createElement(A.A, {
                                 classname: "tw-flex"
@@ -3012,11 +3168,11 @@
                             }, "OTP Auth"), " ", "for iOS.")), r.createElement("div", {
                                 className: "tw-hidden xs:tw-block tw-flex-none tw-w-auto"
                             }, r.createElement(a.M2, {
-                                icon: It.dm,
+                                icon: Mt.dm,
                                 size: "4x",
                                 className: "tw-mr-1"
                             }), r.createElement(a.M2, {
-                                icon: Rt.gg,
+                                icon: zt.gg,
                                 size: "4x"
                             }))))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(A.A, {
                                 className: "text-end"
@@ -3024,14 +3180,14 @@
                                 color: "primary",
                                 onClick: this.goToStep1
                             }, "Next ", r.createElement(a.M2, {
-                                icon: Dt.Xk
-                            }))))), r.createElement(Ut.A, {
+                                icon: It.Xk
+                            }))))), r.createElement(Vt.A, {
                                 hidden: 1 !== this.state.step
                             }, r.createElement(b.A, null, r.createElement(A.A, {
                                 xs: {
                                     size: "7"
                                 }
-                            }, r.createElement("p", null, r.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), r.createElement("p", null, "If you can't scan the code,", " ", r.createElement(Zt, {
+                            }, r.createElement("p", null, r.createElement("b", null, "Step 2"), ": Open the authenticator app and add a new entry. Then scan this barcode."), r.createElement("p", null, "If you can't scan the code,", " ", r.createElement(nn, {
                                 type: "button",
                                 onClick: this.showTextKey
                             }, "enter the key manually"), "."), r.createElement("div", {
@@ -3040,7 +3196,7 @@
                                 id: "textKey",
                                 cols: "30",
                                 rows: "3",
-                                value: i,
+                                value: c,
                                 style: {
                                     overflow: "hidden",
                                     resize: "none",
@@ -3050,14 +3206,14 @@
                                 },
                                 readOnly: !0,
                                 className: "text-monospace"
-                            }), r.createElement(zt.CopyToClipboard, {
-                                text: i
+                            }), r.createElement(Lt.CopyToClipboard, {
+                                text: c
                             }, r.createElement(k.A, {
                                 style: {
                                     verticalAlign: "top"
                                 }
                             }, r.createElement(a.M2, {
-                                icon: Ft.jP
+                                icon: Ut.jP
                             }), " Copy"))))), r.createElement(A.A, {
                                 xs: {
                                     size: "5"
@@ -3066,19 +3222,19 @@
                             }, r.createElement("p", null, r.createElement("img", {
                                 className: "img-fluid",
                                 src: n.pendingSecretQrCodeUrl,
-                                alt: "Two-Factor Authentication Secret: ".concat(i)
+                                alt: "Two-Factor Authentication Secret: ".concat(c)
                             })))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement(k.A, {
                                 onClick: this.goToStep0
                             }, r.createElement(a.M2, {
-                                icon: Pt.Wz
+                                icon: Rt.Wz
                             }), " Previous")), r.createElement(A.A, {
                                 className: "text-end"
                             }, r.createElement(k.A, {
                                 color: "primary",
                                 onClick: this.goToStep2
                             }, "Next ", r.createElement(a.M2, {
-                                icon: Dt.Xk
-                            }))))), r.createElement(Ut.A, {
+                                icon: It.Xk
+                            }))))), r.createElement(Vt.A, {
                                 hidden: 2 !== this.state.step
                             }, r.createElement(b.A, null, r.createElement(A.A, {
                                 xs: {
@@ -3089,10 +3245,10 @@
                                     size: "5"
                                 },
                                 className: "text-end"
-                            }, r.createElement("div", null, c && r.createElement(K.A, {
+                            }, r.createElement("div", null, i && r.createElement(Z.A, {
                                 color: "warning"
                             }, r.createElement(a.M2, {
-                                icon: vt.QJ
+                                icon: bt.QJ
                             }), " That code didn't work."), r.createElement("form", {
                                 onSubmit: this.handleVerifyPendingSecret
                             }, r.createElement("input", {
@@ -3105,14 +3261,14 @@
                                 style: {
                                     marginRight: "0.5em"
                                 }
-                            }), r.createElement(jt.A, {
+                            }), r.createElement(_t.A, {
                                 disabled: !l,
                                 color: "primary",
                                 loading: n.isAwaitingPendingSecretVerification
                             }, "Verify"))))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement(k.A, {
                                 onClick: this.goToStep1
                             }, r.createElement(a.M2, {
-                                icon: Pt.Wz
+                                icon: Rt.Wz
                             }), " Previous"))))))
                         }
                     }, {
@@ -3125,49 +3281,49 @@
                         }
                     }]), n
                 }(r.Component);
-            const Jt = (0, Lt.A)((0, p.Ng)(function(e) {
+            const tn = (0, qt.A)((0, p.Ng)(function(e) {
                 return {
                     twoFactorAuthEnabled: e.currentUser.databaseUser.twoFactorAuthEnabled,
                     twoFactorAuth: e.twoFactorAuth
                 }
-            })(Ht));
-            var Zt = (0, i.A)("button", {
+            })(en));
+            var nn = (0, c.A)("button", {
                 target: "e8g46ds0"
             })({
                 name: "9xa7nk",
                 styles: "background-color:transparent;border:none;color:rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));padding:0;&:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb);text-decoration:underline;}"
             });
-            const en = function() {
+            const rn = function() {
                 var e = (0, l.a$)().user;
                 return r.createElement("div", null, r.createElement(a.Qc, null, "Account Settings"), r.createElement("h2", null, "Account Settings"), r.createElement(a.N3, null, r.createElement("h4", null, "Change Display Name")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(mt, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Change Email")), r.createElement(a.BW, {
+                }, r.createElement(ft, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Change Email")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(xe.A, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Change Password")), r.createElement(a.BW, {
+                }, r.createElement(Se.A, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Change Password")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(ft, {
+                }, r.createElement(gt, {
                     user: e
                 })), r.createElement(a.N3, null, r.createElement("h4", null, "Two-factor authentication")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(Jt, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Account Linking")), r.createElement(a.BW, {
+                }, r.createElement(tn, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Account Linking")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(L, {
+                }, r.createElement(q, {
                     user: e
                 })), r.createElement(a.N3, null, r.createElement("h4", null, "Privacy")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(yt, {
+                }, r.createElement(kt, {
                     user: e
                 })), r.createElement(a.N3, null, r.createElement("h4", null, "Age Verification")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(B, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Copyright")), r.createElement(a.BW, {
+                }, r.createElement(K, null)), r.createElement(a.N3, null, r.createElement("h4", null, "Copyright")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(ke, null)), !(null != e && e.hideContentFilterSettings) && r.createElement(r.Fragment, null, r.createElement(a.N3, null, r.createElement("h4", null, "Content Gating")), r.createElement(a.BW, {
+                }, r.createElement(Ce, null)), !(null != e && e.hideContentFilterSettings) && r.createElement(r.Fragment, null, r.createElement(a.N3, null, r.createElement("h4", null, "Content Gating")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(ee, null))), r.createElement(a.N3, null, r.createElement("h4", null, "Accessibility")), r.createElement(a.BW, {
+                }, r.createElement(re, null))), r.createElement(a.N3, null, r.createElement("h4", null, "Accessibility")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(kt, null)), r.createElement(a.N3, null, r.createElement("h4", null, "User Data")), r.createElement(a.BW, {
+                }, r.createElement(Ct, null)), r.createElement(a.N3, null, r.createElement("h4", null, "User Data")), r.createElement(a.BW, {
                     className: "mb-2"
-                }, r.createElement(gt, null)), r.createElement(a._F, {
+                }, r.createElement(yt, null)), r.createElement(a._F, {
                     className: "mb-2"
                 }, r.createElement(a.N3, null, r.createElement("h4", null, "Danger Zone")), r.createElement(a.BW, null, r.createElement(w, null))))
             }
@@ -3180,8 +3336,8 @@
                 a = n(32110),
                 l = n(96704),
                 o = n(7612),
-                c = n(81617),
-                i = n(69629),
+                i = n(81617),
+                c = n(69629),
                 s = n(6913),
                 u = n(48645),
                 m = n(96540),
@@ -3213,21 +3369,21 @@
                     F = P[1],
                     R = (0, v.d7)(w),
                     I = (0, y.Fx)(),
-                    M = (0, r.A)(I, 2),
-                    z = M[0],
-                    U = M[1],
-                    j = U.isFetching,
-                    L = U.isError,
-                    V = U.isSuccess,
-                    q = U.error,
-                    _ = U.originalArgs,
+                    U = (0, r.A)(I, 2),
+                    z = U[0],
+                    M = U[1],
+                    j = M.isFetching,
+                    L = M.isError,
+                    V = M.isSuccess,
+                    _ = M.error,
+                    q = M.originalArgs,
                     G = (0, y.am)(),
                     W = (0, r.A)(G, 2),
                     $ = W[0],
-                    Y = W[1],
-                    B = Y.isLoading,
-                    X = Y.isError,
-                    Q = Y.error,
+                    X = W[1],
+                    Y = X.isLoading,
+                    B = X.isError,
+                    Q = X.error,
                     K = (0, E.B3)(),
                     H = (0, r.A)(K, 2),
                     J = H[0],
@@ -3244,14 +3400,14 @@
                     }),
                     le = ae.data,
                     oe = ae.isFetching,
-                    ce = ae.isSuccess,
-                    ie = ae.originalArgs,
+                    ie = ae.isSuccess,
+                    ce = ae.originalArgs,
                     se = (null == e ? void 0 : e.emailVerified) && !(null != e && e.hasPendingEmail);
                 (0, m.useEffect)(function() {
                     T(""), F("")
                 }, [w]);
                 var ue = (0, m.useMemo)(function() {
-                        return ce && !1 === le.userExists && g()(R) && "" !== R
+                        return ie && !1 === le.userExists && g()(R) && "" !== R
                     }, [le, R]),
                     me = (0, m.useMemo)(function() {
                         return "" !== S && S === R
@@ -3262,19 +3418,19 @@
                         }, m.createElement(b.M2, {
                             icon: u.QJ
                         }), " That's an invalid email.");
-                        if (null != le && le.userExists && (null == ie ? void 0 : ie.email) === R) return m.createElement(h.A, {
+                        if (null != le && le.userExists && (null == ce ? void 0 : ce.email) === R) return m.createElement(h.A, {
                             color: "warning"
                         }, m.createElement(b.M2, {
                             icon: u.QJ
                         }), " That email is already in use.");
-                        if (X) return m.createElement(h.A, {
+                        if (B) return m.createElement(h.A, {
                             color: "warning"
                         }, m.createElement(b.M2, {
                             icon: u.QJ
                         }), " Failed to change news preference: ", Q, ".");
-                        if (L && (null == _ ? void 0 : _.email) === R) {
+                        if (L && (null == q ? void 0 : q.email) === R) {
                             F("");
-                            var t = q.data.error.message;
+                            var t = _.data.error.message;
                             return m.createElement(h.A, {
                                 color: "warning"
                             }, m.createElement(b.M2, {
@@ -3307,12 +3463,12 @@
                         }, m.createElement(b.M2, {
                             icon: s.iW
                         }), " An email change is pending verification: ", null == e ? void 0 : e.obfuscatedPendingEmail) : null
-                    }, [re, te, L, V, le, ce, S, R, e, X]),
+                    }, [re, te, L, V, le, ie, S, R, e, B]),
                     pe = (0, m.useMemo)(function() {
                         return !se || V ? m.createElement("span", null, m.createElement(b.M2, {
-                            icon: i.is
+                            icon: c.is
                         }), " Resend Verification") : m.createElement("span", null, m.createElement(b.M2, {
-                            icon: c.e6,
+                            icon: i.e6,
                             color: "success"
                         }), " Email Verified")
                     }, [se, V]),
@@ -3438,7 +3594,7 @@
                     },
                     label: "Keep me up to date with the awesome power of your emails",
                     htmlFor: "subscribe",
-                    disabled: B
+                    disabled: Y
                 }))), m.createElement("hr", null), m.createElement(d.A, {
                     className: "align-items-center justify-content-center d-flex mt-2"
                 }, m.createElement(p.A, {
@@ -3473,7 +3629,7 @@
         },
         29281(e, t, n) {
             n.d(t, {
-                AP: () => c,
+                AP: () => i,
                 CV: () => l,
                 J_: () => o,
                 hS: () => a
@@ -3519,12 +3675,12 @@
                 a = r.useGetAgeVerificationInquiryStatusQuery,
                 l = r.useGetAgeVerificationStatusQuery,
                 o = r.useSendGroupInquiryLinkMutation,
-                c = r.useSendInquiryLinkMutation
+                i = r.useSendInquiryLinkMutation
         },
         49843(e, t, n) {
             n.d(t, {
                 Ds: () => s,
-                Ee: () => i,
+                Ee: () => c,
                 QS: () => u,
                 yf: () => m
             });
@@ -3553,7 +3709,7 @@
                 }
                 return e
             }
-            var c = a.m.injectEndpoints({
+            var i = a.m.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getRestrictedContent: e.query({
@@ -3623,10 +3779,10 @@
                         }
                     }
                 }),
-                i = c.useGetRestrictedContentQuery,
-                s = c.useRequestContentRestrictionMutation,
-                u = c.useDisputeContentRestrictionMutation,
-                m = c.useDeleteDisputeMutation
+                c = i.useGetRestrictedContentQuery,
+                s = i.useRequestContentRestrictionMutation,
+                u = i.useDisputeContentRestrictionMutation,
+                m = i.useDeleteDisputeMutation
         },
         28337(e, t, n) {
             n.d(t, {
@@ -3637,6 +3793,60 @@
                     return r.has(e.toLowerCase())
                 }
         },
+        98462(e, t, n) {
+            n.d(t, {
+                Q: () => c
+            });
+            var r = n(10467),
+                a = n(54756),
+                l = n.n(a),
+                o = null,
+                i = function() {
+                    return window.AppleID ? Promise.resolve(window.AppleID) : o || (o = new Promise(function(e, t) {
+                        var n = document.createElement("script");
+                        n.src = "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js", n.onload = function() {
+                            window.AppleID ? e(window.AppleID) : (o = null, t(new Error("Apple Sign In script loaded but AppleID is unavailable")))
+                        }, n.onerror = function() {
+                            o = null, n.remove(), t(new Error("Failed to load Apple Sign In script"))
+                        }, document.head.appendChild(n)
+                    }))
+                },
+                c = function() {
+                    var e = (0, r.A)(l().mark(function e() {
+                        var t, n, r;
+                        return l().wrap(function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    return e.next = 2, i();
+                                case 2:
+                                    return (n = e.sent).auth.init({
+                                        clientId: "com.vrchat.www",
+                                        scope: "name email",
+                                        redirectURI: window.location.origin + window.location.pathname,
+                                        usePopup: !0
+                                    }), e.next = 6, n.auth.signIn();
+                                case 6:
+                                    if (null != (r = e.sent) && null !== (t = r.authorization) && void 0 !== t && t.id_token) {
+                                        e.next = 9;
+                                        break
+                                    }
+                                    throw new Error("Apple Sign In failed: no identity token received");
+                                case 9:
+                                    return e.abrupt("return", {
+                                        identityToken: r.authorization.id_token,
+                                        user: r.user
+                                    });
+                                case 10:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }, e)
+                    }));
+                    return function() {
+                        return e.apply(this, arguments)
+                    }
+                }()
+        },
         58622(e, t, n) {
             n.d(t, {
                 O: () => o
@@ -3646,19 +3856,19 @@
                 l = n.n(a),
                 o = function() {
                     var e = (0, r.A)(l().mark(function e() {
-                        var t, n, r, a, o, c, i, s, u, m, d, p, f, h = arguments;
+                        var t, n, r, a, o, i, c, s, u, m, d, p, f, h = arguments;
                         return l().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, r = void 0 === n ? "/home/login" : n, a = t.version, o = void 0 === a ? 2 : a, c = ["openid", "identify", "email", "sdk.social_layer_presence"], i = window.location.origin + window.location.pathname, s = i.split("/home/"), i = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
-                                        redirectUri: i,
+                                    n = (t = h.length > 0 && void 0 !== h[0] ? h[0] : {}).redirectTo, r = void 0 === n ? "/home/login" : n, a = t.version, o = void 0 === a ? 2 : a, i = ["openid", "identify", "email", "sdk.social_layer_presence"], c = window.location.origin + window.location.pathname, s = c.split("/home/"), c = "".concat(s[0], "/home/discord/auth").concat(2 === o ? "/v2" : ""), u = {
+                                        redirectUri: c,
                                         isMobileRequest: !1,
                                         redirectTo: r
                                     }, m = JSON.stringify(u), d = btoa(m), p = new URLSearchParams({
                                         client_id: "1366854478250381462",
                                         redirect_uri: u.redirectUri,
                                         response_type: "code",
-                                        scope: c.join(" "),
+                                        scope: i.join(" "),
                                         state: d
                                     }), f = "https://discord.com/oauth2/authorize?".concat(p.toString()), window.location.href = f;
                                 case 12:
@@ -3674,14 +3884,14 @@
         },
         22479(e, t, n) {
             n.d(t, {
-                B: () => i
+                B: () => c
             });
             var r = n(10467),
                 a = n(54756),
                 l = n.n(a),
                 o = n(66948),
-                c = ["openid", "email", "profile"],
-                i = function() {
+                i = ["openid", "email", "profile"],
+                c = function() {
                     var e = (0, r.A)(l().mark(function e() {
                         var t, n;
                         return l().wrap(function(e) {
@@ -3691,7 +3901,7 @@
                                         client_id: "827942544393-r2ouvckvouldn9dg9uruseje575e878f.apps.googleusercontent.com",
                                         redirect_uri: window.location.origin + window.location.pathname,
                                         response_type: "id_token",
-                                        scope: c.join(" "),
+                                        scope: i.join(" "),
                                         nonce: (0, o.A)()
                                     }), n = "https://accounts.google.com/o/oauth2/v2/auth?".concat(t.toString()), window.location.href = n;
                                 case 3:
@@ -3722,4 +3932,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fba0b917b729150e01749cbb6926fedb74a7fec320a6a8de2c6448c7384abc20.js.map
+//# sourceMappingURL=da06baca96d1ced69236112ab961ade5ef1fac227b5b4e15b8a456207013e0fe.js.map
