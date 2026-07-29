@@ -3991,7 +3991,8 @@
                     return a ? C.createElement(ie.A, null) : o || !l ? C.createElement("div", {
                         className: "tw-p-3 tw-bg-grey tw-rounded-lg tw-text-light-grey tw-py-10"
                     }, "Failed to load user") : C.createElement(rn.A, (0, tn.A)({
-                        userData: l
+                        userData: l,
+                        disableLink: !0
                     }, n))
                 },
                 Tn = [{
@@ -4144,7 +4145,7 @@
                                 className: "tw-border-none tw-bg-transparent tw-rounded-2xl tw-p-0",
                                 key: e.id,
                                 type: "button",
-                                onClick: function() {
+                                onClick: function(n) {
                                     null != e && e.id && fe(e, l, t)
                                 },
                                 disabled: !be({
@@ -7572,4 +7573,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f1b495b729e634efe25aec2ef4756a1adfe49ca720adc690a958948848740dec.js.map
+//# sourceMappingURL=b3716025ab7eb5cecdd5334e24062bb1d92802f40f5a8e96602cdb1f793b159a.js.map
