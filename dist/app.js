@@ -1,4 +1,4 @@
-/*! For license information please see 2026-07-28t22-59-42-the-elixir-of-kyle--main-prod-public-bab01cf9-c145-40ca-aad4-999026eb767f--app.js.LICENSE.txt */
+/*! For license information please see 2026-07-29t21-43-12-the-ape-of-angela--main-prod-public-519a9c5e-bdfa-4e72-b168-d4aa6ccd1f8b--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-28t22-59-42-the-elixir-of-kyle", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-29t21-43-12-the-ape-of-angela", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -59914,41 +59914,42 @@
             71957(e, t, n) {
                 "use strict";
                 n.d(t, {
-                    $V: () => D,
-                    Ay: () => F,
-                    ER: () => N,
-                    Eh: () => T,
-                    FP: () => k,
-                    Fx: () => m,
-                    G6: () => w,
-                    H7: () => I,
-                    IY: () => P,
-                    Ki: () => v,
-                    Mo: () => f,
-                    Ns: () => L,
-                    QP: () => E,
-                    SV: () => h,
-                    TP: () => y,
-                    am: () => x,
-                    au: () => A,
-                    do: () => O,
-                    dq: () => S,
-                    lM: () => B,
-                    m8: () => C,
-                    nz: () => g,
-                    oO: () => R,
-                    vf: () => b,
-                    xA: () => _
+                    $V: () => E,
+                    Ay: () => M,
+                    ER: () => P,
+                    Eh: () => N,
+                    FP: () => _,
+                    Fx: () => h,
+                    G6: () => x,
+                    H7: () => k,
+                    IY: () => L,
+                    Ki: () => b,
+                    Mo: () => m,
+                    Ns: () => R,
+                    QP: () => I,
+                    SV: () => A,
+                    TP: () => C,
+                    am: () => D,
+                    au: () => g,
+                    do: () => T,
+                    dq: () => O,
+                    lM: () => v,
+                    m8: () => w,
+                    nz: () => B,
+                    oO: () => F,
+                    vf: () => y,
+                    xA: () => S
                 });
                 var r = n(10467),
                     o = n(64467),
                     a = n(54756),
                     i = n.n(a),
-                    s = n(91069),
-                    l = n(74303),
-                    c = n(13951);
+                    s = n(40223),
+                    l = n(91069),
+                    c = n(74303),
+                    u = n(13951);
 
-                function u(e, t) {
+                function d(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
@@ -59959,18 +59960,18 @@
                     return n
                 }
 
-                function d(e) {
+                function p(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {};
-                        t % 2 ? u(Object(n), !0).forEach(function(t) {
+                        t % 2 ? d(Object(n), !0).forEach(function(t) {
                             (0, o.A)(e, t, n[t])
-                        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : u(Object(n)).forEach(function(t) {
+                        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : d(Object(n)).forEach(function(t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                         })
                     }
                     return e
                 }
-                var p = n(89483).m.injectEndpoints({
+                var f = n(89483).m.injectEndpoints({
                         endpoints: function(e) {
                             return {
                                 getUser: e.query({
@@ -59979,7 +59980,7 @@
                                     },
                                     transformResponse: function(e) {
                                         var t;
-                                        return d(d({}, null != e ? e : {}), {}, {
+                                        return p(p({}, null != e ? e : {}), {}, {
                                             tagsSet: new Set(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : [])
                                         })
                                     },
@@ -59999,7 +60000,7 @@
                                             a = void 0 !== o && o;
                                         return {
                                             url: "users",
-                                            params: d(d({}, (0, s.Hx)({
+                                            params: p(p({}, (0, l.Hx)({
                                                 n,
                                                 pageValue: r
                                             })), {}, {
@@ -60013,7 +60014,7 @@
                                         return {
                                             results: null == e ? void 0 : e.map(function(e) {
                                                 var t;
-                                                return d(d({}, e), {}, {
+                                                return p(p({}, e), {}, {
                                                     tagsSet: new Set(null !== (t = e.tags) && void 0 !== t ? t : [])
                                                 })
                                             }),
@@ -60024,21 +60025,21 @@
                                 getUserInstance: e.query({
                                     queryFn: function(e, t, n, o) {
                                         return (0, r.A)(i().mark(function t() {
-                                            var n, r, a, c, u, d, p, f, m, h, A, g, B, v, b, y, C;
+                                            var n, r, a, s, u, d, p, f, m, h, A, g, B, v, b, y, C;
                                             return i().wrap(function(t) {
                                                 for (;;) switch (t.prev = t.next) {
                                                     case 0:
                                                         return a = e.userId, t.next = 3, o("users/".concat(a));
                                                     case 3:
-                                                        if (!(c = t.sent).error) {
+                                                        if (!(s = t.sent).error) {
                                                             t.next = 6;
                                                             break
                                                         }
                                                         return t.abrupt("return", {
-                                                            error: c.error
+                                                            error: s.error
                                                         });
                                                     case 6:
-                                                        if (u = c.data.location, null !== (d = void 0 === u ? null : u) && "" !== d && "offline" !== d) {
+                                                        if (u = s.data.location, null !== (d = void 0 === u ? null : u) && "" !== d && "offline" !== d) {
                                                             t.next = 10;
                                                             break
                                                         }
@@ -60055,7 +60056,7 @@
                                                         }
                                                         return t.abrupt("return", {
                                                             data: {
-                                                                userData: c.data,
+                                                                userData: s.data,
                                                                 location: d
                                                             }
                                                         });
@@ -60089,11 +60090,11 @@
                                                                 worldData: h,
                                                                 latestVersionFileData: C,
                                                                 fileSizeInMegaBytes: null != C && C.file ? (C.file.sizeInBytes / Math.pow(1024, 2)).toFixed(2) : "Unknown",
-                                                                userData: c.data,
+                                                                userData: s.data,
                                                                 location: d,
                                                                 instanceId: null !== (n = null == d || null === (r = d.split(":")) || void 0 === r ? void 0 : r[1]) && void 0 !== n ? n : "",
-                                                                instanceType: (0, s.e2)(f),
-                                                                region: (0, l.C6)(f)
+                                                                instanceType: (0, l.e2)(f),
+                                                                region: (0, c.C6)(f)
                                                             }
                                                         });
                                                     case 32:
@@ -60151,7 +60152,7 @@
                                         var n = e.tosVersion,
                                             r = t.dispatch,
                                             o = t.queryFulfilled,
-                                            a = r(c.ZS.updateQueryData("getCurrentUser", void 0, function(e) {
+                                            a = r(u.ZS.updateQueryData("getCurrentUser", void 0, function(e) {
                                                 e.acceptedTOSVersion = n
                                             }));
                                         o.catch(a.undo)
@@ -60200,7 +60201,7 @@
                                         var t = e.userId,
                                             n = e.url;
                                         return {
-                                            url: "users/".concat(t),
+                                            url: "profile/".concat(t),
                                             method: "PUT",
                                             body: {
                                                 userIcon: n
@@ -60360,11 +60361,11 @@
                                 }),
                                 updateUser: e.mutation({
                                     queryFn: (t = (0, r.A)(i().mark(function e(t, n, r, o) {
-                                        var a, s, l, c, u, p, f, m, h;
+                                        var a, s, l, c, u, d, f, m, h;
                                         return i().wrap(function(e) {
                                             for (;;) switch (e.prev = e.next) {
                                                 case 0:
-                                                    if (a = t.userId, s = t.data, l = t.tagsToRemove, c = void 0 === l ? [] : l, u = t.tagsToAdd, p = void 0 === u ? [] : u, !(c.length > 0)) {
+                                                    if (a = t.userId, s = t.data, l = t.tagsToRemove, c = void 0 === l ? [] : l, u = t.tagsToAdd, d = void 0 === u ? [] : u, !(c.length > 0)) {
                                                         e.next = 7;
                                                         break
                                                     }
@@ -60384,7 +60385,7 @@
                                                         error: f.error
                                                     });
                                                 case 7:
-                                                    if (!(p.length > 0)) {
+                                                    if (!(d.length > 0)) {
                                                         e.next = 13;
                                                         break
                                                     }
@@ -60392,7 +60393,7 @@
                                                         url: "users/".concat(a, "/addTags"),
                                                         method: "POST",
                                                         body: {
-                                                            tags: p
+                                                            tags: d
                                                         }
                                                     });
                                                 case 10:
@@ -60407,7 +60408,7 @@
                                                     return e.next = 15, o({
                                                         url: "users/".concat(a),
                                                         method: "PUT",
-                                                        body: d({}, s)
+                                                        body: p({}, s)
                                                     });
                                                 case 15:
                                                     if (!(h = e.sent).error) {
@@ -60463,7 +60464,7 @@
                                         return {
                                             url: "users/".concat(t),
                                             method: "PUT",
-                                            body: d({
+                                            body: p({
                                                 currentPassword: r
                                             }, o ? {
                                                 revertDisplayName: o
@@ -60549,6 +60550,14 @@
                                             method: "GET"
                                         }
                                     },
+                                    transformResponse: function(e, t, n) {
+                                        return "friends" !== n.type ? e : null == e ? void 0 : e.map(function(e) {
+                                            var t;
+                                            return p(p({}, e), {}, {
+                                                bannerColor: null !== (t = (0, l.Vt)(e.bannerColor)) && void 0 !== t ? t : s.vf
+                                            })
+                                        })
+                                    },
                                     providesTags: function(e, t, n) {
                                         return [{
                                             type: "SharedConnections",
@@ -60563,31 +60572,31 @@
                     }).enhanceEndpoints({
                         addTagTypes: ["CurrentAvatar", "User", "GroupActiveInstances", "PlayerPersistenceExists", "SharedConnections"]
                     }),
-                    f = p.useChangeDisplayNameMutation,
-                    m = p.useChangeEmailMutation,
-                    h = p.useChangePasswordMutation,
-                    A = p.useChangeSharedConnectionsOptMutation,
-                    g = p.useChangeDiscordFriendsOptMutation,
-                    B = p.useCheckEmailExistQuery,
-                    v = p.useGetCurrentAvatarForUserQuery,
-                    b = p.useGetUserQuery,
-                    y = (p.useLazyGetUserQuery, p.useMarkForDeletionMutation),
-                    C = p.useSearchUsersQuery,
-                    w = p.useSetAcceptedTOSVersionMutation,
-                    x = p.useSubscribeEmailNewsMutation,
-                    D = (p.useSwitchUserToAvatarMutation, p.useGetUserInstanceQuery, p.useChangeUserIconMutation),
-                    E = p.useChangeProfileBannerMutation,
-                    I = p.useUpdateUserMutation,
-                    k = p.useChangeContentFiltersMutation,
-                    _ = p.useAddTagsMutation,
-                    S = p.useDeleteTagsMutation,
-                    O = p.useUpdateUserNoteMutation,
-                    T = p.useGetUserGroupActiveInstancesQuery,
-                    N = p.useHasPlayerPersistenceQuery,
-                    P = p.useDeletePlayerPersistenceMutation,
-                    L = p.useResetAllPlayerPersistenceMutation,
-                    R = p.useGetSharedConnectionsQuery;
-                const F = p
+                    m = f.useChangeDisplayNameMutation,
+                    h = f.useChangeEmailMutation,
+                    A = f.useChangePasswordMutation,
+                    g = f.useChangeSharedConnectionsOptMutation,
+                    B = f.useChangeDiscordFriendsOptMutation,
+                    v = f.useCheckEmailExistQuery,
+                    b = f.useGetCurrentAvatarForUserQuery,
+                    y = f.useGetUserQuery,
+                    C = (f.useLazyGetUserQuery, f.useMarkForDeletionMutation),
+                    w = f.useSearchUsersQuery,
+                    x = f.useSetAcceptedTOSVersionMutation,
+                    D = f.useSubscribeEmailNewsMutation,
+                    E = (f.useSwitchUserToAvatarMutation, f.useGetUserInstanceQuery, f.useChangeUserIconMutation),
+                    I = f.useChangeProfileBannerMutation,
+                    k = f.useUpdateUserMutation,
+                    _ = f.useChangeContentFiltersMutation,
+                    S = f.useAddTagsMutation,
+                    O = f.useDeleteTagsMutation,
+                    T = f.useUpdateUserNoteMutation,
+                    N = f.useGetUserGroupActiveInstancesQuery,
+                    P = f.useHasPlayerPersistenceQuery,
+                    L = f.useDeletePlayerPersistenceMutation,
+                    R = f.useResetAllPlayerPersistenceMutation,
+                    F = f.useGetSharedConnectionsQuery;
+                const M = f
             },
             89483(e, t, n) {
                 "use strict";
@@ -115059,7 +115068,7 @@
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "47a097e70b3a46f4e93ef9a3e7a8faddd65fa306a0f2c815c1173ee15d4605d1",
+        6578: "0452503e68ef9a7ed94b170016a884841846e31c84325f3d45aa8a1a2e2d1e5c",
         6585: "3666a5c369addd7c631234a2125513abc38b6dcf34cf5e8c5117151fca530c7e",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
@@ -115102,7 +115111,7 @@
         9488: "67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec",
         9697: "549e8ce074ef5b1f3baaeefeb4d997515215b406bf1f17ec089a10bdf25f50a8",
         9772: "73b2d2aea9ceb96a4fbee13256c34bf3766e634175dbcb70b9cebfe64e637fed",
-        9809: "c342cafbb8019b89a12aa5642fbd6626c8d55688b53ad269881a78a150255db0",
+        9809: "22922d51329b77a37694894c2f15a20bf8527ea01a45a96167f0891988a166f9",
         9876: "7618fadf8a6147b0f1aad9bfc799471204964cad893a29ffb4b13e124aca55a7",
         9915: "2c087442cc796ca8bc6aebce8222f0e88fde105d831e6176109d3bfd7912c302"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
@@ -115186,9 +115195,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-07-28t22-59-42-the-elixir-of-kyle"
+        id: "2026-07-29t21-43-12-the-ape-of-angela"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-07-28t22-59-42-the-elixir-of-kyle"
+        id: "2026-07-29t21-43-12-the-ape-of-angela"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116941,7 +116950,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-07-28t22-59-42-the-elixir-of-kyle",
+                release: "2026-07-29t21-43-12-the-ape-of-angela",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

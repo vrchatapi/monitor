@@ -2526,7 +2526,7 @@
                         Ie = ke.isNeverHadVrcPlusUser,
                         _e = function(e) {
                             var t;
-                            return !(Ce || null != e && null !== (t = e.name) && void 0 !== t && t.endsWith("camera_user_icon"))
+                            return !Ce && !(null !== (t = null == e ? void 0 : e.tags) && void 0 !== t ? t : []).includes("cameraIcon")
                         },
                         Te = "" !== K,
                         Se = (0, Ut.OC)(),
@@ -2585,10 +2585,12 @@
                         tt = et[0],
                         rt = et[1].isLoading,
                         nt = (0, m.ik)(),
-                        at = (0, l.A)(nt, 1)[0],
-                        lt = (0, p.H7)(),
-                        ot = (0, l.A)(lt, 1)[0],
-                        ct = {
+                        at = (0, l.A)(nt, 2),
+                        lt = at[0],
+                        ot = at[1].isLoading,
+                        ct = (0, p.H7)(),
+                        it = (0, l.A)(ct, 1)[0],
+                        st = {
                             profileIcon: {
                                 modalTitle: "Add your icon",
                                 modalSubTitle: "Must be less than 10MB and larger than 64x64 pixels. Images larger than 2048x2048 pixels will be resized automatically.",
@@ -2616,10 +2618,10 @@
                                 isRounded: !1
                             }
                         },
-                        it = (0, o.useMemo)(function() {
-                            return 1 === ct[b].aspectRatio
+                        wt = (0, o.useMemo)(function() {
+                            return 1 === st[b].aspectRatio
                         }, [b]),
-                        st = function(e) {
+                        ut = function(e) {
                             var t = e.mediaWidth,
                                 r = e.mediaHeight,
                                 n = e.aspect;
@@ -2628,7 +2630,7 @@
                                 width: 90
                             }, n, t, r), t, r)
                         },
-                        wt = function() {
+                        dt = function() {
                             var e = (0, E.A)(P().mark(function e(t) {
                                 var r, n, a;
                                 return P().wrap(function(e) {
@@ -2676,23 +2678,23 @@
                             if (null !== R) {
                                 var e = R.width,
                                     t = R.height;
-                                S(st({
+                                S(ut({
                                     mediaWidth: e,
                                     mediaHeight: t,
                                     maxHeight: zt,
                                     maxWidth: zt,
-                                    aspect: ct[b].aspectRatio
+                                    aspect: st[b].aspectRatio
                                 }))
                             }
                         }()
                     }, [R]);
-                    var ut = function() {
+                    var mt = function() {
                             var e = (0, E.A)(P().mark(function e() {
                                 var t, r, n, a, l;
                                 return P().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            if (it) {
+                                            if (wt) {
                                                 e.next = 2;
                                                 break
                                             }
@@ -2711,7 +2713,7 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        dt = function(e) {
+                        pt = function(e) {
                             var t = e.width,
                                 r = e.height;
                             if (t <= zt && r <= zt) return e;
@@ -2721,13 +2723,13 @@
                             var l = a.getContext("2d");
                             return l.imageSmoothingQuality = "high", l.drawImage(e, 0, 0, a.width, a.height), a
                         },
-                        mt = function() {
+                        ft = function() {
                             var e = (0, E.A)(P().mark(function e(t, r) {
                                 var n, l;
                                 return P().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, e.next = 3, at({
+                                            return e.prev = 0, e.next = 3, lt({
                                                 userId: a,
                                                 updates: {
                                                     bannerType: i.x9.COLOR,
@@ -2739,7 +2741,7 @@
                                                 e.next = 6;
                                                 break
                                             }
-                                            return e.next = 6, ot({
+                                            return e.next = 6, it({
                                                 userId: a,
                                                 data: {
                                                     profilePicOverride: ""
@@ -2747,18 +2749,18 @@
                                             }).unwrap();
                                         case 6:
                                             A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: Ct.jb,
-                                                message: ct[b].successMessage,
+                                                message: st[b].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
                                             })), d(), e.next = 14;
                                             break;
                                         case 10:
                                             e.prev = 10, e.t0 = e.catch(0), console.error("error uploading icon:", e.t0), A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: ge.zp,
-                                                message: null !== (n = null == Fe || null === (l = Fe.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== n ? n : ct[b].failedMessage,
+                                                message: null !== (n = null == Fe || null === (l = Fe.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== n ? n : st[b].failedMessage,
                                                 color: "danger",
                                                 timeout: 5e3
                                             }));
@@ -2774,13 +2776,13 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        pt = function() {
+                        gt = function() {
                             var e = (0, E.A)(P().mark(function e() {
                                 var t, r;
                                 return P().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, e.next = 3, at({
+                                            return e.prev = 0, e.next = 3, lt({
                                                 userId: a,
                                                 updates: {
                                                     bannerType: i.x9.AVATAR
@@ -2791,7 +2793,7 @@
                                                 e.next = 6;
                                                 break
                                             }
-                                            return e.next = 6, ot({
+                                            return e.next = 6, it({
                                                 userId: a,
                                                 data: {
                                                     profilePicOverride: ""
@@ -2799,18 +2801,18 @@
                                             }).unwrap();
                                         case 6:
                                             A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: Ct.jb,
-                                                message: ct[b].successMessage,
+                                                message: st[b].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
                                             })), d(), e.next = 13;
                                             break;
                                         case 10:
                                             e.prev = 10, e.t0 = e.catch(0), A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: ge.zp,
-                                                message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : ct[b].failedMessage,
+                                                message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : st[b].failedMessage,
                                                 color: "danger",
                                                 timeout: 5e3
                                             }));
@@ -2826,7 +2828,7 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        ft = function() {
+                        bt = function() {
                             var e = (0, E.A)(P().mark(function e() {
                                 var t;
                                 return P().wrap(function(e) {
@@ -2838,7 +2840,7 @@
                                             }
                                             throw new Error("Crop canvas does not exist");
                                         case 2:
-                                            return e.t0 = dt, e.next = 5, ut();
+                                            return e.t0 = pt, e.next = 5, mt();
                                         case 5:
                                             return e.t1 = e.sent, t = (0, e.t0)(e.t1), e.next = 9, t.toBlob(function() {
                                                 var e = (0, E.A)(P().mark(function e(t) {
@@ -2851,12 +2853,12 @@
                                                                 });
                                                             case 2:
                                                                 return r = e.sent, e.prev = 3, e.next = 6, Me({
-                                                                    tag: ct[b].tag,
+                                                                    tag: st[b].tag,
                                                                     file: r,
                                                                     userId: a
                                                                 }).unwrap();
                                                             case 6:
-                                                                return n = e.sent, l = "https://api.vrchat.cloud/api/1/file/".concat(n.id, "/1"), e.next = 10, ct[b].updateUserFileMutation({
+                                                                return n = e.sent, l = "https://api.vrchat.cloud/api/1/file/".concat(n.id, "/1"), e.next = 10, st[b].updateUserFileMutation({
                                                                     userId: a,
                                                                     url: l
                                                                 }).unwrap();
@@ -2865,7 +2867,7 @@
                                                                     e.next = 13;
                                                                     break
                                                                 }
-                                                                return e.next = 13, ot({
+                                                                return e.next = 13, it({
                                                                     userId: a,
                                                                     data: {
                                                                         profilePicOverride: l
@@ -2873,18 +2875,18 @@
                                                                 }).unwrap();
                                                             case 13:
                                                                 A((0, F.X)({
-                                                                    title: ct[b].feedbackTitle,
+                                                                    title: st[b].feedbackTitle,
                                                                     icon: Ct.jb,
-                                                                    message: ct[b].successMessage,
+                                                                    message: st[b].successMessage,
                                                                     color: "success",
                                                                     timeout: 5e3
                                                                 })), je(), d(), e.next = 22;
                                                                 break;
                                                             case 18:
                                                                 e.prev = 18, e.t0 = e.catch(3), console.error("error uploading icon:", e.t0), A((0, F.X)({
-                                                                    title: ct[b].feedbackTitle,
+                                                                    title: st[b].feedbackTitle,
                                                                     icon: ge.zp,
-                                                                    message: null !== (o = null == Fe || null === (c = Fe.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) && void 0 !== o ? o : ct[b].failedMessage,
+                                                                    message: null !== (o = null == Fe || null === (c = Fe.data) || void 0 === c || null === (c = c.error) || void 0 === c ? void 0 : c.message) && void 0 !== o ? o : st[b].failedMessage,
                                                                     color: "danger",
                                                                     timeout: 5e3
                                                                 }));
@@ -2910,13 +2912,13 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        gt = function() {
+                        ht = function() {
                             var e = (0, E.A)(P().mark(function e(t, r) {
                                 var n, l, o;
                                 return P().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, n = t.latestVersionFile.file.url, e.next = 4, ct[b].updateUserFileMutation({
+                                            return e.prev = 0, n = t.latestVersionFile.file.url, e.next = 4, st[b].updateUserFileMutation({
                                                 userId: a,
                                                 url: n,
                                                 bannerType: r
@@ -2926,7 +2928,7 @@
                                                 e.next = 7;
                                                 break
                                             }
-                                            return e.next = 7, ot({
+                                            return e.next = 7, it({
                                                 userId: a,
                                                 data: {
                                                     profilePicOverride: n
@@ -2934,18 +2936,18 @@
                                             }).unwrap();
                                         case 7:
                                             A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: Ct.jb,
-                                                message: ct[b].successMessage,
+                                                message: st[b].successMessage,
                                                 color: "success",
                                                 timeout: 5e3
                                             })), je(), d(), e.next = 15;
                                             break;
                                         case 12:
                                             e.prev = 12, e.t0 = e.catch(0), A((0, F.X)({
-                                                title: ct[b].feedbackTitle,
+                                                title: st[b].feedbackTitle,
                                                 icon: ge.zp,
-                                                message: null !== (l = null === (o = e.t0.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : ct[b].failedMessage,
+                                                message: null !== (l = null === (o = e.t0.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== l ? l : st[b].failedMessage,
                                                 color: "danger",
                                                 timeout: 5e3
                                             }));
@@ -2961,12 +2963,12 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        bt = function() {
+                        vt = function() {
                             var e = (0, E.A)(P().mark(function e() {
                                 return P().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.next = 2, gt({
+                                            return e.next = 2, ht({
                                                 latestVersionFile: {
                                                     file: {
                                                         url: ""
@@ -2985,10 +2987,10 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        ht = function(e) {
+                        xt = function(e) {
                             Ne(e), fe(!0)
                         },
-                        vt = function() {
+                        Et = function() {
                             var e = (0, E.A)(P().mark(function e() {
                                 var t, r;
                                 return P().wrap(function(e) {
@@ -3002,7 +3004,7 @@
                                         case 2:
                                             return e.prev = 2, e.next = 5, tt({
                                                 fileId: xe,
-                                                tag: ct[b].tag,
+                                                tag: st[b].tag,
                                                 userId: a
                                             }).unwrap();
                                         case 5:
@@ -3036,8 +3038,8 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        xt = "" !== X && (null == we ? void 0 : we.pass),
-                        Et = Ue || He || Pe || qe || Qe || rt;
+                        yt = "" !== X && (null == we ? void 0 : we.pass),
+                        kt = Ue || He || Pe || qe || Qe || ot || rt;
                     return o.createElement(o.Fragment, null, o.createElement("div", {
                         tabIndex: "-1",
                         className: (0, U.cx)("\n            tw-top-0 tw-left-0 tw-right-0 tw-z-[1040]\n            tw-overflow-x-hidden tw-overflow-y-auto\n            md:tw-inset-0\n            tw-h-[calc(100%-1rem)] tw-max-h-full\n            tw-bg-dark-grey-transparent\n          ", {
@@ -3052,9 +3054,9 @@
                         className: "tw-flex tw-items-start tw-justify-between tw-p-4 tw-pb-0 tw-rounded-t"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-border-t after:tw-pb-0 after:tw-mt-5 "
-                    }, ct[b].modalTitle, o.createElement("small", {
+                    }, st[b].modalTitle, o.createElement("small", {
                         className: "tw-flex tw-font-normal tw-text-lighter-grey"
-                    }, ct[b].modalSubTitle)), o.createElement("button", {
+                    }, st[b].modalSubTitle)), o.createElement("button", {
                         type: "button",
                         className: " tw-text-gray-400 tw-bg-gray-700 tw-rounded-full tw-text-sm tw-w-8 tw-h-8 tw-ml-auto tw-inline-flex tw-justify-center tw-items-center hover:tw-bg-gray-600 hover:tw-text-white tw-absolute -tw-right-4 -tw-top-4 tw-border-none ",
                         onClick: function() {
@@ -3077,7 +3079,7 @@
                         type: "file",
                         value: X,
                         onChange: function(e) {
-                            Y(e.target.value), wt(e)
+                            Y(e.target.value), dt(e)
                         }
                     }), null !== we && !1 === we.pass && o.createElement("div", {
                         className: "card danger tw-mt-5 tw-flex tw-flex-col"
@@ -3139,7 +3141,7 @@
                         onComplete: function(e) {
                             return D(e)
                         },
-                        aspect: ct[b].aspectRatio,
+                        aspect: st[b].aspectRatio,
                         minHeight: 64
                     }, o.createElement("img", {
                         ref: z,
@@ -3157,12 +3159,12 @@
                                 height: n
                             });
                             var a = Math.min(r, n);
-                            S(st({
+                            S(ut({
                                 mediaWidth: r,
                                 mediaHeight: n,
-                                maxHeight: it ? a : zt,
-                                maxWidth: it ? a : zt,
-                                aspect: ct[b].aspectRatio
+                                maxHeight: wt ? a : zt,
+                                maxWidth: wt ? a : zt,
+                                aspect: st[b].aspectRatio
                             }))
                         },
                         className: "tw-max-h-96 tw-max-w-full tw-w-auto tw-h-auto"
@@ -3226,19 +3228,19 @@
                     }, o.createElement("canvas", {
                         ref: V,
                         className: (0, U.cx)("tw-shadow-lg", {
-                            "tw-rounded-full tw-w-60 tw-h-60 sm:tw-w-40 sm:tw-h-40": ct[b].isRounded,
-                            "tw-rounded-lg tw-w-86 tw-h-auto": !ct[b].isRounded
+                            "tw-rounded-full tw-w-60 tw-h-60 sm:tw-w-40 sm:tw-h-40": st[b].isRounded,
+                            "tw-rounded-lg tw-w-86 tw-h-auto": !st[b].isRounded
                         })
                     }))))), !Te && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-flex tw-items-start tw-justify-between tw-p-4 tw-pb-0 tw-rounded-t"
                     }, o.createElement("h3", {
                         className: " tw-w-full tw-text-xl tw-font-semibold tw-text-white after:tw-content-[''] after:tw-border-gray-700 after:tw-border-solid after:tw-border-0 after:tw-border-t after:tw-pb-0 after:tw-mt-5 "
-                    }, ct[b].gallerySelectionTitle)), o.createElement("div", {
+                    }, st[b].gallerySelectionTitle)), o.createElement("div", {
                         className: "\n                  tw-grid tw-flow-col tw-gap-4 tw-p-4\n                  tw-grid-cols-1\n                  ".concat("profileIcon" === b ? "\n                        sm:tw-grid-cols-3\n                        md:tw-grid-cols-4\n                        lg:tw-grid-cols-5\n                        xl:tw-grid-cols-6\n                        2xl:tw-grid-cols-9\n                      " : "\n                        sm:tw-grid-cols-1\n                        md:tw-grid-cols-2\n                        lg:tw-grid-cols-3\n                        xl:tw-grid-cols-4\n                        2xl:tw-grid-cols-6\n                      ", "\n                ")
                     }, "profileIcon" === b && x && o.createElement(Vt.A, {
                         key: "avatar-fallback",
                         srcUrl: x,
-                        onClick: bt,
+                        onClick: vt,
                         isRounded: !0
                     }), "profileIcon" === b && Be.map(function(e) {
                         return o.createElement(Vt.A, {
@@ -3252,7 +3254,7 @@
                                 return P().wrap(function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            gt(e);
+                                            ht(e);
                                         case 1:
                                         case "end":
                                             return t.stop()
@@ -3260,13 +3262,13 @@
                                 }, t)
                             })),
                             onDeleteCallback: function(e) {
-                                ht(e)
+                                xt(e)
                             },
                             isRounded: !0,
                             isLocked: _e(e)
                         })
                     }), "profilePicture" === b && o.createElement(s.sk, {
-                        onSave: mt,
+                        onSave: ft,
                         defaultColors: {
                             bannerColor: N
                         },
@@ -3291,7 +3293,7 @@
                             fileUrl: x,
                             width: 512
                         }),
-                        onClick: pt,
+                        onClick: gt,
                         className: "tw-aspect-video",
                         imgClasses: "tw-object-cover tw-aspect-video",
                         "aria-label": "Use avatar as banner"
@@ -3307,7 +3309,7 @@
                                 return P().wrap(function(t) {
                                     for (;;) switch (t.prev = t.next) {
                                         case 0:
-                                            gt(e, i.x9.CUSTOM);
+                                            ht(e, i.x9.CUSTOM);
                                         case 1:
                                         case "end":
                                             return t.stop()
@@ -3315,7 +3317,7 @@
                                 }, t)
                             })),
                             onDeleteCallback: function(e) {
-                                ht(e)
+                                xt(e)
                             },
                             className: "tw-aspect-video",
                             isLocked: Ae || Ie
@@ -3325,10 +3327,10 @@
                     }, o.createElement("button", {
                         type: "button",
                         className: (0, U.cx)("tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-red tw-leading-none", {
-                            "tw-hidden": xt
+                            "tw-hidden": yt
                         }),
-                        onClick: bt
-                    }, ct[b].clearButtonLabel), o.createElement("button", {
+                        onClick: vt
+                    }, st[b].clearButtonLabel), o.createElement("button", {
                         type: "button",
                         className: "tw-h-9 tw-border-0 tw-px-3 tw-py-2 tw-rounded-sm tw-w-36 tw-bg-button-bg-grey tw-leading-none",
                         onClick: function() {
@@ -3337,13 +3339,13 @@
                     }, "Cancel"), o.createElement("button", {
                         type: "button",
                         className: (0, U.cx)("\n                  tw-w-36 tw-h-9\n                  tw-border-0 tw-rounded-sm\n                  tw-px-3 tw-py-2\n                  tw-bg-button-bg tw-text-highlight tw-leading-none\n                  hover:tw-bg-button-bg-100 hover:tw-text-white\n                ", {
-                            "tw-hidden": !xt
+                            "tw-hidden": !yt
                         }),
-                        disabled: Et,
+                        disabled: kt,
                         onClick: function() {
-                            return ft()
+                            return bt()
                         }
-                    }, "Confirm  ", Et && o.createElement(s.M2, {
+                    }, "Confirm  ", kt && o.createElement(s.M2, {
                         icon: Ee.z1,
                         spin: !0
                     })))))), o.createElement(s.uo, {
@@ -3351,7 +3353,7 @@
                         headerText: "Delete Image",
                         bodyText: "Are you sure you want to delete this image? This action cannot be undone.",
                         confirmText: "Delete",
-                        confirmCallback: vt,
+                        confirmCallback: Et,
                         cancelCallback: function() {
                             fe(!1), Ne(null)
                         },
@@ -5836,4 +5838,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c342cafbb8019b89a12aa5642fbd6626c8d55688b53ad269881a78a150255db0.js.map
+//# sourceMappingURL=22922d51329b77a37694894c2f15a20bf8527ea01a45a96167f0891988a166f9.js.map
