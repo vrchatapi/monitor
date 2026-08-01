@@ -1,4 +1,4 @@
-/*! For license information please see 2026-07-29t21-43-12-the-ape-of-angela--main-prod-public-519a9c5e-bdfa-4e72-b168-d4aa6ccd1f8b--app.js.LICENSE.txt */
+/*! For license information please see 2026-07-31t16-16-27-the-chug-of-tracy--main-prod-public-d0cb8e14-3fdc-4c52-92e7-3cf5e53ae7a2--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-29t21-43-12-the-ape-of-angela", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-07-31t16-16-27-the-chug-of-tracy", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115094,7 +115094,7 @@
         8104: "b3716025ab7eb5cecdd5334e24062bb1d92802f40f5a8e96602cdb1f793b159a",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
         8202: "da06baca96d1ced69236112ab961ade5ef1fac227b5b4e15b8a456207013e0fe",
-        8229: "e6048e3c43f9d5a14530135fd4083d8b1029c77546b05215e28e24c81a850adb",
+        8229: "c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
         8497: "d10286659c03d492e5adcb734c4d87beefda8043d9433eaad51c08d74db63e06",
@@ -115195,9 +115195,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-07-29t21-43-12-the-ape-of-angela"
+        id: "2026-07-31t16-16-27-the-chug-of-tracy"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-07-29t21-43-12-the-ape-of-angela"
+        id: "2026-07-31t16-16-27-the-chug-of-tracy"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116950,7 +116950,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-07-29t21-43-12-the-ape-of-angela",
+                release: "2026-07-31t16-16-27-the-chug-of-tracy",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

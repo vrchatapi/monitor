@@ -2714,12 +2714,12 @@
             });
             var r = n(10467),
                 a = n(82544),
-                l = n(48345),
-                o = n(78244),
-                i = n(1705),
-                c = n(74448),
-                s = n(54399),
-                u = n(34496),
+                l = n(34496),
+                o = n(48345),
+                i = n(78244),
+                c = n(1705),
+                s = n(74448),
+                u = n(54399),
                 m = n(54756),
                 d = n.n(m),
                 w = n(96540),
@@ -2800,13 +2800,13 @@
                 B = function(e) {
                     var t = e.onClose,
                         n = void 0 === t ? function() {} : t,
-                        l = e.listing;
-                    if (!l) return null;
-                    var o = (0, j.wA)(),
-                        i = (0, P.m8)(),
-                        c = (0, a.A)(i, 2),
-                        s = c[0],
-                        m = c[1],
+                        o = e.listing;
+                    if (!o) return null;
+                    var i = (0, j.wA)(),
+                        c = (0, P.m8)(),
+                        s = (0, a.A)(c, 2),
+                        u = s[0],
+                        m = s[1],
                         p = m.isLoading,
                         f = (m.isSuccess, m.isError, m.error, function() {
                             var e = (0, r.A)(d().mark(function e() {
@@ -2814,23 +2814,23 @@
                                 return d().wrap(function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
-                                            return e.prev = 0, e.next = 3, s({
-                                                listingId: l.id,
-                                                active: !l.active
+                                            return e.prev = 0, e.next = 3, u({
+                                                listingId: o.id,
+                                                active: !o.active
                                             }).unwrap();
                                         case 3:
-                                            t = e.sent, o((0, G.X)({
+                                            t = e.sent, i((0, G.X)({
                                                 title: "Listing ".concat(t.listing.active ? "published" : "unpublished"),
                                                 icon: z.SG,
-                                                message: "".concat(l.displayName, " has been ").concat(t.listing.active ? "published" : "unpublished", "."),
+                                                message: "".concat(o.displayName, " has been ").concat(t.listing.active ? "published" : "unpublished", "."),
                                                 color: "success",
                                                 timeout: 3e3
                                             })), n(), e.next = 12;
                                             break;
                                         case 8:
-                                            e.prev = 8, e.t0 = e.catch(0), console.error(e.t0), o((0, G.X)({
-                                                title: "Failed to ".concat(l.active ? "unpublish" : "publish", " listing"),
-                                                icon: u.zp,
+                                            e.prev = 8, e.t0 = e.catch(0), console.error(e.t0), i((0, G.X)({
+                                                title: "Failed to ".concat(o.active ? "unpublish" : "publish", " listing"),
+                                                icon: l.zp,
                                                 message: null !== (r = null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== r ? r : "Something went wrong",
                                                 color: "danger",
                                                 timeout: 9e3
@@ -2851,9 +2851,9 @@
                         className: "tw-w-full tw-flex tw-flex-col tw-gap-6"
                     }, w.createElement("div", {
                         className: "tw-w-full"
-                    }, !l.active && w.createElement("h4", {
+                    }, !o.active && w.createElement("h4", {
                         className: "tw-text-lg"
-                    }, "Publishing this listing will make it available for viewing and purchase, including in any selected store(s)."), l.active && w.createElement("h4", {
+                    }, "Publishing this listing will make it available for viewing and purchase, including in any selected store(s)."), o.active && w.createElement("h4", {
                         className: "tw-text-lg"
                     }, "If you move this listing to draft, users won’t be able to view or purchase it. You can republish it at any time. Existing purchases will remain unaffected.")), w.createElement("div", {
                         className: "tw-flex tw-flex-col xs:tw-flex-row tw-gap-3 tw-flex-1"
@@ -2867,7 +2867,7 @@
                         containerClasses: "tw-flex-1",
                         loading: p,
                         onClick: f
-                    }, l.active ? "Move to Draft" : "Publish Listing")))
+                    }, o.active ? "Move to Draft" : "Publish Listing")))
                 };
             B.propTypes = {
                 onClose: V().func,
@@ -2940,11 +2940,11 @@
                     n = void 0 === t ? null : t,
                     r = e.editListingCallback,
                     a = void 0 === r ? function() {} : r,
-                    l = e.deleteListingCallback,
-                    o = void 0 === l ? function() {} : l,
-                    i = e.publishListingCallback,
-                    c = void 0 === i ? function() {} : i,
-                    s = (0, j.wA)();
+                    o = e.deleteListingCallback,
+                    i = void 0 === o ? function() {} : o,
+                    c = e.publishListingCallback,
+                    s = void 0 === c ? function() {} : c,
+                    u = (0, j.wA)();
                 if (null === n) return null;
                 var m = n.id,
                     d = n.displayName,
@@ -2977,7 +2977,7 @@
                     neutral: !0,
                     onClick: function() {
                         navigator.clipboard.writeText(m).then(function() {
-                            s((0, G.X)({
+                            u((0, G.X)({
                                 title: "Copied subscription ID",
                                 icon: z.SG,
                                 message: "Subscription ID Copied!",
@@ -2986,9 +2986,9 @@
                             }))
                         }).catch(function(e) {
                             var t, n;
-                            s((0, G.X)({
+                            u((0, G.X)({
                                 title: "Failed to copy subscription ID",
-                                icon: u.zp,
+                                icon: l.zp,
                                 message: null !== (t = null === (n = res.error.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "Failed to copy subscription ID",
                                 color: "error",
                                 timeout: 3e3
@@ -3004,10 +3004,10 @@
                         return a(n)
                     },
                     deleteAction: function() {
-                        return o(n)
+                        return i(n)
                     },
                     publishAction: function() {
-                        return c(n)
+                        return s(n)
                     }
                 })))))
             };
@@ -3557,11 +3557,11 @@
                 }],
                 ge = ["purchaseDate", "name"];
             const be = function() {
-                var e, t, n, l, o = (0, f.Zp)(),
-                    i = (0, j.wA)(),
-                    c = (0, f.g)().paginationPage,
-                    s = (0, w.useState)("all"),
-                    m = (0, a.A)(s, 2),
+                var e, t, n, o, i = (0, f.Zp)(),
+                    c = (0, j.wA)(),
+                    s = (0, f.g)().paginationPage,
+                    u = (0, w.useState)("all"),
+                    m = (0, a.A)(u, 2),
                     p = (m[0], m[1], (0, w.useState)("ALL")),
                     b = (0, a.A)(p, 2),
                     v = (b[0], b[1], (0, w.useState)("")),
@@ -3583,7 +3583,7 @@
                     $ = (0, a.A)(B, 2),
                     U = $[0],
                     Y = $[1],
-                    _ = c ? Number(c) : 1,
+                    _ = s ? Number(s) : 1,
                     K = (0, A.A)(h),
                     H = (0, O.p$)().data,
                     Q = (0, re.M1)(pe(pe({
@@ -3623,7 +3623,7 @@
                                         return e.abrupt("return");
                                     case 2:
                                         return t = function() {
-                                            V(!1), Y(null), i((0, G.X)({
+                                            V(!1), Y(null), c((0, G.X)({
                                                 title: "Purchase Voided!",
                                                 icon: z.SG,
                                                 message: "Your listing has been voided successfully!",
@@ -3634,9 +3634,9 @@
                                     case 6:
                                         return e.abrupt("return", t());
                                     case 9:
-                                        e.prev = 9, e.t0 = e.catch(3), i((0, G.X)({
+                                        e.prev = 9, e.t0 = e.catch(3), c((0, G.X)({
                                             title: "Failed to void purchase!",
-                                            icon: u.zp,
+                                            icon: l.zp,
                                             message: null !== (n = null === e.t0 || void 0 === e.t0 || null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Something went wrong",
                                             color: "danger",
                                             timeout: 3e3
@@ -3696,7 +3696,7 @@
                     loading: !0
                 })) : Z ? w.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (l = ee.data.error.message) && void 0 !== l ? l : "Unknown error")) : "" === K && J ? W.purchases.map(function(e) {
+                }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (o = ee.data.error.message) && void 0 !== o ? o : "Unknown error")) : "" === K && J ? W.purchases.map(function(e) {
                     return w.createElement(de, {
                         key: e.purchaseId,
                         transactionData: e,
@@ -3710,7 +3710,7 @@
                     currentPage: _,
                     pageSize: 50,
                     onPageChange: function(e) {
-                        return o("/home/marketplace/storefront/revenue/mysales/page/".concat(e))
+                        return i("/home/marketplace/storefront/revenue/mysales/page/".concat(e))
                     }
                 })))), w.createElement(g.uo, {
                     bodyText: "Are you sure you want to void this self-purchase? Your credit balance will not be affected.",
@@ -4317,7 +4317,7 @@
                     ge = (0, Pe.mN)({
                         userId: B
                     }, {
-                        skip: !B || !_ && !fe || H
+                        skip: !B || !_ || H
                     }),
                     ve = ge.data,
                     Ee = void 0 === ve ? {} : ve,
@@ -4411,17 +4411,7 @@
                     className: "tw-m-0"
                 }, "Ends: ", (0, Te.xv)(W)), w.createElement("p", {
                     className: "tw-m-0"
-                }, "In-game credit purchases/transactions will be unavailable during this period. We apologize for the inconvenience.")), U ? Y ? w.createElement(g.fv, {
-                    className: "tw-items-center tw-justify-center tw-gap-4"
-                }, w.createElement(g.M2, {
-                    icon: u.zp,
-                    width: 250,
-                    className: "tw-text-error-message-red"
-                }), w.createElement("h2", null, "There is a problem with your CE account"), w.createElement("h4", null, w.createElement(p.N_, {
-                    to: "https://vrch.at/marketplace-help",
-                    target: "_blank",
-                    className: "tw-flex-1 tw-m-0"
-                }, "Please contact support for more information"))) : fe ? w.createElement(w.Fragment, null, w.createElement("div", {
+                }, "In-game credit purchases/transactions will be unavailable during this period. We apologize for the inconvenience.")), K ? w.createElement(w.Fragment, null, w.createElement("div", {
                     className: "tw-relative"
                 }, w.createElement("div", {
                     className: "tw-relative"
@@ -4438,12 +4428,12 @@
                     tabs: [{
                         name: "Overview",
                         to: "dashboard",
-                        icon: s.gK,
+                        icon: u.gK,
                         condition: !0
                     }, {
                         name: "My Products",
                         to: "products",
-                        icon: c.T3,
+                        icon: s.T3,
                         condition: !0
                     }, {
                         name: "My Subscriptions",
@@ -4453,17 +4443,17 @@
                     }, {
                         name: "My Listings",
                         to: "listings",
-                        icon: i._2,
+                        icon: c._2,
                         condition: !0
                     }, {
                         name: "Store Manager",
                         to: "stores",
-                        icon: o.H3,
+                        icon: i.H3,
                         condition: !0
                     }, {
                         name: "Revenue",
                         to: "revenue",
-                        icon: l.Mf,
+                        icon: o.Mf,
                         condition: !0
                     }]
                 })), w.createElement(w.Suspense, {
@@ -4567,7 +4557,17 @@
                     className: "tw-m-0 tw-font-bold tw-text-lg tw-flex-1"
                 }, "Thank you for completing the Tilia Process, now you are ready to sell and receive payouts!")))))) : _ ? w.createElement(Le, {
                     onComplete: Ne
-                }) : w.createElement(Ge, null) : w.createElement(Ge, null))
+                }) : Y ? w.createElement(g.fv, {
+                    className: "tw-items-center tw-justify-center tw-gap-4"
+                }, w.createElement(g.M2, {
+                    icon: l.zp,
+                    width: 250,
+                    className: "tw-text-error-message-red"
+                }), w.createElement("h2", null, "There is a problem with your CE account"), w.createElement("h4", null, w.createElement(p.N_, {
+                    to: "https://vrch.at/marketplace-help",
+                    target: "_blank",
+                    className: "tw-flex-1 tw-m-0"
+                }, "Please contact support for more information"))) : w.createElement(Ge, null))
             }
         },
         2090(e, t, n) {
@@ -4747,4 +4747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e6048e3c43f9d5a14530135fd4083d8b1029c77546b05215e28e24c81a850adb.js.map
+//# sourceMappingURL=c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3.js.map
