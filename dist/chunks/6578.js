@@ -345,7 +345,8 @@
                             return null == t ? void 0 : t.framesOverTime
                         }, [t]),
                         N = function() {
-                            return C <= 4 ? 512 : C <= 16 ? 256 : C <= 64 ? 128 : void console.error("Frame count of ".concat(C, " is unsupported!"))
+                            var e, t = (null === (e = f.current) || void 0 === e ? void 0 : e.width) || 1024;
+                            return C <= 4 ? t / 2 : C <= 16 ? t / 4 : C <= 64 ? t / 8 : void console.error("Frame count of ".concat(C, " is unsupported!"))
                         },
                         I = function() {
                             var e = C <= 4 ? 2 : C <= 16 ? 4 : C <= 64 ? 8 : void console.error("Frame count of ".concat(C, " is unsupported!")),
@@ -6732,4 +6733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0452503e68ef9a7ed94b170016a884841846e31c84325f3d45aa8a1a2e2d1e5c.js.map
+//# sourceMappingURL=dea1df54c14a47229004de54f0f7a73fa619770b9fffaafa1989681bc1edd0db.js.map
