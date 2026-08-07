@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-05t21-30-04-the-graphic-of-yossarian--main-prod-public-77c6b991-6bb1-4732-ae75-de71469e61fe--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-06t17-57-12-the-garterbelt-of-otis--main-prod-public-d304b3b3-26b5-4d67-bb5d-47772547db31--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-05t21-30-04-the-graphic-of-yossarian", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-06t17-57-12-the-garterbelt-of-otis", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115055,7 +115055,7 @@
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "dea1df54c14a47229004de54f0f7a73fa619770b9fffaafa1989681bc1edd0db",
+        6578: "6021d91c39ac336cec9b0020b2dfd70edca7f7b9737da370215f1ca03afd4ec7",
         6585: "3666a5c369addd7c631234a2125513abc38b6dcf34cf5e8c5117151fca530c7e",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
@@ -115182,9 +115182,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-05t21-30-04-the-graphic-of-yossarian"
+        id: "2026-08-06t17-57-12-the-garterbelt-of-otis"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-05t21-30-04-the-graphic-of-yossarian"
+        id: "2026-08-06t17-57-12-the-garterbelt-of-otis"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116937,7 +116937,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-05t21-30-04-the-graphic-of-yossarian",
+                release: "2026-08-06t17-57-12-the-garterbelt-of-otis",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

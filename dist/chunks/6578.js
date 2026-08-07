@@ -844,11 +844,11 @@
                         className: "tw-flex tw-flex-row tw-items-center tw-gap-1"
                     }, E.createElement(y.N_, {
                         className: "tw-text-white",
-                        to: se || N || it ? "#" : "/home/user/".concat(we),
+                        to: N || it ? "#" : "/home/user/".concat(we),
                         target: B ? "_blank" : void 0,
                         "aria-label": "View ".concat(Ke, "'s profile"),
                         onClick: function(e) {
-                            e.stopPropagation(), se && e.preventDefault()
+                            e.stopPropagation()
                         }
                     }, E.createElement("h4", {
                         className: "tw-truncate tw-text-left tw-mb-0"
@@ -6733,4 +6733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dea1df54c14a47229004de54f0f7a73fa619770b9fffaafa1989681bc1edd0db.js.map
+//# sourceMappingURL=6021d91c39ac336cec9b0020b2dfd70edca7f7b9737da370215f1ca03afd4ec7.js.map
