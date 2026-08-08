@@ -962,6 +962,7 @@
                         }).map(function(e) {
                             return Le(Le({}, K(e)), {}, {
                                 listings: e.listings,
+                                publishedListings: e.publishedListings,
                                 flags: e.flags
                             })
                         });
@@ -971,8 +972,8 @@
                                 return null === (t = e.flags) || void 0 === t ? void 0 : t.includes("vrc_plus_exclusive")
                             }),
                             shopItems: e.filter(function(e) {
-                                var t;
-                                return !(null !== (t = e.flags) && void 0 !== t && t.includes("vrc_plus_exclusive"))
+                                var t, r;
+                                return !(null !== (t = e.flags) && void 0 !== t && t.includes("vrc_plus_exclusive")) && (null === (r = e.publishedListings) || void 0 === r ? void 0 : r.length) > 0
                             })
                         }
                     }, [G, H, K]),
@@ -1175,13 +1176,7 @@
                     type: "button",
                     className: "".concat(me, " md:tw-w-32"),
                     onClick: X
-                }, "Cancel"), o.createElement("button", {
-                    type: "button",
-                    className: ve,
-                    onClick: function() {
-                        return console.log("do something with client catch up with sam.")
-                    }
-                }, "Open VRChat Shop"))) : de ? we ? o.createElement("div", {
+                }, "Cancel"))) : de ? we ? o.createElement("div", {
                     className: "tw-flex tw-gap-2 tw-w-full md:tw-w-auto md:tw-ml-auto"
                 }, o.createElement("button", {
                     type: "button",
@@ -5829,4 +5824,4 @@
         }
     }
 ]);
-//# sourceMappingURL=070e4f5b8ba74433e8f41cfd73e0f1cc2663200dcfe9a472db531dfefca99c40.js.map
+//# sourceMappingURL=50be690ea1d8c7f2c5933f6eff07e85d8c9ef07ae01566cc9074020d881fb27c.js.map

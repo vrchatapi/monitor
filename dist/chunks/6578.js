@@ -4155,6 +4155,11 @@
                         to: "../inventory/*"
                     })
                 }), o.createElement(i.qh, {
+                    path: "/inventory/user-icons",
+                    element: o.createElement(Sn.A, {
+                        to: "../user/me?settings=true"
+                    })
+                }), o.createElement(i.qh, {
                     path: "/inventory/*",
                     element: o.createElement(Or, null)
                 }), o.createElement(i.qh, {
@@ -6733,4 +6738,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6021d91c39ac336cec9b0020b2dfd70edca7f7b9737da370215f1ca03afd4ec7.js.map
+//# sourceMappingURL=67bc7911c8ea5ed6d8fbfa754f845479855173a41ea391bb1834885dc97d8a1d.js.map
