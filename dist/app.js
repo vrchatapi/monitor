@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-07t21-08-21-the-orange-of-cherry--main-prod-public-f83cba10-800b-4484-a03f-55fced6b7b34--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-11t20-43-20-the-tailor-of-elba--main-prod-public-6369b5a1-9448-4c53-acdc-f4f178dfebe4--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-07t21-08-21-the-orange-of-cherry", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-11t20-43-20-the-tailor-of-elba", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -63062,19 +63062,33 @@
             55717(e, t, n) {
                 "use strict";
                 n.d(t, {
-                    A: () => r
+                    A: () => a
                 });
-                var r = function(e, t) {
-                    return (null == e ? void 0 : e.findLast(function(e) {
-                        var n = e.platform,
-                            r = e.variant;
-                        return n === t && "security" === r
-                    })) || (null == e ? void 0 : e.findLast(function(e) {
-                        var n = e.platform,
-                            r = e.variant;
-                        return n === t && "impostor" !== r && "shadow" !== r
-                    }))
-                }
+                var r = function(e) {
+                        var t = /(\d+)\.(\d+)\.(\d+)f(\d+)/.exec(null != e ? e : "");
+                        if (!t) return 0;
+                        var n = Number.parseInt(t[1], 10),
+                            r = Number.parseInt(t[2], 10),
+                            o = Number.parseInt(t[3], 10),
+                            a = Number.parseInt(t[4], 10);
+                        return n * Math.pow(10, 7) + r * Math.pow(10, 5) + o * Math.pow(10, 3) + (a - 1)
+                    },
+                    o = function(e, t) {
+                        return null == e ? void 0 : e.reduce(function(e, n) {
+                            return t(n) && (void 0 === e || r(n.unityVersion) >= r(e.unityVersion)) ? n : e
+                        }, void 0)
+                    },
+                    a = function(e, t) {
+                        return function(e, t, n) {
+                            return o(e, function(e) {
+                                return e.platform === t && e.variant === n
+                            })
+                        }(e, t, "security") || o(e, function(e) {
+                            var n = e.platform,
+                                r = e.variant;
+                            return n === t && "impostor" !== r && "shadow" !== r
+                        })
+                    }
             },
             93928(e, t, n) {
                 var r = n(74150);
@@ -115033,6 +115047,7 @@
         4028: "45b6c86c6f72d6c8d7a2a43432064a34e233c2cbd58417eeae17e2fcc042e8ab",
         4101: "df4eba398d6764e296fc67dda55495a935ba3cb86cc66346f7d4ab6ffad53c4b",
         4127: "d15faac66d30116773e7bd126eaa64f66ba28795bc6850b80d7ed2f038f5e2ad",
+        4181: "ba78360a04f5bd04392a65c5d8d7b127b84543d04fd1349def4f4e4030455f92",
         4369: "0d7f8225d1b9ea68c1b46c9609829226fdf765b4c67ec28f67016271d906a88a",
         4429: "4d860eb92d6e94e317d94a0fab9fa1feb05d11fd8937cf5b5aef3baf3dbf44e7",
         4541: "fef2947de521ff8e55b5624684b53f4d6118182907aa924fe90d430a7ef992e9",
@@ -115055,7 +115070,7 @@
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "67bc7911c8ea5ed6d8fbfa754f845479855173a41ea391bb1834885dc97d8a1d",
+        6578: "6858cc42f11161fb13625034b9da4586019cabb381ad7203976c9323e9bc9587",
         6585: "3666a5c369addd7c631234a2125513abc38b6dcf34cf5e8c5117151fca530c7e",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
@@ -115084,7 +115099,6 @@
         8229: "c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
-        8497: "d10286659c03d492e5adcb734c4d87beefda8043d9433eaad51c08d74db63e06",
         8621: "6deb7f0641303a0cd03fce6f1c38de8ec8bbc571b28efd61f1a31c7bfe28018f",
         8851: "56f7daa5ba9f2b07ad4af77d04ee8612a09fdab870952f4bf393f46c9f1c6857",
         8968: "60117fb35610f9a5fd3abf751f8b36e6a42d5eefd5125dd9711a5555241f0fc6",
@@ -115182,9 +115196,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-07t21-08-21-the-orange-of-cherry"
+        id: "2026-08-11t20-43-20-the-tailor-of-elba"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-07t21-08-21-the-orange-of-cherry"
+        id: "2026-08-11t20-43-20-the-tailor-of-elba"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116937,7 +116951,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-07t21-08-21-the-orange-of-cherry",
+                release: "2026-08-11t20-43-20-the-tailor-of-elba",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

@@ -386,7 +386,7 @@
                                 e.drawImage(f.current, i, c, o, l), e.restore()
                             }
                         },
-                        j = function() {
+                        S = function() {
                             f.current = null;
                             var e = new Image;
                             if (e.onload = function() {
@@ -406,7 +406,7 @@
                             var e = g.current.getContext("2d");
                             e && e.clearRect(0, 0, g.current.width, g.current.height)
                         }
-                        return m.current = 0, j(),
+                        return m.current = 0, S(),
                             function() {
                                 E()
                             }
@@ -416,7 +416,7 @@
                                 E()
                             }
                     }, [x, C, k, a]), (0, o.useEffect)(function() {
-                        j()
+                        S()
                     }, [n, y, a]), (0, o.useEffect)(function() {
                         return function() {
                             E()
@@ -632,8 +632,8 @@
                     O = void 0 !== I && I,
                     M = e.openLinksInNewTab,
                     B = void 0 !== M && M,
-                    j = e.isCard,
-                    S = void 0 !== j && j,
+                    S = e.isCard,
+                    j = void 0 !== S && S,
                     q = e.isCompact,
                     P = void 0 !== q && q,
                     T = e.friendControls,
@@ -703,8 +703,8 @@
                         resetKey: xe ? Ie : null
                     }),
                     Be = (0, m.A)(Ee, we),
-                    je = Be.animationSource,
-                    Se = Be.mainSrc,
+                    Se = Be.animationSource,
+                    je = Be.mainSrc,
                     qe = Be.baseSrc,
                     Pe = Be.isReady,
                     Te = function() {
@@ -762,8 +762,8 @@
                         }, L))
                     };
                 if (N && !Ge || it && !Ge) return null;
-                if (S) {
-                    var pt, wt = !te && !N && Pe && je;
+                if (j) {
+                    var pt, wt = !te && !N && Pe && Se;
                     return E.createElement(E.Fragment, null, E.createElement("div", {
                         style: x(x(x({
                             "--avatar-size": "min(33.333%, 8rem)"
@@ -820,7 +820,7 @@
                             }
                         })
                     }))), wt && E.createElement("img", {
-                        src: fe || !xe ? qe : Se,
+                        src: fe || !xe ? qe : je,
                         alt: "Profile effect",
                         className: "tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-object-top tw-pointer-events-none tw-z-20 tw-rounded-xl"
                     }), !it && E.createElement(y.N_, {
@@ -868,7 +868,7 @@
                         className: "tw-text-subtext-grey"
                     })))), V)
                 }
-                var gt = !S && Fe && ze ? {
+                var gt = !j && Fe && ze ? {
                     background: "linear-gradient(to right, ".concat(Fe, ", ").concat(ze, ")")
                 } : {};
                 return E.createElement("div", null, L && ft(), E.createElement("div", {
@@ -1248,7 +1248,7 @@
                     V = t.memberCount,
                     H = t.iconId,
                     W = t.bannerId,
-                    X = a ? j : S,
+                    X = a ? S : j,
                     Y = a ? T : D,
                     $ = a ? q : P;
                 return f.createElement(X, {
@@ -1354,10 +1354,10 @@
                     name: "k2qbwb",
                     styles: "width:75px;height:75px;border-radius:100%;border:3px solid #181b1f;background-color:#181b1f"
                 }),
-                j = (0, l.A)("div", {
+                S = (0, l.A)("div", {
                     target: "e1nq4ok45"
                 })("display:flex;margin-bottom:0.8rem;text-decoration:none!important;flex-direction:column;border-radius:8px;overflow:hidden;min-width:0;&.pulse{", C, "{", N, ";}", k, "{", N, ";}}"),
-                S = (0, l.A)(p.N_, {
+                j = (0, l.A)(p.N_, {
                     target: "e1nq4ok44"
                 })("display:flex;margin-bottom:0.8rem;text-decoration:none!important;flex-direction:column;border-radius:8px;overflow:hidden;min-width:0;&.pulse{", C, "{", N, ";}", k, "{", N, ";}}"),
                 q = (0, l.A)("h4", {
@@ -1418,8 +1418,8 @@
                 O = n(32124),
                 M = n(75499),
                 B = n(78502),
-                j = n(5556),
-                S = n.n(j),
+                S = n(5556),
+                j = n.n(S),
                 q = n(22351),
                 P = n(23253),
                 T = n(84976),
@@ -1470,9 +1470,9 @@
                         s = e.onCloseCallback,
                         u = e.openIndex,
                         m = e.deleteItemCallback,
-                        j = void 0 === m ? null : m,
-                        S = e.onArchiveCallback,
-                        T = void 0 === S ? null : S,
+                        S = void 0 === m ? null : m,
+                        j = e.onArchiveCallback,
+                        T = void 0 === j ? null : j,
                         D = e.type,
                         R = (0, B.a$)().user,
                         U = (0, o.useRef)(null),
@@ -1601,13 +1601,13 @@
                                 y: e.clientY - X.y
                             })
                         }, [X]),
-                        je = (0, o.useCallback)(function(e) {
+                        Se = (0, o.useCallback)(function(e) {
                             e.preventDefault(), Z && Y({
                                 x: e.clientX - te.x,
                                 y: e.clientY - te.y
                             })
                         }, [Z, te]),
-                        Se = (0, o.useCallback)(function() {
+                        je = (0, o.useCallback)(function() {
                             J(!1)
                         }, []),
                         qe = function() {
@@ -1674,9 +1674,9 @@
                         ref: U,
                         className: "tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full tw-overflow-hidden gallery-image-container",
                         onMouseDown: Be,
-                        onMouseMove: je,
-                        onMouseUp: Se,
-                        onMouseLeave: Se
+                        onMouseMove: Se,
+                        onMouseUp: je,
+                        onMouseLeave: je
                     }, fe && o.createElement("div", {
                         className: "tw-flex tw-items-center tw-justify-center tw-absolute tw-inset-0"
                     }, o.createElement(C.M2, {
@@ -1772,7 +1772,7 @@
                         className: "tw-w-full tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
                         title: "Delete ".concat(Ae),
                         onClick: function() {
-                            null == j || j(Ce)
+                            null == S || S(Ce)
                         }
                     }, o.createElement(C.M2, {
                         icon: w.yL,
@@ -1823,13 +1823,13 @@
                 };
             const U = R;
             R.propTypes = {
-                gallery: S().array.isRequired,
-                isOpen: S().bool.isRequired,
-                onCloseCallback: S().func.isRequired,
-                openIndex: S().number.isRequired,
-                deleteItemCallback: S().func,
-                onArchiveCallback: S().func,
-                type: S().string
+                gallery: j().array.isRequired,
+                isOpen: j().bool.isRequired,
+                onCloseCallback: j().func.isRequired,
+                openIndex: j().number.isRequired,
+                deleteItemCallback: j().func,
+                onArchiveCallback: j().func,
+                type: j().string
             };
             const L = function() {
                 var e = (0, l.wA)(),
@@ -2021,8 +2021,8 @@
                 }, o.createElement("span", null, "Clear all"))))
             };
             ue.propTypes = {
-                filters: S().object,
-                group: S().array
+                filters: j().object,
+                group: j().array
             };
             const de = ue;
             var me = n(63576),
@@ -2161,15 +2161,15 @@
                 Oe = n.n(Ie),
                 Me = n(77659),
                 Be = n.n(Me),
-                je = n(55056),
-                Se = n.n(je),
+                Se = n(55056),
+                je = n.n(Se),
                 qe = n(10540),
                 Pe = n.n(qe),
                 Te = n(41113),
                 De = n.n(Te),
                 Fe = n(70506),
                 ze = {};
-            ze.styleTagTransform = De(), ze.setAttributes = Se(), ze.insert = Be().bind(null, "head"), ze.domAPI = Oe(), ze.insertStyleElement = Pe();
+            ze.styleTagTransform = De(), ze.setAttributes = je(), ze.insert = Be().bind(null, "head"), ze.domAPI = Oe(), ze.insertStyleElement = Pe();
             Ne()(Fe.A, ze);
             Fe.A && Fe.A.locals && Fe.A.locals;
 
@@ -2228,9 +2228,9 @@
                         I = N[0],
                         O = N[1],
                         M = (0, o.useState)(!1),
-                        j = (0, r.A)(M, 2),
-                        S = j[0],
-                        q = j[1],
+                        S = (0, r.A)(M, 2),
+                        j = S[0],
+                        q = S[1],
                         P = (0, o.useState)(d()()),
                         D = (0, r.A)(P, 2),
                         F = D[0],
@@ -2323,15 +2323,15 @@
                             userId: null == we ? void 0 : we.id,
                             eventSources: ie.eventSources
                         }, {
-                            skip: null === we || !S
+                            skip: null === we || !j
                         }),
                         Me = Oe.data,
                         Be = void 0 === Me ? {
                             events: [],
                             groups: []
                         } : Me,
-                        je = Oe.isFetching,
-                        Se = Oe.isSuccess,
+                        Se = Oe.isFetching,
+                        je = Oe.isSuccess,
                         qe = Oe.isError,
                         Pe = Oe.error;
                     (0, o.useEffect)(function() {
@@ -2362,7 +2362,7 @@
                         Fe = (0, o.useMemo)(function() {
                             var e = Ae.events,
                                 t = Be.events,
-                                n = S ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
+                                n = j ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
                             return n && 0 !== n.length ? {
                                 eventSources: pe.SM.map(function(e) {
                                     return e.value
@@ -2401,11 +2401,11 @@
                                 languages: [],
                                 groups: []
                             }
-                        }, [Ae, Be, S]),
+                        }, [Ae, Be, j]),
                         ze = (0, o.useMemo)(function() {
                             var e = Ae.events,
                                 t = Be.events,
-                                n = S ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
+                                n = j ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
                             if (!n || 0 === n.length) return [];
                             var r = De();
                             if (null === r) return n.map(Te);
@@ -2433,7 +2433,7 @@
                                 })) && !(r.groups.length > 0 && !r.groups.includes(e.ownerId)))))))));
                                 var t, n, a, o, l, i
                             }).map(Te)
-                        }, [f, Ae, Be, S, ie]);
+                        }, [f, Ae, Be, j, ie]);
                     (0, o.useImperativeHandle)(t, function() {
                         return {
                             updateCalendarSize: function() {
@@ -2451,7 +2451,7 @@
                                 r = null !== (t = e.date) && void 0 !== t ? t : e;
                             e.date && r.setMinutes(r.getMinutes() + r.getTimezoneOffset()), n.changeView("timeGridDay", r)
                         },
-                        Ge = xe || S && je,
+                        Ge = xe || j && Se,
                         _e = function(e) {
                             return {
                                 eventId: e.id,
@@ -2472,8 +2472,8 @@
                             }
                         },
                         Ve = (0, o.useMemo)(function() {
-                            return S ? [].concat((0, Y.A)(Ae.groups), (0, Y.A)(Be.groups)) : Ae.groups
-                        }, [Ae, Be, S]);
+                            return j ? [].concat((0, Y.A)(Ae.groups), (0, Y.A)(Be.groups)) : Ae.groups
+                        }, [Ae, Be, j]);
                     return o.createElement("div", {
                         className: "tw-flex tw-flex-col"
                     }, o.createElement(C.Qc, null, "Calendar"), o.createElement("div", {
@@ -2484,7 +2484,7 @@
                         loading: !0
                     })), o.createElement("div", {
                         className: "tw-mb-10 tw-bg-[#181b1f] tw-rounded tw-p-5 fc tw-relative"
-                    }, ke && (!S || Se) && o.createElement(o.Fragment, null, o.createElement("div", {
+                    }, ke && (!j || je) && o.createElement(o.Fragment, null, o.createElement("div", {
                         className: "tw-flex tw-justify-between tw-flex-row tw-gap-3 tw-flex-wrap"
                     }, o.createElement("div", {
                         className: "tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-items-start sm:tw-items-center"
@@ -2756,8 +2756,8 @@
                 Ot = n(74817),
                 Mt = n(7830),
                 Bt = n(75865),
-                jt = n(62025),
-                St = n(3086),
+                St = n(62025),
+                jt = n(3086),
                 qt = n(53909),
                 Pt = n(91350),
                 Tt = n(54321),
@@ -2999,7 +2999,7 @@
                 }, "Fuzzy")))))
             };
             cn.propTypes = {
-                onChangeCallback: S().func.isRequired
+                onChangeCallback: j().func.isRequired
             };
             const sn = function() {
                 var e = (0, i.Zp)(),
@@ -3212,7 +3212,7 @@
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var kn = [Ft.pb, Dt.Fv, Tt.KM, Pt.x3, qt.Qp, St.TU, jt.Wk, Bt.wZ, Mt.Py, Ot.EJ, It.zm, Nt.Ni, kt.eu, Ct.mG, xt.D4, At.kw, yt.AX, Et.cE, ht.Rb],
+            var kn = [Ft.pb, Dt.Fv, Tt.KM, Pt.x3, qt.Qp, jt.TU, St.Wk, Bt.wZ, Mt.Py, Ot.EJ, It.zm, Nt.Ni, kt.eu, Ct.mG, xt.D4, At.kw, yt.AX, Et.cE, ht.Rb],
                 Nn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
                 In = o.memo(function(e) {
                     var t, n, s = e.horizontal,
@@ -3236,11 +3236,11 @@
                         I = k[1],
                         O = (0, $t.G)().data,
                         M = ((0, B.Om)(), (0, H.P2)().data),
-                        j = (0, l.d4)(function(e) {
+                        S = (0, l.d4)(function(e) {
                             return e.notifications.notifications
                         }) || [],
-                        S = (0, H.w_)().data,
-                        q = void 0 === S ? [] : S,
+                        j = (0, H.w_)().data,
+                        q = void 0 === j ? [] : j,
                         P = (0, B.Fj)().sortedLocations.length,
                         D = (0, l.d4)(function(e) {
                             return e.notifications.groupNotifications
@@ -3269,7 +3269,7 @@
                             u && u(!1)
                         },
                         _ = q || [],
-                        V = (_.includes("permission-user-icons"), _.includes("permission-user-gallery"), _.includes("permission-groups-beta"), null !== (t = j.length) && void 0 !== t ? t : 0);
+                        V = (_.includes("permission-user-icons"), _.includes("permission-user-gallery"), _.includes("permission-groups-beta"), null !== (t = S.length) && void 0 !== t ? t : 0);
                     n = D.filter(function(e) {
                         return e.state === bn.Bp.INVITED
                     }).length;
@@ -3667,8 +3667,8 @@
                     name: "vkod7",
                     styles: "color:#ee5454;background:#07242b;border:#ee5454 solid 4px;&:hover{border-color:#ee6464;}"
                 }),
-                jn = n(57115),
-                Sn = n(9663),
+                Sn = n(57115),
+                jn = n(9663),
                 qn = n(3828),
                 Pn = [];
             const Tn = function() {
@@ -4017,7 +4017,7 @@
                     return Promise.all([n.e(7917), n.e(6955), n.e(5242), n.e(2676)]).then(n.bind(n, 19337))
                 }),
                 Or = o.lazy(function() {
-                    return Promise.all([n.e(1952), n.e(3015), n.e(8242), n.e(4736), n.e(6313), n.e(6683), n.e(7596), n.e(6746), n.e(8497)]).then(n.bind(n, 12805))
+                    return Promise.all([n.e(1952), n.e(3015), n.e(8242), n.e(4736), n.e(6313), n.e(6683), n.e(7596), n.e(6746), n.e(4181)]).then(n.bind(n, 91897))
                 });
             const Mr = function() {
                 var e = (0, l.wA)(),
@@ -4104,10 +4104,10 @@
                 }, o.createElement(s.tH, {
                     fallback: Rn.A
                 }, o.createElement(o.Suspense, {
-                    fallback: o.createElement(o.Fragment, null, o.createElement(jn.A, {
+                    fallback: o.createElement(o.Fragment, null, o.createElement(Sn.A, {
                         className: "tw-mb-2",
                         height: "2.5rem"
-                    }), o.createElement(jn.A, {
+                    }), o.createElement(Sn.A, {
                         delay: "50",
                         height: "480px"
                     }))
@@ -4131,32 +4131,32 @@
                     element: zn(lr)()
                 }), o.createElement(i.qh, {
                     path: "/gallery/icons",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../inventory/user-icons"
                     })
                 }), o.createElement(i.qh, {
                     path: "/gallery/photos",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../inventory/photos"
                     })
                 }), o.createElement(i.qh, {
                     path: "/gallery/emoji",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../inventory/emojis"
                     })
                 }), o.createElement(i.qh, {
                     path: "/gallery/stickers",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../inventory/stickers"
                     })
                 }), o.createElement(i.qh, {
                     path: "/gallery/*",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../inventory/*"
                     })
                 }), o.createElement(i.qh, {
                     path: "/inventory/user-icons",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../user/me?settings=true"
                     })
                 }), o.createElement(i.qh, {
@@ -4167,17 +4167,17 @@
                     element: o.createElement(yr, null)
                 }), o.createElement(i.qh, {
                     path: "/wallet",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../marketplace/wallet"
                     })
                 }), o.createElement(i.qh, {
                     path: "/wallet/purchases/*",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../marketplace/wallet/subscriptions/*"
                     })
                 }), o.createElement(i.qh, {
                     path: "/wallet/store/*",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../marketplace/storefront/*"
                     })
                 }), o.createElement(i.qh, {
@@ -4236,7 +4236,7 @@
                     element: o.createElement(pr, null)
                 }), o.createElement(i.qh, {
                     path: "/groups/:groupId",
-                    element: o.createElement(Sn.A, {
+                    element: o.createElement(jn.A, {
                         to: "../../group/:groupId"
                     })
                 }), o.createElement(i.qh, {
@@ -4276,14 +4276,14 @@
                 }, o.createElement(s.tH, {
                     fallback: Rn.A
                 }, o.createElement(o.Suspense, {
-                    fallback: o.createElement(o.Fragment, null, o.createElement(jn.A, {
+                    fallback: o.createElement(o.Fragment, null, o.createElement(Sn.A, {
                         className: "tw-m-6 tw-mb-4",
                         height: "2.25rem"
-                    }), o.createElement(jn.A, {
+                    }), o.createElement(Sn.A, {
                         className: "tw-m-6 tw-mt-0",
                         delay: "50",
                         height: "1.75rem"
-                    }), o.createElement(jn.A, {
+                    }), o.createElement(Sn.A, {
                         className: "tw-m-6",
                         delay: "100",
                         height: "480px"
@@ -4356,7 +4356,8 @@
                         archived: "emojisArchived"
                     },
                     props: {
-                        exclusive: "propsExclusive",
+                        companions: "propsCompanions",
+                        standard: "propsStandard",
                         archived: "propsArchived"
                     },
                     cosmetics: {
@@ -4420,8 +4421,15 @@
                         useCanvasThumbnail: !0,
                         icon: o.default
                     }),
-                    propsExclusive: s(s({
-                        label: "Exclusive Items"
+                    propsCompanions: s(s({
+                        label: "Companions"
+                    }, m), {}, {
+                        hasArchive: !0,
+                        hasThumbnailName: !0,
+                        icon: l.default
+                    }),
+                    propsStandard: s(s({
+                        label: "Props"
                     }, m), {}, {
                         hasArchive: !0,
                         hasThumbnailName: !0,
@@ -4508,8 +4516,8 @@
                 O = n(82617),
                 M = n(7514),
                 B = n(82628),
-                j = n(85044),
-                S = n(83159),
+                S = n(85044),
+                j = n(83159),
                 q = n(78536),
                 P = n(74353),
                 T = n.n(P),
@@ -4628,19 +4636,19 @@
                     },
                     "group.event.starting": {
                         caption: "Event Starting",
-                        icon: S.ok
+                        icon: j.ok
                     },
                     "group.event.created": {
                         caption: "Event Announcement",
-                        icon: S.ok
+                        icon: j.ok
                     },
                     "event.announcement": {
                         caption: "Event Announcement",
-                        icon: S.ok
+                        icon: j.ok
                     },
                     "invite.instance.contentGated": {
                         caption: "Content Gated",
-                        icon: j.faCircleExclamation
+                        icon: S.faCircleExclamation
                     },
                     "moderation.contentrestriction": {
                         caption: "Content Moderation",
@@ -4747,11 +4755,11 @@
                         icon: y.Ev
                     },
                     B = M.icon,
-                    j = M.caption,
-                    S = t.createdAt && T()(t.createdAt);
+                    S = M.caption,
+                    j = t.createdAt && T()(t.createdAt);
                 return d.createElement(d.Fragment, null, d.createElement(Ne.L4, null, d.createElement(Ne.H2, null, d.createElement(Ne.rn, null, d.createElement(xe.M2, {
                     icon: B
-                }), " ", d.createElement("i", null, j)), (null == t ? void 0 : t.canDelete) && d.createElement(Ne.f2, {
+                }), " ", d.createElement("i", null, S)), (null == t ? void 0 : t.canDelete) && d.createElement(Ne.f2, {
                     title: "Dismiss Notification",
                     onClick: function() {
                         k({
@@ -4774,15 +4782,15 @@
                     url: t.imageUrl
                 })), d.createElement(Ne.NO, null, d.createElement(Ne.yx, null, !!O && d.createElement("strong", null, I ? d.createElement(f.N_, {
                     to: I
-                }, O) : O), (null == S ? void 0 : S.isValid()) && d.createElement("p", {
+                }, O) : O), (null == j ? void 0 : j.isValid()) && d.createElement("p", {
                     className: "tw-mb-0 tw-text-gray-400"
                 }, d.createElement("small", null, d.createElement("time", {
                     dateTime: t.createdAt,
-                    title: S.format("llll")
+                    title: j.format("llll")
                 }, d.createElement(xe.M2, {
                     className: "tw-mr-1",
                     icon: b.a$
-                }), S.fromNow()))), d.createElement("p", null, t.message)), d.createElement(Ne.GU, {
+                }), j.fromNow()))), d.createElement("p", null, t.message)), d.createElement(Ne.GU, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map(function(e) {
                     return d.createElement(Oe, (0, r.A)({
@@ -4833,8 +4841,8 @@
                     icon: o.GR
                 }), " Close")))))
             };
-            var je = ["notification"],
-                Se = {
+            var Se = ["notification"],
+                je = {
                     friendRequest: s.nW,
                     "friend-add": s.nW,
                     invite: i.y_,
@@ -4855,7 +4863,7 @@
                 Pe = ["friend-active", "friend-add", "friend-online"];
             const Te = function(e) {
                 var t, n, i, c, s, v, b, h, E = e.notification,
-                    y = (0, a.A)(e, je),
+                    y = (0, a.A)(e, Se),
                     A = (0, m.wA)(),
                     x = E.type,
                     C = E.senderUserId,
@@ -4867,22 +4875,22 @@
                     B = (0, g.vf)(C, {
                         skip: !C || O
                     }),
-                    j = B.data,
-                    S = B.isLoading,
+                    S = B.data,
+                    j = B.isLoading,
                     q = B.error;
                 if (O) return d.createElement(Me, (0, r.A)({}, y, {
                     notification: E
                 }));
-                if (S) return d.createElement("p", null, "Loading");
+                if (j) return d.createElement("p", null, "Loading");
                 if (M) return d.createElement(Be, (0, r.A)({}, y, {
                     notification: E,
-                    senderUserData: j
+                    senderUserData: S
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var P, T = Se[x],
+                var P, T = je[x],
                     D = qe[x],
-                    F = (0, u.CD)(null == j ? void 0 : j.status).color,
-                    z = (null == j ? void 0 : j.profilePicOverride) || (null == j ? void 0 : j.currentAvatarThumbnailImageUrl),
+                    F = (0, u.CD)(null == S ? void 0 : S.status).color,
+                    z = (null == S ? void 0 : S.profilePicOverride) || (null == S ? void 0 : S.currentAvatarThumbnailImageUrl),
                     R = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (i = E.details) || void 0 === i ? void 0 : i.requestMessage);
                 return d.createElement(Ne.L4, null, d.createElement(Ne.rn, null, d.createElement(xe.M2, {
                     icon: T
@@ -4895,7 +4903,7 @@
                     url: null !== (b = null === (h = E.details) || void 0 === h ? void 0 : h.imageUrl) && void 0 !== b ? b : z
                 })), d.createElement(Ne.NO, null, d.createElement(Ne.yx, null, d.createElement(f.N_, {
                     to: "/home/user/".concat(C)
-                }, d.createElement("strong", null, j.displayName)), " - ", N || {
+                }, d.createElement("strong", null, S.displayName)), " - ", N || {
                     friendRequest: "would like to be your friend!",
                     invite: "has invited you to ".concat((null === (P = E.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
@@ -5130,8 +5138,8 @@
                         O = (0, A.mu)(),
                         M = (0, a.A)(O, 2),
                         B = M[0],
-                        j = (M[1].isLoading, g || I),
-                        S = function() {
+                        S = (M[1].isLoading, g || I),
+                        j = function() {
                             var e = (0, r.A)(u().mark(function e() {
                                 var t;
                                 return u().wrap(function(e) {
@@ -5173,7 +5181,7 @@
                             }
                         }();
                     if (!v) return null;
-                    if (j) return b.createElement("span", {
+                    if (S) return b.createElement("span", {
                         className: "\n          tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n          tw-text-center tw-cursor-pointer tw-items-center\n        ",
                         role: "alert",
                         "aria-busy": "true"
@@ -5186,19 +5194,19 @@
                             return e.favoriteId === n
                         }),
                         P = function() {
-                            if (!j) return q ? S() : l(!0)
+                            if (!S) return q ? j() : l(!0)
                         };
                     return b.createElement(f.$n, {
                         className: "\n        tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-3\n        tw-text-center tw-cursor-pointer tw-items-center tw-rounded-none\n      ",
                         containerClasses: "tw-rounded-none",
                         tabIndex: 0,
                         onClick: P,
-                        disabled: j,
+                        disabled: S,
                         onKeyDown: function(e) {
                             if ("enter" === e.key.toLowerCase()) return P()
                         },
                         "aria-label": "".concat(q ? "Unfavorite" : "Favorite", " User")
-                    }, j && b.createElement(f.M2, {
+                    }, S && b.createElement(f.M2, {
                         icon: y.z1,
                         spin: !0,
                         "aria-label": "loading",
@@ -5233,8 +5241,8 @@
                         k = (0, h.wA)(),
                         M = (0, b.useState)(!1),
                         B = (0, a.A)(M, 2),
-                        j = B[0],
-                        S = B[1],
+                        S = B[0],
+                        j = B[1],
                         q = (0, b.useRef)(null),
                         P = (0, w.qd)(t, {
                             skip: null === t
@@ -5265,7 +5273,7 @@
                         timeout: 3e3
                     }))), (0, b.useEffect)(function() {
                         var e = function(e) {
-                            q.current && !q.current.contains(e.target) && S(!1)
+                            q.current && !q.current.contains(e.target) && j(!1)
                         };
                         return document.addEventListener("mousedown", e),
                             function() {
@@ -5282,7 +5290,7 @@
                                                 userId: t
                                             }).unwrap();
                                         case 3:
-                                            S(!1), k((0, d.X)({
+                                            j(!1), k((0, d.X)({
                                                 title: "Friend Request",
                                                 icon: c.yy,
                                                 message: "Successfully Unfriended.",
@@ -5319,7 +5327,7 @@
                                 ariaLabel: "Friends",
                                 icon: m.vrcFriends,
                                 clickHandler: function() {
-                                    S(function(e) {
+                                    j(function(e) {
                                         return !e
                                     })
                                 }
@@ -5492,7 +5500,7 @@
                             ref: q
                         }, b.createElement(f.$n, {
                             "aria-haspopup": "menu",
-                            "aria-expanded": j,
+                            "aria-expanded": S,
                             "aria-controls": "friend-action-dropdown",
                             className: s,
                             containerClasses: v,
@@ -5505,18 +5513,18 @@
                             height: 20,
                             className: O
                         }), le, b.createElement(f.M2, {
-                            icon: j ? l.S$ : o.xB,
+                            icon: S ? l.S$ : o.xB,
                             width: 14,
                             height: 18,
                             className: (0, p.cx)("tw-align-middle")
-                        })), j && b.createElement("div", {
+                        })), S && b.createElement("div", {
                             id: "friend-action-dropdown",
                             role: "menu",
                             className: (0, p.cx)("tw-w-full tw-absolute tw-overflow-hidden tw-text-option-inactive tw-mt-2 tw-border-solid tw-rounded-md tw-font-medium tw-text-base tw-z-10 tw-cursor-pointer", I)
                         }, b.createElement(N, {
                             userId: t,
                             selectedCallback: function() {
-                                A(), S(!1)
+                                A(), j(!1)
                             },
                             role: "menuitem"
                         }), b.createElement(f.$n, {
@@ -5672,9 +5680,9 @@
                     B = (0, E.useState)({
                         left: !1
                     }),
-                    j = (0, a.A)(B, 2),
-                    S = j[0],
-                    q = j[1],
+                    S = (0, a.A)(B, 2),
+                    j = S[0],
+                    q = S[1],
                     P = (0, E.useState)(!1),
                     T = (0, a.A)(P, 2),
                     D = T[0],
@@ -5819,7 +5827,7 @@
                     icon: d.vH,
                     className: (0, v.cx)(x("#FFFFFF"))
                 })), D && E.createElement("div", {
-                    className: (0, v.cx)(S.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-mt-2 tw-border-solid tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-50 sm:tw-max-w-[170px]", A)
+                    className: (0, v.cx)(j.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-mt-2 tw-border-solid tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-50 sm:tw-max-w-[170px]", A)
                 }, !I && E.createElement(g.$n, {
                     onClick: Y,
                     className: " tw-py-2 tw-px-3 tw-rounded-none",
@@ -5923,10 +5931,10 @@
                         O = f || {},
                         M = O.introAnimation,
                         B = O.mainAnimation,
-                        j = O.baseImage,
-                        S = O.imageUrl,
+                        S = O.baseImage,
+                        j = O.imageUrl,
                         q = (0, l.B)(),
-                        P = d ? null : w || (f ? !q && x || null == j || !j.url ? null != B && B.url ? B.url : null != M && M.url ? M.url : null != j && j.url ? j.url : S : j.url : null),
+                        P = d ? null : w || (f ? !q && x || null == S || !S.url ? null != B && B.url ? B.url : null != M && M.url ? M.url : null != S && S.url ? S.url : j : S.url : null),
                         T = (0, l.F)({
                             src: P,
                             resetKey: v
@@ -6738,4 +6746,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67bc7911c8ea5ed6d8fbfa754f845479855173a41ea391bb1834885dc97d8a1d.js.map
+//# sourceMappingURL=6858cc42f11161fb13625034b9da4586019cabb381ad7203976c9323e9bc9587.js.map
