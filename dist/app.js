@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-11t20-43-20-the-tailor-of-elba--main-prod-public-6369b5a1-9448-4c53-acdc-f4f178dfebe4--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-12t17-51-57-the-bass-of-audrey--main-prod-public-d22c084b-debd-4862-8166-d55ede16d821--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-11t20-43-20-the-tailor-of-elba", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-12t17-51-57-the-bass-of-audrey", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -63058,6 +63058,61 @@
                         var t = new Image;
                         return t.src = e, t.complete
                     }
+            },
+            98462(e, t, n) {
+                "use strict";
+                n.d(t, {
+                    Q: () => l
+                });
+                var r = n(10467),
+                    o = n(54756),
+                    a = n.n(o),
+                    i = null,
+                    s = function() {
+                        return window.AppleID ? Promise.resolve(window.AppleID) : i || (i = new Promise(function(e, t) {
+                            var n = document.createElement("script");
+                            n.src = "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js", n.onload = function() {
+                                window.AppleID ? e(window.AppleID) : (i = null, t(new Error("Apple Sign In script loaded but AppleID is unavailable")))
+                            }, n.onerror = function() {
+                                i = null, n.remove(), t(new Error("Failed to load Apple Sign In script"))
+                            }, document.head.appendChild(n)
+                        }))
+                    },
+                    l = function() {
+                        var e = (0, r.A)(a().mark(function e() {
+                            var t, n, r;
+                            return a().wrap(function(e) {
+                                for (;;) switch (e.prev = e.next) {
+                                    case 0:
+                                        return e.next = 2, s();
+                                    case 2:
+                                        return (n = e.sent).auth.init({
+                                            clientId: "com.vrchat.www",
+                                            scope: "name email",
+                                            redirectURI: window.location.origin + window.location.pathname,
+                                            usePopup: !0
+                                        }), e.next = 6, n.auth.signIn();
+                                    case 6:
+                                        if (null != (r = e.sent) && null !== (t = r.authorization) && void 0 !== t && t.id_token) {
+                                            e.next = 9;
+                                            break
+                                        }
+                                        throw new Error("Apple Sign In failed: no identity token received");
+                                    case 9:
+                                        return e.abrupt("return", {
+                                            identityToken: r.authorization.id_token,
+                                            user: r.user
+                                        });
+                                    case 10:
+                                    case "end":
+                                        return e.stop()
+                                }
+                            }, e)
+                        }));
+                        return function() {
+                            return e.apply(this, arguments)
+                        }
+                    }()
             },
             55717(e, t, n) {
                 "use strict";
@@ -115030,7 +115085,7 @@
         2340: "4634dd5fb7eb8a1cb39e2bf596385ebacaa165babe430d45aef5259ac8cc0f7a",
         2475: "450f91367a6db8a7a86b93ce76a90073af7567a20512f9884693655a92c02fb7",
         2676: "39627bd03bbccaeaa7aabb22a5e8156ded60b421443268b1cf4f0d27b6b13e69",
-        2726: "e97b4a481013cfb0c5923171013a7c8dcae163eb9b04757be9a1b8beee6f2891",
+        2726: "d5571b27dc9d309240ccc7a605d361b791014405843b4199267edfc5082b5f27",
         2789: "5e0335c308a48d5a389f2214ed87658c878632a2d9a91f7034818ec293e3a5d3",
         2876: "4ebd3751d9ea991ad65ea9f98429ffa5f933f3f80b41050d22abd85bd54af72b",
         2996: "77c73e865d893323861cc95e431951defce82f7efbbb08feacff2fca425c8753",
@@ -115095,7 +115150,7 @@
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
         8104: "b3716025ab7eb5cecdd5334e24062bb1d92802f40f5a8e96602cdb1f793b159a",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
-        8202: "da06baca96d1ced69236112ab961ade5ef1fac227b5b4e15b8a456207013e0fe",
+        8202: "b1bc7d75af19393e0b1fb45b6dbd59496f90c79b034f7c7b4b65e933887250fa",
         8229: "c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
@@ -115196,9 +115251,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-11t20-43-20-the-tailor-of-elba"
+        id: "2026-08-12t17-51-57-the-bass-of-audrey"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-11t20-43-20-the-tailor-of-elba"
+        id: "2026-08-12t17-51-57-the-bass-of-audrey"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116951,7 +117006,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-11t20-43-20-the-tailor-of-elba",
+                release: "2026-08-12t17-51-57-the-bass-of-audrey",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -123138,7 +123193,7 @@
                 className: "tw-mb-2"
             }, "Date of Birth"), r.createElement("div", {
                 className: "tw-justify-between tw-align-middle tw-flex"
-            }, r.createElement(Ua, {
+            }, r.createElement(Ga, {
                 className: "tw-w-[129px] tw-h-10",
                 id: "age_month",
                 "aria-label": "Birthday Month",
@@ -123276,16 +123331,156 @@
                 className: "tw-text-error-message-red tw-text-xs tw-my-1"
             }, ye)))))
         };
-        var Ua = (0, Oo.A)("select", {
+        var Ua, Ga = (0, Oo.A)("select", {
                 target: "e1iax06v0"
             })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#053c48"
             }, ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#086c84"
             }, ";}"),
-            Ga = s(25161);
+            za = s(98462),
+            qa = function() {
+                var e = (window.location.origin + window.location.pathname).split("/home"),
+                    t = "".concat(e[0], "/home/steam/auth/mobile");
+                window.location.href = function(e) {
+                    var t = e.returnTo,
+                        n = new URLSearchParams({
+                            "openid.ns": "http://specs.openid.net/auth/2.0",
+                            "openid.mode": "checkid_setup",
+                            "openid.return_to": t,
+                            "openid.realm": new URL(t).origin,
+                            "openid.identity": "http://specs.openid.net/auth/2.0/identifier_select",
+                            "openid.claimed_id": "http://specs.openid.net/auth/2.0/identifier_select"
+                        });
+                    return "".concat("https://steamcommunity.com/openid/login", "?").concat(n.toString())
+                }({
+                    returnTo: t
+                })
+            },
+            Va = {
+                apple: {
+                    label: "Apple",
+                    callbackUrl: "com.vrchat.mobile://oauth/apple",
+                    authenticate: (Ua = (0, e.A)(n().mark(function e() {
+                        var t, r;
+                        return n().wrap(function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    return e.next = 2, (0, za.Q)();
+                                case 2:
+                                    return t = e.sent, r = t.identityToken, e.abrupt("return", {
+                                        identityToken: r
+                                    });
+                                case 5:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }, e)
+                    })), function() {
+                        return Ua.apply(this, arguments)
+                    })
+                },
+                steam: {
+                    label: "Steam",
+                    callbackUrl: "com.vrchat.mobile://openid/steam",
+                    authenticate: function(e) {
+                        var t = e.searchParams;
+                        return t.get("openid.mode") ? Object.fromEntries(t.entries()) : (qa(), null)
+                    }
+                }
+            };
+        const Ha = function(t) {
+            var o = t.provider,
+                a = (0, i.ok)(),
+                s = (0, To.A)(a, 2),
+                l = s[0],
+                c = s[1],
+                u = (0, r.useState)(!1),
+                d = (0, To.A)(u, 2),
+                p = d[0],
+                f = d[1],
+                m = Va[o],
+                h = function() {
+                    for (var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = new URL(m.callbackUrl), n = 0, r = Object.entries(e); n < r.length; n++) {
+                        var o = (0, To.A)(r[n], 2),
+                            a = o[0],
+                            i = o[1];
+                        t.searchParams.set(a, i)
+                    }
+                    window.location.href = t.toString()
+                },
+                A = function() {
+                    var t = (0, e.A)(n().mark(function e() {
+                        var t;
+                        return n().wrap(function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    return f(!1), e.prev = 1, e.next = 4, m.authenticate({
+                                        searchParams: l
+                                    });
+                                case 4:
+                                    if (t = e.sent) {
+                                        e.next = 7;
+                                        break
+                                    }
+                                    return e.abrupt("return");
+                                case 7:
+                                    c({}, {
+                                        replace: !0
+                                    }), h(t), e.next = 15;
+                                    break;
+                                case 11:
+                                    e.prev = 11, e.t0 = e.catch(1), console.error("Mobile ".concat(o, " sign in failed:"), e.t0), f(!0);
+                                case 15:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }, e, null, [
+                            [1, 11]
+                        ])
+                    }));
+                    return function() {
+                        return t.apply(this, arguments)
+                    }
+                }();
+            return (0, r.useEffect)(function() {
+                A()
+            }, []), r.createElement(xa.A, null, r.createElement(da.Qc, null, "Authenticating with ", m.label), r.createElement("div", {
+                className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+            }, r.createElement("div", {
+                className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+            }, r.createElement("div", {
+                className: "tw-mb-5"
+            }, r.createElement(da.M2, {
+                icon: Ca.faShieldHalved,
+                className: "tw-w-[72px] tw-h-[72px]"
+            })), r.createElement("h4", {
+                className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+            }, "Authenticating with ", m.label), p ? r.createElement(r.Fragment, null, r.createElement(da.$T, {
+                type: "error",
+                title: "".concat(m.label, " sign in failed"),
+                className: "tw-w-full",
+                slim: !0
+            }, "We couldn't sign you in with ", m.label, ". You can try again, or return to the app and choose another option."), r.createElement("div", {
+                className: "tw-flex tw-flex-col tw-items-center tw-gap-3 tw-mt-6"
+            }, r.createElement(da.$n, {
+                onClick: A
+            }, "Continue with ", m.label), r.createElement(da.$n, {
+                neutral: !0,
+                onClick: function() {
+                    return h()
+                }
+            }, "Return to the app"))) : r.createElement(r.Fragment, null, r.createElement("p", {
+                className: "tw-text-center tw-mt-6"
+            }, "Please wait..."), r.createElement("div", {
+                className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
+            }, r.createElement(wa.A, {
+                size: "5x"
+            }))))))
+        };
+        var Wa = s(25161);
 
-        function za(e, t) {
+        function Ya(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123296,18 +123491,18 @@
             return n
         }
 
-        function qa(e) {
+        function Qa(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? za(Object(n), !0).forEach(function(t) {
+                t % 2 ? Ya(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : za(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ya(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Va = function() {
+        const Ka = function() {
             var t = (0, l.Zp)(),
                 o = (0, i.ok)(),
                 a = (0, To.A)(o, 2),
@@ -123354,7 +123549,7 @@
                                 }).unwrap();
                             case 19:
                                 return m = e.sent, t((null === (d = m.state) || void 0 === d ? void 0 : d.redirectTo) || "/home/profile", {
-                                    state: qa(qa({}, (null === (f = m.state) || void 0 === f ? void 0 : f.redirectState) || {}), {}, {
+                                    state: Qa(Qa({}, (null === (f = m.state) || void 0 === f ? void 0 : f.redirectState) || {}), {}, {
                                         twitchToken: m.provisionalId
                                     }),
                                     replace: !0
@@ -123381,7 +123576,7 @@
             }, r.createElement("div", {
                 className: "tw-mb-5"
             }, r.createElement(da.M2, {
-                icon: Ga.CQ,
+                icon: Wa.CQ,
                 className: "tw-w-[72px] tw-h-[72px]"
             })), r.createElement("h4", {
                 className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
@@ -123397,7 +123592,7 @@
             })))))
         };
 
-        function Ha(e, t) {
+        function Ja(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123408,18 +123603,18 @@
             return n
         }
 
-        function Wa(e) {
+        function Za(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Ha(Object(n), !0).forEach(function(t) {
+                t % 2 ? Ja(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ha(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ja(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Ya = function() {
+        const $a = function() {
             var t = (0, l.Zp)(),
                 o = (0, l.zy)().state,
                 a = (0, w.TE)(),
@@ -123466,7 +123661,7 @@
                                     return e.abrupt("return");
                                 case 9:
                                     t(null !== (a = null == o ? void 0 : o.redirectTo) && void 0 !== a ? a : "/home", {
-                                        state: Wa({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
+                                        state: Za({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
                                     }), e.next = 17;
                                     break;
                                 case 12:
@@ -123524,67 +123719,67 @@
                 type: "submit"
             }, "Next")))))
         };
-        var Qa = r.lazy(function() {
+        var Xa = r.lazy(function() {
                 return s.e(2726).then(s.bind(s, 52726))
             }),
-            Ka = r.lazy(function() {
+            ei = r.lazy(function() {
                 return Promise.all([s.e(9915), s.e(3968)]).then(s.bind(s, 43968))
             }),
-            Ja = r.lazy(function() {
+            ti = r.lazy(function() {
                 return s.e(800).then(s.bind(s, 30800))
             }),
-            Za = r.lazy(function() {
+            ni = r.lazy(function() {
                 return s.e(2092).then(s.bind(s, 22092))
             }),
-            $a = r.lazy(function() {
+            ri = r.lazy(function() {
                 return s.e(9381).then(s.bind(s, 79381))
             }),
-            Xa = r.lazy(function() {
+            oi = r.lazy(function() {
                 return s.e(2274).then(s.bind(s, 42274))
             }),
-            ei = r.lazy(function() {
+            ai = r.lazy(function() {
                 return s.e(9370).then(s.bind(s, 29370))
             }),
-            ti = r.lazy(function() {
+            ii = r.lazy(function() {
                 return s.e(7484).then(s.bind(s, 57484))
             }),
-            ni = r.lazy(function() {
+            si = r.lazy(function() {
                 return Promise.all([s.e(2331), s.e(9772), s.e(2876)]).then(s.bind(s, 22876))
             }),
-            ri = r.lazy(function() {
+            li = r.lazy(function() {
                 return s.e(1840).then(s.bind(s, 21840))
             }),
-            oi = r.lazy(function() {
+            ci = r.lazy(function() {
                 return s.e(7224).then(s.bind(s, 27224))
             }),
-            ai = r.lazy(function() {
+            ui = r.lazy(function() {
                 return s.e(122).then(s.bind(s, 122))
             }),
-            ii = r.lazy(function() {
+            di = r.lazy(function() {
                 return s.e(3441).then(s.bind(s, 63441))
             }),
-            si = r.lazy(function() {
+            pi = r.lazy(function() {
                 return s.e(776).then(s.bind(s, 60776))
             }),
-            li = r.lazy(function() {
+            fi = r.lazy(function() {
                 return s.e(2475).then(s.bind(s, 22475))
             }),
-            ci = r.lazy(function() {
+            mi = r.lazy(function() {
                 return s.e(962).then(s.bind(s, 60962))
             }),
-            ui = r.lazy(function() {
+            hi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
             }),
-            di = r.lazy(function() {
+            Ai = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
             }),
-            pi = r.lazy(function() {
+            gi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
             }),
-            fi = r.lazy(function() {
+            Bi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(7906), s.e(2138), s.e(6578)]).then(s.bind(s, 16578))
             });
-        const mi = function() {
+        const vi = function() {
             (0, _o.zn)();
             var e = (0, w.P2)(void 0, {
                     refetchOnReconnect: !0
@@ -123599,34 +123794,34 @@
                 fallback: r.createElement(Co.A, null)
             }, r.createElement(ba, null), r.createElement(So, null), r.createElement(l.BV, null, r.createElement(l.qh, {
                 path: "/home/instance-not-found",
-                element: r.createElement(li, null)
+                element: r.createElement(fi, null)
             }), r.createElement(l.qh, {
                 path: "/home/launch",
-                element: r.createElement(Ka, null)
-            }), r.createElement(l.qh, {
-                path: "/home/launch/*",
-                element: r.createElement(Ka, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverify",
-                element: r.createElement($a, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverifyloginplace",
-                element: r.createElement($a, null)
-            }), r.createElement(l.qh, {
-                path: "/home/succeedverifyloginplace",
-                element: r.createElement(Xa, null)
-            }), r.createElement(l.qh, {
-                path: "/home/ageverificationstatus",
-                element: r.createElement(ci, null)
-            }), r.createElement(l.qh, {
-                path: "/home/critical",
                 element: r.createElement(ei, null)
             }), r.createElement(l.qh, {
+                path: "/home/launch/*",
+                element: r.createElement(ei, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverify",
+                element: r.createElement(ri, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverifyloginplace",
+                element: r.createElement(ri, null)
+            }), r.createElement(l.qh, {
+                path: "/home/succeedverifyloginplace",
+                element: r.createElement(oi, null)
+            }), r.createElement(l.qh, {
+                path: "/home/ageverificationstatus",
+                element: r.createElement(mi, null)
+            }), r.createElement(l.qh, {
+                path: "/home/critical",
+                element: r.createElement(ai, null)
+            }), r.createElement(l.qh, {
                 path: "/home/unverified",
-                element: r.createElement(ti, null)
+                element: r.createElement(ii, null)
             }), r.createElement(l.qh, {
                 path: "/home/login",
-                element: r.createElement(Qa, null)
+                element: r.createElement(Xa, null)
             }), r.createElement(l.qh, {
                 path: "/home/login/discord/finalize",
                 element: r.createElement(ja, {
@@ -123644,46 +123839,46 @@
                 })
             }), r.createElement(l.qh, {
                 path: "/home/register",
-                element: r.createElement(ni, null)
+                element: r.createElement(si, null)
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauth",
-                element: r.createElement(ai, null)
+                element: r.createElement(ui, null)
             }), r.createElement(l.qh, {
                 path: "/home/emailtwofactorauth",
-                element: r.createElement(ai, {
+                element: r.createElement(ui, {
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/stepupauth",
-                element: r.createElement(ai, {
+                element: r.createElement(ui, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/emailstepupauth",
-                element: r.createElement(ai, {
+                element: r.createElement(ui, {
                     isStepUpVerification: !0,
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauthrecovery",
-                element: r.createElement(ii, null)
+                element: r.createElement(di, null)
             }), r.createElement(l.qh, {
                 path: "/home/stepupauthrecovery",
-                element: r.createElement(ii, {
+                element: r.createElement(di, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/verify",
-                element: r.createElement(Za, null)
+                element: r.createElement(ni, null)
             }), r.createElement(l.qh, {
                 path: "/home/verify-password",
-                element: r.createElement(Ya, null)
+                element: r.createElement($a, null)
             }), r.createElement(l.qh, {
                 path: "/home/password",
-                element: r.createElement(oi, null)
+                element: r.createElement(ci, null)
             }), r.createElement(l.qh, {
                 path: "/home/account-upgrade",
-                element: r.createElement(Ja, null)
+                element: r.createElement(ti, null)
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth",
                 element: r.createElement(Ia, {
@@ -123696,28 +123891,38 @@
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twitch/auth",
-                element: r.createElement(Va, null)
+                element: r.createElement(Ka, null)
+            }), r.createElement(l.qh, {
+                path: "/home/steam/auth/mobile",
+                element: r.createElement(Ha, {
+                    provider: "steam"
+                })
+            }), r.createElement(l.qh, {
+                path: "/home/apple/auth/mobile",
+                element: r.createElement(Ha, {
+                    provider: "apple"
+                })
             }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
-                element: r.createElement(ri, null)
+                element: r.createElement(li, null)
             }), (n || !(null != t && t.id)) && r.createElement(l.qh, {
                 path: "/home/group/:ownerId/calendar/:eventId",
                 element: r.createElement(ya.A, null)
             }), r.createElement(l.qh, {
                 path: "/home/tosupdated",
-                element: ko(si)()
-            }), r.createElement(l.qh, {
-                path: "/home/oauth",
-                element: ko(ui)()
-            }), r.createElement(l.qh, {
-                path: "/home/sso/canny",
-                element: ko(di)()
-            }), r.createElement(l.qh, {
-                path: "/home/sso/furality",
                 element: ko(pi)()
             }), r.createElement(l.qh, {
+                path: "/home/oauth",
+                element: ko(hi)()
+            }), r.createElement(l.qh, {
+                path: "/home/sso/canny",
+                element: ko(Ai)()
+            }), r.createElement(l.qh, {
+                path: "/home/sso/furality",
+                element: ko(gi)()
+            }), r.createElement(l.qh, {
                 path: "/home/*",
-                element: ko(fi)()
+                element: ko(Bi)()
             }), r.createElement(l.qh, {
                 path: "*",
                 element: r.createElement(l.C5, {
@@ -123726,32 +123931,32 @@
                 })
             })))))))
         };
-        var hi = s(85072),
-            Ai = s.n(hi),
-            gi = s(97825),
-            Bi = s.n(gi),
-            vi = s(77659),
-            bi = s.n(vi),
-            yi = s(55056),
-            Ci = s.n(yi),
-            wi = s(10540),
-            xi = s.n(wi),
-            Di = s(41113),
-            Ei = s.n(Di),
-            Ii = s(56275),
-            ki = {};
-        ki.styleTagTransform = Ei(), ki.setAttributes = Ci(), ki.insert = bi().bind(null, "head"), ki.domAPI = Bi(), ki.insertStyleElement = xi();
-        Ai()(Ii.A, ki);
-        Ii.A && Ii.A.locals && Ii.A.locals;
-        var _i = document.getElementById("app"),
-            Si = function() {
-                Je(), p(), (0, o.H)(_i).render(r.createElement(a.Kq, {
+        var bi = s(85072),
+            yi = s.n(bi),
+            Ci = s(97825),
+            wi = s.n(Ci),
+            xi = s(77659),
+            Di = s.n(xi),
+            Ei = s(55056),
+            Ii = s.n(Ei),
+            ki = s(10540),
+            _i = s.n(ki),
+            Si = s(41113),
+            Oi = s.n(Si),
+            Ti = s(56275),
+            Ni = {};
+        Ni.styleTagTransform = Oi(), Ni.setAttributes = Ii(), Ni.insert = Di().bind(null, "head"), Ni.domAPI = wi(), Ni.insertStyleElement = _i();
+        yi()(Ti.A, Ni);
+        Ti.A && Ti.A.locals && Ti.A.locals;
+        var Pi = document.getElementById("app"),
+            Li = function() {
+                Je(), p(), (0, o.H)(Pi).render(r.createElement(a.Kq, {
                     store: Ao
                 }, r.createElement(i.Kd, {
                     basename: "/"
                 }, r.createElement(l.BV, null, r.createElement(l.qh, {
                     path: "*",
-                    element: r.createElement(mi, null)
+                    element: r.createElement(vi, null)
                 }))))), S(Ao)
             };
         (0, e.A)(n().mark(function e() {
@@ -123759,7 +123964,7 @@
             return n().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Si();
+                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Li();
                     case 3:
                     case "end":
                         return e.stop()

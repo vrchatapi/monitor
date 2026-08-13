@@ -5,21 +5,21 @@
             var n = "discord",
                 r = [],
                 o = "f392",
-                i = "M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z";
+                a = "M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z";
             t.mw = {
                 prefix: "fab",
                 iconName: n,
-                icon: [640, 512, r, o, i]
+                icon: [640, 512, r, o, a]
             }, t._2 = t.mw
         },
         52726(e, t, n) {
             n.r(t), n.d(t, {
-                default: () => q
+                default: () => D
             });
             var r = n(10467),
                 o = n(82544),
-                i = n(64850),
-                a = n(86342),
+                a = n(64850),
+                i = n(86342),
                 l = n(73238),
                 u = n(54756),
                 c = n.n(u),
@@ -29,8 +29,8 @@
                 m = n(84976),
                 w = n(24751),
                 v = n(558),
-                h = n(6324),
-                f = n(37097),
+                f = n(6324),
+                h = n(37097),
                 g = n(66911),
                 k = n(32662),
                 b = n(53818);
@@ -38,20 +38,20 @@
                 var t = e.trackingEventName,
                     n = void 0 === t ? null : t,
                     r = (0, k.Mj)("campaigns", []),
-                    i = (0, o.A)(r, 2),
-                    a = i[0],
-                    l = i[1],
+                    a = (0, o.A)(r, 2),
+                    i = a[0],
+                    l = a[1],
                     u = (0, k.Mj)("campaignsSeen", []),
                     c = (0, o.A)(u, 2),
                     d = c[0],
                     p = c[1],
-                    m = (0, f.A)();
+                    m = (0, h.A)();
                 (0, s.useEffect)(function() {
                     if (null !== m) {
                         null !== n && (0, b.u4)(n, {
                             campaign: m
                         });
-                        var e = [].concat((0, g.A)(a), [m]);
+                        var e = [].concat((0, g.A)(i), [m]);
                         l((0, g.A)(new Map(e.map(function(e) {
                             return [e.id, e]
                         })).values())), p(d.filter(function(e) {
@@ -71,19 +71,19 @@
                 S = n(53369),
                 U = n(82030),
                 _ = n(5556),
-                I = n.n(_),
-                O = n(25423),
-                D = n(17535),
-                P = function(e) {
+                O = n.n(_),
+                V = n(25423),
+                R = n(17535),
+                q = function(e) {
                     var t = e.unlinkedUser,
                         n = e.onLink,
                         r = e.onCancel,
                         o = e.linkProvider;
-                    return s.createElement(O.A, {
+                    return s.createElement(V.A, {
                         isOpen: null == t ? void 0 : t.displayName,
                         toggle: r,
                         centered: !0
-                    }, s.createElement(D.A, {
+                    }, s.createElement(R.A, {
                         className: "tw-bg-[#171B1F] tw-text-white tw-p-5"
                     }, s.createElement("h2", {
                         className: "text-center ty-my-5 tw-p-5"
@@ -104,15 +104,15 @@
                         className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
                     }, "Cancel"), " ")))
                 };
-            P.propTypes = {
-                unlinkedUser: I().object,
-                onLink: I().func.isRequired,
-                onCancel: I().func.isRequired,
-                linkProvider: I().string.isRequired
+            q.propTypes = {
+                unlinkedUser: O().object,
+                onLink: O().func.isRequired,
+                onCancel: O().func.isRequired,
+                linkProvider: O().string.isRequired
             };
-            const R = P;
-            var V = n(97890);
-            const q = function() {
+            const P = q;
+            var X = n(97890);
+            const D = function() {
                 var e;
                 A({
                     trackingEventName: "Login_Campaign_View"
@@ -122,34 +122,34 @@
                     u = (0, p.zy)().state,
                     g = (0, x._L)(),
                     _ = (0, o.A)(g, 2),
-                    I = _[0],
-                    O = _[1],
-                    D = O.isLoading,
-                    P = O.error,
-                    q = O.isError,
+                    O = _[0],
+                    V = _[1],
+                    R = V.isLoading,
+                    q = V.error,
+                    D = V.isError,
                     z = (0, m.ok)(),
-                    X = (0, o.A)(z, 2),
-                    j = (X[0], X[1], (0, x.xG)()),
-                    M = (0, o.A)(j, 2),
-                    G = M[0],
-                    $ = M[1],
+                    I = (0, o.A)(z, 2),
+                    M = (I[0], I[1], (0, x.xG)()),
+                    j = (0, o.A)(M, 2),
+                    G = j[0],
+                    $ = j[1],
                     B = $.isLoading,
                     Z = $.error,
                     K = $.isError,
-                    Q = (0, x.Mj)(),
-                    H = (0, o.A)(Q, 2),
-                    J = H[0],
-                    W = H[1],
+                    H = (0, x.Mj)(),
+                    J = (0, o.A)(H, 2),
+                    Q = J[0],
+                    W = J[1],
                     Y = W.isLoading,
                     ee = W.error,
                     te = W.isError,
                     ne = (0, x.Ng)(),
                     re = (0, o.A)(ne, 1)[0],
                     oe = (0, x.P2)().data,
-                    ie = (0, s.useState)(""),
-                    ae = (0, o.A)(ie, 2),
-                    le = ae[0],
-                    ue = ae[1],
+                    ae = (0, s.useState)(""),
+                    ie = (0, o.A)(ae, 2),
+                    le = ie[0],
+                    ue = ie[1],
                     ce = (0, s.useState)(""),
                     se = (0, o.A)(ce, 2),
                     de = se[0],
@@ -157,16 +157,16 @@
                     me = (0, s.useState)(null),
                     we = (0, o.A)(me, 2),
                     ve = we[0],
-                    he = we[1],
-                    fe = (0, s.useState)(null),
-                    ge = (0, o.A)(fe, 2),
+                    fe = we[1],
+                    he = (0, s.useState)(null),
+                    ge = (0, o.A)(he, 2),
                     ke = ge[0],
                     be = ge[1],
                     Ae = (0, s.useState)(null),
                     xe = (0, o.A)(Ae, 2),
                     ye = xe[0],
                     Ee = xe[1],
-                    Te = (0, f.A)(),
+                    Te = (0, h.A)(),
                     Ne = (0, x.a2)(),
                     Fe = (0, o.A)(Ne, 2),
                     Le = Fe[0],
@@ -174,35 +174,35 @@
                     Se = (0, x.ey)(),
                     Ue = (0, o.A)(Se, 2),
                     _e = Ue[0],
-                    Ie = Ue[1].isLoading,
-                    Oe = (0, x.fC)(),
-                    De = (0, o.A)(Oe, 2),
-                    Pe = De[0],
-                    Re = De[1].isLoading,
-                    Ve = (0, x.w1)(),
-                    qe = (0, o.A)(Ve, 2),
-                    ze = qe[0],
-                    Xe = qe[1].isLoading,
-                    je = (0, x.gV)(),
-                    Me = (0, o.A)(je, 2),
-                    Ge = Me[0],
-                    $e = Me[1],
+                    Oe = Ue[1].isLoading,
+                    Ve = (0, x.fC)(),
+                    Re = (0, o.A)(Ve, 2),
+                    qe = Re[0],
+                    Pe = Re[1].isLoading,
+                    Xe = (0, x.w1)(),
+                    De = (0, o.A)(Xe, 2),
+                    ze = De[0],
+                    Ie = De[1].isLoading,
+                    Me = (0, x.gV)(),
+                    je = (0, o.A)(Me, 2),
+                    Ge = je[0],
+                    $e = je[1],
                     Be = $e.isLoading,
                     Ze = $e.error,
                     Ke = $e.isError,
-                    Qe = (0, x.wr)(),
-                    He = (0, o.A)(Qe, 2),
-                    Je = He[0],
-                    We = He[1],
+                    He = (0, x.wr)(),
+                    Je = (0, o.A)(He, 2),
+                    Qe = Je[0],
+                    We = Je[1],
                     Ye = We.isLoading,
                     et = We.error,
                     tt = We.isError,
                     nt = 2 === (null == u ? void 0 : u.discordOAuthVersion) ? _e : Le,
-                    rt = 2 === (null == u ? void 0 : u.discordOAuthVersion) ? Ge : Je,
+                    rt = 2 === (null == u ? void 0 : u.discordOAuthVersion) ? Ge : Qe,
                     ot = Ye || Be,
-                    it = et || Ze,
-                    at = tt || Ke,
-                    lt = Ce || Ie,
+                    at = et || Ze,
+                    it = tt || Ke,
+                    lt = Ce || Oe,
                     ut = function() {
                         null != u && u.redirectTo ? t(u.redirectTo) : t("/home")
                     };
@@ -212,7 +212,7 @@
                     null != oe && oe.id && ut()
                 }, [oe]), (0, s.useEffect)(function() {
                     (0, r.A)(c().mark(function e() {
-                        var t, r, o, a, l;
+                        var t, r, o, i, l;
                         return c().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
@@ -236,15 +236,15 @@
                                     }
                                     return e.abrupt("return", n((0, N.X)({
                                         title: "Failure",
-                                        message: null !== (a = null === (l = response) || void 0 === l || null === (l = l.error) || void 0 === l || null === (l = l.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== a ? a : "Discord Authentication Failed",
-                                        icon: i.X4,
+                                        message: null !== (i = null === (l = response) || void 0 === l || null === (l = l.error) || void 0 === l || null === (l = l.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== i ? i : "Discord Authentication Failed",
+                                        icon: a.X4,
                                         color: "danger",
                                         timeout: 5e3
                                     })));
                                 case 9:
                                     return e.abrupt("return", ct(t));
                                 case 10:
-                                    return e.abrupt("return", he({
+                                    return e.abrupt("return", fe({
                                         discordAccessToken: t,
                                         unlinkedUser: null == r ? void 0 : r.data
                                     }));
@@ -263,11 +263,11 @@
                 }, []);
                 var ct = function() {
                         var e = (0, r.A)(c().mark(function e(r) {
-                            var o, a, l, s, d, p, m;
+                            var o, i, l, s, d, p, m;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, he(null), e.next = 4, rt({
+                                        return e.prev = 0, fe(null), e.next = 4, rt({
                                             token: r
                                         }).unwrap();
                                     case 4:
@@ -290,7 +290,7 @@
                                         }), ut(), e.next = 21;
                                         break;
                                     case 11:
-                                        if (e.prev = 11, e.t0 = e.catch(0), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || !a.requiresTwoFactorAuth) {
+                                        if (e.prev = 11, e.t0 = e.catch(0), 402 !== (null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.status) || null === e.t0 || void 0 === e.t0 || null === (i = e.t0.data) || void 0 === i || !i.requiresTwoFactorAuth) {
                                             e.next = 19;
                                             break
                                         }
@@ -300,7 +300,7 @@
                                             ticket: d.ticket,
                                             stepUpToken: d.stepUpToken,
                                             redirectState: {
-                                                oauthProvider: V.zN.DISCORD,
+                                                oauthProvider: X.zN.DISCORD,
                                                 continueDiscordAccessToken: r,
                                                 unlinkedUser: ve.unlinkedUser,
                                                 redirectTo: "/home/login",
@@ -313,7 +313,7 @@
                                         return console.error("Failed to link Discord account:", e.t0), e.abrupt("return", n((0, N.X)({
                                             title: "Failure",
                                             message: null !== (l = null === e.t0 || void 0 === e.t0 || null === (s = e.t0.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message) && void 0 !== l ? l : "Discord Authentication Failed",
-                                            icon: i.X4,
+                                            icon: a.X4,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -331,7 +331,7 @@
                     }(),
                     st = function() {
                         var e = (0, r.A)(c().mark(function e(r) {
-                            var o, a, l, u, s, d, p, m;
+                            var o, i, l, u, s, d, p, m;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -346,7 +346,7 @@
                                         return e.abrupt("return", t("/home/login/google/finalize", {
                                             state: {
                                                 continueToken: o.continueToken,
-                                                reservedName: null == o || null === (a = o.reservedName) || void 0 === a ? void 0 : a.displayName
+                                                reservedName: null == o || null === (i = o.reservedName) || void 0 === i ? void 0 : i.displayName
                                             }
                                         }));
                                     case 7:
@@ -367,7 +367,7 @@
                                             ticket: d.ticket,
                                             stepUpToken: d.stepUpToken,
                                             redirectState: {
-                                                oauthProvider: V.zN.GOOGLE,
+                                                oauthProvider: X.zN.GOOGLE,
                                                 continueIdToken: r,
                                                 unlinkedUser: null == ke ? void 0 : ke.unlinkedUser,
                                                 redirectTo: "/home/login"
@@ -379,7 +379,7 @@
                                         return console.error("Failed to link Google account:", e.t0), e.abrupt("return", n((0, N.X)({
                                             title: "Failure",
                                             message: null !== (u = null === e.t0 || void 0 === e.t0 || null === (s = e.t0.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message) && void 0 !== u ? u : "Google Authentication Failed",
-                                            icon: i.X4,
+                                            icon: a.X4,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -397,11 +397,11 @@
                     }(),
                     dt = function() {
                         var e = (0, r.A)(c().mark(function e(r) {
-                            var o, a, l, u, s, d, p, m;
+                            var o, i, l, u, s, d, p, m;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, J({
+                                        return e.prev = 0, e.next = 3, Q({
                                             identityToken: r
                                         }).unwrap();
                                     case 3:
@@ -412,7 +412,7 @@
                                         return e.abrupt("return", t("/home/login/apple/finalize", {
                                             state: {
                                                 continueToken: o.continueToken,
-                                                reservedName: null == o || null === (a = o.reservedName) || void 0 === a ? void 0 : a.displayName,
+                                                reservedName: null == o || null === (i = o.reservedName) || void 0 === i ? void 0 : i.displayName,
                                                 requestedFields: null == o ? void 0 : o.requestedFields
                                             }
                                         }));
@@ -434,7 +434,7 @@
                                             ticket: d.ticket,
                                             stepUpToken: d.stepUpToken,
                                             redirectState: {
-                                                oauthProvider: V.zN.APPLE,
+                                                oauthProvider: X.zN.APPLE,
                                                 continueAppleIdentityToken: r,
                                                 redirectTo: "/home/login"
                                             }
@@ -445,7 +445,7 @@
                                         return console.error("Failed to link Apple account:", e.t0), e.abrupt("return", n((0, N.X)({
                                             title: "Failure",
                                             message: null !== (u = null === e.t0 || void 0 === e.t0 || null === (s = e.t0.data) || void 0 === s || null === (s = s.error) || void 0 === s ? void 0 : s.message) && void 0 !== u ? u : "Apple Authentication Failed",
-                                            icon: i.X4,
+                                            icon: a.X4,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -463,7 +463,7 @@
                     }(),
                     pt = function() {
                         var e = (0, r.A)(c().mark(function e() {
-                            var t, r, o, a, l;
+                            var t, r, o, i, l;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
@@ -489,8 +489,8 @@
                                         }
                                         return e.abrupt("return", n((0, N.X)({
                                             title: "Failure",
-                                            message: null !== (a = null == r || null === (l = r.error) || void 0 === l || null === (l = l.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== a ? a : "Apple Authentication Failed",
-                                            icon: i.X4,
+                                            message: null !== (i = null == r || null === (l = r.error) || void 0 === l || null === (l = l.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== i ? i : "Apple Authentication Failed",
+                                            icon: a.X4,
                                             color: "danger",
                                             timeout: 5e3
                                         })));
@@ -505,7 +505,7 @@
                                         e.prev = 16, e.t0 = e.catch(0), console.error("Apple Sign In Error:", e.t0), n((0, N.X)({
                                             title: "Failure",
                                             message: "Apple Authentication Failed",
-                                            icon: i.X4,
+                                            icon: a.X4,
                                             color: "danger",
                                             timeout: 5e3
                                         }));
@@ -523,18 +523,18 @@
                     }();
                 (0, s.useEffect)(function() {
                     (0, r.A)(c().mark(function e() {
-                        var t, r, o, a, l, u, s, d;
+                        var t, r, o, i, l, u, s, d;
                         return c().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    if (t = window.location.hash.substring(1), r = new URLSearchParams(t), o = r.get("id_token"), !(a = r.get("error"))) {
+                                    if (t = window.location.hash.substring(1), r = new URLSearchParams(t), o = r.get("id_token"), !(i = r.get("error"))) {
                                         e.next = 8;
                                         break
                                     }
-                                    return history.replaceState(null, "", window.location.pathname), console.error("Google Authentication Error:", a), e.abrupt("return", n((0, N.X)({
+                                    return history.replaceState(null, "", window.location.pathname), console.error("Google Authentication Error:", i), e.abrupt("return", n((0, N.X)({
                                         title: "Failure",
                                         message: "Google Authentication Failed",
-                                        icon: i.X4,
+                                        icon: a.X4,
                                         color: "danger",
                                         timeout: 5e3
                                     })));
@@ -543,7 +543,7 @@
                                         e.next = 18;
                                         break
                                     }
-                                    return history.replaceState(null, "", window.location.pathname), e.next = 12, Pe({
+                                    return history.replaceState(null, "", window.location.pathname), e.next = 12, qe({
                                         token: o
                                     });
                                 case 12:
@@ -558,7 +558,7 @@
                                     return e.abrupt("return", n((0, N.X)({
                                         title: "Failure",
                                         message: null !== (s = null == l || null === (d = l.error) || void 0 === d || null === (d = d.data) || void 0 === d || null === (d = d.error) || void 0 === d ? void 0 : d.message) && void 0 !== s ? s : "Google Authentication Failed",
-                                        icon: i.X4,
+                                        icon: a.X4,
                                         color: "danger",
                                         timeout: 5e3
                                     })));
@@ -580,17 +580,17 @@
                         var t, n;
                         e.preventDefault(), ue(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
                     },
-                    ht = function(e) {
+                    ft = function(e) {
                         var t, n;
                         e.preventDefault(), pe(null !== (t = null === (n = e.target) || void 0 === n ? void 0 : n.value) && void 0 !== t ? t : "")
                     },
-                    ft = function() {
+                    ht = function() {
                         var e = (0, r.A)(c().mark(function e(n) {
-                            var r, o, i, a;
+                            var r, o, a, i;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return n.preventDefault(), (0, b.c0)(!1), e.prev = 2, e.next = 5, I({
+                                        return n.preventDefault(), (0, b.c0)(!1), e.prev = 2, e.next = 5, O({
                                             username: encodeURIComponent(null == le ? void 0 : le.trim()),
                                             password: encodeURIComponent(de)
                                         }).unwrap();
@@ -599,17 +599,17 @@
                                             e.next = 14;
                                             break
                                         }
-                                        if (i = "/home/twofactorauth", "emailOtp" === (null === (o = r.requiresTwoFactorAuth) || void 0 === o ? void 0 : o[0]) && (i = "/home/emailtwofactorauth"), null == u || !u.redirectTo) {
+                                        if (a = "/home/twofactorauth", "emailOtp" === (null === (o = r.requiresTwoFactorAuth) || void 0 === o ? void 0 : o[0]) && (a = "/home/emailtwofactorauth"), null == u || !u.redirectTo) {
                                             e.next = 12;
                                             break
                                         }
-                                        return t(i, {
+                                        return t(a, {
                                             state: {
                                                 redirectTo: u.redirectTo
                                             }
                                         }), e.abrupt("return");
                                     case 12:
-                                        return t(i), e.abrupt("return");
+                                        return t(a), e.abrupt("return");
                                     case 14:
                                         return (0, b.u4)("Login_LoginSuccess", {
                                             user: r.id,
@@ -617,7 +617,7 @@
                                         }), ut(), e.abrupt("return");
                                     case 19:
                                         e.prev = 19, e.t0 = e.catch(2), (0, b.u4)("Login_LoginFail", {
-                                            error: null === e.t0 || void 0 === e.t0 || null === (a = e.t0.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message
+                                            error: null === e.t0 || void 0 === e.t0 || null === (i = e.t0.data) || void 0 === i || null === (i = i.error) || void 0 === i ? void 0 : i.message
                                         }), ue(null == le ? void 0 : le.trim());
                                     case 23:
                                     case "end":
@@ -631,12 +631,12 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    gt = D || ot || B || Y || lt || Re || Xe,
-                    kt = q || at || K || te,
-                    bt = P || it || Z || ee,
+                    gt = R || ot || B || Y || lt || Pe || Ie,
+                    kt = D || it || K || te,
+                    bt = q || at || Z || ee,
                     At = "Failed to Log In",
                     xt = null == bt || null === (e = bt.data) || void 0 === e || null === (e = e.error) || void 0 === e ? void 0 : e.message;
-                q && ((null === (mt = xt) || void 0 === mt ? void 0 : mt.indexOf(":")) > 0 ? (At = xt.substring(0, xt.indexOf(":")).trim(), xt = xt.substring(xt.indexOf(":") + 1).trim()) : 0 === (null === (wt = xt) || void 0 === wt ? void 0 : wt.indexOf(":")) && (xt = xt.substring(1).trim()));
+                D && ((null === (mt = xt) || void 0 === mt ? void 0 : mt.indexOf(":")) > 0 ? (At = xt.substring(0, xt.indexOf(":")).trim(), xt = xt.substring(xt.indexOf(":") + 1).trim()) : 0 === (null === (wt = xt) || void 0 === wt ? void 0 : wt.indexOf(":")) && (xt = xt.substring(1).trim()));
                 return s.createElement(T.A, {
                     showCredits: !0
                 }, s.createElement(E.Qc, null, "Login"), s.createElement("div", {
@@ -645,7 +645,7 @@
                     id: "login-form",
                     name: "login-form",
                     className: "nobottommargin",
-                    onSubmit: ft
+                    onSubmit: ht
                 }, s.createElement("h4", {
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
                 }, "Welcome to VRChat"), s.createElement(U.fI, {
@@ -675,8 +675,8 @@
                     className: "mt-2",
                     placeholder: "Password",
                     value: de,
-                    onChange: ht,
-                    onKeyUp: ht
+                    onChange: ft,
+                    onKeyUp: ft
                 }), s.createElement("div", {
                     className: "tw-w-full tw-mt-3"
                 }, "Forgot your", " ", s.createElement(m.N_, {
@@ -705,7 +705,7 @@
                     className: "tw-mt-5 tw-bg-[#5865F2] tw-text-white tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
                     type: "button",
                     loading: gt
-                }, s.createElement(h.A, {
+                }, s.createElement(f.A, {
                     color: "#ffffff",
                     icon: l._2,
                     className: "tw-mr-1 tw-p-0 tw-w-[26px] tw-h-[24px]"
@@ -714,7 +714,7 @@
                     "aria-label": "Sign in with Google",
                     className: "tw-mt-5 tw-bg-[#FFFFFF] tw-text-[#1f1f1f] tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
                     type: "button",
-                    loading: D
+                    loading: R
                 }, s.createElement("svg", {
                     className: "tw-mr-1 tw-p-0 tw-w-[20px] tw-h-[20px]",
                     version: "1.1",
@@ -741,9 +741,9 @@
                     className: "tw-mt-5 tw-bg-[#000000] tw-text-white tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
                     type: "button",
                     loading: gt
-                }, s.createElement(h.A, {
+                }, s.createElement(f.A, {
                     color: "#ffffff",
-                    icon: a.qK,
+                    icon: i.qK,
                     className: "tw-mr-1 tw-p-0 tw-w-[20px] tw-h-[20px]"
                 }), "Sign in with Apple"), s.createElement("h4", {
                     className: "tw-text-base tw-text-white tw-text-center tw-mt-5 tw-mb-0"
@@ -759,16 +759,16 @@
                     rel: "noreferrer",
                     "aria-label": "Learn More about Account Linking",
                     className: "tw-text-sm tw-text-center tw-mt-3 tw-block"
-                }, "Using an Oculus, Steam, or Viveport account?"))), s.createElement(R, {
+                }, "Using an Oculus, Steam, or Viveport account?"))), s.createElement(P, {
                     linkProvider: "Discord",
                     unlinkedUser: null == ve ? void 0 : ve.unlinkedUser,
                     onLink: function() {
                         ct(ve.discordAccessToken)
                     },
                     onCancel: function() {
-                        return he(null)
+                        return fe(null)
                     }
-                }), s.createElement(R, {
+                }), s.createElement(P, {
                     linkProvider: "Google",
                     unlinkedUser: null == ke ? void 0 : ke.unlinkedUser,
                     onLink: function() {
@@ -777,7 +777,7 @@
                     onCancel: function() {
                         return be(null)
                     }
-                }), s.createElement(R, {
+                }), s.createElement(P, {
                     linkProvider: "Apple",
                     unlinkedUser: null == ye ? void 0 : ye.unlinkedUser,
                     onLink: function() {
@@ -789,74 +789,20 @@
                 }))
             }
         },
-        98462(e, t, n) {
-            n.d(t, {
-                Q: () => u
-            });
-            var r = n(10467),
-                o = n(54756),
-                i = n.n(o),
-                a = null,
-                l = function() {
-                    return window.AppleID ? Promise.resolve(window.AppleID) : a || (a = new Promise(function(e, t) {
-                        var n = document.createElement("script");
-                        n.src = "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js", n.onload = function() {
-                            window.AppleID ? e(window.AppleID) : (a = null, t(new Error("Apple Sign In script loaded but AppleID is unavailable")))
-                        }, n.onerror = function() {
-                            a = null, n.remove(), t(new Error("Failed to load Apple Sign In script"))
-                        }, document.head.appendChild(n)
-                    }))
-                },
-                u = function() {
-                    var e = (0, r.A)(i().mark(function e() {
-                        var t, n, r;
-                        return i().wrap(function(e) {
-                            for (;;) switch (e.prev = e.next) {
-                                case 0:
-                                    return e.next = 2, l();
-                                case 2:
-                                    return (n = e.sent).auth.init({
-                                        clientId: "com.vrchat.www",
-                                        scope: "name email",
-                                        redirectURI: window.location.origin + window.location.pathname,
-                                        usePopup: !0
-                                    }), e.next = 6, n.auth.signIn();
-                                case 6:
-                                    if (null != (r = e.sent) && null !== (t = r.authorization) && void 0 !== t && t.id_token) {
-                                        e.next = 9;
-                                        break
-                                    }
-                                    throw new Error("Apple Sign In failed: no identity token received");
-                                case 9:
-                                    return e.abrupt("return", {
-                                        identityToken: r.authorization.id_token,
-                                        user: r.user
-                                    });
-                                case 10:
-                                case "end":
-                                    return e.stop()
-                            }
-                        }, e)
-                    }));
-                    return function() {
-                        return e.apply(this, arguments)
-                    }
-                }()
-        },
         58622(e, t, n) {
             n.d(t, {
-                O: () => a
+                O: () => i
             });
             var r = n(10467),
                 o = n(54756),
-                i = n.n(o),
-                a = function() {
-                    var e = (0, r.A)(i().mark(function e() {
-                        var t, n, r, o, a, l, u, c, s, d, p, m, w, v = arguments;
-                        return i().wrap(function(e) {
+                a = n.n(o),
+                i = function() {
+                    var e = (0, r.A)(a().mark(function e() {
+                        var t, n, r, o, i, l, u, c, s, d, p, m, w, v = arguments;
+                        return a().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    n = (t = v.length > 0 && void 0 !== v[0] ? v[0] : {}).redirectTo, r = void 0 === n ? "/home/login" : n, o = t.version, a = void 0 === o ? 2 : o, l = ["openid", "identify", "email", "sdk.social_layer_presence"], u = window.location.origin + window.location.pathname, c = u.split("/home/"), u = "".concat(c[0], "/home/discord/auth").concat(2 === a ? "/v2" : ""), s = {
+                                    n = (t = v.length > 0 && void 0 !== v[0] ? v[0] : {}).redirectTo, r = void 0 === n ? "/home/login" : n, o = t.version, i = void 0 === o ? 2 : o, l = ["openid", "identify", "email", "sdk.social_layer_presence"], u = window.location.origin + window.location.pathname, c = u.split("/home/"), u = "".concat(c[0], "/home/discord/auth").concat(2 === i ? "/v2" : ""), s = {
                                         redirectUri: u,
                                         isMobileRequest: !1,
                                         redirectTo: r
@@ -884,13 +830,13 @@
             });
             var r = n(10467),
                 o = n(54756),
-                i = n.n(o),
-                a = n(66948),
+                a = n.n(o),
+                i = n(66948),
                 l = ["openid", "email", "profile"],
                 u = function() {
-                    var e = (0, r.A)(i().mark(function e() {
+                    var e = (0, r.A)(a().mark(function e() {
                         var t, n;
-                        return i().wrap(function(e) {
+                        return a().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     t = new URLSearchParams({
@@ -898,7 +844,7 @@
                                         redirect_uri: window.location.origin + window.location.pathname,
                                         response_type: "id_token",
                                         scope: l.join(" "),
-                                        nonce: (0, a.A)()
+                                        nonce: (0, i.A)()
                                     }), n = "https://accounts.google.com/o/oauth2/v2/auth?".concat(t.toString()), window.location.href = n;
                                 case 3:
                                 case "end":
@@ -925,4 +871,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e97b4a481013cfb0c5923171013a7c8dcae163eb9b04757be9a1b8beee6f2891.js.map
+//# sourceMappingURL=d5571b27dc9d309240ccc7a605d361b791014405843b4199267edfc5082b5f27.js.map
