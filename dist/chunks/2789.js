@@ -3,12 +3,12 @@
     [2789, 5170], {
         85170(e, t, r) {
             r.r(t), r.d(t, {
-                default: () => I
+                default: () => b
             });
             var n = r(10467),
                 o = r(82544),
-                a = r(82628),
-                s = r(34496),
+                s = r(82628),
+                a = r(34496),
                 l = r(42217),
                 i = r(54756),
                 c = r.n(i),
@@ -31,15 +31,15 @@
                         }, {
                             skip: !t
                         }),
-                        a = o.data,
-                        s = o.isFetching,
+                        s = o.data,
+                        a = o.isFetching,
                         l = o.isSuccess,
                         i = o.isError;
-                    return s && (u.M2, v.z1), l ? g.createElement("div", {
+                    return a && (u.M2, v.z1), l ? g.createElement("div", {
                         className: "".concat(n)
                     }, g.createElement("p", {
                         className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
-                    }, null == a ? void 0 : a.displayName)) : i ? g.createElement("div", {
+                    }, null == s ? void 0 : s.displayName)) : i ? g.createElement("div", {
                         className: "".concat(n)
                     }, g.createElement("p", {
                         className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
@@ -49,8 +49,8 @@
                 storeId: p().string.isRequired,
                 className: p().string
             };
-            const x = h;
-            var E = function(e) {
+            const E = h;
+            var x = function(e) {
                 var t = e.listing,
                     r = e.onCancelCallback,
                     i = void 0 === r ? function() {} : r;
@@ -60,12 +60,12 @@
                     v = (0, m.Qy)(),
                     y = (0, o.A)(v, 2),
                     h = y[0],
-                    E = y[1],
-                    I = E.isLoading,
-                    b = (E.isError, E.error, E.reset),
+                    x = y[1],
+                    b = x.isLoading,
+                    I = (x.isError, x.error, x.reset),
                     S = (null == t ? void 0 : t.storeIds.length) > 0,
                     N = function() {
-                        i(), b()
+                        i(), I()
                     },
                     T = function() {
                         var e = (0, n.A)(c().mark(function e() {
@@ -88,7 +88,7 @@
                                     case 7:
                                         return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), p((0, d.X)({
                                             title: "Failed to delete listing",
-                                            icon: s.zp,
+                                            icon: a.zp,
                                             message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
                                             color: "danger",
                                             timeout: 9e3
@@ -110,7 +110,7 @@
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, g.createElement(u.M2, {
-                    icon: a.faTriangleExclamation,
+                    icon: s.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-5"
                 }), g.createElement("h4", {
@@ -127,7 +127,7 @@
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
                 }, g.createElement(u.M2, {
-                    icon: a.faTriangleExclamation,
+                    icon: s.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-5"
                 }), S && g.createElement("div", {
@@ -135,7 +135,7 @@
                 }, g.createElement("p", {
                     className: "tw-mb-0"
                 }, "This listing is availalbe in the following ", (null == t ? void 0 : t.storeIds.length) || 0, " ", 1 === (null == t ? void 0 : t.storeIds.length) ? "store" : "stores", ":"), null == t ? void 0 : t.storeIds.map(function(e) {
-                    return g.createElement(x, {
+                    return g.createElement(E, {
                         key: e,
                         storeId: e
                     })
@@ -151,28 +151,29 @@
                 }, "Cancel"), g.createElement(u.$n, {
                     type: "button",
                     onClick: T,
-                    loading: I,
+                    loading: b,
                     containerClasses: "tw-flex-1",
                     danger: !0
                 }, "Delete")))
             };
-            E.propTypes = {
+            x.propTypes = {
                 listing: p().object.isRequired,
                 onCancelCallback: p().func
             };
-            const I = E
+            const b = x
         },
         97087(e, t, r) {
             r.d(t, {
                 HP: () => d,
                 ST: () => c,
                 _N: () => i,
-                rg: () => l
+                rg: () => l,
+                s7: () => u
             });
             var n = r(80045),
                 o = r(89483),
-                a = ["storeId"],
-                s = o.m.injectEndpoints({
+                s = ["storeId"],
+                a = o.m.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getStores: e.query({
@@ -181,15 +182,15 @@
                                         r = e.managementPov,
                                         n = void 0 !== r && r,
                                         o = e.n,
-                                        a = void 0 === o ? 50 : o,
-                                        s = e.offset;
+                                        s = void 0 === o ? 50 : o,
+                                        a = e.offset;
                                     return {
                                         url: "economy/stores",
                                         params: {
                                             sellerId: t,
                                             managementPov: n,
-                                            n: a,
-                                            offset: void 0 === s ? 0 : s
+                                            n: s,
+                                            offset: void 0 === a ? 0 : a
                                         }
                                     }
                                 },
@@ -201,8 +202,8 @@
                                         r = e.worldId,
                                         n = e.groupId,
                                         o = e.creatorId,
-                                        a = e.hydrateListings,
-                                        s = void 0 !== a && a,
+                                        s = e.hydrateListings,
+                                        a = void 0 !== s && s,
                                         l = e.hydrateProducts,
                                         i = void 0 !== l && l,
                                         c = e.managementPov;
@@ -213,7 +214,7 @@
                                             worldId: r,
                                             groupId: n,
                                             creatorId: o,
-                                            hydrateListings: s,
+                                            hydrateListings: a,
                                             hydrateProducts: i,
                                             managementPov: void 0 !== c && c
                                         }
@@ -232,8 +233,8 @@
                                         r = e.storeType,
                                         n = e.worldId,
                                         o = e.groupId,
-                                        a = e.tags,
-                                        s = void 0 === a ? [] : a,
+                                        s = e.tags,
+                                        a = void 0 === s ? [] : s,
                                         l = e.description;
                                     return {
                                         url: "economy/store",
@@ -243,7 +244,7 @@
                                             storeType: r,
                                             worldId: n,
                                             groupId: o,
-                                            tags: s,
+                                            tags: a,
                                             description: void 0 === l ? "" : l
                                         }
                                     }
@@ -255,7 +256,7 @@
                             updateStore: e.mutation({
                                 query: function(e) {
                                     var t = e.storeId,
-                                        r = (0, n.A)(e, a);
+                                        r = (0, n.A)(e, s);
                                     return {
                                         url: "economy/store/".concat(t),
                                         method: "PUT",
@@ -286,6 +287,15 @@
                                         id: r.storeId
                                     }, "Stores"]
                                 }
+                            }),
+                            getEligibleWorlds: e.query({
+                                query: function() {
+                                    return {
+                                        url: "economy/stores/eligibleWorlds",
+                                        method: "GET"
+                                    }
+                                },
+                                providesTags: ["Stores"]
                             })
                         }
                     },
@@ -293,12 +303,12 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["Stores", "Store", "UserGroups"]
                 }),
-                l = s.useGetStoreQuery,
-                i = s.useGetStoresQuery,
-                c = s.useCreateStoreMutation,
-                d = s.useUpdateStoreMutation;
-            s.useDeleteStoreMutation
+                l = a.useGetStoreQuery,
+                i = a.useGetStoresQuery,
+                c = a.useCreateStoreMutation,
+                d = a.useUpdateStoreMutation,
+                u = (a.useDeleteStoreMutation, a.useGetEligibleWorldsQuery)
         }
     }
 ]);
-//# sourceMappingURL=5e0335c308a48d5a389f2214ed87658c878632a2d9a91f7034818ec293e3a5d3.js.map
+//# sourceMappingURL=01572926934ed2687444276e4768c07dc4e27f9ea78347f7f96530207450dd77.js.map

@@ -160,8 +160,8 @@
                     className: "tw-px-3 tw-py-2 tw-text-red tw-text-left tw-border-none tw-w-full tw-bg-transparent hover:tw-bg-[#666666] hover:tw-text-white"
                 }, "Delete"))))
             };
-            var U = ["listingData", "isOrdering", "moveUp", "moveDown", "editListingCallback", "deleteListingCallback", "publishListingCallback"],
-                G = function(e) {
+            var G = ["listingData", "isOrdering", "moveUp", "moveDown", "editListingCallback", "deleteListingCallback", "publishListingCallback"],
+                U = function(e) {
                     var t = e.listingData,
                         n = void 0 === t ? null : t,
                         r = e.isOrdering,
@@ -176,7 +176,7 @@
                         p = void 0 === m ? function() {} : m,
                         f = e.publishListingCallback,
                         v = void 0 === f ? function() {} : f,
-                        y = ((0, C.A)(e, U), (0, E.wA)());
+                        y = ((0, C.A)(e, G), (0, E.wA)());
                     if (null === n) return null;
                     var h = n.id,
                         x = n.displayName,
@@ -191,10 +191,10 @@
                             skip: !h
                         })),
                         F = j.data,
-                        G = void 0 === F ? [] : F,
-                        q = (j.isFetching, j.isSuccess, j.isError, j.error, (0, g.GZ)(G)),
+                        U = void 0 === F ? [] : F,
+                        q = (j.isFetching, j.isSuccess, j.isError, j.error, (0, g.GZ)(U)),
                         V = q.hasAllProductsDisabled,
-                        R = q.hasSomeProductsDisabled;
+                        W = q.hasSomeProductsDisabled;
                     q.hasNoProductsDisabled;
                     return b.createElement("div", {
                         className: "tw-relative"
@@ -277,7 +277,7 @@
                         deleteAction: function() {
                             return p(n)
                         },
-                        isPublishDisabled: V || R
+                        isPublishDisabled: V || W
                     })), i && b.createElement(b.Fragment, null, b.createElement(d.$n, {
                         className: "tw-w-9 tw-h-9",
                         neutral: !0,
@@ -294,16 +294,16 @@
                         size: "1x"
                     }))))))
                 };
-            G.propTypes = {
+            U.propTypes = {
                 listingData: j().object.isRequired,
                 isOrdering: j().bool,
                 moveUp: j().func,
                 moveDown: j().func
             };
-            const q = G;
+            const q = U;
             var V = n(28045),
-                R = n(91863);
-            const W = function(e) {
+                W = n(91863);
+            const R = function(e) {
                 var t = e.onFilterChange,
                     n = void 0 === t ? function() {} : t,
                     r = e.onOrder,
@@ -328,7 +328,7 @@
                     C = (0, a.A)(S, 2),
                     k = C[0],
                     I = C[1],
-                    D = (0, R.A)(k),
+                    D = (0, W.A)(k),
                     A = (0, b.useState)(E.get("listingType") || "all"),
                     L = (0, a.A)(A, 2),
                     P = L[0],
@@ -459,10 +459,10 @@
                     j = (0, a.A)(M, 2),
                     F = j[0],
                     $ = j[1],
-                    U = (0, b.useState)({}),
-                    G = (0, a.A)(U, 2),
-                    V = G[0],
-                    R = G[1],
+                    G = (0, b.useState)({}),
+                    U = (0, a.A)(G, 2),
+                    V = U[0],
+                    W = U[1],
                     K = (0, b.useState)(!1),
                     ee = (0, a.A)(K, 2),
                     te = ee[0],
@@ -510,8 +510,8 @@
                     je = Me[0],
                     Fe = Me[1],
                     $e = Fe.isLoading,
-                    Ue = (Fe.isSuccess, Fe.isError),
-                    Ge = Fe.error;
+                    Ge = (Fe.isSuccess, Fe.isError),
+                    Ue = Fe.error;
                 (0, b.useEffect)(function() {
                     Ce && "group" === (null == Ne ? void 0 : Ne.storeType) && Le({
                         groupId: Ne.groupId
@@ -581,7 +581,7 @@
                     var e = new URLSearchParams(F.toString());
                     V.listingType && e.set("listingType", V.listingType), V.sortBy && e.set("sortBy", V.sortBy), e.toString() !== F.toString() && $(e)
                 }, [V, F]);
-                var Ve, Re, We, Xe, He, Qe = function() {
+                var Ve, We, Re, Xe, He, Qe = function() {
                         var e;
                         se(null !== (e = Ne.listings) && void 0 !== e ? e : []), pe(!1), n()
                     },
@@ -740,10 +740,10 @@
                 }))), "unpublished" === (null == Ne ? void 0 : Ne.storeStatus) && b.createElement(d.$T, {
                     type: "warn",
                     className: "tw-mt-2 tw-flex-row"
-                }, "This store is disabled. Enable it so users can browse and purchase your listings."), b.createElement(W, {
+                }, "This store is disabled. Enable it so users can browse and purchase your listings."), b.createElement(R, {
                     isOrdering: me,
                     onFilterChange: function(e) {
-                        R(e)
+                        W(e)
                     },
                     onOrder: function() {
                         pe(!0), n()
@@ -770,9 +770,9 @@
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
                 }, b.createElement(w.A, {
                     loading: !0
-                })) : ke || Ue ? b.createElement("div", {
+                })) : ke || Ge ? b.createElement("div", {
                     className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
-                }, b.createElement("p", null, "Error loading sales data:"), b.createElement("code", null, null !== (He = (Ie || Ge).data.error.message) && void 0 !== He ? He : "Unknown error")) : Ce && 0 === ae.length ? V.listingType && "all" !== V.listingType ? b.createElement(S, {
+                }, b.createElement("p", null, "Error loading sales data:"), b.createElement("code", null, null !== (He = (Ie || Ue).data.error.message) && void 0 !== He ? He : "Unknown error")) : Ce && 0 === ae.length ? V.listingType && "all" !== V.listingType ? b.createElement(S, {
                     storeType: null == Ne ? void 0 : Ne.storeType,
                     createListing: "group" === (null == Ne ? void 0 : Ne.storeType) ? Je : Ze,
                     content: "No results found for this listing type"
@@ -826,7 +826,7 @@
                         }
                     }))
                 }) : void 0)), b.createElement(d.aF, {
-                    title: (Ve = Ee, Re = Ve.isCreating, We = Ve.listingType, Xe = Ve.title, Re && "subscription" === We ? B : Re ? A : Xe),
+                    title: (Ve = Ee, We = Ve.isCreating, Re = Ve.listingType, Xe = Ve.title, We && "subscription" === Re ? B : We ? A : Xe),
                     isVisible: ve,
                     onBackCallback: z || D ? function() {
                         z && C((0, h.EY)(z)), D && C((0, y.EY)(D))
@@ -876,7 +876,8 @@
                 HP: () => u,
                 ST: () => c,
                 _N: () => l,
-                rg: () => o
+                rg: () => o,
+                s7: () => d
             });
             var r = n(80045),
                 i = n(89483),
@@ -995,6 +996,15 @@
                                         id: n.storeId
                                     }, "Stores"]
                                 }
+                            }),
+                            getEligibleWorlds: e.query({
+                                query: function() {
+                                    return {
+                                        url: "economy/stores/eligibleWorlds",
+                                        method: "GET"
+                                    }
+                                },
+                                providesTags: ["Stores"]
                             })
                         }
                     },
@@ -1005,9 +1015,9 @@
                 o = s.useGetStoreQuery,
                 l = s.useGetStoresQuery,
                 c = s.useCreateStoreMutation,
-                u = s.useUpdateStoreMutation;
-            s.useDeleteStoreMutation
+                u = s.useUpdateStoreMutation,
+                d = (s.useDeleteStoreMutation, s.useGetEligibleWorldsQuery)
         }
     }
 ]);
-//# sourceMappingURL=16677af2266b7ec74387d5542b1ceee9d06693006f57dec8ce9e36e5210c5867.js.map
+//# sourceMappingURL=48f447a1d144958a7cc7a0d266a95e99bddfc1f7cb8cc3e83e5f41c3dc92c816.js.map

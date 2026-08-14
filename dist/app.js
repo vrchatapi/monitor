@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-12t17-51-57-the-bass-of-audrey--main-prod-public-d22c084b-debd-4862-8166-d55ede16d821--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-13t15-52-33-the-garbage-of-pratt--main-prod-public-a44634a4-0d8d-45c5-8a46-fe63b6e669e4--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-12t17-51-57-the-bass-of-audrey", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-13t15-52-33-the-garbage-of-pratt", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115056,7 +115056,7 @@
         691: "5b9be9fc3c3c6f612543227998642830d4bb1164374078a0fac2266004968deb",
         776: "9ca6e5846020ac59ba58e28aa31f2bad07783efb18922704bdb7feb257015837",
         800: "dd8af2988c73ca6b7a894634be63d5b26b6dd565df7ac6f46c3c15d1d5a33e48",
-        837: "16677af2266b7ec74387d5542b1ceee9d06693006f57dec8ce9e36e5210c5867",
+        837: "48f447a1d144958a7cc7a0d266a95e99bddfc1f7cb8cc3e83e5f41c3dc92c816",
         879: "7b20da0953ef0f8ff52e9fd7609eee1b3cbdc90c687527298e75c91107b084ef",
         962: "b1a99a71609b36b189f2338a8d66319b76b8288a017caec3fefe91cbb17cd8bd",
         984: "6c5d03c13b620195c36d2075c3106eced7a8962433aef0528eadf28a61329291",
@@ -115086,7 +115086,7 @@
         2475: "450f91367a6db8a7a86b93ce76a90073af7567a20512f9884693655a92c02fb7",
         2676: "39627bd03bbccaeaa7aabb22a5e8156ded60b421443268b1cf4f0d27b6b13e69",
         2726: "d5571b27dc9d309240ccc7a605d361b791014405843b4199267edfc5082b5f27",
-        2789: "5e0335c308a48d5a389f2214ed87658c878632a2d9a91f7034818ec293e3a5d3",
+        2789: "01572926934ed2687444276e4768c07dc4e27f9ea78347f7f96530207450dd77",
         2876: "4ebd3751d9ea991ad65ea9f98429ffa5f933f3f80b41050d22abd85bd54af72b",
         2996: "77c73e865d893323861cc95e431951defce82f7efbbb08feacff2fca425c8753",
         3015: "37b3616bb9111b4fd63df46093611221db12d230e2294068329e8900821d866c",
@@ -115139,7 +115139,7 @@
         7464: "d1c5ac7fe694dadbee9697349184a4da297f07257b7e93b73dd9882f45668ea7",
         7484: "b95f6f9bf9a0df6f4ce735871af669d08657d1f98bed49052e2e2e37ab7f5406",
         7485: "3c3787c26fa89efe9b7deb285f48b7fc10bb7974fdc729a8da4579cdeb96a3d1",
-        7495: "895fe5abdba457be7cf29d37d24b2dccc521f88f82be5b5e89fc9afe936765ba",
+        7495: "0ec15baf1109fbfce2cb8a8d572dda971df0bcd2729f7884cd858c6271582875",
         7596: "6224813985179089ada276c81beb1ebf8d1d322fe5d9a9541a764668f10d12c9",
         7697: "1b135805535dc87cb5dda31e2af52cb61ffa617d2b7e5ad0df2c0eb35409a1ae",
         7783: "2fc84c5a8e78cb2c1dd20160d18f460d7493016da534ed686380e8c8a3e44362",
@@ -115161,8 +115161,8 @@
         9355: "63f6ec2e559e38ed86e966cb871067565486dec9aed20994ec98bdd29baa7dd2",
         9370: "1fa1923e8a9c4d7b19ebb70d418fb7417641c3ed25abb692359cd47f3b29bdf9",
         9381: "43262c9f4a7695ba59089fe91c76faa2ba828551376c668c6d9c6b035deafb3c",
-        9387: "218ec650fffcb5eb517fe0290a8d90707f41afd55c44a6686b6558f0439ecc0c",
-        9439: "5e2e5e5bafb0e28ef774fd623351e2e3f7d87c153f6b1048a240c04da7c99f6b",
+        9387: "16d4d6eb3c305d9edfc8d22c88701e753e8287ee8f9f8b2ca45085e81a0e47ad",
+        9439: "7b7ee8e28669baaf3cb5f43aa6727ff2ea7b2e90fd6933490e806f9b460b33d0",
         9450: "b99df619b5343263d84078561739bace06d5edcebc44721ee3df3cf125d91a02",
         9488: "67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec",
         9697: "549e8ce074ef5b1f3baaeefeb4d997515215b406bf1f17ec089a10bdf25f50a8",
@@ -115251,9 +115251,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-12t17-51-57-the-bass-of-audrey"
+        id: "2026-08-13t15-52-33-the-garbage-of-pratt"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-12t17-51-57-the-bass-of-audrey"
+        id: "2026-08-13t15-52-33-the-garbage-of-pratt"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -117006,7 +117006,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-12t17-51-57-the-bass-of-audrey",
+                release: "2026-08-13t15-52-33-the-garbage-of-pratt",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

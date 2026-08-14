@@ -52,16 +52,15 @@
                 w = r(78502),
                 m = r(40085),
                 p = r(97087),
-                f = r(60188),
                 g = r(96540),
-                v = r(6376),
-                b = r(47767),
-                y = r(53065),
-                h = r(75171),
-                S = r.n(h),
+                f = r(6376),
+                v = r(47767),
+                b = r(53065),
+                y = r(75171),
+                h = r.n(y),
                 E = r(5556),
-                N = r.n(E),
-                I = r(16465),
+                S = r.n(E),
+                N = r(16465),
                 x = function(e) {
                     var t = e.storeData,
                         r = void 0 === t ? null : t,
@@ -88,15 +87,15 @@
                         className: "tw-relative"
                     }, g.createElement(d.fI, {
                         className: "tw-absolute tw-p-3 tw-w-full tw-justify-between tw-z-10"
-                    }, g.createElement(I.A, {
+                    }, g.createElement(N.A, {
                         storeType: i
                     }), g.createElement(d.M2, {
-                        icon: y.GE,
+                        icon: b.GE,
                         className: "".concat("published" === u ? "tw-text-green" : "tw-text-placeholder-text")
                     })), g.createElement(d.Oo, {
                         className: "tw-rounded-md tw-h-36 tw-w-full",
                         imageId: null == w ? void 0 : w.imageUrl,
-                        fallbackSrc: S(),
+                        fallbackSrc: h(),
                         fitToCover: !0,
                         gradientOverlayClassName: "tw-bg-gradient-to-b"
                     })), g.createElement("div", {
@@ -108,18 +107,18 @@
                     }, s.length || "0", " Listings"))))
                 };
             x.propTypes = {
-                storeData: N().object.isRequired,
-                isDetailedView: N().bool
+                storeData: S().object.isRequired,
+                isDetailedView: S().bool
             };
             const O = x;
-            var C = r(81617),
-                j = r(31069),
-                k = r(10343),
-                T = r(36371),
-                P = r.n(T),
-                D = r(60644),
-                G = r.n(D),
-                A = function(e) {
+            var I = r(81617),
+                C = r(31069),
+                j = r(10343),
+                k = r(36371),
+                T = r.n(k),
+                P = r(60644),
+                D = r.n(P),
+                W = function(e) {
                     var t, r, o, l, s, c = e.groups,
                         i = void 0 === c ? [] : c,
                         u = e.worlds,
@@ -131,61 +130,51 @@
                         b = void 0 === v ? function() {} : v,
                         y = e.onCancel,
                         h = void 0 === y ? function() {} : y,
-                        S = e.onSubmit,
-                        E = void 0 === S ? function() {} : S,
+                        E = e.onSubmit,
+                        S = void 0 === E ? function() {} : E,
                         N = e.canSubmit,
-                        I = void 0 !== N && N,
-                        x = (0, g.useState)(j.y.WORLDS),
-                        O = (0, a.A)(x, 2),
-                        T = O[0],
-                        D = O[1],
-                        A = (0, g.useState)(""),
-                        L = (0, a.A)(A, 2),
+                        x = void 0 !== N && N,
+                        O = (0, g.useState)(C.y.WORLDS),
+                        k = (0, a.A)(O, 2),
+                        P = k[0],
+                        W = k[1],
+                        G = (0, g.useState)(""),
+                        L = (0, a.A)(G, 2),
                         R = L[0],
-                        W = L[1],
-                        M = g.useMemo(function() {
-                            return f ? {
-                                groups: (null == i ? void 0 : i.filter(function(e) {
-                                    return !p.some(function(t) {
-                                        return t.groupId === e.groupId
-                                    })
-                                })) || [],
-                                worlds: (null == w ? void 0 : w.filter(function(e) {
-                                    return !p.some(function(t) {
-                                        return t.worldId === e.id
-                                    })
-                                })) || []
-                            } : {
-                                groups: [],
-                                worlds: []
-                            }
-                        }, [i, w, f]),
-                        U = (t = {}, (0, n.A)(t, j.y.WORLDS, {
-                            list: M.worlds,
+                        A = L[1],
+                        M = (0, g.useMemo)(function() {
+                            return f && (null == i ? void 0 : i.filter(function(e) {
+                                return !p.some(function(t) {
+                                    return t.groupId === e.groupId
+                                })
+                            })) || []
+                        }, [i, f]),
+                        q = (t = {}, (0, n.A)(t, C.y.WORLDS, {
+                            list: w,
                             key: "id",
                             label: "World",
-                            thumbSrc: G(),
-                            icon: k.vrcWorld
-                        }), (0, n.A)(t, j.y.GROUPS, {
-                            list: M.groups,
+                            thumbSrc: D(),
+                            icon: j.vrcWorld
+                        }), (0, n.A)(t, C.y.GROUPS, {
+                            list: M,
                             key: "groupId",
                             label: "Group",
-                            thumbSrc: P(),
-                            icon: k.vrcGroup
+                            thumbSrc: T(),
+                            icon: j.vrcGroup
                         }), t),
-                        q = function(e) {
-                            var t = U[T].list,
-                                r = U[T].key,
+                        U = function(e) {
+                            var t = q[P].list,
+                                r = q[P].key,
                                 n = t.find(function(t) {
                                     return t[r] === e
                                 });
-                            W(n[r]), b({
-                                type: T,
+                            A(n[r]), b({
+                                type: P,
                                 baseObj: n
                             })
                         },
                         _ = function(e) {
-                            D(e), b(null), W("")
+                            W(e), b(null), A("")
                         };
                     return g.createElement(d.fv, {
                         className: "tw-gap-6"
@@ -194,16 +183,16 @@
                     }, g.createElement("div", {
                         className: "tw-relative tw-w-[270px] tw-cursor-pointer",
                         onClick: function() {
-                            return _(j.y.WORLDS)
+                            return _(C.y.WORLDS)
                         }
                     }, g.createElement(d.fv, {
-                        className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(T === j.y.WORLDS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
+                        className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(P === C.y.WORLDS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
                     }, g.createElement("span", {
-                        className: "".concat(T === j.y.WORLDS ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6  tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
-                    }, T === j.y.WORLDS ? g.createElement(d.M2, {
-                        icon: C.e6
+                        className: "".concat(P === C.y.WORLDS ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6  tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
+                    }, P === C.y.WORLDS ? g.createElement(d.M2, {
+                        icon: I.e6
                     }) : null), g.createElement(d.fv, null, g.createElement(d.M2, {
-                        icon: k.vrcWorld,
+                        icon: j.vrcWorld,
                         width: 36,
                         className: "tw-mb-2"
                     }), g.createElement("h4", null, "World Store"))), g.createElement("div", {
@@ -211,23 +200,23 @@
                     }, g.createElement("div", {
                         className: "tw-bg-[radial-gradient(circle,rgba(0,0,0,0)_0%,rgba(0,0,0,0.75)_100%)] tw-absolute tw-w-full tw-h-full tw-rounded-lg"
                     }), g.createElement("img", {
-                        src: G(),
+                        src: D(),
                         alt: "",
                         role: "presentation",
                         className: "tw-object-cover tw-rounded-lg"
                     }))), g.createElement("div", {
                         className: "tw-relative tw-w-[270px] tw-cursor-pointer",
                         onClick: function() {
-                            return _(j.y.GROUPS)
+                            return _(C.y.GROUPS)
                         }
                     }, g.createElement(d.fv, {
-                        className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(T === j.y.GROUPS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
+                        className: "tw-w-full tw-h-full tw-absolute tw-justify-between tw-p-3 tw-rounded-lg tw-ring-2 tw-z-10 ".concat(P === C.y.GROUPS ? "tw-ring-teal-accent" : "tw-ring-hr-line-color")
                     }, g.createElement("span", {
-                        className: "".concat(T === j.y.GROUPS ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
-                    }, T === j.y.GROUPS ? g.createElement(d.M2, {
-                        icon: C.e6
+                        className: "".concat(P === C.y.GROUPS ? "tw-bg-teal-accent" : "tw-bg-hr-line-color", " tw-h-6 tw-w-6 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-self-end tw-text-[#1A2026]")
+                    }, P === C.y.GROUPS ? g.createElement(d.M2, {
+                        icon: I.e6
                     }) : null), g.createElement(d.fv, null, g.createElement(d.M2, {
-                        icon: k.vrcGroup,
+                        icon: j.vrcGroup,
                         width: 36,
                         className: "tw-mb-2"
                     }), g.createElement("h4", null, "Group Store"))), g.createElement("div", {
@@ -235,17 +224,19 @@
                     }, g.createElement("div", {
                         className: "tw-bg-[radial-gradient(circle,rgba(0,0,0,0)_0%,rgba(0,0,0,0.75)_100%)] tw-absolute tw-w-full tw-h-full tw-rounded-lg"
                     }), g.createElement("img", {
-                        src: P(),
+                        src: T(),
                         alt: "",
                         role: "presentation",
                         className: "tw-object-cover tw-rounded-lg"
                     })))), g.createElement(d.fv, null, g.createElement("label", {
-                        htmlFor: T === j.y.WORLDS ? "world-select" : "group-select",
+                        htmlFor: P === C.y.WORLDS ? "world-select" : "group-select",
                         className: "tw-mb-2"
-                    }, "Select ", T === j.y.WORLDS ? "World" : "Group"), (o = (r = U[T]).list, l = r.label, 0 === (s = o.map(function(e) {
+                    }, "Select ", P === C.y.WORLDS ? "World" : "Group", " ", g.createElement("br", null), P === C.y.WORLDS && g.createElement("small", {
+                        className: "tw-text-placeholder-text"
+                    }, "World must be public and not already associated with a store")), (o = (r = q[P]).list, l = r.label, 0 === (s = o.map(function(e) {
                         return {
                             label: e.name,
-                            value: e[U[T].key]
+                            value: e[q[P].key]
                         }
                     })).length ? g.createElement(d.ms, {
                         label: "No ".concat(l, "s found"),
@@ -256,7 +247,7 @@
                         value: R,
                         name: "".concat(l, "-select"),
                         options: s,
-                        onChange: q
+                        onChange: U
                     }))), g.createElement(d.fI, {
                         className: "tw-gap-3 tw-w-full"
                     }, g.createElement(d.$n, {
@@ -268,21 +259,21 @@
                         containerClasses: "tw-flex-1"
                     }, "Cancel"), g.createElement(d.$n, {
                         onClick: function() {
-                            return E()
+                            return S()
                         },
                         type: "button",
                         containerClasses: "tw-flex-1",
-                        disabled: !I
+                        disabled: !x
                     }, "Create")))
                 };
-            A.propTypes = {
-                user: N().object.isRequired,
-                groups: N().array,
-                worlds: N().array
+            W.propTypes = {
+                user: S().object.isRequired,
+                groups: S().array,
+                worlds: S().array
             };
-            const L = A;
-            var R = r(78244);
-            const W = function(e) {
+            const G = W;
+            var L = r(78244);
+            const R = function(e) {
                 var t = e.createStore,
                     r = void 0 === t ? function() {} : t;
                 return g.createElement(d.fv, {
@@ -290,7 +281,7 @@
                 }, g.createElement("div", {
                     className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center"
                 }, g.createElement(d.M2, {
-                    icon: R.H3,
+                    icon: L.H3,
                     className: "tw-text-5xl",
                     role: "presentation",
                     alt: "",
@@ -305,7 +296,7 @@
                 }, "Setup a Store")))
             };
 
-            function M(e, t) {
+            function A(e, t) {
                 var r = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var n = Object.getOwnPropertySymbols(e);
@@ -316,79 +307,75 @@
                 return r
             }
 
-            function U(e) {
+            function M(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
-                    t % 2 ? M(Object(r), !0).forEach(function(t) {
+                    t % 2 ? A(Object(r), !0).forEach(function(t) {
                         (0, n.A)(e, t, r[t])
-                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : M(Object(r)).forEach(function(t) {
+                    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : A(Object(r)).forEach(function(t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                     })
                 }
                 return e
             }
             const q = function() {
-                var e = (0, v.wA)(),
-                    t = (0, b.Zp)(),
+                var e = (0, f.wA)(),
+                    t = (0, v.Zp)(),
                     r = (0, w.a$)(),
                     n = r.user,
                     c = r.isLoading,
-                    y = (0, g.useState)(!1),
-                    h = (0, a.A)(y, 2),
-                    S = h[0],
-                    E = h[1],
-                    N = (0, g.useState)(null),
-                    I = (0, a.A)(N, 2),
-                    x = I[0],
-                    C = I[1],
-                    j = (0, g.useState)([]),
-                    k = (0, a.A)(j, 2),
-                    T = k[0],
-                    P = k[1],
-                    D = (0, p._N)({
+                    b = (0, g.useState)(!1),
+                    y = (0, a.A)(b, 2),
+                    h = y[0],
+                    E = y[1],
+                    S = (0, g.useState)(null),
+                    N = (0, a.A)(S, 2),
+                    x = N[0],
+                    I = N[1],
+                    C = (0, g.useState)([]),
+                    j = (0, a.A)(C, 2),
+                    k = j[0],
+                    T = j[1],
+                    P = (0, p._N)({
                         sellerId: null == n ? void 0 : n.id,
                         managementPov: !0
                     }, {
                         skip: !n
                     }),
-                    G = D.data,
-                    A = D.isFetching,
-                    R = (D.isSuccess, D.isError, D.error, (0, m.Yj)({
+                    D = P.data,
+                    W = P.isFetching,
+                    L = (P.isSuccess, P.isError, P.error, (0, m.Yj)({
                         userId: null == n ? void 0 : n.id
                     }, {
                         skip: !n
                     })),
-                    M = R.data,
-                    q = void 0 === M ? [] : M,
-                    _ = (R.isLoading, R.isError, R.error, (0, f.u7)({
-                        userId: null == n ? void 0 : n.id,
-                        releaseStatus: "all",
-                        n: 100
-                    }, {
+                    A = L.data,
+                    q = void 0 === A ? [] : A,
+                    U = (L.isLoading, L.isError, L.error, (0, p.s7)({
                         skip: !n
                     })),
-                    $ = _.data,
-                    F = void 0 === $ ? [] : $,
-                    z = (_.isLoading, _.isError, _.error, (0, p.ST)()),
-                    Q = (0, a.A)(z, 2),
-                    B = Q[0],
-                    H = Q[1];
-                H.isLoading, H.isSuccess, H.isError, H.error;
+                    _ = U.data,
+                    $ = void 0 === _ ? [] : _,
+                    F = (U.isLoading, U.isError, U.error, (0, p.ST)()),
+                    z = (0, a.A)(F, 2),
+                    Q = z[0],
+                    B = z[1];
+                B.isLoading, B.isSuccess, B.isError, B.error;
                 (0, g.useEffect)(function() {
-                    q.length > 0 && n && P(q.filter(function(e) {
+                    q.length > 0 && n && T(q.filter(function(e) {
                         return e.ownerId === n.id
                     }))
                 }, [q]);
-                var V = null == G ? void 0 : G.some(function(e) {
+                var H = null == D ? void 0 : D.some(function(e) {
                         return "unpublished" === e.storeStatus
                     }),
-                    X = function() {
+                    V = function() {
                         var t = (0, o.A)(i().mark(function t() {
                             var r, n, o, a, c;
                             return i().wrap(function(t) {
                                 for (;;) switch (t.prev = t.next) {
                                     case 0:
-                                        return r = x.type, n = x.baseObj, o = U(U(U({
+                                        return r = x.type, n = x.baseObj, o = M(M(M({
                                             storeType: r
                                         }, "world" === r && {
                                             worldId: n.id
@@ -396,7 +383,7 @@
                                             groupId: n.groupId
                                         }), {}, {
                                             displayName: n.name
-                                        }), t.prev = 2, t.next = 5, B(U({}, o)).unwrap();
+                                        }), t.prev = 2, t.next = 5, Q(M({}, o)).unwrap();
                                     case 5:
                                         e((0, u.X)({
                                             title: "Store Created!",
@@ -404,7 +391,7 @@
                                             message: "Your store has been created successfully!",
                                             color: "success",
                                             timeout: 3e3
-                                        })), Z(), t.next = 12;
+                                        })), Y(), t.next = 12;
                                         break;
                                     case 9:
                                         t.prev = 9, t.t0 = t.catch(2), e((0, u.X)({
@@ -426,60 +413,60 @@
                             return t.apply(this, arguments)
                         }
                     }(),
-                    Y = function(e) {
+                    X = function(e) {
                         t("/home/marketplace/storefront/stores/".concat(e))
                     },
-                    Z = function() {
-                        E(!1), C({
+                    Y = function() {
+                        E(!1), I({
                             type: null,
                             baseObj: null
                         })
                     },
-                    J = c || A;
+                    Z = c || W;
                 return g.createElement(g.Fragment, null, g.createElement(d.Qc, null, "Store Manager"), g.createElement(d.fv, {
                     className: "tw-@container/stores tw-w-full tw-gap-5"
                 }, g.createElement(d.fI, {
                     className: "tw-w-full tw-justify-between tw-items-center"
                 }, g.createElement("h4", {
                     className: "tw-mr-2"
-                }, "Store Manager"), !J && 0 !== (null == G ? void 0 : G.length) && g.createElement(d.$n, {
+                }, "Store Manager"), !Z && 0 !== (null == D ? void 0 : D.length) && g.createElement(d.$n, {
                     onClick: function() {
                         return E(!0)
                     },
                     className: "tw-px-3 tw-py-2"
-                }, "Setup New Store")), V && !A && g.createElement(d.$T, {
+                }, "Setup New Store")), H && !W && g.createElement(d.$T, {
                     type: "warn",
                     className: "tw-mt-2 tw-flex-row"
                 }, "Some of your stores are disabled. Enable them so users can browse and purchase your listings."), g.createElement(d.fI, {
                     className: "tw-w-full"
-                }, !J && 0 === (null == G ? void 0 : G.length) && g.createElement(W, {
+                }, !Z && 0 === (null == D ? void 0 : D.length) && g.createElement(R, {
                     createStore: function() {
                         return E(!0)
                     }
-                }), !J && 0 !== (null == G ? void 0 : G.length) && g.createElement("div", {
+                }), !Z && 0 !== (null == D ? void 0 : D.length) && g.createElement("div", {
                     className: "tw-grid tw-gap-4 tw-w-full tw-grid-cols-1 @xs/stores:tw-grid-cols-2 @sm/stores:tw-grid-cols-3 @md/stores:tw-grid-cols-4"
-                }, G.map(function(e) {
+                }, D.map(function(e) {
                     return g.createElement(O, {
                         key: e.id,
                         storeData: e,
-                        onSelect: Y
+                        onSelect: X
                     })
                 })))), g.createElement(d.aF, {
-                    isVisible: S,
-                    onClose: Z,
+                    isVisible: h,
+                    onClose: Y,
                     title: "Create Storefront",
                     slim: !0,
                     disableBackdropClick: !0
-                }, g.createElement(L, {
-                    worlds: F,
-                    groups: T,
-                    stores: G,
+                }, g.createElement(G, {
+                    worlds: $,
+                    groups: k,
+                    stores: D,
                     user: n,
                     onDataChange: function(e) {
-                        return C(e)
+                        return I(e)
                     },
-                    onCancel: Z,
-                    onSubmit: X,
+                    onCancel: Y,
+                    onSubmit: V,
                     canSubmit: null !== x
                 })))
             }
@@ -490,7 +477,8 @@
                 HP: () => u,
                 ST: () => i,
                 _N: () => c,
-                rg: () => s
+                rg: () => s,
+                s7: () => d
             });
             var n = r(80045),
                 o = r(89483),
@@ -609,6 +597,15 @@
                                         id: r.storeId
                                     }, "Stores"]
                                 }
+                            }),
+                            getEligibleWorlds: e.query({
+                                query: function() {
+                                    return {
+                                        url: "economy/stores/eligibleWorlds",
+                                        method: "GET"
+                                    }
+                                },
+                                providesTags: ["Stores"]
                             })
                         }
                     },
@@ -619,8 +616,8 @@
                 s = l.useGetStoreQuery,
                 c = l.useGetStoresQuery,
                 i = l.useCreateStoreMutation,
-                u = l.useUpdateStoreMutation;
-            l.useDeleteStoreMutation
+                u = l.useUpdateStoreMutation,
+                d = (l.useDeleteStoreMutation, l.useGetEligibleWorldsQuery)
         },
         36371(e, t, r) {
             e.exports = {
@@ -656,4 +653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5e2e5e5bafb0e28ef774fd623351e2e3f7d87c153f6b1048a240c04da7c99f6b.js.map
+//# sourceMappingURL=7b7ee8e28669baaf3cb5f43aa6727ff2ea7b2e90fd6933490e806f9b460b33d0.js.map
