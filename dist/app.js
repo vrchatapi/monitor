@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-13t15-52-33-the-garbage-of-pratt--main-prod-public-a44634a4-0d8d-45c5-8a46-fe63b6e669e4--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-20t17-55-24-the-eye-of-wheeljack--main-prod-public-3db963b1-e64e-429d-963a-bdb75cad2bb5--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-13t15-52-33-the-garbage-of-pratt", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-20t17-55-24-the-eye-of-wheeljack", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115063,6 +115063,7 @@
         1107: "9758bd652516d99b7d7bae7d4dedf1d4b2ccc244d356daeb183e77ac504b81b0",
         1260: "f7771fe0d01e571ac7abd7ff874f628e25659071c069414bf5c7a0b11953a9e6",
         1398: "28c29e4d63a7d552076fa8a4b73ccfe56ae7467e6583ce5fb361552fffffefa9",
+        1407: "e142043fc70d93d1ddee40a6e5af1f152ef8d1255643c872a784e95014ee7868",
         1462: "ec59ec2cc984dbc9fce7329bf7c67e52345dc314d80741a2faf1a1b0517870c6",
         1546: "5dd078b0749e97e63f6f025fe7fba6165b1a79334ed0bfa3b17ad6e041c2ad30",
         1647: "45b6c86c6f72d6c8d7a2a43432064a34e233c2cbd58417eeae17e2fcc042e8ab",
@@ -115251,9 +115252,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-13t15-52-33-the-garbage-of-pratt"
+        id: "2026-08-20t17-55-24-the-eye-of-wheeljack"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-13t15-52-33-the-garbage-of-pratt"
+        id: "2026-08-20t17-55-24-the-eye-of-wheeljack"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -117006,7 +117007,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-13t15-52-33-the-garbage-of-pratt",
+                release: "2026-08-20t17-55-24-the-eye-of-wheeljack",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -123753,33 +123754,36 @@
                 return s.e(7224).then(s.bind(s, 27224))
             }),
             ui = r.lazy(function() {
-                return s.e(122).then(s.bind(s, 122))
+                return s.e(1407).then(s.bind(s, 71407))
             }),
             di = r.lazy(function() {
-                return s.e(3441).then(s.bind(s, 63441))
+                return s.e(122).then(s.bind(s, 122))
             }),
             pi = r.lazy(function() {
-                return s.e(776).then(s.bind(s, 60776))
+                return s.e(3441).then(s.bind(s, 63441))
             }),
             fi = r.lazy(function() {
-                return s.e(2475).then(s.bind(s, 22475))
+                return s.e(776).then(s.bind(s, 60776))
             }),
             mi = r.lazy(function() {
-                return s.e(962).then(s.bind(s, 60962))
+                return s.e(2475).then(s.bind(s, 22475))
             }),
             hi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
+                return s.e(962).then(s.bind(s, 60962))
             }),
             Ai = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
+                return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
             }),
             gi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
+                return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
             }),
             Bi = r.lazy(function() {
+                return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
+            }),
+            vi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(7906), s.e(2138), s.e(6578)]).then(s.bind(s, 16578))
             });
-        const vi = function() {
+        const bi = function() {
             (0, _o.zn)();
             var e = (0, w.P2)(void 0, {
                     refetchOnReconnect: !0
@@ -123794,7 +123798,7 @@
                 fallback: r.createElement(Co.A, null)
             }, r.createElement(ba, null), r.createElement(So, null), r.createElement(l.BV, null, r.createElement(l.qh, {
                 path: "/home/instance-not-found",
-                element: r.createElement(fi, null)
+                element: r.createElement(mi, null)
             }), r.createElement(l.qh, {
                 path: "/home/launch",
                 element: r.createElement(ei, null)
@@ -123812,7 +123816,7 @@
                 element: r.createElement(oi, null)
             }), r.createElement(l.qh, {
                 path: "/home/ageverificationstatus",
-                element: r.createElement(mi, null)
+                element: r.createElement(hi, null)
             }), r.createElement(l.qh, {
                 path: "/home/critical",
                 element: r.createElement(ai, null)
@@ -123842,29 +123846,29 @@
                 element: r.createElement(si, null)
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauth",
-                element: r.createElement(ui, null)
+                element: r.createElement(di, null)
             }), r.createElement(l.qh, {
                 path: "/home/emailtwofactorauth",
-                element: r.createElement(ui, {
+                element: r.createElement(di, {
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/stepupauth",
-                element: r.createElement(ui, {
+                element: r.createElement(di, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/emailstepupauth",
-                element: r.createElement(ui, {
+                element: r.createElement(di, {
                     isStepUpVerification: !0,
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauthrecovery",
-                element: r.createElement(di, null)
+                element: r.createElement(pi, null)
             }), r.createElement(l.qh, {
                 path: "/home/stepupauthrecovery",
-                element: r.createElement(di, {
+                element: r.createElement(pi, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
@@ -123905,24 +123909,27 @@
             }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
                 element: r.createElement(li, null)
+            }), r.createElement(l.qh, {
+                path: "/home/captcha",
+                element: r.createElement(ui, null)
             }), (n || !(null != t && t.id)) && r.createElement(l.qh, {
                 path: "/home/group/:ownerId/calendar/:eventId",
                 element: r.createElement(ya.A, null)
             }), r.createElement(l.qh, {
                 path: "/home/tosupdated",
-                element: ko(pi)()
+                element: ko(fi)()
             }), r.createElement(l.qh, {
                 path: "/home/oauth",
-                element: ko(hi)()
-            }), r.createElement(l.qh, {
-                path: "/home/sso/canny",
                 element: ko(Ai)()
             }), r.createElement(l.qh, {
-                path: "/home/sso/furality",
+                path: "/home/sso/canny",
                 element: ko(gi)()
             }), r.createElement(l.qh, {
-                path: "/home/*",
+                path: "/home/sso/furality",
                 element: ko(Bi)()
+            }), r.createElement(l.qh, {
+                path: "/home/*",
+                element: ko(vi)()
             }), r.createElement(l.qh, {
                 path: "*",
                 element: r.createElement(l.C5, {
@@ -123931,32 +123938,32 @@
                 })
             })))))))
         };
-        var bi = s(85072),
-            yi = s.n(bi),
-            Ci = s(97825),
-            wi = s.n(Ci),
-            xi = s(77659),
-            Di = s.n(xi),
-            Ei = s(55056),
-            Ii = s.n(Ei),
-            ki = s(10540),
-            _i = s.n(ki),
-            Si = s(41113),
-            Oi = s.n(Si),
-            Ti = s(56275),
-            Ni = {};
-        Ni.styleTagTransform = Oi(), Ni.setAttributes = Ii(), Ni.insert = Di().bind(null, "head"), Ni.domAPI = wi(), Ni.insertStyleElement = _i();
-        yi()(Ti.A, Ni);
-        Ti.A && Ti.A.locals && Ti.A.locals;
-        var Pi = document.getElementById("app"),
-            Li = function() {
-                Je(), p(), (0, o.H)(Pi).render(r.createElement(a.Kq, {
+        var yi = s(85072),
+            Ci = s.n(yi),
+            wi = s(97825),
+            xi = s.n(wi),
+            Di = s(77659),
+            Ei = s.n(Di),
+            Ii = s(55056),
+            ki = s.n(Ii),
+            _i = s(10540),
+            Si = s.n(_i),
+            Oi = s(41113),
+            Ti = s.n(Oi),
+            Ni = s(56275),
+            Pi = {};
+        Pi.styleTagTransform = Ti(), Pi.setAttributes = ki(), Pi.insert = Ei().bind(null, "head"), Pi.domAPI = xi(), Pi.insertStyleElement = Si();
+        Ci()(Ni.A, Pi);
+        Ni.A && Ni.A.locals && Ni.A.locals;
+        var Li = document.getElementById("app"),
+            Ri = function() {
+                Je(), p(), (0, o.H)(Li).render(r.createElement(a.Kq, {
                     store: Ao
                 }, r.createElement(i.Kd, {
                     basename: "/"
                 }, r.createElement(l.BV, null, r.createElement(l.qh, {
                     path: "*",
-                    element: r.createElement(vi, null)
+                    element: r.createElement(bi, null)
                 }))))), S(Ao)
             };
         (0, e.A)(n().mark(function e() {
@@ -123964,7 +123971,7 @@
             return n().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Li();
+                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Ri();
                     case 3:
                     case "end":
                         return e.stop()
