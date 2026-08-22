@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-20t17-55-24-the-eye-of-wheeljack--main-prod-public-3db963b1-e64e-429d-963a-bdb75cad2bb5--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-21t17-36-05-the-dirt-of-jonnifer--main-prod-public-c40e3108-f914-4a79-a090-729fc7dd7aa5--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-20t17-55-24-the-eye-of-wheeljack", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-21t17-36-05-the-dirt-of-jonnifer", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115252,9 +115252,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-20t17-55-24-the-eye-of-wheeljack"
+        id: "2026-08-21t17-36-05-the-dirt-of-jonnifer"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-20t17-55-24-the-eye-of-wheeljack"
+        id: "2026-08-21t17-36-05-the-dirt-of-jonnifer"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -117007,7 +117007,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-20t17-55-24-the-eye-of-wheeljack",
+                release: "2026-08-21t17-36-05-the-dirt-of-jonnifer",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -123388,6 +123388,19 @@
                         var t = e.searchParams;
                         return t.get("openid.mode") ? Object.fromEntries(t.entries()) : (qa(), null)
                     }
+                },
+                meta: {
+                    label: "Meta",
+                    callbackUrl: "com.vrchat.mobile://oauth/meta",
+                    authenticate: function() {
+                        var e, t, n, r = window.location.hash.substring(1);
+                        return r ? (history.replaceState(null, "", window.location.pathname), {
+                            oauthPayload: r
+                        }) : (e = (window.location.origin + window.location.pathname).split("/home"), t = "".concat(e[0], "/home/meta/auth/mobile").replace("http://", "https://"), n = new URLSearchParams({
+                            redirect_uri: t,
+                            organization_id: "1209084215785309"
+                        }), window.location.href = "".concat("https://auth.oculus.com/sso/", "?").concat(n.toString()), null)
+                    }
                 }
             };
         const Ha = function(t) {
@@ -123905,6 +123918,11 @@
                 path: "/home/apple/auth/mobile",
                 element: r.createElement(Ha, {
                     provider: "apple"
+                })
+            }), r.createElement(l.qh, {
+                path: "/home/meta/auth/mobile",
+                element: r.createElement(Ha, {
+                    provider: "meta"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
