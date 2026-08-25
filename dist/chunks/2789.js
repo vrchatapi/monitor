@@ -8,18 +8,18 @@
             var n = r(10467),
                 o = r(82544),
                 s = r(82628),
-                a = r(34496),
-                l = r(42217),
+                l = r(34496),
+                a = r(42217),
                 i = r(54756),
-                c = r.n(i),
-                d = r(65950),
+                d = r.n(i),
+                c = r(65950),
                 u = r(71661),
                 m = (r(13951), r(72784)),
                 w = r(5556),
                 p = r.n(w),
                 g = r(96540),
-                f = r(6376),
-                v = r(7612),
+                v = r(6376),
+                f = r(7612),
                 y = r(97087),
                 h = (r(31069), function(e) {
                     var t = e.storeId,
@@ -32,10 +32,10 @@
                             skip: !t
                         }),
                         s = o.data,
-                        a = o.isFetching,
-                        l = o.isSuccess,
+                        l = o.isFetching,
+                        a = o.isSuccess,
                         i = o.isError;
-                    return a && (u.M2, v.z1), l ? g.createElement("div", {
+                    return l && (u.M2, f.z1), a ? g.createElement("div", {
                         className: "".concat(n)
                     }, g.createElement("p", {
                         className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
@@ -51,45 +51,45 @@
             };
             const E = h;
             var x = function(e) {
-                var t = e.listing,
-                    r = e.onCancelCallback,
-                    i = void 0 === r ? function() {} : r;
-                if (!t) return null;
-                var w = null == t ? void 0 : t.active,
-                    p = (0, f.wA)(),
-                    v = (0, m.Qy)(),
-                    y = (0, o.A)(v, 2),
-                    h = y[0],
-                    x = y[1],
-                    b = x.isLoading,
-                    I = (x.isError, x.error, x.reset),
-                    S = (null == t ? void 0 : t.storeIds.length) > 0,
-                    N = function() {
-                        i(), I()
+                var t, r, i, w = e.listing,
+                    p = e.onCancelCallback,
+                    f = void 0 === p ? function() {} : p;
+                if (!w) return null;
+                var y = null == w ? void 0 : w.active,
+                    h = (0, v.wA)(),
+                    x = (0, m.Qy)(),
+                    b = (0, o.A)(x, 2),
+                    I = b[0],
+                    S = b[1],
+                    N = S.isLoading,
+                    T = (S.isError, S.error, S.reset),
+                    k = (null == w || null === (t = w.storeIds) || void 0 === t ? void 0 : t.length) > 0,
+                    C = function() {
+                        f(), T()
                     },
-                    T = function() {
-                        var e = (0, n.A)(c().mark(function e() {
-                            var r, n;
-                            return c().wrap(function(e) {
+                    q = function() {
+                        var e = (0, n.A)(d().mark(function e() {
+                            var t, r;
+                            return d().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, h({
-                                            listingId: t.id
+                                        return e.prev = 0, e.next = 3, I({
+                                            listingId: w.id
                                         }).unwrap();
                                     case 3:
-                                        p((0, d.X)({
+                                        h((0, c.X)({
                                             title: "Listing deleted",
-                                            icon: l.SG,
-                                            message: "".concat(t.displayName, " has been deleted."),
+                                            icon: a.SG,
+                                            message: "".concat(w.displayName, " has been deleted."),
                                             color: "success",
                                             timeout: 3e3
-                                        })), N(), e.next = 12;
+                                        })), C(), e.next = 12;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), p((0, d.X)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), h((0, c.X)({
                                             title: "Failed to delete listing",
-                                            icon: a.zp,
-                                            message: null !== (r = null === (n = e.t0.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== r ? r : "Something went wrong",
+                                            icon: l.zp,
+                                            message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Something went wrong",
                                             color: "danger",
                                             timeout: 9e3
                                         })), e.abrupt("return");
@@ -105,7 +105,7 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return w ? g.createElement("div", {
+                return y ? g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
                 }, g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
@@ -119,7 +119,7 @@
                     className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
                 }, g.createElement(u.$n, {
                     type: "button",
-                    onClick: N,
+                    onClick: C,
                     containerClasses: "tw-flex-1",
                     neutral: !0
                 }, "Close"))) : g.createElement("div", {
@@ -130,11 +130,11 @@
                     icon: s.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-5"
-                }), S && g.createElement("div", {
+                }), k && g.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-gap-2 tw-mb-9"
                 }, g.createElement("p", {
                     className: "tw-mb-0"
-                }, "This listing is availalbe in the following ", (null == t ? void 0 : t.storeIds.length) || 0, " ", 1 === (null == t ? void 0 : t.storeIds.length) ? "store" : "stores", ":"), null == t ? void 0 : t.storeIds.map(function(e) {
+                }, "This listing is available in the following ", (null == w || null === (r = w.storeIds) || void 0 === r ? void 0 : r.length) || 0, " ", 1 === (null == w || null === (i = w.storeIds) || void 0 === i ? void 0 : i.length) ? "store" : "stores", ":"), null == w ? void 0 : w.storeIds.map(function(e) {
                     return g.createElement(E, {
                         key: e,
                         storeId: e
@@ -145,13 +145,13 @@
                     className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
                 }, g.createElement(u.$n, {
                     type: "button",
-                    onClick: N,
+                    onClick: C,
                     containerClasses: "tw-flex-1",
                     neutral: !0
                 }, "Cancel"), g.createElement(u.$n, {
                     type: "button",
-                    onClick: T,
-                    loading: b,
+                    onClick: q,
+                    loading: N,
                     containerClasses: "tw-flex-1",
                     danger: !0
                 }, "Delete")))
@@ -164,16 +164,16 @@
         },
         97087(e, t, r) {
             r.d(t, {
-                HP: () => d,
-                ST: () => c,
+                HP: () => c,
+                ST: () => d,
                 _N: () => i,
-                rg: () => l,
+                rg: () => a,
                 s7: () => u
             });
             var n = r(80045),
                 o = r(89483),
                 s = ["storeId"],
-                a = o.m.injectEndpoints({
+                l = o.m.injectEndpoints({
                     endpoints: function(e) {
                         return {
                             getStores: e.query({
@@ -183,14 +183,14 @@
                                         n = void 0 !== r && r,
                                         o = e.n,
                                         s = void 0 === o ? 50 : o,
-                                        a = e.offset;
+                                        l = e.offset;
                                     return {
                                         url: "economy/stores",
                                         params: {
                                             sellerId: t,
                                             managementPov: n,
                                             n: s,
-                                            offset: void 0 === a ? 0 : a
+                                            offset: void 0 === l ? 0 : l
                                         }
                                     }
                                 },
@@ -203,10 +203,10 @@
                                         n = e.groupId,
                                         o = e.creatorId,
                                         s = e.hydrateListings,
-                                        a = void 0 !== s && s,
-                                        l = e.hydrateProducts,
-                                        i = void 0 !== l && l,
-                                        c = e.managementPov;
+                                        l = void 0 !== s && s,
+                                        a = e.hydrateProducts,
+                                        i = void 0 !== a && a,
+                                        d = e.managementPov;
                                     return {
                                         url: "economy/store",
                                         params: {
@@ -214,9 +214,9 @@
                                             worldId: r,
                                             groupId: n,
                                             creatorId: o,
-                                            hydrateListings: a,
+                                            hydrateListings: l,
                                             hydrateProducts: i,
-                                            managementPov: void 0 !== c && c
+                                            managementPov: void 0 !== d && d
                                         }
                                     }
                                 },
@@ -234,8 +234,8 @@
                                         n = e.worldId,
                                         o = e.groupId,
                                         s = e.tags,
-                                        a = void 0 === s ? [] : s,
-                                        l = e.description;
+                                        l = void 0 === s ? [] : s,
+                                        a = e.description;
                                     return {
                                         url: "economy/store",
                                         method: "POST",
@@ -244,8 +244,8 @@
                                             storeType: r,
                                             worldId: n,
                                             groupId: o,
-                                            tags: a,
-                                            description: void 0 === l ? "" : l
+                                            tags: l,
+                                            description: void 0 === a ? "" : a
                                         }
                                     }
                                 },
@@ -303,12 +303,12 @@
                 }).enhanceEndpoints({
                     addTagTypes: ["Stores", "Store", "UserGroups"]
                 }),
-                l = a.useGetStoreQuery,
-                i = a.useGetStoresQuery,
-                c = a.useCreateStoreMutation,
-                d = a.useUpdateStoreMutation,
-                u = (a.useDeleteStoreMutation, a.useGetEligibleWorldsQuery)
+                a = l.useGetStoreQuery,
+                i = l.useGetStoresQuery,
+                d = l.useCreateStoreMutation,
+                c = l.useUpdateStoreMutation,
+                u = (l.useDeleteStoreMutation, l.useGetEligibleWorldsQuery)
         }
     }
 ]);
-//# sourceMappingURL=01572926934ed2687444276e4768c07dc4e27f9ea78347f7f96530207450dd77.js.map
+//# sourceMappingURL=257fe04a8075e035b3c9ffa7f46b8b739020d9186d9c7fff63f5f1202a9b73a7.js.map

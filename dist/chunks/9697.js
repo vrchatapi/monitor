@@ -187,7 +187,7 @@
                     className: "tw-text-light-grey"
                 }, "Availability"), b.createElement("p", {
                     className: "tw-mb-0"
-                }, x.length || 0, " ", 1 === (null == x ? void 0 : x.length) ? "Store" : "Stores")), b.createElement(o.fv, {
+                }, (null == x ? void 0 : x.length) || 0, " ", 1 === (null == x ? void 0 : x.length) ? "Store" : "Stores")), b.createElement(o.fv, {
                     className: "tw-justify-center tw-items-center tw-truncate tw-hidden @[470px]/my-listings:tw-flex"
                 }, b.createElement("small", {
                     className: "tw-text-light-grey"
@@ -473,4 +473,4 @@
         }
     }
 ]);
-//# sourceMappingURL=549e8ce074ef5b1f3baaeefeb4d997515215b406bf1f17ec089a10bdf25f50a8.js.map
+//# sourceMappingURL=42ba0f6e23b9aa2e9b5852fbe61f068fa0f450e206e3116908a4a7a0dda25f07.js.map
