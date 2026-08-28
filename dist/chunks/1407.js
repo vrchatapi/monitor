@@ -22,13 +22,13 @@
             }
             var o = "hcaptcha-api-script-id",
                 h = "hcaptchaOnLoad",
-                p = [],
-                d = function(e) {
+                d = [],
+                p = function(e) {
                     void 0 === e && (e = {});
                     var t = c(e.scriptLocation);
                     delete e.scriptLocation;
                     var a = s(t),
-                        n = p.find(function(e) {
+                        n = d.find(function(e) {
                             return e.scope === a.window
                         });
                     if (a.document.getElementById(o) && n) return n.promise;
@@ -53,7 +53,7 @@
                         }(e);
                         s.src += "" !== c ? "&" + c : "", t.appendChild(s)
                     });
-                    return p.push({
+                    return d.push({
                         promise: i,
                         scope: a.window
                     }), i
@@ -102,10 +102,10 @@
                             c = e.reCaptchaCompat,
                             o = e.reportapi,
                             h = e.sentry,
-                            p = e.custom,
+                            d = e.custom,
                             l = e.loadAsync,
                             u = e.scriptLocation;
-                        d({
+                        p({
                             apihost: t,
                             assethost: a,
                             endpoint: n,
@@ -115,7 +115,7 @@
                             recaptchacompat: !1 === c ? "off" : null,
                             reportapi: o,
                             sentry: h,
-                            custom: p,
+                            custom: d,
                             loadAsync: l,
                             scriptLocation: u
                         }).then(this.handleOnLoad).catch(this.handleError), this.apiScriptRequested = !0
@@ -220,7 +220,7 @@
         },
         71407(e, t, a) {
             a.r(t), a.d(t, {
-                default: () => p
+                default: () => d
             });
             var n = a(82544),
                 i = a(7876),
@@ -229,14 +229,22 @@
                 c = a(84976),
                 o = a(71661),
                 h = a(84212);
-            const p = function() {
+            const d = function() {
                 var e = (0, c.ok)(),
                     t = (0, n.A)(e, 1)[0],
                     a = s.useState(null),
-                    p = (0, n.A)(a, 2),
-                    d = p[0],
-                    l = p[1],
-                    u = t.get("returnUrl");
+                    d = (0, n.A)(a, 2),
+                    p = d[0],
+                    l = d[1],
+                    u = t.get("returnUrl"),
+                    m = u && function(e) {
+                        try {
+                            var t = new URL(e);
+                            return "localhost" === t.hostname || "127.0.0.1" === t.hostname
+                        } catch (e) {
+                            return !1
+                        }
+                    }(u);
                 return s.createElement(h.A, null, s.createElement(o.Qc, null, "Captcha Verification"), s.createElement("div", {
                     className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit sm:tw-mt-[200px] tw-mt-0"
                 }, s.createElement("div", {
@@ -250,26 +258,24 @@
                     className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
                 }, "Verify You're Human"), s.createElement("p", {
                     className: "tw-text-center tw-mb-6"
-                }, "Please complete the captcha below to continue."), d && s.createElement("p", {
+                }, "Please complete the captcha below to continue."), p && s.createElement("p", {
                     role: "alert",
                     "aria-label": "Captcha error",
                     className: "tw-text-error-message-red tw-text-sm tw-mb-4"
-                }, d), !u && s.createElement("p", {
+                }, p), !m && s.createElement("p", {
                     role: "alert",
-                    "aria-label": "Missing return URL",
+                    "aria-label": "Invalid return URL",
                     className: "tw-text-error-message-red tw-text-sm tw-mb-4"
-                }, "Missing return URL parameter."), s.createElement("div", {
+                }, "Invalid return URL."), s.createElement("div", {
                     className: "tw-mb-6"
                 }, s.createElement(r.A, {
                     theme: "dark",
                     sitekey: "85eb5fc7-910f-44cb-b913-f92ac87596bd",
                     onVerify: function(e) {
-                        if (u) try {
+                        if (m) {
                             var t = new URL(u);
                             t.searchParams.set("captchaCode", e), window.location.href = t.toString()
-                        } catch (e) {
-                            l("Invalid return URL")
-                        } else l("No return URL specified")
+                        } else l("Invalid return URL")
                     },
                     onError: function() {
                         l("Captcha verification failed. Please try again.")
@@ -288,4 +294,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e142043fc70d93d1ddee40a6e5af1f152ef8d1255643c872a784e95014ee7868.js.map
+//# sourceMappingURL=86bff330166553c3f7c764ca5885d0698b220d8f8e32ebffd31fe7a621266ffa.js.map

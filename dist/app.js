@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-25t01-04-55-the-sludge-of-rufioh--main-prod-public-2d424d53-6fcf-4d3e-a431-3c5706b80da7--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-27t23-22-58-the-soda-of-world--main-prod-public-200e506c-78ca-4595-9ce1-0c922789d098--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-25t01-04-55-the-sludge-of-rufioh", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-27t23-22-58-the-soda-of-world", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115047,7 +115047,7 @@
         1107: "9758bd652516d99b7d7bae7d4dedf1d4b2ccc244d356daeb183e77ac504b81b0",
         1260: "f7771fe0d01e571ac7abd7ff874f628e25659071c069414bf5c7a0b11953a9e6",
         1398: "28c29e4d63a7d552076fa8a4b73ccfe56ae7467e6583ce5fb361552fffffefa9",
-        1407: "e142043fc70d93d1ddee40a6e5af1f152ef8d1255643c872a784e95014ee7868",
+        1407: "86bff330166553c3f7c764ca5885d0698b220d8f8e32ebffd31fe7a621266ffa",
         1462: "ec59ec2cc984dbc9fce7329bf7c67e52345dc314d80741a2faf1a1b0517870c6",
         1546: "5dd078b0749e97e63f6f025fe7fba6165b1a79334ed0bfa3b17ad6e041c2ad30",
         1647: "45b6c86c6f72d6c8d7a2a43432064a34e233c2cbd58417eeae17e2fcc042e8ab",
@@ -115236,9 +115236,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-25t01-04-55-the-sludge-of-rufioh"
+        id: "2026-08-27t23-22-58-the-soda-of-world"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-25t01-04-55-the-sludge-of-rufioh"
+        id: "2026-08-27t23-22-58-the-soda-of-world"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116991,7 +116991,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-25t01-04-55-the-sludge-of-rufioh",
+                release: "2026-08-27t23-22-58-the-soda-of-world",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -122717,12 +122717,187 @@
             styles: "position:fixed;bottom:0;left:0;padding:1rem;z-index:10000"
         });
         const ba = Ba;
-        var ya = s(39907),
-            Ca = s(7876),
-            wa = s(25538),
-            xa = s(84212);
+        var ya, Ca = s(39907),
+            wa = s(7876),
+            xa = s(25538),
+            Da = s(98462),
+            Ea = function() {
+                var e = (window.location.origin + window.location.pathname).split("/home"),
+                    t = "".concat(e[0], "/home/steam/auth/mobile");
+                window.location.href = function(e) {
+                    var t = e.returnTo,
+                        n = new URLSearchParams({
+                            "openid.ns": "http://specs.openid.net/auth/2.0",
+                            "openid.mode": "checkid_setup",
+                            "openid.return_to": t,
+                            "openid.realm": new URL(t).origin,
+                            "openid.identity": "http://specs.openid.net/auth/2.0/identifier_select",
+                            "openid.claimed_id": "http://specs.openid.net/auth/2.0/identifier_select"
+                        });
+                    return "".concat("https://steamcommunity.com/openid/login", "?").concat(n.toString())
+                }({
+                    returnTo: t
+                })
+            },
+            Ia = s(84212),
+            ka = {
+                apple: {
+                    label: "Apple",
+                    callbackUrl: "com.vrchat.mobile://oauth/apple",
+                    authenticate: (ya = (0, e.A)(n().mark(function e() {
+                        var t, r;
+                        return n().wrap(function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    return e.next = 2, (0, Da.Q)();
+                                case 2:
+                                    return t = e.sent, r = t.identityToken, e.abrupt("return", {
+                                        identityToken: r
+                                    });
+                                case 5:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }, e)
+                    })), function() {
+                        return ya.apply(this, arguments)
+                    })
+                },
+                steam: {
+                    label: "Steam",
+                    callbackUrl: "com.vrchat.mobile://openid/steam",
+                    authenticate: function(e) {
+                        var t = e.searchParams;
+                        return t.get("openid.mode") ? Object.fromEntries(t.entries()) : (Ea(), null)
+                    }
+                },
+                meta: {
+                    label: "Meta",
+                    callbackUrl: "com.vrchat.mobile://oauth/meta",
+                    authenticate: function() {
+                        var e, t, n, r = window.location.hash.substring(1);
+                        return r ? (history.replaceState(null, "", window.location.pathname), {
+                            oauthPayload: r
+                        }) : (e = (window.location.origin + window.location.pathname).split("/home"), t = "".concat(e[0], "/home/meta/auth/mobile").replace("http://", "https://"), n = new URLSearchParams({
+                            redirect_uri: t,
+                            organization_id: "1209084215785309"
+                        }), window.location.href = "".concat("https://auth.oculus.com/sso/", "?").concat(n.toString()), null)
+                    }
+                }
+            };
+        const _a = function(t) {
+            var o = t.provider,
+                a = t.useReturnUrl,
+                s = void 0 !== a && a,
+                l = (0, i.ok)(),
+                c = (0, To.A)(l, 2),
+                u = c[0],
+                d = c[1],
+                p = (0, r.useState)(!1),
+                f = (0, To.A)(p, 2),
+                m = f[0],
+                h = f[1],
+                A = ka[o],
+                g = u.get("returnUrl"),
+                B = g && function(e) {
+                    try {
+                        var t = new URL(e);
+                        return "localhost" === t.hostname || "127.0.0.1" === t.hostname
+                    } catch (e) {
+                        return !1
+                    }
+                }(g),
+                v = function() {
+                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+                        t = s ? g : A.callbackUrl;
+                    if (!t || s && !B) h(!0);
+                    else {
+                        for (var n = new URL(t), r = 0, o = Object.entries(e); r < o.length; r++) {
+                            var a = (0, To.A)(o[r], 2),
+                                i = a[0],
+                                l = a[1];
+                            n.searchParams.set(i, l)
+                        }
+                        window.location.href = n.toString()
+                    }
+                },
+                b = function() {
+                    var t = (0, e.A)(n().mark(function e() {
+                        var t;
+                        return n().wrap(function(e) {
+                            for (;;) switch (e.prev = e.next) {
+                                case 0:
+                                    return h(!1), e.prev = 1, e.next = 4, A.authenticate({
+                                        searchParams: u
+                                    });
+                                case 4:
+                                    if (t = e.sent) {
+                                        e.next = 7;
+                                        break
+                                    }
+                                    return e.abrupt("return");
+                                case 7:
+                                    d({}, {
+                                        replace: !0
+                                    }), v(t), e.next = 15;
+                                    break;
+                                case 11:
+                                    e.prev = 11, e.t0 = e.catch(1), console.error("".concat(o, " sign in failed:"), e.t0), h(!0);
+                                case 15:
+                                case "end":
+                                    return e.stop()
+                            }
+                        }, e, null, [
+                            [1, 11]
+                        ])
+                    }));
+                    return function() {
+                        return t.apply(this, arguments)
+                    }
+                }(),
+                y = s && (!g || !B);
+            return (0, r.useEffect)(function() {
+                y || b()
+            }, []), r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Authenticating with ", A.label), r.createElement("div", {
+                className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+            }, r.createElement("div", {
+                className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+            }, r.createElement("div", {
+                className: "tw-mb-5"
+            }, r.createElement(da.M2, {
+                icon: wa.faShieldHalved,
+                className: "tw-w-[72px] tw-h-[72px]"
+            })), r.createElement("h4", {
+                className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+            }, "Authenticating with ", A.label), y && r.createElement(da.$T, {
+                type: "error",
+                title: "Invalid return URL",
+                className: "tw-w-full",
+                slim: !0
+            }, "Invalid return URL."), m && !y ? r.createElement(r.Fragment, null, r.createElement(da.$T, {
+                type: "error",
+                title: "".concat(A.label, " sign in failed"),
+                className: "tw-w-full",
+                slim: !0
+            }, "We couldn't sign you in with ", A.label, ". You can try again", !s && ", or return to the app and choose another option", "."), r.createElement("div", {
+                className: "tw-flex tw-flex-col tw-items-center tw-gap-3 tw-mt-6"
+            }, r.createElement(da.$n, {
+                onClick: b
+            }, "Continue with ", A.label), !s && r.createElement(da.$n, {
+                neutral: !0,
+                onClick: function() {
+                    return v()
+                }
+            }, "Return to the app"))) : !y && r.createElement(r.Fragment, null, r.createElement("p", {
+                className: "tw-text-center tw-mt-6"
+            }, "Please wait..."), r.createElement("div", {
+                className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
+            }, r.createElement(xa.A, {
+                size: "5x"
+            }))))))
+        };
 
-        function Da(e, t) {
+        function Sa(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -122733,18 +122908,18 @@
             return n
         }
 
-        function Ea(e) {
+        function Oa(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Da(Object(n), !0).forEach(function(t) {
+                t % 2 ? Sa(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Da(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Sa(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Ia = function(t) {
+        const Ta = function(t) {
             var o = t.version,
                 a = (0, l.Zp)(),
                 s = (0, i.ok)(),
@@ -122812,7 +122987,7 @@
                                 return g = "com.vrchat.mobile://oauth/discord?discord_access_token=".concat(h.accessToken), window.location.href = g, e.abrupt("return");
                             case 31:
                                 return a((null === (f = h.state) || void 0 === f ? void 0 : f.redirectTo) || "/home/login", {
-                                    state: Ea(Ea({}, (null === (m = h.state) || void 0 === m ? void 0 : m.redirectState) || {}), {}, {
+                                    state: Oa(Oa({}, (null === (m = h.state) || void 0 === m ? void 0 : m.redirectState) || {}), {}, {
                                         discordToken: 2 === o ? h.provisionalId : h.accessToken,
                                         discordOAuthVersion: o
                                     }),
@@ -122833,14 +123008,14 @@
             }, []);
             var E = 2 === o ? C : A,
                 I = 2 === o ? x : g;
-            return r.createElement(xa.A, null, r.createElement(da.Qc, null, "Authenticating with Discord"), r.createElement("div", {
+            return r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Authenticating with Discord"), r.createElement("div", {
                 className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
             }, r.createElement("div", {
                 className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
             }, r.createElement("div", {
                 className: "tw-mb-5"
             }, r.createElement(da.M2, {
-                icon: Ca.faShieldHalved,
+                icon: wa.faShieldHalved,
                 className: "tw-w-[72px] tw-h-[72px]"
             })), r.createElement("h4", {
                 className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
@@ -122851,21 +123026,21 @@
                 className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
             }, 429 === (null == I ? void 0 : I.status) ? "Discord currently unavailable. Please try again later." : "Oops, we've encountered an error while trying to authenticate with Discord."), r.createElement("div", {
                 className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
-            }, r.createElement(wa.A, {
+            }, r.createElement(xa.A, {
                 size: "5x"
             })))))
         };
-        var ka = s(32662),
-            _a = s(95093),
-            Sa = s.n(_a),
-            Oa = s(76084),
-            Ta = s.n(Oa),
-            Na = s(89524),
-            Pa = s(37097),
-            La = s(82030),
-            Ra = s(97890);
+        var Na = s(32662),
+            Pa = s(95093),
+            La = s.n(Pa),
+            Ra = s(76084),
+            Fa = s.n(Ra),
+            Ma = s(89524),
+            ja = s(37097),
+            Ua = s(82030),
+            Ga = s(97890);
 
-        function Fa(e, t) {
+        function za(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -122876,22 +123051,22 @@
             return n
         }
 
-        function Ma(e) {
+        function qa(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Fa(Object(n), !0).forEach(function(t) {
+                t % 2 ? za(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Fa(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : za(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const ja = function(t) {
+        const Va = function(t) {
             var o, a, s = t.oauthProvider,
                 c = (0, l.Zp)(),
                 u = (0, l.zy)().state,
-                d = (0, Pa.A)(),
+                d = (0, ja.A)(),
                 p = (0, w.GF)(),
                 f = (0, To.A)(p, 2),
                 m = f[0],
@@ -122921,7 +123096,7 @@
                 j = F.isSuccess,
                 U = F.error,
                 G = function(e, t, n) {
-                    return e === Ra.zN.APPLE ? n.apple : e === Ra.zN.GOOGLE ? n.google : 2 === t ? n.discordV2 : n.discordV1
+                    return e === Ga.zN.APPLE ? n.apple : e === Ga.zN.GOOGLE ? n.google : 2 === t ? n.discordV2 : n.discordV1
                 }(s, null == u ? void 0 : u.discordOAuthVersion, {
                     apple: R,
                     google: _,
@@ -122966,7 +123141,7 @@
                 de = (0, To.A)(ue, 2),
                 pe = de[0],
                 fe = de[1],
-                me = (0, ka.Mj)("dobFailed", {
+                me = (0, Na.Mj)("dobFailed", {
                     value: !1,
                     failedAt: null
                 }),
@@ -122974,7 +123149,7 @@
                 Ae = he[0],
                 ge = he[1];
             r.useEffect(function() {
-                Ae.value && "number" == typeof Ae.failedAt && Sa()().isAfter(Sa()(Ae.failedAt).add(1, "days")) && ge({
+                Ae.value && "number" == typeof Ae.failedAt && La()().isAfter(La()(Ae.failedAt).add(1, "days")) && ge({
                     value: !1,
                     failedAt: null
                 })
@@ -122987,7 +123162,7 @@
                     return n().wrap(function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                if (r = t.target.value, o = void 0 === r ? "" : r, Z(Ma(Ma({}, J), {}, {
+                                if (r = t.target.value, o = void 0 === r ? "" : r, Z(qa(qa({}, J), {}, {
                                         value: o,
                                         ok: null,
                                         taken: !1,
@@ -122998,8 +123173,8 @@
                                 }
                                 return e.abrupt("return");
                             case 4:
-                                if (o = (0, Na.aj)(o), Z(function(e) {
-                                        return Ma(Ma({}, e), {}, {
+                                if (o = (0, Ma.aj)(o), Z(function(e) {
+                                        return qa(qa({}, e), {}, {
                                             taken: null
                                         })
                                     }), a = !1, "" !== o && o.length < 4 ? a = "That display name is too short" : o.length > 15 && (a = "That display name is too long"), !a) {
@@ -123007,20 +123182,20 @@
                                     break
                                 }
                                 return Z(function(e) {
-                                    return Ma(Ma({}, e), {}, {
+                                    return qa(qa({}, e), {}, {
                                         error: a,
                                         ok: null
                                     })
                                 }), e.abrupt("return");
                             case 11:
                                 return Z(function(e) {
-                                    return Ma(Ma({}, e), {}, {
+                                    return qa(qa({}, e), {}, {
                                         checking: !0
                                     })
                                 }), e.next = 14, Y(o);
                             case 14:
                                 i = e.sent, Z(function(e) {
-                                    return Ma(Ma({}, e), {}, {
+                                    return qa(qa({}, e), {}, {
                                         taken: i,
                                         ok: !e.error && !i,
                                         error: i ? "That display name is already taken." : e.error,
@@ -123051,22 +123226,22 @@
             var ve = function(e, t, n) {
                     if ("" !== n && "" !== t && "" !== e) {
                         var r = null;
-                        if (!Ta()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Ta()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Ta()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) te(function(e) {
-                            return Ma(Ma({}, e), {}, {
+                        if (!Fa()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Fa()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Fa()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) te(function(e) {
+                            return qa(qa({}, e), {}, {
                                 error: r,
                                 ok: !1
                             })
                         });
-                        else Sa()({
+                        else La()({
                             year: n,
                             month: t - 1,
                             day: e
                         }).isValid() ? te(function(e) {
-                            return Ma(Ma({}, e), {}, {
+                            return qa(qa({}, e), {}, {
                                 ok: !0
                             })
                         }) : te(function(e) {
-                            return Ma(Ma({}, e), {}, {
+                            return qa(qa({}, e), {}, {
                                 error: "That's not a valid date",
                                 ok: !1
                             })
@@ -123096,7 +123271,7 @@
                                     }), e.next = 14;
                                     break;
                                 case 8:
-                                    if (e.prev = 8, e.t0 = e.catch(1), console.error(e.t0), !Sa()().subtract(13, "years").isBefore(Sa()({
+                                    if (e.prev = 8, e.t0 = e.catch(1), console.error(e.t0), !La()().subtract(13, "years").isBefore(La()({
                                             year: ee.year,
                                             month: ee.month - 1,
                                             day: ee.day
@@ -123121,27 +123296,27 @@
                     }
                 }(),
                 ye = null !== (o = null == V || null === (a = V.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== o ? o : "";
-            return ye && (ye.indexOf(":") > 0 ? (ye.substring(0, ye.indexOf(":")).trim(), ye = ye.substring(ye.indexOf(":") + 1).trim()) : 0 === ye.indexOf(":") && (ye = ye.substring(1).trim())), Ae.value ? r.createElement(xa.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(La.mc, null, r.createElement(La.VP, {
+            return ye && (ye.indexOf(":") > 0 ? (ye.substring(0, ye.indexOf(":")).trim(), ye = ye.substring(ye.indexOf(":") + 1).trim()) : 0 === ye.indexOf(":") && (ye = ye.substring(1).trim())), Ae.value ? r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(Ua.mc, null, r.createElement(Ua.VP, {
                 md: {
                     size: 6,
                     offset: 3
                 },
                 className: "mt-5"
-            }, r.createElement(La.fI, {
+            }, r.createElement(Ua.fI, {
                 className: "justify-content-center"
-            }, r.createElement(La.gu, {
+            }, r.createElement(Ua.gu, {
                 href: "https://vrchat.com",
                 target: "_blank"
-            })), r.createElement(La.lV, null, r.createElement(La.fI, {
+            })), r.createElement(Ua.lV, null, r.createElement(Ua.fI, {
                 className: "align-items-flex-end justify-content-between mb-2 mt-2"
-            }, r.createElement(La.Y9, null, "Finalize your ", s, " Linked Account"), r.createElement(i.N_, {
+            }, r.createElement(Ua.Y9, null, "Finalize your ", s, " Linked Account"), r.createElement(i.N_, {
                 to: "/home/login",
                 className: "nav-link"
             }, "Login")), r.createElement(da.$T, {
                 type: "error",
                 title: "Failed to create account",
                 message: "You are not eligible for a VRChat account at this time. Please try again later."
-            }))))) : r.createElement(xa.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement("div", {
+            }))))) : r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement("div", {
                 className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
             }, r.createElement("form", {
                 onSubmit: be
@@ -123178,7 +123353,7 @@
                 className: "tw-mb-2"
             }, "Date of Birth"), r.createElement("div", {
                 className: "tw-justify-between tw-align-middle tw-flex"
-            }, r.createElement(Ga, {
+            }, r.createElement(Ha, {
                 className: "tw-w-[129px] tw-h-10",
                 id: "age_month",
                 "aria-label": "Birthday Month",
@@ -123187,7 +123362,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(Ma(Ma({}, ee), {}, {
+                    te(qa(qa({}, ee), {}, {
                         month: n,
                         ok: null,
                         error: !1
@@ -123230,7 +123405,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(Ma(Ma({}, ee), {}, {
+                    te(qa(qa({}, ee), {}, {
                         day: n,
                         ok: null,
                         error: !1
@@ -123249,7 +123424,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(Ma(Ma({}, ee), {}, {
+                    te(qa(qa({}, ee), {}, {
                         year: n,
                         ok: null,
                         error: !1
@@ -123316,167 +123491,14 @@
                 className: "tw-text-error-message-red tw-text-xs tw-my-1"
             }, ye)))))
         };
-        var Ua, Ga = (0, Oo.A)("select", {
+        var Ha = (0, Oo.A)("select", {
                 target: "e1iax06v0"
             })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#053c48"
             }, ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#086c84"
             }, ";}"),
-            za = s(98462),
-            qa = function() {
-                var e = (window.location.origin + window.location.pathname).split("/home"),
-                    t = "".concat(e[0], "/home/steam/auth/mobile");
-                window.location.href = function(e) {
-                    var t = e.returnTo,
-                        n = new URLSearchParams({
-                            "openid.ns": "http://specs.openid.net/auth/2.0",
-                            "openid.mode": "checkid_setup",
-                            "openid.return_to": t,
-                            "openid.realm": new URL(t).origin,
-                            "openid.identity": "http://specs.openid.net/auth/2.0/identifier_select",
-                            "openid.claimed_id": "http://specs.openid.net/auth/2.0/identifier_select"
-                        });
-                    return "".concat("https://steamcommunity.com/openid/login", "?").concat(n.toString())
-                }({
-                    returnTo: t
-                })
-            },
-            Va = {
-                apple: {
-                    label: "Apple",
-                    callbackUrl: "com.vrchat.mobile://oauth/apple",
-                    authenticate: (Ua = (0, e.A)(n().mark(function e() {
-                        var t, r;
-                        return n().wrap(function(e) {
-                            for (;;) switch (e.prev = e.next) {
-                                case 0:
-                                    return e.next = 2, (0, za.Q)();
-                                case 2:
-                                    return t = e.sent, r = t.identityToken, e.abrupt("return", {
-                                        identityToken: r
-                                    });
-                                case 5:
-                                case "end":
-                                    return e.stop()
-                            }
-                        }, e)
-                    })), function() {
-                        return Ua.apply(this, arguments)
-                    })
-                },
-                steam: {
-                    label: "Steam",
-                    callbackUrl: "com.vrchat.mobile://openid/steam",
-                    authenticate: function(e) {
-                        var t = e.searchParams;
-                        return t.get("openid.mode") ? Object.fromEntries(t.entries()) : (qa(), null)
-                    }
-                },
-                meta: {
-                    label: "Meta",
-                    callbackUrl: "com.vrchat.mobile://oauth/meta",
-                    authenticate: function() {
-                        var e, t, n, r = window.location.hash.substring(1);
-                        return r ? (history.replaceState(null, "", window.location.pathname), {
-                            oauthPayload: r
-                        }) : (e = (window.location.origin + window.location.pathname).split("/home"), t = "".concat(e[0], "/home/meta/auth/mobile").replace("http://", "https://"), n = new URLSearchParams({
-                            redirect_uri: t,
-                            organization_id: "1209084215785309"
-                        }), window.location.href = "".concat("https://auth.oculus.com/sso/", "?").concat(n.toString()), null)
-                    }
-                }
-            };
-        const Ha = function(t) {
-            var o = t.provider,
-                a = (0, i.ok)(),
-                s = (0, To.A)(a, 2),
-                l = s[0],
-                c = s[1],
-                u = (0, r.useState)(!1),
-                d = (0, To.A)(u, 2),
-                p = d[0],
-                f = d[1],
-                m = Va[o],
-                h = function() {
-                    for (var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = new URL(m.callbackUrl), n = 0, r = Object.entries(e); n < r.length; n++) {
-                        var o = (0, To.A)(r[n], 2),
-                            a = o[0],
-                            i = o[1];
-                        t.searchParams.set(a, i)
-                    }
-                    window.location.href = t.toString()
-                },
-                A = function() {
-                    var t = (0, e.A)(n().mark(function e() {
-                        var t;
-                        return n().wrap(function(e) {
-                            for (;;) switch (e.prev = e.next) {
-                                case 0:
-                                    return f(!1), e.prev = 1, e.next = 4, m.authenticate({
-                                        searchParams: l
-                                    });
-                                case 4:
-                                    if (t = e.sent) {
-                                        e.next = 7;
-                                        break
-                                    }
-                                    return e.abrupt("return");
-                                case 7:
-                                    c({}, {
-                                        replace: !0
-                                    }), h(t), e.next = 15;
-                                    break;
-                                case 11:
-                                    e.prev = 11, e.t0 = e.catch(1), console.error("Mobile ".concat(o, " sign in failed:"), e.t0), f(!0);
-                                case 15:
-                                case "end":
-                                    return e.stop()
-                            }
-                        }, e, null, [
-                            [1, 11]
-                        ])
-                    }));
-                    return function() {
-                        return t.apply(this, arguments)
-                    }
-                }();
-            return (0, r.useEffect)(function() {
-                A()
-            }, []), r.createElement(xa.A, null, r.createElement(da.Qc, null, "Authenticating with ", m.label), r.createElement("div", {
-                className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
-            }, r.createElement("div", {
-                className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
-            }, r.createElement("div", {
-                className: "tw-mb-5"
-            }, r.createElement(da.M2, {
-                icon: Ca.faShieldHalved,
-                className: "tw-w-[72px] tw-h-[72px]"
-            })), r.createElement("h4", {
-                className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
-            }, "Authenticating with ", m.label), p ? r.createElement(r.Fragment, null, r.createElement(da.$T, {
-                type: "error",
-                title: "".concat(m.label, " sign in failed"),
-                className: "tw-w-full",
-                slim: !0
-            }, "We couldn't sign you in with ", m.label, ". You can try again, or return to the app and choose another option."), r.createElement("div", {
-                className: "tw-flex tw-flex-col tw-items-center tw-gap-3 tw-mt-6"
-            }, r.createElement(da.$n, {
-                onClick: A
-            }, "Continue with ", m.label), r.createElement(da.$n, {
-                neutral: !0,
-                onClick: function() {
-                    return h()
-                }
-            }, "Return to the app"))) : r.createElement(r.Fragment, null, r.createElement("p", {
-                className: "tw-text-center tw-mt-6"
-            }, "Please wait..."), r.createElement("div", {
-                className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
-            }, r.createElement(wa.A, {
-                size: "5x"
-            }))))))
-        };
-        var Wa = s(25161);
+            Wa = s(25161);
 
         function Ya(e, t) {
             var n = Object.keys(e);
@@ -123567,7 +123589,7 @@
                         [16, 24]
                     ])
                 }))()
-            }, []), r.createElement(xa.A, null, r.createElement(da.Qc, null, "Linking Twitch Account"), r.createElement("div", {
+            }, []), r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Linking Twitch Account"), r.createElement("div", {
                 className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
             }, r.createElement("div", {
                 className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
@@ -123585,7 +123607,7 @@
                 className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
             }, 429 === (null == h ? void 0 : h.status) ? "Twitch is currently unavailable. Please try again later." : "Oops, we've encountered an error while trying to link your Twitch account."), r.createElement("div", {
                 className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
-            }, r.createElement(wa.A, {
+            }, r.createElement(xa.A, {
                 size: "5x"
             })))))
         };
@@ -123679,16 +123701,16 @@
                     }
                 }(),
                 C = !u && v && h.length > 0;
-            return r.createElement(xa.A, null, r.createElement(da.Qc, null, "Verify your Password"), r.createElement("div", {
+            return r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Verify your Password"), r.createElement("div", {
                 className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
-            }, r.createElement(La.lV, {
+            }, r.createElement(Ua.lV, {
                 onSubmit: y
             }, r.createElement("div", {
                 className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
             }, r.createElement("div", {
                 className: "tw-mb-5"
             }, r.createElement(da.M2, {
-                icon: Ca.faShieldHalved,
+                icon: wa.faShieldHalved,
                 className: "tw-w-[72px] tw-h-[72px]"
             })), r.createElement("h4", {
                 className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
@@ -123825,18 +123847,18 @@
                 element: r.createElement(Xa, null)
             }), r.createElement(l.qh, {
                 path: "/home/login/discord/finalize",
-                element: r.createElement(ja, {
-                    oauthProvider: Ra.zN.DISCORD
+                element: r.createElement(Va, {
+                    oauthProvider: Ga.zN.DISCORD
                 })
             }), r.createElement(l.qh, {
                 path: "/home/login/google/finalize",
-                element: r.createElement(ja, {
-                    oauthProvider: Ra.zN.GOOGLE
+                element: r.createElement(Va, {
+                    oauthProvider: Ga.zN.GOOGLE
                 })
             }), r.createElement(l.qh, {
                 path: "/home/login/apple/finalize",
-                element: r.createElement(ja, {
-                    oauthProvider: Ra.zN.APPLE
+                element: r.createElement(Va, {
+                    oauthProvider: Ga.zN.APPLE
                 })
             }), r.createElement(l.qh, {
                 path: "/home/register",
@@ -123882,12 +123904,12 @@
                 element: r.createElement(ti, null)
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth",
-                element: r.createElement(Ia, {
+                element: r.createElement(Ta, {
                     version: 1
                 })
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth/v2",
-                element: r.createElement(Ia, {
+                element: r.createElement(Ta, {
                     version: 2
                 })
             }), r.createElement(l.qh, {
@@ -123895,18 +123917,30 @@
                 element: r.createElement(Ka, null)
             }), r.createElement(l.qh, {
                 path: "/home/steam/auth/mobile",
-                element: r.createElement(Ha, {
+                element: r.createElement(_a, {
                     provider: "steam"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/apple/auth/mobile",
-                element: r.createElement(Ha, {
+                element: r.createElement(_a, {
                     provider: "apple"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/meta/auth/mobile",
-                element: r.createElement(Ha, {
+                element: r.createElement(_a, {
                     provider: "meta"
+                })
+            }), r.createElement(l.qh, {
+                path: "/home/apple/auth/desktop",
+                element: r.createElement(_a, {
+                    provider: "apple",
+                    useReturnUrl: !0
+                })
+            }), r.createElement(l.qh, {
+                path: "/home/meta/auth/desktop",
+                element: r.createElement(_a, {
+                    provider: "meta",
+                    useReturnUrl: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
@@ -123916,7 +123950,7 @@
                 element: r.createElement(ui, null)
             }), (n || !(null != t && t.id)) && r.createElement(l.qh, {
                 path: "/home/group/:ownerId/calendar/:eventId",
-                element: r.createElement(ya.A, null)
+                element: r.createElement(Ca.A, null)
             }), r.createElement(l.qh, {
                 path: "/home/tosupdated",
                 element: ko(fi)()
