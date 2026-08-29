@@ -10197,6 +10197,7 @@
   "returnCallback",
   "returnFocusAfterClose",
   "returnTo",
+  "returnUrl",
   "returnValue",
   "rev",
   "revalidation",

@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-27t23-22-58-the-soda-of-world--main-prod-public-200e506c-78ca-4595-9ce1-0c922789d098--app.js.LICENSE.txt */
+/*! For license information please see 2026-08-28t18-32-23-the-beast-of-bologna--main-prod-public-e06f9592-70b0-462a-9c26-fdbb59f21950--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-27t23-22-58-the-soda-of-world", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-28t18-32-23-the-beast-of-bologna", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115236,9 +115236,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-27t23-22-58-the-soda-of-world"
+        id: "2026-08-28t18-32-23-the-beast-of-bologna"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-27t23-22-58-the-soda-of-world"
+        id: "2026-08-28t18-32-23-the-beast-of-bologna"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116991,7 +116991,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-27t23-22-58-the-soda-of-world",
+                release: "2026-08-28t18-32-23-the-beast-of-bologna",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -122740,7 +122740,8 @@
                 })
             },
             Ia = s(84212),
-            ka = {
+            ka = "oauth_return_url",
+            _a = {
                 apple: {
                     label: "Apple",
                     callbackUrl: "com.vrchat.mobile://oauth/apple",
@@ -122774,18 +122775,26 @@
                 meta: {
                     label: "Meta",
                     callbackUrl: "com.vrchat.mobile://oauth/meta",
-                    authenticate: function() {
-                        var e, t, n, r = window.location.hash.substring(1);
+                    authenticate: function(e) {
+                        var t = e.useReturnUrl,
+                            n = e.returnUrl,
+                            r = window.location.hash.substring(1);
                         return r ? (history.replaceState(null, "", window.location.pathname), {
                             oauthPayload: r
-                        }) : (e = (window.location.origin + window.location.pathname).split("/home"), t = "".concat(e[0], "/home/meta/auth/mobile").replace("http://", "https://"), n = new URLSearchParams({
-                            redirect_uri: t,
-                            organization_id: "1209084215785309"
-                        }), window.location.href = "".concat("https://auth.oculus.com/sso/", "?").concat(n.toString()), null)
+                        }) : (t && n && sessionStorage.setItem(ka, n), function() {
+                            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "/home/meta/auth/mobile",
+                                t = (window.location.origin + window.location.pathname).split("/home"),
+                                n = "".concat(t[0]).concat(e).replace("http://", "https://"),
+                                r = new URLSearchParams({
+                                    redirect_uri: n,
+                                    organization_id: "1209084215785309"
+                                });
+                            window.location.href = "".concat("https://auth.oculus.com/sso/", "?").concat(r.toString())
+                        }(t ? "/home/meta/auth/desktop" : "/home/meta/auth/mobile"), null)
                     }
                 }
             };
-        const _a = function(t) {
+        const Sa = function(t) {
             var o = t.provider,
                 a = t.useReturnUrl,
                 s = void 0 !== a && a,
@@ -122797,21 +122806,24 @@
                 f = (0, To.A)(p, 2),
                 m = f[0],
                 h = f[1],
-                A = ka[o],
-                g = u.get("returnUrl"),
-                B = g && function(e) {
+                A = _a[o],
+                g = (0, r.useState)(function() {
+                    var e, t;
+                    return null !== (e = u.get("returnUrl")) && void 0 !== e ? e : (t = sessionStorage.getItem(ka), sessionStorage.removeItem(ka), t)
+                }),
+                B = (0, To.A)(g, 1)[0],
+                v = s && ! function(e) {
                     try {
                         var t = new URL(e);
                         return "localhost" === t.hostname || "127.0.0.1" === t.hostname
                     } catch (e) {
                         return !1
                     }
-                }(g),
-                v = function() {
+                }(B),
+                b = function() {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                        t = s ? g : A.callbackUrl;
-                    if (!t || s && !B) h(!0);
-                    else {
+                        t = s ? B : A.callbackUrl;
+                    if (t && !v) {
                         for (var n = new URL(t), r = 0, o = Object.entries(e); r < o.length; r++) {
                             var a = (0, To.A)(o[r], 2),
                                 i = a[0],
@@ -122819,16 +122831,18 @@
                             n.searchParams.set(i, l)
                         }
                         window.location.href = n.toString()
-                    }
+                    } else h(!0)
                 },
-                b = function() {
+                y = function() {
                     var t = (0, e.A)(n().mark(function e() {
                         var t;
                         return n().wrap(function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
                                     return h(!1), e.prev = 1, e.next = 4, A.authenticate({
-                                        searchParams: u
+                                        searchParams: u,
+                                        useReturnUrl: s,
+                                        returnUrl: B
                                     });
                                 case 4:
                                     if (t = e.sent) {
@@ -122839,7 +122853,7 @@
                                 case 7:
                                     d({}, {
                                         replace: !0
-                                    }), v(t), e.next = 15;
+                                    }), b(t), e.next = 15;
                                     break;
                                 case 11:
                                     e.prev = 11, e.t0 = e.catch(1), console.error("".concat(o, " sign in failed:"), e.t0), h(!0);
@@ -122854,10 +122868,9 @@
                     return function() {
                         return t.apply(this, arguments)
                     }
-                }(),
-                y = s && (!g || !B);
+                }();
             return (0, r.useEffect)(function() {
-                y || b()
+                v || y()
             }, []), r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Authenticating with ", A.label), r.createElement("div", {
                 className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
             }, r.createElement("div", {
@@ -122869,12 +122882,12 @@
                 className: "tw-w-[72px] tw-h-[72px]"
             })), r.createElement("h4", {
                 className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
-            }, "Authenticating with ", A.label), y && r.createElement(da.$T, {
+            }, "Authenticating with ", A.label), v && r.createElement(da.$T, {
                 type: "error",
                 title: "Invalid return URL",
                 className: "tw-w-full",
                 slim: !0
-            }, "Invalid return URL."), m && !y ? r.createElement(r.Fragment, null, r.createElement(da.$T, {
+            }, "Invalid return URL."), m && !v ? r.createElement(r.Fragment, null, r.createElement(da.$T, {
                 type: "error",
                 title: "".concat(A.label, " sign in failed"),
                 className: "tw-w-full",
@@ -122882,13 +122895,13 @@
             }, "We couldn't sign you in with ", A.label, ". You can try again", !s && ", or return to the app and choose another option", "."), r.createElement("div", {
                 className: "tw-flex tw-flex-col tw-items-center tw-gap-3 tw-mt-6"
             }, r.createElement(da.$n, {
-                onClick: b
+                onClick: y
             }, "Continue with ", A.label), !s && r.createElement(da.$n, {
                 neutral: !0,
                 onClick: function() {
-                    return v()
+                    return b()
                 }
-            }, "Return to the app"))) : !y && r.createElement(r.Fragment, null, r.createElement("p", {
+            }, "Return to the app"))) : !v && r.createElement(r.Fragment, null, r.createElement("p", {
                 className: "tw-text-center tw-mt-6"
             }, "Please wait..."), r.createElement("div", {
                 className: "tw-p-20 tw-flex tw-items-center tw-justify-center"
@@ -122897,7 +122910,7 @@
             }))))))
         };
 
-        function Sa(e, t) {
+        function Oa(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -122908,18 +122921,18 @@
             return n
         }
 
-        function Oa(e) {
+        function Ta(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Sa(Object(n), !0).forEach(function(t) {
+                t % 2 ? Oa(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Sa(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Oa(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Ta = function(t) {
+        const Na = function(t) {
             var o = t.version,
                 a = (0, l.Zp)(),
                 s = (0, i.ok)(),
@@ -122987,7 +123000,7 @@
                                 return g = "com.vrchat.mobile://oauth/discord?discord_access_token=".concat(h.accessToken), window.location.href = g, e.abrupt("return");
                             case 31:
                                 return a((null === (f = h.state) || void 0 === f ? void 0 : f.redirectTo) || "/home/login", {
-                                    state: Oa(Oa({}, (null === (m = h.state) || void 0 === m ? void 0 : m.redirectState) || {}), {}, {
+                                    state: Ta(Ta({}, (null === (m = h.state) || void 0 === m ? void 0 : m.redirectState) || {}), {}, {
                                         discordToken: 2 === o ? h.provisionalId : h.accessToken,
                                         discordOAuthVersion: o
                                     }),
@@ -123030,17 +123043,17 @@
                 size: "5x"
             })))))
         };
-        var Na = s(32662),
-            Pa = s(95093),
-            La = s.n(Pa),
-            Ra = s(76084),
-            Fa = s.n(Ra),
-            Ma = s(89524),
-            ja = s(37097),
-            Ua = s(82030),
-            Ga = s(97890);
+        var Pa = s(32662),
+            La = s(95093),
+            Ra = s.n(La),
+            Fa = s(76084),
+            Ma = s.n(Fa),
+            ja = s(89524),
+            Ua = s(37097),
+            Ga = s(82030),
+            za = s(97890);
 
-        function za(e, t) {
+        function qa(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123051,22 +123064,22 @@
             return n
         }
 
-        function qa(e) {
+        function Va(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? za(Object(n), !0).forEach(function(t) {
+                t % 2 ? qa(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : za(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : qa(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Va = function(t) {
+        const Ha = function(t) {
             var o, a, s = t.oauthProvider,
                 c = (0, l.Zp)(),
                 u = (0, l.zy)().state,
-                d = (0, ja.A)(),
+                d = (0, Ua.A)(),
                 p = (0, w.GF)(),
                 f = (0, To.A)(p, 2),
                 m = f[0],
@@ -123096,7 +123109,7 @@
                 j = F.isSuccess,
                 U = F.error,
                 G = function(e, t, n) {
-                    return e === Ga.zN.APPLE ? n.apple : e === Ga.zN.GOOGLE ? n.google : 2 === t ? n.discordV2 : n.discordV1
+                    return e === za.zN.APPLE ? n.apple : e === za.zN.GOOGLE ? n.google : 2 === t ? n.discordV2 : n.discordV1
                 }(s, null == u ? void 0 : u.discordOAuthVersion, {
                     apple: R,
                     google: _,
@@ -123141,7 +123154,7 @@
                 de = (0, To.A)(ue, 2),
                 pe = de[0],
                 fe = de[1],
-                me = (0, Na.Mj)("dobFailed", {
+                me = (0, Pa.Mj)("dobFailed", {
                     value: !1,
                     failedAt: null
                 }),
@@ -123149,7 +123162,7 @@
                 Ae = he[0],
                 ge = he[1];
             r.useEffect(function() {
-                Ae.value && "number" == typeof Ae.failedAt && La()().isAfter(La()(Ae.failedAt).add(1, "days")) && ge({
+                Ae.value && "number" == typeof Ae.failedAt && Ra()().isAfter(Ra()(Ae.failedAt).add(1, "days")) && ge({
                     value: !1,
                     failedAt: null
                 })
@@ -123162,7 +123175,7 @@
                     return n().wrap(function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                if (r = t.target.value, o = void 0 === r ? "" : r, Z(qa(qa({}, J), {}, {
+                                if (r = t.target.value, o = void 0 === r ? "" : r, Z(Va(Va({}, J), {}, {
                                         value: o,
                                         ok: null,
                                         taken: !1,
@@ -123173,8 +123186,8 @@
                                 }
                                 return e.abrupt("return");
                             case 4:
-                                if (o = (0, Ma.aj)(o), Z(function(e) {
-                                        return qa(qa({}, e), {}, {
+                                if (o = (0, ja.aj)(o), Z(function(e) {
+                                        return Va(Va({}, e), {}, {
                                             taken: null
                                         })
                                     }), a = !1, "" !== o && o.length < 4 ? a = "That display name is too short" : o.length > 15 && (a = "That display name is too long"), !a) {
@@ -123182,20 +123195,20 @@
                                     break
                                 }
                                 return Z(function(e) {
-                                    return qa(qa({}, e), {}, {
+                                    return Va(Va({}, e), {}, {
                                         error: a,
                                         ok: null
                                     })
                                 }), e.abrupt("return");
                             case 11:
                                 return Z(function(e) {
-                                    return qa(qa({}, e), {}, {
+                                    return Va(Va({}, e), {}, {
                                         checking: !0
                                     })
                                 }), e.next = 14, Y(o);
                             case 14:
                                 i = e.sent, Z(function(e) {
-                                    return qa(qa({}, e), {}, {
+                                    return Va(Va({}, e), {}, {
                                         taken: i,
                                         ok: !e.error && !i,
                                         error: i ? "That display name is already taken." : e.error,
@@ -123226,22 +123239,22 @@
             var ve = function(e, t, n) {
                     if ("" !== n && "" !== t && "" !== e) {
                         var r = null;
-                        if (!Fa()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Fa()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Fa()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) te(function(e) {
-                            return qa(qa({}, e), {}, {
+                        if (!Ma()(n) || n < 1900 || n > 2017 ? r = "That's not a valid year" : !Ma()(t) || t < 0 || t > 12 ? r = "That's not a valid month" : (!Ma()(e) || e < 0 || e > 31) && (r = "That's not a valid day"), r) te(function(e) {
+                            return Va(Va({}, e), {}, {
                                 error: r,
                                 ok: !1
                             })
                         });
-                        else La()({
+                        else Ra()({
                             year: n,
                             month: t - 1,
                             day: e
                         }).isValid() ? te(function(e) {
-                            return qa(qa({}, e), {}, {
+                            return Va(Va({}, e), {}, {
                                 ok: !0
                             })
                         }) : te(function(e) {
-                            return qa(qa({}, e), {}, {
+                            return Va(Va({}, e), {}, {
                                 error: "That's not a valid date",
                                 ok: !1
                             })
@@ -123271,7 +123284,7 @@
                                     }), e.next = 14;
                                     break;
                                 case 8:
-                                    if (e.prev = 8, e.t0 = e.catch(1), console.error(e.t0), !La()().subtract(13, "years").isBefore(La()({
+                                    if (e.prev = 8, e.t0 = e.catch(1), console.error(e.t0), !Ra()().subtract(13, "years").isBefore(Ra()({
                                             year: ee.year,
                                             month: ee.month - 1,
                                             day: ee.day
@@ -123296,20 +123309,20 @@
                     }
                 }(),
                 ye = null !== (o = null == V || null === (a = V.data) || void 0 === a || null === (a = a.error) || void 0 === a ? void 0 : a.message) && void 0 !== o ? o : "";
-            return ye && (ye.indexOf(":") > 0 ? (ye.substring(0, ye.indexOf(":")).trim(), ye = ye.substring(ye.indexOf(":") + 1).trim()) : 0 === ye.indexOf(":") && (ye = ye.substring(1).trim())), Ae.value ? r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(Ua.mc, null, r.createElement(Ua.VP, {
+            return ye && (ye.indexOf(":") > 0 ? (ye.substring(0, ye.indexOf(":")).trim(), ye = ye.substring(ye.indexOf(":") + 1).trim()) : 0 === ye.indexOf(":") && (ye = ye.substring(1).trim())), Ae.value ? r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Finalize your ", s, " Linked Account"), r.createElement(Ga.mc, null, r.createElement(Ga.VP, {
                 md: {
                     size: 6,
                     offset: 3
                 },
                 className: "mt-5"
-            }, r.createElement(Ua.fI, {
+            }, r.createElement(Ga.fI, {
                 className: "justify-content-center"
-            }, r.createElement(Ua.gu, {
+            }, r.createElement(Ga.gu, {
                 href: "https://vrchat.com",
                 target: "_blank"
-            })), r.createElement(Ua.lV, null, r.createElement(Ua.fI, {
+            })), r.createElement(Ga.lV, null, r.createElement(Ga.fI, {
                 className: "align-items-flex-end justify-content-between mb-2 mt-2"
-            }, r.createElement(Ua.Y9, null, "Finalize your ", s, " Linked Account"), r.createElement(i.N_, {
+            }, r.createElement(Ga.Y9, null, "Finalize your ", s, " Linked Account"), r.createElement(i.N_, {
                 to: "/home/login",
                 className: "nav-link"
             }, "Login")), r.createElement(da.$T, {
@@ -123353,7 +123366,7 @@
                 className: "tw-mb-2"
             }, "Date of Birth"), r.createElement("div", {
                 className: "tw-justify-between tw-align-middle tw-flex"
-            }, r.createElement(Ha, {
+            }, r.createElement(Wa, {
                 className: "tw-w-[129px] tw-h-10",
                 id: "age_month",
                 "aria-label": "Birthday Month",
@@ -123362,7 +123375,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(qa(qa({}, ee), {}, {
+                    te(Va(Va({}, ee), {}, {
                         month: n,
                         ok: null,
                         error: !1
@@ -123405,7 +123418,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(qa(qa({}, ee), {}, {
+                    te(Va(Va({}, ee), {}, {
                         day: n,
                         ok: null,
                         error: !1
@@ -123424,7 +123437,7 @@
                 onChange: function(e) {
                     var t = e.target.value,
                         n = void 0 === t ? "" : t;
-                    te(qa(qa({}, ee), {}, {
+                    te(Va(Va({}, ee), {}, {
                         year: n,
                         ok: null,
                         error: !1
@@ -123491,16 +123504,16 @@
                 className: "tw-text-error-message-red tw-text-xs tw-my-1"
             }, ye)))))
         };
-        var Ha = (0, Oo.A)("select", {
+        var Wa = (0, Oo.A)("select", {
                 target: "e1iax06v0"
             })("padding:0.45rem 0.75rem;height:unset;background:#05191d;border:#053c48 solid 2px;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#053c48"
             }, ";border-radius:4px;outline:none!important;color:#6ae3f9;min-width:100px;&:active,&:hover,&:focus{background:#07343f;color:#6ae3f9;border-color:", function(e) {
                 return e.isError ? "#A8342E" : "#086c84"
             }, ";}"),
-            Wa = s(25161);
+            Ya = s(25161);
 
-        function Ya(e, t) {
+        function Qa(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123511,18 +123524,18 @@
             return n
         }
 
-        function Qa(e) {
+        function Ka(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Ya(Object(n), !0).forEach(function(t) {
+                t % 2 ? Qa(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ya(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Qa(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const Ka = function() {
+        const Ja = function() {
             var t = (0, l.Zp)(),
                 o = (0, i.ok)(),
                 a = (0, To.A)(o, 2),
@@ -123569,7 +123582,7 @@
                                 }).unwrap();
                             case 19:
                                 return m = e.sent, t((null === (d = m.state) || void 0 === d ? void 0 : d.redirectTo) || "/home/profile", {
-                                    state: Qa(Qa({}, (null === (f = m.state) || void 0 === f ? void 0 : f.redirectState) || {}), {}, {
+                                    state: Ka(Ka({}, (null === (f = m.state) || void 0 === f ? void 0 : f.redirectState) || {}), {}, {
                                         twitchToken: m.provisionalId
                                     }),
                                     replace: !0
@@ -123596,7 +123609,7 @@
             }, r.createElement("div", {
                 className: "tw-mb-5"
             }, r.createElement(da.M2, {
-                icon: Wa.CQ,
+                icon: Ya.CQ,
                 className: "tw-w-[72px] tw-h-[72px]"
             })), r.createElement("h4", {
                 className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
@@ -123612,7 +123625,7 @@
             })))))
         };
 
-        function Ja(e, t) {
+        function Za(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
@@ -123623,18 +123636,18 @@
             return n
         }
 
-        function Za(e) {
+        function $a(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? Ja(Object(n), !0).forEach(function(t) {
+                t % 2 ? Za(Object(n), !0).forEach(function(t) {
                     (0, b.A)(e, t, n[t])
-                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Ja(Object(n)).forEach(function(t) {
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Za(Object(n)).forEach(function(t) {
                     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
             }
             return e
         }
-        const $a = function() {
+        const Xa = function() {
             var t = (0, l.Zp)(),
                 o = (0, l.zy)().state,
                 a = (0, w.TE)(),
@@ -123681,7 +123694,7 @@
                                     return e.abrupt("return");
                                 case 9:
                                     t(null !== (a = null == o ? void 0 : o.redirectTo) && void 0 !== a ? a : "/home", {
-                                        state: Za({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
+                                        state: $a({}, null !== (i = null == o ? void 0 : o.redirectState) && void 0 !== i ? i : {})
                                     }), e.next = 17;
                                     break;
                                 case 12:
@@ -123703,7 +123716,7 @@
                 C = !u && v && h.length > 0;
             return r.createElement(Ia.A, null, r.createElement(da.Qc, null, "Verify your Password"), r.createElement("div", {
                 className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
-            }, r.createElement(Ua.lV, {
+            }, r.createElement(Ga.lV, {
                 onSubmit: y
             }, r.createElement("div", {
                 className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
@@ -123739,70 +123752,70 @@
                 type: "submit"
             }, "Next")))))
         };
-        var Xa = r.lazy(function() {
+        var ei = r.lazy(function() {
                 return s.e(2726).then(s.bind(s, 52726))
             }),
-            ei = r.lazy(function() {
+            ti = r.lazy(function() {
                 return Promise.all([s.e(9915), s.e(3968)]).then(s.bind(s, 43968))
             }),
-            ti = r.lazy(function() {
+            ni = r.lazy(function() {
                 return s.e(800).then(s.bind(s, 30800))
             }),
-            ni = r.lazy(function() {
+            ri = r.lazy(function() {
                 return s.e(2092).then(s.bind(s, 22092))
             }),
-            ri = r.lazy(function() {
+            oi = r.lazy(function() {
                 return s.e(9381).then(s.bind(s, 79381))
             }),
-            oi = r.lazy(function() {
+            ai = r.lazy(function() {
                 return s.e(2274).then(s.bind(s, 42274))
             }),
-            ai = r.lazy(function() {
+            ii = r.lazy(function() {
                 return s.e(9370).then(s.bind(s, 29370))
             }),
-            ii = r.lazy(function() {
+            si = r.lazy(function() {
                 return s.e(7484).then(s.bind(s, 57484))
             }),
-            si = r.lazy(function() {
+            li = r.lazy(function() {
                 return Promise.all([s.e(2331), s.e(9772), s.e(2876)]).then(s.bind(s, 22876))
             }),
-            li = r.lazy(function() {
+            ci = r.lazy(function() {
                 return s.e(1840).then(s.bind(s, 21840))
             }),
-            ci = r.lazy(function() {
+            ui = r.lazy(function() {
                 return s.e(7224).then(s.bind(s, 27224))
             }),
-            ui = r.lazy(function() {
+            di = r.lazy(function() {
                 return s.e(1407).then(s.bind(s, 71407))
             }),
-            di = r.lazy(function() {
+            pi = r.lazy(function() {
                 return s.e(122).then(s.bind(s, 122))
             }),
-            pi = r.lazy(function() {
+            fi = r.lazy(function() {
                 return s.e(3441).then(s.bind(s, 63441))
             }),
-            fi = r.lazy(function() {
+            mi = r.lazy(function() {
                 return s.e(776).then(s.bind(s, 60776))
             }),
-            mi = r.lazy(function() {
+            hi = r.lazy(function() {
                 return s.e(2475).then(s.bind(s, 22475))
             }),
-            hi = r.lazy(function() {
+            Ai = r.lazy(function() {
                 return s.e(962).then(s.bind(s, 60962))
             }),
-            Ai = r.lazy(function() {
+            gi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
             }),
-            gi = r.lazy(function() {
+            Bi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
             }),
-            Bi = r.lazy(function() {
+            vi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
             }),
-            vi = r.lazy(function() {
+            bi = r.lazy(function() {
                 return Promise.all([s.e(4746), s.e(7906), s.e(2138), s.e(6578)]).then(s.bind(s, 16578))
             });
-        const bi = function() {
+        const yi = function() {
             (0, _o.zn)();
             var e = (0, w.P2)(void 0, {
                     refetchOnReconnect: !0
@@ -123817,155 +123830,155 @@
                 fallback: r.createElement(Co.A, null)
             }, r.createElement(ba, null), r.createElement(So, null), r.createElement(l.BV, null, r.createElement(l.qh, {
                 path: "/home/instance-not-found",
-                element: r.createElement(mi, null)
-            }), r.createElement(l.qh, {
-                path: "/home/launch",
-                element: r.createElement(ei, null)
-            }), r.createElement(l.qh, {
-                path: "/home/launch/*",
-                element: r.createElement(ei, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverify",
-                element: r.createElement(ri, null)
-            }), r.createElement(l.qh, {
-                path: "/home/failedverifyloginplace",
-                element: r.createElement(ri, null)
-            }), r.createElement(l.qh, {
-                path: "/home/succeedverifyloginplace",
-                element: r.createElement(oi, null)
-            }), r.createElement(l.qh, {
-                path: "/home/ageverificationstatus",
                 element: r.createElement(hi, null)
             }), r.createElement(l.qh, {
-                path: "/home/critical",
+                path: "/home/launch",
+                element: r.createElement(ti, null)
+            }), r.createElement(l.qh, {
+                path: "/home/launch/*",
+                element: r.createElement(ti, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverify",
+                element: r.createElement(oi, null)
+            }), r.createElement(l.qh, {
+                path: "/home/failedverifyloginplace",
+                element: r.createElement(oi, null)
+            }), r.createElement(l.qh, {
+                path: "/home/succeedverifyloginplace",
                 element: r.createElement(ai, null)
             }), r.createElement(l.qh, {
-                path: "/home/unverified",
+                path: "/home/ageverificationstatus",
+                element: r.createElement(Ai, null)
+            }), r.createElement(l.qh, {
+                path: "/home/critical",
                 element: r.createElement(ii, null)
             }), r.createElement(l.qh, {
+                path: "/home/unverified",
+                element: r.createElement(si, null)
+            }), r.createElement(l.qh, {
                 path: "/home/login",
-                element: r.createElement(Xa, null)
+                element: r.createElement(ei, null)
             }), r.createElement(l.qh, {
                 path: "/home/login/discord/finalize",
-                element: r.createElement(Va, {
-                    oauthProvider: Ga.zN.DISCORD
+                element: r.createElement(Ha, {
+                    oauthProvider: za.zN.DISCORD
                 })
             }), r.createElement(l.qh, {
                 path: "/home/login/google/finalize",
-                element: r.createElement(Va, {
-                    oauthProvider: Ga.zN.GOOGLE
+                element: r.createElement(Ha, {
+                    oauthProvider: za.zN.GOOGLE
                 })
             }), r.createElement(l.qh, {
                 path: "/home/login/apple/finalize",
-                element: r.createElement(Va, {
-                    oauthProvider: Ga.zN.APPLE
+                element: r.createElement(Ha, {
+                    oauthProvider: za.zN.APPLE
                 })
             }), r.createElement(l.qh, {
                 path: "/home/register",
-                element: r.createElement(si, null)
+                element: r.createElement(li, null)
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauth",
-                element: r.createElement(di, null)
+                element: r.createElement(pi, null)
             }), r.createElement(l.qh, {
                 path: "/home/emailtwofactorauth",
-                element: r.createElement(di, {
+                element: r.createElement(pi, {
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/stepupauth",
-                element: r.createElement(di, {
+                element: r.createElement(pi, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/emailstepupauth",
-                element: r.createElement(di, {
+                element: r.createElement(pi, {
                     isStepUpVerification: !0,
                     isEmailOTP: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twofactorauthrecovery",
-                element: r.createElement(pi, null)
+                element: r.createElement(fi, null)
             }), r.createElement(l.qh, {
                 path: "/home/stepupauthrecovery",
-                element: r.createElement(pi, {
+                element: r.createElement(fi, {
                     isStepUpVerification: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/verify",
-                element: r.createElement(ni, null)
+                element: r.createElement(ri, null)
             }), r.createElement(l.qh, {
                 path: "/home/verify-password",
-                element: r.createElement($a, null)
+                element: r.createElement(Xa, null)
             }), r.createElement(l.qh, {
                 path: "/home/password",
-                element: r.createElement(ci, null)
+                element: r.createElement(ui, null)
             }), r.createElement(l.qh, {
                 path: "/home/account-upgrade",
-                element: r.createElement(ti, null)
+                element: r.createElement(ni, null)
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth",
-                element: r.createElement(Ta, {
+                element: r.createElement(Na, {
                     version: 1
                 })
             }), r.createElement(l.qh, {
                 path: "/home/discord/auth/v2",
-                element: r.createElement(Ta, {
+                element: r.createElement(Na, {
                     version: 2
                 })
             }), r.createElement(l.qh, {
                 path: "/home/twitch/auth",
-                element: r.createElement(Ka, null)
+                element: r.createElement(Ja, null)
             }), r.createElement(l.qh, {
                 path: "/home/steam/auth/mobile",
-                element: r.createElement(_a, {
+                element: r.createElement(Sa, {
                     provider: "steam"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/apple/auth/mobile",
-                element: r.createElement(_a, {
+                element: r.createElement(Sa, {
                     provider: "apple"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/meta/auth/mobile",
-                element: r.createElement(_a, {
+                element: r.createElement(Sa, {
                     provider: "meta"
                 })
             }), r.createElement(l.qh, {
                 path: "/home/apple/auth/desktop",
-                element: r.createElement(_a, {
+                element: r.createElement(Sa, {
                     provider: "apple",
                     useReturnUrl: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/meta/auth/desktop",
-                element: r.createElement(_a, {
+                element: r.createElement(Sa, {
                     provider: "meta",
                     useReturnUrl: !0
                 })
             }), r.createElement(l.qh, {
                 path: "/home/forgot-email",
-                element: r.createElement(li, null)
+                element: r.createElement(ci, null)
             }), r.createElement(l.qh, {
                 path: "/home/captcha",
-                element: r.createElement(ui, null)
+                element: r.createElement(di, null)
             }), (n || !(null != t && t.id)) && r.createElement(l.qh, {
                 path: "/home/group/:ownerId/calendar/:eventId",
                 element: r.createElement(Ca.A, null)
             }), r.createElement(l.qh, {
                 path: "/home/tosupdated",
-                element: ko(fi)()
+                element: ko(mi)()
             }), r.createElement(l.qh, {
                 path: "/home/oauth",
-                element: ko(Ai)()
-            }), r.createElement(l.qh, {
-                path: "/home/sso/canny",
                 element: ko(gi)()
             }), r.createElement(l.qh, {
-                path: "/home/sso/furality",
+                path: "/home/sso/canny",
                 element: ko(Bi)()
             }), r.createElement(l.qh, {
-                path: "/home/*",
+                path: "/home/sso/furality",
                 element: ko(vi)()
+            }), r.createElement(l.qh, {
+                path: "/home/*",
+                element: ko(bi)()
             }), r.createElement(l.qh, {
                 path: "*",
                 element: r.createElement(l.C5, {
@@ -123974,32 +123987,32 @@
                 })
             })))))))
         };
-        var yi = s(85072),
-            Ci = s.n(yi),
-            wi = s(97825),
-            xi = s.n(wi),
-            Di = s(77659),
-            Ei = s.n(Di),
-            Ii = s(55056),
-            ki = s.n(Ii),
-            _i = s(10540),
-            Si = s.n(_i),
-            Oi = s(41113),
-            Ti = s.n(Oi),
-            Ni = s(56275),
-            Pi = {};
-        Pi.styleTagTransform = Ti(), Pi.setAttributes = ki(), Pi.insert = Ei().bind(null, "head"), Pi.domAPI = xi(), Pi.insertStyleElement = Si();
-        Ci()(Ni.A, Pi);
-        Ni.A && Ni.A.locals && Ni.A.locals;
-        var Li = document.getElementById("app"),
-            Ri = function() {
-                Je(), p(), (0, o.H)(Li).render(r.createElement(a.Kq, {
+        var Ci = s(85072),
+            wi = s.n(Ci),
+            xi = s(97825),
+            Di = s.n(xi),
+            Ei = s(77659),
+            Ii = s.n(Ei),
+            ki = s(55056),
+            _i = s.n(ki),
+            Si = s(10540),
+            Oi = s.n(Si),
+            Ti = s(41113),
+            Ni = s.n(Ti),
+            Pi = s(56275),
+            Li = {};
+        Li.styleTagTransform = Ni(), Li.setAttributes = _i(), Li.insert = Ii().bind(null, "head"), Li.domAPI = Di(), Li.insertStyleElement = Oi();
+        wi()(Pi.A, Li);
+        Pi.A && Pi.A.locals && Pi.A.locals;
+        var Ri = document.getElementById("app"),
+            Fi = function() {
+                Je(), p(), (0, o.H)(Ri).render(r.createElement(a.Kq, {
                     store: Ao
                 }, r.createElement(i.Kd, {
                     basename: "/"
                 }, r.createElement(l.BV, null, r.createElement(l.qh, {
                     path: "*",
-                    element: r.createElement(bi, null)
+                    element: r.createElement(yi, null)
                 }))))), S(Ao)
             };
         (0, e.A)(n().mark(function e() {
@@ -124007,7 +124020,7 @@
             return n().wrap(function(e) {
                 for (;;) switch (e.prev = e.next) {
                     case 0:
-                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Ri();
+                        null != (t = document.getElementById("loading")) && t.parentNode.removeChild(t), Fi();
                     case 3:
                     case "end":
                         return e.stop()
