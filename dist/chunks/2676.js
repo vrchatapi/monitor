@@ -140,7 +140,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 PopulationCallout: () => qn,
-                default: () => Mn
+                default: () => Pn
             });
             var a = n(70129),
                 l = n(78244),
@@ -171,8 +171,8 @@
                 j = n(65279),
                 T = n(74353),
                 L = n.n(T),
-                M = n(5556),
-                P = n.n(M),
+                P = n(5556),
+                M = n.n(P),
                 _ = n(83616),
                 z = (n(56136), n(33515)),
                 D = n(78526),
@@ -335,10 +335,10 @@
                     j = (0, w.A)(S, 2),
                     T = j[0],
                     L = j[1],
-                    M = s.useState("us"),
-                    P = (0, w.A)(M, 2),
-                    _ = P[0],
-                    z = P[1],
+                    P = s.useState("us"),
+                    M = (0, w.A)(P, 2),
+                    _ = M[0],
+                    z = M[1],
                     D = (0, Y.Mj)("instanceCreation_alsoInviteMe", !1),
                     W = (0, w.A)(D, 2),
                     R = W[0],
@@ -402,7 +402,7 @@
                 }, "All members can join!")), s.createElement(Ee, null, "Instance Properties:"), s.createElement(d.fv, null, s.createElement(Ee, {
                     className: "fw-normal tw-w-full",
                     id: "WorldLaunchRegionTitle"
-                }, "Select Region"), s.createElement(Me, {
+                }, "Select Region"), s.createElement(Pe, {
                     role: "radiogroup",
                     "aria-labelledby": "WorldLaunchRegionTitle"
                 }, s.createElement(ie, {
@@ -469,7 +469,7 @@
                         return q(!R)
                     },
                     selected: R,
-                    containerStyles: Pe
+                    containerStyles: Me
                 }, s.createElement(d.fI, {
                     className: "align-items-center justify-content-center flex-grow-1 position-relative"
                 }, s.createElement(je, {
@@ -542,13 +542,13 @@
                     name: "1hz0u4k",
                     styles: "padding:0.5rem 0;display:flex;position:relative"
                 }),
-                Me = (0, a.A)(d.fI, {
+                Pe = (0, a.A)(d.fI, {
                     target: "e1j6aecs0"
                 })({
                     name: "1bxe3y0",
                     styles: "margin-top:0.5rem;align-items:center;justify-content:space-between;>*:hover{cursor:pointer;}"
                 }),
-                Pe = {
+                Me = {
                     name: "12brwd0",
                     styles: "overflow:unset"
                 },
@@ -1021,10 +1021,10 @@
                     j = (0, w.A)(S, 2),
                     T = j[0],
                     L = j[1],
-                    M = s.useState("us"),
-                    P = (0, w.A)(M, 2),
-                    _ = P[0],
-                    z = P[1],
+                    P = s.useState("us"),
+                    M = (0, w.A)(P, 2),
+                    _ = M[0],
+                    z = M[1],
                     D = s.useRef(null),
                     W = s.useRef(null),
                     R = s.useRef(null),
@@ -1216,7 +1216,7 @@
                 }))), s.createElement(Ct, {
                     className: "mt-0 mb-0",
                     id: "WorldLaunchRegionTitle"
-                }, "Select Region"), s.createElement(Mt, {
+                }, "Select Region"), s.createElement(Pt, {
                     role: "radiogroup",
                     "aria-labelledby": "WorldLaunchRegionTitle"
                 }, s.createElement(ie, {
@@ -1249,7 +1249,7 @@
                 }, s.createElement(Dt, {
                     icon: G.e6,
                     disabled: !Z
-                }), "Also Invite Me")), a && !T && s.createElement(Pt, {
+                }), "Also Invite Me")), a && !T && s.createElement(Mt, {
                     className: "mt-2",
                     onClick: ye
                 }, s.createElement(_t, null, xe))), s.createElement(ht, {
@@ -1265,7 +1265,7 @@
                     },
                     groupPermissions: de,
                     handleLaunchClick: ye
-                })))))), s.createElement(Pt, {
+                })))))), s.createElement(Mt, {
                     "aria-label": xe,
                     disabled: T && !v,
                     onClick: ye
@@ -1397,13 +1397,13 @@
                     name: "8xm4fy",
                     styles: "font-size:0.8rem;color:#6ae3f99f;text-align:left"
                 }),
-                Mt = (0, a.A)(d.fI, {
+                Pt = (0, a.A)(d.fI, {
                     target: "euozan34"
                 })({
                     name: "1bxe3y0",
                     styles: "margin-top:0.5rem;align-items:center;justify-content:space-between;>*:hover{cursor:pointer;}"
                 }),
-                Pt = (0, a.A)(d.$n, {
+                Mt = (0, a.A)(d.$n, {
                     target: "euozan33"
                 })({
                     name: "5hiktd",
@@ -1541,9 +1541,9 @@
                         m = e.isOwner,
                         u = e.user,
                         T = e.isMod,
-                        M = (0, A.wA)(),
-                        P = (0, s.useState)(!1),
-                        _ = (0, w.A)(P, 2),
+                        P = (0, A.wA)(),
+                        M = (0, s.useState)(!1),
+                        _ = (0, w.A)(M, 2),
                         q = _[0],
                         O = _[1],
                         U = (0, s.useRef)(null),
@@ -1816,7 +1816,7 @@
                         message: "Successfully updated Elasticsearch"
                     }), s.createElement(d.$n, {
                         onClick: function() {
-                            M(Yt({
+                            P(Yt({
                                 worldId: null == r ? void 0 : r.id
                             }))
                         }
@@ -1849,12 +1849,12 @@
                     }))
                 };
             Ht.propTypes = {
-                world: P().object.isRequired,
-                file: P().object,
-                reports: P().object,
-                bops: P().number,
-                isOwner: P().bool,
-                isMod: P().bool
+                world: M().object.isRequired,
+                file: M().object,
+                reports: M().object,
+                bops: M().number,
+                isOwner: M().bool,
+                isMod: M().bool
             };
             const Qt = Ht;
             var Xt = (0, a.A)("h3", {
@@ -1956,79 +1956,80 @@
                 Nn = n(77775);
             L().extend(xn());
             var kn = function(e) {
-                var t, n, a = e.isOpen,
-                    l = e.onCancelCallback,
-                    r = e.listingData,
-                    i = void 0 === r ? null : r,
-                    c = e.worldData;
-                if (null === i) return null;
-                var m = (0, s.useState)(!1),
-                    u = (0, w.A)(m, 2),
-                    p = u[0],
-                    f = u[1],
-                    h = (0, s.useState)(!1),
-                    v = (0, w.A)(h, 2),
-                    b = v[0],
-                    y = v[1],
-                    x = (0, s.useState)([]),
-                    E = (0, w.A)(x, 2),
-                    N = E[0],
-                    k = E[1],
-                    I = (0, o.a$)().user,
-                    C = (0, hn.zL)({
-                        userId: i.sellerId
+                var t, n, a, l, r = e.isOpen,
+                    i = e.onCancelCallback,
+                    c = e.listingData,
+                    m = void 0 === c ? null : c,
+                    u = e.worldData;
+                if (null === m) return null;
+                var p = (0, s.useState)(!1),
+                    f = (0, w.A)(p, 2),
+                    h = f[0],
+                    v = f[1],
+                    b = (0, s.useState)(!1),
+                    y = (0, w.A)(b, 2),
+                    x = y[0],
+                    E = y[1],
+                    N = (0, s.useState)([]),
+                    k = (0, w.A)(N, 2),
+                    I = k[0],
+                    C = k[1],
+                    A = (0, o.a$)().user,
+                    j = (0, hn.zL)({
+                        userId: m.sellerId
                     }, {
-                        skip: !(null != i && i.sellerId)
+                        skip: !(null != m && m.sellerId)
                     }),
-                    A = C.data,
-                    j = (C.isFetching, C.isError, C.error, (0, hn.Gm)({
-                        userId: I.id
-                    }, {
-                        skip: !I
-                    })),
                     T = j.data,
-                    M = (void 0 === T ? {} : T).balance,
-                    P = j.isFetching,
-                    _ = (0, vn.Qt)({
-                        listingId: i.id,
-                        hydrate: !0
+                    P = (j.isFetching, j.isError, j.error, (0, hn.Gm)({
+                        userId: A.id
                     }, {
-                        skip: null === i
+                        skip: !A
+                    })),
+                    M = P.data,
+                    _ = (void 0 === M ? {} : M).balance,
+                    z = P.isFetching,
+                    D = (0, vn.Qt)({
+                        listingId: m.id,
+                        hydrateProducts: !0,
+                        hydrateStores: !0
+                    }, {
+                        skip: null === m
                     }).data,
-                    z = (0, hn.AO)(),
-                    D = (0, w.A)(z, 2),
-                    W = D[0],
-                    R = D[1],
-                    G = R.isLoading,
-                    V = R.isError,
-                    $ = R.error,
-                    F = R.isSuccess,
-                    Y = R.reset,
-                    H = (0, hn.U)(),
-                    Q = (0, w.A)(H, 2),
-                    X = Q[0],
-                    K = Q[1],
-                    Z = K.isLoading;
-                K.isError, K.error, K.isSuccess;
+                    W = (0, hn.AO)(),
+                    R = (0, w.A)(W, 2),
+                    G = R[0],
+                    V = R[1],
+                    $ = V.isLoading,
+                    F = V.isError,
+                    Y = V.error,
+                    H = V.isSuccess,
+                    Q = V.reset,
+                    X = (0, hn.U)(),
+                    K = (0, w.A)(X, 2),
+                    Z = K[0],
+                    J = K[1],
+                    ee = J.isLoading;
+                J.isError, J.error, J.isSuccess;
                 (0, s.useEffect)(function() {
-                    f(!1);
+                    v(!1);
                     var e = function() {
                         var e = (0, q.A)(B().mark(function e() {
-                            var t;
+                            var t, n;
                             return B().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (e.prev = 0, null != i && i.products) {
+                                        if (e.prev = 0, null != m && null !== (t = m.productIds) && void 0 !== t && t.length) {
                                             e.next = 3;
                                             break
                                         }
                                         return e.abrupt("return", null);
                                     case 3:
-                                        return e.next = 5, X({
-                                            productIds: i.products
+                                        return e.next = 5, Z({
+                                            productIds: m.productIds
                                         }).unwrap();
                                     case 5:
-                                        t = e.sent, k(t), t.length > 0 && f(!0), e.next = 13;
+                                        n = e.sent, C(n), n.length > 0 && v(!0), e.next = 13;
                                         break;
                                     case 10:
                                         e.prev = 10, e.t0 = e.catch(0), console.error("Failed to create item:", e.t0);
@@ -2045,38 +2046,38 @@
                         }
                     }();
                     e()
-                }, [X, i, a]);
-                var J = function(e) {
-                    return N.find(function(t) {
+                }, [Z, m, r]);
+                var te = function(e) {
+                    return I.find(function(t) {
                         return t.productId === e
                     })
                 };
-                if (P) return null;
-                var ee, te, ne = Number(M) < Number(i.priceTokens),
-                    ae = i.isPurchased,
-                    le = i.products.every(function(e) {
-                        return N.some(function(t) {
+                if (z) return null;
+                var ne, ae, le = Number(_) < Number(m.priceTokens),
+                    re = m.isPurchased,
+                    ie = (null !== (t = m.productIds) && void 0 !== t ? t : []).every(function(e) {
+                        return I.some(function(t) {
                             return t.productId === e
                         })
                     }),
-                    re = (null == A ? void 0 : A.accountSellerStatus) === bn.Tp.SUSPENDED,
-                    ie = G || P || ne || Z || ae || le || re,
-                    se = "instant" === (null == i ? void 0 : i.listingType),
-                    ce = "duration" === (null == i ? void 0 : i.listingType),
-                    oe = null == i ? void 0 : i.stackable,
-                    me = function() {
+                    se = (null == T ? void 0 : T.accountSellerStatus) === bn.Tp.SUSPENDED,
+                    ce = $ || z || le || ee || re || ie || se,
+                    oe = "instant" === (null == m ? void 0 : m.listingType),
+                    me = "duration" === (null == m ? void 0 : m.listingType),
+                    de = null == m ? void 0 : m.stackable,
+                    ue = function() {
                         var e = (0, q.A)(B().mark(function e() {
                             return B().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, W({
-                                            listingId: i.id,
+                                        return e.next = 2, G({
+                                            listingId: m.id,
                                             quantity: 1,
-                                            totalPrice: i.priceTokens,
+                                            totalPrice: m.priceTokens,
                                             contextData: {
                                                 locationType: bn.WI.WORLD,
-                                                storeId: null == c ? void 0 : c.storeId,
-                                                worldId: null == c ? void 0 : c.id
+                                                storeId: null == u ? void 0 : u.storeId,
+                                                worldId: null == u ? void 0 : u.id
                                             }
                                         });
                                     case 2:
@@ -2089,11 +2090,11 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    de = function() {
-                        f(!1), y(!1), Y(), l()
+                    we = function() {
+                        v(!1), E(!1), Q(), i()
                     };
-                if (F) return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
+                if (H) return s.createElement("div", {
+                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
                 }, s.createElement("div", {
@@ -2102,7 +2103,7 @@
                     className: "tw-p-4 tw-flex tw-flex-row tw-justify-end"
                 }, s.createElement(d.$n, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: de
+                    onClick: we
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
@@ -2110,22 +2111,22 @@
                     className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
                 }, s.createElement(d.Oo, {
                     className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5 tw-aspect-square",
-                    alt: i.displayName,
-                    imageId: null == i ? void 0 : i.imageId,
+                    alt: m.displayName,
+                    imageId: null == m ? void 0 : m.imageId,
                     fallbackSrc: gn(),
                     fitToCover: !0
                 }), s.createElement("h3", {
                     className: "heading"
                 }, "Thank you for your purchase!"), s.createElement("p", {
                     className: "tw-text-base tw-text-lighter-grey"
-                }, "Enjoy your purchase in ", null == c ? void 0 : c.name, "!"), s.createElement(d.$n, {
+                }, "Enjoy your purchase in ", null == u ? void 0 : u.name, "!"), s.createElement(d.$n, {
                     className: "tw-w-[300px] tw-rounded-md tw-border-0 tw-bg-button-bg tw-mb-3 tw-text-highlight",
                     onClick: function() {
-                        return de()
+                        return we()
                     }
                 }, "Done")))));
-                if (G || b) return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
+                if ($ || x) return s.createElement("div", {
+                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
                 }, s.createElement("div", {
@@ -2136,36 +2137,36 @@
                     className: "heading tw-m-0 tw-p-0"
                 }, "Confirm Purchase"), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: de,
-                    disabled: G
+                    onClick: we,
+                    disabled: $
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
                 }))), s.createElement("div", null, s.createElement("p", {
                     className: "tw-p-5 tw-font-bold tw-text-white tw-text-xl"
-                }, "Are you sure you want to buy ", i.displayName, " for ", s.createElement(d.eD, null), " ", i.priceTokens, "?")), s.createElement("div", {
+                }, "Are you sure you want to buy ", m.displayName, " for ", s.createElement(d.eD, null), " ", m.priceTokens, "?")), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-2"
-                }, V && s.createElement("div", {
+                }, F && s.createElement("div", {
                     className: "tw-col-span-2 tw-rounded-md tw-p-3"
                 }, s.createElement("p", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
                 }, "Failed to make purchase:"), s.createElement("code", {
                     className: "tw-m-0 tw-text-sm tw-text-red"
-                }, null !== (ee = null === (te = $.data) || void 0 === te || null === (te = te.error) || void 0 === te ? void 0 : te.message) && void 0 !== ee ? ee : "Unknown Error")), s.createElement(d.$n, {
+                }, null !== (ne = null === (ae = Y.data) || void 0 === ae || null === (ae = ae.error) || void 0 === ae ? void 0 : ae.message) && void 0 !== ne ? ne : "Unknown Error")), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-border-0 tw-bg-button-bg-grey tw-mb-3",
                     neutral: !0,
-                    onClick: de
+                    onClick: we
                 }, "Cancel"), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-border-0 tw-mb-3 ",
                     onClick: function() {
-                        return me()
+                        return ue()
                     },
                     accent: !0,
-                    disabled: !(oe && ce && !re) && ie,
-                    loading: G
+                    disabled: !(de && me && !se) && ce,
+                    loading: $
                 }, "Confirm Purchase")))));
                 return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
+                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
                 }, s.createElement("div", {
                     className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
                 }, s.createElement("div", {
@@ -2176,11 +2177,11 @@
                     className: "heading tw-m-0 tw-p-0"
                 }, "Bundle Details"), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                    onClick: de
+                    onClick: we
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
-                }))), se && s.createElement("div", {
+                }))), oe && s.createElement("div", {
                     className: "tw-px-3 tw-pt-5 tw-pb-0"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
@@ -2197,26 +2198,26 @@
                 }, "Exclusive In-World Purchase"), s.createElement("p", {
                     className: "tw-mb-0 tw-text-base"
                 }, "Visit ", s.createElement(S.N_, {
-                    to: "/home/world/".concat(null == c ? void 0 : c.id, "/info")
-                }, null == c ? void 0 : c.name), " in VRChat to get this."))))), s.createElement("div", {
+                    to: "/home/world/".concat(null == u ? void 0 : u.id, "/info")
+                }, null == u ? void 0 : u.name), " in VRChat to get this."))))), s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
                 }, s.createElement("div", {
                     className: "tw-w-fit tw-h-fit sm:tw-w-1/3 sm:tw-h-1/3 tw-rounded-sm"
                 }, s.createElement(d.Oo, {
                     className: "tw-w-full tw-h-full",
-                    alt: i.displayName,
-                    imageId: null == i ? void 0 : i.imageId,
+                    alt: m.displayName,
+                    imageId: null == m ? void 0 : m.imageId,
                     fallbackSrc: gn()
                 })), s.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
                 }, s.createElement(En.A, {
-                    listingType: i.listingType,
+                    listingType: m.listingType,
                     className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                 }), s.createElement("h4", {
                     className: "tw-text-white tw-text-xl"
-                }, i.displayName), s.createElement("p", null, s.createElement(d.eD, null), " ", i.priceTokens), s.createElement("p", {
+                }, m.displayName), s.createElement("p", null, s.createElement(d.eD, null), " ", m.priceTokens), s.createElement("p", {
                     className: "tw-text-light-grey tw-text-base"
-                }, i.description))), ce && (null == i ? void 0 : i.isPurchased) && (null == i || null === (t = i.isPurchasedData) || void 0 === t ? void 0 : t.expiry) && s.createElement("div", {
+                }, m.description))), me && (null == m ? void 0 : m.isPurchased) && (null == m || null === (n = m.isPurchasedData) || void 0 === n ? void 0 : n.expiry) && s.createElement("div", {
                     className: "tw-px-3"
                 }, s.createElement("div", {
                     className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
@@ -2232,35 +2233,35 @@
                     className: "tw-text-xs"
                 }, "You already have access to these product."), s.createElement("p", {
                     className: "tw-text-xs tw-mb-0"
-                }, "Expires at ", L()(i.isPurchasedData.expiry).format("llll"), "."))))), s.createElement("div", null, s.createElement("button", {
+                }, "Expires at ", L()(m.isPurchasedData.expiry).format("llll"), "."))))), s.createElement("div", null, s.createElement("button", {
                     type: "button",
                     className: "tw-px-4 tw-py-3 tw-text-link-highlight tw-text-xs tw-cursor-pointer tw-bg-transparent tw-border-0",
                     onClick: function() {
-                        return f(function(e) {
+                        return v(function(e) {
                             return !e
                         })
                     }
-                }, "View ", i.products.length, " included products", " ", s.createElement(d.M2, {
-                    icon: p ? U.Jt : O.w2
-                }))), p && s.createElement("div", {
+                }, "View ", null == D || null === (a = D.hydratedProducts) || void 0 === a ? void 0 : a.length, " included products", " ", s.createElement(d.M2, {
+                    icon: h ? U.Jt : O.w2
+                }))), h && s.createElement("div", {
                     className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
-                }, null == _ || null === (n = _.hydratedProducts) || void 0 === n ? void 0 : n.map(function(e) {
+                }, null == D || null === (l = D.hydratedProducts) || void 0 === l ? void 0 : l.map(function(e) {
                     return s.createElement(Nn.A, {
                         className: "tw-my-2",
                         key: e.id,
                         productData: e,
-                        listingData: i,
-                        hasAlreadyPurchased: !!J(e.id),
-                        alreadyPurchasedData: J(e.id)
+                        listingData: m,
+                        hasAlreadyPurchased: !!te(e.id),
+                        alreadyPurchasedData: te(e.id)
                     })
-                })), se ? s.createElement("div", {
+                })), oe ? s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-py-8 sm:flex sm:flex-row-reverse sm:px-6"
                 }, s.createElement(d.$n, {
                     className: "tw-rounded-md tw-w-9 tw-h-9 tw-border-0",
-                    onClick: de
+                    onClick: we
                 }, "Done")) : s.createElement("div", {
                     className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
-                }, ne && s.createElement("div", {
+                }, le && s.createElement("div", {
                     className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-message-error-bg tw-rounded-lg tw-border-error-message-red tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
                 }, s.createElement("div", {
                     className: "tw-flex tw-flex-row"
@@ -2277,34 +2278,36 @@
                 }, "You can buy more inside VRChat.")))), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg tw-mb-3 tw-text-highlight disabled:tw-text-light-grey disabled:tw-bg-button-bg-grey",
                     onClick: function() {
-                        return y(!0)
+                        return E(!0)
                     },
-                    disabled: !(ce && oe && !re) && ie
-                }, !ae && !le || ce ? s.createElement(s.Fragment, null, "Purchase for ", s.createElement(d.eD, null), " ", i.priceTokens) : "Owned"), s.createElement(d.$n, {
+                    disabled: !(me && de && !se) && ce
+                }, !re && !ie || me ? s.createElement(s.Fragment, null, "Purchase for ", s.createElement(d.eD, null), " ", m.priceTokens) : "Owned"), s.createElement(d.$n, {
                     className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                    onClick: de
+                    onClick: we
                 }, "Cancel")))))
             };
             kn.propTypes = {
-                show: P().bool.isRequired,
-                onHide: P().func.isRequired,
-                onConfirm: P().func.isRequired
+                show: M().bool.isRequired,
+                onHide: M().func.isRequired,
+                onConfirm: M().func.isRequired
             };
             const In = kn;
             var Cn = function(e) {
-                var t = e.isDetailedView,
-                    n = void 0 === t || t,
-                    a = e.listingData,
-                    l = void 0 === a ? null : a,
-                    r = e.viewDetailsCallback,
-                    i = void 0 === r ? function() {} : r;
-                if (null === l) return null;
-                var c = l.displayName,
-                    o = l.listingType,
-                    m = l.priceTokens,
-                    u = l.description,
-                    w = l.products.length;
-                return n ? s.createElement("div", {
+                var t, n = e.isDetailedView,
+                    a = void 0 === n || n,
+                    l = e.listingData,
+                    r = void 0 === l ? null : l,
+                    i = e.viewDetailsCallback,
+                    c = void 0 === i ? function() {} : i;
+                if (null === r) return null;
+                var o = r.displayName,
+                    m = r.listingType,
+                    u = r.priceTokens,
+                    w = r.description,
+                    p = r.productIds,
+                    f = r.hydratedProducts,
+                    g = (null !== (t = null != f ? f : p) && void 0 !== t ? t : []).length;
+                return a ? s.createElement("div", {
                     className: "tw-@container/listingCard"
                 }, s.createElement("div", {
                     className: "tw-rounded-md tw-bg-grey tw-p-5 tw-flex tw-flex-col @sm/listingCard:tw-flex-row tw-justify-between tw-mb-3"
@@ -2312,8 +2315,8 @@
                     className: "tw-flex tw-flex-row tw-justify-start tw-w-full tw-max-w-[340px] @sm/listingCard:tw-max-w-[450px] @md/listingCard:tw-max-w-[600px] @lg/listingCard:tw-max-w-[600px]"
                 }, s.createElement(d.Oo, {
                     className: "tw-w-32 tw-h-full tw-rounded-md tw-bg-transparent tw-pr-5 tw-hidden @lg/listingCard:tw-block",
-                    alt: c,
-                    imageId: null == l ? void 0 : l.imageId,
+                    alt: o,
+                    imageId: null == r ? void 0 : r.imageId,
                     fallbackSrc: gn(),
                     fitToCover: !0
                 }), s.createElement("div", {
@@ -2322,8 +2325,8 @@
                     className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/listingCard:tw-flex-row tw-items-start @sm/listingCard:tw-items-center "
                 }, s.createElement("h4", {
                     className: "tw-max-w-[250px] @sm/listingCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
-                }, c), s.createElement(En.A, {
-                    listingType: o,
+                }, o), s.createElement(En.A, {
+                    listingType: m,
                     className: "tw-ml-0 @sm/listingCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
                 })), s.createElement("div", {
                     className: " tw-flex tw-flex-col tw-mt-2 @sm/listingCard:tw-mt-0 tw-max-w-full @sm/listingCard:tw-max-w-[400px] @md/listingCard:tw-max-w-[580px] @lg/listingCard:tw-max-w-[480px] "
@@ -2331,51 +2334,51 @@
                     className: "tw-text-white tw-text-xl"
                 }, s.createElement(d.eD, {
                     className: "tw-mr-1"
-                }), m), s.createElement("p", {
+                }), u), s.createElement("p", {
                     className: " tw-text-light-grey tw-text-sm tw-text-ellipsis tw-overflow-hidden tw-mb-0 tw-pb-0 tw-hidden @sm/listingCard:tw-block "
-                }, u)))), s.createElement("div", {
+                }, w)))), s.createElement("div", {
                     className: "tw-flex tw-flex-col tw-justify-start tw-items-end tw-border-solid tw-border-0 tw-border-hr-grey tw-pl-4"
                 }, s.createElement(d.$n, {
                     className: "tw-h-fit @md/listingCard:tw-ml-0 tw-cursor-pointer",
                     onClick: function() {
-                        i(l)
+                        c(r)
                     }
                 }, "Proceed to purchase"), s.createElement("div", {
                     className: "tw-text-light-grey tw-text-sm tw-mt-2 tw-items-center tw-align-middle tw-hidden @md/listingCard:tw-flex tw-w-full tw-text-center"
                 }, s.createElement("span", {
                     className: "tw-text-link-white tw-w-full"
-                }, w, " included product(s)"))))) : s.createElement("div", {
+                }, g, " included product(s)"))))) : s.createElement("div", {
                     className: "tw-rounded-md tw-bg-grey tw-p-1 tw-flex-1"
                 }, s.createElement("div", null, s.createElement("div", {
                     className: "tw-absolute tw-p-3 "
                 }, s.createElement(En.A, {
-                    listingType: o,
+                    listingType: m,
                     className: "tw-bg-dark-grey-transparent-90"
                 })), s.createElement("div", {
                     className: "tw-rounded-md tw-h-64"
                 }, s.createElement(d.Oo, {
                     className: "tw-w-full tw-h-full tw-bg-transparent",
-                    alt: l.displayName,
-                    imageId: null == l ? void 0 : l.imageId,
+                    alt: r.displayName,
+                    imageId: null == r ? void 0 : r.imageId,
                     fallbackSrc: gn(),
                     fitToCover: !0
                 }))), s.createElement("div", {
                     className: "tw-p-3"
                 }, s.createElement("h4", {
                     className: "tw-text-ellipsis tw-block tw-overflow-hidden tw-whitespace-nowrap"
-                }, c), s.createElement("p", {
+                }, o), s.createElement("p", {
                     className: "tw-text-white tw-text-xl"
                 }, s.createElement(d.eD, {
                     className: "tw-mr-1"
-                }), m), s.createElement(d.$n, {
+                }), u), s.createElement(d.$n, {
                     onClick: function() {
-                        i(l)
+                        c(r)
                     }
                 }, "View Details")))
             };
             Cn.propTypes = {
-                listingData: P().object.isRequired,
-                isDetailedView: P().bool
+                listingData: M().object.isRequired,
+                isDetailedView: M().bool
             };
             const An = Cn;
             var Sn = n(91863);
@@ -2418,16 +2421,17 @@
                     j = A[0],
                     T = A[1],
                     L = (0, s.useState)(""),
-                    M = (0, w.A)(L, 2),
-                    P = M[0],
-                    _ = M[1],
+                    P = (0, w.A)(L, 2),
+                    M = P[0],
+                    _ = P[1],
                     z = (0, hn.m2)({
                         storeId: null == n ? void 0 : n.storeId,
-                        checkListingsPurchasesStatus: !0
+                        checkListingsPurchasesStatus: !0,
+                        hydrateListings: !0
                     }, {
                         skip: !(null != n && n.storeId)
                     }).data,
-                    D = (0, Sn.A)(P);
+                    D = (0, Sn.A)(M);
                 jn({
                     searchParams: g,
                     listingType: y,
@@ -2444,8 +2448,9 @@
                         }).sort(function(e, t) {
                             return "newest" === k ? new Date(t.updated) - new Date(e.updated) : "oldest" === k ? new Date(e.updated) - new Date(t.updated) : "priceLowToHigh" === k ? e.priceTokens - t.priceTokens : "priceHightToLow" === k ? t.priceTokens - e.priceTokens : void 0
                         }) : []
-                    }, [z, D, y, k]),
-                    q = function(e) {
+                    }, [z, D, y, k]);
+                console.log("filteredListings", R);
+                var q = function(e) {
                         u(e), i(!0)
                     },
                     O = bn.jo.filter(function(e) {
@@ -2475,7 +2480,7 @@
                     type: "text",
                     rawInputClassName: "tw-h-9",
                     className: "tw-mr-2 tw-w-full",
-                    value: P,
+                    value: M,
                     onChange: function(e) {
                         return _(e.target.value)
                     },
@@ -2513,7 +2518,7 @@
             };
             Tn.propTypes = {};
             const Ln = Tn;
-            const Mn = function() {
+            const Pn = function() {
                 var e = (0, c.g)().worldId,
                     t = (0, m.P2)().data,
                     n = (0, o.Om)(),
@@ -2667,7 +2672,7 @@
                     })
                 })))
             };
-            var Pn = (0, a.A)("div", {
+            var Mn = (0, a.A)("div", {
                     target: "e1mfpqtc6"
                 })({
                     name: "1fttcpj",
@@ -2679,7 +2684,7 @@
                     name: "zjik7",
                     styles: "display:flex"
                 }),
-                zn = (0, a.A)(Pn, {
+                zn = (0, a.A)(Mn, {
                     target: "e1mfpqtc4"
                 })({
                     name: "qgr7u4",
@@ -3033,7 +3038,7 @@
                             }),
                             createListing: e.mutation({
                                 queryFn: (n = (0, a.A)(s().mark(function e(t, n, a, l) {
-                                    var r, i, c, o, d, u, w, p, f, g, h, v, b, y, x, E, N, k, I, C, A, S, j, T, L, M;
+                                    var r, i, c, o, d, u, w, p, f, g, h, v, b, y, x, E, N, k, I, C, A, S, j, T, L, P;
                                     return s().wrap(function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
@@ -3089,17 +3094,17 @@
                                                     }
                                                 });
                                             case 13:
-                                                if (!(M = e.sent).error) {
+                                                if (!(P = e.sent).error) {
                                                     e.next = 16;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: M.error
+                                                    error: P.error
                                                 });
                                             case 16:
                                                 return e.abrupt("return", {
                                                     data: m({
-                                                        listing: M.data
+                                                        listing: P.data
                                                     }, (null == L ? void 0 : L.data) && {
                                                         file: L.data
                                                     })
@@ -3130,7 +3135,7 @@
                             }),
                             updateListing: e.mutation({
                                 queryFn: (t = (0, a.A)(s().mark(function e(t, n, a, l) {
-                                    var r, i, c, o, d, u, w, p, f, g, h, v, b, y, x, E, N, k, I, C, A, S, j, T, L, M;
+                                    var r, i, c, o, d, u, w, p, f, g, h, v, b, y, x, E, N, k, I, C, A, S, j, T, L, P;
                                     return s().wrap(function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
@@ -3185,17 +3190,17 @@
                                                     }
                                                 });
                                             case 13:
-                                                if (!(M = e.sent).error) {
+                                                if (!(P = e.sent).error) {
                                                     e.next = 16;
                                                     break
                                                 }
                                                 return e.abrupt("return", {
-                                                    error: M.error
+                                                    error: P.error
                                                 });
                                             case 16:
                                                 return e.abrupt("return", {
                                                     data: m({
-                                                        listing: M.data
+                                                        listing: P.data
                                                     }, (null == L ? void 0 : L.data) && {
                                                         file: L.data
                                                     })
@@ -3316,4 +3321,4 @@
         }
     }
 ]);
-//# sourceMappingURL=39627bd03bbccaeaa7aabb22a5e8156ded60b421443268b1cf4f0d27b6b13e69.js.map
+//# sourceMappingURL=6bb5bfd942c7fb7fe7940d41aaf4086ae73a0a11784662539b4debd80ab4e449.js.map

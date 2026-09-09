@@ -130,81 +130,81 @@
                 b = n(96540),
                 v = n(6376),
                 E = function(e) {
-                    var t = e.listingId,
-                        n = void 0 === t ? null : t,
-                        i = e.onCancelCallback,
-                        f = void 0 === i ? function() {} : i;
-                    if (null === n) return null;
-                    var g = (0, v.wA)(),
-                        E = ((0, d.P2)().data, (0, b.useState)(null)),
-                        h = (0, a.A)(E, 2),
-                        y = (h[0], h[1]),
-                        x = (0, b.useState)(null),
-                        N = (0, a.A)(x, 2),
-                        C = N[0],
-                        S = N[1],
-                        k = (0, b.useState)(null),
-                        A = (0, a.A)(k, 2),
-                        O = A[0],
-                        P = A[1],
-                        T = (0, p.Qt)({
-                            listingId: n,
+                    var t, n, i = e.listingId,
+                        f = void 0 === i ? null : i,
+                        g = e.onCancelCallback,
+                        E = void 0 === g ? function() {} : g;
+                    if (null === f) return null;
+                    var h = (0, v.wA)(),
+                        y = ((0, d.P2)().data, (0, b.useState)(null)),
+                        x = (0, a.A)(y, 2),
+                        N = (x[0], x[1]),
+                        C = (0, b.useState)(null),
+                        S = (0, a.A)(C, 2),
+                        k = S[0],
+                        A = S[1],
+                        O = (0, b.useState)(null),
+                        P = (0, a.A)(O, 2),
+                        T = P[0],
+                        j = P[1],
+                        I = (0, p.Qt)({
+                            listingId: f,
                             hydrateProducts: !0
                         }),
-                        j = T.data,
-                        I = T.isLoading,
-                        D = (T.isError, T.error, (0, w.Rh)()),
-                        L = (0, a.A)(D, 2),
-                        M = L[0],
-                        F = L[1],
-                        R = F.data,
-                        z = F.isLoading,
-                        G = (F.isError, F.error, (0, w.DN)()),
-                        q = (0, a.A)(G, 2),
-                        V = q[0],
-                        B = q[1];
-                    B.isLoading, B.isError, B.error;
+                        D = I.data,
+                        L = I.isLoading,
+                        M = (I.isError, I.error, (0, w.Rh)()),
+                        F = (0, a.A)(M, 2),
+                        R = F[0],
+                        z = F[1],
+                        G = z.data,
+                        q = z.isLoading,
+                        V = (z.isError, z.error, (0, w.DN)()),
+                        B = (0, a.A)(V, 2),
+                        $ = B[0],
+                        U = B[1];
+                    U.isLoading, U.isError, U.error;
                     (0, b.useEffect)(function() {
-                        if (j && (S(j), j.hydratedProducts)) {
-                            var e = j.products.find(function(e) {
+                        if (D && (A(D), D.hydratedProducts)) {
+                            var e = D.hydratedProducts.find(function(e) {
                                 return e.groupRoleId
                             });
-                            y(e), P(e.groupRoleId), M({
-                                groupId: j.groupId
+                            N(e), j(e.groupRoleId), R({
+                                groupId: D.groupId
                             })
                         }
-                    }, [j]);
-                    var $ = function() {
+                    }, [D]);
+                    var Y = function() {
                         var e = (0, r.A)(c().mark(function e() {
                             var t, n, r;
                             return c().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        if (O && R && j) {
+                                        if (T && G && D) {
                                             e.next = 2;
                                             break
                                         }
                                         return e.abrupt("return");
                                     case 2:
                                         return t = function(e) {
-                                            g((0, s.X)({
+                                            h((0, s.X)({
                                                 title: "Listing deleted successfully!",
                                                 icon: o.SG,
                                                 message: "Your listing has been deleted successfully!",
                                                 color: "success",
                                                 timeout: 3e3
-                                            })), f()
-                                        }, e.prev = 3, e.next = 6, V({
-                                            groupId: R.id,
-                                            roleId: O,
-                                            ownerId: R.ownerId,
+                                            })), E()
+                                        }, e.prev = 3, e.next = 6, $({
+                                            groupId: G.id,
+                                            roleId: T,
+                                            ownerId: G.ownerId,
                                             confirm: !0
                                         }).unwrap();
                                     case 6:
                                         t(), e.next = 13;
                                         break;
                                     case 9:
-                                        e.prev = 9, e.t0 = e.catch(3), console.error("error", e.t0), g((0, s.X)({
+                                        e.prev = 9, e.t0 = e.catch(3), console.error("error", e.t0), h((0, s.X)({
                                             title: "Failed to delete listing!",
                                             icon: l.zp,
                                             message: null !== (n = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "Something went wrong",
@@ -226,22 +226,22 @@
                     return b.createElement(u.fv, {
                         className: "tw-w-full"
                     }, b.createElement(m.A, {
-                        loading: I || z
+                        loading: L || q
                     }, b.createElement("p", null, b.createElement("strong", null, "Are you sure you want to delete this subscription? This is NOT reversible.")), b.createElement("p", null, "In order to delete this subscription, verify the following."), b.createElement("ul", {
                         className: "tw-bg-grey tw-rounded tw-py-3 tw-gap-2"
                     }, b.createElement("li", null, "There are no active subscribers to this subscription."), b.createElement("li", null, "The subscription listing is in draft mode."), b.createElement("li", null, "This listing must not contain any other products other than the role it's related to.")), b.createElement(u.fI, {
                         className: "tw-gap-2"
                     }, b.createElement(u.$n, {
-                        onClick: f,
+                        onClick: E,
                         type: "button",
                         containerClasses: "tw-flex-1",
                         neutral: !0
                     }, "Cancel"), b.createElement(u.$n, {
-                        onClick: $,
+                        onClick: Y,
                         type: "button",
                         containerClasses: "tw-flex-1",
                         danger: !0,
-                        disabled: (null == C ? void 0 : C.active) || (null == C ? void 0 : C.products.length) > 1
+                        disabled: (null == k ? void 0 : k.active) || (null !== (t = null == k || null === (n = k.hydratedProducts) || void 0 === n ? void 0 : n.length) && void 0 !== t ? t : 0) > 1
                     }, "Delete"))))
                 };
             E.propTypes = {
@@ -433,8 +433,8 @@
                 s = n.n(c),
                 u = n(65950),
                 m = n(71661),
-                d = n(97071),
-                w = n(71853),
+                d = n(71853),
+                w = n(97071),
                 p = n(31069),
                 f = n(13951),
                 g = n(72784),
@@ -488,7 +488,7 @@
                     c = e.productList,
                     s = h.useState({}),
                     u = (0, l.A)(s, 2),
-                    d = u[0],
+                    w = u[0],
                     p = u[1],
                     f = h.useState(!1),
                     g = (0, l.A)(f, 2),
@@ -523,8 +523,8 @@
                     J = Q.isSuccess,
                     Z = Q.isError;
                 h.useEffect(function() {
-                    r(d)
-                }, [d]);
+                    r(w)
+                }, [w]);
                 var ee = function(e) {
                     var t = e.target,
                         n = t.name,
@@ -595,7 +595,7 @@
                 }, K.length, "/256")))), h.createElement(m.fv, null, h.createElement("label", {
                     htmlFor: "id",
                     className: "tw-mb-2"
-                }, "Associated Group"), h.createElement(w.A, {
+                }, "Associated Group"), h.createElement(d.A, {
                     loading: X
                 }, J && h.createElement(m.fI, null, h.createElement(m.Oo, {
                     imageId: null == W ? void 0 : W.imageId,
@@ -933,7 +933,7 @@
                     n = e.onClose,
                     a = void 0 === n ? function() {} : n,
                     c = (0, y.wA)(),
-                    v = (0, d.DF)().showContentViolationModal,
+                    v = (0, w.DF)().showContentViolationModal,
                     E = ((0, x.Zp)(), (0, f.P2)().data),
                     S = (0, h.useState)(0),
                     k = (0, l.A)(S, 2),
@@ -987,10 +987,10 @@
                 (0, h.useEffect)(function() {
                     if (re) {
                         if (re.hydratedProducts) {
-                            var e = re.products.find(function(e) {
+                            var e = re.hydratedProducts.find(function(e) {
                                 return e.groupRoleId
                             });
-                            K(e), X(re.products)
+                            K(e), X(re.hydratedProducts)
                         }
                         I(re)
                     }
@@ -1049,7 +1049,7 @@
                     ve = (0, h.useMemo)(function() {
                         var e = null == M || !M.displayName || M.displayName.length >= 3,
                             t = "" !== (null == M ? void 0 : M.displayName),
-                            n = null == M || !M.priceTokens || M.priceTokens >= 100 && M.priceTokens <= 1e4 && Number.isInteger(parseFloat(M.priceTokens)),
+                            n = null == M || !M.priceTokens || M.priceTokens >= 100 && M.priceTokens <= 1e4 && Number.isInteger(Number.parseFloat(M.priceTokens)),
                             r = null == M || !M.products || M.products.length > 0;
                         return e && t && n && r && ee
                     }, [M, ee]),
@@ -1058,7 +1058,7 @@
                     className: "tw-w-full tw-relative"
                 }, Ee && h.createElement("div", {
                     className: "tw-container tw-flex tw-justify-center tw-p-10"
-                }, h.createElement(w.A, {
+                }, h.createElement(d.A, {
                     loading: Ee
                 })), !Ee && !q && h.createElement(h.Fragment, null, h.createElement("div", {
                     className: "tw-w-full tw-bg-grey tw-text-light-grey tw-rounded-lg tw-px-3 tw-py-4 tw-mb-3"
@@ -2560,7 +2560,7 @@
                                             productId: m.productId
                                         }).unwrap();
                                     case 55:
-                                        w = e.sent, Ae(w), Ne(d), 0 === Te.length && d.hydratedProducts && je(d.products), C((0, E.EY)("Define Subscription")), C((0, E.ac)(null)), e.next = 68;
+                                        w = e.sent, Ae(w), Ne(d), 0 === Te.length && d.hydratedProducts && je(d.hydratedProducts), C((0, E.EY)("Define Subscription")), C((0, E.ac)(null)), e.next = 68;
                                         break;
                                     case 63:
                                         if (e.prev = 63, e.t3 = e.catch(46), !S({
@@ -2638,7 +2638,7 @@
                         }
                         if ("Define Subscription" === O) {
                             var n = (null == xe ? void 0 : xe.displayName.length) >= 3,
-                                r = (null == xe ? void 0 : xe.priceTokens) >= 100 && (null == xe ? void 0 : xe.priceTokens) <= 1e4 && Number.isInteger(parseFloat(null == xe ? void 0 : xe.priceTokens));
+                                r = (null == xe ? void 0 : xe.priceTokens) >= 100 && (null == xe ? void 0 : xe.priceTokens) <= 1e4 && Number.isInteger(Number.parseFloat(null == xe ? void 0 : xe.priceTokens));
                             return U(n && r && le)
                         }
                         return U("Create Subscription Role" === O ? ve.name.length <= 64 && 0 !== ve.name.length : "Add Products" === O ? Te.length > 0 && Te.length <= p.B8 : !xt)
@@ -4747,4 +4747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3.js.map
+//# sourceMappingURL=25fa79577080204529c7ebadbcedd29c1b9135c136edab3f3fd0a43275083785.js.map

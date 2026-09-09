@@ -295,47 +295,47 @@
                 T = a(74353),
                 j = a.n(T),
                 R = function(e) {
-                    var t = e.isOpen,
-                        a = void 0 !== t && t,
-                        l = e.onCancelCallback,
-                        s = e.purchaseData,
-                        c = void 0 === s ? null : s;
-                    if (null === c) return null;
-                    var i, o, m = (0, n.useState)(!1),
-                        u = (0, w.A)(m, 2),
-                        d = u[0],
-                        p = u[1],
-                        f = (0, n.useState)(!1),
-                        g = (0, w.A)(f, 2),
-                        h = g[0],
-                        C = g[1],
-                        S = "instant" !== (null == c ? void 0 : c.listingType),
-                        A = (0, I.Qt)({
-                            listingId: c.listingId,
+                    var t, a = e.isOpen,
+                        l = void 0 !== a && a,
+                        s = e.onCancelCallback,
+                        c = e.purchaseData,
+                        i = void 0 === c ? null : c;
+                    if (null === i) return null;
+                    var o, m, u = (0, n.useState)(!1),
+                        d = (0, w.A)(u, 2),
+                        p = d[0],
+                        f = d[1],
+                        g = (0, n.useState)(!1),
+                        h = (0, w.A)(g, 2),
+                        C = h[0],
+                        S = h[1],
+                        A = "instant" !== (null == i ? void 0 : i.listingType),
+                        P = (0, I.Qt)({
+                            listingId: i.listingId,
                             hydrateProducts: !0,
                             hydrateStores: !0
                         }, {
-                            skip: !S || !c.listingId
+                            skip: !A || !i.listingId
                         }),
-                        P = A.data,
-                        T = A.isFetching,
-                        R = A.isError,
-                        L = A.error,
-                        _ = {
-                            displayName: null == c ? void 0 : c.listingDisplayName,
-                            listingType: null == c ? void 0 : c.listingType,
-                            priceTokens: null == c ? void 0 : c.price,
-                            description: null == c ? void 0 : c.listingDescription,
-                            purchaseActive: null == c ? void 0 : c.purchaseActive,
-                            imageId: null == c ? void 0 : c.imageId,
-                            listingImageId: null == c ? void 0 : c.listingImageId,
-                            products: null == c ? void 0 : c.products,
-                            sellerId: null == c ? void 0 : c.sellerId,
-                            sellerDisplayName: null == c ? void 0 : c.sellerDisplayName,
-                            purchaseQuantity: null == c ? void 0 : c.purchaseQuantity
+                        T = P.data,
+                        R = P.isFetching,
+                        L = P.isError,
+                        _ = P.error,
+                        B = {
+                            displayName: null == i ? void 0 : i.listingDisplayName,
+                            listingType: null == i ? void 0 : i.listingType,
+                            priceTokens: null == i ? void 0 : i.price,
+                            description: null == i ? void 0 : i.listingDescription,
+                            purchaseActive: null == i ? void 0 : i.purchaseActive,
+                            imageId: null == i ? void 0 : i.imageId,
+                            listingImageId: null == i ? void 0 : i.listingImageId,
+                            products: null == i ? void 0 : i.products,
+                            sellerId: null == i ? void 0 : i.sellerId,
+                            sellerDisplayName: null == i ? void 0 : i.sellerDisplayName,
+                            purchaseQuantity: null == i ? void 0 : i.purchaseQuantity
                         };
-                    if (T || R) return n.createElement("div", {
-                        className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
+                    if (R || L) return n.createElement("div", {
+                        className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(l ? "tw-fixed" : "tw-hidden")
                     }, n.createElement("div", {
                         className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
                     }, n.createElement("div", {
@@ -346,13 +346,13 @@
                         className: "heading tw-m-0 tw-p-0"
                     }, "Purchase Details"), n.createElement(r.$n, {
                         className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                        onClick: l
+                        onClick: s
                     }, n.createElement(r.M2, {
                         color: "white",
                         icon: y.yY
-                    }))), R && n.createElement("div", {
+                    }))), L && n.createElement("div", {
                         className: "tw-w-full tw-flex tw-flex-col tw-p-8 tw-pt-14"
-                    }, n.createElement("p", null, "Error loading purchase data:"), n.createElement("code", null, c.listingId), n.createElement("code", null, null !== (i = null == L || null === (o = L.data) || void 0 === o || null === (o = o.error) || void 0 === o ? void 0 : o.message) && void 0 !== i ? i : "Unknown error")), T && n.createElement("div", {
+                    }, n.createElement("p", null, "Error loading purchase data:"), n.createElement("code", null, i.listingId), n.createElement("code", null, null !== (o = null == _ || null === (m = _.data) || void 0 === m || null === (m = m.error) || void 0 === m ? void 0 : m.message) && void 0 !== o ? o : "Unknown error")), R && n.createElement("div", {
                         className: "tw-w-full tw-flex tw-flex-col tw-p-8 tw-pt-14"
                     }, n.createElement(r.M2, {
                         icon: N.z1,
@@ -362,21 +362,21 @@
                         className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
                     }, n.createElement(r.$n, {
                         className: "tw-rounded-md tw-text-white tw-w-full tw-h-9 tw-border-0",
-                        disabled: T,
-                        onClick: l
+                        disabled: R,
+                        onClick: s
                     }, "Done")))));
-                    var B = S ? P : _,
-                        Y = B.displayName,
-                        z = B.listingType,
-                        U = B.description,
-                        F = B.imageId,
-                        W = B.products,
-                        q = B.purchaseQuantity,
-                        V = (B.quantifiable, B.listingImageId),
-                        G = B.sellerId,
-                        $ = B.sellerDisplayName;
+                    var Y = A ? T : B,
+                        z = Y.displayName,
+                        U = Y.listingType,
+                        F = Y.description,
+                        W = Y.imageId,
+                        q = Y.hydratedProducts,
+                        V = Y.purchaseQuantity,
+                        G = (Y.quantifiable, Y.listingImageId),
+                        $ = Y.sellerId,
+                        Q = Y.sellerDisplayName;
                     return n.createElement("div", {
-                        className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(a ? "tw-fixed" : "tw-hidden")
+                        className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(l ? "tw-fixed" : "tw-hidden")
                     }, n.createElement("div", {
                         className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
                     }, n.createElement("div", {
@@ -387,7 +387,7 @@
                         className: "heading tw-m-0 tw-p-0"
                     }, "Purchase Details"), n.createElement(r.$n, {
                         className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
-                        onClick: l
+                        onClick: s
                     }, n.createElement(r.M2, {
                         color: "white",
                         icon: y.yY
@@ -398,8 +398,8 @@
                     }, n.createElement(r.Oo, {
                         className: "tw-w-full tw-h-full tw-aspect-square",
                         width: 162,
-                        alt: Y,
-                        imageId: F || V || null,
+                        alt: z,
+                        imageId: W || G || null,
                         fallbackSrc: M(),
                         fitToCover: !0
                     })), n.createElement("div", {
@@ -407,58 +407,58 @@
                     }, n.createElement("div", {
                         className: "tw-relative",
                         onMouseLeave: function() {
-                            return C(!1)
+                            return S(!1)
                         }
                     }, n.createElement("div", {
                         className: "tw-flex tw-flex-row tw-justify-start tw-items-center "
                     }, n.createElement(O.A, {
-                        listingType: z,
+                        listingType: U,
                         className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
                     }), n.createElement("div", {
                         className: "tw-rounded-full tw-bg-placeholder-text tw-w-4 tw-h-4 tw-flex tw-flex-col tw-justify-center tw-ml-1 tw--mt-1 tw-cursor-pointer",
                         onMouseEnter: function() {
-                            return C(!0)
+                            return S(!0)
                         }
                     }, n.createElement(r.M2, {
                         icon: b.kt,
                         className: "tw-text-[10px] tw-text-black"
                     }))), n.createElement("div", {
-                        className: "tw-bg-transparent tw-mt-[20px] tw-top-0 ".concat(h ? "tw-absolute" : "tw-hidden")
+                        className: "tw-bg-transparent tw-mt-[20px] tw-top-0 ".concat(C ? "tw-absolute" : "tw-hidden")
                     }, n.createElement(k, {
-                        listingType: z
+                        listingType: U
                     }))), n.createElement("h4", {
                         className: "tw-my-2 tw-text-white tw-text-xl"
-                    }, Y), c.purchaseActive && n.createElement("div", {
+                    }, z), i.purchaseActive && n.createElement("div", {
                         className: "tw-w-fit tw-px-2 tw-py-1 tw-rounded-full tw-text-white tw-text-xs tw-bg-active-purple"
                     }, "Active"), n.createElement("div", {
                         className: "tw-border-solid tw-border-1 tw-border-grey tw-border-x-0 tw-py-3 tw-mt-3"
-                    }, G && $ && n.createElement("span", {
+                    }, $ && Q && n.createElement("span", {
                         className: "tw-block"
                     }, "Sold by:", " ", n.createElement(x.N_, {
-                        to: "/home/user/".concat(G),
+                        to: "/home/user/".concat($),
                         className: "tw-text-link-highlight"
-                    }, $)), "instant" === z && q && n.createElement("span", {
+                    }, Q)), "instant" === U && V && n.createElement("span", {
                         className: "tw-block"
-                    }, "Quantity: ", q), n.createElement("span", {
+                    }, "Quantity: ", V), n.createElement("span", {
                         className: "tw-block"
-                    }, "Price: ", n.createElement(r.eD, null), " ", c.purchasePrice), n.createElement("span", {
+                    }, "Price: ", n.createElement(r.eD, null), " ", i.purchasePrice), n.createElement("span", {
                         className: "tw-block"
-                    }, "Purchased on: ", j()(c.purchaseDate).format("ll"))), n.createElement("p", {
+                    }, "Purchased on: ", j()(i.purchaseDate).format("ll"))), n.createElement("p", {
                         className: "tw-text-light-grey tw-text-base tw-mt-2"
-                    }, U))), n.createElement("div", null, n.createElement("button", {
+                    }, F))), n.createElement("div", null, n.createElement("button", {
                         type: "button",
                         className: "tw-px-4 tw-py-3 tw-text-link-highlight tw-text-xs tw-cursor-pointer tw-bg-transparent tw-border-0",
                         onClick: function() {
-                            return p(function(e) {
+                            return f(function(e) {
                                 return !e
                             })
                         }
-                    }, "View ", W.length, " included products", " ", n.createElement(r.M2, {
+                    }, "View ", null !== (t = null == q ? void 0 : q.length) && void 0 !== t ? t : 0, " included products", " ", n.createElement(r.M2, {
                         className: "tw-align-middle",
-                        icon: d ? v.w2 : E.Jt
-                    }))), d && n.createElement("div", {
+                        icon: p ? v.w2 : E.Jt
+                    }))), p && n.createElement("div", {
                         className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
-                    }, null == W ? void 0 : W.map(function(e) {
+                    }, null == q ? void 0 : q.map(function(e) {
                         return n.createElement(D.A, {
                             className: "tw-min-h-20 tw-my-2",
                             key: e.id,
@@ -468,7 +468,7 @@
                         className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
                     }, n.createElement(r.$n, {
                         className: "tw-rounded-md tw-w-full tw-h-9 tw-border-0",
-                        onClick: l
+                        onClick: s
                     }, "Done")))))
                 };
             R.propTypes = {
@@ -1896,4 +1896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0c00e6485cb90b27fafc1de00ac0608ee7ca0313f3254dd159bd66dcd5b0d905.js.map
+//# sourceMappingURL=7e33936c874b068c3ec9af6def6608196f0845e8e7078b8d3c5358f2c8a7f762.js.map

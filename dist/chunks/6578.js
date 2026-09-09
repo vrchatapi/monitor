@@ -4501,7 +4501,7 @@
                 f = n(84976),
                 p = n(3828),
                 w = n(53818),
-                g = n(71957),
+                g = n(46078),
                 v = n(82544),
                 b = n(1871),
                 h = n(86558),
@@ -4808,7 +4808,7 @@
             };
             const Be = function(e) {
                 var t = e.notification,
-                    n = e.senderUserData,
+                    n = e.senderProfileData,
                     r = (0, m.wA)(),
                     a = (0, U.mI)(),
                     l = (0, v.A)(a, 2),
@@ -4816,7 +4816,7 @@
                     s = l[1].isSuccess,
                     f = (0, U.Gg)(),
                     w = (0, v.A)(f, 1)[0],
-                    g = n.profilePicOverride || n.currentAvatarThumbnailImageUrl;
+                    g = null == n ? void 0 : n.iconUrl;
                 return s && r((0, p.$Z)({
                     notificationId: t.id
                 })), d.createElement(Ne.L4, null, d.createElement(Ne.rn, null, d.createElement(xe.M2, {
@@ -4872,7 +4872,9 @@
                     I = E.isSystem,
                     O = 2 === E.version,
                     M = "message" === x || I,
-                    B = (0, g.vf)(C, {
+                    B = (0, g.M7)({
+                        userId: C
+                    }, {
                         skip: !C || O
                     }),
                     S = B.data,
@@ -4884,13 +4886,13 @@
                 if (j) return d.createElement("p", null, "Loading");
                 if (M) return d.createElement(Be, (0, r.A)({}, y, {
                     notification: E,
-                    senderUserData: S
+                    senderProfileData: S
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
                 var P, T = je[x],
                     D = qe[x],
                     F = (0, u.CD)(null == S ? void 0 : S.status).color,
-                    z = (null == S ? void 0 : S.profilePicOverride) || (null == S ? void 0 : S.currentAvatarThumbnailImageUrl),
+                    z = null == S ? void 0 : S.iconUrl,
                     R = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (i = E.details) || void 0 === i ? void 0 : i.requestMessage);
                 return d.createElement(Ne.L4, null, d.createElement(Ne.rn, null, d.createElement(xe.M2, {
                     icon: T
@@ -6746,4 +6748,4 @@
         }
     }
 ]);
-//# sourceMappingURL=eaf87ea61470dc687ad2a37efe59c8f0acc1bdd94d6593ca975127a03bf2d1ea.js.map
+//# sourceMappingURL=8d3d0b1b81753887a27faf7d605cdecbd45f0ca8c6ef81e01edde31a63fa594a.js.map

@@ -380,7 +380,7 @@
                             }
                             var e = te.displayName.length >= 3,
                                 t = "permanent" === $ ? f.gw : f.Hd,
-                                n = te.priceTokens >= f.pb && te.priceTokens <= t && Number.isInteger(parseInt(te.priceTokens)) && /^\d+$/.test(te.priceTokens),
+                                n = te.priceTokens >= f.pb && te.priceTokens <= t && Number.isInteger(Number.parseInt(te.priceTokens)) && /^\d+$/.test(te.priceTokens),
                                 r = te.products.length > 0 && te.products.length <= f.B8;
                             return e && n && r
                         }
@@ -535,4 +535,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0560bafa7c7b2b4fa30eb1fc64da31145f90ea0a468335fe8418d61b8d528d0e.js.map
+//# sourceMappingURL=fbab74da71320168c64acbe3aeaaaa2f0dda73c40c20cbae7bf9aea13665b6d6.js.map

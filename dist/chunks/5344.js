@@ -16,7 +16,7 @@
                 m = n(85052),
                 f = n(71661),
                 d = n(82030),
-                p = n(67920);
+                p = n(26973);
             const b = function(e) {
                 var t, n = e.getTokenAction,
                     b = e.ssoDataSelector,
@@ -290,4 +290,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97d3710216273ceb517e3f01b8ccc27f13e9ee550d15e3708eb95d1eb24ad687.js.map
+//# sourceMappingURL=4ec107d757e0481007c39d4854e6964437070dffbf6bd8961c9bbc4d529475c8.js.map

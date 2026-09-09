@@ -101,7 +101,7 @@
             };
             var D = a(38275),
                 O = a(3569);
-            const M = function(e) {
+            const P = function(e) {
                 var t = e.product,
                     a = e.onClick,
                     n = void 0 === a ? function() {} : a,
@@ -170,7 +170,7 @@
                     icon: D.yL
                 })))
             };
-            var P = ["file"],
+            var M = ["file"],
                 R = ["imageId"];
 
             function j(e, t) {
@@ -285,7 +285,7 @@
                     }, {
                         skip: !V.id
                     }),
-                    Me = Oe.data;
+                    Pe = Oe.data;
                 Oe.isFetching;
                 (0, C.useEffect)(function() {
                     f(J)
@@ -304,7 +304,7 @@
                             document.removeEventListener("mousedown", e)
                         }
                 }, [Ne]);
-                var Pe = function(e) {
+                var Me = function(e) {
                         var t = e.fileId,
                             a = void 0 === t ? null : t,
                             n = e.fileBlob,
@@ -317,7 +317,7 @@
                             })
                         })) : i ? (se(a), void H(function(e) {
                             e.file;
-                            return F(F({}, (0, r.A)(e, P)), {}, {
+                            return F(F({}, (0, r.A)(e, M)), {}, {
                                 imageId: a
                             })
                         })) : (se(l), void H(function(e) {
@@ -337,7 +337,7 @@
                         }), te(F(F({}, ee), {}, (0, l.A)({}, a, e.target.checkValidity())))
                     },
                     je = function() {
-                        Pe({
+                        Me({
                             fileId: null,
                             fileBlob: null
                         }), H(function(e) {
@@ -365,7 +365,7 @@
                                 description: e.description,
                                 imageId: e.imageId
                             })
-                        }), Pe({
+                        }), Me({
                             fileId: e.imageId
                         })
                     }
@@ -479,16 +479,16 @@
                     return C.createElement(w.Uq, {
                         key: e.id,
                         id: e.id
-                    }, C.createElement(M, {
+                    }, C.createElement(P, {
                         product: e,
                         key: e.id,
                         onClick: function() {
                             return function(e) {
                                 if (B) {
-                                    var t, a = null == _ || null === (t = _.products) || void 0 === t ? void 0 : t.some(function(t) {
+                                    var t, a = null == _ || null === (t = _.hydratedProducts) || void 0 === t ? void 0 : t.some(function(t) {
                                         return t.avatarId === e.avatarId
                                     });
-                                    if ((null == e ? void 0 : e.productType) === b.Wd.AVATAR && a && Me) return void Te(!0)
+                                    if ((null == e ? void 0 : e.productType) === b.Wd.AVATAR && a && Pe) return void Te(!0)
                                 }
                                 Se && je(), q((0, y.Py)(e)), H(function(t) {
                                     return F(F({}, t), {}, {
@@ -727,7 +727,7 @@
                     onClose: function() {
                         return le(!1)
                     },
-                    confirmCallback: Pe,
+                    confirmCallback: Me,
                     cancelCallBack: function() {
                         return le(!1)
                     }
@@ -901,4 +901,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35a38a752ab5d25c045f73af8585699c4a898b382094d568824c33ca51ae128b.js.map
+//# sourceMappingURL=6cfa81b44be7dfdfa71c55a5c8f181f3d0d6da87252d2a123295e1f36f1326c4.js.map

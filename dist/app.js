@@ -1,4 +1,4 @@
-/*! For license information please see 2026-08-28t18-32-23-the-beast-of-bologna--main-prod-public-e06f9592-70b0-462a-9c26-fdbb59f21950--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-08t21-00-04-the-correct-of-liam--main-prod-public-9d21b7c6-a9e5-4986-9fec-47d7b74d5fb5--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-08-28t18-32-23-the-beast-of-bologna", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-08t21-00-04-the-correct-of-liam", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -52498,7 +52498,6 @@
                     CD: () => i,
                     GQ: () => r,
                     N6: () => u,
-                    O3: () => d,
                     RY: () => o,
                     vf: () => l,
                     wZ: () => s,
@@ -52597,8 +52596,7 @@
                         GRADIENT: "gradient",
                         TEXTURE: "texture",
                         INVENTORY: "inventory"
-                    },
-                    d = !1
+                    }
             },
             78502(e, t, n) {
                 "use strict";
@@ -55133,11 +55131,11 @@
                                                             break
                                                         }
                                                         return t.next = 4, (0, r.A)(s().mark(function e() {
-                                                            var t;
+                                                            var t, n;
                                                             return s().wrap(function(e) {
                                                                 for (;;) switch (e.prev = e.next) {
                                                                     case 0:
-                                                                        return e.next = 2, o("users/".concat(a));
+                                                                        return e.next = 2, o("profile/".concat(a));
                                                                     case 2:
                                                                         if (!(t = e.sent).error) {
                                                                             e.next = 5;
@@ -55147,8 +55145,8 @@
                                                                             error: t.error
                                                                         });
                                                                     case 5:
-                                                                        return e.abrupt("return", t.data.profilePicOverride ? t.data.profilePicOverride.match("(?!/)file_[^/]+")[0] : t.data.currentAvatarThumbnailImageUrl.match("(?!/)file_[^/]+")[0]);
-                                                                    case 6:
+                                                                        return n = t.data.iconUrl || t.data.currentAvatarThumbnailImageUrl, e.abrupt("return", null == n ? void 0 : n.match("(?!/)file_[^/]+")[0]);
+                                                                    case 7:
                                                                     case "end":
                                                                         return e.stop()
                                                                 }
@@ -55559,65 +55557,66 @@
                                 }),
                                 getStoreByStoreId: e.query({
                                     queryFn: (t = (0, r.A)(s().mark(function e(t, n, r, o) {
-                                        var a, i, l, c, u, d, p, f, h, A, g, B, v, b, y;
+                                        var a, i, l, c, u, d, p, f, h, A, g, B, v, b, y, C, w;
                                         return s().wrap(function(e) {
                                             for (;;) switch (e.prev = e.next) {
                                                 case 0:
-                                                    return c = t.storeId, u = t.checkListingsPurchasesStatus, d = void 0 !== u && u, p = t.hydrateListings, f = void 0 !== p && p, e.next = 3, o({
+                                                    return c = t.storeId, u = t.checkListingsPurchasesStatus, d = void 0 !== u && u, p = t.hydrateListings, f = void 0 !== p && p, h = t.hydrateContext, A = void 0 !== h && h, e.next = 3, o({
                                                         url: "economy/store",
                                                         method: "GET",
                                                         params: {
                                                             storeId: c,
-                                                            hydrateListings: f
+                                                            hydrateListings: f,
+                                                            hydrateContext: A
                                                         }
                                                     });
                                                 case 3:
-                                                    if (!(h = e.sent).error) {
+                                                    if (!(g = e.sent).error) {
                                                         e.next = 6;
                                                         break
                                                     }
                                                     return e.abrupt("return", {
-                                                        error: h.error
+                                                        error: g.error
                                                     });
                                                 case 6:
-                                                    if (A = h.data || [], g = A.listings, (B = null !== (a = null == g ? void 0 : g.map(function(e) {
+                                                    if (B = g.data || [], v = B.listings, (b = null !== (a = null == v ? void 0 : v.map(function(e) {
                                                             return e.id
                                                         })) && void 0 !== a ? a : []).length && d) {
                                                         e.next = 10;
                                                         break
                                                     }
                                                     return e.abrupt("return", {
-                                                        data: h.data
+                                                        data: g.data
                                                     });
                                                 case 10:
                                                     return e.next = 12, o({
                                                         url: "economy/productPurchaseStatus",
                                                         method: "POST",
                                                         body: {
-                                                            productIds: B
+                                                            productIds: b
                                                         }
                                                     });
                                                 case 12:
-                                                    if (!(v = e.sent).error) {
+                                                    if (!(y = e.sent).error) {
                                                         e.next = 15;
                                                         break
                                                     }
                                                     return e.abrupt("return", {
-                                                        error: v.error
+                                                        error: y.error
                                                     });
                                                 case 15:
-                                                    return b = null !== (i = null === (l = v.data) || void 0 === l ? void 0 : l.map(function(e) {
+                                                    return C = null !== (i = null === (l = y.data) || void 0 === l ? void 0 : l.map(function(e) {
                                                         return e.productId
-                                                    })) && void 0 !== i ? i : [], y = g.map(function(e) {
+                                                    })) && void 0 !== i ? i : [], w = v.map(function(e) {
                                                         return m(m({}, e), {}, {
-                                                            isPurchased: b.includes(e.id),
-                                                            isPurchasedData: v.data.find(function(t) {
+                                                            isPurchased: C.includes(e.id),
+                                                            isPurchasedData: y.data.find(function(t) {
                                                                 return t.productId === e.id
                                                             })
                                                         })
                                                     }), e.abrupt("return", {
-                                                        data: m(m({}, h.data), {}, {
-                                                            listings: y
+                                                        data: m(m({}, g.data), {}, {
+                                                            listings: w
                                                         })
                                                     });
                                                 case 18:
@@ -115029,7 +115028,7 @@
             get: t[n]
         })
     }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce((t, n) => (s.f[n](e, t), t), [])), s.u = e => ({
-        78: "35a38a752ab5d25c045f73af8585699c4a898b382094d568824c33ca51ae128b",
+        78: "6cfa81b44be7dfdfa71c55a5c8f181f3d0d6da87252d2a123295e1f36f1326c4",
         100: "840aa5be69155910e862b01219f235860b8119a45578d5a538b7b6693c7e53e4",
         122: "93e973e70ed0da53e604374bec72a2f07b5d97bf3c70af231643bc6ab61bebc1",
         172: "4a55ed500173e35b11cb6ed6aeaa39569bd686c296a742fcd0db20698b4d135a",
@@ -115049,11 +115048,11 @@
         1398: "28c29e4d63a7d552076fa8a4b73ccfe56ae7467e6583ce5fb361552fffffefa9",
         1407: "86bff330166553c3f7c764ca5885d0698b220d8f8e32ebffd31fe7a621266ffa",
         1462: "ec59ec2cc984dbc9fce7329bf7c67e52345dc314d80741a2faf1a1b0517870c6",
-        1546: "5dd078b0749e97e63f6f025fe7fba6165b1a79334ed0bfa3b17ad6e041c2ad30",
+        1546: "4b5d8aa4437bfe45c28a6fea7913f33dd400641923730b5b528e84d8f2c636db",
         1647: "45b6c86c6f72d6c8d7a2a43432064a34e233c2cbd58417eeae17e2fcc042e8ab",
-        1730: "3f27e01dc666861eaf92b5a3206c2584eca622254001858dbcabdae193a9436e",
+        1730: "051b7512d2920dcb7f9845b7348e60d338c564f76b5f26b564a907c5c9de69c7",
         1756: "7ccebc2edb1c2a9da0930c2470472a4881b327c27f9a055482b5ea8888278161",
-        1768: "0560bafa7c7b2b4fa30eb1fc64da31145f90ea0a468335fe8418d61b8d528d0e",
+        1768: "fbab74da71320168c64acbe3aeaaaa2f0dda73c40c20cbae7bf9aea13665b6d6",
         1840: "9ec5f597f105c6bd0924afb6603b1cfd0052b02f34135f812fcee0c132de0a7f",
         1938: "42e70bc4f6c6b52622bc01ca5ae4defe9c7994d273a04f410ca559fe3c0df396",
         1952: "ea41bb2db191ca0fbecb6897b2b58b9e90491b52c2c8afd4be0c49ea385a7b75",
@@ -115061,15 +115060,14 @@
         2071: "fab6be1eb78030388e9439dbd08e823e93b06bf71d2d79016fcb4dd5ced64e8c",
         2078: "3894180b791b6496bf04ca8ff67492f05cb0f94721d69da15dc4f02697c25d42",
         2092: "3d7ea0be967b691f334d3ede08a6ed59b88ecbdaa812881de0952cded1723c1c",
-        2138: "1e0cb7b7f64d5b95d66258d6cdec148f008c6b800f63e22e87509a6321390757",
         2148: "d2364f44ddcaafa80ab0ff4463ee027f107c2c5dbb27aae9681b271c96bb5a42",
         2152: "78ab369b31d5cdd784556fb0829070dd2e7044a15688e22dc85f7d0a0226edb7",
         2177: "182f0daef1cc515ed6bdf42f462df6ed6e9a26fcfe54df2439cad90ede17820c",
         2274: "cc7968a9ecea903b88cd60896aff5a95faa6588006777c115651841ba4a46ca9",
         2331: "be511ce57fab7560532b7daff80de47a139a8aa7233ed2143e02cea12462ff87",
-        2340: "4634dd5fb7eb8a1cb39e2bf596385ebacaa165babe430d45aef5259ac8cc0f7a",
+        2340: "11485006f413160f3ef936aab1dd8daf08e35314ee8bb0611e60b90646a3def0",
         2475: "450f91367a6db8a7a86b93ce76a90073af7567a20512f9884693655a92c02fb7",
-        2676: "39627bd03bbccaeaa7aabb22a5e8156ded60b421443268b1cf4f0d27b6b13e69",
+        2676: "6bb5bfd942c7fb7fe7940d41aaf4086ae73a0a11784662539b4debd80ab4e449",
         2726: "d5571b27dc9d309240ccc7a605d361b791014405843b4199267edfc5082b5f27",
         2789: "257fe04a8075e035b3c9ffa7f46b8b739020d9186d9c7fff63f5f1202a9b73a7",
         2876: "4ebd3751d9ea991ad65ea9f98429ffa5f933f3f80b41050d22abd85bd54af72b",
@@ -115077,7 +115075,7 @@
         3015: "37b3616bb9111b4fd63df46093611221db12d230e2294068329e8900821d866c",
         3052: "a58124e70dc186b4b23edaa9d9683985fa2280d2c9baea77c076d0d8b93513d0",
         3189: "0b8e8ee222759cf34030bf06d4e97e812e3ba65a49f0460190990cda30177a67",
-        3248: "5d9550dd12815b1ebe69d52cd8512fc2ab95f6397c2e098e07776fc5ca05bb32",
+        3248: "0f74fe62833d00f3cea3bd166f2d611eba4e0f4ffb47e5edbc4b9fefc9acb362",
         3315: "4702490659e18ef2106d00160f236c140e37a867aab6702937ba9fe554400ddb",
         3441: "d917e308a7a0f8d7cb9cbd3aadc5d5d81fa6d1b4e9c9497d12e4211fac00c478",
         3456: "14b087df49c258149e9f01eca0a147494653de54d9038080c9b5dbc930735abc",
@@ -115091,7 +115089,7 @@
         4181: "ba78360a04f5bd04392a65c5d8d7b127b84543d04fd1349def4f4e4030455f92",
         4369: "0d7f8225d1b9ea68c1b46c9609829226fdf765b4c67ec28f67016271d906a88a",
         4429: "4d860eb92d6e94e317d94a0fab9fa1feb05d11fd8937cf5b5aef3baf3dbf44e7",
-        4541: "fef2947de521ff8e55b5624684b53f4d6118182907aa924fe90d430a7ef992e9",
+        4541: "84c2aa21c4adc53166a5427d22ced64cdcc36c01b2f47f48bdbd8f43b947fb1a",
         4562: "8e3db79576c9fbf66375f5bb978b713bbfba383739a877ccb24cfe6a2bc7e312",
         4613: "9a2a0c840b3d7c72643d2069e595257719d1b4a48c59ccb5c5fc6b3a85434d93",
         4736: "8aa77c24e2c9d37a04800c39690e3af1e7b3bd10fa382e0e2923a0aa755fa973",
@@ -115099,20 +115097,21 @@
         4790: "19d726eb8a49fe27e8317fe7644ba7fdd6a77e122011f91f88831e5c3cf18b36",
         4982: "8fdaa132634f91fc61bcdce06fe7d9f157658b090caff1fbb82effd76328bccb",
         5170: "f4c7b7cdf12db8409bf88d3a9b6b4bd29ae5cacbddd79d55d7e0919d06903da2",
-        5190: "0c00e6485cb90b27fafc1de00ac0608ee7ca0313f3254dd159bd66dcd5b0d905",
+        5190: "7e33936c874b068c3ec9af6def6608196f0845e8e7078b8d3c5358f2c8a7f762",
         5193: "69ffc673358448e8fe05bd487de989eb8039d684e9c65f85a9bf3af676c40f65",
         5242: "72e425e90607881645ec594aab9ba5e93a91e1610ee1020189c133ad61db0f76",
-        5344: "97d3710216273ceb517e3f01b8ccc27f13e9ee550d15e3708eb95d1eb24ad687",
+        5344: "4ec107d757e0481007c39d4854e6964437070dffbf6bd8961c9bbc4d529475c8",
         5357: "6b35f15ac0d933357830e74071b975b386ccd9e027f3e2e091e4bc88ee858f34",
+        5389: "c121fe6ef2c9aebec38add940c3cb27b3bce14862a233c247ffe22ede05b0d87",
         5532: "3a51b837ee15e93dac8c6e24f36332adb825e9b2c0c78f9782808afddfe1357d",
         5771: "99e05f397417c59673d7ab192e16b64d9d2578c607c9b4d7a30dc08b3517790b",
         5936: "7b78c50dc609890dd8f5ebf10cb830641f4db305ba9c809f16c871eaa5e5070d",
-        6004: "633ceda4d81068bd76f7f2f19da6211c395afd146ded6935b1874f2eeb8cb84e",
+        6004: "c8f32aaf314796d0d459c30a3adf7ecce7f7ce6c5fc858cd805156bf0acd3db4",
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "eaf87ea61470dc687ad2a37efe59c8f0acc1bdd94d6593ca975127a03bf2d1ea",
-        6585: "3666a5c369addd7c631234a2125513abc38b6dcf34cf5e8c5117151fca530c7e",
+        6578: "8d3d0b1b81753887a27faf7d605cdecbd45f0ca8c6ef81e01edde31a63fa594a",
+        6585: "19005f134ae2ebd082c97cc1993e832a125a7e4e516d6feb9d052000a2c57f5f",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
         6746: "946beb8b63ec1bea164a3451900fd7b394c2cb50bd08aa63a4c016ebcea36efb",
@@ -115125,7 +115124,7 @@
         7464: "d1c5ac7fe694dadbee9697349184a4da297f07257b7e93b73dd9882f45668ea7",
         7484: "b95f6f9bf9a0df6f4ce735871af669d08657d1f98bed49052e2e2e37ab7f5406",
         7485: "3c3787c26fa89efe9b7deb285f48b7fc10bb7974fdc729a8da4579cdeb96a3d1",
-        7495: "0ec15baf1109fbfce2cb8a8d572dda971df0bcd2729f7884cd858c6271582875",
+        7495: "fb2f70f57d84b681f623104a0d15b5df0913ed4aa58dc2f6e1f267cf46171d6f",
         7596: "6224813985179089ada276c81beb1ebf8d1d322fe5d9a9541a764668f10d12c9",
         7697: "1b135805535dc87cb5dda31e2af52cb61ffa617d2b7e5ad0df2c0eb35409a1ae",
         7783: "2fc84c5a8e78cb2c1dd20160d18f460d7493016da534ed686380e8c8a3e44362",
@@ -115134,10 +115133,10 @@
         7906: "565d7da4cbcc48a8a62cad999393bcce040cb7482cc8a59a338311d7df60a6b3",
         7917: "76d4171ef770fe7e6692c5a71419aa13fc1febf87da162495ce97b89e5f385e7",
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
-        8104: "b3716025ab7eb5cecdd5334e24062bb1d92802f40f5a8e96602cdb1f793b159a",
+        8104: "57161d635742669ca406f06a22a9fab486ad763758812bcb25d7ea48ffca7983",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
         8202: "b1bc7d75af19393e0b1fb45b6dbd59496f90c79b034f7c7b4b65e933887250fa",
-        8229: "c68f4e981dbf5769f2fa346e8ad8a2a2f28712a926ef18ae0028559ed9d5bdd3",
+        8229: "25fa79577080204529c7ebadbcedd29c1b9135c136edab3f3fd0a43275083785",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
         8621: "6deb7f0641303a0cd03fce6f1c38de8ec8bbc571b28efd61f1a31c7bfe28018f",
@@ -115147,13 +115146,13 @@
         9355: "63f6ec2e559e38ed86e966cb871067565486dec9aed20994ec98bdd29baa7dd2",
         9370: "1fa1923e8a9c4d7b19ebb70d418fb7417641c3ed25abb692359cd47f3b29bdf9",
         9381: "43262c9f4a7695ba59089fe91c76faa2ba828551376c668c6d9c6b035deafb3c",
-        9387: "16d4d6eb3c305d9edfc8d22c88701e753e8287ee8f9f8b2ca45085e81a0e47ad",
+        9387: "469c5b949241e50d5da639306864c95f13456cfb67d5537b790930987aa0adaa",
         9439: "7b7ee8e28669baaf3cb5f43aa6727ff2ea7b2e90fd6933490e806f9b460b33d0",
         9450: "b99df619b5343263d84078561739bace06d5edcebc44721ee3df3cf125d91a02",
         9488: "67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec",
         9697: "42ba0f6e23b9aa2e9b5852fbe61f068fa0f450e206e3116908a4a7a0dda25f07",
         9772: "73b2d2aea9ceb96a4fbee13256c34bf3766e634175dbcb70b9cebfe64e637fed",
-        9876: "7618fadf8a6147b0f1aad9bfc799471204964cad893a29ffb4b13e124aca55a7",
+        9876: "da1e0654738a3d2efab1d8c6b5c0359782c3a797fdccd0f521eaea1a0b08d782",
         9915: "2c087442cc796ca8bc6aebce8222f0e88fde105d831e6176109d3bfd7912c302"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
         if ("object" == typeof globalThis) return globalThis;
@@ -115236,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-08-28t18-32-23-the-beast-of-bologna"
+        id: "2026-09-08t21-00-04-the-correct-of-liam"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-08-28t18-32-23-the-beast-of-bologna"
+        id: "2026-09-08t21-00-04-the-correct-of-liam"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116991,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-08-28t18-32-23-the-beast-of-bologna",
+                release: "2026-09-08t21-00-04-the-correct-of-liam",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
@@ -123804,16 +123803,16 @@
                 return s.e(962).then(s.bind(s, 60962))
             }),
             gi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(2340)]).then(s.bind(s, 82340))
+                return Promise.all([s.e(4746), s.e(5389), s.e(2340)]).then(s.bind(s, 82340))
             }),
             Bi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(6585)]).then(s.bind(s, 46585))
+                return Promise.all([s.e(4746), s.e(5389), s.e(6585)]).then(s.bind(s, 46585))
             }),
             vi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(2138), s.e(5344)]).then(s.bind(s, 55344))
+                return Promise.all([s.e(4746), s.e(5389), s.e(5344)]).then(s.bind(s, 55344))
             }),
             bi = r.lazy(function() {
-                return Promise.all([s.e(4746), s.e(7906), s.e(2138), s.e(6578)]).then(s.bind(s, 16578))
+                return Promise.all([s.e(4746), s.e(7906), s.e(5389), s.e(6578)]).then(s.bind(s, 16578))
             });
         const yi = function() {
             (0, _o.zn)();
