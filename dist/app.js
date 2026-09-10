@@ -1,4 +1,4 @@
-/*! For license information please see 2026-09-08t21-00-04-the-correct-of-liam--main-prod-public-9d21b7c6-a9e5-4986-9fec-47d7b74d5fb5--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-09t18-59-06-the-sphere-of-astrid--main-prod-public-d1a28be6-f4f7-47b3-b04c-b13b5ea299f9--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-08t21-00-04-the-correct-of-liam", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-09t18-59-06-the-sphere-of-astrid", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115110,7 +115110,7 @@
         6062: "3e4dfc6ec4d92421c32425d70cb1f504ae2115274872581279a109855dc8ebea",
         6313: "889db6ff775155409ee77fd088107df4bef15c0a86df885144bcf1bafa768c53",
         6367: "4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804",
-        6578: "8d3d0b1b81753887a27faf7d605cdecbd45f0ca8c6ef81e01edde31a63fa594a",
+        6578: "9d54ae404956da2f1454ae58f9a1ed76b1fe5e8151d524754cacfcd2b8f66f1d",
         6585: "19005f134ae2ebd082c97cc1993e832a125a7e4e516d6feb9d052000a2c57f5f",
         6683: "f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda",
         6708: "30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57",
@@ -115235,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-09-08t21-00-04-the-correct-of-liam"
+        id: "2026-09-09t18-59-06-the-sphere-of-astrid"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-09-08t21-00-04-the-correct-of-liam"
+        id: "2026-09-09t18-59-06-the-sphere-of-astrid"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116990,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-09-08t21-00-04-the-correct-of-liam",
+                release: "2026-09-09t18-59-06-the-sphere-of-astrid",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

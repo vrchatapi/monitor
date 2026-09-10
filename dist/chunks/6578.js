@@ -3887,6 +3887,12 @@
                                     category: "VRC+",
                                     title: "VRC+ Subscription",
                                     imageUrl: Yn()
+                                },
+                                promoSub: {
+                                    category: "VRC+",
+                                    title: "VRC+ Subscription",
+                                    subtitle: "(".concat(null == u ? void 0 : u.periodAmount, " ").concat(null == u ? void 0 : u.period).concat((null == u ? void 0 : u.periodAmount) > 1 ? "s" : "", ")"),
+                                    imageUrl: Yn()
                                 }
                             } [s] || {
                                 title: s,
@@ -3894,20 +3900,23 @@
                                 category: ""
                             },
                             m = d.title,
-                            f = d.imageUrl,
-                            p = d.category;
+                            f = d.subtitle,
+                            p = d.imageUrl,
+                            w = d.category;
                         return o.createElement(Qn, {
                             key: t,
                             className: "tw-bg-[#181b1f] tw-border tw-border-[#06333d] tw-relative tw-p-4 tw-shadow tw-flex tw-flex-col tw-items-center tw-text-center tw-w-full sm:tw-w-6/12 md:tw-w-4/12 lg:tw-w-3/12 tw-p-2 tw-m-2"
-                        }, p && o.createElement("div", {
+                        }, w && o.createElement("div", {
                             className: "tw-absolute tw-top-2 tw-left-2 tw-bg-cyan-500 tw-text-white tw-rounded-full tw-px-2 tw-text-xs tw-font-semibold tw-shadow"
-                        }, p), f && o.createElement("img", {
-                            src: f,
+                        }, w), p && o.createElement("img", {
+                            src: p,
                             alt: m,
                             className: "tw-w-full tw-h-32 tw-object-contain tw-mb-3 tw-rounded"
                         }), o.createElement("h4", {
                             className: "tw-text-md tw-font-medium tw-text-[#6ae3f9]"
-                        }, m))
+                        }, m), f && o.createElement("p", {
+                            className: "tw-text-sm tw-text-gray-400 tw-mb-0"
+                        }, f))
                     }(e, t)
                 })))))))
             };
@@ -6748,4 +6757,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8d3d0b1b81753887a27faf7d605cdecbd45f0ca8c6ef81e01edde31a63fa594a.js.map
+//# sourceMappingURL=9d54ae404956da2f1454ae58f9a1ed76b1fe5e8151d524754cacfcd2b8f66f1d.js.map
