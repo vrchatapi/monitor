@@ -3991,8 +3991,7 @@
                     return a ? C.createElement(ie.A, null) : o || !l ? C.createElement("div", {
                         className: "tw-p-3 tw-bg-grey tw-rounded-lg tw-text-light-grey tw-py-10"
                     }, "Failed to load user") : C.createElement(rn.A, (0, tn.A)({
-                        userData: l,
-                        disableLink: !0
+                        userData: l
                     }, n))
                 },
                 Tn = [{
@@ -4112,21 +4111,11 @@
                     he = P({
                         groupMember: null == n ? void 0 : n.myMember,
                         permission: "group-members-viewall"
-                    }),
-                    be = function(e) {
-                        var t, r = e.memberRank,
-                            l = e.member,
-                            a = n.memberRank < r,
-                            o = l.id === (null == n || null === (t = n.myMember) || void 0 === t ? void 0 : t.id),
-                            i = null == n ? void 0 : n.roles.some(function(e) {
-                                return !0 === e.isSelfAssignable
-                            });
-                        return !!U || (!(!Ee && !ve || !a) || (!(!Ee && !ve || !o) || !(!i || !o)))
-                    };
+                    });
                 if (ue) return C.createElement(re.fy, {
                     height: "200px"
                 });
-                var we = null == z ? void 0 : z.map(function(e, t) {
+                var be = null == z ? void 0 : z.map(function(e, t) {
                         var r;
                         return null === (r = (0, D.A)(e)) || void 0 === r || null === (r = r.sort(function(e) {
                             return null === j && null === F && e.userId === n.ownerId ? -1 : 0
@@ -4136,29 +4125,43 @@
                             }) === t
                         })) || void 0 === r ? void 0 : r.map(function(e) {
                             var r, l = null === (r = n.roles) || void 0 === r ? void 0 : r.map(function(t) {
-                                var n;
-                                return null != e && null !== (n = e.roleIds) && void 0 !== n && n.includes(t.id) ? t.order : 9999
-                            }).sort(function(e, t) {
-                                return e - t
-                            })[0];
-                            return C.createElement("button", {
+                                    var n;
+                                    return null != e && null !== (n = e.roleIds) && void 0 !== n && n.includes(t.id) ? t.order : 9999
+                                }).sort(function(e, t) {
+                                    return e - t
+                                })[0],
+                                a = function(e) {
+                                    var t, r = e.memberRank,
+                                        l = e.member,
+                                        a = n.memberRank < r,
+                                        o = l.id === (null == n || null === (t = n.myMember) || void 0 === t ? void 0 : t.id),
+                                        i = null == n ? void 0 : n.roles.some(function(e) {
+                                            return !0 === e.isSelfAssignable
+                                        });
+                                    return !!(U || (Ee || ve) && a || (Ee || ve) && o || i && o)
+                                }({
+                                    memberRank: l,
+                                    member: e
+                                });
+                            return a ? C.createElement("button", {
                                 className: "tw-border-none tw-bg-transparent tw-rounded-2xl tw-p-0",
                                 key: e.id,
                                 type: "button",
                                 onClick: function(n) {
                                     null != e && e.id && fe(e, l, t)
-                                },
-                                disabled: !be({
-                                    memberRank: l,
-                                    member: e
-                                })
+                                }
                             }, C.createElement(Mn, {
                                 userId: e.userId,
+                                isCard: !0,
+                                disableLink: !0
+                            })) : C.createElement(Mn, {
+                                key: e.id,
+                                userId: e.userId,
                                 isCard: !0
-                            }))
+                            })
                         })
                     }),
-                    ye = [{
+                    we = [{
                         label: "Everyone",
                         value: null
                     }, {
@@ -4182,7 +4185,7 @@
                 }, C.createElement(Rn, {
                     label: "Filter role",
                     onChange: $,
-                    options: ye,
+                    options: we,
                     value: F,
                     className: "mb-2 mx-2"
                 }), C.createElement(Rn, {
@@ -4222,7 +4225,7 @@
                     isGroupMemberOnly: !0
                 }), ie ? C.createElement(re.fy, {
                     height: "200px"
-                }) : C.createElement(Pn, null, we), C.createElement("div", {
+                }) : C.createElement(Pn, null, be), C.createElement("div", {
                     className: "p-2",
                     style: {
                         margin: "20px auto 0",
@@ -7573,4 +7576,4 @@
         }
     }
 ]);
-//# sourceMappingURL=57161d635742669ca406f06a22a9fab486ad763758812bcb25d7ea48ffca7983.js.map
+//# sourceMappingURL=7b38c9197c2d802399185b3d4e3092dd58042a6c0ba93e9e8cf3a768aaba1836.js.map

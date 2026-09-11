@@ -2521,7 +2521,7 @@
                                 successMessage: "Profile banner successfully updated.",
                                 failedMessage: "Failed to change profile banner.",
                                 clearButtonLabel: "Reset Banner",
-                                aspectRatio: 16 / 9,
+                                aspectRatio: 17 / 6,
                                 isRounded: !1
                             }
                         },
@@ -4286,11 +4286,11 @@
                     }, !at && ct && Nr && o.createElement("img", {
                         src: Kt,
                         alt: "".concat(Ot, "'s avatar banner"),
-                        className: "tw-w-auto tw-h-auto tw-rounded-md tw-shadow-lg tw-aspect-video tw-object-cover"
+                        className: "tw-w-auto tw-h-auto tw-rounded-md tw-shadow-lg tw-aspect-[17/6] tw-object-cover"
                     }), !at && ct && yr && o.createElement("img", {
                         src: Jt,
                         alt: "".concat(Ot, "'s custom banner"),
-                        className: "tw-w-auto tw-h-auto tw-rounded-md tw-shadow-lg tw-aspect-video tw-object-cover"
+                        className: "tw-w-auto tw-h-auto tw-rounded-md tw-shadow-lg tw-aspect-[17/6] tw-object-cover"
                     }), !at && ct && kr && o.createElement("div", {
                         className: "tw-w-auto tw-h-44 tw-rounded-md tw-shadow-lg tw-flex tw-items-center tw-justify-center",
                         style: {
@@ -5664,4 +5664,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0f74fe62833d00f3cea3bd166f2d611eba4e0f4ffb47e5edbc4b9fefc9acb362.js.map
+//# sourceMappingURL=827a35a0350d3ae990d26eca886413195d7574dd32c7500ca2a7a7c6c3ed8493.js.map

@@ -1,4 +1,4 @@
-/*! For license information please see 2026-09-09t18-59-06-the-sphere-of-astrid--main-prod-public-d1a28be6-f4f7-47b3-b04c-b13b5ea299f9--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-10t19-34-22-the-cobol-of-simon--main-prod-public-074f2aa8-b7b5-46d9-b5fb-c444805b9443--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-09t18-59-06-the-sphere-of-astrid", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-10t19-34-22-the-cobol-of-simon", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115075,7 +115075,7 @@
         3015: "37b3616bb9111b4fd63df46093611221db12d230e2294068329e8900821d866c",
         3052: "a58124e70dc186b4b23edaa9d9683985fa2280d2c9baea77c076d0d8b93513d0",
         3189: "0b8e8ee222759cf34030bf06d4e97e812e3ba65a49f0460190990cda30177a67",
-        3248: "0f74fe62833d00f3cea3bd166f2d611eba4e0f4ffb47e5edbc4b9fefc9acb362",
+        3248: "827a35a0350d3ae990d26eca886413195d7574dd32c7500ca2a7a7c6c3ed8493",
         3315: "4702490659e18ef2106d00160f236c140e37a867aab6702937ba9fe554400ddb",
         3441: "d917e308a7a0f8d7cb9cbd3aadc5d5d81fa6d1b4e9c9497d12e4211fac00c478",
         3456: "14b087df49c258149e9f01eca0a147494653de54d9038080c9b5dbc930735abc",
@@ -115133,7 +115133,7 @@
         7906: "565d7da4cbcc48a8a62cad999393bcce040cb7482cc8a59a338311d7df60a6b3",
         7917: "76d4171ef770fe7e6692c5a71419aa13fc1febf87da162495ce97b89e5f385e7",
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
-        8104: "57161d635742669ca406f06a22a9fab486ad763758812bcb25d7ea48ffca7983",
+        8104: "7b38c9197c2d802399185b3d4e3092dd58042a6c0ba93e9e8cf3a768aaba1836",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
         8202: "b1bc7d75af19393e0b1fb45b6dbd59496f90c79b034f7c7b4b65e933887250fa",
         8229: "25fa79577080204529c7ebadbcedd29c1b9135c136edab3f3fd0a43275083785",
@@ -115235,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-09-09t18-59-06-the-sphere-of-astrid"
+        id: "2026-09-10t19-34-22-the-cobol-of-simon"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-09-09t18-59-06-the-sphere-of-astrid"
+        id: "2026-09-10t19-34-22-the-cobol-of-simon"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116990,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-09-09t18-59-06-the-sphere-of-astrid",
+                release: "2026-09-10t19-34-22-the-cobol-of-simon",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
