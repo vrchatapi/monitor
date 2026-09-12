@@ -1,95 +1,95 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [2789, 5170], {
-        85170(e, t, r) {
-            r.r(t), r.d(t, {
-                default: () => b
+    [2789], {
+        85170(e, t, l) {
+            l.r(t), l.d(t, {
+                default: () => N
             });
-            var n = r(10467),
-                o = r(82544),
-                s = r(82628),
-                l = r(34496),
-                a = r(42217),
-                i = r(54756),
-                d = r.n(i),
-                c = r(65950),
-                u = r(71661),
-                m = (r(13951), r(72784)),
-                w = r(5556),
-                p = r.n(w),
-                g = r(96540),
-                v = r(6376),
-                f = r(7612),
-                y = r(97087),
-                h = (r(31069), function(e) {
+            var n = l(10467),
+                a = l(82544),
+                s = l(82628),
+                r = l(34496),
+                i = l(42217),
+                c = l(54756),
+                o = l.n(c),
+                w = l(65950),
+                u = l(71661),
+                m = (l(13951), l(72784)),
+                d = l(5556),
+                f = l.n(d),
+                p = l(96540),
+                g = l(6376),
+                v = l(7612),
+                x = l(97087),
+                h = (l(31069), function(e) {
                     var t = e.storeId,
-                        r = e.className,
-                        n = void 0 === r ? "" : r,
-                        o = (0, y.rg)({
+                        l = e.className,
+                        n = void 0 === l ? "" : l,
+                        a = (0, x.rg)({
                             storeId: t,
                             managementPov: !0
                         }, {
                             skip: !t
                         }),
-                        s = o.data,
-                        l = o.isFetching,
-                        a = o.isSuccess,
-                        i = o.isError;
-                    return l && (u.M2, f.z1), a ? g.createElement("div", {
+                        s = a.data,
+                        r = a.isFetching,
+                        i = a.isSuccess,
+                        c = a.isError;
+                    return r && (u.M2, v.z1), i ? p.createElement("div", {
                         className: "".concat(n)
-                    }, g.createElement("p", {
+                    }, p.createElement("p", {
                         className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
-                    }, null == s ? void 0 : s.displayName)) : i ? g.createElement("div", {
+                    }, null == s ? void 0 : s.displayName)) : c ? p.createElement("div", {
                         className: "".concat(n)
-                    }, g.createElement("p", {
+                    }, p.createElement("p", {
                         className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
                     }, t)) : null
                 });
             h.propTypes = {
-                storeId: p().string.isRequired,
-                className: p().string
+                storeId: f().string.isRequired,
+                className: f().string
             };
-            const E = h;
-            var x = function(e) {
-                var t, r, i, w = e.listing,
-                    p = e.onCancelCallback,
-                    f = void 0 === p ? function() {} : p;
-                if (!w) return null;
-                var y = null == w ? void 0 : w.active,
-                    h = (0, v.wA)(),
-                    x = (0, m.Qy)(),
-                    b = (0, o.A)(x, 2),
-                    I = b[0],
-                    S = b[1],
-                    N = S.isLoading,
-                    T = (S.isError, S.error, S.reset),
-                    k = (null == w || null === (t = w.storeIds) || void 0 === t ? void 0 : t.length) > 0,
-                    C = function() {
-                        f(), T()
+            const b = h;
+            var E = function(e) {
+                var t, l, c, d = e.listing,
+                    f = e.onCancelCallback,
+                    v = void 0 === f ? function() {} : f;
+                if (!d) return null;
+                var x = null == d ? void 0 : d.active,
+                    h = (0, g.wA)(),
+                    E = (0, m.Qy)(),
+                    N = (0, a.A)(E, 2),
+                    k = N[0],
+                    C = N[1],
+                    y = C.isLoading,
+                    I = (C.isError, C.error, C.reset),
+                    T = (null == d || null === (t = d.storeIds) || void 0 === t ? void 0 : t.length) > 0,
+                    z = function() {
+                        v(), I()
                     },
-                    q = function() {
-                        var e = (0, n.A)(d().mark(function e() {
-                            var t, r;
-                            return d().wrap(function(e) {
+                    A = function() {
+                        var e = (0, n.A)(o().mark(function e() {
+                            var t, l;
+                            return o().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.prev = 0, e.next = 3, I({
-                                            listingId: w.id
+                                        return e.prev = 0, e.next = 3, k({
+                                            listingId: d.id
                                         }).unwrap();
                                     case 3:
-                                        h((0, c.X)({
+                                        h((0, w.X)({
                                             title: "Listing deleted",
-                                            icon: a.SG,
-                                            message: "".concat(w.displayName, " has been deleted."),
+                                            icon: i.SG,
+                                            message: "".concat(d.displayName, " has been deleted."),
                                             color: "success",
                                             timeout: 3e3
-                                        })), C(), e.next = 12;
+                                        })), z(), e.next = 12;
                                         break;
                                     case 7:
-                                        return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), h((0, c.X)({
+                                        return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), h((0, w.X)({
                                             title: "Failed to delete listing",
-                                            icon: l.zp,
-                                            message: null !== (t = null === (r = e.t0.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== t ? t : "Something went wrong",
+                                            icon: r.zp,
+                                            message: null !== (t = null === (l = e.t0.data) || void 0 === l || null === (l = l.error) || void 0 === l ? void 0 : l.message) && void 0 !== t ? t : "Something went wrong",
                                             color: "danger",
                                             timeout: 9e3
                                         })), e.abrupt("return");
@@ -105,210 +105,63 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return y ? g.createElement("div", {
+                return x ? p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
-                }, g.createElement("div", {
+                }, p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
-                }, g.createElement(u.M2, {
+                }, p.createElement(u.M2, {
                     icon: s.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-5"
-                }), g.createElement("h4", {
+                }), p.createElement("h4", {
                     className: "tw-text-lg"
-                }, "This listing is currently published. Please set it to draft before deleting.")), g.createElement("div", {
+                }, "This listing is currently published. Please set it to draft before deleting.")), p.createElement("div", {
                     className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
-                }, g.createElement(u.$n, {
+                }, p.createElement(u.$n, {
                     type: "button",
-                    onClick: C,
+                    onClick: z,
                     containerClasses: "tw-flex-1",
                     neutral: !0
-                }, "Close"))) : g.createElement("div", {
+                }, "Close"))) : p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
-                }, g.createElement("div", {
+                }, p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-w-full"
-                }, g.createElement(u.M2, {
+                }, p.createElement(u.M2, {
                     icon: s.faTriangleExclamation,
                     size: "xl",
                     className: "tw-h-[72px] tw-mb-5"
-                }), k && g.createElement("div", {
+                }), T && p.createElement("div", {
                     className: "tw-flex tw-flex-col tw-items-center tw-gap-2 tw-mb-9"
-                }, g.createElement("p", {
+                }, p.createElement("p", {
                     className: "tw-mb-0"
-                }, "This listing is available in the following ", (null == w || null === (r = w.storeIds) || void 0 === r ? void 0 : r.length) || 0, " ", 1 === (null == w || null === (i = w.storeIds) || void 0 === i ? void 0 : i.length) ? "store" : "stores", ":"), null == w ? void 0 : w.storeIds.map(function(e) {
-                    return g.createElement(E, {
+                }, "This listing is available in the following ", (null == d || null === (l = d.storeIds) || void 0 === l ? void 0 : l.length) || 0, " ", 1 === (null == d || null === (c = d.storeIds) || void 0 === c ? void 0 : c.length) ? "store" : "stores", ":"), null == d ? void 0 : d.storeIds.map(function(e) {
+                    return p.createElement(b, {
                         key: e,
                         storeId: e
                     })
-                })), g.createElement("h4", {
+                })), p.createElement("h4", {
                     className: "tw-text-lg"
-                }, "Are you sure you want to delete? This cannot be undone.")), g.createElement("div", {
+                }, "Are you sure you want to delete? This cannot be undone.")), p.createElement("div", {
                     className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
-                }, g.createElement(u.$n, {
+                }, p.createElement(u.$n, {
                     type: "button",
-                    onClick: C,
+                    onClick: z,
                     containerClasses: "tw-flex-1",
                     neutral: !0
-                }, "Cancel"), g.createElement(u.$n, {
+                }, "Cancel"), p.createElement(u.$n, {
                     type: "button",
-                    onClick: q,
-                    loading: N,
+                    onClick: A,
+                    loading: y,
                     containerClasses: "tw-flex-1",
                     danger: !0
                 }, "Delete")))
             };
-            x.propTypes = {
-                listing: p().object.isRequired,
-                onCancelCallback: p().func
+            E.propTypes = {
+                listing: f().object.isRequired,
+                onCancelCallback: f().func
             };
-            const b = x
-        },
-        97087(e, t, r) {
-            r.d(t, {
-                HP: () => c,
-                ST: () => d,
-                _N: () => i,
-                rg: () => a,
-                s7: () => u
-            });
-            var n = r(80045),
-                o = r(89483),
-                s = ["storeId"],
-                l = o.m.injectEndpoints({
-                    endpoints: function(e) {
-                        return {
-                            getStores: e.query({
-                                query: function(e) {
-                                    var t = e.sellerId,
-                                        r = e.managementPov,
-                                        n = void 0 !== r && r,
-                                        o = e.n,
-                                        s = void 0 === o ? 50 : o,
-                                        l = e.offset;
-                                    return {
-                                        url: "economy/stores",
-                                        params: {
-                                            sellerId: t,
-                                            managementPov: n,
-                                            n: s,
-                                            offset: void 0 === l ? 0 : l
-                                        }
-                                    }
-                                },
-                                providesTags: ["Stores"]
-                            }),
-                            getStore: e.query({
-                                query: function(e) {
-                                    var t = e.storeId,
-                                        r = e.worldId,
-                                        n = e.groupId,
-                                        o = e.creatorId,
-                                        s = e.hydrateListings,
-                                        l = void 0 !== s && s,
-                                        a = e.hydrateProducts,
-                                        i = void 0 !== a && a,
-                                        d = e.managementPov;
-                                    return {
-                                        url: "economy/store",
-                                        params: {
-                                            storeId: t,
-                                            worldId: r,
-                                            groupId: n,
-                                            creatorId: o,
-                                            hydrateListings: l,
-                                            hydrateProducts: i,
-                                            managementPov: void 0 !== d && d
-                                        }
-                                    }
-                                },
-                                providesTags: function(e, t, r) {
-                                    return [{
-                                        type: "Store",
-                                        id: r.storeId
-                                    }]
-                                }
-                            }),
-                            createStore: e.mutation({
-                                query: function(e) {
-                                    var t = e.displayName,
-                                        r = e.storeType,
-                                        n = e.worldId,
-                                        o = e.groupId,
-                                        s = e.tags,
-                                        l = void 0 === s ? [] : s,
-                                        a = e.description;
-                                    return {
-                                        url: "economy/store",
-                                        method: "POST",
-                                        body: {
-                                            displayName: t,
-                                            storeType: r,
-                                            worldId: n,
-                                            groupId: o,
-                                            tags: l,
-                                            description: void 0 === a ? "" : a
-                                        }
-                                    }
-                                },
-                                invalidatesTags: function() {
-                                    return ["Stores", "Worlds"]
-                                }
-                            }),
-                            updateStore: e.mutation({
-                                query: function(e) {
-                                    var t = e.storeId,
-                                        r = (0, n.A)(e, s);
-                                    return {
-                                        url: "economy/store/".concat(t),
-                                        method: "PUT",
-                                        body: r
-                                    }
-                                },
-                                invalidatesTags: function(e, t, r) {
-                                    return [{
-                                        type: "Store",
-                                        id: r.storeId
-                                    }, "Stores", {
-                                        type: "UserGroups",
-                                        id: e.sellerId
-                                    }, "Worlds"]
-                                }
-                            }),
-                            deleteStore: e.mutation({
-                                query: function(e) {
-                                    var t = e.storeId;
-                                    return {
-                                        url: "economy/store/".concat(t),
-                                        method: "DELETE"
-                                    }
-                                },
-                                invalidatesTags: function(e, t, r) {
-                                    return [{
-                                        type: "Store",
-                                        id: r.storeId
-                                    }, "Stores"]
-                                }
-                            }),
-                            getEligibleWorlds: e.query({
-                                query: function() {
-                                    return {
-                                        url: "economy/stores/eligibleWorlds",
-                                        method: "GET"
-                                    }
-                                },
-                                providesTags: ["Stores"]
-                            })
-                        }
-                    },
-                    overrideExisting: !1
-                }).enhanceEndpoints({
-                    addTagTypes: ["Stores", "Store", "UserGroups"]
-                }),
-                a = l.useGetStoreQuery,
-                i = l.useGetStoresQuery,
-                d = l.useCreateStoreMutation,
-                c = l.useUpdateStoreMutation,
-                u = (l.useDeleteStoreMutation, l.useGetEligibleWorldsQuery)
+            const N = E
         }
     }
 ]);
-//# sourceMappingURL=257fe04a8075e035b3c9ffa7f46b8b739020d9186d9c7fff63f5f1202a9b73a7.js.map
+//# sourceMappingURL=3ef8098569ced2db1beec6c99cb290bd0554f6a8d458dd5bd3f2ba6ca26f4a7d.js.map
