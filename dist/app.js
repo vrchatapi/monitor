@@ -1,4 +1,4 @@
-/*! For license information please see 2026-09-11t18-39-50-the-disco-of-papyrus--main-prod-public-852632fd-29a3-4ea7-8362-67d36da70674--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-16t17-08-03-the-katamari-of-jim--main-prod-public-5d48a66a-ed36-401c-9cd2-03de72ae855d--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-11t18-39-50-the-disco-of-papyrus", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-16t17-08-03-the-katamari-of-jim", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115096,7 +115096,7 @@
         4736: "8aa77c24e2c9d37a04800c39690e3af1e7b3bd10fa382e0e2923a0aa755fa973",
         4746: "bfbd20838b9a9c0c419af8cefff5eb620741d2b8323406aebae4f635a8c1d38c",
         4790: "19d726eb8a49fe27e8317fe7644ba7fdd6a77e122011f91f88831e5c3cf18b36",
-        4982: "8fdaa132634f91fc61bcdce06fe7d9f157658b090caff1fbb82effd76328bccb",
+        4982: "ef28845c21efa576ce740284d726877fb3173d3c4f5f55097786982b1269325e",
         5170: "59b4d8ee4416e5d04cbcbf80c1a9263c4bb922aed515c720cd0087001408bf5e",
         5193: "69ffc673358448e8fe05bd487de989eb8039d684e9c65f85a9bf3af676c40f65",
         5242: "72e425e90607881645ec594aab9ba5e93a91e1610ee1020189c133ad61db0f76",
@@ -115235,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-09-11t18-39-50-the-disco-of-papyrus"
+        id: "2026-09-16t17-08-03-the-katamari-of-jim"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-09-11t18-39-50-the-disco-of-papyrus"
+        id: "2026-09-16t17-08-03-the-katamari-of-jim"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116990,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-09-11t18-39-50-the-disco-of-papyrus",
+                release: "2026-09-16t17-08-03-the-katamari-of-jim",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

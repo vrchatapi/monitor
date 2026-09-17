@@ -3,7 +3,7 @@
     [4982], {
         14982(e, t, n) {
             n.d(t, {
-                A: () => C
+                A: () => P
             });
             var r = n(82544),
                 a = n(64467),
@@ -18,8 +18,8 @@
                 f = n(44877),
                 p = n(56288),
                 g = n(60188),
-                h = n(74303),
-                v = n(91069),
+                v = n(74303),
+                h = n(91069),
                 y = n(69147),
                 b = n(26577),
                 w = n(71661),
@@ -35,28 +35,27 @@
                         })
                     }, [a, n]);
                 if (!i) return null;
-                var o = (0, v.gm)({
+                var o = (0, h.gm)({
                         user: i,
                         currentUser: r
                     }),
-                    l = o.profilePicUrl,
-                    c = o.userStatus,
-                    u = o.userStatusLabel,
-                    m = o.userActivity,
-                    f = o.isInActive;
+                    l = o.userStatus,
+                    c = o.userStatusLabel,
+                    u = o.userActivity,
+                    m = o.isInActive;
                 return s.createElement(I, {
                     className: t,
                     to: "/home/user/".concat(n)
                 }, s.createElement(A, null, s.createElement(N, {
-                    src: l
+                    src: null == i ? void 0 : i.iconUrl
                 }), s.createElement(k, {
-                    url: l
+                    url: null == i ? void 0 : i.iconUrl
                 })), s.createElement(w.fI, {
                     className: "align-items-center mt-2"
                 }, s.createElement(w.uc, {
-                    status: c,
-                    isInActive: f,
-                    title: "".concat(u, " ").concat(m && "- ".concat(m))
+                    status: l,
+                    isInActive: m,
+                    title: "".concat(c, " ").concat(u && "- ".concat(u))
                 }), s.createElement(O, {
                     to: "/home/user/".concat(n)
                 }, i.displayName)))
@@ -162,7 +161,7 @@
                 return n
             }
 
-            function P(e) {
+            function C(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {};
                     t % 2 ? z(Object(n), !0).forEach(function(t) {
@@ -173,7 +172,7 @@
                 }
                 return e
             }
-            const C = function(e) {
+            const P = function(e) {
                 var t, n, a, i, b, x, I, A, N = e.location,
                     k = e.className,
                     O = e.currentGroup,
@@ -183,9 +182,9 @@
                         skip: N.id
                     }),
                     z = S.data,
-                    C = S.isLoading,
+                    P = S.isLoading,
                     M = s.useMemo(function() {
-                        return P(P(P({}, N), z), {}, {
+                        return C(C(C({}, N), z), {}, {
                             users: N.users
                         })
                     }, [N, z]),
@@ -193,7 +192,7 @@
                     B = (0, g.Ed)({
                         worldId: M.worldId
                     }, {
-                        skip: C || M.world
+                        skip: P || M.world
                     }),
                     H = B.data,
                     Q = B.isLoading,
@@ -220,14 +219,14 @@
                     fe = de[1],
                     pe = s.useState(null),
                     ge = (0, r.A)(pe, 2),
-                    he = ge[0],
-                    ve = ge[1],
-                    ye = C || Q;
+                    ve = ge[0],
+                    he = ge[1],
+                    ye = P || Q;
                 s.useEffect(function() {
-                    fe((0, v.e2)(M.instanceId)), ve((0, h.C6)(M.instanceId))
+                    fe((0, h.e2)(M.instanceId)), he((0, v.C6)(M.instanceId))
                 }, [M]), s.useEffect(function() {
                     if (!("Group" !== me && "Group+" !== me && "Group Public" !== me || ae || O)) {
-                        var e = (0, h.oH)(M.instanceId);
+                        var e = (0, v.oH)(M.instanceId);
                         re({
                             groupId: e
                         })
@@ -265,7 +264,7 @@
                 }, [Z, ee]);
                 var we = !(!ae && !O),
                     xe = (null === (t = M.users) || void 0 === t ? void 0 : t.length) > 0,
-                    Ee = (0, h.fB)(R, M.instanceId);
+                    Ee = (0, v.fB)(R, M.instanceId);
                 return s.createElement(w.fv, {
                     className: k,
                     ref: se
@@ -283,7 +282,7 @@
                     width: "100%",
                     height: "100%"
                 }) : s.createElement(T, {
-                    src: (0, v.C_)(V)
+                    src: (0, h.C_)(V)
                 })), s.createElement(w.fv, {
                     className: "align-items-start flex-grow-1"
                 }, ye ? s.createElement(w.fy, {
@@ -298,36 +297,36 @@
                     height: "200px"
                 }) : V ? V.description : s.createElement("em", null, "Failed to load world information")), s.createElement(w.fI, {
                     className: "algin-self-end w-100 d-flex flex-wrap"
-                }, !!M.ageGate && s.createElement($, {
+                }, !!M.ageGate && s.createElement(U, {
                     className: "align-self-end me-2 align-items-center mt-1",
                     title: "Age Verification Required"
                 }, s.createElement(y.A, {
                     imageSize: "24px"
-                })), s.createElement($, {
+                })), s.createElement(U, {
                     className: "align-self-end me-2 align-items-center mt-1"
-                }, s.createElement(U, {
+                }, s.createElement($, {
                     className: "me-2",
-                    region: he,
+                    region: ve,
                     imageSize: "20px"
-                }), s.createElement("div", null, me)), we && s.createElement($, {
+                }), s.createElement("div", null, me)), we && s.createElement(U, {
                     className: "align-self-end me-2 align-items-center text-nowrap mt-1"
                 }, s.createElement(u.N_, {
                     to: "/home/group/".concat(null !== (i = null == ae ? void 0 : ae.id) && void 0 !== i ? i : null == O ? void 0 : O.id)
-                }, null !== (b = null == ae ? void 0 : ae.name) && void 0 !== b ? b : null == O ? void 0 : O.name)), !!M.memberCount && s.createElement($, {
+                }, null !== (b = null == ae ? void 0 : ae.name) && void 0 !== b ? b : null == O ? void 0 : O.name)), !!M.memberCount && s.createElement(U, {
                     className: "align-self-end me-2 align-items-center mt-1",
                     title: "Number of group members in the Instance"
                 }, M.memberCount, s.createElement(w.M2, {
                     icon: c.default,
                     color: "#8f8f8d",
                     className: "ms-2"
-                })), !!M.userCount && s.createElement($, {
+                })), !!M.userCount && s.createElement(U, {
                     className: "align-self-end me-2 align-items-center mt-1",
                     title: "Number of users in the Instance"
                 }, M.userCount, s.createElement(w.M2, {
                     icon: l.gd,
                     color: "#8f8f8d",
                     className: "ms-2"
-                })), !(null === (x = M.users) || void 0 === x || !x.length) && s.createElement($, {
+                })), !(null === (x = M.users) || void 0 === x || !x.length) && s.createElement(U, {
                     className: "align-self-end me-2 align-items-center mt-1",
                     title: "Number of friends in the Instance"
                 }, null === (I = M.users) || void 0 === I ? void 0 : I.length, s.createElement(w.M2, {
@@ -402,13 +401,13 @@
                     name: "1k72zkj",
                     styles: "flex:1;min-width:85px"
                 },
-                $ = (0, i.A)(w.fI, {
+                U = (0, i.A)(w.fI, {
                     target: "e1p8e5dk2"
                 })({
                     name: "ghp7vg",
                     styles: "border-radius:4px;background-color:#181b1f;padding:7px 1rem"
                 }),
-                U = (0, i.A)(b.A, {
+                $ = (0, i.A)(b.A, {
                     target: "e1p8e5dk1"
                 })({
                     name: "zner0g",
@@ -464,4 +463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8fdaa132634f91fc61bcdce06fe7d9f157658b090caff1fbb82effd76328bccb.js.map
+//# sourceMappingURL=ef28845c21efa576ce740284d726877fb3173d3c4f5f55097786982b1269325e.js.map
