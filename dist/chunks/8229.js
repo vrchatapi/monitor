@@ -933,7 +933,7 @@
                     n = e.onClose,
                     a = void 0 === n ? function() {} : n,
                     c = (0, y.wA)(),
-                    v = (0, w.DF)().showContentViolationModal,
+                    v = (0, w.DF)(),
                     E = ((0, x.Zp)(), (0, f.P2)().data),
                     S = (0, h.useState)(0),
                     k = (0, l.A)(S, 2),
@@ -2327,7 +2327,7 @@
                     l = e.onClose,
                     c = void 0 === l ? function() {} : l,
                     C = (e.groupData, (0, y.wA)()),
-                    S = (0, d.DF)().showContentViolationModal,
+                    S = (0, d.DF)(),
                     k = (0, x.Zp)(),
                     A = (0, y.d4)(function(e) {
                         return e.myStoreCreateSubscription
@@ -4747,4 +4747,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25fa79577080204529c7ebadbcedd29c1b9135c136edab3f3fd0a43275083785.js.map
+//# sourceMappingURL=e7549560ab2f90737b4f64124e7e147a6360f874730b28230c51638f7c66fb8e.js.map

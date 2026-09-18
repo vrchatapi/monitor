@@ -14,7 +14,7 @@
         },
         11768(e, t, r) {
             r.r(t), r.d(t, {
-                default: () => V
+                default: () => R
             });
             var n = r(10467),
                 a = r(64467),
@@ -194,7 +194,7 @@
                     instant: [W, Y, _, B, H],
                     permanent: [W, Y, _, B, H]
                 };
-            const V = function(e) {
+            const R = function(e) {
                 var t = e.store,
                     r = void 0 === t ? null : t,
                     a = e.onClose,
@@ -202,16 +202,16 @@
                     I = (0, x.wA)(),
                     O = (0, T.Zp)(),
                     A = (0, w.P2)().data,
-                    j = (0, p.DF)().showContentViolationModal,
+                    j = (0, p.DF)(),
                     D = (0, x.d4)(function(e) {
                         return e.listingFlow
                     }),
                     M = D.currentStep,
                     $ = D.selectedListingType,
                     F = D.selectedProducts,
-                    V = D.isPreviewOpen,
-                    R = C.useState(null),
-                    X = (0, i.A)(R, 2),
+                    R = D.isPreviewOpen,
+                    V = C.useState(null),
+                    X = (0, i.A)(V, 2),
                     J = X[0],
                     Z = X[1],
                     K = C.useState(z),
@@ -386,7 +386,7 @@
                         }
                         return !Se
                     }, [M, te, F, $]);
-                return C.createElement(C.Fragment, null, !V && C.createElement(m.fv, {
+                return C.createElement(C.Fragment, null, !R && C.createElement(m.fv, {
                     className: "tw-w-full"
                 }, function() {
                     switch (M) {
@@ -506,7 +506,7 @@
                                 disabled: !Ie
                             }, "Next")
                     }
-                }()))), V && C.createElement(S.A, {
+                }()))), R && C.createElement(S.A, {
                     className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
                 }, C.createElement(m.fI, {
                     className: "tw-justify-center tw-items-center tw-mb-3"
@@ -682,4 +682,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a45f065ee894a9becfd0b8735647819937ebd9d2892db9848567474ecdc03b27.js.map
+//# sourceMappingURL=72164cfa6615eb12e477e939e5a1b55cd43673f94f7b9ccada87a08aeca82f85.js.map

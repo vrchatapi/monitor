@@ -4330,14 +4330,7 @@
                         className: "tw-mb-5"
                     }, "Profile Decoration"), o.createElement("div", {
                         className: "tw-relative"
-                    }, o.createElement("small", {
-                        className: "tw-text-sm tw-text-gray-400 tw-mb-3"
-                    }, "Download the", " ", o.createElement("a", {
-                        href: "https://help.vrchat.com/hc/en-us/articles/360062658933-How-do-I-use-the-VRChat-Open-Beta",
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        className: "tw-text-highlight hover:tw-underline"
-                    }, "Open Beta VRChat client"), " ", "to get them in-game!"), o.createElement(s.$n, {
+                    }, o.createElement(s.$n, {
                         variant: "primary",
                         onClick: function() {
                             de("iconFrame"), ie(!0)
@@ -5676,4 +5669,4 @@
         }
     }
 ]);
-//# sourceMappingURL=379b5ef796d0e3249ec6d3d3d3424bceb5bd346cc99c9a0e2aed0e6465013a24.js.map
+//# sourceMappingURL=556bab9398d9b0ef60657e30f8f1c9608bd232a459af9e982318caa80fb942df.js.map

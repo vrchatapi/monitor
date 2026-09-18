@@ -70,17 +70,17 @@
                         D = e.onDelete,
                         M = void 0 === D ? function() {} : D,
                         F = (0, T.wA)(),
-                        R = (0, p.DF)().showContentViolationModal,
+                        R = (0, p.DF)(),
                         G = (0, b.P2)().data,
                         H = (0, T.d4)(function(e) {
                             return e.listingFlow
                         }),
-                        V = H.isPreviewOpen,
-                        X = H.selectedProducts,
-                        Y = (0, I.useState)("listingInformation"),
-                        _ = (0, a.A)(Y, 2),
-                        z = _[0],
-                        B = _[1],
+                        X = H.isPreviewOpen,
+                        Y = H.selectedProducts,
+                        _ = (0, I.useState)("listingInformation"),
+                        z = (0, a.A)(_, 2),
+                        B = z[0],
+                        V = z[1],
                         q = (0, I.useState)(null),
                         J = (0, a.A)(q, 2),
                         Q = J[0],
@@ -94,12 +94,12 @@
                         re = ne[0],
                         ie = ne[1],
                         ae = (0, I.useMemo)(function() {
-                            return X.filter(function(e) {
+                            return Y.filter(function(e) {
                                 return e.avatarId
                             }).map(function(e) {
                                 return e.avatarId
                             })
-                        }, [X]),
+                        }, [Y]),
                         le = (0, h.Qt)({
                             listingId: u,
                             hydrateProducts: !0,
@@ -234,16 +234,16 @@
                             return i && l && o && Te
                         }, [Q]),
                         Le = oe || we || pe;
-                    return I.createElement(I.Fragment, null, Le && I.createElement("div", null, "Loading..."), !Le && Q && !re && !V && I.createElement(m.fv, {
+                    return I.createElement(I.Fragment, null, Le && I.createElement("div", null, "Loading..."), !Le && Q && !re && !X && I.createElement(m.fv, {
                         className: "tw-w-full tw-relative"
                     }, (Ae || Ie) && I.createElement(m.$T, {
                         title: Ae ? "Listing is not purchasable" : "Listing contains some unavailable products",
                         type: "warn",
                         message: Ae ? "This listing cannot be purchased because it contains only products that are not eligible for sale. Resolve the issues to re-enable the listing and make it available to buyers." : "This listing is still available for purchase, but buyers will not receive the unavailable products included in the listing."
                     }), I.createElement(f.A, {
-                        onChange: B,
+                        onChange: V,
                         justify: "left",
-                        selected: z,
+                        selected: B,
                         tabs: [{
                             name: "Listing Information",
                             id: "listingInformation",
@@ -255,7 +255,7 @@
                         }]
                     }), I.createElement("div", {
                         className: "tw-w-full tw-relative"
-                    }, "listingInformation" === z && I.createElement(O.A, {
+                    }, "listingInformation" === B && I.createElement(O.A, {
                         originalListing: se,
                         editedListing: Q,
                         onDataChange: Ce,
@@ -263,7 +263,7 @@
                         products: de,
                         listingType: Q.listingType,
                         productsLoading: we
-                    }), "storeAvailability" === z && I.createElement(L.A, {
+                    }), "storeAvailability" === B && I.createElement(L.A, {
                         activeListing: Q,
                         onDataChange: Ce,
                         stores: fe,
@@ -317,7 +317,7 @@
                         onClick: Ne,
                         containerClasses: "sm:tw-max-w-[240px] tw-flex-1",
                         disabled: !je
-                    }, "Publish Listing"))), V && ce && I.createElement(N.A, {
+                    }, "Publish Listing"))), X && ce && I.createElement(N.A, {
                         className: "tw-min-h-screen tw-bg-[#0A0A0D] tw-rounded-lg tw-p-0 tw-min-w-[340px]"
                     }, I.createElement(m.fI, {
                         className: "tw-justify-center tw-items-center tw-mb-3"
@@ -335,7 +335,7 @@
                         className: "tw-border tw-border-solid  tw-border-hr-line-color tw-rounded-lg tw-p-5"
                     }, I.createElement($, {
                         isPreview: !0,
-                        products: X,
+                        products: Y,
                         galleryImages: be,
                         listing: Q,
                         onClose: function() {
@@ -353,4 +353,4 @@
         }
     }
 ]);
-//# sourceMappingURL=932e85d8f753b85fbf4cd2a474b99211bce35bb6a4ed2b93d0c470df5e5f3b37.js.map
+//# sourceMappingURL=b381d1f1de1a0b5d1c602752da1b01bf238820ab354dac3700c1778c4bdc7196.js.map

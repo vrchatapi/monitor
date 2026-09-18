@@ -4992,11 +4992,10 @@
                     g = e.navigate,
                     f = t.user,
                     v = void 0 === f ? {} : f,
-                    E = v.thumbnailUrl,
-                    h = v.currentAvatarThumbnailImageUrl,
-                    b = v.displayName;
+                    E = v.iconUrl,
+                    h = v.displayName;
                 return C.createElement(yr, null, C.createElement(er.A, {
-                    image: E || h,
+                    image: E,
                     onEdit: r ? function() {
                         l ? l(t.id) : console.warn("Edit button in member card clicked, but no onEdit callback has been specified.")
                     } : null,
@@ -5015,7 +5014,7 @@
                 }), C.createElement(xr, null, n && C.createElement("span", null, C.createElement(le.A, {
                     icon: Se.zq,
                     width: 25
-                }), " "), C.createElement("h4", null, b)))
+                }), " "), C.createElement("h4", null, h)))
             };
             var yr = (0, a.A)("div", {
                     target: "e1ml2klq1"
@@ -5029,9 +5028,11 @@
                     name: "7foox8",
                     styles: "display:flex;flex-direction:row;align-items:center;justify-content:center;border:4px solid #252a30;background-color:#252a30;text-align:center;width:100%;border-bottom-right-radius:8px;border-bottom-left-radius:8px"
                 }),
-                Ar = n(15002),
-                kr = n(26973);
-            const Nr = function(e) {
+                Ar = n(89483),
+                kr = n(7563),
+                Nr = n(15002),
+                Or = n(26973);
+            const Cr = function(e) {
                 var t = e.group,
                     n = e.user,
                     r = e.errorCallback,
@@ -5061,7 +5062,7 @@
                     O && a(I)
                 }, [O, I]), C.createElement("div", {
                     className: "mt-2 mb-2 d-flex flex-column justify-content-center"
-                }, C.createElement(kr.A, {
+                }, C.createElement(Or.A, {
                     className: "mb-0",
                     userId: n.id,
                     openLinksInNewTab: !0
@@ -5093,9 +5094,9 @@
                     className: "mx-2"
                 }), "ban", x && "ned", " ", n.displayName))
             };
-            var Or = n(11378),
-                Cr = n(74303);
-            const Ir = function(e) {
+            var Ir = n(11378),
+                Sr = n(74303);
+            const Mr = function(e) {
                 var t = e.group,
                     n = e.mode,
                     r = void 0 === n ? "invite" : n,
@@ -5115,16 +5116,16 @@
                     v = g[1],
                     E = o && !1;
                 C.useEffect(function() {
-                    v(""), "" !== m && a((0, Or.x5)({
+                    v(""), "" !== m && a((0, Ir.x5)({
                         searchTerm: m,
-                        n: Cr.dQ,
+                        n: Sr.dQ,
                         isInternalVariant: E
                     }))
                 }, [m]);
                 var h = function(e) {
                     e && v(e.data.error.message)
                 };
-                return C.createElement(C.Fragment, null, C.createElement(Ar.A, {
+                return C.createElement(C.Fragment, null, C.createElement(Nr.A, {
                     searchString: u,
                     placeholder: "Search users..."
                 }), f && C.createElement(re.$T, {
@@ -5133,7 +5134,7 @@
                     className: "px-4",
                     message: f
                 }), d.map(function(e) {
-                    return C.createElement(Nr, {
+                    return C.createElement(Cr, {
                         mode: r,
                         key: e.id,
                         group: t,
@@ -5142,8 +5143,6 @@
                     })
                 }))
             };
-            var Sr = n(7563),
-                Mr = n(89483);
             const Tr = function(e) {
                 var t, n, r, a, o, c, s, u, m = e.group,
                     d = (0, I.wA)(),
@@ -5214,7 +5213,7 @@
                     Ce = Ne.error;
                 (0, S.Zp)(), (0, de.Om)();
                 C.useEffect(function() {
-                    me && d(Mr.m.util.updateQueryData("getGroupById", {
+                    me && d(Ar.m.util.updateQueryData("getGroupById", {
                         groupId: m.id
                     }, function(e) {
                         e.memberCount += 1
@@ -5258,7 +5257,7 @@
                     })
                 }, C.createElement("h4", {
                     className: "m-0"
-                }, "Invite Somebody")), C.createElement(V.A, null, C.createElement(Ir, {
+                }, "Invite Somebody")), C.createElement(V.A, null, C.createElement(Mr, {
                     group: m,
                     mode: "invite"
                 }))), C.createElement(re.$n, {
@@ -5267,7 +5266,7 @@
                     onClick: function() {
                         v(!0)
                     }
-                }, "Invite Somebody"), C.createElement(Sr.A, {
+                }, "Invite Somebody"), C.createElement(kr.A, {
                     title: "Join Requests",
                     collapseOpen: !0
                 }, we && C.createElement(re.$T, {
@@ -5297,6 +5296,7 @@
                     className: "m-0"
                 }, "Nobody is waiting to join!") : null, null == G ? void 0 : G.map(function(e) {
                     return C.createElement("div", {
+                        key: e.userId,
                         className: "mb-2"
                     }, C.createElement(wr, {
                         member: e,
@@ -5323,7 +5323,7 @@
                         },
                         showView: !1
                     }))
-                })))), C.createElement(Sr.A, {
+                })))), C.createElement(kr.A, {
                     title: "Sent Invites"
                 }, M && C.createElement(re.$T, {
                     type: "error",
@@ -5344,6 +5344,7 @@
                     className: "m-0"
                 }, "Nobody has been invited to this group!") : null, null == O ? void 0 : O.map(function(e) {
                     return C.createElement("div", {
+                        key: e.userId,
                         className: "mb-2"
                     }, C.createElement(wr, {
                         member: e,
@@ -5357,7 +5358,7 @@
                         navigate: "/home/user/".concat(e.userId),
                         showView: !1
                     }))
-                })))), C.createElement(Sr.A, {
+                })))), C.createElement(kr.A, {
                     title: "Blocked Requests"
                 }, U && C.createElement(re.$T, {
                     type: "error",
@@ -5378,6 +5379,7 @@
                     className: "m-0"
                 }, "Nobody has been blocked from joining the group!") : null, null == q ? void 0 : q.map(function(e) {
                     return C.createElement("div", {
+                        key: e.userId,
                         className: "mb-2"
                     }, C.createElement(wr, {
                         member: e,
@@ -7576,4 +7578,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b38c9197c2d802399185b3d4e3092dd58042a6c0ba93e9e8cf3a768aaba1836.js.map
+//# sourceMappingURL=f04eb4eab9924b308ed34cf9dcf12e358118385db2d0d116ae712b913f0e770d.js.map

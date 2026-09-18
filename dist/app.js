@@ -1,4 +1,4 @@
-/*! For license information please see 2026-09-16t17-08-03-the-katamari-of-jim--main-prod-public-5d48a66a-ed36-401c-9cd2-03de72ae855d--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-17t18-18-36-the-rain-of-grandpa--main-prod-public-b5e27de4-7afc-4981-a2e6-f81f2f6dc2fb--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-16t17-08-03-the-katamari-of-jim", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-17t18-18-36-the-rain-of-grandpa", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115050,7 +115050,7 @@
         1647: "45b6c86c6f72d6c8d7a2a43432064a34e233c2cbd58417eeae17e2fcc042e8ab",
         1730: "051b7512d2920dcb7f9845b7348e60d338c564f76b5f26b564a907c5c9de69c7",
         1756: "7ccebc2edb1c2a9da0930c2470472a4881b327c27f9a055482b5ea8888278161",
-        1768: "22b772e5cf71346e2cb18ccf3b2261c5e2471379daaaf3d4a9d007ee79c5892c",
+        1768: "eaa1a95c49609b4465cf4c1a9807c126951264e056137d976109dca88c0bb9e4",
         1840: "9ec5f597f105c6bd0924afb6603b1cfd0052b02f34135f812fcee0c132de0a7f",
         1938: "42e70bc4f6c6b52622bc01ca5ae4defe9c7994d273a04f410ca559fe3c0df396",
         1952: "ea41bb2db191ca0fbecb6897b2b58b9e90491b52c2c8afd4be0c49ea385a7b75",
@@ -115074,7 +115074,7 @@
         3015: "37b3616bb9111b4fd63df46093611221db12d230e2294068329e8900821d866c",
         3052: "a58124e70dc186b4b23edaa9d9683985fa2280d2c9baea77c076d0d8b93513d0",
         3189: "0b8e8ee222759cf34030bf06d4e97e812e3ba65a49f0460190990cda30177a67",
-        3248: "379b5ef796d0e3249ec6d3d3d3424bceb5bd346cc99c9a0e2aed0e6465013a24",
+        3248: "556bab9398d9b0ef60657e30f8f1c9608bd232a459af9e982318caa80fb942df",
         3315: "4702490659e18ef2106d00160f236c140e37a867aab6702937ba9fe554400ddb",
         3325: "998434d01e34680c59bec993b4f432e15c76c6563893f33c9053f426e75f6fba",
         3441: "d917e308a7a0f8d7cb9cbd3aadc5d5d81fa6d1b4e9c9497d12e4211fac00c478",
@@ -115125,17 +115125,17 @@
         7464: "d1c5ac7fe694dadbee9697349184a4da297f07257b7e93b73dd9882f45668ea7",
         7484: "b95f6f9bf9a0df6f4ce735871af669d08657d1f98bed49052e2e2e37ab7f5406",
         7485: "3c3787c26fa89efe9b7deb285f48b7fc10bb7974fdc729a8da4579cdeb96a3d1",
-        7495: "3616e365e118379ac17df8ca82854cb1d1a9fbb43967a71420c4ae6789e93b4a",
+        7495: "332a5ffe131d050134332bf2c1f909ad7274204a45589fce1b56176bc2f7ec8a",
         7596: "6224813985179089ada276c81beb1ebf8d1d322fe5d9a9541a764668f10d12c9",
         7697: "1b135805535dc87cb5dda31e2af52cb61ffa617d2b7e5ad0df2c0eb35409a1ae",
         7783: "2fc84c5a8e78cb2c1dd20160d18f460d7493016da534ed686380e8c8a3e44362",
         7837: "3b68c98040e4721d7e0a0d237df8510a72b28b15b45c9df43f11fd07076efe72",
         7900: "e3d7298c139ac51c547b90e25798a55f93206430767732ed2faf84955d699bd9",
         7927: "58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928",
-        8104: "7b38c9197c2d802399185b3d4e3092dd58042a6c0ba93e9e8cf3a768aaba1836",
+        8104: "f04eb4eab9924b308ed34cf9dcf12e358118385db2d0d116ae712b913f0e770d",
         8197: "3fc600fb06b863ba003f7ef567928d47b968267844b4c7e0bec6f993bbb59f90",
         8202: "b1bc7d75af19393e0b1fb45b6dbd59496f90c79b034f7c7b4b65e933887250fa",
-        8229: "25fa79577080204529c7ebadbcedd29c1b9135c136edab3f3fd0a43275083785",
+        8229: "e7549560ab2f90737b4f64124e7e147a6360f874730b28230c51638f7c66fb8e",
         8242: "b3469ae55d9762acc34432980ea9628e3161402e31a7ff4bd1d80df83307157b",
         8426: "525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2",
         8621: "6deb7f0641303a0cd03fce6f1c38de8ec8bbc571b28efd61f1a31c7bfe28018f",
@@ -115145,13 +115145,13 @@
         9355: "63f6ec2e559e38ed86e966cb871067565486dec9aed20994ec98bdd29baa7dd2",
         9370: "1fa1923e8a9c4d7b19ebb70d418fb7417641c3ed25abb692359cd47f3b29bdf9",
         9381: "43262c9f4a7695ba59089fe91c76faa2ba828551376c668c6d9c6b035deafb3c",
-        9387: "a45f065ee894a9becfd0b8735647819937ebd9d2892db9848567474ecdc03b27",
+        9387: "72164cfa6615eb12e477e939e5a1b55cd43673f94f7b9ccada87a08aeca82f85",
         9439: "7b7ee8e28669baaf3cb5f43aa6727ff2ea7b2e90fd6933490e806f9b460b33d0",
-        9450: "b99df619b5343263d84078561739bace06d5edcebc44721ee3df3cf125d91a02",
+        9450: "bde613bfb8df20d642f1e02bdbd91e2b21400bff37c84e7223ee46541737bf5c",
         9488: "67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec",
         9697: "4e81170b36dfcd3f66f6ef3c215bcec41013abd823a6212649b3e8a17deeb09b",
         9772: "73b2d2aea9ceb96a4fbee13256c34bf3766e634175dbcb70b9cebfe64e637fed",
-        9876: "932e85d8f753b85fbf4cd2a474b99211bce35bb6a4ed2b93d0c470df5e5f3b37",
+        9876: "b381d1f1de1a0b5d1c602752da1b01bf238820ab354dac3700c1778c4bdc7196",
         9915: "2c087442cc796ca8bc6aebce8222f0e88fde105d831e6176109d3bfd7912c302",
         9932: "47747df3503605d2a64961a7ce740a5d21f84e56aa24f6df2b9f1c9ec6ae49c1"
     } [e] + ".js"), s.miniCssF = e => {}, s.g = function() {
@@ -115235,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-09-16t17-08-03-the-katamari-of-jim"
+        id: "2026-09-17t18-18-36-the-rain-of-grandpa"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-09-16t17-08-03-the-katamari-of-jim"
+        id: "2026-09-17t18-18-36-the-rain-of-grandpa"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116990,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-09-16t17-08-03-the-katamari-of-jim",
+                release: "2026-09-17t18-18-36-the-rain-of-grandpa",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],

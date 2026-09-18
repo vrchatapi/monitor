@@ -64,9 +64,9 @@
                         L = M.isLoading,
                         $ = M.isError,
                         U = M.error,
-                        V = M.reset,
-                        z = function() {
-                            b(1), C(!1), c(), V()
+                        z = M.reset,
+                        V = function() {
+                            b(1), C(!1), c(), z()
                         },
                         B = (null == D ? void 0 : D.parentListings.length) > 0,
                         R = function() {
@@ -86,7 +86,7 @@
                                                 message: "".concat(D.displayName, " has been deleted."),
                                                 color: "success",
                                                 timeout: 3e3
-                                            })), z(), e.next = 12;
+                                            })), V(), e.next = 12;
                                             break;
                                         case 7:
                                             return e.prev = 7, e.t0 = e.catch(0), console.error(e.t0), o((0, u.X)({
@@ -123,7 +123,7 @@
                                 className: "tw-w-1/2"
                             }, x.createElement(m.$n, {
                                 className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                                onClick: z
+                                onClick: V
                             }, "Cancel")), x.createElement("div", {
                                 className: "tw-w-1/2"
                             }, x.createElement(m.$n, {
@@ -176,7 +176,7 @@
                                 className: "sm:tw-w-1/2"
                             }, x.createElement(m.$n, {
                                 className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
-                                onClick: z
+                                onClick: V
                             }, "Cancel")), x.createElement("div", {
                                 className: "sm:tw-w-1/2"
                             }, x.createElement(m.$n, {
@@ -213,7 +213,7 @@
                                 className: "tw-w-1/2"
                             }, x.createElement(m.$n, {
                                 className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight",
-                                onClick: z,
+                                onClick: V,
                                 loading: L
                             }, "Understood"))))
                         };
@@ -306,7 +306,7 @@
             };
             var $ = a(75171),
                 U = a.n($),
-                V = function(e) {
+                z = function(e) {
                     e.isOpen;
                     var t = e.createdProduct,
                         a = void 0 === t ? null : t,
@@ -344,12 +344,12 @@
                         onClick: n
                     }, "Done"))))))
                 };
-            V.propTypes = {
+            z.propTypes = {
                 isOpen: S().bool,
                 createdProduct: S().object.isRequired,
                 closeModalCallback: S().func
             };
-            const z = V;
+            const V = z;
 
             function B(e, t) {
                 var a = Object.keys(e);
@@ -382,7 +382,7 @@
             const X = function() {
                 var e, t = (0, v.p$)().data,
                     a = (0, y.wA)(),
-                    l = (0, w.DF)().showContentViolationModal,
+                    l = (0, w.DF)(),
                     o = (0, y.d4)(function(e) {
                         return e.productFlow
                     }).currentTitle,
@@ -396,8 +396,8 @@
                     M = F.paginationPage,
                     $ = F.productTab,
                     U = M ? Number(M) : 1,
-                    V = (0, x.useState)(D.get("sortBy") || null),
-                    B = (0, r.A)(V, 2),
+                    z = (0, x.useState)(D.get("sortBy") || null),
+                    B = (0, r.A)(z, 2),
                     X = B[0],
                     H = B[1],
                     W = (0, x.useState)(D.get("orderBy") || "descending"),
@@ -666,7 +666,7 @@
                     isEditing: !0,
                     onSubmit: Me,
                     user: t
-                }), le && ie && x.createElement(z, {
+                }), le && ie && x.createElement(V, {
                     isOpen: ie,
                     createdProduct: fe,
                     updated: ue,
@@ -863,4 +863,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b99df619b5343263d84078561739bace06d5edcebc44721ee3df3cf125d91a02.js.map
+//# sourceMappingURL=bde613bfb8df20d642f1e02bdbd91e2b21400bff37c84e7223ee46541737bf5c.js.map
