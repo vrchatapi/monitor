@@ -1,4 +1,4 @@
-/*! For license information please see 2026-09-17t18-18-36-the-rain-of-grandpa--main-prod-public-b5e27de4-7afc-4981-a2e6-f81f2f6dc2fb--app.js.LICENSE.txt */
+/*! For license information please see 2026-09-18t19-25-34-the-wrath-of-grimes--main-prod-public-4f4b01e2-538b-49f9-b668-d9e895c9da93--app.js.LICENSE.txt */
 (() => {
     var e, t, n, r, o, a = {
             26480(e, t, n) {
@@ -25748,7 +25748,7 @@
                     yl = "idfk",
                     Cl = "idfk";
                 try {
-                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-17t18-18-36-the-rain-of-grandpa", Cl = "production"
+                    vl = "a750df50d11f21f712262cbd4c0bab37", bl = "client-l42yiE1c77TsHfBmFNvjCgKnuW5tM62p", yl = "2026-09-18t19-25-34-the-wrath-of-grimes", Cl = "production"
                 } catch (e) {
                     console.warn(e)
                 }
@@ -115235,9 +115235,9 @@
             n = self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || [];
         n.forEach(t.bind(null, 0)), n.push = t.bind(null, n.push.bind(n))
     })(), s.nc = void 0, (o = "undefined" != typeof window ? window : void 0 !== s.g ? s.g : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-        id: "2026-09-17t18-18-36-the-rain-of-grandpa"
+        id: "2026-09-18t19-25-34-the-wrath-of-grimes"
     }, o.SENTRY_RELEASES = o.SENTRY_RELEASES || {}, o.SENTRY_RELEASES["web-appedashi@vrchat-inc"] = {
-        id: "2026-09-17t18-18-36-the-rain-of-grandpa"
+        id: "2026-09-18t19-25-34-the-wrath-of-grimes"
     }, (() => {
         "use strict";
         var e = s(10467),
@@ -116990,7 +116990,7 @@
                 integrations: [new Ke.BrowserTracing],
                 sampleRate: .75,
                 tracesSampleRate: .05,
-                release: "2026-09-17t18-18-36-the-rain-of-grandpa",
+                release: "2026-09-18t19-25-34-the-wrath-of-grimes",
                 environment: "production",
                 maxBreadcrumbs: 50,
                 ignoreErrors: ["Request failed with status code 401", "Request failed with status code 404", "Network Error", "Request aborted", "top.GLOBALS", "originalCreateNotification", "canvas.contentDocument", "MyApp_RemoveAllHighlights", "http://tt.epicplay.com", "Can't find variable: ZiteReader", "jigsaw is not defined", "ComboSearch is not defined", "http://loading.retry.widdit.com/", "atomicFindClose", "fb_xd_fragment", "bmi_SafeAddOnload", "EBCallBackMessageReceived", "conduitPage"],
