@@ -190,23 +190,23 @@
                         }
                     }();
                 if (D) return w.createElement(h.A, null, w.createElement(b.Qc, null, "Reset Password"), w.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, w.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, w.createElement(b.M2, {
                     icon: c.SG,
-                    className: "tw-w-[72px] tw-h-[72px] tw-mb-6"
+                    className: "tw:w-[72px] tw:h-[72px] tw:mb-6"
                 }), w.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Successful password reset!"), w.createElement("p", {
-                    className: "tw-text-left tw-mb-9"
+                    className: "tw:text-left tw:mb-9"
                 }, "You can now use your new password to log in to your account!"), w.createElement(f.z9, {
                     role: "link",
                     to: "/home/login",
-                    className: "tw-mb-10"
+                    className: "tw:mb-10"
                 }, "Login"))));
                 return w.createElement(h.A, null, w.createElement(b.Qc, null, "Reset Password"), w.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit sm:tw-mt-[200px] tw-mt-0"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:sm:mt-[200px] tw:mt-0"
                 }, w.createElement("form", {
                     id: "password-recovery-form",
                     name: "password-recovery-form",
@@ -214,30 +214,30 @@
                         e.preventDefault(), H ? V(e) : J(e)
                     }
                 }, w.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, w.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, z && w.createElement(b.M2, {
                     icon: s.Kk,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 }), !z && w.createElement(b.M2, {
                     icon: o.bM,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), w.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, z ? "Check Your Email" : "Reset Password"), !z && !H && w.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col"
+                    className: "tw:w-full tw:flex tw:flex-col"
                 }, w.createElement("div", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, w.createElement("p", {
-                    className: "tw-text-left tw-mb-2"
+                    className: "tw:text-left tw:mb-2"
                 }, "Please enter the email address associated with your account.")), w.createElement(b.pd, {
                     type: "email",
                     inputMode: "email",
                     "aria-label": "Email",
                     value: u.value,
                     placeholder: "Email",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     onChange: function(e) {
                         var t = e.target.value,
                             r = void 0 === t ? "" : t;
@@ -259,13 +259,13 @@
                 }), u.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Email Error",
-                    className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre tw-mt-2"
+                    className: "tw:text-error-message-red tw:text-xs tw:whitespace-pre tw:mt-2"
                 }, "Invalid Email Address")), H && w.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col"
+                    className: "tw:w-full tw:flex tw:flex-col"
                 }, w.createElement("div", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, w.createElement("p", {
-                    className: "tw-text-left tw-mb-2"
+                    className: "tw:text-left tw:mb-2"
                 }, "Almost there! Type your new password and you'll be all set.")), w.createElement(b.pd, {
                     type: "password",
                     id: "password",
@@ -329,42 +329,42 @@
                 }), E.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Password Error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-2"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-2"
                 }, E.error)), w.createElement("div", {
-                    className: z ? "tw-w-full tw-flex tw-flex-col" : "tw-hidden",
+                    className: z ? "tw:w-full tw:flex tw:flex-col" : "tw:hidden",
                     role: "alert",
                     "aria-label": "Check your email"
                 }, w.createElement("p", {
-                    className: "tw-text-center tw-mb-2"
+                    className: "tw:text-center tw:mb-2"
                 }, "If we have an account associated with ", w.createElement("strong", null, u.value), ", we have sent you a password reset link!"), w.createElement("p", {
-                    className: "tw-text-subtext-grey"
+                    className: "tw:text-subtext-grey"
                 }, "You may need to check your spam folder if you don't see it within a few minutes.")), (I || Z) && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Failed to recover",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-2"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-2"
                 }, j || "Oops, that didn't work."), H && w.createElement(b.$n, {
                     disabled: !E.ok || !E.againOk,
-                    className: "tw-mt-5 tw-w-60",
+                    className: "tw:mt-5 tw:w-60",
                     loading: Q,
                     type: "submit"
                 }, "Change Password"), !z && !H && w.createElement(b.$n, {
                     disabled: !u.ok || T || I,
-                    className: "tw-mt-5 tw-w-60",
+                    className: "tw:mt-5 tw:w-60",
                     loading: T,
                     type: "submit"
                 }, "Reset your password"), w.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
+                    className: "tw:flex tw:flex-row tw:w-full tw:justify-center tw:mt-5"
                 }, w.createElement(m.N_, {
                     to: "/home/login",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "Back to login")), H && w.createElement("div", null, w.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mb-0"
+                    className: "tw:border-hr-line-color tw:border-y-2 tw:w-full tw:mb-0"
                 }), w.createElement("h4", {
-                    className: "tw-text-base tw-text-subtext-grey tw-mt-5 tw-mb-3"
+                    className: "tw:text-base tw:text-subtext-grey tw:mt-5 tw:mb-3"
                 }, "Use a strong password"), w.createElement("p", {
-                    className: "tw-text-subtext-grey tw-text-base tw-mb-0"
+                    className: "tw:text-subtext-grey tw:text-base tw:mb-0"
                 }, "We recommend using a password which is:"), w.createElement("ul", {
-                    className: "tw-text-subtext-grey tw-text-base"
+                    className: "tw:text-subtext-grey tw:text-base"
                 }, w.createElement("li", null, "At least 8 characters long"), w.createElement("li", null, "Unique to this account and not in use anywhere else"), w.createElement("li", null, "Uses a combination of letters, numbers and symbols"), w.createElement("li", null, "Stored in a Password Manager")))))))
             }
         },
@@ -592,4 +592,4 @@
         }
     }
 ]);
-//# sourceMappingURL=09e4aa60e67962c806dfc2ccc49c9db6c066e4f41bdd59794af025732fe1f700.js.map
+//# sourceMappingURL=b2e6f4e9f6cc0998ce497dfd4a97a42ae34fcea66602fffb9cd943fb621a16fc.js.map

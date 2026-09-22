@@ -128,21 +128,21 @@
                         }
                     }, [t, n]);
                 return l.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center ".concat(p)
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center ".concat(p)
                 }, l.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, l.createElement(s.A, {
                     icon: O.icon,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), l.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, O.status), l.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
+                    className: "tw:text-center tw:mb-0 tw:whitespace-break-spaces"
                 }, O.message), O.buttonLink && l.createElement(m.z9, {
                     to: O.buttonLink,
-                    className: "tw-mt-9 tw-w-60"
+                    className: "tw:mt-9 tw:w-60"
                 }, O.buttonText), O.showResendButton && l.createElement(l.Fragment, null, l.createElement(c.$n, {
-                    className: "tw-flex-none tw-mt-9 tw-px-4",
+                    className: "tw:flex-none tw:mt-9 tw:px-4",
                     disabled: E || b || P || S,
                     onClick: function() {
                         return d && f ? C({
@@ -153,7 +153,7 @@
                 }, b || S ? "Sent!" : "Resend Age Verification Email"), (v || N) && l.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend age verification email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-1"
                 }, "An error occurred when trying to resend age verification email.")))
             }
         },
@@ -545,35 +545,35 @@
                     Y = J.isSuccess,
                     G = k || V || "completed" === (null == x ? void 0 : x.status) || "needs_review" === (null == x ? void 0 : x.status);
                 return a.createElement(a.Fragment, null, a.createElement(m.Qc, null, "Group Age Verification Beta"), G && a.createElement("div", {
-                    className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:py-20 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(d.A, {
                     size: "5x"
                 })), !G && A && O && a.createElement(a.Fragment, null, a.createElement(p.A, {
                     group: S
                 }), a.createElement("div", {
-                    className: "tw-pb-10"
+                    className: "tw:pb-10"
                 }, a.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full tw-p-5 tw-rounded-lg tw-h-fit tw-flex tw-flex-col tw-items-center"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:p-5 tw:rounded-lg tw:h-fit tw:flex tw:flex-col tw:items-center"
                 }, a.createElement("h2", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, "Age Verification Beta"), "uninitialized" !== x.status ? a.createElement(u.A, {
-                    className: "tw-mt-5",
+                    className: "tw:mt-5",
                     status: x,
                     error: C,
                     groupId: t,
                     code: n
                 }) : "member" !== (null == S ? void 0 : S.membershipStatus) ? a.createElement("p", null, "You must be a member of this group in order to access this page.") : S.tags.includes("admin_age_verification_enabled") ? S.ageVerificationSlotsAvailable ? a.createElement(a.Fragment, null, a.createElement("div", {
-                    class: "tw-py-5 tw-flex tw-w-full"
+                    class: "tw:py-5 tw:flex tw:w-full"
                 }, a.createElement(g.A, {
                     userId: h.id,
                     isFluid: !0,
-                    className: "tw-w-1/3 max-sm:tw-hidden"
+                    className: "tw:w-1/3 tw:max-sm:hidden"
                 }), a.createElement("div", {
-                    className: "md:tw-w-2/3 max-sm:tw-w-full tw-px-5 tw-flex tw-flex-direction tw-flex-col"
+                    className: "tw:md:w-2/3 tw:max-sm:w-full tw:px-5 tw:flex tw:flex-direction tw:flex-col"
                 }, a.createElement("span", null, "Welcome ", a.createElement("strong", null, h.displayName)), a.createElement("span", {
-                    className: "tw-flex tw-items-center"
+                    className: "tw:flex tw:items-center"
                 }, a.createElement("span", {
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }, "Email: ", a.createElement("strong", null, h.obfuscatedEmail)), a.createElement(m.$n, {
                     onClick: function() {
                         return v(!0)
@@ -583,7 +583,7 @@
                     title: "Email Change Pending",
                     slim: !0
                 }, a.createElement("strong", null, "An email change is pending verification: ", null == h ? void 0 : h.obfuscatedPendingEmail), a.createElement("div", null, a.createElement(m.$n, {
-                    className: "tw-flex-none tw-mt-2",
+                    className: "tw:flex-none tw:mt-2",
                     disabled: R || z,
                     onClick: function() {
                         return D()
@@ -591,13 +591,13 @@
                 }, z ? "Sent!" : "Resend Verification")), _ && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend verification error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-1"
                 }, "An error occurred when trying to resend verification email.")), a.createElement("p", {
-                    className: "tw-mt-5"
+                    className: "tw:mt-5"
                 }, "Getting Age Verified will grant you access to Age Verified Group Instances."), a.createElement("p", null, "The age verification process utilizes Persona to verify your government-issued ID and compare it to your likeness. VRChat will receive and process text extracted from your ID, and will not receive any images or face scans. This information is used to generate an irreversible hash, which is saved. All extracted text from your verification process other than your birth date is deleted."), a.createElement("p", null, "VRChat saves the generated hash and your birth date and then tells Persona to delete all of your information."), a.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "To complete this process you will need:"), a.createElement("ul", null, a.createElement("li", null, "A valid email address."), a.createElement("li", null, "You will also need a valid government ID."), a.createElement("li", null, "You will need a computer or a smartphone with a camera to complete the validation process.")), a.createElement("p", null, "Please confirm your email address above to receive your unique link.", a.createElement("br", null), "Once you click the ", a.createElement("strong", null, '"Send Age Verification Email"'), " button, you'll get an email leading to the verification process."), a.createElement("p", null, "Please open this email with a camera-enabled device, such as a smartphone, to complete this process."))), a.createElement(m.$n, {
-                    className: "tw-flex-none tw-px-4",
+                    className: "tw:flex-none tw:px-4",
                     disabled: Q || Y,
                     onClick: function() {
                         return L({
@@ -608,7 +608,7 @@
                 }, Y ? "Sent!" : "Send Age Verification Email"), B && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Send age verification email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-1"
                 }, "An error occurred when trying to send age verification email."), a.createElement(m.aF, {
                     isVisible: E,
                     onClose: function() {
@@ -618,11 +618,11 @@
                     slim: !0,
                     width: "600px"
                 }, a.createElement("div", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, a.createElement(f.A, null)))) : a.createElement("p", null, "This group does not have age verification beta slots remaining.") : a.createElement("p", null, "This group is not part of the age verification beta.")))), j && a.createElement("p", {
                     role: "alert",
                     "aria-label": "Page load error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1 tw-text-center"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-1 tw:text-center"
                 }, "An error occurred when trying to load the page's data."))
             }
         },
@@ -914,4 +914,4 @@
         }
     }
 ]);
-//# sourceMappingURL=525392f5b8000d374b66d024efd8446774d69eea9bb24e53147b8968f87b46b2.js.map
+//# sourceMappingURL=1dc6c69e9220c6a5fefb361ff73d7903e5699c2cb44b0d0ebfbc554dec63f5a1.js.map

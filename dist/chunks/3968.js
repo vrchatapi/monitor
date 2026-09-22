@@ -153,7 +153,7 @@
                     onClick: C
                 }), h.createElement(g.A, {
                     icon: _,
-                    className: L && "tw-mr-1"
+                    className: L && "tw:mr-1"
                 }), L && M)
             }
         },
@@ -705,4 +705,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cbac4c5f6444991db6a25d976a82dd7758b95226147270f3099d8dd4039702fb.js.map
+//# sourceMappingURL=e187b0e8d978c95b265450e5ee6163fa75e78271bc56e6c192f14315e30ebbb4.js.map

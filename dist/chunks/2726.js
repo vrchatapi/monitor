@@ -84,9 +84,9 @@
                         toggle: r,
                         centered: !0
                     }, s.createElement(R.A, {
-                        className: "tw-bg-[#171B1F] tw-text-white tw-p-5"
+                        className: "tw:bg-[#171B1F] tw:text-white tw:p-5"
                     }, s.createElement("h2", {
-                        className: "text-center ty-my-5 tw-p-5"
+                        className: "text-center ty-my-5 tw:p-5"
                     }, "Link ", o, " Account"), s.createElement("div", {
                         className: "p-3 text-center"
                     }, "A VRChat account already exists with the same email as your ", o, " account:"), s.createElement("div", {
@@ -96,12 +96,12 @@
                     }, "Do you want to link your ", o, " account to this VRChat account? You can unlink it anytime."), s.createElement("div", {
                         className: "px-3 pt-3"
                     }, s.createElement(E.$n, {
-                        className: "tw-my-2",
+                        className: "tw:my-2",
                         expand: !0,
                         onClick: n
                     }, "Link Account"), s.createElement(E.$n, {
                         onClick: r,
-                        className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                        className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                     }, "Cancel"), " ")))
                 };
             q.propTypes = {
@@ -640,14 +640,14 @@
                 return s.createElement(T.A, {
                     showCredits: !0
                 }, s.createElement(E.Qc, null, "Login"), s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[500px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[500px] tw:p-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, s.createElement(U.lV, {
                     id: "login-form",
                     name: "login-form",
                     className: "nobottommargin",
                     onSubmit: ht
                 }, s.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Welcome to VRChat"), s.createElement(U.fI, {
                     className: "align-items-flex-end justify-content-between"
                 }), kt && s.createElement(E.$T, {
@@ -678,45 +678,45 @@
                     onChange: ft,
                     onKeyUp: ft
                 }), s.createElement("div", {
-                    className: "tw-w-full tw-mt-3"
+                    className: "tw:w-full tw:mt-3"
                 }, "Forgot your", " ", s.createElement(m.N_, {
                     to: "/home/password",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "password"), " ", "or", " ", s.createElement(m.N_, {
                     to: "/home/forgot-email",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "email address"), "?"), s.createElement(E.$n, {
                     "aria-label": "Login",
-                    className: "tw-mt-6",
+                    className: "tw:mt-6",
                     type: "submit",
                     loading: gt,
                     disabled: "" === le || "" === de
                 }, "Log in"), s.createElement(U.fI, {
-                    className: "tw-items-center tw-mt-4 tw-gap-2"
+                    className: "tw:items-center tw:mt-4 tw:gap-2"
                 }, s.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-px-1 tw-border-y-2 tw-w-full tw-m-0"
+                    className: "tw:border-hr-line-color tw:px-1 tw:border-y-2 tw:w-full tw:m-0"
                 }), s.createElement("div", {
-                    className: "tw-shrink-0"
+                    className: "tw:shrink-0"
                 }, "Or"), s.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-px-1 tw-border-y-2 tw-w-full tw-m-0"
+                    className: "tw:border-hr-line-color tw:px-1 tw:border-y-2 tw:w-full tw:m-0"
                 })), s.createElement(E.$n, {
                     onClick: L.O,
                     "aria-label": "Login with Discord",
-                    className: "tw-mt-5 tw-bg-[#5865F2] tw-text-white tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
+                    className: "tw:mt-5 tw:bg-[#5865F2] tw:text-white tw:border-none tw:py-2 tw:flex tw:items-center tw:justify-center",
                     type: "button",
                     loading: gt
                 }, s.createElement(f.A, {
                     color: "#ffffff",
                     icon: l._2,
-                    className: "tw-mr-1 tw-p-0 tw-w-[26px] tw-h-[24px]"
+                    className: "tw:mr-1 tw:p-0 tw:w-[26px] tw:h-[24px]"
                 }), "Log in with Discord"), s.createElement(E.$n, {
                     onClick: C.B,
                     "aria-label": "Sign in with Google",
-                    className: "tw-mt-5 tw-bg-[#FFFFFF] tw-text-[#1f1f1f] tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
+                    className: "tw:mt-5 tw:bg-[#FFFFFF] tw:text-[#1f1f1f] tw:border-none tw:py-2 tw:flex tw:items-center tw:justify-center",
                     type: "button",
                     loading: R
                 }, s.createElement("svg", {
-                    className: "tw-mr-1 tw-p-0 tw-w-[20px] tw-h-[20px]",
+                    className: "tw:mr-1 tw:p-0 tw:w-[20px] tw:h-[20px]",
                     version: "1.1",
                     xmlns: "http://www.w3.org/2000/svg",
                     viewBox: "0 0 48 48"
@@ -738,27 +738,27 @@
                 })), "Sign in with Google"), s.createElement(E.$n, {
                     onClick: pt,
                     "aria-label": "Sign in with Apple",
-                    className: "tw-mt-5 tw-bg-[#000000] tw-text-white tw-border-none tw-py-2 tw-flex tw-items-center tw-justify-center",
+                    className: "tw:mt-5 tw:bg-[#000000] tw:text-white tw:border-none tw:py-2 tw:flex tw:items-center tw:justify-center",
                     type: "button",
                     loading: gt
                 }, s.createElement(f.A, {
                     color: "#ffffff",
                     icon: i.qK,
-                    className: "tw-mr-1 tw-p-0 tw-w-[20px] tw-h-[20px]"
+                    className: "tw:mr-1 tw:p-0 tw:w-[20px] tw:h-[20px]"
                 }), "Sign in with Apple"), s.createElement("h4", {
-                    className: "tw-text-base tw-text-white tw-text-center tw-mt-5 tw-mb-0"
+                    className: "tw:text-base tw:text-white tw:text-center tw:mt-5 tw:mb-0"
                 }, "New to VRChat?"), s.createElement(w.z9, {
                     to: "/home/register",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     "aria-label": "Create an account"
                 }, "Create an account"), s.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mb-0"
+                    className: "tw:border-hr-line-color tw:border-y-2 tw:w-full tw:mb-0"
                 }), s.createElement("a", {
                     href: "https://help.vrchat.com/hc/en-us/articles/360062659053-I-want-to-turn-my-Steam-Oculus-or-Viveport-account-into-a-VRChat-account#:~:text=Please%20log%20into%20VRChat%20with,screen%20to%20link%20your%20accounts.",
                     target: "_blank",
                     rel: "noreferrer",
                     "aria-label": "Learn More about Account Linking",
-                    className: "tw-text-sm tw-text-center tw-mt-3 tw-block"
+                    className: "tw:text-sm tw:text-center tw:mt-3 tw:block"
                 }, "Using an Oculus, Steam, or Viveport account?"))), s.createElement(P, {
                     linkProvider: "Discord",
                     unlinkedUser: null == ve ? void 0 : ve.unlinkedUser,
@@ -871,4 +871,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d5571b27dc9d309240ccc7a605d361b791014405843b4199267edfc5082b5f27.js.map
+//# sourceMappingURL=67bc969c557e12d3e7c332004d260ce6f655630ff4ef35ec25757dfe92a4bd82.js.map

@@ -92,16 +92,16 @@
                     color: "white",
                     className: "ms-3"
                 })), F && m.createElement(R, null, m.createElement(o.pd, {
-                    className: "tw-mb-4 tw-mt-3 tw-px-3 tw-overflow-visible",
+                    className: "tw:mb-4 tw:mt-3 tw:px-3 tw:overflow-visible",
                     placeholder: "Search Avatars",
                     onChange: function(e) {
                         return q(e.target.value)
                     },
                     value: _
                 }), d && m.createElement("p", {
-                    className: "tw-mx-3"
+                    className: "tw:mx-3"
                 }, "Loading..."), 0 === H.length && !d && m.createElement("p", {
-                    className: "tw-mx-3 tw-mb-3"
+                    className: "tw:mx-3 tw:mb-3"
                 }, "No avatars are available!"), !d && H.map(function(e, t) {
                     var a, l = (null == e ? void 0 : e.productId) || (null == e ? void 0 : e.activeAssetReviewId) || (null == e ? void 0 : e.assetDisabled) || (null == e ? void 0 : e.contentRestrictionId);
                     return m.createElement(m.Fragment, {
@@ -117,9 +117,9 @@
                         trimToLength: g,
                         title: "string" == typeof e.selectedLabel ? e.selectedLabel : e.label,
                         allowMultiline: A,
-                        className: (0, h.cx)("tw-group tw-ease-in-out tw-duration-200 tw-transition-all  hover:tw-bg-[#086c84] first:tw-border-0 tw-border-button-bg tw-border-t tw-border-solid tw-border-x-0 tw-border-y-0 tw-py-2 tw-px-3", (0, p.A)({}, "tw-cursor-not-allowed tw-text-placeholder-text hover:tw-text-placeholder-text", l))
+                        className: (0, h.cx)("tw:group tw:ease-in-out tw:duration-200 tw:transition-all  tw:hover:bg-[#086c84] tw:first:border-0 tw:border-button-bg tw:border-t tw:border-solid tw:border-x-0 tw:border-y-0 tw:py-2 tw:px-3", (0, p.A)({}, "tw:cursor-not-allowed tw:text-placeholder-text tw:hover:text-placeholder-text", l))
                     }, m.createElement(o.fI, {
-                        className: "tw-gap-2 tw-items-center"
+                        className: "tw:gap-2 tw:items-center"
                     }, m.createElement(o.Oo, {
                         fitToCover: !0,
                         imageId: null == e ? void 0 : e.imageUrl,
@@ -127,15 +127,15 @@
                         fallbackSrc: x(),
                         width: 36
                     }), m.createElement(o.fv, {
-                        className: "tw-flex-1"
+                        className: "tw:flex-1"
                     }, m.createElement("p", {
-                        className: "tw-mb-0 tw-font-bold group-hover:tw-text-white"
+                        className: "tw:mb-0 tw:font-bold tw:group-hover:text-white"
                     }, e.name), m.createElement("small", {
-                        className: "tw-mb-0 tw-text-placeholder-text transition-all group-hover:tw-text-white"
+                        className: "tw:mb-0 tw:text-placeholder-text transition-all tw:group-hover:text-white"
                     }, "Avatar")), l && m.createElement(o.fv, {
-                        className: "tw-flex-1 tw-max-w-[50%]"
+                        className: "tw:flex-1 tw:max-w-[50%]"
                     }, m.createElement("small", {
-                        className: "tw-mb-0 tw-break-normal tw-text-placeholder-text group-hover:tw-text-white tw-whitespace-break-spaces"
+                        className: "tw:mb-0 tw:break-normal tw:text-placeholder-text tw:group-hover:text-white tw:whitespace-break-spaces"
                     }, function(e) {
                         if (e) return e.contentRestrictionId ? "This avatar is currently disabled. Check your email inbox for more details." : e.productId ? "This avatar is already linked to a product." : e.activeAssetReviewId ? "This avatar is currently under review." : "This avatar is not available."
                     }(e))))))
@@ -282,7 +282,7 @@
                     }(Q) : []
                 }, [Q, Z]);
                 return m.createElement(o.fv, null, !S && m.createElement(o.fv, null, m.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Select Avatar"), m.createElement(N, {
                     avatars: ee,
                     isLoading: Y,
@@ -296,27 +296,27 @@
                         return O(e)
                     }
                 }), D && m.createElement("hr", {
-                    className: "tw-h-px tw-my-5 tw-bg-[#2D363F] tw-opacity-100 tw-border-0 dark:tw-bg-gray-700"
+                    className: "tw:h-px tw:my-5 tw:bg-[#2D363F] tw:opacity-100 tw:border-0 tw:dark:bg-gray-700"
                 })), D && m.createElement(m.Fragment, null, m.createElement(o.$T, {
                     title: "Review and submit to start selling",
                     type: "custom",
                     icon: r.iW,
-                    className: "tw-mb-5 tw-mt-0 tw-border-2 tw-rounded-lg",
+                    className: "tw:mb-5 tw:mt-0 tw:border-2 tw:rounded-lg",
                     color: "#28434B",
                     iconColor: "#6AE3F9"
                 }, m.createElement(o.fv, {
-                    className: "tw-ml-[25px]"
+                    className: "tw:ml-[25px]"
                 }, m.createElement("p", null, "Before you list your avatar for sale, ensure that it meets our", " ", m.createElement(d.N_, {
                     to: "https://creators.vrchat.com/economy/guidelines",
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "hover:tw-text-teal-accent"
+                    className: "tw:hover:text-teal-accent"
                 }, "content guidelines"), " ", "and Terms and Conditions. Submit it for review to verify performance, compatibility, and eligibility. Need to edit your avatar? Head over to", " ", m.createElement(d.N_, {
                     to: "/home/avatar/".concat(D.id),
-                    className: "hover:tw-text-teal-accent"
+                    className: "tw:hover:text-teal-accent"
                 }, "the avatar page"), " ", "to make changes."), K && m.createElement("div", null, m.createElement("p", null, m.createElement("strong", null, "Our review process:")), m.createElement("p", null, m.createElement("ol", null, m.createElement("li", null, m.createElement("strong", null, "Submit for Review"), " - Check your avatar’s information and submit it for review."), m.createElement("li", null, m.createElement("strong", null, "Moderation"), " - The Moderation team will evaluate your avatar’s performance and quality."), m.createElement("li", null, m.createElement("strong", null, "Approval"), " - Once approved, your avatar will appear as a product in My Store."), m.createElement("li", null, m.createElement("strong", null, "List for Sale"), " - After approval, you can include your avatar in listings and start selling!"))), m.createElement("p", null, m.createElement("strong", null, "Why Reviews Matter?"), m.createElement("br", null), "Our review process ensures that all avatars meet the required standards for performance and compatibility, creating a trustworthy marketplace for both sellers and buyers.")), m.createElement("button", {
                     type: "button",
-                    className: "tw-bg-transparent tw-border-none tw-text-teal-accent hover:tw-text-white tw-text-left",
+                    className: "tw:bg-transparent tw:border-none tw:text-teal-accent tw:hover:text-white tw:text-left",
                     onClick: function() {
                         return V(!K)
                     }
@@ -327,13 +327,13 @@
                     avatarData: D,
                     productType: C
                 })), m.createElement(o.fv, {
-                    className: "tw-mt-8 tw-gap-3 md:tw-flex-row"
+                    className: "tw:mt-8 tw:gap-3 tw:md:flex-row"
                 }, m.createElement(o.$n, {
-                    containerClasses: "tw-flex-1",
+                    containerClasses: "tw:flex-1",
                     onClick: E,
                     neutral: !0
                 }, "Back"), m.createElement(o.$n, {
-                    containerClasses: "tw-flex-1",
+                    containerClasses: "tw:flex-1",
                     onClick: x,
                     disabled: !D
                 }, "Next")), m.createElement(o.L0, {
@@ -354,7 +354,7 @@
                     cancelCallBack: function() {
                         return H(!1)
                     },
-                    className: "tw-w-[285px] tw-aspect-square"
+                    className: "tw:w-[285px] tw:aspect-square"
                 }))
             }
         },
@@ -414,21 +414,21 @@
                         }
                     }();
                 return s.createElement("form", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, s.createElement(d.fv, {
-                    className: "tw-mb-8"
+                    className: "tw:mb-8"
                 }, s.createElement("h2", {
-                    className: "tw-text-lg tw-mb-3"
+                    className: "tw:text-lg tw:mb-3"
                 }, "Avatar Detail"), s.createElement(d.fI, {
-                    className: "tw-gap-5 tw-mb-5 tw-flex-col md:tw-flex-row"
+                    className: "tw:gap-5 tw:mb-5 tw:flex-col tw:md:flex-row"
                 }, s.createElement(d.fv, null, s.createElement(d.Oo, {
                     imageId: h.thumbnailImageUrl,
                     fitToCover: !0,
                     alt: "Product Thumbnail",
                     width: 285,
-                    className: "tw-bg-grey tw-text-[#404C58]"
+                    className: "tw:bg-grey tw:text-[#404C58]"
                 })), s.createElement(d.fv, {
-                    className: "tw-flex-1 tw-gap-5"
+                    className: "tw:flex-1 tw:gap-5"
                 }, s.createElement(d.fv, null, s.createElement("label", {
                     htmlFor: "name"
                 }, "Product Name"), s.createElement(d.pd, {
@@ -441,59 +441,59 @@
                     value: h.name,
                     disabled: !0
                 })), s.createElement(d.fI, {
-                    className: "tw-gap-2"
+                    className: "tw:gap-2"
                 }, s.createElement(d.fv, {
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }, s.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Primary Style"), !(null !== (t = h.styles) && void 0 !== t && t.primary) && s.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
                 }, "No primary style!"), (null === (a = h.styles) || void 0 === a ? void 0 : a.primary) && s.createElement("div", {
-                    className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
+                    className: "tw:mb-0 tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block tw:w-fit"
                 }, s.createElement("span", null, h.styles.primary))), s.createElement(d.fv, {
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }, s.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Secondary Style"), !(null !== (i = h.styles) && void 0 !== i && i.secondary) && s.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
                 }, "No secondary style!"), (null === (b = h.styles) || void 0 === b ? void 0 : b.secondary) && s.createElement("div", {
-                    className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
+                    className: "tw:mb-0 tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block tw:w-fit"
                 }, h.styles.secondary))), s.createElement(d.fv, null, s.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Tags"), s.createElement(d.fI, {
-                    className: "tw-flex-wrap tw-gap-2"
+                    className: "tw:flex-wrap tw:gap-2"
                 }, 0 === (null == N ? void 0 : N.length) && s.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
                 }, "No tags!"), null == N ? void 0 : N.map(function(e) {
                     return s.createElement("div", {
                         key: e,
-                        className: "tw-leading-none tw-max-h-[50px] tw-break-all tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block"
+                        className: "tw:leading-none tw:max-h-[50px] tw:break-all tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block"
                     }, s.createElement("span", null, e))
                 }))))), s.createElement(d.fv, {
-                    className: "tw-gap-5"
+                    className: "tw:gap-5"
                 }, h.productId && s.createElement(d.fv, {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, s.createElement("label", {
                     htmlFor: "id",
-                    className: "tw-mb-2 tw-flex tw-flex-row"
+                    className: "tw:mb-2 tw:flex tw:flex-row"
                 }, "Product ID", s.createElement("div", {
-                    className: "tw-group tw-relative tw-ml-1"
+                    className: "tw:group tw:relative tw:ml-1"
                 }, s.createElement(d.M2, {
                     icon: r.iW,
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }), s.createElement("span", {
-                    className: "tw-pointer-events-none tw-z-50 tw-absolute tw--top-14 tw--left-20 sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
+                    className: "tw:pointer-events-none tw:z-50 tw:absolute tw:-top-14 tw:-left-20 tw:sm:-top-7 tw:sm:left-5 tw:w-[240px] tw:text-xs tw:rounded-xs tw:bg-gray-900 tw:px-2 tw:py-1 tw:font-medium tw:text-gray-50 tw:opacity-0 tw:shadow-xs tw:transition-opacity tw:group-hover:opacity-100"
                 }, "This unique ID links your Udon product to the VRChat Worlds SDK, allowing you to track ownership within your world."))), s.createElement(d.fI, {
-                    className: "tw-gap-2"
+                    className: "tw:gap-2"
                 }, s.createElement(d.pd, {
                     type: "text",
                     id: "id",
                     value: h.productId,
                     disabled: !0,
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }), s.createElement(d.$n, {
                     type: "button",
-                    className: "tw-w-[40px] tw-h-[40px]",
+                    className: "tw:w-[40px] tw:h-[40px]",
                     onClick: function(e) {
                         return k(e, h.productId)
                     }
@@ -501,19 +501,19 @@
                     icon: n.jP
                 })))), E && s.createElement(d.fv, null, s.createElement("label", {
                     htmlFor: "price",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Product Type"), s.createElement(d.fI, {
-                    className: "tw-gap-3"
+                    className: "tw:gap-3"
                 }, s.createElement("div", {
-                    className: "tw-rounded-full tw-w-[90px] tw-h-[90px] tw-bg-[#303135]"
+                    className: "tw:rounded-full tw:w-[90px] tw:h-[90px] tw:bg-[#303135]"
                 }, s.createElement("img", {
                     alt: "udon logo",
                     width: "90",
                     src: w.si[E].image
                 })), s.createElement(d.fv, {
-                    className: "tw-items-center tw-justify-center"
+                    className: "tw:items-center tw:justify-center"
                 }, s.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, s.createElement("strong", null, w.si[E].label), s.createElement("br", null), w.si[E].text, s.createElement("br", null), s.createElement("a", {
                     href: w.si[E].redirect,
                     target: "_blank",
@@ -524,7 +524,7 @@
                     disabled: !0,
                     type: "textarea",
                     id: "description",
-                    inputClassName: "tw-h-[120px] tw-my-2",
+                    inputClassName: "tw:h-[120px] tw:my-2",
                     maxLength: 256,
                     value: h.description
                 })), s.createElement(d.fv, null, s.createElement("label", {
@@ -533,7 +533,7 @@
                     disabled: !0,
                     type: "textarea",
                     id: "acknowledgements",
-                    inputClassName: "tw-h-[90px] tw-my-2",
+                    inputClassName: "tw:h-[90px] tw:my-2",
                     maxLength: 256,
                     value: null !== (g = null == h ? void 0 : h.acknowledgements) && void 0 !== g ? g : ""
                 })))))
@@ -541,4 +541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67ce06c70336d298652ebe535c3f5f35116fe18ac2be09d4ca6bda19fc988dec.js.map
+//# sourceMappingURL=b5b415e1a5d7a67724d2916ac18e952501a94bba98c099d7e67bab44b57aff83.js.map

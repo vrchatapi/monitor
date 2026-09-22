@@ -29,7 +29,7 @@
                 }, "FontAwesome"), "-compatible icons we have included in Appedashi. They live in the repo at ", o.createElement("code", null, "src/common/icons"), "."), o.createElement("p", null, "Icons should be roughly square and contained within their boxes. If you hover over an icon and it expands past the outline, it will behave strangely in text and should be adjusted!"), o.createElement("p", null, "For more information on authoring custom icons, see ", o.createElement("a", {
                     href: "https://vrchat.atlassian.net/wiki/x/DwCuDQ"
                 }, "our internal wiki"), "."), o.createElement("div", {
-                    className: "tw-grid tw-gap-2",
+                    className: "tw:grid tw:gap-2",
                     style: {
                         gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))"
                     }
@@ -40,21 +40,21 @@
                     return o.createElement("div", {
                         key: t
                     }, o.createElement(c.N3, null, o.createElement("h4", {
-                        className: "tw-mb-0"
+                        className: "tw:mb-0"
                     }, s.iconName)), o.createElement(c.BW, {
-                        className: "tw-gap-2"
+                        className: "tw:gap-2"
                     }, o.createElement("div", {
-                        className: "tw-w-full tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-2"
+                        className: "tw:w-full tw:flex tw:flex-row tw:items-center tw:justify-center tw:gap-2"
                     }, o.createElement(c.M2, {
-                        className: "tw-overflow-hidden hover:tw-overflow-visible hover:tw-outline-dashed hover:tw-outline-cyan-500",
+                        className: "tw:overflow-hidden tw:hover:overflow-visible tw:hover:outline-dashed tw:hover:outline-cyan-500",
                         icon: s,
                         size: "1x"
                     }), o.createElement(c.M2, {
-                        className: "tw-overflow-hidden hover:tw-overflow-visible hover:tw-outline-dashed hover:tw-outline-cyan-500",
+                        className: "tw:overflow-hidden tw:hover:overflow-visible tw:hover:outline-dashed tw:hover:outline-cyan-500",
                         icon: s,
                         size: "3x"
                     }), o.createElement(c.M2, {
-                        className: "tw-overflow-hidden hover:tw-overflow-visible hover:tw-outline-dashed hover:tw-outline-cyan-500",
+                        className: "tw:overflow-hidden tw:hover:overflow-visible tw:hover:outline-dashed tw:hover:outline-cyan-500",
                         icon: s,
                         size: "5x"
                     })), o.createElement("code", null, "import ".concat(t, " from '@icons/").concat(t, "';")), o.createElement("code", null, "<Icon icon={".concat(t, "} />"))))
@@ -125,4 +125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60117fb35610f9a5fd3abf751f8b36e6a42d5eefd5125dd9711a5555241f0fc6.js.map
+//# sourceMappingURL=5fd31f6b086fbcd996a6cf69d20c5ae6b00a17f5d772caea42ec1ceac07c538a.js.map

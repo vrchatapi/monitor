@@ -101,16 +101,16 @@
                 return y ? c.createElement(p, {
                     className: A
                 }, c.createElement(u.Ay, {
-                    className: "tw-bg-transparent tw-border-0 tw-text-white disabled:tw-text-placeholder-text",
+                    className: "tw:bg-transparent tw:border-0 tw:text-white tw:disabled:text-placeholder-text",
                     disabled: 1 === x,
                     onClick: z
                 }, c.createElement(m.A, {
                     icon: i.Wz
                 })), c.createElement(h, {
-                    className: "tw-cursor-auto",
+                    className: "tw:cursor-auto",
                     selected: !0
                 }, x), c.createElement(u.Ay, {
-                    className: "tw-bg-transparent tw-border-0 tw-text-white disabled:tw-text-placeholder-text",
+                    className: "tw:bg-transparent tw:border-0 tw:text-white tw:disabled:text-placeholder-text",
                     disabled: a < b,
                     onClick: N
                 }, c.createElement(m.A, {
@@ -168,4 +168,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a493b5c26239c754d711a0a5498a1c3c811ad0185b0498c253ca72a9edab829b.js.map
+//# sourceMappingURL=4572e330c645b4c47773f3252a8d0b6fe2f376352c0f2978e90c9098c75d3945.js.map

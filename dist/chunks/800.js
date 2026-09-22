@@ -229,73 +229,73 @@
                     re = !o || j,
                     ae = null !== (e = null == U || null === (t = U.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "";
                 return ae && (ae.indexOf(":") > 0 ? (ae.substring(0, ae.indexOf(":")).trim(), ae = ae.substring(ae.indexOf(":") + 1).trim()) : 0 === ae.indexOf(":") && (ae = ae.substring(1).trim())), !E || A ? i.createElement(b.A, null, i.createElement(w.Qc, null, "Upgrade Account"), i.createElement("div", {
-                    className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-py-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-darker-grey tw:w-full tw:sm:w-[500px] tw:py-9 tw:px-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, i.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, i.createElement(w.M2, {
                     icon: s.nW,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), i.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Upgrade Account"), i.createElement(w.$T, {
                     type: "error",
                     title: "Invalid token"
                 }, "The link you have followed is not valid. Please check the link or try the process again later.", O && i.createElement(i.Fragment, null, i.createElement("br", null), null == O || null === (X = O.data) || void 0 === X || null === (X = X.error) || void 0 === X ? void 0 : X.message))), i.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
+                    className: "tw:flex tw:flex-row tw:w-full tw:justify-center tw:mt-5"
                 }, i.createElement(u.N_, {
                     to: "/home/login",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "Back to login")))) : C ? i.createElement(b.A, null, i.createElement(w.Qc, null, "Upgrade Account"), i.createElement("div", {
-                    className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-py-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-darker-grey tw:w-full tw:sm:w-[500px] tw:py-9 tw:px-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, i.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, i.createElement(w.M2, {
                     icon: s.nW,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), i.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Upgrade Account"), i.createElement("p", null, "Your VRChat account has been upgraded, and your upgrade benefits have been applied."), i.createElement("p", null, "You can now sign in on any platform with your email address, gain Trust Ranks, upload Avatars & Worlds, and more. Have fun!")), i.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
+                    className: "tw:flex tw:flex-row tw:w-full tw:justify-center tw:mt-5"
                 }, i.createElement(h.z9, {
                     to: "/home/login"
                 }, "Login")))) : i.createElement(b.A, null, i.createElement(w.Qc, null, "Upgrade Account"), i.createElement("div", {
-                    className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-darker-grey tw:w-full tw:sm:w-[500px] tw:pt-9 tw:px-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, i.createElement("form", {
                     onSubmit: te
                 }, i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, i.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, i.createElement(w.M2, {
                     icon: s.nW,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), i.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Upgrade Account"), ae && i.createElement(w.$T, {
                     type: "error",
                     title: "Account upgrade error"
                 }, ae), i.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, i.createElement("label", {
                     htmlFor: "Email",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Email"), i.createElement(w.pd, {
                     type: "text",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     id: "email",
                     name: "email",
                     "aria-label": "Email",
                     value: _.value,
                     disabled: !0
                 })), i.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, i.createElement("label", {
                     htmlFor: "displayName",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Display Name"), i.createElement(w.pd, {
                     type: "text",
                     id: "displayName",
@@ -306,19 +306,19 @@
                     disabled: re,
                     loading: W.checking,
                     success: !W.checking && W.ok,
-                    className: "tw-mb-1",
+                    className: "tw:mb-1",
                     isError: W.error
                 }), !W.error && i.createElement("p", {
-                    className: "tw-text-placeholder-text tw-text-xs tw-mb-0"
+                    className: "tw:text-placeholder-text tw:text-xs tw:mb-0"
                 }, "This is the name shown to other users in-app, you may only change your display name once per 90 days."), W.error && i.createElement("p", {
                     role: "alert",
                     "aria-label": "Display name error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, W.error)), i.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, i.createElement("label", {
                     htmlFor: "Email",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Password"), i.createElement(w.pd, {
                     type: "password",
                     name: "Password",
@@ -350,10 +350,10 @@
                 }), I.error && i.createElement("p", {
                     role: "alert",
                     "aria-label": "Password error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1 tw-whitespace-pre-wrap"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1 tw:whitespace-pre-wrap"
                 }, I.error), I.ok && i.createElement(w.pd, {
                     type: "password",
-                    className: "tw-w-full tw-mt-2",
+                    className: "tw:w-full tw:mt-2",
                     id: "re-enter-password",
                     name: "Re-enter-password",
                     placeholder: "Re-enter password",
@@ -378,9 +378,9 @@
                 }), I.ok && V.error && i.createElement("p", {
                     role: "alert",
                     "aria-label": "Re-entered password error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, V.error)), i.createElement("div", {
-                    className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
+                    className: "tw:w-full tw:mb-6 tw:justify-center tw:flex"
                 }, i.createElement(w.$n, {
                     containerStyles: {
                         width: "100%"
@@ -404,4 +404,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dd8af2988c73ca6b7a894634be63d5b26b6dd565df7ac6f46c3c15d1d5a33e48.js.map
+//# sourceMappingURL=10cb15ca725afa9124be4dfbc2dae855ed1366475e89d346a29b51422cf0ddb1.js.map

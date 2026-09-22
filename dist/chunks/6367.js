@@ -45,10 +45,10 @@
                     onClick: function() {
                         x(!w)
                     },
-                    className: "tw-flex tw-items-center tw-justify-between tw-w-full tw-px-3 tw-py-2 tw-text-white",
+                    className: "tw:flex tw:items-center tw:justify-between tw:w-full tw:px-3 tw:py-2 tw:text-white",
                     "aria-label": "Favorite Collection Selector"
                 }, u.createElement("span", {
-                    className: "tw-overflow-hidden tw-text-ellipsis tw-whitespace-nowrap"
+                    className: "tw:overflow-hidden tw:text-ellipsis tw:whitespace-nowrap"
                 }, (0, c.Mn)({
                     group: null == e ? void 0 : e.find(function(t) {
                         return t.name === r
@@ -57,7 +57,7 @@
                     placeholder: p
                 })), u.createElement(i.M2, {
                     icon: o.xB,
-                    className: "tw-transition-transform ".concat(w ? "tw-rotate-180" : "")
+                    className: "tw:transition-transform ".concat(w ? "tw:rotate-180" : "")
                 })), u.createElement(s.A, {
                     favoriteGroups: e,
                     selectedGroup: r,
@@ -65,7 +65,7 @@
                         x(!1), n(t.name)
                     },
                     isOpen: w,
-                    className: "tw-absolute tw-z-50 tw-rounded-t-none tw-rounded-b-md",
+                    className: "tw:absolute tw:z-50 tw:rounded-t-none tw:rounded-b-md",
                     ignoreDisable: A,
                     type: g
                 }))
@@ -524,4 +524,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4a3ac83836c9f33f393da985394e871d55d66cfa6e5614dc4ab58f1e99abd804.js.map
+//# sourceMappingURL=51f4bab77d26c553f06fc705e4558a0d2349f164d6bc47fda92d05982ac5d9a7.js.map

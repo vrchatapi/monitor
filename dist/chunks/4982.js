@@ -240,7 +240,7 @@
                                 try {
                                     for (n.s(); !(t = n.n()).done;) {
                                         var r = t.value;
-                                        r.target === se.current && ce(r.contentRect.width < 600)
+                                        r.target === se.current && ce(r.contentRect.width < 768)
                                     }
                                 } catch (e) {
                                     n.e(e)
@@ -463,4 +463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ef28845c21efa576ce740284d726877fb3173d3c4f5f55097786982b1269325e.js.map
+//# sourceMappingURL=14d76569125fb78c3343f579a5423016417d3eddb46c12f2f14d7b7e71b906bb.js.map

@@ -103,24 +103,24 @@
                     var t = e.icon,
                         n = e.text;
                     return a.createElement("div", {
-                        className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-flex-col tw-items-center tw-justify-center"
+                        className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:flex-col tw:items-center tw:justify-center"
                     }, a.createElement("div", {
-                        className: "tw-relative"
+                        className: "tw:relative"
                     }, a.createElement(y.A, {
                         icon: t,
                         width: "72",
                         height: "72",
                         color: "#737372"
                     }), a.createElement("div", {
-                        className: " tw-absolute tw-top-[-10px] tw-right-[-16px] tw-border-2 tw-border-solid tw-border-vrc-plus-yellow tw-rounded-full tw-px-2 tw-w-fit tw-h-[26px] tw-text-vrc-plus-yellow tw-italic tw-bg-darker-grey tw-text-sm "
+                        className: " tw:absolute tw:top-[-10px] tw:right-[-16px] tw:border-2 tw:border-solid tw:border-vrc-plus-yellow tw:rounded-full tw:px-2 tw:w-fit tw:h-[26px] tw:text-vrc-plus-yellow tw:italic tw:bg-darker-grey tw:text-sm "
                     }, "VRC+")), a.createElement("p", {
-                        className: "tw-text-white tw-text-xl tw-my-5 tw-text-center tw-max-w-[500px]"
+                        className: "tw:text-white tw:text-xl tw:my-5 tw:text-center tw:max-w-[500px]"
                     }, n), a.createElement(E.N_, {
                         to: "https://hello.vrchat.com/vrchatplus",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, a.createElement(x.Ay, {
-                        className: "tw-px-8"
+                        className: "tw:px-8"
                     }, "Subscribe to VRC+")))
                 };
             b.propTypes = {};
@@ -199,13 +199,13 @@
                             return [{
                                 key: "premium",
                                 condition: Y,
-                                bgClass: "tw-bg-highlight",
+                                bgClass: "tw:bg-highlight",
                                 icon: T.default,
                                 iconColor: "#113637"
                             }, {
                                 key: "animated",
                                 condition: K,
-                                bgClass: "tw-bg-dark-grey-transparent-90",
+                                bgClass: "tw:bg-dark-grey-transparent-90",
                                 icon: z.default,
                                 iconColor: "#DADADA"
                             }].find(function(e) {
@@ -245,15 +245,15 @@
                             return clearTimeout(e)
                         }
                     }, [Q]), a.createElement("div", {
-                        className: "tw-relative"
+                        className: "tw:relative"
                     }, a.createElement("button", {
                         type: "button",
                         tabIndex: u ? -1 : 0,
                         ref: L,
-                        className: (0, V.cx)("tw-group tw-rounded-xl tw-relative tw-w-full tw-h-auto tw-cursor-pointer tw-bg-transparent tw-p-0 tw-m-0 tw-overflow-hidden tw-border-solid", {
-                            "tw-pointer-events-none": u,
-                            "tw-border-2 tw-border-vrc-plus-yellow": W,
-                            "tw-border-none": !W
+                        className: (0, V.cx)("tw:group tw:rounded-xl tw:relative tw:w-full tw:h-auto tw:cursor-pointer tw:bg-transparent tw:p-0 tw:m-0 tw:overflow-hidden", {
+                            "tw:pointer-events-none": u,
+                            "tw:border-2 tw:border-vrc-plus-yellow tw:border-solid": W,
+                            "tw:border-none": !W
                         }),
                         onClick: u ? function() {} : w,
                         onKeyUp: function(e) {
@@ -263,44 +263,44 @@
                             "Enter" !== e.key || u || w()
                         }
                     }, j && a.createElement("div", {
-                        className: "tw-absolute tw-inset-0 tw-z-[2] tw-flex tw-items-center tw-justify-center tw-bg-dark-grey tw-bg-opacity-50 "
+                        className: "tw:absolute tw:inset-0 tw:z-[2] tw:flex tw:items-center tw:justify-center tw:bg-dark-grey/50 "
                     }, a.createElement(i.M2, {
                         icon: C.z1,
                         color: "#FFFFFF",
                         spin: !0,
                         width: 48
                     })), te && a.createElement("div", {
-                        className: "tw-absolute tw-z-[3] tw-left-0 tw-top-0 tw-bg-hr-grey tw-p-2 tw-w-fit tw-rounded-tl-lg tw-rounded-br-lg"
+                        className: "tw:absolute tw:z-[3] tw:left-0 tw:top-0 tw:bg-hr-grey tw:p-2 tw:w-fit tw:rounded-tl-lg tw:rounded-br-lg"
                     }, a.createElement("div", {
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, a.createElement(i.M2, {
                         icon: R.faXmark,
                         color: "#fff",
                         width: 14
                     }), a.createElement("span", {
-                        className: "tw-font-bold tw-text-white"
+                        className: "tw:font-bold tw:text-white"
                     }, null !== (t = null == l ? void 0 : l.quantity) && void 0 !== t ? t : 0))), W && !te && a.createElement("div", {
-                        className: "tw-absolute tw-z-[3] tw-left-2 tw-top-2"
+                        className: "tw:absolute tw:z-[3] tw:left-2 tw:top-2"
                     }, a.createElement(X.A, {
                         isLarge: !0
                     })), J && a.createElement("div", {
-                        className: "tw-absolute tw-inset-0 tw-z-[2] tw-flex tw-items-center tw-justify-center tw-bg-black tw-bg-opacity-50"
+                        className: "tw:absolute tw:inset-0 tw:z-[2] tw:flex tw:items-center tw:justify-center tw:bg-black/50"
                     }, a.createElement(i.M2, {
                         icon: q.default,
                         color: "#FFFF00",
                         width: 64
                     })), ee && a.createElement("div", {
-                        className: "tw-absolute tw-z-[3] tw-right-0 tw-top-0 ".concat(ee.bgClass, " tw-p-2 tw-w-fit tw-rounded-tr-lg tw-rounded-bl-lg tw-transition-opacity group-hover:tw-opacity-0")
+                        className: "tw:absolute tw:z-[3] tw:right-0 tw:top-0 ".concat(ee.bgClass, " tw:p-2 tw:w-fit tw:rounded-tr-lg tw:rounded-bl-lg tw:transition-opacity tw:group-hover:opacity-0")
                     }, a.createElement(i.M2, {
                         icon: ee.icon,
                         color: ee.iconColor,
                         width: 20
                     })), a.createElement("div", {
-                        className: " tw-absolute tw-z-[5] tw-right-1 tw-top-1 tw-h-1/5 tw-h-min-[48px] tw-transition-opacity tw-duration-300 tw-ease-in-out tw-opacity-0 group-hover:tw-opacity-100 group-focus:tw-opacity-100 group-focus-within:tw-opacity-100 "
+                        className: " tw:absolute tw:z-[5] tw:right-1 tw:top-1 tw:h-1/5 tw:h-min-[48px] tw:transition-opacity tw:duration-300 tw:ease-in-out tw:opacity-0 tw:group-hover:opacity-100 tw:group-focus:opacity-100 tw:group-focus-within:opacity-100 "
                     }, a.createElement("div", {
-                        className: "tw-flex tw-gap-1"
+                        className: "tw:flex tw:gap-1"
                     }, $.C && b.hasConvertToVrcEmojis && a.createElement(i.$n, {
-                        className: "tw-rounded-full tw-w-10 tw-h-10",
+                        className: "tw:rounded-full tw:w-10 tw:h-10",
                         neutral: !0,
                         onClick: function(e) {
                             e.stopPropagation(), e.preventDefault()
@@ -309,9 +309,9 @@
                         icon: m.default,
                         color: "#FFFFFF",
                         width: 20,
-                        className: "tw-mt-1"
+                        className: "tw:mt-1"
                     })), b.hasDelete && a.createElement(i.$n, {
-                        className: "tw-rounded-full tw-w-10 tw-h-10",
+                        className: "tw:rounded-full tw:w-10 tw:h-10",
                         neutral: !0,
                         onClick: function(e) {
                             e.stopPropagation(), e.preventDefault(), v()
@@ -320,9 +320,9 @@
                         icon: M.yL,
                         color: "#FFFFFF",
                         width: 20,
-                        className: "tw-mt-1"
+                        className: "tw:mt-1"
                     })), b.hasArchive && B && a.createElement(i.$n, {
-                        className: "tw-rounded-full tw-w-10 tw-h-10",
+                        className: "tw:rounded-full tw:w-10 tw:h-10",
                         neutral: !0,
                         onClick: function(e) {
                             e.stopPropagation(), e.preventDefault(), g()
@@ -331,10 +331,10 @@
                         icon: D.Oh,
                         color: "#FFFFFF",
                         width: 20,
-                        className: "tw-mt-1"
+                        className: "tw:mt-1"
                     })), b.hasRecover && B && a.createElement(i.$n, {
                         title: "Recover",
-                        className: "tw-rounded-full tw-w-10 tw-h-10",
+                        className: "tw:rounded-full tw:w-10 tw:h-10",
                         neutral: !0,
                         onClick: function(e) {
                             e.stopPropagation(), e.preventDefault(), x()
@@ -343,10 +343,10 @@
                         icon: I.faArrowsRotate,
                         color: "#FFFFFF",
                         width: 20,
-                        className: "tw-mt-1"
+                        className: "tw:mt-1"
                     })))), a.createElement("div", {
-                        className: (0, V.cx)("tw-w-auto tw-h-auto tw-flex", {
-                            "tw-bg-gradient-to-t tw-from-[#C68B0166] tw-to-[#FFFD6B66]": W
+                        className: (0, V.cx)("tw:w-auto tw:h-auto tw:flex", {
+                            "tw:bg-linear-to-t tw:from-[#C68B0166] tw:to-[#FFFD6B66]": W
                         })
                     }, b.useCanvasThumbnail ? a.createElement(G.A, {
                         imageUrl: (null === (n = l.metadata) || void 0 === n ? void 0 : n.imageUrl) || l.imageUrl,
@@ -363,7 +363,7 @@
                     }) : a.createElement("img", {
                         src: (null === (r = l.metadata) || void 0 === r ? void 0 : r.imageUrl) || l.imageUrl,
                         alt: l.name,
-                        className: "tw-w-full tw-h-full tw-min-h-[190px] tw-object-cover ".concat(ae ? "tw-filter tw-grayscale" : ""),
+                        className: "tw:w-full tw:h-full tw:min-h-[190px] tw:object-cover ".concat(ae ? "tw:filter tw:grayscale" : ""),
                         onLoad: function() {
                             return O(!1)
                         },
@@ -371,15 +371,15 @@
                             return O(!1)
                         }
                     }), b.hasThumbnailName && a.createElement("div", {
-                        className: "tw-absolute tw-m-0 tw-bottom-0 tw-left-0 tw-top-0 tw-text-white tw-text-center tw-w-full tw-bg-gradient-to-t tw-from-dark-grey-transparent-90 tw-from-20% tw-to-transparent"
+                        className: "tw:absolute tw:m-0 tw:bottom-0 tw:left-0 tw:top-0 tw:text-white tw:text-center tw:w-full tw:bg-linear-to-t tw:from-dark-grey-transparent-90 tw:from-20% tw:to-transparent"
                     }, a.createElement("span", {
-                        className: "tw-absolute tw-w-full tw-bottom-[18px] tw-left-0"
+                        className: "tw:absolute tw:w-full tw:bottom-[18px] tw:left-0"
                     }, l.name)))), re && a.createElement("div", {
-                        className: "tw-absolute tw-z-[3] tw-bottom-[-10px] tw-w-full"
+                        className: "tw:absolute tw:z-[3] tw:bottom-[-10px] tw:w-full"
                     }, a.createElement("div", {
-                        className: "tw-flex tw-items-center tw-justify-center"
+                        className: "tw:flex tw:items-center tw:justify-center"
                     }, a.createElement("p", {
-                        className: "tw-m-0 tw-text-white tw-w-fit tw-rounded-full tw-px-6 tw-bg-red"
+                        className: "tw:m-0 tw:text-white tw:w-fit tw:rounded-full tw:px-6 tw:bg-red"
                     }, "New"))))
                 };
             H.propTypes = {
@@ -447,28 +447,28 @@
                     }(),
                     g = v || s;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Archived Cosmetics"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Your archived cosmetics."), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, w && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load cosmetics"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = d.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), g ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map(function(e) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -479,7 +479,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "You have no archived cosmetics."))))
             };
             var Y = n(66911),
@@ -517,19 +517,19 @@
                         onConfirm: w,
                         hideCancel: !0,
                         slim: !0,
-                        className: "tw-w-min-[400px]"
+                        className: "tw:w-min-[400px]"
                     }, a.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-w-[500px]"
+                        className: "tw:flex tw:flex-col tw:w-[500px]"
                     }, a.createElement("p", {
-                        className: "tw-font-bold tw-w-full tw-mb-2"
+                        className: "tw:font-bold tw:w-full tw:mb-2"
                     }, "Are you sure you want to archive this ", d, "?"), a.createElement("small", {
-                        className: "tw-mb-12 tw-text-light-grey"
+                        className: "tw:mb-12 tw:text-light-grey"
                     }, "It will be moved to the Archived section, where you can recover it at any time."), a.createElement(i.Sc, {
                         id: "skipInventoryArchiveConfirmation",
                         label: "Don't show this message again",
                         ref: m
                     }), a.createElement("div", {
-                        className: "tw-grid tw-grid-flow-col tw-gap-4 tw-mt-9"
+                        className: "tw:grid tw:grid-flow-col tw:gap-4 tw:mt-9"
                     }, a.createElement(i.$n, {
                         onClick: n,
                         neutral: !0,
@@ -539,7 +539,7 @@
                         primary: !0,
                         loading: l,
                         disabled: l,
-                        className: "tw-capitalize"
+                        className: "tw:capitalize"
                     }, "Archive ", d))))
                 };
             te.propTypes = {
@@ -762,7 +762,7 @@
                     },
                     me = $ || K;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "Cosmetic",
                     isOpen: b,
@@ -772,18 +772,18 @@
                     archiveItemCallback: se,
                     isArchiving: U
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Drones"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive drones."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ce,
                     value: d,
                     onChange: w,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -795,22 +795,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, X && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = G.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), me ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == te || null === (n = te.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == te || null === (r = te.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -829,7 +829,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No exclusive drones."))))
             };
 
@@ -1044,7 +1044,7 @@
                     },
                     me = $ || K;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "Cosmetic",
                     isOpen: b,
@@ -1054,18 +1054,18 @@
                     archiveItemCallback: se,
                     isArchiving: U
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Loading Screens"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive loading screens."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ie,
                     value: d,
                     onChange: w,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -1077,22 +1077,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, X && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = G.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), me ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == te || null === (n = te.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == te || null === (r = te.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -1111,7 +1111,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No exclusive loading screens."))))
             };
 
@@ -1326,7 +1326,7 @@
                     },
                     me = $ || K;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "Cosmetic",
                     isOpen: b,
@@ -1336,18 +1336,18 @@
                     archiveItemCallback: oe,
                     isArchiving: U
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Portals"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive portals."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ie,
                     value: d,
                     onChange: w,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -1359,22 +1359,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, X && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = G.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), me ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == te || null === (n = te.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == te || null === (r = te.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -1393,7 +1393,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No exclusive portals."))))
             };
 
@@ -1608,7 +1608,7 @@
                     },
                     ue = $ || K;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "Cosmetic",
                     isOpen: b,
@@ -1618,18 +1618,18 @@
                     archiveItemCallback: oe,
                     isArchiving: U
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Warp Effects"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive warp effects."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ie,
                     value: d,
                     onChange: w,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -1641,22 +1641,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, X && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = G.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), ue ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == te || null === (n = te.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == te || null === (r = te.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -1675,7 +1675,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No exclusive warp effects."))))
             };
             const ve = function() {
@@ -1703,9 +1703,9 @@
                         types: "loadingscreen"
                     }).data;
                 return a.createElement("div", null, a.createElement("div", {
-                    className: "tw-px-4"
+                    className: "tw:px-4"
                 }, a.createElement(c.A, {
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     justify: "left",
                     tabs: [{
                         name: "Drones",
@@ -1816,28 +1816,28 @@
                     }(),
                     g = v || s;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Archived Emojis"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Your archived emojis."), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, w && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load emojis"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = d.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), g ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map(function(e) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -1848,7 +1848,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "You have no archived emojis."))))
             };
             var ge = n(9795),
@@ -1866,13 +1866,13 @@
                         onConfirm: r,
                         hideCancel: !0,
                         slim: !0,
-                        className: "tw-w-screen sm:tw-w-min-[400px] sm:tw-w-fit"
+                        className: "tw:w-screen tw:sm:w-min-[400px] tw:sm:w-fit"
                     }, a.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-w-full sm:tw-w-[500px]"
+                        className: "tw:flex tw:flex-col tw:w-full tw:sm:w-[500px]"
                     }, a.createElement("p", {
-                        className: "tw-font-bold tw-w-full"
+                        className: "tw:font-bold tw:w-full"
                     }, "Are you sure you want to delete?"), a.createElement("div", {
-                        className: "tw-grid tw-grid-flow-row sm:tw-grid-flow-col tw-gap-4 tw-mt-12"
+                        className: "tw:grid tw:grid-flow-row tw:sm:grid-flow-col tw:gap-4 tw:mt-12"
                     }, a.createElement(i.$n, {
                         onClick: n,
                         neutral: !0,
@@ -1895,21 +1895,21 @@
                         l = e.text,
                         i = e.uploadText;
                     return a.createElement("div", {
-                        className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-flex-col tw-items-center tw-justify-center"
+                        className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:flex-col tw:items-center tw:justify-center"
                     }, a.createElement(y.A, {
                         icon: r,
                         width: "64",
                         height: "64",
                         color: "#737372"
                     }), a.createElement("p", {
-                        className: "tw-text-white tw-text-xl tw-font-bold tw-my-5"
+                        className: "tw:text-white tw:text-xl tw:font-bold tw:my-5"
                     }, l), a.createElement(x.Ay, {
-                        className: "tw-px-8",
+                        className: "tw:px-8",
                         onClick: t,
                         disabled: n
                     }, a.createElement(y.A, {
                         icon: be.Jm,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), i))
                 };
             ke.propTypes = {
@@ -2016,7 +2016,7 @@
                     }(),
                     re = Y;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(xe, {
                     isOpen: v,
                     onCloseCallback: function() {
@@ -2026,20 +2026,20 @@
                     isDeleting: z,
                     title: "Delete Emoji"
                 }), K && _ && a.createElement(a.Fragment, null, a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Custom Emojis"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Uploaded by you or saved from other users."), a.createElement("div", {
-                    className: "tw-mt-6 tw-flex tw-justify-between"
+                    className: "tw:mt-6 tw:flex tw:justify-between"
                 }, a.createElement("div", {
-                    className: "tw-flex tw-items-center tw-flex-row tw-gap-4 tw-content-center"
+                    className: "tw:flex tw:items-center tw:flex-row tw:gap-4 tw:content-center"
                 }, a.createElement(x.Ay, {
                     onClick: function() {
                         return b(!0)
                     },
                     disabled: (null == $ ? void 0 : $.data.length) >= te
                 }, "Upload Emoji"), a.createElement("p", {
-                    className: "tw-text-white tw-text-base tw-m-0 tw-p-0"
+                    className: "tw:text-white tw:text-base tw:m-0 tw:p-0"
                 }, null == $ ? void 0 : $.data.length, " / ", te, " emoji")), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -2051,15 +2051,15 @@
                     value: o,
                     onChange: u
                 }))), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, B && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load emoji"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (t = null === (n = H.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
@@ -2069,7 +2069,7 @@
                     title: "Your custom emoji are temporarily locked.",
                     description: "Resubscribe to VRC+ to restore them instantly."
                 }), K ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == $ || null === (r = $.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -2109,7 +2109,7 @@
                     icon: m.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive emoji."
                 }) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No emojis found."))), E && a.createElement(i.aF, {
                     onClose: function() {
                         return b(!1)
@@ -2346,7 +2346,7 @@
                     },
                     pe = te || le;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "emoji",
                     isOpen: D,
@@ -2356,20 +2356,20 @@
                     archiveItemCallback: de,
                     isArchiving: _
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Exclusive Emojis"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive emojis."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ue,
                     value: d,
                     onChange: w,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 }), a.createElement(i.aE, {
-                    className: "tw-mb-0",
+                    className: "tw:mb-0",
                     label: "With Special Effects",
                     value: "withSpecialEffects",
                     checked: g,
@@ -2387,22 +2387,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, K && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load emojis"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = B.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), pe ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == ie || null === (r = ie.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -2421,7 +2421,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No exclusive emojis", g ? " with special effects" : "", "."))))
             };
             Se.propTypes = {};
@@ -2436,9 +2436,9 @@
                         types: "emoji"
                     }).data;
                 return null != e && e.hasVRCPlus || null != e && e.previouslyHadVRCPlus ? a.createElement("div", null, a.createElement("div", {
-                    className: "tw-px-4"
+                    className: "tw:px-4"
                 }, a.createElement(c.A, {
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     justify: "left",
                     tabs: [{
                         name: "Custom Emojis",
@@ -2535,28 +2535,28 @@
                     }(),
                     g = v || s;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Archived Items"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Your archived items."), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, w && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = d.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), g ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map(function(e) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -2567,7 +2567,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "You have no archived items."))))
             };
 
@@ -2787,7 +2787,7 @@
                     },
                     de = H || ae;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "prop",
                     isOpen: S,
@@ -2797,18 +2797,18 @@
                     archiveItemCallback: ue,
                     isArchiving: z
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Companions"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive companions."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: oe,
                     value: v,
                     onChange: f,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -2820,24 +2820,24 @@
                     value: u,
                     onChange: m
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, $ && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = X.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), de ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, re && a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base tw-mb-4"
+                    className: "tw:text-light-grey tw:text-base tw:mb-4"
                 }, "Failed to load companions: ", null !== (n = null == te || null === (r = te.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "An unexpected error occurred!"), (null == le || null === (l = le.data) || void 0 === l ? void 0 : l.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == le || null === (c = le.data) || void 0 === c ? void 0 : c.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -2856,7 +2856,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No companions."))))
             };
 
@@ -3078,7 +3078,7 @@
                     },
                     pe = B || le;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "prop",
                     isOpen: S,
@@ -3088,18 +3088,18 @@
                     archiveItemCallback: de,
                     isArchiving: q
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Props"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive props."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ue,
                     value: v,
                     onChange: f,
-                    className: "tw-min-w-[200px]"
+                    className: "tw:min-w-[200px]"
                 })), a.createElement(i.ms, {
                     options: [{
                         label: "Newest",
@@ -3111,24 +3111,24 @@
                     value: u,
                     onChange: m
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, H && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load items"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = $.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), pe ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, ae && a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base tw-mb-4"
+                    className: "tw:text-light-grey tw:text-base tw:mb-4"
                 }, "Failed to load props: ", null !== (n = null == re || null === (r = re.data) || void 0 === r || null === (r = r.error) || void 0 === r ? void 0 : r.message) && void 0 !== n ? n : "An unexpected error occurred!"), (null == ie || null === (l = ie.data) || void 0 === l ? void 0 : l.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == ie || null === (c = ie.data) || void 0 === c ? void 0 : c.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -3147,7 +3147,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "No props."))))
             };
             const qe = function() {
@@ -3164,9 +3164,9 @@
                         metadata: "propKind:0"
                     }).data;
                 return a.createElement("div", null, a.createElement("div", {
-                    className: "tw-px-4"
+                    className: "tw:px-4"
                 }, a.createElement(c.A, {
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     justify: "left",
                     tabs: [{
                         name: "Companions",
@@ -3266,28 +3266,28 @@
                     }(),
                     g = v || s;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Archived Stickers"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Your archived stickers."), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, w && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load stickers"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = d.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), g ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == m || null === (n = m.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == m || null === (r = m.data) || void 0 === r ? void 0 : r.map(function(e) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -3298,7 +3298,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "You have no archived stickers."))))
             };
             var _e = n(57809),
@@ -3398,7 +3398,7 @@
                         }(),
                         re = Y;
                     return a.createElement("div", {
-                        className: "tw-px-4 tw-@container/inventory-items"
+                        className: "tw:px-4 tw:@container/inventory-items"
                     }, a.createElement(xe, {
                         isOpen: v,
                         onCloseCallback: function() {
@@ -3408,20 +3408,20 @@
                         isDeleting: z,
                         title: "Delete Sticker"
                     }), K && _ && a.createElement(a.Fragment, null, a.createElement("h3", {
-                        className: "heading tw-text-white tw-text-left tw-text-2xl"
+                        className: "heading tw:text-white tw:text-left tw:text-2xl"
                     }, "Custom Stickers"), a.createElement("p", {
-                        className: "tw-text-light-grey tw-text-base"
+                        className: "tw:text-light-grey tw:text-base"
                     }, "Uploaded by you or saved from other users."), a.createElement("div", {
-                        className: "tw-mt-6 tw-flex tw-justify-between"
+                        className: "tw:mt-6 tw:flex tw:justify-between"
                     }, a.createElement("div", {
-                        className: "tw-flex tw-items-center tw-flex-row tw-gap-4 tw-content-center"
+                        className: "tw:flex tw:items-center tw:flex-row tw:gap-4 tw:content-center"
                     }, a.createElement(x.Ay, {
                         onClick: function() {
                             return b(!0)
                         },
                         disabled: (null == $ ? void 0 : $.data.length) >= te
                     }, "Upload Sticker"), a.createElement("p", {
-                        className: "tw-text-white tw-text-base tw-m-0 tw-p-0"
+                        className: "tw:text-white tw:text-base tw:m-0 tw:p-0"
                     }, null == $ ? void 0 : $.data.length, " / ", te, " stickers")), a.createElement(i.ms, {
                         options: [{
                             label: "Newest",
@@ -3433,15 +3433,15 @@
                         value: o,
                         onChange: u
                     }))), a.createElement("div", {
-                        className: "tw-mt-6 tw-mb-4"
+                        className: "tw:mt-6 tw:mb-4"
                     }, B && a.createElement("div", {
-                        className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                        className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                     }, a.createElement("p", {
-                        className: "tw-text-light-grey tw-text-base"
+                        className: "tw:text-light-grey tw:text-base"
                     }, "Failed to load stickers"), a.createElement("code", {
-                        className: "tw-text-white tw-text-base"
+                        className: "tw:text-white tw:text-base"
                     }, null !== (t = null === (n = H.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) && void 0 !== t ? t : "An unexpected error occurred!")), re ? a.createElement("div", {
-                        className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                        className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                     }, a.createElement(i.M2, {
                         icon: C.z1,
                         spin: !0,
@@ -3451,7 +3451,7 @@
                         title: "Your custom stickers are temporarily locked.",
                         description: "Resubscribe to VRC+ to restore them instantly."
                     }), K ? a.createElement("div", {
-                        className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3  @sm/inventory-items:tw-grid-cols-4  @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                        className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3  tw:@sm/inventory-items:grid-cols-4  tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                     }, null == $ || null === (r = $.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                         return a.createElement(Q, {
                             key: e.id,
@@ -3491,7 +3491,7 @@
                         icon: w.default,
                         text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                     }) : a.createElement("p", {
-                        className: "tw-text-light-grey tw-text-base"
+                        className: "tw:text-light-grey tw:text-base"
                     }, "No stickers found."))), E && a.createElement(i.aF, {
                         onClose: function() {
                             return b(!1)
@@ -3727,7 +3727,7 @@
                     },
                     pe = te || le;
                 return a.createElement("div", {
-                    className: "tw-px-4 tw-@container/inventory-items"
+                    className: "tw:px-4 tw:@container/inventory-items"
                 }, a.createElement(ne, {
                     itemType: "sticker",
                     isOpen: b,
@@ -3737,19 +3737,19 @@
                     archiveItemCallback: de,
                     isArchiving: _
                 }), a.createElement("h3", {
-                    className: "heading tw-text-white tw-text-left tw-text-2xl"
+                    className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Exclusive Stickers"), a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "VRChat exclusive stickers."), a.createElement("div", {
-                    className: " tw-mt-6 tw-flex-row tw-justify-between @sm/inventory-items:tw-flex "
+                    className: " tw:mt-6 tw:flex-row tw:justify-between tw:@sm/inventory-items:flex "
                 }, a.createElement("div", {
-                    className: " tw-w-full tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-2 @sm/inventory-items:tw-grid-cols-2 @sm/inventory-items:tw-w-fit "
+                    className: " tw:w-full tw:grid tw:grid-cols-1 tw:gap-2 tw:mb-2 tw:@sm/inventory-items:grid-cols-2 tw:@sm/inventory-items:w-fit "
                 }, a.createElement(i.ms, {
                     options: ue,
                     value: d,
                     onChange: w
                 }), a.createElement(i.aE, {
-                    className: "tw-mb-0",
+                    className: "tw:mb-0",
                     label: "Animated",
                     value: "Animated",
                     checked: g,
@@ -3767,22 +3767,22 @@
                     value: o,
                     onChange: s
                 })), a.createElement("div", {
-                    className: "tw-mt-6 tw-mb-4"
+                    className: "tw:mt-6 tw:mb-4"
                 }, K && a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "Failed to load stickers"), a.createElement("code", {
-                    className: "tw-text-white tw-text-base"
+                    className: "tw:text-white tw:text-base"
                 }, null !== (e = null === (t = B.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "An unexpected error occurred!")), pe ? a.createElement("div", {
-                    className: "tw-w-full tw-px-4 tw-py-8 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:w-full tw:px-4 tw:py-8 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(i.M2, {
                     icon: C.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : a.createElement("div", null, (null == ie || null === (n = ie.data) || void 0 === n ? void 0 : n.length) > 0 ? a.createElement("div", {
-                    className: " tw-grid tw-gap-4 tw-grid-cols-1 @xs/inventory-items:tw-grid-cols-3 @sm/inventory-items:tw-grid-cols-4 @md/inventory-items:tw-grid-cols-5 @xl/inventory-items:tw-grid-cols-6 "
+                    className: " tw:grid tw:gap-4 tw:grid-cols-1 tw:@xs/inventory-items:grid-cols-3 tw:@sm/inventory-items:grid-cols-4 tw:@md/inventory-items:grid-cols-5 tw:@xl/inventory-items:grid-cols-6 "
                 }, null == ie || null === (r = ie.data) || void 0 === r ? void 0 : r.map(function(e, t) {
                     return a.createElement(Q, {
                         key: e.id,
@@ -3801,7 +3801,7 @@
                         }
                     })
                 })) : a.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, "You have no exclusive stickers", g ? " with animated effects" : "", "."))))
             };
             $e.propTypes = {};
@@ -3820,9 +3820,9 @@
                     icon: w.default,
                     text: "Subscribe to VRC+ to create, save, and get the chance to receive exclusive stickers."
                 }) : a.createElement("div", null, a.createElement("div", {
-                    className: "tw-px-4"
+                    className: "tw:px-4"
                 }, a.createElement(c.A, {
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     justify: "left",
                     tabs: [{
                         name: "Custom Stickers",
@@ -3883,15 +3883,15 @@
                         types: ["droneskin", "portalskin", "warpeffect"]
                     }).data;
                 return a.createElement("div", {
-                    className: "tw-rounded-md tw-bg-darker-grey"
+                    className: "tw:rounded-md tw:bg-darker-grey"
                 }, a.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-md tw-rounded-b-none"
+                    className: "tw:bg-grey tw:rounded-md tw:rounded-b-none"
                 }, a.createElement("h2", {
-                    className: "heading tw-text-2xl tw-text-white tw-text-left tw-p-4"
+                    className: "heading tw:text-2xl tw:text-white tw:text-left tw:p-4"
                 }, e.displayName, "'s Inventory")), a.createElement("div", {
-                    className: "tw-p-4 tw-py-0"
+                    className: "tw:p-4 tw:py-0"
                 }, a.createElement(c.A, {
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     justify: "left",
                     tabs: [{
                         name: "Photo Gallery",
@@ -3983,28 +3983,28 @@
                     var t = e.title,
                         n = e.description;
                     return s.createElement("div", {
-                        className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
+                        className: "tw:flex tw:flex-col tw:sm:flex-row tw:bg-warning-bg tw:rounded-lg tw:border-orange tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center"
                     }, s.createElement("div", {
-                        className: "tw-flex tw-flex-row"
+                        className: "tw:flex tw:flex-row"
                     }, s.createElement(l.M2, {
                         icon: a.DW,
                         size: "1x",
-                        className: "tw-text-orange tw-mt-1 tw-mr-2"
+                        className: "tw:text-orange tw:mt-1 tw:mr-2"
                     }), s.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                        className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                     }, s.createElement("h2", {
-                        className: "tw-text-xl"
+                        className: "tw:text-xl"
                     }, t), s.createElement("p", {
-                        className: "tw-mb-0 tw-text-base"
+                        className: "tw:mb-0 tw:text-base"
                     }, n))), s.createElement("div", {
-                        className: "tw-h-full tw-flex tw-flex-col tw-justify-center tw-mt-4 sm:tw-mt-0"
+                        className: "tw:h-full tw:flex tw:flex-col tw:justify-center tw:mt-4 tw:sm:mt-0"
                     }, s.createElement(u.N_, {
                         to: "https://hello.vrchat.com/vrchatplus",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, s.createElement(i.Ay, {
                         icon: r.e6,
-                        className: "tw-bg-white tw-border-white tw-text-[#1A2026] tw-px-4"
+                        className: "tw:bg-white tw:border-white tw:text-[#1A2026] tw:px-4"
                     }, "Subscribe to VRC+"))))
                 };
             m.propTypes = {
@@ -4146,4 +4146,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ba78360a04f5bd04392a65c5d8d7b127b84543d04fd1349def4f4e4030455f92.js.map
+//# sourceMappingURL=8aca0d1195a59ccafd2cb7d40463a9833aa84bb273519b3464f26465e810feb4.js.map

@@ -104,21 +104,21 @@
                         }
                     }, [t, r]);
                 return o.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center ".concat(f)
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center ".concat(f)
                 }, o.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, o.createElement(u.A, {
                     icon: V.icon,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), o.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, V.status), o.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
+                    className: "tw:text-center tw:mb-0 tw:whitespace-break-spaces"
                 }, V.message), V.buttonLink && o.createElement(d.z9, {
                     to: V.buttonLink,
-                    className: "tw-mt-9 tw-w-60"
+                    className: "tw:mt-9 tw:w-60"
                 }, V.buttonText), V.showResendButton && o.createElement(o.Fragment, null, o.createElement(c.$n, {
-                    className: "tw-flex-none tw-mt-9 tw-px-4",
+                    className: "tw:flex-none tw:mt-9 tw:px-4",
                     disabled: v || b || N || S,
                     onClick: function() {
                         return w && m ? q({
@@ -129,7 +129,7 @@
                 }, b || S ? "Sent!" : "Resend Age Verification Email"), (x || P) && o.createElement("p", {
                     role: "alert",
                     "aria-label": "Resend age verification email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mt-1"
                 }, "An error occurred when trying to resend age verification email.")))
             }
         },
@@ -158,17 +158,17 @@
                     h = r.refetch,
                     p = "completed" === (null == w ? void 0 : w.status) || "needs_review" === (null == w ? void 0 : w.status);
                 return (0, u.$$)(h, p ? 3e3 : null), a.createElement(c.A, null, a.createElement(s.A, null, "Age Verification Status"), m || p ? a.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:px-2 tw:py-20 tw:md:px-[100px] tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, a.createElement("div", {
-                    className: "tw-mb-5 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:mb-5 tw:flex tw:items-center tw:justify-center"
                 }, a.createElement(o.A, {
                     size: "4x"
                 })), a.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Please Wait"), a.createElement("p", {
-                    className: "tw-text-center tw-mb-0 tw-whitespace-break-spaces"
+                    className: "tw:text-center tw:mb-0 tw:whitespace-break-spaces"
                 }, "Please remain on this page while your profile is being updated.", a.createElement("br", null), "This can take up to a couple of minutes.")) : a.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-px-2 tw-py-20 md:tw-px-[100px] tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:px-2 tw:py-20 tw:md:px-[100px] tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, a.createElement(d.A, {
                     status: w,
                     error: f
@@ -227,4 +227,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b1a99a71609b36b189f2338a8d66319b76b8288a017caec3fefe91cbb17cd8bd.js.map
+//# sourceMappingURL=70297535dad140ca8b26c3e69c764baf3bdce9f7948509ef7091ac863af4f91d.js.map

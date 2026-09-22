@@ -58,23 +58,23 @@
                         neutral: w,
                         role: "option"
                     }, u.createElement(b.fI, {
-                        className: "align-items-center tw-text-md"
+                        className: "align-items-center tw:text-md"
                     }, u.createElement(k, {
                         isSelected: o === (null == e ? void 0 : e.name),
                         icon: a.e6,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), (0, m.Mn)({
                         group: e,
                         type: null == e ? void 0 : e.type
                     }), (null == e ? void 0 : e.isVrcPlus) && u.createElement(p.A, {
-                        className: "tw-mx-2"
+                        className: "tw:mx-2"
                     })), u.createElement("div", {
-                        className: "tw-text-xs"
+                        className: "tw:text-xs"
                     }, null !== (t = null == e ? void 0 : e.numFavorites) && void 0 !== t ? t : 0, " / ", null !== (l = null == e ? void 0 : e.maxFavoritesPerGroup) && void 0 !== l ? l : 100))
                 }), C && "world" === N && u.createElement("div", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, u.createElement("a", {
-                    className: " tw-text-base tw-bg-vrc-plus-bg tw-mx-4 tw-my-2 tw-rounded-lg tw-text-vrc-plus-yellow tw-px-3 tw-py-2 tw-border-solid tw-border-vrc-plus-yellow tw-border-2 tw-leading-6 tw-cursor-pointer tw-block hover:tw-no-underline ",
+                    className: " tw:text-base tw:bg-vrc-plus-bg tw:mx-4 tw:my-2 tw:rounded-lg tw:text-vrc-plus-yellow tw:px-3 tw:py-2 tw:border-solid tw:border-vrc-plus-yellow tw:border-2 tw:leading-6 tw:cursor-pointer tw:block tw:hover:no-underline ",
                     href: "https://hello.vrchat.com/vrchatplus",
                     target: "_blank",
                     rel: "noopener noreferrer"
@@ -133,4 +133,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55c9026b79863610557433994c7d0a128ec079daaebefebac5c3ad04eb74485a.js.map
+//# sourceMappingURL=9645d1714b15d8c0f3f309d61162cbbb2b9b0d88bc4ad6fd331d0a40730ea6c3.js.map

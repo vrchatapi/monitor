@@ -43,7 +43,7 @@
                         n = e.children,
                         a = e.className,
                         c = (0, s.wA)(),
-                        l = null != a ? a : "tw-text-blue-400 tw-underline";
+                        l = null != a ? a : "tw:text-blue-400 tw:underline";
                     if (!t) return r.createElement("span", null, n);
                     var i = (0, d.Y3)({
                         command: t.command,
@@ -111,7 +111,7 @@
                                     var u = l.match(v);
                                     if (u) c.push(r.createElement("span", {
                                         key: "".concat(a, "-").concat(i++),
-                                        className: "tw-underline"
+                                        className: "tw:underline"
                                     }, e(u[1], n, "".concat(a, "-u-").concat(i)))), l = l.slice(u[0].length);
                                     else {
                                         var m = l.match(g);
@@ -154,7 +154,7 @@
                                                     var $ = Q[1].split(/• /).filter(Boolean);
                                                     $.length > 0 && c.push(r.createElement("ul", {
                                                         key: "".concat(a, "-").concat(i++),
-                                                        className: "tw-pl-6 tw-list-disc"
+                                                        className: "tw:pl-6 tw:list-disc"
                                                     }, $.map(function(t, c) {
                                                         return r.createElement("li", {
                                                             key: c
@@ -188,18 +188,18 @@
                         return a.map(function(e, t) {
                             return e.imageUrl ? r.createElement("div", {
                                 key: t,
-                                className: "tw-my-4"
+                                className: "tw:my-4"
                             }, r.createElement("img", {
                                 src: e.imageUrl,
                                 alt: "",
-                                className: "tw-max-w-full tw-rounded-lg"
+                                className: "tw:max-w-full tw:rounded-lg"
                             })) : e.videoUrl ? r.createElement("div", {
                                 key: t,
-                                className: "tw-my-4"
+                                className: "tw:my-4"
                             }, r.createElement("video", {
                                 src: e.videoUrl,
                                 controls: !0,
-                                className: "tw-max-w-full tw-max-h-[80vh] tw-rounded-lg"
+                                className: "tw:max-w-full tw:max-h-[80vh] tw:rounded-lg"
                             })) : e.text ? r.createElement("div", {
                                 key: t,
                                 id: e.id
@@ -207,13 +207,13 @@
                         })
                     }, [a, i]);
                 return r.createElement("div", {
-                    className: "tw-space-y-2"
+                    className: "tw:space-y-2"
                 }, o, (null === (t = n.moreInfoLinks) || void 0 === t ? void 0 : t.length) > 0 && r.createElement("div", {
-                    className: "tw-mt-6 tw-pt-4 tw-border-t tw-border-gray-700"
+                    className: "tw:mt-6 tw:pt-4 tw:border-t tw:border-gray-700"
                 }, r.createElement("h4", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "More Information"), r.createElement("div", {
-                    className: "tw-flex tw-flex-wrap tw-gap-3"
+                    className: "tw:flex tw:flex-wrap tw:gap-3"
                 }, n.moreInfoLinks.map(function(e, t) {
                     return r.createElement(N, {
                         key: t,
@@ -262,49 +262,49 @@
                         })
                     }, []);
                 return o ? r.createElement("div", {
-                    className: "tw-rounded-md tw-bg-darker-grey"
+                    className: "tw:rounded-md tw:bg-darker-grey"
                 }, r.createElement(l.Qc, null, "Help Article"), r.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-md tw-rounded-b-none"
+                    className: "tw:bg-grey tw:rounded-md tw:rounded-b-none"
                 }, r.createElement(l.fy, {
                     height: "2.5rem",
-                    className: "tw-p-4"
+                    className: "tw:p-4"
                 })), r.createElement("div", {
-                    className: "tw-p-4"
+                    className: "tw:p-4"
                 }, r.createElement(l.fy, {
                     height: "480px",
                     radius: 8
                 }))) : s || !u ? r.createElement("div", {
-                    className: "tw-rounded-md tw-bg-darker-grey"
+                    className: "tw:rounded-md tw:bg-darker-grey"
                 }, r.createElement(l.Qc, null, "Help Article"), r.createElement("div", {
-                    className: "tw-p-4"
+                    className: "tw:p-4"
                 }, r.createElement(l.$T, {
                     type: "error",
                     title: "Error",
-                    className: "tw-my-2"
+                    className: "tw:my-2"
                 }, s ? "There was an error loading the article." : "Article not found."))) : r.createElement("div", {
-                    className: "tw-flex tw-gap-4 tw-max-w-6xl tw-mx-auto tw-pb-4"
+                    className: "tw:flex tw:gap-4 tw:max-w-6xl tw:mx-auto tw:pb-4"
                 }, r.createElement("div", {
-                    className: "tw-flex-1 tw-min-w-0"
+                    className: "tw:flex-1 tw:min-w-0"
                 }, r.createElement("div", {
-                    className: "tw-rounded-md tw-bg-darker-grey"
+                    className: "tw:rounded-md tw:bg-darker-grey"
                 }, r.createElement(l.Qc, null, u.data.name || "Help Article"), r.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-md tw-rounded-b-none tw-flex tw-items-center tw-justify-between tw-p-4"
+                    className: "tw:bg-grey tw:rounded-md tw:rounded-b-none tw:flex tw:items-center tw:justify-between tw:p-4"
                 }, r.createElement("h2", {
-                    className: "tw-text-2xl tw-text-white tw-text-left tw-mb-0"
+                    className: "tw:text-2xl tw:text-white tw:text-left tw:mb-0"
                 }, u.data.name), u.data.imageUrl && r.createElement("img", {
                     src: u.data.imageUrl,
                     alt: u.data.name,
-                    className: "tw-max-h-24 tw-max-w-[200px] tw-rounded-lg tw-object-cover tw-ml-4 tw-shrink-0"
+                    className: "tw:max-h-24 tw:max-w-[200px] tw:rounded-lg tw:object-cover tw:ml-4 tw:shrink-0"
                 })), r.createElement("div", {
-                    className: "tw-p-4"
+                    className: "tw:p-4"
                 }, r.createElement(C, {
                     article: u.data.article
                 })))), m.length > 0 && r.createElement("div", {
-                    className: "tw-hidden lg:tw-block tw-w-64 tw-shrink-0 tw-sticky tw-top-4 tw-self-start tw-max-h-[calc(100dvh-6rem)] tw-overflow-y-auto"
+                    className: "tw:hidden tw:lg:block tw:w-64 tw:shrink-0 tw:sticky tw:top-4 tw:self-start tw:max-h-[calc(100dvh-6rem)] tw:overflow-y-auto"
                 }, r.createElement("div", {
-                    className: "tw-rounded-md tw-bg-darker-grey tw-p-4"
+                    className: "tw:rounded-md tw:bg-darker-grey tw:p-4"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-1"
+                    className: "tw:flex tw:flex-col tw:gap-1"
                 }, m.map(function(e) {
                     return r.createElement(L, {
                         key: e.id,
@@ -364,4 +364,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6b35f15ac0d933357830e74071b975b386ccd9e027f3e2e091e4bc88ee858f34.js.map
+//# sourceMappingURL=76a8c649eb449c0012d7ec3505c981dd1d6ce36d7f2d7f2aef52b97dbd1c61a0.js.map

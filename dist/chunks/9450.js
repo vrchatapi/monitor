@@ -22,8 +22,8 @@
                 b = a(91863),
                 v = a(13951),
                 E = a(6457),
-                h = a(89661),
-                x = a(96540),
+                x = a(89661),
+                h = a(96540),
                 y = a(6376),
                 N = a(84976),
                 k = a(47767),
@@ -42,12 +42,12 @@
                     if (null === a) return null;
                     var o = (0, y.wA)(),
                         w = (0, v.p$)().data,
-                        p = (0, x.useState)(1),
+                        p = (0, h.useState)(1),
                         f = (0, r.A)(p, 2),
                         g = f[0],
                         b = f[1],
-                        h = (0, x.useState)(!1),
-                        N = (0, r.A)(h, 2),
+                        x = (0, h.useState)(!1),
+                        N = (0, r.A)(x, 2),
                         k = N[0],
                         C = N[1],
                         A = (0, E.tA)({
@@ -109,25 +109,25 @@
                             }
                         }(),
                         _ = function() {
-                            return x.createElement(x.Fragment, null, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
-                            }, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-w-fit"
-                            }, x.createElement("h2", {
-                                className: "heading tw-inline-block tw-w-full tw-text-base"
-                            }, "Are you sure you want to delete this product? This is NOT reversible."), (null == D ? void 0 : D.displayName) && x.createElement("p", {
-                                className: "tw-text-light-grey tw-text-base tw-m-0"
-                            }, D.displayName))), x.createElement("div", {
-                                className: "tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-flex-nowrap tw-w-full tw-gap-2"
-                            }, x.createElement("div", {
-                                className: "tw-w-1/2"
-                            }, x.createElement(m.$n, {
-                                className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
+                            return h.createElement(h.Fragment, null, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:w-full tw:items-center tw:sm:items-start tw:sm:flex-row"
+                            }, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:justify-start tw:text-left tw:w-fit"
+                            }, h.createElement("h2", {
+                                className: "heading tw:inline-block tw:w-full tw:text-base"
+                            }, "Are you sure you want to delete this product? This is NOT reversible."), (null == D ? void 0 : D.displayName) && h.createElement("p", {
+                                className: "tw:text-light-grey tw:text-base tw:m-0"
+                            }, D.displayName))), h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:sm:flex-row tw:sm:justify-between tw:sm:flex-nowrap tw:w-full tw:gap-2"
+                            }, h.createElement("div", {
+                                className: "tw:w-1/2"
+                            }, h.createElement(m.$n, {
+                                className: "tw:rounded-md tw:text-white tw:h-9 tw:border-0 tw:bg-button-bg-grey",
                                 onClick: V
-                            }, "Cancel")), x.createElement("div", {
-                                className: "tw-w-1/2"
-                            }, x.createElement(m.$n, {
-                                className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-message-warning tw-mb-3 tw-text-white",
+                            }, "Cancel")), h.createElement("div", {
+                                className: "tw:w-1/2"
+                            }, h.createElement(m.$n, {
+                                className: "tw:rounded-md tw:h-9 tw:border-0 tw:bg-message-warning tw:mb-3 tw:text-white",
                                 onClick: function() {
                                     b(2)
                                 },
@@ -136,25 +136,25 @@
                         },
                         Q = function() {
                             var e, t;
-                            return x.createElement(x.Fragment, null, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
-                            }, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-full"
-                            }, x.createElement(m.M2, {
+                            return h.createElement(h.Fragment, null, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:w-full tw:items-center tw:sm:items-start tw:sm:flex-row"
+                            }, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:justify-start tw:text-left tw:px-5 tw:w-full"
+                            }, h.createElement(m.M2, {
                                 icon: I.faTriangleExclamation,
                                 size: "xl",
-                                className: "tw-h-[72px] tw-mb-5"
-                            }), x.createElement("h2", {
-                                className: "heading tw-inline-block tw-w-full tw-text-base tw-text-center"
-                            }, "Deleting this will revoke users access to content if they have paid for it."), x.createElement("p", {
-                                className: " tw-text-base tw-m-0 tw-text-center tw-mb-9"
-                            }, "If this action is intentional, you may proceed. However, ensure compliance with our", " ", x.createElement("a", {
+                                className: "tw:h-[72px] tw:mb-5"
+                            }), h.createElement("h2", {
+                                className: "heading tw:inline-block tw:w-full tw:text-base tw:text-center"
+                            }, "Deleting this will revoke users access to content if they have paid for it."), h.createElement("p", {
+                                className: " tw:text-base tw:m-0 tw:text-center tw:mb-9"
+                            }, "If this action is intentional, you may proceed. However, ensure compliance with our", " ", h.createElement("a", {
                                 href: "https://creators.vrchat.com/economy/guidelines",
                                 target: "_blank",
                                 rel: "noreferrer"
-                            }, "Creator Economy guidelines"), " ", "to maintain trust and integrity within our community."), x.createElement("div", {
-                                className: "tw-flex tw-items-center tw-gap-2"
-                            }, x.createElement("input", {
+                            }, "Creator Economy guidelines"), " ", "to maintain trust and integrity within our community."), h.createElement("div", {
+                                className: "tw:flex tw:items-center tw:gap-2"
+                            }, h.createElement("input", {
                                 id: "checked-checkbox",
                                 type: "checkbox",
                                 checked: k,
@@ -162,67 +162,67 @@
                                     return C(!k)
                                 },
                                 value: "acknowledge",
-                                className: "tw-w-7 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-border-[#677079] tw-rounded focus:tw-ring-link-highlight tw-ring-offset-gray-800 focus:tw-ring-1"
-                            }), x.createElement("label", {
+                                className: "tw:w-7 tw:h-5 tw:text-link-highlight tw:bg-button-bg-grey tw:border-[#677079] tw:rounded-xs tw:focus:ring-link-highlight tw:ring-offset-gray-800 tw:focus:ring-1"
+                            }), h.createElement("label", {
                                 for: "checked-checkbox",
-                                className: "tw-text-sm tw-font-medium tw-text-white"
-                            }, "I acknowledge that deleting this product will revoke access for existing users and confirm compliance with the Creator Economy guidelines."))), $ && x.createElement("div", {
-                                className: "tw-w-full tw-text-red tw-text-center"
-                            }, x.createElement("p", null, "Failed to delete product:"), x.createElement("code", {
-                                className: "tw-text-red"
-                            }, null !== (e = null === (t = U.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "".concat(a, " An error occurred")))), x.createElement("div", {
-                                className: "tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-flex-nowrap tw-w-full tw-gap-2"
-                            }, x.createElement("div", {
-                                className: "sm:tw-w-1/2"
-                            }, x.createElement(m.$n, {
-                                className: "tw-rounded-md tw-text-white tw-h-9 tw-border-0 tw-bg-button-bg-grey",
+                                className: "tw:text-sm tw:font-medium tw:text-white"
+                            }, "I acknowledge that deleting this product will revoke access for existing users and confirm compliance with the Creator Economy guidelines."))), $ && h.createElement("div", {
+                                className: "tw:w-full tw:text-red tw:text-center"
+                            }, h.createElement("p", null, "Failed to delete product:"), h.createElement("code", {
+                                className: "tw:text-red"
+                            }, null !== (e = null === (t = U.data) || void 0 === t || null === (t = t.error) || void 0 === t ? void 0 : t.message) && void 0 !== e ? e : "".concat(a, " An error occurred")))), h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:sm:flex-row tw:sm:justify-between tw:sm:flex-nowrap tw:w-full tw:gap-2"
+                            }, h.createElement("div", {
+                                className: "tw:sm:w-1/2"
+                            }, h.createElement(m.$n, {
+                                className: "tw:rounded-md tw:text-white tw:h-9 tw:border-0 tw:bg-button-bg-grey",
                                 onClick: V
-                            }, "Cancel")), x.createElement("div", {
-                                className: "sm:tw-w-1/2"
-                            }, x.createElement(m.$n, {
-                                className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-message-warning tw-text-white disabled:tw-bg-button-bg-grey disabled:tw-text-placeholder-text",
+                            }, "Cancel")), h.createElement("div", {
+                                className: "tw:sm:w-1/2"
+                            }, h.createElement(m.$n, {
+                                className: "tw:rounded-md tw:h-9 tw:border-0 tw:bg-message-warning tw:text-white tw:disabled:bg-button-bg-grey tw:disabled:text-placeholder-text",
                                 onClick: R,
                                 disabled: !k,
                                 loading: L
                             }, "Delete"))))
                         },
                         X = function() {
-                            return x.createElement(x.Fragment, null, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
-                            }, x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-w-full"
-                            }, x.createElement(m.M2, {
+                            return h.createElement(h.Fragment, null, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:w-full tw:items-center tw:sm:items-start tw:sm:flex-row"
+                            }, h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:justify-start tw:text-left tw:w-full"
+                            }, h.createElement(m.M2, {
                                 icon: I.faTriangleExclamation,
                                 size: "xl",
-                                className: "tw-h-[72px] tw-mb-4"
-                            }), x.createElement("p", {
-                                className: " tw-text-base tw-m-0 tw-text-center tw-mb-2"
-                            }, "This product is included in the following listings:"), x.createElement("div", {
-                                className: "tw-w-full tw-flex tw-flex-col tw-items-center tw-gap-2 tw-mb-9"
+                                className: "tw:h-[72px] tw:mb-4"
+                            }), h.createElement("p", {
+                                className: " tw:text-base tw:m-0 tw:text-center tw:mb-2"
+                            }, "This product is included in the following listings:"), h.createElement("div", {
+                                className: "tw:w-full tw:flex tw:flex-col tw:items-center tw:gap-2 tw:mb-9"
                             }, null == D ? void 0 : D.parentListings.map(function(e) {
-                                return x.createElement(O.A, {
+                                return h.createElement(O.A, {
                                     listingId: e
                                 })
-                            })), x.createElement("h2", {
-                                className: "heading tw-inline-block tw-w-full tw-text-base tw-text-center"
-                            }, "Please remove this item from these listings prior to deleting this item."), "avatar" === (null == D ? void 0 : D.productType) && x.createElement("p", {
-                                className: "tw-text-orange tw-text-base tw-text-center tw-mb-2"
-                            }, "Note: If a listing has already been purchased, you won't be able to remove the product from it, and deletion won't be possible."))), x.createElement("div", {
-                                className: "tw-flex tw-flex-col tw-w-full tw-gap-2 tw-items-center"
-                            }, x.createElement("div", {
-                                className: "tw-w-1/2"
-                            }, x.createElement(m.$n, {
-                                className: "tw-rounded-md tw-h-9 tw-border-0 tw-bg-button-bgtw-text-highlight",
+                            })), h.createElement("h2", {
+                                className: "heading tw:inline-block tw:w-full tw:text-base tw:text-center"
+                            }, "Please remove this item from these listings prior to deleting this item."), "avatar" === (null == D ? void 0 : D.productType) && h.createElement("p", {
+                                className: "tw:text-orange tw:text-base tw:text-center tw:mb-2"
+                            }, "Note: If a listing has already been purchased, you won't be able to remove the product from it, and deletion won't be possible."))), h.createElement("div", {
+                                className: "tw:flex tw:flex-col tw:w-full tw:gap-2 tw:items-center"
+                            }, h.createElement("div", {
+                                className: "tw:w-1/2"
+                            }, h.createElement(m.$n, {
+                                className: "tw:rounded-md tw:h-9 tw:border-0 tw:bg-button-bgtw:text-highlight",
                                 onClick: V,
                                 loading: L
                             }, "Understood"))))
                         };
-                    return x.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-w-full tw-h-full tw-gap-5"
+                    return h.createElement("div", {
+                        className: "tw:flex tw:flex-col tw:w-full tw:h-full tw:gap-5"
                     }, function() {
-                        if (S) return x.createElement("div", {
-                            className: "tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
-                        }, x.createElement(m.M2, {
+                        if (S) return h.createElement("div", {
+                            className: "tw:px-3 tw:pb-4 tw:pt-5 tw:flex tw:flex-col tw:w-full tw:items-center"
+                        }, h.createElement(m.M2, {
                             icon: P.z1,
                             spin: !0,
                             size: "2x"
@@ -249,7 +249,7 @@
                 var t, a = e.productData,
                     l = e.onCloseCallback,
                     n = void 0 === l ? function() {} : l,
-                    c = (0, x.useState)("info"),
+                    c = (0, h.useState)("info"),
                     i = (0, r.A)(c, 2),
                     s = i[0],
                     o = i[1],
@@ -260,13 +260,13 @@
                     }),
                     u = d.data,
                     w = (d.isFetching, d.isError, d.error, null !== (t = null == a ? void 0 : a.parentListings) && void 0 !== t ? t : []),
-                    p = (0, x.useCallback)(function(e) {
+                    p = (0, h.useCallback)(function(e) {
                         o(e)
                     }, []);
-                return x.createElement("div", {
-                    className: "tw-w-full"
-                }, x.createElement(f.A, {
-                    className: "tw--ml-2 tw--mt-4",
+                return h.createElement("div", {
+                    className: "tw:w-full"
+                }, h.createElement(f.A, {
+                    className: "tw:-ml-2 tw:-mt-4",
                     onChange: p,
                     tabs: [{
                         id: "info",
@@ -279,29 +279,29 @@
                     }],
                     selected: s,
                     justify: "start"
-                }), (null == a ? void 0 : a.assetDisabled) && x.createElement(m.$T, {
+                }), (null == a ? void 0 : a.assetDisabled) && h.createElement(m.$T, {
                     type: "warn",
                     title: "This avatar is disabled."
-                }, x.createElement("p", {
-                    className: "tw-mb-0 tw-ml-6"
-                }, "Existing buyers have lost access, and new purchases are temporarily disabled. Check your email inbox for instructions on how to proceed, or contact Support if you need further assistance.")), "info" === s && x.createElement("div", null, x.createElement("div", {
-                    className: "tw-bg-[#000] tw-p-4 tw-rounded-md tw-mb-3"
-                }, "Need to edit your avatar? Head over to ", x.createElement(N.N_, {
+                }, h.createElement("p", {
+                    className: "tw:mb-0 tw:ml-6"
+                }, "Existing buyers have lost access, and new purchases are temporarily disabled. Check your email inbox for instructions on how to proceed, or contact Support if you need further assistance.")), "info" === s && h.createElement("div", null, h.createElement("div", {
+                    className: "tw:bg-[#000] tw:p-4 tw:rounded-md tw:mb-3"
+                }, "Need to edit your avatar? Head over to ", h.createElement(N.N_, {
                     to: "/home/avatar/".concat(a.avatarId)
-                }, "the avatar page"), " to make changes."), x.createElement(M.A, {
+                }, "the avatar page"), " to make changes."), h.createElement(M.A, {
                     avatarData: u,
                     productType: "avatar"
-                })), "listings" === s && x.createElement("div", {
-                    className: "tw-gap-2 tw-w-full tw-grid tw-grid-cols-2 tw-mb-3"
+                })), "listings" === s && h.createElement("div", {
+                    className: "tw:gap-2 tw:w-full tw:grid tw:grid-cols-2 tw:mb-3"
                 }, w.length > 0 && w.map(function(e) {
-                    return x.createElement(O.A, {
+                    return h.createElement(O.A, {
                         key: e,
                         listingId: e,
                         showImage: !0
                     })
-                }), 0 === w.length && x.createElement("p", null, "No listings associated with this product.")), x.createElement(m.$n, {
+                }), 0 === w.length && h.createElement("p", null, "No listings associated with this product.")), h.createElement(m.$n, {
                     onClick: n,
-                    containerClasses: "tw-w-full"
+                    containerClasses: "tw:w-full"
                 }, "Done"))
             };
             var $ = a(75171),
@@ -314,33 +314,33 @@
                         n = void 0 === l ? function() {} : l,
                         r = e.updated,
                         c = void 0 !== r && r;
-                    return null === a ? null : x.createElement("div", null, x.createElement("div", {
-                        className: "tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
-                    }, x.createElement("div", null, x.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-w-full tw-items-center"
-                    }, x.createElement(m.Oo, {
+                    return null === a ? null : h.createElement("div", null, h.createElement("div", {
+                        className: "tw:flex tw:min-h-full tw:items-end tw:justify-center tw:p-4 tw:sm:items-center tw:sm:p-0"
+                    }, h.createElement("div", null, h.createElement("div", {
+                        className: "tw:flex tw:flex-col tw:w-full tw:items-center"
+                    }, h.createElement(m.Oo, {
                         alt: null == a ? void 0 : a.displayName,
                         imageId: (null == a ? void 0 : a.imageId) || (null == a ? void 0 : a.file) || null,
                         fallbackSrc: U(),
                         fitToCover: !0
-                    }), x.createElement("h2", {
-                        className: "heading tw-mt-5"
-                    }, "Product ", c ? "Updated" : "Created", "!"), x.createElement("p", {
-                        className: "tw-text-light-grey tw-text-center tw-mb-8 sm:tw-w-3/4"
-                    }, "Your udon product is all set! Continue in your Unity project. You will see this product available in your Udon products manager.")), x.createElement("div", {
-                        className: "tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-flex-nowrap sm:tw-px-6 tw-w-full tw-gap-2"
-                    }, x.createElement("div", {
-                        className: "sm:tw-w-1/2"
-                    }, x.createElement(N.N_, {
+                    }), h.createElement("h2", {
+                        className: "heading tw:mt-5"
+                    }, "Product ", c ? "Updated" : "Created", "!"), h.createElement("p", {
+                        className: "tw:text-light-grey tw:text-center tw:mb-8 tw:sm:w-3/4"
+                    }, "Your udon product is all set! Continue in your Unity project. You will see this product available in your Udon products manager.")), h.createElement("div", {
+                        className: "tw:flex tw:flex-col tw:sm:flex-row tw:sm:justify-between tw:sm:flex-nowrap tw:sm:px-6 tw:w-full tw:gap-2"
+                    }, h.createElement("div", {
+                        className: "tw:sm:w-1/2"
+                    }, h.createElement(N.N_, {
                         to: "https://creators.vrchat.com/economy/sdk/",
                         target: "_blank"
-                    }, x.createElement(m.$n, {
-                        className: "tw-rounded-md tw-text-white tw-border-0 tw-bg-button-bg-grey",
+                    }, h.createElement(m.$n, {
+                        className: "tw:rounded-md tw:text-white tw:border-0 tw:bg-button-bg-grey",
                         onClick: n
-                    }, "View Docs"))), x.createElement("div", {
-                        className: "sm:tw-w-1/2"
-                    }, x.createElement(m.$n, {
-                        className: "tw-rounded-md tw-border-0 tw-mb-3 disabled:tw-bg-button-bg-grey disabled:tw-text-placeholder-text",
+                    }, "View Docs"))), h.createElement("div", {
+                        className: "tw:sm:w-1/2"
+                    }, h.createElement(m.$n, {
+                        className: "tw:rounded-md tw:border-0 tw:mb-3 tw:disabled:bg-button-bg-grey tw:disabled:text-placeholder-text",
                         onClick: n
                     }, "Done"))))))
                 };
@@ -373,10 +373,10 @@
                 }
                 return e
             }
-            var _ = (0, x.lazy)(function() {
+            var _ = (0, h.lazy)(function() {
                     return a.e(3754).then(a.bind(a, 73754))
                 }),
-                Q = (0, x.lazy)(function() {
+                Q = (0, h.lazy)(function() {
                     return a.e(6811).then(a.bind(a, 6811))
                 });
             const X = function() {
@@ -389,50 +389,50 @@
                     I = (0, N.ok)(),
                     P = (0, r.A)(I, 2),
                     D = P[0],
-                    S = (P[1], (0, x.useState)("")),
+                    S = (P[1], (0, h.useState)("")),
                     O = (0, r.A)(S, 2),
                     T = O[0],
                     F = (O[1], (0, k.g)()),
                     M = F.paginationPage,
                     $ = F.productTab,
                     U = M ? Number(M) : 1,
-                    z = (0, x.useState)(D.get("sortBy") || null),
+                    z = (0, h.useState)(D.get("sortBy") || null),
                     B = (0, r.A)(z, 2),
                     X = B[0],
                     H = B[1],
-                    W = (0, x.useState)(D.get("orderBy") || "descending"),
+                    W = (0, h.useState)(D.get("orderBy") || "descending"),
                     Y = (0, r.A)(W, 2),
                     q = Y[0],
                     G = Y[1],
-                    K = x.useState({}),
+                    K = h.useState({}),
                     J = (0, r.A)(K, 2),
                     Z = J[0],
                     ee = J[1],
-                    te = x.useState(!1),
+                    te = h.useState(!1),
                     ae = (0, r.A)(te, 2),
                     le = ae[0],
                     ne = ae[1],
-                    re = x.useState(!1),
+                    re = h.useState(!1),
                     ce = (0, r.A)(re, 2),
                     ie = ce[0],
                     se = ce[1],
-                    oe = x.useState(!1),
+                    oe = h.useState(!1),
                     de = (0, r.A)(oe, 2),
                     ue = de[0],
                     me = de[1],
-                    we = x.useState(null),
+                    we = h.useState(null),
                     pe = (0, r.A)(we, 2),
                     fe = pe[0],
                     ge = pe[1],
-                    be = x.useState(null),
+                    be = h.useState(null),
                     ve = (0, r.A)(be, 2),
                     Ee = ve[0],
-                    he = ve[1],
-                    xe = x.useState(!1),
-                    ye = (0, r.A)(xe, 2),
+                    xe = ve[1],
+                    he = h.useState(!1),
+                    ye = (0, r.A)(he, 2),
                     Ne = (ye[0], ye[1]),
                     ke = (0, b.A)(T),
-                    Ce = ((0, x.useMemo)(function() {
+                    Ce = ((0, h.useMemo)(function() {
                         return {
                             sellerId: t.id,
                             n: 50,
@@ -469,7 +469,7 @@
                         })
                     }),
                     Fe = function() {
-                        ne(!1), ee({}), se(!1), ge(null), me(!1), Ne(!1), a((0, h.f6)())
+                        ne(!1), ee({}), se(!1), ge(null), me(!1), Ne(!1), a((0, x.f6)())
                     },
                     Me = function() {
                         var e = (0, n.A)(d().mark(function e(t) {
@@ -487,7 +487,7 @@
                                                 })), ee({
                                                     isEditing: !1,
                                                     isCreating: !1
-                                                }), f || (a((0, h.Qt)()), ge(r), se(!0), me(o))
+                                                }), f || (a((0, x.Qt)()), ge(r), se(!0), me(o))
                                             }, e.prev = 2, !o) {
                                             e.next = 7;
                                             break
@@ -535,7 +535,7 @@
                             return e.apply(this, arguments)
                         }
                     }(),
-                    Le = (0, x.useCallback)(function(e) {
+                    Le = (0, h.useCallback)(function(e) {
                         return X === e
                     }, [X]),
                     $e = function() {
@@ -550,7 +550,7 @@
                             return d().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return e.next = 2, a((0, h.xl)(t));
+                                        return e.next = 2, a((0, x.xl)(t));
                                     case 2:
                                         je({
                                             title: "Edit Product",
@@ -567,7 +567,7 @@
                             return e.apply(this, arguments)
                         }
                     }();
-                return x.createElement(x.Fragment, null, x.createElement(m.Qc, null, "My Products"), x.createElement(m.fI, null, x.createElement(f.A, {
+                return h.createElement(h.Fragment, null, h.createElement(m.Qc, null, "My Products"), h.createElement(m.fI, null, h.createElement(f.A, {
                     justify: "left",
                     tabs: [{
                         name: "Available Products",
@@ -578,20 +578,20 @@
                         to: "../products/moderation/page/1",
                         condition: !0
                     }]
-                })), x.createElement(m.fI, {
-                    className: "tw-justify-between tw-gap-x-5 tw-gap-y-3 tw-flex-wrap"
-                }, x.createElement("div", null), x.createElement(m.$n, {
+                })), h.createElement(m.fI, {
+                    className: "tw:justify-between tw:gap-x-5 tw:gap-y-3 tw:flex-wrap"
+                }, h.createElement("div", null), h.createElement(m.$n, {
                     "aria-label": "Create Product",
-                    className: "tw-px-2",
+                    className: "tw:px-2",
                     onClick: $e
-                }, x.createElement(m.M2, {
+                }, h.createElement(m.M2, {
                     icon: c.QL,
                     size: "1x"
-                }), " Create Product")), x.createElement(x.Suspense, {
-                    fallback: x.createElement(p.A, {
+                }), " Create Product")), h.createElement(h.Suspense, {
+                    fallback: h.createElement(p.A, {
                         loading: !0
                     })
-                }, !$ && x.createElement(_, {
+                }, !$ && h.createElement(_, {
                     currentUser: t,
                     searchValue: T,
                     currentPage: U,
@@ -606,7 +606,7 @@
                         })
                     },
                     viewAvatarDetailsCallback: function(e) {
-                        he(e), Ne(!0), je({
+                        xe(e), Ne(!0), je({
                             title: "Product Views",
                             data: e,
                             isViewingAvatarDetails: !0
@@ -643,12 +643,12 @@
                             return Le(e) ? G("descending" === q ? "ascending" : "descending") : (H(e), G("ascending"))
                         }(e)
                     }
-                }), "moderation" === $ && x.createElement(Q, {
+                }), "moderation" === $ && h.createElement(Q, {
                     sortBy: X,
                     orderBy: q,
                     currentUser: t,
                     currentPage: U
-                })), x.createElement(m.aF, {
+                })), h.createElement(m.aF, {
                     title: o || Z.title,
                     onClose: Fe,
                     isVisible: le,
@@ -657,24 +657,24 @@
                     centered: !1,
                     overflow: "auto",
                     disableBackdropClick: !0,
-                    className: "tw-bg-black"
-                }, le && Z.isCreating && x.createElement(C.A, {
+                    className: "tw:bg-black"
+                }, le && Z.isCreating && h.createElement(C.A, {
                     onClose: Fe
-                }), le && Z.isEditing && x.createElement(A.default, {
+                }), le && Z.isEditing && h.createElement(A.default, {
                     product: Z.data,
                     onClose: Fe,
                     isEditing: !0,
                     onSubmit: Me,
                     user: t
-                }), le && ie && x.createElement(V, {
+                }), le && ie && h.createElement(V, {
                     isOpen: ie,
                     createdProduct: fe,
                     updated: ue,
                     closeModalCallback: Fe
-                }), le && Z.isDeleting && x.createElement(j, {
+                }), le && Z.isDeleting && h.createElement(j, {
                     productId: null === (e = Z.data) || void 0 === e ? void 0 : e.id,
                     onCancelCallback: Fe
-                }), le && Z.isViewingAvatarDetails && x.createElement(L, {
+                }), le && Z.isViewingAvatarDetails && h.createElement(L, {
                     productData: Ee,
                     onCloseCallback: Fe
                 })))
@@ -700,17 +700,17 @@
                 g = new RegExp("^".concat(p.w.AUTHOR));
             const b = function(e) {
                 var t, a, i, b, v, E = e.avatarData,
-                    h = void 0 === E ? null : E,
-                    x = e.productType;
-                if (null === h) return null;
+                    x = void 0 === E ? null : E,
+                    h = e.productType;
+                if (null === x) return null;
                 var y = (0, d.wA)(),
                     N = o.useMemo(function() {
-                        return null == h ? void 0 : h.tags.filter(function(e) {
+                        return null == x ? void 0 : x.tags.filter(function(e) {
                             return e.startsWith(p.w.AUTHOR)
                         }).map(function(e) {
                             return e.replace(g, "")
                         })
-                    }, [null == h ? void 0 : h.tags]),
+                    }, [null == x ? void 0 : x.tags]),
                     k = function() {
                         var e = (0, l.A)(s().mark(function e(t, a) {
                             return s().wrap(function(e) {
@@ -736,21 +736,21 @@
                         }
                     }();
                 return o.createElement("form", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, o.createElement(m.fv, {
-                    className: "tw-mb-8"
+                    className: "tw:mb-8"
                 }, o.createElement("h2", {
-                    className: "tw-text-lg tw-mb-3"
+                    className: "tw:text-lg tw:mb-3"
                 }, "Avatar Detail"), o.createElement(m.fI, {
-                    className: "tw-gap-5 tw-mb-5 tw-flex-col md:tw-flex-row"
+                    className: "tw:gap-5 tw:mb-5 tw:flex-col tw:md:flex-row"
                 }, o.createElement(m.fv, null, o.createElement(m.Oo, {
-                    imageId: h.thumbnailImageUrl,
+                    imageId: x.thumbnailImageUrl,
                     fitToCover: !0,
                     alt: "Product Thumbnail",
                     width: 285,
-                    className: "tw-bg-grey tw-text-[#404C58]"
+                    className: "tw:bg-grey tw:text-[#404C58]"
                 })), o.createElement(m.fv, {
-                    className: "tw-flex-1 tw-gap-5"
+                    className: "tw:flex-1 tw:gap-5"
                 }, o.createElement(m.fv, null, o.createElement("label", {
                     htmlFor: "name"
                 }, "Product Name"), o.createElement(m.pd, {
@@ -760,84 +760,84 @@
                     },
                     maxLength: 64,
                     id: "name",
-                    value: h.name,
+                    value: x.name,
                     disabled: !0
                 })), o.createElement(m.fI, {
-                    className: "tw-gap-2"
+                    className: "tw:gap-2"
                 }, o.createElement(m.fv, {
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }, o.createElement("p", {
-                    className: "tw-mb-2"
-                }, "Primary Style"), !(null !== (t = h.styles) && void 0 !== t && t.primary) && o.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No primary style!"), (null === (a = h.styles) || void 0 === a ? void 0 : a.primary) && o.createElement("div", {
-                    className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, o.createElement("span", null, h.styles.primary))), o.createElement(m.fv, {
-                    className: "tw-flex-1"
+                    className: "tw:mb-2"
+                }, "Primary Style"), !(null !== (t = x.styles) && void 0 !== t && t.primary) && o.createElement("small", {
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
+                }, "No primary style!"), (null === (a = x.styles) || void 0 === a ? void 0 : a.primary) && o.createElement("div", {
+                    className: "tw:mb-0 tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block tw:w-fit"
+                }, o.createElement("span", null, x.styles.primary))), o.createElement(m.fv, {
+                    className: "tw:flex-1"
                 }, o.createElement("p", {
-                    className: "tw-mb-2"
-                }, "Secondary Style"), !(null !== (i = h.styles) && void 0 !== i && i.secondary) && o.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
-                }, "No secondary style!"), (null === (b = h.styles) || void 0 === b ? void 0 : b.secondary) && o.createElement("div", {
-                    className: "tw-mb-0 tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block tw-w-fit"
-                }, h.styles.secondary))), o.createElement(m.fv, null, o.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
+                }, "Secondary Style"), !(null !== (i = x.styles) && void 0 !== i && i.secondary) && o.createElement("small", {
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
+                }, "No secondary style!"), (null === (b = x.styles) || void 0 === b ? void 0 : b.secondary) && o.createElement("div", {
+                    className: "tw:mb-0 tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block tw:w-fit"
+                }, x.styles.secondary))), o.createElement(m.fv, null, o.createElement("p", {
+                    className: "tw:mb-2"
                 }, "Tags"), o.createElement(m.fI, {
-                    className: "tw-flex-wrap tw-gap-2"
+                    className: "tw:flex-wrap tw:gap-2"
                 }, 0 === (null == N ? void 0 : N.length) && o.createElement("small", {
-                    className: "tw-text-placeholder-text tw-mb-0 tw-italic"
+                    className: "tw:text-placeholder-text tw:mb-0 tw:italic"
                 }, "No tags!"), null == N ? void 0 : N.map(function(e) {
                     return o.createElement("div", {
                         key: e,
-                        className: "tw-leading-none tw-max-h-[50px] tw-break-all tw-p-2 tw-bg-grey tw-rounded-md tw-inline-block"
+                        className: "tw:leading-none tw:max-h-[50px] tw:break-all tw:p-2 tw:bg-grey tw:rounded-md tw:inline-block"
                     }, o.createElement("span", null, e))
                 }))))), o.createElement(m.fv, {
-                    className: "tw-gap-5"
-                }, h.productId && o.createElement(m.fv, {
-                    className: "tw-mb-5"
+                    className: "tw:gap-5"
+                }, x.productId && o.createElement(m.fv, {
+                    className: "tw:mb-5"
                 }, o.createElement("label", {
                     htmlFor: "id",
-                    className: "tw-mb-2 tw-flex tw-flex-row"
+                    className: "tw:mb-2 tw:flex tw:flex-row"
                 }, "Product ID", o.createElement("div", {
-                    className: "tw-group tw-relative tw-ml-1"
+                    className: "tw:group tw:relative tw:ml-1"
                 }, o.createElement(m.M2, {
                     icon: r.iW,
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }), o.createElement("span", {
-                    className: "tw-pointer-events-none tw-z-50 tw-absolute tw--top-14 tw--left-20 sm:tw--top-7 sm:tw-left-5 tw-w-[240px] tw-text-xs tw-rounded tw-bg-gray-900 tw-px-2 tw-py-1 tw-font-medium tw-text-gray-50 tw-opacity-0 tw-shadow tw-transition-opacity group-hover:tw-opacity-100"
+                    className: "tw:pointer-events-none tw:z-50 tw:absolute tw:-top-14 tw:-left-20 tw:sm:-top-7 tw:sm:left-5 tw:w-[240px] tw:text-xs tw:rounded-xs tw:bg-gray-900 tw:px-2 tw:py-1 tw:font-medium tw:text-gray-50 tw:opacity-0 tw:shadow-xs tw:transition-opacity tw:group-hover:opacity-100"
                 }, "This unique ID links your Udon product to the VRChat Worlds SDK, allowing you to track ownership within your world."))), o.createElement(m.fI, {
-                    className: "tw-gap-2"
+                    className: "tw:gap-2"
                 }, o.createElement(m.pd, {
                     type: "text",
                     id: "id",
-                    value: h.productId,
+                    value: x.productId,
                     disabled: !0,
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }), o.createElement(m.$n, {
                     type: "button",
-                    className: "tw-w-[40px] tw-h-[40px]",
+                    className: "tw:w-[40px] tw:h-[40px]",
                     onClick: function(e) {
-                        return k(e, h.productId)
+                        return k(e, x.productId)
                     }
                 }, o.createElement(m.M2, {
                     icon: n.jP
-                })))), x && o.createElement(m.fv, null, o.createElement("label", {
+                })))), h && o.createElement(m.fv, null, o.createElement("label", {
                     htmlFor: "price",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Product Type"), o.createElement(m.fI, {
-                    className: "tw-gap-3"
+                    className: "tw:gap-3"
                 }, o.createElement("div", {
-                    className: "tw-rounded-full tw-w-[90px] tw-h-[90px] tw-bg-[#303135]"
+                    className: "tw:rounded-full tw:w-[90px] tw:h-[90px] tw:bg-[#303135]"
                 }, o.createElement("img", {
                     alt: "udon logo",
                     width: "90",
-                    src: w.si[x].image
+                    src: w.si[h].image
                 })), o.createElement(m.fv, {
-                    className: "tw-items-center tw-justify-center"
+                    className: "tw:items-center tw:justify-center"
                 }, o.createElement("p", {
-                    className: "tw-mb-0"
-                }, o.createElement("strong", null, w.si[x].label), o.createElement("br", null), w.si[x].text, o.createElement("br", null), o.createElement("a", {
-                    href: w.si[x].redirect,
+                    className: "tw:mb-0"
+                }, o.createElement("strong", null, w.si[h].label), o.createElement("br", null), w.si[h].text, o.createElement("br", null), o.createElement("a", {
+                    href: w.si[h].redirect,
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn More"))))), o.createElement(m.fv, null, o.createElement("label", {
@@ -846,21 +846,21 @@
                     disabled: !0,
                     type: "textarea",
                     id: "description",
-                    inputClassName: "tw-h-[120px] tw-my-2",
+                    inputClassName: "tw:h-[120px] tw:my-2",
                     maxLength: 256,
-                    value: h.description
+                    value: x.description
                 })), o.createElement(m.fv, null, o.createElement("label", {
                     htmlFor: "acknowledgements"
                 }, "Acknowledgements"), o.createElement(m.TM, {
                     disabled: !0,
                     type: "textarea",
                     id: "acknowledgements",
-                    inputClassName: "tw-h-[90px] tw-my-2",
+                    inputClassName: "tw:h-[90px] tw:my-2",
                     maxLength: 256,
-                    value: null !== (v = null == h ? void 0 : h.acknowledgements) && void 0 !== v ? v : ""
+                    value: null !== (v = null == x ? void 0 : x.acknowledgements) && void 0 !== v ? v : ""
                 })))))
             }
         }
     }
 ]);
-//# sourceMappingURL=bde613bfb8df20d642f1e02bdbd91e2b21400bff37c84e7223ee46541737bf5c.js.map
+//# sourceMappingURL=00cecfee34b0c7d45fe000c57e8cc0216adca5adcdc9100bb2ece8bbb2c49fa7.js.map

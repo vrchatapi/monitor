@@ -476,14 +476,14 @@
                         }
                     }();
                 return C || U ? m.createElement("div", {
-                    className: "tw-border-dashed tw-border-2 tw-rounded-md tw-border-[#404C58] tw-h-[105px] tw-flex tw-items-center tw-justify-center"
+                    className: "tw:border-dashed tw:border-2 tw:rounded-md tw:border-[#404C58] tw:h-[105px] tw:flex tw:items-center tw:justify-center"
                 }, m.createElement(se.A, {
                     icon: le.z1,
                     spin: !0,
                     color: "#404C58",
                     width: "32"
                 })) : null === s ? m.createElement("div", {
-                    className: "tw-border-dashed tw-border-2 tw-rounded-md tw-border-[#404C58] tw-h-[105px] tw-flex tw-items-center tw-justify-center tw-cursor-pointer",
+                    className: "tw:border-dashed tw:border-2 tw:rounded-md tw:border-[#404C58] tw:h-[105px] tw:flex tw:items-center tw:justify-center tw:cursor-pointer",
                     onClick: function() {
                         return p.current.click()
                     },
@@ -495,7 +495,7 @@
                     color: "#404C58",
                     width: 32
                 }), m.createElement("input", {
-                    className: "tw-hidden",
+                    className: "tw:hidden",
                     type: "file",
                     accept: ".jpg, .jpeg, .png",
                     ref: p,
@@ -506,13 +506,13 @@
                     name: "additional-image__input",
                     "aria-label": "Upload additional image"
                 })) : m.createElement("div", {
-                    className: " tw-border-dashed tw-border-2 tw-rounded-md tw-border-[#404C58] tw-h-[105px] tw-flex tw-items-center tw-justify-center tw-cursor-grab tw-bg-cover tw-bg-center tw-relative ",
+                    className: " tw:border-dashed tw:border-2 tw:rounded-md tw:border-[#404C58] tw:h-[105px] tw:flex tw:items-center tw:justify-center tw:cursor-grab tw:bg-cover tw:bg-center tw:relative ",
                     style: {
                         backgroundImage: "url(".concat(k, ")")
                     },
                     "aria-label": "Additional Avatar Showcase"
                 }, m.createElement("span", {
-                    className: "tw-absolute tw-bottom-1 tw-right-1 tw-bg-dark-grey-transparent-90 tw-px-3 tw-py-1 tw-rounded tw-cursor-pointer hover:tw-bg-dark-grey tw-transition",
+                    className: "tw:absolute tw:bottom-1 tw:right-1 tw:bg-dark-grey-transparent-90 tw:px-3 tw:py-1 tw:rounded-xs tw:cursor-pointer tw:hover:bg-dark-grey tw:transition",
                     onClick: function() {
                         return T({
                             fileId: s.id
@@ -728,24 +728,24 @@
                     }(),
                     he = K || Y || te;
                 return m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full ".concat(t)
+                    className: "tw:flex tw:flex-col tw:w-full ".concat(t)
                 }, !he && function() {
                     if (!ve) return m.createElement("div", {
-                        className: "tw-w-full tw-h-72 tw-bg-grey tw-rounded-lg tw-flex tw-justify-center tw-items-center tw-flex-col tw-mb-4"
+                        className: "tw:w-full tw:h-72 tw:bg-grey tw:rounded-lg tw:flex tw:justify-center tw:items-center tw:flex-col tw:mb-4"
                     }, m.createElement(se.A, {
                         icon: ce.jb,
                         color: "#404C58",
                         width: 96
                     }), m.createElement(de.Ay, {
                         type: "button",
-                        className: "tw-h-9 tw-border-0 tw-px-7 tw-leading-none tw-mt-5 tw-rounded-md",
+                        className: "tw:h-9 tw:border-0 tw:px-7 tw:leading-none tw:mt-5 tw:rounded-md",
                         onClick: function() {
                             return y.current.click()
                         }
                     }, m.createElement(se.A, {
                         icon: ce.jb
                     }), " Upload Cover Image"), m.createElement("input", {
-                        className: "tw-hidden",
+                        className: "tw:hidden",
                         type: "file",
                         accept: ".jpg, .jpeg, .png",
                         ref: y,
@@ -761,7 +761,7 @@
                             fileId: e.id
                         });
                     return m.createElement("div", {
-                        className: "tw-w-full tw-h-72 tw-bg-grey tw-rounded-lg tw-flex tw-justify-center tw-items-center tw-flex-col tw-mb-4 tw-overflow-hidden tw-relative tw-cursor-grab",
+                        className: "tw:w-full tw:h-72 tw:bg-grey tw:rounded-lg tw:flex tw:justify-center tw:items-center tw:flex-col tw:mb-4 tw:overflow-hidden tw:relative tw:cursor-grab",
                         draggable: !0,
                         onDragStart: function() {
                             return me(0, e)
@@ -776,9 +776,9 @@
                             transform: 0 === z ? "scale(0.95)" : "scale(1)"
                         }
                     }, m.createElement("div", {
-                        className: "tw-relative"
+                        className: "tw:relative"
                     }, R && m.createElement("div", {
-                        className: "tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-bg-dark-grey tw-opacity-50"
+                        className: "tw:absolute tw:inset-0 tw:flex tw:items-center tw:justify-center tw:bg-dark-grey tw:opacity-50"
                     }, m.createElement(se.A, {
                         icon: le.z1,
                         color: "#FFFFFF",
@@ -797,7 +797,7 @@
                             display: R ? "none" : "block"
                         }
                     })), m.createElement("span", {
-                        className: "tw-absolute tw-bottom-4 tw-right-4 tw-bg-dark-grey-transparent-90 tw-px-3 tw-py-1 tw-rounded tw-cursor-pointer hover:tw-bg-dark-grey tw-transition",
+                        className: "tw:absolute tw:bottom-4 tw:right-4 tw:bg-dark-grey-transparent-90 tw:px-3 tw:py-1 tw:rounded-xs tw:cursor-pointer tw:hover:bg-dark-grey tw:transition",
                         onClick: function() {
                             return ge({
                                 fileId: e.id
@@ -813,20 +813,20 @@
                         icon: ie.yL,
                         width: 16
                     })), m.createElement("span", {
-                        className: "tw-absolute tw-bottom-4 tw-left-4 tw-bg-dark-grey-transparent-90 tw-px-3 tw-py-1 tw-rounded-md"
+                        className: "tw:absolute tw:bottom-4 tw:left-4 tw:bg-dark-grey-transparent-90 tw:px-3 tw:py-1 tw:rounded-md"
                     }, m.createElement(se.A, {
                         icon: oe.G0,
                         width: 16
                     }), " Cover Image"))
                 }(), he && m.createElement("div", {
-                    className: "tw-w-full tw-h-72 tw-bg-grey tw-rounded-lg tw-flex tw-justify-center tw-items-center tw-flex-col tw-mb-4"
+                    className: "tw:w-full tw:h-72 tw:bg-grey tw:rounded-lg tw:flex tw:justify-center tw:items-center tw:flex-col tw:mb-4"
                 }, m.createElement(se.A, {
                     icon: le.z1,
                     color: "#404C58",
                     width: "32",
                     spin: !0
                 })), m.createElement("div", {
-                    className: "tw-grid tw-grid-cols-5 tw-gap-4 tw-w-full"
+                    className: "tw:grid tw:grid-cols-5 tw:gap-4 tw:w-full"
                 }, function(e) {
                     for (var t = new Array(5).fill(null), r = 0; r < e.length && r < 5; r++) t[r] = e[r];
                     return t
@@ -1033,7 +1033,7 @@
                         }
                     }();
                 return m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-min-h-[30em] tw-overflow-hidden"
+                    className: "tw:flex tw:flex-col tw:w-full tw:min-h-[30em] tw:overflow-hidden"
                 }, h && m.createElement(ge.A, {
                     name: "image"
                 }), !h && (s || m.createElement(ve.A, {
@@ -1053,42 +1053,42 @@
                         n = e.confirmCallback,
                         a = e.cancelCallback;
                     return r ? m.createElement("div", {
-                        className: "tw-fixed tw-z-10 tw-inset-0 tw-overflow-y-auto"
+                        className: "tw:fixed tw:z-10 tw:inset-0 tw:overflow-y-auto"
                     }, m.createElement("div", {
-                        className: "tw-flex tw-items-end tw-justify-center tw-min-h-screen tw-pt-4 tw-px-4 tw-pb-20 tw-text-center sm:tw-block sm:tw-p-0"
+                        className: "tw:flex tw:items-end tw:justify-center tw:min-h-screen tw:pt-4 tw:px-4 tw:pb-20 tw:text-center tw:sm:block tw:sm:p-0"
                     }, m.createElement("div", {
-                        className: "tw-fixed tw-inset-0 tw-transition-opacity",
+                        className: "tw:fixed tw:inset-0 tw:transition-opacity",
                         "aria-hidden": "true"
                     }, m.createElement("div", {
-                        className: "tw-absolute tw-inset-0 tw-bg-dark-grey-transparent-90",
+                        className: "tw:absolute tw:inset-0 tw:bg-dark-grey-transparent-90",
                         onClick: a
                     })), m.createElement("span", {
-                        className: "tw-hidden sm:tw-inline-block sm:tw-align-middle sm:tw-h-screen",
+                        className: "tw:hidden tw:sm:inline-block tw:sm:align-middle tw:sm:h-screen",
                         "aria-hidden": "true"
                     }, "​"), m.createElement("div", {
-                        className: "tw-inline-block tw-align-bottom tw-bg-black tw-rounded-lg tw-text-left tw-overflow-hidden tw-shadow-xl tw-transform tw-transition-all sm:tw-my-8 sm:tw-align-middle sm:tw-max-w-[750px] sm:tw-w-full"
+                        className: "tw:inline-block tw:align-bottom tw:bg-black tw:rounded-lg tw:text-left tw:overflow-hidden tw:shadow-xl tw:transform tw:transition-all tw:sm:my-8 tw:sm:align-middle tw:sm:max-w-[750px] tw:sm:w-full"
                     }, m.createElement("div", {
-                        className: "tw-bg-grey tw-p-5 tw-flex tw-flex-row tw-justify-between tw-items-center"
+                        className: "tw:bg-grey tw:p-5 tw:flex tw:flex-row tw:justify-between tw:items-center"
                     }, m.createElement("h3", {
-                        className: "heading tw-text-white tw-font-bold tw-text-2xl tw-m-0"
+                        className: "heading tw:text-white tw:font-bold tw:text-2xl tw:m-0"
                     }, "Delete Avatar"), m.createElement(de.Ay, {
-                        className: "tw-w-8 tw-h-8 tw-rounded-lg tw-bg-button-bg-grey tw-text-white tw-flex tw-justify-center tw-items-center tw-border-0",
+                        className: "tw:w-8 tw:h-8 tw:rounded-lg tw:bg-button-bg-grey tw:text-white tw:flex tw:justify-center tw:items-center tw:border-0",
                         onClick: a
                     }, m.createElement(se.A, {
                         icon: J.faXmark
                     }))), m.createElement("div", {
-                        className: "tw-bg-black tw-px-5 tw-pt-5 tw-pb-4 sm:tw-p-6 sm:tw-pb-4"
+                        className: "tw:bg-black tw:px-5 tw:pt-5 tw:pb-4 tw:sm:p-6 tw:sm:pb-4"
                     }, m.createElement("div", {
-                        className: "sm:tw-flex sm:tw-items-start"
+                        className: "tw:sm:flex tw:sm:items-start"
                     }, m.createElement("div", {
-                        className: "tw-mt-3 tw-text-center sm:tw-mt-0 sm:tw-text-left"
+                        className: "tw:mt-3 tw:text-center tw:sm:mt-0 tw:sm:text-left"
                     }, m.createElement("p", {
-                        className: "tw-text-md tw-text-white tw-font-bold"
+                        className: "tw:text-md tw:text-white tw:font-bold"
                     }, "Are you sure you want to delete this avatar? This is NOT reversible.")))), m.createElement("div", {
-                        className: "tw-px-4 tw-py-4 tw-justify-between sm:tw-px-6 sm:tw-flex sm:tw-flex-row-reverse"
+                        className: "tw:px-4 tw:py-4 tw:justify-between tw:sm:px-6 tw:sm:flex tw:sm:flex-row-reverse"
                     }, m.createElement(de.Ay, {
                         danger: !0,
-                        className: "tw-w-full tw-justify-center tw-rounded-md tw-shadow-sm tw-px-4 tw-py-2 tw-bg-red-600 tw-hover:bg-red-700 tw-focus:outline-none tw-focus:ring-2 tw-focus:ring-offset-2 tw-focus:ring-red-500 sm:tw-ml-3 sm:tw-text-sm",
+                        className: "tw:w-full tw:justify-center tw:rounded-md tw:shadow-xs tw:px-4 tw:py-2 tw:bg-red-600 tw:hover:bg-red-700 tw:focus:outline-hidden tw:focus:ring-2 tw:focus:ring-offset-2 tw:focus:ring-red-500 tw:sm:ml-3 tw:sm:text-sm",
                         onClick: function() {
                             return n(t)
                         },
@@ -1097,7 +1097,7 @@
                         }
                     }, "Delete"), m.createElement(de.Ay, {
                         neutral: !0,
-                        className: "tw-mt-3 tw-w-full sm:tw-mt-0 tw-justify-center tw-rounded-md tw-shadow-sm tw-px-4 tw-py-2 tw-hover:bg-gray-50 tw-focus:outline-none tw-focus:ring-2 tw-focus:ring-offset-2 tw-focus:ring-indigo-500 sm:tw-text-sm",
+                        className: "tw:mt-3 tw:w-full tw:sm:mt-0 tw:justify-center tw:rounded-md tw:shadow-xs tw:px-4 tw:py-2 tw:hover:bg-gray-50 tw:focus:outline-hidden tw:focus:ring-2 tw:focus:ring-offset-2 tw:focus:ring-indigo-500 tw:sm:text-sm",
                         onClick: a,
                         containerStyles: {
                             width: "100%"
@@ -1352,7 +1352,7 @@
                     width: "750px",
                     centered: !1,
                     overflow: "auto",
-                    className: "tw-p-5 tw-bg-black"
+                    className: "tw:p-5 tw:bg-black"
                 }, m.createElement(Ie, {
                     avatarId: c,
                     isOpen: Ue,
@@ -1364,41 +1364,40 @@
                     }
                 }), m.createElement(U.aF, {
                     isVisible: qe,
-                    className: "tw-pt-0",
+                    className: "tw:pt-0",
                     onClose: function() {
                         return We(!1)
                     },
-                    title: "Upload a New Thumbnail",
-                    children: m.createElement(Ee, {
-                        imageTag: "avatarimage",
-                        onCloseCallback: function() {
-                            return We(!1)
-                        },
-                        onUploadedCallback: function(e) {
-                            return function(e) {
-                                try {
-                                    var t = e.versions,
-                                        r = t[t.length - 1].file.url,
-                                        n = (0, A.wO)({
-                                            fileUrl: r
-                                        }),
-                                        a = n.fileId,
-                                        l = n.fileVersion,
-                                        o = "".concat("https://api.vrchat.cloud", "/api/1/image/").concat(a, "/").concat(l, "/256");
-                                    _(Oe(Oe({}, H), {}, {
-                                        thumbnailImageUrl: o,
-                                        imageUrl: r
-                                    })), We(!1)
-                                } catch (e) {
-                                    return console.error("Failed to process the uploaded image data", e.message), null
-                                }
-                            }(e)
-                        }
-                    })
-                }), m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full"
+                    title: "Upload a New Thumbnail"
+                }, m.createElement(Ee, {
+                    imageTag: "avatarimage",
+                    onCloseCallback: function() {
+                        return We(!1)
+                    },
+                    onUploadedCallback: function(e) {
+                        return function(e) {
+                            try {
+                                var t = e.versions,
+                                    r = t[t.length - 1].file.url,
+                                    n = (0, A.wO)({
+                                        fileUrl: r
+                                    }),
+                                    a = n.fileId,
+                                    l = n.fileVersion,
+                                    o = "".concat("https://api.vrchat.cloud", "/api/1/image/").concat(a, "/").concat(l, "/256");
+                                _(Oe(Oe({}, H), {}, {
+                                    thumbnailImageUrl: o,
+                                    imageUrl: r
+                                })), We(!1)
+                            } catch (e) {
+                                return console.error("Failed to process the uploaded image data", e.message), null
+                            }
+                        }(e)
+                    }
+                })), m.createElement("div", {
+                    className: "tw:flex tw:flex-col tw:w-full"
                 }, m.createElement(we.A, {
-                    className: "tw--ml-2 tw--mt-4",
+                    className: "tw:-ml-2 tw:-mt-4",
                     onChange: st,
                     tabs: [{
                         id: "overview",
@@ -1412,28 +1411,30 @@
                     selected: q,
                     justify: "start"
                 }), m.createElement("div", {
-                    className: "tw-".concat("overview" === q ? "block" : "hidden", " tw-w-full")
+                    className: "tw:".concat("overview" === q ? "block" : "hidden", " tw:w-full")
                 }, m.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-w-full"
+                    className: "tw:flex tw:flex-row tw:w-full"
                 }, m.createElement("div", {
-                    className: "tw-block tw-mr-5"
+                    className: "tw:block tw:mr-5"
                 }, m.createElement("button", {
                     onClick: function() {
                         return We(!0)
                     },
                     type: "button",
-                    className: "\n                  tw-bg-cover tw-bg-center tw-w-[286px] tw-h-[286px]  \n                  tw-border-0 tw-p-0 tw-rounded-2xl tw-relative tw-items-center tw-justify-center tw-flex tw-bg-transparent\n                ",
+                    className: "\n                  tw:bg-cover tw:bg-center tw:w-[286px] tw:h-[286px]  \n                  tw:border-0 tw:p-0 tw:rounded-2xl tw:relative tw:items-center tw:justify-center tw:flex tw:bg-transparent\n                ",
                     style: {
                         backgroundImage: "url(".concat((null == H ? void 0 : H.thumbnailImageUrl) || (null == H ? void 0 : H.imageUrl), ")")
                     }
                 })), m.createElement("div", {
-                    className: "tw-flex-grow"
+                    className: "tw:grow"
                 }, m.createElement("div", {
-                    className: "tw-mb-3"
+                    className: "tw:mb-3"
                 }, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "avatar-name-input",
+                    className: "tw:mb-2"
                 }, "Avatar Name"), m.createElement(U.pd, {
-                    className: "tw-mb-0",
+                    className: "tw:mb-0",
+                    id: "avatar-name-input",
                     type: "text",
                     placeholder: "Enter avatar name",
                     value: H.name,
@@ -1445,12 +1446,14 @@
                     maxLength: 128,
                     minLength: 1
                 }), m.createElement("span", {
-                    className: "tw-text-sm tw-text-placeholder-text"
+                    className: "tw:text-sm tw:text-placeholder-text"
                 }, null !== (t = H.name.length) && void 0 !== t ? t : 0, "/128")), m.createElement("div", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "avatar-description-textarea",
+                    className: "tw:mb-2"
                 }, "Avatar Description"), m.createElement(U.TM, {
+                    id: "avatar-description-textarea",
                     styleOverride: {
                         height: "120px"
                     },
@@ -1464,19 +1467,21 @@
                     maxLength: 1024,
                     minLength: 1
                 }), m.createElement("span", {
-                    className: "tw-text-sm tw-text-placeholder-text"
+                    className: "tw:text-sm tw:text-placeholder-text"
                 }, null !== (r = H.description.length) && void 0 !== r ? r : 0, "/1024")))), m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-mt-5"
+                    className: "tw:flex tw:flex-col tw:mt-5"
                 }, m.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-between tw-items-end"
+                    className: "tw:flex tw:flex-row tw:justify-between tw:items-end"
                 }, m.createElement("div", {
-                    className: "tw-w-80"
+                    className: "tw:w-80"
                 }, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "primary-style-select",
+                    className: "tw:mb-2"
                 }, "Primary Style ", m.createElement("span", {
-                    className: "tw-text-sm tw-text-placeholder-text"
+                    className: "tw:text-sm tw:text-placeholder-text"
                 }, "(optional)")), m.createElement("select", {
-                    className: "tw-w-full tw-rounded tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-border-r-8 tw-border-transparent",
+                    id: "primary-style-select",
+                    className: "tw:w-full tw:rounded-xs  tw:bg-button-bg tw:text-white tw:border-0 tw:p-2 tw:border-r-8 tw:border-transparent",
                     value: oe,
                     onChange: function(e) {
                         return ie(e.target.value)
@@ -1489,9 +1494,9 @@
                         value: null == e ? void 0 : e.id
                     }, null == e ? void 0 : e.styleName)
                 }))), m.createElement("div", {
-                    className: "tw-w-10"
+                    className: "tw:w-10"
                 }, m.createElement(U.$n, {
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     title: "Swap primary and secondary styles",
                     disabled: !oe && !ue,
                     onClick: function() {
@@ -1501,13 +1506,15 @@
                 }, m.createElement(U.M2, {
                     icon: ne.faRightLeft
                 }))), m.createElement("div", {
-                    className: "tw-w-80"
+                    className: "tw:w-80"
                 }, (oe || ue) && m.createElement(m.Fragment, null, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "secondary-style-select",
+                    className: "tw:mb-2"
                 }, "Secondary Style ", m.createElement("span", {
-                    className: "tw-text-sm tw-text-placeholder-text"
+                    className: "tw:text-sm tw:text-placeholder-text"
                 }, "(optional)")), m.createElement("select", {
-                    className: "tw-w-full tw-rounded tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-border-r-8 tw-border-transparent",
+                    id: "secondary-style-select",
+                    className: "tw:w-full tw:rounded-xs tw:bg-button-bg tw:text-white tw:border-0 tw:p-2 tw:border-r-8 tw:border-transparent",
                     value: ue,
                     onChange: function(e) {
                         return de(e.target.value)
@@ -1520,19 +1527,21 @@
                         value: null == e ? void 0 : e.id
                     }, null == e ? void 0 : e.styleName)
                 }))))), ut && m.createElement("span", {
-                    className: "tw-text-sm tw-text-red tw-mt-2"
+                    className: "tw:text-sm tw:text-red tw:mt-2"
                 }, "You must set a primary style in order to set a secondary style."), m.createElement("div", {
-                    className: "tw-mr-5 tw-mt-5"
+                    className: "tw:mr-5 tw:mt-5"
                 }, m.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "avatar-tags-input",
+                    className: "tw:mb-2"
                 }, "Tags"), m.createElement("span", {
-                    className: "tw-text-sm tw-text-placeholder-text tw-mb-2"
+                    className: "tw:text-sm tw:text-placeholder-text tw:mb-2"
                 }, "Tags help users discover your avatar more easily. You can add up to 10 custom tags for your avatar.")), m.createElement("div", {
-                    className: "tw-flex tw-flex-row"
+                    className: "tw:flex tw:flex-row"
                 }, m.createElement(U.pd, {
-                    className: "tw-mb-0 tw-flex-grow",
+                    className: "tw:mb-0 tw:grow",
+                    id: "avatar-tags-input",
                     type: "text",
                     placeholder: "Enter avatar tag",
                     onKeyUp: function(e) {
@@ -1553,7 +1562,7 @@
                     minLength: 1,
                     disabled: C.length >= 10
                 }), m.createElement(U.$n, {
-                    className: "tw-ml-2 tw-bg-button-bg tw-text-white tw-border-0 tw-p-2 tw-w-10 disabled:tw-cursor-not-allowed disabled:tw-opacity-50",
+                    className: "tw:ml-2 tw:bg-button-bg tw:text-white tw:border-0 tw:p-2 tw:w-10 tw:disabled:cursor-not-allowed tw:disabled:opacity-50",
                     onClick: function() {
                         Ke.current.focus();
                         var e = "".concat(xe.w.AUTHOR).concat(Ke.current.value);
@@ -1565,14 +1574,14 @@
                 }, m.createElement(U.M2, {
                     icon: re.QL
                 }))), m.createElement("div", {
-                    className: "tw-flex tw-gap-2 tw-mb-2 tw-flex-wrap"
+                    className: "tw:flex tw:gap-2 tw:mb-2 tw:flex-wrap"
                 }, ke.map(function(e) {
                     return m.createElement("div", {
                         key: e,
-                        className: "tw-flex tw-flex-row tw-items-center tw-justify-between tw-flex-wrap tw-mt-2 tw-min-w-[115px] tw-w-fit tw-bg-[#0A0A0D] tw-rounded-md tw-py-2 tw-px-3"
+                        className: "tw:flex tw:flex-row tw:items-center tw:justify-between tw:flex-wrap tw:mt-2 tw:min-w-[115px] tw:w-fit tw:bg-[#0A0A0D] tw:rounded-md tw:py-2 tw:px-3"
                     }, m.createElement("span", null, e.replace(je, "")), m.createElement(U.M2, {
                         icon: te.GR,
-                        className: "tw-ml-2 tw-cursor-pointer",
+                        className: "tw:ml-2 tw:cursor-pointer",
                         onClick: function() {
                             return Ae(ke.filter(function(t) {
                                 return t !== e
@@ -1580,11 +1589,12 @@
                         }
                     }))
                 })), m.createElement("div", null, m.createElement("label", {
-                    className: "tw-mb-2"
+                    htmlFor: "avatar-acknowledgements-textarea",
+                    className: "tw:mb-2"
                 }, "Acknowledgements"), m.createElement("p", {
-                    className: "tw-text-sm tw-text-placeholder-text tw-mb-2"
+                    className: "tw:text-sm tw:text-placeholder-text tw:mb-2"
                 }, "If you’ve used assets or work from other creators in your avatar,", m.createElement("span", {
-                    className: "tw-text-link-highlight tw-cursor-pointer tw-select-none tw-block",
+                    className: "tw:text-link-highlight tw:cursor-pointer tw:select-none tw:block",
                     onClick: function() {
                         return ze(!Ge)
                     },
@@ -1594,7 +1604,8 @@
                 }, "please acknowledge them here ", m.createElement(U.M2, {
                     icon: Ge ? ee.w2 : Z.Jt
                 }))), m.createElement(U.TM, {
-                    className: "tw-".concat(Ge ? "block" : "hidden", " tw-mb-2"),
+                    id: "avatar-acknowledgements-textarea",
+                    className: "tw:".concat(Ge ? "block" : "hidden", " tw:mb-2"),
                     styleOverride: {
                         height: "120px"
                     },
@@ -1608,7 +1619,7 @@
                     maxLength: 2048,
                     minLength: 1
                 }), m.createElement("div", {
-                    className: "".concat(Ge ? "tw-flex" : "tw-hidden", "  tw-items-center tw-cursor-pointer tw-mt-3")
+                    className: "".concat(Ge ? "tw:flex" : "tw:hidden", "  tw:items-center tw:cursor-pointer tw:mt-3")
                 }, m.createElement("input", {
                     id: "credits-checkbox",
                     type: "checkbox",
@@ -1617,25 +1628,27 @@
                         return Re(!Pe)
                     },
                     value: "acknowledge",
-                    className: "tw-mr-1 tw-w-7 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-cursor-pointer tw-border-[#677079] tw-rounded tw-accent-link-highlight tw-ring-link-highlight"
+                    className: "tw:mr-1 tw:w-7 tw:h-5 tw:text-link-highlight tw:bg-button-bg-grey tw:cursor-pointer tw:border-[#677079] tw:rounded-xs tw:accent-link-highlight tw:ring-link-highlight"
                 }), m.createElement("label", {
                     htmlFor: "credits-checkbox",
-                    className: "tw-text-sm tw-font-medium tw-text-white tw-cursor-pointer"
+                    className: "tw:text-sm tw:font-medium tw:text-white tw:cursor-pointer"
                 }, "I confirm that I have the necessary rights to use and distribute all the works mentioned here."))), m.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mb-6"
+                    className: "tw:border-hr-line-color tw:border-y-2 tw:w-full tw:mb-6"
                 }), m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-mb-5"
+                    className: "tw:flex tw:flex-col tw:mb-5"
                 }, m.createElement("label", {
-                    className: "tw-text-xl tw-font-bold tw-mb-3"
+                    htmlFor: "content-warnings-checkboxes",
+                    className: "tw:text-xl tw:font-bold tw:mb-3"
                 }, "Content Warnings"), m.createElement("div", {
-                    className: "tw-grid tw-grid-cols-2 tw-gap-2 tw-mt-2"
+                    id: "content-warnings-checkboxes",
+                    className: "tw:grid tw:grid-cols-2 tw:gap-2 tw:mt-2"
                 }, Object.entries(xe.z).map(function(e) {
                     var t = (0, l.A)(e, 2),
                         r = t[0],
                         a = t[1];
                     return m.createElement("label", {
                         key: r,
-                        className: "tw-flex tw-items-center tw-text-sm tw-font-medium tw-text-white tw-cursor-pointer"
+                        className: "tw:flex tw:items-center tw:text-sm tw:font-medium tw:text-white tw:cursor-pointer"
                     }, m.createElement("input", {
                         type: "checkbox",
                         value: r,
@@ -1645,19 +1658,19 @@
                                 return e !== r
                             }))
                         },
-                        className: "tw-mr-1 tw-w-7 tw-h-5 tw-text-link-highlight tw-bg-button-bg-grey tw-cursor-pointer tw-border-[#677079] tw-rounded tw-accent-link-highlight tw-ring-link-highlight"
+                        className: "tw:mr-1 tw:w-7 tw:h-5 tw:text-link-highlight tw:bg-button-bg-grey tw:cursor-pointer tw:border-[#677079] tw:rounded-xs tw:accent-link-highlight tw:ring-link-highlight"
                     }), a)
                 })))))), m.createElement("div", {
-                    className: "tw-".concat("gallery" === q ? "flex" : "hidden", " tw-container tw-flex-col")
+                    className: "tw:".concat("gallery" === q ? "flex" : "hidden", " tw:container tw:flex-col")
                 }, m.createElement("h2", {
                     className: "heading"
                 }, "Image Gallery"), m.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "Showcase your avatar with up to 6 images."), m.createElement("p", null, "Recommended resolution: 1920x1080px. Maximum file size: 1MB."), L && m.createElement("p", {
-                    className: "tw-rounded-lg tw-bg-[#000] tw-px-5 tw-py-4 tw-flex tw-justify-between tw-items-center"
+                    className: "tw:rounded-lg tw:bg-[#000] tw:px-5 tw:py-4 tw:flex tw:justify-between tw:items-center"
                 }, "You can drag images to reorder them", m.createElement(U.M2, {
                     icon: J.faXmark,
-                    className: "tw-ml-2 tw-cursor-pointer",
+                    className: "tw:ml-2 tw:cursor-pointer",
                     onClick: function() {
                         return R(!1)
                     }
@@ -1671,25 +1684,25 @@
                         return z(e)
                     }
                 })), m.createElement("div", {
-                    className: "tw-flex tw-justify-between tw-mt-5"
+                    className: "tw:flex tw:justify-between tw:mt-5"
                 }, m.createElement("div", {
-                    className: "tw-flex"
+                    className: "tw:flex"
                 }, m.createElement(U.$n, {
-                    className: "tw-mr-2 tw-px-4",
+                    className: "tw:mr-2 tw:px-4",
                     onClick: function() {
                         lt(), s()
                     },
                     neutral: !0
                 }, "Cancel"), m.createElement(U.$n, {
                     disabled: !p && !(null == x || !x.productId),
-                    className: "tw-mr-2 tw-bg-red-600 tw-text-white tw-px-4",
+                    className: "tw:mr-2 tw:bg-red-600 tw:text-white tw:px-4",
                     onClick: function() {
                         return De(!0)
                     },
                     danger: !0
                 }, "Delete Avatar")), m.createElement(U.$n, {
                     loading: et,
-                    className: "tw-bg-button-bg tw-px-4",
+                    className: "tw:bg-button-bg tw:px-4",
                     onClick: function() {
                         return it()
                     },
@@ -1948,7 +1961,7 @@
                 if (Y) return m.createElement(v.A, null, m.createElement(U.Qc, null, "Avatar"), m.createElement(U.$T, {
                     type: "error",
                     title: "Error",
-                    className: "tw-my-2"
+                    className: "tw:my-2"
                 }, (null == B || null === (tt = B.data) || void 0 === tt || null === (tt = tt.error) || void 0 === tt ? void 0 : tt.message) || "There was an error loading the avatar."));
                 if (!q || Qe && !q) return m.createElement(v.A, null, m.createElement(U.Qc, null, "Avatar"), m.createElement(D.A, {
                     loading: !0
@@ -2009,11 +2022,11 @@
                     onSellAvatar: ct,
                     onSetAvatarReleaseStatus: lt
                 }), (le || u) && m.createElement(U.fI, {
-                    className: "tw-mb-3"
+                    className: "tw:mb-3"
                 }, m.createElement(Le, null, m.createElement(U.N3, null, m.createElement("h4", {
-                    className: "tw-font-normal tw-mb-0"
+                    className: "tw:font-normal tw:mb-0"
                 }, "Content Warnings")), m.createElement(U.BW, null, m.createElement(U.fI, {
-                    className: "tw-w-full tw-flex-wrap tw-py-2 tw-gap-3"
+                    className: "tw:w-full tw:flex-wrap tw:py-2 tw:gap-3"
                 }, m.createElement(U.RF, {
                     tags: I,
                     isMod: u,
@@ -2031,13 +2044,13 @@
                     },
                     styleOverrides: Te
                 }))))), (le || u) && m.createElement(U.fI, {
-                    className: "tw-mb-3"
+                    className: "tw:mb-3"
                 }, m.createElement("div", null, m.createElement(U.N3, null, m.createElement("h4", {
-                    className: "tw-font-normal tw-mb-0"
+                    className: "tw:font-normal tw:mb-0"
                 }, "Impostors")), m.createElement(U.BW, {
-                    className: "tw-block"
+                    className: "tw:block"
                 }, m.createElement(U.fI, {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, m.createElement(K, {
                     avatar: q,
                     refetch: H
@@ -2050,7 +2063,7 @@
                     centered: !1,
                     overflow: "auto",
                     disableBackdropClick: !0,
-                    className: "tw-bg-black"
+                    className: "tw:bg-black"
                 }, m.createElement(T.A, {
                     onClose: st
                 })))
@@ -2274,4 +2287,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56f7daa5ba9f2b07ad4af77d04ee8612a09fdab870952f4bf393f46c9f1c6857.js.map
+//# sourceMappingURL=71366f6db08ad0fd2e6a98dd69d96e7ae956d984728c1f0765063c03f61cbf21.js.map

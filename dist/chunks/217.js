@@ -35,26 +35,26 @@
                 var n = a.product,
                     o = a.file;
                 return l.createElement(p.fv, {
-                    className: "tw-items-center tw-text-center tw-gap-5"
+                    className: "tw:items-center tw:text-center tw:gap-5"
                 }, l.createElement(p.Oo, {
                     imageId: n.imageId || o || null,
                     alt: n.displayName,
                     fallbackSrc: h(),
-                    className: "tw-w-[150px] tw-h-[150px]",
+                    className: "tw:w-[150px] tw:h-[150px]",
                     fitToCover: !0
                 }), l.createElement(p.fv, {
-                    className: "tw-max-w-[500px]"
+                    className: "tw:max-w-[500px]"
                 }, l.createElement("h4", null, "Product Created!"), l.createElement("p", null, "Your udon product is all set! Continue in your Unity project. You will see this product available in your Udon products manager.")), l.createElement(p.fI, {
-                    className: "tw-gap-3 tw-w-full"
+                    className: "tw:gap-3 tw:w-full"
                 }, l.createElement(p.$n, {
                     neutral: !0,
-                    containerClasses: "tw-flex-1"
+                    containerClasses: "tw:flex-1"
                 }, l.createElement(O.N_, {
                     to: "https://docs.vrchat.com/docs",
                     target: "_blank"
                 }, "View Docs")), l.createElement(p.$n, {
                     onClick: r,
-                    containerClasses: "tw-flex-1"
+                    containerClasses: "tw:flex-1"
                 }, "Done")))
             };
 
@@ -242,7 +242,7 @@
                         n((0, A.f6)()), r()
                     };
                 return l.createElement(p.fv, {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, l.createElement(l.Suspense, {
                     fallback: l.createElement("div", null, "Loading...")
                 }, function() {
@@ -834,4 +834,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2cc00c2ac31f6dfa1fe7185d39ae87e2a8cb64d608324c1f7a15a8a1a8347559.js.map
+//# sourceMappingURL=893d9939f123deaa26ec2171ce1dd78ceb3f998e51f3dac0b0575105fd0ca28c.js.map

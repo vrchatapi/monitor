@@ -807,7 +807,7 @@
                     className: "mx-0 mb-2"
                 }, "Manage your linked accounts.")), r.createElement(b.A, null, r.createElement(A.A, {
                     xs: "12",
-                    className: "mx-0 mb-2 tw-flex tw-gap-2"
+                    className: "mx-0 mb-2 tw:flex tw:gap-2"
                 }, n && r.createElement(k.A, {
                     disabled: Ke,
                     type: "button",
@@ -850,19 +850,19 @@
                     onClick: Be
                 }, "Link your Apple Account"))), r.createElement(b.A, {
                     id: "link-twitch",
-                    className: "tw-mt-6"
+                    className: "tw:mt-6"
                 }, r.createElement(A.A, {
                     xs: "12",
                     className: "mx-0 mb-2"
                 }, r.createElement("h5", {
-                    className: "tw-font-semibold tw-mb-2"
+                    className: "tw:font-semibold tw:mb-2"
                 }, "Twitch Drops"), i ? r.createElement("p", {
-                    className: "tw-text-sm tw-text-gray-300 tw-mb-3"
+                    className: "tw:text-sm tw:text-gray-300 tw:mb-3"
                 }, null != s && s.displayName ? r.createElement(r.Fragment, null, "Connected as ", r.createElement("strong", null, s.displayName), ". You're ready to receive Twitch Drops.") : r.createElement(r.Fragment, null, "Your Twitch account is linked. You're ready to receive Twitch Drops.")) : r.createElement("p", {
-                    className: "tw-text-sm tw-text-gray-300 tw-mb-3"
+                    className: "tw:text-sm tw:text-gray-300 tw:mb-3"
                 }, "Link your Twitch account to receive Twitch Drops rewards in VRChat.")), r.createElement(A.A, {
                     xs: "12",
-                    className: "mx-0 mb-2 tw-flex tw-gap-2"
+                    className: "mx-0 mb-2 tw:flex tw:gap-2"
                 }, i && r.createElement(k.A, {
                     disabled: Ke,
                     type: "button",
@@ -884,126 +884,126 @@
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5 tw-text-center"
+                    className: "text-center ty-my-5 tw:p-5 tw:text-center"
                 }, "Unlink Discord Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Do you want to unlink your Discord account from this VRChat account? You can link it again anytime."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: _e
                 }, "Unlink Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: null !== Y && G === I,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5"
+                    className: "text-center ty-my-5 tw:p-5"
                 }, "Link Discord Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Do you want to link your Discord account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: function() {
                         return Ve(Y)
                     }
                 }, "Link Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: G === z,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5 tw-text-center"
+                    className: "text-center ty-my-5 tw:p-5 tw:text-center"
                 }, "Unlink Google Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Do you want to unlink your Google account from this VRChat account? You can link it again anytime."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: Ge
                 }, "Unlink Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: null !== H && G === M,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5"
+                    className: "text-center ty-my-5 tw:p-5"
                 }, "Link Google Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Do you want to link your Google account to this VRChat account? You can unlink it anytime."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: function() {
                         return qe(H)
                     }
                 }, "Link Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: G === L,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center tw-my-5 tw-p-5 tw-text-center"
+                    className: "text-center tw:my-5 tw:p-5 tw:text-center"
                 }, "Unlink Twitch Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Are you sure you want to unlink your Twitch account? Unlinking may prevent future Twitch Drops from being delivered to your VRChat account."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: $e
                 }, "Unlink Twitch Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: null !== te && G === j,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5"
+                    className: "text-center ty-my-5 tw:p-5"
                 }, "Link Twitch Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Link your Twitch account to this VRChat account to receive Twitch Drops rewards."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     loading: Se,
                     onClick: function() {
@@ -1012,28 +1012,28 @@
                 }, "Link Twitch Account"), r.createElement(a.$n, {
                     onClick: Qe,
                     disabled: Se,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))), r.createElement(x.A, {
                     isOpen: G === q,
                     toggle: Qe,
                     centered: !0
                 }, r.createElement(N.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, r.createElement("h2", {
-                    className: "text-center ty-my-5 tw-p-5 tw-text-center"
+                    className: "text-center ty-my-5 tw:p-5 tw:text-center"
                 }, "Unlink Apple Account"), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, "Do you want to unlink your Apple account from this VRChat account? You can link it again anytime."), r.createElement("div", {
-                    className: "p-3 tw-text-center"
+                    className: "p-3 tw:text-center"
                 }, r.createElement("strong", null, f)), r.createElement("div", {
                     className: "px-3 pt-3"
                 }, r.createElement(a.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: Ye
                 }, "Unlink Account"), r.createElement(a.$n, {
                     onClick: Qe,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))))
             };
             var G = n(3569),
@@ -1060,20 +1060,20 @@
                     f = m.isFetching,
                     h = n || i || p;
                 if (a || s || f) return r.createElement("div", {
-                    className: "tw-py-20 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:py-20 tw:flex tw:items-center tw:justify-center"
                 }, r.createElement(Q.A, {
                     size: "5x"
                 }));
                 if (h) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
                     icon: $.faCircleQuestion
                 }), " Unable to determine your Age Verification status."), r.createElement(Y.z9, {
-                    className: "tw-w-full tw-mt-0",
+                    className: "tw:w-full tw:mt-0",
                     to: "/home/ageverification"
                 }, "Try Again"));
                 if (!u) return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
                     icon: G.faCircleInfo
                 }), " You must have an active VRChat Plus subscription in order to begin the verification process."), r.createElement(Y.z9, {
-                    className: "tw-w-full tw-mt-0",
+                    className: "tw:w-full tw:mt-0",
                     to: "https://hello.vrchat.com/vrchatplus"
                 }, "Learn More"));
                 var w = t.isAdult;
@@ -1083,21 +1083,21 @@
                         return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
                             icon: W.SG
                         }), " You have successfully verified your age.", w && " You may choose whether to display it on your profile."), w && r.createElement(Y.z9, {
-                            className: "tw-w-full tw-mt-0",
+                            className: "tw:w-full tw:mt-0",
                             to: "/home/user/me"
                         }, "Go to My Profile"));
                     case "uninitialized":
                         return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
                             icon: G.faCircleInfo
                         }), " As a VRC+ Subscriber you are eligible to get age verified so you can access age verified group instances."), r.createElement(Y.z9, {
-                            className: "tw-w-full tw-mt-0",
+                            className: "tw:w-full tw:mt-0",
                             to: "/home/ageverification"
                         }, "Learn More"));
                     default:
                         return r.createElement(r.Fragment, null, r.createElement("p", null, r.createElement(B.A, {
                             icon: G.faCircleInfo
                         }), " You can check your Age Verification status here."), r.createElement(Y.z9, {
-                            className: "tw-w-full tw-mt-0",
+                            className: "tw:w-full tw:mt-0",
                             to: "/home/ageverification"
                         }, "Check Status"))
                 }
@@ -1199,36 +1199,36 @@
                         s(1), p(null), g(!1), b({}), n()
                     };
                 return w ? r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full"
+                    className: "tw:flex tw:flex-col tw:w-full"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-items-baseline tw-mb-2"
+                    className: "tw:flex tw:items-baseline tw:mb-2"
                 }, r.createElement(a.M2, {
                     color: "#67D781",
-                    className: "tw-pr-2",
+                    className: "tw:pr-2",
                     icon: le.iW
                 }), r.createElement("h4", {
-                    className: "tw-text-[#67D781]"
+                    className: "tw:text-[#67D781]"
                 }, "Your claim has been submitted successfully, thank you!")), r.createElement("p", null, "We will look into it and email you for next possible steps."), r.createElement("div", {
-                    className: "tw-flex tw-w-full tw-mt-12"
+                    className: "tw:flex tw:w-full tw:mt-12"
                 }, r.createElement(a.$n, {
                     containerStyles: {
                         width: "100%"
                     },
                     onClick: C
                 }, "Done"))) : d ? r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full"
+                    className: "tw:flex tw:flex-col tw:w-full"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-items-baseline tw-mb-2"
+                    className: "tw:flex tw:items-baseline tw:mb-2"
                 }, r.createElement(a.M2, {
                     color: "#EE5454",
-                    className: "tw-pr-2",
+                    className: "tw:pr-2",
                     icon: le.iW
                 }), r.createElement("h4", {
-                    className: "tw-text-red"
+                    className: "tw:text-red"
                 }, "DMCA Claim Cannot Be Completed.")), r.createElement("p", null, d), r.createElement("div", {
-                    className: "tw-flex tw-w-full tw-mt-12"
+                    className: "tw:flex tw:w-full tw:mt-12"
                 }, r.createElement(a.$n, {
-                    className: "tw-mr-6",
+                    className: "tw:mr-6",
                     containerStyles: {
                         width: "50%"
                     },
@@ -1237,7 +1237,7 @@
                     },
                     neutral: !0
                 }, "Back"), r.createElement(a.$n, {
-                    className: "tw-ml-6",
+                    className: "tw:ml-6",
                     containerStyles: {
                         width: "50%"
                     },
@@ -1264,7 +1264,7 @@
                         resetForm: C
                     }
                 }, r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full"
+                    className: "tw:flex tw:flex-col tw:w-full"
                 }, t))
             };
 
@@ -1357,9 +1357,9 @@
                 };
                 return 3 !== x ? null : r.createElement(r.Fragment, null, r.createElement("label", {
                     htmlFor: "claim-description",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "A description of the copyright-protected work or other intellectual property right that you claim has been infringed", r.createElement(a.TM, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "claim-description",
                     value: null == N ? void 0 : N.description,
                     onChange: function(e) {
@@ -1369,9 +1369,9 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "claim-content-ids",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "The ID or URL of infringing content", r.createElement(a.ZB, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     value: null == N ? void 0 : N.contentIds,
                     validator: function(e) {
                         return de.test(e)
@@ -1383,9 +1383,9 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "claim-proof",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Provide your copyright work. Where can we see an authorized example of your work?", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "claim-proof",
                     onChange: function(e) {
                         return C(ue(ue({}, N), {}, {
@@ -1395,9 +1395,9 @@
                     value: null == N ? void 0 : N.proof
                 })), r.createElement("label", {
                     htmlFor: "claim-authority",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Authority to make complaint", r.createElement(a.ms, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "claim-authority",
                     trimToLength: !0,
                     allowMultiline: !0,
@@ -1408,9 +1408,9 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "claim-owner",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Copyright Owner Name (optional)", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "claim-owner",
                     value: null == N ? void 0 : N.copyrightOwnerName,
                     onChange: function(e) {
@@ -1419,9 +1419,9 @@
                         }))
                     }
                 })), r.createElement(he, {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, r.createElement("h4", {
-                    className: "tw-text-xl"
+                    className: "tw:text-xl"
                 }, "By checking these boxes I state that"), r.createElement(a.Sc, {
                     id: "owner",
                     checked: null == w ? void 0 : w.owner,
@@ -1455,7 +1455,7 @@
                 })), r.createElement("label", {
                     htmlFor: "claim-signature"
                 }, "Type your full name below which will act as your digital signature", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "claim-signature",
                     value: y.toUpperCase(),
                     onChange: function(e) {
@@ -1463,22 +1463,22 @@
                     },
                     pattern: null == S || null === (l = S.fullName) || void 0 === l ? void 0 : l.toUpperCase()
                 })), P ? null : r.createElement("div", {
-                    className: "tw-flex tw-items-center tw-bg-[#FF57671A] tw-mt-6 tw-rounded"
+                    className: "tw:flex tw:items-center tw:bg-[#FF57671A] tw:mt-6 tw:rounded"
                 }, r.createElement(a.M2, {
                     color: "#EE5454",
-                    className: "tw-px-2",
+                    className: "tw:px-2",
                     icon: le.iW
                 }), r.createElement("p", {
-                    className: "tw-text-red tw-py-2 tw-m-0"
+                    className: "tw:text-red tw:py-2 tw:m-0"
                 }, "Please select all the checkboxes if you want to proceed.")), r.createElement("div", {
-                    className: "tw-flex tw-w-full tw-mt-6"
+                    className: "tw:flex tw:w-full tw:mt-6"
                 }, r.createElement(a.$n, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     onClick: k,
                     containerStyles: we,
                     neutral: !0
                 }, "Back"), r.createElement(a.$n, {
-                    className: "tw-ml-2",
+                    className: "tw:ml-2",
                     disabled: !F || L,
                     containerStyles: we,
                     onClick: function() {
@@ -1509,7 +1509,7 @@
                     u = o.currentStep,
                     m = o.setFormError;
                 return 1 !== u ? null : r.createElement(r.Fragment, null, r.createElement("h6", {
-                    className: "tw-mb-6"
+                    className: "tw:mb-6"
                 }, "Are you"), r.createElement("fieldset", null, r.createElement("label", {
                     htmlFor: "content-owner"
                 }, r.createElement("input", {
@@ -1522,7 +1522,7 @@
                     }
                 }), "  Submitting a claim on content I own/authorize to act on behalf of the owner"), r.createElement("label", {
                     htmlFor: "content-other",
-                    className: "tw-mt-2"
+                    className: "tw:mt-2"
                 }, r.createElement("input", {
                     id: "content-other",
                     type: "radio",
@@ -1532,16 +1532,16 @@
                         return l(e.target.value)
                     }
                 }), "  Submitting a claim for someone else's content")), r.createElement("fieldset", {
-                    className: "tw-flex tw-w-full tw-mt-12"
+                    className: "tw:flex tw:w-full tw:mt-12"
                 }, r.createElement(a.$n, {
-                    className: "tw-mr-6",
+                    className: "tw:mr-6",
                     containerStyles: {
                         width: "50%"
                     },
                     onClick: i,
                     neutral: !0
                 }, "Cancel"), r.createElement(a.$n, {
-                    className: "tw-ml-6",
+                    className: "tw:ml-6",
                     containerStyles: {
                         width: "50%"
                     },
@@ -1596,24 +1596,24 @@
                     var e, t, n, r, a, l;
                     ye()(null !== (e = null == h ? void 0 : h.email) && void 0 !== e ? e : "") && (null == h || null === (t = h.fullName) || void 0 === t ? void 0 : t.length) > 0 && (null == h || null === (n = h.mailingAddress) || void 0 === n ? void 0 : n.length) > 0 && (null == h || null === (r = h.mailingCity) || void 0 === r ? void 0 : r.length) > 0 && (null == h || null === (a = h.mailingCountry) || void 0 === a ? void 0 : a.length) > 0 && (null == h || null === (l = h.phoneNumber) || void 0 === l ? void 0 : l.length) > 0 ? u(!0) : u(!1)
                 }, [h]), 2 !== f ? null : r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full"
+                    className: "tw:flex tw:flex-col tw:w-full"
                 }, n ? r.createElement(xe, null, r.createElement(a.M2, {
-                    className: "tw-px-2",
+                    className: "tw:px-2",
                     icon: le.iW
                 }), r.createElement("p", {
-                    className: "tw-m-0"
+                    className: "tw:m-0"
                 }, "All information, including your full legal name and email address, are part of the full takedown notice, which may be provided to the uploader. This information is required to complete a submission."), r.createElement(a.M2, {
                     color: "#fff",
-                    className: "tw-pr-2 tw-cursor-pointer",
+                    className: "tw:pr-2 tw:cursor-pointer",
                     icon: ve.GR,
                     onClick: function() {
                         return l(!1)
                     }
                 })) : null, r.createElement("label", {
                     htmlFor: "user-full-name",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Your Full Legal Name", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "user-full-name",
                     type: "text",
                     value: null == h ? void 0 : h.fullName,
@@ -1624,9 +1624,9 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "user-org-name",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Name of your organization (optional)", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "user-org-name",
                     type: "text",
                     value: null == h ? void 0 : h.organization,
@@ -1636,12 +1636,12 @@
                         }))
                     }
                 })), r.createElement("fieldset", {
-                    className: "tw-flex tw-flex-col tw-mb-4 tw-p-2 tw-border tw-border-solid tw-border-light-grey tw-rounded"
+                    className: "tw:flex tw:flex-col tw:mb-4 tw:p-2 tw:border tw:border-solid tw:border-light-grey tw:rounded"
                 }, r.createElement("legend", null, "Mailing Address"), r.createElement("span", {
-                    className: "tw-py-2 tw-block tw-text-sm tw-text-light-grey"
+                    className: "tw:py-2 tw:block tw:text-sm tw:text-light-grey"
                 }, "Please provide your complete postal address including street number, city, state/province, ZIP/postal code, and country."), r.createElement("label", {
                     htmlFor: "mailing-address",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Street", r.createElement(a.pd, {
                     id: "owner-mailing-address",
                     value: null == h ? void 0 : h.mailingAddress,
@@ -1651,10 +1651,10 @@
                         }))
                     }
                 })), r.createElement("div", {
-                    className: "tw-flex tw-gap-4"
+                    className: "tw:flex tw:gap-4"
                 }, r.createElement("label", {
                     htmlFor: "mailing-city",
-                    className: "tw-mb-4 tw-flex-grow"
+                    className: "tw:mb-4 tw:grow"
                 }, "City", r.createElement(a.pd, {
                     id: "owner-mailing-city",
                     value: null == h ? void 0 : h.mailingCity,
@@ -1665,7 +1665,7 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "mailing-state-province",
-                    className: "tw-mb-4 tw-flex-grow"
+                    className: "tw:mb-4 tw:grow"
                 }, "State/Province", r.createElement(a.pd, {
                     id: "owner-mailing-state-province",
                     value: null == h ? void 0 : h.mailingStateProvince,
@@ -1676,7 +1676,7 @@
                     }
                 })), r.createElement("label", {
                     htmlFor: "mailing-postal-code",
-                    className: "tw-mb-4 tw-flex-grow"
+                    className: "tw:mb-4 tw:grow"
                 }, "ZIP/Postal Code", r.createElement(a.pd, {
                     id: "owner-mailing-postal-code",
                     value: null == h ? void 0 : h.mailingPostalCode,
@@ -1697,9 +1697,9 @@
                     }
                 }))), r.createElement("label", {
                     htmlFor: "owner-phone",
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Phone Number", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "owner-phone",
                     type: "tel",
                     value: null == h ? void 0 : h.phoneNumber,
@@ -1711,7 +1711,7 @@
                 })), r.createElement("label", {
                     htmlFor: "owner-email"
                 }, "Email", r.createElement(a.pd, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     id: "owner-email",
                     type: "email",
                     value: null == h ? void 0 : h.email,
@@ -1721,14 +1721,14 @@
                         }))
                     }
                 })), r.createElement("div", {
-                    className: "tw-flex tw-w-full tw-mt-6"
+                    className: "tw:flex tw:w-full tw:mt-6"
                 }, r.createElement(a.$n, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     containerStyles: Ne,
                     onClick: p,
                     neutral: !0
                 }, "Back"), r.createElement(a.$n, {
-                    className: "tw-ml-2",
+                    className: "tw:ml-2",
                     containerStyles: Ne,
                     disabled: !s,
                     onClick: d
@@ -1920,19 +1920,19 @@
                         color: "#31545ebf",
                         type: "custom",
                         iconColor: "#6AE3F9",
-                        className: "tw-mb-4"
+                        className: "tw:mb-4"
                     }, r.createElement("div", {
-                        className: "tw-flex tw-gap-3 tw-flex-row"
+                        className: "tw:flex tw:gap-3 tw:flex-row"
                     }, r.createElement("p", {
-                        className: "tw-m-0"
+                        className: "tw:m-0"
                     }, r.createElement(a.M2, {
                         icon: le.iW,
                         color: "#6AE3F9",
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     })), r.createElement("div", {
-                        className: "tw-flex tw-flex-col"
+                        className: "tw:flex tw:flex-col"
                     }, r.createElement("span", null, c && r.createElement(r.Fragment, null, "You can only change your display name once per", " ", r.createElement("strong", {
-                        className: "tw-text-[#FFFF00]"
+                        className: "tw:text-[#FFFF00]"
                     }, 30, " days ", r.createElement("img", {
                         alt: "subscriptions",
                         width: "35",
@@ -1942,9 +1942,9 @@
                         width: "35",
                         src: at
                     }))), l && r.createElement("small", {
-                        className: "tw-text-placeholder-text"
+                        className: "tw:text-placeholder-text"
                     }, "Last changed: ", n, " days ago."), t && r.createElement("small", {
-                        className: "tw-text-placeholder-text"
+                        className: "tw:text-placeholder-text"
                     }, "You can revert your last display name change."))))
                 };
             lt.propTypes = {
@@ -2751,13 +2751,13 @@
                 return w ? r.createElement("div", {
                     className: "center-panel"
                 }, r.createElement("div", {
-                    className: "tw-py-2 tw-px-1"
+                    className: "tw:py-2 tw:px-1"
                 }, r.createElement("span", {
-                    className: "tw-text-placeholder-text"
+                    className: "tw:text-placeholder-text"
                 }, "Loading..."))) : r.createElement("div", {
                     className: "center-panel"
                 }, r.createElement("div", {
-                    className: "tw-py-2 tw-px-1"
+                    className: "tw:py-2 tw:px-1"
                 }, r.createElement(te.A, {
                     label: "Enable Reduced Profile Animations",
                     value: "reducedProfileAnimations",
@@ -3146,9 +3146,9 @@
                             }), " Cancel"))), r.createElement(b.A, null, r.createElement(A.A, null, r.createElement("hr", null))), r.createElement(b.A, null, r.createElement(Vt.A, {
                                 hidden: 0 !== this.state.step
                             }, r.createElement(b.A, null, r.createElement(A.A, {
-                                classname: "tw-flex"
+                                classname: "tw:flex"
                             }, r.createElement(b.A, null, r.createElement("div", {
-                                className: "tw-flex-[1_0_140px] tw-w-auto"
+                                className: "tw:flex-[1_0_140px] tw:w-auto"
                             }, r.createElement("p", null, r.createElement("b", null, "Step 1"), ": Install an authenticator app."), r.createElement("p", null, "You can use any TOTP authenticator app you like, but if you're new to this some good options include", " ", r.createElement("a", {
                                 href: "https://bitwarden.com/download/#bitwarden-authenticator-mobile",
                                 target: "_blank",
@@ -3166,11 +3166,11 @@
                                 target: "_blank",
                                 rel: "noreferrer"
                             }, "OTP Auth"), " ", "for iOS.")), r.createElement("div", {
-                                className: "tw-hidden xs:tw-block tw-flex-none tw-w-auto"
+                                className: "tw:hidden tw:xs:block tw:flex-none tw:w-auto"
                             }, r.createElement(a.M2, {
                                 icon: zt.dm,
                                 size: "4x",
-                                className: "tw-mr-1"
+                                className: "tw:mr-1"
                             }), r.createElement(a.M2, {
                                 icon: Mt.gg,
                                 size: "4x"
@@ -3878,4 +3878,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b1bc7d75af19393e0b1fb45b6dbd59496f90c79b034f7c7b4b65e933887250fa.js.map
+//# sourceMappingURL=3fe77b237e5e4fcb840b35f73d20d39c28a15e520a24ff1b898e625d46ef8835.js.map

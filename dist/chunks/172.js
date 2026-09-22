@@ -17,23 +17,23 @@
                         return e.productFlow
                     }).currentProduct;
                 return l ? c.createElement(n.fv, {
-                    className: "tw-items-center tw-text-center tw-gap-5"
+                    className: "tw:items-center tw:text-center tw:gap-5"
                 }, c.createElement(n.Oo, {
                     imageId: l.thumbnailImageUrl,
                     alt: l.name,
                     fallbackSrc: r(),
-                    className: "tw-w-[150px] tw-h-[150px] tw-rounded-lg",
+                    className: "tw:w-[150px] tw:h-[150px] tw:rounded-lg",
                     fitToCover: !0
                 }), c.createElement(n.fv, {
-                    className: "tw-max-w-[500px]"
+                    className: "tw:max-w-[500px]"
                 }, c.createElement("h4", null, "Avatar Submitted for Review"), c.createElement("p", null, "The review process can take up to 2 working days. You will be notified once it's approved and ready for listing, or if any modifications are needed.")), c.createElement(n.fI, {
-                    className: "tw-gap-3 tw-w-full"
+                    className: "tw:gap-3 tw:w-full"
                 }, c.createElement(n.$n, {
                     onClick: a,
-                    containerClasses: "tw-flex-1"
+                    containerClasses: "tw:flex-1"
                 }, "Done"))) : null
             }
         }
     }
 ]);
-//# sourceMappingURL=4a55ed500173e35b11cb6ed6aeaa39569bd686c296a742fcd0db20698b4d135a.js.map
+//# sourceMappingURL=e65824a7c7b1a4f727d861557d3ce49208674755fcb36c99f0311bb4ae9a3c59.js.map

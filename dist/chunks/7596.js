@@ -824,7 +824,7 @@
                         }), t()
                     }
                 }, [C, I]), u.createElement(re, {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, S && u.createElement(g.A, {
                     name: "emoji"
                 }), !S && (s || u.createElement(d.A, {
@@ -997,7 +997,7 @@
                         }), t()
                     }
                 }, [C, I]), u.createElement(x, {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, S && u.createElement(g.A, {
                     name: "sticker"
                 }), !S && (s || u.createElement(w.A, {
@@ -1479,46 +1479,46 @@
                         hideIcon: !0,
                         color: "#2E333D",
                         iconColor: "#F9FF00",
-                        className: "tw-w-full"
+                        className: "tw:w-full"
                     }, w.createElement("div", {
-                        className: "tw-flex tw-items-center tw-w-full tw-gap-2 tw-flex-wrap"
+                        className: "tw:flex tw:items-center tw:w-full tw:gap-2 tw:flex-wrap"
                     }, w.createElement(y.M2, {
                         icon: f.DW,
                         color: "#F9FF00",
-                        className: "tw-w-8 tw-h-8"
+                        className: "tw:w-8 tw:h-8"
                     }), w.createElement("p", {
-                        className: "tw-m-0 tw-flex-1"
+                        className: "tw:m-0 tw:flex-1"
                     }, Z ? "Your uploaded banners are temporarily locked." : "Your user icons are temporarily locked.", w.createElement("br", null), w.createElement("span", {
-                        className: "tw-text-light-grey"
+                        className: "tw:text-light-grey"
                     }, Z ? "Your banners are saved, but you'll need to join VRC+ to restore full access." : "Your icons are saved, but you'll need to join VRC+ to restore full access.")), w.createElement(h.N_, {
                         to: "https://hello.vrchat.com/vrchatplus",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, w.createElement(y.$n, {
                         icon: m.e6,
-                        className: "tw-bg-[#F9FF0066] tw-border-[#F9FF00] tw-text-white tw-px-4 sm:tw-w-[200px]"
+                        className: "tw:bg-[#F9FF0066] tw:border-[#F9FF00] tw:text-white tw:px-4 tw:sm:w-[200px]"
                     }, "Join VRC+")))),
                     vt = w.createElement(y.$T, {
                         type: "custom",
                         hideIcon: !0,
                         color: "#2E333D",
                         iconColor: "#F9FF00",
-                        className: "tw-p-5 tw-w-full"
+                        className: "tw:p-5 tw:w-full"
                     }, w.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-5 tw-w-full tw-flex-wrap"
+                        className: "tw:flex tw:items-center tw:gap-5 tw:w-full tw:flex-wrap"
                     }, w.createElement(y.M2, {
                         icon: f.DW,
                         color: "#F9FF00",
-                        className: "tw-w-8 tw-h-8"
+                        className: "tw:w-8 tw:h-8"
                     }), w.createElement("p", {
-                        className: "tw-m-0 tw-flex-1"
+                        className: "tw:m-0 tw:flex-1"
                     }, Z ? "Unlock custom profile banner uploads with VRC+" : "Unlock custom profile icon uploads with VRC+"), w.createElement(h.N_, {
                         to: "https://hello.vrchat.com/vrchatplus",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, w.createElement(y.$n, {
                         icon: m.e6,
-                        className: "tw-bg-[#F9FF0066] tw-border-[#F9FF00] tw-text-white tw-px-4 sm:tw-w-[200px]"
+                        className: "tw:bg-[#F9FF0066] tw:border-[#F9FF00] tw:text-white tw:px-4 tw:sm:w-[200px]"
                     }, "Join VRC+"))));
                 return w.createElement(j, null, !M && !D && w.createElement(y.N3, null, w.createElement("h2", null, wt.title)), w.createElement(U, null, w.createElement("div", {
                     className: (0, v.AH)({
@@ -1526,21 +1526,21 @@
                         styles: ".center-flex{display:flex;flex-flow:row wrap;padding:0!important;align-items:center;justify-content:center;}"
                     })
                 }, it && !M && !G && !J && !Z && w.createElement("div", {
-                    className: "tw-m-auto tw-text-center"
+                    className: "tw:m-auto tw:text-center"
                 }, w.createElement("h2", null, pt, " Currently Equipped Profile Picture")), w.createElement(y.fv, {
-                    className: "tw-mb-3 tw-gap-4"
+                    className: "tw:mb-3 tw:gap-4"
                 }, w.createElement(y.fI, {
-                    className: "tw-items-center tw-gap-4 tw-relative tw-w-full tw-flex-wrap"
+                    className: "tw:items-center tw:gap-4 tw:relative tw:w-full tw:flex-wrap"
                 }, (G || J) && !gt && w.createElement(y.$n, {
                     neutral: !0,
                     onClick: function() {
                         return G ? ye(!0) : Se(!0)
                     }
                 }, w.createElement(y.fI, {
-                    className: "tw-items-center tw-px-3"
+                    className: "tw:items-center tw:px-3"
                 }, w.createElement(y.M2, {
                     icon: u.Jm,
-                    className: "tw-me-2"
+                    className: "tw:me-2"
                 }), "Upload ", wt.title)), Ve && (Z || W) && !d && (M ? w.createElement(y.$n, {
                     neutral: !0,
                     disabled: gt,
@@ -1548,58 +1548,58 @@
                         gt || pe(!0)
                     }
                 }, w.createElement(y.fI, {
-                    className: "tw-items-center tw-px-3"
+                    className: "tw:items-center tw:px-3"
                 }, w.createElement(y.M2, {
                     icon: u.Jm,
-                    className: "tw-me-2"
+                    className: "tw:me-2"
                 }), "Upload ", wt.title)) : w.createElement(h.N_, {
                     to: gt ? "#" : "/home/upload".concat(wt.singularTitle)
                 }, w.createElement(y.$n, {
                     neutral: !0,
                     disabled: gt
                 }, w.createElement(y.fI, {
-                    className: "tw-items-center tw-px-3"
+                    className: "tw:items-center tw:px-3"
                 }, w.createElement(y.M2, {
                     icon: u.Jm,
-                    className: "tw-me-2"
+                    className: "tw:me-2"
                 }), "Upload ", wt.title)))), ze && (Z || W) && !d && ht, qe && (Z || W) && !d && vt, !M && it && !G && !J && !Z && w.createElement(y.$n, {
                     onClick: Z ? Xe : Je,
-                    className: "tw-px-3",
+                    className: "tw:px-3",
                     danger: !0
                 }, w.createElement(y.M2, {
                     icon: c.GR,
-                    className: "tw-me-2"
+                    className: "tw:me-2"
                 }), "Reset ", Z ? "Photo" : "Icon"), Z && !d && Ve && w.createElement("div", {
-                    className: "tw-relative"
+                    className: "tw:relative"
                 }, ot && rt && w.createElement("span", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, rt, "/", ot, " Uploaded Photos"), Y && Re && w.createElement("div", {
                     role: "tooltip",
                     "aria-label": "Looking to change your profile icon? Head to Profile Settings",
-                    className: "tw-flex tw-items-center tw-gap-2 tw-whitespace-normal tw-text-center tw-w-96 tw-top-[calc(100%+0.5rem)] tw-left-0 md:tw-left-[calc(100%+0.5rem)] md:tw-top-1/2 md:tw--translate-y-1/2 tw-absolute tw-py-3 tw-px-3 md:tw-px-4  tw-bg-dark-teal tw-text-white tw-text-xs tw-rounded tw-shadow-lg tw-z-10"
+                    className: "tw:flex tw:items-center tw:gap-2 tw:whitespace-normal tw:text-center tw:w-96 tw:top-[calc(100%+0.5rem)] tw:left-0 tw:md:left-[calc(100%+0.5rem)] tw:md:top-1/2 tw:md:-translate-y-1/2 tw:absolute tw:py-3 tw:px-3 tw:md:px-4  tw:bg-dark-teal tw:text-white tw:text-xs tw:rounded tw:shadow-lg tw:z-10"
                 }, w.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "Looking to change your profile icon? Head to ", w.createElement(h.N_, {
                     to: "/home/user/me?settings=true"
                 }, "Profile Settings")), w.createElement("button", {
                     type: "button",
                     "aria-label": "Dismiss tooltip",
-                    className: " tw-border-none tw-rounded-full tw-p-0",
+                    className: " tw:border-none tw:rounded-full tw:p-0",
                     onClick: Te
                 }, w.createElement("div", {
-                    className: "tw-absolute tw-left-1/2 tw-top-0 tw--translate-y-1/2 md:tw-top-1/2 tw-bg-dark-teal md:tw-left-0 md:tw--translate-x-1/2 tw-w-2 tw-h-2 tw-rotate-45"
+                    className: "tw:absolute tw:left-1/2 tw:top-0 tw:-translate-y-1/2 tw:md:top-1/2 tw:bg-dark-teal tw:md:left-0 tw:md:-translate-x-1/2 tw:w-2 tw:h-2 tw:rotate-45"
                 }), w.createElement(y.M2, {
                     icon: s.faCircleXmark,
-                    className: "tw-w-4 tw-h-4 tw-text-base"
+                    className: "tw:w-4 tw:h-4 tw:text-base"
                 }))))), gt && w.createElement("div", {
-                    className: "tw-mx-auto tw-py-1 tw-px-3 tw-uppercase tw-text-2xl tw-border-1 tw-border-solid tw-border-red tw-rounded-md tw-text-red tw-max-w-max"
+                    className: "tw:mx-auto tw:py-1 tw:px-3 tw:uppercase tw:text-2xl tw:border-1 tw:border-solid tw:border-red tw:rounded-md tw:text-red tw:max-w-max"
                 }, w.createElement(y.M2, {
                     icon: l.zp,
-                    className: "tw-mr-2"
+                    className: "tw:mr-2"
                 }), "You have reached your ", O, " limit!")), w.createElement("div", {
-                    className: "tw-m-auto tw-text-center"
+                    className: "tw:m-auto tw:text-center"
                 }, W && w.createElement("h2", null, pt, " Uploaded Icons (", tt, "/", st, " Icons)"), G && w.createElement("h2", null, pt, " Uploaded Emoji (", nt, "/", ut, " Emoji)"), J && w.createElement("h2", null, pt, " Uploaded Stickers (", at, "/", mt, " Stickers)")), d && rt > 0 && w.createElement("div", {
-                    className: "tw-m-auto tw-text-center"
+                    className: "tw:m-auto tw:text-center"
                 }, w.createElement(y.$n, {
                     className: "btn-danger",
                     onClick: Ge
@@ -1694,4 +1694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6224813985179089ada276c81beb1ebf8d1d322fe5d9a9541a764668f10d12c9.js.map
+//# sourceMappingURL=743d52f4e574b66d68613abdccc09011f28cb57dc6fd5bb3760dda5fd1cef016.js.map

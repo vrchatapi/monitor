@@ -54,7 +54,7 @@
                     }
                 }, w.createElement(l.$n, {
                     ref: h,
-                    className: "tw-h-9 tw-w-9",
+                    className: "tw:h-9 tw:w-9",
                     neutral: !0,
                     onClick: function() {
                         return v(!p)
@@ -66,27 +66,27 @@
                     style: {
                         transform: "translate(-".concat(120 - (null == b ? void 0 : b.width), "px, 0px)")
                     },
-                    className: "tw-pt-2 tw-min-w-min tw-w-[120px] tw-min-h-min tw-z-50 tw-absolute ".concat(p ? "tw-flex" : "tw-hidden")
+                    className: "tw:pt-2 tw:min-w-min tw:w-[120px] tw:min-h-min tw:z-50 tw:absolute ".concat(p ? "tw:flex" : "tw:hidden")
                 }, w.createElement(l.fv, {
-                    className: "tw-items-start tw-items-start tw-bg-button-bg-grey tw-border-2 tw-w-full tw-text-left tw-weight-[500]  tw-border-solid tw-border-[#666666] tw-rounded-lg"
+                    className: "tw:items-start tw:bg-button-bg-grey tw:border-2 tw:w-full tw:text-left tw:weight-[500]  tw:border-solid tw:border-[#666666] tw:rounded-lg"
                 }, "avatar" !== o && w.createElement("button", {
                     type: "button",
-                    className: "tw-text-left tw-px-3 tw-py-2 tw-w-full tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]",
+                    className: "tw:text-left tw:px-3 tw:py-2 tw:w-full tw:text-option-inactive tw:border-none tw:bg-transparent tw:text-white tw:hover:bg-[#666666]",
                     onClick: c
                 }, "Edit"), "avatar" === o && w.createElement("button", {
                     type: "button",
-                    className: "tw-text-left tw-px-3 tw-py-2 tw-w-full disabled:tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]",
+                    className: "tw:text-left tw:px-3 tw:py-2 tw:w-full tw:disabled:text-option-inactive tw:border-none tw:bg-transparent tw:text-white tw:hover:bg-[#666666]",
                     onClick: i
                 }, "View Details"), o === k.Wd.UDON && w.createElement("button", {
                     type: "button",
                     disabled: s,
                     onClick: r,
-                    className: "tw-text-left tw-px-3 tw-py-2 tw-w-full disabled:tw-text-option-inactive tw-border-none tw-bg-transparent tw-text-white hover:tw-bg-[#666666]"
+                    className: "tw:text-left tw:px-3 tw:py-2 tw:w-full tw:disabled:text-option-inactive tw:border-none tw:bg-transparent tw:text-white tw:hover:bg-[#666666]"
                 }, "Duplicate"), w.createElement("hr", {
-                    className: "tw-border-t-2 tw-m-0 tw-border-solid tw-w-full tw-border-white"
+                    className: "tw:border-t-2 tw:m-0 tw:border-solid tw:w-full tw:border-white"
                 }), w.createElement("button", {
                     type: "button",
-                    className: "tw-px-3 tw-py-2 tw-text-red tw-text-left tw-border-none tw-w-full tw-bg-transparent hover:tw-bg-[#666666] hover:tw-text-white",
+                    className: "tw:px-3 tw:py-2 tw:text-red tw:text-left tw:border-none tw:w-full tw:bg-transparent tw:hover:bg-[#666666] tw:hover:text-white",
                     onClick: a
                 }, "Delete"))))
             };
@@ -125,52 +125,52 @@
                             document.removeEventListener("mousedown", t)
                         }
                 }, [z]), w.createElement("div", {
-                    className: "tw-relative"
+                    className: "tw:relative"
                 }, w.createElement("div", {
-                    className: "tw-grid tw-gap-2 tw-items-center tw-grid-cols-3 @[540px]/my-products:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-mx-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
+                    className: "tw:grid tw:gap-2 tw:items-center tw:grid-cols-3 tw:@[540px]/my-products:grid-cols-5 tw:@[700px]/products-heading:grid-cols-7 tw:mx-5 tw:border-hr-line-color tw:border-b tw:border-t-0 tw:border-x-0 tw:border-solid"
                 }, w.createElement(l.fI, {
-                    className: "tw-flex tw-gap-1 tw-items-center tw-min-h-9 tw-my-2 @[800px]/my-products:tw-max-w-max tw-col-span-2"
+                    className: "tw:flex tw:gap-1 tw:items-center tw:min-h-9 tw:my-2 tw:@[800px]/my-products:max-w-max tw:col-span-2"
                 }, w.createElement(l.Oo, {
                     fitToCover: !0,
                     imageId: S,
-                    className: "tw-w-8 tw-h-8 tw-rounded-md tw-shrink-0",
+                    className: "tw:w-8 tw:h-8 tw:rounded-md tw:shrink-0",
                     containerColor: "#181B1F",
                     iconColor: "#404C58"
                 }), w.createElement("p", {
-                    className: "tw-truncate tw-mb-0 tw-overflow-hidden @[800px]/my-products:tw-whitespace-pre-line @[800px]/my-products:tw-break-words",
+                    className: "tw:truncate tw:mb-0 tw:overflow-hidden tw:@[800px]/my-products:whitespace-pre-line tw:@[800px]/my-products:wrap-break-word",
                     title: C
                 }, C)), w.createElement("div", {
-                    className: "tw-block tw-items-center tw-min-h-9 tw-py-2 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max tw-capitalize tw-hidden @[540px]/my-products:tw-flex"
+                    className: "tw:block tw:items-center tw:min-h-9 tw:py-2 tw:my-2 tw:truncate tw:@[800px]/my-products:max-w-max tw:capitalize tw:hidden tw:@[540px]/my-products:flex"
                 }, T), w.createElement("div", {
-                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
+                    className: "tw:items-center tw:min-h-9 tw:my-2 tw:truncate tw:max-w-[100px] tw:@[800px]/my-products:max-w-max tw:hidden tw:@[700px]/my-products:flex"
                 }, g()(k).format("ll")), w.createElement("div", {
-                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/my-products:tw-max-w-max tw-hidden @[700px]/my-products:tw-flex"
+                    className: "tw:items-center tw:min-h-9 tw:my-2 tw:truncate tw:max-w-[100px] tw:@[800px]/my-products:max-w-max tw:hidden tw:@[700px]/my-products:flex"
                 }, g()(D).format("ll")), !M && w.createElement("div", {
-                    className: "tw-items-center tw-min-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
+                    className: "tw:items-center tw:min-h-9 tw:my-2 tw:truncate tw:@[800px]/my-products:max-w-max tw:@[700px]/products-heading:col-span-1 tw:hidden tw:@[540px]/my-products:flex"
                 }, w.createElement("span", {
-                    className: "tw-truncate tw-hidden @[700px]/products-heading:tw-block"
+                    className: "tw:truncate tw:hidden tw:@[700px]/products-heading:block"
                 }, P && P.length > 0 ? "Available in ".concat(P.length, " listings") : "Unlisted"), w.createElement("span", {
-                    className: "@[700px]/products-heading:tw-hidden tw-truncate"
+                    className: "tw:@[700px]/products-heading:hidden tw:truncate"
                 }, P && P.length > 0 ? "In ".concat(P.length, " listings") : "Unlisted")), M && w.createElement("div", {
-                    className: "tw-items-center tw-h-9 tw-my-2 tw-truncate @[800px]/my-products:tw-max-w-max @[700px]/products-heading:tw-col-span-1 tw-hidden @[540px]/my-products:tw-flex"
+                    className: "tw:items-center tw:h-9 tw:my-2 tw:truncate tw:@[800px]/my-products:max-w-max tw:@[700px]/products-heading:col-span-1 tw:hidden tw:@[540px]/my-products:flex"
                 }, w.createElement("span", {
-                    className: "tw-truncate"
+                    className: "tw:truncate"
                 }, w.createElement(l.M2, {
-                    className: "tw-text-orange",
+                    className: "tw:text-orange",
                     icon: v.zp
                 }), " ", w.createElement("span", {
-                    className: "tw-text-orange"
+                    className: "tw:text-orange"
                 }, "Disabled"), " ", w.createElement("button", {
                     id: "disabledTooltip-".concat(E),
                     type: "button",
-                    className: "tw-bg-transparent tw-border-none",
+                    className: "tw:bg-transparent tw:border-none",
                     onClick: function() {
                         return O(!z)
                     },
                     "aria-label": "Disabled avatar tooltip",
                     ref: U
                 }, w.createElement(l.M2, {
-                    className: "tw-text-placeholder-text",
+                    className: "tw:text-placeholder-text",
                     icon: p.iW
                 })), w.createElement(N.A, {
                     isOpen: z,
@@ -179,11 +179,11 @@
                         return O(!z)
                     },
                     trigger: "click",
-                    innerClassName: "tw-bg-black"
+                    innerClassName: "tw:bg-black"
                 }, "This product is currently unavailable due to an issue. Enter Edit mode to view more details and how to address the problem."))), w.createElement(l.fI, {
-                    className: "tw-min-h-9 tw-truncate tw-my-2 tw-max-w-[100px] tw-w-fit tw-gap-2"
+                    className: "tw:min-h-9 tw:truncate tw:my-2 tw:max-w-[100px] tw:w-fit tw:gap-2"
                 }, w.createElement(l.$n, {
-                    className: "tw-w-9",
+                    className: "tw:w-9",
                     neutral: !0,
                     onClick: function() {
                         navigator.clipboard.writeText(E).then(function() {
@@ -235,57 +235,57 @@
                 var e = t.createProduct,
                     a = void 0 === e ? function() {} : e;
                 return w.createElement(l.fv, {
-                    className: " tw-@container/product-info tw-text-center tw-gap-9 tw-mt-12"
+                    className: " tw:@container/product-info tw:text-center tw:gap-9 tw:mt-12"
                 }, w.createElement("div", null, w.createElement("h4", null, "Enhance and Monetize Your Worlds"), w.createElement("p", {
-                    className: "tw-mb-0 tw-text-xl"
+                    className: "tw:mb-0 tw:text-xl"
                 }, "The possibilities are endless, here are some ideas:")), w.createElement(l.fv, {
-                    className: "tw-flex-col @sm/product-info:tw-flex-row tw-justify-evenly tw-gap-12"
+                    className: "tw:flex-col tw:@sm/product-info:flex-row tw:justify-evenly tw:gap-12"
                 }, w.createElement(l.fv, {
-                    className: "tw-items-center"
+                    className: "tw:items-center"
                 }, w.createElement("div", {
-                    className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
+                    className: "tw:p-4 tw:bg-grey tw:items-center tw:rounded-full tw:w-[120px] tw:h-[120px] tw:flex tw:justify-center tw:mb-5"
                 }, w.createElement(l.M2, {
                     icon: S.vrcGhost,
-                    className: "tw-text-5xl",
+                    className: "tw:text-5xl",
                     role: "presentation",
                     alt: "",
                     color: "#9C9C9C"
                 })), w.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "Offer Custom Content"), w.createElement("p", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, "Transform your users' experiences with custom interactions and items, that bring your worlds to life.")), w.createElement(l.fv, {
-                    className: "tw-items-center"
+                    className: "tw:items-center"
                 }, w.createElement("div", {
-                    className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
+                    className: "tw:p-4 tw:bg-grey tw:items-center tw:rounded-full tw:w-[120px] tw:h-[120px] tw:flex tw:justify-center tw:mb-5"
                 }, w.createElement(l.M2, {
                     icon: S.vrcProductTicket,
-                    className: "tw-text-5xl",
+                    className: "tw:text-5xl",
                     role: "presentation",
                     alt: "",
                     color: "#9C9C9C"
                 })), w.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "Grant Access to Exclusive Events"), w.createElement("p", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, "Offer passes that provide time-limited access to exclusive events or areas of your world.")), w.createElement(l.fv, {
-                    className: "tw-items-center"
+                    className: "tw:items-center"
                 }, w.createElement("div", {
-                    className: "tw-p-4 tw-bg-grey tw-items-center tw-rounded-full tw-w-[120px] tw-h-[120px] tw-flex tw-justify-center tw-mb-5"
+                    className: "tw:p-4 tw:bg-grey tw:items-center tw:rounded-full tw:w-[120px] tw:h-[120px] tw:flex tw:justify-center tw:mb-5"
                 }, w.createElement(l.M2, {
                     icon: S.vrcProductKey,
-                    className: "tw-text-5xl",
+                    className: "tw:text-5xl",
                     role: "presentation",
                     alt: "",
                     color: "#9C9C9C"
                 })), w.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "Sell Unlockable Features and Upgrades"), w.createElement("p", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, "Introduce keys to unlock never-ending access to unique abilities and effects in your world."))), w.createElement(l.fv, {
-                    className: "tw-items-center"
+                    className: "tw:items-center"
                 }, w.createElement(l.$n, {
-                    containerClasses: "tw-mb-3 tw-w-[200px]",
+                    containerClasses: "tw:mb-3 tw:w-[200px]",
                     onClick: a
                 }, w.createElement(l.M2, {
                     icon: T.QL
@@ -361,11 +361,11 @@
                     if (j.includes(t)) return A(t)
                 }, [A]);
                 return w.createElement(w.Fragment, null, 0 !== (null == O ? void 0 : O.length) || F || 1 !== m ? w.createElement(w.Fragment, null, w.createElement("div", {
-                    className: "tw-@container/my-products tw-rounded-md tw-bg-grey tw-mt-5"
+                    className: "tw:@container/my-products tw:rounded-md tw:bg-grey tw:mt-5"
                 }, w.createElement("div", {
-                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/products-heading"
+                    className: "tw:w-full tw:min-w-max tw:table-auto tw:pb-1 tw:@container/products-heading"
                 }, w.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-3 @[540px]/products-heading:tw-grid-cols-5 @[700px]/products-heading:tw-grid-cols-7 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color tw-py-3 tw-pb-3 tw-mx-5"
+                    className: "tw:grid tw:gap-1 tw:grid-cols-3 tw:@[540px]/products-heading:grid-cols-5 tw:@[700px]/products-heading:grid-cols-7 tw:border-b tw:border-0 tw:border-solid tw:border-hr-line-color tw:py-3 tw:pb-3 tw:mx-5"
                 }, I.map(function(t) {
                     var e = t.label,
                         a = t.value,
@@ -377,35 +377,35 @@
                         m = void 0 !== u && u;
                     return w.createElement("span", {
                         key: a,
-                        className: (0, i.cx)("tw-font-normal tw-text-base", {
-                            "tw-text-light-white": G(a),
-                            "tw-text-light-grey": !G(a),
-                            "tw-hidden @[700px]/products-heading:tw-block": o,
-                            "tw-hidden @[540px]/products-heading:tw-block": m,
-                            "tw-max-w-[100px]": d,
-                            "tw-max-w-auto": !d,
-                            "tw-col-span-1": "displayName" !== a,
-                            "tw-col-span-2": "displayName" === a,
-                            "tw-cursor-pointer": j.includes(a),
-                            "tw-cursor-auto": !j.includes(a)
+                        className: (0, i.cx)("tw:font-normal tw:text-base", {
+                            "tw:text-light-white": G(a),
+                            "tw:text-light-grey": !G(a),
+                            "tw:hidden tw:@[700px]/products-heading:block": o,
+                            "tw:hidden tw:@[540px]/products-heading:block": m,
+                            "tw:max-w-[100px]": d,
+                            "tw:max-w-auto": !d,
+                            "tw:col-span-1": "displayName" !== a,
+                            "tw:col-span-2": "displayName" === a,
+                            "tw:cursor-pointer": j.includes(a),
+                            "tw:cursor-auto": !j.includes(a)
                         })
                     }, e, j.includes(a) && w.createElement(l.M2, {
                         icon: G(a) && "ascending" === p ? r.Dv : n.Yn,
                         size: "1x",
-                        className: "tw-ml-1 ".concat(G(a) && "ascending" === p ? "tw-align-bottom" : "tw-align-top")
+                        className: "tw:ml-1 ".concat(G(a) && "ascending" === p ? "tw:align-bottom" : "tw:align-top")
                     }))
                 })), w.createElement("div", {
-                    className: "tw-group"
+                    className: "tw:group"
                 }, F ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:justify-center tw:p-10"
                 }, w.createElement(c.A, {
                     loading: !0
                 })) : L ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:flex-col tw:justify-center tw:p-10"
                 }, w.createElement("p", null, "Error loading sales data:"), w.createElement("code", null, null !== (D = null == B || null === (T = B.data) || void 0 === T || null === (T = T.error) || void 0 === T ? void 0 : T.message) && void 0 !== D ? D : "Unknown error")) : U && 0 === (null == O ? void 0 : O.length) ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:justify-center tw:p-10"
                 }, w.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "There are no products to display.")) : U ? O.map(function(t) {
                     return w.createElement(P, {
                         key: t.id,
@@ -416,7 +416,7 @@
                         viewAvatarDetailsActionCallback: h
                     })
                 }) : void 0), w.createElement("div", null, w.createElement(o.A, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     totalCount: null !== (e = null == O ? void 0 : O.length) && void 0 !== e ? e : 0,
                     showCurrentPageOnly: !0,
                     currentPage: m,
@@ -431,4 +431,4 @@
         }
     }
 ]);
-//# sourceMappingURL=80804dd27b51add91a839d4d738d0e5b64db6f0be3f402f1106acfb628207197.js.map
+//# sourceMappingURL=55bbe78849e689dd8203e776712c8664269d739f7cb19d585d61a3905828971c.js.map

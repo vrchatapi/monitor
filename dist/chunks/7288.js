@@ -262,23 +262,23 @@
                 return a.createElement("div", null, a.createElement(c.Qc, null, "Groups"), a.createElement(c.fI, null, a.createElement(c.fv, {
                     className: "w-100"
                 }, a.createElement(x, null, a.createElement("h2", null, "Groups")), a.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-gap-3"
+                    className: "tw:flex tw:flex-row tw:gap-3"
                 }, v < J && n.tagsSet.has("system_supporter") && S.length < B || n.tagsSet.has("admin_uncap_owned_groups") ? a.createElement(s.N_, {
                     to: "/home/groups/create",
-                    className: "tw-w-fit"
+                    className: "tw:w-fit"
                 }, a.createElement(c.$n, null, a.createElement(c.M2, {
                     icon: i.QL
                 }), " Create Group")) : a.createElement(c.$n, {
                     disabled: !0,
                     title: Q,
-                    className: "tw-w-fit"
+                    className: "tw:w-fit"
                 }, a.createElement(c.M2, {
                     icon: i.QL
                 }), " Create Group"), a.createElement("form", {
                     onSubmit: function(t) {
                         null == t || t.preventDefault(), "" === f ? e("/home/groups/search") : f.startsWith("https://vrc.group/") || f.startsWith("vrc.group/") ? e("/home/groups/search/".concat(f.split("/").pop())) : e("/home/groups/search/".concat(f))
                     },
-                    className: "tw-flex-1"
+                    className: "tw:flex-1"
                 }, a.createElement(u.A, {
                     searchString: m,
                     defaultValue: t,
@@ -570,4 +570,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a4d8dd99ce7a491d9ec5795af9a9baddac0582c5217b0af325e41128385b2267.js.map
+//# sourceMappingURL=e0e2194e9cb09af5df14a0bb2e0d0a9363934ecc9f058e1ebbe98b0b73f4a483.js.map

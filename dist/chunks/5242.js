@@ -327,24 +327,24 @@
                 var Se = le || ue || pe;
                 return "private" === i && a !== (null == P ? void 0 : P.id) ? null : y.createElement(D, {
                     ref: U,
-                    className: (0, v.cx)("tw-border-solid tw-border-2", {
-                        "hover:tw-border-[#086c84]": !h,
-                        "tw-border-2 tw-rounded-b-md tw-rounded-t-none md:tw-rounded-b-none md:tw-rounded-t-md": M,
-                        "tw-border-[#086c84]": !h && M,
-                        "tw-rounded-md": !M,
-                        "tw-border-[#064b5c]": !h && !M
+                    className: (0, v.cx)("tw:border-solid tw:border-2", {
+                        "tw:hover:border-[#086c84]": !h,
+                        "tw:border-2 tw:rounded-b-md tw:rounded-t-none tw:md:rounded-b-none tw:md:rounded-t-md": M,
+                        "tw:border-[#086c84]": !h && M,
+                        "tw:rounded-md": !M,
+                        "tw:border-[#064b5c]": !h && !M
                     }, b),
                     isSelecting: M,
                     neutral: h
                 }, y.createElement("button", {
-                    className: "tw-flex tw-flex-auto tw-justify-center tw-items-center tw-bg-transparent tw-border-none tw-px-0",
+                    className: "tw:flex tw:flex-auto tw:justify-center tw:items-center tw:bg-transparent tw:border-none tw:px-0",
                     type: "button",
                     onClick: he
                 }, y.createElement(S.M2, {
                     icon: Ae,
-                    className: "tw-mx-2"
+                    className: "tw:mx-2"
                 }), y.createElement("div", null, je)), y.createElement("button", {
-                    className: "tw-flex tw-align-items-center tw-h-100 tw-bg-transparent tw-border-none tw-px-0",
+                    className: "tw:flex tw:align-items-center tw:h-fit tw:bg-transparent tw:border-none tw:px-0",
                     type: "button",
                     onClick: function() {
                         T(!M)
@@ -352,13 +352,13 @@
                 }, y.createElement(z, null), y.createElement(I, {
                     icon: c.Jt,
                     rotation: M ? 0 : 180,
-                    className: "tw-ml-3 tw-mr-2"
+                    className: "tw:ml-3 tw:mr-2"
                 })), y.createElement(j.A, {
                     favoriteGroups: ve,
                     selectedGroup: R,
                     onGroupClick: Ne,
-                    className: (0, v.cx)("tw-border-solid tw-select-none", "tw-bottom-[calc(100%+2px)] tw-rounded-t-md tw-border-t-2 tw-rounded-b-none tw-border-b-0", "md:tw-bottom-auto md:tw-top-[calc(100%+2px)] md:tw-rounded-t-none md:tw-rounded-b-md md:tw-border-b-2 md:tw-border-t-0", {
-                        "tw-border-[#086c84]": !h
+                    className: (0, v.cx)("tw:border-solid tw:select-none", "tw:bottom-[calc(100%+2px)] tw:rounded-t-md tw:border-t-2 tw:rounded-b-none tw:border-b-0", "tw:md:bottom-auto tw:md:top-[calc(100%+2px)] tw:md:rounded-t-none tw:md:rounded-b-md tw:md:border-b-2 tw:md:border-t-0", {
+                        "tw:border-[#086c84]": !h
                     }),
                     neutral: h,
                     isOpen: M,
@@ -595,7 +595,7 @@
                     onClick: D
                 }), m.createElement(v.A, {
                     icon: I,
-                    className: S && "tw-mr-1"
+                    className: S && "tw:mr-1"
                 }), S && z)
             }
         },
@@ -631,83 +631,83 @@
                         y = null == x ? void 0 : x.stackable,
                         E = !(null != r && r.assetDisabled) && r;
                     return p.createElement("div", {
-                        className: "tw-rounded-lg tw-bg-grey tw-flex tw-p-3 tw-flex-col ".concat(c)
+                        className: "tw:rounded-lg tw:bg-grey tw:flex tw:p-3 tw:flex-col ".concat(c)
                     }, w && null !== v ? g && y ? h ? p.createElement("div", {
-                        className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
+                        className: " tw:flex tw:flex-col tw:sm:flex-row tw:bg-dark-teal tw:rounded-lg tw:border-highlight tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center "
                     }, p.createElement("div", {
-                        className: "tw-flex tw-flex-row"
+                        className: "tw:flex tw:flex-row"
                     }, p.createElement(l.M2, {
                         icon: o.iW,
                         size: "1x",
-                        className: "tw-text-highlight tw-mt-1 tw-mr-2"
+                        className: "tw:text-highlight tw:mt-1 tw:mr-2"
                     }), p.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                        className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                     }, p.createElement("h2", {
-                        className: "tw-text-xs"
+                        className: "tw:text-xs"
                     }, "You already have access to this product."), p.createElement("p", {
-                        className: "tw-text-xs tw-mb-0"
+                        className: "tw:text-xs tw:mb-0"
                     }, "Purchasing will have no effect.")))) : p.createElement("div", {
-                        className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
+                        className: " tw:flex tw:flex-col tw:sm:flex-row tw:bg-dark-teal tw:rounded-lg tw:border-highlight tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center "
                     }, p.createElement("div", {
-                        className: "tw-flex tw-flex-row"
+                        className: "tw:flex tw:flex-row"
                     }, p.createElement(l.M2, {
                         icon: o.iW,
                         size: "1x",
-                        className: "tw-text-highlight tw-mt-1 tw-mr-2"
+                        className: "tw:text-highlight tw:mt-1 tw:mr-2"
                     }), p.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                        className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                     }, p.createElement("h2", {
-                        className: "tw-text-xs"
+                        className: "tw:text-xs"
                     }, "You already have access to this product."), p.createElement("p", {
-                        className: "tw-text-xs tw-mb-0"
+                        className: "tw:text-xs tw:mb-0"
                     }, "Expires at ", d()(null == v ? void 0 : v.expiry).format("llll"), ".")))) : p.createElement("div", {
-                        className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
+                        className: " tw:flex tw:flex-col tw:sm:flex-row tw:bg-dark-teal tw:rounded-lg tw:border-highlight tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center "
                     }, p.createElement("div", {
-                        className: "tw-flex tw-flex-row"
+                        className: "tw:flex tw:flex-row"
                     }, p.createElement(l.M2, {
                         icon: o.iW,
                         size: "1x",
-                        className: "tw-text-highlight tw-mt-1 tw-mr-2"
+                        className: "tw:text-highlight tw:mt-1 tw:mr-2"
                     }), p.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                        className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                     }, p.createElement("h2", {
-                        className: "tw-text-xs"
+                        className: "tw:text-xs"
                     }, "You already have access to this product."), p.createElement("p", {
-                        className: "tw-text-xs tw-mb-0"
+                        className: "tw:text-xs tw:mb-0"
                     }, "Purchasing will have no effect.")))) : null, !E && p.createElement(p.Fragment, null, p.createElement(l.$T, {
                         type: "warn",
                         title: p.createElement("small", null, "This avatar is unavailable due to an issue."),
-                        className: "tw-mt-0"
+                        className: "tw:mt-0"
                     }, p.createElement("small", null, "Please check your email or notifications for more information.")), p.createElement(l.fI, {
-                        className: "tw-gap-3 tw-items-center"
+                        className: "tw:gap-3 tw:items-center"
                     }, p.createElement("div", {
-                        className: "tw-bg-hr-line-color tw-w-14 tw-h-14 tw-rounded-sm tw-p-2 tw-text-[#404c58]"
+                        className: "tw:bg-hr-line-color tw:w-14 tw:h-14 tw:rounded-xs tw:p-2 tw:text-[#404c58]"
                     }, p.createElement(l.M2, {
                         icon: a.faBan,
-                        className: "tw-w-full tw-h-full"
+                        className: "tw:w-full tw:h-full"
                     })), p.createElement("h6", {
-                        className: "tw-p-0 tw-flex-auto tw-m-0 tw-text-placeholder-text"
+                        className: "tw:p-0 tw:flex-auto tw:m-0 tw:text-placeholder-text"
                     }, "Unavailable Product"))), E && p.createElement("div", {
-                        className: "tw-flex tw-w-full ".concat(w ? "tw-opacity-30" : "tw-opacity-100")
+                        className: "tw:flex tw:w-full ".concat(w ? "tw:opacity-30" : "tw:opacity-100")
                     }, p.createElement(i.A, {
                         alt: null == r ? void 0 : r.displayName,
                         imageId: null == r ? void 0 : r.imageId,
                         fallbackSrc: s(),
-                        className: "tw-w-14 tw-h-14 tw-rounded-sm tw-bg-transparent",
+                        className: "tw:w-14 tw:h-14 tw:rounded-xs tw:bg-transparent",
                         fitToCover: !0
                     }), p.createElement("div", {
-                        className: "tw-flex-1 tw-flex-col tw-justify-start tw-text-left tw-px-2 tw-w-2/3"
+                        className: "tw:flex-1 tw:flex-col tw:justify-start tw:text-left tw:px-2 tw:w-2/3"
                     }, p.createElement("h4", {
-                        className: "tw-text-white tw-text-[16px] tw-truncate"
+                        className: "tw:text-white tw:text-[16px] tw:truncate"
                     }, null == r ? void 0 : r.displayName), p.createElement("p", {
-                        className: "tw-text-light-grey tw-text-xs tw-mb-0 tw-text-ellipsis tw-overflow-hidden tw-break-words tw-line-clamp-3 tw-max-h-[3rem]"
+                        className: "tw:text-light-grey tw:text-xs tw:mb-0 tw:text-ellipsis tw:overflow-hidden tw:wrap-break-word tw:line-clamp-3 tw:max-h-12"
                     }, null == r ? void 0 : r.description)), "avatar" === (null == r ? void 0 : r.productType) && p.createElement("div", {
-                        className: "tw-flex tw-items-center tw-justify-center"
+                        className: "tw:flex tw:items-center tw:justify-center"
                     }, p.createElement(f.N_, {
                         to: "/home/avatar/".concat(r.avatarId),
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        className: "tw-text-white tw-px-2 tw-py-1 tw-rounded tw-h-9 tw-w-9 tw-bg-button-bg-grey hover:tw-bg-dark-grey tw-items-center tw-justify-center tw-flex",
+                        className: "tw:text-white tw:px-2 tw:py-1 tw:rounded-xs tw:h-9 tw:w-9 tw:bg-button-bg-grey tw:hover:bg-dark-grey tw:items-center tw:justify-center tw:flex",
                         title: "Go to Avatar"
                     }, p.createElement(l.M2, {
                         icon: n.k0
@@ -721,4 +721,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72e425e90607881645ec594aab9ba5e93a91e1610ee1020189c133ad61db0f76.js.map
+//# sourceMappingURL=4a8b1832adf06bfd5f186db145b65af609accecf41c41ee1312f09b4ae28e1d9.js.map

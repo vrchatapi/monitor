@@ -54,8 +54,8 @@
                 f = a(31069),
                 g = a(24751),
                 E = a(5556),
-                x = a.n(E),
-                h = function(e) {
+                h = a.n(E),
+                x = function(e) {
                     var t = e.assetReview,
                         a = e.onCancel,
                         l = void 0 === a ? function() {} : a;
@@ -68,21 +68,21 @@
                         u = n === f.td.REJECTED,
                         p = !r || !r.imageUrl;
                     return w.createElement(c.fv, {
-                        className: "tw-gap-5 tw-w-full"
+                        className: "tw:gap-5 tw:w-full"
                     }, w.createElement(c.fv, {
-                        className: "tw-gap-5 xs:tw-flex-row"
+                        className: "tw:gap-5 tw:xs:flex-row"
                     }, w.createElement(c.Oo, {
                         imageId: p ? null : null == r ? void 0 : r.thumbnailImageUrl,
                         fallbackSrc: v(),
                         fitToCover: !0,
                         width: 180,
-                        className: "tw-shrink-0"
+                        className: "tw:shrink-0"
                     }), w.createElement(c.fv, null, w.createElement("p", {
-                        className: (0, s.cx)("tw-capitalize")
+                        className: (0, s.cx)("tw:capitalize")
                     }, "Result:", " ", w.createElement("strong", {
-                        className: (0, s.cx)(u && "tw-text-red", !u && "tw-text-green")
+                        className: (0, s.cx)(u && "tw:text-red", !u && "tw:text-green")
                     }, i, " ", n)), u && o && w.createElement("p", null, "Rejected Reason: ", w.createElement("strong", null, o)), m && w.createElement("p", {
-                        className: "tw-max-h-[280px] tw-overflow-y-scroll tw-whitespace-pre-wrap"
+                        className: "tw:max-h-[280px] tw:overflow-y-scroll tw:whitespace-pre-wrap"
                     }, m), r && !u && !p && w.createElement("p", null, 'Your avatar "', r.name, '" has been approved and is now ready for sale.'))), !u && w.createElement(c.$T, {
                         type: "custom",
                         title: "What's next?",
@@ -90,27 +90,27 @@
                         icon: d.iW,
                         color: "#28434B"
                     }, w.createElement("p", {
-                        className: "tw-mb-0 tw-ml-6"
+                        className: "tw:mb-0 tw:ml-6"
                     }, "Create listings for this avatar to make it available in the Avatar Marketplace, your Creator Store, or any World Store.")), w.createElement(c.fv, {
-                        className: "tw-gap-3 sm:tw-flex-row tw-w-full"
+                        className: "tw:gap-3 tw:sm:flex-row tw:w-full"
                     }, w.createElement(c.$n, {
                         neutral: !0,
                         onClick: l,
-                        containerClasses: "tw-flex-1"
+                        containerClasses: "tw:flex-1"
                     }, "Close"), r && !u && w.createElement(g.z9, {
                         to: "/home/marketplace/storefront/products",
-                        className: "tw-flex-1 tw-capitalize tw-m-0"
+                        className: "tw:flex-1 tw:capitalize tw:m-0"
                     }, "View Products"), u && w.createElement(g.z9, {
                         to: "https://vrch.at/marketplace-help",
                         target: "_blank",
-                        className: "tw-flex-1 tw-m-0"
+                        className: "tw:flex-1 tw:m-0"
                     }, "Contact Support")))
                 };
-            h.propTypes = {
-                assetReview: x().object,
-                onCancel: x().func
+            x.propTypes = {
+                assetReview: h().object,
+                onCancel: h().func
             };
-            const b = h;
+            const b = x;
             var N = a(3569),
                 C = a(42623),
                 k = a(65918),
@@ -134,8 +134,8 @@
                         p = a.reviewDate,
                         g = a.reviewStatus,
                         E = !u || !u.imageUrl,
-                        x = null == u ? void 0 : u.imageUrl,
-                        h = E ? "Hidden Avatar" : null == u ? void 0 : u.name,
+                        h = null == u ? void 0 : u.imageUrl,
+                        x = E ? "Hidden Avatar" : null == u ? void 0 : u.name,
                         b = (null == u ? void 0 : u.unityPackages) || [],
                         q = "hidden-avatar-tooltip-".concat(a.id),
                         S = w.useMemo(function() {
@@ -151,24 +151,24 @@
                             })
                         }, [S]);
                     return w.createElement("div", {
-                        className: "tw-relative"
+                        className: "tw:relative"
                     }, w.createElement("div", {
-                        className: "tw-grid tw-gap-2 tw-grid-cols-3 @sm/moderation-queue:tw-grid-cols-4 @md/moderation-queue:tw-grid-cols-5 @lg/moderation-queue:tw-grid-cols-6 tw-mx-5 tw-border-hr-line-color tw-border-b-[1px] tw-border-t-0 tw-border-x-0 tw-border-solid"
+                        className: "tw:grid tw:gap-2 tw:grid-cols-3 tw:@sm/moderation-queue:grid-cols-4 tw:@md/moderation-queue:grid-cols-5 tw:@lg/moderation-queue:grid-cols-6 tw:mx-5 tw:border-hr-line-color tw:border-b tw:border-t-0 tw:border-x-0 tw:border-solid"
                     }, w.createElement(c.fI, {
-                        className: "tw-flex tw-gap-1 tw-items-center tw-my-2 @[800px]/moderation-queue:tw-max-w-max"
+                        className: "tw:flex tw:gap-1 tw:items-center tw:my-2 tw:@[800px]/moderation-queue:max-w-max"
                     }, w.createElement(c.Oo, {
                         fitToCover: !0,
-                        imageId: x,
+                        imageId: h,
                         fallbackSrc: v(),
-                        className: "tw-w-8 tw-h-8 tw-rounded-md tw-shrink-0",
+                        className: "tw:w-8 tw:h-8 tw:rounded-md tw:shrink-0",
                         containerColor: "#181B1F",
                         iconColor: "#404C58"
                     }), w.createElement("p", {
-                        className: "tw-truncate tw-mb-0"
-                    }, h, E && w.createElement(w.Fragment, null, w.createElement(c.M2, {
+                        className: "tw:truncate tw:mb-0"
+                    }, x, E && w.createElement(w.Fragment, null, w.createElement(c.M2, {
                         id: q,
                         icon: N.faCircleInfo,
-                        className: "tw-ml-1 tw-text-light-grey tw-cursor-help",
+                        className: "tw:ml-1 tw:text-light-grey tw:cursor-help",
                         size: "sm"
                     }), w.createElement(A.A, {
                         placement: "top",
@@ -179,9 +179,9 @@
                         },
                         offset: [0, 8]
                     }, "This avatar has been hidden. Check your email for details.")))), w.createElement("div", {
-                        className: "tw-items-center tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/moderation-queue:tw-max-w-max tw-hidden @lg/moderation-queue:tw-flex"
+                        className: "tw:items-center tw:my-2 tw:truncate tw:max-w-[100px] tw:@[800px]/moderation-queue:max-w-max tw:hidden tw:@lg/moderation-queue:flex"
                     }, D.length ? w.createElement(c.fv, {
-                        className: "tw-w-full"
+                        className: "tw:w-full"
                     }, D.map(function(e) {
                         var t, a = (0, l.A)(e, 2),
                             n = a[0],
@@ -189,30 +189,30 @@
                             i = S[n];
                         return w.createElement("p", {
                             key: n,
-                            className: "tw-m-0 tw-text-center"
+                            className: "tw:m-0 tw:text-center"
                         }, w.createElement("span", null, w.createElement(c.M2, {
                             icon: null === (t = y.P4[n]) || void 0 === t ? void 0 : t.icon
                         }), " ", r, " | Ver. ", i.assetVersion))
                     })) : w.createElement("em", null, "-")), w.createElement("div", {
-                        className: "tw-items-center tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/moderation-queue:tw-max-w-max tw-hidden @md/moderation-queue:tw-flex"
+                        className: "tw:items-center tw:my-2 tw:truncate tw:max-w-[100px] tw:@[800px]/moderation-queue:max-w-max tw:hidden tw:@md/moderation-queue:flex"
                     }, P()(d).format("ll")), w.createElement("div", {
-                        className: "tw-items-center tw-my-2 tw-truncate tw-max-w-[100px] @[800px]/moderation-queue:tw-max-w-max tw-hidden @sm/moderation-queue:tw-flex"
+                        className: "tw:items-center tw:my-2 tw:truncate tw:max-w-[100px] tw:@[800px]/moderation-queue:max-w-max tw:hidden tw:@sm/moderation-queue:flex"
                     }, p ? P()(p).format("ll") : "-"), w.createElement("div", {
-                        className: "tw-flex tw-items-center tw-my-2 tw-truncate @[800px]/moderation-queue:tw-max-w-max tw-capitalize"
+                        className: "tw:flex tw:items-center tw:my-2 tw:truncate tw:@[800px]/moderation-queue:max-w-max tw:capitalize"
                     }, g === f.td.PENDING && w.createElement("span", null, "Under Review"), (g === f.td.COMPLETE || g === f.td.APPROVED) && w.createElement("span", {
-                        className: "tw-text-green"
+                        className: "tw:text-green"
                     }, w.createElement(c.M2, {
                         icon: k.SG,
                         title: "Approved",
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), "Approved"), g === f.td.REJECTED && w.createElement("span", {
-                        className: "tw-text-red"
+                        className: "tw:text-red"
                     }, w.createElement(c.M2, {
                         icon: C.bn,
                         title: "Reject",
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), "Rejected")), w.createElement(c.fv, {
-                        className: "tw-truncate tw-justify-center tw-my-2 tw-w-fit tw-gap-2"
+                        className: "tw:truncate tw:justify-center tw:my-2 tw:w-fit tw:gap-2"
                     }, g !== f.td.PENDING && w.createElement(c.$n, {
                         type: "button",
                         onClick: function() {
@@ -222,8 +222,8 @@
                     }, "View Results"))))
                 };
             S.propTypes = {
-                assetReviewData: x().object,
-                viewReviewResultsCallback: x().func.isRequired
+                assetReviewData: h().object,
+                viewReviewResultsCallback: h().func.isRequired
             };
             const D = S;
             var z = [{
@@ -257,9 +257,9 @@
                     f = e.sortBy,
                     g = e.orderBy;
                 if (!a) return null;
-                var E, x = (0, u.Zp)(),
-                    h = w.useState(null),
-                    N = (0, l.A)(h, 2),
+                var E, h = (0, u.Zp)(),
+                    x = w.useState(null),
+                    N = (0, l.A)(x, 2),
                     C = N[0],
                     k = N[1],
                     y = (0, m.zs)({
@@ -285,11 +285,11 @@
                         k(e)
                     };
                 return w.createElement(w.Fragment, null, w.createElement("div", {
-                    className: "tw-@container/moderation-queue tw-rounded-md tw-bg-grey tw-mt-5"
+                    className: "tw:@container/moderation-queue tw:rounded-md tw:bg-grey tw:mt-5"
                 }, w.createElement("div", {
-                    className: "tw-w-full tw-min-w-max tw-table-auto tw-pb-1 tw-@container/queue-heading"
+                    className: "tw:w-full tw:min-w-max tw:table-auto tw:pb-1 tw:@container/queue-heading"
                 }, w.createElement("div", {
-                    className: "tw-grid tw-gap-1 tw-grid-cols-3 @[576px]/queue-heading:tw-grid-cols-4 @md/queue-heading:tw-grid-cols-5 @lg/queue-heading:tw-grid-cols-6 tw-border-b-[1px] tw-border-0 tw-border-solid tw-border-hr-line-color tw-py-3 tw-pb-3 tw-mx-5"
+                    className: "tw:grid tw:gap-1 tw:grid-cols-3 tw:@[576px]/queue-heading:grid-cols-4 tw:@md/queue-heading:grid-cols-5 tw:@lg/queue-heading:grid-cols-6 tw:border-b tw:border-0 tw:border-solid tw:border-hr-line-color tw:py-3 tw:pb-3 tw:mx-5"
                 }, z.map(function(e) {
                     var t = e.label,
                         a = e.value,
@@ -303,16 +303,16 @@
                         v = void 0 !== p && p;
                     return w.createElement("span", {
                         key: a,
-                        className: (0, s.cx)("tw-font-normal tw-text-base", {
-                            "tw-text-light-white": j(a),
-                            "tw-text-light-grey": !j(a),
-                            "tw-hidden @sm/queue-heading:tw-block": m,
-                            "tw-hidden @md/queue-heading:tw-block": d,
-                            "tw-hidden @lg/queue-heading:tw-block": v,
-                            "tw-max=w-[100px]": i,
-                            "tw-max-w-auto": !i,
-                            "tw-cursor-auto": !M.includes(a),
-                            "tw-cursor-pointer": M.includes(a)
+                        className: (0, s.cx)("tw:font-normal tw:text-base", {
+                            "tw:text-light-white": j(a),
+                            "tw:text-light-grey": !j(a),
+                            "tw:hidden tw:@sm/queue-heading:block": m,
+                            "tw:hidden tw:@md/queue-heading:block": d,
+                            "tw:hidden tw:@lg/queue-heading:block": v,
+                            "tw:max=w-[100px]": i,
+                            "tw:max-w-auto": !i,
+                            "tw:cursor-auto": !M.includes(a),
+                            "tw:cursor-pointer": M.includes(a)
                         }),
                         onClick: function() {
                             return T(a)
@@ -325,20 +325,20 @@
                     }, t, M.includes(a) && w.createElement(c.M2, {
                         icon: j(a) && "ascending" === g ? r.Dv : n.Yn,
                         size: "1x",
-                        className: "tw-ml-1 ".concat(j(a) && "ascending" === g ? "tw-align-bottom" : "tw-align-top")
+                        className: "tw:ml-1 ".concat(j(a) && "ascending" === g ? "tw:align-bottom" : "tw:align-top")
                     }))
                 })), w.createElement("div", {
-                    className: "tw-group"
+                    className: "tw:group"
                 }, P ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:justify-center tw:p-10"
                 }, w.createElement(i.A, {
                     loading: !0
                 })) : A ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-flex-col tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:flex-col tw:justify-center tw:p-10"
                 }, w.createElement("p", null, "Error loading review data:"), w.createElement("code", null, null !== (E = S.data.error.message) && void 0 !== E ? E : "Unknown error")) : q && 0 === (null == R ? void 0 : R.length) ? w.createElement("div", {
-                    className: "tw-container tw-flex tw-justify-center tw-p-10"
+                    className: "tw:container tw:flex tw:justify-center tw:p-10"
                 }, w.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "You have no assets currently in review")) : q ? R.map(function(e) {
                     return w.createElement(D, {
                         key: e.id,
@@ -346,13 +346,13 @@
                         viewReviewResultsCallback: I
                     })
                 }) : void 0), w.createElement("div", null, w.createElement(o.A, {
-                    className: "tw-pt-2",
+                    className: "tw:pt-2",
                     totalCount: null !== (t = null == R ? void 0 : R.length) && void 0 !== t ? t : 0,
                     showCurrentPageOnly: !0,
                     currentPage: d,
                     pageSize: 50,
                     onPageChange: function(e) {
-                        return x("/home/marketplace/storefront/products/moderation/page/".concat(e))
+                        return h("/home/marketplace/storefront/products/moderation/page/".concat(e))
                     }
                 })))), w.createElement(c.aF, {
                     slim: !0,
@@ -372,4 +372,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ef1210e1ddb5b22c3dcd38bfc88c96608afcb14d9edba7ef9864f60bf2da5194.js.map
+//# sourceMappingURL=d5cd2410dd0e5c61d5870b83e84fd4615a46e7bd55882cac7c6949e0d30fc8fe.js.map

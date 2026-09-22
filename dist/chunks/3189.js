@@ -18,17 +18,17 @@
                 p = n(82544),
                 m = n(79162),
                 g = n(49107),
-                f = n(5556),
-                h = n.n(f),
-                v = n(58168),
-                b = n(80045),
+                f = n(58168),
+                h = n(80045),
+                v = n(5556),
+                b = n.n(v),
                 y = n(40085),
                 E = n(54734),
                 x = ["groupId"],
                 k = function(e) {
                     var t = e.groupId,
                         n = void 0 === t ? null : t,
-                        r = (0, b.A)(e, x),
+                        r = (0, h.A)(e, x),
                         a = (0, y.XR)({
                             groupId: n
                         }, {
@@ -38,15 +38,15 @@
                         c = a.isLoading,
                         s = a.isError,
                         u = a.isSuccess;
-                    return null === n || s ? null : c ? l.createElement(i.fy, (0, v.A)({
+                    return null === n || s ? null : c ? l.createElement(i.fy, (0, f.A)({
                         width: "auto",
                         height: "250px"
-                    }, r)) : u ? l.createElement(E.A, (0, v.A)({
+                    }, r)) : u ? l.createElement(E.A, (0, f.A)({
                         group: o
                     }, r)) : void 0
                 };
             k.propTypes = {
-                groupId: h().string
+                groupId: b().string
             };
             const S = k;
             var A = function(e) {
@@ -72,45 +72,45 @@
                         return !h.current || h.current.scrollLeft <= 200
                     }, [w]);
                 return r.length < 1 ? null : l.createElement("div", {
-                    className: "tw-py-6 tw-relative tw-w-full"
+                    className: "tw:py-6 tw:relative tw:w-full"
                 }, l.createElement("h2", {
-                    className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
+                    className: "tw:text-4xl tw:no-underline tw:font-semibold tw:inline-block tw:ml-1.5 tw:mb-0"
                 }, t), l.createElement("div", {
                     ref: h,
                     onScroll: function(e) {
                         return f(e.currentTarget.scrollLeft)
                     },
-                    className: "tw-snap-x tw-whitespace-nowrap tw-overflow-x-scroll tw-snap-mandatory tw-scroll-smooth"
+                    className: "tw:snap-x tw:whitespace-nowrap tw:overflow-x-scroll tw:snap-mandatory tw:scroll-smooth"
                 }, r.map(function(e) {
                     return l.createElement("div", {
                         key: e,
-                        className: "tw-mr-4 tw-mt-4 tw-snap-center tw-w-80 tw-inline-block tw-h-64 tw-scroll-ml-6 tw-snap-always"
+                        className: "tw:mr-4 tw:mt-4 tw:snap-center tw:w-80 tw:inline-block tw:h-64 tw:scroll-ml-6 tw:snap-always"
                     }, l.createElement(S, {
                         groupId: e
                     }))
                 }), l.createElement("button", {
-                    className: "\n            tw-bg-button-bg tw-absolute tw--left-3 tw-top-40 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n            ".concat(b ? "tw-hidden" : "", "\n            tw-z-30\n          "),
+                    className: "\n            tw:bg-button-bg tw:absolute tw:-left-3 tw:top-40 tw:border-none tw:rounded-lg tw:w-12 tw:h-14 tw:cursor-pointer\n            ".concat(b ? "tw:hidden" : "", "\n            tw:z-30\n          "),
                     type: "button",
                     onClick: function(e) {
                         e.stopPropagation(), h.current.scrollLeft -= 200
                     }
                 }, l.createElement(i.M2, {
                     icon: g.Wz,
-                    className: "tw-text-highlight tw-text-2xl"
+                    className: "tw:text-highlight tw:text-2xl"
                 })), l.createElement("button", {
-                    className: "\n            tw-bg-button-bg tw-absolute tw--right-3 tw-top-40 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n            ".concat(v || c ? "tw-hidden" : "", "\n            tw-z-30\n          "),
+                    className: "\n            tw:bg-button-bg tw:absolute tw:-right-3 tw:top-40 tw:border-none tw:rounded-lg tw:w-12 tw:h-14 tw:cursor-pointer\n            ".concat(v || c ? "tw:hidden" : "", "\n            tw:z-30\n          "),
                     type: "button",
                     onClick: function(e) {
                         e.stopPropagation(), h.current.scrollLeft += 200
                     }
                 }, l.createElement(i.M2, {
                     icon: m.Xk,
-                    className: "tw-text-highlight tw-text-2xl"
+                    className: "tw:text-highlight tw:text-2xl"
                 }))))
             };
             A.propTypes = {
-                title: h().string.isRequired,
-                groupIds: h().arrayOf(h().string).isRequired
+                title: b().string.isRequired,
+                groupIds: b().arrayOf(b().string).isRequired
             };
             const N = A;
             var I = n(60188),
@@ -119,7 +119,7 @@
                 T = function(e) {
                     var t = e.worldId,
                         n = void 0 === t ? null : t,
-                        r = (0, b.A)(e, R),
+                        r = (0, h.A)(e, R),
                         a = (0, I.Ed)({
                             worldId: n
                         }, {
@@ -129,15 +129,15 @@
                         c = a.isLoading,
                         s = a.isError,
                         u = a.isSuccess;
-                    return null === n || s ? null : c ? l.createElement(i.fy, (0, v.A)({
+                    return null === n || s ? null : c ? l.createElement(i.fy, (0, f.A)({
                         width: "auto",
                         height: "420px"
-                    }, r)) : u ? l.createElement(C.A, (0, v.A)({
+                    }, r)) : u ? l.createElement(C.A, (0, f.A)({
                         world: o
                     }, r)) : void 0
                 };
             T.propTypes = {
-                worldId: h().string
+                worldId: b().string
             };
             const L = T;
             var W = function(e) {
@@ -163,46 +163,46 @@
                         return !h.current || h.current.scrollLeft <= 300
                     }, [w]);
                 return r.length < 1 ? null : l.createElement("div", {
-                    className: "tw-py-6 tw-relative tw-w-full"
+                    className: "tw:py-6 tw:relative tw:w-full"
                 }, l.createElement("h2", {
-                    className: "tw-text-4xl tw-no-underline tw-font-semibold tw-inline-block tw-ml-1.5 tw-mb-0"
+                    className: "tw:text-4xl tw:no-underline tw:font-semibold tw:inline-block tw:ml-1.5 tw:mb-0"
                 }, t), l.createElement("div", {
                     ref: h,
-                    className: "tw-snap-x tw-whitespace-nowrap tw-overflow-x-scroll tw-snap-mandatory tw-scroll-smooth",
+                    className: "tw:snap-x tw:whitespace-nowrap tw:overflow-x-scroll tw:snap-mandatory tw:scroll-smooth",
                     onScroll: function(e) {
                         return f(e.currentTarget.scrollLeft)
                     }
                 }, r.map(function(e) {
                     return l.createElement("div", {
                         key: e,
-                        className: "tw-snap-center tw-w-80 tw-inline-block tw-h-98 tw-scroll-ml-6 tw-snap-always"
+                        className: "tw:snap-center tw:w-80 tw:inline-block tw:h-98 tw:scroll-ml-6 tw:snap-always"
                     }, l.createElement(L, {
                         worldId: e,
-                        className: "tw-mr-4 tw-mb-4"
+                        className: "tw:mr-4 tw:mb-4"
                     }))
                 }), l.createElement("button", {
-                    className: "\n            tw-bg-button-bg tw-absolute tw--left-3 tw-top-60 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n            ".concat(b ? "tw-hidden" : "", "\n            tw-z-30\n          "),
+                    className: "\n            tw:bg-button-bg tw:absolute tw:-left-3 tw:top-60 tw:border-none tw:rounded-lg tw:w-12 tw:h-14 tw:cursor-pointer\n            ".concat(b ? "tw:hidden" : "", "\n            tw:z-30\n          "),
                     type: "button",
                     onClick: function(e) {
                         e.stopPropagation(), h.current.scrollLeft -= 300
                     }
                 }, l.createElement(i.M2, {
                     icon: g.Wz,
-                    className: "tw-text-highlight tw-text-2xl"
+                    className: "tw:text-highlight tw:text-2xl"
                 })), l.createElement("button", {
-                    className: "\n            tw-bg-button-bg tw-absolute tw--right-3 tw-top-60 tw-border-none tw-rounded-lg tw-w-12 tw-h-14 tw-cursor-pointer\n            ".concat(v || c ? "tw-hidden" : "", "\n            tw-z-30\n          "),
+                    className: "\n            tw:bg-button-bg tw:absolute tw:-right-3 tw:top-60 tw:border-none tw:rounded-lg tw:w-12 tw:h-14 tw:cursor-pointer\n            ".concat(v || c ? "tw:hidden" : "", "\n            tw:z-30\n          "),
                     type: "button",
                     onClick: function(e) {
                         e.stopPropagation(), h.current.scrollLeft += 300
                     }
                 }, l.createElement(i.M2, {
                     icon: m.Xk,
-                    className: "tw-text-highlight tw-text-2xl"
+                    className: "tw:text-highlight tw:text-2xl"
                 }))))
             };
             W.propTypes = {
-                title: h().string.isRequired,
-                worldIds: h().arrayOf(h().string).isRequired
+                title: b().string.isRequired,
+                worldIds: b().arrayOf(b().string).isRequired
             };
             const M = W;
             var q = n(7651),
@@ -257,9 +257,9 @@
                     }, [f]),
                     v = (null == a || null === (t = a.economyAccount) || void 0 === t ? void 0 : t.accountSellerStatus) === c.Tp.INVITED || (null == a || null === (n = a.economyAccount) || void 0 === n ? void 0 : n.accountSellerStatus) === c.Tp.REGISTERED;
                 return l.createElement(l.Fragment, null, l.createElement(H, {
-                    className: "flex-row px-1 gap-1 justify-content-evenly align-items-center tw-w-full"
+                    className: "flex-row px-1 gap-1 justify-content-evenly align-items-center tw:w-full"
                 }, l.createElement("picture", {
-                    className: "tw--mt-4 tw-pointer-events-none"
+                    className: "tw:-mt-4 tw:pointer-events-none"
                 }, l.createElement("source", {
                     srcSet: "".concat(j(), ", ").concat(z(), " 2x")
                 }), l.createElement("img", {
@@ -269,7 +269,7 @@
                 })), l.createElement($, {
                     className: "fw-normal my-3 text-center"
                 }, "Welcome to ", l.createElement("br", null), l.createElement(J, null, "VRChat Marketplace")), l.createElement("picture", {
-                    className: "tw--mt-4 tw--mb-8 tw-pointer-events-none"
+                    className: "tw:-mt-4 tw:-mb-8 tw:pointer-events-none"
                 }, l.createElement("source", {
                     srcSet: "".concat(Q(), ", ").concat(G(), " 2x")
                 }), l.createElement("img", {
@@ -277,7 +277,7 @@
                     width: "280",
                     alt: "Emoji of the VRChat Plus logo, a dollar bill, and a smiling face with heart eyes"
                 }))), l.createElement(i.BW, {
-                    className: "d-flex flex-row flex-wrap tw-gap-12 tw-p-12"
+                    className: "d-flex flex-row flex-wrap tw:gap-12 tw:p-12"
                 }, l.createElement("div", null, l.createElement("h4", null, "Welcome to the VRChat Marketplace!"), l.createElement("p", null, "The VRChat Marketplace is your gateway to premium world features, group perks, and avatars made by our community. Discover and purchase listings inside VRChat using your VRChat Credits."), l.createElement("p", null, "To learn more about the VRChat Marketplace, please head to", " ", l.createElement("a", {
                     href: "https://help.vrchat.com/hc/en-us/articles/23255458227987-Creator-Economy-Frequently-Asked-Questions",
                     target: "_blank",
@@ -491,4 +491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0b8e8ee222759cf34030bf06d4e97e812e3ba65a49f0460190990cda30177a67.js.map
+//# sourceMappingURL=efd324514b59c2dd3ca20dceb15bcfdf1d7d0fb826ffedef80f0e2574e21ef43.js.map

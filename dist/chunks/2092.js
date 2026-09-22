@@ -33,8 +33,8 @@
                 g = r(558),
                 x = r(78502),
                 v = r(71957),
-                y = r(71661),
-                h = r(82030),
+                h = r(71661),
+                y = r(82030),
                 _ = r(84212);
 
             function E(e, t) {
@@ -264,47 +264,47 @@
                     }();
                 return d.createElement(_.A, {
                     showVRCLogo: !u
-                }, d.createElement(y.Qc, null, "Email Verification"), d.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit ".concat(u ? "xl:tw-mt-[100px]" : "xl:tw-mt-[200px]")
+                }, d.createElement(h.Qc, null, "Email Verification"), d.createElement("div", {
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit ".concat(u ? "tw:xl:mt-[100px]" : "tw:xl:mt-[200px]")
                 }, d.createElement("form", {
                     onSubmit: function() {}
                 }, d.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, d.createElement("div", {
-                    className: "tw-mb-5"
-                }, d.createElement(y.M2, {
+                    className: "tw:mb-5"
+                }, d.createElement(h.M2, {
                     icon: c.Kk,
-                    className: "tw-w-[90px] tw-h-[72px]"
+                    className: "tw:w-[90px] tw:h-[72px]"
                 })), d.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Email Verification"), X.failed && d.createElement("p", {
-                    className: " tw-border-solid tw-border-message-warning tw-border-[1px] tw-text-error-message-red tw-bg-opacity-25 tw-bg-message-warning tw-p-2 tw-rounded-md tw-w-full ",
+                    className: " tw:border-solid tw:border-message-warning tw:border tw:text-error-message-red tw:bg-message-warning/25 tw:p-2 tw:rounded-md tw:w-full ",
                     role: "alert",
                     "aria-label": "Failed to send verification email"
-                }, d.createElement(y.M2, {
+                }, d.createElement(h.M2, {
                     icon: i.faCircleExclamation
                 }), "  Failed to send verification email, please try again."), !1 === J && d.createElement("p", {
-                    className: " tw-border-solid tw-border-message-warning tw-border-[1px] tw-text-error-message-red tw-bg-opacity-25 tw-bg-message-warning tw-p-2 tw-rounded-md tw-w-full ",
+                    className: " tw:border-solid tw:border-message-warning tw:border tw:text-error-message-red tw:bg-message-warning/25 tw:p-2 tw:rounded-md tw:w-full ",
                     role: "alert",
                     "aria-label": "Failed to verify email"
-                }, d.createElement(y.M2, {
+                }, d.createElement(h.M2, {
                     icon: i.faCircleExclamation
                 }), "  Failed to verify, Please check your inbox (or spam folder) to verify your email."), X.sent && d.createElement("p", {
-                    className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
+                    className: " tw:border-solid tw:border tw:border-message-success tw:text-message-success tw:bg-message-success/25 tw:p-2 tw:w-full tw:rounded-md ",
                     role: "alert",
                     "aria-label": "Verification Email Sent"
-                }, d.createElement(y.M2, {
+                }, d.createElement(h.M2, {
                     icon: o.faCircleCheck
                 }), "  We’ve resent you the verification email."), J && d.createElement("p", {
-                    className: " tw-border-solid tw-border-[1px] tw-border-message-success tw-text-message-success tw-bg-opacity-25 tw-bg-message-success tw-p-2 tw-w-full tw-rounded-md ",
+                    className: " tw:border-solid tw:border tw:border-message-success tw:text-message-success tw:bg-message-success/25 tw:p-2 tw:w-full tw:rounded-md ",
                     role: "alert",
                     "aria-label": "Email verified"
-                }, d.createElement(y.M2, {
+                }, d.createElement(h.M2, {
                     icon: o.faCircleCheck
                 }), "  Your email has been updated."), (null == E ? void 0 : E.obfuscatedEmail) && d.createElement("p", {
-                    className: "tw-text-center tw-mb-0"
+                    className: "tw:text-center tw:mb-0"
                 }, "We've sent an email to ", d.createElement("strong", null, null == E ? void 0 : E.obfuscatedEmail)), d.createElement("p", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, "Please check your inbox (or spam folder) to verify your email, it may take a few minutes.  ", d.createElement("span", {
                     role: "button",
                     tabIndex: 0,
@@ -313,29 +313,29 @@
                     },
                     onClick: oe,
                     "aria-label": "Resend Verification Email",
-                    className: "tw-text-link-highlight tw-cursor-pointer tw-outline-none tw-focus:tw-ring-2 tw-focus:tw-ring-offset-2 tw-focus:tw-ring-blue-500"
+                    className: "tw:text-link-highlight tw:cursor-pointer tw:outline-hidden tw:focus:ring-2 tw:focus:ring-offset-2 tw:focus:ring-blue-500"
                 }, "Can't find the email? Send again")), d.createElement("div", {
-                    className: "tw-text-center tw-text-subtext-grey"
-                }, d.createElement(y.$n, {
+                    className: "tw:text-center tw:text-subtext-grey"
+                }, d.createElement(h.$n, {
                     onClick: ie,
                     "aria-label": "Verified my email",
-                    className: "tw-w-60 tw-my-3",
+                    className: "tw:w-60 tw:my-3",
                     type: "submit",
                     loading: D
                 }, "Okay, I've Verified My Email!")), d.createElement("hr", {
-                    className: "tw-border-hr-line-color tw-border-y-2 tw-w-full tw-mt-3"
+                    className: "tw:border-hr-line-color tw:border-y-2 tw:w-full tw:mt-3"
                 }), !u && d.createElement("p", {
-                    className: "tw-text-left tw-text-subtext-grey tw-w-full tw-text-center tw-mt-3"
+                    className: "tw:text-left tw:text-subtext-grey tw:w-full tw:text-center tw:mt-3"
                 }, "If you entered your email address incorrectly, you can update it here"), u && d.createElement("p", {
-                    className: "tw-text-left tw-text-subtext-grey tw-w-full tw-text-center tw-mt-3"
-                }, "If you entered your email address incorrectly, you can update it ", d.createElement("a", {
+                    className: "tw:text-left tw:text-subtext-grey tw:w-full tw:text-center tw:mt-3"
+                }, "If you entered your email address incorrectly, you can update it", " ", d.createElement("a", {
                     href: "#",
                     onClick: function() {
                         return ne(!0)
                     }
-                }, "here")), ae && d.createElement(d.Fragment, null, d.createElement(y.pd, {
+                }, "here")), ae && d.createElement(d.Fragment, null, d.createElement(h.pd, {
                     type: "text",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     id: "email",
                     name: "email",
                     "aria-label": "New Email",
@@ -343,16 +343,16 @@
                     value: L.value,
                     onChange: le,
                     loading: L.checking
-                }), L.value.includes("@") && L.error && d.createElement(h.Fc, {
+                }), L.value.includes("@") && L.error && d.createElement(y.Fc, {
                     role: "alert",
                     "aria-label": "Email Error"
-                }, L.error), L.ok && d.createElement(y.pd, {
+                }, L.error), L.ok && d.createElement(h.pd, {
                     type: "email",
                     id: "emailAgain",
                     inputMode: "email",
                     name: "emailAgain",
                     "aria-label": "Re-Enter Email",
-                    className: "tw-mt-2 tw-w-full",
+                    className: "tw:mt-2 tw:w-full",
                     placeholder: "Re-Enter Email",
                     value: I.value,
                     onChange: function(e) {
@@ -364,11 +364,11 @@
                             ok: a
                         })
                     }
-                }), L.ok && (I.ok ? d.createElement(y.pd, {
+                }), L.ok && (I.ok ? d.createElement(h.pd, {
                     type: "password",
                     id: "password",
                     name: "password",
-                    className: "tw-mt-2 tw-w-full",
+                    className: "tw:mt-2 tw:w-full",
                     role: "textbox",
                     "aria-label": "Enter Your Password",
                     placeholder: "Enter Your Password",
@@ -377,10 +377,10 @@
                         var t = e.target.value;
                         return Y(void 0 === t ? "" : t)
                     }
-                }) : d.createElement(h.Fc, {
+                }) : d.createElement(y.Fc, {
                     role: "alert",
                     "aria-label": "Emails do not match"
-                }, "Emails do not match")), L.ok && I.ok && U && d.createElement(y.$n, {
+                }, "Emails do not match")), L.ok && I.ok && U && d.createElement(h.$n, {
                     onClick: function(e) {
                         e.preventDefault(), L.ok && I.ok && U && C({
                             userId: E.id,
@@ -388,7 +388,7 @@
                             password: U
                         })
                     },
-                    className: "tw-w-60 tw-mt-6 tw-mb-12",
+                    className: "tw:w-60 tw:mt-6 tw:mb-12",
                     type: "submit",
                     loading: !1
                 }, "Update Email")), d.createElement(f.z9, {
@@ -398,7 +398,7 @@
                     },
                     title: "Logout",
                     to: "/home/login",
-                    className: "tw-w-60 tw-mt-5",
+                    className: "tw:w-60 tw:mt-5",
                     isSecondary: !0
                 }, "Log Out and Start Over")))))
             }
@@ -450,17 +450,17 @@
                     v = x.toLowerCase();
                 if (t.host_blacklist.length > 0 && (0, n.default)(v, t.host_blacklist)) return !1;
                 if (t.host_whitelist.length > 0 && !(0, n.default)(v, t.host_whitelist)) return !1;
-                var y = g.join("@");
+                var h = g.join("@");
                 if (t.domain_specific_validation && ("gmail.com" === v || "googlemail.com" === v)) {
-                    var h = (y = y.toLowerCase()).split("+")[0];
-                    if (!(0, l.default)(h.replace(/\./g, ""), {
+                    var y = (h = h.toLowerCase()).split("+")[0];
+                    if (!(0, l.default)(y.replace(/\./g, ""), {
                             min: 6,
                             max: 30
                         })) return !1;
-                    for (var _ = h.split("."), E = 0; E < _.length; E++)
+                    for (var _ = y.split("."), E = 0; E < _.length; E++)
                         if (!m.test(_[E])) return !1
                 }
-                if (!(!1 !== t.ignore_max_length || (0, l.default)(y, {
+                if (!(!1 !== t.ignore_max_length || (0, l.default)(h, {
                         max: 64
                     }) && (0, l.default)(x, {
                         max: 254
@@ -477,9 +477,9 @@
                         if (0 === k.length || !(0, i.default)(k)) return !1
                     }
                 }
-                if (t.blacklisted_chars && -1 !== y.search(new RegExp("[".concat(t.blacklisted_chars, "]+"), "g"))) return !1;
-                if ('"' === y[0] && '"' === y[y.length - 1]) return y = y.slice(1, y.length - 1), t.allow_utf8_local_part ? b.test(y) : w.test(y);
-                for (var F = t.allow_utf8_local_part ? p : d, S = y.split("."), O = 0; O < S.length; O++)
+                if (t.blacklisted_chars && -1 !== h.search(new RegExp("[".concat(t.blacklisted_chars, "]+"), "g"))) return !1;
+                if ('"' === h[0] && '"' === h[h.length - 1]) return h = h.slice(1, h.length - 1), t.allow_utf8_local_part ? b.test(h) : w.test(h);
+                for (var F = t.allow_utf8_local_part ? p : d, S = h.split("."), O = 0; O < S.length; O++)
                     if (!F.test(S[O])) return !1;
                 return !0
             };
@@ -618,4 +618,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3d7ea0be967b691f334d3ede08a6ed59b88ecbdaa812881de0952cded1723c1c.js.map
+//# sourceMappingURL=ee58969031efde221ef6f3c0a0387e65223300ae6993613beae22a95e1484377.js.map

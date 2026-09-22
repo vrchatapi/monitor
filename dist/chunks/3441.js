@@ -173,30 +173,30 @@
                     },
                     B = y && !C;
                 return s.createElement(h.A, null, s.createElement(p.Qc, null, "Two-Factor Authentication Recovery"), s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                 }, s.createElement(d.lV, {
                     onSubmit: H
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, s.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, s.createElement(p.M2, {
                     icon: c.bM,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), s.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Two-Factor Authentication Recovery"), s.createElement("p", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, "Enter one of your saved recovery codes.  ", s.createElement("a", {
                     href: x.lx,
                     "aria-label": "Two Factor Recovery Help",
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "Help")), s.createElement("div", {
-                    className: "tw-flex tw-justify-center tw-flex-col"
+                    className: "tw:flex tw:justify-center tw:flex-col"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-items-center tw-mb-1 tw-flex-row"
+                    className: "tw:flex tw:items-center tw:mb-1 tw:flex-row"
                 }, s.createElement(v.A, {
                     type: "text",
                     name: "code",
@@ -208,7 +208,7 @@
                             nextRef: D
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -235,7 +235,7 @@
                             previousRef: L
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -258,7 +258,7 @@
                             previousRef: D
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -281,17 +281,17 @@
                             previousRef: z
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
                     maxLength: "1",
                     ref: S
                 }), s.createElement("div", {
-                    className: "tw-mr-2 sm:tw-mr-3 tw-flex tw-flex-col tw-justify-center"
+                    className: "tw:mr-2 tw:sm:mr-3 tw:flex tw:flex-col tw:justify-center"
                 }, s.createElement(p.M2, {
                     icon: o.EZ,
-                    className: "tw-w-3 sm:tw-w-6 tw-h-6"
+                    className: "tw:w-3 tw:sm:w-6 tw:h-6"
                 })), s.createElement(v.A, {
                     type: "text",
                     name: "code",
@@ -309,7 +309,7 @@
                             previousRef: S
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -332,7 +332,7 @@
                             previousRef: K
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -355,7 +355,7 @@
                             previousRef: j
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px] tw-mr-2 sm:tw-mr-3",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px] tw:mr-2 tw:sm:mr-3",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -377,7 +377,7 @@
                             previousRef: _
                         })
                     },
-                    className: "tw-w-10 sm:tw-w-12 sm:tw-h-[60px]",
+                    className: "tw:w-10 tw:sm:w-12 tw:sm:h-[60px]",
                     isError: M,
                     inputMode: "numeric",
                     autocomplete: "off",
@@ -385,9 +385,9 @@
                     ref: q
                 })), M && s.createElement("p", {
                     role: "alert",
-                    className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
+                    className: "tw:text-error-message-red tw:text-xs tw:whitespace-pre"
                 }, 429 === (null == F ? void 0 : F.status) ? "Login unavailable due to too many failed attempts. Please try again later." : "Oops, that code didn't work.")), s.createElement(p.$n, {
-                    className: "tw-w-60 tw-mt-6 tw-mb-4",
+                    className: "tw:w-60 tw:mt-6 tw:mb-4",
                     disabled: !B,
                     loading: C,
                     type: "submit"
@@ -397,16 +397,16 @@
                         scope: null == g ? void 0 : g.scope,
                         discordAccessToken: null == g ? void 0 : g.discordAccessToken
                     },
-                    className: "nav-link tw-text-link-highlight"
+                    className: "nav-link :text-link-highlight"
                 }, "Use your authenticator app instead"), s.createElement(f.z9, {
                     to: "/home/login",
                     state: {
                         logout: !0
                     },
-                    className: "tw-mt-12"
+                    className: "tw:mt-12"
                 }, "Log out")))))
             }
         }
     }
 ]);
-//# sourceMappingURL=d917e308a7a0f8d7cb9cbd3aadc5d5d81fa6d1b4e9c9497d12e4211fac00c478.js.map
+//# sourceMappingURL=7fbc7da42b8d8a5db95ec448309b2fe0ba4211a3294cd7cb55470aadd1892c34.js.map

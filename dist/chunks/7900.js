@@ -69,23 +69,23 @@
                             }
                         }());
                     return v.createElement("div", {
-                        className: "tw-w-full tw-flex tw-flex-col tw-gap-6"
+                        className: "tw:w-full tw:flex tw:flex-col tw:gap-6"
                     }, v.createElement("div", {
-                        className: "tw-w-full"
+                        className: "tw:w-full"
                     }, !c.active && v.createElement("h4", {
-                        className: "tw-text-lg"
+                        className: "tw:text-lg"
                     }, "Publishing this listing will make it available for viewing and purchase, including in any selected store(s)."), c.active && v.createElement("h4", {
-                        className: "tw-text-lg"
+                        className: "tw:text-lg"
                     }, "If you move this listing to draft, users won’t be able to view or purchase it. You can republish it at any time. Existing purchases will remain unaffected.")), v.createElement("div", {
-                        className: "tw-flex tw-flex-col xs:tw-flex-row tw-gap-3 tw-flex-1"
+                        className: "tw:flex tw:flex-col tw:xs:flex-row tw:gap-3 tw:flex-1"
                     }, v.createElement(u.$n, {
                         type: "button",
                         neutral: !0,
                         onClick: n,
-                        containerClasses: "tw-flex-1"
+                        containerClasses: "tw:flex-1"
                     }, "Cancel"), v.createElement(u.$n, {
                         type: "button",
-                        containerClasses: "tw-flex-1",
+                        containerClasses: "tw:flex-1",
                         loading: b,
                         onClick: x
                     }, c.active ? "Move to Draft" : "Publish Listing")))
@@ -98,4 +98,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e3d7298c139ac51c547b90e25798a55f93206430767732ed2faf84955d699bd9.js.map
+//# sourceMappingURL=e6dbb361aa34a9e19425163b019d20b2a4a1ef308843b9b212c2fb9a1e6d4421.js.map

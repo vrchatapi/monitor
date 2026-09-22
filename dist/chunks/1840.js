@@ -111,7 +111,7 @@
                     _ = y;
                 y && y.indexOf(":") > 0 && (_ = y.substring(y.indexOf(":") + 1).trim());
                 return i.createElement(h.A, null, i.createElement(x.Qc, null, "Forgot Email Address"), i.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit tw-mt-[200px]"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:mt-[200px]"
                 }, i.createElement("form", {
                     id: "email-recovery-form",
                     name: "email-recovery-form",
@@ -119,30 +119,30 @@
                         e.preventDefault(), L(e)
                     }
                 }, i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, i.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, C && i.createElement(x.M2, {
                     icon: c.Kk,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 }), !C && i.createElement(x.M2, {
                     icon: n.fj,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), i.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Forgot Email Address"), !C && i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col"
+                    className: "tw:w-full tw:flex tw:flex-col"
                 }, i.createElement("div", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, i.createElement("p", {
-                    className: "tw-text-left tw-mb-2"
+                    className: "tw:text-left tw:mb-2"
                 }, "Please enter the user or display name of your account.")), i.createElement(x.pd, {
                     type: "text",
                     inputMode: "name",
                     "aria-label": "Username",
                     value: s,
                     placeholder: "Username",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     onChange: function(e) {
                         var t = e.target.value;
                         d(void 0 === t ? "" : t), g(!1)
@@ -151,36 +151,36 @@
                 }), A && !z && !M && i.createElement("p", {
                     role: "alert",
                     "aria-label": "Email Error",
-                    className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
+                    className: "tw:text-error-message-red tw:text-xs tw:whitespace-pre"
                 }, A)), i.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col"
+                    className: "tw:w-full tw:flex tw:flex-col"
                 }, i.createElement("p", {
-                    className: "tw-text-left tw-mt-2"
+                    className: "tw:text-left tw:mt-2"
                 }, "If the name is associated with a verified email address, we will send a reminder message to that address.")), i.createElement("div", {
-                    className: C ? "tw-w-full tw-flex tw-flex-col" : "tw-hidden",
+                    className: C ? "tw:w-full tw:flex tw:flex-col" : "tw:hidden",
                     role: "alert",
                     "aria-label": "Check your email"
                 }, i.createElement("p", {
-                    className: "tw-text-center tw-mb-2"
+                    className: "tw:text-center tw:mb-2"
                 }, "We have attempted to send a reminder to your registered email address!"), i.createElement("p", {
-                    className: "tw-text-subtext-grey"
+                    className: "tw:text-subtext-grey"
                 }, "You may need to check your spam folder if you don't see it within a few minutes.")), y && i.createElement("p", {
                     role: "alert",
                     "aria-label": "Failed to recover",
-                    className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
+                    className: "tw:text-error-message-red tw:text-xs tw:whitespace-pre"
                 }, _ || "Oops, that didn't work."), !C && i.createElement(x.$n, {
                     disabled: A || z || M,
-                    className: "tw-mt-5 tw-w-60",
+                    className: "tw:mt-5 tw:w-60",
                     loading: k,
                     type: "submit"
                 }, "Request reminder message"), i.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-w-full tw-justify-center tw-mt-5"
+                    className: "tw:flex tw:flex-row tw:w-full tw:justify-center tw:mt-5"
                 }, i.createElement(w.N_, {
                     to: "/home/login",
-                    className: "tw-text-link-highlight"
+                    className: "tw:text-link-highlight"
                 }, "Back to login"))))))
             }
         }
     }
 ]);
-//# sourceMappingURL=9ec5f597f105c6bd0924afb6603b1cfd0052b02f34135f812fcee0c132de0a7f.js.map
+//# sourceMappingURL=e7b13b6841e6ef607f2600972e4a0c83899183f5991b4f5b38d1bbdaaf91eee9.js.map

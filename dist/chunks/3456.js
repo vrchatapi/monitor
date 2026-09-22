@@ -118,10 +118,10 @@
                         })
                     }, [p]);
                 return E.createElement("div", (0, I.A)({
-                    className: (0, h.cx)(r, "tw-group tw-flex tw-flex-col tw-w-full tw-relative tw-gap-2"),
+                    className: (0, h.cx)(r, "tw:group tw:flex tw:flex-col tw:w-full tw:relative tw:gap-2"),
                     style: R({}, o)
                 }, c), E.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
+                    className: "tw:flex tw:flex-row tw:overflow-x-auto tw:gap-2 tw:rounded-md tw:scroll-smooth tw:snap-x tw:snap-mandatory",
                     ref: i
                 }, b.map(function(e, t) {
                     return E.createElement(P.pL, {
@@ -131,19 +131,19 @@
                         onChange: g,
                         key: e.fileId || e.fileUrl,
                         "data-gallery-index": t,
-                        className: "tw-flex-none tw-aspect-video tw-snap-center tw-w-full tw-object-contain tw-rounded-md tw-bg-cover",
+                        className: "tw:flex-none tw:aspect-video tw:snap-center tw:w-full tw:object-contain tw:rounded-md tw:bg-cover",
                         loading: "lazy",
                         src: e.sizes["2048w"],
                         srcSet: e.fullSrcSet,
                         alt: ""
                     })
                 })), E.createElement("div", {
-                    className: "tw-absolute tw-w-full tw-aspect-video tw-top-0 tw-pointer-events-none"
+                    className: "tw:absolute tw:w-full tw:aspect-video tw:top-0 tw:pointer-events-none"
                 }, E.createElement("div", {
-                    className: "tw-relative tw-w-full tw-aspect-video tw-flex tw-flex-row tw-items-center"
+                    className: "tw:relative tw:w-full tw:aspect-video tw:flex tw:flex-row tw:items-center"
                 }, d > 0 && E.createElement("button", {
                     type: "button",
-                    className: "tw-absolute tw-left-2 tw-bg-dark-grey-transparent-90 tw-p-3 tw-border-none tw-rounded-md tw-hidden group-hover:tw-flex tw-pointer-events-auto",
+                    className: "tw:absolute tw:left-2 tw:bg-dark-grey-transparent-90 tw:p-3 tw:border-none tw:rounded-md tw:hidden tw:group-hover:flex tw:pointer-events-auto",
                     onClick: function() {
                         d < 1 || f(d - 1)
                     }
@@ -152,7 +152,7 @@
                     size: "2x"
                 })), d < a.length - 1 && E.createElement("button", {
                     type: "button",
-                    className: "tw-absolute tw-right-2 tw-bg-dark-grey-transparent-90 tw-p-3 tw-border-none tw-rounded-md tw-hidden group-hover:tw-flex tw-pointer-events-auto",
+                    className: "tw:absolute tw:right-2 tw:bg-dark-grey-transparent-90 tw:p-3 tw:border-none tw:rounded-md tw:hidden tw:group-hover:flex tw:pointer-events-auto",
                     onClick: function() {
                         d > a.length || f(d + 1)
                     }
@@ -160,7 +160,7 @@
                     icon: C.Xk,
                     size: "2x"
                 })))), E.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-center tw-overflow-x-auto tw-gap-2 tw-rounded-md tw-scroll-smooth tw-snap-x tw-snap-mandatory",
+                    className: "tw:flex tw:flex-row tw:justify-center tw:overflow-x-auto tw:gap-2 tw:rounded-md tw:scroll-smooth tw:snap-x tw:snap-mandatory",
                     ref: s
                 }, b.map(function(e, t) {
                     return E.createElement("a", {
@@ -168,11 +168,11 @@
                         "data-gallery-index": t,
                         onClick: v,
                         href: "#".concat(e.fileId),
-                        className: "tw-bg-transparent tw-border-none tw-p-0 tw-m-0 tw-cursor-pointer"
+                        className: "tw:bg-transparent tw:border-none tw:p-0 tw:m-0 tw:cursor-pointer"
                     }, E.createElement("img", {
-                        className: (0, h.cx)("tw-w-16 tw-h-16 tw-object-cover tw-rounded-md tw-snap-center tw-border-solid tw-border-2", {
-                            "tw-border-primary": d === t,
-                            "tw-border-transparent": d !== t
+                        className: (0, h.cx)("tw:w-16 tw:h-16 tw:object-cover tw:rounded-md tw:snap-center tw:border-solid tw:border-2", {
+                            "tw:border-primary": d === t,
+                            "tw:border-transparent": d !== t
                         }),
                         loading: "lazy",
                         src: e.sizes["64w"],
@@ -228,7 +228,7 @@
                         publisherUserId: null
                     };
                 return E.createElement("span", {
-                    className: "tw-text-[#737372]"
+                    className: "tw:text-[#737372]"
                 }, (null == b ? void 0 : b.creatorDisplayName) && E.createElement(E.Fragment, null, "By", " ", b.creatorUserId ? E.createElement(X.N_, {
                     to: "/home/user/".concat(b.creatorUserId),
                     target: "_blank",
@@ -248,19 +248,19 @@
                     n = e.optimisedUserIconUrl,
                     l = e.optimisedProfilePicUrl;
                 return !t || null != t && t.attribution ? null : E.createElement(k.xD, {
-                    className: "tw-flex-row tw-items-center tw-gap-2 tw-bg-cover tw-bg-center",
+                    className: "tw:flex-row tw:items-center tw:gap-2 tw:bg-cover tw:bg-center",
                     style: {
                         backgroundImage: "linear-gradient( rgba(37, 42, 48, 0.75), rgba(37, 42, 48, 0.75) ), url(".concat(l, ")")
                     }
                 }, n && E.createElement("img", {
-                    className: "tw-aspect-square tw-w-12 tw-flex-0 tw-rounded-full tw-border-solid tw-border-2 tw-border-gray-700",
+                    className: "tw:aspect-square tw:w-12 tw:flex-0 tw:rounded-full tw:border-solid tw:border-2 tw:border-gray-700",
                     src: n,
                     alt: ""
                 }), E.createElement(k.fv, {
-                    className: "tw-flex-auto"
+                    className: "tw:flex-auto"
                 }, E.createElement("small", null, r ? "Seller" : "Author"), E.createElement(X.N_, {
                     to: "/home/user/".concat((null == t ? void 0 : t.authorId) || (null == a ? void 0 : a.id)),
-                    className: "hover:tw-text-white tw-text-teal-accent hover:tw-no-underline",
+                    className: "tw:hover:text-white tw:text-teal-accent tw:hover:no-underline",
                     target: "_blank",
                     rel: "noreferrer"
                 }, E.createElement("strong", null, (null == t ? void 0 : t.authorName) || (null == a ? void 0 : a.displayName)))))
@@ -410,23 +410,23 @@
                     ut = !(null == st || !st.length);
                 if (!S && !j) return null;
                 return E.createElement(E.Fragment, null, E.createElement(k.fv, {
-                    className: "md:tw-flex-row tw-gap-3 tw-items-center md:tw-items-stretch"
+                    className: "tw:md:flex-row tw:gap-3 tw:items-center tw:md:items-stretch"
                 }, E.createElement(k.Oo, {
                     width: 144,
-                    className: "tw-rounded-md tw-shrink-0",
-                    imgClassName: "tw-aspect-square",
+                    className: "tw:rounded-md tw:shrink-0",
+                    imgClassName: "tw:aspect-square",
                     imageId: nt || (null == j ? void 0 : j.file),
                     fallbackSrc: V(),
                     fitToCover: !0,
                     alt: "".concat(null == S ? void 0 : S.name, " Thumbnail") || 0
                 }), E.createElement(k.fv, {
-                    className: "tw-flex-grow tw-gap-1"
+                    className: "tw:grow tw:gap-1"
                 }, j && function(e) {
                     switch (e) {
                         case H.p_.PERMANENT:
                             return E.createElement(q.ab, {
                                 bgColor: "#575757",
-                                className: "tw-max-w-fit tw-capitalize tw-leading-5"
+                                className: "tw:max-w-fit tw:capitalize tw:leading-5"
                             }, E.createElement(k.M2, {
                                 icon: Q.default,
                                 width: 14
@@ -434,14 +434,14 @@
                         case H.p_.DURATION:
                             return E.createElement(q.ab, {
                                 bgColor: "#575757",
-                                className: "tw-max-w-fit tw-capitalize"
+                                className: "tw:max-w-fit tw:capitalize"
                             }, E.createElement(k.M2, {
                                 icon: b.Ao
                             }), " ", e);
                         case H.p_.INSTANT:
                             return E.createElement(q.ab, {
                                 bgColor: "#575757",
-                                className: "tw-max-w-fit tw-capitalize"
+                                className: "tw:max-w-fit tw:capitalize"
                             }, E.createElement(k.M2, {
                                 icon: g.zm
                             }), " ", e);
@@ -449,17 +449,17 @@
                             return null
                     }
                 }(j.listingType), E.createElement(k.fI, {
-                    className: "tw-items-center tw-gap-2"
+                    className: "tw:items-center tw:gap-2"
                 }, E.createElement("h2", {
-                    className: (0, h.cx)("tw-mb-0 tw-text-truncate tw-line-clamp-1 tw-break-all tw-leading-[1.25]", {
-                        "tw-flex-grow": !Ye
+                    className: (0, h.cx)("tw:mb-0 tw:text-truncate tw:line-clamp-1 tw:break-all tw:leading-tight", {
+                        "tw:grow": !Ye
                     })
                 }, (null == S ? void 0 : S.name) || (null == j ? void 0 : j.displayName)), Qe && !I && E.createElement(k.fv, {
-                    className: "tw-justify-center md:tw-px-1 tw-flex-grow"
+                    className: "tw:justify-center tw:md:px-1 tw:grow"
                 }, E.createElement(k.fI, {
-                    className: "tw-ml-2 tw-mt-2 md:tw-m-0"
+                    className: "tw:ml-2 tw:mt-2 tw:md:m-0"
                 }, E.createElement(k.$n, {
-                    className: "tw-rounded-full tw-h-[40px] tw-w-[40px]",
+                    className: "tw:rounded-full tw:h-[40px] tw:w-[40px]",
                     "aria-label": "Edit Avatar",
                     onClick: function() {
                         pe()
@@ -467,7 +467,7 @@
                 }, E.createElement(k.M2, {
                     icon: v.hp
                 })))), S && E.createElement(k.fI, {
-                    className: "tw-flex-0 tw-gap-2 tw-justify-self-end"
+                    className: "tw:flex-0 tw:gap-2 tw:justify-self-end"
                 }, E.createElement($.A, {
                     text: "".concat(S.name, " by ").concat(S.authorName, " #VRChat #MadeWithVRChat"),
                     url: "".concat(window.endpoint, "/home/avatar/").concat(S.id)
@@ -492,21 +492,21 @@
                     contentName: S.name,
                     marketplace: !!S.productId
                 })))), E.createElement(k.fI, {
-                    className: "tw-gap-2 tw-flex-wrap tw-flex-grow"
+                    className: "tw:gap-2 tw:flex-wrap tw:grow"
                 }, E.createElement(k.fv, {
-                    className: "tw-flex-[100_1_0%] tw-gap-2 tw-min-w-[285px] tw-flex-grow-[100]"
+                    className: "tw:flex-[100_1_0%] tw:gap-2 tw:min-w-[285px] tw:grow-100"
                 }, E.createElement(Z, {
                     avatar: S,
                     products: D
                 }), ut && E.createElement("ul", {
-                    className: "tw-flex tw-flex-row tw-flex-wrap tw-m-0 tw-p-0 tw-gap-1 tw-list-none"
+                    className: "tw:flex tw:flex-row tw:flex-wrap tw:m-0 tw:p-0 tw:gap-1 tw:list-none"
                 }, st.map(function(e) {
                     return E.createElement("li", {
                         key: e,
-                        className: "tw-text-xs tw-px-2 tw-py-1 tw-bg-[#575757] tw-rounded-full"
+                        className: "tw:text-xs tw:px-2 tw:py-1 tw:bg-[#575757] tw:rounded-full"
                     }, e)
                 }))), E.createElement(k.fv, {
-                    className: "tw-flex-[1_1_0%] tw-min-w-[300px] tw-self-end"
+                    className: "tw:flex-[1_1_0%] tw:min-w-[300px] tw:self-end"
                 }, E.createElement(ee, {
                     avatar: S,
                     userState: Ge,
@@ -514,21 +514,21 @@
                     optimisedUserIconUrl: rt,
                     optimisedProfilePicUrl: at
                 }))))), E.createElement("hr", {
-                    className: "tw-my-5 tw-border-gray-300"
+                    className: "tw:my-5 tw:border-gray-300"
                 }), E.createElement(k.fI, {
-                    className: "tw-flex-wrap tw-gap-3"
+                    className: "tw:flex-wrap tw:gap-3"
                 }, E.createElement(k.fv, {
-                    className: "tw-flex-[100_1_0%] tw-min-w-[285px] tw-flex-grow-[100]"
+                    className: "tw:flex-[100_1_0%] tw:min-w-[285px] tw:grow-100"
                 }, !!M.length && E.createElement("div", {
-                    className: "tw-mb-3"
+                    className: "tw:mb-3"
                 }, E.createElement(U, {
                     images: M
                 })), E.createElement(k.N3, null, E.createElement("h4", {
-                    className: "tw-mb-0 tw-font-bold"
+                    className: "tw:mb-0 tw:font-bold"
                 }, j ? "Listing" : "Avatar", " Info")), E.createElement(k.BW, {
-                    className: "tw-mb-3 tw-break-words"
+                    className: "tw:mb-3 tw:wrap-break-word"
                 }, (null == S ? void 0 : S.acknowledgements) && E.createElement(z.A, {
-                    className: "-tw-mt-3",
+                    className: "tw:-mt-3",
                     tabs: [{
                         name: "Description",
                         id: "description",
@@ -544,17 +544,17 @@
                     },
                     justify: "left"
                 }), E.createElement("span", {
-                    className: "tw-whitespace-pre-wrap"
+                    className: "tw:whitespace-pre-wrap"
                 }, j ? j.description : S[ze]))), E.createElement(k.fv, {
-                    className: "tw-flex-[1_1_0%] tw-min-w-[300px]"
+                    className: "tw:flex-[1_1_0%] tw:min-w-[300px]"
                 }, (I || !Ye || !Ie) && j && E.createElement(k.xD, {
-                    className: "tw-flex-col tw-mb-3"
+                    className: "tw:flex-col tw:mb-3"
                 }, E.createElement("h4", {
-                    className: "tw-text-base tw-mb-1"
+                    className: "tw:text-base tw:mb-1"
                 }, "Price"), E.createElement("h2", {
-                    className: "tw-mb-6"
+                    className: "tw:mb-6"
                 }, E.createElement(k.eD, null), " ", null == j ? void 0 : j.priceTokens), E.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-3"
+                    className: "tw:flex tw:flex-col tw:gap-3"
                 }, E.createElement(k.$n, {
                     type: "accent",
                     onClick: function() {
@@ -566,7 +566,7 @@
                     },
                     neutral: !0
                 }, "Try On In-World"), (null == D ? void 0 : D.length) >= 1 && E.createElement(E.Fragment, null, E.createElement(k.$n, {
-                    className: "tw-mt-2",
+                    className: "tw:mt-2",
                     transparent: !0,
                     onClick: function() {
                         return Ve(!Le)
@@ -576,19 +576,19 @@
                 }) : E.createElement(k.M2, {
                     icon: w.Jt
                 })), Le && E.createElement(k.fv, {
-                    className: "tw-gap-2"
+                    className: "tw:gap-2"
                 }, D.map(function(e) {
                     return E.createElement(W.A, {
-                        className: "tw-min-h-20",
+                        className: "tw:min-h-20",
                         key: e.id,
                         productData: e
                     })
                 }))))), !I && (et || Ze || Ke && S) && E.createElement(k.xD, {
-                    className: "tw-flex-col tw-mb-3"
+                    className: "tw:flex-col tw:mb-3"
                 }, E.createElement("h4", {
-                    className: "tw-text-base tw-mb-4"
+                    className: "tw:text-base tw:mb-4"
                 }, "Manage Avatar"), E.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-3"
+                    className: "tw:flex tw:flex-col tw:gap-3"
                 }, Ze && E.createElement(k.$n, {
                     disabled: te,
                     loading: te,
@@ -635,35 +635,35 @@
                     neutral: !0,
                     disabled: (null == S ? void 0 : S.productId) || (null == S ? void 0 : S.activeAssetReviewId)
                 }, "Sell this Avatar"))), S && E.createElement(k.xD, {
-                    className: "tw-flex-col tw-mb-3"
+                    className: "tw:flex-col tw:mb-3"
                 }, E.createElement("h4", {
-                    className: "tw-text-base tw-mb-4"
+                    className: "tw:text-base tw:mb-4"
                 }, "Performance Rating"), ot.length ? E.createElement("table", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, ot.map(function(e, t) {
                     var a, r = (0, l.A)(e, 2),
                         n = r[0],
                         o = r[1].label,
                         c = lt[n],
                         m = E.createElement("div", {
-                            className: "tw-flex tw-items-center tw-gap-2"
+                            className: "tw:flex tw:items-center tw:gap-2"
                         }, E.createElement(k.M2, {
                             icon: u.tU
                         }), "No Security Checks");
                     if ("failed" === c.scanStatus) m = E.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-2"
+                        className: "tw:flex tw:items-center tw:gap-2"
                     }, E.createElement(k.M2, {
                         icon: s.faXmark
                     }), "Security Checks Failed");
                     else if ("unscanned" === c.scanStatus) m = E.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-2"
+                        className: "tw:flex tw:items-center tw:gap-2"
                     }, E.createElement(k.M2, {
                         icon: i.faCircleQuestion
                     }), "Security Checks Pending");
                     else if (c.scanStatus) {
                         var d, w;
                         m = E.createElement("div", {
-                            className: "tw-flex tw-items-center tw-gap-2"
+                            className: "tw:flex tw:items-center tw:gap-2"
                         }, E.createElement("img", {
                             style: {
                                 height: "1em"
@@ -674,44 +674,44 @@
                     }
                     return E.createElement("tr", {
                         key: n,
-                        className: "tw-border-b tw-border-b-1 tw-border-b-gray-800"
+                        className: "tw:border-b tw:border-b-gray-800"
                     }, E.createElement("th", {
-                        className: "tw-py-1 tw-font-normal tw-text-center"
+                        className: "tw:py-1 tw:font-normal tw:text-center"
                     }, E.createElement(k.M2, {
                         icon: null === (a = B.P4[n]) || void 0 === a ? void 0 : a.icon
                     })), E.createElement("th", {
-                        className: "tw-py-1 tw-font-normal"
+                        className: "tw:py-1 tw:font-normal"
                     }, o), E.createElement("td", {
-                        className: "tw-py-1"
+                        className: "tw:py-1"
                     }, m))
                 })) : E.createElement("em", null, "No performance data found"), E.createElement("small", {
-                    className: "tw-mt-3"
+                    className: "tw:mt-3"
                 }, E.createElement("a", {
                     href: "https://creators.vrchat.com/avatars/avatar-performance-ranking-system",
                     target: "_blank",
                     rel: "noreferrer"
                 }, "Learn about Performance Rating"))), S && E.createElement(k.xD, {
-                    className: "tw-mb-3"
+                    className: "tw:mb-3"
                 }, E.createElement("h4", {
-                    className: "tw-text-base tw-mb-4"
+                    className: "tw:text-base tw:mb-4"
                 }, "Details"), E.createElement("table", {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, E.createElement("tr", {
-                    className: "tw-border-b tw-border-b-1 tw-border-b-gray-800"
+                    className: "tw:border-b tw:border-b-gray-800"
                 }, E.createElement("th", {
-                    className: "tw-py-1 tw-font-normal tw-text-center"
+                    className: "tw:py-1 tw:font-normal tw:text-center"
                 }, E.createElement(k.M2, {
                     icon: c.jk
                 })), E.createElement("th", {
-                    className: "tw-py-1 tw-font-normal"
+                    className: "tw:py-1 tw:font-normal"
                 }, "Created"), E.createElement("td", null, N()(S.created_at).format("L"))), E.createElement("tr", {
-                    className: "tw-border-b tw-border-b-1 tw-border-b-gray-800"
+                    className: "tw:border-b tw:border-b-gray-800"
                 }, E.createElement("th", {
-                    className: "tw-py-1 tw-font-normal tw-text-center"
+                    className: "tw:py-1 tw:font-normal tw:text-center"
                 }, E.createElement(k.M2, {
                     icon: o.rO
                 })), E.createElement("th", {
-                    className: "tw-py-1 tw-font-normal"
+                    className: "tw:py-1 tw:font-normal"
                 }, "Updated"), E.createElement("td", null, N()(S.updated_at).format("L"))))))))
             }
         },
@@ -925,15 +925,15 @@
                     }),
                     toggle: s
                 }, "Contact Support"), m.createElement(x.G1, {
-                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                    className: "tw:flex tw:flex-col tw:justify-center tw:text-center tw:gap-1 tw:px-10"
                 }, m.createElement(b.M2, {
                     icon: i.QJ,
                     size: "4x",
-                    className: "tw-mt-5 tw-mb-5"
+                    className: "tw:mt-5 tw:mb-5"
                 }), m.createElement("h4", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Support Team Required"), m.createElement("strong", null, "It looks like you are trying to report an issue that requires our support team."), m.createElement("p", null, "Please provide us with information about your issue using our web form so we can provide you with assistance.")), m.createElement(x.Tb, {
-                    className: "tw-justify-center"
+                    className: "tw:justify-center"
                 }, m.createElement(x.z9, {
                     to: "https://help.vrchat.com/hc/en-us/requests/new?ticket_form_id=360006750513&tf_360057451993=".concat(null == Q ? void 0 : Q.id, "&tf_subject=").concat(M, "%20").concat(P, "%20By%20").concat(p, "%20").concat(O, "&tf_description=").concat(z),
                     target: "_blank"
@@ -945,21 +945,21 @@
                     }),
                     toggle: s
                 }, "Report Submitted"), m.createElement(x.G1, {
-                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                    className: "tw:flex tw:flex-col tw:justify-center tw:text-center tw:gap-1 tw:px-10"
                 }, m.createElement(b.M2, {
                     icon: c.is,
                     size: "4x",
-                    className: "tw-mt-5 tw-mb-5"
+                    className: "tw:mt-5 tw:mb-5"
                 }), m.createElement("h4", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Your report is in - we've got it!"), m.createElement("strong", null, "Thanks for helping us keep things safe!"), m.createElement("p", null, "Your report has been received and will be reviewed by our moderation team.")), m.createElement(x.Tb, {
-                    className: "tw-justify-center"
+                    className: "tw:justify-center"
                 }, m.createElement(b.$n, {
                     color: "primary",
                     onClick: s,
-                    className: "tw-px-20 tw-py-1"
+                    className: "tw:px-20 tw:py-1"
                 }, "Done")))) : m.createElement(m.Fragment, null, m.createElement(x.Au, {
-                    className: "tw-capitalize",
+                    className: "tw:capitalize",
                     tag: "h4",
                     close: m.createElement(E.A, {
                         onClick: s,
@@ -967,11 +967,11 @@
                     }),
                     toggle: s
                 }, "Report ", p), m.createElement(x.G1, null, K ? m.createElement("div", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, m.createElement(y.A, {
                     size: "3x"
                 })) : m.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, ce && m.createElement(b.$T, {
                     type: "error",
                     title: "Error"
@@ -982,9 +982,9 @@
                     },
                     options: de
                 }), m.createElement("label", {
-                    className: "tw-mt-5"
+                    className: "tw:mt-5"
                 }, "Reason", m.createElement(b.ms, {
-                    className: "tw-mt-2",
+                    className: "tw:mt-2",
                     value: M,
                     onChange: R,
                     disabled: !P,
@@ -996,21 +996,21 @@
                         }
                     })
                 })), m.createElement("small", {
-                    className: "tw-text-light-grey tw-mt-2"
+                    className: "tw:text-light-grey tw:mt-2"
                 }, "Don't see your issue listed here?", m.createElement("a", {
                     href: I ? "https://vrch.at/marketplace-help" : "https://vrch.at/support",
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-ml-1"
+                    className: "tw:ml-1"
                 }, "Contact us")), "copyright" === M ? m.createElement(b.$T, {
                     type: "warn"
                 }, "We take copyright seriously. Copyright infringement reports are handled differently from standard reports. If you own this content or are authorized to act on behalf of the owner,", m.createElement(d.N_, {
                     to: "/home/profile?dmcaClaimForm=true&dmcaTarget=".concat(k),
-                    className: "tw-ml-1"
+                    className: "tw:ml-1"
                 }, "submit a DMCA Claim"), ".") : "warnings" === M ? m.createElement(m.Fragment, null, m.createElement("label", {
-                    className: "tw-mt-5 tw-mb-2"
+                    className: "tw:mt-5 tw:mb-2"
                 }, "Suggest Content Warnings"), m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-2"
+                    className: "tw:flex tw:flex-col tw:gap-2"
                 }, m.createElement(h.A, {
                     tags: L,
                     onSelectValues: function(e) {
@@ -1027,9 +1027,9 @@
                     type: "warn",
                     title: "You already have a pending report for this."
                 }) : m.createElement("label", {
-                    className: "tw-mt-5 tw-flex tw-flex-col tw-gap-2"
+                    className: "tw:mt-5 tw:flex tw:flex-col tw:gap-2"
                 }, "Notes", m.createElement("small", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, "Provide specific details to help moderators resolve the issue promptly."), m.createElement(b.TM, {
                     value: z,
                     onChange: function(e) {
@@ -1057,4 +1057,4 @@
         }
     }
 ]);
-//# sourceMappingURL=14b087df49c258149e9f01eca0a147494653de54d9038080c9b5dbc930735abc.js.map
+//# sourceMappingURL=8eaf298672bf37ee1e97ba2a642bbbc7a4e087a825e66a9d81af44472cca453d.js.map

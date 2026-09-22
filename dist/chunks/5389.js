@@ -1169,7 +1169,7 @@
                     target: w ? "_blank" : void 0
                 }, o.createElement("img", {
                     alt: "profile",
-                    className: "img-thumbnail user-img tw-object-cover tw-aspect-[3/2]",
+                    className: "img-thumbnail user-img tw:object-cover tw:aspect-[3/2]",
                     src: X
                 })), o.createElement("div", {
                     className: "muteIcons"
@@ -1201,7 +1201,7 @@
                     target: w ? "_blank" : void 0
                 }, o.createElement("img", {
                     alt: "profile",
-                    className: "img-thumbnail user-img tw-object-cover tw-aspect-[3/2]",
+                    className: "img-thumbnail user-img tw:object-cover tw:aspect-[3/2]",
                     src: X
                 })), o.createElement("div", {
                     className: "muteIcons"
@@ -1302,16 +1302,16 @@
                     g = f.color,
                     v = n || (0, i.j$)(u ? "offline" : t, !0);
                 return l.createElement("div", {
-                    className: (0, a.cx)("tw-flex tw-items-center tw-gap-[6px]", d),
+                    className: (0, a.cx)("tw:flex tw:items-center tw:gap-[6px]", d),
                     "aria-label": "User Status"
                 }, l.createElement("span", {
-                    className: (0, a.cx)("tw-w-2.5 tw-h-2.5 tw-rounded-full tw-flex-shrink-0 tw-border-solid tw-border-2", p ? "tw-bg-transparent" : "tw-bg-".concat(h) || 0),
+                    className: (0, a.cx)("tw:w-2.5 tw:h-2.5 tw:rounded-full tw:shrink-0 tw:border-solid tw:border-2", p ? "tw:bg-transparent" : "tw:bg-".concat(h) || 0),
                     style: {
                         borderColor: g
                     },
                     title: v
                 }), s && l.createElement("span", {
-                    className: "tw-text-sm tw-font-medium tw-max-w-[32ch] tw-m-0",
+                    className: "tw:text-sm tw:font-medium tw:max-w-[32ch] tw:m-0",
                     title: v
                 }, v))
             }
@@ -1606,4 +1606,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c121fe6ef2c9aebec38add940c3cb27b3bce14862a233c247ffe22ede05b0d87.js.map
+//# sourceMappingURL=bf5649330eb8b4b63fc4b19eaf0d1d36a448dd7bb50be1d10a34433cfe115b0f.js.map

@@ -256,9 +256,9 @@
                     b = (0, p.A)(),
                     A = (0, r.A)(b, 1)[0];
                 return a.createElement("div", null, a.createElement(v.Qc, null, "Messages"), a.createElement("h3", null, "Messages"), a.createElement("div", {
-                    className: "tw-w-full tw-items-center tw-flex"
+                    className: "tw:w-full tw:items-center tw:flex"
                 }, a.createElement(s.A, {
-                    className: "tw-mx-auto tw-w-fit"
+                    className: "tw:mx-auto tw:w-fit"
                 }, a.createElement(u.A, {
                     color: null == g ? "primary" : "secondary",
                     onClick: function() {
@@ -436,4 +436,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84c2aa21c4adc53166a5427d22ced64cdcc36c01b2f47f48bdbd8f43b947fb1a.js.map
+//# sourceMappingURL=5f83bc3179e73d2337522d06d2c7172e8bec07020a1eff2ed67bca45110ebe30.js.map

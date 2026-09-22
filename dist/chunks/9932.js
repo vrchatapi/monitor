@@ -38,11 +38,11 @@
                     return l && (u.M2, f.z1), a ? g.createElement("div", {
                         className: "".concat(n)
                     }, g.createElement("p", {
-                        className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
+                        className: "tw:mb-0 tw:font-bold tw:text-link-highlight"
                     }, null == s ? void 0 : s.displayName)) : i ? g.createElement("div", {
                         className: "".concat(n)
                     }, g.createElement("p", {
-                        className: "tw-mb-0 tw-font-bold tw-text-link-highlight"
+                        className: "tw:mb-0 tw:font-bold tw:text-link-highlight"
                     }, t)) : null
                 });
             h.propTypes = {
@@ -106,53 +106,53 @@
                         }
                     }();
                 return y ? g.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
+                    className: "tw:flex tw:flex-col tw:w-full tw:mt-4 tw:gap-8"
                 }, g.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-items-center tw-w-full"
+                    className: "tw:flex tw:flex-col tw:items-center tw:w-full"
                 }, g.createElement(u.M2, {
                     icon: s.faTriangleExclamation,
                     size: "xl",
-                    className: "tw-h-[72px] tw-mb-5"
+                    className: "tw:h-[72px] tw:mb-5"
                 }), g.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "This listing is currently published. Please set it to draft before deleting.")), g.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
+                    className: "tw:flex tw:flex-row tw:gap-3 tw:w-full"
                 }, g.createElement(u.$n, {
                     type: "button",
                     onClick: C,
-                    containerClasses: "tw-flex-1",
+                    containerClasses: "tw:flex-1",
                     neutral: !0
                 }, "Close"))) : g.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-w-full tw-mt-4 tw-gap-8"
+                    className: "tw:flex tw:flex-col tw:w-full tw:mt-4 tw:gap-8"
                 }, g.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-items-center tw-w-full"
+                    className: "tw:flex tw:flex-col tw:items-center tw:w-full"
                 }, g.createElement(u.M2, {
                     icon: s.faTriangleExclamation,
                     size: "xl",
-                    className: "tw-h-[72px] tw-mb-5"
+                    className: "tw:h-[72px] tw:mb-5"
                 }), k && g.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-items-center tw-gap-2 tw-mb-9"
+                    className: "tw:flex tw:flex-col tw:items-center tw:gap-2 tw:mb-9"
                 }, g.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "This listing is available in the following ", (null == w || null === (r = w.storeIds) || void 0 === r ? void 0 : r.length) || 0, " ", 1 === (null == w || null === (i = w.storeIds) || void 0 === i ? void 0 : i.length) ? "store" : "stores", ":"), null == w ? void 0 : w.storeIds.map(function(e) {
                     return g.createElement(E, {
                         key: e,
                         storeId: e
                     })
                 })), g.createElement("h4", {
-                    className: "tw-text-lg"
+                    className: "tw:text-lg"
                 }, "Are you sure you want to delete? This cannot be undone.")), g.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-gap-3 tw-w-full"
+                    className: "tw:flex tw:flex-row tw:gap-3 tw:w-full"
                 }, g.createElement(u.$n, {
                     type: "button",
                     onClick: C,
-                    containerClasses: "tw-flex-1",
+                    containerClasses: "tw:flex-1",
                     neutral: !0
                 }, "Cancel"), g.createElement(u.$n, {
                     type: "button",
                     onClick: q,
                     loading: N,
-                    containerClasses: "tw-flex-1",
+                    containerClasses: "tw:flex-1",
                     danger: !0
                 }, "Delete")))
             };
@@ -311,4 +311,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47747df3503605d2a64961a7ce740a5d21f84e56aa24f6df2b9f1c9ec6ae49c1.js.map
+//# sourceMappingURL=2877adf1fb1f0639d120eb81826e07eee91682989e9102b77b5c3e9896b22425.js.map

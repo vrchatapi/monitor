@@ -120,15 +120,15 @@
                         return e.value === n
                     });
                     if (!i) return s.createElement("div", {
-                        className: "tw-px-2 tw-py-1 tw-rounded-full tw-text-white tw-text-xs tw-flex tw-justify-center tw-items-center ".concat(r)
+                        className: "tw:px-2 tw:py-1 tw:rounded-full tw:text-white tw:text-xs tw:flex tw:justify-center tw:items-center ".concat(r)
                     }, n);
                     var c = i.label,
                         o = i.icon;
                     return s.createElement("div", {
-                        className: "tw-px-2 tw-py-1 tw-rounded-full tw-text-white tw-text-xs tw-flex tw-justify-center tw-items-center ".concat(r)
+                        className: "tw:px-2 tw:py-1 tw:rounded-full tw:text-white tw:text-xs tw:flex tw:justify-center tw:items-center ".concat(r)
                     }, s.createElement(a.M2, {
                         icon: o,
-                        className: "tw-mr-1"
+                        className: "tw:mr-1"
                     }), c)
                 };
             c.propTypes = {
@@ -275,7 +275,7 @@
                     value: fe
                 }, {
                     label: s.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-1"
+                        className: "tw:flex tw:items-center tw:gap-1"
                     }, s.createElement("img", {
                         style: {
                             height: "1em"
@@ -286,7 +286,7 @@
                     value: ge
                 }, {
                     label: s.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-1"
+                        className: "tw:flex tw:items-center tw:gap-1"
                     }, s.createElement("img", {
                         style: {
                             height: "1em"
@@ -297,7 +297,7 @@
                     value: he
                 }, {
                     label: s.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-1"
+                        className: "tw:flex tw:items-center tw:gap-1"
                     }, s.createElement("img", {
                         style: {
                             height: "1em"
@@ -400,7 +400,7 @@
                 }), s.createElement(Ae, null, "View Selected"), s.createElement("div", null)) : s.createElement(Ee, {
                     className: "fw-normal"
                 }, "All members can join!")), s.createElement(Ee, null, "Instance Properties:"), s.createElement(d.fv, null, s.createElement(Ee, {
-                    className: "fw-normal tw-w-full",
+                    className: "fw-normal tw:w-full",
                     id: "WorldLaunchRegionTitle"
                 }, "Select Region"), s.createElement(Pe, {
                     role: "radiogroup",
@@ -454,7 +454,7 @@
                         return A(t)
                     }
                 })), s.createElement(d.fv, null, s.createElement(Ee, {
-                    className: "fw-normal tw-w-full"
+                    className: "fw-normal tw:w-full"
                 }, "Minimum Avatar Performance Rating"), s.createElement(ue.A, {
                     options: be,
                     value: T,
@@ -1586,11 +1586,11 @@
                             return null !== (t = null == e ? void 0 : e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")) && void 0 !== t ? t : "0"
                         };
                     return s.createElement(s.Fragment, null, s.createElement("div", {
-                        className: "tw-flex mb-3 align-items-start justify-content-between flex-column flex-sm-row"
+                        className: "tw:flex tw:mb-3 tw:items-start tw:justify-between tw:flex-col tw:sm:flex-row"
                     }, s.createElement(Zt, {
-                        className: "tw-flex tw-flex-col"
+                        className: "tw:flex tw:flex-col"
                     }, s.createElement("h2", {
-                        className: "tw-overflow-hidden tw-overflow-ellipsis tw-line-clamp-2 tw-hyphens-auto tw-w-full",
+                        className: "tw:overflow-hidden tw:text-ellipsis tw:line-clamp-2 tw:hyphens-auto tw:w-full",
                         style: {
                             overflowWrap: "break-word"
                         },
@@ -1598,19 +1598,19 @@
                     }, r.name), s.createElement("div", {
                         role: "region",
                         "aria-label": "World Info",
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, s.createElement("div", {
                         role: "row",
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, "By", " ", s.createElement(S.N_, {
                         className: "ms-2",
                         to: "/home/user/".concat(r.authorId)
                     }, r.authorName)), s.createElement(Kt, null), s.createElement("div", {
                         role: "note",
                         title: "World Size",
-                        className: "tw-flex"
+                        className: "tw:flex"
                     }, null !== (t = null == i ? void 0 : i.fileSize) && void 0 !== t ? t : "0 MB"), s.createElement(Kt, null), s.createElement("div", {
-                        className: "tw-flex tw-flex-row tw-gap-1"
+                        className: "tw:flex tw:flex-row tw:gap-1"
                     }, s.createElement(W.A, {
                         packages: r.unityPackages,
                         formattedType: "World"
@@ -1637,9 +1637,9 @@
                         role: "note",
                         title: "Players in Public Instances"
                     }, "There are ", r.publicOccupants, " players in public instances of this world, join them by clicking on an instance below!"), s.createElement("div", {
-                        className: "tw-flex justify-content-between flex-column flex-sm-row"
+                        className: "tw:flex justify-content-between flex-column flex-sm-row"
                     }, s.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-ml-0 ms-sm-2 flex-grow-1"
+                        className: "tw:flex tw:flex-col tw:ml-0 ms-sm-2 flex-grow-1"
                     }, s.createElement(d.N3, null, s.createElement(Xt, null, "Description")), s.createElement(d.BW, null, s.createElement("div", {
                         role: "note",
                         title: "World Description"
@@ -1656,76 +1656,76 @@
                     }), !1, !1), s.createElement(Jt, {
                         className: "mt-3 mt-sm-0"
                     }, s.createElement("div", {
-                        className: "tw-flex tw-flex-col order-1 order-sm-0 mt-3 mt-sm-0"
+                        className: "tw:flex tw:flex-col order-1 order-sm-0 mt-3 mt-sm-0"
                     }, s.createElement(d.N3, null, s.createElement(Xt, null, "Details")), s.createElement(d.BW, null, s.createElement("div", {
-                        className: "tw-flex"
+                        className: "tw:flex"
                     }, s.createElement(rn, {
                         role: "presentation"
                     }, "number" == typeof r.visits && s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: I.pS,
                         className: "me-2"
                     }), "Visits"), s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: k.yy,
                         className: "me-2"
                     }), "Favorites"), s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: N.gd,
                         className: "me-2"
                     }), "Capacity"), s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: E.X4,
                         className: "me-2"
                     }), "Public Players"), s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: x.Lk,
                         className: "me-2"
                     }), "Private Players"), (m || T) && s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: y.pn,
                         className: "me-2"
                     }), "Reports"), (m || T) && (null != o ? o : 0) > 0 && s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: y.pn,
                         className: "me-2"
                     }), "Bops"), "none" !== r.publicationDate ? s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: b.e4,
                         className: "me-2"
                     }), "Published") : s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
                         icon: v.jk,
                         className: "me-2"
                     }), "Created"), s.createElement("div", {
-                        className: "tw-flex mb-2 align-items-center"
+                        className: "tw:flex mb-2 align-items-center"
                     }, s.createElement(d.M2, {
                         color: "#54b5c5",
                         width: 20,
@@ -1743,7 +1743,7 @@
                         "aria-label": "Favorites"
                     }, ee(r.favorites)), s.createElement("div", {
                         role: "note",
-                        className: "tw-flex mb-2 align-items-center",
+                        className: "tw:flex mb-2 align-items-center",
                         "aria-label": "Capacity"
                     }, r.capacity, s.createElement(an, {
                         id: "CapacityInfo",
@@ -1797,7 +1797,7 @@
                         releaseStatus: null == r ? void 0 : r.releaseStatus,
                         className: "mt-0 mt-sm-2 order-0 order-sm-1"
                     }), (m || T) && s.createElement("div", {
-                        className: "tw-flex tw-flex-col my-2"
+                        className: "tw:flex tw:flex-col my-2"
                     }, s.createElement(S.N_, {
                         to: "/home/content/worlds/".concat(r.id, "/edit?backLink=/home/world/").concat(r.id)
                     }, s.createElement(d.$n, null, s.createElement(d.M2, {
@@ -1805,7 +1805,7 @@
                         color: "#6ae3f9",
                         className: "me-2 fa-sm"
                     }), "Edit"))), T && s.createElement("div", {
-                        className: "my-2 tw-flex tw-flex-col"
+                        className: "my-2 tw:flex tw:flex-col"
                     }, (null == Z ? void 0 : Z.error) && s.createElement(d.$T, {
                         type: "error",
                         title: "Failed to update Elasticsearch World data",
@@ -1825,7 +1825,7 @@
                         color: "#6ae3f9",
                         className: "me-2 fa-sm"
                     }), "Update in Elasticsearch")))), (null == r || null === (l = r.instances) || void 0 === l ? void 0 : l.length) > 0 && s.createElement("div", {
-                        className: "tw-flex tw-flex-col ms-0 ms-sm-2 mt-3"
+                        className: "tw:flex tw:flex-col ms-0 ms-sm-2 mt-3"
                     }, s.createElement(d.N3, null, s.createElement(Xt, null, "Active Instances")), s.createElement(d.BW, null, s.createElement(mn, {
                         role: "list",
                         "aria-label": "Active Instance List"
@@ -2094,23 +2094,23 @@
                         v(!1), E(!1), Q(), i()
                     };
                 if (H) return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
+                    className: "tw:bg-dark-grey-transparent tw:rounded-2xl tw:inset-0 tw:z-60 tw:w-screen tw:overflow-y-auto ".concat(r ? "tw:fixed" : "tw:hidden")
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
+                    className: "tw:w-full tw:flex tw:min-h-full tw:items-end tw:justify-center tw:p-4 tw:sm:items-center tw:sm:p-0"
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-relative tw-transform tw-overflow-hidden tw-rounded-lg tw-bg-black tw-shadow-xl tw-transition-all sm:tw-my-8 sm:tw-w-full sm:tw-max-w-lg"
+                    className: "tw:w-full tw:relative tw:transform tw:overflow-hidden tw:rounded-lg tw:bg-black tw:shadow-xl tw:transition-all tw:sm:my-8 tw:sm:w-full tw:sm:max-w-128"
                 }, s.createElement("div", {
-                    className: "tw-p-4 tw-flex tw-flex-row tw-justify-end"
+                    className: "tw:p-4 tw:flex tw:flex-row tw:justify-end"
                 }, s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
+                    className: "tw:rounded-md tw:text-white tw:w-9 tw:h-9 tw:border-0 tw:bg-button-bg-grey tw:hover:bg-dark-grey",
                     onClick: we
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
                 }))), s.createElement("div", {
-                    className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center"
+                    className: "tw:bg-darker-grey tw:px-3 tw:pb-4 tw:pt-5 tw:flex tw:flex-col tw:w-full tw:items-center"
                 }, s.createElement(d.Oo, {
-                    className: "tw-w-40 tw-h-40 tw-bg-transparent tw-mb-5 tw-aspect-square",
+                    className: "tw:w-40 tw:h-40 tw:bg-transparent tw:mb-5 tw:aspect-square",
                     alt: m.displayName,
                     imageId: null == m ? void 0 : m.imageId,
                     fallbackSrc: gn(),
@@ -2118,46 +2118,46 @@
                 }), s.createElement("h3", {
                     className: "heading"
                 }, "Thank you for your purchase!"), s.createElement("p", {
-                    className: "tw-text-base tw-text-lighter-grey"
+                    className: "tw:text-base tw:text-lighter-grey"
                 }, "Enjoy your purchase in ", null == u ? void 0 : u.name, "!"), s.createElement(d.$n, {
-                    className: "tw-w-[300px] tw-rounded-md tw-border-0 tw-bg-button-bg tw-mb-3 tw-text-highlight",
+                    className: "tw:w-[300px] tw:rounded-md tw:border-0 tw:bg-button-bg tw:mb-3 tw:text-highlight",
                     onClick: function() {
                         return we()
                     }
                 }, "Done")))));
                 if ($ || x) return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
+                    className: "tw:bg-dark-grey-transparent tw:rounded-2xl tw:inset-0 tw:z-60 tw:w-screen tw:overflow-y-auto ".concat(r ? "tw:fixed" : "tw:hidden")
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
+                    className: "tw:w-full tw:flex tw:min-h-full tw:items-end tw:justify-center tw:p-4 tw:sm:items-center tw:sm:p-0"
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-relative tw-transform tw-overflow-hidden tw-rounded-lg tw-bg-black tw-shadow-xl tw-transition-all sm:tw-my-8 sm:tw-w-full sm:tw-max-w-lg"
+                    className: "tw:w-full tw:relative tw:transform tw:overflow-hidden tw:rounded-lg tw:bg-black tw:shadow-xl tw:transition-all tw:sm:my-8 tw:sm:w-full tw:sm:max-w-128"
                 }, s.createElement("div", {
-                    className: "tw-bg-grey tw-p-4 tw-flex tw-justify-between tw-items-center"
+                    className: "tw:bg-grey tw:p-4 tw:flex tw:justify-between tw:items-center"
                 }, s.createElement("h3", {
-                    className: "heading tw-m-0 tw-p-0"
+                    className: "heading tw:m-0 tw:p-0"
                 }, "Confirm Purchase"), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
+                    className: "tw:rounded-md tw:text-white tw:w-9 tw:h-9 tw:border-0 tw:bg-button-bg-grey tw:hover:bg-dark-grey",
                     onClick: we,
                     disabled: $
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
                 }))), s.createElement("div", null, s.createElement("p", {
-                    className: "tw-p-5 tw-font-bold tw-text-white tw-text-xl"
+                    className: "tw:p-5 tw:font-bold tw:text-white tw:text-xl"
                 }, "Are you sure you want to buy ", m.displayName, " for ", s.createElement(d.eD, null), " ", m.priceTokens, "?")), s.createElement("div", {
-                    className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-2"
+                    className: "tw:bg-darker-grey tw:px-3 tw:pt-8 tw:pb-4 tw:grid tw:grid-cols-1 tw:sm:grid-cols-2 tw:gap-2"
                 }, F && s.createElement("div", {
-                    className: "tw-col-span-2 tw-rounded-md tw-p-3"
+                    className: "tw:col-span-2 tw:rounded-md tw:p-3"
                 }, s.createElement("p", {
-                    className: "tw-m-0 tw-text-sm tw-text-red"
+                    className: "tw:m-0 tw:text-sm tw:text-red"
                 }, "Failed to make purchase:"), s.createElement("code", {
-                    className: "tw-m-0 tw-text-sm tw-text-red"
+                    className: "tw:m-0 tw:text-sm tw:text-red"
                 }, null !== (ne = null === (ae = Y.data) || void 0 === ae || null === (ae = ae.error) || void 0 === ae ? void 0 : ae.message) && void 0 !== ne ? ne : "Unknown Error")), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-border-0 tw-bg-button-bg-grey tw-mb-3",
+                    className: "tw:rounded-md tw:border-0 tw:bg-button-bg-grey tw:mb-3",
                     neutral: !0,
                     onClick: we
                 }, "Cancel"), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-border-0 tw-mb-3 ",
+                    className: "tw:rounded-md tw:border-0 tw:mb-3 ",
                     onClick: function() {
                         return ue()
                     },
@@ -2166,76 +2166,76 @@
                     loading: $
                 }, "Confirm Purchase")))));
                 return s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent tw-rounded-2xl tw-inset-0 tw-z-[60] tw-w-screen tw-overflow-y-auto ".concat(r ? "tw-fixed" : "tw-hidden")
+                    className: "tw:bg-dark-grey-transparent tw:rounded-2xl tw:inset-0 tw:z-60 tw:w-screen tw:overflow-y-auto ".concat(r ? "tw:fixed" : "tw:hidden")
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-min-h-full tw-items-end tw-justify-center tw-p-4 sm:tw-items-center sm:tw-p-0"
+                    className: "tw:w-full tw:flex tw:min-h-full tw:items-end tw:justify-center tw:p-4 tw:sm:items-center tw:sm:p-0"
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-relative tw-transform tw-overflow-hidden tw-rounded-lg tw-bg-black tw-shadow-xl tw-transition-all sm:tw-my-8 sm:tw-w-full sm:tw-max-w-lg"
+                    className: "tw:w-full tw:relative tw:transform tw:overflow-hidden tw:rounded-lg tw:bg-black tw:shadow-xl tw:transition-all tw:sm:my-8 tw:sm:w-full tw:sm:max-w-128"
                 }, s.createElement("div", {
-                    className: "tw-bg-grey tw-p-4 tw-flex tw-justify-between tw-items-center"
+                    className: "tw:bg-grey tw:p-4 tw:flex tw:justify-between tw:items-center"
                 }, s.createElement("h3", {
-                    className: "heading tw-m-0 tw-p-0"
+                    className: "heading tw:m-0 tw:p-0"
                 }, "Bundle Details"), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey hover:tw-bg-dark-grey",
+                    className: "tw:rounded-md tw:text-white tw:w-9 tw:h-9 tw:border-0 tw:bg-button-bg-grey tw:hover:bg-dark-grey",
                     onClick: we
                 }, s.createElement(d.M2, {
                     color: "white",
                     icon: pn.yY
                 }))), oe && s.createElement("div", {
-                    className: "tw-px-3 tw-pt-5 tw-pb-0"
+                    className: "tw:px-3 tw:pt-5 tw:pb-0"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
+                    className: "tw:flex tw:flex-col tw:sm:flex-row tw:bg-warning-bg tw:rounded-lg tw:border-orange tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-row"
+                    className: "tw:flex tw:flex-row"
                 }, s.createElement(d.M2, {
                     icon: wn.zp,
                     size: "1x",
-                    className: "tw-text-orange tw-mt-1 tw-mr-2"
+                    className: "tw:text-orange tw:mt-1 tw:mr-2"
                 }), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                    className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                 }, s.createElement("h2", {
-                    className: "tw-text-xl"
+                    className: "tw:text-xl"
                 }, "Exclusive In-World Purchase"), s.createElement("p", {
-                    className: "tw-mb-0 tw-text-base"
+                    className: "tw:mb-0 tw:text-base"
                 }, "Visit ", s.createElement(S.N_, {
                     to: "/home/world/".concat(null == u ? void 0 : u.id, "/info")
                 }, null == u ? void 0 : u.name), " in VRChat to get this."))))), s.createElement("div", {
-                    className: "tw-bg-darker-grey tw-px-3 tw-pb-4 tw-pt-5 tw-flex tw-flex-col tw-w-full tw-items-center sm:tw-items-start sm:tw-flex-row"
+                    className: "tw:bg-darker-grey tw:px-3 tw:pb-4 tw:pt-5 tw:flex tw:flex-col tw:w-full tw:items-center tw:sm:items-start tw:sm:flex-row"
                 }, s.createElement("div", {
-                    className: "tw-w-fit tw-h-fit sm:tw-w-1/3 sm:tw-h-1/3 tw-rounded-sm"
+                    className: "tw:w-fit tw:h-fit tw:sm:w-1/3 tw:sm:h-1/3 tw:rounded-xs"
                 }, s.createElement(d.Oo, {
-                    className: "tw-w-full tw-h-full",
+                    className: "tw:w-full tw:h-full",
                     alt: m.displayName,
                     imageId: null == m ? void 0 : m.imageId,
                     fallbackSrc: gn()
                 })), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-justify-start tw-text-left tw-px-5 tw-w-fit tw-mt-3 sm:tw-mt-0 sm:tw-w-2/3"
+                    className: "tw:flex tw:flex-col tw:justify-start tw:text-left tw:px-5 tw:w-fit tw:mt-3 tw:sm:mt-0 tw:sm:w-2/3"
                 }, s.createElement(En.A, {
                     listingType: m.listingType,
-                    className: "tw-w-fit tw-bg-[#575757] tw-mb-1"
+                    className: "tw:w-fit tw:bg-[#575757] tw:mb-1"
                 }), s.createElement("h4", {
-                    className: "tw-text-white tw-text-xl"
+                    className: "tw:text-white tw:text-xl"
                 }, m.displayName), s.createElement("p", null, s.createElement(d.eD, null), " ", m.priceTokens), s.createElement("p", {
-                    className: "tw-text-light-grey tw-text-base"
+                    className: "tw:text-light-grey tw:text-base"
                 }, m.description))), me && (null == m ? void 0 : m.isPurchased) && (null == m || null === (n = m.isPurchasedData) || void 0 === n ? void 0 : n.expiry) && s.createElement("div", {
-                    className: "tw-px-3"
+                    className: "tw:px-3"
                 }, s.createElement("div", {
-                    className: " tw-flex tw-flex-col sm:tw-flex-row tw-bg-dark-teal tw-rounded-lg tw-border-highlight tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center "
+                    className: " tw:flex tw:flex-col tw:sm:flex-row tw:bg-dark-teal tw:rounded-lg tw:border-highlight tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center "
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-row"
+                    className: "tw:flex tw:flex-row"
                 }, s.createElement(d.M2, {
                     icon: g.iW,
                     size: "1x",
-                    className: "tw-text-highlight tw-mt-1 tw-mr-2"
+                    className: "tw:text-highlight tw:mt-1 tw:mr-2"
                 }), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                    className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                 }, s.createElement("h2", {
-                    className: "tw-text-xs"
+                    className: "tw:text-xs"
                 }, "You already have access to these product."), s.createElement("p", {
-                    className: "tw-text-xs tw-mb-0"
+                    className: "tw:text-xs tw:mb-0"
                 }, "Expires at ", L()(m.isPurchasedData.expiry).format("llll"), "."))))), s.createElement("div", null, s.createElement("button", {
                     type: "button",
-                    className: "tw-px-4 tw-py-3 tw-text-link-highlight tw-text-xs tw-cursor-pointer tw-bg-transparent tw-border-0",
+                    className: "tw:px-4 tw:py-3 tw:text-link-highlight tw:text-xs tw:cursor-pointer tw:bg-transparent tw:border-0",
                     onClick: function() {
                         return v(function(e) {
                             return !e
@@ -2244,10 +2244,10 @@
                 }, "View ", null == D || null === (a = D.hydratedProducts) || void 0 === a ? void 0 : a.length, " included products", " ", s.createElement(d.M2, {
                     icon: h ? U.Jt : O.w2
                 }))), h && s.createElement("div", {
-                    className: "tw-px-3 tw-max-h-72 tw-overflow-auto"
+                    className: "tw:px-3 tw:max-h-72 tw:overflow-auto"
                 }, null == D || null === (l = D.hydratedProducts) || void 0 === l ? void 0 : l.map(function(e) {
                     return s.createElement(Nn.A, {
-                        className: "tw-my-2",
+                        className: "tw:my-2",
                         key: e.id,
                         productData: e,
                         listingData: m,
@@ -2255,34 +2255,34 @@
                         alreadyPurchasedData: te(e.id)
                     })
                 })), oe ? s.createElement("div", {
-                    className: "tw-bg-darker-grey tw-px-3 tw-py-8 sm:flex sm:flex-row-reverse sm:px-6"
+                    className: "tw:bg-darker-grey tw:px-3 tw:py-8 sm:flex sm:flex-row-reverse sm:px-6"
                 }, s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-w-9 tw-h-9 tw-border-0",
+                    className: "tw:rounded-md tw:w-9 tw:h-9 tw:border-0",
                     onClick: we
                 }, "Done")) : s.createElement("div", {
-                    className: "tw-bg-darker-grey tw-px-3 tw-pt-8 tw-pb-4 sm:flex sm:flex-row-reverse sm:px-6"
+                    className: "tw:bg-darker-grey tw:px-3 tw:pt-8 tw:pb-4 sm:flex sm:flex-row-reverse sm:px-6"
                 }, le && s.createElement("div", {
-                    className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-message-error-bg tw-rounded-lg tw-border-error-message-red tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
+                    className: "tw:flex tw:flex-col tw:sm:flex-row tw:bg-message-error-bg tw:rounded-lg tw:border-error-message-red tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-row"
+                    className: "tw:flex tw:flex-row"
                 }, s.createElement(d.M2, {
                     icon: g.iW,
                     size: "1x",
-                    className: "tw-text-error-message-red tw-mt-1 tw-mr-2"
+                    className: "tw:text-error-message-red tw:mt-1 tw:mr-2"
                 }), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                    className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                 }, s.createElement("h2", {
-                    className: "tw-text-xl"
+                    className: "tw:text-xl"
                 }, "You Don't Have Enough VRChat Credits"), s.createElement("p", {
-                    className: "tw-mb-0 tw-text-base"
+                    className: "tw:mb-0 tw:text-base"
                 }, "You can buy more inside VRChat.")))), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg tw-mb-3 tw-text-highlight disabled:tw-text-light-grey disabled:tw-bg-button-bg-grey",
+                    className: "tw:rounded-md tw:w-9 tw:h-9 tw:border-0 tw:bg-button-bg tw:mb-3 tw:text-highlight tw:disabled:text-light-grey tw:disabled:bg-button-bg-grey",
                     onClick: function() {
                         return E(!0)
                     },
                     disabled: !(me && de && !se) && ce
                 }, !re && !ie || me ? s.createElement(s.Fragment, null, "Purchase for ", s.createElement(d.eD, null), " ", m.priceTokens) : "Owned"), s.createElement(d.$n, {
-                    className: "tw-rounded-md tw-text-white tw-w-9 tw-h-9 tw-border-0 tw-bg-button-bg-grey",
+                    className: "tw:rounded-md tw:text-white tw:w-9 tw:h-9 tw:border-0 tw:bg-button-bg-grey",
                     onClick: we
                 }, "Cancel")))))
             };
@@ -2308,68 +2308,68 @@
                     f = r.hydratedProducts,
                     g = (null !== (t = null != f ? f : p) && void 0 !== t ? t : []).length;
                 return a ? s.createElement("div", {
-                    className: "tw-@container/listingCard"
+                    className: "tw:@container/listingCard"
                 }, s.createElement("div", {
-                    className: "tw-rounded-md tw-bg-grey tw-p-5 tw-flex tw-flex-col @sm/listingCard:tw-flex-row tw-justify-between tw-mb-3"
+                    className: "tw:rounded-md tw:bg-grey tw:p-5 tw:flex tw:flex-col tw:@sm/listingCard:flex-row tw:justify-between tw:mb-3"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-start tw-w-full tw-max-w-[340px] @sm/listingCard:tw-max-w-[450px] @md/listingCard:tw-max-w-[600px] @lg/listingCard:tw-max-w-[600px]"
+                    className: "tw:flex tw:flex-row tw:justify-start tw:w-full tw:max-w-[340px] tw:@sm/listingCard:max-w-[450px] tw:@md/listingCard:max-w-[600px] tw:@lg/listingCard:max-w-[600px]"
                 }, s.createElement(d.Oo, {
-                    className: "tw-w-32 tw-h-full tw-rounded-md tw-bg-transparent tw-pr-5 tw-hidden @lg/listingCard:tw-block",
+                    className: "tw:w-32 tw:h-full tw:rounded-md tw:bg-transparent tw:pr-5 tw:hidden tw:@lg/listingCard:block",
                     alt: o,
                     imageId: null == r ? void 0 : r.imageId,
                     fallbackSrc: gn(),
                     fitToCover: !0
                 }), s.createElement("div", {
-                    className: "tw-w-full @sm:tw-w-fit tw-text-ellipsis"
+                    className: "tw:w-full tw:@sm:w-fit tw:text-ellipsis"
                 }, s.createElement("div", {
-                    className: " tw-flex tw-w-full tw-overflow-hidden  tw-flex-col @sm/listingCard:tw-flex-row tw-items-start @sm/listingCard:tw-items-center "
+                    className: " tw:flex tw:w-full tw:overflow-hidden  tw:flex-col @sm/listingCard:flex-row tw:items-start @sm/listingCard:items-center "
                 }, s.createElement("h4", {
-                    className: "tw-max-w-[250px] @sm/listingCard:tw-max-w-full tw-text-ellipsis tw-overflow-hidden tw-block tw-whitespace-nowrap"
+                    className: "tw:max-w-[250px] tw:@sm/listingCard:max-w-full tw:text-ellipsis tw:overflow-hidden tw:block tw:whitespace-nowrap"
                 }, o), s.createElement(En.A, {
                     listingType: m,
-                    className: "tw-ml-0 @sm/listingCard:tw-ml-2 tw-w-fit tw-h-fit tw-bg-[#575757] tw-px-2 tw-text-lighter-grey tw-flex tw-items-center"
+                    className: "tw:ml-0 tw:@sm/listingCard:ml-2 tw:w-fit tw:h-fit tw:bg-[#575757] tw:px-2 tw:text-lighter-grey tw:flex tw:items-center"
                 })), s.createElement("div", {
-                    className: " tw-flex tw-flex-col tw-mt-2 @sm/listingCard:tw-mt-0 tw-max-w-full @sm/listingCard:tw-max-w-[400px] @md/listingCard:tw-max-w-[580px] @lg/listingCard:tw-max-w-[480px] "
+                    className: " tw:flex tw:flex-col tw:mt-2 tw:@sm/listingCard:mt-0 tw:max-w-full tw:@sm/listingCard:max-w-[400px] tw:@md/listingCard:max-w-[580px] tw:@lg/listingCard:max-w-[480px] "
                 }, s.createElement("p", {
-                    className: "tw-text-white tw-text-xl"
+                    className: "tw:text-white tw:text-xl"
                 }, s.createElement(d.eD, {
-                    className: "tw-mr-1"
+                    className: "tw:mr-1"
                 }), u), s.createElement("p", {
-                    className: " tw-text-light-grey tw-text-sm tw-text-ellipsis tw-overflow-hidden tw-mb-0 tw-pb-0 tw-hidden @sm/listingCard:tw-block "
+                    className: " tw:text-light-grey tw:text-sm tw:text-ellipsis tw:overflow-hidden tw:mb-0 tw:pb-0 tw:hidden tw:@sm/listingCard:block "
                 }, w)))), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-justify-start tw-items-end tw-border-solid tw-border-0 tw-border-hr-grey tw-pl-4"
+                    className: "tw:flex tw:flex-col tw:justify-start tw:items-end tw:border-solid tw:border-0 tw:border-hr-grey tw:pl-4"
                 }, s.createElement(d.$n, {
-                    className: "tw-h-fit @md/listingCard:tw-ml-0 tw-cursor-pointer",
+                    className: "tw:h-fit tw:@md/listingCard:ml-0 tw:cursor-pointer",
                     onClick: function() {
                         c(r)
                     }
                 }, "Proceed to purchase"), s.createElement("div", {
-                    className: "tw-text-light-grey tw-text-sm tw-mt-2 tw-items-center tw-align-middle tw-hidden @md/listingCard:tw-flex tw-w-full tw-text-center"
+                    className: "tw:text-light-grey tw:text-sm tw:mt-2 tw:items-center tw:align-middle tw:hidden tw:@md/listingCard:flex tw:w-full tw:text-center"
                 }, s.createElement("span", {
-                    className: "tw-text-link-white tw-w-full"
+                    className: "tw:text-link-white tw:w-full"
                 }, g, " included product(s)"))))) : s.createElement("div", {
-                    className: "tw-rounded-md tw-bg-grey tw-p-1 tw-flex-1"
+                    className: "tw:rounded-md tw:bg-grey tw:p-1 tw:flex-1"
                 }, s.createElement("div", null, s.createElement("div", {
-                    className: "tw-absolute tw-p-3 "
+                    className: "tw:absolute tw:p-3 "
                 }, s.createElement(En.A, {
                     listingType: m,
-                    className: "tw-bg-dark-grey-transparent-90"
+                    className: "tw:bg-dark-grey-transparent-90"
                 })), s.createElement("div", {
-                    className: "tw-rounded-md tw-h-64"
+                    className: "tw:rounded-md tw:h-64"
                 }, s.createElement(d.Oo, {
-                    className: "tw-w-full tw-h-full tw-bg-transparent",
+                    className: "tw:w-full tw:h-full tw:bg-transparent",
                     alt: r.displayName,
                     imageId: null == r ? void 0 : r.imageId,
                     fallbackSrc: gn(),
                     fitToCover: !0
                 }))), s.createElement("div", {
-                    className: "tw-p-3"
+                    className: "tw:p-3"
                 }, s.createElement("h4", {
-                    className: "tw-text-ellipsis tw-block tw-overflow-hidden tw-whitespace-nowrap"
+                    className: "tw:text-ellipsis tw:block tw:overflow-hidden tw:whitespace-nowrap"
                 }, o), s.createElement("p", {
-                    className: "tw-text-white tw-text-xl"
+                    className: "tw:text-white tw:text-xl"
                 }, s.createElement(d.eD, {
-                    className: "tw-mr-1"
+                    className: "tw:mr-1"
                 }), u), s.createElement(d.$n, {
                     onClick: function() {
                         c(r)
@@ -2457,36 +2457,36 @@
                         return "subscription" !== e.value
                     });
                 return s.createElement("div", null, s.createElement(d.Qc, null, W), s.createElement("h1", {
-                    className: "heading tw-text-[32px]"
+                    className: "heading tw:text-[32px]"
                 }, W), s.createElement("div", null, s.createElement("div", {
-                    className: "tw-flex tw-justify-between"
+                    className: "tw:flex tw:justify-between"
                 }, s.createElement("div", {
-                    className: "tw-flex"
+                    className: "tw:flex"
                 }, s.createElement(d.ms, {
-                    className: "tw-h-9 tw-mr-2",
+                    className: "tw:h-9 tw:mr-2",
                     label: "Listing Type",
                     value: y,
                     options: O,
                     onChange: x
                 }), s.createElement(d.ms, {
-                    className: "tw-h-9",
+                    className: "tw:h-9",
                     label: "Sort By",
                     value: k,
                     options: bn.zY,
                     onChange: I
                 })), s.createElement("div", {
-                    className: "tw-flex tw-justify-end tw-w-1/3"
+                    className: "tw:flex tw:justify-end tw:w-1/3"
                 }, s.createElement(d.pd, {
                     type: "text",
-                    rawInputClassName: "tw-h-9",
-                    className: "tw-mr-2 tw-w-full",
+                    rawInputClassName: "tw:h-9",
+                    className: "tw:mr-2 tw:w-full",
                     value: M,
                     onChange: function(e) {
                         return _(e.target.value)
                     },
                     placeholder: "Search by name or description"
                 }), s.createElement(d.$n, {
-                    className: "tw-w-10 tw-h-9",
+                    className: "tw:w-10 tw:h-9",
                     onClick: function() {
                         return T(function(e) {
                             return !e
@@ -2495,11 +2495,11 @@
                 }, s.createElement(d.M2, {
                     icon: j ? un.Mb : dn.IT
                 })))), 0 === R.length && s.createElement("div", {
-                    className: "tw-w-full tw-pt-10"
+                    className: "tw:w-full tw:pt-10"
                 }, s.createElement("h2", {
-                    className: "tw-text-xl tw-text-center"
+                    className: "tw:text-xl tw:text-center"
                 }, "No store listings found")), s.createElement("div", {
-                    className: "tw-mt-5 ".concat(j ? "" : "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-2 tw-flex-wrap")
+                    className: "tw:mt-5 ".concat(j ? "" : "tw:grid tw:grid-cols-1 tw:sm:grid-cols-2 tw:md:grid-cols-3 tw:gap-2 tw:flex-wrap")
                 }, null == R ? void 0 : R.map(function(e) {
                     return s.createElement(An, {
                         key: e.id,
@@ -2542,7 +2542,7 @@
                     }, [w]), h || null == w || !w.id || null == t || !t.id) return s.createElement(zn, {
                     className: "w-100"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, s.createElement(Wn, {
                     width: "100%"
                 }), s.createElement(_n, {
@@ -2551,7 +2551,7 @@
                     style: {
                         width: "calc(100% - 300px)"
                     },
-                    className: "tw-flex tw-flex-col mb-2 mb-sm-0"
+                    className: "tw:flex tw:flex-col mb-2 mb-sm-0"
                 }, s.createElement(d.fy, {
                     height: "50px",
                     width: "70%"
@@ -2565,7 +2565,7 @@
                 })), s.createElement(_n, {
                     className: "mt-2 flex-column flex-sm-row"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-col w-100 me-3 mb-3"
+                    className: "tw:flex tw:flex-col w-100 me-3 mb-3"
                 }, s.createElement(d.N3, null, s.createElement(d.fy, {
                     height: "40px",
                     width: "100%"
@@ -2573,7 +2573,7 @@
                     height: "150px",
                     width: "100%"
                 }))), s.createElement("div", {
-                    className: "tw-flex tw-flex-col w-100 w-sm-auto",
+                    className: "tw:flex tw:flex-col w-100 w-sm-auto",
                     style: {
                         minWidth: "300px"
                     }
@@ -2617,7 +2617,7 @@
                 return s.createElement(zn, null, "hidden" === (null == w ? void 0 : w.releaseStatus) && s.createElement(_n, {
                     className: "justify-content-between flex-column flex-sm-row"
                 }, s.createElement("div", {
-                    className: "tw-flex tw-flex-col ms-0 ms-sm-2 flex-grow-1"
+                    className: "tw:flex tw:flex-col ms-0 ms-sm-2 flex-grow-1"
                 }, s.createElement(d.$T, {
                     type: "error",
                     title: "World Deleted",
@@ -2636,7 +2636,7 @@
                     title: "".concat(null == w ? void 0 : w.name, " Preview"),
                     image: w.imageUrl
                 }), s.createElement("div", {
-                    className: "tw-my-6"
+                    className: "tw:my-6"
                 }, s.createElement(i.A, {
                     tabs: [{
                         name: "World Info",
@@ -3321,4 +3321,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6bb5bfd942c7fb7fe7940d41aaf4086ae73a0a11784662539b4debd80ab4e449.js.map
+//# sourceMappingURL=59eb82e2d8539eb4228ca7d88c7a99e29783accc5b8cbddccab5c44a690dbae2.js.map

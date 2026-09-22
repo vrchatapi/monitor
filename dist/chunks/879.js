@@ -53,7 +53,7 @@
                     o = n.isLoading,
                     u = n.isError;
                 return o ? s.createElement(d.A, null) : u || !a ? s.createElement("div", {
-                    className: "tw-p-3 tw-bg-grey tw-rounded-lg tw-text-light-grey tw-py-10"
+                    className: "tw:p-3 tw:bg-grey tw:rounded-lg tw:text-light-grey tw:py-10"
                 }, "Failed to load user") : s.createElement(p.A, (0, l.A)({
                     userData: a
                 }, r))
@@ -87,15 +87,15 @@
                 return s.createElement(x, {
                     ref: g
                 }, s.createElement(i.Qc, null, "Blocks & Mutes"), s.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-8 tw-w-full md:tw-flex-row tw-flex-wrap"
+                    className: "tw:flex tw:flex-col tw:gap-8 tw:w-full tw:md:flex-row tw:flex-wrap"
                 }, y.map(function(e) {
                     return s.createElement("div", {
-                        className: "tw-p-8 tw-flex tw-flex-col tw-rounded-3xl tw-bg-darker-grey tw-gap-8",
+                        className: "tw:p-8 tw:flex tw:flex-col tw:rounded-3xl tw:bg-darker-grey tw:gap-8",
                         key: "pmod-group-".concat(e)
                     }, s.createElement("div", {
-                        className: "tw-flex tw-flex-row tw-flex-wrap tw-gap-2"
+                        className: "tw:flex tw:flex-row tw:flex-wrap tw:gap-2"
                     }, s.createElement("h2", {
-                        className: "tw-mb-0 tw-flex-1 tw-whitespace-nowrap"
+                        className: "tw:mb-0 tw:flex-1 tw:whitespace-nowrap"
                     }, function(e, t) {
                         switch (e) {
                             case w.BLOCK:
@@ -120,9 +120,9 @@
                         }
                     }, s.createElement(i.M2, {
                         icon: u.Qb,
-                        className: "tw-text-error-message-red"
+                        className: "tw:text-error-message-red"
                     }), " Clear all")), s.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-gap-4"
+                        className: "tw:flex tw:flex-col tw:gap-4"
                     }, O[e].map(function(e) {
                         return s.createElement("div", {
                             key: e.id
@@ -148,4 +148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b20da0953ef0f8ff52e9fd7609eee1b3cbdc90c687527298e75c91107b084ef.js.map
+//# sourceMappingURL=138992bad512faddac9c36bbaa8618df703622efd8776661b37cadc485ec2a67.js.map

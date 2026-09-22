@@ -245,46 +245,46 @@
                     toggle: ee,
                     centered: !0
                 }, m.createElement(h.A, {
-                    className: "tw-bg-[#171B1F] tw-text-white tw-p-5 tw-text-center"
+                    className: "tw:bg-[#171B1F] tw:text-white tw:p-5 tw:text-center"
                 }, m.createElement("h4", {
-                    className: "text-center ty-my-5 tw-py-3 tw-text-center"
+                    className: "text-center ty-my-5 tw:py-3 tw:text-center"
                 }, "Shared Player Persistence Detected"), m.createElement("div", {
-                    className: "py-2 tw-text-center"
+                    className: "py-2 tw:text-center"
                 }, m.createElement("p", {
-                    className: "tw-mx-auto tw-max-w-2xl tw-text-sm tw-leading-6 tw-text-gray-300"
+                    className: "tw:mx-auto tw:max-w-168 tw:text-sm tw:leading-6 tw:text-gray-300"
                 }, "We found one or more worlds where both accounts share player persistence. Choose which account’s persistence data you’d like to keep for each world below.")), m.createElement("div", {
-                    className: "py-2 tw-text-center"
+                    className: "py-2 tw:text-center"
                 }, m.createElement(w.fv, {
-                    className: "tw-overflow-hidden tw-rounded-xl tw-bg-grey tw-px-5 tw-py-3"
+                    className: "tw:overflow-hidden tw:rounded-xl tw:bg-grey tw:px-5 tw:py-3"
                 }, m.createElement("table", {
-                    className: "tw-w-full tw-border-collapse"
+                    className: "tw:w-full tw:border-collapse"
                 }, m.createElement("tr", {
-                    className: "tw-border-b tw-border-b-1 tw-border-hr-line-color"
+                    className: "tw:border-b tw:border-b-1 tw:border-hr-line-color"
                 }, m.createElement("th", {
-                    className: "tw-w-1/2 tw-py-4 tw-text-center tw-text-sm tw-font-semibold tw-uppercase tw-tracking-wide tw-text-gray-200"
+                    className: "tw:w-1/2 tw:py-4 tw:text-center tw:text-sm tw:font-semibold tw:uppercase tw:tracking-wide tw:text-gray-200"
                 }, "World"), m.createElement("th", {
-                    className: "tw-w-1/4 tw-py-4 tw-text-center tw-text-sm tw-font-semibold tw-uppercase tw-tracking-wide tw-text-gray-200"
+                    className: "tw:w-1/4 tw:py-4 tw:text-center tw:text-sm tw:font-semibold tw:uppercase tw:tracking-wide tw:text-gray-200"
                 }, "VRChat"), m.createElement("th", {
-                    className: "tw-w-1/4 tw-py-4 tw-text-center tw-text-sm tw-font-semibold tw-uppercase tw-tracking-wide tw-text-gray-200"
+                    className: "tw:w-1/4 tw:py-4 tw:text-center tw:text-sm tw:font-semibold tw:uppercase tw:tracking-wide tw:text-gray-200"
                 }, null !== (o = null == _ ? void 0 : _.source) && void 0 !== o ? o : "external")), null == _ || null === (c = _.sharedPersistenceWorlds) || void 0 === c ? void 0 : c.map(function(e) {
                     return m.createElement("tr", {
                         key: e.id,
-                        className: "tw-border-b tw-border-b-1 tw-border-hr-line-color last:tw-border-none"
+                        className: "tw:border-b tw:border-b-1 tw:border-hr-line-color tw:last:border-none"
                     }, m.createElement("td", {
-                        className: "tw-py-3 tw-pr-3"
+                        className: "tw:py-3 tw:pr-3"
                     }, m.createElement("div", {
                         style: {
                             backgroundImage: "\n                            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),\n                            url(".concat(e.thumbnailImageUrl, ")\n                          ")
                         },
-                        className: "tw-relative tw-flex tw-min-h-[72px] tw-items-center tw-justify-center tw-overflow-hidden tw-rounded-lg tw-bg-cover tw-bg-center"
+                        className: "tw:relative tw:flex tw:min-h-[72px] tw:items-center tw:justify-center tw:overflow-hidden tw:rounded-lg tw:bg-cover tw:bg-center"
                     }, m.createElement("div", {
-                        className: "tw-absolute tw-inset-0 tw-bg-black/55"
+                        className: "tw:absolute tw:inset-0 tw:bg-black/55"
                     }), m.createElement("span", {
-                        className: "tw-relative tw-z-10 tw-px-3 tw-text-center tw-text-sm tw-font-semibold tw-text-white tw-drop-shadow"
+                        className: "tw:relative tw:z-10 tw:px-3 tw:text-center tw:text-sm tw:font-semibold tw:text-white tw:drop-shadow"
                     }, e.name))), m.createElement("td", {
-                        className: "tw-py-3 tw-text-center"
+                        className: "tw:py-3 tw:text-center"
                     }, m.createElement("div", {
-                        className: "tw-flex tw-items-center tw-justify-center"
+                        className: "tw:flex tw:items-center tw:justify-center"
                     }, m.createElement(w.S9, {
                         checked: q.prioritizedWorldPersistence.target.has(e.id),
                         value: e.id,
@@ -292,9 +292,9 @@
                             return te(e.id, !1)
                         }
                     }))), m.createElement("td", {
-                        className: "tw-py-3 tw-text-center"
+                        className: "tw:py-3 tw:text-center"
                     }, m.createElement("div", {
-                        className: "tw-flex tw-items-center tw-justify-center"
+                        className: "tw:flex tw:items-center tw:justify-center"
                     }, m.createElement(w.S9, {
                         checked: q.prioritizedWorldPersistence.source.has(e.id),
                         value: e.id,
@@ -305,14 +305,14 @@
                 })))), m.createElement("div", {
                     className: "px-3 pt-3"
                 }, m.createElement(w.$n, {
-                    className: "tw-my-2",
+                    className: "tw:my-2",
                     expand: !0,
                     onClick: Z,
                     isLoading: M,
                     disabled: M
                 }, "Continue Merge"), m.createElement(w.$n, {
                     onClick: ee,
-                    className: "link tw-block tw-text-center tw-p-0 tw-h-auto tw-bg-transparent tw-shadow-none tw-border-0 tw-rounded-none tw-my-3"
+                    className: "link tw:block tw:text-center tw:p-0 tw:h-auto tw:bg-transparent tw:shadow-none tw:border-0 tw:rounded-none tw:my-3"
                 }, "Cancel")))))
             };
             var k = (0, c.A)(w.fv, {
@@ -330,4 +330,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58df2c9493c9ec682528800aa74e817ea3586f29bc6444c774bd76d9834db928.js.map
+//# sourceMappingURL=74720255bcc72151636c4575b19b84ed22eb8aea1b95222917f92191abeefc29.js.map

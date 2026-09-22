@@ -246,28 +246,28 @@
                         }
                     }(u);
                 return s.createElement(h.A, null, s.createElement(o.Qc, null, "Captcha Verification"), s.createElement("div", {
-                    className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit sm:tw-mt-[200px] tw-mt-0"
+                    className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:sm:mt-[200px] tw:mt-0"
                 }, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, s.createElement("div", {
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }, s.createElement(o.M2, {
                     icon: i.faShieldHalved,
-                    className: "tw-w-[72px] tw-h-[72px]"
+                    className: "tw:w-[72px] tw:h-[72px]"
                 })), s.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Verify You're Human"), s.createElement("p", {
-                    className: "tw-text-center tw-mb-6"
+                    className: "tw:text-center tw:mb-6"
                 }, "Please complete the captcha below to continue."), p && s.createElement("p", {
                     role: "alert",
                     "aria-label": "Captcha error",
-                    className: "tw-text-error-message-red tw-text-sm tw-mb-4"
+                    className: "tw:text-error-message-red tw:text-sm tw:mb-4"
                 }, p), !m && s.createElement("p", {
                     role: "alert",
                     "aria-label": "Invalid return URL",
-                    className: "tw-text-error-message-red tw-text-sm tw-mb-4"
+                    className: "tw:text-error-message-red tw:text-sm tw:mb-4"
                 }, "Invalid return URL."), s.createElement("div", {
-                    className: "tw-mb-6"
+                    className: "tw:mb-6"
                 }, s.createElement(r.A, {
                     theme: "dark",
                     sitekey: "85eb5fc7-910f-44cb-b913-f92ac87596bd",
@@ -294,4 +294,4 @@
         }
     }
 ]);
-//# sourceMappingURL=86bff330166553c3f7c764ca5885d0698b220d8f8e32ebffd31fe7a621266ffa.js.map
+//# sourceMappingURL=bac7d7ff16bcf0909f1bc361fc1dfc40d374b39de09554861194fbac45889798.js.map

@@ -86,7 +86,7 @@
                 return p.createElement(b, {
                     width: le,
                     isIcon: n,
-                    className: "tw-aspect-".concat(Re)
+                    className: "tw:aspect-".concat(Re)
                 }, te && J && p.createElement(g.uo, {
                     headerText: "Are you sure?",
                     confirmText: "Delete",
@@ -403,4 +403,4 @@
         }
     }
 ]);
-//# sourceMappingURL=946beb8b63ec1bea164a3451900fd7b394c2cb50bd08aa63a4c016ebcea36efb.js.map
+//# sourceMappingURL=5a9c7081d4e014f61f14637ae974c7d2dd7bcc2ccf1026680561e0d751883925.js.map

@@ -89,23 +89,23 @@
                     }, [q, F, z, C, O, L, N, W]),
                     A = y;
                 return i.createElement(o.fv, {
-                    className: "pb-5"
+                    className: "tw:pb-5"
                 }, i.createElement(o.$T, {
                     iconColor: "#1FD1ED",
                     icon: r.iW,
                     type: "custom",
                     color: "#28434B",
                     barColor: "#1FD1ED",
-                    className: "xs:tw-hidden tw-flex-row"
+                    className: "tw:xs:hidden tw:flex-row"
                 }, "For the best experience, please view this page on a desktop or tablet."), i.createElement(o.Qc, null, "Marketplace"), A && i.createElement(i.Fragment, null, i.createElement(o.pS, null), i.createElement(o.fy, {
                     height: "480px",
                     radius: "8"
                 })), !A && i.createElement("div", {
-                    className: "tw-@container/marketplaceContainer"
+                    className: "tw:@container/marketplaceContainer"
                 }, i.createElement("div", {
-                    className: "tw-grid tw-gap-x-0 tw-gap-y-3 tw-grid-cols-1 @[990px]/marketplaceContainer:tw-grid-cols-3 tw-mb-4 tw-items-center"
+                    className: "tw:grid tw:gap-x-0 tw:gap-y-3 tw:grid-cols-1 tw:@[990px]/marketplaceContainer:grid-cols-3 tw:mb-4 tw:items-center"
                 }, i.createElement("h2", null, "Marketplace"), i.createElement("div", {
-                    className: "tw-flex-nowrap"
+                    className: "tw:flex-nowrap"
                 }, i.createElement(s.A, {
                     tabs: [{
                         name: "Marketplace",
@@ -123,7 +123,7 @@
                         icon: a.q6,
                         condition: !0
                     }],
-                    className: "tw-w-fit-content tw-flex-nowrap"
+                    className: "tw:w-fit-content tw:flex-nowrap"
                 }))), i.createElement(i.Suspense, {
                     fallback: i.createElement(o.fy, {
                         height: "480px",
@@ -156,4 +156,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cf4bd31bdd798d03898b226d4d88d09bbf95195bcb1ab201ce6d8e06f80bb536.js.map
+//# sourceMappingURL=72f3bf6bc96ba52196531297b4f8129ae152623c43bf12e39b3f9ab3f3975791.js.map

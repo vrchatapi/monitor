@@ -254,15 +254,15 @@
                     }),
                     toggle: s
                 }, "Contact Support"), m.createElement(A.G1, {
-                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                    className: "tw:flex tw:flex-col tw:justify-center tw:text-center tw:gap-1 tw:px-10"
                 }, m.createElement(h.M2, {
                     icon: c.QJ,
                     size: "4x",
-                    className: "tw-mt-5 tw-mb-5"
+                    className: "tw:mt-5 tw:mb-5"
                 }), m.createElement("h4", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Support Team Required"), m.createElement("strong", null, "It looks like you are trying to report an issue that requires our support team."), m.createElement("p", null, "Please provide us with information about your issue using our web form so we can provide you with assistance.")), m.createElement(A.Tb, {
-                    className: "tw-justify-center"
+                    className: "tw:justify-center"
                 }, m.createElement(A.z9, {
                     to: "https://help.vrchat.com/hc/en-us/requests/new?ticket_form_id=360006750513&tf_360057451993=".concat(null == X ? void 0 : X.id, "&tf_subject=").concat(G, "%20").concat(T, "%20By%20").concat(g, "%20").concat(O, "&tf_description=").concat($),
                     target: "_blank"
@@ -274,21 +274,21 @@
                     }),
                     toggle: s
                 }, "Report Submitted"), m.createElement(A.G1, {
-                    className: "tw-flex tw-flex-col tw-justify-center tw-text-center tw-gap-1 tw-px-10"
+                    className: "tw:flex tw:flex-col tw:justify-center tw:text-center tw:gap-1 tw:px-10"
                 }, m.createElement(h.M2, {
                     icon: i.is,
                     size: "4x",
-                    className: "tw-mt-5 tw-mb-5"
+                    className: "tw:mt-5 tw:mb-5"
                 }), m.createElement("h4", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, "Your report is in - we've got it!"), m.createElement("strong", null, "Thanks for helping us keep things safe!"), m.createElement("p", null, "Your report has been received and will be reviewed by our moderation team.")), m.createElement(A.Tb, {
-                    className: "tw-justify-center"
+                    className: "tw:justify-center"
                 }, m.createElement(h.$n, {
                     color: "primary",
                     onClick: s,
-                    className: "tw-px-20 tw-py-1"
+                    className: "tw:px-20 tw:py-1"
                 }, "Done")))) : m.createElement(m.Fragment, null, m.createElement(A.Au, {
-                    className: "tw-capitalize",
+                    className: "tw:capitalize",
                     tag: "h4",
                     close: m.createElement(b.A, {
                         onClick: s,
@@ -296,11 +296,11 @@
                     }),
                     toggle: s
                 }, "Report ", g), m.createElement(A.G1, null, H ? m.createElement("div", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, m.createElement(y.A, {
                     size: "3x"
                 })) : m.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, ie && m.createElement(h.$T, {
                     type: "error",
                     title: "Error"
@@ -311,9 +311,9 @@
                     },
                     options: de
                 }), m.createElement("label", {
-                    className: "tw-mt-5"
+                    className: "tw:mt-5"
                 }, "Reason", m.createElement(h.ms, {
-                    className: "tw-mt-2",
+                    className: "tw:mt-2",
                     value: G,
                     onChange: L,
                     disabled: !T,
@@ -325,21 +325,21 @@
                         }
                     })
                 })), m.createElement("small", {
-                    className: "tw-text-light-grey tw-mt-2"
+                    className: "tw:text-light-grey tw:mt-2"
                 }, "Don't see your issue listed here?", m.createElement("a", {
                     href: C ? "https://vrch.at/marketplace-help" : "https://vrch.at/support",
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-ml-1"
+                    className: "tw:ml-1"
                 }, "Contact us")), "copyright" === G ? m.createElement(h.$T, {
                     type: "warn"
                 }, "We take copyright seriously. Copyright infringement reports are handled differently from standard reports. If you own this content or are authorized to act on behalf of the owner,", m.createElement(d.N_, {
                     to: "/home/profile?dmcaClaimForm=true&dmcaTarget=".concat(k),
-                    className: "tw-ml-1"
+                    className: "tw:ml-1"
                 }, "submit a DMCA Claim"), ".") : "warnings" === G ? m.createElement(m.Fragment, null, m.createElement("label", {
-                    className: "tw-mt-5 tw-mb-2"
+                    className: "tw:mt-5 tw:mb-2"
                 }, "Suggest Content Warnings"), m.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-2"
+                    className: "tw:flex tw:flex-col tw:gap-2"
                 }, m.createElement(w.A, {
                     tags: _,
                     onSelectValues: function(e) {
@@ -356,9 +356,9 @@
                     type: "warn",
                     title: "You already have a pending report for this."
                 }) : m.createElement("label", {
-                    className: "tw-mt-5 tw-flex tw-flex-col tw-gap-2"
+                    className: "tw:mt-5 tw:flex tw:flex-col tw:gap-2"
                 }, "Notes", m.createElement("small", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, "Provide specific details to help moderators resolve the issue promptly."), m.createElement(h.TM, {
                     value: $,
                     onChange: function(e) {
@@ -519,25 +519,25 @@
                     u = void 0 === s ? "" : s,
                     m = Ee().duration(Ee()(u).diff(Ee()())).humanize(!0);
                 return C.createElement(ke, null, C.createElement(re.fv, {
-                    className: "tw-columns-3"
+                    className: "tw:columns-3"
                 }, C.createElement(re.Oo, {
-                    className: "tw-justify-self-start tw-my-2",
+                    className: "tw:justify-self-start tw:my-2",
                     fitToCover: !0,
                     alt: i,
                     imageId: (0, xe.D2)(a || o),
                     width: "100px",
                     height: "100px"
                 })), C.createElement(re.fv, {
-                    className: "tw-flex-[1_1_128px] tw-columns-6"
+                    className: "tw:flex-[1_1_128px] tw:columns-6"
                 }, C.createElement(M.N_, {
-                    className: "tw-justify-self-start tw-text-2xl",
+                    className: "tw:justify-self-start tw:text-2xl",
                     to: "/home/user/".concat(c)
                 }, i), C.createElement("h4", {
-                    className: "tw-justify-self-start"
+                    className: "tw:justify-self-start"
                 }, "Joined ".concat(m)), C.createElement("p", {
-                    className: "tw-justify-self-start tw-text-[#737372] tw-text-[16px]"
+                    className: "tw:justify-self-start tw:text-[#737372] tw:text-[16px]"
                 }, "Member")), C.createElement(re.fv, {
-                    className: "tw-flex tw-flex-row tw-flex-[1_1_32px] tw-justify-center tw-items-center tw-columns-3"
+                    className: "tw:flex tw:flex-row tw:flex-[1_1_32px] tw:justify-center tw:items-center tw:columns-3"
                 }, C.createElement(re.$n, {
                     expand: !0,
                     title: "Select New Owner",
@@ -730,7 +730,7 @@
                 }, "We couldn't find anything with that search.")), q ? C.createElement(re.fy, {
                     height: "200px"
                 }) : C.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, le), C.createElement("div", {
                     className: "p-2",
                     style: {
@@ -805,22 +805,22 @@
                 }, (null == f || null === (n = f.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "Unkown error fetching New Group Owner Data"), C.createElement(re.fI, null, C.createElement("span", {
                     className: "full-width text-center"
                 }, "You can choose to cancel the transfer")), C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%]"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full"
                 }, C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", {
-                    className: "tw-font-normal tw-text-[14px] tw-mt-2"
+                    className: "tw:font-normal tw:text-[14px] tw:mt-2"
                 }, "Current Owner"), C.createElement("p", {
-                    className: "tw-flex-row tw-m-1 tw-font-bold gx-0 gap-1"
+                    className: "tw:flex-row tw:m-1 tw:font-bold gx-0 gap-1"
                 }, C.createElement(re.M2, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     icon: Se.zq
                 }), null == i ? void 0 : i.displayName)), C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", {
-                    className: "tw-font-normal tw-text-[14px] tw-mt-2"
+                    className: "tw:font-normal tw:text-[14px] tw:mt-2"
                 }, "New Owner"), d && C.createElement(re.fI, {
-                    className: "tw-flex tw-m-1 tw-font-bold gx-0 gap-1"
+                    className: "tw:flex tw:m-1 tw:font-bold gx-0 gap-1"
                 }, C.createElement(re.Oo, {
                     width: 24,
                     style: {
@@ -837,15 +837,15 @@
                         styles: ">*{margin-top:15px;}"
                     })
                 }, C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%]"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full"
                 }, C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement(re.$n, {
                     onClick: function() {
                         return l()
                     },
                     danger: !0,
-                    className: "tw-max-w-[100%]"
+                    className: "tw:max-w-full"
                 }, "Cancel Transfer")))))))
             };
             var Te = n(64350);
@@ -866,7 +866,7 @@
                     }),
                     toggle: n
                 }, "About Group Ownership Transfer"), C.createElement(me.G1, null, C.createElement("h4", null, "You can transfer your group ownership to another member of the group. the target member and the group must meet the requirements below."), C.createElement(me.xx, null, C.createElement("ul", null, C.createElement("li", null, "The target member has verified their email address ", "(", "check the Email section via", " ", C.createElement(M.N_, {
-                    className: "tw-text-link-highlight",
+                    className: "tw:text-link-highlight",
                     to: "/home/profile",
                     target: "_blank"
                 }, "account settings"), ")"), C.createElement("li", null, "The target member has an active VRC Plus subscription"), C.createElement("li", null, "The target member can still own more groups ", "(", "each user can own up to 5 groups", ")"), C.createElement("li", null, "The group is not monetized")))))
@@ -918,43 +918,43 @@
                     type: "error",
                     title: "Error Fetching Group Owner Data"
                 }, (null == w || null === (n = w.data) || void 0 === n || null === (n = n.error) || void 0 === n ? void 0 : n.message) || "Unkown error fetching Group Owner Requirements Data"), y && !b ? C.createElement("span", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, C.createElement(re.$T, {
                     type: "error"
                 }, "Your group is not qualified for ownership transfer because it is currently being monetized.", " ", C.createElement("button", {
                     type: "button",
-                    className: "tw-text-[#1FD1ED] tw-cursor-pointer tw-border-none tw-bg-transparent tw-p-0 tw-m-0",
+                    className: "tw:text-[#1FD1ED] tw:cursor-pointer tw:border-none tw:bg-transparent tw:p-0 tw:m-0",
                     onClick: function() {
                         return u(!0)
                     }
                 }, "Learn more about Group Ownership Transfer"), ".")) : C.createElement("span", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "You can transfer your group ownership to another member of the group, this cannot be undone once the transfer is complete. The target member and the group must meet", " ", C.createElement("button", {
                     type: "button",
-                    className: "tw-text-[#1FD1ED] tw-cursor-pointer tw-border-none tw-bg-transparent tw-p-0 tw-m-0",
+                    className: "tw:text-[#1FD1ED] tw:cursor-pointer tw:border-none tw:bg-transparent tw:p-0 tw:m-0",
                     onClick: function() {
                         return u(!0)
                     }
                 }, "these requirements"), " ", "to qualify for the transfer."), C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%]"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full"
                 }, C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", null, "Current Owner"), C.createElement("p", {
-                    className: "tw-flex-row tw-m-1 tw-font-bold gx-0 gap-1"
+                    className: "tw:flex-row tw:m-1 tw:font-bold gx-0 gap-1"
                 }, C.createElement(re.M2, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     icon: Se.zq
                 }), null == d ? void 0 : d.displayName)), C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", null, "New Owner"), C.createElement(re.$n, {
-                    className: "tw-max-w-[250px]",
+                    className: "tw:max-w-[250px]",
                     onClick: function() {
                         return a()
                     },
                     disabled: o || b || y,
                     loading: o
                 }, C.createElement(re.M2, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     icon: Te.faMagnifyingGlass
                 }), "Search Group Members"))))))
             };
@@ -987,7 +987,7 @@
                     d = s.isError,
                     p = s.error;
                 return C.createElement(C.Fragment, null, C.createElement(re.uo, {
-                    className: "tw-max-width-[600px]",
+                    className: "tw:max-width-[600px]",
                     isOpen: i,
                     confirmDisabled: !r.valid,
                     confirmCallback: function() {
@@ -1000,7 +1000,7 @@
                     confirmText: "Transfer",
                     cancelText: "Cancel"
                 }, c || m ? C.createElement("div", {
-                    className: "tw-full-width tw-text-center"
+                    className: "tw:full-width tw:text-center"
                 }, C.createElement(ie.A, null)) : C.createElement("div", null, d && C.createElement(re.$T, {
                     type: "error",
                     title: "Error Fetching Group Owner Data"
@@ -1011,26 +1011,26 @@
                     var t;
                     return C.createElement("p", null, "• ".concat(null !== (t = Ue[e]) && void 0 !== t ? t : "Unknown Validity Reason"))
                 })), C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%] tw-mt-2"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full tw:mt-2"
                 }, C.createElement("span", {
-                    className: "tw-full-width tw-text-center"
+                    className: "tw:full-width tw:text-center"
                 }, "Are you sure you want to transfer your group ownership?")), C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%] tw-bg-[#252a30] tw-px-8 tw-text-[16px] tw-rounded-lg tw-border-current tw-transition tw-ease-in-out tw-delay-150 tw-bg-[#252a30] tw-mt-2"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full tw:px-8 tw:text-[16px] tw:rounded-lg tw:border-current tw:transition tw:ease-in-out tw:delay-150 tw:bg-[#252a30] tw:mt-2"
                 }, C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", {
-                    className: "tw-font-normal tw-text-[14px] tw-mt-2"
+                    className: "tw:font-normal tw:text-[14px] tw:mt-2"
                 }, "Current Owner"), C.createElement("p", {
-                    className: "tw-flex-row tw-m-1 tw-font-bold gx-0 gap-1"
+                    className: "tw:flex-row tw:m-1 tw:font-bold gx-0 gap-1"
                 }, C.createElement(re.M2, {
-                    className: "tw-mr-2",
+                    className: "tw:mr-2",
                     icon: Se.zq
                 }), null == u ? void 0 : u.displayName)), C.createElement(re.fv, {
-                    className: "tw-flex-[1_0_0%]"
+                    className: "tw:flex-[1_0_0%]"
                 }, C.createElement("p", {
-                    className: "tw-font-normal tw-text-[14px] tw-mt-2"
+                    className: "tw:font-normal tw:text-[14px] tw:mt-2"
                 }, "New Owner"), (null == l ? void 0 : l.user) && C.createElement(re.fI, {
-                    className: "tw-flex tw-m-1 tw-font-bold gx-0 gap-1"
+                    className: "tw:flex tw:m-1 tw:font-bold gx-0 gap-1"
                 }, C.createElement(re.Oo, {
                     width: 24,
                     style: {
@@ -1040,9 +1040,9 @@
                     imageId: (0, xe.D2)(l.user.thumbnailUrl || l.user.currentAvatarThumbnailImageUrl),
                     alt: l.user.displayName
                 }), l.user.displayName))), C.createElement(re.fI, {
-                    className: "tw-flex-[0_0_0%] tw-flex-row tw-space-x-2 tw-max-w-[100%] tw-mt-2"
+                    className: "tw:flex-[0_0_0%] tw:flex-row tw:space-x-2 tw:max-w-full tw:mt-2"
                 }, C.createElement("span", {
-                    className: "tw-full-width tw-text-center"
+                    className: "tw:full-width tw:text-center"
                 }, "This cannot be undone once the transfer is complete.")))))
             };
             var _e = n(30104),
@@ -1248,13 +1248,13 @@
                         e.stopPropagation(), e.preventDefault(), p(!d)
                     }
                 }, !!n && C.createElement(Ze, null, n.labelValue), C.createElement(He, {
-                    className: "tw-gap-2 tw-text-center tw-justify-center"
+                    className: "tw:gap-2 tw:text-center tw:justify-center"
                 }, b), C.createElement(le.A, {
                     icon: Je.xB,
                     color: "white",
                     className: "ms-3"
                 })), d && i.length > 0 && C.createElement(at, {
-                    className: "tw-px-[10px] tw-gap-1 tw-py-1"
+                    className: "tw:px-[10px] tw:gap-1 tw:py-1"
                 }, i.map(function(e, t) {
                     var n, r;
                     return C.createElement(Xe.A, {
@@ -1268,7 +1268,7 @@
                             return t === n
                         }),
                         key: null !== (r = null == e ? void 0 : e.value) && void 0 !== r ? r : "option-key-".concat(t),
-                        className: "tw-w-4 tw-h-4 tw-mr-2",
+                        className: "tw:w-4 tw:h-4 tw:mr-2",
                         onClick: h(e),
                         tabIndex: t,
                         label: null == e ? void 0 : e.label
@@ -1463,7 +1463,7 @@
                 }, "There was an error loading the filterable audit log types."), C.createElement(re.N3, null, C.createElement("h4", {
                     className: "text-center"
                 }, "Audit Log")), C.createElement(re.BW, null, C.createElement(re.fI, {
-                    className: "tw-flex-row tw-justify-evenly"
+                    className: "tw:flex-row tw:justify-evenly"
                 }, !!h.length && C.createElement(Ke, {
                     labelProps: {
                         ariaLabel: "LogTypes",
@@ -3740,17 +3740,17 @@
                     }, C.createElement(me.RL, {
                         tag: "h5"
                     }, n.displayName)), C.createElement(hn.A, {
-                        className: "mb-2 text-muted text-truncate tw-capitalize",
+                        className: "mb-2 text-muted text-truncate tw:capitalize",
                         tag: "h6"
                     }, n.status)), C.createElement(z.A, null, C.createElement("div", {
-                        className: "tw-flex tw-col tw-justify-end"
+                        className: "tw:flex tw:col tw:justify-end"
                     }, C.createElement("div", {
-                        className: "tw-justify-end"
+                        className: "tw:justify-end"
                     }, C.createElement(re.$n, {
                         onClick: u ? w : y,
                         disabled: b || f,
                         loading: b || f,
-                        className: "tw-w-fit tw-px-4"
+                        className: "tw:w-fit tw:px-4"
                     }, C.createElement(re.M2, {
                         width: 20,
                         icon: i.pn
@@ -3989,7 +3989,7 @@
                         a = r.isLoading,
                         o = r.isError;
                     return a ? C.createElement(ie.A, null) : o || !l ? C.createElement("div", {
-                        className: "tw-p-3 tw-bg-grey tw-rounded-lg tw-text-light-grey tw-py-10"
+                        className: "tw:p-3 tw:bg-grey tw:rounded-lg tw:text-light-grey tw:py-10"
                     }, "Failed to load user") : C.createElement(rn.A, (0, tn.A)({
                         userData: l
                     }, n))
@@ -4144,7 +4144,7 @@
                                     member: e
                                 });
                             return a ? C.createElement("button", {
-                                className: "tw-border-none tw-bg-transparent tw-rounded-2xl tw-p-0",
+                                className: "tw:border-none tw:bg-transparent tw:rounded-2xl tw:p-0",
                                 key: e.id,
                                 type: "button",
                                 onClick: function(n) {
@@ -4951,19 +4951,19 @@
                     case bt.mm.OPEN:
                         A = C.createElement(re.$n, {
                             onClick: n,
-                            className: "tw-w-full tw-mb-3"
+                            className: "tw:w-full tw:mb-3"
                         }, C.createElement(re.M2, {
                             icon: o.QL,
-                            className: "tw-mr-1"
+                            className: "tw:mr-1"
                         }), "Join this group to view all instances");
                         break;
                     case bt.mm.REQUEST:
                         A = C.createElement(re.$n, {
                             onClick: n,
-                            className: "tw-w-full tw-mb-3"
+                            className: "tw:w-full tw:mb-3"
                         }, C.createElement(re.M2, {
                             icon: s.y_,
-                            className: "tw-mr-1"
+                            className: "tw:mr-1"
                         }), "Request to join to view all instances");
                         break;
                     default:
@@ -6124,12 +6124,12 @@
                     },
                     neutral: !0,
                     type: "button",
-                    className: "tw-gap-2 tw-w-fit tw-flex tw-items-center tw-px-[10px] tw-py-2 tw-align-middle"
+                    className: "tw:gap-2 tw:w-fit tw:flex tw:items-center tw:px-[10px] tw:py-2 tw:align-middle"
                 }, C.createElement(re.M2, {
                     icon: v ? cl.vrcRepresenting : cl.vrcNotRepresenting,
-                    className: "tw-h-4 tw-w-4"
+                    className: "tw:h-4 tw:w-4"
                 }), C.createElement("p", {
-                    className: "tw-m-0"
+                    className: "tw:m-0"
                 }, v ? "Unrepresent Group" : "Represent Group"))
             };
             var ul = n(6062);
@@ -6187,25 +6187,25 @@
                     height: "30px",
                     className: "mt-4"
                 }) : C.createElement(re.fI, {
-                    className: "tw-justify-between"
+                    className: "tw:justify-between"
                 }, C.createElement(re.fv, {
                     className: "gap-1"
                 }, C.createElement(re.fI, null, C.createElement(re.M2, {
-                    className: "tw-mt-[8px]",
+                    className: "tw:mt-[8px]",
                     icon: f.z$,
                     width: 20
                 }), i ? C.createElement("span", {
-                    className: "tw-mt-[6px]"
+                    className: "tw:mt-[6px]"
                 }, C.createElement(M.N_, {
                     to: "/home/user/".concat(r.id)
                 }, r.displayName), " has initiated a transfer of ownership to you") : C.createElement("span", {
-                    className: "tw-mt-[6px]"
+                    className: "tw:mt-[6px]"
                 }, c ? "You have initiated an ownership transfer to " : "Ownership transfer has been initiated to ", C.createElement(M.N_, {
                     to: "/home/user/".concat(r.id)
                 }, r.displayName)))), C.createElement(re.fv, {
                     className: "gap-1"
                 }, C.createElement(re.fI, {
-                    className: "tw-gap-[12px]"
+                    className: "tw:gap-[12px]"
                 }, i && C.createElement(re.$n, {
                     success: !0,
                     onClick: function() {
@@ -6526,22 +6526,22 @@
                     r = (e.isEvents, e.isAdmin),
                     l = void 0 !== r && r;
                 return C.createElement(re.fv, {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, C.createElement(re.N3, null, C.createElement("h4", null, "Upcoming Event")), C.createElement(re.BW, {
-                    className: "tw-items-center"
+                    className: "tw:items-center"
                 }, !n && C.createElement("p", {
-                    className: "align-self-center tw-mb-5 tw-text-placeholder-text"
+                    className: "align-self-center tw:mb-5 tw:text-placeholder-text"
                 }, "No upcoming or ongoing events"), n ? C.createElement(jl.Ay, {
                     event: n,
-                    className: "tw-mb-5"
+                    className: "tw:mb-5"
                 }) : null, n && C.createElement(M.N_, {
                     to: "/home/group/".concat(t.id, "/events"),
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, C.createElement(re.$n, {
                     neutral: !0
                 }, "See All Events")), l && !n && C.createElement(M.N_, {
                     to: "/home/group/".concat(t.id, "/events"),
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, C.createElement(re.$n, {
                     primary: !0
                 }, "Create Event"))))
@@ -6604,9 +6604,9 @@
                         f(n), r(n)
                     };
                 return C.createElement(re.fI, {
-                    className: (0, O.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-2 tw-z-20", m && "tw-justify-between")
+                    className: (0, O.cx)("tw:@container tw:w-full tw:flex-wrap tw:gap-2 tw:z-20", m && "tw:justify-between")
                 }, C.createElement(re.fI, {
-                    className: (0, O.cx)("tw-gap-2 tw-flex-wrap", !m && "@sm:tw-flex-1 tw-w-full")
+                    className: (0, O.cx)("tw:gap-2 tw:flex-wrap", !m && "tw:@sm:flex-1 tw:w-full")
                 }, C.createElement(re.ms, {
                     label: "Display",
                     options: Fl,
@@ -6622,9 +6622,9 @@
                         A(e), c(e)
                     }
                 })), C.createElement(re.fI, {
-                    className: (0, O.cx)("tw-gap-2 tw-justify-end", !m && "@sm:tw-flex-1 tw-w-full", m && "tw-flex-none")
+                    className: (0, O.cx)("tw:gap-2 tw:justify-end", !m && "tw:@sm:flex-1 tw:w-full", m && "tw:flex-none")
                 }, !m && C.createElement(re.pd, {
-                    className: "tw-w-full @sm:tw-max-w-[360px]",
+                    className: "tw:w-full tw:@sm:max-w-[360px]",
                     type: "text",
                     placeholder: "Search by event name or url",
                     value: g,
@@ -6633,7 +6633,7 @@
                         "Enter" === e.key && (e.preventDefault(), t(e))
                     })
                 }), s && C.createElement(re.$n, {
-                    className: "tw-w-9 tw-h-10",
+                    className: "tw:w-9 tw:h-10",
                     onClick: function() {
                         s()
                     }
@@ -6772,15 +6772,15 @@
                     },
                     ce = ee || i || !K || !o;
                 return C.createElement(C.Fragment, null, C.createElement("div", {
-                    className: "tw-py-4"
+                    className: "tw:py-4"
                 }, _ && C.createElement(re.$n, {
                     "aria-label": "Create Event",
-                    className: "tw-mb-4",
+                    className: "tw:mb-4",
                     onClick: function() {
                         v(!0)
                     }
                 }, "+ Create Event"), C.createElement(Wl, null, C.createElement(Yl, null, C.createElement(Vl, null, "Events")), C.createElement(Jl, {
-                    className: "tw-flex-col tw-gap-5 tw-items-center tw-pt-5"
+                    className: "tw:flex-col tw:gap-5 tw:items-center tw:pt-5"
                 }, C.createElement(ql, {
                     hideSearch: !0,
                     gridToggle: function() {
@@ -6793,7 +6793,7 @@
                         L(e)
                     }
                 }), ce && C.createElement(re.fy, null), !ce && (null != ne && ne.length ? C.createElement(re.fv, {
-                    className: (0, O.cx)("tw-@container tw-w-full tw-flex-wrap tw-gap-4", m && "tw-flex-row")
+                    className: (0, O.cx)("tw:@container tw:w-full tw:flex-wrap tw:gap-4", m && "tw:flex-row")
                 }, ne.map(function(e) {
                     return C.createElement(jl.Ay, {
                         key: e.id,
@@ -6811,7 +6811,7 @@
                     title: A.label,
                     isVisible: f,
                     onClose: le,
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     slim: !0,
                     width: "100%"
                 }, C.createElement(C.Suspense, {
@@ -7280,7 +7280,7 @@
                         styles: "margin-bottom:30px"
                     })
                 }, C.createElement(re.fI, {
-                    className: "mb-4 justify-content-start tw-gap-2 tw-flex-wrap"
+                    className: "mb-4 justify-content-start tw:gap-2 tw:flex-wrap"
                 }, "visible" === (null == Ge || null === (t = Ge.myMember) || void 0 === t ? void 0 : t.visibility) && C.createElement(sl, {
                     groupId: Ge.id,
                     isRepresenting: _t
@@ -7578,4 +7578,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f04eb4eab9924b308ed34cf9dcf12e358118385db2d0d116ae712b913f0e770d.js.map
+//# sourceMappingURL=faa400c72e54374312d75bc9dfd647ba03551d244d956b64343f4b589d98ff55.js.map

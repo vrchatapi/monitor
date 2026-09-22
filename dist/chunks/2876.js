@@ -428,18 +428,18 @@
                 }))))) : w.createElement(O.A, {
                     showVRCLogo: !s
                 }, w.createElement(y.Qc, null, "Create a New Account"), w.createElement("div", {
-                    className: "tw-bg-darker-grey tw-w-full sm:tw-w-[500px] tw-pt-9 tw-px-12 tw-rounded-lg tw-h-fit ".concat(s ? "xl:tw-mt-5" : "xl:tw-mt-[200px]")
+                    className: "tw:bg-darker-grey tw:w-full tw:sm:w-[500px] tw:pt-9 tw:px-12 tw:rounded-lg tw:h-fit ".concat(s ? "tw:xl:mt-5" : "tw:xl:mt-[200px]")
                 }, w.createElement("form", {
                     onSubmit: Je
                 }, w.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                 }, w.createElement("h4", {
-                    className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                    className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                 }, "Create a New Account"), w.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, w.createElement("label", {
                     htmlFor: "username",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Display Name"), w.createElement(y.pd, {
                     type: "text",
                     id: "username",
@@ -449,22 +449,22 @@
                     onChange: Be,
                     loading: J.checking,
                     success: !J.checking && J.ok,
-                    className: "tw-mb-1",
+                    className: "tw:mb-1",
                     isError: J.error
                 }), !J.error && w.createElement("p", {
-                    className: "tw-text-placeholder-text tw-text-xs tw-mb-0"
+                    className: "tw:text-placeholder-text tw:text-xs tw:mb-0"
                 }, s ? "This is visible to others and can be edited later." : "This is the name shown to other users in-app, you may only change your display name once per 90 days."), J.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Display name error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, J.error)), w.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Email"), w.createElement(y.pd, {
                     type: "text",
-                    className: "tw-w-full",
+                    className: "tw:w-full",
                     id: "email",
                     name: "email",
                     "aria-label": "New Email",
@@ -476,10 +476,10 @@
                 }), W.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, W.error), W.ok && !s && w.createElement(y.pd, {
                     type: "text",
-                    className: "tw-w-full tw-mt-2",
+                    className: "tw:w-full tw:mt-2",
                     name: "re-enter-email",
                     "aria-label": "Re-enter email address",
                     placeholder: "Re-enter email address",
@@ -501,12 +501,12 @@
                 }), W.ok && Z.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Re-entered email error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, Z.error)), w.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Password"), w.createElement(y.pd, {
                     type: "password",
                     name: "Password",
@@ -537,10 +537,10 @@
                 }), re.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Password error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1 tw-whitespace-pre-wrap"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1 tw:whitespace-pre-wrap"
                 }, re.error), re.ok && w.createElement(y.pd, {
                     type: "password",
-                    className: "tw-w-full tw-mt-2",
+                    className: "tw:w-full tw:mt-2",
                     id: "re-enter-password",
                     name: "Re-enter-password",
                     placeholder: "Re-enter password",
@@ -564,16 +564,16 @@
                 }), re.ok && oe.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Re-entered password error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, oe.error)), w.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, w.createElement("label", {
                     htmlFor: "Email",
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Date of Birth"), w.createElement("div", {
-                    className: "tw-justify-between tw-align-middle tw-flex"
+                    className: "tw:justify-between tw:align-middle tw:flex"
                 }, w.createElement(z, {
-                    className: "tw-w-[129px] tw-h-10",
+                    className: "tw:w-[129px] tw:h-10",
                     id: "age_month",
                     "aria-label": "Birthday Month",
                     value: ue.month,
@@ -617,7 +617,7 @@
                     id: "day",
                     inputMode: "numeric",
                     name: "day",
-                    className: "tw-w-[129px]",
+                    className: "tw:w-[129px]",
                     placeholder: "Day",
                     "aria-label": "Birthday Day",
                     value: ue.day,
@@ -637,7 +637,7 @@
                     inputMode: "numeric",
                     name: "year",
                     placeholder: "Year",
-                    className: "tw-w-[129px]",
+                    className: "tw:w-[129px]",
                     "aria-label": "Birthday Year",
                     value: ue.year,
                     onChange: function(e) {
@@ -653,9 +653,9 @@
                 })), ue.error && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Birthday error",
-                    className: "tw-text-error-message-red tw-text-xs tw-mb-0 tw-mt-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:mb-0 tw:mt-1"
                 }, ue.error)), w.createElement("div", {
-                    className: "tw-w-full tw-mb-3"
+                    className: "tw:w-full tw:mb-3"
                 }, w.createElement(y.Sc, {
                     id: "tos",
                     onChange: function(e) {
@@ -663,9 +663,9 @@
                         pe(t ? V : 0)
                     },
                     htmlFor: "tos",
-                    className: "tw-mb-0",
+                    className: "tw:mb-0",
                     label: w.createElement("p", {
-                        className: "tw-text-placeholder-text tw-text-base tw-ml-1 tw-mb-0"
+                        className: "tw:text-placeholder-text tw:text-base tw:ml-1 tw:mb-0"
                     }, "I have read and agree to the ", w.createElement("a", {
                         href: "/privacy/",
                         target: "_blank",
@@ -680,7 +680,7 @@
                         rel: "noreferrer"
                     }, "Terms of Service"), ".")
                 })), w.createElement("div", {
-                    className: "tw-w-full ".concat(s ? "tw-mb-2" : "tw-mb-5")
+                    className: "tw:w-full ".concat(s ? "tw:mb-2" : "tw:mb-5")
                 }, w.createElement(y.Sc, {
                     id: "subscribe",
                     onChange: function(e) {
@@ -691,10 +691,10 @@
                     className: "",
                     checked: be,
                     label: w.createElement("p", {
-                        className: "tw-text-placeholder-text tw-text-base tw-ml-1"
+                        className: "tw:text-placeholder-text tw:text-base tw:ml-1"
                     }, "I agree to receive updates from VRChat about its products, services and promotions.")
                 })), w.createElement("div", {
-                    className: "tw-w-full ".concat(s ? "tw-mb-3" : "tw-mb-6", " tw-justify-center tw-flex")
+                    className: "tw:w-full ".concat(s ? "tw:mb-3" : "tw:mb-6", " tw:justify-center tw:flex")
                 }, w.createElement(i.A, {
                     theme: "dark",
                     sitekey: "85eb5fc7-910f-44cb-b913-f92ac87596bd",
@@ -704,7 +704,7 @@
                     onExpire: Ye,
                     ref: Ve
                 })), w.createElement("div", {
-                    className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
+                    className: "tw:w-full tw:mb-6 tw:justify-center tw:flex"
                 }, w.createElement(y.$n, {
                     containerStyles: {
                         width: "100%"
@@ -717,11 +717,11 @@
                 }, "Create Account")), Qe && !(0, E.hQ)(_) && w.createElement("p", {
                     role: "alert",
                     "aria-label": "Account creation error",
-                    className: "tw-text-error-message-red tw-text-xs tw-my-1"
+                    className: "tw:text-error-message-red tw:text-xs tw:my-1"
                 }, Qe), w.createElement("div", {
-                    className: "tw-w-full tw-mb-6 tw-justify-center tw-flex"
+                    className: "tw:w-full tw:mb-6 tw:justify-center tw:flex"
                 }, w.createElement("p", {
-                    className: "tw-text-base tw-ml-1"
+                    className: "tw:text-base tw:ml-1"
                 }, "Have an account? ", w.createElement("a", {
                     href: "/home/login"
                 }, "Log in")))))))
@@ -745,4 +745,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4ebd3751d9ea991ad65ea9f98429ffa5f933f3f80b41050d22abd85bd54af72b.js.map
+//# sourceMappingURL=16df343e5530b8bc2f305f5c50b16a6074f82452d67d6a8460ed71f4b378335f.js.map

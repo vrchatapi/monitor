@@ -126,7 +126,7 @@
                     o = e.hintText,
                     l = e.hintTextMuted;
                 return r.createElement(r.Fragment, null, r.createElement(y.fI, {
-                    className: "tw-grow"
+                    className: "tw:grow"
                 }, r.createElement(v, {
                     fileCallback: function(e) {
                         t({
@@ -138,9 +138,9 @@
                     setIsPremadeSpriteSheet: i,
                     isPremadeSpriteSheet: a
                 })), (o || l) && r.createElement(y.fI, null, r.createElement("div", {
-                    className: "tw-mt-6"
+                    className: "tw:mt-6"
                 }, o && r.createElement("strong", null, o), o && l && r.createElement("br", null), l && r.createElement("span", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, l))))
             }
         },
@@ -357,27 +357,27 @@
                     r = e.onNext,
                     a = "\n    width: 12em;\n  ";
                 return s.createElement(s.Fragment, null, s.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-between md:tw-flex-row"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-between tw:md:flex-row"
                 }, s.createElement("div", {
-                    className: "md:tw-mr-4"
+                    className: "tw:md:mr-4"
                 }, s.createElement(u.$n, {
-                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
+                    containerClasses: "tw:w-full tw:mb-4 tw:md:w-[200px] tw:md:mb-0",
                     containerStyles: a,
                     neutral: !0,
                     onClick: t
                 }, "Cancel")), s.createElement("div", {
-                    className: "tw-flex tw-flex-col md:tw-flex-row tw-justify-items-start"
+                    className: "tw:flex tw:flex-col tw:md:flex-row tw:justify-items-start"
                 }, s.createElement(u.$n, {
-                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
+                    containerClasses: "tw:w-full tw:mb-4 tw:md:w-[200px] tw:md:mb-0",
                     containerStyles: a,
                     neutral: !0,
                     onClick: n
                 }, "Back"), s.createElement(u.$n, {
-                    containerClasses: "tw-w-full tw-mb-4 md:tw-w-[200px] md:tw-mb-0",
+                    containerClasses: "tw:w-full tw:mb-4 tw:md:w-[200px] tw:md:mb-0",
                     containerStyles: a,
                     accent: !0,
                     onClick: r,
-                    className: "md:tw-ml-4"
+                    className: "tw:md:ml-4"
                 }, "Next"))))
             };
             var y = (0, i.A)("div", {
@@ -587,4 +587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f2f173bfbf36a2d18fc18c48ebb1559bfa90fa466e4e7bc0cdfffe926beadcda.js.map
+//# sourceMappingURL=93506d532fa43c248ea1195fe594ed5c9f85b19af05756412ff01b346419bd94.js.map

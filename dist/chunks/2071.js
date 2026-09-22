@@ -134,7 +134,7 @@
                 return f.createElement("div", {
                     role: "listitem",
                     "aria-label": "User Card",
-                    className: "tw-relative tw-mx-5 tw-my-2 tw-p-2.5 tw-rounded-lg tw-bg-grey",
+                    className: "tw:relative tw:mx-5 tw:my-2 tw:p-2.5 tw:rounded-lg tw:bg-grey",
                     onMouseEnter: function() {
                         return G(!0)
                     },
@@ -144,9 +144,9 @@
                 }, f.createElement(N.N_, {
                     to: "/home/user/".concat(E.id),
                     onClick: P,
-                    className: "tw-flex tw-items-center tw-gap-3 tw-no-underline tw-text-inherit hover:tw-no-underline hover:tw-text-inherit"
+                    className: "tw:flex tw:items-center tw:gap-3 tw:no-underline tw:text-inherit tw:hover:no-underline tw:hover:text-inherit"
                 }, f.createElement("div", {
-                    className: "tw-flex-shrink-0 tw-w-11 tw-h-11 ".concat(Z ? "tw-opacity-50" : "")
+                    className: "tw:shrink-0 tw:w-11 tw:h-11 ".concat(Z ? "tw:opacity-50" : "")
                 }, f.createElement(F.A, {
                     profilePic: E.iconUrl,
                     displayName: E.displayName,
@@ -155,81 +155,81 @@
                     size: "fill",
                     hideBorder: !0
                 })), f.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-min-w-0 tw-flex-1 tw-gap-0.5"
+                    className: "tw:flex tw:flex-col tw:min-w-0 tw:flex-1 tw:gap-0.5"
                 }, f.createElement("span", {
-                    className: "tw-flex tw-items-center tw-gap-1 tw-font-semibold tw-text-sm tw-text-lighter-grey tw-whitespace-nowrap tw-overflow-hidden tw-text-ellipsis tw-leading-tight"
+                    className: "tw:flex tw:items-center tw:gap-1 tw:font-semibold tw:text-sm tw:text-lighter-grey tw:whitespace-nowrap tw:overflow-hidden tw:text-ellipsis tw:leading-tight"
                 }, E.displayName, K && f.createElement(c.M2, {
                     icon: d.vrcMobile,
                     size: "xs",
-                    className: "tw-text-light-grey tw-flex-shrink-0",
+                    className: "tw:text-light-grey tw:shrink-0",
                     title: "On mobile"
                 })), f.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-1.5 tw-text-xs tw-whitespace-nowrap tw-overflow-hidden tw-text-ellipsis tw-leading-tight tw-text-light-grey",
+                    className: "tw:flex tw:items-center tw:gap-1.5 tw:text-xs tw:whitespace-nowrap tw:overflow-hidden tw:text-ellipsis tw:leading-tight tw:text-light-grey",
                     title: "".concat(te).concat(re ? " - ".concat(re) : "")
                 }, f.createElement("span", {
-                    className: "\n                tw-w-2.5 tw-h-2.5 tw-rounded-full tw-flex-shrink-0 tw-border-solid tw-border-2\n                tw-border-".concat(fe, "\n                ").concat(ne ? "tw-bg-transparent" : "tw-bg-".concat(fe), "\n              ")
+                    className: "\n                tw:w-2.5 tw:h-2.5 tw:rounded-full tw:shrink-0 tw:border-solid tw:border-2\n                tw:border-".concat(fe, "\n                ").concat(ne ? "tw:bg-transparent" : "tw:bg-".concat(fe), "\n              ")
                 }), f.createElement("span", {
-                    className: "tw-flex-1 tw-min-w-0 tw-overflow-hidden tw-text-ellipsis"
+                    className: "tw:flex-1 tw:min-w-0 tw:overflow-hidden tw:text-ellipsis"
                 }, we)), Z && !!E.last_login && f.createElement("div", {
-                    className: "tw-text-xs tw-text-light-grey tw-mt-0.5"
+                    className: "tw:text-xs tw:text-light-grey tw:mt-0.5"
                 }, y()(E.last_login).fromNow()))), de && f.createElement(f.Fragment, null, f.createElement("hr", {
-                    className: "tw-border-2 tw-border-t tw-border-white/50 tw-my-2.5"
+                    className: "tw:border-2 tw:border-t tw:border-white/50 tw:my-2.5"
                 }), f.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-3"
+                    className: "tw:flex tw:items-center tw:gap-3"
                 }, f.createElement("div", {
-                    className: "tw-flex-shrink-0"
+                    className: "tw:shrink-0"
                 }, f.createElement(N.N_, {
                     to: "/home/launch?worldId=".concat(null == j ? void 0 : j.id, "&instanceId=").concat(Y),
                     onClick: P,
-                    className: "tw-block tw-group"
+                    className: "tw:block tw:group"
                 }, f.createElement("div", {
-                    className: "tw-relative tw-w-[100px] tw-h-[60px] tw-rounded-md tw-bg-cover tw-bg-center tw-bg-no-repeat tw-overflow-hidden",
+                    className: "tw:relative tw:w-[100px] tw:h-[60px] tw:rounded-md tw:bg-cover tw:bg-center tw:bg-no-repeat tw:overflow-hidden",
                     style: {
                         backgroundImage: "url(".concat(ce, ")")
                     }
                 }, f.createElement("div", {
-                    className: "tw-absolute tw-inset-0 tw-hidden md:tw-flex tw-items-center tw-justify-center tw-bg-black/70 tw-opacity-0 tw-transition-opacity group-hover:tw-opacity-100"
+                    className: "tw:absolute tw:inset-0 tw:hidden tw:md:flex tw:items-center tw:justify-center tw:bg-black/70 tw:opacity-0 tw:transition-opacity tw:group-hover:opacity-100"
                 }, f.createElement("button", {
                     type: "button",
                     onClick: se,
                     disabled: oe,
                     title: oe ? "Age Verification Required (18+)" : null,
-                    className: "tw-border tw-border-teal-accent tw-border-solid tw-rounded tw-bg-black/50 tw-text-teal-accent tw-py-1 tw-px-3 tw-text-xs tw-font-medium tw-cursor-pointer hover:enabled:tw-bg-teal-accent/30 disabled:tw-border-light-grey disabled:tw-text-light-grey disabled:tw-cursor-not-allowed"
+                    className: "tw:border tw:border-teal-accent tw:border-solid tw:rounded tw:bg-black/50 tw:text-teal-accent tw:py-1 tw:px-3 tw:text-xs tw:font-medium tw:cursor-pointer tw:hover:enabled:bg-teal-accent/30 tw:disabled:border-light-grey tw:disabled:text-light-grey tw:disabled:cursor-not-allowed"
                 }, O))))), f.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-min-w-0 tw-flex-1 tw-gap-0.5"
+                    className: "tw:flex tw:flex-col tw:min-w-0 tw:flex-1 tw:gap-0.5"
                 }, f.createElement(N.N_, {
                     to: "/home/launch?worldId=".concat(null == j ? void 0 : j.id, "&instanceId=").concat(Y),
                     onClick: P,
-                    className: "tw-font-semibold tw-text-sm tw-text-lighter-grey tw-whitespace-nowrap tw-overflow-hidden tw-text-ellipsis tw-leading-tight hover:tw-text-lighter-grey hover:tw-no-underline"
+                    className: "tw:font-semibold tw:text-sm tw:text-lighter-grey tw:whitespace-nowrap tw:overflow-hidden tw:text-ellipsis tw:leading-tight tw:hover:text-lighter-grey tw:hover:no-underline"
                 }, ue), f.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-1.5"
+                    className: "tw:flex tw:items-center tw:gap-1.5"
                 }, f.createElement(I.A, {
                     region: ie,
                     imageSize: "14px"
                 }), f.createElement("span", {
-                    className: "tw-text-xs tw-text-light-grey"
+                    className: "tw:text-xs tw:text-light-grey"
                 }, ae), le && f.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-1.5",
+                    className: "tw:flex tw:items-center tw:gap-1.5",
                     title: "Age Verification Required (18+)"
                 }, f.createElement("span", {
-                    className: "tw-text-light-grey"
+                    className: "tw:text-light-grey"
                 }, " • "), f.createElement(S.A, {
                     imageSize: "18px",
-                    className: "tw-text-teal"
+                    className: "tw:text-teal"
                 }), f.createElement("span", {
-                    className: "tw-text-light-grey tw-text-xs"
+                    className: "tw:text-light-grey tw:text-xs"
                 }, "18+"))), f.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-1 tw-text-xs tw-text-light-grey"
+                    className: "tw:flex tw:items-center tw:gap-1 tw:text-xs tw:text-light-grey"
                 }, f.createElement(c.M2, {
                     icon: h.faUserGroup,
                     size: "xs",
-                    className: "tw-text-teal"
+                    className: "tw:text-teal"
                 }), f.createElement("span", null, null !== (r = null !== (i = null == M ? void 0 : M.n_users) && void 0 !== i ? i : null == M || null === (l = M.users) || void 0 === l ? void 0 : l.length) && void 0 !== r ? r : 0, " / ", null !== (o = null == j ? void 0 : j.capacity) && void 0 !== o ? o : 32)))), f.createElement("button", {
                     type: "button",
                     onClick: se,
                     disabled: oe,
                     title: oe ? "Age Verification Required (18+)" : null,
-                    className: "tw-flex md:tw-hidden tw-w-full tw-mt-2.5 tw-border tw-border-teal-accent tw-border-solid tw-rounded tw-bg-transparent tw-text-teal-accent tw-py-1.5 tw-px-3 tw-text-xs tw-font-medium tw-cursor-pointer tw-justify-center hover:enabled:tw-bg-teal-accent/30 disabled:tw-border-light-grey disabled:tw-text-light-grey disabled:tw-cursor-not-allowed"
+                    className: "tw:flex tw:md:hidden tw:w-full tw:mt-2.5 tw:border tw:border-teal-accent tw:border-solid tw:rounded tw:bg-transparent tw:text-teal-accent tw:py-1.5 tw:px-3 tw:text-xs tw:font-medium tw:cursor-pointer tw:justify-center tw:hover:enabled:bg-teal-accent/30 tw:disabled:border-light-grey tw:disabled:text-light-grey tw:disabled:cursor-not-allowed"
                 }, O)))
             });
             const M = j;
@@ -266,7 +266,7 @@
                     isActive: t,
                     icon: l.Jt,
                     color: "white",
-                    className: "tw-mr-1"
+                    className: "tw:mr-1"
                 }), f.createElement(O, null, n, " "), f.createElement("span", null, "(", r, ")"))
             };
             var B = [{
@@ -375,9 +375,9 @@
                                 return !e
                             })
                         },
-                        className: "tw-cursor-pointer tw-justify-center md:tw-justify-between mb-3"
+                        className: "tw:cursor-pointer tw:justify-center tw:md:justify-between mb-3"
                     }, f.createElement(K, {
-                        className: "tw-hidden md:tw-flex",
+                        className: "tw:hidden tw:md:flex",
                         onClick: function(e) {
                             e.stopPropagation(), t(!1)
                         }
@@ -385,7 +385,7 @@
                         icon: d.vrcCollapseRight,
                         color: "white",
                         "aria-label": "Close Friends Menu",
-                        className: "tw-w-full tw-h-full"
+                        className: "tw:w-full tw:h-full"
                     })), f.createElement("div", {
                         "aria-label": "Friends Total"
                     }, f.createElement("span", null, we), f.createElement(c.M2, {
@@ -429,7 +429,7 @@
                         "aria-label": "Search Friends"
                     }), f.createElement(c.ms, {
                         label: "Sort By",
-                        className: "mt-3 md:tw-w-1/2",
+                        className: "tw:mt-3 tw:md:w-1/2",
                         onChange: function(e) {
                             v(e)
                         },
@@ -438,7 +438,7 @@
                     })), f.createElement(ee, null, f.createElement(X, {
                         ref: G
                     }, f.createElement(Y, {
-                        className: "pt-1",
+                        className: "tw:pt-1",
                         onScroll: function(e) {
                             var t = e.target,
                                 n = t.scrollTop,
@@ -465,7 +465,7 @@
                             }
                         })
                     }), f.createElement(_, {
-                        className: z.has("inWorld") && J.length > 0 ? "tw-mt-3" : "",
+                        className: z.has("inWorld") && J.length > 0 ? "tw:mt-3" : "",
                         isActive: z.has("active"),
                         onClick: H("active"),
                         categoryName: "Active on Another Platform",
@@ -479,7 +479,7 @@
                             }
                         })
                     }), f.createElement(_, {
-                        className: z.has("active") && ne.length > 0 ? "tw-mt-3" : "",
+                        className: z.has("active") && ne.length > 0 ? "tw:mt-3" : "",
                         isActive: z.has("offline"),
                         onClick: H("offline"),
                         categoryName: "Offline",
@@ -725,4 +725,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fab6be1eb78030388e9439dbd08e823e93b06bf71d2d79016fcb4dd5ced64e8c.js.map
+//# sourceMappingURL=bfd7dc734f0ce831107a6867d3d61ca866417b48e6ae4c54c714a18e5ce7c1ca.js.map

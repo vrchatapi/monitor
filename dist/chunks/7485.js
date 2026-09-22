@@ -479,7 +479,7 @@
                         S("/home/search/".concat(e, "/").concat(d))
                     }
                 }), "users" === a && u.createElement(u.Fragment, null, u.createElement(p.A, {
-                    className: "justify-content-center tw-gap-3 tw-mb-3"
+                    className: "justify-content-center tw:gap-3 tw:mb-3"
                 }, G && 0 === J.length && u.createElement("p", null, "None Found"), J.map(function(e, t) {
                     return u.createElement(C, {
                         key: e.id + t,
@@ -538,21 +538,21 @@
                 }, u.createElement(v.M2, {
                     icon: l.Jt
                 }))))), !1, "events" === a && u.createElement(u.Fragment, null, u.createElement("div", {
-                    className: "tw-w-60 tw-mb-4 tw-ml-auto"
+                    className: "tw:w-60 tw:mb-4 tw:ml-auto"
                 }, u.createElement("div", {
-                    className: "tw-gap-2 tw-flex tw-justify-between tw-mb-2"
+                    className: "tw:gap-2 tw:flex tw:justify-between tw:mb-2"
                 }, u.createElement(v.$n, {
                     disabled: !Q,
                     onClick: function() {
                         return ce(T)
                     },
-                    className: "tw-bg-button-bg tw-border-0 tw-border-solid tw-rounded tw-h-10 tw-cursor-pointer tw-text-highlight"
+                    className: "tw:bg-button-bg tw:border-0 tw:border-solid tw:rounded tw:h-10 tw:cursor-pointer tw:text-highlight"
                 }, "Apply Filters"), u.createElement(v.$n, {
                     disabled: P === T,
                     onClick: function() {
                         return ce(P)
                     },
-                    className: "tw-bg-button-bg tw-border-0 tw-border-solid tw-rounded tw-h-10 tw-cursor-pointer tw-text-highlight"
+                    className: "tw:bg-button-bg tw:border-0 tw:border-solid tw:rounded tw:h-10 tw:cursor-pointer tw:text-highlight"
                 }, "Clear Filters")), u.createElement(j.A, {
                     possibleFilters: re,
                     onFilterChangeCallBack: function(e) {
@@ -569,7 +569,7 @@
                     },
                     dropdownFilterValues: T
                 })), u.createElement(p.A, {
-                    className: "justify-content-center tw-gap-4"
+                    className: "justify-content-center tw:gap-4"
                 }, ae && (!ee || 0 === ee.length) && u.createElement("p", null, "None Found"), null == ee ? void 0 : ee.map(function(e) {
                     return u.createElement(A.Ay, {
                         key: e.id,
@@ -577,7 +577,7 @@
                         showOwner: !0
                     })
                 }), te && u.createElement(v.kt, null)), u.createElement(p.A, {
-                    className: "justify-content-center tw-mt-4"
+                    className: "justify-content-center tw:mt-4"
                 }, u.createElement(g.A, {
                     xs: {
                         size: 2
@@ -605,4 +605,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3c3787c26fa89efe9b7deb285f48b7fc10bb7974fdc729a8da4579cdeb96a3d1.js.map
+//# sourceMappingURL=55f40d6f907a9067309e62bac70d4f2dd3a8f95bec22d65cf80a1db505c52817.js.map

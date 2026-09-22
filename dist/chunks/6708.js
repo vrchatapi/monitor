@@ -73,19 +73,19 @@
                         switch (n.state) {
                             case m.Uo.ANNOUNCED:
                                 return n.stateChangeDates.submissionsOpened && !S && N ? s.createElement(s.Fragment, null, s.createElement(z, {
-                                    className: "tw-mr-3"
+                                    className: "tw:mr-3"
                                 }, "Submissions Open In"), s.createElement("div", null, D)) : s.createElement(z, null, "Announced");
                             case m.Uo.SUBMISSIONS_OPEN:
                                 return n.stateChangeDates.submissionsClosed && N ? s.createElement(s.Fragment, null, s.createElement(z, {
-                                    className: "tw-mr-3"
+                                    className: "tw:mr-3"
                                 }, "Submissions Close In"), s.createElement("div", null, D)) : S ? s.createElement(z, null, "Submissions Closed") : s.createElement(z, null, "Submissions Open");
                             case m.Uo.SUBMISSIONS_CLOSED:
                                 return n.stateChangeDates.winnersSelected && !S && N ? s.createElement(s.Fragment, null, s.createElement(z, {
-                                    className: "tw-mr-3"
+                                    className: "tw:mr-3"
                                 }, "Winners Announced In"), s.createElement("div", null, D)) : s.createElement(z, null, "Judging In Progress");
                             case m.Uo.WINNERS_SELECTED:
                                 return s.createElement(z, {
-                                    className: "tw-mr-3"
+                                    className: "tw:mr-3"
                                 }, "Winners Selected");
                             default:
                                 return ""
@@ -100,14 +100,14 @@
                 }, s.createElement(O, null, s.createElement("h2", null, n.title), s.createElement("div", {
                     title: "".concat(T, " Jam"),
                     id: "Tooltip-Type-".concat(n.id),
-                    className: "tw-ml-3"
+                    className: "tw:ml-3"
                 }, s.createElement(o.M2, {
                     icon: "world" === n.type ? f.Bw : d.yV
                 })), s.createElement(C.A, {
                     placement: "top",
                     target: "Tooltip-Type-".concat(n.id)
                 }, T, " Jam")), s.createElement(R, null, q))), s.createElement(o.BW, null, s.createElement("div", {
-                    className: "tw-prose tw-prose-zinc tw-prose-invert mb-2 [&_h3]:after:tw-hidden"
+                    className: "tw:prose tw:prose-zinc tw:prose-invert mb-2 tw:[&_h3]:after:hidden"
                 }, s.createElement(x.Nc, null, null !== (t = n.description) && void 0 !== t ? t : "")), y && s.createElement(o.$T, {
                     type: "neutral",
                     title: "Jam Joined",
@@ -117,9 +117,9 @@
                 }), s.createElement(o.fI, null, s.createElement(j, {
                     href: n.moreInfo,
                     target: "_blank",
-                    className: "tw-mb-2 md:tw-mb-0 tw-mr-0 md:tw-mr-2"
+                    className: "tw:mb-2 tw:md:mb-0 tw:mr-0 tw:md:mr-2"
                 }, s.createElement("div", null, "Learn More"), s.createElement(o.M2, {
-                    className: "tw-ml-3",
+                    className: "tw:ml-3",
                     icon: u.wR
                 })), _ && v && s.createElement(o.fy, {
                     height: "38px",
@@ -128,7 +128,7 @@
                     to: "".concat(n.id, "/submit"),
                     className: "d-flex flex-row align-items-center justify-content-center"
                 }, s.createElement("div", null, L), s.createElement(o.M2, {
-                    className: "tw-ml-3",
+                    className: "tw:ml-3",
                     icon: F
                 })))))
             });
@@ -210,30 +210,30 @@
                     isJiggling: f,
                     icon: l.bD
                 })), s.createElement(L, {
-                    className: "tw-mt-2 tw-mb-3"
+                    className: "tw:mt-2 tw:mb-3"
                 }, s.createElement("p", {
                     className: "mb-0"
                 }, "VRChat Jams allow our creative community to flex their development muscles, giving both brand new creators and veterans an opportunity to get their work into the spotlight.", s.createElement("br", null), s.createElement("br", null), "Cook something up by yourself, or meet a few like-minded creators to build something amazing together!", s.createElement("br", null), s.createElement("br", null), "We're excited to see what you build. Good luck — and keep your eye on the clock!")), h.length > 0 && s.createElement(s.Fragment, null, s.createElement("h4", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Active Jams"), s.createElement(o.fv, {
                     role: "list",
                     "aria-label": "Active Jams"
                 }, h.map(function(e) {
                     return s.createElement(D, {
                         refetch: i,
-                        className: "tw-mb-2",
+                        className: "tw:mb-2",
                         key: e.id,
                         jam: e
                     })
                 }))), b.length > 0 && s.createElement(s.Fragment, null, s.createElement("h4", {
-                    className: "tw-mb-4 tw-mt-4"
+                    className: "tw:mb-4 tw:mt-4"
                 }, "Past Jams"), s.createElement(o.fv, {
                     role: "list",
                     "aria-label": "Active Jams"
                 }, b.map(function(e) {
                     return s.createElement(D, {
                         refetch: i,
-                        className: "tw-mb-2",
+                        className: "tw:mb-2",
                         key: e.id,
                         jam: e
                     })
@@ -266,4 +266,4 @@
         }
     }
 ]);
-//# sourceMappingURL=30e0df01ed48e494015e8f2dea6dac207cd3b48dae0149c55eaeaf1348b93f57.js.map
+//# sourceMappingURL=cd04254166e638c7b8b349ca68abdd37adf9c469e7a32fc4abfb3d7324a04e48.js.map

@@ -111,63 +111,63 @@
                 return j ? r.createElement(w.fv, {
                     className: a
                 }, r.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
+                    className: "tw:bg-grey tw:rounded-t-lg tw:p-4"
                 }, r.createElement("h4", {
-                    className: "text-center tw-mt-0 tw-mb-0"
+                    className: "text-center tw:mt-0 tw:mb-0"
                 }, "Live & Upcoming Events")), r.createElement("div", {
-                    className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
+                    className: "tw:bg-darker-grey tw:rounded-b-lg tw:p-4"
                 }, r.createElement(w.fy, {
                     width: "100%",
                     height: "200px"
                 }))) : I ? r.createElement(w.fv, {
                     className: a
                 }, r.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
+                    className: "tw:bg-grey tw:rounded-t-lg tw:p-4"
                 }, r.createElement("h4", {
-                    className: "text-center tw-mt-0 tw-mb-0"
+                    className: "text-center tw:mt-0 tw:mb-0"
                 }, "Live & Upcoming Events")), r.createElement("div", {
-                    className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
+                    className: "tw:bg-darker-grey tw:rounded-b-lg tw:p-4"
                 }, r.createElement("div", {
-                    className: "tw-text-center tw-text-message-warning tw-p-8"
+                    className: "tw:text-center tw:text-message-warning tw:p-8"
                 }, r.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "Unable to load events."), r.createElement("p", {
-                    className: "tw-mb-0"
+                    className: "tw:mb-0"
                 }, "Please try again later.")))) : r.createElement(w.fv, {
                     className: a
                 }, r.createElement("div", {
-                    className: "tw-bg-grey tw-rounded-t-lg tw-p-4"
+                    className: "tw:bg-grey tw:rounded-t-lg tw:p-4"
                 }, r.createElement("h4", {
-                    className: "text-center tw-mt-0 tw-mb-0"
+                    className: "text-center tw:mt-0 tw:mb-0"
                 }, "Live & Upcoming Events")), r.createElement("div", {
-                    className: "tw-bg-darker-grey tw-rounded-b-lg tw-p-4"
+                    className: "tw:bg-darker-grey tw:rounded-b-lg tw:p-4"
                 }, r.createElement("div", {
-                    className: "tw-grid tw-grid-cols-2 tw-gap-3 tw-mb-4"
+                    className: "tw:grid tw:grid-cols-2 tw:gap-3 tw:mb-4"
                 }, r.createElement(s.z9, {
                     fullWidth: !0,
                     noMargin: !0,
                     to: "/home/calendar?view=day"
                 }, r.createElement("span", {
-                    className: "tw-text-med"
+                    className: "tw:text-med"
                 }, D, " ", 1 === D ? "Event Today" : "Events Today")), r.createElement(s.z9, {
                     fullWidth: !0,
                     noMargin: !0,
                     to: "/home/calendar?view=week"
                 }, r.createElement("span", {
-                    className: "tw-text-med"
+                    className: "tw:text-med"
                 }, T, " ", 1 === T ? "Event This Week" : "Events This Week"))), (null == O || null === (t = O.results) || void 0 === t ? void 0 : t.length) > 0 ? r.createElement("div", {
-                    className: "tw-mb-4"
+                    className: "tw:mb-4"
                 }, r.createElement(p.Ay, {
                     key: O.results[0].id,
                     event: O.results[0],
                     isExpandable: !0
                 })) : r.createElement("div", {
-                    className: "tw-text-center tw-text-light-grey tw-p-8 tw-rounded"
+                    className: "tw:text-center tw:text-light-grey tw:p-8 tw:rounded"
                 }, r.createElement("p", {
-                    className: "tw-mb-2"
+                    className: "tw:mb-2"
                 }, "No upcoming events found. Start following some events to see them here!")), r.createElement(i.N_, {
                     to: "/home/calendar?view=week",
-                    className: " tw-block tw-bg-grey tw-text-white tw-py-2.5 tw-px-4 tw-rounded tw-no-underline tw-transition-colors tw-duration-200 tw-w-full tw-text-center tw-text-sm tw-font-normal hover:tw-bg-grey/80 hover:tw-text-white hover:tw-no-underline "
+                    className: " tw:block tw:bg-grey tw:text-white tw:py-2.5 tw:px-4 tw:rounded tw:no-underline tw:transition-colors tw:duration-200 tw:w-full tw:text-center tw:text-sm tw:font-normal tw:hover:bg-grey/80 tw:hover:text-white tw:hover:no-underline "
                 }, "See All Events")))
             };
             var h = a(64467),
@@ -437,7 +437,7 @@
                         return {
                             checked: p.includes(e),
                             id: "checkbox-".concat(e),
-                            className: "tw-my-4 md:tw-my-2.5",
+                            className: "tw:my-4 tw:md:my-2.5",
                             onChange: function() {
                                 p.includes(e) ? f(p.filter(function(t) {
                                     return t !== e
@@ -446,7 +446,7 @@
                         }
                     }),
                     B = r.createElement("div", null, r.createElement("p", null, "You're invited to test VRChat's iOS closed beta! If you have an iOS device and would like to participate, fill out the form below."), r.createElement("p", null, r.createElement("strong", null, "Please note that participation is not guaranteed, as we can only select a limited number of applicants."), "If chosen, we expect you to provide feedback and report bugs on the Canny. Inactive participants may be removed from the Closed Beta at any point."), r.createElement("h6", {
-                        className: "tw-mt-8"
+                        className: "tw:mt-8"
                     }, "Select all iOS devices you have access to and will use for testing."), r.createElement(w.Sc, (0, R.A)({
                         label: "iPhone 12 Pro/Max"
                     }, M("iPhone12PM"))), r.createElement(w.Sc, (0, R.A)({
@@ -466,7 +466,7 @@
                     }, M("iPadPro12"))), r.createElement(w.Sc, (0, R.A)({
                         label: "iPad Air (5th generation or higher)"
                     }, M("iPadAir"))), r.createElement("h6", {
-                        className: "tw-mt-6"
+                        className: "tw:mt-6"
                     }, "Are you a creator?"), r.createElement(w.Sc, {
                         label: "Yes, I am a creator.",
                         checked: E,
@@ -474,14 +474,14 @@
                             return b(!E)
                         }
                     }), r.createElement("h6", {
-                        className: "tw-mt-6 tw-mb-4"
+                        className: "tw:mt-6 tw:mb-4"
                     }, "To participate in the iOS Beta channel on discord, please enter your discord name (optional)"), r.createElement("div", {
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, r.createElement(w.M2, {
                         icon: D.Hz,
                         size: "2x"
                     }), r.createElement(w.pd, {
-                        className: "tw-flex-grow tw-ml-4",
+                        className: "tw:grow tw:ml-4",
                         placeholder: "Discord Name",
                         maxLength: 32,
                         value: x,
@@ -489,7 +489,7 @@
                             return A(e.target.value)
                         }
                     })), r.createElement(w.$n, {
-                        className: "tw-mt-6",
+                        className: "tw:mt-6",
                         onClick: function() {
                             k({
                                 betaName: X,
@@ -504,7 +504,7 @@
                         disabled: 0 === p.length || O
                     }, O ? "Submitting" : "Submit"), r.createElement(w.$n, {
                         neutral: !0,
-                        className: "tw-mt-6",
+                        className: "tw:mt-6",
                         disabled: O,
                         onClick: s
                     }, "Cancel")),
@@ -616,7 +616,7 @@
                     title: "LIMITED AVAILABILITY",
                     onDismiss: C
                 }, r.createElement("span", {
-                    className: "tw-text-center tw-px-2"
+                    className: "tw:text-center tw:px-2"
                 }, "VRChat on iOS is Coming Soon! ", r.createElement(J, {
                     onClick: function() {
                         return x(!0)
@@ -668,93 +668,93 @@
                     })
                 }, []), o ? r.createElement(w.aF, {
                     title: "Install or Return to VRChat",
-                    titleClass: "tw-flex tw-items-center tw-m-0",
-                    headerClass: "tw-p-4",
+                    titleClass: "tw:flex tw:items-center tw:m-0",
+                    headerClass: "tw:p-4",
                     doNotCapitalize: !0,
                     isVisible: t,
                     onClose: a,
                     slim: !0,
-                    className: "tw-w-full tw-max-w-[650px]"
+                    className: "tw:w-full tw:max-w-[650px]"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-items-center tw-w-full tw--mb-2"
+                    className: "tw:flex tw:flex-col tw:items-center tw:w-full tw:-mb-2"
                 }, r.createElement("h2", {
-                    className: "tw-text-2xl tw-font-bold tw-text-center tw-my-2"
+                    className: "tw:text-2xl tw:font-bold tw:text-center tw:my-2"
                 }, "Your account is ready. Time to jump in!"), r.createElement("p", {
-                    className: "tw-text-xs tw-text-center tw-text-gray-300 tw-mb-5"
+                    className: "tw:text-xs tw:text-center tw:text-gray-300 tw:mb-5"
                 }, "Download for free from a store below, or return to the app if you already have it installed."), r.createElement("div", {
-                    className: "tw-flex tw-flex-col tw-gap-4 tw-mb-4 tw-w-full"
+                    className: "tw:flex tw:flex-col tw:gap-4 tw:mb-4 tw:w-full"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-justify-center tw-gap-4"
+                    className: "tw:flex tw:justify-center tw:gap-4"
                 }, r.createElement("a", {
                     href: me.steam,
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-no-underline"
+                    className: "tw:no-underline"
                 }, d.has(ae()) ? r.createElement(w.$n, {
-                    className: "tw-px-8 tw-py-2"
+                    className: "tw:px-8 tw:py-2"
                 }, "Steam") : r.createElement("img", {
                     src: ae(),
                     alt: "Download on Steam",
-                    className: "tw-w-[172px] tw-h-auto hover:tw-opacity-80 tw-transition-opacity"
+                    className: "tw:w-[172px] tw:h-auto tw:hover:opacity-80 tw:transition-opacity"
                 })), r.createElement("a", {
                     href: me.meta,
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-no-underline"
+                    className: "tw:no-underline"
                 }, d.has(re()) ? r.createElement(w.$n, {
-                    className: "tw-px-8 tw-py-2"
+                    className: "tw:px-8 tw:py-2"
                 }, "Meta Quest") : r.createElement("img", {
                     src: re(),
                     alt: "Download on Meta Quest",
-                    className: "tw-w-[172px] tw-h-auto hover:tw-opacity-80 tw-transition-opacity"
+                    className: "tw:w-[172px] tw:h-auto tw:hover:opacity-80 tw:transition-opacity"
                 }))), r.createElement("div", {
-                    className: "tw-flex tw-justify-center tw-gap-4"
+                    className: "tw:flex tw:justify-center tw:gap-4"
                 }, r.createElement("a", {
                     href: me.android,
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-no-underline"
+                    className: "tw:no-underline"
                 }, d.has(se()) ? r.createElement(w.$n, {
-                    className: "tw-px-8 tw-py-2"
+                    className: "tw:px-8 tw:py-2"
                 }, "Android") : r.createElement("img", {
                     src: se(),
                     alt: "Download on Android",
-                    className: "tw-w-[172px] tw-h-auto hover:tw-opacity-80 tw-transition-opacity"
+                    className: "tw:w-[172px] tw:h-auto tw:hover:opacity-80 tw:transition-opacity"
                 })), r.createElement("a", {
                     href: me.ios,
                     target: "_blank",
                     rel: "noreferrer",
-                    className: "tw-no-underline"
+                    className: "tw:no-underline"
                 }, d.has(le()) ? r.createElement(w.$n, {
-                    className: "tw-px-8 tw-py-2"
+                    className: "tw:px-8 tw:py-2"
                 }, "iOS") : r.createElement("img", {
                     src: le(),
                     alt: "Download on iOS",
-                    className: "tw-w-[172px] tw-h-auto hover:tw-opacity-80 tw-transition-opacity"
+                    className: "tw:w-[172px] tw:h-auto tw:hover:opacity-80 tw:transition-opacity"
                 })))), r.createElement(w.$T, {
                     hideIcon: !0,
                     color: "#28434B",
                     type: "custom",
                     iconColor: "#6AE3F9",
-                    className: "tw-mb-5 tw-px-2 tw-py-1 tw-w-full"
+                    className: "tw:mb-5 tw:px-2 tw:py-1 tw:w-full"
                 }, r.createElement("div", {
-                    className: "tw-flex tw-gap-2 tw-flex-row tw-items-center tw-m-0"
+                    className: "tw:flex tw:gap-2 tw:flex-row tw:items-center tw:m-0"
                 }, r.createElement("p", {
-                    className: "tw-m-0"
+                    className: "tw:m-0"
                 }, r.createElement(w.M2, {
                     icon: ee.iW,
                     color: "#6AE3F9",
-                    className: "tw-mr-2"
+                    className: "tw:mr-2"
                 })), r.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, r.createElement("span", {
-                    className: "tw-text-xs"
+                    className: "tw:text-xs"
                 }, "VRChat is a free app that isn't available for web browsers. No VR headset needed.")))), r.createElement(w.$n, {
                     neutral: !0,
                     onClick: a,
-                    containerClasses: "tw-w-full tw-m-0"
+                    containerClasses: "tw:w-full tw:m-0"
                 }, r.createElement("span", {
-                    className: "tw-py-1"
+                    className: "tw:py-1"
                 }, "Dismiss")))) : null
             };
             const we = function() {
@@ -911,4 +911,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8e3db79576c9fbf66375f5bb978b713bbfba383739a877ccb24cfe6a2bc7e312.js.map
+//# sourceMappingURL=7a5595936faa52f5943264c2b6b9a9d7320ecdf03dd558ed00b362ec3aa74bb8.js.map

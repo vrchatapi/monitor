@@ -226,13 +226,13 @@
                         confirmText: "Clear List",
                         type: "danger"
                     }), E.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-items-center tw-justify-between tw-w-full"
+                        className: "tw:flex tw:flex-col tw:items-center tw:justify-between tw:w-full"
                     }, E.createElement("div", {
-                        className: "tw-w-full"
+                        className: "tw:w-full"
                     }, E.createElement("div", {
-                        className: "tw-mb-2"
+                        className: "tw:mb-2"
                     }, E.createElement("label", {
-                        className: "tw-block tw-text-sm tw-font-medium tw-text-white tw-mb-2 tw-w-full",
+                        className: "tw:block tw:text-sm tw:font-medium tw:text-white tw:mb-2 tw:w-full",
                         htmlFor: "listName"
                     }, "List Name (Max 20 characters)"), E.createElement(f.pd, {
                         type: "text",
@@ -242,20 +242,20 @@
                             m(t), S(V(t))
                         },
                         placeholder: "Enter list name",
-                        className: "tw-w-full",
+                        className: "tw:w-full",
                         id: "listName",
                         maxLength: 20
                     }), A && E.createElement("div", {
-                        className: "tw-text-red tw-text-sm tw-mt-1"
+                        className: "tw:text-red tw:text-sm tw:mt-1"
                     }, A)), E.createElement("div", null, E.createElement("label", {
-                        className: "tw-block tw-text-sm tw-font-medium tw-text-white tw-mb-3",
+                        className: "tw:block tw:text-sm tw:font-medium tw:text-white tw:mb-3",
                         htmlFor: "visibility"
                     }, "Visibility"), E.createElement("div", {
-                        className: "tw-space-y-2"
+                        className: "tw:space-y-2"
                     }, ["private", "friends", "public"].map(function(e) {
                         return E.createElement("label", {
                             key: e,
-                            className: "tw-flex tw-items-center tw-cursor-pointer"
+                            className: "tw:flex tw:items-center tw:cursor-pointer"
                         }, E.createElement("input", {
                             type: "radio",
                             name: "visibility",
@@ -264,16 +264,16 @@
                             onChange: function(e) {
                                 return w(e.target.value)
                             },
-                            className: "tw-mr-3 tw-text-blue-500",
+                            className: "tw:mr-3 tw:text-blue-500",
                             id: "visibility-".concat(e)
                         }), E.createElement("span", {
-                            className: "tw-text-white tw-capitalize",
+                            className: "tw:text-white tw:capitalize",
                             htmlFor: "visibility-".concat(e)
                         }, e))
                     })))), E.createElement("div", {
-                        className: "tw-flex tw-justify-between tw-w-full tw-mt-6 tw-pt-4 tw-border-t tw-border-gray-600"
+                        className: "tw:flex tw:justify-between tw:w-full tw:mt-6 tw:pt-4 tw:border-t tw:border-gray-600"
                     }, E.createElement("div", {
-                        className: "tw-flex tw-gap-3"
+                        className: "tw:flex tw:gap-3"
                     }, E.createElement(f.$n, {
                         onClick: function() {
                             $(), r()
@@ -287,7 +287,7 @@
                         outline: !0,
                         danger: !0
                     }, "Clear List")), E.createElement("div", {
-                        className: "tw-flex tw-space-x-3"
+                        className: "tw:flex tw:space-x-3"
                     }, E.createElement(f.$n, {
                         onClick: (0, M.A)(F().mark(function e() {
                             var t;
@@ -492,12 +492,12 @@
                         }
                     }();
                 return I && !w ? E.createElement(f.fI, {
-                    className: "align-items-center justify-content-between tw-flex-1",
+                    className: "align-items-center justify-content-between tw:flex-1",
                     "aria-label": "Select Move Target",
                     role: "group",
                     onClick: Y
                 }, E.createElement(J, {
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, E.createElement(X.A, {
                     favoriteGroups: o,
                     selectedGroup: S,
@@ -505,7 +505,7 @@
                         O(e)
                     },
                     type: r,
-                    className: "tw-max-w-none"
+                    className: "tw:max-w-none"
                 })), E.createElement(Z, {
                     className: "justify-content-end"
                 }, E.createElement(f.$n, {
@@ -541,7 +541,6 @@
                 }, "Moving...")) : G && !x ? E.createElement(f.fI, {
                     className: "align-items-center justify-content-between",
                     "aria-label": "Favorite Deletion Confirmation",
-                    role: "group",
                     onClick: Y
                 }, E.createElement(f.$n, {
                     title: "Confirm",
@@ -566,18 +565,18 @@
                     disabled: !0,
                     expand: !0
                 }, "Deleting...")) : E.createElement(H, {
-                    role: "button",
+                    type: "button",
                     tabIndex: -1,
                     "aria-label": "Add to Selection",
                     onClick: function(e) {
                         Y(e), t && t(l)
                     }
                 }, E.createElement(f.fI, {
-                    role: "checkbox",
                     "aria-checked": n,
                     className: "align-items-center"
                 }, E.createElement(Q, {
-                    isSelected: n
+                    isSelected: n,
+                    "aria-checked": n
                 }, E.createElement(f.M2, {
                     icon: q.e6,
                     color: "var(--bs-primary)",
@@ -632,11 +631,11 @@
                 noMoveButton: P().bool
             };
             const W = Y;
-            var H = (0, l.A)(f.fI, {
+            var H = (0, l.A)(f.$n, {
                     target: "e10vjnwi4"
                 })({
-                    name: "17xzav4",
-                    styles: "flex-grow:1;align-items:center;justify-content:space-between;padding:0 0.5rem;input{margin-top:0!important;}"
+                    name: "1je7iao",
+                    styles: "flex-direction:row;background-color:transparent;border:none;display:flex;flex-grow:1;align-items:center;justify-content:space-between;padding:0 0.5rem;input{margin-top:0!important;}"
                 }),
                 J = (0, l.A)(f.fI, {
                     target: "e10vjnwi3"
@@ -1279,7 +1278,7 @@
                         S(e)
                     },
                     type: t,
-                    className: "tw-w-full tw-max-w-full"
+                    className: "tw:w-full tw:max-w-full"
                 }), W && E.createElement(f.$T, {
                     type: "warn",
                     title: "Collection Full",
@@ -1336,19 +1335,19 @@
                             }
                         };
                     return r[t] ? E.createElement("div", {
-                        className: "tw-w-full tw-flex tw-items-center tw-justify-between tw-bg-grey tw-p-8"
+                        className: "tw:w-full tw:flex tw:items-center tw:justify-between tw:bg-grey tw:p-8"
                     }, E.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-w-2/3 tw-items-start tw-justify-center"
+                        className: "tw:flex tw:flex-col tw:w-2/3 tw:items-start tw:justify-center"
                     }, E.createElement("h3", {
                         style: {
                             fontWeight: "bold"
                         },
-                        className: " heading tw-bg-gradient-to-b tw-from-[#FFE729] tw-via-[#FFE729] tw-to-[#FF810D] tw-bg-clip-text tw-text-transparent tw-text-3xl "
+                        className: " heading tw:bg-linear-to-b tw:from-[#FFE729] tw:via-[#FFE729] tw:to-[#FF810D] tw:bg-clip-text tw:text-transparent tw:text-3xl "
                     }, r[t].title), E.createElement("p", {
-                        className: "tw-mb-0"
+                        className: "tw:mb-0"
                     }, r[t].description)), E.createElement("a", {
                         href: "https://hello.vrchat.com/vrchatplus?utm_source=vrchatwebapp&utm_medium=favorites_upsell",
-                        className: " tw-ml-2 tw-px-10 tw-bg-white tw-border-white tw-rounded-md tw-py-2 tw-text-center tw-text-grey tw-no-underline ",
+                        className: " tw:ml-2 tw:px-10 tw:bg-white tw:border-white tw:rounded-md tw:py-2 tw:text-center tw:text-grey tw:no-underline ",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, "Join VRC+")) : null
@@ -1370,16 +1369,16 @@
                             }
                         };
                     return E.createElement("div", {
-                        className: "tw-bg-grey tw-flex tw-flex-col tw-items-center tw-justify-center tw-py-12 tw-text-center tw-rounded-lg tw-mt-4"
+                        className: "tw:bg-grey tw:flex tw:flex-col tw:items-center tw:justify-center tw:py-12 tw:text-center tw:rounded-lg tw:mt-4"
                     }, E.createElement(f.M2, {
                         icon: ke.default,
-                        className: "tw-text-7xl tw-mb-8 tw-text-light-grey"
+                        className: "tw:text-7xl tw:mb-8 tw:text-light-grey"
                     }), E.createElement("p", {
-                        className: "tw-text-lg tw-text-lighter-grey tw-font-bold tw-mb-0"
+                        className: "tw:text-lg tw:text-lighter-grey tw:font-bold tw:mb-0"
                     }, "No favorites here yet."), E.createElement("p", {
-                        className: "tw-text-lg tw-text-lighter-grey tw-font-bold tw-mb-2"
+                        className: "tw:text-lg tw:text-lighter-grey tw:font-bold tw:mb-2"
                     }, "Explore VRChat and add some ", n, " to favorites to get started!"), i[n] && E.createElement(f.$n, {
-                        className: "tw-capitalize tw-mt-5 tw-px-5",
+                        className: "tw:capitalize tw:mt-5 tw:px-5",
                         onClick: null === (t = i[n]) || void 0 === t ? void 0 : t.onClick
                     }, null === (r = i[n]) || void 0 === r ? void 0 : r.label))
                 };
@@ -1398,7 +1397,7 @@
                         l = n.isLoading,
                         c = n.isError;
                     return l ? E.createElement(p.A, null) : c || !a ? E.createElement("div", {
-                        className: "tw-p-3 tw-bg-grey tw-rounded-lg tw-text-light-grey tw-py-10"
+                        className: "tw:p-3 tw:bg-grey tw:rounded-lg tw:text-light-grey tw:py-10"
                     }, "Failed to load user") : E.createElement(v.A, (0, i.A)({
                         userData: a
                     }, r))
@@ -1600,7 +1599,7 @@
                 return E.createElement(f.fv, {
                     className: "pb-5"
                 }, E.createElement(f.Qc, null, Nt), E.createElement(f.fI, null, E.createElement(Pe, null, Nt)), E.createElement("fieldset", {
-                    className: "tw-w-full tw-flex tw-flex-col sm:tw-flex-row",
+                    className: "tw:w-full tw:flex tw:flex-col tw:sm:flex-row",
                     "aria-label": "Search Bar"
                 }, E.createElement(Ge, {
                     type: "text",
@@ -1634,23 +1633,23 @@
                     },
                     type: M,
                     ignoreDisable: !0,
-                    className: "tw-flex-3 sm:tw-max-w-[30%]"
+                    className: "tw:flex-3 tw:sm:max-w-[30%]"
                 })), yt ? E.createElement(f.fy, {
                     "aria-label": "Loading Favorites",
                     width: "100%",
                     height: "45px",
                     className: "mt-3"
                 }) : E.createElement(E.Fragment, null, R && E.createElement(f.fI, {
-                    className: "w-100 flex-column flex-sm-row tw-mt-4"
+                    className: "w-100 flex-column flex-sm-row tw:mt-4"
                 }, E.createElement(Ne, {
                     type: M
                 })), E.createElement(Fe, {
                     className: "flex-column flex-md-row"
                 }, E.createElement(f.fI, {
-                    className: "tw-flex tw-items-center",
+                    className: "tw:flex tw:items-center",
                     ref: te
                 }, E.createElement(Pe, null, gt ? "Search Results" : Et, " ", (null == ge ? void 0 : ge.isVrcPlus) && E.createElement(w.A, {
-                    className: "tw-ml-2"
+                    className: "tw:ml-2"
                 })), !gt && E.createElement(E.Fragment, null, Q && !(null != z && null !== (o = z.find(function(e) {
                     return e.name === Q
                 })) && void 0 !== o && o.isFakeGroup) && E.createElement($e, {
@@ -1723,7 +1722,7 @@
                     },
                     id: "Tooltip-Compact",
                     "aria-label": "Card Size Toggle",
-                    className: "d-flex d-md-block flex-row align-items-center mt-2 mt-md-0 tw-mb-4 md:tw-mb-0"
+                    className: "d-flex d-md-block flex-row align-items-center mt-2 mt-md-0 tw:mb-4 tw:md:mb-0"
                 }, E.createElement("div", {
                     className: "d-flex d-md-none me-2"
                 }, rt ? "Small Cards" : "Large Cards"), E.createElement(f.M2, {
@@ -1734,7 +1733,7 @@
                     placement: "bottom",
                     target: "Tooltip-Compact"
                 }, rt ? "Switch To Grid View" : "Switch To List View"))))), L && (null == ge ? void 0 : ge.isVrcPlus) && E.createElement("div", {
-                    className: "tw-w-full flex-column flex-sm-row tw-mt-4"
+                    className: "tw:w-full flex-column flex-sm-row tw:mt-4"
                 }, E.createElement(C.A, {
                     title: "This list is temporarily locked",
                     description: "Your worlds are saved, but you'll need to resubscribe to VRC+ to instantly restore."
@@ -1762,16 +1761,16 @@
                 }), yt && E.createElement(f.fy, {
                     width: "100%",
                     height: "300px",
-                    className: "mt-3",
+                    className: "tw:mt-3",
                     radius: 4
                 }), Q && !yt && E.createElement("div", {
-                    className: "tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-3 2xl:tw-grid-cols-4 tw-grid-flow-row tw-gap-4"
+                    className: "tw:grid tw:grid-cols-1 tw:sm:grid-cols-2 tw:lg:grid-cols-3 tw:2xl:grid-cols-4 tw:grid-flow-row tw:gap-4"
                 }, wt), xt && E.createElement(Ve, null, "No favorite ", M, 's matching "', we, '"'), !yt && !gt && bt && E.createElement(Se, {
                     type: M
                 }), yt && E.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-center tw-w-full tw-mt-5"
+                    className: "tw:flex tw:flex-row tw:justify-center tw:w-full tw:mt-5"
                 }, E.createElement("p", {
-                    className: "tw-text-center"
+                    className: "tw:text-center"
                 }, "This may take a moment depending on the number of ", M, "s in your favorites.")), E.createElement($, {
                     isOpen: ot,
                     onCloseCallback: function() {
@@ -1854,28 +1853,28 @@
                     var t = e.title,
                         r = e.description;
                     return s.createElement("div", {
-                        className: "tw-flex tw-flex-col sm:tw-flex-row tw-bg-warning-bg tw-rounded-lg tw-border-orange tw-border-solid tw-border-0 tw-border-l-4 tw-mb-4 tw-p-3 tw-justify-between tw-items-center"
+                        className: "tw:flex tw:flex-col tw:sm:flex-row tw:bg-warning-bg tw:rounded-lg tw:border-orange tw:border-solid tw:border-0 tw:border-l-4 tw:mb-4 tw:p-3 tw:justify-between tw:items-center"
                     }, s.createElement("div", {
-                        className: "tw-flex tw-flex-row"
+                        className: "tw:flex tw:flex-row"
                     }, s.createElement(i.M2, {
                         icon: a.DW,
                         size: "1x",
-                        className: "tw-text-orange tw-mt-1 tw-mr-2"
+                        className: "tw:text-orange tw:mt-1 tw:mr-2"
                     }), s.createElement("div", {
-                        className: "tw-flex tw-flex-col tw-justify-start tw-items-start"
+                        className: "tw:flex tw:flex-col tw:justify-start tw:items-start"
                     }, s.createElement("h2", {
-                        className: "tw-text-xl"
+                        className: "tw:text-xl"
                     }, t), s.createElement("p", {
-                        className: "tw-mb-0 tw-text-base"
+                        className: "tw:mb-0 tw:text-base"
                     }, r))), s.createElement("div", {
-                        className: "tw-h-full tw-flex tw-flex-col tw-justify-center tw-mt-4 sm:tw-mt-0"
+                        className: "tw:h-full tw:flex tw:flex-col tw:justify-center tw:mt-4 tw:sm:mt-0"
                     }, s.createElement(u.N_, {
                         to: "https://hello.vrchat.com/vrchatplus",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, s.createElement(o.Ay, {
                         icon: n.e6,
-                        className: "tw-bg-white tw-border-white tw-text-[#1A2026] tw-px-4"
+                        className: "tw:bg-white tw:border-white tw:text-[#1A2026] tw:px-4"
                     }, "Subscribe to VRC+"))))
                 };
             m.propTypes = {
@@ -2077,4 +2076,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a58124e70dc186b4b23edaa9d9683985fa2280d2c9baea77c076d0d8b93513d0.js.map
+//# sourceMappingURL=d696d7c0b8dd238ac81254aa2f806644aa0e575aa20eb317bf54b9f1ed8af43d.js.map

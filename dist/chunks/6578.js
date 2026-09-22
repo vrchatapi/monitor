@@ -357,9 +357,9 @@
                             }
                         },
                         O = function() {
-                            E(), null === w.current && g.current && (w.current = g.current.getContext("2d")), w.current && w.current.clearRect(0, 0, a, a), x && C && k > 0 && (v.current = setInterval(B, 1e3 / k))
+                            E(), null === w.current && g.current && (w.current = g.current.getContext("2d")), w.current && w.current.clearRect(0, 0, a, a), x && C && k > 0 && (v.current = setInterval(M, 1e3 / k))
                         },
-                        B = function() {
+                        M = function() {
                             if (x) {
                                 if (null !== w.current && null !== f.current) {
                                     var e = w.current;
@@ -370,7 +370,7 @@
                                 }
                             } else E()
                         },
-                        M = function() {
+                        S = function() {
                             if (null !== g.current && null !== f.current) {
                                 var e = g.current.getContext("2d");
                                 if (e.clearRect(0, 0, a, a), e.imageSmoothingEnabled = !1, e.save(), null !== y && p.current && (e.drawImage(p.current, 0, 0, a, a), e.globalCompositeOperation = "source-in"), s) return h(e), e.drawImage(f.current, 0, 0, a, a), void e.restore();
@@ -386,17 +386,17 @@
                                 e.drawImage(f.current, i, c, o, l), e.restore()
                             }
                         },
-                        S = function() {
+                        B = function() {
                             f.current = null;
                             var e = new Image;
                             if (e.onload = function() {
-                                    f.current = e, x && C && k ? O() : M(), void 0 !== l && l()
+                                    f.current = e, x && C && k ? O() : S(), void 0 !== l && l()
                                 }, e.onerror = function(e) {
                                     console.error("Error loading image:", e), void 0 !== i && i(e)
                                 }, y) {
                                 var t = new Image;
                                 t.onload = function() {
-                                    p.current = t, f.current && (x && C && k || M())
+                                    p.current = t, f.current && (x && C && k || S())
                                 }, t.src = y
                             } else p.current = null;
                             e.src = n
@@ -406,17 +406,17 @@
                             var e = g.current.getContext("2d");
                             e && e.clearRect(0, 0, g.current.width, g.current.height)
                         }
-                        return m.current = 0, S(),
+                        return m.current = 0, B(),
                             function() {
                                 E()
                             }
                     }, [t, n, a]), (0, o.useEffect)(function() {
-                        if (f.current) return E(), x && C && k ? O() : M(),
+                        if (f.current) return E(), x && C && k ? O() : S(),
                             function() {
                                 E()
                             }
                     }, [x, C, k, a]), (0, o.useEffect)(function() {
-                        S()
+                        B()
                     }, [n, y, a]), (0, o.useEffect)(function() {
                         return function() {
                             E()
@@ -630,14 +630,14 @@
                     N = e.isUserHidden,
                     I = e.showStatus,
                     O = void 0 !== I && I,
-                    B = e.openLinksInNewTab,
-                    M = void 0 !== B && B,
-                    S = e.isCard,
-                    j = void 0 !== S && S,
+                    M = e.openLinksInNewTab,
+                    S = void 0 !== M && M,
+                    B = e.isCard,
+                    j = void 0 !== B && B,
                     q = e.isCompact,
                     P = void 0 !== q && q,
-                    D = e.friendControls,
-                    T = void 0 !== D && D,
+                    T = e.friendControls,
+                    D = void 0 !== T && T,
                     F = e.moderateControls,
                     z = void 0 !== F && F,
                     R = e.editMode,
@@ -698,21 +698,21 @@
                     Ne = (0, a.A)(ke, 2),
                     Ie = Ne[0],
                     Oe = Ne[1],
-                    Be = (0, g.F)({
+                    Me = (0, g.F)({
                         src: null == be || null === (t = be.mainAnimation) || void 0 === t ? void 0 : t.url,
                         resetKey: xe ? Ie : null
                     }),
-                    Me = (0, m.A)(Ee, we),
-                    Se = Me.animationSource,
-                    je = Me.mainSrc,
-                    qe = Me.baseSrc,
-                    Pe = Me.isReady,
-                    De = function() {
+                    Se = (0, m.A)(Ee, we),
+                    Be = Se.animationSource,
+                    je = Se.mainSrc,
+                    qe = Se.baseSrc,
+                    Pe = Se.isReady,
+                    Te = function() {
                         Oe(function(e) {
                             return e + 1
                         }), Ce(!0)
                     },
-                    Te = function() {
+                    De = function() {
                         Ce(!1)
                     },
                     Fe = null != X ? X : null == be ? void 0 : be.gradientStart,
@@ -752,18 +752,18 @@
                     ft = function() {
                         return E.createElement("div", {
                             className: (0, w.cx)({
-                                "tw-h-auto tw-min-h-50px tw-p-2": U
-                            }, "tw-bg-darker-grey tw-border-dark-grey tw-items-center tw-rounded-tl-xl tw-rounded-tr-xl tw-h-0 tw-min-h-0 tw-transition-all tw-duration-[250ms] tw-ease-in-out")
+                                "tw:h-auto tw:min-h-50px tw:p-2": U
+                            }, "tw:bg-darker-grey tw:border-dark-grey tw:items-center tw:rounded-tl-xl tw:rounded-tr-xl tw:h-0 tw:min-h-0 tw:transition-all tw:duration-[250ms] tw:ease-in-out")
                         }, E.createElement("div", {
-                            className: (0, w.cx)("tw-opacity-0 tw-items-center tw-flex-grow tw-max-w-full tw-transition-all tw-duration-[250ms] tw-ease-in-out", {
-                                "tw-opacity-100 tw-flex": U,
-                                "tw-hidden": !U
+                            className: (0, w.cx)("tw:opacity-0 tw:items-center tw:grow tw:max-w-full tw:transition-all tw:duration-[250ms] tw:ease-in-out", {
+                                "tw:opacity-100 tw:flex": U,
+                                "tw:hidden": !U
                             })
                         }, L))
                     };
                 if (N && !Ge || it && !Ge) return null;
                 if (j) {
-                    var pt, wt = !te && !N && Pe && Se;
+                    var pt, wt = !te && !N && Pe && Be;
                     return E.createElement(E.Fragment, null, E.createElement("div", {
                         style: x(x(x({
                             "--avatar-size": "min(33.333%, 8rem)"
@@ -774,45 +774,45 @@
                         }), ie && {
                             "--user-card-border-width": ie
                         }),
-                        className: (0, w.cx)("tw-relative tw-rounded-2xl tw-pb-3 tw-border-solid tw-overflow-hidden", re ? "tw-bg-[var(--user-card-bg)]" : "tw-bg-grey", oe ? "tw-border-[var(--user-card-border)]" : "tw-border-grey", ie ? "tw-border-[length:var(--user-card-border-width)]" : "tw-border-4", H),
-                        onMouseEnter: De,
-                        onMouseLeave: Te
+                        className: (0, w.cx)("tw:relative tw:rounded-2xl tw:pb-3 tw:border-solid tw:overflow-hidden", re ? "tw:bg-[var(--user-card-bg)]" : "tw:bg-grey", oe ? "tw:border-[var(--user-card-border)]" : "tw:border-grey", ie ? "tw:border-[length:var(--user-card-border-width)]" : "tw:border-4", H),
+                        onMouseEnter: Te,
+                        onMouseLeave: De
                     }, L && ft(), E.createElement(y.N_, {
                         to: se || N || it ? "#" : "/home/user/".concat(we),
                         "aria-label": "Profile Picture",
-                        className: "tw-no-underline",
+                        className: "tw:no-underline",
                         onClick: function(e) {
                             return se && e.preventDefault()
                         }
                     }, E.createElement("div", {
-                        className: "tw-overflow-hidden tw-rounded-tl-xl tw-rounded-tr-xl tw-h-[100px] tw-relative"
+                        className: "tw:overflow-hidden tw:rounded-tl-xl tw:rounded-tr-xl tw:h-[100px] tw:relative"
                     }, "color" === rt && ot ? E.createElement("div", {
-                        className: "tw-w-full tw-h-full",
+                        className: "tw:w-full tw:h-full",
                         style: {
                             backgroundColor: ot
                         }
                     }) : "customImage" !== rt && "avatarBanner" !== rt || !at ? E.createElement("div", {
-                        className: "tw-w-full tw-h-full tw-bg-black"
+                        className: "tw:w-full tw:h-full tw:bg-black"
                     }) : E.createElement("img", {
                         alt: "user banner",
                         src: lt,
-                        className: "tw-object-cover tw-w-full tw-h-full tw-object-top"
+                        className: "tw:object-cover tw:w-full tw:h-full tw:object-top"
                     }), null != _ && E.createElement(y.N_, {
                         to: "/home/marketplace/wallet",
-                        className: "tw-absolute tw-z-[2] tw-top-1 tw-right-1 tw-bg-[#0E141795] tw-px-[6px] tw-py-[2px] tw-rounded-2xl",
+                        className: "tw:absolute tw:z-[2] tw:top-1 tw:right-1 tw:bg-[#0E141795] tw:px-[6px] tw:py-[2px] tw:rounded-2xl",
                         onClick: function(e) {
                             return e.stopPropagation()
                         }
                     }, E.createElement(c.eD, null), E.createElement("span", {
-                        className: "tw-text-white"
+                        className: "tw:text-white"
                     }, null !== (pt = " ".concat(null == _ ? void 0 : _.toLocaleString())) && void 0 !== pt ? pt : " ???")), (null == G ? void 0 : G.length) > 0 && E.createElement("div", {
-                        className: "tw-absolute tw-bottom-1 tw-right-1 tw-flex tw-gap-1 tw-z-[2]"
+                        className: "tw:absolute tw:bottom-1 tw:right-1 tw:flex tw:gap-1 tw:z-[2]"
                     }, G.map(function(e) {
                         return E.createElement("div", {
                             key: e.badgeId,
                             role: "note",
                             "aria-label": e.badgeName,
-                            className: (0, w.cx)("tw-w-9 tw-h-9 tw-rounded-full tw-bg-no-repeat tw-bg-center", e.pettable && "tw-cursor-grab active:tw-cursor-grabbing"),
+                            className: (0, w.cx)("tw:w-9 tw:h-9 tw:rounded-full tw:bg-no-repeat tw:bg-center", e.pettable && "tw:cursor-grab tw:active:cursor-grabbing"),
                             style: {
                                 backgroundColor: "rgba(17,17,17,0.8)",
                                 backgroundImage: "url(".concat(e.badgeImageUrl, ")"),
@@ -822,11 +822,11 @@
                     }))), wt && E.createElement("img", {
                         src: fe || !xe ? qe : je,
                         alt: "Profile effect",
-                        className: "tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-object-top tw-pointer-events-none tw-z-20 tw-rounded-xl"
+                        className: "tw:absolute tw:inset-0 tw:w-full tw:h-full tw:object-cover tw:object-top tw:pointer-events-none tw:z-20 tw:rounded-xl"
                     }), !it && E.createElement(y.N_, {
                         to: se ? "#" : "/home/user/".concat(we),
-                        className: (0, w.cx)("tw-absolute tw-transition-all tw-duration-[250ms] tw-ease-in-out tw--translate-y-1/2 tw-z-30 tw-left-3 tw-h-[var(--avatar-size)] tw-aspect-square", {
-                            "tw-top-[calc(50%+25px)]": U
+                        className: (0, w.cx)("tw:absolute tw:transition-all tw:duration-[250ms] tw:ease-in-out tw:-translate-y-1/2 tw:z-30 tw:left-3 tw:h-[var(--avatar-size)] tw:aspect-square", {
+                            "tw:top-[calc(50%+25px)]": U
                         }),
                         onClick: function(e) {
                             return se && e.preventDefault()
@@ -837,75 +837,75 @@
                         iconFrame: he,
                         size: "fill",
                         isAnimating: xe,
-                        borderClass: (0, w.cx)(re ? "tw-border-[var(--user-card-bg)]" : "tw-border-grey")
+                        borderClass: (0, w.cx)(re ? "tw:border-[var(--user-card-bg)]" : "tw:border-grey")
                     })), E.createElement("div", {
-                        className: "tw-flex tw-gap-1 tw-flex-col tw-px-3 tw-pt-[46px] tw-relative tw-z-30"
+                        className: "tw:flex tw:gap-1 tw:flex-col tw:px-3 tw:pt-[46px] tw:relative tw:z-30"
                     }, E.createElement("div", {
-                        className: "tw-flex tw-flex-row tw-items-center tw-gap-1"
+                        className: "tw:flex tw:flex-row tw:items-center tw:gap-1"
                     }, E.createElement(y.N_, {
-                        className: "tw-text-white",
+                        className: "tw:text-white",
                         to: N || it ? "#" : "/home/user/".concat(we),
-                        target: M ? "_blank" : void 0,
+                        target: S ? "_blank" : void 0,
                         "aria-label": "View ".concat(Ke, "'s profile"),
                         onClick: function(e) {
                             e.stopPropagation()
                         }
                     }, E.createElement("h4", {
-                        className: "tw-truncate tw-text-left tw-mb-0"
+                        className: "tw:truncate tw:text-left tw:mb-0"
                     }, Ke)), st && !N && E.createElement(c.M2, {
                         icon: l.$z,
-                        className: "tw-text-error-message-red",
+                        className: "tw:text-error-message-red",
                         title: "User is muted"
                     }), ut && !N && E.createElement(c.M2, {
                         icon: o.c7,
-                        className: "tw-text-error-message-red",
+                        className: "tw:text-error-message-red",
                         title: "User is blocked"
                     })), O && E.createElement(s.A, {
                         status: Qe,
                         withLabel: !0,
                         isOffline: dt,
                         customStatus: nt,
-                        className: "tw-text-subtext-grey"
+                        className: "tw:text-subtext-grey"
                     })))), V)
                 }
                 var gt = !j && Fe && ze ? {
                     background: "linear-gradient(to right, ".concat(Fe, ", ").concat(ze, ")")
                 } : {};
                 return E.createElement("div", null, L && ft(), E.createElement("div", {
-                    className: (0, w.cx)("tw-p-3 tw-relative tw-rounded-lg", re ? "tw-bg-[var(--user-card-bg)]" : !Fe && !ze && "tw-bg-grey hover:tw-bg-[#363B41]", H),
+                    className: (0, w.cx)("tw:p-3 tw:relative tw:rounded-lg", re ? "tw:bg-[var(--user-card-bg)]" : !Fe && !ze && "tw:bg-grey tw:hover:bg-[#363B41]", H),
                     style: x(x({}, gt), re && {
                         "--user-card-bg": re
                     }),
-                    onMouseEnter: De,
-                    onMouseLeave: Te
+                    onMouseEnter: Te,
+                    onMouseLeave: De
                 }, Re && E.createElement("div", {
-                    className: "tw-absolute tw-inset-0 tw-rounded-lg tw-overflow-hidden tw-pointer-events-none"
+                    className: "tw:absolute tw:inset-0 tw:rounded-lg tw:overflow-hidden tw:pointer-events-none"
                 }, K && Ue && !fe ? E.createElement("img", {
                     src: Ue,
                     alt: "Nameplate decoration animated",
-                    className: "tw-absolute tw-right-0 tw-top-0 tw-h-full tw-w-auto tw-object-contain tw-object-right"
+                    className: "tw:absolute tw:right-0 tw:top-0 tw:h-full tw:w-auto tw:object-contain tw:object-right"
                 }) : E.createElement(E.Fragment, null, (!xe || fe) && E.createElement("img", {
                     src: Re,
                     alt: "Nameplate decoration",
-                    className: "tw-absolute tw-right-0 tw-top-0 tw-h-full tw-w-auto tw-object-contain tw-object-right"
+                    className: "tw:absolute tw:right-0 tw:top-0 tw:h-full tw:w-auto tw:object-contain tw:object-right"
                 }), Ue && xe && !fe && E.createElement("img", {
-                    ref: Be,
+                    ref: Me,
                     src: Ue,
                     alt: "Nameplate decoration animated",
-                    className: "tw-absolute tw-right-0 tw-top-0 tw-h-full tw-w-auto tw-object-contain tw-object-right"
+                    className: "tw:absolute tw:right-0 tw:top-0 tw:h-full tw:w-auto tw:object-contain tw:object-right"
                 }))), E.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-mx-0 tw-gap-3 tw-items-center tw-relative"
+                    className: "tw:flex tw:flex-row tw:mx-0 tw:gap-3 tw:items-center tw:relative"
                 }, E.createElement("div", {
-                    className: "tw-relative tw-flex tw-flex-col"
+                    className: "tw:relative tw:flex tw:flex-col"
                 }, E.createElement("div", null, (Ge || !N) && E.createElement(y.N_, {
                     to: N || it ? "#" : "/home/user/".concat(we),
                     title: N ? "Hidden" : $e,
-                    target: M ? "_blank" : void 0
+                    target: S ? "_blank" : void 0
                 }, E.createElement("div", {
-                    className: "tw-relative"
+                    className: "tw:relative"
                 }, Ge && N && E.createElement(c.M2, {
                     icon: i.k6,
-                    className: "tw-text-4xl tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-text-lighter-grey tw-z-10"
+                    className: "tw:text-4xl tw:absolute tw:top-0 tw:left-0 tw:w-full tw:h-full tw:text-lighter-grey tw:z-10"
                 }), E.createElement(p.A, {
                     profilePic: it ? tt : mt,
                     displayName: Ke,
@@ -914,32 +914,32 @@
                     hideBorder: !0,
                     isAnimating: xe
                 }))))), (Ge || !N) && E.createElement("div", {
-                    className: "tw-flex-1 tw-flex tw-flex-col tw-w-full"
+                    className: "tw:flex-1 tw:flex tw:flex-col tw:w-full"
                 }, E.createElement("h6", {
-                    className: "tw-mb-[6px] tw-space-x-2"
+                    className: "tw:mb-[6px] tw:space-x-2"
                 }, E.createElement(y.N_, {
-                    className: "tw-text-lighter-grey",
+                    className: "tw:text-lighter-grey",
                     to: N || it ? "#" : "/home/user/".concat(we),
-                    target: M ? "_blank" : void 0
+                    target: S ? "_blank" : void 0
                 }, Ke), st && E.createElement(c.M2, {
                     icon: l.$z,
-                    className: "tw-text-error-message-red",
+                    className: "tw:text-error-message-red",
                     title: "User is muted"
                 }), ut && E.createElement(c.M2, {
                     icon: o.c7,
-                    className: "tw-text-error-message-red",
+                    className: "tw:text-error-message-red",
                     title: "User is blocked"
                 }))), E.createElement("div", {
-                    className: "tw-flex tw-items-center tw-gap-3"
-                }, T && !P && pe && !Le && !ct && !N && E.createElement(d.A, {
+                    className: "tw:flex tw:items-center tw:gap-3"
+                }, D && !P && pe && !Le && !ct && !N && E.createElement(d.A, {
                     userId: we,
                     slim: !0,
-                    containerClasses: "tw-rounded-lg tw-h-10",
-                    className: "tw-text-subtext-grey tw-border-none tw-px-3 tw-p-2 tw-flex tw-items-center tw-gap-1 ".concat(be ? "tw-bg-grey-transparent-90" : "tw-bg-grey")
+                    containerClasses: "tw:rounded-lg tw:h-10",
+                    className: "tw:text-subtext-grey tw:border-none tw:px-3 tw:p-2 tw:flex tw:items-center tw:gap-1 ".concat(be ? "tw:bg-grey-transparent-90" : "tw:bg-grey")
                 }), z && !P && pe && !Le && !ct && !N && E.createElement(f.A, {
                     neutral: !0,
-                    className: "tw-text-subtext-grey tw-border-none tw-px-3 tw-p-2 ".concat(be ? "tw-bg-grey-transparent-90" : "tw-bg-grey"),
-                    containerClasses: "tw-rounded-lg tw-h-10",
+                    className: "tw:text-subtext-grey tw:border-none tw:px-3 tw:p-2 ".concat(be ? "tw:bg-grey-transparent-90" : "tw:bg-grey"),
+                    containerClasses: "tw:rounded-lg tw:h-10",
                     userId: we,
                     isMuted: st,
                     isBlocked: ut,
@@ -1005,14 +1005,14 @@
                 var d = "filter-".concat(t.value);
                 return c.createElement("li", {
                     key: t.value,
-                    className: "tw-w-full"
+                    className: "tw:w-full"
                 }, c.createElement("div", {
-                    className: "tw-text-lg tw-flex tw-row tw-items-center tw-w-fit tw-overflow-visible"
+                    className: "tw:text-lg tw:flex tw:row tw:items-center tw:w-fit tw:overflow-visible"
                 }, c.createElement("input", {
                     id: d,
                     checked: s,
                     type: "checkbox",
-                    className: " tw-w-4 tw-h-4 tw-text-highlight tw-bg-button-bg tw-border-highlight tw-rounded tw-border-1 tw-border-solid tw-accent-highlight tw-ml-0 tw-mr-1 focus:tw-ring-highlight tw-ring-offset-highlight focus:tw-ring-offset-highlight focus:tw-ring-1 ",
+                    className: " tw:w-4 tw:h-4 tw:text-highlight tw:bg-button-bg tw:border-highlight tw:rounded tw:border-1 tw:border-solid tw:accent-highlight tw:ml-0 tw:mr-1 tw:focus:ring-highlight tw:ring-offset-highlight tw:focus:ring-offset-highlight tw:focus:ring-1 ",
                     onChange: function(e) {
                         u(e.target.checked), n(w(w({}, t), {}, {
                             isChecked: e.target.checked
@@ -1020,13 +1020,13 @@
                     }
                 }), c.createElement("label", {
                     htmlFor: d,
-                    className: "tw-cursor-pointer "
+                    className: "tw:cursor-pointer "
                 }, t.icon && c.createElement(i.M2, {
                     icon: t.icon,
                     color: t.color,
-                    className: "tw-mx-2 tw-w-6"
+                    className: "tw:mx-2 tw:w-6"
                 }), c.createElement("span", {
-                    className: "tw-truncate tw-w-fit tw-overflow-hidden tw-text-lg tw-text-white ".concat(t.icon ? "tw-ml-0" : "tw-ml-2")
+                    className: "tw:truncate tw:w-fit tw:overflow-hidden tw:text-lg tw:text-white ".concat(t.icon ? "tw:ml-0" : "tw:ml-2")
                 }, t.label))))
             };
             g.propTypes = {
@@ -1076,20 +1076,20 @@
                     p = t.dataKey,
                     w = t.options;
                 return c.createElement("li", {
-                    className: "tw-ml-1 tw-overflow-visible"
+                    className: "tw:ml-1 tw:overflow-visible"
                 }, c.createElement("button", {
-                    className: "tw-bg-transparent tw-border-none tw-mb-2 tw-cursor-pointer tw-p-0",
+                    className: "tw:bg-transparent tw:border-none tw:mb-2 tw:cursor-pointer tw:p-0",
                     onClick: function() {
                         return m(!s)
                     },
                     type: "button"
                 }, c.createElement("span", {
-                    className: "tw-transition-all tw-duration-500 tw-text-lg tw-font-normal tw-mr-2 ".concat(s ? "tw-text-highlight" : "tw-text-option-inactive")
+                    className: "tw:transition-all tw:duration-500 tw:text-lg tw:font-normal tw:mr-2 ".concat(s ? "tw:text-highlight" : "tw:text-option-inactive")
                 }, f), c.createElement(i.M2, {
                     icon: s ? d.w2 : u.Jt,
-                    className: "tw-mr-2 tw-ml-1 tw-text-highlight"
+                    className: "tw:mr-2 tw:ml-1 tw:text-highlight"
                 })), c.createElement("ul", {
-                    className: "\n          tw-transition-all tw-duration-500 tw-flex tw-flex-col\n          tw-p-0 tw-m-0 tw-list-none tw-bg-none tw-overflow-hidden\n          ".concat(s ? "tw-max-h-full" : "tw-max-h-0", "\n        ")
+                    className: "\n          tw:transition-all tw:duration-500 tw:flex tw:flex-col\n          tw:p-0 tw:m-0 tw:list-none tw:bg-none tw:overflow-hidden\n          ".concat(s ? "tw:max-h-full" : "tw:max-h-0", "\n        ")
                 }, w.filter(function(e) {
                     return e
                 }).map(function(e) {
@@ -1180,20 +1180,20 @@
                 })) ? N : [].concat((0, r.A)(N), [I]));
                 return c.createElement("div", {
                     ref: f,
-                    className: "relative tw-transition-all ".concat(t)
+                    className: "relative tw:transition-all ".concat(t)
                 }, c.createElement("button", {
-                    className: "\n          tw-bg-button-bg tw-border-2 tw-border-solid tw-rounded tw-w-full tw-h-10 tw-cursor-pointer tw-text-highlight\n          ".concat(g ? "tw-border-button-border" : "tw-border-button-bg", "\n        "),
+                    className: "\n          tw:bg-button-bg tw:border-2 tw:border-solid tw:rounded tw:w-full tw:h-10 tw:cursor-pointer tw:text-highlight\n          ".concat(g ? "tw:border-button-border" : "tw:border-button-bg", "\n        "),
                     type: "button",
                     onClick: function() {
                         v(!g)
                     }
                 }, c.createElement(i.M2, {
                     icon: l.mR,
-                    className: "tw-mr-1"
+                    className: "tw:mr-1"
                 }), " Filters"), c.createElement("div", {
-                    className: "\n          tw-w-56 tw-border-button-border tw-bg-option-bg tw-border-2 tw-border-solid tw-mt-2 tw-rounded-sm tw-p-2 tw-pb-3 tw-z-10 tw-max-h-[650px] tw-overflow-y-auto\n          ".concat(g ? "tw-absolute" : "tw-hidden", "\n        ")
+                    className: "\n          tw:w-56 tw:border-button-border tw:bg-option-bg tw:border-2 tw:border-solid tw:mt-2 tw:rounded-xs tw:p-2 tw:pb-3 tw:z-10 tw:max-h-[650px] tw:overflow-y-auto\n          ".concat(g ? "tw:absolute" : "tw:hidden", "\n        ")
                 }, c.createElement("ul", {
-                    className: "tw-flex tw-flex-col tw-gap-2 tw-p-0 tw-m-0 tw-list-none tw-bg-none tw-select-none"
+                    className: "tw:flex tw:flex-col tw:gap-2 tw:p-0 tw:m-0 tw:list-none tw:bg-none tw:select-none"
                 }, O.map(function(e) {
                     return e.options.length > 0 && c.createElement(E, {
                         key: e.label,
@@ -1248,14 +1248,14 @@
                     V = t.memberCount,
                     H = t.iconId,
                     W = t.bannerId,
-                    X = a ? S : j,
-                    Y = a ? D : T,
+                    X = a ? B : j,
+                    Y = a ? T : D,
                     $ = a ? q : P;
                 return f.createElement(X, {
                     to: "/home/group/".concat(null != z ? z : R),
                     "aria-label": "Group Card",
-                    className: "tw-border-solid tw-border-grey tw-border hover:tw-border-light-grey tw-transition-colors"
-                }, f.createElement(C, null, f.createElement(I, null, f.createElement(B, {
+                    className: "tw:border-solid tw:border-grey tw:border tw:hover:border-light-grey tw:transition-colors"
+                }, f.createElement(C, null, f.createElement(I, null, f.createElement(M, {
                     src: W ? (0, m.Iu)({
                         fileId: W,
                         width: "256"
@@ -1265,7 +1265,7 @@
                         var t = e.currentTarget;
                         t.onerror = null, t.src = v
                     }
-                }), f.createElement(O, null, f.createElement(M, {
+                }), f.createElement(O, null, f.createElement(S, {
                     src: H ? (0, m.Iu)({
                         fileId: H,
                         width: "256"
@@ -1342,19 +1342,19 @@
                     name: "1tujnes",
                     styles: "position:absolute;bottom:-32px;margin-left:13px"
                 }),
-                B = (0, l.A)("img", {
+                M = (0, l.A)("img", {
                     target: "e1nq4ok47"
                 })({
                     name: "5usyjw",
                     styles: "width:100%;top:0;left:0;position:absolute;z-index:0;border-radius:8px;aspect-ratio:3/1;object-fit:cover"
                 }),
-                M = (0, l.A)("img", {
+                S = (0, l.A)("img", {
                     target: "e1nq4ok46"
                 })({
                     name: "k2qbwb",
                     styles: "width:75px;height:75px;border-radius:100%;border:3px solid #181b1f;background-color:#181b1f"
                 }),
-                S = (0, l.A)("div", {
+                B = (0, l.A)("div", {
                     target: "e1nq4ok45"
                 })("display:flex;margin-bottom:0.8rem;text-decoration:none!important;flex-direction:column;border-radius:8px;overflow:hidden;min-width:0;&.pulse{", C, "{", N, ";}", k, "{", N, ";}}"),
                 j = (0, l.A)(p.N_, {
@@ -1372,13 +1372,13 @@
                     name: "l8p4qc",
                     styles: "&:hover{color:var(--primary);}"
                 }),
-                D = (0, l.A)("div", {
+                T = (0, l.A)("div", {
                     target: "e1nq4ok41"
                 })({
                     name: "11z3e6t",
                     styles: "background:none;border:none;padding:0;margin:0 0 10px 100px;color:#0e9bb1;outline:none!important;min-width:0"
                 }),
-                T = (0, l.A)("button", {
+                D = (0, l.A)("button", {
                     target: "e1nq4ok40"
                 })({
                     name: "c694od",
@@ -1388,7 +1388,7 @@
         16578(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: () => Br
+                default: () => Mr
             });
             var r = n(82544),
                 a = n(38495),
@@ -1416,22 +1416,22 @@
                 N = n(48169),
                 I = n(87081),
                 O = n(32124),
-                B = n(75499),
-                M = n(78502),
-                S = n(5556),
-                j = n.n(S),
+                M = n(75499),
+                S = n(78502),
+                B = n(5556),
+                j = n.n(B),
                 q = n(22351),
                 P = n(23253),
-                D = n(84976),
-                T = n(71957);
+                T = n(84976),
+                D = n(71957);
             const F = function(e) {
                 var t, n, r, a, l, i, c = e.attribution,
                     s = null == c || null === (t = c.creator) || void 0 === t ? void 0 : t.userId,
                     u = null == c || null === (n = c.publisher) || void 0 === n ? void 0 : n.userId,
-                    d = (0, T.vf)(s, {
+                    d = (0, D.vf)(s, {
                         skip: !s
                     }).data,
-                    m = (0, T.vf)(u, {
+                    m = (0, D.vf)(u, {
                         skip: !u
                     }).data,
                     f = s || (null == c || null === (r = c.creator) || void 0 === r ? void 0 : r.customName),
@@ -1440,22 +1440,22 @@
                 var w = s ? null == d ? void 0 : d.displayName : null == c || null === (l = c.creator) || void 0 === l ? void 0 : l.customName,
                     g = u ? null == m ? void 0 : m.displayName : null == c || null === (i = c.publisher) || void 0 === i ? void 0 : i.customName;
                 return o.createElement(o.Fragment, null, f && w && o.createElement("div", {
-                    className: "tw-mt-9 tw-hidden sm:tw-flex sm:tw-flex-col sm:tw-w-full"
+                    className: "tw:mt-9 tw:hidden tw:sm:flex tw:sm:flex-col tw:sm:w-full"
                 }, o.createElement("h4", {
-                    className: "tw-text-base tw-font-normal"
+                    className: "tw:text-base tw:font-normal"
                 }, "Created By"), o.createElement("div", {
-                    className: "tw-mt-1 tw-pt-2 tw-w-full tw-border-0 tw-border-solid tw-border-t-[1px] tw-border-t-hr-grey"
-                }, s ? o.createElement(D.N_, {
+                    className: "tw:mt-1 tw:pt-2 tw:w-full tw:border-0 tw:border-solid tw:border-t-[1px] tw:border-t-hr-grey"
+                }, s ? o.createElement(T.N_, {
                     to: "/home/user/".concat(s),
                     target: "_blank",
                     rel: "noreferrer"
                 }, w) : w)), p && g && o.createElement("div", {
-                    className: "tw-mt-9 tw-hidden sm:tw-flex sm:tw-flex-col sm:tw-w-full"
+                    className: "tw:mt-9 tw:hidden tw:sm:flex tw:sm:flex-col tw:sm:w-full"
                 }, o.createElement("h4", {
-                    className: "tw-text-base tw-font-normal"
+                    className: "tw:text-base tw:font-normal"
                 }, "Published By"), o.createElement("div", {
-                    className: "tw-mt-1 tw-pt-2 tw-w-full tw-border-0 tw-border-solid tw-border-t-[1px] tw-border-t-hr-grey"
-                }, u ? o.createElement(D.N_, {
+                    className: "tw:mt-1 tw:pt-2 tw:w-full tw:border-0 tw:border-solid tw:border-t-[1px] tw:border-t-hr-grey"
+                }, u ? o.createElement(T.N_, {
                     to: "/home/user/".concat(u),
                     target: "_blank",
                     rel: "noreferrer"
@@ -1470,11 +1470,11 @@
                         s = e.onCloseCallback,
                         u = e.openIndex,
                         m = e.deleteItemCallback,
-                        S = void 0 === m ? null : m,
+                        B = void 0 === m ? null : m,
                         j = e.onArchiveCallback,
-                        D = void 0 === j ? null : j,
-                        T = e.type,
-                        R = (0, M.a$)().user,
+                        T = void 0 === j ? null : j,
+                        D = e.type,
+                        R = (0, S.a$)().user,
                         U = (0, o.useRef)(null),
                         L = (0, o.useState)(u),
                         G = (0, r.A)(L, 2),
@@ -1537,12 +1537,12 @@
                         }, [l, _]),
                         Ae = (0, o.useMemo)(function() {
                             var e;
-                            return null === (e = q.jQ[T]) || void 0 === e ? void 0 : e.label
-                        }, [T]),
+                            return null === (e = q.jQ[D]) || void 0 === e ? void 0 : e.label
+                        }, [D]),
                         xe = (0, o.useMemo)(function() {
                             var e;
-                            return null === (e = q.jQ[T]) || void 0 === e ? void 0 : e.icon
-                        }, [T]),
+                            return null === (e = q.jQ[D]) || void 0 === e ? void 0 : e.icon
+                        }, [D]),
                         Ce = (0, o.useMemo)(function() {
                             return l[_]
                         }, [l, _]);
@@ -1571,8 +1571,8 @@
                                 return Math.min(Math.max(e + t, .5), 3)
                             })
                         }, []),
-                        Oe = q.jQ[T],
-                        Be = (0, o.useMemo)(function() {
+                        Oe = q.jQ[D],
+                        Me = (0, o.useMemo)(function() {
                             var e;
                             return null === (e = l[_]) || void 0 === e || null === (e = e.flags) || void 0 === e ? void 0 : e.includes("archivable")
                         }, [l, _]);
@@ -1595,13 +1595,13 @@
                                 window.removeEventListener("keydown", e)
                             }
                     }, [c, ke]);
-                    var Me = (0, o.useCallback)(function(e) {
+                    var Se = (0, o.useCallback)(function(e) {
                             e.preventDefault(), J(!0), ne({
                                 x: e.clientX - X.x,
                                 y: e.clientY - X.y
                             })
                         }, [X]),
-                        Se = (0, o.useCallback)(function(e) {
+                        Be = (0, o.useCallback)(function(e) {
                             e.preventDefault(), Z && Y({
                                 x: e.clientX - te.x,
                                 y: e.clientY - te.y
@@ -1617,28 +1617,28 @@
                             })
                         };
                     return l.length && c ? o.createElement("div", {
-                        className: "tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-bottom-0 tw-z-[1040] tw-bg-dark-grey-transparent-90"
+                        className: "tw:fixed tw:top-0 tw:left-0 tw:right-0 tw:bottom-0 tw:z-[1040] tw:bg-dark-grey-transparent-90"
                     }, o.createElement("div", {
-                        className: "tw-fixed lg:tw-flex lg:tw-flex-row tw-justify-between tw-h-full tw-w-screen"
+                        className: "tw:fixed tw:lg:flex tw:lg:flex-row tw:justify-between tw:h-full tw:w-screen"
                     }, o.createElement("div", {
-                        className: "\n          tw-fixed tw-select-none \n          tw-top-0 tw-left-0 tw-right-0 tw-bottom-0\n          lg:tw-relative\n          ".concat(se ? "tw-w-full" : "lg:tw-w-3/4")
+                        className: "\n          tw:fixed tw:select-none \n          tw:top-0 tw:left-0 tw:right-0 tw:bottom-0\n          tw:lg:relative\n          ".concat(se ? "tw:w-full" : "tw:lg:w-3/4")
                     }, we && o.createElement("div", {
-                        className: "tw-absolute tw-top-9 tw-left-6 tw-z-50"
+                        className: "tw:absolute tw:top-9 tw:left-6 tw:z-50"
                     }, o.createElement("div", {
-                        className: "tw-flex tw-items-center tw-gap-2 tw-border-solid tw-rounded-full tw-px-4 tw-py-2 tw-border tw-border-vrc-plus-yellow tw-w-fit"
+                        className: "tw:flex tw:items-center tw:gap-2 tw:border-solid tw:rounded-full tw:px-4 tw:py-2 tw:border tw:border-vrc-plus-yellow tw:w-fit"
                     }, o.createElement(N.A, null), o.createElement("p", {
-                        className: "tw-mb-0 tw-whitespace-nowrap"
+                        className: "tw:mb-0 tw:whitespace-nowrap"
                     }, "VRC+ Exclusive"))), o.createElement("div", {
-                        className: "tw-absolute tw-top-9 tw-right-6 tw-h-9 tw-w-32 tw-z-50"
+                        className: "tw:absolute tw:top-9 tw:right-6 tw:h-9 tw:w-32 tw:z-50"
                     }, o.createElement("div", {
-                        className: "tw-flex tw-justify-between tw-w-32"
+                        className: "tw:flex tw:justify-between tw:w-32"
                     }, o.createElement(k.Ay, {
                         onClick: function() {
                             le(function(e) {
                                 return Math.min(e + .1, 3)
                             })
                         },
-                        className: "tw-bg-transparent tw-border-none tw-text-white tw-w-9 tw-h-9"
+                        className: "tw:bg-transparent tw:border-none tw:text-white tw:w-9 tw:h-9"
                     }, o.createElement(C.M2, {
                         icon: x.bM
                     })), o.createElement(k.Ay, {
@@ -1647,38 +1647,38 @@
                                 return Math.max(e - .1, .5)
                             })
                         },
-                        className: "tw-bg-transparent tw-border-none tw-text-white tw-w-9 tw-h-9"
+                        className: "tw:bg-transparent tw:border-none tw:text-white tw:w-9 tw:h-9"
                     }, o.createElement(C.M2, {
                         icon: A.rV
                     })), o.createElement(k.Ay, {
                         onClick: function() {
                             return ue(!se)
                         },
-                        className: "tw-bg-transparent tw-border-none tw-text-white tw-w-9 tw-h-9",
+                        className: "tw:bg-transparent tw:border-none tw:text-white tw:w-9 tw:h-9",
                         title: "Toggle fullscreen"
                     }, o.createElement(C.M2, {
                         icon: se ? y.DO : E.sk
                     })))), o.createElement("div", {
-                        className: "tw-flex tw-w-full tw-h-full tw-justify-between tw-items-center"
+                        className: "tw:flex tw:w-full tw:h-full tw:justify-between tw:items-center"
                     }, o.createElement(k.Ay, {
                         onClick: function() {
                             be || (V(function(e) {
                                 return e - 1
                             }), qe(), pe(!0))
                         },
-                        className: "tw-bg-transparent tw-border-none tw-text-white ".concat(be ? "tw-cursor-not-allowed tw-opacity-10" : "tw-opacity-100")
+                        className: "tw:bg-transparent tw:border-none tw:text-white ".concat(be ? "tw:cursor-not-allowed tw:opacity-10" : "tw:opacity-100")
                     }, o.createElement(C.M2, {
                         icon: h.Wz,
-                        className: "tw-w-12 tw-h-[60px] tw-ml-4"
+                        className: "tw:w-12 tw:h-[60px] tw:ml-4"
                     })), o.createElement("div", {
                         ref: U,
-                        className: "tw-flex tw-items-center tw-justify-center tw-w-full tw-h-full tw-overflow-hidden gallery-image-container",
-                        onMouseDown: Me,
-                        onMouseMove: Se,
+                        className: "tw:flex tw:items-center tw:justify-center tw:w-full tw:h-full tw:overflow-hidden gallery-image-container",
+                        onMouseDown: Se,
+                        onMouseMove: Be,
                         onMouseUp: je,
                         onMouseLeave: je
                     }, fe && o.createElement("div", {
-                        className: "tw-flex tw-items-center tw-justify-center tw-absolute tw-inset-0"
+                        className: "tw:flex tw:items-center tw:justify-center tw:absolute tw:inset-0"
                     }, o.createElement(C.M2, {
                         icon: b.z1,
                         spin: !0,
@@ -1703,122 +1703,122 @@
                         isGrayScale: ge,
                         size: 400
                     })), o.createElement("div", {
-                        className: " tw-absolute tw-flex tw-items-center tw-justify-center tw-gap-5 tw-bottom-auto tw-top-24 lg:tw-top-auto lg:tw-bottom-32  "
+                        className: " tw:absolute tw:flex tw:items-center tw:justify-center tw:gap-5 tw:bottom-auto tw:top-24 tw:lg:top-auto tw:lg:bottom-32  "
                     }, he && o.createElement("div", {
-                        className: " tw-flex tw-items-center tw-justify-center tw-w-fit tw-bg-[#2E333D] tw-rounded-2xl tw-border-solid tw-border-[#2E333D] tw-border-3 tw-p-3 sm:tw-p-6 "
+                        className: " tw:flex tw:items-center tw:justify-center tw:w-fit tw:bg-[#2E333D] tw:rounded-2xl tw:border-solid tw:border-[#2E333D] tw:border-3 tw:p-3 tw:sm:p-6 "
                     }, o.createElement(C.M2, {
                         icon: g.faXmark,
                         width: 18,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), o.createElement("span", {
-                        className: "tw-text-white tw-font-bold tw-text-sm sm:tw-text-[28px]"
+                        className: "tw:text-white tw:font-bold tw:text-sm tw:sm:text-[28px]"
                     }, null !== (t = null == Ce ? void 0 : Ce.quantity) && void 0 !== t ? t : 0)), Ee && o.createElement("div", {
-                        className: " tw-flex tw-items-center tw-justify-center tw-w-fit tw-bg-[#6AE3F940] tw-rounded-2xl tw-border-solid tw-border-highlight tw-border-3 tw-p-3 sm:tw-p-6 "
+                        className: " tw:flex tw:items-center tw:justify-center tw:w-fit tw:bg-[#6AE3F940] tw:rounded-2xl tw:border-solid tw:border-highlight tw:border-3 tw:p-3 tw:sm:p-6 "
                     }, o.createElement(C.M2, {
-                        icon: B.default,
+                        icon: M.default,
                         color: "#6AE3F9",
                         width: 24,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), o.createElement("span", {
-                        className: "tw-text-white tw-font-bold tw-text-sm sm:tw-text-[28px]"
+                        className: "tw:text-white tw:font-bold tw:text-sm tw:sm:text-[28px]"
                     }, "Premium")), ye && o.createElement("div", {
-                        className: " tw-flex tw-items-center tw-justify-center tw-w-fit tw-bg-[#6AE3F940] tw-rounded-2xl tw-border-solid tw-border-highlight tw-border-3 tw-p-3 sm:tw-p-6 "
+                        className: " tw:flex tw:items-center tw:justify-center tw:w-fit tw:bg-[#6AE3F940] tw:rounded-2xl tw:border-solid tw:border-highlight tw:border-3 tw:p-3 tw:sm:p-6 "
                     }, o.createElement(C.M2, {
                         icon: I.default,
                         color: "#6AE3F9",
                         width: 24,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), o.createElement("span", {
-                        className: "tw-text-white tw-font-bold tw-text-sm sm:tw-text-[28px]"
+                        className: "tw:text-white tw:font-bold tw:text-sm tw:sm:text-[28px]"
                     }, "Animated")))), o.createElement(k.Ay, {
                         onClick: function() {
                             ve || (V(function(e) {
                                 return e + 1
                             }), qe(), pe(!0))
                         },
-                        className: "tw-bg-transparent tw-border-none tw-text-white ".concat(ve ? "tw-cursor-not-allowed tw-opacity-10" : "tw-opacity-100")
+                        className: "tw:bg-transparent tw:border-none tw:text-white ".concat(ve ? "tw:cursor-not-allowed tw:opacity-10" : "tw:opacity-100")
                     }, o.createElement(C.M2, {
                         icon: v.Xk,
-                        className: "tw-w-12 tw-h-[60px] tw-mr-4"
+                        className: "tw:w-12 tw:h-[60px] tw:mr-4"
                     })))), o.createElement("div", {
-                        className: "\n            tw-bg-darker-grey tw-transition-all\n            tw-absolute tw-bottom-0 tw-h-auto\n            lg:tw-relative\n            ".concat(se ? "tw-w-0 tw-p-0 tw-opacity-0" : "tw-w-screen tw-px-5 tw-py-9 lg:tw-w-1/4 lg:tw-min-w-[300px]", "\n          ")
+                        className: "\n            tw:bg-darker-grey tw:transition-all\n            tw:absolute tw:bottom-0 tw:h-auto\n            tw:lg:relative\n            ".concat(se ? "tw:w-0 tw:p-0 tw:opacity-0" : "tw:w-screen tw:px-5 tw:py-9 tw:lg:w-1/4 tw:lg:min-w-[300px]", "\n          ")
                     }, o.createElement("div", {
-                        className: "tw-flex tw-items-baseline tw-justify-between"
+                        className: "tw:flex tw:items-baseline tw:justify-between"
                     }, o.createElement("h3", {
-                        className: "heading tw-text-white tw-text-left tw-text-2xl"
+                        className: "heading tw:text-white tw:text-left tw:text-2xl"
                     }, o.createElement(C.M2, {
                         icon: xe,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), Ae), o.createElement(k.Ay, {
-                        className: "tw-w-9 tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
+                        className: "tw:w-9 tw:h-9 tw:text-white tw:bg-button-bg-grey tw:border-button-bg-grey",
                         onClick: ke
                     }, o.createElement(C.M2, {
                         icon: g.faXmark
                     }))), o.createElement("div", {
-                        className: "tw-flex tw-flex-col sm:tw-items-baseline sm:tw-justify-between tw-mt-2 sm:tw-mt-10 tw-justify-end tw-items-end"
+                        className: "tw:flex tw:flex-col tw:sm:items-baseline tw:sm:justify-between tw:mt-2 tw:sm:mt-10 tw:justify-end tw:items-end"
                     }, o.createElement("div", {
-                        className: "tw-w-full"
+                        className: "tw:w-full"
                     }, o.createElement("h4", {
-                        className: "tw-text-base tw-font-normal tw-hidden sm:tw-block"
+                        className: "tw:text-base tw:font-normal tw:hidden tw:sm:block"
                     }, "Manage"), o.createElement("div", {
-                        className: "tw-flex tw-flex-row tw-w-full"
+                        className: "tw:flex tw:flex-row tw:w-full"
                     }, P.C && Oe.hasConvertToVrcEmojis && o.createElement(k.Ay, {
-                        containerClasses: "tw-w-full sm:tw-w-fit",
-                        className: "tw-w-full  tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey tw-mr-2 "
+                        containerClasses: "tw:w-full tw:sm:w-fit",
+                        className: "tw:w-full  tw:h-12 tw:sm:h-9 tw:text-white tw:bg-button-bg-grey tw:border-button-bg-grey tw:mr-2 "
                     }, o.createElement(C.M2, {
                         icon: O.default
                     }), "Create Emoji From Sticker"), Oe.hasDelete && o.createElement(k.Ay, {
-                        containerClasses: "tw-w-full sm:tw-w-fit",
-                        className: "tw-w-full tw-h-12 sm:tw-h-9 tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
+                        containerClasses: "tw:w-full tw:sm:w-fit",
+                        className: "tw:w-full tw:h-12 tw:sm:h-9 tw:text-white tw:bg-button-bg-grey tw:border-button-bg-grey",
                         title: "Delete ".concat(Ae),
                         onClick: function() {
-                            null == S || S(Ce)
+                            null == B || B(Ce)
                         }
                     }, o.createElement(C.M2, {
                         icon: w.yL,
-                        className: "tw-mr-2"
-                    }), "Delete"), Oe.hasArchive && Be && o.createElement(k.Ay, {
-                        containerClasses: "tw-w-full sm:tw-w-fit",
-                        className: "tw-h-12 sm:tw-h-9 tw-w-full tw-text-white tw-bg-button-bg-grey tw-border-button-bg-grey",
+                        className: "tw:mr-2"
+                    }), "Delete"), Oe.hasArchive && Me && o.createElement(k.Ay, {
+                        containerClasses: "tw:w-full tw:sm:w-fit",
+                        className: "tw:h-12 tw:sm:h-9 tw:w-full tw:text-white tw:bg-button-bg-grey tw:border-button-bg-grey",
                         title: "Archive Sticker",
                         onClick: function() {
-                            return null == D ? void 0 : D(Ce)
+                            return null == T ? void 0 : T(Ce)
                         }
                     }, o.createElement(C.M2, {
                         icon: p.TH,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), "Archive"))), (null == Ce ? void 0 : Ce.description) && o.createElement("div", {
-                        className: "tw-mt-9 tw-hidden sm:tw-flex sm:tw-flex-col sm:tw-w-full"
+                        className: "tw:mt-9 tw:hidden tw:sm:flex tw:sm:flex-col tw:sm:w-full"
                     }, o.createElement("h4", {
-                        className: "tw-text-base tw-font-normal "
+                        className: "tw:text-base tw:font-normal "
                     }, "Description"), o.createElement("div", {
-                        className: "tw-mt-1 tw-pt-2 tw-w-full tw-border-0 tw-border-solid tw-border-t-[1px] tw-border-t-hr-grey"
+                        className: "tw:mt-1 tw:pt-2 tw:w-full tw:border-0 tw:border-solid tw:border-t-[1px] tw:border-t-hr-grey"
                     }, Ce.description)), ge && o.createElement("a", {
-                        className: " tw-my-6 tw-text-white tw-w-full tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-no-underline hover:tw-no-underline tw-border-vrc-plus-yellow tw-border-2 tw-p-4 tw-bg-vrc-plus-yellow/10 tw-border-solid ",
+                        className: " tw:my-6 tw:text-white tw:w-full tw:rounded-xl tw:flex tw:items-center tw:justify-center tw:no-underline tw:hover:no-underline tw:border-vrc-plus-yellow tw:border-2 tw:p-4 tw:bg-vrc-plus-yellow/10 tw:border-solid ",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         href: "https://hello.vrchat.com/vrchatplus?utm_source=vrchatwebapp&utm_medium=VRCPlus_exclusive_item_upsell"
                     }, o.createElement(N.A, null), o.createElement("p", {
-                        className: "tw-font-bold tw-mb-0 tw-mx-2 tw-text-lg"
+                        className: "tw:font-bold tw:mb-0 tw:mx-2 tw:text-lg"
                     }, "Unlock With VRC+")), (null == Ce || null === (n = Ce.collections) || void 0 === n ? void 0 : n.length) > 0 && o.createElement("div", {
-                        className: "tw-mt-9 tw-hidden sm:tw-flex sm:tw-flex-col sm:tw-w-full"
+                        className: "tw:mt-9 tw:hidden tw:sm:flex tw:sm:flex-col tw:sm:w-full"
                     }, o.createElement("h4", {
-                        className: "tw-text-base tw-font-normal "
+                        className: "tw:text-base tw:font-normal "
                     }, "Collections"), o.createElement("div", {
-                        className: "tw-mt-1 tw-pt-2 tw-w-full tw-border-0 tw-border-solid tw-border-t-[1px] tw-border-t-hr-grey"
+                        className: "tw:mt-1 tw:pt-2 tw:w-full tw:border-0 tw:border-solid tw:border-t-[1px] tw:border-t-hr-grey"
                     }, Ce.collections.map(function(e) {
                         return e
                     }).join(", "))), o.createElement(F, {
                         attribution: null == Ce ? void 0 : Ce.attribution
                     }), (null == Ce ? void 0 : Ce.created_at) && o.createElement("div", {
-                        className: "tw-mt-9 tw-hidden sm:tw-flex sm:tw-flex-col sm:tw-w-full"
+                        className: "tw:mt-9 tw:hidden tw:sm:flex tw:sm:flex-col tw:sm:w-full"
                     }, o.createElement("h4", {
-                        className: "tw-text-base tw-font-normal "
+                        className: "tw:text-base tw:font-normal "
                     }, "Date Created"), o.createElement("div", {
-                        className: "tw-mt-1 tw-pt-2 tw-w-full tw-border-0 tw-border-solid tw-border-t-[1px] tw-border-t-hr-grey"
+                        className: "tw:mt-1 tw:pt-2 tw:w-full tw:border-0 tw:border-solid tw:border-t-[1px] tw:border-t-hr-grey"
                     }, o.createElement(C.M2, {
                         icon: f.ok,
-                        className: "tw-mr-2"
+                        className: "tw:mr-2"
                     }), d()(null == Ce ? void 0 : Ce.created_at).format("ll, h:mm A"))))))) : null
                 };
             const U = R;
@@ -1877,26 +1877,26 @@
                     l(!s)
                 }, []);
                 return a && e ? o.createElement("div", {
-                    className: "tw-fixed tw-inset-0 tw-z-[2000] tw-pointer-events-all"
+                    className: "tw:fixed tw:inset-0 tw:z-[2000] tw:pointer-events-all"
                 }, o.createElement("div", {
-                    className: " tw-absolute tw-rounded-lg tw-z-[2001] tw-shadow-[0_0_0_100vmax_rgba(0,0,0,0.8)] tw-transition-all tw-duration-500 tw-top-[0px] tw-left-[0px] tw-w-[65px] tw-h-[60px] 2xl:tw-top-[60px] 2xl:tw-left-[0px] 2xl:tw-w-[280px] 2xl:tw-h-[1000px] "
+                    className: " tw:absolute tw:rounded-lg tw:z-[2001] tw:shadow-[0_0_0_100vmax_rgba(0,0,0,0.8)] tw:transition-all tw:duration-500 tw:top-[0px] tw:left-[0px] tw:w-[65px] tw:h-[60px] tw:2xl:top-[60px] tw:2xl:left-[0px] tw:2xl:w-[280px] tw:2xl:h-[1000px] "
                 }), o.createElement("div", {
-                    className: " tw-rounded-lg tw-bg-link-highlight tw-z-[3002] tw-absolute tw-p-5 tw-transition-all tw-duration-500 tw-w-full sm:tw-w-[450px] tw-top-[60px] tw-left-0 sm:tw-top-[30px] sm:tw-left-[60px] 2xl:tw-top-auto 2xl:tw-bottom-[20px] 2xl:tw-left-[285px]  before:tw-opacity-100 before:tw-content-[''] before:tw-absolute before:tw-border-t-0 before:tw-border-solid before:tw-border-transparent before:tw-border-[30px] before:tw-border-l-link-highlight before:tw-left-[12px] before:tw-top-[-0px] before:tw-rotate-45 sm:before:tw-left-[-30px] sm:before:tw-top-[15px] sm:before:tw-rotate-90 2xl:before:tw-opacity-0 "
+                    className: " tw:rounded-lg tw:bg-link-highlight tw:z-[3002] tw:absolute tw:p-5 tw:transition-all tw:duration-500 tw:w-full tw:sm:w-[450px] tw:top-[60px] tw:left-0 tw:sm:top-[30px] tw:sm:left-[60px] tw:2xl:top-auto tw:2xl:bottom-[20px] tw:2xl:left-[285px]  tw:before:opacity-100 tw:before:content-[''] tw:before:absolute tw:before:border-t-0 tw:before:border-solid tw:before:border-transparent tw:before:border-[30px] tw:before:border-l-link-highlight tw:before:left-[12px] tw:before:top-[-0px] tw:before:rotate-45 tw:sm:before:left-[-30px] tw:sm:before:top-[15px] tw:sm:before:rotate-90 tw:2xl:before:opacity-0 "
                 }, o.createElement("div", {
-                    className: "tw-flex tw-justify-between tw-flex-col"
+                    className: "tw:flex tw:justify-between tw:flex-col"
                 }, o.createElement("p", {
-                    className: "tw-font-bold tw-text-[#1a1a1a]"
+                    className: "tw:font-bold tw:text-[#1a1a1a]"
                 }, "The gallery has been renamed and relocated."), o.createElement("p", {
-                    className: "tw-text-[#1a1a1a]"
+                    className: "tw:text-[#1a1a1a]"
                 }, "The gallery has now been relocated under the user profile and renamed as ", o.createElement("span", {
-                    className: "tw-font-bold"
+                    className: "tw:font-bold"
                 }, "Inventory"), "."), o.createElement("img", {
                     src: _(),
                     alt: "Gallery has now been relocated to Inventory"
                 }), o.createElement("div", {
-                    className: "tw-flex tw-justify-end tw-mt-4"
+                    className: "tw:flex tw:justify-end tw:mt-4"
                 }, o.createElement(W.A, {
-                    className: "tw-bg-button-bg-grey tw-text-white tw-px-8 tw-w-full sm:tw-w-auto",
+                    className: "tw:bg-button-bg-grey tw:text-white tw:px-8 tw:w-full tw:sm:w-auto",
                     onClick: function() {
                         l(!1), u(!0)
                     }
@@ -1979,29 +1979,29 @@
                     return [].concat((0, Y.A)(t), (0, Y.A)(o))
                 }(n);
                 return o.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-flex-wrap"
+                    className: "tw:flex tw:flex-row tw:flex-wrap"
                 }, i.map(function(e) {
                     return o.createElement("div", {
                         key: e.value,
-                        className: "tw-bg-[#0A0A0D] tw-mr-3 tw-my-3 tw-flex tw-flex-row tw-p-2 tw-pl-3 tw-rounded-sm tw-w-fit",
+                        className: "tw:bg-[#0A0A0D] tw:mr-3 tw:my-3 tw:flex tw:flex-row tw:p-2 tw:pl-3 tw:rounded-xs tw:w-fit",
                         role: "option",
                         "aria-selected": "true"
                     }, o.createElement("div", {
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, (null == e ? void 0 : e.icon) && o.createElement(C.M2, {
                         icon: e.icon,
                         color: e.color
                     }), (null == e ? void 0 : e.thumbnail) && o.createElement("div", {
-                        className: "tw-w-6 tw-h-6 tw-bg-no-repeat tw-bg-cover tw-rounded-full tw-bg-center",
+                        className: "tw:w-6 tw:h-6 tw:bg-no-repeat tw:bg-cover tw:rounded-full tw:bg-center",
                         title: e.label,
                         style: {
                             backgroundImage: "url(".concat(e.thumbnail, ")")
                         }
                     }), o.createElement("span", {
-                        className: "tw-ml-2 tw-mr-2 tw-max-w-[250px] tw-text-ellipsis tw-overflow-hidden tw-truncate"
+                        className: "tw:ml-2 tw:mr-2 tw:max-w-[250px] tw:text-ellipsis tw:overflow-hidden tw:truncate"
                     }, e.label)), o.createElement("div", null, o.createElement("button", {
                         type: "button",
-                        className: " tw-border-0 tw-rounded-sm tw-bg-transparent tw-text-white tw-leading-none ",
+                        className: " tw:border-0 tw:rounded-xs tw:bg-transparent tw:text-white tw:leading-none ",
                         "aria-label": "remove",
                         onClick: function() {
                             l(e)
@@ -2010,10 +2010,10 @@
                         icon: g.faXmark
                     }))))
                 }), i.length > 1 && o.createElement("div", {
-                    className: "tw-flex tw-items-center tw-my-3"
+                    className: "tw:flex tw:items-center tw:my-3"
                 }, o.createElement("button", {
                     type: "button",
-                    className: "tw-ml-1 tw-h-full tw-w-24 tw-border-0 tw-rounded tw-bg-button-bg-grey tw-text-white tw-leading-none",
+                    className: "tw:ml-1 tw:h-full tw:w-24 tw:border-0 tw:rounded tw:bg-button-bg-grey tw:text-white tw:leading-none",
                     "aria-label": "Clear all filters",
                     onClick: function() {
                         l(null)
@@ -2064,8 +2064,8 @@
                     l = (0, r.A)(a, 2),
                     i = l[0],
                     c = l[1],
-                    s = (0, M.d7)(i),
-                    u = (0, M.a$)().user,
+                    s = (0, S.d7)(i),
+                    u = (0, S.a$)().user,
                     d = void 0 === u ? null : u,
                     m = (0, he.Rh)(),
                     f = (0, r.A)(m, 1)[0],
@@ -2098,13 +2098,13 @@
                         })
                     }, [k, s]);
                 return o.createElement(o.Fragment, null, o.createElement("div", {
-                    className: "tw-flex tw-justify-center tw-flex-col tw-w-full"
+                    className: "tw:flex tw:justify-center tw:flex-col tw:w-full"
                 }, o.createElement("h2", {
-                    className: "tw-text-xl tw-text-center tw-w-full"
+                    className: "tw:text-xl tw:text-center tw:w-full"
                 }, "For which group would you like to create this event?"), o.createElement("p", {
-                    className: "tw-text-sm tw-text-center tw-w-full"
+                    className: "tw:text-sm tw:text-center tw:w-full"
                 }, "You will see only the groups for which you have permission to create events."), o.createElement("div", {
-                    className: "tw-w-full tw-flex tw-flex-col tw-justify-center"
+                    className: "tw:w-full tw:flex tw:flex-col tw:justify-center"
                 }, o.createElement(C.pd, {
                     "aria-label": "Enter a group short code, name, or url",
                     type: "text",
@@ -2113,19 +2113,19 @@
                     className: "",
                     leftIcon: o.createElement(C.M2, {
                         icon: Q.faMagnifyingGlass,
-                        className: "tw-mr-1"
+                        className: "tw:mr-1"
                     }),
                     onChange: function(e) {
                         c(e.target.value)
                     }
                 }))), (v || A) && o.createElement("div", {
-                    className: "tw-pt-20 tw-flex tw-items-center tw-justify-center"
+                    className: "tw:pt-20 tw:flex tw:items-center tw:justify-center"
                 }, o.createElement(be.A, {
                     size: "5x"
                 })), !v && !A && 0 === (null == N ? void 0 : N.length) && o.createElement("div", {
-                    className: "tw-text-center tw-text-lg tw-mt-5"
+                    className: "tw:text-center tw:text-lg tw:mt-5"
                 }, "No groups found for which you can create events."), o.createElement("div", {
-                    className: "tw-grid tw-grid-cols-3 tw-gap-4 tw-mt-5"
+                    className: "tw:grid tw:grid-cols-3 tw:gap-4 tw:mt-5"
                 }, null == N ? void 0 : N.map(function(e) {
                     return o.createElement(Ee.A, {
                         key: e.id,
@@ -2159,17 +2159,17 @@
                 Ne = n.n(ke),
                 Ie = n(97825),
                 Oe = n.n(Ie),
-                Be = n(77659),
-                Me = n.n(Be),
-                Se = n(55056),
-                je = n.n(Se),
+                Me = n(77659),
+                Se = n.n(Me),
+                Be = n(55056),
+                je = n.n(Be),
                 qe = n(10540),
                 Pe = n.n(qe),
-                De = n(41113),
-                Te = n.n(De),
+                Te = n(41113),
+                De = n.n(Te),
                 Fe = n(70506),
                 ze = {};
-            ze.styleTagTransform = Te(), ze.setAttributes = je(), ze.insert = Me().bind(null, "head"), ze.domAPI = Oe(), ze.insertStyleElement = Pe();
+            ze.styleTagTransform = De(), ze.setAttributes = je(), ze.insert = Se().bind(null, "head"), ze.domAPI = Oe(), ze.insertStyleElement = Pe();
             Ne()(Fe.A, ze);
             Fe.A && Fe.A.locals && Fe.A.locals;
 
@@ -2206,13 +2206,13 @@
                 },
                 Ge = (0, o.forwardRef)(function(e, t) {
                     var n = (0, l.wA)(),
-                        a = (0, D.ok)(),
+                        a = (0, T.ok)(),
                         i = (0, r.A)(a, 1)[0],
                         c = (0, o.useState)(""),
                         s = (0, r.A)(c, 2),
                         u = s[0],
                         m = s[1],
-                        f = (0, M.d7)(u),
+                        f = (0, S.d7)(u),
                         p = (0, o.useRef)(null),
                         w = (0, o.useRef)(null),
                         g = (0, o.useState)(null),
@@ -2227,14 +2227,14 @@
                         N = (0, r.A)(k, 2),
                         I = N[0],
                         O = N[1],
-                        B = (0, o.useState)(!1),
-                        S = (0, r.A)(B, 2),
-                        j = S[0],
-                        q = S[1],
+                        M = (0, o.useState)(!1),
+                        B = (0, r.A)(M, 2),
+                        j = B[0],
+                        q = B[1],
                         P = (0, o.useState)(d()()),
-                        T = (0, r.A)(P, 2),
-                        F = T[0],
-                        z = T[1],
+                        D = (0, r.A)(P, 2),
+                        F = D[0],
+                        z = D[1],
                         R = (0, o.useState)(!1),
                         U = (0, r.A)(R, 2),
                         L = U[0],
@@ -2252,10 +2252,10 @@
                                 value: "month"
                             })
                         }, []),
-                        ue = (0, M.a$)().user,
+                        ue = (0, S.a$)().user,
                         we = void 0 === ue ? null : ue,
                         ge = !(null == we || !we.id),
-                        ve = (0, M.Om)() && !1,
+                        ve = (0, S.Om)() && !1,
                         be = i.get("view"),
                         he = (0, o.useMemo)(function() {
                             var e;
@@ -2325,12 +2325,12 @@
                         }, {
                             skip: null === we || !j
                         }),
-                        Be = Oe.data,
-                        Me = void 0 === Be ? {
+                        Me = Oe.data,
+                        Se = void 0 === Me ? {
                             events: [],
                             groups: []
-                        } : Be,
-                        Se = Oe.isFetching,
+                        } : Me,
+                        Be = Oe.isFetching,
                         je = Oe.isSuccess,
                         qe = Oe.isError,
                         Pe = Oe.error;
@@ -2345,7 +2345,7 @@
                             }))
                         }
                     }, [Ne, qe]);
-                    var De = function(e) {
+                    var Te = function(e) {
                             var t = d()(e.endsAt).diff(d()(e.startsAt), "day") > 0;
                             return Ue(Ue({}, e), {}, {
                                 id: e.id,
@@ -2354,14 +2354,14 @@
                                 allDay: t
                             })
                         },
-                        Te = function() {
+                        De = function() {
                             return Ue({
                                 searchTerm: f
                             }, ie)
                         },
                         Fe = (0, o.useMemo)(function() {
                             var e = Ae.events,
-                                t = Me.events,
+                                t = Se.events,
                                 n = j ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
                             return n && 0 !== n.length ? {
                                 eventSources: pe.SM.map(function(e) {
@@ -2401,14 +2401,14 @@
                                 languages: [],
                                 groups: []
                             }
-                        }, [Ae, Me, j]),
+                        }, [Ae, Se, j]),
                         ze = (0, o.useMemo)(function() {
                             var e = Ae.events,
-                                t = Me.events,
+                                t = Se.events,
                                 n = j ? [].concat((0, Y.A)(e), (0, Y.A)(t)) : e;
                             if (!n || 0 === n.length) return [];
-                            var r = Te();
-                            if (null === r) return n.map(De);
+                            var r = De();
+                            if (null === r) return n.map(Te);
                             return n.filter(function(e) {
                                 return !(!e || !e.id) && (!(e.deletedAt && !ve) && (!("" !== r.searchTerm && !e.title.toLowerCase().includes(r.searchTerm.toLowerCase()) && !e.description.toLowerCase().includes(r.searchTerm.toLowerCase())) && (!(r.accessTypes.length > 0 && !r.accessTypes.includes(e.accessType)) && (!(r.categories.length > 0 && !r.categories.includes(e.category)) && (!(r.days.length > 0 && (t = {
                                     title: e.title,
@@ -2432,8 +2432,8 @@
                                     return e.languages.includes(t)
                                 })) && !(r.groups.length > 0 && !r.groups.includes(e.ownerId)))))))));
                                 var t, n, a, o, l, i
-                            }).map(De)
-                        }, [f, Ae, Me, j, ie]);
+                            }).map(Te)
+                        }, [f, Ae, Se, j, ie]);
                     (0, o.useImperativeHandle)(t, function() {
                         return {
                             updateCalendarSize: function() {
@@ -2451,7 +2451,7 @@
                                 r = null !== (t = e.date) && void 0 !== t ? t : e;
                             e.date && r.setMinutes(r.getMinutes() + r.getTimezoneOffset()), n.changeView("timeGridDay", r)
                         },
-                        Ge = xe || j && Se,
+                        Ge = xe || j && Be,
                         _e = function(e) {
                             return {
                                 eventId: e.id,
@@ -2472,31 +2472,31 @@
                             }
                         },
                         Ve = (0, o.useMemo)(function() {
-                            return j ? [].concat((0, Y.A)(Ae.groups), (0, Y.A)(Me.groups)) : Ae.groups
-                        }, [Ae, Me, j]);
+                            return j ? [].concat((0, Y.A)(Ae.groups), (0, Y.A)(Se.groups)) : Ae.groups
+                        }, [Ae, Se, j]);
                     return o.createElement("div", {
-                        className: "tw-flex tw-flex-col"
+                        className: "tw:flex tw:flex-col"
                     }, o.createElement(C.Qc, null, "Calendar"), o.createElement("div", {
-                        className: "tw-mb-4 tw-flex tw-justify-between tw-flex-row"
+                        className: "tw:mb-4 tw:flex tw:justify-between tw:flex-row"
                     }, o.createElement("h2", null, "Calendar")), Ge && o.createElement("div", {
-                        className: " tw-w-full tw-h-full  tw-left-0 tw-top-0 tw-absolute  tw-flex tw-justify-center tw-items-center tw-bg-dark-grey-transparent tw-z-10 "
+                        className: " tw:w-full tw:h-full  tw:left-0 tw:top-0 tw:absolute  tw:flex tw:justify-center tw:items-center tw:bg-dark-grey-transparent tw:z-10 "
                     }, o.createElement(ne.A, {
                         loading: !0
                     })), o.createElement("div", {
-                        className: "tw-mb-10 tw-bg-[#181b1f] tw-rounded tw-p-5 fc tw-relative"
+                        className: "tw:mb-10 tw:bg-[#181b1f] tw:rounded tw:p-5 fc tw:relative"
                     }, ke && (!j || je) && o.createElement(o.Fragment, null, o.createElement("div", {
-                        className: "tw-flex tw-justify-between tw-flex-row tw-gap-3 tw-flex-wrap"
+                        className: "tw:flex tw:justify-between tw:flex-row tw:gap-3 tw:flex-wrap"
                     }, o.createElement("div", {
-                        className: "tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-items-start sm:tw-items-center"
+                        className: "tw:flex tw:flex-col tw:sm:flex-row tw:flex-wrap tw:gap-3 tw:items-start tw:sm:items-center"
                     }, o.createElement(C.$n, {
-                        className: "tw-w-52 tw-h-10",
+                        className: "tw:w-52 tw:h-10",
                         type: "button",
                         onClick: function() {
                             W(null), G(!0)
                         }
                     }, o.createElement(C.M2, {
                         icon: Z.QL,
-                        className: "tw-mr-1"
+                        className: "tw:mr-1"
                     }), " Create Event"), o.createElement(me.A, {
                         possibleFilters: Fe,
                         onFilterChangeCallBack: function(e) {
@@ -2520,19 +2520,19 @@
                         type: "text",
                         id: "search-transaction-list",
                         placeholder: "Search by event name or url",
-                        className: "tw-md-1 sm:tw-w-1/2",
+                        className: "tw:md-1 tw:sm:w-1/2",
                         leftIcon: o.createElement(C.M2, {
                             icon: Q.faMagnifyingGlass,
-                            className: "tw-mr-1"
+                            className: "tw:mr-1"
                         }),
                         onChange: function(e) {
                             m(e.target.value)
                         }
                     })), o.createElement("div", {
-                        className: "tw-min-h-[70px] tw-transition-all"
+                        className: "tw:min-h-[70px] tw:transition-all"
                     }, o.createElement(de, {
                         userGroups: Ve,
-                        filters: Te(),
+                        filters: De(),
                         filterRemoveCallback: function(e) {
                             if (null === e) return ce(Le);
                             var t = ie[e.dataKey].filter(function(t) {
@@ -2559,7 +2559,7 @@
                             (t = n).querySelector(".fc-scrollgrid").style.border = "none", t.querySelector(".fc-theme-standard th").style.border = "none", t.querySelector(".fc-scrollgrid-section-liquid > td").style.border = "1px solid var(--fc-border-color)", t.querySelector(".fc-scrollgrid-section-liquid > td").style.borderRadius = "8px"
                         },
                         eventClassNames: function() {
-                            return "tw-rounded-lg tw-text-sm tw-shadow-black tw-shadow-md tw-border tw-border-solid tw-border-black tw-border-opacity-50"
+                            return "tw:rounded-lg tw:text-sm tw:shadow-black tw:shadow-md tw:border tw:border-solid tw:border-black/50"
                         },
                         fixedWeekCount: !1,
                         headerToolbar: {
@@ -2594,7 +2594,7 @@
                         }
                     }), o.createElement("div", {
                         ref: w,
-                        className: "\n            tw-w-[340px] tw-duration-100 fc-popover tw-transition-all tw-bg-transparent\n            ".concat(I ? "tw-hidden" : "tw-fixed", "\n          ")
+                        className: "\n            tw:w-[340px] tw:duration-100 fc-popover tw:transition-all tw:bg-transparent\n            ".concat(I ? "tw:hidden" : "tw:fixed", "\n          ")
                     }, A && o.createElement(re.Ay, {
                         isDialog: !0,
                         event: A,
@@ -2607,11 +2607,11 @@
                         onClose: function() {
                             return G(!1)
                         },
-                        className: "tw-w-full",
+                        className: "tw:w-full",
                         slim: !0,
                         width: "100%"
                     }, o.createElement("div", {
-                        className: "tw-block tw-w-full"
+                        className: "tw:block tw:w-full"
                     }, null === H ? o.createElement(Ce, {
                         groupSelectCallback: W
                     }) : o.createElement(fe.default, {
@@ -2633,7 +2633,7 @@
             const Je = function(e) {
                 var t = e.navToggleCallback,
                     n = void 0 === t ? function() {} : t,
-                    a = (0, M.a$)(),
+                    a = (0, S.a$)(),
                     l = a.user,
                     s = (a.isFetching, a.isLoading),
                     u = ((0, i.Zp)(), (0, H.w_)().data, o.useState(!1)),
@@ -2665,7 +2665,7 @@
                     width: "1024"
                 });
                 return o.createElement(Ke, {
-                    className: "tw-mx-0 tw-mb-2 tw-px-[10px]"
+                    className: "tw:mx-0 tw:mb-2 tw:px-[10px]"
                 }, o.createElement("div", {
                     onClick: w
                 }, o.createElement($e.A, {
@@ -2677,7 +2677,7 @@
                     borderWidth: "2px",
                     tokenBalance: p,
                     hideProfileEffect: !0
-                })), !1, o.createElement(at, null, o.createElement(D.N_, {
+                })), !1, o.createElement(at, null, o.createElement(T.N_, {
                     to: "/home/profile",
                     className: "btn btn-outline-primary d-block",
                     onClick: w
@@ -2689,7 +2689,7 @@
                         styles: "margin:5px 8px"
                     })
                 }, E && (null == l ? void 0 : l.location) && !["traveling", "offline"].includes(null == l ? void 0 : l.location) && o.createElement(tt, {
-                    className: "tw-mx-0"
+                    className: "tw:mx-0"
                 }, o.createElement(Ze.A, {
                     location: l.location,
                     userId: l.id,
@@ -2754,14 +2754,14 @@
                 Nt = n(59692),
                 It = n(84994),
                 Ot = n(74817),
-                Bt = n(7830),
-                Mt = n(75865),
-                St = n(62025),
+                Mt = n(7830),
+                St = n(75865),
+                Bt = n(62025),
                 jt = n(3086),
                 qt = n(53909),
                 Pt = n(91350),
-                Dt = n(54321),
-                Tt = n(34638),
+                Tt = n(54321),
+                Dt = n(34638),
                 Ft = n(32726),
                 zt = n(39848),
                 Rt = n(75909),
@@ -3012,14 +3012,14 @@
                     d = (0, r.A)(u, 2),
                     m = d[0],
                     f = d[1],
-                    p = (0, D.ok)(),
+                    p = (0, T.ok)(),
                     w = (0, r.A)(p, 2),
                     g = w[0],
                     v = (w[1], (0, o.useState)(a)),
                     b = (0, r.A)(v, 2),
                     h = b[0],
                     E = b[1],
-                    y = (0, M.d7)(m),
+                    y = (0, S.d7)(m),
                     A = function() {
                         return encodeURIComponent(h.replace(/#/g, "tag:"))
                     },
@@ -3200,7 +3200,7 @@
                     icon: lt.vm
                 }))
             };
-            var xn = (0, We.A)(D.N_, {
+            var xn = (0, We.A)(T.N_, {
                     target: "eq9q68u1"
                 })({
                     name: "wjiy21",
@@ -3212,7 +3212,7 @@
                     name: "e9mo3t",
                     styles: "transform:rotate(10deg)"
                 });
-            var kn = [Ft.pb, Tt.Fv, Dt.KM, Pt.x3, qt.Qp, jt.TU, St.Wk, Mt.wZ, Bt.Py, Ot.EJ, It.zm, Nt.Ni, kt.eu, Ct.mG, xt.D4, At.kw, yt.AX, Et.cE, ht.Rb],
+            var kn = [Ft.pb, Dt.Fv, Tt.KM, Pt.x3, qt.Qp, jt.TU, Bt.Wk, St.wZ, Mt.Py, Ot.EJ, It.zm, Nt.Ni, kt.eu, Ct.mG, xt.D4, At.kw, yt.AX, Et.cE, ht.Rb],
                 Nn = ["Your inbox is empty!", "No more mail, sorry!", "Looks like you're all caught up!", "If you had mail, it would be here!", "Sorry, no mail right now!", "This is where I'd put my mail, IF I HAD SOME!", "All your mail are belong to this inbox!", "You've got no mail!", "Carrier pigeons are standing by.", "You: 1, Mail: 0", "No thoughts, mailbox empty.", "Chill Empty Mailboxes to Study/Work/Relax To.", "Now That's What I Call An Empty Mailbox.", "No breadcrumbs here; Move along birds.", "Mail never arrives early nor late, but precisely when its sender means it to.", "Dude, where's my mail?", "I'd joke about how you have no mail, but I always mess up the delivery."],
                 In = o.memo(function(e) {
                     var t, n, s = e.horizontal,
@@ -3235,14 +3235,14 @@
                         N = k[0],
                         I = k[1],
                         O = (0, $t.G)().data,
-                        B = ((0, M.Om)(), (0, H.P2)().data),
-                        S = (0, l.d4)(function(e) {
+                        M = ((0, S.Om)(), (0, H.P2)().data),
+                        B = (0, l.d4)(function(e) {
                             return e.notifications.notifications
                         }) || [],
                         j = (0, H.w_)().data,
                         q = void 0 === j ? [] : j,
-                        P = (0, M.Fj)().sortedLocations.length,
-                        T = (0, l.d4)(function(e) {
+                        P = (0, S.Fj)().sortedLocations.length,
+                        D = (0, l.d4)(function(e) {
                             return e.notifications.groupNotifications
                         }) || [],
                         F = (0, Qt.Uy)({
@@ -3269,8 +3269,8 @@
                             u && u(!1)
                         },
                         _ = q || [],
-                        V = (_.includes("permission-user-icons"), _.includes("permission-user-gallery"), _.includes("permission-groups-beta"), null !== (t = S.length) && void 0 !== t ? t : 0);
-                    n = T.filter(function(e) {
+                        V = (_.includes("permission-user-icons"), _.includes("permission-user-gallery"), _.includes("permission-groups-beta"), null !== (t = B.length) && void 0 !== t ? t : 0);
+                    n = D.filter(function(e) {
                         return e.state === bn.Bp.INVITED
                     }).length;
                     if (null == s || !1 === s) {
@@ -3286,14 +3286,14 @@
                             className: "navbar-section left-nav"
                         }, o.createElement("button", {
                             type: "button",
-                            className: "p-1 xl:tw-hidden btn navbar-btn",
+                            className: "p-1 tw:xl:hidden btn navbar-btn",
                             onClick: function() {
                                 u && (d && d(!1), u())
                             }
                         }, o.createElement(C.M2, {
                             icon: bt.ck,
                             size: "lg"
-                        })), o.createElement(D.N_, {
+                        })), o.createElement(T.N_, {
                             to: "/home",
                             title: "home",
                             className: "logo medium"
@@ -3350,7 +3350,7 @@
                                 name: "1c98ue0",
                                 styles: "height:30px;width:100%;border-bottom:#053c48 solid 2px!important;padding-right:10px;text-align:right"
                             })
-                        }, o.createElement(D.N_, {
+                        }, o.createElement(T.N_, {
                             onClick: function(e) {
                                 L(), p("/home/messages"), e.preventDefault()
                             },
@@ -3385,14 +3385,14 @@
                                 name: "pe3dyn",
                                 styles: "height:30px;width:100%;border-top:#053c48 solid 2px!important"
                             })
-                        }))))), o.createElement(D.N_, {
+                        }))))), o.createElement(T.N_, {
                             className: "p-1 btn navbar-btn medium",
                             to: "/home/calendar",
                             title: "Calendar"
                         }, o.createElement(C.M2, {
                             icon: f.ok,
                             size: "lg"
-                        })), o.createElement(D.N_, {
+                        })), o.createElement(T.N_, {
                             className: "p-1 btn navbar-btn medium",
                             to: "/home/profile",
                             title: "profile settings"
@@ -3411,7 +3411,7 @@
                             }
                         }, o.createElement(C.M2, {
                             icon: a.faUserGroup,
-                            className: "tw-text-white"
+                            className: "tw:text-white"
                         }))), o.createElement("div", {
                             className: "navbar-section right-nav d-xl-flex d-none"
                         }, o.createElement(vn, null), o.createElement("a", {
@@ -3448,7 +3448,7 @@
                             name: "1bfow8s",
                             styles: "padding:0 10px;&>a{margin-bottom:10px;}"
                         }))
-                    }, 0 !== P ? o.createElement(Bn, {
+                    }, 0 !== P ? o.createElement(Mn, {
                         to: "/home/locations",
                         title: "locations",
                         className: "btn text-left",
@@ -3462,7 +3462,7 @@
                         })
                     }, P)), o.createElement(C.M2, {
                         icon: lt.vm
-                    })) : o.createElement(Bn, {
+                    })) : o.createElement(Mn, {
                         to: "/home",
                         title: "home",
                         className: "btn text-left",
@@ -3471,7 +3471,7 @@
                         icon: gt.v0
                     }), o.createElement("div", null, "  Home"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/groups",
                         title: "groups",
                         className: "btn text-left",
@@ -3480,7 +3480,7 @@
                         icon: Rt.default
                     }), o.createElement("div", null, "Groups"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/messages",
                         title: "messages",
                         className: "btn text-left d-sm-none",
@@ -3494,7 +3494,7 @@
                         })
                     }, V >= 99 ? "99+" : V)), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/calendar",
                         title: "Calendar",
                         className: "btn text-left d-sm-none",
@@ -3507,7 +3507,7 @@
                         to: "/home/jams",
                         title: "Jam",
                         onClick: G
-                    }), o.createElement(Bn, {
+                    }), o.createElement(Mn, {
                         to: "/home/download",
                         title: "download",
                         className: "btn text-left",
@@ -3516,7 +3516,7 @@
                         icon: pt.cb
                     }), o.createElement("div", null, "Download"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/worlds",
                         title: "worlds",
                         className: "btn text-left",
@@ -3525,7 +3525,7 @@
                         icon: Lt.default
                     }), o.createElement("div", null, "Discover Worlds"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/content/worlds",
                         title: "My Worlds",
                         className: "btn text-left",
@@ -3534,7 +3534,7 @@
                         icon: ft.Jm
                     }), o.createElement("div", null, "My Worlds"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/avatars",
                         title: "avatars",
                         className: "btn text-left",
@@ -3543,7 +3543,7 @@
                         icon: mt.yV
                     }), o.createElement("div", null, "Avatars"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/favorites/world",
                         title: "Favorite Worlds",
                         className: "btn nav-button text-left",
@@ -3552,7 +3552,7 @@
                         icon: dt.yy
                     }), o.createElement("div", null, "Favorite Worlds"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/favorites/avatar",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
@@ -3561,7 +3561,7 @@
                         icon: dt.yy
                     }), o.createElement("div", null, "Favorite Avatars"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/favorites/friend",
                         title: "Favorite Avatars",
                         className: "btn nav-button text-left",
@@ -3570,7 +3570,7 @@
                         icon: dt.yy
                     }), o.createElement("div", null, "Favorite Friends"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/inventory",
                         title: "Inventory",
                         className: "btn text-left",
@@ -3578,14 +3578,14 @@
                     }, o.createElement(C.M2, {
                         icon: Ut.default
                     }), o.createElement("div", {
-                        className: "tw-flex"
+                        className: "tw:flex"
                     }, "Inventory", R && (null == z ? void 0 : z.totalCount) > 0 && o.createElement("div", {
-                        className: "tw-rounded-full tw-bg-red tw-ml-2 tw-w-[22px] tw-h-[22px] tw-text-white tw-flex tw-items-center tw-justify-center "
+                        className: "tw:rounded-full tw:bg-red tw:ml-2 tw:w-[22px] tw:h-[22px] tw:text-white tw:flex tw:items-center tw:justify-center "
                     }, o.createElement("p", {
-                        className: "tw-text-sm tw-text-center tw-w-full tw-mb-0 tw-font-bold"
+                        className: "tw:text-sm tw:text-center tw:w-full tw:mb-0 tw:font-bold"
                     }, null == z ? void 0 : z.totalCount))), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/marketplace",
                         title: "marketplace",
                         className: "btn text-left",
@@ -3594,17 +3594,17 @@
                         icon: zt.default
                     }), o.createElement("div", null, "Marketplace"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), !1, o.createElement(Bn, {
+                    })), !1, o.createElement(Mn, {
                         to: "/home/accountlink",
                         title: "accountLink",
                         className: "btn text-left",
-                        hidden: (null == O ? void 0 : O.disableUpgradeAccount) || (null == B ? void 0 : B.steamId) && (null == B ? void 0 : B.oculusId),
+                        hidden: (null == O ? void 0 : O.disableUpgradeAccount) || (null == M ? void 0 : M.steamId) && (null == M ? void 0 : M.oculusId),
                         onClick: G
                     }, o.createElement(C.M2, {
                         icon: ut.WW
                     }), o.createElement("div", null, "Account Link"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/playermoderations",
                         title: "playermoderations",
                         className: "btn text-left",
@@ -3613,7 +3613,7 @@
                         icon: st.$z
                     }), o.createElement("div", null, "Blocks & Mutes"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/subscriptions",
                         title: "subscriptions",
                         className: "btn text-left",
@@ -3624,7 +3624,7 @@
                         src: Yt()
                     }), o.createElement("div", null, "Subscriptions"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "/home/help-articles",
                         title: "help articles",
                         className: "btn text-left",
@@ -3633,18 +3633,18 @@
                         icon: ct.faCircleQuestion
                     }), o.createElement("div", null, "Help & Info"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Bn, {
+                    })), o.createElement(Mn, {
                         to: "https://help.vrchat.com/",
                         title: "helpdesk",
                         target: "_blank",
                         rel: "noreferrer",
-                        className: "tw-bg-[#07142B] tw-border-[#051E48] tw-text-[#6AA2F9] btn text-left",
+                        className: "tw:bg-[#07142B] tw:border-[#051E48] tw:text-[#6AA2F9] btn text-left",
                         onClick: G
                     }, o.createElement(C.M2, {
                         icon: it.q9
                     }), o.createElement("div", null, "Help Desk"), o.createElement(C.M2, {
                         icon: lt.vm
-                    })), o.createElement(Mn, {
+                    })), o.createElement(Sn, {
                         to: "/home/login",
                         title: "logout",
                         className: "btn text-left d-xl-none",
@@ -3655,23 +3655,23 @@
                 });
             In.displayName = "Navbar";
             const On = In;
-            var Bn = (0, We.A)(D.N_, {
+            var Mn = (0, We.A)(T.N_, {
                     target: "e18dqzxk1"
                 })({
                     name: "yjay0l",
                     styles: "background:#07242b;border:#053c48 solid 2px;color:#6ae3f9;border-radius:8px!important;display:flex;flex-direction:row;align-content:start;align-items:center;justify-content:space-between;height:45px;box-shadow:none!important;padding:0 10px!important;span:before{font-size:25px;}div{font-weight:normal;align-self:center;}&:hover{background:#07343f;border-color:#086c84;transform:scale(1.1);}"
                 }),
-                Mn = (0, We.A)(Bn, {
+                Sn = (0, We.A)(Mn, {
                     target: "e18dqzxk0"
                 })({
                     name: "vkod7",
                     styles: "color:#ee5454;background:#07242b;border:#ee5454 solid 4px;&:hover{border-color:#ee6464;}"
                 }),
-                Sn = n(57115),
+                Bn = n(57115),
                 jn = n(9663),
                 qn = n(3828),
                 Pn = [];
-            const Dn = function() {
+            const Tn = function() {
                 var e = (0, i.Zp)(),
                     t = (0, V.Mj)("campaigns", []),
                     n = (0, r.A)(t, 2),
@@ -3698,7 +3698,7 @@
                 }
                 return null
             };
-            var Tn = n(13419),
+            var Dn = n(13419),
                 Fn = n(58168);
             const zn = function(e) {
                 var t = (0, H.w_)().data,
@@ -3811,14 +3811,14 @@
                     }
                 }();
                 return o.createElement("div", {
-                    className: "tw-p-5"
+                    className: "tw:p-5"
                 }, o.createElement(C.Qc, null, "Redeem Code"), o.createElement(Qn, {
-                    className: "mb-4 tw-bg-[#07242b] tw-border-[#053c48]",
+                    className: "mb-4 tw:bg-[#07242b] tw:border-[#053c48]",
                     outline: !0
                 }, o.createElement(Zn, null, o.createElement("h2", {
-                    className: "tw-text-3xl tw-font-bold tw-text-center tw-text-[#6ae3f9] mb-2"
+                    className: "tw:text-3xl tw:font-bold tw:text-center tw:text-[#6ae3f9] mb-2"
                 }, "Redeem Code")), o.createElement(Jn, {
-                    className: "tw-p-5 tw-border-2 tw-border-[#053c48] tw-rounded-xl"
+                    className: "tw:p-5 tw:border-2 tw:border-[#053c48] tw:rounded-xl"
                 }, o.createElement(C.fv, {
                     xs: {
                         size: 10,
@@ -3838,7 +3838,7 @@
                     className: "flex-1 mb-2",
                     value: l,
                     "aria-label": "Redeem Code",
-                    rawInputClassName: "tw-text-center",
+                    rawInputClassName: "tw:text-center",
                     onChange: function(e) {
                         return c(e.target.value)
                     },
@@ -3850,7 +3850,7 @@
                     isError: b,
                     success: v
                 }), o.createElement("p", {
-                    className: "tw-text-center tw-text-sm tw-text-gray-400"
+                    className: "tw:text-center tw:text-sm tw:text-gray-400"
                 }, "Codes are case-sensitive."), o.createElement(C.fv, {
                     xs: "auto",
                     className: "mx-auto"
@@ -3860,14 +3860,14 @@
                         return E()
                     },
                     disabled: g || !l,
-                    className: "tw-w-full tw-mt-2 tw-p-2 tw-px-4",
+                    className: "tw:w-full tw:mt-2 tw:p-2 tw:px-4",
                     loading: g
                 }, "Redeem")), v && !(null == w || null === (t = w.redeemedRewards) || void 0 === t || !t.length) && o.createElement("div", {
-                    className: "tw-mt-6"
+                    className: "tw:mt-6"
                 }, o.createElement("h3", {
-                    className: "tw-text-xl tw-font-semibold tw-mb-4 after:tw-content-none tw-text-center"
+                    className: "tw:text-xl tw:font-semibold tw:mb-4 tw:after:content-none tw:text-center"
                 }, "You received:"), o.createElement(C.fI, {
-                    className: "tw-g-4 tw-justify-center tw-flex-wrap"
+                    className: "tw:g-4 tw:justify-center tw:flex-wrap"
                 }, w.redeemedRewards.map(function(e, t) {
                     return function(e, t) {
                         var n, r, a, l, i, c, s = e.type,
@@ -3905,17 +3905,17 @@
                             w = d.category;
                         return o.createElement(Qn, {
                             key: t,
-                            className: "tw-bg-[#181b1f] tw-border tw-border-[#06333d] tw-relative tw-p-4 tw-shadow tw-flex tw-flex-col tw-items-center tw-text-center tw-w-full sm:tw-w-6/12 md:tw-w-4/12 lg:tw-w-3/12 tw-p-2 tw-m-2"
+                            className: "tw:bg-[#181b1f] tw:border tw:border-[#06333d] tw:relative tw:p-4 tw:shadow tw:flex tw:flex-col tw:items-center tw:text-center tw:w-full tw:sm:w-6/12 tw:md:w-4/12 tw:lg:w-3/12 tw:p-2 tw:m-2"
                         }, w && o.createElement("div", {
-                            className: "tw-absolute tw-top-2 tw-left-2 tw-bg-cyan-500 tw-text-white tw-rounded-full tw-px-2 tw-text-xs tw-font-semibold tw-shadow"
+                            className: "tw:absolute tw:top-2 tw:left-2 tw:bg-cyan-500 tw:text-white tw:rounded-full tw:px-2 tw:text-xs tw:font-semibold tw:shadow"
                         }, w), p && o.createElement("img", {
                             src: p,
                             alt: m,
-                            className: "tw-w-full tw-h-32 tw-object-contain tw-mb-3 tw-rounded"
+                            className: "tw:w-full tw:h-32 tw:object-contain tw:mb-3 tw:rounded"
                         }), o.createElement("h4", {
-                            className: "tw-text-md tw-font-medium tw-text-[#6ae3f9]"
+                            className: "tw:text-md tw:font-medium tw:text-[#6ae3f9]"
                         }, m), f && o.createElement("p", {
-                            className: "tw-text-sm tw-text-gray-400 tw-mb-0"
+                            className: "tw:text-sm tw:text-gray-400 tw:mb-0"
                         }, f))
                     }(e, t)
                 })))))))
@@ -4028,12 +4028,12 @@
                 Or = o.lazy(function() {
                     return Promise.all([n.e(1952), n.e(3015), n.e(8242), n.e(4736), n.e(6313), n.e(6683), n.e(7596), n.e(6746), n.e(4181)]).then(n.bind(n, 91897))
                 });
-            const Br = function() {
+            const Mr = function() {
                 var e = (0, l.wA)(),
                     t = (0, o.useRef)(null),
                     n = (0, V.Mj)("isVRCFriendsOpen", !1),
                     u = (0, r.A)(n, 1)[0];
-                Dn(), (0, Tn.A)();
+                Tn(), (0, Dn.A)();
                 var m = (0, H.p$)().data,
                     f = (0, Ve.FJ)({
                         userId: null == m ? void 0 : m.id
@@ -4109,14 +4109,14 @@
                 })))), o.createElement("div", {
                     className: "col-xs-12 content-scroll"
                 }, o.createElement("div", {
-                    className: "home-content tw-max-w-[1350px]"
+                    className: "home-content tw:max-w-[1350px]"
                 }, o.createElement(s.tH, {
                     fallback: Rn.A
                 }, o.createElement(o.Suspense, {
-                    fallback: o.createElement(o.Fragment, null, o.createElement(Sn.A, {
-                        className: "tw-mb-2",
+                    fallback: o.createElement(o.Fragment, null, o.createElement(Bn.A, {
+                        className: "tw:mb-2",
                         height: "2.5rem"
-                    }), o.createElement(Sn.A, {
+                    }), o.createElement(Bn.A, {
                         delay: "50",
                         height: "480px"
                     }))
@@ -4285,15 +4285,15 @@
                 }, o.createElement(s.tH, {
                     fallback: Rn.A
                 }, o.createElement(o.Suspense, {
-                    fallback: o.createElement(o.Fragment, null, o.createElement(Sn.A, {
-                        className: "tw-m-6 tw-mb-4",
+                    fallback: o.createElement(o.Fragment, null, o.createElement(Bn.A, {
+                        className: "tw:m-6 tw:mb-4",
                         height: "2.25rem"
-                    }), o.createElement(Sn.A, {
-                        className: "tw-m-6 tw-mt-0",
+                    }), o.createElement(Bn.A, {
+                        className: "tw:m-6 tw:mt-0",
                         delay: "50",
                         height: "1.75rem"
-                    }), o.createElement(Sn.A, {
-                        className: "tw-m-6",
+                    }), o.createElement(Bn.A, {
+                        className: "tw:m-6",
                         delay: "100",
                         height: "480px"
                     }))
@@ -4305,13 +4305,13 @@
                     },
                     role: "button",
                     tabIndex: -1,
-                    className: "friends-button tw-hidden md:tw-flex tw-z-[3]",
+                    className: "friends-button tw:hidden tw:md:flex tw:z-49",
                     onClick: function() {
                         E(!0)
                     }
                 }, o.createElement(C.M2, {
                     icon: a.faUserGroup,
-                    className: "tw-w-7 tw-h-7 tw-text-white",
+                    className: "tw:w-7 tw:h-7 tw:text-white",
                     "aria-label": "Open Friends Menu"
                 }))), o.createElement(X, null), !1, o.createElement(L, null))
             }
@@ -4523,14 +4523,14 @@
                 N = n(79902),
                 I = n(61206),
                 O = n(22017),
-                B = n(62285),
-                M = n(54321),
-                S = n(91622),
+                M = n(62285),
+                S = n(54321),
+                B = n(91622),
                 j = n(23425),
                 q = n(53967),
                 P = n(15394),
-                D = n(38275),
-                T = n(22979),
+                T = n(38275),
+                D = n(22979),
                 F = n(31174),
                 z = n(86379),
                 R = n(14978),
@@ -4583,14 +4583,14 @@
                     "user-plus": R.nW,
                     "user-minus": z.bB,
                     camera: F.rw,
-                    display: T.wA,
-                    trash: D.yL,
+                    display: D.wA,
+                    trash: T.yL,
                     feather: P.xX,
                     images: q.yv,
                     house: j.faHouse,
-                    location: S.Bt,
-                    rocket: M.KM,
-                    microphone: B.A5,
+                    location: B.Bt,
+                    rocket: S.KM,
+                    microphone: M.A5,
                     "folder-open": O.Uj,
                     gauge: I.d1,
                     dice: N.xN,
@@ -4651,11 +4651,11 @@
                     N = k[0],
                     I = k[1].isSuccess,
                     O = (0, de.K4)(t.link),
-                    B = t.title || t.linkText;
+                    M = t.title || t.linkText;
                 (A || I) && a((0, d.$Z)({
                     notificationId: null == t ? void 0 : t.id
                 }));
-                var M = t.createdAt && h()(t.createdAt);
+                var S = t.createdAt && h()(t.createdAt);
                 return c.createElement(c.Fragment, null, c.createElement(me.L4, null, (null == t ? void 0 : t.canDelete) && c.createElement(me.H2, null, c.createElement(me.f2, {
                     title: "Dismiss Notification",
                     onClick: function() {
@@ -4677,17 +4677,17 @@
                     url: t.imageUrl
                 }), c.createElement(me.C6, {
                     url: t.imageUrl
-                })), c.createElement(me.NO, null, c.createElement(me.yx, null, !!B && c.createElement("strong", null, O ? c.createElement(u.N_, {
+                })), c.createElement(me.NO, null, c.createElement(me.yx, null, !!M && c.createElement("strong", null, O ? c.createElement(u.N_, {
                     to: O
-                }, B) : B), (null == M ? void 0 : M.isValid()) && c.createElement("p", {
-                    className: "tw-mb-0 tw-text-gray-400"
+                }, M) : M), (null == S ? void 0 : S.isValid()) && c.createElement("p", {
+                    className: "tw:mb-0 tw:text-gray-400"
                 }, c.createElement("small", null, c.createElement("time", {
                     dateTime: t.createdAt,
-                    title: M.format("llll")
+                    title: S.format("llll")
                 }, c.createElement(se.M2, {
-                    className: "tw-mr-1",
+                    className: "tw:mr-1",
                     icon: w.a$
-                }), M.fromNow()))), c.createElement("p", null, t.message)), c.createElement(me.GU, {
+                }), S.fromNow()))), c.createElement("p", null, t.message)), c.createElement(me.GU, {
                     slim: n
                 }, null == t ? void 0 : t.responses.map(function(e) {
                     return c.createElement(fe, (0, r.A)({
@@ -4748,37 +4748,37 @@
                     N = E.message,
                     I = E.isSystem,
                     O = 2 === E.version,
-                    B = "message" === x || I,
-                    M = (0, f.M7)({
+                    M = "message" === x || I,
+                    S = (0, f.M7)({
                         userId: C
                     }, {
                         skip: !C || O
                     }),
-                    S = M.data,
-                    j = M.isLoading,
-                    q = M.error;
+                    B = S.data,
+                    j = S.isLoading,
+                    q = S.error;
                 if (O) return c.createElement(pe, (0, r.A)({}, y, {
                     notification: E
                 }));
                 if (j) return c.createElement("p", null, "Loading");
-                if (B) return c.createElement(we, (0, r.A)({}, y, {
+                if (M) return c.createElement(we, (0, r.A)({}, y, {
                     notification: E,
-                    senderProfileData: S
+                    senderProfileData: B
                 }));
                 if (404 === (null == q ? void 0 : q.status)) return null;
-                var P, D = (0, i.CD)(null == S ? void 0 : S.status).color,
-                    T = null == S ? void 0 : S.iconUrl,
+                var P, T = (0, i.CD)(null == B ? void 0 : B.status).color,
+                    D = null == B ? void 0 : B.iconUrl,
                     F = (null === (t = E.details) || void 0 === t ? void 0 : t.inviteMessage) || (null === (n = E.details) || void 0 === n ? void 0 : n.responseMessage) || (null === (p = E.details) || void 0 === p ? void 0 : p.requestMessage);
                 return c.createElement(me.L4, null, c.createElement(me.AE, null, c.createElement(me.WY, {
                     to: "/home/user/".concat(C),
-                    statusColor: D
+                    statusColor: T
                 }, !(null !== (w = E.details) && void 0 !== w && w.imageUrl) && c.createElement(me.Fe, null, "Go To Profile"), c.createElement(me.JZ, {
-                    url: null !== (g = null === (v = E.details) || void 0 === v ? void 0 : v.imageUrl) && void 0 !== g ? g : T
+                    url: null !== (g = null === (v = E.details) || void 0 === v ? void 0 : v.imageUrl) && void 0 !== g ? g : D
                 }), c.createElement(me.C6, {
-                    url: null !== (b = null === (h = E.details) || void 0 === h ? void 0 : h.imageUrl) && void 0 !== b ? b : T
+                    url: null !== (b = null === (h = E.details) || void 0 === h ? void 0 : h.imageUrl) && void 0 !== b ? b : D
                 })), c.createElement(me.NO, null, c.createElement(me.yx, null, c.createElement(u.N_, {
                     to: "/home/user/".concat(C)
-                }, c.createElement("strong", null, S.displayName)), " - ", N || {
+                }, c.createElement("strong", null, B.displayName)), " - ", N || {
                     friendRequest: "would like to be your friend!",
                     invite: "has invited you to ".concat((null === (P = E.details) || void 0 === P ? void 0 : P.worldName) || "Somewhere"),
                     requestInvite: "has requested an invite to your world!",
@@ -4955,7 +4955,7 @@
         21591(e, t, n) {
             "use strict";
             n.d(t, {
-                A: () => M
+                A: () => S
             });
             var r = n(10467),
                 a = n(82544),
@@ -5004,9 +5004,9 @@
                         N = void 0 === k ? [] : k,
                         I = E.isFetching,
                         O = (0, A.mu)(),
-                        B = (0, a.A)(O, 2),
-                        M = B[0],
-                        S = (B[1].isLoading, g || I),
+                        M = (0, a.A)(O, 2),
+                        S = M[0],
+                        B = (M[1].isLoading, g || I),
                         j = function() {
                             var e = (0, r.A)(u().mark(function e() {
                                 var t;
@@ -5015,7 +5015,7 @@
                                         case 0:
                                             return t = N.find(function(e) {
                                                 return e.favoriteId === n
-                                            }), e.prev = 1, e.next = 4, M({
+                                            }), e.prev = 1, e.next = 4, S({
                                                 type: "friend",
                                                 id: t.id,
                                                 groupName: t.tags[0]
@@ -5049,8 +5049,8 @@
                             }
                         }();
                     if (!v) return null;
-                    if (S) return b.createElement("span", {
-                        className: "\n          tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n          tw-text-center tw-cursor-pointer tw-items-center\n        ",
+                    if (B) return b.createElement("span", {
+                        className: "\n          tw:w-full tw:flex tw:flex-row tw:justify-center tw:py-2.5\n          tw:text-center tw:cursor-pointer tw:items-center\n        ",
                         role: "alert",
                         "aria-busy": "true"
                     }, b.createElement(f.M2, {
@@ -5062,19 +5062,19 @@
                             return e.favoriteId === n
                         }),
                         P = function() {
-                            if (!S) return q ? j() : l(!0)
+                            if (!B) return q ? j() : l(!0)
                         };
                     return b.createElement(f.$n, {
-                        className: "\n        tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-3\n        tw-text-center tw-cursor-pointer tw-items-center tw-rounded-none\n      ",
-                        containerClasses: "tw-rounded-none",
+                        className: "\n        tw:w-full tw:flex tw:flex-row tw:justify-center tw:py-3\n        tw:text-center tw:cursor-pointer tw:items-center tw:rounded-none\n      ",
+                        containerClasses: "tw:rounded-none",
                         tabIndex: 0,
                         onClick: P,
-                        disabled: S,
+                        disabled: B,
                         onKeyDown: function(e) {
                             if ("enter" === e.key.toLowerCase()) return P()
                         },
                         "aria-label": "".concat(q ? "Unfavorite" : "Favorite", " User")
-                    }, S && b.createElement(f.M2, {
+                    }, B && b.createElement(f.M2, {
                         icon: y.z1,
                         spin: !0,
                         "aria-label": "loading",
@@ -5096,7 +5096,7 @@
                     name: "13al8yg",
                     styles: "color:var(--profile-icon-color, #FFF)"
                 }),
-                B = function(e) {
+                M = function(e) {
                     var t = e.userId,
                         n = e.className,
                         s = void 0 === n ? "" : n,
@@ -5107,16 +5107,16 @@
                         x = e.slim,
                         C = void 0 !== x && x,
                         k = (0, h.wA)(),
-                        B = (0, b.useState)(!1),
-                        M = (0, a.A)(B, 2),
-                        S = M[0],
-                        j = M[1],
+                        M = (0, b.useState)(!1),
+                        S = (0, a.A)(M, 2),
+                        B = S[0],
+                        j = S[1],
                         q = (0, b.useRef)(null),
                         P = (0, w.qd)(t, {
                             skip: null === t
                         }),
-                        D = P.data,
-                        T = void 0 === D ? {} : D,
+                        T = P.data,
+                        D = void 0 === T ? {} : T,
                         F = P.isError,
                         z = P.error,
                         R = P.isSuccess,
@@ -5328,17 +5328,17 @@
                             }
                         },
                         ae = (0, b.useMemo)(function() {
-                            var e, t = null !== (e = Object.keys(T).find(function(e) {
-                                return T[e]
+                            var e, t = null !== (e = Object.keys(D).find(function(e) {
+                                return D[e]
                             })) && void 0 !== e ? e : "addFriend";
                             return re[t]
-                        }, [T]);
+                        }, [D]);
                     if (R) {
                         var oe = ae.icon,
                             le = ae.text,
                             ie = ae.clickHandler,
                             ce = ae.ariaLabel,
-                            se = T.isFriend;
+                            se = D.isFriend;
                         return C ? b.createElement(f.$n, {
                             className: s,
                             containerClasses: v,
@@ -5349,9 +5349,9 @@
                             icon: oe,
                             width: 20,
                             height: 20,
-                            className: "tw-align-middle"
+                            className: "tw:align-middle"
                         }), "" !== le && b.createElement("span", {
-                            className: "tw-hidden sm:tw-inline-block"
+                            className: "tw:hidden tw:sm:inline-block"
                         }, le)) : b.createElement(b.Fragment, null, !se && b.createElement(f.$n, {
                             className: s,
                             containerClasses: v,
@@ -5362,13 +5362,13 @@
                             icon: oe,
                             width: 20,
                             height: 20,
-                            className: (0, p.cx)("tw-align-middle", O)
+                            className: (0, p.cx)("tw:align-middle", O)
                         }), "" !== le && b.createElement("span", null, le)), se && b.createElement("div", {
-                            className: "tw-relative tw-min-w-[245px] tw-z-10",
+                            className: "tw:relative tw:min-w-[245px] tw:z-10",
                             ref: q
                         }, b.createElement(f.$n, {
                             "aria-haspopup": "menu",
-                            "aria-expanded": S,
+                            "aria-expanded": B,
                             "aria-controls": "friend-action-dropdown",
                             className: s,
                             containerClasses: v,
@@ -5381,14 +5381,14 @@
                             height: 20,
                             className: O
                         }), le, b.createElement(f.M2, {
-                            icon: S ? l.S$ : o.xB,
+                            icon: B ? l.S$ : o.xB,
                             width: 14,
                             height: 18,
-                            className: (0, p.cx)("tw-align-middle")
-                        })), S && b.createElement("div", {
+                            className: (0, p.cx)("tw:align-middle")
+                        })), B && b.createElement("div", {
                             id: "friend-action-dropdown",
                             role: "menu",
-                            className: (0, p.cx)("tw-w-full tw-absolute tw-overflow-hidden tw-text-option-inactive tw-mt-2 tw-border-solid tw-rounded-md tw-font-medium tw-text-base tw-z-10 tw-cursor-pointer", I)
+                            className: (0, p.cx)("tw:w-full tw:absolute tw:overflow-hidden tw:text-option-inactive tw:mt-2 tw:border-solid tw:rounded-md tw:font-medium tw:text-base tw:z-10 tw:cursor-pointer", I)
                         }, b.createElement(N, {
                             userId: t,
                             selectedCallback: function() {
@@ -5399,8 +5399,8 @@
                             onClick: ne,
                             role: "menuitem",
                             "aria-label": "Unfriend",
-                            containerClasses: "tw-rounded-none",
-                            className: " tw-py-3 tw-px-3 tw-flex tw-flex-row tw-w-full tw-justify-center tw-items-center tw-rounded-none"
+                            containerClasses: "tw:rounded-none",
+                            className: " tw:py-3 tw:px-3 tw:flex tw:flex-row tw:w-full tw:justify-center tw:items-center tw:rounded-none"
                         }, b.createElement(f.M2, {
                             icon: m.vrcRemoveFriend,
                             width: 16,
@@ -5409,13 +5409,13 @@
                     }
                     return null
                 };
-            B.propTypes = {
+            M.propTypes = {
                 userId: v().string.isRequired,
                 className: v().string,
                 containerClasses: v().string,
                 slim: v().bool
             };
-            const M = B
+            const S = M
         },
         55943(e, t, n) {
             "use strict";
@@ -5544,17 +5544,17 @@
                     N = e.hideShare,
                     I = void 0 !== N && N,
                     O = (0, y.wA)(),
-                    B = (0, E.useRef)(null),
-                    M = (0, E.useState)({
+                    M = (0, E.useRef)(null),
+                    S = (0, E.useState)({
                         left: !1
                     }),
-                    S = (0, a.A)(M, 2),
-                    j = S[0],
-                    q = S[1],
+                    B = (0, a.A)(S, 2),
+                    j = B[0],
+                    q = B[1],
                     P = (0, E.useState)(!1),
-                    D = (0, a.A)(P, 2),
-                    T = D[0],
-                    F = D[1],
+                    T = (0, a.A)(P, 2),
+                    D = T[0],
+                    F = T[1],
                     z = (0, b.g_)(),
                     R = (0, a.A)(z, 2),
                     U = R[0],
@@ -5565,14 +5565,14 @@
                     H = _[1].isLoading,
                     W = L || H,
                     X = function(e) {
-                        B.current && !B.current.contains(e.target) && F(!1)
+                        M.current && !M.current.contains(e.target) && F(!1)
                     };
                 (0, E.useEffect)(function() {
-                    return T ? document.addEventListener("mousedown", X) : document.removeEventListener("mousedown", X),
+                    return D ? document.addEventListener("mousedown", X) : document.removeEventListener("mousedown", X),
                         function() {
                             document.removeEventListener("mousedown", X)
                         }
-                }, [T]);
+                }, [D]);
                 var Y = function() {
                         var e = (0, r.A)(p().mark(function e() {
                             var n;
@@ -5673,40 +5673,40 @@
                         }
                     }();
                 return E.createElement("div", {
-                    className: "tw-relative",
-                    ref: B
+                    className: "tw:relative",
+                    ref: M
                 }, E.createElement(g.$n, {
-                    className: (0, v.cx)(C, "tw-px-3 tw-py-2"),
+                    className: (0, v.cx)(C, "tw:px-3 tw:py-2"),
                     "aria-label": "Show More Options",
                     containerClasses: k,
                     onClick: function() {
                         return function() {
-                            if (!T && B.current) {
-                                var e = B.current.getBoundingClientRect(),
+                            if (!D && M.current) {
+                                var e = M.current.getBoundingClientRect(),
                                     t = window.innerWidth - e.right;
                                 q({
                                     left: t < 170
                                 })
                             }
-                            F(!T)
+                            F(!D)
                         }()
                     }
                 }, E.createElement(g.M2, {
                     icon: d.vH,
                     className: (0, v.cx)(x("#FFFFFF"))
-                })), T && E.createElement("div", {
-                    className: (0, v.cx)(j.left ? "tw-right-0" : "tw-left-0", "tw-absolute tw-text-option-inactive tw-overflow-hidden tw-mt-2 tw-border-solid tw-rounded-md tw-font-medium tw-text-base tw-w-[170px] tw-cursor-pointer tw-z-50 sm:tw-max-w-[170px]", A)
+                })), D && E.createElement("div", {
+                    className: (0, v.cx)(j.left ? "tw:right-0" : "tw:left-0", "tw:absolute tw:text-option-inactive tw:overflow-hidden tw:mt-2 tw:border-solid tw:rounded-md tw:font-medium tw:text-base tw:w-[170px] tw:cursor-pointer tw:z-50 tw:sm:max-w-[170px]", A)
                 }, !I && E.createElement(g.$n, {
                     onClick: Y,
-                    className: " tw-py-2 tw-px-3 tw-rounded-none",
-                    containerClasses: "tw-rounded-none",
+                    className: " tw:py-2 tw:px-3 tw:rounded-none",
+                    containerClasses: "tw:rounded-none",
                     "aria-label": "Share User Profile"
                 }, E.createElement(g.M2, {
                     icon: u.Ex,
                     className: (0, v.cx)(x("#FFFFFF"))
                 }), " Share"), null !== n && E.createElement(g.$n, {
-                    className: "\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center tw-rounded-none\n            ".concat(W ? "tw-hidden" : "tw-block", "\n        "),
-                    containerClasses: "tw-rounded-none",
+                    className: "\n            tw:w-full tw:flex tw:flex-row tw:justify-center tw:py-2 tw:px-3\n            tw:text-center tw:cursor-pointer tw:items-center tw:rounded-none\n            ".concat(W ? "tw:hidden" : "tw:block", "\n        "),
+                    containerClasses: "tw:rounded-none",
                     tabIndex: 0,
                     onClick: function() {
                         return $({
@@ -5723,8 +5723,8 @@
                     icon: n ? s.A5 : c.$z,
                     className: (0, v.cx)(x("#FFFFFF"))
                 }), " ", n ? "Unmute" : "Mute"), null !== f && E.createElement(g.$n, {
-                    className: "\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2 tw-px-3\n            tw-text-center tw-cursor-pointer tw-items-center tw-rounded-none\n            ".concat(W ? "tw-hidden" : "tw-block", "\n        "),
-                    containerClasses: "tw-rounded-none",
+                    className: "\n            tw:w-full tw:flex tw:flex-row tw:justify-center tw:py-2 tw:px-3\n            tw:text-center tw:cursor-pointer tw:items-center tw:rounded-none\n            ".concat(W ? "tw:hidden" : "tw:block", "\n        "),
+                    containerClasses: "tw:rounded-none",
                     tabIndex: 0,
                     onClick: function() {
                         return $({
@@ -5741,11 +5741,11 @@
                     icon: f ? i.X4 : l.c7,
                     className: (0, v.cx)(x("#FFFFFF"))
                 }), " ", f ? "Unblock" : "Block"), E.createElement("div", {
-                    className: "\n            tw-w-full tw-flex tw-flex-row tw-justify-center tw-py-2.5\n            tw-text-center tw-items-center\n            tw-h-20\n            ".concat(W ? "tw-block" : "tw-hidden", "\n        ")
+                    className: "\n            tw:w-full tw:flex tw:flex-row tw:justify-center tw:py-2.5\n            tw:text-center tw:items-center\n            tw:h-20\n            ".concat(W ? "tw:block" : "tw:hidden", "\n        ")
                 }, E.createElement(g.M2, {
                     icon: o.z1,
                     spin: !0,
-                    className: "tw-h-10"
+                    className: "tw:h-10"
                 }))))
             }
         },
@@ -5781,7 +5781,7 @@
                         A = e.isAnimating,
                         x = void 0 === A || A,
                         C = e.borderClass,
-                        k = void 0 === C ? "tw-border-grey" : C,
+                        k = void 0 === C ? "tw:border-grey" : C,
                         N = {
                             fill: "128",
                             nameplate: "128",
@@ -5797,49 +5797,49 @@
                             })
                         }, [n, h, d]),
                         O = f || {},
-                        B = O.introAnimation,
-                        M = O.mainAnimation,
-                        S = O.baseImage,
+                        M = O.introAnimation,
+                        S = O.mainAnimation,
+                        B = O.baseImage,
                         j = O.imageUrl,
                         q = (0, l.B)(),
-                        P = d ? null : w || (f ? !q && x || null == S || !S.url ? null != M && M.url ? M.url : null != B && B.url ? B.url : null != S && S.url ? S.url : j : S.url : null),
-                        D = (0, l.F)({
+                        P = d ? null : w || (f ? !q && x || null == B || !B.url ? null != S && S.url ? S.url : null != M && M.url ? M.url : null != B && B.url ? B.url : j : B.url : null),
+                        T = (0, l.F)({
                             src: P,
                             resetKey: v
                         });
                     return u.createElement("div", {
                         className: "".concat({
-                            fill: "tw-w-full tw-h-full",
-                            nameplate: "tw-w-12 tw-h-12",
-                            small: "tw-w-[60px] tw-aspect-square",
-                            default: "tw-w-[80px] sm:tw-w-[100px] md:tw-w-[150px] lg:tw-w-[130px] 2xl:tw-w-[160px] tw-aspect-square",
-                            large: "tw-w-[200px] tw-aspect-square",
-                            preview: "tw-w-48 tw-h-48"
-                        } [h], " tw-relative")
+                            fill: "tw:w-full tw:h-full",
+                            nameplate: "tw:w-12 tw:h-12",
+                            small: "tw:w-[60px] tw:aspect-square",
+                            default: "tw:w-[80px] tw:sm:w-[100px] tw:md:w-[150px] tw:lg:w-[130px] tw:2xl:w-[160px] tw:aspect-square",
+                            large: "tw:w-[200px] tw:aspect-square",
+                            preview: "tw:w-48 tw:h-48"
+                        } [h], " tw:relative")
                     }, u.createElement("div", {
-                        className: "\n          tw-w-full tw-h-full tw-rounded-full tw-bg-darker-grey tw-overflow-hidden\n          ".concat(k, "\n          ").concat(y ? "tw-border-0" : {
-                            fill: "tw-border-4",
-                            nameplate: "tw-border-2",
-                            small: "tw-border-4",
-                            default: "tw-border-[6px]",
-                            large: "tw-border-8",
-                            preview: "tw-border-8"
-                        } [h], "\n          ").concat(P ? "tw-border-none" : "tw-border-solid", "\n        ")
+                        className: "\n          tw:w-full tw:h-full tw:rounded-full tw:bg-darker-grey tw:overflow-hidden\n          ".concat(k, "\n          ").concat(y ? "tw:border-0" : {
+                            fill: "tw:border-4",
+                            nameplate: "tw:border-2",
+                            small: "tw:border-4",
+                            default: "tw:border-[6px]",
+                            large: "tw:border-8",
+                            preview: "tw:border-8"
+                        } [h], "\n          ").concat(P ? "tw:border-none" : "tw:border-solid", "\n        ")
                     }, d && u.createElement(o.A, {
-                        className: "tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-text-2xl"
+                        className: "tw:w-full tw:h-full tw:flex tw:items-center tw:justify-center tw:text-2xl"
                     }), !d && n && u.createElement("img", {
                         src: I,
                         alt: "".concat(c, "'s profile icon"),
-                        className: "tw-object-cover tw-h-full tw-w-full tw-bg-darker-grey"
+                        className: "tw:object-cover tw:h-full tw:w-full tw:bg-darker-grey"
                     }), !d && !n && u.createElement("div", {
-                        className: "tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-bg-darker-grey tw-text-light-grey"
+                        className: "tw:w-full tw:h-full tw:flex tw:items-center tw:justify-center tw:bg-darker-grey tw:text-light-grey"
                     }, u.createElement(a.M2, {
                         icon: r.X4
                     }))), P && u.createElement("img", {
-                        ref: D,
+                        ref: T,
                         src: P,
                         alt: "Icon frame",
-                        className: "tw-absolute tw-inset-0 tw-w-full tw-object-contain tw-pointer-events-none tw-scale-[1.3]"
+                        className: "tw:absolute tw:inset-0 tw:w-full tw:object-contain tw:pointer-events-none tw:scale-[1.3]"
                     }))
                 };
             d.propTypes = {
@@ -6442,11 +6442,11 @@
                 a = n.n(r),
                 o = n(76314),
                 l = n.n(o)()(a());
-            l.push([e.id, ":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: #fff;\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n}\n\n.fc .fc-toolbar .fc-button {\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: #333;\n  background-color: var(--fc-button-bg-color);\n  border-color: #333;\n  border-color: var(--fc-button-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: #064B5C;\n  background-color: var(--fc-button-active-bg-color);\n  border-color: #064B5C;\n  border-color: var(--fc-button-active-border-color);\n  color: #fff;\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  -webkit-text-decoration: none;\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}", "", {
+            l.push([e.id, ":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: var(--fc-button-bg-color);\n  border-color: var(--fc-button-border-color);\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: var(--fc-button-active-bg-color);\n  border-color: var(--fc-button-active-border-color);\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}", "", {
                 version: 3,
                 sources: ["webpack://./src/components/Calendar/calendarStyles.css"],
                 names: [],
-                mappings: "AAAA;EACE,2BAA2B;EAC3B,2BAA2B;EAC3B,6CAA6C;EAC7C,gCAAgC;EAChC,0BAA0B;;EAE1B,4BAA4B;EAC5B,0BAA0B;EAC1B,8BAA8B;EAC9B,gCAAgC;EAChC,uCAAuC;EACvC,oCAAoC;EACpC,wCAAwC;;EAExC,4BAA4B;EAC5B,gCAAgC;EAChC,2BAA2B;EAC3B,sDAAsD;;EAEtD,gCAAgC;EAChC,kCAAkC;;EAElC,iCAAiC;EACjC,uCAAuC;EACvC,wCAAwC;;EAExC,iDAAiD;EACjD,uCAAuC;EACvC,0BAA0B;EAC1B,8CAA8C;EAC9C,kCAAkC;EAClC,6BAA6B;;EAE7B,aAAa;EACb,iCAAiC;;EAEjC,gBAAgB;EAChB,+BAA+B;EAC/B,uCAAuC;AACzC;;AAEA;EACE,WAAkC;EAAlC,kCAAkC;AACpC;;AAEA;EACE,WAAiC;EAAjC,iCAAiC;AACnC;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,6BAA6B;AAG/B;;AAJA;EAEE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;EAChB,wBAAwB;AAC1B;;AAEA;;EAEE,WAAW;EACX,iBAAiB;EACjB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,UAAU;EACV,gBAAgB;EAChB,qBAAqB;EACrB,kBAAkB;AACpB;AACA;EACE,kBAAkB;AACpB;;;AAGA;;;EAGE,eAAe;EACf,WAAW;EACX,cAAc;EACd,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;AACZ;;AAEA;;;EAGE,kBAAkB;AACpB;;AAEA;EACE,sBAA2C;EAA3C,2CAA2C;EAC3C,kBAA2C;EAA3C,2CAA2C;EAC3C,WAAkC;EAAlC,kCAAkC;EAClC,kBAAkB;EAClB,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,yBAAkD;EAAlD,kDAAkD;EAClD,qBAAkD;EAAlD,kDAAkD;EAClD,WAAkC;EAAlC,kCAAkC;AACpC;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;;AAGA;CACC,gBAAgB;AACjB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,yCAAyC;EACzC,sCAAsC;EACtC,mBAAmB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,eAAe;AACjB;AACA;EACE,6BAAqB;EAArB,qBAAqB;AACvB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,cAAc;AAChB;;AAEA;EACE,6BAA6B;AAC/B;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,mBAAmB;EACnB,mBAAmB;EACnB,cAAc;AAChB;;;AAGA;EACE,iBAAiB;AACnB;;AAEA;;EAEE,WAAW;EACX,2BAA2B;AAC7B;;AAEA;;EAEE;AACF;;AAEA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB;;;;AAIA;;EAEE;;;IAGE,iBAAiB;IACjB,kBAAkB;IAClB,eAAe;IACf,cAAc;IACd,mBAAmB;EACrB;;EAEA;IACE,aAAa;EACf;;EAEA;;IAEE,eAAe;IACf,YAAY;IACZ,WAAW;IACX,iBAAiB;IACjB,gBAAgB;EAClB;;EAEA;IACE,kBAAkB;IAClB,iBAAiB;IACjB,mBAAmB;EACrB;;EAEA;IACE,iBAAiB;IACjB,qBAAqB;IACrB,kBAAkB;IAClB,sBAAsB;EACxB;AACF",
+                mappings: "AAAA;EACE,2BAA2B;EAC3B,2BAA2B;EAC3B,6CAA6C;EAC7C,gCAAgC;EAChC,0BAA0B;;EAE1B,4BAA4B;EAC5B,0BAA0B;EAC1B,8BAA8B;EAC9B,gCAAgC;EAChC,uCAAuC;EACvC,oCAAoC;EACpC,wCAAwC;;EAExC,4BAA4B;EAC5B,gCAAgC;EAChC,2BAA2B;EAC3B,sDAAsD;;EAEtD,gCAAgC;EAChC,kCAAkC;;EAElC,iCAAiC;EACjC,uCAAuC;EACvC,wCAAwC;;EAExC,iDAAiD;EACjD,uCAAuC;EACvC,0BAA0B;EAC1B,8CAA8C;EAC9C,kCAAkC;EAClC,6BAA6B;;EAE7B,aAAa;EACb,iCAAiC;;EAEjC,gBAAgB;EAChB,+BAA+B;EAC/B,uCAAuC;AACzC;;AAEA;EACE,kCAAkC;AACpC;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,6BAA6B;EAC7B,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;EAChB,wBAAwB;AAC1B;;AAEA;;EAEE,WAAW;EACX,iBAAiB;EACjB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,UAAU;EACV,gBAAgB;EAChB,qBAAqB;EACrB,kBAAkB;AACpB;AACA;EACE,kBAAkB;AACpB;;;AAGA;;;EAGE,eAAe;EACf,WAAW;EACX,cAAc;EACd,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;AACZ;;AAEA;;;EAGE,kBAAkB;AACpB;;AAEA;EACE,2CAA2C;EAC3C,2CAA2C;EAC3C,kCAAkC;EAClC,kBAAkB;EAClB,mBAAmB;EACnB,kBAAkB;EAClB,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,kDAAkD;EAClD,kDAAkD;EAClD,kCAAkC;AACpC;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;;AAGA;CACC,gBAAgB;AACjB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,yCAAyC;EACzC,sCAAsC;EACtC,mBAAmB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,eAAe;AACjB;AACA;EACE,qBAAqB;AACvB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,cAAc;AAChB;;AAEA;EACE,6BAA6B;AAC/B;;AAEA;EACE,gBAAgB;EAChB,cAAc;EACd,kBAAkB;EAClB,mBAAmB;EACnB,mBAAmB;EACnB,cAAc;AAChB;;;AAGA;EACE,iBAAiB;AACnB;;AAEA;;EAEE,WAAW;EACX,2BAA2B;AAC7B;;AAEA;;EAEE;AACF;;AAEA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB;;;;AAIA;;EAEE;;;IAGE,iBAAiB;IACjB,kBAAkB;IAClB,eAAe;IACf,cAAc;IACd,mBAAmB;EACrB;;EAEA;IACE,aAAa;EACf;;EAEA;;IAEE,eAAe;IACf,YAAY;IACZ,WAAW;IACX,iBAAiB;IACjB,gBAAgB;EAClB;;EAEA;IACE,kBAAkB;IAClB,iBAAiB;IACjB,mBAAmB;EACrB;;EAEA;IACE,iBAAiB;IACjB,qBAAqB;IACrB,kBAAkB;IAClB,sBAAsB;EACxB;AACF",
                 sourcesContent: [":root {\n  --fc-small-font-size: .85em;\n  --fc-page-bg-color: #6AE3F9;\n  --fc-neutral-bg-color: rgba(208, 208, 208, 0);\n  --fc-neutral-text-color: #808080;\n  --fc-border-color: #2D363F;\n\n  --fc-button-text-color: #fff;\n  --fc-button-bg-color: #333;\n  --fc-button-border-color: #333;\n  --fc-button-hover-bg-color: #333;\n  --fc-button-hover-border-color: #086c84;\n  --fc-button-active-bg-color: #064B5C;\n  --fc-button-active-border-color: #064B5C;\n\n  --fc-event-bg-color: #064B5C;\n  --fc-event-border-color: #064B5C;\n  --fc-event-text-color: #fff;\n  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);\n\n  --fc-more-link-bg-color: #d0d0d0;\n  --fc-more-link-text-color: inherit;\n\n  --fc-event-resizer-thickness: 8px;\n  --fc-event-resizer-dot-total-width: 8px;\n  --fc-event-resizer-dot-border-width: 1px;\n\n  --fc-non-business-color: rgba(215, 215, 215, 0.3);\n  --fc-bg-event-color: rgb(143, 223, 130);\n  --fc-bg-event-opacity: 0.3;\n  --fc-highlight-color: rgba(188, 232, 241, 0.3);\n  --fc-today-bg-color: rgba(0,0,0,0);\n  --fc-now-indicator-color: red;\n\n  /* Day Grid */\n  --fc-daygrid-event-dot-width: 8px;\n\n  /* List Events */\n  --fc-list-event-dot-width: 10px;\n  --fc-list-event-hover-bg-color: #f5f5f5;\n}\n\n.fc th a, .fc td a {\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-daygrid-more-link {\n  color: var(--fc-event-text-color);\n}\n\n.fc-header-toolbar .fc-button{\n  text-transform: capitalize;\n}\n\n.fc .fc-daygrid-day-top {\n  flex-direction: row;\n  font-size: 1.6em;\n}\n\n.fc .fc-toolbar-title {\n  font-weight: normal;\n}\n\n.fc .fc-event {\n  cursor: pointer;\n}\n\n.fc .fc-toolbar .fc-button {\n  border-radius: 4px !important;\n  padding: 5px 10px;\n  margin: 0 4px;\n}\n\n.fc .fc-toolbar .fc-button .fc-icon {\n  font-size: 1.2em;\n  vertical-align: text-top;\n}\n\n.fc .fc-toolbar .fc-button.fc-prev-button,\n.fc .fc-toolbar .fc-button.fc-next-button {\n  width: 40px;\n  padding: 4px 10px;\n  min-width: auto;\n  height: 42px;\n}\n\n.fc .fc-toolbar .fc-button.fc-today-button {\n  padding: 0;\n  line-height: 0em;\n  display: inline-block;\n  visibility: hidden;\n}\n.fc .fc-toolbar .fc-button.fc-today-button:after {\n  line-height: 1.4em;\n}\n\n\n.fc .fc-toolbar .fc-dayGridMonth-button,\n.fc .fc-toolbar .fc-timeGridWeek-button,\n.fc .fc-toolbar .fc-timeGridDay-button {\n  min-width: auto;\n  width: 40px;\n  display: block;\n  visibility: hidden;\n  line-height: 0em;\n  padding: 0;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after,\n.fc .fc-toolbar .fc-timeGridWeek-button:after,\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  line-height: 1.4em;\n}\n\n.fc .fc-button-primary:after {\n  background-color: var(--fc-button-bg-color);\n  border-color: var(--fc-button-border-color);\n  color: var(--fc-button-text-color);\n  border-radius: 4px;\n  visibility: visible;\n  padding: 10px 10px;\n  display: block;\n  min-width: 40px;\n}\n\n.fc .fc-button-primary:not(:disabled).fc-button-active:after {\n  background-color: var(--fc-button-active-bg-color);\n  border-color: var(--fc-button-active-border-color);\n  color: var(--fc-button-text-color);\n}\n\n.fc .fc-toolbar {\n  align-items: flex-end;\n}\n\n.fc .fc-toolbar .fc-dayGridMonth-button:after {\n  content: 'M';\n}\n\n.fc .fc-toolbar .fc-timeGridWeek-button:after {\n  content: 'W';  \n}\n\n.fc .fc-toolbar .fc-timeGridDay-button:after {\n  content: 'D';\n}\n\n.fc .fc-toolbar .fc-today-button:after {\n  content: 'T';\n}\n\n\n.fc .fc-daygrid-block-event .fc-event-time{\n margin-left: 2px;\n}\n\n.fc .fc-daygrid-day-frame {\n  height: 125px;\n}\n\n.fc .fc-daygrid-day-number {\n  display: grid;\n  grid-template-columns: minmax(30px, auto);\n  grid-template-rows: minmax(30px, auto);;\n  aspect-ratio: 1 / 1;\n  align-items: center;\n  text-align: center;\n  margin: 12px;\n  font-weight: 300;\n  cursor: default;\n}\n.fc .fc-daygrid-day-number:hover {\n  text-decoration: none;\n}\n\n.fc .fc-button-primary:focus {\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-day-today .fc-daygrid-day-number {\n  background-color: #1FD1ED;\n  border-radius: 100px;\n  color: #1A2026;\n}\n\n.fc .fc-theme-standard th {\n  border-style: none !important;\n}\n\n.fc .fc-day .fc-col-header-cell-cushion{\n  text-align: left;\n  display: block;\n  padding-left: 12px; \n  margin-bottom: 12px;\n  font-weight: normal;\n  color: #9C9C9C;\n}\n\n\n.fc .fc-daygrid-event {\n  padding-left: 4px;\n}\n\n.fc .fc-event.fc-timegrid-event.fc-v-event,\n.fc .fc-event.fc-timegrid-event .fc-event-main {\n  border: 0px;\n  box-shadow: 0px 0px 0px 0px;\n}\n\n.fc .fc-timegrid-axis-cushion,\n.fc .fc-timegrid-slot-label-cushion{\n  color: #9C9C9C\n}\n\n.fc .fc-toolbar-chunk .fc-toolbar-title {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 1.2em;\n  display: block;\n  margin-bottom: 20px;\n}\n\n\n\n@media screen and (min-width: 768px) {\n\n  .fc .fc-toolbar .fc-dayGridMonth-button,\n  .fc .fc-toolbar .fc-timeGridWeek-button,\n  .fc .fc-toolbar .fc-timeGridDay-button {\n    padding: 4px 10px;\n    line-height: 1.4em;\n    min-width: 90px;\n    display: block;\n    visibility: visible;\n  }\n\n  .fc .fc-button-primary:after {\n    display: none;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-prev-button,\n  .fc .fc-toolbar .fc-button.fc-next-button {\n    margin-top: 0px;\n    height: auto;\n    width: auto;\n    padding: 4px 10px;\n    padding-top: 5px;\n  }\n\n  .fc .fc-toolbar .fc-button.fc-today-button {\n    line-height: 1.4em;\n    padding: 5px 10px;\n    visibility: visible;\n  }\n\n  .fc .fc-toolbar-chunk .fc-toolbar-title {\n    font-size: 1.75em;\n    display: inline-block;\n    margin-bottom: 0px;\n    vertical-align: middle;\n  }\n}"],
                 sourceRoot: ""
             }]);
@@ -6614,4 +6614,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cf9a37bc812586b274ec8868838cde054393019806b8ec6a2727dd9bf9c0d278.js.map
+//# sourceMappingURL=e67a5ed2a976dc06ada1b7cc8ce27e8227b4a51b8137c4b4e165896b090bf934.js.map

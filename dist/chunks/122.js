@@ -202,30 +202,30 @@
                             null !== n && "Backspace" === t.key && 0 === t.target.value.length && (n.current.value = "", n.current.focus())
                         };
                     return p.createElement(g.A, null, p.createElement(v.Qc, null, r ? "Email One-Time Code" : "Two-Factor Authentication"), p.createElement("div", {
-                        className: "tw-bg-dark-grey-transparent-90 tw-w-full sm:tw-w-[700px] tw-p-12 tw-rounded-lg tw-h-fit xl:tw-mt-[200px]"
+                        className: "tw:bg-dark-grey-transparent-90 tw:w-full tw:sm:w-[700px] tw:p-12 tw:rounded-lg tw:h-fit tw:xl:mt-[200px]"
                     }, p.createElement(x.lV, {
                         onSubmit: Z
                     }, p.createElement("div", {
-                        className: "tw-w-full tw-flex tw-flex-col tw-justify-center tw-items-center"
+                        className: "tw:w-full tw:flex tw:flex-col tw:justify-center tw:items-center"
                     }, p.createElement("div", {
-                        className: "tw-mb-5"
+                        className: "tw:mb-5"
                     }, p.createElement(v.M2, {
                         icon: r ? l.v_ : o.faShieldHalved,
-                        className: "tw-w-[72px] tw-h-[72px]"
+                        className: "tw:w-[72px] tw:h-[72px]"
                     })), p.createElement("h4", {
-                        className: "tw-text-h2 tw-text-white tw-text-center tw-mb-6"
+                        className: "tw:text-h2 tw:text-white tw:text-center tw:mb-6"
                     }, r ? "Email One-Time Code" : "Two-Factor Authentication"), p.createElement("p", {
-                        className: "tw-text-center"
+                        className: "tw:text-center"
                     }, r ? p.createElement(p.Fragment, null, "Enter the numeric code we sent to your email.") : p.createElement(p.Fragment, null, "Enter a numeric code from your authenticator app.", " ", p.createElement("a", {
                         href: E.lx,
                         "aria-label": "Two Factor Auth Help",
                         target: "_blank",
                         rel: "noreferrer",
-                        className: "tw-text-link-highlight"
+                        className: "tw:text-link-highlight"
                     }, "Learn More"), ".")), p.createElement("div", {
-                        className: "tw-flex tw-justify-center tw-flex-col"
+                        className: "tw:flex tw:justify-center tw:flex-col"
                     }, p.createElement("div", {
-                        className: "tw-flex tw-items-center"
+                        className: "tw:flex tw:items-center"
                     }, p.createElement(h.A, {
                         type: "text",
                         name: "code",
@@ -237,7 +237,7 @@
                                 nextRef: $
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        className: "tw:w-12 tw:h-[60px] tw:mr-3",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -259,7 +259,7 @@
                                 previousRef: W
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        className: "tw:w-12 tw:h-[60px] tw:mr-3",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -282,7 +282,7 @@
                                 previousRef: $
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        className: "tw:w-12 tw:h-[60px] tw:mr-3",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -305,7 +305,7 @@
                                 previousRef: q
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        className: "tw:w-12 tw:h-[60px] tw:mr-3",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -328,7 +328,7 @@
                                 previousRef: B
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px] tw-mr-3",
+                        className: "tw:w-12 tw:h-[60px] tw:mr-3",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -350,7 +350,7 @@
                                 previousRef: J
                             })
                         },
-                        className: "tw-w-12 tw-h-[60px]",
+                        className: "tw:w-12 tw:h-[60px]",
                         isError: X,
                         inputMode: "numeric",
                         autocomplete: "off",
@@ -358,16 +358,16 @@
                         ref: Y
                     })), X && p.createElement("p", {
                         role: "alert",
-                        className: "tw-text-error-message-red tw-text-xs tw-whitespace-pre"
+                        className: "tw:text-error-message-red tw:text-xs tw:whitespace-pre"
                     }, 429 === (null == I ? void 0 : I.status) ? "Login unavailable due to too many failed attempts. Please try again later." : "Oops, that code didn't work.")), p.createElement(v.$n, {
-                        className: "tw-w-60 tw-mt-6 tw-mb-4",
+                        className: "tw:w-60 tw:mt-6 tw:mb-4",
                         disabled: !G,
                         loading: L || S || !H,
                         type: "submit"
                     }, "Next"), r ? p.createElement(v.$T, {
                         type: "info",
                         title: "What's this?",
-                        className: "tw--mb-4",
+                        className: "tw:-mb-4",
                         style: {
                             maxWidth: 480
                         }
@@ -377,13 +377,13 @@
                             scope: null == b ? void 0 : b.scope,
                             discordAccessToken: null == b ? void 0 : b.discordAccessToken
                         },
-                        className: "nav-link tw-text-link-highlight"
+                        className: "nav-link tw:text-link-highlight"
                     }, "Use a recovery code instead"), p.createElement(i.z9, {
                         to: "/home/login",
                         state: {
                             logout: !0
                         },
-                        className: "tw-mt-12"
+                        className: "tw:mt-12"
                     }, "Log out")))))
                 };
             const y = b;
@@ -393,4 +393,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93e973e70ed0da53e604374bec72a2f07b5d97bf3c70af231643bc6ab61bebc1.js.map
+//# sourceMappingURL=b7009c4115c9bbf112e3eef739cc277e07f4180b5f73e697a111581d29dac412.js.map

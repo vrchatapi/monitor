@@ -129,7 +129,7 @@
                     },
                     ref: t
                 }, !s && a.createElement(A.N_, {
-                    className: "tw-absolute",
+                    className: "tw:absolute",
                     style: {
                         width: "100%",
                         height: "100%"
@@ -148,9 +148,9 @@
                 }, a.createElement(y.M2, {
                     icon: k.yL
                 })), a.createElement(L, {
-                    className: "tw-backdrop-blur tw-backdrop-saturate-200"
+                    className: "tw:backdrop-blur-xs tw:backdrop-saturate-200"
                 }, !s && a.createElement(A.N_, {
-                    className: "tw-absolute",
+                    className: "tw:absolute",
                     style: {
                         left: 0,
                         top: 0,
@@ -159,14 +159,14 @@
                     },
                     to: "/home/world/".concat(o.id)
                 }), a.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-between"
+                    className: "tw:flex tw:flex-row tw:justify-between"
                 }, a.createElement(D, null, o.name), a.createElement("div", {
-                    className: "tw-flex tw-text-center tw-items-center tw-justify-center"
+                    className: "tw:flex tw:text-center tw:items-center tw:justify-center"
                 }, a.createElement(y.M2, {
                     icon: E.X4,
-                    className: "tw-mr-1"
+                    className: "tw:mr-1"
                 }), o.occupants)), a.createElement("div", null, "by:", " ", a.createElement(A.N_, {
-                    className: "tw-relative",
+                    className: "tw:relative",
                     style: {
                         zIndex: 10
                     },
@@ -178,24 +178,24 @@
                         u(!1)
                     }
                 }, o.authorName)), a.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-justify-around tw-items-center tw-mt-2"
+                    className: "tw:flex tw:flex-row tw:justify-around tw:items-center tw:mt-2"
                 }, a.createElement("div", {
-                    className: "tw-flex tw-flex-row tw-gap-1"
+                    className: "tw:flex tw:flex-row tw:gap-1"
                 }, a.createElement(N.A, {
                     packages: o.unityPackages,
                     formattedType: "World"
                 })), a.createElement("div", {
-                    className: "tw-flex tw-flex-row"
+                    className: "tw:flex tw:flex-row"
                 }, a.createElement(y.M2, {
                     icon: x.yy,
-                    className: "tw-mr-1",
+                    className: "tw:mr-1",
                     style: {
                         fontSize: 24
                     }
                 }), a.createElement("div", {
-                    className: "tw-flex tw-flex-col"
+                    className: "tw:flex tw:flex-col"
                 }, a.createElement("h4", {
-                    className: "tw-m-0"
+                    className: "tw:m-0"
                 }, (n = o.favorites, (r = P.slice().reverse().find(function(e) {
                     return n >= e.value
                 })) ? (n / r.value).toFixed(1).replace(/\.0+$|(\.[0-9]*[1-9])0+$/, "$1") + r.symbol : "0")), a.createElement("div", null, "Favorites")))))) : a.createElement(I, {
@@ -634,4 +634,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d860eb92d6e94e317d94a0fab9fa1feb05d11fd8937cf5b5aef3baf3dbf44e7.js.map
+//# sourceMappingURL=96c199b0d5ea42c0e95e4b87803208fce64325382ea4f075f66f0695ada9045a.js.map
