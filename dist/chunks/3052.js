@@ -573,7 +573,7 @@
                     }
                 }, E.createElement(f.fI, {
                     "aria-checked": n,
-                    className: "align-items-center"
+                    className: "tw:items-center tw:me-2"
                 }, E.createElement(Q, {
                     isSelected: n,
                     "aria-checked": n
@@ -582,15 +582,15 @@
                     color: "var(--bs-primary)",
                     size: "sm"
                 })), E.createElement("div", {
-                    className: "ms-2"
+                    className: "tw:ms-2"
                 }, "Add to Selection")), E.createElement(f.fI, {
-                    className: "align-items-center"
+                    className: "tw:items-center"
                 }, E.createElement(f.$n, {
                     title: "Unfavorite",
                     onClick: function(e) {
                         Y(e), V(!0)
                     },
-                    className: "px-2 me-1",
+                    className: "tw:px-2 tw:me-1",
                     id: "Tooltip-Unfavorite-".concat(l),
                     danger: !0
                 }, E.createElement(f.M2, {
@@ -604,7 +604,7 @@
                     onClick: function(e) {
                         Y(e), T(!0), O(i)
                     },
-                    className: "px-2 ms-1",
+                    className: "tw:px-2 tw:ms-1",
                     id: "Tooltip-Move-".concat(l)
                 }, E.createElement(f.M2, {
                     icon: m.Sy,
@@ -634,8 +634,8 @@
             var H = (0, l.A)(f.$n, {
                     target: "e10vjnwi4"
                 })({
-                    name: "1je7iao",
-                    styles: "flex-direction:row;background-color:transparent;border:none;display:flex;flex-grow:1;align-items:center;justify-content:space-between;padding:0 0.5rem;input{margin-top:0!important;}"
+                    name: "55f6ca",
+                    styles: "flex-direction:row;background-color:transparent;border:none;display:flex;flex-grow:1;align-items:center;justify-content:space-between;padding:0.5rem 0.5rem;input{margin-top:0!important;}"
                 }),
                 J = (0, l.A)(f.fI, {
                     target: "e10vjnwi3"
@@ -1599,7 +1599,7 @@
                 return E.createElement(f.fv, {
                     className: "pb-5"
                 }, E.createElement(f.Qc, null, Nt), E.createElement(f.fI, null, E.createElement(Pe, null, Nt)), E.createElement("fieldset", {
-                    className: "tw:w-full tw:flex tw:flex-col tw:sm:flex-row",
+                    className: "tw:w-full tw:flex tw:flex-col tw:sm:flex-row tw:z-21",
                     "aria-label": "Search Bar"
                 }, E.createElement(Ge, {
                     type: "text",
@@ -1608,7 +1608,7 @@
                     placeholder: "Search ".concat(M, " favorites in ").concat(null == z || null === (i = z.find(function(e) {
                         return e.name === Q
                     })) || void 0 === i ? void 0 : i.displayName),
-                    className: "mb-2 mb-sm-0 me-md-1",
+                    className: "tw:mb-2 tw:sm:mb-0 tw:md:me-1",
                     value: me,
                     onChange: function(e) {
                         var t = e.target.value,
@@ -1618,7 +1618,7 @@
                         })
                     }
                 }), "friend" !== M && E.createElement(De, {
-                    className: "mb-2 mb-sm-0 me-md-1",
+                    className: "tw:mb-2 tw:sm:mb-0 tw:md:me-1",
                     label: "Sort",
                     value: le,
                     options: Me,
@@ -1666,9 +1666,9 @@
                 }, E.createElement("div", null, null !== (l = null == pt ? void 0 : pt.length) && void 0 !== l ? l : 0), E.createElement("div", {
                     className: "mx-1"
                 }, "/"), E.createElement("div", null, null !== (p = null == ge ? void 0 : ge.maxFavoritesPerGroup) && void 0 !== p ? p : D.jT)))), E.createElement(f.fI, {
-                    className: "align-items-center justify-content-center justify-content-md-end flex-column flex-md-row flex-1"
+                    className: "tw:items-center tw:justify-center tw:md:justify-end tw:flex-col tw:md:flex-row tw:flex-1"
                 }, Ie.length > 0 && E.createElement(Te, {
-                    className: "me-0 me-md-1 mt-3 mt-md-0 order-2 order-md-0"
+                    className: "tw:me-0 tw:md:me-1 tw:mt-3 tw:md:mt-0 tw:order-2 tw:md:order-0"
                 }, E.createElement("div", {
                     className: "text-nowrap"
                 }, "Selected: ", Ie.length), E.createElement(f.$n, {
@@ -1677,7 +1677,7 @@
                         Be(!0)
                     },
                     id: "Tooltip-BulkDelete",
-                    className: "px-2 ms-3 me-1",
+                    className: "tw:px-2 tw:ms-3 tw:me-1",
                     danger: !0
                 }, E.createElement(f.M2, {
                     icon: d.yL,
@@ -1691,7 +1691,7 @@
                         He(!0)
                     },
                     id: "Tooltip-BulkMove",
-                    className: "px-2"
+                    className: "tw:px-2"
                 }, E.createElement(f.M2, {
                     icon: m.Sy,
                     color: "fff"
@@ -1699,7 +1699,7 @@
                     placement: "bottom",
                     target: "Tooltip-BulkMove"
                 }, "Move Selected")), Ee && E.createElement(f.$n, {
-                    className: "flex-row d-flex align-items-center px-3 me-1 mt-2 mt-md-0 text-nowrap",
+                    className: "tw:flex-row tw:flex tw:items-center tw:px-3 tw:me-1 tw:mt-2 tw:md:mt-0 tw:text-nowrap tw:whitespace-nowrap",
                     onClick: function() {
                         Ie.length !== vt.length ? ze(vt.map(function(e) {
                             return e.favoriteId
@@ -1710,7 +1710,7 @@
                     onClick: function() {
                         Ee ? (ze([]), ke(!1), He(!1), Be(!1)) : ke(!0)
                     },
-                    className: "flex-row d-flex align-items-center px-3 me-1 text-nowrap"
+                    className: "tw:flex-row tw:flex tw:items-center tw:px-3 tw:me-1 tw:text-nowrap"
                 }, E.createElement("div", {
                     className: "me-3"
                 }, "Edit Mode"), E.createElement(f.M2, {
@@ -1722,9 +1722,9 @@
                     },
                     id: "Tooltip-Compact",
                     "aria-label": "Card Size Toggle",
-                    className: "d-flex d-md-block flex-row align-items-center mt-2 mt-md-0 tw:mb-4 tw:md:mb-0"
+                    className: "tw:flex tw:md:block tw:flex-row tw:items-center tw:mt-2 tw:md:mt-0 tw:mb-4 tw:md:mb-0"
                 }, E.createElement("div", {
-                    className: "d-flex d-md-none me-2"
+                    className: "tw:flex tw:md:hidden tw:me-2"
                 }, rt ? "Small Cards" : "Large Cards"), E.createElement(f.M2, {
                     icon: rt ? s.IT : c.Mb,
                     width: 20,
@@ -1733,7 +1733,7 @@
                     placement: "bottom",
                     target: "Tooltip-Compact"
                 }, rt ? "Switch To Grid View" : "Switch To List View"))))), L && (null == ge ? void 0 : ge.isVrcPlus) && E.createElement("div", {
-                    className: "tw:w-full flex-column flex-sm-row tw:mt-4"
+                    className: "tw:w-full tw:flex tw:flex-col tw:sm:flex-row tw:mt-4"
                 }, E.createElement(C.A, {
                     title: "This list is temporarily locked",
                     description: "Your worlds are saved, but you'll need to resubscribe to VRC+ to instantly restore."
@@ -2076,4 +2076,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d696d7c0b8dd238ac81254aa2f806644aa0e575aa20eb317bf54b9f1ed8af43d.js.map
+//# sourceMappingURL=b76cd3d1bd67e3537ad35056a46ad34a7b307b1a9cafb23dc6beba7b68313702.js.map
