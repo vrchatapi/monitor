@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
-    [1647, 4028, 4181, 4369, 5532, 6885, 8621], {
+    [67, 179, 1647, 3465, 4028, 5532, 6885], {
         58899(e, t, n) {
             var r = n(65400);
             t.mw = {
@@ -54,17 +54,6 @@
                 iconName: r.iconName,
                 icon: [r.width, r.height, r.aliases, r.unicode, r.svgPathData]
             }, t.cN = t.mw, r.prefix, r.iconName, r.width, r.height, r.aliases, r.unicode, r.svgPathData, r.aliases
-        },
-        34213(e, t) {
-            var n = "unlock",
-                r = [128275],
-                a = "f09c",
-                l = "M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144l0 48-16 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192c0-35.3-28.7-64-64-64l-240 0 0-48z";
-            t.mw = {
-                prefix: "fas",
-                iconName: n,
-                icon: [448, 512, r, a, l]
-            }, t.KK = t.mw
         },
         91897(e, t, n) {
             n.r(t), n.d(t, {
@@ -139,8 +128,8 @@
                 R = n(75976),
                 V = n(56822),
                 U = n(91863),
-                z = n(87081),
-                q = n(96360),
+                q = n(87081),
+                z = n(96360),
                 T = n(75499),
                 _ = n(5556),
                 L = n.n(_),
@@ -206,7 +195,7 @@
                                 key: "animated",
                                 condition: K,
                                 bgClass: "tw:bg-dark-grey-transparent-90",
-                                icon: z.default,
+                                icon: q.default,
                                 iconColor: "#DADADA"
                             }].find(function(e) {
                                 return e.condition
@@ -286,7 +275,7 @@
                     })), J && a.createElement("div", {
                         className: "tw:absolute tw:inset-0 tw:z-[2] tw:flex tw:items-center tw:justify-center tw:bg-black/50"
                     }, a.createElement(i.M2, {
-                        icon: q.default,
+                        icon: z.default,
                         color: "#FFFF00",
                         width: 64
                     })), ee && a.createElement("div", {
@@ -597,8 +586,8 @@
                     R = (0, A.A)(M, 2),
                     V = R[0],
                     U = R[1].isLoading,
-                    z = (0, p.Pg)(),
-                    q = (0, A.A)(z, 1)[0],
+                    q = (0, p.Pg)(),
+                    z = (0, A.A)(q, 1)[0],
                     T = (0, Z.wA)();
                 (0, a.useEffect)(function() {
                     return function() {
@@ -672,7 +661,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, q({
+                                        return e.prev = 4, e.next = 7, z({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -719,7 +708,7 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, q({
+                                        return e.prev = 10, e.next = 13, z({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -879,8 +868,8 @@
                     R = (0, A.A)(M, 2),
                     V = R[0],
                     U = R[1].isLoading,
-                    z = (0, p.Pg)(),
-                    q = (0, A.A)(z, 1)[0],
+                    q = (0, p.Pg)(),
+                    z = (0, A.A)(q, 1)[0],
                     T = (0, Z.wA)();
                 (0, a.useEffect)(function() {
                     return function() {
@@ -954,7 +943,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, q({
+                                        return e.prev = 4, e.next = 7, z({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1001,7 +990,7 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, q({
+                                        return e.prev = 10, e.next = 13, z({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1161,8 +1150,8 @@
                     R = (0, A.A)(M, 2),
                     V = R[0],
                     U = R[1].isLoading,
-                    z = (0, p.Pg)(),
-                    q = (0, A.A)(z, 1)[0],
+                    q = (0, p.Pg)(),
+                    z = (0, A.A)(q, 1)[0],
                     T = (0, Z.wA)();
                 (0, a.useEffect)(function() {
                     return function() {
@@ -1236,7 +1225,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, q({
+                                        return e.prev = 4, e.next = 7, z({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1283,7 +1272,7 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, q({
+                                        return e.prev = 10, e.next = 13, z({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1443,8 +1432,8 @@
                     R = (0, A.A)(M, 2),
                     V = R[0],
                     U = R[1].isLoading,
-                    z = (0, p.Pg)(),
-                    q = (0, A.A)(z, 1)[0],
+                    q = (0, p.Pg)(),
+                    z = (0, A.A)(q, 1)[0],
                     T = (0, Z.wA)();
                 (0, a.useEffect)(function() {
                     return function() {
@@ -1518,7 +1507,7 @@
                                             e.next = 12;
                                             break
                                         }
-                                        return e.prev = 4, e.next = 7, q({
+                                        return e.prev = 4, e.next = 7, z({
                                             itemId: n.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1565,7 +1554,7 @@
                                             e.next = 18;
                                             break
                                         }
-                                        return e.prev = 10, e.next = 13, q({
+                                        return e.prev = 10, e.next = 13, z({
                                             itemId: r.id,
                                             itemData: {
                                                 isSeen: !0
@@ -1940,8 +1929,8 @@
                     R = (0, p.Zm)(),
                     V = (0, A.A)(R, 2),
                     U = V[0],
-                    z = V[1].isLoading,
-                    q = (0, Z.wA)(),
+                    q = V[1].isLoading,
+                    z = (0, Z.wA)(),
                     T = (0, s.a$)({
                         withRecentSubscription: !0
                     }).user,
@@ -1949,11 +1938,11 @@
                     L = (null == T ? void 0 : T.previouslyHadVRCPlus) && !_;
                 (0, a.useEffect)(function() {
                     return function() {
-                        q({
+                        z({
                             type: "gallery/resetGallery"
                         })
                     }
-                }, [q]);
+                }, [z]);
                 var G = (0, he.G)().data,
                     X = (0, p.o5)({
                         n: 100,
@@ -1986,7 +1975,7 @@
                                             itemId: D.id
                                         });
                                     case 3:
-                                        f(!1), q((0, W.xH)()), (0, F.X)({
+                                        f(!1), z((0, W.xH)()), (0, F.X)({
                                             color: "success",
                                             title: "Emoji deleted",
                                             message: "Emoji deleted successfully",
@@ -2023,7 +2012,7 @@
                         return f(!1)
                     },
                     deleteCallback: ne,
-                    isDeleting: z,
+                    isDeleting: q,
                     title: "Delete Emoji"
                 }), K && _ && a.createElement(a.Fragment, null, a.createElement("h3", {
                     className: "heading tw:text-white tw:text-left tw:text-2xl"
@@ -2079,7 +2068,7 @@
                             return function(e) {
                                 var t = e.emoji,
                                     n = e.index;
-                                M(t), q((0, W.zZ)({
+                                M(t), z((0, W.zZ)({
                                     gallery: (null == $ ? void 0 : $.data) || [],
                                     openIndex: n,
                                     deleteItemCallback: function() {
@@ -2172,10 +2161,10 @@
                     R = (0, ee.Mj)("skipInventoryArchiveConfirmation", !1),
                     V = (0, A.A)(R, 2),
                     U = V[0],
-                    z = (V[1], (0, p.Q_)()),
-                    q = (0, A.A)(z, 2),
-                    T = q[0],
-                    _ = q[1].isLoading,
+                    q = (V[1], (0, p.Q_)()),
+                    z = (0, A.A)(q, 2),
+                    T = z[0],
+                    _ = z[1].isLoading,
                     L = (0, p.Pg)(),
                     G = (0, A.A)(L, 1)[0],
                     X = (0, Z.wA)();
@@ -2615,9 +2604,9 @@
                     R = (0, p.Q_)(),
                     V = (0, A.A)(R, 2),
                     U = V[0],
-                    z = V[1].isLoading,
-                    q = (0, p.Pg)(),
-                    T = (0, A.A)(q, 1)[0],
+                    q = V[1].isLoading,
+                    z = (0, p.Pg)(),
+                    T = (0, A.A)(z, 1)[0],
                     _ = (0, Z.wA)();
                 (0, a.useEffect)(function() {
                     return function() {
@@ -2795,7 +2784,7 @@
                         return I(!1)
                     },
                     archiveItemCallback: ue,
-                    isArchiving: z
+                    isArchiving: q
                 }), a.createElement("h3", {
                     className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Companions"), a.createElement("p", {
@@ -2882,7 +2871,7 @@
                 }
                 return e
             }
-            const ze = function() {
+            const qe = function() {
                 var e, t, n, r, l, c, o = (0, a.useState)("newest"),
                     s = (0, A.A)(o, 2),
                     u = s[0],
@@ -2904,8 +2893,8 @@
                     R = M[0],
                     V = (M[1], (0, p.Q_)()),
                     U = (0, A.A)(V, 2),
-                    z = U[0],
-                    q = U[1].isLoading,
+                    q = U[0],
+                    z = U[1].isLoading,
                     T = (0, p.Pg)(),
                     _ = (0, A.A)(T, 1)[0],
                     L = (0, Z.wA)();
@@ -3018,7 +3007,7 @@
                             return P().wrap(function(e) {
                                 for (;;) switch (e.prev = e.next) {
                                     case 0:
-                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, z({
+                                        return t = a.length > 0 && void 0 !== a[0] ? a[0] : null, e.prev = 1, e.next = 4, q({
                                             itemId: null === t ? x.id : t,
                                             isArchived: !0
                                         }).unwrap();
@@ -3086,7 +3075,7 @@
                         return I(!1)
                     },
                     archiveItemCallback: de,
-                    isArchiving: q
+                    isArchiving: z
                 }), a.createElement("h3", {
                     className: "heading tw:text-white tw:text-left tw:text-2xl"
                 }, "Props"), a.createElement("p", {
@@ -3150,7 +3139,7 @@
                     className: "tw:text-light-grey tw:text-base"
                 }, "No props."))))
             };
-            const qe = function() {
+            const ze = function() {
                 var e = (0, p.Uy)({
                         n: 1,
                         pageValue: 1,
@@ -3204,7 +3193,7 @@
                     element: a.createElement(Re, null)
                 }), a.createElement(l.qh, {
                     path: "props",
-                    element: a.createElement(ze, null)
+                    element: a.createElement(qe, null)
                 }), a.createElement(l.qh, {
                     path: "archived",
                     element: a.createElement(Ie, null)
@@ -3322,8 +3311,8 @@
                         R = (0, p.Zm)(),
                         V = (0, A.A)(R, 2),
                         U = V[0],
-                        z = V[1].isLoading,
-                        q = (0, Z.wA)(),
+                        q = V[1].isLoading,
+                        z = (0, Z.wA)(),
                         T = (0, s.a$)({
                             withRecentSubscription: !0
                         }).user,
@@ -3331,11 +3320,11 @@
                         L = (null == T ? void 0 : T.previouslyHadVRCPlus) && !_;
                     (0, a.useEffect)(function() {
                         return function() {
-                            q({
+                            z({
                                 type: "gallery/resetGallery"
                             })
                         }
-                    }, [q]);
+                    }, [z]);
                     var G = (0, he.G)().data,
                         X = (0, p.o5)({
                             n: 100,
@@ -3368,7 +3357,7 @@
                                                 itemId: D.id
                                             });
                                         case 3:
-                                            f(!1), q((0, W.xH)()), M(null), (0, F.X)({
+                                            f(!1), z((0, W.xH)()), M(null), (0, F.X)({
                                                 color: "success",
                                                 title: "Sticker deleted",
                                                 message: "Sticker deleted successfully",
@@ -3405,7 +3394,7 @@
                             return f(!1)
                         },
                         deleteCallback: ne,
-                        isDeleting: z,
+                        isDeleting: q,
                         title: "Delete Sticker"
                     }), K && _ && a.createElement(a.Fragment, null, a.createElement("h3", {
                         className: "heading tw:text-white tw:text-left tw:text-2xl"
@@ -3461,7 +3450,7 @@
                                 return function(e) {
                                     var t = e.sticker,
                                         n = e.index;
-                                    M(t), q((0, W.zZ)({
+                                    M(t), z((0, W.zZ)({
                                         gallery: (null == $ ? void 0 : $.data) || [],
                                         openIndex: n,
                                         deleteItemCallback: function() {
@@ -3553,10 +3542,10 @@
                     R = (0, ee.Mj)("skipInventoryArchiveConfirmation", !1),
                     V = (0, A.A)(R, 2),
                     U = V[0],
-                    z = (V[1], (0, p.Q_)()),
-                    q = (0, A.A)(z, 2),
-                    T = q[0],
-                    _ = q[1].isLoading,
+                    q = (V[1], (0, p.Q_)()),
+                    z = (0, A.A)(q, 2),
+                    T = z[0],
+                    _ = z[1].isLoading,
                     L = (0, p.Pg)(),
                     G = (0, A.A)(L, 1)[0],
                     X = (0, Z.wA)();
@@ -3954,10 +3943,10 @@
                     element: a.createElement(Qe, null)
                 }), a.createElement(l.qh, {
                     path: "items",
-                    element: a.createElement(qe, null)
+                    element: a.createElement(ze, null)
                 }), a.createElement(l.qh, {
                     path: "items/*",
-                    element: a.createElement(qe, null)
+                    element: a.createElement(ze, null)
                 }), a.createElement(l.qh, {
                     path: "cosmetics",
                     element: a.createElement(ve, null)
@@ -4146,4 +4135,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8aca0d1195a59ccafd2cb7d40463a9833aa84bb273519b3464f26465e810feb4.js.map
+//# sourceMappingURL=0fe4d5d42111a3818cb6cc0b221476c47d4636b18acc815ab6159a3123165328.js.map

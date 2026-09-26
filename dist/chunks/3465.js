@@ -1,0 +1,28 @@
+"use strict";
+(self.webpackChunkweb_appedashi = self.webpackChunkweb_appedashi || []).push([
+    [3465], {
+        52160(e, i) {
+            Object.defineProperty(i, "__esModule", {
+                value: !0
+            });
+            var a = "pencil",
+                c = [9999, 61504, "pencil-alt"],
+                s = "f303",
+                l = "M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z";
+            i.definition = {
+                prefix: "fas",
+                iconName: a,
+                icon: [512, 512, c, s, l]
+            }, i.faPencil = i.definition, i.prefix = "fas", i.iconName = a, i.width = 512, i.height = 512, i.ligatures = c, i.unicode = s, i.svgPathData = l, i.aliases = c
+        },
+        63465(e, i, a) {
+            var c = a(52160);
+            i.mw = {
+                prefix: c.prefix,
+                iconName: c.iconName,
+                icon: [c.width, c.height, c.aliases, c.unicode, c.svgPathData]
+            }, i.cN = i.mw, c.prefix, c.iconName, c.width, c.height, c.aliases, c.unicode, c.svgPathData, c.aliases
+        }
+    }
+]);
+//# sourceMappingURL=eab77d9c34ebe0496bdafcc79fdade22465f56243d55971376399c036b305a72.js.map
